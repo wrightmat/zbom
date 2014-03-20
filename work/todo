@@ -1,0 +1,49 @@
+TO RELEASE 0.2:
+  - NPC-Ordon Goat: Finish side-facing sprites
+  - Clean up behavior code for Ghoma
+  - Error test first part of Sewers/Ruins and all of Grove
+  - Write scripts for Monkey to take Book page after finishing Grove
+  - Finish up mapping/enemies for desert, up to the Pyramid
+  - Add back in some stuff for Pyramid - doesn't have to be complete!
+
+
+EVERYTHING:
+Sprites:
+  - Increase bank of NPCs (borrow from LttP, MC and Pokemon when possible and adjust to BoM style)
+  - Enemy-Armos: Status that comes to life and can be hit with sword an arrow or bomb
+  - NPC-Tokay
+    - complete walking animations for all directions
+    - adjust height as necessary relative to other species and Link
+  - Enemy-Ramrock: sheet in correct format (from OoA, edited to LttP/BoM style)
+  - Enemy-Giga: create undead version of a Goron for the Mausoleum
+
+Mapping:
+  - Kakariko village (mostly inside)
+  - Snowpeak to the north
+  - Finish temples: Lakebed, Snowpeak, Tower (in that order)
+  - Finish Septen Heights (what to do with this now that I'm not including Rito?)
+  - Enable Lake Hylia water to be drained (dynamic tiles with consistent names)
+  - Finish Zora's Domain (underwater areas?)
+
+Scripts:
+  - Octorok: get movement and shooting correct
+  - Lanmola: scripting (rocks as separate entity, head as main enemy and tail segments as children)
+  - Manhandla: scripting (body as main enemy and heads as children. some way to implement different colors?)
+  - Big Poe: flies toward Link, but disappears every so often. Throws fire from lantern. Takes three hits to kill
+  - Little Poes: just fly around- randomly, then occasionally toward Link. Each take one hit to kill
+  - Moldorm: Normal Moldorm behavior, hit tail three times to kill
+  - Compass item in dungeon: add tone when secret is in a room (like Link's Awakening)
+  - Pit Pincer: pincer enemy which hides in a hole and comes at you when you get close (from Link's Awakening, great Hyrule Field enemy!)
+  - Giga: Goron version of the Redead - slower moving but much more powerful when they attack
+
+Music:
+  - Theme based on Book of Mudora "prayer" song from LttP to play in Book of Mudora chambers
+
+LONG TERM:
+  - Day/Night System: Not time-based, have to go to sleep in a bed to change between the two- like SS
+  - Lamp/Light:
+	- varying levels of light: use surfaces with varying alpha
+	- ability to burn things with lamp: may already be in lamp script?
+	- effects when Ordona is speaking: can use surfaces of different colors/alphas to accomplish - would like to have particles if ever possible
+  - More emphasis on the shop/rupees: add quest-specific items that must be bought for a large number of rupees (like LA and kinda ALBW)
+  - More options in trading sequence - one item may be traded for any number of items in different physical locations (a shopkeeper in Kakariko may sell/trade the item or you could trade for free to a character in Hyrule Castle Town)

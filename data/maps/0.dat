@@ -1,0 +1,302 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 320,
+  height = 240,
+  world = "outside_world",
+  tileset = "0",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 24,
+  height = 24,
+  pattern = 45,
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 24,
+  width = 24,
+  height = 192,
+  pattern = 51,
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 216,
+  width = 24,
+  height = 24,
+  pattern = 47,
+}
+
+tile{
+  layer = 0,
+  x = 24,
+  y = 216,
+  width = 272,
+  height = 24,
+  pattern = 52,
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 216,
+  width = 24,
+  height = 24,
+  pattern = 48,
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 0,
+  width = 24,
+  height = 24,
+  pattern = 46,
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 24,
+  width = 24,
+  height = 192,
+  pattern = 50,
+}
+
+tile{
+  layer = 0,
+  x = 24,
+  y = 0,
+  width = 272,
+  height = 24,
+  pattern = 49,
+}
+
+tile{
+  layer = 0,
+  x = 24,
+  y = 24,
+  width = 8,
+  height = 8,
+  pattern = 446,
+}
+
+tile{
+  layer = 0,
+  x = 24,
+  y = 208,
+  width = 8,
+  height = 8,
+  pattern = 447,
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 24,
+  width = 8,
+  height = 8,
+  pattern = 445,
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 208,
+  width = 8,
+  height = 8,
+  pattern = 444,
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 208,
+  width = 256,
+  height = 8,
+  pattern = 457,
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 24,
+  width = 256,
+  height = 8,
+  pattern = 456,
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 32,
+  width = 8,
+  height = 176,
+  pattern = 442,
+}
+
+tile{
+  layer = 0,
+  x = 24,
+  y = 32,
+  width = 8,
+  height = 176,
+  pattern = 443,
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 32,
+  width = 256,
+  height = 176,
+  pattern = 482,
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = 481,
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = 481,
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = 481,
+}
+
+sensor{
+  layer = 0,
+  x = 88,
+  y = 165,
+  width = 160,
+  height = 16,
+  name = "sensor",
+}
+
+destination{
+  layer = 0,
+  x = 160,
+  y = 181,
+  name = "start_position",
+  direction = 3,
+}
+
+destructible{
+  layer = 0,
+  x = 40,
+  y = 205,
+  treasure_name = "heart",
+  sprite = "entities/bush",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 56,
+  y = 205,
+  treasure_name = "heart",
+  sprite = "entities/bush",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 40,
+  y = 189,
+  treasure_name = "arrow",
+  treasure_variant = 3,
+  sprite = "entities/bush",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 72,
+  y = 205,
+  treasure_name = "heart",
+  sprite = "entities/bush",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 56,
+  y = 189,
+  treasure_name = "arrow",
+  treasure_variant = 3,
+  sprite = "entities/bush",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 104,
+  y = 205,
+  treasure_name = "arrow",
+  treasure_variant = 3,
+  sprite = "entities/bush",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 88,
+  y = 205,
+  treasure_name = "heart",
+  sprite = "entities/bush",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 120,
+  y = 205,
+  treasure_name = "arrow",
+  treasure_variant = 3,
+  sprite = "entities/bush",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 72,
+  y = 189,
+  treasure_name = "arrow",
+  treasure_variant = 3,
+  sprite = "entities/bush",
+  can_be_cut = true,
+}
+
+enemy{
+  layer = 0,
+  x = 160,
+  y = 69,
+  name = "boss",
+  direction = 3,
+  breed = "gohma",
+  rank = 2,
+}
+

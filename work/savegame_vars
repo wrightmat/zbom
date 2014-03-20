@@ -1,0 +1,200 @@
+Values 63 and below used by the engine, and values below 1024 are read only
+Game-specific values start at 1024 and go to 2047
+
+# 1024-1699: Game State Variables
+i1024: 
+i1025: 
+i1026: 
+i1027: Ordon Festival progress (1=initial dialog done, 2=first area complete, 3=race won, 4=Ordona heard, 5=Crista saved-festival over, 6=Ordona directed Link to Sacred Grove)
+i1028: Festival obstacle race progress (1= initial dialog done, 2=race begun, 3=torches in first screen lit, 4=lost, 5=won)
+i1029: 
+
+i1030: Number of pieces of heart
+i1031: Rudy (Ordon Blacksmith) side quest (1=initial dialog done, 2=bottle has water)
+i1032: 
+i1033: 
+i1034: 
+i1035: 
+i1036: 
+
+i1037: Ruins/Sewer key door 1
+b1038: Ruins/Sewer key door 2
+b1039: Ruins/Sewer key door 3
+b1040: Ruins/Sewer key 1
+b1041: Ruins/Sewer key 2
+b1042: Ruins/Sewer key 3
+b1043: Ruins/Sewer big key
+b1044: Ruins/Sewer map
+b1045: Ruins/Sewer compass
+b1046: Ruins/Sewer mini boss (Carock)
+b1047: Ruins/Sewer boss (Poes)
+b1048: Ruins/Sewer key counter
+b1049: Ruins/Sewer shutter door shortcut
+
+b1050: Sacred Grove key 1
+b1051: Sacred Grove key 2
+b1052: 
+b1053: Sacred Grove big key
+b1054: Sacred Grove rupee chest
+b1055: Sacred Grove map
+b1056: Sacred Grove compass
+b1057: Sacred Grove mini boss (Mothulita)
+b1058: Sacred Grove boss (Gohma)
+b1059: Sacred Grove heart container
+i1060: Sacred Grove key counter
+b1061: Book of Mudora Piece 1
+b1062: Sacred Grove key door 1
+b1063: Sacred Grove key door 2
+b1064: Sacred Grove mystic jade chest (C14, before boss)
+b1065: Sacred Grove mystic jade chest (D15, for later)
+
+i1068: Tokay/Deku conflict (1- before Temple: Deku and Tokay in Grove, Gerudos at Beach, 2- Temple complete, Monkey takes Book page, 3- Gerudo allow you into Beach, 4- Ship parts found in Pyramid, 5- Gerudo repairing ship, 6- Gerudo gone from beach, 7- Tokay back to beach, Deku happy, 8- Monkeys taunting Link (mini-game to get book piece?), 9- book piece retrieved, Deku talk about library)
+b1069: Pyramid entrance message heard
+b1070: Pyramid key 1
+b1071: Pyramid key 2
+b1072: Pyramid key 3
+b1073: Pyramid big key
+b1074: Pyramid heart container
+b1075: Pyramid map
+b1076: Pyramid compass
+b1077: Pyramid item (Iron Glove)
+b1078: Pyramid mini boss (Lanmola)
+b1079: Pyramid boss (Manhandla)
+b1080: Pyramid heart container
+b1081: Pyramid prize chest (Goddess Plume)
+b1082: Book of Mudora Piece 2
+b1083: Pyramid key door/block 1
+b1084: Pyramid key door/block 2
+b1085: Pyramid key door/block 3
+b1086: Pyramid boss door
+b1087: Pyramid airship piece 1 chest (Magnetite)
+b1088: Pyramid airship piece 2 chest (Propeller)
+b1089: Pyramid airship piece 3 chest (Din's Pearl)
+
+i1090: Peahat swarm (Hyrule Field D9) - members 1 through 6
+
+b1100: Mausoleum key 1
+b1101: Mausoleum key 2
+b1102: Mausoleum key 3
+b1103: Mausoleum key 4
+b1105: Mausoleum compass
+b1106: Mausoleum map
+b1107: Mausoleum miniboss (Stone Arrghus)
+b1108: Mausoleum big key
+b1109: Mausoleum item (Pegasus boots)
+b1110: Mausoleum boss (Mogura)
+b1111: Mausoleum Dodongos 1
+b1112: Mausoleum Dodongos 2
+b1113: Mausoleum key door 1
+b1114: Mausoleum key door 2
+b1115: Mausoleum key door 3
+b1116: Mausoleum key door 4
+b1117: Book of Mudora Piece 3
+
+# 1600s: Side Quest Related Variables
+1601: 
+1602: 
+1603: 
+1604: 
+
+
+# 1700s: Heart Piece and Treasure Variables (rupee chests, etc.)
+b1701: Heart Piece chest (Ordon Village F15)
+b1702: Heart Piece chest (Relic Collector) - previously 1036
+b1703: Heart Piece chest (Faron Woods E15)
+b1704: Heart Piece chest (Floria Peninsula H14)
+b1705: Heart Piece chest (Field/Lake Hylia D9)
+
+b1740: Rupee chest (Ordon Village F15)
+b1741: Rupee chest (Hyrule Field) - previously 1026
+b1742: Rupee chest (Sewer under Ordon Village)
+b1743: Rupee chest (Sewers dungeon - near map)
+b1744: Rupee chest 50R (Faron Woods E15)
+b1745: Rupee chest (Relic Collector) - previously 1037
+b1746: Rupee chest (Hyule Field F11) - previously 66
+
+# 1800s: Item Variables
+b1801: Bow variable
+b1802: Bow counter
+b1803: Quiver variable
+b1804: Bomb counter variable
+b1805: Bomb counter counter
+b1806: Bomb bag variable
+b1807: Book of Mudora variable
+b1808: Boomerang variable
+b1809: Boots variable
+b1810: Bottle 1 variable
+b1811: Bottle 2 variable
+b1812: Bottle 3 variable
+b1813: Bottle 4 variable
+b1814: Cane variable
+b1815: Feather variable
+b1816: Flippers variable
+b1817: Bracelet variable
+b1818: Lamp variable
+b1819: Hookshot variable
+b1820: Shield variable
+b1821: Sword variable
+b1822: Tunic variable
+b1823: World map variable
+b1824: Rupee bag variable
+b1825: Jade variable
+i1826: Jade counter
+b1827: Amber variable
+i1828: Amber counter
+b1829: Alchemy variable
+i1830: Alchemy counter
+b1831: Plume variable
+i1832: Plume counter
+b1833: Crystal variable
+i1834: Crystal counter
+b1835: Ore variable
+b1836: Ore counter
+b1837: Ocarina of Wind
+b1838: Shovel
+b1839: Hammer
+i1840: Trading sequence (12 variants)
+i1841: Airship pieces (Magnetite, Propeller, Din's Pearl)
+i1844: Pumpkin variable
+i1845: Pumpkin counter
+i1846: Stick variable
+i1847: Stick counter
+i1848: Apple variable
+i1849: Apple counter
+
+
+# 1900s: NPC Reputations
+i1900: Tristan (Link's guardian)
+i1901: Crista (Link's childhood friend)
+i1902: Rudy (Ordon Blacksmith)
+i1903: Julita (Crista's mother)
+i1904: Ulo (Ordon Mayor)
+i1905: Bilo (Ordon resident)
+i1906: Tern (Ordon Rancher)
+i1907: Quint (Ordon child)
+i1908: Francis (Ordon child)
+i1909: Jarred (Ordon child)
+i1910: Ordona (Guardian spirit)
+i1911: Gaira (traveling groundskeeper)
+i1912: Isan (Kasuto's page)
+i1913: Deacon (Lumberjack)
+
+# Item flags range from 2000 to 2047
+b2000: Has Sword
+b2001: Has Shield
+b2002: Has Lamp
+b2003: Has Bow (Sacred Grove item)
+b2004: Has Boomerang (Ruins/Sewers item)
+b2005: Has Bomb Bag 1
+b2006: Has Hyrule Shield
+b2007: Has Rupee Bag 2 (Big Wallet)
+b2008: Has Bracelet (Abandoned Pyramid item)
+b2009: Has bottle 1 (Rudy's side quest)
+b2010: Has bottle 2
+b2011: Has bottle 3
+b2012: Has bottle 4
+
+b2020: Has Odd Mushroom
+i2021: Odd Mushroom being made into Odd Potion (counter to 10)
+b2022: Has Odd Potion
+

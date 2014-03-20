@@ -1,0 +1,608 @@
+animation{
+  name = "random",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 1, frame_height = 1 },
+  },
+}
+animation{
+  name = "random_woods",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 1, frame_height = 1 },
+  },
+}
+animation{
+  name = "random_mountain",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 1, frame_height = 1 },
+  },
+}
+animation{
+  name = "random_north",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 1, frame_height = 1 },
+  },
+}
+animation{
+  name = "random_subrosia",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 1, frame_height = 1 },
+  },
+}
+
+animation{
+  name = "feather",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "bomb_counter",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 16, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "bow",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 32, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 32, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "boomerang",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 48, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 48, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "lamp",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 64, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "hookshot",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 80, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "bottle_1",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 96, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 96, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 96, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 96, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 96, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 96, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "boots",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 112, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "mirror",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 128, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "cane",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 144, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "apple_counter",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 160, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "apple",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 160, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "pumpkin_counter",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 176, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "pumpkin",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 176, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "book_mudora",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 192, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 208, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 224, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 240, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 256, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 272, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 288, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "trading",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 192, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 224, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 240, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 256, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 272, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 288, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 304, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 320, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 336, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 352, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 368, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 384, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "bottle_2",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 96, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 96, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 96, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 96, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 96, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 96, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "flippers",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 304, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "cape",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 320, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "bottle_3",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 96, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 96, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 96, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 96, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 96, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 96, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "ocarina_wind",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 336, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "ocarina_earth",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 352, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "ocarina_time",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 368, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "airship_part",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 384, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 384, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 384, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "glove",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 400, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 400, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "ore_counter",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 416, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 416, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "bottle_4",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 96, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 96, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 96, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 96, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 96, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 96, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "world_map",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 448, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "rupee_bag",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 464, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 464, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 464, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "bomb_bag",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 480, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 480, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 480, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "quiver",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 496, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 496, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 496, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "tunic",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 512, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 512, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 512, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "sword",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 528, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 528, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 528, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 528, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "shield",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 544, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 544, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 544, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "map",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 560, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "compass",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 576, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "small_key",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 592, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "big_key",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 608, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "boss_key",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 624, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "heart_piece",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 640, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "heart_container",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 656, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "bomb",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 672, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 672, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 672, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "arrow",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 688, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 688, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 688, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "magic_flask",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 704, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 704, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "magic_bar",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 704, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 704, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "rupee",
+  src_image = "entities/items.png",
+  frame_delay = 100,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 48, frame_width = 8, frame_height = 16, origin_x = 4, origin_y = 16, num_frames = 10 },
+    { x = 0, y = 64, frame_width = 8, frame_height = 16, origin_x = 4, origin_y = 16, num_frames = 10 },
+    { x = 0, y = 80, frame_width = 8, frame_height = 16, origin_x = 4, origin_y = 16, num_frames = 10 },
+    { x = 564, y = 48, frame_width = 8, frame_height = 16, origin_x = 4, origin_y = 16, num_frames = 10 },
+    { x = 564, y = 64, frame_width = 8, frame_height = 16, origin_x = 4, origin_y = 16, num_frames = 10 },
+    { x = 564, y = 80, frame_width = 8, frame_height = 16, origin_x = 4, origin_y = 16, num_frames = 10 },
+  },
+}
+
+animation{
+  name = "jade",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 564, y = 32, frame_width = 8, frame_height = 16, origin_x = 4, origin_y = 16 },
+  },
+}
+
+animation{
+  name = "jade_counter",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 564, y = 32, frame_width = 8, frame_height = 16, origin_x = 4, origin_y = 16 },
+  },
+}
+
+
+animation{
+  name = "amber",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 572, y = 32, frame_width = 8, frame_height = 16, origin_x = 4, origin_y = 16 },
+  },
+}
+
+animation{
+  name = "amber_counter",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 572, y = 32, frame_width = 8, frame_height = 16, origin_x = 4, origin_y = 16 },
+  },
+}
+
+animation{
+  name = "crystal",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 580, y = 32, frame_width = 8, frame_height = 16, origin_x = 4, origin_y = 16 },
+  },
+}
+
+animation{
+  name = "crystal_counter",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 580, y = 32, frame_width = 8, frame_height = 16, origin_x = 4, origin_y = 16 },
+  },
+}
+
+animation{
+  name = "plume",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 588, y = 32, frame_width = 8, frame_height = 16, origin_x = 4, origin_y = 16 },
+  },
+}
+
+animation{
+  name = "plume_counter",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 588, y = 32, frame_width = 8, frame_height = 16, origin_x = 4, origin_y = 16 },
+  },
+}
+
+animation{
+  name = "alchemy",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 596, y = 32, frame_width = 8, frame_height = 16, origin_x = 4, origin_y = 16 },
+  },
+}
+
+animation{
+  name = "alchemy_counter",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 596, y = 32, frame_width = 8, frame_height = 16, origin_x = 4, origin_y = 16 },
+  },
+}
+
+animation{
+  name = "ore",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 604, y = 32, frame_width = 8, frame_height = 16, origin_x = 4, origin_y = 16, },
+  },
+}
+
+animation{
+  name = "stick",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 612, y = 32, frame_width = 8, frame_height = 16, origin_x = 4, origin_y = 16, },
+  },
+}
+
+animation{
+  name = "stick_counter",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 612, y = 32, frame_width = 8, frame_height = 16, origin_x = 4, origin_y = 16, },
+  },
+}
+
+animation{
+  name = "heart",
+  src_image = "entities/items.png",
+  frame_delay = 40,
+  frame_to_loop_on = 24,
+  directions = {
+    { x = 112, y = 48, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 8, num_frames = 25, num_columns = 10 },
+  },
+}
+
+animation{
+  name = "fairy",
+  src_image = "entities/items.png",
+  frame_delay = 100,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 192, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 192, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
+  },
+}
+
+animation{
+  name = "potion",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 96, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 96, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 96, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}

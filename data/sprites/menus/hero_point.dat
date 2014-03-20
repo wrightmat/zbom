@@ -1,0 +1,10 @@
+animation{
+  name = "blink",
+  src_image = "menus/hero_point.png",
+  frame_delay = 300,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 2, frame_height = 2, num_frames = 2 },
+  },
+}
+
