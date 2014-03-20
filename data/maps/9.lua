@@ -23,10 +23,7 @@ function npc_rudy:on_interaction()
     game:start_dialog("rudy.0", rudy_reputation)
   elseif game:get_value("i1902") >= 1 then
     -- Cave-specific dialogs for water bottle side quest
-    if game:get_value("i1031") == 0 then
-      game:start_dialog("rudy.1.cave", rudy_reputation)
-      game:set_value("i1031", 1)
-    elseif game:get_value("i1031") == 1 then
+    if game:get_value("i1031") == 1 then
       game:start_dialog("rudy.2.cave", function()
         if not game:has_item("bottle_1") then
           game:start_dialog("rudy.2.cave_bottle", function()
@@ -36,7 +33,23 @@ function npc_rudy:on_interaction()
         end
       end)
     elseif game:get_value("i1031") == 2 then
-      game:start_dialog("rudy.3.cave", rudy_dialog_finished)
+      -- quest complete
+      game:start_dialog("rudy.4.cave", function(answer)
+        if answer == 0 then --work
+          game:start_dialog("rudy.4.cave_work")
+        else --chat
+          game:start_dialog("rudy.4.cave_chat")
+        end
+      end)
+    else
+      game:start_dialog("rudy.1.cave", rudy_reputation)
+      game:set_value("i1031", 1)
+    end
+    if game:get_item("bottle_1"):get_variant() == 2 and game:get_value("i1031") == 1 then --bottle has water
+      game:start_dialog("rudy.3.cave", function()
+        game:get_item("bottle_1"):set_variant(0)
+        game:set_value("i1031", 2)
+      end)
     end
   end
 end
