@@ -303,9 +303,9 @@ dialog{
   skip = "current",
   icon = 44,
   text = [[
-It's a shining pearl
-made from a moon's
-tear.
+It's a shining ball
+made from pure
+crystal.
   ]]
 }
 
@@ -542,10 +542,10 @@ dialog{
   icon = 2,
   text = [[
 You found the Hero's
-Bow!$0It's said to have
-been wielded by a
-legendary hero long
-ago.
+Bow!$0 This is said
+to have been wielded
+by a legendary hero
+long ago.
   ]]
 }
 
@@ -3762,6 +3762,42 @@ of Hyrule Castle Town.
 }
 
 dialog{
+  id = "deku.0.lost_woods",
+  skip = "current",
+  text = [[
+Hey kid, scram or
+you'll get lost or
+something...
+  ]]
+}
+
+dialog{
+  id = "deku.0.trading",
+  skip = "current",
+  question = true,
+  text = [[
+What's that enticing
+smell? Is that a potion?
+I must have it!
+Will you give it to me?
+Yes
+No
+  ]]
+}
+
+dialog{
+  id = "deku.0.trading_yes",
+  skip = "current",
+  text = [[
+Yay! Thanks mister!
+In exchange, I'll give
+you this cool mask.
+It's so cool because
+it looks just like me!
+  ]]
+}
+
+dialog{
   id = "monkey1.0.faron",
   skip = "current",
   text = [[
@@ -3995,6 +4031,73 @@ Thank you so much for
 getting us our beach
 back! Please visit
 any time you'd like.
+  ]]
+}
+
+dialog{
+  id = "astronomer.0.house",
+  skip = "current",
+  text = [[
+Good day. My name is
+Mosq, and I'm a famous
+astronomer in this
+area.
+  ]]
+}
+
+dialog{
+  id = "astronomer.0.trading",
+  skip = "current",
+  question = true,
+  text = [[
+Most everyone knows
+I'm an astronomer,
+but most don't know
+that I'm also a Deku
+enthusiast! Being in
+the desert can feel
+lifeless at times,
+and the woodsiness
+of the Deku make me
+feel more alive!
+
+Wait- is that a mask
+of a Deku you have?
+Please give it to me-
+then I can have the
+Deku with me always!
+Yes
+No
+  ]]
+}
+
+dialog{
+  id = "astronomer.0.trading_yes",
+  skip = "current",
+  text = [[
+Thank you so much for
+your kindness! You
+have made me very
+happy. So happy in
+fact that I will give
+you my most prizes
+posession. This Moon
+Tear is incredibly
+rare and only known
+to astronomers like
+me. Please cherish
+it as I have.
+  ]]
+}
+
+dialog{
+  id = "astronomer.0.trading_no",
+  skip = "current",
+  text = [[
+You are quite cruel
+for getting my hopes
+up like that. Please
+leave my house.
   ]]
 }
 
