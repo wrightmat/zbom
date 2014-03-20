@@ -7,10 +7,10 @@ function enemy:on_created()
   self:set_damage(3)
   self:create_sprite("enemies/tektite_red")
   self:set_hurt_style("monster")
-  self:set_pushed_back_when_hurt(true)
-  self:set_push_hero_on_sword(false)
   self:set_size(16, 16)
   self:set_origin(8, 13)
+  self:set_pushed_back_when_hurt(true)
+  self:set_push_hero_on_sword(false)
 end
 
 function enemy:on_movement_changed(movement)
@@ -50,12 +50,12 @@ function enemy:check_hero()
   elseif not near_hero and going_hero then
     self:go_random()
   end
-  timer = sol.timer.start(self, 1000, function() self:check_hero() end)
+  timer = sol.timer.start(self, 2000, function() self:check_hero() end)
 end
 
 function enemy:go_random()
   going_hero = false
-  sol.timer.start(self, 3000, function() self:check_hero() end)
+  sol.timer.start(self, 2000, function() self:check_hero() end)
 end
 
 function enemy:go_hero()
@@ -63,8 +63,10 @@ function enemy:go_hero()
   local hx, hy, hl = hero:get_position()
   local dir = self:get_direction8_to(hx, hy)
   local m = sol.movement.create("jump")
-  m:set_distance(40)
+  m:set_distance(32)
   m:set_direction8(dir)
-  sol.timer.start(self, 2000, function() m:start(self) end)
+  m:set_speed(24)
+  self:get_sprite():set_frame(0) --crouched
+  sol.timer.start(self, 500, function() m:start(self) end)
   going_hero = true
 end
