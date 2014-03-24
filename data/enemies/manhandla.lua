@@ -4,11 +4,12 @@ local enemy = ...
 --            directly then creates the heads (green, red, blue, purple) dynamically.
 
 local heads_present = 0
+local body_speed = 80
 
 -- Makes the boss go toward a diagonal direction (1, 3, 5 or 7).
 function enemy:go(direction8)
   local m = sol.movement.create("straight")
-  m:set_speed(80)
+  m:set_speed(body_speed)
 
   m:set_smooth(false)
   m:set_angle(direction8 * math.pi / 4)
@@ -47,7 +48,7 @@ function enemy:create_head(color)
 end
 
 function enemy:on_created()
-  self:set_life(3)
+  self:set_life(4)
   self:set_damage(2)
   self:create_sprite("enemies/manhandla")
   self:set_size(24, 24)
@@ -81,9 +82,11 @@ function enemy:on_update()
   if heads_present > 0 then
     -- if there are heads (and how many)
     self:set_attack_consequence("sword", "protected")
+    body_speed = 80
   else
-    -- if only the body is left (only three more hits then dead!)
+    -- if only the body is left (only a few more hits until dead!)
     self:set_attack_consequence("sword", 1)
+    body_speed = 96
   end
 end
 

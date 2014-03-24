@@ -83,7 +83,7 @@ end
 function npc_gerudo_pirate_1:on_interaction()
   if game:get_value("i1068") < 5 then
     game:start_dialog("gerudo.0.beach")
-  elseif game:get_value("i1068") == 6 then
+  elseif game:get_value("i1068") >= 6 then
     game:start_dialog("gerudo.2.beach")
   else
     game:start_dialog("gerudo.1.beach")
@@ -93,7 +93,7 @@ end
 function npc_gerudo_pirate_2:on_interaction()
   if game:get_value("i1068") < 5 then
     game:start_dialog("gerudo.0.beach")
-  elseif game:get_value("i1068") == 6 then
+  elseif game:get_value("i1068") >= 6 then
     game:start_dialog("gerudo.2.beach")
   else
     game:start_dialog("gerudo.1.beach")

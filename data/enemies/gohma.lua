@@ -56,12 +56,26 @@ end
 
 function enemy:blink()
   self:set_attack_consequence("arrow", "protected")
-  self:get_sprite():set_animation("blinking")
+  local sprite = self:get_sprite()
+  sprite:set_animation("blinking")
+  
+  function sprite:on_animation_finished(animation)
+    enemy:set_attack_consequence("arrow", "protected")
+    sprite:set_animation("closed")
+    sol.timer.start(enemy, random(6)*1000, function() enemy:open() end)
+    enemy:go(64)
+  end
 end
 
 function enemy:open()
   self:set_attack_consequence("arrow", 1)
-  self:get_sprite():set_animation("opening")
+  local sprite = self:get_sprite()
+  sprite:set_animation("opening")
+  function sprite:on_animation_finished(animation)
+    enemy:set_attack_consequence("arrow", "protected")
+    sprite:set_animation("walking")
+    sol.timer.start(enemy, 1000, function() enemy:check_action() end)
+  end
 end
 
 function enemy:on_restarted()
@@ -71,16 +85,4 @@ end
 
 function enemy:on_obstacle_reached()
   self:check_action()
-end
-
-function enemy:on_animation_finished(sprite, animation)
-  self:set_attack_consequence("arrow", "protected")
-  if animation == "blinking" then
-    self:get_sprite():set_animation("closed")
-    sol.timer.start(self, random(6)*1000, function() self:open() end)
-    self:go(64)
-  elseif animation == "opening" then
-    self:get_sprite():set_animation("walking")
-    sol.timer.start(self, 1000, function() self:check_action() end)
-  end
 end

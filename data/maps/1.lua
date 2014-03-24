@@ -77,7 +77,7 @@ function npc_crista:on_interaction()
       game:start_dialog("crista.0.shop_mushroom_work")
     else
       game:start_dialog("crista.0.shop_mushroom", function(answer)
-        if answer == 0 then
+        if answer == 1 then
           game:start_dialog("crista.0.shop_mushroom_yes")
           game:set_value("i2021", 1)
         else

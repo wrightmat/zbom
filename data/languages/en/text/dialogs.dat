@@ -2056,8 +2056,6 @@ dialog{
   id = "crista.0.shop_mushroom",
   skip = "current",
   question = true,
-  next = "crista.0.shop_mushroom_yes",
-  next2 = "crista.0.shop_mushroom_no",
   text = [[
 Wow! I smell a very rare
 mushroom nearby! Do you
@@ -3886,7 +3884,7 @@ dialog{
   id = "monkey.3.faron",
   skip = "current",
   text = [[
-I already said...
+We already said it...
 We're bored with you.
   ]]
 }
@@ -3993,9 +3991,8 @@ About time you found
 those parts, kid!
 Now we can finally work
 on repairing our ship.
-
-And you can't help, so
-just go away.
+$0And you can't help,
+so just go away.
   ]]
 }
 
