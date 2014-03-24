@@ -55,7 +55,6 @@ function enemy:go(speed)
 end
 
 function enemy:blink()
-  self:set_attack_consequence("arrow", "protected")
   local sprite = self:get_sprite()
   sprite:set_animation("blinking")
   
@@ -68,11 +67,10 @@ function enemy:blink()
 end
 
 function enemy:open()
-  self:set_attack_consequence("arrow", 1)
   local sprite = self:get_sprite()
   sprite:set_animation("opening")
   function sprite:on_animation_finished(animation)
-    enemy:set_attack_consequence("arrow", "protected")
+    enemy:set_attack_consequence("arrow", 1)
     sprite:set_animation("walking")
     sol.timer.start(enemy, 1000, function() enemy:check_action() end)
   end
