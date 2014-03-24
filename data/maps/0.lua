@@ -11,4 +11,5 @@ end
 function sensor:on_activated()
   hero:start_treasure("bow")
   boss:set_enabled(true)
+  sensor:set_enabled(false)
 end

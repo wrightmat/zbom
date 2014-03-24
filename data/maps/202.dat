@@ -11,6 +11,51 @@ properties{
 
 tile{
   layer = 0,
+  x = 360,
+  y = 248,
+  width = 1824,
+  height = 8,
+  pattern = 19,
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 256,
+  width = 1760,
+  height = 16,
+  pattern = 8,
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 96,
+  width = 2080,
+  height = 144,
+  pattern = 197,
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 64,
+  width = 2080,
+  height = 32,
+  pattern = 22,
+}
+
+tile{
+  layer = 0,
+  x = 2064,
+  y = 96,
+  width = 80,
+  height = 8,
+  pattern = 99,
+}
+
+tile{
+  layer = 0,
   x = 40,
   y = 368,
   width = 96,
@@ -245,28 +290,10 @@ tile{
 
 tile{
   layer = 0,
-  x = 104,
-  y = 96,
-  width = 2080,
-  height = 144,
-  pattern = 197,
-}
-
-tile{
-  layer = 0,
   x = 64,
   y = 64,
   width = 32,
   height = 176,
-  pattern = 22,
-}
-
-tile{
-  layer = 0,
-  x = 96,
-  y = 64,
-  width = 2080,
-  height = 32,
   pattern = 22,
 }
 
@@ -292,7 +319,7 @@ tile{
   layer = 0,
   x = 104,
   y = 96,
-  width = 1992,
+  width = 1952,
   height = 8,
   pattern = 105,
 }
@@ -328,7 +355,7 @@ tile{
   layer = 0,
   x = 96,
   y = 256,
-  width = 2016,
+  width = 224,
   height = 16,
   pattern = 8,
 }
@@ -337,7 +364,7 @@ tile{
   layer = 0,
   x = 96,
   y = 248,
-  width = 2096,
+  width = 224,
   height = 8,
   pattern = 19,
 }
@@ -434,7 +461,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 2152,
+  x = 2136,
   y = 104,
   width = 8,
   height = 96,
@@ -443,7 +470,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 2152,
+  x = 2136,
   y = 200,
   width = 8,
   height = 8,
@@ -452,7 +479,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 2096,
+  x = 2056,
   y = 96,
   width = 8,
   height = 8,
@@ -462,8 +489,8 @@ tile{
 tile{
   layer = 0,
   x = 176,
-  y = 160,
-  width = 1976,
+  y = 168,
+  width = 1960,
   height = 8,
   pattern = 105,
 }
@@ -471,7 +498,7 @@ tile{
 tile{
   layer = 0,
   x = 168,
-  y = 160,
+  y = 168,
   width = 8,
   height = 8,
   pattern = 104,
@@ -479,7 +506,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 2152,
+  x = 2136,
   y = 96,
   width = 8,
   height = 8,
@@ -515,9 +542,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 2160,
+  x = 2144,
   y = 96,
-  width = 16,
+  width = 32,
   height = 8,
   pattern = 105,
 }
@@ -592,15 +619,6 @@ tile{
   width = 16,
   height = 24,
   pattern = 189,
-}
-
-tile{
-  layer = 0,
-  x = 2104,
-  y = 96,
-  width = 48,
-  height = 8,
-  pattern = 99,
 }
 
 tile{
@@ -2540,15 +2558,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 256,
-  y = 248,
-  width = 32,
-  height = 24,
-  pattern = 196,
-}
-
-tile{
-  layer = 0,
   x = 752,
   y = 248,
   width = 32,
@@ -3564,6 +3573,78 @@ tile{
   pattern = 106,
 }
 
+tile{
+  layer = 0,
+  x = 312,
+  y = 248,
+  width = 8,
+  height = 16,
+  pattern = 358,
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 248,
+  width = 8,
+  height = 16,
+  pattern = 360,
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 248,
+  width = 32,
+  height = 16,
+  pattern = 359,
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 248,
+  width = 16,
+  height = 24,
+  pattern = 190,
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 248,
+  width = 16,
+  height = 24,
+  pattern = 190,
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 272,
+  width = 8,
+  height = 24,
+  pattern = 106,
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 296,
+  width = 32,
+  height = 8,
+  pattern = 105,
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 272,
+  width = 8,
+  height = 24,
+  pattern = 106,
+}
+
 destination{
   layer = 0,
   x = 80,
@@ -3574,7 +3655,7 @@ destination{
 
 destination{
   layer = 0,
-  x = 2192,
+  x = 2184,
   y = 221,
   name = "from_L5",
   direction = 2,
@@ -3923,6 +4004,42 @@ door{
   cannot_open_dialog = "_small_key_required",
 }
 
+enemy{
+  layer = 0,
+  x = 328,
+  y = 269,
+  name = "tentacle_orig_6",
+  direction = 3,
+  breed = "tentacle",
+}
+
+enemy{
+  layer = 0,
+  x = 344,
+  y = 269,
+  name = "tentacle_orig_7",
+  direction = 3,
+  breed = "tentacle",
+}
+
+enemy{
+  layer = 0,
+  x = 336,
+  y = 285,
+  name = "tentacle_orig_8",
+  direction = 3,
+  breed = "tentacle",
+}
+
+enemy{
+  layer = 0,
+  x = 336,
+  y = 253,
+  name = "tentacle_orig_9",
+  direction = 3,
+  breed = "tentacle",
+}
+
 tile{
   layer = 2,
   x = 2200,
@@ -4254,6 +4371,24 @@ tile{
   width = 48,
   height = 8,
   pattern = 354,
+}
+
+tile{
+  layer = 2,
+  x = 312,
+  y = 264,
+  width = 48,
+  height = 8,
+  pattern = 361,
+}
+
+tile{
+  layer = 2,
+  x = 2200,
+  y = 208,
+  width = 8,
+  height = 16,
+  pattern = 573,
 }
 
 separator{
