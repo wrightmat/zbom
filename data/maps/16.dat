@@ -1261,15 +1261,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 80,
-  y = 688,
-  width = 16,
-  height = 16,
-  pattern = 825,
-}
-
-tile{
-  layer = 0,
   x = 56,
   y = 680,
   width = 16,
@@ -7306,6 +7297,27 @@ teletransporter{
   transition = "scrolling",
   destination_map = "24",
   destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = 88,
+  y = 696,
+  width = 16,
+  height = 16,
+  name = "great_fairy_pit",
+  sprite = "entities/teletransporter_hole",
+  sound = "hero_falls",
+  destination_map = "163",
+  destination = "from_outside",
+}
+
+destination{
+  layer = 0,
+  x = 88,
+  y = 677,
+  name = "from_great_fairy",
+  direction = 3,
 }
 
 tile{

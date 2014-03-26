@@ -12,10 +12,12 @@ if game:get_value("i2021")==nil then game:set_value("i2021", 0) end
 function map:on_started(destination)
   -- increment potion counter
   if game:get_value("i2021") >= 1 then game:set_value("i2021", game:get_value("i2021")+1) end
-  if destination == main_entrance_shop and game:get_value("i2021") == 10 then
-    game:start_dialog("crista.0.shop_mushroom.7", function()
-      game:set_value("i3001", game:get_value("i3001")+1) -- increase Rep and give Odd Potion
-      hero:start_treasure("trading", 2)
+  if destination == main_entrance_shop and game:get_value("i2021") >= 10 then
+    game:start_dialog("crista.0.shop_mushroom_done", function()
+      hero:start_treasure("trading", 2) -- give Odd Potion...
+      game:set_value("b2022", true)
+      game:set_value("b2020", false) -- take away Odd Mushroom,
+      game:set_value("i2021", 0) -- and get rid of potion counter
     end)
   end
   if destination == from_intro then
@@ -74,12 +76,15 @@ end
 function npc_crista:on_interaction()
   if game:get_value("b2020") then
     if game:get_value("i2021") >= 1 then
-      game:start_dialog("crista.0.shop_mushroom_work")
+      game:start_dialog("crista.0.shop_mushroom_work", function()
+        if game:get_value("i2021") < 10 then game:set_value("i2021", game:get_value("i2021")+1) end
+      end)
     else
       game:start_dialog("crista.0.shop_mushroom", function(answer)
         if answer == 1 then
-          game:start_dialog("crista.0.shop_mushroom_yes")
-          game:set_value("i2021", 1)
+          game:start_dialog("crista.0.shop_mushroom_yes", function()
+            game:set_value("i2021", 1) -- start potion counter
+	  end)
         else
           game:start_dialog("crista.0.shop_mushroom_no")
         end
@@ -87,7 +92,7 @@ function npc_crista:on_interaction()
     end
   else
     local rand = math.random(6)
-    if rand == 1 and not game:get_value("b2020") then
+    if rand == 1 and game:get_item("trading"):get_variant() < 1 then
       -- Randomly mention the mushroom on occasion (if not already obtained)
       game:start_dialog("crista.1.shop", game:get_player_name())
     else

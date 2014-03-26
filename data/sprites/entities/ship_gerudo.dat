@@ -6,3 +6,18 @@ animation{
   },
 }
 
+animation{
+  name = "ship",
+  src_image = "entities/ships.png",
+  directions = {
+    { x = 144, y = 0, frame_width = 368, frame_height = 144, origin_x = 184, origin_y = 126 },
+  },
+}
+
+animation{
+  name = "airship",
+  src_image = "entities/ships.png",
+  directions = {
+    { x = 288, y = 0, frame_width = 368, frame_height = 144, origin_x = 184, origin_y = 126 },
+  },
+}

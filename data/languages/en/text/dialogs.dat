@@ -140,12 +140,83 @@ dialog{
 This bottle contains
 Revitalizing Potion.
 It restores both
-life and magic! Great!
+life and magic!
+Great!
   ]]
 }
 
 dialog{
   id = "_item_description.bottle_1.6",
+  skip = "current",
+  icon = 12,
+  text = [[
+This bottle contains
+a fairy. It will come
+to your aide when times
+are difficult...
+  ]]
+}
+
+dialog{
+  id = "_item_description.bottle_2.1",
+  skip = "current",
+  icon = 7,
+  text = [[
+An empty bottle can
+hold all kinds of
+things...
+  ]]
+}
+
+dialog{
+  id = "_item_description.bottle_2.2",
+  skip = "current",
+  icon = 8,
+  text = [[
+This bottle contains
+some water. Empty it
+somewhere appropriate.
+  ]]
+}
+
+dialog{
+  id = "_item_description.bottle_2.3",
+  skip = "current",
+  icon = 9,
+  text = [[
+This bottle contains
+Heart Potion. It's
+used to restore life.
+  ]]
+}
+
+dialog{
+  id = "_item_description.bottle_2.4",
+  skip = "current",
+  icon = 10,
+  text = [[
+This bottle contains
+Magic Potion. It's
+used to replenish
+your magic meter.
+  ]]
+}
+
+dialog{
+  id = "_item_description.bottle_2.5",
+  skip = "current",
+  icon = 11,
+  text = [[
+This bottle contains
+Revitalizing Potion.
+It restores both
+life and magic!
+Great!
+  ]]
+}
+
+dialog{
+  id = "_item_description.bottle_2.6",
   skip = "current",
   icon = 12,
   text = [[
@@ -251,6 +322,18 @@ dialog{
 This magical Golden
 Bracelet enables you
 to lift most anything!
+  ]]
+}
+
+dialog{
+  id = "_item_description.ocarina.1",
+  skip = "current",
+  icon = 34,
+  text = [[
+The magical musical
+instrument will
+take you where you
+need to go!
   ]]
 }
 
@@ -635,7 +718,7 @@ dialog{
   icon = 11,
   text = [[
 You got Revitalizing
-Potion!$0 This recovers
+Potion!$0 It recovers
 both life and magic!
   ]]
 }
@@ -699,7 +782,7 @@ dialog{
   icon = 11,
   text = [[
 You got Revitalizing
-Potion!$0 This recovers
+Potion!$0 It recovers
 both life and magic!
   ]]
 }
@@ -763,7 +846,7 @@ dialog{
   icon = 11,
   text = [[
 You got Revitalizing
-Potion!$0 This recovers
+Potion!$0 It recovers
 both life and magic!
   ]]
 }
@@ -827,7 +910,7 @@ dialog{
   icon = 11,
   text = [[
 You got Revitalizing
-Potion!$0 This recovers
+Potion!$0 It recovers
 both life and magic!
   ]]
 }
@@ -1040,6 +1123,18 @@ You found the Golden
 Bracelet!$0 Its magic
 allows you to lift
 just about anything!
+  ]]
+}
+
+dialog{
+  id = "_treasure.ocarina.1",
+  skip = "current",
+  icon = 34,
+  text = [[
+Use this magical
+musical instrument
+to get where you
+need to go!
   ]]
 }
 
@@ -1442,9 +1537,11 @@ dialog{
   skip = "current",
   icon = 90,
   text = [[
-You found a Green Rupee!$0
-That's worth 1 Rupee.
-Better get lots of them!
+You found a Green
+Rupee!$0 That's worth
+1 Rupee, so you'd
+better get lots of
+them!
   ]]
 }
 
@@ -1453,8 +1550,9 @@ dialog{
   skip = "current",
   icon = 91,
   text = [[
-You found a Blue Rupee!$0
-That's worth 5 Rupees.
+You found a Blue
+Rupee!$0 That's
+worth 5 Rupees.
   ]]
 }
 
@@ -1463,8 +1561,9 @@ dialog{
   skip = "current",
   icon = 92,
   text = [[
-You found a Red Rupee!$0
-That's worth 20 Rupees!
+You found a Red
+Rupee!$0 That's
+worth 20 Rupees!
   ]] }
 
 dialog{
@@ -1484,7 +1583,7 @@ dialog{
   icon = 94,
   text = [[
 You found a Silver
-Rupee!$0 That's worth
+Rupee!$0 It's worth
 100 Rupees! Lucky!
   ]]
 }
@@ -1495,7 +1594,7 @@ dialog{
   icon = 95,
   text = [[
 You found a Gold
-Rupee!$0 That's worth
+Rupee!$0 It's worth
 200 Rupees! Amazing!
   ]]
 }
@@ -1527,8 +1626,8 @@ dialog{
   skip = "current",
   icon = 11,
   text = [[
-You got some Revitalizing
-Potion!$0 This restores
+You got Revitalizing
+Potion!$0 It restores
 both life and magic!
   ]]
 }
@@ -1564,11 +1663,13 @@ dialog{
   icon = 42,
   text = [[
 You traded the Odd
-Potion for a Deku Mask!
-Not sure what the Deku
-wanted with that potion,
-but I'm sure this is
-considered trading up!
+Potion for a Deku
+Mask!$0 Not sure what
+the Deku wanted with
+that potion, but
+I'll bet this is
+considered trading
+up!
   ]]
 }
 
@@ -1757,6 +1858,7 @@ dialog{
   text = [[
 You found a Fairy!
 She looks marvelous!
+
 What now?
 Fill up hearts
 Keep in bottle
@@ -1789,11 +1891,12 @@ dialog{
   icon = 8,
   question = true, 
   text = [[
-Do you want to fill
-an empty Bottle up
-with water?
-Yes
-No
+Would you like to
+fill an empty Bottle
+up with water?
+
+Fill
+Don't
   ]]
 }
 
@@ -2708,7 +2811,7 @@ dialog{
   skip = "current",
   question = true,
   text = [[
-Hey $v, what do you need?
+Hey, what do you need?
 Some work done
 Just to chat
   ]]
@@ -2920,6 +3023,36 @@ Please, go with my
 blessing!
   ]]
 }
+
+-- Great Fairies (Faron, etc.)
+-----------------------
+
+dialog{
+  id = "great_fairy.1.faron",
+  skip = "current",
+  text = [[
+Oh, great hero!
+You've come to my
+rescue! $0
+Wait... you don't
+know what I'm
+referring to?
+Surely you've seen
+the poisoned state
+my great woods are
+in? Well, it's
+because I've been
+cursed!
+If you can find a
+great number of
+a treasure known
+as Mystic Jade,
+the curse should
+be able to be lifted.
+Please help me, hero!
+  ]]
+}
+
 
 -- *** MINOR CHARACTERS (those seen at one or a few points in the game and not extremely important) ***
 -- Include: Julita, Ordon residents and children, representatives of various races
@@ -4061,8 +4194,7 @@ dialog{
   text = [[
 Good day. My name is
 Mosq, and I'm a famous
-astronomer in this
-area.
+astronomer in this area.
   ]]
 }
 
@@ -4101,7 +4233,7 @@ your kindness! You
 have made me very
 happy. So happy in
 fact that I will give
-you my most prizes
+you my most prized
 posession. This Moon
 Tear is incredibly
 rare and only known
@@ -4297,9 +4429,9 @@ Welcome to the Inn
 at Kakariko! We offer
 the creature comforts
 while away from home.
-If you'd like to stay,
-it costs 20 rupees.
-Would you like to stay?
+It's only 20 rupees
+to stay.
+Like to stay?
 Yes
 No
   ]]
@@ -4879,7 +5011,7 @@ dialog{
 Welcome to the mystery
 chest game. Pay 20
 rupees to open one of
-he three chests and
+the three chests and
 try to earn as many
 rupees as you can!
 So, want to play?
@@ -4889,13 +5021,12 @@ No
 }
 
 dialog{
-  id = "chest_game.choose",
+  id = "chest_game.choose_chest",
   skip = "current",
   text = [[
 Choose one of the three
-chests!
-But don't count on me
-to help you out!
+chests.$0But don't count
+on me to help you out!
   ]]
 }
 
@@ -4903,7 +5034,7 @@ dialog{
   id = "chest_game.good_luck",
   skip = "current",
   text = [[
-Go choose a chest
+Go choose a chest,
 and good luck!
   ]]
 }
@@ -4915,6 +5046,16 @@ dialog{
 Haven't you won enough
 already? I'm broke
 because of you!
+  ]]
+}
+
+dialog{
+  id = "chest_game.pay_first",
+  skip = "current",
+  text = [[
+Hey!
+You gotta pay to
+play!
   ]]
 }
 
@@ -4933,11 +5074,22 @@ No
 }
 
 dialog{
-  id = "chest_game.no",
-  skip = "current", 
+  id = "chest_game.not_playing",
+  skip = "current",
   text = [[
 It's your life, man! Be
 a bit more proactive!
+  ]]
+}
+
+dialog{
+  id = "chest_game.rupee_bag",
+  skip = "current",
+  text = [[
+That's our best prize!
+You won't be getting
+anything as cool as
+that again...
   ]]
 }
 
@@ -4951,8 +5103,7 @@ new slot machine!
 Bet 5 or 20 rupees and
 try to get 3 identical
 symbols to earn back
-your bet several
-times!
+your bet or more!
 So, wanna play?
 Yes
 No
@@ -4960,7 +5111,7 @@ No
 }
 
 dialog{
-  id = "slot_game.no",
+  id = "slot_game.not_playing",
   skip = "current", 
   text = [[
 Another time maybe?
@@ -4968,7 +5119,7 @@ Another time maybe?
 }
 
 dialog{
-  id = "slot_game.choose",
+  id = "slot_game.choose_bet",
   skip = "current",
   question = true,
   text = [[
@@ -5108,5 +5259,15 @@ that you wouldn't be able
 to hold them all! That
 bigger wallet should
 help!
+  ]]
+}
+
+dialog{
+  id = "arrow_game.intro",
+  skip = "current",
+  text = [[
+This will be an exciting
+archery game, but I'm
+not open yet.
   ]]
 }

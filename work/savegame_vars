@@ -9,14 +9,13 @@ i1027: Ordon Festival progress (1=initial dialog done, 2=first area complete, 3=
 i1028: Festival obstacle race progress (1= initial dialog done, 2=race begun, 3=torches in first screen lit, 4=lost, 5=won)
 i1029: 
 
-i1030: Number of pieces of heart
-i1031: Rudy (Ordon Blacksmith) side quest (1=initial dialog done, 2=quest complete)
-i1032: 
+i1030: 
+i1031: 
+i1032: Ancient Library (1= Isan's dialog heard, 2= Ordona heard)
 i1033: 
 i1034: 
 i1035: 
 i1036: 
-
 i1037: Ruins/Sewer key door 1
 b1038: Ruins/Sewer key door 2
 b1039: Ruins/Sewer key door 3
@@ -47,9 +46,11 @@ b1062: Sacred Grove key door 1
 b1063: Sacred Grove key door 2
 b1064: Sacred Grove mystic jade chest (C14, before boss)
 b1065: Sacred Grove mystic jade chest (D15, for later)
-
+i1066: 
+i1067: 
 i1068: Tokay/Deku conflict (1- before Temple: Deku and Tokay in Grove, Gerudos at Beach, 2- Temple complete, Monkey takes Book page, 3- Gerudo allow you into Beach, 4- Ship parts found in Pyramid, 5- Gerudo repairing ship, 6- Gerudo gone from beach, 7- Tokay back to beach, Deku happy, 8- Monkeys taunting Link (mini-game to get book piece?), 9- book piece retrieved, Deku talk about library)
 b1069: Pyramid entrance message heard
+
 b1070: Pyramid key 1
 b1071: Pyramid key 2
 b1072: Pyramid key 3
@@ -91,14 +92,22 @@ b1115: Mausoleum key door 3
 b1116: Mausoleum key door 4
 b1117: Book of Mudora Piece 3
 
-# 1600s: Side Quest Related Variables
-1601: 
-1602: 
-1603: 
-1604: 
+b1120: Lakebed Lair
 
+b1140: Snowpeak
+
+b1160: Tower of the Winds
+
+b1180: Interloper Sanctum
+
+# 1600s: Side Quest Related Variables
+b1601: Rudy (Ordon Blacksmith) side quest (1=initial dialog done, 2=quest complete)
+b1602: 
+b1603: 
+b1604: 
 
 # 1700s: Heart Piece and Treasure Variables (rupee chests, etc.)
+i1700: Heart Piece counter - previously 1030
 b1701: Heart Piece chest (Ordon Village F15)
 b1702: Heart Piece chest (Relic Collector) - previously 1036
 b1703: Heart Piece chest (Faron Woods E15)
@@ -185,17 +194,18 @@ b2001: Has Shield
 b2002: Has Lamp
 b2003: Has Bow (Sacred Grove item)
 b2004: Has Boomerang (Ruins/Sewers item)
-b2005: Has Bomb Bag 1
-b2006: Has Hyrule Shield
+b2005: Has Bomb Bag (Kakariko City or Ordon Village)
+b2006: Has Hyrule Shield (Hyrule Castle Town)
 b2007: Has Rupee Bag 2 (Big Wallet)
 b2008: Has Bracelet (Abandoned Pyramid item)
 b2009: Has bottle 1 (Rudy's side quest)
-b2010: Has bottle 2
+b2010: Has bottle 2 (Relic Collector's House)
 b2011: Has bottle 3
 b2012: Has bottle 4
+b2013: Has Ocarina of Wind (Relic Collector's House)
 
-b2020: Has Odd Mushroom
+b2020: Has Odd Mushroom (Faron Woods)
 i2021: Odd Mushroom being made into Odd Potion (counter to 10)
-b2022: Has Odd Potion
-b2023: Has Deku Mask
-b2024: Has Moon Tear
+b2022: Has Odd Potion (Ordon Potion Shop)
+b2023: Has Deku Mask (Lost Woods)
+b2024: Has Moon Tear (Astronomer's House)

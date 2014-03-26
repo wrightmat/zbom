@@ -305,7 +305,8 @@ sprite{ id = "npc/zora_juba", description = "Commander Juba (Zora Elder)" }
 sprite{ id = "npc/zora_soldier", description = "Zora Soldier" }
 sprite{ id = "npc/zuna", description = "Zuna Man" }
 sprite{ id = "npc/zuna_woman", description = "Zuna Woman" }
-sprite{ id = "entities/teletransporter", description = "Teletransporter" }
+sprite{ id = "entities/teletransporter", description = "Transporter" }
+sprite{ id = "entities/teletransporter_hole", description = "Transporter (Hole)" }
 sprite{ id = "entities/destination", description = "Destination for transporter" }
 sprite{ id = "entities/bed", description = "Bed" }
 sprite{ id = "entities/bed_snores", description = "Snores" }
@@ -461,7 +462,7 @@ item{ id = "hookshot", description = "Hookshot" }
 item{ id = "jade", description = "Mystic Jade" }
 item{ id = "lamp", description = "Lamp" }
 item{ id = "magic_bar", description = "Magic Bar (none / half / full)" }
-item{ id = "ocarina_wind", description = "Ocarina of Wind" }
+item{ id = "ocarina", description = "Ocarina (Wind)" }
 item{ id = "ore", description = "Subrosian Ore" }
 item{ id = "plume", description = "Goddess Plume" }
 item{ id = "pumpkin", description = "Pumpkin (x1)" }

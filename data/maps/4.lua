@@ -40,3 +40,7 @@ end
 function npc_garroth_sensor:on_interaction()
   game:start_dialog("garroth.0.pub")
 end
+
+function npc_turt_sensor:on_interaction()
+  game:start_dialog("turt.0.inn")
+end

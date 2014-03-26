@@ -5158,15 +5158,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 48,
-  y = 0,
-  width = 16,
-  height = 272,
-  pattern = 998,
-}
-
-tile{
-  layer = 0,
   x = 32,
   y = 0,
   width = 16,
@@ -8531,6 +8522,15 @@ tile{
   pattern = 12,
 }
 
+tile{
+  layer = 0,
+  x = 48,
+  y = 0,
+  width = 16,
+  height = 272,
+  pattern = 998,
+}
+
 teletransporter{
   layer = 0,
   x = 1120,
@@ -9561,274 +9561,13 @@ teletransporter{
   destination = "_side",
 }
 
-npc{
+sensor{
   layer = 0,
   x = 56,
-  y = 117,
-  name = "water_for_bottle_1",
-  direction = 3,
-  subtype = "0",
-}
-
-npc{
-  layer = 0,
-  x = 56,
-  y = 141,
-  name = "water_for_bottle_2",
-  direction = 3,
-  subtype = "0",
-}
-
-npc{
-  layer = 0,
-  x = 56,
-  y = 165,
-  name = "water_for_bottle_3",
-  direction = 3,
-  subtype = "0",
-}
-
-npc{
-  layer = 0,
-  x = 56,
-  y = 189,
-  name = "water_for_bottle_4",
-  direction = 3,
-  subtype = "0",
-}
-
-npc{
-  layer = 0,
-  x = 56,
-  y = 213,
-  name = "water_for_bottle_5",
-  direction = 3,
-  subtype = "0",
-}
-
-npc{
-  layer = 0,
-  x = 56,
-  y = 237,
-  name = "water_for_bottle_6",
-  direction = 3,
-  subtype = "0",
-}
-
-npc{
-  layer = 0,
-  x = 56,
-  y = 261,
-  name = "water_for_bottle_7",
-  direction = 3,
-  subtype = "0",
-}
-
-npc{
-  layer = 0,
-  x = 64,
-  y = 285,
-  name = "water_for_bottle_8",
-  direction = 3,
-  subtype = "0",
-}
-
-npc{
-  layer = 0,
-  x = 80,
-  y = 301,
-  name = "water_for_bottle_9",
-  direction = 3,
-  subtype = "0",
-}
-
-npc{
-  layer = 0,
-  x = 96,
-  y = 317,
-  name = "water_for_bottle_10",
-  direction = 3,
-  subtype = "0",
-}
-
-npc{
-  layer = 0,
-  x = 112,
-  y = 333,
-  name = "water_for_bottle_11",
-  direction = 3,
-  subtype = "0",
-}
-
-npc{
-  layer = 0,
-  x = 128,
-  y = 349,
-  name = "water_for_bottle_12",
-  direction = 3,
-  subtype = "0",
-}
-
-npc{
-  layer = 0,
-  x = 152,
-  y = 349,
-  name = "water_for_bottle_13",
-  direction = 3,
-  subtype = "0",
-}
-
-npc{
-  layer = 0,
-  x = 176,
-  y = 349,
-  name = "water_for_bottle_14",
-  direction = 3,
-  subtype = "0",
-}
-
-npc{
-  layer = 0,
-  x = 200,
-  y = 349,
-  name = "water_for_bottle_15",
-  direction = 3,
-  subtype = "0",
-}
-
-npc{
-  layer = 0,
-  x = 224,
-  y = 349,
-  name = "water_for_bottle_16",
-  direction = 3,
-  subtype = "0",
-}
-
-npc{
-  layer = 0,
-  x = 248,
-  y = 349,
-  name = "water_for_bottle_17",
-  direction = 3,
-  subtype = "0",
-}
-
-npc{
-  layer = 0,
-  x = 264,
-  y = 341,
-  name = "water_for_bottle_18",
-  direction = 3,
-  subtype = "0",
-}
-
-npc{
-  layer = 0,
-  x = 280,
-  y = 325,
-  name = "water_for_bottle_19",
-  direction = 3,
-  subtype = "0",
-}
-
-npc{
-  layer = 0,
-  x = 296,
-  y = 309,
-  name = "water_for_bottle_20",
-  direction = 3,
-  subtype = "0",
-}
-
-npc{
-  layer = 0,
-  x = 312,
-  y = 293,
-  name = "water_for_bottle_21",
-  direction = 3,
-  subtype = "0",
-}
-
-npc{
-  layer = 0,
-  x = 328,
-  y = 277,
-  name = "water_for_bottle_22",
-  direction = 3,
-  subtype = "0",
-}
-
-npc{
-  layer = 0,
-  x = 344,
-  y = 261,
-  name = "water_for_bottle_23",
-  direction = 3,
-  subtype = "0",
-}
-
-npc{
-  layer = 0,
-  x = 360,
-  y = 245,
-  name = "water_for_bottle_24",
-  direction = 3,
-  subtype = "0",
-}
-
-npc{
-  layer = 0,
-  x = 376,
-  y = 237,
-  name = "water_for_bottle_25",
-  direction = 3,
-  subtype = "0",
-}
-
-npc{
-  layer = 0,
-  x = 400,
-  y = 237,
-  name = "water_for_bottle_26",
-  direction = 3,
-  subtype = "0",
-}
-
-npc{
-  layer = 0,
-  x = 424,
-  y = 237,
-  name = "water_for_bottle_27",
-  direction = 3,
-  subtype = "0",
-}
-
-npc{
-  layer = 0,
-  x = 448,
-  y = 237,
-  name = "water_for_bottle_28",
-  direction = 3,
-  subtype = "0",
-}
-
-npc{
-  layer = 0,
-  x = 472,
-  y = 237,
-  name = "water_for_bottle_29",
-  direction = 3,
-  subtype = "0",
-}
-
-npc{
-  layer = 0,
-  x = 496,
-  y = 237,
-  name = "water_for_bottle_30",
-  direction = 3,
-  subtype = "0",
+  y = 85,
+  width = 16,
+  height = 208,
+  name = "sensor_water_bottle",
 }
 
 tile{

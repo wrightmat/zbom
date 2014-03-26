@@ -6109,6 +6109,16 @@ destructible{
   can_be_cut = true,
 }
 
+npc{
+  layer = 0,
+  x = 320,
+  y = 589,
+  name = "torch_ordona",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/torch_wood",
+}
+
 tile{
   layer = 1,
   x = 496,

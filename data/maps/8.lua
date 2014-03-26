@@ -23,6 +23,7 @@ function npc_isan:on_interaction()
       end)
     else
       game:start_dialog("isan.0.library", function()
+        game:set_value("i1032", 1)
         game:set_value("i1912", game:get_value("i1912")+1)
       end)
     end

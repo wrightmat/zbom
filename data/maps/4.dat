@@ -6094,7 +6094,7 @@ shop_treasure{
   name = "item_bomb_bag",
   treasure_name = "bomb_bag",
   treasure_savegame_variable = "b2005",
-  price = 50,
+  price = 200,
   dialog = "shop.bomb_bag",
 }
 
@@ -6391,8 +6391,8 @@ npc{
 
 npc{
   layer = 0,
-  x = 1144,
-  y = 829,
+  x = 1152,
+  y = 837,
   name = "npc_turt",
   direction = 3,
   subtype = "1",
@@ -6404,6 +6404,15 @@ npc{
   x = 528,
   y = 477,
   name = "npc_garroth_sensor",
+  direction = 3,
+  subtype = "0",
+}
+
+npc{
+  layer = 0,
+  x = 1152,
+  y = 869,
+  name = "npc_turt_sensor",
   direction = 3,
   subtype = "0",
 }

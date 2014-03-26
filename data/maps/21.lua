@@ -28,7 +28,7 @@ function map:on_started(destination)
     sol.timer.start(300, function()
       sol.audio.play_sound("monkey")
       game:start_dialog("monkey1.1.grove", function()
-        game:set_value("b1061", false) -- Take away book piece #1
+        game:get_item("book_mudora"):set_variant(0) --take away book page
         for i=1, 7 do
           sol.timer.start(300, function()
             sol.audio.play_sound("monkey")
@@ -118,7 +118,7 @@ function npc_gerudo_leader:on_interaction()
     game:start_dialog("hesla.3.beach")
   elseif game:get_value("i1068") == 4 then
     game:start_dialog("hesla.4.beach")
-    game:set_value("i1841", 0) --need to take airship parts from inventory, not sure how to do this
+    get:get_item("airship_part"):set_variant(0) --take airship parts from inventory
     game:set_value("i1068", 5)
   elseif game:get_value("i1068") == 5 then
     game:start_dialog("hesla.5.beach")
@@ -144,4 +144,21 @@ function npc_monkey:on_interaction()
       hero:unfreeze()
     end)
   end)
+end
+
+function sensor_water_bottle:on_activated()
+    if game:has_bottle() then
+      local first_empty_bottle = game:get_first_empty_bottle()
+      if first_empty_bottle ~= nil then
+        game:start_dialog("found_water", function(answer)
+	  if answer == 1 then
+	    hero:start_treasure(first_empty_bottle:get_name(), 2, nil)
+	  end
+	end)
+      else
+        game:start_dialog("found_water.no_empty_bottle")
+      end
+    else
+      game:start_dialog("found_water.no_bottle")
+    end
 end

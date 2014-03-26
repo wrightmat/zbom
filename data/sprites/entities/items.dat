@@ -172,6 +172,7 @@ animation{
   src_image = "entities/items.png",
   directions = {
     { x = 192, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 208, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
     { x = 224, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
     { x = 240, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
     { x = 256, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
@@ -182,7 +183,6 @@ animation{
     { x = 336, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
     { x = 352, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
     { x = 368, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 384, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
 
@@ -229,25 +229,11 @@ animation{
 }
 
 animation{
-  name = "ocarina_wind",
+  name = "ocarina",
   src_image = "entities/items.png",
   directions = {
     { x = 336, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-  },
-}
-
-animation{
-  name = "ocarina_earth",
-  src_image = "entities/items.png",
-  directions = {
     { x = 352, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-  },
-}
-
-animation{
-  name = "ocarina_time",
-  src_image = "entities/items.png",
-  directions = {
     { x = 368, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }

@@ -68,18 +68,18 @@ function quest_status_submenu:on_started()
     self.caption_text_keys[2] = "quest_status.caption.quiver_" .. quiver
   end
 
-  -- World map.
-  local world_map = self.game:get_item("world_map"):get_variant()
-  if world_map > 0 then
-    item_sprite:set_animation("world_map")
-    item_sprite:set_direction(world_map - 1)
+  -- Ocarina.
+  local ocarina = self.game:get_item("ocarina"):get_variant()
+  if ocarina > 0 then
+    item_sprite:set_animation("ocarina")
+    item_sprite:set_direction(ocarina - 1)
     item_sprite:draw(self.quest_items_surface, 68, 177)
-    self.caption_text_keys[3] = "quest_status.caption.world_map"
+    self.caption_text_keys[3] = "quest_status.caption.ocarina_" .. ocarina
   end
 
   -- Pieces of heart.
   local pieces_of_heart_img = sol.surface.create("menus/quest_status_pieces_of_heart.png")
-  local x = 51 * (self.game:get_value("i1030") or 0)
+  local x = 51 * (self.game:get_value("i1700") or 0)
   pieces_of_heart_img:draw_region(x, 0, 51, 50, self.quest_items_surface, 101, 81)
   self.caption_text_keys[4] = "quest_status.caption.pieces_of_heart"
 

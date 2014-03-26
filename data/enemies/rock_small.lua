@@ -21,10 +21,10 @@ function enemy:go(dir4)
   local angle = 0
   local m = sol.movement.create("straight")
   m:set_speed(192)
-  if dir4 == 0 then angle = 0
-  if dir4 == 1 then angle = math.pi / 2
-  if dir4 == 2 then angle = math.pi
-  if dir4 == 3 then angle = 3 * math.pi / 2
+  if dir4 == 0 then angle = 0 end
+  if dir4 == 1 then angle = math.pi / 2 end
+  if dir4 == 2 then angle = math.pi end
+  if dir4 == 3 then angle = 3 * math.pi / 2 end
   m:set_angle(angle)
   m:set_smooth(false)
   m:start(self)

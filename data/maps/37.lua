@@ -14,7 +14,8 @@ function trading()
     if answer == 1 then --yes, so give deku mask
       game:start_dialog("deku.0.trading_yes", function()
         hero:start_treasure("trading", 3)
-        game:set_value("b2023")
+        game:set_value("b2023", true)
+        game:set_value("b2022", false)
       end)
     else
       game:start_dialog("deku.0.lost_woods")

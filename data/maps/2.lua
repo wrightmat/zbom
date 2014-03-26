@@ -101,6 +101,14 @@ function slots_man:on_interaction()
   end
 end
 
+function arrow_man:on_interaction()
+  --if playing_arrows then
+    --game:start_dialog("arrow_game.playing")
+  --else
+    game:start_dialog("arrow_game.intro")
+  --end
+end
+
 function map:activate_slot_machine(npc)
   if playing_slots then
     slots_man_sprite:set_direction(0)
@@ -126,11 +134,12 @@ function map:activate_slot_machine(npc)
   else
     sol.audio.play_sound("wrong")
     game:start_dialog("slot_game.pay_first")
+    hero:unfreeze()
   end
 end
 
 function chests_question_dialog_finished(answer)
-  if answer == 1 then
+  if answer == 2 then
     -- the player does not want to play the game
     game:start_dialog("chest_game.not_playing")
   else
@@ -152,7 +161,7 @@ function chests_question_dialog_finished(answer)
 end
 
 function slots_question_dialog_finished(answer)
-  if answer == 1 then
+  if answer == 2 then
     -- don't want to play the game
     game:start_dialog("slot_game.not_playing")
   else
@@ -162,7 +171,7 @@ function slots_question_dialog_finished(answer)
 end
 
 function slots_choose_bet_dialog_finished(answer)
-  if answer == 0 then
+  if answer == 1 then
     -- bet 5 rupees
     game_2_bet = 5
   else
@@ -191,21 +200,29 @@ function slots_choose_bet_dialog_finished(answer)
   end
 end
 
+function map:on_obtained_treasure(item, variant, savegame_variable)
+  if item:get_name() == "rupee_bag" then
+    sol.audio.play_sound("secret")
+    game:start_dialog("chest_game.rupee_bag")
+    playing_chest_game = false
+  end
+end
+
 -- Function called when the player opens an empty chest (i.e. a chest
 -- whose feature is to call the script).
 function open_chest(chest)
   if not playing_chests then
     -- trying to open a chest but not playing yet
-    game:start_dialog("chest_game.pay_first") -- the game man is angry
-    chest:set_open(false) -- close the chest again
+    game:start_dialog("chest_game.pay_first")
+    chest:set_open(false)
     sol.audio.play_sound("wrong")
-    hero:unfreeze() -- restore the control
+    hero:unfreeze()
   else
     -- give a random reward
-    local index = math.random(#game_1_rewards)
-    local amount = game_1_rewards[index]
+    local index = math.random(#chests_rewards)
+    local amount = chests_rewards[index]
     if amount == 100 and not already_played_chests then
-      -- don't give 100 rupees at the first attempt
+      -- don't give best prize at the first attempt
       amount = 5
     end
     -- give the rupees
@@ -214,9 +231,7 @@ function open_chest(chest)
     elseif amount == 20 then
       hero:start_treasure("rupee", 3)
     elseif amount == 100 then
-      hero:start_treasure("rupee_bag", 2) -- give bigger rupee bag and fill it up!
-      hero:start_treasure("rupee", 4)
-      hero:start_treasure("rupee", 4)
+      hero:start_treasure("rupee_bag", 2) -- give bigger rupee bag
     end
     if amount == 100 then
       -- the maximum reward was found: the game will now refuse to let the hero play again
@@ -313,12 +328,4 @@ function slots_timeout()
     sol.audio.play_sound("wrong")
   end
   hero:unfreeze()
-end
-
-function map:on_obtained_treasure(item, variant, savegame_variable)
-  if item:get_name() == "rupee_bag" then
-    sol.audio.play_sound("secret")
-    game:start_dialog("chest_game.rupee_bag")
-    playing_chest_game = false
-  end
 end
