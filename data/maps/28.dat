@@ -7264,10 +7264,10 @@ enemy{
 
 wall{
   layer = 0,
-  x = 536,
-  y = 848,
+  x = 568,
+  y = 840,
   width = 8,
-  height = 144,
+  height = 152,
   name = "custom_obstacle",
   stops_enemies = true,
   stops_npcs = true,
@@ -7277,8 +7277,8 @@ wall{
 wall{
   layer = 0,
   x = 584,
-  y = 792,
-  width = 112,
+  y = 800,
+  width = 192,
   height = 8,
   name = "custom_obstacle_2",
   stops_enemies = true,
@@ -7288,11 +7288,23 @@ wall{
 
 wall{
   layer = 0,
-  x = 704,
-  y = 1072,
-  width = 120,
+  x = 640,
+  y = 1032,
+  width = 160,
   height = 8,
   name = "custom_obstacle_3",
+}
+
+wall{
+  layer = 0,
+  x = 776,
+  y = 808,
+  width = 8,
+  height = 176,
+  name = "custom_obstacle_4",
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
 }
 
 tile{

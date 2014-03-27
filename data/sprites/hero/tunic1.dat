@@ -1,22 +1,22 @@
 animation{
   name = "stopped",
-  src_image = "hero/stopped.tunic.png",
+  src_image = "hero/walking.tunic.png",
   directions = {
     { x = 0, y = 0, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
-    { x = 24, y = 0, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
-    { x = 72, y = 0, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
-    { x = 96, y = 0, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
+    { x = 0, y = 32, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
+    { x = 0, y = 96, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
+    { x = 0, y = 128, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
   },
 }
 
 animation{
   name = "stopped_with_shield",
-  src_image = "hero/stopped.tunic.png",
+  src_image = "hero/walking.tunic.png",
   directions = {
     { x = 0, y = 0, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
-    { x = 48, y = 0, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
-    { x = 72, y = 0, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
-    { x = 96, y = 0, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
+    { x = 0, y = 32, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
+    { x = 0, y = 96, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
+    { x = 0, y = 128, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
   },
 }
 
@@ -207,17 +207,6 @@ animation{
 }
 
 animation{
-  name = "brandish",
-  src_image = "hero/miscellaneous.png",
-  directions = {
-    { x = 0, y = 0, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
-    { x = 0, y = 0, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
-    { x = 0, y = 0, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
-    { x = 0, y = 0, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
-  },
-}
-
-animation{
   name = "jumping",
   src_image = "hero/jumping.png",
   directions = {
@@ -225,6 +214,41 @@ animation{
     { x = 24, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
     { x = 48, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
     { x = 72, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+  },
+}
+
+animation{
+  name = "rolling",
+  src_image = "hero/rolling.png",
+  frame_delay = 100,
+  directions = {
+    { x = 0, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 7 },
+    { x = 24, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 7 },
+    { x = 48, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 7 },
+    { x = 72, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 7 },
+  },
+}
+
+animation{
+  name = "playing",
+  src_image = "hero/miscellaneous.png",
+  frame_delay = 200,
+  directions = {
+    { x = 0, y = 104, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 4 },
+    { x = 0, y = 104, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 4 },
+    { x = 0, y = 104, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 4 },
+    { x = 0, y = 104, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 4 },
+  },
+}
+
+animation{
+  name = "brandish",
+  src_image = "hero/miscellaneous.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
+    { x = 0, y = 0, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
+    { x = 0, y = 0, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
+    { x = 0, y = 0, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
   },
 }
 

@@ -9829,6 +9829,15 @@ destructible{
   can_be_cut = true,
 }
 
+sensor{
+  layer = 0,
+  x = 728,
+  y = 133,
+  width = 80,
+  height = 16,
+  name = "sensor_ordona_speak",
+}
+
 tile{
   layer = 1,
   x = 960,

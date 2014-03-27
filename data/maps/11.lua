@@ -55,20 +55,6 @@ function map:on_started(destination)
     banner_5:set_enabled(true)
     booth_1:set_enabled(true)
   else
-    -- you've finished everything in Ordon - Ordona directs you to Faron
-    if game:has_item("sword") and game:get_value("i1027") < 6 then
-      torch_1:get_sprite():set_animation("lit")
-      sol.timer.start(4000, function()
-        hero:freeze()
-        torch_overlay = sol.surface.create("entities/dark.png")
-        game:set_value("i1027", 5)
-        game:start_dialog("ordona.1.village", game:get_player_name(), function()
-          torch_overlay:fade_out(50)
-          hero:unfreeze()
-          game:set_value("i1027", 6)
-        end)
-      end)
-    end
     random_walk(npc_tern)
     torch_2:remove()
     torch_3:remove()
@@ -133,6 +119,23 @@ function sensor_start_race:on_activated()
       race_timer = sol.timer.start(40000, end_race_lost)
       race_timer:set_with_sound(true)
     end
+  end
+end
+
+function sensor_ordona_speak:on_activated()
+  -- you've finished everything in Ordon - Ordona directs you to Faron
+  if game:has_item("sword") and game:get_value("i1027") < 6 then
+    torch_1:get_sprite():set_animation("lit")
+    sol.timer.start(2500, function()
+      hero:freeze()
+      torch_overlay = sol.surface.create("entities/dark.png")
+      game:set_value("i1027", 5)
+      game:start_dialog("ordona.1.village", game:get_player_name(), function()
+        torch_overlay:fade_out(50)
+        hero:unfreeze()
+        game:set_value("i1027", 6)
+      end)
+    end)
   end
 end
 

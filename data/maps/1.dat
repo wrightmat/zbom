@@ -1810,7 +1810,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 192,
+  x = 200,
   y = 504,
   width = 8,
   height = 8,
@@ -1819,7 +1819,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 200,
+  x = 208,
   y = 504,
   width = 64,
   height = 8,
@@ -1828,7 +1828,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 264,
+  x = 272,
   y = 504,
   width = 8,
   height = 8,
@@ -1837,7 +1837,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 192,
+  x = 200,
   y = 488,
   width = 8,
   height = 16,
@@ -1846,7 +1846,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 192,
+  x = 200,
   y = 480,
   width = 8,
   height = 8,
@@ -1855,7 +1855,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 200,
+  x = 208,
   y = 480,
   width = 64,
   height = 8,
@@ -1864,7 +1864,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 264,
+  x = 272,
   y = 480,
   width = 8,
   height = 8,
@@ -1873,7 +1873,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 264,
+  x = 272,
   y = 488,
   width = 8,
   height = 16,
@@ -1882,7 +1882,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 200,
+  x = 208,
   y = 488,
   width = 64,
   height = 16,
@@ -5174,6 +5174,105 @@ tile{
   pattern = 572,
 }
 
+tile{
+  layer = 0,
+  x = 72,
+  y = 512,
+  width = 8,
+  height = 24,
+  pattern = 411,
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 512,
+  width = 80,
+  height = 24,
+  pattern = 410,
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 512,
+  width = 16,
+  height = 24,
+  pattern = 409,
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 480,
+  width = 16,
+  height = 32,
+  pattern = 408,
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = 407,
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = 405,
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 480,
+  width = 16,
+  height = 8,
+  pattern = 406,
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = 379,
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 480,
+  width = 16,
+  height = 8,
+  pattern = 404,
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = 380,
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 480,
+  width = 16,
+  height = 8,
+  pattern = 381,
+}
+
 destination{
   layer = 0,
   x = 144,
@@ -5344,8 +5443,8 @@ teletransporter{
 
 shop_treasure{
   layer = 0,
-  x = 88,
-  y = 496,
+  x = 80,
+  y = 504,
   name = "shop_ordon_shield",
   treasure_name = "shield",
   price = 100,
@@ -5354,7 +5453,7 @@ shop_treasure{
 
 shop_treasure{
   layer = 0,
-  x = 200,
+  x = 208,
   y = 480,
   name = "shop_potion_red",
   treasure_name = "potion",
@@ -5364,7 +5463,7 @@ shop_treasure{
 
 shop_treasure{
   layer = 0,
-  x = 232,
+  x = 240,
   y = 480,
   name = "shop_potion_green",
   treasure_name = "potion",
@@ -5375,7 +5474,7 @@ shop_treasure{
 
 npc{
   layer = 0,
-  x = 232,
+  x = 240,
   y = 469,
   name = "npc_crista",
   direction = 3,
@@ -5385,8 +5484,8 @@ npc{
 
 shop_treasure{
   layer = 0,
-  x = 136,
-  y = 496,
+  x = 128,
+  y = 504,
   name = "shop_ordon_bomb_bag",
   treasure_name = "bomb_bag",
   price = 350,
@@ -5395,8 +5494,8 @@ shop_treasure{
 
 npc{
   layer = 0,
-  x = 128,
-  y = 477,
+  x = 136,
+  y = 501,
   name = "npc_shopkeeper",
   direction = 3,
   subtype = "1",
@@ -5685,16 +5784,6 @@ destructible{
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-}
-
-npc{
-  layer = 0,
-  x = 568,
-  y = 869,
-  name = "npc_deacon",
-  direction = 3,
-  subtype = "1",
-  sprite = "npc/hylian_deacon",
 }
 
 destructible{

@@ -1147,7 +1147,7 @@ tile{
   x = 160,
   y = 344,
   width = 8,
-  height = 24,
+  height = 16,
   pattern = 641,
 }
 
@@ -1156,7 +1156,7 @@ tile{
   x = 184,
   y = 344,
   width = 8,
-  height = 24,
+  height = 16,
   pattern = 641,
 }
 
@@ -1214,6 +1214,15 @@ sensor{
   width = 80,
   height = 16,
   name = "sensor_fairy_speak",
+}
+
+wall{
+  layer = 0,
+  x = 104,
+  y = 136,
+  width = 144,
+  height = 8,
+  stops_hero = true,
 }
 
 tile{

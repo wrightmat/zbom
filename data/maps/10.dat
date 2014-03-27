@@ -9599,6 +9599,7 @@ destructible{
   treasure_name = "random",
   sprite = "entities/pumpkin",
   destruction_sound = "smashing",
+  weight = 1,
   can_regenerate = true,
 }
 
@@ -9609,6 +9610,7 @@ destructible{
   treasure_name = "random",
   sprite = "entities/pumpkin",
   destruction_sound = "smashing",
+  weight = 1,
   can_regenerate = true,
 }
 
@@ -9619,6 +9621,7 @@ destructible{
   treasure_name = "random",
   sprite = "entities/pumpkin",
   destruction_sound = "smashing",
+  weight = 1,
   can_regenerate = true,
 }
 
@@ -9629,6 +9632,7 @@ destructible{
   treasure_name = "random",
   sprite = "entities/pumpkin",
   destruction_sound = "smashing",
+  weight = 1,
   can_regenerate = true,
 }
 
@@ -9639,6 +9643,7 @@ destructible{
   treasure_name = "random",
   sprite = "entities/pumpkin",
   destruction_sound = "smashing",
+  weight = 1,
   can_regenerate = true,
 }
 
@@ -9649,6 +9654,7 @@ destructible{
   treasure_name = "random",
   sprite = "entities/pumpkin",
   destruction_sound = "smashing",
+  weight = 1,
   can_regenerate = true,
 }
 
@@ -9714,6 +9720,7 @@ destructible{
   treasure_name = "random",
   sprite = "entities/pumpkin",
   destruction_sound = "smashing",
+  weight = 1,
   can_regenerate = true,
 }
 
@@ -9724,6 +9731,7 @@ destructible{
   treasure_name = "random",
   sprite = "entities/pumpkin",
   destruction_sound = "smashing",
+  weight = 1,
   can_regenerate = true,
 }
 
@@ -9734,6 +9742,7 @@ destructible{
   treasure_name = "random",
   sprite = "entities/pumpkin",
   destruction_sound = "smashing",
+  weight = 1,
   can_regenerate = true,
 }
 
@@ -9744,6 +9753,7 @@ destructible{
   treasure_name = "random",
   sprite = "entities/pumpkin",
   destruction_sound = "smashing",
+  weight = 1,
   can_regenerate = true,
 }
 
@@ -9754,6 +9764,7 @@ destructible{
   treasure_name = "random",
   sprite = "entities/pumpkin",
   destruction_sound = "smashing",
+  weight = 1,
   can_regenerate = true,
 }
 
@@ -9764,6 +9775,7 @@ destructible{
   treasure_name = "random",
   sprite = "entities/pumpkin",
   destruction_sound = "smashing",
+  weight = 1,
   can_regenerate = true,
 }
 
@@ -9774,6 +9786,7 @@ destructible{
   treasure_name = "random",
   sprite = "entities/pumpkin",
   destruction_sound = "smashing",
+  weight = 1,
   can_regenerate = true,
 }
 
@@ -9784,6 +9797,7 @@ destructible{
   treasure_name = "random",
   sprite = "entities/pumpkin",
   destruction_sound = "smashing",
+  weight = 1,
   can_regenerate = true,
 }
 
@@ -9794,6 +9808,7 @@ destructible{
   treasure_name = "random",
   sprite = "entities/pumpkin",
   destruction_sound = "smashing",
+  weight = 1,
   can_regenerate = true,
 }
 
@@ -9804,6 +9819,7 @@ destructible{
   treasure_name = "random",
   sprite = "entities/pumpkin",
   destruction_sound = "smashing",
+  weight = 1,
   can_regenerate = true,
 }
 
@@ -9814,6 +9830,7 @@ destructible{
   treasure_name = "random",
   sprite = "entities/pumpkin",
   destruction_sound = "smashing",
+  weight = 1,
   can_regenerate = true,
 }
 
@@ -9824,6 +9841,7 @@ destructible{
   treasure_name = "random",
   sprite = "entities/pumpkin",
   destruction_sound = "smashing",
+  weight = 1,
   can_regenerate = true,
 }
 
@@ -9834,6 +9852,7 @@ destructible{
   treasure_name = "random",
   sprite = "entities/pumpkin",
   destruction_sound = "smashing",
+  weight = 1,
   can_regenerate = true,
 }
 
@@ -9844,6 +9863,7 @@ destructible{
   treasure_name = "random",
   sprite = "entities/pumpkin",
   destruction_sound = "smashing",
+  weight = 1,
   can_regenerate = true,
 }
 
@@ -9854,7 +9874,17 @@ destructible{
   treasure_name = "random",
   sprite = "entities/pumpkin",
   destruction_sound = "smashing",
+  weight = 1,
   can_regenerate = true,
+}
+
+npc{
+  layer = 0,
+  x = 304,
+  y = 709,
+  name = "npc_rudy_sensor",
+  direction = 3,
+  subtype = "0",
 }
 
 tile{
