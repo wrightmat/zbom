@@ -12,11 +12,12 @@ end
 function npc_astronomer:on_interaction()
   if game:get_value("b2023") then
    game:start_dialog("astronomer.0.trading", function(answer)
-    if answer == 0 then
+    if answer == 1 then
       -- give him the potion, get the deku mask
       game:start_dialog("astronomer.0.trading_yes", function()
         hero:start_treasure("trading", 4)
-        game:set_value("b2024")
+        game:set_value("b2024", true)
+        game:set_value("b2023", false)
       end)
     else
       -- don't give him the potion

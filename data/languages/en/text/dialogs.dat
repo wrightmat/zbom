@@ -1674,6 +1674,20 @@ up!
 }
 
 dialog{
+  id = "_treasure.trading.4",
+  skip = "current",
+  icon = 42,
+  text = [[
+You traded the Deku
+Mask for a Moon Tear!
+It's weird that the
+guy wanted the mask
+so bad, but who cares
+since this is so shiny!
+  ]]
+}
+
+dialog{
   id = "_treasure.airship_part.1",
   skip = "current",
   text = [[
@@ -4216,7 +4230,7 @@ feel more alive!
 
 Wait- is that a mask
 of a Deku you have?
-Please give it to me-
+Please give it to me -
 then I can have the
 Deku with me always!
 Yes

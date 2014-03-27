@@ -77,6 +77,8 @@ function sol.main:debug_on_key_pressed(key, modifiers)
       sol.menu.stop_all(self)
       self:start_savegame(self.game)
     end
+  elseif key == "f11" then
+    print('Map ID: '..self.game:get_map():get_id())
   elseif key == "f12" and not console.enabled then
     sol.menu.start(self, console)
   elseif sol.main.game ~= nil and not console.enabled then
