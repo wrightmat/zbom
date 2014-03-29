@@ -37,7 +37,7 @@ local function are_all_torches_on()
     and torch_3:get_sprite():get_animation() == "lit"
 end
 
-local function end_race_lost()
+function end_race_lost()
   sol.audio.play_sound("wrong")
   game:set_value("i1028", 4);
   torch_1:get_sprite():set_animation("unlit")
@@ -75,12 +75,7 @@ function map:on_started(destination)
     npc_jarred:remove()
     npc_quint:remove()
   end
-  if game:get_value("i1028") == 2 then
-    race_timer = sol.timer.start(40000, end_race_lost)
-    race_timer:set_with_sound(true)
-  elseif game:get_value("i1028") == 3 then
-    race_timer = sol.timer.start(40000, end_race_lost)
-    race_timer:set_with_sound(true)
+  if game:get_value("i1028") == 3 then
     torch_1:get_sprite():set_animation("lit")
     torch_2:get_sprite():set_animation("lit")
     torch_3:get_sprite():set_animation("lit")
@@ -116,7 +111,8 @@ function sensor_start_race:on_activated()
   if hero:get_direction() == 1 then
     if game:get_value("i1028") <= 1 or game:get_value("i1028") == 4 then
       game:set_value("i1028", 2)
-      race_timer = sol.timer.start(40000, end_race_lost)
+      race_timer = sol.timer.start(game, 140000, end_race_lost)
+      race_timer:set_suspended_with_map(false)
       race_timer:set_with_sound(true)
     end
   end
@@ -125,15 +121,22 @@ end
 function sensor_ordona_speak:on_activated()
   -- you've finished everything in Ordon - Ordona directs you to Faron
   if game:has_item("sword") and game:get_value("i1027") < 6 then
-    torch_1:get_sprite():set_animation("lit")
+    sol.timer.start(2000,function()
+      torch_1:get_sprite():set_animation("lit")
+    end)
     sol.timer.start(2500, function()
       hero:freeze()
       torch_overlay = sol.surface.create("entities/dark.png")
+      torch_overlay:fade_in(50)
       game:set_value("i1027", 5)
+      hero:set_direction(0)
       game:start_dialog("ordona.1.village", game:get_player_name(), function()
         torch_overlay:fade_out(50)
         hero:unfreeze()
         game:set_value("i1027", 6)
+        sol.timer.start(10000, function()
+          torch_1:get_sprite():set_animation("lit")
+        end)
       end)
     end)
   end
@@ -182,6 +185,19 @@ function map:on_update()
     banner_race_1:set_enabled(true)
     banner_race_2:set_enabled(true)
     banner_race_3:set_enabled(true)
+  end
+  -- Show remaining timer time on screen?
+  if race_timer ~= nil then
+    function map:on_draw(dst_surface)
+      local timer_surface = sol.surface.create(32, 16)
+      local timer_text = sol.text_surface.create{
+        font = "white_digits",
+        horizontal_alignment = "left",
+        vertical_alignment = "top",
+      }
+      --timer_text:set_text(tostring(race_timer))
+      --timer_text:draw(dst_surface, 80, 20)
+    end
   end
 end
 

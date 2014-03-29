@@ -527,14 +527,17 @@ enemy{ id = "lizalfos", description = "Lizalfos" }
 enemy{ id = "moth", description = "Moth" }
 enemy{ id = "octorok_red", description = "Octorok, Red" }
 enemy{ id = "peahat", description = "Peahat" }
+enemy{ id = "pike_auto", description = "Pike (auto)" }
+enemy{ id = "pike_detect", description = "Pike (detect)" }
+enemy{ id = "pike_fixed", description = "Pike (fixed)" }
 enemy{ id = "poe", description = "Poe" }
 enemy{ id = "poe_big", description = "Big Poe" }
 enemy{ id = "rat", description = "Rat" }
 enemy{ id = "ropa", description = "Ropa" }
 enemy{ id = "rope", description = "Rope" }
-enemy{ id = "soldier_green", description = "Soldier, Green" }
 enemy{ id = "skeletor", description = "Skeletor" }
 enemy{ id = "snap_dragon", description = "Snap Dragon" }
+enemy{ id = "soldier_green", description = "Soldier, Green" }
 enemy{ id = "tektite_green", description = "Tektite, Green" }
 enemy{ id = "tektite_red", description = "Tektite, Red" }
 enemy{ id = "tektite_blue", description = "Tektite, Blue" }
@@ -544,7 +547,7 @@ enemy{ id = "gohma", description = "Gohma (Boss)" }
 enemy{ id = "lanmola", description = "Lanmola (Miniboss)" }
 enemy{ id = "manhandla", description = "Manhandla (Boss)" }
 enemy{ id = "arrghus_stone", description = "Stone Arrghus (Miniboss)" }
-enemy{ id = "zirna", description = "Zirna (Dark Interloper)" }
 enemy{ id = "carock", description = "Carock (Dark Interloper)" }
+enemy{ id = "zirna", description = "Zirna (Dark Interloper)" }
 
 language{ id = "en", description = "English dialogs" }

@@ -24,7 +24,7 @@ local function are_all_torches_on()
     and game:get_value("i1028") == 3
 end
 
-local function end_race_lost()
+function end_race_lost()
   sol.audio.play_sound("wrong");
   game:set_value("i1028", 4);
   torch_1:get_sprite():set_animation("unlit")
@@ -35,7 +35,7 @@ local function end_race_lost()
 end
 
 local function end_race_won()
-  sol.timer.stop_all(map)
+  sol.timer.stop_all(game)
   sol.audio.play_sound("secret")
   game:set_value("i1027", 3)
   game:set_value("i1028", 5)
@@ -45,6 +45,7 @@ local function end_race_won()
       sol.timer.start(1000, function()
         hero:freeze()
         torch_overlay = sol.surface.create("entities/dark.png")
+        torch_overlay:fade_in(50)
         game:start_dialog("ordona.0.festival", game:get_player_name(), function()
           torch_overlay:fade_out(50)
           hero:unfreeze()
@@ -57,9 +58,16 @@ local function end_race_won()
 end
 
 function map:on_started(destination)
-  if game:get_value("i1028") >= 1 and game:get_value("i1028") <= 3 then
-    race_timer = sol.timer.start(80000, end_race_lost);
-    race_timer:set_with_sound(true)
+  if game:get_value("i1027") > 1 and game:get_value("i1027") < 4 then
+    banner_1:set_enabled("true")
+    banner_2:set_enabled("true")
+    banner_3:set_enabled("true")
+    banner_4:set_enabled("true")
+    banner_5:set_enabled("true")
+    banner_6:set_enabled("true")
+    banner_7:set_enabled("true")
+    banner_8:set_enabled("true")
+    banner_9:set_enabled("true")
   elseif game:get_value("i1027") == 4 then
     npc_tristan:remove()
   elseif game:get_value("i1027") >= 5 then

@@ -32,23 +32,21 @@ end
 function npc_crista:on_interaction()
   if game:get_value("i1901") >= 1 then
     if not map:has_entities("chuchu") and game:get_value("i1027") <= 4 then 
-      game:start_dialog("crista.1.woods", game:get_player_name(), function(answer)
-        if answer == 1 then
-          game:set_value("i1901", game:get_value("i1901")+1)
-          game:start_dialog("crista.1.woods_agree")
-        else
-          game:set_value("i1901", game:get_value("i1901")-1)
-          game:start_dialog("crista.1.woods_disagree")
-        end
-      end)
+      game:start_dialog("crista.1.woods")
     elseif map:has_entities("chuchu") and game:get_value("i1027") <= 4 then
-      game:start_dialog("crista.1.woods_chuchu")
+      game:start_dialog("crista.1.woods_chuchu", game:get_player_name())
     else
       game:start_dialog("crista.1.woods_close")
     end
   else
-    game:start_dialog("crista.0", function()
-      game:set_value("i1901", game:get_value("i1901")+1)
+    game:start_dialog("crista.0.woods", game:get_player_name(), function(answer)
+      if answer == 1 then
+        game:set_value("i1901", game:get_value("i1901")+1)
+        game:start_dialog("crista.0.woods_agree")
+      else
+        game:set_value("i1901", game:get_value("i1901")-1)
+        game:start_dialog("crista.0.woods_disagree")
+      end
     end)
   end
 end

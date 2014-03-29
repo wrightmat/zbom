@@ -2512,8 +2512,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 440,
-  y = 512,
+  x = 448,
+  y = 504,
   width = 48,
   height = 16,
   pattern = 505,
@@ -2557,8 +2557,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 448,
-  y = 528,
+  x = 456,
+  y = 520,
   width = 32,
   height = 8,
   pattern = 523,
@@ -2919,25 +2919,16 @@ tile{
   layer = 0,
   x = 232,
   y = 344,
-  width = 48,
+  width = 32,
   height = 32,
   pattern = 524,
 }
 
 tile{
   layer = 0,
-  x = 248,
-  y = 376,
-  width = 16,
-  height = 32,
-  pattern = 524,
-}
-
-tile{
-  layer = 0,
-  x = 280,
+  x = 296,
   y = 424,
-  width = 96,
+  width = 80,
   height = 48,
   pattern = 524,
 }
@@ -2964,7 +2955,7 @@ tile{
   layer = 0,
   x = 376,
   y = 376,
-  width = 32,
+  width = 16,
   height = 16,
   pattern = 524,
 }
@@ -2981,15 +2972,15 @@ tile{
 tile{
   layer = 0,
   x = 400,
-  y = 488,
+  y = 496,
   width = 16,
-  height = 48,
+  height = 32,
   pattern = 524,
 }
 
 tile{
   layer = 0,
-  x = 496,
+  x = 504,
   y = 480,
   width = 48,
   height = 16,
@@ -4204,8 +4195,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 440,
-  y = 488,
+  x = 448,
+  y = 480,
   width = 48,
   height = 24,
   pattern = 1499,
@@ -4276,8 +4267,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 432,
-  y = 504,
+  x = 440,
+  y = 496,
   width = 8,
   height = 16,
   pattern = 1498,
@@ -4285,8 +4276,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 488,
-  y = 504,
+  x = 496,
+  y = 496,
   width = 8,
   height = 16,
   pattern = 1500,
@@ -5264,6 +5255,60 @@ tile{
   pattern = 949,
 }
 
+tile{
+  layer = 0,
+  x = 568,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = 524,
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 496,
+  width = 16,
+  height = 16,
+  pattern = 524,
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 376,
+  width = 16,
+  height = 16,
+  pattern = 524,
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 344,
+  width = 16,
+  height = 16,
+  pattern = 524,
+}
+
+tile{
+  layer = 0,
+  x = 584,
+  y = 520,
+  width = 16,
+  height = 16,
+  pattern = 524,
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = 524,
+}
+
 teletransporter{
   layer = 0,
   x = -16,
@@ -5432,7 +5477,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 504,
+  x = 512,
   y = 493,
   treasure_name = "random",
   sprite = "entities/bush",
@@ -5443,7 +5488,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 520,
+  x = 528,
   y = 493,
   treasure_name = "random",
   sprite = "entities/bush",
@@ -5454,7 +5499,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 536,
+  x = 544,
   y = 493,
   treasure_name = "random",
   sprite = "entities/bush",
@@ -5466,7 +5511,7 @@ destructible{
 destructible{
   layer = 0,
   x = 408,
-  y = 501,
+  y = 509,
   treasure_name = "random",
   sprite = "entities/bush",
   destruction_sound = "bush",
@@ -5477,18 +5522,7 @@ destructible{
 destructible{
   layer = 0,
   x = 408,
-  y = 517,
-  treasure_name = "random",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = 1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 408,
-  y = 533,
+  y = 525,
   treasure_name = "random",
   sprite = "entities/bush",
   destruction_sound = "bush",
@@ -5916,30 +5950,8 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 272,
-  y = 373,
-  treasure_name = "random",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = 1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
   x = 256,
   y = 389,
-  treasure_name = "random",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = 1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 256,
-  y = 405,
   treasure_name = "random",
   sprite = "entities/bush",
   destruction_sound = "bush",
@@ -5973,39 +5985,6 @@ destructible{
   layer = 0,
   x = 416,
   y = 357,
-  treasure_name = "random",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = 1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 288,
-  y = 437,
-  treasure_name = "random",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = 1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 288,
-  y = 453,
-  treasure_name = "random",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = 1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 288,
-  y = 469,
   treasure_name = "random",
   sprite = "entities/bush",
   destruction_sound = "bush",
@@ -6236,7 +6215,7 @@ destructible{
 destructible{
   layer = 0,
   x = 400,
-  y = 389,
+  y = 381,
   treasure_name = "random",
   sprite = "entities/bush",
   destruction_sound = "bush",
@@ -6752,8 +6731,8 @@ destructible{
 
 dynamic_tile{
   layer = 0,
-  x = 248,
-  y = 592,
+  x = 264,
+  y = 320,
   width = 24,
   height = 24,
   name = "banner_1",
@@ -6785,8 +6764,8 @@ dynamic_tile{
 
 dynamic_tile{
   layer = 0,
-  x = 496,
-  y = 600,
+  x = 504,
+  y = 576,
   width = 24,
   height = 24,
   name = "banner_4",
@@ -6829,7 +6808,7 @@ dynamic_tile{
 
 dynamic_tile{
   layer = 0,
-  x = 424,
+  x = 432,
   y = 464,
   width = 24,
   height = 24,
@@ -6872,7 +6851,7 @@ npc{
 npc{
   layer = 0,
   x = 416,
-  y = 389,
+  y = 381,
   name = "torch_2",
   direction = 3,
   subtype = "0",
@@ -6882,7 +6861,7 @@ npc{
 npc{
   layer = 0,
   x = 192,
-  y = 285,
+  y = 293,
   name = "torch_3",
   direction = 3,
   subtype = "0",
@@ -6948,6 +6927,39 @@ destructible{
   layer = 0,
   x = 40,
   y = 445,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = 1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 576,
+  y = 221,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = 1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 512,
+  y = 509,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = 1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 592,
+  y = 533,
   treasure_name = "random",
   sprite = "entities/bush",
   destruction_sound = "bush",
@@ -7317,8 +7329,8 @@ tile{
 
 tile{
   layer = 2,
-  x = 440,
-  y = 456,
+  x = 448,
+  y = 448,
   width = 48,
   height = 32,
   pattern = 1495,
@@ -7398,8 +7410,8 @@ tile{
 
 tile{
   layer = 2,
-  x = 432,
-  y = 480,
+  x = 440,
+  y = 472,
   width = 8,
   height = 24,
   pattern = 1494,
@@ -7407,8 +7419,8 @@ tile{
 
 tile{
   layer = 2,
-  x = 488,
-  y = 480,
+  x = 496,
+  y = 472,
   width = 8,
   height = 24,
   pattern = 1497,

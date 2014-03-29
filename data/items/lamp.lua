@@ -85,7 +85,7 @@ end
 
 -- Called when fire touches an NPC linked to the Lamp.
 function item:on_npc_collision_fire(npc)
-  if npc:get_name():find("^torch^") then
+  if npc:get_name():find("^torch") then
     local torch_sprite = npc:get_sprite()
     if torch_sprite:get_animation() == "unlit" then
       -- Temporarily light the torch up.

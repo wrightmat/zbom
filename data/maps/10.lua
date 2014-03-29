@@ -57,11 +57,15 @@ function map:on_started(destination)
     booth_2:set_enabled(true)
     blacksmith_table:set_enabled(true)
     blacksmith_furnace:set_enabled(true)
+    npc_julita_sensor:remove(true)
+    npc_rudy_sensor:remove(true)
     random_walk(npc_ulo)
     --random_walk(npc_bilo) -- TODO: add back once he has all of his directions/animations
   else  -- If festival is over, then don't have NPCs walking around outside
     npc_rudy:remove()
     npc_julita:remove()
+    npc_julita_sensor:remove(true)
+    npc_rudy_sensor:remove(true)
     npc_ulo:remove()
     npc_bilo:remove()
   end
@@ -103,16 +107,20 @@ function sensor_festival_dialog:on_activated()
     hero:freeze()
     game:set_value("i1027", 1)
     festival_timer = sol.timer.start(2000, function()
-      game:start_dialog("jarred.0.festival", game:get_player_name(), function()
-	sol.timer.start(100, function()
+      local m = sol.movement.create("jump")
+      sol.audio.play_sound("jump")
+      m:set_direction8(6)
+      m:set_distance(8)
+      m:set_speed(32)
+      m:start(npc_jarred)
+      sol.timer.start(400, function()
+        game:start_dialog("jarred.0.festival", game:get_player_name(), function()
           local m = sol.movement.create("jump")
-          m:set_direction8(3)
-          m:set_distance(8)
 	  sol.audio.play_sound("jump")
+          m:set_direction8(6)
+          m:set_distance(8)
           m:start(npc_francis)
 	  sol.timer.start(400, function()
-	    sol.audio.play_sound("jump")
-            m:start(npc_francis)
             game:start_dialog("francis.0.festival_2", function()
               game:set_value("i1027", 2)
               hero:unfreeze()
@@ -122,12 +130,12 @@ function sensor_festival_dialog:on_activated()
               game:set_value("i1907", game:get_value("i1907")+1)
               game:set_value("i1908", game:get_value("i1908")+1)
               game:set_value("i1909", game:get_value("i1909")+1)
-	    end)
-          end)
-        end)
-      end)
-    end)
-  end
+            end)--dialog
+	  end)--jump timer
+        end)--dialog
+      end)--jump timer
+    end)--sensor timer
+  end--if
 end
 
 function npc_rudy:on_interaction()
@@ -146,6 +154,9 @@ function npc_rudy:on_interaction()
     game:start_dialog("rudy.0.festival")
     if game:get_value("i1902") == 0 then game:set_value("i1902", 1) end
   end
+end
+function npc_rudy_sensor:on_interaction()
+  npc_rudy:on_interaction()
 end
 
 function npc_quint:on_interaction()
@@ -208,4 +219,7 @@ function npc_julita:on_interaction()
   else
     game:start_dialog("julita.0")
   end
+end
+function npc_julita_sensor:on_interaction()
+  npc_julita:on_interaction()
 end

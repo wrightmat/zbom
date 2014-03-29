@@ -1735,9 +1735,9 @@ dialog{
   id = "_cannot_lift_should_cut",
   skip = "current",
   text = [[
-It would be impossible
-or awkward to lift, find
-something to cut it!
+This would be difficult
+to lift, why not find
+something to cut it?
   ]]
 }
 
@@ -2135,15 +2135,6 @@ dialog{
 -----------------------------------------------------------------------------------------------
 
 dialog{
-  id = "crista.0",
-  skip = "current",
-  text = [[
-Hey! I was wondering
-if I'd see you today!
-  ]]
-}
-
-dialog{
   id = "crista.0.shop",
   skip = "current",
   text = [[
@@ -2227,35 +2218,7 @@ thanks!
 }
 
 dialog{
-  id = "crista.1.festival",
-  skip = "current",
-  text = [[
-Hi $v! $0
-I heard that you won
-the race, but I was
-stuck at the market
-with Mother and
-couldn't watch it, so
-I had to at least try
-to congratulate you.
-So... congratulations!
-I can't stay long because
-Mother needs me back at
-the market, but we'll
-have to go flower picking
-sometime soon. Or cut
-some Deku sticks to sell.
-Mother hasn't had the
-time to cut sticks lately,
-and the children love
-playing hero with those
-Deku sticks. Anyway...$0
-I'll be seeing you, $v
-  ]]
-}
-
-dialog{
-  id = "crista.1.woods",
+  id = "crista.0.woods",
   skip = "current",
   question = true,
   text = [[
@@ -2284,7 +2247,7 @@ Looks like woods...
 }
 
 dialog{
-  id = "crista.1.woods_agree",
+  id = "crista.0.woods_agree",
   skip = "current",
   text = [[
 Oh, I knew you would
@@ -2300,7 +2263,7 @@ and you have a lantern...
 }
 
 dialog{
-  id = "crista.1.woods_disagree",
+  id = "crista.0.woods_disagree",
   skip = "current",
   text = [[
 Obviously you haven't
@@ -2313,11 +2276,22 @@ just up ahead!
 }
 
 dialog{
+  id = "crista.1.woods",
+  skip = "current",
+  text = [[
+Did you check out that
+place? I really want to
+know what it is, but I'm
+afraid of the dark.
+  ]]
+}
+
+dialog{
   id = "crista.1.woods_close",
   skip = "current",
   text = [[
 What's that?$0
-Oh, mother is worried
+Oh, mother's concerned
 about me? I probably
 have enough for now,
 and I don't want her
@@ -2647,8 +2621,9 @@ so much that I just had
 to take a break from the
 Council to come spend
 time with my villagers!
-So $v, do you know this
-is a festival of light?
+So $v, did you know
+this is a festival
+of light?
   ]]
 }
 
@@ -3201,7 +3176,7 @@ dialog{
   skip = "current",
   text = [[
 Uncle Tristan! Can we
-try the obstacle course?
+try the maze race?
   ]]
 }
 
@@ -3221,8 +3196,8 @@ dialog{
   skip = "current",
   next = "francis.0.festival",
   text = [[
-Daddy set up an obstacle
-course around town for
+Daddy set up a maze
+race around town for
 all us kids, and whoever
 can run through it fast
 enough and light all
@@ -3480,12 +3455,25 @@ huh? Well, we can't let
 that happen again! If you
 ever get turned around,
 here's what you do...
-Head North for Hyrule
-Castle Town. East to the
-old Ruins. South to your
-hometown of Ordon. And
-finally, west will put
-you at my house!
+Head straight north
+for Hyrule Castle Town.
+Northeast leads to the
+old Ruins. South goes
+back to Ordon, and
+west of there is the
+Western Faron Woods.
+You're in the Northern
+Faron Woods now.
+How can you tell? Well
+look at the trees, my
+boy! These pointy trees
+only grow in the Faron
+region, the rest of
+Hyrule has nice rounded
+trees. You'll know
+you've reached Hyrule
+Field when the trees
+change shape!
   ]]
 }
 

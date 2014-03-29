@@ -4677,6 +4677,14 @@ pickable{
   treasure_variant = 2,
 }
 
+enemy{
+  layer = 0,
+  x = 440,
+  y = 397,
+  direction = 3,
+  breed = "pike_auto",
+}
+
 tile{
   layer = 2,
   x = 328,
