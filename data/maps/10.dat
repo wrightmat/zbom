@@ -9896,17 +9896,6 @@ npc{
   subtype = "0",
 }
 
-npc{
-  layer = 0,
-  x = 568,
-  y = 925,
-  name = "torch_2",
-  direction = 3,
-  subtype = "0",
-  sprite = "entities/torch",
-  behavior = "item#lamp",
-}
-
 tile{
   layer = 1,
   x = 760,
