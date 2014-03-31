@@ -26,10 +26,10 @@ animation{
   name = "pose1",
   src_image = "npc/ordon.png",
   directions = {
-    { x = 72, y = 256, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
-    { x = 72, y = 256, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
-    { x = 72, y = 256, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
-    { x = 72, y = 256, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
+    { x = 72, y = 224, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
+    { x = 72, y = 224, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
+    { x = 72, y = 224, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
+    { x = 72, y = 224, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
   },
 }
 
@@ -37,9 +37,9 @@ animation{
   name = "pose2",
   src_image = "npc/ordon.png",
   directions = {
-    { x = 72, y = 224, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
-    { x = 72, y = 224, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
-    { x = 72, y = 224, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
-    { x = 72, y = 224, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
+    { x = 72, y = 256, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
+    { x = 72, y = 256, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
+    { x = 72, y = 256, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
+    { x = 72, y = 256, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
   },
 }

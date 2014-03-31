@@ -1,9 +1,9 @@
 local map = ...
 local game = map:get_game()
 
----------------------------------------------------------------------------------
--- Outside World F14 (Ordon Village) - Ranch, Fishing Pond and Obstacle Course --
----------------------------------------------------------------------------------
+---------------------------------------------------------------------------
+-- Outside World F14 (Ordon Village) - Ranch, Fishing Pond and Maze Race --
+---------------------------------------------------------------------------
 
 if game:get_value("i1906")==nil then game:set_value("i1906", 0) end --Tern
 
@@ -60,12 +60,31 @@ function map:on_started(destination)
     torch_3:remove()
   end
   if game:get_value("i1027") < 3 then
-    random_walk(npc_jarred)
-    random_walk(npc_quint)
+    if game:get_value("i1028") < 1 then
+      local m = sol.movement.create("straight")
+      m:set_ignore_obstacles(true)
+      m:set_angle(math.pi / 2)
+      m:set_speed(48)
+      m:start(npc_francis)
+      local m2 = sol.movement.create("straight")
+      m2:set_ignore_obstacles(true)
+      m2:set_angle(math.pi / 2)
+      m2:set_speed(48)
+      m2:start(npc_jarred)
+      sol.timer.start(2000, function()
+        m:stop()
+        m2:stop()
+      end)
+    else
+      npc_jarred:set_position(720, 992)
+      npc_francis:set_position(656, 992)
+      random_walk(npc_jarred)
+      random_walk(npc_francis)
+    end
   elseif game:get_value("i1027") <= 3 or game:get_value("i1027") > 4 then
     npc_tristan:remove()
     npc_jarred:remove()
-    npc_quint:remove()
+    npc_francis:remove()
   elseif game:get_value("i1027") == 4 then
     if not game:has_item("shield") then
       npc_tristan:remove()
@@ -73,7 +92,7 @@ function map:on_started(destination)
       random_walk(npc_tristan)
     end
     npc_jarred:remove()
-    npc_quint:remove()
+    npc_francis:remove()
   end
   if game:get_value("i1028") == 3 then
     torch_1:get_sprite():set_animation("lit")
@@ -86,20 +105,30 @@ function sensor_festival_dialog:on_activated()
   if game:get_value("i1027") < 3 and game:get_value("i1028") == 0 and hero:get_direction() == 1 then
     npc_tristan:get_sprite():set_animation("pose1")
     game:start_dialog("tristan.0.festival", game:get_player_name(), function()
-      game:start_dialog("francis.1.festival", function()
-        game:start_dialog("tristan.0.festival_response", game:get_player_name(), function()
-          game:start_dialog("francis.1.festival_race", function(answer)
-            if answer == 1 then
-              if game:has_item("lamp") then
-                game:start_dialog("tristan.0.festival_rules", function()
-		  game:set_value("i1028", 1)
-                end)
+      local m = sol.movement.create("jump")
+      sol.audio.play_sound("jump")
+      m:set_direction8(2) --face up
+      m:set_distance(8)
+      m:start(npc_francis)
+      sol.timer.start(400, function()
+        game:start_dialog("francis.1.festival", function()
+          npc_tristan:get_sprite():set_animation("pose2")
+          game:start_dialog("tristan.0.festival_response", game:get_player_name(), function()
+            game:start_dialog("francis.1.festival_race", function(answer)
+              if answer == 1 then
+                if game:has_item("lamp") then
+                  game:start_dialog("tristan.0.festival_rules", function()
+		    game:set_value("i1028", 1)
+		    random_walk(npc_jarred)
+		    random_walk(npc_francis)
+                  end)
+                else
+                  game:start_dialog("tristan.0.festival_lamp")
+                end
               else
-                game:start_dialog("tristan.0.festival_lamp")
+                game:start_dialog("tristan.0.festival_no")
               end
-            else
-              game:start_dialog("tristan.0.festival_no")
-            end
+            end)
           end)
         end)
       end)
@@ -121,7 +150,7 @@ end
 function sensor_ordona_speak:on_activated()
   -- you've finished everything in Ordon - Ordona directs you to Faron
   if game:has_item("sword") and game:get_value("i1027") < 6 then
-    sol.timer.start(2000,function()
+    sol.timer.start(1500,function()
       torch_1:get_sprite():set_animation("lit")
     end)
     sol.timer.start(2500, function()
@@ -184,7 +213,6 @@ function map:on_update()
   if game:get_value("i1028") == 2 or game:get_value("i1028") == 3 then
     banner_race_1:set_enabled(true)
     banner_race_2:set_enabled(true)
-    banner_race_3:set_enabled(true)
   end
   -- Show remaining timer time on screen?
   if race_timer ~= nil then

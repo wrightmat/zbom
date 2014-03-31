@@ -13,6 +13,7 @@ function enemy:on_created()
   self:set_hurt_style("boss")
   self:set_size(16, 16)
   self:set_origin(8, 8)
+  self:set_invincible(true)
 end
 
 function enemy:go(speed)
@@ -33,7 +34,6 @@ function enemy:create_tail()
     breed = "lanmola_tail"
   }
   tail.head = self
-  tail:set_attack_consequence("sword", 1)
   self:go(40)
 end
 
@@ -49,7 +49,6 @@ function enemy:create_body()
     }
     body.head = self
     body_segment = body_segment + 1
-    body:set_attack_consequence("sword", "protected")
     sol.timer.start(self, 300, function() self:create_body() end)
   elseif body_segment == 6 then
     self:create_tail()

@@ -5984,6 +5984,15 @@ tile{
   pattern = 1693,
 }
 
+tile{
+  layer = 0,
+  x = 608,
+  y = 312,
+  width = 16,
+  height = 16,
+  pattern = 1450,
+}
+
 teletransporter{
   layer = 0,
   x = 1120,
@@ -7653,6 +7662,17 @@ enemy{
   name = "chuchu_green_2",
   direction = 3,
   breed = "chuchu_green",
+}
+
+npc{
+  layer = 0,
+  x = 616,
+  y = 325,
+  name = "sign_directions",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/sign",
+  behavior = "dialog#sign.E13_directions",
 }
 
 tile{

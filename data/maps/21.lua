@@ -25,7 +25,7 @@ function map:on_started(destination)
     -- Temple is complete- have monkey steal book page and jump away
     npc_monkey:set_position(648, 752)
     sol.audio.play_sound("monkey")
-    sol.timer.start(300, function()
+    sol.timer.start(5000, function()
       sol.audio.play_sound("monkey")
       game:start_dialog("monkey1.1.grove", function()
         game:get_item("book_mudora"):set_variant(0) --take away book page
@@ -56,7 +56,9 @@ function map:on_started(destination)
   elseif game:get_value("i1068") > 2 and game:get_value("i1068") < 6 then
     npc_monkey:remove()
     npc_gerudo_leader:set_position(416, 69)
-  elseif game:get_value("i1068") >= 6 then
+  elseif game:get_value("i1068") == 6 then
+    gerudo_ship:get_sprite():set_animation("ship")
+  elseif game:get_value("i1068") > 6 then
     npc_monkey:remove()
     gerudo_ship:remove()
     ship_block_1:remove()
@@ -105,6 +107,7 @@ function npc_gerudo_leader:on_interaction()
     game:start_dialog("hesla.1.beach")
   elseif game:get_value("i1068") == 2 then
     game:start_dialog("hesla.2.beach", function()
+      hero:start_treasure("world_map")
       game:set_value("i1068", 3)
       -- Move Hesla out of the way so we can get to the beach
       local m = sol.movement.create("target")
@@ -112,7 +115,8 @@ function npc_gerudo_leader:on_interaction()
       m:set_speed(24)
       m:set_target(416, 69)
       m:start(npc_gerudo_leader)
-      npc_gerudo_leader:get_sprite():set_direction(3)
+      npc_gerudo_leader:get_sprite():set_direction(0)
+      npc_gerudo_leader:get_sprite():set_animation("stopped")
     end)
   elseif game:get_value("i1068") == 3 then
     game:start_dialog("hesla.3.beach")
@@ -147,18 +151,18 @@ function npc_monkey:on_interaction()
 end
 
 function sensor_water_bottle:on_activated()
-    if game:has_bottle() then
-      local first_empty_bottle = game:get_first_empty_bottle()
-      if first_empty_bottle ~= nil then
-        game:start_dialog("found_water", function(answer)
-	  if answer == 1 then
-	    hero:start_treasure(first_empty_bottle:get_name(), 2, nil)
-	  end
-	end)
-      else
-        game:start_dialog("found_water.no_empty_bottle")
-      end
+  if game:has_bottle() then
+    local first_empty_bottle = game:get_first_empty_bottle()
+    if first_empty_bottle ~= nil then
+      game:start_dialog("found_water", function(answer)
+	if answer == 1 then
+	  hero:start_treasure(first_empty_bottle:get_name(), 2, nil)
+	end
+      end)
     else
-      game:start_dialog("found_water.no_bottle")
+      game:start_dialog("found_water.no_empty_bottle")
     end
+  else
+    game:start_dialog("found_water.no_bottle")
+  end
 end

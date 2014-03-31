@@ -23,6 +23,17 @@ animation{
 }
 
 animation{
+  name = "shaking",
+  src_image = "enemies/manhandla.png",
+  directions = {
+    { x = 48, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 48, y = 72, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 48, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 48, y = 96, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+  },
+}
+
+animation{
   name = "hurt",
   src_image = "enemies/manhandla.png",
   directions = {

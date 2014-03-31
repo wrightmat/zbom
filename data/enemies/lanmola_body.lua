@@ -9,6 +9,7 @@ function enemy:on_created()
   self:set_size(16, 16)
   self:set_origin(8, 8)
   self:go(32)
+  self:set_invincible(true)
 end
 
 function enemy:go(speed)

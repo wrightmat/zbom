@@ -7660,15 +7660,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 216,
-  y = 840,
-  width = 80,
-  height = 40,
-  pattern = 1634,
-}
-
-tile{
-  layer = 0,
   x = 336,
   y = 296,
   width = 16,
@@ -8130,96 +8121,6 @@ tile{
   layer = 0,
   x = 640,
   y = 416,
-  width = 48,
-  height = 40,
-  pattern = 522,
-}
-
-tile{
-  layer = 0,
-  x = 704,
-  y = 480,
-  width = 48,
-  height = 16,
-  pattern = 628,
-}
-
-tile{
-  layer = 0,
-  x = 752,
-  y = 472,
-  width = 8,
-  height = 16,
-  pattern = 627,
-}
-
-tile{
-  layer = 0,
-  x = 696,
-  y = 472,
-  width = 8,
-  height = 16,
-  pattern = 626,
-}
-
-tile{
-  layer = 0,
-  x = 712,
-  y = 496,
-  width = 32,
-  height = 8,
-  pattern = 629,
-}
-
-tile{
-  layer = 0,
-  x = 704,
-  y = 440,
-  width = 48,
-  height = 40,
-  pattern = 522,
-}
-
-tile{
-  layer = 0,
-  x = 744,
-  y = 536,
-  width = 48,
-  height = 16,
-  pattern = 628,
-}
-
-tile{
-  layer = 0,
-  x = 792,
-  y = 528,
-  width = 8,
-  height = 16,
-  pattern = 627,
-}
-
-tile{
-  layer = 0,
-  x = 736,
-  y = 528,
-  width = 8,
-  height = 16,
-  pattern = 626,
-}
-
-tile{
-  layer = 0,
-  x = 752,
-  y = 552,
-  width = 32,
-  height = 8,
-  pattern = 629,
-}
-
-tile{
-  layer = 0,
-  x = 744,
-  y = 496,
   width = 48,
   height = 40,
   pattern = 522,
@@ -8848,15 +8749,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 792,
-  y = 552,
-  width = 16,
-  height = 16,
-  pattern = 524,
-}
-
-tile{
-  layer = 0,
   x = 688,
   y = 480,
   width = 16,
@@ -8868,6 +8760,15 @@ tile{
   layer = 0,
   x = 592,
   y = 864,
+  width = 16,
+  height = 16,
+  pattern = 524,
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 1024,
   width = 16,
   height = 16,
   pattern = 524,
@@ -10501,7 +10402,7 @@ npc{
 npc{
   layer = 0,
   x = 712,
-  y = 1061,
+  y = 1109,
   name = "npc_jarred",
   direction = 1,
   subtype = "1",
@@ -10511,17 +10412,17 @@ npc{
 npc{
   layer = 0,
   x = 680,
-  y = 1093,
-  name = "npc_quint",
+  y = 1109,
+  name = "npc_francis",
   direction = 1,
   subtype = "1",
-  sprite = "npc/ordon_quint",
+  sprite = "npc/ordon_francis",
 }
 
 sensor{
   layer = 0,
   x = 672,
-  y = 1045,
+  y = 1029,
   width = 80,
   height = 16,
   name = "sensor_festival_dialog",
@@ -10626,33 +10527,11 @@ destination{
 
 dynamic_tile{
   layer = 0,
-  x = 776,
-  y = 24,
-  width = 24,
-  height = 24,
-  name = "banner_race_1",
-  pattern = 1619,
-  enabled_at_start = false,
-}
-
-dynamic_tile{
-  layer = 0,
-  x = 752,
-  y = 24,
-  width = 24,
-  height = 24,
-  name = "banner_race_2",
-  pattern = 1619,
-  enabled_at_start = false,
-}
-
-dynamic_tile{
-  layer = 0,
   x = 728,
   y = 24,
-  width = 24,
+  width = 72,
   height = 24,
-  name = "banner_race_3",
+  name = "banner_race_1",
   pattern = 1619,
   enabled_at_start = false,
 }
@@ -10953,17 +10832,6 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 800,
-  y = 565,
-  treasure_name = "random",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = 1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
   x = 696,
   y = 493,
   treasure_name = "random",
@@ -10982,6 +10850,41 @@ destructible{
   destruction_sound = "bush",
   weight = 1,
   can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 760,
+  y = 1037,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = 1,
+  can_be_cut = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 680,
+  y = 520,
+  width = 120,
+  height = 24,
+  name = "banner_race_2",
+  pattern = 1619,
+  enabled_at_start = false,
+}
+
+wall{
+  layer = 0,
+  x = 208,
+  y = 840,
+  width = 96,
+  height = 16,
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{
@@ -11081,6 +10984,15 @@ tile{
   width = 48,
   height = 24,
   pattern = 1499,
+}
+
+tile{
+  layer = 1,
+  x = 216,
+  y = 840,
+  width = 80,
+  height = 40,
+  pattern = 1634,
 }
 
 tile{
@@ -12797,60 +12709,6 @@ tile{
   layer = 2,
   x = 632,
   y = 408,
-  width = 8,
-  height = 40,
-  pattern = 519,
-}
-
-tile{
-  layer = 2,
-  x = 704,
-  y = 424,
-  width = 48,
-  height = 16,
-  pattern = 521,
-}
-
-tile{
-  layer = 2,
-  x = 752,
-  y = 432,
-  width = 8,
-  height = 40,
-  pattern = 520,
-}
-
-tile{
-  layer = 2,
-  x = 696,
-  y = 432,
-  width = 8,
-  height = 40,
-  pattern = 519,
-}
-
-tile{
-  layer = 2,
-  x = 744,
-  y = 480,
-  width = 48,
-  height = 16,
-  pattern = 521,
-}
-
-tile{
-  layer = 2,
-  x = 792,
-  y = 488,
-  width = 8,
-  height = 40,
-  pattern = 520,
-}
-
-tile{
-  layer = 2,
-  x = 736,
-  y = 488,
   width = 8,
   height = 40,
   pattern = 519,

@@ -3806,16 +3806,58 @@ tile{
   pattern = 522,
 }
 
-teletransporter{
+tile{
   layer = 0,
-  x = 912,
-  y = 1120,
-  width = 208,
-  height = 16,
-  name = "to_F12",
-  transition = "scrolling",
-  destination_map = "27",
-  destination = "_side",
+  x = 128,
+  y = 128,
+  width = 32,
+  height = 48,
+  pattern = 809,
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 344,
+  width = 32,
+  height = 48,
+  pattern = 809,
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 376,
+  width = 32,
+  height = 48,
+  pattern = 809,
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 632,
+  width = 32,
+  height = 48,
+  pattern = 809,
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 808,
+  width = 32,
+  height = 48,
+  pattern = 809,
+}
+
+tile{
+  layer = 0,
+  x = 632,
+  y = 640,
+  width = 32,
+  height = 48,
+  pattern = 809,
 }
 
 teletransporter{
@@ -3834,9 +3876,9 @@ teletransporter{
   layer = 0,
   x = 0,
   y = 1120,
-  width = 752,
+  width = 1120,
   height = 16,
-  name = "to_F12_2",
+  name = "to_F12",
   transition = "scrolling",
   destination_map = "27",
   destination = "_side",

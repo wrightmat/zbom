@@ -3808,7 +3808,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 712,
+  x = 720,
   y = 1016,
   width = 48,
   height = 16,
@@ -3817,7 +3817,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 720,
+  x = 728,
   y = 1032,
   width = 32,
   height = 8,
@@ -3826,7 +3826,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 704,
+  x = 712,
   y = 1008,
   width = 8,
   height = 16,
@@ -3835,7 +3835,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 760,
+  x = 768,
   y = 1008,
   width = 8,
   height = 16,
@@ -5806,7 +5806,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 712,
+  x = 720,
   y = 976,
   width = 48,
   height = 40,
@@ -6700,6 +6700,60 @@ destructible{
   damage_on_enemies = 2,
 }
 
+wall{
+  layer = 0,
+  x = 288,
+  y = 336,
+  width = 344,
+  height = 16,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 776,
+  y = 328,
+  width = 16,
+  height = 568,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 688,
+  y = 880,
+  width = 88,
+  height = 16,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 360,
+  y = 880,
+  width = 280,
+  height = 16,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 272,
+  y = 352,
+  width = 16,
+  height = 528,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 272,
+  y = 880,
+  width = 40,
+  height = 16,
+  stops_enemies = true,
+}
+
 tile{
   layer = 2,
   x = 768,
@@ -7143,7 +7197,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 712,
+  x = 720,
   y = 960,
   width = 48,
   height = 16,
@@ -7152,7 +7206,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 704,
+  x = 712,
   y = 968,
   width = 8,
   height = 40,
@@ -7161,7 +7215,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 760,
+  x = 768,
   y = 968,
   width = 8,
   height = 40,

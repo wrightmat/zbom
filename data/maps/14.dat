@@ -8109,16 +8109,6 @@ destructible{
   damage_on_enemies = 2,
 }
 
-chest{
-  layer = 0,
-  x = 816,
-  y = 93,
-  name = "chest_heart_piece",
-  treasure_name = "piece_of_heart",
-  treasure_savegame_variable = "b1703",
-  sprite = "entities/chest",
-}
-
 teletransporter{
   layer = 0,
   x = 1120,
@@ -8129,6 +8119,16 @@ teletransporter{
   transition = "scrolling",
   destination_map = "10",
   destination = "_side",
+}
+
+chest{
+  layer = 0,
+  x = 816,
+  y = 93,
+  name = "chest_jade",
+  treasure_name = "jade",
+  treasure_savegame_variable = "b1780",
+  sprite = "entities/chest",
 }
 
 tile{

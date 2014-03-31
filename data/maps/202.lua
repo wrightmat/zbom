@@ -20,13 +20,13 @@ function map:on_started(destination)
     tentacle_sword_2:set_enabled(false)
     tentacle_sword_3:set_enabled(false)
   end
-  if not game:get_value("i2000") then
+  if not game:get_value("b2000") then
     chest_sword:set_enabled(false)
   end
-  if not game:get_value("i1040") then
+  if not game:get_value("b1040") then
     chest_key_1:set_enabled(false)
   end
-  if not game:get_value("i1041") then
+  if not game:get_value("b1041") then
     chest_key_2:set_enabled(false)
   end
 end

@@ -1,9 +1,9 @@
 local map = ...
 local game = map:get_game()
 
-----------------------------------------------------------------------
--- Outside World G14 (Ordon Village) - Obstacle Course and Overlook --
-----------------------------------------------------------------------
+----------------------------------------------------------------
+-- Outside World G14 (Ordon Village) - Maze Race and Overlook --
+----------------------------------------------------------------
 
 if game:get_value("i1910")==nil then game:set_value("i1910", 0) end --Ordona
 
@@ -114,37 +114,22 @@ function game:on_map_changed(map)
   end
 end
 
-function torch_1:on_interaction()
-  map:get_game():start_dialog("torch.need_lamp")
-end
 function torch_1:on_interaction_item(lamp)
   torch_1:get_sprite():set_animation("lit")
 end
 
-function torch_2:on_interaction()
-  map:get_game():start_dialog("torch.need_lamp")
-end
 function torch_2:on_interaction_item(lamp)
   torch_2:get_sprite():set_animation("lit")
 end
 
-function torch_3:on_interaction()
-  map:get_game():start_dialog("torch.need_lamp")
-end
 function torch_3:on_interaction_item(lamp)
   torch_3:get_sprite():set_animation("lit")
 end
 
-function torch_4:on_interaction()
-  map:get_game():start_dialog("torch.need_lamp")
-end
 function torch_4:on_interaction_item(lamp)
   torch_4:get_sprite():set_animation("lit")
 end
 
-function torch_5:on_interaction()
-  map:get_game():start_dialog("torch.need_lamp")
-end
 function torch_5:on_interaction_item(lamp)
   torch_5:get_sprite():set_animation("lit")
 end

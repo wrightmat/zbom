@@ -4,10 +4,10 @@ animation{
   frame_delay = 125,
   frame_to_loop_on = 0,
   directions = {
-    { x = 28, y = 128, frame_width = 28, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 2 },
-    { x = 28, y = 160, frame_width = 28, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 2 },
-    { x = 28, y = 192, frame_width = 28, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 2 },
-    { x = 28, y = 224, frame_width = 28, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 2 },
+    { x = 0, y = 128, frame_width = 28, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 3 },
+    { x = 0, y = 160, frame_width = 28, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 3 },
+    { x = 0, y = 192, frame_width = 28, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 3 },
+    { x = 0, y = 224, frame_width = 28, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 3 },
   },
 }
 
@@ -15,9 +15,9 @@ animation{
   name = "stopped",
   src_image = "npc/deku.png",
   directions = {
-    { x = 0, y = 128, frame_width = 28, frame_height = 32, origin_x = 12, origin_y = 29 },
-    { x = 0, y = 160, frame_width = 28, frame_height = 32, origin_x = 12, origin_y = 29 },
-    { x = 0, y = 192, frame_width = 28, frame_height = 32, origin_x = 12, origin_y = 29 },
-    { x = 0, y = 224, frame_width = 28, frame_height = 32, origin_x = 12, origin_y = 29 },
+    { x = 28, y = 128, frame_width = 28, frame_height = 32, origin_x = 12, origin_y = 29 },
+    { x = 28, y = 160, frame_width = 28, frame_height = 32, origin_x = 12, origin_y = 29 },
+    { x = 28, y = 192, frame_width = 28, frame_height = 32, origin_x = 12, origin_y = 29 },
+    { x = 28, y = 224, frame_width = 28, frame_height = 32, origin_x = 12, origin_y = 29 },
   },
 }

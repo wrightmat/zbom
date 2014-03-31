@@ -27,7 +27,9 @@ function sensor_deku_tokay:on_activated()
     -- In the future there may be a mini-game to retrieve book piece, but for now just give it back
     game:set_value("i1068", 9)
     sol.audio.play_sound("monkey")
-    game:start_dialog("monkey.2.faron")
+    game:start_dialog("monkey.2.faron", function()
+      get:get_item("book_mudora"):set_variant(2) --give back book piece
+    end)
   end
 end
 

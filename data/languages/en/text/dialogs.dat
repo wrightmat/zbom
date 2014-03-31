@@ -1143,10 +1143,9 @@ dialog{
   skip = "current",
   icon = 50,
   text = [[
-You found the World
-Map!$0 It look like
-part of it is
-obscured...
+You got a World
+Map!$0 Now you may
+not get lost!
   ]]
 }
 
@@ -2361,17 +2360,6 @@ How are you, my boy?
 }
 
 dialog{
-  id = "tristan.0.festival_question",
-  skip = "current",
-  question = true,
-  text = [[
-What? You want to race?
-Yes
-No
-  ]]
-}
-
-dialog{
   id = "tristan.0.festival_response",
   skip = "current",
   text = [[
@@ -2409,6 +2397,17 @@ dialog{
   text = [[
 Come back if you'd
 like to give it a try!
+  ]]
+}
+
+dialog{
+  id = "tristan.0.festival_question",
+  skip = "current",
+  question = true,
+  text = [[
+What? You want to race?
+Yes
+No
   ]]
 }
 
@@ -3151,7 +3150,6 @@ say hello!
 dialog{
   id = "francis.0.festival",
   skip = "current",
-  next = "quint.0.festival_2",
   text = [[
 Yeah, they really outdid
 themselves this year!
@@ -3194,7 +3192,6 @@ Nope
 dialog{
   id = "quint.0.festival",
   skip = "current",
-  next = "francis.0.festival",
   text = [[
 Daddy set up a maze
 race around town for
@@ -3240,7 +3237,6 @@ neat stuff!
 dialog{
   id = "jarred.0.festival",
   skip = "current",
-  next = "quint.0.festival",
   text = [[
 $v, come on!
 You're gonna miss the
@@ -4093,7 +4089,6 @@ are so concerned about
 these Tokay, then you
 can help us repair our
 ship! We know of an
-abandoned pyramid north
 of here in the desert
 which should contain
 the parts which we'll
@@ -4102,6 +4097,16 @@ If you can get there and
 find the parts, then
 we'll fix up our ship
 and be on our way.
+
+The desert is expansive
+though, so try your
+best not to get lost,
+kid! I'd just stay
+north until you hit
+the Pyramid!
+Here, maybe this
+map will help you
+with that...
   ]]
 }
 
@@ -4573,6 +4578,8 @@ dialog{
 Pumpkins for sale!
 Please stay out of
 private patch.
+See Pim for
+details.
   ]]
 }
 
@@ -4698,6 +4705,53 @@ dialog{
   text = [[
 Entry prohibited due
 to ghost sightings.
+  ]]
+}
+
+dialog{
+  id = "sign.E13_directions",
+  skip = "current",
+  text = [[
+North- Lake Hylia
+(by way of Hyrule
+Field)
+South- Blacksmith Cave
+East- Lumberjack
+  ]]
+}
+
+dialog{
+  id = "sign.F12_directions",
+  skip = "current",
+  text = [[
+NorthWest- Lake Hylia
+(by way of Hyrule
+Field)
+East- Sewer access
+South- Lumberjack/
+      Ordon Village
+  ]]
+}
+
+dialog{
+  id = "sign.G11_directions",
+  skip = "current",
+  text = [[
+North- Eastern Ruins
+South- Sewer access
+West- Hyrule Field
+  ]]
+}
+
+dialog{
+  id = "sign.H13_floria",
+  skip = "current",
+  text = [[
+South- Floria
+Peninsula
+
+DANGER! Babas
+sighted!
   ]]
 }
 

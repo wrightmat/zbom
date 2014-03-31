@@ -4742,6 +4742,24 @@ tile{
   pattern = 39,
 }
 
+tile{
+  layer = 0,
+  x = 80,
+  y = 56,
+  width = 32,
+  height = 48,
+  pattern = 809,
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 280,
+  width = 32,
+  height = 48,
+  pattern = 809,
+}
+
 teletransporter{
   layer = 0,
   x = 440,
@@ -5223,20 +5241,8 @@ teletransporter{
   x = 1120,
   y = 0,
   width = 16,
-  height = 496,
+  height = 1088,
   name = "to_G12",
-  transition = "scrolling",
-  destination_map = "28",
-  destination = "_side",
-}
-
-teletransporter{
-  layer = 0,
-  x = 1120,
-  y = 584,
-  width = 16,
-  height = 496,
-  name = "to_G12_2",
   transition = "scrolling",
   destination_map = "28",
   destination = "_side",
@@ -5378,6 +5384,17 @@ destructible{
   destruction_sound = "bush",
   weight = 1,
   can_be_cut = true,
+}
+
+npc{
+  layer = 0,
+  x = 376,
+  y = 485,
+  name = "sign_directions",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/sign",
+  behavior = "dialog#sign.F12_directions",
 }
 
 tile{

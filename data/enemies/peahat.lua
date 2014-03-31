@@ -2,17 +2,21 @@ local enemy = ...
 
 -- Peahat: a flying enemy that follows the hero in the air (and lands periodically)
 
-sol.main.load_file("enemies/generic_waiting_for_hero")(enemy)
+sol.main.load_file("enemies/generic_towards_hero")(enemy)
 enemy:set_properties({
   sprite = "enemies/peahat",
-  life = 2,
+  life = 4,
   damage = 3,
   normal_speed = 32,
   faster_speed = 48,
   pushed_when_hurt = true,
-  asleep_animation = "asleep",
-  awaking_animation = "awaking",
-  normal_animation = "walking",
   obstacle_behavior = "flying",
-  awakening_sound  = "peahat_awake"
+  --asleep_animation = "asleep",
+  --awaking_animation = "awaking",
+  --normal_animation = "walking",
+  --awakening_sound  = "peahat_awake"
+   movement_create = function()
+     local m = sol.movement.create("random_path")
+     return m
+   end
 })

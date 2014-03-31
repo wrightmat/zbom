@@ -28,6 +28,7 @@ local function follow_hero(npc)
   local npc_x, npc_y, npc_layer = npc:get_position()
   local distance_hero = math.abs((hero_x+hero_y)-(npc_x+npc_y))
   local m = sol.movement.create("target")
+  m:set_ignore_obstacles(false)
   if distance_hero > 1000 then -- hero's too far away, catch up!
     m:set_speed(64)
   elseif distance_hero < 100 then -- getting closer, slow them down
@@ -109,32 +110,53 @@ function sensor_festival_dialog:on_activated()
     festival_timer = sol.timer.start(2000, function()
       local m = sol.movement.create("jump")
       sol.audio.play_sound("jump")
-      m:set_direction8(6)
+      m:set_direction8(6) --face down to indicate speaking
       m:set_distance(8)
       m:set_speed(32)
       m:start(npc_jarred)
       sol.timer.start(400, function()
         game:start_dialog("jarred.0.festival", game:get_player_name(), function()
-          local m = sol.movement.create("jump")
 	  sol.audio.play_sound("jump")
-          m:set_direction8(6)
+          m:set_direction8(6) --face down to indicate speaking
           m:set_distance(8)
-          m:start(npc_francis)
+          m:start(npc_quint)
 	  sol.timer.start(400, function()
-            game:start_dialog("francis.0.festival_2", function()
-              game:set_value("i1027", 2)
-              hero:unfreeze()
-              follow_hero(npc_jarred)
-              follow_hero(npc_quint)
-              follow_hero(npc_francis)
-              game:set_value("i1907", game:get_value("i1907")+1)
-              game:set_value("i1908", game:get_value("i1908")+1)
-              game:set_value("i1909", game:get_value("i1909")+1)
-            end)--dialog
-	  end)--jump timer
-        end)--dialog
-      end)--jump timer
-    end)--sensor timer
+            game:start_dialog("quint.0.festival", function()
+	      sol.audio.play_sound("jump")
+              m:set_direction8(6) --face down to indicate speaking
+              m:set_distance(8)
+              m:start(npc_francis)
+	      sol.timer.start(400, function()
+                game:start_dialog("francis.0.festival", function()
+                  m:set_direction8(4) --face hero
+                  m:set_distance(8)
+                  m:start(npc_quint)
+	          sol.timer.start(400, function()
+                    game:start_dialog("quint.0.festival_2", game:get_player_name(), function()
+                      m:set_direction8(4) --face hero
+                      m:set_distance(8)
+                      m:start(npc_francis)
+	              sol.timer.start(400, function()
+                        game:start_dialog("francis.0.festival_2", function()
+			  game:set_value("i1027", 2)
+			  hero:unfreeze()
+			  follow_hero(npc_jarred)
+			  follow_hero(npc_quint)
+			  follow_hero(npc_francis)
+			  game:set_value("i1907", game:get_value("i1907")+1)
+			  game:set_value("i1908", game:get_value("i1908")+1)
+			  game:set_value("i1909", game:get_value("i1909")+1)
+			end)
+		      end)
+		    end)
+                  end)
+                end)
+              end)
+            end)
+	  end)
+        end)
+      end)
+    end)
   end--if
 end
 
@@ -219,7 +241,4 @@ function npc_julita:on_interaction()
   else
     game:start_dialog("julita.0")
   end
-end
-function npc_julita_sensor:on_interaction()
-  npc_julita:on_interaction()
 end
