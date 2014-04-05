@@ -5219,6 +5219,19 @@ tile{
   pattern = 524,
 }
 
+wall{
+  layer = 0,
+  x = 1072,
+  y = 1040,
+  width = 16,
+  height = 8,
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
 destructible{
   layer = 0,
   x = 384,

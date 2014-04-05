@@ -2,7 +2,7 @@ animation{
   name = "ship_wrecked",
   src_image = "entities/ships.png",
   directions = {
-    { x = 0, y = 0, frame_width = 368, frame_height = 144, origin_x = 184, origin_y = 126 },
+    { x = 0, y = 0, frame_width = 368, frame_height = 168, origin_x = 184, origin_y = 126 },
   },
 }
 
@@ -10,7 +10,7 @@ animation{
   name = "ship",
   src_image = "entities/ships.png",
   directions = {
-    { x = 0, y = 144, frame_width = 368, frame_height = 144, origin_x = 184, origin_y = 126 },
+    { x = 0, y = 168, frame_width = 368, frame_height = 168, origin_x = 184, origin_y = 126 },
   },
 }
 
@@ -18,6 +18,6 @@ animation{
   name = "airship",
   src_image = "entities/ships.png",
   directions = {
-    { x = 0, y = 144, frame_width = 368, frame_height = 144, origin_x = 184, origin_y = 126 },
+    { x = 0, y = 336, frame_width = 368, frame_height = 212, origin_x = 184, origin_y = 126 },
   },
 }

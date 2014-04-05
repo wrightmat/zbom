@@ -5,7 +5,7 @@ properties{
   height = 1120,
   world = "outside_world",
   tileset = "2",
-  music = "same",
+  music = "field",
 }
 
 tile{
@@ -6702,27 +6702,27 @@ destructible{
 
 wall{
   layer = 0,
-  x = 288,
+  x = 328,
   y = 336,
-  width = 344,
+  width = 304,
   height = 16,
   stops_enemies = true,
 }
 
 wall{
   layer = 0,
-  x = 776,
-  y = 328,
+  x = 744,
+  y = 344,
   width = 16,
-  height = 568,
+  height = 512,
   stops_enemies = true,
 }
 
 wall{
   layer = 0,
   x = 688,
-  y = 880,
-  width = 88,
+  y = 856,
+  width = 72,
   height = 16,
   stops_enemies = true,
 }
@@ -6730,7 +6730,7 @@ wall{
 wall{
   layer = 0,
   x = 360,
-  y = 880,
+  y = 856,
   width = 280,
   height = 16,
   stops_enemies = true,
@@ -6738,19 +6738,10 @@ wall{
 
 wall{
   layer = 0,
-  x = 272,
+  x = 328,
   y = 352,
   width = 16,
-  height = 528,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 272,
-  y = 880,
-  width = 40,
-  height = 16,
+  height = 488,
   stops_enemies = true,
 }
 

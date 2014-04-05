@@ -1061,9 +1061,9 @@ dialog{
   icon = 24,
   text = [[
 You found a Goddess
-Plume! It's a legendary
-treasure few will ever
-behold!
+Plume! This is a
+legendary treasure
+few will ever behold!
   ]]
 }
 
@@ -1131,10 +1131,12 @@ dialog{
   skip = "current",
   icon = 34,
   text = [[
+You got the Ocarina
+of Wind!
+$0
 Use this magical
-musical instrument
-to get where you
-need to go!
+instrument to get
+where you need to!
   ]]
 }
 
@@ -1282,7 +1284,7 @@ dialog{
   skip = "current",
   icon = 64,
   text = [[
-You received a durable
+You received a strong
 Hylian Shield!$0 It's
 made of nearly
 impenetrable Hylian
@@ -1731,6 +1733,16 @@ hands!
 }
 
 dialog{
+  id = "_cannot_lift_still_too_heavy",
+  skip = "current",
+  text = [[
+It's still too heavy
+to lift even with your
+increased strength!
+  ]]
+}
+
+dialog{
   id = "_cannot_lift_should_cut",
   skip = "current",
   text = [[
@@ -1914,18 +1926,17 @@ Don't
 }
 
 dialog{
-  id = "_found_water.no_bottle",
+  id = "found_water.no_bottle",
   skip = "current",
   text = [[
-There's water here,
-but you don't have
-any container to
-keep it in...
+There's water here, but
+you don't have anything
+to keep it in...
   ]]
 }
 
 dialog{
-  id = "_found_water.no_empty_bottle",
+  id = "found_water.no_empty_bottle",
   skip = "current",
   icon = 8,
   text = [[
@@ -4053,6 +4064,16 @@ Good riddance, kid.
 }
 
 dialog{
+  id = "gerudo.3.desert",
+  skip = "current",
+  text = [[
+We have an airship!
+Let the pilaging
+commence!
+  ]]
+}
+
+dialog{
   id = "hesla.0.beach",
   skip = "current",
   text = [[
@@ -4166,6 +4187,24 @@ Hahahahaha!$0
 And don't even try to
 follow us, kid. The
 desert is our domain!
+  ]]
+}
+
+dialog{
+  id = "hesla.6.desert",
+  skip = "current",
+  text = [[
+Hey kid, you're back!
+Check out the airship
+you helped us build.$0
+Bet you didn't even
+know what you were
+doing, but we thank
+you anyway. Soon we'll
+be back to our pirating
+ways, and now we'll
+be more effective than
+ever!
   ]]
 }
 

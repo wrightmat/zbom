@@ -28,7 +28,7 @@ function sensor_deku_tokay:on_activated()
     game:set_value("i1068", 9)
     sol.audio.play_sound("monkey")
     game:start_dialog("monkey.2.faron", function()
-      get:get_item("book_mudora"):set_variant(2) --give back book piece
+      game:get_item("book_mudora"):set_variant(2) --give back book piece
     end)
   end
 end
@@ -66,7 +66,7 @@ function npc_monkey_2:on_interaction()
 end
 
 function npc_deku_1:on_interaction()
-  if game:get_value("i1068") >= 6 and game:get_value("i1068") < 9 then
+  if game:get_value("i1068") > 6 and game:get_value("i1068") < 9 then
     sol.audio.play_sound("deku")
     game:start_dialog("deku.2.faron")
   elseif game:get_value("i1068") == 9 then
@@ -79,7 +79,7 @@ function npc_deku_1:on_interaction()
 end
 
 function npc_deku_2:on_interaction()
-  if game:get_value("i1068") >= 6 and game:get_value("i1068") < 9 then
+  if game:get_value("i1068") > 6 and game:get_value("i1068") < 9 then
     sol.audio.play_sound("deku")
     game:start_dialog("deku.2.faron")
   elseif game:get_value("i1068") == 9 then
@@ -92,7 +92,7 @@ function npc_deku_2:on_interaction()
 end
 
 function npc_deku_3:on_interaction()
-  if game:get_value("i1068") >= 6 and game:get_value("i1068") < 9 then
+  if game:get_value("i1068") > 6 and game:get_value("i1068") < 9 then
     sol.audio.play_sound("deku")
     game:start_dialog("deku.2.faron")
   elseif game:get_value("i1068") == 9 then

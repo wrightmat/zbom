@@ -46,6 +46,11 @@ function end_race_lost()
 end
 
 function map:on_started(destination)
+  random_walk(goat_1)
+  random_walk(goat_2)
+  random_walk(goat_3)
+  random_walk(goat_4)
+  random_walk(goat_5)
   -- if the festival isn't over, make sure banners, booths and NPCs are outside
   if game:get_value("i1027") < 5 then
     banner_1:set_enabled(true)
@@ -141,7 +146,6 @@ function sensor_start_race:on_activated()
     if game:get_value("i1028") <= 1 or game:get_value("i1028") == 4 then
       game:set_value("i1028", 2)
       race_timer = sol.timer.start(game, 140000, end_race_lost)
-      race_timer:set_suspended_with_map(false)
       race_timer:set_with_sound(true)
     end
   end
@@ -214,17 +218,19 @@ function map:on_update()
     banner_race_1:set_enabled(true)
     banner_race_2:set_enabled(true)
   end
-  -- Show remaining timer time on screen?
+  -- Show remaining timer time on screen
   if race_timer ~= nil then
     function map:on_draw(dst_surface)
-      local timer_surface = sol.surface.create(32, 16)
+      local timer_icon = sol.surface.create("hud/timer.png")
+      local timer_time = race_timer:get_remaining_time()
       local timer_text = sol.text_surface.create{
         font = "white_digits",
         horizontal_alignment = "left",
         vertical_alignment = "top",
       }
-      --timer_text:set_text(tostring(race_timer))
-      --timer_text:draw(dst_surface, 80, 20)
+      timer_icon:draw(dst_surface, 25, 55)
+      timer_text:set_text(timer_time)
+      timer_text:draw(dst_surface, 45, 60)
     end
   end
 end

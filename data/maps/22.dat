@@ -6642,13 +6642,14 @@ destination{
   y = 805,
   name = "from_temple_boss",
   direction = 3,
+  default = true,
 }
 
 teletransporter{
   layer = 0,
   x = 48,
   y = 1120,
-  width = 400,
+  width = 320,
   height = 16,
   name = "to_C15",
   transition = "scrolling",
@@ -6700,7 +6701,7 @@ teletransporter{
   y = 1120,
   width = 416,
   height = 16,
-  name = "to_C15_2",
+  name = "to_C15_3",
   destination_map = "21",
   destination = "_side",
 }
@@ -6741,6 +6742,18 @@ pickable{
   name = "boss_heart",
   treasure_name = "heart_container",
   treasure_savegame_variable = "b1059",
+}
+
+teletransporter{
+  layer = 0,
+  x = 368,
+  y = 1120,
+  width = 80,
+  height = 16,
+  name = "to_C15_2",
+  transition = "scrolling",
+  destination_map = "21",
+  destination = "_side",
 }
 
 tile{

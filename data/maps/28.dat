@@ -6344,6 +6344,32 @@ tile{
   pattern = 523,
 }
 
+wall{
+  layer = 0,
+  x = 808,
+  y = 1048,
+  width = 16,
+  height = 8,
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 720,
+  y = 536,
+  width = 16,
+  height = 8,
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
 teletransporter{
   layer = 0,
   x = 736,
@@ -7300,7 +7326,7 @@ wall{
   x = 776,
   y = 808,
   width = 8,
-  height = 176,
+  height = 160,
   name = "custom_obstacle_4",
   stops_enemies = true,
   stops_npcs = true,

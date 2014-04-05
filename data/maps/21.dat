@@ -8890,6 +8890,7 @@ destination{
   y = 717,
   name = "from_temple",
   direction = 3,
+  default = true,
 }
 
 teletransporter{
@@ -9422,7 +9423,7 @@ teletransporter{
   layer = 0,
   x = 48,
   y = -16,
-  width = 400,
+  width = 320,
   height = 16,
   name = "to_C14",
   transition = "scrolling",
@@ -9556,7 +9557,7 @@ teletransporter{
   y = -16,
   width = 416,
   height = 16,
-  name = "to_C14_2",
+  name = "to_C14_3",
   destination_map = "22",
   destination = "_side",
 }
@@ -9568,6 +9569,18 @@ sensor{
   width = 16,
   height = 208,
   name = "sensor_water_bottle",
+}
+
+teletransporter{
+  layer = 0,
+  x = 368,
+  y = -16,
+  width = 80,
+  height = 16,
+  name = "to_C14_2",
+  transition = "scrolling",
+  destination_map = "22",
+  destination = "_side",
 }
 
 tile{

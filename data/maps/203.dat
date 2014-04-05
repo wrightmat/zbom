@@ -9812,6 +9812,19 @@ tile{
 
 wall{
   layer = 0,
+  x = 1408,
+  y = 1600,
+  width = 16,
+  height = 8,
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
   x = 784,
   y = 1008,
   width = 32,
@@ -10509,7 +10522,7 @@ enemy{
   name = "keese_2",
   direction = 3,
   breed = "keese",
-  treasure_name = "magic_flask",
+  treasure_name = "heart",
 }
 
 enemy{
@@ -10570,6 +10583,7 @@ destination{
   y = 1429,
   name = "from_outside",
   direction = 1,
+  default = true,
 }
 
 chest{
@@ -13960,9 +13974,9 @@ separator{
 
 separator{
   layer = 2,
-  x = 8,
+  x = 0,
   y = 1448,
-  width = 2016,
+  width = 2032,
   height = 16,
 }
 
@@ -13976,7 +13990,7 @@ separator{
 
 separator{
   layer = 2,
-  x = 8,
+  x = 0,
   y = 1160,
   width = 2016,
   height = 16,
@@ -13992,7 +14006,7 @@ separator{
 
 separator{
   layer = 2,
-  x = 408,
+  x = 416,
   y = 584,
   width = 1616,
   height = 16,

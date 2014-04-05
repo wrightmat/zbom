@@ -5795,6 +5795,46 @@ teletransporter{
   destination = "_side",
 }
 
+enemy{
+  layer = 0,
+  x = 620,
+  y = 765,
+  name = "geldman_1",
+  direction = 3,
+  breed = "geldman",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 452,
+  y = 173,
+  name = "geldman_2",
+  direction = 3,
+  breed = "geldman",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 84,
+  y = 581,
+  name = "geldman_3",
+  direction = 3,
+  breed = "geldman",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 916,
+  y = 1005,
+  name = "geldman_4",
+  direction = 3,
+  breed = "geldman",
+  treasure_name = "random",
+}
+
 tile{
   layer = 2,
   x = 1000,

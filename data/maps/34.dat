@@ -2564,6 +2564,60 @@ tile{
   pattern = 522,
 }
 
+tile{
+  layer = 0,
+  x = 920,
+  y = 0,
+  width = 48,
+  height = 40,
+  pattern = 522,
+}
+
+tile{
+  layer = 0,
+  x = 1000,
+  y = 288,
+  width = 80,
+  height = 8,
+  pattern = 194,
+}
+
+tile{
+  layer = 0,
+  x = 1000,
+  y = 280,
+  width = 80,
+  height = 8,
+  pattern = 265,
+}
+
+tile{
+  layer = 0,
+  x = 984,
+  y = 280,
+  width = 16,
+  height = 16,
+  pattern = 185,
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 280,
+  width = 16,
+  height = 16,
+  pattern = 187,
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = 90,
+}
+
 teletransporter{
   layer = 0,
   x = 552,
@@ -3418,15 +3472,6 @@ tile{
 tile{
   layer = 1,
   x = 1000,
-  y = 288,
-  width = 80,
-  height = 8,
-  pattern = 194,
-}
-
-tile{
-  layer = 1,
-  x = 1000,
   y = 296,
   width = 80,
   height = 16,
@@ -3561,29 +3606,11 @@ tile{
 
 tile{
   layer = 1,
-  x = 984,
-  y = 280,
-  width = 16,
-  height = 16,
-  pattern = 185,
-}
-
-tile{
-  layer = 1,
   x = 936,
   y = 280,
   width = 16,
   height = 16,
   pattern = 21,
-}
-
-tile{
-  layer = 1,
-  x = 1000,
-  y = 280,
-  width = 80,
-  height = 8,
-  pattern = 265,
 }
 
 tile{
@@ -3723,15 +3750,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 1072,
-  y = 464,
-  width = 16,
-  height = 16,
-  pattern = 90,
-}
-
-tile{
-  layer = 1,
   x = 1080,
   y = 296,
   width = 16,
@@ -3741,29 +3759,11 @@ tile{
 
 tile{
   layer = 1,
-  x = 1080,
-  y = 280,
-  width = 16,
-  height = 16,
-  pattern = 187,
-}
-
-tile{
-  layer = 1,
   x = 920,
   y = 280,
   width = 16,
   height = 16,
   pattern = 22,
-}
-
-tile{
-  layer = 2,
-  x = 920,
-  y = 0,
-  width = 48,
-  height = 40,
-  pattern = 522,
 }
 
 tile{

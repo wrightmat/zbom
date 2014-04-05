@@ -111,6 +111,19 @@ function game:on_map_changed(map)
       local y = 240 - ty + cy
       torch_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
     end
+    -- Show remaining timer time on screen
+    if race_timer ~= nil then
+      local timer_icon = sol.surface.create("hud/timer.png")
+      local timer_time = race_timer:get_remaining_time()
+      local timer_text = sol.text_surface.create{
+        font = "white_digits",
+        horizontal_alignment = "left",
+        vertical_alignment = "top",
+      }
+      timer_icon:draw(dst_surface, 25, 55)
+      timer_text:set_text(timer_time)
+      timer_text:draw(dst_surface, 45, 60)
+    end
   end
 end
 

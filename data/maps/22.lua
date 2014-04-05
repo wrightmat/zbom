@@ -23,6 +23,9 @@ function map:on_started(destination)
   end
   if game:get_value("i1068") < 6 then
     npc_tokay_chef:remove()
+    to_C15:remove()
+  elseif game:get_value("i1068") == 6 then
+    to_C15:remove()
   end
 end
 

@@ -1700,6 +1700,249 @@ tile{
   pattern = 1031,
 }
 
+tile{
+  layer = 0,
+  x = 320,
+  y = 224,
+  width = 32,
+  height = 32,
+  pattern = 1777,
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 312,
+  width = 32,
+  height = 32,
+  pattern = 1777,
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 320,
+  width = 32,
+  height = 32,
+  pattern = 1777,
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 216,
+  width = 32,
+  height = 32,
+  pattern = 1777,
+}
+
+tile{
+  layer = 0,
+  x = 456,
+  y = 824,
+  width = 32,
+  height = 32,
+  pattern = 1777,
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 504,
+  width = 32,
+  height = 32,
+  pattern = 1777,
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 504,
+  width = 32,
+  height = 32,
+  pattern = 1777,
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 992,
+  width = 32,
+  height = 32,
+  pattern = 1777,
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 560,
+  width = 16,
+  height = 24,
+  pattern = 1006,
+}
+
+tile{
+  layer = 0,
+  x = 824,
+  y = 184,
+  width = 32,
+  height = 32,
+  pattern = 1007,
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 600,
+  width = 32,
+  height = 32,
+  pattern = 1008,
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 328,
+  width = 16,
+  height = 16,
+  pattern = 1010,
+}
+
+tile{
+  layer = 0,
+  x = 840,
+  y = 816,
+  width = 32,
+  height = 32,
+  pattern = 1013,
+}
+
+tile{
+  layer = 0,
+  x = 1048,
+  y = 1040,
+  width = 16,
+  height = 24,
+  pattern = 1006,
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 56,
+  width = 16,
+  height = 24,
+  pattern = 1006,
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 80,
+  width = 48,
+  height = 16,
+  pattern = 1769,
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = 1768,
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = 1770,
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 96,
+  width = 80,
+  height = 32,
+  pattern = 1767,
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 128,
+  width = 32,
+  height = 16,
+  pattern = 1675,
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = 1673,
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = 1674,
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 136,
+  width = 16,
+  height = 24,
+  pattern = 1677,
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 128,
+  width = 32,
+  height = 16,
+  pattern = 1678,
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = 1680,
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = 1679,
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 160,
+  width = 48,
+  height = 8,
+  pattern = 1681,
+}
+
 teletransporter{
   layer = 0,
   x = 0,
@@ -1734,5 +1977,63 @@ teletransporter{
   transition = "scrolling",
   destination_map = "76",
   destination = "_side",
+}
+
+npc{
+  layer = 0,
+  x = 192,
+  y = 797,
+  name = "gerudo_ship",
+  direction = 0,
+  subtype = "0",
+  sprite = "entities/ship_gerudo",
+}
+
+npc{
+  layer = 0,
+  x = 280,
+  y = 293,
+  name = "npc_gerudo_pirate_1",
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/gerudo_pirate",
+}
+
+npc{
+  layer = 0,
+  x = 152,
+  y = 525,
+  name = "npc_gerudo_pirate_2",
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/gerudo_pirate",
+}
+
+npc{
+  layer = 0,
+  x = 240,
+  y = 933,
+  name = "npc_gerudo_leader",
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/gerudo_hesla",
+}
+
+tile{
+  layer = 2,
+  x = 80,
+  y = 72,
+  width = 64,
+  height = 8,
+  pattern = 1670,
+}
+
+tile{
+  layer = 2,
+  x = 104,
+  y = 128,
+  width = 16,
+  height = 8,
+  pattern = 1676,
 }
 

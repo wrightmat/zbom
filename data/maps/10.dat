@@ -8288,6 +8288,19 @@ tile{
   pattern = 659,
 }
 
+wall{
+  layer = 0,
+  x = 576,
+  y = 896,
+  width = 16,
+  height = 8,
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
 sensor{
   layer = 0,
   x = 504,
@@ -9621,6 +9634,7 @@ destructible{
   treasure_name = "random",
   sprite = "entities/pumpkin",
   destruction_sound = "smashing",
+  weight = 1,
   can_regenerate = true,
 }
 

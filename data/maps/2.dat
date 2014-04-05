@@ -1,7 +1,7 @@
 properties{
   x = 0,
   y = 0,
-  width = 2048,
+  width = 2080,
   height = 1680,
   world = "inside_world",
   tileset = "0",
@@ -46,7 +46,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1816,
+  x = 1848,
   y = 56,
   width = 176,
   height = 160,
@@ -55,7 +55,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1880,
+  x = 1912,
   y = 56,
   width = 48,
   height = 16,
@@ -559,7 +559,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1912,
+  x = 1944,
   y = 32,
   width = 80,
   height = 24,
@@ -568,7 +568,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1864,
+  x = 1896,
   y = 168,
   width = 16,
   height = 24,
@@ -577,7 +577,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1864,
+  x = 1896,
   y = 120,
   width = 16,
   height = 24,
@@ -1522,7 +1522,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1792,
+  x = 1824,
   y = 32,
   width = 24,
   height = 24,
@@ -1531,7 +1531,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1792,
+  x = 1824,
   y = 216,
   width = 24,
   height = 24,
@@ -1540,7 +1540,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1992,
+  x = 2024,
   y = 32,
   width = 24,
   height = 24,
@@ -1549,7 +1549,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1992,
+  x = 2024,
   y = 216,
   width = 24,
   height = 24,
@@ -1558,7 +1558,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1816,
+  x = 1848,
   y = 32,
   width = 80,
   height = 24,
@@ -1567,7 +1567,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1816,
+  x = 1848,
   y = 216,
   width = 176,
   height = 24,
@@ -1576,7 +1576,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1792,
+  x = 1824,
   y = 56,
   width = 24,
   height = 160,
@@ -1585,7 +1585,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1992,
+  x = 2024,
   y = 56,
   width = 24,
   height = 160,
@@ -1594,7 +1594,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1864,
+  x = 1896,
   y = 48,
   width = 16,
   height = 24,
@@ -1603,7 +1603,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1872,
+  x = 1904,
   y = 64,
   width = 16,
   height = 24,
@@ -1612,7 +1612,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1880,
+  x = 1912,
   y = 72,
   width = 16,
   height = 24,
@@ -1621,7 +1621,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1904,
+  x = 1936,
   y = 80,
   width = 16,
   height = 24,
@@ -1630,7 +1630,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1888,
+  x = 1920,
   y = 80,
   width = 16,
   height = 24,
@@ -1639,7 +1639,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1912,
+  x = 1944,
   y = 88,
   width = 16,
   height = 24,
@@ -2512,7 +2512,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1888,
+  x = 1920,
   y = 40,
   width = 8,
   height = 16,
@@ -2521,7 +2521,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1912,
+  x = 1944,
   y = 40,
   width = 8,
   height = 16,
@@ -2530,7 +2530,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1896,
+  x = 1928,
   y = 40,
   width = 16,
   height = 16,
@@ -2539,7 +2539,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1976,
+  x = 2008,
   y = 80,
   width = 16,
   height = 24,
@@ -2548,7 +2548,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1944,
+  x = 1976,
   y = 128,
   width = 16,
   height = 24,
@@ -2557,8 +2557,17 @@ tile{
 
 tile{
   layer = 0,
-  x = 1936,
+  x = 1968,
   y = 136,
+  width = 16,
+  height = 24,
+  pattern = 138,
+}
+
+tile{
+  layer = 0,
+  x = 1960,
+  y = 144,
   width = 16,
   height = 24,
   pattern = 138,
@@ -2575,8 +2584,17 @@ tile{
 
 tile{
   layer = 0,
-  x = 1896,
+  x = 1944,
   y = 144,
+  width = 16,
+  height = 24,
+  pattern = 138,
+}
+
+tile{
+  layer = 0,
+  x = 1904,
+  y = 128,
   width = 16,
   height = 24,
   pattern = 138,
@@ -2585,24 +2603,6 @@ tile{
 tile{
   layer = 0,
   x = 1912,
-  y = 144,
-  width = 16,
-  height = 24,
-  pattern = 138,
-}
-
-tile{
-  layer = 0,
-  x = 1872,
-  y = 128,
-  width = 16,
-  height = 24,
-  pattern = 138,
-}
-
-tile{
-  layer = 0,
-  x = 1880,
   y = 136,
   width = 16,
   height = 24,
@@ -2611,7 +2611,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1888,
+  x = 1920,
   y = 152,
   width = 48,
   height = 24,
@@ -2620,7 +2620,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1880,
+  x = 1912,
   y = 168,
   width = 16,
   height = 24,
@@ -2629,7 +2629,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1872,
+  x = 1904,
   y = 176,
   width = 16,
   height = 24,
@@ -2638,7 +2638,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1816,
+  x = 1848,
   y = 120,
   width = 48,
   height = 24,
@@ -2647,7 +2647,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1824,
+  x = 1856,
   y = 128,
   width = 16,
   height = 24,
@@ -2656,7 +2656,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1848,
+  x = 1880,
   y = 176,
   width = 16,
   height = 24,
@@ -6400,7 +6400,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1816,
+  x = 1848,
   y = 88,
   width = 32,
   height = 16,
@@ -6409,7 +6409,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1928,
+  x = 1960,
   y = 88,
   width = 48,
   height = 16,
@@ -6418,7 +6418,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1928,
+  x = 1960,
   y = 184,
   width = 48,
   height = 16,
@@ -6526,7 +6526,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1888,
+  x = 1920,
   y = 16,
   width = 8,
   height = 16,
@@ -6535,7 +6535,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1912,
+  x = 1944,
   y = 16,
   width = 8,
   height = 16,
@@ -6544,7 +6544,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1896,
+  x = 1928,
   y = 8,
   width = 16,
   height = 8,
@@ -7224,16 +7224,6 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 1936,
-  y = 101,
-  treasure_name = "random",
-  sprite = "entities/pot",
-  destruction_sound = "stone",
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 0,
   x = 1968,
   y = 101,
   treasure_name = "random",
@@ -7244,7 +7234,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 1952,
+  x = 2000,
   y = 101,
   treasure_name = "random",
   sprite = "entities/pot",
@@ -7254,7 +7244,17 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 1968,
+  x = 1984,
+  y = 101,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  damage_on_enemies = 2,
+}
+
+destructible{
+  layer = 0,
+  x = 2000,
   y = 197,
   treasure_name = "random",
   sprite = "entities/pot",
@@ -7264,7 +7264,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 1840,
+  x = 1872,
   y = 101,
   treasure_name = "random",
   sprite = "entities/pot",
@@ -7274,7 +7274,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 1824,
+  x = 1856,
   y = 101,
   treasure_name = "random",
   sprite = "entities/pot",
@@ -7304,7 +7304,7 @@ destructible{
 
 chest{
   layer = 0,
-  x = 1832,
+  x = 1864,
   y = 173,
   name = "chest_collector_3",
   treasure_name = "ocarina",
@@ -7314,7 +7314,7 @@ chest{
 
 destructible{
   layer = 0,
-  x = 1952,
+  x = 1984,
   y = 197,
   treasure_name = "random",
   sprite = "entities/pot",
@@ -7324,7 +7324,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 1936,
+  x = 1968,
   y = 197,
   treasure_name = "random",
   sprite = "entities/pot",
@@ -7334,7 +7334,7 @@ destructible{
 
 chest{
   layer = 0,
-  x = 1824,
+  x = 1856,
   y = 69,
   name = "chest_collector_2",
   treasure_name = "bottle_2",
@@ -7363,7 +7363,7 @@ destination{
 
 destination{
   layer = 0,
-  x = 1904,
+  x = 1936,
   y = 61,
   name = "from_relic_1",
   direction = 3,
@@ -7371,7 +7371,7 @@ destination{
 
 teletransporter{
   layer = 0,
-  x = 1896,
+  x = 1928,
   y = 16,
   width = 16,
   height = 16,
@@ -7846,7 +7846,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 1888,
+  x = 1920,
   y = 32,
   width = 32,
   height = 8,
@@ -7855,7 +7855,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 1896,
+  x = 1928,
   y = 32,
   width = 16,
   height = 8,
@@ -8118,7 +8118,7 @@ tile{
   layer = 2,
   x = 592,
   y = 0,
-  width = 1456,
+  width = 1488,
   height = 32,
   pattern = 480,
 }
@@ -8154,14 +8154,14 @@ tile{
   layer = 2,
   x = 1760,
   y = 32,
-  width = 32,
+  width = 64,
   height = 208,
   pattern = 480,
 }
 
 tile{
   layer = 2,
-  x = 2016,
+  x = 2048,
   y = 32,
   width = 32,
   height = 208,
@@ -8181,7 +8181,7 @@ tile{
   layer = 2,
   x = 0,
   y = 1632,
-  width = 2048,
+  width = 2080,
   height = 48,
   pattern = 480,
 }
@@ -8406,7 +8406,7 @@ tile{
   layer = 2,
   x = 1984,
   y = 240,
-  width = 64,
+  width = 96,
   height = 1392,
   pattern = 480,
 }
@@ -8421,7 +8421,7 @@ separator{
 
 separator{
   layer = 2,
-  x = 1768,
+  x = 1792,
   y = 0,
   width = 16,
   height = 304,
@@ -8431,7 +8431,7 @@ separator{
   layer = 2,
   x = 1248,
   y = 304,
-  width = 800,
+  width = 832,
   height = 16,
 }
 
@@ -8439,7 +8439,7 @@ separator{
   layer = 2,
   x = 1248,
   y = 656,
-  width = 800,
+  width = 832,
   height = 16,
 }
 
@@ -8447,7 +8447,7 @@ separator{
   layer = 2,
   x = 1248,
   y = 1008,
-  width = 800,
+  width = 832,
   height = 16,
 }
 
@@ -8479,7 +8479,7 @@ separator{
   layer = 2,
   x = 1488,
   y = 1344,
-  width = 560,
+  width = 592,
   height = 16,
 }
 

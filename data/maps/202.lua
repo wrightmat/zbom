@@ -65,17 +65,13 @@ end
 --  sol.audio.play_sound("door_closed")
 --end
 
-for enemy in map:get_entities("tentacle_orig") do
-  enemy.on_dead = function()
-    map:open_doors("door_2")
-    map:open_doors("door_3")
-  end
+if not map:has_entities("tentacle_orig") then
+  map:open_doors("door_2")
+  map:open_doors("door_3")
 end
 
-for enemy in map:get_entities("enemy_chuchu") do
-  enemy.on_dead = function()
-    map:open_doors("door_9")
-  end
+if not map:has_entities("enemy_chuchu") then
+  map:open_doors("door_9")
 end
 
 function map:on_obtained_treasure(treasure_item, treasure_variant, treasure_savegame_variable)

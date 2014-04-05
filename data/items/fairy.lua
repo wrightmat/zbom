@@ -25,7 +25,6 @@ function item:on_pickable_created(pickable)
   -- When the direction of the movement changes,
   -- update the direction of the fairy's sprite
   function pickable:on_movement_changed(movement)
-
     if pickable:get_followed_entity() == nil then
       local sprite = pickable:get_sprite()
       local angle = movement:get_angle()  -- Retrieve the current movement's direction.
@@ -36,25 +35,23 @@ function item:on_pickable_created(pickable)
       end
     end
   end
-
   movement:start(pickable)
 end
 
 -- Obtaining a fairy.
 function item:on_obtaining(variant, savegame_variable)
-  if not self:get_game():has_bottle() then
+  local first_empty_bottle = self:get_game():get_first_empty_bottle()
+  if not self:get_game():has_bottle() or first_empty_bottle == nil then
     -- The player has no bottle: just restore 7 hearts.
     self:get_game():add_life(7 * 4)
   else
     -- The player has a bottle: start the dialog.
     self:get_game():start_dialog("found_fairy", function(answer)
-
       if answer == "skipped" or answer == 1 then
 	-- Restore 7 hearts.
 	self:get_game():add_life(7 * 4)
       else
 	-- Keep the fairy in a bottle.
-	local first_empty_bottle = self:get_game():get_first_empty_bottle()
 	if first_empty_bottle == nil then
 	  -- No empty bottle.
 	  self:get_game():start_dialog("found_fairy.no_empty_bottle", function()

@@ -25,7 +25,7 @@ function map:on_started(destination)
     -- Temple is complete- have monkey steal book page and jump away
     npc_monkey:set_position(648, 752)
     sol.audio.play_sound("monkey")
-    sol.timer.start(5000, function()
+    sol.timer.start(1000, function()
       sol.audio.play_sound("monkey")
       game:start_dialog("monkey1.1.grove", function()
         game:get_item("book_mudora"):set_variant(0) --take away book page
@@ -44,10 +44,10 @@ function map:on_started(destination)
       end)
       hero:unfreeze()
       game:set_value("i1068", 2)
-      npc_monkey:remove()
+      sol.timer.start(2000, function() npc_monkey:remove() end)
     end)
   end
-  if game:get_value("i1841") == 3 then
+  if game:get_item("airship_part"):get_variant() > 0 then
     -- If player has all three airship parts, proceed with Gerudo storyline
     game:set_value("i1068", 4)
   end
@@ -122,7 +122,7 @@ function npc_gerudo_leader:on_interaction()
     game:start_dialog("hesla.3.beach")
   elseif game:get_value("i1068") == 4 then
     game:start_dialog("hesla.4.beach")
-    get:get_item("airship_part"):set_variant(0) --take airship parts from inventory
+    game:get_item("airship_part"):set_variant(0) --take airship parts from inventory
     game:set_value("i1068", 5)
   elseif game:get_value("i1068") == 5 then
     game:start_dialog("hesla.5.beach")

@@ -7,7 +7,7 @@ local game = map:get_game()
 
 local torches_puzzle_nb_enabled = 0
 local torches_puzzle_correct = false
-local arrow_puzzle_nb_enabled = 0
+local arrow_puzzle_nb_correct = 0
 local arrow_puzzle_correct = false
 
 function map:on_started(destination)
@@ -93,13 +93,17 @@ local function reset_arrow_puzzle()
   room15_arrow_up:set_enabled(true)
   room15_arrow_down:set_enabled(true)
   arrow_puzzle_correct = false
-  arrow_puzzle_nb_enabled = 0
+  arrow_puzzle_nb_correct = 0
 end
 
 function room15_arrow_1:on_activated()
-  room15_arrow_1:set_locked(true)
-  room15_arrow_left:set_enabled(false)
-  arrow_puzzle_nb_correct = 1
+  if arrow_puzzle_nb_correct == 0 then
+    room15_arrow_1:set_locked(true)
+    room15_arrow_left:set_enabled(false)
+    arrow_puzzle_nb_correct = 1
+  else
+    reset_arrow_puzzle()
+  end
 end
 function room15_arrow_2:on_activated()
   if arrow_puzzle_nb_correct == 1 then
@@ -133,7 +137,7 @@ function room15_arrow_4:on_activated()
   end
 end
 
-for enemy in map:get_entities("room10_tentacle") do
+for enemy in map:get_entities("room10") do
   enemy.on_dead = function()
     if not map:has_entities("room10_tentacle") and not game:get_value("b1055") then
       chest_map:set_enabled(true)
@@ -142,10 +146,12 @@ for enemy in map:get_entities("room10_tentacle") do
   end
 end
 
-for enemy in map:get_entities("miniboss_mothulita") do
+for enemy in map:get_entities("miniboss") do
   enemy.on_dead = function()
-    map:open_doors("door_miniboss")
-    game:set_value("b1057", true)
+    if not map:has_entity("miniboss_mothulita") then
+      map:open_doors("door_miniboss")
+      game:set_value("b1057", true)
+    end
   end
 end
 
@@ -176,46 +182,56 @@ local function torch_puzzle_wrong()
 end
 
 function torch_room6_1:on_interaction_item(lamp)
-  if torches_puzzle_nb_enabled == 0 then
-    torch_room6_1:get_sprite():set_animation("lit")
-    torches_puzzle_nb_enabled = torches_puzzle_nb_enabled + 1
-  else
-    torch_puzzle_wrong()
+  if not torches_puzzle_correct then
+    if torches_puzzle_nb_enabled == 0 then
+      torch_room6_1:get_sprite():set_animation("lit")
+      torches_puzzle_nb_enabled = torches_puzzle_nb_enabled + 1
+    else
+      torch_puzzle_wrong()
+    end
   end
 end
 function torch_room6_2:on_interaction_item(lamp)
-  if torches_puzzle_nb_enabled == 1 then
-    torch_room6_2:get_sprite():set_animation("lit")
-    torches_puzzle_nb_enabled = torches_puzzle_nb_enabled + 1
-  else
-    torch_puzzle_wrong()
+  if not torches_puzzle_correct then
+    if torches_puzzle_nb_enabled == 1 then
+      torch_room6_2:get_sprite():set_animation("lit")
+      torches_puzzle_nb_enabled = torches_puzzle_nb_enabled + 1
+    else
+      torch_puzzle_wrong()
+    end
   end
 end
 function torch_room6_3:on_interaction_item(lamp)
-  if torches_puzzle_nb_enabled == 2 then
-    torch_room6_3:get_sprite():set_animation("lit")
-    torches_puzzle_nb_enabled = torches_puzzle_nb_enabled + 1
-  else
-    torch_puzzle_wrong()
+  if not torches_puzzle_correct then
+    if torches_puzzle_nb_enabled == 2 then
+      torch_room6_3:get_sprite():set_animation("lit")
+      torches_puzzle_nb_enabled = torches_puzzle_nb_enabled + 1
+    else
+      torch_puzzle_wrong()
+    end
   end
 end
 function torch_room6_4:on_interaction_item(lamp)
-  if torches_puzzle_nb_enabled == 3 then
-    torch_room6_4:get_sprite():set_animation("lit")
-    torches_puzzle_nb_enabled = torches_puzzle_nb_enabled + 1
-  else
-    torch_puzzle_wrong()
+  if not torches_puzzle_correct then
+    if torches_puzzle_nb_enabled == 3 then
+      torch_room6_4:get_sprite():set_animation("lit")
+      torches_puzzle_nb_enabled = torches_puzzle_nb_enabled + 1
+    else
+      torch_puzzle_wrong()
+    end
   end
 end
 function torch_room6_5:on_interaction_item(lamp)
-  if torches_puzzle_nb_enabled == 4 then
-    torch_room6_5:get_sprite():set_animation("lit")
-    sol.audio.play_sound("secret")
-    torches_puzzle_correct = true
-    torches_puzzle_nb_enabled = 0
-    map:open_doors("room6_shutter_2")
-  else
-    torch_puzzle_wrong()
+  if not torches_puzzle_correct then
+    if torches_puzzle_nb_enabled == 4 then
+      torch_room6_5:get_sprite():set_animation("lit")
+      sol.audio.play_sound("secret")
+      torches_puzzle_correct = true
+      torches_puzzle_nb_enabled = 0
+      map:open_doors("room6_shutter_2")
+    else
+      torch_puzzle_wrong()
+    end
   end
 end
 

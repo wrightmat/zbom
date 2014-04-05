@@ -70,7 +70,7 @@ map{ id = "69", description = "Outside I7 (Death Mountain)" }
 map{ id = "70", description = "Outside B7 (Desert/Pyramid Entr)" }
 map{ id = "71", description = "Outside C7 (Desert Expanse)" }
 map{ id = "72", description = "Outside B8 (Gerudo Encampment)" }
-map{ id = "73", description = "Outside C8 (Gerudo Encampment)" }
+map{ id = "73", description = "Outside C8 (Desert/Lake Hylia)" }
 map{ id = "74", description = "Outside B9 (Gerudo Airship Port)" }
 map{ id = "75", description = "Outside C9 (Desert Expanse)" }
 map{ id = "76", description = "Outside B10 (Desert Expanse)" }
@@ -318,6 +318,7 @@ sprite{ id = "entities/chest", description = "Chest (normal)" }
 sprite{ id = "entities/chest_big", description = "Chest (big)" }
 sprite{ id = "entities/conveyor", description = "Conveyor (Arrows)" }
 sprite{ id = "entities/conveyor_belt", description = "Conveyor Belt" }
+sprite{ id = "entities/crystal_shard", description = "Crystal Shard" }
 sprite{ id = "entities/door_shutter", description = "Door (shutter)" }
 sprite{ id = "entities/door_small_key", description = "Door (small key)" }
 sprite{ id = "entities/door_small_key_block", description = "Door (small key block)" }
@@ -514,6 +515,7 @@ enemy{ id = "fireball_simple", description = "Fireball, Simple" }
 enemy{ id = "fireball_triple", description = "Fireball, Triple" }
 enemy{ id = "flame_blue", description = "Flame, Blue" }
 enemy{ id = "flame_red", description = "Flame, Red" }
+enemy{ id = "geldman", description = "Geldman" }
 enemy{ id = "geyser", description = "Geyser" }
 enemy{ id = "gibdos", description = "Gibdos" }
 enemy{ id = "hardhat_beetle_blue", description = "Hardhat Beetle, Blue" }

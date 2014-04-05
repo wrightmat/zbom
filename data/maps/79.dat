@@ -1706,3 +1706,23 @@ teletransporter{
   destination = "_side",
 }
 
+enemy{
+  layer = 0,
+  x = 540,
+  y = 141,
+  name = "geldman_1",
+  direction = 3,
+  breed = "geldman",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 396,
+  y = 77,
+  name = "geldman_2",
+  direction = 3,
+  breed = "geldman",
+  treasure_name = "random",
+}
+

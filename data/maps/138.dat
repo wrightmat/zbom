@@ -6155,6 +6155,19 @@ tile{
   pattern = 522,
 }
 
+wall{
+  layer = 0,
+  x = 312,
+  y = 568,
+  width = 16,
+  height = 8,
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
 teletransporter{
   layer = 0,
   x = -16,
@@ -6513,6 +6526,7 @@ npc{
   direction = 3,
   subtype = "0",
   sprite = "entities/torch_wood",
+  behavior = "item#lamp",
 }
 
 tile{

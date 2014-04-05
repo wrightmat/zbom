@@ -2690,6 +2690,15 @@ tile{
   pattern = 809,
 }
 
+tile{
+  layer = 0,
+  x = 640,
+  y = 496,
+  width = 16,
+  height = 16,
+  pattern = 22,
+}
+
 dynamic_tile{
   layer = 0,
   x = 0,
@@ -4964,6 +4973,78 @@ tile{
   width = 112,
   height = 8,
   pattern = 189,
+}
+
+tile{
+  layer = 1,
+  x = 656,
+  y = 496,
+  width = 16,
+  height = 16,
+  pattern = 17,
+}
+
+tile{
+  layer = 1,
+  x = 640,
+  y = 496,
+  width = 16,
+  height = 16,
+  pattern = 22,
+}
+
+tile{
+  layer = 1,
+  x = 672,
+  y = 464,
+  width = 16,
+  height = 32,
+  pattern = 19,
+}
+
+tile{
+  layer = 1,
+  x = 640,
+  y = 464,
+  width = 16,
+  height = 32,
+  pattern = 20,
+}
+
+tile{
+  layer = 1,
+  x = 640,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = 30,
+}
+
+tile{
+  layer = 1,
+  x = 672,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = 28,
+}
+
+tile{
+  layer = 1,
+  x = 648,
+  y = 448,
+  width = 32,
+  height = 48,
+  pattern = 809,
+}
+
+tile{
+  layer = 1,
+  x = 672,
+  y = 496,
+  width = 16,
+  height = 16,
+  pattern = 24,
 }
 
 tile{

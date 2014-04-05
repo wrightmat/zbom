@@ -3122,6 +3122,60 @@ tile{
   pattern = 28,
 }
 
+tile{
+  layer = 0,
+  x = 72,
+  y = 560,
+  width = 16,
+  height = 24,
+  pattern = 1006,
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 112,
+  width = 32,
+  height = 32,
+  pattern = 1007,
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 1016,
+  width = 32,
+  height = 32,
+  pattern = 1007,
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 1016,
+  width = 32,
+  height = 32,
+  pattern = 1008,
+}
+
+tile{
+  layer = 0,
+  x = 216,
+  y = 640,
+  width = 16,
+  height = 16,
+  pattern = 1011,
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = 1012,
+}
+
 teletransporter{
   layer = 0,
   x = 1120,
@@ -3224,6 +3278,26 @@ sensor{
   width = 48,
   height = 16,
   name = "sensor_enter_field",
+}
+
+enemy{
+  layer = 0,
+  x = 164,
+  y = 941,
+  name = "geldman_3",
+  direction = 3,
+  breed = "geldman",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 124,
+  y = 237,
+  name = "geldman_2",
+  direction = 3,
+  breed = "geldman",
+  treasure_name = "random",
 }
 
 tile{

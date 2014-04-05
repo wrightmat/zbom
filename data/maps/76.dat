@@ -1493,6 +1493,33 @@ tile{
   pattern = 437,
 }
 
+tile{
+  layer = 0,
+  x = 528,
+  y = 24,
+  width = 32,
+  height = 32,
+  pattern = 1777,
+}
+
+tile{
+  layer = 0,
+  x = 24,
+  y = 232,
+  width = 32,
+  height = 32,
+  pattern = 1777,
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 928,
+  width = 32,
+  height = 32,
+  pattern = 1777,
+}
+
 teletransporter{
   layer = 0,
   x = 16,
@@ -1527,5 +1554,35 @@ teletransporter{
   transition = "scrolling",
   destination_map = "79",
   destination = "_side",
+}
+
+enemy{
+  layer = 0,
+  x = 892,
+  y = 229,
+  name = "geldman_1",
+  direction = 3,
+  breed = "geldman",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 868,
+  y = 781,
+  name = "geldman_2",
+  direction = 3,
+  breed = "geldman",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 740,
+  y = 1029,
+  name = "geldman_3",
+  direction = 3,
+  breed = "geldman",
+  treasure_name = "random",
 }
 

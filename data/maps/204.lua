@@ -77,6 +77,11 @@ if miniboss_lanmola ~= nil then
   sol.audio.play_music("airship")
  end
 end
+for enemy in map:get_entities("lanmola") do
+  enemy.on_dead = function()
+    miniboss_lanmola:set_life(0)
+  end
+end
 
 if boss_manhandla ~= nil then
  function boss_manhandla:on_dead()
@@ -165,57 +170,37 @@ function switch_room18_5:on_activated()
   end
 end
 
-for enemy in map:get_entities("gibdos_room8") do
+for enemy in map:get_entities("gibdos") do
   enemy.on_dead = function()
     if not map:has_entities("gibdos_room8") and not game:get_value("b1070") then
       chest_room8_key:set_enabled(true)
       sol.audio.play_sound("chest_appears")
     end
-  end
-end
 
-for enemy in map:get_entities("gibdos_room9") do
-  enemy.on_dead = function()
-    if not map:has_entities("gibdos_room9") and not game:get_value("b1071") then
-      for enemy in map:get_entities("keese_room9") do
-	enemy.on_dead = function()
-	  chest_room9_key:set_enabled(true)
-	  sol.audio.play_sound("chest_appears")
-	end
-      end
-    end
-  end
-end
-
-for enemy in map:get_entities("gibdos_room11") do
-  enemy.on_dead = function()
-    if not map:has_entities("gibdos_room11") and not game:get_value("b1073") then
-      chest_room11_big:set_enabled(true)
+    if not map:has_entities("gibdos_room9") and not map:has_entities("keese_room9") and not game:get_value("b1071") then
+      chest_room9_key:set_enabled(true)
       sol.audio.play_sound("chest_appears")
     end
-  end
-end
 
-for enemy in map:get_entities("gibdos_room14") do
-  enemy.on_dead = function()
     if not map:has_entities("gibdos_room14") and not game:get_value("b1076") then
       chest_room14_compass:set_enabled(true)
       sol.audio.play_sound("chest_appears")
     end
-  end
-end
 
-for enemy in map:get_entities("gibdos_room16") do
-  enemy.on_dead = function()
-    if not map:has_entities("gibdos_room16") and not game:get_value("b1074") then
+    if not map:has_entities("gibdos_room16") and not game:get_value("b1088") then
       chest_room16_part:set_enabled(true)
       sol.audio.play_sound("chest_appears")
     end
   end
 end
 
-for enemy in map:get_entities("keese_room17") do
+for enemy in map:get_entities("keese") do
   enemy.on_dead = function()
+    if not map:has_entities("gibdos_room9") and not map:has_entities("keese_room9") and not game:get_value("b1071") then
+      chest_room9_key:set_enabled(true)
+      sol.audio.play_sound("chest_appears")
+    end
+
     if not map:has_entities("keese_room17") and not game:get_value("b1072") then
       chest_room17_key:set_enabled(true)
       sol.audio.play_sound("chest_appears")
