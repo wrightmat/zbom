@@ -26,6 +26,9 @@ function map:on_started(destination)
     to_C15:remove()
   elseif game:get_value("i1068") == 6 then
     to_C15:remove()
+  elseif game:get_value("i1068") > 6 then
+    gerudo_ship:remove()
+    map:set_entities_enabled("ship_block", false)
   end
 end
 

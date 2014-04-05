@@ -6756,6 +6756,48 @@ teletransporter{
   destination = "_side",
 }
 
+wall{
+  layer = 0,
+  x = 0,
+  y = 1112,
+  width = 360,
+  height = 8,
+  name = "ship_block_1",
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 104,
+  y = 1080,
+  width = 16,
+  height = 24,
+  name = "ship_block_2",
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 272,
+  y = 1096,
+  width = 16,
+  height = 16,
+  name = "ship_block_3",
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
 tile{
   layer = 1,
   x = 280,
@@ -6862,6 +6904,16 @@ tile{
   width = 16,
   height = 16,
   pattern = 1926,
+}
+
+npc{
+  layer = 1,
+  x = 184,
+  y = 1197,
+  name = "gerudo_ship_2",
+  direction = 0,
+  subtype = "0",
+  sprite = "entities/ship_gerudo",
 }
 
 tile{

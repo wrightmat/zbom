@@ -9210,16 +9210,6 @@ destructible{
   can_be_cut = true,
 }
 
-npc{
-  layer = 0,
-  x = 184,
-  y = 77,
-  name = "gerudo_ship",
-  direction = 0,
-  subtype = "0",
-  sprite = "entities/ship_gerudo",
-}
-
 wall{
   layer = 0,
   x = 144,
@@ -9644,6 +9634,16 @@ tile{
   width = 16,
   height = 24,
   pattern = 1609,
+}
+
+npc{
+  layer = 1,
+  x = 184,
+  y = 77,
+  name = "gerudo_ship",
+  direction = 0,
+  subtype = "0",
+  sprite = "entities/ship_gerudo",
 }
 
 tile{

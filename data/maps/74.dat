@@ -1981,16 +1981,6 @@ teletransporter{
 
 npc{
   layer = 0,
-  x = 192,
-  y = 797,
-  name = "gerudo_ship",
-  direction = 0,
-  subtype = "0",
-  sprite = "entities/ship_gerudo",
-}
-
-npc{
-  layer = 0,
   x = 280,
   y = 293,
   name = "npc_gerudo_pirate_1",
@@ -2017,6 +2007,352 @@ npc{
   direction = 3,
   subtype = "1",
   sprite = "npc/gerudo_hesla",
+}
+
+wall{
+  layer = 0,
+  x = 96,
+  y = 808,
+  width = 248,
+  height = 8,
+  name = "block_3",
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 344,
+  y = 792,
+  width = 8,
+  height = 16,
+  name = "block_4",
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 352,
+  y = 776,
+  width = 8,
+  height = 16,
+  name = "block_5",
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 360,
+  y = 768,
+  width = 16,
+  height = 8,
+  name = "block_6",
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 368,
+  y = 728,
+  width = 8,
+  height = 40,
+  name = "block_7",
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 360,
+  y = 696,
+  width = 8,
+  height = 32,
+  name = "block_8",
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 312,
+  y = 696,
+  width = 48,
+  height = 8,
+  name = "block_9",
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 312,
+  y = 704,
+  width = 8,
+  height = 16,
+  name = "block_10",
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 96,
+  y = 720,
+  width = 224,
+  height = 8,
+  name = "block_11",
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 88,
+  y = 704,
+  width = 8,
+  height = 24,
+  name = "block_14",
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 56,
+  y = 704,
+  width = 32,
+  height = 8,
+  name = "block_15",
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 40,
+  y = 712,
+  width = 16,
+  height = 8,
+  name = "block_16",
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 24,
+  y = 720,
+  width = 16,
+  height = 8,
+  name = "block_17",
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 24,
+  y = 728,
+  width = 8,
+  height = 32,
+  name = "block_18",
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 32,
+  y = 760,
+  width = 8,
+  height = 8,
+  name = "block_19",
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 40,
+  y = 768,
+  width = 8,
+  height = 8,
+  name = "block_20",
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 48,
+  y = 776,
+  width = 8,
+  height = 8,
+  name = "block_21",
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 56,
+  y = 784,
+  width = 8,
+  height = 8,
+  name = "block_22",
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 64,
+  y = 792,
+  width = 16,
+  height = 8,
+  name = "block_23",
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 80,
+  y = 800,
+  width = 16,
+  height = 8,
+  name = "block_24",
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 112,
+  y = 816,
+  width = 224,
+  height = 16,
+  name = "block_2",
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 128,
+  y = 832,
+  width = 192,
+  height = 16,
+  name = "block_1",
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 112,
+  y = 664,
+  width = 16,
+  height = 56,
+  name = "block_13",
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 280,
+  y = 680,
+  width = 16,
+  height = 40,
+  name = "block_12",
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+npc{
+  layer = 1,
+  x = 192,
+  y = 797,
+  name = "gerudo_ship",
+  direction = 0,
+  subtype = "0",
+  sprite = "entities/ship_gerudo",
 }
 
 tile{
