@@ -7889,7 +7889,7 @@ sensor{
   y = 341,
   width = 16,
   height = 16,
-  name = "ocarina_wind_to_oldkasuto",
+  name = "ocarina_wind_to_L5",
 }
 
 wall{
@@ -7961,6 +7961,14 @@ dynamic_tile{
   name = "impa_door",
   pattern = 1120,
   enabled_at_start = true,
+}
+
+destination{
+  layer = 0,
+  x = 576,
+  y = 349,
+  name = "ocarina_warp",
+  direction = 3,
 }
 
 tile{

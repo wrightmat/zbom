@@ -7281,7 +7281,7 @@ sensor{
   y = 645,
   width = 16,
   height = 16,
-  name = "ocarina_wind_to_hiddenvillage",
+  name = "ocarina_wind_to_G8",
 }
 
 teletransporter{
@@ -9100,6 +9100,14 @@ destructible{
   destruction_sound = "stone",
   weight = 1,
   damage_on_enemies = 2,
+}
+
+destination{
+  layer = 0,
+  x = 632,
+  y = 653,
+  name = "ocarina_warp",
+  direction = 3,
 }
 
 tile{

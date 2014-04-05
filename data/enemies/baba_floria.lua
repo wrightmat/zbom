@@ -14,6 +14,7 @@ function enemy:on_created()
 end
 
 function enemy:on_restarted()
+  local hero = self:get_map():get_entity("hero")
   local hx, hy, hl = hero:get_position()
   local ex, ey, el = self:get_position()
   if hx > ex then

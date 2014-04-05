@@ -16,7 +16,6 @@ function map:on_started(destination)
     game:start_dialog("crista.0.shop_mushroom_done", function()
       hero:start_treasure("trading", 2) -- give Odd Potion...
       game:set_value("b2022", true)
-      game:set_value("b2020", false) -- take away Odd Mushroom,
       game:set_value("i2021", 0) -- and get rid of potion counter
     end)
   end
@@ -74,7 +73,7 @@ function npc_julita:on_interaction()
 end
 
 function npc_crista:on_interaction()
-  if game:get_value("b2020") then
+  if game:get_value("b2020") and not game:get_value("b2022") then
     if game:get_value("i2021") >= 1 then
       game:start_dialog("crista.0.shop_mushroom_work", function()
         if game:get_value("i2021") < 10 then game:set_value("i2021", game:get_value("i2021")+1) end
