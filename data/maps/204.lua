@@ -77,11 +77,6 @@ if miniboss_lanmola ~= nil then
   sol.audio.play_music("airship")
  end
 end
-for enemy in map:get_entities("lanmola") do
-  enemy.on_dead = function()
-    miniboss_lanmola:set_life(0)
-  end
-end
 
 if boss_manhandla ~= nil then
  function boss_manhandla:on_dead()

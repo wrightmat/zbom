@@ -55,23 +55,13 @@ function switch_key_2_2:on_activated()
   end
 end
 
---function sensor_open_door_1:on_activated()
---  door_1:set_open(true)
---  sol.audio.play_sound("door_open")
---end
-
---function sensor_close_door_1:on_activated()
---  door_1:set_open(false)
---  sol.audio.play_sound("door_closed")
---end
-
-if not map:has_entities("tentacle_orig") then
-  map:open_doors("door_2")
-  map:open_doors("door_3")
-end
-
-if not map:has_entities("enemy_chuchu") then
-  map:open_doors("door_9")
+for enemy in map:get_entities("tentacle") do
+  enemy.on_dead = function()
+    if not map:has_entities("tentacle_orig") then
+      map:open_doors("door_2")
+      map:open_doors("door_3")
+    end
+  end
 end
 
 function map:on_obtained_treasure(treasure_item, treasure_variant, treasure_savegame_variable)
