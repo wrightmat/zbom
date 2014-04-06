@@ -18,6 +18,7 @@ function ocarina_wind_to_G8:on_interaction()
   else
     -- if other paired point is discovered, then
     -- ask the player if they want to warp there!
+   if game:has_item("ocarina") then
     if game:get_value("b1501") then
       game:start_dialog("warp.to_G8", function(answer)
         if answer == 1 then
@@ -28,6 +29,7 @@ function ocarina_wind_to_G8:on_interaction()
     else
       game:start_dialog("warp.interaction")
     end
+   end
   end
 end
 
