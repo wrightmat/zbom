@@ -1828,6 +1828,27 @@ No
   ]]
 }
 
+dialog{
+  id = "warp.to_F14",
+  skip = "current",
+  question = true,
+  text = [[
+Warp to Ordon Village?
+Yes
+No
+  ]]
+}
+
+dialog{
+  id = "warp.to_D7",
+  skip = "current",
+  question = true,
+  text = [[
+Warp to Kakariko City?
+Yes
+No
+  ]]
+}
 
 dialog{
   id = "found_piece_of_heart.first",

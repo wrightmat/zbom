@@ -7799,6 +7799,15 @@ door{
   sprite = "entities/door_small_key",
 }
 
+sensor{
+  layer = 0,
+  x = 624,
+  y = 485,
+  width = 496,
+  height = 16,
+  name = "sensor_zirna_cutscene",
+}
+
 tile{
   layer = 2,
   x = 1496,

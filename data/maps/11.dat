@@ -8774,6 +8774,15 @@ tile{
   pattern = 524,
 }
 
+tile{
+  layer = 0,
+  x = 952,
+  y = 968,
+  width = 16,
+  height = 16,
+  pattern = 311,
+}
+
 wall{
   layer = 0,
   x = 1064,
@@ -10924,6 +10933,23 @@ npc{
   direction = 3,
   subtype = "0",
   sprite = "entities/torch_wood",
+}
+
+npc{
+  layer = 0,
+  x = 960,
+  y = 981,
+  name = "ocarina_wind_to_D7",
+  direction = 3,
+  subtype = "0",
+}
+
+destination{
+  layer = 0,
+  x = 960,
+  y = 997,
+  name = "ocarina_warp",
+  direction = 3,
 }
 
 tile{

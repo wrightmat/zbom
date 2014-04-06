@@ -4024,8 +4024,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 816,
-  y = 200,
+  x = 824,
+  y = 240,
   width = 16,
   height = 16,
   pattern = 37,
@@ -5066,6 +5066,15 @@ tile{
   pattern = 522,
 }
 
+tile{
+  layer = 0,
+  x = 784,
+  y = 120,
+  width = 16,
+  height = 16,
+  pattern = 311,
+}
+
 sensor{
   layer = 0,
   x = 496,
@@ -5546,6 +5555,23 @@ dynamic_tile{
   name = "house_5_door",
   pattern = 1120,
   enabled_at_start = true,
+}
+
+npc{
+  layer = 0,
+  x = 792,
+  y = 133,
+  name = "ocarina_wind_to_F14",
+  direction = 3,
+  subtype = "0",
+}
+
+destination{
+  layer = 0,
+  x = 792,
+  y = 149,
+  name = "ocarina_warp",
+  direction = 3,
 }
 
 tile{
