@@ -7275,15 +7275,6 @@ destination{
   direction = 3,
 }
 
-sensor{
-  layer = 0,
-  x = 632,
-  y = 645,
-  width = 16,
-  height = 16,
-  name = "ocarina_wind_to_G8",
-}
-
 teletransporter{
   layer = 0,
   x = 1120,
@@ -9105,9 +9096,18 @@ destructible{
 destination{
   layer = 0,
   x = 632,
-  y = 653,
+  y = 661,
   name = "ocarina_warp",
   direction = 3,
+}
+
+npc{
+  layer = 0,
+  x = 632,
+  y = 645,
+  name = "ocarina_wind_to_G8",
+  direction = 3,
+  subtype = "0",
 }
 
 tile{

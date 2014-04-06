@@ -1797,18 +1797,19 @@ dialog{
   id = "warp.interaction",
   skip = "current",
   text = [[
-You haven't found
-the companion warp
-point. If you do,
-you'll be able to
-move easily between
-locations!
+You haven't found the
+companion warp point.
+
+If you do, you'll be
+able to move easily
+between locations!
   ]]
 }
 
 dialog{
   id = "warp.to_L5",
   skip = "current",
+  question = true,
   text = [[
 Warp to Old Kasuto?
 Yes
@@ -1819,6 +1820,7 @@ No
 dialog{
   id = "warp.to_G8",
   skip = "current",
+  question = true,
   text = [[
 Warp to Hidden Village?
 Yes
@@ -3681,7 +3683,7 @@ information than me.
 Far from here is an
 ancient library. You
 will be unable to get
-there as currently equipped.
+there as you're equipped.
 If you can find a special
 instrument, you may be
 able to access the secret

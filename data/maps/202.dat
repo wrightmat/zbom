@@ -4,7 +4,7 @@ properties{
   width = 2256,
   height = 1072,
   world = "dungeon_1",
-  floor = 0,
+  floor = -1,
   tileset = "4",
   music = "sewers",
 }
@@ -3825,6 +3825,7 @@ stream{
   layer = 0,
   x = 2056,
   y = 501,
+  name = "arrows",
   direction = 6,
   sprite = "entities/conveyor",
   allow_movement = false,

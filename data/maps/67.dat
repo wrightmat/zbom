@@ -1,6 +1,6 @@
 properties{
-  x = 6726,
-  y = 7847,
+  x = 7847,
+  y = 6726,
   width = 1120,
   height = 1120,
   world = "outside_world",
@@ -1072,42 +1072,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 216,
-  y = 624,
-  width = 16,
-  height = 16,
-  pattern = 1718,
-}
-
-tile{
-  layer = 0,
-  x = 216,
-  y = 824,
-  width = 16,
-  height = 16,
-  pattern = 1718,
-}
-
-tile{
-  layer = 0,
-  x = 320,
-  y = 920,
-  width = 16,
-  height = 16,
-  pattern = 1718,
-}
-
-tile{
-  layer = 0,
-  x = 608,
-  y = 928,
-  width = 16,
-  height = 16,
-  pattern = 1718,
-}
-
-tile{
-  layer = 0,
   x = 112,
   y = 392,
   width = 24,
@@ -1403,7 +1367,7 @@ npc{
 enemy{
   layer = 0,
   x = 88,
-  y = 229,
+  y = 221,
   name = "geyser_1",
   direction = 3,
   breed = "geyser",
@@ -1413,7 +1377,7 @@ enemy{
 enemy{
   layer = 0,
   x = 856,
-  y = 1029,
+  y = 1021,
   name = "geyser_2",
   direction = 3,
   breed = "geyser",
@@ -1623,6 +1587,42 @@ dynamic_tile{
   name = "house_4_door",
   pattern = 1765,
   enabled_at_start = true,
+}
+
+destructible{
+  layer = 0,
+  x = 224,
+  y = 637,
+  treasure_name = "random_mountain",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 224,
+  y = 837,
+  treasure_name = "random_mountain",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 328,
+  y = 933,
+  treasure_name = "random_mountain",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 616,
+  y = 941,
+  treasure_name = "random_mountain",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
 }
 
 tile{

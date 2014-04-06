@@ -1,6 +1,6 @@
 properties{
-  x = 6726,
-  y = 7847,
+  x = 2242,
+  y = 5605,
   width = 1120,
   height = 1120,
   world = "outside_world",
@@ -1022,7 +1022,6 @@ teletransporter{
   width = 16,
   height = 16,
   name = "to_house_1",
-  transition = "fade",
   destination_map = "7",
   destination = "from_outside_house_1",
 }
@@ -1034,7 +1033,6 @@ teletransporter{
   width = 16,
   height = 16,
   name = "to_house_2",
-  transition = "fade",
   destination_map = "7",
   destination = "from_outside_house_2",
 }
@@ -1046,7 +1044,6 @@ teletransporter{
   width = 16,
   height = 16,
   name = "to_house_3",
-  transition = "fade",
   destination_map = "7",
   destination = "from_outside_house_3",
 }

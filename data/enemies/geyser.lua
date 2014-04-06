@@ -13,11 +13,11 @@ function enemy:on_created()
 end
 
 function geyser_start()
-  self:get_sprite():set_animation("walking")
+  enemy:get_sprite():set_animation("walking")
   sol.timer.start(1300, geyser_stop)
 end
 
 function geyser_stop()
-  self:get_sprite():set_animation("immobilized")
-  sol.main.timer_start(math.random(10)*1000, geyser_start)
+  enemy:get_sprite():set_animation("immobilized")
+  sol.timer.start(math.random(10)*1000, geyser_start)
 end

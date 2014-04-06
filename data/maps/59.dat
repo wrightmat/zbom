@@ -1397,23 +1397,21 @@ tile{
 enemy{
   layer = 0,
   x = 368,
-  y = 341,
+  y = 333,
   name = "geyser_1",
   direction = 3,
   breed = "geyser",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 enemy{
   layer = 0,
   x = 576,
-  y = 533,
+  y = 525,
   name = "geyser_2",
   direction = 3,
   breed = "geyser",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 teletransporter{
@@ -1448,7 +1446,6 @@ enemy{
   direction = 3,
   breed = "tektite_red",
   treasure_name = "random_mountain",
-  treasure_variant = 1,
 }
 
 enemy{
@@ -1459,18 +1456,26 @@ enemy{
   direction = 3,
   breed = "tektite_red",
   treasure_name = "random_mountain",
-  treasure_variant = 1,
 }
 
 enemy{
   layer = 0,
   x = 720,
-  y = 821,
+  y = 813,
   name = "geyser_3",
   direction = 3,
   breed = "geyser",
   treasure_name = "random",
-  treasure_variant = 1,
+}
+
+enemy{
+  layer = 0,
+  x = 104,
+  y = 277,
+  name = "geyser_4",
+  direction = 3,
+  breed = "geyser",
+  treasure_name = "random",
 }
 
 tile{

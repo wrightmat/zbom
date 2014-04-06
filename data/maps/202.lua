@@ -39,6 +39,7 @@ end
 function switch_arrow_key_1:on_activated()
   chest_key_1:set_enabled(true)
   sol.audio.play_sound("chest_appears")
+  arrows:set_enabled(false)
 end
 
 function switch_key_2_1:on_activated()

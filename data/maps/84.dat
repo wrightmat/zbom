@@ -1,6 +1,6 @@
 properties{
   x = 7847,
-  y = 11210,
+  y = 7847,
   width = 1120,
   height = 1120,
   world = "outside_world",
@@ -2267,7 +2267,7 @@ teletransporter{
 enemy{
   layer = 0,
   x = 440,
-  y = 309,
+  y = 301,
   name = "geyser_1",
   direction = 3,
   breed = "geyser",
@@ -2277,7 +2277,7 @@ enemy{
 enemy{
   layer = 0,
   x = 216,
-  y = 485,
+  y = 477,
   name = "geyser_2",
   direction = 3,
   breed = "geyser",
@@ -2287,7 +2287,7 @@ enemy{
 enemy{
   layer = 0,
   x = 624,
-  y = 581,
+  y = 573,
   name = "geyser_3",
   direction = 3,
   breed = "geyser",
@@ -2308,26 +2308,55 @@ destructible{
   layer = 0,
   x = 480,
   y = 725,
+  treasure_name = "random_mountain",
   sprite = "entities/bomb_flower",
   destruction_sound = "bush",
   weight = 1,
   can_be_cut = true,
   can_explode = true,
   can_regenerate = true,
-  treasure_name = "random_mountain",
 }
 
 destructible{
   layer = 0,
   x = 480,
   y = 741,
+  treasure_name = "random_mountain",
   sprite = "entities/bomb_flower",
   destruction_sound = "bush",
   weight = 1,
   can_be_cut = true,
   can_explode = true,
   can_regenerate = true,
-  treasure_name = "random_mountain",
+}
+
+wall{
+  layer = 0,
+  x = 496,
+  y = 712,
+  width = 32,
+  height = 8,
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 504,
+  y = 720,
+  width = 16,
+  height = 8,
+}
+
+destination{
+  layer = 0,
+  x = 512,
+  y = 757,
+  name = "from_shed",
+  direction = 3,
 }
 
 tile{

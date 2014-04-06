@@ -1706,56 +1706,51 @@ teletransporter{
 enemy{
   layer = 0,
   x = 400,
-  y = 269,
+  y = 261,
   name = "geyser_1",
   direction = 3,
   breed = "geyser",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 enemy{
   layer = 0,
   x = 912,
-  y = 573,
+  y = 565,
   name = "geyser_2",
   direction = 3,
   breed = "geyser",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 enemy{
   layer = 0,
   x = 248,
-  y = 941,
+  y = 933,
   name = "geyser_3",
   direction = 3,
   breed = "geyser",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
   layer = 0,
   x = 736,
   y = 413,
+  treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "random",
-  treasure_variant = 1,
 }
 
 destructible{
   layer = 0,
   x = 584,
   y = 869,
+  treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-  treasure_name = "random",
-  treasure_variant = 1,
 }
 
 enemy{
@@ -1766,7 +1761,6 @@ enemy{
   direction = 3,
   breed = "tektite_red",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 enemy{
@@ -1777,7 +1771,6 @@ enemy{
   direction = 3,
   breed = "tektite_red",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 enemy{
@@ -1788,7 +1781,6 @@ enemy{
   direction = 3,
   breed = "tektite_red",
   treasure_name = "random",
-  treasure_variant = 1,
 }
 
 tile{

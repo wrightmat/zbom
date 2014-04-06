@@ -1,7 +1,8 @@
 local submenu = require("menus/pause_submenu")
 local map_submenu = submenu:new()
 
-local outside_world_size = { width = 2080, height = 3584 }
+--local outside_world_size = { width = 8900, height = 24900 }
+local outside_world_size = { width = 7847, height = 13452 }
 local outside_world_minimap_size = { width = 225, height = 388 }
 
 function map_submenu:on_started()
@@ -35,8 +36,8 @@ function map_submenu:on_started()
       hero_absolute_y = hero_absolute_y + hero_map_y
     end
 
-    local hero_minimap_x = math.floor(hero_absolute_x * outside_world_minimap_size.width / outside_world_size.width)
-    local hero_minimap_y = math.floor(hero_absolute_y * outside_world_minimap_size.height / outside_world_size.height)
+    local hero_minimap_x = math.floor(hero_absolute_x * outside_world_minimap_size.width / outside_world_size.width) - 30
+    local hero_minimap_y = math.floor(hero_absolute_y * outside_world_minimap_size.height / outside_world_size.height) - 110
     self.hero_x = hero_minimap_x + 40
     self.hero_y = hero_minimap_y + 53
 
