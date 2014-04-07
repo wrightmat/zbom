@@ -8051,7 +8051,7 @@ destructible{
   layer = 0,
   x = 544,
   y = 469,
-  treasure_name = "random",
+  treasure_name = "random_north",
   sprite = "entities/bush",
   destruction_sound = "bush",
   weight = 1,
@@ -9108,6 +9108,18 @@ npc{
   name = "ocarina_wind_to_G8",
   direction = 3,
   subtype = "0",
+}
+
+teletransporter{
+  layer = 0,
+  x = -16,
+  y = 200,
+  width = 16,
+  height = 416,
+  name = "to_K5",
+  transition = "scrolling",
+  destination_map = "128",
+  destination = "_side",
 }
 
 tile{

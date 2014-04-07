@@ -2696,8 +2696,7 @@ Listen well, $v.
 $0
 Congratulations, You
 have reached the end
-of the demo!
-$0
+of the demo!$0
 This is only the end
 of the story (for now),
 so feel free to explore
@@ -2963,22 +2962,22 @@ office in town.
 }
 
 dialog{
+  id = "juba.0.council_zelda",
+  skip = "current",
+  text = [[
+That Zelda was always
+talking anyway. I like
+it better now. Quieter.
+  ]]
+}
+
+dialog{
   id = "juba.1.council",
   skip = "current",
   text = [[
 Please stop bothering
 me, human.$0 What?$0
 Hylian?$0 Whatever...
-  ]]
-}
-
-dialog{
-  id = "juba.1.council_zelda",
-  skip = "current",
-  text = [[
-That Zelda was always
-talking anyway. I like
-it better now. Quieter.
   ]]
 }
 
@@ -3004,23 +3003,23 @@ people!
 }
 
 dialog{
-  id = "gin.1.council",
-  skip = "current",
-  text = [[
-Huh?$0 A Book?$0
-Can't say I even know
-what that is!
-  ]]
-}
-
-dialog{
-  id = "gin.1.council_zelda",
+  id = "gin.0.council_zelda",
   skip = "current",
   text = [[
 Oh no, a council
 member has been taken
 from us! What do we
 do now?
+  ]]
+}
+
+dialog{
+  id = "gin.1.council",
+  skip = "current",
+  text = [[
+Huh?$0 A Book?$0
+Can't say I even know
+what that is!
   ]]
 }
 
@@ -3158,7 +3157,10 @@ Brother! You must find
 our kidnapped Elder and
 return her to us. We
 will all be in your
-debt if you can do this!
+debt if you can do
+this! My people will
+assist you in any way
+they can.
   ]]
 }
 
