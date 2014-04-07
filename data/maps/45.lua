@@ -23,7 +23,7 @@ function map:on_started(destination)
   end
 
   if destination == from_castle_1 and game:get_value("i1032") == 3 then
-    sol.timer.start(1500, function()
+    sol.timer.start(1000, function()
       hero:freeze()
       torch_overlay = sol.surface.create("entities/dark.png")
       torch_overlay:fade_in(50)

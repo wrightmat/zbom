@@ -2776,6 +2776,18 @@ what she knows.
   ]]
 }
 
+dialog{
+  id = "ulo.2.council_zelda",
+  skip = "current",
+  text = [[
+What has happened to
+Elder Zelda? $v,
+you must track her
+down and return her
+to the council!
+  ]]
+}
+
 -- Rudy (Ordon Village blacksmith)
 -----------------------
 dialog{
@@ -2960,6 +2972,16 @@ Hylian?$0 Whatever...
   ]]
 }
 
+dialog{
+  id = "juba.1.council_zelda",
+  skip = "current",
+  text = [[
+That Zelda was always
+talking anyway. I like
+it better now. Quieter.
+  ]]
+}
+
 -- Tokage Gin (Tokay Elder and tribe leader)
 -----------------------
 dialog{
@@ -2988,6 +3010,17 @@ dialog{
 Huh?$0 A Book?$0
 Can't say I even know
 what that is!
+  ]]
+}
+
+dialog{
+  id = "gin.1.council_zelda",
+  skip = "current",
+  text = [[
+Oh no, a council
+member has been taken
+from us! What do we
+do now?
   ]]
 }
 
@@ -3114,6 +3147,18 @@ my people at our home in
 the northern mountains.
 Please, go with my
 blessing!
+  ]]
+}
+
+dialog{
+  id = "larin.0.council_zelda",
+  skip = "current",
+  text = [[
+Brother! You must find
+our kidnapped Elder and
+return her to us. We
+will all be in your
+debt if you can do this!
   ]]
 }
 

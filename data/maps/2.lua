@@ -38,19 +38,32 @@ function map:on_started(destination)
   end
   slots_man_sprite = slots_man:get_sprite()
   npc_zirna:set_enabled(false)
+  if game:get_value("i1032") > 2 then elder_zelda:remove() end
 end
 
 -- Functions called when the player wants to talk to Elder characters.
 function elder_ulo:on_interaction()
-  game:start_dialog("ulo.2.council", game:get_player_name())
+  if game:get_value("i1032") > 2 then
+    game:start_dialog("ulo.2.council_zelda", game:get_player_name())
+  else
+    game:start_dialog("ulo.2.council", game:get_player_name())
+  end
 end
 
 function elder_juba:on_interaction()
-  game:start_dialog("juba.0.council")
+  if game:get_value("i1032") > 2 then
+    game:start_dialog("juba.0.council_zelda")
+  else
+    game:start_dialog("juba.0.council")
+  end
 end
 
 function elder_gin:on_interaction()
-  game:start_dialog("gin.0.council")
+  if game:get_value("i1032") > 2 then
+    game:start_dialog("gin.0.council_zelda")
+  else
+    game:start_dialog("gin.0.council")
+  end
 end
 
 function elder_zelda:on_interaction()
@@ -58,7 +71,11 @@ function elder_zelda:on_interaction()
 end
 
 function elder_larin:on_interaction()
-  game:start_dialog("larin.0.council")
+  if game:get_value("i1032") > 2 then
+    game:start_dialog("larin.0.council_zelda")
+  else
+    game:start_dialog("larin.0.council")
+  end
 end
 
 function elder_gonpho:on_interaction()
