@@ -7808,6 +7808,16 @@ sensor{
   name = "sensor_zirna_cutscene",
 }
 
+npc{
+  layer = 0,
+  x = 872,
+  y = 677,
+  name = "npc_zirna",
+  direction = 1,
+  subtype = "1",
+  sprite = "npc/zirna",
+}
+
 tile{
   layer = 2,
   x = 1496,

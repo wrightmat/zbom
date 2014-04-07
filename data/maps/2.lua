@@ -37,6 +37,7 @@ function map:on_started(destination)
     end
   end
   slots_man_sprite = slots_man:get_sprite()
+  npc_zirna:set_enabled(false)
 end
 
 -- Functions called when the player wants to talk to Elder characters.
@@ -64,6 +65,64 @@ function elder_gonpho:on_interaction()
 end
 
 function elder_koshi:on_interaction()
+end
+
+function sensor_zirna_cutscene:on_activated()
+  -- if the player has been to library and heard
+  -- Ordona speak, then continue the story with a
+  -- Dark Interloper cutscene where they take Zelda
+  if game:get_value("i1032") == 2 then
+    local hx, hy, hl = map:get_hero():get_position()
+    --hero:freeze()
+    npc_zirna:set_enabled(true)
+    sol.audio.play_music("battle")
+    local m = sol.movement.create("target")
+    m:set_ignore_obstacles(true)
+    m:set_speed(48)
+    m:set_target(872, 400)
+    m:start(npc_zirna, function()
+    npc_zirna:get_sprite():set_animation("walking")
+      m:set_target(976, 400)
+      m:start(npc_zirna, function()
+        m:set_target(976, 248)
+        m:start(npc_zirna, function()
+	  game:start_dialog("zirna.0.council", function()
+	    map:move_camera(992, 160, 350, function()
+              game:start_dialog("zelda.0.zirna", function()
+                local zix, ziy, zil = npc_zirna:get_position()
+                dark_appears = map:create_npc({name="dark_appears", x=zix, y=ziy, layer=1, direction=0, subtype=0, sprite="entities/dark_appears"})
+	        sol.timer.start(1000, function()
+		  dark_appears:set_enabled(true)
+                  dark_appears:set_position(992, 127)
+		  sol.timer.start(2000, function()
+                    npc_zirna:set_position(992, 127)
+    	            npc_zirna:get_sprite():set_animation("pose1")
+	            game:start_dialog("zirna.0.council_2", function()
+                      zex, zey, zel = elder_zelda:get_position()
+		      dark_appears:set_enabled(true)
+		      dark_appears:set_position(zex, zey)
+		      elder_zelda:remove()
+		      sol.timer.start(1000, function()
+		        dark_appears:set_position(992, 127)
+		        dark_appears:set_enabled(true)
+		        npc_zirna:remove()
+		        dark_appears:remove()
+		        game:set_value("i1032", 3)
+		        sol.timer.start(1000, function()
+			  --hero:unfreeze()
+			  sol.audio.play_music("castle")
+		        end)
+		      end)
+                    end) --dialog
+		  end)
+                end)
+	      end) --dialog
+	    end, 500, 2000) --camera
+          end) --dialog
+        end)
+      end)
+    end)
+  end
 end
 
 -- Functions called when the player wants to talk to game characters.
