@@ -1,7 +1,11 @@
 local map = ...
+local game = map:get_game()
+
+------------------------------------------------------
+-- Outside World F8 (Hyrule Castle) - Ordona Speaks --
+------------------------------------------------------
 
 function map:on_started(destination)
-
   -- Opening doors
   local entrance_names = {
     "castle"
@@ -18,4 +22,32 @@ function map:on_started(destination)
     end
   end
 
+  if destination == from_castle_1 and game:get_value("i1032") == 3 then
+    sol.timer.start(1500, function()
+      hero:freeze()
+      torch_overlay = sol.surface.create("entities/dark.png")
+      torch_overlay:fade_in(50)
+      game:set_value("i1027", 5)
+      hero:set_direction(0)
+      game:start_dialog("ordona.0.demo", game:get_player_name(), function() --ordona.3.castle
+        torch_overlay:fade_out(50)
+        hero:unfreeze()
+        game:set_value("i1032", 4)
+      end)
+    end)
+  end
+end
+
+function game:on_map_changed(map)
+  function map:on_draw(dst_surface)
+    if map:get_id() == "45" and torch_overlay then
+      local torch = map:get_entity("torch_fire_2")
+      local screen_width, screen_height = dst_surface:get_size()
+      local cx, cy = map:get_camera_position()
+      local tx, ty = torch:get_center_position()
+      local x = 320 - tx + cx
+      local y = 240 - ty + cy
+      torch_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
+    end
+  end
 end

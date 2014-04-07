@@ -28,8 +28,8 @@ end
 
 function game:on_map_changed(map)
   function map:on_draw(dst_surface)
-    if map:get_id() == "11" and torch_overlay then
-      local torch = map:get_entity("torch_1")
+    if map:get_id() == "138" and torch_overlay then
+      local torch = map:get_entity("torch_ordona")
       local screen_width, screen_height = dst_surface:get_size()
       local cx, cy = map:get_camera_position()
       local tx, ty = torch:get_center_position()

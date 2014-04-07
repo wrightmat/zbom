@@ -2687,6 +2687,26 @@ additional advice?
   ]]
 }
 
+dialog{
+  id = "ordona.0.demo",
+  skip = "current",
+  text = [[
+It is I, Ordona, again.
+Listen well, $v.
+$0
+Congratulations, You
+have reached the end
+of the demo!
+$0
+This is only the end
+of the story (for now),
+so feel free to explore
+the world - there's
+still plenty more to
+discover!
+  ]]
+}
+
 -- Ulo (Mayor of Ordon Village and Ordon representative to the Council of Elders)
 -----------------------
 dialog{
