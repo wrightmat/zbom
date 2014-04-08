@@ -5,6 +5,7 @@ local game = map:get_game()
 -- Castle Town houses (game houses, castle inside, etc.) --
 -----------------------------------------------------------
 
+if game:get_value("i1032") == nil then game:set_value("i1032", 0) end
 local playing_chests = false
 local playing_slots = false
 local already_played_chests = false

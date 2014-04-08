@@ -41,6 +41,7 @@ if boss_gohma ~= nil then
   sol.audio.play_sound("boss_killed")
   if boss_heart ~= nil then boss_heart:get_sprite():fade_in(30, function()
     boss_heart:set_enabled(true)
+    game:set_dungeon_finished(2)
     sol.audio.play_music("faron_woods")
    end)
   end

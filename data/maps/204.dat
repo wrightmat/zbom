@@ -14022,6 +14022,24 @@ destructible{
   damage_on_enemies = 0,
 }
 
+sensor{
+  layer = 0,
+  x = 1400,
+  y = 1117,
+  width = 48,
+  height = 16,
+  name = "sensor_save_ground",
+}
+
+sensor{
+  layer = 0,
+  x = 1400,
+  y = 941,
+  width = 48,
+  height = 16,
+  name = "sensor_reset_ground",
+}
+
 tile{
   layer = 2,
   x = 32,

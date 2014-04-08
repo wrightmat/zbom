@@ -50,18 +50,13 @@ function npc_warun:on_interaction()
   game:start_dialog("warun.0")
 end
 
-function game:on_map_changed(map)
-  function map:on_draw(dst_surface)
-    if map:get_world() ~= "inside_world" then sunset_overlay:draw(dst_surface) end
-  end
-end
-
 function ocarina_wind_to_F14:on_interaction()
   -- if this point not previously discovered
   -- then add it, otherwise do nothing
   if not game:get_value("b1503") then
     game:start_dialog("warp.new_point", function()
       game:set_value("b1503", true)
+
     end)
   else
     -- if other paired point is discovered (and they have the Ocarina),
@@ -78,5 +73,11 @@ function ocarina_wind_to_F14:on_interaction()
       game:start_dialog("warp.interaction")
     end
    end
+  end
+end
+
+function game:on_map_changed(map)
+  function map:on_draw(dst_surface)
+    --if map:get_world() ~= "inside_world" then sunset_overlay:draw(dst_surface) end
   end
 end

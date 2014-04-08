@@ -45,6 +45,13 @@ function map:on_started(destination)
   end
 end
 
+function sensor_music:on_activated()
+  sol.audio.play_music("kakariko")
+end
+function sensor_music_2:on_activated()
+  sol.audio.play_music("kakariko")
+end
+
 function sensor_enter_kakariko:on_activated()
   sol.audio.play_music("kakariko")
   sunset_overlay:set_opacity(0.1*255)
@@ -75,6 +82,6 @@ end
 
 function game:on_map_changed(map)
   function map:on_draw(dst_surface)
-    if map:get_world() ~= "inside_world" then sunset_overlay:draw(dst_surface) end
+    --if map:get_world() ~= "inside_world" then sunset_overlay:draw(dst_surface) end
   end
 end

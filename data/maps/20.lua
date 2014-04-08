@@ -37,7 +37,9 @@ function npc_monkey_1:on_interaction()
   if game:get_value("i1068") == 7 then
     game:set_value("i1068", 9)
     sol.audio.play_sound("monkey")
-    game:start_dialog("monkey.2.faron")
+    game:start_dialog("monkey.2.faron", function()
+      game:get_item("book_mudora"):set_variant(2) --give back book piece
+    end)
   elseif game:get_value("i1068") == 8 then
     -- may be a mini game later
   elseif game:get_value("i1068") == 9 then
@@ -53,7 +55,9 @@ function npc_monkey_2:on_interaction()
   if game:get_value("i1068") == 7 then
     game:set_value("i1068", 9)
     sol.audio.play_sound("monkey")
-    game:start_dialog("monkey.2.faron")
+    game:start_dialog("monkey.2.faron", function()
+      game:get_item("book_mudora"):set_variant(2) --give back book piece
+    end)
   elseif game:get_value("i1068") == 8 then
     -- may be a mini game later
   elseif game:get_value("i1068") == 9 then

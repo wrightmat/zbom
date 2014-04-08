@@ -21,7 +21,7 @@ function monkey_jump(dir)
 end
 
 function map:on_started(destination)
-  if game:get_value("b1061") and destination == from_temple then
+  if game:get_value("b1061") and game:get_value("i1068") < 9 and destination == from_temple then
     -- Temple is complete- have monkey steal book page and jump away
     npc_monkey:set_position(648, 752)
     sol.audio.play_sound("monkey")
@@ -47,7 +47,7 @@ function map:on_started(destination)
       sol.timer.start(2000, function() npc_monkey:remove() end)
     end)
   end
-  if game:get_item("airship_part"):get_variant() > 0 then
+  if game:get_item("airship_part"):get_variant() == 3 then
     -- If player has all three airship parts, proceed with Gerudo storyline
     game:set_value("i1068", 4)
   end

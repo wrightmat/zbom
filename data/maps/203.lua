@@ -26,6 +26,9 @@ function map:on_started(destination)
   else
     map:set_doors_open("room6_shutter")
   end
+  -- complete dungeon (if not done already)
+  if game:get_value("b1058") and game:get_value("b1059") and game:get_value("b1061") then
+    game:set_dungeon_finished(2) end
 end
 
 function sensor_open_room1:on_activated()

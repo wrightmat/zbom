@@ -4618,6 +4618,24 @@ tile{
 
 sensor{
   layer = 0,
+  x = 160,
+  y = 173,
+  width = 32,
+  height = 16,
+  name = "sensor_music_2",
+}
+
+sensor{
+  layer = 0,
+  x = 664,
+  y = 437,
+  width = 32,
+  height = 16,
+  name = "sensor_music",
+}
+
+sensor{
+  layer = 0,
   x = 400,
   y = 533,
   width = 32,

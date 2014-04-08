@@ -23,6 +23,9 @@ function map:on_started(destination)
   if not game:get_value("b1089") then chest_room18_part:set_enabled(false) end
   if not game:get_value("b1074") then boss_heart:set_enabled(false) end
   map:set_doors_open("door_miniboss_enter")
+  -- complete dungeon (if not done already)
+  if game:get_value("b1079") and game:get_value("b1074") and game:get_value("b1082") then
+    game:set_dungeon_finished(3) end
 end
 
 function sensor_pyramid_enter:on_activated()
@@ -31,6 +34,14 @@ function sensor_pyramid_enter:on_activated()
       game:set_value("b1069", 1)
     end)
   end
+end
+
+function sensor_save_ground:on_activated()
+  hero:save_solid_ground()
+end
+
+function sensor_reset_ground:on_activated()
+  hero:reset_solid_ground()
 end
 
 function sensor_miniboss:on_activated()
@@ -83,9 +94,9 @@ if boss_manhandla ~= nil then
   map:open_doors("door_boss")
   map:open_doors("door_boss_shutter")
   sol.audio.play_sound("boss_killed")
-
   if boss_heart ~= nil then boss_heart:get_sprite():fade_in(30, function()
     boss_heart:set_enabled(true)
+    game:set_dungeon_finished(3)
     sol.audio.play_music("airship")
    end)
   end

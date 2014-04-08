@@ -51,21 +51,25 @@ function quest_status_submenu:on_started()
   end
 
   -- Bomb bag.
-  local bomb_bag = self.game:get_item("bomb_bag"):get_variant()
-  if bomb_bag > 0 then
-    item_sprite:set_animation("bomb_bag")
-    item_sprite:set_direction(bomb_bag - 1)
-    item_sprite:draw(self.quest_items_surface, 68, 113)
-    self.caption_text_keys[1] = "quest_status.caption.bomb_bag_" .. bomb_bag
+  if self.game:get_item("bomb_bag") ~= nil then
+    local bomb_bag = self.game:get_item("bomb_bag"):get_variant()
+    if bomb_bag > 0 then
+      item_sprite:set_animation("bomb_bag")
+      item_sprite:set_direction(bomb_bag - 1)
+      item_sprite:draw(self.quest_items_surface, 68, 113)
+      self.caption_text_keys[1] = "quest_status.caption.bomb_bag_" .. bomb_bag
+    end
   end
 
   -- Quiver.
-  local quiver = self.game:get_item("quiver"):get_variant()
-  if quiver > 0 then
-    item_sprite:set_animation("quiver")
-    item_sprite:set_direction(quiver - 1)
-    item_sprite:draw(self.quest_items_surface, 68, 143)
-    self.caption_text_keys[2] = "quest_status.caption.quiver_" .. quiver
+  if self.game:get_item("quiver") ~= nil then
+    local quiver = self.game:get_item("quiver"):get_variant()
+    if quiver > 0 then
+      item_sprite:set_animation("quiver")
+      item_sprite:set_direction(quiver - 1)
+      item_sprite:draw(self.quest_items_surface, 68, 143)
+      self.caption_text_keys[2] = "quest_status.caption.quiver_" .. quiver
+    end
   end
 
   -- Ocarina.
