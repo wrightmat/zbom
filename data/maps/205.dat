@@ -11469,28 +11469,6 @@ npc{
   sprite = "npc/goron_dampeh",
 }
 
-dynamic_tile{
-  layer = 0,
-  x = 1112,
-  y = 1344,
-  width = 32,
-  height = 32,
-  name = "statue_2",
-  pattern = 648,
-  enabled_at_start = true,
-}
-
-dynamic_tile{
-  layer = 0,
-  x = 288,
-  y = 1568,
-  width = 32,
-  height = 32,
-  name = "statue_1",
-  pattern = 648,
-  enabled_at_start = true,
-}
-
 chest{
   layer = 0,
   x = 192,
@@ -12498,6 +12476,28 @@ wall{
   stops_npcs = true,
   stops_blocks = true,
   stops_projectiles = true,
+}
+
+custom_entity{
+  layer = 0,
+  x = 296,
+  y = 1596,
+  width = 16,
+  height = 16,
+  name = "statue_1",
+  direction = 3,
+  sprite = "entities/statue_goron",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1128,
+  y = 1372,
+  width = 16,
+  height = 16,
+  name = "statue_2",
+  direction = 3,
+  sprite = "entities/statue_goron",
 }
 
 tile{
