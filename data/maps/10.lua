@@ -44,70 +44,13 @@ local function follow_hero(npc)
 end
 
 function map:on_started(destination)
-  -- If the festival isn't over, make sure banner, booths and NPCs are outside
-  if game:get_value("i1027") < 5 then
-    banner_1:set_enabled(true)
-    banner_2:set_enabled(true)
-    banner_3:set_enabled(true)
-    banner_4:set_enabled(true)
-    banner_5:set_enabled(true)
-    banner_6:set_enabled(true)
-    banner_7:set_enabled(true)
-    banner_8:set_enabled(true)
-    booth_1:set_enabled(true)
-    booth_2:set_enabled(true)
-    blacksmith_table:set_enabled(true)
-    blacksmith_furnace:set_enabled(true)
-    npc_julita_sensor:remove(true)
-    npc_rudy_sensor:remove(true)
-    random_walk(npc_ulo)
-    --random_walk(npc_bilo) -- TODO: add back once he has all of his directions/animations
-  else  -- If festival is over, then don't have NPCs walking around outside
-    npc_rudy:remove()
-    npc_julita:remove()
-    npc_julita_sensor:remove(true)
-    npc_rudy_sensor:remove(true)
-    npc_ulo:remove()
-    npc_bilo:remove()
-  end
-  if game:get_value("i1027") < 2 then  -- Whether or not kids should be walking around
-    follow_hero(npc_jarred)
-    follow_hero(npc_quint)
-    follow_hero(npc_francis)
-  else
-    random_walk(npc_jarred)
-    random_walk(npc_quint)
-    random_walk(npc_francis)
-  end  -- Show the quest bubble for the "find Crista for Julita" quest only at the appropriate time
-  if game:get_value("i1027") ~= 4 and quest_julita:exists() then
-    quest_julita:remove()
-  end
-
-  -- Entrances of houses.
-  local entrance_names = {
-    "pim", "ulo", "julita"
-  }
-  for _, entrance_name in ipairs(entrance_names) do
-    local sensor = map:get_entity(entrance_name .. "_door_sensor")
-    local tile = map:get_entity(entrance_name .. "_door")
-
-    sensor.on_activated_repeat = function()
-      if hero:get_direction() == 1
-	  and tile:is_enabled() then
-	tile:set_enabled(false)
-	sol.audio.play_sound("door_open")
-      end
-    end
-  end
-end
-
-function sensor_festival_dialog:on_activated()
   -- if Link walks out of his house and the festival's going on
   -- then start the initial dialog (if it hasn't been done already)
   if game:get_value("i1027") == 0 then
+   sol.timer.start(500, function()
     hero:freeze()
     game:set_value("i1027", 1)
-    festival_timer = sol.timer.start(2000, function()
+    festival_timer = sol.timer.start(1800, function()
       local m = sol.movement.create("jump")
       sol.audio.play_sound("jump")
       m:set_direction8(6) --face down to indicate speaking
@@ -157,7 +100,65 @@ function sensor_festival_dialog:on_activated()
         end)
       end)
     end)
-  end--if
+   end)
+  elseif game:get_value("i1027") < 2 then  -- Whether or not kids should be walking around
+    follow_hero(npc_jarred)
+    follow_hero(npc_quint)
+    follow_hero(npc_francis)
+  else
+    random_walk(npc_jarred)
+    random_walk(npc_quint)
+    random_walk(npc_francis)
+  end
+
+  -- If the festival isn't over, make sure banner, booths and NPCs are outside
+  if game:get_value("i1027") < 5 then
+    banner_1:set_enabled(true)
+    banner_2:set_enabled(true)
+    banner_3:set_enabled(true)
+    banner_4:set_enabled(true)
+    banner_5:set_enabled(true)
+    banner_6:set_enabled(true)
+    banner_7:set_enabled(true)
+    banner_8:set_enabled(true)
+    booth_1:set_enabled(true)
+    booth_2:set_enabled(true)
+    blacksmith_table:set_enabled(true)
+    blacksmith_furnace:set_enabled(true)
+    npc_julita_sensor:remove(true)
+    npc_rudy_sensor:remove(true)
+    random_walk(npc_ulo)
+    --random_walk(npc_bilo) -- TODO: add back once he has all of his directions/animations
+  else  -- If festival is over, then don't have NPCs walking around outside
+    npc_rudy:remove()
+    npc_julita:remove()
+    npc_julita_sensor:remove(true)
+    npc_rudy_sensor:remove(true)
+    npc_ulo:remove()
+    npc_bilo:remove()
+  end
+
+  -- Show the quest bubble for the "find Crista for Julita" quest only at the appropriate time
+  if game:get_value("i1027") ~= 4 and quest_julita:exists() then
+    quest_julita:remove()
+  end
+
+  -- Entrances of houses.
+  local entrance_names = {
+    "pim", "ulo", "julita"
+  }
+  for _, entrance_name in ipairs(entrance_names) do
+    local sensor = map:get_entity(entrance_name .. "_door_sensor")
+    local tile = map:get_entity(entrance_name .. "_door")
+
+    sensor.on_activated_repeat = function()
+      if hero:get_direction() == 1
+	  and tile:is_enabled() then
+	tile:set_enabled(false)
+	sol.audio.play_sound("door_open")
+      end
+    end
+  end
 end
 
 function npc_rudy:on_interaction()

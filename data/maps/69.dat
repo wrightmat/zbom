@@ -2764,3 +2764,43 @@ destructible{
   can_regenerate = true,
 }
 
+enemy{
+  layer = 0,
+  x = 520,
+  y = 117,
+  name = "geyser_3",
+  direction = 3,
+  breed = "geyser",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 384,
+  y = 301,
+  name = "geyser_2",
+  direction = 3,
+  breed = "geyser",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 256,
+  y = 525,
+  name = "geyser_4",
+  direction = 3,
+  breed = "geyser",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 152,
+  y = 741,
+  name = "geyser_5",
+  direction = 3,
+  breed = "geyser",
+  treasure_name = "random",
+}
+
