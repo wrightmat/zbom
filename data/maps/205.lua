@@ -31,9 +31,11 @@ function npc_dampeh:on_interaction()
 end
 
 function sensor_miniboss:on_activated()
-  map:close_doors("door_miniboss")
-  miniboss_arrghus:set_enabled(true)
-  sol.audio.play_music("boss")
+  if miniboss_arrghus ~= nil then
+    map:close_doors("door_miniboss")
+    miniboss_arrghus:set_enabled(true)
+    sol.audio.play_music("boss")
+  end
 end
 
 if miniboss_arrghus ~= nil then
@@ -51,6 +53,9 @@ end
 function door_key2_1:on_opened()
   -- If the key 2 door is opened before the key 1 door, open
   -- the shutter to the other key so the player's not trapped!
+  map:set_doors_open("door_shutter_key2")
+end
+function chest_item:on_opened()
   map:set_doors_open("door_shutter_key2")
 end
 

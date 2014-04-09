@@ -28,13 +28,9 @@ end
 
 function enemy:close()
   self:set_attack_consequence("arrow", "protected")
-  self:get_sprite():set_animation("blinking")
-
-  function enemy:on_animation_finished(sprite, animation)
-    self:get_sprite():set_animation("closed")
-    sol.timer.start(self, random(6)*1000, function() self:open() end)
-    self:go(64)
-  end
+  self:get_sprite():set_animation("closed")
+  sol.timer.start(self, random(6)*1000, function() self:open() end)
+  self:go(64)
 end
 
 function enemy:open()
@@ -42,10 +38,12 @@ function enemy:open()
   self:get_sprite():set_animation("opening")
 
   function enemy:on_animation_finished(sprite, animation)
+    self:get_sprite():set_animation("walking")
     self:check_action()
   end
 end
 
 function enemy:on_restarted()
+  self:get_sprite():set_animation("walking")
   self:check_action()
 end

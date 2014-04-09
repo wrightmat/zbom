@@ -3710,15 +3710,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 752,
-  y = 1208,
-  width = 16,
-  height = 16,
-  pattern = 594,
-}
-
-tile{
-  layer = 0,
   x = 960,
   y = 1312,
   width = 16,
@@ -11423,20 +11414,101 @@ tile{
 
 tile{
   layer = 0,
-  x = 592,
-  y = 1208,
-  width = 16,
-  height = 16,
-  pattern = 594,
-}
-
-tile{
-  layer = 0,
   x = 288,
   y = 1408,
   width = 192,
   height = 16,
   pattern = 9,
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 1568,
+  width = 32,
+  height = 32,
+  pattern = 647,
+}
+
+tile{
+  layer = 0,
+  x = 1112,
+  y = 1344,
+  width = 32,
+  height = 32,
+  pattern = 647,
+}
+
+tile{
+  layer = 0,
+  x = 216,
+  y = 688,
+  width = 32,
+  height = 32,
+  pattern = 647,
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 688,
+  width = 32,
+  height = 32,
+  pattern = 647,
+}
+
+tile{
+  layer = 0,
+  x = 904,
+  y = 936,
+  width = 32,
+  height = 32,
+  pattern = 647,
+}
+
+tile{
+  layer = 0,
+  x = 904,
+  y = 1040,
+  width = 32,
+  height = 32,
+  pattern = 647,
+}
+
+tile{
+  layer = 0,
+  x = 712,
+  y = 720,
+  width = 32,
+  height = 32,
+  pattern = 647,
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 448,
+  width = 32,
+  height = 32,
+  pattern = 647,
+}
+
+tile{
+  layer = 0,
+  x = 1448,
+  y = 464,
+  width = 32,
+  height = 32,
+  pattern = 647,
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 312,
+  width = 32,
+  height = 32,
+  pattern = 647,
 }
 
 enemy{
@@ -11489,94 +11561,6 @@ enemy{
   name = "keese_3",
   direction = 3,
   breed = "keese_fire",
-}
-
-dynamic_tile{
-  layer = 0,
-  x = 216,
-  y = 688,
-  width = 32,
-  height = 32,
-  name = "statue_3",
-  pattern = 648,
-  enabled_at_start = true,
-}
-
-dynamic_tile{
-  layer = 0,
-  x = 488,
-  y = 688,
-  width = 32,
-  height = 32,
-  name = "statue_4",
-  pattern = 648,
-  enabled_at_start = true,
-}
-
-dynamic_tile{
-  layer = 0,
-  x = 904,
-  y = 936,
-  width = 32,
-  height = 32,
-  name = "statue_5",
-  pattern = 648,
-  enabled_at_start = true,
-}
-
-dynamic_tile{
-  layer = 0,
-  x = 904,
-  y = 1040,
-  width = 32,
-  height = 32,
-  name = "statue_6",
-  pattern = 648,
-  enabled_at_start = true,
-}
-
-dynamic_tile{
-  layer = 0,
-  x = 704,
-  y = 712,
-  width = 32,
-  height = 32,
-  name = "statue_7",
-  pattern = 648,
-  enabled_at_start = true,
-}
-
-dynamic_tile{
-  layer = 0,
-  x = 320,
-  y = 312,
-  width = 32,
-  height = 32,
-  name = "statue_10",
-  pattern = 648,
-  enabled_at_start = true,
-}
-
-dynamic_tile{
-  layer = 0,
-  x = 1448,
-  y = 464,
-  width = 32,
-  height = 32,
-  name = "statue_9",
-  pattern = 648,
-  enabled_at_start = true,
-}
-
-dynamic_tile{
-  layer = 0,
-  x = 568,
-  y = 448,
-  width = 32,
-  height = 32,
-  name = "statue_8",
-  pattern = 648,
-  enabled_at_start = true,
 }
 
 enemy{
@@ -11843,8 +11827,8 @@ chest{
 
 door{
   layer = 0,
-  x = 264,
-  y = 1256,
+  x = 440,
+  y = 1128,
   name = "door_key1_1",
   direction = 1,
   sprite = "entities/door_small_key",
@@ -11857,8 +11841,8 @@ door{
 
 door{
   layer = 0,
-  x = 264,
-  y = 1208,
+  x = 440,
+  y = 1080,
   name = "door_key1_2",
   direction = 3,
   sprite = "entities/door_small_key",
@@ -11890,8 +11874,8 @@ chest{
 
 door{
   layer = 0,
-  x = 440,
-  y = 1128,
+  x = 264,
+  y = 1256,
   name = "door_key2_1",
   direction = 1,
   sprite = "entities/door_small_key",
@@ -11904,8 +11888,8 @@ door{
 
 door{
   layer = 0,
-  x = 440,
-  y = 1080,
+  x = 264,
+  y = 1208,
   name = "door_key2_2",
   direction = 3,
   sprite = "entities/door_small_key",
@@ -12487,6 +12471,7 @@ custom_entity{
   name = "statue_1",
   direction = 3,
   sprite = "entities/statue_goron",
+  model = "statue_goron",
 }
 
 custom_entity{
@@ -12498,6 +12483,227 @@ custom_entity{
   name = "statue_2",
   direction = 3,
   sprite = "entities/statue_goron",
+  model = "statue_goron",
+}
+
+destructible{
+  layer = 0,
+  x = 600,
+  y = 1221,
+  treasure_name = "heart",
+  sprite = "entities/bush",
+  destruction_sound = "stone",
+  weight = 1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 760,
+  y = 1221,
+  treasure_name = "heart",
+  sprite = "entities/bush",
+  destruction_sound = "stone",
+  weight = 1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 920,
+  y = 1605,
+  treasure_name = "arrow",
+  treasure_variant = 2,
+  sprite = "entities/bush",
+  destruction_sound = "stone",
+  weight = 1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1064,
+  y = 1589,
+  treasure_name = "heart",
+  sprite = "entities/bush",
+  destruction_sound = "stone",
+  weight = 1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1144,
+  y = 1501,
+  treasure_name = "arrow",
+  treasure_variant = 2,
+  sprite = "entities/bush",
+  destruction_sound = "stone",
+  weight = 1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1160,
+  y = 1301,
+  treasure_name = "heart",
+  sprite = "entities/bush",
+  destruction_sound = "stone",
+  weight = 1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 920,
+  y = 1309,
+  treasure_name = "arrow",
+  treasure_variant = 2,
+  sprite = "entities/bush",
+  destruction_sound = "stone",
+  weight = 1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 992,
+  y = 1413,
+  treasure_name = "heart",
+  sprite = "entities/bush",
+  destruction_sound = "stone",
+  weight = 1,
+  can_be_cut = true,
+}
+
+custom_entity{
+  layer = 0,
+  x = 232,
+  y = 716,
+  width = 16,
+  height = 16,
+  name = "statue_3",
+  direction = 3,
+  sprite = "entities/statue_goron",
+  model = "statue_goron",
+}
+
+custom_entity{
+  layer = 0,
+  x = 504,
+  y = 716,
+  width = 16,
+  height = 16,
+  name = "statue_4",
+  direction = 3,
+  sprite = "entities/statue_goron",
+  model = "statue_goron",
+}
+
+custom_entity{
+  layer = 0,
+  x = 920,
+  y = 964,
+  width = 16,
+  height = 16,
+  name = "statue_5",
+  direction = 3,
+  sprite = "entities/statue_goron",
+  model = "statue_goron",
+}
+
+custom_entity{
+  layer = 0,
+  x = 920,
+  y = 1068,
+  width = 16,
+  height = 16,
+  name = "statue_6",
+  direction = 3,
+  sprite = "entities/statue_goron",
+  model = "statue_goron",
+}
+
+custom_entity{
+  layer = 0,
+  x = 728,
+  y = 748,
+  width = 16,
+  height = 16,
+  name = "statue_7",
+  direction = 3,
+  sprite = "entities/statue_goron",
+  model = "statue_goron",
+}
+
+custom_entity{
+  layer = 0,
+  x = 584,
+  y = 476,
+  width = 16,
+  height = 16,
+  name = "statue_8",
+  direction = 3,
+  sprite = "entities/statue_goron",
+  model = "statue_goron",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1464,
+  y = 492,
+  width = 16,
+  height = 16,
+  name = "statue_9",
+  direction = 3,
+  sprite = "entities/statue_goron",
+  model = "statue_goron",
+}
+
+custom_entity{
+  layer = 0,
+  x = 336,
+  y = 340,
+  width = 16,
+  height = 16,
+  name = "statue_10",
+  direction = 3,
+  sprite = "entities/statue_goron",
+  model = "statue_goron",
+}
+
+destructible{
+  layer = 0,
+  x = 352,
+  y = 781,
+  treasure_name = "bomb",
+  sprite = "entities/bush",
+  destruction_sound = "stone",
+  weight = 1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 384,
+  y = 781,
+  treasure_name = "bomb",
+  sprite = "entities/bush",
+  destruction_sound = "stone",
+  weight = 1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 368,
+  y = 781,
+  treasure_name = "bomb",
+  treasure_variant = 2,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
 }
 
 tile{
@@ -12966,15 +13172,6 @@ tile{
   width = 8,
   height = 8,
   pattern = 631,
-}
-
-tile{
-  layer = 2,
-  x = 1200,
-  y = 1392,
-  width = 24,
-  height = 32,
-  pattern = 593,
 }
 
 tile{
@@ -13785,6 +13982,15 @@ tile{
   width = 8,
   height = 48,
   pattern = 674,
+}
+
+tile{
+  layer = 2,
+  x = 1200,
+  y = 1392,
+  width = 24,
+  height = 32,
+  pattern = 593,
 }
 
 separator{

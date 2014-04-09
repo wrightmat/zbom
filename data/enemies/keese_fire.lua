@@ -42,7 +42,7 @@ function enemy:check_hero()
   elseif not near_hero and going_hero then
     self:go_random()
   elseif not near_hero and not going_hero then
-    self:go_circle(hero)
+    self:go_circle()
   end
   timer = sol.timer.start(self, 2000, function() self:check_hero() end)
 end
@@ -64,12 +64,13 @@ function enemy:go_random()
   going_hero = false
 end
 
-function enemy:go_circle(center_entity)
+function enemy:go_circle()
+  local hero = self:get_map():get_entity("hero")
   local m = sol.movement.create("circle")
-  m:set_center(center_entity, 0, -21)
-  m:set_radius(48)
+  m:set_center(hero, 0, -21)
+  m:set_radius(40)
   m:set_initial_angle(math.pi / 2)
-  m:set_angle_speed(100)
+  m:set_angle_speed(80)
   m:set_ignore_obstacles(true)
   m:start(self)
   going_hero = true
