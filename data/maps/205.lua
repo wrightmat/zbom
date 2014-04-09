@@ -1,4 +1,4 @@
-local map ...
+local map = ...
 local game = map:get_game()
 
 --------------------------------------
@@ -6,7 +6,7 @@ local game = map:get_game()
 --------------------------------------
 
 if game:has_item("lamp") then
-  lantern_overlay = sol.surface.create("entities/dark.png")
+ lantern_overlay = sol.surface.create("entities/dark.png")
 else
   game:start_dialog("_cannot_see_need_lamp")
   lantern_overlay = sol.surface.create(640,480)
@@ -19,6 +19,11 @@ function map:on_started(destination)
   map:set_doors_open("door_miniboss")
   chest_big_key:set_enabled(false)
   chest_book:set_enabled(false)
+  -- Lantern slowly drains magic here so you're forced to find ways to refill magic
+  magic_deplete = sol.timer.start(map, 5000, function()
+    if game:get_magic() > 1 then game:remove_magic(1) end
+    return true
+  end)
 end
 
 function npc_dampeh:on_interaction()
@@ -28,11 +33,19 @@ end
 function sensor_miniboss:on_activated()
   map:close_doors("door_miniboss")
   miniboss_arrghus:set_enabled(true)
+  sol.audio.play_music("boss")
 end
 
-function miniboss_arrghus:on_dead()
+if miniboss_arrghus ~= nil then
+ function miniboss_arrghus:on_dead()
   map:open_doors("door_miniboss")
-  chest_big_key:set_enabled(true)
+  sol.audio.play_sound("boss_killed")
+  sol.timer.start(2000, function()
+    chest_big_key:set_enabled(true)
+    sol.audio.play_sound("chest_appears")
+  end)
+  sol.audio.play_music("temple_mausoleum")
+ end
 end
 
 function door_key2_1:on_opened()
@@ -41,23 +54,41 @@ function door_key2_1:on_opened()
   map:set_doors_open("door_shutter_key2")
 end
 
+function map:on_update()
+  if lantern_overlay and game:get_magic() <= 0 then
+    lantern_overlay = nil
+  end
+end
+
 function game:on_map_changed(map)
   function map:on_draw(dst_surface)
-    -- Draw the lights eminating from the statues first
-    local light_overlay = sol.surface.create("entities/dark.png")
-    local s1x, s1y, s1l = statue_1:get_position()
-    light_overlay:draw(dst_surface, s1x, s1y)
-    -- Then draw the lantern light that follows the hero
+    local screen_width, screen_height = dst_surface:get_size()
+    local camera_x, camera_y = map:get_camera_position()
+
+    -- Draw the lights eminating from the statues
+    --local s1x, s1y, s1l = statue_1:get_position()
+    --light_overlay = sol.surface.create("entities/light.png")
+    --local x = 320 - s1x + camera_x
+    --local y = 240 - s1y + camera_y
+    --light_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
+
+    -- Draw the lantern light that follows the hero
     if lantern_overlay then
-      local screen_width, screen_height = dst_surface:get_size()
+      local hero = map:get_entity("hero")
+      local hero_x, hero_y = hero:get_center_position()
+      local x = 320 - hero_x + camera_x
+      local y = 240 - hero_y + camera_y
+      lantern_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
+    else
+      lantern_overlay = sol.surface.create(640,480)
+      lantern_overlay:set_opacity(0.9 * 255)
+      lantern_overlay:fill_color{0, 0, 0}
       local hero = map:get_entity("hero")
       local hero_x, hero_y = hero:get_center_position()
       local camera_x, camera_y = map:get_camera_position()
       local x = 320 - hero_x + camera_x
       local y = 240 - hero_y + camera_y
       lantern_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
-      -- Lantern slowly drains magic here so you're forced to find ways to refill magic
-      game:remove_magic(1)
     end
   end
 end

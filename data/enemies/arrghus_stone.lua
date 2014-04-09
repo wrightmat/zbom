@@ -14,10 +14,7 @@ function enemy:on_created()
 end
 
 function enemy:check_action()
-  self:create_enemy{
-    breed = "arrghus_baby"
-  }
-  end
+  self:create_enemy({ breed = "arrghus_baby" })
   sol.timer.start(self, 2000, function() self:open() end)
 end
 

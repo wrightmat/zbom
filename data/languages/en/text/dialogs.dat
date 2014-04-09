@@ -1763,6 +1763,17 @@ source of light...
 }
 
 dialog{
+  id = "_cannot_see_need_magic",
+  skip = "current",
+  text = [[
+You ran out of magic,
+now you can't see a
+thing! Find more magic!
+  ]]
+}
+
+
+dialog{
   id = "torch.need_lamp",
   skip = "current",
   text = [[
@@ -4718,6 +4729,13 @@ I've seen too many die
 after coming here.
 Please, do yourself a
 favor and just leave.
+
+And it do quickly,
+because something
+about this place will
+drain your magic, and
+your lantern will be
+useless in no time.
   ]]
 }
 
