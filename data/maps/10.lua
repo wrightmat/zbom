@@ -46,7 +46,7 @@ end
 function map:on_started(destination)
   -- if Link walks out of his house and the festival's going on
   -- then start the initial dialog (if it hasn't been done already)
-  if game:get_value("i1027") == 0 then
+  if game:get_value("i1027") == 0 and destination == from_house_inside  then
    sol.timer.start(500, function()
     hero:freeze()
     game:set_value("i1027", 1)
@@ -179,7 +179,21 @@ function npc_rudy:on_interaction()
   end
 end
 function npc_rudy_sensor:on_interaction()
-  npc_rudy:on_interaction()
+  if game:get_value("i1902") > 0 then
+    if game:get_value("i1027") >= 3 and not game:has_item("shield") then
+      game:start_dialog("rudy.0.festival_reward", function()
+        game:set_value("i1902", game:get_value("i1902")+1)
+        hero:start_treasure("shield", 1, "b1820", function()
+          game:start_dialog("rudy.0.festival_reward_2")
+        end)
+      end)
+    else
+      game:start_dialog("rudy.1.festival")
+    end
+  else
+    game:start_dialog("rudy.0.festival")
+    if game:get_value("i1902") == 0 then game:set_value("i1902", 1) end
+  end
 end
 
 function npc_quint:on_interaction()
@@ -222,6 +236,28 @@ function npc_ulo:on_interaction()
 end
 
 function npc_julita:on_interaction()
+  if game:get_value("i1903") >= 1 and game:get_value("i1027") >= 4 then
+    if quest_julita ~= nil then quest_julita:remove() end
+    game:start_dialog("julita.1", game:get_player_name())
+  elseif game:get_value("i1027") < 5 then
+    game:start_dialog("julita.0.festival", function(answer)
+      if answer == 1 then
+        if game:get_magic() then
+          game:add_magic(20)
+          game:start_dialog("julita.0.festival_yes")
+        else
+          game:start_dialog("julita.0.festival_magic")
+        end
+      else
+        game:start_dialog("julita.0.festival_no")
+      end
+      game:set_value("i1903", game:get_value("i1903")+1)
+    end)
+  else
+    game:start_dialog("julita.0")
+  end
+end
+function npc_julita_sensor:on_interaction()
   if game:get_value("i1903") >= 1 and game:get_value("i1027") >= 4 then
     if quest_julita ~= nil then quest_julita:remove() end
     game:start_dialog("julita.1", game:get_player_name())
