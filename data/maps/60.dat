@@ -19,6 +19,15 @@ tile{
 
 tile{
   layer = 0,
+  x = 0,
+  y = -8,
+  width = 16,
+  height = 16,
+  pattern = 2114,
+}
+
+tile{
+  layer = 0,
   x = 32,
   y = 48,
   width = 16,
@@ -409,9 +418,9 @@ teletransporter{
 
 teletransporter{
   layer = 0,
-  x = 0,
+  x = 16,
   y = -16,
-  width = 1120,
+  width = 1104,
   height = 16,
   name = "to_B5",
   transition = "scrolling",

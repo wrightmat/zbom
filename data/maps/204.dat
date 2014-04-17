@@ -14040,6 +14040,122 @@ sensor{
   name = "sensor_reset_ground",
 }
 
+stream{
+  layer = 0,
+  x = 1368,
+  y = 509,
+  name = "belt_1",
+  direction = 6,
+  sprite = "entities/conveyor_belt",
+  speed = 32,
+}
+
+stream{
+  layer = 0,
+  x = 1368,
+  y = 493,
+  name = "belt_2",
+  direction = 6,
+  sprite = "entities/conveyor_belt",
+  speed = 32,
+}
+
+stream{
+  layer = 0,
+  x = 1416,
+  y = 413,
+  name = "belt_3",
+  direction = 6,
+  sprite = "entities/conveyor_belt",
+  speed = 40,
+}
+
+stream{
+  layer = 0,
+  x = 1416,
+  y = 397,
+  name = "belt_4",
+  direction = 6,
+  sprite = "entities/conveyor_belt",
+  speed = 40,
+}
+
+stream{
+  layer = 0,
+  x = 1432,
+  y = 397,
+  name = "belt_5",
+  direction = 2,
+  sprite = "entities/conveyor_belt",
+  speed = 40,
+}
+
+stream{
+  layer = 0,
+  x = 1432,
+  y = 413,
+  name = "belt_6",
+  direction = 2,
+  sprite = "entities/conveyor_belt",
+  speed = 40,
+}
+
+stream{
+  layer = 0,
+  x = 1320,
+  y = 461,
+  name = "belt_7",
+  direction = 2,
+  sprite = "entities/conveyor_belt",
+  speed = 48,
+}
+
+stream{
+  layer = 0,
+  x = 1304,
+  y = 461,
+  name = "belt_8",
+  direction = 6,
+  sprite = "entities/conveyor_belt",
+  speed = 48,
+}
+
+stream{
+  layer = 0,
+  x = 936,
+  y = 381,
+  name = "belt_9",
+  direction = 6,
+  sprite = "entities/conveyor_belt",
+}
+
+stream{
+  layer = 0,
+  x = 840,
+  y = 381,
+  name = "belt_10",
+  direction = 6,
+  sprite = "entities/conveyor_belt",
+}
+
+stream{
+  layer = 0,
+  x = 920,
+  y = 381,
+  name = "belt_11",
+  direction = 2,
+  sprite = "entities/conveyor_belt",
+}
+
+stream{
+  layer = 0,
+  x = 824,
+  y = 381,
+  name = "belt_12",
+  direction = 2,
+  sprite = "entities/conveyor_belt",
+}
+
 tile{
   layer = 2,
   x = 32,

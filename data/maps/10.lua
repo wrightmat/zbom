@@ -32,9 +32,9 @@ local function follow_hero(npc)
   if distance_hero > 1000 then -- hero's too far away, catch up!
     m:set_speed(64)
   elseif distance_hero < 100 then -- getting closer, slow them down
-    m:set_speed(32)
+    m:set_speed(40)
   elseif distance_hero < 50 then -- too close. back off so we don't trap the hero
-    m:set_speed(1)
+    m:set_speed(8)
   else
     m:set_speed(48)
   end
@@ -46,11 +46,13 @@ end
 function map:on_started(destination)
   -- if Link walks out of his house and the festival's going on
   -- then start the initial dialog (if it hasn't been done already)
-  if game:get_value("i1027") == 0 and destination == from_house_inside  then
-   sol.timer.start(500, function()
-    hero:freeze()
-    game:set_value("i1027", 1)
-    festival_timer = sol.timer.start(1800, function()
+  if game:get_value("i1027") == 0 and destination == from_house_inside then
+    follow_hero(npc_jarred)
+    follow_hero(npc_quint)
+    follow_hero(npc_francis)
+    festival_timer = sol.timer.start(1200, function()
+      hero:freeze()
+      game:set_value("i1027", 1)
       local m = sol.movement.create("jump")
       sol.audio.play_sound("jump")
       m:set_direction8(6) --face down to indicate speaking
@@ -99,7 +101,6 @@ function map:on_started(destination)
 	  end)
         end)
       end)
-    end)
    end)
   elseif game:get_value("i1027") < 2 then  -- Whether or not kids should be walking around
     follow_hero(npc_jarred)

@@ -12,5 +12,4 @@ function enemy:on_created()
   self:set_attack_consequence("sword", "protected")
   self:set_pushed_back_when_hurt(false)
   self:get_sprite():set_animation("stopped")
-  self:set_optimization_distance(1000)
 end
