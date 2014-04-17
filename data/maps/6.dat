@@ -3249,6 +3249,16 @@ teletransporter{
   destination = "from_gerudo_1",
 }
 
+chest{
+  layer = 0,
+  x = 192,
+  y = 693,
+  name = "chest_heart_piece",
+  treasure_name = "heart_piece",
+  treasure_savegame_variable = "b1708",
+  sprite = "entities/chest",
+}
+
 tile{
   layer = 2,
   x = 96,

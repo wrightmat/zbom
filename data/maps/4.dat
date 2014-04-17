@@ -5957,6 +5957,276 @@ tile{
   pattern = 441,
 }
 
+tile{
+  layer = 0,
+  x = 960,
+  y = 1136,
+  width = 24,
+  height = 24,
+  pattern = 45,
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 1272,
+  width = 24,
+  height = 24,
+  pattern = 47,
+}
+
+tile{
+  layer = 0,
+  x = 1160,
+  y = 1272,
+  width = 24,
+  height = 24,
+  pattern = 48,
+}
+
+tile{
+  layer = 0,
+  x = 984,
+  y = 1136,
+  width = 80,
+  height = 24,
+  pattern = 49,
+}
+
+tile{
+  layer = 0,
+  x = 984,
+  y = 1272,
+  width = 176,
+  height = 24,
+  pattern = 52,
+}
+
+tile{
+  layer = 0,
+  x = 1160,
+  y = 1160,
+  width = 24,
+  height = 112,
+  pattern = 50,
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 1160,
+  width = 24,
+  height = 112,
+  pattern = 51,
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 1136,
+  width = 80,
+  height = 24,
+  pattern = 49,
+}
+
+tile{
+  layer = 0,
+  x = 984,
+  y = 1160,
+  width = 8,
+  height = 8,
+  pattern = 461,
+}
+
+tile{
+  layer = 0,
+  x = 984,
+  y = 1168,
+  width = 8,
+  height = 96,
+  pattern = 448,
+}
+
+tile{
+  layer = 0,
+  x = 984,
+  y = 1264,
+  width = 8,
+  height = 8,
+  pattern = 458,
+}
+
+tile{
+  layer = 0,
+  x = 1152,
+  y = 1264,
+  width = 8,
+  height = 8,
+  pattern = 459,
+}
+
+tile{
+  layer = 0,
+  x = 1152,
+  y = 1160,
+  width = 8,
+  height = 8,
+  pattern = 460,
+}
+
+tile{
+  layer = 0,
+  x = 1152,
+  y = 1168,
+  width = 8,
+  height = 96,
+  pattern = 449,
+}
+
+tile{
+  layer = 0,
+  x = 992,
+  y = 1264,
+  width = 160,
+  height = 8,
+  pattern = 454,
+}
+
+tile{
+  layer = 0,
+  x = 992,
+  y = 1160,
+  width = 160,
+  height = 8,
+  pattern = 455,
+}
+
+tile{
+  layer = 0,
+  x = 992,
+  y = 1168,
+  width = 160,
+  height = 96,
+  pattern = 484,
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 1144,
+  width = 8,
+  height = 16,
+  pattern = 72,
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 1144,
+  width = 8,
+  height = 16,
+  pattern = 73,
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 1144,
+  width = 16,
+  height = 16,
+  pattern = 76,
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 1144,
+  width = 16,
+  height = 16,
+  pattern = 179,
+}
+
+tile{
+  layer = 0,
+  x = 1136,
+  y = 752,
+  width = 8,
+  height = 16,
+  pattern = 71,
+}
+
+tile{
+  layer = 0,
+  x = 1160,
+  y = 752,
+  width = 8,
+  height = 16,
+  pattern = 71,
+}
+
+tile{
+  layer = 0,
+  x = 1144,
+  y = 744,
+  width = 16,
+  height = 8,
+  pattern = 70,
+}
+
+tile{
+  layer = 0,
+  x = 1160,
+  y = 1136,
+  width = 24,
+  height = 24,
+  pattern = 46,
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 1120,
+  width = 8,
+  height = 16,
+  pattern = 71,
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 1120,
+  width = 8,
+  height = 16,
+  pattern = 71,
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 1112,
+  width = 16,
+  height = 8,
+  pattern = 70,
+}
+
+tile{
+  layer = 0,
+  x = 1192,
+  y = 896,
+  width = 24,
+  height = 32,
+  pattern = 266,
+}
+
+tile{
+  layer = 0,
+  x = 1192,
+  y = 800,
+  width = 24,
+  height = 32,
+  pattern = 266,
+}
+
 destination{
   layer = 0,
   x = 176,
@@ -6417,6 +6687,54 @@ npc{
   subtype = "0",
 }
 
+chest{
+  layer = 0,
+  x = 1072,
+  y = 1213,
+  name = "chest_heart_piece",
+  treasure_name = "heart_piece",
+  treasure_savegame_variable = "b1707",
+  sprite = "entities/chest",
+}
+
+destination{
+  layer = 0,
+  x = 1152,
+  y = 789,
+  name = "from_upstairs",
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 1144,
+  y = 752,
+  width = 16,
+  height = 16,
+  name = "to_upstairs",
+  destination_map = "4",
+  destination = "from_downstairs",
+}
+
+destination{
+  layer = 0,
+  x = 1072,
+  y = 1157,
+  name = "from_downstairs",
+  direction = 3,
+}
+
+teletransporter{
+  layer = 0,
+  x = 1064,
+  y = 1120,
+  width = 16,
+  height = 16,
+  name = "to_downstairs",
+  destination_map = "4",
+  destination = "from_upstairs",
+}
+
 tile{
   layer = 2,
   x = 160,
@@ -6709,7 +7027,7 @@ tile{
   layer = 2,
   x = 32,
   y = 1136,
-  width = 1344,
+  width = 928,
   height = 208,
   pattern = 480,
 }
@@ -6730,6 +7048,42 @@ tile{
   width = 128,
   height = 16,
   pattern = 480,
+}
+
+tile{
+  layer = 2,
+  x = 1184,
+  y = 1136,
+  width = 192,
+  height = 208,
+  pattern = 480,
+}
+
+tile{
+  layer = 2,
+  x = 960,
+  y = 1296,
+  width = 224,
+  height = 48,
+  pattern = 480,
+}
+
+tile{
+  layer = 2,
+  x = 1056,
+  y = 1136,
+  width = 32,
+  height = 8,
+  pattern = 152,
+}
+
+tile{
+  layer = 2,
+  x = 1064,
+  y = 1136,
+  width = 16,
+  height = 8,
+  pattern = 157,
 }
 
 separator{
@@ -6831,6 +7185,14 @@ separator{
 separator{
   layer = 2,
   x = 1288,
+  y = 1056,
+  width = 16,
+  height = 320,
+}
+
+separator{
+  layer = 2,
+  x = 848,
   y = 1056,
   width = 16,
   height = 320,
