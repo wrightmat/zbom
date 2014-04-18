@@ -5052,11 +5052,40 @@ bombs.
 }
 
 dialog{
-  id = "shop.bomb_bag",
+  id = "shop.bomb_bag_1",
   skip = "current",
   text = [[
 A small bomb bag that
 can hold 10 bombs.
+  ]]
+}
+
+dialog{
+  id = "shop.bomb_bag_2",
+  skip = "current",
+  text = [[
+A bomb bag that
+can hold 20 bombs.
+  ]]
+}
+
+dialog{
+  id = "shop.tunic_2",
+  skip = "current",
+  text = [[
+A bright blue tunic
+which protects the
+wearer.
+  ]]
+}
+
+dialog{
+  id = "shop.tunic_3",
+  skip = "current",
+  text = [[
+A deep red tunic
+which protects the
+wearer.
   ]]
 }
 

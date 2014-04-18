@@ -1388,7 +1388,7 @@ destination{
   layer = 0,
   x = 384,
   y = 189,
-  name = "from_house_3",
+  name = "from_house_2",
   direction = 3,
 }
 
@@ -1404,7 +1404,7 @@ destination{
   layer = 0,
   x = 1008,
   y = 717,
-  name = "from_house_4",
+  name = "from_house_sick",
   direction = 3,
 }
 
@@ -1529,9 +1529,9 @@ teletransporter{
   y = 152,
   width = 16,
   height = 16,
-  name = "to_house_3",
+  name = "to_house_2",
   destination_map = "5",
-  destination = "from_outside_house_3",
+  destination = "from_outside_house_2",
 }
 
 teletransporter{
@@ -1551,9 +1551,9 @@ teletransporter{
   y = 680,
   width = 16,
   height = 16,
-  name = "to_house_4",
+  name = "to_house_sick",
   destination_map = "5",
-  destination = "from_outside_house_4",
+  destination = "from_outside_house_sick",
 }
 
 dynamic_tile{

@@ -6255,7 +6255,7 @@ shop_treasure{
   treasure_variant = 2,
   treasure_savegame_variable = "b2006",
   price = 300,
-  dialog = "ordon_shop.shield",
+  dialog = "shop.hyrule_shield",
 }
 
 shop_treasure{
@@ -6266,7 +6266,7 @@ shop_treasure{
   treasure_name = "bomb_bag",
   treasure_savegame_variable = "b2005",
   price = 400,
-  dialog = "ordon_shop.bomb_bag",
+  dialog = "shop.bomb_bag_1",
 }
 
 npc{
@@ -6287,7 +6287,7 @@ shop_treasure{
   name = "shop_potion_red",
   treasure_name = "potion",
   price = 100,
-  dialog = "ordon_shop.potion_red",
+  dialog = "shop.potion_red",
 }
 
 destination{
@@ -6365,7 +6365,7 @@ shop_treasure{
   treasure_name = "bomb_bag",
   treasure_savegame_variable = "b2005",
   price = 200,
-  dialog = "shop.bomb_bag",
+  dialog = "shop.bomb_bag_1",
 }
 
 shop_treasure{

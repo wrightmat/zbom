@@ -604,8 +604,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 152,
-  y = 792,
+  x = 880,
+  y = 584,
   width = 16,
   height = 16,
   pattern = 1715,
@@ -998,7 +998,7 @@ destination{
   layer = 0,
   x = 888,
   y = 677,
-  name = "from_house_1",
+  name = "from_house_doc",
   direction = 3,
 }
 
@@ -1006,7 +1006,7 @@ destination{
   layer = 0,
   x = 160,
   y = 885,
-  name = "from_house_2",
+  name = "from_house_1",
   direction = 3,
 }
 
@@ -1035,9 +1035,9 @@ teletransporter{
   y = 640,
   width = 16,
   height = 16,
-  name = "to_house_1",
+  name = "to_house_doc",
   destination_map = "5",
-  destination = "from_outside_house_1",
+  destination = "from_outside_house_doc",
 }
 
 teletransporter{
@@ -1046,9 +1046,9 @@ teletransporter{
   y = 848,
   width = 16,
   height = 16,
-  name = "to_house_2",
+  name = "to_house_1",
   destination_map = "5",
-  destination = "from_outside_house_2",
+  destination = "from_outside_house_1",
 }
 
 teletransporter{
