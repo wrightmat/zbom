@@ -4685,11 +4685,12 @@ happened to my
 beloved son?
 Well... I don't really
 know. It happened so
-suddenly. I used to
-work in the mines, but
-they were shut down a
-while ago when strange
-things started happening.
+suddenly.
+I used to work in the
+mines, but they were
+shut down a while ago
+when strange things
+started happening.
 At first nothing too
 serious: wierd sounds,
 things went missing.
@@ -4730,6 +4731,16 @@ bring him here? I need
 my son to be better!
   ]]
 }
+
+dialog{
+  id = "osgor.0.house",
+  skip = "current",
+  text = [[
+Errr...mmmmm....$0
+Ow...$0...$0
+  ]]
+}
+
 
 dialog{
   id = "dampeh.0.mausoleum",
