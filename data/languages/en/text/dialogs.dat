@@ -1753,6 +1753,17 @@ something to cut it?
 }
 
 dialog{
+  id = "_soft_soil",
+  skip = "current",
+  text = [[
+There's a patch of
+soft soil here- maybe
+you could dig it up?
+  ]]
+}
+
+
+dialog{
   id = "_cannot_see_need_lamp",
   skip = "current",
   text = [[
