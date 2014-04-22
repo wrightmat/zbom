@@ -25,7 +25,6 @@ local slots_choose_bet_dialog_finished
 local open_chest
 local slots_timeout
 
--- Function called when the map starts.
 function map:on_started(destination)
   chest_1.on_empty = open_chest
   chest_2.on_empty = open_chest
@@ -39,10 +38,18 @@ function map:on_started(destination)
   end
   slots_man_sprite = slots_man:get_sprite()
   npc_zirna:set_enabled(false)
-  if game:get_value("i1032") > 2 then elder_zelda:remove() end
+  if game:get_value("i1032") >= 3 then
+    -- Council disbands after Zelda kidnapped
+    elder_ulo:remove()
+    elder_juba:remove()
+    elder_gin:remove()
+    elder_larin:remove()
+    elder_gonpho:remove()
+    elder_koshi:remove()
+    elder_zelda:remove()
+  end
 end
 
--- Functions called when the player wants to talk to Elder characters.
 function elder_ulo:on_interaction()
   if game:get_value("i1032") > 2 then
     game:start_dialog("ulo.2.council_zelda", game:get_player_name())

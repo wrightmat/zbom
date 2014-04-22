@@ -2823,6 +2823,24 @@ the council!
   ]]
 }
 
+dialog{
+  id = "ulo.3.ordon",
+  skip = "current",
+  text = [[
+Since are beloved Zelda
+is gone, the council
+has temporarily dis-
+banded. We'll continue
+any necessary work from
+our respective villages
+or the Council office
+in Castle Town.
+$0
+I must say, it's good
+to be back home!
+  ]]
+}
+
 -- Rudy (Ordon Village blacksmith)
 -----------------------
 dialog{
@@ -3516,6 +3534,19 @@ back to Council, he
 said I could stay at
 his place!
 How lucky is that?
+  ]]
+}
+
+dialog{
+  id = "bilo.2",
+  skip = "current",
+  text = [[
+Hmm... guess I have
+a roommate now. Or
+wait, I'm the room-
+mate? I'm confused.
+Either way, I don't
+live well with others!
   ]]
 }
 

@@ -14,7 +14,7 @@ function map:on_started(destination)
     npc_goron_ghost:set_position(hx+16, hy+16, 1)
     sol.audio.play_sound("ghost")
     local m = sol.movement.create("target")
-    m:set_speed(24)
+    m:set_speed(32)
     m:start(npc_goron_ghost)
   else
     npc_goron_ghost:remove()

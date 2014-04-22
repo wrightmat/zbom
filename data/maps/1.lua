@@ -44,6 +44,12 @@ function map:on_started(destination)
     npc_julita:remove()
     npc_bilo:remove()
   end
+  if game:get_value("i1032") >= 3 then
+    map:get_entities("box"):remove()
+    bed_bilo:set_enabled(true)
+  else
+    npc_ulo:remove()
+  end
 end
 
 function shop_potion_red:on_buying()
@@ -64,8 +70,16 @@ function npc_bilo:on_interaction()
   if map:get_game():get_value("i3005") == 0 then
     game:start_dialog("bilo.0")
   else
-    game:start_dialog("bilo.1")
+    if game:get_value("i1032") >= 3 then
+      game:start_dialog("bilo.2")
+    else
+      game:start_dialog("bilo.1")
+    end
   end
+end
+
+function npc_ulo:on_interaction()
+  game:start_dialog("ulo.3.ordon")
 end
 
 function npc_julita:on_interaction()
