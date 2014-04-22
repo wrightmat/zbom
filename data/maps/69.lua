@@ -11,10 +11,10 @@ function map:on_started(destination)
     -- set position to hero and then follow
     -- (on intermediate layer so he doesn't collide)
     hx, hy, hl = map:get_entity("hero"):get_position()
-    npc_goron_ghost:set_position(hx, hy, 1)
+    npc_goron_ghost:set_position(hx+16, hy+16, 1)
     sol.audio.play_sound("ghost")
     local m = sol.movement.create("target")
-    m:set_speed(16)
+    m:set_speed(32)
     m:start(npc_goron_ghost)
   else
     npc_goron_ghost:remove()

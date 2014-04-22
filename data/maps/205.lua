@@ -5,6 +5,8 @@ local game = map:get_game()
 -- Dungeon 4: Mountaintop Mausoleum --
 --------------------------------------
 
+if game:get_value("i1029") == nil then game:set_value("i1029", 0) end
+
 if game:has_item("lamp") then
  lantern_overlay = sol.surface.create("entities/dark.png")
 else
@@ -17,6 +19,13 @@ end
 function map:on_started(destination)
   if game:get_value("i1029") > 5 then
     npc_dampeh:remove()
+  elseif game:get_value("i1029") <= 4 then
+    npc_goron_ghost:remove()
+  elseif game:get_value("i1029") == 5 then
+    sol.audio.play_sound("ghost")
+    local m = sol.movement.create("target")
+    m:set_speed(24)
+    m:start(npc_goron_ghost)
   end
   miniboss_arrghus:set_enabled(false)
   map:set_doors_open("door_miniboss")

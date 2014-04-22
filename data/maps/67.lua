@@ -29,22 +29,34 @@ function map:on_started(destination)
     -- the bed and when he goes outside again the ghost will be there.
     npc_goron_ghost:remove()
     game:set_value("i1029", 4)
-  elseif game:get_value("i1029") == 4 or game:get_value("i1029") == 5 then
+  elseif game:get_value("i1029") == 4 then
     sol.audio.play_sound("ghost")
-    game:start_dialog("osgor.0.ghost", function()
+    game:start_dialog("osgor.0.ghost", game:get_player_name(), function()
       game:set_value("i1029", 5)
       -- start following hero
       sol.audio.play_sound("ghost")
       local m = sol.movement.create("target")
-      m:set_speed(16)
+      m:set_speed(24)
       m:start(npc_goron_ghost)
       -- after a while, suggest the hero visit the mausoleum
       -- (this timer should persist and trigger as long as the
       -- hero's on a map that has the ghost present)
-      dialog_timer = sol.timer.start(game, 10000, function()
-        if npc_goron_ghost ~= nil then game:start_dialog("osgor.1.ghost") end
+      dialog_timer = sol.timer.start(game, 20000, function()
+        if npc_goron_ghost ~= nil then
+	  sol.audio.play_sound("ghost")
+	  game:start_dialog("osgor.1.ghost", game:get_player_name())
+	end
       end)
     end)
+  elseif game:get_value("i1029") == 5 then
+    -- set position to hero and then follow
+    -- (on intermediate layer so he doesn't collide)
+    hx, hy, hl = map:get_entity("hero"):get_position()
+    npc_goron_ghost:set_position(hx+16, hy+16, 1)
+    sol.audio.play_sound("ghost")
+    local m = sol.movement.create("target")
+    m:set_speed(24)
+    m:start(npc_goron_ghost)
   else
     npc_goron_ghost:remove()
   end

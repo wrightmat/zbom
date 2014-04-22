@@ -3198,6 +3198,20 @@ you in any way they can.
   ]]
 }
 
+dialog{
+  id = "larin.1.house",
+  skip = "current",
+  text = [[
+After the disapperance
+of Elder Zelda, the
+Council decided it was
+best to disband for
+now. So now I get to
+spend some quality
+time with my people!
+  ]]
+}
+
 -- Great Fairies (Faron, etc.)
 -----------------------
 
@@ -4679,6 +4693,7 @@ Who are you? You don't
 look like one of us.
 Forget it- I don't
 care who you are...
+$0
 Can you help my son?
   ]]
 }
@@ -4692,8 +4707,8 @@ help? Oh, thank you,
 Brother!$0
 What's that?$0
 You need to know what
-happened to my
-beloved son?
+happened to my beloved
+only son?
 Well... I don't really
 know. It happened so
 suddenly.
@@ -4751,12 +4766,11 @@ Thank you, Brother,
 for bringing the
 doctor here!$0
 What's that?
-You say your name
-is $v? I think
-I'll stick to just
-calling you brother,
-especially after you
-helping me!
+You say your name is
+$v? I think I'll
+stick with just calling
+you brother, especially
+after you helped me!
   ]]
 }
 
@@ -4764,14 +4778,12 @@ dialog{
   id = "dargor.4.house",
   skip = "current",
   text = [[
-My son is gone.$0
 What will I do now?$0
 $v, I am forever in
-your debt for your
-help today, but I
-ask you to leave me
-alone for now.
-I need time...
+your debt for your help
+today, but I ask you to
+leave me alone for now.$0
+I need time...$0
   ]]
 }
 
@@ -4788,13 +4800,11 @@ dialog{
   id = "osgor.0.ghost",
   skip = "current",
   text = [[
-$v, wanna play?
-Now that I'm not
-stuck that gross
-bed anymore I can
-do whatever I want!
-$0
-I'll follow you -
+$v, wanna play?$0
+Now that I'm not stuck
+in that gross bed anymore
+I can do whatever I want!
+$0I'll follow you -
 let's have some fun!
   ]]
 }
@@ -4805,11 +4815,10 @@ dialog{
   text = [[
 Hey $v,
 Now that I'm dead,
-maybe I should go
-check out that big
-mausoleum thing that
-they'd never let me
-in before!
+maybe I should go check
+out that big mausoleum
+thing they'd never let
+me in before!
   ]]
 }
 
@@ -4821,15 +4830,14 @@ Don't listen to that
 stuffy old man- let's
 go find cool stuff!$0
 Wait...$0
-Do you hear that?
-You don't?
-In the distance I
-can hear other spirits!
+Do you hear that?$0
+You don't?$0
+In the distance I can
+hear other spirits!
 I think they're all
-over this place.
-Maybe they'll help
-you too- all you have
-to do is ask!
+over this place. Maybe
+they'll help you too-
+all you do is ask!
   ]]
 }
 
@@ -4864,14 +4872,14 @@ dialog{
   id = "galen.2.house",
   skip = "current",
   text = [[
-I'm sorry Brother,
-but there's nothing
-I can do for your
-son - his condition
-is too advanced. I'm
-afraid you'll need
-to say your
-goodbyes...$0
+I'm sorry Brother, but
+there's nothing I can
+do for your son -
+his condition is too
+advanced.$0 I'm afraid
+you'll need to say
+your goodbyes...
+$0
 $v, let's give him
 some privacy. I'll
 meet you outside.
@@ -4926,13 +4934,12 @@ dialog{
   id = "dampeh.1.mausoleum",
   skip = "current",
   text = [[
-The ghost that
-accompanies you-
-that's Dargor's son!
+The ghost that follows
+you- that's Dargor's
+son!$0
 Then that means...$0
-My poor brother
-Dargor. I must go
-and give my
+My poor brother Dargor.
+I must go and give my
 condolences.
 But you must not
 explore this crypt-

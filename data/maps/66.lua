@@ -1,4 +1,9 @@
 local map = ...
+local game = map:get_game()
+
+-----------------------------------
+-- Outside World H6 (Goron City) --
+-----------------------------------
 
 function map:on_started(destination)
 

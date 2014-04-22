@@ -5,7 +5,7 @@ properties{
   height = 880,
   world = "inside_world",
   tileset = "1",
-  music = "goron",
+  music = "cave",
 }
 
 tile{
@@ -19,18 +19,18 @@ tile{
 
 tile{
   layer = 0,
-  x = 480,
+  x = 464,
   y = 400,
-  width = 80,
+  width = 96,
   height = 16,
   pattern = 757,
 }
 
 tile{
   layer = 0,
-  x = 480,
+  x = 464,
   y = 392,
-  width = 80,
+  width = 96,
   height = 16,
   pattern = 757,
 }
@@ -2341,7 +2341,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 424,
+  x = 416,
   y = 400,
   width = 16,
   height = 16,
@@ -2422,7 +2422,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 464,
+  x = 448,
   y = 384,
   width = 16,
   height = 16,
@@ -2431,7 +2431,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 464,
+  x = 448,
   y = 416,
   width = 16,
   height = 16,
@@ -2440,7 +2440,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 464,
+  x = 448,
   y = 400,
   width = 16,
   height = 16,
@@ -2449,9 +2449,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 480,
+  x = 464,
   y = 384,
-  width = 80,
+  width = 96,
   height = 16,
   pattern = 757,
 }
@@ -2467,9 +2467,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 480,
+  x = 464,
   y = 416,
-  width = 80,
+  width = 96,
   height = 16,
   pattern = 758,
 }
@@ -2496,7 +2496,7 @@ npc{
   layer = 0,
   x = 88,
   y = 373,
-  name = "npc_orgor",
+  name = "npc_osgor",
   direction = 3,
   subtype = "1",
   sprite = "npc/goron_osgor",
@@ -2637,16 +2637,6 @@ teletransporter{
 
 npc{
   layer = 0,
-  x = 88,
-  y = 365,
-  name = "bed_sick",
-  direction = 3,
-  subtype = "0",
-  sprite = "entities/bed",
-}
-
-npc{
-  layer = 0,
   x = 200,
   y = 397,
   name = "npc_dargor",
@@ -2697,7 +2687,7 @@ npc{
 
 shop_treasure{
   layer = 0,
-  x = 472,
+  x = 456,
   y = 384,
   name = "shop_amber",
   treasure_name = "amber",
@@ -2707,7 +2697,7 @@ shop_treasure{
 
 shop_treasure{
   layer = 0,
-  x = 504,
+  x = 496,
   y = 384,
   name = "shop_bomb_bag",
   treasure_name = "bomb_bag",
@@ -2731,12 +2721,22 @@ shop_treasure{
 
 npc{
   layer = 0,
-  x = 112,
-  y = 397,
+  x = 160,
+  y = 501,
   name = "npc_galen_2",
   direction = 3,
   subtype = "1",
   sprite = "npc/goron_galen",
+}
+
+npc{
+  layer = 1,
+  x = 88,
+  y = 365,
+  name = "bed_sick",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/bed",
 }
 
 tile{
@@ -2957,7 +2957,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 424,
+  x = 416,
   y = 384,
   width = 16,
   height = 16,
