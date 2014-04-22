@@ -1625,6 +1625,16 @@ destructible{
   destruction_sound = "stone",
 }
 
+npc{
+  layer = 1,
+  x = 1048,
+  y = 701,
+  name = "npc_goron_ghost",
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/goron_ghost",
+}
+
 tile{
   layer = 2,
   x = 776,

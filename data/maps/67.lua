@@ -1,4 +1,9 @@
 local map = ...
+local game = map:get_game()
+
+------------------------------
+-- Outside H7 (Goron City)  --
+------------------------------
 
 function map:on_started(destination)
 
@@ -16,6 +21,14 @@ function map:on_started(destination)
 	sol.audio.play_sound("door_open")
       end
     end
+  end
+
+  if game:get_value("i029") == 4 then
+    game:start_dialog("osgor.1.ghost", function()
+      
+    end)
+  else
+    npc_goron_ghost:remove()
   end
 
 end

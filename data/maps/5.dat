@@ -2729,6 +2729,16 @@ shop_treasure{
   dialog = "shop.tunic_3",
 }
 
+npc{
+  layer = 0,
+  x = 112,
+  y = 397,
+  name = "npc_galen_2",
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/goron_galen",
+}
+
 tile{
   layer = 2,
   x = 0,

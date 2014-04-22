@@ -4744,6 +4744,38 @@ my son to be better!
 }
 
 dialog{
+  id = "dargor.3.house",
+  skip = "current",
+  text = [[
+Thank you, Brother,
+for bringing the
+doctor here!$0
+What's that?
+You say your name
+is $v? I think
+I'll stick to just
+calling you brother,
+especially after you
+helping me!
+  ]]
+}
+
+dialog{
+  id = "dargor.4.house",
+  skip = "current",
+  text = [[
+My son is gone.$0
+What will I do now?$0
+$v, I am forever in
+your debt for your
+help today, but I
+ask you to leave me
+alone for now.
+I need time...
+  ]]
+}
+
+dialog{
   id = "osgor.0.house",
   skip = "current",
   text = [[
@@ -4752,6 +4784,108 @@ Ow...$0...$0
   ]]
 }
 
+dialog{
+  id = "osgor.1.ghost",
+  skip = "current",
+  text = [[
+$v, wanna play?
+Now that I'm not
+stuck that gross
+bed anymore I can
+do whatever I want!
+$0
+You should follow
+me. Let's have some
+fun!
+  ]]
+}
+
+dialog{
+  id = "osgor.2.ghost",
+  skip = "current",
+  text = [[
+Don't listen to that
+stuffy old man- let's
+go find cool stuff!$0
+Wait...$0
+Do you hear that?
+You don't?
+In the distance I
+can hear other spirits!
+I think they're all
+over this place.
+Maybe they'll help
+you too- all you have
+to do is ask!
+  ]]
+}
+
+dialog{
+  id = "galen.0.house",
+  skip = "current",
+  text = [[
+Hello, strange looking
+man. What can I do
+for you?
+  ]]
+}
+
+dialog{
+  id = "galen.1.house",
+  skip = "current",
+  text = [[
+Yes, I know there are
+many needing my help.
+With so many sick, I
+haven't been able to
+make it everyone.
+You say there's a
+brother in dire need
+on the other end of
+town? Very well, I
+will go to him next.
+  ]]
+}
+
+dialog{
+  id = "galen.2.house",
+  skip = "current",
+  text = [[
+I'm sorry Brother,
+but there's nothing
+I can do for your
+son - his condition
+is too advanced. I'm
+afraid you'll need
+to say your
+goodbyes...$0
+$v, let's give him
+some privacy. I'll
+meet you outside.
+  ]]
+}
+
+dialog{
+  id = "galen.2.outside",
+  skip = "current",
+  text = [[
+I wish I had more
+to tell you about
+this affliction that
+has struck down the
+once great Goron
+people. Unfortunately
+it came quickly and
+we haven't had the
+opportunity to
+investigate the disease-
+only to bury the dead.
+Dampeh, our gravekeeper
+knows more about the
+deadly condition than
+anyone...
+  ]]
+}
 
 dialog{
   id = "dampeh.0.mausoleum",
@@ -4772,6 +4906,26 @@ about this place will
 drain your magic, and
 your lantern will be
 useless in no time.
+  ]]
+}
+
+dialog{
+  id = "dampeh.1.mausoleum",
+  skip = "current",
+  text = [[
+The ghost that
+accompanies you-
+that's Dargor's son!
+Then that means...$0
+My poor brother
+Dargor. I must go
+and give my
+condolences.
+But you must not
+explore this crypt-
+it's dangerous to go,
+even when you're not
+alone!
   ]]
 }
 
