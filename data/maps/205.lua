@@ -15,6 +15,9 @@ else
 end
 
 function map:on_started(destination)
+  if game:get_value("i1029") > 5 then
+    npc_dampeh:remove()
+  end
   miniboss_arrghus:set_enabled(false)
   map:set_doors_open("door_miniboss")
   chest_big_key:set_enabled(false)
@@ -27,7 +30,21 @@ function map:on_started(destination)
 end
 
 function npc_dampeh:on_interaction()
-  game:start_dialog("dampeh.0.mausoleum")
+  if game:get_value("i1029") == 5 then
+    game:start_dialog("dampeh.1.mausoleum", function()
+      npc_dampeh:get_sprite():set_animation("walking")
+      local m = sol.movement.create("target")
+      m:set_target(232, 1712)
+      m:set_speed(16)
+      m:start(npc_dampeh, function()
+	npc_dampeh:remove()
+        game:set_value("i1029", 6)
+        game:start_dialog("osgor.2.mausoleum")
+      end)
+    end)
+  else
+    game:start_dialog("dampeh.0.mausoleum")
+  end
 end
 
 function sensor_miniboss:on_activated()

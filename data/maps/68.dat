@@ -1232,6 +1232,16 @@ teletransporter{
   destination = "from_outside",
 }
 
+npc{
+  layer = 1,
+  x = 384,
+  y = 1101,
+  name = "npc_goron_ghost",
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/goron_ghost",
+}
+
 tile{
   layer = 2,
   x = 416,

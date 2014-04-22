@@ -4785,7 +4785,7 @@ Ow...$0...$0
 }
 
 dialog{
-  id = "osgor.1.ghost",
+  id = "osgor.0.ghost",
   skip = "current",
   text = [[
 $v, wanna play?
@@ -4794,14 +4794,27 @@ stuck that gross
 bed anymore I can
 do whatever I want!
 $0
-You should follow
-me. Let's have some
-fun!
+I'll follow you -
+let's have some fun!
   ]]
 }
 
 dialog{
-  id = "osgor.2.ghost",
+  id = "osgor.1.ghost",
+  skip = "current",
+  text = [[
+Hey $v,
+Now that I'm dead,
+maybe I should go
+check out that big
+mausoleum thing that
+they'd never let me
+in before!
+  ]]
+}
+
+dialog{
+  id = "osgor.2.mausoleum",
   skip = "current",
   text = [[
 Don't listen to that
