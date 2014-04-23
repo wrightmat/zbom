@@ -12512,8 +12512,7 @@ destructible{
   layer = 0,
   x = 920,
   y = 1605,
-  treasure_name = "arrow",
-  treasure_variant = 2,
+  treasure_name = "heart",
   sprite = "entities/bush",
   destruction_sound = "stone",
   weight = 1,
@@ -12535,8 +12534,7 @@ destructible{
   layer = 0,
   x = 1144,
   y = 1501,
-  treasure_name = "arrow",
-  treasure_variant = 2,
+  treasure_name = "heart",
   sprite = "entities/bush",
   destruction_sound = "stone",
   weight = 1,
@@ -12558,8 +12556,7 @@ destructible{
   layer = 0,
   x = 920,
   y = 1309,
-  treasure_name = "arrow",
-  treasure_variant = 2,
+  treasure_name = "heart",
   sprite = "entities/bush",
   destruction_sound = "stone",
   weight = 1,
@@ -12704,6 +12701,17 @@ destructible{
   sprite = "entities/pot",
   destruction_sound = "stone",
   weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 1048,
+  y = 1485,
+  treasure_name = "heart",
+  sprite = "entities/bush",
+  destruction_sound = "stone",
+  weight = 1,
+  can_be_cut = true,
 }
 
 npc{

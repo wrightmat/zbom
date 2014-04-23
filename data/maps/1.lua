@@ -45,7 +45,9 @@ function map:on_started(destination)
     npc_bilo:remove()
   end
   if game:get_value("i1032") >= 3 then
-    map:get_entities("box"):remove()
+    for entity in map:get_entities("box") do
+      entity:remove()
+    end
     bed_bilo:set_enabled(true)
   else
     npc_ulo:remove()

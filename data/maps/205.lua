@@ -77,11 +77,9 @@ if miniboss_arrghus ~= nil then
 end
 
 function door_key2_1:on_opened()
-  -- If the key 2 door is opened before the key 1 door, open
-  -- the shutter to the other key so the player's not trapped!
   map:set_doors_open("door_shutter_key2")
 end
-function chest_item:on_opened()
+function door_key1_1:on_opened()
   map:set_doors_open("door_shutter_key2")
 end
 

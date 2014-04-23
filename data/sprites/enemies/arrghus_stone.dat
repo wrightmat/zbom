@@ -23,11 +23,12 @@ animation{
 animation{
   name = "shaking",
   src_image = "enemies/arrghus_stone.png",
+  frame_delay = 200,
   directions = {
-    { x = 80, y = 160, frame_width = 80, frame_height = 80, origin_x = 40, origin_y = 72 },
-    { x = 80, y = 160, frame_width = 80, frame_height = 80, origin_x = 40, origin_y = 72 },
-    { x = 80, y = 160, frame_width = 80, frame_height = 80, origin_x = 40, origin_y = 72 },
-    { x = 80, y = 160, frame_width = 80, frame_height = 80, origin_x = 40, origin_y = 72 },
+    { x = 80, y = 160, frame_width = 80, frame_height = 80, origin_x = 40, origin_y = 72, num_frames = 2 },
+    { x = 80, y = 160, frame_width = 80, frame_height = 80, origin_x = 40, origin_y = 72, num_frames = 2 },
+    { x = 80, y = 160, frame_width = 80, frame_height = 80, origin_x = 40, origin_y = 72, num_frames = 2 },
+    { x = 80, y = 160, frame_width = 80, frame_height = 80, origin_x = 40, origin_y = 72, num_frames = 2 },
   },
 }
 
