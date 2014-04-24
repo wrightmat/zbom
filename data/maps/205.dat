@@ -11538,6 +11538,24 @@ tile{
   pattern = 136,
 }
 
+tile{
+  layer = 0,
+  x = 1296,
+  y = 848,
+  width = 16,
+  height = 16,
+  pattern = 136,
+}
+
+tile{
+  layer = 0,
+  x = 1296,
+  y = 1136,
+  width = 16,
+  height = 16,
+  pattern = 136,
+}
+
 sensor{
   layer = 0,
   x = 1296,
@@ -11658,7 +11676,7 @@ enemy{
   layer = 0,
   x = 1240,
   y = 1125,
-  name = "tektite_4",
+  name = "tektite_map_1",
   direction = 3,
   breed = "tektite_red",
   treasure_name = "random_mountain",
@@ -11668,7 +11686,7 @@ enemy{
   layer = 0,
   x = 1272,
   y = 853,
-  name = "tektite_5",
+  name = "tektite_map_2",
   direction = 3,
   breed = "tektite_red",
   treasure_name = "random_mountain",
@@ -11776,7 +11794,7 @@ enemy{
   layer = 0,
   x = 1184,
   y = 112,
-  name = "keese_12",
+  name = "keese_rupees_2",
   direction = 3,
   breed = "keese_fire",
 }
@@ -12866,9 +12884,9 @@ door{
 
 enemy{
   layer = 0,
-  x = 1008,
+  x = 1016,
   y = 120,
-  name = "keese_13",
+  name = "keese_rupees_1",
   direction = 3,
   breed = "keese_fire",
 }
@@ -12917,7 +12935,7 @@ enemy{
   layer = 0,
   x = 880,
   y = 957,
-  name = "dodongo_5",
+  name = "dodongo_compass_2",
   direction = 3,
   breed = "dodongo",
   treasure_name = "amber",
@@ -12927,7 +12945,7 @@ enemy{
   layer = 0,
   x = 880,
   y = 1061,
-  name = "dodongo_6",
+  name = "dodongo_compass_1",
   direction = 3,
   breed = "dodongo",
   treasure_name = "amber",
@@ -12971,6 +12989,48 @@ enemy{
   direction = 3,
   breed = "dodongo",
   treasure_name = "amber",
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1032,
+  y = 112,
+  width = 16,
+  height = 16,
+  name = "bridge_rupees",
+  pattern = 649,
+  enabled_at_start = false,
+}
+
+chest{
+  layer = 0,
+  x = 1000,
+  y = 117,
+  name = "chest_rupees",
+  treasure_name = "rupee",
+  treasure_variant = 4,
+  treasure_savegame_variable = "b1119",
+  sprite = "entities/chest",
+}
+
+chest{
+  layer = 0,
+  x = 1304,
+  y = 861,
+  name = "chest_map",
+  treasure_name = "map",
+  treasure_savegame_variable = "b1106",
+  sprite = "entities/chest",
+}
+
+chest{
+  layer = 0,
+  x = 1304,
+  y = 1149,
+  name = "chest_compass",
+  treasure_name = "compass",
+  treasure_savegame_variable = "b1105",
+  sprite = "entities/chest",
 }
 
 npc{
@@ -14284,5 +14344,13 @@ separator{
   y = 0,
   width = 16,
   height = 320,
+}
+
+separator{
+  layer = 2,
+  x = 1248,
+  y = 320,
+  width = 448,
+  height = 16,
 }
 

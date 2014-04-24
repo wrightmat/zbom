@@ -31,10 +31,14 @@ function map:on_started(destination)
   boss_vire:set_enabled(false)
   map:set_doors_open("door_miniboss")
   map:set_doors_open("door_boss")
-  chest_big_key:set_enabled(false)
-  chest_key_3:set_enabled(false)
-  chest_key_4:set_enabled(false)
-  chest_book:set_enabled(false)
+  if not game:get_value("b1108") then chest_big_key:set_enabled(false) end
+  if not game:get_value("b1102") then chest_key_3:set_enabled(false) end
+  if not game:get_value("b1103") then chest_key_4:set_enabled(false) end
+  if not game:get_value("b1119") then chest_rupees:set_enabled(false) end
+  if not game:get_value("b1118") then boss_heart:set_enabled(false) end
+  if not game:get_value("b1117") then chest_book:set_enabled(false) end
+  if not game:get_value("b1105") then chest_compass:set_enabled(false) end
+  if not game:get_value("b1106") then chest_map:set_enabled(false) end
   -- Dodongos appears after the boss is defeated
   for enemy in map:get_entities("dodongo") do
     enemy:set_enabled(false)
@@ -96,20 +100,24 @@ if boss_vire ~= nil then
  function boss_vire:on_dead()
   map:open_doors("door_boss")
   sol.audio.play_sound("boss_killed")
-  if boss_heart ~= nil then boss_heart:get_sprite():fade_in(30, function()
-    boss_heart:set_enabled(true)
-    chest_book:set_enabled(true)
-    sol.audio.play_sound("chest_appears")
-    game:set_dungeon_finished(4)
-    sol.audio.play_music("temple_mausoleum")
+  if boss_heart ~= nil then
+    boss_heart:get_sprite():fade_in(30, function()
+      boss_heart:set_enabled(true)
+    end)
+  end
+  chest_book:set_enabled(true)
+  sol.audio.play_sound("chest_appears")
+  game:set_dungeon_finished(4)
+  sol.audio.play_music("temple_mausoleum")
+  sol.timer.start(2000, function()
     game:start_dialog("_mausoleum_outro", function()
       lantern_overlay:fade_out(50)
-      lantern_overlay == nil
+      lantern_overlay:clear()
       for enemy in map:get_entities("dodongo") do
         enemy:set_enabled(true)
       end
-    end
-   end)
+    end)
+  end)
  end
 end
 
@@ -128,12 +136,35 @@ end
 
 for enemy in map:get_entities("tektite") do
   enemy.on_dead = function()
-    if not map:has_entities("tektite_key3") and not game:get_value("b1115") then
+    if not map:has_entities("tektite_key3") and not game:get_value("b1102") then
       chest_key_3:set_enabled(true)
       sol.audio.play_sound("chest_appears")
     end
-    if not map:has_entities("tektite_key4") and not game:get_value("b1116") then
+    if not map:has_entities("tektite_key4") and not game:get_value("b1103") then
       chest_key_4:set_enabled(true)
+      sol.audio.play_sound("chest_appears")
+    end
+    if not map:has_entities("tektite_map") and not game:get_value("b1106") then
+      chest_map:set_enabled(true)
+      sol.audio.play_sound("chest_appears")
+    end
+  end
+end
+
+for enemy in map:get_entities("keese") do
+  enemy.on_dead = function()
+    if not map:has_entities("keese_rupees") and not game:get_value("b1119") then
+      chest_rupees:set_enabled(true)
+      bridge_rupees:set_enabled(true)
+      sol.audio.play_sound("chest_appears")
+    end
+  end
+end
+
+for enemy in map:get_entities("dodongo") do
+  enemy.on_dead = function()
+    if not map:has_entities("dodongo_compass") and not game:get_value("b1105") then
+      chest_compass:set_enabled(true)
       sol.audio.play_sound("chest_appears")
     end
   end

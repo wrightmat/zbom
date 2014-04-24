@@ -1,4 +1,5 @@
 local enemy = ...
+local map = enemy:get_map()
 
 -- Vire Sorceror (Boss of Mausoleum): creates Vires and Fire Keese
 
@@ -6,7 +7,9 @@ local enemy = ...
 local positions = {
   {x = 1576, y = 128, direction4 = 3},
   {x = 1448, y = 224, direction4 = 3},
-  {x = 1352, y = 160, direction4 = 1}
+  {x = 1352, y = 160, direction4 = 3},
+  {x = 1608, y = 208, direction4 = 3},
+  {x = 1584, y = 64, direction4 = 3}
 }
 
 local vulnerable = false
@@ -26,7 +29,7 @@ function enemy:on_created()
   self:set_push_hero_on_sword(false)
 
   local sprite = self:get_sprite()
-  sprite:set_animation("stopped")
+  sprite:set_animation("immobilized")
 end
 
 function enemy:on_restarted()
@@ -43,15 +46,15 @@ end
 function enemy:hide()
   vulnerable = false
   self:set_position(-100, -100)
-  -- Always keep at lease one Vire alive
-  if not map:get_entities_count("vire") then
+  -- Add an extra Vire (no more than 2) when he disappears
+  if map:get_entities_count("vire") <= 1 then
     self:create_enemy({ breed = "vire", treasure_name = "amber" })
   end
   timers[#timers + 1] = sol.timer.start(self, 500, function() self:unhide() end)
 end
 
 function enemy:create_keese()
-  self:create_enemy({ breed = "keese_fire", treasure_name = "heart" })
+  self:create_enemy({ breed = "keese_fire" })
   -- Always keep at lease one Vire alive
   if not map:get_entities_count("vire") then
     self:create_enemy({ breed = "vire", treasure_name = "amber" })

@@ -28,7 +28,7 @@ function enemy:on_hurt()
     timer:stop()
     timer = nil
   end
-  self:create_enemy({ breed = "keese_fire", treasure_name = "heart" })
+  self:create_enemy({ breed = "keese_fire", treasure_name = "random" })
 end
 
 function enemy:check_hero()
@@ -43,7 +43,7 @@ function enemy:check_hero()
   elseif not near_hero and going_hero then
     self:go_random()
   else
-    self:create_enemy({ breed = "keese_fire", treasure_name = "heart" })
+    self:create_enemy({ breed = "keese_fire", treasure_name = "random" })
   end
   timer = sol.timer.start(self, 2000, function() self:check_hero() end)
 end
@@ -72,5 +72,5 @@ end
 function enemy:on_dying()
   -- Split the vire into two keese
   self:create_enemy({ breed = "keese", treasure_name = "heart" })
-  self:create_enemy({ breed = "keese", treasure_name = "heart" })
+  self:create_enemy({ breed = "keese", treasure_name = "random" })
 end

@@ -41,7 +41,7 @@ function enemy:open()
 
   function sprite:on_animation_finished(animation)
     sprite:set_animation("walking")
-    self:check_action()
+    enemy:check_action()
   end
 end
 
