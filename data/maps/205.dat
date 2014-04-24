@@ -11511,6 +11511,15 @@ tile{
   pattern = 647,
 }
 
+sensor{
+  layer = 0,
+  x = 1296,
+  y = 101,
+  width = 16,
+  height = 48,
+  name = "sensor_boss",
+}
+
 enemy{
   layer = 0,
   x = 320,
@@ -12712,6 +12721,44 @@ destructible{
   destruction_sound = "stone",
   weight = 1,
   can_be_cut = true,
+}
+
+enemy{
+  layer = 0,
+  x = 1528,
+  y = 155,
+  name = "boss_vire",
+  direction = 3,
+  breed = "vire_sorceror",
+  savegame_variable = "b1110",
+  treasure_name = "amber",
+}
+
+enemy{
+  layer = 0,
+  x = 1412,
+  y = 149,
+  name = "vire_1",
+  direction = 3,
+  breed = "vire",
+}
+
+pickable{
+  layer = 0,
+  x = 1600,
+  y = 125,
+  name = "boss_heart",
+  treasure_name = "heart_container",
+  treasure_savegame_variable = "b1118",
+}
+
+door{
+  layer = 0,
+  x = 1272,
+  y = 104,
+  name = "door_boss",
+  direction = 2,
+  sprite = "entities/door_shutter",
 }
 
 npc{
@@ -14017,5 +14064,13 @@ separator{
   y = 1208,
   width = 16,
   height = 528,
+}
+
+separator{
+  layer = 2,
+  x = 1248,
+  y = 0,
+  width = 16,
+  height = 320,
 }
 

@@ -28,7 +28,9 @@ function map:on_started(destination)
     m:start(npc_goron_ghost)
   end
   miniboss_arrghus:set_enabled(false)
+  boss_vire:set_enabled(false)
   map:set_doors_open("door_miniboss")
+  map:set_doors_open("door_boss")
   chest_big_key:set_enabled(false)
   chest_book:set_enabled(false)
   -- Lantern slowly drains magic here so you're forced to find ways to refill magic
@@ -73,6 +75,28 @@ if miniboss_arrghus ~= nil then
     sol.audio.play_sound("chest_appears")
   end)
   sol.audio.play_music("temple_mausoleum")
+ end
+end
+
+function sensor_boss:on_activated()
+  if boss_vire ~= nil then
+    map:close_doors("door_boss")
+    boss_vire:set_enabled(true)
+    sol.audio.play_music("boss")
+  end
+end
+
+if boss_vire ~= nil then
+ function boss_vire:on_dead()
+  map:open_doors("door_boss")
+  sol.audio.play_sound("boss_killed")
+  if boss_heart ~= nil then boss_heart:get_sprite():fade_in(30, function()
+    boss_heart:set_enabled(true)
+    chest_book:set_enabled(true)
+    sol.audio.play_sound("chest_appears")
+    game:set_dungeon_finished(4)
+    sol.audio.play_music("temple_mausoleum")
+   end)
  end
 end
 
