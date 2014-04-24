@@ -1,24 +1,47 @@
-walking enemies/dodongo.png 4 200 0
-0	0	48	48	24	29	3	3
-0	48	48	48	24	29	3	3
-0	96	48	48	24	29	3	3
-0	144	48	48	24	29	3	3
+animation{
+  name = "walking",
+  src_image = "enemies/dodongo.png",
+  frame_delay = 200,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 3 },
+    { x = 0, y = 48, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 3 },
+    { x = 0, y = 96, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 3 },
+    { x = 0, y = 144, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 3 },
+  },
+}
 
-immobilized enemies/dodongo.png 4 0 -1
-0	0	48	48	24	29	1	1
-0	48	48	48	24	29	1	1
-0	96	48	48	24	29	1	1
-0	144	48	48	24	29	1	1
+animation{
+  name = "immobilized",
+  src_image = "enemies/dodongo.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29 },
+    { x = 0, y = 48, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29 },
+    { x = 0, y = 96, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29 },
+    { x = 0, y = 144, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29 },
+  },
+}
 
-shaking enemies/dodongo.png 4 50 0
-144	0	48	48	24	29	2	2
-144	48	48	48	24	29	2	2
-144	96	48	48	24	29	2	2
-144	144	48	48	24	29	2	2
+animation{
+  name = "shaking",
+  src_image = "enemies/dodongo.png",
+  frame_delay = 50,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 2 },
+    { x = 0, y = 48, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 2 },
+    { x = 0, y = 96, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 2 },
+    { x = 0, y = 144, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 2 },
+  },
+}
 
-hurt enemies/dodongo.png 4 50 0
-240	0	48	48	24	29	1	1
-240	48	48	48	24	29	1	1
-240	96	48	48	24	29	1	1
-240	144	48	48	24	29	1	1
-
+animation{
+  name = "hurt",
+  src_image = "enemies/dodongo.png",
+  directions = {
+    { x = 240, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29 },
+    { x = 240, y = 48, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29 },
+    { x = 240, y = 96, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29 },
+    { x = 240, y = 144, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29 },
+  },
+}

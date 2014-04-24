@@ -32,7 +32,13 @@ function map:on_started(destination)
   map:set_doors_open("door_miniboss")
   map:set_doors_open("door_boss")
   chest_big_key:set_enabled(false)
+  chest_key_3:set_enabled(false)
+  chest_key_4:set_enabled(false)
   chest_book:set_enabled(false)
+  -- Dodongos appears after the boss is defeated
+  for enemy in map:get_entities("dodongo") do
+    enemy:set_enabled(false)
+  end
   -- Lantern slowly drains magic here so you're forced to find ways to refill magic
   magic_deplete = sol.timer.start(map, 5000, function()
     if game:get_magic() > 1 then game:remove_magic(1) end
@@ -96,6 +102,13 @@ if boss_vire ~= nil then
     sol.audio.play_sound("chest_appears")
     game:set_dungeon_finished(4)
     sol.audio.play_music("temple_mausoleum")
+    game:start_dialog("_mausoleum_outro", function()
+      lantern_overlay:fade_out(50)
+      lantern_overlay == nil
+      for enemy in map:get_entities("dodongo") do
+        enemy:set_enabled(true)
+      end
+    end
    end)
  end
 end
@@ -110,6 +123,19 @@ end
 function map:on_update()
   if lantern_overlay and game:get_magic() <= 0 then
     lantern_overlay = nil
+  end
+end
+
+for enemy in map:get_entities("tektite") do
+  enemy.on_dead = function()
+    if not map:has_entities("tektite_key3") and not game:get_value("b1115") then
+      chest_key_3:set_enabled(true)
+      sol.audio.play_sound("chest_appears")
+    end
+    if not map:has_entities("tektite_key4") and not game:get_value("b1116") then
+      chest_key_4:set_enabled(true)
+      sol.audio.play_sound("chest_appears")
+    end
   end
 end
 

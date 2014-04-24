@@ -29,6 +29,7 @@ end
 function enemy:close()
   self:set_attack_consequence("arrow", "protected")
   self:get_sprite():set_animation("closed")
+  self:create_enemy({ breed = "arrghus_baby", treasure_name = "arrow" })
   sol.timer.start(self, random(6)*1000, function() self:open() end)
   self:go(64)
 end

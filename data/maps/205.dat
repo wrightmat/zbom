@@ -10380,15 +10380,6 @@ tile{
 tile{
   layer = 0,
   x = 744,
-  y = 240,
-  width = 16,
-  height = 16,
-  pattern = 625,
-}
-
-tile{
-  layer = 0,
-  x = 744,
   y = 288,
   width = 16,
   height = 32,
@@ -11511,6 +11502,42 @@ tile{
   pattern = 647,
 }
 
+tile{
+  layer = 0,
+  x = 192,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = 136,
+}
+
+tile{
+  layer = 0,
+  x = 1584,
+  y = 1040,
+  width = 16,
+  height = 16,
+  pattern = 136,
+}
+
+tile{
+  layer = 0,
+  x = 1600,
+  y = 64,
+  width = 32,
+  height = 16,
+  pattern = 136,
+}
+
+tile{
+  layer = 0,
+  x = 1592,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = 136,
+}
+
 sensor{
   layer = 0,
   x = 1296,
@@ -11604,7 +11631,7 @@ enemy{
   layer = 0,
   x = 1520,
   y = 949,
-  name = "tektite_1",
+  name = "tektite_key3_3",
   direction = 3,
   breed = "tektite_red",
 }
@@ -11613,7 +11640,7 @@ enemy{
   layer = 0,
   x = 1584,
   y = 989,
-  name = "tektite_2",
+  name = "tektite_key3_2",
   direction = 3,
   breed = "tektite_red",
 }
@@ -11622,7 +11649,7 @@ enemy{
   layer = 0,
   x = 1528,
   y = 1037,
-  name = "tektite_3",
+  name = "tektite_key3_1",
   direction = 3,
   breed = "tektite_red",
 }
@@ -11719,7 +11746,7 @@ enemy{
   layer = 0,
   x = 664,
   y = 269,
-  name = "tektite_8",
+  name = "tektite_key4_1",
   direction = 3,
   breed = "tektite_red",
   treasure_name = "random_mountain",
@@ -11729,7 +11756,7 @@ enemy{
   layer = 0,
   x = 536,
   y = 285,
-  name = "tektite_9",
+  name = "tektite_key4_2",
   direction = 3,
   breed = "tektite_red",
   treasure_name = "random_mountain",
@@ -11739,7 +11766,7 @@ enemy{
   layer = 0,
   x = 416,
   y = 269,
-  name = "tektite_10",
+  name = "tektite_key4_3",
   direction = 3,
   breed = "tektite_red",
   treasure_name = "random_mountain",
@@ -11841,7 +11868,7 @@ door{
   name = "door_key1_1",
   direction = 1,
   sprite = "entities/door_small_key",
-  savegame_variable = "b1114",
+  savegame_variable = "b1113",
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_4_small_keys",
   opening_condition_consumed = true,
@@ -11855,7 +11882,7 @@ door{
   name = "door_key1_2",
   direction = 3,
   sprite = "entities/door_small_key",
-  savegame_variable = "b1114",
+  savegame_variable = "b1113",
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_4_small_keys",
   opening_condition_consumed = true,
@@ -11888,7 +11915,7 @@ door{
   name = "door_key2_1",
   direction = 1,
   sprite = "entities/door_small_key",
-  savegame_variable = "b1115",
+  savegame_variable = "b1114",
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_4_small_keys",
   opening_condition_consumed = true,
@@ -11902,7 +11929,7 @@ door{
   name = "door_key2_2",
   direction = 3,
   sprite = "entities/door_small_key",
-  savegame_variable = "b1115",
+  savegame_variable = "b1114",
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_4_small_keys",
   opening_condition_consumed = true,
@@ -12759,6 +12786,191 @@ door{
   name = "door_boss",
   direction = 2,
   sprite = "entities/door_shutter",
+}
+
+chest{
+  layer = 0,
+  x = 1592,
+  y = 1053,
+  name = "chest_key_3",
+  treasure_name = "small_key",
+  treasure_savegame_variable = "b1102",
+  sprite = "entities/chest",
+}
+
+chest{
+  layer = 0,
+  x = 200,
+  y = 285,
+  name = "chest_key_4",
+  treasure_name = "small_key",
+  treasure_savegame_variable = "b1103",
+  sprite = "entities/chest",
+}
+
+door{
+  layer = 0,
+  x = 1184,
+  y = 240,
+  name = "door_key4_1",
+  direction = 1,
+  sprite = "entities/door_small_key",
+  savegame_variable = "b1116",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_4_small_keys",
+  opening_condition_consumed = true,
+  cannot_open_dialog = "_small_key_required",
+}
+
+door{
+  layer = 0,
+  x = 848,
+  y = 880,
+  name = "door_key3_1",
+  direction = 1,
+  sprite = "entities/door_small_key",
+  savegame_variable = "b1115",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_4_small_keys",
+  opening_condition_consumed = true,
+  cannot_open_dialog = "_small_key_required",
+}
+
+door{
+  layer = 0,
+  x = 848,
+  y = 832,
+  name = "door_key3_2",
+  direction = 3,
+  sprite = "entities/door_small_key",
+  savegame_variable = "b1115",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_4_small_keys",
+  opening_condition_consumed = true,
+  cannot_open_dialog = "_small_key_required",
+}
+
+door{
+  layer = 0,
+  x = 1184,
+  y = 192,
+  name = "door_key4_2",
+  direction = 3,
+  sprite = "entities/door_small_key",
+  savegame_variable = "b1116",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_4_small_keys",
+  opening_condition_consumed = true,
+  cannot_open_dialog = "_small_key_required",
+}
+
+enemy{
+  layer = 0,
+  x = 1008,
+  y = 120,
+  name = "keese_13",
+  direction = 3,
+  breed = "keese_fire",
+}
+
+enemy{
+  layer = 0,
+  x = 272,
+  y = 709,
+  name = "dodongo_1",
+  direction = 3,
+  breed = "dodongo",
+  treasure_name = "amber",
+}
+
+enemy{
+  layer = 0,
+  x = 464,
+  y = 709,
+  name = "dodongo_2",
+  direction = 3,
+  breed = "dodongo",
+  treasure_name = "amber",
+}
+
+enemy{
+  layer = 0,
+  x = 1464,
+  y = 525,
+  name = "dodongo_3",
+  direction = 3,
+  breed = "dodongo",
+  treasure_name = "amber",
+}
+
+enemy{
+  layer = 0,
+  x = 624,
+  y = 493,
+  name = "dodongo_4",
+  direction = 3,
+  breed = "dodongo",
+  treasure_name = "amber",
+}
+
+enemy{
+  layer = 0,
+  x = 880,
+  y = 957,
+  name = "dodongo_5",
+  direction = 3,
+  breed = "dodongo",
+  treasure_name = "amber",
+}
+
+enemy{
+  layer = 0,
+  x = 880,
+  y = 1061,
+  name = "dodongo_6",
+  direction = 3,
+  breed = "dodongo",
+  treasure_name = "amber",
+}
+
+enemy{
+  layer = 0,
+  x = 344,
+  y = 1349,
+  name = "dodongo_7",
+  direction = 3,
+  breed = "dodongo",
+  treasure_name = "amber",
+}
+
+enemy{
+  layer = 0,
+  x = 336,
+  y = 1589,
+  name = "dodongo_8",
+  direction = 3,
+  breed = "dodongo",
+  treasure_name = "amber",
+}
+
+enemy{
+  layer = 0,
+  x = 120,
+  y = 1589,
+  name = "dodongo_9",
+  direction = 3,
+  breed = "dodongo",
+  treasure_name = "amber",
+}
+
+enemy{
+  layer = 0,
+  x = 944,
+  y = 317,
+  name = "dodongo_11",
+  direction = 3,
+  breed = "dodongo",
+  treasure_name = "amber",
 }
 
 npc{

@@ -100,7 +100,7 @@ function enemy:wake_up()
 end
 
 function enemy:go_random()
-  local m = sol.movement.create("random")
+  local m = sol.movement.create("straight")
   m:set_speed(32)
   m:start(self)
   d = m:get_direction4()
