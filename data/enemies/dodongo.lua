@@ -3,7 +3,7 @@ local enemy = ...
 -- Dodongo
 
 function enemy:on_created()
-  self:set_life(3)
+  self:set_life(2)
   self:set_damage(2)
   self:create_sprite("enemies/dodongo")
   self:set_size(48, 48)

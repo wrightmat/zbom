@@ -1233,6 +1233,16 @@ teletransporter{
 }
 
 npc{
+  layer = 0,
+  x = 480,
+  y = 437,
+  name = "npc_dampeh",
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/goron_dampeh",
+}
+
+npc{
   layer = 1,
   x = 384,
   y = 1101,

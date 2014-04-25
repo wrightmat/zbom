@@ -11,13 +11,14 @@ if game:get_value("i1029") == nil then game:set_value("i1029", 0) end --quest va
 
 function map:on_started(destination)
   --npc_galen_2:get_sprite():set_direction(2)--up
-  if game:get_value("i1029") < 2 or game:get_value("i1029") > 3 then
+  if game:get_value("i1029") < 2 then
     npc_galen_2:remove()
   elseif game:get_value("i1029") == 2 then
     npc_galen:remove()
   elseif game:get_value("i1029") >= 3 then
-    if game:get_value("i1029") == 3 then npc_galen:remove() end
     npc_osgor:remove()
+    npc_galen_2:remove()
+    if game:get_value("i1029") == 3 then npc_galen:remove() end
   end
 
   if game:get_value("i1029") == 2 and destination == from_outside_house_sick then

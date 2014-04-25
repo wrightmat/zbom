@@ -20,15 +20,6 @@ tile{
 tile{
   layer = 0,
   x = 464,
-  y = 400,
-  width = 96,
-  height = 16,
-  pattern = 757,
-}
-
-tile{
-  layer = 0,
-  x = 464,
   y = 392,
   width = 96,
   height = 16,
@@ -2432,19 +2423,10 @@ tile{
 tile{
   layer = 0,
   x = 448,
-  y = 416,
+  y = 408,
   width = 16,
   height = 16,
   pattern = 754,
-}
-
-tile{
-  layer = 0,
-  x = 448,
-  y = 400,
-  width = 16,
-  height = 16,
-  pattern = 759,
 }
 
 tile{
@@ -2468,7 +2450,7 @@ tile{
 tile{
   layer = 0,
   x = 464,
-  y = 416,
+  y = 408,
   width = 96,
   height = 16,
   pattern = 758,
@@ -2477,7 +2459,7 @@ tile{
 tile{
   layer = 0,
   x = 560,
-  y = 416,
+  y = 408,
   width = 16,
   height = 16,
   pattern = 756,
@@ -2490,6 +2472,15 @@ tile{
   width = 16,
   height = 16,
   pattern = 760,
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = 759,
 }
 
 npc{
@@ -2688,7 +2679,7 @@ npc{
 shop_treasure{
   layer = 0,
   x = 456,
-  y = 384,
+  y = 392,
   name = "shop_amber",
   treasure_name = "amber",
   price = 200,
@@ -2698,7 +2689,7 @@ shop_treasure{
 shop_treasure{
   layer = 0,
   x = 496,
-  y = 384,
+  y = 392,
   name = "shop_bomb_bag",
   treasure_name = "bomb_bag",
   treasure_variant = 2,
@@ -2710,10 +2701,10 @@ shop_treasure{
 shop_treasure{
   layer = 0,
   x = 536,
-  y = 384,
+  y = 392,
   name = "shop_tunic",
   treasure_name = "tunic",
-  treasure_variant = 3,
+  treasure_variant = 2,
   treasure_savegame_variable = "i1822",
   price = 999,
   dialog = "shop.tunic_3",

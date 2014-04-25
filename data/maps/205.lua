@@ -15,6 +15,9 @@ else
   lantern_overlay:set_opacity(0.96 * 255)
   lantern_overlay:fill_color{0, 0, 0}
 end
+if game:get_value("b1117") and lantern_overlay then
+  lantern_overlay:clear()
+end
 
 function map:on_started(destination)
   if game:get_value("i1029") > 5 then
@@ -26,9 +29,10 @@ function map:on_started(destination)
     local m = sol.movement.create("target")
     m:set_speed(24)
     m:start(npc_goron_ghost)
+  elseif game:get_value("i1029") >= 6 then
+    dampeh_1:remove()
+    dampeh_2:remove()
   end
-  miniboss_arrghus:set_enabled(false)
-  boss_vire:set_enabled(false)
   map:set_doors_open("door_miniboss")
   map:set_doors_open("door_boss")
   if not game:get_value("b1108") then chest_big_key:set_enabled(false) end
@@ -39,15 +43,26 @@ function map:on_started(destination)
   if not game:get_value("b1117") then chest_book:set_enabled(false) end
   if not game:get_value("b1105") then chest_compass:set_enabled(false) end
   if not game:get_value("b1106") then chest_map:set_enabled(false) end
-  -- Dodongos appears after the boss is defeated
-  for enemy in map:get_entities("dodongo") do
-    enemy:set_enabled(false)
+  if not game:get_value("b1107") then miniboss_arrghus:set_enabled(false) end
+  -- Dodongos appear after the boss is defeated
+  if not game:get_value("b1110") then
+    boss_vire:set_enabled(false)
+    for enemy in map:get_entities("dodongo") do
+      enemy:set_enabled(false)
+    end
+  else
+    if npc_dampeh ~= nil then npc_dampeh:remove() end
   end
   -- Lantern slowly drains magic here so you're forced to find ways to refill magic
   magic_deplete = sol.timer.start(map, 5000, function()
     if game:get_magic() > 1 then game:remove_magic(1) end
     return true
   end)
+  -- complete dungeon (if not done already)
+  if game:get_value("b1110") and game:get_value("b1117") and game:get_value("b1118") then
+    game:set_dungeon_finished(3)
+    game:set_value("i1029", 6)
+  end
 end
 
 function npc_dampeh:on_interaction()
@@ -59,6 +74,8 @@ function npc_dampeh:on_interaction()
       m:set_speed(16)
       m:start(npc_dampeh, function()
 	npc_dampeh:remove()
+	dampeh_1:remove()
+	dampeh_2:remove()
         game:set_value("i1029", 6)
         game:start_dialog("osgor.2.mausoleum")
       end)

@@ -12786,6 +12786,7 @@ enemy{
   name = "vire_1",
   direction = 3,
   breed = "vire",
+  treasure_name = "amber",
 }
 
 pickable{
@@ -13031,6 +13032,28 @@ chest{
   treasure_name = "compass",
   treasure_savegame_variable = "b1105",
   sprite = "entities/chest",
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 256,
+  y = 1456,
+  width = 32,
+  height = 32,
+  name = "dampeh_1",
+  pattern = 646,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 384,
+  y = 1552,
+  width = 32,
+  height = 32,
+  name = "dampeh_2",
+  pattern = 646,
+  enabled_at_start = true,
 }
 
 npc{
@@ -14328,29 +14351,5 @@ tile{
   width = 24,
   height = 32,
   pattern = 593,
-}
-
-separator{
-  layer = 2,
-  x = 848,
-  y = 1208,
-  width = 16,
-  height = 528,
-}
-
-separator{
-  layer = 2,
-  x = 1248,
-  y = 0,
-  width = 16,
-  height = 320,
-}
-
-separator{
-  layer = 2,
-  x = 1248,
-  y = 320,
-  width = 448,
-  height = 16,
 }
 

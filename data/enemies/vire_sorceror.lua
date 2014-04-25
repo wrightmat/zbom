@@ -46,19 +46,7 @@ end
 function enemy:hide()
   vulnerable = false
   self:set_position(-100, -100)
-  -- Add an extra Vire (no more than 2) when he disappears
-  if map:get_entities_count("vire") <= 1 then
-    self:create_enemy({ breed = "vire", treasure_name = "amber" })
-  end
   timers[#timers + 1] = sol.timer.start(self, 500, function() self:unhide() end)
-end
-
-function enemy:create_keese()
-  self:create_enemy({ breed = "keese_fire" })
-  -- Always keep at lease one Vire alive
-  if not map:get_entities_count("vire") then
-    self:create_enemy({ breed = "vire", treasure_name = "amber" })
-  end
 end
 
 function enemy:unhide()
@@ -67,5 +55,12 @@ function enemy:unhide()
   local sprite = self:get_sprite()
   sprite:set_direction(position.direction4)
   sprite:fade_in()
-  timers[#timers + 1] = sol.timer.start(self, 1000, function() self:create_keese() end)
+  timers[#timers + 1] = sol.timer.start(self, 1000, function()
+    self:create_enemy({
+	x = position.x + 20,
+	y = position.y + 20,
+	breed = "vire",
+	treasure_name = "amber"
+    })
+  end)
 end

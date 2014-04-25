@@ -56,7 +56,7 @@ game.dungeons = {
   },
   [5] = {
     floor_width = 2032,
-    floor_height = 1760,
+    floor_height = 1600,
     lowest_floor = -1,
     highest_floor = 0,
     maps = { "206", "207" },
