@@ -7,6 +7,7 @@ local game = map:get_game()
 
 local odd_potion_counter = 0
 if game:get_value("i1027")==nil then game:set_value("i1027", 0) end
+if game:get_value("i1032")==nil then game:set_value("i1032", 0) end
 if game:get_value("i2021")==nil then game:set_value("i2021", 0) end
 
 function map:on_started(destination)

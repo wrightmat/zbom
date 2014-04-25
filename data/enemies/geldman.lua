@@ -20,20 +20,6 @@ function enemy:go_hero()
   going_hero = true
 end
 
-function enemy:go_emerge()
-  enemy:get_sprite():set_animation("emerging")
-  enemy:set_enabled(true)
-  sol.timer.start(self, 1000, function() self:check_hero() end)
-end
-
-function enemy:go_sink()
-  enemy:get_sprite():set_animation("sinking")
-  sol.timer.start(self, 1000, function() enemy:set_enabled(false) end)
-  sol.timer.start(self:get_map(), math.random(6)*2000, function()
-    self:go_emerge()
-  end)
-end
-
 function enemy:check_hero()
   enemy:get_sprite():set_animation("walking")
   local hero = self:get_map():get_entity("hero")
@@ -46,8 +32,6 @@ function enemy:check_hero()
     self:go_hero()
   elseif not near_hero and going_hero then
     self:go_random()
-  elseif not near_hero and not going_hero then
-    self:go_sink()
   end
   timer = sol.timer.start(self, 2000, function() self:check_hero() end)
 end
@@ -61,7 +45,7 @@ function enemy:on_created()
 end
 
 function enemy:on_obstacle_reached(movement)
-  self:go_sink()
+  self:check_hero()
 end
 
 function enemy:on_restarted()

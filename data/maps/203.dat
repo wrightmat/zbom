@@ -11263,8 +11263,8 @@ dynamic_tile{
 
 enemy{
   layer = 0,
-  x = 920,
-  y = 440,
+  x = 936,
+  y = 344,
   name = "room14_moth_1",
   direction = 3,
   breed = "moth",
@@ -11273,8 +11273,8 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 968,
-  y = 392,
+  x = 952,
+  y = 344,
   name = "room14_moth_2",
   direction = 3,
   breed = "moth",
@@ -11283,8 +11283,8 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 1120,
-  y = 464,
+  x = 1080,
+  y = 544,
   name = "room14_moth_3",
   direction = 3,
   breed = "moth",
@@ -11293,8 +11293,8 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 952,
-  y = 504,
+  x = 936,
+  y = 544,
   name = "room14_moth_4",
   direction = 3,
   breed = "moth",
@@ -11303,8 +11303,8 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 1016,
-  y = 456,
+  x = 952,
+  y = 544,
   name = "room14_moth_5",
   direction = 3,
   breed = "moth",
@@ -11313,8 +11313,8 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 1080,
-  y = 512,
+  x = 1096,
+  y = 544,
   name = "room14_moth_6",
   direction = 3,
   breed = "moth",
@@ -11323,8 +11323,8 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 1088,
-  y = 400,
+  x = 1080,
+  y = 344,
   name = "room14_moth_7",
   direction = 3,
   breed = "moth",
@@ -11333,9 +11333,9 @@ enemy{
 
 wall{
   layer = 0,
-  x = 856,
-  y = 544,
-  width = 320,
+  x = 832,
+  y = 568,
+  width = 368,
   height = 8,
   stops_enemies = true,
   stops_npcs = true,
@@ -11344,10 +11344,10 @@ wall{
 
 wall{
   layer = 0,
-  x = 856,
-  y = 352,
+  x = 832,
+  y = 328,
   width = 8,
-  height = 192,
+  height = 240,
   stops_enemies = true,
   stops_npcs = true,
   stops_blocks = true,
@@ -12743,10 +12743,10 @@ wall{
 
 wall{
   layer = 0,
-  x = 1168,
-  y = 352,
+  x = 1192,
+  y = 328,
   width = 8,
-  height = 192,
+  height = 240,
   stops_enemies = true,
   stops_npcs = true,
   stops_blocks = true,
@@ -12754,9 +12754,9 @@ wall{
 
 wall{
   layer = 0,
-  x = 856,
-  y = 344,
-  width = 320,
+  x = 832,
+  y = 320,
+  width = 368,
   height = 8,
   stops_enemies = true,
   stops_npcs = true,
@@ -13058,28 +13058,6 @@ enemy{
 
 wall{
   layer = 0,
-  x = 1256,
-  y = 1296,
-  width = 8,
-  height = 32,
-  stops_enemies = true,
-  stops_npcs = true,
-  stops_blocks = true,
-}
-
-wall{
-  layer = 0,
-  x = 1568,
-  y = 1296,
-  width = 8,
-  height = 32,
-  stops_enemies = true,
-  stops_npcs = true,
-  stops_blocks = true,
-}
-
-wall{
-  layer = 0,
   x = 1656,
   y = 1296,
   width = 8,
@@ -13361,8 +13339,8 @@ destructible{
 
 enemy{
   layer = 0,
-  x = 1432,
-  y = 1304,
+  x = 1488,
+  y = 1408,
   name = "room9_moth",
   direction = 3,
   breed = "moth",
@@ -13371,9 +13349,63 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 1400,
-  y = 1304,
+  x = 1344,
+  y = 1216,
   name = "room9_moth_2",
+  direction = 3,
+  breed = "moth",
+  treasure_name = "random_woods",
+}
+
+wall{
+  layer = 0,
+  x = 1232,
+  y = 1184,
+  width = 368,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1232,
+  y = 1192,
+  width = 8,
+  height = 240,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1592,
+  y = 1192,
+  width = 8,
+  height = 240,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1232,
+  y = 1432,
+  width = 368,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+enemy{
+  layer = 0,
+  x = 1096,
+  y = 344,
+  name = "room14_moth_8",
   direction = 3,
   breed = "moth",
   treasure_name = "random_woods",

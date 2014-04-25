@@ -41,28 +41,6 @@ animation{
   frame_delay = 50,
   frame_to_loop_on = 0,
   directions = {
-    { x = 0, y = 32, frame_width = 40, frame_height = 16, origin_x = 20, origin_y = 13, num_frames = 2 },
-    { x = 0, y = 32, frame_width = 40, frame_height = 16, origin_x = 20, origin_y = 13, num_frames = 2 },
-    { x = 0, y = 32, frame_width = 40, frame_height = 16, origin_x = 20, origin_y = 13, num_frames = 2 },
-    { x = 0, y = 32, frame_width = 40, frame_height = 16, origin_x = 20, origin_y = 13, num_frames = 2 },
-  },
-}
-
-animation{
-  name = "sinking",
-  src_image = "enemies/geldman.png",
-  directions = {
-    { x = 80, y = 0, frame_width = 40, frame_height = 16, origin_x = 20, origin_y = 13 },
-    { x = 80, y = 0, frame_width = 40, frame_height = 16, origin_x = 20, origin_y = 13 },
-    { x = 80, y = 0, frame_width = 40, frame_height = 16, origin_x = 20, origin_y = 13 },
-    { x = 80, y = 0, frame_width = 40, frame_height = 16, origin_x = 20, origin_y = 13 },
-  },
-}
-
-animation{
-  name = "emerging",
-  src_image = "enemies/geldman.png",
-  directions = {
     { x = 80, y = 0, frame_width = 40, frame_height = 16, origin_x = 20, origin_y = 13 },
     { x = 80, y = 0, frame_width = 40, frame_height = 16, origin_x = 20, origin_y = 13 },
     { x = 80, y = 0, frame_width = 40, frame_height = 16, origin_x = 20, origin_y = 13 },
