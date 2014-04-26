@@ -5972,6 +5972,16 @@ npc{
   sprite = "npc/hylian_deacon",
 }
 
+npc{
+  layer = 0,
+  x = 16,
+  y = 781,
+  name = "npc_gaira",
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/hylian_gaira",
+}
+
 tile{
   layer = 1,
   x = 72,

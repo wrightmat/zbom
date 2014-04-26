@@ -7675,6 +7675,16 @@ npc{
   behavior = "dialog#sign.E13_directions",
 }
 
+npc{
+  layer = 0,
+  x = 152,
+  y = 645,
+  name = "npc_gaira",
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/hylian_gaira",
+}
+
 tile{
   layer = 2,
   x = 552,

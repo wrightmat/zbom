@@ -6,6 +6,7 @@ local game = map:get_game()
 ---------------------------------------------------------------------------
 
 if game:get_value("i1906")==nil then game:set_value("i1906", 0) end --Tern
+if game:get_value("i1911")==nil then game:set_value("i1911", 0) end --Gaira
 
 local function random_walk(npc)
   local m = sol.movement.create("random_path")
@@ -59,6 +60,7 @@ function map:on_started(destination)
     banner_4:set_enabled(true)
     banner_5:set_enabled(true)
     booth_1:set_enabled(true)
+    npc_gaira:remove()
   else
     random_walk(npc_tern)
     torch_2:remove()
@@ -206,6 +208,22 @@ function npc_tristan:on_interaction()
     else
       game:start_dialog("tristan.0.festival_won", game:get_player_name())
     end
+  end
+end
+
+function npc_gaira:on_interaction()
+  if game:get_value("i1911") == 1 then
+    game:start_dialog("gaira.1.ordon", function()
+      game:set_value("i1911", game:get_value("i1911")+1)
+    end)
+  elseif game:get_value("i1911") == 2 then
+    game:start_dialog("gaira.2.ordon", function()
+      game:set_value("i1602", 1)
+    end)
+  else
+    game:start_dialog("gaira.0.ordon", function()
+      game:set_value("i1911", game:get_value("i1911")+1)
+    end)
   end
 end
 

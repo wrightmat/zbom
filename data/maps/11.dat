@@ -10961,6 +10961,16 @@ destination{
   direction = 3,
 }
 
+npc{
+  layer = 0,
+  x = 528,
+  y = 421,
+  name = "npc_gaira",
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/hylian_gaira",
+}
+
 tile{
   layer = 1,
   x = 208,

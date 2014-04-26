@@ -53,6 +53,11 @@ function map:on_started(destination)
   else
     npc_ulo:remove()
   end
+  if game:get_value("i1602") < 3 then
+    npc_deacon:remove()
+  elseif game:get_value("i1602") < 6 then
+    npc_gaira:remove()
+  end
 end
 
 function shop_potion_red:on_buying()
@@ -82,11 +87,19 @@ function npc_bilo:on_interaction()
 end
 
 function npc_ulo:on_interaction()
-  game:start_dialog("ulo.3.ordon")
+  if game:get_value("i1029") >= 6 then
+    game:start_dialog("ulo.4.ordon")
+  else
+    game:start_dialog("ulo.3.ordon")
+  end
 end
 
 function npc_julita:on_interaction()
-  game:start_dialog("julita.3")
+  if game:get_value("i1029") >= 6 then
+    game:start_dialog("julita.4.house")
+  else
+    game:start_dialog("julita.3.house")
+  end
 end
 
 function npc_crista:on_interaction()
@@ -114,6 +127,12 @@ function npc_crista:on_interaction()
     else
       game:start_dialog("crista.0.shop")
     end
+  end
+end
+
+function npc_deacon:on_interaction()
+  if game:get_value("i1602") == 3 then
+    game:start_dialog("deacon.3.house")
   end
 end
 

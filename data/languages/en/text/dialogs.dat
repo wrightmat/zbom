@@ -2848,6 +2848,24 @@ to be back home!
   ]]
 }
 
+dialog{
+  id = "ulo.4.ordon",
+  skip = "current",
+  text = [[
+Don't know where to
+go next? You should
+chat with Deacon,
+the lumberjack who
+lives just north of
+town. He know these
+parts like the back
+of his hand, and if
+anything's amiss,
+he'd know!
+  ]]
+}
+
+
 -- Rudy (Ordon Village blacksmith)
 -----------------------
 dialog{
@@ -3372,12 +3390,28 @@ my beloved Crista!
 }
 
 dialog{
-  id = "julita.3",
+  id = "julita.3.house",
   skip = "current",
   text = [[
 Hey! Crista's at the
 shop if you'd like to
 say hello!
+  ]]
+}
+
+dialog{
+  id = "julita.4.house",
+  skip = "current",
+  text = [[
+Ever chatted with that
+lumberjack fellow who
+lives just north of here?
+I swear he knows everything
+about those woods and
+probably other places
+too! If you don't know
+where to go next, I bet
+he'd have some ideas.
   ]]
 }
 
@@ -3638,7 +3672,7 @@ dialog{
 Poisoned trees you say?
 Well, I can't allow
 that to happen so near
-to me and now take a
+to me and not take a
 look, now can I? Show
 me where they are, and
 I'll fix them right
@@ -3735,7 +3769,7 @@ heart so...
 }
 
 dialog{
-  id = "deacon.3.faron",
+  id = "deacon.3.house",
   skip = "current",
   text = [[
 What? Some woman is
@@ -3815,8 +3849,8 @@ dialog{
   skip = "current",
   text = [[
 This is my cabin right here.
-Would you care to come in and
-share stories?
+Would you care to come in
+and share stories?
   ]]
 }
 
@@ -3849,6 +3883,48 @@ Yes, Deacon and I have
 already decided to take
 it on as our first joint
 project!
+  ]]
+}
+
+dialog{
+  id = "deacon.6.house",
+  skip = "current",
+  text = [[
+You're a little stumped,
+huh? Don't know where
+to go next? Well I'll
+tell you an interesting
+story - I once heard
+that there was treasure
+BENEATH Lake Hylia!$0
+Can you imagine that?
+Treasure under a lake?
+Sounds like something
+someone like you would
+love to check out, right?
+I have no idea how you'd
+go about draining a
+whole lake to get to
+treasure though. That
+I'll leave up to you,
+Mr. Hero!
+  ]]
+}
+
+dialog{
+  id = "gaira.5.house",
+  skip = "current",
+  text = [[
+You know, I have seen a
+lot of those metal grates
+around here, and I had
+heard once that they're
+connected to a great
+underground network of
+sewers! I wonder if
+those sewers would be
+any help in draining
+the lake?
   ]]
 }
 
