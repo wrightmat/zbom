@@ -8,10 +8,9 @@ i1026:
 i1027: Ordon Festival progress (1=initial dialog done, 2=first area complete, 3=race won, 4=Ordona heard, 5=Crista saved-festival over, 6=Ordona directed Link to Sacred Grove)
 i1028: Festival maze race progress (1= initial dialog done, 2=race begun, 3=torches in first screen lit, 4=lost, 5=won)
 i1029: Goron sick child quest (1= talked to Dargor, 2= talked to Galen, 3= sick child (Osgor) inspected, 4= Osgor dead, 5= Osgor ghost found, 6= Dampeh leaves Mausoleum)
-
-i1030: 
+i1030: Drain Lake Hylia quest (1= talked to Lumberjack, 2= sewer switch flipped (lake drained)
 i1031: 
-i1032: Ancient Library/Hyrule Castle (1= Isan's dialog heard, 2= Ordona heard, 3= Zirna cutscene complete, 4= Ordona heard)
+i1032: Ancient Library/Hyrule Castle (1= Isan's dialog heard, 2= Ordona heard at library, 3= Zirna cutscene complete, 4= Ordona heard at Castle)
 i1033: 
 i1034: 
 i1035: Sewers heart container (after Carock)
@@ -93,8 +92,9 @@ b1116: Mausoleum key door 4
 b1117: Book of Mudora Piece 3
 b1118: Mausoleum Heart container
 b1119: Mausoleum rupee chest
+b1120: Mausoleum boss door
 
-b1120: Lakebed Lair
+b1121: Lakebed Lair
 
 b1140: Snowpeak
 
@@ -231,6 +231,10 @@ i1913: Deacon (Lumberjack)
 i1914: Dargor (Goron father)
 i1915: Osgar (Goron sick child)
 i1916: Galen (Goron doctor)
+i1917: Hesla (Gerudo leader)
+i1918: Garroth (Kakariko tavern)
+i1919: Moriss (Kakariko tavern/ampitheater)
+i1920: Rowin (Kakariko)
 
 # Item flags range from 2000 to 2047
 b2000: Has Sword

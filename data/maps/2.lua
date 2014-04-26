@@ -47,6 +47,10 @@ function map:on_started(destination)
     elder_gonpho:remove()
     elder_koshi:remove()
     elder_zelda:remove()
+  else
+    elder_juba_office:remove()
+    elder_gonpho_office:remove()
+    elder_koshi_office:remove()
   end
 end
 
@@ -64,6 +68,9 @@ function elder_juba:on_interaction()
   else
     game:start_dialog("juba.0.council")
   end
+end
+function elder_juba_office:on_interaction()
+  game:start_dialog("juba.1.office")
 end
 
 function elder_gin:on_interaction()

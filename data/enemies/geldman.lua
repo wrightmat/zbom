@@ -5,7 +5,7 @@ local enemy = ...
 function enemy:go_random()
   enemy:get_sprite():set_animation("walking")
   local m = sol.movement.create("random")
-  m:set_speed(32)
+  m:set_speed(40)
   m:start(self)
   going_hero = false
 end
@@ -15,7 +15,7 @@ function enemy:go_hero()
   local hero = self:get_map():get_entity("hero")
   local m = sol.movement.create("target")
   m:set_target(hero)
-  m:set_speed(32)
+  m:set_speed(48)
   m:start(self)
   going_hero = true
 end
@@ -26,7 +26,7 @@ function enemy:check_hero()
   local _, _, layer = self:get_position()
   local _, _, hero_layer = hero:get_position()
   local near_hero = layer == hero_layer
-    and self:get_distance(hero) < 100
+    and self:get_distance(hero) < 200
 
   if near_hero and not going_hero then
     self:go_hero()

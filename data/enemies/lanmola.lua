@@ -7,7 +7,7 @@ local head_present = false
 local body_segment = 0
 
 function enemy:on_created()
-  self:set_life(8)
+  self:set_life(1)
   self:set_damage(2)
   self:create_sprite("enemies/lanmola")
   self:set_hurt_style("boss")
@@ -16,14 +16,22 @@ function enemy:on_created()
   self:set_invincible(true)
 end
 
-function enemy:go(speed)
+function enemy:go_hero(speed)
   local hero = self:get_map():get_entity("hero")
   local m = sol.movement.create("target")
-  m:set_speed(32)
+  m:set_speed(speed)
   m:set_target(hero)
   m:set_ignore_obstacles(true)
   m:start(self)
   going_hero = true
+end
+
+function enemy:go_random(speed)
+  local m = sol.movement.create("random")
+  m:set_speed(speed)
+  m:set_ignore_obstacles(true)
+  m:start(self)
+  going_hero = false
 end
 
 function enemy:create_tail()
@@ -34,7 +42,7 @@ function enemy:create_tail()
     breed = "lanmola_tail"
   }
   tail.head = self
-  self:go(40)
+  self:go_hero(48)
 end
 
 function enemy:create_body()
@@ -76,11 +84,11 @@ function enemy:on_restarted()
     elseif body_segment > 6 and enemy:get_map():get_entity("lanmola_tail") == nil then
       self:create_tail()
     else
-      self:go(40)
+      self:go_hero(40)
     end
   end
 end
 
 function enemy:on_obstacle_reached()
-  self:go(40)
+  self:go_random(48)
 end

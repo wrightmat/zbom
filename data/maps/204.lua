@@ -39,8 +39,19 @@ end
 function sensor_save_ground:on_activated()
   hero:save_solid_ground()
 end
-
 function sensor_reset_ground:on_activated()
+  hero:reset_solid_ground()
+end
+function sensor_save_ground_2:on_activated()
+  hero:save_solid_ground()
+end
+function sensor_reset_ground_2:on_activated()
+  hero:reset_solid_ground()
+end
+function sensor_save_ground_3:on_activated()
+  hero:save_solid_ground()
+end
+function sensor_reset_ground_3:on_activated()
   hero:reset_solid_ground()
 end
 

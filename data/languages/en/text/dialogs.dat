@@ -1072,9 +1072,10 @@ dialog{
   skip = "current",
   icon = 25,
   text = [[
-You got an alchemy stone!
-This artifact is said to
-bring riches to its owner.
+You got an alchemy
+stone! This artifact
+is said to bring
+riches to its owner.
   ]]
 }
 
@@ -1677,14 +1678,14 @@ up!
 dialog{
   id = "_treasure.trading.4",
   skip = "current",
-  icon = 42,
+  icon = 43,
   text = [[
 You traded the Deku
 Mask for a Moon Tear!
 It's weird that the
 guy wanted the mask
 so bad, but who cares
-since this is so shiny!
+since this is shiny!
   ]]
 }
 
@@ -1876,9 +1877,8 @@ dialog{
   id = "found_piece_of_heart.first",
   skip = "current",
   text = [[
-Find three more to
-make a new Heart
-Container.
+Find three more to make
+a new Heart Container.
   ]]
 }
 
@@ -1886,9 +1886,8 @@ dialog{
   id = "found_piece_of_heart.second",
   skip = "current",
   text = [[
-Just two more to
-make a new Heart
-Container!
+Just two more to make
+a new Heart Container!
   ]]
 }
 
@@ -1896,9 +1895,18 @@ dialog{
   id = "found_piece_of_heart.third",
   skip = "current",
   text = [[
-Only one more to
-make a new Heart
-Container!
+Only one more to make
+a new Heart Container!
+  ]]
+}
+
+dialog{
+  id = "found_piece_of_heart.fourth",
+  skip = "current",
+  text = [[
+You found four Pieces
+of Heart to make a
+new Heart Container!
   ]]
 }
 
@@ -2019,10 +2027,9 @@ dialog{
   id = "found_water.no_bottle",
   skip = "current",
   text = [[
-There's water here,
-but you don't have
-anything to keep
-it in...
+There's water here, but
+you don't have anything
+to keep it in...
   ]]
 }
 
@@ -3035,6 +3042,20 @@ Hylian?$0 Whatever...
   ]]
 }
 
+dialog{
+  id = "juba.1.office",
+  skip = "current",
+  text = [[
+With the disappearance
+of Zelda, the council
+has disbanded. But some
+of us actually care
+about our work, so
+we've set up here in
+the Council office.
+  ]]
+}
+
 -- Tokage Gin (Tokay Elder and tribe leader)
 -----------------------
 dialog{
@@ -3541,10 +3562,10 @@ dialog{
   id = "bilo.2",
   skip = "current",
   text = [[
-Hmm... guess I have
-a roommate now. Or
-wait, I'm the room-
-mate? I'm confused.
+Hmm... guess I have a
+roommate now. Or wait,
+I'm the roommate?
+I'm confused.$0
 Either way, I don't
 live well with others!
   ]]
@@ -3832,7 +3853,7 @@ project!
 }
 
 dialog{
-  id = "impa.0",
+  id = "impa.0.house",
   skip = "current",
   text = [[
 Greetings, young hero.
@@ -3843,10 +3864,17 @@ of my kind. I know much
 about this land.$0
 What's that? You're
 unsure of where to
-journey? I know liitle
+journey? I know little
 of that, but there is
 one place with more
 information than me.
+  ]]
+}
+
+dialog{
+  id = "impa.0.house_2",
+  skip = "current",
+  text = [[
 Far from here is an
 ancient library. You
 will be unable to get
@@ -3859,6 +3887,59 @@ Sewers.
 Find the Relic Collector
 near Hyrule Castle, he
 knows of these things.
+  ]]
+}
+
+dialog{
+  id = "impa.1.house_2",
+  skip = "current",
+  text = [[
+Far from here is an
+ancient library. I
+see you already have
+the magical Ocarina
+which will help you
+get there and back.
+Outside of my house is
+a patch of dirt shaped
+like that instrument.
+Inspect it before you
+leave and you'll be
+permitted to return
+later. Head south-east
+of here to the Ruins
+and lift the small rock
+in front of the small
+entrance. When you've
+reached the end of the
+sewers, you'll be in the
+northern region
+of Hyrule.
+  ]]
+}
+
+dialog{
+  id = "impa.2.house",
+  skip = "current",
+  text = [[
+Good work finding the
+library - I'm sure you
+have learned much!
+As Ordona suggested,
+you should go visit
+the Council at Castle
+Town just West of here.
+They may have advice
+for you on your
+journey. Also, if you
+cross the bridge just
+outside of my house,
+the friendly Goron
+people aren't far from
+here. I'm sure they
+would be happy to
+help in any way they
+can!
   ]]
 }
 
@@ -3902,7 +3983,8 @@ tribe is secretly seeking
 out those pieces of the
 book, so that they can
 complete whatever dark
-task that was interrupted.
+task that was
+interrupted.
   ]]
 }
 
@@ -4470,15 +4552,15 @@ dialog{
   question = true,
   text = [[
 Most everyone knows
-I'm an astronomer,
-but most don't know
-that I'm also a Deku
+I'm an astronomer, but
+most don't know that
+I'm also a Deku
 enthusiast! Being in
 the desert can feel
-lifeless at times,
-and the woodsiness
-of the Deku make me
-feel more alive!
+lifeless at times, and
+the woodsiness of the
+Deku make me feel
+more alive!
 
 Wait- is that a mask
 of a Deku you have?
@@ -4524,11 +4606,10 @@ dialog{
   id = "rowin.0.pub",
   skip = "current",
   text = [[
-Oh great, another
-person to take up
-space at my favorite
-watering hole. I
-don't care who you
+Oh great, another person
+to take up space at my
+favorite watering hole.
+I don't care who you
 are, just go away.
   ]]
 }
@@ -4543,9 +4624,9 @@ actor with the local
 troupe. I normally
 spend time over at
 the ampitheater, but
-I like to slip in
-here sometimes and
-have a drink!
+I like to slip in here
+sometimes and have
+a drink!
   ]]
 }
 
@@ -4553,8 +4634,8 @@ dialog{
   id = "moriss.1.pub",
   skip = "current",
   text = [[
-Oh, so you've met
-my friend Gartan over
+Oh, so you've met my
+friend Rowin over
 there, have you?
 He's not really so
 bad once you get to
@@ -4586,8 +4667,8 @@ Alehouse.$0
 Why did I name it that,
 you ask? Well...$0
 I'd rather not discuss
-that with someone
-I just met.
+that with someone I
+just met.
 Either way, enjoy
 yourself!
   ]]
@@ -4614,18 +4695,16 @@ Still pondering the
 name of my little pub?
 Persistant little guy,
 huh?$0
-Fine...$0 Truth is
-that I heard about
-these gems called
-'Alchemy Stones' which
-are supposed to be
-hidden all over this
-area. I set up shop
-so I could hunt for
-them and rake in the
-dough! Now I've got
-this place and no
-stones to my name.
+Fine...$0 Truth is that
+I heard about these gems
+called 'Alchemy Stones'
+which are supposed to
+be hidden all over this
+area. I set up shop so
+I could hunt for them
+and rake in the dough!
+Now I've got this place
+and no stones to my name.
 A shame, but life
 could be worse!
   ]]
@@ -4639,7 +4718,7 @@ Alright, since you've
 been so friendly, I'll
 let you in on a little
 secret. I didn't start
-collected Alchemy Stones
+collecting Alchemy Stones
 for the money... I
 started collecting them
 for their power! Alchemy
@@ -4664,9 +4743,9 @@ of transformation, it's
 control over what makes
 up our world. This could
 be money (if that's your
-thing), or it could
-be something even grander-
-an elixer of life!
+thing), or it could be
+something even grander -
+an elixer of life!$0
 Living young forever,
 imagine it!
   ]]
@@ -4683,6 +4762,51 @@ anything useful, or find
 any of those Alchemy
 Stones, but sure to let
 me know, friend!
+  ]]
+}
+
+dialog{
+  id = "garroth.6.alchemy",
+  skip = "current",
+  text = [[
+Wow, you have $v
+Alchemy Stones already?
+That's more than I've
+collected in my whole
+time here!
+In honor of your
+achievement, I'd like
+to give you something!
+  ]]
+}
+
+dialog{
+  id = "garroth.7.alchemy",
+  skip = "current",
+  text = [[
+Wow, you have $v
+Alchemy Stones already?
+That's more than I
+could imagine collecting
+in my lifetime!
+In honor of your
+achievement, I'd like
+to give you something!
+  ]]
+}
+
+dialog{
+  id = "garroth.8.alchemy",
+  skip = "current",
+  text = [[
+Wow, you have $v
+Alchemy Stones?
+That's more than I
+thought were in the
+whole world!
+In honor of your
+achievement, I'd like
+to give you something!
   ]]
 }
 

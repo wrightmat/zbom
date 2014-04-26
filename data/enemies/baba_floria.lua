@@ -18,12 +18,12 @@ function enemy:on_restarted()
   local hx, hy, hl = hero:get_position()
   local ex, ey, el = self:get_position()
   if hx > ex then
-    self:get_sprite():set_direction(0)
+    self:get_sprite():set_direction(0) --right
   elseif hy < ey then
-    self:get_sprite():set_direction(1)
+    self:get_sprite():set_direction(1) --up
   elseif hx < ex then
-    self:get_sprite():set_direction(2)
+    self:get_sprite():set_direction(2) --left
   else
-    self:get_sprite():set_direction(3)
+    self:get_sprite():set_direction(3) --down
   end
 end

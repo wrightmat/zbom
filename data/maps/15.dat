@@ -5891,7 +5891,7 @@ teletransporter{
   y = 592,
   width = 16,
   height = 528,
-  name = "to_J5",
+  name = "to_F14",
   transition = "scrolling",
   destination_map = "11",
   destination = "_side",
@@ -5903,7 +5903,7 @@ teletransporter{
   y = 1120,
   width = 752,
   height = 16,
-  name = "to_K4",
+  name = "to_E15",
   transition = "scrolling",
   destination_map = "14",
   destination = "_side",
@@ -8978,7 +8978,7 @@ teletransporter{
   x = -16,
   y = 40,
   width = 16,
-  height = 176,
+  height = 32,
   name = "to_D14_3",
   transition = "scrolling",
   destination_map = "23",
@@ -9133,6 +9133,18 @@ enemy{
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random",
+}
+
+teletransporter{
+  layer = 0,
+  x = 888,
+  y = 1120,
+  width = 48,
+  height = 16,
+  name = "to_E15_2",
+  transition = "scrolling",
+  destination_map = "14",
+  destination = "_side",
 }
 
 tile{

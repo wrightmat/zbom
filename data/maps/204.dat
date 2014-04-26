@@ -14067,7 +14067,7 @@ stream{
   name = "belt_3",
   direction = 6,
   sprite = "entities/conveyor_belt",
-  speed = 40,
+  speed = 32,
 }
 
 stream{
@@ -14077,7 +14077,7 @@ stream{
   name = "belt_4",
   direction = 6,
   sprite = "entities/conveyor_belt",
-  speed = 40,
+  speed = 32,
 }
 
 stream{
@@ -14087,7 +14087,7 @@ stream{
   name = "belt_5",
   direction = 2,
   sprite = "entities/conveyor_belt",
-  speed = 40,
+  speed = 32,
 }
 
 stream{
@@ -14097,7 +14097,7 @@ stream{
   name = "belt_6",
   direction = 2,
   sprite = "entities/conveyor_belt",
-  speed = 40,
+  speed = 32,
 }
 
 stream{
@@ -14107,7 +14107,7 @@ stream{
   name = "belt_7",
   direction = 2,
   sprite = "entities/conveyor_belt",
-  speed = 48,
+  speed = 32,
 }
 
 stream{
@@ -14117,7 +14117,7 @@ stream{
   name = "belt_8",
   direction = 6,
   sprite = "entities/conveyor_belt",
-  speed = 48,
+  speed = 32,
 }
 
 stream{
@@ -14127,6 +14127,7 @@ stream{
   name = "belt_9",
   direction = 6,
   sprite = "entities/conveyor_belt",
+  speed = 40,
 }
 
 stream{
@@ -14136,6 +14137,7 @@ stream{
   name = "belt_10",
   direction = 6,
   sprite = "entities/conveyor_belt",
+  speed = 40,
 }
 
 stream{
@@ -14145,6 +14147,7 @@ stream{
   name = "belt_11",
   direction = 2,
   sprite = "entities/conveyor_belt",
+  speed = 40,
 }
 
 stream{
@@ -14154,6 +14157,43 @@ stream{
   name = "belt_12",
   direction = 2,
   sprite = "entities/conveyor_belt",
+  speed = 40,
+}
+
+sensor{
+  layer = 0,
+  x = 1400,
+  y = 541,
+  width = 48,
+  height = 16,
+  name = "sensor_save_ground_2",
+}
+
+sensor{
+  layer = 0,
+  x = 1272,
+  y = 445,
+  width = 16,
+  height = 48,
+  name = "sensor_reset_ground_2",
+}
+
+sensor{
+  layer = 0,
+  x = 1160,
+  y = 437,
+  width = 16,
+  height = 48,
+  name = "sensor_save_ground_3",
+}
+
+sensor{
+  layer = 0,
+  x = 760,
+  y = 365,
+  width = 16,
+  height = 48,
+  name = "sensor_reset_ground_3",
 }
 
 tile{

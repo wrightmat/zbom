@@ -8448,6 +8448,36 @@ chest{
   sprite = "entities/chest",
 }
 
+npc{
+  layer = 0,
+  x = 1840,
+  y = 1189,
+  name = "elder_juba_office",
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/zora_juba",
+}
+
+npc{
+  layer = 0,
+  x = 1760,
+  y = 1149,
+  name = "elder_gonpho_office",
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/snowpeak_anouki",
+}
+
+npc{
+  layer = 0,
+  x = 1912,
+  y = 1157,
+  name = "elder_koshi_office",
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/rito",
+}
+
 tile{
   layer = 1,
   x = 848,

@@ -116,3 +116,17 @@ function npc_crista:on_interaction()
     end
   end
 end
+
+function npc_impa:on_interaction()
+  if game:get_value("i1032") >= 2 then
+    game:start_dialog("impa.2.house")
+  else
+    game:start_dialog("impa.0.house", function()
+      if game:has_item("ocarina") then
+        game:start_dialog("impa.1.house_2")
+      else
+        game:start_dialog("impa.0.house_2")
+      end
+    end)
+  end
+end

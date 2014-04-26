@@ -5242,7 +5242,6 @@ npc{
   direction = 3,
   subtype = "1",
   sprite = "npc/hylian_impa",
-  behavior = "dialog#impa.0",
 }
 
 teletransporter{
@@ -5901,6 +5900,16 @@ npc{
   direction = 3,
   subtype = "1",
   sprite = "npc/ordon_ulo",
+}
+
+npc{
+  layer = 0,
+  x = 632,
+  y = 877,
+  name = "npc_deacon",
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/hylian_deacon",
 }
 
 tile{

@@ -5,6 +5,7 @@ local game = map:get_game()
 -- Outside World C15 (Grove-Temple Entr) - Grove Temple Entrance, Beach entrance (Gerudo ship) --
 -------------------------------------------------------------------------------------------------
 
+if game:get_value("i1917")==nil then game:set_value("i1917", 0) end
 local monkey_sprite = npc_monkey:get_sprite()
 local monkey_jumps = 0
 
@@ -59,6 +60,7 @@ function map:on_started(destination)
   elseif game:get_value("i1068") == 6 then
     gerudo_ship:get_sprite():set_animation("ship")
     map:set_entities_enabled("ship_block", true)
+    npc_monkey:remove()
   elseif game:get_value("i1068") > 6 then
     npc_monkey:remove()
     gerudo_ship:remove()
@@ -92,38 +94,44 @@ function npc_gerudo_pirate_2:on_interaction()
 end
 
 function npc_gerudo_leader:on_interaction()
-  if game:get_value("i1068") == 1 then
-    game:start_dialog("hesla.1.beach")
-  elseif game:get_value("i1068") == 2 then
-    game:start_dialog("hesla.2.beach", function()
-      hero:start_treasure("world_map")
-      game:set_value("i1068", 3)
-      -- Move Hesla out of the way so we can get to the beach
-      local m = sol.movement.create("target")
-      npc_gerudo_leader:get_sprite():set_animation("walking")
-      m:set_speed(24)
-      m:set_target(416, 69)
-      m:start(npc_gerudo_leader)
-      npc_gerudo_leader:get_sprite():set_direction(0)
-      npc_gerudo_leader:get_sprite():set_animation("stopped")
-    end)
-  elseif game:get_value("i1068") == 3 then
-    game:start_dialog("hesla.3.beach")
-  elseif game:get_value("i1068") == 4 then
-    game:start_dialog("hesla.4.beach")
-    game:get_item("airship_part"):set_variant(0) --take airship parts from inventory
-    game:set_value("i1068", 5)
-  elseif game:get_value("i1068") == 5 then
-    game:start_dialog("hesla.5.beach")
-    -- After 5 real-time minutes the ship will be repaired
-    sol.timer.start(game, 30000, function()
-      game:set_value("i1068", 6)
-    end)
-  elseif game:get_value("i1068") == 6 then
-    game:start_dialog("hesla.6.beach")
-    game:set_value("i1068", 7)
+  if game:get_value("i1917") >= 1 then
+    if game:get_value("i1068") == 1 then
+      game:start_dialog("hesla.1.beach")
+    elseif game:get_value("i1068") == 2 then
+      game:start_dialog("hesla.2.beach", function()
+        hero:start_treasure("world_map")
+        game:set_value("i1068", 3)
+        -- Move Hesla out of the way so we can get to the beach
+        local m = sol.movement.create("target")
+        npc_gerudo_leader:get_sprite():set_animation("walking")
+        m:set_speed(24)
+        m:set_target(416, 69)
+        m:start(npc_gerudo_leader)
+        npc_gerudo_leader:get_sprite():set_direction(0)
+        npc_gerudo_leader:get_sprite():set_animation("stopped")
+      end)
+    elseif game:get_value("i1068") == 3 then
+      game:start_dialog("hesla.3.beach")
+    elseif game:get_value("i1068") == 4 then
+      game:start_dialog("hesla.4.beach")
+      game:get_item("airship_part"):set_variant(0) --take airship parts from inventory
+      game:set_value("i1068", 5)
+    elseif game:get_value("i1068") == 5 then
+      game:start_dialog("hesla.5.beach")
+      -- After 5 real-time minutes the ship will be repaired
+      sol.timer.start(game, 30000, function()
+        game:set_value("i1068", 6)
+      end)
+    elseif game:get_value("i1068") == 6 then
+      game:start_dialog("hesla.6.beach")
+      game:set_value("i1068", 7)
+    else
+      game:start_dialog("hesla.0.beach")
+    end
   else
-    game:start_dialog("hesla.0.beach")
+    game:start_dialog("hesla.0.beach", function()
+      game:set_value("i1917", 1)
+    end)
   end
 end
 

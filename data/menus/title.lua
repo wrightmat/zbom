@@ -62,7 +62,6 @@ function title_screen:phase_title()
   self.clouds_img = sol.surface.create("menus/title_" .. time_of_day
       .. "_clouds.png")
   self.logo_img = sol.surface.create("menus/title_logo.png")
-  self.borders_img = sol.surface.create("menus/title_borders.png")
 
   self.website_img = sol.text_surface.create{
     font = sol.language.get_menu_font(),
@@ -77,16 +76,6 @@ function title_screen:phase_title()
     text_key = "title_screen.press_space",
     horizontal_alignment = "center"
   }
-
-  -- set up the appearance of images and texts
-  sol.timer.start(self, 5000, function()
-    sol.audio.play_sound("ok")
-    self.dx_img = sol.surface.create("menus/title_dx.png")
-  end)
-
-  sol.timer.start(self, 6000, function()
-    self.star_img = sol.surface.create("menus/title_star.png")
-  end)
 
   self.show_press_space = false
   function switch_press_space()
@@ -149,9 +138,6 @@ function title_screen:draw_phase_title()
   y = self.clouds_xy.y - 299
   self.clouds_img:draw(self.surface, x, y)
 
-  -- black bars
-  self.borders_img:draw(self.surface, 0, 0)
-
   -- website name and logo
   self.website_img:draw(self.surface, 160, 220)
   self.logo_img:draw(self.surface)
@@ -163,7 +149,7 @@ function title_screen:draw_phase_title()
     self.star_img:draw(self.surface)
   end
   if self.show_press_space then
-    self.press_space_img:draw(self.surface, 160, 200)
+    self.press_space_img:draw(self.surface, 200, 170)
   end
 end
 

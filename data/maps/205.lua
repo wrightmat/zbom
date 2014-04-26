@@ -20,9 +20,7 @@ if game:get_value("b1117") and lantern_overlay then
 end
 
 function map:on_started(destination)
-  if game:get_value("i1029") > 5 then
-    npc_dampeh:remove()
-  elseif game:get_value("i1029") <= 4 then
+  if game:get_value("i1029") <= 4 then
     npc_goron_ghost:remove()
   elseif game:get_value("i1029") == 5 then
     sol.audio.play_sound("ghost")
@@ -32,9 +30,11 @@ function map:on_started(destination)
   elseif game:get_value("i1029") >= 6 then
     dampeh_1:remove()
     dampeh_2:remove()
+    npc_goron_ghost:remove()
+    npc_dampeh:remove()
   end
   map:set_doors_open("door_miniboss")
-  map:set_doors_open("door_boss")
+  chest_alchemy:set_enabled(false)
   if not game:get_value("b1108") then chest_big_key:set_enabled(false) end
   if not game:get_value("b1102") then chest_key_3:set_enabled(false) end
   if not game:get_value("b1103") then chest_key_4:set_enabled(false) end
@@ -47,9 +47,7 @@ function map:on_started(destination)
   -- Dodongos appear after the boss is defeated
   if not game:get_value("b1110") then
     boss_vire:set_enabled(false)
-    for enemy in map:get_entities("dodongo") do
-      enemy:set_enabled(false)
-    end
+    map:set_entities_enabled("dodongo", false)
   else
     if npc_dampeh ~= nil then npc_dampeh:remove() end
   end
@@ -130,9 +128,7 @@ if boss_vire ~= nil then
     game:start_dialog("_mausoleum_outro", function()
       lantern_overlay:fade_out(50)
       lantern_overlay:clear()
-      for enemy in map:get_entities("dodongo") do
-        enemy:set_enabled(true)
-      end
+      map:set_entities_enabled("dodongo", true)
     end)
   end)
  end
@@ -163,6 +159,10 @@ for enemy in map:get_entities("tektite") do
     end
     if not map:has_entities("tektite_map") and not game:get_value("b1106") then
       chest_map:set_enabled(true)
+      sol.audio.play_sound("chest_appears")
+    end
+    if not map:has_entities("tektite_alchemy") then
+      chest_alchemy:set_enabled(true)
       sol.audio.play_sound("chest_appears")
     end
   end

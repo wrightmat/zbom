@@ -8237,6 +8237,18 @@ destructible{
   damage_on_enemies = 2,
 }
 
+teletransporter{
+  layer = 0,
+  x = 888,
+  y = -16,
+  width = 48,
+  height = 16,
+  name = "to_E14_2",
+  transition = "scrolling",
+  destination_map = "15",
+  destination = "_side",
+}
+
 tile{
   layer = 2,
   x = 1072,

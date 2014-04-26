@@ -11696,7 +11696,7 @@ enemy{
   layer = 0,
   x = 1480,
   y = 637,
-  name = "tektite_6",
+  name = "tektite_alchemy_1",
   direction = 3,
   breed = "tektite_red",
 }
@@ -11705,7 +11705,7 @@ enemy{
   layer = 0,
   x = 1576,
   y = 557,
-  name = "tektite_7",
+  name = "tektite_alchemy_2",
   direction = 3,
   breed = "tektite_red",
 }
@@ -12802,7 +12802,7 @@ door{
   layer = 0,
   x = 1272,
   y = 104,
-  name = "door_boss",
+  name = "door_boss_2",
   direction = 2,
   sprite = "entities/door_shutter",
 }
@@ -13054,6 +13054,28 @@ dynamic_tile{
   name = "dampeh_2",
   pattern = 646,
   enabled_at_start = true,
+}
+
+chest{
+  layer = 0,
+  x = 1520,
+  y = 573,
+  name = "chest_alchemy",
+  treasure_name = "alchemy",
+  sprite = "entities/chest",
+}
+
+door{
+  layer = 0,
+  x = 1224,
+  y = 104,
+  name = "door_boss_1",
+  direction = 0,
+  sprite = "entities/door_big_key",
+  savegame_variable = "b1120",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "b1108",
+  cannot_open_dialog = "_big_key_required",
 }
 
 npc{
