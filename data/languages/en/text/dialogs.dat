@@ -3936,6 +3936,19 @@ the lake?
 }
 
 dialog{
+  id = "_sewer_water",
+  skip = "current",
+  text = [[
+It sounds like that
+switch may have drained
+more water than just
+what's right here -
+go outside and check
+it out!
+  ]]
+}
+
+dialog{
   id = "impa.0.house",
   skip = "current",
   text = [[

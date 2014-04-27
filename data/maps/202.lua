@@ -56,6 +56,13 @@ function switch_key_2_2:on_activated()
   end
 end
 
+function switch_drain_water:on_activated()
+  sol.audio.play_sound("water_drain")
+  water_drain:fade_out(100)
+  game:set_value("i1030", 2)
+  game:start_dialog("_sewer_water")
+end
+
 for enemy in map:get_entities("tentacle") do
   enemy.on_dead = function()
     if not map:has_entities("tentacle_orig") then
