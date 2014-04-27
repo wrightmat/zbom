@@ -9,6 +9,7 @@ local odd_potion_counter = 0
 if game:get_value("i1027")==nil then game:set_value("i1027", 0) end
 if game:get_value("i1032")==nil then game:set_value("i1032", 0) end
 if game:get_value("i2021")==nil then game:set_value("i2021", 0) end
+if game:get_value("i1602")==nil then game:set_value("i1602", 0) end
 
 function map:on_started(destination)
   -- increment potion counter
@@ -55,6 +56,7 @@ function map:on_started(destination)
   end
   if game:get_value("i1602") < 3 then
     npc_deacon:remove()
+    npc_gaira:remove()
   elseif game:get_value("i1602") < 6 then
     npc_gaira:remove()
   end
@@ -132,7 +134,28 @@ end
 
 function npc_deacon:on_interaction()
   if game:get_value("i1602") == 3 then
-    game:start_dialog("deacon.3.house")
+    game:start_dialog("deacon.3.house", function()
+      game:set_value("i1602", 4)
+    end)
+  elseif game:get_value("i1602") == 6 and not game:get_value("b1117") then
+    game:start_dialog("deacon.5.faron", game:get_player_name())
+  else
+    if game:get_value("i1913") >= 3 and game:get_value("b1117") then
+      game:start_dialog("deacon.6.house", function()
+	game:set_value("i1030", 1)
+      end)
+    else
+      game:start_dialog("deacon.0.faron")
+      game:set_value("i1913", game:get_value("i1913")+1)
+    end
+  end
+end
+
+function npc_gaira:on_interaction()
+  if game:get_value("i1030") == 1 then
+    game:start_dialog("gaira.6.house")
+  else
+    game:start_dialog("gaira.5.faron", game:get_player_name())
   end
 end
 

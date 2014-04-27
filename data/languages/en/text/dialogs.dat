@@ -3783,27 +3783,28 @@ go to her!
 }
 
 dialog{
-  id = "deacon.4.faron",
+  id = "gaira.4.faron_deacon1",
   skip = "current",
   text = [[
-Oh!$0 . $0 . $0 . 
-This lovely creature can't
-be the one you were referring
-to, $v! How could a woman
-as radiant as this ever be
-so crass?
+( You can do it Gaira,
+old girl. Just turn
+around, march up to
+his door, and give him
+a piece of your mind! )
   ]]
 }
 
 dialog{
-  id = "gaira.4.faron_deacon1",
+  id = "deacon.4.faron",
   skip = "current",
   text = [[
-(You can do it Gaira, old
-girl. Just turn around,
-march up to his door, and
-give him a piece of your
-mind!)
+Oh!$0 . $0 . $0 . 
+This lovely creature
+can't be the one you
+were referring to,
+$v! How could a woman
+as radiant as this
+ever be so crass?
   ]]
 }
 
@@ -3813,11 +3814,12 @@ dialog{
   text = [[
 Oh!$0 . $0 . $0 . 
 This handsome man can't
-be the one you were referring
-to, $v!
+be the one you were
+referring to, $v!
 You wouldn't possibly let
-this lovely forest succumb
-to poisoning, would you sir?
+this lovely forest
+succumb to poisoning,
+would you sir?
   ]]
 }
 
@@ -3825,11 +3827,13 @@ dialog{
   id = "deacon.4.faron_gaira3",
   skip = "current",
   text = [[
-Of course not, madam! How
-could you think me so cold?
-I cherish everything in this
-forest. Every lovely creature -
-especially the one standing
+Of course not, madam!
+How could you think me
+so cold?$0 I cherish
+everything in this
+forest. Every lovely
+creature - especially
+the one standing
 before me now...
   ]]
 }
@@ -3848,9 +3852,10 @@ dialog{
   id = "deacon.4.faron_gaira5",
   skip = "current",
   text = [[
-This is my cabin right here.
-Would you care to come in
-and share stories?
+This is my cabin right
+here. Would you care
+to come in and share
+stories?
   ]]
 }
 
@@ -3863,7 +3868,8 @@ enough for introducing
 me to my dear Gaira!
 What's that? I never
 answered your question
-about the poisoned forest?
+about the poisoned
+forest?
 Fear not, my boy! Gaira
 and I are on the case!
   ]]
@@ -3873,10 +3879,11 @@ dialog{
   id = "gaira.5.faron",
   skip = "current",
   text = [[
-Oh, $v! I can't believe
-that the man of my dreams
-was so close to me all
-this time! I can't thank
+Oh, $v! I just can't
+believe that the man
+of my dreams was so
+close to me all this
+time! I can't thank
 you enough!$0
 The poisoned forest?
 Yes, Deacon and I have
@@ -3912,7 +3919,7 @@ Mr. Hero!
 }
 
 dialog{
-  id = "gaira.5.house",
+  id = "gaira.6.house",
   skip = "current",
   text = [[
 You know, I have seen a
@@ -4300,6 +4307,66 @@ Anyway, you should be
 able to find another
 sewer access just east
 of Hyrule Castle Town.
+  ]]
+}
+
+dialog{
+  id = "deku.4.faron.1",
+  skip = "current",
+  text = [[
+Thank you so much for
+getting those slimy
+creatures out of our
+forest!
+  ]]
+}
+
+dialog{
+  id = "deku.4.faron.2",
+  skip = "current",
+  text = [[
+You can find valuable
+stuff like mystic
+jade and deku sticks
+scattered around the
+forest sometimes.
+  ]]
+}
+
+dialog{
+  id = "deku.4.faron.3",
+  skip = "current",
+  text = [[
+Find enough mystic
+jade and the Great
+Fairy of the Forest
+will give you some-
+thing great!
+  ]]
+}
+
+dialog{
+  id = "deku.4.faron.4",
+  skip = "current",
+  text = [[
+Find enough deku
+sticks and they can
+be used to make
+useful potions!
+  ]]
+}
+
+dialog{
+  id = "deku.4.faron.5",
+  skip = "current",
+  text = [[
+We're nicer than our
+kind over at the Lost
+Woods of the east.
+I think they're just
+confused by that
+forest and it makes
+them angry.
   ]]
 }
 

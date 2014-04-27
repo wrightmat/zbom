@@ -13,14 +13,7 @@ local function follow_hero(npc)
   local npc_x, npc_y, npc_layer = npc:get_position()
   local distance_hero = math.abs((hero_x+hero_y)-(npc_x+npc_y))
   local m = sol.movement.create("target")
-  if distance_hero > 1000 then
-    m:set_speed(64)
-  elseif distance_hero < 20 then
-    m:set_speed(32)
-  else
-    m:set_speed(48)
-  end
-  m:start(npc)
+  m:set_speed(48)
   npc:get_sprite():set_animation("walking")
 end
 
@@ -31,7 +24,7 @@ function map:on_started(destination)
 end
 
 function npc_gaira:on_interaction()
-  if game:get_Value("i1602") >= 2 then
+  if game:get_value("i1602") >= 2 then
     game:start_dialog("gaira.3.faron", function()
       game:set_value("i1602", 3)
       follow_hero(npc_gaira)
