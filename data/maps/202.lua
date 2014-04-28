@@ -29,6 +29,10 @@ function map:on_started(destination)
   if not game:get_value("b1041") then
     chest_key_2:set_enabled(false)
   end
+  if game:get_value("i1030") >= 2 then
+    water_drain:remove()
+    switch_drain_water:set_activated()
+  end
 end
 
 function switch_sword:on_activated()
@@ -58,7 +62,7 @@ end
 
 function switch_drain_water:on_activated()
   sol.audio.play_sound("water_drain")
-  water_drain:fade_out(100)
+  water_drain:remove()
   game:set_value("i1030", 2)
   game:start_dialog("_sewer_water")
 end

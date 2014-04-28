@@ -8207,6 +8207,28 @@ door{
   cannot_open_dialog = "_small_key_required",
 }
 
+destination{
+  layer = 0,
+  x = 824,
+  y = 1117,
+  name = "from_outside",
+  direction = 3,
+  default = true,
+}
+
+teletransporter{
+  layer = 0,
+  x = 816,
+  y = 1136,
+  width = 16,
+  height = 16,
+  name = "to_outside",
+  sprite = "entities/teletransporter",
+  sound = "warp",
+  destination_map = "31",
+  destination = "from_lair",
+}
+
 tile{
   layer = 2,
   x = 248,

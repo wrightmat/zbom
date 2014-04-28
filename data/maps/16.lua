@@ -29,5 +29,7 @@ function npc_gaira:on_interaction()
       game:set_value("i1602", 3)
       follow_hero(npc_gaira)
     end)
+  else
+    game:start_dialog("gaira.2.faron")
   end
 end

@@ -42,7 +42,7 @@ function map:on_started(destination)
       game:set_value("i1602", 5)
       game:start_dialog("gaira.4.faron_deacon1", function()
 	game:start_dialog("deacon.4.faron", game:get_player_name(), function()
-	  game:start_dialog("gaira.4.faron_deacon2", function()
+	  game:start_dialog("gaira.4.faron_deacon2", game:get_player_name(), function()
 	    game:start_dialog("deacon.4.faron_gaira3", function()
 	      game:start_dialog("gaira.4.faron_deacon4", function()
 		game:start_dialog("deacon.4.faron_gaira5", function()
@@ -73,5 +73,11 @@ function npc_deacon:on_interaction()
       game:start_dialog("deacon.0.faron")
       game:set_value("i1913", game:get_value("i1913")+1)
     end
+  end
+end
+
+function npc_gaira:on_interaction()
+  if game:get_value("i1602") == 3 then
+    game:start_dialog("gaira.4.faron")
   end
 end

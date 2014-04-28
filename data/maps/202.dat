@@ -1904,7 +1904,7 @@ tile{
   x = 912,
   y = 384,
   width = 16,
-  height = 160,
+  height = 64,
   pattern = 6,
 }
 
@@ -1940,7 +1940,7 @@ tile{
   x = 928,
   y = 392,
   width = 8,
-  height = 144,
+  height = 64,
   pattern = 17,
 }
 
@@ -3740,7 +3740,7 @@ tile{
   x = 848,
   y = 384,
   width = 16,
-  height = 640,
+  height = 64,
   pattern = 12,
 }
 
@@ -3839,7 +3839,7 @@ tile{
   x = 840,
   y = 392,
   width = 8,
-  height = 624,
+  height = 64,
   pattern = 21,
 }
 
@@ -4165,6 +4165,96 @@ tile{
   width = 16,
   height = 8,
   pattern = 169,
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 448,
+  width = 48,
+  height = 16,
+  pattern = 45,
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 464,
+  width = 16,
+  height = 48,
+  pattern = 45,
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 448,
+  width = 48,
+  height = 16,
+  pattern = 45,
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 464,
+  width = 16,
+  height = 48,
+  pattern = 45,
+}
+
+tile{
+  layer = 0,
+  x = 848,
+  y = 480,
+  width = 16,
+  height = 544,
+  pattern = 12,
+}
+
+tile{
+  layer = 0,
+  x = 840,
+  y = 472,
+  width = 8,
+  height = 544,
+  pattern = 21,
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 480,
+  width = 16,
+  height = 64,
+  pattern = 6,
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 472,
+  width = 8,
+  height = 64,
+  pattern = 17,
+}
+
+tile{
+  layer = 0,
+  x = 848,
+  y = 448,
+  width = 80,
+  height = 8,
+  pattern = 105,
+}
+
+tile{
+  layer = 0,
+  x = 848,
+  y = 472,
+  width = 80,
+  height = 8,
+  pattern = 105,
 }
 
 teletransporter{
@@ -4736,6 +4826,53 @@ switch{
   inactivate_when_leaving = false,
 }
 
+jumper{
+  layer = 0,
+  x = 1248,
+  y = 456,
+  width = 8,
+  height = 32,
+  name = "jump_sensor",
+  direction = 4,
+  jump_length = 40,
+}
+
+tile{
+  layer = 1,
+  x = 848,
+  y = 448,
+  width = 16,
+  height = 32,
+  pattern = 12,
+}
+
+tile{
+  layer = 1,
+  x = 840,
+  y = 456,
+  width = 8,
+  height = 16,
+  pattern = 21,
+}
+
+tile{
+  layer = 1,
+  x = 912,
+  y = 448,
+  width = 16,
+  height = 32,
+  pattern = 6,
+}
+
+tile{
+  layer = 1,
+  x = 928,
+  y = 456,
+  width = 8,
+  height = 16,
+  pattern = 17,
+}
+
 tile{
   layer = 2,
   x = 2200,
@@ -5129,17 +5266,25 @@ separator{
 
 separator{
   layer = 2,
-  x = 1256,
-  y = 816,
+  x = 1264,
+  y = 832,
   width = 272,
   height = 16,
 }
 
 separator{
   layer = 2,
-  x = 1248,
-  y = 832,
+  x = 1264,
+  y = 848,
   width = 16,
-  height = 240,
+  height = 224,
+}
+
+separator{
+  layer = 2,
+  x = 496,
+  y = 320,
+  width = 16,
+  height = 752,
 }
 
