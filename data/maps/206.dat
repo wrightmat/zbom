@@ -8233,7 +8233,7 @@ enemy{
   layer = 0,
   x = 88,
   y = 101,
-  name = "chuchu_1",
+  name = "chuchu_map_1",
   direction = 3,
   breed = "chuchu_blue",
 }
@@ -8242,7 +8242,7 @@ enemy{
   layer = 0,
   x = 88,
   y = 221,
-  name = "chuchu_2",
+  name = "chuchu_map_2",
   direction = 3,
   breed = "chuchu_blue",
 }
@@ -8251,7 +8251,7 @@ enemy{
   layer = 0,
   x = 184,
   y = 237,
-  name = "chuchu_3",
+  name = "chuchu_map_3",
   direction = 3,
   breed = "chuchu_blue",
 }
@@ -8260,7 +8260,7 @@ enemy{
   layer = 0,
   x = 184,
   y = 93,
-  name = "chuchu_4",
+  name = "chuchu_map_4",
   direction = 3,
   breed = "chuchu_blue",
 }
@@ -8273,6 +8273,15 @@ chest{
   treasure_name = "map",
   treasure_savegame_variable = "b1127",
   sprite = "entities/chest",
+}
+
+enemy{
+  layer = 0,
+  x = 592,
+  y = 896,
+  name = "bubble",
+  direction = 3,
+  breed = "bubble_blue",
 }
 
 tile{
