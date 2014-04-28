@@ -8229,6 +8229,52 @@ teletransporter{
   destination = "from_lair",
 }
 
+enemy{
+  layer = 0,
+  x = 88,
+  y = 101,
+  name = "chuchu_1",
+  direction = 3,
+  breed = "chuchu_blue",
+}
+
+enemy{
+  layer = 0,
+  x = 88,
+  y = 221,
+  name = "chuchu_2",
+  direction = 3,
+  breed = "chuchu_blue",
+}
+
+enemy{
+  layer = 0,
+  x = 184,
+  y = 237,
+  name = "chuchu_3",
+  direction = 3,
+  breed = "chuchu_blue",
+}
+
+enemy{
+  layer = 0,
+  x = 184,
+  y = 93,
+  name = "chuchu_4",
+  direction = 3,
+  breed = "chuchu_blue",
+}
+
+chest{
+  layer = 0,
+  x = 136,
+  y = 157,
+  name = "chest_map",
+  treasure_name = "map",
+  treasure_savegame_variable = "b1127",
+  sprite = "entities/chest",
+}
+
 tile{
   layer = 2,
   x = 248,

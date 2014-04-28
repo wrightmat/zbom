@@ -12805,6 +12805,9 @@ door{
   name = "door_boss_2",
   direction = 2,
   sprite = "entities/door_shutter",
+  savegame_variable = "b1120",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "b1108",
 }
 
 chest{

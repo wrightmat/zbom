@@ -19,6 +19,24 @@ tile{
 
 tile{
   layer = 0,
+  x = 472,
+  y = 384,
+  width = 8,
+  height = 8,
+  pattern = 895,
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 384,
+  width = 8,
+  height = 8,
+  pattern = 894,
+}
+
+tile{
+  layer = 0,
   x = 0,
   y = 688,
   width = 400,
@@ -2602,8 +2620,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 384,
-  y = 392,
+  x = 376,
+  y = 400,
   width = 32,
   height = 48,
   pattern = 809,
@@ -2611,8 +2629,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 496,
-  y = 392,
+  x = 504,
+  y = 400,
   width = 32,
   height = 48,
   pattern = 809,
@@ -3626,6 +3644,51 @@ tile{
   pattern = 1694,
 }
 
+tile{
+  layer = 0,
+  x = 768,
+  y = 368,
+  width = 16,
+  height = 80,
+  pattern = 27,
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 400,
+  width = 8,
+  height = 8,
+  pattern = 898,
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 392,
+  width = 8,
+  height = 8,
+  pattern = 896,
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 400,
+  width = 8,
+  height = 8,
+  pattern = 899,
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 392,
+  width = 8,
+  height = 8,
+  pattern = 897,
+}
+
 dynamic_tile{
   layer = 0,
   x = 440,
@@ -3640,9 +3703,31 @@ dynamic_tile{
 dynamic_tile{
   layer = 0,
   x = 0,
-  y = 352,
-  width = 776,
-  height = 96,
+  y = 304,
+  width = 824,
+  height = 32,
+  name = "water_3",
+  pattern = 275,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 0,
+  y = 336,
+  width = 800,
+  height = 24,
+  name = "water_13",
+  pattern = 275,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 0,
+  y = 360,
+  width = 768,
+  height = 88,
   name = "water_9",
   pattern = 275,
   enabled_at_start = true,
@@ -4411,17 +4496,6 @@ destructible{
   destruction_sound = "bush",
   weight = 1,
   can_be_cut = true,
-}
-
-dynamic_tile{
-  layer = 0,
-  x = 0,
-  y = 304,
-  width = 832,
-  height = 48,
-  name = "water_3",
-  pattern = 275,
-  enabled_at_start = true,
 }
 
 dynamic_tile{
@@ -5290,17 +5364,6 @@ destination{
   direction = 3,
 }
 
-dynamic_tile{
-  layer = 0,
-  x = 640,
-  y = 496,
-  width = 16,
-  height = 16,
-  name = "wake_77",
-  pattern = 22,
-  enabled_at_start = true,
-}
-
 tile{
   layer = 1,
   x = 688,
@@ -5452,15 +5515,6 @@ tile{
   width = 16,
   height = 16,
   pattern = 91,
-}
-
-tile{
-  layer = 1,
-  x = 768,
-  y = 368,
-  width = 16,
-  height = 80,
-  pattern = 27,
 }
 
 tile{
@@ -6041,6 +6095,17 @@ dynamic_tile{
   height = 48,
   name = "statue",
   pattern = 809,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 1,
+  x = 640,
+  y = 496,
+  width = 16,
+  height = 16,
+  name = "wake_77",
+  pattern = 22,
   enabled_at_start = true,
 }
 
