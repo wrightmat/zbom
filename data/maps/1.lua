@@ -51,8 +51,15 @@ function map:on_started(destination)
       entity:remove()
     end
     bed_bilo:set_enabled(true)
+    -- Julita and Crista switch places at this time:
+    -- Crista at home, Julita running the shop
+    npc_crista:remove()
+    npc_julita:remove()
   else
     npc_ulo:remove()
+    -- Normally Crista is at the shop and Julita is at home.
+    npc_crista_house:remove()
+    npc_julita_shop:remove()
   end
   if game:get_value("i1602") < 3 then
     npc_deacon:remove()
@@ -126,6 +133,12 @@ function npc_crista:on_interaction()
     if rand == 1 and game:get_item("trading"):get_variant() < 1 then
       -- Randomly mention the mushroom on occasion (if not already obtained)
       game:start_dialog("crista.1.shop", game:get_player_name())
+    elseif game:get_value("b1117") and game:get_value("i1030") < 1 then
+      game:start_dialog("crista.4.shop")
+    elseif game:get_value("i1032") >= 6 then
+      game:start_dialog("crista.3.shop")
+    elseif game:get_value("i1068") > 3 then
+      game:start_dialog("crista.2.house", game:get_player_name())
     else
       game:start_dialog("crista.0.shop")
     end

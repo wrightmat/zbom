@@ -3909,3 +3909,93 @@ tile_pattern{
   height = 24,
 }
 
+tile_pattern{
+  id = 671,
+  ground = "wall",
+  default_layer = 0,
+  x = 112,
+  y = 272,
+  width = 8,
+  height = 16,
+}
+
+tile_pattern{
+  id = 672,
+  ground = "wall",
+  default_layer = 0,
+  x = 120,
+  y = 272,
+  width = 8,
+  height = 16,
+}
+
+tile_pattern{
+  id = 673,
+  ground = "wall",
+  default_layer = 0,
+  x = 128,
+  y = 272,
+  width = 8,
+  height = 16,
+}
+
+tile_pattern{
+  id = 674,
+  ground = "shallow_water",
+  default_layer = 0,
+  x = 112,
+  y = 288,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = 675,
+  ground = "deep_water",
+  default_layer = 0,
+  x = 120,
+  y = 288,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = 676,
+  ground = "deep_water",
+  default_layer = 0,
+  x = 128,
+  y = 288,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = 682,
+  ground = "wall",
+  default_layer = 0,
+  x = { 136, 152, 168 },
+  y = { 272, 272, 272 },
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = 683,
+  ground = "wall",
+  default_layer = 0,
+  x = { 136, 152, 168 },
+  y = { 288, 288, 288 },
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = 684,
+  ground = "wall",
+  default_layer = 0,
+  x = { 184, 200, 216 },
+  y = { 272, 272, 272 },
+  width = 16,
+  height = 16,
+}
+

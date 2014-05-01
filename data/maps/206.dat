@@ -8284,6 +8284,18 @@ enemy{
   breed = "bubble_blue",
 }
 
+custom_entity{
+  layer = 0,
+  x = 544,
+  y = 1128,
+  width = 16,
+  height = 16,
+  name = "quicksand_3",
+  direction = 3,
+  sprite = "entities/quicksand",
+  model = "quicksand",
+}
+
 tile{
   layer = 2,
   x = 248,

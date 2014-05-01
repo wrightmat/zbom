@@ -11,6 +11,15 @@ properties{
 
 tile{
   layer = 0,
+  x = 1776,
+  y = 1472,
+  width = 96,
+  height = 64,
+  pattern = 45,
+}
+
+tile{
+  layer = 0,
   x = 1728,
   y = 960,
   width = 272,
@@ -867,7 +876,7 @@ tile{
 tile{
   layer = 0,
   x = 1808,
-  y = 1488,
+  y = 1496,
   width = 32,
   height = 32,
   pattern = 524,
@@ -8966,47 +8975,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 1776,
-  y = 1472,
-  width = 96,
-  height = 16,
-  pattern = 45,
-}
-
-tile{
-  layer = 0,
   x = 1808,
-  y = 1488,
+  y = 1496,
   width = 32,
   height = 32,
   pattern = 623,
-}
-
-tile{
-  layer = 0,
-  x = 1776,
-  y = 1488,
-  width = 32,
-  height = 32,
-  pattern = 45,
-}
-
-tile{
-  layer = 0,
-  x = 1776,
-  y = 1520,
-  width = 96,
-  height = 16,
-  pattern = 45,
-}
-
-tile{
-  layer = 0,
-  x = 1840,
-  y = 1488,
-  width = 32,
-  height = 32,
-  pattern = 45,
 }
 
 tile{
@@ -16335,6 +16308,33 @@ tile{
   pattern = 137,
 }
 
+tile{
+  layer = 0,
+  x = 1816,
+  y = 1336,
+  width = 16,
+  height = 16,
+  pattern = 671,
+}
+
+tile{
+  layer = 0,
+  x = 1816,
+  y = 1464,
+  width = 16,
+  height = 16,
+  pattern = 671,
+}
+
+tile{
+  layer = 0,
+  x = 1816,
+  y = 1200,
+  width = 16,
+  height = 16,
+  pattern = 671,
+}
+
 door{
   layer = 0,
   x = 1352,
@@ -16362,6 +16362,30 @@ door{
   name = "door",
   direction = 2,
   sprite = "entities/door_shutter",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1824,
+  y = 1264,
+  width = 16,
+  height = 16,
+  name = "quicksand_1",
+  direction = 3,
+  sprite = "entities/quicksand",
+  model = "quicksand",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1824,
+  y = 1416,
+  width = 16,
+  height = 16,
+  name = "quicksand_2",
+  direction = 3,
+  sprite = "entities/quicksand",
+  model = "quicksand",
 }
 
 tile{

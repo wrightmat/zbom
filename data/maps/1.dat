@@ -5922,6 +5922,26 @@ npc{
   sprite = "npc/hylian_gaira",
 }
 
+npc{
+  layer = 0,
+  x = 272,
+  y = 469,
+  name = "npc_julita_shop",
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/ordon_julita",
+}
+
+npc{
+  layer = 0,
+  x = 1128,
+  y = 557,
+  name = "npc_crista_house",
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/ordon_crista",
+}
+
 tile{
   layer = 2,
   x = 288,

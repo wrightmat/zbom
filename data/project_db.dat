@@ -344,6 +344,7 @@ sprite{ id = "entities/mine", description = "Mine" }
 sprite{ id = "entities/pot", description = "Pot" }
 sprite{ id = "entities/pumpkin", description = "Pumpkin" }
 sprite{ id = "entities/quest_bubble", description = "Quest bubble" }
+sprite{ id = "entities/quicksand", description = "Quicksand" }
 sprite{ id = "entities/ship_gerudo", description = "Gerudo ship" }
 sprite{ id = "entities/sign", description = "Sign" }
 sprite{ id = "entities/slot_machine", description = "Slot Machine" }
@@ -569,6 +570,7 @@ enemy{ id = "vire_sorceror", description = "Vire Sorceror (Boss)" }
 enemy{ id = "carock", description = "Carock (Dark Interloper)" }
 enemy{ id = "zirna", description = "Zirna (Dark Interloper)" }
 
+entity{ id = "quicksand", description = "Quicksand (Lakebed)" }
 entity{ id = "soil", description = "Soft soil (Shovel)" }
 entity{ id = "statue_goron", description = "Goron Statue (Mausoleum)" }
 
