@@ -96,7 +96,9 @@ function npc_bilo:on_interaction()
 end
 
 function npc_ulo:on_interaction()
-  if game:get_value("i1029") >= 6 then
+  if game:get_value("b1117") and game:get_value("i1030") < 2 then
+    game:start_dialog("ulo.5.ordon")
+  elseif game:get_value("i1029") >= 6 then
     game:start_dialog("ulo.4.ordon")
   else
     game:start_dialog("ulo.3.ordon")
