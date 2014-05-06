@@ -1,0 +1,7 @@
+animation{
+  name = "quicksand",
+  src_image = "entities/quicksand.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 16 },
+  },
+}
