@@ -8181,6 +8181,15 @@ tile{
   pattern = 22,
 }
 
+tile{
+  layer = 0,
+  x = 152,
+  y = 576,
+  width = 32,
+  height = 16,
+  pattern = 675,
+}
+
 door{
   layer = 0,
   x = 1064,
@@ -8294,6 +8303,54 @@ custom_entity{
   direction = 3,
   sprite = "entities/quicksand",
   model = "quicksand",
+}
+
+stream{
+  layer = 0,
+  x = 160,
+  y = 589,
+  name = "stream",
+  direction = 0,
+  sprite = "entities/stream_water",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 176,
+  y = 589,
+  name = "stream_2",
+  direction = 0,
+  sprite = "entities/stream_water",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 1376,
+  y = 949,
+  name = "stream_water",
+  direction = 4,
+  sprite = "entities/stream_water",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 1360,
+  y = 949,
+  name = "stream_water_2",
+  direction = 4,
+  sprite = "entities/stream_water",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
 }
 
 tile{
