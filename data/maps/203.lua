@@ -11,6 +11,12 @@ local arrow_puzzle_nb_correct = 0
 local arrow_puzzle_correct = false
 
 function map:on_started(destination)
+  if destination == from_outside then
+    -- Since the world starts outside in this dungeon, dying
+    -- defaultly starts the hero back at the last map change
+    -- (often a house in Ordon) - we override that behavior.
+    game:set_starting_location("203", "from_outside")
+  end
   -- map chest
   if not game:get_value("b1055") then
     chest_map:set_enabled(false)
