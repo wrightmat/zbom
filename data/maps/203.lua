@@ -31,6 +31,12 @@ function map:on_started(destination)
     game:set_dungeon_finished(2) end
 end
 
+function map:on_obtained_treasure(treasure_item, treasure_variant, treasure_savegame_variable)
+  if treasure_name == "book_mudora" then
+    game:set_dungeon_finished(2)
+  end
+end
+
 function sensor_open_room1:on_activated()
   map:open_doors("room1_shutter")
 end

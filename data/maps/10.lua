@@ -29,15 +29,7 @@ local function follow_hero(npc)
   local distance_hero = math.abs((hero_x+hero_y)-(npc_x+npc_y))
   local m = sol.movement.create("target")
   m:set_ignore_obstacles(false)
-  if distance_hero > 1000 then -- hero's too far away, catch up!
-    m:set_speed(64)
-  elseif distance_hero < 100 then -- getting closer, slow them down
-    m:set_speed(40)
-  elseif distance_hero < 50 then -- too close. back off so we don't trap the hero
-    m:set_speed(8)
-  else
-    m:set_speed(48)
-  end
+  m:set_speed(40)
   m:start(npc)
   npc:get_sprite():set_animation("walking")
  end)

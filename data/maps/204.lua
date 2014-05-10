@@ -28,6 +28,12 @@ function map:on_started(destination)
     game:set_dungeon_finished(3) end
 end
 
+function map:on_obtained_treasure(treasure_item, treasure_variant, treasure_savegame_variable)
+  if treasure_name == "book_mudora" then
+    game:set_dungeon_finished(3)
+  end
+end
+
 function sensor_pyramid_enter:on_activated()
   if not game:get_value("b1069") then
     game:start_dialog("pyramid_enter", function()
@@ -107,7 +113,6 @@ if boss_manhandla ~= nil then
   sol.audio.play_sound("boss_killed")
   if boss_heart ~= nil then boss_heart:get_sprite():fade_in(30, function()
     boss_heart:set_enabled(true)
-    game:set_dungeon_finished(3)
     sol.audio.play_music("airship")
    end)
   end

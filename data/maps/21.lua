@@ -45,7 +45,7 @@ function map:on_started(destination)
       end)
       hero:unfreeze()
       game:set_value("i1068", 2)
-      sol.timer.start(2000, function() npc_monkey:remove() end)
+      sol.timer.start(3000, function() npc_monkey:remove() end)
     end)
   end
   if game:get_item("airship_part"):get_variant() == 3 then

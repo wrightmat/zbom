@@ -20,13 +20,7 @@ local function follow_hero(npc)
   local npc_x, npc_y, npc_layer = npc:get_position()
   local distance_hero = math.abs((hero_x+hero_y)-(npc_x+npc_y))
   local m = sol.movement.create("target")
-  if distance_hero > 1000 then
-    m:set_speed(64)
-  elseif distance_hero < 20 then
-    m:set_speed(32)
-  else
-    m:set_speed(48)
-  end
+  m:set_speed(40)
   m:start(npc)
   npc:get_sprite():set_animation("walking")
 end

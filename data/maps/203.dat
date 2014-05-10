@@ -10162,8 +10162,6 @@ stream{
   y = 701,
   direction = 6,
   sprite = "entities/conveyor",
-  allow_movement = false,
-  allow_item = false,
 }
 
 stream{
@@ -10173,7 +10171,6 @@ stream{
   direction = 6,
   sprite = "entities/conveyor",
   allow_movement = false,
-  allow_attack = false,
   allow_item = false,
 }
 
@@ -11264,7 +11261,7 @@ dynamic_tile{
 enemy{
   layer = 0,
   x = 936,
-  y = 344,
+  y = 360,
   name = "room14_moth_1",
   direction = 3,
   breed = "moth",
@@ -11274,7 +11271,7 @@ enemy{
 enemy{
   layer = 0,
   x = 952,
-  y = 344,
+  y = 360,
   name = "room14_moth_2",
   direction = 3,
   breed = "moth",
@@ -11324,7 +11321,7 @@ enemy{
 enemy{
   layer = 0,
   x = 1080,
-  y = 344,
+  y = 360,
   name = "room14_moth_7",
   direction = 3,
   breed = "moth",
@@ -13404,7 +13401,7 @@ wall{
 enemy{
   layer = 0,
   x = 1096,
-  y = 344,
+  y = 360,
   name = "room14_moth_8",
   direction = 3,
   breed = "moth",

@@ -5,6 +5,8 @@ local game = map:get_game()
 -- Dungeon 1: Hyrulean Sewers --
 --------------------------------
 
+if game:get_value("i1030") == nil then game:set_value("i1030", 0) end
+
 if game:has_item("lamp") then
   lantern_overlay = sol.surface.create("entities/dark.png")
 else

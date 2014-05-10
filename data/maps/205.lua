@@ -58,8 +58,14 @@ function map:on_started(destination)
   end)
   -- complete dungeon (if not done already)
   if game:get_value("b1110") and game:get_value("b1117") and game:get_value("b1118") then
-    game:set_dungeon_finished(3)
+    game:set_dungeon_finished(4)
     game:set_value("i1029", 6)
+  end
+end
+
+function map:on_obtained_treasure(treasure_item, treasure_variant, treasure_savegame_variable)
+  if treasure_name == "book_mudora" then
+    game:set_dungeon_finished(4)
   end
 end
 
@@ -122,7 +128,6 @@ if boss_vire ~= nil then
   end
   chest_book:set_enabled(true)
   sol.audio.play_sound("chest_appears")
-  game:set_dungeon_finished(4)
   sol.audio.play_music("temple_mausoleum")
   sol.timer.start(2000, function()
     game:start_dialog("_mausoleum_outro", function()
