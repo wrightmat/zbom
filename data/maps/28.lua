@@ -58,8 +58,15 @@ end
 for enemy in map:get_entities("chuchu") do
   enemy.on_dead = function()
     if not map:has_entities("chuchu") and game:get_value("i1027") <= 4 then
-      game:start_dialog("crista.1.woods_chuchu_after", game:get_player_name())
-      game:set_value("i1027", 5)
+      game:start_dialog("crista.1.woods_chuchu_after", game:get_player_name(), function()
+        game:set_value("i1027", 5)
+        local m = sol.movement.create("target")
+        m:set_target(776, 1120)
+        m:set_speed(32)
+        m:start(npc_crista, function()
+	  npc_crista:remove()
+        end)
+      end)
     end
   end
 end
