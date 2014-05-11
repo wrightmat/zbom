@@ -66,7 +66,7 @@ function sensor_miniboss:on_activated()
     map:close_doors("door_miniboss_enter")
     map:close_doors("door_miniboss_exit")
     miniboss_lanmola:set_enabled(true)
-    sol.audio.play_music("boss")
+    sol.audio.play_music("miniboss")
   end
 end
 

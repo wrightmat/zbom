@@ -6738,7 +6738,7 @@ teletransporter{
 pickable{
   layer = 0,
   x = 872,
-  y = 629,
+  y = 581,
   name = "boss_heart",
   treasure_name = "heart_container",
   treasure_savegame_variable = "b1059",
@@ -6796,6 +6796,28 @@ wall{
   stops_npcs = true,
   stops_blocks = true,
   stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 624,
+  y = 616,
+  width = 320,
+  height = 16,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 688,
+  y = 504,
+  width = 16,
+  height = 112,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
 }
 
 tile{

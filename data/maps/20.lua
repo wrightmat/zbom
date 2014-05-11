@@ -41,7 +41,11 @@ end
 function sensor_deku_tokay:on_activated()
   if game:get_value("i1068") == 0 then
     game:set_value("i1068", 1)
-    game:start_dialog("tokay.0.faron")
+    sol.audio.play_sound("tokay")
+    game:start_dialog("tokay.0.faron", function()
+      sol.audio.play_sound("deku")
+      game:start_dialog("deku.0.faron")
+    end)
   elseif game:get_value("i1068") == 7 then
     -- In the future there may be a mini-game to retrieve book piece, but for now just give it back
     game:set_value("i1068", 9)

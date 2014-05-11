@@ -67,6 +67,7 @@ function sensor_miniboss_start:on_activated()
   if not game:get_value("b1057") then
     miniboss_mothulita:set_enabled(true)
     map:close_doors("door_miniboss")
+    sol.audio.play_music("miniboss")
   end
 end
 
@@ -165,12 +166,12 @@ for enemy in map:get_entities("room10") do
   end
 end
 
-for enemy in map:get_entities("miniboss") do
-  enemy.on_dead = function()
-    if not map:has_entity("miniboss_mothulita") then
-      map:open_doors("door_miniboss")
-      game:set_value("b1057", true)
-    end
+if miniboss_mothulita ~= nil then
+  function miniboss_mothulita:on_dead()
+    sol.audio.play_sound("boss_killed")
+    map:open_doors("door_miniboss")
+    game:set_value("b1057", true)
+    sol.audio.play_music("temple_grove")
   end
 end
 
