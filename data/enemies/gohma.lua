@@ -34,14 +34,14 @@ function enemy:check_action()
       treasure_name = "heart"
      }
     end
-    if action >= 1 and action <= 7 then self:blink() else self:go(88) end
+    if action >= 1 and action <= 7 then self:blink() else self:go(80) end
   elseif self:get_life() < 3 and self:get_life() > 0 and map:get_entities_count(self:get_name().."_son") <= 15 then
     -- final phase: if more than 6 hits then move a lot faster, and create tektites!
     self:create_enemy{
       name = self:get_name().."_son",
       breed = "tektite_green"
     }
-    if action >= 1 and action <= 6 then self:blink() else self:go(128) end
+    if action >= 1 and action <= 6 then self:blink() else self:go(104) end
   end
   sol.timer.start(self, 2000, function() self:open() end)
 end
