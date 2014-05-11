@@ -55,6 +55,8 @@ local function end_race_won()
       end)
     end
   end)
+  game:quit_hud()
+  game:initialize_hud() -- reset the hud or it freezes for some reason
 end
 
 function map:on_started(destination)
