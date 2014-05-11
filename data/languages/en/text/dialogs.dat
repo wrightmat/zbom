@@ -2557,6 +2557,19 @@ up to the gate to race!
 }
 
 dialog{
+  id = "tristan.0.festival_lantern",
+  skip = "current",
+  text = [[
+What? You're wondering
+how to get your hands on
+a lantern? Maybe check
+with Ulo, he's the mayor
+and knows everything
+about everything!
+  ]]
+}
+
+dialog{
   id = "tristan.0.festival_no",
   skip = "current",
   text = [[
@@ -2976,6 +2989,13 @@ dialog{
 Take care of that.
 And come visit me later
 if you need anything.
+  ]]
+}
+
+dialog{
+  id = "rudy.0.festival_reward_3",
+  skip = "current",
+  text = [[
 By the way, I heard
 your friend at the
 potion shop was looking
@@ -3338,7 +3358,7 @@ time with my people!
 -----------------------
 
 dialog{
-  id = "great_fairy.1.faron",
+  id = "great_fairy.0.faron",
   skip = "current",
   text = [[
 Oh, great hero!
@@ -3363,6 +3383,64 @@ Please help me, hero!
   ]]
 }
 
+dialog{
+  id = "great_fairy.5.faron",
+  skip = "current",
+  text = [[
+You've collected all
+the Mystic Jade I
+need, great work! I
+can now restore my
+beautiful forest to
+its former state.
+Allow me to reward
+you for your efforts...
+  ]]
+}
+
+dialog{
+  id = "great_fairy.1",
+  skip = "current",
+  text = [[
+Please return when
+you've collected more
+Mystic Jade.
+I'm counting on
+you, hero!
+  ]]
+}
+
+dialog{
+  id = "great_fairy.2",
+  skip = "current",
+  text = [[
+You've made progress,
+hero! I feel stronger
+already. Thank you!
+  ]]
+}
+
+dialog{
+  id = "great_fairy.3",
+  skip = "current",
+  text = [[
+Wow, you've come a long
+way in your search!
+I feel much stronger
+now. Thank you!
+  ]]
+}
+
+dialog{
+  id = "great_fairy.4",
+  skip = "current",
+  text = [[
+I can feel that you've
+almost reached the goal!
+I'm almost to full
+strength. Thank you!
+  ]]
+}
 
 -- *** MINOR CHARACTERS (those seen at one or a few points in the game and not extremely important) ***
 -- Include: Julita, Ordon residents and children, representatives of various races
@@ -3689,6 +3767,16 @@ Ranch. If you come
 back in a bit, I
 might have some milkin'
 contests goin'!
+  ]]
+}
+
+dialog{
+  id = "tern.0.festival_race",
+  skip = "current",
+  text = [[
+Why'd you stop to talk
+to me? The clock's
+tickin'!
   ]]
 }
 

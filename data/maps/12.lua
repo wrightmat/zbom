@@ -130,19 +130,15 @@ end
 function torch_1:on_interaction_item(lamp)
   torch_1:get_sprite():set_animation("lit")
 end
-
 function torch_2:on_interaction_item(lamp)
   torch_2:get_sprite():set_animation("lit")
 end
-
 function torch_3:on_interaction_item(lamp)
   torch_3:get_sprite():set_animation("lit")
 end
-
 function torch_4:on_interaction_item(lamp)
   torch_4:get_sprite():set_animation("lit")
 end
-
 function torch_5:on_interaction_item(lamp)
   torch_5:get_sprite():set_animation("lit")
 end

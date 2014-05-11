@@ -155,29 +155,16 @@ function map:on_started(destination)
 end
 
 function npc_rudy:on_interaction()
-  if game:get_value("i1902") > 0 then
-    if game:get_value("i1027") >= 3 and not game:has_item("shield") then
+  if game:get_value("i1027") >= 3 then
+    if not game:has_item("shield") then
       game:start_dialog("rudy.0.festival_reward", function()
         game:set_value("i1902", game:get_value("i1902")+1)
         hero:start_treasure("shield", 1, "b1820", function()
-          game:start_dialog("rudy.0.festival_reward_2")
-        end)
-      end)
-    else
-      game:start_dialog("rudy.1.festival")
-    end
-  else
-    game:start_dialog("rudy.0.festival")
-    if game:get_value("i1902") == 0 then game:set_value("i1902", 1) end
-  end
-end
-function npc_rudy_sensor:on_interaction()
-  if game:get_value("i1902") > 0 then
-    if game:get_value("i1027") >= 3 and not game:has_item("shield") then
-      game:start_dialog("rudy.0.festival_reward", function()
-        game:set_value("i1902", game:get_value("i1902")+1)
-        hero:start_treasure("shield", 1, "b1820", function()
-          game:start_dialog("rudy.0.festival_reward_2")
+          game:start_dialog("rudy.0.festival_reward_2", function()
+            if game:get_value("i1903") < 2 then
+	      game:start_dialog("rudy.0.festival_reward_3")
+            end
+          end)
         end)
       end)
     else
@@ -229,31 +216,11 @@ function npc_ulo:on_interaction()
 end
 
 function npc_julita:on_interaction()
-  if game:get_value("i1903") >= 1 and game:get_value("i1027") >= 4 then
+  if game:get_value("i1027") >= 4 then
     if quest_julita ~= nil then quest_julita:remove() end
-    game:start_dialog("julita.1", game:get_player_name())
-  elseif game:get_value("i1027") < 5 then
-    game:start_dialog("julita.0.festival", function(answer)
-      if answer == 1 then
-        if game:get_magic() then
-          game:add_magic(20)
-          game:start_dialog("julita.0.festival_yes")
-        else
-          game:start_dialog("julita.0.festival_magic")
-        end
-      else
-        game:start_dialog("julita.0.festival_no")
-      end
-      game:set_value("i1903", game:get_value("i1903")+1)
+    game:start_dialog("julita.1", game:get_player_name(), function()
+      game:set_value("i1903", 2)
     end)
-  else
-    game:start_dialog("julita.0")
-  end
-end
-function npc_julita_sensor:on_interaction()
-  if game:get_value("i1903") >= 1 and game:get_value("i1027") >= 4 then
-    if quest_julita ~= nil then quest_julita:remove() end
-    game:start_dialog("julita.1", game:get_player_name())
   elseif game:get_value("i1027") < 5 then
     game:start_dialog("julita.0.festival", function(answer)
       if answer == 1 then
@@ -266,7 +233,7 @@ function npc_julita_sensor:on_interaction()
       else
         game:start_dialog("julita.0.festival_no")
       end
-      game:set_value("i1903", game:get_value("i1903")+1)
+      game:set_value("i1903", 1)
     end)
   else
     game:start_dialog("julita.0")

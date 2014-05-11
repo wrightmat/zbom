@@ -117,9 +117,9 @@ function sensor_festival_dialog:on_activated()
           game:start_dialog("tristan.0.festival_response", game:get_player_name(), function()
             game:start_dialog("francis.1.festival_race", function(answer)
               if answer == 1 then
+		game:set_value("i1028", 1)
                 if game:has_item("lamp") then
                   game:start_dialog("tristan.0.festival_rules", function()
-		    game:set_value("i1028", 1)
 		    random_walk(npc_jarred)
 		    random_walk(npc_francis)
                   end)
@@ -134,16 +134,24 @@ function sensor_festival_dialog:on_activated()
         end)
       end)
     end)
+  elseif game:get_value("i1028") > 1 and game:get_value("i1028") <= 3 then
+    game:start_dialog("tristan.0.festival_underway")
   end
 end
 
 function sensor_start_race:on_activated()
-  if hero:get_direction() == 1 then
+  if hero:get_direction() == 1 and game:has_item("lamp") then
     if game:get_value("i1028") <= 1 or game:get_value("i1028") == 4 then
       game:set_value("i1028", 2)
       race_timer = sol.timer.start(game, 140000, end_race_lost)
       race_timer:set_with_sound(true)
     end
+  end
+end
+
+function sensor_race:on_activated()
+  if hero:get_direction() == 1 then
+    game:start_dialog("tristan.0.festival_underway")
   end
 end
 
@@ -173,25 +181,23 @@ end
 
 function npc_tern:on_interaction()
   if game:get_value("i1027") <= 5 then
-    game:start_dialog("tern.0.festival")
+    if game:get_value("i1028") > 1 and game:get_value("i1028") <= 3 then
+      game:start_dialog("tern.0.festival_race")
+    else
+      game:start_dialog("tern.0.festival")
+    end
   else
     game:start_dialog("tern.1.ranch")
   end
 end
 
 function npc_tristan:on_interaction()
-  if game:get_value("i1028") <= 1 then
-    game:start_dialog("tristan.0.festival_question", function(answer)
-      if answer == 1 then
-        if game:has_item("lamp") then
-          game:start_dialog("tristan.0.festival_rules")
-        else
-          game:start_dialog("tristan.0.festival_lamp")
-        end
-      else
-        game:start_dialog("tristan.0.festival_no")
-      end
-    end)
+  if game:get_value("i1028") == 1 then
+    if game:has_item("lamp") then
+      game:start_dialog("tristan.0.festival_rules")
+    else
+      game:start_dialog("tristan.0.festival_lantern")
+    end
   elseif game:get_value("i1028") > 1 and game:get_value("i1028") <= 3 then
     game:start_dialog("tristan.0.festival_underway")
   elseif game:get_value("i1028") == 4 then
@@ -202,6 +208,19 @@ function npc_tristan:on_interaction()
     else
       game:start_dialog("tristan.0.festival_won", game:get_player_name())
     end
+  else
+    game:start_dialog("tristan.0.festival_question", function(answer)
+      if answer == 1 then
+	game:set_value("i1028", 1)
+        if game:has_item("lamp") then
+          game:start_dialog("tristan.0.festival_rules")
+        else
+          game:start_dialog("tristan.0.festival_lamp")
+        end
+      else
+        game:start_dialog("tristan.0.festival_no")
+      end
+    end)
   end
 end
 
@@ -227,8 +246,15 @@ function map:on_update()
     game:set_value("i1028", 3)
   end
   if game:get_value("i1028") == 2 or game:get_value("i1028") == 3 then
-    banner_race_1:set_enabled(true)
-    banner_race_2:set_enabled(true)
+    map:set_entities_enabled("banner_race", true)
+    map:set_entities_enabled("sensor_race", true)
+    block_race:set_enabled(true)
+    to_ranch:set_enabled(false)
+  else
+    map:set_entities_enabled("banner_race", false)
+    map:set_entities_enabled("sensor_race", false)
+    block_race:set_enabled(false)
+    to_ranch:set_enabled(true)
   end
   -- Show remaining timer time on screen
   if race_timer ~= nil then

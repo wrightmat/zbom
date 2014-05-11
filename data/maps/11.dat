@@ -10971,6 +10971,36 @@ npc{
   sprite = "npc/hylian_gaira",
 }
 
+dynamic_tile{
+  layer = 0,
+  x = 184,
+  y = 832,
+  width = 24,
+  height = 24,
+  name = "banner_race_3",
+  pattern = 1619,
+  enabled_at_start = false,
+}
+
+sensor{
+  layer = 0,
+  x = 232,
+  y = 917,
+  width = 48,
+  height = 16,
+  name = "sensor_race",
+}
+
+wall{
+  layer = 0,
+  x = 664,
+  y = 1032,
+  width = 88,
+  height = 16,
+  name = "block_race",
+  stops_hero = true,
+}
+
 tile{
   layer = 1,
   x = 208,

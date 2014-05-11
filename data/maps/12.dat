@@ -1775,9 +1775,9 @@ tile{
 tile{
   layer = 0,
   x = 920,
-  y = 112,
+  y = 176,
   width = 8,
-  height = 96,
+  height = 32,
   pattern = 273,
 }
 
@@ -2710,8 +2710,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 344,
-  y = 336,
+  x = 352,
+  y = 344,
   width = 48,
   height = 16,
   pattern = 505,
@@ -2737,8 +2737,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 352,
-  y = 352,
+  x = 360,
+  y = 360,
   width = 32,
   height = 8,
   pattern = 523,
@@ -3664,8 +3664,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 296,
-  y = 288,
+  x = 304,
+  y = 296,
   width = 16,
   height = 16,
   pattern = 42,
@@ -4411,8 +4411,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 344,
-  y = 312,
+  x = 352,
+  y = 320,
   width = 48,
   height = 24,
   pattern = 1499,
@@ -4627,8 +4627,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 336,
-  y = 328,
+  x = 344,
+  y = 336,
   width = 8,
   height = 16,
   pattern = 1498,
@@ -4636,8 +4636,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 392,
-  y = 328,
+  x = 400,
+  y = 336,
   width = 8,
   height = 16,
   pattern = 1500,
@@ -5307,6 +5307,24 @@ tile{
   width = 16,
   height = 16,
   pattern = 524,
+}
+
+tile{
+  layer = 0,
+  x = 920,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = 272,
+}
+
+tile{
+  layer = 0,
+  x = 920,
+  y = 112,
+  width = 8,
+  height = 80,
+  pattern = 616,
 }
 
 wall{
@@ -7615,8 +7633,8 @@ tile{
 
 tile{
   layer = 2,
-  x = 344,
-  y = 280,
+  x = 352,
+  y = 288,
   width = 48,
   height = 32,
   pattern = 1495,
@@ -7831,8 +7849,8 @@ tile{
 
 tile{
   layer = 2,
-  x = 336,
-  y = 304,
+  x = 344,
+  y = 312,
   width = 8,
   height = 24,
   pattern = 1494,
@@ -7840,8 +7858,8 @@ tile{
 
 tile{
   layer = 2,
-  x = 392,
-  y = 304,
+  x = 400,
+  y = 312,
   width = 8,
   height = 24,
   pattern = 1497,
