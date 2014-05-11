@@ -7319,6 +7319,9 @@ wall{
   width = 160,
   height = 8,
   name = "custom_obstacle_3",
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
 }
 
 wall{
