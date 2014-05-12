@@ -8,7 +8,7 @@ function enemy:on_created()
   self:create_sprite("enemies/lanmola_body")
   self:set_size(16, 16)
   self:set_origin(8, 8)
-  self:go(32)
+  self:go(40)
   self:set_invincible(true)
 end
 
@@ -29,9 +29,9 @@ function enemy:go(speed)
 end
 
 function enemy:on_restarted()
-  self:go(32)
+  self:go(40)
 end
 
 function enemy:on_obstacle_reached()
-  self:go(32)
+  self:go(40)
 end
