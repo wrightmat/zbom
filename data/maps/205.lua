@@ -56,16 +56,12 @@ function map:on_started(destination)
     if game:get_magic() > 1 then game:remove_magic(1) end
     return true
   end)
-  -- complete dungeon (if not done already)
-  if game:get_value("b1110") and game:get_value("b1117") and game:get_value("b1118") then
-    game:set_dungeon_finished(4)
-    game:set_value("i1029", 6)
-  end
 end
 
 function map:on_obtained_treasure(treasure_item, treasure_variant, treasure_savegame_variable)
   if treasure_name == book_mudora then
     game:set_dungeon_finished(4)
+    game:set_value("i1029", 6)
   end
 end
 

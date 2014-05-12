@@ -23,9 +23,6 @@ function map:on_started(destination)
   if not game:get_value("b1089") then chest_room18_part:set_enabled(false) end
   if not game:get_value("b1074") then boss_heart:set_enabled(false) end
   map:set_doors_open("door_miniboss_enter")
-  -- complete dungeon (if not done already)
-  if game:get_value("b1079") and game:get_value("b1074") and game:get_value("b1082") then
-    game:set_dungeon_finished(3) end
 end
 
 function map:on_obtained_treasure(treasure_item, treasure_variant, treasure_savegame_variable)

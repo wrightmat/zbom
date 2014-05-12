@@ -40,6 +40,7 @@ function enemy:check_action()
     self:create_enemy{
       name = self:get_name().."_son",
       breed = "tektite_green"
+      treasure_name = "random_woods"
     }
     if action >= 1 and action <= 6 then self:blink() else self:go(104) end
   end
