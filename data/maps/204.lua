@@ -108,11 +108,10 @@ if boss_manhandla ~= nil then
   map:open_doors("door_boss")
   map:open_doors("door_boss_shutter")
   sol.audio.play_sound("boss_killed")
-  if boss_heart ~= nil then boss_heart:get_sprite():fade_in(30, function()
+  boss_heart:get_sprite():fade_in(30, function()
     boss_heart:set_enabled(true)
     sol.audio.play_music("airship")
    end)
-  end
  end
 end
 

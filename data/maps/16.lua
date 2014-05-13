@@ -11,10 +11,10 @@ if game:get_value("i1602")==nil then game:set_value("i1602", 0) end
 local function follow_hero(npc)
   local hero_x, hero_y, hero_layer = hero:get_position()
   local npc_x, npc_y, npc_layer = npc:get_position()
-  local distance_hero = math.abs((hero_x+hero_y)-(npc_x+npc_y))
   local m = sol.movement.create("target")
   m:set_speed(40)
   npc:get_sprite():set_animation("walking")
+  m:start(npc)
 end
 
 function map:on_started(destination)
@@ -27,8 +27,8 @@ function npc_gaira:on_interaction()
   if game:get_value("i1602") >= 2 then
     game:start_dialog("gaira.3.faron", function()
       game:set_value("i1602", 3)
-      follow_hero(npc_gaira)
     end)
+    follow_hero(npc_gaira)
   else
     game:start_dialog("gaira.2.faron")
   end

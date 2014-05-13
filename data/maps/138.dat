@@ -6529,6 +6529,17 @@ npc{
   behavior = "item#lamp",
 }
 
+dynamic_tile{
+  layer = 0,
+  x = 504,
+  y = 584,
+  width = 16,
+  height = 16,
+  name = "door",
+  pattern = 1120,
+  enabled_at_start = true,
+}
+
 tile{
   layer = 1,
   x = 496,

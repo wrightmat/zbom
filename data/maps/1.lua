@@ -74,6 +74,9 @@ function shop_potion_red:on_buying()
   if self:get_game():get_first_empty_bottle() == nil then
     game:start_dialog("shop.no_bottle")
     return false
+  else
+    hero:start_treasure("potion", 1)
+    game:remove_money(50)
   end
 end
 
@@ -81,6 +84,9 @@ function shop_potion_green:on_buying()
   if self:get_game():get_first_empty_bottle() == nil then
     game:start_dialog("shop.no_bottle")
     return false
+  else
+    hero:start_treasure("potion", 2)
+    game:remove_money(100)
   end
 end
 

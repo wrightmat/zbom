@@ -1106,12 +1106,13 @@ tile{
   pattern = 439,
 }
 
-destination{
+tile{
   layer = 0,
-  x = 184,
-  y = 277,
-  name = "from_outside_door1",
-  direction = 1,
+  x = 408,
+  y = 264,
+  width = 32,
+  height = 24,
+  pattern = 347,
 }
 
 destination{
@@ -1119,6 +1120,14 @@ destination{
   x = 424,
   y = 277,
   name = "from_outside_door2",
+  direction = 1,
+}
+
+destination{
+  layer = 0,
+  x = 184,
+  y = 277,
+  name = "from_outside_door1",
   direction = 1,
 }
 
