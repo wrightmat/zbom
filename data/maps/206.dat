@@ -8353,6 +8353,15 @@ stream{
   allow_item = false,
 }
 
+enemy{
+  layer = 0,
+  x = 592,
+  y = 245,
+  name = "bari",
+  direction = 3,
+  breed = "bari_blue",
+}
+
 tile{
   layer = 2,
   x = 248,

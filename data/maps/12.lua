@@ -24,22 +24,13 @@ local function are_all_torches_on()
     and game:get_value("i1028") == 3
 end
 
-function end_race_lost()
-  sol.audio.play_sound("wrong");
-  game:set_value("i1028", 4);
-  torch_1:get_sprite():set_animation("unlit")
-  torch_2:get_sprite():set_animation("unlit")
-  torch_3:get_sprite():set_animation("unlit")
-  torch_4:get_sprite():set_animation("unlit")
-  torch_5:get_sprite():set_animation("unlit")
-end
-
 local function end_race_won()
   sol.timer.stop_all(game)
   sol.audio.play_sound("secret")
   game:set_value("i1027", 3)
   game:set_value("i1028", 5)
   npc_tristan:get_sprite():set_direction(0)
+  game.race_timer = nil
   game:start_dialog("tristan.0.festival_won", game:get_player_name(), function()
     if game:get_value("i1027") < 4 then
       sol.timer.start(1000, function()
@@ -114,17 +105,17 @@ function game:on_map_changed(map)
       torch_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
     end
     -- Show remaining timer time on screen
-    if race_timer ~= nil then
+    if game.race_timer ~= nil then
       local timer_icon = sol.surface.create("hud/timer.png")
-      local timer_time = race_timer:get_remaining_time()
+      local timer_time = math.floor(game.race_timer:get_remaining_time() / 1000)
       local timer_text = sol.text_surface.create{
         font = "white_digits",
         horizontal_alignment = "left",
         vertical_alignment = "top",
       }
-      timer_icon:draw(dst_surface, 25, 55)
+      timer_icon:draw(dst_surface, 5, 55)
       timer_text:set_text(timer_time)
-      timer_text:draw(dst_surface, 45, 60)
+      timer_text:draw(dst_surface, 22, 58)
     end
   end
 end

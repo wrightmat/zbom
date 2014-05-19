@@ -33,11 +33,7 @@ local function are_all_torches_on()
 end
 
 function end_race_lost()
-  sol.audio.play_sound("wrong")
-  game:set_value("i1028", 4);
-  torch_1:get_sprite():set_animation("unlit")
-  torch_2:get_sprite():set_animation("unlit")
-  torch_3:get_sprite():set_animation("unlit")
+
 end
 
 function map:on_started(destination)
@@ -143,8 +139,17 @@ function sensor_start_race:on_activated()
   if hero:get_direction() == 1 and game:has_item("lamp") then
     if game:get_value("i1028") <= 1 or game:get_value("i1028") == 4 then
       game:set_value("i1028", 2)
-      race_timer = sol.timer.start(game, 140000, end_race_lost)
-      race_timer:set_with_sound(true)
+      game.race_timer = sol.timer.start(game, 120000, function()
+	sol.audio.play_sound("wrong")
+	game:set_value("i1028", 4);
+	torch_1:get_sprite():set_animation("unlit")
+	torch_2:get_sprite():set_animation("unlit")
+	torch_3:get_sprite():set_animation("unlit")
+	if torch_4 ~= nil then torch_4:get_sprite():set_animation("unlit") end
+	if torch_5 ~= nil then torch_5:get_sprite():set_animation("unlit") end
+	game.race_timer = nil
+      end)
+      game.race_timer:set_with_sound(true)
     end
   end
 end
@@ -257,18 +262,18 @@ function map:on_update()
     to_ranch:set_enabled(true)
   end
   -- Show remaining timer time on screen
-  if race_timer ~= nil then
+  if game.race_timer ~= nil then
     function map:on_draw(dst_surface)
       local timer_icon = sol.surface.create("hud/timer.png")
-      local timer_time = race_timer:get_remaining_time()
+      local timer_time = math.floor(game.race_timer:get_remaining_time() / 1000)
       local timer_text = sol.text_surface.create{
         font = "white_digits",
         horizontal_alignment = "left",
         vertical_alignment = "top",
       }
-      timer_icon:draw(dst_surface, 25, 55)
+      timer_icon:draw(dst_surface, 5, 55)
       timer_text:set_text(timer_time)
-      timer_text:draw(dst_surface, 45, 60)
+      timer_text:draw(dst_surface, 22, 58)
     end
   end
 end
