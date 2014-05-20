@@ -9,7 +9,7 @@ function entity:on_created()
   self:create_sprite("entities/quicksand")
   self:set_size(32, 32)
   self:set_origin(16, 16)
-  ex, ey, el, = self:get_position()
+  ex, ey, el = self:get_position()
 end
 
 function entity:on_update()

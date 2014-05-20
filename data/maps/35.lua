@@ -6,7 +6,10 @@ local game = map:get_game()
 ------------------------------------------------------------------
 
 function map:on_started(destination)
-
+  if game:get_value("i1030") >= 2 then
+    map:set_entities_enabled("water", false)
+    map:set_entities_enabled("wake", false)
+  end
 end
 
 function game:on_map_changed(map)
