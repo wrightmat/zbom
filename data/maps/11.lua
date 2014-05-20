@@ -142,11 +142,12 @@ function sensor_start_race:on_activated()
       game.race_timer = sol.timer.start(game, 120000, function()
 	sol.audio.play_sound("wrong")
 	game:set_value("i1028", 4);
-	torch_1:get_sprite():set_animation("unlit")
-	torch_2:get_sprite():set_animation("unlit")
-	torch_3:get_sprite():set_animation("unlit")
-	if torch_4 ~= nil then torch_4:get_sprite():set_animation("unlit") end
-	if torch_5 ~= nil then torch_5:get_sprite():set_animation("unlit") end
+	local map = game:get_map()
+	map:get_entity("torch_1"):get_sprite():set_animation("unlit")
+	map:get_entity("torch_2"):get_sprite():set_animation("unlit")
+	map:get_entity("torch_3"):get_sprite():set_animation("unlit")
+	if map:get_entity("torch_4") ~= nil then map:get_entity("torch_4"):get_sprite():set_animation("unlit") end
+	if map:get_entity("torch_5") ~= nil then map:get_entity("torch_5"):get_sprite():set_animation("unlit") end
 	game.race_timer = nil
       end)
       game.race_timer:set_with_sound(true)

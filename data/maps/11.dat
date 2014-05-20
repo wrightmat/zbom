@@ -8792,6 +8792,15 @@ tile{
   pattern = 1499,
 }
 
+tile{
+  layer = 0,
+  x = 424,
+  y = 640,
+  width = 16,
+  height = 16,
+  pattern = 524,
+}
+
 destructible{
   layer = 0,
   x = 1008,
@@ -10999,6 +11008,17 @@ wall{
   height = 16,
   name = "block_race",
   stops_hero = true,
+}
+
+destructible{
+  layer = 0,
+  x = 432,
+  y = 653,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = 1,
+  can_be_cut = true,
 }
 
 tile{

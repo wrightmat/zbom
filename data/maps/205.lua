@@ -59,7 +59,7 @@ function map:on_started(destination)
 end
 
 function map:on_obtained_treasure(treasure_item, treasure_variant, treasure_savegame_variable)
-  if treasure_name == book_mudora then
+  if treasure_name == book_mudora and treasure_variant == 3 then
     game:set_dungeon_finished(4)
     game:set_value("i1029", 6)
   end

@@ -82,6 +82,8 @@ function npc_tristan:on_interaction()
     end
   elseif game:get_value("i1028") > 0 and game:get_value("i1028") < 4 then
     game:start_dialog("tristan.0.festival_underway")
+  elseif game:get_value("i1028") == 4 then
+    game:start_dialog("tristan.0.festival_lost")
   elseif game:get_value("i1028") == 0 then
     game:start_dialog("tristan.0.festival_rules")
   end

@@ -8190,6 +8190,15 @@ tile{
   pattern = 675,
 }
 
+tile{
+  layer = 0,
+  x = 256,
+  y = 624,
+  width = 8,
+  height = 16,
+  pattern = 671,
+}
+
 door{
   layer = 0,
   x = 1064,
@@ -8279,7 +8288,7 @@ chest{
   x = 136,
   y = 157,
   name = "chest_map",
-  treasure_name = "map",
+  treasure_name = "hookshot",
   treasure_savegame_variable = "b1127",
   sprite = "entities/chest",
 }
@@ -8360,6 +8369,60 @@ enemy{
   name = "bari",
   direction = 3,
   breed = "bari_blue",
+}
+
+stream{
+  layer = 0,
+  x = 768,
+  y = 677,
+  name = "stream_water_3",
+  direction = 4,
+  sprite = "entities/stream_water",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 752,
+  y = 677,
+  name = "stream_water_4",
+  direction = 4,
+  sprite = "entities/stream_water",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+destructible{
+  layer = 0,
+  x = 272,
+  y = 557,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 328,
+  y = 549,
+  treasure_name = "random",
+  sprite = "entities/stone_small_white",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 304,
+  y = 613,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
 }
 
 tile{
