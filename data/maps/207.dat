@@ -16415,6 +16415,37 @@ destructible{
   destruction_sound = "stone",
 }
 
+destination{
+  layer = 0,
+  x = 1936,
+  y = 853,
+  name = "from_above",
+  direction = 3,
+  default = true,
+}
+
+enemy{
+  layer = 0,
+  x = 320,
+  y = 1204,
+  name = "boss_plasmarine_1",
+  direction = 3,
+  breed = "plasmarine_blue",
+  rank = 2,
+  treasure_name = "plume",
+}
+
+enemy{
+  layer = 0,
+  x = 504,
+  y = 1196,
+  name = "boss_plasmarine_2",
+  direction = 3,
+  breed = "plasmarine_red",
+  rank = 2,
+  treasure_name = "plume",
+}
+
 tile{
   layer = 2,
   x = 1760,

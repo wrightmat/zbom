@@ -8190,6 +8190,117 @@ tile{
   pattern = 675,
 }
 
+tile{
+  layer = 0,
+  x = 1456,
+  y = 624,
+  width = 32,
+  height = 32,
+  pattern = 524,
+}
+
+tile{
+  layer = 0,
+  x = 1464,
+  y = 648,
+  width = 16,
+  height = 8,
+  pattern = 317,
+}
+
+tile{
+  layer = 0,
+  x = 1464,
+  y = 624,
+  width = 16,
+  height = 8,
+  pattern = 321,
+}
+
+tile{
+  layer = 0,
+  x = 1456,
+  y = 632,
+  width = 8,
+  height = 16,
+  pattern = 323,
+}
+
+tile{
+  layer = 0,
+  x = 1480,
+  y = 632,
+  width = 8,
+  height = 16,
+  pattern = 319,
+}
+
+tile{
+  layer = 0,
+  x = 1480,
+  y = 648,
+  width = 8,
+  height = 8,
+  pattern = 318,
+}
+
+tile{
+  layer = 0,
+  x = 1456,
+  y = 624,
+  width = 8,
+  height = 8,
+  pattern = 322,
+}
+
+tile{
+  layer = 0,
+  x = 1480,
+  y = 624,
+  width = 8,
+  height = 8,
+  pattern = 320,
+}
+
+tile{
+  layer = 0,
+  x = 1456,
+  y = 648,
+  width = 8,
+  height = 8,
+  pattern = 316,
+}
+
+tile{
+  layer = 0,
+  x = 1440,
+  y = 512,
+  width = 16,
+  height = 16,
+  pattern = 646,
+}
+
+tile{
+  layer = 0,
+  x = 1488,
+  y = 512,
+  width = 16,
+  height = 16,
+  pattern = 646,
+}
+
+teletransporter{
+  layer = 0,
+  x = 1456,
+  y = 624,
+  width = 32,
+  height = 32,
+  name = "to_basement",
+  sound = "hero_falls",
+  destination_map = "207",
+  destination = "from_above",
+}
+
 door{
   layer = 0,
   x = 1064,
@@ -8279,7 +8390,7 @@ chest{
   x = 136,
   y = 157,
   name = "chest_map",
-  treasure_name = "hookshot",
+  treasure_name = "map",
   treasure_savegame_variable = "b1127",
   sprite = "entities/chest",
 }
@@ -8295,8 +8406,8 @@ enemy{
 
 custom_entity{
   layer = 0,
-  x = 544,
-  y = 1128,
+  x = 392,
+  y = 240,
   width = 16,
   height = 16,
   name = "quicksand_3",
@@ -8384,6 +8495,99 @@ stream{
   allow_movement = false,
   allow_attack = false,
   allow_item = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1456,
+  y = 624,
+  width = 32,
+  height = 32,
+  name = "grate",
+  pattern = 623,
+  enabled_at_start = true,
+}
+
+door{
+  layer = 0,
+  x = 1368,
+  y = 440,
+  name = "door_miniboss_1",
+  direction = 0,
+  sprite = "entities/door_shutter",
+}
+
+door{
+  layer = 0,
+  x = 1416,
+  y = 440,
+  name = "door_miniboss_2",
+  direction = 2,
+  sprite = "entities/door_shutter",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1456,
+  y = 472,
+  width = 16,
+  height = 16,
+  name = "quicksand_2",
+  direction = 3,
+  sprite = "entities/quicksand",
+  model = "quicksand",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1488,
+  y = 472,
+  width = 16,
+  height = 16,
+  name = "quicksand_4",
+  direction = 3,
+  sprite = "entities/quicksand",
+  model = "quicksand",
+}
+
+chest{
+  layer = 0,
+  x = 1472,
+  y = 405,
+  name = "chest_item",
+  treasure_name = "hookshot",
+  treasure_savegame_variable = "b1130",
+  sprite = "entities/chest_big",
+}
+
+destructible{
+  layer = 0,
+  x = 1448,
+  y = 525,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 1496,
+  y = 525,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+enemy{
+  layer = 0,
+  x = 1312,
+  y = 405,
+  name = "miniboss_aquadraco",
+  direction = 3,
+  breed = "aquadraco",
+  rank = 1,
+  savegame_variable = "b1128",
+  treasure_name = "big_key",
 }
 
 tile{
@@ -9230,5 +9434,29 @@ tile{
   width = 64,
   height = 48,
   pattern = 137,
+}
+
+separator{
+  layer = 2,
+  x = 1392,
+  y = 224,
+  width = 16,
+  height = 528,
+}
+
+separator{
+  layer = 2,
+  x = 1408,
+  y = 288,
+  width = 160,
+  height = 16,
+}
+
+separator{
+  layer = 2,
+  x = 1408,
+  y = 736,
+  width = 160,
+  height = 16,
 }
 
