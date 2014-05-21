@@ -14,7 +14,7 @@ end
 
 function entity:on_update()
   self:add_collision_test("overlapping", function()
-    hero:set_walking_speed(hero:get_walking_speed()-1)
+    if hero:get_walking_speed() >= 8 then hero:set_walking_speed(hero:get_walking_speed()-1) end
     m = sol.movement.create("target")
     m:set_target(ex, ey)
     m:start(hero)

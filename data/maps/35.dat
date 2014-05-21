@@ -6128,6 +6128,19 @@ tile{
   pattern = 1694,
 }
 
+wall{
+  layer = 0,
+  x = 264,
+  y = 88,
+  width = 32,
+  height = 24,
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
 teletransporter{
   layer = 0,
   x = 464,
@@ -8304,6 +8317,45 @@ dynamic_tile{
   name = "wake_89",
   pattern = 30,
   enabled_at_start = true,
+}
+
+wall{
+  layer = 0,
+  x = 112,
+  y = 168,
+  width = 48,
+  height = 16,
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 144,
+  y = 256,
+  width = 48,
+  height = 8,
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 272,
+  y = 176,
+  width = 64,
+  height = 8,
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{
