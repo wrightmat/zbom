@@ -5,9 +5,7 @@ local game = map:get_game()
 -- Outside World D7 (Kakariko City) - Houses, Ampitheater, Fireworks! --
 ------------------------------------------------------------------------
 
-sunset_overlay = sol.surface.create(320, 240)
-sunset_overlay:set_opacity(0.4 * 255)
-sunset_overlay:fill_color{187, 33, 21}
+if game:get_value("i1920")==nil then game:set_value("i1920", 0) end
 
 local function random_walk(npc)
   local m = sol.movement.create("random_path")
@@ -28,6 +26,11 @@ function map:on_started(destination)
   fireworks_shower:get_sprite():set_animation("stopped")
   local fire_show = math.random(10)*500
   sol.timer.start(fire_show, fireworks_shower_start)
+  if game:get_time_of_day() == "day" then
+    npc_rowin:remove()
+    npc_moriss:remove()
+    npc_etnaya:remove()
+  end
 
   -- Opening doors
   local entrance_names = {
@@ -56,13 +59,32 @@ function npc_warun:on_interaction()
   game:start_dialog("warun.0")
 end
 
+function npc_moriss:on_interaction()
+  game:start_dialog("moriss.0.show")
+end
+
+function npc_rowin:on_interaction()
+  if game:get_value("i1920") == 1 then
+    game:start_dialog("rowin.1.show", function()
+      game:set_value("i1920", game:get_value("i1920")+1)
+    end)
+  elseif game:get_value("i1920") == 2 then
+    game:start_dialog("rowin.2.show")
+  else
+    game:start_dialog("rowin.0.show")
+  end
+end
+
+function sensor_show:on_activated()
+  game:start_dialog("etnaya.1.show")
+end
+
 function ocarina_wind_to_F14:on_interaction()
   -- if this point not previously discovered
   -- then add it, otherwise do nothing
   if not game:get_value("b1503") then
     game:start_dialog("warp.new_point", function()
       game:set_value("b1503", true)
-
     end)
   else
     -- if other paired point is discovered (and they have the Ocarina),

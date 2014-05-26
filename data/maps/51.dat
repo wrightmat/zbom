@@ -5772,6 +5772,45 @@ dynamic_tile{
   enabled_at_start = false,
 }
 
+npc{
+  layer = 0,
+  x = 344,
+  y = 293,
+  name = "npc_rowin",
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/hylian_rowin",
+}
+
+npc{
+  layer = 0,
+  x = 680,
+  y = 293,
+  name = "npc_moriss",
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/hylian_moriss",
+}
+
+npc{
+  layer = 0,
+  x = 512,
+  y = 333,
+  name = "npc_etnaya",
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/hylian_etnaya",
+}
+
+sensor{
+  layer = 0,
+  x = 352,
+  y = 381,
+  width = 336,
+  height = 16,
+  name = "sensor_show",
+}
+
 tile{
   layer = 1,
   x = 904,

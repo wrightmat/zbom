@@ -4313,6 +4313,21 @@ and catch the show.
 }
 
 dialog{
+  id = "etnaya.1.show",
+  skip = "current",
+  text = [[
+Welcome one and all to
+this year's Kakariko
+Ampitheater stage show!
+I'm proud to introduce
+our star, the one and
+only Rowin!
+Sit back and enjoy
+the show! 
+  ]]
+}
+
+dialog{
   id = "warun.0",
   skip = "current",
   text = [[
@@ -4932,6 +4947,54 @@ are, just go away.
 }
 
 dialog{
+  id = "rowin.0.show",
+  skip = "current",
+  text = [[
+Sure kid, I'll sign
+an autograph.
+  ]]
+}
+
+dialog{
+  id = "rowin.1.show",
+  skip = "current",
+  text = [[
+Hey, didn't I meet
+you at the pub earlier?
+You actually came to
+see my show? Well,
+maybe you're not so
+bad after all.
+  ]]
+}
+
+dialog{
+  id = "rowin.2.show",
+  skip = "current",
+  text = [[
+Why yes, my performance
+was quite good. Thanks
+for noticing.
+  ]]
+}
+
+dialog{
+  id = "rowin.2.pub",
+  skip = "current",
+  text = [[
+Hey kid, you're all
+right. What's your
+name? $v? Well tell
+you what, $v.
+You come back here
+any time and Moriss
+or myself will help
+you out with anything
+you need.
+  ]]
+}
+
+dialog{
   id = "moriss.0.pub",
   skip = "current",
   text = [[
@@ -4944,6 +5007,19 @@ the ampitheater, but
 I like to slip in here
 sometimes and have
 a drink!
+  ]]
+}
+
+dialog{
+  id = "moriss.0.show",
+  skip = "current",
+  text = [[
+Hi there! My name's
+Moriss and I'm the
+co-star of this show.
+Rowin over there is
+the real star, you
+should go talk to him.
   ]]
 }
 

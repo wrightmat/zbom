@@ -8,6 +8,7 @@ local game = map:get_game()
 if game:get_value("i1918")==nil then game:set_value("i1918", 0) end
 if game:get_value("i1919")==nil then game:set_value("i1919", 0) end
 if game:get_value("i1920")==nil then game:set_value("i1920", 0) end
+if game:get_value("i1830")==nil then game:set_value("i1830", 0) end
 
 local function random_walk(npc)
   local m = sol.movement.create("random_path")
@@ -23,6 +24,11 @@ function map:on_started(destination)
     if item_bomb_3 ~= nil then item_bomb_3:remove() end
   end
   random_walk(npc_etnaya)
+  if game:get_time_of_day() == "night" then
+    npc_rowin:remove()
+    npc_moriss:remove()
+    npc_etnaya:remove()
+  end
 
   if destination == inn_bed then
     bed:get_sprite():set_animation("hero_sleeping")
@@ -64,9 +70,13 @@ function npc_moriss:on_interaction()
 end
 
 function npc_rowin:on_interaction()
-  game:start_dialog("rowin.0.pub", function()
-    game:set_value("i1920", game:get_value("i1920")+1)
-  end)
+  if game:get_value("i1920") >= 2 then
+    game:start_dialog("rowin.2.pub")
+  else
+    game:start_dialog("rowin.0.pub", function()
+      game:set_value("i1920", game:get_value("i1920")+1)
+    end)
+  end
 end
 
 function npc_garroth_sensor:on_interaction()
