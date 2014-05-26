@@ -7,13 +7,14 @@ sol.main.load_file("menus/pause")(game)
 sol.main.load_file("menus/dialog_box")(game)
 sol.main.load_file("menus/game_over")(game)
 sol.main.load_file("hud/hud")(game)
+local condition_manager = require("hero_condition")
 
 -- Useful functions for this specific quest.
 
 function game:on_started()
-
   -- Set up the dialog box and the HUD.
   self:initialize_dialog_box()
+  condition_manager:initialize(self)
   self:initialize_hud()
 end
 
@@ -62,6 +63,26 @@ end
 -- Returns whether the current map is in a dungeon.
 function game:is_in_dungeon()
   return self:get_dungeon() ~= nil
+end
+
+-- Returns/sets the current time of day
+function game:get_time_of_day()
+  if game:get_value("time_of_day") == nil then game:set_value("time_of_day", "day") end
+  return game:get_value("time_of_day")
+end
+function game:set_time_of_day(tod)
+  if tod == "day" or tod == "night" then
+    game:set_value("time_of_day", tod)
+  end
+  return true
+end
+function game:switch_time_of_day()
+  if game:get_value("time_of_day") == "day" then
+    game:set_value("time_of_day", "night")
+  else
+    game:set_value("time_of_day", "day")
+  end
+  return true
 end
 
 -- Run the game.

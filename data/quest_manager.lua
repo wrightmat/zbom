@@ -4,13 +4,11 @@ local quest_manager = {}
 
 -- Initializes the behavior of destructible entities.
 local function initialize_destructibles()
-
   -- Show a dialog when the player cannot lift them.
   local destructible_meta = sol.main.get_metatable("destructible")
   -- destructible_meta represents the shared behavior of all destructible objects.
 
   function destructible_meta:on_looked()
-
     -- Here, self is the destructible object.
     local game = self:get_game()
     if self:get_can_be_cut()
@@ -30,13 +28,11 @@ end
 
 -- Initializes the behavior of enemies.
 local function initialize_enemies()
-
   -- Enemies: redefine the damage of the hero's sword.
   -- (The default damages are less important.)
   local enemy_meta = sol.main.get_metatable("enemy")
 
   function enemy_meta:on_hurt_by_sword(hero, enemy_sprite)
-
     -- Here, self is the enemy.
     local game = self:get_game()
     local sword = game:get_ability("sword")
@@ -58,26 +54,19 @@ local function initialize_entities()
 end
 
 local function initialize_maps()
-  if game.time_of_day == nil then game.time_of_day = day end
-
   local map_metatable = sol.main.get_metatable("map")
-  function map_metatable:add_night_overlay()
-    -- Here, self is the map.
-    self.overlay = sol.surface.create(320, 240)
-    self.overlay:fill_color{0, 51, 102}
-    self.overlay:set_opacity(0.4 * 255)
-  end
-
-  -- Put the night overlay on any outdoor map if it's night time
-  -- Also activate any night-specific dynamic tiles
-  if game.time_of_day == night then map_metatable:add_night_overlay()
-  for entity in map:get_entities("night_") do
-    entity:set_enabled(true)
-  end
 
   function map_metatable:on_draw(dst_surface)
-    if self.overlay ~= nil and self:get_world == "outside_world" then
-      self.overlay:draw(dst_surface)
+    -- Put the night overlay on any outdoor map if it's night time
+    if self:get_game():get_map():get_world() == "outside_world" and
+    self:get_game():get_time_of_day() == "night" then
+      if night_overlay == nil then
+        night_overlay = sol.surface.create(320, 240)
+        night_overlay:fill_color{0, 51, 102}
+        night_overlay:set_opacity(0.45 * 255)
+      else
+        night_overlay:draw(dst_surface)
+      end
     end
   end
 end

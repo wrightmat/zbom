@@ -44,6 +44,12 @@ function map:on_started(destination)
       end
     end
   end
+  -- Activate any night-specific dynamic tiles
+  if game:get_time_of_day() == "night" then
+    for entity in map:get_entities("night_") do
+      entity:set_enabled(true)
+    end
+  end
 end
 
 function npc_warun:on_interaction()
@@ -73,11 +79,5 @@ function ocarina_wind_to_F14:on_interaction()
       game:start_dialog("warp.interaction")
     end
    end
-  end
-end
-
-function game:on_map_changed(map)
-  function map:on_draw(dst_surface)
-    --if map:get_world() ~= "inside_world" then sunset_overlay:draw(dst_surface) end
   end
 end

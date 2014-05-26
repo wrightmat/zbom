@@ -2,7 +2,7 @@ local condition_manager = {}
 local in_command_pressed = false
 local in_command_release = false
 
-physical_condition_manager.timers = {
+condition_manager.timers = {
   poison = nil,
   slow = nil,
   confusion = nil,
@@ -236,7 +236,7 @@ function condition_manager:initialize(game)
       condition_manager.timers['frozen']:stop()
     end
 
-    hero:set_physical_condition('frozen', false)
+    hero:set_condition('frozen', false)
     if shatter then
       --custent_frozen:shatter()
     else

@@ -5,16 +5,6 @@ local game = map:get_game()
 -- Outside World E7 (Kakariko City) - Houses, Bomb Shop, etc. --
 ----------------------------------------------------------------
 
-sunset_overlay = sol.surface.create(320, 240)
-if hero:get_direction() == 0 or hero:get_direction() == 3 then
-  -- If coming from left side of town or out of house, show the
-  -- sunset overlay. If coming from field (facing up or left), don't.
-  sunset_overlay:set_opacity(0.4 * 255)
-else
-  sunset_overlay:set_opacity(0)
-end
-sunset_overlay:fill_color{187, 33, 21}
-
 local function random_walk(npc)
   local m = sol.movement.create("random_path")
   m:set_speed(32)
@@ -43,6 +33,12 @@ function map:on_started(destination)
       end
     end
   end
+  -- Activate any night-specific dynamic tiles
+  if game:get_time_of_day() == "night" then
+    for entity in map:get_entities("night_") do
+      entity:set_enabled(true)
+    end
+  end
 end
 
 function sensor_music:on_activated()
@@ -54,34 +50,15 @@ end
 
 function sensor_enter_kakariko:on_activated()
   sol.audio.play_music("kakariko")
-  sunset_overlay:set_opacity(0.1*255)
   sensor_enter_field:set_enabled(false)
   sol.timer.start(sensor_enter_kakariko,2000,function()
     sensor_enter_field:set_enabled(true)
-    sunset_overlay:set_opacity(0.2*255)
-    sol.timer.start(sensor_enter_kakariko,2000,function()
-      sunset_overlay:set_opacity(0.3*255)
-    end)
   end)
 end
 function sensor_enter_field:on_activated()
   sol.audio.play_music("field")
-  sunset_overlay:set_opacity(0.3*255)
   sensor_enter_kakariko:set_enabled(false)
   sol.timer.start(sensor_enter_field,2000,function()
     sensor_enter_kakariko:set_enabled(true)
-    sunset_overlay:set_opacity(0.2*255)
-    sol.timer.start(sensor_enter_field,2000,function()
-      sunset_overlay:set_opacity(0.1*255)
-      sol.timer.start(sensor_enter_field,2000,function()
-        sunset_overlay:set_opacity(0)
-      end)
-    end)
   end)
-end
-
-function game:on_map_changed(map)
-  function map:on_draw(dst_surface)
-    --if map:get_world() ~= "inside_world" then sunset_overlay:draw(dst_surface) end
-  end
 end

@@ -5075,6 +5075,83 @@ tile{
   pattern = 311,
 }
 
+dynamic_tile{
+  layer = 0,
+  x = 504,
+  y = 680,
+  width = 16,
+  height = 16,
+  name = "night_entrance_7",
+  pattern = 1778,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 944,
+  y = 248,
+  width = 16,
+  height = 16,
+  name = "night_entrance_6",
+  pattern = 1778,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 864,
+  y = 488,
+  width = 16,
+  height = 16,
+  name = "night_entrance_5",
+  pattern = 1778,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 912,
+  y = 704,
+  width = 16,
+  height = 16,
+  name = "night_entrance_4",
+  pattern = 1778,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 784,
+  y = 952,
+  width = 16,
+  height = 16,
+  name = "night_entrance_3",
+  pattern = 1778,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 496,
+  y = 992,
+  width = 16,
+  height = 16,
+  name = "night_entrance_2",
+  pattern = 1778,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 232,
+  y = 912,
+  width = 16,
+  height = 16,
+  name = "night_entrance",
+  pattern = 1778,
+  enabled_at_start = false,
+}
+
 sensor{
   layer = 0,
   x = 496,

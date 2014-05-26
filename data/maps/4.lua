@@ -99,10 +99,9 @@ function npc_turt_sensor:on_interaction()
       game:remove_money(20)
       hero:teleport("4", "inn_bed", "fade")
       game:set_life(game:get_max_life())
-      if game.time_of_day == day then
-	game.time_of_day = night
-      else
-	game.time_of_day = day
+      game:switch_time_of_day()
+      if game:get_time_of_day() == "day" then
+        night_overlay = nil
       end
     end
   end)
