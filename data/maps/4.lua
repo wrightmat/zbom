@@ -52,7 +52,13 @@ function map:on_started(destination)
 end
 
 function npc_etnaya:on_interaction()
-  game:start_dialog("etnaya.0")
+  local rand = math.random(4)
+  if rand == 1 then
+  -- Randomly mention the show
+    game:start_dialog("etnaya.0.show")
+  else
+    game:start_dialog("etnaya.0")
+  end
 end
 
 function npc_gartan:on_interaction()
@@ -61,10 +67,10 @@ end
 
 function npc_moriss:on_interaction()
   if game:get_value("i1920") > 0 then
-    game:start_dialog("moriss.1.pub")
+    game:start_dialog("moriss.1.pub", game:get_player_name())
   else
     game:start_dialog("moriss.0.pub", function()
-      game:set_value("i1919", game:get_value("i1919")+1)
+      game:set_value("i1919", 1)
     end)
   end
 end
@@ -74,7 +80,7 @@ function npc_rowin:on_interaction()
     game:start_dialog("rowin.2.pub")
   else
     game:start_dialog("rowin.0.pub", function()
-      game:set_value("i1920", game:get_value("i1920")+1)
+      game:set_value("i1920", 1)
     end)
   end
 end

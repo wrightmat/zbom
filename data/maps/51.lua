@@ -76,7 +76,11 @@ function npc_rowin:on_interaction()
 end
 
 function sensor_show:on_activated()
-  game:start_dialog("etnaya.1.show")
+  if game:get_time_of_day() == "night" and game:get_value("i1920") < 3 then
+    game:start_dialog("etnaya.1.show", function()
+      sensor_show:set_enabled(false)
+    end)
+  end
 end
 
 function ocarina_wind_to_F14:on_interaction()
