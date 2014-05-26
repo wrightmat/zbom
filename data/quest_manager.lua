@@ -53,16 +53,39 @@ end
 
 -- Initializes map entity related behaviors.
 local function initialize_entities()
-
   initialize_destructibles()
   initialize_enemies()
 end
 
+local function initialize_maps()
+  if game.time_of_day == nil then game.time_of_day = day end
+
+  local map_metatable = sol.main.get_metatable("map")
+  function map_metatable:add_night_overlay()
+    -- Here, self is the map.
+    self.overlay = sol.surface.create(320, 240)
+    self.overlay:fill_color{0, 51, 102}
+    self.overlay:set_opacity(0.4 * 255)
+  end
+
+  -- Put the night overlay on any outdoor map if it's night time
+  -- Also activate any night-specific dynamic tiles
+  if game.time_of_day == night then map_metatable:add_night_overlay()
+  for entity in map:get_entities("night_") do
+    entity:set_enabled(true)
+  end
+
+  function map_metatable:on_draw(dst_surface)
+    if self.overlay ~= nil and self:get_world == "outside_world" then
+      self.overlay:draw(dst_surface)
+    end
+  end
+end
+
 -- Performs global initializations specific to this quest.
 function quest_manager:initialize_quest()
-
+  initialize_maps()
   initialize_entities()
 end
 
 return quest_manager
-

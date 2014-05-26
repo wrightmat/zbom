@@ -23,6 +23,26 @@ function map:on_started(destination)
     if item_bomb_3 ~= nil then item_bomb_3:remove() end
   end
   random_walk(npc_etnaya)
+
+  if destination == inn_bed then
+    bed:get_sprite():set_animation("hero_sleeping")
+    hero:freeze()
+    hero:set_visible(false)
+    sol.timer.start(1000, function()
+      snores:remove()
+      bed:get_sprite():set_animation("hero_waking")
+      sleep_timer = sol.timer.start(1000, function()
+        hero:set_visible(true)
+        hero:start_jumping(0, 24, true)
+        bed:get_sprite():set_animation("empty_open")
+        sol.audio.play_sound("hero_lands")
+      end)
+      sleep_timer:set_with_sound(false)
+    end)
+  else
+    snores:remove()
+    bed:remove()
+  end
 end
 
 function npc_etnaya:on_interaction()
@@ -74,5 +94,16 @@ function npc_garroth_sensor:on_interaction()
 end
 
 function npc_turt_sensor:on_interaction()
-  game:start_dialog("turt.0.inn")
+  game:start_dialog("turt.0.inn", function(answer)
+    if answer == 1 then
+      game:remove_money(20)
+      hero:teleport("4", "inn_bed", "fade")
+      game:set_life(game:get_max_life())
+      if game.time_of_day == day then
+	game.time_of_day = night
+      else
+	game.time_of_day = day
+      end
+    end
+  end)
 end

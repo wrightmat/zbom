@@ -4616,6 +4616,28 @@ tile{
   pattern = 522,
 }
 
+dynamic_tile{
+  layer = 0,
+  x = 664,
+  y = 408,
+  width = 16,
+  height = 16,
+  name = "night_entrance_2",
+  pattern = 2172,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 160,
+  y = 144,
+  width = 16,
+  height = 16,
+  name = "night_entrance",
+  pattern = 2172,
+  enabled_at_start = false,
+}
+
 sensor{
   layer = 0,
   x = 160,
@@ -5310,6 +5332,83 @@ npc{
   direction = 3,
   subtype = "0",
   behavior = "dialog#mailbox",
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 120,
+  y = 144,
+  width = 24,
+  height = 16,
+  name = "night_window",
+  pattern = 2173,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 120,
+  y = 472,
+  width = 24,
+  height = 16,
+  name = "night_window_2",
+  pattern = 2173,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 208,
+  y = 472,
+  width = 24,
+  height = 16,
+  name = "night_window_3",
+  pattern = 2173,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 368,
+  y = 504,
+  width = 24,
+  height = 16,
+  name = "night_window_4",
+  pattern = 2173,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 400,
+  y = 240,
+  width = 24,
+  height = 16,
+  name = "night_window_5",
+  pattern = 2173,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 872,
+  y = 176,
+  width = 24,
+  height = 16,
+  name = "night_window_6",
+  pattern = 2173,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 632,
+  y = 408,
+  width = 24,
+  height = 16,
+  name = "night_window_7",
+  pattern = 2173,
+  enabled_at_start = false,
 }
 
 tile{

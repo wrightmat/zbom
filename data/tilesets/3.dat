@@ -8259,3 +8259,33 @@ tile_pattern{
   height = 32,
 }
 
+tile_pattern{
+  id = 1778,
+  ground = "traversable",
+  default_layer = 0,
+  x = 592,
+  y = 64,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = 1779,
+  ground = "wall",
+  default_layer = 0,
+  x = 608,
+  y = 64,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = 1780,
+  ground = "wall",
+  default_layer = 0,
+  x = 624,
+  y = 64,
+  width = 24,
+  height = 16,
+}
+

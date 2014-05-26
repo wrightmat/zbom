@@ -52,12 +52,10 @@ end
 
 -- Event called when the program stops.
 function sol.main:on_finished()
-
   sol.main.save_settings()
 end
 
 function sol.main:debug_on_key_pressed(key, modifiers)
-
   local handled = true
   if key == "f1" then
     if sol.game.exists("save1.dat") then
@@ -207,7 +205,6 @@ end
 
 -- Event called when the player pressed a keyboard key.
 function sol.main:on_key_pressed(key, modifiers)
-
   local handled = false
 
   -- Debugging features.
@@ -235,7 +232,6 @@ end
 
 -- Starts a game.
 function sol.main:start_savegame(game)
-
   local play_game = sol.main.load_file("play_game")
   play_game(game)
 end
@@ -243,7 +239,6 @@ end
 -- Returns the font to be used for dialogs
 -- depending on the specified language (the current one by default).
 function sol.language.get_dialog_font(language)
-
   language = language or sol.language.get_language()
 
   local font
@@ -260,7 +255,6 @@ end
 -- Returns the font to be used to display text in menus
 -- depending on the specified language (the current one by default).
 function sol.language.get_menu_font(language)
-
   language = language or sol.language.get_language()
 
   local font
@@ -273,4 +267,3 @@ function sol.language.get_menu_font(language)
 
   return font
 end
-
