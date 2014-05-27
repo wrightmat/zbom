@@ -8801,6 +8801,26 @@ tile{
   pattern = 524,
 }
 
+dynamic_tile{
+  layer = 0,
+  x = 240,
+  y = 888,
+  width = 16,
+  height = 16,
+  name = "night_entrance",
+  pattern = 2172,
+  enabled_at_start = false,
+}
+
+sensor{
+  layer = 0,
+  x = 232,
+  y = 917,
+  width = 48,
+  height = 16,
+  name = "sensor_race",
+}
+
 destructible{
   layer = 0,
   x = 1008,
@@ -10546,7 +10566,7 @@ sensor{
 destination{
   layer = 0,
   x = 248,
-  y = 909,
+  y = 917,
   name = "from_ranch",
   direction = 3,
 }
@@ -10989,15 +11009,6 @@ dynamic_tile{
   name = "banner_race_3",
   pattern = 1619,
   enabled_at_start = false,
-}
-
-sensor{
-  layer = 0,
-  x = 232,
-  y = 917,
-  width = 48,
-  height = 16,
-  name = "sensor_race",
 }
 
 wall{

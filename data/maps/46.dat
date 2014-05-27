@@ -7730,6 +7730,17 @@ tile{
   pattern = 628,
 }
 
+dynamic_tile{
+  layer = 0,
+  x = 736,
+  y = 352,
+  width = 16,
+  height = 16,
+  name = "night_entrance",
+  pattern = 2172,
+  enabled_at_start = false,
+}
+
 sensor{
   layer = 0,
   x = 736,
@@ -7988,6 +7999,17 @@ npc{
   name = "ocarina_wind_to_L5",
   direction = 3,
   subtype = "0",
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 408,
+  y = 544,
+  width = 24,
+  height = 16,
+  name = "night_window",
+  pattern = 2173,
+  enabled_at_start = false,
 }
 
 tile{

@@ -8693,6 +8693,72 @@ tile{
   pattern = 949,
 }
 
+dynamic_tile{
+  layer = 0,
+  x = 720,
+  y = 744,
+  width = 16,
+  height = 16,
+  name = "night_entrance_6",
+  pattern = 2172,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1000,
+  y = 528,
+  width = 16,
+  height = 16,
+  name = "night_entrance_5",
+  pattern = 2172,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 936,
+  y = 248,
+  width = 16,
+  height = 16,
+  name = "night_entrance_4",
+  pattern = 2172,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 176,
+  y = 416,
+  width = 16,
+  height = 16,
+  name = "night_entrance_3",
+  pattern = 2172,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 384,
+  y = 632,
+  width = 16,
+  height = 16,
+  name = "night_entrance_2",
+  pattern = 2172,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 160,
+  y = 888,
+  width = 16,
+  height = 16,
+  name = "night_entrance",
+  pattern = 2172,
+  enabled_at_start = false,
+}
+
 sensor{
   layer = 0,
   x = 384,
@@ -9191,6 +9257,83 @@ destination{
   y = 277,
   name = "from_relic_house",
   direction = 3,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 144,
+  y = 416,
+  width = 24,
+  height = 16,
+  name = "night_window",
+  pattern = 2173,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 344,
+  y = 632,
+  width = 24,
+  height = 16,
+  name = "night_window_2",
+  pattern = 2173,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 416,
+  y = 632,
+  width = 24,
+  height = 16,
+  name = "night_window_3",
+  pattern = 2173,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 128,
+  y = 888,
+  width = 24,
+  height = 16,
+  name = "night_window_4",
+  pattern = 2173,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 688,
+  y = 744,
+  width = 24,
+  height = 16,
+  name = "night_window_5",
+  pattern = 2173,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 968,
+  y = 528,
+  width = 24,
+  height = 16,
+  name = "night_window_6",
+  pattern = 2173,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 904,
+  y = 248,
+  width = 24,
+  height = 16,
+  name = "night_window_7",
+  pattern = 2173,
+  enabled_at_start = false,
 }
 
 tile{
