@@ -5874,6 +5874,71 @@ wearer.
 }
 
 dialog{
+  id = "tokay.alchemy_stone",
+  skip = "current",
+  text = [[
+You'd like one of these
+shiny stones I found?
+Okay, I'll trade you
+for 200 rupees.
+Yes
+No
+  ]]
+}
+
+dialog{
+  id = "tokay.magic_crystal",
+  skip = "current",
+  text = [[
+You'd like one of these
+shiny crystals I found?
+Okay, I'll trade you
+for 200 rupees.
+Yes
+No
+  ]]
+}
+
+dialog{
+  id = "tokay.goddess_plume",
+  skip = "current",
+  text = [[
+You'd like one of these
+neat feathers I found?
+Okay, I'll trade you
+for 200 rupees.
+Yes
+No
+  ]]
+}
+
+dialog{
+  id = "tokay.mystic_jade",
+  skip = "current",
+  text = [[
+You'd like one of these
+pretty rocks I found?
+Okay, I'll trade you
+for 200 rupees.
+Yes
+No
+  ]]
+}
+
+dialog{
+  id = "tokay.goron_amber",
+  skip = "current",
+  text = [[
+You'd like one of these
+cool things I found?
+Okay, I'll trade you
+for 200 rupees.
+Yes
+No
+  ]]
+}
+
+dialog{
   id = "pyramid_enter",
   skip = "none",
   text = [[

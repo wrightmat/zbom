@@ -1819,15 +1819,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 384,
-  y = 360,
-  width = 32,
-  height = 32,
-  pattern = 420,
-}
-
-tile{
-  layer = 0,
   x = 392,
   y = 376,
   width = 16,
@@ -3068,6 +3059,26 @@ tile{
   pattern = 609,
 }
 
+tile{
+  layer = 0,
+  x = 384,
+  y = 360,
+  width = 32,
+  height = 32,
+  pattern = 420,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 408,
+  y = 352,
+  width = 32,
+  height = 32,
+  name = "night_window_29",
+  pattern = 706,
+  enabled_at_start = false,
+}
+
 destination{
   layer = 0,
   x = 112,
@@ -3257,6 +3268,430 @@ chest{
   treasure_name = "heart_piece",
   treasure_savegame_variable = "b1708",
   sprite = "entities/chest",
+}
+
+npc{
+  layer = 0,
+  x = 96,
+  y = 117,
+  name = "npc_tokay_alchemy",
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/tokay",
+  behavior = "dialog#tokay.alchemy_stone",
+}
+
+shop_treasure{
+  layer = 0,
+  x = 112,
+  y = 96,
+  name = "alchemy_stone",
+  treasure_name = "alchemy",
+  price = 200,
+  dialog = "tokay.alchemy_stone",
+}
+
+npc{
+  layer = 0,
+  x = 96,
+  y = 421,
+  name = "npc_tokay_jade",
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/tokay",
+  behavior = "dialog#tokay.mystic_jade",
+}
+
+shop_treasure{
+  layer = 0,
+  x = 112,
+  y = 400,
+  name = "mystic_jade",
+  treasure_name = "jade",
+  price = 200,
+  dialog = "tokay.mystic_jade",
+}
+
+npc{
+  layer = 0,
+  x = 384,
+  y = 117,
+  name = "npc_tokay_crystal",
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/tokay",
+  behavior = "dialog#tokay.magic_crystal",
+}
+
+shop_treasure{
+  layer = 0,
+  x = 400,
+  y = 96,
+  name = "magic_crystal",
+  treasure_name = "crystal",
+  price = 200,
+  dialog = "tokay.magic_crystal",
+}
+
+npc{
+  layer = 0,
+  x = 672,
+  y = 117,
+  name = "npc_tokay_plume",
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/tokay",
+  behavior = "dialog#tokay.goddess_plume",
+}
+
+shop_treasure{
+  layer = 0,
+  x = 688,
+  y = 96,
+  name = "goddess_plume",
+  treasure_name = "plume",
+  price = 200,
+  dialog = "tokay.goddess_plume",
+}
+
+npc{
+  layer = 0,
+  x = 384,
+  y = 429,
+  name = "npc_tokay_amber",
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/tokay",
+  behavior = "dialog#tokay.goron_amber",
+}
+
+shop_treasure{
+  layer = 0,
+  x = 400,
+  y = 408,
+  name = "goron_amber",
+  treasure_name = "amber",
+  price = 200,
+  dialog = "tokay.goron_amber",
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 48,
+  y = 120,
+  width = 32,
+  height = 32,
+  name = "night_window",
+  pattern = 708,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 48,
+  y = 80,
+  width = 32,
+  height = 32,
+  name = "night_window_2",
+  pattern = 708,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 48,
+  y = 384,
+  width = 32,
+  height = 32,
+  name = "night_window_3",
+  pattern = 708,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 48,
+  y = 424,
+  width = 32,
+  height = 32,
+  name = "night_window_4",
+  pattern = 708,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 336,
+  y = 80,
+  width = 32,
+  height = 32,
+  name = "night_window_5",
+  pattern = 708,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 336,
+  y = 120,
+  width = 32,
+  height = 32,
+  name = "night_window_6",
+  pattern = 708,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 336,
+  y = 384,
+  width = 32,
+  height = 32,
+  name = "night_window_7",
+  pattern = 708,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 336,
+  y = 424,
+  width = 32,
+  height = 32,
+  name = "night_window_8",
+  pattern = 708,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 624,
+  y = 80,
+  width = 32,
+  height = 32,
+  name = "night_window_9",
+  pattern = 708,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 624,
+  y = 120,
+  width = 32,
+  height = 32,
+  name = "night_window_10",
+  pattern = 708,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 144,
+  y = 80,
+  width = 32,
+  height = 32,
+  name = "night_window_11",
+  pattern = 709,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 144,
+  y = 120,
+  width = 32,
+  height = 32,
+  name = "night_window_12",
+  pattern = 709,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 144,
+  y = 384,
+  width = 32,
+  height = 32,
+  name = "night_window_13",
+  pattern = 709,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 144,
+  y = 424,
+  width = 32,
+  height = 32,
+  name = "night_window_14",
+  pattern = 709,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 432,
+  y = 80,
+  width = 32,
+  height = 32,
+  name = "night_window_15",
+  pattern = 709,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 432,
+  y = 120,
+  width = 32,
+  height = 32,
+  name = "night_window_16",
+  pattern = 709,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 432,
+  y = 384,
+  width = 32,
+  height = 32,
+  name = "night_window_17",
+  pattern = 709,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 432,
+  y = 424,
+  width = 32,
+  height = 32,
+  name = "night_window_18",
+  pattern = 709,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 720,
+  y = 80,
+  width = 32,
+  height = 32,
+  name = "night_window_19",
+  pattern = 709,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 720,
+  y = 120,
+  width = 32,
+  height = 32,
+  name = "night_window_20",
+  pattern = 709,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 648,
+  y = 48,
+  width = 32,
+  height = 32,
+  name = "night_window_21",
+  pattern = 706,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 696,
+  y = 48,
+  width = 32,
+  height = 32,
+  name = "night_window_22",
+  pattern = 706,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 360,
+  y = 48,
+  width = 32,
+  height = 32,
+  name = "night_window_23",
+  pattern = 706,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 408,
+  y = 48,
+  width = 32,
+  height = 32,
+  name = "night_window_24",
+  pattern = 706,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 72,
+  y = 48,
+  width = 32,
+  height = 32,
+  name = "night_window_25",
+  pattern = 706,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 120,
+  y = 48,
+  width = 32,
+  height = 32,
+  name = "night_window_26",
+  pattern = 706,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 72,
+  y = 352,
+  width = 32,
+  height = 32,
+  name = "night_window_27",
+  pattern = 706,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 120,
+  y = 352,
+  width = 32,
+  height = 32,
+  name = "night_window_28",
+  pattern = 706,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 360,
+  y = 352,
+  width = 32,
+  height = 32,
+  name = "night_window_30",
+  pattern = 706,
+  enabled_at_start = false,
 }
 
 tile{
