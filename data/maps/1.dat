@@ -5942,6 +5942,182 @@ npc{
   sprite = "npc/ordon_crista",
 }
 
+dynamic_tile{
+  layer = 0,
+  x = 48,
+  y = 136,
+  width = 32,
+  height = 32,
+  name = "night_window",
+  pattern = 708,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 48,
+  y = 496,
+  width = 32,
+  height = 32,
+  name = "night_window_2",
+  pattern = 708,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 48,
+  y = 856,
+  width = 32,
+  height = 32,
+  name = "night_window_3",
+  pattern = 708,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 496,
+  y = 848,
+  width = 32,
+  height = 32,
+  name = "night_window_4",
+  pattern = 708,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 496,
+  y = 488,
+  width = 32,
+  height = 32,
+  name = "night_window_5",
+  pattern = 708,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 560,
+  y = 152,
+  width = 32,
+  height = 32,
+  name = "night_window_6",
+  pattern = 708,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 944,
+  y = 488,
+  width = 32,
+  height = 32,
+  name = "night_window_7",
+  pattern = 708,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 944,
+  y = 872,
+  width = 32,
+  height = 32,
+  name = "night_window_8",
+  pattern = 708,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 304,
+  y = 496,
+  width = 32,
+  height = 32,
+  name = "night_window_9",
+  pattern = 709,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 304,
+  y = 856,
+  width = 32,
+  height = 32,
+  name = "night_window_10",
+  pattern = 709,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 752,
+  y = 856,
+  width = 32,
+  height = 32,
+  name = "night_window_11",
+  pattern = 709,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 752,
+  y = 496,
+  width = 32,
+  height = 32,
+  name = "night_window_12",
+  pattern = 709,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1200,
+  y = 512,
+  width = 32,
+  height = 32,
+  name = "night_window_13",
+  pattern = 709,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1200,
+  y = 832,
+  width = 32,
+  height = 32,
+  name = "night_window_14",
+  pattern = 709,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 600,
+  y = 224,
+  width = 32,
+  height = 32,
+  name = "night_window_15",
+  pattern = 707,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 832,
+  y = 224,
+  width = 32,
+  height = 32,
+  name = "night_window_16",
+  pattern = 707,
+  enabled_at_start = false,
+}
+
 tile{
   layer = 2,
   x = 288,

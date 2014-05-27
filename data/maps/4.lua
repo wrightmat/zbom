@@ -28,6 +28,11 @@ function map:on_started(destination)
     npc_rowin:remove()
     npc_moriss:remove()
     npc_etnaya:remove()
+
+  -- Activate any night-specific dynamic tiles
+    for entity in map:get_entities("night_") do
+      entity:set_enabled(true)
+    end
   end
 
   if destination == inn_bed then

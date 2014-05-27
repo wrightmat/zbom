@@ -97,3 +97,7 @@ function game:on_map_changed(map)
     end
   end
 end
+
+function map:on_finished()
+  if lantern_overlay then lantern_overlay:fade_out() end
+end

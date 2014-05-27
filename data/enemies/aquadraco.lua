@@ -18,7 +18,6 @@ function enemy:on_created()
   self:set_obstacle_behavior("flying")
   self:set_size(32, 40)
   self:set_origin(16, 37)
-  self:get_sprite():set_animation("stopped")
 end
 
 function enemy:on_movement_changed(movement)

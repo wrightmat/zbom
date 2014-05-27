@@ -8478,6 +8478,127 @@ npc{
   sprite = "npc/rito",
 }
 
+dynamic_tile{
+  layer = 0,
+  x = 1568,
+  y = 1512,
+  width = 32,
+  height = 32,
+  name = "night_window",
+  pattern = 708,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1696,
+  y = 1192,
+  width = 32,
+  height = 32,
+  name = "night_window_2",
+  pattern = 708,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1760,
+  y = 840,
+  width = 32,
+  height = 32,
+  name = "night_window_3",
+  pattern = 708,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1232,
+  y = 96,
+  width = 32,
+  height = 32,
+  name = "night_window_4",
+  pattern = 708,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1328,
+  y = 440,
+  width = 32,
+  height = 32,
+  name = "night_window_5",
+  pattern = 708,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1328,
+  y = 832,
+  width = 32,
+  height = 32,
+  name = "night_window_6",
+  pattern = 708,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1952,
+  y = 1560,
+  width = 32,
+  height = 32,
+  name = "night_window_28",
+  pattern = 709,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1680,
+  y = 120,
+  width = 32,
+  height = 32,
+  name = "night_window_7",
+  pattern = 709,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1520,
+  y = 504,
+  width = 32,
+  height = 32,
+  name = "night_window_8",
+  pattern = 709,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1520,
+  y = 840,
+  width = 32,
+  height = 32,
+  name = "night_window_9",
+  pattern = 709,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1856,
+  y = 384,
+  width = 32,
+  height = 32,
+  name = "night_window_10",
+  pattern = 706,
+  enabled_at_start = false,
+}
+
 tile{
   layer = 1,
   x = 848,

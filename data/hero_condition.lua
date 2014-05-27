@@ -112,7 +112,7 @@ function condition_manager:initialize(game)
     if damage < 1 then
       damage = 1
     end
-    print(damage,in_damage,protection_divider,tunic_level,shield_level)
+    --print(damage,in_damage,protection_divider,tunic_level,shield_level)
     game:remove_life(damage)
   end
 

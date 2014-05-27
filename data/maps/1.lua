@@ -68,6 +68,13 @@ function map:on_started(destination)
   elseif game:get_value("i1602") < 6 then
     npc_gaira:remove()
   end
+
+  -- Activate any night-specific dynamic tiles
+  if game:get_time_of_day() == "night" then
+    for entity in map:get_entities("night_") do
+      entity:set_enabled(true)
+    end
+  end
 end
 
 function shop_potion_red:on_buying()
