@@ -4858,13 +4858,43 @@ you with bananas!
 }
 
 dialog{
-  id = "tokay.0.beach",
+  id = "tokay_1.0.beach",
   skip = "current",
   text = [[
 Thank you so much for
 getting us our beach
 back! Please visit
 any time you'd like.
+  ]]
+}
+
+dialog{
+  id = "tokay_2.0.beach",
+  skip = "current",
+  text = [[
+We Tokay like shiny
+things and trading. If
+you visit some of my
+friends in their huts,
+you'll be able to
+trade some of your
+shiny rupees for
+something else equally
+shiny!
+  ]]
+}
+
+dialog{
+  id = "tokay_4.0.beach",
+  skip = "current",
+  text = [[
+Tokage Gin? No, that's
+not me - he's probably
+still at the castle
+somewhere. I see why
+you'd be confused, but
+we Tokay really only
+come in two colors.
   ]]
 }
 

@@ -28,20 +28,20 @@ end
 
 function npc_tokay_1:on_interaction()
   sol.audio.play_sound("tokay")
-  game:start_dialog("tokay.0.beach")
+  game:start_dialog("tokay_1.0.beach")
 end
 
 function npc_tokay_2:on_interaction()
   sol.audio.play_sound("tokay")
-  game:start_dialog("tokay.0.beach")
+  game:start_dialog("tokay_2.0.beach")
 end
 
 function npc_tokay_3:on_interaction()
   sol.audio.play_sound("tokay")
-  game:start_dialog("tokay.0.beach")
+  game:start_dialog("tokay_1.0.beach")
 end
 
 function npc_tokay_4:on_interaction()
   sol.audio.play_sound("tokay")
-  game:start_dialog("tokay.0.beach")
+  game:start_dialog("tokay_4.0.beach")
 end

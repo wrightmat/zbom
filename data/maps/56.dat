@@ -2261,6 +2261,17 @@ wall{
   stops_blocks = true,
 }
 
+teletransporter{
+  layer = 0,
+  x = 608,
+  y = -16,
+  width = 80,
+  height = 16,
+  name = "to_F4",
+  destination_map = "107",
+  destination = "_side",
+}
+
 tile{
   layer = 1,
   x = 296,
@@ -3619,6 +3630,14 @@ destination{
   y = 853,
   name = "from_below",
   direction = 3,
+}
+
+destructible{
+  layer = 1,
+  x = 672,
+  y = 37,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
 }
 
 tile{
