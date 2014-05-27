@@ -35,25 +35,29 @@ function map:on_started(destination)
     end
   end
 
-  if destination == inn_bed then
-    bed:get_sprite():set_animation("hero_sleeping")
-    hero:freeze()
-    hero:set_visible(false)
-    sol.timer.start(1000, function()
-      snores:remove()
-      bed:get_sprite():set_animation("hero_waking")
-      sleep_timer = sol.timer.start(1000, function()
-        hero:set_visible(true)
-        hero:start_jumping(0, 24, true)
-        bed:get_sprite():set_animation("empty_open")
-        sol.audio.play_sound("hero_lands")
-      end)
-      sleep_timer:set_with_sound(false)
-    end)
-  else
-    snores:remove()
-    bed:remove()
+  if destination ~= inn_bed then
+    snores:set_enabled(false)
+    bed:set_enabled(false)
   end
+end
+
+function inn_bed:on_activated()
+  snores:set_enabled(true)
+  bed:set_enabled(true)
+  bed:get_sprite():set_animation("hero_sleeping")
+  hero:freeze()
+  hero:set_visible(false)
+  sol.timer.start(1000, function()
+    snores:remove()
+    bed:get_sprite():set_animation("hero_waking")
+    sleep_timer = sol.timer.start(1000, function()
+      hero:set_visible(true)
+      hero:start_jumping(0, 24, true)
+      bed:get_sprite():set_animation("empty_open")
+      sol.audio.play_sound("hero_lands")
+    end)
+    sleep_timer:set_with_sound(false)
+  end)
 end
 
 function npc_etnaya:on_interaction()

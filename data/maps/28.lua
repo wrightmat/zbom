@@ -70,9 +70,3 @@ for enemy in map:get_entities("chuchu") do
     end
   end
 end
-
-function game:on_map_changed(map)
-  function map:on_draw(dst_surface)
-    if map:get_id() == "28" and lantern_overlay then lantern_overlay:fade_out() end
-  end
-end

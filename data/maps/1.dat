@@ -6123,8 +6123,16 @@ sensor{
   x = 200,
   y = 93,
   width = 16,
-  height = 32,
+  height = 48,
   name = "sensor_sleep",
+}
+
+destination{
+  layer = 0,
+  x = 208,
+  y = 109,
+  name = "house_bed",
+  direction = 2,
 }
 
 tile{
