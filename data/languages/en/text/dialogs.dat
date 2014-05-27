@@ -5572,6 +5572,17 @@ dialog{
 }
 
 dialog{
+  id = "_sleep_bed",
+  skip = "current",
+  question = true,
+  text = [[
+Would you like to sleep?
+Yes
+No
+  ]]
+}
+
+dialog{
   id = "sign.ordon_smith",
   skip = "current",
   text = [[

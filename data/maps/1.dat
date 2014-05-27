@@ -6118,6 +6118,15 @@ dynamic_tile{
   enabled_at_start = false,
 }
 
+sensor{
+  layer = 0,
+  x = 200,
+  y = 93,
+  width = 16,
+  height = 32,
+  name = "sensor_sleep",
+}
+
 tile{
   layer = 2,
   x = 288,

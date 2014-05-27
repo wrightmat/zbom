@@ -279,6 +279,7 @@ function map:on_update()
   end
 end
 
+if game:get_time_of_day() ~= "night" then
 function game:on_map_changed(map)
   function map:on_draw(dst_surface)
     if map:get_id() == "11" and torch_overlay then
@@ -291,6 +292,7 @@ function game:on_map_changed(map)
       torch_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
     end
   end
+end
 end
 
 function torch_1:on_interaction()

@@ -30,6 +30,7 @@ function map:on_started(destination)
       snores:remove()
       bed:get_sprite():set_animation("hero_waking")
       sleep_timer = sol.timer.start(1000, function()
+	sensor_sleep:set_enabled(false)
         hero:set_visible(true)
         hero:start_jumping(4, 24, true)
         bed:get_sprite():set_animation("empty_open")
@@ -200,4 +201,24 @@ function npc_impa:on_interaction()
       end
     end)
   end
+end
+
+function sensor_sleep:on_activated()
+  game:start_dialog("_sleep_bed", function(answer)
+    if answer == 1 then
+      hero:teleport("1", "from_intro", "fade")
+      game:set_life(game:get_max_life())
+      game:switch_time_of_day()
+      if game:get_time_of_day() == "day" then
+        for entity in map:get_entities("night_") do
+          entity:set_enabled(false)
+        end
+        night_overlay = nil
+      else
+        for entity in map:get_entities("night_") do
+          entity:set_enabled(true)
+        end
+      end
+    end
+  end)
 end

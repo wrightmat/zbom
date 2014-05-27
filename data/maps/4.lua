@@ -29,7 +29,7 @@ function map:on_started(destination)
     npc_moriss:remove()
     npc_etnaya:remove()
 
-  -- Activate any night-specific dynamic tiles
+    -- Activate any night-specific dynamic tiles
     for entity in map:get_entities("night_") do
       entity:set_enabled(true)
     end
@@ -122,7 +122,14 @@ function npc_turt_sensor:on_interaction()
       game:set_life(game:get_max_life())
       game:switch_time_of_day()
       if game:get_time_of_day() == "day" then
+        for entity in map:get_entities("night_") do
+          entity:set_enabled(false)
+        end
         night_overlay = nil
+      else
+        for entity in map:get_entities("night_") do
+          entity:set_enabled(true)
+        end
       end
     end
   end)
