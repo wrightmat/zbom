@@ -11,6 +11,24 @@ properties{
 
 tile{
   layer = 0,
+  x = 1184,
+  y = 1152,
+  width = 96,
+  height = 96,
+  pattern = 45,
+}
+
+tile{
+  layer = 0,
+  x = 1216,
+  y = 1184,
+  width = 32,
+  height = 32,
+  pattern = 524,
+}
+
+tile{
+  layer = 0,
   x = 696,
   y = 1064,
   width = 96,
@@ -7913,15 +7931,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1184,
-  y = 1152,
-  width = 96,
-  height = 96,
-  pattern = 45,
-}
-
-tile{
-  layer = 0,
   x = 400,
   y = 1024,
   width = 8,
@@ -8323,6 +8332,25 @@ tile{
   width = 16,
   height = 16,
   pattern = 646,
+}
+
+tile{
+  layer = 0,
+  x = 1216,
+  y = 1184,
+  width = 32,
+  height = 32,
+  pattern = 623,
+}
+
+chest{
+  layer = 0,
+  x = 1232,
+  y = 1229,
+  name = "chest_magic_crystal",
+  treasure_name = "crystal",
+  treasure_savegame_variable = "b1781",
+  sprite = "entities/chest",
 }
 
 teletransporter{
@@ -9107,6 +9135,26 @@ wall{
   stops_npcs = true,
   stops_blocks = true,
   stops_projectiles = true,
+}
+
+sensor{
+  layer = 0,
+  x = 1216,
+  y = 1069,
+  width = 48,
+  height = 16,
+  name = "sensor_room_flooded",
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1176,
+  y = 1144,
+  width = 112,
+  height = 112,
+  name = "water_chest",
+  pattern = 675,
+  enabled_at_start = true,
 }
 
 tile{
@@ -9953,29 +10001,5 @@ tile{
   width = 64,
   height = 48,
   pattern = 137,
-}
-
-separator{
-  layer = 2,
-  x = 1392,
-  y = 224,
-  width = 16,
-  height = 528,
-}
-
-separator{
-  layer = 2,
-  x = 1408,
-  y = 288,
-  width = 160,
-  height = 16,
-}
-
-separator{
-  layer = 2,
-  x = 1408,
-  y = 736,
-  width = 160,
-  height = 16,
 }
 

@@ -2151,6 +2151,18 @@ this thing...
   ]]
 }
 
+dialog{
+  id = "lakebed.room_flooded",
+  skip = "current",
+  text = [[
+Whoa! It looks like
+that room is flooded!
+You don't want to go
+in there or you may
+drown!
+  ]]
+}
+
 -- ----------------------------------------------------------------------------
 -- Engine dialogs ABOVE
 -- Game dialogs BELOW

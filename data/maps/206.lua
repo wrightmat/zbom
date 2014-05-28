@@ -8,6 +8,11 @@ local game = map:get_game()
 function map:on_started(destination)
   chest_big_key:set_enabled(false)
   to_basement:set_enabled(false)
+  if game:get_value("b1140") then
+    water_chest:set_enabled(false)
+    sensor_room_flooded:set_enabled(false)
+    obstable:set_enabled(false)
+  end
 end
 
 function map:on_obtained_treasure(treasure_item, treasure_variant, treasure_savegame_variable)
@@ -24,6 +29,10 @@ if miniboss_aquadraco ~= nil then
   sol.audio.play_music("temple_lake")
   end)
  end
+end
+
+function sensor_room_flooded:on_activated()
+  game:start_dialog("lakebed.room_flooded")
 end
 
 for enemy in map:get_entities("aquadracini") do

@@ -11,6 +11,51 @@ properties{
 
 tile{
   layer = 0,
+  x = 1000,
+  y = 728,
+  width = 8,
+  height = 176,
+  pattern = 21,
+}
+
+tile{
+  layer = 0,
+  x = 1792,
+  y = 280,
+  width = 128,
+  height = 16,
+  pattern = 46,
+}
+
+tile{
+  layer = 0,
+  x = 1792,
+  y = 448,
+  width = 176,
+  height = 80,
+  pattern = 46,
+}
+
+tile{
+  layer = 0,
+  x = 1864,
+  y = 504,
+  width = 32,
+  height = 32,
+  pattern = 524,
+}
+
+tile{
+  layer = 0,
+  x = 1280,
+  y = 784,
+  width = 128,
+  height = 128,
+  pattern = 45,
+}
+
+tile{
+  layer = 0,
   x = 1776,
   y = 1472,
   width = 96,
@@ -858,7 +903,7 @@ tile{
 tile{
   layer = 0,
   x = 1328,
-  y = 608,
+  y = 888,
   width = 32,
   height = 32,
   pattern = 524,
@@ -1199,7 +1244,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1336,
+  x = 1344,
   y = 360,
   width = 8,
   height = 24,
@@ -1217,10 +1262,10 @@ tile{
 
 tile{
   layer = 0,
-  x = 1296,
+  x = 1360,
   y = 136,
-  width = 144,
-  height = 224,
+  width = 96,
+  height = 160,
   pattern = 46,
 }
 
@@ -1247,16 +1292,16 @@ tile{
   x = 1472,
   y = 296,
   width = 160,
-  height = 96,
+  height = 48,
   pattern = 46,
 }
 
 tile{
   layer = 0,
-  x = 1472,
-  y = 56,
-  width = 176,
-  height = 80,
+  x = 1488,
+  y = 88,
+  width = 144,
+  height = 48,
   pattern = 46,
 }
 
@@ -1282,7 +1327,7 @@ tile{
   layer = 0,
   x = 1760,
   y = 280,
-  width = 160,
+  width = 32,
   height = 64,
   pattern = 46,
 }
@@ -5801,7 +5846,7 @@ tile{
   x = 1984,
   y = 432,
   width = 16,
-  height = 64,
+  height = 112,
   pattern = 12,
 }
 
@@ -5830,42 +5875,6 @@ tile{
   width = 16,
   height = 16,
   pattern = 7,
-}
-
-tile{
-  layer = 0,
-  x = 1984,
-  y = 528,
-  width = 16,
-  height = 16,
-  pattern = 12,
-}
-
-tile{
-  layer = 0,
-  x = 1976,
-  y = 520,
-  width = 16,
-  height = 8,
-  pattern = 169,
-}
-
-tile{
-  layer = 0,
-  x = 1976,
-  y = 496,
-  width = 16,
-  height = 8,
-  pattern = 168,
-}
-
-tile{
-  layer = 0,
-  x = 1976,
-  y = 504,
-  width = 16,
-  height = 16,
-  pattern = 658,
 }
 
 tile{
@@ -6842,15 +6851,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1728,
-  y = 560,
-  width = 32,
-  height = 16,
-  pattern = 137,
-}
-
-tile{
-  layer = 0,
   x = 1568,
   y = 696,
   width = 8,
@@ -7188,15 +7188,6 @@ tile{
   y = 416,
   width = 32,
   height = 112,
-  pattern = 46,
-}
-
-tile{
-  layer = 0,
-  x = 1792,
-  y = 448,
-  width = 176,
-  height = 80,
   pattern = 46,
 }
 
@@ -8984,69 +8975,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1904,
-  y = 1104,
-  width = 128,
-  height = 144,
-  pattern = 137,
-}
-
-tile{
-  layer = 0,
-  x = 1872,
-  y = 1248,
-  width = 160,
-  height = 192,
-  pattern = 137,
-}
-
-tile{
-  layer = 0,
-  x = 1904,
-  y = 1440,
-  width = 128,
-  height = 128,
-  pattern = 137,
-}
-
-tile{
-  layer = 0,
-  x = 1440,
-  y = 1568,
-  width = 592,
-  height = 32,
-  pattern = 137,
-}
-
-tile{
-  layer = 0,
-  x = 1728,
-  y = 1248,
-  width = 48,
-  height = 192,
-  pattern = 137,
-}
-
-tile{
-  layer = 0,
-  x = 1728,
-  y = 1440,
-  width = 16,
-  height = 128,
-  pattern = 137,
-}
-
-tile{
-  layer = 0,
-  x = 1440,
-  y = 1264,
-  width = 288,
-  height = 304,
-  pattern = 137,
-}
-
-tile{
-  layer = 0,
   x = 1376,
   y = 384,
   width = 16,
@@ -9750,9 +9678,9 @@ tile{
 tile{
   layer = 0,
   x = 1328,
-  y = 640,
+  y = 608,
   width = 32,
-  height = 64,
+  height = 96,
   pattern = 45,
 }
 
@@ -9763,15 +9691,6 @@ tile{
   width = 32,
   height = 24,
   pattern = 669,
-}
-
-tile{
-  layer = 0,
-  x = 1328,
-  y = 608,
-  width = 32,
-  height = 32,
-  pattern = 623,
 }
 
 tile{
@@ -9934,15 +9853,6 @@ tile{
   width = 8,
   height = 128,
   pattern = 64,
-}
-
-tile{
-  layer = 0,
-  x = 1280,
-  y = 784,
-  width = 128,
-  height = 128,
-  pattern = 45,
 }
 
 tile{
@@ -10420,24 +10330,6 @@ tile{
   width = 16,
   height = 8,
   pattern = 169,
-}
-
-tile{
-  layer = 0,
-  x = 1216,
-  y = 1248,
-  width = 224,
-  height = 352,
-  pattern = 137,
-}
-
-tile{
-  layer = 0,
-  x = 1040,
-  y = 1344,
-  width = 176,
-  height = 256,
-  pattern = 137,
 }
 
 tile{
@@ -10933,15 +10825,6 @@ tile{
   width = 144,
   height = 16,
   pattern = 2,
-}
-
-tile{
-  layer = 0,
-  x = 864,
-  y = 1456,
-  width = 176,
-  height = 144,
-  pattern = 137,
 }
 
 tile{
@@ -12379,7 +12262,7 @@ tile{
   layer = 0,
   x = 800,
   y = 672,
-  width = 208,
+  width = 96,
   height = 16,
   pattern = 9,
 }
@@ -12683,17 +12566,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 784,
-  y = 0,
-  width = 432,
-  height = 288,
-  pattern = 137,
-}
-
-tile{
-  layer = 0,
   x = 1008,
-  y = 736,
+  y = 704,
   width = 16,
   height = 16,
   pattern = 4,
@@ -12711,8 +12585,8 @@ tile{
 tile{
   layer = 0,
   x = 784,
-  y = 736,
-  width = 224,
+  y = 704,
+  width = 112,
   height = 16,
   pattern = 3,
 }
@@ -12720,7 +12594,7 @@ tile{
 tile{
   layer = 0,
   x = 768,
-  y = 736,
+  y = 704,
   width = 16,
   height = 16,
   pattern = 1,
@@ -12729,9 +12603,9 @@ tile{
 tile{
   layer = 0,
   x = 768,
-  y = 752,
+  y = 720,
   width = 16,
-  height = 160,
+  height = 192,
   pattern = 5,
 }
 
@@ -12756,9 +12630,9 @@ tile{
 tile{
   layer = 0,
   x = 1008,
-  y = 752,
+  y = 720,
   width = 16,
-  height = 80,
+  height = 112,
   pattern = 12,
 }
 
@@ -12774,7 +12648,7 @@ tile{
 tile{
   layer = 0,
   x = 1000,
-  y = 752,
+  y = 720,
   width = 8,
   height = 8,
   pattern = 13,
@@ -12783,7 +12657,7 @@ tile{
 tile{
   layer = 0,
   x = 784,
-  y = 752,
+  y = 720,
   width = 8,
   height = 8,
   pattern = 16,
@@ -12810,7 +12684,7 @@ tile{
 tile{
   layer = 0,
   x = 792,
-  y = 752,
+  y = 720,
   width = 208,
   height = 8,
   pattern = 15,
@@ -12819,9 +12693,9 @@ tile{
 tile{
   layer = 0,
   x = 784,
-  y = 760,
+  y = 728,
   width = 8,
-  height = 144,
+  height = 176,
   pattern = 17,
 }
 
@@ -12832,15 +12706,6 @@ tile{
   width = 208,
   height = 8,
   pattern = 19,
-}
-
-tile{
-  layer = 0,
-  x = 1000,
-  y = 760,
-  width = 8,
-  height = 144,
-  pattern = 21,
 }
 
 tile{
@@ -12873,7 +12738,7 @@ tile{
 tile{
   layer = 0,
   x = 792,
-  y = 760,
+  y = 728,
   width = 8,
   height = 8,
   pattern = 59,
@@ -12891,7 +12756,7 @@ tile{
 tile{
   layer = 0,
   x = 992,
-  y = 760,
+  y = 728,
   width = 8,
   height = 8,
   pattern = 60,
@@ -12909,25 +12774,25 @@ tile{
 tile{
   layer = 0,
   x = 792,
-  y = 768,
+  y = 736,
   width = 8,
-  height = 128,
+  height = 160,
   pattern = 63,
 }
 
 tile{
   layer = 0,
   x = 992,
-  y = 768,
+  y = 736,
   width = 8,
-  height = 128,
+  height = 160,
   pattern = 64,
 }
 
 tile{
   layer = 0,
   x = 800,
-  y = 760,
+  y = 728,
   width = 192,
   height = 8,
   pattern = 65,
@@ -12945,19 +12810,10 @@ tile{
 tile{
   layer = 0,
   x = 800,
-  y = 768,
+  y = 736,
   width = 192,
-  height = 128,
+  height = 160,
   pattern = 45,
-}
-
-tile{
-  layer = 0,
-  x = 784,
-  y = 688,
-  width = 240,
-  height = 48,
-  pattern = 137,
 }
 
 tile{
@@ -14106,15 +13962,6 @@ tile{
 tile{
   layer = 0,
   x = 752,
-  y = 928,
-  width = 288,
-  height = 16,
-  pattern = 137,
-}
-
-tile{
-  layer = 0,
-  x = 752,
   y = 944,
   width = 80,
   height = 192,
@@ -14146,24 +13993,6 @@ tile{
   width = 8,
   height = 8,
   pattern = 145,
-}
-
-tile{
-  layer = 0,
-  x = 592,
-  y = 736,
-  width = 176,
-  height = 192,
-  pattern = 137,
-}
-
-tile{
-  layer = 0,
-  x = 592,
-  y = 0,
-  width = 192,
-  height = 736,
-  pattern = 137,
 }
 
 tile{
@@ -16292,25 +16121,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 0,
-  y = 816,
-  width = 80,
-  height = 784,
-  pattern = 137,
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 0,
-  width = 592,
-  height = 816,
-  pattern = 137,
-}
-
-tile{
-  layer = 0,
-  x = 1816,
+  x = 1824,
   y = 1200,
   width = 16,
   height = 16,
@@ -16319,7 +16130,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1816,
+  x = 1808,
   y = 1336,
   width = 16,
   height = 16,
@@ -16335,11 +16146,309 @@ tile{
   pattern = 646,
 }
 
+tile{
+  layer = 0,
+  x = 1312,
+  y = 384,
+  width = 32,
+  height = 24,
+  pattern = 633,
+}
+
+tile{
+  layer = 0,
+  x = 1328,
+  y = 456,
+  width = 32,
+  height = 24,
+  pattern = 670,
+}
+
+tile{
+  layer = 0,
+  x = 824,
+  y = 816,
+  width = 16,
+  height = 16,
+  pattern = 646,
+}
+
+tile{
+  layer = 0,
+  x = 1336,
+  y = 616,
+  width = 16,
+  height = 16,
+  pattern = 646,
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 1344,
+  width = 16,
+  height = 16,
+  pattern = 646,
+}
+
+tile{
+  layer = 0,
+  x = 1864,
+  y = 416,
+  width = 32,
+  height = 24,
+  pattern = 633,
+}
+
+tile{
+  layer = 0,
+  x = 1864,
+  y = 504,
+  width = 32,
+  height = 32,
+  pattern = 623,
+}
+
+tile{
+  layer = 0,
+  x = 1328,
+  y = 888,
+  width = 32,
+  height = 32,
+  pattern = 623,
+}
+
+tile{
+  layer = 0,
+  x = 1800,
+  y = 448,
+  width = 32,
+  height = 16,
+  pattern = 646,
+}
+
+tile{
+  layer = 0,
+  x = 1936,
+  y = 472,
+  width = 16,
+  height = 16,
+  pattern = 646,
+}
+
+tile{
+  layer = 0,
+  x = 1120,
+  y = 456,
+  width = 8,
+  height = 32,
+  pattern = 106,
+}
+
+tile{
+  layer = 0,
+  x = 1144,
+  y = 456,
+  width = 8,
+  height = 32,
+  pattern = 106,
+}
+
+tile{
+  layer = 0,
+  x = 1016,
+  y = 592,
+  width = 32,
+  height = 8,
+  pattern = 105,
+}
+
+tile{
+  layer = 0,
+  x = 1016,
+  y = 616,
+  width = 32,
+  height = 8,
+  pattern = 105,
+}
+
+tile{
+  layer = 0,
+  x = 1120,
+  y = 728,
+  width = 8,
+  height = 32,
+  pattern = 106,
+}
+
+tile{
+  layer = 0,
+  x = 1144,
+  y = 728,
+  width = 8,
+  height = 32,
+  pattern = 106,
+}
+
+tile{
+  layer = 0,
+  x = 744,
+  y = 1168,
+  width = 32,
+  height = 8,
+  pattern = 105,
+}
+
+tile{
+  layer = 0,
+  x = 744,
+  y = 1192,
+  width = 32,
+  height = 8,
+  pattern = 105,
+}
+
+tile{
+  layer = 0,
+  x = 1120,
+  y = 936,
+  width = 8,
+  height = 32,
+  pattern = 106,
+}
+
+tile{
+  layer = 0,
+  x = 1144,
+  y = 936,
+  width = 8,
+  height = 32,
+  pattern = 106,
+}
+
+tile{
+  layer = 0,
+  x = 1016,
+  y = 832,
+  width = 32,
+  height = 8,
+  pattern = 105,
+}
+
+tile{
+  layer = 0,
+  x = 1016,
+  y = 856,
+  width = 32,
+  height = 8,
+  pattern = 105,
+}
+
+tile{
+  layer = 0,
+  x = 800,
+  y = 1168,
+  width = 32,
+  height = 32,
+  pattern = 135,
+}
+
+tile{
+  layer = 0,
+  x = 1808,
+  y = 1544,
+  width = 32,
+  height = 24,
+  pattern = 670,
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 704,
+  width = 96,
+  height = 16,
+  pattern = 3,
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 712,
+  width = 16,
+  height = 16,
+  pattern = 157,
+}
+
+tile{
+  layer = 0,
+  x = 888,
+  y = 712,
+  width = 8,
+  height = 16,
+  pattern = 155,
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 712,
+  width = 8,
+  height = 16,
+  pattern = 156,
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 672,
+  width = 96,
+  height = 16,
+  pattern = 9,
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 664,
+  width = 16,
+  height = 16,
+  pattern = 158,
+}
+
+tile{
+  layer = 0,
+  x = 888,
+  y = 664,
+  width = 8,
+  height = 16,
+  pattern = 159,
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 664,
+  width = 8,
+  height = 16,
+  pattern = 161,
+}
+
+chest{
+  layer = 0,
+  x = 1344,
+  y = 629,
+  name = "chest_key_3",
+  treasure_name = "small_key",
+  treasure_savegame_variable = "b1123",
+  sprite = "entities/chest",
+}
+
 door{
   layer = 0,
   x = 1352,
   y = 392,
-  name = "door_bomb",
+  name = "door_bomb_2",
   direction = 1,
   sprite = "entities/door_very_weak_wall",
   opening_method = "explosion",
@@ -16349,19 +16458,10 @@ door{
   layer = 0,
   x = 1352,
   y = 344,
-  name = "door_bomb_2",
+  name = "door_bomb_1",
   direction = 3,
   sprite = "entities/door_very_weak_wall",
   opening_method = "explosion",
-}
-
-door{
-  layer = 0,
-  x = 1048,
-  y = 600,
-  name = "door",
-  direction = 2,
-  sprite = "entities/door_shutter",
 }
 
 custom_entity{
@@ -16399,7 +16499,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 1824,
+  x = 1816,
   y = 1349,
   treasure_name = "random",
   sprite = "entities/pot",
@@ -16408,7 +16508,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 1824,
+  x = 1832,
   y = 1213,
   treasure_name = "random",
   sprite = "entities/pot",
@@ -16446,6 +16546,831 @@ enemy{
   treasure_name = "plume",
 }
 
+door{
+  layer = 0,
+  x = 1128,
+  y = 920,
+  name = "door_boss_1",
+  direction = 3,
+  sprite = "entities/door_boss_key",
+  savegame_variable = "b1132",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "b1129",
+  cannot_open_dialog = "_big_key_required",
+}
+
+door{
+  layer = 0,
+  x = 1128,
+  y = 968,
+  name = "door_boss_2",
+  direction = 1,
+  sprite = "entities/door_boss_key",
+  savegame_variable = "b1132",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "b1129",
+  cannot_open_dialog = "_big_key_required",
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1304,
+  y = 408,
+  width = 64,
+  height = 48,
+  name = "water_source_1",
+  pattern = 675,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1320,
+  y = 400,
+  width = 16,
+  height = 16,
+  name = "water_stream",
+  pattern = 682,
+  enabled_at_start = true,
+}
+
+door{
+  layer = 0,
+  x = 1048,
+  y = 600,
+  name = "shutter_1",
+  direction = 2,
+  sprite = "entities/door_shutter",
+}
+
+stream{
+  layer = 0,
+  x = 1344,
+  y = 597,
+  name = "water_stream_1",
+  direction = 6,
+  sprite = "entities/stream_water",
+  speed = 48,
+}
+
+stream{
+  layer = 0,
+  x = 1344,
+  y = 613,
+  name = "water_stream_2",
+  direction = 6,
+  sprite = "entities/stream_water",
+  speed = 48,
+}
+
+stream{
+  layer = 0,
+  x = 1344,
+  y = 629,
+  name = "water_stream_3",
+  direction = 6,
+  sprite = "entities/stream_water",
+  speed = 48,
+}
+
+stream{
+  layer = 0,
+  x = 1344,
+  y = 645,
+  name = "water_stream_4",
+  direction = 6,
+  sprite = "entities/stream_water",
+  speed = 48,
+}
+
+stream{
+  layer = 0,
+  x = 1344,
+  y = 661,
+  name = "water_stream_5",
+  direction = 6,
+  sprite = "entities/stream_water",
+  speed = 48,
+}
+
+stream{
+  layer = 0,
+  x = 1344,
+  y = 677,
+  name = "water_stream_6",
+  direction = 6,
+  sprite = "entities/stream_water",
+  speed = 48,
+}
+
+stream{
+  layer = 0,
+  x = 1344,
+  y = 693,
+  name = "water_stream_7",
+  direction = 6,
+  sprite = "entities/stream_water",
+  speed = 48,
+}
+
+stream{
+  layer = 0,
+  x = 1344,
+  y = 709,
+  name = "water_stream_8",
+  direction = 6,
+  sprite = "entities/stream_water",
+  speed = 48,
+}
+
+stream{
+  layer = 0,
+  x = 1344,
+  y = 725,
+  name = "water_stream_9",
+  direction = 6,
+  sprite = "entities/stream_water",
+  speed = 48,
+}
+
+stream{
+  layer = 0,
+  x = 1344,
+  y = 741,
+  name = "water_stream_10",
+  direction = 6,
+  sprite = "entities/stream_water",
+  speed = 48,
+}
+
+stream{
+  layer = 0,
+  x = 1344,
+  y = 757,
+  name = "water_stream_11",
+  direction = 6,
+  sprite = "entities/stream_water",
+  speed = 48,
+}
+
+stream{
+  layer = 0,
+  x = 1344,
+  y = 773,
+  name = "water_stream_12",
+  direction = 6,
+  sprite = "entities/stream_water",
+  speed = 48,
+}
+
+stream{
+  layer = 0,
+  x = 1344,
+  y = 789,
+  name = "water_stream_13",
+  direction = 6,
+  sprite = "entities/stream_water",
+  speed = 48,
+}
+
+stream{
+  layer = 0,
+  x = 1344,
+  y = 805,
+  name = "water_stream_14",
+  direction = 6,
+  sprite = "entities/stream_water",
+  speed = 48,
+}
+
+stream{
+  layer = 0,
+  x = 1344,
+  y = 821,
+  name = "water_stream_15",
+  direction = 6,
+  sprite = "entities/stream_water",
+  speed = 48,
+}
+
+stream{
+  layer = 0,
+  x = 1344,
+  y = 837,
+  name = "water_stream_16",
+  direction = 6,
+  sprite = "entities/stream_water",
+  speed = 48,
+}
+
+stream{
+  layer = 0,
+  x = 1344,
+  y = 469,
+  name = "water_stream_17",
+  direction = 6,
+  sprite = "entities/stream_water",
+  speed = 48,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1336,
+  y = 456,
+  width = 16,
+  height = 8,
+  name = "water_source_2",
+  pattern = 675,
+  enabled_at_start = true,
+}
+
+stream{
+  layer = 0,
+  x = 1344,
+  y = 853,
+  name = "water_stream_18",
+  direction = 6,
+  sprite = "entities/stream_water",
+  speed = 48,
+}
+
+stream{
+  layer = 0,
+  x = 1344,
+  y = 869,
+  name = "water_stream_19",
+  direction = 6,
+  sprite = "entities/stream_water",
+  speed = 48,
+}
+
+stream{
+  layer = 0,
+  x = 1344,
+  y = 885,
+  name = "water_stream_20",
+  direction = 6,
+  sprite = "entities/stream_water",
+  speed = 48,
+}
+
+stream{
+  layer = 0,
+  x = 1344,
+  y = 901,
+  name = "water_stream_21",
+  direction = 6,
+  sprite = "entities/stream_water",
+  speed = 48,
+}
+
+chest{
+  layer = 0,
+  x = 920,
+  y = 1357,
+  name = "chest_key_4",
+  treasure_name = "small_key",
+  treasure_savegame_variable = "b1124",
+  sprite = "entities/chest",
+}
+
+door{
+  layer = 0,
+  x = 1048,
+  y = 840,
+  name = "door_key4_1",
+  direction = 2,
+  sprite = "entities/door_small_key",
+  savegame_variable = "b1138",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_5_small_keys",
+  opening_condition_consumed = true,
+  cannot_open_dialog = "_small_key_required",
+}
+
+door{
+  layer = 0,
+  x = 1000,
+  y = 840,
+  name = "door_key4_2",
+  direction = 0,
+  sprite = "entities/door_small_key",
+  savegame_variable = "b1138",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_5_small_keys",
+  opening_condition_consumed = true,
+  cannot_open_dialog = "_small_key_required",
+}
+
+door{
+  layer = 0,
+  x = 1128,
+  y = 760,
+  name = "door_key5_3",
+  direction = 1,
+  sprite = "entities/door_small_key",
+  savegame_variable = "b1139",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_5_small_keys",
+  opening_condition_consumed = true,
+  cannot_open_dialog = "_small_key_required",
+}
+
+door{
+  layer = 0,
+  x = 1128,
+  y = 712,
+  name = "door_key5_4",
+  direction = 3,
+  sprite = "entities/door_small_key",
+  savegame_variable = "b1139",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_5_small_keys",
+  opening_condition_consumed = true,
+  cannot_open_dialog = "_small_key_required",
+}
+
+door{
+  layer = 0,
+  x = 728,
+  y = 1176,
+  name = "boss_shutter",
+  direction = 0,
+  sprite = "entities/door_shutter",
+}
+
+chest{
+  layer = 0,
+  x = 832,
+  y = 829,
+  name = "chest_compass",
+  treasure_name = "compass",
+  treasure_savegame_variable = "b1126",
+  sprite = "entities/chest",
+}
+
+chest{
+  layer = 0,
+  x = 1944,
+  y = 485,
+  name = "chest_key_2",
+  treasure_name = "small_key",
+  treasure_savegame_variable = "b1122",
+  sprite = "entities/chest",
+}
+
+stream{
+  layer = 0,
+  x = 1880,
+  y = 445,
+  name = "water_stream_key_1",
+  direction = 6,
+  sprite = "entities/stream_water",
+  speed = 48,
+}
+
+stream{
+  layer = 0,
+  x = 1880,
+  y = 461,
+  name = "water_stream_key_2",
+  direction = 6,
+  sprite = "entities/stream_water",
+  speed = 48,
+}
+
+stream{
+  layer = 0,
+  x = 1880,
+  y = 477,
+  name = "water_stream_key_3",
+  direction = 6,
+  sprite = "entities/stream_water",
+  speed = 48,
+}
+
+stream{
+  layer = 0,
+  x = 1880,
+  y = 493,
+  name = "water_stream_key_4",
+  direction = 6,
+  sprite = "entities/stream_water",
+  speed = 48,
+}
+
+stream{
+  layer = 0,
+  x = 1880,
+  y = 509,
+  name = "water_stream_key_5",
+  direction = 6,
+  sprite = "entities/stream_water",
+  speed = 48,
+}
+
+stream{
+  layer = 0,
+  x = 1880,
+  y = 525,
+  name = "water_stream_key_6",
+  direction = 6,
+  sprite = "entities/stream_water",
+  speed = 48,
+}
+
+destructible{
+  layer = 0,
+  x = 1808,
+  y = 461,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 1824,
+  y = 461,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+door{
+  layer = 0,
+  x = 1128,
+  y = 488,
+  name = "shutter_2_1",
+  direction = 1,
+  sprite = "entities/door_shutter",
+}
+
+door{
+  layer = 0,
+  x = 1128,
+  y = 440,
+  name = "shutter_2_2",
+  direction = 3,
+  sprite = "entities/door_shutter",
+}
+
+stream{
+  layer = 0,
+  x = 1824,
+  y = 1557,
+  name = "water_stream_chest_1",
+  direction = 2,
+  sprite = "entities/stream_water",
+  speed = 48,
+}
+
+stream{
+  layer = 0,
+  x = 1824,
+  y = 1541,
+  name = "water_stream_chest_2",
+  direction = 2,
+  sprite = "entities/stream_water",
+  speed = 48,
+}
+
+stream{
+  layer = 0,
+  x = 1824,
+  y = 1525,
+  name = "water_stream_chest_3",
+  direction = 2,
+  sprite = "entities/stream_water",
+  speed = 48,
+}
+
+enemy{
+  layer = 0,
+  x = 1688,
+  y = 653,
+  name = "tektite_1",
+  direction = 3,
+  breed = "tektite_blue",
+}
+
+enemy{
+  layer = 0,
+  x = 1520,
+  y = 637,
+  name = "tektite_2",
+  direction = 3,
+  breed = "tektite_blue",
+}
+
+door{
+  layer = 0,
+  x = 1768,
+  y = 392,
+  name = "door_key2_1",
+  direction = 1,
+  sprite = "entities/door_small_key",
+  savegame_variable = "b1136",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_5_small_keys",
+  opening_condition_consumed = true,
+  cannot_open_dialog = "_small_key_required",
+}
+
+door{
+  layer = 0,
+  x = 1768,
+  y = 344,
+  name = "door_key2_2",
+  direction = 3,
+  sprite = "entities/door_small_key",
+  savegame_variable = "b1136",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_5_small_keys",
+  opening_condition_consumed = true,
+  cannot_open_dialog = "_small_key_required",
+}
+
+door{
+  layer = 0,
+  x = 1576,
+  y = 1000,
+  name = "door_key3_2",
+  direction = 1,
+  sprite = "entities/door_small_key",
+  savegame_variable = "b1137",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_5_small_keys",
+  opening_condition_consumed = true,
+  cannot_open_dialog = "_small_key_required",
+}
+
+door{
+  layer = 0,
+  x = 1576,
+  y = 952,
+  name = "door_key3_1",
+  direction = 3,
+  sprite = "entities/door_small_key",
+  savegame_variable = "b1137",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_5_small_keys",
+  opening_condition_consumed = true,
+  cannot_open_dialog = "_small_key_required",
+}
+
+chest{
+  layer = 0,
+  x = 904,
+  y = 581,
+  name = "chest_key_5",
+  treasure_name = "small_key",
+  treasure_savegame_variable = "b1125",
+  sprite = "entities/chest",
+}
+
+enemy{
+  layer = 0,
+  x = 1728,
+  y = 157,
+  name = "bari_3",
+  direction = 3,
+  breed = "bari_blue",
+}
+
+enemy{
+  layer = 0,
+  x = 1616,
+  y = 133,
+  name = "bari_2",
+  direction = 3,
+  breed = "bari_blue",
+}
+
+enemy{
+  layer = 0,
+  x = 1920,
+  y = 117,
+  name = "bari_4",
+  direction = 3,
+  breed = "bari_blue",
+}
+
+enemy{
+  layer = 0,
+  x = 1720,
+  y = 269,
+  name = "bari_5",
+  direction = 3,
+  breed = "bari_blue",
+}
+
+enemy{
+  layer = 0,
+  x = 1616,
+  y = 269,
+  name = "bari_6",
+  direction = 3,
+  breed = "bari_blue",
+}
+
+enemy{
+  layer = 0,
+  x = 1520,
+  y = 325,
+  name = "bari_7",
+  direction = 3,
+  breed = "bari_blue",
+}
+
+enemy{
+  layer = 0,
+  x = 1392,
+  y = 269,
+  name = "bari_8",
+  direction = 3,
+  breed = "bari_blue",
+}
+
+enemy{
+  layer = 0,
+  x = 1416,
+  y = 157,
+  name = "bari_9",
+  direction = 3,
+  breed = "bari_blue",
+}
+
+enemy{
+  layer = 0,
+  x = 1448,
+  y = 269,
+  name = "bari_10",
+  direction = 3,
+  breed = "bari_blue",
+}
+
+enemy{
+  layer = 0,
+  x = 1104,
+  y = 597,
+  name = "chuchu_1",
+  direction = 3,
+  breed = "chuchu_blue",
+}
+
+enemy{
+  layer = 0,
+  x = 1144,
+  y = 677,
+  name = "chuchu_2",
+  direction = 3,
+  breed = "chuchu_blue",
+}
+
+enemy{
+  layer = 0,
+  x = 1168,
+  y = 565,
+  name = "chuchu_3",
+  direction = 3,
+  breed = "chuchu_blue",
+}
+
+sensor{
+  layer = 0,
+  x = 1032,
+  y = 589,
+  width = 16,
+  height = 64,
+  name = "sensor_open_shutter_1",
+}
+
+sensor{
+  layer = 0,
+  x = 1072,
+  y = 589,
+  width = 16,
+  height = 64,
+  name = "sensor_close_shutter_1",
+}
+
+sensor{
+  layer = 0,
+  x = 1120,
+  y = 437,
+  width = 48,
+  height = 16,
+  name = "sensor_close_shutter_2",
+}
+
+enemy{
+  layer = 0,
+  x = 888,
+  y = 453,
+  name = "aquadracini_1",
+  direction = 3,
+  breed = "aquadracini",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 960,
+  y = 389,
+  name = "aquadracini_2",
+  direction = 3,
+  breed = "aquadracini",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 952,
+  y = 557,
+  name = "aquadracini_3",
+  direction = 3,
+  breed = "aquadracini",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 1064,
+  y = 373,
+  name = "aquadracini_4",
+  direction = 3,
+  breed = "aquadracini",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 856,
+  y = 597,
+  name = "aquadracini_5",
+  direction = 3,
+  breed = "aquadracini",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 848,
+  y = 373,
+  name = "aquadracini_6",
+  direction = 3,
+  breed = "aquadracini",
+  treasure_name = "random",
+}
+
+door{
+  layer = 0,
+  x = 896,
+  y = 664,
+  name = "shutter_3",
+  direction = 3,
+  sprite = "entities/door_shutter",
+}
+
+sensor{
+  layer = 0,
+  x = 888,
+  y = 701,
+  width = 48,
+  height = 16,
+  name = "sensor_open_shutter_3",
+}
+
+sensor{
+  layer = 0,
+  x = 888,
+  y = 661,
+  width = 48,
+  height = 16,
+  name = "sensor_close_shutter_3",
+}
+
+chest{
+  layer = 0,
+  x = 1784,
+  y = 1485,
+  name = "chest_goddess_plume",
+  treasure_name = "plume",
+  treasure_savegame_variable = "b1782",
+  sprite = "entities/chest",
+}
+
+switch{
+  layer = 0,
+  x = 1856,
+  y = 1472,
+  name = "switch_water_chest",
+  subtype = "1",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
 tile{
   layer = 2,
   x = 1760,
@@ -16480,15 +17405,6 @@ tile{
   width = 64,
   height = 16,
   pattern = 137,
-}
-
-tile{
-  layer = 2,
-  x = 1992,
-  y = 496,
-  width = 8,
-  height = 32,
-  pattern = 167,
 }
 
 tile{
@@ -17362,5 +18278,185 @@ tile{
   width = 192,
   height = 32,
   pattern = 137,
+}
+
+tile{
+  layer = 2,
+  x = 784,
+  y = 688,
+  width = 240,
+  height = 16,
+  pattern = 137,
+}
+
+tile{
+  layer = 2,
+  x = 592,
+  y = 0,
+  width = 192,
+  height = 704,
+  pattern = 137,
+}
+
+tile{
+  layer = 2,
+  x = 592,
+  y = 704,
+  width = 176,
+  height = 224,
+  pattern = 137,
+}
+
+tile{
+  layer = 2,
+  x = 0,
+  y = 0,
+  width = 592,
+  height = 816,
+  pattern = 137,
+}
+
+tile{
+  layer = 2,
+  x = 784,
+  y = 0,
+  width = 432,
+  height = 288,
+  pattern = 137,
+}
+
+tile{
+  layer = 2,
+  x = 1728,
+  y = 560,
+  width = 32,
+  height = 16,
+  pattern = 137,
+}
+
+tile{
+  layer = 2,
+  x = 1904,
+  y = 1104,
+  width = 128,
+  height = 144,
+  pattern = 137,
+}
+
+tile{
+  layer = 2,
+  x = 1872,
+  y = 1248,
+  width = 160,
+  height = 192,
+  pattern = 137,
+}
+
+tile{
+  layer = 2,
+  x = 1904,
+  y = 1440,
+  width = 128,
+  height = 128,
+  pattern = 137,
+}
+
+tile{
+  layer = 2,
+  x = 1440,
+  y = 1568,
+  width = 592,
+  height = 32,
+  pattern = 137,
+}
+
+tile{
+  layer = 2,
+  x = 1440,
+  y = 1264,
+  width = 288,
+  height = 304,
+  pattern = 137,
+}
+
+tile{
+  layer = 2,
+  x = 1728,
+  y = 1440,
+  width = 16,
+  height = 128,
+  pattern = 137,
+}
+
+tile{
+  layer = 2,
+  x = 1728,
+  y = 1248,
+  width = 48,
+  height = 192,
+  pattern = 137,
+}
+
+tile{
+  layer = 2,
+  x = 1216,
+  y = 1248,
+  width = 224,
+  height = 352,
+  pattern = 137,
+}
+
+tile{
+  layer = 2,
+  x = 1040,
+  y = 1344,
+  width = 176,
+  height = 256,
+  pattern = 137,
+}
+
+tile{
+  layer = 2,
+  x = 864,
+  y = 1456,
+  width = 176,
+  height = 144,
+  pattern = 137,
+}
+
+tile{
+  layer = 2,
+  x = 0,
+  y = 816,
+  width = 80,
+  height = 784,
+  pattern = 137,
+}
+
+tile{
+  layer = 2,
+  x = 752,
+  y = 928,
+  width = 288,
+  height = 16,
+  pattern = 137,
+}
+
+tile{
+  layer = 2,
+  x = 888,
+  y = 704,
+  width = 32,
+  height = 8,
+  pattern = 154,
+}
+
+tile{
+  layer = 2,
+  x = 888,
+  y = 680,
+  width = 32,
+  height = 8,
+  pattern = 160,
 }
 
