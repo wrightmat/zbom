@@ -7,6 +7,7 @@ local game = map:get_game()
 
 function map:on_started(destination)
   chest_big_key:set_enabled(false)
+  to_basement:set_enabled(false)
 end
 
 function map:on_obtained_treasure(treasure_item, treasure_variant, treasure_savegame_variable)
@@ -38,6 +39,7 @@ for enemy in map:get_entities("tektite") do
   enemy.on_dead = function()
     if not map:has_entities("tektite") then
       grate:set_enabled(false)
+      to_basement:set_enabled(false)
       sol.audio.play_sound("secret")
     end
   end
