@@ -8289,6 +8289,42 @@ tile{
   pattern = 646,
 }
 
+tile{
+  layer = 0,
+  x = 744,
+  y = 664,
+  width = 32,
+  height = 16,
+  pattern = 675,
+}
+
+tile{
+  layer = 0,
+  x = 1352,
+  y = 936,
+  width = 32,
+  height = 16,
+  pattern = 675,
+}
+
+tile{
+  layer = 0,
+  x = 1200,
+  y = 584,
+  width = 16,
+  height = 16,
+  pattern = 646,
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = 646,
+}
+
 teletransporter{
   layer = 0,
   x = 1456,
@@ -8308,8 +8344,9 @@ door{
   name = "door_key1_1",
   direction = 0,
   sprite = "entities/door_small_key",
+  savegame_variable = "b1135",
   opening_method = "interaction_if_savegame_variable",
-  opening_condition = "dungeon_4_small_keys",
+  opening_condition = "dungeon_5_small_keys",
   opening_condition_consumed = true,
   cannot_open_dialog = "_small_key_required",
 }
@@ -8321,8 +8358,9 @@ door{
   name = "door_key1_2",
   direction = 2,
   sprite = "entities/door_small_key",
+  savegame_variable = "b1135",
   opening_method = "interaction_if_savegame_variable",
-  opening_condition = "dungeon_4_small_keys",
+  opening_condition = "dungeon_5_small_keys",
   opening_condition_consumed = true,
   cannot_open_dialog = "_small_key_required",
 }
@@ -8466,8 +8504,8 @@ stream{
 
 enemy{
   layer = 0,
-  x = 592,
-  y = 245,
+  x = 616,
+  y = 221,
   name = "bari",
   direction = 3,
   breed = "bari_blue",
@@ -8558,6 +8596,9 @@ chest{
   treasure_name = "hookshot",
   treasure_savegame_variable = "b1130",
   sprite = "entities/chest_big",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "b1129",
+  cannot_open_dialog = "_big_key_required",
 }
 
 destructible{
@@ -8587,7 +8628,485 @@ enemy{
   breed = "aquadraco",
   rank = 1,
   savegame_variable = "b1128",
+  treasure_name = "crystal",
+}
+
+chest{
+  layer = 0,
+  x = 584,
+  y = 173,
+  name = "chest_small_key",
+  treasure_name = "small_key",
+  treasure_savegame_variable = "b1121",
+  sprite = "entities/chest",
+}
+
+enemy{
+  layer = 0,
+  x = 552,
+  y = 213,
+  name = "bari_2",
+  direction = 3,
+  breed = "bari_blue",
+}
+
+wall{
+  layer = 0,
+  x = 520,
+  y = 224,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 224,
+  y = 224,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+enemy{
+  layer = 0,
+  x = 1248,
+  y = 621,
+  name = "aquadracini_1",
+  direction = 3,
+  breed = "aquadracini",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 1160,
+  y = 605,
+  name = "aquadracini_2",
+  direction = 3,
+  breed = "aquadracini",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 1200,
+  y = 645,
+  name = "aquadracini_3",
+  direction = 3,
+  breed = "aquadracini",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 1264,
+  y = 661,
+  name = "aquadracini_4",
+  direction = 3,
+  breed = "aquadracini",
+  treasure_name = "random",
+}
+
+chest{
+  layer = 0,
+  x = 1208,
+  y = 597,
+  name = "chest_big_key",
   treasure_name = "big_key",
+  treasure_savegame_variable = "b1129",
+  sprite = "entities/chest",
+}
+
+enemy{
+  layer = 0,
+  x = 1144,
+  y = 653,
+  name = "aquadracini_5",
+  direction = 3,
+  breed = "aquadracini",
+  treasure_name = "random",
+}
+
+wall{
+  layer = 0,
+  x = 1072,
+  y = 736,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 944,
+  y = 344,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1056,
+  y = 416,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1128,
+  y = 416,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1360,
+  y = 432,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+enemy{
+  layer = 0,
+  x = 1128,
+  y = 197,
+  name = "tektite_1",
+  direction = 3,
+  breed = "tektite_blue",
+}
+
+enemy{
+  layer = 0,
+  x = 888,
+  y = 205,
+  name = "tektite_2",
+  direction = 3,
+  breed = "tektite_blue",
+}
+
+enemy{
+  layer = 0,
+  x = 984,
+  y = 197,
+  name = "tektite_3",
+  direction = 3,
+  breed = "tektite_blue",
+}
+
+enemy{
+  layer = 0,
+  x = 1056,
+  y = 245,
+  name = "tektite_4",
+  direction = 3,
+  breed = "tektite_blue",
+}
+
+enemy{
+  layer = 0,
+  x = 1184,
+  y = 245,
+  name = "tektite_5",
+  direction = 3,
+  breed = "tektite_blue",
+}
+
+enemy{
+  layer = 0,
+  x = 928,
+  y = 245,
+  name = "tektite_6",
+  direction = 3,
+  breed = "tektite_blue",
+}
+
+wall{
+  layer = 0,
+  x = 944,
+  y = 272,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+enemy{
+  layer = 0,
+  x = 592,
+  y = 672,
+  name = "bubble_2",
+  direction = 3,
+  breed = "bubble_blue",
+}
+
+wall{
+  layer = 0,
+  x = 624,
+  y = 600,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 624,
+  y = 528,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 592,
+  y = 960,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 592,
+  y = 1032,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 960,
+  y = 848,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1032,
+  y = 848,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1072,
+  y = 808,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 336,
+  y = 656,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 336,
+  y = 728,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 336,
+  y = 408,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 336,
+  y = 336,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 448,
+  y = 224,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 296,
+  y = 224,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 368,
+  y = 432,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 440,
+  y = 432,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1216,
+  y = 1072,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1216,
+  y = 1144,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1432,
+  y = 432,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1456,
+  y = 528,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1456,
+  y = 600,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{

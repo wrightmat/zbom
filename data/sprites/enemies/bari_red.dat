@@ -4,10 +4,10 @@ animation{
   frame_delay = 200,
   frame_to_loop_on = 0,
   directions = {
-    { x = 16, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
-    { x = 16, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
-    { x = 16, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
-    { x = 16, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 0, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 0, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 0, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 0, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
   },
 }
 
@@ -15,10 +15,10 @@ animation{
   name = "immobilized",
   src_image = "enemies/bari.png",
   directions = {
-    { x = 16, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 16, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 16, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 16, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 0, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 0, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 0, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 0, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
 
@@ -28,10 +28,10 @@ animation{
   frame_delay = 50,
   frame_to_loop_on = 0,
   directions = {
-    { x = 0, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
-    { x = 0, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
-    { x = 0, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
-    { x = 0, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 48, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 48, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 48, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 48, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
   },
 }
 
@@ -39,9 +39,9 @@ animation{
   name = "hurt",
   src_image = "enemies/bari.png",
   directions = {
-    { x = 0, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 0, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 0, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 0, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 32, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 32, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 32, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 32, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
