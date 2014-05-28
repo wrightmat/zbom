@@ -17,6 +17,11 @@ function map:on_started(destination)
   end
   if not game:get_value("b1134") then chest_book:set_enabled(false) end
   if not game:get_value("b1133") then boss_heart:set_enabled(false) end
+  if game:get_value("b1141") then
+    water_source_1:set_enabled(false)
+    water_source_2:set_enabled(false)
+    map:set_entities_enabled("water_stream", false)
+  end
 end
 
 function door_bomb_1:on_opened()
@@ -83,6 +88,17 @@ function sensor_open_shutter_3:on_activated()
 end
 function sensor_close_shutter_3:on_activated()
   map:close_doors("shutter_3")
+end
+
+function sensor_open_shutter_waterfall:on_activated()
+  if game:get_value("b1141") then
+    map:open_doors("shutter_waterfall")
+  else
+    game:start_dialog("lakebed.waterfall")
+  end
+end
+function sensor_close_shutter_waterfall:on_activated()
+  map:close_doors("shutter_waterfall")
 end
 
 function switch_water_chest:on_activated()

@@ -16434,6 +16434,15 @@ tile{
   pattern = 161,
 }
 
+tile{
+  layer = 0,
+  x = 1816,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = 646,
+}
+
 chest{
   layer = 0,
   x = 1344,
@@ -16451,6 +16460,7 @@ door{
   name = "door_bomb_2",
   direction = 1,
   sprite = "entities/door_very_weak_wall",
+  savegame_variable = "b1141",
   opening_method = "explosion",
 }
 
@@ -16461,6 +16471,7 @@ door{
   name = "door_bomb_1",
   direction = 3,
   sprite = "entities/door_very_weak_wall",
+  savegame_variable = "b1141",
   opening_method = "explosion",
 }
 
@@ -16610,7 +16621,7 @@ stream{
   name = "water_stream_1",
   direction = 6,
   sprite = "entities/stream_water",
-  speed = 48,
+  allow_movement = false,
 }
 
 stream{
@@ -16620,7 +16631,7 @@ stream{
   name = "water_stream_2",
   direction = 6,
   sprite = "entities/stream_water",
-  speed = 48,
+  allow_movement = false,
 }
 
 stream{
@@ -16630,7 +16641,7 @@ stream{
   name = "water_stream_3",
   direction = 6,
   sprite = "entities/stream_water",
-  speed = 48,
+  allow_movement = false,
 }
 
 stream{
@@ -16640,7 +16651,7 @@ stream{
   name = "water_stream_4",
   direction = 6,
   sprite = "entities/stream_water",
-  speed = 48,
+  allow_movement = false,
 }
 
 stream{
@@ -16650,7 +16661,7 @@ stream{
   name = "water_stream_5",
   direction = 6,
   sprite = "entities/stream_water",
-  speed = 48,
+  allow_movement = false,
 }
 
 stream{
@@ -16660,7 +16671,7 @@ stream{
   name = "water_stream_6",
   direction = 6,
   sprite = "entities/stream_water",
-  speed = 48,
+  allow_movement = false,
 }
 
 stream{
@@ -16670,7 +16681,7 @@ stream{
   name = "water_stream_7",
   direction = 6,
   sprite = "entities/stream_water",
-  speed = 48,
+  allow_movement = false,
 }
 
 stream{
@@ -16680,7 +16691,7 @@ stream{
   name = "water_stream_8",
   direction = 6,
   sprite = "entities/stream_water",
-  speed = 48,
+  allow_movement = false,
 }
 
 stream{
@@ -16690,7 +16701,7 @@ stream{
   name = "water_stream_9",
   direction = 6,
   sprite = "entities/stream_water",
-  speed = 48,
+  allow_movement = false,
 }
 
 stream{
@@ -16700,7 +16711,7 @@ stream{
   name = "water_stream_10",
   direction = 6,
   sprite = "entities/stream_water",
-  speed = 48,
+  allow_movement = false,
 }
 
 stream{
@@ -16710,7 +16721,7 @@ stream{
   name = "water_stream_11",
   direction = 6,
   sprite = "entities/stream_water",
-  speed = 48,
+  allow_movement = false,
 }
 
 stream{
@@ -16720,7 +16731,7 @@ stream{
   name = "water_stream_12",
   direction = 6,
   sprite = "entities/stream_water",
-  speed = 48,
+  allow_movement = false,
 }
 
 stream{
@@ -16730,7 +16741,7 @@ stream{
   name = "water_stream_13",
   direction = 6,
   sprite = "entities/stream_water",
-  speed = 48,
+  allow_movement = false,
 }
 
 stream{
@@ -16740,7 +16751,7 @@ stream{
   name = "water_stream_14",
   direction = 6,
   sprite = "entities/stream_water",
-  speed = 48,
+  allow_movement = false,
 }
 
 stream{
@@ -16750,7 +16761,7 @@ stream{
   name = "water_stream_15",
   direction = 6,
   sprite = "entities/stream_water",
-  speed = 48,
+  allow_movement = false,
 }
 
 stream{
@@ -16760,7 +16771,7 @@ stream{
   name = "water_stream_16",
   direction = 6,
   sprite = "entities/stream_water",
-  speed = 48,
+  allow_movement = false,
 }
 
 stream{
@@ -16770,7 +16781,7 @@ stream{
   name = "water_stream_17",
   direction = 6,
   sprite = "entities/stream_water",
-  speed = 48,
+  allow_movement = false,
 }
 
 dynamic_tile{
@@ -16791,7 +16802,7 @@ stream{
   name = "water_stream_18",
   direction = 6,
   sprite = "entities/stream_water",
-  speed = 48,
+  allow_movement = false,
 }
 
 stream{
@@ -16801,7 +16812,7 @@ stream{
   name = "water_stream_19",
   direction = 6,
   sprite = "entities/stream_water",
-  speed = 48,
+  allow_movement = false,
 }
 
 stream{
@@ -16811,7 +16822,7 @@ stream{
   name = "water_stream_20",
   direction = 6,
   sprite = "entities/stream_water",
-  speed = 48,
+  allow_movement = false,
 }
 
 stream{
@@ -16821,7 +16832,7 @@ stream{
   name = "water_stream_21",
   direction = 6,
   sprite = "entities/stream_water",
-  speed = 48,
+  allow_movement = false,
 }
 
 chest{
@@ -16926,7 +16937,7 @@ stream{
   name = "water_stream_key_1",
   direction = 6,
   sprite = "entities/stream_water",
-  speed = 48,
+  allow_movement = false,
 }
 
 stream{
@@ -16936,7 +16947,7 @@ stream{
   name = "water_stream_key_2",
   direction = 6,
   sprite = "entities/stream_water",
-  speed = 48,
+  allow_movement = false,
 }
 
 stream{
@@ -16946,7 +16957,7 @@ stream{
   name = "water_stream_key_3",
   direction = 6,
   sprite = "entities/stream_water",
-  speed = 48,
+  allow_movement = false,
 }
 
 stream{
@@ -16956,7 +16967,7 @@ stream{
   name = "water_stream_key_4",
   direction = 6,
   sprite = "entities/stream_water",
-  speed = 48,
+  allow_movement = false,
 }
 
 stream{
@@ -16966,7 +16977,7 @@ stream{
   name = "water_stream_key_5",
   direction = 6,
   sprite = "entities/stream_water",
-  speed = 48,
+  allow_movement = false,
 }
 
 stream{
@@ -16976,7 +16987,7 @@ stream{
   name = "water_stream_key_6",
   direction = 6,
   sprite = "entities/stream_water",
-  speed = 48,
+  allow_movement = false,
 }
 
 destructible{
@@ -16993,8 +17004,9 @@ destructible{
   x = 1824,
   y = 461,
   treasure_name = "random",
-  sprite = "entities/pot",
+  sprite = "entities/stone_small_black",
   destruction_sound = "stone",
+  weight = 2,
 }
 
 door{
@@ -17022,7 +17034,9 @@ stream{
   name = "water_stream_chest_1",
   direction = 2,
   sprite = "entities/stream_water",
-  speed = 48,
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
 }
 
 stream{
@@ -17032,7 +17046,9 @@ stream{
   name = "water_stream_chest_2",
   direction = 2,
   sprite = "entities/stream_water",
-  speed = 48,
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
 }
 
 stream{
@@ -17042,7 +17058,9 @@ stream{
   name = "water_stream_chest_3",
   direction = 2,
   sprite = "entities/stream_water",
-  speed = 48,
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
 }
 
 enemy{
@@ -17410,6 +17428,175 @@ sensor{
   width = 16,
   height = 48,
   name = "sensor_boss",
+}
+
+destructible{
+  layer = 0,
+  x = 1824,
+  y = 477,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+wall{
+  layer = 0,
+  x = 1864,
+  y = 528,
+  width = 32,
+  height = 8,
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1568,
+  y = 672,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1568,
+  y = 744,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1680,
+  y = 464,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1752,
+  y = 464,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1760,
+  y = 336,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1760,
+  y = 408,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1480,
+  y = 832,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1680,
+  y = 832,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1752,
+  y = 832,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1408,
+  y = 832,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1272,
+  y = 832,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+door{
+  layer = 0,
+  x = 1336,
+  y = 920,
+  name = "shutter_waterfall",
+  direction = 3,
+  sprite = "entities/door_shutter",
+}
+
+sensor{
+  layer = 0,
+  x = 1328,
+  y = 957,
+  width = 48,
+  height = 16,
+  name = "sensor_open_shutter_waterfall",
+}
+
+sensor{
+  layer = 0,
+  x = 1328,
+  y = 917,
+  width = 48,
+  height = 16,
+  name = "sensor_close_shutter_waterfall",
 }
 
 tile{

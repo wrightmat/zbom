@@ -6,9 +6,13 @@ local game = map:get_game()
 ---------------------------------------
 
 function map:on_started(destination)
-  if not game:get_value("b1129") then chest_big_key:set_enabled(false) end
-  if game:get_value("b1128") then map:open_doors("door_miniboss") end
   to_basement:set_enabled(false)
+  if not game:get_value("b1129") then chest_big_key:set_enabled(false) end
+  if game:get_value("b1128") then
+    map:open_doors("door_miniboss")
+  else
+    miniboss_aquadraco:set_enabled(false)
+  end
   if game:get_value("b1140") then
     water_chest:set_enabled(false)
     sensor_room_flooded:set_enabled(false)
@@ -57,7 +61,7 @@ for enemy in map:get_entities("tektite") do
   enemy.on_dead = function()
     if not map:has_entities("tektite") then
       grate:set_enabled(false)
-      to_basement:set_enabled(false)
+      to_basement:set_enabled(true)
       sol.audio.play_sound("secret")
     end
   end
