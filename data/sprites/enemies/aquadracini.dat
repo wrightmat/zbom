@@ -4,10 +4,10 @@ animation{
   frame_delay = 200,
   frame_to_loop_on = 0,
   directions = {
-    { x = 220, y = 56, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
-    { x = 220, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
-    { x = 188, y = 56, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
-    { x = 188, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 224, y = 56, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 224, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 192, y = 56, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 192, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
   },
 }
 
@@ -15,10 +15,10 @@ animation{
   name = "immobilized",
   src_image = "enemies/aquadraco.png",
   directions = {
-    { x = 220, y = 56, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 220, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 188, y = 56, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 188, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 224, y = 56, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 224, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 192, y = 56, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 192, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
 
@@ -28,10 +28,10 @@ animation{
   frame_delay = 50,
   frame_to_loop_on = 0,
   directions = {
-    { x = 220, y = 56, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
-    { x = 220, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
-    { x = 188, y = 56, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
-    { x = 188, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 224, y = 56, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 224, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 192, y = 56, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 192, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
   },
 }
 
@@ -39,9 +39,9 @@ animation{
   name = "hurt",
   src_image = "enemies/aquadraco.png",
   directions = {
-    { x = 220, y = 56, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 220, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 188, y = 56, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 188, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 224, y = 56, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 224, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 192, y = 56, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 192, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
