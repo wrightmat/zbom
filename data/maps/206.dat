@@ -11,6 +11,33 @@ properties{
 
 tile{
   layer = 0,
+  x = 816,
+  y = 1152,
+  width = 16,
+  height = 16,
+  pattern = 22,
+}
+
+tile{
+  layer = 0,
+  x = 832,
+  y = 1136,
+  width = 16,
+  height = 32,
+  pattern = 22,
+}
+
+tile{
+  layer = 0,
+  x = 800,
+  y = 1136,
+  width = 16,
+  height = 32,
+  pattern = 22,
+}
+
+tile{
+  layer = 0,
   x = 1184,
   y = 1152,
   width = 96,
@@ -7760,42 +7787,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 176,
-  y = 80,
-  width = 16,
-  height = 16,
-  pattern = 45,
-}
-
-tile{
-  layer = 0,
-  x = 80,
-  y = 80,
-  width = 16,
-  height = 16,
-  pattern = 45,
-}
-
-tile{
-  layer = 0,
-  x = 80,
-  y = 208,
-  width = 16,
-  height = 16,
-  pattern = 45,
-}
-
-tile{
-  layer = 0,
-  x = 176,
-  y = 224,
-  width = 16,
-  height = 16,
-  pattern = 45,
-}
-
-tile{
-  layer = 0,
   x = 1168,
   y = 1136,
   width = 8,
@@ -8177,7 +8168,7 @@ tile{
   x = 800,
   y = 1040,
   width = 48,
-  height = 128,
+  height = 96,
   pattern = 22,
 }
 
@@ -8343,6 +8334,15 @@ tile{
   pattern = 623,
 }
 
+tile{
+  layer = 0,
+  x = 808,
+  y = 1128,
+  width = 32,
+  height = 32,
+  pattern = 624,
+}
+
 chest{
   layer = 0,
   x = 1232,
@@ -8396,7 +8396,7 @@ door{
 destination{
   layer = 0,
   x = 824,
-  y = 1117,
+  y = 1125,
   name = "from_outside",
   direction = 3,
   default = true,
@@ -8417,8 +8417,8 @@ teletransporter{
 
 enemy{
   layer = 0,
-  x = 88,
-  y = 101,
+  x = 96,
+  y = 117,
   name = "chuchu_map_1",
   direction = 3,
   breed = "chuchu_blue",
@@ -8426,8 +8426,8 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 88,
-  y = 221,
+  x = 104,
+  y = 237,
   name = "chuchu_map_2",
   direction = 3,
   breed = "chuchu_blue",
@@ -8435,8 +8435,8 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 184,
-  y = 237,
+  x = 192,
+  y = 221,
   name = "chuchu_map_3",
   direction = 3,
   breed = "chuchu_blue",
@@ -8445,7 +8445,7 @@ enemy{
 enemy{
   layer = 0,
   x = 184,
-  y = 93,
+  y = 109,
   name = "chuchu_map_4",
   direction = 3,
   breed = "chuchu_blue",
@@ -9157,6 +9157,15 @@ dynamic_tile{
   name = "water_chest",
   pattern = 675,
   enabled_at_start = true,
+}
+
+sensor{
+  layer = 0,
+  x = 1144,
+  y = 421,
+  width = 16,
+  height = 48,
+  name = "sensor_miniboss",
 }
 
 tile{

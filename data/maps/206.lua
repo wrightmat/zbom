@@ -7,6 +7,7 @@ local game = map:get_game()
 
 function map:on_started(destination)
   if not game:get_value("b1129") then chest_big_key:set_enabled(false) end
+  if game:get_value("b1128") then map:open_doors("door_miniboss") end
   to_basement:set_enabled(false)
   if game:get_value("b1140") then
     water_chest:set_enabled(false)
@@ -21,14 +22,22 @@ function map:on_obtained_treasure(treasure_item, treasure_variant, treasure_save
   end
 end
 
+function sensor_miniboss:on_activated()
+  if miniboss_aquadraco ~= nil then
+    map:close_doors("door_miniboss")
+    miniboss_aquadraco:set_enabled(true)
+    sol.audio.play_music("boss")
+  end
+end
+
 if miniboss_aquadraco ~= nil then
- function miniboss_aquadraco:on_dead()
-  map:open_doors("door_miniboss")
-  sol.audio.play_sound("boss_killed")
-  sol.timer.start(1000, function()
-  sol.audio.play_music("temple_lake")
-  end)
- end
+  function miniboss_aquadraco:on_dead()
+    map:open_doors("door_miniboss")
+    sol.audio.play_sound("boss_killed")
+    sol.timer.start(1000, function()
+      sol.audio.play_music("temple_lake")
+    end)
+  end
 end
 
 function sensor_room_flooded:on_activated()

@@ -11,6 +11,15 @@ properties{
 
 tile{
   layer = 0,
+  x = 112,
+  y = 1168,
+  width = 16,
+  height = 32,
+  pattern = 45,
+}
+
+tile{
+  layer = 0,
   x = 1000,
   y = 728,
   width = 8,
@@ -340,15 +349,6 @@ tile{
   width = 64,
   height = 224,
   pattern = 45,
-}
-
-tile{
-  layer = 0,
-  x = 112,
-  y = 1168,
-  width = 32,
-  height = 32,
-  pattern = 524,
 }
 
 tile{
@@ -16894,7 +16894,7 @@ door{
   layer = 0,
   x = 728,
   y = 1176,
-  name = "boss_shutter",
+  name = "door_boss",
   direction = 0,
   sprite = "entities/door_shutter",
 }
@@ -17369,6 +17369,47 @@ switch{
   subtype = "1",
   needs_block = false,
   inactivate_when_leaving = false,
+}
+
+teletransporter{
+  layer = 0,
+  x = 120,
+  y = 1176,
+  width = 16,
+  height = 16,
+  name = "to_outside",
+  sprite = "entities/teletransporter",
+  sound = "warp",
+  destination_map = "31",
+  destination = "from_lair",
+}
+
+chest{
+  layer = 0,
+  x = 416,
+  y = 1093,
+  name = "chest_book",
+  treasure_name = "book_mudora",
+  treasure_variant = 4,
+  sprite = "entities/chest_big",
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 1189,
+  name = "boss_heart",
+  treasure_name = "heart_container",
+  treasure_savegame_variable = "b1133",
+}
+
+sensor{
+  layer = 0,
+  x = 720,
+  y = 1173,
+  width = 16,
+  height = 48,
+  name = "sensor_boss",
 }
 
 tile{
