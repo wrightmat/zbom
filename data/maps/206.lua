@@ -6,7 +6,7 @@ local game = map:get_game()
 ---------------------------------------
 
 function map:on_started(destination)
-  chest_big_key:set_enabled(false)
+  if not game:get_value("b1129") then chest_big_key:set_enabled(false) end
   to_basement:set_enabled(false)
   if game:get_value("b1140") then
     water_chest:set_enabled(false)

@@ -6,7 +6,7 @@ local game = map:get_game()
 ----------------------------------------
 
 function map:on_started(destination)
-  chest_key_5:set_enabled(false)
+  if not game:get_value("b1125") then chest_key_5:set_enabled(false) end
   map:set_doors_open("boss_shutter")
   map:set_doors_open("shutter_2")
   if not game:get_value("b1140") then map:set_entities_enabled("water_stream_chest", false) end
