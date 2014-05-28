@@ -5,9 +5,9 @@ animation{
   frame_to_loop_on = 0,
   directions = {
     { x = 220, y = 56, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
-    { x = 188, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
-    { x = 188, y = 56, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
     { x = 220, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 188, y = 56, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 188, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
   },
 }
 
@@ -29,9 +29,9 @@ animation{
   frame_to_loop_on = 0,
   directions = {
     { x = 220, y = 56, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
-    { x = 188, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
-    { x = 188, y = 56, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
     { x = 220, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 188, y = 56, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 188, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
   },
 }
 
@@ -40,8 +40,8 @@ animation{
   src_image = "enemies/aquadraco.png",
   directions = {
     { x = 220, y = 56, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 188, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 188, y = 56, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
     { x = 220, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 188, y = 56, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 188, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
