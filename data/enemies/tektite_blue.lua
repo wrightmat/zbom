@@ -4,7 +4,7 @@ local enemy = ...
 
 function enemy:on_created()
   self:set_life(3)
-  self:set_damage(4)
+  self:set_damage(3)
   self:create_sprite("enemies/tektite_blue")
   self:set_hurt_style("monster")
   self:set_size(16, 16)
