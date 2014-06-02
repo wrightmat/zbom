@@ -21,6 +21,7 @@ function map:on_started(destination)
     water_source_1:set_enabled(false)
     water_source_2:set_enabled(false)
     map:set_entities_enabled("water_stream", false)
+    obstacle:set_enabled(false)
   end
 end
 
@@ -30,6 +31,8 @@ function door_bomb_1:on_opened()
   water_source_2:set_enabled(false)
   map:set_entities_enabled("water_stream", false)
   sol.audio.play_sound("secret")
+  game:set_value("b1141", true)
+  obstacle:set_enabled(false)
 end
 
 function sensor_boss:on_activated()
@@ -46,11 +49,9 @@ if boss_plasmarine_1 ~= nil and boss_plasmarine_2 ~= nil then
     if boss_plasmarine_2 == nil then -- both Plasmarines have to be dead to win
       map:open_doors("door_boss")
       sol.audio.play_sound("boss_killed")
-      if boss_heart ~= nil then
-        boss_heart:get_sprite():fade_in(30, function()
-          boss_heart:set_enabled(true)
-        end)
-      end
+      boss_heart:get_sprite():fade_in(30, function()
+        boss_heart:set_enabled(true)
+      end)
       chest_book:set_enabled(true)
       sol.audio.play_sound("chest_appears")
       sol.audio.play_music("temple_lake")
@@ -60,11 +61,9 @@ if boss_plasmarine_1 ~= nil and boss_plasmarine_2 ~= nil then
     if boss_plasmarine_1 == nil then -- both Plasmarines have to be dead to win
       map:open_doors("door_boss")
       sol.audio.play_sound("boss_killed")
-      if boss_heart ~= nil then
-        boss_heart:get_sprite():fade_in(30, function()
-          boss_heart:set_enabled(true)
-        end)
-      end
+      boss_heart:get_sprite():fade_in(30, function()
+        boss_heart:set_enabled(true)
+      end)
       chest_book:set_enabled(true)
       sol.audio.play_sound("chest_appears")
       sol.audio.play_music("temple_lake")
@@ -93,6 +92,7 @@ end
 function sensor_open_shutter_waterfall:on_activated()
   if game:get_value("b1141") then
     map:open_doors("shutter_waterfall")
+    obstacle:set_enabled(false)
   else
     game:start_dialog("lakebed.waterfall")
   end
@@ -104,6 +104,7 @@ end
 function switch_water_chest:on_activated()
   game:set_value("b1140", true)
   map:set_entities_enabled("water_stream_chest", true)
+  sol.audio.play_sound("secret")
 end
 
 for enemy in map:get_entities("aquadracini") do

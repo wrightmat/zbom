@@ -16561,7 +16561,7 @@ door{
   layer = 0,
   x = 1128,
   y = 920,
-  name = "door_boss_1",
+  name = "door_bosskey_1",
   direction = 3,
   sprite = "entities/door_boss_key",
   savegame_variable = "b1132",
@@ -16574,7 +16574,7 @@ door{
   layer = 0,
   x = 1128,
   y = 968,
-  name = "door_boss_2",
+  name = "door_bosskey_2",
   direction = 1,
   sprite = "entities/door_boss_key",
   savegame_variable = "b1132",
@@ -16621,6 +16621,7 @@ stream{
   name = "water_stream_1",
   direction = 6,
   sprite = "entities/stream_water",
+  speed = 96,
   allow_movement = false,
 }
 
@@ -16631,6 +16632,7 @@ stream{
   name = "water_stream_2",
   direction = 6,
   sprite = "entities/stream_water",
+  speed = 96,
   allow_movement = false,
 }
 
@@ -16641,6 +16643,7 @@ stream{
   name = "water_stream_3",
   direction = 6,
   sprite = "entities/stream_water",
+  speed = 96,
   allow_movement = false,
 }
 
@@ -16651,6 +16654,7 @@ stream{
   name = "water_stream_4",
   direction = 6,
   sprite = "entities/stream_water",
+  speed = 96,
   allow_movement = false,
 }
 
@@ -16661,6 +16665,7 @@ stream{
   name = "water_stream_5",
   direction = 6,
   sprite = "entities/stream_water",
+  speed = 96,
   allow_movement = false,
 }
 
@@ -16671,6 +16676,7 @@ stream{
   name = "water_stream_6",
   direction = 6,
   sprite = "entities/stream_water",
+  speed = 96,
   allow_movement = false,
 }
 
@@ -16681,6 +16687,7 @@ stream{
   name = "water_stream_7",
   direction = 6,
   sprite = "entities/stream_water",
+  speed = 96,
   allow_movement = false,
 }
 
@@ -16691,6 +16698,7 @@ stream{
   name = "water_stream_8",
   direction = 6,
   sprite = "entities/stream_water",
+  speed = 96,
   allow_movement = false,
 }
 
@@ -16701,6 +16709,7 @@ stream{
   name = "water_stream_9",
   direction = 6,
   sprite = "entities/stream_water",
+  speed = 96,
   allow_movement = false,
 }
 
@@ -16711,6 +16720,7 @@ stream{
   name = "water_stream_10",
   direction = 6,
   sprite = "entities/stream_water",
+  speed = 96,
   allow_movement = false,
 }
 
@@ -16721,6 +16731,7 @@ stream{
   name = "water_stream_11",
   direction = 6,
   sprite = "entities/stream_water",
+  speed = 96,
   allow_movement = false,
 }
 
@@ -16731,6 +16742,7 @@ stream{
   name = "water_stream_12",
   direction = 6,
   sprite = "entities/stream_water",
+  speed = 96,
   allow_movement = false,
 }
 
@@ -16741,6 +16753,7 @@ stream{
   name = "water_stream_13",
   direction = 6,
   sprite = "entities/stream_water",
+  speed = 96,
   allow_movement = false,
 }
 
@@ -16751,6 +16764,7 @@ stream{
   name = "water_stream_14",
   direction = 6,
   sprite = "entities/stream_water",
+  speed = 96,
   allow_movement = false,
 }
 
@@ -16761,6 +16775,7 @@ stream{
   name = "water_stream_15",
   direction = 6,
   sprite = "entities/stream_water",
+  speed = 96,
   allow_movement = false,
 }
 
@@ -16771,6 +16786,7 @@ stream{
   name = "water_stream_16",
   direction = 6,
   sprite = "entities/stream_water",
+  speed = 96,
   allow_movement = false,
 }
 
@@ -16802,6 +16818,7 @@ stream{
   name = "water_stream_18",
   direction = 6,
   sprite = "entities/stream_water",
+  speed = 96,
   allow_movement = false,
 }
 
@@ -16812,6 +16829,7 @@ stream{
   name = "water_stream_19",
   direction = 6,
   sprite = "entities/stream_water",
+  speed = 96,
   allow_movement = false,
 }
 
@@ -16822,6 +16840,7 @@ stream{
   name = "water_stream_20",
   direction = 6,
   sprite = "entities/stream_water",
+  speed = 96,
   allow_movement = false,
 }
 
@@ -16832,6 +16851,7 @@ stream{
   name = "water_stream_21",
   direction = 6,
   sprite = "entities/stream_water",
+  speed = 96,
   allow_movement = false,
 }
 
@@ -16905,7 +16925,7 @@ door{
   layer = 0,
   x = 728,
   y = 1176,
-  name = "door_boss",
+  name = "door_boss_1",
   direction = 0,
   sprite = "entities/door_shutter",
 }
@@ -16937,6 +16957,7 @@ stream{
   name = "water_stream_key_1",
   direction = 6,
   sprite = "entities/stream_water",
+  speed = 96,
   allow_movement = false,
 }
 
@@ -16947,6 +16968,7 @@ stream{
   name = "water_stream_key_2",
   direction = 6,
   sprite = "entities/stream_water",
+  speed = 96,
   allow_movement = false,
 }
 
@@ -16957,6 +16979,7 @@ stream{
   name = "water_stream_key_3",
   direction = 6,
   sprite = "entities/stream_water",
+  speed = 96,
   allow_movement = false,
 }
 
@@ -16967,6 +16990,7 @@ stream{
   name = "water_stream_key_4",
   direction = 6,
   sprite = "entities/stream_water",
+  speed = 96,
   allow_movement = false,
 }
 
@@ -16977,6 +17001,7 @@ stream{
   name = "water_stream_key_5",
   direction = 6,
   sprite = "entities/stream_water",
+  speed = 96,
   allow_movement = false,
 }
 
@@ -16987,6 +17012,7 @@ stream{
   name = "water_stream_key_6",
   direction = 6,
   sprite = "entities/stream_water",
+  speed = 96,
   allow_movement = false,
 }
 
@@ -17597,6 +17623,28 @@ sensor{
   width = 48,
   height = 16,
   name = "sensor_close_shutter_waterfall",
+}
+
+wall{
+  layer = 0,
+  x = 1328,
+  y = 904,
+  width = 32,
+  height = 16,
+  name = "obstacle",
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+door{
+  layer = 0,
+  x = 776,
+  y = 1176,
+  name = "door_boss_2",
+  direction = 2,
+  sprite = "entities/door_shutter",
 }
 
 tile{

@@ -501,6 +501,16 @@ Book of Mudora.
 }
 
 dialog{
+  id = "_item_description.book_mudora.4",
+  skip = "current",
+  text = [[
+A collection of pages
+from the legendary
+Book of Mudora.
+  ]]
+}
+
+dialog{
   id = "_item_description.airship_part.1",
   skip = "current",
   text = [[
@@ -1018,6 +1028,18 @@ dialog{
 You got a page to the
 Book of Mudora!
 It's coming together!
+  ]]
+}
+
+dialog{
+  id = "_treasure.book_mudora.4",
+  skip = "current",
+  icon = 20,
+  text = [[
+You got another page to
+the Book of Mudora!
+It's starting to look
+like an actual book!
   ]]
 }
 
