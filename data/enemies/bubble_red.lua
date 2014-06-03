@@ -60,7 +60,7 @@ function enemy:go(direction8)
   last_direction8 = direction8
 end
 
--- Bubbles have a specific attack which drain magic.
+-- Bubbles have a specific attack which drains magic (and life).
 function enemy:on_attacking_hero(hero)
   local game = enemy:get_game()
 

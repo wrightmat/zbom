@@ -60,12 +60,13 @@ function enemy:go(direction8)
   last_direction8 = direction8
 end
 
--- Bubbles have a specific attack which drain magic.
+-- Bubbles have a specific attack which drains magic (and causes confusion).
 function enemy:on_attacking_hero(hero)
   local game = enemy:get_game()
 
   -- Hero is confused.
-  hero:start_confusion(100)
+  hero:start_confusion(5000)
+  hero:set_invincible()
 
   -- If hero has magic, it is drained.
   if game:get_magic() > 0 then

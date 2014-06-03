@@ -55,11 +55,13 @@ function enemy:go(direction8)
   last_direction8 = direction8
 end
 
+-- Bubbles have a specific attack which drains magic (and freezes hero).
 function enemy:on_attacking_hero(hero)
   local game = enemy:get_game()
 
   -- Hero is frozen.
-  hero:start_frozen(100)
+  hero:start_frozen(4000)
+  hero:set_invincible()
 
   -- If hero has magic, it is drained.
   if game:get_magic() > 0 then

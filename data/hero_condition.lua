@@ -160,10 +160,11 @@ function condition_manager:initialize(game)
       return
     end
 
-    hero:get_sprite():set_animation("frozen")
+    hero:freeze()
+    hero:set_condition('frozen', true)
+    --hero:get_sprite():set_animation("frozen")
     sol.audio.play_sound("freeze")
 
-    hero:set_condition('frozen', true)
     condition_manager.timers['frozen'] = sol.timer.start(hero, delay, function()
       hero:stop_frozen()
     end)
@@ -197,12 +198,14 @@ function condition_manager:initialize(game)
       end
 
       if iteration_poison == max_iteration then
+        hero:set_blinking(false)
         hero:set_condition('poison', false)
       else
         condition_manager.timers['poison'] = sol.timer.start(hero, delay, do_poison)
       end
     end
 
+    hero:set_blinking(true, delay)
     hero:set_condition('poison', true)
     do_poison()
   end
@@ -252,8 +255,9 @@ function condition_manager:initialize(game)
       condition_manager.timers['frozen']:stop()
     end
 
+    hero:unfreeze()
     hero:set_condition('frozen', false)
-    hero:get_sprite():set_animation("walking")
+    --hero:get_sprite():set_animation("walking")
     sol.audio.play_sound("ice_shatter")
   end
 

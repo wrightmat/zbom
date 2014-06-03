@@ -7,21 +7,61 @@ properties{
   tileset = "0",
 }
 
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 320,
+  height = 240,
+  pattern = 484,
+}
+
 destination{
   layer = 0,
-  x = 16,
-  y = 21,
+  x = 24,
+  y = 29,
   name = "start_position",
   direction = 3,
   default = true,
 }
 
-tile{
-  layer = 2,
+enemy{
+  layer = 0,
+  x = 136,
+  y = 176,
+  direction = 3,
+  breed = "bubble_blue",
+}
+
+wall{
+  layer = 0,
   x = 0,
   y = 0,
-  width = 320,
+  width = 8,
   height = 240,
-  pattern = 480,
+}
+
+wall{
+  layer = 0,
+  x = 312,
+  y = 0,
+  width = 8,
+  height = 240,
+}
+
+wall{
+  layer = 0,
+  x = 8,
+  y = 0,
+  width = 304,
+  height = 8,
+}
+
+wall{
+  layer = 0,
+  x = 8,
+  y = 232,
+  width = 304,
+  height = 8,
 }
 

@@ -60,12 +60,13 @@ function enemy:go(direction8)
   last_direction8 = direction8
 end
 
--- Bubbles have a specific attack which causes poison
+-- Bubbles have a specific attack which drains magic (and causes poison).
 function enemy:on_attacking_hero(hero)
   local game = enemy:get_game()
 
   -- Hero is poisoned.
-  hero:start_poison(2, 5000, 5)
+  hero:set_invincible(true, 100)
+  hero:start_poison(1, 4000, 4)
 
   -- If hero has magic, it is drained.
   if game:get_magic() > 0 then
