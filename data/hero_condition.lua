@@ -7,6 +7,7 @@ condition_manager.timers = {
   slow = nil,
   confusion = nil,
   frozen = nil,
+  electrocuted = nil,
 }
 
 function condition_manager:initialize(game)
@@ -15,7 +16,8 @@ function condition_manager:initialize(game)
     poison = false,
     slow = false,
     confusion = false,
-    frozen = false
+    frozen = false,
+    electrocuted = false
   }
 
   function hero:is_condition_active(condition)
@@ -157,13 +159,25 @@ function condition_manager:initialize(game)
     if hero:is_condition_active('frozen') then
       return
     end
-    --I think this is displaying an animation over the hero (ice block or something)
-    --what we would like is maybe a different hero sprite? White or something?
-    --custent_frozen = hero:get_map():create_custom_entity({x = 0, y = 0, layer = 0, model = 'frozen_state', direction = 0})
+
+    hero:get_sprite():set_animation("frozen")
 
     hero:set_condition('frozen', true)
     condition_manager.timers['frozen'] = sol.timer.start(hero, delay, function()
-      hero:stop_frozen(false)
+      hero:stop_frozen()
+    end)
+  end
+
+  function hero:start_electrocuted(delay)
+    if hero:is_condition_active('electrocuted') then
+      return
+    end
+
+    hero:get_sprite():set_animation("electrocuted")
+
+    hero:set_condition('electrocuted', true)
+    condition_manager.timers['electrocuted'] = sol.timer.start(hero, delay, function()
+      hero:stop_electrocuted()
     end)
   end
 
@@ -231,17 +245,22 @@ function condition_manager:initialize(game)
     end
   end
 
-  function hero:stop_frozen(shatter)
+  function hero:stop_frozen()
     if hero:is_condition_active('frozen') and condition_manager.timers['frozen'] ~= nil then
       condition_manager.timers['frozen']:stop()
     end
 
     hero:set_condition('frozen', false)
-    if shatter then
-      --custent_frozen:shatter()
-    else
-      --custent_frozen:melt()
+    hero:get_sprite():set_animation("walking")
+  end
+
+  function hero:stop_electrocuted()
+    if hero:is_condition_active('electrocuted') and condition_manager.timers['electrocuted'] ~= nil then
+      condition_manager.timers['electrocuted']:stop()
     end
+
+    hero:set_condition('electrocuted', false)
+    hero:get_sprite():set_animation("walking")
   end
 
   function hero:stop_slow()

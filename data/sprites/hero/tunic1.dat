@@ -264,6 +264,28 @@ animation{
 }
 
 animation{
+  name = "frozen",
+  src_image = "hero/miscellaneous.png",
+  directions = {
+    { x = 0, y = 128, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 24, y = 128, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 48, y = 128, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 72, y = 128, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+  },
+}
+
+animation{
+  name = "electrocuted",
+  src_image = "hero/miscellaneous.png",
+  directions = {
+    { x = 0, y = 152, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 24, y = 152, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 48, y = 152, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 72, y = 152, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+  },
+}
+
+animation{
   name = "dying",
   src_image = "hero/dying.png",
   frame_delay = 125,
