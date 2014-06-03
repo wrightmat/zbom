@@ -58,7 +58,7 @@ end
 function enemy:on_attacking_hero(hero)
   local game = enemy:get_game()
 
-  -- Hero is slowed.
+  -- Hero is frozen.
   hero:start_frozen(100)
 
   -- If hero has magic, it is drained.
