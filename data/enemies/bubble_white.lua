@@ -1,28 +1,24 @@
 local enemy = ...
 
 -- Bubble: an invincible enemy that moves in diagonal directions
--- and bounces against walls.
--- It removes life and magic points from the hero.
+-- and bounces against walls - this one is made of water.
 
 local last_direction8 = 0
 
--- The enemy appears: set its properties.
 function enemy:on_created()
   self:set_life(1)
-  self:create_sprite("enemies/bubble_green")
+  self:create_sprite("enemies/bubble_white")
   self:set_size(8, 8)
   self:set_origin(4, 4)
   self:set_can_hurt_hero_running(true)
   self:set_invincible()
 end
 
--- The enemy was stopped for some reason and should restart.
 function enemy:on_restarted()
   local direction8 = math.random(4) * 2 - 1
   self:go(direction8)
 end
 
--- An obstacle is reached: make the Bubble bounce.
 function enemy:on_obstacle_reached()
   local dxy = {
     { x =  1, y =  0},
@@ -50,7 +46,6 @@ function enemy:on_obstacle_reached()
   end
 end
 
--- Makes the Bubble go towards a diagonal direction (1, 3, 5 or 7).
 function enemy:go(direction8)
   local m = sol.movement.create("straight")
   m:set_speed(80)
@@ -60,12 +55,11 @@ function enemy:go(direction8)
   last_direction8 = direction8
 end
 
--- Bubbles have a specific attack which causes poison
 function enemy:on_attacking_hero(hero)
   local game = enemy:get_game()
 
-  -- Hero is poisoned.
-  hero:start_poison(2, 5000, 5)
+  -- Hero is slowed.
+  hero:start_frozen(100)
 
   -- If hero has magic, it is drained.
   if game:get_magic() > 0 then

@@ -161,6 +161,7 @@ function condition_manager:initialize(game)
     end
 
     hero:get_sprite():set_animation("frozen")
+    sol.audio.play_sound("freeze")
 
     hero:set_condition('frozen', true)
     condition_manager.timers['frozen'] = sol.timer.start(hero, delay, function()
@@ -174,6 +175,7 @@ function condition_manager:initialize(game)
     end
 
     hero:get_sprite():set_animation("electrocuted")
+    sol.audio.play_sound("spark")
 
     hero:set_condition('electrocuted', true)
     condition_manager.timers['electrocuted'] = sol.timer.start(hero, delay, function()
@@ -252,6 +254,7 @@ function condition_manager:initialize(game)
 
     hero:set_condition('frozen', false)
     hero:get_sprite():set_animation("walking")
+    sol.audio.play_sound("ice_shatter")
   end
 
   function hero:stop_electrocuted()
