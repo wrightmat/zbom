@@ -39,7 +39,7 @@ function enemy:shoot_ball()
   -- If the other Plasmarine is dead, then this one's electricity
   -- need to be able to hurt him, otherwise he won't die.
   -- Normally, only the other Plasmarine's electricity can hurt this one.
-  if not map:get_entities("plasmarine_red") then
+  if not enemy:get_map():get_entities("plasmarine_red") then
     ball = enemy:create_enemy({ breed = "plasmarine_ball", direction = 2 })
   else
     ball = enemy:create_enemy({ breed = "plasmarine_ball", direction = 0 })

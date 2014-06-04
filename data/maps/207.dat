@@ -16425,6 +16425,15 @@ tile{
   pattern = 646,
 }
 
+tile{
+  layer = 0,
+  x = 1632,
+  y = 288,
+  width = 8,
+  height = 8,
+  pattern = 103,
+}
+
 chest{
   layer = 0,
   x = 1344,
@@ -16543,7 +16552,7 @@ door{
   layer = 0,
   x = 1128,
   y = 920,
-  name = "door_bosskey_1",
+  name = "door_key_boss_1",
   direction = 3,
   sprite = "entities/door_boss_key",
   savegame_variable = "b1132",
@@ -16556,7 +16565,7 @@ door{
   layer = 0,
   x = 1128,
   y = 968,
-  name = "door_bosskey_2",
+  name = "door_key_boss_2",
   direction = 1,
   sprite = "entities/door_boss_key",
   savegame_variable = "b1132",
@@ -16936,7 +16945,7 @@ stream{
   layer = 0,
   x = 1880,
   y = 445,
-  name = "water_stream_key_1",
+  name = "stream_key_1",
   direction = 6,
   sprite = "entities/stream_water",
   speed = 96,
@@ -16947,7 +16956,7 @@ stream{
   layer = 0,
   x = 1880,
   y = 461,
-  name = "water_stream_key_2",
+  name = "stream_key_2",
   direction = 6,
   sprite = "entities/stream_water",
   speed = 96,
@@ -16958,7 +16967,7 @@ stream{
   layer = 0,
   x = 1880,
   y = 477,
-  name = "water_stream_key_3",
+  name = "stream_key_3",
   direction = 6,
   sprite = "entities/stream_water",
   speed = 96,
@@ -16969,7 +16978,7 @@ stream{
   layer = 0,
   x = 1880,
   y = 493,
-  name = "water_stream_key_4",
+  name = "stream_key_4",
   direction = 6,
   sprite = "entities/stream_water",
   speed = 96,
@@ -16980,7 +16989,7 @@ stream{
   layer = 0,
   x = 1880,
   y = 509,
-  name = "water_stream_key_5",
+  name = "stream_key_5",
   direction = 6,
   sprite = "entities/stream_water",
   speed = 96,
@@ -16991,7 +17000,7 @@ stream{
   layer = 0,
   x = 1880,
   y = 525,
-  name = "water_stream_key_6",
+  name = "stream_key_6",
   direction = 6,
   sprite = "entities/stream_water",
   speed = 96,
@@ -17659,6 +17668,293 @@ destructible{
   treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
+}
+
+wall{
+  layer = 0,
+  x = 1120,
+  y = 704,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1120,
+  y = 504,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1120,
+  y = 432,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1120,
+  y = 776,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1120,
+  y = 912,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 888,
+  y = 728,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 888,
+  y = 656,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1064,
+  y = 592,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 992,
+  y = 592,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 992,
+  y = 832,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1064,
+  y = 832,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1200,
+  y = 832,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1568,
+  y = 944,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1568,
+  y = 1016,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1696,
+  y = 1152,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1768,
+  y = 1152,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1464,
+  y = 1088,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1392,
+  y = 1088,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1288,
+  y = 1152,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1216,
+  y = 1152,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1328,
+  y = 984,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1080,
+  y = 1264,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1008,
+  y = 1264,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 720,
+  y = 1168,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1344,
+  y = 336,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1344,
+  y = 408,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
 }
 
 tile{
