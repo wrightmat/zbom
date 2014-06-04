@@ -28,7 +28,7 @@ function enemy:on_restarted()
   local m = sol.movement.create("path_finding")
   m:set_speed(32)
   m:start(self)
-  if math.random(10) < 6 then
+  if math.random(10) < 5 then
     enemy:shock()
   end
 end
@@ -38,6 +38,7 @@ function enemy:on_hurt_by_sword(hero, enemy_sprite)
     hero:start_electrocution(1500)
   else
     enemy:hurt(1)
+    enemy:remove_life(1)
   end
 end
 function enemy:on_attacking_hero(hero, enemy_sprite)
