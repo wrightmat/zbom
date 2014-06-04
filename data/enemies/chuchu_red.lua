@@ -1,11 +1,11 @@
 local enemy = ...
 
--- Blue ChuChu: a basic enemy that follows the hero.
+-- Red ChuChu: a basic overworld enemy that follows the hero.
 
 function enemy:on_created()
   self:set_life(2)
-  self:set_damage(3)
-  self:create_sprite("enemies/chuchu_blue")
+  self:set_damage(2)
+  self:create_sprite("enemies/chuchu_red")
   self:set_size(16, 16)
   self:set_origin(8, 13)
 end

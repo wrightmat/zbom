@@ -1,11 +1,12 @@
 local enemy = ...
 
--- Blue ChuChu: a basic enemy that follows the hero.
+-- Bari mini: the small enemy an adult bari
+--            splits into.
 
 function enemy:on_created()
-  self:set_life(2)
-  self:set_damage(3)
-  self:create_sprite("enemies/chuchu_blue")
+  self:set_life(1)
+  self:set_damage(1)
+  self:create_sprite("enemies/bari_mini")
   self:set_size(16, 16)
   self:set_origin(8, 13)
 end
