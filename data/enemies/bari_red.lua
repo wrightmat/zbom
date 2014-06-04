@@ -19,6 +19,7 @@ function enemy:shock()
   sol.timer.start(enemy, math.random(10)*1000, function()
     enemy:get_sprite():set_animation("walking")
     shocking = false
+    sol.timer.start(enemy, math.random(10)*1000, function() enemy:restart() end)
   end)
 end
 
@@ -26,11 +27,16 @@ function enemy:on_restarted()
   local m = sol.movement.create("path_finding")
   m:set_speed(32)
   m:start(self)
-  if math.random(10) < 4 then
+  if math.random(10) < 6 then
     enemy:shock()
   end
 end
 
+function enemy:on_hurt_by_sword(hero, enemy_sprite)
+  if shocking == true then
+    hero:start_electrocution(2000)
+  end
+end
 function enemy:on_attacking_hero(hero, enemy_sprite)
   if shocking == true then
     hero:start_electrocution(2000)
