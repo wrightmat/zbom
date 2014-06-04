@@ -1,12 +1,18 @@
 local enemy = ...
 
--- Aquadraco: A flying, water-based boss.
--- TODO: Fix movement (placeholder based on Keese - need flying to set places?)
---	 Firing fireballs or something
---	 Possibly releasing mini-dragons?
+-- Aquadraco: A flying, water-based miniboss who shoots blue flames.
 
-local going_hero = false
-local timer
+local firing = false
+
+-- Possible positions where he flys to.
+local positions = {
+  {x = 1312, y = 384 },
+  {x = 1256, y = 400 },
+  {x = 1184, y = 376 },
+  {x = 1208, y = 424 },
+  {x = 1240, y = 448 },
+  {x = 1320, y = 456 }
+}
 
 function enemy:on_created()
   self:set_life(6)
@@ -27,52 +33,59 @@ function enemy:on_movement_changed(movement)
 end
 
 function enemy:on_obstacle_reached(movement)
-  if not going_hero then
-    self:go_random()
-    self:check_hero()
+  print('obstacle reached')
+  if not firing then
+    self:fly()
   end
 end
 
 function enemy:on_restarted()
-  self:go_random()
-  self:check_hero()
+  print('restarted')
+  self:fly()
 end
 
-function enemy:on_hurt()
-  if timer ~= nil then
-    timer:stop()
-    timer = nil
-  end
-end
-
-function enemy:check_hero()
-  local hero = self:get_map():get_entity("hero")
-  local _, _, layer = self:get_position()
-  local _, _, hero_layer = hero:get_position()
-  local near_hero = layer == hero_layer
-    and self:get_distance(hero) < 100
-
-  if near_hero and not going_hero then
-    self:go_hero()
-  elseif not near_hero and going_hero then
-    self:go_random()
-  end
-  timer = sol.timer.start(self, 2000, function() self:check_hero() end)
-end
-
-function enemy:go_random()
+function enemy:fly()
+  print('flying')
+  firing = false
   self:get_sprite():set_animation("walking")
-  local m = sol.movement.create("circle")
-  m:set_radius(32)
-  m:set_radius_speed(40)
+  local m = sol.movement.create("target")
+  local position = (positions[math.random(#positions)])
+  m:set_target(position.x, position.y)
+  m:set_speed(72)
   m:start(self)
-  going_hero = false
+
+  function m:on_finished()
+    local rand = math.random(10)
+    if rand < 4 then
+      enemy:create_enemy({ breed = "aquadracini", treasure_name = "heart" })
+      enemy:fly()
+    elseif rand < 8 then
+      enemy:spit_fire()
+    else
+      enemy:go_hero()
+    end
+  end
+end
+
+function enemy:spit_fire()
+  print('spitting fire')
+  firing = true
+  local sprite = self:get_sprite()
+  sprite:set_animation("firing")
+  self:create_enemy({ breed = "flame_blue" })
+  sol.timer.start(enemy, 800, function()
+    print('animation finished - changing to spreading')
+    self:get_sprite():set_animation("spreading")
+    sol.timer.start(enemy, 800, function() enemy:fly() end)
+  end)
 end
 
 function enemy:go_hero()
+  print('moving toward hero')
   self:get_sprite():set_animation("walking")
   local m = sol.movement.create("target")
-  m:set_speed(56)
+  m:set_speed(64)
   m:start(self)
-  going_hero = true
+  firing = false
+  sol.timer.start(enemy, math.random(10)*1000, function() enemy:fly() end)
 end

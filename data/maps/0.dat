@@ -25,14 +25,6 @@ destination{
   default = true,
 }
 
-enemy{
-  layer = 0,
-  x = 136,
-  y = 176,
-  direction = 3,
-  breed = "bubble_blue",
-}
-
 wall{
   layer = 0,
   x = 0,
@@ -63,5 +55,15 @@ wall{
   y = 232,
   width = 304,
   height = 8,
+}
+
+enemy{
+  layer = 0,
+  x = 192,
+  y = 125,
+  name = "miniboss",
+  direction = 3,
+  breed = "aquadraco",
+  rank = 1,
 }
 

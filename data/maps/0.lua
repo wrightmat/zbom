@@ -5,7 +5,7 @@ local map = ...
 function map:on_started(destination)
   --hero:teleport(1, "from_intro")
   --boss:set_enabled(false)
-  --hero:start_treasure("sword")
+  hero:start_treasure("sword")
 end
 
 --function sensor:on_activated()
