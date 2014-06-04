@@ -1247,7 +1247,7 @@ tile{
   x = 1344,
   y = 360,
   width = 8,
-  height = 24,
+  height = 32,
   pattern = 106,
 }
 
@@ -1256,7 +1256,7 @@ tile{
   x = 1368,
   y = 360,
   width = 8,
-  height = 24,
+  height = 32,
   pattern = 106,
 }
 
@@ -9201,15 +9201,6 @@ tile{
 tile{
   layer = 0,
   x = 1344,
-  y = 384,
-  width = 32,
-  height = 8,
-  pattern = 171,
-}
-
-tile{
-  layer = 0,
-  x = 1344,
   y = 392,
   width = 8,
   height = 16,
@@ -9232,15 +9223,6 @@ tile{
   width = 16,
   height = 16,
   pattern = 174,
-}
-
-tile{
-  layer = 0,
-  x = 1344,
-  y = 360,
-  width = 32,
-  height = 8,
-  pattern = 177,
 }
 
 tile{
@@ -17025,16 +17007,6 @@ destructible{
   destruction_sound = "stone",
 }
 
-destructible{
-  layer = 0,
-  x = 1824,
-  y = 461,
-  treasure_name = "random",
-  sprite = "entities/stone_small_black",
-  destruction_sound = "stone",
-  weight = 2,
-}
-
 door{
   layer = 0,
   x = 1128,
@@ -17678,6 +17650,15 @@ chest{
   y = 765,
   treasure_name = "bomb_bag",
   sprite = "entities/chest",
+}
+
+destructible{
+  layer = 0,
+  x = 1824,
+  y = 461,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
 }
 
 tile{
@@ -18767,5 +18748,23 @@ tile{
   width = 32,
   height = 8,
   pattern = 160,
+}
+
+tile{
+  layer = 2,
+  x = 1344,
+  y = 360,
+  width = 32,
+  height = 8,
+  pattern = 177,
+}
+
+tile{
+  layer = 2,
+  x = 1344,
+  y = 384,
+  width = 32,
+  height = 8,
+  pattern = 171,
 }
 

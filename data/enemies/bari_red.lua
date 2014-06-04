@@ -43,6 +43,8 @@ end
 function enemy:on_attacking_hero(hero, enemy_sprite)
   if shocking == true then
     hero:start_electrocution(1500)
+  else
+    hero:start_hurt(1)
   end
 end
 
