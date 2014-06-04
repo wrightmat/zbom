@@ -2,26 +2,46 @@ local enemy = ...
 
 -- Plasmarine: a boss which floats around shooting
 --       electricity balls in order to electricute hero.
--- TODO: Fix movement (placeholder based on bari)
---	 Shoot balls of electricity
---	 Create baris?
 
 function enemy:on_created()
-  self:set_life(10)
+  self:set_life(8)
   self:set_damage(4)
   self:create_sprite("enemies/plasmarine_blue")
+  self:set_attack_consequence("sword", "protected")
+  self:set_attack_consequence("boomerang", "ignored")
+  self:set_attack_consequence("hookshot", "immobilized")
   self:set_size(32, 32)
   self:set_origin(16, 28)
 end
 
 function enemy:on_restarted()
+  enemy:get_sprite():set_animation("walking")
   local m = sol.movement.create("path_finding")
   m:set_speed(32)
   m:start(self)
-  sol.timer.start(enemy, math.random(10)*1000, function() enemy:shoot_ball() end)
+  local rand = math.random(10)
+  if rand < 7 then
+    sol.timer.start(enemy, math.random(10)*1000, function() enemy:shoot_ball() end)
+  else
+    sol.timer.start(enemy, math.random(10)*1000, function() enemy:create_bari() end)
+  end
+end
+
+function enemy:on_collision_enemy(other_enemy, other_sprite, my_sprite)
+  if other_enemy:get_breed() == "plasmarine_ball" then
+    if other_sprite:get_direction() == 2 or other_sprite:get_direction() == 3 then
+      self:hurt(1)
+    end
+  end
 end
 
 function enemy:shoot_ball()
-  enemy:create_enemy({ breed = "plasmarine_ball" })
+  ball = enemy:create_enemy({ breed = "plasmarine_ball", direction = 0 })
   enemy:restart()
+end
+
+function enemy:create_bari()
+  enemy:get_sprite():set_animation("shaking")
+  enemy:create_enemy({ breed = "bari_blue" })
+  sol.timer.start(enemy, 1000, function() enemy:restart() end)
 end
