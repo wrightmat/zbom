@@ -35,12 +35,14 @@ end
 
 function enemy:on_hurt_by_sword(hero, enemy_sprite)
   if shocking == true then
-    hero:start_electrocution(2000)
+    hero:start_electrocution(1500)
+  else
+    enemy:hurt(1)
   end
 end
 function enemy:on_attacking_hero(hero, enemy_sprite)
   if shocking == true then
-    hero:start_electrocution(2000)
+    hero:start_electrocution(1500)
   end
 end
 
