@@ -24,6 +24,7 @@ function enemy:shock()
 end
 
 function enemy:on_restarted()
+  shocking = false
   local m = sol.movement.create("path_finding")
   m:set_speed(32)
   m:start(self)

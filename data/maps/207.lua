@@ -26,7 +26,6 @@ function map:on_started(destination)
 end
 
 function door_bomb_1:on_opened()
-  water_source_1:fade_out(50)
   water_source_1:set_enabled(false)
   water_source_2:set_enabled(false)
   map:set_entities_enabled("water_stream", false)

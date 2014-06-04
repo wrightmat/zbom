@@ -3,6 +3,8 @@ local enemy = ...
 -- Bari: a flying enemy that follows the hero
 --       and tries to electricute him.
 
+local shocking = false
+
 function enemy:on_created()
   self:set_life(2)
   self:set_damage(2)
@@ -22,6 +24,7 @@ function enemy:shock()
 end
 
 function enemy:on_restarted()
+  shocking = false
   local m = sol.movement.create("path_finding")
   m:set_speed(32)
   m:start(self)
