@@ -40,5 +40,5 @@ end
 
 function enemy:on_attacking_hero(hero, enemy_sprite)
   -- the ball electrocutes the hero when it touches him
-  hero:start_electrocuted(1000)
+  hero:start_electrocution(1500)
 end
