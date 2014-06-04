@@ -7,7 +7,7 @@ condition_manager.timers = {
   slow = nil,
   confusion = nil,
   frozen = nil,
-  electrocuted = nil,
+  electrocution = nil,
 }
 
 function condition_manager:initialize(game)
@@ -170,8 +170,8 @@ function condition_manager:initialize(game)
     end)
   end
 
-  function hero:start_electrocuted(delay)
-    if hero:is_condition_active('electrocuted') then
+  function hero:start_electrocution(delay)
+    if hero:is_condition_active('electrocution') then
       return
     end
 
@@ -179,9 +179,9 @@ function condition_manager:initialize(game)
     hero:set_animation("electrocuted")
     sol.audio.play_sound("spark")
 
-    hero:set_condition('electrocuted', true)
-    condition_manager.timers['electrocuted'] = sol.timer.start(hero, delay, function()
-      hero:stop_electrocuted()
+    hero:set_condition('electrocution', true)
+    condition_manager.timers['electrocution'] = sol.timer.start(hero, delay, function()
+      hero:stop_electrocution()
     end)
   end
 
@@ -262,14 +262,14 @@ function condition_manager:initialize(game)
     sol.audio.play_sound("ice_shatter")
   end
 
-  function hero:stop_electrocuted()
-    if hero:is_condition_active('electrocuted') and condition_manager.timers['electrocuted'] ~= nil then
-      condition_manager.timers['electrocuted']:stop()
+  function hero:stop_electrocution()
+    if hero:is_condition_active('electrocution') and condition_manager.timers['electrocution'] ~= nil then
+      condition_manager.timers['electrocution']:stop()
     end
 
     hero:unfreeze()
     hero:set_animation("walking")
-    hero:set_condition('electrocuted', false)
+    hero:set_condition('electrocution', false)
   end
 
   function hero:stop_slow()

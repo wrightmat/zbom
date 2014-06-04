@@ -36,7 +36,14 @@ function enemy:on_collision_enemy(other_enemy, other_sprite, my_sprite)
 end
 
 function enemy:shoot_ball()
-  ball = enemy:create_enemy({ breed = "plasmarine_ball", direction = 0 })
+  -- If the other Plasmarine is dead, then this one's electricity
+  -- need to be able to hurt him, otherwise he won't die.
+  -- Normally, only the other Plasmarine's electricity can hurt this one.
+  if not map:get_entities("plasmarine_red") then
+    ball = enemy:create_enemy({ breed = "plasmarine_ball", direction = 2 })
+  else
+    ball = enemy:create_enemy({ breed = "plasmarine_ball", direction = 0 })
+  end
   enemy:restart()
 end
 

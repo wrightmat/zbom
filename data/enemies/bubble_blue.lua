@@ -60,8 +60,8 @@ function enemy:on_attacking_hero(hero)
   local game = enemy:get_game()
 
   -- Hero is slowed.
+  hero:set_invincible(true, 100)
   hero:start_slow(5000)
-  hero:set_invincible()
 
   -- If hero has magic, it is drained.
   if game:get_magic() > 0 then

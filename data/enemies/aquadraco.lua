@@ -8,7 +8,7 @@ local firing = false
 local positions = {
   {x = 1312, y = 384 },
   {x = 1256, y = 400 },
-  {x = 1184, y = 376 },
+  {x = 1184, y = 384 },
   {x = 1208, y = 424 },
   {x = 1240, y = 448 },
   {x = 1320, y = 456 }
@@ -70,7 +70,6 @@ function enemy:spit_fire()
   sprite:set_animation("firing")
   self:create_enemy({ breed = "flame_blue" })
   sol.timer.start(enemy, 800, function()
-    print('animation finished - changing to spreading')
     self:get_sprite():set_animation("spreading")
     sol.timer.start(enemy, 800, function() enemy:fly() end)
   end)

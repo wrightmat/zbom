@@ -17467,10 +17467,10 @@ destructible{
 
 wall{
   layer = 0,
-  x = 1864,
-  y = 528,
-  width = 32,
-  height = 8,
+  x = 1872,
+  y = 520,
+  width = 16,
+  height = 16,
   stops_hero = true,
   stops_enemies = true,
   stops_npcs = true,
@@ -17627,9 +17627,9 @@ sensor{
 
 wall{
   layer = 0,
-  x = 1328,
+  x = 1336,
   y = 904,
-  width = 32,
+  width = 16,
   height = 16,
   name = "obstacle",
   stops_hero = true,
@@ -17645,6 +17645,31 @@ door{
   name = "door_boss_2",
   direction = 2,
   sprite = "entities/door_shutter",
+}
+
+wall{
+  layer = 0,
+  x = 1888,
+  y = 512,
+  width = 8,
+  height = 8,
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1328,
+  y = 896,
+  width = 8,
+  height = 8,
+  name = "obstacle_2",
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
 }
 
 tile{
