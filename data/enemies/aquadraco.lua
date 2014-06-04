@@ -15,7 +15,7 @@ local positions = {
 }
 
 function enemy:on_created()
-  self:set_life(6)
+  self:set_life(10)
   self:set_damage(2)
   self:create_sprite("enemies/aquadraco")
   self:set_hurt_style("boss")

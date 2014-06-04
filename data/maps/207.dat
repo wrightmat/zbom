@@ -17672,6 +17672,14 @@ wall{
   stops_blocks = true,
 }
 
+chest{
+  layer = 0,
+  x = 1928,
+  y = 765,
+  treasure_name = "bomb_bag",
+  sprite = "entities/chest",
+}
+
 tile{
   layer = 2,
   x = 1760,
