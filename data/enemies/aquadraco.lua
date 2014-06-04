@@ -33,19 +33,16 @@ function enemy:on_movement_changed(movement)
 end
 
 function enemy:on_obstacle_reached(movement)
-  print('obstacle reached')
   if not firing then
     self:fly()
   end
 end
 
 function enemy:on_restarted()
-  print('restarted')
   self:fly()
 end
 
 function enemy:fly()
-  print('flying')
   firing = false
   self:get_sprite():set_animation("walking")
   local m = sol.movement.create("target")
@@ -68,7 +65,6 @@ function enemy:fly()
 end
 
 function enemy:spit_fire()
-  print('spitting fire')
   firing = true
   local sprite = self:get_sprite()
   sprite:set_animation("firing")
@@ -81,11 +77,10 @@ function enemy:spit_fire()
 end
 
 function enemy:go_hero()
-  print('moving toward hero')
+  firing = false
   self:get_sprite():set_animation("walking")
   local m = sol.movement.create("target")
   m:set_speed(64)
   m:start(self)
-  firing = false
   sol.timer.start(enemy, math.random(10)*1000, function() enemy:fly() end)
 end

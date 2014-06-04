@@ -13,7 +13,7 @@ tile{
   y = 0,
   width = 320,
   height = 240,
-  pattern = 484,
+  pattern = 483,
 }
 
 destination{
@@ -59,11 +59,9 @@ wall{
 
 enemy{
   layer = 0,
-  x = 192,
-  y = 125,
-  name = "miniboss",
+  x = 80,
+  y = 172,
   direction = 3,
-  breed = "aquadraco",
-  rank = 1,
+  breed = "plasmarine_blue",
 }
 

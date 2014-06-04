@@ -18,4 +18,10 @@ function enemy:on_restarted()
   local m = sol.movement.create("path_finding")
   m:set_speed(32)
   m:start(self)
+  sol.timer.start(enemy, math.random(10)*1000, function() enemy:shoot_ball() end)
+end
+
+function enemy:shoot_ball()
+  enemy:create_enemy({ breed = "plasmarine_ball" })
+  enemy:restart()
 end
