@@ -41,6 +41,9 @@ end
 function enemy:on_restarted()
   self:fly()
 end
+function enemy:on_hurt()
+  self:fly()
+end
 
 function enemy:fly()
   firing = false
