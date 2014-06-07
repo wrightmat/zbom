@@ -7,6 +7,15 @@ properties{
   tileset = "0",
 }
 
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 320,
+  height = 240,
+  pattern = 480,
+}
+
 destination{
   layer = 0,
   x = 24,
@@ -16,12 +25,12 @@ destination{
   default = true,
 }
 
-tile{
-  layer = 2,
-  x = 0,
-  y = 0,
+sensor{
+  layer = 0,
+  x = 8,
+  y = 125,
   width = 320,
-  height = 240,
-  pattern = 480,
+  height = 16,
+  name = "sensor",
 }
 

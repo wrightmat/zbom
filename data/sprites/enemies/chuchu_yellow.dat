@@ -47,10 +47,36 @@ animation{
 }
 
 animation{
-  name = "shock",
+  name = "disappearing",
+  src_image = "enemies/chuchu.png",
+  frame_delay = 300,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 64, y = 72, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 3 },
+    { x = 64, y = 72, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 3 },
+    { x = 64, y = 72, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 3 },
+    { x = 64, y = 72, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 3 },
+  },
+}
+
+animation{
+  name = "reappearing",
+  src_image = "enemies/chuchu.png",
+  frame_delay = 300,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 96, y = 72, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 3 },
+    { x = 96, y = 72, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 3 },
+    { x = 96, y = 72, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 3 },
+    { x = 96, y = 72, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 3 },
+  },
+}
+
+animation{
+  name = "shocking",
   src_image = "enemies/chuchu.png",
   frame_delay = 100,
-  frame_to_loop_on = -1,
+  frame_to_loop_on = 0,
   directions = {
     { x = 144, y = 72, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 2 },
     { x = 144, y = 72, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 2 },

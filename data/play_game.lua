@@ -7,19 +7,19 @@ sol.main.load_file("menus/pause")(game)
 sol.main.load_file("menus/dialog_box")(game)
 sol.main.load_file("menus/game_over")(game)
 sol.main.load_file("hud/hud")(game)
+sol.main.load_file("particles")(game)
 local condition_manager = require("hero_condition")
 
 -- Useful functions for this specific quest.
 
 function game:on_started()
-  -- Set up the dialog box and the HUD.
-  self:initialize_dialog_box()
+  -- Set up the dialog box, HUD, hero conditions and effects.
   condition_manager:initialize(self)
+  self:initialize_dialog_box()
   self:initialize_hud()
 end
 
 function game:on_finished()
-
   -- Clean what was created by on_started().
   self:quit_hud()
   self:quit_dialog_box()
@@ -27,7 +27,6 @@ end
 
 -- This event is called when a new map has just become active.
 function game:on_map_changed(map)
-
   -- Notify the hud.
   self:hud_on_map_changed(map)
 end

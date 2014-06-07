@@ -1,6 +1,7 @@
 local enemy = ...
 
 -- Green ChuChu: a basic overworld enemy that follows the hero.
+-- The green variety is the first discovered and easiest in this game.
 
 function enemy:on_created()
   self:set_life(1)

@@ -3,21 +3,21 @@ local in_command_pressed = false
 local in_command_release = false
 
 condition_manager.timers = {
-  poison = nil,
   slow = nil,
-  confusion = nil,
   frozen = nil,
+  poison = nil,
+  confusion = nil,
   electrocution = nil,
 }
 
 function condition_manager:initialize(game)
   local hero = game:get_hero()
   hero.condition = {
-    poison = false,
     slow = false,
-    confusion = false,
     frozen = false,
-    electrocuted = false
+    poison = false,
+    confusion = false,
+    electrocution = false
   }
 
   function hero:is_condition_active(condition)

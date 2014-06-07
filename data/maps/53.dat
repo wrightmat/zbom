@@ -2350,15 +2350,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 184,
-  y = 560,
-  width = 32,
-  height = 32,
-  pattern = 2115,
-}
-
-tile{
-  layer = 0,
   x = 216,
   y = 584,
   width = 16,
@@ -3480,5 +3471,33 @@ tile{
   width = 24,
   height = 24,
   pattern = 2108,
+}
+
+teletransporter{
+  layer = 1,
+  x = 192,
+  y = 592,
+  width = 32,
+  height = 16,
+  name = "to_cavern",
+  destination_map = "208",
+  destination = "from_outside",
+}
+
+destination{
+  layer = 1,
+  x = 208,
+  y = 621,
+  name = "from_cavern",
+  direction = 3,
+}
+
+tile{
+  layer = 2,
+  x = 184,
+  y = 560,
+  width = 32,
+  height = 32,
+  pattern = 2115,
 }
 

@@ -679,7 +679,7 @@ tile{
   layer = 0,
   x = 48,
   y = 1712,
-  width = 64,
+  width = 16,
   height = 16,
   pattern = 8,
 }
@@ -1044,11 +1044,126 @@ tile{
   pattern = 623,
 }
 
+tile{
+  layer = 0,
+  x = 96,
+  y = 1712,
+  width = 16,
+  height = 16,
+  pattern = 8,
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 1704,
+  width = 16,
+  height = 16,
+  pattern = 158,
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 1704,
+  width = 8,
+  height = 16,
+  pattern = 159,
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 1704,
+  width = 8,
+  height = 16,
+  pattern = 161,
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 1704,
+  width = 16,
+  height = 16,
+  pattern = 613,
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 1720,
+  width = 8,
+  height = 16,
+  pattern = 106,
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 1720,
+  width = 8,
+  height = 16,
+  pattern = 106,
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 1728,
+  width = 16,
+  height = 8,
+  pattern = 105,
+}
+
 chest{
   layer = 0,
   x = 680,
   y = 1141,
+  name = "chest_map",
+  treasure_name = "map",
+  treasure_savegame_variable = "b1143",
   sprite = "entities/chest",
+}
+
+chest{
+  layer = 0,
+  x = 80,
+  y = 85,
+  name = "chest_item_2",
+  treasure_name = "cane",
+  sprite = "entities/chest_big",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "b1144",
+  cannot_open_dialog = "_big_key_required",
+}
+
+enemy{
+  layer = 0,
+  x = 80,
+  y = 488,
+  name = "room2_bubble_white",
+  direction = 3,
+  breed = "bubble_white",
+}
+
+teletransporter{
+  layer = 0,
+  x = 72,
+  y = 1712,
+  width = 16,
+  height = 16,
+  name = "to_B1",
+  destination_map = "208",
+  destination = "from_B2",
+}
+
+destination{
+  layer = 0,
+  x = 80,
+  y = 1709,
+  name = "from_B1",
+  direction = 1,
 }
 
 tile{
@@ -1130,5 +1245,14 @@ tile{
   width = 8,
   height = 32,
   pattern = 163,
+}
+
+tile{
+  layer = 2,
+  x = 64,
+  y = 1720,
+  width = 32,
+  height = 8,
+  pattern = 160,
 }
 
