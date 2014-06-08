@@ -7,13 +7,15 @@ local map = entity:get_map()
 function entity:on_created()
   self:create_sprite("entities/somaria_pit")
   self:set_size(16, 16)
-  self:set_origin(16, 13)
+  self:set_origin(8, 13)
   self:set_traversable_by(false)
+  self:add_collision_test("sprite", fill_pit)
 end
 
-function entity:on_interaction_item(item_used)
-  if item_used == "cane" then
+local function fill_pit(entity1, entity2)
+  if entity2:get_type() == "somaria_block" then
     self:get_sprite():set_animation("filled")
+    entity2:remove()
     self:set_traversable_by(true)
     sol.timer.start(self, 10000, function()
       self:get_sprite():set_animation("pit")
