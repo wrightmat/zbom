@@ -1160,6 +1160,15 @@ tile{
   pattern = 543,
 }
 
+tile{
+  layer = 0,
+  x = 160,
+  y = 176,
+  width = 32,
+  height = 8,
+  pattern = 406,
+}
+
 npc{
   layer = 0,
   x = 176,
@@ -1178,13 +1187,33 @@ destination{
   direction = 1,
 }
 
-tile{
-  layer = 1,
-  x = 160,
-  y = 176,
-  width = 32,
+sensor{
+  layer = 0,
+  x = 144,
+  y = 181,
+  width = 80,
+  height = 16,
+  name = "sensor_fairy_speak",
+}
+
+wall{
+  layer = 0,
+  x = 104,
+  y = 136,
+  width = 144,
   height = 8,
-  pattern = 406,
+  stops_hero = true,
+}
+
+teletransporter{
+  layer = 0,
+  x = 168,
+  y = 344,
+  width = 16,
+  height = 16,
+  name = "to_outside",
+  destination_map = "53",
+  destination = "from_great_fairy",
 }
 
 tile{

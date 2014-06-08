@@ -4183,9 +4183,9 @@ chest{
   layer = 1,
   x = 640,
   y = 85,
-  name = "chest_rupees",
-  treasure_name = "rupee",
-  treasure_variant = 3,
+  name = "chest_amber",
+  treasure_name = "amber",
+  treasure_savegame_variable = "b1747",
   sprite = "entities/chest",
 }
 

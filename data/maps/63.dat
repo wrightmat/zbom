@@ -4757,7 +4757,7 @@ destination{
   layer = 0,
   x = 408,
   y = 725,
-  name = "from_house",
+  name = "from_great_fairy",
   direction = 3,
 }
 
@@ -4893,13 +4893,15 @@ wall{
   height = 16,
 }
 
-tile{
-  layer = 1,
+teletransporter{
+  layer = 0,
   x = 400,
-  y = 688,
+  y = 696,
   width = 16,
   height = 16,
-  pattern = 1652,
+  name = "to_great_fairy",
+  destination_map = "164",
+  destination = "from_outside",
 }
 
 tile{
@@ -5017,5 +5019,14 @@ tile{
   width = 24,
   height = 24,
   pattern = 1714,
+}
+
+tile{
+  layer = 2,
+  x = 400,
+  y = 688,
+  width = 16,
+  height = 16,
+  pattern = 1652,
 }
 
