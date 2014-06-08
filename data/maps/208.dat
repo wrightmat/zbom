@@ -1137,8 +1137,8 @@ tile{
 tile{
   layer = 0,
   x = 176,
-  y = 968,
-  width = 88,
+  y = 976,
+  width = 72,
   height = 8,
   pattern = 113,
 }
@@ -1146,8 +1146,8 @@ tile{
 tile{
   layer = 0,
   x = 176,
-  y = 1008,
-  width = 88,
+  y = 1000,
+  width = 72,
   height = 8,
   pattern = 112,
 }
@@ -1173,9 +1173,9 @@ tile{
 tile{
   layer = 0,
   x = 168,
-  y = 976,
-  width = 96,
-  height = 32,
+  y = 984,
+  width = 80,
+  height = 16,
   pattern = 602,
 }
 
@@ -2666,28 +2666,28 @@ tile{
 
 tile{
   layer = 0,
-  x = 464,
-  y = 968,
-  width = 96,
+  x = 472,
+  y = 976,
+  width = 80,
   height = 8,
   pattern = 113,
 }
 
 tile{
   layer = 0,
-  x = 464,
-  y = 1008,
-  width = 96,
+  x = 472,
+  y = 1000,
+  width = 80,
   height = 8,
   pattern = 112,
 }
 
 tile{
   layer = 0,
-  x = 464,
-  y = 976,
-  width = 96,
-  height = 32,
+  x = 472,
+  y = 984,
+  width = 80,
+  height = 16,
   pattern = 602,
 }
 
@@ -4896,32 +4896,25 @@ tile{
   pattern = 106,
 }
 
+switch{
+  layer = 0,
+  x = 216,
+  y = 1336,
+  subtype = "1",
+  needs_block = true,
+  inactivate_when_leaving = true,
+}
+
 teletransporter{
   layer = 0,
   x = 488,
-  y = 904,
+  y = 896,
   width = 16,
-  height = 64,
+  height = 80,
   name = "fall_basement_4",
   sound = "hero_falls",
   destination_map = "209",
   destination = "_same",
-}
-
-door{
-  layer = 0,
-  x = 232,
-  y = 1448,
-  direction = 1,
-  sprite = "entities/door_shutter",
-}
-
-door{
-  layer = 0,
-  x = 232,
-  y = 1400,
-  direction = 3,
-  sprite = "entities/door_shutter",
 }
 
 block{
@@ -4933,15 +4926,6 @@ block{
   pushable = true,
   pullable = false,
   maximum_moves = 2,
-}
-
-switch{
-  layer = 0,
-  x = 208,
-  y = 1336,
-  subtype = "1",
-  needs_block = true,
-  inactivate_when_leaving = true,
 }
 
 door{
@@ -4989,9 +4973,9 @@ teletransporter{
 teletransporter{
   layer = 0,
   x = 216,
-  y = 904,
+  y = 896,
   width = 16,
-  height = 64,
+  height = 80,
   name = "fall_basement_3",
   sound = "hero_falls",
   destination_map = "209",
@@ -5001,9 +4985,9 @@ teletransporter{
 teletransporter{
   layer = 0,
   x = 216,
-  y = 1016,
+  y = 1008,
   width = 16,
-  height = 64,
+  height = 80,
   name = "fall_basement_5",
   sound = "hero_falls",
   destination_map = "209",
@@ -5013,9 +4997,9 @@ teletransporter{
 teletransporter{
   layer = 0,
   x = 488,
-  y = 1016,
+  y = 1008,
   width = 16,
-  height = 64,
+  height = 80,
   name = "fall_basement_6",
   sound = "hero_falls",
   destination_map = "209",
@@ -5057,7 +5041,7 @@ destination{
   x = 240,
   y = 1709,
   name = "from_outside",
-  direction = 3,
+  direction = 1,
   default = true,
 }
 
@@ -5158,6 +5142,7 @@ stream{
   x = 72,
   y = 1141,
   direction = 2,
+  sprite = "entities/conveyor",
   allow_movement = false,
   allow_attack = false,
   allow_item = false,
@@ -5168,6 +5153,7 @@ stream{
   x = 88,
   y = 1141,
   direction = 2,
+  sprite = "entities/conveyor",
   allow_movement = false,
   allow_attack = false,
   allow_item = false,

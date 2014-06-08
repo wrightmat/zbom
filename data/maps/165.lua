@@ -25,9 +25,9 @@ function sensor_fairy_speak:on_activated()
   elseif game:get_value("i1605") == 4 then
     game:start_dialog("great_fairy.4")
   elseif game:get_value("i1605") == 5 then
-    game:start_dialog("great_fairy.5.mountain")
+    game:start_dialog("great_fairy.5.snowpeak")
   else
-    game:start_dialog("great_fairy.0.mountain", function()
+    game:start_dialog("great_fairy.0.snowpeak", function()
       game:set_value("i1605", 1)
     end)
   end

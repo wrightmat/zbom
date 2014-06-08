@@ -2369,6 +2369,39 @@ destination{
   direction = 1,
 }
 
+teletransporter{
+  layer = 0,
+  x = 552,
+  y = 216,
+  width = 16,
+  height = 16,
+  name = "to_outside_house_2",
+  destination_map = "61",
+  destination = "from_house_2",
+}
+
+teletransporter{
+  layer = 0,
+  x = 200,
+  y = 216,
+  width = 16,
+  height = 16,
+  name = "to_outside_house_1",
+  destination_map = "61",
+  destination = "from_house_1",
+}
+
+teletransporter{
+  layer = 0,
+  x = 904,
+  y = 216,
+  width = 16,
+  height = 16,
+  name = "to_outside_house_3",
+  destination_map = "61",
+  destination = "from_house_3",
+}
+
 tile{
   layer = 1,
   x = 40,
