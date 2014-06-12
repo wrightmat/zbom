@@ -2174,6 +2174,17 @@ this thing...
 }
 
 dialog{
+  id = "_goron_statue_destroyed",
+  skip = "current",
+  text = [[
+Thank you Brother...
+$0Take this magic
+as a gift from my
+spirit...
+  ]]
+}
+
+dialog{
   id = "lakebed.room_flooded",
   skip = "current",
   text = [[

@@ -53,7 +53,7 @@ function map:on_started(destination)
   end
   -- Lantern slowly drains magic here so you're forced to find ways to refill magic
   magic_deplete = sol.timer.start(map, 5000, function()
-    if game:get_magic() > 1 then game:remove_magic(1) end
+    game:remove_magic(1) end
     return true
   end)
 end

@@ -1181,15 +1181,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 104,
-  y = 1512,
-  width = 32,
-  height = 32,
-  pattern = 590,
-}
-
-tile{
-  layer = 0,
   x = 344,
   y = 1512,
   width = 32,
@@ -4896,6 +4887,15 @@ tile{
   pattern = 106,
 }
 
+tile{
+  layer = 0,
+  x = 104,
+  y = 1512,
+  width = 32,
+  height = 32,
+  pattern = 590,
+}
+
 switch{
   layer = 0,
   x = 216,
@@ -5157,6 +5157,17 @@ stream{
   allow_movement = false,
   allow_attack = false,
   allow_item = false,
+}
+
+custom_entity{
+  layer = 0,
+  x = 152,
+  y = 1612,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/statue_goron",
+  model = "statue_goron",
 }
 
 tile{
