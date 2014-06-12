@@ -12,7 +12,7 @@ function entity:on_created()
   self:set_traversable_by(false)
   self:add_collision_test("overlapping", function(self, other)
     if other:get_type() == "explosion" then
-      self:fade_out(10, function() self:remove() end)
+      self:remove()
       game:start_dialog("_goron_statue_destroyed")
       game:add_magic(20)
     end
