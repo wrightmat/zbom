@@ -537,7 +537,7 @@ enemy{ id = "chuchu_yellow", description = "ChuChu, Yellow" }
 enemy{ id = "crab", description = "Crab" }
 enemy{ id = "dodongo", description = "Dodongo" }
 enemy{ id = "evil_tile", description = "Evil Tile" }
-enemy{ if = "fireball_animated", description = "Fireball, Animated" }
+enemy{ id = "fireball_animated", description = "Fireball, Animated" }
 enemy{ id = "fireball_simple", description = "Fireball, Simple" }
 enemy{ id = "fireball_triple", description = "Fireball, Triple" }
 enemy{ id = "fire_bar", description = "Fire bar (clockwise)" }
