@@ -1,4 +1,5 @@
 local enemy = ...
+local map = enemy:get_map()
 
 -- Big Ice Chu: A large gelatinous miniboss who
 -- tries to either squish or freeze our hero.
@@ -9,6 +10,7 @@ local freezing = false
 local going_hero = false
 
 function enemy:on_created()
+  map:get_hero():start_treasure("bomb_bag")
   self:set_life(10)
   self:set_damage(2)
   self:create_sprite("enemies/chu_big_ice")
@@ -42,15 +44,11 @@ function enemy:on_restarted()
 end
 
 function enemy:on_movement_finished(movement)
-  if freezing then
-    self:go_hero()
-  end
+  self:restart()
 end
 
 function enemy:on_obstacle_reached(movement)
-  if freezing then
-    self:go_hero()
-  end
+  self:restart()
 end
 
 function enemy:on_position_changed(x, y)
@@ -72,11 +70,6 @@ function enemy:on_attacking_hero(hero, enemy_sprite)
 end
 
 function enemy:on_hurt(attack)
-  if timer ~= nil then
-    timer:stop()
-    timer = nil
-  end
-
   -- The head wobbles when hurt.
   head:stop_movement()
   head:get_sprite():set_animation("hurt")
@@ -84,18 +77,29 @@ function enemy:on_hurt(attack)
   -- If the enemy is frozen, then freeze the hero.
   -- A bomb explosion gets rid of the freezing ice.
   if freezing then
-    if attack == "explosion" then
+    if attack == "explosion" or attack == "fire" then
       freezing = false
       self:get_sprite():set_animation("walking")
+      self:check_hero()
     else
-      hero:start_frozen(3000)
+      map:get_hero():start_frozen(3000)
     end
+  else
+    freezing = false
   end
 end
 
 function enemy:on_dead()
   -- Kill the head.
   head:hurt(1)
+end
+
+function enemy:on_update()
+  if freezing then
+    self:get_sprite():set_animation("ice")
+  else
+    self:get_sprite():set_animation("walking")
+  end
 end
 
 function enemy:check_hero()
@@ -112,16 +116,18 @@ function enemy:check_hero()
   elseif not near_hero and going_hero then
     self:go_random()
   end
-  timer = sol.timer.start(self, 1000, function() self:check_hero() end)
+  sol.timer.start(self, 1000, function() self:check_hero() end)
 end
 
 function enemy:freeze()
   self:stop_movement()
-  self:set_sprite():set_animation("ice")
+  self:get_sprite():set_animation("ice")
   freezing = true
-  timer = sol.timer.start(self, 10000, function()
+  sol.timer.start(self, 5000, function()
     freezing = false
+    sol.audio.play_sound("ice_shatter")
     self:get_sprite():set_animation("walking")
+    self:check_hero()
   end)
 end
 
