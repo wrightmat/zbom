@@ -9,7 +9,7 @@ local current_xy = {}
 function enemy:on_created()
   self:set_life(10)
   self:set_damage(2)
-  self:create_sprite("enemies/enemies/chu_big_ice")
+  self:create_sprite("enemies/chu_big_ice")
   self:set_size(48, 48)
   self:set_origin(24, 43)
   self:set_hurt_style("boss")
@@ -22,7 +22,7 @@ function enemy:on_created()
     name = my_name .. "_head",
     breed = "chu_big_ice_head",
     x = 0,
-    y = -112
+    y = -16
   }
   head.base = self
 end
@@ -37,13 +37,6 @@ function enemy:on_restarted()
     end
   end
   current_xy.x, current_xy.y = self:get_position()
-end
-
-function enemy:on_hurt()
-  if timer ~= nil then
-    timer:stop()
-    timer = nil
-  end
 end
 
 function enemy:on_movement_finished(movement)
@@ -74,6 +67,21 @@ function enemy:on_pre_draw()
     local x, y = self:get_position()
     local head_x, head_y = head:get_position()
   end
+end
+
+function enemy:on_hurt(attack, life_lost)
+  if timer ~= nil then
+    timer:stop()
+    timer = nil
+  end
+  -- The head wobbles when hurt.
+  head:stop_movement()
+  head:get_sprite():set_animation("hurt")
+end
+
+function enemy:on_dead()
+  -- Kill the head.
+  head:hurt(1)
 end
 
 function enemy:check_hero()

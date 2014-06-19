@@ -2,10 +2,10 @@ animation{
   name = "walking",
   src_image = "enemies/chu_big_ice.png",
   directions = {
-    { x = 0, y = 48, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 43 },
-    { x = 0, y = 48, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 43 },
-    { x = 0, y = 48, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 43 },
-    { x = 0, y = 48, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 43 },
+    { x = 48, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 43 },
+    { x = 48, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 43 },
+    { x = 48, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 43 },
+    { x = 48, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 43 },
   },
 }
 
@@ -13,10 +13,10 @@ animation{
   name = "hurt",
   src_image = "enemies/chu_big_ice.png",
   directions = {
-    { x = 0, y = 48, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 43 },
-    { x = 0, y = 48, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 43 },
-    { x = 0, y = 48, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 43 },
-    { x = 0, y = 48, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 43 },
+    { x = 48, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 43 },
+    { x = 48, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 43 },
+    { x = 48, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 43 },
+    { x = 48, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 43 },
   },
 }
 
@@ -24,9 +24,9 @@ animation{
   name = "ice",
   src_image = "enemies/chu_big_ice.png",
   directions = {
-    { x = 0, y = 96, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 43 },
-    { x = 0, y = 96, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 43 },
-    { x = 0, y = 96, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 43 },
-    { x = 0, y = 96, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 43 },
+    { x = 96, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 43 },
+    { x = 96, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 43 },
+    { x = 96, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 43 },
+    { x = 96, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 43 },
   },
 }
