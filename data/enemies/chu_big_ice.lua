@@ -5,6 +5,8 @@ local enemy = ...
 
 local head = nil
 local current_xy = {}
+local freezing = false
+local going_hero = false
 
 function enemy:on_created()
   self:set_life(10)
@@ -28,7 +30,7 @@ function enemy:on_created()
 end
 
 function enemy:on_restarted()
-  if not being_pushed then
+  if not freezing then
     if going_hero then
       self:go_hero()
     else
@@ -40,13 +42,13 @@ function enemy:on_restarted()
 end
 
 function enemy:on_movement_finished(movement)
-  if being_pushed then
+  if freezing then
     self:go_hero()
   end
 end
 
 function enemy:on_obstacle_reached(movement)
-  if being_pushed then
+  if freezing then
     self:go_hero()
   end
 end
@@ -62,21 +64,33 @@ function enemy:on_position_changed(x, y)
   current_xy.x, current_xy.y = x, y
 end
 
-function enemy:on_pre_draw()
-  if head:exists() then
-    local x, y = self:get_position()
-    local head_x, head_y = head:get_position()
+function enemy:on_attacking_hero(hero, enemy_sprite)
+  -- If the enemy is frozen, then freeze the hero.
+  if freezing then
+    hero:start_frozen(3000)
   end
 end
 
-function enemy:on_hurt(attack, life_lost)
+function enemy:on_hurt(attack)
   if timer ~= nil then
     timer:stop()
     timer = nil
   end
+
   -- The head wobbles when hurt.
   head:stop_movement()
   head:get_sprite():set_animation("hurt")
+
+  -- If the enemy is frozen, then freeze the hero.
+  -- A bomb explosion gets rid of the freezing ice.
+  if freezing then
+    if attack == "explosion" then
+      freezing = false
+      self:get_sprite():set_animation("walking")
+    else
+      hero:start_frozen(3000)
+    end
+  end
 end
 
 function enemy:on_dead()
@@ -93,17 +107,29 @@ function enemy:check_hero()
 
   if near_hero and not going_hero then
     self:go_hero()
+  elseif near_hero and going_hero then
+    self:freeze()
   elseif not near_hero and going_hero then
     self:go_random()
   end
   timer = sol.timer.start(self, 1000, function() self:check_hero() end)
 end
 
+function enemy:freeze()
+  self:stop_movement()
+  self:set_sprite():set_animation("ice")
+  freezing = true
+  timer = sol.timer.start(self, 10000, function()
+    freezing = false
+    self:get_sprite():set_animation("walking")
+  end)
+end
+
 function enemy:go_random()
   local movement = sol.movement.create("random_path")
   movement:set_speed(32)
   movement:start(self)
-  being_pushed = false
+  freezing = false
   going_hero = false
 end
 
@@ -111,6 +137,6 @@ function enemy:go_hero()
   local movement = sol.movement.create("target")
   movement:set_speed(40)
   movement:start(self)
-  being_pushed = false
+  freezing = false
   going_hero = true
 end
