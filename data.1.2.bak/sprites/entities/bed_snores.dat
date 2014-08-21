@@ -1,0 +1,13 @@
+animation{
+  name = "stopped",
+  src_image = "entities/bed.png",
+  frame_delay = 100,
+  frame_to_loop_on = 12,
+  directions = {
+    { x = 0, y = 40, frame_width = 16, frame_height = 40, origin_x = 8, origin_y = 37, num_frames = 34 },
+    { x = 0, y = 40, frame_width = 16, frame_height = 40, origin_x = 8, origin_y = 37, num_frames = 34 },
+    { x = 0, y = 40, frame_width = 16, frame_height = 40, origin_x = 8, origin_y = 37, num_frames = 34 },
+    { x = 0, y = 40, frame_width = 16, frame_height = 40, origin_x = 8, origin_y = 37, num_frames = 34 },
+  },
+}
+

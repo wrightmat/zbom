@@ -12778,7 +12778,9 @@ switch{
   x = 1536,
   y = 656,
   name = "sensor_out_torches_room",
-  subtype = "1",
+  subtype = "walkable",
+  sprite = "entities/switch",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -12788,7 +12790,8 @@ switch{
   x = 1136,
   y = 1192,
   name = "room1_arrow",
-  subtype = "2",
+  subtype = "arrow_target",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
 }
@@ -12798,7 +12801,8 @@ switch{
   x = 1240,
   y = 704,
   name = "room6_arrow_1",
-  subtype = "2",
+  subtype = "arrow_target",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
 }
@@ -12808,7 +12812,8 @@ switch{
   x = 1240,
   y = 752,
   name = "room6_arrow_2",
-  subtype = "2",
+  subtype = "arrow_target",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
 }
@@ -12818,7 +12823,8 @@ switch{
   x = 528,
   y = 440,
   name = "room15_arrow_1",
-  subtype = "2",
+  subtype = "arrow_target",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
 }
@@ -12828,7 +12834,8 @@ switch{
   x = 688,
   y = 440,
   name = "room15_arrow_2",
-  subtype = "2",
+  subtype = "arrow_target",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
 }
@@ -12838,7 +12845,8 @@ switch{
   x = 608,
   y = 416,
   name = "room15_arrow_3",
-  subtype = "2",
+  subtype = "arrow_target",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
 }
@@ -12848,7 +12856,8 @@ switch{
   x = 608,
   y = 464,
   name = "room15_arrow_4",
-  subtype = "2",
+  subtype = "arrow_target",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
 }

@@ -4927,7 +4927,9 @@ switch{
   layer = 0,
   x = 216,
   y = 1336,
-  subtype = "1",
+  subtype = "walkable",
+  sprite = "entities/switch",
+  sound = "switch",
   needs_block = true,
   inactivate_when_leaving = true,
 }
@@ -5611,12 +5613,21 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 520,
-  y = 261,
+  x = 512,
+  y = 243,
   name = "miniboss_chu",
   direction = 3,
   breed = "chu_big_ice",
   treasure_name = "alchemy",
+}
+
+enemy{
+  layer = 0,
+  x = 240,
+  y = 1572,
+  name = "wallmaster",
+  direction = 3,
+  breed = "wallmaster",
 }
 
 tile{

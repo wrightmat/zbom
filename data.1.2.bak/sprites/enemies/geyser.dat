@@ -1,0 +1,23 @@
+animation{
+  name = "walking",
+  src_image = "enemies/geyser.png",
+  frame_delay = 200,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 32, frame_height = 64, origin_x = 16, origin_y = 61, num_frames = 16 },
+    { x = 0, y = 0, frame_width = 32, frame_height = 64, origin_x = 16, origin_y = 61, num_frames = 16 },
+    { x = 0, y = 0, frame_width = 32, frame_height = 64, origin_x = 16, origin_y = 61, num_frames = 16 },
+    { x = 0, y = 0, frame_width = 32, frame_height = 64, origin_x = 16, origin_y = 61, num_frames = 16 },
+  },
+}
+
+animation{
+  name = "immobilized",
+  src_image = "enemies/geyser.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 32, frame_height = 64, origin_x = 16, origin_y = 61 },
+    { x = 0, y = 0, frame_width = 32, frame_height = 64, origin_x = 16, origin_y = 61 },
+    { x = 0, y = 0, frame_width = 32, frame_height = 64, origin_x = 16, origin_y = 61 },
+    { x = 0, y = 0, frame_width = 32, frame_height = 64, origin_x = 16, origin_y = 61 },
+  },
+}

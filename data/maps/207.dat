@@ -17391,7 +17391,9 @@ switch{
   x = 1856,
   y = 1472,
   name = "switch_water_chest",
-  subtype = "1",
+  subtype = "walkable",
+  sprite = "entities/switch",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
 }

@@ -1,0 +1,25 @@
+animation{
+  name = "on_ground",
+  src_image = "entities/destructible_items.png",
+  directions = {
+    { x = 368, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "stopped",
+  src_image = "entities/destructible_items.png",
+  directions = {
+    { x = 368, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+
+animation{
+  name = "destroy",
+  src_image = "entities/destructible_items.png",
+  frame_delay = 100,
+  directions = {
+    { x = 384, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 3 },
+  },
+}
+

@@ -4462,7 +4462,9 @@ switch{
   x = 2144,
   y = 608,
   name = "switch_sword",
-  subtype = "1",
+  subtype = "walkable",
+  sprite = "entities/switch",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
 }
@@ -4535,29 +4537,10 @@ switch{
   x = 2200,
   y = 528,
   name = "switch_arrow_key_1",
-  subtype = "2",
+  subtype = "arrow_target",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
-}
-
-enemy{
-  layer = 0,
-  x = 1776,
-  y = 808,
-  name = "bubble_1",
-  direction = 3,
-  breed = "bubble",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 0,
-  x = 1648,
-  y = 808,
-  name = "bubble_2",
-  direction = 3,
-  breed = "bubble",
-  treasure_name = "random",
 }
 
 switch{
@@ -4565,7 +4548,9 @@ switch{
   x = 1648,
   y = 448,
   name = "switch_key_2_1",
-  subtype = "1",
+  subtype = "walkable",
+  sprite = "entities/switch",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -4575,7 +4560,9 @@ switch{
   x = 1760,
   y = 448,
   name = "switch_key_2_2",
-  subtype = "1",
+  subtype = "walkable",
+  sprite = "entities/switch",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = true,
 }
@@ -4821,7 +4808,9 @@ switch{
   x = 1408,
   y = 432,
   name = "switch_drain_water",
-  subtype = "1",
+  subtype = "walkable",
+  sprite = "entities/switch",
+  sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
 }
@@ -4835,6 +4824,24 @@ jumper{
   name = "jump_sensor",
   direction = 4,
   jump_length = 40,
+}
+
+enemy{
+  layer = 0,
+  x = 1656,
+  y = 808,
+  name = "bubble",
+  direction = 3,
+  breed = "bubble_red",
+}
+
+enemy{
+  layer = 0,
+  x = 1768,
+  y = 820,
+  name = "wallmaster",
+  direction = 3,
+  breed = "wallmaster",
 }
 
 tile{
