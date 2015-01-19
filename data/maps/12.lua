@@ -74,7 +74,13 @@ function map:on_started(destination)
 end
 
 function npc_tristan:on_interaction()
-  if game:get_value("i1028") == 5 then
+  if game:get_value("i1068") >= 9 then
+    game:start_dialog("tristan.3.castle_town")
+  elseif game:get_value("i1068") >= 3 then
+    game:start_dialog("tristan.2.desert")
+  elseif game:get_value("i1027") >= 5 then
+    game:start_dialog("tristan.1.faron")
+  elseif game:get_value("i1028") == 5 then
     if game:has_item("shield") then
       game:start_dialog("tristan.0.festival_shield", game:get_player_name())
     else

@@ -2,7 +2,7 @@ local enemy = ...
 
 function enemy:on_created()
   self:set_life(4)
-  self:set_damage(12)
+  self:set_damage(4)
   self:create_sprite("enemies/helmasaur_red")
   self:set_size(16, 16)
   self:set_origin(8, 13)

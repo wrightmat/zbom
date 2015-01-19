@@ -199,60 +199,178 @@ tileset{ id = "10", description = "Dungeon 7 (Wind Tower)" }
 tileset{ id = "11", description = "Dungeon 8 (Final)" }
 tileset{ id = "12", description = "Subrosia" }
 
-music{ id = "airship", description = "Gerudo Airship" }
-music{ id = "battle", description = "Battle" }
-music{ id = "boss", description = "Boss Battle" }
-music{ id = "beach", description = "Beach" }
-music{ id = "castle", description = "Castle Inside" }
-music{ id = "castle_courtyard", description = "Castle Town/Courtyard" }
-music{ id = "cave", description = "Cave" }
-music{ id = "cave_ice", description = "Cave of Ice" }
-music{ id = "cave_ordeals", description = "Cave of Ordeals" }
-music{ id = "darunia", description = "Darunia Town" }
-music{ id = "death_mountain", description = "Death Mountain" }
-music{ id = "fairy", description = "Fairy Fountain" }
-music{ id = "faron_woods", description = "Faron Woods" }
-music{ id = "field", description = "Hyrule Field" }
-music{ id = "gerudo", description = "Gerudo Desert" }
-music{ id = "goron", description = "Goron City" }
-music{ id = "happy_mask_salesman", description = "Happy Mask Salesman" }
-music{ id = "hidden_village", description = "Hidden Village" }
-music{ id = "house", description = "House" }
-music{ id = "house_game", description = "Game House" }
-music{ id = "kakariko", description = "Kakariko City" }
-music{ id = "kasuto_old", description = "Old Kasuto Town" }
-music{ id = "lost_woods", description = "Lost Woods" }
-music{ id = "miniboss", description = "Miniboss" }
-music{ id = "minigame", description = "Mini-game" }
-music{ id = "mudora", description = "Book of Mudora Prayer" }
-music{ id = "observatory", description = "Observatory" }
-music{ id = "ordon", description = "Ordon Village" }
-music{ id = "owl", description = "Owl's Theme" }
-music{ id = "ranch", description = "LonLon Ranch" }
-music{ id = "ruto", description = "Ruto Town" }
-music{ id = "septen", description = "Septen Heights" }
-music{ id = "sewers", description = "Sewers" }
-music{ id = "shop", description = "Shop" }
-music{ id = "shop_potion", description = "Potion Shop" }
-music{ id = "snowpeak", description = "Snowpeak" }
-music{ id = "subrosia", description = "Subrosia" }
-music{ id = "temple_grove", description = "Grove Temple" }
-music{ id = "temple_mausoleum", description = "Mountaintop Mausoleum" }
-music{ id = "temple_lake", description = "Lakebed Lair" }
-music{ id = "temple_snow", description = "Snowpeak Caverns" }
-music{ id = "temple_wind", description = "Tower of the Winds" }
-music{ id = "underground", description = "Underground" }
-music{ id = "witch_hut", description = "Witch's Hut" }
-music{ id = "zora", description = "Zora's Domain" }
-music{ id = "beginning", description = "Beginning" }
-music{ id = "credits", description = "Credits" }
-music{ id = "legend", description = "Legend" }
-music{ id = "game_over", description = "Selection menu & Game Over" }
-music{ id = "title_screen", description = "Title screen " }
-music{ id = "triforce", description = "Triforce" }
-music{ id = "victory", description = "Victory" }
-music{ id = "zelda", description = "Zelda theme" }
-
+sprite{ id = "enemies/aquadracini", description = "Aquadracini" }
+sprite{ id = "enemies/aquadraco", description = "Aquadraco" }
+sprite{ id = "enemies/armos", description = "Armos Statue" }
+sprite{ id = "enemies/arrghus_baby", description = "Arrghus Baby" }
+sprite{ id = "enemies/arrghus_stone", description = "Stone Arrghus" }
+sprite{ id = "enemies/baba_floria", description = "Floria Baba" }
+sprite{ id = "enemies/bari_blue", description = "Blue Bari" }
+sprite{ id = "enemies/bari_red", description = "Red Bari" }
+sprite{ id = "enemies/bari_mini", description = "Mini Bari" }
+sprite{ id = "enemies/bubble_blue", description = "Blue Bubble" }
+sprite{ id = "enemies/bubble_green", description = "Green Bubble" }
+sprite{ id = "enemies/bubble_grey", description = "Grey Bubble" }
+sprite{ id = "enemies/bubble_red", description = "Red Bubble" }
+sprite{ id = "enemies/bubble_white", description = "White Bubble" }
+sprite{ id = "enemies/carock", description = "Carock" }
+sprite{ id = "enemies/chu_big_ice", description = "Big Ice Chu" }
+sprite{ id = "enemies/chu_big_ice_head", description = "Big Ice Chu (Head)" }
+sprite{ id = "enemies/chuchu_blue", description = "Blue ChuChu" }
+sprite{ id = "enemies/chuchu_green", description = "Green ChuChu" }
+sprite{ id = "enemies/chuchu_red", description = "Red ChuChu" }
+sprite{ id = "enemies/chuchu_yellow", description = "Yellow ChuChu" }
+sprite{ id = "enemies/crab", description = "Crab" }
+sprite{ id = "enemies/deadrock", description = "Deadrock" }
+sprite{ id = "enemies/dodongo", description = "Dodongo" }
+sprite{ id = "enemies/enemy_killed", description = "Enemy Killed" }
+sprite{ id = "enemies/evil_tile", description = "Evil Tile" }
+sprite{ id = "enemies/fireball_animated", description = "Fireball, animated" }
+sprite{ id = "enemies/fireball_simple", description = "Fireball, simple" }
+sprite{ id = "enemies/fireball_triple", description = "Fireball, triple" }
+sprite{ id = "enemies/flame_blue", description = "Flame, blue" }
+sprite{ id = "enemies/flame_red", description = "Flame, red" }
+sprite{ id = "enemies/geldman", description = "Geldman" }
+sprite{ id = "enemies/geyser", description = "Geyser" }
+sprite{ id = "enemies/gibdos", description = "Gibdos" }
+sprite{ id = "enemies/giga", description = "Giga" }
+sprite{ id = "enemies/gohma", description = "Gohma" }
+sprite{ id = "enemies/hardhat_beetle_blue", description = "Hardhat Beetle, blue" }
+sprite{ id = "enemies/hardhat_beetle_red", description = "Hardhat Beetle, red" }
+sprite{ id = "enemies/helmasaur_red", description = "Helmasaur, red" }
+sprite{ id = "enemies/keese", description = "Keese" }
+sprite{ id = "enemies/keese_fire", description = "Keese, fire" }
+sprite{ id = "enemies/keese_ice", description = "Keese, ice" }
+sprite{ id = "enemies/keese_elec", description = "Keese, electric" }
+sprite{ id = "enemies/knight_chain_ball", description = "Knight, chain and ball" }
+sprite{ id = "enemies/knight_green", description = "Knight, green" }
+sprite{ id = "enemies/knight_green_sword", description = "Knight, green (sword)" }
+sprite{ id = "enemies/knight_red", description = "Knight, red" }
+sprite{ id = "enemies/knight_red_sword", description = "Knight, red (sword)" }
+sprite{ id = "enemies/lanmola", description = "Lanmola (head)" }
+sprite{ id = "enemies/lanmola_body", description = "Lanmola (body)" }
+sprite{ id = "enemies/lanmola_tail", description = "Lanmola (tail)" }
+sprite{ id = "enemies/lizalfos", description = "Lizalfos" }
+sprite{ id = "enemies/lizalfos_sword", description = "Lizalfos (sword)" }
+sprite{ id = "enemies/manhandla", description = "Manhandla" }
+sprite{ id = "enemies/manhandla_head", description = "Manhandla (Head)" }
+sprite{ id = "enemies/moth", description = "Moth" }
+sprite{ id = "enemies/mothulita", description = "Mothulita" }
+sprite{ id = "enemies/octorok_red", description = "Octorok, red" }
+sprite{ id = "enemies/peahat", description = "Peahat" }
+sprite{ id = "enemies/pike_auto", description = "Pike, auto" }
+sprite{ id = "enemies/pike_detect", description = "Pike, detect" }
+sprite{ id = "enemies/pike_fixed", description = "Pike, fixed" }
+sprite{ id = "enemies/pincer", description = "Pit Pincer" }
+sprite{ id = "enemies/plasmarine_ball", description = "Plasmarine (ball)" }
+sprite{ id = "enemies/plasmarine_blue", description = "Plasmarine, blue" }
+sprite{ id = "enemies/plasmarine_red", description = "Plasmarine, red" }
+sprite{ id = "enemies/poe", description = "Poe" }
+sprite{ id = "enemies/poe_big", description = "Big Poe" }
+sprite{ id = "enemies/rat", description = "Rat" }
+sprite{ id = "enemies/redead", description = "ReDead" }
+sprite{ id = "enemies/rock_small", description = "Small rock" }
+sprite{ id = "enemies/ropa", description = "Ropa" }
+sprite{ id = "enemies/rope", description = "Rope (snake)" }
+sprite{ id = "enemies/skeletor", description = "Skeletor" }
+sprite{ id = "enemies/snap_dragon", description = "Snap dragon" }
+sprite{ id = "enemies/soldier_green", description = "Soldier, green" }
+sprite{ id = "enemies/stalfos_knight", description = "Stalfos Knight" }
+sprite{ id = "enemies/tektite_blue", description = "Tektite, blue" }
+sprite{ id = "enemies/tektite_green", description = "Tektite, green" }
+sprite{ id = "enemies/tektite_red", description = "Tektite, red" }
+sprite{ id = "enemies/tentacle", description = "Tentacle" }
+sprite{ id = "enemies/vire", description = "Vire" }
+sprite{ id = "enemies/vire_sorceror", description = "Vire Sorceror" }
+sprite{ id = "enemies/wallmaster", description = "Wallmaster" }
+sprite{ id = "enemies/zirna", description = "Zirna" }
+sprite{ id = "entities/teletransporter", description = "Transporter" }
+sprite{ id = "entities/teletransporter_hole", description = "Transporter (Hole)" }
+sprite{ id = "entities/destination", description = "Destination for transporter" }
+sprite{ id = "entities/bed", description = "Bed" }
+sprite{ id = "entities/bed_snores", description = "Snores" }
+sprite{ id = "entities/block", description = "Block" }
+sprite{ id = "entities/bomb_flower", description = "Bomb Flower" }
+sprite{ id = "entities/bush", description = "Bush" }
+sprite{ id = "entities/cannon", description = "Cannon" }
+sprite{ id = "entities/chest", description = "Chest (normal)" }
+sprite{ id = "entities/chest_big", description = "Chest (big)" }
+sprite{ id = "entities/conveyor", description = "Conveyor (Arrows)" }
+sprite{ id = "entities/conveyor_belt", description = "Conveyor Belt" }
+sprite{ id = "entities/crystal_shard", description = "Crystal Shard" }
+sprite{ id = "entities/dark_appears", description = "Dark Appears" }
+sprite{ id = "entities/door_shutter", description = "Door (shutter)" }
+sprite{ id = "entities/door_small_key", description = "Door (small key)" }
+sprite{ id = "entities/door_small_key_block", description = "Door (small key block)" }
+sprite{ id = "entities/door_big_key", description = "Door (big key)" }
+sprite{ id = "entities/door_boss_key", description = "Door (boss key)" }
+sprite{ id = "entities/door_weak_wall", description = "Door (weak wall)" }
+sprite{ id = "entities/door_very_weak_wall", description = "Door (very weak wall)" }
+sprite{ id = "entities/door_weak_block", description = "Door (weak block)" }
+sprite{ id = "entities/door_outside", description = "Outside door" }
+sprite{ id = "entities/door_outside_locked", description = "Outside door (locked)" }
+sprite{ id = "entities/fire_small", description = "Fire (small)" }
+sprite{ id = "entities/fireworks_shower", description = "Fireworks (ground shower)" }
+sprite{ id = "entities/fireworks_shell", description = "Fireworks (aerial shell)" }
+sprite{ id = "entities/grass", description = "Grass" }
+sprite{ id = "entities/hint_stone", description = "Hint stone" }
+sprite{ id = "entities/lantern_hanging", description = "Hanging Lantern" }
+sprite{ id = "entities/mine", description = "Mine" }
+sprite{ id = "entities/pot", description = "Pot" }
+sprite{ id = "entities/pumpkin", description = "Pumpkin" }
+sprite{ id = "entities/quest_bubble", description = "Quest bubble" }
+sprite{ id = "entities/quicksand", description = "Quicksand" }
+sprite{ id = "entities/ship_gerudo", description = "Gerudo ship" }
+sprite{ id = "entities/sign", description = "Sign" }
+sprite{ id = "entities/slot_machine", description = "Slot Machine" }
+sprite{ id = "entities/somaria_pit", description = "Somaria Pit (Cane)" }
+sprite{ id = "entities/statue", description = "Statue" }
+sprite{ id = "entities/statue_goron", description = "Goron Statue (Mausoleum)" }
+sprite{ id = "entities/statue_castle", description = "Castle Statue (Armament)" }
+sprite{ id = "entities/stone_small_white", description = "Stone, small white" }
+sprite{ id = "entities/stone_small_black", description = "Stone, small black" }
+sprite{ id = "entities/stream_water", description = "Stream, Water" }
+sprite{ id = "entities/switch", description = "Switch" }
+sprite{ id = "entities/switch_eye_left", description = "Switch, Eye (left)" }
+sprite{ id = "entities/switch_eye_right", description = "Switch, Eye (right)" }
+sprite{ id = "entities/switch_eye_up", description = "Switch, Eye (up)" }
+sprite{ id = "entities/switch_eye_down", description = "Switch, Eye (down)" }
+sprite{ id = "entities/switch_star", description = "Switch, Star" }
+sprite{ id = "entities/switch_lever", description = "Switch, Lever" }
+sprite{ id = "entities/torch", description = "Stone torch" }
+sprite{ id = "entities/torch_metal", description = "Metal torch" }
+sprite{ id = "entities/torch_wood", description = "Wooden torch" }
+sprite{ id = "entities/tower_wind_base", description = "Tower of Wind (base)" }
+sprite{ id = "entities/tower_wind_top", description = "Tower of Wind (top)" }
+sprite{ id = "hero/ground1", description = "Hero: Ground 1 (grass)" }
+sprite{ id = "hero/ground2", description = "Hero: Ground 2 (water)" }
+sprite{ id = "hero/shield1", description = "Hero: Shield 1" }
+sprite{ id = "hero/shield2", description = "Hero: Shield 2" }
+sprite{ id = "hero/shield3", description = "Hero: Shield 3" }
+sprite{ id = "hero/sword1", description = "Hero: Sword 1" }
+sprite{ id = "hero/sword2", description = "Hero: Sword 2" }
+sprite{ id = "hero/sword3", description = "Hero: Sword 3" }
+sprite{ id = "hero/sword4", description = "Hero: Sword 4" }
+sprite{ id = "hero/sword_stars1", description = "Hero: Sword stars 1" }
+sprite{ id = "hero/sword_stars2", description = "Hero: Sword stars 2" }
+sprite{ id = "hero/trail", description = "Hero: Trail" }
+sprite{ id = "hero/tunic1", description = "Hero: Tunic 1 (green)" }
+sprite{ id = "hero/tunic2", description = "Hero: Tunic 2 (red)" }
+sprite{ id = "hero/tunic3", description = "Hero: Tunic 3 (blue)" }
+sprite{ id = "hud/action_icon_flip", description = "HUD: Action icon flip" }
+sprite{ id = "hud/dialog_box_message_end", description = "HUD: Dialog box message end" }
+sprite{ id = "hud/empty_heart", description = "HUD: Empty heart" }
+sprite{ id = "hud/magic_bar", description = "HUD: Magic bar" }
+sprite{ id = "hud/pause_icon_flip", description = "HUD: Pause icon flip" }
+sprite{ id = "hud/sword_icon_flip", description = "HUD: Sword icon flip" }
+sprite{ id = "menus/arrow", description = "Menus: Arrow" }
+sprite{ id = "menus/hero_head", description = "Menus: Hero Head" }
+sprite{ id = "menus/hero_point", description = "Menus: Hero Point" }
+sprite{ id = "menus/options_cursor", description = "Menus: Options cursor" }
+sprite{ id = "menus/pause_cursor", description = "Menus: Pause cursor" }
+sprite{ id = "menus/pause_save_dialog", description = "Menus: Pause save dialog" }
+sprite{ id = "menus/selection_menu_cursor", description = "Menus: Selection menu cursor" }
+sprite{ id = "menus/solarus_logo", description = "Menus: Solarus logo" }
 sprite{ id = "npc/deku", description = "Deku" }
 sprite{ id = "npc/dog", description = "Dog" }
 sprite{ id = "npc/gerudo_hesla", description = "Hesla (Gerudo Leader)" }
@@ -303,6 +421,7 @@ sprite{ id = "npc/subrosian_blue", description = "Subrosian (Blue, Headband)" }
 sprite{ id = "npc/subrosian_orange", description = "Subrosian (Orange, Bow)" }
 sprite{ id = "npc/tokay", description = "Tokay" }
 sprite{ id = "npc/tokay_gin", description = "Tokage Gin (Tokay Elder)" }
+sprite{ id = "npc/tokay_orange", description = "Tokay, Orange" }
 sprite{ id = "npc/tokay_red", description = "Tokay, Red" }
 sprite{ id = "npc/zirna", description = "Zirna (Dark Interloper)" }
 sprite{ id = "npc/zora", description = "Zora" }
@@ -310,56 +429,63 @@ sprite{ id = "npc/zora_juba", description = "Commander Juba (Zora Elder)" }
 sprite{ id = "npc/zora_soldier", description = "Zora Soldier" }
 sprite{ id = "npc/zuna", description = "Zuna Man" }
 sprite{ id = "npc/zuna_woman", description = "Zuna Woman" }
-sprite{ id = "entities/teletransporter", description = "Transporter" }
-sprite{ id = "entities/teletransporter_hole", description = "Transporter (Hole)" }
-sprite{ id = "entities/destination", description = "Destination for transporter" }
-sprite{ id = "entities/bed", description = "Bed" }
-sprite{ id = "entities/bed_snores", description = "Snores" }
-sprite{ id = "entities/block", description = "Block" }
-sprite{ id = "entities/bomb_flower", description = "Bomb Flower" }
-sprite{ id = "entities/bush", description = "Bush" }
-sprite{ id = "entities/cannon", description = "Cannon" }
-sprite{ id = "entities/chest", description = "Chest (normal)" }
-sprite{ id = "entities/chest_big", description = "Chest (big)" }
-sprite{ id = "entities/conveyor", description = "Conveyor (Arrows)" }
-sprite{ id = "entities/conveyor_belt", description = "Conveyor Belt" }
-sprite{ id = "entities/crystal_shard", description = "Crystal Shard" }
-sprite{ id = "entities/dark_appears", description = "Dark Appears" }
-sprite{ id = "entities/door_shutter", description = "Door (shutter)" }
-sprite{ id = "entities/door_small_key", description = "Door (small key)" }
-sprite{ id = "entities/door_small_key_block", description = "Door (small key block)" }
-sprite{ id = "entities/door_big_key", description = "Door (big key)" }
-sprite{ id = "entities/door_boss_key", description = "Door (boss key)" }
-sprite{ id = "entities/door_weak_wall", description = "Door (weak wall)" }
-sprite{ id = "entities/door_very_weak_wall", description = "Door (very weak wall)" }
-sprite{ id = "entities/door_weak_block", description = "Door (weak block)" }
-sprite{ id = "entities/door_outside", description = "Outside door" }
-sprite{ id = "entities/door_outside_locked", description = "Outside door (locked)" }
-sprite{ id = "entities/fire_small", description = "Fire (small)" }
-sprite{ id = "entities/fireworks_shower", description = "Fireworks (ground shower)" }
-sprite{ id = "entities/fireworks_shell", description = "Fireworks (aerial shell)" }
-sprite{ id = "entities/grass", description = "Grass" }
-sprite{ id = "entities/hint_stone", description = "Hint stone" }
-sprite{ id = "entities/lantern_hanging", description = "Hanging Lantern" }
-sprite{ id = "entities/mine", description = "Mine" }
-sprite{ id = "entities/pot", description = "Pot" }
-sprite{ id = "entities/pumpkin", description = "Pumpkin" }
-sprite{ id = "entities/quest_bubble", description = "Quest bubble" }
-sprite{ id = "entities/quicksand", description = "Quicksand" }
-sprite{ id = "entities/ship_gerudo", description = "Gerudo ship" }
-sprite{ id = "entities/sign", description = "Sign" }
-sprite{ id = "entities/slot_machine", description = "Slot Machine" }
-sprite{ id = "entities/somaria_pit", description = "Somaria Pit (Cane)" }
-sprite{ id = "entities/statue", description = "Statue" }
-sprite{ id = "entities/statue_goron", description = "Goron Statue (Mausoleum)" }
-sprite{ id = "entities/statue_castle", description = "Castle Statue (Armament)" }
-sprite{ id = "entities/stone_small_white", description = "Stone, small white" }
-sprite{ id = "entities/stone_small_black", description = "Stone, small black" }
-sprite{ id = "entities/stream_water", description = "Stream, Water" }
-sprite{ id = "entities/switch", description = "Switch" }
-sprite{ id = "entities/torch", description = "Stone torch" }
-sprite{ id = "entities/torch_metal", description = "Metal torch" }
-sprite{ id = "entities/torch_wood", description = "Wooden torch" }
+
+music{ id = "battle", description = "Battle" }
+music{ id = "boss", description = "Boss Battle" }
+music{ id = "beach", description = "Beach" }
+music{ id = "beginning", description = "Beginning" }
+music{ id = "castle", description = "Castle Inside" }
+music{ id = "castle_courtyard", description = "Castle Town/Courtyard" }
+music{ id = "cave", description = "Cave" }
+music{ id = "cave_ice", description = "Cave of Ice" }
+music{ id = "cave_ordeals", description = "Cave of Ordeals" }
+music{ id = "credits", description = "Credits" }
+music{ id = "death_mountain", description = "Death Mountain" }
+music{ id = "fairy", description = "Fairy Fountain" }
+music{ id = "faron_woods", description = "Faron Woods" }
+music{ id = "field", description = "Hyrule Field" }
+music{ id = "game_over", description = "Selection menu & Game Over" }
+music{ id = "gerudo", description = "Gerudo Desert" }
+music{ id = "gerudo_airship", description = "Gerudo Airship" }
+music{ id = "goron", description = "Goron City" }
+music{ id = "happy_mask_salesman", description = "Happy Mask Salesman" }
+music{ id = "house", description = "House" }
+music{ id = "house_beach", description = "Beach House" }
+music{ id = "house_game", description = "Game House" }
+music{ id = "house_zuna", description = "Zuna House" }
+music{ id = "lost_woods", description = "Lost Woods" }
+music{ id = "miniboss", description = "Miniboss" }
+music{ id = "minigame", description = "Mini-game" }
+music{ id = "mudora", description = "Book of Mudora Prayer" }
+music{ id = "observatory", description = "Observatory" }
+music{ id = "owl", description = "Owl's Theme" }
+music{ id = "ranch", description = "LonLon Ranch" }
+music{ id = "septen", description = "Septen Heights" }
+music{ id = "sewers", description = "Sewers" }
+music{ id = "shop", description = "Shop" }
+music{ id = "shop_potion", description = "Potion Shop" }
+music{ id = "shop_witch", description = "Witch's Hut" }
+music{ id = "snowpeak", description = "Snowpeak" }
+music{ id = "subrosia", description = "Subrosia" }
+music{ id = "temple_grove", description = "Grove Temple" }
+music{ id = "temple_pyramid", description = "Abandoned Pyramid" }
+music{ id = "temple_mausoleum", description = "Mountaintop Mausoleum" }
+music{ id = "temple_lake", description = "Lakebed Lair" }
+music{ id = "temple_snow", description = "Snowpeak Caverns" }
+music{ id = "temple_wind", description = "Tower of the Winds" }
+music{ id = "title_screen", description = "Title screen " }
+music{ id = "town_darunia", description = "Darunia Town" }
+music{ id = "town_hidden_village", description = "Hidden Village" }
+music{ id = "town_kakariko", description = "Kakariko City" }
+music{ id = "town_kasuto", description = "Kasuto Town" }
+music{ id = "town_kasuto_old", description = "Old Kasuto Town" }
+music{ id = "town_mido", description = "Mido Town" }
+music{ id = "town_ordon", description = "Ordon Village" }
+music{ id = "town_ruto", description = "Ruto Town" }
+music{ id = "town_saria", description = "Saria Town" }
+music{ id = "town_septen", description = "Septen Heights" }
+music{ id = "underground", description = "Underground" }
+music{ id = "zora", description = "Zora's Domain" }
 
 sound{ id = "arrow_hit", description = "arrow_hit" }
 sound{ id = "bomb", description = "bomb" }
@@ -521,6 +647,7 @@ item{ id = "pumpkin_counter", description = "Pumpkin counter" }
 item{ id = "stick_counter", description = "Deku Stick counter" }
 
 enemy{ id = "aquadracini", description = "Aquadracini" }
+enemy{ id = "armos", description = "Armos Statue" }
 enemy{ id = "baba_floria", description = "Baba, Floria" }
 enemy{ id = "bari_blue", description = "Bari, Blue" }
 enemy{ id = "bari_red", description = "Bari, Red" }
@@ -529,7 +656,6 @@ enemy{ id = "bubble_green", description = "Bubble, Green (Poison)" }
 enemy{ id = "bubble_grey", description = "Bubble, Grey (Confuse)" }
 enemy{ id = "bubble_red", description = "Bubble, Red (Fire)" }
 enemy{ id = "bubble_white", description = "Bubble, White (Ice)" }
-enemy{ id = "chain_and_ball", description = "Chain and ball" }
 enemy{ id = "chuchu_green", description = "ChuChu, Green" }
 enemy{ id = "chuchu_blue", description = "ChuChu, Blue" }
 enemy{ id = "chuchu_red", description = "ChuChu, Red" }
@@ -546,11 +672,15 @@ enemy{ id = "flame_red", description = "Flame, Red" }
 enemy{ id = "geldman", description = "Geldman" }
 enemy{ id = "geyser", description = "Geyser" }
 enemy{ id = "gibdos", description = "Gibdos" }
+enemy{ id = "giga", description = "Giga" }
 enemy{ id = "hardhat_beetle_blue", description = "Hardhat Beetle, Blue" }
 enemy{ id = "hardhat_beetle_red", description = "Hardhat Beetle, Red" }
 enemy{ id = "helmasaur_red", description = "Helmasaur, Red" }
 enemy{ id = "keese", description = "Keese" }
 enemy{ id = "keese_fire", description = "Keese, Fire" }
+enemy{ id = "keese_ice", description = "Keese, Ice" }
+enemy{ id = "keese_elec", description = "Keese, Electric" }
+enemy{ id = "knight_chain_ball", description = "Knight, chain and ball" }
 enemy{ id = "knight_green", description = "Knight, Green" }
 enemy{ id = "knight_red", description = "Knight, Red" }
 enemy{ id = "lizalfos", description = "Lizalfos" }
@@ -561,8 +691,8 @@ enemy{ id = "pike_auto", description = "Pike (auto)" }
 enemy{ id = "pike_detect", description = "Pike (detect)" }
 enemy{ id = "pike_fixed", description = "Pike (fixed)" }
 enemy{ id = "poe", description = "Poe" }
-enemy{ id = "poe_big", description = "Big Poe" }
 enemy{ id = "rat", description = "Rat" }
+enemy{ id = "redead", description = "ReDead" }
 enemy{ id = "ropa", description = "Ropa" }
 enemy{ id = "rope", description = "Rope" }
 enemy{ id = "skeletor", description = "Skeletor" }
@@ -585,6 +715,7 @@ enemy{ id = "plasmarine_blue", description = "Plasmarine, Blue (Boss)" }
 enemy{ id = "plasmarine_red", description = "Plasmarine, Red (Boss)" }
 enemy{ id = "chu_big_ice", description = "Big Ice Chu (Miniboss)" }
 enemy{ id = "stalfos_knight", description = "Stalfos Knight (Boss)" }
+enemy{ id = "poe_big", description = "Big Poe (Boss)" }
 enemy{ id = "carock", description = "Carock (Dark Interloper)" }
 enemy{ id = "zirna", description = "Zirna (Dark Interloper)" }
 
@@ -594,4 +725,4 @@ entity{ id = "somaria_pit", description = "Somaria Pit (Cane)" }
 entity{ id = "statue_goron", description = "Goron Statue (Mausoleum)" }
 
 language{ id = "en", description = "English dialogs" }
-sprite{ id = "entities/solid_switch", description = "Solid switch" }
+

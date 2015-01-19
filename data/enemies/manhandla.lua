@@ -27,7 +27,7 @@ function enemy:create_head(color)
     head:get_sprite():set_direction(0)
   elseif color == "purple" then
     -- purple on top
-    head = self:create_enemy({name="manhandla_head_purple", breed="manhandla_head", x=6, y=-12})
+    head = self:create_enemy({name="manhandla_head_purple", breed="manhandla_head", x=6, y=-16}) -- y=-12
     head.color = "purple"
     head:add_life(3)
     head:get_sprite():set_direction(1)
@@ -82,10 +82,12 @@ function enemy:on_update()
   if heads_present > 0 then
     -- if there are heads (and how many)
     self:set_attack_consequence("sword", "protected")
+    self:set_attack_consequence("arrow", "protected")
     body_speed = 80
   else
     -- if only the body is left (only a few more hits until dead!)
     self:set_attack_consequence("sword", 1)
+    self:set_attack_consequence("arrow", 1)
     body_speed = 96
   end
 end

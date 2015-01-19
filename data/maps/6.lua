@@ -6,7 +6,9 @@ local game = map:get_game()
 ----------------------------------------------------------------------
 
 function map:on_started(destination)
-
+  if destination == enter_astronomer then
+    sol.audio.play_music("house_zuna")
+  end
 end
 
 function npc_astronomer:on_interaction()

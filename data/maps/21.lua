@@ -5,6 +5,7 @@ local game = map:get_game()
 -- Outside World C15 (Grove-Temple Entr) - Grove Temple Entrance, Beach entrance (Gerudo ship) --
 -------------------------------------------------------------------------------------------------
 
+if game:get_value("i1068")==nil then game:set_value("i1068", 0) end
 if game:get_value("i1917")==nil then game:set_value("i1917", 0) end
 local monkey_sprite = npc_monkey:get_sprite()
 local monkey_jumps = 0

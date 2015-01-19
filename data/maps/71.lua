@@ -20,7 +20,7 @@ function map:on_started(destination)
 end
 
 function sensor_enter_kakariko:on_activated()
-  sol.audio.play_music("kakariko")
+  sol.audio.play_music("town_kakariko")
   sensor_enter_desert:set_enabled(false)
   sol.timer.start(sensor_enter_kakariko,2000,function()
     sensor_enter_desert:set_enabled(true)

@@ -10,7 +10,16 @@ animation{
     { x = 0, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 2 },
   },
 }
-
+animation{
+  name = "hurt",
+  src_image = "enemies/hardhat_beetle.png",
+  directions = {
+    { x = 48, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21 },
+    { x = 48, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21 },
+    { x = 48, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21 },
+    { x = 48, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21 },
+  },
+}
 animation{
   name = "immobilized",
   src_image = "enemies/hardhat_beetle.png",
@@ -21,12 +30,10 @@ animation{
     { x = 64, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21 },
   },
 }
-
 animation{
   name = "shaking",
   src_image = "enemies/hardhat_beetle.png",
-  frame_delay = 50,
-  frame_to_loop_on = 0,
+  frame_delay = 100,
   directions = {
     { x = 64, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 2 },
     { x = 64, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 2 },
@@ -34,17 +41,3 @@ animation{
     { x = 64, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 2 },
   },
 }
-
-animation{
-  name = "hurt",
-  src_image = "enemies/hardhat_beetle.png",
-  frame_delay = 50,
-  frame_to_loop_on = 0,
-  directions = {
-    { x = 32, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 3 },
-    { x = 32, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 3 },
-    { x = 32, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 3 },
-    { x = 32, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 3 },
-  },
-}
-

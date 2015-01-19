@@ -105,10 +105,6 @@ local function reset_arrow_puzzle()
   room15_arrow_2:set_activated(false)
   room15_arrow_3:set_activated(false)
   room15_arrow_4:set_activated(false)
-  room15_arrow_left:set_enabled(true)
-  room15_arrow_right:set_enabled(true)
-  room15_arrow_up:set_enabled(true)
-  room15_arrow_down:set_enabled(true)
   arrow_puzzle_correct = false
   arrow_puzzle_nb_correct = 0
 end
@@ -116,7 +112,6 @@ end
 function room15_arrow_1:on_activated()
   if arrow_puzzle_nb_correct == 0 then
     room15_arrow_1:set_locked(true)
-    room15_arrow_left:set_enabled(false)
     arrow_puzzle_nb_correct = 1
   else
     reset_arrow_puzzle()
@@ -125,7 +120,6 @@ end
 function room15_arrow_2:on_activated()
   if arrow_puzzle_nb_correct == 1 then
     room15_arrow_2:set_locked(true)
-    room15_arrow_right:set_enabled(false)
     arrow_puzzle_nb_correct = 2
   else
     reset_arrow_puzzle()
@@ -134,7 +128,6 @@ end
 function room15_arrow_3:on_activated()
   if arrow_puzzle_nb_correct == 2 then
     room15_arrow_3:set_locked(true)
-    room15_arrow_up:set_enabled(false)
     arrow_puzzle_nb_correct = 3
   else
     reset_arrow_puzzle()
@@ -143,7 +136,6 @@ end
 function room15_arrow_4:on_activated()
   if arrow_puzzle_nb_correct == 3 then
     room15_arrow_4:set_locked(true)
-    room15_arrow_down:set_enabled(false)
     -- puzzle solved!
     sol.audio.play_sound("secret")
     arrow_puzzle_correct = true

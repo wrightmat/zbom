@@ -647,10 +647,11 @@ dialog{
   skip = "current",
   icon = 4,
   text = [[
-You found a Boomerang!$0
+You got a Boomerang!$0
 Use it to immobilize
 enemies and reach
-objects at a distance.
+objects at far
+distances.
   ]]
 }
 
@@ -2717,6 +2718,45 @@ to see!
   ]]
 }
 
+dialog{
+  id = "tristan.1.faron",
+  skip = "current",
+  text = [[
+The Faron woods can be
+a scary place, but with
+your sword, shield and
+lantern you should be
+more than prepared. I
+believe in you!
+  ]]
+}
+
+dialog{
+  id = "tristan.2.desert",
+  skip = "current",
+  text = [[
+What're you doing back
+here? Aren't you supposed
+to be out adventurin'?
+What about the desert?
+  ]]
+}
+
+dialog{
+  id = "tristan.3.castle_town",
+  skip = "current",
+  text = [[
+Gotten a little confused,
+have you? Hyrule Castle Town
+is the center of Hyrule.
+I'll bet that if you make
+it here, someone would be
+able to help you out. If
+all elso fails, ask our
+mayor!
+  ]]
+}
+
 -- Ordona (Light Spirit and guide to Link along his quest, she resides in his lantern)
 -----------------------
 dialog{
@@ -3529,6 +3569,80 @@ you for your efforts...
 }
 
 dialog{
+  id = "great_fairy.0.subrosia",
+  skip = "current",
+  text = [[
+Oh, great hero!
+You've come to my
+rescue! $0
+Wait... you don't
+know what I'm
+referring to?
+Surely you've seen the
+troubled state my lands
+are in!
+If you can find a large
+amount of treasure
+known as Subrosian Ore,
+the desolation should
+be able to be lifted.
+Please help me, hero!
+  ]]
+}
+
+dialog{
+  id = "great_fairy.5.susbrosia",
+  skip = "current",
+  text = [[
+You've collected all
+the Subrosian Ore I
+need, great work! I
+can now restore my
+tranquil land to
+its former state.
+Allow me to reward
+you for your efforts...
+  ]]
+}
+
+dialog{
+  id = "great_fairy.0.north",
+  skip = "current",
+  text = [[
+Oh, great hero!
+You've come to my
+rescue! $0
+Wait... you don't
+know what I'm
+referring to?
+Surely you've seen the
+confused state my
+lands are in!
+If you can find a large
+amount of treasure
+known as Magic Crystal,
+the confusion should
+be able to be lifted.
+Please help me, hero!
+  ]]
+}
+
+dialog{
+  id = "great_fairy.5.north",
+  skip = "current",
+  text = [[
+You've collected all
+the Magic Crystal I
+need, great work! I
+can now restore my
+calm land to its
+former state.
+Allow me to reward
+you for your efforts...
+  ]]
+}
+
+dialog{
   id = "great_fairy.1",
   skip = "current",
   text = [[
@@ -3861,7 +3975,17 @@ Since Mayor Ulo went
 back to Council, he
 said I could stay at
 his place!
+
 How lucky is that?
+Not sure where to
+go next? Maybe you
+should stop by
+Hyrule Castle Town
+and ask the mayor -
+it's straight north
+of here, through
+the woods. Can't
+miss it!
   ]]
 }
 
@@ -5902,6 +6026,16 @@ Peninsula
 
 DANGER! Babas
 sighted!
+  ]]
+}
+
+dialog{
+  id = "sign.D15_Blacksmith",
+  skip = "current",
+  text = [[
+^ then >
+
+Faron Blacksmith
   ]]
 }
 

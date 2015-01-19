@@ -18,7 +18,7 @@ local function follow_hero(npc)
 end
 
 function map:on_started(destination)
-  if game:get_value("i1602") < 1 then
+  if game:get_value("i1602") < 1 or game:get_value("i1602") >= 4 then
     npc_gaira:remove()
   end
 end

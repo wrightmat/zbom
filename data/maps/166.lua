@@ -1,9 +1,9 @@
 local map = ...
 local game = map:get_game()
 
----------------------------------------------------
+------------------------------------------
 -- Great Fairy Fountain of Kindness - Lake Hylia --
----------------------------------------------------
+------------------------------------------
 
 if game:get_value("i1606")==nil then game:set_value("i1606", 0) end
 if game:get_value("i1832")==nil then game:set_value("i1832", 0) end

@@ -29,7 +29,7 @@ function map:on_started(destination)
       elseif hero:get_direction() == 3 then
 	-- Special case on this map to play kakariko music when coming out of houses
 	-- so house music doesn't continue. Map doesn't specify music.
-	sol.audio.play_music("kakariko")
+	sol.audio.play_music("town_kakariko")
       end
     end
   end
@@ -42,14 +42,14 @@ function map:on_started(destination)
 end
 
 function sensor_music:on_activated()
-  sol.audio.play_music("kakariko")
+  sol.audio.play_music("town_kakariko")
 end
 function sensor_music_2:on_activated()
-  sol.audio.play_music("kakariko")
+  sol.audio.play_music("town_kakariko")
 end
 
 function sensor_enter_kakariko:on_activated()
-  sol.audio.play_music("kakariko")
+  sol.audio.play_music("town_kakariko")
   sensor_enter_field:set_enabled(false)
   sol.timer.start(sensor_enter_kakariko,2000,function()
     sensor_enter_field:set_enabled(true)

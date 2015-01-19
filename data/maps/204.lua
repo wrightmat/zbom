@@ -99,18 +99,18 @@ if miniboss_lanmola ~= nil then
     chest_room12_item:set_enabled(true)
     sol.audio.play_sound("chest_appears")
   end)
-  sol.audio.play_music("airship")
+  sol.audio.play_music("temple_pyramid")
  end
 end
 
-function boss_manhandla:on_dead()
+if boss_manhandla ~= nil then
+ function boss_manhandla:on_dead()
   map:open_doors("door_boss")
   map:open_doors("door_boss_shutter")
   sol.audio.play_sound("boss_killed")
-  boss_heart:get_sprite():fade_in(30, function()
-    boss_heart:set_enabled(true)
-    sol.audio.play_music("airship")
-  end)
+  boss_heart:set_enabled(true)
+  sol.audio.play_music("temple_pyramid")
+ end
 end
 
 function switch_room9_arrow_1:on_activated()

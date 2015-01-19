@@ -12,7 +12,7 @@ local positions = {
 local nb_sons_created = 0
 local initial_life = 8
 local finished = false
-local blue_fireball_proba = 33  -- Percent.
+local fireball_proba = 33  -- Percent.
 local vulnerable = false
 local timers = {}
 
@@ -75,10 +75,10 @@ end
 
 function enemy:fire_step_2()
   local sprite = self:get_sprite()
-  if math.random(100) <= blue_fireball_proba then
-    sprite:set_animation("preparing_blue_fireball")
+  if math.random(100) <= fireball_proba then
+    sprite:set_animation("arms_out")
   else
-    sprite:set_animation("preparing_red_fireball")
+
   end
   sol.audio.play_sound("boss_charge")
   timers[#timers + 1] = sol.timer.start(self, 1500, function() self:fire_step_3() end)
@@ -87,12 +87,9 @@ end
 function enemy:fire_step_3()
   local sprite = self:get_sprite()
   local sound, breed
-  if sprite:get_animation() == "preparing_blue_fireball" then
-    sound = "cane"
-    breed = "blue_fireball_triple"
-  else
+  if sprite:get_animation() == "arms_out" then
     sound = "boss_fireball"
-    breed = "red_fireball_triple"
+    breed = "fireball_triple"
   end
   sprite:set_animation("stopped")
   sol.audio.play_sound(sound)
@@ -102,7 +99,7 @@ function enemy:fire_step_3()
 
   function throw_fire()
     nb_sons_created = nb_sons_created + 1
-    self:create_enemy("agahnim_fireball_" .. nb_sons_created, breed, 0, -21)
+    self:create_enemy("carock_fireball_" .. nb_sons_created, breed, 0, -21)
   end
 
   throw_fire()
@@ -113,7 +110,7 @@ function enemy:fire_step_3()
 end
 
 function enemy:receive_bounced_fireball(fireball)
-  if fireball:get_name():find("^agahnim_fireball")
+  if fireball:get_name():find("^carock_fireball")
       and vulnerable then
     -- Receive a fireball shot back by the hero: get hurt.
     for _, t in ipairs(timers) do t:stop() end
@@ -125,19 +122,19 @@ end
 function enemy:on_hurt(attack, life_lost)
   local life = self:get_life()
   if life <= 0 then
-    self:get_map():remove_entities("agahnim_fireball")
+    self:get_map():remove_entities("carock_fireball")
     self:set_life(1)
     finished = true
   elseif life <= initial_life / 3 then
-    blue_fireball_proba = 50
+    fireball_proba = 50
   end
 end
 
 function enemy:end_dialog()
-  self:get_map():remove_entities("agahnim_fire_ball_" .. i)
+  self:get_map():remove_entities("carock_fire_ball_" .. i)
   local sprite = self:get_sprite()
   sprite:set_ignore_suspend(true)
-  self:get_map():start_dialog("dungeon_5.agahnim_end")
+  --self:get_map():start_dialog("dungeon_5.agahnim_end")
 end
 
 function enemy:fade_out()

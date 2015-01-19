@@ -196,7 +196,7 @@ end
 
 function npc_jarred:on_interaction()
   if game:get_value("i1909") >= 1 then
-    if game:get_value("i1028") > 1 then game:start_dialog("jarred.1.ordon") end
+    if game:get_value("i1028") > 1 then game:start_dialog("jarred.1.ordon", function() game:add_money(10) end) end
   end
 end
 

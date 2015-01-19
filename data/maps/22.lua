@@ -30,6 +30,10 @@ function map:on_started(destination)
     gerudo_ship:remove()
     map:set_entities_enabled("ship_block", false)
   end
+
+  if destination == from_house_chef then
+    sol.audio.play_music("beach")
+  end
 end
 
 function npc_tokay_chef:on_interaction()
@@ -39,9 +43,7 @@ end
 if boss_gohma ~= nil then
  function boss_gohma:on_dead()
   sol.audio.play_sound("boss_killed")
-  boss_heart:get_sprite():fade_in(30, function()
-    boss_heart:set_enabled(true)
-   end)
+  boss_heart:set_enabled(true)
   sol.timer.start(200, function()
     sol.audio.play_music("faron_woods")
     to_book_chamber:set_enabled(true)

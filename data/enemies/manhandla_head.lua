@@ -9,6 +9,7 @@ function enemy:on_created()
   self:set_hurt_style("monster")
   self:set_size(24, 24)
   self:set_origin(12, 12)
+  self:set_attack_consequence("arrow", "protected")
 end
 
 function enemy:on_update()

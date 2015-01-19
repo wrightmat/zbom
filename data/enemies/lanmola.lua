@@ -42,7 +42,7 @@ function enemy:create_tail()
     breed = "lanmola_tail"
   }
   tail.head = self
-  self:go_hero(48)
+  self:go_hero(40)
 end
 
 function enemy:create_body()
@@ -84,11 +84,11 @@ function enemy:on_restarted()
     elseif body_segment > 6 and enemy:get_map():get_entity("lanmola_tail") == nil then
       self:create_tail()
     else
-      self:go_hero(40)
+      self:go_hero(44)
     end
   end
 end
 
 function enemy:on_obstacle_reached()
-  self:go_random(48)
+  self:go_random(40)
 end

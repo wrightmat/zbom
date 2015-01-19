@@ -27,7 +27,7 @@ local function random_walk(npc)
 end
 
 function map:on_started(destination)
-  if game:get_value("i1602") <= 2 then
+  if game:get_value("i1602") <= 2 or game:get_value("i1602") > 4 then
     npc_gaira:remove()
   elseif game:get_value("i1602") == 3 then
     npc_deacon:remove()
@@ -54,7 +54,7 @@ function map:on_started(destination)
         end)
       end)
     end)
-  elseif game:get_value("i1602") == 6 then
+  elseif game:get_value("i1602") >= 6 then
     npc_deacon:remove()
     npc_gaira:remove()
   end

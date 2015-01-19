@@ -8,7 +8,7 @@ function enemy:on_created()
   self:create_sprite("enemies/lanmola_tail")
   self:set_size(16, 16)
   self:set_origin(8, 8)
-  self:go(40)
+  self:go(36)
 end
 
 function enemy:go(speed)
@@ -20,11 +20,11 @@ function enemy:go(speed)
 end
 
 function enemy:on_restarted()
-  self:go(40)
+  self:go(36)
 end
 
 function enemy:on_obstacle_reached()
-  self:go(40)
+  self:go(36)
 end
 
 function enemy:on_dying()
