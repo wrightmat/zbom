@@ -1,6 +1,6 @@
 local enemy = ...
 
--- Fire Keese (bat): Basic flying enemy, but also on fire!
+-- Ice Keese (bat): Basic flying enemy, but also frozen!
 
 local state = "stopped"
 local timer
@@ -8,7 +8,7 @@ local timer
 function enemy:on_created()
   self:set_life(1)
   self:set_damage(2)
-  self:create_sprite("enemies/keese_fire")
+  self:create_sprite("enemies/keese_ice")
   self:set_hurt_style("monster")
   self:set_pushed_back_when_hurt(true)
   self:set_push_hero_on_sword(false)

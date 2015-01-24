@@ -47,7 +47,7 @@ function savegame_menu:on_started()
 
   -- Run the menu.
   self:read_savegames()
-  sol.audio.play_music("game_over")
+  sol.audio.play_music("select_screen")
   self:init_phase_select_file()
 
   -- Show an opening transition.
