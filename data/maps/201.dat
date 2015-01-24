@@ -5200,24 +5200,6 @@ door{
   sprite = "entities/door_shutter",
 }
 
-enemy{
-  layer = 0,
-  x = 896,
-  y = 397,
-  name = "keese_1",
-  direction = 3,
-  breed = "keese",
-}
-
-enemy{
-  layer = 0,
-  x = 1008,
-  y = 397,
-  name = "keese_2",
-  direction = 3,
-  breed = "keese",
-}
-
 tile{
   layer = 1,
   x = 128,
@@ -5225,6 +5207,24 @@ tile{
   width = 48,
   height = 8,
   pattern = "354",
+}
+
+enemy{
+  layer = 1,
+  x = 888,
+  y = 429,
+  name = "keese_1",
+  direction = 3,
+  breed = "keese",
+}
+
+enemy{
+  layer = 1,
+  x = 1016,
+  y = 429,
+  name = "keese_2",
+  direction = 3,
+  breed = "keese",
 }
 
 tile{

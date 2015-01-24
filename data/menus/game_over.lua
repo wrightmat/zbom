@@ -94,7 +94,7 @@ function game_over_menu:on_started()
         else
           -- No fairy: game over.
           state = "menu"
-          sol.audio.play_music("game_over")
+          sol.audio.play_music("game_over", false)
           fairy_sprite:set_xy(76, 112)  -- Cursor.
           cursor_position = 0
         end
