@@ -5,7 +5,18 @@ local game = map:get_game()
 -- Outside World H7 (Goron City) --
 -----------------------------------
 
+local function random_walk(npc)
+  local m = sol.movement.create("random_path")
+  m:set_speed(32)
+  m:start(npc)
+  npc:get_sprite():set_animation("walking")
+end
+
 function map:on_started(destination)
+
+  random_walk(npc_goron_5)
+  random_walk(npc_goron_6)
+  random_walk(npc_goron_7)
 
   -- Opening doors
   local entrance_names = {

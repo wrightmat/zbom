@@ -61,6 +61,9 @@ function map:on_started(destination)
 end
 
 function npc_deacon:on_interaction()
+  if game:get_value("b1117") then
+    game:start_dialog("deacon.6.house")
+  end
   if game:get_value("i1602") == 1 then
     game:start_dialog("deacon.2.faron", function()
       game:set_value("i1602", 2)
