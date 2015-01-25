@@ -11649,7 +11649,7 @@ enemy{
   layer = 0,
   x = 1480,
   y = 637,
-  name = "tektite_alchemy_1",
+  name = "tektite_compass_1",
   direction = 3,
   breed = "tektite_red",
 }
@@ -11658,7 +11658,7 @@ enemy{
   layer = 0,
   x = 1576,
   y = 557,
-  name = "tektite_alchemy_2",
+  name = "tektite_compass_2",
   direction = 3,
   breed = "tektite_red",
 }
@@ -12438,7 +12438,7 @@ destructible{
   layer = 0,
   x = 600,
   y = 1221,
-  treasure_name = "heart",
+  treasure_name = "bomb",
   sprite = "entities/bush",
   destruction_sound = "stone",
   weight = 1,
@@ -12460,7 +12460,8 @@ destructible{
   layer = 0,
   x = 920,
   y = 1605,
-  treasure_name = "heart",
+  treasure_name = "bomb",
+  treasure_variant = 2,
   sprite = "entities/bush",
   destruction_sound = "stone",
   weight = 1,
@@ -12666,7 +12667,7 @@ enemy{
   layer = 0,
   x = 1528,
   y = 155,
-  name = "boss_vire",
+  name = "boss_vire_sorceror",
   direction = 3,
   breed = "vire_sorceror",
   savegame_variable = "b1110",
@@ -12675,9 +12676,9 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 1412,
-  y = 149,
-  name = "vire_1",
+  x = 1484,
+  y = 213,
+  name = "boss_vire",
   direction = 3,
   breed = "vire",
   treasure_name = "amber",
@@ -12824,7 +12825,7 @@ enemy{
   layer = 0,
   x = 880,
   y = 957,
-  name = "dodongo_compass_2",
+  name = "dodongo_alchemy_2",
   direction = 3,
   breed = "dodongo",
   treasure_name = "amber",
@@ -12834,7 +12835,7 @@ enemy{
   layer = 0,
   x = 880,
   y = 1061,
-  name = "dodongo_compass_1",
+  name = "dodongo_alchemy_1",
   direction = 3,
   breed = "dodongo",
   treasure_name = "amber",
@@ -12946,8 +12947,8 @@ dynamic_tile{
 
 chest{
   layer = 0,
-  x = 1520,
-  y = 573,
+  x = 1456,
+  y = 589,
   name = "chest_alchemy",
   treasure_name = "alchemy",
   sprite = "entities/chest",
@@ -12996,14 +12997,158 @@ enemy{
   treasure_name = "amber",
 }
 
-npc{
-  layer = 1,
-  x = 248,
-  y = 1685,
-  name = "npc_goron_ghost",
+enemy{
+  layer = 0,
+  x = 568,
+  y = 532,
+  name = "giga_3",
   direction = 3,
-  subtype = "1",
-  sprite = "npc/goron_ghost",
+  breed = "giga",
+  treasure_name = "amber",
+}
+
+wall{
+  layer = 0,
+  x = 1352,
+  y = 256,
+  width = 176,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1528,
+  y = 240,
+  width = 48,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1576,
+  y = 224,
+  width = 48,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1624,
+  y = 176,
+  width = 8,
+  height = 48,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1576,
+  y = 232,
+  width = 8,
+  height = 16,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1528,
+  y = 248,
+  width = 8,
+  height = 16,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1344,
+  y = 240,
+  width = 8,
+  height = 24,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1312,
+  y = 224,
+  width = 8,
+  height = 16,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1312,
+  y = 240,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1624,
+  y = 168,
+  width = 16,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1632,
+  y = 112,
+  width = 8,
+  height = 56,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1312,
+  y = 80,
+  width = 256,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1312,
+  y = 56,
+  width = 256,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1312,
+  y = 64,
+  width = 8,
+  height = 16,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1560,
+  y = 64,
+  width = 8,
+  height = 16,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1304,
+  y = 192,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
 }
 
 enemy{
@@ -13013,7 +13158,6 @@ enemy{
   name = "keese_2",
   direction = 3,
   breed = "keese_fire",
-  treasure_name = "random_mountain",
 }
 
 enemy{
@@ -13032,7 +13176,6 @@ enemy{
   name = "keese_1",
   direction = 3,
   breed = "keese_fire",
-  treasure_name = "random_mountain",
 }
 
 enemy{
@@ -13060,7 +13203,6 @@ enemy{
   name = "keese_11",
   direction = 3,
   breed = "keese_fire",
-  treasure_name = "random_mountain",
 }
 
 enemy{
@@ -13070,7 +13212,6 @@ enemy{
   name = "keese_10",
   direction = 3,
   breed = "keese_fire",
-  treasure_name = "random_mountain",
 }
 
 enemy{
@@ -13080,7 +13221,6 @@ enemy{
   name = "keese_9",
   direction = 3,
   breed = "keese_fire",
-  treasure_name = "random_mountain",
 }
 
 enemy{
@@ -13100,7 +13240,6 @@ enemy{
   name = "keese_7",
   direction = 3,
   breed = "keese_fire",
-  treasure_name = "random_mountain",
 }
 
 enemy{
@@ -14406,5 +14545,15 @@ tile{
   width = 24,
   height = 32,
   pattern = "593",
+}
+
+npc{
+  layer = 2,
+  x = 248,
+  y = 1685,
+  name = "npc_goron_ghost",
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/goron_ghost",
 }
 

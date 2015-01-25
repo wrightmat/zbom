@@ -12,7 +12,7 @@ if game:has_item("lamp") then
 else
   game:start_dialog("_cannot_see_need_lamp")
   lantern_overlay = sol.surface.create(640,480)
-  lantern_overlay:set_opacity(0.96 * 255)
+  lantern_overlay:set_opacity(0.98 * 255)
   lantern_overlay:fill_color{0, 0, 0}
 end
 if game:get_value("b1117") and lantern_overlay then
@@ -25,7 +25,7 @@ function map:on_started(destination)
   elseif game:get_value("i1029") == 5 then
     sol.audio.play_sound("ghost")
     local m = sol.movement.create("target")
-    m:set_speed(24)
+    m:set_speed(32)
     m:start(npc_goron_ghost)
   elseif game:get_value("i1029") >= 6 then
     dampeh_1:remove()
@@ -47,13 +47,14 @@ function map:on_started(destination)
   -- Dodongos appear after the boss is defeated
   if not game:get_value("b1110") then
     boss_vire:set_enabled(false)
+    boss_vire_sorceror:set_enabled(false)
     map:set_entities_enabled("dodongo", false)
   else
     if npc_dampeh ~= nil then npc_dampeh:remove() end
   end
   -- Lantern slowly drains magic here so you're forced to find ways to refill magic
   magic_deplete = sol.timer.start(map, 5000, function()
-    game:remove_magic(1) end
+    game:remove_magic(1)
     return true
   end)
 end
@@ -106,15 +107,16 @@ if miniboss_arrghus ~= nil then
 end
 
 function sensor_boss:on_activated()
-  if boss_vire ~= nil then
+  if boss_vire_sorceror ~= nil then
     map:close_doors("door_boss")
     boss_vire:set_enabled(true)
+    boss_vire_sorceror:set_enabled(true)
     sol.audio.play_music("boss")
   end
 end
 
-if boss_vire ~= nil then
- function boss_vire:on_dead()
+if boss_vire_sorceror ~= nil then
+ function boss_vire_sorceror:on_dead()
   map:open_doors("door_boss")
   sol.audio.play_sound("boss_killed")
   boss_heart:set_enabled(true)
@@ -139,8 +141,10 @@ function door_key1_1:on_opened()
 end
 
 function map:on_update()
-  if lantern_overlay and game:get_magic() <= 0 then
-    lantern_overlay = nil
+  if game:get_magic() <= 0 then
+    if lantern_overlay then lantern_overlay = nil end
+  else
+    if game:has_item("lamp") and lantern_overlay == nil then lantern_overlay = sol.surface.create("entities/dark.png") end
   end
 end
 
@@ -158,8 +162,8 @@ for enemy in map:get_entities("tektite") do
       chest_map:set_enabled(true)
       sol.audio.play_sound("chest_appears")
     end
-    if not map:has_entities("tektite_alchemy") then
-      chest_alchemy:set_enabled(true)
+    if not map:has_entities("tektite_compass") and not game:get_value("b1105") then
+      chest_compass:set_enabled(true)
       sol.audio.play_sound("chest_appears")
     end
   end
@@ -177,8 +181,8 @@ end
 
 for enemy in map:get_entities("dodongo") do
   enemy.on_dead = function()
-    if not map:has_entities("dodongo_compass") and not game:get_value("b1105") then
-      chest_compass:set_enabled(true)
+    if not map:has_entities("dodongo_alchemy")  then
+      chest_alchemy:set_enabled(true)
       sol.audio.play_sound("chest_appears")
     end
   end

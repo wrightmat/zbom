@@ -17951,17 +17951,6 @@ wall{
   stops_blocks = true,
 }
 
-switch{
-  layer = 0,
-  x = 1584,
-  y = 1152,
-  subtype = "solid",
-  sprite = "entities/switch_lever",
-  sound = "lift",
-  needs_block = false,
-  inactivate_when_leaving = false,
-}
-
 tile{
   layer = 2,
   x = 1760,

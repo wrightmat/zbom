@@ -4458,6 +4458,61 @@ can!
 }
 
 dialog{
+  id = "impa.3.house",
+  skip = "current",
+  text = [[
+A Goron sickness, you
+say? That's the first
+I've heard of that
+happening! Of course
+you were able to help
+them though.
+There are many races
+in the land of Hyrule,
+many of which may need
+your help. In fact,
+the Zora people have
+been acting very strange
+lately, closing them-
+selves off from the
+outside world. Perhaps
+the answer lies in their
+temple at the bottom of
+Lake Hylia. $0
+  ]]
+}
+
+dialog{
+  id = "impa.4.house",
+  skip = "current",
+  text = [[
+How do you get to the
+bottom of a lake, you
+ask? If you don't have
+the right equipment to
+swim, then why don't you
+just get rid of the water?
+  ]]
+}
+
+dialog{
+  id = "impa.5.house",
+  skip = "current",
+  text = [[
+You want me to give you
+all of the answers? All
+I know is there there used
+to be a pump system in
+the sewers which run under
+Hyrule. But there are
+many accesses to that
+sewer, and I can't be sure
+which will lead you to
+the pump.
+  ]]
+}
+
+dialog{
   id = "isan.0.library",
   skip = "current",
   text = [[
@@ -5617,7 +5672,7 @@ dialog{
   id = "goron5.0.goron_city",
   skip = "current",
   text = [[
-We Gorons we once a
+We Gorons were once a
 proud and honorable
 people. Now everyone's
 so down due to this
@@ -5651,6 +5706,18 @@ What's that? Cynical?
 I don't know that word,
 but I don't think I
 like you.
+  ]]
+}
+
+dialog{
+  id = "goron8.0.goron_city",
+  skip = "current",
+  text = [[
+The Mausoleum is up
+ahead. I wouldn't go
+in there if I were you.
+If you get sick, don't
+say I didn't warn you!
   ]]
 }
 
@@ -5738,7 +5805,7 @@ What's that?
 You say your name is
 $v? I think I'll
 stick with just calling
-you brother, especially
+you Brother, especially
 after you helped me!
   ]]
 }
@@ -5828,7 +5895,7 @@ Yes, I know there are
 many needing my help.
 With so many sick, I
 haven't been able to
-make it everyone.
+make it to everyone.
 You say there's a
 brother in dire need
 on the other end of
@@ -5907,11 +5974,11 @@ The ghost that follows
 you- that's Dargor's
 son!$0
 Then that means...$0
-My poor brother Dargor.
+My poor Brother Dargor.
 I must go and give my
 condolences.
 But you must not
-explore this crypt-
+explore this crypt -
 it's dangerous to go,
 even when you're not
 alone!
@@ -6150,6 +6217,16 @@ dialog{
 North- Eastern Ruins
 South- Sewer access
 West- Hyrule Field
+  ]]
+}
+
+dialog{
+  id = "sign.H8_directions",
+  skip = "current",
+  text = [[
+North- Goron City
+NorthEast- Mausoleum
+West- Hidden Village
   ]]
 }
 

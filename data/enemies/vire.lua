@@ -63,7 +63,7 @@ function enemy:go_circle()
   m:set_center(hero, 0, -21)
   m:set_radius(48)
   m:set_initial_angle(math.pi / 2)
-  m:set_angle_speed(88)
+  m:set_angle_speed(80)
   m:set_ignore_obstacles(true)
   m:start(self)
   going_hero = true

@@ -11,6 +11,8 @@ if game:get_value("i1029")==nil then game:set_value("i1029", 0) end
 if game:get_value("i1032")==nil then game:set_value("i1032", 0) end
 if game:get_value("i1068")==nil then game:set_value("i1068", 0) end
 if game:get_value("i1602")==nil then game:set_value("i1602", 0) end
+if game:get_value("i1913")==nil then game:set_value("i1913", 0) end
+if game:get_value("i1921")==nil then game:set_value("i1921", 0) end
 if game:get_value("i2021")==nil then game:set_value("i2021", 0) end
 
 function map:on_started(destination)
@@ -211,8 +213,12 @@ function npc_gaira:on_interaction()
 end
 
 function npc_impa:on_interaction()
+  if game:get_value("b1117") then
+    game:start_dialog("impa."..game:get_value("i1921")..".house")
+    game:set_value("i1921", game:get_value("i1921")+1)
   if game:get_value("i1032") >= 2 then
     game:start_dialog("impa.2.house")
+    game:set_value("i1921", game:get_value("i1921")+1)
   else
     game:start_dialog("impa.0.house", function()
       if game:has_item("ocarina") then
@@ -220,6 +226,7 @@ function npc_impa:on_interaction()
       else
         game:start_dialog("impa.0.house_2")
       end
+      game:set_value("i1921", game:get_value("i1921")+1)
     end)
   end
 end
