@@ -17,3 +17,30 @@ for enemy in map:get_entities("helmasaur_red") do
     end
   end
 end
+
+function sensor_miniboss:on_activated()
+  if miniboss_knight ~= nil then
+    door_key3_2:set_sprite("door_shutter")
+    map:close_doors("door_boss")
+    miniboss_knight:set_enabled(true)
+    sol.audio.play_music("miniboss")
+  end
+end
+
+function sensor_boss:on_activated()
+  if boss_carock ~= nil then
+    map:close_doors("door_boss")
+    boss_carock:set_enabled(true)
+    sol.audio.play_music("boss")
+  end
+end
+
+if boss_carock ~= nil then
+ function boss_carock:on_dead()
+  map:open_doors("door_boss")
+  map:open_doors("door_boss")
+  sol.audio.play_sound("boss_killed")
+  boss_heart:set_enabled(true)
+  sol.audio.play_music("sewers")
+ end
+end

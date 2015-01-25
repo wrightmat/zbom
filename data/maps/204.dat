@@ -10953,6 +10953,78 @@ tile{
   pattern = "524",
 }
 
+tile{
+  layer = 0,
+  x = 752,
+  y = 480,
+  width = 16,
+  height = 208,
+  pattern = "524",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 512,
+  width = 16,
+  height = 144,
+  pattern = "524",
+}
+
+tile{
+  layer = 0,
+  x = 1648,
+  y = 192,
+  width = 32,
+  height = 32,
+  pattern = "468",
+}
+
+tile{
+  layer = 0,
+  x = 1696,
+  y = 240,
+  width = 32,
+  height = 32,
+  pattern = "468",
+}
+
+tile{
+  layer = 0,
+  x = 1584,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "248",
+}
+
+tile{
+  layer = 0,
+  x = 1600,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "248",
+}
+
+tile{
+  layer = 0,
+  x = 1664,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "248",
+}
+
+tile{
+  layer = 0,
+  x = 1680,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "248",
+}
+
 enemy{
   layer = 0,
   x = 1724,
@@ -11039,36 +11111,6 @@ enemy{
   name = "gibdos_room4_5",
   direction = 3,
   breed = "gibdos",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 0,
-  x = 1672,
-  y = 941,
-  name = "room5_keese_1",
-  direction = 3,
-  breed = "keese",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 0,
-  x = 1944,
-  y = 933,
-  name = "room5_keese_2",
-  direction = 3,
-  breed = "keese",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 0,
-  x = 1688,
-  y = 1077,
-  name = "room5_keese_3",
-  direction = 3,
-  breed = "keese",
   treasure_name = "random",
 }
 
@@ -11834,46 +11876,6 @@ enemy{
   name = "gibdos_room9_2",
   direction = 3,
   breed = "gibdos",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 0,
-  x = 88,
-  y = 85,
-  name = "keese_room9_1",
-  direction = 3,
-  breed = "keese",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 0,
-  x = 88,
-  y = 245,
-  name = "keese_room9_2",
-  direction = 3,
-  breed = "keese",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 0,
-  x = 344,
-  y = 93,
-  name = "keese_room9_3",
-  direction = 3,
-  breed = "keese",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 0,
-  x = 344,
-  y = 237,
-  name = "keese_room9_4",
-  direction = 3,
-  breed = "keese",
   treasure_name = "random",
 }
 
@@ -12730,46 +12732,6 @@ enemy{
   treasure_name = "random",
 }
 
-enemy{
-  layer = 0,
-  x = 1320,
-  y = 501,
-  name = "keese_room17_1",
-  direction = 3,
-  breed = "keese",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 0,
-  x = 1520,
-  y = 501,
-  name = "keese_room17_2",
-  direction = 3,
-  breed = "keese",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 0,
-  x = 1496,
-  y = 405,
-  name = "keese_room17_3",
-  direction = 3,
-  breed = "keese",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 0,
-  x = 1312,
-  y = 413,
-  name = "keese_room17_4",
-  direction = 3,
-  breed = "keese",
-  treasure_name = "random",
-}
-
 switch{
   layer = 0,
   x = 544,
@@ -12975,36 +12937,6 @@ door{
   opening_condition = "dungeon_3_small_keys",
   opening_condition_consumed = true,
   cannot_open_dialog = "_small_key_required",
-}
-
-enemy{
-  layer = 0,
-  x = 784,
-  y = 437,
-  name = "keese_room18_1",
-  direction = 3,
-  breed = "keese",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 0,
-  x = 832,
-  y = 453,
-  name = "keese_room18_2",
-  direction = 3,
-  breed = "keese",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 0,
-  x = 784,
-  y = 517,
-  name = "keese_room18_3",
-  direction = 3,
-  breed = "keese",
-  treasure_name = "random",
 }
 
 door{
@@ -14562,6 +14494,339 @@ destructible{
   sprite = "entities/stone_small_white",
   destruction_sound = "stone",
   weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 1688,
+  y = 317,
+  treasure_name = "random",
+  sprite = "entities/stone_small_white",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 1672,
+  y = 333,
+  treasure_name = "random",
+  sprite = "entities/stone_small_white",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 1608,
+  y = 237,
+  treasure_name = "random",
+  sprite = "entities/stone_small_white",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 1592,
+  y = 253,
+  treasure_name = "random",
+  sprite = "entities/stone_small_white",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+enemy{
+  layer = 1,
+  x = 784,
+  y = 517,
+  name = "keese_room18_3",
+  direction = 3,
+  breed = "keese",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 784,
+  y = 437,
+  name = "keese_room18_1",
+  direction = 3,
+  breed = "keese",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 832,
+  y = 453,
+  name = "keese_room18_2",
+  direction = 3,
+  breed = "keese",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 1312,
+  y = 413,
+  name = "keese_room17_4",
+  direction = 3,
+  breed = "keese",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 1320,
+  y = 501,
+  name = "keese_room17_1",
+  direction = 3,
+  breed = "keese",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 1520,
+  y = 501,
+  name = "keese_room17_2",
+  direction = 3,
+  breed = "keese",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 1496,
+  y = 405,
+  name = "keese_room17_3",
+  direction = 3,
+  breed = "keese",
+  treasure_name = "random",
+}
+
+wall{
+  layer = 1,
+  x = 1232,
+  y = 320,
+  width = 8,
+  height = 256,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1592,
+  y = 320,
+  width = 8,
+  height = 256,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1240,
+  y = 568,
+  width = 352,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1240,
+  y = 320,
+  width = 352,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 432,
+  y = 688,
+  width = 368,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 432,
+  y = 320,
+  width = 760,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 792,
+  y = 568,
+  width = 400,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1192,
+  y = 320,
+  width = 8,
+  height = 256,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 792,
+  y = 576,
+  width = 8,
+  height = 112,
+  stops_enemies = true,
+}
+
+enemy{
+  layer = 1,
+  x = 88,
+  y = 85,
+  name = "keese_room9_1",
+  direction = 3,
+  breed = "keese",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 88,
+  y = 245,
+  name = "keese_room9_2",
+  direction = 3,
+  breed = "keese",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 344,
+  y = 93,
+  name = "keese_room9_3",
+  direction = 3,
+  breed = "keese",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 344,
+  y = 237,
+  name = "keese_room9_4",
+  direction = 3,
+  breed = "keese",
+  treasure_name = "random",
+}
+
+wall{
+  layer = 1,
+  x = 32,
+  y = 32,
+  width = 8,
+  height = 256,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 392,
+  y = 32,
+  width = 8,
+  height = 256,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 40,
+  y = 32,
+  width = 352,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 40,
+  y = 280,
+  width = 352,
+  height = 8,
+  stops_enemies = true,
+}
+
+enemy{
+  layer = 1,
+  x = 1672,
+  y = 941,
+  name = "room5_keese_1",
+  direction = 3,
+  breed = "keese",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 1688,
+  y = 1077,
+  name = "room5_keese_3",
+  direction = 3,
+  breed = "keese",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 1944,
+  y = 933,
+  name = "room5_keese_2",
+  direction = 3,
+  breed = "keese",
+  treasure_name = "random",
+}
+
+wall{
+  layer = 1,
+  x = 1632,
+  y = 896,
+  width = 8,
+  height = 256,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1992,
+  y = 896,
+  width = 8,
+  height = 256,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1640,
+  y = 896,
+  width = 352,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1640,
+  y = 1144,
+  width = 352,
+  height = 8,
+  stops_enemies = true,
 }
 
 tile{

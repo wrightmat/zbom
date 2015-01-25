@@ -69,6 +69,17 @@ function switch_drain_water:on_activated()
   game:start_dialog("_sewer_water")
 end
 
+function sensor_boss:on_activated()
+  if boss_big_poe ~= nil then
+    map:close_doors("door_boss")
+    boss_big_poe:set_enabled(true)
+    sol.audio.play_music("boss")
+  end
+end
+function door_open:on_activated()
+  map:open_doors("door_boss")
+end
+
 for enemy in map:get_entities("tentacle") do
   enemy.on_dead = function()
     if not map:has_entities("tentacle_orig") then

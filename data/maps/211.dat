@@ -4482,96 +4482,6 @@ enemy{
   breed = "bari_blue",
 }
 
-enemy{
-  layer = 0,
-  x = 608,
-  y = 597,
-  name = "keese_1",
-  direction = 3,
-  breed = "keese_ice",
-}
-
-enemy{
-  layer = 0,
-  x = 672,
-  y = 517,
-  name = "keese_2",
-  direction = 3,
-  breed = "keese_ice",
-}
-
-enemy{
-  layer = 0,
-  x = 760,
-  y = 597,
-  name = "keese_3",
-  direction = 3,
-  breed = "keese_ice",
-}
-
-enemy{
-  layer = 0,
-  x = 680,
-  y = 677,
-  name = "keese_4",
-  direction = 3,
-  breed = "keese_ice",
-}
-
-enemy{
-  layer = 0,
-  x = 552,
-  y = 501,
-  name = "keese_5",
-  direction = 3,
-  breed = "keese_ice",
-}
-
-enemy{
-  layer = 0,
-  x = 552,
-  y = 677,
-  name = "keese_6",
-  direction = 3,
-  breed = "keese_ice",
-}
-
-enemy{
-  layer = 0,
-  x = 768,
-  y = 493,
-  name = "keese_7",
-  direction = 3,
-  breed = "keese_ice",
-}
-
-enemy{
-  layer = 0,
-  x = 784,
-  y = 685,
-  name = "keese_8",
-  direction = 3,
-  breed = "keese_ice",
-}
-
-enemy{
-  layer = 0,
-  x = 680,
-  y = 597,
-  name = "keese_9",
-  direction = 3,
-  breed = "keese_ice",
-}
-
-enemy{
-  layer = 0,
-  x = 616,
-  y = 477,
-  name = "keese_10",
-  direction = 3,
-  breed = "keese_ice",
-}
-
 wall{
   layer = 0,
   x = 656,
@@ -4669,6 +4579,96 @@ teletransporter{
   name = "to_floor_3",
   destination_map = "212",
   destination = "from_floor_2",
+}
+
+enemy{
+  layer = 1,
+  x = 552,
+  y = 501,
+  name = "keese_5",
+  direction = 3,
+  breed = "keese_ice",
+}
+
+enemy{
+  layer = 1,
+  x = 616,
+  y = 477,
+  name = "keese_10",
+  direction = 3,
+  breed = "keese_ice",
+}
+
+enemy{
+  layer = 1,
+  x = 608,
+  y = 597,
+  name = "keese_1",
+  direction = 3,
+  breed = "keese_ice",
+}
+
+enemy{
+  layer = 1,
+  x = 552,
+  y = 677,
+  name = "keese_6",
+  direction = 3,
+  breed = "keese_ice",
+}
+
+enemy{
+  layer = 1,
+  x = 680,
+  y = 677,
+  name = "keese_4",
+  direction = 3,
+  breed = "keese_ice",
+}
+
+enemy{
+  layer = 1,
+  x = 680,
+  y = 597,
+  name = "keese_9",
+  direction = 3,
+  breed = "keese_ice",
+}
+
+enemy{
+  layer = 1,
+  x = 672,
+  y = 517,
+  name = "keese_2",
+  direction = 3,
+  breed = "keese_ice",
+}
+
+enemy{
+  layer = 1,
+  x = 768,
+  y = 493,
+  name = "keese_7",
+  direction = 3,
+  breed = "keese_ice",
+}
+
+enemy{
+  layer = 1,
+  x = 760,
+  y = 597,
+  name = "keese_3",
+  direction = 3,
+  breed = "keese_ice",
+}
+
+enemy{
+  layer = 1,
+  x = 784,
+  y = 685,
+  name = "keese_8",
+  direction = 3,
+  breed = "keese_ice",
 }
 
 tile{

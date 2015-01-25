@@ -117,11 +117,7 @@ if boss_vire ~= nil then
  function boss_vire:on_dead()
   map:open_doors("door_boss")
   sol.audio.play_sound("boss_killed")
-  if boss_heart ~= nil then
-    boss_heart:get_sprite():fade_in(30, function()
-      boss_heart:set_enabled(true)
-    end)
-  end
+  boss_heart:set_enabled(true)
   chest_book:set_enabled(true)
   sol.audio.play_sound("chest_appears")
   sol.audio.play_music("temple_mausoleum")

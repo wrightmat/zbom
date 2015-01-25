@@ -4257,6 +4257,24 @@ tile{
   pattern = "105",
 }
 
+tile{
+  layer = 0,
+  x = 1008,
+  y = 880,
+  width = 16,
+  height = 16,
+  pattern = "476",
+}
+
+tile{
+  layer = 0,
+  x = 1120,
+  y = 880,
+  width = 16,
+  height = 16,
+  pattern = "476",
+}
+
 teletransporter{
   layer = 0,
   x = 1008,
@@ -4405,17 +4423,6 @@ chest{
   sprite = "entities/chest",
 }
 
-dynamic_tile{
-  layer = 0,
-  x = 2200,
-  y = 528,
-  width = 16,
-  height = 16,
-  name = "tile",
-  pattern = "527",
-  enabled_at_start = true,
-}
-
 enemy{
   layer = 0,
   x = 1992,
@@ -4534,10 +4541,11 @@ enemy{
 
 switch{
   layer = 0,
-  x = 2200,
+  x = 2192,
   y = 528,
   name = "switch_arrow_key_1",
   subtype = "arrow_target",
+  sprite = "entities/switch_eye_left",
   sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
@@ -4851,7 +4859,139 @@ enemy{
   name = "boss_big_poe",
   direction = 3,
   breed = "poe_big",
+  rank = 2,
+  savegame_variable = "b1047",
   treasure_name = "crystal",
+}
+
+enemy{
+  layer = 0,
+  x = 676,
+  y = 717,
+  name = "poe_1",
+  direction = 3,
+  breed = "poe",
+}
+
+enemy{
+  layer = 0,
+  x = 772,
+  y = 813,
+  name = "poe_2",
+  direction = 3,
+  breed = "poe",
+}
+
+enemy{
+  layer = 0,
+  x = 636,
+  y = 821,
+  name = "poe_3",
+  direction = 3,
+  breed = "poe",
+}
+
+enemy{
+  layer = 0,
+  x = 644,
+  y = 509,
+  name = "poe_4",
+  direction = 3,
+  breed = "poe",
+}
+
+enemy{
+  layer = 0,
+  x = 780,
+  y = 525,
+  name = "poe_5",
+  direction = 3,
+  breed = "poe",
+}
+
+pickable{
+  layer = 0,
+  x = 728,
+  y = 877,
+  name = "boss_heart",
+  treasure_name = "heart_container",
+  treasure_savegame_variable = "b1036",
+}
+
+sensor{
+  layer = 0,
+  x = 816,
+  y = 453,
+  width = 16,
+  height = 48,
+  name = "sensor_boss",
+}
+
+door{
+  layer = 0,
+  x = 824,
+  y = 456,
+  name = "door_boss",
+  direction = 0,
+  sprite = "entities/door_shutter",
+}
+
+sensor{
+  layer = 0,
+  x = 872,
+  y = 453,
+  width = 16,
+  height = 48,
+  name = "sensor_door_open",
+}
+
+enemy{
+  layer = 0,
+  x = 988,
+  y = 661,
+  name = "poe_6",
+  direction = 3,
+  breed = "poe",
+}
+
+enemy{
+  layer = 0,
+  x = 1148,
+  y = 725,
+  name = "poe_7",
+  direction = 3,
+  breed = "poe",
+}
+
+enemy{
+  layer = 0,
+  x = 1324,
+  y = 469,
+  name = "poe_8",
+  direction = 3,
+  breed = "poe",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1016,
+  y = 885,
+  width = 16,
+  height = 16,
+  name = "flame_1",
+  direction = 3,
+  sprite = "enemies/flame_red",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1128,
+  y = 885,
+  width = 16,
+  height = 16,
+  name = "flame_2",
+  direction = 3,
+  sprite = "enemies/flame_red",
 }
 
 tile{
@@ -4888,6 +5028,69 @@ tile{
   width = 8,
   height = 16,
   pattern = "17",
+}
+
+wall{
+  layer = 1,
+  x = 1248,
+  y = 576,
+  width = 8,
+  height = 224,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1480,
+  y = 576,
+  width = 8,
+  height = 224,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1256,
+  y = 576,
+  width = 224,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1256,
+  y = 792,
+  width = 224,
+  height = 8,
+  stops_enemies = true,
+}
+
+enemy{
+  layer = 1,
+  x = 1312,
+  y = 629,
+  name = "keese_1",
+  direction = 3,
+  breed = "keese",
+}
+
+enemy{
+  layer = 1,
+  x = 1344,
+  y = 725,
+  name = "keese_2",
+  direction = 3,
+  breed = "keese",
+}
+
+enemy{
+  layer = 1,
+  x = 1416,
+  y = 669,
+  name = "keese_3",
+  direction = 3,
+  breed = "keese",
 }
 
 tile{

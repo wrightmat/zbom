@@ -2,16 +2,13 @@ local enemy = ...
 
 -- Stalfos: An undead soldier boss. PLACEHOLDER!
 
-
 -- Possible positions where he lands.
--- TODO: correct positions based on room.
 local positions = {
-  {x = 1312, y = 384 },
-  {x = 1256, y = 400 },
-  {x = 1184, y = 384 },
-  {x = 1208, y = 424 },
-  {x = 1240, y = 448 },
-  {x = 1320, y = 456 }
+  {x = 224, y = 288 },
+  {x = 232, y = 192 },
+  {x = 360, y = 304 },
+  {x = 336, y = 184 },
+  {x = 288, y = 256 }
 }
 
 function enemy:on_created()
@@ -43,10 +40,9 @@ function enemy:on_hurt()
 end
 
 function enemy:go_hero()
-  firing = false
   self:get_sprite():set_animation("walking")
   local m = sol.movement.create("target")
   m:set_speed(64)
   m:start(self)
-  sol.timer.start(enemy, math.random(10)*1000, function() enemy:fly() end)
+  sol.timer.start(enemy, math.random(10)*1000, function() enemy:restart() end)
 end

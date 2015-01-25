@@ -11565,26 +11565,6 @@ sensor{
   name = "sensor_boss",
 }
 
-enemy{
-  layer = 0,
-  x = 320,
-  y = 1285,
-  name = "keese_1",
-  direction = 3,
-  breed = "keese_fire",
-  treasure_name = "random_mountain",
-}
-
-enemy{
-  layer = 0,
-  x = 464,
-  y = 1349,
-  name = "keese_2",
-  direction = 3,
-  breed = "keese_fire",
-  treasure_name = "random_mountain",
-}
-
 npc{
   layer = 0,
   x = 216,
@@ -11606,33 +11586,6 @@ chest{
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "b1108",
   cannot_open_dialog = "_big_key_required",
-}
-
-enemy{
-  layer = 0,
-  x = 456,
-  y = 965,
-  name = "keese_3",
-  direction = 3,
-  breed = "keese_fire",
-}
-
-enemy{
-  layer = 0,
-  x = 744,
-  y = 1517,
-  name = "keese_4",
-  direction = 3,
-  breed = "keese_fire",
-}
-
-enemy{
-  layer = 0,
-  x = 736,
-  y = 677,
-  name = "keese_5",
-  direction = 3,
-  breed = "keese_fire",
 }
 
 enemy{
@@ -11712,56 +11665,6 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 1112,
-  y = 541,
-  name = "keese_7",
-  direction = 3,
-  breed = "keese_fire",
-  treasure_name = "random_mountain",
-}
-
-enemy{
-  layer = 0,
-  x = 1080,
-  y = 325,
-  name = "keese_8",
-  direction = 3,
-  breed = "keese_fire",
-  treasure_name = "random_mountain",
-}
-
-enemy{
-  layer = 0,
-  x = 944,
-  y = 261,
-  name = "keese_9",
-  direction = 3,
-  breed = "keese_fire",
-  treasure_name = "random_mountain",
-}
-
-enemy{
-  layer = 0,
-  x = 816,
-  y = 325,
-  name = "keese_10",
-  direction = 3,
-  breed = "keese_fire",
-  treasure_name = "random_mountain",
-}
-
-enemy{
-  layer = 0,
-  x = 192,
-  y = 325,
-  name = "keese_11",
-  direction = 3,
-  breed = "keese_fire",
-  treasure_name = "random_mountain",
-}
-
-enemy{
-  layer = 0,
   x = 664,
   y = 269,
   name = "tektite_key4_1",
@@ -11788,15 +11691,6 @@ enemy{
   direction = 3,
   breed = "tektite_red",
   treasure_name = "random_mountain",
-}
-
-enemy{
-  layer = 0,
-  x = 1192,
-  y = 117,
-  name = "keese_rupees_2",
-  direction = 3,
-  breed = "keese_fire",
 }
 
 destination{
@@ -12888,15 +12782,6 @@ door{
 
 enemy{
   layer = 0,
-  x = 1024,
-  y = 117,
-  name = "keese_rupees_1",
-  direction = 3,
-  breed = "keese_fire",
-}
-
-enemy{
-  layer = 0,
   x = 272,
   y = 709,
   name = "dodongo_1",
@@ -13119,6 +13004,121 @@ npc{
   direction = 3,
   subtype = "1",
   sprite = "npc/goron_ghost",
+}
+
+enemy{
+  layer = 1,
+  x = 464,
+  y = 1349,
+  name = "keese_2",
+  direction = 3,
+  breed = "keese_fire",
+  treasure_name = "random_mountain",
+}
+
+enemy{
+  layer = 1,
+  x = 744,
+  y = 1517,
+  name = "keese_4",
+  direction = 3,
+  breed = "keese_fire",
+}
+
+enemy{
+  layer = 1,
+  x = 320,
+  y = 1285,
+  name = "keese_1",
+  direction = 3,
+  breed = "keese_fire",
+  treasure_name = "random_mountain",
+}
+
+enemy{
+  layer = 1,
+  x = 456,
+  y = 965,
+  name = "keese_3",
+  direction = 3,
+  breed = "keese_fire",
+}
+
+enemy{
+  layer = 1,
+  x = 736,
+  y = 685,
+  name = "keese_5",
+  direction = 3,
+  breed = "keese_fire",
+}
+
+enemy{
+  layer = 1,
+  x = 192,
+  y = 325,
+  name = "keese_11",
+  direction = 3,
+  breed = "keese_fire",
+  treasure_name = "random_mountain",
+}
+
+enemy{
+  layer = 1,
+  x = 816,
+  y = 325,
+  name = "keese_10",
+  direction = 3,
+  breed = "keese_fire",
+  treasure_name = "random_mountain",
+}
+
+enemy{
+  layer = 1,
+  x = 944,
+  y = 261,
+  name = "keese_9",
+  direction = 3,
+  breed = "keese_fire",
+  treasure_name = "random_mountain",
+}
+
+enemy{
+  layer = 1,
+  x = 1080,
+  y = 325,
+  name = "keese_8",
+  direction = 3,
+  breed = "keese_fire",
+  treasure_name = "random_mountain",
+}
+
+enemy{
+  layer = 1,
+  x = 1112,
+  y = 541,
+  name = "keese_7",
+  direction = 3,
+  breed = "keese_fire",
+  treasure_name = "random_mountain",
+}
+
+enemy{
+  layer = 1,
+  x = 1192,
+  y = 117,
+  name = "keese_rupees_2",
+  direction = 3,
+  breed = "keese_fire",
+}
+
+enemy{
+  layer = 1,
+  x = 1024,
+  y = 117,
+  name = "keese_rupees_1",
+  direction = 3,
+  breed = "keese_fire",
 }
 
 tile{

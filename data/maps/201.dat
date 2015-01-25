@@ -2,7 +2,7 @@ properties{
   x = 0,
   y = 0,
   width = 2256,
-  height = 816,
+  height = 1072,
   world = "dungeon_1",
   floor = 0,
   tileset = "4",
@@ -4878,6 +4878,240 @@ tile{
   pattern = "581",
 }
 
+tile{
+  layer = 0,
+  x = 1744,
+  y = 632,
+  width = 32,
+  height = 16,
+  pattern = "136",
+}
+
+tile{
+  layer = 0,
+  x = 1744,
+  y = 648,
+  width = 32,
+  height = 32,
+  pattern = "135",
+}
+
+tile{
+  layer = 0,
+  x = 1744,
+  y = 680,
+  width = 32,
+  height = 16,
+  pattern = "136",
+}
+
+tile{
+  layer = 0,
+  x = 1960,
+  y = 232,
+  width = 16,
+  height = 16,
+  pattern = "530",
+}
+
+tile{
+  layer = 0,
+  x = 1960,
+  y = 248,
+  width = 16,
+  height = 64,
+  pattern = "537",
+}
+
+tile{
+  layer = 0,
+  x = 1960,
+  y = 312,
+  width = 16,
+  height = 16,
+  pattern = "532",
+}
+
+tile{
+  layer = 0,
+  x = 1976,
+  y = 312,
+  width = 48,
+  height = 16,
+  pattern = "535",
+}
+
+tile{
+  layer = 0,
+  x = 2040,
+  y = 312,
+  width = 48,
+  height = 16,
+  pattern = "535",
+}
+
+tile{
+  layer = 0,
+  x = 2088,
+  y = 312,
+  width = 16,
+  height = 16,
+  pattern = "533",
+}
+
+tile{
+  layer = 0,
+  x = 2088,
+  y = 248,
+  width = 16,
+  height = 64,
+  pattern = "536",
+}
+
+tile{
+  layer = 0,
+  x = 2088,
+  y = 232,
+  width = 16,
+  height = 16,
+  pattern = "531",
+}
+
+tile{
+  layer = 0,
+  x = 1976,
+  y = 232,
+  width = 112,
+  height = 16,
+  pattern = "534",
+}
+
+tile{
+  layer = 0,
+  x = 1976,
+  y = 248,
+  width = 8,
+  height = 8,
+  pattern = "540",
+}
+
+tile{
+  layer = 0,
+  x = 2024,
+  y = 312,
+  width = 16,
+  height = 16,
+  pattern = "546",
+}
+
+tile{
+  layer = 0,
+  x = 1976,
+  y = 256,
+  width = 8,
+  height = 48,
+  pattern = "545",
+}
+
+tile{
+  layer = 0,
+  x = 1976,
+  y = 304,
+  width = 8,
+  height = 8,
+  pattern = "541",
+}
+
+tile{
+  layer = 0,
+  x = 1984,
+  y = 304,
+  width = 96,
+  height = 8,
+  pattern = "539",
+}
+
+tile{
+  layer = 0,
+  x = 2080,
+  y = 304,
+  width = 8,
+  height = 8,
+  pattern = "542",
+}
+
+tile{
+  layer = 0,
+  x = 2080,
+  y = 256,
+  width = 8,
+  height = 48,
+  pattern = "544",
+}
+
+tile{
+  layer = 0,
+  x = 2080,
+  y = 248,
+  width = 8,
+  height = 8,
+  pattern = "543",
+}
+
+tile{
+  layer = 0,
+  x = 1984,
+  y = 248,
+  width = 96,
+  height = 8,
+  pattern = "538",
+}
+
+tile{
+  layer = 0,
+  x = 1984,
+  y = 256,
+  width = 96,
+  height = 48,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
+  x = 2016,
+  y = 312,
+  width = 8,
+  height = 8,
+  pattern = "550",
+}
+
+tile{
+  layer = 0,
+  x = 2016,
+  y = 320,
+  width = 8,
+  height = 8,
+  pattern = "551",
+}
+
+tile{
+  layer = 0,
+  x = 2040,
+  y = 312,
+  width = 8,
+  height = 8,
+  pattern = "548",
+}
+
+tile{
+  layer = 0,
+  x = 2040,
+  y = 320,
+  width = 8,
+  height = 8,
+  pattern = "549",
+}
+
 enemy{
   layer = 0,
   x = 2032,
@@ -4993,10 +5227,10 @@ door{
   layer = 0,
   x = 1192,
   y = 416,
-  name = "door_key_1_1",
+  name = "door_key3_1",
   direction = 0,
   sprite = "entities/door_small_key",
-  savegame_variable = "b1037",
+  savegame_variable = "b1039",
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_2_small_keys",
   opening_condition_consumed = true,
@@ -5007,10 +5241,10 @@ door{
   layer = 0,
   x = 1240,
   y = 416,
-  name = "door_key_1_2",
+  name = "door_key3_2",
   direction = 2,
   sprite = "entities/door_small_key",
-  savegame_variable = "b1037",
+  savegame_variable = "b1039",
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_2_small_keys",
   opening_condition_consumed = true,
@@ -5081,6 +5315,8 @@ enemy{
   direction = 3,
   breed = "knight_chain_ball",
   rank = 1,
+  savegame_variable = "b1050",
+  treasure_name = "jade",
 }
 
 pickable{
@@ -5198,6 +5434,128 @@ door{
   name = "door_room1_shutter_2",
   direction = 2,
   sprite = "entities/door_shutter",
+}
+
+door{
+  layer = 0,
+  x = 1784,
+  y = 656,
+  name = "door_boss_1",
+  direction = 0,
+  sprite = "entities/door_big_key",
+  savegame_variable = "b1034",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "b1043",
+  cannot_open_dialog = "_big_key_required",
+}
+
+door{
+  layer = 0,
+  x = 1848,
+  y = 656,
+  name = "door_boss_2",
+  direction = 2,
+  sprite = "entities/door_shutter",
+  savegame_variable = "b1034",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "b1043",
+  cannot_open_dialog = "_big_key_required",
+}
+
+sensor{
+  layer = 0,
+  x = 1880,
+  y = 653,
+  width = 16,
+  height = 48,
+  name = "sensor_boss",
+}
+
+door{
+  layer = 0,
+  x = 2024,
+  y = 440,
+  name = "door_boss_3",
+  direction = 1,
+  sprite = "entities/door_shutter",
+}
+
+sensor{
+  layer = 0,
+  x = 1264,
+  y = 413,
+  width = 16,
+  height = 48,
+  name = "sensor_miniboss",
+}
+
+door{
+  layer = 0,
+  x = 1360,
+  y = 504,
+  name = "door_miniboss",
+  direction = 3,
+  sprite = "entities/door_shutter",
+}
+
+chest{
+  layer = 0,
+  x = 2032,
+  y = 285,
+  name = "chest_book",
+  treasure_name = "book_mudora",
+  treasure_variant = 6,
+  treasure_savegame_variable = "b1033",
+  sprite = "entities/chest_big",
+}
+
+pickable{
+  layer = 0,
+  x = 2072,
+  y = 525,
+  name = "boss_heart",
+  treasure_name = "heart_container",
+  treasure_savegame_variable = "b1035",
+}
+
+teletransporter{
+  layer = 0,
+  x = 2128,
+  y = 272,
+  width = 16,
+  height = 16,
+  name = "to_north_hyrule",
+  sprite = "entities/teletransporter",
+  sound = "warp",
+  destination_map = "201",
+}
+
+door{
+  layer = 0,
+  x = 648,
+  y = 416,
+  name = "door_key2_1",
+  direction = 0,
+  sprite = "entities/door_small_key",
+  savegame_variable = "b1038",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_2_small_keys",
+  opening_condition_consumed = true,
+  cannot_open_dialog = "_small_key_required",
+}
+
+door{
+  layer = 0,
+  x = 696,
+  y = 416,
+  name = "door_key2_2",
+  direction = 2,
+  sprite = "entities/door_small_key",
+  savegame_variable = "b1038",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_2_small_keys",
+  opening_condition_consumed = true,
+  cannot_open_dialog = "_small_key_required",
 }
 
 tile{
@@ -5720,5 +6078,14 @@ tile{
   width = 64,
   height = 24,
   pattern = "189",
+}
+
+tile{
+  layer = 2,
+  x = 0,
+  y = 816,
+  width = 2256,
+  height = 256,
+  pattern = "137",
 }
 

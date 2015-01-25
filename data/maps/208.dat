@@ -6,7 +6,16 @@ properties{
   world = "dungeon_6",
   floor = -1,
   tileset = "9",
-  music = "cave_ice",
+  music = "temple_snow",
+}
+
+tile{
+  layer = 0,
+  x = 456,
+  y = 136,
+  width = 224,
+  height = 224,
+  pattern = "22",
 }
 
 tile{
@@ -2990,15 +2999,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 456,
-  y = 136,
-  width = 224,
-  height = 224,
-  pattern = "22",
-}
-
-tile{
-  layer = 0,
   x = 416,
   y = 112,
   width = 272,
@@ -5161,7 +5161,7 @@ chest{
 custom_entity{
   layer = 0,
   x = 72,
-  y = 405,
+  y = 400,
   width = 16,
   height = 16,
   name = "pit_1",
@@ -5173,7 +5173,7 @@ custom_entity{
 custom_entity{
   layer = 0,
   x = 88,
-  y = 405,
+  y = 400,
   width = 16,
   height = 16,
   name = "pit_2",
@@ -5321,18 +5321,6 @@ wall{
   layer = 0,
   x = 744,
   y = 600,
-  width = 8,
-  height = 32,
-  stops_enemies = true,
-  stops_npcs = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 672,
-  y = 264,
   width = 8,
   height = 32,
   stops_enemies = true,
@@ -5673,6 +5661,87 @@ enemy{
   name = "wallmaster",
   direction = 3,
   breed = "wallmaster",
+}
+
+sensor{
+  layer = 0,
+  x = 672,
+  y = 269,
+  width = 16,
+  height = 48,
+  name = "sensor_miniboss",
+}
+
+door{
+  layer = 0,
+  x = 680,
+  y = 272,
+  name = "door_miniboss",
+  direction = 0,
+  sprite = "entities/door_shutter",
+}
+
+enemy{
+  layer = 0,
+  x = 592,
+  y = 1557,
+  name = "keese_ice_1",
+  direction = 3,
+  breed = "keese_ice",
+}
+
+enemy{
+  layer = 0,
+  x = 584,
+  y = 1653,
+  name = "keese_ice_2",
+  direction = 3,
+  breed = "keese_ice",
+}
+
+enemy{
+  layer = 0,
+  x = 648,
+  y = 1501,
+  name = "keese_ice_3",
+  direction = 3,
+  breed = "keese_ice",
+}
+
+wall{
+  layer = 1,
+  x = 512,
+  y = 1440,
+  width = 8,
+  height = 288,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 696,
+  y = 1440,
+  width = 8,
+  height = 288,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 520,
+  y = 1440,
+  width = 176,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 520,
+  y = 1720,
+  width = 176,
+  height = 8,
+  stops_enemies = true,
 }
 
 tile{

@@ -8755,114 +8755,6 @@ enemy{
   breed = "gibdos",
 }
 
-enemy{
-  layer = 0,
-  x = 560,
-  y = 509,
-  name = "keese_1",
-  direction = 3,
-  breed = "keese_fire",
-}
-
-enemy{
-  layer = 0,
-  x = 536,
-  y = 589,
-  name = "keese_2",
-  direction = 3,
-  breed = "keese_fire",
-}
-
-enemy{
-  layer = 0,
-  x = 560,
-  y = 677,
-  name = "keese_3",
-  direction = 3,
-  breed = "keese_fire",
-}
-
-enemy{
-  layer = 0,
-  x = 624,
-  y = 629,
-  name = "keese_4",
-  direction = 3,
-  breed = "keese_fire",
-}
-
-enemy{
-  layer = 0,
-  x = 624,
-  y = 549,
-  name = "keese_5",
-  direction = 3,
-  breed = "keese_fire",
-}
-
-enemy{
-  layer = 0,
-  x = 680,
-  y = 485,
-  name = "keese_6",
-  direction = 3,
-  breed = "keese_fire",
-}
-
-enemy{
-  layer = 0,
-  x = 704,
-  y = 589,
-  name = "keese_7",
-  direction = 3,
-  breed = "keese_fire",
-}
-
-enemy{
-  layer = 0,
-  x = 680,
-  y = 693,
-  name = "keese_8",
-  direction = 3,
-  breed = "keese_fire",
-}
-
-enemy{
-  layer = 0,
-  x = 760,
-  y = 669,
-  name = "keese_9",
-  direction = 3,
-  breed = "keese_fire",
-}
-
-enemy{
-  layer = 0,
-  x = 760,
-  y = 557,
-  name = "keese_10",
-  direction = 3,
-  breed = "keese_fire",
-}
-
-enemy{
-  layer = 0,
-  x = 768,
-  y = 477,
-  name = "keese_11",
-  direction = 3,
-  breed = "keese_fire",
-}
-
-enemy{
-  layer = 0,
-  x = 816,
-  y = 605,
-  name = "keese_12",
-  direction = 3,
-  breed = "keese_fire",
-}
-
 door{
   layer = 0,
   x = 472,
@@ -8908,6 +8800,114 @@ teletransporter{
   height = 16,
   name = "to_floor_5",
   destination_map = "214",
+}
+
+enemy{
+  layer = 1,
+  x = 560,
+  y = 509,
+  name = "keese_1",
+  direction = 3,
+  breed = "keese_fire",
+}
+
+enemy{
+  layer = 1,
+  x = 536,
+  y = 589,
+  name = "keese_2",
+  direction = 3,
+  breed = "keese_fire",
+}
+
+enemy{
+  layer = 1,
+  x = 560,
+  y = 677,
+  name = "keese_3",
+  direction = 3,
+  breed = "keese_fire",
+}
+
+enemy{
+  layer = 1,
+  x = 624,
+  y = 629,
+  name = "keese_4",
+  direction = 3,
+  breed = "keese_fire",
+}
+
+enemy{
+  layer = 1,
+  x = 624,
+  y = 549,
+  name = "keese_5",
+  direction = 3,
+  breed = "keese_fire",
+}
+
+enemy{
+  layer = 1,
+  x = 680,
+  y = 485,
+  name = "keese_6",
+  direction = 3,
+  breed = "keese_fire",
+}
+
+enemy{
+  layer = 1,
+  x = 704,
+  y = 589,
+  name = "keese_7",
+  direction = 3,
+  breed = "keese_fire",
+}
+
+enemy{
+  layer = 1,
+  x = 680,
+  y = 693,
+  name = "keese_8",
+  direction = 3,
+  breed = "keese_fire",
+}
+
+enemy{
+  layer = 1,
+  x = 760,
+  y = 669,
+  name = "keese_9",
+  direction = 3,
+  breed = "keese_fire",
+}
+
+enemy{
+  layer = 1,
+  x = 760,
+  y = 557,
+  name = "keese_10",
+  direction = 3,
+  breed = "keese_fire",
+}
+
+enemy{
+  layer = 1,
+  x = 816,
+  y = 605,
+  name = "keese_12",
+  direction = 3,
+  breed = "keese_fire",
+}
+
+enemy{
+  layer = 1,
+  x = 768,
+  y = 477,
+  name = "keese_11",
+  direction = 3,
+  breed = "keese_fire",
 }
 
 tile{
