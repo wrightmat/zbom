@@ -2873,12 +2873,13 @@ $v! $0. $0. $0.
 Have you exhausted your
 options already?$0
 You have extensively
-searched the south of
-Hyrule, so I would
-recommend traveling
-north. Maybe the friendly
-Gorons will have some
-additional advice?
+searched the south
+and west of Hyrule,
+so I would recommend
+traveling north or
+east. Perhaps the
+friendly Gorons will
+have some advice?
   ]]
 }
 
@@ -5515,6 +5516,141 @@ spending all day
 equipping adventurers
 like yourself?$0
 Everyone's a critic...
+  ]]
+}
+
+dialog{
+  id = "goron.0.death_mountain",
+  skip = "current",
+  text = [[
+What's that? Goron
+City? THIS is not the
+great Goron City!
+I guess that cave
+does look a little
+like one of our houses,
+but that one has a
+powerful fairy inside!
+What does she do, you
+ask? How should I know,
+I'm just a Goron.
+Check it out for
+yourself.
+  ]]
+}
+
+dialog{
+  id = "goron.1.death_mountain",
+  skip = "current",
+  text = [[
+Where is Goron City?
+You must think I just
+know everything, huh?
+Well you're lucky this
+time! Our city is south
+east from here, across
+the bridge in the old
+village. I'm sure
+you can find it.
+  ]]
+}
+
+dialog{
+  id = "goron.2.death_mountain",
+  skip = "current",
+  text = [[
+Why am I out here
+alone? I'm getting
+bored with your
+questions...
+  ]]
+}
+
+dialog{
+  id = "goron1.0.goron_city",
+  skip = "current",
+  text = [[
+I stay out here in
+the open air, because
+then I'm less likely
+to catch the sickess.
+I'm especially staying
+away from the mine!
+  ]]
+}
+
+dialog{
+  id = "goron2.0.goron_city",
+  skip = "current",
+  text = [[
+The mine? Oh, we call
+it the Mausoleum now.
+So many people died
+in there that most of
+us won't go back.
+  ]]
+}
+
+dialog{
+  id = "goron3.0.goron_city",
+  skip = "current",
+  text = [[
+We used to have such
+a lively city! Our
+brotherhood has suffered
+much from this horrible
+sickness.
+  ]]
+}
+
+dialog{
+  id = "goron4.0.goron_city",
+  skip = "current",
+  text = [[
+Are you leaving the
+city? Can't say I
+blame you...
+  ]]
+}
+
+dialog{
+  id = "goron5.0.goron_city",
+  skip = "current",
+  text = [[
+We Gorons we once a
+proud and honorable
+people. Now everyone's
+so down due to this
+horrible illness.
+I wish someone could
+do anything the help.
+  ]]
+}
+
+dialog{
+  id = "goron6.0.goron_city",
+  skip = "current",
+  text = [[
+Who are you? An outsider
+here in the shape we're
+in?     $0 *cough* $0
+Uh oh. Guess I'll go
+stand in line at the
+doctor's house...
+  ]]
+}
+
+dialog{
+  id = "goron7.0.goron_city",
+  skip = "current",
+  text = [[
+Welcome to Goron City.
+Don't breathe if you
+don't want to get sick.
+What's that? Cynical?
+I don't know that word,
+but I don't think I
+like you.
   ]]
 }
 

@@ -29,7 +29,7 @@ function map:on_started(destination)
       torch_overlay:fade_in(50)
       game:set_value("i1027", 5)
       hero:set_direction(0)
-      game:start_dialog("ordona.0.demo", game:get_player_name(), function() --ordona.3.castle
+      game:start_dialog("ordona.3.castle", game:get_player_name(), function()
         torch_overlay:fade_out(50)
         hero:unfreeze()
         game:set_value("i1032", 4)

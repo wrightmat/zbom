@@ -4168,8 +4168,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 328,
-  y = 728,
+  x = 320,
+  y = 720,
   width = 8,
   height = 8,
   pattern = "62",
@@ -4893,6 +4893,16 @@ teletransporter{
   name = "to_great_fairy",
   destination_map = "164",
   destination = "from_outside",
+}
+
+npc{
+  layer = 0,
+  x = 360,
+  y = 773,
+  name = "npc_goron",
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/goron",
 }
 
 tile{
