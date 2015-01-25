@@ -96,9 +96,15 @@ end
 
 function npc_garroth_sensor:on_interaction()
   if game:get_value("i1918") <= 5 then
-    game:start_dialog("garroth."..game:get_value("i1918")..".pub", function()
-      game:set_value("i1918", game:get_value("i1918")+1)
-    end)
+    if (game:get_value("i1918") >= 0 and game:get_value("i1918") <= 1 and game:get_time_of_day() == "day") or game:get_value("i1918") >= 3 then
+      game:start_dialog("garroth."..game:get_value("i1918")..".pub", function()
+        game:set_value("i1918", game:get_value("i1918")+1)
+      end)
+    elseif game:get_value("i1918") <= 5 game:get_time_of_day() == "night"
+      game:start_dialog("garroth."..game:get_value("i1918")..".pub", function()
+        game:set_value("i1918", game:get_value("i1918")+1)
+      end)
+    end
   else
     if game:get_value("i1830") >= 75 then
       game:start_dialog("garroth.8.pub", game:get_value("i1830"), function()

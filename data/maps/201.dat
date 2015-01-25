@@ -5232,7 +5232,7 @@ door{
   sprite = "entities/door_small_key",
   savegame_variable = "b1039",
   opening_method = "interaction_if_savegame_variable",
-  opening_condition = "dungeon_2_small_keys",
+  opening_condition = "dungeon_1_small_keys",
   opening_condition_consumed = true,
   cannot_open_dialog = "_small_key_required",
 }
@@ -5246,7 +5246,7 @@ door{
   sprite = "entities/door_small_key",
   savegame_variable = "b1039",
   opening_method = "interaction_if_savegame_variable",
-  opening_condition = "dungeon_2_small_keys",
+  opening_condition = "dungeon_1_small_keys",
   opening_condition_consumed = true,
   cannot_open_dialog = "_small_key_required",
 }
@@ -5539,7 +5539,7 @@ door{
   sprite = "entities/door_small_key",
   savegame_variable = "b1038",
   opening_method = "interaction_if_savegame_variable",
-  opening_condition = "dungeon_2_small_keys",
+  opening_condition = "dungeon_1_small_keys",
   opening_condition_consumed = true,
   cannot_open_dialog = "_small_key_required",
 }
@@ -5553,7 +5553,7 @@ door{
   sprite = "entities/door_small_key",
   savegame_variable = "b1038",
   opening_method = "interaction_if_savegame_variable",
-  opening_condition = "dungeon_2_small_keys",
+  opening_condition = "dungeon_1_small_keys",
   opening_condition_consumed = true,
   cannot_open_dialog = "_small_key_required",
 }
