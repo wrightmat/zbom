@@ -214,11 +214,13 @@ end
 
 function npc_impa:on_interaction()
   if game:get_value("b1117") then
-    game:start_dialog("impa."..game:get_value("i1921")..".house")
-    game:set_value("i1921", game:get_value("i1921")+1)
-  if game:get_value("i1032") >= 2 then
+    if game:get_value("i1921") < 6 then
+      game:start_dialog("impa."..game:get_value("i1921")..".house")
+      game:set_value("i1921", game:get_value("i1921")+1)
+    end
+  elseif game:get_value("i1032") >= 2 then
     game:start_dialog("impa.2.house")
-    game:set_value("i1921", game:get_value("i1921")+1)
+    game:set_value("i1921", 3)
   else
     game:start_dialog("impa.0.house", function()
       if game:has_item("ocarina") then
@@ -226,7 +228,6 @@ function npc_impa:on_interaction()
       else
         game:start_dialog("impa.0.house_2")
       end
-      game:set_value("i1921", game:get_value("i1921")+1)
     end)
   end
 end

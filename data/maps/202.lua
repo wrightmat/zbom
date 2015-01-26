@@ -17,6 +17,10 @@ else
 end
 
 function map:on_started(destination)
+  if not game:get_value("b1036") then boss_heart:set_enabled(false) end
+  if not game:get_value("b1043") then chest_big_key:set_enabled(false) end
+  if not game:get_value("b1047") then boss_big_poe:set_enabled(false) end
+
   if game:get_value("i1027") <= 4 then
     tentacle_sword_1:set_enabled(false)
     tentacle_sword_2:set_enabled(false)
@@ -76,8 +80,19 @@ function sensor_boss:on_activated()
     sol.audio.play_music("boss")
   end
 end
-function door_open:on_activated()
+function sensor_door_open:on_activated()
   map:open_doors("door_boss")
+end
+
+if boss_big_poe ~= nil then
+ function boss_big_poe:on_dead()
+  map:open_doors("door_boss")
+  sol.audio.play_sound("boss_killed")
+  boss_heart:set_enabled(true)
+  sol.audio.play_sound("chest_appears")
+  chest_big_key:set_enabled(true)
+  sol.audio.play_music("sewers")
+ end
 end
 
 for enemy in map:get_entities("tentacle") do

@@ -11,6 +11,15 @@ properties{
 
 tile{
   layer = 0,
+  x = 1440,
+  y = 368,
+  width = 64,
+  height = 160,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
   x = 816,
   y = 1152,
   width = 16,
@@ -349,15 +358,6 @@ tile{
   width = 80,
   height = 8,
   pattern = "15",
-}
-
-tile{
-  layer = 0,
-  x = 216,
-  y = 760,
-  width = 8,
-  height = 96,
-  pattern = "21",
 }
 
 tile{
@@ -2912,7 +2912,7 @@ tile{
   x = 272,
   y = 728,
   width = 8,
-  height = 48,
+  height = 32,
   pattern = "17",
 }
 
@@ -3494,18 +3494,18 @@ tile{
 
 tile{
   layer = 0,
-  x = 240,
+  x = 224,
   y = 752,
-  width = 16,
+  width = 48,
   height = 8,
   pattern = "105",
 }
 
 tile{
   layer = 0,
-  x = 240,
+  x = 216,
   y = 776,
-  width = 16,
+  width = 56,
   height = 8,
   pattern = "105",
 }
@@ -7625,15 +7625,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1440,
-  y = 368,
-  width = 64,
-  height = 160,
-  pattern = "22",
-}
-
-tile{
-  layer = 0,
   x = 1424,
   y = 592,
   width = 8,
@@ -8156,15 +8147,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 416,
-  y = 1040,
-  width = 272,
-  height = 224,
-  pattern = "22",
-}
-
-tile{
-  layer = 0,
   x = 800,
   y = 1040,
   width = 48,
@@ -8379,6 +8361,37 @@ tile{
   pattern = "646",
 }
 
+tile{
+  layer = 0,
+  x = 216,
+  y = 784,
+  width = 8,
+  height = 64,
+  pattern = "21",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 1040,
+  width = 272,
+  height = 224,
+  pattern = "22",
+}
+
+wall{
+  layer = 0,
+  x = 1456,
+  y = 392,
+  width = 32,
+  height = 16,
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
 chest{
   layer = 0,
   x = 1232,
@@ -8508,7 +8521,7 @@ enemy{
 
 custom_entity{
   layer = 0,
-  x = 392,
+  x = 344,
   y = 240,
   width = 16,
   height = 16,
@@ -8572,7 +8585,7 @@ enemy{
   y = 221,
   name = "bari",
   direction = 3,
-  breed = "bari_blue",
+  breed = "bari_red",
 }
 
 stream{
@@ -8711,7 +8724,7 @@ enemy{
   y = 213,
   name = "bari_2",
   direction = 3,
-  breed = "bari_blue",
+  breed = "bari_red",
 }
 
 wall{
@@ -9095,9 +9108,9 @@ wall{
 
 wall{
   layer = 0,
-  x = 1216,
-  y = 1072,
-  width = 32,
+  x = 1224,
+  y = 1120,
+  width = 16,
   height = 8,
   name = "obstacle",
   stops_hero = true,
@@ -9274,16 +9287,40 @@ destructible{
   destruction_sound = "stone",
 }
 
-custom_entity{
+destructible{
   layer = 0,
-  x = 549,
-  y = 1152,
-  width = 16,
-  height = 16,
-  name = "switch_lever",
-  direction = 3,
-  sprite = "entities/switch_lever",
-  model = "switch_lever",
+  x = 304,
+  y = 229,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 448,
+  y = 229,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 448,
+  y = 261,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 304,
+  y = 261,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
 }
 
 tile{
@@ -10130,5 +10167,23 @@ tile{
   width = 64,
   height = 48,
   pattern = "137",
+}
+
+tile{
+  layer = 2,
+  x = 216,
+  y = 760,
+  width = 8,
+  height = 32,
+  pattern = "21",
+}
+
+tile{
+  layer = 2,
+  x = 272,
+  y = 744,
+  width = 8,
+  height = 32,
+  pattern = "17",
 }
 

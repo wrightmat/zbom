@@ -76,7 +76,7 @@ function sol.main:debug_on_key_pressed(key, modifiers)
       self:start_savegame(self.game)
     end
   elseif key == "f11" then
-    print('Map ID: '..self.game:get_map():get_id())
+    print('Map ID: '..self.game:get_map():get_id()..' ('..self.game:get_map():get_world()..')')
     print('Time of Day: '..self.game:get_time_of_day())
   elseif key == "f12" and not console.enabled then
     sol.menu.start(self, console)

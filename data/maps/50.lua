@@ -41,6 +41,14 @@ function map:on_started(destination)
   end
 end
 
+function npc_ildus:on_interaction()
+  if game:get_value("b1117") then
+    game:start_dialog("ildus.1.outside")
+  else
+    game:start_dialog("ildus.0.outside")
+  end
+end
+
 function sensor_music:on_activated()
   sol.audio.play_music("town_kakariko")
 end

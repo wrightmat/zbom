@@ -16,7 +16,7 @@ function map:on_started(destination)
   if game:get_value("b1140") then
     water_chest:set_enabled(false)
     sensor_room_flooded:set_enabled(false)
-    obstable:set_enabled(false)
+    obstacle:set_enabled(false)
   end
 end
 
@@ -45,7 +45,9 @@ if miniboss_aquadraco ~= nil then
 end
 
 function sensor_room_flooded:on_activated()
-  game:start_dialog("lakebed.room_flooded")
+  if hero:get_direction() == 3 then
+    game:start_dialog("lakebed.room_flooded")
+  end
 end
 
 for enemy in map:get_entities("aquadracini") do
@@ -60,9 +62,11 @@ end
 for enemy in map:get_entities("tektite") do
   enemy.on_dead = function()
     if not map:has_entities("tektite") then
-      grate:set_enabled(false)
-      to_basement:set_enabled(true)
-      sol.audio.play_sound("secret")
+      map:move_camera(1456, 624, 250, function()
+        grate:set_enabled(false)
+        to_basement:set_enabled(true)
+        sol.audio.play_sound("secret")
+      end, 500, 500)
     end
   end
 end

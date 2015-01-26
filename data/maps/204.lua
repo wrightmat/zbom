@@ -77,7 +77,7 @@ function sensor_boss:on_activated()
 end
 
 function switch_room4:on_activated()
-  map:move_camera(1816, 912, 150, function()
+  map:move_camera(1816, 912, 250, function()
     map:open_doors("door_shutter_room4")
     sol.audio.play_sound("door_open")
   end, 500, 500)

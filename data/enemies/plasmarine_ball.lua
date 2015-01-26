@@ -12,6 +12,7 @@ function enemy:on_created()
   self:set_layer_independent_collisions(true)
   self:set_optimization_distance(0)
   self:set_attack_consequence("sword", "custom")
+  self:set_attack_consequence("hookshot", "ignored")
 end
 
 function enemy:on_movement_finished(movement)

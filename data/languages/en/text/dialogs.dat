@@ -1037,10 +1037,12 @@ dialog{
   skip = "current",
   icon = 20,
   text = [[
-You got another page to
-the Book of Mudora!
-It's starting to look
-like an actual book!
+You got another page
+to the Book of
+Mudora!
+It's starting to
+look like a real
+book!
   ]]
 }
 
@@ -2747,13 +2749,13 @@ dialog{
   skip = "current",
   text = [[
 Gotten a little confused,
-have you? Hyrule Castle Town
-is the center of Hyrule.
-I'll bet that if you make
-it here, someone would be
-able to help you out. If
-all elso fails, ask our
-mayor!
+have you? Hyrule Castle
+Town is the center of
+Hyrule. $0I'll bet that if
+you make it there, someone
+would be able to help you
+out. If all elso fails,
+ask our mayor!
   ]]
 }
 
@@ -3978,13 +3980,12 @@ said I could stay at
 his place!
 
 How lucky is that?
-Not sure where to
-go next? Maybe you
-should stop by
-Hyrule Castle Town
-and ask the mayor -
-it's straight north
-of here, through
+Not sure where to go
+next? Maybe you should
+stop by Hyrule Castle
+Town and ask the
+mayor - it's straight
+north of here, through
 the woods. Can't
 miss it!
   ]]
@@ -4325,8 +4326,8 @@ BENEATH Lake Hylia!$0
 Can you imagine that?
 Treasure under a lake?
 Sounds like something
-someone like you would
-love to check out, right?
+you would love to check
+out, right?
 I have no idea how you'd
 go about draining a
 whole lake to get to
@@ -4491,7 +4492,8 @@ bottom of a lake, you
 ask? If you don't have
 the right equipment to
 swim, then why don't you
-just get rid of the water?
+just get rid of all
+that water?
   ]]
 }
 
@@ -4501,12 +4503,12 @@ dialog{
   text = [[
 You want me to give you
 all of the answers? All
-I know is there there used
+I know is that there used
 to be a pump system in
-the sewers which run under
-Hyrule. But there are
-many accesses to that
-sewer, and I can't be sure
+the sewers which run
+beneath Hyrule. But there
+are many accesses to that
+sewer, and I don't know
 which will lead you to
 the pump.
   ]]
@@ -5575,6 +5577,35 @@ Everyone's a critic...
 }
 
 dialog{
+  id = "ildus.0.outside",
+  skip = "current",
+  text = [[
+Why am I walking around?
+It's so nice outside!
+$0
+Why are you walking
+around?
+  ]]
+}
+
+dialog{
+  id = "ildus.1.outside",
+  skip = "current",
+  text = [[
+Sewers underneath Hyrule?
+That's cool! $0
+Wait, maybe that's what
+those stone grates I
+see all over the place
+connect to. When you
+see one of those, you
+should look around the
+area and see if you
+can find a way in!
+  ]]
+}
+
+dialog{
   id = "goron.0.death_mountain",
   skip = "current",
   text = [[
@@ -5614,10 +5645,9 @@ dialog{
   id = "goron.2.death_mountain",
   skip = "current",
   text = [[
-Why am I out here
-alone? I'm getting
-bored with your
-questions...
+Why am I out here alone?
+I'm getting bored with
+your questions...
   ]]
 }
 

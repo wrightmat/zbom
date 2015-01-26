@@ -1,7 +1,7 @@
 local enemy = ...
 
 -- Bari: a flying enemy that follows the hero
---       and tries to electricute him.
+--       and tries to electrocute him.
 
 local shocking = false
 
@@ -9,7 +9,7 @@ function enemy:on_created()
   self:set_life(2)
   self:set_damage(2)
   self:create_sprite("enemies/bari_red")
-  self:set_attack_consequence("sword", "custom")
+  self:set_attack_consequence("hookshot", "immobilized")
   self:set_size(16, 16)
   self:set_origin(8, 13)
 end
@@ -34,11 +34,15 @@ function enemy:on_restarted()
   end
 end
 
+function enemy:on_immobilized()
+  shocking = false
+end
+
 function enemy:on_hurt_by_sword(hero, enemy_sprite)
   if shocking == true then
     hero:start_electrocution(1500)
   else
-    enemy:hurt(1)
+    self:hurt(1)
     enemy:remove_life(1)
   end
 end
@@ -48,10 +52,4 @@ function enemy:on_attacking_hero(hero, enemy_sprite)
   else
     hero:start_hurt(2)
   end
-end
-
-function enemy:on_dying()
-  -- It splits into two mini baris when it dies
-  enemy:create_enemy({ breed = "bari_mini" })
-  enemy:create_enemy({ breed = "bari_mini" })
 end

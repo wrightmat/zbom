@@ -22,6 +22,7 @@ function map:on_started(destination)
     water_source_2:set_enabled(false)
     map:set_entities_enabled("water_stream", false)
     obstacle:set_enabled(false)
+    obstacle_2:set_enabled(false)
   end
 end
 
@@ -29,9 +30,10 @@ function door_bomb_1:on_opened()
   water_source_1:set_enabled(false)
   water_source_2:set_enabled(false)
   map:set_entities_enabled("water_stream", false)
-  sol.audio.play_sound("secret")
+  sol.audio.play_sound("water_drain")
   game:set_value("b1141", true)
   obstacle:set_enabled(false)
+  obstacle_2:set_enabled(false)
 end
 
 function sensor_boss:on_activated()
@@ -48,24 +50,26 @@ if boss_plasmarine_1 ~= nil and boss_plasmarine_2 ~= nil then
     if boss_plasmarine_2 == nil then -- both Plasmarines have to be dead to win
       map:open_doors("door_boss")
       sol.audio.play_sound("boss_killed")
-      boss_heart:get_sprite():fade_in(30, function()
-        boss_heart:set_enabled(true)
-      end)
+      boss_heart:set_enabled(true)
       chest_book:set_enabled(true)
       sol.audio.play_sound("chest_appears")
       sol.audio.play_music("temple_lake")
+      to_outside:set_enabled(true)
+      map:open_doors("shutter_waterfall")
+      sensor_close_shutter_waterfall:set_enabled(false)
     end
   end
   function boss_plasmarine_2:on_dead()
     if boss_plasmarine_1 == nil then -- both Plasmarines have to be dead to win
       map:open_doors("door_boss")
       sol.audio.play_sound("boss_killed")
-      boss_heart:get_sprite():fade_in(30, function()
-        boss_heart:set_enabled(true)
-      end)
+      boss_heart:set_enabled(true)
       chest_book:set_enabled(true)
       sol.audio.play_sound("chest_appears")
       sol.audio.play_music("temple_lake")
+      to_outside:set_enabled(true)
+      map:open_doors("shutter_waterfall")
+      sensor_close_shutter_waterfall:set_enabled(false)
     end
   end
 end
@@ -92,6 +96,7 @@ function sensor_open_shutter_waterfall:on_activated()
   if game:get_value("b1141") then
     map:open_doors("shutter_waterfall")
     obstacle:set_enabled(false)
+    obstacle_2:set_enabled(false)
   else
     game:start_dialog("lakebed.waterfall")
   end

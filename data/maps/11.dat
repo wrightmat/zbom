@@ -10,6 +10,15 @@ properties{
 
 tile{
   layer = 0,
+  x = 1072,
+  y = 800,
+  width = 48,
+  height = 320,
+  pattern = "49",
+}
+
+tile{
+  layer = 0,
   x = 256,
   y = 888,
   width = 16,
@@ -8803,20 +8812,22 @@ tile{
 
 tile{
   layer = 0,
-  x = 960,
-  y = 920,
-  width = 48,
-  height = 24,
-  pattern = "1499",
-}
-
-tile{
-  layer = 0,
   x = 424,
   y = 640,
   width = 16,
   height = 16,
   pattern = "524",
+}
+
+destructible{
+  layer = 0,
+  x = 1008,
+  y = 933,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = 1,
+  can_be_cut = true,
 }
 
 dynamic_tile{
@@ -8837,17 +8848,6 @@ sensor{
   width = 48,
   height = 16,
   name = "sensor_race",
-}
-
-destructible{
-  layer = 0,
-  x = 1008,
-  y = 933,
-  treasure_name = "random",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = 1,
-  can_be_cut = true,
 }
 
 wall{
@@ -11048,6 +11048,17 @@ destructible{
   destruction_sound = "bush",
   weight = 1,
   can_be_cut = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 960,
+  y = 920,
+  width = 48,
+  height = 24,
+  name = "tile",
+  pattern = "1499",
+  enabled_at_start = true,
 }
 
 tile{
