@@ -9690,25 +9690,15 @@ destructible{
   destruction_sound = "stone",
 }
 
-dynamic_tile{
-  layer = 0,
-  x = 672,
-  y = 1032,
-  width = 32,
-  height = 32,
-  name = "water_platform_1",
-  pattern = "623",
-  enabled_at_start = true,
-}
-
 custom_entity{
   layer = 0,
-  x = 688,
-  y = 1053,
+  x = 700,
+  y = 1052,
   width = 16,
   height = 16,
   name = "water_platform",
-  direction = 0,
+  direction = 2,
+  sprite = "entities/platform",
   model = "platform",
 }
 

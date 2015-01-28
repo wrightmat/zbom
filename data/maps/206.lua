@@ -50,17 +50,17 @@ function sensor_room_flooded:on_activated()
   end
 end
 
-function switch1_puzzle:on_activated()
+function switch_puzzle_1:on_activated()
   spikes_puzzle:set_enabled(false)
 end
-function switch1_puzzle:on_inactivated()
+function switch_puzzle_1:on_inactivated()
   spikes_puzzle:set_enabled(true)
 end
 
-function switch2_puzzle:on_activated()
+function switch_puzzle_2:on_activated()
   map:open_doors("door_puzzle")
 end
-function switch2_puzzle:on_inactivated()
+function switch_puzzle_2:on_inactivated()
   map:close_doors("door_puzzle")
 end
 
