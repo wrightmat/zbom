@@ -16576,17 +16576,6 @@ door{
 
 dynamic_tile{
   layer = 0,
-  x = 1304,
-  y = 408,
-  width = 64,
-  height = 48,
-  name = "water_source_1",
-  pattern = "675",
-  enabled_at_start = true,
-}
-
-dynamic_tile{
-  layer = 0,
   x = 1320,
   y = 400,
   width = 16,
@@ -16789,17 +16778,6 @@ stream{
   direction = 6,
   sprite = "entities/stream_water",
   allow_movement = false,
-}
-
-dynamic_tile{
-  layer = 0,
-  x = 1336,
-  y = 456,
-  width = 16,
-  height = 8,
-  name = "water_source_2",
-  pattern = "675",
-  enabled_at_start = true,
 }
 
 stream{
@@ -18057,6 +18035,28 @@ destructible{
   treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1336,
+  y = 448,
+  width = 16,
+  height = 16,
+  name = "water_source_2",
+  pattern = "682",
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1304,
+  y = 408,
+  width = 64,
+  height = 48,
+  name = "water_source_1",
+  pattern = "701",
+  enabled_at_start = true,
 }
 
 tile{

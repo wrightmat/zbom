@@ -50,6 +50,20 @@ function sensor_room_flooded:on_activated()
   end
 end
 
+function switch1_puzzle:on_activated()
+  spikes_puzzle:set_enabled(false)
+end
+function switch1_puzzle:on_inactivated()
+  spikes_puzzle:set_enabled(true)
+end
+
+function switch2_puzzle:on_activated()
+  map:open_doors("door_puzzle")
+end
+function switch2_puzzle:on_inactivated()
+  map:close_doors("door_puzzle")
+end
+
 for enemy in map:get_entities("aquadracini") do
   enemy.on_dead = function()
     if not map:has_entities("aquadracini") and not game:get_value("b1129") then
