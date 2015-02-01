@@ -8085,18 +8085,9 @@ tile{
 tile{
   layer = 0,
   x = 272,
-  y = 584,
-  width = 16,
-  height = 24,
-  pattern = "43",
-}
-
-tile{
-  layer = 0,
-  x = 272,
   y = 552,
   width = 16,
-  height = 32,
+  height = 40,
   pattern = "42",
 }
 
@@ -8107,15 +8098,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "41",
-}
-
-tile{
-  layer = 0,
-  x = 256,
-  y = 536,
-  width = 16,
-  height = 24,
-  pattern = "43",
 }
 
 tile{
@@ -8386,6 +8368,24 @@ tile{
   width = 8,
   height = 8,
   pattern = "87",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "710",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 536,
+  width = 16,
+  height = 16,
+  pattern = "710",
 }
 
 wall{
@@ -9547,7 +9547,7 @@ teletransporter{
 wall{
   layer = 0,
   x = 648,
-  y = 1016,
+  y = 1024,
   width = 40,
   height = 16,
   stops_hero = true,
@@ -9555,6 +9555,15 @@ wall{
   stops_npcs = true,
   stops_blocks = true,
   stops_projectiles = true,
+}
+
+sensor{
+  layer = 0,
+  x = 608,
+  y = 1021,
+  width = 16,
+  height = 16,
+  name = "set_intermediate_layer",
 }
 
 tile{
@@ -10238,6 +10247,26 @@ custom_entity{
   direction = 2,
   sprite = "entities/platform",
   model = "platform",
+}
+
+jumper{
+  layer = 1,
+  x = 624,
+  y = 1032,
+  width = 8,
+  height = 32,
+  direction = 0,
+  jump_length = 40,
+}
+
+jumper{
+  layer = 1,
+  x = 704,
+  y = 1032,
+  width = 8,
+  height = 32,
+  direction = 4,
+  jump_length = 40,
 }
 
 tile{
@@ -11111,5 +11140,23 @@ tile{
   width = 32,
   height = 48,
   pattern = "137",
+}
+
+tile{
+  layer = 2,
+  x = 272,
+  y = 584,
+  width = 16,
+  height = 8,
+  pattern = "711",
+}
+
+tile{
+  layer = 2,
+  x = 256,
+  y = 528,
+  width = 16,
+  height = 8,
+  pattern = "711",
 }
 

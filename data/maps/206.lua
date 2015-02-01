@@ -84,3 +84,8 @@ for enemy in map:get_entities("tektite") do
     end
   end
 end
+
+function set_intermediate_layer:on_activated()
+  local x, y, l = map:get_entity("hero"):get_position()
+  map:get_entity("hero"):set_position(x, y, 1)
+end
