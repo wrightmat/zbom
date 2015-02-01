@@ -6229,15 +6229,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 704,
-  y = 16,
-  width = 8,
-  height = 16,
-  pattern = "1498",
-}
-
-tile{
-  layer = 0,
   x = 824,
   y = 56,
   width = 8,
@@ -10413,6 +10404,15 @@ tile{
   width = 80,
   height = 32,
   pattern = "1634",
+}
+
+tile{
+  layer = 1,
+  x = 704,
+  y = 16,
+  width = 8,
+  height = 16,
+  pattern = "1498",
 }
 
 npc{

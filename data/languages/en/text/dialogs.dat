@@ -2070,14 +2070,14 @@ any empty Bottles!
 }
 
 dialog{
-  id = "_use_bottle_with_water",
+  id = "use_bottle_with_water",
   skip = "current",
   icon = 8,
   question = true,
   text = [[
 Your Bottle is filled
-with water. What would
-you like to do with
+with water. What do
+you want to do with
 it?
 Pour it out
 Nothing
@@ -2085,7 +2085,7 @@ Nothing
 }
 
 dialog{
-  id = "_use_bottle_with_fairy",
+  id = "use_bottle_with_fairy",
   skip = "current",
   icon = 12,
   question = true,
@@ -2099,7 +2099,7 @@ Release her
 }
 
 dialog{
-  id = "_use_apple",
+  id = "use_apple",
   skip = "current",
   icon = 16,
   question = true,

@@ -651,7 +651,7 @@ tile_pattern{
 
 tile_pattern{
   id = "71",
-  ground = "wall",
+  ground = "traversable",
   default_layer = 0,
   x = 80,
   y = 0,
@@ -661,7 +661,7 @@ tile_pattern{
 
 tile_pattern{
   id = "72",
-  ground = "wall",
+  ground = "traversable",
   default_layer = 0,
   x = 96,
   y = 0,
@@ -671,7 +671,7 @@ tile_pattern{
 
 tile_pattern{
   id = "73",
-  ground = "wall",
+  ground = "traversable",
   default_layer = 0,
   x = 112,
   y = 0,
@@ -681,7 +681,7 @@ tile_pattern{
 
 tile_pattern{
   id = "74",
-  ground = "wall",
+  ground = "traversable",
   default_layer = 0,
   x = 128,
   y = 0,
@@ -691,7 +691,7 @@ tile_pattern{
 
 tile_pattern{
   id = "75",
-  ground = "wall",
+  ground = "traversable",
   default_layer = 0,
   x = 128,
   y = 16,
@@ -701,7 +701,7 @@ tile_pattern{
 
 tile_pattern{
   id = "76",
-  ground = "wall",
+  ground = "traversable",
   default_layer = 0,
   x = 128,
   y = 32,
@@ -711,7 +711,7 @@ tile_pattern{
 
 tile_pattern{
   id = "77",
-  ground = "wall",
+  ground = "traversable",
   default_layer = 0,
   x = 128,
   y = 48,
@@ -721,7 +721,7 @@ tile_pattern{
 
 tile_pattern{
   id = "78",
-  ground = "wall",
+  ground = "traversable",
   default_layer = 0,
   x = 112,
   y = 48,
@@ -731,7 +731,7 @@ tile_pattern{
 
 tile_pattern{
   id = "79",
-  ground = "wall",
+  ground = "traversable",
   default_layer = 0,
   x = 96,
   y = 48,
@@ -741,7 +741,7 @@ tile_pattern{
 
 tile_pattern{
   id = "80",
-  ground = "wall",
+  ground = "traversable",
   default_layer = 0,
   x = 80,
   y = 48,
@@ -751,7 +751,7 @@ tile_pattern{
 
 tile_pattern{
   id = "81",
-  ground = "wall",
+  ground = "traversable",
   default_layer = 0,
   x = 80,
   y = 32,
@@ -761,7 +761,7 @@ tile_pattern{
 
 tile_pattern{
   id = "82",
-  ground = "wall",
+  ground = "traversable",
   default_layer = 0,
   x = 80,
   y = 16,
@@ -3941,7 +3941,7 @@ tile_pattern{
 
 tile_pattern{
   id = "687",
-  ground = "traversable",
+  ground = "wall",
   default_layer = 0,
   x = 248,
   y = 48,
@@ -3951,7 +3951,7 @@ tile_pattern{
 
 tile_pattern{
   id = "688",
-  ground = "traversable",
+  ground = "wall",
   default_layer = 0,
   x = 248,
   y = 56,
@@ -3961,7 +3961,7 @@ tile_pattern{
 
 tile_pattern{
   id = "689",
-  ground = "traversable",
+  ground = "wall",
   default_layer = 0,
   x = 248,
   y = 72,
@@ -3971,7 +3971,7 @@ tile_pattern{
 
 tile_pattern{
   id = "690",
-  ground = "traversable",
+  ground = "wall",
   default_layer = 0,
   x = 248,
   y = 88,
@@ -3981,7 +3981,7 @@ tile_pattern{
 
 tile_pattern{
   id = "691",
-  ground = "traversable",
+  ground = "wall",
   default_layer = 0,
   x = 232,
   y = 88,
@@ -3991,7 +3991,7 @@ tile_pattern{
 
 tile_pattern{
   id = "692",
-  ground = "traversable",
+  ground = "wall",
   default_layer = 0,
   x = 216,
   y = 88,
@@ -4001,7 +4001,7 @@ tile_pattern{
 
 tile_pattern{
   id = "693",
-  ground = "traversable",
+  ground = "wall",
   default_layer = 0,
   x = 208,
   y = 88,
@@ -4011,7 +4011,7 @@ tile_pattern{
 
 tile_pattern{
   id = "694",
-  ground = "traversable",
+  ground = "wall",
   default_layer = 0,
   x = 208,
   y = 72,
@@ -4021,7 +4021,7 @@ tile_pattern{
 
 tile_pattern{
   id = "695",
-  ground = "traversable",
+  ground = "wall",
   default_layer = 0,
   x = 208,
   y = 56,
@@ -4031,7 +4031,7 @@ tile_pattern{
 
 tile_pattern{
   id = "696",
-  ground = "traversable",
+  ground = "wall",
   default_layer = 0,
   x = 208,
   y = 48,
@@ -4041,7 +4041,7 @@ tile_pattern{
 
 tile_pattern{
   id = "697",
-  ground = "traversable",
+  ground = "wall",
   default_layer = 0,
   x = 216,
   y = 48,
@@ -4051,7 +4051,7 @@ tile_pattern{
 
 tile_pattern{
   id = "698",
-  ground = "traversable",
+  ground = "wall",
   default_layer = 0,
   x = 232,
   y = 48,
@@ -4097,6 +4097,7 @@ tile_pattern{
   y = 16,
   width = 16,
   height = 16,
+  scrolling = "parallax",
 }
 
 tile_pattern{
@@ -4157,5 +4158,15 @@ tile_pattern{
   y = 432,
   width = 16,
   height = 16,
+}
+
+tile_pattern{
+  id = "709",
+  ground = "wall",
+  default_layer = 0,
+  x = 48,
+  y = 296,
+  width = 8,
+  height = 8,
 }
 

@@ -8903,9 +8903,9 @@ destructible{
 
 teletransporter{
   layer = 0,
-  x = 672,
+  x = 680,
   y = 1120,
-  width = 48,
+  width = 32,
   height = 16,
   name = "to_K5",
   transition = "scrolling",
@@ -11059,6 +11059,15 @@ dynamic_tile{
   name = "tile",
   pattern = "1499",
   enabled_at_start = true,
+}
+
+wall{
+  layer = 0,
+  x = 712,
+  y = 1112,
+  width = 8,
+  height = 8,
+  stops_hero = true,
 }
 
 tile{
