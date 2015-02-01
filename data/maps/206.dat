@@ -8388,6 +8388,38 @@ tile{
   pattern = "710",
 }
 
+tile{
+  layer = 0,
+  x = 1440,
+  y = 488,
+  width = 64,
+  height = 8,
+  pattern = "107",
+}
+
+chest{
+  layer = 0,
+  x = 600,
+  y = 1181,
+  name = "chest_magic_crystal_2",
+  treasure_name = "plume",
+  treasure_savegame_variable = "b1783",
+  sprite = "entities/chest",
+}
+
+teletransporter{
+  layer = 0,
+  x = 512,
+  y = 1168,
+  width = 16,
+  height = 16,
+  name = "fell_down",
+  sprite = "entities/teletransporter",
+  sound = "warp",
+  destination_map = "31",
+  destination = "from_lair",
+}
+
 wall{
   layer = 0,
   x = 1456,
@@ -9528,20 +9560,8 @@ chest{
   y = 909,
   name = "chest_crystal",
   treasure_name = "crystal",
+  treasure_savegame_variable = "b1784",
   sprite = "entities/chest",
-}
-
-teletransporter{
-  layer = 0,
-  x = 480,
-  y = 1168,
-  width = 16,
-  height = 16,
-  name = "fell_down",
-  sprite = "entities/teletransporter",
-  sound = "warp",
-  destination_map = "206",
-  destination = "from_outside",
 }
 
 wall{
@@ -9564,6 +9584,28 @@ sensor{
   width = 16,
   height = 16,
   name = "set_intermediate_layer",
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 456,
+  y = 1096,
+  width = 240,
+  height = 160,
+  name = "water_room1_1",
+  pattern = "701",
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 648,
+  y = 1032,
+  width = 48,
+  height = 64,
+  name = "water_room1_2",
+  pattern = "701",
+  enabled_at_start = true,
 }
 
 tile{
@@ -10267,6 +10309,45 @@ jumper{
   height = 32,
   direction = 4,
   jump_length = 40,
+}
+
+wall{
+  layer = 1,
+  x = 440,
+  y = 1080,
+  width = 8,
+  height = 192,
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 624,
+  y = 1064,
+  width = 8,
+  height = 24,
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 448,
+  y = 1080,
+  width = 176,
+  height = 8,
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{
