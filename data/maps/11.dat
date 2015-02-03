@@ -8819,6 +8819,33 @@ tile{
   pattern = "524",
 }
 
+tile{
+  layer = 0,
+  x = 272,
+  y = 1088,
+  width = 16,
+  height = 16,
+  pattern = "524",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 1088,
+  width = 16,
+  height = 16,
+  pattern = "524",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 1096,
+  width = 16,
+  height = 16,
+  pattern = "524",
+}
+
 destructible{
   layer = 0,
   x = 1008,
@@ -11058,6 +11085,39 @@ wall{
   width = 8,
   height = 8,
   stops_hero = true,
+}
+
+destructible{
+  layer = 0,
+  x = 248,
+  y = 1101,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = 1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 280,
+  y = 1101,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = 1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 312,
+  y = 1109,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = 1,
+  can_be_cut = true,
 }
 
 tile{

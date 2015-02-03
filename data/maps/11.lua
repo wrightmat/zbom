@@ -7,6 +7,7 @@ local game = map:get_game()
 
 if game:get_value("i1906")==nil then game:set_value("i1906", 0) end --Tern
 if game:get_value("i1911")==nil then game:set_value("i1911", 0) end --Gaira
+if game:get_value("i1027")==nil then game:set_value("i1027", 0) end
 
 local function random_walk(npc)
   local m = sol.movement.create("random_path")
@@ -251,13 +252,15 @@ function map:on_update()
     sol.audio.play_sound("chest_appears")
     game:set_value("i1028", 3)
   end
-  if game:get_value("i1028") == 2 or game:get_value("i1028") == 3 then
+  if game:get_value("i1028") >= 1 and game:get_value("i1028") <= 3 then
     map:set_entities_enabled("banner_race", true)
     map:set_entities_enabled("sensor_race", true)
-    to_F15:set_enabled(false)
-    to_F13:set_enabled(false)
-    to_E14_2:set_enabled(false)
-    to_ranch:set_enabled(false)
+    if game:get_value("i1028") > 1 then
+      to_F15:set_enabled(false)
+      to_F13:set_enabled(false)
+      to_E14_2:set_enabled(false)
+      to_ranch:set_enabled(false)
+    end
   else
     map:set_entities_enabled("banner_race", false)
     map:set_entities_enabled("sensor_race", false)

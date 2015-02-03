@@ -18,6 +18,8 @@ function map:on_started(destination)
     sensor_room_flooded:set_enabled(false)
     obstacle:set_enabled(false)
   end
+  if game:get_value("b1134") then
+    water_room1:set_enabled(false)
 end
 
 function map:on_obtained_treasure(treasure_item, treasure_variant, treasure_savegame_variable)
