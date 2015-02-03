@@ -254,13 +254,15 @@ function map:on_update()
   if game:get_value("i1028") == 2 or game:get_value("i1028") == 3 then
     map:set_entities_enabled("banner_race", true)
     map:set_entities_enabled("sensor_race", true)
-    block_race:set_enabled(true)
+    to_F15:set_enabled(false)
+    to_F13:set_enabled(false)
     to_E14_2:set_enabled(false)
     to_ranch:set_enabled(false)
   else
     map:set_entities_enabled("banner_race", false)
     map:set_entities_enabled("sensor_race", false)
-    block_race:set_enabled(false)
+    to_F15:set_enabled(true)
+    to_F13:set_enabled(true)
     to_E14_2:set_enabled(true)
     to_ranch:set_enabled(true)
   end

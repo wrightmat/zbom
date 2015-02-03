@@ -8907,7 +8907,7 @@ teletransporter{
   y = 1120,
   width = 32,
   height = 16,
-  name = "to_K5",
+  name = "to_F15",
   transition = "scrolling",
   destination_map = "10",
   destination = "_side",
@@ -8930,7 +8930,7 @@ teletransporter{
   x = -16,
   y = 216,
   width = 16,
-  height = 720,
+  height = 688,
   name = "to_E14_2",
   transition = "scrolling",
   destination_map = "15",
@@ -8953,7 +8953,7 @@ teletransporter{
   layer = 0,
   x = 728,
   y = -16,
-  width = 112,
+  width = 64,
   height = 16,
   name = "to_F13",
   transition = "scrolling",
@@ -11027,16 +11027,6 @@ dynamic_tile{
   name = "banner_race_3",
   pattern = "1619",
   enabled_at_start = false,
-}
-
-wall{
-  layer = 0,
-  x = 664,
-  y = 1032,
-  width = 88,
-  height = 16,
-  name = "block_race",
-  stops_hero = true,
 }
 
 destructible{
