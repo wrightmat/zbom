@@ -219,9 +219,9 @@ function npc_tristan:on_interaction()
     end
   else
     game:start_dialog("tristan.0.festival_question", function(answer)
-      game:set_value("i1028", 1)
-        if game:has_item("lamp") then
-          if answer == 1 then
+      if game:has_item("lamp") then
+        if answer == 1 then
+          game:set_value("i1028", 1)
           game:start_dialog("tristan.0.festival_rules")
         else
           game:start_dialog("tristan.0.festival_lamp")
