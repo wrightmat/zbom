@@ -10,6 +10,15 @@ properties{
 
 tile{
   layer = 0,
+  x = 752,
+  y = 0,
+  width = 32,
+  height = 8,
+  pattern = "523",
+}
+
+tile{
+  layer = 0,
   x = 832,
   y = 168,
   width = 32,
@@ -4760,6 +4769,15 @@ tile{
   pattern = "809",
 }
 
+tile{
+  layer = 0,
+  x = 16,
+  y = 1112,
+  width = 32,
+  height = 8,
+  pattern = "523",
+}
+
 teletransporter{
   layer = 0,
   x = 440,
@@ -4776,7 +4794,7 @@ teletransporter{
   layer = 0,
   x = 0,
   y = -16,
-  width = 768,
+  width = 736,
   height = 16,
   name = "to_F11",
   transition = "scrolling",
@@ -4798,9 +4816,9 @@ teletransporter{
 
 teletransporter{
   layer = 0,
-  x = 24,
+  x = 40,
   y = 1120,
-  width = 80,
+  width = 64,
   height = 16,
   name = "to_F13_2",
   transition = "scrolling",
@@ -5252,7 +5270,7 @@ teletransporter{
 teletransporter{
   layer = 0,
   x = -16,
-  y = 280,
+  y = 288,
   width = 16,
   height = 240,
   name = "to_E12_4",
@@ -5397,6 +5415,15 @@ npc{
   subtype = "0",
   sprite = "entities/sign",
   behavior = "dialog#sign.F12_directions",
+}
+
+wall{
+  layer = 0,
+  x = 96,
+  y = 0,
+  width = 88,
+  height = 8,
+  stops_hero = true,
 }
 
 tile{

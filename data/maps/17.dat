@@ -5321,9 +5321,9 @@ teletransporter{
 
 teletransporter{
   layer = 0,
-  x = 24,
+  x = 64,
   y = -16,
-  width = 80,
+  width = 32,
   height = 16,
   name = "to_F12_2",
   transition = "scrolling",
@@ -6007,6 +6007,42 @@ npc{
   direction = 3,
   subtype = "1",
   sprite = "npc/hylian_gaira",
+}
+
+wall{
+  layer = 0,
+  x = 96,
+  y = 0,
+  width = 32,
+  height = 8,
+  stops_hero = true,
+}
+
+wall{
+  layer = 0,
+  x = 160,
+  y = 0,
+  width = 16,
+  height = 8,
+  stops_hero = true,
+}
+
+wall{
+  layer = 0,
+  x = 208,
+  y = 0,
+  width = 16,
+  height = 8,
+  stops_hero = true,
+}
+
+wall{
+  layer = 0,
+  x = 256,
+  y = 0,
+  width = 16,
+  height = 8,
+  stops_hero = true,
 }
 
 tile{

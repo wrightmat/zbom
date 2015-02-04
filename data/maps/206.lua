@@ -20,6 +20,7 @@ function map:on_started(destination)
   end
   if game:get_value("b1134") then
     water_room1:set_enabled(false)
+  end
 end
 
 function map:on_obtained_treasure(treasure_item, treasure_variant, treasure_savegame_variable)

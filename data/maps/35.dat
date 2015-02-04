@@ -3304,8 +3304,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 1048,
-  y = 1104,
+  x = 1056,
+  y = 1088,
   width = 48,
   height = 16,
   pattern = "505",
@@ -3466,7 +3466,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 784,
+  x = 776,
   y = 1104,
   width = 32,
   height = 8,
@@ -4285,8 +4285,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 1048,
-  y = 1080,
+  x = 1056,
+  y = 1064,
   width = 48,
   height = 24,
   pattern = "1499",
@@ -4294,8 +4294,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 1040,
-  y = 1096,
+  x = 1048,
+  y = 1080,
   width = 8,
   height = 16,
   pattern = "1498",
@@ -4303,8 +4303,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 1096,
-  y = 1096,
+  x = 1104,
+  y = 1080,
   width = 8,
   height = 16,
   pattern = "1500",
@@ -5635,7 +5635,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 752,
+  x = 744,
   y = 1096,
   width = 48,
   height = 40,
@@ -6128,6 +6128,15 @@ tile{
   pattern = "1694",
 }
 
+tile{
+  layer = 0,
+  x = 1064,
+  y = 1104,
+  width = 32,
+  height = 8,
+  pattern = "523",
+}
+
 wall{
   layer = 0,
   x = 264,
@@ -6145,7 +6154,7 @@ teletransporter{
   layer = 0,
   x = 464,
   y = 1120,
-  width = 288,
+  width = 272,
   height = 16,
   name = "to_G5",
   transition = "scrolling",
@@ -6157,7 +6166,7 @@ teletransporter{
   layer = 0,
   x = 560,
   y = -16,
-  width = 560,
+  width = 448,
   height = 16,
   name = "to_F9",
   transition = "scrolling",
@@ -6902,9 +6911,9 @@ teletransporter{
 
 teletransporter{
   layer = 0,
-  x = 800,
+  x = 808,
   y = 1120,
-  width = 320,
+  width = 224,
   height = 16,
   name = "to_G5_2",
   transition = "scrolling",
@@ -6914,9 +6923,9 @@ teletransporter{
 
 teletransporter{
   layer = 0,
-  x = 80,
+  x = 120,
   y = 1120,
-  width = 240,
+  width = 192,
   height = 16,
   name = "to_G5_3",
   transition = "scrolling",
@@ -6991,7 +7000,7 @@ teletransporter{
 teletransporter{
   layer = 0,
   x = -16,
-  y = 8,
+  y = 16,
   width = 16,
   height = 704,
   name = "to_E10_2",
@@ -7015,9 +7024,9 @@ teletransporter{
 teletransporter{
   layer = 0,
   x = -16,
-  y = 880,
+  y = 904,
   width = 16,
-  height = 224,
+  height = 208,
   name = "to_E10_3",
   transition = "scrolling",
   destination_map = "34",
@@ -8358,6 +8367,33 @@ wall{
   stops_projectiles = true,
 }
 
+wall{
+  layer = 0,
+  x = 0,
+  y = 448,
+  width = 8,
+  height = 8,
+  stops_hero = true,
+}
+
+wall{
+  layer = 0,
+  x = 560,
+  y = 0,
+  width = 8,
+  height = 8,
+  stops_hero = true,
+}
+
+wall{
+  layer = 0,
+  x = 600,
+  y = 0,
+  width = 48,
+  height = 8,
+  stops_hero = true,
+}
+
 tile{
   layer = 1,
   x = 80,
@@ -8711,7 +8747,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 744,
+  x = 736,
   y = 1088,
   width = 8,
   height = 40,
@@ -8720,7 +8756,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 800,
+  x = 792,
   y = 1088,
   width = 8,
   height = 40,
@@ -9827,7 +9863,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 752,
+  x = 744,
   y = 1080,
   width = 48,
   height = 16,
@@ -10457,8 +10493,8 @@ tile{
 
 tile{
   layer = 2,
-  x = 1048,
-  y = 1048,
+  x = 1056,
+  y = 1032,
   width = 48,
   height = 32,
   pattern = "1495",
@@ -10466,8 +10502,8 @@ tile{
 
 tile{
   layer = 2,
-  x = 1040,
-  y = 1072,
+  x = 1048,
+  y = 1056,
   width = 8,
   height = 24,
   pattern = "1494",
@@ -10475,8 +10511,8 @@ tile{
 
 tile{
   layer = 2,
-  x = 1096,
-  y = 1072,
+  x = 1104,
+  y = 1056,
   width = 8,
   height = 24,
   pattern = "1497",
@@ -10597,5 +10633,23 @@ tile{
   width = 8,
   height = 40,
   pattern = "520",
+}
+
+tile{
+  layer = 2,
+  x = 64,
+  y = 1112,
+  width = 48,
+  height = 16,
+  pattern = "521",
+}
+
+tile{
+  layer = 2,
+  x = 1040,
+  y = 1096,
+  width = 96,
+  height = 32,
+  pattern = "1495",
 }
 
