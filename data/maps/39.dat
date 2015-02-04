@@ -6623,6 +6623,15 @@ wall{
   stops_blocks = true,
 }
 
+wall{
+  layer = 0,
+  x = 0,
+  y = 744,
+  width = 8,
+  height = 8,
+  stops_hero = true,
+}
+
 tile{
   layer = 1,
   x = 624,

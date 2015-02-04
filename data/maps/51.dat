@@ -5181,9 +5181,9 @@ sensor{
 
 teletransporter{
   layer = 0,
-  x = 0,
+  x = -8,
   y = 1120,
-  width = 848,
+  width = 832,
   height = 16,
   name = "to_D8",
   transition = "scrolling",
@@ -5194,9 +5194,9 @@ teletransporter{
 teletransporter{
   layer = 0,
   x = 1120,
-  y = 0,
+  y = -8,
   width = 16,
-  height = 896,
+  height = 880,
   name = "to_E7",
   transition = "scrolling",
   destination_map = "50",
@@ -5217,9 +5217,9 @@ npc{
 teletransporter{
   layer = 0,
   x = -16,
-  y = 192,
+  y = 224,
   width = 16,
-  height = 928,
+  height = 896,
   name = "to_C7",
   transition = "scrolling",
   destination_map = "71",
@@ -5238,9 +5238,9 @@ npc{
 
 teletransporter{
   layer = 0,
-  x = 1040,
+  x = 1064,
   y = -16,
-  width = 80,
+  width = 64,
   height = 16,
   name = "to_D6",
   transition = "scrolling",

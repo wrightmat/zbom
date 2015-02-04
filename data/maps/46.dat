@@ -7753,9 +7753,9 @@ enemy{
 
 teletransporter{
   layer = 0,
-  x = 56,
+  x = 64,
   y = 1120,
-  width = 208,
+  width = 176,
   height = 16,
   name = "to_G9",
   transition = "scrolling",
@@ -8040,6 +8040,18 @@ wall{
   stops_npcs = true,
   stops_blocks = true,
   stops_projectiles = true,
+}
+
+teletransporter{
+  layer = 0,
+  x = -16,
+  y = 400,
+  width = 16,
+  height = 96,
+  name = "to_F8",
+  transition = "scrolling",
+  destination_map = "45",
+  destination = "_side",
 }
 
 tile{

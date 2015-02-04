@@ -4132,9 +4132,9 @@ tile{
 
 teletransporter{
   layer = 0,
-  x = 56,
+  x = 64,
   y = 1120,
-  width = 480,
+  width = 464,
   height = 16,
   name = "to_G8",
   transition = "scrolling",
@@ -7393,9 +7393,9 @@ teletransporter{
 teletransporter{
   layer = 0,
   x = -16,
-  y = 752,
+  y = 760,
   width = 16,
-  height = 368,
+  height = 336,
   name = "to_F7_2",
   transition = "scrolling",
   destination_map = "49",

@@ -4418,6 +4418,15 @@ dynamic_tile{
   enabled_at_start = true,
 }
 
+wall{
+  layer = 0,
+  x = 1112,
+  y = 232,
+  width = 8,
+  height = 8,
+  stops_hero = true,
+}
+
 tile{
   layer = 1,
   x = 992,

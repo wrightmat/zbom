@@ -8770,9 +8770,9 @@ sensor{
 
 teletransporter{
   layer = 0,
-  x = 576,
+  x = 656,
   y = 1120,
-  width = 544,
+  width = 304,
   height = 16,
   name = "to_F10",
   transition = "scrolling",
@@ -8858,9 +8858,9 @@ teletransporter{
 teletransporter{
   layer = 0,
   x = -16,
-  y = 40,
+  y = 48,
   width = 16,
-  height = 1040,
+  height = 208,
   name = "to_E9",
   transition = "scrolling",
   destination_map = "41",
@@ -9334,6 +9334,27 @@ dynamic_tile{
   name = "night_window_7",
   pattern = "2173",
   enabled_at_start = false,
+}
+
+wall{
+  layer = 0,
+  x = 1112,
+  y = 744,
+  width = 8,
+  height = 8,
+  stops_hero = true,
+}
+
+teletransporter{
+  layer = 0,
+  x = -16,
+  y = 320,
+  width = 16,
+  height = 96,
+  name = "to_E9_2",
+  transition = "scrolling",
+  destination_map = "41",
+  destination = "_side",
 }
 
 tile{

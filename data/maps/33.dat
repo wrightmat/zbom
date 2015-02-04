@@ -2278,7 +2278,7 @@ tile{
 
 tile{
   layer = 0,
-  x = -16,
+  x = -32,
   y = 32,
   width = 288,
   height = 16,
@@ -3502,7 +3502,7 @@ tile{
 
 tile{
   layer = 0,
-  x = -8,
+  x = -24,
   y = 48,
   width = 32,
   height = 8,
@@ -4753,7 +4753,7 @@ tile{
 
 tile{
   layer = 0,
-  x = -16,
+  x = -32,
   y = 8,
   width = 288,
   height = 24,
@@ -6628,9 +6628,9 @@ teletransporter{
 
 teletransporter{
   layer = 0,
-  x = 272,
+  x = 256,
   y = -16,
-  width = 336,
+  width = 352,
   height = 16,
   name = "to_G10",
   transition = "scrolling",
@@ -6760,9 +6760,9 @@ teletransporter{
 
 teletransporter{
   layer = 0,
-  x = 1000,
+  x = 1032,
   y = -16,
-  width = 80,
+  width = 48,
   height = 16,
   name = "to_G10_2",
   transition = "scrolling",
@@ -6950,7 +6950,16 @@ teletransporter{
 
 tile{
   layer = 2,
-  x = 272,
+  x = 256,
+  y = 24,
+  width = 8,
+  height = 16,
+  pattern = "1500",
+}
+
+tile{
+  layer = 2,
+  x = 256,
   y = 0,
   width = 8,
   height = 24,
@@ -8291,7 +8300,7 @@ tile{
 
 tile{
   layer = 2,
-  x = -16,
+  x = -32,
   y = -24,
   width = 288,
   height = 32,
