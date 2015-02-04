@@ -62,7 +62,7 @@ for enemy in map:get_entities("chuchu") do
         game:set_value("i1027", 5)
         local m = sol.movement.create("target")
 	m:set_ignore_obstacles(true)
-        m:set_target(768, 1112)
+        m:set_target(768, 1120)
         m:set_speed(32)
         m:start(npc_crista, function()
 	  npc_crista:remove()

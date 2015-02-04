@@ -114,7 +114,7 @@ function sensor_festival_dialog:on_activated()
           game:start_dialog("tristan.0.festival_response", game:get_player_name(), function()
             game:start_dialog("francis.1.festival_race", function(answer)
               if answer == 1 then
-		game:set_value("i1028", 1)
+	        game:set_value("i1028", 1)
                 if game:has_item("lamp") then
                   game:start_dialog("tristan.0.festival_rules", function()
 		    random_walk(npc_jarred)
@@ -219,9 +219,9 @@ function npc_tristan:on_interaction()
     end
   else
     game:start_dialog("tristan.0.festival_question", function(answer)
-      if answer == 1 then
-	game:set_value("i1028", 1)
+      game:set_value("i1028", 1)
         if game:has_item("lamp") then
+          if answer == 1 then
           game:start_dialog("tristan.0.festival_rules")
         else
           game:start_dialog("tristan.0.festival_lamp")
@@ -254,10 +254,10 @@ function map:on_update()
     sol.audio.play_sound("chest_appears")
     game:set_value("i1028", 3)
   end
-  if game:get_value("i1028") >= 1 and game:get_value("i1028") <= 3 then
+  if game:get_value("i1027") < 3 then
     map:set_entities_enabled("banner_race", true)
-    map:set_entities_enabled("sensor_race", true)
     if game:get_value("i1028") > 1 then
+      map:set_entities_enabled("sensor_race", true)
       to_F15:set_enabled(false)
       to_F13:set_enabled(false)
       to_E14_2:set_enabled(false)
