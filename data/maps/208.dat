@@ -5151,7 +5151,7 @@ enemy{
 chest{
   layer = 0,
   x = 80,
-  y = 77,
+  y = 85,
   name = "chest_alchemy_stone",
   treasure_name = "alchemy",
   treasure_savegame_variable = "b1157",
@@ -5665,7 +5665,7 @@ enemy{
 
 sensor{
   layer = 0,
-  x = 672,
+  x = 664,
   y = 269,
   width = 16,
   height = 48,
@@ -5706,6 +5706,18 @@ enemy{
   name = "keese_ice_3",
   direction = 3,
   breed = "keese_ice",
+}
+
+wall{
+  layer = 0,
+  x = 672,
+  y = 264,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 wall{

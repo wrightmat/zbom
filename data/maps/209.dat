@@ -11,6 +11,24 @@ properties{
 
 tile{
   layer = 0,
+  x = 472,
+  y = 248,
+  width = 288,
+  height = 192,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 256,
+  width = 8,
+  height = 176,
+  pattern = "64",
+}
+
+tile{
+  layer = 0,
   x = 360,
   y = 1320,
   width = 320,
@@ -106,15 +124,6 @@ tile{
   width = 80,
   height = 48,
   pattern = "136",
-}
-
-tile{
-  layer = 0,
-  x = 472,
-  y = 248,
-  width = 288,
-  height = 192,
-  pattern = "22",
 }
 
 tile{
@@ -3917,15 +3926,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 472,
-  y = 256,
-  width = 8,
-  height = 176,
-  pattern = "64",
-}
-
-tile{
-  layer = 0,
   x = 480,
   y = 248,
   width = 288,
@@ -5402,12 +5402,12 @@ switch{
   layer = 0,
   x = 848,
   y = 1136,
-  name = "switch_star_1",
+  name = "switch_star_boss",
   subtype = "walkable",
   sprite = "entities/switch_star",
   sound = "switch",
   needs_block = false,
-  inactivate_when_leaving = false,
+  inactivate_when_leaving = true,
 }
 
 chest{
@@ -5482,7 +5482,7 @@ enemy{
 
 sensor{
   layer = 0,
-  x = 400,
+  x = 392,
   y = 309,
   width = 16,
   height = 48,
@@ -5491,8 +5491,8 @@ sensor{
 
 pickable{
   layer = 0,
-  x = 328,
-  y = 221,
+  x = 352,
+  y = 189,
   name = "boss_heart",
   treasure_name = "heart_container",
   treasure_savegame_variable = "b1149",
@@ -5569,7 +5569,7 @@ switch{
   layer = 0,
   x = 512,
   y = 1560,
-  name = "switch_star_3",
+  name = "switch_star_1",
   subtype = "walkable",
   sprite = "entities/switch_star",
   sound = "switch",
@@ -5630,6 +5630,173 @@ dynamic_tile{
   name = "hole_boss_5",
   pattern = "524",
   enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 768,
+  y = 864,
+  width = 64,
+  height = 64,
+  name = "hole_boss_6",
+  pattern = "524",
+  enabled_at_start = true,
+}
+
+enemy{
+  layer = 0,
+  x = 872,
+  y = 781,
+  name = "hardhat_6",
+  direction = 3,
+  breed = "hardhat_beetle_red",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 912,
+  y = 869,
+  name = "hardhat_7",
+  direction = 3,
+  breed = "hardhat_beetle_red",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 856,
+  y = 973,
+  name = "hardhat_8",
+  direction = 3,
+  breed = "hardhat_beetle_red",
+  treasure_name = "random",
+}
+
+wall{
+  layer = 0,
+  x = 472,
+  y = 304,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 400,
+  y = 304,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 400,
+  y = 144,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 472,
+  y = 144,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 832,
+  y = 432,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 832,
+  y = 504,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 880,
+  y = 656,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 880,
+  y = 728,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+enemy{
+  layer = 0,
+  x = 248,
+  y = 525,
+  name = "hardhat_9",
+  direction = 3,
+  breed = "hardhat_beetle_blue",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 328,
+  y = 669,
+  name = "hardhat_10",
+  direction = 3,
+  breed = "hardhat_beetle_blue",
+  treasure_name = "random",
+}
+
+destructible{
+  layer = 0,
+  x = 264,
+  y = 1381,
+  treasure_name = "magic_flask",
+  treasure_variant = 2,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
 }
 
 tile{
