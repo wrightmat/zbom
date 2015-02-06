@@ -2,7 +2,7 @@ local enemy = ...
 local map = enemy:get_map()
 
 -- Big Ice Chu: A large gelatinous miniboss who
--- tries to either squish or freeze our hero.
+-- tries to freeze our hero.
 
 local head = nil
 local current_xy = {}
@@ -10,7 +10,6 @@ local freezing = false
 local going_hero = false
 
 function enemy:on_created()
-  map:get_hero():start_treasure("bomb_bag")
   self:set_life(10)
   self:set_damage(2)
   self:create_sprite("enemies/chu_big_ice")
@@ -19,7 +18,9 @@ function enemy:on_created()
   self:set_hurt_style("boss")
   self:set_pushed_back_when_hurt(false)
   self:set_push_hero_on_sword(true)
+end
 
+function enemy:on_enabled()
   -- Create the head.
   local my_name = self:get_name()
   head = self:create_enemy{
@@ -91,9 +92,10 @@ function enemy:on_hurt(attack)
   end
 end
 
-function enemy:on_dead()
-  -- Kill the head.
-  head:hurt(1)
+function enemy:on_dying()
+  sol.timer.start(self:get_map(), 1000, function()
+    self:get_map():get_entity("miniboss_chu_head"):set_life(0)
+  end)
 end
 
 function enemy:on_update()
@@ -111,14 +113,16 @@ function enemy:check_hero()
   local near_hero = layer == hero_layer
     and self:get_distance(hero) < 100
 
-  if near_hero and not going_hero then
-    self:go_hero()
-  elseif near_hero and going_hero then
-    self:freeze()
-  elseif not near_hero and going_hero then
+  if near_hero then
+    if math.random(3) == 1 then
+      self:freeze()
+    else
+      self:go_hero()
+    end
+  else
     self:go_random()
   end
-  sol.timer.start(self, 1000, function() self:check_hero() end)
+  sol.timer.start(self, 5000, function() self:check_hero() end)
 end
 
 function enemy:freeze()

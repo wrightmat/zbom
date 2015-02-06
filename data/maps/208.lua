@@ -7,11 +7,11 @@ local game = map:get_game()
 
 function map:on_started(destination)
   map:set_doors_open("door_miniboss")
-  miniboss_chu:set_enabled(false)
+  if miniboss_chu ~= nil then miniboss_chu:set_enabled(false) end
 end
 
 function sensor_miniboss:on_activated()
-  if miniboss_chu ~= nil nil then
+  if miniboss_chu ~= nil then
     map:close_doors("door_miniboss")
     miniboss_chu:set_enabled(true)
     sol.audio.play_music("miniboss")
@@ -26,4 +26,8 @@ if miniboss_chu ~= nil then
       sol.audio.play_music("temple_snow")
     end)
   end
+end
+
+function switch_ice_block:on_activated()
+  map:open_doors("door_shutter1")
 end

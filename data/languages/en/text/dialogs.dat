@@ -1047,6 +1047,46 @@ book!
 }
 
 dialog{
+  id = "_treasure.book_mudora.5",
+  skip = "current",
+  icon = 20,
+  text = [[
+It's yet another page
+of the Book of
+Mudora!
+You have almost a
+complete book now!
+  ]]
+}
+
+dialog{
+  id = "_treasure.book_mudora.6",
+  skip = "current",
+  icon = 20,
+  text = [[
+It's the final page
+of the Book of
+Mudora!
+The book is complete,
+now it just needs its
+magic restored!
+  ]]
+}
+
+dialog{
+  id = "_treasure.book_mudora.7",
+  skip = "current",
+  icon = 20,
+  text = [[
+The Book of Mudora
+has been enchanted!
+Finally the book is
+back to its full
+power!
+  ]]
+}
+
+dialog{
   id = "_treasure.jade.1",
   skip = "current",
   icon = 21,

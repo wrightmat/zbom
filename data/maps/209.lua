@@ -1,11 +1,11 @@
 local map = ...
 local game = map:get_game()
-local i = 0
-local state = 1
 
 -------------------------------------------
 -- Dungeon 5: Snowpeak Caverns (Floor 2) --
 -------------------------------------------
+
+local state_star_boss = 1
 
 -- initial positions for pits (before star switch activated)
 local pit_positions_boss_1 = {
@@ -27,20 +27,23 @@ local pit_positions_boss_2 = {
 }
 
 function map:on_started(destination)
-  boss_stalfos:set_enabled(false)
+  if not game:get_value("b1147") then boss_stalfos:set_enabled(false) end
+  if not game:get_value("b1149") then boss_heart:set_enabled(false) end
 end
 
 function switch_star_boss:on_activated()
+  local pit_positions = nil
+  local i = 0
   for entity in map:get_entities("hole_boss") do
     i = i + 1
-    if state == 2 then
-      local position = (pit_positions_boss_2[i])
-      state = 1
+    if state_star_boss == 2 then
+      local pit_positions = (pit_positions_boss_2[i])
+      state_star_boss = 1
     else
-      local position = (pit_positions_boss_1[i])
-      state = 2
+      local pit_positions = (pit_positions_boss_1[i])
+      state_star_boss = 2
     end
-    entity:set_position(position.x, position.y)
+    entity:set_position(pit_positions.x, pit_positions.y)
   end
 end
 

@@ -14,7 +14,7 @@ local positions = {
 
 local vulnerable = false
 local hidden = false
-local timers = {}
+local timer = nil
 
 function enemy:on_created()
   self:set_life(10)
@@ -33,13 +33,12 @@ function enemy:on_created()
 end
 
 function enemy:on_restarted()
-  for _, t in ipairs(timers) do t:stop() end
   local sprite = self:get_sprite()
   local action = math.random(2)
 
-  if hidden == false then
+  if not hidden and not vulnerable then
     if action == 1 then
-      timers[#timers + 1] = sol.timer.start(self, math.random(10)*700, function() self:hide() end)
+      timer = sol.timer.start(self, math.random(10)*500, function() self:hide() end)
     else
       self:go_hero()
     end
@@ -53,11 +52,21 @@ function enemy:on_hurt()
   enemy:restart()
 end
 
+function enemy:on_update()
+  if vulnerable then
+    self:get_sprite():set_animation("immobilized")
+    self:set_attack_consequence("sword", 1)
+  else
+    self:get_sprite():set_animation("walking")
+    self:set_attack_consequence("sword", "protected")
+  end
+end
+
 function enemy:hide()
   vulnerable = false
   hidden = true
   self:set_position(-100, -100)
-  timers[#timers + 1] = sol.timer.start(self, math.random(10)*500, function() self:unhide() end)
+  timer = sol.timer.start(self, math.random(10)*500, function() self:unhide() end)
 end
 
 function enemy:unhide()
@@ -71,7 +80,7 @@ end
 function enemy:go_hero()
   self:get_sprite():set_animation("walking")
   local m = sol.movement.create("target")
-  m:set_speed(64)
+  m:set_speed(24)
   m:start(self)
   sol.timer.start(enemy, math.random(10)*1000, function() enemy:restart() end)
 end
@@ -79,16 +88,21 @@ end
 function enemy:on_custom_attack_received(attack, sprite)
   if attack == "explosion" then
     vulnerable = true
+    self:stop_movement()
     self:get_sprite():set_animation("immobilized")
     self:set_attack_consequence("sword", 1)
     attack_timer = sol.timer.start(self, 3000, function()
       vulnerable = false
-      self:get_sprite():set_animation("shaking")
       self:set_attack_consequence("sword", "protected")
+      self:get_sprite():set_animation("shaking")
     end)
   end
 
   function sprite:on_animation_finished(animation)
-    if animation == "shaking" then self:get_sprite():set_animation("walking") end
+    if animation == "shaking" then
+      vulnerable = false
+      self:get_sprite():set_animation("walking")
+      enemy:restart()
+    end
   end
 end

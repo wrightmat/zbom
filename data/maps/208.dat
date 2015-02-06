@@ -4972,6 +4972,7 @@ switch{
   layer = 0,
   x = 216,
   y = 1336,
+  name = "switch_ice_block",
   subtype = "walkable",
   sprite = "entities/switch",
   sound = "switch",
@@ -5651,16 +5652,8 @@ enemy{
   name = "miniboss_chu",
   direction = 3,
   breed = "chu_big_ice",
+  savegame_variable = "b1145",
   treasure_name = "alchemy",
-}
-
-enemy{
-  layer = 0,
-  x = 240,
-  y = 1572,
-  name = "wallmaster",
-  direction = 3,
-  breed = "wallmaster",
 }
 
 sensor{
@@ -5718,6 +5711,16 @@ wall{
   stops_npcs = true,
   stops_blocks = true,
   stops_projectiles = true,
+}
+
+chest{
+  layer = 0,
+  x = 640,
+  y = 1565,
+  name = "chest_compass",
+  treasure_name = "compass",
+  treasure_savegame_variable = "b1142",
+  sprite = "entities/chest",
 }
 
 wall{

@@ -5242,7 +5242,6 @@ destructible{
   x = 184,
   y = 517,
   treasure_name = "random",
-  treasure_variant = 2,
   sprite = "entities/pot",
   destruction_sound = "stone",
 }
@@ -5252,7 +5251,6 @@ destructible{
   x = 184,
   y = 677,
   treasure_name = "random",
-  treasure_variant = 2,
   sprite = "entities/pot",
   destruction_sound = "stone",
 }
@@ -5416,8 +5414,8 @@ chest{
   y = 125,
   name = "chest_book",
   treasure_name = "book_mudora",
-  treasure_variant = 7,
-  treasure_savegame_variable = "b1061",
+  treasure_variant = 5,
+  treasure_savegame_variable = "b1150",
   sprite = "entities/chest_big",
 }
 
@@ -5430,7 +5428,8 @@ teletransporter{
   name = "to_outside_from_book",
   sprite = "entities/teletransporter",
   sound = "warp",
-  destination_map = "209",
+  destination_map = "53",
+  destination = "from_cavern",
 }
 
 door{
