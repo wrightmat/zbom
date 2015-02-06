@@ -1,0 +1,55 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 320,
+  height = 240,
+  world = "outside_world",
+  tileset = "9",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 320,
+  height = 240,
+  pattern = "22",
+}
+
+destination{
+  layer = 0,
+  x = 24,
+  y = 29,
+  name = "start_position",
+  direction = 3,
+  default = true,
+}
+
+pickable{
+  layer = 0,
+  x = 24,
+  y = 61,
+  name = "bomb_bag",
+  treasure_name = "bomb_bag",
+  treasure_variant = 3,
+}
+
+pickable{
+  layer = 0,
+  x = 40,
+  y = 61,
+  name = "sword",
+  treasure_name = "sword",
+}
+
+enemy{
+  layer = 0,
+  x = 272,
+  y = 211,
+  name = "miniboss_chu_2",
+  direction = 3,
+  breed = "chu_big_ice",
+  savegame_variable = "b1145",
+  treasure_name = "alchemy",
+}
+

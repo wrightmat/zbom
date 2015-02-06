@@ -995,9 +995,13 @@ function savegame_menu:validate_player_name()
 end
 
 function savegame_menu:set_initial_values(savegame)
-
-  savegame:set_starting_location("0", "start_position")
-  savegame:set_value("player_name", self.player_name)
+  if self.player_name == "Test" or self.player_name == "test" then
+    savegame:set_starting_location("220", "start_position")
+    savegame:set_value("player_name", self.player_name)
+  else
+    savegame:set_starting_location("0", "start_position")
+    savegame:set_value("player_name", self.player_name)
+  end
 
   -- Initially give 3 hearts, the first tunic and the first wallet.
   savegame:set_max_life(12)
