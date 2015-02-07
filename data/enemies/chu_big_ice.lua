@@ -36,15 +36,12 @@ end
 
 function enemy:on_restarted()
   if not freezing then
-    print('restarted: not freezing')
     if going_hero then
       self:freeze()
     else
       self:go_random()
       self:check_hero()
     end
-  else
-    print('restarted: freezing')
   end
   current_xy.x, current_xy.y = self:get_position()
 end
@@ -71,7 +68,6 @@ end
 function enemy:on_attacking_hero(hero, enemy_sprite)
   -- If the enemy is frozen, then freeze the hero.
   if freezing then
-    print('freezing the hero on attack')
     if not freeze_timer then
       map:get_hero():start_hurt(2)
       map:get_hero():start_frozen(3000)
@@ -81,7 +77,6 @@ function enemy:on_attacking_hero(hero, enemy_sprite)
 end
 
 function enemy:on_hurt(attack)
-  print('hurt')
   -- The head wobbles when hurt.
   head:stop_movement()
   head:get_sprite():set_animation("hurt")
@@ -93,14 +88,12 @@ function enemy:on_custom_attack_received(attack, sprite)
   -- If the enemy is frozen, then freeze the hero.
   -- A bomb explosion gets rid of the freezing ice.
   if attack == "sword" then
-    print('custom attack received: sword')
     if not freeze_timer then
       map:get_hero():start_hurt(2)
       map:get_hero():start_frozen(3000)
     end
     freeze_timer = sol.timer.start(self, 4000, function() freeze_timer = nil end)
   elseif attack == "explosion" then
-    print('custom attack received: explosion')
     freezing = false
     sol.audio.play_sound("ice_shatter")
     self:get_sprite():set_animation("walking")
@@ -110,7 +103,6 @@ function enemy:on_custom_attack_received(attack, sprite)
 end
 
 function enemy:on_dying()
-  print('dying')
   sol.timer.start(self:get_map(), 1000, function()
     head:set_life(0)
   end)
@@ -153,7 +145,6 @@ function enemy:check_hero()
 end
 
 function enemy:freeze()
-  print('freezing')
   self:stop_movement()
   self:get_sprite():set_animation("ice")
   self:set_attack_consequence("sword", "custom")
@@ -162,7 +153,6 @@ function enemy:freeze()
 end
 
 function enemy:go_random()
-  print('going random')
   local movement = sol.movement.create("random_path")
   movement:set_speed(32)
   movement:start(self)
@@ -171,7 +161,6 @@ function enemy:go_random()
 end
 
 function enemy:go_hero()
-  print('going hero')
   local movement = sol.movement.create("target")
   movement:set_speed(40)
   movement:start(self)
