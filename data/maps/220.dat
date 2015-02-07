@@ -1,8 +1,8 @@
 properties{
   x = 0,
   y = 0,
-  width = 320,
-  height = 240,
+  width = 400,
+  height = 400,
   world = "outside_world",
   tileset = "9",
 }
@@ -11,8 +11,8 @@ tile{
   layer = 0,
   x = 0,
   y = 0,
-  width = 320,
-  height = 240,
+  width = 400,
+  height = 400,
   pattern = "22",
 }
 
@@ -44,12 +44,12 @@ pickable{
 
 enemy{
   layer = 0,
-  x = 272,
-  y = 211,
-  name = "miniboss_chu_2",
+  x = 264,
+  y = 204,
+  name = "boss_stalfos",
   direction = 3,
-  breed = "chu_big_ice",
-  savegame_variable = "b1145",
+  breed = "stalfos_knight",
+  rank = 2,
   treasure_name = "alchemy",
 }
 

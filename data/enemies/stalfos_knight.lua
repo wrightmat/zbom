@@ -14,7 +14,7 @@ local positions = {
 
 local vulnerable = false
 local hidden = false
-local timer = nil
+local timers = {}
 
 function enemy:on_created()
   self:set_life(10)
@@ -33,13 +33,14 @@ function enemy:on_created()
 end
 
 function enemy:on_restarted()
-  local sprite = self:get_sprite()
-  local action = math.random(2)
+  for _, t in ipairs(timers) do t:stop() end
 
   if not hidden and not vulnerable then
-    if action == 1 then
-      timer = sol.timer.start(self, math.random(10)*500, function() self:hide() end)
+    if math.random(2) == 1 then
+      print('restarted: hiding')
+      timers[#timers + 1] = sol.timer.start(self, math.random(10)*500, function() self:hide() end)
     else
+      print('restarted: going hero')
       self:go_hero()
     end
   end
@@ -49,6 +50,9 @@ function enemy:on_obstacle_reached(movement)
   enemy:restart()
 end
 function enemy:on_hurt()
+  print('hurt')
+  self:get_sprite():set_animation("hurt")
+  vulnerable = false
   enemy:restart()
 end
 
@@ -65,16 +69,27 @@ end
 function enemy:hide()
   vulnerable = false
   hidden = true
-  self:set_position(-100, -100)
-  timer = sol.timer.start(self, math.random(10)*500, function() self:unhide() end)
+  self:get_sprite():set_animation("head")
+  sol.audio.play_sound("stalfos_laugh")
+  local position = self:get_position()
+    self:create_enemy({
+	x = position.x + 20,
+	y = position.y + 20,
+	breed = "keese_ice",
+	treasure_name = "heart"
+    })
+  sol.timer.start(self, 2000, function() self:set_position(-100, -100) end)
+  timers[#timers + 1] = sol.timer.start(self, math.random(20)*100, function() self:unhide() end)
 end
 
 function enemy:unhide()
   hidden = false
   local position = (positions[math.random(#positions)])
+  print('unhiding: returning to position ['..position.x..','..position.y..']')
+  sol.audio.play_sound("stalfos_laugh")
   self:set_position(position.x, position.y)
-  local sprite = self:get_sprite()
-  sprite:set_direction(position.direction4)
+  self:get_sprite():set_direction(position.direction4)
+  sol.timer.start(self, 2000, function() self:go_hero() end)
 end
 
 function enemy:go_hero()
@@ -87,6 +102,7 @@ end
 
 function enemy:on_custom_attack_received(attack, sprite)
   if attack == "explosion" then
+    print('custom attack received: explosion')
     vulnerable = true
     self:stop_movement()
     self:get_sprite():set_animation("immobilized")
@@ -100,6 +116,7 @@ function enemy:on_custom_attack_received(attack, sprite)
 
   function sprite:on_animation_finished(animation)
     if animation == "shaking" then
+      print('recovered from explosion')
       vulnerable = false
       self:get_sprite():set_animation("walking")
       enemy:restart()
