@@ -111,6 +111,13 @@ function switch_water_chest:on_activated()
   sol.audio.play_sound("secret")
 end
 
+function switch_spike:on_activated()
+  spike:set_activated(true)
+end
+function switch_spike:on_inactivated()
+  spike:set_activated(false)
+end
+
 for enemy in map:get_entities("aquadracini") do
   enemy.on_dead = function()
     if not map:has_entities("aquadracini") then

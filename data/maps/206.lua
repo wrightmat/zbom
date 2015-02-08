@@ -20,6 +20,7 @@ function map:on_started(destination)
   end
   if game:get_value("b1134") then
     water_room1:set_enabled(false)
+    to_outside:set_destination_name("from_lair_finished")
   end
 end
 

@@ -101,18 +101,27 @@ function elder_larin:on_interaction()
 end
 
 function elder_gonpho:on_interaction()
+  if game:get_value("i1032") > 2 then
+    game:start_dialog("gonpho.0.council_zelda")
+  else
+    game:start_dialog("gonpho.0.council")
+  end
 end
 
 function elder_koshi:on_interaction()
+  if game:get_value("i1032") > 2 then
+    game:start_dialog("koshi.0.council_zelda")
+  else
+    game:start_dialog("koshi.0.council")
+  end
 end
 
 function sensor_zirna_cutscene:on_activated()
-  -- if the player has been to library and heard
+  -- If the player has been to library and heard
   -- Ordona speak, then continue the story with a
   -- Dark Interloper cutscene where they take Zelda
   if game:get_value("i1032") == 2 then
     local hx, hy, hl = map:get_hero():get_position()
-    --hero:freeze()
     npc_zirna:set_enabled(true)
     sol.audio.play_music("battle")
     local m = sol.movement.create("target")
@@ -148,7 +157,6 @@ function sensor_zirna_cutscene:on_activated()
 		        dark_appears:remove()
 		        game:set_value("i1032", 3)
 		        sol.timer.start(1000, function()
-			  --hero:unfreeze()
 			  sol.audio.play_music("castle")
 		        end)
 		      end)
@@ -164,7 +172,7 @@ function sensor_zirna_cutscene:on_activated()
   end
 end
 
--- Functions called when the player wants to talk to game characters.
+
 function chests_man:on_interaction()
   -- chest game dialog
   if playing_chests then

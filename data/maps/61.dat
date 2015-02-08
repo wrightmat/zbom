@@ -10,6 +10,15 @@ properties{
 
 tile{
   layer = 0,
+  x = 72,
+  y = 1088,
+  width = 1056,
+  height = 32,
+  pattern = "49",
+}
+
+tile{
+  layer = 0,
   x = 48,
   y = 1080,
   width = 16,
@@ -2470,7 +2479,7 @@ teletransporter{
   x = 1120,
   y = 0,
   width = 16,
-  height = 1056,
+  height = 1040,
   name = "to_D6",
   transition = "scrolling",
   destination_map = "62",
@@ -2573,7 +2582,7 @@ npc{
   layer = 0,
   x = 800,
   y = 173,
-  name = "npc_anouki",
+  name = "npc_anouki_2",
   direction = 3,
   subtype = "1",
   sprite = "npc/snowpeak_anouki",

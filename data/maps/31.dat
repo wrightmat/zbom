@@ -5391,6 +5391,14 @@ destructible{
   can_be_cut = true,
 }
 
+destination{
+  layer = 0,
+  x = 760,
+  y = 581,
+  name = "from_lair_finished",
+  direction = 3,
+}
+
 tile{
   layer = 1,
   x = 688,
