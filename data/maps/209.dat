@@ -5469,8 +5469,8 @@ door{
 
 enemy{
   layer = 0,
-  x = 296,
-  y = 268,
+  x = 232,
+  y = 316,
   name = "boss_stalfos",
   direction = 3,
   breed = "stalfos_knight",
@@ -5490,8 +5490,8 @@ sensor{
 
 pickable{
   layer = 0,
-  x = 352,
-  y = 189,
+  x = 360,
+  y = 165,
   name = "boss_heart",
   treasure_name = "heart_container",
   treasure_savegame_variable = "b1149",
@@ -5796,6 +5796,330 @@ destructible{
   treasure_variant = 2,
   sprite = "entities/pot",
   destruction_sound = "stone",
+}
+
+custom_entity{
+  layer = 0,
+  x = 184,
+  y = 248,
+  width = 16,
+  height = 16,
+  name = "pit_boss_1_1",
+  direction = 3,
+  sprite = "entities/somaria_pit",
+  model = "somaria_pit",
+}
+
+custom_entity{
+  layer = 0,
+  x = 200,
+  y = 248,
+  width = 16,
+  height = 16,
+  name = "pit_boss_1_2",
+  direction = 3,
+  sprite = "entities/somaria_pit",
+  model = "somaria_pit",
+}
+
+custom_entity{
+  layer = 0,
+  x = 216,
+  y = 248,
+  width = 16,
+  height = 16,
+  name = "pit_boss_1_3",
+  direction = 3,
+  sprite = "entities/somaria_pit",
+  model = "somaria_pit",
+}
+
+custom_entity{
+  layer = 0,
+  x = 232,
+  y = 248,
+  width = 16,
+  height = 16,
+  name = "pit_boss_1_4",
+  direction = 3,
+  sprite = "entities/somaria_pit",
+  model = "somaria_pit",
+}
+
+custom_entity{
+  layer = 0,
+  x = 248,
+  y = 248,
+  width = 16,
+  height = 16,
+  name = "pit_boss_1_5",
+  direction = 3,
+  sprite = "entities/somaria_pit",
+  model = "somaria_pit",
+}
+
+custom_entity{
+  layer = 0,
+  x = 264,
+  y = 248,
+  width = 16,
+  height = 16,
+  name = "pit_boss_1_6",
+  direction = 3,
+  sprite = "entities/somaria_pit",
+  model = "somaria_pit",
+}
+
+custom_entity{
+  layer = 0,
+  x = 280,
+  y = 248,
+  width = 16,
+  height = 16,
+  name = "pit_boss_1_7",
+  direction = 3,
+  sprite = "entities/somaria_pit",
+  model = "somaria_pit",
+}
+
+custom_entity{
+  layer = 0,
+  x = 296,
+  y = 248,
+  width = 16,
+  height = 16,
+  name = "pit_boss_1_8",
+  direction = 3,
+  sprite = "entities/somaria_pit",
+  model = "somaria_pit",
+}
+
+custom_entity{
+  layer = 0,
+  x = 312,
+  y = 248,
+  width = 16,
+  height = 16,
+  name = "pit_boss_1_9",
+  direction = 3,
+  sprite = "entities/somaria_pit",
+  model = "somaria_pit",
+}
+
+custom_entity{
+  layer = 0,
+  x = 328,
+  y = 248,
+  width = 16,
+  height = 16,
+  name = "pit_boss_1_10",
+  direction = 3,
+  sprite = "entities/somaria_pit",
+  model = "somaria_pit",
+}
+
+custom_entity{
+  layer = 0,
+  x = 344,
+  y = 248,
+  width = 16,
+  height = 16,
+  name = "pit_boss_1_11",
+  direction = 3,
+  sprite = "entities/somaria_pit",
+  model = "somaria_pit",
+}
+
+custom_entity{
+  layer = 0,
+  x = 360,
+  y = 248,
+  width = 16,
+  height = 16,
+  name = "pit_boss_1_12",
+  direction = 3,
+  sprite = "entities/somaria_pit",
+  model = "somaria_pit",
+}
+
+custom_entity{
+  layer = 0,
+  x = 376,
+  y = 248,
+  width = 16,
+  height = 16,
+  name = "pit_boss_1_13",
+  direction = 3,
+  sprite = "entities/somaria_pit",
+  model = "somaria_pit",
+}
+
+custom_entity{
+  layer = 0,
+  x = 392,
+  y = 248,
+  width = 16,
+  height = 16,
+  name = "pit_boss_1_14",
+  direction = 3,
+  sprite = "entities/somaria_pit",
+  model = "somaria_pit",
+}
+
+custom_entity{
+  layer = 0,
+  x = 296,
+  y = 136,
+  width = 16,
+  height = 16,
+  name = "pit_boss_2_1",
+  direction = 3,
+  sprite = "entities/somaria_pit",
+  model = "somaria_pit",
+}
+
+custom_entity{
+  layer = 0,
+  x = 296,
+  y = 152,
+  width = 16,
+  height = 16,
+  name = "pit_boss_2_2",
+  direction = 3,
+  sprite = "entities/somaria_pit",
+  model = "somaria_pit",
+}
+
+custom_entity{
+  layer = 0,
+  x = 296,
+  y = 168,
+  width = 16,
+  height = 16,
+  name = "pit_boss_2_3",
+  direction = 3,
+  sprite = "entities/somaria_pit",
+  model = "somaria_pit",
+}
+
+custom_entity{
+  layer = 0,
+  x = 296,
+  y = 184,
+  width = 16,
+  height = 16,
+  name = "pit_boss_2_4",
+  direction = 3,
+  sprite = "entities/somaria_pit",
+  model = "somaria_pit",
+}
+
+custom_entity{
+  layer = 0,
+  x = 296,
+  y = 200,
+  width = 16,
+  height = 16,
+  name = "pit_boss_2_5",
+  direction = 3,
+  sprite = "entities/somaria_pit",
+  model = "somaria_pit",
+}
+
+custom_entity{
+  layer = 0,
+  x = 296,
+  y = 216,
+  width = 16,
+  height = 16,
+  name = "pit_boss_2_6",
+  direction = 3,
+  sprite = "entities/somaria_pit",
+  model = "somaria_pit",
+}
+
+custom_entity{
+  layer = 0,
+  x = 296,
+  y = 232,
+  width = 16,
+  height = 16,
+  name = "pit_boss_2_7",
+  direction = 3,
+  sprite = "entities/somaria_pit",
+  model = "somaria_pit",
+}
+
+custom_entity{
+  layer = 0,
+  x = 296,
+  y = 264,
+  width = 16,
+  height = 16,
+  name = "pit_boss_2_8",
+  direction = 3,
+  sprite = "entities/somaria_pit",
+  model = "somaria_pit",
+}
+
+custom_entity{
+  layer = 0,
+  x = 296,
+  y = 280,
+  width = 16,
+  height = 16,
+  name = "pit_boss_2_9",
+  direction = 3,
+  sprite = "entities/somaria_pit",
+  model = "somaria_pit",
+}
+
+custom_entity{
+  layer = 0,
+  x = 296,
+  y = 296,
+  width = 16,
+  height = 16,
+  name = "pit_boss_2_10",
+  direction = 3,
+  sprite = "entities/somaria_pit",
+  model = "somaria_pit",
+}
+
+custom_entity{
+  layer = 0,
+  x = 296,
+  y = 312,
+  width = 16,
+  height = 16,
+  name = "pit_boss_2_11",
+  direction = 3,
+  sprite = "entities/somaria_pit",
+  model = "somaria_pit",
+}
+
+custom_entity{
+  layer = 0,
+  x = 296,
+  y = 328,
+  width = 16,
+  height = 16,
+  name = "pit_boss_2_12",
+  direction = 3,
+  sprite = "entities/somaria_pit",
+  model = "somaria_pit",
+}
+
+custom_entity{
+  layer = 0,
+  x = 296,
+  y = 344,
+  width = 16,
+  height = 16,
+  name = "pit_boss_2_13",
+  direction = 3,
+  sprite = "entities/somaria_pit",
+  model = "somaria_pit",
 }
 
 tile{
