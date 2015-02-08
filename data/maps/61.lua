@@ -1,5 +1,6 @@
 local map = ...
 local game = map:get_game()
+local anouki_talk = 0
 
 ---------------------------------
 -- Outside World C6 (Snowpeak) --
@@ -13,9 +14,10 @@ local function random_walk(npc)
 end
 
 function map:on_started(destination)
-  random_walk(npc_anouki)
+  random_walk(npc_anouki_2)
 end
 
-function npc_anouki:on_interaction()
-
+function npc_anouki_2:on_interaction()
+  game:start_dialog("anouki_2."..anouki_talk..".snowpeak")
+  if anouki_talk == 0 then anouki_talk = 1 else anouki_talk = 0 end
 end

@@ -13,7 +13,11 @@ local function random_walk(npc)
 end
 
 function map:on_started(destination)
-  random_walk(npc_anouki)
+  random_walk(npc_anouki_1)
+end
+
+function npc_anouki_1:on_interaction()
+  game:start_dialog("anouki_1.0.snowpeak")
 end
 
 function sensor_snow_drift_1:on_activated()
@@ -24,8 +28,4 @@ end
 function sensor_snow_drift_2:on_activated()
   x, y, l = map:get_hero():get_position()
   map:get_hero():set_position(x, y, 0)
-end
-
-function npc_anouki:on_interaction()
-
 end

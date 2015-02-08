@@ -3249,7 +3249,7 @@ ore recently?
   ]]
 }
 
--- Jubu (Zora Elder and military commander)
+-- Juba (Zora Elder and military commander)
 -----------------------
 dialog{
   id = "juba.0.council",
@@ -3493,6 +3493,34 @@ spend some quality
 time with my people!
   ]]
 }
+
+-- Chief Gonpho (Anouki Elder)
+-----------------------
+dialog{
+  id = "gonpho.0.council",
+  skip = "current",
+  text = [[
+Hi stranger.
+I got no problem with
+you, I just come here
+to do a job. It's also
+nice to be in out of
+the cold sometimes...
+  ]]
+}
+
+dialog{
+  id = "gonpho.0.council_zelda",
+  skip = "current",
+  text = [[
+I can't lie, the
+council won't be
+able to find Zelda
+without you. We gotta
+ask for your help!
+  ]]
+}
+
 
 -- Great Fairies (Faron, etc.)
 -----------------------
@@ -6081,6 +6109,96 @@ I got here. Enjoy
 making your way out
 of this dreaded cave,
 hero...
+  ]]
+}
+
+dialog{
+  id = "anouki_1.0.snowpeak",
+  skip = "current",
+  text = [[
+Us Anouki... We gotta
+reputation for having
+sensitive hearts and
+refined speech...
+'Cause, ya know,
+that's what we're
+all about!
+  ]]
+}
+
+dialog{
+  id = "anouki_2.0.snowpeak",
+  skip = "current",
+  text = [[
+What's up here? What
+do you mean?!
+Look at all this
+awesome snow and ice!
+  ]]
+}
+
+
+dialog{
+  id = "anouki_2.1.snowpeak",
+  skip = "current",
+  text = [[
+Well, I guess there is
+a neat cave not far
+from here. I used to
+go all the time, but
+lately there's been
+a bunch of scary monsters
+in there. Maybe you could
+take care of that.
+  ]]
+}
+
+dialog{
+  id = "anouki_3.0.snowpeak",
+  skip = "current",
+  text = [[
+Cave? Yeah, Snowpeak
+Caverns! It's the best.
+Nothing but cold and
+dark as far as the eye
+can see.
+  ]]
+}
+
+dialog{
+  id = "anouki_3.1.snowpeak",
+  skip = "current",
+  text = [[
+THERE'S TWO CAVES
+HERE!!!
+Caves are just the
+best. That one over
+there even has a
+flying lady inside.
+  ]]
+}
+
+dialog{
+  id = "anouki_4.0.snowpeak",
+  skip = "current",
+  text = [[
+What am I doing way
+over here? Um... I'd
+ask you the same
+thing, mister.
+  ]]
+}
+
+dialog{
+  id = "anouki_5.0.snowpeak",
+  skip = "current",
+  text = [[
+You like our ice
+sculptures? Thanks!
+I made several of 
+them myself. It's
+fun to turn ice into
+other things.
   ]]
 }
 

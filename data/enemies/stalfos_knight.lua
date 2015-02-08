@@ -96,7 +96,6 @@ end
 function enemy:unhide()
   hidden = false
   local position = (positions[math.random(#positions)])
-  print('unhiding: returning to position ['..position.x..','..position.y..']')
   sol.audio.play_sound("stalfos_laugh")
   self:set_position(position.x, position.y)
   self:get_sprite():set_direction(position.direction4)
@@ -116,7 +115,6 @@ function enemy:on_custom_attack_received(attack, sprite)
   if attack == "sword" then
     hit_counter = hit_counter + 1
     sol.audio.play_sound("enemy_hurt")
-    print('hit #'..hit_counter)
     if hit_counter == 3 then
       self:set_attack_consequence("sword", "ignored")
       vulnerable = true
