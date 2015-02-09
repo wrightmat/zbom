@@ -112,10 +112,10 @@ function switch_water_chest:on_activated()
 end
 
 function switch_spike:on_activated()
-  spike:set_activated(true)
+  spike:set_enabled(true)
 end
 function switch_spike:on_inactivated()
-  spike:set_activated(false)
+  spike:set_enabled(false)
 end
 
 for enemy in map:get_entities("aquadracini") do

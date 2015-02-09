@@ -6113,6 +6113,46 @@ hero...
 }
 
 dialog{
+  id = "zora.0.lakebed",
+  skip = "current",
+  text = [[
+This is the Lakebed
+Temple, of the Zora
+people. Humans don't
+belong here. What's
+that you say about
+clearing it of evil?
+
+Okay, thanks, whatever.
+  ]]
+}
+
+dialog{
+  id = "zora.1.lakebed",
+  skip = "current",
+  text = [[
+So you think you got
+lost in our Temple
+and didn't find the
+last key, huh? I'm
+not surprised a sad
+little human couldn't
+cut it. Tell you what,
+if you promise not
+to come back here, I'll
+GIVE you the key so
+you can get your last
+piece of treasure or
+whatever it is you want.
+
+Deal?
+Yes
+No
+  ]]
+}
+
+
+dialog{
   id = "anouki_1.0.snowpeak",
   skip = "current",
   text = [[

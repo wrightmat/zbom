@@ -21,6 +21,8 @@ function map:on_started(destination)
   if game:get_value("b1134") then
     water_room1:set_enabled(false)
     to_outside:set_destination_name("from_lair_finished")
+  else
+    npc_zora:set_enabled(false)
   end
 end
 
@@ -92,4 +94,16 @@ end
 function set_intermediate_layer:on_activated()
   local x, y, l = map:get_entity("hero"):get_position()
   map:get_entity("hero"):set_position(x, y, 1)
+end
+
+function npc_zora:on_interaction()
+  if not game:get_value("b1124") then
+    game:start_dialog("zora.1.lakebed", function(answer)
+      if answer == 1 then
+        game:set_value("b1124", true)
+      end
+    end)
+  else
+    game:start_dialog("zora.0.lakebed")
+  end
 end

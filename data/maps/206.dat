@@ -7733,7 +7733,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1440,
+  x = 1448,
   y = 512,
   width = 16,
   height = 16,
@@ -7742,7 +7742,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1488,
+  x = 1480,
   y = 512,
   width = 16,
   height = 16,
@@ -8388,15 +8388,6 @@ tile{
   pattern = "710",
 }
 
-tile{
-  layer = 0,
-  x = 1440,
-  y = 488,
-  width = 64,
-  height = 8,
-  pattern = "107",
-}
-
 chest{
   layer = 0,
   x = 600,
@@ -8699,7 +8690,7 @@ chest{
 
 destructible{
   layer = 0,
-  x = 1448,
+  x = 1456,
   y = 525,
   treasure_name = "random",
   sprite = "entities/pot",
@@ -8708,7 +8699,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 1496,
+  x = 1488,
   y = 525,
   treasure_name = "random",
   sprite = "entities/pot",
@@ -9608,6 +9599,16 @@ dynamic_tile{
   enabled_at_start = true,
 }
 
+npc{
+  layer = 0,
+  x = 640,
+  y = 893,
+  name = "npc_zora",
+  direction = 3,
+  subtype = "0",
+  sprite = "npc/zora",
+}
+
 tile{
   layer = 1,
   x = 416,
@@ -10275,7 +10276,7 @@ destination{
   x = 824,
   y = 1125,
   name = "from_outside",
-  direction = 3,
+  direction = 1,
   default = true,
 }
 

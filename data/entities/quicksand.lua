@@ -17,8 +17,6 @@ function entity:on_created()
   self:get_sprite():set_animation("quicksand")
 
   self:add_collision_test("overlapping", function(quicksand, other)
-    -- This callback will be repeatedly called while other is overlapping the quicksand
-
     if other:get_type() ~= "hero" then
       return
     end
@@ -38,8 +36,9 @@ function entity:on_created()
 	if ey > hy then hy = hy + 1 else hy = hy - 1 end
         hero:set_position(hx, hy)
         timer = nil  -- This variable "timer" ensures that only one timer is running.
-        -- If hero stays in the quicksand too long (2 seconds), he sinks.
-        if time_in == 100 then
+        -- If hero stays in the quicksand too long, he sinks.
+        if time_in == 50 then
+	  time_in = 0
 	  self:set_modified_ground("hole")
         end
       end)
@@ -48,6 +47,7 @@ function entity:on_created()
   end)
 end
 
-function entity:on_update()
-  self:set_modified_ground("empty")
+function entity:on_ground_below_changed(ground_below)
+  -- Change ground back to normal from hole.
+  sol.timer.start(self, 1000, function() self:set_modified_ground("empty") end)
 end

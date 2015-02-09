@@ -11,6 +11,15 @@ properties{
 
 tile{
   layer = 0,
+  x = 1080,
+  y = 1232,
+  width = 112,
+  height = 16,
+  pattern = "703",
+}
+
+tile{
+  layer = 0,
   x = 944,
   y = 800,
   width = 32,
@@ -29,18 +38,18 @@ tile{
 
 tile{
   layer = 0,
-  x = 944,
+  x = 920,
   y = 824,
   width = 16,
-  height = 80,
+  height = 64,
   pattern = "76",
 }
 
 tile{
   layer = 0,
-  x = 960,
+  x = 944,
   y = 824,
-  width = 32,
+  width = 48,
   height = 80,
   pattern = "45",
 }
@@ -52,15 +61,6 @@ tile{
   width = 96,
   height = 48,
   pattern = "45",
-}
-
-tile{
-  layer = 0,
-  x = 1080,
-  y = 1232,
-  width = 112,
-  height = 16,
-  pattern = "702",
 }
 
 tile{
@@ -16175,8 +16175,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 808,
-  y = 832,
+  x = 816,
+  y = 840,
   width = 16,
   height = 16,
   pattern = "646",
@@ -16869,7 +16869,7 @@ tile{
 tile{
   layer = 0,
   x = 1480,
-  y = 1200,
+  y = 1184,
   width = 16,
   height = 32,
   pattern = "646",
@@ -17030,16 +17030,16 @@ tile{
 
 tile{
   layer = 0,
-  x = 952,
+  x = 936,
   y = 816,
-  width = 32,
+  width = 48,
   height = 16,
   pattern = "78",
 }
 
 tile{
   layer = 0,
-  x = 944,
+  x = 920,
   y = 816,
   width = 16,
   height = 16,
@@ -17156,25 +17156,25 @@ tile{
 
 tile{
   layer = 0,
-  x = 944,
+  x = 912,
   y = 808,
-  width = 32,
+  width = 64,
   height = 8,
   pattern = "88",
 }
 
 tile{
   layer = 0,
-  x = 936,
-  y = 808,
+  x = 912,
+  y = 816,
   width = 8,
-  height = 96,
+  height = 64,
   pattern = "86",
 }
 
 tile{
   layer = 0,
-  x = 936,
+  x = 912,
   y = 808,
   width = 8,
   height = 8,
@@ -17183,16 +17183,16 @@ tile{
 
 tile{
   layer = 0,
-  x = 848,
+  x = 856,
   y = 888,
-  width = 96,
+  width = 64,
   height = 16,
   pattern = "79",
 }
 
 tile{
   layer = 0,
-  x = 944,
+  x = 920,
   y = 888,
   width = 16,
   height = 16,
@@ -17221,14 +17221,14 @@ tile{
   layer = 0,
   x = 864,
   y = 880,
-  width = 80,
+  width = 48,
   height = 8,
   pattern = "88",
 }
 
 tile{
   layer = 0,
-  x = 936,
+  x = 912,
   y = 880,
   width = 8,
   height = 8,
@@ -17248,16 +17248,16 @@ tile{
   layer = 0,
   x = 848,
   y = 784,
-  width = 96,
+  width = 80,
   height = 112,
   pattern = "701",
 }
 
 tile{
   layer = 0,
-  x = 944,
+  x = 928,
   y = 784,
-  width = 48,
+  width = 64,
   height = 32,
   pattern = "701",
 }
@@ -17273,16 +17273,16 @@ tile{
 
 tile{
   layer = 0,
-  x = 960,
+  x = 944,
   y = 896,
-  width = 32,
+  width = 48,
   height = 8,
   pattern = "66",
 }
 
 tile{
   layer = 0,
-  x = 960,
+  x = 936,
   y = 896,
   width = 8,
   height = 8,
@@ -17291,7 +17291,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 960,
+  x = 936,
   y = 832,
   width = 8,
   height = 64,
@@ -17300,7 +17300,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 960,
+  x = 936,
   y = 832,
   width = 8,
   height = 8,
@@ -17309,9 +17309,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 968,
+  x = 944,
   y = 832,
-  width = 32,
+  width = 48,
   height = 8,
   pattern = "65",
 }
@@ -17323,6 +17323,15 @@ tile{
   width = 8,
   height = 8,
   pattern = "60",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 560,
+  width = 16,
+  height = 16,
+  pattern = "646",
 }
 
 chest{
@@ -17792,8 +17801,8 @@ door{
 
 chest{
   layer = 0,
-  x = 816,
-  y = 845,
+  x = 824,
+  y = 853,
   name = "chest_compass",
   treasure_name = "compass",
   treasure_savegame_variable = "b1126",
@@ -18016,7 +18025,7 @@ door{
 chest{
   layer = 0,
   x = 904,
-  y = 581,
+  y = 573,
   name = "chest_key_5",
   treasure_name = "small_key",
   treasure_savegame_variable = "b1125",
@@ -18293,7 +18302,7 @@ chest{
 pickable{
   layer = 0,
   x = 416,
-  y = 1189,
+  y = 1165,
   name = "boss_heart",
   treasure_name = "heart_container",
   treasure_savegame_variable = "b1133",
@@ -18529,8 +18538,9 @@ destructible{
   x = 1824,
   y = 461,
   treasure_name = "random",
-  sprite = "entities/pot",
+  sprite = "entities/stone_small_black",
   destruction_sound = "stone",
+  weight = 2,
 }
 
 wall{
@@ -18988,7 +18998,7 @@ stream{
 destructible{
   layer = 0,
   x = 1488,
-  y = 1229,
+  y = 1213,
   treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
@@ -19006,7 +19016,7 @@ destructible{
 destructible{
   layer = 0,
   x = 1488,
-  y = 1213,
+  y = 1197,
   treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
@@ -19106,7 +19116,7 @@ stream{
   x = 1072,
   y = 1245,
   name = "stream_water_1",
-  direction = 0,
+  direction = 4,
   sprite = "entities/stream_water",
   speed = 96,
   allow_movement = false,
@@ -19117,7 +19127,7 @@ stream{
   x = 1088,
   y = 1245,
   name = "stream_water_3",
-  direction = 0,
+  direction = 4,
   sprite = "entities/stream_water",
   speed = 96,
   allow_movement = false,
@@ -19128,7 +19138,7 @@ stream{
   x = 1200,
   y = 1245,
   name = "stream_water_4",
-  direction = 4,
+  direction = 0,
   sprite = "entities/stream_water",
   speed = 96,
   allow_movement = false,
@@ -19139,10 +19149,30 @@ stream{
   x = 1184,
   y = 1245,
   name = "stream_water_6",
-  direction = 4,
+  direction = 0,
   sprite = "entities/stream_water",
   speed = 96,
   allow_movement = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1568,
+  y = 1184,
+  width = 32,
+  height = 32,
+  name = "tile",
+  pattern = "623",
+  enabled_at_start = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1576,
+  y = 1213,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
 }
 
 tile{
