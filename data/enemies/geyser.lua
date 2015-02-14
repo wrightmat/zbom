@@ -13,8 +13,10 @@ function enemy:on_created()
 end
 
 function geyser_start()
-  enemy:get_sprite():set_animation("walking")
-  sol.timer.start(1300, geyser_stop)
+  if enemy:get_sprite() ~= nil then
+    enemy:get_sprite():set_animation("walking")
+    sol.timer.start(1300, geyser_stop)
+  end
 end
 
 function geyser_stop()

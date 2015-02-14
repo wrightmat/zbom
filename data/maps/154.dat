@@ -1949,6 +1949,15 @@ teletransporter{
   destination = "_side",
 }
 
+wall{
+  layer = 0,
+  x = 448,
+  y = 0,
+  width = 48,
+  height = 8,
+  stops_hero = true,
+}
+
 tile{
   layer = 2,
   x = 616,

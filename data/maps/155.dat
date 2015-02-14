@@ -95,3 +95,15 @@ teletransporter{
   destination = "_side",
 }
 
+teletransporter{
+  layer = 0,
+  x = 1120,
+  y = 224,
+  width = 16,
+  height = 896,
+  name = "to_C1",
+  transition = "scrolling",
+  destination_map = "159",
+  destination = "_side",
+}
+

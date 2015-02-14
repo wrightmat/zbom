@@ -1523,6 +1523,18 @@ teletransporter{
   destination = "_side",
 }
 
+teletransporter{
+  layer = 0,
+  x = 160,
+  y = 1120,
+  width = 960,
+  height = 16,
+  name = "to_A2",
+  transition = "scrolling",
+  destination_map = "152",
+  destination = "_side",
+}
+
 tile{
   layer = 2,
   x = 280,
@@ -1755,17 +1767,5 @@ tile{
   width = 64,
   height = 16,
   pattern = "2017",
-}
-
-teletransporter{
-  layer = 2,
-  x = 160,
-  y = 1120,
-  width = 960,
-  height = 16,
-  name = "to_A2",
-  transition = "scrolling",
-  destination_map = "152",
-  destination = "_side",
 }
 
