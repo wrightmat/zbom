@@ -1,9 +1,9 @@
 local map = ...
 local game = map:get_game()
 
---------------------------------------
+----------------------------------------------
 -- Great Fairy Fountain of Magic - Subrosia --
---------------------------------------
+----------------------------------------------
 
 if game:get_value("i1607")==nil then game:set_value("i1607", 0) end
 if game:get_value("i1836")==nil then game:set_value("i1836", 0) end
@@ -25,7 +25,9 @@ function sensor_fairy_speak:on_activated()
   elseif game:get_value("i1607") == 4 then
     game:start_dialog("great_fairy.4")
   elseif game:get_value("i1607") == 5 then
-    game:start_dialog("great_fairy.5.subrosia")
+    game:start_dialog("great_fairy.5.subrosia", function()
+      hero:start_treasure("bracelet", 2)
+    end)
   else
     game:start_dialog("great_fairy.0.subrosia", function()
       game:set_value("i1607", 1)

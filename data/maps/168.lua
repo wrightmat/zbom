@@ -1,9 +1,9 @@
 local map = ...
 local game = map:get_game()
 
--------------------------------------------------
+----------------------------------------------------------
 -- Great Fairy Fountain of Understanding - North Hyrule --
--------------------------------------------------
+----------------------------------------------------------
 
 if game:get_value("i1608")==nil then game:set_value("i1608", 0) end
 if game:get_value("i1834")==nil then game:set_value("i1834", 0) end
@@ -25,7 +25,9 @@ function sensor_fairy_speak:on_activated()
   elseif game:get_value("i1608") == 4 then
     game:start_dialog("great_fairy.4")
   elseif game:get_value("i1608") == 5 then
-    game:start_dialog("great_fairy.5.north")
+    game:start_dialog("great_fairy.5.north", function()
+      hero:start_treasure("sword", 3)
+    end)
   else
     game:start_dialog("great_fairy.0.north", function()
       game:set_value("i1608", 1)

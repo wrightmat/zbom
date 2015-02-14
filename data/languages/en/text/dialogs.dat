@@ -2937,6 +2937,66 @@ have some advice?
 }
 
 dialog{
+  id = "ordona.4.death_mountain",
+  skip = "current",
+  text = [[
+$v! $0. $0. $0.
+Now that you've seen
+Hyrule's heart of heat,
+you should explore her
+soul of cold. Snowpeak
+and the Anouki people
+lie on the other end
+of the world, in the
+far west. They may be
+able to lead you to
+your next prize.
+  ]]
+}
+
+dialog{
+  id = "ordona.4.snowpeak",
+  skip = "current",
+  text = [[
+$v! $0. $0. $0.
+Did you find the rope
+city on your way to
+Snowpeak? In the northern
+center of Hyrule lies
+Septen Heights, a
+relatively new addition
+to our landscape. A great
+tower has been built by
+the people there, and
+it seems likely that
+the prize you seek will
+be at the top.
+  ]]
+}
+
+dialog{
+  id = "ordona.4.septen",
+  skip = "current",
+  text = [[
+$v! $0. $0. $0.
+You have done well to
+put back together the
+Book of Mudora! It is
+now enchanted and complete,
+so it is finally time
+for you to seek out the
+dark tribe. I'm afraid I
+can no longer see your way,
+as the darkness will conceal
+it. I can sense a large
+concentration of dark magic
+in the eastern woods - what
+was once referred to as the
+Lost Woods.
+  ]]
+}
+
+dialog{
   id = "ordona.0.demo",
   skip = "current",
   text = [[

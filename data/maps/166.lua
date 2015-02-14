@@ -1,9 +1,9 @@
 local map = ...
 local game = map:get_game()
 
-------------------------------------------
+---------------------------------------------------
 -- Great Fairy Fountain of Kindness - Lake Hylia --
-------------------------------------------
+---------------------------------------------------
 
 if game:get_value("i1606")==nil then game:set_value("i1606", 0) end
 if game:get_value("i1832")==nil then game:set_value("i1832", 0) end
@@ -25,7 +25,9 @@ function sensor_fairy_speak:on_activated()
   elseif game:get_value("i1606") == 4 then
     game:start_dialog("great_fairy.4")
   elseif game:get_value("i1606") == 5 then
-    game:start_dialog("great_fairy.5.lake")
+    game:start_dialog("great_fairy.5.lake", function()
+      hero:start_treasure("boomerang", 2)
+    end)
   else
     game:start_dialog("great_fairy.0.lake", function()
       game:set_value("i1606", 1)
