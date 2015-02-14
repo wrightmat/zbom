@@ -10,6 +10,24 @@ properties{
 
 tile{
   layer = 0,
+  x = 112,
+  y = 592,
+  width = 32,
+  height = 528,
+  pattern = "49",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 112,
+  height = 1120,
+  pattern = "49",
+}
+
+tile{
+  layer = 0,
   x = 352,
   y = 256,
   width = 128,
@@ -1731,8 +1749,8 @@ npc{
 
 npc{
   layer = 0,
-  x = 432,
-  y = 189,
+  x = 800,
+  y = 637,
   name = "subrosian_orange",
   direction = 3,
   subtype = "0",
@@ -1761,11 +1779,10 @@ teletransporter{
 
 destination{
   layer = 0,
-  x = 744,
+  x = 784,
   y = 309,
   name = "from_surface",
   direction = 3,
-  sprite = "entities/destination",
   default = true,
 }
 
@@ -1791,6 +1808,19 @@ teletransporter{
   transition = "scrolling",
   destination_map = "156",
   destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = 776,
+  y = 272,
+  width = 16,
+  height = 16,
+  name = "to_surface",
+  sprite = "entities/teletransporter_subrosia",
+  sound = "warp",
+  destination_map = "59",
+  destination = "from_subrosia",
 }
 
 tile{

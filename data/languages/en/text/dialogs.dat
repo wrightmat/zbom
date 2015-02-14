@@ -1169,6 +1169,17 @@ the earth!
 }
 
 dialog{
+  id = "_treasure.master_ore.1",
+  skip = "current",
+  icon = 30,
+  text = [[
+You got some Master Ore!
+The blacksmith can use it
+to improve your sword!
+  ]]
+}
+
+dialog{
   id = "_treasure.glove.1",
   skip = "current",
   icon = 32,
@@ -6151,6 +6162,34 @@ No
   ]]
 }
 
+dialog{
+  id = "subrosian_blue.0.subrosia",
+  skip = "current",
+  text = [[
+Welcome to Subrosia!
+You might call this
+the "underworld" of
+your world - what
+do you call it?$0
+Hyrule?$0
+What a silly name.
+  ]]
+}
+
+dialog{
+  id = "subrosian_orange.0.subrosia",
+  skip = "current",
+  text = [[
+Welcome to Subrosia!
+This lovely place has
+all the lava you can
+soak in and ore galore!
+Do a little exploring,
+maybe you'll come
+across something of
+value to you.
+  ]]
+}
 
 dialog{
   id = "anouki_1.0.snowpeak",

@@ -17,3 +17,11 @@ function map:on_started(destination)
   random_walk(subrosian_blue)
   random_walk(subrosian_orange)
 end
+
+function subrosian_blue:on_interaction()
+  game:start_dialog("subrosian_blue.0.subrosia")
+end
+
+function subrosian_orange:on_interaction()
+  game:start_dialog("subrosian_orange.0.subrosia")
+end

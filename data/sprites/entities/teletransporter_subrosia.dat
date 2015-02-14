@@ -1,0 +1,9 @@
+animation{
+  name = "subrosia",
+  src_image = "entities/teletransporter.png",
+  frame_delay = 300,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 16, y = 16, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0, num_frames = 4 },
+  },
+}
