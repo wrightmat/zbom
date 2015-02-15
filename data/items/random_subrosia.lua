@@ -11,16 +11,15 @@ local probabilities = {
   [{ "arrow", 1 }]      = 8,    -- 1 arrow.
   [{ "arrow", 2 }]      = 5,    -- 5 arrows.
   [{ "arrow", 3 }]      = 2,    -- 10 arrows.
-  [{ "rupee", 1 }]      = 50,   -- 1 rupee.
-  [{ "rupee", 2 }]      = 15,   -- 5 rupees.
-  [{ "rupee", 3 }]      = 5,    -- 20 rupees.
   [{ "magic_flask", 1}] = 25,   -- Small magic jar.
   [{ "magic_flask", 2}] = 8,    -- Big magic jar.
-  [{ "heart", 1}]       = 100,  -- Heart.
+  [{ "heart", 1}]       = 60,  -- Heart.
   [{ "fairy", 1}]       = 2,    -- Fairy.
   [{ "alchemy", 1}]     = 1,    -- Alchemy Stone (rare drop item).
   [{ "plume", 1 }]      = 0.5,  -- Goddess Plume (exceptionally rare drop item).
-  [{ "ore", 1 }]        = 4,    -- Subrosian Ore (fairly rare drop item, only found in Subrosia).
+  [{ "amber", 1 }]      = 2,    -- Goron Amber (fairly rare drop item, only found in mountain areas).
+  [{ "crystal", 1 }]    = 2,    -- Magic Crystal (fairly rare drop item, only found in North Hyrule).
+  [{ "ore", 1 }]        = 40,    -- Subrosian Ore (drop item, only found in Subrosia).
 }
 
 function item:on_pickable_created(pickable)
