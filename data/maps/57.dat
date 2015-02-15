@@ -6592,3 +6592,27 @@ enemy{
   treasure_name = "random",
 }
 
+teletransporter{
+  layer = 0,
+  x = 120,
+  y = 1120,
+  width = 448,
+  height = 16,
+  name = "to_G6_3",
+  transition = "scrolling",
+  destination_map = "65",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 144,
+  name = "to_F5_2",
+  transition = "scrolling",
+  destination_map = "56",
+  destination = "_side",
+}
+

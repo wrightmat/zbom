@@ -8223,6 +8223,18 @@ teletransporter{
   destination = "_side",
 }
 
+teletransporter{
+  layer = 0,
+  x = 104,
+  y = -16,
+  width = 480,
+  height = 16,
+  name = "to_G5_3",
+  transition = "scrolling",
+  destination_map = "57",
+  destination = "_side",
+}
+
 tile{
   layer = 2,
   x = 216,

@@ -4612,6 +4612,16 @@ information than me.
 }
 
 dialog{
+  id = "impa.1.house",
+  skip = "current",
+  text = [[
+It's good to see you
+again, young hero.
+What can I do for you?
+  ]]
+}
+
+dialog{
   id = "impa.0.house_2",
   skip = "current",
   text = [[

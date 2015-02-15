@@ -4574,6 +4574,18 @@ npc{
   sprite = "npc/snowpeak_anouki",
 }
 
+teletransporter{
+  layer = 0,
+  x = 1120,
+  y = 0,
+  width = 16,
+  height = 240,
+  name = "to_D5_water",
+  transition = "scrolling",
+  destination_map = "54",
+  destination = "_side",
+}
+
 tile{
   layer = 1,
   x = 184,
