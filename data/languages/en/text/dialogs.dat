@@ -3370,6 +3370,40 @@ the Council office.
   ]]
 }
 
+dialog{
+  id = "juba.2.office",
+  skip = "current",
+  text = [[
+There's a Zora soldier
+guarding the entrance to
+our Domain?
+Yes, I fear my people have
+grown even more isolated
+since I've left. We've
+long been a solitary
+people, but it's now
+become detrimental to
+our own well being as a
+race. Tell you what, my
+people could use a wake
+up call. Tell that soldier
+that I've commanded that
+you be let in. Maybe you
+can open their eyes a
+little bit. If anyone
+could, it would be the
+one who cleared our great
+temple of evil.
+$0
+But wait, you won't get
+far without a way to 
+swim in the deep water.
+Take these, they are my
+people's sacred treasure -
+known as Zora's Flippers.
+  ]]
+}
+
 -- Tokage Gin (Tokay Elder and tribe leader)
 -----------------------
 dialog{
@@ -6259,6 +6293,162 @@ Ahhhhhhh!!!$0
 Nothing like a relaxing
 lava soak to take away
 your cares from the day!
+  ]]
+}
+
+dialog{
+  id = "subrosian_shaman.0.subrosia",
+  skip = "current",
+  text = [[
+Hello stranger.$0
+You're wondering why
+these trees are in such
+a uniform shape?
+This is a sacred place,
+concentrated with great
+magic if you know how
+to harness it. You
+might call me a Shaman,
+and that's why I'm here.
+  ]]
+}
+
+dialog{
+  id = "subrosian_shaman.1.subrosia",
+  skip = "current",
+  text = [[
+What can this magic do?
+Well, almost anything you
+could want! I've been
+studying here for many
+seasons, and I've almost
+found all of its secrets.
+  ]]
+}
+
+dialog{
+  id = "subrosian_shaman.2.subrosia",
+  skip = "current",
+  text = [[
+If you would like me to
+show you these secrets,
+I will need compensation
+for my time. As you likely
+know, we Subrosian deal
+only in the Ore that is
+scattered around our land.$0
+Show me that you can retrieve
+50 Subrosian Ore, and I will
+show you what your heart
+most desires.
+  ]]
+}
+
+dialog{
+  id = "subrosian_shaman.3.subrosia",
+  skip = "current",
+  text = [[
+You've done well to find
+all of this Ore, young
+apprentice.$0
+What? You're an apprentice
+now? Of course! Otherwise
+I would never show you
+the secrets. Now stand back
+while I conjure what your
+heart most desires...
+  ]]
+}
+
+dialog{
+  id = "subrosian_shaman.4.subrosia",
+  skip = "current",
+  text = [[
+There! I've done it!
+Look how great I am!$0
+What's that?$0 This isn't
+what your heart most desires?$0
+Of course it is! Take that
+marvelous ore and do something
+useful with it. And by you,
+I mean a qualified blacksmith -
+which you are not.
+  ]]
+}
+
+dialog{
+  id = "zora_gatekeeper.0.domain",
+  skip = "current",
+  text = [[
+Who are you?$0
+What's a $v?$0
+
+Doesn't matter. You're clearly
+not a Zora, so you don't belong
+here. Please leave now.
+  ]]
+}
+
+dialog{
+  id = "zora_gatekeeper.1.domain",
+  skip = "current",
+  text = [[
+We Zora are a proud people
+and will not allow our
+land to be encroached
+upon. You need to leave.
+  ]]
+}
+
+dialog{
+  id = "zora_gatekeeper.2.domain",
+  skip = "current",
+  text = [[
+Without our most sacred
+treasure, no one will
+be able to enter our
+Domain anyway. And we
+intend to keep it that
+way.
+  ]]
+}
+
+dialog{
+  id = "zora_gatekeeper.3.domain",
+  skip = "current",
+  text = [[
+What's our sacred treasure
+and where can you find it?$0
+Why in Jabun's name would
+I tell you that if I don't
+want anyone to come in
+here?
+  ]]
+}
+
+dialog{
+  id = "zora_gatekeeper.4.domain",
+  skip = "current",
+  text = [[
+Badgering me will not help.
+$0
+Please leave now.
+  ]]
+}
+
+dialog{
+  id = "zora_gatekeeper.5.domain",
+  skip = "current",
+  text = [[
+You've spoken with Juba?$0
+I'm not sure what difference
+that makes.$0
+He says to let you through?!
+That's crazy! That's uncalled
+for!$0
+But if that's what my commander
+wants, then who am I to stand
+in the way.
   ]]
 }
 

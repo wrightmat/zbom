@@ -3668,6 +3668,16 @@ destructible{
   can_explode = true,
 }
 
+npc{
+  layer = 0,
+  x = 640,
+  y = 661,
+  name = "subrosian_shaman",
+  direction = 3,
+  subtype = "0",
+  sprite = "npc/subrosian_green",
+}
+
 tile{
   layer = 2,
   x = 88,

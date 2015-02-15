@@ -5,10 +5,9 @@ animation{
     { x = 0, y = 128, frame_width = 28, frame_height = 32, origin_x = 12, origin_y = 29 },
     { x = 0, y = 160, frame_width = 28, frame_height = 32, origin_x = 12, origin_y = 29 },
     { x = 0, y = 192, frame_width = 28, frame_height = 32, origin_x = 12, origin_y = 29 },
-    { x = 0, y = 224, frame_width = 28, frame_height = 32, origin_x = 12, origin_y = 29 },
+    { x = 0, y = 224, frame_width = 28, frame_height = 40, origin_x = 12, origin_y = 29 },
   },
 }
-
 animation{
   name = "walking",
   src_image = "npc/zora.png",
@@ -18,6 +17,6 @@ animation{
     { x = 28, y = 128, frame_width = 28, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 2 },
     { x = 28, y = 160, frame_width = 28, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 2 },
     { x = 28, y = 192, frame_width = 28, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 2 },
-    { x = 28, y = 224, frame_width = 28, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 2 },
+    { x = 28, y = 224, frame_width = 28, frame_height = 40, origin_x = 12, origin_y = 29, num_frames = 2 },
   },
 }

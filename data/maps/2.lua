@@ -5,7 +5,9 @@ local game = map:get_game()
 -- Castle Town houses (game houses, castle inside, etc.) --
 -----------------------------------------------------------
 
-if game:get_value("i1032") == nil then game:set_value("i1032", 0) end
+if game:get_value("i1924")==nil then game:set_value("i1924", 0) end --Juba
+if game:get_value("i1032")==nil then game:set_value("i1032", 0) end
+
 local playing_chests = false
 local playing_slots = false
 local already_played_chests = false
@@ -77,7 +79,15 @@ function elder_juba:on_interaction()
   end
 end
 function elder_juba_office:on_interaction()
-  game:start_dialog("juba.1.office")
+  if game:get_value("i1923") > 1 and game:get_value("b1134") then
+    game:start_dialog("juba.2.office", function()
+      hero:start_treasure("flippers", 0)
+    end)
+    game:set_value("i1924", 2)
+  else
+    game:start_dialog("juba.1.office")
+    game:set_value("i1924", 1)
+  end
 end
 
 function elder_gin:on_interaction()

@@ -20,7 +20,7 @@ local probabilities = {
   [{ "fairy", 1}]       = 2,    -- Fairy.
   [{ "alchemy", 1}]     = 1,    -- Alchemy Stone (rare drop item).
   [{ "plume", 1 }]      = 0.5,  -- Goddess Plume (exceptionally rare drop item).
-  [{ "ore", 1 }]        = 2,    -- Subrosian Ore (fairly rare drop item, only found in Subrosia).
+  [{ "ore", 1 }]        = 4,    -- Subrosian Ore (fairly rare drop item, only found in Subrosia).
 }
 
 function item:on_pickable_created(pickable)
