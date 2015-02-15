@@ -3320,6 +3320,57 @@ ore recently?
   ]]
 }
 
+dialog{
+  id = "rudy.5.sword",
+  skip = "current",
+  text = [[
+That's... that's
+Master Ore!!!
+
+I don't know how you
+found that, but boy
+are you lucky! With
+that, I'll be able to
+make your sword more
+powerful in no time!
+How about it?
+Yes
+No
+  ]]
+}
+
+dialog{
+  id = "rudy.5.sword_1",
+  skip = "current",
+  text = [[
+Wonderful! Leave it
+to me and I'll get
+your old sword perked
+right up!
+  ]]
+}
+
+dialog{
+  id = "rudy.5.sword_2",
+  skip = "current",
+  text = [[
+Not sure what else
+you'll do with a hunk
+of ore, but it's your
+choice.
+  ]]
+}
+
+dialog{
+  id = "rudy.5.sword_leaving",
+  skip = "current",
+  text = [[
+Leaving already? Well,
+you wouldn't want to
+go without this, right?
+  ]]
+}
+
 -- Juba (Zora Elder and military commander)
 -----------------------
 dialog{

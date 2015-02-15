@@ -24,6 +24,22 @@ end
 function npc_rudy:on_interaction()
   if game:get_value("i1902") == 0 then   -- General dialogs for low Rep
     game:start_dialog("rudy.0", rudy_reputation)
+  elseif game:get_value("b1851") then
+    -- Has Master Ore - offer to upgrade sword
+    game:start_dialog("rudy.5.sword", function(answer)
+      if answer == 1 then
+        game:start_dialog("rudy.5.sword_1", function()
+	  game:set_ability("sword", 0)
+          local m = sol.movement.create("target")
+	  m:set_ignore_obstacles(true)
+          m:set_target(136, 120)
+          m:set_speed(32)
+	  m:start(npc_rudy)
+        end)
+      else
+        game:start_dialog("rudy.5.sword_2")
+      end
+    end)
   elseif game:get_value("i1902") >= 1 then
     -- Cave-specific dialogs for water bottle side quest
     if game:get_value("i1601") == 1 then
@@ -53,6 +69,15 @@ function npc_rudy:on_interaction()
     else
       game:start_dialog("rudy.1.cave", rudy_reputation)
       game:set_value("i1601", 1)
+    end
+  end
+end
+
+function sensor_leaving:on_activated()
+  if game:get_value("b1851") and game:get_ability("sword") == 0 then
+    game:start_dialog("rudy.5.sword_leaving", function()
+      game:start_treasure("sword", 2)
+      game:set_value("b1851", false)
     end
   end
 end
