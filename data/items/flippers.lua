@@ -1,7 +1,7 @@
 local item = ...
 
 function item:on_created()
-  self:set_savegame_variable("i1816")
+  self:set_savegame_variable("b1816")
 end
 
 function item:on_variant_changed(variant)

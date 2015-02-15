@@ -9357,6 +9357,18 @@ teletransporter{
   destination = "_side",
 }
 
+teletransporter{
+  layer = 0,
+  x = 568,
+  y = 1120,
+  width = 32,
+  height = 16,
+  name = "to_F10_3",
+  transition = "scrolling",
+  destination_map = "35",
+  destination = "_side",
+}
+
 tile{
   layer = 1,
   x = 680,

@@ -50,9 +50,9 @@ function map:on_started(destination)
     elder_koshi:remove()
     elder_zelda:remove()
   else
-    elder_juba_office:remove()
-    elder_gonpho_office:remove()
-    elder_koshi_office:remove()
+    --elder_juba_office:remove()
+    --elder_gonpho_office:remove()
+    --elder_koshi_office:remove()
   end
 
   -- Activate any night-specific dynamic tiles
@@ -79,14 +79,14 @@ function elder_juba:on_interaction()
   end
 end
 function elder_juba_office:on_interaction()
-  if game:get_value("i1923") > 1 and game:get_value("b1134") then
+  if game:get_value("i1923") == 1 and game:get_value("b1134") then
     game:start_dialog("juba.2.office", function()
-      hero:start_treasure("flippers", 0)
+      hero:start_treasure("flippers", 1)
     end)
     game:set_value("i1924", 2)
   else
     game:start_dialog("juba.1.office")
-    game:set_value("i1924", 1)
+    if game:get_value("i1924") == 0 then game:set_value("i1924", 1) end
   end
 end
 

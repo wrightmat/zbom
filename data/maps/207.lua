@@ -24,6 +24,7 @@ function map:on_started(destination)
     obstacle:set_enabled(false)
     obstacle_2:set_enabled(false)
   end
+  stone:set_enabled(false)
 end
 
 function door_bomb_1:on_opened()
@@ -48,9 +49,10 @@ end
 if boss_plasmarine_1 ~= nil and boss_plasmarine_2 ~= nil then
   function boss_plasmarine_1:on_dead()
     if boss_plasmarine_2 == nil then -- both Plasmarines have to be dead to win
+      game:set_value("b1131", true)
       map:open_doors("door_boss")
       sol.audio.play_sound("boss_killed")
-      boss_heart:set_enabled(true)
+      if boss_heart ~= nil then boss_heart:set_enabled(true) end
       chest_book:set_enabled(true)
       sol.audio.play_sound("chest_appears")
       sol.audio.play_music("temple_lake")
@@ -61,9 +63,10 @@ if boss_plasmarine_1 ~= nil and boss_plasmarine_2 ~= nil then
   end
   function boss_plasmarine_2:on_dead()
     if boss_plasmarine_1 == nil then -- both Plasmarines have to be dead to win
+      game:set_value("b1131", true)
       map:open_doors("door_boss")
       sol.audio.play_sound("boss_killed")
-      boss_heart:set_enabled(true)
+      if boss_heart ~= nil then boss_heart:set_enabled(true) end
       chest_book:set_enabled(true)
       sol.audio.play_sound("chest_appears")
       sol.audio.play_music("temple_lake")
@@ -111,11 +114,11 @@ function switch_water_chest:on_activated()
   sol.audio.play_sound("secret")
 end
 
-function switch_spike:on_activated()
-  spike:set_enabled(true)
+function switch_stone:on_activated()
+  stone:set_enabled(true)
 end
-function switch_spike:on_inactivated()
-  spike:set_enabled(false)
+function switch_stone:on_inactivated()
+  stone:set_enabled(false)
 end
 
 for enemy in map:get_entities("aquadracini") do
@@ -132,5 +135,11 @@ for enemy in map:get_entities("chuchu") do
     if not map:has_entities("chuchu") then
       map:open_doors("shutter_2")
     end
+  end
+end
+
+function map:on_obtained_treasure(treasure_item, treasure_variant, treasure_savegame_variable)
+  if treasure_name == book_mudora and treasure_variant == 4 then
+    game:set_dungeon_finished(5)
   end
 end

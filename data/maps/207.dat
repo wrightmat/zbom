@@ -16850,15 +16850,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1152,
-  y = 1296,
-  width = 16,
-  height = 16,
-  pattern = "588",
-}
-
-tile{
-  layer = 0,
   x = 1088,
   y = 1152,
   width = 48,
@@ -17334,6 +17325,15 @@ tile{
   pattern = "646",
 }
 
+tile{
+  layer = 0,
+  x = 1152,
+  y = 1288,
+  width = 16,
+  height = 16,
+  pattern = "646",
+}
+
 chest{
   layer = 0,
   x = 1344,
@@ -17434,6 +17434,7 @@ enemy{
   direction = 3,
   breed = "plasmarine_blue",
   rank = 2,
+  savegame_variable = "b1131",
   treasure_name = "plume",
 }
 
@@ -17445,6 +17446,7 @@ enemy{
   direction = 3,
   breed = "plasmarine_red",
   rank = 2,
+  savegame_variable = "b1131",
   treasure_name = "plume",
 }
 
@@ -18296,6 +18298,7 @@ chest{
   name = "chest_book",
   treasure_name = "book_mudora",
   treasure_variant = 4,
+  treasure_savegame_variable = "b1134",
   sprite = "entities/chest_big",
 }
 
@@ -19033,8 +19036,8 @@ destructible{
 
 enemy{
   layer = 0,
-  x = 1488,
-  y = 1045,
+  x = 1480,
+  y = 1037,
   direction = 3,
   breed = "flame_blue",
 }
@@ -19052,7 +19055,7 @@ block{
   layer = 0,
   x = 1384,
   y = 1069,
-  name = "statue_spike",
+  name = "statue_stone",
   direction = -1,
   sprite = "entities/statue",
   pushable = true,
@@ -19064,23 +19067,12 @@ switch{
   layer = 0,
   x = 1336,
   y = 1128,
-  name = "switch_spike",
+  name = "switch_stone",
   subtype = "walkable",
   sprite = "entities/switch",
   sound = "switch",
   needs_block = true,
   inactivate_when_leaving = true,
-}
-
-dynamic_tile{
-  layer = 0,
-  x = 1152,
-  y = 1288,
-  width = 16,
-  height = 24,
-  name = "spike",
-  pattern = "587",
-  enabled_at_start = false,
 }
 
 destructible{
@@ -19173,6 +19165,25 @@ destructible{
   treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
+}
+
+enemy{
+  layer = 0,
+  x = 1488,
+  y = 1053,
+  direction = 3,
+  breed = "flame_blue",
+}
+
+destructible{
+  layer = 0,
+  x = 1160,
+  y = 1301,
+  name = "stone",
+  treasure_name = "random",
+  sprite = "entities/stone_small_black",
+  destruction_sound = "stone",
+  weight = 2,
 }
 
 tile{

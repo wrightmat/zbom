@@ -19,11 +19,14 @@ function map:on_started(destination)
     obstacle:set_enabled(false)
   end
   if game:get_value("b1134") then
-    water_room1:set_enabled(false)
+    water_room1_1:set_enabled(false)
+    water_room1_2:set_enabled(false)
     to_outside:set_destination_name("from_lair_finished")
+    grate:set_enabled(false)
   else
     npc_zora:set_enabled(false)
   end
+  if game:get_value("b1134") then game:set_dungeon_finished(5) end
 end
 
 function map:on_obtained_treasure(treasure_item, treasure_variant, treasure_savegame_variable)
@@ -100,6 +103,7 @@ function npc_zora:on_interaction()
   if not game:get_value("b1124") then
     game:start_dialog("zora.1.lakebed", function(answer)
       if answer == 1 then
+	hero:start_treasure("small_key")
         game:set_value("b1124", true)
       end
     end)

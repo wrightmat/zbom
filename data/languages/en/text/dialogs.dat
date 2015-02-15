@@ -988,7 +988,7 @@ dialog{
   skip = "current",
   icon = 18,
   text = [[
-You got some Flippers!$0
+You got the Flippers!$0
 Now you'll be able to
 swim like a pro!
   ]]
@@ -3428,7 +3428,7 @@ dialog{
 There's a Zora soldier
 guarding the entrance to
 our Domain?
-Yes, I fear my people have
+Yes, I fear my kind have
 grown even more isolated
 since I've left. We've
 long been a solitary
@@ -3437,7 +3437,7 @@ become detrimental to
 our own well being as a
 race. Tell you what, my
 people could use a wake
-up call. Tell that soldier
+up call. Tell the soldier
 that I've commanded that
 you be let in. Maybe you
 can open their eyes a
@@ -3449,8 +3449,9 @@ $0
 But wait, you won't get
 far without a way to 
 swim in the deep water.
-Take these, they are my
-people's sacred treasure -
+Take these, they are
+my people's sacred
+treasure -
 known as Zora's Flippers.
   ]]
 }
@@ -6286,6 +6287,7 @@ Okay, thanks, whatever.
 dialog{
   id = "zora.1.lakebed",
   skip = "current",
+  question = true,
   text = [[
 So you think you got
 lost in our Temple
@@ -6299,7 +6301,8 @@ to come back here, I'll
 GIVE you the key so
 you can get your last
 piece of treasure or
-whatever it is you want.
+whatever it is you
+want.
 
 Deal?
 Yes
@@ -6432,11 +6435,13 @@ dialog{
   skip = "current",
   text = [[
 Who are you?$0
-What's a $v?$0
 
-Doesn't matter. You're clearly
-not a Zora, so you don't belong
-here. Please leave now.
+
+Doesn't matter. You're
+clearly not a Zora, so
+you don't belong here.
+
+Please leave now.
   ]]
 }
 
@@ -6444,7 +6449,7 @@ dialog{
   id = "zora_gatekeeper.1.domain",
   skip = "current",
   text = [[
-We Zora are a proud people
+We Zora are proud people
 and will not allow our
 land to be encroached
 upon. You need to leave.
@@ -6468,12 +6473,13 @@ dialog{
   id = "zora_gatekeeper.3.domain",
   skip = "current",
   text = [[
-What's our sacred treasure
-and where can you find it?$0
+What is our sacred
+treasure and where can
+you find it?$0
 Why in Jabun's name would
-I tell you that if I don't
-want anyone to come in
-here?
+I tell you that if I
+don't want anyone to come
+in here?
   ]]
 }
 
@@ -6481,8 +6487,8 @@ dialog{
   id = "zora_gatekeeper.4.domain",
   skip = "current",
   text = [[
-Badgering me will not help.
-$0
+Badgering me will not
+help. $0
 Please leave now.
   ]]
 }
