@@ -4389,7 +4389,7 @@ enemy{
   name = "crab_1",
   direction = 3,
   breed = "crab",
-  treasure_name = "random_woods",
+  treasure_name = "random",
 }
 
 enemy{
@@ -4399,7 +4399,7 @@ enemy{
   name = "crab_2",
   direction = 3,
   breed = "crab",
-  treasure_name = "random_woods",
+  treasure_name = "random",
 }
 
 enemy{
@@ -4416,10 +4416,10 @@ destructible{
   layer = 0,
   x = 960,
   y = 269,
-  treasure_name = "random",
+  treasure_name = "random_woods",
   sprite = "entities/bush",
   destruction_sound = "bush",
-  weight = 1,
+  weight = -1,
   can_be_cut = true,
 }
 
@@ -4427,10 +4427,10 @@ destructible{
   layer = 0,
   x = 976,
   y = 269,
-  treasure_name = "random",
+  treasure_name = "random_woods",
   sprite = "entities/bush",
   destruction_sound = "bush",
-  weight = 1,
+  weight = -1,
   can_be_cut = true,
 }
 
@@ -4438,10 +4438,10 @@ destructible{
   layer = 0,
   x = 992,
   y = 269,
-  treasure_name = "random",
+  treasure_name = "random_woods",
   sprite = "entities/bush",
   destruction_sound = "bush",
-  weight = 1,
+  weight = -1,
   can_be_cut = true,
 }
 
@@ -4449,10 +4449,10 @@ destructible{
   layer = 0,
   x = 1008,
   y = 269,
-  treasure_name = "random",
+  treasure_name = "random_woods",
   sprite = "entities/bush",
   destruction_sound = "bush",
-  weight = 1,
+  weight = -1,
   can_be_cut = true,
 }
 
@@ -4460,10 +4460,10 @@ destructible{
   layer = 0,
   x = 1024,
   y = 269,
-  treasure_name = "random",
+  treasure_name = "random_woods",
   sprite = "entities/bush",
   destruction_sound = "bush",
-  weight = 1,
+  weight = -1,
   can_be_cut = true,
 }
 
@@ -4471,10 +4471,10 @@ destructible{
   layer = 0,
   x = 880,
   y = 461,
-  treasure_name = "random",
+  treasure_name = "random_woods",
   sprite = "entities/bush",
   destruction_sound = "bush",
-  weight = 1,
+  weight = -1,
   can_be_cut = true,
 }
 
@@ -4482,10 +4482,10 @@ destructible{
   layer = 0,
   x = 896,
   y = 461,
-  treasure_name = "random",
+  treasure_name = "random_woods",
   sprite = "entities/bush",
   destruction_sound = "bush",
-  weight = 1,
+  weight = -1,
   can_be_cut = true,
 }
 
@@ -4493,10 +4493,10 @@ destructible{
   layer = 0,
   x = 912,
   y = 461,
-  treasure_name = "random",
+  treasure_name = "random_woods",
   sprite = "entities/bush",
   destruction_sound = "bush",
-  weight = 1,
+  weight = -1,
   can_be_cut = true,
 }
 
@@ -4504,10 +4504,10 @@ destructible{
   layer = 0,
   x = 880,
   y = 477,
-  treasure_name = "random",
+  treasure_name = "random_woods",
   sprite = "entities/bush",
   destruction_sound = "bush",
-  weight = 1,
+  weight = -1,
   can_be_cut = true,
 }
 
@@ -4515,10 +4515,10 @@ destructible{
   layer = 0,
   x = 896,
   y = 477,
-  treasure_name = "random",
+  treasure_name = "random_woods",
   sprite = "entities/bush",
   destruction_sound = "bush",
-  weight = 1,
+  weight = -1,
   can_be_cut = true,
 }
 
@@ -4526,10 +4526,10 @@ destructible{
   layer = 0,
   x = 912,
   y = 477,
-  treasure_name = "random",
+  treasure_name = "random_woods",
   sprite = "entities/bush",
   destruction_sound = "bush",
-  weight = 1,
+  weight = -1,
   can_be_cut = true,
 }
 
@@ -4537,10 +4537,10 @@ destructible{
   layer = 0,
   x = 880,
   y = 493,
-  treasure_name = "random",
+  treasure_name = "random_woods",
   sprite = "entities/bush",
   destruction_sound = "bush",
-  weight = 1,
+  weight = -1,
   can_be_cut = true,
 }
 
@@ -4548,10 +4548,10 @@ destructible{
   layer = 0,
   x = 896,
   y = 493,
-  treasure_name = "random",
+  treasure_name = "random_woods",
   sprite = "entities/bush",
   destruction_sound = "bush",
-  weight = 1,
+  weight = -1,
   can_be_cut = true,
 }
 
@@ -4559,10 +4559,10 @@ destructible{
   layer = 0,
   x = 912,
   y = 493,
-  treasure_name = "random",
+  treasure_name = "random_woods",
   sprite = "entities/bush",
   destruction_sound = "bush",
-  weight = 1,
+  weight = -1,
   can_be_cut = true,
 }
 
@@ -4573,7 +4573,7 @@ enemy{
   name = "tektite_1",
   direction = 3,
   breed = "tektite_green",
-  treasure_name = "random",
+  treasure_name = "random_woods",
 }
 
 enemy{
@@ -4583,7 +4583,7 @@ enemy{
   name = "tektite_2",
   direction = 3,
   breed = "tektite_green",
-  treasure_name = "random",
+  treasure_name = "random_woods",
 }
 
 wall{
