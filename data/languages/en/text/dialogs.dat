@@ -1171,11 +1171,12 @@ the earth!
 dialog{
   id = "_treasure.master_ore.1",
   skip = "current",
-  icon = 30,
+  icon = 29,
   text = [[
-You got some Master Ore!
-The blacksmith can use it
-to improve your sword!
+You got some Master
+Ore! The blacksmith
+can use it to improve
+your sword!
   ]]
 }
 
@@ -3323,15 +3324,16 @@ ore recently?
 dialog{
   id = "rudy.5.sword",
   skip = "current",
+  question = true,
   text = [[
-That's... that's
+That's... that's...
 Master Ore!!!
 
 I don't know how you
-found that, but boy
-are you lucky! With
-that, I'll be able to
-make your sword more
+found that, but boy are
+you lucky! With that,
+I'll be able to make
+your sword more
 powerful in no time!
 How about it?
 Yes
@@ -3343,10 +3345,9 @@ dialog{
   id = "rudy.5.sword_1",
   skip = "current",
   text = [[
-Wonderful! Leave it
-to me and I'll get
-your old sword perked
-right up!
+Wonderful! Leave it to
+me and I'll get your old
+sword perked right up!
   ]]
 }
 
@@ -3362,12 +3363,34 @@ choice.
 }
 
 dialog{
+  id = "rudy.5.sword_working",
+  skip = "current",
+  text = [[
+Feels great to work on
+a sword again!
+  ]]
+}
+
+dialog{
   id = "rudy.5.sword_leaving",
   skip = "current",
   text = [[
 Leaving already? Well,
 you wouldn't want to
 go without this, right?
+  ]]
+}
+
+dialog{
+  id = "rudy.6.cave",
+  skip = "current",
+  text = [[
+I don't know how much
+more I'll be able to
+help you on your
+adventure, but if I
+can, please come see
+me!
   ]]
 }
 
@@ -6434,11 +6457,13 @@ dialog{
 There! I've done it!
 Look how great I am!$0
 What's that?$0 This isn't
-what your heart most desires?$0
-Of course it is! Take that
-marvelous ore and do something
-useful with it. And by you,
-I mean a qualified blacksmith -
+what your heart most
+desires?$0
+Of course it is! Take
+that marvelous ore and
+do something useful with
+it. And by you, I mean a
+qualified blacksmith -
 which you are not.
   ]]
 }

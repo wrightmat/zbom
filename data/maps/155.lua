@@ -23,10 +23,11 @@ function subrosian_shaman:on_interaction()
   if game:get_value("i1922") == 0 then
     game:start_dialog("subrosian_shaman.0.subrosia")
     game:set_value("i1922", 1)
-  elseif game:get_value("i1922") > 0 and game:get_value("i1836") >= 50 then
+  elseif game:get_value("i1922") > 0 and game:get_value("i1836") >= 50 and not game:get_value("b1851") then
     game:start_dialog("subrosian_shaman.3.subrosia", function()
-      hero:start_treasure("master_ore", 0, "b1851", function()
+      hero:start_treasure("master_ore", 1, "b1851", function()
         game:start_dialog("subrosian_shaman.4.subrosia")
+	game:set_value("i1836", game:get_value("i1836")-50)
         game:set_value("i1922", 4)
       end)
     end)

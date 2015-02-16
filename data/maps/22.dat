@@ -6659,9 +6659,9 @@ teletransporter{
 
 teletransporter{
   layer = 0,
-  x = 16,
+  x = 0,
   y = -16,
-  width = 400,
+  width = 1120,
   height = 16,
   name = "to_C13",
   transition = "scrolling",
@@ -6818,6 +6818,18 @@ npc{
   direction = 3,
   subtype = "1",
   sprite = "npc/tokay_orange",
+}
+
+teletransporter{
+  layer = 0,
+  x = 1120,
+  y = 0,
+  width = 16,
+  height = 96,
+  name = "to_D14_water",
+  transition = "scrolling",
+  destination_map = "23",
+  destination = "_side",
 }
 
 tile{
