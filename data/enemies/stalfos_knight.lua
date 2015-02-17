@@ -40,7 +40,8 @@ function enemy:on_restarted()
     else
       sol.timer.start(self, 500, function()
         self:create_enemy({
-	  breed = "stalfos_head"
+	  breed = "stalfos_head",
+	  treasur_name = "magic_jar"
         })
       end)
       self:go_hero()
@@ -80,7 +81,7 @@ function enemy:hide()
   sol.audio.play_sound("stalfos_laugh")
   self:create_enemy({
     breed = "stalfos_head",
-    treasure_name = "heart"
+    treasure_name = "bombs"
   })
   sol.timer.start(self, 1000, function()
     local m = sol.movement.create("jump")

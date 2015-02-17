@@ -20,6 +20,7 @@ function enemy:on_created()
   self:set_pushed_back_when_hurt(false)
   self:set_push_hero_on_sword(true)
   self:set_attack_consequence("explosion", "custom")
+  self:set_attack_consequence("hookshot", "ignored")
 end
 
 function enemy:on_enabled()

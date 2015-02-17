@@ -1,12 +1,10 @@
 local enemy = ...
 
 -- A red flame shot by another enemy.
--- When the flame finishes its movement,
--- a circle of fire remains on the ground.
 
 function enemy:on_created()
   self:set_life(1)
-  self:set_damage(1)
+  self:set_damage(4)
   self:create_sprite("enemies/flame_red")
   self:set_size(16, 16)
   self:set_origin(8, 13)
@@ -30,10 +28,9 @@ function enemy:on_restarted()
 end
 
 function enemy:on_movement_finished(movement)
-  -- Let a circle of fire on the ground.
-  local son_name = self:get_name() .. "_circle"
-  self:create_enemy(son_name, "fire_circle", 0, 0)
-  self:remove()
+  sol.timer.start(self, 30000, function() 
+    self:remove()
+  end)
 end
 
 function enemy:go(angle)

@@ -1,6 +1,7 @@
 local enemy = ...
 
--- Big Poe: Larger ghost boss composed of smaller Poes
+-- Big Poe: Larger ghost boss composed of smaller Poes, which
+-- disappears occasionally and throws fire from its lantern.
 
 local going_hero = false
 local timer
@@ -31,6 +32,8 @@ function enemy:on_obstacle_reached(movement)
 end
 
 function enemy:on_restarted()
+  self:create_enemy({ breed = "flame_red" })
+
   self:go_random()
   self:check_hero()
 end
@@ -54,6 +57,11 @@ function enemy:check_hero()
   elseif not near_hero and going_hero then
     self:go_random()
   end
+
+  if math.random(2) == 1 then
+    if self:is_visible() == true then self:set_visible(false) else self:set_visible(true) end
+  end
+
   timer = sol.timer.start(self, 2000, function() self:check_hero() end)
 end
 
@@ -71,4 +79,19 @@ function enemy:go_hero()
   m:set_speed(56)
   m:start(self)
   going_hero = true
+end
+
+function enemy:on_dying()
+  sol.timer.start(self:get_map(), 1000, function()
+    self:create_enemy({ breed = "poe" })
+    self:create_enemy({ breed = "poe" })
+    self:create_enemy({ breed = "poe" })
+    self:create_enemy({ breed = "poe" })
+    self:create_enemy({ breed = "poe" })
+    self:create_enemy({ breed = "poe" })
+    self:create_enemy({ breed = "poe" })
+    self:create_enemy({ breed = "poe" })
+    self:create_enemy({ breed = "poe" })
+    self:create_enemy({ breed = "poe" })
+  end)
 end
