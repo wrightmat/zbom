@@ -5112,6 +5112,105 @@ tile{
   pattern = "549",
 }
 
+tile{
+  layer = 0,
+  x = 1744,
+  y = 576,
+  width = 32,
+  height = 16,
+  pattern = "45",
+}
+
+tile{
+  layer = 0,
+  x = 1744,
+  y = 736,
+  width = 32,
+  height = 16,
+  pattern = "45",
+}
+
+tile{
+  layer = 0,
+  x = 1872,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "45",
+}
+
+tile{
+  layer = 0,
+  x = 1872,
+  y = 736,
+  width = 16,
+  height = 16,
+  pattern = "45",
+}
+
+tile{
+  layer = 0,
+  x = 2176,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "45",
+}
+
+tile{
+  layer = 0,
+  x = 2176,
+  y = 736,
+  width = 16,
+  height = 16,
+  pattern = "45",
+}
+
+tile{
+  layer = 0,
+  x = 1264,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "45",
+}
+
+tile{
+  layer = 0,
+  x = 1264,
+  y = 480,
+  width = 16,
+  height = 16,
+  pattern = "45",
+}
+
+tile{
+  layer = 0,
+  x = 1456,
+  y = 480,
+  width = 16,
+  height = 16,
+  pattern = "45",
+}
+
+tile{
+  layer = 0,
+  x = 1456,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "45",
+}
+
+tile{
+  layer = 0,
+  x = 1456,
+  y = 384,
+  width = 16,
+  height = 48,
+  pattern = "45",
+}
+
 enemy{
   layer = 0,
   x = 2032,
@@ -5120,6 +5219,8 @@ enemy{
   direction = 3,
   breed = "carock",
   rank = 2,
+  savegame_variable = "b1046",
+  treasure_name = "alchemy",
 }
 
 enemy{
@@ -5158,6 +5259,7 @@ enemy{
   name = "room3_helmasaur_1",
   direction = 3,
   breed = "helmasaur_red",
+  treasure_name = "random",
 }
 
 enemy{
@@ -5167,6 +5269,7 @@ enemy{
   name = "room3_helmasaur_2",
   direction = 3,
   breed = "helmasaur_red",
+  treasure_name = "random",
 }
 
 enemy{
@@ -5176,15 +5279,17 @@ enemy{
   name = "room3_helmasaur_3",
   direction = 3,
   breed = "helmasaur_red",
+  treasure_name = "random",
 }
 
 door{
   layer = 0,
   x = 312,
   y = 648,
-  name = "door_room1_shutter_1",
+  name = "door_room1_1",
   direction = 0,
   sprite = "entities/door_shutter",
+  savegame_variable = "b1049",
 }
 
 chest{
@@ -5431,9 +5536,10 @@ door{
   layer = 0,
   x = 360,
   y = 648,
-  name = "door_room1_shutter_2",
+  name = "door_room1_2",
   direction = 2,
   sprite = "entities/door_shutter",
+  savegame_variable = "b1049",
 }
 
 door{
@@ -5558,6 +5664,357 @@ door{
   cannot_open_dialog = "_small_key_required",
 }
 
+destructible{
+  layer = 0,
+  x = 1768,
+  y = 589,
+  treasure_name = "fairy",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 1752,
+  y = 589,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 1752,
+  y = 749,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 1768,
+  y = 749,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 1880,
+  y = 749,
+  treasure_name = "heart",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 1880,
+  y = 477,
+  treasure_name = "heart",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 2184,
+  y = 477,
+  treasure_name = "heart",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 2184,
+  y = 749,
+  treasure_name = "heart",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 1272,
+  y = 333,
+  treasure_name = "heart",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 1272,
+  y = 493,
+  treasure_name = "heart",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 1464,
+  y = 493,
+  treasure_name = "heart",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 1464,
+  y = 333,
+  treasure_name = "heart",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 1464,
+  y = 413,
+  treasure_name = "heart",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 1464,
+  y = 397,
+  treasure_name = "heart",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 1464,
+  y = 429,
+  treasure_name = "heart",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+wall{
+  layer = 0,
+  x = 160,
+  y = 584,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 160,
+  y = 512,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 272,
+  y = 408,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 376,
+  y = 408,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 640,
+  y = 408,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 712,
+  y = 408,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 376,
+  y = 640,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 304,
+  y = 640,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 120,
+  y = 312,
+  width = 64,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1184,
+  y = 408,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1256,
+  y = 408,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1256,
+  y = 576,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1184,
+  y = 576,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1472,
+  y = 712,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1544,
+  y = 712,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1776,
+  y = 648,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1864,
+  y = 648,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1352,
+  y = 568,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1352,
+  y = 496,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 2016,
+  y = 456,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1232,
+  y = 544,
+  width = 272,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1232,
+  y = 776,
+  width = 272,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1232,
+  y = 552,
+  width = 8,
+  height = 224,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1496,
+  y = 552,
+  width = 8,
+  height = 224,
+  stops_enemies = true,
+}
+
 tile{
   layer = 1,
   x = 128,
@@ -5581,6 +6038,42 @@ enemy{
   x = 1016,
   y = 429,
   name = "keese_2",
+  direction = 3,
+  breed = "keese",
+}
+
+enemy{
+  layer = 1,
+  x = 1288,
+  y = 733,
+  name = "keese_3",
+  direction = 3,
+  breed = "keese",
+}
+
+enemy{
+  layer = 1,
+  x = 1368,
+  y = 645,
+  name = "keese_4",
+  direction = 3,
+  breed = "keese",
+}
+
+enemy{
+  layer = 1,
+  x = 1448,
+  y = 741,
+  name = "keese_5",
+  direction = 3,
+  breed = "keese",
+}
+
+enemy{
+  layer = 1,
+  x = 1280,
+  y = 597,
+  name = "keese_6",
   direction = 3,
   breed = "keese",
 }

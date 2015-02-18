@@ -4,7 +4,7 @@ local chain = nil
 -- Knight with a chain and ball.
 
 function enemy:on_created()
-  self:set_life(4)
+  self:set_life(8)
   self:set_damage(3)
   self:set_pushed_back_when_hurt(false)
   self:set_push_hero_on_sword(true)
@@ -15,7 +15,9 @@ function enemy:on_created()
   self:set_attack_consequence("sword", 2)
   self:set_attack_consequence("thrown_item", 1)
   self:set_attack_consequence("arrow", 1)
+end
 
+function enemy:on_enabled()
   -- Create the chain and ball.
   local chain_name = self:get_name() .. "_chain"
   chain = self:create_enemy{

@@ -1,19 +1,19 @@
 properties{
   x = 0,
   y = 0,
-  width = 512,
-  height = 512,
+  width = 432,
+  height = 432,
   world = "outside_world",
-  tileset = "8",
+  tileset = "4",
 }
 
 tile{
   layer = 0,
   x = 0,
   y = 0,
-  width = 512,
-  height = 512,
-  pattern = "45",
+  width = 432,
+  height = 432,
+  pattern = "46",
 }
 
 destination{
@@ -36,35 +36,10 @@ dynamic_tile{
   enabled_at_start = true,
 }
 
-enemy{
-  layer = 0,
-  x = 184,
-  y = 284,
-  name = "boss_plasmarine_blue",
-  direction = 3,
-  breed = "plasmarine_blue",
-  rank = 2,
-  savegame_variable = "b1131",
-  treasure_name = "plume",
-}
-
-enemy{
-  layer = 0,
-  x = 368,
-  y = 276,
-  name = "boss_plasmarine_red",
-  direction = 3,
-  breed = "plasmarine_red",
-  rank = 2,
-  savegame_variable = "b1131",
-  treasure_name = "plume",
-}
-
 pickable{
   layer = 0,
   x = 32,
   y = 77,
-  name = "sword",
   treasure_name = "sword",
 }
 
@@ -72,7 +47,18 @@ pickable{
   layer = 0,
   x = 48,
   y = 77,
-  name = "hookshot",
-  treasure_name = "hookshot",
+  treasure_name = "boomerang",
+}
+
+enemy{
+  layer = 0,
+  x = 176,
+  y = 164,
+  name = "boss_carock",
+  direction = 3,
+  breed = "carock",
+  rank = 2,
+  savegame_variable = "b1050",
+  treasure_name = "jade",
 }
 

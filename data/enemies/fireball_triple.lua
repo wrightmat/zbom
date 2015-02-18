@@ -32,13 +32,13 @@ function enemy:on_restarted()
   local m = sol.movement.create("straight")
   m:set_speed(speed)
   m:set_angle(angle)
+  m:set_smooth(false)
   m:start(self)
 end
 
 function enemy:on_obstacle_reached()
   if bounces < max_bounces then
-    -- Compute the bouncing angle
-    -- (works good with horizontal and vertical walls).
+    -- Compute the bouncing angle (works well with horizontal and vertical walls).
     local m = self:get_movement()
     local angle = m:get_angle()
     if not self:test_obstacles(1, 0)
@@ -62,7 +62,10 @@ function enemy:on_custom_attack_received(attack, sprite)
   if attack == "sword" then
     local hero_x, hero_y = self:get_map():get_entity("hero"):get_position()
     local angle = self:get_angle(hero_x, hero_y - 5) + math.pi
-    local m = sol.movement.straight_movement_create(speed, angle)
+    local m = sol.movement.create("straight")
+    m:set_angle(angle)
+    m:set_speed(speed)
+    m:set_smooth(false)
     m:start(self)
     sol.audio.play_sound("boss_fireball")
     used_sword = true
@@ -71,7 +74,7 @@ end
 
 function enemy:on_collision_enemy(other_enemy, other_sprite, my_sprite)
   if used_sword then
-    if other_enemy:receive_bounced_fireball ~= nil then
+    if other_enemy.receive_bounced_fireball ~= nil then
       other_enemy:receive_bounced_fireball(self)
     end
   end

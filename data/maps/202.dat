@@ -5121,6 +5121,24 @@ tile{
   pattern = "496",
 }
 
+tile{
+  layer = 0,
+  x = 1168,
+  y = 96,
+  width = 8,
+  height = 8,
+  pattern = "104",
+}
+
+tile{
+  layer = 0,
+  x = 2136,
+  y = 168,
+  width = 8,
+  height = 8,
+  pattern = "104",
+}
+
 teletransporter{
   layer = 0,
   x = 1008,
@@ -5144,7 +5162,7 @@ destination{
 
 destination{
   layer = 0,
-  x = 2184,
+  x = 2192,
   y = 221,
   name = "from_L5",
   direction = 2,
@@ -5898,6 +5916,159 @@ npc{
   subtype = "0",
   sprite = "entities/torch",
   behavior = "item#lamp",
+}
+
+wall{
+  layer = 0,
+  x = 2112,
+  y = 392,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 2112,
+  y = 240,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 88,
+  y = 240,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1040,
+  y = 96,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1112,
+  y = 96,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 2176,
+  y = 200,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1896,
+  y = 448,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1808,
+  y = 448,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1696,
+  y = 744,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1696,
+  y = 656,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1056,
+  y = 768,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1360,
+  y = 528,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1360,
+  y = 600,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1200,
+  y = 672,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1272,
+  y = 672,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 816,
+  y = 448,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1960,
+  y = 1008,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
 }
 
 tile{

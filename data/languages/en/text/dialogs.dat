@@ -3628,6 +3628,34 @@ the Sanctum with you!
   ]]
 }
 
+-- Carock (Dark Interloper Sorceror)
+-----------------------
+dialog{
+  id = "carock.0.ruins",
+  skip = "current",
+  text = [[
+Silly human. You think
+you're strong enough
+to face the entirety
+of the great Dark
+Tribe? We shall show
+you how far our power
+reaches!
+  ]]
+}
+
+dialog{
+  id = "carock.0.ruins_defeat",
+  skip = "current",
+  text = [[
+You may have defeated
+me, but you're too
+late to stop what my
+people have already
+set into motion!
+  ]]
+}
+
 -- Gor Larin (Goron Elder)
 -----------------------
 dialog{

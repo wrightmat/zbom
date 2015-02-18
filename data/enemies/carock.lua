@@ -4,9 +4,10 @@ local enemy = ...
 
 -- Possible positions where he appears.
 local positions = {
-  {x = 192, y = 277, direction4 = 3},
-  {x = 400, y = 277, direction4 = 3},
-  {x = 296, y = 373, direction4 = 1}
+  {x = 1944, y = 544, direction4 = 3},
+  {x = 2032, y = 696, direction4 = 3},
+  {x = 2144, y = 632, direction4 = 1},
+  {x = 2032, y = 512, direction4 = 1}
 }
 
 local nb_sons_created = 0
@@ -35,6 +36,10 @@ function enemy:on_created()
   sprite:set_animation("stopped")
 end
 
+function enemy_on_enabled()
+  game:start_dialog("carock.0.ruins")
+end
+
 function enemy:on_restarted()
   vulnerable = false
   for _, t in ipairs(timers) do t:stop() end
@@ -45,10 +50,7 @@ function enemy:on_restarted()
     timers[#timers + 1] = sol.timer.start(self, 700, function() self:hide() end)
   else
     sprite:set_animation("hurt")
-    self:get_map():hero_freeze()
     timers[#timers + 1] = sol.timer.start(self, 500, function() self:end_dialog() end)
-    timers[#timers + 1] = sol.timer.start(self, 1000, function() self:fade_out() end)
-    timers[#timers + 1] = sol.timer.start(self, 1500, function() self:escape() end)
   end
 end
 
@@ -92,14 +94,14 @@ function enemy:fire_step_3()
     breed = "fireball_triple"
   end
   sprite:set_animation("stopped")
-  sol.audio.play_sound(sound)
+  if sound ~= nil then sol.audio.play_sound(sound) end
 
   vulnerable = true
   timers[#timers + 1] = sol.timer.start(self, 700, function() self:restart() end)
 
   function throw_fire()
     nb_sons_created = nb_sons_created + 1
-    self:create_enemy("carock_fireball_" .. nb_sons_created, breed, 0, -21)
+    self:create_enemy({x = 0, y = 21, breed = "fireball_triple", name = "carock_fireball_" .. nb_sons_created})
   end
 
   throw_fire()
@@ -119,7 +121,7 @@ function enemy:receive_bounced_fireball(fireball)
   end
 end
 
-function enemy:on_hurt(attack, life_lost)
+function enemy:on_hurt(attack)
   local life = self:get_life()
   if life <= 0 then
     self:get_map():remove_entities("carock_fireball")
@@ -131,28 +133,10 @@ function enemy:on_hurt(attack, life_lost)
 end
 
 function enemy:end_dialog()
-  self:get_map():remove_entities("carock_fire_ball_" .. i)
   local sprite = self:get_sprite()
   sprite:set_ignore_suspend(true)
-  --self:get_map():start_dialog("dungeon_5.agahnim_end")
-end
-
-function enemy:fade_out()
-  local sprite = self:get_sprite()
-  sprite:fade_out()
-end
-
-function enemy:escape()
-  local x, y = self:get_position()
-  self:get_map():create_pickable{
-    treasure_name = "heart_container",
-    treasure_variant = 1,
-    treasure_savegame_variable = "b521",
-    x = x,
-    y = y,
-    layer = 0
-  }
-  self:get_map():get_entity("hero"):unfreeze()
-  self:get_game():set_value("b520", true)
-  self:remove()
+  game:start_dialog("carock.0.ruins_defeat", function()
+    local sprite = self:get_sprite()
+    sprite:fade_out()
+  end)
 end
