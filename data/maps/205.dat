@@ -11652,6 +11652,7 @@ enemy{
   name = "tektite_compass_1",
   direction = 3,
   breed = "tektite_red",
+  treasure_name = "random_mountain",
 }
 
 enemy{
@@ -11661,6 +11662,7 @@ enemy{
   name = "tektite_compass_2",
   direction = 3,
   breed = "tektite_red",
+  treasure_name = "random_mountain",
 }
 
 enemy{
@@ -11748,7 +11750,7 @@ enemy{
   breed = "arrghus_stone",
   rank = 1,
   savegame_variable = "b1107",
-  treasure_name = "magic_flask",
+  treasure_name = "amber",
   treasure_variant = 2,
 }
 
@@ -12494,7 +12496,7 @@ destructible{
   layer = 0,
   x = 1160,
   y = 1301,
-  treasure_name = "heart",
+  treasure_name = "random_mountain",
   sprite = "entities/bush",
   destruction_sound = "stone",
   weight = 1,
@@ -12505,7 +12507,7 @@ destructible{
   layer = 0,
   x = 920,
   y = 1309,
-  treasure_name = "heart",
+  treasure_name = "random_mountain",
   sprite = "entities/bush",
   destruction_sound = "stone",
   weight = 1,
@@ -12516,7 +12518,7 @@ destructible{
   layer = 0,
   x = 992,
   y = 1413,
-  treasure_name = "heart",
+  treasure_name = "random_mountain",
   sprite = "entities/bush",
   destruction_sound = "stone",
   weight = 1,
@@ -12656,7 +12658,7 @@ destructible{
   layer = 0,
   x = 1048,
   y = 1485,
-  treasure_name = "heart",
+  treasure_name = "random_mountain",
   sprite = "entities/bush",
   destruction_sound = "stone",
   weight = 1,
@@ -12974,7 +12976,7 @@ enemy{
   name = "wallmaster",
   direction = 3,
   breed = "wallmaster",
-  treasure_name = "amber",
+  treasure_name = "random_mountain",
 }
 
 enemy{
@@ -13148,6 +13150,37 @@ wall{
   y = 192,
   width = 8,
   height = 32,
+  stops_enemies = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1208,
+  y = 165,
+  treasure_name = "fairy",
+  sprite = "entities/bush",
+  destruction_sound = "stone",
+  weight = 1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1176,
+  y = 149,
+  treasure_name = "random_mountain",
+  sprite = "entities/bush",
+  destruction_sound = "stone",
+  weight = 1,
+  can_be_cut = true,
+}
+
+wall{
+  layer = 0,
+  x = 1296,
+  y = 184,
+  width = 16,
+  height = 8,
   stops_enemies = true,
 }
 
