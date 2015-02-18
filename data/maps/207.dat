@@ -17334,6 +17334,78 @@ tile{
   pattern = "646",
 }
 
+tile{
+  layer = 0,
+  x = 312,
+  y = 1304,
+  width = 32,
+  height = 16,
+  pattern = "646",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 1304,
+  width = 32,
+  height = 16,
+  pattern = "646",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 1048,
+  width = 32,
+  height = 16,
+  pattern = "646",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 1048,
+  width = 32,
+  height = 16,
+  pattern = "646",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 1088,
+  width = 32,
+  height = 16,
+  pattern = "646",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 1264,
+  width = 32,
+  height = 16,
+  pattern = "646",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 1264,
+  width = 32,
+  height = 16,
+  pattern = "646",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 1088,
+  width = 32,
+  height = 16,
+  pattern = "646",
+}
+
 chest{
   layer = 0,
   x = 1344,
@@ -17430,7 +17502,7 @@ enemy{
   layer = 0,
   x = 320,
   y = 1204,
-  name = "boss_plasmarine_1",
+  name = "boss_plasmarine_blue",
   direction = 3,
   breed = "plasmarine_blue",
   rank = 2,
@@ -17442,7 +17514,7 @@ enemy{
   layer = 0,
   x = 504,
   y = 1196,
-  name = "boss_plasmarine_2",
+  name = "boss_plasmarine_red",
   direction = 3,
   breed = "plasmarine_red",
   rank = 2,
@@ -19184,6 +19256,150 @@ destructible{
   sprite = "entities/stone_small_black",
   destruction_sound = "stone",
   weight = 2,
+}
+
+destructible{
+  layer = 0,
+  x = 584,
+  y = 1277,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 512,
+  y = 1317,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 320,
+  y = 1317,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 512,
+  y = 1061,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 584,
+  y = 1101,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 320,
+  y = 1061,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 248,
+  y = 1101,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 248,
+  y = 1277,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 264,
+  y = 1277,
+  treasure_name = "heart",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 264,
+  y = 1101,
+  treasure_name = "heart",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 336,
+  y = 1061,
+  treasure_name = "heart",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 336,
+  y = 1317,
+  treasure_name = "heart",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 496,
+  y = 1317,
+  treasure_name = "heart",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 496,
+  y = 1061,
+  treasure_name = "heart",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 568,
+  y = 1101,
+  treasure_name = "heart",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 568,
+  y = 1277,
+  treasure_name = "heart",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
 }
 
 tile{

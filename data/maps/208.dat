@@ -4968,6 +4968,24 @@ tile{
   pattern = "591",
 }
 
+tile{
+  layer = 0,
+  x = 176,
+  y = 256,
+  width = 48,
+  height = 16,
+  pattern = "601",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 336,
+  width = 48,
+  height = 16,
+  pattern = "601",
+}
+
 switch{
   layer = 0,
   x = 216,
@@ -5721,6 +5739,62 @@ chest{
   treasure_name = "compass",
   treasure_savegame_variable = "b1142",
   sprite = "entities/chest",
+}
+
+destructible{
+  layer = 0,
+  x = 472,
+  y = 349,
+  treasure_name = "bomb",
+  treasure_variant = 2,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 184,
+  y = 269,
+  treasure_name = "bomb",
+  treasure_variant = 2,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 200,
+  y = 269,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 216,
+  y = 269,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 488,
+  y = 349,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 504,
+  y = 349,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
 }
 
 wall{

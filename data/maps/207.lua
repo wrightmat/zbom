@@ -11,8 +11,8 @@ function map:on_started(destination)
   map:set_doors_open("shutter_2")
   if not game:get_value("b1140") then map:set_entities_enabled("water_stream_chest", false) end
   if not game:get_value("b1131") then
-    boss_plasmarine_1:set_enabled(false)
-    boss_plasmarine_2:set_enabled(false)
+    boss_plasmarine_blue:set_enabled(false)
+    boss_plasmarine_red:set_enabled(false)
     to_outside:set_enabled(false)
   end
   if not game:get_value("b1134") then chest_book:set_enabled(false) end
@@ -38,17 +38,17 @@ function door_bomb_1:on_opened()
 end
 
 function sensor_boss:on_activated()
-  if boss_plasmarine_1 ~= nil and boss_plasmarine_2 ~= nil then
+  if boss_plasmarine_blue ~= nil and boss_plasmarine_red ~= nil then
     map:close_doors("door_boss")
-    boss_plasmarine_1:set_enabled(true)
-    boss_plasmarine_2:set_enabled(true)
+    boss_plasmarine_blue:set_enabled(true)
+    boss_plasmarine_red:set_enabled(true)
     sol.audio.play_music("boss")
   end
 end
 
-if boss_plasmarine_1 ~= nil and boss_plasmarine_2 ~= nil then
-  function boss_plasmarine_1:on_dead()
-    if boss_plasmarine_2 == nil then -- both Plasmarines have to be dead to win
+if boss_plasmarine_blue ~= nil and boss_plasmarine_red ~= nil then
+  function boss_plasmarine_blue:on_dead()
+    if boss_plasmarine_red == nil then -- both Plasmarines have to be dead to win
       game:set_value("b1131", true)
       map:open_doors("door_boss")
       sol.audio.play_sound("boss_killed")
@@ -61,8 +61,8 @@ if boss_plasmarine_1 ~= nil and boss_plasmarine_2 ~= nil then
       sensor_close_shutter_waterfall:set_enabled(false)
     end
   end
-  function boss_plasmarine_2:on_dead()
-    if boss_plasmarine_1 == nil then -- both Plasmarines have to be dead to win
+  function boss_plasmarine_red:on_dead()
+    if boss_plasmarine_blue == nil then -- both Plasmarines have to be dead to win
       game:set_value("b1131", true)
       map:open_doors("door_boss")
       sol.audio.play_sound("boss_killed")

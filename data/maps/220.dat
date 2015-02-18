@@ -1,83 +1,28 @@
 properties{
   x = 0,
   y = 0,
-  width = 1024,
+  width = 512,
   height = 512,
   world = "outside_world",
-  tileset = "9",
+  tileset = "8",
 }
 
 tile{
   layer = 0,
   x = 0,
   y = 0,
-  width = 1024,
+  width = 512,
   height = 512,
-  pattern = "22",
+  pattern = "45",
 }
 
 destination{
   layer = 0,
-  x = 80,
-  y = 117,
+  x = 32,
+  y = 45,
   name = "start_position",
   direction = 3,
   default = true,
-}
-
-dynamic_tile{
-  layer = 0,
-  x = 480,
-  y = 264,
-  width = 32,
-  height = 112,
-  name = "hole_boss_1",
-  pattern = "524",
-  enabled_at_start = true,
-}
-
-dynamic_tile{
-  layer = 0,
-  x = 584,
-  y = 344,
-  width = 64,
-  height = 64,
-  name = "hole_boss_2",
-  pattern = "524",
-  enabled_at_start = true,
-}
-
-dynamic_tile{
-  layer = 0,
-  x = 696,
-  y = 280,
-  width = 96,
-  height = 32,
-  name = "hole_boss_3",
-  pattern = "524",
-  enabled_at_start = true,
-}
-
-dynamic_tile{
-  layer = 0,
-  x = 880,
-  y = 240,
-  width = 32,
-  height = 112,
-  name = "hole_boss_4",
-  pattern = "524",
-  enabled_at_start = true,
-}
-
-dynamic_tile{
-  layer = 0,
-  x = 800,
-  y = 104,
-  width = 64,
-  height = 64,
-  name = "hole_boss_5",
-  pattern = "524",
-  enabled_at_start = true,
 }
 
 dynamic_tile{
@@ -91,15 +36,43 @@ dynamic_tile{
   enabled_at_start = true,
 }
 
-switch{
+enemy{
   layer = 0,
-  x = 192,
-  y = 248,
-  name = "switch_star_boss",
-  subtype = "walkable",
-  sprite = "entities/switch_star",
-  sound = "switch",
-  needs_block = false,
-  inactivate_when_leaving = true,
+  x = 184,
+  y = 284,
+  name = "boss_plasmarine_blue",
+  direction = 3,
+  breed = "plasmarine_blue",
+  rank = 2,
+  savegame_variable = "b1131",
+  treasure_name = "plume",
+}
+
+enemy{
+  layer = 0,
+  x = 368,
+  y = 276,
+  name = "boss_plasmarine_red",
+  direction = 3,
+  breed = "plasmarine_red",
+  rank = 2,
+  savegame_variable = "b1131",
+  treasure_name = "plume",
+}
+
+pickable{
+  layer = 0,
+  x = 32,
+  y = 77,
+  name = "sword",
+  treasure_name = "sword",
+}
+
+pickable{
+  layer = 0,
+  x = 48,
+  y = 77,
+  name = "hookshot",
+  treasure_name = "hookshot",
 }
 
