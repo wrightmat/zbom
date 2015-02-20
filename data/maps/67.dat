@@ -10,6 +10,33 @@ properties{
 
 tile{
   layer = 0,
+  x = 896,
+  y = 1056,
+  width = 64,
+  height = 64,
+  pattern = "49",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 1024,
+  width = 160,
+  height = 96,
+  pattern = "49",
+}
+
+tile{
+  layer = 0,
+  x = 888,
+  y = 1080,
+  width = 48,
+  height = 40,
+  pattern = "275",
+}
+
+tile{
+  layer = 0,
   x = 608,
   y = 928,
   width = 16,
@@ -46,10 +73,10 @@ tile{
 
 tile{
   layer = 0,
-  x = 912,
-  y = 1040,
-  width = 208,
-  height = 80,
+  x = 936,
+  y = 1024,
+  width = 184,
+  height = 96,
   pattern = "275",
 }
 
