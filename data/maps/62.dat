@@ -4108,7 +4108,7 @@ teletransporter{
   x = 1120,
   y = 0,
   width = 16,
-  height = 624,
+  height = 608,
   name = "to_E6",
   transition = "scrolling",
   destination_map = "63",
@@ -4251,6 +4251,15 @@ chest{
   treasure_name = "amber",
   treasure_savegame_variable = "b1747",
   sprite = "entities/chest",
+}
+
+wall{
+  layer = 0,
+  x = 464,
+  y = 0,
+  width = 16,
+  height = 8,
+  stops_hero = true,
 }
 
 tile{
