@@ -3532,6 +3532,29 @@ Don't worry, my family
 just keeps in contact
 with Isan. He told me
 to expect you.$0
+  ]]
+}
+
+dialog{
+  id = "zelda.0.goto_old_hyrule",
+  skip = "current",
+  text = [[
+You say you don't know
+anyone named Isan?
+You should travel to
+the Ancient Library
+via the old sewers and
+speak with him - he is
+the wisest man in all
+of Hyrule and can help
+you in your quest.
+  ]]
+}
+
+dialog{
+  id = "zelda.1.council",
+  skip = "current",
+  text = [[
 He also told me about
 your quest.$0
 To be honest I was
@@ -3565,14 +3588,7 @@ they find you here with
 the pieces of that Book
 you possess, it is
 unlikely that you'll
-escape alive. Stand
-there and I will cast
-a spell which will make
-you invisible. This
-should allow you to
-escape safely, but do so
-quickly. The spell will
-only last a few minutes.
+escape alive.
 Get away from the castle
 as fast as you can!
   ]]
@@ -6883,9 +6899,9 @@ dialog{
   id = "sign.H13_floria",
   skip = "current",
   text = [[
+West- Ordon Village
 South- Floria
 Peninsula
-
 DANGER! Babas
 sighted!
   ]]
@@ -6895,9 +6911,11 @@ dialog{
   id = "sign.D15_blacksmith",
   skip = "current",
   text = [[
-^ then >
-
+NorthEast:
 Faron Blacksmith
+
+West:
+Sacred Grove
   ]]
 }
 

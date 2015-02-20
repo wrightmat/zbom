@@ -9,7 +9,7 @@ function enemy:on_created()
   -- Set up initial properties, but enemy will
   -- be disabled initially (by map). When enabled,
   -- he will start generating moths.
-  self:set_life(4)
+  self:set_life(5)
   self:set_damage(1)
   self:create_sprite("enemies/mothulita")
   self:set_hurt_style("boss")

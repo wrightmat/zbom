@@ -10,6 +10,24 @@ properties{
 
 tile{
   layer = 0,
+  x = 440,
+  y = 688,
+  width = 16,
+  height = 16,
+  pattern = "272",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 688,
+  width = 16,
+  height = 16,
+  pattern = "271",
+}
+
+tile{
+  layer = 0,
   x = 704,
   y = 664,
   width = 128,
@@ -1407,7 +1425,7 @@ tile{
   layer = 0,
   x = 416,
   y = 696,
-  width = 128,
+  width = 32,
   height = 8,
   pattern = "265",
 }
@@ -1416,7 +1434,7 @@ tile{
   layer = 0,
   x = 416,
   y = 688,
-  width = 128,
+  width = 32,
   height = 8,
   pattern = "259",
 }
@@ -5885,6 +5903,51 @@ tile{
   pattern = "2018",
 }
 
+tile{
+  layer = 0,
+  x = 496,
+  y = 688,
+  width = 48,
+  height = 8,
+  pattern = "259",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 696,
+  width = 48,
+  height = 8,
+  pattern = "265",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 696,
+  width = 8,
+  height = 8,
+  pattern = "283",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 696,
+  width = 8,
+  height = 8,
+  pattern = "284",
+}
+
+tile{
+  layer = 0,
+  x = 456,
+  y = 696,
+  width = 32,
+  height = 8,
+  pattern = "464",
+}
+
 teletransporter{
   layer = 0,
   x = 1120,
@@ -5899,9 +5962,9 @@ teletransporter{
 
 teletransporter{
   layer = 0,
-  x = 0,
+  x = 256,
   y = 1120,
-  width = 752,
+  width = 496,
   height = 16,
   name = "to_E15",
   transition = "scrolling",
@@ -9159,6 +9222,16 @@ teletransporter{
   destination = "_side",
 }
 
+jumper{
+  layer = 0,
+  x = 456,
+  y = 696,
+  width = 32,
+  height = 8,
+  direction = 6,
+  jump_length = 64,
+}
+
 tile{
   layer = 2,
   x = 1096,
@@ -11020,5 +11093,14 @@ tile{
   width = 32,
   height = 24,
   pattern = "1021",
+}
+
+tile{
+  layer = 2,
+  x = -16,
+  y = 1112,
+  width = 192,
+  height = 32,
+  pattern = "1495",
 }
 

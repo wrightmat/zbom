@@ -47,6 +47,8 @@ if boss_gohma ~= nil then
   sol.timer.start(200, function()
     sol.audio.play_music("faron_woods")
     to_book_chamber:set_enabled(true)
+    to_temple_boss:set_enabled(false)
+    to_temple_jade:set_enabled(false)
     sol.audio.play_sound("secret")
   end)
   game:set_value("b1058", true)

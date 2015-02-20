@@ -6832,6 +6832,16 @@ teletransporter{
   destination = "_side",
 }
 
+stream{
+  layer = 0,
+  x = 784,
+  y = 909,
+  direction = 4,
+  sprite = "entities/conveyor",
+  allow_movement = false,
+  allow_item = false,
+}
+
 tile{
   layer = 1,
   x = 280,

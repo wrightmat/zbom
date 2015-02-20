@@ -99,7 +99,13 @@ function elder_gin:on_interaction()
 end
 
 function elder_zelda:on_interaction()
-  game:start_dialog("zelda.0.council", game:get_player_name())
+  game:start_dialog("zelda.0.council", game:get_player_name(), function()
+    if game:get_value("i1032") >= 1 then
+      game:start_dialog("zelda.1.council")
+    else
+      game:start_dialog("zelda.0.goto_old_hyrule")
+    end
+  end)
 end
 
 function elder_larin:on_interaction()

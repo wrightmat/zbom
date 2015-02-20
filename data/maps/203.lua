@@ -69,6 +69,8 @@ function sensor_miniboss_start:on_activated()
 end
 
 function sensor_out_torches_room:on_activated()
+  torches_puzzle_nb_enabled = 0
+  torches_puzzle_correct = false
   torch_room6_1:get_sprite():set_animation("unlit")
   torch_room6_2:get_sprite():set_animation("unlit")
   torch_room6_3:get_sprite():set_animation("unlit")

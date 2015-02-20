@@ -13,7 +13,8 @@ end
 for enemy in map:get_entities("room3_helmasaur") do
   enemy.on_dead = function()
     if not map:has_entities("room3_helmasaur") then
-      door_room1:set_open()
+      door_room1_1:set_open()
+      door_room1_2:set_open()
       game:set_value("b1049", true)
     end
   end
