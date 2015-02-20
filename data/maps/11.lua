@@ -33,10 +33,6 @@ local function are_all_torches_on()
     and torch_3:get_sprite():get_animation() == "lit"
 end
 
-function end_race_lost()
-
-end
-
 function map:on_started(destination)
   random_walk(goat_1)
   random_walk(goat_2)
@@ -152,6 +148,7 @@ function sensor_start_race:on_activated()
 	game.race_timer = nil
       end)
       game.race_timer:set_with_sound(true)
+      game.race_timer:set_suspended_with_map(true)
     end
   end
 end
