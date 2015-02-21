@@ -10,7 +10,7 @@ if game:get_value("i1916") == nil then game:set_value("i1916", 0) end --Galen re
 if game:get_value("i1029") == nil then game:set_value("i1029", 0) end --quest variable
 
 function map:on_started(destination)
-  --npc_galen_2:get_sprite():set_direction(2)--up
+  npc_galen_2:get_sprite():set_direction(1)--up
   if game:get_value("i1029") < 2 then
     npc_galen_2:remove()
   elseif game:get_value("i1029") == 2 then
@@ -25,20 +25,20 @@ function map:on_started(destination)
     sol.timer.start(1000, function()
       hero:freeze()
       game:start_dialog("dargor.3.house", game:get_player_name(), function()
-        --npc_galen_2:get_sprite():set_animation("walking")
+        npc_galen_2:get_sprite():set_animation("walking")
 	local m = sol.movement.create("target")
         m:set_target(112, 384)
-	m:set_speed(32)
+	m:set_speed(24)
 	m:start(npc_galen_2, function()
 	  npc_galen_2:get_sprite():set_animation("stopped")
-	  --npc_galen_2:get_sprite():set_direction(2)--left/west
+	  npc_galen_2:get_sprite():set_direction(2)--left/west
           sol.timer.start(2000, function()
-	    --npc_galen_2:get_sprite():set_direction(0)--right/east
+	    npc_galen_2:get_sprite():set_direction(0)--right/east
 	    game:start_dialog("galen.2.house", game:get_player_name(), function()
-	      --npc_galen_2:get_sprite():set_animation("walking")
+	      npc_galen_2:get_sprite():set_animation("walking")
 	      local m2 = sol.movement.create("target")
               m2:set_target(160, 488)
-	      m:set_speed(32)
+	      m:set_speed(24)
               m2:start(npc_galen_2, function()
 	        npc_galen_2:remove()
 	        hero:unfreeze()

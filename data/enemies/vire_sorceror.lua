@@ -56,11 +56,14 @@ function enemy:unhide()
   sprite:set_direction(position.direction4)
   sprite:fade_in()
   timers[#timers + 1] = sol.timer.start(self, 1000, function()
-    self:create_enemy({
+    if map:get_entities_count("vire") < 2 then
+      self:create_enemy({
 	x = position.x + 20,
 	y = position.y + 20,
+	name = "vire_",
 	breed = "vire",
 	treasure_name = "amber"
-    })
+      })
+    end
   end)
 end

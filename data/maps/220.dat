@@ -4,7 +4,7 @@ properties{
   width = 432,
   height = 432,
   world = "outside_world",
-  tileset = "4",
+  tileset = "7",
 }
 
 tile{
@@ -13,7 +13,7 @@ tile{
   y = 0,
   width = 432,
   height = 432,
-  pattern = "46",
+  pattern = "22",
 }
 
 destination{
@@ -47,16 +47,16 @@ pickable{
   layer = 0,
   x = 48,
   y = 77,
-  treasure_name = "boomerang",
+  treasure_name = "boots",
 }
 
 enemy{
   layer = 0,
   x = 176,
-  y = 164,
-  name = "boss_carock",
+  y = 155,
+  name = "boss_vire_sorceror",
   direction = 3,
-  breed = "carock",
+  breed = "vire_sorceror",
   rank = 2,
   savegame_variable = "b1050",
   treasure_name = "jade",

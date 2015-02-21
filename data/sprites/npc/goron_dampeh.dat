@@ -2,13 +2,12 @@ animation{
   name = "stopped",
   src_image = "npc/goron.png",
   directions = {
-    { x = 96, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
-    { x = 96, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
-    { x = 96, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
-    { x = 96, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+    { x = 128, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+    { x = 128, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+    { x = 128, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+    { x = 128, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
   },
 }
-
 animation{
   name = "walking",
   src_image = "npc/goron.png",
@@ -21,4 +20,3 @@ animation{
     { x = 96, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 3 },
   },
 }
-

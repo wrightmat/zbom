@@ -20,6 +20,7 @@ function map:on_started(destination)
   if not game:get_value("b1036") then boss_heart:set_enabled(false) end
   if not game:get_value("b1043") then chest_big_key:set_enabled(false) end
   if not game:get_value("b1047") then boss_big_poe:set_enabled(false) end
+  if not game:get_value("b1786") then chest_alchemy_stone:set_enabled(false) end
 
   if game:get_value("i1027") <= 4 then
     tentacle_sword_1:set_enabled(false)
@@ -38,6 +39,10 @@ function map:on_started(destination)
   if game:get_value("i1030") >= 2 then
     water_drain:remove()
     switch_drain_water:set_activated()
+  end
+  if game:get_value("i1032") >= 2 then
+    map:open_doors("door_2")
+    map:open_doors("door_3")
   end
 end
 
@@ -98,8 +103,7 @@ end
 for enemy in map:get_entities("tentacle") do
   enemy.on_dead = function()
     if not map:has_entities("tentacle_orig") then
-      map:open_doors("door_2")
-      map:open_doors("door_3")
+      chest_alchemy_stone:set_enabled(true)
     end
   end
 end

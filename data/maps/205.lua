@@ -20,6 +20,14 @@ if game:get_value("b1117") and lantern_overlay then
 end
 
 function map:on_started(destination)
+  -- Dodongos appear after the boss is defeated
+  if not game:get_value("b1110") then
+    boss_vire:set_enabled(false)
+    boss_vire_sorceror:set_enabled(false)
+    map:set_entities_enabled("dodongo", false)
+  else
+    if npc_dampeh ~= nil then npc_dampeh:remove() end
+  end
   if game:get_value("i1029") <= 4 then
     npc_goron_ghost:remove()
   elseif game:get_value("i1029") == 5 then
@@ -44,14 +52,7 @@ function map:on_started(destination)
   if not game:get_value("b1105") then chest_compass:set_enabled(false) end
   if not game:get_value("b1106") then chest_map:set_enabled(false) end
   if not game:get_value("b1107") then miniboss_arrghus:set_enabled(false) end
-  -- Dodongos appear after the boss is defeated
-  if not game:get_value("b1110") then
-    boss_vire:set_enabled(false)
-    boss_vire_sorceror:set_enabled(false)
-    map:set_entities_enabled("dodongo", false)
-  else
-    if npc_dampeh ~= nil then npc_dampeh:remove() end
-  end
+
   -- Lantern slowly drains magic here so you're forced to find ways to refill magic
   magic_deplete = sol.timer.start(map, 5000, function()
     game:remove_magic(1)

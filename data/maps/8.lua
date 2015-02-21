@@ -8,6 +8,9 @@ local game = map:get_game()
 if game:get_value("i1912")==nil then game:set_value("i1912", 0) end
 
 function map:on_started(destination)
+  if game:get_value("i1032") >= 2 then
+    door:set_enabled(false)
+  end
 end
 
 function npc_isan:on_interaction()

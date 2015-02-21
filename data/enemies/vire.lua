@@ -28,7 +28,13 @@ function enemy:on_hurt()
     timer:stop()
     timer = nil
   end
-  self:create_enemy({ breed = "keese_fire", treasure_name = "random" })
+    if self:get_map():get_entities_count("keese_fire") <= 4 then
+      self:create_enemy({
+	name = "keese_fire_",
+	breed = "keese_fire",
+	treasure_name = "random"
+      })
+    end
 end
 
 function enemy:check_hero()
@@ -43,7 +49,13 @@ function enemy:check_hero()
   elseif not near_hero and going_hero then
     self:go_random()
   else
-    self:create_enemy({ breed = "keese_fire", treasure_name = "random" })
+    if self:get_map():get_entities_count("keese_fire") <= 4 then
+      self:create_enemy({
+	name = "keese_fire_",
+	breed = "keese_fire",
+	treasure_name = "random"
+      })
+    end
   end
   timer = sol.timer.start(self, 2000, function() self:check_hero() end)
 end
@@ -63,7 +75,7 @@ function enemy:go_circle()
   m:set_center(hero, 0, -21)
   m:set_radius(48)
   m:set_initial_angle(math.pi / 2)
-  m:set_angle_speed(80)
+  m:set_angle_speed(72)
   m:set_ignore_obstacles(true)
   m:start(self)
   going_hero = true

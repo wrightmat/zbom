@@ -23,6 +23,8 @@ function map:on_started(destination)
         end)
       end)
     end)
+  elseif game:get_value("i1032") >= 2 then
+    door:set_enabled(false)
   end
 end
 
