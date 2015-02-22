@@ -240,9 +240,10 @@ sprite{ id = "enemies/hardhat_beetle_blue", description = "Hardhat Beetle, blue"
 sprite{ id = "enemies/hardhat_beetle_red", description = "Hardhat Beetle, red" }
 sprite{ id = "enemies/helmasaur_red", description = "Helmasaur, red" }
 sprite{ id = "enemies/keese", description = "Keese" }
+sprite{ id = "enemies/keese_dark", description = "Keese, dark" }
+sprite{ id = "enemies/keese_elec", description = "Keese, electric" }
 sprite{ id = "enemies/keese_fire", description = "Keese, fire" }
 sprite{ id = "enemies/keese_ice", description = "Keese, ice" }
-sprite{ id = "enemies/keese_elec", description = "Keese, electric" }
 sprite{ id = "enemies/knight_chain_ball", description = "Knight, chain and ball" }
 sprite{ id = "enemies/knight_green", description = "Knight, green" }
 sprite{ id = "enemies/knight_green_sword", description = "Knight, green (sword)" }
@@ -684,9 +685,10 @@ enemy{ id = "hardhat_beetle_blue", description = "Hardhat Beetle, Blue" }
 enemy{ id = "hardhat_beetle_red", description = "Hardhat Beetle, Red" }
 enemy{ id = "helmasaur_red", description = "Helmasaur, Red" }
 enemy{ id = "keese", description = "Keese" }
+enemy{ id = "keese_dark", description = "Keese, Dark" }
+enemy{ id = "keese_elec", description = "Keese, Electric" }
 enemy{ id = "keese_fire", description = "Keese, Fire" }
 enemy{ id = "keese_ice", description = "Keese, Ice" }
-enemy{ id = "keese_elec", description = "Keese, Electric" }
 enemy{ id = "knight_chain_ball", description = "Knight, chain and ball" }
 enemy{ id = "knight_green", description = "Knight, Green" }
 enemy{ id = "knight_red", description = "Knight, Red" }

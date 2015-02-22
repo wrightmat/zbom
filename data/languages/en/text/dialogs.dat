@@ -1861,6 +1861,16 @@ thing! Find more magic!
   ]]
 }
 
+dialog{
+  id = "_cursed",
+  skip = "current",
+  text = [[
+You've been cursed!
+You won't be able to
+draw your sword.
+  ]]
+}
+
 
 dialog{
   id = "torch.need_lamp",

@@ -1,6 +1,7 @@
 local condition_manager = {}
 local in_command_pressed = false
 local in_command_release = false
+local sword_level = 0
 
 condition_manager.timers = {
   slow = nil,
@@ -8,6 +9,7 @@ condition_manager.timers = {
   poison = nil,
   confusion = nil,
   electrocution = nil,
+  cursed = nil
 }
 
 function condition_manager:initialize(game)
@@ -17,7 +19,8 @@ function condition_manager:initialize(game)
     frozen = false,
     poison = false,
     confusion = false,
-    electrocution = false
+    electrocution = false,
+    cursed = false
   }
 
   function hero:is_condition_active(condition)
@@ -114,7 +117,7 @@ function condition_manager:initialize(game)
     if damage < 1 then
       damage = 1
     end
-    --print(damage,in_damage,protection_divider,tunic_level,shield_level)
+
     game:remove_life(damage)
   end
 
@@ -223,6 +226,21 @@ function condition_manager:initialize(game)
     end)
   end
 
+  function hero:start_cursed(delay)
+    if hero:is_condition_active('cursed') and condition_manager.timers['cursed'] ~= nil then
+      condition_manager.timers['cursed']:stop()
+    end
+
+    hero:set_condition('cursed', true)
+    sword_level = game:get_ability("sword")
+    game:set_ability("sword", 0)
+    game:start_dialog("_cursed")
+
+    condition_manager.timers['cursed'] = sol.timer.start(hero, delay, function()
+      hero:stop_cursed()
+    end)
+  end
+
   function hero:stop_confusion()
     local aDirectionPressed = {
       right = {"left", false},
@@ -279,6 +297,15 @@ function condition_manager:initialize(game)
 
     hero:set_condition('slow', false)
     hero:set_walking_speed(88)
+  end
+
+  function hero:stop_cursed()
+    if hero:is_condition_active('cursed') and condition_manager.timers['cursed'] ~= nil then
+      condition_manager.timers['cursed']:stop()
+    end
+
+    hero:set_condition('cursed', false)
+    game:set_ability("sword", sword_level)
   end
 end
 
