@@ -4586,6 +4586,29 @@ teletransporter{
   destination = "_side",
 }
 
+wall{
+  layer = 0,
+  x = 240,
+  y = 608,
+  width = 16,
+  height = 8,
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+npc{
+  layer = 0,
+  x = 248,
+  y = 629,
+  name = "torch_1",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/torch_wood",
+}
+
 tile{
   layer = 1,
   x = 184,

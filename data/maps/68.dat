@@ -1196,6 +1196,19 @@ tile{
   pattern = "714",
 }
 
+wall{
+  layer = 0,
+  x = 360,
+  y = 344,
+  width = 16,
+  height = 8,
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
 teletransporter{
   layer = 0,
   x = 0,
@@ -1303,6 +1316,39 @@ npc{
   direction = 3,
   subtype = "1",
   sprite = "npc/goron_dampeh",
+}
+
+wall{
+  layer = 0,
+  x = 472,
+  y = 344,
+  width = 16,
+  height = 8,
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+npc{
+  layer = 0,
+  x = 480,
+  y = 365,
+  name = "torch_1",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/torch_wood",
+}
+
+npc{
+  layer = 0,
+  x = 368,
+  y = 365,
+  name = "torch_2",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/torch_wood",
 }
 
 npc{

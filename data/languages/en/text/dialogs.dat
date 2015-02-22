@@ -3020,19 +3020,50 @@ dialog{
 $v! $0. $0. $0.
 Now that you've seen
 Hyrule's heart of heat,
-you should explore her
-soul of cold. Snowpeak
-and the Anouki people
-lie on the other end
-of the world, in the
-far west. They may be
-able to lead you to
-your next prize.
+you should cool down
+in the calm waters of
+Lake Hylia. In the
+depths lies a great
+evil which must be
+cleansed. You first
+must find a route
+under the waters.$0
+You should also know
+that directly north of
+here, amidst pools of
+lava, lies a portal to
+the underground realm
+of Subrosia.
   ]]
 }
 
 dialog{
-  id = "ordona.4.snowpeak",
+  id = "ordona.5.lake_hylia",
+  skip = "current",
+  text = [[
+$v! $0. $0. $0.
+The waters have been
+cleansed, but now
+Hyrule's soul of cold
+requires your help.
+Snowpeak and the
+Anouki people lie on
+the far end of the
+world, in the norht-
+west edge. They may be
+able to lead you to
+your next prize.$0
+You should also know
+that directly north of
+here, amidst pools of
+lava, lies a portal to
+the underground realm
+of Subrosia.
+  ]]
+}
+
+dialog{
+  id = "ordona.6.snowpeak",
   skip = "current",
   text = [[
 $v! $0. $0. $0.
@@ -3052,7 +3083,7 @@ be at the top.
 }
 
 dialog{
-  id = "ordona.4.septen",
+  id = "ordona.7.septen",
   skip = "current",
   text = [[
 $v! $0. $0. $0.
@@ -6776,6 +6807,17 @@ take care of that.
 }
 
 dialog{
+  id = "anouki_2.2.snowpeak",
+  skip = "current",
+  text = [[
+You took care of the
+cave, you say? Well
+thanks mister!
+You're pretty okay.
+  ]]
+}
+
+dialog{
   id = "anouki_3.0.snowpeak",
   skip = "current",
   text = [[
@@ -6818,7 +6860,51 @@ sculptures? Thanks!
 I made several of them
 myself. It's fun to
 turn ice into other
-things.
+things that aren't
+normally ice.
+  ]]
+}
+
+dialog{
+  id = "rito_1.0.septen",
+  skip = "current",
+  text = [[
+Hello sir, and welcome
+to the newly established
+Septen Heights! There's
+not a lot here yet,
+but we're growing fast!
+  ]]
+}
+
+dialog{
+  id = "rito_2.0.septen",
+  skip = "current",
+  text = [[
+We Rito are a mysterious
+people - even we don't
+fully know how we got
+here! Hyrule is a
+magical place, let's
+just leave it at that.
+  ]]
+}
+
+dialog{
+  id = "rito_carpenter.0.septen",
+  skip = "current",
+  text = [[
+I'm the only carpenter
+in town, so they asked
+me to look at this
+bridge. Unfortunatly,
+I don't know much about
+carpentry yet, and I
+don't have anyone to
+learn from, so I guess
+I'll just stare at this
+until I figure out how
+to fix it. 
   ]]
 }
 
@@ -6990,6 +7076,16 @@ dialog{
   text = [[
 Entry prohibited due
 to ghost sightings.
+  ]]
+}
+
+dialog{
+  id = "sign.tower",
+  skip = "current",
+  text = [[
+<- This way to the
+marvelous new
+Tower of Winds!
   ]]
 }
 

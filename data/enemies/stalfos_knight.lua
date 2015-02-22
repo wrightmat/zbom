@@ -8,8 +8,7 @@ local positions = {
   {x = 224, y = 288, direction4 = 3},
   {x = 232, y = 192, direction4 = 3},
   {x = 360, y = 304, direction4 = 3},
-  {x = 336, y = 184, direction4 = 3},
-  {x = 288, y = 256, direction4 = 3}
+  {x = 336, y = 184, direction4 = 3}
 }
 
 local vulnerable = false
@@ -74,14 +73,14 @@ function enemy:on_update()
 end
 
 function enemy:hide()
-  sol.timer.start(self, 5000, function() self:unhide() end)
+  sol.timer.start(self:get_map(), 5000, function() self:unhide() end)
   vulnerable = false
   hidden = true
   self:get_sprite():set_animation("head")
   sol.audio.play_sound("stalfos_laugh")
   self:create_enemy({
     breed = "stalfos_head",
-    treasure_name = "bombs"
+    treasure_name = "bomb"
   })
   sol.timer.start(self, 1000, function()
     local m = sol.movement.create("jump")

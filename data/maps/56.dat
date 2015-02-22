@@ -5,7 +5,7 @@ properties{
   height = 1120,
   world = "outside_world",
   tileset = "2",
-  music = "septen",
+  music = "town_septen",
 }
 
 tile{
@@ -1235,15 +1235,6 @@ tile{
 tile{
   layer = 0,
   x = 168,
-  y = 360,
-  width = 840,
-  height = 8,
-  pattern = "675",
-}
-
-tile{
-  layer = 0,
-  x = 168,
   y = 400,
   width = 848,
   height = 8,
@@ -2386,7 +2377,7 @@ npc{
   layer = 0,
   x = 384,
   y = 757,
-  name = "npc_rito",
+  name = "npc_rito_1",
   direction = 3,
   subtype = "1",
   sprite = "npc/rito",
@@ -2633,6 +2624,7 @@ npc{
   direction = 3,
   subtype = "0",
   sprite = "entities/sign",
+  behavior = "dialog#sign.tower",
 }
 
 wall{
@@ -4644,6 +4636,15 @@ tile{
   pattern = "676",
 }
 
+tile{
+  layer = 1,
+  x = 168,
+  y = 360,
+  width = 840,
+  height = 8,
+  pattern = "675",
+}
+
 teletransporter{
   layer = 1,
   x = 88,
@@ -4720,6 +4721,16 @@ teletransporter{
   transition = "scrolling",
   destination_map = "107",
   destination = "_side",
+}
+
+npc{
+  layer = 1,
+  x = 664,
+  y = 149,
+  name = "npc_rito_bridge",
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/rito",
 }
 
 tile{

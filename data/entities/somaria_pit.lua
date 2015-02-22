@@ -15,7 +15,7 @@ function entity:on_created()
       sprite:set_animation("filled")
       self:set_traversable_by(true) -- pit is filled so hero can walk over it
       other:remove() -- remove the somaria block, it's in the pit
-      sol.timer.start(self, 10000, function()
+      sol.timer.start(self:get_map(), 10000, function()
         if hero_on_pit then
           return true
         else
