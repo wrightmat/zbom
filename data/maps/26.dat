@@ -4450,6 +4450,30 @@ wall{
   stops_hero = true,
 }
 
+custom_entity{
+  layer = 0,
+  x = 832,
+  y = 771,
+  width = 16,
+  height = 16,
+  name = "stone_pile_1",
+  direction = 3,
+  sprite = "entities/stone_pile",
+  model = "stone_pile",
+}
+
+custom_entity{
+  layer = 0,
+  x = 168,
+  y = 795,
+  width = 16,
+  height = 16,
+  name = "stone_pile_2",
+  direction = 3,
+  sprite = "entities/stone_pile",
+  model = "stone_pile",
+}
+
 tile{
   layer = 2,
   x = 40,

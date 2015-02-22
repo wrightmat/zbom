@@ -333,6 +333,7 @@ sprite{ id = "entities/somaria_pit", description = "Somaria Pit (Cane)" }
 sprite{ id = "entities/statue", description = "Statue" }
 sprite{ id = "entities/statue_goron", description = "Goron Statue (Mausoleum)" }
 sprite{ id = "entities/statue_castle", description = "Castle Statue (Armament)" }
+sprite{ id = "entities/stone_pile", description = "Stone pile" }
 sprite{ id = "entities/stone_small_white", description = "Stone, small white" }
 sprite{ id = "entities/stone_small_black", description = "Stone, small black" }
 sprite{ id = "entities/stream_water", description = "Stream, Water" }
@@ -733,6 +734,7 @@ entity{ id = "quicksand", description = "Quicksand (Lakebed)" }
 entity{ id = "soil", description = "Soft soil (Shovel)" }
 entity{ id = "somaria_pit", description = "Somaria Pit (Cane)" }
 entity{ id = "statue_goron", description = "Goron Statue (Mausoleum)" }
+entity{ id = "stone_pile", description = "Stone pile" }
 entity{ id = "switch_lever", description = "Switch, Lever" }
 
 language{ id = "en", description = "English dialogs" }
