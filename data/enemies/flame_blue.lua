@@ -4,7 +4,7 @@ local enemy = ...
 
 function enemy:on_created()
   self:set_life(1)
-  self:set_damage(6)
+  self:set_damage(4)
   self:create_sprite("enemies/flame_blue")
   self:set_size(16, 16)
   self:set_origin(8, 13)
@@ -37,7 +37,6 @@ function enemy:go(angle)
   local m = sol.movement.create("straight")
   m:set_speed(192)
   m:set_angle(angle)
-  m:set_ignore_obstacles(true)
   m:set_max_distance(320)
   m:start(self)
 end

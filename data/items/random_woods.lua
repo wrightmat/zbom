@@ -21,7 +21,7 @@ local probabilities = {
   [{ "alchemy", 1}]     = 1,    -- Alchemy Stone (rare drop item).
   [{ "plume", 1 }]      = 0.5,  -- Goddess Plume (exceptionally rare drop item).
   [{ "stick", 1 }]      = 4,    -- Deku stick (only in wooded areas).
-  [{ "jade", 1 }]       = 2,    -- Mystic jade (fairly rare drop item, only in wooded areas).
+  [{ "jade", 1 }]       = 3,    -- Mystic jade (fairly rare drop item, only in wooded areas).
 }
 
 function item:on_pickable_created(pickable)

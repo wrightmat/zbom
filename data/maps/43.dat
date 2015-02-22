@@ -3564,6 +3564,17 @@ sensor{
   name = "sensor_enter_field",
 }
 
+npc{
+  layer = 0,
+  x = 256,
+  y = 533,
+  name = "sign_D8_directions",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/sign",
+  behavior = "dialog#sign.D8_directions",
+}
+
 tile{
   layer = 2,
   x = 864,

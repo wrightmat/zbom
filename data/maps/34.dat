@@ -1612,8 +1612,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 824,
-  y = 176,
+  x = 752,
+  y = 112,
   width = 8,
   height = 8,
   pattern = "546",
@@ -3347,6 +3347,15 @@ tile{
   pattern = "316",
 }
 
+tile{
+  layer = 0,
+  x = 824,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "311",
+}
+
 dynamic_tile{
   layer = 0,
   x = 0,
@@ -4425,6 +4434,23 @@ wall{
   width = 8,
   height = 8,
   stops_hero = true,
+}
+
+npc{
+  layer = 0,
+  x = 832,
+  y = 173,
+  name = "ocarina_wind_to_H14",
+  direction = 3,
+  subtype = "0",
+}
+
+destination{
+  layer = 0,
+  x = 832,
+  y = 189,
+  name = "ocarina_warp",
+  direction = 3,
 }
 
 tile{

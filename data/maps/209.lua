@@ -13,7 +13,7 @@ end
 function switch_star_1:on_activated()
   switch_star_2:set_activated(false)
   local positions_1 = {
-    {x = 176, y = 1368},
+    {x = 168, y = 1368},
     {x = 376, y = 1336},
     {x = 464, y = 1520},
     {x = 608, y = 1352},

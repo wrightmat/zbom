@@ -39,7 +39,7 @@ function map:on_started(destination)
     dampeh_1:remove()
     dampeh_2:remove()
     npc_goron_ghost:remove()
-    npc_dampeh:remove()
+    if npc_dampeh ~= nil then npc_dampeh:remove() end
   end
   map:set_doors_open("door_miniboss")
   chest_alchemy:set_enabled(false)
@@ -142,7 +142,7 @@ function door_key1_1:on_opened()
 end
 
 function map:on_update()
-  if game:get_magic() <= 0 then
+  if game:get_magic() <= 0 and not game:get_value("b1117") then
     if lantern_overlay then lantern_overlay = nil end
   else
     if game:has_item("lamp") and lantern_overlay == nil then lantern_overlay = sol.surface.create("entities/dark.png") end

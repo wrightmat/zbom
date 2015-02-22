@@ -20,23 +20,24 @@ function enemy:on_created()
 end
 
 function enemy:on_update()
+  local sprite = self:get_sprite()
   local hero = self:get_map():get_entity("hero")
   -- Check whether the hero is close.
   if self:get_distance(hero) <= 96 and state ~= "going" then
-    self:get_sprite():set_animation("walking")
+    if sprite == "enemies/keese_fire" then sprite:set_animation("walking") end
     local m = sol.movement.create("target")
     m:set_ignore_obstacles(true)
     m:set_speed(64)
     m:start(self)
     state = "going"
   elseif self:get_distance(hero) > 96 and state ~= "random" then
-    self:get_sprite():set_animation("walking")
+    if sprite == "enemies/keese_fire" then sprite:set_animation("walking") end
     local m = sol.movement.create("random")
     m:set_speed(56)
     m:start(self)
     state = "random"
   elseif self:get_distance(hero) > 144 then
-    self:get_sprite():set_animation("stopped")
+    if sprite == "enemies/keese_fire" then sprite:set_animation("stopped") end
     state = "stopped"
     self:stop_movement()
   end

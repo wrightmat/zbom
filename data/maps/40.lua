@@ -1,9 +1,9 @@
 local map = ...
 local game = map:get_game()
 
-------------------------------------------------------------
--- Outside World F9 (Hyrule Castle Town)                  --
-------------------------------------------------------------
+-------------------------------------------
+-- Outside World F9 (Hyrule Castle Town) --
+-------------------------------------------
 
 function map:on_started(destination)
   -- Opening doors
@@ -26,5 +26,46 @@ function map:on_started(destination)
     for entity in map:get_entities("night_") do
       entity:set_enabled(true)
     end
+  end
+end
+
+function ocarina_wind_to_north:on_interaction()
+  if game:has_item("ocarina") then
+    game:start_dialog("warp.to_D7", function(answer)
+      if answer == 1 then
+        sol.audio.play_sound("ocarina_wind")
+        map:get_entity("hero"):teleport(51, "ocarina_warp", "fade")
+      end
+    end)
+  end
+end
+function ocarina_wind_to_east:on_interaction()
+  if game:has_item("ocarina") then
+    game:start_dialog("warp.to_H6", function(answer)
+      if answer == 1 then
+        sol.audio.play_sound("ocarina_wind")
+        map:get_entity("hero"):teleport(66, "ocarina_warp", "fade")
+      end
+    end)
+  end
+end
+function ocarina_wind_to_south:on_interaction()
+  if game:has_item("ocarina") then
+    game:start_dialog("warp.to_F14", function(answer)
+      if answer == 1 then
+        sol.audio.play_sound("ocarina_wind")
+        map:get_entity("hero"):teleport(11, "ocarina_warp", "fade")
+      end
+    end)
+  end
+end
+function ocarina_wind_to_west:on_interaction()
+  if game:has_item("ocarina") then
+    game:start_dialog("warp.to_B8", function(answer)
+      if answer == 1 then
+        sol.audio.play_sound("ocarina_wind")
+        map:get_entity("hero"):teleport(72, "ocarina_warp", "fade")
+      end
+    end)
   end
 end

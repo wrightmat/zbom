@@ -1574,6 +1574,15 @@ tile{
   pattern = "1128",
 }
 
+tile{
+  layer = 0,
+  x = 712,
+  y = 440,
+  width = 16,
+  height = 16,
+  pattern = "311",
+}
+
 sensor{
   layer = 0,
   x = 920,
@@ -1930,6 +1939,23 @@ destructible{
   treasure_name = "random_mountain",
   sprite = "entities/stone_small_white",
   destruction_sound = "stone",
+}
+
+npc{
+  layer = 0,
+  x = 720,
+  y = 453,
+  name = "ocarina_wind_to_B8",
+  direction = 3,
+  subtype = "0",
+}
+
+destination{
+  layer = 0,
+  x = 720,
+  y = 469,
+  name = "ocarina_warp",
+  direction = 3,
 }
 
 npc{

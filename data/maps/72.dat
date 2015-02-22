@@ -1988,6 +1988,15 @@ tile{
   pattern = "282",
 }
 
+tile{
+  layer = 0,
+  x = 56,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "311",
+}
+
 teletransporter{
   layer = 0,
   x = 1120,
@@ -2078,6 +2087,23 @@ destination{
   x = 80,
   y = 997,
   name = "from_gerudo_3",
+  direction = 3,
+}
+
+npc{
+  layer = 0,
+  x = 64,
+  y = 685,
+  name = "ocarina_wind_to_H6",
+  direction = 3,
+  subtype = "0",
+}
+
+destination{
+  layer = 0,
+  x = 64,
+  y = 701,
+  name = "ocarina_warp",
   direction = 3,
 }
 

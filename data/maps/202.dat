@@ -3693,7 +3693,7 @@ tile{
 tile{
   layer = 0,
   x = 1248,
-  y = 472,
+  y = 480,
   width = 8,
   height = 8,
   pattern = "104",
@@ -3702,7 +3702,7 @@ tile{
 tile{
   layer = 0,
   x = 1248,
-  y = 448,
+  y = 440,
   width = 8,
   height = 8,
   pattern = "104",
@@ -5141,7 +5141,7 @@ tile{
 
 teletransporter{
   layer = 0,
-  x = 1008,
+  x = 1208,
   y = 456,
   width = 16,
   height = 16,
@@ -5690,12 +5690,12 @@ switch{
 jumper{
   layer = 0,
   x = 1248,
-  y = 456,
+  y = 448,
   width = 8,
   height = 32,
   name = "jump_sensor",
   direction = 4,
-  jump_length = 40,
+  jump_length = 72,
 }
 
 enemy{
@@ -6075,6 +6075,50 @@ wall{
   stops_enemies = true,
 }
 
+wall{
+  layer = 0,
+  x = 544,
+  y = 368,
+  width = 8,
+  height = 672,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 856,
+  y = 368,
+  width = 8,
+  height = 672,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 552,
+  y = 1032,
+  width = 304,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 552,
+  y = 368,
+  width = 304,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_projectiles = true,
+}
+
 tile{
   layer = 1,
   x = 848,
@@ -6118,6 +6162,8 @@ wall{
   width = 8,
   height = 224,
   stops_enemies = true,
+  stops_npcs = true,
+  stops_projectiles = true,
 }
 
 wall{
@@ -6127,15 +6173,8 @@ wall{
   width = 8,
   height = 224,
   stops_enemies = true,
-}
-
-wall{
-  layer = 1,
-  x = 1256,
-  y = 576,
-  width = 224,
-  height = 8,
-  stops_enemies = true,
+  stops_npcs = true,
+  stops_projectiles = true,
 }
 
 wall{
@@ -6145,6 +6184,8 @@ wall{
   width = 224,
   height = 8,
   stops_enemies = true,
+  stops_npcs = true,
+  stops_projectiles = true,
 }
 
 enemy{
@@ -6172,6 +6213,17 @@ enemy{
   name = "keese_3",
   direction = 3,
   breed = "keese",
+}
+
+wall{
+  layer = 1,
+  x = 1256,
+  y = 576,
+  width = 224,
+  height = 8,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_projectiles = true,
 }
 
 tile{

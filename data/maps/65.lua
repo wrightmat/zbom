@@ -7,10 +7,6 @@ local game = map:get_game()
 
 if game:get_value("i1923")==nil then game:set_value("i1923", 0) end
 
-function map:on_started(destination)
-
-end
-
 function zora_gatekeeper:on_interaction()
   if game:get_value("i1923") <= 4 then
     game:start_dialog("zora_gatekeeper."..game:get_value("i1923")..".domain")

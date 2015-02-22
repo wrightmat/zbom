@@ -7811,6 +7811,15 @@ tile{
   pattern = "524",
 }
 
+tile{
+  layer = 0,
+  x = 200,
+  y = 600,
+  width = 16,
+  height = 16,
+  pattern = "311",
+}
+
 teletransporter{
   layer = 0,
   x = 112,
@@ -8558,6 +8567,23 @@ destructible{
   destruction_sound = "bush",
   weight = 1,
   can_be_cut = true,
+}
+
+npc{
+  layer = 0,
+  x = 208,
+  y = 613,
+  name = "ocarina_wind_to_C13",
+  direction = 3,
+  subtype = "0",
+}
+
+destination{
+  layer = 0,
+  x = 208,
+  y = 629,
+  name = "ocarina_warp",
+  direction = 3,
 }
 
 tile{

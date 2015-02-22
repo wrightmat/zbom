@@ -24,17 +24,13 @@ function enemy:on_restarted()
 end
 
 function enemy:on_hurt()
-  if timer ~= nil then
-    timer:stop()
-    timer = nil
+  if self:get_map():get_entities_count("keese_fire") <= 4 then
+    self:create_enemy({
+      name = "keese_fire_",
+      breed = "keese_fire",
+      treasure_name = "random"
+    })
   end
-    if self:get_map():get_entities_count("keese_fire") <= 4 then
-      self:create_enemy({
-	name = "keese_fire_",
-	breed = "keese_fire",
-	treasure_name = "random"
-      })
-    end
 end
 
 function enemy:check_hero()
@@ -57,7 +53,7 @@ function enemy:check_hero()
       })
     end
   end
-  timer = sol.timer.start(self, 2000, function() self:check_hero() end)
+  sol.timer.start(self:get_map(), 2000, function() self:check_hero() end)
 end
 
 function enemy:go_random()
@@ -72,7 +68,7 @@ end
 function enemy:go_circle()
   local hero = self:get_map():get_entity("hero")
   local m = sol.movement.create("circle")
-  m:set_center(hero, 0, -21)
+  m:set_center(hero, 0, -20)
   m:set_radius(48)
   m:set_initial_angle(math.pi / 2)
   m:set_angle_speed(72)

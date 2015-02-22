@@ -19420,6 +19420,42 @@ destructible{
   destruction_sound = "stone",
 }
 
+wall{
+  layer = 0,
+  x = 1480,
+  y = 1056,
+  width = 16,
+  height = 16,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1464,
+  y = 1040,
+  width = 16,
+  height = 16,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1488,
+  y = 1024,
+  width = 16,
+  height = 16,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1496,
+  y = 1040,
+  width = 16,
+  height = 16,
+  stops_enemies = true,
+}
+
 tile{
   layer = 2,
   x = 1760,

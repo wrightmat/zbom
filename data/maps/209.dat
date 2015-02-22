@@ -20,9 +20,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 952,
+  x = 936,
   y = 1592,
-  width = 16,
+  width = 32,
   height = 48,
   pattern = "524",
 }
@@ -5287,7 +5287,7 @@ tile{
   layer = 0,
   x = 904,
   y = 1616,
-  width = 48,
+  width = 32,
   height = 16,
   pattern = "601",
 }
@@ -5326,6 +5326,15 @@ tile{
   width = 16,
   height = 16,
   pattern = "601",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 1552,
+  width = 8,
+  height = 8,
+  pattern = "104",
 }
 
 dynamic_tile{
@@ -6618,10 +6627,10 @@ destructible{
 
 dynamic_tile{
   layer = 0,
-  x = 928,
+  x = 936,
   y = 1560,
   width = 16,
-  height = 32,
+  height = 48,
   name = "bridge6_2",
   pattern = "557",
   enabled_at_start = false,
@@ -6755,6 +6764,7 @@ destructible{
   x = 912,
   y = 1629,
   treasure_name = "magic_flask",
+  treasure_variant = 2,
   sprite = "entities/pot",
   destruction_sound = "stone",
 }
@@ -6764,16 +6774,6 @@ destructible{
   x = 928,
   y = 1629,
   treasure_name = "random",
-  sprite = "entities/pot",
-  destruction_sound = "stone",
-}
-
-destructible{
-  layer = 0,
-  x = 944,
-  y = 1629,
-  treasure_name = "magic_flask",
-  treasure_variant = 2,
   sprite = "entities/pot",
   destruction_sound = "stone",
 }

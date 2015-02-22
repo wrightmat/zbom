@@ -6,13 +6,13 @@ local game = map:get_game()
 ---------------------------------------------------
 
 if game:get_value("i1603")==nil then game:set_value("i1603", 0) end
-if game:get_value("i1826")==nil then game:set_value("i1826", 0) end
+if game:get_value("i1849")==nil then game:set_value("i1849", 0) end
 
 function map:on_started(destination)
-  if game:get_value("i1826") >= 25 then game:set_value("i1603", 2) end
-  if game:get_value("i1826") >= 50 then game:set_value("i1603", 3) end
-  if game:get_value("i1826") >= 75 then game:set_value("i1603", 4) end
-  if game:get_value("i1826") == 99 then game:set_value("i1603", 5) end
+  if game:get_value("i1849") >= 25 then game:set_value("i1603", 2) end
+  if game:get_value("i1849") >= 50 then game:set_value("i1603", 3) end
+  if game:get_value("i1849") >= 75 then game:set_value("i1603", 4) end
+  if game:get_value("i1849") == 99 then game:set_value("i1603", 5) end
 end
 
 function sensor_fairy_speak:on_activated()
@@ -22,7 +22,7 @@ function sensor_fairy_speak:on_activated()
     game:start_dialog("great_fairy.2")
   elseif game:get_value("i1603") == 3 then
     game:start_dialog("great_fairy.3", function()
-      hero:start_treasure("quiver", 2)
+      if game:get_value("i1803") < 2 then hero:start_treasure("quiver", 2) end
     end)
   elseif game:get_value("i1603") == 4 then
     game:start_dialog("great_fairy.4")

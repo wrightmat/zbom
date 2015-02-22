@@ -5068,8 +5068,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 592,
-  y = 320,
+  x = 280,
+  y = 424,
   width = 16,
   height = 16,
   pattern = "43",
@@ -5077,8 +5077,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 384,
-  y = 416,
+  x = 376,
+  y = 376,
   width = 16,
   height = 8,
   pattern = "1693",
@@ -5640,6 +5640,15 @@ tile{
   width = 16,
   height = 16,
   pattern = "1792",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 328,
+  width = 16,
+  height = 16,
+  pattern = "311",
 }
 
 npc{
@@ -6614,5 +6623,22 @@ teletransporter{
   transition = "scrolling",
   destination_map = "56",
   destination = "_side",
+}
+
+npc{
+  layer = 0,
+  x = 600,
+  y = 341,
+  name = "ocarina_wind_to_",
+  direction = 3,
+  subtype = "0",
+}
+
+destination{
+  layer = 0,
+  x = 600,
+  y = 357,
+  name = "ocarina_warp",
+  direction = 3,
 }
 

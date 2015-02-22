@@ -4,7 +4,7 @@ local enemy = ...
 --  electricity balls in order to electricute hero.
 
 function enemy:on_created()
-  self:set_life(10)
+  self:set_life(8)
   self:set_damage(4)
   self:create_sprite("enemies/plasmarine_red")
   self:set_attack_consequence("arrow", "ignored")
@@ -32,8 +32,10 @@ end
 function enemy:on_collision_enemy(other_enemy, other_sprite, my_sprite)
   if other_enemy:get_breed() == "plasmarine_ball" then
     if other_sprite:get_direction() == 0 or other_sprite:get_direction() == 1 then
-      self:hurt(1)
-      enemy:remove_life(1)
+      sol.timer.start(self, 100, function()
+	self:hurt(1)
+	enemy:remove_life(1)
+      end)
     end
   end
 end

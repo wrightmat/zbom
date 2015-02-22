@@ -32,8 +32,8 @@ function entity:on_created()
       timer = sol.timer.start(self, 20, function()
         time_in = time_in + 1
 	hx, hy, hl = hero:get_position()
-	if ex > hx then hx = hx + 1 else hx = hx - 1 end
-	if ey > hy then hy = hy + 1 else hy = hy - 1 end
+	if ex > hx then hx = hx + 2 else hx = hx - 2 end
+	if ey > hy then hy = hy + 2 else hy = hy - 2 end
         hero:set_position(hx, hy)
         timer = nil  -- This variable "timer" ensures that only one timer is running.
         -- If hero stays in the quicksand too long, he sinks.

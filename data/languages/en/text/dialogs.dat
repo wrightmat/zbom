@@ -1951,6 +1951,72 @@ No
 }
 
 dialog{
+  id = "warp.to_B8",
+  skip = "current",
+  question = true,
+  text = [[
+Warp to Gerudo Camp?
+Yes
+No
+  ]]
+}
+
+dialog{
+  id = "warp.to_H6",
+  skip = "current",
+  question = true,
+  text = [[
+Warp to Goron City?
+Yes
+No
+  ]]
+}
+
+dialog{
+  id = "warp.to_C13",
+  skip = "current",
+  question = true,
+  text = [[
+Warp to the Beach?
+Yes
+No
+  ]]
+}
+
+dialog{
+  id = "warp.to_H10",
+  skip = "current",
+  question = true,
+  text = [[
+Warp to Lost Woods?
+Yes
+No
+  ]]
+}
+
+dialog{
+  id = "warp.to_H14",
+  skip = "current",
+  question = true,
+  text = [[
+Warp to Floria Peninsula?
+Yes
+No
+  ]]
+}
+
+dialog{
+  id = "warp.to_E10",
+  skip = "current",
+  question = true,
+  text = [[
+Warp to Lake Hylia?
+Yes
+No
+  ]]
+}
+
+dialog{
   id = "found_piece_of_heart.first",
   skip = "current",
   text = [[
@@ -3742,6 +3808,73 @@ council won't be
 able to find Zelda
 without you. We gotta
 ask for your help!
+  ]]
+}
+
+dialog{
+  id = "gonpho.0.office",
+  skip = "current",
+  text = [[
+If you head north of
+the castle, you'll
+hit the bustling
+city of Kakariko.
+If you continue north
+and east past that,
+you'll find my home
+of Snowpeak. Surely
+not bustling, but a
+nice home anyway.
+  ]]
+}
+
+dialog{
+  id = "koshi.0.council",
+  skip = "current",
+  text = [[
+I'm the most recent
+addition to the Council,
+representing the Rito
+people. My name is
+Koshi, and it's a
+pleasure to meet you.
+  ]]
+}
+
+dialog{
+  id = "koshi.0.council_zelda",
+  skip = "current",
+  text = [[
+I didn't know her well,
+but we can't sit
+idly by while one
+of our own is missing!
+My fellow council members
+won't go find her on
+their own, so I must
+ask for your help.
+Will you help us?
+  ]]
+}
+
+dialog{
+  id = "koshi.0.office",
+  skip = "current",
+  text = [[
+The major Hylian
+cities are Castle
+Town, Kakariko, and
+Ordon - but Ordon
+is mostly Humans
+and not Hylians.
+There are plenty of
+other cities for
+other races too, so
+be sure to visit them
+all! We're even setting
+up a new city for my
+people - we call it
+Septen Heights.
   ]]
 }
 
@@ -6916,6 +7049,19 @@ Faron Blacksmith
 
 West:
 Sacred Grove
+  ]]
+}
+
+dialog{
+  id = "sign.D8_directions",
+  skip = "current",
+  text = [[
+North:
+Kakariko City
+
+South:
+LonLon Ranch$0
+BEWARE, Peahats!
   ]]
 }
 

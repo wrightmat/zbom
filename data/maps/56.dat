@@ -2267,6 +2267,15 @@ tile{
   pattern = "676",
 }
 
+tile{
+  layer = 0,
+  x = 936,
+  y = 248,
+  width = 16,
+  height = 16,
+  pattern = "311",
+}
+
 wall{
   layer = 0,
   x = 680,
@@ -2843,6 +2852,23 @@ teletransporter{
   transition = "scrolling",
   destination_map = "107",
   destination = "_side",
+}
+
+npc{
+  layer = 0,
+  x = 944,
+  y = 261,
+  name = "ocarina_wind_to_",
+  direction = 3,
+  subtype = "0",
+}
+
+destination{
+  layer = 0,
+  x = 944,
+  y = 277,
+  name = "ocarina_warp",
+  direction = 3,
 }
 
 tile{

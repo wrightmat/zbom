@@ -9369,6 +9369,42 @@ teletransporter{
   destination = "_side",
 }
 
+npc{
+  layer = 0,
+  x = 496,
+  y = 301,
+  name = "ocarina_wind_to_north",
+  direction = 3,
+  subtype = "0",
+}
+
+npc{
+  layer = 0,
+  x = 456,
+  y = 341,
+  name = "ocarina_wind_to_west",
+  direction = 3,
+  subtype = "0",
+}
+
+npc{
+  layer = 0,
+  x = 496,
+  y = 381,
+  name = "ocarina_wind_to_south",
+  direction = 3,
+  subtype = "0",
+}
+
+npc{
+  layer = 0,
+  x = 536,
+  y = 341,
+  name = "ocarina_wind_to_east",
+  direction = 3,
+  subtype = "0",
+}
+
 tile{
   layer = 1,
   x = 680,
