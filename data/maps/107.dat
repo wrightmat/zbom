@@ -537,8 +537,18 @@ teletransporter{
   width = 1120,
   height = 16,
   name = "to_F5_water",
+  transition = "scrolling",
   destination_map = "56",
   destination = "_side",
+}
+
+sensor{
+  layer = 0,
+  x = 624,
+  y = 909,
+  width = 64,
+  height = 16,
+  name = "sensor_change_layer",
 }
 
 tile{
@@ -602,6 +612,7 @@ teletransporter{
   width = 80,
   height = 16,
   name = "to_F5",
+  transition = "scrolling",
   destination_map = "56",
   destination = "_side",
 }

@@ -3214,6 +3214,54 @@ teletransporter{
   destination = "from_mainland",
 }
 
+teletransporter{
+  layer = 0,
+  x = 1120,
+  y = 0,
+  width = 16,
+  height = 416,
+  name = "to_K4_2",
+  transition = "scrolling",
+  destination_map = "127",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 432,
+  name = "to_I4",
+  transition = "scrolling",
+  destination_map = "119",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = 688,
+  y = -16,
+  width = 208,
+  height = 16,
+  name = "to_J3_water",
+  transition = "scrolling",
+  destination_map = "122",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = 928,
+  y = -16,
+  width = 192,
+  height = 16,
+  name = "to_J3_2",
+  transition = "scrolling",
+  destination_map = "122",
+  destination = "_side",
+}
+
 tile{
   layer = 2,
   x = 56,

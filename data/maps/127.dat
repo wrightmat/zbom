@@ -3605,9 +3605,9 @@ teletransporter{
 teletransporter{
   layer = 0,
   x = -16,
-  y = 496,
+  y = 504,
   width = 16,
-  height = 608,
+  height = 576,
   name = "to_J4",
   transition = "scrolling",
   destination_map = "123",
@@ -3616,13 +3616,37 @@ teletransporter{
 
 teletransporter{
   layer = 0,
-  x = 8,
+  x = 40,
   y = 1120,
-  width = 1024,
+  width = 992,
   height = 16,
   name = "to_K5",
   transition = "scrolling",
   destination_map = "128",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 432,
+  name = "to_J4_2",
+  transition = "scrolling",
+  destination_map = "123",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = 0,
+  y = -16,
+  width = 944,
+  height = 16,
+  name = "to_K3",
+  transition = "scrolling",
+  destination_map = "126",
   destination = "_side",
 }
 

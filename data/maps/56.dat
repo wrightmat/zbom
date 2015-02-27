@@ -2295,9 +2295,9 @@ teletransporter{
 teletransporter{
   layer = 0,
   x = 1120,
-  y = 200,
+  y = 192,
   width = 16,
-  height = 864,
+  height = 848,
   name = "to_G5",
   transition = "scrolling",
   destination_map = "57",
@@ -2308,7 +2308,7 @@ teletransporter{
   layer = 0,
   x = 0,
   y = 1120,
-  width = 1072,
+  width = 1008,
   height = 16,
   name = "to_F6",
   transition = "scrolling",
@@ -2861,6 +2861,15 @@ destination{
   y = 277,
   name = "ocarina_warp",
   direction = 3,
+}
+
+tile{
+  layer = 1,
+  x = 168,
+  y = 360,
+  width = 840,
+  height = 8,
+  pattern = "675",
 }
 
 tile{
@@ -4636,15 +4645,6 @@ tile{
   pattern = "676",
 }
 
-tile{
-  layer = 1,
-  x = 168,
-  y = 360,
-  width = 840,
-  height = 8,
-  pattern = "675",
-}
-
 teletransporter{
   layer = 1,
   x = 88,
@@ -4726,7 +4726,7 @@ teletransporter{
 npc{
   layer = 1,
   x = 664,
-  y = 149,
+  y = 141,
   name = "npc_rito_bridge",
   direction = 3,
   subtype = "1",

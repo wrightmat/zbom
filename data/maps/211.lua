@@ -8,3 +8,11 @@ local game = map:get_game()
 function map:on_started(destination)
 
 end
+
+for enemy in map:get_entities("keese") do
+  enemy.on_dead = function()
+    if not map:has_entities("keese") then
+      door_shutter:set_open(true)
+    end
+  end
+end

@@ -4383,6 +4383,17 @@ tile{
   pattern = "584",
 }
 
+teletransporter{
+  layer = 0,
+  x = 472,
+  y = 584,
+  width = 16,
+  height = 16,
+  name = "to_floor_3",
+  destination_map = "212",
+  destination = "from_floor_2",
+}
+
 door{
   layer = 0,
   x = 472,
@@ -4570,17 +4581,6 @@ destination{
   direction = 0,
 }
 
-teletransporter{
-  layer = 0,
-  x = 472,
-  y = 584,
-  width = 16,
-  height = 16,
-  name = "to_floor_3",
-  destination_map = "212",
-  destination = "from_floor_2",
-}
-
 enemy{
   layer = 1,
   x = 552,
@@ -4669,6 +4669,15 @@ enemy{
   name = "keese_8",
   direction = 3,
   breed = "keese_ice",
+}
+
+enemy{
+  layer = 1,
+  x = 728,
+  y = 557,
+  name = "keese_dark",
+  direction = 3,
+  breed = "keese_dark",
 }
 
 tile{
