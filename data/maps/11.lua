@@ -134,7 +134,7 @@ end
 
 function sensor_start_race:on_activated()
   if hero:get_direction() == 1 and game:has_item("lamp") then
-    if game:get_value("i1028") >= 1 and game:get_value("i1028") <= 3 then
+    if (game:get_value("i1028") >= 1 and game:get_value("i1028") <= 3) or game:get_value("i1029") == 4 then
       game:set_value("i1028", 2)
       game.race_timer = sol.timer.start(game, 120000, function()
 	sol.audio.play_sound("wrong")

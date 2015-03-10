@@ -3,7 +3,6 @@
 local magic_bar = {}
 
 function magic_bar:new(game)
-
   local object = {}
   setmetatable(object, self)
   self.__index = self
@@ -14,7 +13,6 @@ function magic_bar:new(game)
 end
 
 function magic_bar:initialize(game)
-
   self.game = game
   self.surface = sol.surface.create(88, 8)
   self.magic_bar_img = sol.surface.create("hud/magic_bar.png")
@@ -29,7 +27,6 @@ end
 -- Checks whether the view displays the correct info
 -- and updates it if necessary.
 function magic_bar:check()
-
   local need_rebuild = false
   local max_magic = self.game:get_max_magic()
   local magic = self.game:get_magic()
@@ -77,7 +74,6 @@ function magic_bar:check()
 end
 
 function magic_bar:rebuild_surface()
-
   self.surface:clear()
 
   -- Max magic.
@@ -93,7 +89,6 @@ function magic_bar:set_dst_position(x, y)
 end
 
 function magic_bar:on_draw(dst_surface)
-
   -- Is there a magic bar to show?
   if self.max_magic_displayed > 0 then
     local x, y = self.dst_x, self.dst_y
@@ -110,4 +105,3 @@ function magic_bar:on_draw(dst_surface)
 end
 
 return magic_bar
-

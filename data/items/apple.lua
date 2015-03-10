@@ -1,12 +1,10 @@
 local item = ...
 
--- Obtaining 3 apples
+-- Obtaining an apple
 function item:on_obtaining(variant, savegame_variable)
-
-  local apples_counter = self:get_game():get_item("apples_counter")
-  if apples_counter:get_variant() == 0 then
-    apples_counter:set_variant(1)
+  local apple_counter = self:get_game():get_item("apple_counter")
+  if apple_counter:get_variant() == 0 then
+    apple_counter:set_variant(1)
   end
-  apples_counter:add_amount(3)
+  apple_counter:add_amount(1)
 end
-

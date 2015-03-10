@@ -1,25 +1,24 @@
 animation{
   name = "stopped",
-  src_image = "npc/ordon.png",
+  src_image = "npc/hylian.png",
   frame_delay = 250,
   frame_to_loop_on = 0,
   directions = {
-    { x = 288, y = 224, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 4 },
-    { x = 288, y = 224, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 4 },
-    { x = 288, y = 224, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 4 },
-    { x = 288, y = 224, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 4 },
+    { x = 312, y = 352, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
+    { x = 312, y = 320, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
+    { x = 312, y = 288, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
+    { x = 312, y = 256, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
   },
 }
-
 animation{
   name = "walking",
-  src_image = "npc/ordon.png",
+  src_image = "npc/hylian.png",
   frame_delay = 250,
   frame_to_loop_on = 0,
   directions = {
-    { x = 288, y = 224, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 4 },
-    { x = 288, y = 224, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 4 },
-    { x = 288, y = 224, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 4 },
-    { x = 288, y = 224, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 4 },
+    { x = 288, y = 352, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 3 },
+    { x = 288, y = 320, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 3 },
+    { x = 288, y = 288, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 3 },
+    { x = 288, y = 256, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 3 },
   },
 }

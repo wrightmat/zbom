@@ -32,6 +32,20 @@ function condition_manager:initialize(game)
   end
 
   function game:on_command_pressed(command)
+
+    -- It takes stamina to use an attack, action or item - but only if it's actually equipped
+    if (command == "item_1" or command == "item_2" or command == "attack" or command == "action") and game:get_command_effect(command) ~= nil then
+      if (command == "item_1" and game:get_item_assigned(1) == nil) or (command == "item_2" and game:get_item_assigned(2) == nil) then return false end
+      if game:get_max_stamina() > 0 then
+        if game:get_stamina() == 0 then
+	  game:start_dialog("_stamina_gone")
+	  return true
+        end
+	game:remove_stamina(1)
+	return false
+      end
+    end
+
     if not hero:is_condition_active('confusion') or in_command_pressed or game:is_paused() then
       return false
     end
@@ -41,19 +55,19 @@ function condition_manager:initialize(game)
       in_command_pressed = true
       game:simulate_command_pressed("right")
       in_command_pressed = false
-      return true                       
+      return true
     elseif command == "right" then
       game:simulate_command_released("right")
       in_command_pressed = true
       game:simulate_command_pressed("left")
       in_command_pressed = false
-      return true                       
+      return true
     elseif command == "up" then
       game:simulate_command_released("up")
       in_command_pressed = true
       game:simulate_command_pressed("down")
       in_command_pressed = false
-      return true                       
+      return true
     elseif command == "down" then
       game:simulate_command_released("down")
       in_command_pressed = true

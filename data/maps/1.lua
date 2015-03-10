@@ -13,6 +13,7 @@ if game:get_value("i1068")==nil then game:set_value("i1068", 0) end
 if game:get_value("i1602")==nil then game:set_value("i1602", 0) end
 if game:get_value("i1913")==nil then game:set_value("i1913", 0) end
 if game:get_value("i1921")==nil then game:set_value("i1921", 0) end
+if game:get_value("i1925")==nil then game:set_value("i1925", 0) end
 if game:get_value("i2021")==nil then game:set_value("i2021", 0) end
 
 function map:on_started(destination)
@@ -232,11 +233,23 @@ function npc_impa:on_interaction()
   end
 end
 
+function npc_gaira:on_interaction()
+  if game:get_value("i1030") == 1 then
+    game:start_dialog("gaira.6.house")
+  else
+    game:start_dialog("gaira.5.faron", game:get_player_name())
+  end
+end
+
 function sensor_sleep:on_activated()
   game:start_dialog("_sleep_bed", function(answer)
     if answer == 1 then
       hero:teleport("1", "house_bed", "fade")
       game:set_life(game:get_max_life())
+      if game:get_value("i1026") < 2 then game:set_max_stamina(game:get_max_stamina()-20) end
+      if game:get_value("i1026") > 5 then game:set_max_stamina(game:get_max_stamina()+20) end
+      game:set_stamina(game:get_max_stamina())
+      game:set_value("i1026", 0)
       game:switch_time_of_day()
       if game:get_time_of_day() == "day" then
         for entity in map:get_entities("night_") do
@@ -250,4 +263,22 @@ function sensor_sleep:on_activated()
       end
     end
   end)
+end
+
+function npc_pim:on_interaction()
+  if game:get_value("i1024") <= 80 then
+    game:start_dialog("pim.0.stamina")
+  else
+    if game:get_value("i1925") <= 2 then
+      game:start_dialog("pim."..game:get_value("i1925")..".house")
+      game:set_value("i1925", game:get_value("i1925")+1)
+    elseif game:get_value("i1925") >=4 then
+      game:start_dialog("pim.2.house")
+    else
+      game:start_dialog("pim.3.house", function()
+	game:set_value("i1925", 4)
+	hero:start_treasure("apple")
+      end)
+    end
+  end
 end

@@ -2,9 +2,9 @@ Values 63 and below used by the engine, and values below 1024 are read only
 Game-specific values start at 1024 and go to 2047
 
 # 1024-1699: Game State Variables
-i1024: 
-i1025: 
-i1026: 
+i1024: Current Stamina
+i1025: Max Stamina
+i1026: Stamina modifier (number of subsequent apples/pumpkins used)
 i1027: Ordon Festival progress (1=initial dialog done, 2=first area complete, 3=race won, 4=Ordona heard, 5=Crista saved-festival over, 6=Ordona directed Link to Sacred Grove)
 i1028: Festival maze race progress (1= initial dialog done, 2=race begun, 3=torches in first screen lit, 4=lost, 5=won)
 i1029: Goron sick child quest (1= talked to Dargor, 2= talked to Galen, 3= sick child (Osgor) inspected, 4= Osgor dead, 5= Osgor ghost found, 6= Dampeh leaves Mausoleum)
@@ -262,8 +262,8 @@ i1821: Sword variable
 i1822: Tunic variable
 b1823: World map variable
 i1824: Rupee bag variable
-b1825: 
-i1826: 
+b1825: Apple variable
+i1826: Apple counter
 b1827: Amber variable
 i1828: Amber counter
 b1829: Alchemy variable
@@ -314,6 +314,7 @@ i1921: Impa (Hidden Village)
 i1922: Subrosian Shaman
 i1923: Zora Gatekeeper (Zora's Domain)
 i1924: Juba (Zora Elder)
+i1925: Pim (Ordon)
 
 # Item flags range from 2000 to 2047
 b2000: Has Sword

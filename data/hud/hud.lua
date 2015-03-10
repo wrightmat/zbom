@@ -5,6 +5,7 @@ function game:initialize_hud()
   -- Set up the HUD.
   local hearts_builder = require("hud/hearts")
   local magic_bar_builder = require("hud/magic_bar")
+  local stamina_bar_builder = require("hud/stamina_bar")
   local rupees_builder = require("hud/rupees")
   local small_keys_builder = require("hud/small_keys")
   local floor_builder = require("hud/floor")
@@ -25,6 +26,10 @@ function game:initialize_hud()
 
   menu = magic_bar_builder:new(self)
   menu:set_dst_position(-104, 27)
+  self.hud[#self.hud + 1] = menu
+
+  menu = stamina_bar_builder:new(self)
+  menu:set_dst_position(-100, 34)
   self.hud[#self.hud + 1] = menu
 
   menu = rupees_builder:new(self)

@@ -2,17 +2,16 @@ local entity = ...
 local map = entity:get_map()
 local hero = map:get_entity("hero")
 
-local ex, ey, el, hx, hy, hl
-local recent_obstacle = 0
-local timer
-
 -- Platform: entity which moves in either horizontally or
 -- vertically (depending on direction) and carries the hero on it.
+
+local speed = 50
+local time_stopped = 1000
 
 function entity:on_created()
   self:create_sprite("entities/platform")
   self:set_size(32, 32)
-  self:set_origin(20, 20)
+  self:set_origin(16, 16)
   self:set_can_traverse("jumper", true)
   self:set_can_traverse_ground("hole", true)
   self:set_can_traverse_ground("deep_water", true)
@@ -22,35 +21,15 @@ function entity:on_created()
   self:set_modified_ground("traversable")
   self:set_layer_independent_collisions(false)
 
-  self:add_collision_test("overlapping", function(platform, other)
-    -- This callback will be repeatedly called while other is overlapping the platform
-    if other:get_type() ~= "hero" then
-      return
-    end
-    local hero = other
-
-    -- Only do this in some specific states (in particular, don't do it while jumping, flying with the hookshot, etc.)
-    if hero:get_state() ~= "free" and hero:get_state() ~= "sword loading" then
-      return
-    end
-    
-    -- Keep the hero on the platform as it moves
-    if timer == nil then
-      timer = sol.timer.start(self, 50, function()
-        timer = nil  -- This variable "timer" ensures that only one timer is running.
-      end)
-    end
-  end)
-
-  local direction4 = self:get_sprite():get_direction()
   local m = sol.movement.create("path")
+  local direction4 = self:get_sprite():get_direction()
   m:set_path{direction4 * 2}
-  m:set_speed(32)
+  m:set_speed(speed)
   m:set_loop(true)
   m:start(self)
-
+  
   self:add_collision_test("containing", function(platform, other)
-    if other:get_type() == "wall" and other:get_type() ~= "jumper" then
+    if other:get_type() == "wall" or other:get_type() ~= "jumper" then
       self:on_obstacle_reached(m)
     end
   end)
@@ -58,43 +37,43 @@ function entity:on_created()
 end
 
 function entity:on_obstacle_reached(movement)
+  -- Make the platform turn back.
   movement:stop()
-
+  movement = sol.movement.create("path")    
   local direction4 = self:get_sprite():get_direction()
-  if direction4 == 0 then
-    direction4 = 2
-  elseif direction4 == 2 then
-    direction4 = 0
-  elseif direction4 == 1 then
-    direction4 = 3
-  elseif direction4 == 3 then
-    direction4 = 1
-  end
-
+  direction4 = (direction4+2)%4
   movement:set_path{direction4 * 2}
-  movement:set_speed(32)
+  movement:set_speed(speed)
   movement:set_loop(true)
-  movement:start(self)
-
-  local x, y = self:get_position()
-  recent_obstacle = 8
+  sol.timer.start(self, time_stopped, function() movement:start(self) end)
 end
 
 function entity:on_position_changed()
-  if timer ~= nil then
-    hx, hy, hl = hero:get_position()
-    ex, ey, el = entity:get_position()
-    local ox = hx - ex
-    local oy = hy - ey
-    hero:set_position(hx-(ox/10), hy-(oy/10))
+  -- Moves the hero if located over the platform. 
+  if not self:is_on_platform(hero) then return end
+  local hx, hy, hl = hero:get_position()
+  local direction4 = self:get_sprite():get_direction()
+  local dx, dy = 0, 0 --Variables for the translation.
+  if direction4 == 0 then dx = 1
+  elseif direction4 == 1 then dy = -1
+  elseif direction4 == 2 then dx = -1
+  elseif direction4 == 3 then dy = 1
   end
-
-  if recent_obstacle > 0 then
-    recent_obstacle = recent_obstacle - 1
-  end
+  hero:set_position(hx + dx, hy + dy, hl)
 end
 
 function entity:on_movement_changed(movement)
+  -- Change direction of the sprite when the movement changes.
   local direction4 = movement:get_direction4()
   self:get_sprite():set_direction(direction4)
+end
+
+function entity:is_on_platform(other_entity)
+  -- Returns true if other_entity is on the platform. 
+  local ox, oy, ol = other_entity:get_position()
+  local ex, ey, el = self:get_position()
+  if ol ~= el then return false end
+  local sx, sy = self:get_size()
+  if math.abs(ox - ex) < sx/2 -1 and math.abs(oy - ey) < sy/2 -1 then return true end
+  return false
 end

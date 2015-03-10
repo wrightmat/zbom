@@ -262,7 +262,7 @@ Crisp, red apples can
 be found throughout
 Hyrule. Eat one to
 restore some of your
-hearts!
+energy!
   ]]
 }
 
@@ -275,7 +275,7 @@ Crisp, red apples can
 be found throughout
 Hyrule. Eat one to
 restore some of your
-hearts!
+energy!
   ]]
 }
 
@@ -966,9 +966,20 @@ dialog{
   skip = "current",
   icon = 16,
   text = [[
+You got an Apple!$0
+Eat it to regain
+some stamina!
+  ]]
+}
+
+dialog{
+  id = "_treasure.apple.2",
+  skip = "current",
+  icon = 16,
+  text = [[
 You got some Apples!$0
 Eat them to regain
-some health!
+some stamina!
   ]]
 }
 
@@ -978,7 +989,8 @@ dialog{
   icon = 17,
   text = [[
 You got a Pumpkin!
-It looks edible.
+It looks quite
+nutritious.
   ]]
 }
 
@@ -2277,6 +2289,18 @@ dialog{
   skip = "current",
   text = [[
 You can't hold any more!
+  ]]
+}
+
+dialog{
+  id = "_stamina_gone",
+  skip = "current",
+  text = [[
+You're exhausted!
+You won't be able to
+continue much farther
+until you sleep or
+eat something!
   ]]
 }
 
@@ -4467,6 +4491,83 @@ I'm the roommate?
 I'm confused.$0
 Either way, I don't
 live well with others!
+  ]]
+}
+
+dialog{
+  id = "pim.0.house",
+  skip = "current",
+  text = [[
+Hi, my name is Pim.
+I'm sure you've seen
+the big pumpkin
+patch by your house.
+Well, that's mine!
+I grow pumpkins for
+most of the town and
+sometimes I even export
+them to other towns.
+  ]]
+}
+
+dialog{
+  id = "pim.1.house",
+  skip = "current",
+  text = [[
+Did you know that eating
+pumpkins or apples can
+perk you right up?
+You see, that blue bar
+up there is your stamina-
+or the amount of energy
+you have to do things.
+Always keep an apple or
+pumpkin on hand, and
+you'll be prepared if
+your energy gets too low.
+  ]]
+}
+
+dialog{
+  id = "pim.2.house",
+  skip = "current",
+  text = [[
+Of course, the best way
+to rest is in a bed!
+Sleeping will fill your
+stamina all of the way
+up and may even increase
+it if you've been out
+adventuring for a
+long time and eating
+a lot on the way! Be
+careful though,
+sleeping too much can
+actually decrease your
+stamina- you don't
+want to be lazy!
+  ]]
+}
+
+dialog{
+  id = "pim.3.house",
+  skip = "current",
+  text = [[
+My pumpkins aren't fully
+ripe yet, but I'll give
+you an apple to help out.
+  ]]
+}
+
+dialog{
+  id = "pim.0.stamina",
+  skip = "current",
+  text = [[
+Wow, you look run
+down! Maybe you should
+get some sleep in your
+bed before you get too
+far away from town.
   ]]
 }
 

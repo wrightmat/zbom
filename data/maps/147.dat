@@ -2291,6 +2291,18 @@ teletransporter{
   destination = "_side",
 }
 
+teletransporter{
+  layer = 0,
+  x = 0,
+  y = -16,
+  width = 800,
+  height = 16,
+  name = "to_O1",
+  transition = "scrolling",
+  destination_map = "146",
+  destination = "_side",
+}
+
 tile{
   layer = 2,
   x = 888,
