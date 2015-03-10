@@ -4474,6 +4474,18 @@ custom_entity{
   model = "stone_pile",
 }
 
+custom_entity{
+  layer = 0,
+  x = 732,
+  y = 973,
+  width = 16,
+  height = 16,
+  name = "npc_pim",
+  direction = 3,
+  sprite = "npc/ordon_pim",
+  model = "npc_pim",
+}
+
 tile{
   layer = 2,
   x = 40,

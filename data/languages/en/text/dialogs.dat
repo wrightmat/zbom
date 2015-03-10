@@ -4550,9 +4550,9 @@ want to be lazy!
 }
 
 dialog{
-  id = "pim.2.house",
+  id = "pim.2.pumpkin",
   skip = "current",
-  questions = true,
+  question = true,
   text = [[
 Hey there! You look like
 you could use one of my
@@ -4566,6 +4566,35 @@ me 100 rupees for a
 juicy pumpkin?
 Sure
 Nope
+  ]]
+}
+
+dialog{
+  id = "pim.2.no_pumpkin",
+  skip = "current",
+  question = true,
+  text = [[
+Don't need energy, huh?
+Well, if I let you get
+lost without food, I
+wouldn't be able to
+forgive myself. Are
+you lost? Do you need
+any directions?
+Yeah!
+I'm okay
+  ]]
+}
+
+dialog{
+  id = "pim.2.no_directions",
+  skip = "current",
+  text = [[
+If you say so. I spend
+most of my time walking
+around and selling my
+crop, so if you need
+anything, just ask.
   ]]
 }
 
@@ -4588,6 +4617,75 @@ down! Maybe you should
 get some sleep in your
 bed before you get too
 far away from town.
+  ]]
+}
+
+dialog{
+  id = "pim.directions.23",
+  skip = "current",
+  text = [[
+Yeah, these are pretty
+big woods! North of
+that ridge and then east
+is the Blacksmith's
+place. Further east
+will lead you back
+to Ordon Village.$0
+South of here is the
+Sacred Grove, with
+access to an underground
+area beneath a tree to
+the west. The beach and
+desert are north
+of the Grove.$0You can't
+get to Hyrule Field
+directly from here
+because of the divide
+just north of here.$0
+Be careful if you go
+directly west of here-
+I think I saw a scary
+monster over there!
+  ]]
+}
+
+dialog{
+  id = "pim.directions.26",
+  skip = "current",
+  text = [[
+This whole field is
+tricky to navigate
+because it's so big!
+The trick is to watch
+your surroundings
+carefully...$0
+South of here is the
+Northern Faron Woods
+and then Ordon Village.
+The pointy-looking
+trees only grow in the
+south, so you'll know
+you've reached Hyrule
+Field, which is north
+of here, once the trees
+change shape to the funny
+rounded ones.$0
+If you want to get to
+Lake Hylia in the west,
+just follow the grey
+statues with the faces
+on them. If you'd prefer
+the Ruins in the east,
+follow the brown statues
+with the faces on them.$0
+Why are there so many
+face statues?$0
+Finally, the great
+Hyrule Castle Town is
+north of Hyrule Field,
+and Kakariko City is
+north past that.$0
+Got it?
   ]]
 }
 

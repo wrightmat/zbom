@@ -7372,6 +7372,18 @@ destructible{
   can_be_cut = true,
 }
 
+custom_entity{
+  layer = 0,
+  x = 620,
+  y = 941,
+  width = 16,
+  height = 16,
+  name = "npc_pim",
+  direction = 3,
+  sprite = "npc/ordon_pim",
+  model = "npc_pim",
+}
+
 tile{
   layer = 2,
   x = 752,
