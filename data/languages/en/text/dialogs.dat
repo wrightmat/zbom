@@ -4550,6 +4550,26 @@ want to be lazy!
 }
 
 dialog{
+  id = "pim.2.house",
+  skip = "current",
+  questions = true,
+  text = [[
+Hey there! You look like
+you could use one of my
+prize-winning Pumpkins!
+Don't forget, if you
+ever get tired, all you
+have to do is eat one
+of these. What do you
+say, how about giving
+me 100 rupees for a
+juicy pumpkin?
+Sure
+Nope
+  ]]
+}
+
+dialog{
   id = "pim.3.house",
   skip = "current",
   text = [[
