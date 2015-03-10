@@ -39,7 +39,8 @@ local function initialize_enemies()
     local damage_factors = { 1, 2, 4, 8 }  -- Damage factor of each sword.
     local damage_factor = damage_factors[sword]
     if hero:get_state() == "sword spin attack" then
-      damage_factor = damage_factor * 2  -- The spin attack is twice more powerful.
+      game:remove_stamina(1)
+      damage_factor = damage_factor * 2  -- The spin attack is twice as powerful, but costs more stamina.
     end
 
     local reaction = self:get_attack_consequence_sprite(enemy_sprite, "sword")
@@ -80,7 +81,7 @@ local function initialize_game()
   end
 
   function game_metatable:set_stamina(value)
-    if value > self:get_max_stamina() then value = self:get_max_stamina()
+    if value > self:get_max_stamina() then value = self:get_max_stamina() end
     return self:set_value("i1024", value)
   end
 
@@ -112,7 +113,7 @@ local function initialize_game()
 
   function game_metatable:add_max_stamina(value)
     stamina = self:get_value("i1025")
-    if value >= 0 then
+    if value > 0 then
       return self:set_value("i1025", stamina+value)
     end
   end

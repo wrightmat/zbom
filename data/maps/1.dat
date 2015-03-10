@@ -6135,14 +6135,16 @@ destination{
   direction = 2,
 }
 
-npc{
+custom_entity{
   layer = 0,
-  x = 1128,
+  x = 1124,
   y = 861,
+  width = 16,
+  height = 16,
   name = "npc_pim",
   direction = 3,
-  subtype = "1",
   sprite = "npc/ordon_pim",
+  model = "npc_pim",
 }
 
 tile{
