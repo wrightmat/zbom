@@ -8,11 +8,7 @@ function entity:on_created()
   self:set_drawn_in_y_order(true)
   self:set_traversable_by("hero", false)
   if game:get_map():get_id() ~= "1" then
-    if game:get_value("i1845") > 1 then
-      self:remove() -- He leaves if you have a pumpkin
-    else
-      random_walk() -- Otherwise he wanders around
-    end
+    random_walk()
   end
 end
 
@@ -24,7 +20,7 @@ function entity:on_interaction()
       game:start_dialog("pim."..game:get_value("i1925")..".house")
       game:set_value("i1925", game:get_value("i1925")+1)
     elseif game:get_value("i1925") >=4 then
-      if game:get_map():get_id() == "1" then
+      if game:get_map():get_id() == "1" or game:get_value("i1845") > 1 then
 	-- In his house, don't sell pumpkins
         game:start_dialog("pim.2.house")
       else
