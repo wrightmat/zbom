@@ -8476,16 +8476,6 @@ npc{
   sprite = "npc/ordon_rudy",
 }
 
-npc{
-  layer = 0,
-  x = 528,
-  y = 117,
-  name = "npc_julita",
-  direction = 3,
-  subtype = "1",
-  sprite = "npc/ordon_julita",
-}
-
 teletransporter{
   layer = 0,
   x = 672,
@@ -10020,24 +10010,6 @@ destructible{
   can_regenerate = true,
 }
 
-npc{
-  layer = 0,
-  x = 304,
-  y = 717,
-  name = "npc_rudy_sensor",
-  direction = 3,
-  subtype = "0",
-}
-
-npc{
-  layer = 0,
-  x = 528,
-  y = 141,
-  name = "npc_julita_sensor",
-  direction = 3,
-  subtype = "0",
-}
-
 wall{
   layer = 0,
   x = 592,
@@ -10143,6 +10115,18 @@ dynamic_tile{
   name = "night_window_6",
   pattern = "2173",
   enabled_at_start = false,
+}
+
+custom_entity{
+  layer = 0,
+  x = 532,
+  y = 117,
+  width = 16,
+  height = 16,
+  name = "npc_julita",
+  direction = 3,
+  sprite = "npc/ordon_julita",
+  model = "npc_julita",
 }
 
 tile{

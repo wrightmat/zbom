@@ -38,8 +38,13 @@ function condition_manager:initialize(game)
       if (command == "item_1" and game:get_item_assigned(1) == nil) or (command == "item_2" and game:get_item_assigned(2) == nil) then return false end
       if game:get_max_stamina() > 0 then
         if game:get_stamina() == 0 then
-	  game:start_dialog("_stamina_gone")
-	  return true
+	  if math.random(2) == 1 then
+	    game:start_dialog("_stamina_gone", function()
+	      return true
+	    end)
+	  else
+	    return false
+	  end
         end
 	game:remove_stamina(1)
 	return false

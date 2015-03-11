@@ -3790,6 +3790,32 @@ tile{
 
 teletransporter{
   layer = 0,
+  x = 816,
+  y = 752,
+  width = 16,
+  height = 16,
+  name = "hole_cave_2",
+  sprite = "entities/teletransporter_hole",
+  sound = "hero_falls",
+  destination_map = "9",
+  destination = "from_E12_2",
+}
+
+teletransporter{
+  layer = 0,
+  x = 168,
+  y = 776,
+  width = 16,
+  height = 16,
+  name = "hole_cave_1",
+  sprite = "entities/teletransporter_hole",
+  sound = "hero_falls",
+  destination_map = "9",
+  destination = "from_E12_1",
+}
+
+teletransporter{
+  layer = 0,
   x = 1120,
   y = 0,
   width = 16,
@@ -4452,7 +4478,7 @@ wall{
 
 custom_entity{
   layer = 0,
-  x = 832,
+  x = 824,
   y = 771,
   width = 16,
   height = 16,
@@ -4464,7 +4490,7 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 168,
+  x = 176,
   y = 795,
   width = 16,
   height = 16,
@@ -4484,6 +4510,22 @@ custom_entity{
   direction = 3,
   sprite = "npc/ordon_pim",
   model = "npc_pim",
+}
+
+destination{
+  layer = 0,
+  x = 184,
+  y = 821,
+  name = "from_cave_1",
+  direction = 3,
+}
+
+destination{
+  layer = 0,
+  x = 832,
+  y = 797,
+  name = "from_cave_2",
+  direction = 3,
 }
 
 tile{

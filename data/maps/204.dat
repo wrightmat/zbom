@@ -10949,7 +10949,7 @@ tile{
   x = 1664,
   y = 176,
   width = 96,
-  height = 192,
+  height = 208,
   pattern = "524",
 }
 
@@ -14585,7 +14585,6 @@ enemy{
   name = "keese_room9_1",
   direction = 3,
   breed = "keese",
-  treasure_name = "random",
 }
 
 enemy{
@@ -14595,7 +14594,6 @@ enemy{
   name = "keese_room9_2",
   direction = 3,
   breed = "keese",
-  treasure_name = "random",
 }
 
 enemy{
@@ -14605,7 +14603,6 @@ enemy{
   name = "keese_room9_3",
   direction = 3,
   breed = "keese",
-  treasure_name = "random",
 }
 
 enemy{
@@ -14615,7 +14612,6 @@ enemy{
   name = "keese_room9_4",
   direction = 3,
   breed = "keese",
-  treasure_name = "random",
 }
 
 wall{
@@ -15477,14 +15473,6 @@ separator{
 
 separator{
   layer = 2,
-  x = 416,
-  y = 1160,
-  width = 1616,
-  height = 16,
-}
-
-separator{
-  layer = 2,
   x = 0,
   y = 872,
   width = 2032,
@@ -15493,9 +15481,9 @@ separator{
 
 separator{
   layer = 2,
-  x = 824,
+  x = 1208,
   y = 584,
-  width = 1200,
+  width = 816,
   height = 16,
 }
 
@@ -15637,14 +15625,6 @@ separator{
 
 separator{
   layer = 2,
-  x = 408,
-  y = 880,
-  width = 16,
-  height = 288,
-}
-
-separator{
-  layer = 2,
   x = 8,
   y = 584,
   width = 416,
@@ -15662,8 +15642,8 @@ separator{
 separator{
   layer = 2,
   x = 808,
-  y = 584,
-  width = 16,
-  height = 288,
+  y = 1160,
+  width = 1216,
+  height = 16,
 }
 

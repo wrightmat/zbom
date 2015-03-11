@@ -9,6 +9,18 @@ function map:on_started(destination)
   if destination == enter_astronomer then
     sol.audio.play_music("house_zuna")
   end
+  if game:get_value("i1068") < 7 then
+    npc_tokay_alchemy:remove()
+    npc_tokay_crystal:remove()
+    npc_tokay_plume:remove()
+    npc_tokay_jade:remove()
+    npc_tokay_amber:remove()
+    alchemy_stone:remove()
+    magic_crystal:remove()
+    goddess_plume:remove()
+    mystic_jade:remove()
+    goron_amber:remove()
+  end
 end
 
 function npc_astronomer:on_interaction()

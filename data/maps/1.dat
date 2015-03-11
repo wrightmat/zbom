@@ -5365,16 +5365,6 @@ shop_treasure{
   dialog = "shop.potion_green",
 }
 
-npc{
-  layer = 0,
-  x = 256,
-  y = 469,
-  name = "npc_crista",
-  direction = 3,
-  subtype = "1",
-  sprite = "npc/ordon_crista",
-}
-
 shop_treasure{
   layer = 0,
   x = 144,
@@ -5482,16 +5472,6 @@ npc{
   direction = 3,
   subtype = "1",
   sprite = "npc/ordon_bilo",
-}
-
-npc{
-  layer = 0,
-  x = 1096,
-  y = 533,
-  name = "npc_julita",
-  direction = 3,
-  subtype = "1",
-  sprite = "npc/ordon_julita",
 }
 
 destructible{
@@ -5922,26 +5902,6 @@ npc{
   sprite = "npc/hylian_gaira",
 }
 
-npc{
-  layer = 0,
-  x = 272,
-  y = 469,
-  name = "npc_julita_shop",
-  direction = 3,
-  subtype = "1",
-  sprite = "npc/ordon_julita",
-}
-
-npc{
-  layer = 0,
-  x = 1128,
-  y = 557,
-  name = "npc_crista_house",
-  direction = 3,
-  subtype = "1",
-  sprite = "npc/ordon_crista",
-}
-
 dynamic_tile{
   layer = 0,
   x = 48,
@@ -6145,6 +6105,30 @@ custom_entity{
   direction = 3,
   sprite = "npc/ordon_pim",
   model = "npc_pim",
+}
+
+custom_entity{
+  layer = 0,
+  x = 252,
+  y = 469,
+  width = 16,
+  height = 16,
+  name = "npc_crista",
+  direction = 3,
+  sprite = "npc/ordon_crista",
+  model = "npc_crista",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1084,
+  y = 533,
+  width = 16,
+  height = 16,
+  name = "npc_julita",
+  direction = 3,
+  sprite = "npc/ordon_julita",
+  model = "npc_julita",
 }
 
 tile{

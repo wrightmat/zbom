@@ -44,7 +44,7 @@ function sensor_open_room1:on_activated()
   map:open_doors("room1_shutter")
 end
 function sensor_close_room1:on_activated()
-  map:close_doors("room1_shutter")
+  if map:get_entity("hero"):get_direction() == 2 then map:close_doors("room1_shutter") end
 end
 function sensor_open_room9:on_activated()
   map:open_doors("room9_shutter")

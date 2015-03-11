@@ -2479,7 +2479,7 @@ look around!
 }
 
 dialog{
-  id = "crista.1.shop",
+  id = "crista.1.shop_mushroom",
   skip = "current",
   text = [[
 Hey, $v! I've been
@@ -2491,6 +2491,26 @@ If you were to find it,
 I bet I could make
 something really
 interesting out of it!
+  ]]
+}
+
+dialog{
+  id = "crista.1.shop_deku_stick",
+  skip = "current",
+  text = [[
+Hey, $v! I almost
+forgot to mention...
+I haven't been able to
+leave the shop very
+much, so if you could
+bring me some deku
+sticks, I know I'd be
+able to make a new
+potion. 10 sticks
+should get me started,
+but 25 or so should
+make something really
+great!
   ]]
 }
 
@@ -2512,7 +2532,35 @@ Nope.
 }
 
 dialog{
-  id = "crista.0.shop_mushroom_yes",
+  id = "crista.0.shop_deku_sticks_1",
+  skip = "current",
+  question = true,
+  text = [[
+Wow, You have enough deku
+sticks for me to make a
+Blue Potion!
+Would you like me to?
+Sure!
+Nope.
+  ]]
+}
+
+dialog{
+  id = "crista.0.shop_deku_sticks_2",
+  skip = "current",
+  question = true,
+  text = [[
+Wow, You have enough deku
+sticks for me to make a
+Revitalizing Potion!
+Would you like me to?
+Sure!
+Nope.
+  ]]
+}
+
+dialog{
+  id = "crista.0.potion_work_yes",
   skip = "current",
   text = [[
 Great! Give me some time
@@ -2522,7 +2570,7 @@ and I'll have it ready!
 }
 
 dialog{
-  id = "crista.0.shop_mushroom_no",
+  id = "crista.0.potion_work_no",
   skip = "current",
   text = [[
 Your loss! Come back
@@ -2532,7 +2580,7 @@ our mind.
 }
 
 dialog{
-  id = "crista.0.shop_mushroom_work",
+  id = "crista.0.potion_work",
   skip = "current",
   text = [[
 I'm still working on it,
@@ -2542,7 +2590,7 @@ later.
 }
 
 dialog{
-  id = "crista.0.shop_mushroom_done",
+  id = "crista.0.potion_done",
   skip = "current",
   text = [[
 Your potion's ready! It
@@ -4625,7 +4673,7 @@ dialog{
   skip = "current",
   text = [[
 Yeah, these are pretty
-big woods! North of
+big woods! South of
 that ridge and then east
 is the Blacksmith's
 place. Further east
@@ -4636,14 +4684,14 @@ Sacred Grove, with
 access to an underground
 area beneath a tree to
 the west. The beach and
-desert are north
-of the Grove.$0You can't
+desert are north of
+the Grove.$0 You can't
 get to Hyrule Field
 directly from here
 because of the divide
 just north of here.$0
 Be careful if you go
-directly west of here-
+directly west too -
 I think I saw a scary
 monster over there!
   ]]
@@ -4686,6 +4734,40 @@ north of Hyrule Field,
 and Kakariko City is
 north past that.$0
 Got it?
+  ]]
+}
+
+dialog{
+  id = "pim.directions.80",
+  skip = "current",
+  text = [[
+The beach looks pretty
+empty without those cool
+lizard people around -
+"Tokay" I think is what
+they're called? And those
+crabs are sure mean!
+Anyway, you're at the
+end of the beach and the
+desert is just ahead. At
+the far north end is a
+really old pyramid thing.
+I've seen a few Gerudo
+tents on the west end
+of the desert, and if
+you go far enough east
+you'll hit the waters
+of Lake Hylia. If you
+could swim, you could
+probably get there from
+the beach too.$0
+If you cross the bridge
+at the end of the desert
+you'll end up at the
+City of Kakariko. I'd
+recommend chatting with
+the guy in the house
+near there too.
   ]]
 }
 
@@ -7527,7 +7609,7 @@ dialog{
 You'd like one of these
 shiny stones I found?
 Okay, I'll trade you
-for 200 rupees.
+for some rupees.
 Yes
 No
   ]]
@@ -7541,7 +7623,7 @@ dialog{
 You'd like one of these
 shiny crystals I found?
 Okay, I'll trade you
-for 200 rupees.
+for some rupees.
 Yes
 No
   ]]
@@ -7555,7 +7637,7 @@ dialog{
 You'd like one of these
 neat feathers I found?
 Okay, I'll trade you
-for 200 rupees.
+for some rupees.
 Yes
 No
   ]]
@@ -7569,7 +7651,7 @@ dialog{
 You'd like one of these
 pretty rocks I found?
 Okay, I'll trade you
-for 200 rupees.
+for some rupees.
 Yes
 No
   ]]
@@ -7583,7 +7665,7 @@ dialog{
 You'd like one of these
 cool things I found?
 Okay, I'll trade you
-for 200 rupees.
+for some rupees.
 Yes
 No
   ]]

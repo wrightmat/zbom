@@ -38,13 +38,20 @@ function item:on_using()
 
     -- blue potion
   elseif variant == 5 then
-    game:add_life(game:get_max_life())
+    game:add_stamina(game:get_max_stamina())
     self:set_variant(1)
+    self:set_finished()
+
+    -- revitalizing potion
+  elseif variant == 6 then
+    game:add_life(game:get_max_life())
     game:add_magic(game:get_max_magic())
+    game:add_stamina(game:get_max_stamina())
+    self:set_variant(1)
     self:set_finished()
 
     -- fairy
-  elseif variant == 6 then
+  elseif variant == 7 then
 
     -- release the fairy
     local x, y, layer = map:get_entity("hero"):get_position()

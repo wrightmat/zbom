@@ -22,5 +22,6 @@ function item:on_obtained(variant)
       game:add_max_life(4)
     end
     game:add_life(game:get_max_life())
+    self:get_game():add_stamina(20)
   end)
 end

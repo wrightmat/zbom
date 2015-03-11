@@ -118,15 +118,11 @@ function map:on_started(destination)
     booth_2:set_enabled(true)
     blacksmith_table:set_enabled(true)
     blacksmith_furnace:set_enabled(true)
-    npc_julita_sensor:remove(true)
-    npc_rudy_sensor:remove(true)
     random_walk(npc_ulo)
     --random_walk(npc_bilo) -- TODO: add back once he has all of his directions/animations
   else  -- If festival is over, then don't have NPCs walking around outside
     npc_rudy:remove()
     npc_julita:remove()
-    npc_julita_sensor:remove(true)
-    npc_rudy_sensor:remove(true)
     npc_ulo:remove()
     npc_bilo:remove()
   end
@@ -218,30 +214,5 @@ function npc_ulo:on_interaction()
   else
     game:set_value("i1904", game:get_value("i1904")+1)
     game:start_dialog("ulo.0.festival", game:get_player_name())
-  end
-end
-
-function npc_julita:on_interaction()
-  if game:get_value("i1027") >= 4 then
-    if quest_julita ~= nil then quest_julita:remove() end
-    game:start_dialog("julita.1", game:get_player_name(), function()
-      game:set_value("i1903", 2)
-    end)
-  elseif game:get_value("i1027") < 5 then
-    game:start_dialog("julita.0.festival", function(answer)
-      if answer == 1 then
-        if game:get_magic() then
-          game:add_magic(20)
-          game:start_dialog("julita.0.festival_yes")
-        else
-          game:start_dialog("julita.0.festival_magic")
-        end
-      else
-        game:start_dialog("julita.0.festival_no")
-      end
-      game:set_value("i1903", 1)
-    end)
-  else
-    game:start_dialog("julita.0")
   end
 end
