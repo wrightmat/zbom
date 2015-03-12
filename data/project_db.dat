@@ -378,6 +378,12 @@ sprite{ id = "menus/pause_cursor", description = "Menus: Pause cursor" }
 sprite{ id = "menus/pause_save_dialog", description = "Menus: Pause save dialog" }
 sprite{ id = "menus/selection_menu_cursor", description = "Menus: Selection menu cursor" }
 sprite{ id = "menus/solarus_logo", description = "Menus: Solarus logo" }
+sprite{ id = "npc/butterfly_purple", description = "Butterfly, purple" }
+sprite{ id = "npc/butterfly_red", description = "Butterfly, red" }
+sprite{ id = "npc/butterfly_orange", description = "Butterfly, orange" }
+sprite{ id = "npc/butterfly_blue", description = "Butterfly, blue" }
+sprite{ id = "npc/butterfly_grey", description = "Butterfly, grey" }
+sprite{ id = "npc/butterfly_goddess", description = "Goddess Butterfly" }
 sprite{ id = "npc/deku", description = "Deku" }
 sprite{ id = "npc/dog", description = "Dog" }
 sprite{ id = "npc/gerudo_hesla", description = "Hesla (Gerudo Leader)" }
@@ -730,6 +736,7 @@ enemy{ id = "poe_big", description = "Big Poe (Boss)" }
 enemy{ id = "carock", description = "Carock (Dark Interloper)" }
 enemy{ id = "zirna", description = "Zirna (Dark Interloper)" }
 
+entity{ id = "butterfly", description = "Butterfly" }
 entity{ id = "npc_crista", description = "NPC: Crista (Ordon)" }
 entity{ id = "npc_julita", description = "NPC: Julita (Ordon)" }
 entity{ id = "npc_pim", description = "NPC: Pim (Ordon)" }

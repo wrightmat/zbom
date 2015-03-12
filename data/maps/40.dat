@@ -9405,6 +9405,30 @@ npc{
   subtype = "0",
 }
 
+custom_entity{
+  layer = 0,
+  x = 572,
+  y = 525,
+  width = 16,
+  height = 16,
+  name = "npc_pim",
+  direction = 3,
+  sprite = "npc/ordon_pim",
+  model = "npc_pim",
+}
+
+custom_entity{
+  layer = 0,
+  x = 392,
+  y = 477,
+  width = 16,
+  height = 16,
+  name = "butterfly_1",
+  direction = 3,
+  sprite = "npc/butterfly_purple",
+  model = "butterfly",
+}
+
 tile{
   layer = 1,
   x = 680,

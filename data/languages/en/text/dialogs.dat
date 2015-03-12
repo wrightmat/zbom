@@ -4772,6 +4772,44 @@ near there too.
 }
 
 dialog{
+  id = "pim.directions.40",
+  skip = "current",
+  text = [[
+Good, you found your way
+to Castle Town! This is
+almost in the center of
+Hyrule. Kakariko, Death
+Mountain and Snowpeak
+are to the north. Lon Lon
+Ranch is directly to the
+west, with Lake Hylia
+beyond that and the
+desert on the other side.$0
+The now abandoned Hidden
+Village is directly to
+the east, through the
+trees. Then is Zora's
+Domain and the rest of
+Death Mountain including
+Goron City.$0
+Oh! I almost forgot the
+coolest thing! You know
+about warp points?$0
+Well, somewhere in town
+is an instrument known
+as the Ocarina of Wind
+which will allow you to
+instantly transport to
+different places. In fact,
+the structure with the
+cardinal directions up
+there will take you to
+the four corners of the
+world! How cool is that?!
+  ]]
+}
+
+dialog{
   id = "shopkeep.0",
   skip = "current",
   text = [[

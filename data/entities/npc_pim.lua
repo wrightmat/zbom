@@ -31,6 +31,7 @@ end
 
 function entity:on_created()
   self:set_drawn_in_y_order(true)
+  self:set_can_traverse("hero", false)
   self:set_traversable_by("hero", false)
   if game:get_map():get_id() ~= "1" then
     random_walk()
@@ -60,6 +61,7 @@ function entity:on_interaction()
 		-- Provide directions depending on current map
 		if game:get_map():get_id() == "23" then game:start_dialog("pim.directions.23") end
 		if game:get_map():get_id() == "26" then game:start_dialog("pim.directions.26") end
+		if game:get_map():get_id() == "40" then game:start_dialog("pim.directions.40") end
 		if game:get_map():get_id() == "80" then game:start_dialog("pim.directions.80") end
 	      else
 		game:start_dialog("pim.2.no_directions")

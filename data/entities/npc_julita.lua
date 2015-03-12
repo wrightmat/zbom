@@ -29,6 +29,7 @@ end
 
 function entity:on_created()
   self:set_drawn_in_y_order(true)
+  self:set_can_traverse("hero", false)
   self:set_traversable_by("hero", false)
   if game:get_map():get_id() == "1" then
     if game:get_value("i1032") >= 3 then
