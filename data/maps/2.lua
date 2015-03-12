@@ -140,6 +140,50 @@ function elder_koshi_office:on_interaction()
   game:start_dialog("koshi.0.office")
 end
 
+function house_bed:on_activated()
+  snores:set_enabled(true)
+  bed:set_enabled(true)
+  bed:get_sprite():set_animation("hero_sleeping")
+  hero:freeze()
+  hero:set_visible(false)
+  sol.timer.start(1000, function()
+    snores:remove()
+    bed:get_sprite():set_animation("hero_waking")
+    sleep_timer = sol.timer.start(1000, function()
+      sensor_sleep:set_enabled(false)
+      hero:set_visible(true)
+      hero:start_jumping(4, 24, true)
+      bed:get_sprite():set_animation("empty_open")
+      sol.audio.play_sound("hero_lands")
+    end)
+    sleep_timer:set_with_sound(false)
+  end)
+end
+
+function sensor_sleep:on_activated()
+  game:start_dialog("_sleep_bed", function(answer)
+    if answer == 1 then
+      hero:teleport("2", "house_bed", "fade")
+      game:set_life(game:get_max_life())
+      if game:get_value("i1026") < 1 then game:set_max_stamina(game:get_max_stamina()-20) end
+      if game:get_value("i1026") > 3 then game:set_max_stamina(game:get_max_stamina()+20) end
+      game:set_stamina(game:get_max_stamina())
+      game:set_value("i1026", 0)
+      game:switch_time_of_day()
+      if game:get_time_of_day() == "day" then
+        for entity in map:get_entities("night_") do
+          entity:set_enabled(false)
+        end
+        night_overlay = nil
+      else
+        for entity in map:get_entities("night_") do
+          entity:set_enabled(true)
+        end
+      end
+    end
+  end)
+end
+
 function sensor_zirna_cutscene:on_activated()
   -- If the player has been to library and heard
   -- Ordona speak, then continue the story with a

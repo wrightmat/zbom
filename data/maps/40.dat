@@ -9429,6 +9429,18 @@ custom_entity{
   model = "butterfly",
 }
 
+custom_entity{
+  layer = 0,
+  x = 768,
+  y = 341,
+  width = 16,
+  height = 16,
+  name = "butterfly_2",
+  direction = 3,
+  sprite = "npc/butterfly_red",
+  model = "butterfly",
+}
+
 tile{
   layer = 1,
   x = 680,

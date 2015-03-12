@@ -6184,7 +6184,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1640,
+  x = 1656,
   y = 1432,
   width = 24,
   height = 40,
@@ -8597,6 +8597,33 @@ dynamic_tile{
   name = "night_window_10",
   pattern = "706",
   enabled_at_start = false,
+}
+
+npc{
+  layer = 0,
+  x = 1616,
+  y = 1461,
+  name = "bed_2",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/bed",
+}
+
+sensor{
+  layer = 0,
+  x = 1640,
+  y = 1461,
+  width = 16,
+  height = 32,
+  name = "sensor_sleep",
+}
+
+destination{
+  layer = 0,
+  x = 1640,
+  y = 1485,
+  name = "house_bed",
+  direction = 0,
 }
 
 tile{

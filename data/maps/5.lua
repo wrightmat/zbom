@@ -99,3 +99,52 @@ end
 function npc_goron_shopkeep:on_interaction()
 
 end
+
+function npc_goron_innkeep:on_interaction()
+
+end
+
+function inn_bed:on_activated()
+  snores:set_enabled(true)
+  bed:set_enabled(true)
+  bed:get_sprite():set_animation("hero_sleeping")
+  hero:freeze()
+  hero:set_visible(false)
+  sol.timer.start(1000, function()
+    snores:remove()
+    bed:get_sprite():set_animation("hero_waking")
+    sleep_timer = sol.timer.start(1000, function()
+      sensor_sleep:set_enabled(false)
+      hero:set_visible(true)
+      hero:start_jumping(4, 24, true)
+      bed:get_sprite():set_animation("empty_open")
+      sol.audio.play_sound("hero_lands")
+    end)
+    sleep_timer:set_with_sound(false)
+  end)
+end
+
+function innkeeper_sensor:on_interaction()
+  game:start_dialog("turt.0.inn", function(answer)
+    if answer == 1 then
+      game:remove_money(20)
+      hero:teleport("5", "inn_bed", "fade")
+      game:set_life(game:get_max_life())
+      if game:get_value("i1026") < 2 then game:set_max_stamina(game:get_max_stamina()-20) end
+      if game:get_value("i1026") > 5 then game:set_max_stamina(game:get_max_stamina()+20) end
+      game:set_stamina(game:get_max_stamina())
+      game:set_value("i1026", 0)
+      game:switch_time_of_day()
+      if game:get_time_of_day() == "day" then
+        for entity in map:get_entities("night_") do
+          entity:set_enabled(false)
+        end
+        night_overlay = nil
+      else
+        for entity in map:get_entities("night_") do
+          entity:set_enabled(true)
+        end
+      end
+    end
+  end)
+end
