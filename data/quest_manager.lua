@@ -87,7 +87,6 @@ local function initialize_maps()
       if keese_random < 0.7 then
 	local ex = random_8(1,1120)
 	local ey = random_8(1,1120)
-	print(ex,ey)
 	self:create_enemy({ breed="keese", x=ex, y=ey, layer=2, direction=1 })
       elseif keese_random >= 0.7 then
 	local ex = random_8(1,1120)
@@ -101,7 +100,6 @@ local function initialize_maps()
       if poe_random <= 0.5 then
 	local ex = random_8(1,1120)
 	local ey = random_8(1,1120)
-	print(ex,ey)
 	self:create_enemy({ breed="poe", x=ex, y=ey, layer=2, direction=1 })
       elseif keese_random <= 0.2 then
 	local ex = random_8(1,1120)
@@ -114,7 +112,6 @@ local function initialize_maps()
       local redead_random = math.random()
       if poe_random <= 0.1 then
 	local ex,ey = self:get_game():get_random_map_position()
-	print(ex,ey)
 	self:create_enemy({ breed="redead", x=ex, y=ey, layer=1, direction=1 })
       end
     end
