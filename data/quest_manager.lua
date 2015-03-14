@@ -59,17 +59,67 @@ local function initialize_maps()
 
   function map_metatable:on_draw(dst_surface)
     -- Put the night overlay on any outdoor map if it's night time
-    if self:get_game():get_map():get_world() == "outside_world" and
-    self:get_game():get_time_of_day() == "night" then
+    if (self:get_world() == "outside_world" and self:get_game():get_time_of_day() == "night") or
+	(self:get_world() == "dungeon_2" and self:get_id() == "20" and self:get_game():get_time_of_day() == "night") or
+	(self:get_world() == "dungeon_2" and self:get_id() == "21" and self:get_game():get_time_of_day() == "night") or
+	(self:get_world() == "dungeon_2" and self:get_id() == "22" and self:get_game():get_time_of_day() == "night") then
       if night_overlay == nil then
         night_overlay = sol.surface.create(320, 240)
         night_overlay:fill_color{0, 51, 102}
         night_overlay:set_opacity(0.45 * 255)
+        night_overlay:draw(dst_surface)
       else
         night_overlay:draw(dst_surface)
       end
     end
   end
+
+  function map_metatable:on_started(destination)
+    function random_8(lower, upper)
+      math.randomseed(os.time())
+      return math.random(math.ceil(lower/8), math.floor(upper/8))*8
+    end
+
+    -- Night time is more dangerous - add various enemies
+    if self:get_game():get_map():get_world() == "outside_world" and
+    self:get_game():get_time_of_day() == "night" then
+      local keese_random = math.random()
+      if keese_random < 0.7 then
+	local ex = random_8(1,1120)
+	local ey = random_8(1,1120)
+	print(ex,ey)
+	self:create_enemy({ breed="keese", x=ex, y=ey, layer=2, direction=1 })
+      elseif keese_random >= 0.7 then
+	local ex = random_8(1,1120)
+	local ey = random_8(1,1120)
+	self:create_enemy({ breed="keese", x=ex, y=ey, layer=2, direction=1 })
+	local ex = random_8(1,1120)
+	local ey = random_8(1,1120)
+	self:create_enemy({ breed="keese", x=ex, y=ey, layer=2, direction=1 })
+      end
+      local poe_random = math.random()
+      if poe_random <= 0.5 then
+	local ex = random_8(1,1120)
+	local ey = random_8(1,1120)
+	print(ex,ey)
+	self:create_enemy({ breed="poe", x=ex, y=ey, layer=2, direction=1 })
+      elseif keese_random <= 0.2 then
+	local ex = random_8(1,1120)
+	local ey = random_8(1,1120)
+	self:create_enemy({ breed="poe", x=ex, y=ey, layer=2, direction=1 })
+	local ex = random_8(1,1120)
+	local ey = random_8(1,1120)
+	self:create_enemy({ breed="poe", x=ex, y=ey, layer=2, direction=1 })
+      end
+      local redead_random = math.random()
+      if poe_random <= 0.1 then
+	local ex,ey = self:get_game():get_random_map_position()
+	print(ex,ey)
+	self:create_enemy({ breed="redead", x=ex, y=ey, layer=1, direction=1 })
+      end
+    end
+  end
+
 end
 
 local function initialize_game()
@@ -116,6 +166,24 @@ local function initialize_game()
     if value > 0 then
       return self:set_value("i1025", stamina+value)
     end
+  end
+
+  function game_metatable:get_random_map_position()
+    function random_8(lower, upper)
+      math.randomseed(os.time())
+      return math.random(math.ceil(lower/8), math.floor(upper/8))*8
+    end
+    function random_points()
+      local x = random_8(1, 1120)
+      local y = random_8(1, 1120)
+      if self:get_map():get_ground(random_points(),1) ~= "traversable" then
+         random_point()
+      else
+        return x,y
+      end
+    end
+  
+    return random_points()
   end
 
 end

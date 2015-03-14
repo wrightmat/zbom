@@ -9213,7 +9213,7 @@ teletransporter{
 teletransporter{
   layer = 0,
   x = 1120,
-  y = 352,
+  y = 344,
   width = 16,
   height = 176,
   name = "to_F14_4",
@@ -9230,6 +9230,15 @@ jumper{
   height = 8,
   direction = 6,
   jump_length = 64,
+}
+
+wall{
+  layer = 0,
+  x = 1112,
+  y = 512,
+  width = 8,
+  height = 16,
+  stops_hero = true,
 }
 
 tile{

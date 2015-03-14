@@ -8957,7 +8957,7 @@ teletransporter{
   x = -16,
   y = 216,
   width = 16,
-  height = 688,
+  height = 80,
   name = "to_E14_2",
   transition = "scrolling",
   destination_map = "15",
@@ -11118,6 +11118,30 @@ destructible{
   destruction_sound = "bush",
   weight = 1,
   can_be_cut = true,
+}
+
+teletransporter{
+  layer = 0,
+  x = -16,
+  y = 344,
+  width = 16,
+  height = 176,
+  name = "to_E14_4",
+  transition = "scrolling",
+  destination_map = "15",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = -16,
+  y = 600,
+  width = 16,
+  height = 96,
+  name = "to_E14_5",
+  transition = "scrolling",
+  destination_map = "15",
+  destination = "_side",
 }
 
 tile{
