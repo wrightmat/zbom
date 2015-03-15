@@ -7216,16 +7216,6 @@ teletransporter{
   destination = "_side",
 }
 
-npc{
-  layer = 0,
-  x = 672,
-  y = 933,
-  name = "npc_crista",
-  direction = 3,
-  subtype = "1",
-  sprite = "npc/ordon_crista",
-}
-
 enemy{
   layer = 0,
   x = 640,
@@ -7374,6 +7364,18 @@ destructible{
   destruction_sound = "bush",
   weight = 1,
   can_be_cut = true,
+}
+
+custom_entity{
+  layer = 0,
+  x = 668,
+  y = 925,
+  width = 16,
+  height = 16,
+  name = "npc_crista",
+  direction = 3,
+  sprite = "npc/ordon_crista",
+  model = "npc_crista",
 }
 
 tile{

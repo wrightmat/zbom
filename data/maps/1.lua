@@ -193,6 +193,7 @@ function npc_impa:on_interaction()
 end
 
 function sensor_sleep:on_activated()
+ if game:get_value("i1027") >= 6 then
   game:start_dialog("_sleep_bed", function(answer)
     if answer == 1 then
       hero:teleport("1", "house_bed", "fade")
@@ -214,4 +215,5 @@ function sensor_sleep:on_activated()
       end
     end
   end)
+ end
 end
