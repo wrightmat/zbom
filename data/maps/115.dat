@@ -10,6 +10,15 @@ properties{
 
 tile{
   layer = 0,
+  x = 0,
+  y = 976,
+  width = 1120,
+  height = 144,
+  pattern = "49",
+}
+
+tile{
+  layer = 0,
   x = 680,
   y = 424,
   width = 48,
@@ -78,6 +87,129 @@ tile{
   width = 32,
   height = 8,
   pattern = "629",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 944,
+  width = 1120,
+  height = 176,
+  pattern = "275",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 944,
+  width = 1120,
+  height = 16,
+  pattern = "192",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 976,
+  width = 1120,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 960,
+  width = 1120,
+  height = 16,
+  pattern = "26",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 936,
+  width = 1120,
+  height = 8,
+  pattern = "194",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 928,
+  width = 1120,
+  height = 8,
+  pattern = "265",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 920,
+  width = 1120,
+  height = 8,
+  pattern = "259",
+}
+
+teletransporter{
+  layer = 0,
+  x = -16,
+  y = 976,
+  width = 16,
+  height = 144,
+  name = "to_G4_water",
+  transition = "scrolling",
+  destination_map = "111",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = 0,
+  y = 1120,
+  width = 1120,
+  height = 16,
+  name = "to_H5_water",
+  transition = "scrolling",
+  destination_map = "58",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = 1120,
+  y = 976,
+  width = 16,
+  height = 144,
+  name = "to_I4_water",
+  transition = "scrolling",
+  destination_map = "119",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 928,
+  name = "to_G4",
+  transition = "scrolling",
+  destination_map = "111",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = 1120,
+  y = 0,
+  width = 16,
+  height = 928,
+  name = "to_I4",
+  transition = "scrolling",
+  destination_map = "111",
+  destination = "_side",
 }
 
 tile{

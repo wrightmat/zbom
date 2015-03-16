@@ -4,8 +4,26 @@ properties{
   width = 1120,
   height = 1120,
   world = "outside_world",
-  tileset = "2",
+  tileset = "3",
   music = "same",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 976,
+  width = 1120,
+  height = 144,
+  pattern = "49",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 0,
+  width = 496,
+  height = 920,
+  pattern = "295",
 }
 
 tile{
@@ -14,7 +32,7 @@ tile{
   y = 424,
   width = 48,
   height = 16,
-  pattern = 628,
+  pattern = "628",
 }
 
 tile{
@@ -23,7 +41,7 @@ tile{
   y = 416,
   width = 8,
   height = 16,
-  pattern = 626,
+  pattern = "626",
 }
 
 tile{
@@ -32,7 +50,7 @@ tile{
   y = 416,
   width = 8,
   height = 16,
-  pattern = 627,
+  pattern = "627",
 }
 
 tile{
@@ -41,43 +59,142 @@ tile{
   y = 440,
   width = 32,
   height = 8,
-  pattern = 629,
+  pattern = "629",
 }
 
 tile{
   layer = 0,
-  x = 472,
-  y = 80,
+  x = 832,
+  y = 160,
   width = 48,
   height = 16,
-  pattern = 628,
+  pattern = "628",
 }
 
 tile{
   layer = 0,
-  x = 464,
-  y = 72,
+  x = 824,
+  y = 152,
   width = 8,
   height = 16,
-  pattern = 626,
+  pattern = "626",
 }
 
 tile{
   layer = 0,
-  x = 520,
-  y = 72,
+  x = 880,
+  y = 152,
   width = 8,
   height = 16,
-  pattern = 627,
+  pattern = "627",
 }
 
 tile{
   layer = 0,
-  x = 480,
-  y = 96,
+  x = 840,
+  y = 176,
   width = 32,
   height = 8,
-  pattern = 629,
+  pattern = "629",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 944,
+  width = 1120,
+  height = 176,
+  pattern = "275",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 944,
+  width = 1120,
+  height = 16,
+  pattern = "192",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 976,
+  width = 1120,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 960,
+  width = 1120,
+  height = 16,
+  pattern = "26",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 936,
+  width = 1120,
+  height = 8,
+  pattern = "194",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 928,
+  width = 1120,
+  height = 8,
+  pattern = "265",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 920,
+  width = 1120,
+  height = 8,
+  pattern = "583",
+}
+
+teletransporter{
+  layer = 0,
+  x = 1120,
+  y = 976,
+  width = 16,
+  height = 144,
+  name = "to_E4_water",
+  transition = "scrolling",
+  destination_map = "103",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = 1120,
+  y = 0,
+  width = 16,
+  height = 928,
+  name = "to_E4",
+  transition = "scrolling",
+  destination_map = "103",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = 0,
+  y = 1120,
+  width = 1120,
+  height = 16,
+  name = "to_D5",
+  transition = "scrolling",
+  destination_map = "54",
+  destination = "_side",
 }
 
 tile{
@@ -86,7 +203,7 @@ tile{
   y = 384,
   width = 48,
   height = 40,
-  pattern = 522,
+  pattern = "522",
 }
 
 tile{
@@ -95,7 +212,7 @@ tile{
   y = 368,
   width = 48,
   height = 16,
-  pattern = 521,
+  pattern = "521",
 }
 
 tile{
@@ -104,7 +221,7 @@ tile{
   y = 376,
   width = 8,
   height = 40,
-  pattern = 519,
+  pattern = "519",
 }
 
 tile{
@@ -113,42 +230,42 @@ tile{
   y = 376,
   width = 8,
   height = 40,
-  pattern = 520,
+  pattern = "520",
 }
 
 tile{
   layer = 2,
-  x = 472,
-  y = 40,
+  x = 832,
+  y = 120,
   width = 48,
   height = 40,
-  pattern = 522,
+  pattern = "522",
 }
 
 tile{
   layer = 2,
-  x = 472,
-  y = 24,
+  x = 832,
+  y = 104,
   width = 48,
   height = 16,
-  pattern = 521,
+  pattern = "521",
 }
 
 tile{
   layer = 2,
-  x = 464,
-  y = 32,
+  x = 824,
+  y = 112,
   width = 8,
   height = 40,
-  pattern = 519,
+  pattern = "519",
 }
 
 tile{
   layer = 2,
-  x = 520,
-  y = 32,
+  x = 880,
+  y = 112,
   width = 8,
   height = 40,
-  pattern = 520,
+  pattern = "520",
 }
 
