@@ -258,7 +258,9 @@ sprite{ id = "enemies/manhandla", description = "Manhandla" }
 sprite{ id = "enemies/manhandla_head", description = "Manhandla (Head)" }
 sprite{ id = "enemies/moth", description = "Moth" }
 sprite{ id = "enemies/mothulita", description = "Mothulita" }
+sprite{ id = "enemies/octolux", description = "Octolux" }
 sprite{ id = "enemies/octorok_red", description = "Octorok, red" }
+sprite{ id = "enemies/octorok_blue", description = "Octorok, blue" }
 sprite{ id = "enemies/peahat", description = "Peahat" }
 sprite{ id = "enemies/pike_auto", description = "Pike, auto" }
 sprite{ id = "enemies/pike_detect", description = "Pike, detect" }
@@ -271,6 +273,7 @@ sprite{ id = "enemies/poe", description = "Poe" }
 sprite{ id = "enemies/poe_big", description = "Big Poe" }
 sprite{ id = "enemies/rat", description = "Rat" }
 sprite{ id = "enemies/redead", description = "ReDead" }
+sprite{ id = "enemies/rock_lux", description = "Lux rock" }
 sprite{ id = "enemies/rock_small", description = "Small rock" }
 sprite{ id = "enemies/ropa", description = "Ropa" }
 sprite{ id = "enemies/rope", description = "Rope (snake)" }
@@ -702,7 +705,9 @@ enemy{ id = "knight_red", description = "Knight, Red" }
 enemy{ id = "laser", description = "Laser Beam" }
 enemy{ id = "lizalfos", description = "Lizalfos" }
 enemy{ id = "moth", description = "Moth" }
+enemy{ id = "octolux", description = "Octolux" }
 enemy{ id = "octorok_red", description = "Octorok, Red" }
+enemy{ id = "octorok_blue", description = "Octorok, Blue" }
 enemy{ id = "peahat", description = "Peahat" }
 enemy{ id = "pike_auto", description = "Pike (auto)" }
 enemy{ id = "pike_detect", description = "Pike (detect)" }
@@ -710,6 +715,8 @@ enemy{ id = "pike_fixed", description = "Pike (fixed)" }
 enemy{ id = "poe", description = "Poe" }
 enemy{ id = "rat", description = "Rat" }
 enemy{ id = "redead", description = "ReDead" }
+enemy{ id = "rock_lux", description = "Lux rock" }
+enemy{ id = "rock_small", description = "Small rock" }
 enemy{ id = "ropa", description = "Ropa" }
 enemy{ id = "rope", description = "Rope" }
 enemy{ id = "skeletor", description = "Skeletor" }

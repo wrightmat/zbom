@@ -1,16 +1,16 @@
 local enemy = ...
 
--- A small rock thrown by another enemy (octorok).
+-- A light ball thrown by another enemy (octorok).
 
 function enemy:on_created()
   self:set_life(1)
-  self:set_damage(2)
-  self:create_sprite("enemies/rock_small")
+  self:set_damage(4)
+  self:create_sprite("enemies/rock_lux")
   self:set_size(16, 16)
   self:set_origin(8, 8)
   self:set_can_hurt_hero_running(true)
   self:set_invincible()
-  self:set_minimum_shield_needed(2)
+  self:set_minimum_shield_needed(3)
   self:set_obstacle_behavior("flying")
 end
 

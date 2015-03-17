@@ -1,19 +1,10 @@
 properties{
   x = 0,
   y = 0,
-  width = 432,
-  height = 432,
+  width = 328,
+  height = 320,
   world = "outside_world",
-  tileset = "7",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 0,
-  width = 432,
-  height = 432,
-  pattern = "22",
+  tileset = "2",
 }
 
 destination{
@@ -23,17 +14,6 @@ destination{
   name = "start_position",
   direction = 3,
   default = true,
-}
-
-dynamic_tile{
-  layer = 0,
-  x = 768,
-  y = 864,
-  width = 64,
-  height = 64,
-  name = "hole_boss_6",
-  pattern = "524",
-  enabled_at_start = true,
 }
 
 pickable{
@@ -47,18 +27,16 @@ pickable{
   layer = 0,
   x = 48,
   y = 77,
-  treasure_name = "boots",
+  treasure_name = "shield",
+  treasure_variant = 2,
 }
 
 enemy{
   layer = 0,
-  x = 176,
-  y = 155,
-  name = "boss_vire_sorceror",
+  x = 160,
+  y = 181,
+  name = "octorok",
   direction = 3,
-  breed = "vire_sorceror",
-  rank = 2,
-  savegame_variable = "b1050",
-  treasure_name = "jade",
+  breed = "octolux",
 }
 

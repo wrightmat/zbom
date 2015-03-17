@@ -2261,6 +2261,54 @@ teletransporter{
   destination = "_side",
 }
 
+teletransporter{
+  layer = 0,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 960,
+  name = "to_H4",
+  transition = "scrolling",
+  destination_map = "115",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = -16,
+  y = 1008,
+  width = 16,
+  height = 112,
+  name = "to_H4_water",
+  transition = "scrolling",
+  destination_map = "115",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = 0,
+  y = 1120,
+  width = 1120,
+  height = 16,
+  name = "to_I5_water",
+  transition = "scrolling",
+  destination_map = "59",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = 1120,
+  y = 480,
+  width = 16,
+  height = 640,
+  name = "to_J4_water",
+  transition = "scrolling",
+  destination_map = "123",
+  destination = "_side",
+}
+
 tile{
   layer = 2,
   x = 680,

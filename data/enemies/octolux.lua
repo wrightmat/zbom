@@ -8,9 +8,9 @@ local shooting = false
 local timer, shoot_timer
 
 function enemy:on_created()
-  self:set_life(1)
-  self:set_damage(2)
-  self:create_sprite("enemies/octorok_red")
+  self:set_life(3)
+  self:set_damage(6)
+  self:create_sprite("enemies/octolux")
   self:set_hurt_style("monster")
   self:set_pushed_back_when_hurt(true)
   self:set_push_hero_on_sword(false)
@@ -73,10 +73,10 @@ function enemy:shoot()
   self:get_sprite():set_animation("shooting")
   shoot_timer = sol.timer.start(self, 100, function()
     local rock = self:create_enemy{
-      breed = "rock_small",
+      breed = "rock_lux",
       direction = d
     }
-    sol.timer.start(self, 2000, function()
+    sol.timer.start(self, 1000, function()
       shoot_timer = nil
       self:check_hero()
     end)
@@ -85,7 +85,7 @@ end
 
 function enemy:go_random()
   local m = sol.movement.create("straight")
-  m:set_speed(32)
+  m:set_speed(40)
   m:start(self)
   d = m:get_direction4()
   going_hero = false

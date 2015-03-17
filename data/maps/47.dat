@@ -7694,6 +7694,36 @@ enemy{
   treasure_name = "random",
 }
 
+enemy{
+  layer = 0,
+  x = 272,
+  y = 461,
+  name = "octorok_1",
+  direction = 3,
+  breed = "octorok_blue",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 688,
+  y = 157,
+  name = "octorok_2",
+  direction = 3,
+  breed = "octorok_blue",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 80,
+  y = 181,
+  name = "octorok_3",
+  direction = 3,
+  breed = "octorok_blue",
+  treasure_name = "random",
+}
+
 tile{
   layer = 2,
   x = 480,

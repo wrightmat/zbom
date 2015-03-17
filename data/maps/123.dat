@@ -3262,6 +3262,18 @@ teletransporter{
   destination = "_side",
 }
 
+teletransporter{
+  layer = 0,
+  x = -16,
+  y = 512,
+  width = 16,
+  height = 608,
+  name = "to_I4_water",
+  transition = "scrolling",
+  destination_map = "119",
+  destination = "_side",
+}
+
 tile{
   layer = 2,
   x = 56,

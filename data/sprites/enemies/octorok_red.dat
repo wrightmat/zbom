@@ -1,6 +1,6 @@
 animation{
   name = "walking",
-  src_image = "enemies/octorok_red.png",
+  src_image = "enemies/octorok.png",
   frame_delay = 200,
   frame_to_loop_on = 0,
   directions = {
@@ -12,7 +12,7 @@ animation{
 }
 animation{
   name = "hurt",
-  src_image = "enemies/octorok_red.png",
+  src_image = "enemies/octorok.png",
   directions = {
     { x = 128, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
     { x = 128, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
@@ -22,7 +22,7 @@ animation{
 }
 animation{
   name = "immobilized",
-  src_image = "enemies/octorok_red.png",
+  src_image = "enemies/octorok.png",
   directions = {
     { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
     { x = 0, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
@@ -32,7 +32,7 @@ animation{
 }
 animation{
   name = "shaking",
-  src_image = "enemies/octorok_red.png",
+  src_image = "enemies/octorok.png",
   frame_delay = 100,
   frame_to_loop_on = 0,
   directions = {
@@ -44,7 +44,7 @@ animation{
 }
 animation{
   name = "shooting",
-  src_image = "enemies/octorok_red.png",
+  src_image = "enemies/octorok.png",
   frame_delay = 150,
   frame_to_loop_on = 0,
   directions = {
