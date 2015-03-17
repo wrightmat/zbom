@@ -5434,6 +5434,62 @@ destructible{
   can_be_cut = true,
 }
 
+teletransporter{
+  layer = 0,
+  x = -16,
+  y = 64,
+  width = 16,
+  height = 384,
+  name = "to_M4_water",
+  transition = "scrolling",
+  destination_map = "137",
+  destination = "_side",
+}
+
+jumper{
+  layer = 0,
+  x = 0,
+  y = 448,
+  width = 32,
+  height = 8,
+  direction = 2,
+  jump_length = 40,
+}
+
+jumper{
+  layer = 0,
+  x = 0,
+  y = 488,
+  width = 32,
+  height = 8,
+  direction = 6,
+  jump_length = 40,
+}
+
+teletransporter{
+  layer = 0,
+  x = -16,
+  y = 496,
+  width = 16,
+  height = 624,
+  name = "to_M4_water_2",
+  transition = "scrolling",
+  destination_map = "137",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = 0,
+  y = 1120,
+  width = 208,
+  height = 16,
+  name = "to_N5_water",
+  transition = "scrolling",
+  destination_map = "144",
+  destination = "_side",
+}
+
 tile{
   layer = 1,
   x = 712,

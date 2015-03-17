@@ -5328,6 +5328,62 @@ destructible{
   damage_on_enemies = 2,
 }
 
+jumper{
+  layer = 0,
+  x = 960,
+  y = 448,
+  width = 160,
+  height = 8,
+  direction = 2,
+  jump_length = 40,
+}
+
+jumper{
+  layer = 0,
+  x = 960,
+  y = 488,
+  width = 160,
+  height = 8,
+  direction = 6,
+  jump_length = 40,
+}
+
+teletransporter{
+  layer = 0,
+  x = 1120,
+  y = 64,
+  width = 16,
+  height = 384,
+  name = "to_N4_water",
+  transition = "scrolling",
+  destination_map = "143",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = 1120,
+  y = 496,
+  width = 16,
+  height = 624,
+  name = "to_N4_water_2",
+  transition = "scrolling",
+  destination_map = "143",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = 1088,
+  y = 1120,
+  width = 32,
+  height = 16,
+  name = "to_M5_water",
+  transition = "scrolling",
+  destination_map = "138",
+  destination = "_side",
+}
+
 tile{
   layer = 2,
   x = 48,

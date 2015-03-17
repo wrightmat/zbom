@@ -47,7 +47,7 @@ tile{
 tile{
   layer = 0,
   x = 1040,
-  y = -8,
+  y = 0,
   width = 80,
   height = 144,
   pattern = "49",
@@ -227,9 +227,9 @@ tile{
 tile{
   layer = 0,
   x = 1080,
-  y = -8,
+  y = 0,
   width = 40,
-  height = 96,
+  height = 88,
   pattern = "275",
 }
 
@@ -6155,6 +6155,24 @@ tile{
   pattern = "522",
 }
 
+tile{
+  layer = 0,
+  x = 1104,
+  y = 696,
+  width = 16,
+  height = 320,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
+  y = 680,
+  width = 16,
+  height = 16,
+  pattern = "30",
+}
+
 wall{
   layer = 0,
   x = 312,
@@ -6538,6 +6556,30 @@ dynamic_tile{
   name = "door",
   pattern = "1120",
   enabled_at_start = true,
+}
+
+teletransporter{
+  layer = 0,
+  x = 1088,
+  y = -16,
+  width = 32,
+  height = 16,
+  name = "to_M4_water",
+  transition = "scrolling",
+  destination_map = "137",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = 1120,
+  y = 0,
+  width = 16,
+  height = 208,
+  name = "to_N5_water",
+  transition = "scrolling",
+  destination_map = "144",
+  destination = "_side",
 }
 
 tile{

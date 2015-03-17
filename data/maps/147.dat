@@ -2267,6 +2267,87 @@ tile{
   pattern = "608",
 }
 
+tile{
+  layer = 0,
+  x = 624,
+  y = -8,
+  width = 16,
+  height = 16,
+  pattern = "71",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 8,
+  width = 16,
+  height = 16,
+  pattern = "71",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 24,
+  width = 16,
+  height = 16,
+  pattern = "71",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 24,
+  width = 16,
+  height = 16,
+  pattern = "458",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = -8,
+  width = 16,
+  height = 16,
+  pattern = "186",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 8,
+  width = 16,
+  height = 16,
+  pattern = "186",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = -8,
+  width = 16,
+  height = 16,
+  pattern = "185",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 8,
+  width = 16,
+  height = 16,
+  pattern = "454",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = -8,
+  width = 16,
+  height = 16,
+  pattern = "452",
+}
+
 teletransporter{
   layer = 0,
   x = 0,
@@ -2295,9 +2376,30 @@ teletransporter{
   layer = 0,
   x = 0,
   y = -16,
-  width = 800,
+  width = 608,
   height = 16,
   name = "to_O1",
+  transition = "scrolling",
+  destination_map = "146",
+  destination = "_side",
+}
+
+wall{
+  layer = 0,
+  x = 888,
+  y = 1112,
+  width = 48,
+  height = 8,
+  stops_hero = true,
+}
+
+teletransporter{
+  layer = 0,
+  x = 688,
+  y = -16,
+  width = 112,
+  height = 16,
+  name = "to_O1_2",
   transition = "scrolling",
   destination_map = "146",
   destination = "_side",

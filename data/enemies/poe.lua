@@ -13,6 +13,7 @@ function enemy:on_created()
   self:set_pushed_back_when_hurt(true)
   self:set_push_hero_on_sword(false)
   self:set_obstacle_behavior("flying")
+  self:set_layer_independent_collisions(true)
   self:set_size(16, 16)
   self:set_origin(8, 13)
 end

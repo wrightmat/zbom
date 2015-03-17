@@ -33,9 +33,11 @@ function ocarina_wind_to_G8:on_interaction()
   end
 end
 
+if game:get_time_of_day() ~= "night" then
 function game:on_map_changed(map)
   function map:on_draw(dst_surface)
     -- clear away lantern overlay from sewer
     if map:get_id() == "133" and lantern_overlay then lantern_overlay:fade_out() end
   end
+end
 end

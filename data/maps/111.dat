@@ -1063,7 +1063,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 600,
+  x = 592,
   y = 496,
   width = 24,
   height = 8,
@@ -1072,7 +1072,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 576,
+  x = 568,
   y = 464,
   width = 64,
   height = 32,
@@ -1360,7 +1360,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 960,
+  x = 976,
   y = 416,
   width = 32,
   height = 32,
@@ -1576,8 +1576,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 880,
-  y = 512,
+  x = 896,
+  y = 504,
   width = 24,
   height = 8,
   pattern = "1801",
@@ -1585,8 +1585,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 856,
-  y = 480,
+  x = 872,
+  y = 472,
   width = 64,
   height = 32,
   pattern = "1802",
@@ -1677,7 +1677,7 @@ tile{
   layer = 0,
   x = 792,
   y = 480,
-  width = 64,
+  width = 80,
   height = 16,
   pattern = "1798",
 }
@@ -1783,7 +1783,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 272,
+  x = 280,
   y = 392,
   width = 16,
   height = 16,
@@ -1792,7 +1792,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 336,
+  x = 328,
   y = 392,
   width = 16,
   height = 16,
@@ -1801,7 +1801,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 376,
+  x = 384,
   y = 176,
   width = 16,
   height = 16,
@@ -1810,7 +1810,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 440,
+  x = 432,
   y = 176,
   width = 16,
   height = 16,
@@ -1819,7 +1819,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 696,
+  x = 704,
   y = 216,
   width = 16,
   height = 16,
@@ -1828,7 +1828,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 760,
+  x = 752,
   y = 216,
   width = 16,
   height = 16,
@@ -1837,7 +1837,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 936,
+  x = 960,
   y = 432,
   width = 16,
   height = 16,
@@ -1846,7 +1846,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1000,
+  x = 1008,
   y = 432,
   width = 16,
   height = 16,
@@ -1855,7 +1855,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 904,
+  x = 912,
   y = 864,
   width = 16,
   height = 16,
@@ -1864,7 +1864,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 968,
+  x = 960,
   y = 864,
   width = 16,
   height = 16,
@@ -2408,6 +2408,106 @@ teletransporter{
   destination = "_side",
 }
 
+npc{
+  layer = 0,
+  x = 328,
+  y = 781,
+  name = "flame_1",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/fire_small",
+}
+
+npc{
+  layer = 0,
+  x = 328,
+  y = 861,
+  name = "flame_2",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/fire_small",
+}
+
+npc{
+  layer = 0,
+  x = 424,
+  y = 781,
+  name = "flame_3",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/fire_small",
+}
+
+npc{
+  layer = 0,
+  x = 424,
+  y = 861,
+  name = "flame_4",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/fire_small",
+}
+
+npc{
+  layer = 0,
+  x = 512,
+  y = 781,
+  name = "flame_5",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/fire_small",
+}
+
+npc{
+  layer = 0,
+  x = 512,
+  y = 861,
+  name = "flame_6",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/fire_small",
+}
+
+npc{
+  layer = 0,
+  x = 600,
+  y = 781,
+  name = "flame_7",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/fire_small",
+}
+
+npc{
+  layer = 0,
+  x = 600,
+  y = 861,
+  name = "flame_8",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/fire_small",
+}
+
+npc{
+  layer = 0,
+  x = 680,
+  y = 781,
+  name = "flame_9",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/fire_small",
+}
+
+npc{
+  layer = 0,
+  x = 680,
+  y = 861,
+  name = "flame_10",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/fire_small",
+}
+
 tile{
   layer = 1,
   x = 136,
@@ -2563,7 +2663,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 576,
+  x = 568,
   y = 432,
   width = 64,
   height = 32,
@@ -2716,7 +2816,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 960,
+  x = 976,
   y = 408,
   width = 32,
   height = 8,
@@ -2896,8 +2996,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 856,
-  y = 448,
+  x = 872,
+  y = 440,
   width = 64,
   height = 32,
   pattern = "1803",

@@ -3099,7 +3099,7 @@ teletransporter{
   layer = 0,
   x = 232,
   y = 1120,
-  width = 848,
+  width = 832,
   height = 16,
   name = "to_L5",
   transition = "scrolling",
@@ -3504,6 +3504,15 @@ teletransporter{
   transition = "scrolling",
   destination_map = "127",
   destination = "_side",
+}
+
+wall{
+  layer = 0,
+  x = 1112,
+  y = 568,
+  width = 8,
+  height = 56,
+  stops_hero = true,
 }
 
 tile{

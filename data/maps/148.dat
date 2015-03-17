@@ -4405,6 +4405,15 @@ destructible{
   can_be_cut = true,
 }
 
+wall{
+  layer = 0,
+  x = 800,
+  y = 1112,
+  width = 48,
+  height = 8,
+  stops_hero = true,
+}
+
 tile{
   layer = 1,
   x = 720,
