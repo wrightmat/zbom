@@ -1535,6 +1535,42 @@ destination{
   direction = 3,
 }
 
+teletransporter{
+  layer = 0,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 80,
+  name = "to_H5_water",
+  transition = "scrolling",
+  destination_map = "58",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = 0,
+  y = -16,
+  width = 1120,
+  height = 16,
+  name = "to_I4_water",
+  transition = "scrolling",
+  destination_map = "119",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = 864,
+  y = 1120,
+  width = 256,
+  height = 16,
+  name = "to_I6_water",
+  transition = "scrolling",
+  destination_map = "68",
+  destination = "_side",
+}
+
 tile{
   layer = 2,
   x = 544,

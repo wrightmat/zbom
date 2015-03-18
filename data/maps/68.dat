@@ -1351,6 +1351,30 @@ npc{
   sprite = "entities/torch_wood",
 }
 
+teletransporter{
+  layer = 0,
+  x = 864,
+  y = -16,
+  width = 256,
+  height = 16,
+  name = "to_I5_water",
+  transition = "scrolling",
+  destination_map = "59",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = 752,
+  y = 1120,
+  width = 368,
+  height = 16,
+  name = "to_I7_water",
+  transition = "scrolling",
+  destination_map = "69",
+  destination = "_side",
+}
+
 npc{
   layer = 1,
   x = 384,

@@ -1779,6 +1779,32 @@ since this is shiny!
 }
 
 dialog{
+  id = "_treasure.trading.5",
+  skip = "current",
+  icon = 43,
+  text = [[
+You traded the Moon
+Tear for a Crystal
+Ball! You swapped one
+shiny thing for
+another!
+  ]]
+}
+
+dialog{
+  id = "_treasure.trading.6",
+  skip = "current",
+  icon = 43,
+  text = [[
+You traded the Crystal
+Ball for a hunk of meat!
+Impa thinks it's tasty,
+but I wouldn't recommend
+trying it.
+  ]]
+}
+
+dialog{
   id = "_treasure.airship_part.1",
   skip = "current",
   text = [[
@@ -6089,6 +6115,125 @@ You are quite cruel
 for getting my hopes
 up like that. Please
 leave my house.
+  ]]
+}
+
+dialog{
+  id = "witch.0.house",
+  skip = "current",
+  text = [[
+Hello young'in!
+You might not be able
+to tell from the look
+of me, but I'm a very
+ancient witch! I have
+collected a lot of
+power over the years,
+but one artifact has
+eluded me - something
+that would truly complete
+my collection. What is
+it you ask? Why, a Moon's
+Tear of course!
+  ]]
+}
+
+dialog{
+  id = "witch.0.trading",
+  skip = "current",
+  question = true,
+  text = [[
+Hold on here. Is that
+a Moon's Tear you have
+in your possession?
+Please give it to me!
+
+Please?
+I will give you my
+most prized possession,
+my crystal ball.
+Give it to her?
+Yes
+No
+  ]]
+}
+
+dialog{
+  id = "witch.0.trading_yes",
+  skip = "current",
+  text = [[
+Thank you so much for
+your kindness! You
+have made me very
+happy! As promised,
+here's my beloved
+Crystal Ball. Please
+find a good home
+for it.
+  ]]
+}
+
+dialog{
+  id = "witch.0.trading_no",
+  skip = "current",
+  text = [[
+You are quite cruel
+for getting my hopes
+up like that. I'd
+like you to leave.
+  ]]
+}
+
+dialog{
+  id = "impa.0.trading",
+  skip = "current",
+  question = true,
+  text = [[
+Wait... do you have a
+crystal ball? How did
+you come in possesion
+of that? Those are so
+rare and I've been
+wanting one for so
+long!
+Would you consider
+giving it to me?
+Please?
+Yes
+No
+  ]]
+}
+
+dialog{
+  id = "impa.0.trading_yes",
+  skip = "current",
+  text = [[
+Thank you very much!
+I can't believe I
+finally have a crystal
+ball! Now I can help
+people by telling them
+about their future.
+I can't wait to get
+started!
+Oh yes, something for
+you... I have this meat
+that I made for my
+dinner, but you can
+have it. It's quite
+tasty!
+  ]]
+}
+
+dialog{
+  id = "impa.0.trading_no",
+  skip = "current",
+  text = [[
+I can't believe that
+after everything I've
+done for you, that you
+won't give me the one
+thing I've asked for!
   ]]
 }
 

@@ -1828,6 +1828,42 @@ enemy{
   treasure_name = "random",
 }
 
+teletransporter{
+  layer = 0,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 32,
+  name = "to_G5_water",
+  transition = "scrolling",
+  destination_map = "57",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = 0,
+  y = -16,
+  width = 1120,
+  height = 16,
+  name = "to_H4_water",
+  transition = "scrolling",
+  destination_map = "115",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = 1120,
+  y = 0,
+  width = 16,
+  height = 80,
+  name = "to_I5_water",
+  transition = "scrolling",
+  destination_map = "59",
+  destination = "_side",
+}
+
 tile{
   layer = 2,
   x = 960,

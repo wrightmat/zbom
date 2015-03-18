@@ -4609,6 +4609,18 @@ npc{
   sprite = "entities/torch_wood",
 }
 
+teletransporter{
+  layer = 0,
+  x = 944,
+  y = -16,
+  width = 176,
+  height = 16,
+  name = "to_C4",
+  transition = "scrolling",
+  destination_map = "95",
+  destination = "_side",
+}
+
 tile{
   layer = 1,
   x = 184,

@@ -2958,6 +2958,30 @@ enemy{
   treasure_name = "random",
 }
 
+teletransporter{
+  layer = 0,
+  x = 752,
+  y = -16,
+  width = 368,
+  height = 16,
+  name = "to_I6_water",
+  transition = "scrolling",
+  destination_map = "68",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = -16,
+  y = 1024,
+  width = 16,
+  height = 96,
+  name = "to_H7_water",
+  transition = "scrolling",
+  destination_map = "67",
+  destination = "_side",
+}
+
 npc{
   layer = 1,
   x = 24,

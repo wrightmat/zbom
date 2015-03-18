@@ -173,7 +173,21 @@ function npc_gaira:on_interaction()
 end
 
 function npc_impa:on_interaction()
-  if game:get_value("b1117") then
+  if game:get_value("b2025") then
+    game:start_dialog("impa.0.trading", function(answer)
+      if answer == 1 then
+        -- give her the crystal ball, get the tasty meat
+        game:start_dialog("impa.0.trading_yes", function()
+          hero:start_treasure("trading", 6)
+          game:set_value("b2026", true)
+          game:set_value("b2025", false)
+        end)
+      else
+        -- don't give her the crystal ball
+        game:start_dialog("impa.0.trading_no")
+      end
+    end)
+  elseif game:get_value("b1117") then
     if game:get_value("i1921") < 6 then
       game:start_dialog("impa."..game:get_value("i1921")..".house")
       game:set_value("i1921", game:get_value("i1921")+1)

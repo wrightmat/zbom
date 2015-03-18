@@ -32,6 +32,26 @@ function npc_isan:on_interaction()
     end
 end
 
+function npc_saria_witch:on_interaction()
+  if game:get_value("b2024") then
+    game:start_dialog("witch.0.trading", function(answer)
+      if answer == 1 then
+        -- give her the tear, get the crystal ball
+        game:start_dialog("witch.0.trading_yes", function()
+          hero:start_treasure("trading", 5)
+          game:set_value("b2025", true)
+          game:set_value("b2024", false)
+        end)
+      else
+        -- don't give her the tear
+        game:start_dialog("witch.0.trading_no")
+      end
+    end)
+  else
+    game:start_dialog("witch.0.house")
+  end
+end
+
 function shelf_1:on_interaction()
   game:start_dialog("library_shelf_1")
 end

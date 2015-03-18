@@ -2578,7 +2578,7 @@ teletransporter{
   x = 1120,
   y = 0,
   width = 16,
-  height = 1120,
+  height = 976,
   name = "to_I7",
   transition = "scrolling",
   destination_map = "69",
@@ -2877,6 +2877,30 @@ destructible{
   treasure_name = "random_mountain",
   sprite = "entities/pot",
   destruction_sound = "stone",
+}
+
+teletransporter{
+  layer = 0,
+  x = 1120,
+  y = 1024,
+  width = 16,
+  height = 96,
+  name = "to_I7_water",
+  transition = "scrolling",
+  destination_map = "69",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = 896,
+  y = 1120,
+  width = 224,
+  height = 16,
+  name = "to_H8_water",
+  transition = "scrolling",
+  destination_map = "84",
+  destination = "_side",
 }
 
 npc{
