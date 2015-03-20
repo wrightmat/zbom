@@ -43,7 +43,7 @@ function enemy:check_hero()
 
   if not in_ground then
     sol.timer.start(self, 2000, function()
-      self:get_sprite():set_animation("walking")
+      if self:get_sprite() ~= "enemies/enemy_killed" then self:get_sprite():set_animation("walking") end
     end)
   end
   if hy < (ey-esy) then

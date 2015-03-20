@@ -24,6 +24,7 @@ function map:on_started(destination)
     game:start_dialog("crista.0.potion_done", function()
       hero:start_treasure("trading", 2) -- give Odd Potion...
       game:set_value("b2022", true)
+      game:set_value("b2020", false) -- take mushroom
       game:set_value("i2021", 0) -- and get rid of potion counter
     end)
   elseif destination == main_entrance_shop and game:get_value("i2015") >= 10 then

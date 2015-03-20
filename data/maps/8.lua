@@ -11,6 +11,7 @@ function map:on_started(destination)
   if game:get_value("i1032") >= 2 then
     door:set_enabled(false)
   end
+  if game:get_value("i1068") == "9" then game:set_value("i1068", "10") end
 end
 
 function npc_isan:on_interaction()

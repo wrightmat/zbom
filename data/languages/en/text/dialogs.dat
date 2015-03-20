@@ -4412,6 +4412,36 @@ Nope
 }
 
 dialog{
+  id = "francis.1.ordon",
+  skip = "current",
+  text = [[
+See that blue bar up
+there? That's called
+your "Stamina Bar".
+It decreasing any time
+you do something that
+takes energy, like
+use an item or perform
+an action! If it gets
+too low, you won't
+want to do stuff any-
+more. Then you'll need
+to eat something, like
+an apple or a pumpkin,
+or go to sleep to
+restore your energy.
+Your stamina also gets
+restored a very little
+bit any time you get
+a heart or a fairy!$0
+Be sure to find the
+balance between random
+adventuring and taking
+care of yourself!
+  ]]
+}
+
+dialog{
   id = "quint.0.festival",
   skip = "current",
   text = [[
@@ -5710,6 +5740,12 @@ I think they're just
 confused by that
 forest and it makes
 them angry.
+I have heard them say
+that they like odd
+smelling potions. Maybe
+if you gave them one
+of those it would cheer
+them up? $0Probably not...
   ]]
 }
 

@@ -186,7 +186,7 @@ end
 
 function npc_francis:on_interaction()
   if game:get_value("i1908") >= 1 then
-    --if game:get_value("i1028") > 1 then game:start_dialog("francis.1.ordon") end
+    if game:get_value("i1028") > 1 then game:start_dialog("francis.1.ordon") end
   end
 end
 
