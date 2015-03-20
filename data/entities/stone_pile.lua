@@ -12,7 +12,7 @@ function entity:on_created()
   self:add_collision_test("overlapping", function(self, other)
     if other:get_type() == "explosion" then
       self:get_sprite():set_animation("destroy")
-      sol.timer.start(self, 2000, function()
+      sol.timer.start(self, 1000, function()
         self:remove()
       end)
     end

@@ -27,16 +27,15 @@ pickable{
   layer = 0,
   x = 48,
   y = 77,
-  treasure_name = "shield",
-  treasure_variant = 2,
+  treasure_name = "bow",
 }
 
 enemy{
   layer = 0,
-  x = 160,
+  x = 156,
   y = 181,
-  name = "octorok",
+  name = "baba",
   direction = 3,
-  breed = "octolux",
+  breed = "baba_floria",
 }
 

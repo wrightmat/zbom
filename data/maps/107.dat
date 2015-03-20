@@ -5283,6 +5283,18 @@ enemy{
   treasure_name = "random_north",
 }
 
+teletransporter{
+  layer = 0,
+  x = 1120,
+  y = 976,
+  width = 16,
+  height = 144,
+  name = "to_G4_water",
+  transition = "scrolling",
+  destination_map = "111",
+  destination = "_side",
+}
+
 tile{
   layer = 1,
   x = 608,

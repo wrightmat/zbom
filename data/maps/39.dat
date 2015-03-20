@@ -6632,6 +6632,30 @@ wall{
   stops_hero = true,
 }
 
+teletransporter{
+  layer = 0,
+  x = 312,
+  y = -16,
+  width = 96,
+  height = 16,
+  name = "to_G8_water",
+  transition = "scrolling",
+  destination_map = "46",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = -16,
+  y = 640,
+  width = 16,
+  height = 48,
+  name = "to_F9_water",
+  transition = "scrolling",
+  destination_map = "40",
+  destination = "_side",
+}
+
 tile{
   layer = 1,
   x = 624,

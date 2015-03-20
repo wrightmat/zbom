@@ -8054,6 +8054,30 @@ teletransporter{
   destination = "_side",
 }
 
+teletransporter{
+  layer = 0,
+  x = 1120,
+  y = 272,
+  width = 16,
+  height = 832,
+  name = "to_H8_water",
+  transition = "scrolling",
+  destination_map = "84",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = 336,
+  y = 1120,
+  width = 80,
+  height = 16,
+  name = "to_G9_water",
+  transition = "scrolling",
+  destination_map = "39",
+  destination = "_side",
+}
+
 tile{
   layer = 1,
   x = 408,

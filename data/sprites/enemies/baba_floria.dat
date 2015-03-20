@@ -25,10 +25,10 @@ animation{
   name = "ground",
   src_image = "enemies/babas.png",
   directions = {
-    { x = 0, y = 96, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
-    { x = 0, y = 96, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
-    { x = 0, y = 96, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
-    { x = 0, y = 96, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
+    { x = 0, y = 112, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 29 },
+    { x = 0, y = 112, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 29 },
+    { x = 0, y = 112, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 29 },
+    { x = 0, y = 112, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 29 },
   },
 }
 animation{
@@ -55,7 +55,6 @@ animation{
   name = "shaking",
   src_image = "enemies/babas.png",
   frame_delay = 50,
-  frame_to_loop_on = 0,
   directions = {
     { x = 0, y = 32, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 2 },
     { x = 48, y = 32, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 2 },

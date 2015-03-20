@@ -15,3 +15,9 @@ function enemy:on_restarted()
   m:set_speed(16)
   m:start(self)
 end
+
+function enemy:on_movement_changed(movement)
+  local direction4 = movement:get_direction4()
+  local sprite = self:get_sprite()
+  sprite:set_direction(direction4)
+end

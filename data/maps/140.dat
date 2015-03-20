@@ -1105,30 +1105,6 @@ teletransporter{
 
 teletransporter{
   layer = 0,
-  x = -16,
-  y = 72,
-  width = 16,
-  height = 688,
-  name = "to_M1",
-  transition = "scrolling",
-  destination_map = "134",
-  destination = "_side",
-}
-
-teletransporter{
-  layer = 0,
-  x = -16,
-  y = 816,
-  width = 16,
-  height = 304,
-  name = "to_M1_2",
-  transition = "scrolling",
-  destination_map = "134",
-  destination = "_side",
-}
-
-teletransporter{
-  layer = 0,
   x = 1120,
   y = 88,
   width = 16,

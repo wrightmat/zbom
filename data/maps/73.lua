@@ -28,9 +28,3 @@ function sensor_enter_field:on_activated()
     end)
   end)
 end
-
-function game:on_map_changed(map)
-  function map:on_draw(dst_surface)
-    --if map:get_world() ~= "inside_world" then sunset_overlay:draw(dst_surface) end
-  end
-end

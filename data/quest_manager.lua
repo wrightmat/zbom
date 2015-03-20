@@ -125,8 +125,9 @@ local function initialize_maps()
       end
       local redead_random = math.random()
       if poe_random <= 0.1 then
-	local ex,ey = self:get_game():get_random_map_position()
-	self:create_enemy({ breed="redead", x=ex, y=ey, layer=1, direction=1 })
+	local ex = random_8(1,1120)
+	local ey = random_8(1,1120)
+	self:create_enemy({ breed="redead", x=ex, y=ey, layer=0, direction=1 })
       end
     end
   end

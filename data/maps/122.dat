@@ -2477,6 +2477,18 @@ teletransporter{
   destination = "_side",
 }
 
+teletransporter{
+  layer = 0,
+  x = 1120,
+  y = 32,
+  width = 16,
+  height = 912,
+  name = "to_K3_water",
+  transition = "scrolling",
+  destination_map = "126",
+  destination = "_side",
+}
+
 tile{
   layer = 2,
   x = 680,

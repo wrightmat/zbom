@@ -9441,6 +9441,18 @@ custom_entity{
   model = "butterfly",
 }
 
+teletransporter{
+  layer = 0,
+  x = 1120,
+  y = 624,
+  width = 16,
+  height = 48,
+  name = "to_G9_water",
+  transition = "scrolling",
+  destination_map = "39",
+  destination = "_side",
+}
+
 tile{
   layer = 1,
   x = 680,

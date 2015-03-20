@@ -2,7 +2,7 @@ animation{
   name = "on_ground",
   src_image = "entities/destructible_items.png",
   directions = {
-    { x = 320, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 27 },
+    { x = 320, y = 72, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 27 },
   },
 }
 animation{
@@ -17,6 +17,6 @@ animation{
   name = "stopped",
   src_image = "entities/destructible_items.png",
   directions = {
-    { x = 320, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 27 },
+    { x = 320, y = 72, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 27 },
   },
 }

@@ -63,7 +63,7 @@ function item:on_obtaining(variant, savegame_variable)
 	  sol.audio.play_sound("wrong")
 	else
 	  -- Okay, empty bottle.
-	  first_empty_bottle:set_variant(6)
+	  first_empty_bottle:set_variant(7)
 	  sol.audio.play_sound("danger")
 	end
       end
