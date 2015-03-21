@@ -27,6 +27,9 @@ function map:on_started(destination)
   else
     if game:get_value("i1910") < 4 then
       sol.timer.start(1000, function()
+        torch_1:get_sprite():set_animation("lit")
+      end)
+      sol.timer.start(1000, function()
         hero:freeze()
         torch_overlay = sol.surface.create("entities/dark.png")
         torch_overlay:fade_in(50)
@@ -46,6 +49,7 @@ function npc_dampeh:on_interaction()
   game:start_dialog("dampeh.2.mausoleum")
 end
 
+if game:get_time_of_day() ~= "night" then
 function game:on_map_changed(map)
   function map:on_draw(dst_surface)
     if map:get_id() == "68" and lantern_overlay then lantern_overlay:fade_out() end
@@ -60,4 +64,5 @@ function game:on_map_changed(map)
       torch_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
     end
   end
+end
 end

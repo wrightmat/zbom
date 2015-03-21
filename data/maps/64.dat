@@ -1434,7 +1434,7 @@ tile{
   layer = 0,
   x = 0,
   y = 632,
-  width = 256,
+  width = 112,
   height = 16,
   pattern = "177",
 }
@@ -4267,8 +4267,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 72,
-  y = 680,
+  x = 56,
+  y = 704,
   width = 8,
   height = 8,
   pattern = "62",
@@ -4364,6 +4364,87 @@ tile{
   pattern = "63",
 }
 
+tile{
+  layer = 0,
+  x = 144,
+  y = 632,
+  width = 112,
+  height = 16,
+  pattern = "177",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 624,
+  width = 16,
+  height = 24,
+  pattern = "67",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 624,
+  width = 8,
+  height = 24,
+  pattern = "487",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 624,
+  width = 8,
+  height = 24,
+  pattern = "488",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 616,
+  width = 32,
+  height = 8,
+  pattern = "489",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 640,
+  width = 16,
+  height = 24,
+  pattern = "714",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 640,
+  width = 16,
+  height = 24,
+  pattern = "714",
+}
+
+tile{
+  layer = 0,
+  x = 632,
+  y = 680,
+  width = 16,
+  height = 16,
+  pattern = "1626",
+}
+
+tile{
+  layer = 0,
+  x = 632,
+  y = 728,
+  width = 16,
+  height = 16,
+  pattern = "1626",
+}
+
 teletransporter{
   layer = 0,
   x = 0,
@@ -4443,17 +4524,6 @@ destructible{
   damage_on_enemies = 4,
 }
 
-destructible{
-  layer = 0,
-  x = 640,
-  y = 741,
-  treasure_name = "random",
-  sprite = "entities/stone_small_white",
-  destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
 teletransporter{
   layer = 0,
   x = 1120,
@@ -4464,17 +4534,6 @@ teletransporter{
   transition = "scrolling",
   destination_map = "65",
   destination = "_side",
-}
-
-destructible{
-  layer = 0,
-  x = 640,
-  y = 693,
-  treasure_name = "random",
-  sprite = "entities/stone_small_white",
-  destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
 }
 
 enemy{
@@ -4609,6 +4668,57 @@ teletransporter{
   transition = "scrolling",
   destination_map = "49",
   destination = "_side",
+}
+
+destructible{
+  layer = 0,
+  x = 648,
+  y = 709,
+  treasure_name = "random",
+  sprite = "entities/stone_small_black",
+  destruction_sound = "stone",
+  weight = 2,
+  damage_on_enemies = 4,
+}
+
+destructible{
+  layer = 0,
+  x = 648,
+  y = 725,
+  treasure_name = "random",
+  sprite = "entities/stone_small_black",
+  destruction_sound = "stone",
+  weight = 2,
+  damage_on_enemies = 4,
+}
+
+destination{
+  layer = 0,
+  x = 128,
+  y = 653,
+  name = "from_cave_ordeals",
+  direction = 3,
+}
+
+teletransporter{
+  layer = 0,
+  x = 120,
+  y = 624,
+  width = 16,
+  height = 16,
+  name = "to_cave_ordeals",
+  destination_map = "9",
+  destination = "from_F6",
+}
+
+npc{
+  layer = 0,
+  x = 320,
+  y = 997,
+  name = "npc_goron",
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/goron",
 }
 
 tile{

@@ -14,7 +14,7 @@ dialog{
   skip = "current",
   icon = 0,
   text = [[
-Use Roc's Feather to
+Use Rito's Feather to
 jump and get across
 obstacles.
   ]]
@@ -409,9 +409,10 @@ dialog{
   icon = 46,
   text = [[
 It's some interesing
-looking dog food. Maybe
-someone other than a
-dog will like it?
+looking dog food.
+Maybe someone other
+than a dog will
+like it?
   ]]
 }
 
@@ -432,8 +433,8 @@ dialog{
   icon = 48,
   text = [[
 It's a beautiful vase
-fashioned by the Goron
-people.
+fashioned by the
+Goron people.
   ]]
 }
 
@@ -1114,8 +1115,9 @@ dialog{
   skip = "current",
   icon = 22,
   text = [[
-This tasty Goron treat
-is valuable because it
+This tasty Goron
+treat is valuable
+because it
 contains a bug!
   ]]
 }
@@ -1248,7 +1250,7 @@ dialog{
   text = [[
 You got the Large
 Rupee Bag!$0 It
-holds 600 rupees!
+holds 1000 rupees!
   ]]
 }
 
@@ -1260,7 +1262,7 @@ dialog{
 You got the Huge
 Rupee Bag!$0 It
 holds a whopping
-999 rupees!
+5000 rupees!
   ]]
 }
 
@@ -1282,7 +1284,7 @@ dialog{
   text = [[
 You got the Large
 Bomb Bag!$0 It holds
-20 Bombs.
+30 Bombs.
   ]]
 }
 
@@ -1293,7 +1295,7 @@ dialog{
   text = [[
 You got the Huge
 Bomb Bag!$0 It holds
-50 Bombs!
+60 Bombs!
   ]]
 }
 
@@ -1327,7 +1329,7 @@ dialog{
   text = [[
 You received a Huge
 Quiver$0 It can hold
-50 arrows!
+60 arrows!
   ]]
 }
 
@@ -1781,7 +1783,7 @@ since this is shiny!
 dialog{
   id = "_treasure.trading.5",
   skip = "current",
-  icon = 43,
+  icon = 44,
   text = [[
 You traded the Moon
 Tear for a Crystal
@@ -1794,13 +1796,104 @@ another!
 dialog{
   id = "_treasure.trading.6",
   skip = "current",
-  icon = 43,
+  icon = 45,
   text = [[
-You traded the Crystal
-Ball for a hunk of meat!
-Impa thinks it's tasty,
-but I wouldn't recommend
-trying it.
+You traded a Crystal
+Ball for a hunk of
+meat! Impa thinks it's
+tasty, but I wouldn't
+recommend trying it.
+  ]]
+}
+
+dialog{
+  id = "_treasure.trading.7",
+  skip = "current",
+  icon = 46,
+  text = [[
+You traded the Tasty
+Meat for Dog Food!
+Not exactly a fair
+trade, but you felt
+bad for the hungry
+Moblin.
+  ]]
+}
+
+dialog{
+  id = "_treasure.trading.8",
+  skip = "current",
+  icon = 47,
+  text = [[
+You traded the Dog
+Food for some yummy
+Bananas!
+Now we're getting
+somewhere!
+  ]]
+}
+
+dialog{
+  id = "_treasure.trading.9",
+  skip = "current",
+  icon = 48,
+  text = [[
+You traded Bananas
+for a Goron Vase!
+It's quite beautiful
+but you're not sure
+who would want one
+besides a Goron.
+  ]]
+}
+
+dialog{
+  id = "_treasure.trading.10",
+  skip = "current",
+  icon = 49,
+  text = [[
+You traded the Goron
+Vase for a Zora Scale!
+Another race-specific
+item, I wonder what
+you'll do with it?
+  ]]
+}
+
+dialog{
+  id = "_treasure.trading.11",
+  skip = "current",
+  icon = 50,
+  text = [[
+You traded the Zora
+Scale for a Frozen Fish!
+Finally something with
+some mass appeal!
+  ]]
+}
+
+dialog{
+  id = "_treasure.trading.12",
+  skip = "current",
+  icon = 51,
+  text = [[
+You traded the Frozen
+Fish for the Culinary
+Arts of Hyrule book!
+  ]]
+}
+
+dialog{
+  id = "_treasure.trading.13",
+  skip = "current",
+  icon = 52,
+  text = [[
+You traded the Culinary
+Arts of Hyrule book for
+a Rito Feather! Finally
+a truly useful item!
+Maybe this trading stuff
+is done?
   ]]
 }
 
@@ -6048,6 +6141,55 @@ you with bananas!
 }
 
 dialog{
+  id = "chef.0.trading",
+  skip = "current",
+  question = true,
+  text = [[
+Hmmm... what is that
+intriguing smell? I've
+never smelled anything
+like that before.$0
+Is it edible?$0
+You say it might be?
+Well, if you'd like to
+trade me for some
+bananas, I'll happily
+give it a try!
+Yes
+No
+  ]]
+}
+
+dialog{
+  id = "chef.0.trading_yes",
+  skip = "current",
+  text = [[
+*munch* *munch*
+Delicious! I must say,
+this might be my new
+favorite food!$0
+What do you call it?$0
+Dog Food?$0 What an odd
+name. I will have to
+find some more of this
+dog food...
+Anyway, here are the
+bananas I promised!
+  ]]
+}
+
+dialog{
+  id = "chef.0.trading_no",
+  skip = "current",
+  text = [[
+That's too bad. I guess
+I'll just need to keep
+my nose peeled for
+other intriguing smells!
+  ]]
+}
+
+dialog{
   id = "tokay_1.0.beach",
   skip = "current",
   text = [[
@@ -6169,7 +6311,7 @@ but one artifact has
 eluded me - something
 that would truly complete
 my collection. What is
-it you ask? Why, a Moon's
+it you ask? Why, a Moon
 Tear of course!
   ]]
 }
@@ -6270,6 +6412,117 @@ after everything I've
 done for you, that you
 won't give me the one
 thing I've asked for!
+  ]]
+}
+
+dialog{
+  id = "moblin.0.trading",
+  skip = "current",
+  question = true,
+  text = [[
+*sniff* $0*sniff*$0
+Me smell tasty meat?$0
+Me so hungry... you
+give tasty meat?
+Yes
+No
+  ]]
+}
+
+dialog{
+  id = "moblin.0.trading_yes",
+  skip = "current",
+  text = [[
+*munch* *munch*
+Yum! Moblin so happy.
+Moblin give you this
+can of dog food.
+Moblin's only possession.
+  ]]
+}
+
+dialog{
+  id = "moblin.0.trading_no",
+  skip = "current",
+  text = [[
+Me no like you.$0
+Get out of Moblin's
+cave!
+  ]]
+}
+
+dialog{
+  id = "moblin.0.cave_ordeals",
+  skip = "current",
+  text = [[
+Me hear protecting this
+dangerous cave. You no
+go inside. Way too dark,
+scary and full of
+monsters!
+  ]]
+}
+
+dialog{
+  id = "goron.0.trading",
+  skip = "current",
+  question = true,
+  text = [[
+What is that cool looking
+food you're carrying?
+It is food, right?$0
+Will you let me try it?
+Yes
+No
+  ]]
+}
+
+dialog{
+  id = "goron.0.trading_yes",
+  skip = "current",
+  text = [[
+*munch* *munch*
+Hmmm... these things
+are pretty good! You've
+opened my eyes to the
+world of food outside
+of rocks! I wonder what
+else there is out there
+to try?
+I'm going to give you
+one of our Goron Vases.
+It's a sign that you're
+a true Brother to the
+Gorons!
+  ]]
+}
+
+dialog{
+  id = "goron.0.trading_no",
+  skip = "current",
+  text = [[
+It's probably best
+anyway. I'm not sure
+my Goron stomach could
+handle anything more
+than rocks.
+  ]]
+}
+
+dialog{
+  id = "goron.0.house",
+  skip = "current",
+  text = [[
+Do you ever get tired
+of eating just rocks?$0
+What? You don't eat
+rocks?$0
+Well, I do. And I get
+a litte bored with
+eating the same thing
+over and over again.
+I need some variety
+in my life!
   ]]
 }
 
@@ -6560,6 +6813,23 @@ No
 }
 
 dialog{
+  id = "goron.0.inn",
+  skip = "current",
+  question = true,
+  text = [[
+Welcome to the Goron
+City Inn! We offer all
+the comforts of home
+while you're away.
+It's only 20 rupees
+to stay.
+Like to stay?
+Yes
+No
+  ]]
+}
+
+dialog{
   id = "strap.0.pub",
   skip = "current",
   text = [[
@@ -6598,6 +6868,70 @@ see one of those, you
 should look around the
 area and see if you
 can find a way in!
+  ]]
+}
+
+dialog{
+  id = "architect.0.house",
+  skip = "current",
+  text = [[
+Who am I? Who are you!?
+How dare you barge into
+my house and ask of me -
+everyone knows who I am,
+the great Architect of
+Kakariko! I built most
+of this great city with
+my bare hands!$0
+Of course that was many
+years ago, and now I
+can't get my hands to
+do much. Sometimes I
+wish I had someone to
+pass my knowledge onto.
+Someone who could do
+the great work that I
+can no longer do.
+  ]]
+}
+
+dialog{
+  id = "architect.1.house",
+  skip = "current",
+  text = [[
+You say you've met
+someone who would like
+to learn my ways?
+Well, that's great news!
+If you can convinve
+him to come here, we
+can start our work right
+away!
+  ]]
+}
+
+dialog{
+  id = "architect.2.house",
+  skip = "current",
+  text = [[
+He'll be here any time,
+you say? Well, I should
+hurry and prepare my
+materials!
+  ]]
+}
+
+dialog{
+  id = "architect.3.house",
+  skip = "current",
+  text = [[
+This student of yours
+is doing quite well! Of
+course it will be some
+time before he'll be
+of any use to his city,
+but someday he could be
+almost as great as me!
   ]]
 }
 
@@ -6644,6 +6978,34 @@ dialog{
 Why am I out here alone?
 I'm getting bored with
 your questions...
+  ]]
+}
+
+dialog{
+  id = "goron.3.death_mountain",
+  skip = "current",
+  text = [[
+Just north of where
+you're standing, over
+that ridge, is the
+entrance to the Cave
+of Ordeals. What's
+that you ask? Well it's
+a super deep cave that
+will test your skills
+by throwing all kinds
+of scary enemies at
+you...
+It's being guarded by
+an almost equally
+scary moblin. I keep
+hearing him complain
+about how hungry he
+is though. I'll bet
+if you gave him some-
+thing good to eat, he
+would just get out
+of your way.
   ]]
 }
 
@@ -7425,6 +7787,34 @@ learn from, so I guess
 I'll just stare at this
 until I figure out how
 to fix it. 
+  ]]
+}
+
+dialog{
+  id = "rito_carpenter.1.septen",
+  skip = "current",
+  text = [[
+What? There's an
+architect in a nearby
+city who wants to teach
+someone his ways? That
+sounds perfect for me!
+I can learn everything
+he has to teach and bring
+it back to my city.
+Thank you for the great
+information!
+  ]]
+}
+
+dialog{
+  id = "rito_carpenter.2.kakariko",
+  skip = "current",
+  text = [[
+I've learned so much
+already. I can't thank
+you enough for this
+opportunity!
   ]]
 }
 

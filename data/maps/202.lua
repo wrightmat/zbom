@@ -29,6 +29,8 @@ function map:on_started(destination)
   end
   if not game:get_value("b2000") then
     chest_sword:set_enabled(false)
+  else
+    switch_sword:set_activated(true)
   end
   if not game:get_value("b1040") then
     chest_key_1:set_enabled(false)

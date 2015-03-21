@@ -11,6 +11,10 @@ function map:on_started(destination)
   if game:get_value("i1032") >= 2 then
     door:set_enabled(false)
   end
+  if game:get_value("i1840") >= 5 then
+    -- crystal ball is gone
+    table_witch:set_enabled(true)
+  end
   if game:get_value("i1068") == "9" then game:set_value("i1068", "10") end
 end
 
@@ -42,6 +46,7 @@ function npc_saria_witch:on_interaction()
           hero:start_treasure("trading", 5)
           game:set_value("b2025", true)
           game:set_value("b2024", false)
+	  table_witch:set_enabled(true)
         end)
       else
         -- don't give her the tear

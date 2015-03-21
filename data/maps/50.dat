@@ -4711,15 +4711,6 @@ sensor{
 
 sensor{
   layer = 0,
-  x = 160,
-  y = 501,
-  width = 32,
-  height = 16,
-  name = "house_2_door_sensor",
-}
-
-sensor{
-  layer = 0,
   x = 904,
   y = 205,
   width = 32,
@@ -5332,17 +5323,6 @@ dynamic_tile{
   width = 16,
   height = 16,
   name = "house_3_door",
-  pattern = "1120",
-  enabled_at_start = true,
-}
-
-dynamic_tile{
-  layer = 0,
-  x = 160,
-  y = 472,
-  width = 16,
-  height = 16,
-  name = "house_2_door",
   pattern = "1120",
   enabled_at_start = true,
 }

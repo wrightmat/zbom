@@ -34,14 +34,13 @@ function map:on_started(destination)
 
   -- Opening doors
   local entrance_names = {
-    "house_5", "house_6", "house_7", "house_8", "house_9", "house_10"
+    "house_5", "house_7", "house_8", "house_9", "house_10"
   }
   for _, entrance_name in ipairs(entrance_names) do
     local sensor = map:get_entity(entrance_name .. "_door_sensor")
     local tile = map:get_entity(entrance_name .. "_door")
     sensor.on_activated_repeat = function()
-      if hero:get_direction() == 1
-	  and tile:is_enabled() then
+      if hero:get_direction() == 1 and tile:is_enabled() and game:get_time_of_day() == "day" then
 	tile:set_enabled(false)
 	sol.audio.play_sound("door_open")
       end

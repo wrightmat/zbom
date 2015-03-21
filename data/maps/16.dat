@@ -7621,8 +7621,8 @@ teletransporter{
   width = 16,
   height = 16,
   name = "great_fairy_warp",
-  sprite = "entities/teletransporter",
-  sound = "warp",
+  sprite = "entities/teletransporter_hole",
+  sound = "hero_falls",
   destination_map = "163",
   destination = "from_outside",
 }

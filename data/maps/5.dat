@@ -3057,7 +3057,7 @@ npc{
   layer = 0,
   x = 800,
   y = 413,
-  name = "npc_goron_random",
+  name = "npc_goron_trading",
   direction = 3,
   subtype = "1",
   sprite = "npc/goron",
@@ -3088,6 +3088,16 @@ destination{
   y = 149,
   name = "inn_bed",
   direction = 3,
+}
+
+npc{
+  layer = 0,
+  x = 832,
+  y = 133,
+  name = "snores",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/bed_snores",
 }
 
 tile{
@@ -3140,7 +3150,7 @@ npc{
   layer = 1,
   x = 824,
   y = 141,
-  name = "bed_sick_3",
+  name = "bed",
   direction = 3,
   subtype = "0",
   sprite = "entities/bed",
@@ -3150,7 +3160,7 @@ npc{
   layer = 1,
   x = 768,
   y = 141,
-  name = "bed_sick_2",
+  name = "bed_2",
   direction = 3,
   subtype = "0",
   sprite = "entities/bed",

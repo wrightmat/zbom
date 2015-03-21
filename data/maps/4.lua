@@ -5,10 +5,12 @@ local game = map:get_game()
 -- Kakariko City houses  --
 ---------------------------
 
+if game:get_value("i1830")==nil then game:set_value("i1830", 0) end
 if game:get_value("i1918")==nil then game:set_value("i1918", 0) end
 if game:get_value("i1919")==nil then game:set_value("i1919", 0) end
 if game:get_value("i1920")==nil then game:set_value("i1920", 0) end
-if game:get_value("i1830")==nil then game:set_value("i1830", 0) end
+if game:get_value("i1926")==nil then game:set_value("i1926", 0) end
+if game:get_value("i1927")==nil then game:set_value("i1927", 0) end
 
 local function random_walk(npc)
   local m = sol.movement.create("random_path")
@@ -38,6 +40,10 @@ function map:on_started(destination)
   if destination ~= inn_bed then
     snores:set_enabled(false)
     bed:set_enabled(false)
+  end
+
+  if game:get_value("i1926") < 2 and game:get_value("i1927") < 2 then
+    npc_rito_carpenter:remove()
   end
 end
 
@@ -92,6 +98,27 @@ function npc_rowin:on_interaction()
       game:set_value("i1920", 1)
     end)
   end
+end
+
+function npc_architect:on_interaction()
+  if game:get_value("i1927") >= 1 then
+    if game:get_value("i1926") >= 2 then
+      game:start_dialog("architect.3.house")
+      game:set_value("i1926", 3)
+    elseif game:get_value("i1926") == 1 then
+      game:start_dialog("architect.2.house")
+      game:set_value("i1926", 2)
+    else
+      game:start_dialog("architect.1.house")
+      game:set_value("i1926", 1)
+    end
+  else
+    game:start_dialog("architect.0.house")
+  end
+end
+
+function npc_rito_carpenter:on_interaction()
+  game:start_dialog("rito_carpenter.2.kakariko")
 end
 
 function npc_garroth_sensor:on_interaction()

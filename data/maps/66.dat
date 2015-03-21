@@ -1831,17 +1831,6 @@ teletransporter{
   destination = "from_outside_bombshop",
 }
 
-dynamic_tile{
-  layer = 0,
-  x = 152,
-  y = 856,
-  width = 16,
-  height = 16,
-  name = "house_2_door",
-  pattern = "1765",
-  enabled_at_start = true,
-}
-
 destructible{
   layer = 0,
   x = 872,
@@ -2101,5 +2090,14 @@ tile{
   width = 32,
   height = 16,
   pattern = "1019",
+}
+
+tile{
+  layer = 2,
+  x = 144,
+  y = 824,
+  width = 32,
+  height = 24,
+  pattern = "1459",
 }
 

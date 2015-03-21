@@ -29,6 +29,19 @@ function map:on_started(destination)
   end
 end
 
+function sensor_bridge_1:on_activated()
+  local x,y,l = map:get_hero():get_position()
+  if map:get_hero():get_direction() == 1 then --North
+    map:get_hero():set_position(x,y,1)
+  end
+end
+function sensor_bridge_2:on_activated()
+  local x,y,l = map:get_hero():get_position()
+  if map:get_hero():get_direction() == 3 then --South
+    map:get_hero():set_position(x,y,1)
+  end
+end
+
 function ocarina_wind_to_north:on_interaction()
   if game:has_item("ocarina") then
     game:start_dialog("warp.to_D7", function(answer)

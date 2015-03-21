@@ -19,6 +19,14 @@ function map:on_started(destination)
   if game:get_value("i1601") >= 2 then
     blacksmith_water:set_enabled(true)
   end
+  if game:get_value("i1840") >= 7 then
+    blocker:set_enabled(false)
+    npc_moblin:remove()
+  end
+  to_cave_1:set_enabled(false)
+  to_cave_2:set_enabled(false)
+  to_cave_3:set_enabled(false)
+  to_cave_4:set_enabled(false)
 end
 
 function npc_rudy:on_interaction()
@@ -86,6 +94,27 @@ function npc_rudy:on_interaction()
       game:start_dialog("rudy.1.cave", rudy_reputation)
       game:set_value("i1601", 1)
     end
+  end
+end
+
+function npc_moblin:on_interaction()
+  if game:get_value("b2026") then
+    game:start_dialog("moblin.0.trading", function(answer)
+      if answer == 1 then
+        -- give it the meat, get the dog food
+        game:start_dialog("moblin.0.trading_yes", function()
+          hero:start_treasure("trading", 7)
+          game:set_value("b2027", true)
+          game:set_value("b2026", false)
+	  blocker:set_enabled(false)
+        end)
+      else
+        -- don't give it the meat
+        game:start_dialog("moblin.0.trading_no")
+      end
+    end)
+  else
+    game:start_dialog("moblin.0.cave_ordeals")
   end
 end
 

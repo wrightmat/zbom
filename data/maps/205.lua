@@ -149,23 +149,39 @@ function map:on_update()
   end
 end
 
-for enemy in map:get_entities("tektite") do
+for enemy in map:get_entities("tektite_key3") do
   enemy.on_dead = function()
     if not map:has_entities("tektite_key3") and not game:get_value("b1102") then
       chest_key_3:set_enabled(true)
       sol.audio.play_sound("chest_appears")
     end
+  end
+end
+for enemy in map:get_entities("tektite_key4") do
+  enemy.on_dead = function()
     if not map:has_entities("tektite_key4") and not game:get_value("b1103") then
       chest_key_4:set_enabled(true)
       sol.audio.play_sound("chest_appears")
     end
+  end
+end
+for enemy in map:get_entities("tektite_map") do
+  enemy.on_dead = function()
     if not map:has_entities("tektite_map") and not game:get_value("b1106") then
-      chest_map:set_enabled(true)
-      sol.audio.play_sound("chest_appears")
+      map:move_camera(1304, 861, 250, function()
+        chest_map:set_enabled(true)
+        sol.audio.play_sound("chest_appears")
+      end, 500, 500)
     end
+  end
+end
+for enemy in map:get_entities("tektite_compass") do
+  enemy.on_dead = function()
     if not map:has_entities("tektite_compass") and not game:get_value("b1105") then
-      chest_compass:set_enabled(true)
-      sol.audio.play_sound("chest_appears")
+      map:move_camera(1304, 1149, 250, function()
+        chest_compass:set_enabled(true)
+        sol.audio.play_sound("chest_appears")
+      end, 500, 500)
     end
   end
 end

@@ -30,11 +30,13 @@ function map:on_started(destination)
   elseif destination == main_entrance_shop and game:get_value("i2015") >= 10 then
     game:start_dialog("crista.0.potion_done", function()
       hero:start_treasure("potion", 4) -- give Revitalizing Potion...
+      game:set_value("i1847", game:get_value("i1847")-25)
       game:set_value("i2015", 0) -- and get rid of potion counter
     end)
   elseif destination == main_entrance_shop and game:get_value("i2014") >= 10 then
     game:start_dialog("crista.0.potion_done", function()
       hero:start_treasure("potion", 3) -- give Blue Potion...
+      game:set_value("i1847", game:get_value("i1847")-10)
       game:set_value("i2014", 0) -- and get rid of potion counter
     end)
   end

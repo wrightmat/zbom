@@ -8394,6 +8394,18 @@ wall{
   stops_hero = true,
 }
 
+teletransporter{
+  layer = 0,
+  x = 432,
+  y = -16,
+  width = 80,
+  height = 16,
+  name = "to_F9_water",
+  transition = "scrolling",
+  destination_map = "40",
+  destination = "_side",
+}
+
 tile{
   layer = 1,
   x = 80,

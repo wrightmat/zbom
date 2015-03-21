@@ -52,7 +52,6 @@ function item:on_using()
 
     -- fairy
   elseif variant == 7 then
-
     -- release the fairy
     local x, y, layer = map:get_entity("hero"):get_position()
     map:create_pickable{
@@ -98,6 +97,5 @@ function item:on_npc_interaction_item(npc, item_used)
     self:on_npc_interaction(npc)
     return true
   end
-
   return false
 end

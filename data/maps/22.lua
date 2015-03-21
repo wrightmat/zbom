@@ -37,7 +37,23 @@ function map:on_started(destination)
 end
 
 function npc_tokay_chef:on_interaction()
-  game:start_dialog("chef.0.beach")
+  if game:get_value("b2027") then
+    game:start_dialog("chef.0.trading", function(answer)
+      if answer == 1 then
+        -- give him the dog food, get the bananas
+        game:start_dialog("chef.0.trading_yes", function()
+          hero:start_treasure("trading", 8)
+          game:set_value("b2028", true)
+          game:set_value("b2027", false)
+        end)
+      else
+        -- don't give him the dog food
+        game:start_dialog("chef.0.trading_no")
+      end
+    end)
+  else
+    game:start_dialog("chef.0.beach")
+  end
 end
 
 if boss_gohma ~= nil then

@@ -206,6 +206,7 @@ sprite{ id = "enemies/armos", description = "Armos Statue" }
 sprite{ id = "enemies/arrghus_baby", description = "Arrghus Baby" }
 sprite{ id = "enemies/arrghus_stone", description = "Stone Arrghus" }
 sprite{ id = "enemies/baba_floria", description = "Floria Baba" }
+sprite{ id = "enemies/baba_seed", description = "Baba Seed" }
 sprite{ id = "enemies/bari_blue", description = "Blue Bari" }
 sprite{ id = "enemies/bari_red", description = "Red Bari" }
 sprite{ id = "enemies/bari_mini", description = "Mini Bari" }
@@ -256,6 +257,7 @@ sprite{ id = "enemies/lizalfos", description = "Lizalfos" }
 sprite{ id = "enemies/lizalfos_sword", description = "Lizalfos (sword)" }
 sprite{ id = "enemies/manhandla", description = "Manhandla" }
 sprite{ id = "enemies/manhandla_head", description = "Manhandla (Head)" }
+sprite{ id = "enemies/moblin", description = "Moblin" }
 sprite{ id = "enemies/moth", description = "Moth" }
 sprite{ id = "enemies/mothulita", description = "Mothulita" }
 sprite{ id = "enemies/octolux", description = "Octolux" }
@@ -399,6 +401,11 @@ sprite{ id = "npc/goron_ghost", description = "Goron Ghost" }
 sprite{ id = "npc/goron_larin", description = "Gor Larin (Goron Elder)" }
 sprite{ id = "npc/goron_osgor", description = "Osgor (Goron Child)" }
 sprite{ id = "npc/great_fairy", description = "Great Fairy" }
+sprite{ id = "npc/hylian_1", description = "Hylian man, bald" }
+sprite{ id = "npc/hylian_2", description = "Hylian man, blonde and young" }
+sprite{ id = "npc/hylian_3", description = "Hylian man, blonde and young" }
+sprite{ id = "npc/hylian_4", description = "Hylian woman, blonde and older" }
+sprite{ id = "npc/hylian_5", description = "Hylian woman, grey hair" }
 sprite{ id = "npc/hylian_deacon", description = "Deacon (Lumberjack)" }
 sprite{ id = "npc/hylian_etnaya", description = "Etnaya (Kakariko Amphitheater owner)" }
 sprite{ id = "npc/hylian_gaira", description = "Gaira (Traveling groundskeeper)" }
@@ -417,6 +424,8 @@ sprite{ id = "npc/hylian_warbos_warun", description = "Warbos/Warun (Kakariko Bo
 sprite{ id = "npc/hylian_wizard", description = "Wizard" }
 sprite{ id = "npc/hylian_zelda", description = "Princess Zelda (Hylian Elder)" }
 sprite{ id = "npc/kokiri_1", description = "Kokiri, woman with hat" }
+sprite{ id = "npc/kokiri_2", description = "Kokiri, green hair woman" }
+sprite{ id = "npc/moblin", description = "Moblin (NPC, trading)" }
 sprite{ id = "npc/monkey", description = "Monkey" }
 sprite{ id = "npc/ordon_bilo", description = "Bilo (Ordon)" }
 sprite{ id = "npc/ordon_crista", description = "Crista (Ordon)" }
@@ -446,8 +455,6 @@ sprite{ id = "npc/zora_juba", description = "Commander Juba (Zora Elder)" }
 sprite{ id = "npc/zora_soldier", description = "Zora Soldier" }
 sprite{ id = "npc/zuna", description = "Zuna Man" }
 sprite{ id = "npc/zuna_woman", description = "Zuna Woman" }
-sprite{ id = "npc/kokiri_2", description = "Kokiri, green hair woman" }
-sprite{ id = "enemies/baba_seed", description = "Baba Seed" }
 
 music{ id = "battle", description = "Battle" }
 music{ id = "boss", description = "Boss Battle" }
@@ -499,6 +506,7 @@ music{ id = "town_kakariko", description = "Kakariko City" }
 music{ id = "town_kasuto", description = "Kasuto Town" }
 music{ id = "town_kasuto_old", description = "Old Kasuto Town" }
 music{ id = "town_mido", description = "Mido Town" }
+music{ id = "town_nabooru", description = "Nabooru Town" }
 music{ id = "town_ordon", description = "Ordon Village" }
 music{ id = "town_ruto", description = "Ruto Town" }
 music{ id = "town_saria", description = "Saria Town" }
