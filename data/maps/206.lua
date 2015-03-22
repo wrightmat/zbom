@@ -98,6 +98,10 @@ function set_intermediate_layer:on_activated()
   local x, y, l = map:get_entity("hero"):get_position()
   map:get_entity("hero"):set_position(x, y, 1)
 end
+function set_intermediate_layer_2:on_activated()
+  local x, y, l = map:get_entity("hero"):get_position()
+  map:get_entity("hero"):set_position(x, y, 1)
+end
 
 function npc_zora:on_interaction()
   if not game:get_value("b1124") then

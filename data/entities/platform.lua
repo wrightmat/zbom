@@ -1,11 +1,10 @@
 local entity = ...
-local map = entity:get_map()
-local hero = map:get_entity("hero")
+local hero = entity:get_map():get_entity("hero")
 
 -- Platform: entity which moves in either horizontally or
 -- vertically (depending on direction) and carries the hero on it.
 
-local speed = 50
+local speed = 25
 local time_stopped = 1000
 
 function entity:on_created()
@@ -28,8 +27,8 @@ function entity:on_created()
   m:set_loop(true)
   m:start(self)
   
-  self:add_collision_test("containing", function(platform, other)
-    if other:get_type() == "wall" or other:get_type() ~= "jumper" then
+  self:add_collision_test("touching", function(platform, other)
+    if other:get_type() == "wall" and other:get_type() ~= "jumper" then
       self:on_obstacle_reached(m)
     end
   end)
@@ -37,7 +36,7 @@ function entity:on_created()
 end
 
 function entity:on_obstacle_reached(movement)
-  -- Make the platform turn back.
+  --Make the platform turn back.
   movement:stop()
   movement = sol.movement.create("path")    
   local direction4 = self:get_sprite():get_direction()
@@ -59,17 +58,17 @@ function entity:on_position_changed()
   elseif direction4 == 2 then dx = -1
   elseif direction4 == 3 then dy = 1
   end
-  hero:set_position(hx + dx, hy + dy, hl)
+  if not hero:test_obstacles(dx, dy, hl) then hero:set_position(hx + dx, hy + dy, hl) end
 end
 
 function entity:on_movement_changed(movement)
-  -- Change direction of the sprite when the movement changes.
+  --Change direction of the sprite when the movement changes.
   local direction4 = movement:get_direction4()
   self:get_sprite():set_direction(direction4)
 end
 
 function entity:is_on_platform(other_entity)
-  -- Returns true if other_entity is on the platform. 
+  --Returns true if other_entity is on the platform. 
   local ox, oy, ol = other_entity:get_position()
   local ex, ey, el = self:get_position()
   if ol ~= el then return false end

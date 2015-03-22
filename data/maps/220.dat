@@ -1,14 +1,53 @@
 properties{
   x = 0,
   y = 0,
-  width = 328,
+  width = 336,
   height = 320,
   world = "outside_world",
-  tileset = "2",
+  tileset = "8",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 128,
+  width = 336,
+  height = 48,
+  pattern = "701",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 0,
+  width = 336,
+  height = 128,
+  pattern = "22",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 176,
+  width = 336,
+  height = 144,
+  pattern = "22",
+}
+
+custom_entity{
+  layer = 1,
+  x = 76,
+  y = 148,
+  width = 16,
+  height = 16,
+  name = "platform_moving",
+  direction = 3,
+  sprite = "entities/platform",
+  model = "platform",
 }
 
 destination{
-  layer = 0,
+  layer = 1,
   x = 32,
   y = 45,
   name = "start_position",
@@ -16,26 +55,44 @@ destination{
   default = true,
 }
 
-pickable{
-  layer = 0,
-  x = 32,
-  y = 77,
-  treasure_name = "sword",
-}
-
-pickable{
-  layer = 0,
+wall{
+  layer = 1,
   x = 48,
-  y = 77,
-  treasure_name = "bow",
+  y = 96,
+  width = 48,
+  height = 16,
+  stops_npcs = true,
 }
 
-enemy{
-  layer = 0,
-  x = 160,
-  y = 197,
-  name = "peahat",
-  direction = 3,
-  breed = "peahat",
+wall{
+  layer = 1,
+  x = 48,
+  y = 192,
+  width = 48,
+  height = 16,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+jumper{
+  layer = 1,
+  x = 56,
+  y = 120,
+  width = 32,
+  height = 8,
+  direction = 6,
+  jump_length = 40,
+}
+
+jumper{
+  layer = 1,
+  x = 56,
+  y = 176,
+  width = 32,
+  height = 8,
+  direction = 2,
+  jump_length = 40,
 }
 

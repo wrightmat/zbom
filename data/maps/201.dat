@@ -5299,6 +5299,9 @@ chest{
   name = "chest_big",
   treasure_name = "boomerang",
   sprite = "entities/chest_big",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "b1043",
+  cannot_open_dialog = "_big_key_required",
 }
 
 enemy{
@@ -6013,6 +6016,15 @@ wall{
   width = 8,
   height = 224,
   stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 936,
+  y = 464,
+  width = 32,
+  height = 8,
+  stops_hero = true,
 }
 
 tile{

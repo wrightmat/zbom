@@ -22,7 +22,7 @@ function enemy:on_restarted()
   local m = sol.movement.create("target")
   m:set_speed(144)
   m:set_target(x, y)
-  m:set_ignore_obstacles(true)
+  m:set_ignore_obstacles(false)
   m:start(self)
   sol.timer.start(self, 2000, function() self:on_movement_finished() end)
 end
