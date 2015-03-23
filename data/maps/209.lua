@@ -163,5 +163,16 @@ if boss_stalfos ~= nil then
     sol.timer.start(1000, function()
       sol.audio.play_music("temple_snow")
     end)
+    pit_boss_1_7:set_filled()
+    pit_boss_1_8:set_filled()
+    pit_boss_1_9:set_filled()
+    pit_boss_2_7:set_filled()
+    pit_boss_2_8:set_filled()
+  end
+end
+
+function map:on_obtained_treasure(treasure_item, treasure_variant, treasure_savegame_variable)
+  if treasure_name == book_mudora and treasure_variant == 5 then
+    game:set_dungeon_finished(6)
   end
 end

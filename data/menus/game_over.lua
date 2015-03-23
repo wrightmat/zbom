@@ -69,7 +69,7 @@ function game_over_menu:on_started()
           fade_sprite:set_animation("open")
         end)
       elseif state == "opening_menu" then
-        local bottle_with_fairy = game:get_first_bottle_with(6)
+        local bottle_with_fairy = game:get_first_bottle_with(7)
         if bottle_with_fairy ~= nil then
           -- Has a fairy.
           state = "saved_by_fairy"

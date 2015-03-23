@@ -40,21 +40,20 @@ function enemy:check_hero()
   local hx, hy, hl = hero:get_position()
   local ex, ey, el = self:get_position()
   local esx, esy = self:get_size()
-
   if not in_ground then
     sol.timer.start(self, 2000, function()
-      if self:get_sprite() ~= "enemies/enemy_killed" then self:get_sprite():set_animation("walking") end
+      self:get_sprite():set_animation("walking")
     end)
   end
   if hy < (ey-esy) then
-    if self:get_sprite() ~= "enemies/enemy_killed" then self:get_sprite():set_direction(1) end --up
+    self:get_sprite():set_direction(1) --up
   elseif hy > (ey+esy) then
-    if self:get_sprite() ~= "enemies/enemy_killed" then self:get_sprite():set_direction(3) end --down
+    self:get_sprite():set_direction(3) --down
   else
     if hx < ex then
-      if self:get_sprite() ~= "enemies/enemy_killed" then self:get_sprite():set_direction(2) end --left
+      self:get_sprite():set_direction(2) --left
     else
-      if self:get_sprite() ~= "enemies/enemy_killed" then self:get_sprite():set_direction(0) end --right
+      self:get_sprite():set_direction(0) --right
     end
   end
 

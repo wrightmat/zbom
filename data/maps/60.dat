@@ -2827,6 +2827,15 @@ jumper{
   jump_length = 40,
 }
 
+wall{
+  layer = 1,
+  x = 0,
+  y = 24,
+  width = 16,
+  height = 8,
+  stops_hero = true,
+}
+
 tile{
   layer = 2,
   x = 888,

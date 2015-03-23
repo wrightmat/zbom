@@ -48,3 +48,9 @@ if boss_carock ~= nil then
   sol.audio.play_music("sewers")
  end
 end
+
+function map:on_obtained_treasure(treasure_item, treasure_variant, treasure_savegame_variable)
+  if treasure_name == book_mudora and treasure_variant == 6 then
+    game:set_dungeon_finished(1)
+  end
+end

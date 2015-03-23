@@ -138,15 +138,27 @@ dialog{
   icon = 11,
   text = [[
 This bottle contains
-Revitalizing Potion.
-It restores both
-life and magic!
-Great!
+Stamina Potion.
+It restores your
+stamina meter.
   ]]
 }
 
 dialog{
   id = "_item_description.bottle_1.6",
+  skip = "current",
+  icon = 11,
+  text = [[
+This bottle contains
+Revitalizing Potion.
+It restores life,
+magic and stamina!
+Great!
+  ]]
+}
+
+dialog{
+  id = "_item_description.bottle_1.7",
   skip = "current",
   icon = 12,
   text = [[
@@ -208,15 +220,109 @@ dialog{
   icon = 11,
   text = [[
 This bottle contains
-Revitalizing Potion.
-It restores both
-life and magic!
-Great!
+Stamina Potion.
+It restores your
+stamina meter.
   ]]
 }
 
 dialog{
   id = "_item_description.bottle_2.6",
+  skip = "current",
+  icon = 11,
+  text = [[
+This bottle contains
+Revitalizing Potion.
+It restores life,
+magic and stamina!
+Great!
+  ]]
+}
+
+dialog{
+  id = "_item_description.bottle_2.7",
+  skip = "current",
+  icon = 12,
+  text = [[
+This bottle contains
+a fairy. It will come
+to your aide when times
+are difficult...
+  ]]
+}
+
+dialog{
+  id = "_item_description.bottle_3.1",
+  skip = "current",
+  icon = 7,
+  text = [[
+An empty bottle can
+hold all kinds of
+things...
+  ]]
+}
+
+dialog{
+  id = "_item_description.bottle_3.2",
+  skip = "current",
+  icon = 8,
+  text = [[
+This bottle contains
+some water. Empty it
+somewhere appropriate.
+  ]]
+}
+
+dialog{
+  id = "_item_description.bottle_3.3",
+  skip = "current",
+  icon = 9,
+  text = [[
+This bottle contains
+Heart Potion. It's
+used to restore life.
+  ]]
+}
+
+dialog{
+  id = "_item_description.bottle_3.4",
+  skip = "current",
+  icon = 10,
+  text = [[
+This bottle contains
+Magic Potion. It's
+used to replenish
+your magic meter.
+  ]]
+}
+
+dialog{
+  id = "_item_description.bottle_3.5",
+  skip = "current",
+  icon = 11,
+  text = [[
+This bottle contains
+Stamina Potion.
+It restores your
+stamina meter.
+  ]]
+}
+
+dialog{
+  id = "_item_description.bottle_3.6",
+  skip = "current",
+  icon = 11,
+  text = [[
+This bottle contains
+Revitalizing Potion.
+It restores life,
+magic and stamina!
+Great!
+  ]]
+}
+
+dialog{
+  id = "_item_description.bottle_3.7",
   skip = "current",
   icon = 12,
   text = [[
@@ -512,6 +618,26 @@ Book of Mudora.
 }
 
 dialog{
+  id = "_item_description.book_mudora.5",
+  skip = "current",
+  text = [[
+A collection of pages
+from the legendary
+Book of Mudora.
+  ]]
+}
+
+dialog{
+  id = "_item_description.book_mudora.6",
+  skip = "current",
+  text = [[
+A collection of pages
+from the legendary
+Book of Mudora.
+  ]]
+}
+
+dialog{
   id = "_item_description.airship_part.1",
   skip = "current",
   text = [[
@@ -729,14 +855,26 @@ dialog{
   skip = "current",
   icon = 11,
   text = [[
-You got Revitalizing
-Potion!$0 It recovers
-both life and magic!
+You got some Stamina
+Potion!$0 It restores
+your Stamina meter!
   ]]
 }
 
 dialog{
   id = "_treasure.bottle_1.6",
+  skip = "current",
+  icon = 11,
+  text = [[
+You got Revitalizing
+Potion!$0 It recovers
+life, magic and stamina!
+  ]]
+}
+
+
+dialog{
+  id = "_treasure.bottle_1.7",
   skip = "current",
   icon = 12,
   text = [[
@@ -793,14 +931,26 @@ dialog{
   skip = "current",
   icon = 11,
   text = [[
-You got Revitalizing
-Potion!$0 It recovers
-both life and magic!
+You got some Stamina
+Potion!$0 It restores
+your Stamina meter!
   ]]
 }
 
 dialog{
   id = "_treasure.bottle_2.6",
+  skip = "current",
+  icon = 11,
+  text = [[
+You got Revitalizing
+Potion!$0 It recovers
+life, magic and stamina!
+  ]]
+}
+
+
+dialog{
+  id = "_treasure.bottle_2.7",
   skip = "current",
   icon = 12,
   text = [[
@@ -857,14 +1007,26 @@ dialog{
   skip = "current",
   icon = 11,
   text = [[
-You got Revitalizing
-Potion!$0 It recovers
-both life and magic!
+You got some Stamina
+Potion!$0 It restores
+your Stamina meter!
   ]]
 }
 
 dialog{
   id = "_treasure.bottle_3.6",
+  skip = "current",
+  icon = 11,
+  text = [[
+You got Revitalizing
+Potion!$0 It recovers
+life, magic and stamina!
+  ]]
+}
+
+
+dialog{
+  id = "_treasure.bottle_3.7",
   skip = "current",
   icon = 12,
   text = [[
@@ -921,14 +1083,26 @@ dialog{
   skip = "current",
   icon = 11,
   text = [[
-You got Revitalizing
-Potion!$0 It recovers
-both life and magic!
+You got some Stamina
+Potion!$0 It restores
+your Stamina meter!
   ]]
 }
 
 dialog{
   id = "_treasure.bottle_4.6",
+  skip = "current",
+  icon = 11,
+  text = [[
+You got Revitalizing
+Potion!$0 It recovers
+life, magic and stamina!
+  ]]
+}
+
+
+dialog{
+  id = "_treasure.bottle_4.7",
   skip = "current",
   icon = 12,
   text = [[
@@ -1561,7 +1735,7 @@ dialog{
   skip = "current",
   icon = 83,
   text = [[
-You found some Arrows!$0
+You got some Arrows!$0
 Use them in your bow
 to hit things at a
 distance.
@@ -1719,9 +1893,20 @@ dialog{
   skip = "current",
   icon = 11,
   text = [[
+You got Stamina
+Potion!$0 It restores
+your stamina!
+  ]]
+}
+
+dialog{
+  id = "_treasure.potion.4",
+  skip = "current",
+  icon = 11,
+  text = [[
 You got Revitalizing
 Potion!$0 It restores
-both life and magic!
+life, magic and stamina!
   ]]
 }
 
@@ -1928,6 +2113,18 @@ artifact should speed
 the Gerudo's repairs
 considerably! Get back
 as soon as you can.
+  ]]
+}
+
+dialog{
+  id = "_treasure.magic_bar.2",
+  skip = "current",
+  text = [[
+You've had your magic
+bar upgraded! You
+now have capacity
+for twice as much
+magic!
   ]]
 }
 
@@ -3240,16 +3437,10 @@ requires your help.
 Snowpeak and the
 Anouki people lie on
 the far end of the
-world, in the norht-
+world, in the north-
 west edge. They may be
 able to lead you to
 your next prize.$0
-You should also know
-that directly north of
-here, amidst pools of
-lava, lies a portal to
-the underground realm
-of Subrosia.
   ]]
 }
 
@@ -3285,13 +3476,14 @@ now enchanted and complete,
 so it is finally time
 for you to seek out the
 dark tribe. I'm afraid I
-can no longer see your way,
-as the darkness will conceal
-it. I can sense a large
-concentration of dark magic
-in the eastern woods - what
-was once referred to as the
-Lost Woods.
+can no longer see your
+way, as the darkness will
+conceal it. I can sense
+a large concentration
+of dark magic in the
+eastern woods - what
+was once referred to
+as the Lost Woods.
   ]]
 }
 

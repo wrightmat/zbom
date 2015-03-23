@@ -8,6 +8,8 @@ local game = map:get_game()
 function map:on_started(destination)
   map:set_doors_open("door_miniboss")
   if miniboss_chu ~= nil then miniboss_chu:set_enabled(false) end
+
+  if game:get_value("b1150") then game:set_dungeon_finished(6) end
 end
 
 function sensor_miniboss:on_activated()

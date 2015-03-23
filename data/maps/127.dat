@@ -10,6 +10,33 @@ properties{
 
 tile{
   layer = 0,
+  x = 448,
+  y = 0,
+  width = 160,
+  height = 216,
+  pattern = "295",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "589",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "590",
+}
+
+tile{
+  layer = 0,
   x = 344,
   y = 680,
   width = 32,
@@ -105,15 +132,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "589",
-}
-
-tile{
-  layer = 0,
-  x = 448,
-  y = 0,
-  width = 160,
-  height = 216,
-  pattern = "295",
 }
 
 tile{
@@ -984,7 +1002,7 @@ tile{
   layer = 0,
   x = 448,
   y = 216,
-  width = 128,
+  width = 48,
   height = 8,
   pattern = "265",
 }
@@ -1092,7 +1110,7 @@ tile{
   layer = 0,
   x = 448,
   y = 208,
-  width = 128,
+  width = 48,
   height = 8,
   pattern = "583",
 }
@@ -4040,6 +4058,33 @@ tile{
   pattern = "524",
 }
 
+tile{
+  layer = 0,
+  x = 528,
+  y = 208,
+  width = 48,
+  height = 8,
+  pattern = "583",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 216,
+  width = 16,
+  height = 8,
+  pattern = "379",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 216,
+  width = 48,
+  height = 8,
+  pattern = "265",
+}
+
 teletransporter{
   layer = 0,
   x = 1120,
@@ -4989,6 +5034,37 @@ destructible{
   destruction_sound = "bush",
   weight = -1,
   can_be_cut = true,
+}
+
+teletransporter{
+  layer = 0,
+  x = 328,
+  y = 128,
+  width = 16,
+  height = 16,
+  name = "to_subrosia",
+  sprite = "entities/teletransporter_subrosia",
+  sound = "warp",
+  destination_map = "159",
+  destination = "from_surface",
+}
+
+destination{
+  layer = 0,
+  x = 336,
+  y = 165,
+  name = "from_subrosia",
+  direction = 3,
+}
+
+jumper{
+  layer = 0,
+  x = 504,
+  y = 216,
+  width = 16,
+  height = 8,
+  direction = 6,
+  jump_length = 64,
 }
 
 tile{

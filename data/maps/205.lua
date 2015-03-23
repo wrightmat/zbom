@@ -54,10 +54,12 @@ function map:on_started(destination)
   if not game:get_value("b1107") then miniboss_arrghus:set_enabled(false) end
 
   -- Lantern slowly drains magic here so you're forced to find ways to refill magic
-  magic_deplete = sol.timer.start(map, 5000, function()
-    game:remove_magic(1)
-    return true
-  end)
+  if not game:get_value("b1117") then
+    magic_deplete = sol.timer.start(map, 5000, function()
+      game:remove_magic(1)
+      return true
+    end)
+  end
 end
 
 function map:on_obtained_treasure(treasure_item, treasure_variant, treasure_savegame_variable)

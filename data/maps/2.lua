@@ -61,6 +61,20 @@ function map:on_started(destination)
       entity:set_enabled(true)
     end
   end
+
+  -- Replace shop items if they're bought
+  if game:get_value("i1820") >= 2 then --shield
+    self:create_shop_treasure({
+	name = "shop_item_4",
+	layer = 0,
+	x = 1392,
+	y = 472,
+	price = 40,
+	dialog = "_item_description.bow.2",
+	treasure_name = "arrow",
+	treasure_variant = 3
+    })
+  end
 end
 
 function elder_ulo:on_interaction()

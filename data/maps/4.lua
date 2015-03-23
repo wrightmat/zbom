@@ -45,6 +45,32 @@ function map:on_started(destination)
   if game:get_value("i1926") < 2 and game:get_value("i1927") < 2 then
     npc_rito_carpenter:remove()
   end
+
+  -- Replace shop items if they're bought
+  if game:get_value("i1820") >= 2 then --shield
+    self:create_shop_treasure({
+	name = "shop_item_4",
+	layer = 0,
+	x = 112,
+	y = 112,
+	price = 40,
+	dialog = "_item_description.bow.2",
+	treasure_name = "arrow",
+	treasure_variant = 3
+    })
+  end
+  if game:get_value("i1806") >= 1 then --bomb_bag
+    self:create_shop_treasure({
+	name = "shop_item_5",
+	layer = 0,
+	x = 160,
+	y = 112,
+	price = 40,
+	dialog = "_item_description.bomb_counter.1",
+	treasure_name = "bomb",
+	treasure_variant = 3
+    })
+  end
 end
 
 function inn_bed:on_activated()

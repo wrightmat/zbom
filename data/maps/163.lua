@@ -12,7 +12,7 @@ function map:on_started(destination)
   if game:get_value("i1849") >= 10 then game:set_value("i1603", 2) end
   if game:get_value("i1849") >= 20 then game:set_value("i1603", 3) end
   if game:get_value("i1849") >= 35 then game:set_value("i1603", 4) end
-  if game:get_value("i1849") == 50 then game:set_value("i1603", 5) end
+  if game:get_value("i1849") >= 50 then game:set_value("i1603", 5) end
 end
 
 function sensor_fairy_speak:on_activated()

@@ -9336,30 +9336,6 @@ custom_entity{
   model = "npc_pim",
 }
 
-custom_entity{
-  layer = 0,
-  x = 392,
-  y = 477,
-  width = 16,
-  height = 16,
-  name = "butterfly_1",
-  direction = 3,
-  sprite = "npc/butterfly_purple",
-  model = "butterfly",
-}
-
-custom_entity{
-  layer = 0,
-  x = 768,
-  y = 341,
-  width = 16,
-  height = 16,
-  name = "butterfly_2",
-  direction = 3,
-  sprite = "npc/butterfly_red",
-  model = "butterfly",
-}
-
 teletransporter{
   layer = 0,
   x = 1120,
@@ -9400,6 +9376,58 @@ sensor{
   width = 32,
   height = 16,
   name = "sensor_bridge_2",
+}
+
+wall{
+  layer = 0,
+  x = 712,
+  y = 864,
+  width = 8,
+  height = 16,
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 752,
+  y = 864,
+  width = 8,
+  height = 16,
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 712,
+  y = 1024,
+  width = 8,
+  height = 16,
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 752,
+  y = 1024,
+  width = 8,
+  height = 16,
+  stops_hero = true,
+  stops_enemies = true,
+  stops_npcs = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{
@@ -9841,6 +9869,30 @@ tile{
   width = 8,
   height = 16,
   pattern = "1103",
+}
+
+custom_entity{
+  layer = 1,
+  x = 392,
+  y = 477,
+  width = 16,
+  height = 16,
+  name = "butterfly_1",
+  direction = 3,
+  sprite = "npc/butterfly_purple",
+  model = "butterfly",
+}
+
+custom_entity{
+  layer = 1,
+  x = 768,
+  y = 341,
+  width = 16,
+  height = 16,
+  name = "butterfly_2",
+  direction = 3,
+  sprite = "npc/butterfly_red",
+  model = "butterfly",
 }
 
 tile{
