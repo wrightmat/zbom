@@ -6,11 +6,14 @@ local game = map:get_game()
 ------------------------------
 
 function map:on_started(destination)
-  miniboss_knight:set_enabled(false)
-  boss_carock:set_enabled(false)
+  if miniboss_knight ~= nil then miniboss_knight:set_enabled(false) end
+  if boss_carock ~= nil then boss_carock:set_enabled(false) end
   if game:get_value("b1049") then
     map:open_doors("door_room1")
   end
+  if not game:get_value("b1035") then boss_heart:set_enabled(false) end
+  if game:get_value("b1050") then map:open_doors("door_miniboss") end
+  if game:get_value("b1046") then map:open_doors("door_boss") end
 end
 
 for enemy in map:get_entities("room3_helmasaur") do
@@ -24,27 +27,34 @@ end
 
 function sensor_miniboss:on_activated()
   if miniboss_knight ~= nil then
-    door_key3_2:set_sprite("door_shutter")
-    map:close_doors("door_boss")
+    map:close_doors("door_key3")
+    map:close_doors("door_miniboss")
     miniboss_knight:set_enabled(true)
     sol.audio.play_music("miniboss")
   end
 end
 
 function sensor_boss:on_activated()
-  if boss_carock ~= nil then
+  if boss_carock ~= nil and not game:get_value("b1046") then
     map:close_doors("door_boss")
     boss_carock:set_enabled(true)
     sol.audio.play_music("boss")
   end
 end
 
+if miniboss_knight ~= nil then
+ function miniboss_knight:on_dead()
+  map:open_doors("door_key3")
+  map:open_doors("door_miniboss")
+  sol.audio.play_music("sewers")
+ end
+end
+
 if boss_carock ~= nil then
- function boss_carock:on_dead()
+ function boss_carock:on_removed()
+  game:set_value("b1046", true)
   map:open_doors("door_boss")
-  map:open_doors("door_boss")
-  sol.audio.play_sound("boss_killed")
-  boss_heart:set_enabled(true)
+  if boss_heart ~= nil then boss_heart:set_enabled(true) end
   sol.audio.play_music("sewers")
  end
 end

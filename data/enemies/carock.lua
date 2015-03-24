@@ -36,8 +36,8 @@ function enemy:on_created()
   sprite:set_animation("stopped")
 end
 
-function enemy_on_enabled()
-  game:start_dialog("carock.0.ruins")
+function enemy:on_enabled()
+  self:get_game():start_dialog("carock.0.ruins")
 end
 
 function enemy:on_restarted()
@@ -135,8 +135,7 @@ end
 function enemy:end_dialog()
   local sprite = self:get_sprite()
   sprite:set_ignore_suspend(true)
-  game:start_dialog("carock.0.ruins_defeat", function()
-    local sprite = self:get_sprite()
-    sprite:fade_out()
+  self:get_game():start_dialog("carock.0.ruins_defeat", function()
+    sprite:fade_out(30, function() self:remove() end)
   end)
 end

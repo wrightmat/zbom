@@ -29,9 +29,11 @@ function enemy:on_created()
   self:set_size(16, 16)
   self:set_origin(8, 8)
   self:set_invincible()
+
   -- Create a second sprite that stays independent of the enemy.
   link_sprite = sol.sprite.create("enemies/chain_and_ball")
   link_sprite:set_animation("chain")
+
   -- Initialize the links of the chain.
   for i = 1, nb_links do
     link_xy[i].x = 0
@@ -45,6 +47,7 @@ function enemy:set_center_enemy(other)
   local other_x, other_y = other:get_position()
   center_xy.x, center_xy.y = x - other_x, y - other_y
   center_enemy = other
+  self:restart()
 end
 
 function enemy:on_pre_draw()
@@ -60,6 +63,7 @@ function enemy:on_position_changed(x, y)
     local x, y = center_enemy:get_position()
     local x1, y1 = x + center_xy.x, y + center_xy.y
     local x2, y2 = self:get_position()
+
     for i = 1, nb_links do
       link_xy[i].x = x1 + (x2 - x1) * (i - 1) / nb_links
       link_xy[i].y = y1 + (y2 - y1) * (i - 1) / nb_links
@@ -68,13 +72,15 @@ function enemy:on_position_changed(x, y)
 end
 
 function enemy:on_restarted()
-  local m = sol.movement.create("circle")
-  m:set_center(center_enemy, center_xy.x, center_xy.y)
-  m:set_radius(56)
-  m:set_radius_speed(50)
-  m:set_max_rotations(4)
-  m:set_loop_delay(2000)
-  m:set_angle_speed(360)
-  m:set_ignore_obstacles(true)
-  m:start(self)
+  if center_enemy ~= nil then
+    local m = sol.movement.create("circle")
+    m:set_center(center_enemy, center_xy.x, center_xy.y)
+    m:set_radius(56)
+    m:set_radius_speed(50)
+    m:set_max_rotations(4)
+    m:set_loop_delay(2000)
+    m:set_angle_speed(360)
+    m:set_ignore_obstacles(true)
+    m:start(self)
+  end
 end

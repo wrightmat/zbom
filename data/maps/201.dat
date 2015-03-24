@@ -5211,6 +5211,15 @@ tile{
   pattern = "45",
 }
 
+tile{
+  layer = 0,
+  x = 504,
+  y = 344,
+  width = 16,
+  height = 16,
+  pattern = "482",
+}
+
 wall{
   layer = 0,
   x = 936,
@@ -5349,8 +5358,9 @@ chest{
   layer = 0,
   x = 936,
   y = 765,
-  name = "chest_map",
-  treasure_name = "map",
+  name = "chest_treasure",
+  treasure_name = "plume",
+  treasure_savegame_variable = "b1787",
   sprite = "entities/chest",
 }
 
@@ -5656,10 +5666,11 @@ teletransporter{
   y = 272,
   width = 16,
   height = 16,
-  name = "to_north_hyrule",
+  name = "to_outside_2",
   sprite = "entities/teletransporter",
   sound = "warp",
-  destination_map = "201",
+  destination_map = "39",
+  destination = "from_ruins",
 }
 
 door{
@@ -6005,40 +6016,24 @@ wall{
   stops_enemies = true,
 }
 
-wall{
+destructible{
   layer = 0,
-  x = 1232,
-  y = 544,
-  width = 272,
-  height = 8,
-  stops_enemies = true,
+  x = 968,
+  y = 669,
+  name = "hookshot",
+  sprite = "entities/items",
+  weight = -1,
+  damage_on_enemies = 0,
 }
 
-wall{
+npc{
   layer = 0,
-  x = 1232,
-  y = 776,
-  width = 272,
-  height = 8,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 1232,
-  y = 552,
-  width = 8,
-  height = 224,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 1496,
-  y = 552,
-  width = 8,
-  height = 224,
-  stops_enemies = true,
+  x = 512,
+  y = 357,
+  name = "hint_stone",
+  direction = 3,
+  subtype = "0",
+  behavior = "dialog#hint_stone.ruins",
 }
 
 tile{
@@ -6102,6 +6097,42 @@ enemy{
   name = "keese_6",
   direction = 3,
   breed = "keese",
+}
+
+wall{
+  layer = 1,
+  x = 1232,
+  y = 544,
+  width = 272,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1232,
+  y = 552,
+  width = 8,
+  height = 224,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1232,
+  y = 776,
+  width = 272,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1496,
+  y = 552,
+  width = 8,
+  height = 224,
+  stops_enemies = true,
 }
 
 tile{

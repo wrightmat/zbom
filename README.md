@@ -1,8 +1,30 @@
 This package contains the data files of the quest Zelda: Book of Mudora.
 This quest is a free, open-source game that works with Solarus,
 an open-source Zelda-like 2D game engine.
-To play this game, you need Solarus.
-We assume in this readme that Solarus is already installed.
+To play this game, you need Solarus. The compiled engine is included for Windows and Linux.
+
+The game is currently in version 0.32 (15-MAR-24, Solarus v1.3)
+
+To run:
+  Windows: execute "solarus.exe"
+  Linux: execute "solarus"
+  Mac: not currently available
+
+
+See our website http://sites.google.com/site/zeldabom for more information.
+
+Enjoy!
+
+VERSION 0.32 release 15-MAR-24:
+  - expansion of trading sequence and Great Fairy quests
+  - mapping of more areas
+  - finished fifth and sixth dungeons
+  - multiple fixes to map transitions, general bugs
+
+VERSION 0.31 released 15-FEB-2:
+  - multiple map fixes to prevent getting stuck in trees during map transitions - some still to fix
+  - fixes to intro to prevent hero from being able to visit other maps
+
 
 --------
 Contents

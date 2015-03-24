@@ -16,6 +16,7 @@ function enemy:on_created()
   self:set_origin(12, 35)
   self:get_sprite():set_animation("immobilized")
   self:set_attack_consequence("sword", "protected")
+  self:set_attack_consequence("arrow", "protected")
   self:set_attack_consequence("thrown_item", "protected")
   self:set_attack_consequence("hookshot", "protected")
   self:set_attack_consequence("boomerang", "protected")
@@ -57,6 +58,7 @@ function enemy:check_hero()
 end
 
 function enemy:stop()
+  self:set_attack_consequence("arrow", "protected")
   self:set_can_attack(false)
   self:set_can_hurt_hero_running(false)
   self:get_sprite():set_animation("immobilized")
@@ -65,6 +67,7 @@ function enemy:stop()
 end
 
 function enemy:go_hero()
+  self:set_attack_consequence("arrow", 1)
   self:set_can_attack(true)
   self:set_can_hurt_hero_running(true)
   self:get_sprite():set_animation("walking")

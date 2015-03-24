@@ -4443,7 +4443,7 @@ Please help me, hero!
 }
 
 dialog{
-  id = "great_fairy.5.susbrosia",
+  id = "great_fairy.5.subrosia",
   skip = "current",
   text = [[
 You've collected all
@@ -4535,6 +4535,21 @@ I can feel that you've
 almost reached the goal!
 I'm almost to full
 strength. Thank you!
+  ]]
+}
+
+dialog{
+  id = "hint_stone.ruins",
+  skip = "current",
+  text = [[
+If you get stuck, keep
+in mind that there are
+multiple routes to the
+sewers below: one in a
+forest, one near some
+ruins, one near a lake,
+and one on the tip of
+a mountain.
   ]]
 }
 
