@@ -11,7 +11,7 @@ function entity:on_created()
 
   self:add_collision_test("overlapping", function(self, other)
     if other:get_type() == "block" then
-	self:set_filled()
+	self:set_filled(other)
     elseif other:get_type() == "hero" then
       hero_on_pit = true
     else
@@ -20,7 +20,7 @@ function entity:on_created()
   end)
 end
 
-function entity:set_filled()
+function entity:set_filled(other)
   local sprite = self:get_sprite()
   sprite:set_animation("filled")
   self:set_traversable_by(true) -- pit is filled so hero can walk over it

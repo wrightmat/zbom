@@ -1187,6 +1187,17 @@ sensor{
   name = "sensor_fairy_speak",
 }
 
+teletransporter{
+  layer = 0,
+  x = 168,
+  y = 344,
+  width = 16,
+  height = 16,
+  name = "to_outside",
+  destination_map = "157",
+  destination = "from_fairy",
+}
+
 tile{
   layer = 2,
   x = 160,

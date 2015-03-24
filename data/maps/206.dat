@@ -9568,8 +9568,8 @@ wall{
   layer = 0,
   x = 648,
   y = 1024,
-  width = 40,
-  height = 16,
+  width = 48,
+  height = 8,
   stops_hero = true,
   stops_enemies = true,
   stops_npcs = true,
@@ -10293,24 +10293,13 @@ tile{
   pattern = "624",
 }
 
-wall{
+tile{
   layer = 1,
-  x = 712,
+  x = 656,
   y = 1032,
-  width = 16,
+  width = 32,
   height = 32,
-  name = "platform_wall",
-  stops_npcs = true,
-}
-
-wall{
-  layer = 1,
-  x = 608,
-  y = 1032,
-  width = 16,
-  height = 32,
-  name = "platform_wall_2",
-  stops_npcs = true,
+  pattern = "623",
 }
 
 wall{
@@ -10344,18 +10333,6 @@ destination{
   name = "from_outside",
   direction = 1,
   default = true,
-}
-
-custom_entity{
-  layer = 1,
-  x = 700,
-  y = 1052,
-  width = 16,
-  height = 16,
-  name = "platform_moving",
-  direction = 2,
-  sprite = "entities/platform",
-  model = "platform",
 }
 
 jumper{
@@ -10428,6 +10405,36 @@ wall{
   stops_hero = true,
   stops_enemies = true,
   stops_npcs = true,
+}
+
+jumper{
+  layer = 1,
+  x = 648,
+  y = 1032,
+  width = 8,
+  height = 32,
+  direction = 4,
+  jump_length = 40,
+}
+
+jumper{
+  layer = 1,
+  x = 688,
+  y = 1032,
+  width = 8,
+  height = 32,
+  direction = 0,
+  jump_length = 40,
+}
+
+jumper{
+  layer = 1,
+  x = 656,
+  y = 1064,
+  width = 32,
+  height = 8,
+  direction = 6,
+  jump_length = 40,
 }
 
 tile{
