@@ -1,0 +1,29 @@
+animation{
+  name = "stopped",
+  src_image = "npc/subrosian.png",
+  directions = {
+    { x = 0, y = 96, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
+    { x = 0, y = 128, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
+    { x = 48, y = 96, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
+    { x = 0, y = 160, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
+  },
+}
+animation{
+  name = "soaking",
+  src_image = "npc/subrosian.png",
+  directions = {
+    { x = 72, y = 152, frame_width = 24, frame_height = 40, origin_x = 12, origin_y = 29 },
+  },
+}
+animation{
+  name = "walking",
+  src_image = "npc/subrosian.png",
+  frame_delay = 200,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 96, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 2 },
+    { x = 0, y = 128, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 3 },
+    { x = 48, y = 96, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 2 },
+    { x = 0, y = 160, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 3 },
+  },
+}

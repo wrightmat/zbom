@@ -4,9 +4,63 @@ properties{
   width = 912,
   height = 800,
   world = "dungeon_7",
-  floor = 0,
+  floor = 3,
   tileset = "10",
   music = "temple_wind",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 688,
+  width = 16,
+  height = 80,
+  pattern = "137",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 664,
+  width = 8,
+  height = 32,
+  pattern = "278",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 600,
+  width = 16,
+  height = 80,
+  pattern = "6",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 312,
+  width = 16,
+  height = 80,
+  pattern = "137",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 288,
+  width = 8,
+  height = 32,
+  pattern = "278",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 232,
+  width = 16,
+  height = 80,
+  pattern = "6",
 }
 
 tile{
@@ -317,24 +371,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 32,
-  y = 688,
-  width = 16,
-  height = 80,
-  pattern = "137",
-}
-
-tile{
-  layer = 0,
-  x = 32,
-  y = 664,
-  width = 8,
-  height = 32,
-  pattern = "278",
-}
-
-tile{
-  layer = 0,
   x = 40,
   y = 672,
   width = 8,
@@ -426,9 +462,9 @@ tile{
 tile{
   layer = 0,
   x = 32,
-  y = 496,
+  y = 504,
   width = 16,
-  height = 192,
+  height = 80,
   pattern = "6",
 }
 
@@ -3269,24 +3305,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 464,
-  y = 312,
-  width = 16,
-  height = 80,
-  pattern = "137",
-}
-
-tile{
-  layer = 0,
-  x = 464,
-  y = 288,
-  width = 8,
-  height = 32,
-  pattern = "278",
-}
-
-tile{
-  layer = 0,
   x = 472,
   y = 296,
   width = 8,
@@ -3380,7 +3398,7 @@ tile{
   x = 464,
   y = 120,
   width = 16,
-  height = 192,
+  height = 80,
   pattern = "6",
 }
 
@@ -4192,42 +4210,6 @@ tile{
   width = 32,
   height = 16,
   pattern = "50",
-}
-
-tile{
-  layer = 0,
-  x = 32,
-  y = 0,
-  width = 848,
-  height = 32,
-  pattern = "137",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 0,
-  width = 32,
-  height = 800,
-  pattern = "137",
-}
-
-tile{
-  layer = 0,
-  x = 32,
-  y = 768,
-  width = 848,
-  height = 32,
-  pattern = "137",
-}
-
-tile{
-  layer = 0,
-  x = 880,
-  y = 0,
-  width = 32,
-  height = 800,
-  pattern = "137",
 }
 
 tile{
@@ -8622,6 +8604,151 @@ tile{
   pattern = "584",
 }
 
+tile{
+  layer = 0,
+  x = 296,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "482",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 384,
+  width = 8,
+  height = 32,
+  pattern = "106",
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 384,
+  width = 8,
+  height = 32,
+  pattern = "106",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 200,
+  width = 32,
+  height = 8,
+  pattern = "105",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 224,
+  width = 32,
+  height = 8,
+  pattern = "105",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 384,
+  width = 8,
+  height = 32,
+  pattern = "106",
+}
+
+tile{
+  layer = 0,
+  x = 680,
+  y = 384,
+  width = 8,
+  height = 32,
+  pattern = "106",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 272,
+  width = 16,
+  height = 32,
+  pattern = "525",
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 112,
+  width = 16,
+  height = 32,
+  pattern = "525",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "606",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "606",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "607",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "607",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "607",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "607",
+}
+
+teletransporter{
+  layer = 0,
+  x = 456,
+  y = 584,
+  width = 16,
+  height = 16,
+  name = "to_floor_5",
+  destination_map = "214",
+}
+
 wall{
   layer = 0,
   x = 224,
@@ -8705,16 +8832,18 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 124,
-  y = 299,
+  x = 216,
+  y = 188,
+  name = "armos_2",
   direction = 3,
   breed = "armos",
 }
 
 enemy{
   layer = 0,
-  x = 340,
-  y = 139,
+  x = 264,
+  y = 188,
+  name = "armos_4",
   direction = 3,
   breed = "armos",
 }
@@ -8775,7 +8904,7 @@ destination{
 
 teletransporter{
   layer = 0,
-  x = 40,
+  x = 24,
   y = 584,
   width = 16,
   height = 16,
@@ -8792,14 +8921,142 @@ destination{
   direction = 0,
 }
 
-teletransporter{
+npc{
   layer = 0,
-  x = 472,
-  y = 584,
-  width = 16,
-  height = 16,
-  name = "to_floor_5",
-  destination_map = "214",
+  x = 304,
+  y = 429,
+  name = "hint",
+  direction = 3,
+  subtype = "0",
+  behavior = "dialog#hint_stone.tower.4",
+}
+
+enemy{
+  layer = 0,
+  x = 596,
+  y = 117,
+  name = "gibdos_2",
+  direction = 3,
+  breed = "gibdos",
+}
+
+enemy{
+  layer = 0,
+  x = 644,
+  y = 277,
+  name = "gibdos_3",
+  direction = 3,
+  breed = "gibdos",
+}
+
+enemy{
+  layer = 0,
+  x = 792,
+  y = 204,
+  name = "giga_3",
+  direction = 3,
+  breed = "giga",
+}
+
+enemy{
+  layer = 0,
+  x = 612,
+  y = 341,
+  name = "gibdos_4",
+  direction = 3,
+  breed = "gibdos",
+}
+
+destructible{
+  layer = 0,
+  x = 584,
+  y = 285,
+  treasure_name = "heart",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 584,
+  y = 301,
+  treasure_name = "magic_flask",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 760,
+  y = 125,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 760,
+  y = 141,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+chest{
+  layer = 0,
+  x = 552,
+  y = 125,
+  name = "chest_key_1",
+  treasure_name = "small_key",
+  treasure_savegame_variable = "b1171",
+  sprite = "entities/chest",
+}
+
+enemy{
+  layer = 0,
+  x = 216,
+  y = 236,
+  name = "armos_1",
+  direction = 3,
+  breed = "armos",
+}
+
+enemy{
+  layer = 0,
+  x = 264,
+  y = 236,
+  name = "armos_3",
+  direction = 3,
+  breed = "armos",
+}
+
+enemy{
+  layer = 0,
+  x = 140,
+  y = 277,
+  name = "geldman_3",
+  direction = 3,
+  breed = "geldman",
+}
+
+chest{
+  layer = 0,
+  x = 360,
+  y = 125,
+  name = "chest_compass",
+  treasure_name = "compass",
+  treasure_savegame_variable = "b1160",
+  sprite = "entities/chest",
+}
+
+enemy{
+  layer = 0,
+  x = 300,
+  y = 141,
+  name = "geldman_4",
+  direction = 3,
+  breed = "geldman",
 }
 
 enemy{
@@ -8908,6 +9165,15 @@ enemy{
   name = "keese_11",
   direction = 3,
   breed = "keese_fire",
+}
+
+enemy{
+  layer = 1,
+  x = 632,
+  y = 701,
+  name = "keese_13",
+  direction = 3,
+  breed = "keese_dark",
 }
 
 tile{
@@ -9123,6 +9389,42 @@ tile{
   y = 392,
   width = 416,
   height = 16,
+  pattern = "137",
+}
+
+tile{
+  layer = 2,
+  x = 0,
+  y = 0,
+  width = 32,
+  height = 800,
+  pattern = "137",
+}
+
+tile{
+  layer = 2,
+  x = 32,
+  y = 0,
+  width = 848,
+  height = 32,
+  pattern = "137",
+}
+
+tile{
+  layer = 2,
+  x = 880,
+  y = 0,
+  width = 32,
+  height = 800,
+  pattern = "137",
+}
+
+tile{
+  layer = 2,
+  x = 32,
+  y = 768,
+  width = 848,
+  height = 32,
   pattern = "137",
 }
 

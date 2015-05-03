@@ -1,0 +1,22 @@
+animation{
+  name = "unlit",
+  src_image = "entities/quest_entities.png",
+  directions = {
+    { x = 0, y = 128, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 16 },
+    { x = 0, y = 128, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 16 },
+    { x = 0, y = 128, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 16 },
+    { x = 0, y = 128, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 16 },
+  },
+}
+animation{
+  name = "lit",
+  src_image = "entities/quest_entities.png",
+  frame_delay = 160,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 32, y = 128, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 16, num_frames = 3 },
+    { x = 32, y = 128, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 16, num_frames = 3 },
+    { x = 32, y = 128, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 16, num_frames = 3 },
+    { x = 32, y = 128, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 16, num_frames = 3 },
+  },
+}

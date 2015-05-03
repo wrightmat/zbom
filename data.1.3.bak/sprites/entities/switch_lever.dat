@@ -1,0 +1,21 @@
+animation{
+  name = "inactivated",
+  src_image = "entities/miscellaneous.png",
+  directions = {
+    { x = 128, y = 64, frame_width = 32, frame_height = 32, origin_x = 5, origin_y = 24 },
+  },
+}
+animation{
+  name = "activated",
+  src_image = "entities/miscellaneous.png",
+  directions = {
+    { x = 128, y = 0, frame_width = 32, frame_height = 32, origin_x = 24, origin_y = 5 },
+  },
+}
+animation{
+  name = "changing",
+  src_image = "entities/miscellaneous.png",
+  directions = {
+    { x = 128, y = 32, frame_width = 32, frame_height = 32, origin_x = 5, origin_y = 24 },
+  },
+}

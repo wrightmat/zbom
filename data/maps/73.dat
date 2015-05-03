@@ -5,7 +5,25 @@ properties{
   height = 1120,
   world = "outside_world",
   tileset = "3",
-  music = "gerudo",
+  music = "same",
+}
+
+tile{
+  layer = 0,
+  x = 984,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "272",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 56,
+  width = 96,
+  height = 8,
+  pattern = "259",
 }
 
 tile{
@@ -109,15 +127,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 984,
-  y = 56,
-  width = 16,
-  height = 16,
-  pattern = "272",
-}
-
-tile{
-  layer = 0,
   x = 856,
   y = 24,
   width = 16,
@@ -156,7 +165,7 @@ tile{
   layer = 0,
   x = 560,
   y = 80,
-  width = 328,
+  width = 336,
   height = 32,
   pattern = "295",
 }
@@ -2215,15 +2224,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 896,
-  y = 56,
-  width = 96,
-  height = 8,
-  pattern = "259",
-}
-
-tile{
-  layer = 0,
   x = 1056,
   y = 56,
   width = 64,
@@ -3210,6 +3210,15 @@ tile{
   width = 16,
   height = 16,
   pattern = "270",
+}
+
+tile{
+  layer = 0,
+  x = 848,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "1626",
 }
 
 teletransporter{

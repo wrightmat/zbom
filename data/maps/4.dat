@@ -6877,6 +6877,7 @@ teletransporter{
 }
 
 shop_treasure{
+  font = "la",
   layer = 0,
   x = 112,
   y = 112,
@@ -6889,6 +6890,7 @@ shop_treasure{
 }
 
 shop_treasure{
+  font = "la",
   layer = 0,
   x = 160,
   y = 112,
@@ -6907,17 +6909,17 @@ npc{
   direction = 3,
   subtype = "1",
   sprite = "npc/hylian_strap",
-  behavior = "dialog#shopkeep.0",
 }
 
 shop_treasure{
+  font = "la",
   layer = 0,
   x = 208,
   y = 112,
   name = "shop_potion_red",
-  treasure_name = "potion",
-  price = 100,
-  dialog = "shop.potion_red",
+  treasure_name = "pumpkin",
+  price = 250,
+  dialog = "shop.pumpkin",
 }
 
 destination{
@@ -6988,6 +6990,7 @@ npc{
 }
 
 shop_treasure{
+  font = "la",
   layer = 0,
   x = 88,
   y = 456,
@@ -6999,6 +7002,7 @@ shop_treasure{
 }
 
 shop_treasure{
+  font = "la",
   layer = 0,
   x = 184,
   y = 504,
@@ -7009,6 +7013,7 @@ shop_treasure{
 }
 
 shop_treasure{
+  font = "la",
   layer = 0,
   x = 216,
   y = 504,
@@ -7020,6 +7025,7 @@ shop_treasure{
 }
 
 shop_treasure{
+  font = "la",
   layer = 0,
   x = 248,
   y = 504,
@@ -7724,7 +7730,7 @@ npc{
   layer = 0,
   x = 1528,
   y = 157,
-  name = "npc_kakariko_7",
+  name = "npc_kakariko_2",
   direction = 3,
   subtype = "1",
   sprite = "npc/hylian_3",
@@ -7734,7 +7740,7 @@ npc{
   layer = 0,
   x = 1496,
   y = 509,
-  name = "npc_kakariko_8",
+  name = "npc_kakariko_3",
   direction = 3,
   subtype = "1",
   sprite = "npc/hylian_4",
@@ -7744,7 +7750,7 @@ npc{
   layer = 0,
   x = 1512,
   y = 893,
-  name = "npc_kakariko_9",
+  name = "npc_kakariko_4",
   direction = 3,
   subtype = "1",
   sprite = "npc/hylian_5",
@@ -7822,6 +7828,43 @@ destructible{
   treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
+}
+
+pickable{
+  layer = 0,
+  x = 192,
+  y = 85,
+  name = "bottle",
+  treasure_name = "bottle_1",
+}
+
+sensor{
+  layer = 0,
+  x = 192,
+  y = 77,
+  width = 32,
+  height = 32,
+  name = "sensor_bottle",
+}
+
+wall{
+  layer = 0,
+  x = 184,
+  y = 72,
+  width = 16,
+  height = 16,
+  name = "wall_bottle",
+  stops_hero = true,
+}
+
+npc{
+  layer = 1,
+  x = 168,
+  y = 69,
+  name = "quest_bottle",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/quest_bubble",
 }
 
 tile{

@@ -4,9 +4,63 @@ properties{
   width = 912,
   height = 800,
   world = "dungeon_7",
-  floor = 0,
+  floor = 2,
   tileset = "10",
   music = "temple_wind",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 688,
+  width = 16,
+  height = 80,
+  pattern = "137",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 664,
+  width = 8,
+  height = 32,
+  pattern = "278",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 600,
+  width = 16,
+  height = 80,
+  pattern = "6",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 440,
+  width = 352,
+  height = 304,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 64,
+  width = 352,
+  height = 304,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 440,
+  width = 352,
+  height = 304,
+  pattern = "22",
 }
 
 tile{
@@ -119,15 +173,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 64,
-  y = 440,
-  width = 352,
-  height = 304,
-  pattern = "22",
-}
-
-tile{
-  layer = 0,
   x = 400,
   y = 408,
   width = 16,
@@ -335,24 +380,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 32,
-  y = 688,
-  width = 16,
-  height = 80,
-  pattern = "137",
-}
-
-tile{
-  layer = 0,
-  x = 32,
-  y = 664,
-  width = 8,
-  height = 32,
-  pattern = "278",
-}
-
-tile{
-  layer = 0,
   x = 40,
   y = 672,
   width = 8,
@@ -444,9 +471,9 @@ tile{
 tile{
   layer = 0,
   x = 32,
-  y = 496,
+  y = 504,
   width = 16,
-  height = 192,
+  height = 80,
   pattern = "6",
 }
 
@@ -466,15 +493,6 @@ tile{
   width = 8,
   height = 192,
   pattern = "17",
-}
-
-tile{
-  layer = 0,
-  x = 112,
-  y = 736,
-  width = 256,
-  height = 8,
-  pattern = "66",
 }
 
 tile{
@@ -1029,24 +1047,6 @@ tile{
 tile{
   layer = 0,
   x = 112,
-  y = 736,
-  width = 16,
-  height = 32,
-  pattern = "48",
-}
-
-tile{
-  layer = 0,
-  x = 352,
-  y = 736,
-  width = 16,
-  height = 32,
-  pattern = "48",
-}
-
-tile{
-  layer = 0,
-  x = 112,
   y = 408,
   width = 16,
   height = 32,
@@ -1114,15 +1114,6 @@ tile{
   width = 32,
   height = 80,
   pattern = "137",
-}
-
-tile{
-  layer = 0,
-  x = 496,
-  y = 440,
-  width = 352,
-  height = 304,
-  pattern = "22",
 }
 
 tile{
@@ -2108,15 +2099,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 64,
-  y = 64,
-  width = 352,
-  height = 304,
-  pattern = "22",
-}
-
-tile{
-  layer = 0,
   x = 400,
   y = 32,
   width = 16,
@@ -2446,15 +2428,6 @@ tile{
   width = 8,
   height = 192,
   pattern = "17",
-}
-
-tile{
-  layer = 0,
-  x = 112,
-  y = 360,
-  width = 256,
-  height = 8,
-  pattern = "66",
 }
 
 tile{
@@ -4196,42 +4169,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 32,
-  y = 0,
-  width = 848,
-  height = 32,
-  pattern = "137",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 0,
-  width = 32,
-  height = 800,
-  pattern = "137",
-}
-
-tile{
-  layer = 0,
-  x = 32,
-  y = 768,
-  width = 848,
-  height = 32,
-  pattern = "137",
-}
-
-tile{
-  layer = 0,
-  x = 880,
-  y = 0,
-  width = 32,
-  height = 800,
-  pattern = "137",
-}
-
-tile{
-  layer = 0,
   x = 624,
   y = 736,
   width = 16,
@@ -4401,6 +4338,178 @@ tile{
   pattern = "106",
 }
 
+tile{
+  layer = 0,
+  x = 112,
+  y = 736,
+  width = 256,
+  height = 8,
+  pattern = "66",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 736,
+  width = 16,
+  height = 32,
+  pattern = "48",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 736,
+  width = 16,
+  height = 32,
+  pattern = "48",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "482",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 240,
+  width = 16,
+  height = 64,
+  pattern = "525",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 520,
+  width = 8,
+  height = 8,
+  pattern = "104",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 520,
+  width = 32,
+  height = 8,
+  pattern = "105",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 520,
+  width = 8,
+  height = 8,
+  pattern = "104",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 520,
+  width = 16,
+  height = 16,
+  pattern = "520",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 520,
+  width = 16,
+  height = 16,
+  pattern = "520",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "606",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 192,
+  width = 16,
+  height = 32,
+  pattern = "525",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 192,
+  width = 16,
+  height = 32,
+  pattern = "525",
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 320,
+  y = 224,
+  width = 48,
+  height = 144,
+  name = "lava_9",
+  pattern = "605",
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 112,
+  y = 360,
+  width = 256,
+  height = 8,
+  name = "tile",
+  pattern = "66",
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 608,
+  y = 552,
+  width = 32,
+  height = 176,
+  name = "lava_15",
+  pattern = "605",
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 320,
+  y = 600,
+  width = 32,
+  height = 128,
+  name = "lava_7",
+  pattern = "605",
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 320,
+  y = 440,
+  width = 48,
+  height = 96,
+  name = "lava_3",
+  pattern = "605",
+  enabled_at_start = true,
+}
+
 enemy{
   layer = 0,
   x = 248,
@@ -4412,8 +4521,8 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 200,
-  y = 221,
+  x = 224,
+  y = 253,
   name = "chuchu_1",
   direction = 3,
   breed = "chuchu_red",
@@ -4430,8 +4539,8 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 328,
-  y = 229,
+  x = 336,
+  y = 117,
   name = "chuchu_3",
   direction = 3,
   breed = "chuchu_red",
@@ -4448,7 +4557,7 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 304,
+  x = 280,
   y = 325,
   name = "chuchu_5",
   direction = 3,
@@ -4457,8 +4566,8 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 296,
-  y = 125,
+  x = 248,
+  y = 141,
   name = "chuchu_6",
   direction = 3,
   breed = "chuchu_red",
@@ -4574,7 +4683,7 @@ enemy{
 
 teletransporter{
   layer = 0,
-  x = 40,
+  x = 24,
   y = 584,
   width = 16,
   height = 16,
@@ -4602,12 +4711,375 @@ destination{
 
 teletransporter{
   layer = 0,
-  x = 472,
+  x = 456,
   y = 584,
   width = 16,
   height = 16,
   name = "to_floor_4",
   destination_map = "213",
+}
+
+npc{
+  layer = 0,
+  x = 304,
+  y = 429,
+  name = "hint",
+  direction = 3,
+  subtype = "0",
+  behavior = "dialog#hint_stone.tower.3",
+}
+
+destructible{
+  layer = 0,
+  x = 72,
+  y = 253,
+  treasure_name = "magic_flask",
+  treasure_variant = 2,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 72,
+  y = 269,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 72,
+  y = 285,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 72,
+  y = 301,
+  treasure_name = "heart",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+door{
+  layer = 0,
+  x = 472,
+  y = 584,
+  name = "door_shutter",
+  direction = 2,
+  sprite = "entities/door_shutter",
+  savegame_variable = "b1177",
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 576,
+  y = 520,
+  width = 8,
+  height = 8,
+  name = "barrier_1",
+  pattern = "104",
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 584,
+  y = 520,
+  width = 256,
+  height = 8,
+  name = "barrier_2",
+  pattern = "105",
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 840,
+  y = 520,
+  width = 8,
+  height = 8,
+  name = "barrier_3",
+  pattern = "104",
+  enabled_at_start = true,
+}
+
+switch{
+  layer = 0,
+  x = 544,
+  y = 456,
+  name = "switch_puzzle_1",
+  subtype = "walkable",
+  sprite = "entities/switch",
+  sound = "switch",
+  needs_block = true,
+  inactivate_when_leaving = true,
+}
+
+switch{
+  layer = 0,
+  x = 768,
+  y = 696,
+  name = "switch_puzzle_2",
+  subtype = "walkable",
+  sprite = "entities/switch",
+  sound = "switch",
+  needs_block = true,
+  inactivate_when_leaving = true,
+}
+
+enemy{
+  layer = 0,
+  x = 680,
+  y = 717,
+  name = "hardhat",
+  direction = 3,
+  breed = "hardhat_beetle_red",
+}
+
+enemy{
+  layer = 0,
+  x = 744,
+  y = 469,
+  name = "hardhat_2",
+  direction = 3,
+  breed = "hardhat_beetle_red",
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 64,
+  y = 536,
+  width = 64,
+  height = 32,
+  name = "lava_1",
+  pattern = "605",
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 64,
+  y = 648,
+  width = 176,
+  height = 32,
+  name = "lava",
+  pattern = "605",
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 160,
+  y = 440,
+  width = 32,
+  height = 96,
+  name = "lava_2",
+  pattern = "605",
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 368,
+  y = 456,
+  width = 16,
+  height = 80,
+  name = "lava_4",
+  pattern = "605",
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 384,
+  y = 472,
+  width = 16,
+  height = 64,
+  name = "lava_5",
+  pattern = "605",
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 400,
+  y = 488,
+  width = 16,
+  height = 48,
+  name = "lava_6",
+  pattern = "605",
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 64,
+  y = 176,
+  width = 304,
+  height = 48,
+  name = "lava_8",
+  pattern = "605",
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 576,
+  y = 440,
+  width = 32,
+  height = 80,
+  name = "lava_10",
+  pattern = "605",
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 496,
+  y = 504,
+  width = 80,
+  height = 16,
+  name = "lava_11",
+  pattern = "605",
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 544,
+  y = 536,
+  width = 32,
+  height = 160,
+  name = "lava_13",
+  pattern = "605",
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 496,
+  y = 664,
+  width = 48,
+  height = 32,
+  name = "lava_14",
+  pattern = "605",
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 640,
+  y = 552,
+  width = 208,
+  height = 128,
+  name = "lava_16",
+  pattern = "605",
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 608,
+  y = 488,
+  width = 240,
+  height = 32,
+  name = "lava_12",
+  pattern = "605",
+  enabled_at_start = true,
+}
+
+block{
+  layer = 0,
+  x = 536,
+  y = 485,
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = true,
+  maximum_moves = 2,
+}
+
+block{
+  layer = 0,
+  x = 568,
+  y = 709,
+  direction = -1,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = true,
+  maximum_moves = 2,
+}
+
+enemy{
+  layer = 0,
+  x = 608,
+  y = 309,
+  name = "dodongo_2",
+  direction = 3,
+  breed = "dodongo",
+}
+
+enemy{
+  layer = 0,
+  x = 608,
+  y = 117,
+  name = "dodongo_3",
+  direction = 3,
+  breed = "dodongo",
+}
+
+destructible{
+  layer = 0,
+  x = 648,
+  y = 205,
+  treasure_name = "bomb",
+  treasure_variant = 2,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 696,
+  y = 221,
+  treasure_name = "bomb",
+  treasure_variant = 2,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 648,
+  y = 221,
+  treasure_name = "heart",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 696,
+  y = 205,
+  treasure_name = "heart",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+chest{
+  layer = 0,
+  x = 680,
+  y = 157,
+  name = "chest_big_key",
+  treasure_name = "big_key",
+  treasure_savegame_variable = "b1162",
+  sprite = "entities/chest",
 }
 
 tile{
@@ -4742,6 +5214,42 @@ tile{
   y = 392,
   width = 416,
   height = 16,
+  pattern = "137",
+}
+
+tile{
+  layer = 2,
+  x = 0,
+  y = 0,
+  width = 32,
+  height = 800,
+  pattern = "137",
+}
+
+tile{
+  layer = 2,
+  x = 32,
+  y = 768,
+  width = 848,
+  height = 32,
+  pattern = "137",
+}
+
+tile{
+  layer = 2,
+  x = 32,
+  y = 0,
+  width = 848,
+  height = 32,
+  pattern = "137",
+}
+
+tile{
+  layer = 2,
+  x = 880,
+  y = 0,
+  width = 32,
+  height = 800,
   pattern = "137",
 }
 

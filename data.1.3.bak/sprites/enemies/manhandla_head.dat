@@ -1,0 +1,44 @@
+animation{
+  name = "walking",
+  src_image = "enemies/manhandla.png",
+  frame_delay = 200,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 17, num_frames = 3 },
+    { x = 0, y = 72, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 17, num_frames = 3 },
+    { x = 0, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 17, num_frames = 3 },
+    { x = 0, y = 96, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 17, num_frames = 3 },
+  },
+}
+animation{
+  name = "hurt",
+  src_image = "enemies/manhandla.png",
+  directions = {
+    { x = 72, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 17 },
+    { x = 72, y = 72, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 17 },
+    { x = 72, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 17 },
+    { x = 72, y = 96, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 17 },
+  },
+}
+animation{
+  name = "immobilized",
+  src_image = "enemies/manhandla.png",
+  directions = {
+    { x = 0, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 17 },
+    { x = 0, y = 72, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 17 },
+    { x = 0, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 17 },
+    { x = 0, y = 96, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 17 },
+  },
+}
+animation{
+  name = "shaking",
+  src_image = "enemies/manhandla.png",
+  frame_delay = 100,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 24, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 17, num_frames = 2 },
+    { x = 24, y = 72, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 17, num_frames = 2 },
+    { x = 24, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 17, num_frames = 2 },
+    { x = 24, y = 96, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 17, num_frames = 2 },
+  },
+}

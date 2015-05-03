@@ -5,7 +5,7 @@ properties{
   height = 1120,
   world = "outside_world",
   tileset = "3",
-  music = "same",
+  music = "graveyard",
 }
 
 tile{
@@ -1783,96 +1783,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 280,
-  y = 392,
-  width = 16,
-  height = 16,
-  pattern = "1798",
-}
-
-tile{
-  layer = 0,
-  x = 328,
-  y = 392,
-  width = 16,
-  height = 16,
-  pattern = "1798",
-}
-
-tile{
-  layer = 0,
-  x = 384,
-  y = 176,
-  width = 16,
-  height = 16,
-  pattern = "1798",
-}
-
-tile{
-  layer = 0,
-  x = 432,
-  y = 176,
-  width = 16,
-  height = 16,
-  pattern = "1798",
-}
-
-tile{
-  layer = 0,
-  x = 704,
-  y = 216,
-  width = 16,
-  height = 16,
-  pattern = "1798",
-}
-
-tile{
-  layer = 0,
-  x = 752,
-  y = 216,
-  width = 16,
-  height = 16,
-  pattern = "1798",
-}
-
-tile{
-  layer = 0,
-  x = 960,
-  y = 432,
-  width = 16,
-  height = 16,
-  pattern = "1798",
-}
-
-tile{
-  layer = 0,
-  x = 1008,
-  y = 432,
-  width = 16,
-  height = 16,
-  pattern = "1798",
-}
-
-tile{
-  layer = 0,
-  x = 912,
-  y = 864,
-  width = 16,
-  height = 16,
-  pattern = "1798",
-}
-
-tile{
-  layer = 0,
-  x = 960,
-  y = 864,
-  width = 16,
-  height = 16,
-  pattern = "1798",
-}
-
-tile{
-  layer = 0,
   x = 736,
   y = 512,
   width = 32,
@@ -2018,7 +1928,7 @@ tile{
 tile{
   layer = 0,
   x = 808,
-  y = 136,
+  y = 128,
   width = 16,
   height = 16,
   pattern = "1793",
@@ -2348,6 +2258,15 @@ tile{
   pattern = "1802",
 }
 
+tile{
+  layer = 0,
+  x = 248,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "1450",
+}
+
 teletransporter{
   layer = 0,
   x = -16,
@@ -2506,6 +2425,311 @@ npc{
   direction = 3,
   subtype = "0",
   sprite = "entities/fire_small",
+}
+
+npc{
+  layer = 0,
+  x = 288,
+  y = 405,
+  name = "torch_grave1_1",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/torch_candle",
+}
+
+npc{
+  layer = 0,
+  x = 640,
+  y = 485,
+  name = "flame_king_1",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/fire_small",
+}
+
+npc{
+  layer = 0,
+  x = 656,
+  y = 485,
+  name = "flame_king_2",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/fire_small",
+}
+
+npc{
+  layer = 0,
+  x = 672,
+  y = 485,
+  name = "flame_king_3",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/fire_small",
+}
+
+npc{
+  layer = 0,
+  x = 688,
+  y = 485,
+  name = "flame_king_4",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/fire_small",
+}
+
+npc{
+  layer = 0,
+  x = 704,
+  y = 485,
+  name = "flame_king_5",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/fire_small",
+}
+
+npc{
+  layer = 0,
+  x = 864,
+  y = 485,
+  name = "flame_king_6",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/fire_small",
+}
+
+npc{
+  layer = 0,
+  x = 848,
+  y = 485,
+  name = "flame_king_7",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/fire_small",
+}
+
+npc{
+  layer = 0,
+  x = 832,
+  y = 485,
+  name = "flame_king_8",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/fire_small",
+}
+
+npc{
+  layer = 0,
+  x = 816,
+  y = 485,
+  name = "flame_king_9",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/fire_small",
+}
+
+npc{
+  layer = 0,
+  x = 800,
+  y = 485,
+  name = "flame_king_10",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/fire_small",
+}
+
+npc{
+  layer = 0,
+  x = 256,
+  y = 117,
+  name = "sign",
+  direction = 3,
+  subtype = "1",
+  sprite = "entities/sign",
+  behavior = "dialog#sign.kings_tomb",
+}
+
+npc{
+  layer = 0,
+  x = 336,
+  y = 405,
+  name = "torch_grave1_2",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/torch_candle",
+}
+
+npc{
+  layer = 0,
+  x = 392,
+  y = 189,
+  name = "torch_grave2_1",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/torch_candle",
+}
+
+npc{
+  layer = 0,
+  x = 440,
+  y = 189,
+  name = "torch_grave2_2",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/torch_candle",
+}
+
+npc{
+  layer = 0,
+  x = 712,
+  y = 229,
+  name = "torch_grave3_1",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/torch_candle",
+}
+
+npc{
+  layer = 0,
+  x = 760,
+  y = 229,
+  name = "torch_grave3_2",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/torch_candle",
+}
+
+npc{
+  layer = 0,
+  x = 968,
+  y = 445,
+  name = "torch_grave4_1",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/torch_candle",
+}
+
+npc{
+  layer = 0,
+  x = 1016,
+  y = 445,
+  name = "torch_grave4_2",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/torch_candle",
+}
+
+npc{
+  layer = 0,
+  x = 920,
+  y = 877,
+  name = "torch_grave5_1",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/torch_candle",
+}
+
+npc{
+  layer = 0,
+  x = 968,
+  y = 877,
+  name = "torch_grave5_2",
+  direction = 3,
+  subtype = "0",
+  sprite = "entities/torch_candle",
+}
+
+npc{
+  layer = 0,
+  x = 312,
+  y = 405,
+  name = "grave_1",
+  direction = 3,
+  subtype = "0",
+  behavior = "dialog#grave_1.kings_tomb",
+}
+
+npc{
+  layer = 0,
+  x = 416,
+  y = 189,
+  name = "grave_2",
+  direction = 3,
+  subtype = "0",
+  behavior = "dialog#grave_2.kings_tomb",
+}
+
+npc{
+  layer = 0,
+  x = 736,
+  y = 229,
+  name = "grave_3",
+  direction = 3,
+  subtype = "0",
+  behavior = "dialog#grave_3.kings_tomb",
+}
+
+npc{
+  layer = 0,
+  x = 992,
+  y = 445,
+  name = "grave_4",
+  direction = 3,
+  subtype = "0",
+  behavior = "dialog#grave_4.kings_tomb",
+}
+
+npc{
+  layer = 0,
+  x = 944,
+  y = 877,
+  name = "grave_5",
+  direction = 3,
+  subtype = "0",
+  behavior = "dialog#grave_5.kings_tomb",
+}
+
+npc{
+  layer = 0,
+  x = 752,
+  y = 509,
+  name = "grave_big",
+  direction = 3,
+  subtype = "0",
+  behavior = "dialog#grave_big.kings_tomb",
+}
+
+teletransporter{
+  layer = 0,
+  x = 744,
+  y = 424,
+  width = 16,
+  height = 16,
+  name = "hole",
+  sprite = "entities/teletransporter_hole",
+  sound = "hero_falls",
+  destination_map = "111",
+  destination = "from_hole",
+}
+
+teletransporter{
+  layer = 0,
+  x = 0,
+  y = -16,
+  width = 1120,
+  height = 16,
+  name = "to_G3",
+  transition = "scrolling",
+  destination_map = "110",
+  destination = "_side",
+}
+
+destination{
+  layer = 0,
+  x = 752,
+  y = 421,
+  name = "from_hole",
+  direction = 3,
+  default = true,
 }
 
 tile{

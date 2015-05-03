@@ -1424,3 +1424,15 @@ teletransporter{
   destination = "_side",
 }
 
+teletransporter{
+  layer = 0,
+  x = 48,
+  y = -16,
+  width = 1072,
+  height = 16,
+  name = "to_K2",
+  transition = "scrolling",
+  destination_map = "125",
+  destination = "_side",
+}
+

@@ -1,0 +1,34 @@
+animation{
+  name = "ground",
+  src_image = "entities/fireworks.png",
+  frame_delay = 100,
+  directions = {
+    { x = 0, y = 64, frame_width = 32, frame_height = 64, origin_x = 16, origin_y = 61, num_frames = 7 },
+  },
+}
+
+animation{
+  name = "air_small",
+  src_image = "entities/fireworks.png",
+  frame_delay = 100,
+  directions = {
+    { x = 224, y = 64, frame_width = 32, frame_height = 64, origin_x = 16, origin_y = 61, num_frames = 3 },
+  },
+}
+
+animation{
+  name = "air_large",
+  src_image = "entities/fireworks.png",
+  frame_delay = 100,
+  directions = {
+    { x = 320, y = 64, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 61, num_frames = 6 },
+  },
+}
+
+animation{
+  name = "stopped",
+  src_image = "entities/fireworks.png",
+  directions = {
+    { x = 0, y = 64, frame_width = 32, frame_height = 64, origin_x = 16, origin_y = 61 },
+  },
+}

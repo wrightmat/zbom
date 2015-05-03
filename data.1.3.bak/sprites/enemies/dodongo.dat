@@ -1,0 +1,43 @@
+animation{
+  name = "walking",
+  src_image = "enemies/dodongo.png",
+  frame_delay = 200,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 3 },
+    { x = 0, y = 48, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 3 },
+    { x = 0, y = 96, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 3 },
+    { x = 0, y = 144, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 3 },
+  },
+}
+animation{
+  name = "hurt",
+  src_image = "enemies/dodongo.png",
+  directions = {
+    { x = 240, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29 },
+    { x = 240, y = 48, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29 },
+    { x = 240, y = 96, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29 },
+    { x = 240, y = 144, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29 },
+  },
+}
+animation{
+  name = "immobilized",
+  src_image = "enemies/dodongo.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29 },
+    { x = 0, y = 48, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29 },
+    { x = 0, y = 96, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29 },
+    { x = 0, y = 144, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29 },
+  },
+}
+animation{
+  name = "shaking",
+  src_image = "enemies/dodongo.png",
+  frame_delay = 300,
+  directions = {
+    { x = 144, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 2 },
+    { x = 144, y = 48, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 2 },
+    { x = 144, y = 96, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 2 },
+    { x = 144, y = 144, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 2 },
+  },
+}

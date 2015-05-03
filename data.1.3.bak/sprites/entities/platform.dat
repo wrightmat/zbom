@@ -1,0 +1,10 @@
+animation{
+  name = "platform",
+  src_image = "tileset",
+  directions = {
+    { x = 224, y = 16, frame_width = 32, frame_height = 32, origin_x = 20, origin_y = 20 },
+    { x = 256, y = 16, frame_width = 32, frame_height = 32, origin_x = 20, origin_y = 20 },
+    { x = 224, y = 16, frame_width = 32, frame_height = 32, origin_x = 20, origin_y = 20 },
+    { x = 256, y = 16, frame_width = 32, frame_height = 32, origin_x = 20, origin_y = 20 },
+  },
+}

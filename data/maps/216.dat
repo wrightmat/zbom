@@ -4,9 +4,18 @@ properties{
   width = 912,
   height = 800,
   world = "dungeon_7",
-  floor = 0,
+  floor = 6,
   tileset = "10",
   music = "temple_wind",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 752,
+  width = 96,
+  height = 16,
+  pattern = "8",
 }
 
 tile{
@@ -419,7 +428,7 @@ tile{
   x = 32,
   y = 496,
   width = 16,
-  height = 192,
+  height = 80,
   pattern = "6",
 }
 
@@ -1336,7 +1345,7 @@ tile{
   layer = 0,
   x = 544,
   y = 752,
-  width = 256,
+  width = 112,
   height = 16,
   pattern = "8",
 }
@@ -1418,7 +1427,7 @@ tile{
   x = 464,
   y = 496,
   width = 16,
-  height = 80,
+  height = 176,
   pattern = "6",
 }
 
@@ -1436,7 +1445,7 @@ tile{
   x = 480,
   y = 496,
   width = 8,
-  height = 80,
+  height = 176,
   pattern = "17",
 }
 
@@ -3380,7 +3389,7 @@ tile{
   x = 464,
   y = 120,
   width = 16,
-  height = 192,
+  height = 80,
   pattern = "6",
 }
 
@@ -4142,119 +4151,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 472,
-  y = 584,
-  width = 16,
-  height = 16,
-  pattern = "166",
-}
-
-tile{
-  layer = 0,
-  x = 472,
-  y = 576,
-  width = 16,
-  height = 8,
-  pattern = "164",
-}
-
-tile{
-  layer = 0,
-  x = 472,
-  y = 600,
-  width = 16,
-  height = 8,
-  pattern = "165",
-}
-
-tile{
-  layer = 0,
-  x = 464,
-  y = 608,
-  width = 16,
-  height = 80,
-  pattern = "6",
-}
-
-tile{
-  layer = 0,
-  x = 480,
-  y = 608,
-  width = 8,
-  height = 80,
-  pattern = "17",
-}
-
-tile{
-  layer = 0,
   x = 464,
   y = 672,
   width = 32,
   height = 16,
   pattern = "50",
-}
-
-tile{
-  layer = 0,
-  x = 32,
-  y = 0,
-  width = 848,
-  height = 32,
-  pattern = "137",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 0,
-  width = 32,
-  height = 800,
-  pattern = "137",
-}
-
-tile{
-  layer = 0,
-  x = 32,
-  y = 392,
-  width = 416,
-  height = 16,
-  pattern = "137",
-}
-
-tile{
-  layer = 0,
-  x = 32,
-  y = 768,
-  width = 848,
-  height = 32,
-  pattern = "137",
-}
-
-tile{
-  layer = 0,
-  x = 448,
-  y = 32,
-  width = 16,
-  height = 736,
-  pattern = "137",
-}
-
-tile{
-  layer = 0,
-  x = 464,
-  y = 392,
-  width = 416,
-  height = 16,
-  pattern = "137",
-}
-
-tile{
-  layer = 0,
-  x = 880,
-  y = 0,
-  width = 32,
-  height = 800,
-  pattern = "137",
 }
 
 tile{
@@ -8605,6 +8506,172 @@ tile{
 }
 
 tile{
+  layer = 0,
+  x = 664,
+  y = 744,
+  width = 16,
+  height = 16,
+  pattern = "158",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 744,
+  width = 8,
+  height = 16,
+  pattern = "159",
+}
+
+tile{
+  layer = 0,
+  x = 680,
+  y = 744,
+  width = 8,
+  height = 16,
+  pattern = "161",
+}
+
+tile{
+  layer = 0,
+  x = 664,
+  y = 744,
+  width = 16,
+  height = 16,
+  pattern = "580",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 384,
+  width = 8,
+  height = 32,
+  pattern = "106",
+}
+
+tile{
+  layer = 0,
+  x = 680,
+  y = 384,
+  width = 8,
+  height = 32,
+  pattern = "106",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 200,
+  width = 32,
+  height = 8,
+  pattern = "105",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 232,
+  width = 16,
+  height = 64,
+  pattern = "6",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 224,
+  width = 32,
+  height = 8,
+  pattern = "105",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 384,
+  width = 8,
+  height = 32,
+  pattern = "106",
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 384,
+  width = 8,
+  height = 32,
+  pattern = "106",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 608,
+  width = 16,
+  height = 64,
+  pattern = "6",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 584,
+  width = 16,
+  height = 16,
+  pattern = "584",
+}
+
+destination{
+  layer = 0,
+  x = 672,
+  y = 741,
+  name = "from_below",
+  direction = 3,
+}
+
+teletransporter{
+  layer = 0,
+  x = 664,
+  y = 760,
+  width = 16,
+  height = 16,
+  name = "to_below",
+  destination_map = "215",
+  destination = "from_above",
+}
+
+chest{
+  layer = 0,
+  x = 680,
+  y = 269,
+  name = "chest_map",
+  treasure_name = "map",
+  treasure_savegame_variable = "b1161",
+  sprite = "entities/chest",
+}
+
+destination{
+  layer = 0,
+  x = 64,
+  y = 597,
+  name = "from_above",
+  direction = 0,
+  default = true,
+}
+
+teletransporter{
+  layer = 0,
+  x = 24,
+  y = 584,
+  width = 16,
+  height = 16,
+  name = "to_above",
+  destination_map = "217",
+  destination = "from_below",
+}
+
+tile{
   layer = 2,
   x = 224,
   y = 408,
@@ -8656,15 +8723,6 @@ tile{
   width = 32,
   height = 8,
   pattern = "160",
-}
-
-tile{
-  layer = 2,
-  x = 464,
-  y = 576,
-  width = 8,
-  height = 32,
-  pattern = "163",
 }
 
 tile{
@@ -8773,5 +8831,95 @@ tile{
   width = 16,
   height = 16,
   pattern = "557",
+}
+
+tile{
+  layer = 2,
+  x = 656,
+  y = 760,
+  width = 32,
+  height = 8,
+  pattern = "160",
+}
+
+tile{
+  layer = 2,
+  x = 664,
+  y = 760,
+  width = 16,
+  height = 8,
+  pattern = "568",
+}
+
+tile{
+  layer = 2,
+  x = 32,
+  y = 768,
+  width = 848,
+  height = 32,
+  pattern = "137",
+}
+
+tile{
+  layer = 2,
+  x = 880,
+  y = 0,
+  width = 32,
+  height = 800,
+  pattern = "137",
+}
+
+tile{
+  layer = 2,
+  x = 32,
+  y = 0,
+  width = 848,
+  height = 32,
+  pattern = "137",
+}
+
+tile{
+  layer = 2,
+  x = 448,
+  y = 32,
+  width = 16,
+  height = 736,
+  pattern = "137",
+}
+
+tile{
+  layer = 2,
+  x = 464,
+  y = 392,
+  width = 416,
+  height = 16,
+  pattern = "137",
+}
+
+tile{
+  layer = 2,
+  x = 32,
+  y = 392,
+  width = 416,
+  height = 16,
+  pattern = "137",
+}
+
+tile{
+  layer = 2,
+  x = 0,
+  y = 0,
+  width = 32,
+  height = 800,
+  pattern = "137",
+}
+
+tile{
+  layer = 2,
+  x = 32,
+  y = 584,
+  width = 8,
+  height = 16,
+  pattern = "571",
 }
 

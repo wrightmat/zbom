@@ -3158,3 +3158,27 @@ teletransporter{
   destination = "_side",
 }
 
+teletransporter{
+  layer = 0,
+  x = 848,
+  y = 1120,
+  width = 272,
+  height = 16,
+  name = "to_O2_water",
+  transition = "scrolling",
+  destination_map = "147",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 32,
+  name = "to_N1_water",
+  transition = "scrolling",
+  destination_map = "140",
+  destination = "_side",
+}
+

@@ -1,0 +1,34 @@
+animation{
+  name = "stopped",
+  src_image = "npc/hylian.png",
+  directions = {
+    { x = 192, y = 96, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
+    { x = 192, y = 128, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
+    { x = 240, y = 96, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
+    { x = 192, y = 160, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
+  },
+}
+animation{
+  name = "jumping",
+  src_image = "npc/hylian.png",
+  frame_delay = 125,
+  frame_to_loop_on = 1,
+  directions = {
+    { x = 192, y = 192, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 2 },
+    { x = 192, y = 192, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 2 },
+    { x = 240, y = 192, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 2 },
+    { x = 240, y = 192, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 2 },
+  },
+}
+animation{
+  name = "walking",
+  src_image = "npc/hylian.png",
+  frame_delay = 125,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 192, y = 96, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 2 },
+    { x = 192, y = 128, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 2 },
+    { x = 240, y = 96, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 2 },
+    { x = 192, y = 160, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 4 },
+  },
+}

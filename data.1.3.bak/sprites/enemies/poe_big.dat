@@ -1,0 +1,46 @@
+animation{
+  name = "walking",
+  src_image = "enemies/poe.png",
+  frame_delay = 200,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 128, y = 40, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 21, num_frames = 4 },
+    { x = 0, y = 0, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 21, num_frames = 4 },
+    { x = 128, y = 0, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 21, num_frames = 4 },
+    { x = 0, y = 40, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 21, num_frames = 4 },
+  },
+}
+animation{
+  name = "hurt",
+  src_image = "enemies/poe.png",
+  frame_delay = 50,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 224, y = 80, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 21 },
+    { x = 160, y = 80, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 21 },
+    { x = 192, y = 80, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 21 },
+    { x = 128, y = 80, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 21 },
+  },
+}
+animation{
+  name = "immobilized",
+  src_image = "enemies/poe.png",
+  directions = {
+    { x = 128, y = 40, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 21 },
+    { x = 0, y = 0, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 21 },
+    { x = 128, y = 0, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 21 },
+    { x = 0, y = 40, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 21 },
+  },
+}
+animation{
+  name = "shaking",
+  src_image = "enemies/poe.png",
+  frame_delay = 50,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 224, y = 80, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 21 },
+    { x = 160, y = 80, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 21 },
+    { x = 192, y = 80, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 21 },
+    { x = 128, y = 80, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 21 },
+  },
+}

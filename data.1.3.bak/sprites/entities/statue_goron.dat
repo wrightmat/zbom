@@ -1,0 +1,10 @@
+animation{
+  name = "statue",
+  src_image = "entities/quest_entities.png",
+  directions = {
+    { x = 96, y = 48, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 28 },
+    { x = 96, y = 48, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 28 },
+    { x = 96, y = 48, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 28 },
+    { x = 96, y = 48, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 28 },
+  },
+}

@@ -1,0 +1,46 @@
+animation{
+  name = "walking",
+  src_image = "enemies/mothulita.png",
+  frame_delay = 150,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8, num_frames = 2 },
+    { x = 0, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8, num_frames = 2 },
+    { x = 0, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8, num_frames = 2 },
+    { x = 0, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8, num_frames = 2 },
+  },
+}
+animation{
+  name = "hurt",
+  src_image = "enemies/mothulita.png",
+  frame_delay = 50,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
+    { x = 0, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
+    { x = 0, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
+    { x = 16, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
+  },
+}
+animation{
+  name = "immobilized",
+  src_image = "enemies/mothulita.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
+    { x = 0, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
+    { x = 0, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
+    { x = 16, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
+  },
+}
+animation{
+  name = "shaking",
+  src_image = "enemies/mothulita.png",
+  frame_delay = 100,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 16, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8, num_frames = 2, num_columns = 1 },
+    { x = 16, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8, num_frames = 2, num_columns = 1 },
+    { x = 16, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8, num_frames = 2, num_columns = 1 },
+    { x = 16, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8, num_frames = 2, num_columns = 1 },
+  },
+}

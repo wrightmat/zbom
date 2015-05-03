@@ -3,21 +3,12 @@ properties{
   y = 0,
   width = 336,
   height = 320,
-  world = "outside_world",
-  tileset = "8",
+  world = "test_world",
+  tileset = "10",
 }
 
 tile{
   layer = 0,
-  x = 0,
-  y = 128,
-  width = 336,
-  height = 48,
-  pattern = "701",
-}
-
-tile{
-  layer = 1,
   x = 0,
   y = 0,
   width = 336,
@@ -26,28 +17,34 @@ tile{
 }
 
 tile{
-  layer = 1,
+  layer = 0,
   x = 0,
-  y = 176,
+  y = 208,
   width = 336,
-  height = 144,
+  height = 112,
   pattern = "22",
 }
 
-custom_entity{
-  layer = 1,
-  x = 76,
-  y = 148,
-  width = 16,
-  height = 16,
-  name = "platform_moving",
-  direction = 3,
-  sprite = "entities/platform",
-  model = "platform",
+tile{
+  layer = 0,
+  x = 0,
+  y = 128,
+  width = 64,
+  height = 80,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 128,
+  width = 64,
+  height = 80,
+  pattern = "22",
 }
 
 destination{
-  layer = 1,
+  layer = 0,
   x = 32,
   y = 45,
   name = "start_position",
@@ -55,44 +52,50 @@ destination{
   default = true,
 }
 
-wall{
-  layer = 1,
-  x = 48,
+pickable{
+  layer = 0,
+  x = 64,
+  y = 45,
+  treasure_name = "cane",
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 64,
+  y = 128,
+  width = 208,
+  height = 80,
+  name = "lava",
+  pattern = "605",
+  enabled_at_start = true,
+}
+
+switch{
+  layer = 0,
+  x = 240,
+  y = 48,
+  name = "switch",
+  subtype = "walkable",
+  sprite = "entities/switch",
+  needs_block = false,
+  inactivate_when_leaving = true,
+}
+
+pickable{
+  layer = 0,
+  x = 80,
+  y = 53,
+  treasure_name = "lamp",
+}
+
+switch{
+  layer = 0,
+  x = 160,
   y = 96,
-  width = 48,
-  height = 16,
-  stops_npcs = true,
-}
-
-wall{
-  layer = 1,
-  x = 48,
-  y = 192,
-  width = 48,
-  height = 16,
-  stops_enemies = true,
-  stops_npcs = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-jumper{
-  layer = 1,
-  x = 56,
-  y = 120,
-  width = 32,
-  height = 8,
-  direction = 6,
-  jump_length = 40,
-}
-
-jumper{
-  layer = 1,
-  x = 56,
-  y = 176,
-  width = 32,
-  height = 8,
-  direction = 2,
-  jump_length = 40,
+  name = "switch_2",
+  subtype = "walkable",
+  sprite = "entities/switch",
+  needs_block = false,
+  inactivate_when_leaving = true,
 }
 

@@ -1,0 +1,27 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 320,
+  height = 240,
+  world = "outside_world",
+  tileset = "0",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 320,
+  height = 240,
+  pattern = 480,
+}
+
+destination{
+  layer = 0,
+  x = 24,
+  y = 29,
+  name = "start_position",
+  direction = 3,
+  default = true,
+}
+

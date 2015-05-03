@@ -2489,6 +2489,39 @@ teletransporter{
   destination = "_side",
 }
 
+teletransporter{
+  layer = 0,
+  x = 0,
+  y = -16,
+  width = 784,
+  height = 16,
+  name = "to_J2",
+  transition = "scrolling",
+  destination_map = "121",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = 832,
+  y = -16,
+  width = 288,
+  height = 16,
+  name = "to_J2_water",
+  transition = "scrolling",
+  destination_map = "121",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 1120,
+  destination_map = "122",
+}
+
 tile{
   layer = 2,
   x = 680,

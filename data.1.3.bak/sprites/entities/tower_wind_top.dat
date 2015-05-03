@@ -1,0 +1,10 @@
+animation{
+  name = "top",
+  src_image = "entities/tower_wind.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 176, frame_height = 356, origin_x = 88, origin_y = 346 },
+    { x = 0, y = 0, frame_width = 176, frame_height = 356, origin_x = 88, origin_y = 346 },
+    { x = 0, y = 0, frame_width = 176, frame_height = 356, origin_x = 88, origin_y = 346 },
+    { x = 0, y = 0, frame_width = 176, frame_height = 356, origin_x = 88, origin_y = 346 },
+  },
+}
