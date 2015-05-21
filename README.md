@@ -3,19 +3,30 @@ This quest is a free, open-source game that works with Solarus,
 an open-source Zelda-like 2D game engine.
 To play this game, you need Solarus. The compiled engine is included for Windows and Linux.
 
-The game is currently in version 0.32 (15-MAR-24, Solarus v1.3)
+The game is currently in version 0.42 (15-MAY-21, Solarus v1.4.2)
 
 To run:
   Windows: execute "solarus.exe"
-  Linux: execute "solarus"
-  Mac: not currently available
+  Linux: download executable or compile source available at http://www.solarus-games.org (see compile instruction below)
+  Mac: download executable or compile source available at http://www.solarus-games.org
 
 
 See our website http://sites.google.com/site/zeldabom for more information.
 
 Enjoy!
 
-VERSION 0.32 release 15-MAR-24:
+VERSION 0.42 release 15-MAY-21:
+  - migration to Solarus v1.4.2
+  - big fixes to the engine
+
+VERSION 0.4 released 15-MAY-3:
+  - migration to Solarus v1.4
+  - mapping of more areas
+  - Stamina system implemented (similar to magic bar, but decreases on any action performed)
+  - Somaria cane creates ice blocks which actually act like ice
+  - more fixes to map transitions and general bugs
+
+VERSION 0.32 released 15-MAR-24:
   - expansion of trading sequence and Great Fairy quests
   - mapping of more areas
   - finished fifth and sixth dungeons
