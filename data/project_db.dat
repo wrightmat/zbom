@@ -295,6 +295,9 @@ sprite{ id = "enemies/tentacle", description = "Tentacle" }
 sprite{ id = "enemies/vire", description = "Vire" }
 sprite{ id = "enemies/vire_sorceror", description = "Vire Sorceror" }
 sprite{ id = "enemies/wallmaster", description = "Wallmaster" }
+sprite{ id = "enemies/wizzrobe", description = "Wizzrobe" }
+sprite{ id = "enemies/wizzrobe_fire", description = "Wizzrobe, Fire" }
+sprite{ id = "enemies/wizzrobe_ice", description = "Wizzrobe, Ice" }
 sprite{ id = "enemies/zirna", description = "Zirna" }
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/bed", description = "Bed" }
@@ -718,9 +721,12 @@ enemy{ id = "aquadracini", description = "Aquadracini" }
 enemy{ id = "aquadraco", description = "Aquadraco (Miniboss)" }
 enemy{ id = "armos", description = "Armos Statue" }
 enemy{ id = "armos_big", description = "Armos Statue, Big (laser)" }
+enemy{ id = "arrghus_baby", description = "arrghus_baby" }
 enemy{ id = "arrghus_stone", description = "Stone Arrghus (Miniboss)" }
 enemy{ id = "baba_floria", description = "Baba, Floria" }
+enemy{ id = "baba_seed", description = "baba_seed" }
 enemy{ id = "bari_blue", description = "Bari, Blue" }
+enemy{ id = "bari_mini", description = "bari_mini" }
 enemy{ id = "bari_red", description = "Bari, Red" }
 enemy{ id = "boulder", description = "Boulder" }
 enemy{ id = "bubble_blue", description = "Bubble, Blue (Water)" }
@@ -813,6 +819,7 @@ language{ id = "en", description = "English dialogs" }
 
 font{ id = "bom", description = "bom" }
 font{ id = "green_digits", description = "green_digits" }
+font{ id = "hylian", description = "hylian" }
 font{ id = "la", description = "la" }
 font{ id = "minecraftia", description = "minecraftia" }
 font{ id = "small_green_digits", description = "small_green_digits" }
