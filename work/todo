@@ -1,32 +1,31 @@
-0.3 RELEASED 19-JAN-15
+0.42 RELEASED 21-JAN-15
 
-TO RELEASE 0.4:
-  - Finish temples: Snowpeak (mostly done), Tower of Winds (just started)
-  - Finish Septen Heights (add NPCs, what else?)
+TO RELEASE 0.5 (beta):
+  - Finish temple: Tower of Winds (about half done)
+  - Finish Rito sprite - all directions and walking animations
+  - Finish Septen Heights (add more NPC dialog, what else?)
+  - Add entrance to Interloper Sanctum (Lost Woods) - can't enter yet
+  - Finish trading sequence
 
-EVERYTHING:
-Sprites:
-  - Increase bank of NPCs (borrow from LttP, MC and Pokemon when possible and adjust to BoM style)
 
-Mapping:
-  - Cliff edges or trees and transition points: possible to get stuck, need to fix
-  - North Hyrule
-
-Scripts:
-  - Floria Baba
-  - Octorok: get movement and shooting correct
+TO RELEASE 0.6 (alpha):
+  - Finish Interloper Sanctum
+  - Finish final boss, story, etc.
+  - Add credits screen
   - Moldorm: Normal Moldorm behavior, hit tail three times to kill
-  - Pit Pincer: pincer enemy which hides in a hole and comes at you when you get close (from Link's Awakening, great Hyrule Field enemy!)
 
-LONG TERM:
-  - Energy/Stamina system
-	- Stamina decreases by a small amount (1 unit) anytime an item is used
-	- Apples restore stamina, but work less and less well each time
-	- Sleeping at inns restores stamina and restores the effect of apples
-	- Stamina bar increases the more it's used and restored
-	- Maximum stamina starts at 200 and can increase to 500 (or maybe as high as 1000?)
+
+RELEASE 0.8 (bug fix)
+
+
+RELEASE 1.0 (final stable)
+
+
+OPTIONAL/IDEAS:
   - Lamp/Light:
 	- varying levels of light: use surfaces with varying alpha
-	- ability to burn things with lamp: may already be in lamp script?
+	- ability to burn things with lamp? would write into entites, already done for ice block.
   - More emphasis on the shop/rupees: add quest-specific items that must be bought for a large number of rupees (like LA and kinda ALBW)
   - More options in trading sequence - one item may be traded for any number of items in different physical locations (a shopkeeper in Kakariko may sell/trade the item or you could trade for free to a character in Hyrule Castle Town)
+  - Pit Pincer- enemy which hides in a hole and comes at you when you get close (from Link's Awakening, great Hyrule Field enemy!)
+  - Enhanced dungeon maps that show which areas you've been to (see Mercuris' Chest), enhanced compass which chimes when you enter an area with a secret (like LA)

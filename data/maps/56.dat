@@ -10,6 +10,15 @@ properties{
 
 tile{
   layer = 0,
+  x = 864,
+  y = 784,
+  width = 16,
+  height = 24,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
   x = 696,
   y = 248,
   width = 16,
@@ -2267,376 +2276,448 @@ tile{
   pattern = "311",
 }
 
+tile{
+  layer = 0,
+  x = 992,
+  y = 520,
+  width = 16,
+  height = 24,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 936,
+  y = 648,
+  width = 16,
+  height = 24,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 664,
+  width = 16,
+  height = 24,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 984,
+  y = 400,
+  width = 16,
+  height = 24,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 736,
+  width = 16,
+  height = 24,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 256,
+  width = 16,
+  height = 24,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 760,
+  width = 16,
+  height = 24,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 680,
+  width = 16,
+  height = 24,
+  pattern = "4",
+}
+
 wall{
+  name = "custom_obstacle_20",
   layer = 0,
   x = 680,
   y = 680,
   width = 8,
   height = 72,
-  name = "custom_obstacle_20",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 teletransporter{
+  name = "to_E5_down",
   layer = 0,
   x = -16,
   y = 120,
   width = 16,
   height = 336,
-  name = "to_E5_down",
   transition = "scrolling",
   destination_map = "55",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_G5",
   layer = 0,
   x = 1120,
   y = 192,
   width = 16,
   height = 848,
-  name = "to_G5",
   transition = "scrolling",
   destination_map = "57",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_F6",
   layer = 0,
   x = 0,
   y = 1120,
   width = 1008,
   height = 16,
-  name = "to_F6",
   transition = "scrolling",
   destination_map = "64",
   destination = "_side",
 }
 
 destination{
+  name = "from_above",
   layer = 0,
   x = 232,
   y = 949,
-  name = "from_above",
   direction = 3,
 }
 
 teletransporter{
+  name = "to_above",
   layer = 0,
   x = 224,
   y = 920,
   width = 16,
   height = 16,
-  name = "to_above",
   destination_map = "56",
   destination = "from_below",
 }
 
 teletransporter{
+  name = "to_E5_down_2",
   layer = 0,
   x = -16,
   y = 944,
   width = 16,
   height = 176,
-  name = "to_E5_down_2",
   transition = "scrolling",
   destination_map = "55",
   destination = "_side",
 }
 
 wall{
+  name = "custom_obstacle",
   layer = 0,
   x = 464,
   y = 888,
   width = 8,
   height = 48,
-  name = "custom_obstacle",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "custom_obstacle_2",
   layer = 0,
   x = 584,
   y = 888,
   width = 8,
   height = 48,
-  name = "custom_obstacle_2",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 npc{
+  name = "npc_rito_1",
   layer = 0,
   x = 384,
   y = 757,
-  name = "npc_rito_1",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/rito",
 }
 
 wall{
+  name = "custom_obstacle_3",
   layer = 0,
   x = 312,
   y = 824,
   width = 8,
   height = 56,
-  name = "custom_obstacle_3",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "custom_obstacle_4",
   layer = 0,
   x = 320,
   y = 824,
   width = 144,
   height = 8,
-  name = "custom_obstacle_4",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "custom_obstacle_5",
   layer = 0,
   x = 592,
   y = 824,
   width = 8,
   height = 64,
-  name = "custom_obstacle_5",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "custom_obstacle_6",
   layer = 0,
   x = 592,
   y = 824,
   width = 168,
   height = 8,
-  name = "custom_obstacle_6",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "custom_obstacle_7",
   layer = 0,
   x = 544,
   y = 520,
   width = 96,
   height = 48,
-  name = "custom_obstacle_7",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "custom_obstacle_8",
   layer = 0,
   x = 576,
   y = 672,
   width = 112,
   height = 8,
-  name = "custom_obstacle_8",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "custom_obstacle_9",
   layer = 0,
   x = 752,
   y = 408,
   width = 8,
   height = 416,
-  name = "custom_obstacle_9",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "custom_obstacle_10",
   layer = 0,
   x = 824,
   y = 408,
   width = 8,
   height = 480,
-  name = "custom_obstacle_10",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "custom_obstacle_12",
   layer = 0,
   x = 1008,
   y = 304,
   width = 8,
   height = 64,
-  name = "custom_obstacle_12",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "custom_obstacle_13",
   layer = 0,
   x = 96,
   y = 312,
   width = 912,
   height = 8,
-  name = "custom_obstacle_13",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 wall{
+  name = "custom_obstacle_14",
   layer = 0,
   x = 456,
   y = 832,
   width = 8,
   height = 56,
-  name = "custom_obstacle_14",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "custom_obstacle_15",
   layer = 0,
   x = 248,
   y = 488,
   width = 96,
   height = 48,
-  name = "custom_obstacle_15",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "custom_obstacle_16",
   layer = 0,
   x = 888,
   y = 464,
   width = 96,
   height = 48,
-  name = "custom_obstacle_16",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "custom_obstacle_17",
   layer = 0,
   x = 960,
   y = 640,
   width = 96,
   height = 48,
-  name = "custom_obstacle_17",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "custom_obstacle_18",
   layer = 0,
   x = 160,
   y = 800,
   width = 8,
   height = 88,
-  name = "custom_obstacle_18",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "custom_obstacle_19",
   layer = 0,
   x = 96,
   y = 320,
   width = 8,
   height = 88,
-  name = "custom_obstacle_19",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 wall{
+  name = "custom_obstacle_21",
   layer = 0,
   x = 576,
   y = 680,
   width = 8,
   height = 72,
-  name = "custom_obstacle_21",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 npc{
+  name = "npc_rito_2",
   layer = 0,
   x = 656,
   y = 781,
-  name = "npc_rito_2",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/rito",
 }
 
 npc{
+  name = "sign_tower",
   layer = 0,
   x = 240,
   y = 173,
-  name = "sign_tower",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
   behavior = "dialog#sign.tower",
 }
 
 wall{
+  name = "custom_obstacle_11",
   layer = 0,
   x = 336,
   y = 672,
   width = 96,
   height = 48,
-  name = "custom_obstacle_11",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -2647,8 +2728,8 @@ wall{
   width = 32,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2660,8 +2741,8 @@ wall{
   width = 8,
   height = 328,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2673,193 +2754,193 @@ wall{
   width = 136,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 wall{
+  name = "custom_obstacle_22",
   layer = 0,
   x = 104,
   y = 400,
   width = 64,
   height = 8,
-  name = "custom_obstacle_22",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 wall{
+  name = "custom_obstacle_23",
   layer = 0,
   x = 168,
   y = 880,
   width = 16,
   height = 8,
-  name = "custom_obstacle_23",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "custom_obstacle_24",
   layer = 0,
   x = 280,
   y = 880,
   width = 16,
   height = 8,
-  name = "custom_obstacle_24",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "custom_obstacle_25",
   layer = 0,
   x = 184,
   y = 888,
   width = 8,
   height = 8,
-  name = "custom_obstacle_25",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "custom_obstacle_26",
   layer = 0,
   x = 272,
   y = 888,
   width = 8,
   height = 8,
-  name = "custom_obstacle_26",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "custom_obstacle_27",
   layer = 0,
   x = 264,
   y = 896,
   width = 8,
   height = 8,
-  name = "custom_obstacle_27",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "custom_obstacle_28",
   layer = 0,
   x = 192,
   y = 896,
   width = 8,
   height = 8,
-  name = "custom_obstacle_28",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "custom_obstacle_29",
   layer = 0,
   x = 200,
   y = 904,
   width = 64,
   height = 8,
-  name = "custom_obstacle_29",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "custom_obstacle_30",
   layer = 0,
   x = 296,
   y = 872,
   width = 16,
   height = 8,
-  name = "custom_obstacle_30",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "custom_obstacle_31",
   layer = 0,
   x = 584,
   y = 712,
   width = 96,
   height = 8,
-  name = "custom_obstacle_31",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 teletransporter{
+  name = "to_G5_2",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 144,
-  name = "to_G5_2",
   transition = "scrolling",
   destination_map = "57",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_E5_water",
   layer = 0,
   x = -16,
   y = 0,
   width = 16,
   height = 64,
-  name = "to_E5_water",
   transition = "scrolling",
   destination_map = "55",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_F4_water",
   layer = 0,
   x = 0,
   y = -16,
   width = 1120,
   height = 16,
-  name = "to_F4_water",
   transition = "scrolling",
   destination_map = "107",
   destination = "_side",
 }
 
 npc{
+  name = "ocarina_wind_to_",
   layer = 0,
   x = 944,
   y = 261,
-  name = "ocarina_wind_to_",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
 }
 
 destination{
+  name = "ocarina_warp",
   layer = 0,
   x = 944,
   y = 277,
-  name = "ocarina_warp",
   direction = 3,
 }
 
@@ -4646,21 +4727,21 @@ tile{
 }
 
 teletransporter{
+  name = "to_below",
   layer = 1,
   x = 88,
   y = 824,
   width = 16,
   height = 16,
-  name = "to_below",
   destination_map = "56",
   destination = "from_above",
 }
 
 destination{
+  name = "from_below",
   layer = 1,
   x = 96,
   y = 853,
-  name = "from_below",
   direction = 3,
 }
 
@@ -4673,20 +4754,20 @@ destructible{
 }
 
 chest{
+  name = "chest_rupees",
   layer = 1,
   x = 320,
   y = 501,
-  name = "chest_rupees",
   treasure_name = "rupee",
   treasure_variant = 4,
   sprite = "entities/chest",
 }
 
 chest{
+  name = "chest_treasure",
   layer = 1,
   x = 568,
   y = 541,
-  name = "chest_treasure",
   treasure_name = "crystal",
   sprite = "entities/chest",
 }
@@ -4700,36 +4781,36 @@ destructible{
 }
 
 teletransporter{
+  name = "to_E5_up",
   layer = 1,
   x = -16,
   y = 456,
   width = 16,
   height = 448,
-  name = "to_E5_up",
   transition = "scrolling",
   destination_map = "55",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_F4",
   layer = 1,
   x = 608,
   y = -16,
   width = 80,
   height = 16,
-  name = "to_F4",
   transition = "scrolling",
   destination_map = "107",
   destination = "_side",
 }
 
 npc{
+  name = "npc_rito_carpenter",
   layer = 1,
   x = 664,
   y = 141,
-  name = "npc_rito_carpenter",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/rito",
 }
 
