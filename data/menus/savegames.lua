@@ -16,7 +16,8 @@ function savegame_menu:on_started()
   self.option2_text = sol.text_surface.create()
   self.title_text = sol.text_surface.create{
     horizontal_alignment = "center",
-    font = sol.language.get_menu_font(),
+    font = font,
+    font_size = font_size,
   }
   self.cursor_position = 1
   self.cursor_sprite = sol.sprite.create("menus/selection_menu_cursor")
@@ -232,6 +233,7 @@ end
 function savegame_menu:read_savegames()
 
   self.slots = {}
+  local font, font_size = sol.language.get_dialog_font()
   for i = 1, 3 do
     local slot = {}
     slot.file_name = "save" .. i .. ".dat"
@@ -239,7 +241,8 @@ function savegame_menu:read_savegames()
     slot.number_img = sol.surface.create("menus/selection_menu_save" .. i .. ".png")
 
     slot.player_name_text = sol.text_surface.create{
-      font = sol.language.get_dialog_font(),
+      font = font,
+      font_size = font_size,
     }
     if sol.game.exists(slot.file_name) then
       -- Existing file.
@@ -593,19 +596,22 @@ function savegame_menu:init_phase_options()
     }
   }
 
+  local font, font_size = sol.language.get_menu_font()
   for _, option in ipairs(self.options) do
 
     option.current_index = nil
 
     -- Text surface of the label.
     option.label_text = sol.text_surface.create{
-      font = sol.language.get_menu_font(),
+      font = font,
+      font_size = font_size,
       text_key = "selection_menu.options." .. option.name
     }
 
     -- Text surface of the value.
     option.value_text = sol.text_surface.create{
-      font = sol.language.get_menu_font(),
+      font = font,
+      font_size = font_size,
       horizontal_alignment = "right"
     }
   end
@@ -847,7 +853,8 @@ function savegame_menu:init_phase_choose_name()
   self.cursor_sprite:set_animation("letters")
   self.player_name = ""
   self.player_name_text = sol.text_surface.create{
-    font = sol.language.get_menu_font()
+    font = font,
+    font_size = font_size,
   }
   self.letter_cursor = { x = 0, y = 0 }
   self.letters_img = sol.surface.create("menus/selection_menu_letters.png")
