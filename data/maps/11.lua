@@ -255,7 +255,7 @@ function map:on_update()
   end
   if game:get_value("i1027") < 3 then
     map:set_entities_enabled("banner_race", true)
-    if game:get_value("i1028") > 1 then
+    if game:get_value("i1028") > 1 and game:get_value("i1028") < 4 then
       map:set_entities_enabled("sensor_race", true)
       to_F15:set_enabled(false)
       to_F13:set_enabled(false)
