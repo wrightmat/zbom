@@ -55,7 +55,7 @@ function game:initialize_dialog_box()
   for i = 1, nb_visible_lines do
     dialog_box.lines[i] = ""
     dialog_box.line_surfaces[i] = sol.text_surface.create{
-      font = "la",
+      font = "lttp",
       horizontal_alignment = "left",
       vertical_alignment = "top",
     }
@@ -350,6 +350,7 @@ function dialog_box:add_character()
   -- - $1, $2 and $3: slow, medium and fast
   -- - $0: pause
   -- - $v: variable
+  -- - $r: text color red, $g: text color green, $b: text color blue, $w: text color white
   -- - space: don't add the delay
   -- - 110xxxx: multibyte character
 
@@ -376,6 +377,22 @@ function dialog_box:add_character()
     elseif current_char == "3" then
       -- Fast.
       self.char_delay = char_delays["fast"]
+
+    elseif current_char == "r" then
+      -- Color Red.
+      text_surface:set_color({255,0,0})
+
+    elseif current_char == "g" then
+      -- Color Green.
+      text_surface:set_color({0,255,0})
+
+    elseif current_char == "b" then
+      -- Color Blue.
+      text_surface:set_color({0,0,255})
+
+    elseif current_char == "w" then
+      -- Color White.
+      text_surface:set_color({0,0,0})
 
     else
       -- Not a special char, actually.
