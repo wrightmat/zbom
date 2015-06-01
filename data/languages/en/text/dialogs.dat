@@ -3797,6 +3797,21 @@ Keep in bottle
 }
 
 dialog{
+  id = "found_soul",
+  icon = "82",
+  question = "1",
+  skip = "current",
+  text = [[
+You found a Poe Soul!
+It looks mysterious.
+
+What now?
+Keep in bottle
+Let go
+  ]]
+}
+
+dialog{
   id = "found_fairy.no_empty_bottle",
   icon = "81",
   skip = "current",

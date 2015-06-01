@@ -63,6 +63,20 @@ function item:on_using()
     }
     self:set_variant(1) -- make the bottle empty
     self:set_finished()
+
+    -- poe soul
+  elseif variant == 8 then
+    -- release the poe soul
+    local x, y, layer = map:get_entity("hero"):get_position()
+    map:create_pickable{
+      treasure_name = "poe_soul",
+      treasure_variant = 1,
+      x = x,
+      y = y,
+      layer = layer
+    }
+    self:set_variant(1) -- make the bottle empty
+    self:set_finished()
   end
 end
 
