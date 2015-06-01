@@ -1035,26 +1035,38 @@ tile{
 }
 
 teletransporter{
+  name = "to_D3",
   layer = 0,
   x = 0,
   y = 1120,
   width = 1120,
   height = 16,
-  name = "to_D3",
   transition = "scrolling",
   destination_map = "98",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_E2",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 1120,
-  name = "to_E2",
   transition = "scrolling",
   destination_map = "101",
+  destination = "_side",
+}
+
+teletransporter{
+  name = "to_C2",
+  layer = 0,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 1120,
+  transition = "scrolling",
+  destination_map = "93",
   destination = "_side",
 }
 

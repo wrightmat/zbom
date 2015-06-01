@@ -4,151 +4,132 @@ properties{
   width = 1120,
   height = 1120,
   world = "outside_world",
-  tileset = "2",
+  tileset = "3",
   music = "same",
 }
 
 tile{
   layer = 0,
-  x = 680,
-  y = 424,
-  width = 48,
+  x = 0,
+  y = 1104,
+  width = 16,
   height = 16,
-  pattern = 628,
+  pattern = "295",
 }
 
 tile{
   layer = 0,
-  x = 672,
-  y = 416,
-  width = 8,
-  height = 16,
-  pattern = 626,
+  x = 0,
+  y = 0,
+  width = 1120,
+  height = 88,
+  pattern = "275",
 }
 
 tile{
   layer = 0,
-  x = 728,
-  y = 416,
-  width = 8,
-  height = 16,
-  pattern = 627,
-}
-
-tile{
-  layer = 0,
-  x = 688,
-  y = 440,
-  width = 32,
-  height = 8,
-  pattern = 629,
-}
-
-tile{
-  layer = 0,
-  x = 472,
+  x = 0,
   y = 80,
-  width = 48,
+  width = 1120,
   height = 16,
-  pattern = 628,
+  pattern = "18",
 }
 
 tile{
   layer = 0,
-  x = 464,
-  y = 72,
-  width = 8,
-  height = 16,
-  pattern = 626,
-}
-
-tile{
-  layer = 0,
-  x = 520,
-  y = 72,
-  width = 8,
-  height = 16,
-  pattern = 627,
-}
-
-tile{
-  layer = 0,
-  x = 480,
-  y = 96,
-  width = 32,
+  x = 0,
+  y = 136,
+  width = 1120,
   height = 8,
-  pattern = 629,
+  pattern = "266",
 }
 
 tile{
-  layer = 2,
-  x = 680,
-  y = 384,
-  width = 48,
-  height = 40,
-  pattern = 522,
+  layer = 0,
+  x = 0,
+  y = 128,
+  width = 1120,
+  height = 8,
+  pattern = "119",
 }
 
 tile{
-  layer = 2,
-  x = 680,
-  y = 368,
-  width = 48,
+  layer = 0,
+  x = 0,
+  y = 96,
+  width = 1120,
+  height = 32,
+  pattern = "190",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 144,
+  width = 1120,
+  height = 8,
+  pattern = "260",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 1112,
+  width = 8,
+  height = 8,
+  pattern = "59",
+}
+
+tile{
+  layer = 0,
+  x = 8,
+  y = 1104,
+  width = 8,
+  height = 8,
+  pattern = "59",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 1096,
+  width = 8,
+  height = 8,
+  pattern = "59",
+}
+
+teletransporter{
+  name = "to_D2",
+  layer = 0,
+  x = 1120,
+  y = 0,
+  width = 16,
+  height = 1120,
+  destination_map = "97",
+  destination = "_side",
+}
+
+teletransporter{
+  name = "to_C3",
+  layer = 0,
+  x = 0,
+  y = 1120,
+  width = 1120,
   height = 16,
-  pattern = 521,
+  transition = "scrolling",
+  destination_map = "94",
+  destination = "_side",
 }
 
-tile{
-  layer = 2,
-  x = 672,
-  y = 376,
-  width = 8,
-  height = 40,
-  pattern = 519,
-}
-
-tile{
-  layer = 2,
-  x = 728,
-  y = 376,
-  width = 8,
-  height = 40,
-  pattern = 520,
-}
-
-tile{
-  layer = 2,
-  x = 472,
-  y = 40,
-  width = 48,
-  height = 40,
-  pattern = 522,
-}
-
-tile{
-  layer = 2,
-  x = 472,
-  y = 24,
-  width = 48,
-  height = 16,
-  pattern = 521,
-}
-
-tile{
-  layer = 2,
-  x = 464,
-  y = 32,
-  width = 8,
-  height = 40,
-  pattern = 519,
-}
-
-tile{
-  layer = 2,
-  x = 520,
-  y = 32,
-  width = 8,
-  height = 40,
-  pattern = 520,
+teletransporter{
+  name = "to_B2",
+  layer = 0,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 1120,
+  transition = "scrolling",
+  destination_map = "89",
+  destination = "_side",
 }
 

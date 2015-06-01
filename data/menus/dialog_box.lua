@@ -392,7 +392,7 @@ function dialog_box:add_character()
 
     elseif current_char == "w" then
       -- Color White.
-      text_surface:set_color({0,0,0})
+      text_surface:set_color({255,255,255})
 
     else
       -- Not a special char, actually.

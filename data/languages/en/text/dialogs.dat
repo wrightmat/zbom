@@ -105,12 +105,12 @@ dialog{
   id = "_goron_statue",
   skip = "current",
   text = [[
-Brother! my spirit
-seems to be trapped
-in this weird statue!
-Maybe something with
+Brother! my spirit seems
+to have been trapped in
+this weird statue! Maybe
+$rsomething with
 some explosive power
-could blow me out of
+$wcould blow me out of
 this thing...
   ]]
 }
@@ -2627,7 +2627,7 @@ dialog{
   skip = "current",
   text = [[
 Enjoy the beautiful
-city of Saria.
+$bcity of Saria.
   ]]
 }
 
@@ -2651,15 +2651,14 @@ Since Mayor Ulo went
 back to Council, he
 said I could stay at
 his place!
-
 How lucky is that?
-Not sure where to go
-next? Maybe you should
-stop by Hyrule Castle
-Town and ask the
-mayor - it's straight
-north of here, through
-the woods. Can't
+
+Not sure where to go now?
+Maybe you should stop by
+$bHyrule Castle Town
+and ask the mayor - it's
+straight north of here,
+through the woods. Can't
 miss it!
   ]]
 }
@@ -2919,7 +2918,7 @@ dialog{
   text = [[
 Wow, You have enough deku
 sticks for me to make a
-Blue Potion!
+$rBlue Potion!
 Would you like me to?
 Sure!
 Nope.
@@ -2933,7 +2932,7 @@ dialog{
   text = [[
 Wow, You have enough deku
 sticks for me to make a
-Revitalizing Potion!
+$rRevitalizing Potion!
 Would you like me to?
 Sure!
 Nope.
@@ -2993,12 +2992,12 @@ dialog{
 Oh, I knew you would
 understand! You've always
 gotten me, haven't you?
-Hey! I know what you
-would like! The odd
-structure just north
-of here! I'd check it
-out myself, but it's dark
-and you have a lantern...
+I know what you'd like!
+$bThe odd structure
+just north of here! I'd
+check it out myself, but
+it's dark and you have
+$ra lantern...
   ]]
 }
 
@@ -3010,7 +3009,7 @@ Obviously you haven't
 explored enough of these
 woods! You should really
 look around more... Yeah!
-Like that odd structure
+$bLike that odd structure
 just up ahead!
   ]]
 }
@@ -3192,10 +3191,10 @@ dialog{
   skip = "current",
   text = [[
 The ghost that follows
-you- that's Dargor's
-son!$0
+you- that's
+$gDargor's son!$0
 Then that means...$0
-My poor Brother Dargor.
+My poor $gBrother Dargor.
 I must go and give my
 condolences.
 But you must not
@@ -3543,8 +3542,8 @@ familiar- we know about
 a really old library you
 should check out.
 It's all the way in
-North Hyrule though, so
-the trick to get there
+$bNorth Hyrule though,
+so the trick to get there
 is to use the sewers.
 That place where you
 got that neat sword
@@ -3554,7 +3553,7 @@ running under our feet!
 Anyway, you should be
 able to find another
 sewer access just east
-of Hyrule Castle Town.
+of $bHyrule Castle Town.
   ]]
 }
 
@@ -3733,7 +3732,7 @@ dialog{
   skip = "current",
   text = [[
 Welcome to the Kakariko
-Gallery and Ampitheater!
+$bGallery and Ampitheater!
 This city has long been
 seen as the cultural hub
 of all Hyrule, and this
@@ -3759,11 +3758,11 @@ dialog{
   skip = "current",
   text = [[
 Welcome one and all to
-this year's Kakariko
-Ampitheater stage show!
+this year's stage show at
+$bKakariko Ampitheater!
 I'm proud to introduce
-our star, the one and
-only Rowin!
+our star, the one and only
+$gRowin!
 Sit back and enjoy
 the show! 
   ]]
@@ -3937,9 +3936,9 @@ dialog{
   skip = "current",
   text = [[
 See that blue bar up
-there? That's called
-your "Stamina Bar".
-It decreasing any time
+there? That's called your
+$b"Stamina Bar".
+It decreases any time
 you do something that
 takes energy, like
 use an item or perform
@@ -8389,7 +8388,7 @@ dialog{
   text = [[
 How do you expect to
 light any torches without
-a lantern?
+a $rlantern?
   ]]
 }
 
@@ -8399,7 +8398,7 @@ dialog{
   text = [[
 What? You're wondering
 how to get your hands on
-a lantern? Maybe check
+a $rlantern?$w Maybe check
 with Ulo, he's the mayor
 and knows everything
 about everything!
@@ -8460,7 +8459,7 @@ each torch. If you make
 it in time, you'll win a
 prize! Remember, this
 is not just a race...
-it's a tribute to Ordona,
+it's a tribute to $gOrdona,
 signifying our apprec-
 iation for all the light
 she bestows upon us and
@@ -8475,7 +8474,7 @@ dialog{
   skip = "current",
   text = [[
 You better take care of
-that shield, too. It's
+that $rshield,$w too. It's
 a fine creation, Rudy
 really outdid himself
 with the prizes for my
@@ -8596,7 +8595,7 @@ dialog{
   id = "ulo.1.festival",
   skip = "current",
   text = [[
-That lantern has served
+That $rlantern$w has served
 me well in the past, but
 doesn't do me much good
 while on the Council.
@@ -8610,7 +8609,7 @@ dialog{
   skip = "current",
   text = [[
 But wait, you don't have
-a lantern! You can't
+a $rlantern!$w You can't
 truly enjoy the festival
 without one. Mine is in
 my house among my chests,
