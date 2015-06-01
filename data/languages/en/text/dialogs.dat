@@ -287,7 +287,7 @@ remote locations.
 
 dialog{
   id = "_item_description.boots.1",
-  icon = "13",
+  icon = "28",
   skip = "current",
   text = [[
 Slip on the Pegasus
@@ -357,7 +357,7 @@ stamina meter.
 
 dialog{
   id = "_item_description.bottle_1.6",
-  icon = "11",
+  icon = "12",
   skip = "current",
   text = [[
 This bottle contains
@@ -370,13 +370,25 @@ Great!
 
 dialog{
   id = "_item_description.bottle_1.7",
-  icon = "12",
+  icon = "13",
   skip = "current",
   text = [[
 This bottle contains
-a fairy. It will come
+a Fairy. It will come
 to your aide when times
 are difficult...
+  ]]
+}
+
+dialog{
+  id = "_item_description.bottle_1.8",
+  icon = "14",
+  skip = "current",
+  text = [[
+This bottle contains
+a Poe Soul. Some say
+they have useful
+knowledge...
   ]]
 }
 
@@ -439,7 +451,7 @@ stamina meter.
 
 dialog{
   id = "_item_description.bottle_2.6",
-  icon = "11",
+  icon = "12",
   skip = "current",
   text = [[
 This bottle contains
@@ -452,13 +464,25 @@ Great!
 
 dialog{
   id = "_item_description.bottle_2.7",
-  icon = "12",
+  icon = "13",
   skip = "current",
   text = [[
 This bottle contains
-a fairy. It will come
+a Fairy. It will come
 to your aide when times
 are difficult...
+  ]]
+}
+
+dialog{
+  id = "_item_description.bottle_2.8",
+  icon = "14",
+  skip = "current",
+  text = [[
+This bottle contains
+a Poe Soul. Some say
+they have useful
+knowledge...
   ]]
 }
 
@@ -521,7 +545,7 @@ stamina meter.
 
 dialog{
   id = "_item_description.bottle_3.6",
-  icon = "11",
+  icon = "12",
   skip = "current",
   text = [[
 This bottle contains
@@ -534,13 +558,119 @@ Great!
 
 dialog{
   id = "_item_description.bottle_3.7",
+  icon = "13",
+  skip = "current",
+  text = [[
+This bottle contains
+a Fairy. It will come
+to your aide when times
+are difficult...
+  ]]
+}
+
+dialog{
+  id = "_item_description.bottle_3.8",
+  icon = "14",
+  skip = "current",
+  text = [[
+This bottle contains
+a Poe Soul. Some say
+they have useful
+knowledge...
+  ]]
+}
+
+dialog{
+  id = "_item_description.bottle_4.1",
+  icon = "7",
+  skip = "current",
+  text = [[
+An empty bottle can
+hold all kinds of
+things...
+  ]]
+}
+
+dialog{
+  id = "_item_description.bottle_4.2",
+  icon = "8",
+  skip = "current",
+  text = [[
+This bottle contains
+some water. Empty it
+somewhere appropriate.
+  ]]
+}
+
+dialog{
+  id = "_item_description.bottle_4.3",
+  icon = "9",
+  skip = "current",
+  text = [[
+This bottle contains
+Heart Potion. It's
+used to restore life.
+  ]]
+}
+
+dialog{
+  id = "_item_description.bottle_4.4",
+  icon = "10",
+  skip = "current",
+  text = [[
+This bottle contains
+Magic Potion. It's
+used to replenish
+your magic meter.
+  ]]
+}
+
+dialog{
+  id = "_item_description.bottle_4.5",
+  icon = "11",
+  skip = "current",
+  text = [[
+This bottle contains
+Stamina Potion.
+It restores your
+stamina meter.
+  ]]
+}
+
+dialog{
+  id = "_item_description.bottle_4.6",
   icon = "12",
   skip = "current",
   text = [[
 This bottle contains
-a fairy. It will come
+Revitalizing Potion.
+It restores life,
+magic and stamina!
+Great!
+  ]]
+}
+
+dialog{
+  id = "_item_description.bottle_4.7",
+  icon = "13",
+  skip = "current",
+  text = [[
+This bottle contains
+a Fairy. It will come
 to your aide when times
 are difficult...
+  ]]
+}
+
+dialog{
+  id = "_item_description.bottle_4.8",
+  icon = "14",
+  skip = "current",
+  text = [[
+This bottle contains
+a Poe Soul. Some say
+they have useful
+knowledge...
   ]]
 }
 
@@ -1267,7 +1397,7 @@ distances.
 
 dialog{
   id = "_treasure.boots.1",
-  icon = "13",
+  icon = "28",
   skip = "current",
   text = [[
 You found the
@@ -1345,7 +1475,7 @@ your Stamina meter!
 
 dialog{
   id = "_treasure.bottle_1.6",
-  icon = "11",
+  icon = "12",
   skip = "current",
   text = [[
 You got Revitalizing
@@ -1356,11 +1486,21 @@ life, magic and stamina!
 
 dialog{
   id = "_treasure.bottle_1.7",
-  icon = "12",
+  icon = "13",
   skip = "current",
   text = [[
 You captured a Fairy
 in a Bottle!
+  ]]
+}
+
+dialog{
+  id = "_treasure.bottle_1.8",
+  icon = "14",
+  skip = "current",
+  text = [[
+You captured a Poe
+Soul in a Bottle!
   ]]
 }
 
@@ -1420,7 +1560,7 @@ your Stamina meter!
 
 dialog{
   id = "_treasure.bottle_2.6",
-  icon = "11",
+  icon = "12",
   skip = "current",
   text = [[
 You got Revitalizing
@@ -1431,11 +1571,21 @@ life, magic and stamina!
 
 dialog{
   id = "_treasure.bottle_2.7",
-  icon = "12",
+  icon = "13",
   skip = "current",
   text = [[
 You captured a Fairy
 in a Bottle!
+  ]]
+}
+
+dialog{
+  id = "_treasure.bottle_2.8",
+  icon = "14",
+  skip = "current",
+  text = [[
+You captured a Poe
+Soul in a Bottle!
   ]]
 }
 
@@ -1495,7 +1645,7 @@ your Stamina meter!
 
 dialog{
   id = "_treasure.bottle_3.6",
-  icon = "11",
+  icon = "12",
   skip = "current",
   text = [[
 You got Revitalizing
@@ -1506,11 +1656,21 @@ life, magic and stamina!
 
 dialog{
   id = "_treasure.bottle_3.7",
-  icon = "12",
+  icon = "13",
   skip = "current",
   text = [[
 You captured a Fairy
 in a Bottle!
+  ]]
+}
+
+dialog{
+  id = "_treasure.bottle_3.8",
+  icon = "14",
+  skip = "current",
+  text = [[
+You captured a Poe
+Soul in a Bottle!
   ]]
 }
 
@@ -1570,7 +1730,7 @@ your Stamina meter!
 
 dialog{
   id = "_treasure.bottle_4.6",
-  icon = "11",
+  icon = "12",
   skip = "current",
   text = [[
 You got Revitalizing
@@ -1581,11 +1741,21 @@ life, magic and stamina!
 
 dialog{
   id = "_treasure.bottle_4.7",
-  icon = "12",
+  icon = "13",
   skip = "current",
   text = [[
 You captured a Fairy
 in a Bottle!
+  ]]
+}
+
+dialog{
+  id = "_treasure.bottle_4.8",
+  icon = "14",
+  skip = "current",
+  text = [[
+You captured a Poe
+Soul in a Bottle!
   ]]
 }
 
@@ -3573,8 +3743,8 @@ dialog{
   skip = "current",
   text = [[
 You can find valuable
-stuff like mystic
-jade and deku sticks
+stuff like Mystic
+Jade and Deku Sticks
 scattered around the
 forest sometimes.
   ]]
@@ -3584,8 +3754,8 @@ dialog{
   id = "deku.4.faron.3",
   skip = "current",
   text = [[
-Find enough mystic
-jade and the Great
+Find enough Mystic
+Jade and the Great
 Fairy of the Forest
 will give you some-
 thing great!
@@ -3596,8 +3766,8 @@ dialog{
   id = "deku.4.faron.4",
   skip = "current",
   text = [[
-Find enough deku
-sticks and they can
+Find enough Deku
+Sticks and they can
 be used to make
 useful potions!
   ]]
@@ -8744,7 +8914,7 @@ No
 
 dialog{
   id = "use_bottle_with_fairy",
-  icon = "12",
+  icon = "13",
   question = "1",
   skip = "current",
   text = [[
@@ -8753,6 +8923,20 @@ Fairy. What would you
 like to do?
 Keep her
 Release her
+  ]]
+}
+
+dialog{
+  id = "use_bottle_with_soul",
+  icon = "14",
+  question = "1",
+  skip = "current",
+  text = [[
+This Bottle contains a
+Poe Soul. What would
+you like to do?
+Keep it
+Release it
   ]]
 }
 
