@@ -2529,36 +2529,36 @@ tile{
 }
 
 teletransporter{
+  name = "to_A2",
   layer = 0,
   x = 176,
   y = -16,
   width = 944,
   height = 16,
-  name = "to_A2",
   transition = "scrolling",
   destination_map = "152",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_A4",
   layer = 0,
   x = 176,
   y = 1120,
   width = 944,
   height = 16,
-  name = "to_A4",
   transition = "scrolling",
   destination_map = "154",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_B3",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 1120,
-  name = "to_B3",
   transition = "scrolling",
   destination_map = "157",
   destination = "_side",
@@ -3299,6 +3299,36 @@ destructible{
   destruction_sound = "bush",
   weight = -1,
   can_be_cut = true,
+}
+
+enemy{
+  name = "tentacle_1",
+  layer = 0,
+  x = 736,
+  y = 1077,
+  direction = 0,
+  breed = "tentacle",
+  treasure_name = "random_subrosia",
+}
+
+enemy{
+  name = "tentacle_2",
+  layer = 0,
+  x = 720,
+  y = 557,
+  direction = 0,
+  breed = "tentacle",
+  treasure_name = "random_subrosia",
+}
+
+enemy{
+  name = "tentacle_3",
+  layer = 0,
+  x = 400,
+  y = 573,
+  direction = 0,
+  breed = "tentacle",
+  treasure_name = "random_subrosia",
 }
 
 tile{

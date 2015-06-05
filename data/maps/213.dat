@@ -8696,8 +8696,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 352,
-  y = 112,
+  x = 240,
+  y = 256,
   width = 16,
   height = 16,
   pattern = "606",
@@ -8739,13 +8739,58 @@ tile{
   pattern = "607",
 }
 
+tile{
+  layer = 0,
+  x = 96,
+  y = 488,
+  width = 288,
+  height = 32,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 648,
+  width = 288,
+  height = 32,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 128,
+  width = 112,
+  height = 176,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 128,
+  width = 112,
+  height = 176,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 32,
+  width = 32,
+  height = 24,
+  pattern = "51",
+}
+
 teletransporter{
+  name = "to_floor_5",
   layer = 0,
   x = 456,
   y = 584,
   width = 16,
   height = 16,
-  name = "to_floor_5",
   destination_map = "214",
 }
 
@@ -8755,8 +8800,8 @@ wall{
   y = 432,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -8767,8 +8812,8 @@ wall{
   y = 360,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -8779,8 +8824,8 @@ wall{
   y = 432,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -8791,8 +8836,8 @@ wall{
   y = 360,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -8803,8 +8848,8 @@ wall{
   y = 200,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -8815,154 +8860,154 @@ wall{
   y = 200,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 enemy{
+  name = "giga_1",
   layer = 0,
   x = 680,
   y = 148,
-  name = "giga_1",
   direction = 3,
   breed = "giga",
 }
 
 enemy{
+  name = "armos_2",
   layer = 0,
   x = 216,
   y = 188,
-  name = "armos_2",
   direction = 3,
   breed = "armos",
 }
 
 enemy{
+  name = "armos_4",
   layer = 0,
   x = 264,
   y = 188,
-  name = "armos_4",
   direction = 3,
   breed = "armos",
 }
 
 enemy{
-  layer = 0,
-  x = 156,
-  y = 149,
   name = "geldman_1",
-  direction = 3,
-  breed = "geldman",
-}
-
-enemy{
   layer = 0,
-  x = 308,
-  y = 277,
-  name = "geldman_2",
+  x = 132,
+  y = 165,
   direction = 3,
   breed = "geldman",
 }
 
 enemy{
+  name = "geldman_2",
+  layer = 0,
+  x = 340,
+  y = 277,
+  direction = 3,
+  breed = "geldman",
+}
+
+enemy{
+  name = "giga_2",
   layer = 0,
   x = 744,
   y = 300,
-  name = "giga_2",
   direction = 3,
   breed = "giga",
 }
 
 enemy{
+  name = "gibdos_1",
   layer = 0,
   x = 564,
   y = 213,
-  name = "gibdos_1",
   direction = 3,
   breed = "gibdos",
 }
 
 door{
+  name = "door_shutter",
   layer = 0,
   x = 472,
   y = 584,
-  name = "door_shutter",
   direction = 2,
   sprite = "entities/door_shutter",
 }
 
 destination{
+  name = "from_floor_3",
   layer = 0,
   x = 64,
   y = 597,
-  name = "from_floor_3",
   direction = 0,
   default = true,
 }
 
 teletransporter{
+  name = "to_floor_3",
   layer = 0,
   x = 24,
   y = 584,
   width = 16,
   height = 16,
-  name = "to_floor_3",
   destination_map = "212",
   destination = "from_floor_4",
 }
 
 destination{
+  name = "from_floor_5",
   layer = 0,
   x = 496,
   y = 597,
-  name = "from_floor_5",
   direction = 0,
 }
 
 npc{
+  name = "hint",
   layer = 0,
   x = 304,
   y = 429,
-  name = "hint",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   behavior = "dialog#hint_stone.tower.4",
 }
 
 enemy{
+  name = "gibdos_2",
   layer = 0,
   x = 596,
   y = 117,
-  name = "gibdos_2",
   direction = 3,
   breed = "gibdos",
 }
 
 enemy{
+  name = "gibdos_3",
   layer = 0,
   x = 644,
   y = 277,
-  name = "gibdos_3",
   direction = 3,
   breed = "gibdos",
 }
 
 enemy{
+  name = "giga_3",
   layer = 0,
   x = 792,
   y = 204,
-  name = "giga_3",
   direction = 3,
   breed = "giga",
 }
 
 enemy{
+  name = "gibdos_4",
   layer = 0,
   x = 612,
   y = 341,
-  name = "gibdos_4",
   direction = 3,
   breed = "gibdos",
 }
@@ -9004,176 +9049,296 @@ destructible{
 }
 
 chest{
+  name = "chest_key_1",
   layer = 0,
   x = 552,
   y = 125,
-  name = "chest_key_1",
   treasure_name = "small_key",
   treasure_savegame_variable = "b1171",
   sprite = "entities/chest",
 }
 
 enemy{
+  name = "armos_1",
   layer = 0,
   x = 216,
   y = 236,
-  name = "armos_1",
   direction = 3,
   breed = "armos",
 }
 
 enemy{
+  name = "armos_3",
   layer = 0,
   x = 264,
   y = 236,
-  name = "armos_3",
   direction = 3,
   breed = "armos",
 }
 
 enemy{
+  name = "geldman_3",
   layer = 0,
   x = 140,
   y = 277,
-  name = "geldman_3",
   direction = 3,
   breed = "geldman",
 }
 
 chest{
-  layer = 0,
-  x = 360,
-  y = 125,
   name = "chest_compass",
+  layer = 0,
+  x = 248,
+  y = 269,
   treasure_name = "compass",
   treasure_savegame_variable = "b1160",
   sprite = "entities/chest",
 }
 
 enemy{
-  layer = 0,
-  x = 300,
-  y = 141,
   name = "geldman_4",
+  layer = 0,
+  x = 340,
+  y = 157,
   direction = 3,
   breed = "geldman",
 }
 
+wall{
+  layer = 0,
+  x = 80,
+  y = 120,
+  width = 112,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 80,
+  y = 304,
+  width = 112,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 288,
+  y = 304,
+  width = 112,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 288,
+  y = 120,
+  width = 112,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 72,
+  y = 128,
+  width = 8,
+  height = 176,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 184,
+  y = 128,
+  width = 8,
+  height = 176,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 288,
+  y = 128,
+  width = 8,
+  height = 176,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 400,
+  y = 128,
+  width = 8,
+  height = 176,
+  stops_enemies = true,
+}
+
 enemy{
+  name = "keese_1",
   layer = 1,
   x = 560,
   y = 509,
-  name = "keese_1",
   direction = 3,
   breed = "keese_fire",
 }
 
 enemy{
+  name = "keese_2",
   layer = 1,
   x = 536,
   y = 589,
-  name = "keese_2",
   direction = 3,
   breed = "keese_fire",
 }
 
 enemy{
+  name = "keese_3",
   layer = 1,
   x = 560,
   y = 677,
-  name = "keese_3",
   direction = 3,
   breed = "keese_fire",
 }
 
 enemy{
+  name = "keese_4",
   layer = 1,
   x = 624,
   y = 629,
-  name = "keese_4",
   direction = 3,
   breed = "keese_fire",
 }
 
 enemy{
+  name = "keese_5",
   layer = 1,
   x = 624,
   y = 549,
-  name = "keese_5",
   direction = 3,
   breed = "keese_fire",
 }
 
 enemy{
+  name = "keese_6",
   layer = 1,
   x = 680,
   y = 485,
-  name = "keese_6",
   direction = 3,
   breed = "keese_fire",
 }
 
 enemy{
+  name = "keese_7",
   layer = 1,
   x = 704,
   y = 589,
-  name = "keese_7",
   direction = 3,
   breed = "keese_fire",
 }
 
 enemy{
+  name = "keese_8",
   layer = 1,
   x = 680,
   y = 693,
-  name = "keese_8",
   direction = 3,
   breed = "keese_fire",
 }
 
 enemy{
+  name = "keese_9",
   layer = 1,
   x = 760,
   y = 669,
-  name = "keese_9",
   direction = 3,
   breed = "keese_fire",
 }
 
 enemy{
+  name = "keese_10",
   layer = 1,
   x = 760,
   y = 557,
-  name = "keese_10",
   direction = 3,
   breed = "keese_fire",
 }
 
 enemy{
+  name = "keese_12",
   layer = 1,
   x = 816,
   y = 605,
-  name = "keese_12",
   direction = 3,
   breed = "keese_fire",
 }
 
 enemy{
+  name = "keese_11",
   layer = 1,
   x = 768,
   y = 477,
-  name = "keese_11",
   direction = 3,
   breed = "keese_fire",
 }
 
 enemy{
+  name = "keese_13",
   layer = 1,
   x = 632,
   y = 701,
-  name = "keese_13",
   direction = 3,
   breed = "keese_dark",
+}
+
+wall{
+  layer = 1,
+  x = 464,
+  y = 760,
+  width = 416,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 464,
+  y = 416,
+  width = 8,
+  height = 344,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 464,
+  y = 408,
+  width = 416,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 872,
+  y = 416,
+  width = 8,
+  height = 344,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{

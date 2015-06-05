@@ -4455,120 +4455,129 @@ tile{
   pattern = "525",
 }
 
+tile{
+  layer = 0,
+  x = 656,
+  y = 32,
+  width = 32,
+  height = 24,
+  pattern = "51",
+}
+
 dynamic_tile{
+  name = "lava_9",
   layer = 0,
   x = 320,
   y = 224,
+  pattern = "605",
   width = 48,
   height = 144,
-  name = "lava_9",
-  pattern = "605",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "tile",
   layer = 0,
   x = 112,
   y = 360,
+  pattern = "66",
   width = 256,
   height = 8,
-  name = "tile",
-  pattern = "66",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "lava_15",
   layer = 0,
   x = 608,
   y = 552,
+  pattern = "605",
   width = 32,
   height = 176,
-  name = "lava_15",
-  pattern = "605",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "lava_7",
   layer = 0,
   x = 320,
   y = 600,
+  pattern = "605",
   width = 32,
   height = 128,
-  name = "lava_7",
-  pattern = "605",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "lava_3",
   layer = 0,
   x = 320,
   y = 440,
+  pattern = "605",
   width = 48,
   height = 96,
-  name = "lava_3",
-  pattern = "605",
   enabled_at_start = true,
 }
 
 enemy{
+  name = "bubble",
   layer = 0,
   x = 248,
   y = 584,
-  name = "bubble",
   direction = 3,
   breed = "bubble_red",
 }
 
 enemy{
+  name = "chuchu_1",
   layer = 0,
   x = 224,
   y = 253,
-  name = "chuchu_1",
   direction = 3,
   breed = "chuchu_red",
 }
 
 enemy{
+  name = "chuchu_2",
   layer = 0,
   x = 144,
   y = 301,
-  name = "chuchu_2",
   direction = 3,
   breed = "chuchu_red",
 }
 
 enemy{
+  name = "chuchu_3",
   layer = 0,
   x = 336,
   y = 117,
-  name = "chuchu_3",
   direction = 3,
   breed = "chuchu_red",
 }
 
 enemy{
+  name = "chuchu_4",
   layer = 0,
   x = 144,
   y = 109,
-  name = "chuchu_4",
   direction = 3,
   breed = "chuchu_red",
 }
 
 enemy{
+  name = "chuchu_5",
   layer = 0,
   x = 280,
   y = 325,
-  name = "chuchu_5",
   direction = 3,
   breed = "chuchu_red",
 }
 
 enemy{
+  name = "chuchu_6",
   layer = 0,
   x = 248,
   y = 141,
-  name = "chuchu_6",
   direction = 3,
   breed = "chuchu_red",
 }
@@ -4579,8 +4588,8 @@ wall{
   y = 200,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -4591,8 +4600,8 @@ wall{
   y = 200,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -4603,8 +4612,8 @@ wall{
   y = 360,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -4615,8 +4624,8 @@ wall{
   y = 432,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -4627,8 +4636,8 @@ wall{
   y = 360,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -4639,93 +4648,93 @@ wall{
   y = 432,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 enemy{
+  name = "dodongo_1",
   layer = 0,
   x = 776,
   y = 245,
-  name = "dodongo_1",
   direction = 3,
   breed = "dodongo",
 }
 
 enemy{
+  name = "tektite_1",
   layer = 0,
   x = 664,
   y = 125,
-  name = "tektite_1",
   direction = 3,
   breed = "tektite_red",
 }
 
 enemy{
+  name = "tektite_2",
   layer = 0,
   x = 576,
   y = 253,
-  name = "tektite_2",
   direction = 3,
   breed = "tektite_red",
 }
 
 enemy{
+  name = "tektite_3",
   layer = 0,
   x = 688,
   y = 317,
-  name = "tektite_3",
   direction = 3,
   breed = "tektite_red",
 }
 
 teletransporter{
+  name = "to_floor_2",
   layer = 0,
   x = 24,
   y = 584,
   width = 16,
   height = 16,
-  name = "to_floor_2",
   destination_map = "211",
   destination = "from_floor_3",
 }
 
 destination{
+  name = "from_floor_2",
   layer = 0,
   x = 64,
   y = 597,
-  name = "from_floor_2",
   direction = 0,
   default = true,
 }
 
 destination{
+  name = "from_floor_4",
   layer = 0,
   x = 496,
   y = 597,
-  name = "from_floor_4",
   direction = 3,
 }
 
 teletransporter{
+  name = "to_floor_4",
   layer = 0,
   x = 456,
   y = 584,
   width = 16,
   height = 16,
-  name = "to_floor_4",
   destination_map = "213",
 }
 
 npc{
+  name = "hint",
   layer = 0,
   x = 304,
   y = 429,
-  name = "hint",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   behavior = "dialog#hint_stone.tower.3",
 }
 
@@ -4767,53 +4776,53 @@ destructible{
 }
 
 door{
+  name = "door_shutter",
   layer = 0,
   x = 472,
   y = 584,
-  name = "door_shutter",
   direction = 2,
   sprite = "entities/door_shutter",
   savegame_variable = "b1177",
 }
 
 dynamic_tile{
+  name = "barrier_1",
   layer = 0,
   x = 576,
   y = 520,
+  pattern = "104",
   width = 8,
   height = 8,
-  name = "barrier_1",
-  pattern = "104",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "barrier_2",
   layer = 0,
   x = 584,
   y = 520,
+  pattern = "105",
   width = 256,
   height = 8,
-  name = "barrier_2",
-  pattern = "105",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "barrier_3",
   layer = 0,
   x = 840,
   y = 520,
+  pattern = "104",
   width = 8,
   height = 8,
-  name = "barrier_3",
-  pattern = "104",
   enabled_at_start = true,
 }
 
 switch{
+  name = "switch_puzzle_1",
   layer = 0,
   x = 544,
   y = 456,
-  name = "switch_puzzle_1",
   subtype = "walkable",
   sprite = "entities/switch",
   sound = "switch",
@@ -4822,10 +4831,10 @@ switch{
 }
 
 switch{
+  name = "switch_puzzle_2",
   layer = 0,
   x = 768,
   y = 696,
-  name = "switch_puzzle_2",
   subtype = "walkable",
   sprite = "entities/switch",
   sound = "switch",
@@ -4834,163 +4843,163 @@ switch{
 }
 
 enemy{
+  name = "hardhat",
   layer = 0,
   x = 680,
   y = 717,
-  name = "hardhat",
   direction = 3,
   breed = "hardhat_beetle_red",
 }
 
 enemy{
+  name = "hardhat_2",
   layer = 0,
   x = 744,
   y = 469,
-  name = "hardhat_2",
   direction = 3,
   breed = "hardhat_beetle_red",
 }
 
 dynamic_tile{
+  name = "lava_1",
   layer = 0,
   x = 64,
   y = 536,
+  pattern = "605",
   width = 64,
   height = 32,
-  name = "lava_1",
-  pattern = "605",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "lava",
   layer = 0,
   x = 64,
   y = 648,
+  pattern = "605",
   width = 176,
   height = 32,
-  name = "lava",
-  pattern = "605",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "lava_2",
   layer = 0,
   x = 160,
   y = 440,
+  pattern = "605",
   width = 32,
   height = 96,
-  name = "lava_2",
-  pattern = "605",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "lava_4",
   layer = 0,
   x = 368,
   y = 456,
+  pattern = "605",
   width = 16,
   height = 80,
-  name = "lava_4",
-  pattern = "605",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "lava_5",
   layer = 0,
   x = 384,
   y = 472,
+  pattern = "605",
   width = 16,
   height = 64,
-  name = "lava_5",
-  pattern = "605",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "lava_6",
   layer = 0,
   x = 400,
   y = 488,
+  pattern = "605",
   width = 16,
   height = 48,
-  name = "lava_6",
-  pattern = "605",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "lava_8",
   layer = 0,
   x = 64,
   y = 176,
+  pattern = "605",
   width = 304,
   height = 48,
-  name = "lava_8",
-  pattern = "605",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "lava_10",
   layer = 0,
   x = 576,
   y = 440,
+  pattern = "605",
   width = 32,
   height = 80,
-  name = "lava_10",
-  pattern = "605",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "lava_11",
   layer = 0,
   x = 496,
   y = 504,
+  pattern = "605",
   width = 80,
   height = 16,
-  name = "lava_11",
-  pattern = "605",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "lava_13",
   layer = 0,
   x = 544,
   y = 536,
+  pattern = "605",
   width = 32,
   height = 160,
-  name = "lava_13",
-  pattern = "605",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "lava_14",
   layer = 0,
   x = 496,
   y = 664,
+  pattern = "605",
   width = 48,
   height = 32,
-  name = "lava_14",
-  pattern = "605",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "lava_16",
   layer = 0,
   x = 640,
   y = 552,
+  pattern = "605",
   width = 208,
   height = 128,
-  name = "lava_16",
-  pattern = "605",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "lava_12",
   layer = 0,
   x = 608,
   y = 488,
+  pattern = "605",
   width = 240,
   height = 32,
-  name = "lava_12",
-  pattern = "605",
   enabled_at_start = true,
 }
 
@@ -4998,7 +5007,6 @@ block{
   layer = 0,
   x = 536,
   y = 485,
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = true,
@@ -5009,7 +5017,6 @@ block{
   layer = 0,
   x = 568,
   y = 709,
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = true,
@@ -5017,19 +5024,19 @@ block{
 }
 
 enemy{
+  name = "dodongo_2",
   layer = 0,
   x = 608,
   y = 309,
-  name = "dodongo_2",
   direction = 3,
   breed = "dodongo",
 }
 
 enemy{
+  name = "dodongo_3",
   layer = 0,
   x = 608,
   y = 117,
-  name = "dodongo_3",
   direction = 3,
   breed = "dodongo",
 }
@@ -5073,10 +5080,10 @@ destructible{
 }
 
 chest{
+  name = "chest_big_key",
   layer = 0,
   x = 680,
   y = 157,
-  name = "chest_big_key",
   treasure_name = "big_key",
   treasure_savegame_variable = "b1162",
   sprite = "entities/chest",

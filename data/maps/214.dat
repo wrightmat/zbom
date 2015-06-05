@@ -10378,46 +10378,46 @@ tile{
 }
 
 dynamic_tile{
+  name = "hole_4",
   layer = 0,
   x = 736,
   y = 192,
+  pattern = "524",
   width = 112,
   height = 48,
-  name = "hole_4",
-  pattern = "524",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "hole_3",
   layer = 0,
   x = 560,
   y = 160,
+  pattern = "524",
   width = 288,
   height = 32,
-  name = "hole_3",
-  pattern = "524",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "hole_2",
   layer = 0,
   x = 560,
   y = 192,
+  pattern = "524",
   width = 112,
   height = 48,
-  name = "hole_2",
-  pattern = "524",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "hole_1",
   layer = 0,
   x = 560,
   y = 240,
+  pattern = "524",
   width = 288,
   height = 32,
-  name = "hole_1",
-  pattern = "524",
   enabled_at_start = true,
 }
 
@@ -10436,134 +10436,134 @@ wall{
   y = 480,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 enemy{
+  name = "bubble_1",
   layer = 0,
   x = 112,
   y = 592,
-  name = "bubble_1",
   direction = 3,
   breed = "bubble_blue",
 }
 
 enemy{
+  name = "bubble_2",
   layer = 0,
   x = 296,
   y = 624,
-  name = "bubble_2",
   direction = 3,
   breed = "bubble_red",
 }
 
 enemy{
+  name = "chuchu_1",
   layer = 0,
   x = 192,
   y = 165,
-  name = "chuchu_1",
   direction = 3,
   breed = "chuchu_red",
 }
 
 enemy{
+  name = "chuchu_2",
   layer = 0,
   x = 192,
   y = 261,
-  name = "chuchu_2",
   direction = 3,
   breed = "chuchu_blue",
 }
 
 enemy{
+  name = "chuchu_3",
   layer = 0,
   x = 288,
   y = 165,
-  name = "chuchu_3",
   direction = 3,
   breed = "chuchu_blue",
 }
 
 enemy{
+  name = "chuchu_4",
   layer = 0,
   x = 128,
   y = 253,
-  name = "chuchu_4",
   direction = 3,
   breed = "chuchu_red",
 }
 
 enemy{
+  name = "chuchu_5",
   layer = 0,
   x = 296,
   y = 261,
-  name = "chuchu_5",
   direction = 3,
   breed = "chuchu_red",
 }
 
 enemy{
+  name = "chuchu_6",
   layer = 0,
   x = 128,
   y = 173,
-  name = "chuchu_6",
   direction = 3,
   breed = "chuchu_blue",
 }
 
 enemy{
+  name = "tektite_1",
   layer = 0,
   x = 640,
   y = 573,
-  name = "tektite_1",
   direction = 3,
   breed = "tektite_blue",
 }
 
 enemy{
+  name = "tektite_2",
   layer = 0,
   x = 768,
   y = 685,
-  name = "tektite_2",
   direction = 3,
   breed = "tektite_red",
 }
 
 enemy{
+  name = "tektite_3",
   layer = 0,
   x = 712,
   y = 653,
-  name = "tektite_3",
   direction = 3,
   breed = "tektite_blue",
 }
 
 enemy{
+  name = "tektite_4",
   layer = 0,
   x = 720,
   y = 549,
-  name = "tektite_4",
   direction = 3,
   breed = "tektite_red",
 }
 
 enemy{
+  name = "tektite_5",
   layer = 0,
   x = 608,
   y = 653,
-  name = "tektite_5",
   direction = 3,
   breed = "tektite_red",
 }
 
 enemy{
+  name = "tektite_6",
   layer = 0,
   x = 792,
   y = 621,
-  name = "tektite_6",
   direction = 3,
   breed = "tektite_blue",
 }
@@ -10574,8 +10574,8 @@ wall{
   y = 480,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -10586,75 +10586,75 @@ wall{
   y = 168,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 teletransporter{
+  name = "warp",
   layer = 0,
   x = 448,
   y = 392,
   width = 16,
   height = 16,
-  name = "warp",
+  destination_map = "214",
   sprite = "entities/teletransporter",
   sound = "warp",
-  destination_map = "214",
 }
 
 destination{
+  name = "destination_1",
   layer = 0,
   x = 352,
   y = 405,
-  name = "destination_1",
   direction = 3,
   sprite = "entities/destination",
 }
 
 destination{
+  name = "from_below",
   layer = 0,
   x = 480,
   y = 189,
-  name = "from_below",
   direction = 2,
   default = true,
 }
 
 destination{
+  name = "destination_2",
   layer = 0,
   x = 456,
   y = 557,
-  name = "destination_2",
   direction = 3,
   sprite = "entities/destination",
 }
 
 destination{
+  name = "destination_3",
   layer = 0,
   x = 560,
   y = 405,
-  name = "destination_3",
   direction = 3,
   sprite = "entities/destination",
 }
 
 npc{
+  name = "hint",
   layer = 0,
   x = 456,
   y = 133,
-  name = "hint",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   behavior = "dialog#hint_stone.tower.5",
 }
 
 chest{
+  name = "chest_big",
   layer = 0,
   x = 704,
   y = 109,
-  name = "chest_big",
   treasure_name = "shield",
   treasure_variant = 3,
   treasure_savegame_variable = "b1165",
@@ -10665,20 +10665,20 @@ chest{
 }
 
 chest{
+  name = "chest_key_2",
   layer = 0,
   x = 200,
   y = 613,
-  name = "chest_key_2",
   treasure_name = "small_key",
   treasure_savegame_variable = "b1173",
   sprite = "entities/chest",
 }
 
 door{
+  name = "door_key1_1",
   layer = 0,
   x = 696,
   y = 368,
-  name = "door_key1_1",
   direction = 1,
   sprite = "entities/door_small_key",
   savegame_variable = "b1172",
@@ -10689,10 +10689,10 @@ door{
 }
 
 door{
+  name = "door_key1_2",
   layer = 0,
   x = 696,
   y = 320,
-  name = "door_key1_2",
   direction = 3,
   sprite = "entities/door_small_key",
   savegame_variable = "b1172",
@@ -10703,10 +10703,10 @@ door{
 }
 
 switch{
+  name = "switch_chest",
   layer = 0,
   x = 192,
   y = 712,
-  name = "switch_chest",
   subtype = "walkable",
   sprite = "entities/switch",
   sound = "switch",
@@ -10715,11 +10715,10 @@ switch{
 }
 
 block{
+  name = "block",
   layer = 0,
   x = 216,
   y = 613,
-  name = "block",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = true,
@@ -10727,23 +10726,23 @@ block{
 }
 
 teletransporter{
+  name = "to_floor_4",
   layer = 0,
   x = 504,
   y = 176,
   width = 16,
   height = 16,
-  name = "to_floor_4",
   destination_map = "213",
   destination = "from_floor_5",
 }
 
 teletransporter{
+  name = "to_floor_6",
   layer = 0,
   x = 696,
   y = 448,
   width = 16,
   height = 16,
-  name = "to_floor_6",
   destination_map = "215",
   destination = "from_below",
 }
@@ -10787,49 +10786,49 @@ destructible{
 }
 
 destination{
+  name = "from_floor_6",
   layer = 0,
   x = 704,
   y = 493,
-  name = "from_floor_6",
   direction = 3,
 }
 
 destination{
+  name = "from_hole_above",
   layer = 0,
   x = 456,
   y = 365,
-  name = "from_hole_above",
   direction = 3,
 }
 
 dynamic_tile{
+  name = "lava",
   layer = 0,
   x = 64,
   y = 664,
+  pattern = "605",
   width = 288,
   height = 32,
-  name = "lava",
-  pattern = "605",
   enabled_at_start = true,
 }
 
 teletransporter{
+  name = "warp_chuchu",
   layer = 0,
   x = 208,
   y = 192,
   width = 16,
   height = 16,
-  name = "warp_chuchu",
+  destination_map = "214",
   sprite = "entities/teletransporter",
   sound = "warp",
-  destination_map = "214",
 }
 
 switch{
+  name = "switch_2",
   layer = 0,
   x = 656,
   y = 136,
-  name = "switch_2",
   subtype = "arrow_target",
   sprite = "entities/switch_eye_down",
   sound = "switch",
@@ -10838,10 +10837,10 @@ switch{
 }
 
 switch{
+  name = "switch_3",
   layer = 0,
   x = 736,
   y = 136,
-  name = "switch_3",
   subtype = "arrow_target",
   sprite = "entities/switch_eye_down",
   sound = "switch",
@@ -10850,10 +10849,10 @@ switch{
 }
 
 switch{
+  name = "switch_1",
   layer = 0,
   x = 696,
   y = 232,
-  name = "switch_1",
   subtype = "arrow_target",
   sprite = "entities/switch_eye_down",
   sound = "switch",
@@ -10862,35 +10861,35 @@ switch{
 }
 
 dynamic_tile{
+  name = "tile_9",
   layer = 0,
   x = 560,
   y = 264,
+  pattern = "143",
   width = 8,
   height = 8,
-  name = "tile_9",
-  pattern = "143",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "tile_10",
   layer = 0,
   x = 840,
   y = 264,
+  pattern = "142",
   width = 8,
   height = 8,
-  name = "tile_10",
-  pattern = "142",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "hole_item",
   layer = 0,
   x = 488,
   y = 344,
+  pattern = "524",
   width = 32,
   height = 112,
-  name = "hole_item",
-  pattern = "524",
   enabled_at_start = true,
 }
 

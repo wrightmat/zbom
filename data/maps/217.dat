@@ -2496,24 +2496,6 @@ tile{
 tile{
   layer = 0,
   x = 32,
-  y = 240,
-  width = 32,
-  height = 16,
-  pattern = "50",
-}
-
-tile{
-  layer = 0,
-  x = 32,
-  y = 176,
-  width = 32,
-  height = 16,
-  pattern = "50",
-}
-
-tile{
-  layer = 0,
-  x = 32,
   y = 112,
   width = 32,
   height = 16,
@@ -3063,24 +3045,6 @@ tile{
 tile{
   layer = 0,
   x = 848,
-  y = 240,
-  width = 32,
-  height = 16,
-  pattern = "49",
-}
-
-tile{
-  layer = 0,
-  x = 848,
-  y = 176,
-  width = 32,
-  height = 16,
-  pattern = "49",
-}
-
-tile{
-  layer = 0,
-  x = 848,
   y = 112,
   width = 32,
   height = 16,
@@ -3224,7 +3188,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 624,
+  x = 608,
   y = 736,
   width = 16,
   height = 32,
@@ -3233,7 +3197,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 704,
+  x = 720,
   y = 736,
   width = 16,
   height = 32,
@@ -7623,6 +7587,204 @@ tile{
   pattern = "106",
 }
 
+tile{
+  layer = 0,
+  x = 224,
+  y = 440,
+  width = 32,
+  height = 32,
+  pattern = "135",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 440,
+  width = 32,
+  height = 48,
+  pattern = "136",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 472,
+  width = 32,
+  height = 16,
+  pattern = "136",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 440,
+  width = 32,
+  height = 48,
+  pattern = "136",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 744,
+  width = 32,
+  height = 24,
+  pattern = "52",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 736,
+  width = 16,
+  height = 32,
+  pattern = "48",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 736,
+  width = 16,
+  height = 32,
+  pattern = "48",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 408,
+  width = 16,
+  height = 32,
+  pattern = "47",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 408,
+  width = 16,
+  height = 32,
+  pattern = "47",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 488,
+  width = 16,
+  height = 16,
+  pattern = "525",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 472,
+  width = 16,
+  height = 16,
+  pattern = "525",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 456,
+  width = 16,
+  height = 16,
+  pattern = "525",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 440,
+  width = 16,
+  height = 16,
+  pattern = "525",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 368,
+  width = 32,
+  height = 24,
+  pattern = "52",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 32,
+  width = 32,
+  height = 24,
+  pattern = "51",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 200,
+  width = 24,
+  height = 32,
+  pattern = "53",
+}
+
+tile{
+  layer = 0,
+  x = 856,
+  y = 200,
+  width = 24,
+  height = 32,
+  pattern = "54",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 616,
+  width = 32,
+  height = 16,
+  pattern = "50",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 552,
+  width = 32,
+  height = 16,
+  pattern = "50",
+}
+
+tile{
+  layer = 0,
+  x = 24,
+  y = 576,
+  width = 16,
+  height = 8,
+  pattern = "105",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 584,
+  width = 8,
+  height = 16,
+  pattern = "106",
+}
+
+tile{
+  layer = 0,
+  x = 24,
+  y = 600,
+  width = 16,
+  height = 8,
+  pattern = "105",
+}
+
 wall{
   layer = 0,
   x = 656,
@@ -7630,17 +7792,17 @@ wall{
   width = 32,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 chest{
+  name = "chest_book",
   layer = 0,
   x = 672,
   y = 565,
-  name = "chest_book",
   treasure_name = "book_mudora",
   treasure_variant = 7,
   treasure_savegame_variable = "b1170",
@@ -7648,45 +7810,136 @@ chest{
 }
 
 teletransporter{
+  name = "warp_outside",
   layer = 0,
   x = 528,
   y = 568,
   width = 16,
   height = 16,
-  name = "warp_outside",
-  sprite = "entities/teletransporter",
-  sound = "warp",
   destination_map = "55",
   destination = "from_tower",
+  sprite = "entities/teletransporter",
+  sound = "warp",
 }
 
 pickable{
+  name = "boss_heart",
   layer = 0,
   x = 584,
   y = 613,
-  name = "boss_heart",
   treasure_name = "heart_container",
-  treasure_savegame_variable = "b1168",
+  treasure_savegame_variable = "b1169",
 }
 
 teletransporter{
+  name = "to_below",
   layer = 0,
   x = 24,
   y = 584,
   width = 16,
   height = 16,
-  name = "to_below",
   destination_map = "216",
   destination = "from_above",
 }
 
 destination{
+  name = "from_below",
   layer = 0,
   x = 64,
   y = 597,
-  name = "from_below",
   direction = 0,
   default = true,
+}
+
+door{
+  name = "door_boss_1",
+  layer = 0,
+  x = 232,
+  y = 416,
+  direction = 1,
+  sprite = "entities/door_big_key",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "b1167",
+  cannot_open_dialog = "_big_key_required",
+}
+
+door{
+  name = "door_boss_2",
+  layer = 0,
+  x = 232,
+  y = 368,
+  direction = 3,
+  sprite = "entities/door_shutter",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "b1167",
+  cannot_open_dialog = "_big_key_required",
+}
+
+door{
+  name = "door_boss_shutter",
+  layer = 0,
+  x = 664,
+  y = 368,
+  direction = 3,
+  sprite = "entities/door_shutter",
+  opening_condition = "b1167",
+}
+
+door{
+  name = "door_boss_shutter_2",
+  layer = 0,
+  x = 664,
+  y = 416,
+  direction = 1,
+  sprite = "entities/door_shutter",
+  opening_condition = "b1167",
+}
+
+destructible{
+  layer = 0,
+  x = 408,
+  y = 501,
+  treasure_name = "magic_flask",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 392,
+  y = 485,
+  treasure_name = "fairy",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 376,
+  y = 469,
+  treasure_name = "bomb",
+  treasure_variant = 2,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 360,
+  y = 453,
+  treasure_name = "arrow",
+  treasure_variant = 2,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+sensor{
+  name = "sensor_boss",
+  layer = 0,
+  x = 216,
+  y = 357,
+  width = 64,
+  height = 16,
 }
 
 tile{

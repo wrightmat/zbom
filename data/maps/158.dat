@@ -2780,37 +2780,145 @@ tile{
   pattern = "524",
 }
 
+tile{
+  layer = 0,
+  x = 384,
+  y = 720,
+  width = 8,
+  height = 8,
+  pattern = "1692",
+}
+
+tile{
+  layer = 0,
+  x = 552,
+  y = 536,
+  width = 8,
+  height = 8,
+  pattern = "1690",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 248,
+  width = 8,
+  height = 8,
+  pattern = "1690",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 440,
+  width = 8,
+  height = 8,
+  pattern = "1692",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 744,
+  width = 8,
+  height = 8,
+  pattern = "1690",
+}
+
+tile{
+  layer = 0,
+  x = 728,
+  y = 448,
+  width = 8,
+  height = 8,
+  pattern = "1692",
+}
+
+tile{
+  layer = 0,
+  x = 864,
+  y = 120,
+  width = 8,
+  height = 8,
+  pattern = "1690",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 472,
+  width = 8,
+  height = 8,
+  pattern = "1690",
+}
+
+tile{
+  layer = 0,
+  x = 1096,
+  y = 640,
+  width = 8,
+  height = 8,
+  pattern = "1692",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 768,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
 teletransporter{
+  name = "to_B3",
   layer = 0,
   x = 0,
   y = -16,
   width = 1120,
   height = 16,
-  name = "to_B3",
   transition = "scrolling",
   destination_map = "157",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_A4",
   layer = 0,
   x = -16,
   y = 0,
   width = 16,
   height = 848,
-  name = "to_A4",
   transition = "scrolling",
   destination_map = "154",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_C4",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 928,
-  name = "to_C4",
   transition = "scrolling",
   destination_map = "162",
   destination = "_side",
@@ -3716,6 +3824,66 @@ destructible{
   destruction_sound = "bush",
   weight = -1,
   can_be_cut = true,
+}
+
+enemy{
+  name = "tentacle_1",
+  layer = 0,
+  x = 408,
+  y = 453,
+  direction = 0,
+  breed = "tentacle",
+  treasure_name = "random_subrosia",
+}
+
+enemy{
+  name = "tentacle_2",
+  layer = 0,
+  x = 360,
+  y = 197,
+  direction = 0,
+  breed = "tentacle",
+  treasure_name = "random_subrosia",
+}
+
+enemy{
+  name = "tentacle_3",
+  layer = 0,
+  x = 320,
+  y = 789,
+  direction = 0,
+  breed = "tentacle",
+  treasure_name = "random_subrosia",
+}
+
+enemy{
+  name = "tentacle_4",
+  layer = 0,
+  x = 984,
+  y = 133,
+  direction = 0,
+  breed = "tentacle",
+  treasure_name = "random_subrosia",
+}
+
+enemy{
+  name = "tentacle_5",
+  layer = 0,
+  x = 160,
+  y = 61,
+  direction = 0,
+  breed = "tentacle",
+  treasure_name = "random_subrosia",
+}
+
+enemy{
+  name = "tentacle_6",
+  layer = 0,
+  x = 688,
+  y = 141,
+  direction = 0,
+  breed = "tentacle",
+  treasure_name = "random_subrosia",
 }
 
 tile{

@@ -2745,48 +2745,48 @@ tile{
 }
 
 teletransporter{
+  name = "to_A2",
   layer = 0,
   x = -16,
   y = 0,
   width = 16,
   height = 1120,
-  name = "to_A2",
   transition = "scrolling",
   destination_map = "152",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_B1",
   layer = 0,
   x = 0,
   y = -16,
   width = 1120,
   height = 16,
-  name = "to_B1",
   transition = "scrolling",
   destination_map = "155",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_B3",
   layer = 0,
   x = 0,
   y = 1120,
   width = 1120,
   height = 16,
-  name = "to_B3",
   transition = "scrolling",
   destination_map = "157",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_C2",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 1120,
-  name = "to_C2",
   transition = "scrolling",
   destination_map = "160",
   destination = "_side",
@@ -4495,6 +4495,106 @@ destructible{
   destruction_sound = "bush",
   weight = -1,
   can_be_cut = true,
+}
+
+enemy{
+  name = "tentacle_1",
+  layer = 0,
+  x = 736,
+  y = 797,
+  direction = 0,
+  breed = "tentacle",
+  treasure_name = "random_subrosia",
+}
+
+enemy{
+  name = "tentacle_2",
+  layer = 0,
+  x = 584,
+  y = 429,
+  direction = 0,
+  breed = "tentacle",
+  treasure_name = "random_subrosia",
+}
+
+enemy{
+  name = "tentacle_3",
+  layer = 0,
+  x = 960,
+  y = 389,
+  direction = 0,
+  breed = "tentacle",
+  treasure_name = "random_subrosia",
+}
+
+enemy{
+  name = "tentacle_4",
+  layer = 0,
+  x = 960,
+  y = 61,
+  direction = 0,
+  breed = "tentacle",
+  treasure_name = "random_subrosia",
+}
+
+enemy{
+  name = "tentacle_5",
+  layer = 0,
+  x = 296,
+  y = 269,
+  direction = 0,
+  breed = "tentacle",
+  treasure_name = "random_subrosia",
+}
+
+enemy{
+  name = "tentacle_6",
+  layer = 0,
+  x = 160,
+  y = 453,
+  direction = 0,
+  breed = "tentacle",
+  treasure_name = "random_subrosia",
+}
+
+enemy{
+  name = "tentacle_7",
+  layer = 0,
+  x = 224,
+  y = 637,
+  direction = 0,
+  breed = "tentacle",
+  treasure_name = "random_subrosia",
+}
+
+enemy{
+  name = "tentacle_8",
+  layer = 0,
+  x = 368,
+  y = 1005,
+  direction = 0,
+  breed = "tentacle",
+  treasure_name = "random_subrosia",
+}
+
+enemy{
+  name = "tentacle_9",
+  layer = 0,
+  x = 528,
+  y = 925,
+  direction = 0,
+  breed = "tentacle",
+  treasure_name = "random_subrosia",
+}
+
+enemy{
+  name = "tentacle_10",
+  layer = 0,
+  x = 944,
+  y = 917,
+  direction = 0,
+  breed = "tentacle",
+  treasure_name = "random_subrosia",
 }
 
 tile{

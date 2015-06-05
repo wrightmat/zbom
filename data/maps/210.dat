@@ -4672,93 +4672,93 @@ tile{
 }
 
 teletransporter{
+  name = "to_outside",
   layer = 0,
   x = 232,
   y = 768,
   width = 16,
   height = 16,
-  name = "to_outside",
   destination_map = "55",
   destination = "from_tower",
 }
 
 destination{
+  name = "from_outside",
   layer = 0,
   x = 240,
   y = 757,
-  name = "from_outside",
   direction = 1,
   default = true,
 }
 
 enemy{
+  name = "hardhat_1",
   layer = 0,
   x = 200,
   y = 493,
-  name = "hardhat_1",
   direction = 3,
   breed = "hardhat_beetle_red",
 }
 
 enemy{
+  name = "hardhat_2",
   layer = 0,
   x = 360,
   y = 493,
-  name = "hardhat_2",
   direction = 3,
   breed = "hardhat_beetle_red",
 }
 
 enemy{
+  name = "hardhat_3",
   layer = 0,
   x = 304,
   y = 541,
-  name = "hardhat_3",
   direction = 3,
   breed = "hardhat_beetle_red",
 }
 
 enemy{
+  name = "hardhat_4",
   layer = 0,
   x = 232,
   y = 605,
-  name = "hardhat_4",
   direction = 3,
   breed = "hardhat_beetle_red",
 }
 
 enemy{
+  name = "hardhat_5",
   layer = 0,
   x = 144,
   y = 549,
-  name = "hardhat_5",
   direction = 3,
   breed = "hardhat_beetle_red",
 }
 
 enemy{
+  name = "octorok_1",
   layer = 0,
   x = 568,
   y = 205,
-  name = "octorok_1",
   direction = 3,
   breed = "octorok_red",
 }
 
 enemy{
+  name = "octorok_2",
   layer = 0,
   x = 760,
   y = 309,
-  name = "octorok_2",
   direction = 3,
   breed = "octorok_red",
 }
 
 enemy{
+  name = "octorok_3",
   layer = 0,
   x = 696,
   y = 125,
-  name = "octorok_3",
   direction = 3,
   breed = "octorok_red",
 }
@@ -4769,8 +4769,8 @@ wall{
   y = 360,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -4781,8 +4781,8 @@ wall{
   y = 360,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -4793,28 +4793,28 @@ wall{
   y = 432,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 teletransporter{
+  name = "to_floor_2",
   layer = 0,
   x = 456,
   y = 584,
   width = 16,
   height = 16,
-  name = "to_floor_2",
   destination_map = "211",
   destination = "from_floor_1",
 }
 
 destination{
+  name = "from_floor_2",
   layer = 0,
   x = 496,
   y = 597,
-  name = "from_floor_2",
   direction = 0,
 }
 
@@ -4824,55 +4824,55 @@ wall{
   y = 432,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 destination{
+  name = "from_left",
   layer = 0,
   x = 672,
   y = 69,
-  name = "from_left",
   direction = 3,
 }
 
 destination{
+  name = "from_right",
   layer = 0,
   x = 240,
   y = 69,
-  name = "from_right",
   direction = 3,
 }
 
 teletransporter{
+  name = "to_right",
   layer = 0,
   x = 232,
   y = 24,
   width = 16,
   height = 16,
-  name = "to_right",
   destination_map = "210",
   destination = "from_left",
 }
 
 teletransporter{
+  name = "to_left",
   layer = 0,
   x = 664,
   y = 24,
   width = 16,
   height = 16,
-  name = "to_left",
   destination_map = "210",
   destination = "from_right",
 }
 
 enemy{
+  name = "boulder_1",
   layer = 0,
   x = 72,
   y = 229,
-  name = "boulder_1",
   direction = 0,
   breed = "boulder",
 }
@@ -4886,7 +4886,7 @@ crystal{
 crystal{
   layer = 0,
   x = 312,
-  y = 189,
+  y = 253,
 }
 
 crystal_block{
@@ -4895,7 +4895,7 @@ crystal_block{
   y = 176,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -4904,7 +4904,7 @@ crystal_block{
   y = 160,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -4913,7 +4913,7 @@ crystal_block{
   y = 144,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -4922,7 +4922,7 @@ crystal_block{
   y = 144,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -4931,7 +4931,7 @@ crystal_block{
   y = 144,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -4940,7 +4940,7 @@ crystal_block{
   y = 144,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -4949,7 +4949,7 @@ crystal_block{
   y = 144,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -4958,7 +4958,7 @@ crystal_block{
   y = 160,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -4967,113 +4967,113 @@ crystal_block{
   y = 176,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
   layer = 0,
   x = 272,
-  y = 208,
+  y = 272,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
   layer = 0,
   x = 288,
-  y = 208,
+  y = 272,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
   layer = 0,
   x = 304,
-  y = 208,
+  y = 272,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
   layer = 0,
   x = 320,
-  y = 208,
+  y = 272,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
   layer = 0,
   x = 336,
-  y = 208,
+  y = 272,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
   layer = 0,
   x = 336,
-  y = 192,
+  y = 256,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
   layer = 0,
   x = 336,
-  y = 176,
+  y = 240,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
   layer = 0,
   x = 272,
-  y = 176,
+  y = 240,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
   layer = 0,
   x = 272,
-  y = 192,
+  y = 256,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 enemy{
-  layer = 0,
-  x = 152,
-  y = 285,
   name = "deadrock_1",
+  layer = 0,
+  x = 136,
+  y = 301,
   direction = 3,
   breed = "deadrock",
 }
 
 enemy{
-  layer = 0,
-  x = 248,
-  y = 253,
   name = "deadrock_2",
+  layer = 0,
+  x = 232,
+  y = 269,
   direction = 3,
   breed = "deadrock",
 }
 
 enemy{
-  layer = 0,
-  x = 328,
-  y = 285,
   name = "deadrock_3",
+  layer = 0,
+  x = 376,
+  y = 301,
   direction = 3,
   breed = "deadrock",
 }
@@ -5084,7 +5084,7 @@ crystal_block{
   y = 552,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
@@ -5093,7 +5093,7 @@ crystal_block{
   y = 552,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
@@ -5102,7 +5102,7 @@ crystal_block{
   y = 568,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
@@ -5111,7 +5111,7 @@ crystal_block{
   y = 584,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
@@ -5120,7 +5120,7 @@ crystal_block{
   y = 600,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
@@ -5129,7 +5129,7 @@ crystal_block{
   y = 616,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
@@ -5138,53 +5138,53 @@ crystal_block{
   y = 616,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 enemy{
+  name = "deadrock_4",
   layer = 0,
   x = 664,
   y = 613,
-  name = "deadrock_4",
   direction = 3,
   breed = "deadrock",
 }
 
 enemy{
+  name = "deadrock_5",
   layer = 0,
   x = 776,
   y = 581,
-  name = "deadrock_5",
   direction = 3,
   breed = "deadrock",
 }
 
 enemy{
+  name = "deadrock_6",
   layer = 0,
   x = 632,
   y = 509,
-  name = "deadrock_6",
   direction = 3,
   breed = "deadrock",
 }
 
 npc{
+  name = "hint_1",
   layer = 0,
   x = 184,
   y = 429,
-  name = "hint_1",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   behavior = "dialog#hint_stone.tower.1.1",
 }
 
 npc{
+  name = "hint_2",
   layer = 0,
   x = 304,
   y = 429,
-  name = "hint_2",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   behavior = "dialog#hint_stone.tower.1.2",
 }
 
@@ -5194,8 +5194,8 @@ wall{
   y = 56,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -5206,8 +5206,8 @@ wall{
   y = 56,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -5218,8 +5218,8 @@ wall{
   y = 576,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -5230,8 +5230,8 @@ wall{
   y = 736,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -5239,37 +5239,37 @@ wall{
 crystal_block{
   layer = 0,
   x = 352,
-  y = 176,
+  y = 240,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
   layer = 0,
   x = 368,
-  y = 176,
+  y = 240,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
   layer = 0,
   x = 384,
-  y = 176,
+  y = 240,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
   layer = 0,
   x = 400,
-  y = 176,
+  y = 240,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
@@ -5278,7 +5278,7 @@ crystal_block{
   y = 176,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -5287,7 +5287,7 @@ crystal_block{
   y = 176,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -5296,7 +5296,7 @@ crystal_block{
   y = 176,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -5305,7 +5305,79 @@ crystal_block{
   y = 176,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
+}
+
+crystal_block{
+  layer = 0,
+  x = 144,
+  y = 240,
+  width = 16,
+  height = 16,
+  subtype = 1,
+}
+
+crystal_block{
+  layer = 0,
+  x = 160,
+  y = 240,
+  width = 16,
+  height = 16,
+  subtype = 1,
+}
+
+crystal_block{
+  layer = 0,
+  x = 176,
+  y = 240,
+  width = 16,
+  height = 16,
+  subtype = 1,
+}
+
+crystal_block{
+  layer = 0,
+  x = 288,
+  y = 176,
+  width = 16,
+  height = 16,
+  subtype = 0,
+}
+
+crystal_block{
+  layer = 0,
+  x = 304,
+  y = 176,
+  width = 16,
+  height = 16,
+  subtype = 0,
+}
+
+crystal_block{
+  layer = 0,
+  x = 320,
+  y = 176,
+  width = 16,
+  height = 16,
+  subtype = 0,
+}
+
+crystal_block{
+  layer = 0,
+  x = 192,
+  y = 192,
+  width = 16,
+  height = 16,
+  subtype = 0,
+}
+
+crystal_block{
+  layer = 0,
+  x = 272,
+  y = 224,
+  width = 16,
+  height = 16,
+  subtype = 1,
 }
 
 tile{
@@ -5327,28 +5399,28 @@ tile{
 }
 
 enemy{
+  name = "keese_1",
   layer = 1,
   x = 576,
   y = 109,
-  name = "keese_1",
   direction = 3,
   breed = "keese",
 }
 
 enemy{
+  name = "keese_3",
   layer = 1,
   x = 768,
   y = 149,
-  name = "keese_3",
   direction = 3,
   breed = "keese",
 }
 
 enemy{
+  name = "keese_2",
   layer = 1,
   x = 624,
   y = 261,
-  name = "keese_2",
   direction = 3,
   breed = "keese",
 }

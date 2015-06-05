@@ -8622,51 +8622,123 @@ tile{
   pattern = "584",
 }
 
+tile{
+  layer = 0,
+  x = 656,
+  y = 760,
+  width = 8,
+  height = 16,
+  pattern = "106",
+}
+
+tile{
+  layer = 0,
+  x = 680,
+  y = 760,
+  width = 8,
+  height = 16,
+  pattern = "106",
+}
+
+tile{
+  layer = 0,
+  x = 664,
+  y = 776,
+  width = 16,
+  height = 8,
+  pattern = "105",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "606",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 32,
+  width = 32,
+  height = 24,
+  pattern = "51",
+}
+
+tile{
+  layer = 0,
+  x = 24,
+  y = 576,
+  width = 16,
+  height = 8,
+  pattern = "105",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 584,
+  width = 8,
+  height = 16,
+  pattern = "106",
+}
+
+tile{
+  layer = 0,
+  x = 24,
+  y = 600,
+  width = 16,
+  height = 8,
+  pattern = "105",
+}
+
 destination{
+  name = "from_below",
   layer = 0,
   x = 672,
   y = 741,
-  name = "from_below",
   direction = 3,
 }
 
 teletransporter{
+  name = "to_below",
   layer = 0,
   x = 664,
   y = 760,
   width = 16,
   height = 16,
-  name = "to_below",
   destination_map = "215",
   destination = "from_above",
 }
 
 chest{
-  layer = 0,
-  x = 680,
-  y = 269,
   name = "chest_map",
+  layer = 0,
+  x = 728,
+  y = 173,
   treasure_name = "map",
   treasure_savegame_variable = "b1161",
   sprite = "entities/chest",
 }
 
 destination{
+  name = "from_above",
   layer = 0,
   x = 64,
   y = 597,
-  name = "from_above",
   direction = 0,
   default = true,
 }
 
 teletransporter{
+  name = "to_above",
   layer = 0,
   x = 24,
   y = 584,
   width = 16,
   height = 16,
-  name = "to_above",
   destination_map = "217",
   destination = "from_below",
 }

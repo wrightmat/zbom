@@ -4698,112 +4698,121 @@ tile{
   pattern = "603",
 }
 
+tile{
+  layer = 0,
+  x = 656,
+  y = 32,
+  width = 32,
+  height = 24,
+  pattern = "51",
+}
+
 teletransporter{
+  name = "to_floor_3",
   layer = 0,
   x = 456,
   y = 584,
   width = 16,
   height = 16,
-  name = "to_floor_3",
   destination_map = "212",
   destination = "from_floor_2",
 }
 
 door{
+  name = "door_shutter",
   layer = 0,
   x = 472,
   y = 584,
-  name = "door_shutter",
   direction = 2,
   sprite = "entities/door_shutter",
 }
 
 enemy{
+  name = "hardhat_1",
   layer = 0,
   x = 112,
   y = 189,
-  name = "hardhat_1",
   direction = 3,
   breed = "hardhat_beetle_blue",
 }
 
 enemy{
+  name = "hardhat_2",
   layer = 0,
   x = 112,
   y = 285,
-  name = "hardhat_2",
   direction = 3,
   breed = "hardhat_beetle_blue",
 }
 
 enemy{
+  name = "hardhat_3",
   layer = 0,
   x = 360,
   y = 197,
-  name = "hardhat_3",
   direction = 3,
   breed = "hardhat_beetle_blue",
 }
 
 enemy{
+  name = "hardhat_4",
   layer = 0,
   x = 360,
   y = 349,
-  name = "hardhat_4",
   direction = 3,
   breed = "hardhat_beetle_blue",
 }
 
 enemy{
+  name = "bari_1",
   layer = 0,
   x = 600,
   y = 197,
-  name = "bari_1",
   direction = 3,
   breed = "bari_blue",
 }
 
 enemy{
+  name = "bari_2",
   layer = 0,
   x = 608,
   y = 293,
-  name = "bari_2",
   direction = 3,
   breed = "bari_blue",
 }
 
 enemy{
+  name = "bari_3",
   layer = 0,
   x = 712,
   y = 205,
-  name = "bari_3",
   direction = 3,
   breed = "bari_blue",
 }
 
 enemy{
+  name = "bari_4",
   layer = 0,
   x = 776,
   y = 293,
-  name = "bari_4",
   direction = 3,
   breed = "bari_blue",
 }
 
 enemy{
+  name = "bari_5",
   layer = 0,
   x = 784,
   y = 101,
-  name = "bari_5",
   direction = 3,
   breed = "bari_blue",
 }
 
 enemy{
+  name = "bari_6",
   layer = 0,
   x = 640,
   y = 109,
-  name = "bari_6",
   direction = 3,
   breed = "bari_blue",
 }
@@ -4814,8 +4823,8 @@ wall{
   y = 432,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -4826,8 +4835,8 @@ wall{
   y = 360,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -4838,8 +4847,8 @@ wall{
   y = 200,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -4850,8 +4859,8 @@ wall{
   y = 200,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -4862,92 +4871,92 @@ wall{
   y = 360,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 destination{
+  name = "from_floor_1",
   layer = 0,
   x = 64,
   y = 597,
-  name = "from_floor_1",
   direction = 0,
   default = true,
 }
 
 teletransporter{
+  name = "to_floor_1",
   layer = 0,
   x = 24,
   y = 584,
   width = 16,
   height = 16,
-  name = "to_floor_1",
   destination_map = "210",
   destination = "from_floor_2",
 }
 
 destination{
+  name = "from_floor_3",
   layer = 0,
   x = 496,
   y = 597,
-  name = "from_floor_3",
   direction = 0,
 }
 
 enemy{
+  name = "hardhat_5",
   layer = 0,
   x = 288,
   y = 149,
-  name = "hardhat_5",
   direction = 3,
   breed = "hardhat_beetle_blue",
 }
 
 destructible{
+  name = "hookshot_1",
   layer = 0,
   x = 248,
   y = 221,
-  name = "hookshot_1",
   sprite = "entities/items",
   weight = -1,
   damage_on_enemies = 0,
 }
 
 destructible{
+  name = "hookshot_2",
   layer = 0,
   x = 104,
   y = 125,
-  name = "hookshot_2",
   sprite = "entities/items",
   weight = -1,
   damage_on_enemies = 0,
 }
 
 enemy{
+  name = "hardhat_room1_1",
   layer = 0,
   x = 176,
   y = 517,
-  name = "hardhat_room1_1",
   direction = 3,
   breed = "hardhat_beetle_blue",
 }
 
 enemy{
+  name = "hardhat_room1_2",
   layer = 0,
   x = 304,
   y = 677,
-  name = "hardhat_room1_2",
   direction = 3,
   breed = "hardhat_beetle_blue",
 }
 
 destructible{
+  name = "hookshot_3",
   layer = 0,
   x = 648,
   y = 237,
-  name = "hookshot_3",
   sprite = "entities/items",
   weight = -1,
   damage_on_enemies = 0,
@@ -5004,38 +5013,38 @@ jumper{
 }
 
 npc{
+  name = "hint",
   layer = 0,
   x = 304,
   y = 429,
-  name = "hint",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   behavior = "dialog#hint_stone.tower.2",
 }
 
 door{
+  name = "door_puzzle_2",
   layer = 0,
   x = 664,
   y = 416,
-  name = "door_puzzle_2",
   direction = 1,
   sprite = "entities/door_shutter",
 }
 
 door{
+  name = "door_puzzle_1",
   layer = 0,
   x = 664,
   y = 368,
-  name = "door_puzzle_1",
   direction = 3,
   sprite = "entities/door_shutter",
 }
 
 switch{
+  name = "switch_arrow_1",
   layer = 0,
   x = 752,
   y = 48,
-  name = "switch_arrow_1",
   subtype = "arrow_target",
   sprite = "entities/switch_eye_down",
   sound = "arrow_hit",
@@ -5044,10 +5053,10 @@ switch{
 }
 
 switch{
+  name = "switch_arrow_2",
   layer = 0,
   x = 848,
   y = 208,
-  name = "switch_arrow_2",
   subtype = "arrow_target",
   sprite = "entities/switch_eye_left",
   sound = "arrow_hit",
@@ -5056,10 +5065,10 @@ switch{
 }
 
 switch{
+  name = "switch_arrow_3",
   layer = 0,
   x = 592,
   y = 360,
-  name = "switch_arrow_3",
   subtype = "arrow_target",
   sprite = "entities/switch_eye_up",
   sound = "arrow_hit",
@@ -5068,10 +5077,10 @@ switch{
 }
 
 switch{
+  name = "switch_arrow_4",
   layer = 0,
   x = 736,
   y = 360,
-  name = "switch_arrow_4",
   subtype = "arrow_target",
   sprite = "entities/switch_eye_up",
   sound = "arrow_hit",
@@ -5080,144 +5089,120 @@ switch{
 }
 
 custom_entity{
+  name = "ice_block_1",
   layer = 0,
   x = 760,
   y = 77,
-  width = 16,
-  height = 16,
-  name = "ice_block_1",
   direction = 3,
   sprite = "entities/ice_block",
   model = "ice_block",
 }
 
 custom_entity{
+  name = "ice_block_2",
   layer = 0,
   x = 840,
   y = 221,
-  width = 16,
-  height = 16,
-  name = "ice_block_2",
   direction = 3,
   sprite = "entities/ice_block",
   model = "ice_block",
 }
 
 custom_entity{
+  name = "ice_block_3",
   layer = 0,
   x = 600,
   y = 349,
-  width = 16,
-  height = 16,
-  name = "ice_block_3",
   direction = 3,
   sprite = "entities/ice_block",
   model = "ice_block",
 }
 
 custom_entity{
+  name = "ice_block_4",
   layer = 0,
   x = 744,
   y = 349,
-  width = 16,
-  height = 16,
-  name = "ice_block_4",
   direction = 3,
   sprite = "entities/ice_block",
   model = "ice_block",
 }
 
 custom_entity{
+  name = "ice_block_5",
   layer = 0,
   x = 584,
   y = 349,
-  width = 16,
-  height = 16,
-  name = "ice_block_5",
   direction = 3,
   sprite = "entities/ice_block",
   model = "ice_block",
 }
 
 custom_entity{
+  name = "ice_block_6",
   layer = 0,
   x = 616,
   y = 349,
-  width = 16,
-  height = 16,
-  name = "ice_block_6",
   direction = 3,
   sprite = "entities/ice_block",
   model = "ice_block",
 }
 
 custom_entity{
+  name = "ice_block_7",
   layer = 0,
   x = 728,
   y = 349,
-  width = 16,
-  height = 16,
-  name = "ice_block_7",
   direction = 3,
   sprite = "entities/ice_block",
   model = "ice_block",
 }
 
 custom_entity{
+  name = "ice_block_8",
   layer = 0,
   x = 760,
   y = 349,
-  width = 16,
-  height = 16,
-  name = "ice_block_8",
   direction = 3,
   sprite = "entities/ice_block",
   model = "ice_block",
 }
 
 custom_entity{
+  name = "ice_block_9",
   layer = 0,
   x = 744,
   y = 77,
-  width = 16,
-  height = 16,
-  name = "ice_block_9",
   direction = 3,
   sprite = "entities/ice_block",
   model = "ice_block",
 }
 
 custom_entity{
+  name = "ice_block_10",
   layer = 0,
   x = 776,
   y = 77,
-  width = 16,
-  height = 16,
-  name = "ice_block_10",
   direction = 3,
   sprite = "entities/ice_block",
   model = "ice_block",
 }
 
 custom_entity{
+  name = "ice_block_11",
   layer = 0,
   x = 840,
   y = 205,
-  width = 16,
-  height = 16,
-  name = "ice_block_11",
   direction = 3,
   sprite = "entities/ice_block",
   model = "ice_block",
 }
 
 custom_entity{
+  name = "ice_block_12",
   layer = 0,
   x = 840,
   y = 237,
-  width = 16,
-  height = 16,
-  name = "ice_block_12",
   direction = 3,
   sprite = "entities/ice_block",
   model = "ice_block",
@@ -5229,8 +5214,8 @@ wall{
   y = 432,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -5241,56 +5226,8 @@ wall{
   y = 576,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 464,
-  y = 416,
-  width = 8,
-  height = 344,
   stops_enemies = true,
-  stops_npcs = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 464,
-  y = 408,
-  width = 416,
-  height = 8,
-  stops_enemies = true,
-  stops_npcs = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 872,
-  y = 416,
-  width = 8,
-  height = 344,
-  stops_enemies = true,
-  stops_npcs = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 464,
-  y = 760,
-  width = 416,
-  height = 8,
-  stops_enemies = true,
-  stops_npcs = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -5305,102 +5242,150 @@ tile{
 }
 
 enemy{
+  name = "keese_5",
   layer = 1,
   x = 552,
   y = 501,
-  name = "keese_5",
   direction = 3,
   breed = "keese_ice",
 }
 
 enemy{
+  name = "keese_10",
   layer = 1,
   x = 616,
   y = 477,
-  name = "keese_10",
   direction = 3,
   breed = "keese_ice",
 }
 
 enemy{
+  name = "keese_1",
   layer = 1,
   x = 608,
   y = 597,
-  name = "keese_1",
   direction = 3,
   breed = "keese_ice",
 }
 
 enemy{
+  name = "keese_6",
   layer = 1,
   x = 552,
   y = 677,
-  name = "keese_6",
   direction = 3,
   breed = "keese_ice",
 }
 
 enemy{
+  name = "keese_4",
   layer = 1,
   x = 680,
   y = 677,
-  name = "keese_4",
   direction = 3,
   breed = "keese_ice",
 }
 
 enemy{
+  name = "keese_9",
   layer = 1,
   x = 680,
   y = 597,
-  name = "keese_9",
   direction = 3,
   breed = "keese_ice",
 }
 
 enemy{
+  name = "keese_2",
   layer = 1,
   x = 672,
   y = 517,
-  name = "keese_2",
   direction = 3,
   breed = "keese_ice",
 }
 
 enemy{
+  name = "keese_7",
   layer = 1,
   x = 768,
   y = 493,
-  name = "keese_7",
   direction = 3,
   breed = "keese_ice",
 }
 
 enemy{
+  name = "keese_3",
   layer = 1,
   x = 760,
   y = 597,
-  name = "keese_3",
   direction = 3,
   breed = "keese_ice",
 }
 
 enemy{
+  name = "keese_8",
   layer = 1,
   x = 784,
   y = 685,
-  name = "keese_8",
   direction = 3,
   breed = "keese_ice",
 }
 
 enemy{
+  name = "keese_dark",
   layer = 1,
   x = 728,
   y = 557,
-  name = "keese_dark",
   direction = 3,
   breed = "keese_dark",
+}
+
+wall{
+  layer = 1,
+  x = 464,
+  y = 408,
+  width = 416,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 464,
+  y = 416,
+  width = 8,
+  height = 344,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 464,
+  y = 760,
+  width = 416,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 872,
+  y = 416,
+  width = 8,
+  height = 344,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{
@@ -5584,13 +5569,13 @@ tile{
 }
 
 dynamic_tile{
+  name = "tile",
   layer = 2,
   x = 0,
   y = 768,
+  pattern = "137",
   width = 912,
   height = 32,
-  name = "tile",
-  pattern = "137",
   enabled_at_start = true,
 }
 

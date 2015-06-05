@@ -11,6 +11,24 @@ properties{
 
 tile{
   layer = 0,
+  x = 424,
+  y = 136,
+  width = 64,
+  height = 528,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
+  x = 424,
+  y = 248,
+  width = 64,
+  height = 48,
+  pattern = "524",
+}
+
+tile{
+  layer = 0,
   x = 488,
   y = 312,
   width = 80,
@@ -29,19 +47,19 @@ tile{
 
 tile{
   layer = 0,
-  x = 560,
-  y = 64,
-  width = 288,
-  height = 272,
+  x = 552,
+  y = 56,
+  width = 304,
+  height = 256,
   pattern = "22",
 }
 
 tile{
   layer = 0,
-  x = 64,
+  x = 56,
   y = 488,
-  width = 288,
-  height = 272,
+  width = 304,
+  height = 256,
   pattern = "22",
 }
 
@@ -155,19 +173,10 @@ tile{
 
 tile{
   layer = 0,
-  x = 424,
-  y = 136,
-  width = 64,
-  height = 528,
-  pattern = "22",
-}
-
-tile{
-  layer = 0,
-  x = 408,
+  x = 392,
   y = 360,
-  width = 96,
-  height = 80,
+  width = 128,
+  height = 64,
   pattern = "524",
 }
 
@@ -10044,14 +10053,32 @@ tile{
   pattern = "105",
 }
 
+tile{
+  layer = 0,
+  x = 688,
+  y = 32,
+  width = 32,
+  height = 24,
+  pattern = "51",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 32,
+  width = 32,
+  height = 24,
+  pattern = "51",
+}
+
 wall{
   layer = 0,
   x = 192,
   y = 480,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -10062,8 +10089,8 @@ wall{
   y = 480,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -10074,104 +10101,495 @@ wall{
   y = 136,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 destination{
+  name = "from_above",
   layer = 0,
   x = 456,
   y = 157,
-  name = "from_above",
   direction = 3,
 }
 
 npc{
+  name = "hint",
   layer = 0,
   x = 632,
   y = 381,
-  name = "hint",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   behavior = "dialog#hint_stone.tower.6",
 }
 
 teletransporter{
+  name = "to_above",
   layer = 0,
   x = 448,
   y = 104,
   width = 16,
   height = 16,
-  name = "to_above",
   destination_map = "216",
   destination = "from_below",
 }
 
 teletransporter{
+  name = "to_below",
   layer = 0,
   x = 696,
   y = 448,
   width = 16,
   height = 16,
-  name = "to_below",
   destination_map = "214",
   destination = "from_floor_6",
 }
 
 destination{
+  name = "from_below",
   layer = 0,
   x = 704,
   y = 493,
-  name = "from_below",
   direction = 3,
   default = true,
 }
 
 sensor{
-  layer = 0,
-  x = 408,
-  y = 373,
-  width = 112,
-  height = 80,
   name = "sensor_hole",
+  layer = 0,
+  x = 400,
+  y = 365,
+  width = 128,
+  height = 80,
 }
 
 enemy{
+  name = "armos_big_1",
   layer = 0,
   x = 368,
   y = 380,
-  name = "armos_big_1",
   direction = 3,
   breed = "armos_big",
 }
 
 enemy{
+  name = "armos_big_2",
   layer = 0,
   x = 528,
   y = 380,
-  name = "armos_big_2",
   direction = 3,
   breed = "armos_big",
 }
 
 enemy{
+  name = "laser_1",
   layer = 0,
   x = 376,
   y = 400,
-  name = "laser_1",
   direction = 3,
   breed = "laser",
 }
 
 enemy{
+  name = "laser_2",
   layer = 0,
   x = 536,
   y = 400,
-  name = "laser_2",
   direction = 3,
   breed = "laser",
+}
+
+enemy{
+  name = "bubble_2",
+  layer = 0,
+  x = 704,
+  y = 213,
+  direction = 0,
+  breed = "bubble_red",
+}
+
+enemy{
+  layer = 0,
+  x = 624,
+  y = 133,
+  direction = 0,
+  breed = "evil_tile",
+}
+
+switch{
+  name = "switch_1",
+  layer = 0,
+  x = 696,
+  y = 104,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  sound = "switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+enemy{
+  layer = 0,
+  x = 624,
+  y = 117,
+  direction = 0,
+  breed = "evil_tile",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 640,
+  y = 117,
+  direction = 0,
+  breed = "evil_tile",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 640,
+  y = 133,
+  direction = 0,
+  breed = "evil_tile",
+}
+
+enemy{
+  layer = 0,
+  x = 624,
+  y = 149,
+  direction = 0,
+  breed = "evil_tile",
+}
+
+enemy{
+  layer = 0,
+  x = 640,
+  y = 149,
+  direction = 0,
+  breed = "evil_tile",
+}
+
+enemy{
+  layer = 0,
+  x = 656,
+  y = 149,
+  direction = 0,
+  breed = "evil_tile",
+}
+
+enemy{
+  layer = 0,
+  x = 672,
+  y = 149,
+  direction = 0,
+  breed = "evil_tile",
+}
+
+enemy{
+  layer = 0,
+  x = 688,
+  y = 149,
+  direction = 0,
+  breed = "evil_tile",
+}
+
+enemy{
+  layer = 0,
+  x = 704,
+  y = 149,
+  direction = 0,
+  breed = "evil_tile",
+}
+
+enemy{
+  layer = 0,
+  x = 720,
+  y = 149,
+  direction = 0,
+  breed = "evil_tile",
+}
+
+enemy{
+  layer = 0,
+  x = 736,
+  y = 149,
+  direction = 0,
+  breed = "evil_tile",
+}
+
+enemy{
+  layer = 0,
+  x = 656,
+  y = 133,
+  direction = 0,
+  breed = "evil_tile",
+}
+
+enemy{
+  layer = 0,
+  x = 656,
+  y = 117,
+  direction = 0,
+  breed = "evil_tile",
+}
+
+enemy{
+  layer = 0,
+  x = 752,
+  y = 149,
+  direction = 0,
+  breed = "evil_tile",
+}
+
+enemy{
+  layer = 0,
+  x = 752,
+  y = 133,
+  direction = 0,
+  breed = "evil_tile",
+}
+
+enemy{
+  layer = 0,
+  x = 752,
+  y = 117,
+  direction = 0,
+  breed = "evil_tile",
+}
+
+enemy{
+  layer = 0,
+  x = 768,
+  y = 117,
+  direction = 0,
+  breed = "evil_tile",
+}
+
+enemy{
+  layer = 0,
+  x = 768,
+  y = 133,
+  direction = 0,
+  breed = "evil_tile",
+}
+
+enemy{
+  layer = 0,
+  x = 768,
+  y = 149,
+  direction = 0,
+  breed = "evil_tile",
+}
+
+enemy{
+  layer = 0,
+  x = 784,
+  y = 117,
+  direction = 0,
+  breed = "evil_tile",
+}
+
+enemy{
+  layer = 0,
+  x = 784,
+  y = 133,
+  direction = 0,
+  breed = "evil_tile",
+}
+
+enemy{
+  layer = 0,
+  x = 784,
+  y = 149,
+  direction = 0,
+  breed = "evil_tile",
+}
+
+enemy{
+  layer = 0,
+  x = 624,
+  y = 165,
+  direction = 0,
+  breed = "evil_tile",
+}
+
+enemy{
+  layer = 0,
+  x = 640,
+  y = 165,
+  direction = 0,
+  breed = "evil_tile",
+}
+
+enemy{
+  layer = 0,
+  x = 656,
+  y = 165,
+  direction = 0,
+  breed = "evil_tile",
+}
+
+enemy{
+  layer = 0,
+  x = 672,
+  y = 165,
+  direction = 0,
+  breed = "evil_tile",
+}
+
+enemy{
+  layer = 0,
+  x = 688,
+  y = 165,
+  direction = 0,
+  breed = "evil_tile",
+}
+
+enemy{
+  layer = 0,
+  x = 704,
+  y = 165,
+  direction = 0,
+  breed = "evil_tile",
+}
+
+enemy{
+  layer = 0,
+  x = 720,
+  y = 165,
+  direction = 0,
+  breed = "evil_tile",
+}
+
+enemy{
+  layer = 0,
+  x = 736,
+  y = 165,
+  direction = 0,
+  breed = "evil_tile",
+}
+
+enemy{
+  layer = 0,
+  x = 752,
+  y = 165,
+  direction = 0,
+  breed = "evil_tile",
+}
+
+enemy{
+  layer = 0,
+  x = 768,
+  y = 165,
+  direction = 0,
+  breed = "evil_tile",
+}
+
+enemy{
+  layer = 0,
+  x = 784,
+  y = 165,
+  direction = 0,
+  breed = "evil_tile",
+}
+
+npc{
+  name = "block_1",
+  layer = 0,
+  x = 448,
+  y = 325,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/block",
+}
+
+npc{
+  name = "block_2",
+  layer = 0,
+  x = 464,
+  y = 229,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/block",
+}
+
+switch{
+  name = "switch_2",
+  layer = 0,
+  x = 200,
+  y = 696,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  sound = "switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+door{
+  name = "door_key2_1",
+  layer = 0,
+  x = 200,
+  y = 416,
+  direction = 3,
+  sprite = "entities/door_small_key",
+  savegame_variable = "b1174",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_7_small_keys",
+  opening_condition_consumed = true,
+  cannot_open_dialog = "_small_key_required",
+}
+
+door{
+  name = "door_key2_2",
+  layer = 0,
+  x = 200,
+  y = 464,
+  direction = 1,
+  sprite = "entities/door_shutter",
+  savegame_variable = "b1174",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_7_small_keys",
+  opening_condition_consumed = true,
+  cannot_open_dialog = "_small_key_required",
+}
+
+enemy{
+  name = "wizzrobe_1",
+  layer = 0,
+  x = 152,
+  y = 205,
+  direction = 3,
+  breed = "wizzrobe",
+}
+
+enemy{
+  name = "wizzrobe_2",
+  layer = 0,
+  x = 216,
+  y = 109,
+  direction = 3,
+  breed = "wizzrobe",
+}
+
+enemy{
+  name = "wizzrobe_3",
+  layer = 0,
+  x = 312,
+  y = 173,
+  direction = 3,
+  breed = "wizzrobe",
+}
+
+sensor{
+  name = "sensor_miniboss",
+  layer = 0,
+  x = 192,
+  y = 501,
+  width = 48,
+  height = 16,
 }
 
 tile{

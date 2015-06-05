@@ -296,6 +296,7 @@ sprite{ id = "enemies/vire", description = "Vire" }
 sprite{ id = "enemies/vire_sorceror", description = "Vire Sorceror" }
 sprite{ id = "enemies/wallmaster", description = "Wallmaster" }
 sprite{ id = "enemies/wizzrobe", description = "Wizzrobe" }
+sprite{ id = "enemies/wizzrobe_beam", description = "Wizzrobe Beam" }
 sprite{ id = "enemies/wizzrobe_fire", description = "Wizzrobe, Fire" }
 sprite{ id = "enemies/wizzrobe_ice", description = "Wizzrobe, Ice" }
 sprite{ id = "enemies/zirna", description = "Zirna" }
@@ -696,6 +697,7 @@ item{ id = "ore", description = "Subrosian Ore" }
 item{ id = "ore_counter", description = "Subrosian Ore counter" }
 item{ id = "plume", description = "Goddess Plume" }
 item{ id = "plume_counter", description = "Goddess Plume counter" }
+item{ id = "poe_soul", description = "Poe Soul" }
 item{ id = "potion", description = "Potion (Red / Green / Blue)" }
 item{ id = "pumpkin", description = "Pumpkin (x1)" }
 item{ id = "pumpkin_counter", description = "Pumpkin counter" }
@@ -800,6 +802,8 @@ enemy{ id = "tentacle", description = "Tentacle" }
 enemy{ id = "vire", description = "Vire" }
 enemy{ id = "vire_sorceror", description = "Vire Sorceror (Boss)" }
 enemy{ id = "wallmaster", description = "Wallmaster" }
+enemy{ id = "wizzrobe", description = "Wizzrobe" }
+enemy{ id = "wizzrobe_beam", description = "Wizzrobe Beam" }
 enemy{ id = "zirna", description = "Zirna (Dark Interloper)" }
 
 entity{ id = "butterfly", description = "Butterfly" }

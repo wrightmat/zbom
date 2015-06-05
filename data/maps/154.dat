@@ -2204,25 +2204,124 @@ tile{
   pattern = "524",
 }
 
+tile{
+  layer = 0,
+  x = 552,
+  y = 216,
+  width = 8,
+  height = 8,
+  pattern = "1690",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 696,
+  width = 8,
+  height = 8,
+  pattern = "1692",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 64,
+  width = 8,
+  height = 8,
+  pattern = "546",
+}
+
+tile{
+  layer = 0,
+  x = 872,
+  y = 232,
+  width = 8,
+  height = 8,
+  pattern = "545",
+}
+
+tile{
+  layer = 0,
+  x = 800,
+  y = 552,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
+  x = 856,
+  y = 800,
+  width = 8,
+  height = 8,
+  pattern = "1690",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "1692",
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 168,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 440,
+  width = 16,
+  height = 16,
+  pattern = "43",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 728,
+  width = 8,
+  height = 8,
+  pattern = "546",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 280,
+  width = 8,
+  height = 8,
+  pattern = "545",
+}
+
 teletransporter{
+  name = "to_A3",
   layer = 0,
   x = 176,
   y = -16,
   width = 944,
   height = 16,
-  name = "to_A3",
   transition = "scrolling",
   destination_map = "153",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_B4",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 848,
-  name = "to_B4",
   transition = "scrolling",
   destination_map = "158",
   destination = "_side",
@@ -2238,20 +2337,20 @@ wall{
 }
 
 destination{
+  name = "from_house_2",
   layer = 0,
   x = 648,
   y = 509,
-  name = "from_house_2",
   direction = 3,
 }
 
 teletransporter{
+  name = "to_house_2",
   layer = 0,
   x = 640,
   y = 480,
   width = 16,
   height = 16,
-  name = "to_house_2",
   destination_map = "3",
   destination = "from_subrosia_2",
 }
