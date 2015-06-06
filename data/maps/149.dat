@@ -5429,59 +5429,59 @@ destructible{
 }
 
 teletransporter{
+  name = "to_N4",
   layer = 0,
   x = -16,
   y = 0,
   width = 16,
   height = 1024,
-  name = "to_N4",
   transition = "scrolling",
   destination_map = "143",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_O3",
   layer = 0,
   x = 0,
   y = -16,
   width = 1056,
   height = 16,
-  name = "to_O3",
   transition = "scrolling",
   destination_map = "148",
   destination = "_side",
 }
 
 dynamic_tile{
+  name = "door_1",
   layer = 0,
   x = 752,
   y = 840,
+  pattern = "1120",
   width = 16,
   height = 16,
-  name = "door_1",
-  pattern = "1120",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "door_2",
   layer = 0,
   x = 400,
   y = 608,
+  pattern = "1120",
   width = 16,
   height = 16,
-  name = "door_2",
-  pattern = "1120",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "door_3",
   layer = 0,
   x = 472,
   y = 224,
+  pattern = "1120",
   width = 16,
   height = 16,
-  name = "door_3",
-  pattern = "1120",
   enabled_at_start = true,
 }
 

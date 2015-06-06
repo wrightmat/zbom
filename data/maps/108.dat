@@ -584,51 +584,178 @@ tile{
   pattern = "11",
 }
 
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 400,
+  height = 32,
+  pattern = "192",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 32,
+  width = 400,
+  height = 16,
+  pattern = "26",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 48,
+  width = 400,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "23",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "24",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "24",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "23",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "24",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "23",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "24",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "188",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "188",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "188",
+}
+
 teletransporter{
+  name = "to_H1",
   layer = 0,
   x = 1120,
   y = 784,
   width = 16,
   height = 336,
-  name = "to_H1",
   transition = "scrolling",
   destination_map = "112",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_G2",
   layer = 0,
   x = 912,
   y = 1120,
   width = 208,
   height = 16,
-  name = "to_G2",
   transition = "scrolling",
   destination_map = "109",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_H1_water",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 736,
-  name = "to_H1_water",
   transition = "scrolling",
   destination_map = "112",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_G2_water",
   layer = 0,
   x = 0,
   y = 1120,
   width = 864,
   height = 16,
-  name = "to_G2_water",
   transition = "scrolling",
   destination_map = "109",
   destination = "_side",
+}
+
+teletransporter{
+  name = "to_F1",
+  layer = 0,
+  x = -16,
+  y = 48,
+  width = 16,
+  height = 1072,
+  destination_map = "108",
 }
 

@@ -1694,62 +1694,74 @@ jumper{
 }
 
 teletransporter{
+  name = "to_H2",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 1120,
-  name = "to_H2",
   transition = "scrolling",
   destination_map = "113",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_G1",
   layer = 0,
   x = 912,
   y = -16,
   width = 208,
   height = 16,
-  name = "to_G1",
   transition = "scrolling",
   destination_map = "108",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_G3",
   layer = 0,
   x = 768,
   y = 1120,
   width = 352,
   height = 16,
-  name = "to_G3",
   transition = "scrolling",
   destination_map = "110",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_G1_water",
   layer = 0,
   x = 0,
   y = -16,
   width = 864,
   height = 16,
-  name = "to_G1_water",
   transition = "scrolling",
   destination_map = "108",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_G3_water",
   layer = 0,
   x = 0,
   y = 1120,
   width = 720,
   height = 16,
-  name = "to_G3_water",
   transition = "scrolling",
   destination_map = "110",
+  destination = "_side",
+}
+
+teletransporter{
+  name = "to_F2",
+  layer = 0,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 1120,
+  transition = "scrolling",
+  destination_map = "105",
   destination = "_side",
 }
 

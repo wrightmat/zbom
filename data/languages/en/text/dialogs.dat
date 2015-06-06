@@ -3967,21 +3967,6 @@ Keep in bottle
 }
 
 dialog{
-  id = "found_soul",
-  icon = "82",
-  question = "1",
-  skip = "current",
-  text = [[
-You found a Poe Soul!
-It looks mysterious.
-
-What now?
-Keep in bottle
-Let go
-  ]]
-}
-
-dialog{
   id = "found_fairy.no_empty_bottle",
   icon = "81",
   skip = "current",
@@ -4035,6 +4020,21 @@ dialog{
 You don't have any
 empty Bottles to
 keep this in!
+  ]]
+}
+
+dialog{
+  id = "found_soul",
+  icon = "82",
+  question = "1",
+  skip = "current",
+  text = [[
+You found a Poe Soul!
+It looks mysterious.
+
+What now?
+Keep in bottle
+Let go
   ]]
 }
 
@@ -7838,6 +7838,14 @@ dialog{
 }
 
 dialog{
+  id = "sign.calatia",
+  text = [[
+Passage to Calatia closed
+by order of the Queen.
+No outsiders allowed.]]
+}
+
+dialog{
   id = "sign.cemetary",
   skip = "current",
   text = [[
@@ -7971,7 +7979,7 @@ dialog{
   skip = "current",
   text = [[
 
-   Your House
+     Your House
 
   ]]
 }

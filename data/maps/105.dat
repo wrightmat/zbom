@@ -2196,26 +2196,62 @@ tile{
 }
 
 teletransporter{
+  name = "to_F3",
   layer = 0,
   x = 0,
   y = 1120,
   width = 160,
   height = 16,
-  name = "to_F3",
   transition = "scrolling",
   destination_map = "106",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_E2",
   layer = 0,
   x = -16,
-  y = 144,
+  y = 0,
   width = 16,
-  height = 976,
-  name = "to_E2",
+  height = 1120,
   transition = "scrolling",
   destination_map = "101",
+  destination = "_side",
+}
+
+teletransporter{
+  name = "to_F1",
+  layer = 0,
+  x = 0,
+  y = -16,
+  width = 1120,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "104",
+  destination = "_side",
+}
+
+teletransporter{
+  name = "to_G2",
+  layer = 0,
+  x = 1120,
+  y = 0,
+  width = 16,
+  height = 1120,
+  transition = "scrolling",
+  destination_map = "109",
+  destination = "_side",
+}
+
+teletransporter{
+  name = "to_F3_water",
+  layer = 0,
+  x = 240,
+  y = 1120,
+  width = 880,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "106",
   destination = "_side",
 }
 

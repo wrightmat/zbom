@@ -10,145 +10,82 @@ properties{
 
 tile{
   layer = 0,
-  x = 680,
-  y = 424,
-  width = 48,
-  height = 16,
-  pattern = 628,
+  x = 0,
+  y = 48,
+  width = 1120,
+  height = 1072,
+  pattern = "49",
 }
 
 tile{
   layer = 0,
-  x = 672,
-  y = 416,
-  width = 8,
-  height = 16,
-  pattern = 626,
+  x = 0,
+  y = 48,
+  width = 1120,
+  height = 1072,
+  pattern = "275",
 }
 
 tile{
   layer = 0,
-  x = 728,
-  y = 416,
-  width = 8,
+  x = 0,
+  y = 48,
+  width = 1120,
   height = 16,
-  pattern = 627,
+  pattern = "17",
 }
 
 tile{
   layer = 0,
-  x = 688,
-  y = 440,
-  width = 32,
-  height = 8,
-  pattern = 629,
-}
-
-tile{
-  layer = 0,
-  x = 472,
-  y = 80,
-  width = 48,
-  height = 16,
-  pattern = 628,
-}
-
-tile{
-  layer = 0,
-  x = 464,
-  y = 72,
-  width = 8,
-  height = 16,
-  pattern = 626,
-}
-
-tile{
-  layer = 0,
-  x = 520,
-  y = 72,
-  width = 8,
-  height = 16,
-  pattern = 627,
-}
-
-tile{
-  layer = 0,
-  x = 480,
-  y = 96,
-  width = 32,
-  height = 8,
-  pattern = 629,
-}
-
-tile{
-  layer = 2,
-  x = 680,
-  y = 384,
-  width = 48,
-  height = 40,
-  pattern = 522,
-}
-
-tile{
-  layer = 2,
-  x = 680,
-  y = 368,
-  width = 48,
-  height = 16,
-  pattern = 521,
-}
-
-tile{
-  layer = 2,
-  x = 672,
-  y = 376,
-  width = 8,
-  height = 40,
-  pattern = 519,
-}
-
-tile{
-  layer = 2,
-  x = 728,
-  y = 376,
-  width = 8,
-  height = 40,
-  pattern = 520,
-}
-
-tile{
-  layer = 2,
-  x = 472,
-  y = 40,
-  width = 48,
-  height = 40,
-  pattern = 522,
-}
-
-tile{
-  layer = 2,
-  x = 472,
-  y = 24,
-  width = 48,
-  height = 16,
-  pattern = 521,
-}
-
-tile{
-  layer = 2,
-  x = 464,
+  x = 0,
   y = 32,
-  width = 8,
-  height = 40,
-  pattern = 519,
+  width = 1120,
+  height = 16,
+  pattern = "26",
 }
 
 tile{
-  layer = 2,
-  x = 520,
-  y = 32,
-  width = 8,
-  height = 40,
-  pattern = 520,
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 1120,
+  height = 32,
+  pattern = "192",
+}
+
+teletransporter{
+  name = "to_D1",
+  layer = 0,
+  x = -16,
+  y = 48,
+  width = 16,
+  height = 1072,
+  transition = "scrolling",
+  destination_map = "96",
+  destination = "_side",
+}
+
+teletransporter{
+  name = "to_E2",
+  layer = 0,
+  x = 0,
+  y = 1120,
+  width = 1120,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "101",
+  destination = "_side",
+}
+
+teletransporter{
+  name = "to_F1",
+  layer = 0,
+  x = 1120,
+  y = 48,
+  width = 16,
+  height = 1072,
+  transition = "scrolling",
+  destination_map = "104",
+  destination = "_side",
 }
 
