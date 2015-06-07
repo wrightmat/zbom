@@ -50,7 +50,7 @@ print('firing')
   vulnerable = true
   beam = self:create_enemy({
     breed = "wizzrobe_beam",
-    direction = self:set_sprite():get_direction()
+    direction = self:get_sprite():get_direction()
   })
   self:restart()
 end

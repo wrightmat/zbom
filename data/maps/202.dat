@@ -5536,147 +5536,147 @@ tile{
 }
 
 teletransporter{
+  name = "warp_outside",
   layer = 0,
   x = 1208,
   y = 456,
   width = 16,
   height = 16,
-  name = "warp_outside",
-  sprite = "entities/teletransporter",
-  sound = "warp",
   destination_map = "35",
   destination = "from_sewer",
+  sprite = "entities/teletransporter",
+  sound = "warp",
 }
 
 destination{
+  name = "from_G9",
   layer = 0,
   x = 104,
   y = 261,
-  name = "from_G9",
   direction = 1,
 }
 
 destination{
+  name = "from_L5",
   layer = 0,
   x = 2192,
   y = 221,
-  name = "from_L5",
   direction = 2,
 }
 
 destination{
+  name = "from_G12",
   layer = 0,
   x = 1976,
   y = 1029,
-  name = "from_G12",
   direction = 1,
 }
 
 destination{
+  name = "from_F10",
   layer = 0,
   x = 1072,
   y = 973,
-  name = "from_F10",
   direction = 3,
 }
 
 destination{
+  name = "from_F14",
   layer = 0,
   x = 144,
   y = 397,
-  name = "from_F14",
   direction = 3,
 }
 
 teletransporter{
+  name = "to_L5",
   layer = 0,
   x = 2208,
   y = 208,
   width = 16,
   height = 16,
-  name = "to_L5",
   destination_map = "133",
   destination = "from_sewers",
 }
 
 teletransporter{
+  name = "to_G12",
   layer = 0,
   x = 1968,
   y = 1040,
   width = 16,
   height = 16,
-  name = "to_G12",
   destination_map = "28",
   destination = "from_sewers",
 }
 
 teletransporter{
+  name = "to_G9",
   layer = 0,
   x = 96,
   y = 272,
   width = 16,
   height = 16,
-  name = "to_G9",
   destination_map = "39",
   destination = "from_sewers",
 }
 
 teletransporter{
+  name = "to_F14",
   layer = 0,
   x = 136,
   y = 352,
   width = 16,
   height = 16,
-  name = "to_F14",
   destination_map = "11",
   destination = "from_sewers",
 }
 
 chest{
+  name = "chest_sword",
   layer = 0,
   x = 1944,
   y = 981,
-  name = "chest_sword",
   treasure_name = "sword",
   treasure_savegame_variable = "b2000",
   sprite = "entities/chest",
 }
 
 chest{
+  name = "chest_key_2",
   layer = 0,
   x = 1712,
   y = 573,
-  name = "chest_key_2",
   treasure_name = "small_key",
   treasure_savegame_variable = "b1041",
   sprite = "entities/chest",
 }
 
 chest{
+  name = "chest_key_1",
   layer = 0,
   x = 1928,
   y = 525,
-  name = "chest_key_1",
   treasure_name = "small_key",
   treasure_savegame_variable = "b1040",
   sprite = "entities/chest",
 }
 
 chest{
+  name = "chest_map",
   layer = 0,
   x = 1712,
   y = 965,
-  name = "chest_map",
   treasure_name = "map",
   treasure_savegame_variable = "b1044",
   sprite = "entities/chest",
 }
 
 chest{
+  name = "chest_rupees",
   layer = 0,
   x = 1712,
   y = 869,
-  name = "chest_rupees",
   treasure_name = "rupee",
   treasure_variant = 3,
   treasure_savegame_variable = "b1743",
@@ -5684,40 +5684,40 @@ chest{
 }
 
 enemy{
+  name = "tentacle_sword_1",
   layer = 0,
   x = 1992,
   y = 805,
-  name = "tentacle_sword_1",
   direction = 3,
   breed = "tentacle",
   treasure_name = "random",
 }
 
 enemy{
+  name = "tentacle_sword_2",
   layer = 0,
   x = 1968,
   y = 885,
-  name = "tentacle_sword_2",
   direction = 3,
   breed = "tentacle",
   treasure_name = "random",
 }
 
 enemy{
+  name = "tentacle_sword_3",
   layer = 0,
   x = 2080,
   y = 853,
-  name = "tentacle_sword_3",
   direction = 3,
   breed = "tentacle",
   treasure_name = "random",
 }
 
 stream{
+  name = "arrows",
   layer = 0,
   x = 2056,
   y = 501,
-  name = "arrows",
   direction = 6,
   sprite = "entities/conveyor",
   allow_movement = false,
@@ -5725,10 +5725,10 @@ stream{
 }
 
 switch{
+  name = "switch_sword",
   layer = 0,
   x = 2144,
   y = 608,
-  name = "switch_sword",
   subtype = "walkable",
   sprite = "entities/switch",
   sound = "switch",
@@ -5737,73 +5737,73 @@ switch{
 }
 
 enemy{
+  name = "tentacle_orig_1",
   layer = 0,
   x = 2120,
   y = 21,
-  name = "tentacle_orig_1",
   direction = 3,
   breed = "tentacle",
 }
 
 door{
+  name = "door_2",
   layer = 0,
   x = 2120,
   y = 376,
-  name = "door_2",
   direction = 1,
   sprite = "entities/door_shutter",
 }
 
 door{
+  name = "door_3",
   layer = 0,
   x = 2120,
   y = 248,
-  name = "door_3",
   direction = 3,
   sprite = "entities/door_shutter",
 }
 
 enemy{
+  name = "tentacle_orig_2",
   layer = 0,
   x = 2128,
   y = 29,
-  name = "tentacle_orig_2",
   direction = 3,
   breed = "tentacle",
 }
 
 enemy{
+  name = "tentacle_orig_3",
   layer = 0,
   x = 2136,
   y = 37,
-  name = "tentacle_orig_3",
   direction = 3,
   breed = "tentacle",
 }
 
 enemy{
+  name = "tentacle_orig_4",
   layer = 0,
   x = 2120,
   y = 45,
-  name = "tentacle_orig_4",
   direction = 3,
   breed = "tentacle",
 }
 
 enemy{
+  name = "tentacle_orig_5",
   layer = 0,
   x = 2136,
   y = 53,
-  name = "tentacle_orig_5",
   direction = 3,
   breed = "tentacle",
 }
 
 switch{
+  name = "switch_arrow_key_1",
   layer = 0,
   x = 2192,
   y = 528,
-  name = "switch_arrow_key_1",
   subtype = "arrow_target",
   sprite = "entities/switch_eye_left",
   sound = "switch",
@@ -5812,10 +5812,10 @@ switch{
 }
 
 switch{
+  name = "switch_key_2_1",
   layer = 0,
   x = 1648,
   y = 448,
-  name = "switch_key_2_1",
   subtype = "walkable",
   sprite = "entities/switch",
   sound = "switch",
@@ -5824,10 +5824,10 @@ switch{
 }
 
 switch{
+  name = "switch_key_2_2",
   layer = 0,
   x = 1760,
   y = 448,
-  name = "switch_key_2_2",
   subtype = "walkable",
   sprite = "entities/switch",
   sound = "switch",
@@ -5839,7 +5839,6 @@ block{
   layer = 0,
   x = 1720,
   y = 461,
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -5850,7 +5849,6 @@ block{
   layer = 0,
   x = 1704,
   y = 461,
-  direction = -1,
   sprite = "entities/block",
   pushable = false,
   pullable = false,
@@ -5858,10 +5856,10 @@ block{
 }
 
 door{
+  name = "door_key1_1",
   layer = 0,
   x = 1880,
   y = 456,
-  name = "door_key1_1",
   direction = 2,
   sprite = "entities/door_small_key",
   savegame_variable = "b1037",
@@ -5872,10 +5870,10 @@ door{
 }
 
 door{
+  name = "door_key1_2",
   layer = 0,
   x = 1816,
   y = 456,
-  name = "door_key1_2",
   direction = 0,
   sprite = "entities/door_small_key",
   savegame_variable = "b1037",
@@ -5886,56 +5884,56 @@ door{
 }
 
 enemy{
+  name = "tentacle_orig_6",
   layer = 0,
   x = 328,
   y = 269,
-  name = "tentacle_orig_6",
   direction = 3,
   breed = "tentacle",
 }
 
 enemy{
+  name = "tentacle_orig_7",
   layer = 0,
   x = 344,
   y = 269,
-  name = "tentacle_orig_7",
   direction = 3,
   breed = "tentacle",
 }
 
 enemy{
+  name = "tentacle_orig_8",
   layer = 0,
   x = 336,
   y = 285,
-  name = "tentacle_orig_8",
   direction = 3,
   breed = "tentacle",
 }
 
 enemy{
+  name = "tentacle_orig_9",
   layer = 0,
   x = 336,
   y = 253,
-  name = "tentacle_orig_9",
   direction = 3,
   breed = "tentacle",
 }
 
 chest{
+  name = "chest_heart_piece",
   layer = 0,
   x = 200,
   y = 493,
-  name = "chest_heart_piece",
   treasure_name = "heart_piece",
   treasure_savegame_variable = "b1709",
   sprite = "entities/chest",
 }
 
 chest{
+  name = "chest_rupees_2",
   layer = 0,
   x = 88,
   y = 493,
-  name = "chest_rupees_2",
   treasure_name = "rupee",
   treasure_variant = 6,
   treasure_savegame_variable = "b1742",
@@ -6051,31 +6049,31 @@ destructible{
 }
 
 dynamic_tile{
+  name = "water_drain",
   layer = 0,
   x = 936,
   y = 392,
+  pattern = "577",
   width = 304,
   height = 144,
-  name = "water_drain",
-  pattern = "577",
   enabled_at_start = true,
 }
 
 chest{
+  name = "chest_big_key",
   layer = 0,
   x = 704,
   y = 909,
-  name = "chest_big_key",
   treasure_name = "big_key",
   treasure_savegame_variable = "b1043",
   sprite = "entities/chest",
 }
 
 switch{
+  name = "switch_drain_water",
   layer = 0,
   x = 1408,
   y = 432,
-  name = "switch_drain_water",
   subtype = "walkable",
   sprite = "entities/switch",
   sound = "switch",
@@ -6084,39 +6082,39 @@ switch{
 }
 
 jumper{
+  name = "jump_sensor",
   layer = 0,
   x = 1248,
   y = 448,
   width = 8,
   height = 32,
-  name = "jump_sensor",
   direction = 4,
   jump_length = 72,
 }
 
 enemy{
+  name = "bubble",
   layer = 0,
   x = 1656,
   y = 808,
-  name = "bubble",
   direction = 3,
   breed = "bubble_red",
 }
 
 enemy{
+  name = "wallmaster",
   layer = 0,
   x = 1768,
   y = 820,
-  name = "wallmaster",
   direction = 3,
   breed = "wallmaster",
 }
 
 enemy{
+  name = "boss_big_poe",
   layer = 0,
   x = 704,
   y = 573,
-  name = "boss_big_poe",
   direction = 3,
   breed = "poe_big",
   rank = 2,
@@ -6125,195 +6123,192 @@ enemy{
 }
 
 enemy{
+  name = "poe_1",
   layer = 0,
   x = 676,
   y = 717,
-  name = "poe_1",
   direction = 3,
   breed = "poe",
 }
 
 enemy{
+  name = "poe_2",
   layer = 0,
   x = 772,
   y = 813,
-  name = "poe_2",
   direction = 3,
   breed = "poe",
 }
 
 enemy{
+  name = "poe_3",
   layer = 0,
   x = 636,
   y = 821,
-  name = "poe_3",
   direction = 3,
   breed = "poe",
 }
 
 enemy{
+  name = "poe_4",
   layer = 0,
   x = 644,
   y = 509,
-  name = "poe_4",
   direction = 3,
   breed = "poe",
 }
 
 enemy{
+  name = "poe_5",
   layer = 0,
   x = 780,
   y = 525,
-  name = "poe_5",
   direction = 3,
   breed = "poe",
 }
 
 pickable{
+  name = "boss_heart",
   layer = 0,
   x = 728,
   y = 877,
-  name = "boss_heart",
   treasure_name = "heart_container",
   treasure_savegame_variable = "b1036",
 }
 
 sensor{
+  name = "sensor_boss",
   layer = 0,
   x = 816,
   y = 453,
   width = 16,
   height = 48,
-  name = "sensor_boss",
 }
 
 door{
+  name = "door_boss",
   layer = 0,
   x = 824,
   y = 456,
-  name = "door_boss",
   direction = 0,
   sprite = "entities/door_shutter",
 }
 
 sensor{
+  name = "sensor_door_open",
   layer = 0,
   x = 872,
   y = 453,
   width = 16,
   height = 48,
-  name = "sensor_door_open",
 }
 
 enemy{
+  name = "poe_6",
   layer = 0,
   x = 988,
   y = 661,
-  name = "poe_6",
   direction = 3,
   breed = "poe",
 }
 
 enemy{
+  name = "poe_7",
   layer = 0,
   x = 1148,
   y = 725,
-  name = "poe_7",
   direction = 3,
   breed = "poe",
 }
 
 enemy{
+  name = "poe_8",
   layer = 0,
   x = 1324,
   y = 469,
-  name = "poe_8",
   direction = 3,
   breed = "poe",
+  treasure_name = "poe_soul",
 }
 
 custom_entity{
+  name = "flame_1",
   layer = 0,
   x = 1016,
   y = 885,
-  width = 16,
-  height = 16,
-  name = "flame_1",
   direction = 3,
   sprite = "enemies/flame_red",
 }
 
 custom_entity{
+  name = "flame_2",
   layer = 0,
   x = 1128,
   y = 885,
-  width = 16,
-  height = 16,
-  name = "flame_2",
   direction = 3,
   sprite = "enemies/flame_red",
 }
 
 chest{
+  name = "chest_jade",
   layer = 0,
   x = 1208,
   y = 77,
-  name = "chest_jade",
   treasure_name = "jade",
   treasure_savegame_variable = "b1785",
   sprite = "entities/chest",
 }
 
 chest{
+  name = "chest_alchemy_stone",
   layer = 0,
   x = 776,
   y = 213,
-  name = "chest_alchemy_stone",
   treasure_name = "alchemy",
   treasure_savegame_variable = "b1786",
   sprite = "entities/chest",
 }
 
 npc{
+  name = "torch_room1_4",
   layer = 0,
   x = 920,
   y = 133,
-  name = "torch_room1_4",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/torch",
   behavior = "item#lamp",
 }
 
 npc{
+  name = "torch_room1_3",
   layer = 0,
   x = 632,
   y = 133,
-  name = "torch_room1_3",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/torch",
   behavior = "item#lamp",
 }
 
 npc{
+  name = "torch_room1_2",
   layer = 0,
   x = 408,
   y = 133,
-  name = "torch_room1_2",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/torch",
   behavior = "item#lamp",
 }
 
 npc{
+  name = "torch_room1_1",
   layer = 0,
   x = 264,
   y = 133,
-  name = "torch_room1_1",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/torch",
   behavior = "item#lamp",
 }
@@ -6477,8 +6472,8 @@ wall{
   y = 368,
   width = 8,
   height = 672,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_projectiles = true,
 }
 
@@ -6488,8 +6483,8 @@ wall{
   y = 368,
   width = 8,
   height = 672,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_projectiles = true,
 }
 
@@ -6499,8 +6494,8 @@ wall{
   y = 1032,
   width = 304,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_projectiles = true,
 }
 
@@ -6510,375 +6505,335 @@ wall{
   y = 368,
   width = 304,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_projectiles = true,
 }
 
 custom_entity{
+  name = "pit_1",
   layer = 0,
   x = 280,
   y = 744,
-  width = 16,
-  height = 16,
-  name = "pit_1",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_2",
   layer = 0,
   x = 296,
   y = 744,
-  width = 16,
-  height = 16,
-  name = "pit_2",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_3",
   layer = 0,
   x = 312,
   y = 744,
-  width = 16,
-  height = 16,
-  name = "pit_3",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_4",
   layer = 0,
   x = 328,
   y = 744,
-  width = 16,
-  height = 16,
-  name = "pit_4",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_5",
   layer = 0,
   x = 344,
   y = 744,
-  width = 16,
-  height = 16,
-  name = "pit_5",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_6",
   layer = 0,
   x = 280,
   y = 760,
-  width = 16,
-  height = 16,
-  name = "pit_6",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_7",
   layer = 0,
   x = 360,
   y = 744,
-  width = 16,
-  height = 16,
-  name = "pit_7",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_8",
   layer = 0,
   x = 280,
   y = 776,
-  width = 16,
-  height = 16,
-  name = "pit_8",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_9",
   layer = 0,
   x = 360,
   y = 760,
-  width = 16,
-  height = 16,
-  name = "pit_9",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_10",
   layer = 0,
   x = 280,
   y = 792,
-  width = 16,
-  height = 16,
-  name = "pit_10",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_11",
   layer = 0,
   x = 360,
   y = 776,
-  width = 16,
-  height = 16,
-  name = "pit_11",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_12",
   layer = 0,
   x = 280,
   y = 808,
-  width = 16,
-  height = 16,
-  name = "pit_12",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_13",
   layer = 0,
   x = 360,
   y = 792,
-  width = 16,
-  height = 16,
-  name = "pit_13",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_14",
   layer = 0,
   x = 280,
   y = 824,
-  width = 16,
-  height = 16,
-  name = "pit_14",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 chest{
+  name = "chest_key_4",
   layer = 0,
   x = 320,
   y = 781,
-  name = "chest_key_4",
   treasure_name = "small_key",
   treasure_savegame_variable = "b1042",
   sprite = "entities/chest",
 }
 
 custom_entity{
+  name = "pit_15",
   layer = 0,
   x = 296,
   y = 824,
-  width = 16,
-  height = 16,
-  name = "pit_15",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_16",
   layer = 0,
   x = 312,
   y = 824,
-  width = 16,
-  height = 16,
-  name = "pit_16",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_17",
   layer = 0,
   x = 328,
   y = 824,
-  width = 16,
-  height = 16,
-  name = "pit_17",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_18",
   layer = 0,
   x = 344,
   y = 824,
-  width = 16,
-  height = 16,
-  name = "pit_18",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_19",
   layer = 0,
   x = 360,
   y = 808,
-  width = 16,
-  height = 16,
-  name = "pit_19",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_20",
   layer = 0,
   x = 360,
   y = 824,
-  width = 16,
-  height = 16,
-  name = "pit_20",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 enemy{
+  name = "tentacle_key_1",
   layer = 0,
   x = 320,
   y = 677,
-  name = "tentacle_key_1",
   direction = 3,
   breed = "tentacle",
 }
 
 enemy{
-  layer = 0,
-  x = 328,
-  y = 669,
   name = "tentacle_key_2",
+  layer = 0,
+  x = 328,
+  y = 669,
   direction = 3,
   breed = "tentacle",
 }
 
 enemy{
+  name = "tentacle_key_3",
   layer = 0,
   x = 312,
   y = 669,
-  name = "tentacle_key_3",
   direction = 3,
   breed = "tentacle",
 }
 
 enemy{
+  name = "tentacle_key_4",
   layer = 0,
   x = 312,
   y = 685,
-  name = "tentacle_key_4",
   direction = 3,
   breed = "tentacle",
 }
 
 enemy{
+  name = "tentacle_key_5",
   layer = 0,
   x = 328,
   y = 685,
-  name = "tentacle_key_5",
   direction = 3,
   breed = "tentacle",
 }
 
 enemy{
+  name = "armos_key_1",
   layer = 0,
   x = 248,
   y = 940,
-  name = "armos_key_1",
   direction = 3,
   breed = "armos",
 }
 
 enemy{
+  name = "armos_key_2",
   layer = 0,
   x = 392,
   y = 940,
-  name = "armos_key_2",
   direction = 3,
   breed = "armos",
 }
 
 enemy{
+  name = "armos_key_3",
   layer = 0,
   x = 264,
   y = 844,
-  name = "armos_key_3",
   direction = 3,
   breed = "armos",
 }
 
 enemy{
+  name = "armos_key_4",
   layer = 0,
   x = 376,
   y = 844,
-  name = "armos_key_4",
   direction = 3,
   breed = "armos",
 }
 
 enemy{
+  name = "armos_key_5",
   layer = 0,
   x = 248,
   y = 876,
-  name = "armos_key_5",
   direction = 3,
   breed = "armos",
 }
 
 enemy{
+  name = "armos_key_6",
   layer = 0,
   x = 392,
   y = 876,
-  name = "armos_key_6",
   direction = 3,
   breed = "armos",
 }
 
 destination{
+  name = "from_H8",
   layer = 0,
   x = 320,
   y = 1021,
-  name = "from_H8",
   direction = 1,
 }
 
 teletransporter{
+  name = "to_H8",
   layer = 0,
   x = 312,
   y = 1040,
   width = 16,
   height = 16,
-  name = "to_H8",
   destination_map = "84",
   destination = "from_sewer",
 }
@@ -6925,9 +6880,8 @@ wall{
   y = 576,
   width = 8,
   height = 224,
-  stops_enemies = true,
   stops_npcs = true,
-  stops_projectiles = true,
+  stops_enemies = true,
 }
 
 wall{
@@ -6936,9 +6890,8 @@ wall{
   y = 576,
   width = 8,
   height = 224,
-  stops_enemies = true,
   stops_npcs = true,
-  stops_projectiles = true,
+  stops_enemies = true,
 }
 
 wall{
@@ -6947,34 +6900,33 @@ wall{
   y = 792,
   width = 224,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
-  stops_projectiles = true,
+  stops_enemies = true,
 }
 
 enemy{
+  name = "keese_1",
   layer = 1,
   x = 1312,
   y = 629,
-  name = "keese_1",
   direction = 3,
   breed = "keese",
 }
 
 enemy{
+  name = "keese_2",
   layer = 1,
   x = 1344,
   y = 725,
-  name = "keese_2",
   direction = 3,
   breed = "keese",
 }
 
 enemy{
+  name = "keese_3",
   layer = 1,
   x = 1416,
   y = 669,
-  name = "keese_3",
   direction = 3,
   breed = "keese",
 }
@@ -6985,9 +6937,8 @@ wall{
   y = 576,
   width = 224,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
-  stops_projectiles = true,
+  stops_enemies = true,
 }
 
 tile{

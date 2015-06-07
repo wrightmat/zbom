@@ -9,6 +9,7 @@ function map:on_started(destination)
   block_1:set_enabled(false)
   block_2:set_enabled(false)
   switch_2:set_enabled(false) -- re-enabled after Grim Creeper defeat
+  chest_map:set_enabled(false)
 end
 
 function sensor_hole:on_activated()

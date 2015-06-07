@@ -29,7 +29,7 @@ end
 function torch_grave1_1:on_interaction_item(lamp)
   torch_grave1_1:get_sprite():set_animation("lit")
   sol.audio.play_sound("ghost")
-  local poe = map:create_enemy({x=312,y=360,layer=1,direction=0,breed="poe"})
+  local poe = map:create_enemy({x=312,y=360,layer=1,direction=0,breed="poe",treasure_name="poe_soul"})
   poe:get_sprite():fade_in(80)
   if torch_grave1_2:get_sprite():get_animation() == "lit" then
     map:move_camera(752, 472, 300, function()
@@ -41,7 +41,7 @@ end
 function torch_grave1_2:on_interaction_item(lamp)
   torch_grave1_2:get_sprite():set_animation("lit")
   sol.audio.play_sound("ghost")
-  local poe = map:create_enemy({x=312,y=360,layer=1,direction=0,breed="poe"})
+  local poe = map:create_enemy({x=312,y=360,layer=1,direction=0,breed="poe",treasure_name="poe_soul"})
   poe:get_sprite():fade_in(80)
   if torch_grave1_1:get_sprite():get_animation() == "lit" then
     map:move_camera(752, 472, 300, function()
@@ -54,7 +54,7 @@ end
 function torch_grave2_1:on_interaction_item(lamp)
   torch_grave2_1:get_sprite():set_animation("lit")
   sol.audio.play_sound("ghost")
-  local poe = map:create_enemy({x=416,y=144,layer=1,direction=0,breed="poe"})
+  local poe = map:create_enemy({x=416,y=144,layer=1,direction=0,breed="poe",treasure_name="poe_soul"})
   poe:get_sprite():fade_in(80)
   if torch_grave2_2:get_sprite():get_animation() == "lit" then
     map:move_camera(752, 472, 300, function()
@@ -66,7 +66,7 @@ end
 function torch_grave2_2:on_interaction_item(lamp)
   torch_grave2_2:get_sprite():set_animation("lit")
   sol.audio.play_sound("ghost")
-  local poe = map:create_enemy({x=416,y=144,layer=1,direction=0,breed="poe"})
+  local poe = map:create_enemy({x=416,y=144,layer=1,direction=0,breed="poe",treasure_name="poe_soul"})
   poe:get_sprite():fade_in(80)
   if torch_grave2_1:get_sprite():get_animation() == "lit" then
     map:move_camera(752, 472, 300, function()
@@ -79,7 +79,7 @@ end
 function torch_grave3_1:on_interaction_item(lamp)
   torch_grave3_1:get_sprite():set_animation("lit")
   sol.audio.play_sound("ghost")
-  local poe = map:create_enemy({x=736,y=176,layer=1,direction=0,breed="poe"})
+  local poe = map:create_enemy({x=736,y=176,layer=1,direction=0,breed="poe",treasure_name="poe_soul"})
   poe:get_sprite():fade_in(80)
   if torch_grave3_2:get_sprite():get_animation() == "lit" then
     map:move_camera(752, 472, 300, function()
@@ -91,7 +91,7 @@ end
 function torch_grave3_2:on_interaction_item(lamp)
   torch_grave3_2:get_sprite():set_animation("lit")
   sol.audio.play_sound("ghost")
-  local poe = map:create_enemy({x=736,y=176,layer=1,direction=0,breed="poe"})
+  local poe = map:create_enemy({x=736,y=176,layer=1,direction=0,breed="poe",treasure_name="poe_soul"})
   poe:get_sprite():fade_in(80)
   if torch_grave3_1:get_sprite():get_animation() == "lit" then
     map:move_camera(752, 472, 300, function()
@@ -104,7 +104,7 @@ end
 function torch_grave4_1:on_interaction_item(lamp)
   torch_grave4_1:get_sprite():set_animation("lit")
   sol.audio.play_sound("ghost")
-  local poe = map:create_enemy({x=992,y=400,layer=1,direction=0,breed="poe"})
+  local poe = map:create_enemy({x=992,y=400,layer=1,direction=0,breed="poe",treasure_name="poe_soul"})
   poe:get_sprite():fade_in(80)
   if torch_grave4_2:get_sprite():get_animation() == "lit" then
     map:move_camera(752, 472, 300, function()
@@ -116,7 +116,7 @@ end
 function torch_grave4_2:on_interaction_item(lamp)
   torch_grave4_2:get_sprite():set_animation("lit")
   sol.audio.play_sound("ghost")
-  local poe = map:create_enemy({x=992,y=400,layer=1,direction=0,breed="poe"})
+  local poe = map:create_enemy({x=992,y=400,layer=1,direction=0,breed="poe",treasure_name="poe_soul"})
   poe:get_sprite():fade_in(80)
   if torch_grave4_1:get_sprite():get_animation() == "lit" then
     map:move_camera(752, 472, 300, function()
@@ -129,7 +129,7 @@ end
 function torch_grave5_1:on_interaction_item(lamp)
   torch_grave5_1:get_sprite():set_animation("lit")
   sol.audio.play_sound("ghost")
-  local poe = map:create_enemy({x=944,y=896,layer=1,direction=0,breed="poe"})
+  local poe = map:create_enemy({x=944,y=896,layer=1,direction=0,breed="poe",treasure_name="poe_soul"})
   poe:get_sprite():fade_in(80)
   if torch_grave5_2:get_sprite():get_animation() == "lit" then
     map:move_camera(752, 472, 300, function()
@@ -141,7 +141,7 @@ end
 function torch_grave5_2:on_interaction_item(lamp)
   torch_grave5_2:get_sprite():set_animation("lit")
   sol.audio.play_sound("ghost")
-  local poe = map:create_enemy({x=944,y=896,layer=1,direction=0,breed="poe"})
+  local poe = map:create_enemy({x=944,y=896,layer=1,direction=0,breed="poe",treasure_name="poe_soul"})
   poe:get_sprite():fade_in(80)
   if torch_grave5_1:get_sprite():get_animation() == "lit" then
     map:move_camera(752, 472, 300, function()
@@ -157,7 +157,7 @@ function map:on_update()
      flame_king_7:is_enabled() and flame_king_8:is_enabled() and flame_king_9:is_enabled() and
      flame_king_10:is_enabled() and game:get_value("i1610") == 0 then
     sol.audio.play_sound("secret")
-    local poe = map:create_enemy({x=752,y=528,layer=1,direction=0,breed="poe_big"})
+    local poe = map:create_enemy({x=752,y=528,layer=1,direction=0,breed="poe_big",treasure_name="poe_soul"})
     poe:get_sprite():fade_in(100)
     hole:set_enabled(true)
     game:set_value("i1610", 1)
