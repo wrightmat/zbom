@@ -2688,16 +2688,6 @@ wall{
 }
 
 npc{
-  name = "npc_rito_2",
-  layer = 0,
-  x = 656,
-  y = 781,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/rito",
-}
-
-npc{
   name = "sign_tower",
   layer = 0,
   x = 240,
@@ -2942,6 +2932,111 @@ destination{
   x = 944,
   y = 277,
   direction = 3,
+}
+
+destination{
+  name = "from_inside_2",
+  layer = 0,
+  x = 296,
+  y = 565,
+  direction = 1,
+}
+
+teletransporter{
+  name = "to_inside_2",
+  layer = 0,
+  x = 288,
+  y = 536,
+  width = 16,
+  height = 16,
+  destination_map = "3",
+  destination = "from_septen_2",
+}
+
+destination{
+  name = "from_inside_3",
+  layer = 0,
+  x = 592,
+  y = 597,
+  direction = 1,
+}
+
+teletransporter{
+  name = "to_inside_3",
+  layer = 0,
+  x = 584,
+  y = 568,
+  width = 16,
+  height = 16,
+  destination_map = "3",
+  destination = "from_septen_3",
+}
+
+destination{
+  name = "from_inside_4",
+  layer = 0,
+  x = 656,
+  y = 773,
+  direction = 1,
+}
+
+teletransporter{
+  name = "to_inside_4",
+  layer = 0,
+  x = 648,
+  y = 744,
+  width = 16,
+  height = 16,
+  destination_map = "3",
+  destination = "from_septen_4",
+}
+
+npc{
+  name = "npc_rito_2",
+  layer = 0,
+  x = 656,
+  y = 789,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/rito",
+}
+
+destination{
+  name = "from_inside_5",
+  layer = 0,
+  x = 1008,
+  y = 717,
+  direction = 1,
+}
+
+teletransporter{
+  name = "to_inside_5",
+  layer = 0,
+  x = 1000,
+  y = 688,
+  width = 16,
+  height = 16,
+  destination_map = "3",
+  destination = "from_septen_5",
+}
+
+destination{
+  name = "from_inside_6",
+  layer = 0,
+  x = 936,
+  y = 541,
+  direction = 1,
+}
+
+teletransporter{
+  name = "to_inside_6",
+  layer = 0,
+  x = 928,
+  y = 512,
+  width = 16,
+  height = 16,
+  destination_map = "3",
+  destination = "from_septen_6",
 }
 
 tile{
@@ -4812,6 +4907,25 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/rito",
+}
+
+destination{
+  name = "from_inside_4_top",
+  layer = 1,
+  x = 616,
+  y = 757,
+  direction = 1,
+}
+
+teletransporter{
+  name = "to_inside_4_top",
+  layer = 1,
+  x = 608,
+  y = 728,
+  width = 16,
+  height = 16,
+  destination_map = "3",
+  destination = "from_septen_4_top",
 }
 
 tile{

@@ -2313,94 +2313,127 @@ tile{
 }
 
 destination{
-  layer = 0,
-  x = 208,
-  y = 213,
   name = "from_outside_house_1",
+  layer = 0,
+  x = 208,
+  y = 213,
   direction = 1,
 }
 
 destination{
+  name = "from_outside_house_2",
   layer = 0,
   x = 560,
   y = 213,
-  name = "from_outside_house_2",
   direction = 1,
 }
 
 destination{
+  name = "from_outside_house_3",
   layer = 0,
   x = 912,
   y = 213,
-  name = "from_outside_house_3",
   direction = 1,
 }
 
 destination{
+  name = "from_outside_house_4",
   layer = 0,
   x = 208,
   y = 605,
-  name = "from_outside_house_4",
   direction = 1,
 }
 
 destination{
+  name = "from_outside_house_5",
   layer = 0,
   x = 560,
   y = 605,
-  name = "from_outside_house_5",
   direction = 1,
 }
 
 destination{
+  name = "from_outside_house_6",
   layer = 0,
   x = 912,
   y = 605,
-  name = "from_outside_house_6",
   direction = 1,
 }
 
 teletransporter{
+  name = "to_outside_house_2",
   layer = 0,
   x = 552,
   y = 216,
   width = 16,
   height = 16,
-  name = "to_outside_house_2",
   destination_map = "61",
   destination = "from_house_2",
 }
 
 teletransporter{
+  name = "to_outside_house_1",
   layer = 0,
   x = 200,
   y = 216,
   width = 16,
   height = 16,
-  name = "to_outside_house_1",
   destination_map = "61",
   destination = "from_house_1",
 }
 
 teletransporter{
+  name = "to_outside_house_3",
   layer = 0,
   x = 904,
   y = 216,
   width = 16,
   height = 16,
-  name = "to_outside_house_3",
   destination_map = "61",
   destination = "from_house_3",
 }
 
 npc{
+  name = "npc_anouki_5",
   layer = 0,
   x = 560,
   y = 149,
-  name = "npc_anouki_5",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/snowpeak_anouki",
+}
+
+teletransporter{
+  name = "to_outside_house_4",
+  layer = 0,
+  x = 200,
+  y = 608,
+  width = 16,
+  height = 16,
+  destination_map = "53",
+  destination = "from_house_4",
+}
+
+teletransporter{
+  name = "to_outside_house_5",
+  layer = 0,
+  x = 552,
+  y = 608,
+  width = 16,
+  height = 16,
+  destination_map = "52",
+  destination = "from_house_5",
+}
+
+teletransporter{
+  name = "to_outside_house_6",
+  layer = 0,
+  x = 904,
+  y = 608,
+  width = 16,
+  height = 16,
+  destination_map = "52",
+  destination = "from_house_6",
 }
 
 tile{

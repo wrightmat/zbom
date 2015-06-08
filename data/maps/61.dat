@@ -2475,116 +2475,116 @@ tile{
 }
 
 teletransporter{
+  name = "to_D6",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 1040,
-  name = "to_D6",
   transition = "scrolling",
   destination_map = "62",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_C5",
   layer = 0,
   x = 0,
   y = -16,
   width = 1120,
   height = 16,
-  name = "to_C5",
   transition = "scrolling",
   destination_map = "53",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_B6",
   layer = 0,
   x = -16,
   y = 0,
   width = 16,
   height = 1040,
-  name = "to_B6",
   transition = "scrolling",
   destination_map = "60",
   destination = "_side",
 }
 
 dynamic_tile{
+  name = "door_shed",
   layer = 0,
   x = 360,
   y = 192,
+  pattern = "2136",
   width = 16,
   height = 16,
-  name = "door_shed",
-  pattern = "2136",
   enabled_at_start = true,
 }
 
 destination{
+  name = "from_house_1",
   layer = 0,
   x = 824,
   y = 389,
-  name = "from_house_1",
   direction = 3,
 }
 
 destination{
+  name = "from_house_2",
   layer = 0,
   x = 240,
   y = 781,
-  name = "from_house_2",
   direction = 3,
 }
 
 destination{
+  name = "from_house_3",
   layer = 0,
   x = 312,
   y = 237,
-  name = "from_house_3",
   direction = 3,
 }
 
 teletransporter{
+  name = "to_house_1",
   layer = 0,
   x = 816,
   y = 360,
   width = 16,
   height = 16,
-  name = "to_house_1",
   destination_map = "7",
   destination = "from_outside_house_1",
 }
 
 teletransporter{
+  name = "to_house_2",
   layer = 0,
   x = 232,
   y = 752,
   width = 16,
   height = 16,
-  name = "to_house_2",
   destination_map = "7",
   destination = "from_outside_house_2",
 }
 
 teletransporter{
+  name = "to_house_3",
   layer = 0,
   x = 304,
   y = 208,
   width = 16,
   height = 16,
-  name = "to_house_3",
   destination_map = "7",
   destination = "from_outside_house_3",
 }
 
 npc{
+  name = "npc_anouki_2",
   layer = 0,
   x = 800,
   y = 173,
-  name = "npc_anouki_2",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/snowpeak_anouki",
 }
 
@@ -2595,8 +2595,8 @@ wall{
   width = 24,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2608,8 +2608,8 @@ wall{
   width = 8,
   height = 24,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2621,8 +2621,8 @@ wall{
   width = 16,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2634,8 +2634,8 @@ wall{
   width = 8,
   height = 16,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2647,8 +2647,8 @@ wall{
   width = 64,
   height = 16,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2660,8 +2660,8 @@ wall{
   width = 64,
   height = 16,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2673,8 +2673,8 @@ wall{
   width = 64,
   height = 16,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }

@@ -10890,6 +10890,60 @@ wall{
   stops_enemies = true,
 }
 
+enemy{
+  name = "chuchu_1",
+  layer = 0,
+  x = 608,
+  y = 629,
+  direction = 0,
+  breed = "chuchu_red",
+}
+
+enemy{
+  name = "chuchu_2",
+  layer = 0,
+  x = 656,
+  y = 701,
+  direction = 0,
+  breed = "chuchu_yellow",
+}
+
+enemy{
+  name = "chuchu_3",
+  layer = 0,
+  x = 744,
+  y = 573,
+  direction = 0,
+  breed = "chuchu_red",
+}
+
+enemy{
+  name = "chuchu_4",
+  layer = 0,
+  x = 760,
+  y = 701,
+  direction = 0,
+  breed = "chuchu_red",
+}
+
+enemy{
+  name = "chuchu_5",
+  layer = 0,
+  x = 808,
+  y = 621,
+  direction = 0,
+  breed = "chuchu_yellow",
+}
+
+enemy{
+  name = "chuchu_6",
+  layer = 0,
+  x = 656,
+  y = 541,
+  direction = 0,
+  breed = "chuchu_yellow",
+}
+
 tile{
   layer = 2,
   x = 192,

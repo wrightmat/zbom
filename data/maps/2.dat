@@ -7704,50 +7704,50 @@ tile{
 }
 
 dynamic_tile{
+  name = "tile",
   layer = 0,
   x = 72,
   y = 656,
+  pattern = "288",
   width = 8,
   height = 288,
-  name = "tile",
-  pattern = "288",
   enabled_at_start = true,
 }
 
 destination{
+  name = "from_outside_1",
   layer = 0,
   x = 584,
   y = 957,
-  name = "from_outside_1",
   direction = 1,
 }
 
 teletransporter{
+  name = "to_outside_1",
   layer = 0,
   x = 576,
   y = 976,
   width = 16,
   height = 16,
-  name = "to_outside_1",
   destination_map = "45",
   destination = "from_castle_1",
 }
 
 destination{
+  name = "entrance_relic",
   layer = 0,
   x = 1344,
   y = 229,
-  name = "entrance_relic",
   direction = 1,
 }
 
 teletransporter{
+  name = "to_outside_relic",
   layer = 0,
   x = 1336,
   y = 240,
   width = 16,
   height = 16,
-  name = "to_outside_relic",
   destination_map = "40",
   destination = "from_relic_house",
 }
@@ -7863,10 +7863,10 @@ destructible{
 }
 
 chest{
+  name = "chest_collector_3",
   layer = 0,
   x = 1848,
   y = 189,
-  name = "chest_collector_3",
   treasure_name = "ocarina",
   treasure_savegame_variable = "b2013",
   sprite = "entities/chest",
@@ -7893,383 +7893,383 @@ destructible{
 }
 
 chest{
+  name = "chest_collector_2",
   layer = 0,
   x = 1840,
   y = 85,
-  name = "chest_collector_2",
   treasure_name = "bottle_2",
   treasure_savegame_variable = "b2010",
   sprite = "entities/chest",
 }
 
 teletransporter{
+  name = "to_relic_B1",
   layer = 0,
   x = 1600,
   y = 240,
   width = 16,
   height = 16,
-  name = "to_relic_B1",
   destination_map = "2",
   destination = "from_relic_1",
 }
 
 destination{
+  name = "from_relic_B1",
   layer = 0,
   x = 1608,
   y = 221,
-  name = "from_relic_B1",
   direction = 1,
 }
 
 destination{
+  name = "from_relic_1",
   layer = 0,
   x = 1920,
   y = 77,
-  name = "from_relic_1",
   direction = 3,
 }
 
 teletransporter{
+  name = "to_relic_1",
   layer = 0,
   x = 1912,
   y = 32,
   width = 16,
   height = 16,
-  name = "to_relic_1",
   destination_map = "2",
   destination = "from_relic_B1",
 }
 
 destination{
+  name = "from_outside_shop",
   layer = 0,
   x = 1440,
   y = 581,
-  name = "from_outside_shop",
   direction = 1,
 }
 
 teletransporter{
+  name = "to_outside_shop",
   layer = 0,
   x = 1432,
   y = 592,
   width = 16,
   height = 16,
-  name = "to_outside_shop",
   destination_map = "40",
   destination = "from_shop",
 }
 
 chest{
+  name = "chest_1",
   layer = 0,
   x = 1840,
   y = 461,
-  name = "chest_1",
   sprite = "entities/chest",
 }
 
 chest{
+  name = "chest_3",
   layer = 0,
   x = 1904,
   y = 461,
-  name = "chest_3",
   sprite = "entities/chest",
 }
 
 chest{
+  name = "chest_2",
   layer = 0,
   x = 1872,
   y = 461,
-  name = "chest_2",
   sprite = "entities/chest",
 }
 
 npc{
+  name = "chests_man",
   layer = 0,
   x = 1896,
   y = 509,
-  name = "chests_man",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/hylian_wizard",
 }
 
 destination{
+  name = "from_outside_chest",
   layer = 0,
   x = 1880,
   y = 581,
-  name = "from_outside_chest",
   direction = 1,
 }
 
 teletransporter{
+  name = "to_outside_chest",
   layer = 0,
   x = 1872,
   y = 592,
   width = 16,
   height = 16,
-  name = "to_outside_chest",
   destination_map = "40",
   destination = "from_chest_game",
 }
 
 destination{
+  name = "from_outside_rupee",
   layer = 0,
   x = 1440,
   y = 933,
-  name = "from_outside_rupee",
   direction = 1,
 }
 
 teletransporter{
+  name = "to_outside_rupee",
   layer = 0,
   x = 1432,
   y = 944,
   width = 16,
   height = 16,
-  name = "to_outside_rupee",
   destination_map = "40",
   destination = "from_rupee_house",
 }
 
 destination{
+  name = "from_outside_arrow",
   layer = 0,
   x = 1872,
   y = 933,
-  name = "from_outside_arrow",
   direction = 1,
 }
 
 teletransporter{
+  name = "to_outside_arrow",
   layer = 0,
   x = 1864,
   y = 944,
   width = 16,
   height = 16,
-  name = "to_outside_arrow",
   destination_map = "40",
   destination = "from_arrow_game",
 }
 
 destination{
+  name = "from_outside_office",
   layer = 0,
   x = 1840,
   y = 1285,
-  name = "from_outside_office",
   direction = 1,
 }
 
 teletransporter{
+  name = "to_outside_office",
   layer = 0,
   x = 1832,
   y = 1296,
   width = 16,
   height = 16,
-  name = "to_outside_office",
   destination_map = "40",
   destination = "from_office",
 }
 
 destination{
+  name = "from_outside_ranch_1",
   layer = 0,
   x = 1680,
   y = 1621,
-  name = "from_outside_ranch_1",
   direction = 1,
 }
 
 teletransporter{
+  name = "to_outside_ranch_1",
   layer = 0,
   x = 1672,
   y = 1632,
   width = 16,
   height = 16,
-  name = "to_outside_ranch_1",
   destination_map = "41",
   destination = "from_ranch_1",
 }
 
 destination{
+  name = "from_outside_ranch_2",
   layer = 0,
   x = 1888,
   y = 1621,
-  name = "from_outside_ranch_2",
   direction = 1,
 }
 
 teletransporter{
+  name = "to_outside_ranch_2",
   layer = 0,
   x = 1880,
   y = 1632,
   width = 16,
   height = 16,
-  name = "to_outside_ranch_2",
   destination_map = "41",
   destination = "from_ranch_2",
 }
 
 npc{
+  name = "elder_ulo",
   layer = 0,
   x = 728,
   y = 165,
-  name = "elder_ulo",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/ordon_ulo",
 }
 
 npc{
+  name = "elder_larin",
   layer = 0,
   x = 864,
   y = 165,
-  name = "elder_larin",
   direction = 0,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/goron_larin",
 }
 
 npc{
+  name = "elder_juba",
   layer = 0,
   x = 768,
   y = 165,
-  name = "elder_juba",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/zora_juba",
 }
 
 npc{
+  name = "elder_zelda",
   layer = 0,
   x = 992,
   y = 165,
-  name = "elder_zelda",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/hylian_zelda",
 }
 
 npc{
+  name = "elder_gin",
   layer = 0,
   x = 816,
   y = 165,
-  name = "elder_gin",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/tokay_gin",
 }
 
 npc{
+  name = "elder_gonpho",
   layer = 0,
   x = 912,
   y = 165,
-  name = "elder_gonpho",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/snowpeak_anouki",
 }
 
 npc{
+  name = "elder_koshi",
   layer = 0,
   x = 952,
   y = 165,
-  name = "elder_koshi",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/rito",
 }
 
 npc{
+  name = "slot_machine_left",
   layer = 0,
   x = 1456,
   y = 813,
-  name = "slot_machine_left",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/slot_machine",
 }
 
 npc{
+  name = "slot_machine_middle",
   layer = 0,
   x = 1480,
   y = 813,
-  name = "slot_machine_middle",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/slot_machine",
 }
 
 npc{
+  name = "slot_machine_right",
   layer = 0,
   x = 1504,
   y = 813,
-  name = "slot_machine_right",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/slot_machine",
 }
 
 npc{
+  name = "slots_man",
   layer = 0,
   x = 1384,
   y = 805,
-  name = "slots_man",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/hylian_wizard",
 }
 
 npc{
+  name = "arrow_man",
   layer = 0,
   x = 1920,
   y = 853,
-  name = "arrow_man",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/hylian_wizard",
 }
 
 npc{
+  name = "shopkeeper",
   layer = 0,
   x = 1448,
   y = 469,
-  name = "shopkeeper",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/hylian_thief",
 }
 
 shop_treasure{
-  font = "la",
+  name = "shop_item_1",
   layer = 0,
   x = 1392,
   y = 472,
-  name = "shop_item_1",
   treasure_name = "shield",
   treasure_variant = 2,
   treasure_savegame_variable = "b2006",
   price = 400,
+  font = "la",
   dialog = "shop.hyrule_shield",
 }
 
 shop_treasure{
-  font = "la",
+  name = "shop_item_2",
   layer = 0,
   x = 1432,
   y = 472,
-  name = "shop_item_2",
   treasure_name = "heart",
   price = 20,
+  font = "la",
   dialog = "_item_description.heart.1",
 }
 
 shop_treasure{
-  font = "la",
+  name = "shop_item_3",
   layer = 0,
   x = 1472,
   y = 472,
-  name = "shop_item_3",
   treasure_name = "potion",
   treasure_variant = 3,
   price = 200,
+  font = "la",
   dialog = "shop.potion_blue",
 }
 
@@ -8345,57 +8345,57 @@ destructible{
 }
 
 door{
+  name = "door_throneroom_1",
   layer = 0,
   x = 288,
   y = 632,
-  name = "door_throneroom_1",
   direction = 1,
   sprite = "entities/door_small_key",
 }
 
 door{
+  name = "door_throneroom_2",
   layer = 0,
   x = 288,
   y = 520,
-  name = "door_throneroom_2",
   direction = 3,
   sprite = "entities/door_small_key",
 }
 
 sensor{
+  name = "sensor_zirna_cutscene",
   layer = 0,
   x = 856,
   y = 509,
   width = 48,
   height = 16,
-  name = "sensor_zirna_cutscene",
 }
 
 npc{
+  name = "npc_zirna",
   layer = 0,
   x = 872,
   y = 621,
-  name = "npc_zirna",
   direction = 1,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/zirna",
 }
 
 chest{
+  name = "chest_collector_4",
   layer = 0,
   x = 1600,
   y = 77,
-  name = "chest_collector_4",
   treasure_name = "heart_piece",
   treasure_savegame_variable = "b1702",
   sprite = "entities/chest",
 }
 
 block{
+  name = "statue_castle",
   layer = 0,
   x = 864,
   y = 101,
-  name = "statue_castle",
   direction = 0,
   sprite = "entities/statue_castle",
   pushable = true,
@@ -8404,228 +8404,228 @@ block{
 }
 
 teletransporter{
+  name = "to_upstairs",
   layer = 0,
   x = 856,
   y = 48,
   width = 16,
   height = 16,
-  name = "to_upstairs",
   destination_map = "2",
   destination = "from_downstairs",
 }
 
 destination{
+  name = "from_upstairs",
   layer = 0,
   x = 864,
   y = 85,
-  name = "from_upstairs",
   direction = 3,
 }
 
 teletransporter{
+  name = "to_downstairs",
   layer = 0,
   x = 152,
   y = 1072,
   width = 16,
   height = 16,
-  name = "to_downstairs",
   destination_map = "2",
   destination = "from_upstairs",
 }
 
 destination{
+  name = "from_downstairs",
   layer = 0,
   x = 160,
   y = 1109,
-  name = "from_downstairs",
   direction = 3,
 }
 
 chest{
+  name = "chest_heart_piece",
   layer = 0,
   x = 1376,
   y = 1157,
-  name = "chest_heart_piece",
   treasure_name = "heart_piece",
   treasure_savegame_variable = "b1706",
   sprite = "entities/chest",
 }
 
 npc{
+  name = "elder_juba_office",
   layer = 0,
   x = 1840,
   y = 1189,
-  name = "elder_juba_office",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/zora_juba",
 }
 
 npc{
+  name = "elder_gonpho_office",
   layer = 0,
   x = 1760,
   y = 1149,
-  name = "elder_gonpho_office",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/snowpeak_anouki",
 }
 
 npc{
+  name = "elder_koshi_office",
   layer = 0,
   x = 1912,
   y = 1157,
-  name = "elder_koshi_office",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/rito_koshi",
 }
 
 dynamic_tile{
+  name = "night_window",
   layer = 0,
   x = 1568,
   y = 1512,
+  pattern = "708",
   width = 32,
   height = 32,
-  name = "night_window",
-  pattern = "708",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "night_window_2",
   layer = 0,
   x = 1696,
   y = 1192,
+  pattern = "708",
   width = 32,
   height = 32,
-  name = "night_window_2",
-  pattern = "708",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "night_window_3",
   layer = 0,
   x = 1760,
   y = 840,
+  pattern = "708",
   width = 32,
   height = 32,
-  name = "night_window_3",
-  pattern = "708",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "night_window_4",
   layer = 0,
   x = 1232,
   y = 96,
+  pattern = "708",
   width = 32,
   height = 32,
-  name = "night_window_4",
-  pattern = "708",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "night_window_5",
   layer = 0,
   x = 1328,
   y = 440,
+  pattern = "708",
   width = 32,
   height = 32,
-  name = "night_window_5",
-  pattern = "708",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "night_window_6",
   layer = 0,
   x = 1328,
   y = 832,
+  pattern = "708",
   width = 32,
   height = 32,
-  name = "night_window_6",
-  pattern = "708",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "night_window_28",
   layer = 0,
   x = 1952,
   y = 1560,
+  pattern = "709",
   width = 32,
   height = 32,
-  name = "night_window_28",
-  pattern = "709",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "night_window_7",
   layer = 0,
   x = 1680,
   y = 120,
+  pattern = "709",
   width = 32,
   height = 32,
-  name = "night_window_7",
-  pattern = "709",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "night_window_8",
   layer = 0,
   x = 1520,
   y = 504,
+  pattern = "709",
   width = 32,
   height = 32,
-  name = "night_window_8",
-  pattern = "709",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "night_window_9",
   layer = 0,
   x = 1520,
   y = 840,
+  pattern = "709",
   width = 32,
   height = 32,
-  name = "night_window_9",
-  pattern = "709",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "night_window_10",
   layer = 0,
   x = 1856,
   y = 384,
+  pattern = "706",
   width = 32,
   height = 32,
-  name = "night_window_10",
-  pattern = "706",
   enabled_at_start = false,
 }
 
 npc{
+  name = "bed_2",
   layer = 0,
   x = 1616,
   y = 1461,
-  name = "bed_2",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/bed",
 }
 
 sensor{
+  name = "sensor_sleep",
   layer = 0,
   x = 1640,
   y = 1461,
   width = 16,
   height = 32,
-  name = "sensor_sleep",
 }
 
 destination{
+  name = "house_bed",
   layer = 0,
   x = 1640,
   y = 1485,
-  name = "house_bed",
   direction = 0,
 }
 

@@ -19,6 +19,15 @@ tile{
 
 tile{
   layer = 0,
+  x = 104,
+  y = 96,
+  width = 144,
+  height = 80,
+  pattern = "825",
+}
+
+tile{
+  layer = 0,
   x = 248,
   y = 104,
   width = 8,
@@ -51,15 +60,6 @@ tile{
   width = 8,
   height = 64,
   pattern = "562",
-}
-
-tile{
-  layer = 0,
-  x = 104,
-  y = 80,
-  width = 144,
-  height = 96,
-  pattern = "384",
 }
 
 tile{
@@ -1152,20 +1152,20 @@ tile{
 }
 
 npc{
+  name = "npc_great_fairy",
   layer = 0,
   x = 176,
   y = 109,
-  name = "npc_great_fairy",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/great_fairy",
 }
 
 destination{
+  name = "from_outside",
   layer = 0,
   x = 176,
   y = 341,
-  name = "from_outside",
   direction = 1,
 }
 
@@ -1179,21 +1179,21 @@ wall{
 }
 
 sensor{
+  name = "sensor_fairy_speak",
   layer = 0,
   x = 144,
   y = 181,
   width = 80,
   height = 16,
-  name = "sensor_fairy_speak",
 }
 
 teletransporter{
+  name = "to_outside",
   layer = 0,
   x = 168,
   y = 344,
   width = 16,
   height = 16,
-  name = "to_outside",
   destination_map = "157",
   destination = "from_fairy",
 }

@@ -4445,25 +4445,52 @@ tile{
   pattern = "1626",
 }
 
+tile{
+  layer = 0,
+  x = 832,
+  y = 896,
+  width = 8,
+  height = 8,
+  pattern = "546",
+}
+
+tile{
+  layer = 0,
+  x = 1048,
+  y = 640,
+  width = 8,
+  height = 8,
+  pattern = "545",
+}
+
+tile{
+  layer = 0,
+  x = 992,
+  y = 280,
+  width = 8,
+  height = 8,
+  pattern = "546",
+}
+
 teletransporter{
+  name = "to_F7",
   layer = 0,
   x = 0,
   y = 1120,
   width = 752,
   height = 16,
-  name = "to_F7",
   transition = "scrolling",
   destination_map = "49",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_E6",
   layer = 0,
   x = -16,
   y = 0,
   width = 16,
   height = 1120,
-  name = "to_E6",
   transition = "scrolling",
   destination_map = "63",
   destination = "_side",
@@ -4525,112 +4552,112 @@ destructible{
 }
 
 teletransporter{
+  name = "to_G6",
   layer = 0,
   x = 1120,
   y = 48,
   width = 16,
   height = 1040,
-  name = "to_G6",
   transition = "scrolling",
   destination_map = "65",
   destination = "_side",
 }
 
 enemy{
+  name = "geyser_1",
   layer = 0,
   x = 120,
   y = 349,
-  name = "geyser_1",
   direction = 3,
   breed = "geyser",
   treasure_name = "random",
 }
 
 enemy{
+  name = "geyser_2",
   layer = 0,
   x = 328,
   y = 533,
-  name = "geyser_2",
   direction = 3,
   breed = "geyser",
   treasure_name = "random",
 }
 
 enemy{
+  name = "geyser_3",
   layer = 0,
   x = 440,
   y = 485,
-  name = "geyser_3",
   direction = 3,
   breed = "geyser",
   treasure_name = "random",
 }
 
 enemy{
+  name = "geyser_4",
   layer = 0,
   x = 536,
   y = 413,
-  name = "geyser_4",
   direction = 3,
   breed = "geyser",
   treasure_name = "random",
 }
 
 teletransporter{
+  name = "to_F5",
   layer = 0,
   x = 0,
   y = -16,
   width = 1024,
   height = 16,
-  name = "to_F5",
   transition = "scrolling",
   destination_map = "56",
   destination = "_side",
 }
 
 destination{
+  name = "from_cave_1",
   layer = 0,
   x = 296,
   y = 261,
-  name = "from_cave_1",
   direction = 3,
 }
 
 destination{
+  name = "from_cave_2",
   layer = 0,
   x = 312,
   y = 133,
-  name = "from_cave_2",
   direction = 3,
 }
 
 teletransporter{
+  name = "to_cave_2",
   layer = 0,
   x = 288,
   y = 232,
   width = 16,
   height = 16,
-  name = "to_cave_2",
   destination_map = "64",
   destination = "from_cave_2",
 }
 
 teletransporter{
+  name = "to_cave_1",
   layer = 0,
   x = 304,
   y = 104,
   width = 16,
   height = 16,
-  name = "to_cave_1",
   destination_map = "64",
   destination = "from_cave_1",
 }
 
 enemy{
+  name = "geyser_5",
   layer = 0,
   x = 456,
   y = 125,
-  name = "geyser_5",
   direction = 3,
   breed = "geyser",
   treasure_name = "random",
@@ -4659,12 +4686,12 @@ destructible{
 }
 
 teletransporter{
+  name = "to_F7_2",
   layer = 0,
   x = 848,
   y = 1120,
   width = 128,
   height = 16,
-  name = "to_F7_2",
   transition = "scrolling",
   destination_map = "49",
   destination = "_side",
@@ -4693,32 +4720,52 @@ destructible{
 }
 
 destination{
+  name = "from_cave_ordeals",
   layer = 0,
   x = 128,
   y = 653,
-  name = "from_cave_ordeals",
   direction = 3,
 }
 
 teletransporter{
+  name = "to_cave_ordeals",
   layer = 0,
   x = 120,
   y = 624,
   width = 16,
   height = 16,
-  name = "to_cave_ordeals",
   destination_map = "169",
   destination = "from_F6",
 }
 
 npc{
+  name = "npc_goron",
   layer = 0,
   x = 320,
   y = 997,
-  name = "npc_goron",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/goron",
+}
+
+enemy{
+  name = "chuchu_1",
+  layer = 0,
+  x = 952,
+  y = 805,
+  direction = 0,
+  breed = "chuchu_red",
+  treasure_name = "random_mountain",
+}
+
+enemy{
+  name = "chuchu_2",
+  layer = 0,
+  x = 960,
+  y = 437,
+  direction = 0,
+  breed = "chuchu_red",
+  treasure_name = "random_mountain",
 }
 
 tile{

@@ -9,7 +9,7 @@ if game:get_value("i1603")==nil then game:set_value("i1603", 0) end
 if game:get_value("i1849")==nil then game:set_value("i1849", 0) end
 
 function map:on_started(destination)
-  if game:get_value("i1603") >= 1 then  -- force the iniial dialog to be heard
+  if game:get_value("i1603") >= 1 then  -- force the initial dialog to be heard
     if game:get_value("i1849") >= 10 then game:set_value("i1603", 2) end
     if game:get_value("i1849") >= 20 then game:set_value("i1603", 3) end
     if game:get_value("i1849") >= 35 then game:set_value("i1603", 4) end

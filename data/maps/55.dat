@@ -2420,13 +2420,22 @@ tile{
   pattern = "1961",
 }
 
+tile{
+  layer = 0,
+  x = 712,
+  y = 616,
+  width = 16,
+  height = 24,
+  pattern = "4",
+}
+
 npc{
+  name = "tower_base",
   layer = 0,
   x = 808,
   y = 413,
-  name = "tower_base",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/tower_wind_base",
 }
 
@@ -2437,8 +2446,8 @@ wall{
   width = 16,
   height = 48,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2450,43 +2459,43 @@ wall{
   width = 48,
   height = 16,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 teletransporter{
+  name = "to_E6",
   layer = 0,
   x = 0,
   y = 1120,
   width = 1120,
   height = 16,
-  name = "to_E6",
   transition = "scrolling",
   destination_map = "63",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_F5_down",
   layer = 0,
   x = 1120,
   y = 120,
   width = 16,
   height = 336,
-  name = "to_F5_down",
   transition = "scrolling",
   destination_map = "56",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_F5_down_2",
   layer = 0,
   x = 1120,
   y = 944,
   width = 16,
   height = 176,
-  name = "to_F5_down_2",
   transition = "scrolling",
   destination_map = "56",
   destination = "_side",
@@ -2578,50 +2587,50 @@ destructible{
 }
 
 wall{
+  name = "custom_obstacle",
   layer = 0,
   x = 1064,
   y = 464,
   width = 56,
   height = 8,
-  name = "custom_obstacle",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "custom_obstacle_2",
   layer = 0,
   x = 552,
   y = 568,
   width = 144,
   height = 64,
-  name = "custom_obstacle_2",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 teletransporter{
+  name = "to_D5",
   layer = 0,
   x = -16,
   y = 320,
   width = 16,
   height = 800,
-  name = "to_D5",
   transition = "scrolling",
   destination_map = "54",
   destination = "_side",
 }
 
 sensor{
+  name = "sensor_change_layer",
   layer = 0,
   x = 128,
   y = 925,
   width = 32,
   height = 16,
-  name = "sensor_change_layer",
 }
 
 destructible{
@@ -2873,8 +2882,8 @@ wall{
   width = 8,
   height = 64,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2886,8 +2895,8 @@ wall{
   width = 8,
   height = 64,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2899,8 +2908,8 @@ wall{
   width = 24,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2912,8 +2921,8 @@ wall{
   width = 24,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2925,8 +2934,8 @@ wall{
   width = 8,
   height = 32,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2938,8 +2947,8 @@ wall{
   width = 8,
   height = 32,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2951,8 +2960,8 @@ wall{
   width = 8,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2964,8 +2973,8 @@ wall{
   width = 8,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2977,8 +2986,8 @@ wall{
   width = 8,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2990,8 +2999,8 @@ wall{
   width = 8,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -3003,8 +3012,8 @@ wall{
   width = 8,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -3016,8 +3025,8 @@ wall{
   width = 8,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -3029,8 +3038,8 @@ wall{
   width = 8,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -3042,8 +3051,8 @@ wall{
   width = 8,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -3055,8 +3064,8 @@ wall{
   width = 8,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -3068,8 +3077,8 @@ wall{
   width = 8,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -3081,8 +3090,8 @@ wall{
   width = 8,
   height = 32,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -3094,8 +3103,8 @@ wall{
   width = 8,
   height = 32,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -3107,8 +3116,8 @@ wall{
   width = 176,
   height = 16,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -3120,28 +3129,28 @@ wall{
   width = 16,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 teletransporter{
+  name = "to_tower",
   layer = 0,
   x = 800,
   y = 424,
   width = 16,
   height = 16,
-  name = "to_tower",
   destination_map = "210",
   destination = "from_outside",
 }
 
 destination{
+  name = "from_tower",
   layer = 0,
   x = 808,
   y = 453,
-  name = "from_tower",
   direction = 3,
 }
 
@@ -3152,8 +3161,8 @@ wall{
   width = 8,
   height = 48,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -3165,8 +3174,8 @@ wall{
   width = 56,
   height = 32,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -3178,8 +3187,8 @@ wall{
   width = 496,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -3191,8 +3200,8 @@ wall{
   width = 16,
   height = 48,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -3204,8 +3213,8 @@ wall{
   width = 160,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -3217,8 +3226,8 @@ wall{
   width = 8,
   height = 336,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -3230,8 +3239,8 @@ wall{
   width = 16,
   height = 96,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -3243,8 +3252,8 @@ wall{
   width = 8,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -3256,31 +3265,31 @@ wall{
   width = 8,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 teletransporter{
+  name = "to_F5_water",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 64,
-  name = "to_F5_water",
   transition = "scrolling",
   destination_map = "56",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_D5_water",
   layer = 0,
   x = -16,
   y = 0,
   width = 16,
   height = 272,
-  name = "to_D5_water",
   transition = "scrolling",
   destination_map = "54",
   destination = "_side",
@@ -3293,32 +3302,51 @@ wall{
   width = 16,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 npc{
+  name = "torch_1",
   layer = 0,
   x = 888,
   y = 477,
-  name = "torch_1",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/torch_wood",
 }
 
 teletransporter{
+  name = "to_E4_water",
   layer = 0,
   x = 0,
   y = -16,
   width = 1120,
   height = 16,
-  name = "to_E4_water",
   transition = "scrolling",
   destination_map = "103",
   destination = "_side",
+}
+
+destination{
+  name = "from_inside_1",
+  layer = 0,
+  x = 624,
+  y = 661,
+  direction = 1,
+}
+
+teletransporter{
+  name = "to_inside_1",
+  layer = 0,
+  x = 616,
+  y = 632,
+  width = 16,
+  height = 16,
+  destination_map = "3",
+  destination = "from_septen_1",
 }
 
 tile{
@@ -3934,24 +3962,24 @@ tile{
 }
 
 teletransporter{
+  name = "to_F5_up",
   layer = 1,
   x = 1120,
   y = 456,
   width = 16,
   height = 448,
-  name = "to_F5_up",
   transition = "scrolling",
   destination_map = "56",
   destination = "_side",
 }
 
 npc{
+  name = "tower_top",
   layer = 1,
   x = 808,
   y = 349,
-  name = "tower_top",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/tower_wind_top",
 }
 
