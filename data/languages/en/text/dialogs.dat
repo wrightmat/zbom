@@ -108,9 +108,9 @@ dialog{
 Brother! my spirit seems
 to have been trapped in
 this weird statue! Maybe
-$rsomething with
+something with
 some explosive power
-$wcould blow me out of
+could blow me out of
 this thing...
   ]]
 }
@@ -860,7 +860,8 @@ dialog{
   text = [[
 It's an Odd Mushroom
 with a very pungent
-aroma.
+aroma. Take it to a
+potion maker, probably.
   ]]
 }
 
@@ -2797,7 +2798,7 @@ dialog{
   skip = "current",
   text = [[
 Enjoy the beautiful
-$bcity of Saria.
+city of Saria.
   ]]
 }
 
@@ -2825,7 +2826,7 @@ How lucky is that?
 
 Not sure where to go now?
 Maybe you should stop by
-$bHyrule Castle Town
+Hyrule Castle Town
 and ask the mayor - it's
 straight north of here,
 through the woods. Can't
@@ -3088,7 +3089,7 @@ dialog{
   text = [[
 Wow, You have enough deku
 sticks for me to make a
-$rBlue Potion!
+Blue Potion!
 Would you like me to?
 Sure!
 Nope.
@@ -3102,7 +3103,7 @@ dialog{
   text = [[
 Wow, You have enough deku
 sticks for me to make a
-$rRevitalizing Potion!
+Revitalizing Potion!
 Would you like me to?
 Sure!
 Nope.
@@ -3163,11 +3164,11 @@ Oh, I knew you would
 understand! You've always
 gotten me, haven't you?
 I know what you'd like!
-$bThe odd structure
+The odd structure
 just north of here! I'd
 check it out myself, but
 it's dark and you have
-$ra lantern...
+a lantern...
   ]]
 }
 
@@ -3179,7 +3180,7 @@ Obviously you haven't
 explored enough of these
 woods! You should really
 look around more... Yeah!
-$bLike that odd structure
+Like that odd structure
 just up ahead!
   ]]
 }
@@ -3362,9 +3363,9 @@ dialog{
   text = [[
 The ghost that follows
 you- that's
-$gDargor's son!$0
+Dargor's son!$0
 Then that means...$0
-My poor $gBrother Dargor.
+My poor Brother Dargor.
 I must go and give my
 condolences.
 But you must not
@@ -3712,7 +3713,7 @@ familiar- we know about
 a really old library you
 should check out.
 It's all the way in
-$bNorth Hyrule though,
+North Hyrule though,
 so the trick to get there
 is to use the sewers.
 That place where you
@@ -3723,7 +3724,7 @@ running under our feet!
 Anyway, you should be
 able to find another
 sewer access just east
-of $bHyrule Castle Town.
+of Hyrule Castle Town.
   ]]
 }
 
@@ -3902,7 +3903,7 @@ dialog{
   skip = "current",
   text = [[
 Welcome to the Kakariko
-$bGallery and Ampitheater!
+Gallery and Ampitheater!
 This city has long been
 seen as the cultural hub
 of all Hyrule, and this
@@ -3929,10 +3930,10 @@ dialog{
   text = [[
 Welcome one and all to
 this year's stage show at
-$bKakariko Ampitheater!
+Kakariko Ampitheater!
 I'm proud to introduce
 our star, the one and only
-$gRowin!
+Rowin!
 Sit back and enjoy
 the show! 
   ]]
@@ -4122,7 +4123,7 @@ dialog{
   text = [[
 See that blue bar up
 there? That's called your
-$b"Stamina Bar".
+"Stamina Bar".
 It decreases any time
 you do something that
 takes energy, like
@@ -5229,11 +5230,11 @@ Tell you what... if you
 are so concerned about
 these Tokay, then you
 can help us repair our
-ship! We know of an
-of here in the desert
+ship! We know of a place
+here in the desert
 which should contain
-the parts which we'll
-need for repairs...$0
+the parts we'll need
+for repairs...$0
 If you can get there and
 find the parts, then
 we'll fix up our ship
@@ -5325,6 +5326,26 @@ be back to our pirating
 ways, and now we'll
 be more effective than
 ever!
+  ]]
+}
+
+dialog{
+  id = "hint_stone.grove.1",
+  skip = "current",
+  text = [[
+The path to this point
+will help you light the
+way to the path forward.
+  ]]
+}
+
+dialog{
+  id = "hint_stone.grove.2",
+  skip = "current",
+  text = [[
+Pierce the eyes with an
+arrow, but do so in
+order.
   ]]
 }
 
@@ -5834,17 +5855,17 @@ I'll help! The circles
 in the corner are
 layed out kinda like
 your keyboard! (whatever
-that is). The $ggreen
+that is). The green
 circle always controls
 your sword, unless the
 game is paused because
-then the $ggreen circle
+then the green circle
 lets you save your
 adventure!
-The $rorange circle pauses
+The orange circle pauses
 everything and lets you
 rummage through your
-stuff. The $bblue circle
+stuff. The blue circle
 changes depending on
 what's going on! (I've
 never understood that,
@@ -6033,6 +6054,17 @@ light the way should it
 get too dark. I really
 appreciate you putting
 my worries to rest!
+  ]]
+}
+
+dialog{
+  id = "julita.1.shield",
+  skip = "current",
+  text = [[
+What? You say you don't
+have a shield? Well go
+talk to Rudy and claim
+your prize!
   ]]
 }
 
@@ -7778,6 +7810,37 @@ South- Lumberjack/
 }
 
 dialog{
+  id = "sign.G12_danger",
+  skip = "current",
+  text = [[
+DANGER!
+Do not go any further
+without sword in hand!
+  ]]
+}
+
+dialog{
+  id = "sign.G12_directions_1",
+  skip = "current",
+  text = [[
+South- Ordon Village
+N.West- Hyrule Field
+North- Hyrule Castle
+  ]]
+}
+
+dialog{
+  id = "sign.G12_directions_2",
+  skip = "current",
+  text = [[
+South- Ordon Village
+East- Faron Woods
+West- Lake Hylia
+  ]]
+}
+
+
+dialog{
   id = "sign.G11_directions",
   skip = "current",
   text = [[
@@ -8398,6 +8461,19 @@ is a little help.
 }
 
 dialog{
+  id = "tokay.0.desert",
+  skip = "current",
+  text = [[
+Wait! Where are you going?
+Aren't you going to help
+us get our beach back?
+Please get whatever the
+pirates need from the
+desert! Please?
+  ]]
+}
+
+dialog{
   id = "tokay.alchemy_stone",
   question = "1",
   skip = "current",
@@ -8581,7 +8657,7 @@ dialog{
   text = [[
 How do you expect to
 light any torches without
-a $rlantern?
+a lantern?
   ]]
 }
 
@@ -8591,7 +8667,7 @@ dialog{
   text = [[
 What? You're wondering
 how to get your hands on
-a $rlantern?$w Maybe check
+a lantern? Maybe check
 with Ulo, he's the mayor
 and knows everything
 about everything!
@@ -8652,7 +8728,7 @@ each torch. If you make
 it in time, you'll win a
 prize! Remember, this
 is not just a race...
-it's a tribute to $gOrdona,
+it's a tribute to Ordona,
 signifying our apprec-
 iation for all the light
 she bestows upon us and
@@ -8667,7 +8743,7 @@ dialog{
   skip = "current",
   text = [[
 You better take care of
-that $rshield,$w too. It's
+that shield, too. It's
 a fine creation, Rudy
 really outdid himself
 with the prizes for my
@@ -8788,7 +8864,7 @@ dialog{
   id = "ulo.1.festival",
   skip = "current",
   text = [[
-That $rlantern$w has served
+That lantern has served
 me well in the past, but
 doesn't do me much good
 while on the Council.
@@ -8802,7 +8878,7 @@ dialog{
   skip = "current",
   text = [[
 But wait, you don't have
-a $rlantern!$w You can't
+a lantern! You can't
 truly enjoy the festival
 without one. Mine is in
 my house among my chests,

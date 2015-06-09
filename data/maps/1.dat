@@ -5157,40 +5157,40 @@ tile{
 }
 
 dynamic_tile{
+  name = "bed_bilo",
   layer = 0,
   x = 528,
   y = 528,
+  pattern = "125",
   width = 32,
   height = 40,
-  name = "bed_bilo",
-  pattern = "125",
   enabled_at_start = false,
 }
 
 destination{
+  name = "main_entrance_house",
   layer = 0,
   x = 160,
   y = 245,
-  name = "main_entrance_house",
   direction = 1,
 }
 
 teletransporter{
+  name = "to_outside_link",
   layer = 0,
   x = 152,
   y = 256,
   width = 16,
   height = 16,
-  name = "to_outside_link",
   destination_map = "10",
   destination = "from_house_inside",
 }
 
 destination{
+  name = "main_entrance_impa",
   layer = 0,
   x = 800,
   y = 245,
-  name = "main_entrance_impa",
   direction = 1,
 }
 
@@ -5235,22 +5235,22 @@ destructible{
 }
 
 npc{
+  name = "npc_impa",
   layer = 0,
   x = 760,
   y = 149,
-  name = "npc_impa",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/hylian_impa",
 }
 
 teletransporter{
+  name = "to_outside_impa",
   layer = 0,
   x = 792,
   y = 256,
   width = 16,
   height = 16,
-  name = "to_outside_impa",
   destination_map = "46",
   destination = "from_impa",
 }
@@ -5316,152 +5316,152 @@ destructible{
 }
 
 destination{
+  name = "main_entrance_shop",
   layer = 0,
   x = 192,
   y = 613,
-  name = "main_entrance_shop",
   direction = 1,
 }
 
 teletransporter{
+  name = "to_outside_shop",
   layer = 0,
   x = 184,
   y = 624,
   width = 16,
   height = 16,
-  name = "to_outside_shop",
   destination_map = "10",
   destination = "from_shop_inside",
 }
 
 shop_treasure{
-  font = "la",
+  name = "shop_ordon_shield",
   layer = 0,
   x = 96,
   y = 504,
-  name = "shop_ordon_shield",
   treasure_name = "shield",
   price = 100,
+  font = "la",
   dialog = "shop.ordon_shield",
 }
 
 shop_treasure{
-  font = "la",
+  name = "shop_potion_red",
   layer = 0,
   x = 224,
   y = 480,
-  name = "shop_potion_red",
   treasure_name = "potion",
   price = 50,
+  font = "la",
   dialog = "shop.potion_red",
 }
 
 shop_treasure{
-  font = "la",
+  name = "shop_potion_green",
   layer = 0,
   x = 256,
   y = 480,
-  name = "shop_potion_green",
   treasure_name = "potion",
   treasure_variant = 2,
   price = 100,
+  font = "la",
   dialog = "shop.potion_green",
 }
 
 shop_treasure{
-  font = "la",
+  name = "shop_ordon_bomb_bag",
   layer = 0,
   x = 144,
   y = 504,
-  name = "shop_ordon_bomb_bag",
   treasure_name = "bomb_bag",
   price = 350,
+  font = "la",
   dialog = "shop.bomb_bag",
 }
 
 npc{
+  name = "npc_shopkeeper",
   layer = 0,
   x = 152,
   y = 501,
-  name = "npc_shopkeeper",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/hylian_thief",
   behavior = "dialog#shop_keeper.0.1",
 }
 
 destination{
+  name = "enter_house_ulo",
   layer = 0,
   x = 640,
   y = 613,
-  name = "enter_house_ulo",
   direction = 1,
 }
 
 teletransporter{
+  name = "to_outside_house_ulo",
   layer = 0,
   x = 632,
   y = 624,
   width = 16,
   height = 16,
-  name = "to_outside_house_ulo",
   destination_map = "10",
   destination = "from_house_ulo",
 }
 
 destination{
+  name = "enter_house_julita",
   layer = 0,
   x = 1088,
   y = 613,
-  name = "enter_house_julita",
   direction = 1,
 }
 
 teletransporter{
+  name = "to_outside_house_julita",
   layer = 0,
   x = 1080,
   y = 624,
   width = 16,
   height = 16,
-  name = "to_outside_house_julita",
   destination_map = "10",
   destination = "from_house_julita",
 }
 
 destination{
+  name = "enter_ranch",
   layer = 0,
   x = 192,
   y = 965,
-  name = "enter_ranch",
   direction = 1,
 }
 
 teletransporter{
+  name = "to_outside_ranch",
   layer = 0,
   x = 184,
   y = 976,
   width = 16,
   height = 16,
-  name = "to_outside_ranch",
   destination_map = "11",
   destination = "from_ranch",
 }
 
 chest{
+  name = "chest_lantern",
   layer = 0,
   x = 584,
   y = 541,
-  name = "chest_lantern",
   treasure_name = "lamp",
   treasure_savegame_variable = "b2002",
   sprite = "entities/chest",
 }
 
 destructible{
+  name = "pot_ulo",
   layer = 0,
   x = 568,
   y = 589,
-  name = "pot_ulo",
   treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
@@ -5469,12 +5469,12 @@ destructible{
 }
 
 npc{
+  name = "npc_bilo",
   layer = 0,
   x = 600,
   y = 477,
-  name = "npc_bilo",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/ordon_bilo",
 }
 
@@ -5509,48 +5509,48 @@ destructible{
 }
 
 npc{
+  name = "bed",
   layer = 0,
   x = 224,
   y = 93,
-  name = "bed",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/bed",
 }
 
 destination{
+  name = "from_intro",
   layer = 0,
   x = 208,
   y = 109,
-  name = "from_intro",
   direction = 2,
 }
 
 npc{
+  name = "snores",
   layer = 0,
   x = 216,
   y = 85,
-  name = "snores",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/bed_snores",
 }
 
 destination{
+  name = "enter_lumberjack",
   layer = 0,
   x = 640,
   y = 965,
-  name = "enter_lumberjack",
   direction = 1,
 }
 
 teletransporter{
+  name = "to_outside_lumberjack",
   layer = 0,
   x = 632,
   y = 976,
   width = 16,
   height = 16,
-  name = "to_outside_lumberjack",
   destination_map = "17",
   destination = "from_inside_lumberjack",
 }
@@ -5616,20 +5616,20 @@ destructible{
 }
 
 destination{
+  name = "enter_pim",
   layer = 0,
   x = 1088,
   y = 965,
-  name = "enter_pim",
   direction = 1,
 }
 
 teletransporter{
+  name = "to_outside_pim",
   layer = 0,
   x = 1080,
   y = 976,
   width = 16,
   height = 16,
-  name = "to_outside_pim",
   destination_map = "10",
   destination = "from_house_pim",
 }
@@ -5734,405 +5734,408 @@ destructible{
 }
 
 dynamic_tile{
+  name = "box_1",
   layer = 0,
   x = 528,
   y = 528,
+  pattern = "13",
   width = 16,
   height = 16,
-  name = "box_1",
-  pattern = "13",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "box_2",
   layer = 0,
   x = 544,
   y = 528,
+  pattern = "13",
   width = 16,
   height = 16,
-  name = "box_2",
-  pattern = "13",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "box_3",
   layer = 0,
   x = 560,
   y = 528,
+  pattern = "13",
   width = 16,
   height = 16,
-  name = "box_3",
-  pattern = "13",
   enabled_at_start = true,
 }
 
 dynamic_tile{
-  layer = 0,
-  x = 528,
-  y = 544,
-  width = 16,
-  height = 16,
   name = "box_4",
+  layer = 0,
+  x = 528,
+  y = 544,
   pattern = "13",
+  width = 16,
+  height = 16,
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "box_5",
   layer = 0,
   x = 544,
   y = 544,
+  pattern = "13",
   width = 16,
   height = 16,
-  name = "box_5",
-  pattern = "13",
   enabled_at_start = true,
 }
 
 dynamic_tile{
-  layer = 0,
-  x = 528,
-  y = 560,
-  width = 16,
-  height = 16,
   name = "box_6",
+  layer = 0,
+  x = 528,
+  y = 560,
   pattern = "13",
+  width = 16,
+  height = 16,
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "box_7",
   layer = 0,
   x = 544,
   y = 560,
+  pattern = "13",
   width = 16,
   height = 16,
-  name = "box_7",
-  pattern = "13",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "box_8",
   layer = 0,
   x = 528,
   y = 576,
+  pattern = "13",
   width = 16,
   height = 16,
-  name = "box_8",
-  pattern = "13",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "box_9",
   layer = 0,
   x = 544,
   y = 576,
+  pattern = "13",
   width = 16,
   height = 16,
-  name = "box_9",
-  pattern = "13",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "box_10",
   layer = 0,
   x = 576,
   y = 576,
+  pattern = "13",
   width = 16,
   height = 16,
-  name = "box_10",
-  pattern = "13",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "box_11",
   layer = 0,
   x = 592,
   y = 576,
+  pattern = "13",
   width = 16,
   height = 16,
-  name = "box_11",
-  pattern = "13",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "box_12",
   layer = 0,
   x = 608,
   y = 576,
+  pattern = "13",
   width = 16,
   height = 16,
-  name = "box_12",
-  pattern = "13",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "box_13",
   layer = 0,
   x = 592,
   y = 560,
+  pattern = "13",
   width = 16,
   height = 16,
-  name = "box_13",
-  pattern = "13",
   enabled_at_start = true,
 }
 
 npc{
+  name = "npc_ulo",
   layer = 0,
   x = 712,
   y = 565,
-  name = "npc_ulo",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/ordon_ulo",
 }
 
 npc{
+  name = "npc_deacon",
   layer = 0,
   x = 632,
   y = 877,
-  name = "npc_deacon",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/hylian_deacon",
 }
 
 npc{
+  name = "npc_gaira",
   layer = 0,
   x = 704,
   y = 845,
-  name = "npc_gaira",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/hylian_gaira",
 }
 
 dynamic_tile{
+  name = "night_window",
   layer = 0,
   x = 48,
   y = 136,
+  pattern = "708",
   width = 32,
   height = 32,
-  name = "night_window",
-  pattern = "708",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "night_window_2",
   layer = 0,
   x = 48,
   y = 496,
+  pattern = "708",
   width = 32,
   height = 32,
-  name = "night_window_2",
-  pattern = "708",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "night_window_3",
   layer = 0,
   x = 48,
   y = 856,
+  pattern = "708",
   width = 32,
   height = 32,
-  name = "night_window_3",
-  pattern = "708",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "night_window_4",
   layer = 0,
   x = 496,
   y = 848,
+  pattern = "708",
   width = 32,
   height = 32,
-  name = "night_window_4",
-  pattern = "708",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "night_window_5",
   layer = 0,
   x = 496,
   y = 488,
+  pattern = "708",
   width = 32,
   height = 32,
-  name = "night_window_5",
-  pattern = "708",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "night_window_6",
   layer = 0,
   x = 560,
   y = 152,
+  pattern = "708",
   width = 32,
   height = 32,
-  name = "night_window_6",
-  pattern = "708",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "night_window_7",
   layer = 0,
   x = 944,
   y = 488,
+  pattern = "708",
   width = 32,
   height = 32,
-  name = "night_window_7",
-  pattern = "708",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "night_window_8",
   layer = 0,
   x = 944,
   y = 872,
-  width = 32,
-  height = 32,
-  name = "night_window_8",
   pattern = "708",
+  width = 32,
+  height = 32,
   enabled_at_start = false,
 }
 
 dynamic_tile{
-  layer = 0,
-  x = 304,
-  y = 496,
-  width = 32,
-  height = 32,
   name = "night_window_9",
+  layer = 0,
+  x = 304,
+  y = 496,
   pattern = "709",
+  width = 32,
+  height = 32,
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "night_window_10",
   layer = 0,
   x = 304,
   y = 856,
+  pattern = "709",
   width = 32,
   height = 32,
-  name = "night_window_10",
-  pattern = "709",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "night_window_11",
   layer = 0,
   x = 752,
   y = 856,
+  pattern = "709",
   width = 32,
   height = 32,
-  name = "night_window_11",
-  pattern = "709",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "night_window_12",
   layer = 0,
   x = 752,
   y = 496,
+  pattern = "709",
   width = 32,
   height = 32,
-  name = "night_window_12",
-  pattern = "709",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "night_window_13",
   layer = 0,
   x = 1200,
   y = 512,
+  pattern = "709",
   width = 32,
   height = 32,
-  name = "night_window_13",
-  pattern = "709",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "night_window_14",
   layer = 0,
   x = 1200,
   y = 832,
+  pattern = "709",
   width = 32,
   height = 32,
-  name = "night_window_14",
-  pattern = "709",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "night_window_15",
   layer = 0,
   x = 600,
   y = 224,
+  pattern = "707",
   width = 32,
   height = 32,
-  name = "night_window_15",
-  pattern = "707",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "night_window_16",
   layer = 0,
   x = 832,
   y = 224,
+  pattern = "707",
   width = 32,
   height = 32,
-  name = "night_window_16",
-  pattern = "707",
   enabled_at_start = false,
 }
 
 sensor{
+  name = "sensor_sleep",
   layer = 0,
   x = 200,
   y = 93,
   width = 16,
   height = 48,
-  name = "sensor_sleep",
 }
 
 destination{
+  name = "house_bed",
   layer = 0,
   x = 208,
   y = 109,
-  name = "house_bed",
   direction = 2,
 }
 
 custom_entity{
+  name = "npc_pim",
   layer = 0,
   x = 1124,
   y = 861,
-  width = 16,
-  height = 16,
-  name = "npc_pim",
   direction = 3,
   sprite = "npc/ordon_pim",
   model = "npc_pim",
 }
 
 custom_entity{
+  name = "npc_crista",
   layer = 0,
   x = 252,
   y = 469,
-  width = 16,
-  height = 16,
-  name = "npc_crista",
   direction = 3,
   sprite = "npc/ordon_crista",
   model = "npc_crista",
 }
 
 custom_entity{
+  name = "npc_julita",
   layer = 0,
   x = 1084,
   y = 533,
-  width = 16,
-  height = 16,
-  name = "npc_julita",
   direction = 3,
   sprite = "npc/ordon_julita",
   model = "npc_julita",
+}
+
+npc{
+  name = "shelf_1",
+  layer = 0,
+  x = 1024,
+  y = 869,
+  direction = 3,
+  subtype = 0,
 }
 
 tile{

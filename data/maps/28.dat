@@ -6362,6 +6362,24 @@ tile{
   pattern = "524",
 }
 
+tile{
+  layer = 0,
+  x = 992,
+  y = 216,
+  width = 16,
+  height = 16,
+  pattern = "1450",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 768,
+  width = 16,
+  height = 16,
+  pattern = "1450",
+}
+
 wall{
   layer = 0,
   x = 808,
@@ -6369,8 +6387,8 @@ wall{
   width = 16,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -6382,43 +6400,43 @@ wall{
   width = 16,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 teletransporter{
+  name = "to_G13",
   layer = 0,
   x = 744,
   y = 1120,
   width = 64,
   height = 16,
-  name = "to_G13",
   transition = "scrolling",
   destination_map = "18",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_F12",
   layer = 0,
   x = -16,
   y = 0,
   width = 16,
   height = 496,
-  name = "to_F12",
   transition = "scrolling",
   destination_map = "27",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_F12_2",
   layer = 0,
   x = -16,
   y = 584,
   width = 16,
   height = 496,
-  name = "to_F12_2",
   transition = "scrolling",
   destination_map = "27",
   destination = "_side",
@@ -7140,207 +7158,207 @@ destructible{
 }
 
 npc{
+  name = "torch_1",
   layer = 0,
   x = 816,
   y = 1069,
-  name = "torch_1",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/torch_wood",
   behavior = "item#lamp",
 }
 
 npc{
+  name = "torch_2",
   layer = 0,
   x = 728,
   y = 557,
-  name = "torch_2",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/torch_wood",
   behavior = "item#lamp",
 }
 
 teletransporter{
+  name = "to_sewers",
   layer = 0,
   x = 464,
   y = 360,
   width = 16,
   height = 16,
-  name = "to_sewers",
   destination_map = "202",
   destination = "from_G12",
 }
 
 destination{
+  name = "from_sewers",
   layer = 0,
   x = 472,
   y = 389,
-  name = "from_sewers",
   direction = 3,
 }
 
 teletransporter{
+  name = "to_G11",
   layer = 0,
   x = 0,
   y = -16,
   width = 192,
   height = 16,
-  name = "to_G11",
   transition = "scrolling",
   destination_map = "33",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_G11_2",
   layer = 0,
   x = 920,
   y = -16,
   width = 208,
   height = 16,
-  name = "to_G11_2",
   transition = "scrolling",
   destination_map = "33",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_H12",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 1088,
-  name = "to_H12",
   transition = "scrolling",
   destination_map = "29",
   destination = "_side",
 }
 
 enemy{
+  name = "chuchu_1",
   layer = 0,
   x = 640,
   y = 885,
-  name = "chuchu_1",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "chuchu_2",
   layer = 0,
   x = 672,
   y = 861,
-  name = "chuchu_2",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "chuchu_3",
   layer = 0,
   x = 704,
   y = 885,
-  name = "chuchu_3",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "chuchu_4",
   layer = 0,
   x = 720,
   y = 925,
-  name = "chuchu_4",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "chuchu_5",
   layer = 0,
   x = 696,
   y = 965,
-  name = "chuchu_5",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "chuchu_6",
   layer = 0,
   x = 640,
   y = 965,
-  name = "chuchu_6",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "chuchu_7",
   layer = 0,
   x = 624,
   y = 925,
-  name = "chuchu_7",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "chuchu_8",
   layer = 0,
   x = 672,
   y = 997,
-  name = "chuchu_8",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 wall{
+  name = "custom_obstacle",
   layer = 0,
   x = 568,
   y = 840,
   width = 8,
   height = 152,
-  name = "custom_obstacle",
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "custom_obstacle_2",
   layer = 0,
   x = 584,
   y = 800,
   width = 192,
   height = 8,
-  name = "custom_obstacle_2",
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "custom_obstacle_3",
   layer = 0,
   x = 640,
   y = 1032,
   width = 160,
   height = 8,
-  name = "custom_obstacle_3",
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "custom_obstacle_4",
   layer = 0,
   x = 776,
   y = 808,
   width = 8,
   height = 160,
-  name = "custom_obstacle_4",
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -7367,15 +7385,33 @@ destructible{
 }
 
 custom_entity{
+  name = "npc_crista",
   layer = 0,
   x = 668,
   y = 925,
-  width = 16,
-  height = 16,
-  name = "npc_crista",
   direction = 3,
   sprite = "npc/ordon_crista",
   model = "npc_crista",
+}
+
+npc{
+  name = "sign_directions_1",
+  layer = 0,
+  x = 240,
+  y = 781,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/sign",
+}
+
+npc{
+  name = "sign_directions_2",
+  layer = 0,
+  x = 1000,
+  y = 229,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/sign",
 }
 
 tile{

@@ -234,3 +234,7 @@ function sensor_sleep:on_activated()
   end)
  end
 end
+
+function shelf_1:on_interaction()
+  game:start_dialog("pim.1.house")
+end

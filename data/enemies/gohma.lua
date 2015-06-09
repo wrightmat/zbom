@@ -35,9 +35,9 @@ function enemy:check_action()
      }
     end
     if action >= 1 and action <= 7 then self:blink() else self:go(72) end
-  elseif self:get_life() < 3 and self:get_life() > 0 and map:get_entities_count(self:get_name().."_son") <= 15 then
+  elseif self:get_life() <= 3 then
     -- final phase: if more than 6 hits then move a lot faster, and create tektites!
-    if math.random(2) == 1 and map:get_entities_count(self:get_name().."_son") <= 14 then
+    if math.random(2) == 1 and map:get_entities_count(self:get_name().."_son") <= 10 then
      self:create_enemy{
       name = self:get_name().."_son",
       breed = "tektite_green",

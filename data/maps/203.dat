@@ -9675,6 +9675,24 @@ tile{
   pattern = "524",
 }
 
+tile{
+  layer = 0,
+  x = 1408,
+  y = 616,
+  width = 16,
+  height = 16,
+  pattern = "482",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 440,
+  width = 16,
+  height = 16,
+  pattern = "481",
+}
+
 wall{
   layer = 0,
   x = 1408,
@@ -9682,8 +9700,8 @@ wall{
   width = 16,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -9695,8 +9713,8 @@ wall{
   width = 32,
   height = 16,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -9707,8 +9725,8 @@ wall{
   width = 16,
   height = 16,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -9719,8 +9737,8 @@ wall{
   width = 16,
   height = 16,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -10315,113 +10333,113 @@ stream{
 }
 
 teletransporter{
+  name = "to_outside_warp",
   layer = 0,
   x = 928,
   y = 1592,
   width = 16,
   height = 16,
-  name = "to_outside_warp",
-  sprite = "entities/teletransporter",
-  sound = "warp",
   destination_map = "21",
   destination = "warp_from_temple",
+  sprite = "entities/teletransporter",
+  sound = "warp",
 }
 
 enemy{
+  name = "room16_tektite_1",
   layer = 0,
   x = 632,
   y = 149,
-  name = "room16_tektite_1",
   direction = 3,
   breed = "tektite_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room16_tektite_2",
   layer = 0,
   x = 544,
   y = 197,
-  name = "room16_tektite_2",
   direction = 3,
   breed = "tektite_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room16_tektite_3",
   layer = 0,
   x = 688,
   y = 197,
-  name = "room16_tektite_3",
   direction = 3,
   breed = "tektite_green",
   treasure_name = "random_woods",
 }
 
 npc{
+  name = "torch_moth",
   layer = 0,
   x = 1416,
   y = 1621,
-  name = "torch_moth",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/torch_wood",
 }
 
 enemy{
+  name = "keese_1",
   layer = 0,
   x = 1664,
   y = 1517,
-  name = "keese_1",
   direction = 3,
   breed = "keese",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "keese_2",
   layer = 0,
   x = 1776,
   y = 1701,
-  name = "keese_2",
   direction = 3,
   breed = "keese",
   treasure_name = "heart",
 }
 
 enemy{
+  name = "keese_3",
   layer = 0,
   x = 1968,
   y = 1549,
-  name = "keese_3",
   direction = 3,
   breed = "keese",
   treasure_name = "magic_flask",
 }
 
 enemy{
+  name = "keese_4",
   layer = 0,
   x = 1792,
   y = 1605,
-  name = "keese_4",
   direction = 3,
   breed = "keese",
   treasure_name = "random_woods",
 }
 
 chest{
+  name = "chest_compass",
   layer = 0,
   x = 1672,
   y = 669,
-  name = "chest_compass",
   treasure_name = "compass",
   treasure_savegame_variable = "b1056",
   sprite = "entities/chest",
 }
 
 chest{
+  name = "chest_rupees",
   layer = 0,
   x = 1960,
   y = 653,
-  name = "chest_rupees",
   treasure_name = "rupee",
   treasure_variant = 4,
   treasure_savegame_variable = "b1054",
@@ -10429,30 +10447,30 @@ chest{
 }
 
 teletransporter{
+  name = "to_outside",
   layer = 0,
   x = 608,
   y = 1440,
   width = 16,
   height = 16,
-  name = "to_outside",
   destination_map = "21",
   destination = "from_temple",
 }
 
 destination{
+  name = "from_outside",
   layer = 0,
   x = 616,
   y = 1429,
-  name = "from_outside",
   direction = 1,
   default = true,
 }
 
 chest{
+  name = "chest_item",
   layer = 0,
   x = 800,
   y = 1021,
-  name = "chest_item",
   treasure_name = "bow",
   treasure_savegame_variable = "b2003",
   sprite = "entities/chest_big",
@@ -10462,29 +10480,29 @@ chest{
 }
 
 teletransporter{
+  name = "to_outside_key1",
   layer = 0,
   x = 1808,
   y = 600,
   width = 16,
   height = 16,
-  name = "to_outside_key1",
   destination_map = "20",
   destination = "from_temple_key1",
 }
 
 destination{
+  name = "from_outside_key1",
   layer = 0,
   x = 1816,
   y = 629,
-  name = "from_outside_key1",
   direction = 3,
 }
 
 enemy{
+  name = "miniboss_mothulita",
   layer = 0,
   x = 1416,
   y = 1525,
-  name = "miniboss_mothulita",
   direction = 3,
   breed = "mothulita",
   rank = 1,
@@ -10493,359 +10511,359 @@ enemy{
 }
 
 chest{
+  name = "chest_map",
   layer = 0,
   x = 1936,
   y = 1373,
-  name = "chest_map",
   treasure_name = "map",
   treasure_savegame_variable = "b1055",
   sprite = "entities/chest",
 }
 
 enemy{
+  name = "room2_rope_1",
   layer = 0,
   x = 112,
   y = 1269,
-  name = "room2_rope_1",
   direction = 3,
   breed = "rope",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room2_rope_2",
   layer = 0,
   x = 88,
   y = 1317,
-  name = "room2_rope_2",
   direction = 3,
   breed = "rope",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room2_rope_3",
   layer = 0,
   x = 112,
   y = 1373,
-  name = "room2_rope_3",
   direction = 3,
   breed = "rope",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room3_chuchu_1",
   layer = 0,
   x = 104,
   y = 981,
-  name = "room3_chuchu_1",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room3_chuchu_2",
   layer = 0,
   x = 184,
   y = 1085,
-  name = "room3_chuchu_2",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room3_chuchu_3",
   layer = 0,
   x = 312,
   y = 1029,
-  name = "room3_chuchu_3",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room3_chuchu_4",
   layer = 0,
   x = 224,
   y = 965,
-  name = "room3_chuchu_4",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room4_tektite_1",
   layer = 0,
   x = 576,
   y = 1077,
-  name = "room4_tektite_1",
   direction = 3,
   breed = "tektite_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room4_tektite_2",
   layer = 0,
   x = 1112,
   y = 1029,
-  name = "room4_tektite_2",
   direction = 3,
   breed = "tektite_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room4_chuchu_1",
   layer = 0,
   x = 728,
   y = 957,
-  name = "room4_chuchu_1",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room4_chuchu_2",
   layer = 0,
   x = 864,
   y = 1101,
-  name = "room4_chuchu_2",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room5_bubble",
   layer = 0,
   x = 928,
   y = 696,
-  name = "room5_bubble",
   direction = 3,
   breed = "bubble_red",
 }
 
 enemy{
+  name = "room5_keese_1",
   layer = 0,
   x = 936,
   y = 741,
-  name = "room5_keese_1",
   direction = 3,
   breed = "keese",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room5_keese_2",
   layer = 0,
   x = 976,
   y = 661,
-  name = "room5_keese_2",
   direction = 3,
   breed = "keese",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room5_keese_3",
   layer = 0,
   x = 1032,
   y = 733,
-  name = "room5_keese_3",
   direction = 3,
   breed = "keese",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room5_keese_4",
   layer = 0,
   x = 1128,
   y = 773,
-  name = "room5_keese_4",
   direction = 3,
   breed = "keese",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room6_chuchu_1",
   layer = 0,
   x = 1400,
   y = 805,
-  name = "room6_chuchu_1",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "magic_flask",
 }
 
 enemy{
+  name = "room6_chuchu_2",
   layer = 0,
   x = 1504,
   y = 733,
-  name = "room6_chuchu_2",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "magic_flask",
 }
 
 enemy{
+  name = "room6_chuchu_3",
   layer = 0,
   x = 1320,
   y = 701,
-  name = "room6_chuchu_3",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room7_rope_1",
   layer = 0,
   x = 1744,
   y = 845,
-  name = "room7_rope_1",
   direction = 3,
   breed = "rope",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room7_rope_2",
   layer = 0,
   x = 1888,
   y = 933,
-  name = "room7_rope_2",
   direction = 3,
   breed = "rope",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room7_rope_3",
   layer = 0,
   x = 1744,
   y = 1045,
-  name = "room7_rope_3",
   direction = 3,
   breed = "rope",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room7_rope_4",
   layer = 0,
   x = 1872,
   y = 789,
-  name = "room7_rope_4",
   direction = 3,
   breed = "rope",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room7_tentacle_1",
   layer = 0,
   x = 1856,
   y = 1045,
-  name = "room7_tentacle_1",
   direction = 3,
   breed = "tentacle",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room7_tentacle_2",
   layer = 0,
   x = 1808,
   y = 901,
-  name = "room7_tentacle_2",
   direction = 3,
   breed = "tentacle",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room8_tentacle_1",
   layer = 0,
   x = 1488,
   y = 1021,
-  name = "room8_tentacle_1",
   direction = 3,
   breed = "tentacle",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room8_tentacle_2",
   layer = 0,
   x = 1352,
   y = 989,
-  name = "room8_tentacle_2",
   direction = 3,
   breed = "tentacle",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room8_tentacle_3",
   layer = 0,
   x = 1360,
   y = 1077,
-  name = "room8_tentacle_3",
   direction = 3,
   breed = "tentacle",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room8_tentacle_4",
   layer = 0,
   x = 1528,
   y = 1101,
-  name = "room8_tentacle_4",
   direction = 3,
   breed = "tentacle",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room1_rope_1",
   layer = 0,
   x = 936,
   y = 1261,
-  name = "room1_rope_1",
   direction = 3,
   breed = "rope",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room1_rope_2",
   layer = 0,
   x = 992,
   y = 1365,
-  name = "room1_rope_2",
   direction = 3,
   breed = "rope",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room1_rope_3",
   layer = 0,
   x = 1104,
   y = 1269,
-  name = "room1_rope_3",
   direction = 3,
   breed = "rope",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room1_rope_4",
   layer = 0,
   x = 1112,
   y = 1365,
-  name = "room1_rope_4",
   direction = 3,
   breed = "rope",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room1_rope_5",
   layer = 0,
   x = 912,
   y = 1373,
-  name = "room1_rope_5",
   direction = 3,
   breed = "rope",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room1_rope_6",
   layer = 0,
   x = 1016,
   y = 1261,
-  name = "room1_rope_6",
   direction = 3,
   breed = "rope",
   treasure_name = "random_woods",
@@ -10857,8 +10875,8 @@ wall{
   y = 616,
   width = 8,
   height = 240,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -10868,8 +10886,8 @@ wall{
   y = 720,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -10879,8 +10897,8 @@ wall{
   y = 720,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -10890,8 +10908,8 @@ wall{
   y = 720,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -10901,8 +10919,8 @@ wall{
   y = 1008,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -10912,8 +10930,8 @@ wall{
   y = 1008,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -10923,8 +10941,8 @@ wall{
   y = 1296,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -10934,8 +10952,8 @@ wall{
   y = 1296,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -10945,8 +10963,8 @@ wall{
   y = 1296,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -10956,8 +10974,8 @@ wall{
   y = 1008,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -10967,8 +10985,8 @@ wall{
   y = 1008,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -10978,8 +10996,8 @@ wall{
   y = 1208,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -10989,8 +11007,8 @@ wall{
   y = 1120,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -11000,8 +11018,8 @@ wall{
   y = 920,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -11011,8 +11029,8 @@ wall{
   y = 856,
   width = 368,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -11022,8 +11040,8 @@ wall{
   y = 608,
   width = 368,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -11033,8 +11051,8 @@ wall{
   y = 1120,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -11044,8 +11062,8 @@ wall{
   y = 1480,
   width = 8,
   height = 240,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -11055,95 +11073,95 @@ wall{
   y = 1480,
   width = 8,
   height = 240,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 chest{
+  name = "chest_book",
   layer = 0,
   x = 1816,
   y = 141,
-  name = "chest_book",
   treasure_name = "book_mudora",
   treasure_savegame_variable = "b1061",
   sprite = "entities/chest_big",
 }
 
 enemy{
+  name = "room15_bubble",
   layer = 0,
   x = 496,
   y = 384,
-  name = "room15_bubble",
   direction = 3,
   breed = "bubble_green",
 }
 
 enemy{
+  name = "room14_moth_1",
   layer = 0,
   x = 936,
   y = 360,
-  name = "room14_moth_1",
   direction = 3,
   breed = "moth",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room14_moth_2",
   layer = 0,
   x = 952,
   y = 360,
-  name = "room14_moth_2",
   direction = 3,
   breed = "moth",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room14_moth_3",
   layer = 0,
   x = 1080,
   y = 544,
-  name = "room14_moth_3",
   direction = 3,
   breed = "moth",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room14_moth_4",
   layer = 0,
   x = 936,
   y = 544,
-  name = "room14_moth_4",
   direction = 3,
   breed = "moth",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room14_moth_5",
   layer = 0,
   x = 952,
   y = 544,
-  name = "room14_moth_5",
   direction = 3,
   breed = "moth",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room14_moth_6",
   layer = 0,
   x = 1096,
   y = 544,
-  name = "room14_moth_6",
   direction = 3,
   breed = "moth",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room14_moth_7",
   layer = 0,
   x = 1080,
   y = 360,
-  name = "room14_moth_7",
   direction = 3,
   breed = "moth",
   treasure_name = "random_woods",
@@ -11155,8 +11173,8 @@ wall{
   y = 568,
   width = 368,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -11166,8 +11184,8 @@ wall{
   y = 328,
   width = 8,
   height = 240,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -11177,8 +11195,8 @@ wall{
   y = 432,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -11188,8 +11206,8 @@ wall{
   y = 144,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -11199,8 +11217,8 @@ wall{
   y = 344,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -11210,16 +11228,16 @@ wall{
   y = 256,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 door{
+  name = "room_5_key_1",
   layer = 0,
   x = 1008,
   y = 616,
-  name = "room_5_key_1",
   direction = 1,
   sprite = "entities/door_small_key",
   savegame_variable = "b1062",
@@ -11230,87 +11248,87 @@ door{
 }
 
 door{
+  name = "door_miniboss_1",
   layer = 0,
   x = 1576,
   y = 1592,
-  name = "door_miniboss_1",
   direction = 0,
   sprite = "entities/door_shutter",
 }
 
 door{
+  name = "door_miniboss_2",
   layer = 0,
   x = 1240,
   y = 1592,
-  name = "door_miniboss_2",
   direction = 2,
   sprite = "entities/door_shutter",
 }
 
 door{
+  name = "room6_shutter_1",
   layer = 0,
   x = 1240,
   y = 728,
-  name = "room6_shutter_1",
   direction = 2,
   sprite = "entities/door_shutter",
 }
 
 door{
+  name = "room6_shutter_2",
   layer = 0,
   x = 1576,
   y = 728,
-  name = "room6_shutter_2",
   direction = 0,
   sprite = "entities/door_shutter",
 }
 
 sensor{
+  name = "sensor_open_room9",
   layer = 0,
   x = 1408,
   y = 1141,
   width = 32,
   height = 16,
-  name = "sensor_open_room9",
 }
 
 door{
+  name = "room9_shutter",
   layer = 0,
   x = 1408,
   y = 1192,
-  name = "room9_shutter",
   direction = 1,
   sprite = "entities/door_shutter",
 }
 
 destination{
+  name = "from_outside_boss",
   layer = 0,
   x = 1016,
   y = 53,
-  name = "from_outside_boss",
   direction = 3,
 }
 
 destination{
+  name = "from_boss_chamber",
   layer = 0,
   x = 1696,
   y = 229,
-  name = "from_boss_chamber",
   direction = -1,
   sprite = "entities/destination",
 }
 
 teletransporter{
+  name = "to_outside_after_book",
   layer = 0,
   x = 1928,
   y = 216,
   width = 16,
   height = 16,
-  name = "to_outside_after_book",
-  sprite = "entities/teletransporter",
-  sound = "warp",
   destination_map = "21",
   destination = "from_temple",
+  sprite = "entities/teletransporter",
+  sound = "warp",
 }
 
 destructible{
@@ -12541,12 +12559,12 @@ destructible{
 }
 
 sensor{
+  name = "sensor_close_room6",
   layer = 0,
   x = 1272,
   y = 733,
   width = 16,
   height = 32,
-  name = "sensor_close_room6",
 }
 
 wall{
@@ -12555,8 +12573,8 @@ wall{
   y = 616,
   width = 8,
   height = 240,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -12566,8 +12584,8 @@ wall{
   y = 328,
   width = 8,
   height = 240,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -12577,8 +12595,8 @@ wall{
   y = 320,
   width = 368,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -12588,8 +12606,8 @@ wall{
   y = 1472,
   width = 368,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -12599,8 +12617,8 @@ wall{
   y = 1720,
   width = 368,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -12610,8 +12628,8 @@ wall{
   y = 1720,
   width = 368,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -12621,8 +12639,8 @@ wall{
   y = 1472,
   width = 368,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -12632,8 +12650,8 @@ wall{
   y = 1480,
   width = 8,
   height = 240,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -12643,34 +12661,34 @@ wall{
   y = 1480,
   width = 8,
   height = 240,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 sensor{
+  name = "sensor_close_room9",
   layer = 0,
   x = 1408,
   y = 1221,
   width = 32,
   height = 16,
-  name = "sensor_close_room9",
 }
 
 sensor{
+  name = "sensor_miniboss_start",
   layer = 0,
   x = 1568,
   y = 1589,
   width = 16,
   height = 48,
-  name = "sensor_miniboss_start",
 }
 
 switch{
+  name = "sensor_out_torches_room",
   layer = 0,
   x = 1536,
   y = 656,
-  name = "sensor_out_torches_room",
   subtype = "walkable",
   sprite = "entities/switch",
   sound = "switch",
@@ -12679,10 +12697,10 @@ switch{
 }
 
 switch{
+  name = "room1_arrow",
   layer = 0,
   x = 1144,
   y = 1200,
-  name = "room1_arrow",
   subtype = "arrow_target",
   sprite = "entities/switch_eye_down",
   sound = "switch",
@@ -12691,10 +12709,10 @@ switch{
 }
 
 switch{
+  name = "room6_arrow_1",
   layer = 0,
   x = 1248,
   y = 704,
-  name = "room6_arrow_1",
   subtype = "arrow_target",
   sprite = "entities/switch_eye_right",
   sound = "switch",
@@ -12703,10 +12721,10 @@ switch{
 }
 
 switch{
+  name = "room6_arrow_2",
   layer = 0,
   x = 1248,
   y = 752,
-  name = "room6_arrow_2",
   subtype = "arrow_target",
   sprite = "entities/switch_eye_right",
   sound = "switch",
@@ -12715,10 +12733,10 @@ switch{
 }
 
 switch{
+  name = "room15_arrow_1",
   layer = 0,
   x = 520,
   y = 440,
-  name = "room15_arrow_1",
   subtype = "arrow_target",
   sprite = "entities/switch_eye_left",
   sound = "switch",
@@ -12727,10 +12745,10 @@ switch{
 }
 
 switch{
+  name = "room15_arrow_3",
   layer = 0,
   x = 608,
   y = 408,
-  name = "room15_arrow_3",
   subtype = "arrow_target",
   sprite = "entities/switch_eye_up",
   sound = "switch",
@@ -12739,129 +12757,129 @@ switch{
 }
 
 npc{
+  name = "torch_room6_1",
   layer = 0,
   x = 1336,
   y = 757,
-  name = "torch_room6_1",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/torch",
 }
 
 npc{
+  name = "torch_room6_2",
   layer = 0,
   x = 1528,
   y = 789,
-  name = "torch_room6_2",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/torch",
 }
 
 npc{
+  name = "torch_room6_3",
   layer = 0,
   x = 1432,
   y = 749,
-  name = "torch_room6_3",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/torch",
 }
 
 npc{
+  name = "torch_room6_4",
   layer = 0,
   x = 1464,
   y = 693,
-  name = "torch_room6_4",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/torch",
 }
 
 npc{
+  name = "torch_room6_5",
   layer = 0,
   x = 1376,
   y = 677,
-  name = "torch_room6_5",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/torch",
 }
 
 door{
+  name = "room1_shutter",
   layer = 0,
   x = 1176,
   y = 1304,
-  name = "room1_shutter",
   direction = 0,
   sprite = "entities/door_shutter",
 }
 
 enemy{
+  name = "room10_tentacle_1",
   layer = 0,
   x = 1864,
   y = 1301,
-  name = "room10_tentacle_1",
   direction = 3,
   breed = "tentacle",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room10_tentacle_2",
   layer = 0,
   x = 1784,
   y = 1277,
-  name = "room10_tentacle_2",
   direction = 3,
   breed = "tentacle",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room10_tentacle_3",
   layer = 0,
   x = 1728,
   y = 1325,
-  name = "room10_tentacle_3",
   direction = 3,
   breed = "tentacle",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room10_tentacle_4",
   layer = 0,
   x = 1800,
   y = 1365,
-  name = "room10_tentacle_4",
   direction = 3,
   breed = "tentacle",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room10_tentacle_5",
   layer = 0,
   x = 1936,
   y = 1253,
-  name = "room10_tentacle_5",
   direction = 3,
   breed = "tentacle",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room10_tentacle_6",
   layer = 0,
   x = 1688,
   y = 1253,
-  name = "room10_tentacle_6",
   direction = 3,
   breed = "tentacle",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room10_tentacle_7",
   layer = 0,
   x = 1696,
   y = 1397,
-  name = "room10_tentacle_7",
   direction = 3,
   breed = "tentacle",
   treasure_name = "random_woods",
@@ -12873,8 +12891,8 @@ wall{
   y = 1296,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -12884,16 +12902,16 @@ wall{
   y = 1408,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 door{
+  name = "room_5_key_2",
   layer = 0,
   x = 1008,
   y = 552,
-  name = "room_5_key_2",
   direction = 3,
   sprite = "entities/door_small_key",
   savegame_variable = "b1062",
@@ -12904,10 +12922,10 @@ door{
 }
 
 door{
+  name = "room_9_key_1",
   layer = 0,
   x = 1576,
   y = 1304,
-  name = "room_9_key_1",
   direction = 0,
   sprite = "entities/door_small_key",
   savegame_variable = "b1063",
@@ -12918,19 +12936,19 @@ door{
 }
 
 sensor{
+  name = "sensor_open_room1",
   layer = 0,
   x = 1216,
   y = 1301,
   width = 16,
   height = 48,
-  name = "sensor_open_room1",
 }
 
 door{
+  name = "room_9_key_2",
   layer = 0,
   x = 1640,
   y = 1304,
-  name = "room_9_key_2",
   direction = 2,
   sprite = "entities/door_small_key",
   savegame_variable = "b1063",
@@ -12941,67 +12959,67 @@ door{
 }
 
 teletransporter{
+  name = "to_outside_key2",
   layer = 0,
   x = 1408,
   y = 888,
   width = 16,
   height = 16,
-  name = "to_outside_key2",
   destination_map = "20",
   destination = "from_temple_key2",
 }
 
 destination{
+  name = "from_outside_key2",
   layer = 0,
   x = 1416,
   y = 917,
-  name = "from_outside_key2",
   direction = 3,
 }
 
 teletransporter{
+  name = "to_outside_jade",
   layer = 0,
   x = 824,
   y = 800,
   width = 16,
   height = 16,
-  name = "to_outside_jade",
   destination_map = "22",
   destination = "from_temple_jade",
 }
 
 destination{
+  name = "from_outside_jade",
   layer = 0,
   x = 856,
   y = 813,
-  name = "from_outside_jade",
   direction = 0,
 }
 
 destination{
+  name = "from_outside_bosskey",
   layer = 0,
   x = 1888,
   y = 1589,
-  name = "from_outside_bosskey",
   direction = 0,
 }
 
 sensor{
+  name = "sensor_close_room1",
   layer = 0,
   x = 1168,
   y = 1301,
   width = 16,
   height = 48,
-  name = "sensor_close_room1",
 }
 
 teletransporter{
+  name = "to_outside_boss",
   layer = 0,
   x = 1008,
   y = 24,
   width = 16,
   height = 16,
-  name = "to_outside_boss",
   destination_map = "22",
   destination = "from_temple_boss",
 }
@@ -13030,50 +13048,50 @@ destructible{
 }
 
 door{
+  name = "room15_shutter_1",
   layer = 0,
   x = 608,
   y = 328,
-  name = "room15_shutter_1",
   direction = 1,
   sprite = "entities/door_shutter",
 }
 
 door{
+  name = "room15_shutter_2",
   layer = 0,
   x = 608,
   y = 264,
-  name = "room15_shutter_2",
   direction = 3,
   sprite = "entities/door_shutter",
 }
 
 enemy{
+  name = "room17_moth_1",
   layer = 0,
   x = 944,
   y = 256,
-  name = "room17_moth_1",
   direction = 3,
   breed = "moth",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room17_moth_2",
   layer = 0,
   x = 1088,
   y = 256,
-  name = "room17_moth_2",
   direction = 3,
   breed = "moth",
   treasure_name = "random_woods",
 }
 
 sensor{
+  name = "sensor_open_room6",
   layer = 0,
   x = 1224,
   y = 733,
   width = 16,
   height = 32,
-  name = "sensor_open_room6",
 }
 
 destructible{
@@ -13149,20 +13167,20 @@ destructible{
 }
 
 enemy{
+  name = "room9_moth",
   layer = 0,
   x = 1488,
   y = 1408,
-  name = "room9_moth",
   direction = 3,
   breed = "moth",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "room9_moth_2",
   layer = 0,
   x = 1344,
   y = 1216,
-  name = "room9_moth_2",
   direction = 3,
   breed = "moth",
   treasure_name = "random_woods",
@@ -13174,8 +13192,8 @@ wall{
   y = 1184,
   width = 368,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13185,8 +13203,8 @@ wall{
   y = 1192,
   width = 8,
   height = 240,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13196,8 +13214,8 @@ wall{
   y = 1192,
   width = 8,
   height = 240,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13207,26 +13225,26 @@ wall{
   y = 1432,
   width = 368,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 enemy{
+  name = "room14_moth_8",
   layer = 0,
   x = 1096,
   y = 360,
-  name = "room14_moth_8",
   direction = 3,
   breed = "moth",
   treasure_name = "random_woods",
 }
 
 switch{
+  name = "room15_arrow_4",
   layer = 0,
   x = 608,
   y = 472,
-  name = "room15_arrow_4",
   subtype = "arrow_target",
   sprite = "entities/switch_eye_down",
   sound = "switch",
@@ -13235,15 +13253,45 @@ switch{
 }
 
 switch{
+  name = "room15_arrow_2",
   layer = 0,
   x = 696,
   y = 440,
-  name = "room15_arrow_2",
   subtype = "arrow_target",
   sprite = "entities/switch_eye_right",
   sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
+}
+
+chest{
+  name = "chest_jade",
+  layer = 0,
+  x = 104,
+  y = 1317,
+  treasure_name = "jade",
+  treasure_savegame_variable = "b1066",
+  sprite = "entities/chest",
+}
+
+npc{
+  name = "hint_stone_1",
+  layer = 0,
+  x = 1416,
+  y = 629,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#hint_stone.grove.1",
+}
+
+npc{
+  name = "hint_stone_2",
+  layer = 0,
+  x = 448,
+  y = 453,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#hint_stone.grove.2",
 }
 
 tile{

@@ -34,16 +34,18 @@ function entity:on_created()
   self:set_drawn_in_y_order(true)
   self:set_can_traverse("hero", false)
   self:set_traversable_by("hero", false)
-  if game:get_value("i1027") == 4 and game:get_map():get_id() == "1" then
-    self:remove()
-  end
-  if game:get_value("i1032") >= 3 then
-    -- Julita and Crista switch places at this time:
-    -- Crista at home, Julita running the shop
-    self:set_position(1128, 557)
-  else
-    -- Normally Crista is at the shop and Julita is at home.
-    self:set_position(256, 469)
+  if game:get_map():get_id() == "1" then
+    if game:get_value("i1027") == 4 then
+      self:remove()
+    end
+    if game:get_value("i1032") >= 3 then
+      -- Julita and Crista switch places at this time:
+      -- Crista at home, Julita running the shop
+      self:set_position(1128, 557)
+    else
+      -- Normally Crista is at the shop and Julita is at home.
+      self:set_position(256, 469)
+    end
   end
 end
 

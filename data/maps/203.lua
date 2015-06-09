@@ -17,15 +17,13 @@ function map:on_started(destination)
     -- (often a house in Ordon) - we override that behavior.
     game:set_starting_location("203", "from_outside")
   end
-  -- map chest
-  if not game:get_value("b1055") then
-    chest_map:set_enabled(false)
-  end
+  -- hidden chests
+  if not game:get_value("b1066") then chest_jade:set_enabled(false) end
+  if not game:get_value("b1055") then chest_map:set_enabled(false) end
   -- open up miniboss shutter doors that will close later during battle
   map:set_doors_open("door_miniboss")
-  if not game:get_value("b1057") then
-    miniboss_mothulita:set_enabled(false)
-  end
+  if game:get_value("b1067") then map:set_doors_open("room15_shutter") end
+  if not game:get_value("b1057") then miniboss_mothulita:set_enabled(false) end
   -- if hero has bow, then close the arrow switch-activated doors
   if game:get_value("b2003") then
     --map:set_doors_open("room6_shutter_2", false)
@@ -41,7 +39,8 @@ function map:on_obtained_treasure(treasure_item, treasure_variant, treasure_save
 end
 
 function sensor_open_room1:on_activated()
-  map:open_doors("room1_shutter")
+  -- open only if big key in inventory (helps prevent running around)
+  if game:get_value("b1053") then map:open_doors("room1_shutter") end
 end
 function sensor_close_room1:on_activated()
   if map:get_entity("hero"):get_direction() == 2 then map:close_doors("room1_shutter") end
@@ -143,8 +142,18 @@ function room15_arrow_4:on_activated()
     arrow_puzzle_correct = true
     arrow_puzzle_nb_correct = 0
     map:open_doors("room15_shutter")
+    game:set_value("b1067", true)
   else
     reset_arrow_puzzle()
+  end
+end
+
+for enemy in map:get_entities("room2") do
+  enemy.on_dead = function()
+    if not map:has_entities("room2_rope") and not game:get_value("b1066") then
+      chest_jade:set_enabled(true)
+      sol.audio.play_sound("chest_appears")
+    end
   end
 end
 
@@ -247,7 +256,7 @@ function torch_room6_5:on_interaction_item(lamp)
 end
 
 function torch_moth:on_interaction()
-  map:get_game():start_dialog("torch.grove_temple_moths")
+  game():start_dialog("torch.grove_temple_moths")
 end
 function torch_moth:on_interaction_item(lamp)
   torch_moth:get_sprite():set_animation("lit")

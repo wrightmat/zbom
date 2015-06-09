@@ -1378,42 +1378,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 80,
-  y = 808,
-  width = 48,
-  height = 16,
-  pattern = "628",
-}
-
-tile{
-  layer = 0,
-  x = 72,
-  y = 800,
-  width = 8,
-  height = 16,
-  pattern = "626",
-}
-
-tile{
-  layer = 0,
-  x = 128,
-  y = 800,
-  width = 8,
-  height = 16,
-  pattern = "627",
-}
-
-tile{
-  layer = 0,
-  x = 88,
-  y = 824,
-  width = 32,
-  height = 8,
-  pattern = "629",
-}
-
-tile{
-  layer = 0,
   x = 480,
   y = 512,
   width = 240,
@@ -5246,6 +5210,51 @@ tile{
   pattern = "524",
 }
 
+tile{
+  layer = 0,
+  x = 80,
+  y = 784,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 808,
+  width = 48,
+  height = 16,
+  pattern = "505",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 824,
+  width = 32,
+  height = 8,
+  pattern = "523",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 800,
+  width = 8,
+  height = 16,
+  pattern = "1500",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 800,
+  width = 8,
+  height = 16,
+  pattern = "1498",
+}
+
 wall{
   layer = 0,
   x = 1072,
@@ -5253,8 +5262,8 @@ wall{
   width = 16,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -5272,96 +5281,96 @@ destructible{
 }
 
 teletransporter{
+  name = "to_F14",
   layer = 0,
   x = 728,
   y = 1120,
   width = 112,
   height = 16,
-  name = "to_F14",
   transition = "scrolling",
   destination_map = "11",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_E13",
   layer = 0,
   x = -16,
   y = 480,
   width = 16,
   height = 624,
-  name = "to_E13",
   transition = "scrolling",
   destination_map = "16",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_F12",
   layer = 0,
   x = 440,
   y = -16,
   width = 80,
   height = 16,
-  name = "to_F12",
   transition = "scrolling",
   destination_map = "27",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_E13_2",
   layer = 0,
   x = -16,
   y = 40,
   width = 16,
   height = 288,
-  name = "to_E13_2",
   transition = "scrolling",
   destination_map = "16",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_F12_2",
   layer = 0,
   x = 64,
   y = -16,
   width = 32,
   height = 16,
-  name = "to_F12_2",
   transition = "scrolling",
   destination_map = "27",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_G13",
   layer = 0,
   x = 1120,
   y = 936,
   width = 16,
   height = 176,
-  name = "to_G13",
   transition = "scrolling",
   destination_map = "18",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_G13_2",
   layer = 0,
   x = 1120,
   y = 704,
   width = 16,
   height = 192,
-  name = "to_G13_2",
   transition = "scrolling",
   destination_map = "18",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_G13_3",
   layer = 0,
   x = 1120,
   y = 8,
   width = 16,
   height = 640,
-  name = "to_G13_3",
   transition = "scrolling",
   destination_map = "18",
   destination = "_side",
@@ -5875,12 +5884,12 @@ destructible{
 }
 
 npc{
+  name = "torch",
   layer = 0,
   x = 1080,
   y = 1061,
-  name = "torch",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/torch_wood",
   behavior = "item#lamp",
 }
@@ -5908,49 +5917,49 @@ destructible{
 }
 
 teletransporter{
+  name = "to_house_lumberjack",
   layer = 0,
   x = 112,
   y = 648,
   width = 16,
   height = 16,
-  name = "to_house_lumberjack",
   destination_map = "1",
   destination = "enter_lumberjack",
 }
 
 destination{
+  name = "from_inside_lumberjack",
   layer = 0,
   x = 120,
   y = 685,
-  name = "from_inside_lumberjack",
   direction = 3,
 }
 
 enemy{
+  name = "chuchu_1",
   layer = 0,
   x = 176,
   y = 189,
-  name = "chuchu_1",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "chuchu_2",
   layer = 0,
   x = 728,
   y = 69,
-  name = "chuchu_2",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "chuchu_3",
   layer = 0,
   x = 1048,
   y = 125,
-  name = "chuchu_3",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
@@ -5990,22 +5999,22 @@ destructible{
 }
 
 npc{
+  name = "npc_deacon",
   layer = 0,
   x = 392,
   y = 853,
-  name = "npc_deacon",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/hylian_deacon",
 }
 
 npc{
+  name = "npc_gaira",
   layer = 0,
   x = 16,
   y = 781,
-  name = "npc_gaira",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/hylian_gaira",
 }
 
@@ -6187,42 +6196,6 @@ tile{
   width = 32,
   height = 16,
   pattern = "682",
-}
-
-tile{
-  layer = 2,
-  x = 80,
-  y = 768,
-  width = 48,
-  height = 40,
-  pattern = "522",
-}
-
-tile{
-  layer = 2,
-  x = 80,
-  y = 752,
-  width = 48,
-  height = 16,
-  pattern = "521",
-}
-
-tile{
-  layer = 2,
-  x = 72,
-  y = 760,
-  width = 8,
-  height = 40,
-  pattern = "519",
-}
-
-tile{
-  layer = 2,
-  x = 128,
-  y = 760,
-  width = 8,
-  height = 40,
-  pattern = "520",
 }
 
 tile{
@@ -8185,5 +8158,32 @@ tile{
   width = 48,
   height = 32,
   pattern = "1495",
+}
+
+tile{
+  layer = 2,
+  x = 80,
+  y = 752,
+  width = 48,
+  height = 32,
+  pattern = "1495",
+}
+
+tile{
+  layer = 2,
+  x = 128,
+  y = 776,
+  width = 8,
+  height = 24,
+  pattern = "1497",
+}
+
+tile{
+  layer = 2,
+  x = 72,
+  y = 776,
+  width = 8,
+  height = 24,
+  pattern = "1494",
 }
 

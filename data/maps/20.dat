@@ -6731,71 +6731,80 @@ tile{
   pattern = "524",
 }
 
+sensor{
+  name = "sensor_deku_tokay",
+  layer = 0,
+  x = 344,
+  y = 669,
+  width = 16,
+  height = 224,
+}
+
 teletransporter{
+  name = "to_C15",
   layer = 0,
   x = -16,
   y = 480,
   width = 16,
   height = 480,
-  name = "to_C15",
   transition = "scrolling",
   destination_map = "21",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_E15",
   layer = 0,
   x = 1120,
   y = 720,
   width = 16,
   height = 240,
-  name = "to_E15",
   transition = "scrolling",
   destination_map = "14",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_K4_2",
   layer = 0,
   x = 1120,
   y = 32,
   width = 16,
   height = 608,
-  name = "to_K4_2",
   transition = "scrolling",
   destination_map = "14",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_D14",
   layer = 0,
   x = 288,
   y = -16,
   width = 160,
   height = 16,
-  name = "to_D14",
   transition = "scrolling",
   destination_map = "23",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_D14_2",
   layer = 0,
   x = 480,
   y = -16,
   width = 208,
   height = 16,
-  name = "to_D14_2",
   transition = "scrolling",
   destination_map = "23",
   destination = "_side",
 }
 
 chest{
+  name = "chest_key_2",
   layer = 0,
   x = 176,
   y = 581,
-  name = "chest_key_2",
   treasure_name = "small_key",
   treasure_savegame_variable = "b1052",
   sprite = "entities/chest",
@@ -7695,22 +7704,22 @@ destructible{
 }
 
 npc{
+  name = "npc_deku_1",
   layer = 0,
   x = 288,
   y = 821,
-  name = "npc_deku_1",
   direction = 2,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/deku",
 }
 
 npc{
+  name = "npc_monkey_1",
   layer = 0,
   x = 296,
   y = 685,
-  name = "npc_monkey_1",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/monkey",
 }
 
@@ -7726,20 +7735,20 @@ destructible{
 }
 
 destination{
+  name = "from_temple_key2",
   layer = 0,
   x = 112,
   y = 621,
-  name = "from_temple_key2",
   direction = 3,
 }
 
 teletransporter{
+  name = "to_temple_key2",
   layer = 0,
   x = 104,
   y = 592,
   width = 16,
   height = 16,
-  name = "to_temple_key2",
   destination_map = "203",
   destination = "from_outside_key2",
 }
@@ -7756,20 +7765,20 @@ destructible{
 }
 
 destination{
+  name = "from_temple_key1",
   layer = 0,
   x = 600,
   y = 493,
-  name = "from_temple_key1",
   direction = 3,
 }
 
 teletransporter{
+  name = "to_temple_key1",
   layer = 0,
   x = 592,
   y = 464,
   width = 16,
   height = 16,
-  name = "to_temple_key1",
   destination_map = "203",
   destination = "from_outside_key1",
 }
@@ -7786,10 +7795,10 @@ destructible{
 }
 
 chest{
+  name = "chest_key_1",
   layer = 0,
   x = 704,
   y = 461,
-  name = "chest_key_1",
   treasure_name = "small_key",
   treasure_savegame_variable = "b1051",
   sprite = "entities/chest",
@@ -7851,10 +7860,10 @@ destructible{
 }
 
 chest{
+  name = "chest_jade_later",
   layer = 0,
   x = 752,
   y = 469,
-  name = "chest_jade_later",
   treasure_name = "jade",
   treasure_savegame_variable = "b1065",
   sprite = "entities/chest",
@@ -7871,169 +7880,160 @@ stream{
 }
 
 chest{
+  name = "chest_big_key",
   layer = 0,
   x = 232,
   y = 949,
-  name = "chest_big_key",
   treasure_name = "big_key",
   treasure_savegame_variable = "b1053",
   sprite = "entities/chest",
 }
 
 npc{
+  name = "npc_tokay_1",
   layer = 0,
   x = 256,
   y = 781,
-  name = "npc_tokay_1",
   direction = 0,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/tokay",
 }
 
 npc{
+  name = "npc_tokay_2",
   layer = 0,
   x = 264,
   y = 821,
-  name = "npc_tokay_2",
   direction = 0,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/tokay_red",
 }
 
 npc{
+  name = "npc_tokay_3",
   layer = 0,
   x = 248,
   y = 861,
-  name = "npc_tokay_3",
   direction = 0,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/tokay",
 }
 
 npc{
+  name = "npc_deku_2",
   layer = 0,
   x = 280,
   y = 781,
-  name = "npc_deku_2",
   direction = 2,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/deku",
 }
 
 npc{
+  name = "npc_deku_3",
   layer = 0,
   x = 272,
   y = 861,
-  name = "npc_deku_3",
   direction = 2,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/deku",
 }
 
 npc{
+  name = "npc_monkey_2",
   layer = 0,
   x = 560,
   y = 709,
-  name = "npc_monkey_2",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/monkey",
 }
 
-sensor{
-  layer = 0,
-  x = 344,
-  y = 677,
-  width = 16,
-  height = 176,
-  name = "sensor_deku_tokay",
-}
-
 enemy{
+  name = "chuchu_1",
   layer = 0,
   x = 64,
   y = 949,
-  name = "chuchu_1",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "chuchu_2",
   layer = 0,
   x = 176,
   y = 965,
-  name = "chuchu_2",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "chuchu_3",
   layer = 0,
   x = 296,
   y = 981,
-  name = "chuchu_3",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "chuchu_4",
   layer = 0,
   x = 504,
   y = 981,
-  name = "chuchu_4",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "chuchu_5",
   layer = 0,
   x = 584,
   y = 973,
-  name = "chuchu_5",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "chuchu_6",
   layer = 0,
   x = 680,
   y = 997,
-  name = "chuchu_6",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "chuchu_7",
   layer = 0,
   x = 760,
   y = 1005,
-  name = "chuchu_7",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "chuchu_8",
   layer = 0,
   x = 888,
   y = 989,
-  name = "chuchu_8",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "chuchu_9",
   layer = 0,
   x = 1056,
   y = 973,
-  name = "chuchu_9",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
@@ -8062,24 +8062,24 @@ destructible{
 }
 
 teletransporter{
+  name = "to_temple_bigkey",
   layer = 0,
   x = 80,
   y = 896,
   width = 16,
   height = 16,
-  name = "to_temple_bigkey",
-  sound = "hero_falls",
   destination_map = "203",
   destination = "from_outside_bosskey",
+  sound = "hero_falls",
 }
 
 npc{
+  name = "sign_D15_blacksmith",
   layer = 0,
   x = 416,
   y = 125,
-  name = "sign_D15_blacksmith",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
   behavior = "dialog#sign.D15_blacksmith",
 }

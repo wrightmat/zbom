@@ -50,6 +50,7 @@ function entity:on_interaction()
       if quest_julita ~= nil then quest_julita:remove() end
       game:start_dialog("julita.1", game:get_player_name(), function()
         game:set_value("i1903", 2)
+        if not game:has_item("shield") then game:start_dialog("julita.1.shield") end
       end)
     elseif game:get_value("i1027") < 5 then
       game:start_dialog("julita.0.festival", function(answer)

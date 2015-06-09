@@ -34,18 +34,20 @@ local function end_race_won()
   game:start_dialog("tristan.0.festival_won", game:get_player_name(), function()
     if game:get_value("i1027") < 4 then
       sol.timer.start(1000, function()
-	banner_4:set_enabled(false) --make it easier to exit the map
-	banner_5:set_enabled(false)
+        banner_4:set_enabled(false) --make it easier to exit the map
+        banner_5:set_enabled(false)
         hero:freeze()
-        torch_overlay = sol.surface.create("entities/dark.png")
-        torch_overlay:fade_in(50)
-        game:start_dialog("ordona.0.festival", game:get_player_name(), function()
-          torch_overlay:fade_out(50)
-          hero:unfreeze()
-          game:set_value("i1027", 4)
-          game:set_value("i1910", game:get_value("i1910")+1)
-        end)
-      end)
+        map:move_camera(824, 517, 250, function()
+          torch_overlay = sol.surface.create("entities/dark.png")
+          torch_overlay:fade_in(50)
+          game:start_dialog("ordona.0.festival", game:get_player_name(), function()
+            torch_overlay:fade_out(50)
+            hero:unfreeze()
+            game:set_value("i1027", 4)
+            game:set_value("i1910", game:get_value("i1910")+1)
+          end)
+        end) --move_camera
+      end) --timer
     end
   end)
   game:quit_hud()
