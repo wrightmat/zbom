@@ -291,10 +291,9 @@ if game:get_time_of_day() ~= "night" then
 function game:on_map_changed(map)
   function map:on_draw(dst_surface)
     if map:get_id() == "11" and torch_overlay then
-      local torch = map:get_entity("torch_1")
       local screen_width, screen_height = dst_surface:get_size()
       local cx, cy = map:get_camera_position()
-      local tx, ty = torch:get_center_position()
+      local tx, ty = torch_1:get_center_position()
       local x = 320 - tx + cx
       local y = 240 - ty + cy
       torch_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)

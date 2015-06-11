@@ -1,11 +1,13 @@
 local entity = ...
 local game = entity:get_game()
+local map = entity:get_game():get_map()
 
 -- Crista is a major NPC who lives in Ordon and makes/sells
 -- potions. Childhood friend and potential love interest of our hero.
 
 if game:get_value("i1032")==nil then game:set_value("i1032", 0) end
 if game:get_value("i1068")==nil then game:set_value("i1068", 0) end
+if game:get_value("i1847")==nil then game:set_value("i1847", 0) end
 if game:get_value("i2014")==nil then game:set_value("i2014", 0) end
 if game:get_value("i2015")==nil then game:set_value("i2015", 0) end
 if game:get_value("i2021")==nil then game:set_value("i2021", 0) end

@@ -38,6 +38,7 @@ for enemy in map:get_entities("chuchu") do
 	m:set_ignore_obstacles(true)
         m:set_target(768, 1120)
         m:set_speed(32)
+        npc_crista:get_sprite():set_animation("walking")
         m:start(npc_crista, function()
 	  npc_crista:remove()
         end)

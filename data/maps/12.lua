@@ -46,7 +46,7 @@ local function end_race_won()
             game:set_value("i1027", 4)
             game:set_value("i1910", game:get_value("i1910")+1)
           end)
-        end) --move_camera
+        end, 500, 20000) --move_camera
       end) --timer
     end
   end)
@@ -56,15 +56,15 @@ end
 
 function map:on_started(destination)
   if game:get_value("i1027") > 1 and game:get_value("i1027") < 4 then
-    banner_1:set_enabled("true")
-    banner_2:set_enabled("true")
-    banner_3:set_enabled("true")
-    banner_4:set_enabled("true")
-    banner_5:set_enabled("true")
-    banner_6:set_enabled("true")
-    banner_7:set_enabled("true")
-    banner_8:set_enabled("true")
-    banner_9:set_enabled("true")
+    banner_1:set_enabled(true)
+    banner_2:set_enabled(true)
+    banner_3:set_enabled(true)
+    banner_4:set_enabled(true)
+    banner_5:set_enabled(true)
+    banner_6:set_enabled(true)
+    banner_7:set_enabled(true)
+    banner_8:set_enabled(true)
+    banner_9:set_enabled(true)
   elseif game:get_value("i1027") == 4 then
     npc_tristan:remove()
   elseif game:get_value("i1027") >= 5 then
@@ -108,10 +108,9 @@ end
 function game:on_map_changed(map)
   function map:on_draw(dst_surface)
     if map:get_id() == "12" and torch_overlay then
-      local torch = map:get_entity("torch_5")
       local screen_width, screen_height = dst_surface:get_size()
       local cx, cy = map:get_camera_position()
-      local tx, ty = torch:get_center_position()
+      local tx, ty = torch_5:get_center_position()
       local x = 320 - tx + cx
       local y = 240 - ty + cy
       torch_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)

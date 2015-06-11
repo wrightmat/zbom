@@ -6,6 +6,7 @@ local game = map:get_game()
 -----------------------------------------------
 
 local odd_potion_counter = 0
+if game:get_value("i1026")==nil then game:set_value("i1026", 0) end
 if game:get_value("i1027")==nil then game:set_value("i1027", 0) end
 if game:get_value("i1029")==nil then game:set_value("i1029", 0) end
 if game:get_value("i1602")==nil then game:set_value("i1602", 0) end
