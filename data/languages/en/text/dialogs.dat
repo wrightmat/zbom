@@ -5330,6 +5330,18 @@ ever!
 }
 
 dialog{
+  id = "hint_stone.cave_ordeals",
+  skip = "current",
+  text = [[
+Descent into the Cave
+of Ordeals to test your
+courage. Fifty floors
+of trials await you.
+Not for the weak.
+  ]]
+}
+
+dialog{
   id = "hint_stone.grove.1",
   skip = "current",
   text = [[
@@ -5346,18 +5358,6 @@ dialog{
 Pierce the eyes with an
 arrow, but do so in
 order.
-  ]]
-}
-
-dialog{
-  id = "hint_stone.cave_ordeals",
-  skip = "current",
-  text = [[
-Descent into the Cave
-of Ordeals to test your
-courage. Fifty floors
-of trials await you.
-Not for the weak.
   ]]
 }
 
@@ -7810,6 +7810,16 @@ South- Lumberjack/
 }
 
 dialog{
+  id = "sign.G11_directions",
+  skip = "current",
+  text = [[
+North- Eastern Ruins
+South- Sewer access
+West- Hyrule Field
+  ]]
+}
+
+dialog{
   id = "sign.G12_danger",
   skip = "current",
   text = [[
@@ -7836,17 +7846,6 @@ dialog{
 South- Ordon Village
 East- Faron Woods
 West- Lake Hylia
-  ]]
-}
-
-
-dialog{
-  id = "sign.G11_directions",
-  skip = "current",
-  text = [[
-North- Eastern Ruins
-South- Sewer access
-West- Hyrule Field
   ]]
 }
 
@@ -8446,6 +8445,19 @@ I'm outta here!
 }
 
 dialog{
+  id = "tokay.0.desert",
+  skip = "current",
+  text = [[
+Wait! Where are you going?
+Aren't you going to help
+us get our beach back?
+Please get whatever the
+pirates need from the
+desert! Please?
+  ]]
+}
+
+dialog{
   id = "tokay.0.faron",
   skip = "current",
   text = [[
@@ -8457,19 +8469,6 @@ of it? We were forced
 out of our homes!
 All we're looking for
 is a little help.
-  ]]
-}
-
-dialog{
-  id = "tokay.0.desert",
-  skip = "current",
-  text = [[
-Wait! Where are you going?
-Aren't you going to help
-us get our beach back?
-Please get whatever the
-pirates need from the
-desert! Please?
   ]]
 }
 

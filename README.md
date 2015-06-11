@@ -10,6 +10,12 @@ To run:
   Linux: download executable or compile source available at http://www.solarus-games.org (see compile instruction below)
   Mac: download executable or compile source available at http://www.solarus-games.org
 
+To play: Default button mapping:
+  "X" to use/assign left grey circle item and "V" to use/assign right grey circle item.
+  "C" for green circle (sword or skip in dialogs).
+  "Space" for blue circle (action or back in dialogs).
+  "D" for Pause menu (or to exit pause). Left or right arrows to scroll between items and submenus.
+  Buttons can be remapped (to other keys or joypad buttons) from within the Options submenu.
 
 See our website http://sites.google.com/site/zeldabom for more information.
 
