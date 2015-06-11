@@ -9063,6 +9063,21 @@ you can return later.
 }
 
 dialog{
+  id = "warp.to_B1",
+  text = [[
+]]
+}
+
+dialog{
+  id = "warp.to_B6",
+  text = [[
+Warp to Snowpeak?
+Yes
+No
+  ]]
+}
+
+dialog{
   id = "warp.to_B8",
   question = "1",
   skip = "current",
@@ -9112,6 +9127,24 @@ dialog{
   skip = "current",
   text = [[
 Warp to Ordon Village?
+Yes
+No
+  ]]
+}
+
+dialog{
+  id = "warp.to_F5",
+  text = [[
+Warp to Septen Heights?
+Yes
+No
+  ]]
+}
+
+dialog{
+  id = "warp.to_G5",
+  text = [[
+Warp to Zora's Domain?
 Yes
 No
   ]]

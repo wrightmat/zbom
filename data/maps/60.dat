@@ -1863,24 +1863,24 @@ tile{
 }
 
 teletransporter{
+  name = "to_C6",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 1040,
-  name = "to_C6",
   transition = "scrolling",
   destination_map = "61",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_B5",
   layer = 0,
   x = 16,
   y = -16,
   width = 1104,
   height = 16,
-  name = "to_B5",
   transition = "scrolling",
   destination_map = "52",
   destination = "_side",
@@ -1893,8 +1893,8 @@ wall{
   width = 8,
   height = 32,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -1906,8 +1906,8 @@ wall{
   width = 8,
   height = 128,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -1919,8 +1919,8 @@ wall{
   width = 8,
   height = 96,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -1932,8 +1932,8 @@ wall{
   width = 8,
   height = 16,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -1945,8 +1945,8 @@ wall{
   width = 8,
   height = 80,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -1958,8 +1958,8 @@ wall{
   width = 8,
   height = 168,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -1971,8 +1971,8 @@ wall{
   width = 8,
   height = 88,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -1984,8 +1984,8 @@ wall{
   width = 24,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -1997,8 +1997,8 @@ wall{
   width = 16,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2010,8 +2010,8 @@ wall{
   width = 16,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2023,8 +2023,8 @@ wall{
   width = 16,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2036,8 +2036,8 @@ wall{
   width = 8,
   height = 112,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2049,8 +2049,8 @@ wall{
   width = 8,
   height = 48,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2062,8 +2062,8 @@ wall{
   width = 8,
   height = 64,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2075,8 +2075,8 @@ wall{
   width = 8,
   height = 48,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2088,8 +2088,8 @@ wall{
   width = 8,
   height = 16,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2101,8 +2101,8 @@ wall{
   width = 8,
   height = 16,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2114,8 +2114,8 @@ wall{
   width = 8,
   height = 16,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2127,8 +2127,8 @@ wall{
   width = 8,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2140,8 +2140,8 @@ wall{
   width = 16,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2153,8 +2153,8 @@ wall{
   width = 16,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2166,8 +2166,8 @@ wall{
   width = 16,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2179,8 +2179,8 @@ wall{
   width = 16,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2192,8 +2192,8 @@ wall{
   width = 16,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2205,8 +2205,8 @@ wall{
   width = 16,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2218,8 +2218,8 @@ wall{
   width = 544,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2231,8 +2231,8 @@ wall{
   width = 144,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2244,8 +2244,8 @@ wall{
   width = 176,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2257,8 +2257,8 @@ wall{
   width = 128,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2270,8 +2270,8 @@ wall{
   width = 16,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2283,8 +2283,8 @@ wall{
   width = 8,
   height = 24,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2296,8 +2296,8 @@ wall{
   width = 8,
   height = 16,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2309,8 +2309,8 @@ wall{
   width = 8,
   height = 16,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2322,8 +2322,8 @@ wall{
   width = 8,
   height = 16,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2335,8 +2335,8 @@ wall{
   width = 16,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2348,54 +2348,54 @@ wall{
   width = 16,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 sensor{
+  name = "sensor_snow_drift_1",
   layer = 0,
   x = 8,
   y = 613,
   width = 48,
   height = 16,
-  name = "sensor_snow_drift_1",
 }
 
 sensor{
+  name = "sensor_snow_drift_2",
   layer = 0,
   x = 8,
   y = 629,
   width = 48,
   height = 16,
-  name = "sensor_snow_drift_2",
 }
 
 npc{
+  name = "npc_anouki_1",
   layer = 0,
   x = 664,
   y = 389,
-  name = "npc_anouki_1",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/snowpeak_anouki",
 }
 
 npc{
+  name = "ocarina_wind_to_B1",
   layer = 0,
   x = 704,
   y = 733,
-  name = "ocarina_wind_to_",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
 }
 
 destination{
+  name = "ocarina_warp",
   layer = 0,
   x = 704,
   y = 749,
-  name = "ocarina_warp",
   direction = 3,
 }
 
