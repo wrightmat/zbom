@@ -2638,15 +2638,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 144,
-  y = 736,
-  width = 16,
-  height = 16,
-  pattern = "1725",
-}
-
-tile{
-  layer = 0,
   x = 72,
   y = 904,
   width = 32,
@@ -2771,46 +2762,92 @@ tile{
   pattern = "949",
 }
 
+tile{
+  layer = 0,
+  x = 144,
+  y = 720,
+  width = 8,
+  height = 16,
+  pattern = "907",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 720,
+  width = 16,
+  height = 16,
+  pattern = "905",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 720,
+  width = 8,
+  height = 16,
+  pattern = "908",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 704,
+  width = 16,
+  height = 32,
+  pattern = "1736",
+}
+
+chest{
+  name = "chest_heart_piece",
+  layer = 0,
+  x = 160,
+  y = 717,
+  treasure_name = "heart_piece",
+  treasure_savegame_variable = "b1718",
+  sprite = "entities/chest",
+}
+
 teletransporter{
+  name = "to_H7",
   layer = 0,
   x = -16,
   y = 0,
   width = 16,
   height = 976,
-  name = "to_H7",
   transition = "scrolling",
   destination_map = "67",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_I6",
   layer = 0,
   x = 0,
   y = -16,
   width = 704,
   height = 16,
-  name = "to_I6",
   transition = "scrolling",
   destination_map = "68",
   destination = "_side",
 }
 
 npc{
+  name = "npc_goron_8",
   layer = 0,
   x = 208,
   y = 381,
-  name = "npc_goron_8",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/goron",
   behavior = "dialog#goron8.0.goron_city",
 }
 
 destructible{
-  layer = 0,
-  x = 80,
-  y = 917,
   name = "bombflower_1",
+  layer = 0,
+  x = 80,
+  y = 917,
   treasure_name = "random_mountain",
   sprite = "entities/bomb_flower",
   destruction_sound = "bush",
@@ -2821,10 +2858,10 @@ destructible{
 }
 
 destructible{
+  name = "bombflower_2",
   layer = 0,
   x = 96,
   y = 917,
-  name = "bombflower_2",
   treasure_name = "random_mountain",
   sprite = "entities/bomb_flower",
   destruction_sound = "bush",
@@ -2835,10 +2872,10 @@ destructible{
 }
 
 destructible{
-  layer = 0,
-  x = 96,
-  y = 933,
   name = "bombflower_3",
+  layer = 0,
+  x = 96,
+  y = 933,
   treasure_name = "random_mountain",
   sprite = "entities/bomb_flower",
   destruction_sound = "bush",
@@ -2849,10 +2886,10 @@ destructible{
 }
 
 destructible{
+  name = "bombflower_4",
   layer = 0,
   x = 80,
   y = 933,
-  name = "bombflower_4",
   treasure_name = "random_mountain",
   sprite = "entities/bomb_flower",
   destruction_sound = "bush",
@@ -2863,10 +2900,10 @@ destructible{
 }
 
 destructible{
+  name = "bombflower_5",
   layer = 0,
   x = 64,
   y = 933,
-  name = "bombflower_5",
   treasure_name = "random_mountain",
   sprite = "entities/bomb_flower",
   destruction_sound = "bush",
@@ -2877,10 +2914,10 @@ destructible{
 }
 
 destructible{
+  name = "bombflower_6",
   layer = 0,
   x = 96,
   y = 949,
-  name = "bombflower_6",
   treasure_name = "random_mountain",
   sprite = "entities/bomb_flower",
   destruction_sound = "bush",
@@ -2891,10 +2928,10 @@ destructible{
 }
 
 destructible{
+  name = "bombflower_7",
   layer = 0,
   x = 80,
   y = 949,
-  name = "bombflower_7",
   treasure_name = "random_mountain",
   sprite = "entities/bomb_flower",
   destruction_sound = "bush",
@@ -2905,10 +2942,10 @@ destructible{
 }
 
 destructible{
+  name = "bombflower_8",
   layer = 0,
   x = 64,
   y = 949,
-  name = "bombflower_8",
   treasure_name = "random_mountain",
   sprite = "entities/bomb_flower",
   destruction_sound = "bush",
@@ -2919,76 +2956,116 @@ destructible{
 }
 
 enemy{
+  name = "geyser_3",
   layer = 0,
   x = 520,
   y = 117,
-  name = "geyser_3",
   direction = 3,
   breed = "geyser",
   treasure_name = "random",
 }
 
 enemy{
+  name = "geyser_2",
   layer = 0,
   x = 384,
   y = 301,
-  name = "geyser_2",
   direction = 3,
   breed = "geyser",
   treasure_name = "random",
 }
 
 enemy{
+  name = "geyser_4",
   layer = 0,
   x = 256,
   y = 525,
-  name = "geyser_4",
-  direction = 3,
-  breed = "geyser",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 0,
-  x = 152,
-  y = 741,
-  name = "geyser_5",
   direction = 3,
   breed = "geyser",
   treasure_name = "random",
 }
 
 teletransporter{
+  name = "to_I6_water",
   layer = 0,
   x = 752,
   y = -16,
   width = 368,
   height = 16,
-  name = "to_I6_water",
   transition = "scrolling",
   destination_map = "68",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_H7_water",
   layer = 0,
   x = -16,
   y = 1024,
   width = 16,
   height = 96,
-  name = "to_H7_water",
   transition = "scrolling",
   destination_map = "67",
   destination = "_side",
 }
 
+destructible{
+  name = "bombflower_9",
+  layer = 0,
+  x = 184,
+  y = 717,
+  treasure_name = "random_mountain",
+  sprite = "entities/bomb_flower",
+  destruction_sound = "bush",
+  weight = 1,
+  can_be_cut = true,
+  can_explode = true,
+  can_regenerate = true,
+}
+
+destructible{
+  name = "bombflower_10",
+  layer = 0,
+  x = 184,
+  y = 733,
+  treasure_name = "random_mountain",
+  sprite = "entities/bomb_flower",
+  destruction_sound = "bush",
+  weight = 1,
+  can_be_cut = true,
+  can_explode = true,
+  can_regenerate = true,
+}
+
+wall{
+  layer = 0,
+  x = 144,
+  y = 696,
+  width = 32,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
 npc{
+  name = "npc_goron_ghost",
   layer = 1,
   x = 24,
   y = 325,
-  name = "npc_goron_ghost",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/goron_ghost",
+}
+
+tile{
+  layer = 2,
+  x = 144,
+  y = 696,
+  width = 32,
+  height = 24,
+  pattern = "901",
 }
 

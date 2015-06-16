@@ -4472,6 +4472,24 @@ tile{
   pattern = "546",
 }
 
+tile{
+  layer = 0,
+  x = 712,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 760,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
 teletransporter{
   name = "to_F7",
   layer = 0,
@@ -4766,6 +4784,38 @@ enemy{
   direction = 0,
   breed = "chuchu_red",
   treasure_name = "random_mountain",
+}
+
+chest{
+  name = "chest_heart_piece",
+  layer = 0,
+  x = 744,
+  y = 61,
+  treasure_name = "heart_piece",
+  treasure_savegame_variable = "b1717",
+  sprite = "entities/chest",
+}
+
+destructible{
+  layer = 0,
+  x = 720,
+  y = 61,
+  treasure_name = "random",
+  sprite = "entities/stone_small_white",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  layer = 0,
+  x = 768,
+  y = 61,
+  treasure_name = "random",
+  sprite = "entities/stone_small_white",
+  destruction_sound = "stone",
+  weight = 1,
+  damage_on_enemies = 2,
 }
 
 tile{

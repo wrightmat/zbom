@@ -9583,6 +9583,29 @@ npc{
   sprite = "entities/ship_gerudo",
 }
 
+wall{
+  layer = 0,
+  x = 520,
+  y = 720,
+  width = 16,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+npc{
+  name = "torch_1",
+  layer = 0,
+  x = 528,
+  y = 741,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/torch_wood",
+}
+
 tile{
   layer = 1,
   x = 88,

@@ -8128,6 +8128,17 @@ destructible{
   can_be_cut = true,
 }
 
+npc{
+  name = "npc_deku_warning",
+  layer = 0,
+  x = 576,
+  y = 37,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/deku",
+  behavior = "dialog#deku.0.warning",
+}
+
 tile{
   layer = 2,
   x = 240,

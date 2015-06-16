@@ -3789,170 +3789,170 @@ tile{
 }
 
 teletransporter{
+  name = "hole_cave_2",
   layer = 0,
   x = 816,
   y = 752,
   width = 16,
   height = 16,
-  name = "hole_cave_2",
-  sprite = "entities/teletransporter_hole",
-  sound = "hero_falls",
   destination_map = "9",
   destination = "from_E12_2",
+  sprite = "entities/teletransporter_hole",
+  sound = "hero_falls",
 }
 
 teletransporter{
+  name = "hole_cave_1",
   layer = 0,
   x = 168,
   y = 776,
   width = 16,
   height = 16,
-  name = "hole_cave_1",
-  sprite = "entities/teletransporter_hole",
-  sound = "hero_falls",
   destination_map = "9",
   destination = "from_E12_1",
+  sprite = "entities/teletransporter_hole",
+  sound = "hero_falls",
 }
 
 teletransporter{
+  name = "to_F12",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 512,
-  name = "to_F12",
   transition = "scrolling",
   destination_map = "27",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_F12_2",
   layer = 0,
   x = 1120,
   y = 560,
   width = 16,
   height = 512,
-  name = "to_F12_2",
   transition = "scrolling",
   destination_map = "27",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_E13",
   layer = 0,
   x = 128,
   y = 1120,
   width = 784,
   height = 16,
-  name = "to_E13",
   transition = "scrolling",
   destination_map = "16",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_E11",
   layer = 0,
   x = 16,
   y = -16,
   width = 384,
   height = 16,
-  name = "to_E11",
   transition = "scrolling",
   destination_map = "31",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_E11_2",
   layer = 0,
   x = 448,
   y = -16,
   width = 352,
   height = 16,
-  name = "to_E11_2",
   transition = "scrolling",
   destination_map = "31",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_E11_3",
   layer = 0,
   x = 848,
   y = -16,
   width = 272,
   height = 16,
-  name = "to_E11_3",
   transition = "scrolling",
   destination_map = "31",
   destination = "_side",
 }
 
 enemy{
+  name = "enemy",
   layer = 0,
   x = 696,
   y = 253,
-  name = "enemy",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "enemy_2",
   layer = 0,
   x = 920,
   y = 245,
-  name = "enemy_2",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "enemy_3",
   layer = 0,
   x = 928,
   y = 445,
-  name = "enemy_3",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "enemy_4",
   layer = 0,
   x = 824,
   y = 613,
-  name = "enemy_4",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "enemy_5",
   layer = 0,
   x = 896,
   y = 837,
-  name = "enemy_5",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "enemy_6",
   layer = 0,
   x = 1040,
   y = 1021,
-  name = "enemy_6",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 teletransporter{
+  name = "to_D12",
   layer = 0,
   x = -16,
   y = 16,
   width = 16,
   height = 1024,
-  name = "to_D12",
   transition = "scrolling",
   destination_map = "25",
   destination = "_side",
@@ -4421,20 +4421,20 @@ destructible{
 }
 
 enemy{
+  name = "enemy_7",
   layer = 0,
   x = 592,
   y = 661,
-  name = "enemy_7",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "enemy_8",
   layer = 0,
   x = 256,
   y = 685,
-  name = "enemy_8",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
@@ -4477,54 +4477,48 @@ wall{
 }
 
 custom_entity{
+  name = "stone_pile_1",
   layer = 0,
   x = 824,
   y = 771,
-  width = 16,
-  height = 16,
-  name = "stone_pile_1",
   direction = 3,
   sprite = "entities/stone_pile",
   model = "stone_pile",
 }
 
 custom_entity{
+  name = "stone_pile_2",
   layer = 0,
   x = 176,
   y = 795,
-  width = 16,
-  height = 16,
-  name = "stone_pile_2",
   direction = 3,
   sprite = "entities/stone_pile",
   model = "stone_pile",
 }
 
 custom_entity{
+  name = "npc_pim",
   layer = 0,
   x = 732,
   y = 973,
-  width = 16,
-  height = 16,
-  name = "npc_pim",
   direction = 3,
   sprite = "npc/ordon_pim",
   model = "npc_pim",
 }
 
 destination{
+  name = "from_cave_1",
   layer = 0,
   x = 184,
   y = 821,
-  name = "from_cave_1",
   direction = 3,
 }
 
 destination{
+  name = "from_cave_2",
   layer = 0,
   x = 832,
   y = 797,
-  name = "from_cave_2",
   direction = 3,
 }
 

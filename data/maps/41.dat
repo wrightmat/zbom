@@ -6353,109 +6353,136 @@ tile{
   pattern = "627",
 }
 
+tile{
+  layer = 0,
+  x = 616,
+  y = 1056,
+  width = 32,
+  height = 32,
+  pattern = "1583",
+}
+
+tile{
+  layer = 0,
+  x = 768,
+  y = 1080,
+  width = 16,
+  height = 16,
+  pattern = "524",
+}
+
+tile{
+  layer = 0,
+  x = 816,
+  y = 1080,
+  width = 16,
+  height = 16,
+  pattern = "524",
+}
+
 sensor{
+  name = "ranch_door_sensor",
   layer = 0,
   x = 368,
   y = 509,
   width = 32,
   height = 16,
-  name = "ranch_door_sensor",
 }
 
 teletransporter{
+  name = "to_F9",
   layer = 0,
   x = 1120,
   y = 64,
   width = 16,
   height = 192,
-  name = "to_F9",
   transition = "scrolling",
   destination_map = "40",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_E8",
   layer = 0,
   x = 56,
   y = -16,
   width = 272,
   height = 16,
-  name = "to_E8",
   transition = "scrolling",
   destination_map = "44",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_E8_2",
   layer = 0,
   x = 640,
   y = -16,
   width = 416,
   height = 16,
-  name = "to_E8_2",
   transition = "scrolling",
   destination_map = "44",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_E10",
   layer = 0,
   x = 568,
   y = 1120,
   width = 288,
   height = 16,
-  name = "to_E10",
   transition = "scrolling",
   destination_map = "34",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_D9",
   layer = 0,
   x = -16,
   y = 0,
   width = 16,
   height = 912,
-  name = "to_D9",
   transition = "scrolling",
   destination_map = "42",
   destination = "_side",
 }
 
 destination{
+  name = "from_ranch_1",
   layer = 0,
   x = 376,
   y = 509,
-  name = "from_ranch_1",
   direction = 3,
 }
 
 destination{
+  name = "from_ranch_2",
   layer = 0,
   x = 456,
   y = 493,
-  name = "from_ranch_2",
   direction = 3,
 }
 
 teletransporter{
+  name = "to_inside_1",
   layer = 0,
   x = 368,
   y = 472,
   width = 16,
   height = 16,
-  name = "to_inside_1",
   destination_map = "2",
   destination = "from_outside_ranch_1",
 }
 
 teletransporter{
+  name = "to_inside_2",
   layer = 0,
   x = 448,
   y = 464,
   width = 16,
   height = 16,
-  name = "to_inside_2",
   destination_map = "2",
   destination = "from_outside_ranch_2",
 }
@@ -7187,37 +7214,69 @@ destructible{
 }
 
 npc{
+  name = "sign",
   layer = 0,
   x = 176,
   y = 821,
-  name = "sign",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
   behavior = "dialog#sign.lonlon_ranch",
 }
 
 dynamic_tile{
+  name = "ranch_door",
   layer = 0,
   x = 368,
   y = 480,
+  pattern = "1120",
   width = 16,
   height = 16,
-  name = "ranch_door",
-  pattern = "1120",
   enabled_at_start = true,
 }
 
 teletransporter{
+  name = "to_F9_2",
   layer = 0,
   x = 1120,
   y = 320,
   width = 16,
   height = 96,
-  name = "to_F9_2",
   transition = "scrolling",
   destination_map = "40",
   destination = "_side",
+}
+
+chest{
+  name = "chest_heart_piece",
+  layer = 0,
+  x = 800,
+  y = 1093,
+  treasure_name = "heart_piece",
+  treasure_savegame_variable = "b1713",
+  sprite = "entities/chest",
+}
+
+destructible{
+  layer = 0,
+  x = 776,
+  y = 1093,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = 1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 824,
+  y = 1093,
+  treasure_name = "random",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = 1,
+  can_be_cut = true,
 }
 
 tile{

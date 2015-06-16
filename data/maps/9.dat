@@ -10,6 +10,15 @@ properties{
 
 tile{
   layer = 0,
+  x = 664,
+  y = 184,
+  width = 64,
+  height = 8,
+  pattern = "560",
+}
+
+tile{
+  layer = 0,
   x = 56,
   y = 56,
   width = 336,
@@ -1326,7 +1335,7 @@ tile{
   layer = 0,
   x = 576,
   y = 192,
-  width = 160,
+  width = 64,
   height = 16,
   pattern = "552",
 }
@@ -1398,7 +1407,7 @@ tile{
   layer = 0,
   x = 584,
   y = 184,
-  width = 144,
+  width = 64,
   height = 8,
   pattern = "560",
 }
@@ -1493,43 +1502,133 @@ tile{
   pattern = "568",
 }
 
+tile{
+  layer = 0,
+  x = 672,
+  y = 192,
+  width = 64,
+  height = 16,
+  pattern = "552",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 184,
+  width = 16,
+  height = 16,
+  pattern = "693",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 184,
+  width = 8,
+  height = 16,
+  pattern = "694",
+}
+
+tile{
+  layer = 0,
+  x = 664,
+  y = 184,
+  width = 8,
+  height = 16,
+  pattern = "695",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 176,
+  width = 32,
+  height = 8,
+  pattern = "696",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 208,
+  width = 8,
+  height = 16,
+  pattern = "641",
+}
+
+tile{
+  layer = 0,
+  x = 664,
+  y = 208,
+  width = 8,
+  height = 16,
+  pattern = "641",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 224,
+  width = 16,
+  height = 8,
+  pattern = "642",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "752",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "752",
+}
+
 dynamic_tile{
+  name = "blacksmith_water",
   layer = 0,
   x = 192,
   y = 80,
+  pattern = "384",
   width = 32,
   height = 48,
-  name = "blacksmith_water",
-  pattern = "384",
   enabled_at_start = false,
 }
 
 teletransporter{
+  name = "to_outside_blacksmith",
   layer = 0,
   x = 216,
   y = 272,
   width = 16,
   height = 16,
-  name = "to_outside_blacksmith",
   destination_map = "15",
   destination = "from_smith_cave",
 }
 
 destination{
+  name = "from_outside_blacksmith",
   layer = 0,
   x = 224,
   y = 253,
-  name = "from_outside_blacksmith",
   direction = 1,
 }
 
 npc{
+  name = "npc_rudy",
   layer = 0,
   x = 272,
   y = 109,
-  name = "npc_rudy",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/ordon_rudy",
 }
 
@@ -1564,121 +1663,170 @@ destructible{
 }
 
 wall{
+  name = "custom_obstacle",
   layer = 0,
   x = 192,
   y = 120,
   width = 32,
   height = 16,
-  name = "custom_obstacle",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 npc{
+  name = "quest_rudy",
   layer = 0,
   x = 264,
   y = 93,
-  name = "quest_rudy",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/quest_bubble",
 }
 
 sensor{
+  name = "sensor_leaving",
   layer = 0,
   x = 208,
   y = 237,
   width = 48,
   height = 16,
-  name = "sensor_leaving",
 }
 
 teletransporter{
+  name = "to_E12_1",
   layer = 0,
   x = 144,
   y = 640,
   width = 16,
   height = 16,
-  name = "to_E12_1",
   destination_map = "26",
   destination = "from_cave_1",
 }
 
 destination{
+  name = "from_E12_1",
   layer = 0,
   x = 152,
   y = 621,
-  name = "from_E12_1",
   direction = 1,
 }
 
 teletransporter{
+  name = "to_E12_2",
   layer = 0,
   x = 512,
   y = 640,
   width = 16,
   height = 16,
-  name = "to_E12_2",
   destination_map = "26",
   destination = "from_cave_2",
 }
 
 destination{
+  name = "from_E12_2",
   layer = 0,
   x = 520,
   y = 621,
-  name = "from_E12_2",
   direction = 1,
 }
 
 pickable{
+  name = "apple_1",
   layer = 0,
   x = 96,
   y = 429,
-  name = "apple_1",
   treasure_name = "apple",
 }
 
 pickable{
+  name = "apple_2",
   layer = 0,
   x = 152,
   y = 429,
-  name = "apple_2",
   treasure_name = "apple",
 }
 
 pickable{
+  name = "apple_3",
   layer = 0,
   x = 208,
   y = 429,
-  name = "apple_3",
   treasure_name = "apple",
 }
 
 pickable{
+  name = "apple_4",
   layer = 0,
   x = 224,
   y = 429,
-  name = "apple_4",
   treasure_name = "apple",
 }
 
 pickable{
+  name = "apple_5",
   layer = 0,
   x = 472,
   y = 429,
-  name = "apple_5",
   treasure_name = "apple",
 }
 
 pickable{
+  name = "apple_6",
   layer = 0,
   x = 568,
   y = 429,
-  name = "apple_6",
   treasure_name = "apple",
+}
+
+teletransporter{
+  name = "to_F11",
+  layer = 0,
+  x = 648,
+  y = 208,
+  width = 16,
+  height = 16,
+  destination_map = "32",
+  destination = "from_cave",
+}
+
+destination{
+  name = "from_F11",
+  layer = 0,
+  x = 656,
+  y = 189,
+  direction = 1,
+}
+
+chest{
+  name = "chest_heart_piece",
+  layer = 0,
+  x = 656,
+  y = 117,
+  treasure_name = "heart_piece",
+  treasure_savegame_variable = "b1710",
+  sprite = "entities/chest",
+}
+
+destructible{
+  layer = 0,
+  x = 632,
+  y = 117,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 680,
+  y = 117,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
 }
 
 tile{
@@ -1850,5 +1998,14 @@ tile{
   width = 192,
   height = 192,
   pattern = "751",
+}
+
+tile{
+  layer = 2,
+  x = 640,
+  y = 200,
+  width = 32,
+  height = 8,
+  pattern = "692",
 }
 

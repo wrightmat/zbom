@@ -3870,36 +3870,49 @@ tile{
 }
 
 teletransporter{
+  name = "hole_cave",
+  layer = 0,
+  x = 336,
+  y = 64,
+  width = 16,
+  height = 16,
+  destination_map = "9",
+  destination = "from_F11",
+  sprite = "entities/teletransporter_hole",
+  sound = "hero_falls",
+}
+
+teletransporter{
+  name = "to_G11",
   layer = 0,
   x = 1120,
   y = 800,
   width = 16,
   height = 320,
-  name = "to_G11",
   transition = "scrolling",
   destination_map = "33",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_F12",
   layer = 0,
   x = 0,
   y = 1120,
   width = 1120,
   height = 16,
-  name = "to_F12",
   transition = "scrolling",
   destination_map = "27",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_F10",
   layer = 0,
   x = 464,
   y = -16,
   width = 576,
   height = 16,
-  name = "to_F10",
   transition = "scrolling",
   destination_map = "35",
   destination = "_side",
@@ -4115,62 +4128,62 @@ destructible{
 }
 
 enemy{
+  name = "enemy",
   layer = 0,
   x = 1040,
   y = 1045,
-  name = "enemy",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random",
 }
 
 enemy{
+  name = "enemy_2",
   layer = 0,
   x = 544,
   y = 997,
-  name = "enemy_2",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random",
 }
 
 enemy{
+  name = "enemy_3",
   layer = 0,
   x = 136,
   y = 917,
-  name = "enemy_3",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random",
 }
 
 enemy{
+  name = "enemy_6",
   layer = 0,
   x = 216,
   y = 261,
-  name = "enemy_6",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random",
 }
 
 teletransporter{
+  name = "to_F5_3",
   layer = 0,
   x = 72,
   y = -16,
   width = 208,
   height = 16,
-  name = "to_F5_3",
   transition = "scrolling",
   destination_map = "35",
   destination = "_side",
 }
 
 chest{
+  name = "chest_hf1",
   layer = 0,
   x = 1064,
   y = 277,
-  name = "chest_hf1",
   treasure_name = "rupee",
   treasure_variant = 4,
   treasure_savegame_variable = "b1746",
@@ -4222,24 +4235,24 @@ destructible{
 }
 
 teletransporter{
+  name = "to_G11_3",
   layer = 0,
   x = 1120,
   y = 272,
   width = 16,
   height = 112,
-  name = "to_G11_3",
   transition = "scrolling",
   destination_map = "33",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_G11_4",
   layer = 0,
   x = 1120,
   y = 152,
   width = 16,
   height = 64,
-  name = "to_G11_4",
   transition = "scrolling",
   destination_map = "33",
   destination = "_side",
@@ -4422,42 +4435,42 @@ destructible{
 }
 
 enemy{
+  name = "enemy_4",
   layer = 0,
   x = 416,
   y = 533,
-  name = "enemy_4",
   direction = 3,
   breed = "soldier_green",
   treasure_name = "random",
 }
 
 enemy{
+  name = "enemy_5",
   layer = 0,
   x = 912,
   y = 373,
-  name = "enemy_5",
   direction = 3,
   breed = "soldier_green",
   treasure_name = "random",
 }
 
 enemy{
+  name = "enemy_7",
   layer = 0,
   x = 680,
   y = 125,
-  name = "enemy_7",
   direction = 3,
   breed = "soldier_green",
   treasure_name = "random",
 }
 
 teletransporter{
+  name = "to_E11",
   layer = 0,
   x = -16,
   y = 112,
   width = 16,
   height = 1024,
-  name = "to_E11",
   transition = "scrolling",
   destination_map = "31",
   destination = "_side",
@@ -4866,6 +4879,24 @@ wall{
   width = 8,
   height = 8,
   stops_hero = true,
+}
+
+custom_entity{
+  name = "stone_pile_2",
+  layer = 0,
+  x = 344,
+  y = 85,
+  direction = 3,
+  sprite = "entities/stone_pile",
+  model = "stone_pile",
+}
+
+destination{
+  name = "from_cave",
+  layer = 0,
+  x = 344,
+  y = 117,
+  direction = 3,
 }
 
 tile{

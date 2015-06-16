@@ -5443,6 +5443,26 @@ teletransporter{
   destination = "from_outside_house_6",
 }
 
+enemy{
+  name = "chuchu_1",
+  layer = 0,
+  x = 336,
+  y = 149,
+  direction = 0,
+  breed = "chuchu_blue",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "chuchu_2",
+  layer = 0,
+  x = 608,
+  y = 77,
+  direction = 0,
+  breed = "chuchu_blue",
+  treasure_name = "random",
+}
+
 tile{
   layer = 1,
   x = 0,

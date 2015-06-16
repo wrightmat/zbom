@@ -1,0 +1,46 @@
+animation{
+  name = "walking",
+  src_image = "enemies/crab_huge.png",
+  frame_delay = 200,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 256, frame_height = 160, origin_x = 172, origin_y = 81, num_frames = 7, num_columns = 1 },
+    { x = 0, y = 0, frame_width = 256, frame_height = 160, origin_x = 172, origin_y = 81, num_frames = 7, num_columns = 1 },
+    { x = 0, y = 0, frame_width = 256, frame_height = 160, origin_x = 172, origin_y = 81, num_frames = 7, num_columns = 1 },
+    { x = 0, y = 0, frame_width = 256, frame_height = 160, origin_x = 172, origin_y = 81, num_frames = 7, num_columns = 1 },
+  },
+}
+animation{
+  name = "hurt",
+  src_image = "enemies/crab_huge.png",
+  frame_delay = 250,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 256, frame_height = 160, origin_x = 172, origin_y = 81 },
+    { x = 0, y = 0, frame_width = 256, frame_height = 160, origin_x = 172, origin_y = 81 },
+    { x = 0, y = 0, frame_width = 256, frame_height = 160, origin_x = 172, origin_y = 81 },
+    { x = 0, y = 0, frame_width = 256, frame_height = 160, origin_x = 172, origin_y = 81 },
+  },
+}
+animation{
+  name = "immobilized",
+  src_image = "enemies/crab_huge.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 256, frame_height = 160, origin_x = 172, origin_y = 81 },
+    { x = 0, y = 0, frame_width = 256, frame_height = 160, origin_x = 172, origin_y = 81 },
+    { x = 0, y = 0, frame_width = 256, frame_height = 160, origin_x = 172, origin_y = 81 },
+    { x = 0, y = 0, frame_width = 256, frame_height = 160, origin_x = 172, origin_y = 81 },
+  },
+}
+animation{
+  name = "shaking",
+  src_image = "enemies/crab_huge.png",
+  frame_delay = 100,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 256, frame_height = 160, origin_x = 172, origin_y = 81, num_frames = 2, num_columns = 1 },
+    { x = 0, y = 0, frame_width = 256, frame_height = 160, origin_x = 172, origin_y = 81, num_frames = 2, num_columns = 1 },
+    { x = 0, y = 0, frame_width = 256, frame_height = 160, origin_x = 172, origin_y = 81, num_frames = 2, num_columns = 1 },
+    { x = 0, y = 0, frame_width = 256, frame_height = 160, origin_x = 172, origin_y = 81, num_frames = 2, num_columns = 1 },
+  },
+}

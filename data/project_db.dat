@@ -227,6 +227,7 @@ sprite{ id = "enemies/chuchu_green", description = "Green ChuChu" }
 sprite{ id = "enemies/chuchu_red", description = "Red ChuChu" }
 sprite{ id = "enemies/chuchu_yellow", description = "Yellow ChuChu" }
 sprite{ id = "enemies/crab", description = "Crab" }
+sprite{ id = "enemies/crab_huge", description = "Huge Crab" }
 sprite{ id = "enemies/deadrock", description = "Deadrock" }
 sprite{ id = "enemies/dodongo", description = "Dodongo" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy Killed" }
@@ -744,6 +745,7 @@ enemy{ id = "chuchu_green", description = "ChuChu, Green" }
 enemy{ id = "chuchu_red", description = "ChuChu, Red" }
 enemy{ id = "chuchu_yellow", description = "ChuChu, Yellow" }
 enemy{ id = "crab", description = "Crab" }
+enemy{ id = "crab_huge", description = "Huge Crab" }
 enemy{ id = "deadrock", description = "Deadrock" }
 enemy{ id = "dodongo", description = "Dodongo" }
 enemy{ id = "evil_tile", description = "Evil Tile" }

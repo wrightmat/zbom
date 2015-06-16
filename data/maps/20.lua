@@ -23,6 +23,7 @@ function map:on_started(destination)
     npc_tokay_1:remove()
     npc_tokay_2:remove()
     npc_tokay_3:remove()
+    npc_deku_warning:remove()
     local position1 = (positions[math.random(#positions)])
     npc_deku_1:set_position(position1.x, position1.y)
     local position2 = (positions[math.random(#positions)])
@@ -39,7 +40,7 @@ function map:on_started(destination)
 end
 
 function sensor_deku_tokay:on_activated()
-  if game:get_value("i1068") <= 1 and hero:get_direction() == 2 then --only walking left
+  if game:get_value("i1068") < 1 and hero:get_direction() == 2 then --only walking left
     game:set_value("i1068", 1)
     sol.audio.play_sound("tokay")
     game:start_dialog("tokay.0.faron", function()

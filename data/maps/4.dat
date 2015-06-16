@@ -10,6 +10,15 @@ properties{
 
 tile{
   layer = 0,
+  x = 1192,
+  y = 824,
+  width = 24,
+  height = 80,
+  pattern = "50",
+}
+
+tile{
+  layer = 0,
   x = 1160,
   y = 768,
   width = 32,
@@ -2209,7 +2218,7 @@ tile{
   x = 1192,
   y = 792,
   width = 24,
-  height = 160,
+  height = 16,
   pattern = "50",
 }
 
@@ -6085,24 +6094,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1192,
-  y = 896,
-  width = 24,
-  height = 32,
-  pattern = "266",
-}
-
-tile{
-  layer = 0,
-  x = 1192,
-  y = 800,
-  width = 24,
-  height = 32,
-  pattern = "266",
-}
-
-tile{
-  layer = 0,
   x = 104,
   y = 104,
   width = 8,
@@ -6855,6 +6846,141 @@ tile{
   width = 32,
   height = 16,
   pattern = "485",
+}
+
+tile{
+  layer = 0,
+  x = 1048,
+  y = 1200,
+  width = 16,
+  height = 16,
+  pattern = "485",
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 1200,
+  width = 16,
+  height = 16,
+  pattern = "485",
+}
+
+tile{
+  layer = 0,
+  x = 1216,
+  y = 896,
+  width = 16,
+  height = 8,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 1224,
+  y = 832,
+  width = 8,
+  height = 64,
+  pattern = "71",
+}
+
+tile{
+  layer = 0,
+  x = 1216,
+  y = 824,
+  width = 16,
+  height = 8,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 1216,
+  y = 800,
+  width = 40,
+  height = 8,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 1248,
+  y = 808,
+  width = 8,
+  height = 112,
+  pattern = "71",
+}
+
+tile{
+  layer = 0,
+  x = 1216,
+  y = 920,
+  width = 40,
+  height = 8,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 1192,
+  y = 920,
+  width = 24,
+  height = 32,
+  pattern = "50",
+}
+
+tile{
+  layer = 0,
+  x = 1192,
+  y = 808,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 1192,
+  y = 904,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 1192,
+  y = 896,
+  width = 16,
+  height = 8,
+  pattern = "34",
+}
+
+tile{
+  layer = 0,
+  x = 1192,
+  y = 920,
+  width = 16,
+  height = 8,
+  pattern = "35",
+}
+
+tile{
+  layer = 0,
+  x = 1192,
+  y = 800,
+  width = 16,
+  height = 8,
+  pattern = "34",
+}
+
+tile{
+  layer = 0,
+  x = 1192,
+  y = 824,
+  width = 16,
+  height = 8,
+  pattern = "35",
 }
 
 destination{
@@ -7857,6 +7983,44 @@ wall{
   stops_hero = true,
 }
 
+destructible{
+  layer = 0,
+  x = 1056,
+  y = 1213,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 1088,
+  y = 1213,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+door{
+  name = "bomb_door_2",
+  layer = 0,
+  x = 1192,
+  y = 808,
+  direction = 0,
+  sprite = "entities/door_very_weak_wall",
+  opening_method = "explosion",
+}
+
+door{
+  name = "bomb_door_1",
+  layer = 0,
+  x = 1192,
+  y = 904,
+  direction = 0,
+  sprite = "entities/door_very_weak_wall",
+  opening_method = "explosion",
+}
+
 npc{
   name = "quest_bottle",
   layer = 1,
@@ -8243,6 +8407,24 @@ tile{
   width = 24,
   height = 8,
   pattern = "573",
+}
+
+tile{
+  layer = 2,
+  x = 1208,
+  y = 896,
+  width = 8,
+  height = 32,
+  pattern = "32",
+}
+
+tile{
+  layer = 2,
+  x = 1208,
+  y = 800,
+  width = 8,
+  height = 32,
+  pattern = "32",
 }
 
 separator{

@@ -3689,6 +3689,24 @@ it looks just like me!
 }
 
 dialog{
+  id = "deku.0.warning",
+  text = [[
+Hey kid, I wouldn't
+wander too far - it's
+dangerous in these
+woods! At least try to
+find another weapon
+first, maybe something
+with a range. There's
+a stump with a door south
+west of here, I'll bet
+it would have some
+interesting stuff if
+you checked it out.
+]]
+}
+
+dialog{
   id = "deku.2.faron",
   skip = "current",
   text = [[
@@ -3779,12 +3797,11 @@ dialog{
   skip = "current",
   text = [[
 We're nicer than our
-kind over at the Lost
+relatives over at the Lost
 Woods of the east.
 I think they're just
-confused by that
-forest and it makes
-them angry.
+confused by that forest
+and it makes them angry.
 I have heard them say
 that they like odd
 smelling potions. Maybe
@@ -9064,12 +9081,17 @@ you can return later.
 
 dialog{
   id = "warp.to_B1",
+  question = "1",
   text = [[
-]]
+Warp to Calatia Peaks?
+Yes
+No
+  ]]
 }
 
 dialog{
   id = "warp.to_B6",
+  question = "1",
   text = [[
 Warp to Snowpeak?
 Yes
@@ -9080,7 +9102,6 @@ No
 dialog{
   id = "warp.to_B8",
   question = "1",
-  skip = "current",
   text = [[
 Warp to Gerudo Camp?
 Yes
@@ -9091,7 +9112,6 @@ No
 dialog{
   id = "warp.to_C13",
   question = "1",
-  skip = "current",
   text = [[
 Warp to the Beach?
 Yes
@@ -9102,7 +9122,6 @@ No
 dialog{
   id = "warp.to_D7",
   question = "1",
-  skip = "current",
   text = [[
 Warp to Kakariko City?
 Yes
@@ -9113,7 +9132,6 @@ No
 dialog{
   id = "warp.to_E10",
   question = "1",
-  skip = "current",
   text = [[
 Warp to Lake Hylia?
 Yes
@@ -9124,7 +9142,6 @@ No
 dialog{
   id = "warp.to_F14",
   question = "1",
-  skip = "current",
   text = [[
 Warp to Ordon Village?
 Yes
@@ -9134,6 +9151,7 @@ No
 
 dialog{
   id = "warp.to_F5",
+  question = "1",
   text = [[
 Warp to Septen Heights?
 Yes
@@ -9143,6 +9161,7 @@ No
 
 dialog{
   id = "warp.to_G5",
+  question = "1",
   text = [[
 Warp to Zora's Domain?
 Yes
@@ -9153,7 +9172,6 @@ No
 dialog{
   id = "warp.to_G8",
   question = "1",
-  skip = "current",
   text = [[
 Warp to Hidden Village?
 Yes
@@ -9164,7 +9182,6 @@ No
 dialog{
   id = "warp.to_H10",
   question = "1",
-  skip = "current",
   text = [[
 Warp to Lost Woods?
 Yes
@@ -9175,7 +9192,6 @@ No
 dialog{
   id = "warp.to_H14",
   question = "1",
-  skip = "current",
   text = [[
 Warp to Floria Peninsula?
 Yes
@@ -9186,7 +9202,6 @@ No
 dialog{
   id = "warp.to_H6",
   question = "1",
-  skip = "current",
   text = [[
 Warp to Goron City?
 Yes
@@ -9197,7 +9212,6 @@ No
 dialog{
   id = "warp.to_L5",
   question = "1",
-  skip = "current",
   text = [[
 Warp to Old Kasuto?
 Yes

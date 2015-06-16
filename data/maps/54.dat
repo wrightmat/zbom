@@ -3041,68 +3041,104 @@ tile{
   pattern = "1739",
 }
 
+tile{
+  layer = 0,
+  x = 688,
+  y = 496,
+  width = 48,
+  height = 48,
+  pattern = "1644",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 696,
+  width = 48,
+  height = 48,
+  pattern = "1644",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 256,
+  width = 48,
+  height = 48,
+  pattern = "1644",
+}
+
+tile{
+  layer = 0,
+  x = 952,
+  y = 568,
+  width = 48,
+  height = 48,
+  pattern = "1644",
+}
+
 teletransporter{
+  name = "to_E5",
   layer = 0,
   x = 1120,
   y = 320,
   width = 16,
   height = 800,
-  name = "to_E5",
   transition = "scrolling",
   destination_map = "55",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_D6",
   layer = 0,
   x = 0,
   y = 1120,
   width = 1120,
   height = 16,
-  name = "to_D6",
   transition = "scrolling",
   destination_map = "62",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_C5",
   layer = 0,
   x = -16,
   y = 288,
   width = 16,
   height = 832,
-  name = "to_C5",
   transition = "scrolling",
   destination_map = "53",
   destination = "_side",
 }
 
 enemy{
+  name = "knight",
   layer = 0,
   x = 744,
   y = 989,
-  name = "knight",
   direction = 3,
   breed = "knight_red",
   treasure_name = "random",
 }
 
 sensor{
+  name = "sensor_enter_snowpeak",
   layer = 0,
   x = 368,
   y = 229,
   width = 16,
   height = 160,
-  name = "sensor_enter_snowpeak",
 }
 
 sensor{
+  name = "sensor_enter_mountain",
   layer = 0,
   x = 352,
   y = 229,
   width = 16,
   height = 160,
-  name = "sensor_enter_mountain",
 }
 
 wall{
@@ -3115,39 +3151,59 @@ wall{
 }
 
 teletransporter{
+  name = "to_E5_water",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 272,
-  name = "to_E5_water",
   transition = "scrolling",
   destination_map = "55",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_C5_water",
   layer = 0,
   x = -16,
   y = 0,
   width = 16,
   height = 240,
-  name = "to_C5_water",
   transition = "scrolling",
   destination_map = "53",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_D4_water",
   layer = 0,
   x = 0,
   y = -16,
   width = 1120,
   height = 16,
-  name = "to_D4_water",
   transition = "scrolling",
   destination_map = "99",
   destination = "_side",
+}
+
+enemy{
+  name = "knight_2",
+  layer = 0,
+  x = 808,
+  y = 717,
+  direction = 3,
+  breed = "knight_red",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "knight_3",
+  layer = 0,
+  x = 904,
+  y = 421,
+  direction = 3,
+  breed = "knight_red",
+  treasure_name = "random",
 }
 
 tile{
