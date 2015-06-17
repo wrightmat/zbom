@@ -4818,6 +4818,46 @@ destructible{
   damage_on_enemies = 2,
 }
 
+enemy{
+  name = "lynel_1",
+  layer = 0,
+  x = 368,
+  y = 717,
+  direction = 0,
+  breed = "lynel",
+  treasure_name = "random_mountain",
+}
+
+enemy{
+  name = "lynel_2",
+  layer = 0,
+  x = 144,
+  y = 749,
+  direction = 0,
+  breed = "lynel",
+  treasure_name = "random_mountain",
+}
+
+enemy{
+  name = "lynel_3",
+  layer = 0,
+  x = 112,
+  y = 85,
+  direction = 0,
+  breed = "lynel",
+  treasure_name = "random_mountain",
+}
+
+enemy{
+  name = "lynel_4",
+  layer = 0,
+  x = 552,
+  y = 53,
+  direction = 0,
+  breed = "lynel",
+  treasure_name = "random_mountain",
+}
+
 tile{
   layer = 1,
   x = 296,

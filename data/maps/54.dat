@@ -3077,6 +3077,33 @@ tile{
   pattern = "1644",
 }
 
+tile{
+  layer = 0,
+  x = 832,
+  y = 552,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 880,
+  y = 552,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 856,
+  y = 552,
+  width = 16,
+  height = 16,
+  pattern = "910",
+}
+
 teletransporter{
   name = "to_E5",
   layer = 0,
@@ -3187,23 +3214,91 @@ teletransporter{
 }
 
 enemy{
-  name = "knight_2",
+  name = "lynel_1",
   layer = 0,
-  x = 808,
-  y = 717,
-  direction = 3,
-  breed = "knight_red",
+  x = 832,
+  y = 469,
+  direction = 0,
+  breed = "lynel",
   treasure_name = "random",
 }
 
 enemy{
-  name = "knight_3",
+  name = "lynel_2",
   layer = 0,
-  x = 904,
-  y = 421,
-  direction = 3,
-  breed = "knight_red",
+  x = 768,
+  y = 621,
+  direction = 0,
+  breed = "lynel",
   treasure_name = "random",
+}
+
+enemy{
+  name = "lynel_3",
+  layer = 0,
+  x = 984,
+  y = 501,
+  direction = 0,
+  breed = "lynel",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "lynel_4",
+  layer = 0,
+  x = 912,
+  y = 741,
+  direction = 0,
+  breed = "lynel",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "lynel_5",
+  layer = 0,
+  x = 696,
+  y = 749,
+  direction = 0,
+  breed = "lynel",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "lynel_6",
+  layer = 0,
+  x = 608,
+  y = 461,
+  direction = 0,
+  breed = "lynel",
+  treasure_name = "random",
+}
+
+chest{
+  name = "chest_heart_piece",
+  layer = 0,
+  x = 864,
+  y = 565,
+  treasure_name = "heart_piece",
+  treasure_savegame_variable = "b1720",
+  sprite = "entities/chest",
+}
+
+destructible{
+  layer = 0,
+  x = 840,
+  y = 565,
+  treasure_name = "random_mountain",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 888,
+  y = 565,
+  treasure_name = "random_mountain",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
 }
 
 tile{

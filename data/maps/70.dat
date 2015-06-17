@@ -3476,6 +3476,66 @@ npc{
   sprite = "entities/torch_wood",
 }
 
+enemy{
+  name = "leever_1",
+  layer = 0,
+  x = 744,
+  y = 429,
+  direction = 0,
+  breed = "leever_purple",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "leever_2",
+  layer = 0,
+  x = 456,
+  y = 469,
+  direction = 0,
+  breed = "leever_purple",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "leever_3",
+  layer = 0,
+  x = 728,
+  y = 701,
+  direction = 0,
+  breed = "leever_purple",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "leever_4",
+  layer = 0,
+  x = 1032,
+  y = 757,
+  direction = 0,
+  breed = "leever_purple",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "leever_5",
+  layer = 0,
+  x = 592,
+  y = 949,
+  direction = 0,
+  breed = "leever_green",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "leever_6",
+  layer = 0,
+  x = 872,
+  y = 1013,
+  direction = 0,
+  breed = "leever_green",
+  treasure_name = "random",
+}
+
 tile{
   layer = 2,
   x = 496,

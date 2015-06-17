@@ -14,7 +14,7 @@ tile{
   y = 0,
   width = 1120,
   height = 1120,
-  pattern = 1727,
+  pattern = "1727",
 }
 
 tile{
@@ -23,16 +23,16 @@ tile{
   y = 1048,
   width = 16,
   height = 24,
-  pattern = 1006,
+  pattern = "1006",
 }
 
 tile{
   layer = 0,
-  x = 736,
-  y = 840,
+  x = 776,
+  y = 888,
   width = 32,
   height = 32,
-  pattern = 1007,
+  pattern = "1007",
 }
 
 tile{
@@ -41,16 +41,16 @@ tile{
   y = 1040,
   width = 32,
   height = 32,
-  pattern = 1008,
+  pattern = "1008",
 }
 
 tile{
   layer = 0,
-  x = 480,
-  y = 952,
+  x = 520,
+  y = 960,
   width = 16,
   height = 16,
-  pattern = 1010,
+  pattern = "1010",
 }
 
 tile{
@@ -59,7 +59,7 @@ tile{
   y = 816,
   width = 16,
   height = 16,
-  pattern = 1009,
+  pattern = "1009",
 }
 
 tile{
@@ -68,7 +68,7 @@ tile{
   y = 1016,
   width = 16,
   height = 24,
-  pattern = 1006,
+  pattern = "1006",
 }
 
 tile{
@@ -77,16 +77,16 @@ tile{
   y = 1048,
   width = 32,
   height = 32,
-  pattern = 1007,
+  pattern = "1007",
 }
 
 tile{
   layer = 0,
-  x = 328,
-  y = 664,
+  x = 248,
+  y = 872,
   width = 32,
   height = 32,
-  pattern = 1013,
+  pattern = "1013",
 }
 
 tile{
@@ -95,7 +95,7 @@ tile{
   y = 752,
   width = 16,
   height = 16,
-  pattern = 1009,
+  pattern = "1009",
 }
 
 tile{
@@ -104,25 +104,25 @@ tile{
   y = 712,
   width = 32,
   height = 32,
-  pattern = 1008,
+  pattern = "1008",
 }
 
 tile{
   layer = 0,
-  x = 864,
+  x = 872,
   y = 544,
   width = 32,
   height = 32,
-  pattern = 1007,
+  pattern = "1007",
 }
 
 tile{
   layer = 0,
-  x = 536,
-  y = 488,
+  x = 232,
+  y = 568,
   width = 16,
   height = 24,
-  pattern = 1006,
+  pattern = "1006",
 }
 
 tile{
@@ -131,7 +131,7 @@ tile{
   y = 560,
   width = 32,
   height = 32,
-  pattern = 1007,
+  pattern = "1007",
 }
 
 tile{
@@ -140,7 +140,7 @@ tile{
   y = 448,
   width = 32,
   height = 32,
-  pattern = 1008,
+  pattern = "1008",
 }
 
 tile{
@@ -149,7 +149,7 @@ tile{
   y = 248,
   width = 16,
   height = 16,
-  pattern = 1009,
+  pattern = "1009",
 }
 
 tile{
@@ -158,7 +158,7 @@ tile{
   y = 96,
   width = 32,
   height = 32,
-  pattern = 1013,
+  pattern = "1013",
 }
 
 tile{
@@ -167,7 +167,7 @@ tile{
   y = 232,
   width = 16,
   height = 24,
-  pattern = 1006,
+  pattern = "1006",
 }
 
 tile{
@@ -176,7 +176,7 @@ tile{
   y = 88,
   width = 32,
   height = 32,
-  pattern = 1005,
+  pattern = "1005",
 }
 
 tile{
@@ -185,7 +185,7 @@ tile{
   y = 144,
   width = 32,
   height = 32,
-  pattern = 1005,
+  pattern = "1005",
 }
 
 tile{
@@ -194,7 +194,7 @@ tile{
   y = 96,
   width = 32,
   height = 32,
-  pattern = 1005,
+  pattern = "1005",
 }
 
 tile{
@@ -203,7 +203,7 @@ tile{
   y = 32,
   width = 32,
   height = 32,
-  pattern = 1005,
+  pattern = "1005",
 }
 
 tile{
@@ -212,7 +212,7 @@ tile{
   y = 200,
   width = 32,
   height = 32,
-  pattern = 1005,
+  pattern = "1005",
 }
 
 tile{
@@ -221,16 +221,16 @@ tile{
   y = 344,
   width = 32,
   height = 32,
-  pattern = 1005,
+  pattern = "1005",
 }
 
 tile{
   layer = 0,
-  x = 704,
-  y = 376,
+  x = 736,
+  y = 304,
   width = 32,
   height = 32,
-  pattern = 1005,
+  pattern = "1005",
 }
 
 tile{
@@ -239,7 +239,7 @@ tile{
   y = 368,
   width = 16,
   height = 16,
-  pattern = 1009,
+  pattern = "1009",
 }
 
 tile{
@@ -248,7 +248,7 @@ tile{
   y = 240,
   width = 16,
   height = 16,
-  pattern = 1011,
+  pattern = "1011",
 }
 
 tile{
@@ -257,104 +257,206 @@ tile{
   y = 176,
   width = 16,
   height = 16,
-  pattern = 1011,
+  pattern = "1011",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 504,
+  width = 32,
+  height = 32,
+  pattern = "1008",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 536,
+  width = 16,
+  height = 16,
+  pattern = "1737",
 }
 
 teletransporter{
+  name = "to_C11",
   layer = 0,
   x = 0,
   y = 1120,
   width = 1120,
   height = 16,
-  name = "to_C11",
   transition = "scrolling",
   destination_map = "80",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_D10",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 1120,
-  name = "to_D10",
   transition = "scrolling",
   destination_map = "78",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_C9",
   layer = 0,
   x = 0,
   y = -16,
   width = 1120,
   height = 16,
-  name = "to_C9",
   transition = "scrolling",
   destination_map = "75",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_B10",
   layer = 0,
   x = -16,
   y = 0,
   width = 16,
   height = 1120,
-  name = "to_B10",
   transition = "scrolling",
   destination_map = "76",
   destination = "_side",
 }
 
 enemy{
-  layer = 0,
-  x = 372,
-  y = 357,
   name = "geldman_1",
+  layer = 0,
+  x = 420,
+  y = 237,
   direction = 3,
   breed = "geldman",
   treasure_name = "random",
 }
 
 enemy{
+  name = "geldman_2",
   layer = 0,
   x = 980,
   y = 269,
-  name = "geldman_2",
   direction = 3,
   breed = "geldman",
   treasure_name = "random",
 }
 
 enemy{
+  name = "geldman_3",
   layer = 0,
   x = 940,
   y = 893,
-  name = "geldman_3",
   direction = 3,
   breed = "geldman",
   treasure_name = "random",
 }
 
 enemy{
-  layer = 0,
-  x = 228,
-  y = 933,
   name = "geldman_4",
+  layer = 0,
+  x = 188,
+  y = 965,
   direction = 3,
   breed = "geldman",
   treasure_name = "random",
 }
 
 enemy{
+  name = "geldman_5",
   layer = 0,
   x = 100,
   y = 381,
-  name = "geldman_5",
   direction = 3,
   breed = "geldman",
   treasure_name = "random",
+}
+
+sensor{
+  name = "sensor_lanmola_1",
+  layer = 0,
+  x = 256,
+  y = 349,
+  width = 624,
+  height = 16,
+}
+
+sensor{
+  name = "sensor_lanmola_2",
+  layer = 0,
+  x = 256,
+  y = 365,
+  width = 16,
+  height = 512,
+}
+
+sensor{
+  name = "sensor_lanmola_3",
+  layer = 0,
+  x = 864,
+  y = 365,
+  width = 16,
+  height = 512,
+}
+
+sensor{
+  name = "sensor_lanmola_4",
+  layer = 0,
+  x = 256,
+  y = 877,
+  width = 624,
+  height = 16,
+}
+
+wall{
+  layer = 0,
+  x = 232,
+  y = 320,
+  width = 16,
+  height = 576,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 248,
+  y = 880,
+  width = 624,
+  height = 16,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 872,
+  y = 320,
+  width = 16,
+  height = 576,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 248,
+  y = 320,
+  width = 624,
+  height = 16,
+  stops_enemies = true,
+}
+
+enemy{
+  name = "lanmola",
+  layer = 0,
+  x = 568,
+  y = 597,
+  direction = 0,
+  breed = "lanmola",
+  rank = 1,
+  treasure_name = "heart_piece",
+  treasure_savegame_variable = "b1719",
 }
 

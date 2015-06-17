@@ -2269,6 +2269,26 @@ teletransporter{
   destination = "_side",
 }
 
+enemy{
+  name = "lynel_1",
+  layer = 0,
+  x = 864,
+  y = 229,
+  direction = 0,
+  breed = "lynel",
+  treasure_name = "random_mountain",
+}
+
+enemy{
+  name = "lynel_2",
+  layer = 0,
+  x = 784,
+  y = 541,
+  direction = 0,
+  breed = "lynel",
+  treasure_name = "random_mountain",
+}
+
 tile{
   layer = 2,
   x = 960,

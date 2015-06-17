@@ -1971,414 +1971,444 @@ tile{
 }
 
 teletransporter{
+  name = "to_B8",
   layer = 0,
   x = 0,
   y = -16,
   width = 1120,
   height = 16,
-  name = "to_B8",
   transition = "scrolling",
   destination_map = "72",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_C9",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 1120,
-  name = "to_C9",
   transition = "scrolling",
   destination_map = "75",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_B10",
   layer = 0,
   x = 0,
   y = 1120,
   width = 1120,
   height = 16,
-  name = "to_B10",
   transition = "scrolling",
   destination_map = "76",
   destination = "_side",
 }
 
 npc{
+  name = "npc_gerudo_pirate_1",
   layer = 0,
   x = 280,
   y = 293,
-  name = "npc_gerudo_pirate_1",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/gerudo_pirate",
 }
 
 npc{
+  name = "npc_gerudo_pirate_2",
   layer = 0,
   x = 152,
   y = 525,
-  name = "npc_gerudo_pirate_2",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/gerudo_pirate",
 }
 
 npc{
+  name = "npc_gerudo_leader",
   layer = 0,
   x = 240,
   y = 933,
-  name = "npc_gerudo_leader",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/gerudo_hesla",
 }
 
 wall{
+  name = "block_3",
   layer = 0,
   x = 96,
   y = 840,
   width = 248,
   height = 8,
-  name = "block_3",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 wall{
+  name = "block_4",
   layer = 0,
   x = 344,
   y = 824,
   width = 8,
   height = 16,
-  name = "block_4",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 wall{
+  name = "block_5",
   layer = 0,
   x = 352,
   y = 808,
   width = 8,
   height = 16,
-  name = "block_5",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 wall{
+  name = "block_6",
   layer = 0,
   x = 360,
   y = 800,
   width = 16,
   height = 8,
-  name = "block_6",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 wall{
+  name = "block_7",
   layer = 0,
   x = 368,
   y = 760,
   width = 8,
   height = 40,
-  name = "block_7",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 wall{
+  name = "block_8",
   layer = 0,
   x = 360,
   y = 744,
   width = 8,
   height = 16,
-  name = "block_8",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 wall{
+  name = "block_9",
   layer = 0,
   x = 320,
   y = 736,
   width = 48,
   height = 8,
-  name = "block_9",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 wall{
+  name = "block_10",
   layer = 0,
   x = 312,
   y = 736,
   width = 8,
   height = 16,
-  name = "block_10",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 wall{
+  name = "block_11",
   layer = 0,
   x = 96,
   y = 752,
   width = 224,
   height = 8,
-  name = "block_11",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 wall{
+  name = "block_14",
   layer = 0,
   x = 88,
   y = 736,
   width = 8,
   height = 24,
-  name = "block_14",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 wall{
+  name = "block_15",
   layer = 0,
   x = 56,
   y = 736,
   width = 32,
   height = 8,
-  name = "block_15",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 wall{
+  name = "block_16",
   layer = 0,
   x = 40,
   y = 744,
   width = 16,
   height = 8,
-  name = "block_16",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 wall{
+  name = "block_17",
   layer = 0,
   x = 24,
   y = 752,
   width = 16,
   height = 8,
-  name = "block_17",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 wall{
+  name = "block_18",
   layer = 0,
   x = 24,
   y = 760,
   width = 8,
   height = 32,
-  name = "block_18",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 wall{
+  name = "block_19",
   layer = 0,
   x = 32,
   y = 792,
   width = 8,
   height = 8,
-  name = "block_19",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 wall{
+  name = "block_20",
   layer = 0,
   x = 40,
   y = 800,
   width = 8,
   height = 8,
-  name = "block_20",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 wall{
+  name = "block_21",
   layer = 0,
   x = 48,
   y = 808,
   width = 8,
   height = 8,
-  name = "block_21",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 wall{
+  name = "block_22",
   layer = 0,
   x = 56,
   y = 816,
   width = 8,
   height = 8,
-  name = "block_22",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 wall{
+  name = "block_23",
   layer = 0,
   x = 64,
   y = 824,
   width = 16,
   height = 8,
-  name = "block_23",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 wall{
+  name = "block_24",
   layer = 0,
   x = 80,
   y = 832,
   width = 16,
   height = 8,
-  name = "block_24",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 wall{
+  name = "block_2",
   layer = 0,
   x = 112,
   y = 848,
   width = 224,
   height = 8,
-  name = "block_2",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 wall{
+  name = "block_1",
   layer = 0,
   x = 128,
   y = 856,
   width = 192,
   height = 8,
-  name = "block_1",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 wall{
+  name = "block_13",
   layer = 0,
   x = 112,
   y = 688,
   width = 16,
   height = 64,
-  name = "block_13",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 wall{
+  name = "block_12",
   layer = 0,
   x = 280,
   y = 712,
   width = 16,
   height = 40,
-  name = "block_12",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
+enemy{
+  name = "leever_5",
+  layer = 0,
+  x = 760,
+  y = 429,
+  direction = 0,
+  breed = "leever_green",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "leever_6",
+  layer = 0,
+  x = 1024,
+  y = 901,
+  direction = 0,
+  breed = "leever_green",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "leever_7",
+  layer = 0,
+  x = 1008,
+  y = 109,
+  direction = 0,
+  breed = "leever_green",
+  treasure_name = "random",
+}
+
 npc{
+  name = "gerudo_ship",
   layer = 1,
   x = 192,
   y = 789,
-  name = "gerudo_ship",
   direction = 0,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/ship_gerudo",
 }
 

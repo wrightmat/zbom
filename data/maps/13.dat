@@ -3106,8 +3106,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 408,
-  y = 952,
+  x = 416,
+  y = 912,
   width = 48,
   height = 24,
   pattern = "1499",
@@ -3115,8 +3115,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 408,
-  y = 976,
+  x = 416,
+  y = 936,
   width = 48,
   height = 16,
   pattern = "505",
@@ -3124,8 +3124,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 416,
-  y = 992,
+  x = 424,
+  y = 952,
   width = 32,
   height = 8,
   pattern = "523",
@@ -3133,8 +3133,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 400,
-  y = 968,
+  x = 408,
+  y = 928,
   width = 8,
   height = 16,
   pattern = "1498",
@@ -3142,8 +3142,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 456,
-  y = 968,
+  x = 464,
+  y = 928,
   width = 8,
   height = 16,
   pattern = "1500",
@@ -3556,8 +3556,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 448,
-  y = 904,
+  x = 472,
+  y = 872,
   width = 16,
   height = 8,
   pattern = "1693",
@@ -3746,7 +3746,7 @@ tile{
 tile{
   layer = 0,
   x = 400,
-  y = 912,
+  y = 872,
   width = 16,
   height = 16,
   pattern = "42",
@@ -3950,113 +3950,140 @@ tile{
   pattern = "311",
 }
 
+tile{
+  layer = 0,
+  x = 400,
+  y = 992,
+  width = 16,
+  height = 16,
+  pattern = "524",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 992,
+  width = 16,
+  height = 16,
+  pattern = "524",
+}
+
+tile{
+  layer = 0,
+  x = 424,
+  y = 992,
+  width = 16,
+  height = 16,
+  pattern = "910",
+}
+
 teletransporter{
+  name = "to_H13",
   layer = 0,
   x = 160,
   y = -16,
   width = 208,
   height = 16,
-  name = "to_H13",
   transition = "scrolling",
   destination_map = "19",
   destination = "_side",
 }
 
 enemy{
+  name = "baba_floria_1",
   layer = 0,
   x = 500,
   y = 293,
-  name = "baba_floria_1",
   direction = 3,
   breed = "baba_floria",
   treasure_name = "jade",
 }
 
 enemy{
+  name = "baba_floria_2",
   layer = 0,
   x = 412,
   y = 381,
-  name = "baba_floria_2",
   direction = 3,
   breed = "baba_floria",
   treasure_name = "jade",
 }
 
 enemy{
+  name = "baba_floria_3",
   layer = 0,
   x = 436,
   y = 581,
-  name = "baba_floria_3",
   direction = 3,
   breed = "baba_floria",
   treasure_name = "jade",
 }
 
 enemy{
+  name = "baba_floria_4",
   layer = 0,
   x = 300,
   y = 685,
-  name = "baba_floria_4",
   direction = 3,
   breed = "baba_floria",
   treasure_name = "jade",
 }
 
 enemy{
+  name = "baba_floria_5",
   layer = 0,
   x = 284,
   y = 469,
-  name = "baba_floria_5",
   direction = 3,
   breed = "baba_floria",
   treasure_name = "jade",
 }
 
 enemy{
+  name = "baba_floria_6",
   layer = 0,
   x = 356,
   y = 165,
-  name = "baba_floria_6",
   direction = 3,
   breed = "baba_floria",
   treasure_name = "jade",
 }
 
 enemy{
+  name = "baba_floria_7",
   layer = 0,
   x = 284,
   y = 877,
-  name = "baba_floria_7",
   direction = 3,
   breed = "baba_floria",
   treasure_name = "jade",
 }
 
 enemy{
+  name = "baba_floria_8",
   layer = 0,
   x = 356,
   y = 973,
-  name = "baba_floria_8",
   direction = 3,
   breed = "baba_floria",
   treasure_name = "jade",
 }
 
 enemy{
+  name = "baba_floria_9",
   layer = 0,
   x = 508,
   y = 973,
-  name = "baba_floria_9",
   direction = 3,
   breed = "baba_floria",
   treasure_name = "jade",
 }
 
 enemy{
+  name = "baba_floria_10",
   layer = 0,
   x = 556,
   y = 821,
-  name = "baba_floria_10",
   direction = 3,
   breed = "baba_floria",
   treasure_name = "jade",
@@ -4734,30 +4761,52 @@ destructible{
 }
 
 chest{
+  name = "chest_heart_piece",
   layer = 0,
   x = 432,
-  y = 1021,
-  name = "chest_heart_piece",
+  y = 1005,
   treasure_name = "heart_piece",
   treasure_savegame_variable = "b1704",
   sprite = "entities/chest",
 }
 
 npc{
+  name = "ocarina_wind_to_E10",
   layer = 0,
   x = 440,
   y = 805,
-  name = "ocarina_wind_to_E10",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
 }
 
 destination{
+  name = "ocarina_warp",
   layer = 0,
   x = 440,
   y = 821,
-  name = "ocarina_warp",
   direction = 3,
+}
+
+destructible{
+  layer = 0,
+  x = 408,
+  y = 1005,
+  treasure_name = "random_woods",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = 1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 456,
+  y = 1005,
+  treasure_name = "random_woods",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = 1,
+  can_be_cut = true,
 }
 
 tile{
@@ -5212,8 +5261,8 @@ tile{
 
 tile{
   layer = 2,
-  x = 408,
-  y = 920,
+  x = 416,
+  y = 880,
   width = 48,
   height = 32,
   pattern = "1495",
@@ -5221,8 +5270,8 @@ tile{
 
 tile{
   layer = 2,
-  x = 400,
-  y = 944,
+  x = 408,
+  y = 904,
   width = 8,
   height = 24,
   pattern = "1494",
@@ -5230,8 +5279,8 @@ tile{
 
 tile{
   layer = 2,
-  x = 456,
-  y = 944,
+  x = 464,
+  y = 904,
   width = 8,
   height = 24,
   pattern = "1497",

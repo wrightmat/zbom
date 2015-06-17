@@ -1998,113 +1998,173 @@ tile{
 }
 
 teletransporter{
+  name = "to_C8",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 1120,
-  name = "to_C8",
   transition = "scrolling",
   destination_map = "73",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_B9",
   layer = 0,
   x = 0,
   y = 1120,
   width = 1120,
   height = 16,
-  name = "to_B9",
   transition = "scrolling",
   destination_map = "74",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_B7",
   layer = 0,
   x = 0,
   y = -16,
   width = 1120,
   height = 16,
-  name = "to_B7",
   transition = "scrolling",
   destination_map = "70",
   destination = "_side",
 }
 
 teletransporter{
+  name = "enter_gerudo_1",
   layer = 0,
   x = 120,
   y = 168,
   width = 16,
   height = 16,
-  name = "enter_gerudo_1",
   destination_map = "6",
   destination = "enter_desert_1",
 }
 
 teletransporter{
+  name = "enter_gerudo_2",
   layer = 0,
   x = 64,
   y = 376,
   width = 16,
   height = 16,
-  name = "enter_gerudo_2",
   destination_map = "6",
   destination = "enter_desert_2",
 }
 
 teletransporter{
+  name = "enter_gerudo_3",
   layer = 0,
   x = 72,
   y = 968,
   width = 16,
   height = 16,
-  name = "enter_gerudo_3",
   destination_map = "6",
   destination = "enter_desert_3",
 }
 
 destination{
+  name = "from_gerudo_1",
   layer = 0,
   x = 128,
   y = 197,
-  name = "from_gerudo_1",
   direction = 3,
 }
 
 destination{
+  name = "from_gerudo_2",
   layer = 0,
   x = 72,
   y = 405,
-  name = "from_gerudo_2",
   direction = 3,
 }
 
 destination{
+  name = "from_gerudo_3",
   layer = 0,
   x = 80,
   y = 997,
-  name = "from_gerudo_3",
   direction = 3,
 }
 
 npc{
+  name = "ocarina_wind_to_H6",
   layer = 0,
   x = 64,
   y = 685,
-  name = "ocarina_wind_to_H6",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
 }
 
 destination{
+  name = "ocarina_warp",
   layer = 0,
   x = 64,
   y = 701,
-  name = "ocarina_warp",
   direction = 3,
+}
+
+enemy{
+  name = "leever_5",
+  layer = 0,
+  x = 728,
+  y = 157,
+  direction = 0,
+  breed = "leever_purple",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "leever_6",
+  layer = 0,
+  x = 544,
+  y = 549,
+  direction = 0,
+  breed = "leever_green",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "leever_7",
+  layer = 0,
+  x = 1024,
+  y = 461,
+  direction = 0,
+  breed = "leever_green",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "leever_8",
+  layer = 0,
+  x = 1016,
+  y = 893,
+  direction = 0,
+  breed = "leever_green",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "leever_9",
+  layer = 0,
+  x = 720,
+  y = 877,
+  direction = 0,
+  breed = "leever_green",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "leever_10",
+  layer = 0,
+  x = 456,
+  y = 973,
+  direction = 0,
+  breed = "leever_green",
+  treasure_name = "random",
 }
 
 tile{

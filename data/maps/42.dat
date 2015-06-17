@@ -5975,133 +5975,151 @@ tile{
   pattern = "522",
 }
 
+tile{
+  layer = 0,
+  x = 552,
+  y = 608,
+  width = 16,
+  height = 16,
+  pattern = "910",
+}
+
+wall{
+  layer = 0,
+  x = 328,
+  y = 360,
+  width = 16,
+  height = 480,
+  stops_enemies = true,
+}
+
 teletransporter{
+  name = "to_E9",
   layer = 0,
   x = 1120,
   y = 64,
   width = 16,
   height = 656,
-  name = "to_E9",
   transition = "scrolling",
   destination_map = "41",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_D8",
   layer = 0,
   x = 0,
   y = -16,
   width = 1056,
   height = 16,
-  name = "to_D8",
   transition = "scrolling",
   destination_map = "43",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_D10",
   layer = 0,
   x = 424,
   y = 1120,
   width = 352,
   height = 16,
-  name = "to_D10",
   transition = "scrolling",
   destination_map = "78",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_C9",
   layer = 0,
   x = -16,
   y = 1008,
   width = 16,
   height = 112,
-  name = "to_C9",
   transition = "scrolling",
   destination_map = "75",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_D10_2",
   layer = 0,
   x = 0,
   y = 1120,
   width = 112,
   height = 16,
-  name = "to_D10_2",
   transition = "scrolling",
   destination_map = "78",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_C9_2",
   layer = 0,
   x = -16,
   y = 0,
   width = 16,
   height = 720,
-  name = "to_C9_2",
   transition = "scrolling",
   destination_map = "75",
   destination = "_side",
 }
 
 enemy{
+  name = "peahat_1",
   layer = 0,
   x = 552,
   y = 781,
-  name = "peahat_1",
   direction = 3,
   breed = "peahat",
   treasure_name = "alchemy",
 }
 
 enemy{
+  name = "peahat_2",
   layer = 0,
   x = 688,
   y = 717,
-  name = "peahat_2",
   direction = 3,
   breed = "peahat",
   treasure_name = "alchemy",
 }
 
 enemy{
+  name = "peahat_3",
   layer = 0,
   x = 416,
   y = 717,
-  name = "peahat_3",
   direction = 3,
   breed = "peahat",
   treasure_name = "alchemy",
 }
 
 enemy{
+  name = "peahat_4",
   layer = 0,
   x = 400,
   y = 605,
-  name = "peahat_4",
   direction = 3,
   breed = "peahat",
   treasure_name = "alchemy",
 }
 
 enemy{
+  name = "peahat_5",
   layer = 0,
   x = 560,
   y = 541,
-  name = "peahat_5",
   direction = 3,
   breed = "peahat",
   treasure_name = "alchemy",
 }
 
 enemy{
+  name = "peahat_6",
   layer = 0,
   x = 704,
   y = 605,
-  name = "peahat_6",
   direction = 3,
   breed = "peahat",
   treasure_name = "alchemy",
@@ -6636,10 +6654,10 @@ destructible{
 }
 
 chest{
+  name = "chest_heart_piece",
   layer = 0,
   x = 560,
   y = 621,
-  name = "chest_heart_piece",
   treasure_name = "heart_piece",
   treasure_savegame_variable = "b1705",
   sprite = "entities/chest",
@@ -6703,7 +6721,7 @@ destructible{
 wall{
   layer = 0,
   x = 328,
-  y = 336,
+  y = 344,
   width = 304,
   height = 16,
   stops_enemies = true,
@@ -6712,7 +6730,7 @@ wall{
 wall{
   layer = 0,
   x = 744,
-  y = 344,
+  y = 352,
   width = 16,
   height = 512,
   stops_enemies = true,
@@ -6736,22 +6754,13 @@ wall{
   stops_enemies = true,
 }
 
-wall{
-  layer = 0,
-  x = 328,
-  y = 352,
-  width = 16,
-  height = 488,
-  stops_enemies = true,
-}
-
 teletransporter{
+  name = "to_E9_2",
   layer = 0,
   x = 1120,
   y = 784,
   width = 16,
   height = 128,
-  name = "to_E9_2",
   transition = "scrolling",
   destination_map = "41",
   destination = "_side",

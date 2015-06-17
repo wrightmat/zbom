@@ -3221,127 +3221,218 @@ tile{
   pattern = "1626",
 }
 
+tile{
+  layer = 0,
+  x = 744,
+  y = 528,
+  width = 8,
+  height = 8,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 784,
+  y = 920,
+  width = 8,
+  height = 8,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 800,
+  width = 8,
+  height = 8,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 456,
+  width = 8,
+  height = 8,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 208,
+  width = 8,
+  height = 8,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 824,
+  y = 296,
+  width = 8,
+  height = 8,
+  pattern = "546",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 312,
+  width = 8,
+  height = 8,
+  pattern = "545",
+}
+
+tile{
+  layer = 0,
+  x = 872,
+  y = 656,
+  width = 8,
+  height = 8,
+  pattern = "546",
+}
+
+tile{
+  layer = 0,
+  x = 968,
+  y = 1056,
+  width = 8,
+  height = 8,
+  pattern = "545",
+}
+
 teletransporter{
+  name = "to_D8",
   layer = 0,
   x = 1120,
   y = 112,
   width = 16,
   height = 1008,
-  name = "to_D8",
   transition = "scrolling",
   destination_map = "43",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_D8_2",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 64,
-  name = "to_D8_2",
   transition = "scrolling",
   destination_map = "43",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_C7",
   layer = 0,
   x = 608,
   y = -16,
   width = 512,
   height = 16,
-  name = "to_C7",
   transition = "scrolling",
   destination_map = "71",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_C9",
   layer = 0,
   x = 768,
   y = 1120,
   width = 352,
   height = 16,
-  name = "to_C9",
   transition = "scrolling",
   destination_map = "75",
   destination = "_side",
 }
 
 jumper{
+  name = "jump_sensor",
   layer = 0,
   x = 1008,
   y = 72,
   width = 32,
   height = 8,
-  name = "jump_sensor",
   direction = 6,
   jump_length = 64,
 }
 
 teletransporter{
+  name = "to_C9_2",
   layer = 0,
   x = 0,
   y = 1120,
   width = 496,
   height = 16,
-  name = "to_C9_2",
   transition = "scrolling",
   destination_map = "75",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_C7_2",
   layer = 0,
   x = 0,
   y = -16,
   width = 288,
   height = 16,
-  name = "to_C7_2",
   transition = "scrolling",
   destination_map = "71",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_B8",
   layer = 0,
   x = -16,
   y = 0,
   width = 16,
   height = 1120,
-  name = "to_B8",
   transition = "scrolling",
   destination_map = "72",
   destination = "_side",
 }
 
 sensor{
+  name = "sensor_enter_field",
   layer = 0,
   x = 1008,
   y = 117,
   width = 48,
   height = 16,
-  name = "sensor_enter_field",
 }
 
 enemy{
+  name = "geldman_3",
   layer = 0,
   x = 164,
   y = 941,
-  name = "geldman_3",
   direction = 3,
   breed = "geldman",
   treasure_name = "random",
 }
 
 enemy{
+  name = "geldman_2",
   layer = 0,
   x = 124,
   y = 237,
-  name = "geldman_2",
   direction = 3,
   breed = "geldman",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "leever_1",
+  layer = 0,
+  x = 160,
+  y = 493,
+  direction = 0,
+  breed = "leever_purple",
   treasure_name = "random",
 }
 

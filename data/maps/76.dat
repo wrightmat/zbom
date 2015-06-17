@@ -10,6 +10,24 @@ properties{
 
 tile{
   layer = 0,
+  x = 0,
+  y = 1072,
+  width = 48,
+  height = 48,
+  pattern = "49",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 1064,
+  width = 64,
+  height = 56,
+  pattern = "275",
+}
+
+tile{
+  layer = 0,
   x = 416,
   y = 720,
   width = 704,
@@ -1252,15 +1270,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 0,
-  y = 1104,
-  width = 16,
-  height = 16,
-  pattern = "275",
-}
-
-tile{
-  layer = 0,
   x = 120,
   y = 1096,
   width = 16,
@@ -1539,68 +1548,88 @@ tile{
 }
 
 teletransporter{
+  name = "to_B9",
   layer = 0,
   x = 16,
   y = -16,
   width = 1104,
   height = 16,
-  name = "to_B9",
   transition = "scrolling",
   destination_map = "74",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_C10",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 1120,
-  name = "to_C10",
   transition = "scrolling",
   destination_map = "77",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_B11",
   layer = 0,
   x = 168,
   y = 1120,
   width = 960,
   height = 16,
-  name = "to_B11",
   transition = "scrolling",
   destination_map = "79",
   destination = "_side",
 }
 
 enemy{
+  name = "geldman_1",
   layer = 0,
   x = 892,
   y = 229,
-  name = "geldman_1",
   direction = 3,
   breed = "geldman",
   treasure_name = "random",
 }
 
 enemy{
+  name = "geldman_2",
   layer = 0,
   x = 868,
   y = 781,
-  name = "geldman_2",
   direction = 3,
   breed = "geldman",
   treasure_name = "random",
 }
 
 enemy{
+  name = "geldman_3",
   layer = 0,
   x = 740,
   y = 1029,
-  name = "geldman_3",
   direction = 3,
   breed = "geldman",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "leever_5",
+  layer = 0,
+  x = 168,
+  y = 685,
+  direction = 0,
+  breed = "leever_green",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "leever_6",
+  layer = 0,
+  x = 368,
+  y = 229,
+  direction = 0,
+  breed = "leever_green",
   treasure_name = "random",
 }
 
