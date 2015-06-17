@@ -6840,72 +6840,72 @@ tile{
 }
 
 teletransporter{
+  name = "to_E14",
   layer = 0,
   x = 1120,
   y = 768,
   width = 16,
   height = 304,
-  name = "to_E14",
   transition = "scrolling",
   destination_map = "15",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_E14_2",
   layer = 0,
   x = 1120,
   y = 248,
   width = 16,
   height = 480,
-  name = "to_E14_2",
   transition = "scrolling",
   destination_map = "15",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_E14_3",
   layer = 0,
   x = 1120,
   y = 40,
   width = 16,
-  height = 176,
-  name = "to_D14_3",
+  height = 32,
   transition = "scrolling",
   destination_map = "15",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_D13",
   layer = 0,
   x = 376,
   y = -16,
   width = 528,
   height = 16,
-  name = "to_D13",
   transition = "scrolling",
   destination_map = "24",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_D15",
   layer = 0,
   x = 312,
   y = 1120,
   width = 368,
   height = 16,
-  name = "to_D15",
   transition = "scrolling",
   destination_map = "20",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_C14",
   layer = 0,
   x = -16,
   y = 192,
   width = 16,
   height = 912,
-  name = "to_C14",
   transition = "scrolling",
   destination_map = "22",
   destination = "_side",
@@ -7341,10 +7341,10 @@ destructible{
 }
 
 chest{
+  name = "chest_heart_piece",
   layer = 0,
   x = 72,
   y = 709,
-  name = "chest_heart_piece",
   treasure_name = "heart_piece",
   treasure_savegame_variable = "b1703",
   sprite = "entities/chest",
@@ -7373,12 +7373,10 @@ destructible{
 }
 
 custom_entity{
+  name = "npc_pim",
   layer = 0,
   x = 620,
   y = 941,
-  width = 16,
-  height = 16,
-  name = "npc_pim",
   direction = 3,
   sprite = "npc/ordon_pim",
   model = "npc_pim",

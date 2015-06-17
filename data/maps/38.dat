@@ -7955,25 +7955,106 @@ tile{
   pattern = "40",
 }
 
+tile{
+  layer = 0,
+  x = 1080,
+  y = 424,
+  width = 16,
+  height = 16,
+  pattern = "2141",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "2141",
+}
+
+tile{
+  layer = 0,
+  x = 1096,
+  y = 632,
+  width = 16,
+  height = 16,
+  pattern = "2141",
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "2141",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 776,
+  width = 16,
+  height = 16,
+  pattern = "2141",
+}
+
+tile{
+  layer = 0,
+  x = 1096,
+  y = 840,
+  width = 16,
+  height = 16,
+  pattern = "2141",
+}
+
+tile{
+  layer = 0,
+  x = 1096,
+  y = 984,
+  width = 16,
+  height = 16,
+  pattern = "2141",
+}
+
+tile{
+  layer = 0,
+  x = 1096,
+  y = 1048,
+  width = 16,
+  height = 16,
+  pattern = "2141",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 152,
+  width = 16,
+  height = 16,
+  pattern = "2141",
+}
+
 teletransporter{
+  name = "to_G9",
   layer = 0,
   x = -16,
   y = 64,
   width = 16,
   height = 992,
-  name = "to_G9",
   transition = "scrolling",
   destination_map = "39",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_H10",
   layer = 0,
   x = 64,
   y = 1120,
   width = 1056,
   height = 16,
-  name = "to_H10",
   transition = "scrolling",
   destination_map = "37",
   destination = "_side",

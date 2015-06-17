@@ -202,7 +202,11 @@ function npc_impa:on_interaction()
   else
     game:start_dialog("impa.0.house", function()
       if game:has_item("ocarina") then
-        game:start_dialog("impa.1.house_2")
+        game:start_dialog("impa.1.house_2", function()
+          if not game:has_item("glove") then
+            game:start_dialog("impa.1.house_3")
+          end
+        end)
       else
         game:start_dialog("impa.0.house_2")
       end

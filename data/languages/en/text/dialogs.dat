@@ -5689,13 +5689,27 @@ permitted to return
 later. Head south-east
 of here to the Ruins
 and lift the small rock
-in front of the small
-entrance. When you've
-reached the end of the
-sewers, you'll be in the
-northern region of
-Hyrule.
+in front of the entrance.
+When you've reached the
+end of the sewers, you'll
+be in the northern region
+of Hyrule.
   ]]
+}
+
+dialog{
+  id = "impa.1.house_3",
+  text = [[
+You say you can't lift
+the rock? Well you must
+not have visited the
+great pyramid in the
+western desert! Go there
+and find all of the
+magical artifacts that
+lie inside.
+
+]]
 }
 
 dialog{
@@ -6678,7 +6692,13 @@ dialog{
   id = "ordona.1.pyramid",
   text = [[
 Wait, $v!
-You haven't gotten]]
+You haven't gotten all
+of the parts for the
+Gerudo yet! If you want
+to help the Tokay, you
+should go back to the
+pyramid now.
+  ]]
 }
 
 dialog{
@@ -7798,6 +7818,16 @@ it up!
 }
 
 dialog{
+  id = "shopkeep.1",
+  text = [[
+Don't have enough cash,
+eh? I heard there's a man
+in Castle Town who's
+running a
+]]
+}
+
+dialog{
   id = "sign.D15_blacksmith",
   skip = "current",
   text = [[
@@ -7832,6 +7862,14 @@ Field)
 South- Blacksmith Cave
 East- Lumberjack
   ]]
+}
+
+dialog{
+  id = "sign.E7_kakariko",
+  text = [[
+<- Kakariko City
+
+]]
 }
 
 dialog{
@@ -9361,14 +9399,33 @@ dialog{
   text = [[
 You say you don't know
 anyone named Isan?
-You should travel to
-the Ancient Library
-via the old sewers and
-speak with him - he is
+You should travel to the
+Ancient Library via the
+old sewers east of here
+and speak with him - he's
 the wisest man in all
 of Hyrule and can help
 you in your quest.
   ]]
+}
+
+dialog{
+  id = "zelda.0.goto_old_hyrule_glove",
+  text = [[
+You'll need something
+to lift the stone that's
+fallen in front of the
+entrance though.
+I've heard of a number
+of magical artifacts in
+a large pyramid in the
+desert - maybe something
+there can help you. Get
+there through Faron Woods
+and the Beach or via
+Kakariko City to the north.
+
+]]
 }
 
 dialog{

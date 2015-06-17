@@ -4616,160 +4616,169 @@ tile{
   pattern = "522",
 }
 
+tile{
+  layer = 0,
+  x = 952,
+  y = 552,
+  width = 16,
+  height = 16,
+  pattern = "1450",
+}
+
 dynamic_tile{
+  name = "night_entrance_6",
   layer = 0,
   x = 904,
   y = 176,
+  pattern = "2172",
   width = 16,
   height = 16,
-  name = "night_entrance_6",
-  pattern = "2172",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "night_entrance_5",
   layer = 0,
   x = 432,
   y = 240,
+  pattern = "2172",
   width = 16,
   height = 16,
-  name = "night_entrance_5",
-  pattern = "2172",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "night_entrance_4",
   layer = 0,
   x = 400,
   y = 504,
+  pattern = "2172",
   width = 16,
   height = 16,
-  name = "night_entrance_4",
-  pattern = "2172",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "night_entrance_3",
   layer = 0,
   x = 160,
   y = 472,
+  pattern = "2172",
   width = 16,
   height = 16,
-  name = "night_entrance_3",
-  pattern = "2172",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "night_entrance_2",
   layer = 0,
   x = 664,
   y = 408,
+  pattern = "2172",
   width = 16,
   height = 16,
-  name = "night_entrance_2",
-  pattern = "2172",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "night_entrance",
   layer = 0,
   x = 160,
   y = 144,
+  pattern = "2172",
   width = 16,
   height = 16,
-  name = "night_entrance",
-  pattern = "2172",
   enabled_at_start = false,
 }
 
 sensor{
+  name = "sensor_music_2",
   layer = 0,
   x = 160,
   y = 173,
   width = 32,
   height = 16,
-  name = "sensor_music_2",
 }
 
 sensor{
+  name = "sensor_music",
   layer = 0,
   x = 664,
   y = 437,
   width = 32,
   height = 16,
-  name = "sensor_music",
 }
 
 sensor{
+  name = "house_1_door_sensor",
   layer = 0,
   x = 400,
   y = 533,
   width = 32,
   height = 16,
-  name = "house_1_door_sensor",
 }
 
 sensor{
+  name = "house_4_door_sensor",
   layer = 0,
   x = 904,
   y = 205,
   width = 32,
   height = 16,
-  name = "house_4_door_sensor",
 }
 
 sensor{
+  name = "house_3_door_sensor",
   layer = 0,
   x = 432,
   y = 269,
   width = 32,
   height = 16,
-  name = "house_3_door_sensor",
 }
 
 teletransporter{
+  name = "to_E8",
   layer = 0,
   x = 40,
   y = 1120,
   width = 1024,
   height = 16,
-  name = "to_E8",
   transition = "scrolling",
   destination_map = "44",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_F7",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 1120,
-  name = "to_F7",
   transition = "scrolling",
   destination_map = "49",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_D7",
   layer = 0,
   x = -16,
   y = 0,
   width = 16,
   height = 896,
-  name = "to_D7",
   transition = "scrolling",
   destination_map = "51",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_E6",
   layer = 0,
   x = 0,
   y = -16,
   width = 1120,
   height = 16,
-  name = "to_E6",
   transition = "scrolling",
   destination_map = "63",
   destination = "_side",
@@ -5143,295 +5152,295 @@ destructible{
 }
 
 npc{
+  name = "sign_bomb_shop",
   layer = 0,
   x = 696,
   y = 429,
-  name = "sign_bomb_shop",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
   behavior = "dialog#sign.bomb_shop",
 }
 
 destination{
+  name = "from_shop",
   layer = 0,
   x = 168,
   y = 173,
-  name = "from_shop",
   direction = 3,
 }
 
 teletransporter{
+  name = "to_shop",
   layer = 0,
   x = 160,
   y = 136,
   width = 16,
   height = 16,
-  name = "to_shop",
   destination_map = "4",
   destination = "enter_shop",
 }
 
 destination{
+  name = "from_bomb",
   layer = 0,
   x = 672,
   y = 437,
-  name = "from_bomb",
   direction = 3,
 }
 
 teletransporter{
+  name = "to_bomb",
   layer = 0,
   x = 664,
   y = 400,
   width = 16,
   height = 16,
-  name = "to_bomb",
   destination_map = "4",
   destination = "enter_bomb",
 }
 
 destination{
+  name = "from_house_1",
   layer = 0,
   x = 408,
   y = 533,
-  name = "from_house_1",
   direction = 3,
 }
 
 teletransporter{
+  name = "to_house_1",
   layer = 0,
   x = 400,
   y = 496,
   width = 16,
   height = 16,
-  name = "to_house_1",
   destination_map = "4",
   destination = "enter_house_1",
 }
 
 destination{
+  name = "from_house_2",
   layer = 0,
   x = 168,
   y = 501,
-  name = "from_house_2",
   direction = 3,
 }
 
 teletransporter{
+  name = "to_house_2",
   layer = 0,
   x = 160,
   y = 464,
   width = 16,
   height = 16,
-  name = "to_house_2",
   destination_map = "4",
   destination = "enter_house_2",
 }
 
 destination{
+  name = "from_house_3",
   layer = 0,
   x = 440,
   y = 269,
-  name = "from_house_3",
   direction = 3,
 }
 
 destination{
+  name = "from_house_4",
   layer = 0,
   x = 912,
   y = 205,
-  name = "from_house_4",
   direction = 3,
 }
 
 sensor{
+  name = "sensor_enter_field",
   layer = 0,
   x = 248,
   y = 741,
   width = 64,
   height = 16,
-  name = "sensor_enter_field",
 }
 
 sensor{
+  name = "sensor_enter_kakariko",
   layer = 0,
   x = 248,
   y = 757,
   width = 64,
   height = 16,
-  name = "sensor_enter_kakariko",
 }
 
 teletransporter{
+  name = "to_house_3",
   layer = 0,
   x = 432,
   y = 232,
   width = 16,
   height = 16,
-  name = "to_house_3",
   destination_map = "4",
   destination = "enter_house_3",
 }
 
 teletransporter{
+  name = "to_house_4",
   layer = 0,
   x = 904,
   y = 168,
   width = 16,
   height = 16,
-  name = "to_house_4",
   destination_map = "4",
   destination = "enter_house_4",
 }
 
 npc{
+  name = "npc_ildus",
   layer = 0,
   x = 264,
   y = 301,
-  name = "npc_ildus",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/hylian_ildus",
 }
 
 enemy{
+  name = "chuchu_green",
   layer = 0,
   x = 864,
   y = 845,
-  name = "chuchu_green",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random",
 }
 
 dynamic_tile{
+  name = "house_4_door",
   layer = 0,
   x = 904,
   y = 176,
+  pattern = "1120",
   width = 16,
   height = 16,
-  name = "house_4_door",
-  pattern = "1120",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "house_3_door",
   layer = 0,
   x = 432,
   y = 240,
+  pattern = "1120",
   width = 16,
   height = 16,
-  name = "house_3_door",
-  pattern = "1120",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "house_1_door",
   layer = 0,
   x = 400,
   y = 504,
+  pattern = "1120",
   width = 16,
   height = 16,
-  name = "house_1_door",
-  pattern = "1120",
   enabled_at_start = true,
 }
 
 npc{
+  name = "mailbox_etnaya_2",
   layer = 0,
   x = 432,
   y = 525,
-  name = "mailbox_etnaya_2",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   behavior = "dialog#mailbox",
 }
 
 npc{
+  name = "mailbox_etnaya_3",
   layer = 0,
   x = 464,
   y = 261,
-  name = "mailbox_etnaya_3",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   behavior = "dialog#mailbox",
 }
 
 dynamic_tile{
+  name = "night_window",
   layer = 0,
   x = 120,
   y = 144,
+  pattern = "2173",
   width = 24,
   height = 16,
-  name = "night_window",
-  pattern = "2173",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "night_window_2",
   layer = 0,
   x = 120,
   y = 472,
+  pattern = "2173",
   width = 24,
   height = 16,
-  name = "night_window_2",
-  pattern = "2173",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "night_window_3",
   layer = 0,
   x = 208,
   y = 472,
+  pattern = "2173",
   width = 24,
   height = 16,
-  name = "night_window_3",
-  pattern = "2173",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "night_window_4",
   layer = 0,
   x = 368,
   y = 504,
+  pattern = "2173",
   width = 24,
   height = 16,
-  name = "night_window_4",
-  pattern = "2173",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "night_window_5",
   layer = 0,
   x = 400,
   y = 240,
+  pattern = "2173",
   width = 24,
   height = 16,
-  name = "night_window_5",
-  pattern = "2173",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "night_window_6",
   layer = 0,
   x = 872,
   y = 176,
+  pattern = "2173",
   width = 24,
   height = 16,
-  name = "night_window_6",
-  pattern = "2173",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "night_window_7",
   layer = 0,
   x = 632,
   y = 408,
+  pattern = "2173",
   width = 24,
   height = 16,
-  name = "night_window_7",
-  pattern = "2173",
   enabled_at_start = false,
 }
 
@@ -5442,6 +5451,17 @@ wall{
   width = 8,
   height = 16,
   stops_hero = true,
+}
+
+npc{
+  name = "sign_E7_kakariko",
+  layer = 0,
+  x = 960,
+  y = 565,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/sign",
+  behavior = "dialog#sign.E7_kakariko",
 }
 
 tile{

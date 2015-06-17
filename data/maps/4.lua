@@ -112,14 +112,19 @@ function npc_strap:on_interaction()
       game:set_value("b1612", true)
     end)
   else
-    game:start_dialog("shopkeep.0")
+    if math.random(4) == 1 then
+      -- Randomly mention the bigger wallet
+      game:start_dialog("shopkeep.1")
+    else
+      game:start_dialog("shopkeep.0")
+    end
   end
 end
 
 function npc_etnaya:on_interaction()
   local rand = math.random(4)
   if rand == 1 then
-  -- Randomly mention the show
+    -- Randomly mention the show
     game:start_dialog("etnaya.0.show")
   else
     game:start_dialog("etnaya.0")
