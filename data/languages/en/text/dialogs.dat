@@ -5381,13 +5381,15 @@ dialog{
   id = "hint_stone.pyramid.1",
   text = [[
 Eyes of statues hold
-secrets.]]
+secrets.
+  ]]
 }
 
 dialog{
   id = "hint_stone.pyramid.2",
   text = [[
-Gibdos burn easily.]]
+Gibdos burn easily.
+  ]]
 }
 
 dialog{
@@ -6670,6 +6672,13 @@ For now, return to your
 people. Fate will inform
 when you are needed...
   ]]
+}
+
+dialog{
+  id = "ordona.1.pyramid",
+  text = [[
+Wait, $v!
+You haven't gotten]]
 }
 
 dialog{

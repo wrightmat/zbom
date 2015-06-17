@@ -10989,6 +10989,96 @@ tile{
   pattern = "482",
 }
 
+tile{
+  layer = 0,
+  x = 608,
+  y = 1216,
+  width = 16,
+  height = 16,
+  pattern = "136",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 1232,
+  width = 16,
+  height = 16,
+  pattern = "136",
+}
+
+tile{
+  layer = 0,
+  x = 632,
+  y = 1248,
+  width = 16,
+  height = 16,
+  pattern = "136",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 1264,
+  width = 16,
+  height = 16,
+  pattern = "136",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 1272,
+  width = 16,
+  height = 16,
+  pattern = "136",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 1256,
+  width = 16,
+  height = 16,
+  pattern = "136",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 1224,
+  width = 16,
+  height = 16,
+  pattern = "136",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 1232,
+  width = 16,
+  height = 16,
+  pattern = "136",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 1272,
+  width = 16,
+  height = 16,
+  pattern = "136",
+}
+
+tile{
+  layer = 0,
+  x = 664,
+  y = 1216,
+  width = 16,
+  height = 16,
+  pattern = "136",
+}
+
 enemy{
   name = "gibdos_room3_1",
   layer = 0,
@@ -14473,6 +14563,106 @@ npc{
   behavior = "dialog#hint_stone.pyramid.2",
 }
 
+destructible{
+  layer = 0,
+  x = 632,
+  y = 1277,
+  treasure_name = "random",
+  sprite = "entities/stone_small_white",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 640,
+  y = 1261,
+  treasure_name = "random",
+  sprite = "entities/stone_small_white",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 624,
+  y = 1245,
+  treasure_name = "random",
+  sprite = "entities/stone_small_white",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 616,
+  y = 1229,
+  treasure_name = "random",
+  sprite = "entities/stone_small_white",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 648,
+  y = 1285,
+  treasure_name = "random",
+  sprite = "entities/stone_small_white",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 664,
+  y = 1269,
+  treasure_name = "random",
+  sprite = "entities/stone_small_white",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 680,
+  y = 1245,
+  treasure_name = "random",
+  sprite = "entities/stone_small_white",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 656,
+  y = 1237,
+  treasure_name = "random",
+  sprite = "entities/stone_small_white",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 680,
+  y = 1285,
+  treasure_name = "random",
+  sprite = "entities/stone_small_white",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 672,
+  y = 1229,
+  treasure_name = "random",
+  sprite = "entities/stone_small_white",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
 enemy{
   name = "keese_room18_3",
   layer = 1,
@@ -15619,15 +15809,7 @@ separator{
   x = 1208,
   y = 888,
   width = 16,
-  height = 272,
-}
-
-separator{
-  layer = 2,
-  x = 1208,
-  y = 1176,
-  width = 16,
-  height = 272,
+  height = 560,
 }
 
 separator{
@@ -15651,22 +15833,14 @@ separator{
   x = 408,
   y = 312,
   width = 16,
-  height = 272,
-}
-
-separator{
-  layer = 2,
-  x = 408,
-  y = 600,
-  width = 16,
-  height = 272,
+  height = 560,
 }
 
 separator{
   layer = 2,
   x = 8,
   y = 584,
-  width = 416,
+  width = 400,
   height = 16,
 }
 
@@ -15680,9 +15854,9 @@ separator{
 
 separator{
   layer = 2,
-  x = 808,
+  x = 1224,
   y = 1160,
-  width = 1216,
+  width = 800,
   height = 16,
 }
 

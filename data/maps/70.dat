@@ -3455,8 +3455,8 @@ destination{
 
 wall{
   layer = 0,
-  x = 304,
-  y = 240,
+  x = 360,
+  y = 256,
   width = 16,
   height = 8,
   stops_hero = true,
@@ -3469,8 +3469,8 @@ wall{
 npc{
   name = "torch_1",
   layer = 0,
-  x = 312,
-  y = 261,
+  x = 368,
+  y = 277,
   direction = 3,
   subtype = 0,
   sprite = "entities/torch_wood",
