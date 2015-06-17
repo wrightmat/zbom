@@ -8968,7 +8968,7 @@ tile{
   layer = 0,
   x = 64,
   y = 64,
-  width = 304,
+  width = 144,
   height = 32,
   pattern = "524",
 }
@@ -10962,90 +10962,117 @@ tile{
   pattern = "524",
 }
 
+tile{
+  layer = 0,
+  x = 224,
+  y = 64,
+  width = 144,
+  height = 32,
+  pattern = "524",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 40,
+  width = 16,
+  height = 16,
+  pattern = "482",
+}
+
+tile{
+  layer = 0,
+  x = 1520,
+  y = 1192,
+  width = 16,
+  height = 16,
+  pattern = "482",
+}
+
 enemy{
+  name = "gibdos_room3_1",
   layer = 0,
   x = 1724,
   y = 1533,
-  name = "gibdos_room3_1",
   direction = 3,
   breed = "gibdos",
   treasure_name = "random_mountain",
 }
 
 enemy{
+  name = "gibdos_room3_2",
   layer = 0,
   x = 1780,
   y = 1637,
-  name = "gibdos_room3_2",
   direction = 3,
   breed = "gibdos",
   treasure_name = "random_mountain",
 }
 
 enemy{
+  name = "gibdos_room3_3",
   layer = 0,
   x = 1900,
   y = 1557,
-  name = "gibdos_room3_3",
   direction = 3,
   breed = "gibdos",
   treasure_name = "random_mountain",
 }
 
 sensor{
+  name = "sensor_pyramid_enter",
   layer = 0,
   x = 984,
   y = 1581,
   width = 80,
   height = 16,
-  name = "sensor_pyramid_enter",
 }
 
 enemy{
+  name = "gibdos_room4_1",
   layer = 0,
   x = 1708,
   y = 1325,
-  name = "gibdos_room4_1",
   direction = 3,
   breed = "gibdos",
   treasure_name = "random_mountain",
 }
 
 enemy{
+  name = "gibdos_room4_2",
   layer = 0,
   x = 1748,
   y = 1245,
-  name = "gibdos_room4_2",
   direction = 3,
   breed = "gibdos",
   treasure_name = "random_mountain",
 }
 
 enemy{
+  name = "gibdos_room4_3",
   layer = 0,
   x = 1780,
   y = 1333,
-  name = "gibdos_room4_3",
   direction = 3,
   breed = "gibdos",
   treasure_name = "random_mountain",
 }
 
 enemy{
+  name = "gibdos_room4_4",
   layer = 0,
   x = 1844,
   y = 1253,
-  name = "gibdos_room4_4",
   direction = 3,
   breed = "gibdos",
   treasure_name = "random_mountain",
 }
 
 enemy{
+  name = "gibdos_room4_5",
   layer = 0,
   x = 1892,
   y = 1357,
-  name = "gibdos_room4_5",
   direction = 3,
   breed = "gibdos",
   treasure_name = "random_mountain",
@@ -11062,30 +11089,30 @@ destructible{
 }
 
 chest{
+  name = "chest_room5_prize",
   layer = 0,
   x = 1784,
   y = 717,
-  name = "chest_room5_prize",
   treasure_name = "plume",
   treasure_savegame_variable = "b1081",
   sprite = "entities/chest",
 }
 
 chest{
+  name = "chest_room6_map",
   layer = 0,
   x = 1912,
   y = 125,
-  name = "chest_room6_map",
   treasure_name = "map",
   treasure_savegame_variable = "b1075",
   sprite = "entities/chest",
 }
 
 destination{
+  name = "from_outside",
   layer = 0,
   x = 1016,
   y = 1717,
-  name = "from_outside",
   direction = 1,
   default = true,
 }
@@ -11616,10 +11643,10 @@ destructible{
 }
 
 door{
+  name = "door_miniboss_exit_2",
   layer = 0,
   x = 840,
   y = 1304,
-  name = "door_miniboss_exit_2",
   direction = 2,
   sprite = "entities/door_shutter",
   savegame_variable = "b1078",
@@ -11628,21 +11655,21 @@ door{
 }
 
 teletransporter{
+  name = "to_outside",
   layer = 0,
   x = 1008,
   y = 1720,
   width = 16,
   height = 16,
-  name = "to_outside",
   destination_map = "70",
   destination = "from_pyramid",
 }
 
 switch{
+  name = "switch_room4",
   layer = 0,
   x = 1696,
   y = 1040,
-  name = "switch_room4",
   subtype = "walkable",
   sprite = "entities/switch",
   sound = "switch",
@@ -11651,19 +11678,19 @@ switch{
 }
 
 door{
+  name = "door_shutter_room4_1",
   layer = 0,
   x = 1808,
   y = 904,
-  name = "door_shutter_room4_1",
   direction = 1,
   sprite = "entities/door_shutter",
 }
 
 switch{
+  name = "switch_room7_3",
   layer = 0,
   x = 1008,
   y = 208,
-  name = "switch_room7_3",
   subtype = "walkable",
   sprite = "entities/switch",
   sound = "switch",
@@ -11672,10 +11699,10 @@ switch{
 }
 
 switch{
+  name = "switch_room7_2",
   layer = 0,
   x = 912,
   y = 144,
-  name = "switch_room7_2",
   subtype = "walkable",
   sprite = "entities/switch",
   sound = "switch",
@@ -11684,10 +11711,10 @@ switch{
 }
 
 switch{
+  name = "switch_room7_1",
   layer = 0,
   x = 1104,
   y = 144,
-  name = "switch_room7_1",
   subtype = "walkable",
   sprite = "entities/switch",
   sound = "switch",
@@ -11696,10 +11723,10 @@ switch{
 }
 
 chest{
+  name = "chest_room7_part",
   layer = 0,
   x = 1016,
   y = 109,
-  name = "chest_room7_part",
   treasure_name = "airship_part",
   treasure_savegame_variable = "b1087",
   sprite = "entities/chest",
@@ -11709,7 +11736,6 @@ block{
   layer = 0,
   x = 1144,
   y = 93,
-  direction = -1,
   sprite = "entities/statue",
   pushable = true,
   pullable = false,
@@ -11720,7 +11746,6 @@ block{
   layer = 0,
   x = 888,
   y = 93,
-  direction = -1,
   sprite = "entities/statue",
   pushable = true,
   pullable = false,
@@ -11728,131 +11753,131 @@ block{
 }
 
 enemy{
+  name = "gibdos_room6_1",
   layer = 0,
   x = 1820,
   y = 309,
-  name = "gibdos_room6_1",
   direction = 3,
   breed = "gibdos",
   treasure_name = "random_mountain",
 }
 
 enemy{
+  name = "gibdos_room6_2",
   layer = 0,
   x = 1516,
   y = 165,
-  name = "gibdos_room6_2",
   direction = 3,
   breed = "gibdos",
   treasure_name = "random_mountain",
 }
 
 chest{
+  name = "chest_room8_key",
   layer = 0,
   x = 744,
   y = 93,
-  name = "chest_room8_key",
   treasure_name = "small_key",
   treasure_savegame_variable = "b1070",
   sprite = "entities/chest",
 }
 
 enemy{
+  name = "gibdos_room8_1",
   layer = 0,
   x = 572,
   y = 149,
-  name = "gibdos_room8_1",
   direction = 3,
   breed = "gibdos",
   treasure_name = "random_mountain",
 }
 
 enemy{
+  name = "gibdos_room8_2",
   layer = 0,
   x = 612,
   y = 221,
-  name = "gibdos_room8_2",
   direction = 3,
   breed = "gibdos",
   treasure_name = "random_mountain",
 }
 
 enemy{
+  name = "gibdos_room8_3",
   layer = 0,
   x = 652,
   y = 109,
-  name = "gibdos_room8_3",
   direction = 3,
   breed = "gibdos",
   treasure_name = "random_mountain",
 }
 
 enemy{
+  name = "gibdos_room8_4",
   layer = 0,
   x = 708,
   y = 165,
-  name = "gibdos_room8_4",
   direction = 3,
   breed = "gibdos",
   treasure_name = "random_mountain",
 }
 
 enemy{
+  name = "gibdos_room9_1",
   layer = 0,
   x = 164,
   y = 157,
-  name = "gibdos_room9_1",
   direction = 3,
   breed = "gibdos",
   treasure_name = "random_mountain",
 }
 
 enemy{
+  name = "gibdos_room9_2",
   layer = 0,
   x = 276,
   y = 173,
-  name = "gibdos_room9_2",
   direction = 3,
   breed = "gibdos",
   treasure_name = "random_mountain",
 }
 
 chest{
+  name = "chest_room9_key",
   layer = 0,
   x = 120,
   y = 125,
-  name = "chest_room9_key",
   treasure_name = "small_key",
   treasure_savegame_variable = "b1071",
   sprite = "entities/chest",
 }
 
 dynamic_tile{
+  name = "room11_bridge",
   layer = 0,
   x = 208,
   y = 768,
+  pattern = "45",
   width = 16,
   height = 32,
-  name = "room11_bridge",
-  pattern = "45",
   enabled_at_start = false,
 }
 
 chest{
+  name = "chest_room11_big",
   layer = 0,
   x = 344,
   y = 669,
-  name = "chest_room11_big",
   treasure_name = "big_key",
   treasure_savegame_variable = "b1073",
   sprite = "entities/chest",
 }
 
 switch{
+  name = "switch_room11_arrow_3",
   layer = 0,
   x = 40,
   y = 776,
-  name = "switch_room11_arrow_3",
   subtype = "arrow_target",
   sound = "switch",
   needs_block = false,
@@ -11860,10 +11885,10 @@ switch{
 }
 
 switch{
+  name = "switch_room11_arrow_4",
   layer = 0,
   x = 376,
   y = 776,
-  name = "switch_room11_arrow_4",
   subtype = "arrow_target",
   sound = "switch",
   needs_block = false,
@@ -11871,10 +11896,10 @@ switch{
 }
 
 switch{
+  name = "switch_room11_arrow_1",
   layer = 0,
   x = 120,
   y = 840,
-  name = "switch_room11_arrow_1",
   subtype = "arrow_target",
   sound = "switch",
   needs_block = false,
@@ -11882,10 +11907,10 @@ switch{
 }
 
 switch{
+  name = "switch_room11_arrow_2",
   layer = 0,
   x = 296,
   y = 840,
-  name = "switch_room11_arrow_2",
   subtype = "arrow_target",
   sound = "switch",
   needs_block = false,
@@ -12133,10 +12158,10 @@ destructible{
 }
 
 chest{
+  name = "chest_room12_item",
   layer = 0,
   x = 736,
   y = 1269,
-  name = "chest_room12_item",
   treasure_name = "glove",
   treasure_savegame_variable = "b1077",
   sprite = "entities/chest_big",
@@ -12146,78 +12171,78 @@ chest{
 }
 
 dynamic_tile{
+  name = "room9_pit",
   layer = 0,
   x = 192,
   y = 224,
+  pattern = "524",
   width = 48,
   height = 32,
-  name = "room9_pit",
-  pattern = "524",
   enabled_at_start = true,
 }
 
 door{
+  name = "door_shutter_room9_1",
   layer = 0,
   x = 208,
   y = 264,
-  name = "door_shutter_room9_1",
   direction = 3,
   sprite = "entities/door_shutter",
 }
 
 door{
+  name = "door_miniboss_enter_1",
   layer = 0,
   x = 208,
   y = 904,
-  name = "door_miniboss_enter_1",
   direction = 1,
   sprite = "entities/door_shutter",
 }
 
 door{
+  name = "door_miniboss_exit_1",
   layer = 0,
   x = 776,
   y = 1304,
-  name = "door_miniboss_exit_1",
   direction = 0,
   sprite = "entities/door_shutter",
 }
 
 chest{
+  name = "chest_room14_compass",
   layer = 0,
   x = 1560,
   y = 1229,
-  name = "chest_room14_compass",
   treasure_name = "compass",
   treasure_savegame_variable = "b1076",
   sprite = "entities/chest",
 }
 
 enemy{
+  name = "gibdos_room14_1",
   layer = 0,
   x = 1436,
   y = 1325,
-  name = "gibdos_room14_1",
   direction = 3,
   breed = "gibdos",
   treasure_name = "random_mountain",
 }
 
 enemy{
+  name = "gibdos_room14_2",
   layer = 0,
   x = 1524,
   y = 1293,
-  name = "gibdos_room14_2",
   direction = 3,
   breed = "gibdos",
   treasure_name = "random_mountain",
 }
 
 enemy{
+  name = "gibdos_room14_3",
   layer = 0,
   x = 1468,
   y = 1237,
-  name = "gibdos_room14_3",
   direction = 3,
   breed = "gibdos",
   treasure_name = "random_mountain",
@@ -12229,7 +12254,7 @@ crystal_block{
   y = 1040,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -12238,7 +12263,7 @@ crystal_block{
   y = 1040,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -12247,7 +12272,7 @@ crystal_block{
   y = 1040,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -12256,7 +12281,7 @@ crystal_block{
   y = 1024,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -12265,7 +12290,7 @@ crystal_block{
   y = 1024,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -12274,7 +12299,7 @@ crystal_block{
   y = 1024,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -12283,7 +12308,7 @@ crystal_block{
   y = 1008,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -12292,7 +12317,7 @@ crystal_block{
   y = 1008,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -12301,7 +12326,7 @@ crystal_block{
   y = 992,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -12310,7 +12335,7 @@ crystal_block{
   y = 992,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -12319,7 +12344,7 @@ crystal_block{
   y = 976,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -12328,7 +12353,7 @@ crystal_block{
   y = 960,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -12337,7 +12362,7 @@ crystal_block{
   y = 944,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -12346,7 +12371,7 @@ crystal_block{
   y = 992,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -12355,7 +12380,7 @@ crystal_block{
   y = 976,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -12364,7 +12389,7 @@ crystal_block{
   y = 960,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -12373,7 +12398,7 @@ crystal_block{
   y = 976,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -12382,7 +12407,7 @@ crystal_block{
   y = 976,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -12391,7 +12416,7 @@ crystal_block{
   y = 960,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -12400,7 +12425,7 @@ crystal_block{
   y = 960,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -12409,7 +12434,7 @@ crystal_block{
   y = 944,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -12418,7 +12443,7 @@ crystal_block{
   y = 944,
   width = 16,
   height = 16,
-  subtype = "0",
+  subtype = 0,
 }
 
 crystal_block{
@@ -12427,7 +12452,7 @@ crystal_block{
   y = 1040,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
@@ -12436,7 +12461,7 @@ crystal_block{
   y = 1040,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
@@ -12445,7 +12470,7 @@ crystal_block{
   y = 1024,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
@@ -12454,7 +12479,7 @@ crystal_block{
   y = 1024,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
@@ -12463,7 +12488,7 @@ crystal_block{
   y = 1008,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
@@ -12472,7 +12497,7 @@ crystal_block{
   y = 1008,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
@@ -12481,7 +12506,7 @@ crystal_block{
   y = 1008,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
@@ -12490,7 +12515,7 @@ crystal_block{
   y = 992,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
@@ -12499,7 +12524,7 @@ crystal_block{
   y = 992,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
@@ -12508,7 +12533,7 @@ crystal_block{
   y = 992,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
@@ -12517,7 +12542,7 @@ crystal_block{
   y = 992,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
@@ -12526,7 +12551,7 @@ crystal_block{
   y = 944,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
@@ -12535,7 +12560,7 @@ crystal_block{
   y = 992,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
@@ -12544,7 +12569,7 @@ crystal_block{
   y = 992,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
@@ -12553,7 +12578,7 @@ crystal_block{
   y = 976,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
@@ -12562,7 +12587,7 @@ crystal_block{
   y = 960,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 crystal_block{
@@ -12571,7 +12596,7 @@ crystal_block{
   y = 944,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 pickable{
@@ -12590,10 +12615,10 @@ pickable{
 }
 
 chest{
+  name = "chest_room16_part",
   layer = 0,
   x = 1544,
   y = 669,
-  name = "chest_room16_part",
   treasure_name = "airship_part",
   treasure_variant = 2,
   treasure_savegame_variable = "b1088",
@@ -12601,80 +12626,80 @@ chest{
 }
 
 enemy{
+  name = "gibdos_room16_1",
   layer = 0,
   x = 1332,
   y = 717,
-  name = "gibdos_room16_1",
   direction = 3,
   breed = "gibdos",
   treasure_name = "random_mountain",
 }
 
 enemy{
+  name = "gibdos_room16_2",
   layer = 0,
   x = 1348,
   y = 797,
-  name = "gibdos_room16_2",
   direction = 3,
   breed = "gibdos",
   treasure_name = "random_mountain",
 }
 
 enemy{
+  name = "gibdos_room16_3",
   layer = 0,
   x = 1388,
   y = 701,
-  name = "gibdos_room16_3",
   direction = 3,
   breed = "gibdos",
   treasure_name = "random_mountain",
 }
 
 enemy{
+  name = "gibdos_room16_4",
   layer = 0,
   x = 1444,
   y = 781,
-  name = "gibdos_room16_4",
   direction = 3,
   breed = "gibdos",
   treasure_name = "random_mountain",
 }
 
 enemy{
+  name = "gibdos_room16_5",
   layer = 0,
   x = 1476,
   y = 701,
-  name = "gibdos_room16_5",
   direction = 3,
   breed = "gibdos",
   treasure_name = "random_mountain",
 }
 
 enemy{
+  name = "gibdos_room16_6",
   layer = 0,
   x = 1532,
   y = 789,
-  name = "gibdos_room16_6",
   direction = 3,
   breed = "gibdos",
   treasure_name = "random_mountain",
 }
 
 enemy{
+  name = "gibdos_room16_7",
   layer = 0,
   x = 1540,
   y = 725,
-  name = "gibdos_room16_7",
   direction = 3,
   breed = "gibdos",
   treasure_name = "random_mountain",
 }
 
 switch{
+  name = "switch_room18_1",
   layer = 0,
   x = 544,
   y = 352,
-  name = "switch_room18_1",
   subtype = "walkable",
   sprite = "entities/switch",
   sound = "switch",
@@ -12686,7 +12711,6 @@ block{
   layer = 0,
   x = 536,
   y = 365,
-  direction = -1,
   sprite = "entities/statue",
   pushable = true,
   pullable = false,
@@ -12697,7 +12721,6 @@ block{
   layer = 0,
   x = 696,
   y = 365,
-  direction = -1,
   sprite = "entities/statue",
   pushable = true,
   pullable = false,
@@ -12708,7 +12731,6 @@ block{
   layer = 0,
   x = 536,
   y = 573,
-  direction = -1,
   sprite = "entities/statue",
   pushable = true,
   pullable = false,
@@ -12719,7 +12741,6 @@ block{
   layer = 0,
   x = 696,
   y = 573,
-  direction = -1,
   sprite = "entities/statue",
   pushable = true,
   pullable = false,
@@ -12730,7 +12751,6 @@ block{
   layer = 0,
   x = 616,
   y = 557,
-  direction = -1,
   sprite = "entities/statue",
   pushable = true,
   pullable = false,
@@ -12738,40 +12758,40 @@ block{
 }
 
 enemy{
+  name = "gibdos_room18_1",
   layer = 0,
   x = 1076,
   y = 389,
-  name = "gibdos_room18_1",
   direction = 3,
   breed = "gibdos",
   treasure_name = "random_mountain",
 }
 
 enemy{
+  name = "gibdos_room18_2",
   layer = 0,
   x = 1076,
   y = 525,
-  name = "gibdos_room18_2",
   direction = 3,
   breed = "gibdos",
   treasure_name = "random_mountain",
 }
 
 enemy{
+  name = "gibdos_room18_3",
   layer = 0,
   x = 980,
   y = 453,
-  name = "gibdos_room18_3",
   direction = 3,
   breed = "gibdos",
   treasure_name = "random_mountain",
 }
 
 enemy{
+  name = "gibdos_room18-1_1",
   layer = 0,
   x = 620,
   y = 365,
-  name = "gibdos_room18-1_1",
   direction = 3,
   breed = "gibdos",
   treasure_name = "random_mountain",
@@ -12781,7 +12801,6 @@ block{
   layer = 0,
   x = 616,
   y = 381,
-  direction = -1,
   sprite = "entities/statue",
   pushable = false,
   pullable = false,
@@ -12789,10 +12808,10 @@ block{
 }
 
 door{
+  name = "door_boss_1",
   layer = 0,
   x = 608,
   y = 840,
-  name = "door_boss_1",
   direction = 3,
   sprite = "entities/door_big_key",
   savegame_variable = "b1086",
@@ -12802,20 +12821,20 @@ door{
 }
 
 chest{
+  name = "chest_room17_key",
   layer = 0,
   x = 1352,
   y = 445,
-  name = "chest_room17_key",
   treasure_name = "small_key",
   treasure_savegame_variable = "b1072",
   sprite = "entities/chest",
 }
 
 chest{
+  name = "chest_room18_part",
   layer = 0,
   x = 616,
   y = 669,
-  name = "chest_room18_part",
   treasure_name = "airship_part",
   treasure_variant = 3,
   treasure_savegame_variable = "b1089",
@@ -12823,10 +12842,10 @@ chest{
 }
 
 door{
+  name = "door_boss_2",
   layer = 0,
   x = 608,
   y = 904,
-  name = "door_boss_2",
   direction = 1,
   sprite = "entities/door_shutter",
   savegame_variable = "b1086",
@@ -12836,38 +12855,38 @@ door{
 }
 
 door{
+  name = "door_boss_shutter_2",
   layer = 0,
   x = 1008,
   y = 840,
-  name = "door_boss_shutter_2",
   direction = 3,
   sprite = "entities/door_shutter",
 }
 
 door{
+  name = "door_boss_shutter_1",
   layer = 0,
   x = 1008,
   y = 904,
-  name = "door_boss_shutter_1",
   direction = 1,
   sprite = "entities/door_shutter",
 }
 
 chest{
+  name = "chest_book",
   layer = 0,
   x = 1016,
   y = 725,
-  name = "chest_book",
   treasure_name = "book_mudora",
   treasure_savegame_variable = "b1082",
   sprite = "entities/chest_big",
 }
 
 door{
+  name = "room18_key_block",
   layer = 0,
   x = 768,
   y = 368,
-  name = "room18_key_block",
   direction = 1,
   sprite = "entities/door_small_key_block",
   savegame_variable = "b1085",
@@ -12878,10 +12897,10 @@ door{
 }
 
 door{
+  name = "door_room14_key_2",
   layer = 0,
   x = 1240,
   y = 1304,
-  name = "door_room14_key_2",
   direction = 2,
   sprite = "entities/door_small_key",
   savegame_variable = "b1084",
@@ -12892,10 +12911,10 @@ door{
 }
 
 door{
+  name = "door_room14_key_1",
   layer = 0,
   x = 1176,
   y = 1304,
-  name = "door_room14_key_1",
   direction = 0,
   sprite = "entities/door_small_key",
   savegame_variable = "b1084",
@@ -12906,10 +12925,10 @@ door{
 }
 
 door{
+  name = "door_key_room10_1",
   layer = 0,
   x = 208,
   y = 552,
-  name = "door_key_room10_1",
   direction = 3,
   sprite = "entities/door_small_key",
   savegame_variable = "b1083",
@@ -12920,10 +12939,10 @@ door{
 }
 
 door{
+  name = "door_key_room10_2",
   layer = 0,
   x = 208,
   y = 616,
-  name = "door_key_room10_2",
   direction = 1,
   sprite = "entities/door_small_key",
   savegame_variable = "b1083",
@@ -12934,10 +12953,10 @@ door{
 }
 
 switch{
+  name = "switch_room18_2",
   layer = 0,
   x = 608,
   y = 448,
-  name = "switch_room18_2",
   subtype = "walkable",
   sprite = "entities/switch",
   sound = "switch",
@@ -12946,10 +12965,10 @@ switch{
 }
 
 switch{
+  name = "switch_room18_3",
   layer = 0,
   x = 672,
   y = 352,
-  name = "switch_room18_3",
   subtype = "walkable",
   sprite = "entities/switch",
   sound = "switch",
@@ -12958,10 +12977,10 @@ switch{
 }
 
 switch{
+  name = "switch_room18_4",
   layer = 0,
   x = 544,
   y = 560,
-  name = "switch_room18_4",
   subtype = "walkable",
   sprite = "entities/switch",
   sound = "switch",
@@ -12970,10 +12989,10 @@ switch{
 }
 
 switch{
+  name = "switch_room18_5",
   layer = 0,
   x = 672,
   y = 560,
-  name = "switch_room18_5",
   subtype = "walkable",
   sprite = "entities/switch",
   sound = "switch",
@@ -12982,46 +13001,46 @@ switch{
 }
 
 door{
+  name = "door_shutter_room4_2",
   layer = 0,
   x = 1808,
   y = 840,
-  name = "door_shutter_room4_2",
   direction = 3,
   sprite = "entities/door_shutter",
 }
 
 door{
+  name = "door_shutter_room9_2",
   layer = 0,
   x = 208,
   y = 328,
-  name = "door_shutter_room9_2",
   direction = 1,
   sprite = "entities/door_shutter",
 }
 
 door{
+  name = "door_miniboss_enter_2",
   layer = 0,
   x = 208,
   y = 840,
-  name = "door_miniboss_enter_2",
   direction = 3,
   sprite = "entities/door_shutter",
 }
 
 sensor{
+  name = "sensor_miniboss",
   layer = 0,
   x = 200,
   y = 933,
   width = 48,
   height = 16,
-  name = "sensor_miniboss",
 }
 
 enemy{
+  name = "miniboss_lanmola",
   layer = 0,
   x = 216,
   y = 1133,
-  name = "miniboss_lanmola",
   direction = 3,
   breed = "lanmola",
   rank = 1,
@@ -13030,10 +13049,10 @@ enemy{
 }
 
 enemy{
+  name = "boss_manhandla",
   layer = 0,
   x = 620,
   y = 1013,
-  name = "boss_manhandla",
   direction = 3,
   breed = "manhandla",
   rank = 2,
@@ -13042,19 +13061,19 @@ enemy{
 }
 
 sensor{
+  name = "sensor_boss",
   layer = 0,
   x = 600,
   y = 933,
   width = 48,
   height = 16,
-  name = "sensor_boss",
 }
 
 switch{
+  name = "switch_room9_arrow_1",
   layer = 0,
   x = 376,
   y = 104,
-  name = "switch_room9_arrow_1",
   subtype = "arrow_target",
   sound = "switch",
   needs_block = false,
@@ -13062,10 +13081,10 @@ switch{
 }
 
 switch{
+  name = "switch_room9_arrow_2",
   layer = 0,
   x = 376,
   y = 200,
-  name = "switch_room9_arrow_2",
   subtype = "arrow_target",
   sound = "switch",
   needs_block = false,
@@ -13073,16 +13092,16 @@ switch{
 }
 
 teletransporter{
+  name = "exit",
   layer = 0,
   x = 1120,
   y = 784,
   width = 16,
   height = 16,
-  name = "exit",
-  sprite = "entities/teletransporter",
-  sound = "warp",
   destination_map = "70",
   destination = "from_pyramid",
+  sprite = "entities/teletransporter",
+  sound = "warp",
 }
 
 destructible{
@@ -13302,8 +13321,8 @@ wall{
   y = 144,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13313,8 +13332,8 @@ wall{
   y = 144,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13324,8 +13343,8 @@ wall{
   y = 144,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13335,8 +13354,8 @@ wall{
   y = 144,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13346,8 +13365,8 @@ wall{
   y = 144,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13357,8 +13376,8 @@ wall{
   y = 144,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13368,8 +13387,8 @@ wall{
   y = 544,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13379,8 +13398,8 @@ wall{
   y = 632,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13390,8 +13409,8 @@ wall{
   y = 832,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13401,8 +13420,8 @@ wall{
   y = 920,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13412,8 +13431,8 @@ wall{
   y = 1120,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13423,8 +13442,8 @@ wall{
   y = 1208,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13434,8 +13453,8 @@ wall{
   y = 1408,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13445,8 +13464,8 @@ wall{
   y = 1496,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13456,8 +13475,8 @@ wall{
   y = 1584,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13467,8 +13486,8 @@ wall{
   y = 1584,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13478,8 +13497,8 @@ wall{
   y = 256,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13489,8 +13508,8 @@ wall{
   y = 344,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13500,8 +13519,8 @@ wall{
   y = 544,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13511,8 +13530,8 @@ wall{
   y = 632,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13522,8 +13541,8 @@ wall{
   y = 832,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13533,8 +13552,8 @@ wall{
   y = 920,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13544,8 +13563,8 @@ wall{
   y = 1208,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13555,8 +13574,8 @@ wall{
   y = 1120,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13566,8 +13585,8 @@ wall{
   y = 920,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13577,8 +13596,8 @@ wall{
   y = 832,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13588,8 +13607,8 @@ wall{
   y = 632,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13599,8 +13618,8 @@ wall{
   y = 544,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13610,8 +13629,8 @@ wall{
   y = 832,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13621,8 +13640,8 @@ wall{
   y = 920,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13632,8 +13651,8 @@ wall{
   y = 1296,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13643,8 +13662,8 @@ wall{
   y = 1296,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13654,8 +13673,8 @@ wall{
   y = 1296,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13665,8 +13684,8 @@ wall{
   y = 1296,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13676,8 +13695,8 @@ wall{
   y = 432,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13687,8 +13706,8 @@ wall{
   y = 432,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -13764,7 +13783,7 @@ crystal_block{
   y = 1008,
   width = 16,
   height = 16,
-  subtype = "1",
+  subtype = 1,
 }
 
 destructible{
@@ -13872,10 +13891,10 @@ enemy{
 }
 
 pickable{
+  name = "boss_heart",
   layer = 0,
   x = 1016,
   y = 989,
-  name = "boss_heart",
   treasure_name = "heart_container",
   treasure_savegame_variable = "b1074",
 }
@@ -14061,177 +14080,177 @@ destructible{
 }
 
 sensor{
+  name = "sensor_save_ground",
   layer = 0,
   x = 1400,
   y = 1117,
   width = 48,
   height = 16,
-  name = "sensor_save_ground",
 }
 
 sensor{
+  name = "sensor_reset_ground",
   layer = 0,
   x = 1400,
   y = 941,
   width = 48,
   height = 16,
-  name = "sensor_reset_ground",
 }
 
 stream{
+  name = "belt_1",
   layer = 0,
   x = 1368,
   y = 509,
-  name = "belt_1",
   direction = 6,
   sprite = "entities/conveyor_belt",
   speed = 32,
 }
 
 stream{
+  name = "belt_2",
   layer = 0,
   x = 1368,
   y = 493,
-  name = "belt_2",
   direction = 6,
   sprite = "entities/conveyor_belt",
   speed = 32,
 }
 
 stream{
-  layer = 0,
-  x = 1416,
-  y = 413,
   name = "belt_3",
+  layer = 0,
+  x = 1416,
+  y = 413,
   direction = 6,
   sprite = "entities/conveyor_belt",
   speed = 32,
 }
 
 stream{
+  name = "belt_4",
   layer = 0,
   x = 1416,
   y = 397,
-  name = "belt_4",
   direction = 6,
   sprite = "entities/conveyor_belt",
   speed = 32,
 }
 
 stream{
+  name = "belt_5",
   layer = 0,
   x = 1432,
   y = 397,
-  name = "belt_5",
   direction = 2,
   sprite = "entities/conveyor_belt",
   speed = 32,
 }
 
 stream{
+  name = "belt_6",
   layer = 0,
   x = 1432,
   y = 413,
-  name = "belt_6",
   direction = 2,
   sprite = "entities/conveyor_belt",
   speed = 32,
 }
 
 stream{
+  name = "belt_7",
   layer = 0,
   x = 1320,
   y = 461,
-  name = "belt_7",
   direction = 2,
   sprite = "entities/conveyor_belt",
   speed = 32,
 }
 
 stream{
+  name = "belt_8",
   layer = 0,
   x = 1304,
   y = 461,
-  name = "belt_8",
   direction = 6,
   sprite = "entities/conveyor_belt",
   speed = 32,
 }
 
 stream{
+  name = "belt_9",
   layer = 0,
   x = 936,
   y = 381,
-  name = "belt_9",
   direction = 6,
   sprite = "entities/conveyor_belt",
   speed = 40,
 }
 
 stream{
+  name = "belt_10",
   layer = 0,
   x = 840,
   y = 381,
-  name = "belt_10",
   direction = 6,
   sprite = "entities/conveyor_belt",
   speed = 40,
 }
 
 stream{
+  name = "belt_11",
   layer = 0,
   x = 920,
   y = 381,
-  name = "belt_11",
   direction = 2,
   sprite = "entities/conveyor_belt",
   speed = 40,
 }
 
 stream{
+  name = "belt_12",
   layer = 0,
   x = 824,
   y = 381,
-  name = "belt_12",
   direction = 2,
   sprite = "entities/conveyor_belt",
   speed = 40,
 }
 
 sensor{
+  name = "sensor_save_ground_2",
   layer = 0,
   x = 1400,
   y = 541,
   width = 48,
   height = 16,
-  name = "sensor_save_ground_2",
 }
 
 sensor{
+  name = "sensor_reset_ground_2",
   layer = 0,
   x = 1272,
   y = 445,
   width = 16,
   height = 48,
-  name = "sensor_reset_ground_2",
 }
 
 sensor{
+  name = "sensor_save_ground_3",
   layer = 0,
   x = 1160,
   y = 437,
   width = 16,
   height = 48,
-  name = "sensor_save_ground_3",
 }
 
 sensor{
+  name = "sensor_reset_ground_3",
   layer = 0,
   x = 760,
   y = 365,
   width = 16,
   height = 48,
-  name = "sensor_reset_ground_3",
 }
 
 destructible{
@@ -14434,65 +14453,85 @@ destructible{
   weight = 1,
 }
 
+npc{
+  name = "hint_stone_1",
+  layer = 0,
+  x = 216,
+  y = 53,
+  direction = 3,
+  subtype = 0,
+  behavior = "dialog#hint_stone.pyramid.1",
+}
+
+npc{
+  name = "hint_stone_2",
+  layer = 0,
+  x = 1528,
+  y = 1205,
+  direction = 3,
+  subtype = 0,
+  behavior = "dialog#hint_stone.pyramid.2",
+}
+
 enemy{
+  name = "keese_room18_3",
   layer = 1,
   x = 784,
   y = 517,
-  name = "keese_room18_3",
   direction = 3,
   breed = "keese",
 }
 
 enemy{
+  name = "keese_room18_1",
   layer = 1,
   x = 784,
   y = 437,
-  name = "keese_room18_1",
   direction = 3,
   breed = "keese",
 }
 
 enemy{
+  name = "keese_room18_2",
   layer = 1,
   x = 832,
   y = 453,
-  name = "keese_room18_2",
   direction = 3,
   breed = "keese",
 }
 
 enemy{
+  name = "keese_room17_4",
   layer = 1,
   x = 1312,
   y = 413,
-  name = "keese_room17_4",
   direction = 3,
   breed = "keese",
 }
 
 enemy{
+  name = "keese_room17_1",
   layer = 1,
   x = 1320,
   y = 501,
-  name = "keese_room17_1",
   direction = 3,
   breed = "keese",
 }
 
 enemy{
+  name = "keese_room17_2",
   layer = 1,
   x = 1520,
   y = 501,
-  name = "keese_room17_2",
   direction = 3,
   breed = "keese",
 }
 
 enemy{
+  name = "keese_room17_3",
   layer = 1,
   x = 1496,
   y = 405,
-  name = "keese_room17_3",
   direction = 3,
   breed = "keese",
 }
@@ -14579,37 +14618,37 @@ wall{
 }
 
 enemy{
+  name = "keese_room9_1",
   layer = 1,
   x = 88,
   y = 85,
-  name = "keese_room9_1",
   direction = 3,
   breed = "keese",
 }
 
 enemy{
+  name = "keese_room9_2",
   layer = 1,
   x = 88,
   y = 245,
-  name = "keese_room9_2",
   direction = 3,
   breed = "keese",
 }
 
 enemy{
+  name = "keese_room9_3",
   layer = 1,
   x = 344,
   y = 93,
-  name = "keese_room9_3",
   direction = 3,
   breed = "keese",
 }
 
 enemy{
+  name = "keese_room9_4",
   layer = 1,
   x = 344,
   y = 237,
-  name = "keese_room9_4",
   direction = 3,
   breed = "keese",
 }
@@ -14651,30 +14690,30 @@ wall{
 }
 
 enemy{
+  name = "room5_keese_1",
   layer = 1,
   x = 1672,
   y = 941,
-  name = "room5_keese_1",
   direction = 3,
   breed = "keese",
   treasure_name = "random",
 }
 
 enemy{
+  name = "room5_keese_3",
   layer = 1,
   x = 1688,
   y = 1077,
-  name = "room5_keese_3",
   direction = 3,
   breed = "keese",
   treasure_name = "random",
 }
 
 enemy{
+  name = "room5_keese_2",
   layer = 1,
   x = 1944,
   y = 933,
-  name = "room5_keese_2",
   direction = 3,
   breed = "keese",
   treasure_name = "random",

@@ -25,12 +25,6 @@ function map:on_started(destination)
   map:set_doors_open("door_miniboss_enter")
 end
 
-function map:on_obtained_treasure(treasure_item, treasure_variant, treasure_savegame_variable)
-  if treasure_name == book_mudora and treasure_variant == 2 then
-    game:set_dungeon_finished(3)
-  end
-end
-
 function sensor_pyramid_enter:on_activated()
   if not game:get_value("b1069") then
     game:start_dialog("pyramid_enter", function()
@@ -221,5 +215,11 @@ for enemy in map:get_entities("keese") do
       chest_room17_key:set_enabled(true)
       sol.audio.play_sound("chest_appears")
     end
+  end
+end
+
+function map:on_obtained_treasure(item, variant, savegame_variable)
+  if item:get_name() == "book_mudora" then
+    game:set_dungeon_finished(3)
   end
 end

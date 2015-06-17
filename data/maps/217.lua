@@ -8,3 +8,9 @@ local game = map:get_game()
 function map:on_started(destination)
 
 end
+
+function map:on_obtained_treasure(item, variant, savegame_variable)
+  if item:get_name() == "book_mudora" then
+    game:set_dungeon_finished(7)
+  end
+end

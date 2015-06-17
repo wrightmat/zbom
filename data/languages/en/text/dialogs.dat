@@ -5372,10 +5372,22 @@ dialog{
   id = "hint_stone.grove.2",
   skip = "current",
   text = [[
-Pierce the eyes with an
-arrow, but do so in
-order.
+Pierce the eyes in
+order to proceed.
   ]]
+}
+
+dialog{
+  id = "hint_stone.pyramid.1",
+  text = [[
+Eyes of statues hold
+secrets.]]
+}
+
+dialog{
+  id = "hint_stone.pyramid.2",
+  text = [[
+Gibdos burn easily.]]
 }
 
 dialog{

@@ -12,6 +12,7 @@ end
 function sensor_crab_1:on_activated()
   if not game:get_value("b1712") then
     huge_crab:set_enabled(true)
+    sol.audio.play_music("miniboss")
   end
 end
 function sensor_crab_2:on_activated()
@@ -22,4 +23,8 @@ function sensor_crab_3:on_activated()
 end
 function sensor_crab_4:on_activated()
   sensor_crab_1:on_activated()
+end
+
+function huge_crab:on_dead()
+  sol.audio.play_music("beach")
 end

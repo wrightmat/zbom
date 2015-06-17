@@ -29,12 +29,6 @@ function map:on_started(destination)
   if game:get_value("b1134") then game:set_dungeon_finished(5) end
 end
 
-function map:on_obtained_treasure(treasure_item, treasure_variant, treasure_savegame_variable)
-  if treasure_name == book_mudora and treasure_variant == 4 then
-    game:set_dungeon_finished(5)
-  end
-end
-
 function sensor_miniboss:on_activated()
   if miniboss_aquadraco ~= nil then
     map:close_doors("door_miniboss")

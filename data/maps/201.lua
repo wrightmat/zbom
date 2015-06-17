@@ -59,8 +59,8 @@ if boss_carock ~= nil then
  end
 end
 
-function map:on_obtained_treasure(treasure_item, treasure_variant, treasure_savegame_variable)
-  if treasure_name == book_mudora and treasure_variant == 6 then
+function map:on_obtained_treasure(item, variant, savegame_variable)
+  if item:get_name() == "book_mudora" then
     game:set_dungeon_finished(1)
   end
 end

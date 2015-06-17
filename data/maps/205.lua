@@ -62,13 +62,6 @@ function map:on_started(destination)
   end
 end
 
-function map:on_obtained_treasure(treasure_item, treasure_variant, treasure_savegame_variable)
-  if treasure_name == book_mudora and treasure_variant == 3 then
-    game:set_dungeon_finished(4)
-    game:set_value("i1029", 6)
-  end
-end
-
 function npc_dampeh:on_interaction()
   if game:get_value("i1029") == 5 then
     game:start_dialog("dampeh.1.mausoleum", function()
@@ -237,5 +230,12 @@ function game:on_map_changed(map)
       local y = 240 - hero_y + camera_y
       lantern_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
     end
+  end
+end
+
+function map:on_obtained_treasure(item, variant, savegame_variable)
+  if item:get_name() == "book_mudora" then
+    game:set_dungeon_finished(4)
+    game:set_value("i1029", 6)
   end
 end

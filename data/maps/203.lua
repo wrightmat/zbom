@@ -32,12 +32,6 @@ function map:on_started(destination)
   end
 end
 
-function map:on_obtained_treasure(treasure_item, treasure_variant, treasure_savegame_variable)
-  if treasure_name == book_mudora and treasure_variant == 1 then
-    game:set_dungeon_finished(2) --first dungeon is actually the sewers
-  end
-end
-
 function sensor_open_room1:on_activated()
   -- open only if big key in inventory (helps prevent running around)
   if game:get_value("b1053") then map:open_doors("room1_shutter") end
@@ -263,4 +257,10 @@ function torch_moth:on_interaction_item(lamp)
   sol.timer.start(10000, function()
     torch_moth:get_sprite():set_animation("unlit")
   end)
+end
+
+function map:on_obtained_treasure(item, variant, savegame_variable)
+  if item:get_name() == "book_mudora" then
+    game:set_dungeon_finished(2)
+  end
 end
