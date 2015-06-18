@@ -21,7 +21,14 @@ See our website http://sites.google.com/site/zeldabom for more information.
 
 Enjoy!
 
-VERSION 0.42 release 15-MAY-21:
+VERSION 0.43 released 15-JUN-17:
+  - added NPC dialogs, signs and other markers to assist player
+  - additional enemy types and overworld bosses
+  - additional warp points, heart pieces, and trading sequence
+  - mapping of north hyrule and wind tower
+  - bug fixes
+
+VERSION 0.42 released 15-MAY-21:
   - migration to Solarus v1.4.2
   - big fixes to the engine
 

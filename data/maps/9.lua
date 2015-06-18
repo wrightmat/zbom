@@ -108,27 +108,6 @@ function npc_rudy:on_interaction()
   end
 end
 
-function npc_moblin:on_interaction()
-  if game:get_value("b2026") then
-    game:start_dialog("moblin.0.trading", function(answer)
-      if answer == 1 then
-        -- give it the meat, get the dog food
-        game:start_dialog("moblin.0.trading_yes", function()
-          hero:start_treasure("trading", 7)
-          game:set_value("b2027", true)
-          game:set_value("b2026", false)
-	  blocker:set_enabled(false)
-        end)
-      else
-        -- don't give it the meat
-        game:start_dialog("moblin.0.trading_no")
-      end
-    end)
-  else
-    game:start_dialog("moblin.0.cave_ordeals")
-  end
-end
-
 function sensor_leaving:on_activated()
   if game:get_value("b1851") and game:get_ability("sword") == 0 then
     game:start_dialog("rudy.5.sword_leaving", function()

@@ -26,6 +26,8 @@ function sensor_lanmola_4:on_activated()
   sensor_lanmola_1:on_activated()
 end
 
-function miniboss_lanmola:on_dead()
-  sol.audio.play_music("gerudo")
+if miniboss_lanmola ~= nil then
+  function miniboss_lanmola:on_dead()
+    sol.audio.play_music("gerudo")
+  end
 end

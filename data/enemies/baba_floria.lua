@@ -42,18 +42,20 @@ function enemy:check_hero()
   local esx, esy = self:get_size()
   if not in_ground then
     sol.timer.start(self, 2000, function()
-      self:get_sprite():set_animation("walking")
+      if enemy ~= nil then self:get_sprite():set_animation("walking") end
     end)
   end
-  if hy < (ey-esy) then
-    self:get_sprite():set_direction(1) --up
-  elseif hy > (ey+esy) then
-    self:get_sprite():set_direction(3) --down
-  else
-    if hx < ex then
-      self:get_sprite():set_direction(2) --left
+  if enemy ~= nil then
+    if hy < (ey-esy) then
+      self:get_sprite():set_direction(1) --up
+    elseif hy > (ey+esy) then
+      self:get_sprite():set_direction(3) --down
     else
-      self:get_sprite():set_direction(0) --right
+      if hx < ex then
+        self:get_sprite():set_direction(2) --left
+      else
+        self:get_sprite():set_direction(0) --right
+      end
     end
   end
 

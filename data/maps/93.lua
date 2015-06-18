@@ -2,7 +2,7 @@ local map = ...
 local game = map:get_game()
 
 --------------------------------------------
--- Outside World C2 (Rito Town) - Trading --
+-- Outside World C2 (Ruto Town) - Trading --
 --------------------------------------------
 
 function map:on_started(destination)
