@@ -5086,15 +5086,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1184,
-  y = 856,
-  width = 32,
-  height = 32,
-  pattern = "441",
-}
-
-tile{
-  layer = 0,
   x = 992,
   y = 944,
   width = 32,
@@ -7629,17 +7620,6 @@ dynamic_tile{
   layer = 0,
   x = 1184,
   y = 488,
-  pattern = "709",
-  width = 32,
-  height = 32,
-  enabled_at_start = false,
-}
-
-dynamic_tile{
-  name = "night_window_11",
-  layer = 0,
-  x = 1184,
-  y = 856,
   pattern = "709",
   width = 32,
   height = 32,

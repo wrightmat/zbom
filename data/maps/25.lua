@@ -6,11 +6,11 @@ local game = map:get_game()
 -------------------------------------------------------------------------------
 
 function map:on_started(destination)
-  if not game:get_value("b1712") then huge_crab:set_enabled(false) end
+  if huge_crab ~= nil then huge_crab:set_enabled(false) end
 end
 
 function sensor_crab_1:on_activated()
-  if not game:get_value("b1712") then
+  if huge_crab ~= nil then
     huge_crab:set_enabled(true)
     sol.audio.play_music("miniboss")
   end

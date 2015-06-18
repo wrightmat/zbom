@@ -3220,7 +3220,7 @@ enemy{
   y = 469,
   direction = 0,
   breed = "lynel",
-  treasure_name = "random",
+  treasure_name = "amber",
 }
 
 enemy{
@@ -3230,7 +3230,7 @@ enemy{
   y = 621,
   direction = 0,
   breed = "lynel",
-  treasure_name = "random",
+  treasure_name = "amber",
 }
 
 enemy{
@@ -3240,7 +3240,7 @@ enemy{
   y = 501,
   direction = 0,
   breed = "lynel",
-  treasure_name = "random",
+  treasure_name = "amber",
 }
 
 enemy{
@@ -3250,7 +3250,7 @@ enemy{
   y = 741,
   direction = 0,
   breed = "lynel",
-  treasure_name = "random",
+  treasure_name = "amber",
 }
 
 enemy{
@@ -3260,17 +3260,17 @@ enemy{
   y = 749,
   direction = 0,
   breed = "lynel",
-  treasure_name = "random",
+  treasure_name = "amber",
 }
 
 enemy{
   name = "lynel_6",
   layer = 0,
-  x = 608,
-  y = 461,
+  x = 640,
+  y = 453,
   direction = 0,
   breed = "lynel",
-  treasure_name = "random",
+  treasure_name = "amber",
 }
 
 chest{
@@ -3299,6 +3299,24 @@ destructible{
   treasure_name = "random_mountain",
   sprite = "entities/pot",
   destruction_sound = "stone",
+}
+
+wall{
+  layer = 0,
+  x = 592,
+  y = 240,
+  width = 16,
+  height = 624,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1072,
+  y = 328,
+  width = 16,
+  height = 536,
+  stops_enemies = true,
 }
 
 tile{

@@ -5,8 +5,9 @@ local game = map:get_game()
 -- Castle Town houses (game houses, castle inside, etc.) --
 -----------------------------------------------------------
 
-if game:get_value("i1924")==nil then game:set_value("i1924", 0) end --Juba
+if game:get_value("i1026")==nil then game:set_value("i1026", 0) end
 if game:get_value("i1032")==nil then game:set_value("i1032", 0) end
+if game:get_value("i1924")==nil then game:set_value("i1924", 0) end --Juba
 
 local playing_chests = false
 local playing_slots = false
@@ -183,9 +184,9 @@ function sensor_sleep:on_activated()
     if answer == 1 then
       hero:teleport("2", "house_bed", "fade")
       game:set_life(game:get_max_life())
+      game:set_stamina(game:get_max_stamina())
       if game:get_value("i1026") < 1 then game:set_max_stamina(game:get_max_stamina()-20) end
       if game:get_value("i1026") > 3 then game:set_max_stamina(game:get_max_stamina()+20) end
-      game:set_stamina(game:get_max_stamina())
       game:set_value("i1026", 0)
       game:switch_time_of_day()
       if game:get_time_of_day() == "day" then

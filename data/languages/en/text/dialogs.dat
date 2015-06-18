@@ -5005,6 +5005,29 @@ Please help me, hero!
 }
 
 dialog{
+  id = "great_fairy.0.lake",
+  skip = "current",
+  text = [[
+Oh, great hero!
+You've come to my
+rescue! $0
+Wait... you don't
+know what I'm
+referring to?
+Surely you've seen the
+troubled state my lake
+is in!
+If you can find a large
+amount of treasure
+known as Goddess Plume,
+the trouble should be
+able to be lifted.
+Please help me, hero!
+  
+]]
+}
+
+dialog{
   id = "great_fairy.0.mountain",
   skip = "current",
   text = [[
@@ -5379,6 +5402,7 @@ order to proceed.
 
 dialog{
   id = "hint_stone.pyramid.1",
+  skip = "current",
   text = [[
 Eyes of statues hold
 secrets.
@@ -5387,6 +5411,7 @@ secrets.
 
 dialog{
   id = "hint_stone.pyramid.2",
+  skip = "current",
   text = [[
 Gibdos burn easily.
   ]]
@@ -5699,6 +5724,7 @@ of Hyrule.
 
 dialog{
   id = "impa.1.house_3",
+  skip = "current",
   text = [[
 You say you can't lift
 the rock? Well you must
@@ -7866,6 +7892,7 @@ East- Lumberjack
 
 dialog{
   id = "sign.E7_kakariko",
+  skip = "current",
   text = [[
 <- Kakariko City
 
@@ -7977,6 +8004,7 @@ dialog{
 
 dialog{
   id = "sign.calatia",
+  skip = "current",
   text = [[
 Passage to Calatia closed
 by order of the Queen.
@@ -8902,6 +8930,17 @@ ask our mayor!
 }
 
 dialog{
+  id = "turt.0.behind_counter",
+  skip = "current",
+  text = [[
+Hey... wait...
+How'd you get behind
+the counter?
+  
+]]
+}
+
+dialog{
   id = "turt.0.inn",
   question = "1",
   skip = "current",
@@ -9411,6 +9450,7 @@ you in your quest.
 
 dialog{
   id = "zelda.0.goto_old_hyrule_glove",
+  skip = "current",
   text = [[
 You'll need something
 to lift the stone that's

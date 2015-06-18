@@ -158,6 +158,16 @@ function npc_deku_3:on_interaction()
   end
 end
 
+function npc_deku_warning:on_interaction()
+  if not game:has_item("bow") then
+    sol.audio.play_sound("deku")
+    game:start_dialog("deku.0.warning")
+  else
+    sol.audio.play_sound("deku")
+    game:start_dialog("deku.4.faron.2")
+  end
+end
+
 function npc_tokay_1:on_interaction()
   sol.audio.play_sound("tokay")
   game:start_dialog("tokay1.1.faron")

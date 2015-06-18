@@ -8,6 +8,7 @@ function enemy:go_random()
   m:set_speed(40)
   m:start(self)
   going_hero = false
+  self:set_attack_consequence("fire", "protected")
 end
 
 function enemy:go_hero()

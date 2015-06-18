@@ -66,6 +66,21 @@ function npc_rudy:on_interaction()
           game:get_item("bottle_1"):set_variant(1)
           game:set_value("i1601", 2)
         end)
+      elseif game:get_item("bottle_2"):get_variant() == 2 then --bottle has water
+        game:start_dialog("rudy.3.cave", function()
+          game:get_item("bottle_2"):set_variant(1)
+          game:set_value("i1601", 2)
+        end)
+      elseif game:get_item("bottle_3"):get_variant() == 2 then --bottle has water
+        game:start_dialog("rudy.3.cave", function()
+          game:get_item("bottle_3"):set_variant(1)
+          game:set_value("i1601", 2)
+        end)
+      elseif game:get_item("bottle_4"):get_variant() == 2 then --bottle has water
+        game:start_dialog("rudy.3.cave", function()
+          game:get_item("bottle_4"):set_variant(1)
+          game:set_value("i1601", 2)
+        end)
       else
         game:start_dialog("rudy.2.cave", function()
           if not game:has_item("bottle_1") then

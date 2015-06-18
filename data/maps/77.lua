@@ -6,13 +6,13 @@ local game = map:get_game()
 --------------------------------------------------------------------------
 
 function map:on_started(destination)
-  if not game:get_value("b1719") then lanmola:set_enabled(false) end
+  if miniboss_lanmola ~= nil then miniboss_lanmola:set_enabled(false) end
 end
 
 function sensor_lanmola_1:on_activated()
   -- this boss only activated if Pyramid is completed
-  if not game:get_value("b1719") and game:get_value("b1082") then
-    lanmola:set_enabled(true)
+  if minboss_lanmola ~= nil and game:get_value("b1082") then
+    miniboss_lanmola:set_enabled(true)
     sol.audio.play_music("miniboss")
   end
 end
@@ -26,6 +26,6 @@ function sensor_lanmola_4:on_activated()
   sensor_lanmola_1:on_activated()
 end
 
-function lanmola:on_dead()
+function miniboss_lanmola:on_dead()
   sol.audio.play_music("gerudo")
 end

@@ -21,7 +21,7 @@ function enemy:on_update()
     self:set_position(bx+21, by)
     if self:get_sprite():get_animation() == "walking" then self:get_sprite():set_direction(0) end
   elseif self.color == "purple" then
-    self:set_position(bx, by-21)
+    self:set_position(bx, by-24)
     if self:get_sprite():get_animation() == "walking" then self:get_sprite():set_direction(1) end
   elseif self.color == "green" then
     self:set_position(bx-21, by)

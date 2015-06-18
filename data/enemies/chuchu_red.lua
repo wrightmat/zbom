@@ -9,6 +9,7 @@ function enemy:on_created()
   self:create_sprite("enemies/chuchu_red")
   self:set_size(16, 16)
   self:set_origin(8, 13)
+  self:set_attack_consequence("fire", "protected")
 end
 
 function enemy:on_restarted()

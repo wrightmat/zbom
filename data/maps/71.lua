@@ -95,7 +95,6 @@ function thief:on_interaction()
 end
 
 function map:on_update()
-if caught then print("thief CAUGHT") else print("thief NOT caught") end
   if game:get_value("b1612") then
     if map:get_hero():get_distance(thief) <= 50 and not caught then
       thief:on_interaction()

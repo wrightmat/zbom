@@ -220,9 +220,9 @@ function sensor_sleep:on_activated()
     if answer == 1 then
       hero:teleport("1", "house_bed", "fade")
       game:set_life(game:get_max_life())
+      game:set_stamina(game:get_max_stamina())
       if game:get_value("i1026") < 1 then game:set_max_stamina(game:get_max_stamina()-20) end
       if game:get_value("i1026") > 3 then game:set_max_stamina(game:get_max_stamina()+20) end
-      game:set_stamina(game:get_max_stamina())
       game:set_value("i1026", 0)
       game:switch_time_of_day()
       if game:get_time_of_day() == "day" then

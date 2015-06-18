@@ -5,6 +5,7 @@ local game = map:get_game()
 -- Kakariko City houses  --
 ---------------------------
 
+if game:get_value("i1026")==nil then game:set_value("i1026", 0) end
 if game:get_value("i1806")==nil then game:set_value("i1806", 0) end
 if game:get_value("i1830")==nil then game:set_value("i1830", 0) end
 if game:get_value("i1918")==nil then game:set_value("i1918", 0) end
@@ -206,15 +207,20 @@ function npc_garroth_sensor:on_interaction()
   end
 end
 
+
+function npc_turt:on_interaction()
+  game:start_dialog("turt.0.behind_counter")
+end
+
 function npc_turt_sensor:on_interaction()
   game:start_dialog("turt.0.inn", function(answer)
     if answer == 1 then
       game:remove_money(20)
       hero:teleport("4", "inn_bed", "fade")
       game:set_life(game:get_max_life())
+      game:set_stamina(game:get_max_stamina())
       if game:get_value("i1026") < 2 then game:set_max_stamina(game:get_max_stamina()-20) end
       if game:get_value("i1026") > 5 then game:set_max_stamina(game:get_max_stamina()+20) end
-      game:set_stamina(game:get_max_stamina())
       game:set_value("i1026", 0)
       game:switch_time_of_day()
       if game:get_time_of_day() == "day" then

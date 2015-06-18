@@ -10,6 +10,7 @@ function enemy:on_created()
   self:set_origin(16, 27)
   self:set_attack_consequence("boomerang", "protected")
   self:set_attack_consequence("arrow", "protected")
+  self:set_attack_consequence("fire", "protected")
 end
 
 function enemy:on_restarted()

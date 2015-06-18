@@ -5,7 +5,7 @@ properties{
   height = 1120,
   world = "outside_world",
   tileset = "2",
-  music = "gerudo",
+  music = "same",
 }
 
 tile{
@@ -20,7 +20,7 @@ tile{
 tile{
   layer = 0,
   x = 984,
-  y = 792,
+  y = 784,
   width = 144,
   height = 80,
   pattern = "49",
@@ -244,8 +244,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 976,
-  y = 776,
+  x = 992,
+  y = 792,
   width = 40,
   height = 16,
   pattern = "275",
@@ -775,8 +775,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 992,
-  y = 792,
+  x = 976,
+  y = 776,
   width = 40,
   height = 16,
   pattern = "275",
@@ -5688,7 +5688,8 @@ destructible{
   layer = 0,
   x = 1040,
   y = 269,
-  treasure_name = "random",
+  treasure_name = "arrow",
+  treasure_variant = 2,
   sprite = "entities/bush",
   destruction_sound = "bush",
   weight = 1,
@@ -5721,7 +5722,8 @@ destructible{
   layer = 0,
   x = 992,
   y = 269,
-  treasure_name = "random",
+  treasure_name = "arrow",
+  treasure_variant = 2,
   sprite = "entities/bush",
   destruction_sound = "bush",
   weight = 1,

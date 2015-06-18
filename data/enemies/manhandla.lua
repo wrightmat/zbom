@@ -27,7 +27,7 @@ function enemy:create_head(color)
     head:get_sprite():set_direction(0)
   elseif color == "purple" then
     -- purple on top
-    head = self:create_enemy({name="manhandla_head_purple", breed="manhandla_head", x=6, y=-16}) -- y=-12
+    head = self:create_enemy({name="manhandla_head_purple", breed="manhandla_head", x=6, y=-24}) -- y=-12
     head.color = "purple"
     head:add_life(3)
     head:get_sprite():set_direction(1)
