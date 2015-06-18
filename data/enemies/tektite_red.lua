@@ -11,6 +11,7 @@ function enemy:on_created()
   self:set_origin(8, 13)
   self:set_pushed_back_when_hurt(true)
   self:set_push_hero_on_sword(false)
+  self:set_attack_consequence("fire", "protected")
 end
 
 function enemy:on_movement_changed(movement)

@@ -878,7 +878,7 @@ will this be useful?
 
 dialog{
   id = "_item_description.trading.11",
-  icon = "39",
+  icon = "50",
   skip = "current",
   text = [[
 It's a frozen fish.
@@ -889,7 +889,7 @@ trading up...
 
 dialog{
   id = "_item_description.trading.12",
-  icon = "38",
+  icon = "51",
   skip = "current",
   text = [[
 It's the most famous
@@ -9560,6 +9560,21 @@ the Sanctum with you!
 }
 
 dialog{
+  id = "zora.0.domain",
+  skip = "current",
+  text = [[
+This is Zora's Domain.
+Normally I would say that
+a non-Zora is not welcome
+here, but clearly you've
+been allowed to use our
+flippers. I guess you
+must be okay.
+
+]]
+}
+
+dialog{
   id = "zora.0.lakebed",
   skip = "current",
   text = [[
@@ -9571,6 +9586,49 @@ that you say about
 clearing it of evil?
 
 Okay, thanks, whatever.
+  ]]
+}
+
+dialog{
+  id = "zora.0.trading",
+  question = "1",
+  skip = "current",
+  text = [[
+Is that a rare Goron
+vase?$0
+Non-Gorons are never
+allowed to own those, but
+I've wanted one for so
+long! Will you please
+give it to me?
+Yes
+No
+  ]]
+}
+
+dialog{
+  id = "zora.0.trading_no",
+  skip = "current",
+  text = [[
+The mountain's right
+over there anyway...$0
+I'll just go get my own...
+  ]]
+}
+
+dialog{
+  id = "zora.0.trading_yes",
+  skip = "current",
+  text = [[
+Great, thanks! I'm going
+to display this proudly
+in my house!
+Where are our houses, you
+ask? Well that's none of
+your concern.
+If you stop thinking about
+it, I'll give you one of
+my scales...
   ]]
 }
 
@@ -9597,6 +9655,54 @@ want.
 Deal?
 Yes
 No
+  ]]
+}
+
+dialog{
+  id = "zora.1.ruto",
+  question = "1",
+  skip = "current",
+  text = [[
+It's not a well known
+fact, but this is where
+we Zora actually live.
+Our domain is more where
+we hunt and play. We keep
+it a secret because if
+everyone knew, we might
+get attacked at home!
+  ]]
+}
+
+
+dialog{
+  id = "zora.1.trading",
+  question = "1",
+  skip = "current",
+  text = [[
+What? How did you get
+a Zora's scale?!$0
+You can't have that.
+I must insist that you
+give it to me right
+this instant.
+  ]]
+}
+
+dialog{
+  id = "zora.1.trading_yes",
+  skip = "current",
+  text = [[
+I'm not completely unfair,
+I won't leave you empty
+handed. In exchange for
+your quick obedience,
+I'll give you this frozen
+fish I found at the bottom
+of our domain. Don't
+wander around with it
+too long though, or it'll
+thaw and be really gross.
   ]]
 }
 

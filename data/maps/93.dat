@@ -2061,6 +2061,16 @@ jumper{
   jump_length = 72,
 }
 
+npc{
+  name = "npc_zora_trading",
+  layer = 0,
+  x = 376,
+  y = 509,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/zora_juba",
+}
+
 tile{
   layer = 1,
   x = 72,

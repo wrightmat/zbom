@@ -6746,3 +6746,43 @@ enemy{
   treasure_name = "random",
 }
 
+npc{
+  name = "npc_zora_1",
+  layer = 0,
+  x = 472,
+  y = 981,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/zora",
+}
+
+npc{
+  name = "npc_zora_trading",
+  layer = 0,
+  x = 288,
+  y = 637,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/zora",
+}
+
+npc{
+  name = "npc_zora_2",
+  layer = 0,
+  x = 944,
+  y = 733,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/zora",
+}
+
+npc{
+  name = "npc_zora_3",
+  layer = 0,
+  x = 712,
+  y = 149,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/zora",
+}
+

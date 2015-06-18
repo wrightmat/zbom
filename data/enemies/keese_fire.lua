@@ -17,6 +17,7 @@ function enemy:on_created()
   self:set_size(16, 16)
   self:set_origin(8, 13)
   self:get_sprite():set_animation("stopped")
+  self:set_attack_consequence("fire", "protected")
 end
 
 function enemy:on_update()
