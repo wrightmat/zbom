@@ -3888,7 +3888,7 @@ teletransporter{
   x = 1120,
   y = 800,
   width = 16,
-  height = 320,
+  height = 64,
   transition = "scrolling",
   destination_map = "33",
   destination = "_side",
@@ -4897,6 +4897,30 @@ destination{
   x = 344,
   y = 117,
   direction = 3,
+}
+
+teletransporter{
+  name = "to_G11_2",
+  layer = 0,
+  x = 1120,
+  y = 920,
+  width = 16,
+  height = 64,
+  transition = "scrolling",
+  destination_map = "33",
+  destination = "_side",
+}
+
+teletransporter{
+  name = "to_G11_5",
+  layer = 0,
+  x = 1120,
+  y = 1040,
+  width = 16,
+  height = 80,
+  transition = "scrolling",
+  destination_map = "33",
+  destination = "_side",
 }
 
 tile{

@@ -13,6 +13,7 @@ function enemy:on_created()
 end
 
 function geyser_start()
+  sol.audio.play_sound("wind")
   if enemy:get_sprite() ~= nil then
     enemy:get_sprite():set_animation("walking")
     sol.timer.start(1300, geyser_stop)

@@ -14,40 +14,46 @@ function enemy:on_created()
   self:set_size(16, 24)
   self:set_origin(8, 17)
 
-  local sprite = self:get_sprite()
-  sprite:set_animation("immobilized")
+  self:get_sprite():set_animation("immobilized")
 end
 
 function enemy:on_restarted()
-print('restarted')
   vulnerable = false
   for _, t in ipairs(timers) do t:stop() end
-  local sprite = self:get_sprite()
 
-  sprite:fade_out()
+  self:get_sprite():fade_out()
   timers[#timers + 1] = sol.timer.start(self, 700, function() self:hide() end)
 end
 
+function enemy:on_movement_changed(movement)
+  local direction4 = movement:get_direction4()
+  self:get_sprite():set_direction(direction4)
+end
+
 function enemy:hide()
-print('hiding')
   vulnerable = false
+  self:get_sprite():set_animation("immobilized")
   ex, ey, el = self:get_position()
   self:set_position(-100, -100)
   timers[#timers + 1] = sol.timer.start(self, 500, function() self:unhide() end)
 end
 
 function enemy:unhide()
-print('unhiding')
   vulnerable = true
   self:set_position(ex, ey)
-  local sprite = self:get_sprite()
-  sprite:fade_in()
+  self:get_sprite():fade_in()
+
+  self:get_sprite():set_animation("walking")
+  local m = sol.movement.create("path_finding")
+  m:set_speed(56)
+  m:start(self)
+
   timers[#timers + 1] = sol.timer.start(self, 1000, function() self:fire() end)
 end
 
 function enemy:fire()
-print('firing')
   vulnerable = true
+  self:get_sprite():set_animation("shaking")
   beam = self:create_enemy({
     breed = "wizzrobe_beam",
     direction = self:get_sprite():get_direction()

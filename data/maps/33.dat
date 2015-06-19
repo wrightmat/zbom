@@ -6615,24 +6615,24 @@ tile{
 }
 
 teletransporter{
+  name = "to_F11",
   layer = 0,
   x = -16,
-  y = 800,
+  y = 808,
   width = 16,
-  height = 320,
-  name = "to_F11",
+  height = 176,
   transition = "scrolling",
   destination_map = "32",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_G10",
   layer = 0,
   x = 256,
   y = -16,
   width = 352,
   height = 16,
-  name = "to_G10",
   transition = "scrolling",
   destination_map = "36",
   destination = "_side",
@@ -6683,88 +6683,88 @@ destructible{
 }
 
 enemy{
+  name = "enemy",
   layer = 0,
   x = 264,
   y = 861,
-  name = "enemy",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "enemy_2",
   layer = 0,
   x = 432,
   y = 509,
-  name = "enemy_2",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "enemy_3",
   layer = 0,
   x = 280,
   y = 213,
-  name = "enemy_3",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "enemy_4",
   layer = 0,
   x = 528,
   y = 77,
-  name = "enemy_4",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 teletransporter{
+  name = "to_F11_2",
   layer = 0,
   x = -16,
   y = 136,
   width = 16,
   height = 48,
-  name = "to_F11_2",
   transition = "scrolling",
   destination_map = "32",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_G12",
   layer = 0,
   x = 0,
   y = 1120,
   width = 192,
   height = 16,
-  name = "to_G12",
   transition = "scrolling",
   destination_map = "28",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_G12_2",
   layer = 0,
   x = 896,
   y = 1120,
   width = 224,
   height = 16,
-  name = "to_G12_2",
   transition = "scrolling",
   destination_map = "28",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_G10_2",
   layer = 0,
   x = 1032,
   y = -16,
   width = 48,
   height = 16,
-  name = "to_G10_2",
   transition = "scrolling",
   destination_map = "36",
   destination = "_side",
@@ -6903,46 +6903,58 @@ destructible{
 }
 
 jumper{
+  name = "jump_sensor",
   layer = 0,
   x = 1000,
   y = 152,
   width = 32,
   height = 8,
-  name = "jump_sensor",
   direction = 6,
   jump_length = 32,
 }
 
 teletransporter{
+  name = "to_H11",
   layer = 0,
   x = 1120,
   y = 704,
   width = 16,
   height = 416,
-  name = "to_H11",
   transition = "scrolling",
   destination_map = "83",
   destination = "_side",
 }
 
 npc{
+  name = "sign_directions",
   layer = 0,
   x = 296,
   y = 589,
-  name = "sign_directions",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
   behavior = "dialog#sign.G11_directions",
 }
 
 teletransporter{
+  name = "to_F11_3",
   layer = 0,
   x = -16,
   y = 272,
   width = 16,
   height = 112,
-  name = "to_F11_3",
+  transition = "scrolling",
+  destination_map = "32",
+  destination = "_side",
+}
+
+teletransporter{
+  name = "to_F11_4",
+  layer = 0,
+  x = -16,
+  y = 1040,
+  width = 16,
+  height = 80,
   transition = "scrolling",
   destination_map = "32",
   destination = "_side",
