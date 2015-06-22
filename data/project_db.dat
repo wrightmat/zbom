@@ -301,6 +301,7 @@ sprite{ id = "enemies/tentacle", description = "Tentacle" }
 sprite{ id = "enemies/vire", description = "Vire" }
 sprite{ id = "enemies/vire_sorceror", description = "Vire Sorceror" }
 sprite{ id = "enemies/wallmaster", description = "Wallmaster" }
+sprite{ id = "enemies/whirlwind", description = "Whirlwind" }
 sprite{ id = "enemies/wizzrobe", description = "Wizzrobe" }
 sprite{ id = "enemies/wizzrobe_beam", description = "Wizzrobe Beam" }
 sprite{ id = "enemies/wizzrobe_fire", description = "Wizzrobe, Fire" }
@@ -553,6 +554,7 @@ sound{ id = "boss_killed", description = "boss_killed" }
 sound{ id = "boss_shoot", description = "boss_shoot" }
 sound{ id = "bounce", description = "bounce" }
 sound{ id = "bow", description = "bow" }
+sound{ id = "breathing", description = "breathing" }
 sound{ id = "bush", description = "bush" }
 sound{ id = "cane", description = "cane" }
 sound{ id = "cannonball", description = "cannonball" }
@@ -814,6 +816,7 @@ enemy{ id = "tentacle", description = "Tentacle" }
 enemy{ id = "vire", description = "Vire" }
 enemy{ id = "vire_sorceror", description = "Vire Sorceror (Boss)" }
 enemy{ id = "wallmaster", description = "Wallmaster" }
+enemy{ id = "whirlwind", description = "Whirlwind" }
 enemy{ id = "wizzrobe", description = "Wizzrobe" }
 enemy{ id = "wizzrobe_beam", description = "Wizzrobe Beam" }
 enemy{ id = "zirna", description = "Zirna (Dark Interloper)" }

@@ -38,17 +38,36 @@ function condition_manager:initialize(game)
       if (command == "item_1" and game:get_item_assigned(1) == nil) or (command == "item_2" and game:get_item_assigned(2) == nil) then return false end
       if game:get_max_stamina() > 0 then
         if game:get_stamina() == 0 then
-	  if math.random(2) == 1 then
-	    game:start_dialog("_stamina_gone", function()
-	      return true
-	    end)
+	if not game:get_value("stamina_gone") then -- when stamina out, show a dialog
+	  game:start_dialog("_stamina_gone", function()
+	    game:set_value("stamina_gone", true)
+	    return true
+	  end)
+	else
+	  if math.random(3) == 1 then  -- when stamina out, buttons don't always work
+	    sol.audio.play_sound("wrong")
+	    return true
 	  else
 	    return false
 	  end
-        end
+	end
+        elseif game:get_stamina() < (game:get_max_stamina/6) then -- if stamina too low, play heavy breathing
 	game:remove_stamina(1)
+	if game:get_value("stamina_gone") then game:set_value("stamina_gone", false) end
+	if not breathing_timer then
+	  breathing_timer = sol.timer.start(8000, function()
+	    sol.audio.play_sound("breathing")
+	    return true
+	  end)
+	end
 	return false
-      end
+        else
+	game:remove_stamina(1)
+	if game:get_value("stamina_gone") then game:set_value("stamina_gone", false) end
+	if breathing_timer ~= nil then breathing_timer:stop() end
+	return false
+        end --game:get_stamina() == 0
+      end --game:get_max_stamina() > 0
     end
 
     if not hero:is_condition_active('confusion') or in_command_pressed or game:is_paused() then

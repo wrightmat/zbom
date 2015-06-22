@@ -1,20 +1,22 @@
 local enemy = ...
 
--- A blue flame shot by another enemy.
+-- A whirlwind shot by another enemy
 
 function enemy:on_created()
   self:set_life(1)
   self:set_damage(4)
-  self:create_sprite("enemies/flame_blue")
-  self:set_size(16, 16)
-  self:set_origin(8, 13)
+  self:create_sprite("enemies/whirlwind")
+  self:set_size(48, 64)
+  self:set_origin(24, 31)
   self:set_invincible()
   self:set_obstacle_behavior("flying")
   self:set_layer_independent_collisions(true)
   self:set_optimization_distance(0)
+  self:set_minimum_shield_needed(3)  -- Mirror shield protects hero
 end
 
 function enemy:on_restarted()
+  sol.audio.play_sound("wind")
   -- By default, go to where the hero is now.
   local x, y = self:get_map():get_entity("hero"):get_position()
   x = x + math.random(-32, 32)
@@ -28,7 +30,7 @@ function enemy:on_restarted()
 end
 
 function enemy:on_movement_finished(movement)
-  sol.timer.start(self, 45000, function() 
+  sol.timer.start(self, 25000, function() 
     self:remove()
   end)
 end

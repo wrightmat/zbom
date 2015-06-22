@@ -47,12 +47,11 @@ print("preparing wind")
 
   function repeat_throw_wind()
 print("throwing wind")
-    sol.audio.play_sound("wind")
     nb_sons_created = nb_sons_created + 1
     local son_name = prefix .. nb_sons_created
     self:create_enemy{
       name = son_name,
-      breed = "geyser",
+      breed = "whirlwind",
       x = 0,
       y = -16,
       layer = 0,
