@@ -129,8 +129,6 @@ function switch_room11_arrow_1:on_activated()
   switch_room11_arrow_1:set_locked(true)
   if switch_room11_arrow_2:is_activated() then
     room11_bridge:set_enabled(true)
-    room11_belt_1:set_enabled(true)
-    room11_belt_2:set_enabled(true)
     sol.audio.play_sound("secret")
   end
 end
