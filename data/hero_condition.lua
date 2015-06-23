@@ -51,7 +51,7 @@ function condition_manager:initialize(game)
 	    return false
 	  end
 	end
-        elseif game:get_stamina() < (game:get_max_stamina/6) then -- if stamina too low, play heavy breathing
+        elseif game:get_stamina() < (game:get_max_stamina()/6) then -- if stamina too low, play heavy breathing
 	game:remove_stamina(1)
 	if game:get_value("stamina_gone") then game:set_value("stamina_gone", false) end
 	if not breathing_timer then
