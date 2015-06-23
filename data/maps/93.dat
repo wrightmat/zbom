@@ -1682,6 +1682,15 @@ tile{
   pattern = "266",
 }
 
+tile{
+  layer = 0,
+  x = 184,
+  y = 880,
+  width = 16,
+  height = 16,
+  pattern = "311",
+}
+
 teletransporter{
   name = "to_D2",
   layer = 0,
@@ -2069,6 +2078,23 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/zora_juba",
+}
+
+npc{
+  name = "ocarina_wind_to_G5",
+  layer = 0,
+  x = 192,
+  y = 893,
+  direction = 3,
+  subtype = 0,
+}
+
+destination{
+  name = "ocarina_warp",
+  layer = 0,
+  x = 192,
+  y = 909,
+  direction = 3,
 }
 
 tile{

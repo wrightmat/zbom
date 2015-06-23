@@ -9296,10 +9296,30 @@ No
 }
 
 dialog{
+  id = "warp.to_M6",
+  question = "1",
+  text = [[
+Warp to Three Eye Rock?
+Yes
+No
+  ]]
+}
+
+dialog{
   id = "warp.to_G5",
   question = "1",
   text = [[
 Warp to Zora's Domain?
+Yes
+No
+  ]]
+}
+
+dialog{
+  id = "warp.to_C2",
+  question = "1",
+  text = [[
+Warp to Ruto Town?
 Yes
 No
   ]]
