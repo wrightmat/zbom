@@ -35,8 +35,13 @@ function map:on_started(destination)
 end
 
 function npc_anouki_3:on_interaction()
-  game:start_dialog("anouki_3."..anouki_talk..".snowpeak")
-  if anouki_talk == 0 then anouki_talk = 1 else anouki_talk = 0 end
+  if not game:get_value("b1117") then
+    -- If at least Mausoleum not completed, suggest going there instead
+    game:start_dialog("anouki_3.1.not_ready")
+  else
+    game:start_dialog("anouki_3."..anouki_talk..".snowpeak")
+    if anouki_talk == 0 then anouki_talk = 1 else anouki_talk = 0 end
+  end
 end
 
 if game:get_time_of_day() ~= "night" then

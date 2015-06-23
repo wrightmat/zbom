@@ -21,7 +21,7 @@ function map:on_started(destination)
   if game:get_value("i2014") >= 1 then game:set_value("i2014", game:get_value("i2014")+1) end  -- Blue
   if game:get_value("i2015") >= 1 then game:set_value("i2015", game:get_value("i2015")+1) end  -- Revitalizing
   if game:get_value("i2021") >= 1 then game:set_value("i2021", game:get_value("i2021")+1) end  -- Odd (trading)
-  if destination == main_entrance_shop and game:get_value("i2021") >= 10 then
+  if destination == main_entrance_shop and game:get_value("i2021") >= 5 then
     game:start_dialog("crista.0.potion_done", function()
       hero:start_treasure("trading", 2) -- give Odd Potion...
       game:set_value("b2022", true)

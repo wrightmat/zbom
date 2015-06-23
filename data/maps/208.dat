@@ -4986,6 +4986,33 @@ tile{
   pattern = "601",
 }
 
+tile{
+  layer = 0,
+  x = 272,
+  y = 88,
+  width = 16,
+  height = 16,
+  pattern = "603",
+}
+
+tile{
+  layer = 0,
+  x = 632,
+  y = 1552,
+  width = 16,
+  height = 16,
+  pattern = "603",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "603",
+}
+
 switch{
   name = "switch_ice_block",
   layer = 0,
@@ -5814,6 +5841,26 @@ wall{
   stops_npcs = true,
   stops_enemies = true,
   stops_blocks = true,
+}
+
+door{
+  name = "door_bomb_1",
+  layer = 0,
+  x = 232,
+  y = 1448,
+  direction = 3,
+  sprite = "entities/door_very_weak_wall",
+  opening_method = "explosion",
+}
+
+door{
+  name = "door_bomb_2",
+  layer = 0,
+  x = 232,
+  y = 1400,
+  direction = 1,
+  sprite = "entities/door_very_weak_wall",
+  opening_method = "explosion",
 }
 
 wall{
