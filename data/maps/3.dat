@@ -3050,8 +3050,8 @@ teletransporter{
   y = 624,
   width = 16,
   height = 16,
-  destination_map = "3",
-  destination = "from_septen_1",
+  destination_map = "55",
+  destination = "from_inside_1",
 }
 
 destination{
@@ -3109,8 +3109,8 @@ teletransporter{
   y = 624,
   width = 16,
   height = 16,
-  destination_map = "3",
-  destination = "from_septen_2",
+  destination_map = "56",
+  destination = "from_inside_2",
 }
 
 teletransporter{
@@ -3120,8 +3120,8 @@ teletransporter{
   y = 624,
   width = 16,
   height = 16,
-  destination_map = "3",
-  destination = "from_septen_3",
+  destination_map = "56",
+  destination = "from_inside_3",
 }
 
 teletransporter{
@@ -3131,8 +3131,8 @@ teletransporter{
   y = 992,
   width = 16,
   height = 16,
-  destination_map = "3",
-  destination = "from_septen_6",
+  destination_map = "56",
+  destination = "from_inside_6",
 }
 
 teletransporter{
@@ -3142,8 +3142,8 @@ teletransporter{
   y = 992,
   width = 16,
   height = 16,
-  destination_map = "3",
-  destination = "from_septen_5",
+  destination_map = "56",
+  destination = "from_inside_5",
 }
 
 teletransporter{
@@ -3153,19 +3153,19 @@ teletransporter{
   y = 992,
   width = 16,
   height = 16,
-  destination_map = "3",
-  destination = "from_septen_4",
+  destination_map = "56",
+  destination = "from_inside_4",
 }
 
 teletransporter{
-  name = "to_septen_7",
+  name = "to_septen_4_top",
   layer = 0,
   x = 152,
   y = 768,
   width = 16,
   height = 16,
-  destination_map = "3",
-  destination = "from_septen_4_top",
+  destination_map = "56",
+  destination = "from_inside_4_top",
 }
 
 tile{
