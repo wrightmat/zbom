@@ -107,7 +107,7 @@ function inn_bed:on_activated()
 end
 
 function npc_strap:on_interaction()
-  if game:get_time_of_day() == "night" and not game:get_value("b1812") then
+  if game:get_time_of_day() == "night" and not game:get_value("b1612") then
     game:start_dialog("strap.0.night", function()
       quest_bottle:remove()
       game:set_value("b1612", true)
@@ -245,10 +245,10 @@ function npc_kakariko_1:on_interaction()
   game:start_dialog("hylian_1.0.kakariko")
 end
 function npc_kakariko_2:on_interaction()
-  --game:start_dialog("hylian_2.0.kakariko")
+  game:start_dialog("hylian_2.0.kakariko")
 end
 function npc_kakariko_3:on_interaction()
-  --game:start_dialog("hylian_3.0.kakariko")
+  game:start_dialog("hylian_3.0.kakariko")
 end
 function npc_kakariko_4:on_interaction()
   --game:start_dialog("hylian_4.0.kakariko")

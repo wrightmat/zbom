@@ -5566,6 +5566,43 @@ them all!
 }
 
 dialog{
+  id = "hylian_2.0.kakariko",
+  text = [[
+I love living in Kakariko
+because it's so centrally
+located! Sometimes I want
+to wander in the desert
+for a bit, and it's just
+over the bridge. Or the
+pretty mountains are to
+the north, even with snowy
+ones way up there! Then
+the Zoras are Gorons are
+to the east and Castle
+Town is pretty close to
+the south!
+  ]]
+}
+
+dialog{
+  id = "hylian_3.0.kakariko",
+  text = [[
+The quickest way to move
+around is to get yourself
+an Ocarina. Have you seen
+the ocarina-shaped dirt
+patches? If you approach
+one of these, you'll be
+able to instantly warp to
+an entirely different area
+of the world! Use these
+and your world map wisely
+and you'll have no problem
+getting around quickly!
+  ]]
+}
+
+dialog{
   id = "ildus.0.outside",
   skip = "current",
   text = [[
@@ -7895,6 +7932,7 @@ dialog{
   skip = "current",
   text = [[
 <- Kakariko City
+Bridge to Desert
 
 ]]
 }
@@ -9463,7 +9501,8 @@ desert - maybe something
 there can help you. Get
 there through Faron Woods
 and the Beach or via
-Kakariko City to the north.
+Kakariko City to the
+north.
 
 ]]
 }
@@ -9673,7 +9712,6 @@ everyone knew, we might
 get attacked at home!
   ]]
 }
-
 
 dialog{
   id = "zora.1.trading",

@@ -532,3 +532,12 @@ function shop_item_3:on_buying()
     game:remove_money(200)
   end
 end
+
+function npc_shopkeeper:on_interaction()
+  if math.random(4) == 1 then
+    -- Randomly mention the bigger wallet
+    game:start_dialog("shopkeep.1")
+  else
+    game:start_dialog("shopkeep.0")
+  end
+end

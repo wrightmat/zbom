@@ -243,3 +243,12 @@ end
 function shelf_1:on_interaction()
   game:start_dialog("pim.1.house")
 end
+
+function npc_shopkeeper:on_interaction()
+  if math.random(4) == 1 then
+    -- Randomly mention the bigger wallet
+    game:start_dialog("shopkeep.1")
+  else
+    game:start_dialog("shopkeep.0")
+  end
+end
