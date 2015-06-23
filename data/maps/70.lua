@@ -7,25 +7,26 @@ local game = map:get_game()
 
 function map:on_started(destination)
   -- If you haven't gotten all of the parts, Ordona directs you back
-  if not game:get_value("b1087") or not game:get_value("b1088") or not game:get_value("b1089") then
-    sol.timer.start(1000, function()
-      torch_1:get_sprite():set_animation("lit")
-    end)
-    sol.timer.start(2000, function()
-      hero:freeze()
-      torch_overlay = sol.surface.create("entities/dark.png")
-      torch_overlay:fade_in(50)
-      hero:set_direction(2)
-      game:start_dialog("ordona.1.pyramid", game:get_player_name(), function()
-        torch_overlay:fade_out(50)
-        hero:unfreeze()
-	game:add_max_stamina(100)
-	game:set_stamina(game:get_max_stamina())
-        sol.timer.start(2000, function()
-          torch_1:get_sprite():set_animation("unlit")
+  if destination == from_pyramid then
+    if not game:get_value("b1087") or not game:get_value("b1088") or not game:get_value("b1089") then
+      sol.timer.start(1000, function()
+        torch_1:get_sprite():set_animation("lit")
+      end)
+      sol.timer.start(2000, function()
+        hero:freeze()
+        torch_overlay = sol.surface.create("entities/dark.png")
+        torch_overlay:fade_in(50)
+        hero:set_direction(2)
+        game:start_dialog("ordona.1.pyramid", game:get_player_name(), function()
+          torch_overlay:fade_out(50)
+          hero:unfreeze()
+	  game:set_stamina(game:get_max_stamina())
+            sol.timer.start(2000, function()
+              torch_1:get_sprite():set_animation("unlit")
+            end)
         end)
       end)
-    end)
+    end
   end
 end
 

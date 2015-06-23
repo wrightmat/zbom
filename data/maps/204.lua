@@ -11,6 +11,7 @@ function map:on_started(destination)
   else
     map:set_doors_open("door_miniboss_exit")
   end
+  if game:get_value("b1090") then map:set_doors_open("door_shortcut") end
   if not game:get_value("b1079") then boss_manhandla:set_enabled(false) end
   if not game:get_value("b1087") then chest_room7_part:set_enabled(false) end
   if not game:get_value("b1070") then chest_room8_key:set_enabled(false) end
@@ -46,10 +47,12 @@ function sensor_reset_ground_2:on_activated()
   hero:reset_solid_ground()
 end
 function sensor_save_ground_3:on_activated()
+  hero:reset_solid_ground()
   hero:save_solid_ground()
 end
 function sensor_reset_ground_3:on_activated()
   hero:reset_solid_ground()
+  hero:save_solid_ground()
 end
 
 function sensor_miniboss:on_activated()
@@ -82,6 +85,11 @@ function switch_room7_3:on_activated()
     chest_room7_part:set_enabled(true)
     sol.audio.play_sound("chest_appears")
   end
+end
+
+function switch_shortcut:on_activated()
+  game:set_value("b1090", true)
+  map:open_doors("door_shortcut")
 end
 
 if miniboss_lanmola ~= nil then
