@@ -2251,24 +2251,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 376,
-  y = 1040,
-  width = 32,
-  height = 16,
-  pattern = "1895",
-}
-
-tile{
-  layer = 0,
-  x = 456,
-  y = 1040,
-  width = 32,
-  height = 16,
-  pattern = "1895",
-}
-
-tile{
-  layer = 0,
   x = 616,
   y = 1072,
   width = 32,
@@ -2283,24 +2265,6 @@ tile{
   width = 32,
   height = 64,
   pattern = "1897",
-}
-
-tile{
-  layer = 0,
-  x = 616,
-  y = 1040,
-  width = 32,
-  height = 16,
-  pattern = "1895",
-}
-
-tile{
-  layer = 0,
-  x = 696,
-  y = 1040,
-  width = 32,
-  height = 16,
-  pattern = "1895",
 }
 
 tile{
@@ -2683,29 +2647,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 120,
-  y = 1072,
-  width = 32,
-  height = 16,
-  pattern = "1895",
-}
-
-tile{
-  layer = 0,
   x = 200,
   y = 1104,
   width = 32,
   height = 64,
   pattern = "1897",
-}
-
-tile{
-  layer = 0,
-  x = 200,
-  y = 1072,
-  width = 32,
-  height = 16,
-  pattern = "1895",
 }
 
 tile{
@@ -2719,29 +2665,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 280,
-  y = 1072,
-  width = 32,
-  height = 16,
-  pattern = "1895",
-}
-
-tile{
-  layer = 0,
   x = 792,
   y = 1104,
   width = 32,
   height = 64,
   pattern = "1897",
-}
-
-tile{
-  layer = 0,
-  x = 792,
-  y = 1072,
-  width = 32,
-  height = 16,
-  pattern = "1895",
 }
 
 tile{
@@ -2755,29 +2683,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 872,
-  y = 1072,
-  width = 32,
-  height = 16,
-  pattern = "1895",
-}
-
-tile{
-  layer = 0,
   x = 952,
   y = 1104,
   width = 32,
   height = 64,
   pattern = "1897",
-}
-
-tile{
-  layer = 0,
-  x = 952,
-  y = 1072,
-  width = 32,
-  height = 16,
-  pattern = "1895",
 }
 
 tile{
@@ -4212,79 +4122,79 @@ tile{
 }
 
 npc{
+  name = "torch_fire_1",
   layer = 0,
   x = 456,
   y = 861,
-  name = "torch_fire_1",
   direction = 0,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/fire_small",
 }
 
 sensor{
+  name = "castle_door_sensor",
   layer = 0,
   x = 536,
   y = 893,
   width = 48,
   height = 16,
-  name = "castle_door_sensor",
 }
 
 teletransporter{
+  name = "to_F9",
   layer = 0,
   x = 520,
   y = 1120,
   width = 64,
   height = 16,
-  name = "to_F9",
   transition = "scrolling",
   destination_map = "40",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_G8",
   layer = 0,
   x = 1120,
   y = 392,
   width = 16,
   height = 112,
-  name = "to_G8",
   transition = "scrolling",
   destination_map = "46",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_F7",
   layer = 0,
   x = 0,
   y = -16,
   width = 944,
   height = 16,
-  name = "to_F7",
   transition = "scrolling",
   destination_map = "49",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_E8",
   layer = 0,
   x = -16,
   y = 200,
   width = 16,
   height = 432,
-  name = "to_E8",
   transition = "scrolling",
   destination_map = "44",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_E8_2",
   layer = 0,
   x = -16,
   y = 776,
   width = 16,
   height = 272,
-  name = "to_E8_2",
   transition = "scrolling",
   destination_map = "44",
   destination = "_side",
@@ -4467,13 +4377,13 @@ destructible{
 }
 
 dynamic_tile{
+  name = "castle_door",
   layer = 0,
   x = 536,
   y = 848,
+  pattern = "1885",
   width = 32,
   height = 32,
-  name = "castle_door",
-  pattern = "1885",
   enabled_at_start = true,
 }
 
@@ -4720,13 +4630,13 @@ destructible{
 }
 
 dynamic_tile{
+  name = "tile",
   layer = 0,
   x = 776,
   y = 288,
+  pattern = "1289",
   width = 16,
   height = 112,
-  name = "tile",
-  pattern = "1289",
   enabled_at_start = true,
 }
 
@@ -4973,20 +4883,20 @@ destructible{
 }
 
 destination{
+  name = "from_castle_1",
   layer = 0,
   x = 552,
   y = 893,
-  name = "from_castle_1",
   direction = 3,
 }
 
 teletransporter{
+  name = "to_castle_1",
   layer = 0,
   x = 536,
   y = 848,
   width = 32,
   height = 16,
-  name = "to_castle_1",
   destination_map = "2",
   destination = "from_outside_1",
 }
@@ -5003,172 +4913,172 @@ destructible{
 }
 
 npc{
+  name = "torch_fire_2",
   layer = 0,
   x = 648,
   y = 861,
-  name = "torch_fire_2",
   direction = 0,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/fire_small",
 }
 
 npc{
+  name = "torch_fire_3",
   layer = 0,
   x = 360,
   y = 861,
-  name = "torch_fire_3",
   direction = 0,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/fire_small",
 }
 
 npc{
+  name = "torch_fire_4",
   layer = 0,
   x = 744,
   y = 861,
-  name = "torch_fire_4",
   direction = 0,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/fire_small",
 }
 
 npc{
+  name = "torch_fire_5",
   layer = 0,
   x = 664,
   y = 749,
-  name = "torch_fire_5",
   direction = 0,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/fire_small",
 }
 
 npc{
+  name = "torch_fire_6",
   layer = 0,
   x = 584,
   y = 749,
-  name = "torch_fire_6",
   direction = 0,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/fire_small",
 }
 
 npc{
+  name = "torch_fire_7",
   layer = 0,
   x = 520,
   y = 749,
-  name = "torch_fire_7",
   direction = 0,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/fire_small",
 }
 
 npc{
+  name = "torch_fire_8",
   layer = 0,
   x = 440,
   y = 749,
-  name = "torch_fire_8",
   direction = 0,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/fire_small",
 }
 
 npc{
+  name = "torch_fire_9",
   layer = 0,
   x = 384,
   y = 301,
-  name = "torch_fire_9",
   direction = 0,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/fire_small",
 }
 
 npc{
+  name = "torch_fire_10",
   layer = 0,
   x = 504,
   y = 301,
-  name = "torch_fire_10",
   direction = 0,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/fire_small",
 }
 
 npc{
+  name = "torch_fire_11",
   layer = 0,
   x = 600,
   y = 301,
-  name = "torch_fire_11",
   direction = 0,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/fire_small",
 }
 
 npc{
+  name = "torch_fire_12",
   layer = 0,
   x = 720,
   y = 301,
-  name = "torch_fire_12",
   direction = 0,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/fire_small",
 }
 
 npc{
+  name = "torch_fire_13",
   layer = 0,
   x = 928,
   y = 109,
-  name = "torch_fire_13",
   direction = 0,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/fire_small",
 }
 
 npc{
+  name = "torch_fire_14",
   layer = 0,
   x = 808,
   y = 109,
-  name = "torch_fire_14",
   direction = 0,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/fire_small",
 }
 
 npc{
+  name = "torch_fire_15",
   layer = 0,
   x = 680,
   y = 109,
-  name = "torch_fire_15",
   direction = 0,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/fire_small",
 }
 
 npc{
+  name = "torch_fire_16",
   layer = 0,
   x = 424,
   y = 109,
-  name = "torch_fire_16",
   direction = 0,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/fire_small",
 }
 
 npc{
+  name = "torch_fire_17",
   layer = 0,
   x = 304,
   y = 109,
-  name = "torch_fire_17",
   direction = 0,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/fire_small",
 }
 
 npc{
+  name = "torch_fire_18",
   layer = 0,
   x = 184,
   y = 109,
-  name = "torch_fire_18",
   direction = 0,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/fire_small",
 }
 
@@ -5782,5 +5692,95 @@ tile{
   width = 32,
   height = 16,
   pattern = "1896",
+}
+
+tile{
+  layer = 2,
+  x = 456,
+  y = 1040,
+  width = 32,
+  height = 16,
+  pattern = "1895",
+}
+
+tile{
+  layer = 2,
+  x = 376,
+  y = 1040,
+  width = 32,
+  height = 16,
+  pattern = "1895",
+}
+
+tile{
+  layer = 2,
+  x = 280,
+  y = 1072,
+  width = 32,
+  height = 16,
+  pattern = "1895",
+}
+
+tile{
+  layer = 2,
+  x = 200,
+  y = 1072,
+  width = 32,
+  height = 16,
+  pattern = "1895",
+}
+
+tile{
+  layer = 2,
+  x = 616,
+  y = 1040,
+  width = 32,
+  height = 16,
+  pattern = "1895",
+}
+
+tile{
+  layer = 2,
+  x = 696,
+  y = 1040,
+  width = 32,
+  height = 16,
+  pattern = "1895",
+}
+
+tile{
+  layer = 2,
+  x = 792,
+  y = 1072,
+  width = 32,
+  height = 16,
+  pattern = "1895",
+}
+
+tile{
+  layer = 2,
+  x = 872,
+  y = 1072,
+  width = 32,
+  height = 16,
+  pattern = "1895",
+}
+
+tile{
+  layer = 2,
+  x = 952,
+  y = 1072,
+  width = 32,
+  height = 16,
+  pattern = "1895",
+}
+
+tile{
+  layer = 2,
+  x = 120,
+  y = 1072,
+  width = 32,
+  height = 16,
+  pattern = "1895",
 }
 

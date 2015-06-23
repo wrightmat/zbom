@@ -4987,10 +4987,10 @@ tile{
 }
 
 switch{
+  name = "switch_ice_block",
   layer = 0,
   x = 216,
   y = 1336,
-  name = "switch_ice_block",
   subtype = "walkable",
   sprite = "entities/switch",
   sound = "switch",
@@ -4999,22 +4999,21 @@ switch{
 }
 
 teletransporter{
+  name = "fall_basement_4",
   layer = 0,
   x = 488,
   y = 896,
   width = 16,
   height = 80,
-  name = "fall_basement_4",
-  sound = "hero_falls",
   destination_map = "209",
   destination = "_same",
+  sound = "hero_falls",
 }
 
 block{
   layer = 0,
   x = 160,
   y = 1349,
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -5022,211 +5021,207 @@ block{
 }
 
 door{
+  name = "door_shutter1_1",
   layer = 0,
   x = 568,
   y = 1400,
-  name = "door_shutter1_1",
   direction = 3,
   sprite = "entities/door_shutter",
 }
 
 door{
+  name = "door_shutter1_2",
   layer = 0,
   x = 568,
   y = 1448,
-  name = "door_shutter1_2",
   direction = 1,
   sprite = "entities/door_shutter",
 }
 
 teletransporter{
+  name = "fall_basement_1",
   layer = 0,
   x = 232,
   y = 888,
   width = 256,
   height = 16,
-  name = "fall_basement_1",
-  sound = "hero_falls",
   destination_map = "209",
   destination = "_same",
+  sound = "hero_falls",
 }
 
 teletransporter{
+  name = "fall_basement_2",
   layer = 0,
   x = 232,
   y = 1080,
   width = 256,
   height = 16,
-  name = "fall_basement_2",
-  sound = "hero_falls",
   destination_map = "209",
   destination = "_same",
+  sound = "hero_falls",
 }
 
 teletransporter{
+  name = "fall_basement_3",
   layer = 0,
   x = 216,
   y = 896,
   width = 16,
   height = 80,
-  name = "fall_basement_3",
-  sound = "hero_falls",
   destination_map = "209",
   destination = "_same",
+  sound = "hero_falls",
 }
 
 teletransporter{
+  name = "fall_basement_5",
   layer = 0,
   x = 216,
   y = 1008,
   width = 16,
   height = 80,
-  name = "fall_basement_5",
-  sound = "hero_falls",
   destination_map = "209",
   destination = "_same",
+  sound = "hero_falls",
 }
 
 teletransporter{
+  name = "fall_basement_6",
   layer = 0,
   x = 488,
   y = 1008,
   width = 16,
   height = 80,
-  name = "fall_basement_6",
-  sound = "hero_falls",
   destination_map = "209",
   destination = "_same",
+  sound = "hero_falls",
 }
 
 enemy{
+  name = "room3_chuchu_blue_1",
   layer = 0,
   x = 488,
   y = 1333,
-  name = "room3_chuchu_blue_1",
   direction = 3,
   breed = "chuchu_blue",
   treasure_name = "random",
 }
 
 enemy{
+  name = "room3_chuchu_blue_2",
   layer = 0,
   x = 592,
   y = 1365,
-  name = "room3_chuchu_blue_2",
   direction = 3,
   breed = "chuchu_blue",
   treasure_name = "random",
 }
 
 enemy{
+  name = "room3_chuchu_blue_3",
   layer = 0,
   x = 672,
   y = 1325,
-  name = "room3_chuchu_blue_3",
   direction = 3,
   breed = "chuchu_blue",
   treasure_name = "random",
 }
 
 destination{
+  name = "from_outside",
   layer = 0,
   x = 240,
   y = 1709,
-  name = "from_outside",
   direction = 1,
   default = true,
 }
 
 teletransporter{
+  name = "to_outside",
   layer = 0,
   x = 232,
   y = 1720,
   width = 16,
   height = 16,
-  name = "to_outside",
   destination_map = "53",
   destination = "from_cavern",
 }
 
 enemy{
+  name = "room7_bubble_white_1",
   layer = 0,
   x = 80,
   y = 872,
-  name = "room7_bubble_white_1",
   direction = 3,
   breed = "bubble_white",
 }
 
 enemy{
+  name = "room7_bubble_white_2",
   layer = 0,
   x = 80,
   y = 304,
-  name = "room7_bubble_white_2",
   direction = 3,
   breed = "bubble_white",
 }
 
 chest{
+  name = "chest_alchemy_stone",
   layer = 0,
   x = 80,
   y = 85,
-  name = "chest_alchemy_stone",
   treasure_name = "alchemy",
   treasure_savegame_variable = "b1157",
   sprite = "entities/chest",
 }
 
 custom_entity{
+  name = "pit_1",
   layer = 0,
   x = 72,
   y = 400,
-  width = 16,
-  height = 16,
-  name = "pit_1",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_2",
   layer = 0,
   x = 88,
   y = 400,
-  width = 16,
-  height = 16,
-  name = "pit_2",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 chest{
+  name = "chest_big_key",
   layer = 0,
   x = 280,
   y = 101,
-  name = "chest_big_key",
   treasure_name = "big_key",
   treasure_savegame_variable = "b1144",
   sprite = "entities/chest",
 }
 
 teletransporter{
+  name = "to_B2",
   layer = 0,
   x = 72,
   y = 1184,
   width = 16,
   height = 16,
-  name = "to_B2",
   destination_map = "209",
   destination = "from_B1",
 }
 
 destination{
+  name = "from_B2",
   layer = 0,
   x = 80,
   y = 1181,
-  name = "from_B2",
   direction = 1,
 }
 
@@ -5258,8 +5253,8 @@ wall{
   y = 600,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -5270,8 +5265,8 @@ wall{
   y = 600,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -5282,8 +5277,8 @@ wall{
   y = 976,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -5294,8 +5289,8 @@ wall{
   y = 976,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -5306,8 +5301,8 @@ wall{
   y = 600,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -5318,8 +5313,8 @@ wall{
   y = 600,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -5330,8 +5325,8 @@ wall{
   y = 600,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -5342,8 +5337,8 @@ wall{
   y = 600,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -5354,8 +5349,8 @@ wall{
   y = 264,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -5366,8 +5361,8 @@ wall{
   y = 432,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -5378,8 +5373,8 @@ wall{
   y = 504,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -5390,8 +5385,8 @@ wall{
   y = 1392,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -5402,8 +5397,8 @@ wall{
   y = 1464,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -5414,8 +5409,8 @@ wall{
   y = 1136,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -5426,8 +5421,8 @@ wall{
   y = 1136,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -5438,8 +5433,8 @@ wall{
   y = 1328,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -5450,8 +5445,8 @@ wall{
   y = 1328,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -5462,8 +5457,8 @@ wall{
   y = 1328,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -5474,8 +5469,8 @@ wall{
   y = 1328,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -5486,8 +5481,8 @@ wall{
   y = 1392,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -5498,176 +5493,176 @@ wall{
   y = 1464,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 enemy{
+  name = "room5_skeletor_1",
   layer = 0,
   x = 840,
   y = 1269,
-  name = "room5_skeletor_1",
   direction = 3,
   breed = "skeletor",
   treasure_name = "random",
 }
 
 enemy{
+  name = "room5_skeletor_2",
   layer = 0,
   x = 904,
   y = 1429,
-  name = "room5_skeletor_2",
   direction = 3,
   breed = "skeletor",
   treasure_name = "random",
 }
 
 enemy{
+  name = "room5_skeletor_3",
   layer = 0,
   x = 904,
   y = 1157,
-  name = "room5_skeletor_3",
   direction = 3,
   breed = "skeletor",
   treasure_name = "random",
 }
 
 enemy{
+  name = "room5_bubble_blue",
   layer = 0,
   x = 920,
   y = 1312,
-  name = "room5_bubble_blue",
   direction = 3,
   breed = "bubble_blue",
 }
 
 enemy{
+  name = "room8_skeletor_1",
   layer = 0,
   x = 224,
   y = 573,
-  name = "room8_skeletor_1",
   direction = 3,
   breed = "skeletor",
   treasure_name = "random",
 }
 
 enemy{
+  name = "room8_skeletor_2",
   layer = 0,
   x = 272,
   y = 677,
-  name = "room8_skeletor_2",
   direction = 3,
   breed = "skeletor",
   treasure_name = "random",
 }
 
 enemy{
+  name = "room8_skeletor_3",
   layer = 0,
   x = 328,
   y = 581,
-  name = "room8_skeletor_3",
   direction = 3,
   breed = "skeletor",
   treasure_name = "random",
 }
 
 enemy{
+  name = "room10_skeletor_1",
   layer = 0,
   x = 792,
   y = 565,
-  name = "room10_skeletor_1",
   direction = 3,
   breed = "skeletor",
   treasure_name = "random",
 }
 
 enemy{
+  name = "room10_skeletor_2",
   layer = 0,
   x = 904,
   y = 677,
-  name = "room10_skeletor_2",
   direction = 3,
   breed = "skeletor",
   treasure_name = "random",
 }
 
 enemy{
+  name = "room9_chuchu_blue_1",
   layer = 0,
   x = 512,
   y = 685,
-  name = "room9_chuchu_blue_1",
   direction = 3,
   breed = "chuchu_blue",
   treasure_name = "random",
 }
 
 enemy{
+  name = "room9_chuchu_blue_2",
   layer = 0,
   x = 560,
   y = 573,
-  name = "room9_chuchu_blue_2",
   direction = 3,
   breed = "chuchu_blue",
   treasure_name = "random",
 }
 
 enemy{
+  name = "room9_chuchu_blue_3",
   layer = 0,
   x = 616,
   y = 677,
-  name = "room9_chuchu_blue_3",
   direction = 3,
   breed = "chuchu_blue",
   treasure_name = "random",
 }
 
 enemy{
+  name = "room11_chuchu_blue_1",
   layer = 0,
   x = 784,
   y = 381,
-  name = "room11_chuchu_blue_1",
   direction = 3,
   breed = "chuchu_blue",
   treasure_name = "random",
 }
 
 enemy{
+  name = "room11_chuchu_blue_2",
   layer = 0,
   x = 928,
   y = 277,
-  name = "room11_chuchu_blue_2",
   direction = 3,
   breed = "chuchu_blue",
   treasure_name = "random",
 }
 
 enemy{
+  name = "room11_skeletor_1",
   layer = 0,
   x = 904,
   y = 373,
-  name = "room11_skeletor_1",
   direction = 3,
   breed = "skeletor",
   treasure_name = "random",
 }
 
 enemy{
+  name = "room11_skeletor_2",
   layer = 0,
   x = 824,
   y = 277,
-  name = "room11_skeletor_2",
   direction = 3,
   breed = "skeletor",
   treasure_name = "random",
 }
 
 enemy{
+  name = "miniboss_chu",
   layer = 0,
   x = 512,
   y = 243,
-  name = "miniboss_chu",
   direction = 3,
   breed = "chu_big_ice",
   savegame_variable = "b1145",
@@ -5675,46 +5670,46 @@ enemy{
 }
 
 sensor{
+  name = "sensor_miniboss",
   layer = 0,
   x = 664,
   y = 269,
   width = 16,
   height = 48,
-  name = "sensor_miniboss",
 }
 
 door{
+  name = "door_miniboss",
   layer = 0,
   x = 680,
   y = 272,
-  name = "door_miniboss",
   direction = 0,
   sprite = "entities/door_shutter",
 }
 
 enemy{
+  name = "keese_ice_1",
   layer = 0,
   x = 592,
   y = 1557,
-  name = "keese_ice_1",
   direction = 3,
   breed = "keese_ice",
 }
 
 enemy{
+  name = "keese_ice_2",
   layer = 0,
   x = 584,
   y = 1653,
-  name = "keese_ice_2",
   direction = 3,
   breed = "keese_ice",
 }
 
 enemy{
+  name = "keese_ice_3",
   layer = 0,
   x = 648,
   y = 1501,
-  name = "keese_ice_3",
   direction = 3,
   breed = "keese_ice",
 }
@@ -5725,17 +5720,17 @@ wall{
   y = 264,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 chest{
+  name = "chest_compass",
   layer = 0,
   x = 640,
   y = 1565,
-  name = "chest_compass",
   treasure_name = "compass",
   treasure_savegame_variable = "b1142",
   sprite = "entities/chest",
@@ -5795,6 +5790,30 @@ destructible{
   treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
+}
+
+wall{
+  layer = 0,
+  x = 56,
+  y = 1128,
+  width = 8,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 96,
+  y = 1128,
+  width = 8,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
 }
 
 wall{
