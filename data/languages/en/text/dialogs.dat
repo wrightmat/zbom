@@ -1780,7 +1780,7 @@ dialog{
   skip = "current",
   text = [[
 You found the Cane
-of Somaria! Use it
+of Ice! Use it
 to create blocks
 on a whim.
   ]]
@@ -2306,7 +2306,7 @@ dialog{
   skip = "current",
   text = [[
 You received the
-White Sword!$0 Its
+Light Sword!$0 Its
 shining edge can
 destroy most anything!
   ]]
@@ -6059,6 +6059,64 @@ Allow the books to help.
 }
 
 dialog{
+  id = "isan.2.library.3",
+  skip = "current",
+  text = [[
+If you happen upon any
+food items, I've been
+reading a cookbook
+recently and would
+really like to try
+something out!
+  ]]
+}
+
+dialog{
+  id = "isan.0.trading",
+  question = "1",
+  skip = "current",
+  text = [[
+Is that a fish that I
+smell? It won't be fresh
+for much longer, so how
+about giving it to me?
+I've been reading this
+amazing cookbook, and
+would really like to
+try out my skills.
+
+How about it?
+Yes
+No
+  ]]
+}
+
+dialog{
+  id = "isan.0.trading_no",
+  skip = "current",
+  text = [[
+Seems like a bad idea
+to carry around a
+quickly thawing fish,
+but to each their own!
+  ]]
+}
+
+dialog{
+  id = "isan.0.trading_yes",
+  skip = "current",
+  text = [[
+Thank you!
+Now that I have the
+chance to actually cook,
+I think I've gotten all
+of the use I can out of
+the cookbook. How about
+you take it!
+  ]]
+}
+
+dialog{
   id = "jarred.0.festival",
   skip = "current",
   text = [[
@@ -7704,6 +7762,77 @@ desert, one on a mountain,
 one under a lake, one in
 a snowy peak and one in
 some ruins.
+  ]]
+}
+
+dialog{
+  id = "rito.0.trading_hint",
+  skip = "current",
+  text = [[
+I have all of my cooking
+equipment ready to go,
+but no knowledge and no
+way to learn. It's sad
+when one's unable to
+pursue their dream...
+  ]]
+}
+
+dialog{
+  id = "rito.0.trading",
+  skip = "current",
+  question = 1,
+  text = [[
+Is that the world famous
+Culinary Arts of Hyrule
+in your things? I've been
+looking for that book
+since I got here! It's
+very difficult to find
+good cookbooks around
+here for some reason, and
+I very much enjoy cooking.
+Would you consider giving
+that book to me?
+
+Give it to him?
+Yes
+No
+  ]]
+}
+
+dialog{
+  id = "rito.0.trading_yes",
+  skip = "current",
+  text = [[
+That's great! Thank you!
+I can't wait to get
+started!$0
+Unfortunately I don't
+have anything to offer
+you in return...$0
+Let me think...$0
+All I have to give you
+is one of my own feathers.
+It sounds weird, but Rito
+feathers actually have
+magical properties, and
+should let non-Ritos
+like you float in the
+air for short periods of
+time. Yes, that's what
+I'll offer in return!
+  ]]
+}
+
+dialog{
+  id = "rito.0.trading_no",
+  skip = "current",
+  text = [[
+Well... that is not very
+kind of you. If you can't
+share, then I'd like you
+to leave my home.
   ]]
 }
 
@@ -9392,7 +9521,7 @@ Council to come spend
 time with my villagers!
 So $v, did you know
 this is a festival
-of light?
+of Light?
   ]]
 }
 

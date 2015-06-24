@@ -5,5 +5,7 @@ function item:on_created()
 end
 
 function item:on_obtained(variant, savegame_variable)
-  -- There are 12 variants of this in the trading sequence - do I need to do anything here?
+  if variant == 13 then
+    hero:start_treasure("feather")
+  end
 end
