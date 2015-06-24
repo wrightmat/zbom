@@ -7785,6 +7785,177 @@ tile{
   pattern = "105",
 }
 
+tile{
+  layer = 0,
+  x = 592,
+  y = 504,
+  width = 16,
+  height = 16,
+  pattern = "530",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 504,
+  width = 128,
+  height = 16,
+  pattern = "534",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 504,
+  width = 16,
+  height = 16,
+  pattern = "531",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 520,
+  width = 16,
+  height = 80,
+  pattern = "536",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 520,
+  width = 16,
+  height = 80,
+  pattern = "537",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 600,
+  width = 16,
+  height = 16,
+  pattern = "532",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 600,
+  width = 16,
+  height = 16,
+  pattern = "533",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 600,
+  width = 48,
+  height = 16,
+  pattern = "535",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 600,
+  width = 48,
+  height = 16,
+  pattern = "535",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 600,
+  width = 32,
+  height = 16,
+  pattern = "546",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 520,
+  width = 8,
+  height = 8,
+  pattern = "540",
+}
+
+tile{
+  layer = 0,
+  x = 728,
+  y = 520,
+  width = 8,
+  height = 8,
+  pattern = "543",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 592,
+  width = 8,
+  height = 8,
+  pattern = "541",
+}
+
+tile{
+  layer = 0,
+  x = 728,
+  y = 592,
+  width = 8,
+  height = 8,
+  pattern = "542",
+}
+
+tile{
+  layer = 0,
+  x = 728,
+  y = 528,
+  width = 8,
+  height = 64,
+  pattern = "544",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 528,
+  width = 8,
+  height = 64,
+  pattern = "545",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 520,
+  width = 112,
+  height = 8,
+  pattern = "538",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 592,
+  width = 112,
+  height = 8,
+  pattern = "539",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 528,
+  width = 112,
+  height = 64,
+  pattern = "46",
+}
+
 wall{
   layer = 0,
   x = 656,
@@ -7812,23 +7983,14 @@ chest{
 teletransporter{
   name = "warp_outside",
   layer = 0,
-  x = 528,
-  y = 568,
+  x = 560,
+  y = 680,
   width = 16,
   height = 16,
   destination_map = "55",
   destination = "from_tower",
   sprite = "entities/teletransporter",
   sound = "warp",
-}
-
-pickable{
-  name = "boss_heart",
-  layer = 0,
-  x = 584,
-  y = 613,
-  treasure_name = "heart_container",
-  treasure_savegame_variable = "b1169",
 }
 
 teletransporter{
@@ -7876,21 +8038,11 @@ door{
 }
 
 door{
-  name = "door_boss_shutter",
+  name = "door_boss_3",
   layer = 0,
   x = 664,
   y = 368,
   direction = 3,
-  sprite = "entities/door_shutter",
-  opening_condition = "b1167",
-}
-
-door{
-  name = "door_boss_shutter_2",
-  layer = 0,
-  x = 664,
-  y = 416,
-  direction = 1,
   sprite = "entities/door_shutter",
   opening_condition = "b1167",
 }
@@ -7940,6 +8092,27 @@ sensor{
   y = 357,
   width = 64,
   height = 16,
+}
+
+enemy{
+  name = "boss_helmaroc",
+  layer = 0,
+  x = 448,
+  y = 189,
+  direction = 0,
+  breed = "helmaroc_rex",
+  rank = 2,
+  savegame_variable = "b1168",
+  treasure_name = "alchemy",
+}
+
+pickable{
+  name = "boss_heart",
+  layer = 0,
+  x = 648,
+  y = 269,
+  treasure_name = "heart_container",
+  treasure_savegame_variable = "b1169",
 }
 
 tile{

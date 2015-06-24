@@ -8834,7 +8834,7 @@ destination{
   layer = 0,
   x = 672,
   y = 741,
-  direction = 3,
+  direction = 1,
 }
 
 teletransporter{
@@ -8958,6 +8958,7 @@ block{
 }
 
 switch{
+  name = "switch_door",
   layer = 0,
   x = 240,
   y = 112,
@@ -9111,7 +9112,7 @@ sensor{
 }
 
 door{
-  name = "door_shutter",
+  name = "door_statues",
   layer = 0,
   x = 40,
   y = 584,
@@ -9206,6 +9207,24 @@ enemy{
   direction = 0,
   breed = "armos",
   treasure_name = "random",
+}
+
+door{
+  name = "door_shutter_1",
+  layer = 0,
+  x = 232,
+  y = 368,
+  direction = 3,
+  sprite = "entities/door_shutter",
+}
+
+door{
+  name = "door_shutter_2",
+  layer = 0,
+  x = 232,
+  y = 416,
+  direction = 1,
+  sprite = "entities/door_shutter",
 }
 
 tile{
