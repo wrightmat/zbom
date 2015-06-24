@@ -37,7 +37,9 @@ end
 function npc_anouki_3:on_interaction()
   if not game:get_value("b1117") then
     -- If at least Mausoleum not completed, suggest going there instead
-    game:start_dialog("anouki_3.1.not_ready")
+    game:start_dialog("anouki_3.0.snowpeak", function()
+      game:start_dialog("anouki_3.1.not_ready")
+    end)
   else
     game:start_dialog("anouki_3."..anouki_talk..".snowpeak")
     if anouki_talk == 0 then anouki_talk = 1 else anouki_talk = 0 end

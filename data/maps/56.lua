@@ -16,8 +16,8 @@ local function random_walk(npc)
 end
 
 function map:on_started(destination)
-  npc_rito_1:random_walk()
-  npc_rito_3:random_walk()
+  random_walk(npc_rito_1)
+  random_walk(npc_rito_3)
   if game:get_value("i1926") >= 2 and game:get_value("i1927") >= 2 then
     npc_rito_carpenter:remove()
   end

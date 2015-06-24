@@ -2348,6 +2348,24 @@ tile{
   pattern = "4",
 }
 
+destination{
+  name = "from_inside_4",
+  layer = 0,
+  x = 656,
+  y = 773,
+  direction = 3,
+}
+
+npc{
+  name = "npc_rito_1",
+  layer = 0,
+  x = 656,
+  y = 789,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/rito",
+}
+
 wall{
   name = "custom_obstacle_20",
   layer = 0,
@@ -2452,16 +2470,6 @@ wall{
   stops_npcs = true,
   stops_enemies = true,
   stops_blocks = true,
-}
-
-npc{
-  name = "npc_rito_1",
-  layer = 0,
-  x = 384,
-  y = 781,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/rito",
 }
 
 wall{
@@ -2938,7 +2946,7 @@ destination{
   layer = 0,
   x = 296,
   y = 565,
-  direction = 1,
+  direction = 3,
 }
 
 teletransporter{
@@ -2957,7 +2965,7 @@ destination{
   layer = 0,
   x = 592,
   y = 597,
-  direction = 1,
+  direction = 3,
 }
 
 teletransporter{
@@ -2969,14 +2977,6 @@ teletransporter{
   height = 16,
   destination_map = "3",
   destination = "from_septen_3",
-}
-
-destination{
-  name = "from_inside_4",
-  layer = 0,
-  x = 656,
-  y = 773,
-  direction = 1,
 }
 
 teletransporter{
@@ -2993,8 +2993,8 @@ teletransporter{
 npc{
   name = "npc_rito_2",
   layer = 0,
-  x = 656,
-  y = 789,
+  x = 384,
+  y = 765,
   direction = 3,
   subtype = 1,
   sprite = "npc/rito",
@@ -3005,7 +3005,7 @@ destination{
   layer = 0,
   x = 1008,
   y = 717,
-  direction = 1,
+  direction = 3,
 }
 
 teletransporter{
@@ -3024,7 +3024,7 @@ destination{
   layer = 0,
   x = 936,
   y = 541,
-  direction = 1,
+  direction = 3,
 }
 
 teletransporter{
@@ -4923,7 +4923,7 @@ destination{
   layer = 1,
   x = 616,
   y = 757,
-  direction = 1,
+  direction = 3,
 }
 
 teletransporter{

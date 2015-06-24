@@ -1830,7 +1830,7 @@ tile{
   layer = 0,
   x = 560,
   y = 632,
-  width = 128,
+  width = 56,
   height = 8,
   pattern = "675",
 }
@@ -2427,6 +2427,15 @@ tile{
   width = 16,
   height = 24,
   pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 632,
+  y = 632,
+  width = 56,
+  height = 8,
+  pattern = "675",
 }
 
 npc{
@@ -3335,7 +3344,7 @@ destination{
   layer = 0,
   x = 624,
   y = 661,
-  direction = 1,
+  direction = 3,
 }
 
 teletransporter{
@@ -3353,7 +3362,7 @@ custom_entity{
   name = "stone_pile",
   layer = 0,
   x = 808,
-  y = 517,
+  y = 509,
   direction = 3,
   sprite = "entities/stone_pile",
   model = "stone_pile",
