@@ -250,6 +250,3 @@ end
 function npc_kakariko_3:on_interaction()
   game:start_dialog("hylian_3.0.kakariko")
 end
-function npc_kakariko_4:on_interaction()
-  --game:start_dialog("hylian_4.0.kakariko")
-end

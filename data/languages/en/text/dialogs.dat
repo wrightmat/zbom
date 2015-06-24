@@ -1077,7 +1077,7 @@ you could dig it up?
 
 dialog{
   id = "_stamina_gone",
-  skip = "current",
+  skip = "none",
   text = [[
 You're exhausted!
 You won't be able to
@@ -3045,6 +3045,107 @@ That's our best prize!
 You won't be getting
 anything as cool as
 that again...
+  ]]
+}
+
+dialog{
+  id = "council_attendant.0",
+  skip = "current",
+  text = [[
+I'm sorry, but there's
+no one in the office
+currently. I can make an
+appointment for you if
+you'd like, or you can try
+to talk to the Elders in
+person at their Castle chambers.
+  ]]
+}
+
+dialog{
+  id = "council_attendant.1",
+  skip = "current",
+  text = [[
+A Sanctum? I can't say I
+know what that is...$0
+I do know that there are
+temples spread all over
+Hyrule though...
+  ]]
+}
+
+dialog{
+  id = "council_attendant.2",
+  skip = "current",
+  text = [[
+Have you tried the Abandoned
+Pyramid that sits at the
+north end of the Desert of
+the Gerudo?
+  ]]
+}
+
+dialog{
+  id = "council_attendant.3",
+  skip = "current",
+  text = [[
+Have you tried the Mausoleum
+that the Gorons have created
+as a memorial on the east end
+of their mountain?
+  ]]
+}
+
+dialog{
+  id = "council_attendant.4",
+  skip = "current",
+  text = [[
+Have you tried the Lakebed
+Temple that the Zora use to
+pray at the bottom of Lake
+Hylia?
+  ]]
+}
+
+dialog{
+  id = "council_attendant.5",
+  skip = "current",
+  text = [[
+Have you tried the Caverns
+that are nestled in the snowy
+peaks that the Anouki call
+home?
+  ]]
+}
+
+dialog{
+  id = "council_attendant.6",
+  skip = "current",
+  text = [[
+Have you tried the new Tower
+that the Rito have built in
+order to pray to the gods of
+the wind?
+  ]]
+}
+
+dialog{
+  id = "council_attendant.7",
+  skip = "current",
+  text = [[
+Have you tried the old ruins
+in the east or the vast network
+of sewers that run beneath our
+feet?
+  ]]
+}
+
+dialog{
+  id = "council_attendant.8",
+  skip = "current",
+  text = [[
+I'm afraid I've run out of
+ideas...
   ]]
 }
 
@@ -6380,7 +6481,8 @@ land for their farming
 and ranching prowess
 and their prize-winning
 produce, especially
-pumpkins.]]
+pumpkins.
+  ]]
 }
 
 dialog{
@@ -6396,7 +6498,8 @@ underground tunnels.
 If someone could find an
 access to the underground,
 there could possibly be
-a cache of treasure...]]
+a cache of treasure...
+  ]]
 }
 
 dialog{
@@ -6417,7 +6520,8 @@ interest them, no matter
 what it is or who it
 belongs to!
 In general, monkeys
-should just be avoided.]]
+should just be avoided.
+  ]]
 }
 
 dialog{
@@ -6435,7 +6539,13 @@ of the forest, and become
 quite agitated when their
 territory is encrouched
 upon, even to the point
-of shooting trespassers!]]
+of shooting trespassers!
+They can sometimes be
+distracted by strong
+smelling potions, so if
+you encounter a Scrub,
+try giving them one.
+  ]]
 }
 
 dialog{
@@ -6452,7 +6562,8 @@ folk who're avid traders.
 It is said that a Tokay
 will eat pretty much
 anything if placed in
-front of them.]]
+front of them.
+  ]]
 }
 
 dialog{
@@ -6479,7 +6590,8 @@ known for the fact that
 it is almost entirely
 women, with a man being
 born only once every 100
-years.]]
+years.
+  ]]
 }
 
 dialog{
@@ -6497,7 +6609,8 @@ but it has since fallen
 into disrepair.
 The complex is said to
 be swarming with the
-undead.]]
+undead.
+  ]]
 }
 
 dialog{
@@ -6526,7 +6639,148 @@ The capital city of
 Hyrule Castle Town is
 a bustling political
 hub and home to some
-Hylians.]]
+Hylians.
+  ]]
+}
+
+dialog{
+  id = "library_shelf_9",
+  skip = "current",
+  text = [[
+The thriving city of
+Kakariko is home to a
+large group of Hylians
+and Humans. It is seen
+as the cultural hub of
+Hyrule and contains an
+inn, a bar, several shops,
+a theater and many homes.
+  ]]
+}
+
+dialog{
+  id = "library_shelf_10",
+  skip = "current",
+  text = [[
+The Goron people are
+often seen as the friendliest
+of all races in Hyrule.
+They generally embrace
+outsiders and have opened
+their city to all.
+Unfortunately, a recent
+plague has wiped out a
+large portion of the Goron
+population and there are
+still fighting for their
+survival. Due to this, the
+once famous Goron Mines have
+been repurposed in order
+to house their dead.
+  ]]
+}
+
+dialog{
+  id = "library_shelf_11",
+  skip = "current",
+  text = [[
+The sewer system of Hyrule
+is extensive and little
+explored. Some say that you
+can get to anywhere in the
+country from these sewers,
+but few have braved the area
+frequently enough to map it.
+It's also said that pump
+system in the sewers is
+powerful enough to drain
+almost the entirety of
+Lake Hylia, but no one still
+living has seen this done.
+There is a known access to
+the underground sewers from
+the old Eastern Ruins, and
+multiple other accesses have
+been rumored.
+  ]]
+}
+
+dialog{
+  id = "library_shelf_12",
+  skip = "current",
+  text = [[
+The Zora people were once
+a friendly race, but rising
+tension in Hyrule have caused
+them to shut themselves off
+from the rest of the country.
+Their Domain is now protected
+by one of their soldiers at
+all times, and few outsiders
+are ever let in. Even the
+Zora Elder, Jabun, has
+distanced himself from the
+rest of the council.$0
+The Lakebed Temple at which
+the Zora pray at the bottom
+of Lake Hylia has been sealed
+off from all, including
+the Zora themselves, and it
+is rumored to be crawling
+with monsters.
+  ]]
+}
+
+dialog{
+  id = "library_shelf_13",
+  skip = "current",
+  text = [[
+The Anouki race are generally
+a friendly people, but they
+tend to be isolated simply
+due to their geographic
+location. Few people wander
+up to the icy mountains they
+call home, and so Snowpeak
+is all but desolate. There
+is said to be a large network
+of caverns in the area though,
+and it's likely that if they
+could be found, significant
+treasure would be waiting
+to be discovered.
+  ]]
+}
+
+dialog{
+  id = "library_shelf_14",
+  skip = "current",
+  text = [[
+The Rito people are a new
+transplant to Hyrule, but no
+one (including the Rito
+themselves) are sure how they
+got here. They settled in right
+away though, and have already
+built a rope city in which to
+live. Now they are constructing
+a large Tower so they can
+pray to the wind gods. Once
+complete, it will be the largest
+structure in Hyrule. The Rito
+themselves are very friendly
+and eager to help travelers
+to happen upon their city.
+  ]]
+}
+
+
+dialog{
+  id = "library_shelf_15",
+  skip = "current",
+  text = [[
+The Dark Tribe...
+  ]]
 }
 
 dialog{
@@ -7357,6 +7611,96 @@ fully know how we got
 here! Hyrule is a
 magical place, let's
 just leave it at that.
+  ]]
+}
+
+dialog{
+  id = "rito_3.0.septen",
+  skip = "current",
+  text = [[
+The Tower of Winds is
+being constructed just
+west of here. It will
+be a temple for our
+people to pray to the
+gods of the wind. If
+you could get rid of
+the rock pile blocking
+the way, you could
+probably look around
+early, but I wouldn't
+recommend it!
+  ]]
+}
+
+dialog{
+  id = "rito_3.1.septen",
+  skip = "current",
+  text = [[
+Our wonderful Tower of
+Winds is finally complete!
+But it's just our luck,
+we saw a large bird fly
+up there and take roost
+at the top of the Tower!
+We can't possibly go pray
+there now, it's much
+too dangerous. Can you
+do anything to help?
+  ]]
+}
+
+dialog{
+  id = "rito_4.0.septen",
+  skip = "current",
+  text = [[
+There's another entire
+continent across the
+bridge that fell down!
+Can you believe it?
+You won't be able to
+get there right now, but
+if you could you'd be
+able to visit Rauru, Darunia,
+Nabooru, Ruto, or any of
+the other towns in the area!
+  ]]
+}
+
+dialog{
+  id = "rito_4.1.septen",
+  skip = "current",
+  text = [[
+How'd you get the bridge
+back up? Doesn't matter...$0
+My favorite place to visit
+in the Northern Province is
+Three Eye Rock. It's a very
+relaxing beach on the
+southern tip of the continent.
+In fact, the Ocarina patch
+in our own little town will
+get you right there!
+  ]]
+}
+
+
+dialog{
+  id = "rito_5.0.septen",
+  skip = "current",
+  text = [[
+If you're here to see the
+Tower of Winds, you'll have
+to come back later - it's
+still under construction.
+In the mean time, have you
+seen the other Temples of
+Hyrule? There's one in the
+forest, one in the desert,
+one on a mountain, one
+under a lake, one in a
+snowy peak and one in
+ruins.
   ]]
 }
 
@@ -8201,6 +8545,15 @@ dialog{
 <- This way to the
 marvelous new
 Tower of Winds!
+  ]]
+}
+
+dialog{
+  id = "sign.tower_construction",
+  skip = "current",
+  text = [[
+<- Tower of Winds
+under construction.
   ]]
 }
 

@@ -3349,6 +3349,16 @@ teletransporter{
   destination = "from_septen_1",
 }
 
+custom_entity{
+  name = "stone_pile",
+  layer = 0,
+  x = 808,
+  y = 517,
+  direction = 3,
+  sprite = "entities/stone_pile",
+  model = "stone_pile",
+}
+
 tile{
   layer = 1,
   x = 288,

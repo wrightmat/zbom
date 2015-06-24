@@ -2458,7 +2458,7 @@ npc{
   name = "npc_rito_1",
   layer = 0,
   x = 384,
-  y = 757,
+  y = 781,
   direction = 3,
   subtype = 1,
   sprite = "npc/rito",
@@ -2695,7 +2695,6 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
-  behavior = "dialog#sign.tower",
 }
 
 wall{
@@ -3037,6 +3036,16 @@ teletransporter{
   height = 16,
   destination_map = "3",
   destination = "from_septen_6",
+}
+
+npc{
+  name = "npc_rito_3",
+  layer = 0,
+  x = 960,
+  y = 765,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/rito",
 }
 
 tile{

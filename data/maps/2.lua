@@ -541,3 +541,19 @@ function npc_shopkeeper:on_interaction()
     game:start_dialog("shopkeep.0")
   end
 end
+
+function npc_attendant:on_interaction()
+  if game:get_value("i1032") >= 3 then
+    game:start_dialog("council_attendant.1", function()
+      if game:get_value("b1170") then game:start_dialog("council_attendant.7") end
+      if game:get_value("b1150") then game:start_dialog("council_attendant.6") end
+      if game:get_value("b1134") then game:start_dialog("council_attendant.5") end
+      if game:get_value("b1117") then game:start_dialog("council_attendant.4") end
+      if game:get_value("b1082") then game:start_dialog("council_attendant.3") end
+      if game:get_value("b1061") then game:start_dialog("council_attendant.2") end
+      if game:get_value("b1033") then game:start_dialog("council_attendant.8") end
+    end)
+  else
+    game:start_dialog("council_attendant.0")
+  end
+end

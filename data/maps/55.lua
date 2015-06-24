@@ -6,7 +6,7 @@ local game = map:get_game()
 --------------------------------------------------
 
 function map:on_started(destination)
-
+  if game:get_value("b1150") then stone_pile:remove() end -- Tower construction over after Snowpeak Caverns beat
   if game:get_value("b1170") then
     if game:get_value("i1910") < 7 then
       sol.timer.start(1000, function()

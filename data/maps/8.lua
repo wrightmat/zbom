@@ -82,3 +82,33 @@ end
 function shelf_8:on_interaction()
   game:start_dialog("library_shelf_8")
 end
+function shelf_9:on_interaction()
+  game:start_dialog("library_shelf_9")
+end
+function shelf_10:on_interaction()
+  game:start_dialog("library_shelf_10")
+end
+function shelf_11:on_interaction()
+  game:start_dialog("library_shelf_11")
+end
+function shelf_12:on_interaction()
+  game:start_dialog("library_shelf_12")
+end
+function shelf_13:on_interaction()
+  game:start_dialog("library_shelf_13")
+end
+function shelf_14:on_interaction()
+  game:start_dialog("library_shelf_14")
+end
+function shelf_15:on_interaction()
+  game:start_dialog("library_shelf_15")
+end
+function shelf_16:on_interaction()
+  game:start_dialog("library_shelf")
+end
+function shelf_17:on_interaction()
+  game:start_dialog("library_shelf")
+end
+function shelf_18:on_interaction()
+  game:start_dialog("library_shelf")
+end

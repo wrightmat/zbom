@@ -8629,6 +8629,16 @@ destination{
   direction = 0,
 }
 
+npc{
+  name = "npc_attendant",
+  layer = 0,
+  x = 1896,
+  y = 1237,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/hylian_5",
+}
+
 tile{
   layer = 1,
   x = 848,

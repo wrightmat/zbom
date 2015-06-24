@@ -8398,26 +8398,26 @@ tile{
 }
 
 chest{
+  name = "chest_magic_crystal_2",
   layer = 0,
   x = 600,
   y = 1181,
-  name = "chest_magic_crystal_2",
   treasure_name = "plume",
   treasure_savegame_variable = "b1783",
   sprite = "entities/chest",
 }
 
 teletransporter{
+  name = "fell_down",
   layer = 0,
   x = 512,
   y = 1168,
   width = 16,
   height = 16,
-  name = "fell_down",
-  sprite = "entities/teletransporter",
-  sound = "warp",
   destination_map = "31",
   destination = "from_lair",
+  sprite = "entities/teletransporter",
+  sound = "warp",
 }
 
 wall{
@@ -8427,39 +8427,39 @@ wall{
   width = 32,
   height = 16,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 chest{
+  name = "chest_magic_crystal",
   layer = 0,
   x = 1232,
   y = 1229,
-  name = "chest_magic_crystal",
   treasure_name = "crystal",
   treasure_savegame_variable = "b1781",
   sprite = "entities/chest",
 }
 
 teletransporter{
+  name = "to_basement",
   layer = 0,
   x = 1456,
   y = 624,
   width = 32,
   height = 32,
-  name = "to_basement",
-  sound = "hero_falls",
   destination_map = "207",
   destination = "from_above",
+  sound = "hero_falls",
 }
 
 door{
+  name = "door_key1_1",
   layer = 0,
   x = 1064,
   y = 424,
-  name = "door_key1_1",
   direction = 0,
   sprite = "entities/door_small_key",
   savegame_variable = "b1135",
@@ -8470,10 +8470,10 @@ door{
 }
 
 door{
+  name = "door_key1_2",
   layer = 0,
   x = 1112,
   y = 424,
-  name = "door_key1_2",
   direction = 2,
   sprite = "entities/door_small_key",
   savegame_variable = "b1135",
@@ -8484,77 +8484,75 @@ door{
 }
 
 enemy{
+  name = "chuchu_map_1",
   layer = 0,
   x = 96,
   y = 117,
-  name = "chuchu_map_1",
   direction = 3,
   breed = "chuchu_blue",
 }
 
 enemy{
+  name = "chuchu_map_2",
   layer = 0,
   x = 104,
   y = 237,
-  name = "chuchu_map_2",
   direction = 3,
   breed = "chuchu_blue",
 }
 
 enemy{
+  name = "chuchu_map_3",
   layer = 0,
   x = 192,
   y = 221,
-  name = "chuchu_map_3",
   direction = 3,
   breed = "chuchu_blue",
 }
 
 enemy{
+  name = "chuchu_map_4",
   layer = 0,
   x = 184,
   y = 109,
-  name = "chuchu_map_4",
   direction = 3,
   breed = "chuchu_blue",
 }
 
 chest{
+  name = "chest_map",
   layer = 0,
   x = 136,
   y = 157,
-  name = "chest_map",
   treasure_name = "map",
   treasure_savegame_variable = "b1127",
   sprite = "entities/chest",
 }
 
 enemy{
+  name = "bubble",
   layer = 0,
   x = 592,
   y = 896,
-  name = "bubble",
   direction = 3,
   breed = "bubble_blue",
 }
 
 custom_entity{
+  name = "quicksand_3",
   layer = 0,
   x = 344,
   y = 240,
-  width = 16,
-  height = 16,
-  name = "quicksand_3",
   direction = 3,
   sprite = "entities/quicksand",
   model = "quicksand",
 }
 
 stream{
+  name = "stream",
   layer = 0,
   x = 160,
   y = 581,
-  name = "stream",
   direction = 0,
   sprite = "entities/stream_water",
   allow_movement = false,
@@ -8563,10 +8561,10 @@ stream{
 }
 
 stream{
+  name = "stream_2",
   layer = 0,
   x = 176,
   y = 581,
-  name = "stream_2",
   direction = 0,
   sprite = "entities/stream_water",
   allow_movement = false,
@@ -8575,10 +8573,10 @@ stream{
 }
 
 stream{
+  name = "stream_water",
   layer = 0,
   x = 1376,
   y = 949,
-  name = "stream_water",
   direction = 4,
   sprite = "entities/stream_water",
   allow_movement = false,
@@ -8587,10 +8585,10 @@ stream{
 }
 
 stream{
+  name = "stream_water_2",
   layer = 0,
   x = 1360,
   y = 949,
-  name = "stream_water_2",
   direction = 4,
   sprite = "entities/stream_water",
   allow_movement = false,
@@ -8599,19 +8597,19 @@ stream{
 }
 
 enemy{
+  name = "bari",
   layer = 0,
   x = 616,
   y = 221,
-  name = "bari",
   direction = 3,
   breed = "bari_red",
 }
 
 stream{
+  name = "stream_water_3",
   layer = 0,
   x = 768,
   y = 677,
-  name = "stream_water_3",
   direction = 4,
   sprite = "entities/stream_water",
   allow_movement = false,
@@ -8620,10 +8618,10 @@ stream{
 }
 
 stream{
+  name = "stream_water_4",
   layer = 0,
   x = 752,
   y = 677,
-  name = "stream_water_4",
   direction = 4,
   sprite = "entities/stream_water",
   allow_movement = false,
@@ -8632,63 +8630,59 @@ stream{
 }
 
 dynamic_tile{
+  name = "grate",
   layer = 0,
   x = 1456,
   y = 624,
+  pattern = "623",
   width = 32,
   height = 32,
-  name = "grate",
-  pattern = "623",
   enabled_at_start = true,
 }
 
 door{
+  name = "door_miniboss_1",
   layer = 0,
   x = 1368,
   y = 440,
-  name = "door_miniboss_1",
   direction = 0,
   sprite = "entities/door_shutter",
 }
 
 door{
+  name = "door_miniboss_2",
   layer = 0,
   x = 1416,
   y = 440,
-  name = "door_miniboss_2",
   direction = 2,
   sprite = "entities/door_shutter",
 }
 
 custom_entity{
+  name = "quicksand_2",
   layer = 0,
   x = 1456,
   y = 472,
-  width = 16,
-  height = 16,
-  name = "quicksand_2",
   direction = 3,
   sprite = "entities/quicksand",
   model = "quicksand",
 }
 
 custom_entity{
+  name = "quicksand_4",
   layer = 0,
   x = 1488,
   y = 472,
-  width = 16,
-  height = 16,
-  name = "quicksand_4",
   direction = 3,
   sprite = "entities/quicksand",
   model = "quicksand",
 }
 
 chest{
+  name = "chest_item",
   layer = 0,
   x = 1472,
   y = 405,
-  name = "chest_item",
   treasure_name = "hookshot",
   treasure_savegame_variable = "b1130",
   sprite = "entities/chest_big",
@@ -8716,10 +8710,10 @@ destructible{
 }
 
 enemy{
+  name = "miniboss_aquadraco",
   layer = 0,
   x = 1312,
   y = 405,
-  name = "miniboss_aquadraco",
   direction = 3,
   breed = "aquadraco",
   rank = 1,
@@ -8728,20 +8722,20 @@ enemy{
 }
 
 chest{
+  name = "chest_small_key",
   layer = 0,
   x = 584,
   y = 173,
-  name = "chest_small_key",
   treasure_name = "small_key",
   treasure_savegame_variable = "b1121",
   sprite = "entities/chest",
 }
 
 enemy{
+  name = "bari_2",
   layer = 0,
   x = 552,
   y = 213,
-  name = "bari_2",
   direction = 3,
   breed = "bari_red",
 }
@@ -8752,8 +8746,8 @@ wall{
   y = 224,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -8763,66 +8757,66 @@ wall{
   y = 224,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 enemy{
+  name = "aquadracini_1",
   layer = 0,
   x = 1248,
   y = 621,
-  name = "aquadracini_1",
   direction = 3,
   breed = "aquadracini",
   treasure_name = "random",
 }
 
 enemy{
+  name = "aquadracini_2",
   layer = 0,
   x = 1160,
   y = 605,
-  name = "aquadracini_2",
   direction = 3,
   breed = "aquadracini",
   treasure_name = "random",
 }
 
 enemy{
+  name = "aquadracini_3",
   layer = 0,
   x = 1200,
   y = 645,
-  name = "aquadracini_3",
   direction = 3,
   breed = "aquadracini",
   treasure_name = "random",
 }
 
 enemy{
+  name = "aquadracini_4",
   layer = 0,
   x = 1264,
   y = 661,
-  name = "aquadracini_4",
   direction = 3,
   breed = "aquadracini",
   treasure_name = "random",
 }
 
 chest{
+  name = "chest_big_key",
   layer = 0,
   x = 1208,
   y = 597,
-  name = "chest_big_key",
   treasure_name = "big_key",
   treasure_savegame_variable = "b1129",
   sprite = "entities/chest",
 }
 
 enemy{
+  name = "aquadracini_5",
   layer = 0,
   x = 1144,
   y = 653,
-  name = "aquadracini_5",
   direction = 3,
   breed = "aquadracini",
   treasure_name = "random",
@@ -8834,8 +8828,8 @@ wall{
   y = 736,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -8845,8 +8839,8 @@ wall{
   y = 344,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -8856,8 +8850,8 @@ wall{
   y = 416,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -8867,8 +8861,8 @@ wall{
   y = 416,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -8878,62 +8872,62 @@ wall{
   y = 432,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 enemy{
+  name = "tektite_1",
   layer = 0,
   x = 1128,
   y = 197,
-  name = "tektite_1",
   direction = 3,
   breed = "tektite_blue",
 }
 
 enemy{
+  name = "tektite_2",
   layer = 0,
   x = 888,
   y = 205,
-  name = "tektite_2",
   direction = 3,
   breed = "tektite_blue",
 }
 
 enemy{
+  name = "tektite_3",
   layer = 0,
   x = 984,
   y = 197,
-  name = "tektite_3",
   direction = 3,
   breed = "tektite_blue",
 }
 
 enemy{
+  name = "tektite_4",
   layer = 0,
   x = 1056,
   y = 245,
-  name = "tektite_4",
   direction = 3,
   breed = "tektite_blue",
 }
 
 enemy{
+  name = "tektite_5",
   layer = 0,
   x = 1184,
   y = 245,
-  name = "tektite_5",
   direction = 3,
   breed = "tektite_blue",
 }
 
 enemy{
+  name = "tektite_6",
   layer = 0,
   x = 928,
   y = 245,
-  name = "tektite_6",
   direction = 3,
   breed = "tektite_blue",
 }
@@ -8944,16 +8938,16 @@ wall{
   y = 272,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 enemy{
+  name = "bubble_2",
   layer = 0,
   x = 592,
   y = 672,
-  name = "bubble_2",
   direction = 3,
   breed = "bubble_blue",
 }
@@ -8964,8 +8958,8 @@ wall{
   y = 600,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -8975,8 +8969,8 @@ wall{
   y = 528,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -8986,8 +8980,8 @@ wall{
   y = 960,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -8997,8 +8991,8 @@ wall{
   y = 848,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -9008,8 +9002,8 @@ wall{
   y = 848,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -9019,8 +9013,8 @@ wall{
   y = 808,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -9030,8 +9024,8 @@ wall{
   y = 656,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -9042,8 +9036,8 @@ wall{
   y = 728,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -9054,8 +9048,8 @@ wall{
   y = 408,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -9065,8 +9059,8 @@ wall{
   y = 336,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -9076,8 +9070,8 @@ wall{
   y = 224,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -9087,8 +9081,8 @@ wall{
   y = 224,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -9098,8 +9092,8 @@ wall{
   y = 432,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -9109,21 +9103,21 @@ wall{
   y = 432,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "obstacle",
   layer = 0,
   x = 1224,
   y = 1120,
   width = 16,
   height = 8,
-  name = "obstacle",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -9134,8 +9128,8 @@ wall{
   y = 1144,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -9146,8 +9140,8 @@ wall{
   y = 432,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -9158,8 +9152,8 @@ wall{
   y = 528,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -9170,28 +9164,28 @@ wall{
   y = 600,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 sensor{
+  name = "sensor_room_flooded",
   layer = 0,
   x = 1216,
   y = 1077,
   width = 48,
   height = 16,
-  name = "sensor_room_flooded",
 }
 
 sensor{
+  name = "sensor_miniboss",
   layer = 0,
   x = 1144,
   y = 421,
   width = 16,
   height = 48,
-  name = "sensor_miniboss",
 }
 
 destructible{
@@ -9321,10 +9315,10 @@ destructible{
 }
 
 switch{
+  name = "switch_puzzle_1",
   layer = 0,
   x = 240,
   y = 536,
-  name = "switch_puzzle_1",
   subtype = "walkable",
   sprite = "entities/switch",
   sound = "switch",
@@ -9333,10 +9327,10 @@ switch{
 }
 
 switch{
+  name = "switch_puzzle_2",
   layer = 0,
   x = 208,
   y = 568,
-  name = "switch_puzzle_2",
   subtype = "walkable",
   sprite = "entities/switch",
   sound = "switch",
@@ -9345,22 +9339,21 @@ switch{
 }
 
 dynamic_tile{
+  name = "spikes_puzzle",
   layer = 0,
   x = 224,
   y = 568,
+  pattern = "518",
   width = 16,
   height = 16,
-  name = "spikes_puzzle",
-  pattern = "518",
   enabled_at_start = true,
 }
 
 block{
+  name = "block_puzzle_1",
   layer = 0,
   x = 296,
   y = 581,
-  name = "block_puzzle_1",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = true,
@@ -9368,11 +9361,10 @@ block{
 }
 
 block{
+  name = "block_puzzle_2",
   layer = 0,
   x = 360,
   y = 565,
-  name = "block_puzzle_2",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = true,
@@ -9380,19 +9372,19 @@ block{
 }
 
 door{
+  name = "door_puzzle_1",
   layer = 0,
   x = 344,
   y = 392,
-  name = "door_puzzle_1",
   direction = 1,
   sprite = "entities/door_shutter",
 }
 
 door{
+  name = "door_puzzle_2",
   layer = 0,
   x = 344,
   y = 344,
-  name = "door_puzzle_2",
   direction = 3,
   sprite = "entities/door_shutter",
 }
@@ -9454,13 +9446,13 @@ destructible{
 }
 
 dynamic_tile{
+  name = "water_chest",
   layer = 0,
   x = 1168,
   y = 1136,
+  pattern = "701",
   width = 128,
   height = 128,
-  name = "water_chest",
-  pattern = "701",
   enabled_at_start = true,
 }
 
@@ -9555,10 +9547,10 @@ destructible{
 }
 
 chest{
+  name = "chest_crystal",
   layer = 0,
   x = 208,
   y = 909,
-  name = "chest_crystal",
   treasure_name = "crystal",
   treasure_savegame_variable = "b1784",
   sprite = "entities/chest",
@@ -9571,60 +9563,60 @@ wall{
   width = 48,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 sensor{
+  name = "set_intermediate_layer",
   layer = 0,
   x = 608,
   y = 1021,
   width = 16,
   height = 16,
-  name = "set_intermediate_layer",
 }
 
 dynamic_tile{
+  name = "water_room1_1",
   layer = 0,
   x = 456,
   y = 1096,
+  pattern = "701",
   width = 240,
   height = 160,
-  name = "water_room1_1",
-  pattern = "701",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "water_room1_2",
   layer = 0,
   x = 648,
   y = 1032,
+  pattern = "701",
   width = 48,
   height = 64,
-  name = "water_room1_2",
-  pattern = "701",
   enabled_at_start = true,
 }
 
 npc{
+  name = "npc_zora",
   layer = 0,
   x = 640,
   y = 893,
-  name = "npc_zora",
   direction = 3,
-  subtype = "0",
-  sprite = "npc/zora",
+  subtype = 0,
+  sprite = "npc/zora_juba",
 }
 
 sensor{
+  name = "set_intermediate_layer_2",
   layer = 0,
   x = 448,
   y = 1173,
   width = 16,
   height = 32,
-  name = "set_intermediate_layer_2",
 }
 
 wall{
@@ -10308,29 +10300,29 @@ wall{
   y = 1032,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 teletransporter{
+  name = "to_outside",
   layer = 1,
   x = 816,
   y = 1136,
   width = 16,
   height = 16,
-  name = "to_outside",
-  sprite = "entities/teletransporter",
-  sound = "warp",
   destination_map = "31",
   destination = "from_lair",
+  sprite = "entities/teletransporter",
+  sound = "warp",
 }
 
 destination{
+  name = "from_outside",
   layer = 1,
   x = 824,
   y = 1125,
-  name = "from_outside",
   direction = 1,
   default = true,
 }
@@ -10392,8 +10384,8 @@ wall{
   width = 16,
   height = 16,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
 }
 
 wall{
@@ -10403,8 +10395,8 @@ wall{
   width = 8,
   height = 16,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
 }
 
 jumper{
