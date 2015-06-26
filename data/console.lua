@@ -9,11 +9,11 @@ local console = {
   history_capacity = 50,   -- Maximum size of the history.
   history_position = 1,    -- Current position when browsing the history.
   input_text_surface = sol.text_surface.create{
-    font = "minecraftia",
+    font = "lttp",
     font_size = 8,
   },
   output_text_surface = sol.text_surface.create{
-    font = "minecraftia",
+    font = "lttp",
     font_size = 8,
   },
 }

@@ -52,12 +52,15 @@ function game:initialize_dialog_box()
   game.dialog_box = dialog_box
 
   -- Initialize dialog box data.
+  local font, font_size = sol.language.get_dialog_font()
   for i = 1, nb_visible_lines do
     dialog_box.lines[i] = ""
     dialog_box.line_surfaces[i] = sol.text_surface.create{
-      font = "lttp",
       horizontal_alignment = "left",
       vertical_alignment = "top",
+      rendering_mode = "antialiasing",
+      font = font,
+      font_size = font_size,
     }
   end
   dialog_box.dialog_surface = sol.surface.create(sol.video.get_quest_size())

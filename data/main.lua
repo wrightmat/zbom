@@ -248,8 +248,8 @@ function sol.language.get_dialog_font(language)
     font = "zqy-microhei"
     size = 12
   else
-    font = "la"
-    size = 11
+    font = "lttp"
+    size = 14
   end
 
   return font, size
@@ -268,6 +268,24 @@ function sol.language.get_menu_font(language)
   else
     font = "minecraftia"
     size = 8
+  end
+
+  return font, size
+end
+
+-- Returns the font and size to be used to display text as the Book of Mudora
+-- depending on the specified language (the current one by default).
+function sol.language.get_book_font(language)
+  language = language or sol.language.get_language()
+
+  local font, size
+  if language == "zh_TW" or language == "zh_CN" then
+    -- Chinese font.
+    font = "wqy-microhei"
+    size = 12
+  else
+    font = "bom"
+    size = 14
   end
 
   return font, size

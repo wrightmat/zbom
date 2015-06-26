@@ -3,7 +3,6 @@
 local floor_view = {}
 
 function floor_view:new(game)
-
   local object = {}
   setmetatable(object, self)
   self.__index = self
@@ -14,7 +13,6 @@ function floor_view:new(game)
 end
 
 function floor_view:initialize(game)
-
   self.game = game
   self.visible = false
   self.surface = sol.surface.create(32, 85)
@@ -23,7 +21,6 @@ function floor_view:initialize(game)
 end
 
 function floor_view:on_map_changed(map)
-
   local need_rebuild = false
   local floor = map:get_floor()
   if floor == self.floor
@@ -31,7 +28,7 @@ function floor_view:on_map_changed(map)
     -- No floor or unchanged floor.
     self.visible = false
   else
-    -- Show the floor view during 3 seconds.
+    -- Show the floor view for 3 seconds.
     self.visible = true
     local timer = sol.timer.start(3000, function()
       self.visible = false
@@ -48,18 +45,17 @@ function floor_view:on_map_changed(map)
 end
 
 function floor_view:rebuild_surface()
-
   self.surface:clear()
 
   local highest_floor_displayed
   local dungeon = self.game:get_dungeon()
 
   if dungeon ~= nil and self.floor ~= nil then
-    -- We are in a dungeon: show the neighboor floors before the current one.
+    -- We are in a dungeon: show the neighbor floors before the current one.
     local nb_floors = dungeon.highest_floor - dungeon.lowest_floor + 1
     local nb_floors_displayed = math.min(7, nb_floors)
 
-    -- If there are less 7 floors or less, show them all.
+    -- If there are 7 floors or less, show them all.
     if nb_floors <= 7 then
       highest_floor_displayed = dungeon.highest_floor
     elseif self.floor >= dungeon.highest_floor - 2 then
@@ -101,7 +97,6 @@ function floor_view:set_dst_position(x, y)
 end
 
 function floor_view:on_draw(dst_surface)
-
   if self.visible then
     local x, y = self.dst_x, self.dst_y
     local width, height = dst_surface:get_size()
@@ -117,4 +112,3 @@ function floor_view:on_draw(dst_surface)
 end
 
 return floor_view
-
