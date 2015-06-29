@@ -3,7 +3,7 @@ properties{
   y = 3363,
   width = 1120,
   height = 1120,
-  world = "outside_world",
+  world = "outside_north",
   tileset = "2",
   music = "same",
 }
@@ -4122,60 +4122,60 @@ tile{
 }
 
 teletransporter{
+  name = "to_L4",
   layer = 0,
   x = 1120,
   y = 8,
   width = 16,
   height = 960,
-  name = "to_L4",
   transition = "scrolling",
   destination_map = "132",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_J4",
   layer = 0,
   x = -16,
   y = 504,
   width = 16,
   height = 576,
-  name = "to_J4",
   transition = "scrolling",
   destination_map = "123",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_K5",
   layer = 0,
   x = 40,
   y = 1120,
   width = 992,
   height = 16,
-  name = "to_K5",
   transition = "scrolling",
   destination_map = "128",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_J4_2",
   layer = 0,
   x = -16,
   y = 0,
   width = 16,
   height = 432,
-  name = "to_J4_2",
   transition = "scrolling",
   destination_map = "123",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_K3",
   layer = 0,
   x = 0,
   y = -16,
   width = 944,
   height = 16,
-  name = "to_K3",
   transition = "scrolling",
   destination_map = "126",
   destination = "_side",
@@ -5073,23 +5073,23 @@ destructible{
 }
 
 teletransporter{
+  name = "to_subrosia",
   layer = 0,
   x = 328,
   y = 128,
   width = 16,
   height = 16,
-  name = "to_subrosia",
-  sprite = "entities/teletransporter_subrosia",
-  sound = "warp",
   destination_map = "159",
   destination = "from_surface",
+  sprite = "entities/teletransporter_subrosia",
+  sound = "warp",
 }
 
 destination{
+  name = "from_subrosia",
   layer = 0,
   x = 336,
   y = 165,
-  name = "from_subrosia",
   direction = 3,
 }
 

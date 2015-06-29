@@ -3,7 +3,7 @@ properties{
   y = 3363,
   width = 1120,
   height = 1120,
-  world = "outside_world",
+  world = "outside_north",
   tileset = "2",
   music = "town_mido",
 }
@@ -2862,60 +2862,60 @@ tile{
 }
 
 teletransporter{
+  name = "to_G4_water",
   layer = 0,
   x = -16,
   y = 976,
   width = 16,
   height = 144,
-  name = "to_G4_water",
   transition = "scrolling",
   destination_map = "111",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_H5_water",
   layer = 0,
   x = 0,
   y = 1120,
   width = 1120,
   height = 16,
-  name = "to_H5_water",
   transition = "scrolling",
   destination_map = "58",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_I4_water",
   layer = 0,
   x = 1120,
   y = 1008,
   width = 16,
   height = 112,
-  name = "to_I4_water",
   transition = "scrolling",
   destination_map = "119",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_G4",
   layer = 0,
   x = -16,
   y = 0,
   width = 16,
   height = 928,
-  name = "to_G4",
   transition = "scrolling",
   destination_map = "111",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_I4",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 960,
-  name = "to_I4",
   transition = "scrolling",
   destination_map = "119",
   destination = "_side",
@@ -3646,21 +3646,21 @@ wall{
 }
 
 teletransporter{
+  name = "to_fairy",
   layer = 0,
   x = 648,
   y = 728,
   width = 16,
   height = 16,
-  name = "to_fairy",
   destination_map = "168",
   destination = "from_outside",
 }
 
 destination{
+  name = "from_fairy",
   layer = 0,
   x = 656,
   y = 717,
-  name = "from_fairy",
   direction = 1,
 }
 
@@ -3731,12 +3731,12 @@ destructible{
 }
 
 teletransporter{
+  name = "to_H3",
   layer = 0,
   x = 0,
   y = -16,
   width = 1120,
   height = 16,
-  name = "to_H3",
   transition = "scrolling",
   destination_map = "114",
   destination = "_side",

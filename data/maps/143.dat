@@ -3,7 +3,7 @@ properties{
   y = 3363,
   width = 1120,
   height = 1120,
-  world = "outside_world",
+  world = "outside_north",
   tileset = "2",
   music = "same",
 }
@@ -4815,83 +4815,83 @@ tile{
 }
 
 teletransporter{
+  name = "to_N5",
   layer = 0,
   x = 256,
   y = 1120,
   width = 800,
   height = 16,
-  name = "to_N5",
   transition = "scrolling",
   destination_map = "144",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_M4",
   layer = 0,
   x = -16,
   y = 456,
   width = 16,
   height = 32,
-  name = "to_M4",
   transition = "scrolling",
   destination_map = "137",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_O4",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 1024,
-  name = "to_O4",
   transition = "scrolling",
   destination_map = "149",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_N3",
   layer = 0,
   x = 0,
   y = -16,
   width = 1120,
   height = 16,
-  name = "to_N3",
   transition = "scrolling",
   destination_map = "142",
   destination = "_side",
 }
 
 dynamic_tile{
+  name = "door_1",
   layer = 0,
   x = 752,
   y = 840,
+  pattern = "1120",
   width = 16,
   height = 16,
-  name = "door_1",
-  pattern = "1120",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "door_2",
   layer = 0,
   x = 952,
   y = 512,
+  pattern = "1120",
   width = 16,
   height = 16,
-  name = "door_2",
-  pattern = "1120",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "door_3",
   layer = 0,
   x = 880,
   y = 168,
+  pattern = "1120",
   width = 16,
   height = 16,
-  name = "door_3",
-  pattern = "1120",
   enabled_at_start = true,
 }
 
@@ -5435,12 +5435,12 @@ destructible{
 }
 
 teletransporter{
+  name = "to_M4_water",
   layer = 0,
   x = -16,
   y = 64,
   width = 16,
   height = 384,
-  name = "to_M4_water",
   transition = "scrolling",
   destination_map = "137",
   destination = "_side",
@@ -5467,24 +5467,24 @@ jumper{
 }
 
 teletransporter{
+  name = "to_M4_water_2",
   layer = 0,
   x = -16,
   y = 496,
   width = 16,
   height = 624,
-  name = "to_M4_water_2",
   transition = "scrolling",
   destination_map = "137",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_N5_water",
   layer = 0,
   x = 0,
   y = 1120,
   width = 208,
   height = 16,
-  name = "to_N5_water",
   transition = "scrolling",
   destination_map = "144",
   destination = "_side",

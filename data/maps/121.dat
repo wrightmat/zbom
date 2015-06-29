@@ -3,7 +3,7 @@ properties{
   y = 1121,
   width = 1120,
   height = 1120,
-  world = "outside_world",
+  world = "outside_north",
   tileset = "2",
   music = "same",
 }
@@ -2034,84 +2034,84 @@ tile{
 }
 
 teletransporter{
+  name = "to_J3",
   layer = 0,
   x = 0,
   y = 1120,
   width = 784,
   height = 16,
-  name = "to_J3",
   transition = "scrolling",
   destination_map = "122",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_J1",
   layer = 0,
   x = 0,
   y = -16,
   width = 576,
   height = 16,
-  name = "to_J1",
   transition = "scrolling",
   destination_map = "120",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_J3_water",
   layer = 0,
   x = 832,
   y = 1120,
   width = 288,
   height = 16,
-  name = "to_J3_water",
   transition = "scrolling",
   destination_map = "122",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_J1_water",
   layer = 0,
   x = 624,
   y = -16,
   width = 496,
   height = 16,
-  name = "to_J1_water",
   transition = "scrolling",
   destination_map = "120",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_K2",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 288,
-  name = "to_K2",
   transition = "scrolling",
   destination_map = "125",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_I2",
   layer = 0,
   x = -16,
   y = 576,
   width = 16,
   height = 544,
-  name = "to_I2",
   transition = "scrolling",
   destination_map = "117",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_I2_2",
   layer = 0,
   x = -16,
   y = 0,
   width = 16,
   height = 272,
-  name = "to_I2_2",
   transition = "scrolling",
   destination_map = "117",
   destination = "_side",

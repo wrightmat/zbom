@@ -3,7 +3,7 @@ properties{
   y = 1121,
   width = 1120,
   height = 1120,
-  world = "outside_world",
+  world = "outside_north",
   tileset = "2",
   music = "same",
 }
@@ -4041,24 +4041,24 @@ tile{
 }
 
 teletransporter{
+  name = "to_H3",
   layer = 0,
   x = 0,
   y = 1120,
   width = 1120,
   height = 16,
-  name = "to_H3",
   transition = "scrolling",
   destination_map = "114",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_I2",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 1120,
-  name = "to_I2",
   transition = "scrolling",
   destination_map = "117",
   destination = "_side",
@@ -4279,63 +4279,63 @@ destructible{
 }
 
 teletransporter{
+  name = "to_H1",
   layer = 0,
   x = 0,
   y = -16,
   width = 1120,
   height = 16,
-  name = "to_H1",
   transition = "scrolling",
   destination_map = "112",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_G2",
   layer = 0,
   x = -16,
   y = 0,
   width = 16,
   height = 1120,
-  name = "to_G2",
   transition = "scrolling",
   destination_map = "109",
   destination = "_side",
 }
 
 destination{
+  name = "from_desert_entrance",
   layer = 0,
   x = 152,
   y = 181,
-  name = "from_desert_entrance",
   direction = 3,
 }
 
 destination{
+  name = "from_desert_cave",
   layer = 0,
   x = 168,
   y = 453,
-  name = "from_desert_cave",
   direction = 3,
 }
 
 teletransporter{
+  name = "to_desert_entrance",
   layer = 0,
   x = 144,
   y = 152,
   width = 16,
   height = 16,
-  name = "to_desert_entrance",
   destination_map = "113",
   destination = "from_desert_cave",
 }
 
 teletransporter{
+  name = "to_desert_cave",
   layer = 0,
   x = 160,
   y = 416,
   width = 16,
   height = 16,
-  name = "to_desert_cave",
   destination_map = "113",
   destination = "from_desert_entrance",
 }

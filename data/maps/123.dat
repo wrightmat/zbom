@@ -3,7 +3,7 @@ properties{
   y = 3363,
   width = 1120,
   height = 1120,
-  world = "outside_world",
+  world = "outside_north",
   tileset = "2",
   music = "same",
 }
@@ -4050,107 +4050,107 @@ tile{
 }
 
 teletransporter{
+  name = "to_K4",
   layer = 0,
   x = 1120,
   y = 496,
   width = 16,
   height = 608,
-  name = "to_K4",
   transition = "scrolling",
   destination_map = "127",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_J3",
   layer = 0,
   x = 0,
   y = -16,
   width = 640,
   height = 16,
-  name = "to_J3",
   transition = "scrolling",
   destination_map = "122",
   destination = "_side",
 }
 
 destination{
+  name = "from_mainland",
   layer = 0,
   x = 296,
   y = 85,
-  name = "from_mainland",
   direction = 3,
   sprite = "entities/destination",
   default = true,
 }
 
 teletransporter{
+  name = "to_island",
   layer = 0,
   x = 1024,
   y = 752,
   width = 16,
   height = 16,
-  name = "to_island",
-  sprite = "entities/teletransporter",
-  sound = "warp",
   destination_map = "123",
   destination = "from_mainland",
+  sprite = "entities/teletransporter",
+  sound = "warp",
 }
 
 teletransporter{
+  name = "to_K4_2",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 416,
-  name = "to_K4_2",
   transition = "scrolling",
   destination_map = "127",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_I4",
   layer = 0,
   x = -16,
   y = 88,
   width = 16,
   height = 336,
-  name = "to_I4",
   transition = "scrolling",
   destination_map = "119",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_J3_water",
   layer = 0,
   x = 688,
   y = -16,
   width = 208,
   height = 16,
-  name = "to_J3_water",
   transition = "scrolling",
   destination_map = "122",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_J3_2",
   layer = 0,
   x = 928,
   y = -16,
   width = 192,
   height = 16,
-  name = "to_J3_2",
   transition = "scrolling",
   destination_map = "122",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_I4_water",
   layer = 0,
   x = -16,
   y = 512,
   width = 16,
   height = 608,
-  name = "to_I4_water",
   transition = "scrolling",
   destination_map = "119",
   destination = "_side",

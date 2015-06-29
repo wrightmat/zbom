@@ -3,7 +3,7 @@ properties{
   y = 0,
   width = 1120,
   height = 1120,
-  world = "outside_world",
+  world = "outside_north",
   tileset = "3",
   music = "same",
 }
@@ -738,60 +738,60 @@ tile{
 }
 
 teletransporter{
+  name = "to_J1",
   layer = 0,
   x = 1120,
   y = 528,
   width = 16,
   height = 592,
-  name = "to_J1",
   transition = "scrolling",
   destination_map = "120",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_I2",
   layer = 0,
   x = 0,
   y = 1120,
   width = 1120,
   height = 16,
-  name = "to_I2",
   transition = "scrolling",
   destination_map = "117",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_H1",
   layer = 0,
   x = -16,
   y = 608,
   width = 16,
   height = 512,
-  name = "to_H1",
   transition = "scrolling",
   destination_map = "112",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_H1_water",
   layer = 0,
   x = -16,
   y = 0,
   width = 16,
   height = 560,
-  name = "to_H1_water",
   transition = "scrolling",
   destination_map = "112",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_J1_water",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 480,
-  name = "to_J1_water",
   transition = "scrolling",
   destination_map = "120",
   destination = "_side",

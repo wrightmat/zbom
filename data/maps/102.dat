@@ -3,7 +3,7 @@ properties{
   y = 2242,
   width = 1120,
   height = 1120,
-  world = "outside_world",
+  world = "outside_north",
   tileset = "2",
   music = "same",
 }
@@ -5526,24 +5526,24 @@ tile{
 }
 
 teletransporter{
+  name = "to_F3",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 944,
-  name = "to_F3",
   transition = "scrolling",
   destination_map = "106",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_E4",
   layer = 0,
   x = 0,
   y = 1120,
   width = 1088,
   height = 16,
-  name = "to_E4",
   transition = "scrolling",
   destination_map = "103",
   destination = "_side",
@@ -5556,8 +5556,8 @@ wall{
   width = 48,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -5673,46 +5673,46 @@ jumper{
 }
 
 dynamic_tile{
+  name = "door_lock",
   layer = 0,
   x = 632,
   y = 560,
+  pattern = "1899",
   width = 16,
   height = 16,
-  name = "door_lock",
-  pattern = "1899",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "door_bomb",
   layer = 0,
   x = 288,
   y = 560,
+  pattern = "1835",
   width = 32,
   height = 16,
-  name = "door_bomb",
-  pattern = "1835",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "block_1",
   layer = 0,
   x = 424,
   y = 312,
+  pattern = "1851",
   width = 16,
   height = 16,
-  name = "block_1",
-  pattern = "1851",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "block_2",
   layer = 0,
   x = 496,
   y = 392,
+  pattern = "1851",
   width = 16,
   height = 16,
-  name = "block_2",
-  pattern = "1851",
   enabled_at_start = true,
 }
 
@@ -6079,24 +6079,24 @@ jumper{
 }
 
 teletransporter{
+  name = "to_D3",
   layer = 0,
   x = -16,
   y = 0,
   width = 16,
   height = 1120,
-  name = "to_D3",
   transition = "scrolling",
   destination_map = "98",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_E2",
   layer = 0,
   x = 0,
   y = -16,
   width = 1120,
   height = 16,
-  name = "to_E2",
   transition = "scrolling",
   destination_map = "101",
   destination = "_side",

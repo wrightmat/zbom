@@ -3,7 +3,7 @@ properties{
   y = 3363,
   width = 1120,
   height = 1120,
-  world = "outside_world",
+  world = "outside_north",
   tileset = "3",
   music = "same",
 }
@@ -4338,36 +4338,36 @@ tile{
 }
 
 teletransporter{
+  name = "to_E4_water",
   layer = 0,
   x = 1120,
   y = 976,
   width = 16,
   height = 144,
-  name = "to_E4_water",
   transition = "scrolling",
   destination_map = "103",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_E4",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 928,
-  name = "to_E4",
   transition = "scrolling",
   destination_map = "103",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_D5",
   layer = 0,
   x = 0,
   y = 1120,
   width = 1120,
   height = 16,
-  name = "to_D5",
   transition = "scrolling",
   destination_map = "54",
   destination = "_side",
@@ -4988,136 +4988,136 @@ destructible{
 }
 
 enemy{
+  name = "octolux_1",
   layer = 0,
   x = 384,
   y = 341,
-  name = "octolux_1",
   direction = 3,
   breed = "octolux",
   treasure_name = "random_north",
 }
 
 enemy{
+  name = "octolux_2",
   layer = 0,
   x = 440,
   y = 509,
-  name = "octolux_2",
   direction = 3,
   breed = "octolux",
   treasure_name = "random_north",
 }
 
 enemy{
+  name = "octolux_3",
   layer = 0,
   x = 520,
   y = 413,
-  name = "octolux_3",
   direction = 3,
   breed = "octolux",
   treasure_name = "random_north",
 }
 
 enemy{
+  name = "octolux_4",
   layer = 0,
   x = 552,
   y = 621,
-  name = "octolux_4",
   direction = 3,
   breed = "octolux",
   treasure_name = "random_north",
 }
 
 enemy{
+  name = "octolux_5",
   layer = 0,
   x = 544,
   y = 53,
-  name = "octolux_5",
   direction = 3,
   breed = "octolux",
   treasure_name = "random_north",
 }
 
 enemy{
+  name = "octolux_6",
   layer = 0,
   x = 336,
   y = 149,
-  name = "octolux_6",
   direction = 3,
   breed = "octolux",
   treasure_name = "random_north",
 }
 
 enemy{
+  name = "octolux_7",
   layer = 0,
   x = 40,
   y = 213,
-  name = "octolux_7",
   direction = 3,
   breed = "octolux",
   treasure_name = "random_north",
 }
 
 enemy{
+  name = "octolux_8",
   layer = 0,
   x = 64,
   y = 893,
-  name = "octolux_8",
   direction = 3,
   breed = "octolux",
   treasure_name = "random_north",
 }
 
 enemy{
+  name = "octolux_9",
   layer = 0,
   x = 64,
   y = 725,
-  name = "octolux_9",
   direction = 3,
   breed = "octolux",
   treasure_name = "random_north",
 }
 
 enemy{
+  name = "octolux_10",
   layer = 0,
   x = 552,
   y = 869,
-  name = "octolux_10",
   direction = 3,
   breed = "octolux",
   treasure_name = "random_north",
 }
 
 teletransporter{
+  name = "to_C4_water",
   layer = 0,
   x = -16,
   y = 976,
   width = 16,
   height = 144,
-  name = "to_C4_water",
   transition = "scrolling",
   destination_map = "95",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_C4",
   layer = 0,
   x = -16,
   y = 0,
   width = 16,
   height = 928,
-  name = "to_C4",
   transition = "scrolling",
   destination_map = "95",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_D3",
   layer = 0,
   x = 0,
   y = -16,
   width = 1120,
   height = 16,
-  name = "to_D3",
   transition = "scrolling",
   destination_map = "98",
   destination = "_side",

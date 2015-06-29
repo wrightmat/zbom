@@ -3,7 +3,7 @@ properties{
   y = 3363,
   width = 1120,
   height = 1120,
-  world = "outside_world",
+  world = "outside_north",
   tileset = "2",
   music = "town_kasuto_old",
 }
@@ -3096,24 +3096,24 @@ tile{
 }
 
 teletransporter{
+  name = "to_L5",
   layer = 0,
   x = 232,
   y = 1120,
   width = 832,
   height = 16,
-  name = "to_L5",
   transition = "scrolling",
   destination_map = "133",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_M4",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 1120,
-  name = "to_M4",
   transition = "scrolling",
   destination_map = "137",
   destination = "_side",
@@ -3186,12 +3186,12 @@ destructible{
 }
 
 teletransporter{
+  name = "to_L3",
   layer = 0,
   x = 256,
   y = -16,
   width = 864,
   height = 16,
-  name = "to_L3",
   transition = "scrolling",
   destination_map = "131",
   destination = "_side",
@@ -3495,12 +3495,12 @@ destructible{
 }
 
 teletransporter{
+  name = "to_K4",
   layer = 0,
   x = -16,
   y = 8,
   width = 16,
   height = 960,
-  name = "to_K4",
   transition = "scrolling",
   destination_map = "127",
   destination = "_side",

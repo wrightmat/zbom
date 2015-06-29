@@ -3,7 +3,7 @@ properties{
   y = 3363,
   width = 1120,
   height = 1120,
-  world = "outside_world",
+  world = "outside_north",
   tileset = "2",
   music = "same",
 }
@@ -4644,130 +4644,130 @@ tile{
 }
 
 teletransporter{
+  name = "to_J4",
   layer = 0,
   x = 1120,
   y = 88,
   width = 16,
   height = 320,
-  name = "to_J4",
   transition = "scrolling",
   destination_map = "123",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_H4",
   layer = 0,
   x = -16,
   y = 0,
   width = 16,
   height = 960,
-  name = "to_H4",
   transition = "scrolling",
   destination_map = "115",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_H4_water",
   layer = 0,
   x = -16,
   y = 1008,
   width = 16,
   height = 112,
-  name = "to_H4_water",
   transition = "scrolling",
   destination_map = "115",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_I5_water",
   layer = 0,
   x = 0,
   y = 1120,
   width = 1120,
   height = 16,
-  name = "to_I5_water",
   transition = "scrolling",
   destination_map = "59",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_J4_water",
   layer = 0,
   x = 1120,
   y = 480,
   width = 16,
   height = 640,
-  name = "to_J4_water",
   transition = "scrolling",
   destination_map = "123",
   destination = "_side",
 }
 
 enemy{
+  name = "octorok_1",
   layer = 0,
   x = 456,
   y = 389,
-  name = "octorok_1",
   direction = 3,
   breed = "octorok_blue",
   treasure_name = "random_north",
 }
 
 enemy{
+  name = "octorok_2",
   layer = 0,
   x = 544,
   y = 685,
-  name = "octorok_2",
   direction = 3,
   breed = "octorok_blue",
   treasure_name = "random_north",
 }
 
 enemy{
+  name = "octorok_3",
   layer = 0,
   x = 920,
   y = 357,
-  name = "octorok_3",
   direction = 3,
   breed = "octorok_blue",
   treasure_name = "random_north",
 }
 
 enemy{
+  name = "octorok_4",
   layer = 0,
   x = 1048,
   y = 213,
-  name = "octorok_4",
   direction = 3,
   breed = "octorok_blue",
   treasure_name = "random_north",
 }
 
 enemy{
+  name = "octorok_5",
   layer = 0,
   x = 792,
   y = 165,
-  name = "octorok_5",
   direction = 3,
   breed = "octorok_blue",
   treasure_name = "random_north",
 }
 
 enemy{
+  name = "octorok_6",
   layer = 0,
   x = 576,
   y = 141,
-  name = "octorok_6",
   direction = 3,
   breed = "octorok_blue",
   treasure_name = "random_north",
 }
 
 enemy{
+  name = "octorok_7",
   layer = 0,
   x = 280,
   y = 757,
-  name = "octorok_7",
   direction = 3,
   breed = "octorok_blue",
   treasure_name = "random_north",
@@ -5159,12 +5159,12 @@ destructible{
 }
 
 teletransporter{
+  name = "to_I3",
   layer = 0,
   x = 0,
   y = -16,
   width = 1120,
   height = 16,
-  name = "to_I3",
   transition = "scrolling",
   destination_map = "118",
   destination = "_side",

@@ -3,7 +3,7 @@ properties{
   y = 4484,
   width = 1120,
   height = 1120,
-  world = "outside_world",
+  world = "outside_north",
   tileset = "2",
   music = "town_kasuto_old",
 }
@@ -6180,105 +6180,105 @@ wall{
   width = 16,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 teletransporter{
+  name = "to_L5",
   layer = 0,
   x = -16,
   y = 72,
   width = 16,
   height = 800,
-  name = "to_L5",
   transition = "scrolling",
   destination_map = "133",
   destination = "_side",
 }
 
 npc{
+  name = "sign_library",
   layer = 0,
   x = 360,
   y = 613,
-  name = "sign_library",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
   behavior = "dialog#sign.ancient_library",
 }
 
 teletransporter{
+  name = "to_M4",
   layer = 0,
   x = 0,
   y = -16,
   width = 1040,
   height = 16,
-  name = "to_M4",
   transition = "scrolling",
   destination_map = "137",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_N5",
   layer = 0,
   x = 1120,
   y = 1072,
   width = 16,
   height = 48,
-  name = "to_N5",
   transition = "scrolling",
   destination_map = "144",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_M6",
   layer = 0,
   x = 896,
   y = 1120,
   width = 224,
   height = 16,
-  name = "to_M6",
   transition = "scrolling",
   destination_map = "139",
   destination = "_side",
 }
 
 destination{
+  name = "from_library_1",
   layer = 0,
   x = 384,
   y = 605,
-  name = "from_library_1",
   direction = 3,
 }
 
 destination{
+  name = "from_library_2",
   layer = 0,
   x = 512,
   y = 605,
-  name = "from_library_2",
   direction = 3,
 }
 
 teletransporter{
+  name = "to_library_1",
   layer = 0,
   x = 376,
   y = 576,
   width = 16,
   height = 16,
-  name = "to_library_1",
   destination_map = "8",
   destination = "from_outside_door1",
 }
 
 teletransporter{
+  name = "to_library_2",
   layer = 0,
   x = 504,
   y = 576,
   width = 16,
   height = 16,
-  name = "to_library_2",
   destination_map = "8",
   destination = "from_outside_door2",
 }
@@ -6537,46 +6537,46 @@ destructible{
 }
 
 npc{
+  name = "torch_ordona",
   layer = 0,
   x = 320,
   y = 589,
-  name = "torch_ordona",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/torch_wood",
   behavior = "item#lamp",
 }
 
 dynamic_tile{
+  name = "door",
   layer = 0,
   x = 504,
   y = 584,
+  pattern = "1120",
   width = 16,
   height = 16,
-  name = "door",
-  pattern = "1120",
   enabled_at_start = true,
 }
 
 teletransporter{
+  name = "to_M4_water",
   layer = 0,
   x = 1088,
   y = -16,
   width = 32,
   height = 16,
-  name = "to_M4_water",
   transition = "scrolling",
   destination_map = "137",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_N5_water",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 208,
-  name = "to_N5_water",
   transition = "scrolling",
   destination_map = "144",
   destination = "_side",
