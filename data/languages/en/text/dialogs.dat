@@ -3555,11 +3555,9 @@ dialog{
   id = "deku.0.faron",
   skip = "current",
   text = [[
-You losing your beach
-isn't our problem! We
-need our space and
-don't have room for
-your pity party!
+You losing your beach isn't our
+problem! We need our space and don't
+have room for your pity party!
   ]]
 }
 
@@ -3567,9 +3565,8 @@ dialog{
   id = "deku.0.lost_woods",
   skip = "current",
   text = [[
-Hey kid, scram or
-you'll get lost or
-something...
+Hey kid, scram or you'll get lost
+or something...
   ]]
 }
 
@@ -3578,9 +3575,9 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-What's that enticing
-smell? Is that a potion?
-I must have it!
+What's that enticing smell? Is that
+a potion? I must have it!
+
 Will you give it to me?
 Yes
 No
@@ -3591,40 +3588,57 @@ dialog{
   id = "deku.0.trading_yes",
   skip = "current",
   text = [[
-Yay! Thanks mister!
-In exchange, I'll give
-you this cool mask.
-It's so cool because
-it looks just like me!
+Yay! Thanks mister! In exchange,
+I'll give you this cool mask. It's so
+cool because it looks just like me!
   ]]
 }
 
 dialog{
   id = "deku.0.warning",
   text = [[
-Hey kid, I wouldn't
-wander too far - it's
-dangerous in these
-woods! At least try to
-find another weapon
-first, maybe something
-with a range. There's
-a stump with a door south
-west of here, I'll bet
-it would have some
-interesting stuff if
-you checked it out.
-]]
+Hey kid, I wouldn't wander too far -
+it's dangerous in these woods! At
+least try to find another weapon
+first, maybe something with a range.
+There's a stump with a door south-
+west of here, I'll bet it would have
+some interesting stuff if you
+checked it out.
+  ]]
+}
+
+dialog{
+  id = "deku.1.lost_woods",
+  text = [[
+Hey kid, you might as well get out
+of here. Without the power of the
+sage Mudora, you have no change
+of finding your way in these woods -
+they're all twisted around from the
+evil that's here now.
+  ]]
 }
 
 dialog{
   id = "deku.2.faron",
   skip = "current",
   text = [[
-Thank you so much for
-getting those slimy
-creatures out of our
-forest!
+Thank you so much for getting those
+slimy creatures out of our forest!
+  ]]
+}
+
+dialog{
+  id = "deku.2.lost_woods",
+  text = [[
+At least you have the power of the
+complete book, but this place is
+still dangerous. The building at
+the heart of the woods is the
+worst - it was evil just streaming
+from it. Be sure you don't enter
+until you're sure you're prepared!
   ]]
 }
 
@@ -3632,28 +3646,20 @@ dialog{
   id = "deku.3.faron",
   skip = "current",
   text = [[
-Hey Boy in Green! Since
-you helped us out,
-we'll give you a little
-tip...
-That page the monkeys
-just gave you looks
-familiar- we know about
-a really old library you
-should check out.
-It's all the way in
-North Hyrule though,
-so the trick to get there
-is to use the sewers.
-That place where you
-got that neat sword
-was actually part of
-the huge sewer system
-running under our feet!
-Anyway, you should be
-able to find another
-sewer access just east
-of Hyrule Castle Town.
+Hey Boy in Green! Since you helped
+us out, we'll give you a little tip...
+That page the monkeys just gave you
+looks familiar- we know about a
+really old library you should check
+out. It's all the way in North
+Hyrule though, so the trick to get
+there is to use the sewers.
+That place where you got that neat
+sword was actually part of the huge
+sewer system running under our feet!
+Anyway, you should be able to find
+another sewer access just east of
+Hyrule Castle Town.
   ]]
 }
 
@@ -3661,10 +3667,8 @@ dialog{
   id = "deku.4.faron.1",
   skip = "current",
   text = [[
-Thank you so much for
-getting those slimy
-creatures out of our
-forest!
+Thank you so much for getting those
+slimy creatures out of our forest!
   ]]
 }
 
@@ -3672,11 +3676,9 @@ dialog{
   id = "deku.4.faron.2",
   skip = "current",
   text = [[
-You can find valuable
-stuff like Mystic
-Jade and Deku Sticks
-scattered around the
-forest sometimes.
+You can find valuable stuff like
+Mystic Jade and Deku Sticks scattered
+around the forest sometimes.
   ]]
 }
 
@@ -3684,11 +3686,9 @@ dialog{
   id = "deku.4.faron.3",
   skip = "current",
   text = [[
-Find enough Mystic
-Jade and the Great
-Fairy of the Forest
-will give you some-
-thing great!
+Find enough Mystic Jade and the
+Great Fairy of the Forest will
+give you something great!
   ]]
 }
 
@@ -3696,10 +3696,8 @@ dialog{
   id = "deku.4.faron.4",
   skip = "current",
   text = [[
-Find enough Deku
-Sticks and they can
-be used to make
-useful potions!
+Find enough Deku Sticks and they
+can be used to make great potions!
   ]]
 }
 
@@ -3707,18 +3705,14 @@ dialog{
   id = "deku.4.faron.5",
   skip = "current",
   text = [[
-We're nicer than our
-relatives over at the Lost
-Woods of the east.
-I think they're just
-confused by that forest
-and it makes them angry.
-I have heard them say
-that they like odd
-smelling potions. Maybe
-if you gave them one
-of those it would cheer
-them up? $0Probably not...
+We're nicer than our relatives
+over at the Lost Woods of the east.
+I think they're just confused by
+that forest and it makes them angry.
+I have heard them say that they
+like odd smelling potions. Maybe if
+you gave them one of those it would
+cheer them up? $0Probably not...
   ]]
 }
 
@@ -3726,9 +3720,8 @@ dialog{
   id = "deku1.1.faron",
   skip = "current",
   text = [[
-We want these lizards
-out of our forest! Can
-you please help?
+We want these lizards out of our
+forest! Can you please help?
   ]]
 }
 
@@ -3736,9 +3729,8 @@ dialog{
   id = "deku2.1.faron",
   skip = "current",
   text = [[
-We Deku are a proud
-and protective people.
-This will be a standoff...
+We Deku are a proud and protective
+people. This will be a standoff...
   ]]
 }
 
@@ -3746,12 +3738,10 @@ dialog{
   id = "deku3.1.faron",
   skip = "current",
   text = [[
-I don't think we're
-unreasonable. We were
-here first and we need
-our space. These SLIMY
-SNAKES$0 can go back
-to the water!
+I don't think we're unreasonable.
+We were here first and we need our
+space. These SLIMY SNAKES$0 can
+go back to the water!
   ]]
 }
 
@@ -8734,12 +8724,10 @@ dialog{
   id = "tokay.0.desert",
   skip = "current",
   text = [[
-Wait! Where are you going?
-Aren't you going to help
-us get our beach back?
-Please get whatever the
-pirates need from the
-desert! Please?
+Wait! Where are you going? Aren't you
+going to help us get our beach back?
+Please get whatever the pirates need
+from the desert! Please?
   ]]
 }
 
@@ -8747,14 +8735,11 @@ dialog{
   id = "tokay.0.faron",
   skip = "current",
   text = [[
-Hey bush folk! You have
-an entire forest here and
-and you're saying you
-can't even share part
-of it? We were forced
-out of our homes!
-All we're looking for
-is a little help.
+Hey bush folk! You have an entire
+forest here and and you're saying you
+can't even share part of it? We were
+forced out of our homes! All we're
+looking for is a little help.
   ]]
 }
 
@@ -8763,10 +8748,10 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-You'd like one of these
-shiny stones I found?
-Okay, I'll trade you
-for some rupees.
+You'd like one of these shiny stones
+I found? Okay, I'll trade you for
+some rupees.
+Trade?
 Yes
 No
   ]]
@@ -8777,10 +8762,10 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-You'd like one of these
-neat feathers I found?
-Okay, I'll trade you
-for some rupees.
+You'd like one of these neat feathers
+I found? Okay, I'll trade you for
+some rupees.
+Trade?
 Yes
 No
   ]]
@@ -8791,10 +8776,10 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-You'd like one of these
-cool things I found?
-Okay, I'll trade you
-for some rupees.
+You'd like one of these cool things
+I found? Okay, I'll trade you for 
+some rupees.
+Trade?
 Yes
 No
   ]]
@@ -8805,10 +8790,10 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-You'd like one of these
-shiny crystals I found?
-Okay, I'll trade you
-for some rupees.
+You'd like one of these shiny
+crystals I found? Okay, I'll trade
+you for some rupees.
+Trade?
 Yes
 No
   ]]
@@ -8819,10 +8804,10 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-You'd like one of these
-pretty rocks I found?
-Okay, I'll trade you
-for some rupees.
+You'd like one of these pretty
+rocks I found? Okay, I'll trade
+you for some rupees.
+Trade?
 Yes
 No
   ]]
@@ -8832,9 +8817,8 @@ dialog{
   id = "tokay1.1.faron",
   skip = "current",
   text = [[
-We need our beach
-back! Could you please
-help us?
+We need our beach back!
+Could you please help us?
   ]]
 }
 
@@ -8842,9 +8826,8 @@ dialog{
   id = "tokay2.1.faron",
   skip = "current",
   text = [[
-They can't share one
-little corner of this
-huge forest?
+They can't share one little
+corner of this huge forest?
   ]]
 }
 
@@ -8852,15 +8835,12 @@ dialog{
   id = "tokay3.1.faron",
   skip = "current",
   text = [[
-I tell ya, what we'd
-really like is to have
-our beach back, but
-those women with the
-spears are much scarier
-than these OVERGROWN
-SHRUBS$0, so we have
-no choice but to stay
-here for now.
+I tell ya, what we'd really
+like is to have our beach back,
+but those women with the spears
+are much scarier than these
+OVERGROWN SHRUBS$0, so we have
+no choice but to stay here.
   ]]
 }
 
@@ -8868,9 +8848,8 @@ dialog{
   id = "tokay_1.0.beach",
   skip = "current",
   text = [[
-Thank you so much for
-getting us our beach
-back! Please visit
+Thank you so much for getting us
+our beach back! Please visit
 any time you'd like.
   ]]
 }
@@ -8879,14 +8858,11 @@ dialog{
   id = "tokay_2.0.beach",
   skip = "current",
   text = [[
-We Tokay like shiny
-things and trading. If
-you visit some of my
-friends in their huts,
-you'll be able to
-trade some of your
-shiny rupees for
-something else equally
+We Tokay like shiny things and
+trading. If you visit some of my
+friends in their huts, you'll be
+able to trade some of your shiny
+rupees for something else equally
 shiny!
   ]]
 }
@@ -8895,12 +8871,10 @@ dialog{
   id = "tokay_4.0.beach",
   skip = "current",
   text = [[
-Tokage Gin? No, that's
-not me - he's probably
-still at the castle
-somewhere. I see why
-you'd be confused, but
-we Tokay really only
+Tokage Gin? No, that's not me -
+he's probably still at the castle
+somewhere. I see why you'd be
+confused, but we Tokay really only
 come in two colors.
   ]]
 }

@@ -25,3 +25,7 @@ function sensor_c1:on_activated()
 
   send_hero(sensor_c1, sensor_c2)
 end
+
+function npc_deku_1:on_interaction()
+  game:start_dialog("deku.lost_woods")
+end
