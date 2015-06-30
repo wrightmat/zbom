@@ -3196,33 +3196,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 928,
-  y = 176,
-  width = 16,
-  height = 24,
-  pattern = "1455",
-}
-
-tile{
-  layer = 0,
-  x = 456,
-  y = 240,
-  width = 16,
-  height = 24,
-  pattern = "1455",
-}
-
-tile{
-  layer = 0,
-  x = 424,
-  y = 504,
-  width = 16,
-  height = 24,
-  pattern = "1455",
-}
-
-tile{
-  layer = 0,
   x = 104,
   y = 72,
   width = 120,
@@ -5154,8 +5127,8 @@ destructible{
 npc{
   name = "sign_bomb_shop",
   layer = 0,
-  x = 696,
-  y = 429,
+  x = 720,
+  y = 437,
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
@@ -5347,26 +5320,6 @@ dynamic_tile{
   enabled_at_start = true,
 }
 
-npc{
-  name = "mailbox_etnaya_2",
-  layer = 0,
-  x = 432,
-  y = 525,
-  direction = 3,
-  subtype = 0,
-  behavior = "dialog#mailbox",
-}
-
-npc{
-  name = "mailbox_etnaya_3",
-  layer = 0,
-  x = 464,
-  y = 261,
-  direction = 3,
-  subtype = 0,
-  behavior = "dialog#mailbox",
-}
-
 dynamic_tile{
   name = "night_window",
   layer = 0,
@@ -5462,6 +5415,36 @@ npc{
   subtype = 0,
   sprite = "entities/sign",
   behavior = "dialog#sign.E7_kakariko",
+}
+
+custom_entity{
+  name = "mailbox_1",
+  layer = 0,
+  x = 432,
+  y = 525,
+  direction = 0,
+  sprite = "entities/mailbox",
+  model = "mailbox",
+}
+
+custom_entity{
+  name = "mailbox_2",
+  layer = 0,
+  x = 464,
+  y = 261,
+  direction = 0,
+  sprite = "entities/mailbox",
+  model = "mailbox",
+}
+
+custom_entity{
+  name = "mailbox_3",
+  layer = 0,
+  x = 936,
+  y = 197,
+  direction = 0,
+  sprite = "entities/mailbox",
+  model = "mailbox",
 }
 
 tile{

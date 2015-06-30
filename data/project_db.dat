@@ -347,6 +347,7 @@ sprite{ id = "entities/hint_stone", description = "Hint stone" }
 sprite{ id = "entities/hookshot", description = "Hookshot" }
 sprite{ id = "entities/ice_block", description = "Ice Block" }
 sprite{ id = "entities/items", description = "(Items)" }
+sprite{ id = "entities/mailbox", description = "Mailbox" }
 sprite{ id = "entities/mine", description = "Mine" }
 sprite{ id = "entities/platform", description = "Moving Platform" }
 sprite{ id = "entities/pot", description = "Pot" }
@@ -824,6 +825,7 @@ enemy{ id = "zirna", description = "Zirna (Dark Interloper)" }
 
 entity{ id = "butterfly", description = "Butterfly" }
 entity{ id = "ice_block", description = "Ice Block" }
+entity{ id = "mailbox", description = "Mailbox" }
 entity{ id = "npc_crista", description = "NPC: Crista (Ordon)" }
 entity{ id = "npc_julita", description = "NPC: Julita (Ordon)" }
 entity{ id = "npc_pim", description = "NPC: Pim (Ordon)" }

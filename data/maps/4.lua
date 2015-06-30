@@ -122,6 +122,15 @@ function npc_strap:on_interaction()
   end
 end
 
+function npc_warbos:on_interaction()
+  if math.random(4) == 1 then
+    -- Randomly mention the bigger wallet
+    game:start_dialog("shopkeep.1")
+  else
+    game:start_dialog("shopkeep.0")
+  end
+end
+
 function npc_etnaya:on_interaction()
   local rand = math.random(4)
   if rand == 1 then

@@ -3048,6 +3048,56 @@ npc{
   sprite = "npc/rito",
 }
 
+custom_entity{
+  name = "mailbox_1",
+  layer = 0,
+  x = 328,
+  y = 565,
+  direction = 0,
+  sprite = "entities/mailbox",
+  model = "mailbox",
+}
+
+custom_entity{
+  name = "mailbox_2",
+  layer = 0,
+  x = 416,
+  y = 749,
+  direction = 0,
+  sprite = "entities/mailbox",
+  model = "mailbox",
+}
+
+custom_entity{
+  name = "mailbox_3",
+  layer = 0,
+  x = 624,
+  y = 597,
+  direction = 0,
+  sprite = "entities/mailbox",
+  model = "mailbox",
+}
+
+custom_entity{
+  name = "mailbox_4",
+  layer = 0,
+  x = 968,
+  y = 541,
+  direction = 0,
+  sprite = "entities/mailbox",
+  model = "mailbox",
+}
+
+custom_entity{
+  name = "mailbox_5",
+  layer = 0,
+  x = 1040,
+  y = 717,
+  direction = 0,
+  sprite = "entities/mailbox",
+  model = "mailbox",
+}
+
 tile{
   layer = 1,
   x = 168,

@@ -2170,15 +2170,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 136,
-  y = 664,
-  width = 16,
-  height = 24,
-  pattern = "1455",
-}
-
-tile{
-  layer = 0,
   x = 208,
   y = 256,
   width = 48,
@@ -6052,6 +6043,16 @@ wall{
   width = 16,
   height = 8,
   stops_hero = true,
+}
+
+custom_entity{
+  name = "mailbox_lumberjack",
+  layer = 0,
+  x = 152,
+  y = 677,
+  direction = 0,
+  sprite = "entities/mailbox",
+  model = "mailbox",
 }
 
 tile{

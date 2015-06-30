@@ -11184,6 +11184,16 @@ destructible{
   can_be_cut = true,
 }
 
+custom_entity{
+  name = "mailbox_1",
+  layer = 0,
+  x = 288,
+  y = 909,
+  direction = 0,
+  sprite = "entities/mailbox",
+  model = "mailbox",
+}
+
 tile{
   layer = 1,
   x = 208,

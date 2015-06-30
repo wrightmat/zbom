@@ -6057,6 +6057,14 @@ right?
 }
 
 dialog{
+  id = "mailbox.link",
+  text = [[
+This is your mailbox, but it
+appears to be empty.
+]]
+}
+
+dialog{
   id = "moblin.0.cave_ordeals",
   skip = "current",
   text = [[

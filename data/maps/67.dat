@@ -2511,154 +2511,154 @@ tile{
 }
 
 sensor{
+  name = "house_3_door_sensor",
   layer = 0,
   x = 376,
   y = 189,
   width = 32,
   height = 16,
-  name = "house_3_door_sensor",
 }
 
 sensor{
+  name = "house_leader_door_sensor",
   layer = 0,
   x = 776,
   y = 381,
   width = 32,
   height = 16,
-  name = "house_leader_door_sensor",
 }
 
 sensor{
+  name = "house_4_door_sensor",
   layer = 0,
   x = 1000,
   y = 717,
   width = 32,
   height = 16,
-  name = "house_4_door_sensor",
 }
 
 teletransporter{
+  name = "to_H8",
   layer = 0,
   x = 0,
   y = 1120,
   width = 816,
   height = 16,
-  name = "to_H8",
   transition = "scrolling",
   destination_map = "48",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_G7",
   layer = 0,
   x = -16,
   y = 0,
   width = 16,
   height = 1120,
-  name = "to_G7",
   transition = "scrolling",
   destination_map = "47",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_H6",
   layer = 0,
   x = 0,
   y = -16,
   width = 1120,
   height = 16,
-  name = "to_H6",
   transition = "scrolling",
   destination_map = "66",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_I7",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 976,
-  name = "to_I7",
   transition = "scrolling",
   destination_map = "69",
   destination = "_side",
 }
 
 npc{
+  name = "npc_goron_7",
   layer = 0,
   x = 560,
   y = 605,
-  name = "npc_goron_7",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/goron",
   behavior = "dialog#goron7.0.goron_city",
 }
 
 npc{
+  name = "npc_goron_6",
   layer = 0,
   x = 888,
   y = 565,
-  name = "npc_goron_6",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/goron",
   behavior = "dialog#goron6.0.goron_city",
 }
 
 npc{
+  name = "npc_goron_5",
   layer = 0,
   x = 504,
   y = 181,
-  name = "npc_goron_5",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/goron",
   behavior = "dialog#goron5.0.goron_city",
 }
 
 enemy{
+  name = "geyser_1",
   layer = 0,
   x = 88,
   y = 221,
-  name = "geyser_1",
   direction = 3,
   breed = "geyser",
   treasure_name = "random",
 }
 
 enemy{
+  name = "geyser_2",
   layer = 0,
   x = 848,
   y = 1021,
-  name = "geyser_2",
   direction = 3,
   breed = "geyser",
   treasure_name = "random",
 }
 
 destination{
+  name = "from_house_2",
   layer = 0,
   x = 384,
   y = 189,
-  name = "from_house_2",
   direction = 3,
 }
 
 destination{
+  name = "from_house_leader",
   layer = 0,
   x = 784,
   y = 381,
-  name = "from_house_leader",
   direction = 3,
 }
 
 destination{
+  name = "from_house_sick",
   layer = 0,
   x = 1008,
   y = 717,
-  name = "from_house_sick",
   direction = 3,
 }
 
@@ -2778,68 +2778,68 @@ destructible{
 }
 
 teletransporter{
+  name = "to_house_2",
   layer = 0,
   x = 376,
   y = 152,
   width = 16,
   height = 16,
-  name = "to_house_2",
   destination_map = "5",
   destination = "from_outside_house_2",
 }
 
 teletransporter{
+  name = "to_house_leader",
   layer = 0,
   x = 776,
   y = 344,
   width = 16,
   height = 16,
-  name = "to_house_leader",
   destination_map = "5",
   destination = "from_outside_house_leader",
 }
 
 teletransporter{
+  name = "to_house_sick",
   layer = 0,
   x = 1000,
   y = 680,
   width = 16,
   height = 16,
-  name = "to_house_sick",
   destination_map = "5",
   destination = "from_outside_house_sick",
 }
 
 dynamic_tile{
+  name = "house_3_door",
   layer = 0,
   x = 376,
   y = 160,
+  pattern = "1765",
   width = 16,
   height = 16,
-  name = "house_3_door",
-  pattern = "1765",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "house_leader_door",
   layer = 0,
   x = 776,
   y = 352,
+  pattern = "1765",
   width = 16,
   height = 16,
-  name = "house_leader_door",
-  pattern = "1765",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "house_4_door",
   layer = 0,
   x = 1000,
   y = 688,
+  pattern = "1765",
   width = 16,
   height = 16,
-  name = "house_4_door",
-  pattern = "1765",
   enabled_at_start = true,
 }
 
@@ -2880,36 +2880,56 @@ destructible{
 }
 
 teletransporter{
+  name = "to_I7_water",
   layer = 0,
   x = 1120,
   y = 1024,
   width = 16,
   height = 96,
-  name = "to_I7_water",
   transition = "scrolling",
   destination_map = "69",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_H8_water",
   layer = 0,
   x = 896,
   y = 1120,
   width = 224,
   height = 16,
-  name = "to_H8_water",
   transition = "scrolling",
   destination_map = "48",
   destination = "_side",
 }
 
+custom_entity{
+  name = "mailbox_1",
+  layer = 0,
+  x = 416,
+  y = 165,
+  direction = 0,
+  sprite = "entities/mailbox",
+  model = "mailbox",
+}
+
+custom_entity{
+  name = "mailbox_2",
+  layer = 0,
+  x = 976,
+  y = 693,
+  direction = 0,
+  sprite = "entities/mailbox",
+  model = "mailbox",
+}
+
 npc{
+  name = "npc_goron_ghost",
   layer = 1,
   x = 1056,
   y = 717,
-  name = "npc_goron_ghost",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/goron_ghost",
 }
 

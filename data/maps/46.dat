@@ -8198,6 +8198,16 @@ destructible{
   damage_on_enemies = 2,
 }
 
+custom_entity{
+  name = "mailbox_impa",
+  layer = 0,
+  x = 776,
+  y = 373,
+  direction = 0,
+  sprite = "entities/mailbox",
+  model = "mailbox",
+}
+
 tile{
   layer = 1,
   x = 408,

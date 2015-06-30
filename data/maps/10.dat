@@ -4933,24 +4933,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 608,
-  y = 928,
-  width = 16,
-  height = 24,
-  pattern = "1455",
-}
-
-tile{
-  layer = 0,
-  x = 776,
-  y = 432,
-  width = 16,
-  height = 24,
-  pattern = "1455",
-}
-
-tile{
-  layer = 0,
   x = 80,
   y = 656,
   width = 32,
@@ -7885,15 +7867,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 480,
-  y = 800,
-  width = 16,
-  height = 24,
-  pattern = "1455",
-}
-
-tile{
-  layer = 0,
   x = 848,
   y = 880,
   width = 16,
@@ -8196,15 +8169,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "664",
-}
-
-tile{
-  layer = 0,
-  x = 400,
-  y = 256,
-  width = 16,
-  height = 24,
-  pattern = "1455",
 }
 
 tile{
@@ -10143,6 +10107,46 @@ wall{
   width = 8,
   height = 16,
   stops_npcs = true,
+}
+
+custom_entity{
+  name = "mailbox_1",
+  layer = 0,
+  x = 488,
+  y = 813,
+  direction = 0,
+  sprite = "entities/mailbox",
+  model = "mailbox",
+}
+
+custom_entity{
+  name = "mailbox_link",
+  layer = 0,
+  x = 616,
+  y = 941,
+  direction = 0,
+  sprite = "entities/mailbox",
+  model = "mailbox",
+}
+
+custom_entity{
+  name = "mailbox_2",
+  layer = 0,
+  x = 784,
+  y = 445,
+  direction = 0,
+  sprite = "entities/mailbox",
+  model = "mailbox",
+}
+
+custom_entity{
+  name = "mailbox_3",
+  layer = 0,
+  x = 408,
+  y = 269,
+  direction = 0,
+  sprite = "entities/mailbox",
+  model = "mailbox",
 }
 
 tile{
