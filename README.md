@@ -3,7 +3,7 @@ This quest is a free, open-source game that works with Solarus,
 an open-source Zelda-like 2D game engine.
 To play this game, you need Solarus. The compiled engine is included for Windows and Linux.
 
-The game is currently in version 0.42 (15-MAY-21, Solarus v1.4.2)
+The game is currently in version 0.44 (15-JUL-2, Solarus v1.4.2)
 
 To run:
   Windows: execute "solarus.exe"
@@ -20,6 +20,16 @@ To play: Default button mapping:
 See our website http://sites.google.com/site/zeldabom for more information.
 
 Enjoy!
+
+VERSION 0.44 released 15-JUL-2:
+  - core path of wind tower finish - able to obtain book
+  - additional warp points
+  - short cut added to Pyramid
+  - additional player direction from NPCs, included new attendent in council office
+  - trading sequence finished - able to obtain feather
+  - lost woods expanded
+  - dialog font replaced and dialog line breaks redone to utilize additional space
+  - sprite, tile and script fixes thoughout
 
 VERSION 0.43 released 15-JUN-17:
   - added NPC dialogs, signs and other markers to assist player
