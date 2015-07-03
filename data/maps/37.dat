@@ -7491,7 +7491,7 @@ tile{
   layer = 0,
   x = 1072,
   y = 296,
-  width = 16,
+  width = 8,
   height = 32,
   pattern = "88",
 }
@@ -7746,6 +7746,24 @@ tile{
   width = 16,
   height = 16,
   pattern = "2141",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 728,
+  width = 32,
+  height = 32,
+  pattern = "527",
+}
+
+tile{
+  layer = 0,
+  x = 712,
+  y = 896,
+  width = 32,
+  height = 32,
+  pattern = "527",
 }
 
 teletransporter{
@@ -8528,9 +8546,22 @@ teletransporter{
 destination{
   name = "from_lost_woods",
   layer = 0,
-  x = 1072,
+  x = 1080,
   y = 317,
-  direction = 1,
+  direction = 2,
+}
+
+wall{
+  layer = 0,
+  x = 1072,
+  y = 296,
+  width = 48,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{
@@ -12086,5 +12117,14 @@ tile{
   width = 32,
   height = 32,
   pattern = "94",
+}
+
+tile{
+  layer = 2,
+  x = 1080,
+  y = 296,
+  width = 8,
+  height = 32,
+  pattern = "135",
 }
 

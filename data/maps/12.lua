@@ -46,7 +46,7 @@ local function end_race_won()
             game:set_value("i1027", 4)
             game:set_value("i1910", game:get_value("i1910")+1)
           end)
-        end, 500, 20000) --move_camera
+        end, 500, 25000) --move_camera
       end) --timer
     end
   end)

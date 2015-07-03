@@ -2510,6 +2510,15 @@ tile{
   pattern = "743",
 }
 
+tile{
+  layer = 0,
+  x = 976,
+  y = 960,
+  width = 16,
+  height = 16,
+  pattern = "1626",
+}
+
 sensor{
   name = "house_3_door_sensor",
   layer = 0,
@@ -2907,7 +2916,7 @@ custom_entity{
   name = "mailbox_1",
   layer = 0,
   x = 416,
-  y = 165,
+  y = 173,
   direction = 0,
   sprite = "entities/mailbox",
   model = "mailbox",
@@ -2917,7 +2926,7 @@ custom_entity{
   name = "mailbox_2",
   layer = 0,
   x = 976,
-  y = 693,
+  y = 701,
   direction = 0,
   sprite = "entities/mailbox",
   model = "mailbox",

@@ -2834,6 +2834,24 @@ tile{
   pattern = "822",
 }
 
+tile{
+  layer = 0,
+  x = 760,
+  y = 88,
+  width = 16,
+  height = 16,
+  pattern = "283",
+}
+
+tile{
+  layer = 0,
+  x = 816,
+  y = 88,
+  width = 16,
+  height = 16,
+  pattern = "283",
+}
+
 npc{
   name = "npc_osgor",
   layer = 0,
@@ -3453,6 +3471,24 @@ tile{
   layer = 2,
   x = 232,
   y = 776,
+  width = 16,
+  height = 16,
+  pattern = "284",
+}
+
+tile{
+  layer = 2,
+  x = 760,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "284",
+}
+
+tile{
+  layer = 2,
+  x = 816,
+  y = 72,
   width = 16,
   height = 16,
   pattern = "284",

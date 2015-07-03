@@ -11,6 +11,69 @@ properties{
 
 tile{
   layer = 0,
+  x = 424,
+  y = 320,
+  width = 32,
+  height = 16,
+  pattern = "forest.4",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 256,
+  width = 32,
+  height = 16,
+  pattern = "forest.1",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 256,
+  width = 64,
+  height = 16,
+  pattern = "forest.1",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 272,
+  width = 64,
+  height = 48,
+  pattern = "65",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 272,
+  width = 40,
+  height = 48,
+  pattern = "65",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 264,
+  width = 8,
+  height = 64,
+  pattern = "110",
+}
+
+tile{
+  layer = 0,
+  x = 376,
+  y = 264,
+  width = 8,
+  height = 64,
+  pattern = "107",
+}
+
+tile{
+  layer = 0,
   x = 656,
   y = 384,
   width = 48,
@@ -407,15 +470,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 432,
-  y = 320,
-  width = 16,
-  height = 16,
-  pattern = "forest.corner.3",
-}
-
-tile{
-  layer = 0,
   x = 552,
   y = 752,
   width = 144,
@@ -578,15 +632,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 312,
-  y = 272,
-  width = 72,
-  height = 40,
-  pattern = "65",
-}
-
-tile{
-  layer = 0,
   x = 296,
   y = 256,
   width = 16,
@@ -708,15 +753,6 @@ tile{
   y = 368,
   width = 32,
   height = 16,
-  pattern = "65",
-}
-
-tile{
-  layer = 0,
-  x = 416,
-  y = 272,
-  width = 40,
-  height = 48,
   pattern = "65",
 }
 
@@ -1622,24 +1658,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 320,
-  y = 256,
-  width = 64,
-  height = 16,
-  pattern = "forest.1",
-}
-
-tile{
-  layer = 0,
-  x = 416,
-  y = 256,
-  width = 32,
-  height = 16,
-  pattern = "forest.1",
-}
-
-tile{
-  layer = 0,
   x = 288,
   y = 240,
   width = 16,
@@ -2266,33 +2284,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "forest.corner.2",
-}
-
-tile{
-  layer = 0,
-  x = 656,
-  y = 160,
-  width = 8,
-  height = 16,
-  pattern = "trunk.entrance.4",
-}
-
-tile{
-  layer = 0,
-  x = 656,
-  y = 144,
-  width = 8,
-  height = 16,
-  pattern = "trunk.entrance.4.border.1",
-}
-
-tile{
-  layer = 0,
-  x = 656,
-  y = 176,
-  width = 8,
-  height = 16,
-  pattern = "trunk.entrance.4.border.2",
 }
 
 tile{
@@ -3382,15 +3373,6 @@ tile{
   width = 32,
   height = 32,
   pattern = "forest.tree_small",
-}
-
-tile{
-  layer = 0,
-  x = 512,
-  y = 304,
-  width = 8,
-  height = 8,
-  pattern = "grass.tree.roots_forest.4",
 }
 
 tile{
@@ -4234,16 +4216,16 @@ tile{
   layer = 0,
   x = 704,
   y = 752,
-  width = 32,
+  width = 64,
   height = 16,
   pattern = "forest.1",
 }
 
 tile{
   layer = 0,
-  x = 784,
+  x = 800,
   y = 752,
-  width = 64,
+  width = 48,
   height = 16,
   pattern = "forest.1",
 }
@@ -4565,24 +4547,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 120,
-  y = 592,
-  width = 32,
-  height = 16,
-  pattern = "grass.high_grass.under",
-}
-
-tile{
-  layer = 0,
-  x = 376,
-  y = 480,
-  width = 32,
-  height = 16,
-  pattern = "grass.high_grass.under",
-}
-
-tile{
-  layer = 0,
   x = 520,
   y = 368,
   width = 32,
@@ -4601,15 +4565,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 728,
-  y = 256,
-  width = 32,
-  height = 16,
-  pattern = "grass.high_grass.under",
-}
-
-tile{
-  layer = 0,
   x = 752,
   y = 336,
   width = 32,
@@ -4620,15 +4575,6 @@ tile{
 tile{
   layer = 0,
   x = 40,
-  y = 488,
-  width = 16,
-  height = 32,
-  pattern = "93",
-}
-
-tile{
-  layer = 0,
-  x = 40,
   y = 480,
   width = 16,
   height = 8,
@@ -4665,15 +4611,6 @@ tile{
 tile{
   layer = 0,
   x = 296,
-  y = 376,
-  width = 16,
-  height = 32,
-  pattern = "93",
-}
-
-tile{
-  layer = 0,
-  x = 296,
   y = 368,
   width = 16,
   height = 8,
@@ -4705,15 +4642,6 @@ tile{
   width = 80,
   height = 8,
   pattern = "104",
-}
-
-tile{
-  layer = 0,
-  x = 200,
-  y = 376,
-  width = 16,
-  height = 32,
-  pattern = "88",
 }
 
 tile{
@@ -4737,15 +4665,6 @@ tile{
 tile{
   layer = 0,
   x = 648,
-  y = 152,
-  width = 16,
-  height = 32,
-  pattern = "93",
-}
-
-tile{
-  layer = 0,
-  x = 648,
   y = 144,
   width = 16,
   height = 8,
@@ -4777,15 +4696,6 @@ tile{
   width = 80,
   height = 8,
   pattern = "104",
-}
-
-tile{
-  layer = 0,
-  x = 552,
-  y = 152,
-  width = 16,
-  height = 32,
-  pattern = "88",
 }
 
 tile{
@@ -5276,9 +5186,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 360,
-  y = 312,
-  width = 16,
+  x = 352,
+  y = 320,
+  width = 32,
   height = 16,
   pattern = "forest.4",
 }
@@ -5781,15 +5691,6 @@ tile{
 tile{
   layer = 0,
   x = 352,
-  y = 320,
-  width = 16,
-  height = 16,
-  pattern = "forest.corner.4",
-}
-
-tile{
-  layer = 0,
-  x = 352,
   y = 312,
   width = 8,
   height = 8,
@@ -5996,17 +5897,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 424,
-  y = 312,
-  width = 16,
-  height = 16,
-  pattern = "forest.4",
-}
-
-tile{
-  layer = 0,
   x = 376,
-  y = 312,
+  y = 320,
   width = 8,
   height = 24,
   pattern = "108",
@@ -6014,29 +5906,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 384,
-  y = 312,
-  width = 32,
-  height = 24,
-  pattern = "112",
-}
-
-tile{
-  layer = 0,
   x = 416,
-  y = 312,
+  y = 320,
   width = 8,
   height = 24,
   pattern = "111",
-}
-
-tile{
-  layer = 0,
-  x = 376,
-  y = 264,
-  width = 8,
-  height = 48,
-  pattern = "107",
 }
 
 tile{
@@ -6050,29 +5924,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 384,
-  y = 248,
-  width = 32,
-  height = 16,
-  pattern = "113",
-}
-
-tile{
-  layer = 0,
   x = 416,
   y = 248,
   width = 8,
   height = 16,
   pattern = "109",
-}
-
-tile{
-  layer = 0,
-  x = 416,
-  y = 264,
-  width = 8,
-  height = 48,
-  pattern = "110",
 }
 
 tile{
@@ -6428,7 +6284,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 736,
+  x = 760,
   y = 760,
   width = 8,
   height = 16,
@@ -6437,7 +6293,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 736,
+  x = 760,
   y = 744,
   width = 8,
   height = 16,
@@ -6446,16 +6302,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 744,
-  y = 744,
-  width = 32,
-  height = 16,
-  pattern = "113",
-}
-
-tile{
-  layer = 0,
-  x = 776,
+  x = 800,
   y = 744,
   width = 8,
   height = 16,
@@ -6464,7 +6311,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 776,
+  x = 800,
   y = 760,
   width = 8,
   height = 16,
@@ -6613,15 +6460,6 @@ tile{
   width = 8,
   height = 24,
   pattern = "108",
-}
-
-tile{
-  layer = 0,
-  x = 728,
-  y = 96,
-  width = 32,
-  height = 24,
-  pattern = "112",
 }
 
 tile{
@@ -6849,10 +6687,145 @@ tile{
   pattern = "134",
 }
 
+tile{
+  layer = 0,
+  x = 720,
+  y = 384,
+  width = 32,
+  height = 40,
+  pattern = "68",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 488,
+  width = 8,
+  height = 32,
+  pattern = "137",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 376,
+  width = 8,
+  height = 32,
+  pattern = "88",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 376,
+  width = 8,
+  height = 32,
+  pattern = "137",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 328,
+  width = 32,
+  height = 16,
+  pattern = "140",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 248,
+  width = 32,
+  height = 8,
+  pattern = "142",
+}
+
+tile{
+  layer = 0,
+  x = 552,
+  y = 152,
+  width = 8,
+  height = 32,
+  pattern = "88",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 152,
+  width = 8,
+  height = 32,
+  pattern = "137",
+}
+
+tile{
+  layer = 0,
+  x = 728,
+  y = 104,
+  width = 32,
+  height = 16,
+  pattern = "140",
+}
+
+tile{
+  layer = 0,
+  x = 768,
+  y = 744,
+  width = 32,
+  height = 8,
+  pattern = "142",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 592,
+  width = 32,
+  height = 16,
+  pattern = "910",
+}
+
+tile{
+  layer = 0,
+  x = 376,
+  y = 480,
+  width = 32,
+  height = 16,
+  pattern = "910",
+}
+
+tile{
+  layer = 0,
+  x = 728,
+  y = 256,
+  width = 32,
+  height = 16,
+  pattern = "910",
+}
+
+tile{
+  layer = 0,
+  x = 696,
+  y = 520,
+  width = 32,
+  height = 32,
+  pattern = "527",
+}
+
+sensor{
+  name = "sensor_b2",
+  layer = 0,
+  x = 312,
+  y = 381,
+  width = 16,
+  height = 48,
+}
+
 destination{
   name = "enter_lost_woods",
   layer = 0,
-  x = 56,
+  x = 48,
   y = 509,
   direction = 0,
   default = true,
@@ -6881,15 +6854,6 @@ sensor{
   layer = 0,
   x = 664,
   y = 157,
-  width = 16,
-  height = 48,
-}
-
-sensor{
-  name = "sensor_b2",
-  layer = 0,
-  x = 312,
-  y = 381,
   width = 16,
   height = 48,
 }
@@ -6993,6 +6957,30 @@ teletransporter{
   destination = "from_lost_woods",
 }
 
+dynamic_tile{
+  name = "tree_temple",
+  layer = 0,
+  x = 672,
+  y = 496,
+  pattern = "527",
+  width = 32,
+  height = 32,
+  enabled_at_start = true,
+}
+
+wall{
+  layer = 0,
+  x = 0,
+  y = 488,
+  width = 56,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
 tile{
   layer = 1,
   x = 464,
@@ -7054,6 +7042,15 @@ tile{
   width = 8,
   height = 16,
   pattern = "1500",
+}
+
+tile{
+  layer = 2,
+  x = 384,
+  y = 264,
+  width = 32,
+  height = 64,
+  pattern = "114",
 }
 
 tile{
@@ -7162,15 +7159,6 @@ tile{
   width = 8,
   height = 24,
   pattern = "1494",
-}
-
-tile{
-  layer = 2,
-  x = 384,
-  y = 264,
-  width = 32,
-  height = 48,
-  pattern = "114",
 }
 
 tile{
@@ -7382,7 +7370,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 744,
+  x = 768,
   y = 760,
   width = 32,
   height = 16,
@@ -7508,10 +7496,82 @@ tile{
 
 tile{
   layer = 2,
-  x = 720,
-  y = 384,
+  x = 40,
+  y = 488,
+  width = 8,
+  height = 32,
+  pattern = "136",
+}
+
+tile{
+  layer = 2,
+  x = 208,
+  y = 376,
+  width = 8,
+  height = 32,
+  pattern = "135",
+}
+
+tile{
+  layer = 2,
+  x = 296,
+  y = 376,
+  width = 8,
+  height = 32,
+  pattern = "136",
+}
+
+tile{
+  layer = 2,
+  x = 384,
+  y = 320,
   width = 32,
-  height = 40,
-  pattern = "68",
+  height = 8,
+  pattern = "141",
+}
+
+tile{
+  layer = 2,
+  x = 384,
+  y = 256,
+  width = 32,
+  height = 8,
+  pattern = "143",
+}
+
+tile{
+  layer = 2,
+  x = 560,
+  y = 152,
+  width = 8,
+  height = 32,
+  pattern = "135",
+}
+
+tile{
+  layer = 2,
+  x = 648,
+  y = 152,
+  width = 8,
+  height = 32,
+  pattern = "136",
+}
+
+tile{
+  layer = 2,
+  x = 728,
+  y = 96,
+  width = 32,
+  height = 8,
+  pattern = "141",
+}
+
+tile{
+  layer = 2,
+  x = 768,
+  y = 752,
+  width = 32,
+  height = 8,
+  pattern = "143",
 }
 

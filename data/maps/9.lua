@@ -5,8 +5,9 @@ local game = map:get_game()
 -- Inside various caves - Blacksmith, etc.   --
 -----------------------------------------------
 
-if game:get_value("i1902")==nil then game:set_value("i1902", 0) end
 if game:get_value("i1601")==nil then game:set_value("i1601", 0) end
+if game:get_value("i1840")==nil then game:set_value("i1840", 0) end
+if game:get_value("i1902")==nil then game:set_value("i1902", 0) end
 
 function rudy_reputation()
   game:set_value("i1902", game:get_value("i1902")+1)

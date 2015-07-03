@@ -21,6 +21,7 @@ function enemy:on_restarted()
   if dir4 == 1 then angle = math.pi / 2 end
   if dir4 == 2 then angle = math.pi end
   if dir4 == 3 then angle = 3 * math.pi / 2 end
+  m:set_smooth(false)
   m:set_speed(92)
   m:set_angle(angle)
   m:start(self)

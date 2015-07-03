@@ -210,7 +210,7 @@ function inventory_submenu:on_draw(dst_surface)
       k = k + 1
       if item_names[k] ~= nil then
         local item = self.game:get_item(item_names[k])
-        if item:get_variant() > 0 then
+        if item ~= nil and item:get_variant() > 0 then
           -- The player has this item: draw it.
           self.sprites[k]:draw(dst_surface, x, y)
           if self.counters[k] ~= nil then

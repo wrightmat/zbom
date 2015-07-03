@@ -7130,15 +7130,6 @@ tile{
 tile{
   layer = 0,
   x = 1056,
-  y = 352,
-  width = 16,
-  height = 16,
-  pattern = "524",
-}
-
-tile{
-  layer = 0,
-  x = 1056,
   y = 416,
   width = 16,
   height = 16,
@@ -8036,6 +8027,15 @@ tile{
   pattern = "2141",
 }
 
+tile{
+  layer = 0,
+  x = 1056,
+  y = 352,
+  width = 32,
+  height = 32,
+  pattern = "527",
+}
+
 teletransporter{
   name = "to_G9",
   layer = 0,
@@ -8614,17 +8614,6 @@ destructible{
   layer = 0,
   x = 992,
   y = 341,
-  treasure_name = "random_woods",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = 1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 1064,
-  y = 365,
   treasure_name = "random_woods",
   sprite = "entities/bush",
   destruction_sound = "bush",

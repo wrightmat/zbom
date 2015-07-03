@@ -5993,37 +5993,55 @@ tile{
   pattern = "1450",
 }
 
+tile{
+  layer = 0,
+  x = 336,
+  y = 784,
+  width = 32,
+  height = 32,
+  pattern = "528",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 848,
+  width = 32,
+  height = 32,
+  pattern = "528",
+}
+
 teletransporter{
+  name = "to_F13",
   layer = 0,
   x = 1120,
   y = 912,
   width = 16,
   height = 208,
-  name = "to_F13",
   transition = "scrolling",
   destination_map = "17",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_F13_2",
   layer = 0,
   x = 1120,
   y = 432,
   width = 16,
   height = 448,
-  name = "to_F13_2",
   transition = "scrolling",
   destination_map = "17",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_F13_3",
   layer = 0,
   x = 1120,
   y = 40,
   width = 16,
   height = 288,
-  name = "to_F13_3",
   transition = "scrolling",
   destination_map = "17",
   destination = "_side",
@@ -6437,12 +6455,12 @@ destructible{
 }
 
 teletransporter{
+  name = "to_E14",
   layer = 0,
   x = 712,
   y = 1120,
   width = 96,
   height = 16,
-  name = "to_E14",
   transition = "scrolling",
   destination_map = "15",
   destination = "_side",
@@ -7315,12 +7333,12 @@ destructible{
 }
 
 teletransporter{
+  name = "to_E12",
   layer = 0,
   x = 128,
   y = -16,
   width = 784,
   height = 16,
-  name = "to_E12",
   transition = "scrolling",
   destination_map = "26",
   destination = "_side",
@@ -7591,47 +7609,47 @@ destructible{
 }
 
 teletransporter{
+  name = "to_D13",
   layer = 0,
   x = -16,
   y = 248,
   width = 16,
   height = 80,
-  name = "to_D13",
   transition = "scrolling",
   destination_map = "24",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_D13_2",
   layer = 0,
   x = -16,
   y = 440,
   width = 16,
   height = 432,
-  name = "to_D13_2",
   transition = "scrolling",
   destination_map = "24",
   destination = "_side",
 }
 
 teletransporter{
+  name = "great_fairy_warp",
   layer = 0,
   x = 80,
   y = 688,
   width = 16,
   height = 16,
-  name = "great_fairy_warp",
-  sprite = "entities/teletransporter_hole",
-  sound = "hero_falls",
   destination_map = "163",
   destination = "from_outside",
+  sprite = "entities/teletransporter_hole",
+  sound = "hero_falls",
 }
 
 destination{
+  name = "from_great_fairy",
   layer = 0,
   x = 88,
   y = 669,
-  name = "from_great_fairy",
   direction = 3,
 }
 
@@ -7647,41 +7665,41 @@ destructible{
 }
 
 enemy{
+  name = "chuchu_green_1",
   layer = 0,
   x = 392,
   y = 493,
-  name = "chuchu_green_1",
   direction = 3,
   breed = "chuchu_green",
 }
 
 enemy{
+  name = "chuchu_green_2",
   layer = 0,
   x = 792,
   y = 237,
-  name = "chuchu_green_2",
   direction = 3,
   breed = "chuchu_green",
 }
 
 npc{
+  name = "sign_directions",
   layer = 0,
   x = 616,
   y = 325,
-  name = "sign_directions",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
   behavior = "dialog#sign.E13_directions",
 }
 
 npc{
+  name = "npc_gaira",
   layer = 0,
   x = 152,
   y = 645,
-  name = "npc_gaira",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/hylian_gaira",
 }
 
@@ -10644,5 +10662,14 @@ tile{
   width = 8,
   height = 40,
   pattern = "515",
+}
+
+tile{
+  layer = 2,
+  x = 176,
+  y = 776,
+  width = 32,
+  height = 32,
+  pattern = "528",
 }
 

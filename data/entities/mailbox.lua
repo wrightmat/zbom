@@ -6,7 +6,7 @@ local map = entity:get_game():get_map()
 -- entity. Leaves open possibility of mail system in the future too.
 
 function entity:on_interaction()
-  if self:get_name == "mailbox_link" then
+  if self:get_name() == "mailbox_link" then
     game:start_dialog("mailbox.link")
   else
     game:start_dialog("mailbox")

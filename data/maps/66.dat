@@ -10,6 +10,24 @@ properties{
 
 tile{
   layer = 0,
+  x = 640,
+  y = 744,
+  width = 16,
+  height = 16,
+  pattern = "271",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 744,
+  width = 16,
+  height = 16,
+  pattern = "272",
+}
+
+tile{
+  layer = 0,
   x = 488,
   y = 96,
   width = 16,
@@ -1029,7 +1047,7 @@ tile{
   layer = 0,
   x = 424,
   y = 752,
-  width = 368,
+  width = 144,
   height = 8,
   pattern = "265",
 }
@@ -1038,7 +1056,7 @@ tile{
   layer = 0,
   x = 424,
   y = 744,
-  width = 368,
+  width = 144,
   height = 8,
   pattern = "259",
 }
@@ -1583,6 +1601,69 @@ tile{
   pattern = "311",
 }
 
+tile{
+  layer = 0,
+  x = 648,
+  y = 744,
+  width = 144,
+  height = 8,
+  pattern = "259",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 752,
+  width = 144,
+  height = 8,
+  pattern = "265",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 752,
+  width = 8,
+  height = 8,
+  pattern = "287",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 752,
+  width = 8,
+  height = 8,
+  pattern = "288",
+}
+
+tile{
+  layer = 0,
+  x = 552,
+  y = 736,
+  width = 16,
+  height = 16,
+  pattern = "1626",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 736,
+  width = 16,
+  height = 16,
+  pattern = "1626",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 752,
+  width = 64,
+  height = 8,
+  pattern = "464",
+}
+
 sensor{
   name = "house_1_door_sensor",
   layer = 0,
@@ -1951,7 +2032,7 @@ custom_entity{
   name = "mailbox_1",
   layer = 0,
   x = 960,
-  y = 613,
+  y = 621,
   direction = 0,
   sprite = "entities/mailbox",
   model = "mailbox",
@@ -1961,10 +2042,20 @@ custom_entity{
   name = "mailbox_2",
   layer = 0,
   x = 192,
-  y = 861,
+  y = 869,
   direction = 0,
   sprite = "entities/mailbox",
   model = "mailbox",
+}
+
+jumper{
+  layer = 0,
+  x = 576,
+  y = 752,
+  width = 64,
+  height = 8,
+  direction = 6,
+  jump_length = 72,
 }
 
 npc{

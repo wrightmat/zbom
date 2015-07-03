@@ -55,6 +55,7 @@ function sensor_deku_tokay:on_activated()
     sol.audio.play_sound("monkey")
     game:start_dialog("monkey.2.faron", function()
       game:get_item("book_mudora"):set_variant(2) --give back book piece
+      game:set_value("b1061", true)
     end)
   end
 end
