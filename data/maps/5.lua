@@ -98,7 +98,7 @@ function npc_goron_smith:on_interaction()
     game:start_dialog("goron_smith.0.shop", function(answer)
       if answer == 1 then --yes
         if game:get_money() >= 300 then
-	game:start_treasure("bomb_bag")
+	hero:start_treasure("bomb_bag")
 	game:remove_money(300)
         else
 	game:start_dialog("shopkeep.1")
@@ -109,7 +109,7 @@ function npc_goron_smith:on_interaction()
     game:start_dialog("goron_smith.1.shop_sell", function(answer)
       if answer == 1 then --yes
         if game:get_money() >= 50 then
-	game:start_treasure("bomb", 3)
+	hero:start_treasure("bomb", 3)
 	game:remove_money(50)
         else
 	game:start_dialog("shopkeep.1")

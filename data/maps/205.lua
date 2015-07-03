@@ -163,20 +163,20 @@ end
 for enemy in map:get_entities("tektite_map") do
   enemy.on_dead = function()
     if not map:has_entities("tektite_map") and not game:get_value("b1106") then
-      map:move_camera(1304, 861, 250, function()
+      --map:move_camera(1304, 861, 250, function()
         chest_map:set_enabled(true)
         sol.audio.play_sound("chest_appears")
-      end, 500, 500)
+      --end, 500, 500)
     end
   end
 end
 for enemy in map:get_entities("tektite_compass") do
   enemy.on_dead = function()
     if not map:has_entities("tektite_compass") and not game:get_value("b1105") then
-      map:move_camera(1304, 1149, 250, function()
+      --map:move_camera(1304, 1149, 250, function()
         chest_compass:set_enabled(true)
         sol.audio.play_sound("chest_appears")
-      end, 500, 500)
+      --end, 500, 500)
     end
   end
 end
