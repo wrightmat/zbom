@@ -79,18 +79,20 @@ function thief:on_interaction()
   m:set_target(position.x, position.y)
   m:set_speed(184)
   sol.audio.play_sound("hero_seen")
-  m:start(thief, function()
-    caught = false
-  end)
+  m:start(thief)
 
   if catch == 0 then
     catch = catch + 1
-    game:start_dialog("thief.0.bottle")
+    game:start_dialog("thief.0.bottle", function()
+      caught = false
+    end)
   elseif catch >= 10 then
     thief_caught()
   else
     catch = catch + 1
-    game:start_dialog("thief.1.bottle", 11-catch)
+    game:start_dialog("thief.1.bottle", 11-catch, function()
+      caught = false
+    end)
   end
 end
 

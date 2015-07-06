@@ -181,15 +181,15 @@ for enemy in map:get_entities("tektite_compass") do
   end
 end
 
-for enemy in map:get_entities("keese") do
-  enemy.on_dead = function()
-    if not map:has_entities("keese_rupees") and not game:get_value("b1119") then
-      chest_rupees:set_enabled(true)
-      bridge_rupees:set_enabled(true)
-      sol.audio.play_sound("chest_appears")
-    end
-  end
-end
+--for enemy in map:get_entities("keese") do
+--  enemy.on_dead = function()
+--    if not map:has_entities("keese_rupees") and not game:get_value("b1119") then
+--      chest_rupees:set_enabled(true)
+--      bridge_rupees:set_enabled(true)
+--      sol.audio.play_sound("chest_appears")
+--    end
+--  end
+--end
 
 for enemy in map:get_entities("dodongo") do
   enemy.on_dead = function()
