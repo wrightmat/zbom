@@ -11,6 +11,7 @@ enemy:set_properties({
   normal_speed = 24,
   faster_speed = 32,
   hurt_style = "monster",
+  --set_attack_consequence("arrow", "protected"),
   movement_create = function()
     return sol.movement.create("random")
   end

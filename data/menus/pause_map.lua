@@ -43,11 +43,15 @@ function map_submenu:on_started()
 
     self.world_minimap_movement = nil
     self.world_minimap_visible_xy = {x = 0, y = 0}
-    if self.game:has_item("world_map") then
+    if self.game:get_item("world_map"):get_variant() > 0 and self.game:get_map():get_world() == "outside_world" then
+      -- if in South Hyrule with World Map, then show the map
       self.world_minimap_img = sol.surface.create("menus/outside_world_map.png")
       self.world_minimap_img:set_xy(center_x - 112, center_y - 61)
       self.world_minimap_visible_xy.y = math.min(outside_world_minimap_size.height - 133, math.max(0, hero_minimap_y - 65))
+    elseif self.game:get_item("world_map"):get_variant() > 1 and self.game:get_map():get_world() == "north_hyrule" then
+      -- if in North Hyrule with upgraded World Map, then show the map
     else
+      -- if World Map not in inventory, show clouds in map screen
       self.world_minimap_img = sol.surface.create("menus/outside_world_clouds.png")
       self.world_minimap_img:set_xy(center_x - 112, center_y - 61)
       self.world_minimap_visible_xy.y = 0

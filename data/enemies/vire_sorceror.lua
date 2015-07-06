@@ -33,7 +33,6 @@ function enemy:on_created()
 end
 
 function enemy:on_restarted()
-  print('V.S. restarted')
   vulnerable = false
   for _, t in ipairs(timers) do t:stop() end
   local sprite = self:get_sprite()
@@ -49,14 +48,12 @@ function enemy:on_restarted()
 end
 
 function enemy:hide()
-  print('V.S. hiding')
   vulnerable = false
   self:set_position(-100, -100)
   sol.timer.start(self:get_map(), 500, function() self:unhide() end)
 end
 
 function enemy:unhide()
-  print('V.S. unhide')
   local position = (positions[math.random(#positions)])
   self:set_position(position.x, position.y)
   local sprite = self:get_sprite()
