@@ -136,8 +136,10 @@ function entity:on_interaction()
       game:start_dialog("crista.4.shop")
     elseif game:get_value("i1032") >= 6 then
       game:start_dialog("crista.3.shop")
-    elseif game:get_value("i1068") > 3 then
+    elseif game:get_value("i1032") >= 3 then
       game:start_dialog("crista.2.house", game:get_player_name())
+    elseif game:get_value("i1032") >= 1 then
+      game:start_dialog("crista.2.shop", game:get_player_name())
     else
       game:start_dialog("crista.0.shop")
     end

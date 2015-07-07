@@ -7703,6 +7703,267 @@ tile{
   pattern = "70",
 }
 
+tile{
+  layer = 0,
+  x = 1368,
+  y = 1144,
+  width = 16,
+  height = 16,
+  pattern = "318",
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 1144,
+  width = 16,
+  height = 16,
+  pattern = "318",
+}
+
+tile{
+  layer = 0,
+  x = 952,
+  y = 1144,
+  width = 16,
+  height = 16,
+  pattern = "318",
+}
+
+tile{
+  layer = 0,
+  x = 1240,
+  y = 1144,
+  width = 16,
+  height = 16,
+  pattern = "318",
+}
+
+tile{
+  layer = 0,
+  x = 664,
+  y = 1144,
+  width = 16,
+  height = 24,
+  pattern = "428",
+}
+
+tile{
+  layer = 0,
+  x = 680,
+  y = 1160,
+  width = 16,
+  height = 24,
+  pattern = "427",
+}
+
+tile{
+  layer = 0,
+  x = 664,
+  y = 1176,
+  width = 16,
+  height = 24,
+  pattern = "428",
+}
+
+tile{
+  layer = 0,
+  x = 664,
+  y = 1192,
+  width = 16,
+  height = 24,
+  pattern = "427",
+}
+
+tile{
+  layer = 0,
+  x = 744,
+  y = 1176,
+  width = 16,
+  height = 24,
+  pattern = "428",
+}
+
+tile{
+  layer = 0,
+  x = 760,
+  y = 1160,
+  width = 16,
+  height = 24,
+  pattern = "427",
+}
+
+tile{
+  layer = 0,
+  x = 768,
+  y = 1176,
+  width = 16,
+  height = 24,
+  pattern = "428",
+}
+
+tile{
+  layer = 0,
+  x = 760,
+  y = 1192,
+  width = 16,
+  height = 24,
+  pattern = "427",
+}
+
+tile{
+  layer = 0,
+  x = 712,
+  y = 1208,
+  width = 16,
+  height = 24,
+  pattern = "428",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 1224,
+  width = 16,
+  height = 24,
+  pattern = "427",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 1136,
+  width = 16,
+  height = 24,
+  pattern = "424",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 1176,
+  width = 16,
+  height = 24,
+  pattern = "424",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 1192,
+  width = 16,
+  height = 24,
+  pattern = "424",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 1144,
+  width = 16,
+  height = 24,
+  pattern = "424",
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 1160,
+  width = 16,
+  height = 24,
+  pattern = "424",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 1192,
+  width = 16,
+  height = 24,
+  pattern = "424",
+}
+
+tile{
+  layer = 0,
+  x = 456,
+  y = 1208,
+  width = 16,
+  height = 24,
+  pattern = "424",
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 1208,
+  width = 16,
+  height = 24,
+  pattern = "424",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 1192,
+  width = 16,
+  height = 24,
+  pattern = "424",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 1208,
+  width = 16,
+  height = 24,
+  pattern = "424",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 1144,
+  width = 16,
+  height = 16,
+  pattern = "203",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 1224,
+  width = 16,
+  height = 16,
+  pattern = "203",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 1224,
+  width = 16,
+  height = 16,
+  pattern = "203",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 1144,
+  width = 16,
+  height = 16,
+  pattern = "203",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 1120,
+  width = 48,
+  height = 16,
+  pattern = "621",
+}
+
 dynamic_tile{
   name = "tile",
   layer = 0,
@@ -8639,6 +8900,93 @@ npc{
   sprite = "npc/hylian_5",
 }
 
+enemy{
+  name = "armos_1",
+  layer = 0,
+  x = 960,
+  y = 1157,
+  direction = 0,
+  breed = "armos",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "armos_2",
+  layer = 0,
+  x = 1088,
+  y = 1157,
+  direction = 0,
+  breed = "armos",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "armos_3",
+  layer = 0,
+  x = 1248,
+  y = 1157,
+  direction = 0,
+  breed = "armos",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "rat_1",
+  layer = 0,
+  x = 712,
+  y = 1149,
+  direction = 0,
+  breed = "rat",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "rat_2",
+  layer = 0,
+  x = 752,
+  y = 1237,
+  direction = 0,
+  breed = "rat",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "rat_3",
+  layer = 0,
+  x = 808,
+  y = 1149,
+  direction = 0,
+  breed = "rat",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "rope_1",
+  layer = 0,
+  x = 424,
+  y = 1157,
+  direction = 0,
+  breed = "rope",
+}
+
+enemy{
+  name = "rope_2",
+  layer = 0,
+  x = 424,
+  y = 1229,
+  direction = 0,
+  breed = "rope",
+}
+
+enemy{
+  name = "rope_3",
+  layer = 0,
+  x = 512,
+  y = 1157,
+  direction = 0,
+  breed = "rope",
+}
+
 tile{
   layer = 1,
   x = 848,
@@ -9384,6 +9732,42 @@ tile{
   width = 8,
   height = 32,
   pattern = "306",
+}
+
+tile{
+  layer = 2,
+  x = 80,
+  y = 1128,
+  width = 16,
+  height = 16,
+  pattern = "204",
+}
+
+tile{
+  layer = 2,
+  x = 80,
+  y = 1208,
+  width = 16,
+  height = 16,
+  pattern = "204",
+}
+
+tile{
+  layer = 2,
+  x = 224,
+  y = 1208,
+  width = 16,
+  height = 16,
+  pattern = "204",
+}
+
+tile{
+  layer = 2,
+  x = 224,
+  y = 1128,
+  width = 16,
+  height = 16,
+  pattern = "204",
 }
 
 separator{

@@ -3070,6 +3070,21 @@ been able to find the woods though...
 }
 
 dialog{
+  id = "crista.2.shop",
+  skip = "current",
+  text = [[
+Hi again, $v! You see that I
+sell potions here? Well, it's important
+that you keep a bottle around so you
+can carry potion for when you might
+need it. Don't have a bottle? I'd go
+ask Rudy the blacksmith if he knows
+where to get one. He lives in a cave
+just west of town in the Faron Woods.
+  ]]
+}
+
+dialog{
   id = "crista.3.shop",
   skip = "current",
   text = [[
@@ -3400,7 +3415,7 @@ dialog{
   text = [[
 Hey kid, you might as well get out
 of here. Without the power of the
-sage Mudora, you have no change
+sage Mudora, you have no chance
 of finding your way in these woods -
 they're all twisted around from the
 evil that's here now.
@@ -4137,7 +4152,7 @@ dialog{
   id = "gartan.0.pub",
   skip = "current",
   text = [[
-*mumble*$0...$0
+(mumble)$0...$0
 He seems to be too incoherent to
 speak at the moment...
   ]]
@@ -4313,7 +4328,7 @@ dialog{
   id = "goron.0.trading_yes",
   skip = "current",
   text = [[
-*munch* *munch*
+(munch) *munch*
 Hmmm... these things are pretty
 good! You've opened my eyes to the
 world of food outside of rocks! I
@@ -6079,7 +6094,7 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-*sniff* $0*sniff*$0
+(sniff) $0(sniff)$0
 Me smell tasty meat?$0
 Me so hungry...
 You give tasty meat?
@@ -6101,7 +6116,7 @@ dialog{
   id = "moblin.0.trading_yes",
   skip = "current",
   text = [[
-*munch* *munch*$0 Yum!
+(munch) *munch*$0 Yum!
 Moblin so happy. Moblin give you this
 can of dog food. Moblin's only possession.
   ]]
@@ -8824,42 +8839,27 @@ dialog{
   id = "zelda.1.council",
   skip = "current",
   text = [[
-He also told me about
-your quest.$0
-To be honest I was
-unaware of the theft
-of the book until Isan
-informed me. You see,
-given my family's
-history with that book,
-I should have sensed
-that something was
-amiss. I expect that
-powerful magic is
-behind all of this.$0
-What?$0 You want to know
-how the Book is
-connected to my family?
-Why, we wrote it many,
-many generations ago!
-The book was originally
-tasked as a living
-history of the land,
-and was enchanted in
-order to...$0
-Wait$0.$0.$0.
-I can feel a powerful
-force headed this way...
-An evil power I believe
-will be here momentarily.$0
-I also believe that if
-they find you here with
-the pieces of that Book
-you possess, it is
-unlikely that you'll
-escape alive.
-Get away from the castle
-as fast as you can!
+He also told me about your quest.$0
+To be honest I was unaware of the
+theft of the book until Isan
+informed me. You see, given my
+family's history with that book,
+I should have sensed that something
+was amiss. I expect that powerful
+magic is behind all of this.$0
+What?$0 You want to know how the Book
+is connected to my family? Why, we wrote
+it many, many generations ago! The book
+was originally tasked as a living
+history of the land, and was enchanted
+in order to...$0 Wait$0.$0.$0.
+I can feel a powerful force headed this
+way... An evil power I believe will be
+here momentarily.$0 I also believe that
+if they find you here with the pieces
+of that Book you possess, it is unlikely
+that you'll escape alive. Get away from
+the castle as fast as you can!
   ]]
 }
 
@@ -8867,14 +8867,14 @@ dialog{
   id = "zirna.0.council",
   skip = "current",
   text = [[
-Princess Zelda!$0 If it isn't the
-leader of both the old Royal Family
-and the Council of Elders!$0
+Princess Zelda!$0 If it isn't the leader
+of both the old Royal Family and the
+Council of Elders!$0
 The woman who has all the answers...$0
 As you likely know, I'm here for a
-particular tome. A very important
-book, of which we believe you know
-where to find the pieces.
+particular tome. A very important book,
+of which we believe you know where to
+find the pieces.
   ]]
 }
 
