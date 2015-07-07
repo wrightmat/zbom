@@ -5247,6 +5247,17 @@ destructible{
   can_be_cut = true,
 }
 
+teletransporter{
+  name = "to_palace",
+  layer = 0,
+  x = 720,
+  y = 248,
+  width = 16,
+  height = 16,
+  destination_map = "123",
+  destination = "from_island",
+}
+
 tile{
   layer = 1,
   x = 720,

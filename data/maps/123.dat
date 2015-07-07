@@ -4412,6 +4412,14 @@ enemy{
   treasure_name = "random",
 }
 
+destination{
+  name = "from_island",
+  layer = 0,
+  x = 1032,
+  y = 781,
+  direction = 3,
+}
+
 tile{
   layer = 2,
   x = 56,
