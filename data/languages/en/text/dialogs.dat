@@ -2690,10 +2690,10 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-Welcome to the mystery chest game.
-Pay 20 rupees to open one of the
-three chests and try to earn as many
-rupees as you can! So, want to play?
+Welcome to the mystery chest game!$0
+Pay 20 rupees to open one of the three
+chests and try to earn as many rupees
+as you can! So, want to play?
 Yes
 No
   ]]
@@ -2701,10 +2701,15 @@ No
 
 dialog{
   id = "chest_game.not_allowed",
+  question = "1",
   skip = "current",
   text = [[
-Haven't you won enough already?
-I'm broke because of you!
+Haven't you won enough already? I'm broke
+because of you!$0 If you're sure you
+still want to play, I'll let you- but you
+won't win anything as good as the wallet!
+Play
+Don't
   ]]
 }
 
@@ -4229,10 +4234,9 @@ dialog{
   id = "gonpho.0.council",
   skip = "current",
   text = [[
-Hi stranger. I got no problem with
-you, I just come here to do a job.
-It's also nice to be in out of the
-cold sometimes...
+Hi stranger. I got no problem with you,
+I just come here to do a job. It's also
+nice to get out of the cold sometimes...
   ]]
 }
 
@@ -4241,8 +4245,8 @@ dialog{
   skip = "current",
   text = [[
 I can't lie, the council won't be able
-to find Zelda without you. We gotta
-ask for your help!
+to find Zelda without you. We gotta ask
+for your help!
   ]]
 }
 
@@ -4250,12 +4254,11 @@ dialog{
   id = "gonpho.0.office",
   skip = "current",
   text = [[
-If you head north of the castle,
-you'll hit the bustling city of
-Kakariko. If you continue north and
-east past that, you'll find my home
-of Snowpeak. Surely not bustling,
-but a nice home anyhow.
+If you head north of the castle, you'll
+hit the bustling city of Kakariko. If
+you continue north and west past that,
+you'll find my home of Snowpeak. Surely
+not bustling, but a nice home anyhow.
   ]]
 }
 

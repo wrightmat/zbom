@@ -7964,6 +7964,24 @@ tile{
   pattern = "621",
 }
 
+tile{
+  layer = 0,
+  x = 952,
+  y = 1216,
+  width = 16,
+  height = 16,
+  pattern = "318",
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 1216,
+  width = 16,
+  height = 16,
+  pattern = "318",
+}
+
 dynamic_tile{
   name = "tile",
   layer = 0,
@@ -8985,6 +9003,26 @@ enemy{
   y = 1157,
   direction = 0,
   breed = "rope",
+}
+
+enemy{
+  name = "armos_4",
+  layer = 0,
+  x = 960,
+  y = 1229,
+  direction = 0,
+  breed = "armos",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "armos_5",
+  layer = 0,
+  x = 1088,
+  y = 1229,
+  direction = 0,
+  breed = "armos",
+  treasure_name = "random",
 }
 
 tile{

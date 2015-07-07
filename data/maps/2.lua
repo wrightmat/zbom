@@ -13,6 +13,7 @@ local playing_chests = false
 local playing_slots = false
 local already_played_chests = false
 local chests_rewards = {5, 20, 100}  -- Possible rupee rewards in chest game.
+local unauthorized = map:get_game():get_value("b16")
 local slots_bet = 0
 local slots_reward = 0
 local slots_man_sprite = nil
@@ -271,10 +272,9 @@ function chests_man:on_interaction()
     game:start_dialog("chest_game.choose_chest")
   else
     -- see if the player can still play
-    local unauthorized = map:get_game():get_value("b16")
     if unauthorized then
-      -- the player already won much money
-      game:start_dialog("chest_game.not_allowed")
+      -- the player already won the wallet, so discourage play
+      game:start_dialog("chest_game.not_allowed", chests_question_dialog_finished)
     else
       if not already_played_game_1 then
         -- first time: long dialog with the game rules
@@ -317,13 +317,6 @@ function map:activate_slot_machine(npc)
       slot.symbol = (current_symbol + math.random(2)) % 7
       slot.current_delay = slot.current_delay + 100
       sprite:set_frame_delay(slot.current_delay)
-
-      -- test code to win every game:
-      -- for _, v in pairs(game_2_slots) do
-      --    v.symbol = slot.symbol
-      --    v.current_delay = slot.current_delay + 100
-      --    v.sprite:set_frame_delay(v.current_delay)
-      -- end
 
       sol.audio.play_sound("switch")
       hero:freeze()
@@ -428,10 +421,15 @@ function open_chest(chest)
     elseif amount == 20 then
       hero:start_treasure("rupee", 3)
     elseif amount == 100 then
-      hero:start_treasure("rupee_bag", 2) -- give bigger rupee bag
+      if game:get_item("rupee_bag"):get_variant() == 1 then
+        -- give bigger rupee bag
+        hero:start_treasure("rupee_bag", 2)
+      else
+        hero:start_treasure("rupee", 4)
+      end
     end
     if amount == 100 then
-      -- the maximum reward was found: the game will now refuse to let the hero play again
+      -- the maximum reward was found: the game will discourage playing again
       game:set_value("b16", true)
     end
     playing_chests = false
@@ -488,7 +486,12 @@ function slots_timeout()
 
   local function slots_give_reward()
     if slots_reward + game:get_money() > 100 then
-      hero:start_treasure("rupee_bag", 2) -- give bigger rupee bag and fill it up!
+      if game:get_item("rupee_bag"):get_variant() == 1 then
+        -- give bigger rupee bag
+        hero:start_treasure("rupee_bag", 2)
+      else
+        hero:start_treasure("rupee", 4)
+      end
     end
     game:add_money(slots_reward)
   end
@@ -546,17 +549,18 @@ function npc_shopkeeper:on_interaction()
   end
 end
 
+function npc_attendant_dialog()
+  if game:get_value("b1170") then game:start_dialog("council_attendant.7") end
+  if game:get_value("b1150") then game:start_dialog("council_attendant.6") end
+  if game:get_value("b1134") then game:start_dialog("council_attendant.5") end
+  if game:get_value("b1117") then game:start_dialog("council_attendant.4") end
+  if game:get_value("b1082") then game:start_dialog("council_attendant.3") end
+  if game:get_value("b1061") then game:start_dialog("council_attendant.2") end
+  if game:get_value("b1033") then game:start_dialog("council_attendant.8") end
+end
 function npc_attendant:on_interaction()
   if game:get_value("i1032") >= 3 then
-    game:start_dialog("council_attendant.1", function()
-      if game:get_value("b1170") then game:start_dialog("council_attendant.7") end
-      if game:get_value("b1150") then game:start_dialog("council_attendant.6") end
-      if game:get_value("b1134") then game:start_dialog("council_attendant.5") end
-      if game:get_value("b1117") then game:start_dialog("council_attendant.4") end
-      if game:get_value("b1082") then game:start_dialog("council_attendant.3") end
-      if game:get_value("b1061") then game:start_dialog("council_attendant.2") end
-      if game:get_value("b1033") then game:start_dialog("council_attendant.8") end
-    end)
+    game:start_dialog("council_attendant.1", npc_attendant_dialog)
   else
     game:start_dialog("council_attendant.0")
   end
