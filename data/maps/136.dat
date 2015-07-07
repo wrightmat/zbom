@@ -2357,6 +2357,222 @@ tile{
   pattern = "77",
 }
 
+tile{
+  layer = 0,
+  x = 920,
+  y = 968,
+  width = 16,
+  height = 8,
+  pattern = "1693",
+}
+
+tile{
+  layer = 0,
+  x = 696,
+  y = 864,
+  width = 8,
+  height = 8,
+  pattern = "40",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 1072,
+  width = 8,
+  height = 8,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 728,
+  width = 8,
+  height = 8,
+  pattern = "39",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 920,
+  width = 16,
+  height = 8,
+  pattern = "1693",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 1080,
+  width = 8,
+  height = 8,
+  pattern = "40",
+}
+
+tile{
+  layer = 0,
+  x = 216,
+  y = 824,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 600,
+  y = 1040,
+  width = 16,
+  height = 16,
+  pattern = "43",
+}
+
+tile{
+  layer = 0,
+  x = 1048,
+  y = 1064,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 824,
+  width = 16,
+  height = 8,
+  pattern = "1693",
+}
+
+tile{
+  layer = 0,
+  x = 864,
+  y = 664,
+  width = 8,
+  height = 8,
+  pattern = "40",
+}
+
+tile{
+  layer = 0,
+  x = 1048,
+  y = 536,
+  width = 8,
+  height = 8,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 872,
+  y = 424,
+  width = 8,
+  height = 8,
+  pattern = "38",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 232,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 472,
+  width = 16,
+  height = 8,
+  pattern = "1693",
+}
+
+tile{
+  layer = 0,
+  x = 632,
+  y = 688,
+  width = 8,
+  height = 8,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 552,
+  y = 840,
+  width = 8,
+  height = 8,
+  pattern = "546",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 536,
+  width = 8,
+  height = 8,
+  pattern = "545",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 120,
+  width = 8,
+  height = 8,
+  pattern = "546",
+}
+
+tile{
+  layer = 0,
+  x = 856,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 792,
+  y = 312,
+  width = 8,
+  height = 8,
+  pattern = "545",
+}
+
+tile{
+  layer = 0,
+  x = 1048,
+  y = 232,
+  width = 8,
+  height = 8,
+  pattern = "546",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 168,
+  width = 16,
+  height = 16,
+  pattern = "2141",
+}
+
+tile{
+  layer = 0,
+  x = 1016,
+  y = 392,
+  width = 32,
+  height = 32,
+  pattern = "527",
+}
+
 teletransporter{
   name = "to_M2",
   layer = 0,
@@ -2427,6 +2643,104 @@ teletransporter{
   transition = "scrolling",
   destination_map = "131",
   destination = "_side",
+}
+
+enemy{
+  name = "chuchu_1",
+  layer = 0,
+  x = 408,
+  y = 965,
+  direction = 0,
+  breed = "chuchu_yellow",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "chuchu_2",
+  layer = 0,
+  x = 200,
+  y = 1045,
+  direction = 0,
+  breed = "chuchu_yellow",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "chuchu_3",
+  layer = 0,
+  x = 856,
+  y = 1037,
+  direction = 0,
+  breed = "chuchu_yellow",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "chuchu_4",
+  layer = 0,
+  x = 1016,
+  y = 709,
+  direction = 0,
+  breed = "chuchu_yellow",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "chuchu_5",
+  layer = 0,
+  x = 784,
+  y = 525,
+  direction = 0,
+  breed = "chuchu_yellow",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "chuchu_6",
+  layer = 0,
+  x = 840,
+  y = 229,
+  direction = 0,
+  breed = "chuchu_yellow",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "chuchu_7",
+  layer = 0,
+  x = 1024,
+  y = 101,
+  direction = 0,
+  breed = "chuchu_yellow",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "chuchu_8",
+  layer = 0,
+  x = 688,
+  y = 85,
+  direction = 0,
+  breed = "chuchu_yellow",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "peahat_3",
+  layer = 0,
+  x = 736,
+  y = 837,
+  direction = 0,
+  breed = "peahat",
+}
+
+enemy{
+  name = "peahat_4",
+  layer = 0,
+  x = 712,
+  y = 237,
+  direction = 0,
+  breed = "peahat",
 }
 
 tile{

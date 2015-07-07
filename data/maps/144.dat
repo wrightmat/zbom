@@ -2726,6 +2726,78 @@ tile{
   pattern = "274",
 }
 
+tile{
+  layer = 0,
+  x = 272,
+  y = 272,
+  width = 8,
+  height = 8,
+  pattern = "38",
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 72,
+  width = 16,
+  height = 8,
+  pattern = "1693",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 264,
+  width = 8,
+  height = 8,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 264,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "43",
+}
+
+tile{
+  layer = 0,
+  x = 696,
+  y = 272,
+  width = 8,
+  height = 8,
+  pattern = "40",
+}
+
+tile{
+  layer = 0,
+  x = 984,
+  y = 48,
+  width = 8,
+  height = 8,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 864,
+  y = 224,
+  width = 16,
+  height = 8,
+  pattern = "1693",
+}
+
 teletransporter{
   name = "to_M5",
   layer = 0,
@@ -2784,6 +2856,106 @@ teletransporter{
   transition = "scrolling",
   destination_map = "138",
   destination = "_side",
+}
+
+enemy{
+  name = "chuchu_4",
+  layer = 0,
+  x = 552,
+  y = 77,
+  direction = 0,
+  breed = "chuchu_yellow",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "chuchu_5",
+  layer = 0,
+  x = 296,
+  y = 197,
+  direction = 0,
+  breed = "chuchu_yellow",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "crab_1",
+  layer = 0,
+  x = 648,
+  y = 517,
+  direction = 0,
+  breed = "crab",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "crab_2",
+  layer = 0,
+  x = 368,
+  y = 541,
+  direction = 0,
+  breed = "crab",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "crab_3",
+  layer = 0,
+  x = 208,
+  y = 685,
+  direction = 0,
+  breed = "crab",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "crab_4",
+  layer = 0,
+  x = 336,
+  y = 861,
+  direction = 0,
+  breed = "crab",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "crab_5",
+  layer = 0,
+  x = 144,
+  y = 1053,
+  direction = 0,
+  breed = "crab",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "crab_6",
+  layer = 0,
+  x = 608,
+  y = 1045,
+  direction = 0,
+  breed = "crab",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "crab_7",
+  layer = 0,
+  x = 720,
+  y = 821,
+  direction = 0,
+  breed = "crab",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "crab_8",
+  layer = 0,
+  x = 872,
+  y = 1013,
+  direction = 0,
+  breed = "crab",
+  treasure_name = "random_north",
 }
 
 tile{

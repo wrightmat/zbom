@@ -2750,6 +2750,66 @@ teletransporter{
   destination = "_side",
 }
 
+enemy{
+  name = "crab_1",
+  layer = 0,
+  x = 192,
+  y = 141,
+  direction = 0,
+  breed = "crab",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "crab_2",
+  layer = 0,
+  x = 504,
+  y = 309,
+  direction = 0,
+  breed = "crab",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "crab_3",
+  layer = 0,
+  x = 904,
+  y = 69,
+  direction = 0,
+  breed = "crab",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "crab_4",
+  layer = 0,
+  x = 656,
+  y = 573,
+  direction = 0,
+  breed = "crab",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "crab_5",
+  layer = 0,
+  x = 280,
+  y = 653,
+  direction = 0,
+  breed = "crab",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "crab_6",
+  layer = 0,
+  x = 408,
+  y = 821,
+  direction = 0,
+  breed = "crab",
+  treasure_name = "random_north",
+}
+
 tile{
   layer = 2,
   x = 712,

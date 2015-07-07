@@ -4049,6 +4049,60 @@ tile{
   pattern = "524",
 }
 
+tile{
+  layer = 0,
+  x = 952,
+  y = 688,
+  width = 16,
+  height = 8,
+  pattern = "1693",
+}
+
+tile{
+  layer = 0,
+  x = 992,
+  y = 760,
+  width = 8,
+  height = 8,
+  pattern = "40",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 728,
+  width = 8,
+  height = 8,
+  pattern = "39",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 888,
+  width = 8,
+  height = 8,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 1000,
+  y = 952,
+  width = 8,
+  height = 8,
+  pattern = "40",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
 teletransporter{
   name = "to_K4",
   layer = 0,
@@ -4286,6 +4340,76 @@ destructible{
   destruction_sound = "bush",
   weight = -1,
   can_be_cut = true,
+}
+
+enemy{
+  name = "chuchu_3",
+  layer = 0,
+  x = 336,
+  y = 53,
+  direction = 0,
+  breed = "chuchu_yellow",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "chuchu_4",
+  layer = 0,
+  x = 184,
+  y = 77,
+  direction = 0,
+  breed = "chuchu_yellow",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "chuchu_5",
+  layer = 0,
+  x = 40,
+  y = 197,
+  direction = 0,
+  breed = "chuchu_yellow",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "chuchu_6",
+  layer = 0,
+  x = 1072,
+  y = 821,
+  direction = 0,
+  breed = "chuchu_yellow",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "chuchu_7",
+  layer = 0,
+  x = 968,
+  y = 733,
+  direction = 0,
+  breed = "chuchu_yellow",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "chuchu_8",
+  layer = 0,
+  x = 1088,
+  y = 1037,
+  direction = 0,
+  breed = "chuchu_yellow",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "chuchu_9",
+  layer = 0,
+  x = 1096,
+  y = 581,
+  direction = 0,
+  breed = "chuchu_yellow",
+  treasure_name = "random",
 }
 
 tile{

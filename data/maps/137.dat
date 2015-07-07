@@ -5384,6 +5384,87 @@ teletransporter{
   destination = "_side",
 }
 
+enemy{
+  name = "chuchu_1",
+  layer = 0,
+  x = 480,
+  y = 709,
+  direction = 0,
+  breed = "chuchu_yellow",
+}
+
+enemy{
+  name = "chuchu_2",
+  layer = 0,
+  x = 888,
+  y = 893,
+  direction = 0,
+  breed = "chuchu_yellow",
+}
+
+enemy{
+  name = "chuchu_3",
+  layer = 0,
+  x = 856,
+  y = 629,
+  direction = 0,
+  breed = "chuchu_yellow",
+}
+
+enemy{
+  name = "chuchu_4",
+  layer = 0,
+  x = 704,
+  y = 213,
+  direction = 0,
+  breed = "chuchu_yellow",
+}
+
+enemy{
+  name = "chuchu_5",
+  layer = 0,
+  x = 176,
+  y = 389,
+  direction = 0,
+  breed = "chuchu_yellow",
+}
+
+enemy{
+  name = "chuchu_6",
+  layer = 0,
+  x = 136,
+  y = 973,
+  direction = 0,
+  breed = "chuchu_yellow",
+}
+
+enemy{
+  name = "peahat_1",
+  layer = 0,
+  x = 384,
+  y = 1053,
+  direction = 0,
+  breed = "peahat",
+}
+
+enemy{
+  name = "peahat_2",
+  layer = 0,
+  x = 136,
+  y = 141,
+  direction = 0,
+  breed = "peahat",
+}
+
+enemy{
+  name = "peahat_3",
+  layer = 0,
+  x = 880,
+  y = 117,
+  direction = 0,
+  breed = "peahat",
+}
+
 tile{
   layer = 2,
   x = 48,

@@ -3346,6 +3346,56 @@ teletransporter{
   destination = "_side",
 }
 
+enemy{
+  name = "chuchu_3",
+  layer = 0,
+  x = 904,
+  y = 333,
+  direction = 0,
+  breed = "chuchu_yellow",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "chuchu_4",
+  layer = 0,
+  x = 752,
+  y = 213,
+  direction = 0,
+  breed = "chuchu_yellow",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "chuchu_5",
+  layer = 0,
+  x = 472,
+  y = 301,
+  direction = 0,
+  breed = "chuchu_yellow",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "chuchu_6",
+  layer = 0,
+  x = 336,
+  y = 53,
+  direction = 0,
+  breed = "chuchu_yellow",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "chuchu_7",
+  layer = 0,
+  x = 960,
+  y = 61,
+  direction = 0,
+  breed = "chuchu_yellow",
+  treasure_name = "random",
+}
+
 tile{
   layer = 2,
   x = 1112,

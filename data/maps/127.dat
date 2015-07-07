@@ -5103,6 +5103,86 @@ jumper{
   jump_length = 64,
 }
 
+enemy{
+  name = "chuchu_1",
+  layer = 0,
+  x = 1032,
+  y = 677,
+  direction = 0,
+  breed = "chuchu_yellow",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "chuchu_2",
+  layer = 0,
+  x = 744,
+  y = 245,
+  direction = 0,
+  breed = "chuchu_yellow",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "chuchu_3",
+  layer = 0,
+  x = 256,
+  y = 949,
+  direction = 0,
+  breed = "chuchu_yellow",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "chuchu_4",
+  layer = 0,
+  x = 800,
+  y = 1077,
+  direction = 0,
+  breed = "chuchu_yellow",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "peahat_2",
+  layer = 0,
+  x = 672,
+  y = 645,
+  direction = 0,
+  breed = "peahat",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "peahat_3",
+  layer = 0,
+  x = 248,
+  y = 669,
+  direction = 0,
+  breed = "peahat",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "chuchu_red_1",
+  layer = 0,
+  x = 552,
+  y = 101,
+  direction = 0,
+  breed = "chuchu_red",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "chuchu_red_2",
+  layer = 0,
+  x = 120,
+  y = 213,
+  direction = 0,
+  breed = "chuchu_red",
+  treasure_name = "random",
+}
+
 tile{
   layer = 2,
   x = 1104,

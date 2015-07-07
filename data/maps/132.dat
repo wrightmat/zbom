@@ -3095,6 +3095,15 @@ tile{
   pattern = "524",
 }
 
+tile{
+  layer = 0,
+  x = 56,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
 teletransporter{
   name = "to_L5",
   layer = 0,
@@ -3513,6 +3522,86 @@ wall{
   width = 8,
   height = 56,
   stops_hero = true,
+}
+
+enemy{
+  name = "peahat_1",
+  layer = 0,
+  x = 792,
+  y = 613,
+  direction = 0,
+  breed = "peahat",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "peahat_2",
+  layer = 0,
+  x = 144,
+  y = 509,
+  direction = 0,
+  breed = "peahat",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "chuchu_1",
+  layer = 0,
+  x = 568,
+  y = 1045,
+  direction = 0,
+  breed = "chuchu_yellow",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "chuchu_2",
+  layer = 0,
+  x = 176,
+  y = 1061,
+  direction = 0,
+  breed = "chuchu_yellow",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "chuchu_3",
+  layer = 0,
+  x = 424,
+  y = 789,
+  direction = 0,
+  breed = "chuchu_yellow",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "chuchu_4",
+  layer = 0,
+  x = 1064,
+  y = 365,
+  direction = 0,
+  breed = "chuchu_yellow",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "chuchu_5",
+  layer = 0,
+  x = 736,
+  y = 85,
+  direction = 0,
+  breed = "chuchu_yellow",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "chuchu_6",
+  layer = 0,
+  x = 368,
+  y = 181,
+  direction = 0,
+  breed = "chuchu_yellow",
+  treasure_name = "random",
 }
 
 tile{
