@@ -6838,6 +6838,51 @@ teletransporter{
   destination = "from_sewer",
 }
 
+enemy{
+  name = "tentacle_path_1",
+  layer = 0,
+  x = 2000,
+  y = 213,
+  direction = 3,
+  breed = "tentacle",
+}
+
+enemy{
+  name = "tentacle_path_2",
+  layer = 0,
+  x = 1536,
+  y = 213,
+  direction = 3,
+  breed = "tentacle",
+}
+
+enemy{
+  name = "tentacle_path_3",
+  layer = 0,
+  x = 1216,
+  y = 213,
+  direction = 3,
+  breed = "tentacle",
+}
+
+enemy{
+  name = "tentacle_path_4",
+  layer = 0,
+  x = 1392,
+  y = 149,
+  direction = 3,
+  breed = "tentacle",
+}
+
+enemy{
+  name = "tentacle_path_5",
+  layer = 0,
+  x = 1800,
+  y = 141,
+  direction = 3,
+  breed = "tentacle",
+}
+
 tile{
   layer = 1,
   x = 848,
