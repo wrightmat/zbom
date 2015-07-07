@@ -36,11 +36,15 @@ function map:on_started(destination)
     npc_etnaya:remove()
 
     if game:get_value("b1812") then
-      quest_bottle:remove() --if bottle already obtained, remove the quest
+      quest_bottle:remove() --if bottle already obtained, remove the quest and bottle
+      bottle:remove()
+      sensor_bottle:remove()
+      wall_bottle:remove()
     else
       bottle:remove() --bottle is missing at night, hence the quest
       sensor_bottle:remove()
       wall_bottle:remove()
+      npc_strap_pub:remove()
     end
 
     -- Activate any night-specific dynamic tiles
@@ -49,6 +53,7 @@ function map:on_started(destination)
     end
   else
     quest_bottle:remove() --quest only available at night
+    npc_strap_pub:remove()
   end
 
   if destination ~= inn_bed then
@@ -107,7 +112,7 @@ function inn_bed:on_activated()
 end
 
 function npc_strap:on_interaction()
-  if game:get_time_of_day() == "night" and not game:get_value("b1612") then
+  if game:get_time_of_day() == "night" and not game:get_value("b1812") then
     game:start_dialog("strap.0.night", function()
       quest_bottle:remove()
       game:set_value("b1612", true)
@@ -120,6 +125,9 @@ function npc_strap:on_interaction()
       game:start_dialog("shopkeep.0")
     end
   end
+end
+function npc_strap_pub:on_interaction()
+  game:start_dialog("strap.0.pub")
 end
 
 function npc_warbos:on_interaction()
@@ -253,9 +261,15 @@ end
 function npc_kakariko_1:on_interaction()
   game:start_dialog("hylian_1.0.kakariko")
 end
+
 function npc_kakariko_2:on_interaction()
-  game:start_dialog("hylian_2.0.kakariko")
+  if math.random(2) == 1 then
+    game:start_dialog("hylian_2.1.kakariko")
+  else
+    game:start_dialog("hylian_2.0.kakariko")
+  end
 end
+
 function npc_kakariko_3:on_interaction()
   game:start_dialog("hylian_3.0.kakariko")
 end

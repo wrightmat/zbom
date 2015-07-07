@@ -38,6 +38,7 @@ function map:on_started(destination)
           hero:unfreeze()
 	  game:add_max_stamina(100)
 	  game:set_stamina(game:get_max_stamina())
+	  torch_1:get_sprite():set_animation("unlit")
           game:set_value("i1910", 4)
         end)
       end)
@@ -55,10 +56,9 @@ function game:on_map_changed(map)
     if map:get_id() == "68" and lantern_overlay then lantern_overlay:fade_out() end
 
     if map:get_id() == "68" and torch_overlay then
-      local torch = map:get_entity("torch_1")
       local screen_width, screen_height = dst_surface:get_size()
       local cx, cy = map:get_camera_position()
-      local tx, ty = torch:get_center_position()
+      local tx, ty = torch_1:get_center_position()
       local x = 320 - tx + cx
       local y = 240 - ty + cy
       torch_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)

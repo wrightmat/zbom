@@ -7012,9 +7012,9 @@ shop_treasure{
   x = 160,
   y = 112,
   treasure_name = "bomb_bag",
-  treasure_savegame_variable = "b2005",
+  treasure_savegame_variable = "i1806",
   price = 400,
-  font = "la",
+  font = "bom",
   dialog = "shop.bomb_bag_1",
 }
 
@@ -7989,6 +7989,16 @@ door{
   direction = 0,
   sprite = "entities/door_very_weak_wall",
   opening_method = "explosion",
+}
+
+npc{
+  name = "npc_strap_pub",
+  layer = 0,
+  x = 568,
+  y = 549,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/hylian_strap",
 }
 
 npc{

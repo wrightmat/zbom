@@ -50,10 +50,13 @@ function npc_ildus:on_interaction()
 end
 
 function sensor_music:on_activated()
-  sol.audio.play_music("town_kakariko")
+  if hero:get_direction() == 3 then sol.audio.play_music("town_kakariko") end
 end
 function sensor_music_2:on_activated()
-  sol.audio.play_music("town_kakariko")
+  if hero:get_direction() == 3 then sol.audio.play_music("town_kakariko") end
+end
+function sensor_music_3:on_activated()
+  if hero:get_direction() == 3 then sol.audio.play_music("town_kakariko") end
 end
 
 function sensor_enter_kakariko:on_activated()

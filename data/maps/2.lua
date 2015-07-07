@@ -100,7 +100,11 @@ function elder_juba_office:on_interaction()
     end)
     game:set_value("i1924", 2)
   else
-    game:start_dialog("juba.1.office")
+    if not game:get_value("b1134") and math.random(2) == 1 then
+      game:start_dialog("juba.1.lakebed")
+    else
+      game:start_dialog("juba.1.office")
+    end
     if game:get_value("i1924") == 0 then game:set_value("i1924", 1) end
   end
 end
