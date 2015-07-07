@@ -565,3 +565,7 @@ function npc_attendant:on_interaction()
     game:start_dialog("council_attendant.0")
   end
 end
+
+function sensor_door_throne:on_activated()
+  door_throne:set_open()
+end
