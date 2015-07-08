@@ -1,9 +1,13 @@
 local submenu = require("menus/pause_submenu")
 local map_submenu = submenu:new()
 
---local outside_world_size = { width = 8900, height = 24900 }
-local outside_world_size = { width = 7847, height = 13452 }
+local outside_world_size = { width = 8000, height = 13452 } --Hyrule
 local outside_world_minimap_size = { width = 225, height = 388 }
+local outside_world_2_size = { width = 3360, height = 4480 } --Subrosia
+local outside_world_2_minimap_size = { width = 225, height = 300 }
+--local outside_world_3_size = { width = , height =  } --North
+--local outside_world_3_minimap_size = { width = , height =  }
+local map_shown = false
 
 function map_submenu:on_started()
 
@@ -23,7 +27,7 @@ function map_submenu:on_started()
   self.dungeon = self.game:get_dungeon()
 
   if self.dungeon == nil then
-    -- Not in a dungeon: show the world map.
+    -- Not in a dungeon: show a world map.
     self:set_caption("map.caption.world_map")
 
     self.up_arrow_sprite:set_xy(center_x - 64, center_y - 65)
@@ -36,7 +40,7 @@ function map_submenu:on_started()
       hero_absolute_y = hero_absolute_y + hero_map_y
     end
 
-    local hero_minimap_x = math.floor(hero_absolute_x * outside_world_minimap_size.width / outside_world_size.width) - 30
+    local hero_minimap_x = math.floor(hero_absolute_x * outside_world_minimap_size.width / outside_world_size.width) - 40
     local hero_minimap_y = math.floor(hero_absolute_y * outside_world_minimap_size.height / outside_world_size.height) - 110
     self.hero_x = hero_minimap_x + 40
     self.hero_y = hero_minimap_y + 53
@@ -45,13 +49,25 @@ function map_submenu:on_started()
     self.world_minimap_visible_xy = {x = 0, y = 0}
     if self.game:get_item("world_map"):get_variant() > 0 and self.game:get_map():get_world() == "outside_world" then
       -- if in South Hyrule with World Map, then show the map
+      map_shown = true
       self.world_minimap_img = sol.surface.create("menus/outside_world_map.png")
       self.world_minimap_img:set_xy(center_x - 112, center_y - 61)
       self.world_minimap_visible_xy.y = math.min(outside_world_minimap_size.height - 133, math.max(0, hero_minimap_y - 65))
-    elseif self.game:get_item("world_map"):get_variant() > 1 and self.game:get_map():get_world() == "north_hyrule" then
+    elseif self.game:get_item("world_map"):get_variant() > 1 and self.game:get_map():get_world() == "outside_subrosia" then
+      -- if in Subrosia with upgraded World Map, then show the map
+      map_shown = true
+      self.world_minimap_img = sol.surface.create("menus/outside_world_map_2.png")
+      self.world_minimap_img:set_xy(center_x - 112, center_y - 61)
+      self.world_minimap_visible_xy.y = math.min(outside_world_minimap_size.height - 133, math.max(0, hero_minimap_y - 65))
+    elseif self.game:get_item("world_map"):get_variant() > 2 and self.game:get_map():get_world() == "outside_north" then
       -- if in North Hyrule with upgraded World Map, then show the map
+      map_shown = true
+      self.world_minimap_img = sol.surface.create("menus/outside_world_map_3.png")
+      self.world_minimap_img:set_xy(center_x - 112, center_y - 61)
+      self.world_minimap_visible_xy.y = math.min(outside_world_minimap_size.height - 133, math.max(0, hero_minimap_y - 65))
     else
       -- if World Map not in inventory, show clouds in map screen
+      map_shown = false
       self.world_minimap_img = sol.surface.create("menus/outside_world_clouds.png")
       self.world_minimap_img:set_xy(center_x - 112, center_y - 61)
       self.world_minimap_visible_xy.y = 0
@@ -89,7 +105,7 @@ function map_submenu:on_started()
     else
       -- The hero is on a known floor.
       self.selected_floor = self.hero_floor
-      if self.nb_floors <= 8 then -- <= 7
+      if self.nb_floors <= 7 then
         self.highest_floor_displayed = self.dungeon.highest_floor
       elseif self.floor >= self.dungeon.highest_floor - 2 then
         self.highest_floor_displayed = self.dungeon.highest_floor
@@ -130,7 +146,7 @@ function map_submenu:on_command_pressed(command)
 
     if not self.game:is_in_dungeon() then
       -- Move the outside world minimap.
-      if self.game:has_item("world_map") then
+      if map_shown then
 
         if (command == "up" and self.world_minimap_visible_xy.y > 0) or
             (command == "down" and self.world_minimap_visible_xy.y < outside_world_minimap_size.height - 134) then
@@ -217,7 +233,7 @@ function map_submenu:draw_world_map(dst_surface)
       self.world_minimap_visible_xy.x, self.world_minimap_visible_xy.y, 225, 133,
       dst_surface)
 
-  if self.game:has_item("world_map") then
+  if map_shown then
     -- Draw the hero's position.
     local hero_visible_y = self.hero_y - self.world_minimap_visible_xy.y
     if hero_visible_y >= 51 and hero_visible_y <= 133 + 51 then

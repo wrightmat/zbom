@@ -5982,7 +5982,7 @@ destination{
   layer = 0,
   x = 1072,
   y = 973,
-  direction = 3,
+  direction = -1,
 }
 
 destination{
@@ -6534,6 +6534,7 @@ enemy{
   y = 717,
   direction = 3,
   breed = "poe",
+  treasure_name = "random",
 }
 
 enemy{
@@ -6543,6 +6544,7 @@ enemy{
   y = 813,
   direction = 3,
   breed = "poe",
+  treasure_name = "random",
 }
 
 enemy{
@@ -6552,6 +6554,7 @@ enemy{
   y = 821,
   direction = 3,
   breed = "poe",
+  treasure_name = "random",
 }
 
 enemy{
@@ -6561,6 +6564,7 @@ enemy{
   y = 509,
   direction = 3,
   breed = "poe",
+  treasure_name = "random",
 }
 
 enemy{
@@ -6570,6 +6574,7 @@ enemy{
   y = 525,
   direction = 3,
   breed = "poe",
+  treasure_name = "random",
 }
 
 pickable{
@@ -6615,6 +6620,7 @@ enemy{
   y = 661,
   direction = 3,
   breed = "poe",
+  treasure_name = "random",
 }
 
 enemy{
@@ -6624,6 +6630,7 @@ enemy{
   y = 725,
   direction = 3,
   breed = "poe",
+  treasure_name = "random",
 }
 
 enemy{
@@ -6633,7 +6640,8 @@ enemy{
   y = 469,
   direction = 3,
   breed = "poe",
-  treasure_name = "poe_soul",
+  treasure_name = "bomb",
+  treasure_variant = 2,
 }
 
 custom_entity{
