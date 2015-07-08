@@ -56,10 +56,11 @@ end
 
 local function initialize_maps()
   local map_metatable = sol.main.get_metatable("map")
+  local night_overlay = nil
 
   function map_metatable:on_draw(dst_surface)
     -- Put the night overlay on any outdoor map if it's night time
-    if (self:get_world() == "outside_world" and self:get_game():get_time_of_day() == "night") or
+    if (self:get_game():is_in_outside_world() and self:get_game():get_time_of_day() == "night") or
 	(self:get_world() == "dungeon_2" and self:get_id() == "20" and self:get_game():get_time_of_day() == "night") or
 	(self:get_world() == "dungeon_2" and self:get_id() == "21" and self:get_game():get_time_of_day() == "night") or
 	(self:get_world() == "dungeon_2" and self:get_id() == "22" and self:get_game():get_time_of_day() == "night") then

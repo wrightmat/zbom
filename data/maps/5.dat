@@ -2852,6 +2852,83 @@ tile{
   pattern = "283",
 }
 
+dynamic_tile{
+  name = "night_doorway_7",
+  layer = 0,
+  x = 184,
+  y = 824,
+  pattern = "680",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_doorway_6",
+  layer = 0,
+  x = 152,
+  y = 504,
+  pattern = "680",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_doorway_5",
+  layer = 0,
+  x = 152,
+  y = 200,
+  pattern = "680",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_doorway_4",
+  layer = 0,
+  x = 488,
+  y = 472,
+  pattern = "680",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_doorway_3",
+  layer = 0,
+  x = 488,
+  y = 200,
+  pattern = "680",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_doorway_2",
+  layer = 0,
+  x = 824,
+  y = 472,
+  pattern = "680",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_doorway_1",
+  layer = 0,
+  x = 824,
+  y = 200,
+  pattern = "680",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
 npc{
   name = "npc_osgor",
   layer = 0,
@@ -3063,9 +3140,9 @@ shop_treasure{
   y = 392,
   treasure_name = "bomb_bag",
   treasure_variant = 2,
-  treasure_savegame_variable = "b1806",
+  treasure_savegame_variable = "i1806",
   price = 400,
-  font = "la",
+  font = "bom",
   dialog = "shop.bomb_bag_2",
 }
 

@@ -10,8 +10,16 @@ if game:get_value("i1916") == nil then game:set_value("i1916", 0) end --Galen re
 if game:get_value("i1029") == nil then game:set_value("i1029", 0) end --quest variable
 
 function map:on_started(destination)
+  if game:get_time_of_day() == "night" then
+    -- Activate any night-specific dynamic tiles
+    for entity in map:get_entities("night_") do
+      entity:set_enabled(true)
+    end
+  end
+
   snores:set_enabled(false)
   npc_galen_2:get_sprite():set_direction(1)--up
+
   if game:get_value("i1029") < 2 then
     npc_galen_2:remove()
   elseif game:get_value("i1029") == 2 then
