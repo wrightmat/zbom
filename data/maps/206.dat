@@ -50,17 +50,8 @@ tile{
   x = 1440,
   y = 608,
   width = 64,
-  height = 64,
+  height = 16,
   pattern = "22",
-}
-
-tile{
-  layer = 0,
-  x = 1456,
-  y = 624,
-  width = 32,
-  height = 32,
-  pattern = "524",
 }
 
 tile{
@@ -7661,78 +7652,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1464,
-  y = 648,
-  width = 16,
-  height = 8,
-  pattern = "317",
-}
-
-tile{
-  layer = 0,
-  x = 1464,
-  y = 624,
-  width = 16,
-  height = 8,
-  pattern = "321",
-}
-
-tile{
-  layer = 0,
-  x = 1456,
-  y = 632,
-  width = 8,
-  height = 16,
-  pattern = "323",
-}
-
-tile{
-  layer = 0,
-  x = 1480,
-  y = 632,
-  width = 8,
-  height = 16,
-  pattern = "319",
-}
-
-tile{
-  layer = 0,
-  x = 1480,
-  y = 648,
-  width = 8,
-  height = 8,
-  pattern = "318",
-}
-
-tile{
-  layer = 0,
-  x = 1456,
-  y = 624,
-  width = 8,
-  height = 8,
-  pattern = "322",
-}
-
-tile{
-  layer = 0,
-  x = 1480,
-  y = 624,
-  width = 8,
-  height = 8,
-  pattern = "320",
-}
-
-tile{
-  layer = 0,
-  x = 1456,
-  y = 648,
-  width = 8,
-  height = 8,
-  pattern = "316",
-}
-
-tile{
-  layer = 0,
   x = 1448,
   y = 512,
   width = 16,
@@ -8395,6 +8314,114 @@ tile{
   width = 16,
   height = 32,
   pattern = "637",
+}
+
+tile{
+  layer = 0,
+  x = 1456,
+  y = 624,
+  width = 32,
+  height = 32,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 1440,
+  y = 656,
+  width = 64,
+  height = 16,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
+  x = 1440,
+  y = 624,
+  width = 16,
+  height = 32,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
+  x = 1488,
+  y = 624,
+  width = 16,
+  height = 32,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
+  x = 1456,
+  y = 624,
+  width = 8,
+  height = 8,
+  pattern = "108",
+}
+
+tile{
+  layer = 0,
+  x = 1480,
+  y = 648,
+  width = 8,
+  height = 8,
+  pattern = "111",
+}
+
+tile{
+  layer = 0,
+  x = 1456,
+  y = 648,
+  width = 8,
+  height = 8,
+  pattern = "110",
+}
+
+tile{
+  layer = 0,
+  x = 1480,
+  y = 624,
+  width = 8,
+  height = 8,
+  pattern = "109",
+}
+
+tile{
+  layer = 0,
+  x = 1464,
+  y = 648,
+  width = 16,
+  height = 8,
+  pattern = "113",
+}
+
+tile{
+  layer = 0,
+  x = 1456,
+  y = 632,
+  width = 8,
+  height = 16,
+  pattern = "114",
+}
+
+tile{
+  layer = 0,
+  x = 1464,
+  y = 624,
+  width = 16,
+  height = 8,
+  pattern = "112",
+}
+
+tile{
+  layer = 0,
+  x = 1480,
+  y = 632,
+  width = 8,
+  height = 16,
+  pattern = "115",
 }
 
 chest{

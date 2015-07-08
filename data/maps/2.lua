@@ -337,7 +337,7 @@ function chests_question_dialog_finished(answer)
     if game:get_money() < 20 then
       -- not enough money
       sol.audio.play_sound("wrong")
-      game:start_dialog("chest_game.not_enough_money")
+      game:start_dialog("slot_game.not_enough_money")
     else
       -- enough money: reset the 3 chests, pay and start the game
       chest_1:set_open(false)

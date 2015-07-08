@@ -190,6 +190,26 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "116",
+  ground = "low_wall",
+  default_layer = 0,
+  x = 224,
+  y = 288,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "117",
+  ground = "wall",
+  default_layer = 0,
+  x = 32,
+  y = 448,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
   id = "118",
   ground = "wall",
   default_layer = 0,
@@ -370,6 +390,16 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "134",
+  ground = "traversable",
+  default_layer = 0,
+  x = 128,
+  y = 432,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
   id = "135",
   ground = "traversable",
   default_layer = 0,
@@ -417,6 +447,16 @@ tile_pattern{
   y = 80,
   width = 8,
   height = 8,
+}
+
+tile_pattern{
+  id = "14",
+  ground = "low_wall",
+  default_layer = 0,
+  x = 192,
+  y = 288,
+  width = 16,
+  height = 16,
 }
 
 tile_pattern{
@@ -656,6 +696,16 @@ tile_pattern{
   x = 24,
   y = 184,
   width = 8,
+  height = 16,
+}
+
+tile_pattern{
+  id = "162",
+  ground = "wall",
+  default_layer = 0,
+  x = 144,
+  y = 432,
+  width = 16,
   height = 16,
 }
 
@@ -940,6 +990,16 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "189",
+  ground = "traversable",
+  default_layer = 1,
+  x = 144,
+  y = 424,
+  width = 16,
+  height = 8,
+}
+
+tile_pattern{
   id = "19",
   ground = "wall",
   default_layer = 0,
@@ -947,6 +1007,37 @@ tile_pattern{
   y = 40,
   width = 16,
   height = 8,
+}
+
+tile_pattern{
+  id = "190",
+  ground = "hole",
+  default_layer = 0,
+  x = 160,
+  y = 416,
+  width = 16,
+  height = 16,
+  scrolling = "self",
+}
+
+tile_pattern{
+  id = "191",
+  ground = "traversable",
+  default_layer = 0,
+  x = 160,
+  y = 432,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "192",
+  ground = "lava",
+  default_layer = 0,
+  x = { 128, 144, 160, 144 },
+  y = { 448, 448, 448, 448 },
+  width = 16,
+  height = 16,
 }
 
 tile_pattern{
@@ -4337,6 +4428,16 @@ tile_pattern{
   y = 8,
   width = 8,
   height = 8,
+}
+
+tile_pattern{
+  id = "95",
+  ground = "low_wall",
+  default_layer = 0,
+  x = 208,
+  y = 288,
+  width = 16,
+  height = 16,
 }
 
 tile_pattern{

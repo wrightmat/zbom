@@ -12821,7 +12821,7 @@ tile_pattern{
 
 tile_pattern{
   id = "forest.corner.1",
-  ground = "traversable",
+  ground = "wall_bottom_right",
   default_layer = 0,
   x = 536,
   y = 640,
@@ -12831,7 +12831,7 @@ tile_pattern{
 
 tile_pattern{
   id = "forest.corner.2",
-  ground = "traversable",
+  ground = "wall_bottom_left",
   default_layer = 0,
   x = 552,
   y = 640,
@@ -12841,7 +12841,7 @@ tile_pattern{
 
 tile_pattern{
   id = "forest.corner.3",
-  ground = "traversable",
+  ground = "wall_top_right",
   default_layer = 0,
   x = 536,
   y = 656,
@@ -12851,7 +12851,7 @@ tile_pattern{
 
 tile_pattern{
   id = "forest.corner.4",
-  ground = "traversable",
+  ground = "wall_top_left",
   default_layer = 0,
   x = 552,
   y = 656,
@@ -12861,7 +12861,7 @@ tile_pattern{
 
 tile_pattern{
   id = "forest.corner_reverse.1",
-  ground = "traversable",
+  ground = "wall_bottom_right",
   default_layer = 0,
   x = 568,
   y = 640,
@@ -12871,7 +12871,7 @@ tile_pattern{
 
 tile_pattern{
   id = "forest.corner_reverse.2",
-  ground = "traversable",
+  ground = "wall_bottom_left",
   default_layer = 0,
   x = 584,
   y = 640,
@@ -12881,7 +12881,7 @@ tile_pattern{
 
 tile_pattern{
   id = "forest.corner_reverse.3",
-  ground = "traversable",
+  ground = "wall_top_right",
   default_layer = 0,
   x = 568,
   y = 656,
@@ -12891,7 +12891,7 @@ tile_pattern{
 
 tile_pattern{
   id = "forest.corner_reverse.4",
-  ground = "traversable",
+  ground = "wall_top_left",
   default_layer = 0,
   x = 584,
   y = 656,

@@ -9693,6 +9693,123 @@ tile{
   pattern = "481",
 }
 
+tile{
+  layer = 0,
+  x = 216,
+  y = 1360,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 1248,
+  width = 16,
+  height = 16,
+  pattern = "95",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "116",
+}
+
+tile{
+  layer = 0,
+  x = 1096,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "95",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "116",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "116",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 168,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "116",
+}
+
+tile{
+  layer = 0,
+  x = 1792,
+  y = 1008,
+  width = 16,
+  height = 16,
+  pattern = "95",
+}
+
+tile{
+  layer = 0,
+  x = 1888,
+  y = 744,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 1360,
+  y = 1344,
+  width = 16,
+  height = 16,
+  pattern = "116",
+}
+
 wall{
   layer = 0,
   x = 1408,
@@ -13001,7 +13118,7 @@ destination{
   layer = 0,
   x = 1888,
   y = 1589,
-  direction = 0,
+  direction = -1,
 }
 
 sensor{

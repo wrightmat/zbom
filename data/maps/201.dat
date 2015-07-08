@@ -11,6 +11,24 @@ properties{
 
 tile{
   layer = 0,
+  x = 920,
+  y = 688,
+  width = 64,
+  height = 48,
+  pattern = "134",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 736,
+  width = 80,
+  height = 64,
+  pattern = "46",
+}
+
+tile{
+  layer = 0,
   x = 720,
   y = 320,
   width = 464,
@@ -50,7 +68,7 @@ tile{
   x = 912,
   y = 656,
   width = 80,
-  height = 128,
+  height = 32,
   pattern = "46",
 }
 
@@ -358,15 +376,6 @@ tile{
   width = 112,
   height = 16,
   pattern = "8",
-}
-
-tile{
-  layer = 0,
-  x = 920,
-  y = 720,
-  width = 64,
-  height = 8,
-  pattern = "317",
 }
 
 tile{
@@ -2145,16 +2154,7 @@ tile{
 tile{
   layer = 0,
   x = 920,
-  y = 680,
-  width = 64,
-  height = 8,
-  pattern = "113",
-}
-
-tile{
-  layer = 0,
-  x = 920,
-  y = 720,
+  y = 728,
   width = 64,
   height = 8,
   pattern = "113",
@@ -4439,15 +4439,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 920,
-  y = 688,
-  width = 64,
-  height = 32,
-  pattern = "524",
-}
-
-tile{
-  layer = 0,
   x = 112,
   y = 608,
   width = 16,
@@ -5220,6 +5211,15 @@ tile{
   pattern = "482",
 }
 
+tile{
+  layer = 0,
+  x = 920,
+  y = 688,
+  width = 64,
+  height = 8,
+  pattern = "112",
+}
+
 wall{
   layer = 0,
   x = 936,
@@ -5236,17 +5236,17 @@ wall{
   width = 32,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 enemy{
+  name = "boss_carock",
   layer = 0,
   x = 2032,
   y = 548,
-  name = "boss_carock",
   direction = 3,
   breed = "carock",
   rank = 2,
@@ -5255,10 +5255,10 @@ enemy{
 }
 
 enemy{
+  name = "room2_armos_1",
   layer = 0,
   x = 120,
   y = 460,
-  name = "room2_armos_1",
   direction = 3,
   breed = "armos",
   treasure_name = "arrow",
@@ -5266,68 +5266,68 @@ enemy{
 }
 
 enemy{
+  name = "pike_1",
   layer = 0,
   x = 424,
   y = 381,
-  name = "pike_1",
   direction = 3,
   breed = "pike_auto",
 }
 
 enemy{
+  name = "pike_2",
   layer = 0,
   x = 600,
   y = 381,
-  name = "pike_2",
   direction = 3,
   breed = "pike_auto",
 }
 
 enemy{
+  name = "room3_helmasaur_1",
   layer = 0,
   x = 444,
   y = 597,
-  name = "room3_helmasaur_1",
   direction = 3,
   breed = "helmasaur_red",
   treasure_name = "random",
 }
 
 enemy{
+  name = "room3_helmasaur_2",
   layer = 0,
   x = 564,
   y = 557,
-  name = "room3_helmasaur_2",
   direction = 3,
   breed = "helmasaur_red",
   treasure_name = "random",
 }
 
 enemy{
+  name = "room3_helmasaur_3",
   layer = 0,
   x = 540,
   y = 701,
-  name = "room3_helmasaur_3",
   direction = 3,
   breed = "helmasaur_red",
   treasure_name = "random",
 }
 
 door{
+  name = "door_room1_1",
   layer = 0,
   x = 312,
   y = 648,
-  name = "door_room1_1",
   direction = 0,
   sprite = "entities/door_shutter",
   savegame_variable = "b1049",
 }
 
 chest{
+  name = "chest_big",
   layer = 0,
   x = 952,
   y = 469,
-  name = "chest_big",
   treasure_name = "boomerang",
   treasure_savegame_variable = "i1808",
   sprite = "entities/chest_big",
@@ -5337,38 +5337,38 @@ chest{
 }
 
 enemy{
+  name = "firebar_1",
   layer = 0,
   x = 1368,
   y = 701,
-  name = "firebar_1",
   direction = 3,
   breed = "fire_bar",
 }
 
 chest{
+  name = "chest_compass",
   layer = 0,
   x = 1448,
   y = 637,
-  name = "chest_compass",
   treasure_name = "compass",
   sprite = "entities/chest",
 }
 
 chest{
+  name = "chest_treasure",
   layer = 0,
   x = 936,
   y = 765,
-  name = "chest_treasure",
   treasure_name = "plume",
   treasure_savegame_variable = "b1787",
   sprite = "entities/chest",
 }
 
 door{
+  name = "door_key3_1",
   layer = 0,
   x = 1192,
   y = 416,
-  name = "door_key3_1",
   direction = 0,
   sprite = "entities/door_small_key",
   savegame_variable = "b1039",
@@ -5379,10 +5379,10 @@ door{
 }
 
 door{
+  name = "door_key3_2",
   layer = 0,
   x = 1240,
   y = 416,
-  name = "door_key3_2",
   direction = 2,
   sprite = "entities/door_small_key",
   savegame_variable = "b1039",
@@ -5393,66 +5393,66 @@ door{
 }
 
 enemy{
+  name = "firebar_2",
   layer = 0,
   x = 1624,
   y = 653,
-  name = "firebar_2",
   direction = 3,
   breed = "fire_bar",
 }
 
 enemy{
+  name = "firebar_3",
   layer = 0,
   x = 1704,
   y = 717,
-  name = "firebar_3",
   direction = 3,
   breed = "fire_bar",
 }
 
 enemy{
+  name = "armos_2",
   layer = 0,
   x = 1656,
   y = 588,
-  name = "armos_2",
   direction = 3,
   breed = "armos",
 }
 
 enemy{
+  name = "armos_3",
   layer = 0,
   x = 1672,
   y = 748,
-  name = "armos_3",
   direction = 3,
   breed = "armos",
 }
 
 teletransporter{
+  name = "to_outside",
   layer = 0,
   x = 168,
   y = 784,
   width = 16,
   height = 16,
-  name = "to_outside",
   destination_map = "39",
   destination = "from_ruins",
 }
 
 destination{
+  name = "from_outside",
   layer = 0,
   x = 176,
   y = 773,
-  name = "from_outside",
   direction = 1,
   default = true,
 }
 
 enemy{
+  name = "miniboss_knight",
   layer = 0,
   x = 1368,
   y = 397,
-  name = "miniboss_knight",
   direction = 3,
   breed = "knight_chain_ball",
   rank = 1,
@@ -5461,128 +5461,128 @@ enemy{
 }
 
 pickable{
-  layer = 0,
-  x = 136,
-  y = 125,
   name = "rupee_1",
+  layer = 0,
+  x = 136,
+  y = 125,
   treasure_name = "rupee",
   treasure_variant = 2,
 }
 
 pickable{
-  layer = 0,
-  x = 168,
-  y = 125,
   name = "rupee_2",
+  layer = 0,
+  x = 168,
+  y = 125,
   treasure_name = "rupee",
   treasure_variant = 2,
 }
 
 pickable{
-  layer = 0,
-  x = 200,
-  y = 125,
   name = "rupee_3",
+  layer = 0,
+  x = 200,
+  y = 125,
   treasure_name = "rupee",
   treasure_variant = 2,
 }
 
 pickable{
+  name = "rupee_4",
   layer = 0,
   x = 232,
   y = 125,
-  name = "rupee_4",
   treasure_name = "rupee",
   treasure_variant = 2,
 }
 
 pickable{
-  layer = 0,
-  x = 136,
-  y = 157,
   name = "rupee_5",
+  layer = 0,
+  x = 136,
+  y = 157,
   treasure_name = "rupee",
   treasure_variant = 2,
 }
 
 pickable{
+  name = "rupee_6",
   layer = 0,
   x = 168,
   y = 157,
-  name = "rupee_6",
   treasure_name = "rupee",
   treasure_variant = 2,
 }
 
 pickable{
+  name = "rupee_7",
   layer = 0,
   x = 200,
   y = 157,
-  name = "rupee_7",
   treasure_name = "rupee",
   treasure_variant = 2,
 }
 
 pickable{
+  name = "rupee_8",
   layer = 0,
   x = 232,
   y = 157,
-  name = "rupee_8",
   treasure_name = "rupee",
   treasure_variant = 2,
 }
 
 pickable{
+  name = "rupee_9",
   layer = 0,
   x = 136,
   y = 189,
-  name = "rupee_9",
   treasure_name = "rupee",
   treasure_variant = 2,
 }
 
 pickable{
+  name = "rupee_10",
   layer = 0,
   x = 168,
   y = 189,
-  name = "rupee_10",
   treasure_name = "rupee",
   treasure_variant = 2,
 }
 
 pickable{
+  name = "rupee_11",
   layer = 0,
   x = 200,
   y = 189,
-  name = "rupee_11",
   treasure_name = "rupee",
   treasure_variant = 2,
 }
 
 pickable{
+  name = "rupee_12",
   layer = 0,
   x = 232,
   y = 189,
-  name = "rupee_12",
   treasure_name = "rupee",
   treasure_variant = 2,
 }
 
 door{
+  name = "door_room1_2",
   layer = 0,
   x = 360,
   y = 648,
-  name = "door_room1_2",
   direction = 2,
   sprite = "entities/door_shutter",
   savegame_variable = "b1049",
 }
 
 door{
+  name = "door_boss_1",
   layer = 0,
   x = 1784,
   y = 656,
-  name = "door_boss_1",
   direction = 0,
   sprite = "entities/door_big_key",
   savegame_variable = "b1034",
@@ -5592,10 +5592,10 @@ door{
 }
 
 door{
+  name = "door_boss_2",
   layer = 0,
   x = 1848,
   y = 656,
-  name = "door_boss_2",
   direction = 2,
   sprite = "entities/door_shutter",
   savegame_variable = "b1034",
@@ -5605,46 +5605,46 @@ door{
 }
 
 sensor{
+  name = "sensor_boss",
   layer = 0,
   x = 1880,
   y = 653,
   width = 16,
   height = 48,
-  name = "sensor_boss",
 }
 
 door{
+  name = "door_boss_3",
   layer = 0,
   x = 2024,
   y = 440,
-  name = "door_boss_3",
   direction = 1,
   sprite = "entities/door_shutter",
 }
 
 sensor{
+  name = "sensor_miniboss",
   layer = 0,
   x = 1264,
   y = 413,
   width = 16,
   height = 48,
-  name = "sensor_miniboss",
 }
 
 door{
+  name = "door_miniboss",
   layer = 0,
   x = 1360,
   y = 504,
-  name = "door_miniboss",
   direction = 3,
   sprite = "entities/door_shutter",
 }
 
 chest{
+  name = "chest_book",
   layer = 0,
   x = 2032,
   y = 285,
-  name = "chest_book",
   treasure_name = "book_mudora",
   treasure_variant = 6,
   treasure_savegame_variable = "b1033",
@@ -5652,32 +5652,32 @@ chest{
 }
 
 pickable{
+  name = "boss_heart",
   layer = 0,
   x = 2072,
   y = 525,
-  name = "boss_heart",
   treasure_name = "heart_container",
   treasure_savegame_variable = "b1035",
 }
 
 teletransporter{
+  name = "to_outside_2",
   layer = 0,
   x = 2128,
   y = 272,
   width = 16,
   height = 16,
-  name = "to_outside_2",
-  sprite = "entities/teletransporter",
-  sound = "warp",
   destination_map = "39",
   destination = "from_ruins",
+  sprite = "entities/teletransporter",
+  sound = "warp",
 }
 
 door{
+  name = "door_key2_1",
   layer = 0,
   x = 648,
   y = 416,
-  name = "door_key2_1",
   direction = 0,
   sprite = "entities/door_small_key",
   savegame_variable = "b1038",
@@ -5688,10 +5688,10 @@ door{
 }
 
 door{
+  name = "door_key2_2",
   layer = 0,
   x = 696,
   y = 416,
-  name = "door_key2_2",
   direction = 2,
   sprite = "entities/door_small_key",
   savegame_variable = "b1038",
@@ -6017,22 +6017,22 @@ wall{
 }
 
 destructible{
+  name = "hookshot",
   layer = 0,
   x = 968,
   y = 669,
-  name = "hookshot",
   sprite = "entities/items",
   weight = -1,
   damage_on_enemies = 0,
 }
 
 npc{
+  name = "hint_stone",
   layer = 0,
   x = 512,
   y = 357,
-  name = "hint_stone",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   behavior = "dialog#hint_stone.ruins",
 }
 
@@ -6046,55 +6046,55 @@ tile{
 }
 
 enemy{
+  name = "keese_1",
   layer = 1,
   x = 888,
   y = 429,
-  name = "keese_1",
   direction = 3,
   breed = "keese",
 }
 
 enemy{
+  name = "keese_2",
   layer = 1,
   x = 1016,
   y = 429,
-  name = "keese_2",
   direction = 3,
   breed = "keese",
 }
 
 enemy{
+  name = "keese_3",
   layer = 1,
   x = 1288,
   y = 733,
-  name = "keese_3",
   direction = 3,
   breed = "keese",
 }
 
 enemy{
+  name = "keese_4",
   layer = 1,
   x = 1368,
   y = 645,
-  name = "keese_4",
   direction = 3,
   breed = "keese",
 }
 
 enemy{
+  name = "keese_5",
   layer = 1,
   x = 1448,
   y = 741,
-  name = "keese_5",
   direction = 3,
   breed = "keese",
 }
 
 enemy{
+  name = "keese_6",
   layer = 1,
   x = 1280,
   y = 597,
-  name = "keese_6",
   direction = 3,
   breed = "keese",
 }

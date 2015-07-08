@@ -182,15 +182,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 392,
-  y = 360,
-  width = 128,
-  height = 64,
-  pattern = "524",
-}
-
-tile{
-  layer = 0,
   x = 168,
   y = 416,
   width = 176,
@@ -10312,6 +10303,15 @@ tile{
   width = 16,
   height = 16,
   pattern = "606",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 360,
+  width = 128,
+  height = 64,
+  pattern = "95",
 }
 
 wall{
