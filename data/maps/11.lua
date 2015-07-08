@@ -8,6 +8,7 @@ local game = map:get_game()
 if game:get_value("i1906")==nil then game:set_value("i1906", 0) end --Tern
 if game:get_value("i1911")==nil then game:set_value("i1911", 0) end --Gaira
 if game:get_value("i1027")==nil then game:set_value("i1027", 0) end
+local torch_overlay = nil
 
 local function random_walk(npc)
   local m = sol.movement.create("random_path")
@@ -95,6 +96,56 @@ function map:on_started(destination)
   end
 end
 
+function map:on_update()
+  if game:get_value("i1028") == 2 and are_all_torches_on() then
+    sol.audio.play_sound("chest_appears")
+    game:set_value("i1028", 3)
+  end
+  if game:get_value("i1027") < 3 then
+    map:set_entities_enabled("banner_race", true)
+    if game:get_value("i1028") > 1 and game:get_value("i1028") < 4 then
+      map:set_entities_enabled("sensor_race", true)
+      to_F15:set_enabled(false)
+      to_F13:set_enabled(false)
+      to_E14_2:set_enabled(false)
+      to_ranch:set_enabled(false)
+    end
+  else
+    map:set_entities_enabled("banner_race", false)
+    map:set_entities_enabled("sensor_race", false)
+    to_F15:set_enabled(true)
+    to_F13:set_enabled(true)
+    to_E14_2:set_enabled(true)
+    to_ranch:set_enabled(true)
+  end
+  -- Show remaining timer time on screen
+  if game.race_timer ~= nil then
+    function map:on_draw(dst_surface)
+      local timer_icon = sol.surface.create("hud/timer.png")
+      local timer_time = math.floor(game.race_timer:get_remaining_time() / 1000)
+      local timer_text = sol.text_surface.create{
+        font = "white_digits",
+        horizontal_alignment = "left",
+        vertical_alignment = "top",
+      }
+      timer_icon:draw(dst_surface, 5, 55)
+      timer_text:set_text(timer_time)
+      timer_text:draw(dst_surface, 22, 58)
+    end
+  end
+  -- Show torch overlay for Ordona dialog
+  if game:get_time_of_day() ~= "night" and torch_overlay and map:get_id() == "11" then
+    function map:on_draw(dst_surface)
+      local screen_width, screen_height = dst_surface:get_size()
+      local cx, cy = map:get_camera_position()
+      local tx, ty = torch_1:get_center_position()
+      local x = 320 - tx + cx
+      local y = 240 - ty + cy
+      torch_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
+    end
+  end
+end
+
 function sensor_festival_dialog:on_activated()
   if game:get_value("i1027") < 3 and game:get_value("i1028") == 0 and hero:get_direction() == 1 then
     npc_tristan:get_sprite():set_animation("pose1")
@@ -113,8 +164,8 @@ function sensor_festival_dialog:on_activated()
 	        game:set_value("i1028", 1)
                 if game:has_item("lamp") then
                   game:start_dialog("tristan.0.festival_rules", function()
-		    random_walk(npc_jarred)
-		    random_walk(npc_francis)
+                    random_walk(npc_jarred)
+		random_walk(npc_francis)
                   end)
                 else
                   game:start_dialog("tristan.0.festival_lamp")
@@ -246,60 +297,6 @@ function npc_gaira:on_interaction()
       game:set_value("i1911", game:get_value("i1911")+1)
     end)
   end
-end
-
-function map:on_update()
-  if game:get_value("i1028") == 2 and are_all_torches_on() then
-    sol.audio.play_sound("chest_appears")
-    game:set_value("i1028", 3)
-  end
-  if game:get_value("i1027") < 3 then
-    map:set_entities_enabled("banner_race", true)
-    if game:get_value("i1028") > 1 and game:get_value("i1028") < 4 then
-      map:set_entities_enabled("sensor_race", true)
-      to_F15:set_enabled(false)
-      to_F13:set_enabled(false)
-      to_E14_2:set_enabled(false)
-      to_ranch:set_enabled(false)
-    end
-  else
-    map:set_entities_enabled("banner_race", false)
-    map:set_entities_enabled("sensor_race", false)
-    to_F15:set_enabled(true)
-    to_F13:set_enabled(true)
-    to_E14_2:set_enabled(true)
-    to_ranch:set_enabled(true)
-  end
-  -- Show remaining timer time on screen
-  if game.race_timer ~= nil then
-    function map:on_draw(dst_surface)
-      local timer_icon = sol.surface.create("hud/timer.png")
-      local timer_time = math.floor(game.race_timer:get_remaining_time() / 1000)
-      local timer_text = sol.text_surface.create{
-        font = "white_digits",
-        horizontal_alignment = "left",
-        vertical_alignment = "top",
-      }
-      timer_icon:draw(dst_surface, 5, 55)
-      timer_text:set_text(timer_time)
-      timer_text:draw(dst_surface, 22, 58)
-    end
-  end
-end
-
-if game:get_time_of_day() ~= "night" then
-function game:on_map_changed(map)
-  function map:on_draw(dst_surface)
-    if map:get_id() == "11" and torch_overlay then
-      local screen_width, screen_height = dst_surface:get_size()
-      local cx, cy = map:get_camera_position()
-      local tx, ty = torch_1:get_center_position()
-      local x = 320 - tx + cx
-      local y = 240 - ty + cy
-      torch_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
-    end
-  end
-end
 end
 
 function torch_1:on_interaction()

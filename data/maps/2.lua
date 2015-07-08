@@ -552,13 +552,13 @@ function npc_shopkeeper:on_interaction()
 end
 
 function npc_attendant_dialog()
-  if game:get_value("b1170") then game:start_dialog("council_attendant.7") end
-  if game:get_value("b1150") then game:start_dialog("council_attendant.6") end
-  if game:get_value("b1134") then game:start_dialog("council_attendant.5") end
-  if game:get_value("b1117") then game:start_dialog("council_attendant.4") end
-  if game:get_value("b1082") then game:start_dialog("council_attendant.3") end
-  if game:get_value("b1061") then game:start_dialog("council_attendant.2") end
-  if game:get_value("b1033") then game:start_dialog("council_attendant.8") end
+  if game:get_value("b1170") then game:start_dialog("council_attendant.7")
+  elseif game:get_value("b1150") then game:start_dialog("council_attendant.6")
+  elseif game:get_value("b1134") then game:start_dialog("council_attendant.5")
+  elseif game:get_value("b1117") then game:start_dialog("council_attendant.4")
+  elseif game:get_value("b1082") then game:start_dialog("council_attendant.3")
+  elseif game:get_value("b1061") then game:start_dialog("council_attendant.2")
+  elseif game:get_value("b1033") then game:start_dialog("council_attendant.8") end
 end
 function npc_attendant:on_interaction()
   if game:get_value("i1032") >= 3 then

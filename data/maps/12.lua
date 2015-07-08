@@ -46,7 +46,7 @@ local function end_race_won()
             game:set_value("i1027", 4)
             game:set_value("i1910", game:get_value("i1910")+1)
           end)
-        end, 500, 25000) --move_camera
+        end, 500, 30000) --move_camera
       end) --timer
     end
   end)
@@ -77,6 +77,32 @@ function map:on_started(destination)
   end
 end
 
+function map:on_update()
+  function map:on_draw(dst_surface)
+    if game:get_time_of_day() ~= "night" and torch_overlay and map:get_id() == "12" then
+      local screen_width, screen_height = dst_surface:get_size()
+      local cx, cy = map:get_camera_position()
+      local tx, ty = torch_5:get_center_position()
+      local x = 320 - tx + cx
+      local y = 240 - ty + cy
+      torch_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
+    end
+    -- Show remaining timer time on screen
+    if game.race_timer ~= nil then
+      local timer_icon = sol.surface.create("hud/timer.png")
+      local timer_time = math.floor(game.race_timer:get_remaining_time() / 1000)
+      local timer_text = sol.text_surface.create{
+        font = "white_digits",
+        horizontal_alignment = "left",
+        vertical_alignment = "top",
+      }
+      timer_icon:draw(dst_surface, 5, 55)
+      timer_text:set_text(timer_time)
+      timer_text:draw(dst_surface, 22, 58)
+    end
+  end
+end
+
 function npc_tristan:on_interaction()
   if game:get_value("i1068") >= 9 then
     game:start_dialog("tristan.3.castle_town")
@@ -102,32 +128,6 @@ end
 function map:on_update()
   if are_all_torches_on() then
     end_race_won()
-  end
-end
-
-function game:on_map_changed(map)
-  function map:on_draw(dst_surface)
-    if map:get_id() == "12" and torch_overlay then
-      local screen_width, screen_height = dst_surface:get_size()
-      local cx, cy = map:get_camera_position()
-      local tx, ty = torch_5:get_center_position()
-      local x = 320 - tx + cx
-      local y = 240 - ty + cy
-      torch_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
-    end
-    -- Show remaining timer time on screen
-    if game.race_timer ~= nil then
-      local timer_icon = sol.surface.create("hud/timer.png")
-      local timer_time = math.floor(game.race_timer:get_remaining_time() / 1000)
-      local timer_text = sol.text_surface.create{
-        font = "white_digits",
-        horizontal_alignment = "left",
-        vertical_alignment = "top",
-      }
-      timer_icon:draw(dst_surface, 5, 55)
-      timer_text:set_text(timer_time)
-      timer_text:draw(dst_surface, 22, 58)
-    end
   end
 end
 
