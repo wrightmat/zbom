@@ -10,6 +10,15 @@ properties{
 
 tile{
   layer = 0,
+  x = 304,
+  y = 624,
+  width = 192,
+  height = 16,
+  pattern = "273",
+}
+
+tile{
+  layer = 0,
   x = 688,
   y = 648,
   width = 416,
@@ -2373,15 +2382,6 @@ tile{
   width = 8,
   height = 16,
   pattern = "294",
-}
-
-tile{
-  layer = 0,
-  x = 304,
-  y = 624,
-  width = 192,
-  height = 16,
-  pattern = "273",
 }
 
 tile{
@@ -9352,7 +9352,8 @@ enemy{
   y = 1237,
   direction = 0,
   breed = "rat",
-  treasure_name = "random",
+  treasure_name = "arrow",
+  treasure_variant = 2,
 }
 
 enemy{
@@ -9432,31 +9433,27 @@ sensor{
   name = "sensor_door_throne",
   layer = 0,
   x = 296,
-  y = 525,
+  y = 541,
   width = 16,
   height = 16,
 }
 
-teletransporter{
+sensor{
   name = "to_below_throne",
   layer = 0,
-  x = 112,
-  y = 1216,
+  x = 120,
+  y = 1229,
   width = 96,
   height = 32,
-  destination_map = "2",
-  destination = "from_above_throne",
 }
 
-teletransporter{
+sensor{
   name = "to_below_council",
   layer = 0,
-  x = 1264,
-  y = 1216,
+  x = 1272,
+  y = 1229,
   width = 96,
   height = 32,
-  destination_map = "2",
-  destination = "from_above_council",
 }
 
 tile{

@@ -219,6 +219,7 @@ function condition_manager:initialize(game)
     hero:freeze()
     hero:set_animation("electrocuted")
     sol.audio.play_sound("spark")
+    game:remove_life(2)
 
     hero:set_condition('electrocution', true)
     condition_manager.timers['electrocution'] = sol.timer.start(hero, delay, function()
