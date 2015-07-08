@@ -753,6 +753,15 @@ yourself, or sell them to someone else!
 }
 
 dialog{
+  id = "_item_description.shovel.1",
+  skip = "current",
+  text = [[
+This sturdy shovel is able to dig up
+any buried treasure!
+  ]]
+}
+
+dialog{
   id = "_item_description.stick_counter.1",
   skip = "current",
   text = [[
@@ -2056,6 +2065,16 @@ from most anything!
 }
 
 dialog{
+  id = "_treasure.shovel.1",
+  skip = "current",
+  text = [[
+You got a sturdy shovel! Use
+it to dig up any buried treasue
+you can find!
+  ]]
+}
+
+dialog{
   id = "_treasure.small_key.1",
   icon = "72",
   skip = "current",
@@ -2303,6 +2322,28 @@ dialog{
   text = [[
 You got a World Map!$0
 Now you may not get lost!
+  ]]
+}
+
+dialog{
+  id = "_treasure.world_map.2",
+  icon = "50",
+  skip = "current",
+  text = [[
+You got an expanded World Map!$0
+Now you can explore the Subrosian
+underworld without fear!
+  ]]
+}
+
+dialog{
+  id = "_treasure.world_map.3",
+  icon = "50",
+  skip = "current",
+  text = [[
+You got a complete World Map!$0
+Now you can explore the entirety
+of Hyrule without hesitation!
   ]]
 }
 
@@ -7313,6 +7354,23 @@ dialog{
 Bright orange pumpkin brought
 from south Hyrule. Eat one to
 revitalize yourself!
+  ]]
+}
+
+dialog{
+  id = "shop.world_map",
+  skip = "current",
+  text = [[
+A map of the Subrosian underworld.
+  ]]
+}
+
+dialog{
+  id = "shop.poe_soul",
+  skip = "current",
+  text = [[
+Some say poe souls have useful
+knowledge...
   ]]
 }
 

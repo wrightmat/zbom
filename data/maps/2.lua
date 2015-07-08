@@ -530,14 +530,16 @@ function slots_timeout()
   hero:unfreeze()
 end
 
-function shop_item_3:on_buying()
-  if self:get_game():get_first_empty_bottle() == nil then
-    game:start_dialog("shop.no_bottle")
-    return false
-  else
-    hero:start_treasure("potion", 3)
-    game:remove_money(200)
-  end
+function shop_world_map_2:on_buying()
+  -- Subtract ore instead of rupees
+  hero:start_treasure("world_map", 2)
+  game:set_value("i1836",game:get_value("i1836")-30)
+end
+
+function shop_poe_soul:on_buying()
+  -- Subtract ore instead of rupees
+  hero:start_treasure("poe_soul")
+  game:set_value("i1836",game:get_value("i1836")-80)
 end
 
 function npc_shopkeeper:on_interaction()

@@ -3068,6 +3068,105 @@ tile{
   pattern = "430",
 }
 
+tile{
+  layer = 0,
+  x = 112,
+  y = 152,
+  width = 8,
+  height = 24,
+  pattern = "411",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 152,
+  width = 80,
+  height = 24,
+  pattern = "410",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 152,
+  width = 16,
+  height = 24,
+  pattern = "409",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 120,
+  width = 16,
+  height = 32,
+  pattern = "408",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "407",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "405",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "379",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 120,
+  width = 16,
+  height = 8,
+  pattern = "406",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 120,
+  width = 16,
+  height = 8,
+  pattern = "404",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "380",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 120,
+  width = 16,
+  height = 8,
+  pattern = "381",
+}
+
 destination{
   name = "from_subrosia_1",
   layer = 0,
@@ -3121,8 +3220,8 @@ teletransporter{
   y = 256,
   width = 16,
   height = 16,
-  destination_map = "152",
-  destination = "from_house_1",
+  destination_map = "161",
+  destination = "from_house_3",
 }
 
 destination{
@@ -3286,6 +3385,58 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/rito",
+}
+
+shop_treasure{
+  name = "shop_world_map_2",
+  layer = 0,
+  x = 128,
+  y = 144,
+  treasure_name = "world_map",
+  treasure_variant = 2,
+  treasure_savegame_variable = "i1823",
+  price = 30,
+  dialog = "shop.world_map",
+}
+
+shop_treasure{
+  name = "shop_poe_soul",
+  layer = 0,
+  x = 168,
+  y = 144,
+  treasure_name = "poe_soul",
+  price = 80,
+  dialog = "shop.poe_soul",
+}
+
+npc{
+  name = "npc_shopkeeper",
+  layer = 0,
+  x = 168,
+  y = 141,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/subrosian_blue",
+}
+
+npc{
+  name = "npc_subrosian_1",
+  layer = 0,
+  x = 544,
+  y = 141,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/subrosian_orange",
+}
+
+npc{
+  name = "npc_subrosian_2",
+  layer = 0,
+  x = 976,
+  y = 189,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/subrosian_green",
 }
 
 tile{

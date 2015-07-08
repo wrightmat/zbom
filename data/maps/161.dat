@@ -2276,6 +2276,96 @@ tile{
   pattern = "2028",
 }
 
+tile{
+  layer = 0,
+  x = 320,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "2067",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 360,
+  width = 8,
+  height = 32,
+  pattern = "2064",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 360,
+  width = 8,
+  height = 32,
+  pattern = "2066",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "2063",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "2062",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "2068",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "2069",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 360,
+  width = 32,
+  height = 8,
+  pattern = "2070",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 360,
+  width = 32,
+  height = 8,
+  pattern = "2071",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 336,
+  width = 96,
+  height = 24,
+  pattern = "2072",
+}
+
 teletransporter{
   name = "to_C4",
   layer = 0,
@@ -2347,8 +2437,8 @@ enemy{
 enemy{
   name = "tentacle_2",
   layer = 0,
-  x = 344,
-  y = 357,
+  x = 456,
+  y = 605,
   direction = 0,
   breed = "tentacle",
   treasure_name = "random_subrosia",
@@ -2422,6 +2512,43 @@ enemy{
   direction = 0,
   breed = "tentacle",
   treasure_name = "random_subrosia",
+}
+
+destination{
+  name = "from_house_3",
+  layer = 0,
+  x = 328,
+  y = 389,
+  direction = 3,
+}
+
+teletransporter{
+  name = "to_house_3",
+  layer = 0,
+  x = 320,
+  y = 360,
+  width = 16,
+  height = 16,
+  destination_map = "3",
+  destination = "from_subrosia_3",
+}
+
+tile{
+  layer = 1,
+  x = 280,
+  y = 320,
+  width = 96,
+  height = 16,
+  pattern = "2073",
+}
+
+tile{
+  layer = 1,
+  x = 320,
+  y = 360,
+  width = 16,
+  height = 8,
+  pattern = "2065",
 }
 
 tile{

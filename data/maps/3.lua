@@ -14,6 +14,20 @@ end
 
 function map:on_started()
   random_walk(npc_rito_4)
+
+  -- Replace shop items if they're bought
+  if game:get_value("i1823") >= 2 then --world map
+    self:create_shop_treasure({
+	name = "shop_shovel",
+	layer = 0,
+	x = 1392,
+	y = 472,
+	price = 100,
+	dialog = "_item_description.shovel",
+	treasure_name = "shovel",
+	treasure_variant = 1
+    })
+  end
 end
 
 function npc_rito_4:on_interaction()
@@ -47,5 +61,19 @@ function npc_rito_trading:on_interaction()
     end)
   else
     game:start_dialog("rito.0.trading_hint")
+  end
+end
+
+function npc_shopkeeper:on_interaction()
+  game:start_dialog("shopkeep.0")
+end
+
+function shop_item_3:on_buying()
+  if self:get_game():get_first_empty_bottle() == nil then
+    game:start_dialog("shop.no_bottle")
+    return false
+  else
+    hero:start_treasure("potion", 3)
+    game:remove_money(200)
   end
 end

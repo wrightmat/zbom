@@ -2007,108 +2007,108 @@ tile{
 }
 
 npc{
+  name = "subrosian_soaking",
   layer = 0,
   x = 448,
   y = 341,
-  name = "subrosian_soaking",
   direction = -1,
-  subtype = "0",
+  subtype = 0,
   sprite = "npc/subrosian_green",
 }
 
 enemy{
+  name = "geyser_1",
   layer = 0,
   x = 392,
   y = 333,
-  name = "geyser_1",
   direction = 3,
   breed = "geyser",
 }
 
 npc{
+  name = "subrosian_blue",
   layer = 0,
   x = 296,
   y = 485,
-  name = "subrosian_blue",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "npc/subrosian_blue",
 }
 
 npc{
+  name = "subrosian_orange",
   layer = 0,
   x = 800,
   y = 637,
-  name = "subrosian_orange",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "npc/subrosian_orange",
 }
 
 destination{
+  name = "from_house_1",
   layer = 0,
   x = 304,
   y = 405,
-  name = "from_house_1",
   direction = 3,
 }
 
 teletransporter{
+  name = "to_A1",
   layer = 0,
   x = 160,
   y = -16,
   width = 960,
   height = 16,
-  name = "to_A1",
   transition = "scrolling",
   destination_map = "151",
   destination = "_side",
 }
 
 destination{
+  name = "from_surface",
   layer = 0,
   x = 784,
   y = 309,
-  name = "from_surface",
   direction = 3,
   default = true,
 }
 
 teletransporter{
+  name = "to_A3",
   layer = 0,
   x = 176,
   y = 1120,
   width = 944,
   height = 16,
-  name = "to_A3",
   transition = "scrolling",
   destination_map = "153",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_B2",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 1120,
-  name = "to_B2",
   transition = "scrolling",
   destination_map = "156",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_surface",
   layer = 0,
   x = 776,
   y = 272,
   width = 16,
   height = 16,
-  name = "to_surface",
-  sprite = "entities/teletransporter_subrosia",
-  sound = "warp",
   destination_map = "59",
   destination = "from_subrosia",
+  sprite = "entities/teletransporter_subrosia",
+  sound = "warp",
 }
 
 destructible{
@@ -2948,12 +2948,12 @@ destructible{
 }
 
 teletransporter{
+  name = "to_house_1",
   layer = 0,
   x = 296,
   y = 376,
   width = 16,
   height = 16,
-  name = "to_house_1",
   destination_map = "3",
   destination = "from_subrosia_1",
 }
@@ -2996,6 +2996,15 @@ tile{
   width = 16,
   height = 8,
   pattern = "2065",
+}
+
+tile{
+  layer = 1,
+  x = 288,
+  y = 360,
+  width = 32,
+  height = 24,
+  pattern = "1459",
 }
 
 tile{
