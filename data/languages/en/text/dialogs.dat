@@ -928,8 +928,7 @@ dialog{
   id = "_shop.not_enough_money",
   skip = "current",
   text = [[
-It seems like you don't have
-enough rupees!
+It seems like you don't have enough!
   ]]
 }
 
@@ -939,6 +938,17 @@ dialog{
   skip = "current",
   text = [[
 Price: $v rupees.
+Buy
+Don't Buy
+  ]]
+}
+
+dialog{
+  id = "_shop.question_ore",
+  question = "1",
+  skip = "current",
+  text = [[
+Price: $v ore chunks.
 Buy
 Don't Buy
   ]]
@@ -4804,6 +4814,15 @@ for your efforts...
 }
 
 dialog{
+  id = "great_fairy.6",
+  text = [[
+Thank you for all of your help.
+You truly are the hero I'd been
+waiting for.
+  ]]
+}
+
+dialog{
   id = "hesla.0.beach",
   skip = "current",
   text = [[
@@ -6122,6 +6141,32 @@ appears to be empty.
 }
 
 dialog{
+  id = "mayor.0.kasuto",
+  text = [[
+Hey kid, you don't look prepared to be
+wandering around this part of the world.
+This place is dangerous and vast!$0
+Tell you what, if you come back when you
+have two rows of hearts, I'll give you
+a map to this area, and you can explore.
+Until then, how about heading back home
+before you get hurt?
+
+]]
+}
+
+dialog{
+  id = "mayor.1.kasuto",
+  text = [[
+Wow, you have a lot of hearts! I think
+now I trust you to explore my part of
+the world. This map should ensure you
+don't get lost too easily.
+
+]]
+}
+
+dialog{
   id = "moblin.0.cave_ordeals",
   skip = "current",
   text = [[
@@ -7318,6 +7363,15 @@ the Ordon Village residents.
 }
 
 dialog{
+  id = "shop.poe_soul",
+  skip = "current",
+  text = [[
+Some say poe souls have useful
+knowledge...
+  ]]
+}
+
+dialog{
   id = "shop.potion_blue",
   skip = "current",
   text = [[
@@ -7356,23 +7410,6 @@ revitalize yourself!
 }
 
 dialog{
-  id = "shop.world_map",
-  skip = "current",
-  text = [[
-A map of the Subrosian underworld.
-  ]]
-}
-
-dialog{
-  id = "shop.poe_soul",
-  skip = "current",
-  text = [[
-Some say poe souls have useful
-knowledge...
-  ]]
-}
-
-dialog{
   id = "shop.tunic_2",
   skip = "current",
   text = [[
@@ -7387,6 +7424,14 @@ dialog{
   text = [[
 A deep red tunic which protects
 the wearer.
+  ]]
+}
+
+dialog{
+  id = "shop.world_map",
+  skip = "current",
+  text = [[
+A map of the Subrosian underworld.
   ]]
 }
 

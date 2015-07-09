@@ -3,7 +3,7 @@ properties{
   y = 7847,
   width = 1120,
   height = 1120,
-  world = "subrosia",
+  world = "outside_subrosia",
   tileset = "12",
   music = "subrosia",
 }
@@ -3546,68 +3546,68 @@ tile{
 }
 
 teletransporter{
+  name = "to_A3",
   layer = 0,
   x = -16,
   y = 0,
   width = 16,
   height = 1120,
-  name = "to_A3",
   transition = "scrolling",
   destination_map = "153",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_B2",
   layer = 0,
   x = 0,
   y = -16,
   width = 1120,
   height = 16,
-  name = "to_B2",
   transition = "scrolling",
   destination_map = "156",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_B4",
   layer = 0,
   x = 0,
   y = 1120,
   width = 1120,
   height = 16,
-  name = "to_B4",
   transition = "scrolling",
   destination_map = "158",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_C3",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 1120,
-  name = "to_C3",
   transition = "scrolling",
   destination_map = "161",
   destination = "_side",
 }
 
 destination{
+  name = "from_fairy",
   layer = 0,
   x = 656,
   y = 533,
-  name = "from_fairy",
   direction = 3,
 }
 
 teletransporter{
+  name = "to_fairy",
   layer = 0,
   x = 648,
   y = 504,
   width = 16,
   height = 16,
-  name = "to_fairy",
   destination_map = "167",
   destination = "from_outside",
 }

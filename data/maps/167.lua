@@ -28,8 +28,11 @@ function sensor_fairy_speak:on_activated()
     game:start_dialog("great_fairy.4")
   elseif game:get_value("i1607") == 5 then
     game:start_dialog("great_fairy.5.subrosia", function()
-      hero:start_treasure("glove", 2)
+      if game:get_value("i1817") < 2 then hero:start_treasure("glove", 2) end
+      game:set_value("i1607", 6)
     end)
+  elseif game:get_value("i1607") == 6 then
+    game:start_dialog("great_fairy.6")
   else
     game:start_dialog("great_fairy.0.subrosia", function()
       game:set_value("i1607", 1)

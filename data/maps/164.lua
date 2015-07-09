@@ -31,7 +31,10 @@ function sensor_fairy_speak:on_activated()
   elseif game:get_value("i1604") == 5 then
     game:start_dialog("great_fairy.5.mountain", function()
       hero:start_treasure("bomb_bag", 3)
+      game:set_value("i1604", 6)
     end)
+  elseif game:get_value("i1604") == 6 then
+    game:start_dialog("great_fairy.6")
   else
     game:start_dialog("great_fairy.0.mountain", function()
       game:set_value("i1604", 1)

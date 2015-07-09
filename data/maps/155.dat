@@ -3,7 +3,7 @@ properties{
   y = 7847,
   width = 1120,
   height = 1120,
-  world = "subrosia",
+  world = "outside_subrosia",
   tileset = "12",
   music = "subrosia",
 }
@@ -2529,36 +2529,36 @@ tile{
 }
 
 teletransporter{
+  name = "to_A1",
   layer = 0,
   x = -16,
   y = 224,
   width = 16,
   height = 896,
-  name = "to_A1",
   transition = "scrolling",
   destination_map = "151",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_B2",
   layer = 0,
   x = 0,
   y = 1120,
   width = 1120,
   height = 16,
-  name = "to_B2",
   transition = "scrolling",
   destination_map = "156",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_C1",
   layer = 0,
   x = 1120,
   y = 224,
   width = 16,
   height = 896,
-  name = "to_C1",
   transition = "scrolling",
   destination_map = "159",
   destination = "_side",
@@ -3577,12 +3577,12 @@ destructible{
 }
 
 npc{
+  name = "subrosian_shaman",
   layer = 0,
   x = 640,
   y = 661,
-  name = "subrosian_shaman",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "npc/subrosian_green",
 }
 

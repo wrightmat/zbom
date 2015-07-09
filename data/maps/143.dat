@@ -5560,6 +5560,16 @@ enemy{
   treasure_name = "random",
 }
 
+npc{
+  name = "npc_mayor",
+  layer = 0,
+  x = 920,
+  y = 829,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/hylian_7",
+}
+
 tile{
   layer = 1,
   x = 712,

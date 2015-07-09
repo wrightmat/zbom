@@ -14,16 +14,21 @@ end
 
 function map:on_started()
   random_walk(npc_rito_4)
+  shop_world_map_2:get_sprite():set_animation("world_map")
+  shop_world_map_2:get_sprite():set_direction(1)
+  shop_poe_soul:get_sprite():set_animation("poe_soul")
+  shop_poe_soul:get_sprite():set_direction(0)
 
   -- Replace shop items if they're bought
-  if game:get_value("i1823") >= 2 then --world map
+  if game:get_item("world_map"):get_variant() >= 1 then --world map
+    shop_world_map_2:remove()
     self:create_shop_treasure({
 	name = "shop_shovel",
 	layer = 0,
-	x = 1392,
-	y = 472,
-	price = 100,
-	dialog = "_item_description.shovel",
+	x = 128,
+	y = 144,
+	price = 9999,
+	dialog = "_item_description.shovel.1",
 	treasure_name = "shovel",
 	treasure_variant = 1
     })
@@ -68,12 +73,41 @@ function npc_shopkeeper:on_interaction()
   game:start_dialog("shopkeep.0")
 end
 
-function shop_item_3:on_buying()
-  if self:get_game():get_first_empty_bottle() == nil then
-    game:start_dialog("shop.no_bottle")
-    return false
-  else
-    hero:start_treasure("potion", 3)
-    game:remove_money(200)
+if shop_world_map_2 ~= nil then
+  function shop_world_map_2:on_interaction()
+
+    -- Custom shop script to subtract ore instead of rupees
+    game:start_dialog("shop.world_map", function()
+      game:start_dialog("_shop.question_ore", 30, function(answer)
+        if answer == 1 then
+          if game:get_value("i1836") >= 30 then
+            hero:start_treasure("world_map", 2)
+            game:set_value("i1836",game:get_value("i1836")-30)
+	  shop_world_map_2:set_enabled(false)
+          else
+            game:start_dialog("_shop.not_enough_money")
+          end
+        end
+      end)
+    end)
+
   end
+end
+
+function shop_poe_soul:on_interaction()
+
+  -- Custom shop script to subtract ore instead of rupees
+  game:start_dialog("shop.poe_soul", function()
+    game:start_dialog("_shop.question_ore", 80, function(answer)
+      if answer == 1 then
+        if game:get_value("i1836") >= 80 then
+          hero:start_treasure("poe_soul")
+          game:set_value("i1836",game:get_value("i1836")-80)
+        else
+          game:start_dialog("_shop.not_enough_money")
+        end
+      end
+    end)
+  end)
+
 end

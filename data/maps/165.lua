@@ -29,7 +29,10 @@ function sensor_fairy_speak:on_activated()
   elseif game:get_value("i1605") == 5 then
     game:start_dialog("great_fairy.5.snowpeak", function()
       hero:start_treasure("magic_bar", 2)
+      game:set_value("i1605", 6)
     end)
+  elseif game:get_value("i1605") == 6 then
+    game:start_dialog("great_fairy.6")
   else
     game:start_dialog("great_fairy.0.snowpeak", function()
       game:set_value("i1605", 1)

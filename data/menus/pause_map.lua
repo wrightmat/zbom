@@ -3,7 +3,7 @@ local map_submenu = submenu:new()
 
 local outside_world_size = { width = 8000, height = 13452 } --Hyrule
 local outside_world_minimap_size = { width = 225, height = 388 }
-local outside_world_2_size = { width = 3360, height = 4480 } --Subrosia
+local outside_world_2_size = { width = 2240, height = 3360 } --Subrosia
 local outside_world_2_minimap_size = { width = 225, height = 300 }
 --local outside_world_3_size = { width = , height =  } --North
 --local outside_world_3_minimap_size = { width = , height =  }

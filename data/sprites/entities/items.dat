@@ -494,6 +494,13 @@ animation{
   },
 }
 animation{
+  name = "shovel",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 80, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
+  },
+}
+animation{
   name = "small_key",
   src_image = "entities/items.png",
   directions = {
@@ -556,5 +563,7 @@ animation{
   src_image = "entities/items.png",
   directions = {
     { x = 448, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 448, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 448, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }

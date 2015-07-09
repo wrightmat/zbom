@@ -30,8 +30,11 @@ function sensor_fairy_speak:on_activated()
     game:start_dialog("great_fairy.4")
   elseif game:get_value("i1603") == 5 then
     game:start_dialog("great_fairy.5.faron", function()
-      hero:start_treasure("quiver", 3)
+      if game:get_value("i1803") < 3 then hero:start_treasure("quiver", 3) end
+      game:set_value("i1603", 6)
     end)
+  elseif game:get_value("i1603") == 6 then
+    game:start_dialog("great_fairy.6")
   else
     game:start_dialog("great_fairy.0.faron", function()
       game:set_value("i1603", 1)

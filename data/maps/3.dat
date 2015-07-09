@@ -3387,28 +3387,6 @@ npc{
   sprite = "npc/rito",
 }
 
-shop_treasure{
-  name = "shop_world_map_2",
-  layer = 0,
-  x = 128,
-  y = 144,
-  treasure_name = "world_map",
-  treasure_variant = 2,
-  treasure_savegame_variable = "i1823",
-  price = 30,
-  dialog = "shop.world_map",
-}
-
-shop_treasure{
-  name = "shop_poe_soul",
-  layer = 0,
-  x = 168,
-  y = 144,
-  treasure_name = "poe_soul",
-  price = 80,
-  dialog = "shop.poe_soul",
-}
-
 npc{
   name = "npc_shopkeeper",
   layer = 0,
@@ -3437,6 +3415,26 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/subrosian_green",
+}
+
+npc{
+  name = "shop_world_map_2",
+  layer = 0,
+  x = 144,
+  y = 173,
+  direction = -1,
+  subtype = 0,
+  sprite = "entities/items",
+}
+
+npc{
+  name = "shop_poe_soul",
+  layer = 0,
+  x = 184,
+  y = 173,
+  direction = -1,
+  subtype = 0,
+  sprite = "entities/items",
 }
 
 tile{
