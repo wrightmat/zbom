@@ -18,9 +18,10 @@ end
 
 function enemy:shoot()
   self:stop_movement()
-  self:get_sprite():set_animation("immobilized")
+  local d = self:get_sprite():get_direction()
+  self:get_sprite():set_animation("shaking")
   shoot_timer = sol.timer.start(self, 100, function()
-    local rock = self:create_enemy{
+    local fire = self:create_enemy{
       breed = "lynel_fire",
       direction = d
     }
@@ -48,5 +49,7 @@ function enemy:on_movement_changed(movement)
 end
 
 function enemy:on_hurt()
-  self:shoot()
+  if self:get_sprite():get_animation() ~= "immobilized" then self:shoot() end
+  self:get_sprite():set_animation("hurt")
+  sol.timer.start(self, 1500, function() self:restart() end)
 end

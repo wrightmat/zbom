@@ -25,6 +25,11 @@ for enemy in map:get_entities("room3_helmasaur") do
   end
 end
 
+function sensor_fall_below:on_activated()
+  sol.audio.play_sound("hero_falls")
+  hero:teleport("202","from_above_fall","fade")
+end
+
 function sensor_miniboss:on_activated()
   if miniboss_knight ~= nil then
     map:close_doors("door_key3")

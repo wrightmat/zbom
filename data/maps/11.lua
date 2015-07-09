@@ -8,6 +8,7 @@ local game = map:get_game()
 if game:get_value("i1906")==nil then game:set_value("i1906", 0) end --Tern
 if game:get_value("i1911")==nil then game:set_value("i1911", 0) end --Gaira
 if game:get_value("i1027")==nil then game:set_value("i1027", 0) end
+local torch_overlay = nil
 
 local function random_walk(npc)
   local m = sol.movement.create("random_path")
@@ -117,34 +118,32 @@ function map:on_update()
     to_E14_2:set_enabled(true)
     to_ranch:set_enabled(true)
   end
-  -- Show remaining timer time on screen
-  if game.race_timer ~= nil then
-    function map:on_draw(dst_surface)
-      local timer_icon = sol.surface.create("hud/timer.png")
-      local timer_time = math.floor(game.race_timer:get_remaining_time() / 1000)
-      local timer_text = sol.text_surface.create{
-        font = "white_digits",
-        horizontal_alignment = "left",
-        vertical_alignment = "top",
-      }
-      timer_icon:draw(dst_surface, 5, 55)
-      timer_text:set_text(timer_time)
-      timer_text:draw(dst_surface, 22, 58)
-    end
-  end
 end
 
 function map:on_draw(dst_surface)
   -- Show torch overlay for Ordona dialog
-  if game:get_time_of_day() ~= "night" and torch_overlay and map:get_id() == "11" then
+  if game:get_time_of_day() ~= "night" and torch_overlay ~= nil then
     local screen_width, screen_height = dst_surface:get_size()
     local cx, cy = map:get_camera_position()
-    local tx, ty = map:get_entity("torch_1"):get_center_position()
+    local tx, ty = torch_1:get_center_position()
     local x = 320 - tx + cx
     local y = 240 - ty + cy
     torch_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
   end
-  sol.timer.start(map, 1000, function() map:on_draw(dst_surface) end)
+
+  -- Show remaining timer time on screen
+  if game.race_timer ~= nil then
+    local timer_icon = sol.surface.create("hud/timer.png")
+    local timer_time = math.floor(game.race_timer:get_remaining_time() / 1000)
+    local timer_text = sol.text_surface.create{
+      font = "white_digits",
+      horizontal_alignment = "left",
+      vertical_alignment = "top",
+    }
+    timer_icon:draw(dst_surface, 5, 55)
+    timer_text:set_text(timer_time)
+    timer_text:draw(dst_surface, 22, 58)
+  end
 end
 
 function sensor_festival_dialog:on_activated()
@@ -227,6 +226,7 @@ function sensor_ordona_speak:on_activated()
       hero:set_direction(0)
       game:start_dialog("ordona.1.village", game:get_player_name(), function()
         torch_overlay:fade_out(50)
+        sol.timer.start(2000, function() torch_overlay = nil end)
         hero:unfreeze()
 	game:add_max_stamina(100)
 	game:set_stamina(game:get_max_stamina())

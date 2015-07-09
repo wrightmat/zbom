@@ -22,7 +22,7 @@ function enemy:on_restarted()
 end
 
 function enemy:shoot()
-  d = self:get_sprite():get_direction()
+  local d = self:get_sprite():get_direction()
   shoot_timer = sol.timer.start(self, 100, function()
     local seed = self:create_enemy{
       breed = "baba_seed",

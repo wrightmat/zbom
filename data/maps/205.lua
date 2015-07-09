@@ -20,14 +20,7 @@ if game:get_value("b1117") and lantern_overlay then
 end
 
 function map:on_started(destination)
-  -- Dodongos appear after the boss is defeated
-  if not game:get_value("b1110") then
-    boss_vire:set_enabled(false)
-    boss_vire_sorceror:set_enabled(false)
-    map:set_entities_enabled("dodongo", false)
-  else
-    if npc_dampeh ~= nil then npc_dampeh:remove() end
-  end
+
   if game:get_value("i1029") <= 4 then
     npc_goron_ghost:remove()
   elseif game:get_value("i1029") == 5 then
@@ -41,17 +34,26 @@ function map:on_started(destination)
     npc_goron_ghost:remove()
     if npc_dampeh ~= nil then npc_dampeh:remove() end
   end
+
   map:set_doors_open("door_miniboss")
-  chest_alchemy:set_enabled(false)
-  if not game:get_value("b1108") then chest_big_key:set_enabled(false) end
   if not game:get_value("b1102") then chest_key_3:set_enabled(false) end
   if not game:get_value("b1103") then chest_key_4:set_enabled(false) end
-  if not game:get_value("b1119") then chest_rupees:set_enabled(false) end
-  if not game:get_value("b1118") then boss_heart:set_enabled(false) end
-  if not game:get_value("b1117") then chest_book:set_enabled(false) end
   if not game:get_value("b1105") then chest_compass:set_enabled(false) end
   if not game:get_value("b1106") then chest_map:set_enabled(false) end
   if not game:get_value("b1107") then miniboss_arrghus:set_enabled(false) end
+  if not game:get_value("b1108") then chest_big_key:set_enabled(false) end
+  if not game:get_value("b1110") then
+    boss_vire:set_enabled(false)
+    boss_vire_sorceror:set_enabled(false)
+    -- Dodongos appear after the boss is defeated
+    map:set_entities_enabled("dodongo", false)
+  else
+    if npc_dampeh ~= nil then npc_dampeh:remove() end
+  end
+  if not game:get_value("b1111") then chest_alchemy:set_enabled(false) end
+  if not game:get_value("b1117") then chest_book:set_enabled(false) end
+  if not game:get_value("b1118") then boss_heart:set_enabled(false) end
+  if not game:get_value("b1119") then chest_rupees:set_enabled(false) end
 
   -- Lantern slowly drains magic here so you're forced to find ways to refill magic
   if not game:get_value("b1117") then
@@ -181,19 +183,19 @@ for enemy in map:get_entities("tektite_compass") do
   end
 end
 
---for enemy in map:get_entities("keese") do
---  enemy.on_dead = function()
---    if not map:has_entities("keese_rupees") and not game:get_value("b1119") then
---      chest_rupees:set_enabled(true)
---      bridge_rupees:set_enabled(true)
---      sol.audio.play_sound("chest_appears")
---    end
---  end
---end
+for enemy in map:get_entities("keese") do
+  enemy.on_dead = function()
+    if not map:has_entities("keese_rupees") and not game:get_value("b1119") then
+      chest_rupees:set_enabled(true)
+      bridge_rupees:set_enabled(true)
+      sol.audio.play_sound("chest_appears")
+    end
+  end
+end
 
 for enemy in map:get_entities("dodongo") do
   enemy.on_dead = function()
-    if not map:has_entities("dodongo_alchemy")  then
+    if not map:has_entities("dodongo_alchemy") and not game:get_value("b1111") then
       chest_alchemy:set_enabled(true)
       sol.audio.play_sound("chest_appears")
     end

@@ -5,6 +5,8 @@ local game = map:get_game()
 -- Outside World I6 (Death Mountain/Mausoleum Entr) --
 ------------------------------------------------------
 
+local torch_overlay = nil
+
 function map:on_started(destination)
   if game:get_value("i1029") == 5 then
     -- set ghost's position to hero and then follow
@@ -26,19 +28,18 @@ function map:on_started(destination)
     npc_dampeh:remove()
   else
     if game:get_value("i1910") < 4 then
-      sol.timer.start(1000, function()
-        torch_1:get_sprite():set_animation("lit")
-      end)
+      torch_1:get_sprite():set_animation("lit")
       sol.timer.start(1000, function()
         hero:freeze()
         torch_overlay = sol.surface.create("entities/dark.png")
         torch_overlay:fade_in(50)
         game:start_dialog("ordona.4.death_mountain", game:get_player_name(), function()
           torch_overlay:fade_out(50)
+          sol.timer.start(2000, function() torch_overlay = nil end)
           hero:unfreeze()
-	  game:add_max_stamina(100)
-	  game:set_stamina(game:get_max_stamina())
-	  torch_1:get_sprite():set_animation("unlit")
+	game:add_max_stamina(100)
+	game:set_stamina(game:get_max_stamina())
+	torch_1:get_sprite():set_animation("unlit")
           game:set_value("i1910", 4)
         end)
       end)
@@ -46,23 +47,20 @@ function map:on_started(destination)
   end
 end
 
-function npc_dampeh:on_interaction()
-  game:start_dialog("dampeh.2.mausoleum")
-end
+function map:on_draw(dst_surface)
+  if map:get_id() == "68" and lantern_overlay then lantern_overlay:fade_out() end
 
-if game:get_time_of_day() ~= "night" then
-function game:on_map_changed(map)
-  function map:on_draw(dst_surface)
-    if map:get_id() == "68" and lantern_overlay then lantern_overlay:fade_out() end
-
-    if map:get_id() == "68" and torch_overlay then
-      local screen_width, screen_height = dst_surface:get_size()
-      local cx, cy = map:get_camera_position()
-      local tx, ty = torch_1:get_center_position()
-      local x = 320 - tx + cx
-      local y = 240 - ty + cy
-      torch_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
-    end
+  -- Show torch overlay for Ordona dialog
+  if game:get_time_of_day() ~= "night" and torch_overlay ~= nil then
+    local screen_width, screen_height = dst_surface:get_size()
+    local cx, cy = map:get_camera_position()
+    local tx, ty = torch_1:get_center_position()
+    local x = 320 - tx + cx
+    local y = 240 - ty + cy
+    torch_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
   end
 end
+
+function npc_dampeh:on_interaction()
+  game:start_dialog("dampeh.2.mausoleum")
 end

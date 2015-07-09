@@ -2421,129 +2421,140 @@ tile{
 }
 
 sensor{
+  name = "house_door_sensor",
   layer = 0,
   x = 144,
   y = 901,
   width = 32,
   height = 16,
-  name = "house_door_sensor",
 }
 
 teletransporter{
+  name = "to_C8",
   layer = 0,
   x = 632,
   y = 1120,
   width = 496,
   height = 16,
-  name = "to_C8",
   transition = "scrolling",
   destination_map = "73",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_D7",
   layer = 0,
   x = 1120,
   y = 192,
   width = 16,
   height = 928,
-  name = "to_D7",
   transition = "scrolling",
   destination_map = "51",
   destination = "_side",
 }
 
 npc{
+  name = "sign_overlook",
   layer = 0,
   x = 840,
   y = 309,
-  name = "sign_overlook",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
   behavior = "dialog#sign.overlook",
 }
 
 npc{
+  name = "sign_cemetary",
   layer = 0,
   x = 632,
   y = 901,
-  name = "sign_cemetary",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
   behavior = "dialog#sign.cemetary",
 }
 
 teletransporter{
+  name = "to_C8_2",
   layer = 0,
   x = 0,
   y = 1120,
   width = 288,
   height = 16,
-  name = "to_C8_2",
   transition = "scrolling",
   destination_map = "73",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_B7",
   layer = 0,
   x = -16,
   y = 336,
   width = 16,
   height = 784,
-  name = "to_B7",
   transition = "scrolling",
   destination_map = "70",
   destination = "_side",
 }
 
 destination{
+  name = "from_inside",
   layer = 0,
   x = 152,
   y = 901,
-  name = "from_inside",
   direction = 3,
 }
 
 teletransporter{
+  name = "to_astronomer",
   layer = 0,
   x = 144,
   y = 864,
   width = 16,
   height = 16,
-  name = "to_astronomer",
   destination_map = "6",
   destination = "enter_astronomer",
 }
 
 sensor{
+  name = "sensor_enter_kakariko",
   layer = 0,
   x = 448,
   y = 517,
   width = 16,
   height = 48,
-  name = "sensor_enter_kakariko",
 }
 
 sensor{
+  name = "sensor_enter_desert",
   layer = 0,
   x = 464,
   y = 517,
   width = 16,
   height = 48,
-  name = "sensor_enter_desert",
 }
 
 npc{
+  name = "thief",
   layer = 0,
   x = 944,
   y = 405,
-  name = "thief",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/hylian_thief",
+}
+
+custom_entity{
+  name = "mailbox_1",
+  layer = 0,
+  x = 184,
+  y = 893,
+  height = 24,
+  direction = 0,
+  sprite = "entities/mailbox",
+  model = "mailbox",
 }
 
 tile{

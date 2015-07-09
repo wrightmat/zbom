@@ -5787,6 +5787,7 @@ door{
   y = 1448,
   direction = 3,
   sprite = "entities/door_very_weak_wall",
+  savegame_variable = "b1158",
   opening_method = "explosion",
 }
 
@@ -5797,6 +5798,7 @@ door{
   y = 1400,
   direction = 1,
   sprite = "entities/door_very_weak_wall",
+  savegame_variable = "b1158",
   opening_method = "explosion",
 }
 

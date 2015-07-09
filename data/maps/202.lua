@@ -106,6 +106,7 @@ for enemy in map:get_entities("tentacle") do
   enemy.on_dead = function()
     if not map:has_entities("tentacle_orig") then
       chest_alchemy_stone:set_enabled(true)
+      sol.audio.play_sound("chest_appears")
     end
   end
 end

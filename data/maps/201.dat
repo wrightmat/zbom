@@ -6036,6 +6036,15 @@ npc{
   behavior = "dialog#hint_stone.ruins",
 }
 
+sensor{
+  name = "sensor_fall_below",
+  layer = 0,
+  x = 928,
+  y = 701,
+  width = 64,
+  height = 48,
+}
+
 tile{
   layer = 1,
   x = 128,

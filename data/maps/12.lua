@@ -6,6 +6,7 @@ local game = map:get_game()
 ----------------------------------------------------------------
 
 if game:get_value("i1910")==nil then game:set_value("i1910", 0) end --Ordona
+local torch_overlay = nil
 
 local function random_walk(npc)
   local m = sol.movement.create("random_path")
@@ -42,6 +43,7 @@ local function end_race_won()
           torch_overlay:fade_in(50)
           game:start_dialog("ordona.0.festival", game:get_player_name(), function()
             torch_overlay:fade_out(50)
+            sol.timer.start(2000, function() torch_overlay = nil end)
             hero:unfreeze()
             game:set_value("i1027", 4)
             game:set_value("i1910", game:get_value("i1910")+1)
@@ -77,29 +79,29 @@ function map:on_started(destination)
   end
 end
 
-function map:on_update()
-  function map:on_draw(dst_surface)
-    if game:get_time_of_day() ~= "night" and torch_overlay and map:get_id() == "12" then
-      local screen_width, screen_height = dst_surface:get_size()
-      local cx, cy = map:get_camera_position()
-      local tx, ty = torch_5:get_center_position()
-      local x = 320 - tx + cx
-      local y = 240 - ty + cy
-      torch_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
-    end
-    -- Show remaining timer time on screen
-    if game.race_timer ~= nil then
-      local timer_icon = sol.surface.create("hud/timer.png")
-      local timer_time = math.floor(game.race_timer:get_remaining_time() / 1000)
-      local timer_text = sol.text_surface.create{
-        font = "white_digits",
-        horizontal_alignment = "left",
-        vertical_alignment = "top",
-      }
-      timer_icon:draw(dst_surface, 5, 55)
-      timer_text:set_text(timer_time)
-      timer_text:draw(dst_surface, 22, 58)
-    end
+function map:on_draw(dst_surface)
+  -- Show torch overlay for Ordona dialog
+  if game:get_time_of_day() ~= "night" and torch_overlay ~= nil then
+    local screen_width, screen_height = dst_surface:get_size()
+    local cx, cy = map:get_camera_position()
+    local tx, ty = torch_5:get_center_position()
+    local x = 320 - tx + cx
+    local y = 240 - ty + cy
+    torch_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
+  end
+
+  -- Show remaining timer time on screen
+  if game.race_timer ~= nil then
+    local timer_icon = sol.surface.create("hud/timer.png")
+    local timer_time = math.floor(game.race_timer:get_remaining_time() / 1000)
+    local timer_text = sol.text_surface.create{
+      font = "white_digits",
+      horizontal_alignment = "left",
+      vertical_alignment = "top",
+    }
+    timer_icon:draw(dst_surface, 5, 55)
+    timer_text:set_text(timer_time)
+    timer_text:draw(dst_surface, 22, 58)
   end
 end
 

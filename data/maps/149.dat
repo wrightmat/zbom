@@ -3241,33 +3241,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 696,
-  y = 824,
-  width = 16,
-  height = 24,
-  pattern = "1455",
-}
-
-tile{
-  layer = 0,
-  x = 432,
-  y = 616,
-  width = 16,
-  height = 24,
-  pattern = "1455",
-}
-
-tile{
-  layer = 0,
-  x = 536,
-  y = 200,
-  width = 16,
-  height = 24,
-  pattern = "1455",
-}
-
-tile{
-  layer = 0,
   x = 8,
   y = 112,
   width = 8,
@@ -6033,6 +6006,39 @@ destructible{
   destruction_sound = "bush",
   weight = 1,
   can_be_cut = true,
+}
+
+custom_entity{
+  name = "mailbox_1",
+  layer = 0,
+  x = 536,
+  y = 221,
+  height = 24,
+  direction = 0,
+  sprite = "entities/mailbox",
+  model = "mailbox",
+}
+
+custom_entity{
+  name = "mailbox_2",
+  layer = 0,
+  x = 464,
+  y = 605,
+  height = 24,
+  direction = 0,
+  sprite = "entities/mailbox",
+  model = "mailbox",
+}
+
+custom_entity{
+  name = "mailbox_3",
+  layer = 0,
+  x = 704,
+  y = 837,
+  height = 24,
+  direction = 0,
+  sprite = "entities/mailbox",
+  model = "mailbox",
 }
 
 tile{

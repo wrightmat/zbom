@@ -9148,6 +9148,17 @@ jumper{
   jump_length = 64,
 }
 
+custom_entity{
+  name = "mailbox_1",
+  layer = 0,
+  x = 640,
+  y = 157,
+  height = 24,
+  direction = 0,
+  sprite = "entities/mailbox",
+  model = "mailbox",
+}
+
 tile{
   layer = 2,
   x = 904,

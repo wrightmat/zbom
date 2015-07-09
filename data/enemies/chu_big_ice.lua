@@ -19,9 +19,10 @@ function enemy:on_created()
   self:set_hurt_style("boss")
   self:set_pushed_back_when_hurt(false)
   self:set_push_hero_on_sword(true)
-  self:set_attack_consequence("explosion", "custom")
-  self:set_attack_consequence("hookshot", "ignored")
   self:set_attack_consequence("arrow", "ignored")
+  self:set_attack_consequence("hookshot", "ignored")
+  self:set_attack_consequence("boomerang", "ignored")
+  self:set_attack_consequence("explosion", "custom")
 end
 
 function enemy:on_enabled()

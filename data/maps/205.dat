@@ -11709,6 +11709,15 @@ tile{
   pattern = "51",
 }
 
+tile{
+  layer = 0,
+  x = 704,
+  y = 1536,
+  width = 32,
+  height = 32,
+  pattern = "51",
+}
+
 sensor{
   name = "sensor_boss",
   layer = 0,
@@ -13084,6 +13093,7 @@ chest{
   x = 1456,
   y = 589,
   treasure_name = "alchemy",
+  treasure_savegame_variable = "b1111",
   sprite = "entities/chest",
 }
 

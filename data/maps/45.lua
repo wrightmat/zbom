@@ -5,6 +5,8 @@ local game = map:get_game()
 -- Outside World F8 (Hyrule Castle) - Ordona Speaks --
 ------------------------------------------------------
 
+local torch_overlay = nil
+
 function map:on_started(destination)
   -- Opening doors
   local entrance_names = {
@@ -23,6 +25,7 @@ function map:on_started(destination)
   end
 
   if destination == from_castle_1 and game:get_value("i1032") == 3 then
+    torch_fire_2:get_sprite():set_animation("lit")
     sol.timer.start(1000, function()
       hero:freeze()
       torch_overlay = sol.surface.create("entities/dark.png")
@@ -31,26 +34,25 @@ function map:on_started(destination)
       hero:set_direction(0)
       game:start_dialog("ordona.3.castle", game:get_player_name(), function()
         torch_overlay:fade_out(50)
+        sol.timer.start(2000, function() torch_overlay = nil end)
         hero:unfreeze()
-	game:add_max_stamina(100)
-	game:set_stamina(game:get_max_stamina())
+        game:add_max_stamina(100)
+        game:set_stamina(game:get_max_stamina())
         game:set_value("i1032", 4)
+        torch_fire_2:get_sprite():set_animation("unlit")
       end)
     end)
   end
 end
 
-if game:get_time_of_day() ~= "night" then
-function game:on_map_changed(map)
-  function map:on_draw(dst_surface)
-    if map:get_id() == "45" and torch_overlay then
-      local screen_width, screen_height = dst_surface:get_size()
-      local cx, cy = map:get_camera_position()
-      local tx, ty = torch_fire_2:get_center_position()
-      local x = 320 - tx + cx
-      local y = 240 - ty + cy
-      torch_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
-    end
+function map:on_draw(dst_surface)
+  -- Show torch overlay for Ordona dialog
+  if game:get_time_of_day() ~= "night" and torch_overlay ~= nil then
+    local screen_width, screen_height = dst_surface:get_size()
+    local cx, cy = map:get_camera_position()
+    local tx, ty = torch_fire_2:get_center_position()
+    local x = 320 - tx + cx
+    local y = 240 - ty + cy
+    torch_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
   end
-end
 end

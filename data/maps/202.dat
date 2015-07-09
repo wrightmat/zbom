@@ -11,6 +11,42 @@ properties{
 
 tile{
   layer = 0,
+  x = 1120,
+  y = 96,
+  width = 1056,
+  height = 144,
+  pattern = "197",
+}
+
+tile{
+  layer = 0,
+  x = 1640,
+  y = 96,
+  width = 64,
+  height = 8,
+  pattern = "99",
+}
+
+tile{
+  layer = 0,
+  x = 1120,
+  y = 64,
+  width = 1056,
+  height = 32,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
+  x = 1704,
+  y = 64,
+  width = 8,
+  height = 32,
+  pattern = "106",
+}
+
+tile{
+  layer = 0,
   x = 1248,
   y = 528,
   width = 208,
@@ -70,24 +106,6 @@ tile{
   width = 1072,
   height = 8,
   pattern = "19",
-}
-
-tile{
-  layer = 0,
-  x = 1120,
-  y = 96,
-  width = 1056,
-  height = 144,
-  pattern = "197",
-}
-
-tile{
-  layer = 0,
-  x = 1120,
-  y = 96,
-  width = 48,
-  height = 8,
-  pattern = "556",
 }
 
 tile{
@@ -481,7 +499,7 @@ tile{
   layer = 0,
   x = 1176,
   y = 96,
-  width = 880,
+  width = 456,
   height = 8,
   pattern = "105",
 }
@@ -617,17 +635,8 @@ tile{
   x = 2136,
   y = 104,
   width = 8,
-  height = 96,
+  height = 80,
   pattern = "106",
-}
-
-tile{
-  layer = 0,
-  x = 2136,
-  y = 200,
-  width = 8,
-  height = 8,
-  pattern = "104",
 }
 
 tile{
@@ -642,8 +651,8 @@ tile{
 tile{
   layer = 0,
   x = 1216,
-  y = 168,
-  width = 920,
+  y = 184,
+  width = 416,
   height = 8,
   pattern = "105",
 }
@@ -4466,15 +4475,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1120,
-  y = 64,
-  width = 1056,
-  height = 32,
-  pattern = "22",
-}
-
-tile{
-  layer = 0,
   x = 1104,
   y = 248,
   width = 8,
@@ -4611,7 +4611,7 @@ tile{
 tile{
   layer = 0,
   x = 1208,
-  y = 168,
+  y = 184,
   width = 8,
   height = 8,
   pattern = "104",
@@ -5124,7 +5124,7 @@ tile{
 tile{
   layer = 0,
   x = 2136,
-  y = 168,
+  y = 184,
   width = 8,
   height = 8,
   pattern = "104",
@@ -5938,6 +5938,186 @@ tile{
   width = 8,
   height = 8,
   pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 1712,
+  y = 184,
+  width = 424,
+  height = 8,
+  pattern = "105",
+}
+
+tile{
+  layer = 0,
+  x = 1704,
+  y = 96,
+  width = 352,
+  height = 8,
+  pattern = "105",
+}
+
+tile{
+  layer = 0,
+  x = 1704,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "104",
+}
+
+tile{
+  layer = 0,
+  x = 1704,
+  y = 184,
+  width = 8,
+  height = 8,
+  pattern = "104",
+}
+
+tile{
+  layer = 0,
+  x = 1704,
+  y = 96,
+  width = 8,
+  height = 8,
+  pattern = "104",
+}
+
+tile{
+  layer = 0,
+  x = 1632,
+  y = 96,
+  width = 8,
+  height = 8,
+  pattern = "104",
+}
+
+tile{
+  layer = 0,
+  x = 1632,
+  y = 184,
+  width = 8,
+  height = 8,
+  pattern = "104",
+}
+
+tile{
+  layer = 0,
+  x = 1632,
+  y = 192,
+  width = 8,
+  height = 48,
+  pattern = "106",
+}
+
+tile{
+  layer = 0,
+  x = 1632,
+  y = 240,
+  width = 8,
+  height = 8,
+  pattern = "104",
+}
+
+tile{
+  layer = 0,
+  x = 1648,
+  y = 120,
+  width = 48,
+  height = 48,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
+  x = 1648,
+  y = 112,
+  width = 48,
+  height = 8,
+  pattern = "557",
+}
+
+tile{
+  layer = 0,
+  x = 1696,
+  y = 120,
+  width = 8,
+  height = 48,
+  pattern = "500",
+}
+
+tile{
+  layer = 0,
+  x = 1648,
+  y = 168,
+  width = 48,
+  height = 8,
+  pattern = "556",
+}
+
+tile{
+  layer = 0,
+  x = 1640,
+  y = 120,
+  width = 8,
+  height = 48,
+  pattern = "501",
+}
+
+tile{
+  layer = 0,
+  x = 1696,
+  y = 168,
+  width = 8,
+  height = 8,
+  pattern = "498",
+}
+
+tile{
+  layer = 0,
+  x = 1640,
+  y = 168,
+  width = 8,
+  height = 8,
+  pattern = "497",
+}
+
+tile{
+  layer = 0,
+  x = 1640,
+  y = 112,
+  width = 8,
+  height = 8,
+  pattern = "496",
+}
+
+tile{
+  layer = 0,
+  x = 1696,
+  y = 112,
+  width = 8,
+  height = 8,
+  pattern = "499",
+}
+
+tile{
+  layer = 0,
+  x = 1120,
+  y = 96,
+  width = 48,
+  height = 48,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
+  x = 1120,
+  y = 144,
+  width = 48,
+  height = 8,
+  pattern = "556",
 }
 
 teletransporter{
@@ -7264,7 +7444,7 @@ enemy{
   name = "tentacle_path_2",
   layer = 0,
   x = 1536,
-  y = 213,
+  y = 221,
   direction = 3,
   breed = "tentacle",
 }
@@ -7273,7 +7453,7 @@ enemy{
   name = "tentacle_path_3",
   layer = 0,
   x = 1216,
-  y = 213,
+  y = 221,
   direction = 3,
   breed = "tentacle",
 }
@@ -7316,6 +7496,36 @@ door{
   sprite = "entities/door_very_weak_wall",
   savegame_variable = "b1031",
   opening_method = "explosion",
+}
+
+destination{
+  name = "from_above_fall",
+  layer = 0,
+  x = 976,
+  y = 205,
+  direction = -1,
+}
+
+npc{
+  name = "torch_room2_1",
+  layer = 0,
+  x = 1144,
+  y = 93,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/torch",
+  behavior = "item#lamp",
+}
+
+npc{
+  name = "torch_room2_2",
+  layer = 0,
+  x = 1672,
+  y = 149,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/torch",
+  behavior = "item#lamp",
 }
 
 tile{
