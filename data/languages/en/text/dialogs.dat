@@ -2043,8 +2043,8 @@ dialog{
   icon = "63",
   skip = "current",
   text = [[
-You got a trusty wooden shield
-of Ordon origins. Be careful,
+You were awarded a trusty wooden
+shield of Ordon origins. Be careful,
 it's only made of wood.
   ]]
 }
@@ -2111,11 +2111,11 @@ dialog{
   icon = "66",
   skip = "current",
   text = [[
-You were awarded the sturdy
-Ordon Sword!$0 It is a lightweight
-but durable blade which has been
-passed down by the Ordon people
-for many generations.
+You found a sturdy Ordon Sword!$0
+It is a lightweight but durable
+blade which has been passed down
+by the Ordon people for many
+generations.
   ]]
 }
 
@@ -2124,9 +2124,9 @@ dialog{
   icon = "67",
   skip = "current",
   text = [[
-You received the Forged
-Blade!$0 Its edge is a force
-to be reckoned with!
+You received the Forged Blade!$0
+Its edge is a force to be
+reckoned with!
   ]]
 }
 
@@ -2135,9 +2135,9 @@ dialog{
   icon = "68",
   skip = "current",
   text = [[
-You received the Light
-Sword!$0 Its shining edge
-can destroy most anything!
+You received the Light Sword!$0
+Its shining edge can destroy
+most anything!
   ]]
 }
 
@@ -8464,13 +8464,12 @@ dialog{
   id = "ulo.0.festival",
   skip = "current",
   text = [[
-Hi $v! How are you enjoying the
-festival? I love this time of year so
-much that I just had to take a break
-from the Council to come spend time
-with my villagers!
-So $v, did you know this is a
-festival of Light?
+$v! How are you enjoying the festival?
+I love this time of year so much that I
+just had to take a break from the Council
+to come spend time with my villagers!$0
+So $v, did you know this is a festival
+of Light?
   ]]
 }
 

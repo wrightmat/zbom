@@ -16,7 +16,7 @@ local function random_walk(npc)
 end
 
 local function are_all_torches_on()
- return torch_1 ~= nil 
+ return torch_1 ~= nil
     and torch_1:get_sprite():get_animation() == "lit"
     and torch_2:get_sprite():get_animation() == "lit"
     and torch_3:get_sprite():get_animation() == "lit"
@@ -47,6 +47,7 @@ local function end_race_won()
             hero:unfreeze()
             game:set_value("i1027", 4)
             game:set_value("i1910", game:get_value("i1910")+1)
+            sol.timer.start(2000, function() torch_5:get_sprite():set_animation("unlit") end)
           end)
         end, 500, 30000) --move_camera
       end) --timer

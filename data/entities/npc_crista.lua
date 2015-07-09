@@ -52,7 +52,8 @@ function entity:on_created()
 end
 
 function entity:on_interaction()
-  if game:get_map():get_id() == "28" then -- Faron Woods access to sewer, to get sword
+  if game:get_map():get_id() == "28" then
+    -- Faron Woods access to sewer, to get sword
     if game:get_value("i1901") >= 1 then
       if not map:has_entities("chuchu") and game:get_value("i1027") <= 4 then 
         game:start_dialog("crista.1.woods")
@@ -76,8 +77,8 @@ function entity:on_interaction()
         end)
       end
     end
-  end
-  if game:get_value("b2020") and not game:get_value("b2022") then  -- Has odd mushroom
+  elseif game:get_value("b2020") and not game:get_value("b2022") then
+    -- Has odd mushroom
     if game:get_value("i2021") >= 1 then
       game:start_dialog("crista.0.potion_work", function()
         if game:get_value("i2021") < 10 then game:set_value("i2021", game:get_value("i2021")+1) end

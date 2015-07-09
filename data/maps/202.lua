@@ -6,6 +6,7 @@ local game = map:get_game()
 --------------------------------
 
 if game:get_value("i1030") == nil then game:set_value("i1030", 0) end
+local lantern_overlay = nil
 
 if game:has_item("lamp") then
   lantern_overlay = sol.surface.create("entities/dark.png")
@@ -111,26 +112,26 @@ for enemy in map:get_entities("tentacle") do
   end
 end
 
-function map:on_obtained_treasure(treasure_item, treasure_variant, treasure_savegame_variable)
+function map:on_obtained_treasure(item, variant, savegame_variable)
   if tentacle_sword_1 ~= nil then tentacle_sword_1:set_enabled(true) end
   if tentacle_sword_2 ~= nil then tentacle_sword_2:set_enabled(true) end
   if tentacle_sword_3 ~= nil then tentacle_sword_3:set_enabled(true) end
 end
 
-function game:on_map_changed(map)
-  function map:on_draw(dst_surface)
-    if lantern_overlay then
-      local screen_width, screen_height = dst_surface:get_size()
-      local hero = map:get_entity("hero")
-      local hero_x, hero_y = hero:get_center_position()
-      local camera_x, camera_y = map:get_camera_position()
-      local x = 320 - hero_x + camera_x
-      local y = 240 - hero_y + camera_y
-      lantern_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
-    end
+function map:on_draw(dst_surface)
+  if lantern_overlay ~= nil then
+    local screen_width, screen_height = dst_surface:get_size()
+    local hero_x, hero_y = map:get_entity("hero"):get_center_position()
+    local camera_x, camera_y = map:get_camera_position()
+    local x = 320 - hero_x + camera_x
+    local y = 240 - hero_y + camera_y
+    lantern_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
   end
 end
 
 function map:on_finished()
-  if lantern_overlay then lantern_overlay:fade_out() end
+  if lantern_overlay then
+    lantern_overlay:fade_out()
+    sol.timer.start(game, 1000, function() lantern_overlay = nil end)
+  end
 end
