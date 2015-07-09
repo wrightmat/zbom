@@ -13,6 +13,8 @@ end
 function entity:on_interaction()
   if self:get_name() == "mailbox_link" then
     game:start_dialog("mailbox.link")
+  elseif self:get_name() == "mailbox_office" then
+    game:start_dialog("mailbox.office")
   else
     game:start_dialog("mailbox")
   end

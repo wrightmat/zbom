@@ -6131,9 +6131,18 @@ You are a gentleman, right?
 
 dialog{
   id = "mailbox.link",
+  skip = "current",
   text = [[
-This is your mailbox, but it
-appears to be empty.
+This is your mailbox, but it appears
+to be empty.
+]]
+}
+
+dialog{
+  id = "mailbox.office",
+  skip = "current",
+  text = [[
+Mailbox is for official use only!
 ]]
 }
 
