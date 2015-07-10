@@ -3,7 +3,7 @@ local map = entity:get_map()
 local hero_on_pit = false
 
 -- Somaria pit: special entity that can be filled by
--- a somaria block, but is otherwise non-traversable.
+-- an ice block, but is otherwise non-traversable.
 
 function entity:on_created()
   self:set_size(16, 16)

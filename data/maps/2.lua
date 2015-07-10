@@ -569,12 +569,3 @@ end
 function sensor_door_throne:on_activated()
   map:open_doors("door_throne")
 end
-
-function to_below_throne:on_activated()
-  sol.audio.play_sound("hero_falls")
-  hero:teleport("2","from_above_throne","fade")
-end
-function to_below_council:on_activated()
-  sol.audio.play_sound("hero_falls")
-  hero:teleport("2","from_above_council","fade")
-end

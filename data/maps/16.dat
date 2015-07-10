@@ -6011,6 +6011,42 @@ tile{
   pattern = "528",
 }
 
+tile{
+  layer = 0,
+  x = 72,
+  y = 664,
+  width = 8,
+  height = 32,
+  pattern = "865",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 664,
+  width = 16,
+  height = 8,
+  pattern = "867",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 664,
+  width = 8,
+  height = 32,
+  pattern = "866",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 672,
+  width = 16,
+  height = 24,
+  pattern = "868",
+}
+
 teletransporter{
   name = "to_F13",
   layer = 0,
@@ -7632,24 +7668,11 @@ teletransporter{
   destination = "_side",
 }
 
-teletransporter{
-  name = "great_fairy_warp",
-  layer = 0,
-  x = 80,
-  y = 688,
-  width = 16,
-  height = 16,
-  destination_map = "163",
-  destination = "from_outside",
-  sprite = "entities/teletransporter_hole",
-  sound = "hero_falls",
-}
-
 destination{
   name = "from_great_fairy",
   layer = 0,
   x = 88,
-  y = 669,
+  y = 709,
   direction = 3,
 }
 
@@ -7701,6 +7724,29 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/hylian_gaira",
+}
+
+teletransporter{
+  name = "to_fairy",
+  layer = 0,
+  x = 80,
+  y = 664,
+  width = 16,
+  height = 16,
+  destination_map = "163",
+  destination = "from_outside",
+}
+
+wall{
+  layer = 0,
+  x = 72,
+  y = 656,
+  width = 32,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
 }
 
 tile{

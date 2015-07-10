@@ -9438,22 +9438,26 @@ sensor{
   height = 16,
 }
 
-sensor{
+teletransporter{
   name = "to_below_throne",
   layer = 0,
   x = 120,
-  y = 1229,
-  width = 96,
+  y = 1224,
+  width = 80,
   height = 32,
+  destination_map = "2",
+  destination = "from_above_throne",
 }
 
-sensor{
+teletransporter{
   name = "to_below_council",
   layer = 0,
   x = 1272,
-  y = 1229,
-  width = 96,
+  y = 1224,
+  width = 80,
   height = 32,
+  destination_map = "2",
+  destination = "from_above_council",
 }
 
 tile{

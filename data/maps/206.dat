@@ -8424,6 +8424,17 @@ tile{
   pattern = "115",
 }
 
+teletransporter{
+  name = "to_basement",
+  layer = 0,
+  x = 1464,
+  y = 632,
+  width = 16,
+  height = 16,
+  destination_map = "207",
+  destination = "from_above",
+}
+
 chest{
   name = "chest_magic_crystal_2",
   layer = 0,
@@ -8468,18 +8479,6 @@ chest{
   treasure_name = "crystal",
   treasure_savegame_variable = "b1781",
   sprite = "entities/chest",
-}
-
-teletransporter{
-  name = "to_basement",
-  layer = 0,
-  x = 1456,
-  y = 624,
-  width = 32,
-  height = 32,
-  destination_map = "207",
-  destination = "from_above",
-  sound = "hero_falls",
 }
 
 door{

@@ -6036,13 +6036,15 @@ npc{
   behavior = "dialog#hint_stone.ruins",
 }
 
-sensor{
-  name = "sensor_fall_below",
+teletransporter{
+  name = "fall_below",
   layer = 0,
-  x = 928,
-  y = 701,
+  x = 920,
+  y = 696,
   width = 64,
-  height = 48,
+  height = 32,
+  destination_map = "202",
+  destination = "from_above_fall",
 }
 
 tile{

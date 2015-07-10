@@ -13,10 +13,6 @@ function map:on_started(destination)
   if not game:get_value("b1161") then chest_map:set_enabled(false) end
 end
 
-function sensor_hole:on_activated()
-  map:get_hero():teleport("214", from_hole_above)
-end
-
 function switch_1:on_activated()
   block_1:set_enabled(true)
 end

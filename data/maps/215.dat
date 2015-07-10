@@ -10314,6 +10314,78 @@ tile{
   pattern = "95",
 }
 
+tile{
+  layer = 0,
+  x = 392,
+  y = 360,
+  width = 8,
+  height = 8,
+  pattern = "108",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 416,
+  width = 8,
+  height = 8,
+  pattern = "110",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 416,
+  width = 8,
+  height = 8,
+  pattern = "111",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 360,
+  width = 8,
+  height = 8,
+  pattern = "109",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 368,
+  width = 8,
+  height = 48,
+  pattern = "115",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 368,
+  width = 8,
+  height = 48,
+  pattern = "114",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 360,
+  width = 112,
+  height = 8,
+  pattern = "112",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 416,
+  width = 112,
+  height = 8,
+  pattern = "113",
+}
+
 wall{
   layer = 0,
   x = 192,
@@ -10397,15 +10469,6 @@ destination{
   y = 493,
   direction = 3,
   default = true,
-}
-
-sensor{
-  name = "sensor_hole",
-  layer = 0,
-  x = 400,
-  y = 365,
-  width = 128,
-  height = 80,
 }
 
 enemy{
@@ -10942,6 +11005,17 @@ enemy{
   y = 541,
   direction = 0,
   breed = "chuchu_yellow",
+}
+
+teletransporter{
+  name = "to_below_2",
+  layer = 0,
+  x = 400,
+  y = 368,
+  width = 112,
+  height = 48,
+  destination_map = "214",
+  destination = "from_hole_above",
 }
 
 tile{
