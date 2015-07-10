@@ -1,5 +1,5 @@
 local item = ...
-item.somaria_block = nil  -- The block created if any.
+item.ice_block = nil  -- The block created if any.
 
 function item:on_created()
   self:set_savegame_variable("i1814")
@@ -13,14 +13,14 @@ function item:on_using()
   if game:get_magic() >= magic_needed then
     local x, y, layer = self:get_block_position_from_hero()
 
-    if self.somaria_block == nil or not self.somaria_block:exists() then
+    if self.ice_block == nil or not self.ice_block:exists() then
       sol.audio.play_sound("cane")
       sol.audio.play_sound("magic_bar")
       game:remove_magic(magic_needed)
 
-      -- Create the Somaria block.
-      self.somaria_block = map:create_custom_entity{
-	name = "somaria_block",
+      -- Create the Ice block.
+      self.ice_block = map:create_custom_entity{
+	name = "ice_block",
 	x = x,
 	y = y,
 	layer = layer,
@@ -30,22 +30,22 @@ function item:on_using()
       self.created = true
     else
       -- Reuse the old one.
-      local old_x, old_y, old_layer = self.somaria_block:get_position()
+      local old_x, old_y, old_layer = self.ice_block:get_position()
       if x ~= old_x or y ~= old_y or layer ~= old_layer then
 
 	sol.audio.play_sound("cane")
 	sol.audio.play_sound("magic_bar")
 	game:remove_magic(magic_needed)
 
-	self.somaria_block:set_position(x, y, layer)
+	self.ice_block:set_position(x, y, layer)
       end
     end
   else
     -- Not enough magic.
-    if self.somaria_block ~= nil and self.somaria_block:get_position() ~= -100 then
+    if self.ice_block ~= nil and self.ice_block:get_position() ~= -100 then
       -- Remove the previous block.
       sol.audio.play_sound("cane")
-      self.somaria_block:set_position(-100, 0)
+      self.ice_block:set_position(-100, 0)
     else
       sol.audio.play_sound("wrong")
     end
@@ -55,8 +55,8 @@ end
 
 -- Called when the current map changes.
 function item:on_map_changed()
-  -- No more Somaria block on the new map.
-  self.somaria_block = nil
+  -- No more ice block on the new map.
+  self.ice_block = nil
 end
 
 function item:get_block_position_from_hero()

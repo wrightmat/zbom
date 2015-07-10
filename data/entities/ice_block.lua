@@ -1,6 +1,7 @@
 local entity = ...
 local map = entity:get_map()
 local pushing = false
+local block_on_switch = false
 
 -- Ice block: special block made of ice that can fill a
 -- somaria pit, turn lava solid, and possibly other things.
@@ -54,31 +55,39 @@ function entity:on_created()
 	  crust:remove()
 	end)
       end
+    elseif other:get_type() == "switch" then
+      block_on_switch = true
+      other:set_activated(true)
+      if other:on_activated() ~= nil and not other.active then
+        other:on_activated()
+        other.active = true
+      end
+      sol.timer.start(map, 1000, function()
+        if block_on_switch then
+          return true
+        else
+          block_on_switch = false
+          other:set_activated(false)
+          if other:on_inactivated() ~= nil and other.active then
+            other:on_inactivated()
+            other.active = false
+          end
+        end
+      end)
+    elseif other:get_type() == "hole" then
+      sol.audio.play_sound("hero_falls")
+      self:remove()
     elseif other:get_type() == "fire" then
       sol.audio.play_sound("ice_melt")
       self:remove()
     elseif other:get_type() == "explosion" then
       sol.audio.play_sound("ice_melt")
       self:remove()
+    else
+      block_on_switch = false
     end
   end)
 end
-
---function entity:on_position_changed()
---  for switch in map:get_entities("switch") do
---    switch.active = false
---    if not self:overlaps(switch) then
---      switch:set_activated(false)
---      if switch:on_inactivated() ~= nil and switch.active then switch:on_inactivated() end
---    else
---      switch:set_activated(true)
---      if switch:on_activated() ~= nil and not switch.active then
---	switch:on_activated()
---	switch.active = true
---      end
---    end
---  end
---end
 
 function entity:on_removed()
   --melting animation
