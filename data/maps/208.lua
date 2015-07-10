@@ -8,8 +8,7 @@ local game = map:get_game()
 function map:on_started(destination)
   map:set_doors_open("door_miniboss")
   if miniboss_chu ~= nil then miniboss_chu:set_enabled(false) end
-
-  if game:get_value("b1150") then game:set_dungeon_finished(6) end
+  if not game:get_value("b1144") then chest_big_key:set_enabled(false) end
 end
 
 function sensor_miniboss:on_activated()
@@ -26,6 +25,8 @@ if miniboss_chu ~= nil then
     sol.audio.play_sound("boss_killed")
     sol.timer.start(1000, function()
       sol.audio.play_music("temple_snow")
+      chest_big_key:set_enabled(true)
+      sol.audio.play_sound("chest_appears")
     end)
   end
 end

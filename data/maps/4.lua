@@ -131,7 +131,7 @@ function npc_strap_pub:on_interaction()
 end
 
 function npc_warbos:on_interaction()
-  if math.random(4) == 1 then
+  if math.random(4) == 1 and game:get_item("rupee_bag"):get_variant() == 1 then
     -- Randomly mention the bigger wallet
     game:start_dialog("shopkeep.1")
   else

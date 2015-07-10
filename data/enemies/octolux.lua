@@ -70,6 +70,7 @@ end
 
 function enemy:shoot()
   self:stop_movement()
+  local d = self:get_sprite():get_direction()
   self:get_sprite():set_animation("shooting")
   shoot_timer = sol.timer.start(self, 100, function()
     local rock = self:create_enemy{
