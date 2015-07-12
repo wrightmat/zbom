@@ -1020,7 +1020,7 @@ dialog{
   id = "_treasure.airship_part.1",
   skip = "current",
   text = [[
-You found a chunk of Magnetite!$0
+You found a chunk of $r Magnetite$w!$0
 This could help the Gerudo with
 their repairs!
   ]]
@@ -1030,7 +1030,7 @@ dialog{
   id = "_treasure.airship_part.2",
   skip = "current",
   text = [[
-You found a Propeller!$0
+You found a $r Propeller$w!$0
 What could the Gerudo need with this?
   ]]
 }
@@ -1039,7 +1039,7 @@ dialog{
   id = "_treasure.airship_part.3",
   skip = "current",
   text = [[
-You found Din's Pearl!$0
+You found $R Din's Pearl$w!$0
 The magic from this artifact should
 speed the Gerudo's repairs considerably!
 Get back as soon as you can.
@@ -1051,9 +1051,9 @@ dialog{
   icon = "25",
   skip = "current",
   text = [[
-You got an alchemy stone!
-This artifact is said to
-bring riches to its owner.
+You got an $r Alchemy Stone$w!
+This artifact is said to bring riches 
+to its owner.
   ]]
 }
 
@@ -1062,9 +1062,9 @@ dialog{
   icon = "22",
   skip = "current",
   text = [[
-This tasty Goron treat is
-valuable because it contains
-a bug!
+You got $r Goron Amber$w!
+This tasty Goron treat is valuable
+because it contains a bug!
   ]]
 }
 
@@ -1073,7 +1073,7 @@ dialog{
   icon = "16",
   skip = "current",
   text = [[
-You got an Apple!$0
+You got an $r Apple$w!$0
 Eat it to regain some stamina!
   ]]
 }
@@ -1083,7 +1083,7 @@ dialog{
   icon = "16",
   skip = "current",
   text = [[
-You got some Apples!$0
+You got some $r Apples$w!$0
 Eat them to regain some stamina!
   ]]
 }
@@ -1093,9 +1093,9 @@ dialog{
   icon = "83",
   skip = "current",
   text = [[
-You got some Arrows!$0
-Use them in your bow to hit
-things at a distance.
+You got some $r Arrows$w!$0
+Use them in your bow to hit things
+at a distance.
   ]]
 }
 
@@ -1104,9 +1104,9 @@ dialog{
   icon = "83",
   skip = "current",
   text = [[
-You found some Arrows!$0
-Use them in your bow to hit
-things at a distance.
+You got some $r Arrows$w!$0
+Use them in your bow to hit things
+at a distance.
   ]]
 }
 
@@ -1115,9 +1115,9 @@ dialog{
   icon = "83",
   skip = "current",
   text = [[
-You found some Arrows!$0
-Use them in your bow to hit
-things at a distance.
+You got some $r Arrows$w!$0
+Use them in your bow to hit things
+at a distance.
   ]]
 }
 
@@ -1126,7 +1126,7 @@ dialog{
   icon = "73",
   skip = "current",
   text = [[
-You found a Big Key!$0
+You found a $r Big Key$w!$0
 Now just find a big keyhole to
 put it in!
   ]]
@@ -1137,7 +1137,7 @@ dialog{
   icon = "82",
   skip = "current",
   text = [[
-You got a Bomb!$0
+You got a $r Bomb$w!$0
 Use it to blow something up!$0
 Ka$0 BOOM!
   ]]
@@ -1148,7 +1148,7 @@ dialog{
   icon = "82",
   skip = "current",
   text = [[
-You got a pack of Bombs!$0
+You got a pack of $r Bombs$w!$0
 Use them to blow something up!$0
 Ka $0 BOOM!
   ]]
@@ -1159,7 +1159,7 @@ dialog{
   icon = "82",
   skip = "current",
   text = [[
-You got a pack of Bombs!$0
+You got a pack of $r Bombs$w!$0
 Use them to blow something up!$0
 Ka $0 BOOM!
   ]]
@@ -1170,7 +1170,7 @@ dialog{
   icon = "54",
   skip = "current",
   text = [[
-You received the Bomb Bag!$0
+You received a $r Bomb Bag$w!$0
 It can hold 10 Bombs.
   ]]
 }
@@ -1180,7 +1180,7 @@ dialog{
   icon = "55",
   skip = "current",
   text = [[
-You got the Large Bomb Bag!$0
+You got a $r Large Bomb Bag$w!$0
 It holds 30 Bombs.
   ]]
 }
@@ -1190,7 +1190,7 @@ dialog{
   icon = "56",
   skip = "current",
   text = [[
-You got the Huge Bomb Bag!$0
+You got a $r Huge Bomb Bag$w!$0
 It holds 60 Bombs!
   ]]
 }
@@ -1214,9 +1214,8 @@ dialog{
   skip = "current",
   text = [[
 You got another page!
-I guess this one will
-replace what that
-monkey stole...
+I guess this one will replace
+what that monkey stole...
   ]]
 }
 
@@ -1226,7 +1225,7 @@ dialog{
   skip = "current",
   text = [[
 You got a page to the
-Book of Mudora!
+$c Book of Mudora!$w
 It's coming together!
   ]]
 }
@@ -1237,7 +1236,7 @@ dialog{
   skip = "current",
   text = [[
 You got another page to the
-Book of Mudora!
+$c Book of Mudora!$w
 
 It's starting to look like
 a real book!
@@ -1250,7 +1249,7 @@ dialog{
   skip = "current",
   text = [[
 It's yet another page of the
-Book of Mudora!
+$c Book of Mudora!$w
 
 You have almost a complete
 book now!
@@ -1263,7 +1262,7 @@ dialog{
   skip = "current",
   text = [[
 It's the final page of the
-Book of Mudora!
+$c Book of Mudora!$w
 
 The book is complete, now
 it just needs its magic
@@ -1276,7 +1275,7 @@ dialog{
   icon = "20",
   skip = "current",
   text = [[
-The Book of Mudora has been
+The $c Book of Mudora$w has been
 enchanted! Finally the book
 is back to its full power!
   ]]
@@ -1287,7 +1286,7 @@ dialog{
   icon = "4",
   skip = "current",
   text = [[
-You got a Boomerang!$0
+You got a $r Boomerang$w!$0
 Use it to immobilize enemies
 and reach distant objects.
   ]]
@@ -1298,7 +1297,7 @@ dialog{
   icon = "28",
   skip = "current",
   text = [[
-You found the Pegasus Boots!
+You found the $r Pegasus Boots$w!
 Slip them on and dash about!
   ]]
 }
@@ -1308,7 +1307,7 @@ dialog{
   icon = "74",
   skip = "current",
   text = [[
-You found the Boss Key!$0
+You found the $r Boss Key$w!$0
 Now you can open the door to
 the boss's lair!
   ]]
@@ -1647,7 +1646,7 @@ dialog{
   icon = "2",
   skip = "current",
   text = [[
-You found the Hero's Bow!$0
+You found the $r Hero's Bow$w!$0
 This is said to have been
 wielded by a legendary hero
 long ago.
@@ -1793,8 +1792,9 @@ dialog{
   next = "_warning_magic",
   skip = "current",
   text = [[
-You found a Lantern!$0
-Light the way and travel in safety!
+You found a $r Lantern!$w$0
+Light the way and travel in
+safety!
   ]]
 }
 
@@ -5291,7 +5291,7 @@ dialog{
   text = [[
 Good work finding the library -
 I'm sure you have learned much!
-As Ordona suggested, you should go
+As $y Ordona $wsuggested, you should go
 visit the Council at Castle Town
 just West of here. They may have
 advice for you on your journey.
@@ -6340,8 +6340,8 @@ dialog{
 $0$v!
 $0 . $0 . $0 .
 Yes, you've done well. Now allow me to
-explain myself. I am Ordona, Spirit
-of the Light.$0
+explain myself. I am $y Ordona, Spirit
+of the Light.$w$0
 I've been watching over this village for
 many centuries, keeping peace and
 prosperity here in exchange for the
@@ -8366,7 +8366,7 @@ You have to make it to the finish line of
 the course after lighting each torch.
 If you make it in time, you'll win a
 prize! Remember, this is not just a race...
-it's a tribute to Ordona, signifying our
+it's a tribute to $y Ordona,$wsignifying our
 appreciation for all the light she bestows
 upon us and our lives. Now, if there are
 no questions...step up to the gate to race!
@@ -8478,7 +8478,7 @@ $v! How are you enjoying the festival?
 I love this time of year so much that I
 just had to take a break from the Council
 to come spend time with my villagers!$0
-So $v, did you know this is a festival
+So $v, did you know this is a   $y festival
 of Light?
   ]]
 }
