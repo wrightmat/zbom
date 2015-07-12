@@ -1,4 +1,16 @@
 dialog{
+  id = "__using_colors",
+  text = [[
+$bBlue: places
+$rRed: items
+$gGreen: People
+$cCyan: Book of Mudora
+$mMagenta: Dark Tribe
+$wYellow: Ordona/Light
+  ]]
+}
+
+dialog{
   id = "_big_key_required",
   icon = "73",
   skip = "current",
@@ -6916,8 +6928,8 @@ There's another entire continent across
 the bridge that fell down! Can you
 believe it? You won't be able to get
 there right now, but if you could you'd
-be able to visit Rauru, Darunia, Nabooru,
-Ruto, or any of the other towns there!
+be able to visit  $bRauru, Darunia, Nabooru,
+Ruto,$w or any of the other towns there!
   ]]
 }
 
