@@ -27,6 +27,7 @@ local function follow_hero(npc)
   local hero_x, hero_y, hero_layer = hero:get_position()
   local npc_x, npc_y, npc_layer = npc:get_position()
   local distance_hero = math.abs((hero_x+hero_y)-(npc_x+npc_y))
+  if distance_hero < 20 then npc:set_traversable(true) end
   local m = sol.movement.create("target")
   m:set_ignore_obstacles(false)
   m:set_speed(40)
