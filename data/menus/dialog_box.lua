@@ -1,16 +1,3 @@
---[[
-Special characters:
-$1, $2 and $3: slow, medium and fast
-$0: pause
-$v: variable
-space: don't add the delay
-110xxxx: multibyte character
-${surface_name}: change to other surface. This allows to use several colors at the same time. 
-                 The original one is "${default}".
-$[color] or $[(r,g,b)]: name of a color (red, blue,...) predefined in dialog_box:set_color(color),
-                        or RGB coordinates of some color.
---]]  
-
 local game = ...
 
 local dialog_box = {
@@ -407,7 +394,7 @@ function dialog_box:add_character()
 	
     elseif current_char == "r" then
       self:create_surface("red")
-      self:set_color({255,0,0})
+      self:set_color({255,102,102})
 
     elseif current_char == "g" then
       self:create_surface("green")
@@ -415,7 +402,7 @@ function dialog_box:add_character()
 
     elseif current_char == "b" then
       self:create_surface("blue")
-      self:set_color({0,0,255})
+      self:set_color({102,102,255})
 
     elseif current_char == "y" then
       self:create_surface("yellow")
@@ -428,6 +415,18 @@ function dialog_box:add_character()
     elseif current_char == "m" then
       self:create_surface("magenta")
       self:set_color({255,0,255})
+
+    elseif current_char == "o" then
+      self:create_surface("orange")
+      self:set_color({255,165,0})
+
+    elseif current_char == "p" then
+      self:create_surface("purple")
+      self:set_color({128,0,128})
+
+    elseif current_char == "s" then
+      self:create_surface("silver")
+      self:set_color({192,192,192})
 
     elseif current_char == "w" then
       self:create_surface("default")

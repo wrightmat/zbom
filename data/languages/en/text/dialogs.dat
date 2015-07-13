@@ -216,7 +216,7 @@ dialog{
   skip = "current",
   text = [[
 A couple pages which belong to a
-much larger book.
+much larger $c book$w.
   ]]
 }
 
@@ -225,7 +225,7 @@ dialog{
   skip = "current",
   text = [[
 A collection of pages from the
-legendary Book of Mudora.
+legendary $c Book of Mudora$w.
   ]]
 }
 
@@ -234,7 +234,7 @@ dialog{
   skip = "current",
   text = [[
 A collection of pages from the
-legendary Book of Mudora.
+legendary $c Book of Mudora$w.
   ]]
 }
 
@@ -243,7 +243,7 @@ dialog{
   skip = "current",
   text = [[
 A collection of pages from the
-legendary Book of Mudora.
+legendary $c Book of Mudora$w.
   ]]
 }
 
@@ -252,7 +252,7 @@ dialog{
   skip = "current",
   text = [[
 A collection of pages from the
-legendary Book of Mudora.
+legendary $c Book of Mudora$w.
   ]]
 }
 
@@ -1200,7 +1200,7 @@ dialog{
   icon = "20",
   skip = "current",
   text = [[
-You got a page to a book!
+You got a page to a $c book$w!
 This seems like an awfully
 paltry prize after braving
 this whole dungeon. Maybe
@@ -1213,7 +1213,7 @@ dialog{
   icon = "20",
   skip = "current",
   text = [[
-You got another page!
+You got another $c book$w page!
 I guess this one will replace
 what that monkey stole...
   ]]
@@ -1659,7 +1659,7 @@ dialog{
   next = "_warning_magic",
   skip = "current",
   text = [[
-You found the Cane of Ice!$0
+You found the $r Cane of Ice$w!$0
 Use it to create blocks
 on a whim.
   ]]
@@ -1670,7 +1670,7 @@ dialog{
   icon = "71",
   skip = "current",
   text = [[
-You found a Compass! It
+You found a $r Compass$w! It
 indicates your position on
 a Map, but for some reason
 only works in this dungeon.
@@ -1682,6 +1682,7 @@ dialog{
   icon = "23",
   skip = "current",
   text = [[
+You got a $r Magic Crystal$w!$0
 No one knows how this solid
 chunk of pure, crystallized
 magic came to be...
@@ -1693,7 +1694,7 @@ dialog{
   icon = "0",
   skip = "current",
   text = [[
-You got a Rito Feather!$0
+You got a $r Rito Feather$w!$0
 Use it to jump across
 obstacles safely. You'll be
 light as air!
@@ -1705,7 +1706,7 @@ dialog{
   icon = "18",
   skip = "current",
   text = [[
-You got the Flippers!$0
+You got the $r Flippers$w!$0
 Now you'll be able to swim
 like a pro!
   ]]
@@ -1716,7 +1717,7 @@ dialog{
   icon = "32",
   skip = "current",
   text = [[
-You found the Iron Bracelet!$0
+You found the $r Iron Bracelet$w!$0
 Its power allows you to lift
 heavy things!
   ]]
@@ -1727,7 +1728,7 @@ dialog{
   icon = "33",
   skip = "current",
   text = [[
-You found the Gold Bracelet!$0
+You got the $r Gold Bracelet$w!$0
 Its magic allows you to lift
 just about anything!
   ]]
@@ -1738,7 +1739,7 @@ dialog{
   icon = "84",
   skip = "current",
   text = [[
-You found a Heart!$0
+You found a $r Heart$w!$0
 Some life has been
 replinished.
   ]]
@@ -1749,7 +1750,7 @@ dialog{
   icon = "80",
   skip = "current",
   text = [[
-You found a Heart Container!$0
+You found a $r Heart Container$w!$0
 Your life has been increased
 by one. Congratulations!
   ]]
@@ -1760,7 +1761,7 @@ dialog{
   icon = "79",
   skip = "current",
   text = [[
-You found a Piece of Heart!
+You found a $r Piece of Heart$w!
   ]]
 }
 
@@ -1769,7 +1770,7 @@ dialog{
   icon = "6",
   skip = "current",
   text = [[
-You found a Hookshot!$0
+You found a $r Hookshot$w!$0
 Immobilize enemies and travel
 across distances previously
 unreachable!
@@ -1781,7 +1782,7 @@ dialog{
   icon = "21",
   skip = "current",
   text = [[
-You got some Mystic Jade!
+You got some $r Mystic Jade$w!
 It's such a beautiful color!
   ]]
 }
@@ -1835,7 +1836,7 @@ dialog{
   icon = "70",
   skip = "current",
   text = [[
-You found a dungeon Map!
+You found a $r dungeon Map$w!
 Use it to navigate difficult areas.
   ]]
 }
@@ -1845,7 +1846,7 @@ dialog{
   icon = "29",
   skip = "current",
   text = [[
-You got some Master Ore!$0
+You got some $r Master Ore$w!$0
 The blacksmith can use it
 to improve your sword!
   ]]
@@ -1856,7 +1857,7 @@ dialog{
   icon = "34",
   skip = "current",
   text = [[
-You got the Ocarina of Wind!$0
+You got the $r Ocarina of Wind$w!$0
 Use this magical instrument
 to get where you need to go!
   ]]
@@ -1867,9 +1868,9 @@ dialog{
   icon = "30",
   skip = "current",
   text = [[
-You found a strong metallic
-compound from the deepest
-depths of the earth!
+You found $r Subrosian Ore$w! It's
+strong metallic compound from
+the deepest depths of the earth!
   ]]
 }
 
@@ -1878,7 +1879,7 @@ dialog{
   icon = "24",
   skip = "current",
   text = [[
-You found a Goddess Plume!
+You found a $r Goddess Plume$w!
 This is a legendary treasure
 few will ever behold!
   ]]
@@ -1889,7 +1890,7 @@ dialog{
   icon = "9",
   skip = "current",
   text = [[
-You got some Heart Potion!$0
+You got some $r Heart Potion$w!$0
 Use it to restore your life.
   ]]
 }
@@ -1899,7 +1900,7 @@ dialog{
   icon = "10",
   skip = "current",
   text = [[
-You got some Magic Potion!$0
+You got some $r Magic Potion$w!$0
 Use it to refill your
 magic meter.
   ]]
@@ -1910,7 +1911,7 @@ dialog{
   icon = "11",
   skip = "current",
   text = [[
-You got Stamina Potion!$0
+You got $r Stamina Potion$w!$0
 It restores your stamina!
   ]]
 }
@@ -1920,7 +1921,7 @@ dialog{
   icon = "11",
   skip = "current",
   text = [[
-You got Revitalizing Potion!$0
+You got $r Revitalizing Potion$w!$0
 It restores life, magic
 and stamina!
   ]]
@@ -1931,7 +1932,7 @@ dialog{
   icon = "17",
   skip = "current",
   text = [[
-You got a Pumpkin!
+You got a $r Pumpkin$w!
 It looks quite nutritious.
   ]]
 }
@@ -1941,9 +1942,9 @@ dialog{
   icon = "57",
   skip = "current",
   text = [[
-You received the Small
-Quiver!$0 It holds your arrows,
-but only 10 at once.
+You received a $r Small Quiver$W!$0
+It holds your arrows, but only
+10 at once.
   ]]
 }
 
@@ -1952,7 +1953,7 @@ dialog{
   icon = "58",
   skip = "current",
   text = [[
-You received a Large Quiver$0
+You received a $r Large Quiver$w!$0
 It can hold 30 arrows at a time!
   ]]
 }
@@ -1962,7 +1963,7 @@ dialog{
   icon = "59",
   skip = "current",
   text = [[
-You received a Huge Quiver$0
+You received a $r Huge Quiver$w!$0
 It can hold 60 arrows!
   ]]
 }
@@ -1972,7 +1973,7 @@ dialog{
   icon = "90",
   skip = "current",
   text = [[
-You found a Green Rupee!$0
+You found a $g Green Rupee$w!$0
 That's worth 1 Rupee, so you'd
 better get lots!
   ]]
@@ -1983,7 +1984,7 @@ dialog{
   icon = "91",
   skip = "current",
   text = [[
-You found a Blue Rupee!$0
+You found a $b Blue Rupee$w!$0
 That's worth 5 Rupees.
   ]]
 }
@@ -1993,7 +1994,7 @@ dialog{
   icon = "92",
   skip = "current",
   text = [[
-You found a Red Rupee!$0
+You found a $b Red Rupee$w!$0
 That's worth 20 Rupees!
   ]]
 }
@@ -2003,7 +2004,7 @@ dialog{
   icon = "93",
   skip = "current",
   text = [[
-You found a Purple Rupee!$0
+You found a $p Purple Rupee$w!$0
 This one's worth 50 Rupees!
   ]]
 }
@@ -2013,7 +2014,7 @@ dialog{
   icon = "94",
   skip = "current",
   text = [[
-You found a Silver Rupee!$0
+You found a $s Silver Rupee$w!$0
 It's worth 100 Rupees!
 Lucky!
   ]]
@@ -2024,7 +2025,7 @@ dialog{
   icon = "95",
   skip = "current",
   text = [[
-You found a Gold Rupee!$0
+You found a $y Gold Rupee$w!$0
 It's worth 200 Rupees!
 Amazing!
   ]]
@@ -2035,7 +2036,7 @@ dialog{
   icon = "52",
   skip = "current",
   text = [[
-You got the Large Rupee Bag!$0
+You got the $r Large Rupee Bag$w!$0
 It holds 1000 rupees!
   ]]
 }
@@ -2045,7 +2046,7 @@ dialog{
   icon = "53",
   skip = "current",
   text = [[
-You got the Huge Rupee Bag!$0
+You got the $r Huge Rupee Bag$w!$0
 It holds a whopping 5000 rupees!
   ]]
 }
@@ -2055,8 +2056,8 @@ dialog{
   icon = "63",
   skip = "current",
   text = [[
-You were awarded a trusty wooden
-shield of Ordon origins. Be careful,
+You were awarded a trusty $r wooden
+shield of Ordon origins$w. Be careful,
 it's only made of wood.
   ]]
 }
@@ -2066,8 +2067,8 @@ dialog{
   icon = "64",
   skip = "current",
   text = [[
-You received a strong Hylian
-Shield!$0 It's made of nearly
+You received a strong $r Hylian
+Shield$w!$0 It's made of nearly
 impenetrable Hylian metal.
   ]]
 }
@@ -2077,8 +2078,8 @@ dialog{
   icon = "65",
   skip = "current",
   text = [[
-You found the magical Light
-Shield!$0 Made of polished
+You found the magical $r Light
+Shield$w!$0 Made of polished
 metal and infused with the
 purity of light, this shield
 will protect its wielder
@@ -2090,7 +2091,7 @@ dialog{
   id = "_treasure.shovel.1",
   skip = "current",
   text = [[
-You got a sturdy shovel! Use
+You got a sturdy $r Shovel$w! Use
 it to dig up any buried treasue
 you can find!
   ]]
@@ -2101,7 +2102,7 @@ dialog{
   icon = "72",
   skip = "current",
   text = [[
-You found a Small Key!$0
+You found a $r Small Key$w!$0
 Use it to open doors, but only
 in this area.
   ]]
@@ -2112,7 +2113,7 @@ dialog{
   icon = "26",
   skip = "current",
   text = [[
-You found a Deku stick!
+You found a $r Deku stick$w!
 Maybe someone will be able
 to make something of it...
   ]]
@@ -2123,7 +2124,7 @@ dialog{
   icon = "66",
   skip = "current",
   text = [[
-You found a sturdy Ordon Sword!$0
+You found a sturdy $r Ordon Sword$w!$0
 It is a lightweight but durable
 blade which has been passed down
 by the Ordon people for many
@@ -2136,7 +2137,7 @@ dialog{
   icon = "67",
   skip = "current",
   text = [[
-You received the Forged Blade!$0
+You received the $r Forged Blade$w!$0
 Its edge is a force to be
 reckoned with!
   ]]
@@ -2147,7 +2148,7 @@ dialog{
   icon = "68",
   skip = "current",
   text = [[
-You received the Light Sword!$0
+You received the $r Light Sword$w!$0
 Its shining edge can destroy
 most anything!
   ]]
@@ -2158,7 +2159,7 @@ dialog{
   icon = "40",
   skip = "current",
   text = [[
-You found an Odd Mushroom!
+You found an $r Odd Mushroom$w!
 The scent is quite...
 interesting.
   ]]
@@ -2169,8 +2170,8 @@ dialog{
   icon = "49",
   skip = "current",
   text = [[
-You traded the Goron Vase
-for a Zora Scale!$0
+You traded the $r Goron Vase$w
+for a $r Zora Scale$w!$0
 Another race-specific thing,
 I wonder what you'll do
 with it?
@@ -2182,8 +2183,8 @@ dialog{
   icon = "50",
   skip = "current",
   text = [[
-You traded the Zora Scale
-for a Frozen Fish!$0
+You traded the $r Zora Scale$w
+for a $r Frozen Fish$w!$0
 Finally something with some
 mass appeal!
   ]]
@@ -2194,9 +2195,9 @@ dialog{
   icon = "51",
   skip = "current",
   text = [[
-You traded the Frozen Fish
-for the Culinary Arts of
-Hyrule book!$0 Neat!
+You traded the $r Frozen Fish$w
+for the $r Culinary Arts of
+Hyrule book$w!$0 Neat!
   ]]
 }
 
@@ -2205,9 +2206,9 @@ dialog{
   icon = "52",
   skip = "current",
   text = [[
-You traded the Culinary Arts
-of Hyrule book for a Rito
-Feather!$0 Finally a truly
+You traded the $r Culinary Arts
+of Hyrule book$w for a $r Rito
+Feather$w!$0 Finally a truly
 useful item! Maybe this
 trading stuff is done?
   ]]
@@ -2218,8 +2219,8 @@ dialog{
   icon = "41",
   skip = "current",
   text = [[
-Your Odd Mushroom was made
-into some Odd Potion!
+Your $r Odd Mushroom$w was made
+into some $r Odd Potion$w!
 Whatever you do with it, 
 don't try to drink it!
   ]]
@@ -2230,9 +2231,9 @@ dialog{
   icon = "42",
   skip = "current",
   text = [[
-You traded the Odd Potion for
-a Deku Mask!$0
-Not sure what the Deku wanted
+You traded the $r Odd Potion$w for
+a $r Deku Mask$w!$0
+Not sure what the $g Deku$w wanted
 with that potion, but I'll bet
 this is considered trading up!
   ]]
@@ -2243,8 +2244,8 @@ dialog{
   icon = "43",
   skip = "current",
   text = [[
-You traded the Deku Mask for a
-Moon Tear!$0
+You traded the $r Deku Mask$w for a
+$r Moon Tear$w!$0
 
 It's weird that the guy wanted
 the mask so bad, but who cares
@@ -2257,8 +2258,8 @@ dialog{
   icon = "44",
   skip = "current",
   text = [[
-You traded the Moon Tear
-for a Crystal Ball!$0
+You traded the $r Moon Tear$w
+for a $r Crystal Ball$w!$0
 You swapped one shiny thing
 for another!
   ]]
@@ -2269,8 +2270,8 @@ dialog{
   icon = "45",
   skip = "current",
   text = [[
-You traded a Crystal Ball
-for a hunk of meat!$0
+You traded a $r Crystal Ball$w
+for a $r hunk of meat$w!$0
 Impa thinks it's tasty, but
 I wouldn't try it.
   ]]
@@ -2281,8 +2282,8 @@ dialog{
   icon = "46",
   skip = "current",
   text = [[
-You traded the Tasty Meat
-for Dog Food!$0
+You traded the $r Tasty Meat$w
+for $r Dog Food$w!$0
 Not exactly a fair trade, 
 but you felt bad for the
 hungry Moblin.
@@ -2294,8 +2295,8 @@ dialog{
   icon = "47",
   skip = "current",
   text = [[
-You traded the Dog Food 
-for some yummy Bananas!$0
+You traded the $r Dog Food$w 
+for some $r yummy Bananas$W!$0
 Now we're getting somewhere!
   ]]
 }
@@ -2305,11 +2306,11 @@ dialog{
   icon = "48",
   skip = "current",
   text = [[
-You traded Bananas for a 
-Goron Vase!$0
+You traded $r Bananas$w for a 
+$r Goron Vase$w!$0
 It's quite beautiful but
 you're not sure who would
-want one besides a Goron.
+want one besides a $g Goron$w.
   ]]
 }
 
@@ -2318,7 +2319,7 @@ dialog{
   icon = "61",
   skip = "current",
   text = [[
-You found the Blue Tunic!$0
+You found the $r Blue Tunic$w!$0
 This will help you survive
 cold water or even freezing
 temperatures!
@@ -2330,7 +2331,7 @@ dialog{
   icon = "62",
   skip = "current",
   text = [[
-You found the Red Tunic!$0
+You found the $r Red Tunic$w!$0
 This will allow you to brave
 smoldering heat!
   ]]
@@ -2341,7 +2342,7 @@ dialog{
   icon = "50",
   skip = "current",
   text = [[
-You got a World Map!$0
+You got a $r World Map$w!$0
 Now you may not get lost!
   ]]
 }
@@ -2351,7 +2352,7 @@ dialog{
   icon = "50",
   skip = "current",
   text = [[
-You got an expanded World Map!$0
+You got an $r expanded World Map$w!$0
 Now you can explore the Subrosian
 underworld without fear!
   ]]
@@ -2362,7 +2363,7 @@ dialog{
   icon = "50",
   skip = "current",
   text = [[
-You got a complete World Map!$0
+You got a $r complete World Map$w!$0
 Now you can explore the entirety
 of Hyrule without hesitation!
   ]]
@@ -2372,7 +2373,7 @@ dialog{
   id = "_warning_magic",
   skip = "current",
   text = [[
-Watch your Magic Meter!
+Watch your $g Magic Meter$w!
   ]]
 }
 
@@ -2380,7 +2381,7 @@ dialog{
   id = "anouki_1.0.snowpeak",
   skip = "current",
   text = [[
-Us Anouki... We gotta reputation for
+Us $g Anouki$w... We gotta reputation for
 having sensitive hearts and refined
 speech...$0 'Cause, ya know, that's
 what we're all about!
@@ -2422,7 +2423,7 @@ dialog{
   id = "anouki_3.0.snowpeak",
   skip = "current",
   text = [[
-Cave? Yeah, Snowpeak Caverns!
+Cave? Yeah, $b Snowpeak Caverns$w!
 It's the best.$0 Nothing but cold and
 dark as far as the eye can see.
   ]]
@@ -2435,9 +2436,9 @@ dialog{
 I'm not sure you're ready for the
 cave though. It's dangerous in there,
 so maybe you should explore somewhere
-safer first. Have you been to the other
+safer first. Have you been to the $b other
 side of the mountain that's not covered 
-in snow?
+in snow?$w
   ]]
 }
 
@@ -3313,17 +3314,17 @@ dialog{
 You got lost in my woods, huh?
 Well, we can't let that happen again!
 If you ever get turned around, here's
-what you do... Head straight North
-for Hyrule Castle Town. Northeast
-leads to the old Ruins. South goes
-back to Ordon, and West of there is
-the Western Faron Woods. You're in
-the Northern Faron Woods now. How
+what you do... Head straight north
+for $b Hyrule Castle Town$w. Northeast
+leads to the $b old Ruins$w. South goes
+back to $b Ordon$w, and west of there is
+the $b Western Faron Woods$w. You're in
+the $b Northern Faron Woods$w now. How
 can you tell? Well look at the trees,
 my boy! These pointy trees only grow
 in the Faron region, the rest of
 Hyrule has nice rounded trees. You'll
-know you've reached Hyrule Field when
+know you've reached $b Hyrule Field$w when
 the trees change shape!
   ]]
 }
@@ -3499,7 +3500,7 @@ dialog{
   id = "deku.2.lost_woods",
   text = [[
 At least you have the power of the
-complete book, but this place is
+complete $c book$w, but this place is
 still dangerous. The building at
 the heart of the woods is the
 worst - it was evil just streaming
@@ -3685,7 +3686,7 @@ dialog{
   id = "etnaya.0",
   skip = "current",
   text = [[
-Welcome to the Kakariko Gallery
+Welcome to the $b Kakariko $wGallery
 and Ampitheater!
 This city has long been seen as the
 cultural hub of all Hyrule, and this
@@ -3709,7 +3710,7 @@ dialog{
   skip = "current",
   text = [[
 Welcome one and all to this year's
-stage show at Kakariko Ampitheater!
+stage show at $b Kakariko Ampitheater$w!
 I'm proud to introduce our star,
 the one and only Rowin!
 
@@ -3889,7 +3890,7 @@ dialog{
   id = "francis.1.ordon",
   skip = "current",
   text = [[
-See that blue bar up there?
+See that $b blue bar$w up there?
 That's called your "Stamina Bar".
 It decreases any time you do
 something that takes energy, like
@@ -4284,7 +4285,7 @@ dialog{
   id = "gin.1.council",
   skip = "current",
   text = [[
-Huh?$0 A Book?$0
+Huh?$0 A $c Book?$w$0
 Can't say I even know what that is!
   ]]
 }
@@ -4314,7 +4315,7 @@ dialog{
   skip = "current",
   text = [[
 If you head north of the castle, you'll
-hit the bustling city of Kakariko. If
+hit the bustling city of $b Kakariko$w. If
 you continue north and west past that,
 you'll find my home of Snowpeak. Surely
 not bustling, but a nice home anyhow.
@@ -5109,7 +5110,7 @@ them all!
 dialog{
   id = "hylian_2.0.kakariko",
   text = [[
-I love living in Kakariko because it's
+I love living in $b Kakariko$w because it's
 so centrally located! Sometimes I want
 to wander in the desert for a bit, and
 it's just over the bridge. Or the pretty
@@ -5358,25 +5359,25 @@ I was his final student...$0
 What happened to him, you ask? I'm
 not sure how well I can recall, it
 all happened so fast.$0
-Suddenly a group of dark wizards
+Suddenly a group of $m dark wizards$w
 appeared and grabbed an ancient book
-from a shelf, one called the Book of
-Mudora. They started chanting
+from a shelf, one called the $c Book of
+Mudora$w. They started chanting
 together in the old tongue, but
 before they could finish whatever
 incantation they were conjuring,
 Kasuto arrived in the doorway, raised
 his hands, and with powerful magic of
-his own, shattered the book into
-many pieces. Then before the dark
-ones could react, he scattered the
+his own, shattered the $c book$w into
+many pieces. Then before the $m dark
+ones$w could react, he scattered the
 pieces throughout the land. While
 Kasuto was engrossed in his task, the
-magic clan cast several spells and
+$m magic clan$w cast several spells and
 killed the old man.
-Now it's rumored that the tribe is
+Now it's rumored that the $m tribe$w is
 secretly seeking out those pieces of
-the book, so that they can complete
+the $c book$w, so that they can complete
 whatever dark task that was
 interrupted.
   ]]
@@ -5426,10 +5427,10 @@ dialog{
   skip = "current",
   text = [[
 I see that you already carry
-pieces of that exact book! Whoever
+pieces of that exact $c book$w! Whoever
 guided you to those is quite wise
-indeed. But be warned that the dark
-wizards will not rest until they have
+indeed. But be warned that the $m dark
+wizards$w will not rest until they have
 all the pieces. You must seek them
 out first and put an end to their
 fiendish plot.
@@ -5491,17 +5492,17 @@ stuff? I'll help!
 The circles in the corner are layed
 out kinda like your keyboard!
 (whatever that is).
-The green circle always controls
+The $g green circle$w always controls
 your sword, unless the game is
-paused because then the green circle
+paused because then the $g green circle$w
 lets you save your adventure!
-The orange circle pauses everything
+The $o orange circle$w pauses everything
 and lets you rummage through your
-stuff. The blue circle changes
+stuff. The $b blue circle$w changes
 depending on what's going on!
 (I've never understood that, but my
 brother gets it).
-The grey circles let you assign
+The $s grey circles$w let you assign
 cool items so you can use them
 whenever you want! Don't forget that
 you can customize the keys in the
@@ -5743,14 +5744,14 @@ dialog{
   id = "koshi.0.office",
   skip = "current",
   text = [[
-The major Hylian cities are Castle
-Town, Kakariko, and Ordon - but
-Ordon is mostly Humans and not
+The major Hylian cities are $b Castle
+Town$w, $b Kakariko$w, and $b Ordon$w - but
+$b Ordon$w is mostly Humans and not
 Hylians. There are plenty of other
 cities for other races too, so be
 sure to visit them all! We're even
 setting up a new city for my people -
-we call it Septen Heights.
+we call it $b Septen Heights$w.
   ]]
 }
 
@@ -5827,7 +5828,7 @@ dialog{
   id = "library_shelf_1",
   skip = "current",
   text = [[
-The Ordon people are a peaceful
+The $g Ordon people$w are a peaceful
 agrarian tribe who settled the south
 peninsula of the Hyrule mainland.
 After splitting off from the Hylian
@@ -5835,7 +5836,7 @@ people in order to find their own
 way, it was said that they lost the
 Goddesses' favor and within a
 generation their ears were mutated
-into a rounded form. The Ordon people
+into a rounded form. The $g Ordon people$w
 are known throughout the land for
 their farming and ranching prowess
 and their prize-winning produce,
@@ -5847,7 +5848,7 @@ dialog{
   id = "library_shelf_10",
   skip = "current",
   text = [[
-The Goron people are often seen as
+The $g Goron people$w are often seen as
 the friendliest of all races in
 Hyrule. They generally embrace
 outsiders and have opened their city
@@ -5855,8 +5856,8 @@ to all. Unfortunately, a recent
 plague has wiped out a large portion
 of the Goron population and they are
 still fighting for their survival.
-Due to this, the once famous Goron
-Mines have been repurposed in order
+Due to this, the once famous $b Goron
+Mines$w have been repurposed in order
 to house their dead.
   ]]
 }
@@ -5880,7 +5881,7 @@ drain almost the entirety of Lake
 Hylia, but no one still living has
 seen this done. There is a known
 access to the underground sewers from
-the old Eastern Ruins, and multiple
+the $b old Eastern Ruins$w, and multiple
 other accesses have been rumored.
   ]]
 }
@@ -5889,17 +5890,17 @@ dialog{
   id = "library_shelf_12",
   skip = "current",
   text = [[
-The Zora people were once a friendly
+The $g Zora people$w were once a friendly
 race, but rising tension in Hyrule
 have caused them to shut themselves
 off from the rest of the country.
 Their Domain is now protected by one
 of their soldiers at all times, and
 few outsiders are ever let in. Even
-the Zora Elder, Jabun, has distanced
+the $g Zora Elder, Jabun$w, has distanced
 himself from the rest of the council.$0
-The Lakebed Temple at which the Zora
-pray at the bottom of Lake Hylia has
+The $b Lakebed Temple$w at which the Zora
+pray at the bottom of $b Lake Hylia$w has
 been sealed off from all, including
 the Zora themselves, and it is
 rumored to be crawling with monsters.
@@ -5917,12 +5918,12 @@ dialog{
   id = "library_shelf_13",
   skip = "current",
   text = [[
-The Anouki race are generally a
+The $g Anouki race$w are generally a
 friendly people, but they tend to be
 isolated simply due to their
 geographic location. Few people
 wander up to the icy mountains they
-call home, and so Snowpeak is all
+call home, and so $b Snowpeak$w is all
 but desolate. There is said to be a
 large network of caverns in the area,
 though. It's likely that if they
@@ -5937,7 +5938,7 @@ dialog{
   id = "library_shelf_14",
   skip = "current",
   text = [[
-The Rito people are a new transplant
+The $g Rito $w people are a new transplant
 to Hyrule, but no one (including the
 Rito themselves) are sure how they
 got here. They settled in right away
@@ -5960,7 +5961,7 @@ dialog{
   id = "library_shelf_15",
   skip = "current",
   text = [[
-The Book of Mudora...
+The $c Book of Mudora$w...
   ]]
 }
 
@@ -5968,7 +5969,7 @@ dialog{
   id = "library_shelf_16",
   skip = "current",
   text = [[
-The Dark Tribe...
+The $m Dark Tribe$w...
   ]]
 }
 
@@ -5976,7 +5977,7 @@ dialog{
   id = "library_shelf_17",
   skip = "current",
   text = [[
-The weapons of Light...
+The $y weapons of Light$w...
   ]]
 }
 
@@ -5984,7 +5985,7 @@ dialog{
   id = "library_shelf_18",
   skip = "current",
   text = [[
-The Dark Tribe...
+The $m Dark Tribe$w...
   ]]
 }
 
@@ -5992,7 +5993,7 @@ dialog{
   id = "library_shelf_2",
   skip = "current",
   text = [[
-The western Faron Woods are one of
+The $b western Faron Woods$w are one of
 the largest forested areas in the
 land, and are rumored to have a
 complex system of underground tunnels.
@@ -6006,7 +6007,7 @@ dialog{
   id = "library_shelf_3",
   skip = "current",
   text = [[
-The Monkeys of the forest are a
+The $g Monkeys of the forest$w are a
 group well known for their mischevious
 nature. They often tease or heckle
 people who wander into their area of
@@ -6022,7 +6023,7 @@ dialog{
   id = "library_shelf_4",
   skip = "current",
   text = [[
-The Deku Scrubs are a territorial
+The $g Deku Scrubs$w are a territorial
 race of bush-like forest dwellers
 who are sometimes known as
 businesspeople. They tend to
@@ -6041,7 +6042,7 @@ dialog{
   id = "library_shelf_5",
   skip = "current",
   text = [[
-The Tokay are a recent transplant
+The $g Tokay$w are a recent transplant
 to the area, arriving from an unknown
 area and settling on the beach.
 They are generally a friendly and
@@ -6056,10 +6057,10 @@ dialog{
   id = "library_shelf_6",
   skip = "current",
   text = [[
-Gerudo are a notorious pirate race
+$g Gerudo$w are a notorious pirate race
 who dwell in the desert. They are
-best known as the tribe of the King
-of Evil, Ganondorf. Since the events
+best known as the tribe of the $g King
+of Evil, Ganondorf$w. Since the events
 of the Imprisoning War, the Gerudo
 have been shunned from society,
 relegated to the desert, forcing them
@@ -6092,7 +6093,7 @@ dialog{
   id = "library_shelf_8",
   skip = "current",
   text = [[
-The Hylian people are the primary
+The $g Hylian people$w are the primary
 residents of Hyrule. They are
 generally proficient in magic and
 have pointed ears which allow them
@@ -6105,7 +6106,7 @@ instead. While the Royal Family still
 exists as a figurehead and for
 ceremonial reasons, they hold no
 real power. The capital city of
-Hyrule Castle Town is a bustling
+$b Hyrule Castle Town$w is a bustling
 political hub and home to some
 Hylians, many shops, and quite a
 few secrets.
@@ -6116,16 +6117,15 @@ dialog{
   id = "library_shelf_9",
   skip = "current",
   text = [[
-The thriving city of Kakariko is
+The thriving city of $b Kakariko$w is
 home to a large group of Hylians and
 Humans. It is seen as the cultural
 hub of Hyrule and contains an inn,
 a bar, several shops, a theater and
 many homes. The most famous shop in
 the city is the bomb shop. While it's
-not the only place to get this
-special weapon, it is  the most
-reputable.
+not the only place to get this special
+weapon, it is  the most reputable.
   ]]
 }
 
@@ -6319,21 +6319,6 @@ a bit of a downer sometimes.
 }
 
 dialog{
-  id = "ordona.0.demo",
-  skip = "current",
-  text = [[
-It is I, Ordona, again.
-Listen well, $v. $0
-Congratulations, You have reached the
-end of the demo!$0
-This is only the end of the story
-(for now), so feel free to explore the
-world - there's still plenty more to
-discover!
-  ]]
-}
-
-dialog{
   id = "ordona.0.festival",
   skip = "current",
   text = [[
@@ -6372,8 +6357,8 @@ dialog{
   text = [[
 Wait, $v!
 You haven't gotten all of the parts for
-the Gerudo yet! If you want to help the
-Tokay, you should go back to the pyramid.
+the $g Gerudo$w yet! If you want to help the
+$g Tokay$w, you should go back to the pyramid.
   ]]
 }
 
@@ -6394,8 +6379,8 @@ your quest far sooner than we would like.
 The nearest likely source of darkness
 would be in the deep forest, where open
 trees lead into the deep, dark earth.
-The place was once called Sacred Grove,
-in Faron Woods. You must venture there,
+The place was once called $b Sacred Grove$w,
+in $b Faron Woods$w. You must venture there,
 find the evil that lies in wait and
 vanquish it! Your village home is safe
 for now, but will remain so only as long
@@ -6412,7 +6397,7 @@ There's only one group in Hyrule that
 may know more about this Dark Tribe
 which we've just discovered. The wisest
 of all Hyrule sit on the Council of
-Elders in Castle Town. If you venture to
+Elders in $b Castle Town$w. If you venture to
 the center of the land, you will find
 the castle and your questions may
 be answered...
@@ -6428,7 +6413,7 @@ Have you exhausted your options already?$0
 You have extensively searched the south
 and west of Hyrule, so I would recommend
 traveling north or east. Perhaps the
-friendly Gorons will have advice?
+friendly $g Gorons$w will have advice?
   ]]
 }
 
@@ -6439,13 +6424,13 @@ dialog{
 $v! $0. $0. $0.
 Now that you've seen Hyrule's heart of
 heat, you should cool down in the calm
-waters of Lake Hylia. In the depths lie
+waters of $b Lake Hylia$w. In the depths lie
 a great evil which must be cleansed.
 You first must find a route under the
 waters.$0 You should also know that
 directly north of here, amidst pools of
 lava, lies a portal to the underground
-realm of Subrosia.
+realm of $b Subrosia$w.
   ]]
 }
 
@@ -6456,7 +6441,7 @@ dialog{
 $v! $0. $0. $0.
 The waters have been cleansed, but now
 Hyrule's soul of cold requires your help.
-Snowpeak and the Anouki people lie on the
+Snowpeak and the $g Anouki people$w lie on the
 far end of the world, in the north-west
 edge. They may be able to lead you to
 your next prize.$0
@@ -6469,8 +6454,8 @@ dialog{
   text = [[
 $v! $0. $0. $0.
 Did you find the rope city on your way
-to Snowpeak? In the northern center of
-Hyrule lies Septen Heights, a relatively
+to $b Snowpeak$w? In the northern center of
+Hyrule lies $b Septen Heights$w, a relatively
 new addition to our landscape. A great
 tower has been built by the people there,
 and it seems likely that the prize you
@@ -6484,15 +6469,15 @@ dialog{
   text = [[
 $v! $0. $0. $0.
 You have done well to put back
-together the Book of Mudora!
+together the $c Book of Mudora$w!
 It is now enchanted and complete, so it
 is finally time for you to seek out the
 dark tribe. I'm afraid I can no longer
-see your way, as the darkness will
+see your way, as the $m darkness$w will
 conceal it. I can sense a large
-concentration of dark magic in the
+concentration of $m dark magic$w in the
 eastern woods - what was once referred
-to as the Lost Woods.
+to as the $r Lost Woods$w.
   ]]
 }
 
@@ -6654,12 +6639,12 @@ Yeah, these are pretty big woods!
 South of that ridge and then east
 is the Blacksmith's place.
 Further east will lead you back
-to Ordon Village.$0 South of here
-is the Sacred Grove, with access
+to $b Ordon Village$w.$0 South of here
+is the $b Sacred Grove$w, with access
 to an underground area beneath a
 tree to the west. The beach and
 desert are north of the Grove.$0
-You can't get to Hyrule Field
+You can't get to $b Hyrule Field$w
 directly from here because of the
 divide just to the north.$0
 Be careful if you go directly
@@ -6676,24 +6661,24 @@ This whole field is tricky to
 navigate because it's so big!
 The trick is to watch your
 surroundings carefully...$0
-South of here is the Northern
-Faron Woods and then Ordon Village.
+South of here is the $b Northern
+Faron Woods$w and then $b Ordon Village$w.
 The pointy-looking trees only
 grow in the south, so you'll know
-you've reached Hyrule Field,
+you've reached $b Hyrule Field$w,
 which is north of here, once the
 trees change shape to the funny
 rounded ones.$0
-If you want to get to Lake Hylia
+If you want to get to $b Lake Hylia$w
 in the west, just follow the grey
 statues with the faces on them.
-If you'd prefer the Ruins in the
-east, follow the brown statues
+If you'd prefer the $b Ruins in the
+east$w, follow the brown statues
 with the faces on them.$0
 Why are there so many face statues?$0
-Finally, the great Hyrule Castle
-Town is north of Hyrule Field, and
-Kakariko City is north past that.$0
+Finally, the great $b Hyrule Castle
+Town$w is north of $b Hyrule Field$w, and
+$b Kakariko City$w is north past that.$0
 Got it?
   ]]
 }
@@ -6703,23 +6688,23 @@ dialog{
   skip = "current",
   text = [[
 Good, you found your way to 
-Castle Town! This is almost in
-the center of Hyrule. Kakariko,
-Death Mountain and Snowpeak
-are to the north. Lon Lon Ranch
+$b Castle Town$w! This is almost in
+the center of Hyrule. $b Kakariko$w,
+$b Death Mountain$w and $b Snowpeak$w
+are to the north. $b Lon Lon Ranch$w
 is directly to the west, with
-Lake Hylia beyond that and the
+$b Lake Hylia$w beyond that and the
 desert on the other side.$0
-The now abandoned Hidden Village
+The now abandoned $b Hidden Village$w
 is directly to the east, through
-the trees. Then is Zora's Domain
-and the rest of Death Mountain
-including Goron City.$0
+the trees. Then is $b Zora's Domain$w
+and the rest of $b Death Mountain$w
+including $b Goron City.$w$0
 Oh! I almost forgot the coolest
 thing! You know about warp points?$0
 Well, somewhere in town is an
-instrument known as the Ocarina
-of Wind which will allow you to
+instrument known as the $r Ocarina
+of Wind$w which will allow you to
 instantly transport to different
 places. In fact, the structure
 with the cardinal directions up
@@ -6743,11 +6728,11 @@ end is a really old pyramid thing.
 I've seen a few Gerudo tents on the
 west end of the desert, and if you go
 far enough east you'll hit the waters
-of Lake Hylia. If you could swim, you
+of $b Lake Hylia$w. If you could swim, you
 could probably get there from the beach
 too.$0 If you cross the bridge at the
 end of the desert you'll end up at the
-City of Kakariko. I'd recommend chatting
+$b City of Kakariko$w. I'd recommend chatting
 with the guy in the house near there too.
   ]]
 }
@@ -7690,7 +7675,7 @@ dialog{
   text = [[
 Pumpkins for sale!
 Please stay out of private patch.
-See Pim for details.
+See $g Pim$w for details.
   ]]
 }
 
@@ -8058,7 +8043,7 @@ dialog{
   id = "tern.0.festival",
   skip = "current",
   text = [[
-This here's the Ordon Ranch. If
+This here's the $b Ordon Ranch$w. If
 you come back in a bit, I might
 have some milkin' contests goin'!
   ]]
@@ -8513,13 +8498,13 @@ dialog{
 Why hello $v!
 It's good to see you again, but what
 brings you to the castle, I wonder?$0
-What's that?$0 Book of Mudora?$0
+What's that?$0 $c Book of Mudora$w?$0
 I've heard legends which speak of
 the book, but I know none of the
 details. The book was said to be
 written by a man very close to an
 ancient Royal Family, so maybe you
-should ask Princess Zelda what
+should ask $g Princess Zelda$w what
 she knows.
   ]]
 }
@@ -8538,11 +8523,11 @@ dialog{
   id = "ulo.3.ordon",
   skip = "current",
   text = [[
-Since our beloved Zelda is gone,
+Since our beloved $g Zelda$w is gone,
 the council has temporarily disbanded.
 We'll continue any necessary work from
 our respective villages or the Council
-office in Castle Town.$0
+office in $b Castle Town.$w$0
 I must say, it's good to be home!
   ]]
 }
@@ -8551,12 +8536,11 @@ dialog{
   id = "ulo.4.ordon",
   skip = "current",
   text = [[
-Don't know where to go next? You
-should chat with Deacon, the
-lumberjack who lives just north of
-town. He knows these parts like the
-back of his hand, and if anything's
-amiss, he'd know!
+Don't know where to go next? You should
+chat with $g Deacon$w, the lumberjack
+who lives just north of town. He knows
+these parts like the back of his hand,
+and if anything's amiss, he'd know!
   ]]
 }
 
@@ -8572,7 +8556,7 @@ In fact, it can even be used to
 manipulate the flow of water in certain
 places! I seem to recall there being
 a certain switch which can even change
-the water level of Lake Hylia, but I'm
+the water level of $b Lake Hylia$w, but I'm
 sure it hasn't been used in a long time.
   ]]
 }
@@ -8929,8 +8913,8 @@ entrance though. I've heard of a
 number of magical artifacts in a
 large pyramid in the desert - maybe
 something there can help you. Get
-there through Faron Woods and the
-Beach or via Kakariko City to the
+there through $b Faron Woods$w and the
+$b Beach$w or via $b Kakariko City$w to the
 north.
 
 ]]
@@ -8951,12 +8935,12 @@ dialog{
   text = [[
 He also told me about your quest.$0
 To be honest I was unaware of the
-theft of the book until Isan
+theft of the $c book$w until $g Isan$w
 informed me. You see, given my
 family's history with that book,
 I should have sensed that something
-was amiss. I expect that powerful
-magic is behind all of this.$0
+was amiss. I expect that $m powerful
+magic$w is behind all of this.$0
 What?$0 You want to know how the Book
 is connected to my family? Why, we wrote
 it many, many generations ago! The book
@@ -8964,10 +8948,10 @@ was originally tasked as a living
 history of the land, and was enchanted
 in order to...$0 Wait$0.$0.$0.
 I can feel a powerful force headed this
-way... An evil power I believe will be
+way... An $m evil power$w I believe will be
 here momentarily.$0 I also believe that
 if they find you here with the pieces
-of that Book you possess, it is unlikely
+of that $c Book$w you possess, it is unlikely
 that you'll escape alive. Get away from
 the castle as fast as you can!
   ]]
@@ -8977,12 +8961,12 @@ dialog{
   id = "zirna.0.council",
   skip = "current",
   text = [[
-Princess Zelda!$0 If it isn't the leader
+$g Princess Zelda$w!$0 If it isn't the leader
 of both the old Royal Family and the
 Council of Elders!$0
 The woman who has all the answers...$0
 As you likely know, I'm here for a
-particular tome. A very important book,
+particular $c tome$w. A very important $c book$w,
 of which we believe you know where to
 find the pieces.
   ]]
@@ -8994,7 +8978,7 @@ dialog{
   text = [[
 Don't try to be brave, young
 Princess... If you don't tell us the
-location of the book, then we'll just
+location of the $c book$w, then we'll just
 have to obtain the information we
 require from your encyclopedic mind...
 Come Princess, off to the Sanctum
