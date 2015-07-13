@@ -6,7 +6,7 @@ local game = map:get_game()
 --------------------------------------------------------------------------------------
 
 if game:get_value("i1030")==nil then game:set_value("i1030", 0) end
-local torch_overlay == nil
+local torch_overlay = nil
 
 function map:on_started(destination)
   if game:get_value("b1134") then
