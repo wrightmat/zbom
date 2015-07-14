@@ -26,6 +26,32 @@ local function initialize_destructibles()
   end
 end
 
+-- Initialize sensor behavior specific to this quest.
+local function initialize_sensor()
+
+  local sensor_meta = sol.main.get_metatable("sensor")
+
+  function sensor_meta:on_activated()
+
+    local game = self:get_game()
+    local hero = self:get_map():get_hero()
+    local name = self:get_name()
+    local dungeon = game:get_dungeon()
+
+    -- Sensors prefixed by "dungeon_room_N" save exploration state of room "N" of current dungeon floor.
+    -- Optional treasure savegame value appended to end will play signal chime if value is false and hero has compass in inventory. "dungeon_room_N_bxxx"
+    local room, signal = name:match("^dungeon_room_(%d+)_(%U%d+)")
+    if room ~= nil then
+      game:set_explored_dungeon_room(nil, nil, tonumber(room))
+      if signal ~= nil and not game:get_value(signal) then
+        if game:has_dungeon_compass(game:get_dungeon_index()) then
+          sol.audio.play_sound("signal")
+        end
+      end
+    end
+  end
+end
+
 -- Initializes the behavior of enemies.
 local function initialize_enemies()
   -- Enemies: redefine the damage of the hero's sword.
@@ -52,6 +78,7 @@ end
 local function initialize_entities()
   initialize_destructibles()
   initialize_enemies()
+  initialize_sensor()
 end
 
 local function initialize_maps()

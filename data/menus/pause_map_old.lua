@@ -13,18 +13,25 @@ function map_submenu:on_started()
 
   submenu.on_started(self)
 
+  local width, height = sol.video.get_quest_size()
+  local center_x, center_y = width / 2, height / 2
+
   -- Common to dungeons and outside dungeons.
   self.hero_head_sprite = sol.sprite.create("menus/hero_head")
   self.hero_head_sprite:set_animation("tunic" .. self.game:get_item("tunic"):get_variant())
+  self.hero_head_sprite:set_xy(center_x - 160, center_y - 120)
   self.up_arrow_sprite = sol.sprite.create("menus/arrow")
   self.up_arrow_sprite:set_direction(1)
   self.down_arrow_sprite = sol.sprite.create("menus/arrow")
   self.down_arrow_sprite:set_direction(3)
-
   self.dungeon = self.game:get_dungeon()
+
   if self.dungeon == nil then
     -- Not in a dungeon: show a world map.
     self:set_caption("map.caption.world_map")
+
+    self.up_arrow_sprite:set_xy(center_x - 64, center_y - 65)
+    self.down_arrow_sprite:set_xy(center_x - 64, center_y + 68)
 
     local hero_absolute_x, hero_absolute_y = self.game:get_map():get_location()
     if self.game:is_in_outside_world() then
@@ -44,21 +51,25 @@ function map_submenu:on_started()
       -- if in South Hyrule with World Map, then show the map
       map_shown = true
       self.world_minimap_img = sol.surface.create("menus/outside_world_map.png")
+      self.world_minimap_img:set_xy(center_x - 112, center_y - 61)
       self.world_minimap_visible_xy.y = math.min(outside_world_minimap_size.height - 133, math.max(0, hero_minimap_y - 65))
     elseif self.game:get_item("world_map"):get_variant() > 1 and self.game:get_map():get_world() == "outside_subrosia" then
       -- if in Subrosia with upgraded World Map, then show the map
       map_shown = true
       self.world_minimap_img = sol.surface.create("menus/outside_world_map_2.png")
+      self.world_minimap_img:set_xy(center_x - 112, center_y - 61)
       self.world_minimap_visible_xy.y = math.min(outside_world_minimap_size.height - 133, math.max(0, hero_minimap_y - 65))
     elseif self.game:get_item("world_map"):get_variant() > 2 and self.game:get_map():get_world() == "outside_north" then
       -- if in North Hyrule with upgraded World Map, then show the map
       map_shown = true
       self.world_minimap_img = sol.surface.create("menus/outside_world_map_3.png")
+      self.world_minimap_img:set_xy(center_x - 112, center_y - 61)
       self.world_minimap_visible_xy.y = math.min(outside_world_minimap_size.height - 133, math.max(0, hero_minimap_y - 65))
     else
       -- if World Map not in inventory, show clouds in map screen
       map_shown = false
       self.world_minimap_img = sol.surface.create("menus/outside_world_clouds.png")
+      self.world_minimap_img:set_xy(center_x - 112, center_y - 61)
       self.world_minimap_visible_xy.y = 0
     end
 
@@ -71,6 +82,7 @@ function map_submenu:on_started()
 
     -- Item icons.
     self.dungeon_map_background_img = sol.surface.create("menus/dungeon_map_background.png")
+    self.dungeon_map_background_img:set_xy(center_x - 112, center_y - 61)
     self.dungeon_map_icons_img = sol.surface.create("menus/dungeon_map_icons.png")
     self.small_keys_text = sol.text_surface.create{
       font = "white_digits",
@@ -78,9 +90,11 @@ function map_submenu:on_started()
       vertical_alignment = "top",
       text = self.game:get_num_small_keys()
     }
+    self.small_keys_text:set_xy(center_x - 20, center_y + 60)
 
     -- Floors.
     self.dungeon_floors_img = sol.surface.create("floors.png", true)
+    self.dungeon_floors_img:set_xy(center_x - 160, center_y - 120)
     self.hero_floor = self.game:get_map():get_floor()
     self.nb_floors = self.dungeon.highest_floor - self.dungeon.lowest_floor + 1
     self.nb_floors_displayed = math.min(7, self.nb_floors)
@@ -102,13 +116,14 @@ function map_submenu:on_started()
       end
     end
 
+    self.up_arrow_sprite:set_xy(center_x - 71, center_y - 31)
+    self.down_arrow_sprite:set_xy(center_x - 71, center_y - 64)
+
     -- Minimap.
     self.dungeon_map_img = sol.surface.create(123, 119)
-    self.dungeon_map_spr = sol.sprite.create(
-      "menus/dungeon_maps/map" .. self.dungeon_index)
+    self.dungeon_map_img:set_xy(center_x - 17, center_y - 54)
     self:load_dungeon_map_image()
   end
-
 end
 
 function map_submenu:on_command_pressed(command)
@@ -215,8 +230,8 @@ function map_submenu:draw_world_map(dst_surface)
 
   -- Draw the minimap.
   self.world_minimap_img:draw_region(
-      self.world_minimap_visible_xy.x, self.world_minimap_visible_xy.y, 255, 133,
-      dst_surface, 48, 59)
+      self.world_minimap_visible_xy.x, self.world_minimap_visible_xy.y, 225, 133,
+      dst_surface)
 
   if map_shown then
     -- Draw the hero's position.
@@ -227,13 +242,13 @@ function map_submenu:draw_world_map(dst_surface)
 
     -- Draw the arrows.
     if self.world_minimap_visible_xy.y > 0 then
-      self.up_arrow_sprite:draw(dst_surface, 96, 55)
-      self.up_arrow_sprite:draw(dst_surface, 211, 55)
+      self.up_arrow_sprite:draw(dst_surface)
+      self.up_arrow_sprite:draw(dst_surface, 115, 0)
     end
 
     if self.world_minimap_visible_xy.y < outside_world_minimap_size.height - 134 then
-      self.down_arrow_sprite:draw(dst_surface, 96, 188)
-      self.down_arrow_sprite:draw(dst_surface, 211, 188)
+      self.down_arrow_sprite:draw(dst_surface)
+      self.down_arrow_sprite:draw(dst_surface, 115, 0)
     end
   end
 end
@@ -241,7 +256,7 @@ end
 function map_submenu:draw_dungeon_map(dst_surface)
 
   -- Background.
-  self.dungeon_map_background_img:draw(dst_surface, 48, 59)
+  self.dungeon_map_background_img:draw(dst_surface)
 
   -- Items.
   self:draw_dungeon_items(dst_surface)
@@ -254,37 +269,42 @@ function map_submenu:draw_dungeon_map(dst_surface)
       and self.selected_floor == self.hero_floor then
     self.hero_point_sprite:draw(self.dungeon_map_img, self.hero_x, self.hero_y)
   end
-  self.dungeon_map_img:draw(dst_surface, 143, 66)
+  self.dungeon_map_img:draw(dst_surface)
 end
 
 function map_submenu:draw_dungeon_items(dst_surface)
 
+  local width, height = sol.video.get_quest_size()
+  local x, y = width / 2 - 110, height / 2 + 48
+
   -- Map.
   if self.game:has_dungeon_map() then
-    self.dungeon_map_icons_img:draw_region(0, 0, 17, 17, dst_surface, 50, 168)
+    self.dungeon_map_icons_img:draw_region(0, 0, 17, 17, dst_surface, x, y)
   end
 
   -- Compass.
   if self.game:has_dungeon_compass() then
-    self.dungeon_map_icons_img:draw_region(17, 0, 17, 17, dst_surface, 69, 168)
+    self.dungeon_map_icons_img:draw_region(17, 0, 17, 17, dst_surface, x + 19, y)
   end
 
   -- Big key.
   if self.game:has_dungeon_big_key() then
-    self.dungeon_map_icons_img:draw_region(34, 0, 17, 17, dst_surface, 88, 168)
+    self.dungeon_map_icons_img:draw_region(34, 0, 17, 17, dst_surface, x + 38, y)
   end
 
   -- Boss key.
   if self.game:has_dungeon_boss_key() then
-    self.dungeon_map_icons_img:draw_region(51, 0, 17, 17, dst_surface, 107, 168)
+    self.dungeon_map_icons_img:draw_region(51, 0, 17, 17, dst_surface, x + 57, y)
   end
 
   -- Small keys.
-  self.dungeon_map_icons_img:draw_region(68, 0, 9, 17, dst_surface, 126, 168)
-  self.small_keys_text:draw(dst_surface, 140, 180)
+  self.dungeon_map_icons_img:draw_region(68, 0, 9, 17, dst_surface, x + 76, y)
+  self.small_keys_text:draw(dst_surface)
 end
 
 function map_submenu:draw_dungeon_floors(dst_surface)
+
+  local width, height = sol.video.get_quest_size()
 
   -- Draw some floors.
   local src_x = 96
@@ -318,21 +338,23 @@ function map_submenu:draw_dungeon_floors(dst_surface)
 
   -- Draw the boss icon if any.
   if self.game:has_dungeon_compass()
-      and self.boss_floor ~= nil
-      and self.boss_floor >= lowest_floor_displayed
-      and self.boss_floor <= highest_floor_displayed then
+      and self.dungeon.boss ~= nil
+      and not self.game:get_value(self.dungeon.boss.savegame_variable)
+      and self.dungeon.boss.floor ~= nil
+      and self.dungeon.boss.floor >= lowest_floor_displayed
+      and self.dungeon.boss.floor <= self.highest_floor_displayed then
 
-    dst_y = old_dst_y + (self.highest_floor_displayed - self.boss_floor) * 12 + 3
-    self.dungeon_map_icons_img:draw_region(78, 0, 8, 8, dst_surface, 113, dst_y)
+    dst_y = old_dst_y + (self.highest_floor_displayed - self.dungeon.boss.floor) * 12 + 3
+    self.dungeon_map_icons_img:draw_region(78, 0, 8, 8, dst_surface, width / 2 - 47, height / 2 - 120 + dst_y)
   end
 
   -- Draw the arrows.
   if lowest_floor_displayed > self.dungeon.lowest_floor then
-    down_arrow_sprite:draw(dst_surface, 89, 89)
+    self.down_arrow_sprite:draw(dst_surface, 89, 89)
   end
 
   if self.highest_floor_displayed < self.dungeon.highest_floor then
-    down_arrow_sprite:draw(dst_surface, 89, 56)
+    self.up_arrow_sprite:draw(dst_surface, 89, 56)
   end
 end
 
@@ -363,26 +385,12 @@ end
 function map_submenu:load_dungeon_map_image()
 
   self.dungeon_map_img:clear()
-
-  local floor_animation = tostring(self.selected_floor)
-  self.dungeon_map_spr:set_animation(floor_animation)
-
   if self.game:has_dungeon_map() then
     -- Load the image of this floor.
-    self.dungeon_map_spr:set_direction(0) -- background
-    self.dungeon_map_spr:draw(self.dungeon_map_img)
-  end
-
-  -- For each rooms:
-  for i = 1, self.dungeon_map_spr:get_num_directions(floor_animation) - 1 do
-    -- If the room is explored.
-    if self.game:has_explored_dungeon_room(
-      self.dungeon_index, self.selected_floor, i
-    ) then
-      -- Load the image of the room.
-      self.dungeon_map_spr:set_direction(i)
-      self.dungeon_map_spr:draw(self.dungeon_map_img)
-    end
+    local floor_map_img = sol.surface.create(
+        "menus/dungeon_maps/map" .. self.dungeon_index ..
+        "_" .. self.selected_floor .. ".png")
+    floor_map_img:draw(self.dungeon_map_img)
   end
 
   if self.game:has_dungeon_compass() then
@@ -405,7 +413,7 @@ function map_submenu:load_dungeon_map_image()
         and boss.savegame_variable ~= nil
         and not self.game:get_value(boss.savegame_variable) then
       -- Boss coordinates are already relative to its floor.
-      local dst_x, dst_y = self:to_dungeon_minimap_coordinates(boss.x, boss.y)
+      local dst_x, dst_y = self:to_dungeon_minimap_coordinates(boss.x, boss.y) 
       dst_x = dst_x - 4
       dst_y = dst_y - 4
       self.dungeon_map_icons_img:draw_region(78, 0, 8, 8,
@@ -428,11 +436,11 @@ function map_submenu:load_dungeon_map_image()
         if chest.big then
           dst_x = dst_x - 3
           self.dungeon_map_icons_img:draw_region(78, 12, 6, 4,
-          self.dungeon_map_img, dst_x, dst_y)
+              self.dungeon_map_img, dst_x, dst_y)
         else
           dst_x = dst_x - 2
           self.dungeon_map_icons_img:draw_region(78, 8, 4, 4,
-          self.dungeon_map_img, dst_x, dst_y)
+              self.dungeon_map_img, dst_x, dst_y)
         end
       end
     end
@@ -458,7 +466,7 @@ function map_submenu:load_chests()
       current_map_y = map_properties.y
     end,
 
-    chest = function(chest_properties)
+    chest = function(chest_properties) 
       -- Get the info about this chest and store it into the dungeon table.
       if current_floor ~= nil then
         dungeon.chests[#dungeon.chests + 1] = {
@@ -495,3 +503,4 @@ function map_submenu:load_chests()
 end
 
 return map_submenu
+

@@ -1671,9 +1671,12 @@ dialog{
   skip = "current",
   text = [[
 You found a $r Compass$w! It
-indicates your position on
-a Map, but for some reason
-only works in this dungeon.
+indicates your position on a
+Map, but only works in this
+dungeon. This one has a special
+feature - when you enter a room
+with a hidden treasure, a sound
+will play!
   ]]
 }
 
@@ -1837,7 +1840,9 @@ dialog{
   skip = "current",
   text = [[
 You found a $r dungeon Map$w!
-Use it to navigate difficult areas.
+Use it to navigate difficult areas
+and mark where you have and haven't
+been!
   ]]
 }
 

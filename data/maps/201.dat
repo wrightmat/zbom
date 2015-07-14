@@ -6047,6 +6047,96 @@ teletransporter{
   destination = "from_above_fall",
 }
 
+sensor{
+  name = "dungeon_room_1",
+  layer = 0,
+  x = 168,
+  y = 749,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_2",
+  layer = 0,
+  x = 168,
+  y = 509,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_3",
+  layer = 0,
+  x = 144,
+  y = 213,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_4",
+  layer = 0,
+  x = 392,
+  y = 421,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_5",
+  layer = 0,
+  x = 728,
+  y = 421,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_6",
+  layer = 0,
+  x = 1280,
+  y = 421,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_7",
+  layer = 0,
+  x = 1360,
+  y = 589,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_8",
+  layer = 0,
+  x = 1560,
+  y = 725,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_9",
+  layer = 0,
+  x = 1896,
+  y = 661,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_10",
+  layer = 0,
+  x = 2024,
+  y = 373,
+  width = 32,
+  height = 16,
+}
+
 tile{
   layer = 1,
   x = 128,

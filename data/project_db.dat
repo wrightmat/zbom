@@ -405,10 +405,18 @@ sprite{ id = "hero/tunic3", description = "Hero: Tunic 3 (blue)" }
 sprite{ id = "hud/action_icon_flip", description = "HUD: Action icon flip" }
 sprite{ id = "hud/dialog_box_message_end", description = "HUD: Dialog box message end" }
 sprite{ id = "hud/empty_heart", description = "HUD: Empty heart" }
+sprite{ id = "hud/gameover_fade", description = "Game Over Fade" }
 sprite{ id = "hud/magic_bar", description = "HUD: Magic bar" }
 sprite{ id = "hud/pause_icon_flip", description = "HUD: Pause icon flip" }
 sprite{ id = "hud/sword_icon_flip", description = "HUD: Sword icon flip" }
 sprite{ id = "menus/arrow", description = "Menus: Arrow" }
+sprite{ id = "menus/dungeon_maps/map1", description = "Dungeon Map: Ruins/Sewers" }
+sprite{ id = "menus/dungeon_maps/map2", description = "Dungeon Map: Sacred Grove" }
+sprite{ id = "menus/dungeon_maps/map3", description = "Dungeon Map: Abandoned Pyramid" }
+sprite{ id = "menus/dungeon_maps/map4", description = "Dungeon Map: Goron Mausoleum" }
+sprite{ id = "menus/dungeon_maps/map5", description = "Dungeon Map: Lakebed Lair" }
+sprite{ id = "menus/dungeon_maps/map6", description = "Dungeon Map: Snowpeak Caverns" }
+sprite{ id = "menus/dungeon_maps/map7", description = "Dungeon Map: Wind Tower" }
 sprite{ id = "menus/hero_head", description = "Menus: Hero Head" }
 sprite{ id = "menus/hero_point", description = "Menus: Hero Point" }
 sprite{ id = "menus/options_cursor", description = "Menus: Options cursor" }
@@ -626,12 +634,14 @@ sound{ id = "people_talking", description = "people_talking" }
 sound{ id = "picked_item", description = "picked_item" }
 sound{ id = "picked_rupee", description = "picked_rupee" }
 sound{ id = "picked_small_key", description = "picked_small_key" }
+sound{ id = "poe_soul", description = "poe_soul" }
 sound{ id = "running", description = "running" }
 sound{ id = "running_obstacle", description = "running_obstacle" }
 sound{ id = "rupee_counter", description = "rupee_counter" }
 sound{ id = "rupee_counter_end", description = "rupee_counter_end" }
 sound{ id = "secret", description = "secret" }
 sound{ id = "shield", description = "shield" }
+sound{ id = "signal", description = "signal" }
 sound{ id = "smashing", description = "smashing" }
 sound{ id = "spark", description = "spark" }
 sound{ id = "splash", description = "splash" }
@@ -664,6 +674,7 @@ sound{ id = "water_drain", description = "water_drain" }
 sound{ id = "water_drain_begin", description = "water_drain_begin" }
 sound{ id = "water_fill", description = "water_fill" }
 sound{ id = "water_fill_begin", description = "water_fill_begin" }
+sound{ id = "wind", description = "wind" }
 sound{ id = "world_warp", description = "world_warp" }
 sound{ id = "wrong", description = "wrong" }
 sound{ id = "zora", description = "zora" }

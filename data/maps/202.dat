@@ -6120,6 +6120,15 @@ tile{
   pattern = "556",
 }
 
+sensor{
+  name = "dungeon_room_8",
+  layer = 0,
+  x = 1064,
+  y = 973,
+  width = 32,
+  height = 16,
+}
+
 teletransporter{
   name = "warp_outside",
   layer = 0,
@@ -7526,6 +7535,150 @@ npc{
   subtype = 0,
   sprite = "entities/torch",
   behavior = "item#lamp",
+}
+
+sensor{
+  name = "dungeon_room_1a_b1786",
+  layer = 0,
+  x = 88,
+  y = 237,
+  width = 48,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_1b",
+  layer = 0,
+  x = 1032,
+  y = 109,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_2a",
+  layer = 0,
+  x = 1128,
+  y = 109,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_2b",
+  layer = 0,
+  x = 2120,
+  y = 237,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_2c",
+  layer = 0,
+  x = 2168,
+  y = 213,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_3",
+  layer = 0,
+  x = 136,
+  y = 413,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_5b_b1040",
+  layer = 0,
+  x = 2120,
+  y = 413,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_5a_b1040",
+  layer = 0,
+  x = 1968,
+  y = 1005,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_5c_b1040",
+  layer = 0,
+  x = 1912,
+  y = 461,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_6_b1041",
+  layer = 0,
+  x = 1800,
+  y = 461,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_7",
+  layer = 0,
+  x = 1704,
+  y = 765,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_4",
+  layer = 0,
+  x = 312,
+  y = 1005,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_9",
+  layer = 0,
+  x = 1064,
+  y = 765,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_10",
+  layer = 0,
+  x = 1288,
+  y = 685,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_11",
+  layer = 0,
+  x = 1368,
+  y = 525,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_13",
+  layer = 0,
+  x = 800,
+  y = 461,
+  width = 16,
+  height = 32,
 }
 
 tile{
