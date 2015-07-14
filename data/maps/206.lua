@@ -61,10 +61,14 @@ function switch_puzzle_1:on_inactivated()
 end
 
 function switch_puzzle_2:on_activated()
-  map:open_doors("door_puzzle")
+  map:move_camera(352, 400, 250, function()
+    map:open_doors("door_puzzle")
+  end, 500, 500)
 end
 function switch_puzzle_2:on_inactivated()
-  map:close_doors("door_puzzle")
+  map:move_camera(352, 400, 300, function()
+    map:close_doors("door_puzzle")
+  end, 400, 400)
 end
 
 for enemy in map:get_entities("aquadracini") do

@@ -50,11 +50,12 @@ function map:on_started(destination)
       -- after a while, suggest the hero visit the mausoleum
       -- (this timer should persist and trigger as long as the
       -- hero's on a map that has the ghost present)
-      dialog_timer = sol.timer.start(game, 20000, function()
+      dialog_timer = sol.timer.start(game, 60000, function()
         if npc_goron_ghost ~= nil then
-	  sol.audio.play_sound("ghost")
-	  game:start_dialog("osgor.1.ghost", game:get_player_name())
-	end
+	sol.audio.play_sound("ghost")
+	game:start_dialog("osgor.1.ghost", game:get_player_name())
+          return true
+        end
       end)
     end)
   elseif game:get_value("i1029") == 5 then

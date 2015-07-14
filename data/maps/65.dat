@@ -6637,7 +6637,7 @@ teletransporter{
   layer = 0,
   x = 48,
   y = 1120,
-  width = 1072,
+  width = 720,
   height = 16,
   transition = "scrolling",
   destination_map = "47",
@@ -8343,6 +8343,18 @@ enemy{
   direction = 0,
   breed = "lynel",
   treasure_name = "random_mountain",
+}
+
+teletransporter{
+  name = "to_G7_2",
+  layer = 0,
+  x = 976,
+  y = 1120,
+  width = 144,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "47",
+  destination = "_side",
 }
 
 tile{

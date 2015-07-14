@@ -9699,6 +9699,46 @@ wall{
   stops_hero = true,
 }
 
+enemy{
+  name = "leever_1",
+  layer = 0,
+  x = 648,
+  y = 501,
+  direction = 0,
+  breed = "leever_purple",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "leever_2",
+  layer = 0,
+  x = 1096,
+  y = 1005,
+  direction = 0,
+  breed = "leever_purple",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "leever_3",
+  layer = 0,
+  x = 1160,
+  y = 885,
+  direction = 0,
+  breed = "leever_purple",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "leever_4",
+  layer = 0,
+  x = 1224,
+  y = 989,
+  direction = 0,
+  breed = "leever_purple",
+  treasure_name = "random",
+}
+
 tile{
   layer = 1,
   x = 416,

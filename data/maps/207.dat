@@ -17407,20 +17407,20 @@ tile{
 }
 
 chest{
+  name = "chest_key_3",
   layer = 0,
   x = 1344,
   y = 629,
-  name = "chest_key_3",
   treasure_name = "small_key",
   treasure_savegame_variable = "b1123",
   sprite = "entities/chest",
 }
 
 door{
+  name = "door_bomb_2",
   layer = 0,
   x = 1352,
   y = 392,
-  name = "door_bomb_2",
   direction = 1,
   sprite = "entities/door_very_weak_wall",
   savegame_variable = "b1141",
@@ -17428,10 +17428,10 @@ door{
 }
 
 door{
+  name = "door_bomb_1",
   layer = 0,
   x = 1352,
   y = 344,
-  name = "door_bomb_1",
   direction = 3,
   sprite = "entities/door_very_weak_wall",
   savegame_variable = "b1141",
@@ -17439,24 +17439,20 @@ door{
 }
 
 custom_entity{
+  name = "quicksand_1",
   layer = 0,
   x = 1824,
   y = 1264,
-  width = 16,
-  height = 16,
-  name = "quicksand_1",
   direction = 3,
   sprite = "entities/quicksand",
   model = "quicksand",
 }
 
 custom_entity{
+  name = "quicksand_2",
   layer = 0,
   x = 1824,
   y = 1416,
-  width = 16,
-  height = 16,
-  name = "quicksand_2",
   direction = 3,
   sprite = "entities/quicksand",
   model = "quicksand",
@@ -17490,19 +17486,19 @@ destructible{
 }
 
 destination{
+  name = "from_above",
   layer = 0,
   x = 1936,
   y = 853,
-  name = "from_above",
   direction = 3,
   default = true,
 }
 
 enemy{
+  name = "boss_plasmarine_blue",
   layer = 0,
   x = 320,
   y = 1204,
-  name = "boss_plasmarine_blue",
   direction = 3,
   breed = "plasmarine_blue",
   rank = 2,
@@ -17511,10 +17507,10 @@ enemy{
 }
 
 enemy{
+  name = "boss_plasmarine_red",
   layer = 0,
   x = 504,
   y = 1196,
-  name = "boss_plasmarine_red",
   direction = 3,
   breed = "plasmarine_red",
   rank = 2,
@@ -17523,10 +17519,10 @@ enemy{
 }
 
 door{
+  name = "door_key_boss_1",
   layer = 0,
   x = 1128,
   y = 920,
-  name = "door_key_boss_1",
   direction = 3,
   sprite = "entities/door_boss_key",
   savegame_variable = "b1132",
@@ -17536,10 +17532,10 @@ door{
 }
 
 door{
+  name = "door_key_boss_2",
   layer = 0,
   x = 1128,
   y = 968,
-  name = "door_key_boss_2",
   direction = 1,
   sprite = "entities/door_boss_key",
   savegame_variable = "b1132",
@@ -17549,30 +17545,30 @@ door{
 }
 
 dynamic_tile{
+  name = "water_stream",
   layer = 0,
   x = 1320,
   y = 400,
+  pattern = "682",
   width = 16,
   height = 16,
-  name = "water_stream",
-  pattern = "682",
   enabled_at_start = true,
 }
 
 door{
+  name = "shutter_1",
   layer = 0,
   x = 1048,
   y = 600,
-  name = "shutter_1",
   direction = 2,
   sprite = "entities/door_shutter",
 }
 
 stream{
+  name = "water_stream_1",
   layer = 0,
   x = 1344,
   y = 597,
-  name = "water_stream_1",
   direction = 6,
   sprite = "entities/stream_water",
   speed = 96,
@@ -17580,10 +17576,10 @@ stream{
 }
 
 stream{
+  name = "water_stream_2",
   layer = 0,
   x = 1344,
   y = 613,
-  name = "water_stream_2",
   direction = 6,
   sprite = "entities/stream_water",
   speed = 96,
@@ -17591,10 +17587,10 @@ stream{
 }
 
 stream{
+  name = "water_stream_3",
   layer = 0,
   x = 1344,
   y = 629,
-  name = "water_stream_3",
   direction = 6,
   sprite = "entities/stream_water",
   speed = 96,
@@ -17602,10 +17598,10 @@ stream{
 }
 
 stream{
+  name = "water_stream_4",
   layer = 0,
   x = 1344,
   y = 645,
-  name = "water_stream_4",
   direction = 6,
   sprite = "entities/stream_water",
   speed = 96,
@@ -17613,10 +17609,10 @@ stream{
 }
 
 stream{
+  name = "water_stream_5",
   layer = 0,
   x = 1344,
   y = 661,
-  name = "water_stream_5",
   direction = 6,
   sprite = "entities/stream_water",
   speed = 96,
@@ -17624,10 +17620,10 @@ stream{
 }
 
 stream{
+  name = "water_stream_6",
   layer = 0,
   x = 1344,
   y = 677,
-  name = "water_stream_6",
   direction = 6,
   sprite = "entities/stream_water",
   speed = 96,
@@ -17635,10 +17631,10 @@ stream{
 }
 
 stream{
+  name = "water_stream_7",
   layer = 0,
   x = 1344,
   y = 693,
-  name = "water_stream_7",
   direction = 6,
   sprite = "entities/stream_water",
   speed = 96,
@@ -17646,10 +17642,10 @@ stream{
 }
 
 stream{
+  name = "water_stream_8",
   layer = 0,
   x = 1344,
   y = 709,
-  name = "water_stream_8",
   direction = 6,
   sprite = "entities/stream_water",
   speed = 96,
@@ -17657,10 +17653,10 @@ stream{
 }
 
 stream{
+  name = "water_stream_9",
   layer = 0,
   x = 1344,
   y = 725,
-  name = "water_stream_9",
   direction = 6,
   sprite = "entities/stream_water",
   speed = 96,
@@ -17668,10 +17664,10 @@ stream{
 }
 
 stream{
+  name = "water_stream_10",
   layer = 0,
   x = 1344,
   y = 741,
-  name = "water_stream_10",
   direction = 6,
   sprite = "entities/stream_water",
   speed = 96,
@@ -17679,10 +17675,10 @@ stream{
 }
 
 stream{
+  name = "water_stream_11",
   layer = 0,
   x = 1344,
   y = 757,
-  name = "water_stream_11",
   direction = 6,
   sprite = "entities/stream_water",
   speed = 96,
@@ -17690,10 +17686,10 @@ stream{
 }
 
 stream{
+  name = "water_stream_12",
   layer = 0,
   x = 1344,
   y = 773,
-  name = "water_stream_12",
   direction = 6,
   sprite = "entities/stream_water",
   speed = 96,
@@ -17701,10 +17697,10 @@ stream{
 }
 
 stream{
+  name = "water_stream_13",
   layer = 0,
   x = 1344,
   y = 789,
-  name = "water_stream_13",
   direction = 6,
   sprite = "entities/stream_water",
   speed = 96,
@@ -17712,10 +17708,10 @@ stream{
 }
 
 stream{
+  name = "water_stream_14",
   layer = 0,
   x = 1344,
   y = 805,
-  name = "water_stream_14",
   direction = 6,
   sprite = "entities/stream_water",
   speed = 96,
@@ -17723,10 +17719,10 @@ stream{
 }
 
 stream{
+  name = "water_stream_15",
   layer = 0,
   x = 1344,
   y = 821,
-  name = "water_stream_15",
   direction = 6,
   sprite = "entities/stream_water",
   speed = 96,
@@ -17734,10 +17730,10 @@ stream{
 }
 
 stream{
+  name = "water_stream_16",
   layer = 0,
   x = 1344,
   y = 837,
-  name = "water_stream_16",
   direction = 6,
   sprite = "entities/stream_water",
   speed = 96,
@@ -17745,20 +17741,20 @@ stream{
 }
 
 stream{
+  name = "water_stream_17",
   layer = 0,
   x = 1344,
   y = 469,
-  name = "water_stream_17",
   direction = 6,
   sprite = "entities/stream_water",
   allow_movement = false,
 }
 
 stream{
+  name = "water_stream_18",
   layer = 0,
   x = 1344,
   y = 853,
-  name = "water_stream_18",
   direction = 6,
   sprite = "entities/stream_water",
   speed = 96,
@@ -17766,10 +17762,10 @@ stream{
 }
 
 stream{
+  name = "water_stream_19",
   layer = 0,
   x = 1344,
   y = 869,
-  name = "water_stream_19",
   direction = 6,
   sprite = "entities/stream_water",
   speed = 96,
@@ -17777,10 +17773,10 @@ stream{
 }
 
 stream{
+  name = "water_stream_20",
   layer = 0,
   x = 1344,
   y = 885,
-  name = "water_stream_20",
   direction = 6,
   sprite = "entities/stream_water",
   speed = 96,
@@ -17788,10 +17784,10 @@ stream{
 }
 
 stream{
+  name = "water_stream_21",
   layer = 0,
   x = 1344,
   y = 901,
-  name = "water_stream_21",
   direction = 6,
   sprite = "entities/stream_water",
   speed = 96,
@@ -17799,20 +17795,20 @@ stream{
 }
 
 chest{
+  name = "chest_key_4",
   layer = 0,
   x = 920,
   y = 1357,
-  name = "chest_key_4",
   treasure_name = "small_key",
   treasure_savegame_variable = "b1124",
   sprite = "entities/chest",
 }
 
 door{
+  name = "door_key4_1",
   layer = 0,
   x = 1048,
   y = 840,
-  name = "door_key4_1",
   direction = 2,
   sprite = "entities/door_small_key",
   savegame_variable = "b1138",
@@ -17823,10 +17819,10 @@ door{
 }
 
 door{
+  name = "door_key4_2",
   layer = 0,
   x = 1000,
   y = 840,
-  name = "door_key4_2",
   direction = 0,
   sprite = "entities/door_small_key",
   savegame_variable = "b1138",
@@ -17837,10 +17833,10 @@ door{
 }
 
 door{
+  name = "door_key5_3",
   layer = 0,
   x = 1128,
   y = 760,
-  name = "door_key5_3",
   direction = 1,
   sprite = "entities/door_small_key",
   savegame_variable = "b1139",
@@ -17851,10 +17847,10 @@ door{
 }
 
 door{
+  name = "door_key5_4",
   layer = 0,
   x = 1128,
   y = 712,
-  name = "door_key5_4",
   direction = 3,
   sprite = "entities/door_small_key",
   savegame_variable = "b1139",
@@ -17865,39 +17861,39 @@ door{
 }
 
 door{
+  name = "door_boss_1",
   layer = 0,
   x = 728,
   y = 1176,
-  name = "door_boss_1",
   direction = 0,
   sprite = "entities/door_shutter",
 }
 
 chest{
+  name = "chest_compass",
   layer = 0,
   x = 824,
   y = 853,
-  name = "chest_compass",
   treasure_name = "compass",
   treasure_savegame_variable = "b1126",
   sprite = "entities/chest",
 }
 
 chest{
+  name = "chest_key_2",
   layer = 0,
   x = 1944,
   y = 485,
-  name = "chest_key_2",
   treasure_name = "small_key",
   treasure_savegame_variable = "b1122",
   sprite = "entities/chest",
 }
 
 stream{
+  name = "stream_key_1",
   layer = 0,
   x = 1880,
   y = 445,
-  name = "stream_key_1",
   direction = 6,
   sprite = "entities/stream_water",
   speed = 96,
@@ -17905,10 +17901,10 @@ stream{
 }
 
 stream{
+  name = "stream_key_2",
   layer = 0,
   x = 1880,
   y = 461,
-  name = "stream_key_2",
   direction = 6,
   sprite = "entities/stream_water",
   speed = 96,
@@ -17916,10 +17912,10 @@ stream{
 }
 
 stream{
+  name = "stream_key_3",
   layer = 0,
   x = 1880,
   y = 477,
-  name = "stream_key_3",
   direction = 6,
   sprite = "entities/stream_water",
   speed = 96,
@@ -17927,10 +17923,10 @@ stream{
 }
 
 stream{
+  name = "stream_key_4",
   layer = 0,
   x = 1880,
   y = 493,
-  name = "stream_key_4",
   direction = 6,
   sprite = "entities/stream_water",
   speed = 96,
@@ -17938,10 +17934,10 @@ stream{
 }
 
 stream{
+  name = "stream_key_5",
   layer = 0,
   x = 1880,
   y = 509,
-  name = "stream_key_5",
   direction = 6,
   sprite = "entities/stream_water",
   speed = 96,
@@ -17949,10 +17945,10 @@ stream{
 }
 
 stream{
+  name = "stream_key_6",
   layer = 0,
   x = 1880,
   y = 525,
-  name = "stream_key_6",
   direction = 6,
   sprite = "entities/stream_water",
   speed = 96,
@@ -17969,28 +17965,28 @@ destructible{
 }
 
 door{
+  name = "shutter_2_1",
   layer = 0,
   x = 1128,
   y = 488,
-  name = "shutter_2_1",
   direction = 1,
   sprite = "entities/door_shutter",
 }
 
 door{
+  name = "shutter_2_2",
   layer = 0,
   x = 1128,
   y = 440,
-  name = "shutter_2_2",
   direction = 3,
   sprite = "entities/door_shutter",
 }
 
 stream{
+  name = "water_stream_chest_1",
   layer = 0,
   x = 1824,
   y = 1557,
-  name = "water_stream_chest_1",
   direction = 2,
   sprite = "entities/stream_water",
   allow_movement = false,
@@ -17999,10 +17995,10 @@ stream{
 }
 
 stream{
+  name = "water_stream_chest_2",
   layer = 0,
   x = 1824,
   y = 1541,
-  name = "water_stream_chest_2",
   direction = 2,
   sprite = "entities/stream_water",
   allow_movement = false,
@@ -18011,10 +18007,10 @@ stream{
 }
 
 stream{
+  name = "water_stream_chest_3",
   layer = 0,
   x = 1824,
   y = 1525,
-  name = "water_stream_chest_3",
   direction = 2,
   sprite = "entities/stream_water",
   allow_movement = false,
@@ -18023,28 +18019,28 @@ stream{
 }
 
 enemy{
+  name = "tektite_1",
   layer = 0,
   x = 1688,
   y = 653,
-  name = "tektite_1",
   direction = 3,
   breed = "tektite_blue",
 }
 
 enemy{
+  name = "tektite_2",
   layer = 0,
   x = 1520,
   y = 637,
-  name = "tektite_2",
   direction = 3,
   breed = "tektite_blue",
 }
 
 door{
+  name = "door_key2_1",
   layer = 0,
   x = 1768,
   y = 392,
-  name = "door_key2_1",
   direction = 1,
   sprite = "entities/door_small_key",
   savegame_variable = "b1136",
@@ -18055,10 +18051,10 @@ door{
 }
 
 door{
+  name = "door_key2_2",
   layer = 0,
   x = 1768,
   y = 344,
-  name = "door_key2_2",
   direction = 3,
   sprite = "entities/door_small_key",
   savegame_variable = "b1136",
@@ -18069,10 +18065,10 @@ door{
 }
 
 door{
+  name = "door_key3_2",
   layer = 0,
   x = 1576,
   y = 1000,
-  name = "door_key3_2",
   direction = 1,
   sprite = "entities/door_small_key",
   savegame_variable = "b1137",
@@ -18083,10 +18079,10 @@ door{
 }
 
 door{
+  name = "door_key3_1",
   layer = 0,
   x = 1576,
   y = 952,
-  name = "door_key3_1",
   direction = 3,
   sprite = "entities/door_small_key",
   savegame_variable = "b1137",
@@ -18097,252 +18093,252 @@ door{
 }
 
 chest{
+  name = "chest_key_5",
   layer = 0,
   x = 904,
   y = 573,
-  name = "chest_key_5",
   treasure_name = "small_key",
   treasure_savegame_variable = "b1125",
   sprite = "entities/chest",
 }
 
 enemy{
+  name = "bari_3",
   layer = 0,
   x = 1728,
   y = 157,
-  name = "bari_3",
   direction = 3,
   breed = "bari_blue",
 }
 
 enemy{
+  name = "bari_2",
   layer = 0,
   x = 1616,
   y = 133,
-  name = "bari_2",
   direction = 3,
   breed = "bari_red",
 }
 
 enemy{
+  name = "bari_4",
   layer = 0,
   x = 1920,
   y = 117,
-  name = "bari_4",
   direction = 3,
   breed = "bari_blue",
 }
 
 enemy{
+  name = "bari_5",
   layer = 0,
   x = 1720,
   y = 269,
-  name = "bari_5",
   direction = 3,
   breed = "bari_red",
 }
 
 enemy{
+  name = "bari_6",
   layer = 0,
   x = 1616,
   y = 269,
-  name = "bari_6",
   direction = 3,
   breed = "bari_red",
 }
 
 enemy{
+  name = "bari_7",
   layer = 0,
   x = 1520,
   y = 325,
-  name = "bari_7",
   direction = 3,
   breed = "bari_blue",
 }
 
 enemy{
+  name = "bari_8",
   layer = 0,
   x = 1392,
   y = 269,
-  name = "bari_8",
   direction = 3,
   breed = "bari_blue",
 }
 
 enemy{
+  name = "bari_9",
   layer = 0,
   x = 1416,
   y = 157,
-  name = "bari_9",
   direction = 3,
   breed = "bari_blue",
 }
 
 enemy{
+  name = "bari_10",
   layer = 0,
   x = 1448,
   y = 269,
-  name = "bari_10",
   direction = 3,
   breed = "bari_red",
 }
 
 enemy{
+  name = "chuchu_1",
   layer = 0,
   x = 1104,
   y = 597,
-  name = "chuchu_1",
   direction = 3,
   breed = "chuchu_blue",
 }
 
 enemy{
+  name = "chuchu_2",
   layer = 0,
   x = 1144,
   y = 677,
-  name = "chuchu_2",
   direction = 3,
   breed = "chuchu_blue",
 }
 
 enemy{
+  name = "chuchu_3",
   layer = 0,
   x = 1168,
   y = 565,
-  name = "chuchu_3",
   direction = 3,
   breed = "chuchu_blue",
 }
 
 sensor{
+  name = "sensor_open_shutter_1",
   layer = 0,
   x = 1032,
   y = 589,
   width = 16,
   height = 64,
-  name = "sensor_open_shutter_1",
 }
 
 sensor{
+  name = "sensor_close_shutter_1",
   layer = 0,
   x = 1072,
   y = 589,
   width = 16,
   height = 64,
-  name = "sensor_close_shutter_1",
 }
 
 sensor{
+  name = "sensor_close_shutter_2",
   layer = 0,
   x = 1120,
   y = 437,
   width = 48,
   height = 16,
-  name = "sensor_close_shutter_2",
 }
 
 enemy{
+  name = "aquadracini_1",
   layer = 0,
   x = 888,
   y = 453,
-  name = "aquadracini_1",
   direction = 3,
   breed = "aquadracini",
   treasure_name = "random",
 }
 
 enemy{
+  name = "aquadracini_2",
   layer = 0,
   x = 960,
   y = 389,
-  name = "aquadracini_2",
   direction = 3,
   breed = "aquadracini",
   treasure_name = "random",
 }
 
 enemy{
+  name = "aquadracini_3",
   layer = 0,
   x = 952,
   y = 557,
-  name = "aquadracini_3",
   direction = 3,
   breed = "aquadracini",
   treasure_name = "random",
 }
 
 enemy{
+  name = "aquadracini_4",
   layer = 0,
   x = 1064,
   y = 373,
-  name = "aquadracini_4",
   direction = 3,
   breed = "aquadracini",
   treasure_name = "random",
 }
 
 enemy{
+  name = "aquadracini_5",
   layer = 0,
   x = 856,
   y = 597,
-  name = "aquadracini_5",
   direction = 3,
   breed = "aquadracini",
   treasure_name = "random",
 }
 
 enemy{
+  name = "aquadracini_6",
   layer = 0,
   x = 848,
   y = 373,
-  name = "aquadracini_6",
   direction = 3,
   breed = "aquadracini",
   treasure_name = "random",
 }
 
 door{
+  name = "shutter_3",
   layer = 0,
   x = 896,
   y = 664,
-  name = "shutter_3",
   direction = 3,
   sprite = "entities/door_shutter",
 }
 
 sensor{
+  name = "sensor_open_shutter_3",
   layer = 0,
   x = 888,
   y = 701,
   width = 48,
   height = 16,
-  name = "sensor_open_shutter_3",
 }
 
 sensor{
+  name = "sensor_close_shutter_3",
   layer = 0,
   x = 888,
   y = 661,
   width = 48,
   height = 16,
-  name = "sensor_close_shutter_3",
 }
 
 chest{
+  name = "chest_goddess_plume",
   layer = 0,
   x = 1784,
   y = 1485,
-  name = "chest_goddess_plume",
   treasure_name = "plume",
   treasure_savegame_variable = "b1782",
   sprite = "entities/chest",
 }
 
 switch{
+  name = "switch_water_chest",
   layer = 0,
   x = 1856,
   y = 1472,
-  name = "switch_water_chest",
   subtype = "walkable",
   sprite = "entities/switch",
   sound = "switch",
@@ -18351,23 +18347,23 @@ switch{
 }
 
 teletransporter{
+  name = "to_outside",
   layer = 0,
   x = 120,
   y = 1176,
   width = 16,
   height = 16,
-  name = "to_outside",
-  sprite = "entities/teletransporter",
-  sound = "warp",
   destination_map = "31",
   destination = "from_lair_finished",
+  sprite = "entities/teletransporter",
+  sound = "warp",
 }
 
 chest{
+  name = "chest_book",
   layer = 0,
   x = 416,
   y = 1093,
-  name = "chest_book",
   treasure_name = "book_mudora",
   treasure_variant = 4,
   treasure_savegame_variable = "b1134",
@@ -18375,21 +18371,21 @@ chest{
 }
 
 pickable{
+  name = "boss_heart",
   layer = 0,
   x = 416,
   y = 1165,
-  name = "boss_heart",
   treasure_name = "heart_container",
   treasure_savegame_variable = "b1133",
 }
 
 sensor{
+  name = "sensor_boss",
   layer = 0,
   x = 720,
   y = 1173,
   width = 16,
   height = 48,
-  name = "sensor_boss",
 }
 
 destructible{
@@ -18408,8 +18404,8 @@ wall{
   width = 16,
   height = 16,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -18419,8 +18415,8 @@ wall{
   y = 672,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -18430,8 +18426,8 @@ wall{
   y = 744,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -18441,8 +18437,8 @@ wall{
   y = 464,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -18452,8 +18448,8 @@ wall{
   y = 464,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -18463,8 +18459,8 @@ wall{
   y = 336,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -18474,8 +18470,8 @@ wall{
   y = 408,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -18485,8 +18481,8 @@ wall{
   y = 832,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -18496,8 +18492,8 @@ wall{
   y = 832,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -18507,8 +18503,8 @@ wall{
   y = 832,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -18518,8 +18514,8 @@ wall{
   y = 832,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -18529,56 +18525,56 @@ wall{
   y = 832,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 door{
+  name = "shutter_waterfall",
   layer = 0,
   x = 1336,
   y = 920,
-  name = "shutter_waterfall",
   direction = 3,
   sprite = "entities/door_shutter",
 }
 
 sensor{
+  name = "sensor_open_shutter_waterfall",
   layer = 0,
   x = 1328,
   y = 957,
   width = 48,
   height = 16,
-  name = "sensor_open_shutter_waterfall",
 }
 
 sensor{
+  name = "sensor_close_shutter_waterfall",
   layer = 0,
   x = 1328,
   y = 917,
   width = 48,
   height = 16,
-  name = "sensor_close_shutter_waterfall",
 }
 
 wall{
+  name = "obstacle",
   layer = 0,
   x = 1336,
   y = 904,
   width = 16,
   height = 16,
-  name = "obstacle",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 door{
+  name = "door_boss_2",
   layer = 0,
   x = 776,
   y = 1176,
-  name = "door_boss_2",
   direction = 2,
   sprite = "entities/door_shutter",
 }
@@ -18590,21 +18586,21 @@ wall{
   width = 8,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
 wall{
+  name = "obstacle_2",
   layer = 0,
   x = 1328,
   y = 888,
   width = 8,
   height = 16,
-  name = "obstacle_2",
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -18624,8 +18620,8 @@ wall{
   y = 704,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -18635,8 +18631,8 @@ wall{
   y = 504,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -18646,8 +18642,8 @@ wall{
   y = 432,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -18657,8 +18653,8 @@ wall{
   y = 776,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -18668,8 +18664,8 @@ wall{
   y = 912,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -18679,8 +18675,8 @@ wall{
   y = 728,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -18690,8 +18686,8 @@ wall{
   y = 656,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -18701,8 +18697,8 @@ wall{
   y = 592,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -18712,8 +18708,8 @@ wall{
   y = 592,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -18723,8 +18719,8 @@ wall{
   y = 832,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -18734,8 +18730,8 @@ wall{
   y = 832,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -18745,8 +18741,8 @@ wall{
   y = 832,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -18756,8 +18752,8 @@ wall{
   y = 944,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -18767,8 +18763,8 @@ wall{
   y = 1016,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -18778,8 +18774,8 @@ wall{
   y = 1152,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -18789,8 +18785,8 @@ wall{
   y = 1152,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -18800,8 +18796,8 @@ wall{
   y = 1088,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -18811,8 +18807,8 @@ wall{
   y = 1088,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -18822,8 +18818,8 @@ wall{
   y = 1152,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -18833,8 +18829,8 @@ wall{
   y = 1152,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -18844,8 +18840,8 @@ wall{
   y = 984,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -18855,8 +18851,8 @@ wall{
   y = 1280,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -18866,8 +18862,8 @@ wall{
   y = 1264,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -18877,8 +18873,8 @@ wall{
   y = 1168,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -18889,8 +18885,8 @@ wall{
   y = 336,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -18900,8 +18896,8 @@ wall{
   y = 408,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -19014,43 +19010,43 @@ destructible{
 }
 
 dynamic_tile{
+  name = "water_source_2",
   layer = 0,
   x = 1336,
   y = 448,
+  pattern = "682",
   width = 16,
   height = 16,
-  name = "water_source_2",
-  pattern = "682",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "water_source_1",
   layer = 0,
   x = 1304,
   y = 408,
+  pattern = "701",
   width = 64,
   height = 48,
-  name = "water_source_1",
-  pattern = "701",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "water_1",
   layer = 0,
   x = 1512,
   y = 1072,
+  pattern = "701",
   width = 144,
   height = 160,
-  name = "water_1",
-  pattern = "701",
   enabled_at_start = true,
 }
 
 stream{
+  name = "stream_water_5",
   layer = 0,
   x = 1584,
   y = 1253,
-  name = "stream_water_5",
   direction = 6,
   sprite = "entities/stream_water",
   allow_movement = false,
@@ -19059,10 +19055,10 @@ stream{
 }
 
 stream{
+  name = "stream_water_2",
   layer = 0,
   x = 1584,
   y = 1237,
-  name = "stream_water_2",
   direction = 6,
   sprite = "entities/stream_water",
   allow_movement = false,
@@ -19115,20 +19111,19 @@ enemy{
 }
 
 enemy{
+  name = "bubble_blue",
   layer = 0,
   x = 1336,
   y = 1096,
-  name = "bubble_blue",
   direction = 3,
   breed = "bubble_blue",
 }
 
 block{
+  name = "statue_stone",
   layer = 0,
   x = 1384,
   y = 1069,
-  name = "statue_stone",
-  direction = -1,
   sprite = "entities/statue",
   pushable = true,
   pullable = true,
@@ -19136,10 +19131,10 @@ block{
 }
 
 switch{
+  name = "switch_stone",
   layer = 0,
   x = 1336,
   y = 1128,
-  name = "switch_stone",
   subtype = "walkable",
   sprite = "entities/switch",
   sound = "switch",
@@ -19176,10 +19171,10 @@ destructible{
 }
 
 stream{
+  name = "stream_water_1",
   layer = 0,
   x = 1072,
   y = 1245,
-  name = "stream_water_1",
   direction = 4,
   sprite = "entities/stream_water",
   speed = 96,
@@ -19187,10 +19182,10 @@ stream{
 }
 
 stream{
+  name = "stream_water_3",
   layer = 0,
   x = 1088,
   y = 1245,
-  name = "stream_water_3",
   direction = 4,
   sprite = "entities/stream_water",
   speed = 96,
@@ -19198,10 +19193,10 @@ stream{
 }
 
 stream{
+  name = "stream_water_4",
   layer = 0,
   x = 1200,
   y = 1245,
-  name = "stream_water_4",
   direction = 0,
   sprite = "entities/stream_water",
   speed = 96,
@@ -19209,10 +19204,10 @@ stream{
 }
 
 stream{
+  name = "stream_water_6",
   layer = 0,
   x = 1184,
   y = 1245,
-  name = "stream_water_6",
   direction = 0,
   sprite = "entities/stream_water",
   speed = 96,
@@ -19220,13 +19215,13 @@ stream{
 }
 
 dynamic_tile{
+  name = "tile",
   layer = 0,
   x = 1568,
   y = 1184,
+  pattern = "623",
   width = 32,
   height = 32,
-  name = "tile",
-  pattern = "623",
   enabled_at_start = true,
 }
 
@@ -19248,10 +19243,10 @@ enemy{
 }
 
 destructible{
+  name = "stone",
   layer = 0,
   x = 1160,
   y = 1301,
-  name = "stone",
   treasure_name = "random",
   sprite = "entities/stone_small_black",
   destruction_sound = "stone",
@@ -19454,6 +19449,36 @@ wall{
   width = 16,
   height = 16,
   stops_enemies = true,
+}
+
+enemy{
+  name = "leever_1",
+  layer = 0,
+  x = 944,
+  y = 1301,
+  direction = 0,
+  breed = "leever_purple",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "leever_2",
+  layer = 0,
+  x = 952,
+  y = 1397,
+  direction = 0,
+  breed = "leever_purple",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "leever_3",
+  layer = 0,
+  x = 984,
+  y = 1349,
+  direction = 0,
+  breed = "leever_purple",
+  treasure_name = "random",
 }
 
 tile{

@@ -59,6 +59,20 @@ function map:on_started(destination)
       end)
     end)
   end
+
+  -- Replace shop items if they're bought
+  if game:get_value("i1806") >= 2 then --bomb bag
+    self:create_shop_treasure({
+	name = "shop_item_2",
+	layer = 0,
+	x = 496,
+	y = 392,
+	price = 999,
+	dialog = "shop.tunic_3",
+	treasure_name = "tunic",
+	treasure_variant = 3
+    })
+  end
 end
 
 function npc_dargor:on_interaction()

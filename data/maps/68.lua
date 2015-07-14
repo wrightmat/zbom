@@ -45,6 +45,7 @@ function map:on_started(destination)
       end)
     end
   end
+  if dialog_timer ~= nil then dialog_timer = nil end -- shut the ghost up :)
 end
 
 function map:on_draw(dst_surface)

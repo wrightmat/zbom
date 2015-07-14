@@ -3128,8 +3128,8 @@ shop_treasure{
   x = 456,
   y = 392,
   treasure_name = "amber",
-  price = 200,
-  font = "la",
+  price = 150,
+  font = "bom",
   dialog = "_treasure.amber.1",
 }
 
@@ -3140,23 +3140,21 @@ shop_treasure{
   y = 392,
   treasure_name = "bomb_bag",
   treasure_variant = 2,
-  treasure_savegame_variable = "i1806",
+  treasure_savegame_variable = "b2017",
   price = 400,
   font = "bom",
   dialog = "shop.bomb_bag_2",
 }
 
 shop_treasure{
-  name = "shop_tunic",
+  name = "shop_heart",
   layer = 0,
   x = 536,
   y = 392,
-  treasure_name = "tunic",
-  treasure_variant = 2,
-  treasure_savegame_variable = "i1822",
-  price = 999,
-  font = "la",
-  dialog = "shop.tunic_3",
+  treasure_name = "heart",
+  price = 10,
+  font = "bom",
+  dialog = "shop.heart",
 }
 
 npc{

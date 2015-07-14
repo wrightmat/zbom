@@ -20,6 +20,7 @@ function enemy:on_created()
   self:set_attack_consequence("thrown_item", "protected")
   self:set_attack_consequence("hookshot", "protected")
   self:set_attack_consequence("boomerang", "protected")
+  self:set_attack_consequence("explosion", "protected")
   self:set_attack_consequence("fire", "protected")
 end
 

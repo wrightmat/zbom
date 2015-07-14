@@ -105,7 +105,7 @@ end
 
 for enemy in map:get_entities("tentacle") do
   enemy.on_dead = function()
-    if not map:has_entities("tentacle_orig") then
+    if not map:has_entities("tentacle_orig") and not game:get_value("b1786") then
       chest_alchemy_stone:set_enabled(true)
       sol.audio.play_sound("chest_appears")
     end
@@ -132,6 +132,6 @@ end
 function map:on_finished()
   if lantern_overlay then
     lantern_overlay:fade_out()
-    sol.timer.start(game, 1000, function() lantern_overlay = nil end)
+    lantern_overlay = nil
   end
 end
