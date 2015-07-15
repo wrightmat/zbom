@@ -11,18 +11,19 @@ function map:on_started(destination)
   else
     map:set_doors_open("door_miniboss_exit")
   end
-  if game:get_value("b1090") then map:set_doors_open("door_shortcut") end
-  if not game:get_value("b1079") then boss_manhandla:set_enabled(false) end
-  if not game:get_value("b1087") then chest_room7_part:set_enabled(false) end
-  if not game:get_value("b1070") then chest_room8_key:set_enabled(false) end
-  if not game:get_value("b1071") then chest_room9_key:set_enabled(false) end
-  if not game:get_value("b1073") then chest_room11_big:set_enabled(false) end
-  if not game:get_value("b1077") then chest_room12_item:set_enabled(false) end
-  if not game:get_value("b1076") then chest_room14_compass:set_enabled(false) end
-  if not game:get_value("b1088") then chest_room16_part:set_enabled(false) end
-  if not game:get_value("b1072") then chest_room17_key:set_enabled(false) end
-  if not game:get_value("b1089") then chest_room18_part:set_enabled(false) end
+  if not game:get_value("b1070") then chest_room10_key:set_enabled(false) end
+  if not game:get_value("b1071") then chest_room11_key:set_enabled(false) end
+  if not game:get_value("b1072") then chest_room20_key:set_enabled(false) end
+  if not game:get_value("b1073") then chest_room13_big:set_enabled(false) end
   if not game:get_value("b1074") then boss_heart:set_enabled(false) end
+  if not game:get_value("b1075") then chest_room17_map:set_enabled(false) end
+  if not game:get_value("b1076") then chest_room7_compass:set_enabled(false) end
+  if not game:get_value("b1077") then chest_room15_item:set_enabled(false) end
+  if not game:get_value("b1079") then boss_manhandla:set_enabled(false) end
+  if not game:get_value("b1087") then chest_room9_part:set_enabled(false) end
+  if not game:get_value("b1088") then chest_room19_part:set_enabled(false) end
+  if not game:get_value("b1089") then chest_room22_part:set_enabled(false) end
+  if game:get_value("b1090") then map:set_doors_open("door_shortcut") end
   map:set_doors_open("door_miniboss_enter")
 end
 
@@ -80,9 +81,14 @@ function switch_room4:on_activated()
   end, 500, 500)
 end
 
-function switch_room7_3:on_activated()
-  if switch_room7_1:is_activated() and switch_room7_2:is_activated() then
-    chest_room7_part:set_enabled(true)
+function switch_room7:on_activated()
+  chest_room7_compass:set_enabled(true)
+  sol.audio.play_sound("chest_appears")
+end
+
+function switch_room9_3:on_activated()
+  if switch_room9_1:is_activated() and switch_room9_2:is_activated() then
+    chest_room9_part:set_enabled(true)
     sol.audio.play_sound("chest_appears")
   end
 end
@@ -98,7 +104,7 @@ if miniboss_lanmola ~= nil then
   map:open_doors("door_miniboss_enter")
   sol.audio.play_sound("boss_killed")
   sol.timer.start(2000, function()
-    chest_room12_item:set_enabled(true)
+    chest_room15_item:set_enabled(true)
     sol.audio.play_sound("chest_appears")
   end)
   sol.audio.play_music("temple_pyramid")
@@ -115,96 +121,94 @@ if boss_manhandla ~= nil then
  end
 end
 
-function switch_room9_arrow_1:on_activated()
-  room9_pit:set_enabled(false)
+function switch_room11_arrow_1:on_activated()
+  room11_pit:set_enabled(false)
   sol.audio.play_sound("secret")
 end
-
-function switch_room9_arrow_2:on_activated()
-  map:open_doors("door_shutter_room9")
+function switch_room11_arrow_2:on_activated()
+  map:open_doors("door_shutter_room11")
   sol.audio.play_sound("door_open")
 end
 
-function switch_room11_arrow_1:on_activated()
-  switch_room11_arrow_1:set_locked(true)
-  if switch_room11_arrow_2:is_activated() then
-    room11_bridge:set_enabled(true)
+function switch_room13_arrow_1:on_activated()
+  switch_room13_arrow_1:set_locked(true)
+  if switch_room13_arrow_2:is_activated() then
+    room13_bridge:set_enabled(true)
     sol.audio.play_sound("secret")
   end
 end
-function switch_room11_arrow_2:on_activated()
-  switch_room11_arrow_2:set_locked(true)
-  if switch_room11_arrow_1:is_activated() then
-    room11_bridge:set_enabled(true)
+function switch_room13_arrow_2:on_activated()
+  switch_room13_arrow_2:set_locked(true)
+  if switch_room13_arrow_1:is_activated() then
+    room13_bridge:set_enabled(true)
     sol.audio.play_sound("secret")
   end
 end
+function switch_room13_arrow_3:on_activated()
+  switch_room13_arrow_3:set_locked(true)
+  if switch_room13_arrow_4:is_activated() then
+    chest_room13_big:set_enabled(true)
+    sol.audio.play_sound("chest_appears")
+  end
+end
+function switch_room13_arrow_4:on_activated()
+  switch_room13_arrow_4:set_locked(true)
+  if switch_room13_arrow_3:is_activated() then
+    chest_room13_big:set_enabled(true)
+    sol.audio.play_sound("chest_appears")
+  end
+end
 
-function switch_room11_arrow_3:on_activated()
-  switch_room11_arrow_3:set_locked(true)
-  if switch_room11_arrow_4:is_activated() then
-    chest_room11_big:set_enabled(true)
+function switch_room22_1:on_activated()
+  if switch_room22_2:is_activated() and switch_room22_3:is_activated() and switch_room22_4:is_activated() and switch_room22_5:is_activated() then
+    chest_room22_part:set_enabled(true)
     sol.audio.play_sound("chest_appears")
   end
 end
-function switch_room11_arrow_4:on_activated()
-  switch_room11_arrow_4:set_locked(true)
-  if switch_room11_arrow_3:is_activated() then
-    chest_room11_big:set_enabled(true)
+function switch_room22_2:on_activated()
+  if switch_room22_1:is_activated() and switch_room22_3:is_activated() and switch_room22_4:is_activated() and switch_room22_5:is_activated() then
+    chest_room22_part:set_enabled(true)
     sol.audio.play_sound("chest_appears")
   end
 end
-
-function switch_room18_1:on_activated()
-  if switch_room18_2:is_activated() and switch_room18_3:is_activated() and switch_room18_4:is_activated() and switch_room18_5:is_activated() then
-    chest_room18_part:set_enabled(true)
+function switch_room22_3:on_activated()
+  if switch_room22_1:is_activated() and switch_room22_2:is_activated() and switch_room22_4:is_activated() and switch_room22_5:is_activated() then
+    chest_room22_part:set_enabled(true)
     sol.audio.play_sound("chest_appears")
   end
 end
-function switch_room18_2:on_activated()
-  if switch_room18_1:is_activated() and switch_room18_3:is_activated() and switch_room18_4:is_activated() and switch_room18_5:is_activated() then
-    chest_room18_part:set_enabled(true)
+function switch_room22_4:on_activated()
+  if switch_room22_1:is_activated() and switch_room22_2:is_activated() and switch_room22_3:is_activated() and switch_room22_5:is_activated() then
+    chest_room22_part:set_enabled(true)
     sol.audio.play_sound("chest_appears")
   end
 end
-function switch_room18_3:on_activated()
-  if switch_room18_1:is_activated() and switch_room18_2:is_activated() and switch_room18_4:is_activated() and switch_room18_5:is_activated() then
-    chest_room18_part:set_enabled(true)
-    sol.audio.play_sound("chest_appears")
-  end
-end
-function switch_room18_4:on_activated()
-  if switch_room18_1:is_activated() and switch_room18_2:is_activated() and switch_room18_3:is_activated() and switch_room18_5:is_activated() then
-    chest_room18_part:set_enabled(true)
-    sol.audio.play_sound("chest_appears")
-  end
-end
-function switch_room18_5:on_activated()
-  if switch_room18_1:is_activated() and switch_room18_2:is_activated() and switch_room18_3:is_activated() and switch_room18_4:is_activated() then
-    chest_room18_part:set_enabled(true)
+function switch_room22_5:on_activated()
+  if switch_room22_1:is_activated() and switch_room22_2:is_activated() and switch_room22_3:is_activated() and switch_room22_4:is_activated() then
+    chest_room22_part:set_enabled(true)
     sol.audio.play_sound("chest_appears")
   end
 end
 
 for enemy in map:get_entities("gibdos") do
   enemy.on_dead = function()
-    if not map:has_entities("gibdos_room8") and not game:get_value("b1070") then
-      chest_room8_key:set_enabled(true)
+    if not map:has_entities("gibdos_room10") and not game:get_value("b1070") then
+      chest_room10_key:set_enabled(true)
       sol.audio.play_sound("chest_appears")
     end
 
-    if not map:has_entities("gibdos_room9") and not map:has_entities("keese_room9") and not game:get_value("b1071") then
-      chest_room9_key:set_enabled(true)
+    if not map:has_entities("gibdos_room11") and not map:has_entities("keese_room11") and not game:get_value("b1071") then
+      chest_room11_key:set_enabled(true)
       sol.audio.play_sound("chest_appears")
     end
 
-    if not map:has_entities("gibdos_room14") and not game:get_value("b1076") then
-      chest_room14_compass:set_enabled(true)
+    if not map:has_entities("gibdos_room17") and not game:get_value("b1076") then
+      chest_room17_map:set_enabled(true)
       sol.audio.play_sound("chest_appears")
     end
 
-    if not map:has_entities("gibdos_room16") and not game:get_value("b1088") then
-      chest_room16_part:set_enabled(true)
+    if not map:has_entities("gibdos_room19") and not game:get_value("b1088") then
+      chest_room19_part:set_enabled(true)
       sol.audio.play_sound("chest_appears")
     end
   end
@@ -212,13 +216,13 @@ end
 
 for enemy in map:get_entities("keese") do
   enemy.on_dead = function()
-    if not map:has_entities("gibdos_room9") and not map:has_entities("keese_room9") and not game:get_value("b1071") then
-      chest_room9_key:set_enabled(true)
+    if not map:has_entities("gibdos_room11") and not map:has_entities("keese_room11") and not game:get_value("b1071") then
+      chest_room11_key:set_enabled(true)
       sol.audio.play_sound("chest_appears")
     end
 
-    if not map:has_entities("keese_room17") and not game:get_value("b1072") then
-      chest_room17_key:set_enabled(true)
+    if not map:has_entities("keese_room20") and not game:get_value("b1072") then
+      chest_room20_key:set_enabled(true)
       sol.audio.play_sound("chest_appears")
     end
   end

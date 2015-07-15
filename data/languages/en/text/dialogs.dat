@@ -1020,7 +1020,7 @@ dialog{
   id = "_treasure.airship_part.1",
   skip = "current",
   text = [[
-You found a chunk of $r Magnetite$w!$0
+You found a chunk of  $r  Magnetite$w!$0
 This could help the Gerudo with
 their repairs!
   ]]
@@ -1030,7 +1030,7 @@ dialog{
   id = "_treasure.airship_part.2",
   skip = "current",
   text = [[
-You found a $r Propeller$w!$0
+You found a $r  Propeller$w!$0
 What could the Gerudo need with this?
   ]]
 }
@@ -1039,7 +1039,7 @@ dialog{
   id = "_treasure.airship_part.3",
   skip = "current",
   text = [[
-You found $R Din's Pearl$w!$0
+You found $r  Din's Pearl$w!$0
 The magic from this artifact should
 speed the Gerudo's repairs considerably!
 Get back as soon as you can.
@@ -1671,12 +1671,11 @@ dialog{
   skip = "current",
   text = [[
 You found a $r Compass$w! It
-indicates your position on a
-Map, but only works in this
-dungeon. This one has a special
-feature - when you enter a room
-with a hidden treasure, a sound
-will play!
+indicates your position on a Map,
+but only works in this dungeon.
+This one has a special feature -
+when you enter a room with hidden
+treasure, a sound will play!
   ]]
 }
 
@@ -1841,8 +1840,7 @@ dialog{
   text = [[
 You found a $r Dungeon Map$w!
 Use it to navigate difficult areas
-and mark where you've been and
-where you haven't!
+and explore places you haven't yet!
   ]]
 }
 

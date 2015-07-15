@@ -4189,7 +4189,7 @@ tile{
   layer = 0,
   x = 1648,
   y = 32,
-  width = 336,
+  width = 176,
   height = 16,
   pattern = "2",
 }
@@ -4268,19 +4268,10 @@ tile{
 
 tile{
   layer = 0,
-  x = 1840,
-  y = 32,
-  width = 32,
-  height = 16,
-  pattern = "55",
-}
-
-tile{
-  layer = 0,
   x = 1984,
   y = 176,
   width = 16,
-  height = 160,
+  height = 128,
   pattern = "12",
 }
 
@@ -8661,15 +8652,6 @@ tile{
 tile{
   layer = 0,
   x = 1984,
-  y = 256,
-  width = 16,
-  height = 32,
-  pattern = "58",
-}
-
-tile{
-  layer = 0,
-  x = 1984,
   y = 136,
   width = 16,
   height = 32,
@@ -11583,6 +11565,330 @@ tile{
   pattern = "63",
 }
 
+tile{
+  layer = 0,
+  x = 1856,
+  y = 32,
+  width = 128,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 1832,
+  y = 40,
+  width = 16,
+  height = 16,
+  pattern = "174",
+}
+
+tile{
+  layer = 0,
+  x = 1824,
+  y = 40,
+  width = 8,
+  height = 16,
+  pattern = "172",
+}
+
+tile{
+  layer = 0,
+  x = 1848,
+  y = 40,
+  width = 8,
+  height = 16,
+  pattern = "173",
+}
+
+tile{
+  layer = 0,
+  x = 1824,
+  y = 24,
+  width = 8,
+  height = 16,
+  pattern = "106",
+}
+
+tile{
+  layer = 0,
+  x = 1832,
+  y = 16,
+  width = 16,
+  height = 8,
+  pattern = "105",
+}
+
+tile{
+  layer = 0,
+  x = 1848,
+  y = 24,
+  width = 8,
+  height = 16,
+  pattern = "106",
+}
+
+tile{
+  layer = 0,
+  x = 1976,
+  y = 312,
+  width = 16,
+  height = 16,
+  pattern = "370",
+}
+
+tile{
+  layer = 0,
+  x = 1976,
+  y = 304,
+  width = 16,
+  height = 8,
+  pattern = "366",
+}
+
+tile{
+  layer = 0,
+  x = 1976,
+  y = 328,
+  width = 16,
+  height = 8,
+  pattern = "367",
+}
+
+tile{
+  layer = 0,
+  x = 1992,
+  y = 304,
+  width = 16,
+  height = 8,
+  pattern = "105",
+}
+
+tile{
+  layer = 0,
+  x = 2008,
+  y = 312,
+  width = 8,
+  height = 16,
+  pattern = "106",
+}
+
+tile{
+  layer = 0,
+  x = 1992,
+  y = 328,
+  width = 16,
+  height = 8,
+  pattern = "105",
+}
+
+tile{
+  layer = 0,
+  x = 1832,
+  y = 72,
+  width = 16,
+  height = 240,
+  pattern = "53",
+}
+
+tile{
+  layer = 0,
+  x = 1832,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "95",
+}
+
+tile{
+  layer = 0,
+  x = 1832,
+  y = 312,
+  width = 16,
+  height = 16,
+  pattern = "614",
+}
+
+tile{
+  layer = 0,
+  x = 1848,
+  y = 312,
+  width = 112,
+  height = 16,
+  pattern = "617",
+}
+
+tile{
+  layer = 0,
+  x = 1960,
+  y = 312,
+  width = 16,
+  height = 16,
+  pattern = "618",
+}
+
+sensor{
+  name = "sensor_reset_ground_2",
+  layer = 0,
+  x = 1256,
+  y = 437,
+  width = 16,
+  height = 48,
+}
+
+sensor{
+  name = "sensor_save_ground_2",
+  layer = 0,
+  x = 1400,
+  y = 557,
+  width = 48,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_17_b1076",
+  layer = 0,
+  x = 1264,
+  y = 1309,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_16_",
+  layer = 0,
+  x = 864,
+  y = 1309,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_12_",
+  layer = 0,
+  x = 208,
+  y = 357,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_13_b1073",
+  layer = 0,
+  x = 208,
+  y = 645,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_11_b1071",
+  layer = 0,
+  x = 368,
+  y = 157,
+  width = 16,
+  height = 32,
+}
+
+wall{
+  layer = 0,
+  x = 1856,
+  y = 304,
+  width = 120,
+  height = 8,
+  stops_blocks = true,
+}
+
+sensor{
+  name = "dungeon_room_9_b1087",
+  layer = 0,
+  x = 1168,
+  y = 157,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_7_b1076",
+  layer = 0,
+  x = 1808,
+  y = 549,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_6_",
+  layer = 0,
+  x = 1808,
+  y = 837,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_5_",
+  layer = 0,
+  x = 1808,
+  y = 1125,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_4_",
+  layer = 0,
+  x = 1808,
+  y = 1413,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_2_",
+  layer = 0,
+  x = 1272,
+  y = 1597,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_3_",
+  layer = 0,
+  x = 1664,
+  y = 1597,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "sensor_save_ground",
+  layer = 0,
+  x = 1400,
+  y = 1133,
+  width = 48,
+  height = 16,
+}
+
+sensor{
+  name = "sensor_reset_ground",
+  layer = 0,
+  x = 1400,
+  y = 925,
+  width = 48,
+  height = 16,
+}
+
+sensor{
+  name = "sensor_save_ground_3",
+  layer = 0,
+  x = 1176,
+  y = 437,
+  width = 16,
+  height = 48,
+}
+
 switch{
   name = "switch_shortcut",
   layer = 0,
@@ -11695,7 +12001,7 @@ destructible{
 }
 
 chest{
-  name = "chest_room5_prize",
+  name = "chest_room6_prize",
   layer = 0,
   x = 1784,
   y = 717,
@@ -11705,12 +12011,12 @@ chest{
 }
 
 chest{
-  name = "chest_room6_map",
+  name = "chest_room7_compass",
   layer = 0,
   x = 1912,
   y = 125,
-  treasure_name = "map",
-  treasure_savegame_variable = "b1075",
+  treasure_name = "compass",
+  treasure_savegame_variable = "b1076",
   sprite = "entities/chest",
 }
 
@@ -12293,7 +12599,7 @@ door{
 }
 
 switch{
-  name = "switch_room7_3",
+  name = "switch_room9_3",
   layer = 0,
   x = 1008,
   y = 208,
@@ -12305,7 +12611,7 @@ switch{
 }
 
 switch{
-  name = "switch_room7_2",
+  name = "switch_room9_2",
   layer = 0,
   x = 912,
   y = 144,
@@ -12317,7 +12623,7 @@ switch{
 }
 
 switch{
-  name = "switch_room7_1",
+  name = "switch_room9_1",
   layer = 0,
   x = 1104,
   y = 144,
@@ -12329,7 +12635,7 @@ switch{
 }
 
 chest{
-  name = "chest_room7_part",
+  name = "chest_room9_part",
   layer = 0,
   x = 1016,
   y = 109,
@@ -12359,27 +12665,27 @@ block{
 }
 
 enemy{
-  name = "gibdos_room6_1",
+  name = "gibdos_room7_1",
   layer = 0,
-  x = 1820,
-  y = 309,
+  x = 1812,
+  y = 381,
   direction = 3,
   breed = "gibdos",
   treasure_name = "random_mountain",
 }
 
 enemy{
-  name = "gibdos_room6_2",
+  name = "gibdos_room8_1",
   layer = 0,
-  x = 1516,
-  y = 165,
+  x = 1476,
+  y = 157,
   direction = 3,
   breed = "gibdos",
   treasure_name = "random_mountain",
 }
 
 chest{
-  name = "chest_room8_key",
+  name = "chest_room10_key",
   layer = 0,
   x = 744,
   y = 93,
@@ -12389,7 +12695,7 @@ chest{
 }
 
 enemy{
-  name = "gibdos_room8_1",
+  name = "gibdos_room10_1",
   layer = 0,
   x = 572,
   y = 149,
@@ -12399,7 +12705,7 @@ enemy{
 }
 
 enemy{
-  name = "gibdos_room8_2",
+  name = "gibdos_room10_2",
   layer = 0,
   x = 612,
   y = 221,
@@ -12409,7 +12715,7 @@ enemy{
 }
 
 enemy{
-  name = "gibdos_room8_3",
+  name = "gibdos_room10_3",
   layer = 0,
   x = 652,
   y = 109,
@@ -12419,7 +12725,7 @@ enemy{
 }
 
 enemy{
-  name = "gibdos_room8_4",
+  name = "gibdos_room10_4",
   layer = 0,
   x = 708,
   y = 165,
@@ -12429,7 +12735,7 @@ enemy{
 }
 
 enemy{
-  name = "gibdos_room9_1",
+  name = "gibdos_room11_1",
   layer = 0,
   x = 164,
   y = 157,
@@ -12439,7 +12745,7 @@ enemy{
 }
 
 enemy{
-  name = "gibdos_room9_2",
+  name = "gibdos_room11_2",
   layer = 0,
   x = 276,
   y = 173,
@@ -12449,7 +12755,7 @@ enemy{
 }
 
 chest{
-  name = "chest_room9_key",
+  name = "chest_room11_key",
   layer = 0,
   x = 128,
   y = 133,
@@ -12459,7 +12765,7 @@ chest{
 }
 
 dynamic_tile{
-  name = "room11_bridge",
+  name = "room13_bridge",
   layer = 0,
   x = 208,
   y = 768,
@@ -12470,7 +12776,7 @@ dynamic_tile{
 }
 
 chest{
-  name = "chest_room11_big",
+  name = "chest_room13_big",
   layer = 0,
   x = 344,
   y = 669,
@@ -12480,7 +12786,7 @@ chest{
 }
 
 switch{
-  name = "switch_room11_arrow_3",
+  name = "switch_room13_arrow_3",
   layer = 0,
   x = 40,
   y = 776,
@@ -12491,7 +12797,7 @@ switch{
 }
 
 switch{
-  name = "switch_room11_arrow_4",
+  name = "switch_room13_arrow_4",
   layer = 0,
   x = 376,
   y = 776,
@@ -12502,7 +12808,7 @@ switch{
 }
 
 switch{
-  name = "switch_room11_arrow_1",
+  name = "switch_room13_arrow_1",
   layer = 0,
   x = 120,
   y = 840,
@@ -12513,7 +12819,7 @@ switch{
 }
 
 switch{
-  name = "switch_room11_arrow_2",
+  name = "switch_room13_arrow_2",
   layer = 0,
   x = 296,
   y = 840,
@@ -12764,7 +13070,7 @@ destructible{
 }
 
 chest{
-  name = "chest_room12_item",
+  name = "chest_room15_item",
   layer = 0,
   x = 736,
   y = 1269,
@@ -12777,7 +13083,7 @@ chest{
 }
 
 dynamic_tile{
-  name = "room9_pit",
+  name = "room11_pit",
   layer = 0,
   x = 184,
   y = 232,
@@ -12788,7 +13094,7 @@ dynamic_tile{
 }
 
 door{
-  name = "door_shutter_room9_1",
+  name = "door_shutter_room11_1",
   layer = 0,
   x = 208,
   y = 264,
@@ -12815,17 +13121,17 @@ door{
 }
 
 chest{
-  name = "chest_room14_compass",
+  name = "chest_room17_map",
   layer = 0,
   x = 1560,
   y = 1229,
-  treasure_name = "compass",
-  treasure_savegame_variable = "b1076",
+  treasure_name = "map",
+  treasure_savegame_variable = "b1075",
   sprite = "entities/chest",
 }
 
 enemy{
-  name = "gibdos_room14_1",
+  name = "gibdos_room17_1",
   layer = 0,
   x = 1436,
   y = 1325,
@@ -12835,7 +13141,7 @@ enemy{
 }
 
 enemy{
-  name = "gibdos_room14_2",
+  name = "gibdos_room17_2",
   layer = 0,
   x = 1524,
   y = 1293,
@@ -12845,7 +13151,7 @@ enemy{
 }
 
 enemy{
-  name = "gibdos_room14_3",
+  name = "gibdos_room17_3",
   layer = 0,
   x = 1468,
   y = 1237,
@@ -13221,7 +13527,7 @@ pickable{
 }
 
 chest{
-  name = "chest_room16_part",
+  name = "chest_room19_part",
   layer = 0,
   x = 1544,
   y = 669,
@@ -13232,7 +13538,7 @@ chest{
 }
 
 enemy{
-  name = "gibdos_room16_1",
+  name = "gibdos_room19_1",
   layer = 0,
   x = 1332,
   y = 717,
@@ -13242,7 +13548,7 @@ enemy{
 }
 
 enemy{
-  name = "gibdos_room16_2",
+  name = "gibdos_room19_2",
   layer = 0,
   x = 1348,
   y = 797,
@@ -13252,7 +13558,7 @@ enemy{
 }
 
 enemy{
-  name = "gibdos_room16_3",
+  name = "gibdos_room19_3",
   layer = 0,
   x = 1388,
   y = 701,
@@ -13262,7 +13568,7 @@ enemy{
 }
 
 enemy{
-  name = "gibdos_room16_4",
+  name = "gibdos_room19_4",
   layer = 0,
   x = 1444,
   y = 781,
@@ -13272,7 +13578,7 @@ enemy{
 }
 
 enemy{
-  name = "gibdos_room16_5",
+  name = "gibdos_room19_5",
   layer = 0,
   x = 1476,
   y = 701,
@@ -13282,7 +13588,7 @@ enemy{
 }
 
 enemy{
-  name = "gibdos_room16_6",
+  name = "gibdos_room19_6",
   layer = 0,
   x = 1532,
   y = 789,
@@ -13292,7 +13598,7 @@ enemy{
 }
 
 enemy{
-  name = "gibdos_room16_7",
+  name = "gibdos_room19_7",
   layer = 0,
   x = 1540,
   y = 725,
@@ -13302,7 +13608,7 @@ enemy{
 }
 
 switch{
-  name = "switch_room18_1",
+  name = "switch_room22_1",
   layer = 0,
   x = 544,
   y = 352,
@@ -13364,7 +13670,7 @@ block{
 }
 
 enemy{
-  name = "gibdos_room18_1",
+  name = "gibdos_room21_1",
   layer = 0,
   x = 1076,
   y = 389,
@@ -13374,7 +13680,7 @@ enemy{
 }
 
 enemy{
-  name = "gibdos_room18_2",
+  name = "gibdos_room21_2",
   layer = 0,
   x = 1076,
   y = 525,
@@ -13384,7 +13690,7 @@ enemy{
 }
 
 enemy{
-  name = "gibdos_room18_3",
+  name = "gibdos_room21_3",
   layer = 0,
   x = 980,
   y = 453,
@@ -13394,7 +13700,7 @@ enemy{
 }
 
 enemy{
-  name = "gibdos_room18-1_1",
+  name = "gibdos_room22_1",
   layer = 0,
   x = 620,
   y = 365,
@@ -13427,7 +13733,7 @@ door{
 }
 
 chest{
-  name = "chest_room17_key",
+  name = "chest_room20_key",
   layer = 0,
   x = 1352,
   y = 445,
@@ -13437,7 +13743,7 @@ chest{
 }
 
 chest{
-  name = "chest_room18_part",
+  name = "chest_room22_part",
   layer = 0,
   x = 616,
   y = 669,
@@ -13489,7 +13795,7 @@ chest{
 }
 
 door{
-  name = "room18_key_block",
+  name = "room21_key_block",
   layer = 0,
   x = 768,
   y = 368,
@@ -13531,7 +13837,7 @@ door{
 }
 
 door{
-  name = "door_key_room10_1",
+  name = "door_key_room12_1",
   layer = 0,
   x = 208,
   y = 552,
@@ -13545,7 +13851,7 @@ door{
 }
 
 door{
-  name = "door_key_room10_2",
+  name = "door_key_room12_2",
   layer = 0,
   x = 208,
   y = 616,
@@ -13559,7 +13865,7 @@ door{
 }
 
 switch{
-  name = "switch_room18_2",
+  name = "switch_room22_2",
   layer = 0,
   x = 608,
   y = 448,
@@ -13571,7 +13877,7 @@ switch{
 }
 
 switch{
-  name = "switch_room18_3",
+  name = "switch_room22_3",
   layer = 0,
   x = 672,
   y = 352,
@@ -13583,7 +13889,7 @@ switch{
 }
 
 switch{
-  name = "switch_room18_4",
+  name = "switch_room22_4",
   layer = 0,
   x = 544,
   y = 560,
@@ -13595,7 +13901,7 @@ switch{
 }
 
 switch{
-  name = "switch_room18_5",
+  name = "switch_room22_5",
   layer = 0,
   x = 672,
   y = 560,
@@ -13616,7 +13922,7 @@ door{
 }
 
 door{
-  name = "door_shutter_room9_2",
+  name = "door_shutter_room11_2",
   layer = 0,
   x = 208,
   y = 328,
@@ -13637,7 +13943,7 @@ sensor{
   name = "sensor_miniboss",
   layer = 0,
   x = 200,
-  y = 933,
+  y = 925,
   width = 48,
   height = 16,
 }
@@ -13670,13 +13976,13 @@ sensor{
   name = "sensor_boss",
   layer = 0,
   x = 600,
-  y = 933,
+  y = 925,
   width = 48,
   height = 16,
 }
 
 switch{
-  name = "switch_room9_arrow_1",
+  name = "switch_room11_arrow_1",
   layer = 0,
   x = 376,
   y = 104,
@@ -13687,7 +13993,7 @@ switch{
 }
 
 switch{
-  name = "switch_room9_arrow_2",
+  name = "switch_room11_arrow_2",
   layer = 0,
   x = 376,
   y = 200,
@@ -14685,24 +14991,6 @@ destructible{
   damage_on_enemies = 0,
 }
 
-sensor{
-  name = "sensor_save_ground",
-  layer = 0,
-  x = 1400,
-  y = 1117,
-  width = 48,
-  height = 16,
-}
-
-sensor{
-  name = "sensor_reset_ground",
-  layer = 0,
-  x = 1400,
-  y = 941,
-  width = 48,
-  height = 16,
-}
-
 stream{
   name = "belt_1",
   layer = 0,
@@ -14821,33 +15109,6 @@ stream{
   direction = 2,
   sprite = "entities/conveyor_belt",
   speed = 40,
-}
-
-sensor{
-  name = "sensor_save_ground_2",
-  layer = 0,
-  x = 1400,
-  y = 549,
-  width = 48,
-  height = 16,
-}
-
-sensor{
-  name = "sensor_reset_ground_2",
-  layer = 0,
-  x = 1272,
-  y = 445,
-  width = 16,
-  height = 48,
-}
-
-sensor{
-  name = "sensor_save_ground_3",
-  layer = 0,
-  x = 1160,
-  y = 437,
-  width = 16,
-  height = 48,
 }
 
 sensor{
@@ -15221,8 +15482,229 @@ wall{
   stops_blocks = true,
 }
 
+sensor{
+  name = "dungeon_room_1_",
+  layer = 0,
+  x = 1008,
+  y = 1693,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_8_",
+  layer = 0,
+  x = 1640,
+  y = 69,
+  width = 16,
+  height = 128,
+}
+
 enemy{
-  name = "keese_room18_3",
+  name = "gibdos_room7_2",
+  layer = 0,
+  x = 1912,
+  y = 229,
+  direction = 3,
+  breed = "gibdos",
+  treasure_name = "random_mountain",
+}
+
+switch{
+  name = "switch_room7",
+  layer = 0,
+  x = 1832,
+  y = 48,
+  subtype = "solid",
+  sprite = "entities/switch_crystal",
+  sound = "ice_shatter",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+block{
+  name = "minecart_1",
+  layer = 0,
+  x = 1840,
+  y = 77,
+  direction = 3,
+  sprite = "entities/block_special",
+  pushable = true,
+  pullable = true,
+  maximum_moves = 2,
+}
+
+wall{
+  layer = 0,
+  x = 1832,
+  y = 312,
+  width = 16,
+  height = 16,
+  stops_npcs = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1848,
+  y = 328,
+  width = 128,
+  height = 8,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1824,
+  y = 56,
+  width = 8,
+  height = 256,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1848,
+  y = 56,
+  width = 8,
+  height = 248,
+  stops_blocks = true,
+}
+
+sensor{
+  name = "dungeon_room_7b_b1076",
+  layer = 0,
+  x = 1656,
+  y = 69,
+  width = 16,
+  height = 128,
+}
+
+sensor{
+  name = "dungeon_room_10_b1070",
+  layer = 0,
+  x = 768,
+  y = 157,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_14_",
+  layer = 0,
+  x = 208,
+  y = 941,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_15_",
+  layer = 0,
+  x = 376,
+  y = 1221,
+  width = 16,
+  height = 208,
+}
+
+sensor{
+  name = "dungeon_room_18_",
+  layer = 0,
+  x = 1408,
+  y = 1117,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_19_b1088",
+  layer = 0,
+  x = 1408,
+  y = 829,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_20_b1072",
+  layer = 0,
+  x = 1408,
+  y = 541,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_21_",
+  layer = 0,
+  x = 1160,
+  y = 445,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_22_b1089",
+  layer = 0,
+  x = 744,
+  y = 357,
+  width = 16,
+  height = 96,
+}
+
+sensor{
+  name = "dungeon_room_23_",
+  layer = 0,
+  x = 608,
+  y = 941,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_24_",
+  layer = 0,
+  x = 1008,
+  y = 829,
+  width = 32,
+  height = 16,
+}
+
+wall{
+  layer = 0,
+  x = 1000,
+  y = 920,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1000,
+  y = 832,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1256,
+  y = 1584,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+enemy{
+  name = "keese_room21_3",
   layer = 1,
   x = 784,
   y = 517,
@@ -15231,7 +15713,7 @@ enemy{
 }
 
 enemy{
-  name = "keese_room18_1",
+  name = "keese_room21_1",
   layer = 1,
   x = 784,
   y = 437,
@@ -15240,7 +15722,7 @@ enemy{
 }
 
 enemy{
-  name = "keese_room18_2",
+  name = "keese_room21_2",
   layer = 1,
   x = 832,
   y = 453,
@@ -15249,7 +15731,7 @@ enemy{
 }
 
 enemy{
-  name = "keese_room17_4",
+  name = "keese_room20_4",
   layer = 1,
   x = 1312,
   y = 413,
@@ -15258,7 +15740,7 @@ enemy{
 }
 
 enemy{
-  name = "keese_room17_1",
+  name = "keese_room20_1",
   layer = 1,
   x = 1320,
   y = 501,
@@ -15267,7 +15749,7 @@ enemy{
 }
 
 enemy{
-  name = "keese_room17_2",
+  name = "keese_room20_2",
   layer = 1,
   x = 1520,
   y = 501,
@@ -15276,7 +15758,7 @@ enemy{
 }
 
 enemy{
-  name = "keese_room17_3",
+  name = "keese_room20_3",
   layer = 1,
   x = 1496,
   y = 405,
@@ -15366,7 +15848,7 @@ wall{
 }
 
 enemy{
-  name = "keese_room9_1",
+  name = "keese_room11_1",
   layer = 1,
   x = 88,
   y = 85,
@@ -15375,7 +15857,7 @@ enemy{
 }
 
 enemy{
-  name = "keese_room9_2",
+  name = "keese_room11_2",
   layer = 1,
   x = 88,
   y = 245,
@@ -15384,7 +15866,7 @@ enemy{
 }
 
 enemy{
-  name = "keese_room9_3",
+  name = "keese_room11_3",
   layer = 1,
   x = 344,
   y = 93,
@@ -15393,7 +15875,7 @@ enemy{
 }
 
 enemy{
-  name = "keese_room9_4",
+  name = "keese_room11_4",
   layer = 1,
   x = 344,
   y = 237,
@@ -16302,6 +16784,42 @@ tile{
   width = 112,
   height = 32,
   pattern = "137",
+}
+
+tile{
+  layer = 2,
+  x = 1824,
+  y = 32,
+  width = 32,
+  height = 8,
+  pattern = "171",
+}
+
+tile{
+  layer = 2,
+  x = 1992,
+  y = 304,
+  width = 8,
+  height = 32,
+  pattern = "368",
+}
+
+tile{
+  layer = 2,
+  x = 1832,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "612",
+}
+
+tile{
+  layer = 2,
+  x = 1848,
+  y = 16,
+  width = 192,
+  height = 16,
+  pattern = "617",
 }
 
 separator{
