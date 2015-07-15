@@ -15197,6 +15197,30 @@ door{
   sprite = "entities/door_shutter",
 }
 
+wall{
+  layer = 0,
+  x = 912,
+  y = 1696,
+  width = 32,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1088,
+  y = 1696,
+  width = 32,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
 enemy{
   name = "keese_room18_3",
   layer = 1,

@@ -1126,7 +1126,7 @@ dialog{
   icon = "73",
   skip = "current",
   text = [[
-You found a $r Big Key$w!$0
+You found a $r  Big Key$w!$0
 Now just find a big keyhole to
 put it in!
   ]]
@@ -1200,7 +1200,7 @@ dialog{
   icon = "20",
   skip = "current",
   text = [[
-You got a page to a $c book$w!
+You got a page to a $c   book$w!
 This seems like an awfully
 paltry prize after braving
 this whole dungeon. Maybe
@@ -1213,7 +1213,7 @@ dialog{
   icon = "20",
   skip = "current",
   text = [[
-You got another $c book$w page!
+You got another $c  book$w page!
 I guess this one will replace
 what that monkey stole...
   ]]
@@ -1225,7 +1225,7 @@ dialog{
   skip = "current",
   text = [[
 You got a page to the
-$c Book of Mudora!$w
+$cBook of Mudora!$w
 It's coming together!
   ]]
 }
@@ -1236,7 +1236,7 @@ dialog{
   skip = "current",
   text = [[
 You got another page to the
-$c Book of Mudora!$w
+$cBook of Mudora!$w
 
 It's starting to look like
 a real book!
@@ -1249,7 +1249,7 @@ dialog{
   skip = "current",
   text = [[
 It's yet another page of the
-$c Book of Mudora!$w
+$cBook of Mudora!$w
 
 You have almost a complete
 book now!
@@ -1262,7 +1262,7 @@ dialog{
   skip = "current",
   text = [[
 It's the final page of the
-$c Book of Mudora!$w
+$cBook of Mudora!$w
 
 The book is complete, now
 it just needs its magic
@@ -1646,7 +1646,7 @@ dialog{
   icon = "2",
   skip = "current",
   text = [[
-You found the $r Hero's Bow$w!$0
+You found the $r  Hero's Bow$w!$0
 This is said to have been
 wielded by a legendary hero
 long ago.
@@ -1796,7 +1796,7 @@ dialog{
   next = "_warning_magic",
   skip = "current",
   text = [[
-You found a $r Lantern!$w$0
+You found a $r Lantern$w!$0
 Light the way and travel in
 safety!
   ]]
@@ -1839,10 +1839,10 @@ dialog{
   icon = "70",
   skip = "current",
   text = [[
-You found a $r dungeon Map$w!
+You found a $r Dungeon Map$w!
 Use it to navigate difficult areas
-and mark where you have and haven't
-been!
+and mark where you've been and
+where you haven't!
   ]]
 }
 
@@ -2061,8 +2061,8 @@ dialog{
   icon = "63",
   skip = "current",
   text = [[
-You were awarded a trusty $r wooden
-shield of Ordon origins$w. Be careful,
+You were awarded a trusty  $r  wooden
+shield of Ordon origins $w. Be careful,
 it's only made of wood.
   ]]
 }
@@ -2107,7 +2107,7 @@ dialog{
   icon = "72",
   skip = "current",
   text = [[
-You found a $r Small Key$w!$0
+You found a $r  Small Key$w!$0
 Use it to open doors, but only
 in this area.
   ]]
@@ -2129,7 +2129,7 @@ dialog{
   icon = "66",
   skip = "current",
   text = [[
-You found a sturdy $r Ordon Sword$w!$0
+You found a sturdy $r   Ordon Sword$w!$0
 It is a lightweight but durable
 blade which has been passed down
 by the Ordon people for many
@@ -2142,7 +2142,7 @@ dialog{
   icon = "67",
   skip = "current",
   text = [[
-You received the $r Forged Blade$w!$0
+You received the $r  Forged Blade$w!$0
 Its edge is a force to be
 reckoned with!
   ]]
@@ -2153,7 +2153,7 @@ dialog{
   icon = "68",
   skip = "current",
   text = [[
-You received the $r Light Sword$w!$0
+You received the $r  Light Sword$w!$0
 Its shining edge can destroy
 most anything!
   ]]
@@ -3066,7 +3066,7 @@ dialog{
 Hey, $v! I almost forgot to mention...
 I haven't been able to leave the shop
 very much, so if you could bring me
-some deku sticks, I know I'd be able
+some $rdeku sticks$w, I know I'd be able
 to make a new potion. 10 sticks
 should get me started, but 25 or so
 should make something really great!
@@ -3078,7 +3078,7 @@ dialog{
   skip = "current",
   text = [[
 Hey, $v! I've been meaning to tell
-you... I heard about a strange mushroom
+you... I heard about a $r  strange mushroom$w
 growing in the woods to the west. If you
 were to find it, I bet I could make
 something really interesting out of it!
@@ -3522,12 +3522,12 @@ Hey Boy in Green! Since you helped
 us out, we'll give you a little tip...
 That page the $G monkeys$w just gave you
 looks familiar- we know about a really
-$b old library$w you should check out. It's
-all the way in $b North Hyrule$w though, so
-the trick to get there is to use the
-$b sewers$w. That place where you got that
-neat sword was actually part of the
-huge sewer system running under our
+$bold library$w you should check out.
+It's all the way in $b North Hyrule$w
+though, so the trick to get there is to
+use the $b sewers$w. That place where you
+got that neat sword was actually part of
+the huge sewer system running under our
 feet! Anyway, you should be able to
 find another sewer access just east of
 $b Hyrule Castle Town$w.
@@ -3548,7 +3548,7 @@ dialog{
   skip = "current",
   text = [[
 You can find valuable stuff like
-$r Mystic Jade$w and $r Deku Sticks$w scattered
+$rMystic Jade$w and $r Deku Sticks$w scattered
 around the forest sometimes.
   ]]
 }
@@ -3557,9 +3557,9 @@ dialog{
   id = "deku.4.faron.3",
   skip = "current",
   text = [[
-Find enough Mystic Jade and the
-Great Fairy of the Forest will
-give you something great!
+Find enough Mystic Jade and the Great
+Fairy of the Forest will give you
+something great!
   ]]
 }
 
@@ -3567,8 +3567,8 @@ dialog{
   id = "deku.4.faron.4",
   skip = "current",
   text = [[
-Find enough Deku Sticks and they
-can be used to make great potions!
+Find enough Deku Sticks and they can
+be used to make great potions!
   ]]
 }
 
@@ -3576,14 +3576,14 @@ dialog{
   id = "deku.4.faron.5",
   skip = "current",
   text = [[
-We're nicer than our relatives
-over at the Lost Woods of the east.
-I think they're just confused by
-that forest and it makes them angry.
-I have heard them say that they
-like odd smelling potions. Maybe if
-you gave them one of those it would
-cheer them up? $0Probably not...
+We're nicer than our relatives over at
+the $bLost Woods$w of the east. I think
+they're just confused by that forest
+and it makes them angry. I have heard
+them say that they like odd smelling
+potions. Maybe if you gave them one of
+those it would cheer them up?
+$0Probably not...
   ]]
 }
 
@@ -3591,8 +3591,8 @@ dialog{
   id = "deku1.1.faron",
   skip = "current",
   text = [[
-We want these lizards out of our
-forest! Can you please help?
+We want these lizards out of our forest!
+Can you please help?
   ]]
 }
 
@@ -3600,7 +3600,7 @@ dialog{
   id = "deku2.1.faron",
   skip = "current",
   text = [[
-We Deku are a proud and protective
+We $gDeku$w are a proud and protective
 people. This will be a standoff...
   ]]
 }
@@ -3609,10 +3609,9 @@ dialog{
   id = "deku3.1.faron",
   skip = "current",
   text = [[
-I don't think we're unreasonable.
-We were here first and we need our
-space. These SLIMY SNAKES$0 can
-go back to the water!
+I don't think we're unreasonable. We were
+here first and we need our space. These
+$gSLIMY SNAKES$w$0 can go back to the water!
   ]]
 }
 
@@ -4842,7 +4841,7 @@ dialog{
   skip = "current",
   text = [[
 Halt!$0 This beach belongs to the
-$g Gerudo Pirates$w! Our beautiful ship
+$gGerudo Pirates$w! Our beautiful ship
 ran aground on this beach, so we've
 staked our claim! After all, those silly
 lizards were no match for our spears!
@@ -4865,7 +4864,7 @@ dialog{
   skip = "current",
   text = [[
 Tell you what... if you are so
-concerned about these $g Tokay$w, then
+concerned about these  $g  Tokay$w, then
 you can help us repair our ship! We
 know of a place here in the desert
 which should contain the parts we'll
@@ -4876,7 +4875,7 @@ be on our way.
 The desert is expansive though, so
 try your best not to get lost, kid!
 I'd just stay north until you hit the
-Pyramid.$0 Here, maybe this map will
+$bPyramid$w.$0 Here, maybe this map will
 help you with that...
   ]]
 }
@@ -5660,7 +5659,7 @@ dialog{
   skip = "current",
   text = [[
 That's a sample of our famous
-$r Magic Potion$w.
+$rMagic Potion$w.
 Your meter is filled!
   ]]
 }
@@ -5672,13 +5671,13 @@ dialog{
 $v! There you are!
 I was hoping you could do me a small
 favor...
-My daughter $g Crista$w went into the
+My daughter  $g Crista$w went into the
 northern woods to pick flowers and herbs
 for potions, but she's been gone an
 awfully long time! Would you mind going
-into the woods to look for her? A $r shield$w
+into the woods to look for her? A   $r  shield$w
 should be enough to protect you and that
-$r lantern$w will light the way should it get
+$rlantern$w will light the way should it get
 too dark. I really appreciate you putting
 my worries to rest!
   ]]
@@ -5689,8 +5688,8 @@ dialog{
   skip = "current",
   text = [[
 What? You say you don't have a
-$r shield$w? Well go talk to $g Rudy$w and claim
-your prize!
+$r shield$w? Well go talk to $g Rudy$w and
+claim your prize!
   ]]
 }
 
@@ -5698,8 +5697,8 @@ dialog{
   id = "julita.2",
   skip = "current",
   text = [[
-Thanks again for finding my
-beloved $g Crista$w!
+Thanks again for finding my beloved
+$gCrista$w!
   ]]
 }
 
@@ -5716,7 +5715,7 @@ dialog{
   id = "julita.4.house",
   skip = "current",
   text = [[
-Ever chatted with that $g lumberjack$w
+Ever chatted with that  $g lumberjack$w
 fellow who lives just north of here?
 I swear he knows everything about
 those woods and probably other places
@@ -6276,11 +6275,11 @@ dialog{
   id = "monkey1.1.grove",
   skip = "current",
   text = [[
-Hey!$0 That's a neat $c piece of paper$w you
+Hey!$0 That's a neat $c  piece of paper$w you
 have there. It looks important! I like
 important things, so I'm takin' it!$0
 ...$0And don't go trying to find me,
-$g Boy in Green$w!
+$gBoy in Green$w!
   ]]
 }
 
@@ -6333,7 +6332,7 @@ dialog{
 $0$v!
 $0 . $0 . $0 .
 Yes, you've done well. Now allow me to
-explain myself. I am $y Ordona, Spirit
+explain myself. I am  $y Ordona, Spirit
 of the Light.$w$0
 I've been watching over this village for
 many centuries, keeping peace and
@@ -6365,8 +6364,8 @@ dialog{
   text = [[
 Wait, $v!
 You haven't gotten all of the parts for
-the $g Gerudo$w yet! If you want to help the
-$g Tokay$w, you should go back to the pyramid.
+the $gGerudo$w yet! If you want to help the
+$gTokay$w, you should go back to the pyramid.
   ]]
 }
 
@@ -6387,8 +6386,8 @@ your quest far sooner than we would like.
 The nearest likely source of darkness
 would be in the deep forest, where open
 trees lead into the deep, dark earth.
-The place was once called $b Sacred Grove$w,
-in $b Faron Woods$w. You must venture there,
+The place was once called $b  Sacred Grove$w,
+in $bFaron Woods$w. You must venture there,
 find the evil that lies in wait and
 vanquish it! Your village home is safe
 for now, but will remain so only as long
@@ -6552,9 +6551,8 @@ dialog{
   skip = "current",
   text = [[
 Wow, you look run down!
-Maybe you should get some sleep in
-your bed before you get too far
-away from town.
+Maybe you should get some sleep in your
+bed before you get too far from town.
   ]]
 }
 
@@ -6564,7 +6562,7 @@ dialog{
   text = [[
 Did you know that eating pumpkins
 or apples can perk you right up?
-You see, that $b blue bar$w up there is
+You see, that  $b blue bar$wup there is
 your stamina- or the amount of energy
 you have to do things. Always keep
 an apple or pumpkin on hand, and
@@ -6583,8 +6581,8 @@ all of the way up  and may even increase
 it if you've been out adventuring for
 a long time and eating a lot on the way!
 Be careful though, sleeping too much
-can actually decrease your $b stamina$w- you
-don't want to be lazy!
+can actually decrease your  $b stamina$w-
+you don't want to be lazy!
   ]]
 }
 
@@ -6751,7 +6749,7 @@ dialog{
   text = [[
 Halt! Who comes there?$0
 Wait.$0 I see the $o distinguishing mark
-you bear$w.$0 You will be permitted to
+you bear $w.$0 You will be permitted to
 step foot on this hallowed ground. But
 be warned, leave anything amiss and you
 will be severely punished!
@@ -7107,8 +7105,9 @@ dialog{
   id = "rudy.0.festival_reward_2",
   skip = "current",
   text = [[
-Take care of that. And come visit
-me later if you need anything.
+Take care of that. And come visit me
+later if you need anything. I live in a
+cave just west of here in the woods.
   ]]
 }
 
@@ -7116,9 +7115,8 @@ dialog{
   id = "rudy.0.festival_reward_3",
   skip = "current",
   text = [[
-By the way, I heard your friend
-at the potion shop was looking
-for you.
+By the way, I heard your friend at
+the potion shop was looking for you.
   ]]
 }
 
@@ -8117,7 +8115,7 @@ dialog{
   id = "tokay.0.faron",
   skip = "current",
   text = [[
-Hey $g bush folk$w! You have an entire
+Hey $gbush folk$w! You have an entire
 forest here and and you're saying you
 can't even share part of it? We were
 forced out of our homes! All we're
@@ -8199,7 +8197,7 @@ dialog{
   id = "tokay1.1.faron",
   skip = "current",
   text = [[
-We need our beach back!
+We need our beach back!$0
 Could you please help us?
   ]]
 }
@@ -8208,8 +8206,8 @@ dialog{
   id = "tokay2.1.faron",
   skip = "current",
   text = [[
-They can't share one little corner
-of this huge forest?
+They can't share one little corner of
+this huge forest?
   ]]
 }
 
@@ -8217,12 +8215,11 @@ dialog{
   id = "tokay3.1.faron",
   skip = "current",
   text = [[
-I tell ya, what we'd really
-like is to have our beach back,
-but those women with the spears
-are much scarier than these
-$g OVERGROWN SHRUBS$w$0, so we have
-no choice but to stay here.
+I tell ya, what we'd really like is to
+have our beach back, but those women
+with the spears are much scarier than
+these $g OVERGROWN SHRUBS$w$0, so we
+have no choice but to stay here.
   ]]
 }
 
@@ -8230,9 +8227,9 @@ dialog{
   id = "tokay_1.0.beach",
   skip = "current",
   text = [[
-Thank you so much for getting us
-our beach back! Please visit
-any time you'd like.
+Thank you so much for getting us our
+beach back! Please visit any time
+you'd like.
   ]]
 }
 
@@ -8241,11 +8238,10 @@ dialog{
   skip = "current",
   text = [[
 We $g Tokay$w like shiny things and
-trading. If you visit some of my
-friends in their huts, you'll be
-able to trade some of your shiny
-rupees for something else equally
-shiny!
+trading. If you visit some of my friends
+in their huts, you'll be able to trade
+some of your shiny rupees for something
+else equally shiny!
   ]]
 }
 
@@ -8253,11 +8249,10 @@ dialog{
   id = "tokay_4.0.beach",
   skip = "current",
   text = [[
-$g Tokage Gin$w? No, that's not me -
-he's probably still at the castle
-somewhere. I see why you'd be
-confused, but we Tokay really only
-come in two colors.
+$g Tokage Gin$w? No, that's not me- he's
+probably still at the castle somewhere.
+I see why you'd be confused, but we
+Tokay really only come in two colors.
   ]]
 }
 
@@ -8324,8 +8319,8 @@ dialog{
   id = "tristan.0.festival_no",
   skip = "current",
   text = [[
-Come back if you'd like to
-give it a try!
+Come back if you'd like to give
+it a try!
   ]]
 }
 
@@ -8344,8 +8339,8 @@ dialog{
   id = "tristan.0.festival_response",
   skip = "current",
   text = [[
-Well I'm afraid you're a little too young,
-but $v can, if he'd like.
+Well I'm afraid you're a little too
+young, but $v can, if he'd like.
   ]]
 }
 
@@ -8353,15 +8348,16 @@ dialog{
   id = "tristan.0.festival_rules",
   skip = "current",
   text = [[
-Okay, so the rules are simple.
-You have to make it to the finish line of
-the course after lighting each torch.
-If you make it in time, you'll win a
-prize! Remember, this is not just a race...
-it's a tribute to $y Ordona,$wsignifying our
-appreciation for all the light she bestows
-upon us and our lives. Now, if there are
-no questions...step up to the gate to race!
+Okay, so the rules are simple.$0 You have
+to make it to the finish line of the
+course after lighting each torch. If you
+make it in time, you'll win a prize!
+Remember, this is not just a race...
+it's a tribute to $y Ordona,$w signifying
+our appreciation for all the light she
+bestows upon us and our lives. Now, if
+there are no questions... step up to
+the gate to race!
   ]]
 }
 
@@ -8369,8 +8365,8 @@ dialog{
   id = "tristan.0.festival_shield",
   skip = "current",
   text = [[
-You better take care of that $r shield$w,
-too. It's a fine creation, $g Rudy$w
+You better take care of that $r   shield$w,
+too. It's a fine creation, $g  Rudy$w
 really outdid himself with the prizes
 for my little game here. I have no
 doubt you'll know what to do with it,
@@ -8398,7 +8394,7 @@ dialog{
   skip = "current",
   text = [[
 Congrats $v!
-Why don't you go tell $g Rudy$w that you
+Why don't you go tell  $g Rudy$wthat you
 won the race? He has something special
 just for the winner!
   ]]
@@ -8470,7 +8466,7 @@ $v! How are you enjoying the festival?
 I love this time of year so much that I
 just had to take a break from the Council
 to come spend time with my villagers!$0
-So $v, did you know this is a   $y festival
+So $v, did you know this is a   $y  festival
 of Light?
   ]]
 }
@@ -8490,11 +8486,10 @@ dialog{
   id = "ulo.1.festival_lamp",
   skip = "current",
   text = [[
-But wait, you don't have a $r lantern$w!
+But wait, you don't have a  $r  lantern$w!
 You can't truly enjoy the festival
-without one. Mine is in my house
-among my chests, I want you to 
-go get it.
+without one. Mine is in my house among
+my chests, I want you to  go get it.
   ]]
 }
 

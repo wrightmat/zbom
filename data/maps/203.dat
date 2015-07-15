@@ -8768,7 +8768,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1824,
+  x = 1832,
   y = 1504,
   width = 16,
   height = 112,
@@ -8786,9 +8786,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 1824,
+  x = 1832,
   y = 1616,
-  width = 80,
+  width = 64,
   height = 16,
   pattern = "518",
 }
@@ -9810,6 +9810,15 @@ tile{
   pattern = "116",
 }
 
+sensor{
+  name = "sensor_close_room6",
+  layer = 0,
+  x = 1256,
+  y = 733,
+  width = 16,
+  height = 32,
+}
+
 wall{
   layer = 0,
   x = 1408,
@@ -9828,30 +9837,6 @@ wall{
   x = 784,
   y = 1008,
   width = 32,
-  height = 16,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-}
-
-wall{
-  layer = 0,
-  x = 1952,
-  y = 640,
-  width = 16,
-  height = 16,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-}
-
-wall{
-  layer = 0,
-  x = 1664,
-  y = 656,
-  width = 16,
   height = 16,
   stops_hero = true,
   stops_npcs = true,
@@ -10927,7 +10912,7 @@ enemy{
 }
 
 enemy{
-  name = "room1_rope_1",
+  name = "room18_rope_1",
   layer = 0,
   x = 936,
   y = 1261,
@@ -10937,7 +10922,7 @@ enemy{
 }
 
 enemy{
-  name = "room1_rope_2",
+  name = "room18_rope_2",
   layer = 0,
   x = 992,
   y = 1365,
@@ -10947,7 +10932,7 @@ enemy{
 }
 
 enemy{
-  name = "room1_rope_3",
+  name = "room18_rope_3",
   layer = 0,
   x = 1104,
   y = 1269,
@@ -10957,7 +10942,7 @@ enemy{
 }
 
 enemy{
-  name = "room1_rope_4",
+  name = "room18_rope_4",
   layer = 0,
   x = 1112,
   y = 1365,
@@ -10967,7 +10952,7 @@ enemy{
 }
 
 enemy{
-  name = "room1_rope_5",
+  name = "room18_rope_5",
   layer = 0,
   x = 912,
   y = 1373,
@@ -10977,7 +10962,7 @@ enemy{
 }
 
 enemy{
-  name = "room1_rope_6",
+  name = "room18_rope_6",
   layer = 0,
   x = 1016,
   y = 1261,
@@ -12675,15 +12660,6 @@ destructible{
   damage_on_enemies = 0,
 }
 
-sensor{
-  name = "sensor_close_room6",
-  layer = 0,
-  x = 1272,
-  y = 733,
-  width = 16,
-  height = 32,
-}
-
 wall{
   layer = 0,
   x = 832,
@@ -12787,7 +12763,7 @@ sensor{
   name = "sensor_close_room9",
   layer = 0,
   x = 1408,
-  y = 1221,
+  y = 1205,
   width = 32,
   height = 16,
 }
@@ -12795,7 +12771,7 @@ sensor{
 sensor{
   name = "sensor_miniboss_start",
   layer = 0,
-  x = 1568,
+  x = 1576,
   y = 1589,
   width = 16,
   height = 48,
@@ -12814,7 +12790,7 @@ switch{
 }
 
 switch{
-  name = "room1_arrow",
+  name = "room18_arrow",
   layer = 0,
   x = 1144,
   y = 1200,
@@ -12924,7 +12900,7 @@ npc{
 }
 
 door{
-  name = "room1_shutter",
+  name = "room18_shutter",
   layer = 0,
   x = 1176,
   y = 1304,
@@ -13053,7 +13029,7 @@ door{
 }
 
 sensor{
-  name = "sensor_open_room1",
+  name = "sensor_open_room18",
   layer = 0,
   x = 1216,
   y = 1301,
@@ -13122,9 +13098,9 @@ destination{
 }
 
 sensor{
-  name = "sensor_close_room1",
+  name = "sensor_close_room18",
   layer = 0,
-  x = 1168,
+  x = 1184,
   y = 1301,
   width = 16,
   height = 48,
@@ -13409,6 +13385,362 @@ npc{
   direction = 0,
   subtype = 0,
   behavior = "dialog#hint_stone.grove.2",
+}
+
+sensor{
+  name = "dungeon_room_1_",
+  layer = 0,
+  x = 608,
+  y = 1405,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_2_b1066",
+  layer = 0,
+  x = 360,
+  y = 1309,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_3_",
+  layer = 0,
+  x = 208,
+  y = 1117,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_4_",
+  layer = 0,
+  x = 472,
+  y = 1021,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_5_",
+  layer = 0,
+  x = 1008,
+  y = 829,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_6_",
+  layer = 0,
+  x = 1272,
+  y = 733,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_7_",
+  layer = 0,
+  x = 1672,
+  y = 733,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_8_",
+  layer = 0,
+  x = 1560,
+  y = 1021,
+  width = 16,
+  height = 32,
+}
+
+wall{
+  layer = 0,
+  x = 1400,
+  y = 1208,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1568,
+  y = 1296,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1256,
+  y = 1296,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1000,
+  y = 832,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1168,
+  y = 720,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+sensor{
+  name = "dungeon_room_9_",
+  layer = 0,
+  x = 1408,
+  y = 1229,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_10_b1055",
+  layer = 0,
+  x = 1672,
+  y = 1309,
+  width = 16,
+  height = 32,
+}
+
+wall{
+  layer = 0,
+  x = 1800,
+  y = 1496,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+sensor{
+  name = "dungeon_room_11_",
+  layer = 0,
+  x = 1808,
+  y = 1517,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_12_",
+  layer = 0,
+  x = 1560,
+  y = 1597,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_13_",
+  layer = 0,
+  x = 1160,
+  y = 1597,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_18_",
+  layer = 0,
+  x = 1160,
+  y = 1309,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_14_",
+  layer = 0,
+  x = 1008,
+  y = 541,
+  width = 32,
+  height = 16,
+}
+
+wall{
+  layer = 0,
+  x = 1000,
+  y = 632,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1000,
+  y = 544,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 856,
+  y = 432,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+sensor{
+  name = "dungeon_room_15_",
+  layer = 0,
+  x = 760,
+  y = 445,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_16_",
+  layer = 0,
+  x = 608,
+  y = 253,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_17_",
+  layer = 0,
+  x = 872,
+  y = 157,
+  width = 16,
+  height = 32,
+}
+
+wall{
+  layer = 0,
+  x = 856,
+  y = 144,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 768,
+  y = 1296,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 456,
+  y = 1296,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1656,
+  y = 1584,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1568,
+  y = 1584,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+sensor{
+  name = "dungeon_room_19_",
+  layer = 0,
+  x = 1808,
+  y = 205,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_18b_",
+  layer = 0,
+  x = 872,
+  y = 1309,
+  width = 16,
+  height = 32,
+}
+
+wall{
+  layer = 0,
+  x = 1256,
+  y = 1584,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 1168,
+  y = 1584,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
 }
 
 tile{

@@ -32,12 +32,12 @@ function map:on_started(destination)
   end
 end
 
-function sensor_open_room1:on_activated()
+function sensor_open_room18:on_activated()
   -- open only if big key in inventory (helps prevent running around)
-  if game:get_value("b1053") then map:open_doors("room1_shutter") end
+  if game:get_value("b1053") then map:open_doors("room18_shutter") end
 end
-function sensor_close_room1:on_activated()
-  if map:get_entity("hero"):get_direction() == 2 then map:close_doors("room1_shutter") end
+function sensor_close_room18:on_activated()
+  if map:get_entity("hero"):get_direction() == 2 and not room18_arrow:is_activated() then map:close_doors("room1_shutter") end
 end
 function sensor_open_room9:on_activated()
   map:open_doors("room9_shutter")
@@ -71,8 +71,8 @@ function sensor_out_torches_room:on_activated()
   torch_room6_5:get_sprite():set_animation("unlit")
 end
 
-function room1_arrow:on_activated()
-  map:open_doors("room1_shutter")
+function room18_arrow:on_activated()
+  map:open_doors("room18_shutter")
 end
 
 function room6_arrow_1:on_activated()

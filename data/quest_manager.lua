@@ -40,7 +40,8 @@ local function initialize_sensor()
 
     -- Sensors prefixed by "dungeon_room_N" save exploration state of room "N" of current dungeon floor.
     -- Optional treasure savegame value appended to end will play signal chime if value is false and hero has compass in inventory. "dungeon_room_N_bxxx"
-    local room, signal = name:match("^dungeon_room_(%d+)_(%U%d+)")
+    local room = name:match("^dungeon_room_(%d+)")
+    local signal = name:match("(%U%d+)$")
     if room ~= nil then
       game:set_explored_dungeon_room(nil, nil, tonumber(room))
       if signal ~= nil and not game:get_value(signal) then
