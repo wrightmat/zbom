@@ -3,10 +3,9 @@ local enemy = ...
 -- Vire: Flying enemy which also creates and controls Keese
 
 local going_hero = false
-local timer
 
 function enemy:on_created()
-  self:set_life(4)
+  self:set_life(3)
   self:set_damage(2)
   self:create_sprite("enemies/vire")
   self:set_hurt_style("monster")
@@ -59,8 +58,8 @@ end
 function enemy:go_random()
   self:get_sprite():set_animation("walking")
   local m = sol.movement.create("circle")
-  m:set_radius(48)
-  m:set_radius_speed(56)
+  m:set_radius(32)
+  m:set_radius_speed(48)
   m:start(self)
   going_hero = false
 end
@@ -71,13 +70,13 @@ function enemy:go_circle()
   m:set_center(hero, 0, -20)
   m:set_radius(48)
   m:set_initial_angle(math.pi / 2)
-  m:set_angle_speed(72)
+  m:set_angle_speed(56)
   m:set_ignore_obstacles(true)
   m:start(self)
   going_hero = true
 end
 
-function enemy:on_dying()
+function enemy:on_dead()
   -- Split the vire into two keese
   self:create_enemy({ breed = "keese", treasure_name = "heart" })
   self:create_enemy({ breed = "keese", treasure_name = "random" })

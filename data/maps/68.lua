@@ -49,8 +49,6 @@ function map:on_started(destination)
 end
 
 function map:on_draw(dst_surface)
-  if map:get_id() == "68" and lantern_overlay then lantern_overlay:fade_out() end
-
   -- Show torch overlay for Ordona dialog
   if game:get_time_of_day() ~= "night" and torch_overlay ~= nil then
     local screen_width, screen_height = dst_surface:get_size()

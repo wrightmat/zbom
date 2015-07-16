@@ -1126,7 +1126,7 @@ dialog{
   icon = "73",
   skip = "current",
   text = [[
-You found a  $r Big Key$w!$0
+You found a $r  Big Key$w!$0
 Now just find a big keyhole to
 put it in!
   ]]
@@ -2837,7 +2837,7 @@ dialog{
   id = "council_attendant.1",
   skip = "current",
   text = [[
-A $m Sanctum$w? I can't say I know what
+A $mSanctum$w? I can't say I know what
 that is...$0 I do know that there
 are temples spread all over
 Hyrule though...
@@ -2848,7 +2848,7 @@ dialog{
   id = "council_attendant.2",
   skip = "current",
   text = [[
-Have you tried the $b Abandoned Pyramid$w
+Have you tried the  $b Abandoned Pyramid$w
 that sits at the north end of the
 Desert of the $g Gerudo$w?
   ]]
@@ -2858,7 +2858,7 @@ dialog{
   id = "council_attendant.3",
   skip = "current",
   text = [[
-Have you tried the $b Mausoleum$w that
+Have you tried the  $b Mausoleum$w that
 the $g Gorons$w have created as a memorial
 on the east end of their mountain?
   ]]
@@ -2868,7 +2868,7 @@ dialog{
   id = "council_attendant.4",
   skip = "current",
   text = [[
-Have you tried the $b Lakebed Temple$w
+Have you tried the  $b Lakebed Temple$w
 that the $g Zora$w use to pray at the
 bottom of $b Lake Hylia$w?
   ]]
@@ -2878,7 +2878,7 @@ dialog{
   id = "council_attendant.5",
   skip = "current",
   text = [[
-Have you tried the $b Caverns$w that are
+Have you tried the  $b Caverns$w that are
 nestled in the snowy peaks that the
 $g Anouki$w call home?
   ]]
@@ -2888,7 +2888,7 @@ dialog{
   id = "council_attendant.6",
   skip = "current",
   text = [[
-Have you tried the new $b Tower$w that
+Have you tried the new  $b Tower$w that
 the $g Rito$w have built in order to pray
 to the gods of the wind?
   ]]
@@ -2898,7 +2898,7 @@ dialog{
   id = "council_attendant.7",
   skip = "current",
   text = [[
-Have you tried the $b old ruins in the
+Have you tried the  $b old ruins in the
 east$w or the $b vast network of sewers$w
 that run beneath our feet?
   ]]
@@ -5558,13 +5558,14 @@ The great $b Lakebed Temple$w can be entered
 by $g Zora$w only. It helps that there are
 only two ways there - with our great
 relic, the $r Zora Flippers$w, and by draining
-the entirety of $b Lake Hylia$w. And who
+the entirety of  $b Lake Hylia$w. And who
 could possibly do that (besides we Zora).
 After all, no non-Zora still alive
 remembers the details of the undergroud
 switch station not far from this very
 office.$0
-Wait.$0 You didn't hear that.
+Wait.$0
+You didn't hear that.
 
 ]]
 }
@@ -5573,10 +5574,10 @@ dialog{
   id = "juba.1.office",
   skip = "current",
   text = [[
-With the disappearance of $g Zelda $w, the
+With the disappearance of   $g Zelda $w, the
 council has disbanded. But some of us
 actually care about our work, so we've
-set up here in the $b Council office$w.
+set up here in the  $b Council office$w.
   ]]
 }
 

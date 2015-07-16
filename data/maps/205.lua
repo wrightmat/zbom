@@ -54,26 +54,26 @@ function map:on_started(destination)
   if not game:get_value("b1119") then chest_rupees:set_enabled(false) end
 
   -- Lantern slowly drains magic here so you're forced to find ways to refill magic
-  if not game:get_value("b1117") then
-    magic_deplete = sol.timer.start(map, 5000, function()
+  magic_deplete = sol.timer.start(map, 5000, function()
+    if not game:get_value("b1117") then
       game:remove_magic(1)
       return true
-    end)
-  end
+    end
+  end)
 end
 
 function npc_dampeh:on_interaction()
   if game:get_value("i1029") == 5 then
     game:start_dialog("dampeh.1.mausoleum", function()
+      game:set_value("i1029", 6)
       npc_dampeh:get_sprite():set_animation("walking")
       local m = sol.movement.create("target")
       m:set_target(232, 1712)
-      m:set_speed(16)
+      m:set_speed(24)
       m:start(npc_dampeh, function()
-	npc_dampeh:remove()
-	dampeh_1:remove()
-	dampeh_2:remove()
-        game:set_value("i1029", 6)
+        npc_dampeh:remove()
+        dampeh_1:remove()
+        dampeh_2:remove()
         game:start_dialog("osgor.2.mausoleum")
       end)
     end)
@@ -200,36 +200,27 @@ for enemy in map:get_entities("dodongo") do
   end
 end
 
-function game:on_map_changed(map)
-  function map:on_draw(dst_surface)
-    local screen_width, screen_height = dst_surface:get_size()
+function map:on_draw(dst_surface)
+  local screen_width, screen_height = dst_surface:get_size()
+  local camera_x, camera_y = map:get_camera_position()
+
+  -- Draw the lantern light that follows the hero
+  if lantern_overlay then
+    local hero = map:get_entity("hero")
+    local hero_x, hero_y = hero:get_center_position()
+    local x = 320 - hero_x + camera_x
+    local y = 240 - hero_y + camera_y
+    lantern_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
+  else
+    lantern_overlay = sol.surface.create(640,480)
+    lantern_overlay:set_opacity(0.9 * 255)
+    lantern_overlay:fill_color{0, 0, 0}
+    local hero = map:get_entity("hero")
+    local hero_x, hero_y = hero:get_center_position()
     local camera_x, camera_y = map:get_camera_position()
-
-    -- Draw the lights eminating from the statues
-    --local s1x, s1y, s1l = statue_1:get_position()
-    --light_overlay = sol.surface.create("entities/light.png")
-    --local x = 320 - s1x + camera_x
-    --local y = 240 - s1y + camera_y
-    --light_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
-
-    -- Draw the lantern light that follows the hero
-    if lantern_overlay then
-      local hero = map:get_entity("hero")
-      local hero_x, hero_y = hero:get_center_position()
-      local x = 320 - hero_x + camera_x
-      local y = 240 - hero_y + camera_y
-      lantern_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
-    else
-      lantern_overlay = sol.surface.create(640,480)
-      lantern_overlay:set_opacity(0.9 * 255)
-      lantern_overlay:fill_color{0, 0, 0}
-      local hero = map:get_entity("hero")
-      local hero_x, hero_y = hero:get_center_position()
-      local camera_x, camera_y = map:get_camera_position()
-      local x = 320 - hero_x + camera_x
-      local y = 240 - hero_y + camera_y
-      lantern_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
-    end
+    local x = 320 - hero_x + camera_x
+    local y = 240 - hero_y + camera_y
+    lantern_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
   end
 end
 
