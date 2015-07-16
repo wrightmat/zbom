@@ -3,6 +3,7 @@ local enemy = ...
 -- Vire: Flying enemy which also creates and controls Keese
 
 local going_hero = false
+local timer
 
 function enemy:on_created()
   self:set_life(3)
