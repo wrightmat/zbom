@@ -29,7 +29,7 @@ end
 function npc_rudy:on_interaction()
   if game:get_value("i1902") == 0 then   -- General dialogs for low Rep
     game:start_dialog("rudy.0", rudy_reputation)
-  elseif game:get_value("b1851") then
+  elseif game:get_value("i1841") == 4 then
     if game:get_value("i1902") >= 5 then
       game:start_dialog("rudy.5.sword_working")
     else
@@ -37,18 +37,19 @@ function npc_rudy:on_interaction()
       game:start_dialog("rudy.5.sword", function(answer)
         if answer == 1 then
           game:start_dialog("rudy.5.sword_1", function()
-	    game:set_ability("sword", 0)
-	    game:set_value("i1902", 5)
+	  game:set_ability("sword", 0)
+	  game:set_value("i1902", 5)
+            game:set_value("i1841", 0) -- remove Master Ore
             local m = sol.movement.create("target")
             m:set_target(232, 168)
             m:set_speed(32)
 	    m:start(npc_rudy, function()
-              local m = sol.movement.create("target")
-              m:set_target(232, 168)
-              m:set_speed(32)
-              m:set_target(136, 120)
+                local m = sol.movement.create("target")
+                m:set_target(232, 168)
+                m:set_speed(32)
+                m:set_target(136, 120)
 	      m:start(npc_rudy, function()
-		m:stop()
+	        m:stop()
 	        npc_rudy:get_sprite():set_direction(3)
 	        npc_rudy:get_sprite():set_animation("stopped")
 	      end)

@@ -153,6 +153,15 @@ which should help speed repair work.
 }
 
 dialog{
+  id = "_item_description.airship_part.4",
+  skip = "current",
+  text = [[
+Master Ore is rare and useful for
+things like sword smithing.
+  ]]
+}
+
+dialog{
   id = "_item_description.alchemy_counter.1",
   skip = "current",
   text = [[
@@ -1047,6 +1056,17 @@ Get back as soon as you can.
 }
 
 dialog{
+  id = "_treasure.airship_part.4",
+  icon = "29",
+  skip = "current",
+  text = [[
+You got some $r Master Ore$w!$0
+The blacksmith can use it to
+improve your sword!
+  ]]
+}
+
+dialog{
   id = "_treasure.alchemy.1",
   icon = "25",
   skip = "current",
@@ -1841,17 +1861,6 @@ dialog{
 You found a $r Dungeon Map$w!
 Use it to navigate difficult areas
 and explore places you haven't yet!
-  ]]
-}
-
-dialog{
-  id = "_treasure.master_ore.1",
-  icon = "29",
-  skip = "current",
-  text = [[
-You got some $r Master Ore$w!$0
-The blacksmith can use it
-to improve your sword!
   ]]
 }
 

@@ -12,6 +12,7 @@ animation{
     { x = 384, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
     { x = 384, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
     { x = 384, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 416, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
 animation{
@@ -336,13 +337,6 @@ animation{
   src_image = "entities/items.png",
   directions = {
     { x = 560, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-  },
-}
-animation{
-  name = "master_ore",
-  src_image = "entities/items.png",
-  directions = {
-    { x = 416, y = 32, frame_width = 16, frame_height = 16, origin_x = 4, origin_y = 16 },
   },
 }
 animation{
