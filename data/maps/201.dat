@@ -5284,7 +5284,7 @@ enemy{
 }
 
 enemy{
-  name = "room3_helmasaur_1",
+  name = "helmasaur_room4_1",
   layer = 0,
   x = 444,
   y = 597,
@@ -5294,7 +5294,7 @@ enemy{
 }
 
 enemy{
-  name = "room3_helmasaur_2",
+  name = "helmasaur_room4_2",
   layer = 0,
   x = 564,
   y = 557,
@@ -5304,7 +5304,7 @@ enemy{
 }
 
 enemy{
-  name = "room3_helmasaur_3",
+  name = "helmasaur_room4_3",
   layer = 0,
   x = 540,
   y = 701,
@@ -5351,6 +5351,7 @@ chest{
   x = 1448,
   y = 637,
   treasure_name = "compass",
+  treasure_savegame_variable = "b1045",
   sprite = "entities/chest",
 }
 
@@ -5607,7 +5608,7 @@ door{
 sensor{
   name = "sensor_boss",
   layer = 0,
-  x = 1880,
+  x = 1864,
   y = 653,
   width = 16,
   height = 48,
@@ -5625,7 +5626,7 @@ door{
 sensor{
   name = "sensor_miniboss",
   layer = 0,
-  x = 1264,
+  x = 1256,
   y = 413,
   width = 16,
   height = 48,
@@ -6048,7 +6049,7 @@ teletransporter{
 }
 
 sensor{
-  name = "dungeon_room_1",
+  name = "dungeon_room_1_",
   layer = 0,
   x = 168,
   y = 749,
@@ -6057,7 +6058,7 @@ sensor{
 }
 
 sensor{
-  name = "dungeon_room_2",
+  name = "dungeon_room_2_",
   layer = 0,
   x = 168,
   y = 509,
@@ -6066,7 +6067,7 @@ sensor{
 }
 
 sensor{
-  name = "dungeon_room_3",
+  name = "dungeon_room_3_",
   layer = 0,
   x = 144,
   y = 213,
@@ -6075,7 +6076,7 @@ sensor{
 }
 
 sensor{
-  name = "dungeon_room_4",
+  name = "dungeon_room_4_",
   layer = 0,
   x = 392,
   y = 421,
@@ -6084,7 +6085,7 @@ sensor{
 }
 
 sensor{
-  name = "dungeon_room_5",
+  name = "dungeon_room_5_",
   layer = 0,
   x = 728,
   y = 421,
@@ -6093,16 +6094,16 @@ sensor{
 }
 
 sensor{
-  name = "dungeon_room_6",
+  name = "dungeon_room_6_",
   layer = 0,
-  x = 1280,
+  x = 1272,
   y = 421,
   width = 16,
   height = 32,
 }
 
 sensor{
-  name = "dungeon_room_7",
+  name = "dungeon_room_7_",
   layer = 0,
   x = 1360,
   y = 589,
@@ -6111,7 +6112,7 @@ sensor{
 }
 
 sensor{
-  name = "dungeon_room_8",
+  name = "dungeon_room_8_",
   layer = 0,
   x = 1560,
   y = 725,
@@ -6120,21 +6121,30 @@ sensor{
 }
 
 sensor{
-  name = "dungeon_room_9",
+  name = "dungeon_room_9_",
   layer = 0,
-  x = 1896,
+  x = 1880,
   y = 661,
   width = 16,
   height = 32,
 }
 
 sensor{
-  name = "dungeon_room_10",
+  name = "dungeon_room_10_",
   layer = 0,
   x = 2024,
-  y = 373,
+  y = 365,
   width = 32,
   height = 16,
+}
+
+wall{
+  layer = 0,
+  x = 2016,
+  y = 368,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
 }
 
 tile{
@@ -6165,7 +6175,7 @@ enemy{
 }
 
 enemy{
-  name = "keese_3",
+  name = "keese_room7_3",
   layer = 1,
   x = 1288,
   y = 733,
@@ -6174,7 +6184,7 @@ enemy{
 }
 
 enemy{
-  name = "keese_4",
+  name = "keese_room7_4",
   layer = 1,
   x = 1368,
   y = 645,
@@ -6183,7 +6193,7 @@ enemy{
 }
 
 enemy{
-  name = "keese_5",
+  name = "keese_room7_5",
   layer = 1,
   x = 1448,
   y = 741,
@@ -6192,7 +6202,7 @@ enemy{
 }
 
 enemy{
-  name = "keese_6",
+  name = "keese_room7_6",
   layer = 1,
   x = 1280,
   y = 597,

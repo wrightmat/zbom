@@ -16,9 +16,9 @@ function map:on_started(destination)
   if game:get_value("b1046") then map:open_doors("door_boss") end
 end
 
-for enemy in map:get_entities("room3_helmasaur") do
+for enemy in map:get_entities("helmasaur") do
   enemy.on_dead = function()
-    if not map:has_entities("room3_helmasaur") then
+    if not map:has_entities("helmasaur_room4") then
       map:open_doors("door_room1")
       game:set_value("b1049", true)
     end

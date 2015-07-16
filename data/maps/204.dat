@@ -11,6 +11,15 @@ properties{
 
 tile{
   layer = 0,
+  x = 704,
+  y = 1216,
+  width = 64,
+  height = 192,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
   x = 768,
   y = 336,
   width = 192,
@@ -961,15 +970,6 @@ tile{
   width = 8,
   height = 8,
   pattern = "69",
-}
-
-tile{
-  layer = 0,
-  x = 704,
-  y = 1216,
-  width = 64,
-  height = 192,
-  pattern = "22",
 }
 
 tile{
@@ -11727,6 +11727,32 @@ tile{
   pattern = "618",
 }
 
+wall{
+  layer = 0,
+  x = 1000,
+  y = 720,
+  width = 32,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 720,
+  y = 1264,
+  width = 32,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
 sensor{
   name = "sensor_reset_ground_2",
   layer = 0,
@@ -11746,7 +11772,7 @@ sensor{
 }
 
 sensor{
-  name = "dungeon_room_17_b1076",
+  name = "dungeon_room_17_b1075",
   layer = 0,
   x = 1264,
   y = 1309,
@@ -15926,7 +15952,6 @@ enemy{
   y = 941,
   direction = 3,
   breed = "keese",
-  treasure_name = "random",
 }
 
 enemy{
@@ -15936,7 +15961,6 @@ enemy{
   y = 1077,
   direction = 3,
   breed = "keese",
-  treasure_name = "random",
 }
 
 enemy{
@@ -15946,7 +15970,6 @@ enemy{
   y = 933,
   direction = 3,
   breed = "keese",
-  treasure_name = "random",
 }
 
 wall{
@@ -16980,13 +17003,5 @@ separator{
   y = 1160,
   width = 800,
   height = 16,
-}
-
-separator{
-  layer = 2,
-  x = 664,
-  y = 1464,
-  width = 16,
-  height = 288,
 }
 

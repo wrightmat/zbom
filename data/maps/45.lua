@@ -25,12 +25,10 @@ function map:on_started(destination)
   end
 
   if destination == from_castle_1 and game:get_value("i1032") == 3 then
-    torch_fire_2:get_sprite():set_animation("lit")
     sol.timer.start(1000, function()
       hero:freeze()
       torch_overlay = sol.surface.create("entities/dark.png")
       torch_overlay:fade_in(50)
-      game:set_value("i1027", 5)
       hero:set_direction(0)
       game:start_dialog("ordona.3.castle", game:get_player_name(), function()
         torch_overlay:fade_out(50)
@@ -39,7 +37,6 @@ function map:on_started(destination)
         game:add_max_stamina(100)
         game:set_stamina(game:get_max_stamina())
         game:set_value("i1032", 4)
-        torch_fire_2:get_sprite():set_animation("unlit")
       end)
     end)
   end

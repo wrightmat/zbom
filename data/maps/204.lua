@@ -202,7 +202,7 @@ for enemy in map:get_entities("gibdos") do
       sol.audio.play_sound("chest_appears")
     end
 
-    if not map:has_entities("gibdos_room17") and not game:get_value("b1076") then
+    if not map:has_entities("gibdos_room17") and not game:get_value("b1075") then
       chest_room17_map:set_enabled(true)
       sol.audio.play_sound("chest_appears")
     end

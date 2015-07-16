@@ -6,21 +6,19 @@ local game = map:get_game()
 --------------------------------------
 
 if game:get_value("i1029") == nil then game:set_value("i1029", 0) end
+local lantern_overlay = nil
 
 if game:has_item("lamp") then
- lantern_overlay = sol.surface.create("entities/dark.png")
+  lantern_overlay = sol.surface.create("entities/dark.png")
 else
   game:start_dialog("_cannot_see_need_lamp")
   lantern_overlay = sol.surface.create(640,480)
   lantern_overlay:set_opacity(0.98 * 255)
   lantern_overlay:fill_color{0, 0, 0}
 end
-if game:get_value("b1117") and lantern_overlay then
-  lantern_overlay:clear()
-end
+if game:get_value("b1117") and lantern_overlay then lantern_overlay:clear() end
 
 function map:on_started(destination)
-
   if game:get_value("i1029") <= 4 then
     npc_goron_ghost:remove()
   elseif game:get_value("i1029") == 5 then
@@ -232,6 +230,13 @@ function game:on_map_changed(map)
       local y = 240 - hero_y + camera_y
       lantern_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
     end
+  end
+end
+
+function map:on_finished()
+  if lantern_overlay then
+    lantern_overlay:fade_out()
+    lantern_overlay = nil
   end
 end
 
