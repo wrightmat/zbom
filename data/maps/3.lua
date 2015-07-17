@@ -20,7 +20,7 @@ function map:on_started()
   shop_poe_soul:get_sprite():set_direction(0)
 
   -- Replace shop items if they're bought
-  if game:get_item("world_map"):get_variant() >= 1 then --world map
+  if game:get_item("world_map"):get_variant() > 1 then --world map
     shop_world_map_2:remove()
     self:create_shop_treasure({
 	name = "shop_shovel",

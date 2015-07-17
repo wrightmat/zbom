@@ -7,6 +7,7 @@ function game:initialize_hud()
   local magic_bar_builder = require("hud/magic_bar")
   local stamina_bar_builder = require("hud/stamina_bar")
   local rupees_builder = require("hud/rupees")
+  local pickables_builder = require("hud/pickables")
   local small_keys_builder = require("hud/small_keys")
   local floor_builder = require("hud/floor")
   local attack_icon_builder = require("hud/attack_icon")
@@ -34,6 +35,10 @@ function game:initialize_hud()
 
   menu = rupees_builder:new(self)
   menu:set_dst_position(8, -20)
+  self.hud[#self.hud + 1] = menu
+
+  menu = pickables_builder:new(self)
+  menu:set_dst_position(-255, -30)
   self.hud[#self.hud + 1] = menu
 
   menu = small_keys_builder:new(self)
@@ -203,4 +208,3 @@ function game:set_custom_command_effect(command, effect)
     self.hud.custom_command_effects[command] = effect
   end
 end
-
