@@ -9,11 +9,22 @@ function enemy:on_created()
   self:set_life(6)
   self:set_damage(4)
   self:create_sprite("enemies/lynel")
+  self:set_hurt_style("monster")
   self:set_size(32, 32)
   self:set_origin(16, 27)
+  self:set_pushed_back_when_hurt(false)
   self:set_attack_consequence("boomerang", "protected")
   self:set_attack_consequence("arrow", "protected")
   self:set_attack_consequence("fire", "protected")
+end
+
+function enemy:on_movement_changed(movement)
+  local direction4 = movement:get_direction4()
+  self:get_sprite():set_direction(direction4)
+end
+
+function enemy:on_obstacle_reached(movement)
+  self:shoot()
 end
 
 function enemy:shoot()
@@ -40,16 +51,4 @@ function enemy:on_restarted()
   if math.random(4) == 1 then
     self:shoot()
   end
-end
-
-function enemy:on_movement_changed(movement)
-  local direction4 = movement:get_direction4()
-  local sprite = self:get_sprite()
-  sprite:set_direction(direction4)
-end
-
-function enemy:on_hurt()
-  if self:get_sprite():get_animation() ~= "immobilized" then self:shoot() end
-  self:get_sprite():set_animation("hurt")
-  sol.timer.start(self, 1500, function() self:restart() end)
 end

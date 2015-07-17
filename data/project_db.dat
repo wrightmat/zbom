@@ -291,6 +291,7 @@ sprite{ id = "enemies/rock_lux", description = "Lux rock" }
 sprite{ id = "enemies/rock_small", description = "Small rock" }
 sprite{ id = "enemies/ropa", description = "Ropa" }
 sprite{ id = "enemies/rope", description = "Rope (snake)" }
+sprite{ id = "enemies/shadow_link", description = "Shadow Link" }
 sprite{ id = "enemies/skeletor", description = "Skeletor" }
 sprite{ id = "enemies/snap_dragon", description = "Snap dragon" }
 sprite{ id = "enemies/soldier_green", description = "Soldier, green" }
@@ -858,6 +859,7 @@ entity{ id = "switch_lever", description = "Switch, Lever" }
 
 language{ id = "en", description = "English dialogs" }
 
+font{ id = "blue_digits", description = "blue_digits" }
 font{ id = "bom", description = "bom" }
 font{ id = "green_digits", description = "green_digits" }
 font{ id = "hylian", description = "hylian" }

@@ -98,6 +98,7 @@ function pickables:check()
     else
       increment = -1
     end
+    self.jade_text:set_font("blue_digits")
     self.jade_displayed = self.jade_displayed + increment
   end
 
@@ -110,6 +111,7 @@ function pickables:check()
     else
       increment = -1
     end
+    self.stick_text:set_font("blue_digits")
     self.stick_displayed = self.stick_displayed + increment
   end
 
@@ -122,6 +124,7 @@ function pickables:check()
     else
       increment = -1
     end
+    self.amber_text:set_font("blue_digits")
     self.amber_displayed = self.amber_displayed + increment
   end
 
@@ -134,6 +137,7 @@ function pickables:check()
     else
       increment = -1
     end
+    self.alchemy_text:set_font("blue_digits")
     self.alchemy_displayed = self.alchemy_displayed + increment
   end
 
@@ -146,6 +150,7 @@ function pickables:check()
     else
       increment = -1
     end
+    self.plume_text:set_font("blue_digits")
     self.plume_displayed = self.plume_displayed + increment
   end
 
@@ -158,6 +163,7 @@ function pickables:check()
     else
       increment = -1
     end
+    self.crystal_text:set_font("blue_digits")
     self.crystal_displayed = self.crystal_displayed + increment
   end
 
@@ -170,6 +176,7 @@ function pickables:check()
     else
       increment = -1
     end
+    self.ore_text:set_font("blue_digits")
     self.ore_displayed = self.ore_displayed + increment
   end
 
@@ -192,37 +199,65 @@ function pickables:rebuild_surface()
   self.background_img:draw_region(0, 0, 250, 25, self.surface)
 
   -- Jade (counter).
-  if self.jade_displayed == 99 then self.jade_text:set_font("green_digits") else self.jade_text:set_font("white_digits") end
+  if self.jade_displayed == 20 or self.jade_displayed == 50 or self.jade_displayed == 99 then
+    self.jade_text:set_font("green_digits")
+  else
+    if self.jade_text:get_font() ~= "blue_digits" then self.jade_text:set_font("white_digits") end
+  end
   self.jade_text:set_text(self.jade_displayed)
   self.jade_text:draw(self.surface, 32, 14)
 
   -- Sticks (counter).
-  if self.stick_displayed == 99 then self.stick_text:set_font("green_digits") else self.stick_text:set_font("white_digits") end
+  if self.stick_displayed == 10 or self.stick_displayed == 25 or self.stick_displayed == 99 then
+    self.stick_text:set_font("green_digits")
+  else
+    if self.stick_text:get_font() ~= "blue_digits" then self.stick_text:set_font("white_digits") end
+  end
   self.stick_text:set_text(self.stick_displayed)
   self.stick_text:draw(self.surface, 66, 14)
 
   -- Amber (counter).
-  if self.amber_displayed == 99 then self.amber_text:set_font("green_digits") else self.amber_text:set_font("white_digits") end
+  if self.amber_displayed == 20 or self.amber_displayed == 50 or self.amber_displayed == 99 then
+    self.amber_text:set_font("green_digits")
+  else
+    if self.amber_text:get_font() ~= "blue_digits" then self.amber_text:set_font("white_digits") end
+  end
   self.amber_text:set_text(self.amber_displayed)
   self.amber_text:draw(self.surface, 102, 14)
 
   -- Alchemy (counter).
-  if self.alchemy_displayed == 99 then self.alchemy_text:set_font("green_digits") else self.alchemy_text:set_font("white_digits") end
+  if self.alchemy_displayed == 50 or self.alchemy_displayed == 99 then
+    self.alchemy_text:set_font("green_digits")
+  else
+    if self.alchemy_text:get_font() ~= "blue_digits" then self.alchemy_text:set_font("white_digits") end
+  end
   self.alchemy_text:set_text(self.alchemy_displayed)
   self.alchemy_text:draw(self.surface, 136, 14)
 
   -- Plume (counter).
-  if self.plume_displayed == 99 then self.plume_text:set_font("green_digits") else self.plume_text:set_font("white_digits") end
+  if self.plume_displayed == 50 or self.plume_displayed == 99 then
+    self.plume_text:set_font("green_digits")
+  else
+    if self.plume_text:get_font() ~= "blue_digits" then self.plume_text:set_font("white_digits") end
+  end
   self.plume_text:set_text(self.plume_displayed)
   self.plume_text:draw(self.surface, 170, 14)
 
   -- Crystal (counter).
-  if self.crystal_displayed == 99 then self.crystal_text:set_font("green_digits") else self.crystal_text:set_font("white_digits") end
+  if self.crystal_displayed == 50 or self.crystal_displayed == 99 then
+    self.crystal_text:set_font("green_digits")
+  else
+    if self.crystal_text:get_font() ~= "blue_digits" then self.crystal_text:set_font("white_digits") end
+  end
   self.crystal_text:set_text(self.crystal_displayed)
   self.crystal_text:draw(self.surface, 206, 14)
 
   -- Ore (counter).
-  if self.ore_displayed == 99 then self.ore_text:set_font("green_digits") else self.ore_text:set_font("white_digits") end
+  if self.ore_displayed == 50 or self.ore_displayed == 99 then
+    self.ore_text:set_font("green_digits")
+  else
+    if self.ore_text:get_font() ~= "blue_digits" then self.ore_text:set_font("white_digits") end
+  end
   self.ore_text:set_text(self.ore_displayed)
   self.ore_text:draw(self.surface, 242, 14)
 
