@@ -9,8 +9,12 @@ function enemy:on_created()
   self:set_size(48, 64)
   self:set_origin(24, 31)
   self:set_invincible()
+  self:set_attack_consequence("sword", "custom")
   self:set_obstacle_behavior("flying")
   self:set_layer_independent_collisions(true)
+  self:set_pushed_back_when_hurt(false)
+  self:set_can_hurt_hero_running(true)
+  self:set_push_hero_on_sword(true)
   self:set_optimization_distance(0)
   self:set_minimum_shield_needed(3)  -- Mirror shield protects hero
 end
@@ -41,4 +45,11 @@ function enemy:go(angle)
   m:set_angle(angle)
   m:set_max_distance(320)
   m:start(self)
+end
+
+function enemy:on_custom_attack_received(attack, sprite)
+  if attack == "sword" and game:get_item("sword"):get_variant == 3 then
+    -- only hurt by the light sword
+    sprite:fade_out(20, function() self:remove() end)
+  end
 end

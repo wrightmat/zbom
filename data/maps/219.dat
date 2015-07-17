@@ -10035,14 +10035,6 @@ jumper{
   jump_length = 40,
 }
 
-destination{
-  name = "from_boss",
-  layer = 0,
-  x = 896,
-  y = 101,
-  direction = 1,
-}
-
 teletransporter{
   name = "to_boss",
   layer = 0,
@@ -10050,7 +10042,8 @@ teletransporter{
   y = 56,
   width = 16,
   height = 16,
-  destination_map = "219",
+  destination_map = "218",
+  destination = "from_basement_2",
 }
 
 tile{
@@ -10247,10 +10240,23 @@ teletransporter{
   name = "to_above",
   layer = 1,
   x = 896,
-  y = 1456,
+  y = 1448,
   width = 16,
   height = 16,
   destination_map = "219",
+}
+
+wall{
+  layer = 1,
+  x = 888,
+  y = 1464,
+  width = 32,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{

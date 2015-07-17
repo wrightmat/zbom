@@ -10386,6 +10386,15 @@ tile{
   pattern = "113",
 }
 
+sensor{
+  name = "sensor_miniboss",
+  layer = 0,
+  x = 192,
+  y = 485,
+  width = 48,
+  height = 16,
+}
+
 wall{
   layer = 0,
   x = 192,
@@ -10426,7 +10435,7 @@ destination{
   name = "from_above",
   layer = 0,
   x = 456,
-  y = 157,
+  y = 149,
   direction = 3,
 }
 
@@ -10889,15 +10898,6 @@ enemy{
   breed = "wizzrobe",
 }
 
-sensor{
-  name = "sensor_miniboss",
-  layer = 0,
-  x = 192,
-  y = 501,
-  width = 48,
-  height = 16,
-}
-
 chest{
   name = "chest_map",
   layer = 0,
@@ -11016,6 +11016,90 @@ teletransporter{
   height = 48,
   destination_map = "214",
   destination = "from_hole_above",
+}
+
+wall{
+  layer = 0,
+  x = 192,
+  y = 312,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 688,
+  y = 312,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 552,
+  y = 592,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 480,
+  y = 592,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 688,
+  y = 384,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 192,
+  y = 384,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 192,
+  y = 408,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{

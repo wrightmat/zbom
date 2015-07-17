@@ -7025,6 +7025,25 @@ wall{
   stops_projectiles = true,
 }
 
+destination{
+  name = "from_sanctum",
+  layer = 0,
+  x = 768,
+  y = 437,
+  direction = 3,
+}
+
+teletransporter{
+  name = "to_sanctum",
+  layer = 0,
+  x = 760,
+  y = 392,
+  width = 16,
+  height = 16,
+  destination_map = "218",
+  destination = "from_outside",
+}
+
 tile{
   layer = 1,
   x = 464,

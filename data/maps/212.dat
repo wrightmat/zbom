@@ -4464,6 +4464,30 @@ tile{
   pattern = "51",
 }
 
+wall{
+  layer = 0,
+  x = 488,
+  y = 576,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 56,
+  y = 576,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
 dynamic_tile{
   name = "lava_9",
   layer = 0,

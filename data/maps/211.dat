@@ -4707,6 +4707,18 @@ tile{
   pattern = "51",
 }
 
+wall{
+  layer = 0,
+  x = 488,
+  y = 576,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
 teletransporter{
   name = "to_floor_3",
   layer = 0,
