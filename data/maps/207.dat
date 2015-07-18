@@ -19482,107 +19482,17 @@ enemy{
 }
 
 sensor{
-  name = "dungeon_room_1_",
-  layer = 1,
-  x = 1872,
-  y = 773,
-  width = 16,
-  height = 176,
-}
-
-sensor{
-  name = "dungeon_room_2_",
-  layer = 1,
-  x = 1672,
-  y = 845,
-  width = 16,
-  height = 32,
-}
-
-sensor{
-  name = "dungeon_room_3_",
-  layer = 1,
-  x = 1576,
-  y = 669,
-  width = 32,
-  height = 16,
-}
-
-sensor{
-  name = "dungeon_room_4_",
-  layer = 1,
-  x = 1768,
-  y = 477,
-  width = 16,
-  height = 32,
-}
-
-sensor{
-  name = "dungeon_room_5_",
-  layer = 1,
-  x = 1768,
-  y = 333,
-  width = 32,
-  height = 16,
-}
-
-sensor{
-  name = "dungeon_room_6_",
-  layer = 1,
-  x = 1352,
-  y = 429,
-  width = 32,
-  height = 16,
-}
-
-sensor{
-  name = "dungeon_room_7_",
-  layer = 1,
-  x = 1576,
-  y = 1037,
-  width = 32,
-  height = 16,
-}
-
-sensor{
-  name = "dungeon_room_8_",
-  layer = 1,
-  x = 1784,
-  y = 1165,
-  width = 16,
-  height = 32,
-}
-
-sensor{
-  name = "dungeon_room_9_",
-  layer = 1,
-  x = 1816,
-  y = 1333,
-  width = 32,
-  height = 16,
-}
-
-sensor{
-  name = "dungeon_room_10_",
-  layer = 1,
-  x = 1384,
-  y = 1101,
-  width = 16,
-  height = 32,
-}
-
-sensor{
-  name = "dungeon_room_11_",
-  layer = 1,
-  x = 1208,
-  y = 1165,
+  name = "dungeon_room_22_",
+  layer = 0,
+  x = 712,
+  y = 1181,
   width = 16,
   height = 32,
 }
 
 sensor{
   name = "dungeon_room_12_",
-  layer = 1,
+  layer = 0,
   x = 1000,
   y = 1277,
   width = 16,
@@ -19590,44 +19500,44 @@ sensor{
 }
 
 sensor{
-  name = "dungeon_room_13a_",
-  layer = 1,
-  x = 1344,
-  y = 901,
-  width = 32,
-  height = 16,
+  name = "dungeon_room_21_",
+  layer = 0,
+  x = 968,
+  y = 1037,
+  width = 16,
+  height = 48,
 }
 
 sensor{
-  name = "dungeon_room_13b_",
-  layer = 1,
-  x = 1400,
-  y = 845,
+  name = "dungeon_room_11_",
+  layer = 0,
+  x = 1208,
+  y = 1165,
   width = 16,
   height = 32,
 }
 
 sensor{
-  name = "dungeon_room_14_",
-  layer = 1,
-  x = 1336,
-  y = 709,
+  name = "dungeon_room_20_",
+  layer = 0,
+  x = 1128,
+  y = 997,
   width = 32,
   height = 16,
 }
 
 sensor{
-  name = "dungeon_room_15_",
-  layer = 1,
-  x = 1192,
-  y = 845,
+  name = "dungeon_room_10_",
+  layer = 0,
+  x = 1384,
+  y = 1101,
   width = 16,
   height = 32,
 }
 
 sensor{
   name = "dungeon_room_16_",
-  layer = 1,
+  layer = 0,
   x = 984,
   y = 845,
   width = 16,
@@ -19636,7 +19546,7 @@ sensor{
 
 sensor{
   name = "dungeon_room_17a_b1125",
-  layer = 1,
+  layer = 0,
   x = 896,
   y = 653,
   width = 32,
@@ -19644,44 +19554,8 @@ sensor{
 }
 
 sensor{
-  name = "dungeon_room_18_",
-  layer = 1,
-  x = 1024,
-  y = 325,
-  width = 16,
-  height = 128,
-}
-
-sensor{
-  name = "dungeon_room_17b_b1125",
-  layer = 1,
-  x = 1008,
-  y = 325,
-  width = 16,
-  height = 128,
-}
-
-sensor{
-  name = "dungeon_room_19a",
-  layer = 1,
-  x = 1128,
-  y = 525,
-  width = 32,
-  height = 16,
-}
-
-sensor{
-  name = "dungeon_room_19b_",
-  layer = 1,
-  x = 1128,
-  y = 701,
-  width = 32,
-  height = 16,
-}
-
-sensor{
   name = "dungeon_room_19c",
-  layer = 1,
+  layer = 0,
   x = 1080,
   y = 605,
   width = 16,
@@ -19689,30 +19563,156 @@ sensor{
 }
 
 sensor{
-  name = "dungeon_room_20_",
-  layer = 1,
+  name = "dungeon_room_19b_",
+  layer = 0,
   x = 1128,
-  y = 997,
+  y = 701,
   width = 32,
   height = 16,
 }
 
 sensor{
-  name = "dungeon_room_21_",
-  layer = 1,
-  x = 968,
-  y = 1037,
-  width = 16,
-  height = 48,
+  name = "dungeon_room_19a",
+  layer = 0,
+  x = 1128,
+  y = 525,
+  width = 32,
+  height = 16,
 }
 
 sensor{
-  name = "dungeon_room_22_",
-  layer = 1,
-  x = 712,
-  y = 1181,
+  name = "dungeon_room_17b_b1125",
+  layer = 0,
+  x = 1008,
+  y = 325,
+  width = 16,
+  height = 128,
+}
+
+sensor{
+  name = "dungeon_room_18_",
+  layer = 0,
+  x = 1024,
+  y = 325,
+  width = 16,
+  height = 128,
+}
+
+sensor{
+  name = "dungeon_room_15_",
+  layer = 0,
+  x = 1192,
+  y = 845,
   width = 16,
   height = 32,
+}
+
+sensor{
+  name = "dungeon_room_14_",
+  layer = 0,
+  x = 1336,
+  y = 709,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_13a_",
+  layer = 0,
+  x = 1344,
+  y = 901,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_13b_",
+  layer = 0,
+  x = 1400,
+  y = 845,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_3_",
+  layer = 0,
+  x = 1576,
+  y = 669,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_2_",
+  layer = 0,
+  x = 1672,
+  y = 845,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_7_",
+  layer = 0,
+  x = 1576,
+  y = 1037,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_8_",
+  layer = 0,
+  x = 1784,
+  y = 1165,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_9_",
+  layer = 0,
+  x = 1816,
+  y = 1333,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_1_",
+  layer = 0,
+  x = 1872,
+  y = 773,
+  width = 16,
+  height = 176,
+}
+
+sensor{
+  name = "dungeon_room_4_",
+  layer = 0,
+  x = 1768,
+  y = 477,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_5_",
+  layer = 0,
+  x = 1768,
+  y = 333,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_6_",
+  layer = 0,
+  x = 1352,
+  y = 429,
+  width = 32,
+  height = 16,
 }
 
 tile{

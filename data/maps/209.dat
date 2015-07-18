@@ -7103,6 +7103,96 @@ wall{
   stops_enemies = true,
 }
 
+sensor{
+  name = "dungeon_room_5_",
+  layer = 0,
+  x = 184,
+  y = 605,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_2_",
+  layer = 0,
+  x = 88,
+  y = 989,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_1_",
+  layer = 0,
+  x = 240,
+  y = 989,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_3_",
+  layer = 0,
+  x = 160,
+  y = 1381,
+  width = 16,
+  height = 48,
+}
+
+sensor{
+  name = "dungeon_room_4_",
+  layer = 0,
+  x = 776,
+  y = 1581,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_7_",
+  layer = 0,
+  x = 888,
+  y = 749,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_8_",
+  layer = 0,
+  x = 840,
+  y = 429,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_9_",
+  layer = 0,
+  x = 752,
+  y = 261,
+  width = 16,
+  height = 192,
+}
+
+sensor{
+  name = "dungeon_room_11_",
+  layer = 0,
+  x = 488,
+  y = 157,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_10_",
+  layer = 0,
+  x = 392,
+  y = 317,
+  width = 16,
+  height = 32,
+}
+
 tile{
   layer = 1,
   x = 536,
@@ -7131,100 +7221,10 @@ tile{
 }
 
 sensor{
-  name = "dungeon_room_1_",
-  layer = 1,
-  x = 240,
-  y = 989,
-  width = 16,
-  height = 32,
-}
-
-sensor{
-  name = "dungeon_room_2_",
-  layer = 1,
-  x = 88,
-  y = 989,
-  width = 16,
-  height = 32,
-}
-
-sensor{
-  name = "dungeon_room_3_",
-  layer = 1,
-  x = 160,
-  y = 1381,
-  width = 16,
-  height = 48,
-}
-
-sensor{
-  name = "dungeon_room_4_",
-  layer = 1,
-  x = 776,
-  y = 1581,
-  width = 16,
-  height = 32,
-}
-
-sensor{
-  name = "dungeon_room_5_",
-  layer = 1,
-  x = 184,
-  y = 605,
-  width = 16,
-  height = 32,
-}
-
-sensor{
   name = "dungeon_room_6_",
   layer = 1,
   x = 488,
   y = 621,
-  width = 16,
-  height = 32,
-}
-
-sensor{
-  name = "dungeon_room_7_",
-  layer = 1,
-  x = 888,
-  y = 749,
-  width = 32,
-  height = 16,
-}
-
-sensor{
-  name = "dungeon_room_8_",
-  layer = 1,
-  x = 840,
-  y = 429,
-  width = 32,
-  height = 16,
-}
-
-sensor{
-  name = "dungeon_room_9_",
-  layer = 1,
-  x = 752,
-  y = 261,
-  width = 16,
-  height = 192,
-}
-
-sensor{
-  name = "dungeon_room_10_",
-  layer = 1,
-  x = 392,
-  y = 317,
-  width = 16,
-  height = 32,
-}
-
-sensor{
-  name = "dungeon_room_11_",
-  layer = 1,
-  x = 488,
-  y = 157,
   width = 16,
   height = 32,
 }

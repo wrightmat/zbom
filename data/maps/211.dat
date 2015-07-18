@@ -5244,6 +5244,42 @@ wall{
   stops_projectiles = true,
 }
 
+sensor{
+  name = "dungeon_room_1_",
+  layer = 0,
+  x = 72,
+  y = 589,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_2_",
+  layer = 0,
+  x = 232,
+  y = 357,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_3_",
+  layer = 0,
+  x = 504,
+  y = 213,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_1__2",
+  layer = 0,
+  x = 664,
+  y = 453,
+  width = 32,
+  height = 16,
+}
+
 tile{
   layer = 1,
   x = 432,
