@@ -3167,6 +3167,294 @@ tile{
   pattern = "381",
 }
 
+tile{
+  layer = 0,
+  x = 96,
+  y = 840,
+  width = 16,
+  height = 16,
+  pattern = "380",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 840,
+  width = 48,
+  height = 16,
+  pattern = "379",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 840,
+  width = 48,
+  height = 16,
+  pattern = "405",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 840,
+  width = 16,
+  height = 16,
+  pattern = "407",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 856,
+  width = 16,
+  height = 32,
+  pattern = "408",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 888,
+  width = 16,
+  height = 24,
+  pattern = "409",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 888,
+  width = 80,
+  height = 24,
+  pattern = "410",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 888,
+  width = 8,
+  height = 24,
+  pattern = "411",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 856,
+  width = 16,
+  height = 8,
+  pattern = "381",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 856,
+  width = 48,
+  height = 8,
+  pattern = "404",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 856,
+  width = 48,
+  height = 8,
+  pattern = "406",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 816,
+  width = 32,
+  height = 40,
+  pattern = "705",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 816,
+  width = 32,
+  height = 40,
+  pattern = "705",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 792,
+  width = 24,
+  height = 40,
+  pattern = "403",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 808,
+  width = 24,
+  height = 24,
+  pattern = "572",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 920,
+  width = 16,
+  height = 16,
+  pattern = "569",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 928,
+  width = 16,
+  height = 8,
+  pattern = "215",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 928,
+  width = 8,
+  height = 8,
+  pattern = "213",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 920,
+  width = 8,
+  height = 8,
+  pattern = "211",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 912,
+  width = 8,
+  height = 8,
+  pattern = "207",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 912,
+  width = 16,
+  height = 8,
+  pattern = "208",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 920,
+  width = 16,
+  height = 8,
+  pattern = "212",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 928,
+  width = 8,
+  height = 8,
+  pattern = "214",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 920,
+  width = 8,
+  height = 8,
+  pattern = "210",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 912,
+  width = 8,
+  height = 8,
+  pattern = "209",
+}
+
+tile{
+  layer = 0,
+  x = 600,
+  y = 936,
+  width = 16,
+  height = 16,
+  pattern = "429",
+}
+
+tile{
+  layer = 0,
+  x = 840,
+  y = 800,
+  width = 32,
+  height = 32,
+  pattern = "420",
+}
+
+tile{
+  layer = 0,
+  x = 840,
+  y = 872,
+  width = 16,
+  height = 24,
+  pattern = "428",
+}
+
+tile{
+  layer = 0,
+  x = 848,
+  y = 888,
+  width = 16,
+  height = 24,
+  pattern = "427",
+}
+
+tile{
+  layer = 0,
+  x = 872,
+  y = 816,
+  width = 16,
+  height = 16,
+  pattern = "430",
+}
+
+tile{
+  layer = 0,
+  x = 888,
+  y = 792,
+  width = 24,
+  height = 40,
+  pattern = "603",
+}
+
+tile{
+  layer = 0,
+  x = 984,
+  y = 864,
+  width = 32,
+  height = 40,
+  pattern = "604",
+}
+
 destination{
   name = "from_subrosia_1",
   layer = 0,
@@ -3360,7 +3648,7 @@ teletransporter{
 npc{
   name = "npc_rito_4",
   layer = 0,
-  x = 184,
+  x = 552,
   y = 901,
   direction = 3,
   subtype = 1,
@@ -3435,6 +3723,41 @@ npc{
   direction = -1,
   subtype = 0,
   sprite = "entities/items",
+}
+
+shop_treasure{
+  name = "shop_treasure_1",
+  layer = 0,
+  x = 136,
+  y = 880,
+  treasure_name = "tunic",
+  treasure_variant = 3,
+  treasure_savegame_variable = "b2018",
+  price = 3000,
+  dialog = "shop.tunic_3",
+}
+
+shop_treasure{
+  name = "shop_treasure_2",
+  layer = 0,
+  x = 176,
+  y = 880,
+  treasure_name = "rupee_bag",
+  treasure_variant = 3,
+  treasure_savegame_variable = "b2019",
+  price = 1000,
+  dialog = "shop.wallet",
+}
+
+npc{
+  name = "npc_rito_shopkeep",
+  layer = 0,
+  x = 120,
+  y = 877,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/rito",
+  behavior = "dialog#shopkeep.0",
 }
 
 tile{
@@ -3705,5 +4028,32 @@ tile{
   width = 16,
   height = 8,
   pattern = "610",
+}
+
+tile{
+  layer = 2,
+  x = 560,
+  y = 800,
+  width = 24,
+  height = 8,
+  pattern = "573",
+}
+
+tile{
+  layer = 2,
+  x = 480,
+  y = 912,
+  width = 16,
+  height = 8,
+  pattern = "611",
+}
+
+tile{
+  layer = 2,
+  x = 984,
+  y = 856,
+  width = 32,
+  height = 8,
+  pattern = "605",
 }
 

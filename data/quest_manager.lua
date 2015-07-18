@@ -104,14 +104,16 @@ local function initialize_maps()
   end
 
   function map_metatable:on_started(destination)
+    local game = self:get_game()
+
     function random_8(lower, upper)
       math.randomseed(os.time())
       return math.random(math.ceil(lower/8), math.floor(upper/8))*8
     end
 
     -- Night time is more dangerous - add various enemies
-    if self:get_game():get_map():get_world() == "outside_world" and
-    self:get_game():get_time_of_day() == "night" then
+    if game:get_map():get_world() == "outside_world" and
+    game:get_time_of_day() == "night" then
       local keese_random = math.random()
       if keese_random < 0.7 then
 	local ex = random_8(1,1120)
@@ -158,6 +160,29 @@ local function initialize_maps()
 	local ey = random_8(1,1120)
 	self:create_enemy({ breed="redead", x=ex, y=ey, layer=0, direction=1 })
       end
+    end
+
+    -- if hero doesn't have red tunic, slowly remove stamina in Subrosia
+    if game:get_map():get_world() == "subrosia" and
+    game:get_item("tunic"):get_variant() < 2 then
+      sol.timer.start(game:get_map(), 5000, function()
+        game:remove_stamina(1)
+        return true
+      end)
+    end
+
+  end
+
+  function map_metatable:on_updated()
+    -- if hero doesn't have blue tunic, slowly remove stamina while swimming
+    if game:get_hero():get_state() == "swimming" and
+    game:get_item("tunic"):get_variant() < 3 then
+      swim_timer = sol.timer.start(game, 5000, function()
+        game:remove_stamina(1)
+        return true
+      end)
+    else
+      if swim_timer then swim_timer = nil end
     end
   end
 

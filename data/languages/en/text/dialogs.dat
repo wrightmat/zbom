@@ -2331,10 +2331,9 @@ dialog{
   icon = "61",
   skip = "current",
   text = [[
-You found the $r Blue Tunic$w!$0
-This will help you survive
-cold water or even freezing
-temperatures!
+You found the $r Red Tunic$w!$0
+This will prevent heat exhaustion
+as well as cut the damage you take!
   ]]
 }
 
@@ -2343,9 +2342,10 @@ dialog{
   icon = "62",
   skip = "current",
   text = [[
-You found the $r Red Tunic$w!$0
-This will allow you to brave
-smoldering heat!
+You found the $r Blue Tunic$w!$0
+This will prevent you from getting
+too tired while swimming, as well
+as cut the damage you take!
   ]]
 }
 
@@ -7394,8 +7394,8 @@ dialog{
   id = "shop.tunic_2",
   skip = "current",
   text = [[
-A bright blue tunic which protects
-the wearer.
+A deep red tunic which protects
+the wearer from heat exhaustion.
   ]]
 }
 
@@ -7403,8 +7403,17 @@ dialog{
   id = "shop.tunic_3",
   skip = "current",
   text = [[
-A deep red tunic which protects
-the wearer.
+A bright blue tunic which protects
+the wearer from exhaustion while
+swimming.
+  ]]
+}
+
+dialog{
+  id = "shop.wallet",
+  text = [[
+A huge wallet which can hold
+almost uncountable rupees!
   ]]
 }
 

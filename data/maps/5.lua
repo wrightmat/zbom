@@ -69,9 +69,9 @@ function map:on_started(destination)
 	x = 496,
 	y = 392,
 	price = 999,
-	dialog = "shop.tunic_3",
+	dialog = "shop.tunic_2",
 	treasure_name = "tunic",
-	treasure_variant = 3
+	treasure_variant = 2
     })
   end
 end

@@ -743,9 +743,9 @@ item{ id = "shovel", description = "Shovel" }
 item{ id = "small_key", description = "Small Key" }
 item{ id = "stick", description = "Deku Stick" }
 item{ id = "stick_counter", description = "Deku Stick counter" }
-item{ id = "sword", description = "Sword (Ordon / Forged / White)" }
+item{ id = "sword", description = "Sword (Ordon / Forged / Light)" }
 item{ id = "trading", description = "Trading Item (12 variants)" }
-item{ id = "tunic", description = "Tunic (Green / Blue / Red)" }
+item{ id = "tunic", description = "Tunic (Green / Red / Blue)" }
 item{ id = "world_map", description = "World Map" }
 
 enemy{ id = "aquadracini", description = "Aquadracini" }
@@ -859,7 +859,6 @@ entity{ id = "switch_lever", description = "Switch, Lever" }
 
 language{ id = "en", description = "English dialogs" }
 
-font{ id = "blue_digits", description = "blue_digits" }
 font{ id = "bom", description = "bom" }
 font{ id = "green_digits", description = "green_digits" }
 font{ id = "hylian", description = "hylian" }
