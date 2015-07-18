@@ -5578,8 +5578,8 @@ wall{
   width = 32,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -5591,49 +5591,49 @@ wall{
   width = 32,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 dynamic_tile{
+  name = "hole_puzzle_2",
   layer = 0,
   x = 448,
   y = 1416,
+  pattern = "524",
   width = 48,
   height = 48,
-  name = "hole_puzzle_2",
-  pattern = "524",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "hole_puzzle_1",
   layer = 0,
   x = 168,
   y = 1368,
+  pattern = "524",
   width = 64,
   height = 48,
-  name = "hole_puzzle_1",
-  pattern = "524",
   enabled_at_start = true,
 }
 
 chest{
+  name = "chest_map",
   layer = 0,
   x = 680,
   y = 1141,
-  name = "chest_map",
   treasure_name = "map",
   treasure_savegame_variable = "b1143",
   sprite = "entities/chest",
 }
 
 chest{
+  name = "chest_item",
   layer = 0,
   x = 80,
   y = 85,
-  name = "chest_item",
   treasure_name = "cane",
   treasure_savegame_variable = "b1146",
   sprite = "entities/chest_big",
@@ -5643,52 +5643,48 @@ chest{
 }
 
 enemy{
+  name = "room2_bubble_white",
   layer = 0,
   x = 80,
   y = 488,
-  name = "room2_bubble_white",
   direction = 3,
   breed = "bubble_white",
 }
 
 teletransporter{
+  name = "to_B1",
   layer = 0,
   x = 72,
   y = 1712,
   width = 16,
   height = 16,
-  name = "to_B1",
   destination_map = "208",
   destination = "from_B2",
 }
 
 destination{
+  name = "from_B1",
   layer = 0,
   x = 80,
   y = 1709,
-  name = "from_B1",
   direction = 1,
 }
 
 custom_entity{
+  name = "pit_3",
   layer = 0,
   x = 280,
   y = 592,
-  width = 16,
-  height = 16,
-  name = "pit_3",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_2",
   layer = 0,
   x = 296,
   y = 592,
-  width = 16,
-  height = 16,
-  name = "pit_2",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
@@ -5733,29 +5729,29 @@ destructible{
 }
 
 enemy{
+  name = "fire_bar",
   layer = 0,
   x = 848,
   y = 605,
-  name = "fire_bar",
   direction = 3,
   breed = "fire_bar",
 }
 
 enemy{
+  name = "hardhat",
   layer = 0,
   x = 672,
   y = 557,
-  name = "hardhat",
   direction = 3,
   breed = "hardhat_beetle_blue",
   treasure_name = "random",
 }
 
 enemy{
+  name = "hardhat_2",
   layer = 0,
   x = 568,
   y = 637,
-  name = "hardhat_2",
   direction = 3,
   breed = "hardhat_beetle_blue",
   treasure_name = "random",
@@ -5767,8 +5763,8 @@ wall{
   y = 608,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -5779,8 +5775,8 @@ wall{
   y = 608,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -5791,8 +5787,8 @@ wall{
   y = 592,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -5803,8 +5799,8 @@ wall{
   y = 592,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -5815,8 +5811,8 @@ wall{
   y = 976,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -5827,47 +5823,47 @@ wall{
   y = 976,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 enemy{
+  name = "hardhat_3",
   layer = 0,
   x = 488,
   y = 933,
-  name = "hardhat_3",
   direction = 3,
   breed = "hardhat_beetle_blue",
   treasure_name = "random",
 }
 
 enemy{
+  name = "hardhat_4",
   layer = 0,
   x = 360,
   y = 1021,
-  name = "hardhat_4",
   direction = 3,
   breed = "hardhat_beetle_blue",
   treasure_name = "random",
 }
 
 enemy{
+  name = "hardhat_5",
   layer = 0,
   x = 920,
   y = 605,
-  name = "hardhat_5",
   direction = 3,
   breed = "hardhat_beetle_red",
   treasure_name = "random",
 }
 
 switch{
+  name = "switch_star_boss",
   layer = 0,
   x = 848,
   y = 1136,
-  name = "switch_star_boss",
   subtype = "walkable",
   sprite = "entities/switch_star",
   sound = "switch",
@@ -5876,10 +5872,10 @@ switch{
 }
 
 chest{
+  name = "chest_book",
   layer = 0,
   x = 584,
   y = 125,
-  name = "chest_book",
   treasure_name = "book_mudora",
   treasure_variant = 5,
   treasure_savegame_variable = "b1150",
@@ -5887,23 +5883,23 @@ chest{
 }
 
 teletransporter{
+  name = "to_outside_from_book",
   layer = 0,
   x = 656,
   y = 112,
   width = 16,
   height = 16,
-  name = "to_outside_from_book",
-  sprite = "entities/teletransporter",
-  sound = "warp",
   destination_map = "53",
   destination = "from_cavern",
+  sprite = "entities/teletransporter",
+  sound = "warp",
 }
 
 door{
+  name = "door_boss_1",
   layer = 0,
   x = 456,
   y = 312,
-  name = "door_boss_1",
   direction = 2,
   sprite = "entities/door_big_key",
   savegame_variable = "b1148",
@@ -5913,10 +5909,10 @@ door{
 }
 
 door{
+  name = "door_boss_2",
   layer = 0,
   x = 408,
   y = 312,
-  name = "door_boss_2",
   direction = 0,
   sprite = "entities/door_big_key",
   savegame_variable = "b1148",
@@ -5926,19 +5922,19 @@ door{
 }
 
 door{
+  name = "door_boss_3",
   layer = 0,
   x = 408,
   y = 152,
-  name = "door_boss_3",
   direction = 0,
   sprite = "entities/door_shutter",
 }
 
 enemy{
+  name = "boss_stalfos",
   layer = 0,
   x = 232,
   y = 316,
-  name = "boss_stalfos",
   direction = 3,
   breed = "stalfos_knight",
   rank = 2,
@@ -5947,72 +5943,72 @@ enemy{
 }
 
 sensor{
+  name = "sensor_boss",
   layer = 0,
-  x = 392,
+  x = 408,
   y = 309,
   width = 16,
   height = 48,
-  name = "sensor_boss",
 }
 
 pickable{
+  name = "boss_heart",
   layer = 0,
   x = 360,
   y = 165,
-  name = "boss_heart",
   treasure_name = "heart_container",
   treasure_savegame_variable = "b1149",
 }
 
 dynamic_tile{
+  name = "hole_puzzle_4",
   layer = 0,
   x = 608,
   y = 1352,
+  pattern = "524",
   width = 32,
   height = 112,
-  name = "hole_puzzle_4",
-  pattern = "524",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "hole_puzzle_5",
   layer = 0,
   x = 376,
   y = 1536,
+  pattern = "524",
   width = 48,
   height = 48,
-  name = "hole_puzzle_5",
-  pattern = "524",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "hole_puzzle_6",
   layer = 0,
   x = 544,
   y = 1416,
+  pattern = "524",
   width = 48,
   height = 48,
-  name = "hole_puzzle_6",
-  pattern = "524",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "hole_puzzle_7",
   layer = 0,
   x = 640,
   y = 1560,
+  pattern = "524",
   width = 48,
   height = 48,
-  name = "hole_puzzle_7",
-  pattern = "524",
   enabled_at_start = true,
 }
 
 switch{
+  name = "switch_star_2",
   layer = 0,
   x = 512,
   y = 1440,
-  name = "switch_star_2",
   subtype = "walkable",
   sprite = "entities/switch_star",
   sound = "switch",
@@ -6021,10 +6017,10 @@ switch{
 }
 
 switch{
+  name = "switch_star_1",
   layer = 0,
   x = 512,
   y = 1560,
-  name = "switch_star_1",
   subtype = "walkable",
   sprite = "entities/switch_star",
   sound = "switch",
@@ -6033,96 +6029,96 @@ switch{
 }
 
 dynamic_tile{
+  name = "hole_boss_1",
   layer = 0,
   x = 480,
   y = 264,
+  pattern = "524",
   width = 32,
   height = 112,
-  name = "hole_boss_1",
-  pattern = "524",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "hole_boss_2",
   layer = 0,
   x = 584,
   y = 344,
+  pattern = "524",
   width = 64,
   height = 64,
-  name = "hole_boss_2",
-  pattern = "524",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "hole_boss_3",
   layer = 0,
   x = 696,
   y = 280,
+  pattern = "524",
   width = 96,
   height = 32,
-  name = "hole_boss_3",
-  pattern = "524",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "hole_boss_4",
   layer = 0,
   x = 880,
   y = 240,
+  pattern = "524",
   width = 32,
   height = 112,
-  name = "hole_boss_4",
-  pattern = "524",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "hole_boss_5",
   layer = 0,
   x = 800,
   y = 104,
+  pattern = "524",
   width = 64,
   height = 64,
-  name = "hole_boss_5",
-  pattern = "524",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "hole_boss_6",
   layer = 0,
   x = 768,
   y = 864,
+  pattern = "524",
   width = 64,
   height = 64,
-  name = "hole_boss_6",
-  pattern = "524",
   enabled_at_start = true,
 }
 
 enemy{
+  name = "hardhat_6",
   layer = 0,
   x = 872,
   y = 781,
-  name = "hardhat_6",
   direction = 3,
   breed = "hardhat_beetle_red",
   treasure_name = "random",
 }
 
 enemy{
+  name = "hardhat_7",
   layer = 0,
   x = 912,
   y = 869,
-  name = "hardhat_7",
   direction = 3,
   breed = "hardhat_beetle_red",
   treasure_name = "random",
 }
 
 enemy{
+  name = "hardhat_8",
   layer = 0,
   x = 856,
   y = 973,
-  name = "hardhat_8",
   direction = 3,
   breed = "hardhat_beetle_red",
   treasure_name = "random",
@@ -6134,8 +6130,8 @@ wall{
   y = 304,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -6146,8 +6142,8 @@ wall{
   y = 304,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -6158,8 +6154,8 @@ wall{
   y = 144,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -6170,8 +6166,8 @@ wall{
   y = 144,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -6182,8 +6178,8 @@ wall{
   y = 432,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
 }
 
@@ -6193,8 +6189,8 @@ wall{
   y = 504,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -6205,8 +6201,8 @@ wall{
   y = 656,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -6217,27 +6213,27 @@ wall{
   y = 728,
   width = 32,
   height = 8,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 enemy{
+  name = "hardhat_9",
   layer = 0,
   x = 248,
   y = 525,
-  name = "hardhat_9",
   direction = 3,
   breed = "hardhat_beetle_blue",
   treasure_name = "random",
 }
 
 enemy{
+  name = "hardhat_10",
   layer = 0,
   x = 328,
   y = 669,
-  name = "hardhat_10",
   direction = 3,
   breed = "hardhat_beetle_blue",
   treasure_name = "random",
@@ -6254,411 +6250,357 @@ destructible{
 }
 
 custom_entity{
+  name = "pit_boss_1_1",
   layer = 0,
   x = 184,
   y = 248,
-  width = 16,
-  height = 16,
-  name = "pit_boss_1_1",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_boss_1_2",
   layer = 0,
   x = 200,
   y = 248,
-  width = 16,
-  height = 16,
-  name = "pit_boss_1_2",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_boss_1_3",
   layer = 0,
   x = 216,
   y = 248,
-  width = 16,
-  height = 16,
-  name = "pit_boss_1_3",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_boss_1_4",
   layer = 0,
   x = 232,
   y = 248,
-  width = 16,
-  height = 16,
-  name = "pit_boss_1_4",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_boss_1_5",
   layer = 0,
   x = 248,
   y = 248,
-  width = 16,
-  height = 16,
-  name = "pit_boss_1_5",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_boss_1_6",
   layer = 0,
   x = 264,
   y = 248,
-  width = 16,
-  height = 16,
-  name = "pit_boss_1_6",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_boss_1_7",
   layer = 0,
   x = 280,
   y = 248,
-  width = 16,
-  height = 16,
-  name = "pit_boss_1_7",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_boss_1_8",
   layer = 0,
   x = 296,
   y = 248,
-  width = 16,
-  height = 16,
-  name = "pit_boss_1_8",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_boss_1_9",
   layer = 0,
   x = 312,
   y = 248,
-  width = 16,
-  height = 16,
-  name = "pit_boss_1_9",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_boss_1_10",
   layer = 0,
   x = 328,
   y = 248,
-  width = 16,
-  height = 16,
-  name = "pit_boss_1_10",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_boss_1_11",
   layer = 0,
   x = 344,
   y = 248,
-  width = 16,
-  height = 16,
-  name = "pit_boss_1_11",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_boss_1_12",
   layer = 0,
   x = 360,
   y = 248,
-  width = 16,
-  height = 16,
-  name = "pit_boss_1_12",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_boss_1_13",
   layer = 0,
   x = 376,
   y = 248,
-  width = 16,
-  height = 16,
-  name = "pit_boss_1_13",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_boss_1_14",
   layer = 0,
   x = 392,
   y = 248,
-  width = 16,
-  height = 16,
-  name = "pit_boss_1_14",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_boss_2_1",
   layer = 0,
   x = 296,
   y = 136,
-  width = 16,
-  height = 16,
-  name = "pit_boss_2_1",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_boss_2_2",
   layer = 0,
   x = 296,
   y = 152,
-  width = 16,
-  height = 16,
-  name = "pit_boss_2_2",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_boss_2_3",
   layer = 0,
   x = 296,
   y = 168,
-  width = 16,
-  height = 16,
-  name = "pit_boss_2_3",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_boss_2_4",
   layer = 0,
   x = 296,
   y = 184,
-  width = 16,
-  height = 16,
-  name = "pit_boss_2_4",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_boss_2_5",
   layer = 0,
   x = 296,
   y = 200,
-  width = 16,
-  height = 16,
-  name = "pit_boss_2_5",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_boss_2_6",
   layer = 0,
   x = 296,
   y = 216,
-  width = 16,
-  height = 16,
-  name = "pit_boss_2_6",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_boss_2_7",
   layer = 0,
   x = 296,
   y = 232,
-  width = 16,
-  height = 16,
-  name = "pit_boss_2_7",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_boss_2_8",
   layer = 0,
   x = 296,
   y = 264,
-  width = 16,
-  height = 16,
-  name = "pit_boss_2_8",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_boss_2_9",
   layer = 0,
   x = 296,
   y = 280,
-  width = 16,
-  height = 16,
-  name = "pit_boss_2_9",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_boss_2_10",
   layer = 0,
   x = 296,
   y = 296,
-  width = 16,
-  height = 16,
-  name = "pit_boss_2_10",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_boss_2_11",
   layer = 0,
   x = 296,
   y = 312,
-  width = 16,
-  height = 16,
-  name = "pit_boss_2_11",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_boss_2_12",
   layer = 0,
   x = 296,
   y = 328,
-  width = 16,
-  height = 16,
-  name = "pit_boss_2_12",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 custom_entity{
+  name = "pit_boss_2_13",
   layer = 0,
   x = 296,
   y = 344,
-  width = 16,
-  height = 16,
-  name = "pit_boss_2_13",
   direction = 3,
   sprite = "entities/somaria_pit",
   model = "somaria_pit",
 }
 
 dynamic_tile{
+  name = "bridge1",
   layer = 0,
   x = 776,
   y = 1496,
+  pattern = "557",
   width = 16,
   height = 48,
-  name = "bridge1",
-  pattern = "557",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "bridge3_1",
   layer = 0,
   x = 824,
   y = 1384,
+  pattern = "557",
   width = 16,
   height = 32,
-  name = "bridge3_1",
-  pattern = "557",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "bridge3_2",
   layer = 0,
   x = 824,
   y = 1464,
+  pattern = "557",
   width = 16,
   height = 32,
-  name = "bridge3_2",
-  pattern = "557",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "bridge4",
   layer = 0,
   x = 872,
   y = 1464,
+  pattern = "557",
   width = 16,
   height = 32,
-  name = "bridge4",
-  pattern = "557",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "bridge5",
   layer = 0,
   x = 888,
   y = 1416,
+  pattern = "557",
   width = 16,
   height = 16,
-  name = "bridge5",
-  pattern = "557",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "bridge6_1",
   layer = 0,
   x = 928,
   y = 1464,
+  pattern = "557",
   width = 16,
   height = 32,
-  name = "bridge6_1",
-  pattern = "557",
   enabled_at_start = false,
 }
 
 dynamic_tile{
+  name = "bridge2",
   layer = 0,
   x = 888,
   y = 1544,
+  pattern = "557",
   width = 16,
   height = 48,
-  name = "bridge2",
-  pattern = "557",
   enabled_at_start = false,
 }
 
 switch{
+  name = "switch_bridge1",
   layer = 0,
   x = 792,
   y = 1544,
-  name = "switch_bridge1",
   subtype = "walkable",
   sprite = "entities/switch",
   sound = "switch",
@@ -6667,11 +6609,10 @@ switch{
 }
 
 block{
+  name = "block_1",
   layer = 0,
   x = 784,
   y = 1621,
-  name = "block_1",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = true,
@@ -6679,10 +6620,10 @@ block{
 }
 
 switch{
+  name = "switch_bridge2",
   layer = 0,
   x = 792,
   y = 1352,
-  name = "switch_bridge2",
   subtype = "walkable",
   sprite = "entities/switch",
   sound = "switch",
@@ -6691,10 +6632,10 @@ switch{
 }
 
 switch{
+  name = "switch_bridge4",
   layer = 0,
   x = 840,
   y = 1352,
-  name = "switch_bridge4",
   subtype = "walkable",
   sprite = "entities/switch",
   sound = "switch",
@@ -6703,11 +6644,10 @@ switch{
 }
 
 block{
+  name = "block_2",
   layer = 0,
   x = 848,
   y = 1365,
-  name = "block_2",
-  direction = -1,
   sprite = "entities/block",
   pushable = true,
   pullable = true,
@@ -6715,10 +6655,10 @@ block{
 }
 
 switch{
+  name = "switch_bridge3",
   layer = 0,
   x = 824,
   y = 1528,
-  name = "switch_bridge3",
   subtype = "walkable",
   sprite = "entities/switch",
   sound = "switch",
@@ -6727,10 +6667,10 @@ switch{
 }
 
 switch{
+  name = "switch_bridge5",
   layer = 0,
   x = 856,
   y = 1432,
-  name = "switch_bridge5",
   subtype = "walkable",
   sprite = "entities/switch",
   sound = "switch",
@@ -6739,58 +6679,58 @@ switch{
 }
 
 pickable{
-  layer = 0,
-  x = 952,
-  y = 1517,
   name = "alchemy_1",
+  layer = 0,
+  x = 952,
+  y = 1517,
   treasure_name = "alchemy",
 }
 
 pickable{
-  layer = 0,
-  x = 952,
-  y = 1533,
   name = "alchemy_2",
+  layer = 0,
+  x = 952,
+  y = 1533,
   treasure_name = "alchemy",
 }
 
 pickable{
+  name = "alchemy_3",
   layer = 0,
   x = 952,
   y = 1549,
-  name = "alchemy_3",
   treasure_name = "alchemy",
 }
 
 pickable{
+  name = "alchemy_4",
   layer = 0,
   x = 936,
   y = 1549,
-  name = "alchemy_4",
   treasure_name = "alchemy",
 }
 
 pickable{
+  name = "alchemy_5",
   layer = 0,
   x = 936,
   y = 1533,
-  name = "alchemy_5",
   treasure_name = "alchemy",
 }
 
 pickable{
+  name = "alchemy_6",
   layer = 0,
   x = 936,
   y = 1517,
-  name = "alchemy_6",
   treasure_name = "alchemy",
 }
 
 enemy{
+  name = "keese_ice_1",
   layer = 0,
   x = 944,
   y = 1349,
-  name = "keese_ice_1",
   direction = 3,
   breed = "keese_ice",
   treasure_name = "alchemy",
@@ -6838,8 +6778,8 @@ wall{
   y = 1568,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -6850,68 +6790,68 @@ wall{
   y = 1568,
   width = 8,
   height = 32,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 sensor{
+  name = "sensor_save_ground",
   layer = 0,
-  x = 776,
+  x = 752,
   y = 1581,
   width = 16,
   height = 32,
-  name = "sensor_save_ground",
 }
 
 destructible{
+  name = "hookshot",
   layer = 0,
   x = 496,
   y = 1573,
-  name = "hookshot",
   sprite = "entities/items",
   weight = -1,
   damage_on_enemies = 0,
 }
 
 destructible{
+  name = "hookshot_2",
   layer = 0,
   x = 544,
   y = 1573,
-  name = "hookshot_2",
   sprite = "entities/items",
   weight = -1,
   damage_on_enemies = 0,
 }
 
 dynamic_tile{
+  name = "bridge6_2",
   layer = 0,
   x = 936,
   y = 1560,
+  pattern = "557",
   width = 16,
   height = 48,
-  name = "bridge6_2",
-  pattern = "557",
   enabled_at_start = false,
 }
 
 pickable{
+  name = "alchemy_7",
   layer = 0,
   x = 520,
   y = 1541,
-  name = "alchemy_7",
   treasure_name = "alchemy",
 }
 
 dynamic_tile{
+  name = "hole_puzzle_3",
   layer = 0,
   x = 464,
   y = 1520,
+  pattern = "524",
   width = 112,
   height = 32,
-  name = "hole_puzzle_3",
-  pattern = "524",
   enabled_at_start = true,
 }
 
@@ -6962,50 +6902,50 @@ destructible{
 }
 
 enemy{
+  name = "keese_ice_2",
   layer = 0,
   x = 832,
   y = 141,
-  name = "keese_ice_2",
   direction = 3,
   breed = "keese_ice",
   treasure_name = "random",
 }
 
 enemy{
+  name = "keese_ice_3",
   layer = 0,
   x = 896,
   y = 293,
-  name = "keese_ice_3",
   direction = 3,
   breed = "keese_ice",
   treasure_name = "random",
 }
 
 enemy{
+  name = "keese_ice_4",
   layer = 0,
   x = 744,
   y = 301,
-  name = "keese_ice_4",
   direction = 3,
   breed = "keese_ice",
   treasure_name = "random",
 }
 
 enemy{
+  name = "keese_ice_5",
   layer = 0,
   x = 624,
   y = 381,
-  name = "keese_ice_5",
   direction = 3,
   breed = "keese_ice",
   treasure_name = "random",
 }
 
 enemy{
+  name = "keese_ice_6",
   layer = 0,
   x = 496,
   y = 301,
-  name = "keese_ice_6",
   direction = 3,
   breed = "keese_ice",
   treasure_name = "alchemy",
@@ -7028,15 +6968,6 @@ destructible{
   treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
-}
-
-sensor{
-  layer = 0,
-  x = 704,
-  y = 1581,
-  width = 16,
-  height = 32,
-  name = "sensor_reset_ground",
 }
 
 destructible{
@@ -7197,6 +7128,105 @@ tile{
   width = 16,
   height = 8,
   pattern = "605",
+}
+
+sensor{
+  name = "dungeon_room_1_",
+  layer = 1,
+  x = 240,
+  y = 989,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_2_",
+  layer = 1,
+  x = 88,
+  y = 989,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_3_",
+  layer = 1,
+  x = 160,
+  y = 1381,
+  width = 16,
+  height = 48,
+}
+
+sensor{
+  name = "dungeon_room_4_",
+  layer = 1,
+  x = 776,
+  y = 1581,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_5_",
+  layer = 1,
+  x = 184,
+  y = 605,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_6_",
+  layer = 1,
+  x = 488,
+  y = 621,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_7_",
+  layer = 1,
+  x = 888,
+  y = 749,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_8_",
+  layer = 1,
+  x = 840,
+  y = 429,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_9_",
+  layer = 1,
+  x = 752,
+  y = 261,
+  width = 16,
+  height = 192,
+}
+
+sensor{
+  name = "dungeon_room_10_",
+  layer = 1,
+  x = 392,
+  y = 317,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_11_",
+  layer = 1,
+  x = 488,
+  y = 157,
+  width = 16,
+  height = 32,
 }
 
 tile{
