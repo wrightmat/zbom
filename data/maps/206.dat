@@ -8424,6 +8424,38 @@ tile{
   pattern = "115",
 }
 
+door{
+  name = "door_key1_2",
+  layer = 0,
+  x = 1112,
+  y = 424,
+  direction = 2,
+  sprite = "entities/door_small_key",
+  savegame_variable = "b1135",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_5_small_keys",
+  opening_condition_consumed = true,
+  cannot_open_dialog = "_small_key_required",
+}
+
+sensor{
+  name = "sensor_miniboss",
+  layer = 0,
+  x = 1128,
+  y = 421,
+  width = 16,
+  height = 48,
+}
+
+sensor{
+  name = "dungeon_room_5_",
+  layer = 0,
+  x = 1224,
+  y = 1165,
+  width = 32,
+  height = 16,
+}
+
 teletransporter{
   name = "to_basement",
   layer = 0,
@@ -8487,20 +8519,6 @@ door{
   x = 1064,
   y = 424,
   direction = 0,
-  sprite = "entities/door_small_key",
-  savegame_variable = "b1135",
-  opening_method = "interaction_if_savegame_variable",
-  opening_condition = "dungeon_5_small_keys",
-  opening_condition_consumed = true,
-  cannot_open_dialog = "_small_key_required",
-}
-
-door{
-  name = "door_key1_2",
-  layer = 0,
-  x = 1112,
-  y = 424,
-  direction = 2,
   sprite = "entities/door_small_key",
   savegame_variable = "b1135",
   opening_method = "interaction_if_savegame_variable",
@@ -9199,19 +9217,10 @@ wall{
 sensor{
   name = "sensor_room_flooded",
   layer = 0,
-  x = 1216,
-  y = 1077,
-  width = 48,
-  height = 16,
-}
-
-sensor{
-  name = "sensor_miniboss",
-  layer = 0,
-  x = 1144,
-  y = 421,
+  x = 1232,
+  y = 1085,
   width = 16,
-  height = 48,
+  height = 16,
 }
 
 destructible{
@@ -9737,6 +9746,24 @@ enemy{
   direction = 0,
   breed = "leever_purple",
   treasure_name = "random",
+}
+
+sensor{
+  name = "dungeon_room_4_",
+  layer = 0,
+  x = 1048,
+  y = 861,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_3_",
+  layer = 0,
+  x = 600,
+  y = 957,
+  width = 32,
+  height = 16,
 }
 
 tile{
@@ -10388,7 +10415,7 @@ destination{
   name = "from_outside",
   layer = 1,
   x = 824,
-  y = 1125,
+  y = 1133,
   direction = 1,
   default = true,
 }
@@ -10493,6 +10520,150 @@ jumper{
   height = 8,
   direction = 6,
   jump_length = 40,
+}
+
+sensor{
+  name = "dungeon_room_1_",
+  layer = 1,
+  x = 800,
+  y = 1109,
+  width = 64,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_2_",
+  layer = 1,
+  x = 728,
+  y = 1045,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_6_b1129",
+  layer = 1,
+  x = 1080,
+  y = 733,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_7_",
+  layer = 1,
+  x = 1040,
+  y = 509,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_8_",
+  layer = 1,
+  x = 632,
+  y = 621,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_9_b1784",
+  layer = 1,
+  x = 344,
+  y = 749,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_15_",
+  layer = 1,
+  x = 208,
+  y = 773,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_10_",
+  layer = 1,
+  x = 376,
+  y = 613,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_11_",
+  layer = 1,
+  x = 456,
+  y = 445,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_12_",
+  layer = 1,
+  x = 344,
+  y = 333,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_13_",
+  layer = 1,
+  x = 216,
+  y = 237,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_14_",
+  layer = 1,
+  x = 536,
+  y = 237,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_16_",
+  layer = 1,
+  x = 952,
+  y = 269,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_17_",
+  layer = 1,
+  x = 1144,
+  y = 429,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_18_",
+  layer = 1,
+  x = 1448,
+  y = 445,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_19_",
+  layer = 1,
+  x = 1464,
+  y = 621,
+  width = 32,
+  height = 16,
 }
 
 tile{
