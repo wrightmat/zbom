@@ -2,6 +2,8 @@ local enemy = ...
 
 -- A magic beam thrown by a Wizzrobe
 
+local type
+
 function enemy:on_created()
   self:set_life(1)
   self:set_damage(6)
@@ -12,6 +14,7 @@ function enemy:on_created()
   self:set_minimum_shield_needed(2)
   self:set_can_hurt_hero_running(true)
   self:set_obstacle_behavior("flying")
+  type = self.type
 end
 
 function enemy:on_obstacle_reached()
@@ -19,7 +22,13 @@ function enemy:on_obstacle_reached()
 end
 
 function enemy:on_restarted()
-  self:get_sprite():set_animation("magic")
+  if type == "fire" then
+    self:get_sprite():set_animation("fire")
+  elseif type == "ice" then
+    self:get_sprite():set_animation("ice")
+  else
+    self:get_sprite():set_animation("magic")
+  end
   local dir4 = self:get_sprite():get_direction()
   local m = sol.movement.create("straight")
   if dir4 == 0 then angle = 0 end

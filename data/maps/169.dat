@@ -2240,6 +2240,19 @@ tile{
   pattern = "752",
 }
 
+wall{
+  layer = 0,
+  x = 1192,
+  y = 496,
+  width = 32,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
 destructible{
   layer = 0,
   x = 112,
@@ -2261,169 +2274,169 @@ destructible{
 }
 
 teletransporter{
+  name = "to_F6",
   layer = 0,
   x = 904,
   y = 640,
   width = 16,
   height = 16,
-  name = "to_F6",
   destination_map = "64",
   destination = "from_cave_ordeals",
 }
 
 destination{
+  name = "from_F6",
   layer = 0,
   x = 912,
   y = 621,
-  name = "from_F6",
   direction = 1,
 }
 
 dynamic_tile{
+  name = "tile_3",
   layer = 0,
   x = 928,
   y = 624,
+  pattern = "552",
   width = 64,
   height = 16,
-  name = "tile_3",
-  pattern = "552",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "tile_4",
   layer = 0,
   x = 928,
   y = 432,
+  pattern = "552",
   width = 64,
   height = 16,
-  name = "tile_4",
-  pattern = "552",
   enabled_at_start = true,
 }
 
 teletransporter{
+  name = "entrance_tran",
   layer = 0,
   x = 872,
   y = 320,
   width = 16,
   height = 16,
-  name = "entrance_tran",
-  sprite = "entities/teletransporter",
-  sound = "warp",
   destination_map = "169",
   destination = "room1_dest",
+  sprite = "entities/teletransporter",
+  sound = "warp",
 }
 
 destination{
+  name = "entrance_dest",
   layer = 0,
   x = 944,
   y = 333,
-  name = "entrance_dest",
   direction = 3,
   sprite = "entities/destination",
 }
 
 destination{
+  name = "room5_dest",
   layer = 0,
   x = 1272,
   y = 125,
-  name = "room5_dest",
   direction = 3,
   sprite = "entities/destination",
 }
 
 teletransporter{
+  name = "room5_tran",
   layer = 0,
   x = 1136,
   y = 112,
   width = 16,
   height = 16,
-  name = "room5_tran",
-  sprite = "entities/teletransporter",
-  sound = "warp",
   destination_map = "169",
   destination = "room1_dest",
+  sprite = "entities/teletransporter",
+  sound = "warp",
 }
 
 destination{
+  name = "treasure_dest",
   layer = 0,
   x = 1272,
   y = 445,
-  name = "treasure_dest",
   direction = 3,
   sprite = "entities/destination",
 }
 
 teletransporter{
+  name = "treasure_tran",
   layer = 0,
   x = 1136,
   y = 432,
   width = 16,
   height = 16,
-  name = "treasure_tran",
-  sprite = "entities/teletransporter",
-  sound = "warp",
   destination_map = "64",
   destination = "from_cave_ordeals",
+  sprite = "entities/teletransporter",
+  sound = "warp",
 }
 
 npc{
+  name = "npc_moblin",
   layer = 0,
   x = 912,
   y = 541,
-  name = "npc_moblin",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/moblin",
 }
 
 wall{
+  name = "blocker",
   layer = 0,
   x = 840,
   y = 504,
   width = 144,
   height = 8,
-  name = "blocker",
   stops_hero = true,
 }
 
 chest{
+  name = "chest",
   layer = 0,
   x = 1208,
   y = 501,
-  name = "chest",
   sprite = "entities/chest_big",
 }
 
 teletransporter{
+  name = "room5_exit",
   layer = 0,
   x = 1200,
   y = 64,
   width = 16,
   height = 16,
-  name = "room5_exit",
-  sprite = "entities/teletransporter",
-  sound = "warp",
   destination_map = "169",
   destination = "entrance_dest",
+  sprite = "entities/teletransporter",
+  sound = "warp",
 }
 
 sensor{
+  name = "sensor_exit",
   layer = 0,
   x = 1200,
   y = 101,
   width = 32,
   height = 16,
-  name = "sensor_exit",
 }
 
 npc{
+  name = "hint_stone",
   layer = 0,
   x = 912,
   y = 293,
-  name = "hint_stone",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   behavior = "dialog#hint_stone.cave_ordeals",
 }
 
@@ -2438,91 +2451,91 @@ destructible{
 }
 
 destination{
+  name = "room2_dest",
   layer = 0,
   x = 712,
   y = 77,
-  name = "room2_dest",
   direction = 3,
   sprite = "entities/destination",
 }
 
 destination{
+  name = "room4_dest",
   layer = 0,
   x = 600,
   y = 445,
-  name = "room4_dest",
   direction = 3,
   sprite = "entities/destination",
 }
 
 destination{
+  name = "room1_dest",
   layer = 0,
   x = 344,
   y = 77,
-  name = "room1_dest",
   direction = 3,
   sprite = "entities/destination",
 }
 
 destination{
+  name = "room3_dest",
   layer = 0,
   x = 232,
   y = 445,
-  name = "room3_dest",
   direction = 3,
   sprite = "entities/destination",
 }
 
 teletransporter{
+  name = "room1_tran",
   layer = 0,
   x = 64,
   y = 64,
   width = 16,
   height = 16,
-  name = "room1_tran",
-  sprite = "entities/teletransporter",
-  sound = "warp",
   destination_map = "169",
   destination = "room2_dest",
+  sprite = "entities/teletransporter",
+  sound = "warp",
 }
 
 teletransporter{
+  name = "room2_tran",
   layer = 0,
   x = 544,
   y = 64,
   width = 16,
   height = 16,
-  name = "room2_tran",
-  sprite = "entities/teletransporter",
-  sound = "warp",
   destination_map = "169",
   destination = "room3_dest",
+  sprite = "entities/teletransporter",
+  sound = "warp",
 }
 
 teletransporter{
+  name = "room3_tran",
   layer = 0,
   x = 64,
   y = 432,
   width = 16,
   height = 16,
-  name = "room3_tran",
-  sprite = "entities/teletransporter",
-  sound = "warp",
   destination_map = "169",
   destination = "room4_dest",
+  sprite = "entities/teletransporter",
+  sound = "warp",
 }
 
 teletransporter{
+  name = "room4_tran",
   layer = 0,
   x = 432,
   y = 432,
   width = 16,
   height = 16,
-  name = "room4_tran",
-  sprite = "entities/teletransporter",
-  sound = "warp",
   destination_map = "169",
   destination = "room5_dest",
+  sprite = "entities/teletransporter",
+  sound = "warp",
 }
 
 destructible{
@@ -2575,8 +2588,8 @@ wall{
   width = 8,
   height = 240,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2588,8 +2601,8 @@ wall{
   width = 8,
   height = 240,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2601,8 +2614,8 @@ wall{
   width = 336,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2614,8 +2627,8 @@ wall{
   width = 336,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2627,8 +2640,8 @@ wall{
   width = 8,
   height = 240,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2640,8 +2653,8 @@ wall{
   width = 8,
   height = 240,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2653,8 +2666,8 @@ wall{
   width = 224,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2666,8 +2679,8 @@ wall{
   width = 224,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2679,8 +2692,8 @@ wall{
   width = 8,
   height = 240,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2692,8 +2705,8 @@ wall{
   width = 8,
   height = 240,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2705,8 +2718,8 @@ wall{
   width = 224,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2718,8 +2731,8 @@ wall{
   width = 224,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2731,8 +2744,8 @@ wall{
   width = 8,
   height = 240,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2744,8 +2757,8 @@ wall{
   width = 8,
   height = 240,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2757,8 +2770,8 @@ wall{
   width = 224,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2770,8 +2783,8 @@ wall{
   width = 224,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2783,8 +2796,8 @@ wall{
   width = 8,
   height = 192,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2796,8 +2809,8 @@ wall{
   width = 8,
   height = 192,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2809,8 +2822,8 @@ wall{
   width = 192,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -2987,13 +3000,13 @@ tile{
 }
 
 dynamic_tile{
+  name = "tile",
   layer = 2,
   x = 1008,
   y = 32,
+  pattern = "751",
   width = 96,
   height = 608,
-  name = "tile",
-  pattern = "751",
   enabled_at_start = true,
 }
 
