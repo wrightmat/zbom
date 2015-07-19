@@ -13,9 +13,8 @@ local game = map:get_game()
 -- 26: 8 yellow chuchus, 27: 10 skeletors, 28: 4 lizalfos, 29: 4 regular wizzrobes
 -- 31: 8 red helmasaurs, 32: 2 dodongos, 4 fire keese, 33: 4 armos, 4 fire keese, 34: 2 redeads, 2 poes
 -- 36: big poe, 6 poes, 37: 8 ice keese, 2 redeads, 38: 2 ice wizzrobes, 2 fire wizzrobes, 39: 6 lynels
-
--- 41: 6 blue bari, 6 red bari, 2 stalfos, 42: 10 ropes, 2 redeads, 2 poes, 43: 8 blue helmasaurs, 44: 3 regular, 3 fire, 3 ice wizzrobes
--- 46: 4 redeads, 2 stalfos, 47: 4 gigas, 4 rats, 48: 4 purple leevers, 8 green leevers, 2 lynel, 49: 2 peahats, 2 redead, 4 red tektites, big poe
+-- 41: 6 blue bari, 6 red bari 42: 10 ropes, 2 redeads, 2 poes, 43: 8 red hardhats, 44: 3 regular, 3 fire, 3 ice wizzrobes
+-- 46: 4 redeads, 2 skeletors, 47: 4 gigas, 4 rats, 48: 4 purple leevers, 8 green leevers, 2 lynel, 49: 2 peahats, 2 redead, 4 red tektites, big poe
 
 game:set_value("i1609", 0)
 
@@ -106,9 +105,29 @@ function room1_dest:on_activated()
       end
       map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="poe_big",name="enemy" })
     elseif game:get_value("i1609") == 41 then
-
+      -- Room 41: Red and Blue Baris
+      for i=1,6 do
+	ex = random_8(72,352)
+	ey = random_8(72,240)
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="bari_red",name="enemy" })
+      end
+      for i=1,6 do
+	ex = random_8(72,352)
+	ey = random_8(72,240)
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="bari_blue",name="enemy" })
+      end
     elseif game:get_value("i1609") == 46 then
-
+      -- Room 41: Redeads and skeletors
+      for i=1,4 do
+	ex = random_8(72,352)
+	ey = random_8(72,240)
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="redead",name="enemy" })
+      end
+      for i=1,2 do
+	ex = random_8(72,352)
+	ey = random_8(72,240)
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="skeletor",name="enemy" })
+      end
     end
 end
 
@@ -207,9 +226,28 @@ function room2_dest:on_activated()
 	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="keese_ice",name="enemy" })
       end
     elseif game:get_value("i1609") == 42 then
-
+      -- Room 42: Ropes, Redead and Poes
+      for i=1,10 do
+	ex = random_8(552,720)
+	ey = random_8(72,240)
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="rope",name="enemy" })
+      end
+      map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="redead",name="enemy" })
+      map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="redead",name="enemy" })
+      map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="poe",name="enemy" })
+      map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="poe",name="enemy" })
     elseif game:get_value("i1609") == 47 then
-
+      -- Room 27: Gigas and rats
+      for i=1,4 do
+	ex = random_8(552,720)
+	ey = random_8(72,240)
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="giga",name="enemy" })
+      end
+      for i=1,4 do
+	ex = random_8(552,720)
+	ey = random_8(72,240)
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="rat",name="enemy" })
+      end
     end
 end
 
@@ -285,9 +323,29 @@ function room3_dest:on_activated()
 	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="wizzrobe_ice",name="enemy" })
       end
     elseif game:get_value("i1609") == 43 then
-
+      -- Room 43: Hardhard beetles
+      for i=1,8 do
+	ex = random_8(72,240)
+	ey = random_8(440,600)
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="hardhat_red",name="enemy" })
+      end
     elseif game:get_value("i1609") == 48 then
-
+      -- Room 48: Leevers and Lynels
+      for i=1,4 do
+	ex = random_8(72,240)
+	ey = random_8(440,600)
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="leever_purple",name="enemy" })
+      end
+      for i=1,8 do
+	ex = random_8(72,240)
+	ey = random_8(440,600)
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="leever_green",name="enemy" })
+      end
+      for i=1,2 do
+	ex = random_8(72,240)
+	ey = random_8(440,600)
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="lynel",name="enemy" })
+      end
     end
 end
 
@@ -371,8 +429,42 @@ function room4_dest:on_activated()
 	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="lynel",name="enemy" })
       end
     elseif game:get_value("i1609") == 44 then
-
+      -- Room 44: Wizzrobe hoard
+      for i=1,3 do
+	ex = random_8(440,608)
+	ey = random_8(440,600)
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="wizzrobe",name="enemy" })
+      end
+      for i=1,3 do
+	ex = random_8(440,608)
+	ey = random_8(440,600)
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="wizzrobe_ice",name="enemy" })
+      end
+      for i=1,3 do
+	ex = random_8(440,608)
+	ey = random_8(440,600)
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="wizzrobe_fire",name="enemy" })
+      end
     elseif game:get_value("i1609") == 49 then
+      -- Room 49: Final challenge!
+      for i=1,2 do
+	ex = random_8(440,608)
+	ey = random_8(440,600)
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="peahat",name="enemy" })
+      end
+      for i=1,2 do
+	ex = random_8(440,608)
+	ey = random_8(440,600)
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="redead",name="enemy" })
+      end
+      for i=1,4 do
+	ex = random_8(440,608)
+	ey = random_8(440,600)
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="tektite_red",name="enemy" })
+      end
+      map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="poe_big",name="enemy" })
+
+      -- go to treasure room finally!
       room4_tran:set_destination("treasure_dest")
     end
 end
