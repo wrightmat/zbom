@@ -12,6 +12,7 @@ function enemy:on_created()
   self:set_attack_consequence("sword", "protected")
   self:set_attack_consequence("explosion", "ignored")
   self:set_attack_consequence("hookshot", "immobilized")
+  self:set_attack_consequence("thrown_item", "ignored")
   self:set_size(32, 32)
   self:set_origin(16, 28)
 end

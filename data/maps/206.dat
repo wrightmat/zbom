@@ -8528,48 +8528,22 @@ door{
 }
 
 enemy{
-  name = "chuchu_map_1",
+  name = "chuchu_room13_1",
   layer = 0,
   x = 96,
   y = 117,
   direction = 3,
   breed = "chuchu_blue",
-}
-
-enemy{
-  name = "chuchu_map_2",
-  layer = 0,
-  x = 104,
-  y = 237,
-  direction = 3,
-  breed = "chuchu_blue",
-}
-
-enemy{
-  name = "chuchu_map_3",
-  layer = 0,
-  x = 192,
-  y = 221,
-  direction = 3,
-  breed = "chuchu_blue",
-}
-
-enemy{
-  name = "chuchu_map_4",
-  layer = 0,
-  x = 184,
-  y = 109,
-  direction = 3,
-  breed = "chuchu_blue",
+  treasure_name = "random",
 }
 
 chest{
-  name = "chest_map",
+  name = "chest_compass",
   layer = 0,
   x = 136,
   y = 157,
-  treasure_name = "map",
-  treasure_savegame_variable = "b1127",
+  treasure_name = "compass",
+  treasure_savegame_variable = "b1126",
   sprite = "entities/chest",
 }
 
@@ -9890,6 +9864,56 @@ sensor{
   y = 621,
   width = 32,
   height = 16,
+}
+
+enemy{
+  name = "chuchu_room13_2",
+  layer = 0,
+  x = 80,
+  y = 181,
+  direction = 3,
+  breed = "chuchu_blue",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "chuchu_room13_3",
+  layer = 0,
+  x = 112,
+  y = 221,
+  direction = 3,
+  breed = "chuchu_blue",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "chuchu_room13_4",
+  layer = 0,
+  x = 160,
+  y = 109,
+  direction = 3,
+  breed = "chuchu_blue",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "chuchu_room13_5",
+  layer = 0,
+  x = 192,
+  y = 149,
+  direction = 3,
+  breed = "chuchu_blue",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "chuchu_room13_6",
+  layer = 0,
+  x = 168,
+  y = 205,
+  direction = 3,
+  breed = "chuchu_blue",
+  treasure_name = "random",
 }
 
 tile{

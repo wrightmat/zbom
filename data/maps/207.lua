@@ -15,6 +15,8 @@ function map:on_started(destination)
     boss_plasmarine_red:set_enabled(false)
     to_outside:set_enabled(false)
   end
+  if not game:get_value("b1124") then chest_key_4:set_enabled(false) end
+  if not game:get_value("b1127") then chest_map:set_enabled(false) end
   if not game:get_value("b1134") then chest_book:set_enabled(false) end
   if not game:get_value("b1133") then boss_heart:set_enabled(false) end
   if game:get_value("b1141") then
@@ -121,6 +123,11 @@ function switch_stone:on_inactivated()
   stone:set_enabled(false)
 end
 
+function switch_arrow_map:on_activated()
+  chest_map:set_enabled(true)
+  sol.audio.play_sound("chest_appears")
+end
+
 for enemy in map:get_entities("aquadracini") do
   enemy.on_dead = function()
     if not map:has_entities("aquadracini") then
@@ -134,6 +141,15 @@ for enemy in map:get_entities("chuchu") do
   enemy.on_dead = function()
     if not map:has_entities("chuchu") then
       map:open_doors("shutter_2")
+    end
+  end
+end
+
+for enemy in map:get_entities("leever") do
+  enemy.on_dead = function()
+    if not map:has_entities("leever_room12") then
+      chest_key_4:set_enabled(true)
+      sol.audio.play_sound("chest_appears")
     end
   end
 end

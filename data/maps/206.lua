@@ -26,7 +26,7 @@ function map:on_started(destination)
   else
     npc_zora:set_enabled(false)
   end
-  if game:get_value("b1134") then game:set_dungeon_finished(5) end
+  if not game:get_value("b1126") then chest_compass:set_enabled(false) end
 end
 
 function sensor_miniboss:on_activated()
@@ -88,6 +88,15 @@ for enemy in map:get_entities("tektite") do
         to_basement:set_enabled(true)
         sol.audio.play_sound("secret")
       end, 500, 500)
+    end
+  end
+end
+
+for enemy in map:get_entities("chuchu") do
+  enemy.on_dead = function()
+    if not map:has_entities("chuchu_room13") then
+      chest_compass:set_enabled(true)
+      sol.audio.play_sound("chest_appears")
     end
   end
 end
