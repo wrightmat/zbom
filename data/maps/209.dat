@@ -7193,6 +7193,15 @@ sensor{
   height = 32,
 }
 
+sensor{
+  name = "sensor_reset_ground",
+  layer = 0,
+  x = 704,
+  y = 1581,
+  width = 16,
+  height = 32,
+}
+
 tile{
   layer = 1,
   x = 536,

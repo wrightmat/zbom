@@ -144,6 +144,9 @@ function sensor_save_ground:on_activated()
   hero:reset_solid_ground()
   hero:save_solid_ground()
 end
+function sensor_reset_ground:on_activated()
+  hero:reset_solid_ground()
+end
 
 function sensor_boss:on_activated()
   if boss_stalfos ~= nil then
