@@ -34,6 +34,7 @@ animation{
   name = "shaking",
   src_image = "enemies/hardhat_beetle.png",
   frame_delay = 100,
+  frame_to_loop_on = 0,
   directions = {
     { x = 64, y = 24, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 2 },
     { x = 64, y = 24, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 2 },

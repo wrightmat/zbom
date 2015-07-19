@@ -4907,9 +4907,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 72,
-  y = 72,
-  width = 16,
+  x = 64,
+  y = 80,
+  width = 32,
   height = 16,
   pattern = "603",
 }
@@ -5133,8 +5133,8 @@ enemy{
 chest{
   name = "chest_alchemy_stone",
   layer = 0,
-  x = 80,
-  y = 85,
+  x = 72,
+  y = 93,
   treasure_name = "alchemy",
   treasure_savegame_variable = "b1157",
   sprite = "entities/chest",
@@ -6001,6 +6001,16 @@ sensor{
   y = 277,
   width = 16,
   height = 32,
+}
+
+destructible{
+  layer = 0,
+  x = 88,
+  y = 93,
+  treasure_name = "magic_flask",
+  treasure_variant = 2,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
 }
 
 wall{
