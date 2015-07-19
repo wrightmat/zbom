@@ -5355,7 +5355,10 @@ sewers which run beneath Hyrule.
 But there are many accesses to that
 sewer, and I don't know which will
 lead you to the pump. I would search
-somewhere near the lake.
+somewhere near the lake.$0
+If only I had the  $r Crystal Ball$w I've
+always wanted, I would be able to
+see so much more!
   ]]
 }
 
@@ -6864,6 +6867,19 @@ leave it at that.
 }
 
 dialog{
+  id = "rito_2.1.septen",
+  skip = "current",
+  text = [[
+Speaking of mysterious, have you heard about
+the witch that lives in Saria, just across
+the bridge here? It's said that she uses her
+crystal ball to see the future, but that
+even she can't see the location of the thing
+she wants the most - a $r Moon's Tear$w.
+  ]]
+}
+
+dialog{
   id = "rito_3.0.septen",
   skip = "current",
   text = [[
@@ -7729,8 +7745,15 @@ dialog{
   skip = "current",
   text = [[
 <- Tower of Winds
-under construction.
+(under construction)
   ]]
+}
+
+dialog{
+  id = "sign.witch",
+  text = [[
+<- To Witch's House (across Saria bridge)
+Everywhere else is dangerous!]]
 }
 
 dialog{

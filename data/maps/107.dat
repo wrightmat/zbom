@@ -5264,6 +5264,15 @@ tile{
   pattern = "951",
 }
 
+tile{
+  layer = 0,
+  x = 696,
+  y = 824,
+  width = 16,
+  height = 16,
+  pattern = "1450",
+}
+
 teletransporter{
   name = "to_F5_water",
   layer = 0,
@@ -5409,6 +5418,17 @@ wall{
   stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
+}
+
+npc{
+  name = "sign_witch",
+  layer = 0,
+  x = 704,
+  y = 837,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/sign",
+  behavior = "dialog#sign.witch",
 }
 
 tile{

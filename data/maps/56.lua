@@ -7,6 +7,7 @@ local game = map:get_game()
 
 if game:get_value("i1926")==nil then game:set_value("i1926", 0) end
 if game:get_value("i1927")==nil then game:set_value("i1927", 0) end
+if game:get_value("i1928")==nil then game:set_value("i1928", 0) end
 
 local function random_walk(npc)
   local m = sol.movement.create("random_path")
@@ -28,7 +29,17 @@ function npc_rito_1:on_interaction()
 end
 
 function npc_rito_2:on_interaction()
-  game:start_dialog("rito_2.0.septen")
+  if game:get_value("i1928") >= 1 then
+    if game:get_value("i1840") < 5 then
+      game:start_dialog("rito_2.1.septen")
+    else
+      game:start_dialog("rito_2.0.septen")
+    end
+  else
+    game:start_dialog("rito_2.0.septen", function()
+      game:set_value("i1928", 1)
+    end)
+  end
 end
 
 function npc_rito_3:on_interaction()
