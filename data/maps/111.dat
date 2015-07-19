@@ -2267,6 +2267,141 @@ tile{
   pattern = "1450",
 }
 
+tile{
+  layer = 0,
+  x = 848,
+  y = 640,
+  width = 8,
+  height = 8,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 896,
+  width = 8,
+  height = 8,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 376,
+  width = 8,
+  height = 8,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 304,
+  width = 8,
+  height = 8,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 1016,
+  y = 216,
+  width = 8,
+  height = 8,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 800,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 160,
+  width = 8,
+  height = 8,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 432,
+  width = 8,
+  height = 8,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 440,
+  width = 8,
+  height = 8,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 240,
+  width = 8,
+  height = 8,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 736,
+  width = 8,
+  height = 8,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 216,
+  y = 880,
+  width = 8,
+  height = 8,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 40,
+  width = 8,
+  height = 8,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 24,
+  width = 16,
+  height = 8,
+  pattern = "296",
+}
+
 teletransporter{
   name = "to_F4",
   layer = 0,
@@ -2730,6 +2865,15 @@ destination{
   y = 421,
   direction = 3,
   default = true,
+}
+
+enemy{
+  name = "chuchu_1",
+  layer = 0,
+  x = 168,
+  y = 77,
+  direction = 0,
+  breed = "chuchu_yellow",
 }
 
 tile{

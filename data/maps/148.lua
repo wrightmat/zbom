@@ -15,3 +15,7 @@ end
 function map:on_started(destination)
   random_walk(npc_dog)
 end
+
+function npc_dog:on_interaction()
+  sol.audio.play_sound("dog")
+end

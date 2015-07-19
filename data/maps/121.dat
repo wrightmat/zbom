@@ -2033,6 +2033,78 @@ tile{
   pattern = "616",
 }
 
+tile{
+  layer = 0,
+  x = 344,
+  y = 816,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 720,
+  width = 16,
+  height = 8,
+  pattern = "1693",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 696,
+  width = 8,
+  height = 8,
+  pattern = "40",
+}
+
+tile{
+  layer = 0,
+  x = 584,
+  y = 864,
+  width = 8,
+  height = 8,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 1072,
+  width = 8,
+  height = 8,
+  pattern = "40",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 1040,
+  width = 8,
+  height = 8,
+  pattern = "39",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 896,
+  width = 8,
+  height = 8,
+  pattern = "545",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 1072,
+  width = 8,
+  height = 8,
+  pattern = "546",
+}
+
 teletransporter{
   name = "to_J3",
   layer = 0,
@@ -2115,6 +2187,42 @@ teletransporter{
   transition = "scrolling",
   destination_map = "117",
   destination = "_side",
+}
+
+enemy{
+  name = "chuchu_1",
+  layer = 0,
+  x = 536,
+  y = 813,
+  direction = 0,
+  breed = "chuchu_yellow",
+}
+
+enemy{
+  name = "chuchu_2",
+  layer = 0,
+  x = 384,
+  y = 957,
+  direction = 0,
+  breed = "chuchu_yellow",
+}
+
+enemy{
+  name = "chuchu_3",
+  layer = 0,
+  x = 144,
+  y = 789,
+  direction = 0,
+  breed = "chuchu_yellow",
+}
+
+enemy{
+  name = "chuchu_4",
+  layer = 0,
+  x = 744,
+  y = 925,
+  direction = 0,
+  breed = "chuchu_yellow",
 }
 
 tile{
