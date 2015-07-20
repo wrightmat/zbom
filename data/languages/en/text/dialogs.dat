@@ -835,6 +835,14 @@ This could be valuable!
 }
 
 dialog{
+  id = "_item_description.trading.13",
+  text = [[
+You finished the trading sequence!
+Now go use your Rito Feather!
+]]
+}
+
+dialog{
   id = "_item_description.trading.2",
   icon = "41",
   skip = "current",

@@ -78,6 +78,7 @@ function sol.main:debug_on_key_pressed(key, modifiers)
   elseif key == "f11" then
     print('Map ID: '..self.game:get_map():get_id()..' ('..self.game:get_map():get_world()..')')
     print('Time of Day: '..self.game:get_time_of_day())
+    print('Stamina: '..self.game:get_value("i1024")..' / '..self.game:get_value("i1025"))
   elseif key == "f12" and not console.enabled then
     sol.menu.start(self, console)
   elseif sol.main.game ~= nil and not console.enabled then
