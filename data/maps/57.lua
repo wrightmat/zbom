@@ -6,11 +6,19 @@ local game = map:get_game()
 --------------------------------------
 
 function npc_zora_1:on_interaction()
-  game:start_dialog("zora.0.domain")
+  if game:get_item("tunic"):get_variant() < 3 then
+    game:start_dialog("zora.0.tunic")
+  else
+    game:start_dialog("zora.0.domain")
+  end
 end
 
 function npc_zora_2:on_interaction()
-  game:start_dialog("zora.0.domain")
+  if game:get_item("tunic"):get_variant() < 3 then
+    game:start_dialog("zora.0.tunic")
+  else
+    game:start_dialog("zora.0.domain")
+  end
 end
 
 function npc_zora_3:on_interaction()

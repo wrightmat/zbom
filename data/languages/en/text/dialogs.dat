@@ -2327,7 +2327,7 @@ dialog{
   icon = "61",
   skip = "current",
   text = [[
-You found the $r Red Tunic$w!$0
+You found the  $r Red Tunic$w!$0
 This will prevent heat exhaustion
 as well as cut the damage you take!
   ]]
@@ -2338,7 +2338,7 @@ dialog{
   icon = "62",
   skip = "current",
   text = [[
-You found the $r Blue Tunic$w!$0
+You found the  $r Blue Tunic$w!$0
 This will prevent you from getting
 too tired while swimming, as well
 as cut the damage you take!
@@ -9079,6 +9079,17 @@ give you one of my  $r scales$w...
 }
 
 dialog{
+  id = "zora.0.tunic",
+  text = [[
+You won't do so well with that tunic
+and all this swimming though. If you get
+a tunic as blue as the water, you'll have
+no problem with getting tired while
+swimming!
+]]
+}
+
+dialog{
   id = "zora.1.lakebed",
   question = "1",
   skip = "current",
@@ -9193,7 +9204,7 @@ dialog{
   id = "zora_gatekeeper.5.domain",
   skip = "current",
   text = [[
-You've spoken with  $g Juba$w?$0
+You've spoken with  $g  Juba$w?$0
 I'm not sure what difference that
 makes.$0 He says to let you through?!
 That's crazy! That's uncalled for!$0
