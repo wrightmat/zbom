@@ -37,9 +37,8 @@ function npc_rudy:on_interaction()
       game:start_dialog("rudy.5.sword", function(answer)
         if answer == 1 then
           game:start_dialog("rudy.5.sword_1", function()
-	  game:set_ability("sword", 0)
 	  game:set_value("i1902", 5)
-            game:set_value("i1841", 0) -- remove Master Ore
+	  game:set_ability("sword", 0)
             local m = sol.movement.create("target")
             m:set_target(232, 168)
             m:set_speed(32)
@@ -111,10 +110,10 @@ function npc_rudy:on_interaction()
 end
 
 function sensor_leaving:on_activated()
-  if game:get_value("b1851") and game:get_ability("sword") == 0 then
+  if game:get_ability("sword") == 0 then
     game:start_dialog("rudy.5.sword_leaving", function()
       hero:start_treasure("sword", 2)
-      game:set_value("b1851", false)
+      game:set_value("i1841", 0) -- remove Master Ore
       game:set_value("i1902", 6)
     end)
   end

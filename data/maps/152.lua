@@ -27,5 +27,9 @@ function subrosian_orange:on_interaction()
 end
 
 function subrosian_soaking:on_interaction()
-  game:start_dialog("subrosian_soaking.0.subrosia")
+  game:start_dialog("subrosian_soaking.0.subrosia", function()
+    if game:get_item("tunic"):get_variant() == 1 then
+      game:start_dialog("subrosian_soaking.0.tunic")
+    end
+  end)
 end

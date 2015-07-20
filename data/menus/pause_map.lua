@@ -5,8 +5,8 @@ local outside_world_size = { width = 8000, height = 13452 } --Hyrule
 local outside_world_minimap_size = { width = 225, height = 388 }
 local outside_world_2_size = { width = 2240, height = 3360 } --Subrosia
 local outside_world_2_minimap_size = { width = 225, height = 300 }
---local outside_world_3_size = { width = , height =  } --North
---local outside_world_3_minimap_size = { width = , height =  }
+local outside_world_3_size = { width = 16800, height = 6720 } --North
+local outside_world_3_minimap_size = { width = 659, height = 255 }
 local map_shown = false
 
 function map_submenu:on_started()

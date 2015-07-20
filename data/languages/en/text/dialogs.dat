@@ -1060,7 +1060,7 @@ dialog{
   icon = "29",
   skip = "current",
   text = [[
-You got some $r Master Ore$w!$0
+You got some  $r Master Ore$w!$0
 The blacksmith can use it to
 improve your sword!
   ]]
@@ -2182,46 +2182,43 @@ dialog{
   icon = "49",
   skip = "current",
   text = [[
-You traded the $r Goron Vase$w
+You traded the  $r Goron Vase$w
 for a $r Zora Scale$w!$0
-Another race-specific thing,
-I wonder what you'll do
-with it?
+Another race-specific thing, I wonder
+what you'll do with it?
   ]]
 }
 
 dialog{
   id = "_treasure.trading.11",
-  icon = "50",
+  icon = "39",
   skip = "current",
   text = [[
-You traded the $r Zora Scale$w
-for a $r Frozen Fish$w!$0
-Finally something with some
-mass appeal!
+You traded the  $r Zora Scale$w for a
+$rFrozen Fish$w!$0
+Finally something with some mass appeal!
   ]]
 }
 
 dialog{
   id = "_treasure.trading.12",
-  icon = "51",
+  icon = "38",
   skip = "current",
   text = [[
-You traded the $r Frozen Fish$w
-for the $r Culinary Arts of
-Hyrule book$w!$0 Neat!
+You traded the  $r Frozen Fish$w for the
+$rCulinary Arts of Hyrule book$w !$0
+Neat!
   ]]
 }
 
 dialog{
   id = "_treasure.trading.13",
-  icon = "52",
+  icon = "0",
   skip = "current",
   text = [[
-You traded the $r Culinary Arts
-of Hyrule book$w for a $r Rito
-Feather$w!$0 Finally a truly
-useful item! Maybe this
+You traded the $r Culinary Arts of
+Hyrule book$w for a $r Rito Feather$w!$0
+Finally a truly useful item! Maybe this
 trading stuff is done?
   ]]
 }
@@ -2243,9 +2240,9 @@ dialog{
   icon = "42",
   skip = "current",
   text = [[
-You traded the $r Odd Potion$w for
-a $r Deku Mask$w!$0
-Not sure what the $g Deku$w wanted
+You traded the  $r Odd Potion$w for
+a $rDeku Mask$w!$0
+Not sure what the  $g Deku$w wanted
 with that potion, but I'll bet
 this is considered trading up!
   ]]
@@ -2256,8 +2253,8 @@ dialog{
   icon = "43",
   skip = "current",
   text = [[
-You traded the $r Deku Mask$w for a
-$r Moon Tear$w!$0
+You traded the  $r Deku Mask$w for a
+$rMoon Tear$w!$0
 
 It's weird that the guy wanted
 the mask so bad, but who cares
@@ -2270,7 +2267,7 @@ dialog{
   icon = "44",
   skip = "current",
   text = [[
-You traded the $r Moon Tear$w
+You traded the  $r Moon Tear$w
 for a $r Crystal Ball$w!$0
 You swapped one shiny thing
 for another!
@@ -2294,7 +2291,7 @@ dialog{
   icon = "46",
   skip = "current",
   text = [[
-You traded the $r Tasty Meat$w
+You traded the  $r Tasty Meat$w
 for $r Dog Food$w!$0
 Not exactly a fair trade, 
 but you felt bad for the
@@ -2307,8 +2304,8 @@ dialog{
   icon = "47",
   skip = "current",
   text = [[
-You traded the $r Dog Food$w 
-for some $r yummy Bananas$W!$0
+You traded the  $r Dog Food$w 
+for some yummy  $r Bananas$w!$0
 Now we're getting somewhere!
   ]]
 }
@@ -2319,10 +2316,9 @@ dialog{
   skip = "current",
   text = [[
 You traded $r Bananas$w for a 
-$r Goron Vase$w!$0
-It's quite beautiful but
-you're not sure who would
-want one besides a $g Goron$w.
+$rGoron Vase$w!$0
+It's quite beautiful but you're not sure
+who would want one besides a  $g Goron$w.
   ]]
 }
 
@@ -2489,9 +2485,9 @@ dialog{
   skip = "current",
   text = [[
 Who am I? Who are you!?
-How dare you barge into my house
-and ask of me - everyone knows who
-I am, the great Architect of Kakariko!
+How dare you barge into my house and ask
+of me - everyone knows who I am, the
+great Architect of Kakariko!
 I built most of this great city with my
 bare hands!$0 Of course that was many
 years ago, and now I can't get my hands
@@ -2506,12 +2502,10 @@ dialog{
   id = "architect.1.house",
   skip = "current",
   text = [[
-You say you've met someone who
-would like to learn my ways?
-Well, that's great news!
-If you can convinve him to come
-here, we can start our work right
-away!
+You say you've met someone who would like
+to learn my ways? Well, that's great
+news! If you can convinve him to come
+here, we can start our work right away!
   ]]
 }
 
@@ -2529,11 +2523,11 @@ dialog{
   id = "architect.3.house",
   skip = "current",
   text = [[
-This student of yours is doing
-quite well! Of course it will be
-some time before he'll be of any use
-to his city, but someday he could be
-almost as great as me!
+This student of yours is doing quite
+well! Of course it will be some time
+before he'll be of any use to his city,
+but someday he could be almost as great
+as me!
   ]]
 }
 
@@ -3491,7 +3485,7 @@ dialog{
   id = "deku.1.lost_woods",
   text = [[
 Hey kid, you might as well get out
-of here. Without the $c power of the
+of here. Without the $c  power of the
 sage Mudora$w, you have no chance
 of finding your way in these woods -
 they're all twisted around from the
@@ -3525,7 +3519,7 @@ dialog{
   id = "deku.3.faron",
   skip = "current",
   text = [[
-Hey $gBoy in Green! Since you helped
+Hey $gBoy in Green!$w Since you helped
 us out, we'll give you a little tip...
 That page the  $g monkeys$w just gave you
 looks familiar- we know about a really
@@ -6176,9 +6170,21 @@ dialog{
   text = [[
 Wow, you have a lot of hearts! I think
 now I trust you to explore my part of
-the world. This $r map$w should ensure you
+the world. This  $r map$w should ensure you
 don't get lost too easily.
   ]]
+}
+
+dialog{
+  id = "mayor.2.kasuto",
+  text = [[
+You're at the edge of  $b New Kasuto Town$w
+here. When the library was attacked, the
+citizens got scared and almost everyone
+picked up and moved here. The Old Kasuto
+Town has become essentially a ghost
+town overnight.
+]]
 }
 
 dialog{
@@ -6789,16 +6795,13 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-Is that the world famous $rCulinary
-Arts of Hyrule$w in your things?
-I've been looking for that book
-since I got here! It's very
-difficult to find good cookbooks
-around here for some reason, and
-I very much enjoy cooking. Would
-you consider giving that book to me?
-
-Give it to him?
+Is that the world famous  $r  Culinary
+Arts of Hyrule$w  in your things?
+I've been looking for that book since I
+got here! It's very difficult to find
+good cookbooks around here for some
+reason, and I very much enjoy cooking.
+Would you consider giving the book to me?
 Yes
 No
   ]]
@@ -6809,9 +6812,9 @@ dialog{
   skip = "current",
   text = [[
 I have all of my cooking equipment
-ready to go, but no knowledge and
-no way to learn. It's sad when
-one's unable to pursue their dream...
+ready to go, but no knowledge and no
+way to learn. It's sad when one's
+unable to pursue their dream...
   ]]
 }
 
@@ -6819,9 +6822,9 @@ dialog{
   id = "rito.0.trading_no",
   skip = "current",
   text = [[
-Well... that is not very kind of
-you. If you can't share, then I'd
-like you to leave my home.
+Well... that is not very kind of you.
+If you can't share, then I'd like you
+to leave my home.
   ]]
 }
 
@@ -6831,17 +6834,14 @@ dialog{
   text = [[
 That's great! Thank you!
 I can't wait to get started!$0
-Unfortunately I don't have
-anything to offer you in
-return...$0 Let me think...$0
-All I have to give you is one
-of my own feathers. It sounds
-weird, but $r Rito feathers$w actually
-have magical properties, and
-should let non-Ritos like you
-float in the air for short
-periods of time. Yes, that's
-what I'll offer in return!
+Unfortunately I don't have anything to
+offer you in return...$0 Let me think...$0
+All I have to give you is one of my own
+feathers. It sounds weird, but  $r  Rito
+feathers$w actually have magical properties,
+and should let non-Ritos like you float
+in the air for short periods of time.
+Yes, that's what I'll offer in return!
   ]]
 }
 
@@ -6870,12 +6870,13 @@ dialog{
   id = "rito_2.1.septen",
   skip = "current",
   text = [[
-Speaking of mysterious, have you heard about
-the witch that lives in Saria, just across
-the bridge here? It's said that she uses her
-crystal ball to see the future, but that
-even she can't see the location of the thing
-she wants the most - a $r Moon's Tear$w.
+Speaking of mysterious, have you heard
+about the witch that lives in Saria, just
+across the bridge here? It's said that
+she uses her crystal ball to see the
+future, but that even she can't see the
+location of the thing she wants the most-
+a $rMoon's Tear$w.
   ]]
 }
 
@@ -6939,7 +6940,7 @@ dialog{
   id = "rito_5.0.septen",
   skip = "current",
   text = [[
-If you're here to see the $b Tower of
+If you're here to see the   $b Tower of
 Winds$w, you'll have to come back later -
 it's still under construction.$0
 In the mean time, have you seen the
@@ -7007,7 +7008,7 @@ dialog{
   id = "river_man.0.crystal_ball",
   skip = "current",
   text = [[
-If you're visiting the $g witch in
+If you're visiting the  $g witch in
 Saria$w, cross this bridge here. But
 don't stay too long - only townsfolk
 are allowed past!
@@ -7220,7 +7221,7 @@ dialog{
   skip = "current",
   text = [[
 That's... that's...$0
-$rMaster Ore$w!!!$0
+$rMaster Ore$w !!!$0
 I don't know how you found that, but
 boy are you lucky! With that, I'll be
 able to make your sword more powerful
@@ -7753,7 +7754,8 @@ dialog{
   id = "sign.witch",
   text = [[
 <- To Witch's House (across Saria bridge)
-Everywhere else is dangerous!]]
+Everywhere else is dangerous!
+  ]]
 }
 
 dialog{
@@ -7974,7 +7976,7 @@ dialog{
   id = "subrosian_orange.0.subrosia",
   skip = "current",
   text = [[
-Welcome to $r Subrosia$w! This lovely
+Welcome to $b Subrosia$w! This lovely
 place has all the lava you can soak
 in and ore galore! Do a little
 exploring, maybe you'll come across
@@ -8058,6 +8060,17 @@ Ahhhhhhh!!!$0
 Nothing like a relaxing lava soak to
 take away your cares from the day!
   ]]
+}
+
+dialog{
+  id = "subrosian_soaking.0.tunic",
+  skip = "current",
+  text = [[
+You won't do so well in those green
+clothes though... If you get some clothes
+the color of this lava, you won't be
+bothered by the heat at all!
+]]
 }
 
 dialog{
@@ -8864,12 +8877,12 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-Hold on here. Is that a $r Moon's Tear$w
+Hold on here. Is that a  $r Moon's Tear$w
 you have in your possession?
 Please give it to me!$0
 Please?$0
 I will give you my most prized
-possession, my $r Crystal Ball$w.
+possession, my  $r Crystal Ball$w.
 Give it to her?
 Yes
 No
@@ -8892,7 +8905,7 @@ dialog{
   text = [[
 Thank you so much for your kindness!
 You have made me very happy! As
-promised, here's my beloved $r Crystal
+promised, here's my beloved  $r  Crystal
 Ball$w. Please find a good home for it.
   ]]
 }
@@ -9061,7 +9074,7 @@ this proudly in my house! Where are
 our houses, you ask? Well that's none
 of your concern.
 If you stop thinking about it, I'll
-give you one of my $r scales$w...
+give you one of my  $r scales$w...
   ]]
 }
 
@@ -9087,7 +9100,6 @@ No
 
 dialog{
   id = "zora.1.ruto",
-  question = "1",
   skip = "current",
   text = [[
 It's not a well known fact, but this
@@ -9101,10 +9113,9 @@ at home!
 
 dialog{
   id = "zora.1.trading",
-  question = "1",
   skip = "current",
   text = [[
-What? How did you get a $r Zora's scale$w?!$0
+What? How did you get a  $r Zora's scale$w?!$0
 You can't have that. I must insist
 that you give it to me right now.
   ]]
@@ -9118,7 +9129,7 @@ I'm not completely unfair, I won't
 leave you empty handed. In exchange
 for your quick obedience, I'll give
 you this $r frozen fish$w I found at the
-bottom of our $b Domain$w. Don't wander
+bottom of our  $b Domain$w. Don't wander
 around with it too long though, or
 it'll thaw and be really gross.
   ]]

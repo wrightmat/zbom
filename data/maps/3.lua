@@ -55,7 +55,8 @@ function npc_rito_trading:on_interaction()
       if answer == 1 then
         -- give him the cookbook, get the feather
         game:start_dialog("rito.0.trading_yes", function()
-          hero:start_treasure("trading", 13)
+          hero:start_treasure("feather")
+	game:get_item("trading"):set_variant(0)
           game:set_value("b2033", true)
           game:set_value("b2032", false)
         end)

@@ -178,7 +178,7 @@ function npc_architect:on_interaction()
     if game:get_value("i1926") >= 2 then
       game:start_dialog("architect.3.house")
       game:set_value("i1926", 3)
-    elseif game:get_value("i1926") == 1 then
+    elseif game:get_value("i1926") == 1 and game:get_value("i1927") == 2 then
       game:start_dialog("architect.2.house")
       game:set_value("i1926", 2)
     else

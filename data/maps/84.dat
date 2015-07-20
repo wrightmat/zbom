@@ -4,7 +4,6 @@ properties{
   width = 864,
   height = 768,
   world = "outside",
-  floor = -1,
   tileset = "2",
   music = "lost_woods",
 }
@@ -6831,6 +6830,51 @@ tile{
   pattern = "forest.4",
 }
 
+tile{
+  layer = 0,
+  x = 352,
+  y = 728,
+  width = 32,
+  height = 8,
+  pattern = "523",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 712,
+  width = 48,
+  height = 16,
+  pattern = "505",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 688,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 704,
+  width = 8,
+  height = 16,
+  pattern = "1500",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 704,
+  width = 8,
+  height = 16,
+  pattern = "1498",
+}
+
 sensor{
   name = "sensor_b2",
   layer = 0,
@@ -7681,5 +7725,32 @@ tile{
   width = 32,
   height = 8,
   pattern = "143",
+}
+
+tile{
+  layer = 2,
+  x = 344,
+  y = 656,
+  width = 48,
+  height = 32,
+  pattern = "1495",
+}
+
+tile{
+  layer = 2,
+  x = 392,
+  y = 680,
+  width = 8,
+  height = 24,
+  pattern = "1497",
+}
+
+tile{
+  layer = 2,
+  x = 336,
+  y = 680,
+  width = 8,
+  height = 24,
+  pattern = "1494",
 }
 

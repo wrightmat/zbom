@@ -19,17 +19,7 @@ function map:on_started(destination)
 end
 
 function npc_isan:on_interaction()
-    if game:get_value("i1912") == 2 then
-      repeat -- make sure the same quote is not picked again
-        index = math.random(3)
-      until index ~= last_message
-      game:start_dialog("isan.2.library."..index)
-      last_message = index
-    elseif game:get_value("i1912") == 1 then
-      game:start_dialog("isan.1.library", function()
-        game:set_value("i1912", game:get_value("i1912")+1)
-      end)
-    elseif game:get_value("b2031") then
+    if game:get_value("b2031") then
       game:start_dialog("isan.0.trading", function(answer)
         if answer == 1 then
           -- give him the fish, get the cookbook
@@ -42,6 +32,16 @@ function npc_isan:on_interaction()
           -- don't give him the fish
           game:start_dialog("isan.0.trading_no")
         end
+      end)
+    elseif game:get_value("i1912") == 2 then
+      repeat -- make sure the same quote is not picked again
+        index = math.random(3)
+      until index ~= last_message
+      game:start_dialog("isan.2.library."..index)
+      last_message = index
+    elseif game:get_value("i1912") == 1 then
+      game:start_dialog("isan.1.library", function()
+        game:set_value("i1912", game:get_value("i1912")+1)
       end)
     else
       game:start_dialog("isan.0.library", function()

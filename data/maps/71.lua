@@ -84,23 +84,25 @@ function thief:on_interaction()
   if catch == 0 then
     catch = catch + 1
     game:start_dialog("thief.0.bottle", function()
-      caught = false
+      sol.timer.start(map, 1000, function() caught = false end)
     end)
   elseif catch >= 10 then
     thief_caught()
   else
     catch = catch + 1
     game:start_dialog("thief.1.bottle", 11-catch, function()
-      caught = false
+      sol.timer.start(map, 1000, function() caught = false end)
     end)
   end
-end
 
-function map:on_update()
-  if game:get_value("b1612") then
-    if map:get_hero():get_distance(thief) <= 50 and not caught then
-      thief:on_interaction()
-      caught = true
+  thief_timer = sol.timer.start(map, 1000, function()
+    if game:get_value("b1612") then
+      if map:get_hero():get_distance(thief) <= 50 and not caught then
+        thief:on_interaction()
+        caught = true
+      end
     end
-  end
+    return true
+  end)
+
 end

@@ -162,23 +162,28 @@ local function initialize_maps()
       end
     end
 
-    -- if hero doesn't have red tunic, slowly remove stamina in Subrosia
-    if game:get_map():get_world() == "subrosia" and
-    game:get_item("tunic"):get_variant() < 2 then
-      sol.timer.start(game:get_map(), 5000, function()
-        game:remove_stamina(1)
-        return true
-      end)
-    end
-
   end
 
-  function map_metatable:on_updated()
+  function map_metatable:on_update()
+    -- if hero doesn't have red tunic, slowly remove stamina in Subrosia
+    if self:get_game():get_map():get_world() == "outside_subrosia" and
+    self:get_game():get_item("tunic"):get_variant() < 2 then
+      if not heat_timer then
+        heat_timer = sol.timer.start(self:get_game(), 5000, function()
+          self:get_game():remove_stamina(5)
+          return true
+        end)
+      end
+    else
+      if heat_timer then heat_timer = nil end
+    end
+
     -- if hero doesn't have blue tunic, slowly remove stamina while swimming
-    if game:get_hero():get_state() == "swimming" and
-    game:get_item("tunic"):get_variant() < 3 then
-      swim_timer = sol.timer.start(game, 5000, function()
-        game:remove_stamina(1)
+    if self:get_game():get_hero():get_state() == "swimming" and
+    self:get_game():get_item("tunic"):get_variant() < 3 and swim_timer == nil then
+      swim_timer = sol.timer.start(self:get_game(), 5000, function()
+        print("swim exhaustion: remove stamina")
+        self:get_game():remove_stamina(5)
         return true
       end)
     else

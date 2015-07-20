@@ -3129,7 +3129,6 @@ shop_treasure{
   y = 392,
   treasure_name = "amber",
   price = 150,
-  font = "bom",
   dialog = "_treasure.amber.1",
 }
 
@@ -3139,10 +3138,8 @@ shop_treasure{
   x = 496,
   y = 392,
   treasure_name = "bomb_bag",
-  treasure_variant = 2,
-  treasure_savegame_variable = "b2017",
+  treasure_savegame_variable = "i1806",
   price = 400,
-  font = "bom",
   dialog = "shop.bomb_bag_2",
 }
 
@@ -3153,7 +3150,6 @@ shop_treasure{
   y = 392,
   treasure_name = "heart",
   price = 10,
-  font = "bom",
   dialog = "shop.heart",
 }
 
@@ -3575,38 +3571,6 @@ separator{
   y = 256,
   width = 992,
   height = 16,
-}
-
-separator{
-  layer = 2,
-  x = 320,
-  y = 0,
-  width = 16,
-  height = 256,
-}
-
-separator{
-  layer = 2,
-  x = 320,
-  y = 272,
-  width = 16,
-  height = 288,
-}
-
-separator{
-  layer = 2,
-  x = 656,
-  y = 0,
-  width = 16,
-  height = 256,
-}
-
-separator{
-  layer = 2,
-  x = 656,
-  y = 272,
-  width = 16,
-  height = 288,
 }
 
 separator{
