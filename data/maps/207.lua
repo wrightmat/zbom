@@ -159,3 +159,9 @@ function map:on_obtained_treasure(item, variant, savegame_variable)
     game:set_dungeon_finished(5)
   end
 end
+
+function chest_book:on_empty()
+  --dynamically determine book variant to give, since dungeons can be done in any order
+  local book_variant = game:get_item("book_mudora"):get_variant() + 1
+  map:get_hero():start_treasure("book_mudora", book_variant)
+end

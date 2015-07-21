@@ -4799,15 +4799,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 960,
-  y = 656,
-  width = 16,
-  height = 16,
-  pattern = "476",
-}
-
-tile{
-  layer = 0,
   x = 1584,
   y = 608,
   width = 32,
@@ -5646,8 +5637,6 @@ chest{
   layer = 0,
   x = 2032,
   y = 285,
-  treasure_name = "book_mudora",
-  treasure_variant = 6,
   treasure_savegame_variable = "b1033",
   sprite = "entities/chest_big",
 }
@@ -6017,16 +6006,6 @@ wall{
   stops_enemies = true,
 }
 
-destructible{
-  name = "hookshot",
-  layer = 0,
-  x = 968,
-  y = 669,
-  sprite = "entities/items",
-  weight = -1,
-  damage_on_enemies = 0,
-}
-
 npc{
   name = "hint_stone",
   layer = 0,
@@ -6145,6 +6124,27 @@ wall{
   width = 32,
   height = 8,
   stops_enemies = true,
+}
+
+npc{
+  name = "torch_chest",
+  layer = 0,
+  x = 968,
+  y = 669,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/torch",
+  behavior = "item#lamp",
+}
+
+destructible{
+  name = "hookshot",
+  layer = 0,
+  x = 968,
+  y = 669,
+  sprite = "entities/items",
+  weight = -1,
+  damage_on_enemies = 0,
 }
 
 tile{

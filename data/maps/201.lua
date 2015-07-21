@@ -14,6 +14,15 @@ function map:on_started(destination)
   if not game:get_value("b1035") then boss_heart:set_enabled(false) end
   if game:get_value("b1050") then map:open_doors("door_miniboss") end
   if game:get_value("b1046") then map:open_doors("door_boss") end
+  if game:get_value("b1787") then chest_treasure:set_enabled(false) end
+end
+
+function map:on_update()
+  if torch_chest:get_sprite():get_animation() == "lit" then
+    chest_treasure:set_enabled(true)
+  else
+    chest_treasure:set_enabled(false)
+  end
 end
 
 for enemy in map:get_entities("helmasaur") do
@@ -63,4 +72,10 @@ function map:on_obtained_treasure(item, variant, savegame_variable)
   if item:get_name() == "book_mudora" then
     game:set_dungeon_finished(1)
   end
+end
+
+function chest_book:on_empty()
+  --dynamically determine book variant to give, since dungeons can be done in any order
+  local book_variant = game:get_item("book_mudora"):get_variant() + 1
+  map:get_hero():start_treasure("book_mudora", book_variant)
 end

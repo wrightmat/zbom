@@ -5,7 +5,9 @@ local game = map:get_game()
 -- Dungeon 1: Hyrulean Sewers --
 --------------------------------
 
+if game:get_value("i1027") == nil then game:set_value("i1027", 0) end
 if game:get_value("i1030") == nil then game:set_value("i1030", 0) end
+if game:get_value("i1032") == nil then game:set_value("i1032", 0) end
 local lantern_overlay = nil
 
 if game:has_item("lamp") then

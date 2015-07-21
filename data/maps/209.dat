@@ -5571,6 +5571,60 @@ tile{
   pattern = "5",
 }
 
+tile{
+  layer = 0,
+  x = 752,
+  y = 1608,
+  width = 16,
+  height = 16,
+  pattern = "481",
+}
+
+tile{
+  layer = 0,
+  x = 216,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "482",
+}
+
+tile{
+  layer = 0,
+  x = 832,
+  y = 1016,
+  width = 16,
+  height = 48,
+  pattern = "601",
+}
+
+tile{
+  layer = 0,
+  x = 864,
+  y = 1016,
+  width = 16,
+  height = 48,
+  pattern = "601",
+}
+
+tile{
+  layer = 0,
+  x = 768,
+  y = 736,
+  width = 32,
+  height = 16,
+  pattern = "601",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 736,
+  width = 16,
+  height = 48,
+  pattern = "601",
+}
+
 wall{
   layer = 0,
   x = 568,
@@ -5876,8 +5930,6 @@ chest{
   layer = 0,
   x = 584,
   y = 125,
-  treasure_name = "book_mudora",
-  treasure_variant = 5,
   treasure_savegame_variable = "b1150",
   sprite = "entities/chest_big",
 }
@@ -7045,8 +7097,10 @@ destructible{
   x = 256,
   y = 1413,
   treasure_name = "random",
-  sprite = "entities/pot",
+  sprite = "entities/stone_small_black",
   destruction_sound = "stone",
+  weight = 2,
+  damage_on_enemies = 2,
 }
 
 wall{
@@ -7113,7 +7167,7 @@ sensor{
 }
 
 sensor{
-  name = "dungeon_room_2_",
+  name = "dungeon_room_2a_",
   layer = 0,
   x = 88,
   y = 989,
@@ -7200,6 +7254,197 @@ sensor{
   y = 1581,
   width = 16,
   height = 32,
+}
+
+sensor{
+  name = "dungeon_room_2b_",
+  layer = 0,
+  x = 72,
+  y = 1693,
+  width = 32,
+  height = 16,
+}
+
+wall{
+  layer = 0,
+  x = 936,
+  y = 1632,
+  width = 32,
+  height = 8,
+  stops_hero = true,
+}
+
+wall{
+  layer = 0,
+  x = 960,
+  y = 1320,
+  width = 8,
+  height = 176,
+  stops_hero = true,
+}
+
+wall{
+  layer = 0,
+  x = 808,
+  y = 1632,
+  width = 80,
+  height = 8,
+  stops_hero = true,
+}
+
+wall{
+  layer = 0,
+  x = 768,
+  y = 1320,
+  width = 192,
+  height = 8,
+  stops_hero = true,
+}
+
+wall{
+  layer = 0,
+  x = 760,
+  y = 1320,
+  width = 8,
+  height = 112,
+  stops_hero = true,
+}
+
+wall{
+  layer = 0,
+  x = 760,
+  y = 1496,
+  width = 8,
+  height = 48,
+  stops_hero = true,
+}
+
+wall{
+  layer = 0,
+  x = 960,
+  y = 1560,
+  width = 8,
+  height = 72,
+  stops_hero = true,
+}
+
+npc{
+  name = "hint_stone_1",
+  layer = 0,
+  x = 760,
+  y = 1621,
+  direction = 0,
+  subtype = 0,
+  behavior = "dialog#hint_stone.caverns.1",
+}
+
+npc{
+  name = "hint_stone_2",
+  layer = 0,
+  x = 224,
+  y = 477,
+  direction = 3,
+  subtype = 0,
+  behavior = "dialog#hint_stone.caverns.2",
+}
+
+destructible{
+  layer = 0,
+  x = 936,
+  y = 749,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 936,
+  y = 765,
+  treasure_name = "heart",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 936,
+  y = 781,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 776,
+  y = 749,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 792,
+  y = 749,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 872,
+  y = 1029,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 872,
+  y = 1045,
+  treasure_name = "heart",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 872,
+  y = 1061,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 840,
+  y = 1029,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 840,
+  y = 1045,
+  treasure_name = "heart",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 840,
+  y = 1061,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
 }
 
 tile{

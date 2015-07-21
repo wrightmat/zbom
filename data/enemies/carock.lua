@@ -106,8 +106,12 @@ function enemy:fire_step_3()
 
   throw_fire()
   if self:get_life() <= initial_life / 2 then
-    timers[#timers + 1] = sol.timer.start(self, 200, function() self:throw_fire() end)
-    timers[#timers + 1] = sol.timer.start(self, 400, function() self:throw_fire() end)
+    timers[#timers + 1] = sol.timer.start(self, 200, function()
+      if self:throw_fire() ~= nil then self:throw_fire() end
+    end)
+    timers[#timers + 1] = sol.timer.start(self, 400, function()
+      if self:throw_fire() ~= nil then self:throw_fire() end
+    end)
   end
 end
 

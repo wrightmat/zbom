@@ -2673,7 +2673,7 @@ dialog{
   text = [[
 Silly human. You think you're strong
 enough to face the entirety of the
-great Dark Tribe? We shall show you
+great $mDark Tribe$w? We shall show you
 how far our power reaches!
   ]]
 }
@@ -2682,9 +2682,10 @@ dialog{
   id = "carock.0.ruins_defeat",
   skip = "current",
   text = [[
-You may have defeated me, but
-you're too late to stop what my
-people have already set into motion!  ]]
+You may have defeated me, but you're too
+late to stop what  $m my people$whave already
+set into motion!
+  ]]
 }
 
 dialog{
@@ -4957,6 +4958,23 @@ Not for the weak.
 }
 
 dialog{
+  id = "hint_stone.caverns.1",
+  text = [[
+If you can't find a block when you
+need one, simple create your own.
+]]
+}
+
+dialog{
+  id = "hint_stone.caverns.2",
+  text = [[
+If you can't proceed, use a very special
+cane to fill the holes in the ground with
+the ice around you.
+]]
+}
+
+dialog{
   id = "hint_stone.grove.1",
   skip = "current",
   text = [[
@@ -6468,8 +6486,8 @@ dialog{
   text = [[
 $v! $0. $0. $0.
 Did you find the rope city on your way
-to $b Snowpeak$w? In the northern center of
-Hyrule lies $b Septen Heights$w, a relatively
+to $bSnowpeak$w? In the northern center of
+Hyrule lies $bSepten Heights$w, a relatively
 new addition to our landscape. A great
 tower has been built by the people there,
 and it seems likely that the prize you
