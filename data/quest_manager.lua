@@ -108,7 +108,7 @@ local function initialize_maps()
     local game = self:get_game()
 
     function random_8(lower, upper)
-      math.randomseed(os.time())
+      math.randomseed(os.time() - os.clock() * 1000)
       return math.random(math.ceil(lower/8), math.floor(upper/8))*8
     end
 

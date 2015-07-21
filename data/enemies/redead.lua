@@ -3,8 +3,8 @@ local enemy = ...
 -- Redead: an undead enemy.
 
 function enemy:on_created()
-  self:set_life(2)
-  self:set_damage(3)
+  self:set_life(6)
+  self:set_damage(4)
   self:create_sprite("enemies/redead")
   self:set_size(32, 32)
   self:set_origin(16, 29)
