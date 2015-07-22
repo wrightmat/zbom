@@ -27,7 +27,7 @@ function map:on_started()
 	layer = 0,
 	x = 128,
 	y = 144,
-	price = 9999,
+	price = 5000,
 	dialog = "_item_description.shovel.1",
 	treasure_name = "shovel",
 	treasure_variant = 1

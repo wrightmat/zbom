@@ -2438,6 +2438,24 @@ tile{
   pattern = "675",
 }
 
+tile{
+  layer = 0,
+  x = 912,
+  y = 272,
+  width = 16,
+  height = 48,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 184,
+  width = 16,
+  height = 32,
+  pattern = "1128",
+}
+
 npc{
   name = "tower_base",
   layer = 0,
@@ -3377,6 +3395,51 @@ custom_entity{
   direction = 0,
   sprite = "entities/mailbox",
   model = "mailbox",
+}
+
+custom_entity{
+  layer = 0,
+  x = 696,
+  y = 197,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 696,
+  y = 213,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 920,
+  y = 285,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 920,
+  y = 301,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 920,
+  y = 317,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
 }
 
 tile{
