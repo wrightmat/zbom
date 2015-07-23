@@ -18,9 +18,32 @@ if game:get_value("i2021")==nil then game:set_value("i2021", 0) end
 
 function map:on_started(destination)
   -- increment potion counters
-  if game:get_value("i2014") >= 1 then game:set_value("i2014", game:get_value("i2014")+1) end  -- Blue
-  if game:get_value("i2015") >= 1 then game:set_value("i2015", game:get_value("i2015")+1) end  -- Revitalizing
+  if game:get_value("i2014") >= 10 then
+    local tx,ty,tl = shop_potion_1:get_position()
+    shop_potion_1:remove()
+    if game:get_value("i2014") == 20 then
+      map:create_shop_treasure({x=tx,y=ty,layer=tl,name="shop_potion",treasure_name="potion",treasure_variant=3,dialog="shop.potion_blue",price=0})
+      game:set_value("i2014", 30)
+    else
+      map:create_shop_treasure({x=tx,y=ty,layer=tl,name="shop_potion",treasure_name="potion",treasure_variant=3,dialog="shop.potion_blue",price=150})
+    end
+  elseif game:get_value("i2014") >= 1 then
+    game:set_value("i2014", game:get_value("i2014")+1)  -- Blue
+  end
+  if game:get_value("i2015") >= 10 then
+    local tx,ty,tl = shop_potion_2:get_position()
+    shop_potion_2:remove()
+    if game:get_value("i2015") == 20 then
+      map:create_shop_treasure({x=tx,y=ty,layer=tl,name="shop_potion",treasure_name="potion",treasure_variant=4,dialog="shop.potion_revitalizing",price=0})
+      game:set_value("i2015", 30)
+    else
+      map:create_shop_treasure({x=tx,y=ty,layer=tl,name="shop_potion",treasure_name="potion",treasure_variant=4,dialog="shop.potion_revitalizing",price=200})
+    end
+  elseif game:get_value("i2015") >= 1 then
+    game:set_value("i2015", game:get_value("i2015")+1)  -- Revitalizing
+  end
   if game:get_value("i2021") >= 1 then game:set_value("i2021", game:get_value("i2021")+1) end  -- Odd (trading)
+
   if destination == main_entrance_shop and game:get_value("i2021") >= 5 then
     game:start_dialog("crista.0.potion_done", function()
       hero:start_treasure("trading", 2) -- give Odd Potion...
@@ -28,17 +51,15 @@ function map:on_started(destination)
       game:set_value("b2020", false) -- take mushroom
       game:set_value("i2021", 0) -- and get rid of potion counter
     end)
-  elseif destination == main_entrance_shop and game:get_value("i2015") >= 10 then
-    game:start_dialog("crista.0.potion_done", function()
-      hero:start_treasure("potion", 4) -- give Revitalizing Potion...
+  elseif destination == main_entrance_shop and game:get_value("i2015") >= 10 and game:get_value("i2015") <= 19 then
+    game:start_dialog("shopkeep.potion", function()
       game:set_value("i1847", game:get_value("i1847")-25)
-      game:set_value("i2015", 0) -- and get rid of potion counter
+      game:set_value("i2015", 20) -- allow potion to be bought
     end)
-  elseif destination == main_entrance_shop and game:get_value("i2014") >= 10 then
-    game:start_dialog("crista.0.potion_done", function()
-      hero:start_treasure("potion", 3) -- give Blue Potion...
+  elseif destination == main_entrance_shop and game:get_value("i2014") >= 10 and game:get_value("i2014") <= 19 then
+    game:start_dialog("shopkeep.potion", function()
       game:set_value("i1847", game:get_value("i1847")-10)
-      game:set_value("i2014", 0) -- and get rid of potion counter
+      game:set_value("i2014", 20) -- allow potion to be bought
     end)
   end
   if destination == from_intro then
@@ -79,12 +100,39 @@ function map:on_started(destination)
     npc_gaira:remove()
   end
 
+  -- Replace shop items if they're bought
+  if game:get_value("i1806") >= 1 and game:get_value("i2014") >= 10 then --bomb bag
+    self:create_shop_treasure({
+	name = "shop_potion",
+	layer = 0,
+	x = 144,
+	y = 504,
+	price = 60,
+	dialog = "shop.potion_red",
+	treasure_name = "potion",
+	treasure_variant = 1
+    })
+  end
+
   -- Activate any night-specific dynamic tiles
   if game:get_time_of_day() == "night" then
     for entity in map:get_entities("night_") do
       entity:set_enabled(true)
     end
   end
+
+  -- Apply to all potions, even dynamically created ones
+  for treasure in map:get_entities("shop_potion") do
+    treasure.on_buying = function()
+      if treasure:get_game():get_first_empty_bottle() == nil then
+        game:start_dialog("shop.no_bottle")
+        return false
+      else
+        return true
+      end
+    end
+  end
+
 end
 
 function house_bed:on_activated()
@@ -105,26 +153,6 @@ function house_bed:on_activated()
     end)
     sleep_timer:set_with_sound(false)
   end)
-end
-
-function shop_potion_red:on_buying()
-  if self:get_game():get_first_empty_bottle() == nil then
-    game:start_dialog("shop.no_bottle")
-    return false
-  else
-    hero:start_treasure("potion", 1)
-    game:remove_money(50)
-  end
-end
-
-function shop_potion_green:on_buying()
-  if self:get_game():get_first_empty_bottle() == nil then
-    game:start_dialog("shop.no_bottle")
-    return false
-  else
-    hero:start_treasure("potion", 2)
-    game:remove_money(100)
-  end
 end
 
 function npc_bilo:on_interaction()
@@ -245,7 +273,7 @@ function shelf_1:on_interaction()
 end
 
 function npc_shopkeeper:on_interaction()
-  if math.random(4) == 1 then
+  if math.random(4) == 1 and game:get_item("rupee_bag"):get_variant() < 2 then
     -- Randomly mention the bigger wallet
     game:start_dialog("shopkeep.1")
   else

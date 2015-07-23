@@ -541,7 +541,7 @@ function shop_item_3:on_buying()
 end
 
 function npc_shopkeeper:on_interaction()
-  if math.random(4) == 1 then
+  if math.random(4) == 1 and game:get_item("rupee_bag"):get_variant() < 2 then
     -- Randomly mention the bigger wallet
     game:start_dialog("shopkeep.1")
   else

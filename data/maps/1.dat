@@ -11,6 +11,24 @@ properties{
 tile{
   layer = 0,
   x = 80,
+  y = 448,
+  width = 224,
+  height = 144,
+  pattern = "482",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 488,
+  width = 80,
+  height = 16,
+  pattern = "212",
+}
+
+tile{
+  layer = 0,
+  x = 80,
   y = 944,
   width = 224,
   height = 8,
@@ -60,15 +78,6 @@ tile{
   width = 224,
   height = 144,
   pattern = "481",
-}
-
-tile{
-  layer = 0,
-  x = 80,
-  y = 448,
-  width = 224,
-  height = 144,
-  pattern = "482",
 }
 
 tile{
@@ -1821,14 +1830,14 @@ tile{
   layer = 0,
   x = 224,
   y = 504,
-  width = 64,
+  width = 80,
   height = 8,
   pattern = "215",
 }
 
 tile{
   layer = 0,
-  x = 288,
+  x = 296,
   y = 504,
   width = 8,
   height = 8,
@@ -1857,14 +1866,14 @@ tile{
   layer = 0,
   x = 224,
   y = 480,
-  width = 64,
+  width = 80,
   height = 8,
   pattern = "208",
 }
 
 tile{
   layer = 0,
-  x = 288,
+  x = 296,
   y = 480,
   width = 8,
   height = 8,
@@ -1873,20 +1882,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 288,
+  x = 296,
   y = 488,
   width = 8,
   height = 16,
   pattern = "210",
-}
-
-tile{
-  layer = 0,
-  x = 224,
-  y = 488,
-  width = 64,
-  height = 16,
-  pattern = "212",
 }
 
 tile{
@@ -5341,30 +5341,27 @@ shop_treasure{
   y = 504,
   treasure_name = "shield",
   price = 100,
-  font = "la",
   dialog = "shop.ordon_shield",
 }
 
 shop_treasure{
-  name = "shop_potion_red",
+  name = "shop_potion_1",
   layer = 0,
   x = 224,
   y = 480,
   treasure_name = "potion",
   price = 50,
-  font = "la",
   dialog = "shop.potion_red",
 }
 
 shop_treasure{
-  name = "shop_potion_green",
+  name = "shop_potion_2",
   layer = 0,
-  x = 256,
+  x = 264,
   y = 480,
   treasure_name = "potion",
   treasure_variant = 2,
   price = 100,
-  font = "la",
   dialog = "shop.potion_green",
 }
 
@@ -5374,8 +5371,8 @@ shop_treasure{
   x = 144,
   y = 504,
   treasure_name = "bomb_bag",
-  price = 350,
-  font = "la",
+  treasure_savegame_variable = "i1806",
+  price = 500,
   dialog = "shop.bomb_bag_1",
 }
 

@@ -1910,7 +1910,7 @@ dialog{
   icon = "9",
   skip = "current",
   text = [[
-You got some $r Heart Potion$w!$0
+You got some  $r Heart Potion$w!$0
 Use it to restore your life.
   ]]
 }
@@ -1920,7 +1920,7 @@ dialog{
   icon = "10",
   skip = "current",
   text = [[
-You got some $r Magic Potion$w!$0
+You got some  $r Magic Potion$w!$0
 Use it to refill your
 magic meter.
   ]]
@@ -1931,7 +1931,7 @@ dialog{
   icon = "11",
   skip = "current",
   text = [[
-You got $r Stamina Potion$w!$0
+You got  $r Stamina Potion$w!$0
 It restores your stamina!
   ]]
 }
@@ -2931,6 +2931,14 @@ dialog{
 Your potion's ready! It was so much
 fun to make, thanks!
   ]]
+}
+
+dialog{
+  id = "crista.0.potion_free",
+  text = [[
+I'll even give you the first one free when you come
+to the shop!
+]]
 }
 
 dialog{
@@ -5735,7 +5743,7 @@ dialog{
   id = "julita.4.house",
   skip = "current",
   text = [[
-Ever chatted with that  $g lumberjack$w
+Ever chatted with that  $g  lumberjack$w
 fellow who lives just north of here?
 I swear he knows everything about
 those woods and probably other places
@@ -7399,8 +7407,8 @@ dialog{
   id = "shop.potion_blue",
   skip = "current",
   text = [[
-A tasty potion which restores
-both life and magic!
+A tasty potion made from deku sticks
+which restores both life and magic!
   ]]
 }
 
@@ -7419,6 +7427,16 @@ dialog{
   text = [[
 A tasty potion from local herbs.
 It'll perk you right up!
+  ]]
+}
+
+dialog{
+  id = "shop.potion_revitalizing",
+  skip = "current",
+  text = [[
+A delicious potion made from deku sticks
+that will restore your life, magic, and
+stamina!
   ]]
 }
 
@@ -7454,6 +7472,7 @@ swimming.
 
 dialog{
   id = "shop.wallet",
+  skip = "current",
   text = [[
 A huge wallet which can hold
 almost uncountable rupees!
@@ -7472,8 +7491,8 @@ dialog{
   id = "shopkeep.0",
   skip = "current",
   text = [[
-If there's anything you like,
-just pick it up!
+If there's anything you like, just
+pick it up!
   ]]
 }
 
@@ -7485,6 +7504,14 @@ I heard there's a man in  $b Castle
 Town$w who's running a game where the
 grand prize is a bigger wallet!
   ]]
+}
+
+dialog{
+  id = "shopkeep.potion",
+  text = [[
+Your potion is done and you'll be able
+to buy it in our shop whenever you want!
+We'll even give you the first one free!]]
 }
 
 dialog{
