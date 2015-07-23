@@ -8531,6 +8531,15 @@ tile{
   pattern = "998",
 }
 
+tile{
+  layer = 0,
+  x = 536,
+  y = 656,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
 teletransporter{
   name = "to_D15",
   layer = 0,
@@ -9071,7 +9080,7 @@ destructible{
   layer = 0,
   x = 912,
   y = 37,
-  treasure_name = "random_woods",
+  treasure_name = "stick",
   sprite = "entities/bush",
   destruction_sound = "bush",
   weight = 1,
@@ -9082,7 +9091,7 @@ destructible{
   layer = 0,
   x = 912,
   y = 53,
-  treasure_name = "random_woods",
+  treasure_name = "jade",
   sprite = "entities/bush",
   destruction_sound = "bush",
   weight = 1,
@@ -11071,15 +11080,6 @@ tile{
   width = 8,
   height = 24,
   pattern = "1494",
-}
-
-tile{
-  layer = 2,
-  x = 536,
-  y = 656,
-  width = 48,
-  height = 24,
-  pattern = "1499",
 }
 
 tile{

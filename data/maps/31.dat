@@ -3717,234 +3717,234 @@ tile{
 }
 
 destination{
+  name = "from_lair",
   layer = 0,
   x = 456,
   y = 397,
-  name = "from_lair",
   direction = 3,
 }
 
 teletransporter{
+  name = "to_lair",
   layer = 0,
   x = 448,
   y = 368,
   width = 16,
   height = 16,
-  name = "to_lair",
   destination_map = "206",
   destination = "from_outside",
 }
 
 dynamic_tile{
+  name = "temple_entr",
   layer = 0,
   x = 440,
   y = 344,
+  pattern = "844",
   width = 32,
   height = 32,
-  name = "temple_entr",
-  pattern = "844",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "water_3",
   layer = 0,
   x = 0,
   y = 304,
+  pattern = "275",
   width = 824,
   height = 32,
-  name = "water_3",
-  pattern = "275",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "water_13",
   layer = 0,
   x = 0,
   y = 336,
+  pattern = "275",
   width = 800,
   height = 24,
-  name = "water_13",
-  pattern = "275",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "water_9",
   layer = 0,
   x = 0,
   y = 360,
+  pattern = "275",
   width = 768,
   height = 88,
-  name = "water_9",
-  pattern = "275",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "water_8",
   layer = 0,
   x = 0,
   y = 736,
+  pattern = "275",
   width = 184,
   height = 48,
-  name = "water_8",
-  pattern = "275",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "water_12",
   layer = 0,
   x = 0,
   y = 784,
+  pattern = "275",
   width = 136,
   height = 48,
-  name = "water_12",
-  pattern = "275",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "water_11",
   layer = 0,
   x = 0,
   y = 640,
+  pattern = "275",
   width = 456,
   height = 40,
-  name = "water_11",
-  pattern = "275",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "water_10",
   layer = 0,
   x = 0,
   y = 544,
+  pattern = "275",
   width = 664,
   height = 48,
-  name = "water_10",
-  pattern = "275",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "water_5",
   layer = 0,
   x = 0,
   y = 496,
+  pattern = "275",
   width = 712,
   height = 48,
-  name = "water_5",
-  pattern = "275",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "water_2",
   layer = 0,
   x = 0,
   y = 256,
+  pattern = "275",
   width = 872,
   height = 48,
-  name = "water_2",
-  pattern = "275",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "water_7",
   layer = 0,
   x = 0,
   y = 680,
+  pattern = "275",
   width = 416,
   height = 56,
-  name = "water_7",
-  pattern = "275",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "water_1",
   layer = 0,
   x = 0,
   y = 0,
+  pattern = "275",
   width = 928,
   height = 256,
-  name = "water_1",
-  pattern = "275",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "water_4",
   layer = 0,
   x = 0,
   y = 448,
+  pattern = "275",
   width = 760,
   height = 48,
-  name = "water_4",
-  pattern = "275",
   enabled_at_start = true,
 }
 
 teletransporter{
+  name = "to_F11",
   layer = 0,
   x = 1120,
   y = 80,
   width = 16,
   height = 1040,
-  name = "to_F11",
   transition = "scrolling",
   destination_map = "32",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_E12",
   layer = 0,
   x = 456,
   y = 1120,
   width = 336,
   height = 16,
-  name = "to_E12",
   transition = "scrolling",
   destination_map = "26",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_E12_2",
   layer = 0,
   x = 856,
   y = 1120,
   width = 272,
   height = 16,
-  name = "to_E12_2",
   transition = "scrolling",
   destination_map = "26",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_E12_3",
   layer = 0,
   x = 16,
   y = 1120,
   width = 384,
   height = 16,
-  name = "to_E12_3",
   transition = "scrolling",
   destination_map = "26",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_E10_water",
   layer = 0,
-  x = 152,
+  x = 0,
   y = -16,
   width = 928,
   height = 16,
-  name = "to_E10",
   transition = "scrolling",
   destination_map = "34",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_D11",
   layer = 0,
   x = -16,
   y = 880,
   width = 16,
   height = 192,
-  name = "to_D11",
   transition = "scrolling",
   destination_map = "30",
   destination = "_side",
@@ -4545,805 +4545,805 @@ destructible{
 }
 
 dynamic_tile{
+  name = "water_6",
   layer = 0,
   x = 0,
   y = 592,
+  pattern = "275",
   width = 504,
   height = 48,
-  name = "water_6",
-  pattern = "275",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake",
   layer = 0,
   x = 512,
   y = 576,
+  pattern = "18",
   width = 112,
   height = 16,
-  name = "wake",
-  pattern = "18",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_2",
   layer = 0,
   x = 624,
   y = 576,
+  pattern = "280",
   width = 16,
   height = 16,
-  name = "wake_2",
-  pattern = "280",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_3",
   layer = 0,
   x = 624,
   y = 560,
+  pattern = "30",
   width = 16,
   height = 16,
-  name = "wake_3",
-  pattern = "30",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_4",
   layer = 0,
   x = 640,
   y = 560,
+  pattern = "280",
   width = 16,
   height = 16,
-  name = "wake_4",
-  pattern = "280",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_5",
   layer = 0,
   x = 640,
   y = 544,
+  pattern = "30",
   width = 16,
   height = 16,
-  name = "wake_5",
-  pattern = "30",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_6",
   layer = 0,
   x = 656,
   y = 544,
+  pattern = "280",
   width = 16,
   height = 16,
-  name = "wake_6",
-  pattern = "280",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_7",
   layer = 0,
   x = 656,
   y = 528,
+  pattern = "30",
   width = 16,
   height = 16,
-  name = "wake_7",
-  pattern = "30",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_8",
   layer = 0,
   x = 672,
   y = 528,
+  pattern = "280",
   width = 16,
   height = 16,
-  name = "wake_8",
-  pattern = "280",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_9",
   layer = 0,
   x = 672,
   y = 512,
+  pattern = "30",
   width = 16,
   height = 16,
-  name = "wake_9",
-  pattern = "30",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_10",
   layer = 0,
   x = 688,
   y = 512,
+  pattern = "280",
   width = 16,
   height = 16,
-  name = "wake_10",
-  pattern = "280",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_11",
   layer = 0,
   x = 688,
   y = 496,
+  pattern = "30",
   width = 16,
   height = 16,
-  name = "wake_11",
-  pattern = "30",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_12",
   layer = 0,
   x = 704,
   y = 496,
+  pattern = "280",
   width = 16,
   height = 16,
-  name = "wake_12",
-  pattern = "280",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_13",
   layer = 0,
   x = 704,
   y = 480,
+  pattern = "30",
   width = 16,
   height = 16,
-  name = "wake_13",
-  pattern = "30",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_14",
   layer = 0,
   x = 720,
   y = 480,
+  pattern = "280",
   width = 16,
   height = 16,
-  name = "wake_14",
-  pattern = "280",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_15",
   layer = 0,
   x = 720,
   y = 464,
+  pattern = "30",
   width = 16,
   height = 16,
-  name = "wake_15",
-  pattern = "30",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_16",
   layer = 0,
   x = 736,
   y = 464,
+  pattern = "280",
   width = 16,
   height = 16,
-  name = "wake_16",
-  pattern = "280",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_17",
   layer = 0,
   x = 736,
   y = 448,
+  pattern = "30",
   width = 16,
   height = 16,
-  name = "wake_17",
-  pattern = "30",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_18",
   layer = 0,
   x = 752,
   y = 448,
+  pattern = "280",
   width = 16,
   height = 16,
-  name = "wake_18",
-  pattern = "280",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_19",
   layer = 0,
   x = 752,
   y = 368,
+  pattern = "20",
   width = 16,
   height = 80,
-  name = "wake_19",
-  pattern = "20",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_20",
   layer = 0,
   x = 752,
   y = 352,
+  pattern = "30",
   width = 16,
   height = 16,
-  name = "wake_20",
-  pattern = "30",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_21",
   layer = 0,
   x = 768,
   y = 352,
+  pattern = "280",
   width = 16,
   height = 16,
-  name = "wake_21",
-  pattern = "280",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_22",
   layer = 0,
   x = 768,
   y = 336,
+  pattern = "30",
   width = 16,
   height = 16,
-  name = "wake_22",
-  pattern = "30",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_23",
   layer = 0,
   x = 784,
   y = 336,
+  pattern = "280",
   width = 16,
   height = 16,
-  name = "wake_23",
-  pattern = "280",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_24",
   layer = 0,
   x = 784,
   y = 320,
+  pattern = "30",
   width = 16,
   height = 16,
-  name = "wake_24",
-  pattern = "30",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_25",
   layer = 0,
   x = 800,
   y = 320,
+  pattern = "280",
   width = 16,
   height = 16,
-  name = "wake_25",
-  pattern = "280",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_26",
   layer = 0,
   x = 800,
   y = 304,
+  pattern = "30",
   width = 16,
   height = 16,
-  name = "wake_26",
-  pattern = "30",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_27",
   layer = 0,
   x = 816,
   y = 304,
+  pattern = "280",
   width = 16,
   height = 16,
-  name = "wake_27",
-  pattern = "280",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_28",
   layer = 0,
   x = 816,
   y = 288,
+  pattern = "30",
   width = 16,
   height = 16,
-  name = "wake_28",
-  pattern = "30",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_29",
   layer = 0,
   x = 832,
   y = 288,
+  pattern = "280",
   width = 16,
   height = 16,
-  name = "wake_29",
-  pattern = "280",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_30",
   layer = 0,
   x = 832,
   y = 272,
+  pattern = "30",
   width = 16,
   height = 16,
-  name = "wake_30",
-  pattern = "30",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_31",
   layer = 0,
   x = 848,
   y = 272,
+  pattern = "280",
   width = 16,
   height = 16,
-  name = "wake_31",
-  pattern = "280",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_32",
   layer = 0,
   x = 848,
   y = 256,
+  pattern = "30",
   width = 16,
   height = 16,
-  name = "wake_32",
-  pattern = "30",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_33",
   layer = 0,
   x = 864,
   y = 256,
+  pattern = "280",
   width = 16,
   height = 16,
-  name = "wake_33",
-  pattern = "280",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_34",
   layer = 0,
   x = 864,
   y = 240,
+  pattern = "30",
   width = 16,
   height = 16,
-  name = "wake_34",
-  pattern = "30",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_35",
   layer = 0,
   x = 880,
   y = 240,
+  pattern = "280",
   width = 16,
   height = 16,
-  name = "wake_35",
-  pattern = "280",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_36",
   layer = 0,
   x = 880,
   y = 224,
+  pattern = "30",
   width = 16,
   height = 16,
-  name = "wake_36",
-  pattern = "30",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_37",
   layer = 0,
   x = 896,
   y = 224,
+  pattern = "280",
   width = 16,
   height = 16,
-  name = "wake_37",
-  pattern = "280",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_39",
   layer = 0,
   x = 912,
   y = 208,
+  pattern = "280",
   width = 16,
   height = 16,
-  name = "wake_39",
-  pattern = "280",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_40",
   layer = 0,
   x = 912,
   y = 0,
+  pattern = "20",
   width = 16,
   height = 208,
-  name = "wake_40",
-  pattern = "20",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_41",
   layer = 0,
   x = 496,
   y = 576,
+  pattern = "30",
   width = 16,
   height = 16,
-  name = "wake_41",
-  pattern = "30",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_42",
   layer = 0,
   x = 496,
   y = 592,
+  pattern = "280",
   width = 16,
   height = 16,
-  name = "wake_42",
-  pattern = "280",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_43",
   layer = 0,
   x = 480,
   y = 592,
+  pattern = "30",
   width = 16,
   height = 16,
-  name = "wake_43",
-  pattern = "30",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_44",
   layer = 0,
   x = 480,
   y = 608,
+  pattern = "280",
   width = 16,
   height = 16,
-  name = "wake_44",
-  pattern = "280",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_45",
   layer = 0,
   x = 464,
   y = 608,
+  pattern = "30",
   width = 16,
   height = 16,
-  name = "wake_45",
-  pattern = "30",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_46",
   layer = 0,
   x = 464,
   y = 624,
+  pattern = "280",
   width = 16,
   height = 16,
-  name = "wake_46",
-  pattern = "280",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_47",
   layer = 0,
   x = 448,
   y = 624,
+  pattern = "30",
   width = 16,
   height = 16,
-  name = "wake_47",
-  pattern = "30",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_48",
   layer = 0,
   x = 448,
   y = 640,
+  pattern = "280",
   width = 16,
   height = 16,
-  name = "wake_48",
-  pattern = "280",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_49",
   layer = 0,
   x = 432,
   y = 640,
+  pattern = "30",
   width = 16,
   height = 16,
-  name = "wake_49",
-  pattern = "30",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_50",
   layer = 0,
   x = 432,
   y = 656,
+  pattern = "280",
   width = 16,
   height = 16,
-  name = "wake_50",
-  pattern = "280",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_51",
   layer = 0,
   x = 416,
   y = 656,
+  pattern = "30",
   width = 16,
   height = 16,
-  name = "wake_51",
-  pattern = "30",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_52",
   layer = 0,
   x = 416,
   y = 672,
+  pattern = "280",
   width = 16,
   height = 16,
-  name = "wake_52",
-  pattern = "280",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_53",
   layer = 0,
   x = 400,
   y = 672,
+  pattern = "30",
   width = 16,
   height = 16,
-  name = "wake_53",
-  pattern = "30",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_54",
   layer = 0,
   x = 400,
   y = 688,
+  pattern = "280",
   width = 16,
   height = 16,
-  name = "wake_54",
-  pattern = "280",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_55",
   layer = 0,
   x = 384,
   y = 688,
+  pattern = "30",
   width = 16,
   height = 16,
-  name = "wake_55",
-  pattern = "30",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_56",
   layer = 0,
   x = 384,
   y = 704,
+  pattern = "280",
   width = 16,
   height = 16,
-  name = "wake_56",
-  pattern = "280",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_57",
   layer = 0,
   x = 368,
   y = 704,
+  pattern = "30",
   width = 16,
   height = 16,
-  name = "wake_57",
-  pattern = "30",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_58",
   layer = 0,
   x = 368,
   y = 720,
+  pattern = "280",
   width = 16,
   height = 16,
-  name = "wake_58",
-  pattern = "280",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_59",
   layer = 0,
   x = 192,
   y = 720,
+  pattern = "18",
   width = 176,
   height = 16,
-  name = "wake_59",
-  pattern = "18",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_60",
   layer = 0,
   x = 176,
   y = 720,
+  pattern = "30",
   width = 16,
   height = 16,
-  name = "wake_60",
-  pattern = "30",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_61",
   layer = 0,
   x = 176,
   y = 736,
+  pattern = "280",
   width = 16,
   height = 16,
-  name = "wake_61",
-  pattern = "280",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_62",
   layer = 0,
   x = 160,
   y = 736,
+  pattern = "30",
   width = 16,
   height = 16,
-  name = "wake_62",
-  pattern = "30",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_63",
   layer = 0,
   x = 160,
   y = 752,
+  pattern = "280",
   width = 16,
   height = 16,
-  name = "wake_63",
-  pattern = "280",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_64",
   layer = 0,
   x = 144,
   y = 752,
+  pattern = "30",
   width = 16,
   height = 16,
-  name = "wake_64",
-  pattern = "30",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_65",
   layer = 0,
   x = 144,
   y = 768,
+  pattern = "280",
   width = 16,
   height = 16,
-  name = "wake_65",
-  pattern = "280",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_66",
   layer = 0,
   x = 128,
   y = 768,
+  pattern = "30",
   width = 16,
   height = 16,
-  name = "wake_66",
-  pattern = "30",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_67",
   layer = 0,
   x = 128,
   y = 784,
+  pattern = "280",
   width = 16,
   height = 16,
-  name = "wake_67",
-  pattern = "280",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_68",
   layer = 0,
   x = 112,
   y = 784,
+  pattern = "30",
   width = 16,
   height = 16,
-  name = "wake_68",
-  pattern = "30",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_69",
   layer = 0,
   x = 112,
   y = 800,
+  pattern = "280",
   width = 16,
   height = 16,
-  name = "wake_69",
-  pattern = "280",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_70",
   layer = 0,
   x = 96,
   y = 800,
+  pattern = "30",
   width = 16,
   height = 16,
-  name = "wake_70",
-  pattern = "30",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_71",
   layer = 0,
   x = 96,
   y = 816,
+  pattern = "280",
   width = 16,
   height = 16,
-  name = "wake_71",
-  pattern = "280",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_72",
   layer = 0,
   x = 0,
   y = 816,
+  pattern = "18",
   width = 96,
   height = 16,
-  name = "wake_72",
-  pattern = "18",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_38",
   layer = 0,
   x = 896,
   y = 208,
+  pattern = "30",
   width = 16,
   height = 16,
-  name = "wake_38",
-  pattern = "30",
   enabled_at_start = true,
 }
 
@@ -5392,10 +5392,10 @@ destructible{
 }
 
 destination{
+  name = "from_lair_finished",
   layer = 0,
   x = 760,
   y = 581,
-  name = "from_lair_finished",
   direction = 3,
 }
 
@@ -5406,20 +5406,44 @@ wall{
   width = 16,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 npc{
+  name = "torch_1",
   layer = 0,
   x = 736,
   y = 629,
-  name = "torch_1",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/torch_wood",
+}
+
+teletransporter{
+  name = "to_D11_water",
+  layer = 0,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 832,
+  transition = "scrolling",
+  destination_map = "30",
+  destination = "_side",
+}
+
+teletransporter{
+  name = "to_E10",
+  layer = 0,
+  x = 976,
+  y = -16,
+  width = 112,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "34",
+  destination = "_side",
 }
 
 tile{
@@ -6080,90 +6104,90 @@ tile{
 }
 
 dynamic_tile{
-  layer = 1,
-  x = 672,
-  y = 448,
-  width = 16,
-  height = 16,
   name = "wake_74",
+  layer = 1,
+  x = 672,
+  y = 448,
   pattern = "28",
+  width = 16,
+  height = 16,
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_73",
   layer = 1,
   x = 640,
   y = 448,
+  pattern = "30",
   width = 16,
   height = 16,
-  name = "wake_73",
-  pattern = "30",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_75",
   layer = 1,
   x = 640,
   y = 464,
+  pattern = "20",
   width = 16,
   height = 32,
-  name = "wake_75",
-  pattern = "20",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_76",
   layer = 1,
   x = 672,
   y = 464,
+  pattern = "19",
   width = 16,
   height = 32,
-  name = "wake_76",
-  pattern = "19",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_78",
   layer = 1,
   x = 656,
   y = 496,
+  pattern = "17",
   width = 16,
   height = 16,
-  name = "wake_78",
-  pattern = "17",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_79",
   layer = 1,
   x = 672,
   y = 496,
+  pattern = "24",
   width = 16,
   height = 16,
-  name = "wake_79",
-  pattern = "24",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "statue",
   layer = 1,
   x = 648,
   y = 448,
+  pattern = "809",
   width = 32,
   height = 48,
-  name = "statue",
-  pattern = "809",
   enabled_at_start = true,
 }
 
 dynamic_tile{
+  name = "wake_77",
   layer = 1,
   x = 640,
   y = 496,
+  pattern = "22",
   width = 16,
   height = 16,
-  name = "wake_77",
-  pattern = "22",
   enabled_at_start = true,
 }
 

@@ -7290,6 +7290,30 @@ custom_entity{
   model = "mailbox",
 }
 
+teletransporter{
+  name = "to_D9_water",
+  layer = 0,
+  x = -16,
+  y = 960,
+  width = 16,
+  height = 160,
+  transition = "scrolling",
+  destination_map = "42",
+  destination = "_side",
+}
+
+teletransporter{
+  name = "to_E10_water",
+  layer = 0,
+  x = 0,
+  y = 1120,
+  width = 384,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "34",
+  destination = "_side",
+}
+
 tile{
   layer = 1,
   x = 320,

@@ -6766,6 +6766,30 @@ teletransporter{
   destination = "_side",
 }
 
+teletransporter{
+  name = "to_D10_water",
+  layer = 0,
+  x = 848,
+  y = 1120,
+  width = 272,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "78",
+  destination = "_side",
+}
+
+teletransporter{
+  name = "to_E9_water",
+  layer = 0,
+  x = 1120,
+  y = 960,
+  width = 16,
+  height = 160,
+  transition = "scrolling",
+  destination_map = "41",
+  destination = "_side",
+}
+
 tile{
   layer = 2,
   x = 768,

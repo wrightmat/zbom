@@ -7391,6 +7391,30 @@ custom_entity{
   model = "npc_pim",
 }
 
+teletransporter{
+  name = "to_D13_water",
+  layer = 0,
+  x = 0,
+  y = -16,
+  width = 320,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "24",
+  destination = "_side",
+}
+
+teletransporter{
+  name = "to_C14_water",
+  layer = 0,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 96,
+  transition = "scrolling",
+  destination_map = "22",
+  destination = "_side",
+}
+
 tile{
   layer = 2,
   x = 752,

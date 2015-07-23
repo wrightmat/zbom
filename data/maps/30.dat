@@ -2997,60 +2997,60 @@ tile{
 }
 
 teletransporter{
+  name = "to_E11",
   layer = 0,
   x = 1120,
   y = 880,
   width = 16,
   height = 192,
-  name = "to_E11",
   transition = "scrolling",
   destination_map = "31",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_D12",
   layer = 0,
   x = 712,
   y = 1120,
   width = 368,
   height = 16,
-  name = "to_D12",
   transition = "scrolling",
   destination_map = "25",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_D12_water",
   layer = 0,
   x = 0,
   y = 1120,
   width = 672,
   height = 16,
-  name = "to_D12_2",
   transition = "scrolling",
   destination_map = "25",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_C11",
   layer = 0,
   x = -16,
   y = 0,
   width = 16,
   height = 1120,
-  name = "to_C11",
   transition = "scrolling",
   destination_map = "80",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_D10",
   layer = 0,
   x = 0,
   y = -16,
   width = 496,
   height = 16,
-  name = "to_D10",
   transition = "scrolling",
   destination_map = "78",
   destination = "_side",
@@ -3189,48 +3189,72 @@ destructible{
 }
 
 enemy{
+  name = "crab_1",
   layer = 0,
   x = 264,
   y = 845,
-  name = "crab_1",
   direction = 3,
   breed = "crab",
 }
 
 enemy{
+  name = "crab_2",
   layer = 0,
   x = 176,
   y = 613,
-  name = "crab_2",
   direction = 3,
   breed = "crab",
 }
 
 enemy{
+  name = "crab_3",
   layer = 0,
   x = 312,
   y = 373,
-  name = "crab_3",
   direction = 3,
   breed = "crab",
 }
 
 enemy{
+  name = "crab_4",
   layer = 0,
   x = 80,
   y = 429,
-  name = "crab_4",
   direction = 3,
   breed = "crab",
 }
 
 enemy{
+  name = "crab_5",
   layer = 0,
   x = 440,
   y = 229,
-  name = "crab_5",
   direction = 3,
   breed = "crab",
+}
+
+teletransporter{
+  name = "to_E11_water",
+  layer = 0,
+  x = 1120,
+  y = 0,
+  width = 16,
+  height = 832,
+  transition = "scrolling",
+  destination_map = "31",
+  destination = "_side",
+}
+
+teletransporter{
+  name = "to_D10_water",
+  layer = 0,
+  x = 544,
+  y = -16,
+  width = 576,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "78",
+  destination = "_side",
 }
 
 tile{

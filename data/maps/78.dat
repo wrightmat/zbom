@@ -2404,15 +2404,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 128,
-  y = -64,
-  width = 16,
-  height = 16,
-  pattern = "29",
-}
-
-tile{
-  layer = 0,
   x = 192,
   y = 0,
   width = 16,
@@ -2431,15 +2422,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 144,
-  y = -64,
-  width = 16,
-  height = 16,
-  pattern = "28",
-}
-
-tile{
-  layer = 0,
   x = 160,
   y = -80,
   width = 16,
@@ -2449,26 +2431,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 176,
-  y = -64,
-  width = 16,
-  height = 16,
-  pattern = "553",
-}
-
-tile{
-  layer = 0,
   x = 144,
   y = -80,
-  width = 16,
-  height = 16,
-  pattern = "275",
-}
-
-tile{
-  layer = 0,
-  x = 160,
-  y = -64,
   width = 16,
   height = 16,
   pattern = "275",
@@ -2481,15 +2445,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "551",
-}
-
-tile{
-  layer = 0,
-  x = 192,
-  y = -64,
-  width = 16,
-  height = 16,
-  pattern = "9",
 }
 
 tile{
@@ -4364,80 +4319,125 @@ tile{
   pattern = "2144",
 }
 
+tile{
+  layer = 0,
+  x = 552,
+  y = 16,
+  width = 48,
+  height = 40,
+  pattern = "522",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 24,
+  width = 48,
+  height = 40,
+  pattern = "522",
+}
+
 teletransporter{
+  name = "to_D9",
   layer = 0,
   x = 408,
   y = -16,
   width = 384,
   height = 16,
-  name = "to_D9",
   transition = "scrolling",
   destination_map = "42",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_C10",
   layer = 0,
   x = -16,
   y = 0,
   width = 16,
   height = 1120,
-  name = "to_C10",
   transition = "scrolling",
   destination_map = "77",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_D11",
   layer = 0,
   x = 0,
   y = 1120,
   width = 496,
   height = 16,
-  name = "to_D11",
   transition = "scrolling",
   destination_map = "30",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_D9_2",
   layer = 0,
   x = -8,
   y = -16,
   width = 96,
   height = 16,
-  name = "to_D9_2",
   transition = "scrolling",
   destination_map = "42",
   destination = "_side",
 }
 
 destination{
+  name = "from_fairy",
   layer = 0,
   x = 624,
   y = 109,
-  name = "from_fairy",
   direction = 3,
 }
 
 teletransporter{
+  name = "to_fairy",
   layer = 0,
   x = 616,
   y = 80,
   width = 16,
   height = 16,
-  name = "to_fairy",
   destination_map = "166",
   destination = "from_outside",
 }
 
-tile{
-  layer = 2,
-  x = 552,
-  y = 16,
-  width = 48,
-  height = 40,
-  pattern = "522",
+teletransporter{
+  name = "to_D11_water",
+  layer = 0,
+  x = 544,
+  y = 1120,
+  width = 576,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "30",
+  destination = "_side",
+}
+
+teletransporter{
+  name = "to_D9_water",
+  layer = 0,
+  x = 864,
+  y = -16,
+  width = 256,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "42",
+  destination = "_side",
+}
+
+teletransporter{
+  name = "to_E10_water",
+  layer = 0,
+  x = 1120,
+  y = 0,
+  width = 16,
+  height = 1120,
+  transition = "scrolling",
+  destination_map = "34",
+  destination = "_side",
 }
 
 tile{
@@ -4465,15 +4465,6 @@ tile{
   width = 8,
   height = 40,
   pattern = "520",
-}
-
-tile{
-  layer = 2,
-  x = 656,
-  y = 24,
-  width = 48,
-  height = 40,
-  pattern = "522",
 }
 
 tile{
