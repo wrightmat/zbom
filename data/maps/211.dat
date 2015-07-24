@@ -11,6 +11,24 @@ properties{
 
 tile{
   layer = 0,
+  x = 80,
+  y = 712,
+  width = 320,
+  height = 32,
+  pattern = "95",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 712,
+  width = 304,
+  height = 8,
+  pattern = "112",
+}
+
+tile{
+  layer = 0,
   x = 32,
   y = 688,
   width = 16,
@@ -34,15 +52,6 @@ tile{
   width = 16,
   height = 80,
   pattern = "6",
-}
-
-tile{
-  layer = 0,
-  x = 400,
-  y = 472,
-  width = 16,
-  height = 240,
-  pattern = "524",
 }
 
 tile{
@@ -355,8 +364,8 @@ tile{
   layer = 0,
   x = 64,
   y = 440,
-  width = 336,
-  height = 304,
+  width = 352,
+  height = 272,
   pattern = "22",
 }
 
@@ -4693,7 +4702,7 @@ tile{
   layer = 0,
   x = 128,
   y = 536,
-  width = 240,
+  width = 224,
   height = 80,
   pattern = "603",
 }
@@ -5272,12 +5281,22 @@ sensor{
 }
 
 sensor{
-  name = "dungeon_room_1__2",
+  name = "dungeon_room_4_",
   layer = 0,
   x = 664,
   y = 453,
   width = 32,
   height = 16,
+}
+
+teletransporter{
+  layer = 0,
+  x = 96,
+  y = 720,
+  width = 288,
+  height = 16,
+  destination_map = "210",
+  destination = "_same",
 }
 
 tile{

@@ -22,5 +22,3 @@ end
 function entity:on_interaction()
   game:start_dialog("_goron_statue")
 end
-
-

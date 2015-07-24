@@ -21,6 +21,7 @@ for enemy in map:get_entities("dodongo") do
   enemy.on_dead = function()
     if not map:has_entities("dodongo") and not map:has_entities("tektite") then
       chest_big_key:set_enabled(true)
+      sol.audio.play_sound("chest_appears")
     end
   end
 end
@@ -28,6 +29,7 @@ for enemy in map:get_entities("tektite") do
   enemy.on_dead = function()
     if not map:has_entities("dodongo") and not map:has_entities("tektite") then
       chest_big_key:set_enabled(true)
+      sol.audio.play_sound("chest_appears")
     end
   end
 end

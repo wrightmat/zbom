@@ -33,6 +33,19 @@ function map:on_started()
 	treasure_variant = 1
     })
   end
+
+  if game:get_value("b2019") then --giant wallet
+    self:create_shop_treasure({
+	name = "shop_treasure_2",
+	layer = 0,
+	x = 176,
+	y = 880,
+	price = 20,
+	dialog = "_item_description.apple.1",
+	treasure_name = "apple",
+	treasure_variant = 1
+    })
+  end
 end
 
 function npc_rito_4:on_interaction()
