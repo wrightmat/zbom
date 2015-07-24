@@ -20,6 +20,17 @@ animation{
   },
 }
 animation{
+  name = "boomerang2",
+  src_image = "hero/boomerang.tunic.png",
+  frame_delay = 100,
+  directions = {
+    { x = 64, y = 96, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 2 },
+    { x = 64, y = 120, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 2 },
+    { x = 64, y = 144, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 2 },
+    { x = 64, y = 168, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 2 },
+  },
+}
+animation{
   name = "bow",
   src_image = "hero/bow.tunic.png",
   frame_delay = 100,

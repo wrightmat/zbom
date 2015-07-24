@@ -5022,6 +5022,17 @@ tile{
   pattern = "676",
 }
 
+dynamic_tile{
+  name = "bridge_3",
+  layer = 1,
+  x = 648,
+  y = 64,
+  pattern = "1107",
+  width = 32,
+  height = 64,
+  enabled_at_start = false,
+}
+
 teletransporter{
   name = "to_below",
   layer = 1,
@@ -5127,6 +5138,39 @@ teletransporter{
   height = 16,
   destination_map = "3",
   destination = "from_septen_4_top",
+}
+
+dynamic_tile{
+  name = "bridge_2",
+  layer = 1,
+  x = 616,
+  y = 48,
+  pattern = "1107",
+  width = 32,
+  height = 64,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "bridge_1",
+  layer = 1,
+  x = 608,
+  y = 48,
+  pattern = "1104",
+  width = 8,
+  height = 64,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "bridge_4",
+  layer = 1,
+  x = 680,
+  y = 64,
+  pattern = "1110",
+  width = 8,
+  height = 64,
+  enabled_at_start = false,
 }
 
 tile{

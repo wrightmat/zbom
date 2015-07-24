@@ -19,7 +19,12 @@ end
 function map:on_started(destination)
   random_walk(npc_rito_1)
   random_walk(npc_rito_3)
-  if game:get_value("i1926") >= 2 and game:get_value("i1927") >= 2 then
+  if game:is_dungeon_finished(7) then
+    bridge_1:set_enabled(true)
+    bridge_2:set_enabled(true)
+    bridge_3:set_enabled(true)
+    bridge_4:set_enabled(true)
+  elseif game:get_value("i1926") >= 2 and game:get_value("i1927") >= 2 then
     npc_rito_carpenter:remove()
   end
 end
@@ -51,7 +56,9 @@ function npc_rito_3:on_interaction()
 end
 
 function npc_rito_carpenter:on_interaction()
-  if game:get_value("i1926") >= 1 then
+  if game:is_dungeon_finished(7) then
+    game:start_dialog("rito_carpenter.2.septen")
+  elseif game:get_value("i1926") >= 1 then
     game:start_dialog("rito_carpenter.1.septen")
     game:set_value("i1927", 2)
   else

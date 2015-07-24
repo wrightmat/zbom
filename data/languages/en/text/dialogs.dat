@@ -277,6 +277,17 @@ remote locations.
 }
 
 dialog{
+  id = "_item_description.boomerang.2",
+  icon = "37",
+  skip = "current",
+  text = [[
+Use the Magical Boomerang to
+immobilize enemies or to catch
+objects in very remote places.
+  ]]
+}
+
+dialog{
   id = "_item_description.boots.1",
   icon = "28",
   skip = "current",
@@ -1318,6 +1329,17 @@ dialog{
 You got a $r Boomerang$w!$0
 Use it to immobilize enemies
 and reach distant objects.
+  ]]
+}
+
+dialog{
+  id = "_treasure.boomerang.2",
+  icon = "37",
+  skip = "current",
+  text = [[
+You got a $r Magical Boomerang$w !$0
+It can immobilize enemies and reach
+objects at even futher distances!
   ]]
 }
 
@@ -4792,6 +4814,17 @@ you for your efforts...
 }
 
 dialog{
+  id = "great_fairy.5.lake",
+  text = [[
+You've collected all the  $r Goddess Plume$w
+I need, great work! I can now
+restore my calm land to its former
+state. Allow me to reward you
+for your efforts...
+  ]]
+}
+
+dialog{
   id = "great_fairy.5.mountain",
   skip = "current",
   text = [[
@@ -7019,6 +7052,17 @@ dialog{
 I've learned so much already. I can't
 thank you enough for this opportunity!
   ]]
+}
+
+dialog{
+  id = "rito_carpenter.2.septen",
+  text = [[
+My mentor says that I've finally learned
+enough to return home! I didn't believe
+him at first, but look how quickly I've
+gotten this bridge rebuilt! This city
+will be in full swing in no time!
+]]
 }
 
 dialog{

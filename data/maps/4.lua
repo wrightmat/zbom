@@ -61,9 +61,10 @@ function map:on_started(destination)
     bed:set_enabled(false)
   end
 
-  if game:get_value("i1926") < 2 and game:get_value("i1927") < 2 then
+  if (game:get_value("i1926") < 2 and game:get_value("i1927") < 2) or game:is_dungeon_finished(7) then
     npc_rito_carpenter:remove()
   end
+
 
   -- Replace shop items if they're bought
   if game:get_value("i1820") >= 2 then --shield
