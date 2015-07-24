@@ -3240,6 +3240,16 @@ destructible{
   can_be_cut = true,
 }
 
+enemy{
+  name = "tektite",
+  layer = 0,
+  x = 936,
+  y = 69,
+  direction = 0,
+  breed = "tektite_water",
+  treasure_name = "random",
+}
+
 tile{
   layer = 1,
   x = 168,
