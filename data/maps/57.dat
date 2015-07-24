@@ -5239,8 +5239,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 376,
-  y = 376,
+  x = 368,
+  y = 336,
   width = 16,
   height = 8,
   pattern = "1693",
@@ -6938,6 +6938,69 @@ tile{
   pattern = "598",
 }
 
+tile{
+  layer = 0,
+  x = 64,
+  y = 576,
+  width = 16,
+  height = 16,
+  pattern = "825",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "825",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "825",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "825",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 408,
+  width = 16,
+  height = 16,
+  pattern = "825",
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 232,
+  width = 16,
+  height = 16,
+  pattern = "825",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 896,
+  width = 16,
+  height = 16,
+  pattern = "825",
+}
+
 teletransporter{
   name = "to_G6",
   layer = 0,
@@ -7028,26 +7091,6 @@ enemy{
   treasure_name = "random",
 }
 
-enemy{
-  name = "tektite_4",
-  layer = 0,
-  x = 456,
-  y = 269,
-  direction = 3,
-  breed = "tektite_blue",
-  treasure_name = "random",
-}
-
-enemy{
-  name = "tektite_5",
-  layer = 0,
-  x = 144,
-  y = 381,
-  direction = 3,
-  breed = "tektite_green",
-  treasure_name = "random",
-}
-
 teletransporter{
   name = "to_G6_3",
   layer = 0,
@@ -7087,16 +7130,6 @@ destination{
   x = 600,
   y = 357,
   direction = 3,
-}
-
-enemy{
-  name = "octorok",
-  layer = 0,
-  x = 72,
-  y = 605,
-  direction = 3,
-  breed = "octorok_blue",
-  treasure_name = "random",
 }
 
 teletransporter{
@@ -7223,5 +7256,75 @@ jumper{
   height = 48,
   direction = 4,
   jump_length = 72,
+}
+
+enemy{
+  name = "pincer_1",
+  layer = 0,
+  x = 144,
+  y = 397,
+  direction = 1,
+  breed = "pincer",
+  treasure_name = "plume",
+}
+
+enemy{
+  name = "pincer_2",
+  layer = 0,
+  x = 72,
+  y = 589,
+  direction = 1,
+  breed = "pincer",
+  treasure_name = "plume",
+}
+
+enemy{
+  name = "pincer_3",
+  layer = 0,
+  x = 72,
+  y = 253,
+  direction = 1,
+  breed = "pincer",
+  treasure_name = "plume",
+}
+
+enemy{
+  name = "pincer_4",
+  layer = 0,
+  x = 264,
+  y = 269,
+  direction = 1,
+  breed = "pincer",
+  treasure_name = "plume",
+}
+
+enemy{
+  name = "pincer_5",
+  layer = 0,
+  x = 376,
+  y = 421,
+  direction = 1,
+  breed = "pincer",
+  treasure_name = "plume",
+}
+
+enemy{
+  name = "pincer_6",
+  layer = 0,
+  x = 480,
+  y = 245,
+  direction = 1,
+  breed = "pincer",
+  treasure_name = "plume",
+}
+
+enemy{
+  name = "pincer_7",
+  layer = 0,
+  x = 48,
+  y = 909,
+  direction = 1,
+  breed = "pincer",
+  treasure_name = "plume",
 }
 

@@ -10,6 +10,42 @@ properties{
 
 tile{
   layer = 0,
+  x = 352,
+  y = 352,
+  width = 272,
+  height = 768,
+  pattern = "1692",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "1669",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 368,
+  width = 352,
+  height = 752,
+  pattern = "1692",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "1668",
+}
+
+tile{
+  layer = 0,
   x = 848,
   y = 0,
   width = 272,
@@ -199,29 +235,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 352,
-  y = 352,
-  width = 272,
-  height = 768,
-  pattern = "1692",
-}
-
-tile{
-  layer = 0,
   x = 536,
   y = 544,
   width = 16,
   height = 16,
   pattern = "1668",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 368,
-  width = 352,
-  height = 752,
-  pattern = "1692",
 }
 
 tile{
@@ -2487,7 +2505,7 @@ tile{
   layer = 0,
   x = 0,
   y = 552,
-  width = 544,
+  width = 320,
   height = 8,
   pattern = "265",
 }
@@ -2496,7 +2514,7 @@ tile{
   layer = 0,
   x = 0,
   y = 544,
-  width = 544,
+  width = 320,
   height = 8,
   pattern = "1670",
 }
@@ -4544,6 +4562,51 @@ tile{
   pattern = "1792",
 }
 
+tile{
+  layer = 0,
+  x = 496,
+  y = 544,
+  width = 48,
+  height = 8,
+  pattern = "1670",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 552,
+  width = 8,
+  height = 8,
+  pattern = "2186",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 552,
+  width = 48,
+  height = 8,
+  pattern = "265",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 552,
+  width = 8,
+  height = 8,
+  pattern = "2188",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 552,
+  width = 160,
+  height = 8,
+  pattern = "144",
+}
+
 teletransporter{
   name = "to_D5",
   layer = 0,
@@ -4762,6 +4825,16 @@ enemy{
   direction = 0,
   breed = "chuchu_blue",
   treasure_name = "random",
+}
+
+jumper{
+  layer = 0,
+  x = 328,
+  y = 552,
+  width = 160,
+  height = 8,
+  direction = 6,
+  jump_length = 72,
 }
 
 tile{

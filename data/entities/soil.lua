@@ -1,4 +1,5 @@
 local entity = ...
+local game = entity:get_game()
 local map = entity:get_map()
 
 -- Soft soil: special entity that the hero uses the
@@ -7,7 +8,8 @@ local map = entity:get_map()
 function entity:on_created()
   self:create_sprite("entities/soil")
   self:set_size(16, 16)
-  self:set_origin(16, 13)
+  self:set_origin(8, 13)
+  self:set_traversable_by(false)
 end
 
 function entity:on_interaction()
