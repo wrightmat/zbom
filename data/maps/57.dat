@@ -7001,6 +7001,15 @@ tile{
   pattern = "825",
 }
 
+tile{
+  layer = 0,
+  x = 536,
+  y = 328,
+  width = 16,
+  height = 16,
+  pattern = "910",
+}
+
 teletransporter{
   name = "to_G6",
   layer = 0,
@@ -7326,5 +7335,37 @@ enemy{
   direction = 1,
   breed = "pincer",
   treasure_name = "plume",
+}
+
+chest{
+  name = "chest_heart_piece_2",
+  layer = 0,
+  x = 544,
+  y = 341,
+  treasure_name = "heart_piece",
+  treasure_savegame_variable = "b1721",
+  sprite = "entities/chest",
+}
+
+destructible{
+  layer = 0,
+  x = 520,
+  y = 341,
+  treasure_name = "random_woods",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = 1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 568,
+  y = 341,
+  treasure_name = "random_woods",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = 1,
+  can_be_cut = true,
 }
 

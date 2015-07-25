@@ -2312,6 +2312,51 @@ tile{
   pattern = "607",
 }
 
+tile{
+  layer = 0,
+  x = 744,
+  y = 480,
+  width = 24,
+  height = 48,
+  pattern = "668",
+}
+
+tile{
+  layer = 0,
+  x = 872,
+  y = 472,
+  width = 48,
+  height = 32,
+  pattern = "475",
+}
+
+tile{
+  layer = 0,
+  x = 880,
+  y = 496,
+  width = 32,
+  height = 32,
+  pattern = "476",
+}
+
+tile{
+  layer = 0,
+  x = 840,
+  y = 448,
+  width = 24,
+  height = 40,
+  pattern = "603",
+}
+
+tile{
+  layer = 0,
+  x = 800,
+  y = 448,
+  width = 32,
+  height = 32,
+  pattern = "420",
+}
+
 destination{
   name = "from_outside_house_1",
   layer = 0,
@@ -2434,6 +2479,16 @@ teletransporter{
   height = 16,
   destination_map = "52",
   destination = "from_house_6",
+}
+
+chest{
+  name = "chest_heart_piece",
+  layer = 0,
+  x = 416,
+  y = 509,
+  treasure_name = "heart_piece",
+  treasure_savegame_variable = "b1725",
+  sprite = "entities/chest",
 }
 
 tile{

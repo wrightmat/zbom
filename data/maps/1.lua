@@ -17,6 +17,7 @@ if game:get_value("i2015")==nil then game:set_value("i2015", 0) end
 if game:get_value("i2021")==nil then game:set_value("i2021", 0) end
 
 function map:on_started(destination)
+  if game:get_item("trading"):get_variant() >= 6 then table_crystal_ball:set_enabled(true) end
   -- increment potion counters
   if game:get_value("i2014") >= 10 then
     local tx,ty,tl = shop_potion_1:get_position()
@@ -199,8 +200,12 @@ end
 function npc_gaira:on_interaction()
   if game:get_value("i1030") == 1 then
     game:start_dialog("gaira.6.house")
+  elseif not game:get_value("b1722") then
+    game:start_dialog("gaira.5.faron", game:get_player_name(), function()
+      hero:start_treasure("heart_piece", 1, "b1722")
+    end)
   else
-    game:start_dialog("gaira.5.faron", game:get_player_name())
+    game:start_dialog("gaira.5.forest")
   end
 end
 

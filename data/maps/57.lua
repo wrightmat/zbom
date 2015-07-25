@@ -5,6 +5,19 @@ local game = map:get_game()
 -- Outside World G5 (Zora's Domain) --
 --------------------------------------
 
+function map:on_started()
+  if not game:get_value("b1721") then chest_heart_piece_2:set_enabled(false) end
+end
+
+for enemy in map:get_entities("pincer") do
+  enemy.on_dead = function()
+    if not map:has_entities("pincer") and not game:get_value("b1721") then
+      chest_heart_piece_2:set_enabled(true)
+      sol.audio.play_sound("chest_appears")
+    end
+  end
+end
+
 function npc_zora_1:on_interaction()
   if game:get_item("tunic"):get_variant() < 3 then
     game:start_dialog("zora.0.tunic")

@@ -4134,10 +4134,16 @@ dialog{
   id = "gaira.5.faron",
   skip = "current",
   text = [[
-Oh, $v! I just can't believe
-that the man of my dreams was so
-close to me all this time! I can't
-thank you enough!$0
+Oh, $v! I just can't believe that the
+man of my dreams was so close to me all
+this time! I can't thank you enough!$0
+My heart is just overflowing right now!
+  ]]
+}
+
+dialog{
+  id = "gaira.5.forest",
+  text = [[
 The poisoned forest? Yes, Deacon and
 I have already decided to take it on
 as our first joint project!
@@ -5342,6 +5348,23 @@ Find the $g Relic Collector$w near
 $b Hyrule Castle$w, he knows of
 these things.
   ]]
+}
+
+dialog{
+  id = "impa.0.shelf",
+  text = [[
+Interesting... All of these books
+are about fortune telling, mystics,
+and crystal balls...
+  ]]
+}
+
+dialog{
+  id = "impa.0.shelf_2",
+  text = [[
+This shelf is full of books about places
+in Hyrule, species of monsters and
+adventuring techniques.]]
 }
 
 dialog{

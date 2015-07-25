@@ -9041,7 +9041,7 @@ teletransporter{
   layer = 0,
   x = 0,
   y = -16,
-  width = 1088,
+  width = 752,
   height = 16,
   transition = "scrolling",
   destination_map = "102",
@@ -9157,6 +9157,30 @@ custom_entity{
   direction = 0,
   sprite = "entities/mailbox",
   model = "mailbox",
+}
+
+teletransporter{
+  name = "to_E3_2",
+  layer = 0,
+  x = 816,
+  y = -16,
+  width = 176,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "102",
+  destination = "_side",
+}
+
+teletransporter{
+  name = "to_E3_3",
+  layer = 0,
+  x = 1040,
+  y = -16,
+  width = 48,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "102",
+  destination = "_side",
 }
 
 tile{

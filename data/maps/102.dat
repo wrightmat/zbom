@@ -5542,7 +5542,7 @@ teletransporter{
   layer = 0,
   x = 0,
   y = 1120,
-  width = 1088,
+  width = 752,
   height = 16,
   transition = "scrolling",
   destination_map = "103",
@@ -6100,6 +6100,40 @@ teletransporter{
   transition = "scrolling",
   destination_map = "101",
   destination = "_side",
+}
+
+teletransporter{
+  name = "to_E4_2",
+  layer = 0,
+  x = 816,
+  y = 1120,
+  width = 176,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "103",
+  destination = "_side",
+}
+
+teletransporter{
+  name = "to_E4_3",
+  layer = 0,
+  x = 1040,
+  y = 1120,
+  width = 48,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "103",
+  destination = "_side",
+}
+
+chest{
+  name = "chest_heart_piece",
+  layer = 0,
+  x = 480,
+  y = 341,
+  treasure_name = "heart_piece",
+  treasure_savegame_variable = "b1732",
+  sprite = "entities/chest",
 }
 
 tile{
