@@ -7639,6 +7639,7 @@ pick it up!
 
 dialog{
   id = "shopkeep.1",
+  skip = "current",
   text = [[
 Don't have enough cash, eh?
 I heard there's a man in  $b Castle
@@ -7649,10 +7650,52 @@ grand prize is a bigger wallet!
 
 dialog{
   id = "shopkeep.potion",
+  skip = "current",
   text = [[
 Your potion is done and you'll be able
 to buy it in our shop whenever you want!
 We'll even give you the first one free!]]
+}
+
+dialog{
+  id = "shopkeep.spoils",
+  question = "1",
+  skip = "current",
+  text = [[
+You'd like to sell me some $v?
+I'm very interested in those!
+How about I buy five of them for
+20 rupees a piece?
+Yes
+No
+  ]]
+}
+
+dialog{
+  id = "shopkeep.spoils_explain",
+  text = [[
+You don't buy things here, I buy them
+from you! I've made it my life's work to
+collect as many cool things as I can -
+so if you find too many collectibles,
+I'll buy them from you.]]
+}
+
+dialog{
+  id = "shopkeep.spoils_no",
+  skip = "current",
+  text = [[
+Come again then.
+  ]]
+}
+
+dialog{
+  id = "shopkeep.spoils_yes",
+  skip = "current",
+  text = [[
+It's been a pleasure doing business
+with you!
+  ]]
 }
 
 dialog{

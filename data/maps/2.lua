@@ -563,10 +563,10 @@ function map:on_update()
   end
 
   function map:on_draw(dst_surface)
-    --if score_text ~= nil then
+    if score_text ~= nil then
       score_text:draw(dst_surface, score_x, score_y)
       sol.timer.start(map, 1000, function() score_text = nil end)
-    --end
+    end
   end
 
 end

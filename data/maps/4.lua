@@ -209,7 +209,7 @@ function npc_garroth_sensor:on_interaction()
   else
     if game:get_value("i1830") >= 75 then
       game:start_dialog("garroth.8.pub", game:get_value("i1830"), function()
-	-- what to give when player has more than 75 alchemy stones?
+	hero:start_treasure("heart_piece", 1, "b1726")
       end)
     elseif game:get_value("i1830") >= 50 then
       game:start_dialog("garroth.7.pub", game:get_value("i1830"), function()

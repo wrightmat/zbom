@@ -60,9 +60,8 @@ function room1_dest:on_activated()
   sol.audio.play_music("battle")
   sol.audio.set_music_volume(music_volume)
   room1_tran:set_enabled(false)
-
   game:set_value("i1609", game:get_value("i1609")+1)
-  print("Room 1. Floor number: "..game:get_value("i1609"))
+
     if game:get_value("i1609") == 1 then
       -- Room 1: 10 Keese
       for i=1,10 do
@@ -133,7 +132,7 @@ function room1_dest:on_activated()
 	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="bari_blue",name="enemy" })
       end
     elseif game:get_value("i1609") == 46 then
-      -- Room 41: Redeads and skeletors
+      -- Room 46: Redeads and skeletors
       for i=1,4 do
 	ex = random_8(96,256)
 	ey = random_8(96,240)
@@ -153,9 +152,8 @@ function room2_dest:on_activated()
   sol.audio.play_music("battle")
   sol.audio.set_music_volume(music_volume)
   room2_tran:set_enabled(false)
-
   game:set_value("i1609", game:get_value("i1609")+1)
-  print("Room 2. Floor number: "..game:get_value("i1609"))
+
     if game:get_value("i1609") == 2 then
       -- Room 2: rats, keese
       for i=1,5 do
@@ -241,7 +239,7 @@ function room2_dest:on_activated()
 	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="dodongo",name="enemy" })
       end
     elseif game:get_value("i1609") == 37 then
-      -- Room 27: Ice Keese
+      -- Room 37: Ice Keese
       for i=1,8 do
 	ex = random_8(472,680)
 	ey = random_8(96,240)
@@ -267,7 +265,7 @@ function room2_dest:on_activated()
       ey = random_8(96,240)
       map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="poe",name="enemy" })
     elseif game:get_value("i1609") == 47 then
-      -- Room 27: Gigas and rats
+      -- Room 47: Gigas and rats
       for i=1,4 do
 	ex = random_8(472,680)
 	ey = random_8(96,240)
@@ -287,9 +285,8 @@ function room3_dest:on_activated()
   sol.audio.play_music("battle")
   sol.audio.set_music_volume(music_volume)
   room3_tran:set_enabled(false)
-
   game:set_value("i1609", game:get_value("i1609")+1)
-  print("Room 3. Floor number: "..game:get_value("i1609"))
+
     if game:get_value("i1609") == 3 then
       -- Room 3: green soldiers
       for i=1,5 do
@@ -391,9 +388,8 @@ function room4_dest:on_activated()
   sol.audio.play_music("battle")
   sol.audio.set_music_volume(music_volume)
   room4_tran:set_enabled(false)
-
   game:set_value("i1609", game:get_value("i1609")+1)
-  print("Room 4. Floor number: "..game:get_value("i1609"))
+
     if game:get_value("i1609") == 4 then
       -- Room 4: green knights
       for i=1,6 do
@@ -512,11 +508,8 @@ function room4_dest:on_activated()
 end
 
 function room5_dest:on_activated()
-
   game:set_value("i1609", game:get_value("i1609")+1)
-  print("Room 5 (Recovery). Floor number: "..game:get_value("i1609"))
   if game:get_value("i1609") == 50 then hero:transport(169, "treasure_dest") end
-
 end
 
 function room5_exit:on_activated()

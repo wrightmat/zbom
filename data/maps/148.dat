@@ -5,7 +5,61 @@ properties{
   height = 1120,
   world = "outside_north",
   tileset = "2",
-  music = "same",
+  music = "town_kasuto",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 600,
+  width = 32,
+  height = 8,
+  pattern = "637",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 600,
+  width = 32,
+  height = 8,
+  pattern = "637",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 944,
+  width = 32,
+  height = 8,
+  pattern = "637",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 944,
+  width = 32,
+  height = 8,
+  pattern = "637",
+}
+
+tile{
+  layer = 0,
+  x = 776,
+  y = 960,
+  width = 32,
+  height = 8,
+  pattern = "637",
+}
+
+tile{
+  layer = 0,
+  x = 728,
+  y = 960,
+  width = 32,
+  height = 8,
+  pattern = "637",
 }
 
 tile{
@@ -85,7 +139,7 @@ tile{
   x = 720,
   y = 920,
   width = 96,
-  height = 48,
+  height = 40,
   pattern = "637",
 }
 
@@ -1525,7 +1579,7 @@ tile{
   x = 360,
   y = 560,
   width = 96,
-  height = 48,
+  height = 40,
   pattern = "637",
 }
 
@@ -1732,7 +1786,7 @@ tile{
   x = 216,
   y = 904,
   width = 96,
-  height = 48,
+  height = 40,
   pattern = "637",
 }
 

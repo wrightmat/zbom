@@ -8,6 +8,10 @@ local game = map:get_game()
 if game:get_value("i1912")==nil then game:set_value("i1912", 0) end
 
 function map:on_started(destination)
+  if destination == from_outside_door1 or destination == from_outside_door2 then
+    sol.audio.play_music("mudora")
+  end
+
   if game:get_value("i1032") >= 2 then
     door:set_enabled(false)
   end
@@ -16,6 +20,13 @@ function map:on_started(destination)
     table_witch:set_enabled(true)
   end
   if game:get_value("i1068") == "9" then game:set_value("i1068", "10") end
+
+  spoils_jade:get_sprite():set_animation("jade")
+  spoils_stick:get_sprite():set_animation("stick")
+  spoils_amber:get_sprite():set_animation("amber")
+  spoils_alchemy:get_sprite():set_animation("alchemy")
+  spoils_plume:get_sprite():set_animation("plume")
+  spoils_ore:get_sprite():set_animation("ore")
 end
 
 function npc_isan:on_interaction()
@@ -125,4 +136,104 @@ function shelf_17:on_interaction()
 end
 function shelf_18:on_interaction()
   game:start_dialog("library_shelf")
+end
+
+function npc_spoils_shopkeep:on_interaction()
+  game:start_dialog("shopkeep.spoils_explain")
+end
+
+function spoils_jade:on_interaction()
+  game:start_dialog("shopkeep.spoils", "mystic jade", function(answer)
+    if answer == 1 then
+      if game:get_value("i1849") >= 5 then
+        game:set_value("i1849", game:get_value("i1849")-5)
+        game:add_money(100)
+        game:start_dialog("shopkeep.spoils_yes")
+      else
+        game:start_dialog("_shop.not_enough_money")
+      end
+    else
+      game:start_dialog("shopkeep.spoils_no")
+    end
+  end)
+end
+
+function spoils_stick:on_interaction()
+  game:start_dialog("shopkeep.spoils", "deku sticks", function(answer)
+    if answer == 1 then
+      if game:get_value("i1847") >= 5 then
+        game:set_value("i1847", game:get_value("i1847")-5)
+        game:add_money(100)
+        game:start_dialog("shopkeep.spoils_yes")
+      else
+        game:start_dialog("_shop.not_enough_money")
+      end
+    else
+      game:start_dialog("shopkeep.spoils_no")
+    end
+  end)
+end
+
+function spoils_amber:on_interaction()
+  game:start_dialog("shopkeep.spoils", "goron amber", function(answer)
+    if answer == 1 then
+      if game:get_value("i1828") >= 5 then
+        game:set_value("i1828", game:get_value("i1828")-5)
+        game:add_money(100)
+        game:start_dialog("shopkeep.spoils_yes")
+      else
+        game:start_dialog("_shop.not_enough_money")
+      end
+    else
+      game:start_dialog("shopkeep.spoils_no")
+    end
+  end)
+end
+
+function spoils_alchemy:on_interaction()
+  game:start_dialog("shopkeep.spoils", "alchemy stone", function(answer)
+    if answer == 1 then
+      if game:get_value("i1830") >= 5 then
+        game:set_value("i1830", game:get_value("i1830")-5)
+        game:add_money(100)
+        game:start_dialog("shopkeep.spoils_yes")
+      else
+        game:start_dialog("_shop.not_enough_money")
+      end
+    else
+      game:start_dialog("shopkeep.spoils_no")
+    end
+  end)
+end
+
+function spoils_plume:on_interaction()
+  game:start_dialog("shopkeep.spoils", "goddess plume", function(answer)
+    if answer == 1 then
+      if game:get_value("i1832") >= 5 then
+        game:set_value("i1832", game:get_value("i1832")-5)
+        game:add_money(100)
+        game:start_dialog("shopkeep.spoils_yes")
+      else
+        game:start_dialog("_shop.not_enough_money")
+      end
+    else
+      game:start_dialog("shopkeep.spoils_no")
+    end
+  end)
+end
+
+function spoils_ore:on_interaction()
+  game:start_dialog("shopkeep.spoils", "subrosian ore", function(answer)
+    if answer == 1 then
+      if game:get_value("i1836") >= 5 then
+        game:set_value("i1836", game:get_value("i1836")-5)
+        game:add_money(100)
+        game:start_dialog("shopkeep.spoils_yes")
+      else
+        game:start_dialog("_shop.not_enough_money")
+      end
+    else
+      game:start_dialog("shopkeep.spoils_no")
+    end
+  end)
 end
