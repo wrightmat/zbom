@@ -11,9 +11,12 @@ if game:get_value("i1924")==nil then game:set_value("i1924", 0) end --Juba
 
 local playing_chests = false
 local playing_slots = false
+local playing_arrows = false
 local already_played_chests = false
 local chests_rewards = {5, 20, 100}  -- Possible rupee rewards in chest game.
 local unauthorized = map:get_game():get_value("b16")
+local arrow_plays = map:get_game():get_value("i17")
+if arrow_plays == nil then arrow_plays = 0 end
 local slots_bet = 0
 local slots_reward = 0
 local slots_man_sprite = nil
@@ -28,6 +31,11 @@ local slots_question_dialog_finished
 local slots_choose_bet_dialog_finished
 local open_chest
 local slots_timeout
+local arrow_score = 0
+local i = 0
+local score_text = nil
+local score_x = 0
+local score_y = 0
 
 function map:on_started(destination)
   chest_1.on_empty = open_chest
@@ -299,11 +307,17 @@ function slots_man:on_interaction()
 end
 
 function arrow_man:on_interaction()
-  --if playing_arrows then
-    --game:start_dialog("arrow_game.playing")
-  --else
-    game:start_dialog("arrow_game.intro")
-  --end
+  -- arrow game dialog
+  if playing_arrows then
+    -- player is already playing the game
+    game:start_dialog("arrow_game.playing")
+  elseif game:has_item("bow") then
+    -- dialog with game rules
+    game:start_dialog("arrow_game.intro", arrow_question_dialog_finished)
+  else
+    -- game not open until bow is obtained
+    game:start_dialog("arrow_game.not_open")
+  end
 end
 
 function map:activate_slot_machine(npc)
@@ -390,6 +404,76 @@ function slots_choose_bet_dialog_finished(answer)
   end
 end
 
+function arrow_question_dialog_finished(answer)
+  if answer == 2 then
+    -- the player does not want to play the game
+    game:start_dialog("arrow_game.not_playing")
+  else
+    -- wants to play arrow game
+    if game:get_money() < 50 then
+      -- not enough money
+      sol.audio.play_sound("wrong")
+      game:start_dialog("slot_game.not_enough_money")
+    else
+      -- enough money: create the targets and start them moving
+      game:remove_money(50)
+      if game:get_value("i1802") < 10 then
+        game:start_dialog("arrow_game.not_enough_arrows", function()
+          game:set_value("i1802", game:get_value("i1802")+10)
+        end)
+      end
+      game:start_dialog("arrow_game.good_luck")
+      local nb_targets = (arrow_plays + 1) * 3
+      if nb_targets > 20 then nb_targets = 20 end
+      for i=1,nb_targets do
+        sol.timer.start(map, math.random(10)*500, function()
+          map:create_switch({
+            name = "arrow_game_switch_"..i,
+            x = 1952,
+            y = 784,
+            layer = 0,
+            subtype = "arrow_target",
+            sprite = "entities/switch_eye_down",
+            sound = "arrow_hit",
+            needs_block = false,
+            inactivate_when_leaving = false
+          })
+          playing_arrows = true
+        end)
+      end
+
+      sol.timer.start(map, 30, function()
+        for switch in map:get_entities("arrow_game_switch") do
+          -- move targets to the left of the screen
+          local sx,sy,sl = switch:get_position()
+          switch:set_position(sx-1, sy, sl)
+          -- remove switch when at left end of room
+          if sx <= 1792 then switch:remove() end
+        end
+
+        if playing_arrows == true and not map:has_entities("arrow_game_switch") then
+          playing_arrows = false
+          if arrow_score > 200 then
+            game:start_dialog("arrow_game.reward.great", arrow_score)
+          else
+            game:start_dialog("arrow_game.reward.good", arrow_score)
+          end
+          game:add_money(arrow_score)
+
+          if game:get_value("i17") == nil then
+            game:set_value("i17", 1)
+          else
+            game:set_value("i17", game:get_value("i17")+1)
+          end
+        end
+
+        return true
+      end)
+
+    end
+  end
+end
+
 function map:on_obtained_treasure(item, variant, savegame_variable)
   if item:get_name() == "rupee_bag" then
     sol.audio.play_sound("secret")
@@ -462,6 +546,29 @@ function map:on_update()
       end
     end
   end
+
+  if playing_arrows then
+    for switch in map:get_entities("arrow_game_switch") do
+      switch.on_activated = function()
+        local this_score = math.floor(math.random(5)+(arrow_plays*2)/4)
+        arrow_score = arrow_score + this_score
+        score_x, score_y = switch:get_position()
+        score_text = sol.text_surface.create({
+          horizontal_alignment = "center",
+          font = "bom",
+          text = this_score
+        })
+      end
+    end
+  end
+
+  function map:on_draw(dst_surface)
+    --if score_text ~= nil then
+      score_text:draw(dst_surface, score_x, score_y)
+      sol.timer.start(map, 1000, function() score_text = nil end)
+    --end
+  end
+
 end
 
 -- This function gives the reward to the player in the slot machine game

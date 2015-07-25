@@ -2563,12 +2563,85 @@ as me!
 }
 
 dialog{
+  id = "arrow_game.good_luck",
+  text = [[
+Get out your bow and start firing,
+and good luck!
+  ]]
+}
+
+dialog{
   id = "arrow_game.intro",
+  question = "1",
   skip = "current",
   text = [[
-This will be an exciting archery
-game, but I'm not open yet.
+Welcome to our brand new archery game!
+Pay 50 rupees for the chance to fire
+at as many targets as you can in 30
+seconds. I'll pay out the number of
+points that you get!
+
+So, wanna play?
+Yes
+No
   ]]
+}
+
+dialog{
+  id = "arrow_game.not_enough_arrows",
+  text = [[
+You don't have enough arrows. Tell
+you what, I'll give you 10 just for
+paying to play my little game.
+  ]]
+}
+
+dialog{
+  id = "arrow_game.not_open",
+  skip = "current",
+  text = [[
+This will be an exciting archery game,
+but I'm not open yet.
+  ]]
+}
+
+dialog{
+  id = "arrow_game.not_playing",
+  text = [[
+Your choice. Come check me out later.
+  ]]
+}
+
+dialog{
+  id = "arrow_game.playing",
+  text = [[
+You should be firing off arrows, not
+talking to me!
+  ]]
+}
+
+dialog{
+  id = "arrow_game.reward.good",
+  text = [[
+Wow, you got a score of $v.
+That's pretty good! I'll add that
+amount to your rupees.
+]]
+}
+
+dialog{
+  id = "arrow_game.reward.great",
+  text = [[
+Incredible! You got a score of $v!
+What a great pay out!]]
+}
+
+dialog{
+  id = "arrow_game.reward.none",
+  text = [[
+Tough luck, but you didn't hit any
+targets. Better luck next time!
+]]
 }
 
 dialog{
