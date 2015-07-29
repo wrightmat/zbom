@@ -5299,6 +5299,42 @@ teletransporter{
   destination = "_same",
 }
 
+wall{
+  layer = 0,
+  x = 736,
+  y = 56,
+  width = 48,
+  height = 8,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 720,
+  y = 360,
+  width = 48,
+  height = 8,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 576,
+  y = 360,
+  width = 48,
+  height = 8,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 848,
+  y = 192,
+  width = 8,
+  height = 48,
+  stops_blocks = true,
+}
+
 tile{
   layer = 1,
   x = 432,
