@@ -16,15 +16,6 @@ tile{
   pattern = "22",
 }
 
-sensor{
-  name = "sensor",
-  layer = 0,
-  x = 96,
-  y = 77,
-  width = 128,
-  height = 144,
-}
-
 destination{
   name = "start_position",
   layer = 0,
@@ -42,20 +33,19 @@ pickable{
   treasure_variant = 2,
 }
 
-enemy{
-  name = "enemy",
-  layer = 0,
-  x = 152,
-  y = 149,
-  direction = 3,
-  breed = "helmaroc_rex",
-  rank = 2,
-}
-
 pickable{
   layer = 0,
   x = 80,
   y = 45,
-  treasure_name = "bow",
+  treasure_name = "bomb_bag",
+  treasure_variant = 3,
+}
+
+enemy{
+  layer = 0,
+  x = 152,
+  y = 173,
+  direction = 0,
+  breed = "beamos",
 }
 

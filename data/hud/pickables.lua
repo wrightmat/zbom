@@ -2,6 +2,7 @@
 
 local pickables = {}
 local visible = false
+local jade, stick, amber, alchemy, plume, crystal, plume, ore = 0
 
 function pickables:new(game)
 
@@ -18,54 +19,33 @@ function pickables:initialize(game)
   self.game = game
   self.surface = sol.surface.create(250, 25)
   self.background_img = sol.surface.create("hud/pickables.png")
-  self.jade_text = sol.text_surface.create{
-    font = "white_digits",
-    horizontal_alignment = "right",
-  }
-  self.jade_text:set_text(game:get_value("i1849"))
-  self.jade_displayed = game:get_value("i1849")
+  self.jade_text = sol.text_surface.create{ font = "white_digits", horizontal_alignment = "right" }
+  if not game:get_value("i1849") then self.jade_displayed = 0 else self.jade_displayed = game:get_value("i1849") end
+  self.jade_text:set_text(self.jade_displayed)
 
-  self.stick_text = sol.text_surface.create{
-    font = "white_digits",
-    horizontal_alignment = "right",
-  }
-  self.stick_text:set_text(game:get_value("i1847"))
-  self.stick_displayed = game:get_value("i1847")
+  self.stick_text = sol.text_surface.create{ font = "white_digits", horizontal_alignment = "right" }
+  if not game:get_value("i1847") then self.stick_displayed = 0 else self.stick_displayed = game:get_value("i1847") end
+  self.stick_text:set_text(self.stick_displayed)
 
-  self.amber_text = sol.text_surface.create{
-    font = "white_digits",
-    horizontal_alignment = "right",
-  }
-  self.amber_text:set_text(game:get_value("i1828"))
-  self.amber_displayed = game:get_value("i1828")
+  self.amber_text = sol.text_surface.create{ font = "white_digits", horizontal_alignment = "right" }
+  if not game:get_value("i1828") then self.amber_displayed = 0 else self.amber_displayed = game:get_value("i1828") end
+  self.amber_text:set_text(self.amber_displayed)
 
-  self.alchemy_text = sol.text_surface.create{
-    font = "white_digits",
-    horizontal_alignment = "right",
-  }
-  self.alchemy_text:set_text(game:get_value("i1830"))
-  self.alchemy_displayed = game:get_value("i1830")
+  self.alchemy_text = sol.text_surface.create{ font = "white_digits", horizontal_alignment = "right" }
+  if not game:get_value("i1830") then self.alchemy_displayed = 0 else self.alchemy_displayed = game:get_value("i1830") end
+  self.alchemy_text:set_text(self.alchemy_displayed)
 
-  self.plume_text = sol.text_surface.create{
-    font = "white_digits",
-    horizontal_alignment = "right",
-  }
-  self.plume_text:set_text(game:get_value("i1832"))
-  self.plume_displayed = game:get_value("i1832")
+  self.plume_text = sol.text_surface.create{ font = "white_digits", horizontal_alignment = "right" }
+  if not game:get_value("i1832") then self.plume_displayed = 0 else self.plume_displayed = game:get_value("i1832") end
+  self.plume_text:set_text(self.plume_displayed)
 
-  self.crystal_text = sol.text_surface.create{
-    font = "white_digits",
-    horizontal_alignment = "right",
-  }
-  self.crystal_text:set_text(game:get_value("i1834"))
-  self.crystal_displayed = game:get_value("i1834")
+  self.crystal_text = sol.text_surface.create{ font = "white_digits", horizontal_alignment = "right" }
+  if not game:get_value("i1834") then self.crystal_displayed = 0 else self.crystal_displayed = game:get_value("i1834") end
+  self.crystal_text:set_text(self.crystal_displayed)
 
-  self.ore_text = sol.text_surface.create{
-    font = "white_digits",
-    horizontal_alignment = "right",
-  }
-  self.ore_text:set_text(game:get_value("i1836"))
-  self.ore_displayed = game:get_value("i1836")
+  self.ore_text = sol.text_surface.create{ font = "white_digits",  horizontal_alignment = "right" }
+  if not game:get_value("i1836") then self.ore_displayed = 0 else self.ore_displayed = game:get_value("i1836") end
+  self.ore_text:set_text(self.ore_displayed)
 
   self:check()
   self:rebuild_surface()
@@ -74,20 +54,13 @@ end
 function pickables:check()
 
   local need_rebuild = false
-  local jade = self.game:get_value("i1849")
-  if jade == nil then jade = 0 end
-  local stick = self.game:get_value("i1847")
-  if stick == nil then stick = 0 end
-  local amber = self.game:get_value("i1828")
-  if amber == nil then amber = 0 end
-  local alchemy = self.game:get_value("i1830")
-  if alchemy == nil then amber = 0 end
-  local plume = self.game:get_value("i1832")
-  if plume == nil then plume = 0 end
-  local crystal = self.game:get_value("i1834")
-  if crystal == nil then crystal = 0 end
-  local ore = self.game:get_value("i1836")
-  if crystal == nil then crystal = 0 end
+  if not self.game:get_value("i1849") then jade = 0 else jade = self.game:get_value("i1849") end
+  if not self.game:get_value("i1847") then stick = 0 else stick = self.game:get_value("i1847") end
+  if not self.game:get_value("i1828") then amber = 0 else amber = self.game:get_value("i1828") end
+  if not self.game:get_value("i1830") then alchemy = 0 else alchemy = self.game:get_value("i1830") end
+  if not self.game:get_value("i1832") then plume = 0 else plume = self.game:get_value("i1832") end
+  if not self.game:get_value("i1834") then crystal = 0 else crystal = self.game:get_value("i1834") end
+  if not self.game:get_value("i1836") then ore = 0 else ore = self.game:get_value("i1836") end
 
   -- Current jade.
   if jade ~= self.jade_displayed then

@@ -8,14 +8,12 @@ local shooting = false
 local timer, shoot_timer
 
 function enemy:on_created()
-  self:set_life(3)
-  self:set_damage(6)
+  self:set_life(3); self:set_damage(6)
   self:create_sprite("enemies/octolux")
   self:set_hurt_style("monster")
   self:set_pushed_back_when_hurt(true)
   self:set_push_hero_on_sword(false)
-  self:set_size(16, 16)
-  self:set_origin(8, 13)
+  self:set_size(16, 16); self:set_origin(8, 13)
 end
 
 function enemy:on_movement_changed(movement)
@@ -73,10 +71,7 @@ function enemy:shoot()
   local d = self:get_sprite():get_direction()
   self:get_sprite():set_animation("shooting")
   shoot_timer = sol.timer.start(self, 100, function()
-    local rock = self:create_enemy{
-      breed = "rock_lux",
-      direction = d
-    }
+    local rock = self:create_enemy({ breed = "projectiles/rock_lux", direction = d })
     sol.timer.start(self, 1000, function()
       shoot_timer = nil
       self:check_hero()

@@ -2099,7 +2099,7 @@ dialog{
   icon = "63",
   skip = "current",
   text = [[
-You were awarded a trusty  $r  wooden
+You were awarded a trusty   $r  wooden
 shield of Ordon origins $w. Be careful,
 it's only made of wood.
   ]]
@@ -5326,10 +5326,9 @@ Greetings, young hero.
 My name is $g Impa$w, the last resident of
 this village and the last of my kind.
 I know much about this land.$0
-What's that? You're unsure of where
-to journey? I am unsure of that,
-but there is one place with more
-information than me.
+What's that? You're unsure of where to
+journey? I am unsure of that, but there
+is one place with more information than me.
   ]]
 }
 
@@ -5337,25 +5336,22 @@ dialog{
   id = "impa.0.house_2",
   skip = "current",
   text = [[
-Far from here is an $b Ancient
-Library$w. You will be unable to
-get there as you're equipped.
-If you can find a $r special
-instrument$w, you may be able to
-access the secret path through
-the Hyrulian Sewers.
+Far from here is an $b Ancient Library$w.
+You will be unable to get there as you're
+equipped. If you can find a $r special
+instrument$w, you may be able to access the
+secret path through the Hyrulian Sewers.
 Find the $g Relic Collector$w near
-$b Hyrule Castle$w, he knows of
-these things.
+$bHyrule Castle$w, he knows of these things.
   ]]
 }
 
 dialog{
   id = "impa.0.shelf",
   text = [[
-Interesting... All of these books
-are about fortune telling, mystics,
-and crystal balls...
+Interesting... All of these books are
+about fortune telling, mystics, and
+crystal balls...
   ]]
 }
 
@@ -5364,7 +5360,8 @@ dialog{
   text = [[
 This shelf is full of books about places
 in Hyrule, species of monsters and
-adventuring techniques.]]
+adventuring techniques.
+  ]]
 }
 
 dialog{
@@ -5372,13 +5369,13 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-Wait... do you have a $r Crystal
-Ball$w? How did you come into
-possesion of that? Those are so
-rare and I've been wanting one
-for so long!
-Would you consider giving it to
-me?$0  Please?
+Wait... do you have a $r Crystal Ball$w?
+How did you come into possesion of that?
+Those are so rare and I've been wanting
+one for so long!
+Would you consider giving it to me?
+$0
+Please?
 Yes
 No
   ]]
@@ -5388,10 +5385,9 @@ dialog{
   id = "impa.0.trading_no",
   skip = "current",
   text = [[
-I can't believe that after
-everything I've done for you,
-that you won't give me the one
-thing I've asked for!
+I can't believe that after everything
+I've done for you, that you won't give me
+the one thing I've asked for!
   ]]
 }
 
@@ -5400,15 +5396,13 @@ dialog{
   skip = "current",
   text = [[
 Thank you very much!
-I can't believe I finally have
-a crystal ball! Now I can help
-people by telling them about
-their future. I can't wait to
-get started!
-Oh yes, something for you...
-I have this meat that I made
-for my dinner, but you can have
-it. It's quite tasty!
+I can't believe I finally have a crystal
+ball! Now I can help people by telling
+them about their future. I can't wait to
+get started!$0
+Oh yes, something for you... I have this
+meat that I made for my dinner, but you
+can have it. It's quite tasty!
   ]]
 }
 
@@ -5425,18 +5419,18 @@ dialog{
   id = "impa.1.house_2",
   skip = "current",
   text = [[
-Far from here is an $b Ancient Library$w.
+Far from here is an $b Ancient Library$w .
 I see you already have the magical
-$r Ocarina$w which will help you get there
+$rOcarina$w which will help you get there
 and back. Outside of my house is a
 patch of dirt shaped like that
 instrument. Inspect it before you
 leave and you'll be permitted to return
 later. Head south-east of here to the
-$b Ruins$w and lift the small rock in front
+$bRuins$w and lift the small rock in front
 of the entrance. When you've reached
 the end of the sewers, you'll be in
-the $b northern region of Hyrule$w.
+the $b northern region of Hyrule$w .
   ]]
 }
 
@@ -5446,7 +5440,7 @@ dialog{
   text = [[
 You say you can't lift the rock?
 Well you must not have visited the
-great $b pyramid in the western desert$w!
+great $b pyramid in the western desert$w  !
 Go there and find all of the magical
 artifacts that lie inside.
 
@@ -5461,12 +5455,11 @@ Good work finding the library -
 I'm sure you have learned much!
 As $y Ordona $wsuggested, you should go
 visit the Council at  $b Castle Town$w
-just West of here. They may have
-advice for you on your journey.
-Also, if you cross the bridge just
-outside of my house, the friendly
-$gGoron$w people aren't far from here.
-I'm sure they would be happy to
+just West of here. They may have advice
+for you on your journey. Also, if you
+cross the bridge just outside of my house,
+the friendly $g Goron$w people aren't far
+from here. I'm sure they would be happy to
 help in any way they can!
   ]]
 }
@@ -5829,7 +5822,7 @@ dialog{
 $v! There you are!
 I was hoping you could do me a small
 favor...
-My daughter  $g Crista$w went into the
+My daughter  $g Crista$wwent into the
 northern woods to pick flowers and herbs
 for potions, but she's been gone an
 awfully long time! Would you mind going
@@ -6549,8 +6542,8 @@ your quest far sooner than we would like.
 The nearest likely source of darkness
 would be in the deep forest, where open
 trees lead into the deep, dark earth.
-The place was once called  $b  Sacred Grove$w,
-in$bFaron Woods$w. You must venture there,
+The place was once called   $b Sacred Grove$w,
+in$bFaron Woods$w . You must venture there,
 find the evil that lies in wait and
 vanquish it! Your village home is safe
 for now, but will remain so only as long
@@ -8660,7 +8653,7 @@ dialog{
   skip = "current",
   text = [[
 Congrats $v!
-Why don't you go tell  $g Rudy$wthat you
+Why don't you go tell   $g Rudy$wthat you
 won the race? He has something special
 just for the winner!
   ]]

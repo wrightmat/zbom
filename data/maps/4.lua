@@ -79,7 +79,7 @@ function map:on_started(destination)
 	treasure_variant = 3
     })
   end
-  if game:get_value("i1806") >= 1 then --bomb_bag
+  if game:get_value("i1806") then --bomb_bag
     self:create_shop_treasure({
 	name = "shop_item_5",
 	layer = 0,

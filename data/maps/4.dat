@@ -7002,7 +7002,6 @@ shop_treasure{
   treasure_variant = 2,
   treasure_savegame_variable = "b2006",
   price = 300,
-  font = "la",
   dialog = "shop.hyrule_shield",
 }
 
@@ -7014,7 +7013,6 @@ shop_treasure{
   treasure_name = "bomb_bag",
   treasure_savegame_variable = "i1806",
   price = 400,
-  font = "bom",
   dialog = "shop.bomb_bag_1",
 }
 
@@ -7035,7 +7033,6 @@ shop_treasure{
   y = 112,
   treasure_name = "pumpkin",
   price = 250,
-  font = "la",
   dialog = "shop.pumpkin",
 }
 
@@ -7114,7 +7111,6 @@ shop_treasure{
   treasure_name = "bomb_bag",
   treasure_savegame_variable = "i1806",
   price = 300,
-  font = "bom",
   dialog = "shop.bomb_bag_1",
 }
 
@@ -7125,7 +7121,6 @@ shop_treasure{
   y = 504,
   treasure_name = "bomb",
   price = 10,
-  font = "la",
   dialog = "shop.bomb_1",
 }
 
@@ -7137,7 +7132,6 @@ shop_treasure{
   treasure_name = "bomb",
   treasure_variant = 2,
   price = 25,
-  font = "la",
   dialog = "shop.bomb_2",
 }
 
@@ -7149,7 +7143,6 @@ shop_treasure{
   treasure_name = "bomb",
   treasure_variant = 3,
   price = 60,
-  font = "la",
   dialog = "shop.bomb_3",
 }
 

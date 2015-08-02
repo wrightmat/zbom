@@ -10,6 +10,7 @@ if game:get_value("i1026")==nil then game:set_value("i1026", 0) end
 if game:get_value("i1027")==nil then game:set_value("i1027", 0) end
 if game:get_value("i1029")==nil then game:set_value("i1029", 0) end
 if game:get_value("i1602")==nil then game:set_value("i1602", 0) end
+if game:get_value("i1806")==nil then game:set_value("i1806", 0) end
 if game:get_value("i1913")==nil then game:set_value("i1913", 0) end
 if game:get_value("i1921")==nil then game:set_value("i1921", 0) end
 if game:get_value("i2014")==nil then game:set_value("i2014", 0) end

@@ -4,8 +4,7 @@ local enemy = ...
 --  electricity balls in order to electricute hero.
 
 function enemy:on_created()
-  self:set_life(8)
-  self:set_damage(4)
+  self:set_life(8); self:set_damage(4)
   self:create_sprite("enemies/plasmarine_blue")
   self:set_attack_consequence("arrow", "ignored")
   self:set_attack_consequence("boomerang", "ignored")
@@ -13,8 +12,7 @@ function enemy:on_created()
   self:set_attack_consequence("explosion", "ignored")
   self:set_attack_consequence("hookshot", "immobilized")
   self:set_attack_consequence("thrown_item", "ignored")
-  self:set_size(32, 32)
-  self:set_origin(16, 28)
+  self:set_size(32, 32); self:set_origin(16, 28)
 end
 
 function enemy:on_restarted()
@@ -59,9 +57,9 @@ function enemy:shoot_ball()
   -- needs to be able to hurt him, otherwise he won't die.
   -- Normally, only the other Plasmarine's electricity can hurt this one.
   if not enemy:get_map():has_entity("boss_plasmarine_red") then
-    ball = enemy:create_enemy({ x = 10, y = 10, breed = "plasmarine_ball", direction = 2 })
+    ball = enemy:create_enemy({ x=10,y=10,breed="projectiles/plasmarine_ball",direction=2 })
   else
-    ball = enemy:create_enemy({ breed = "plasmarine_ball", direction = 0 })
+    ball = enemy:create_enemy({ x=10,y=10,breed="projectiles/plasmarine_ball",direction=0 })
   end
   enemy:restart()
 end
