@@ -11,6 +11,150 @@ properties{
 
 tile{
   layer = 0,
+  x = 848,
+  y = 688,
+  width = 32,
+  height = 32,
+  pattern = "117",
+}
+
+tile{
+  layer = 0,
+  x = 848,
+  y = 608,
+  width = 32,
+  height = 80,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
+  x = 848,
+  y = 720,
+  width = 32,
+  height = 80,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
+  x = 880,
+  y = 608,
+  width = 112,
+  height = 192,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 688,
+  width = 32,
+  height = 32,
+  pattern = "117",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 608,
+  width = 32,
+  height = 80,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 720,
+  width = 32,
+  height = 80,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 608,
+  width = 112,
+  height = 192,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 152,
+  width = 32,
+  height = 32,
+  pattern = "117",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 184,
+  width = 32,
+  height = 80,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 56,
+  width = 32,
+  height = 96,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 64,
+  width = 112,
+  height = 192,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 1248,
+  width = 32,
+  height = 32,
+  pattern = "117",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 1280,
+  width = 48,
+  height = 64,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 1152,
+  width = 48,
+  height = 96,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
+  x = 552,
+  y = 1152,
+  width = 112,
+  height = 192,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
   x = 736,
   y = 1264,
   width = 16,
@@ -1084,7 +1228,7 @@ tile{
   layer = 0,
   x = 64,
   y = 608,
-  width = 256,
+  width = 112,
   height = 192,
   pattern = "22",
 }
@@ -2488,7 +2632,7 @@ tile{
   layer = 0,
   x = 400,
   y = 64,
-  width = 256,
+  width = 112,
   height = 192,
   pattern = "22",
 }
@@ -2830,7 +2974,7 @@ tile{
   layer = 0,
   x = 736,
   y = 608,
-  width = 256,
+  width = 112,
   height = 192,
   pattern = "22",
 }
@@ -3782,9 +3926,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 400,
+  x = 392,
   y = 1152,
-  width = 256,
+  width = 112,
   height = 192,
   pattern = "22",
 }
@@ -4952,7 +5096,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 152,
+  x = 144,
   y = 632,
   width = 16,
   height = 16,
@@ -4961,7 +5105,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 152,
+  x = 144,
   y = 616,
   width = 16,
   height = 16,
@@ -5418,6 +5562,172 @@ tile{
   pattern = "210",
 }
 
+tile{
+  layer = 0,
+  x = 504,
+  y = 1240,
+  width = 48,
+  height = 8,
+  pattern = "213",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 1248,
+  width = 8,
+  height = 32,
+  pattern = "214",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 1248,
+  width = 8,
+  height = 32,
+  pattern = "216",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 1280,
+  width = 48,
+  height = 8,
+  pattern = "215",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 144,
+  width = 48,
+  height = 8,
+  pattern = "213",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 152,
+  width = 8,
+  height = 32,
+  pattern = "214",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 152,
+  width = 8,
+  height = 32,
+  pattern = "216",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 184,
+  width = 48,
+  height = 8,
+  pattern = "215",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 680,
+  width = 48,
+  height = 8,
+  pattern = "213",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 688,
+  width = 8,
+  height = 32,
+  pattern = "214",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 688,
+  width = 8,
+  height = 32,
+  pattern = "216",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 720,
+  width = 48,
+  height = 8,
+  pattern = "215",
+}
+
+tile{
+  layer = 0,
+  x = 840,
+  y = 680,
+  width = 48,
+  height = 8,
+  pattern = "213",
+}
+
+tile{
+  layer = 0,
+  x = 840,
+  y = 688,
+  width = 8,
+  height = 32,
+  pattern = "214",
+}
+
+tile{
+  layer = 0,
+  x = 880,
+  y = 688,
+  width = 8,
+  height = 32,
+  pattern = "216",
+}
+
+tile{
+  layer = 0,
+  x = 840,
+  y = 720,
+  width = 48,
+  height = 8,
+  pattern = "215",
+}
+
+dynamic_tile{
+  name = "gate3_2",
+  layer = 0,
+  x = 848,
+  y = 704,
+  pattern = "221",
+  width = 32,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "gate3_1",
+  layer = 0,
+  x = 848,
+  y = 688,
+  pattern = "222",
+  width = 32,
+  height = 16,
+  enabled_at_start = true,
+}
+
 wall{
   layer = 0,
   x = 512,
@@ -5830,7 +6140,7 @@ enemy{
   name = "knight_room3_1",
   layer = 0,
   x = 192,
-  y = 701,
+  y = 765,
   direction = 0,
   breed = "knight_black",
   treasure_name = "random",
@@ -5849,7 +6159,7 @@ enemy{
 enemy{
   name = "wizzrobe_room3_1",
   layer = 0,
-  x = 112,
+  x = 120,
   y = 669,
   direction = 0,
   breed = "wizzrobe",
@@ -5859,7 +6169,7 @@ enemy{
 enemy{
   name = "wizzrobe_room3_2",
   layer = 0,
-  x = 256,
+  x = 264,
   y = 669,
   direction = 0,
   breed = "wizzrobe",
@@ -5940,7 +6250,7 @@ enemy{
   name = "wizzrobe_room6_2",
   layer = 0,
   x = 528,
-  y = 157,
+  y = 205,
   direction = 3,
   breed = "wizzrobe_ice",
   treasure_name = "random",
@@ -6040,7 +6350,7 @@ enemy{
   name = "lynel_room8_1",
   layer = 0,
   x = 864,
-  y = 701,
+  y = 717,
   direction = 3,
   breed = "lynel",
 }
@@ -6219,43 +6529,47 @@ enemy{
   y = 693,
   direction = 0,
   breed = "beamos",
+  treasure_name = "big_key",
 }
 
 door{
-  name = "room11_shutter_1",
+  name = "room11_shutter",
   layer = 0,
   x = 520,
   y = 1352,
   direction = 3,
   sprite = "entities/door_shutter",
+  savegame_variable = "b1194",
   opening_condition = "dungeon_8_small_keys",
   opening_condition_consumed = true,
 }
 
 door{
-  name = "room11_shutter_2",
+  name = "boss_door_1",
   layer = 0,
   x = 664,
   y = 1240,
   direction = 0,
-  sprite = "entities/door_shutter",
+  sprite = "entities/door_big_key",
+  savegame_variable = "b1189",
   opening_condition = "dungeon_8_small_keys",
   opening_condition_consumed = true,
 }
 
 door{
-  name = "room12_shutter_1",
+  name = "boss_door_2",
   layer = 0,
   x = 744,
   y = 1240,
   direction = 2,
   sprite = "entities/door_shutter",
+  savegame_variable = "b1189",
   opening_condition = "dungeon_8_small_keys",
   opening_condition_consumed = true,
 }
 
 door{
-  name = "room12_shutter_2",
+  name = "room12_shutter",
   layer = 0,
   x = 872,
   y = 1352,
@@ -6263,6 +6577,96 @@ door{
   sprite = "entities/door_shutter",
   opening_condition = "dungeon_8_small_keys",
   opening_condition_consumed = true,
+}
+
+enemy{
+  name = "miniboss_shadow_link",
+  layer = 0,
+  x = 880,
+  y = 1237,
+  direction = 3,
+  breed = "shadow_link",
+  rank = 1,
+  savegame_variable = "b1183",
+  treasure_name = "crystal",
+}
+
+enemy{
+  name = "boss_zirna",
+  layer = 0,
+  x = 880,
+  y = 1077,
+  direction = 3,
+  breed = "zirna",
+  rank = 2,
+  savegame_variable = "b1190",
+  treasure_name = "crystal",
+}
+
+dynamic_tile{
+  name = "gate4_1",
+  layer = 0,
+  x = 512,
+  y = 1248,
+  pattern = "222",
+  width = 32,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "gate4_2",
+  layer = 0,
+  x = 512,
+  y = 1264,
+  pattern = "221",
+  width = 32,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "gate1_1",
+  layer = 0,
+  x = 512,
+  y = 152,
+  pattern = "222",
+  width = 32,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "gate1_2",
+  layer = 0,
+  x = 512,
+  y = 168,
+  pattern = "221",
+  width = 32,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "gate2_1",
+  layer = 0,
+  x = 176,
+  y = 688,
+  pattern = "222",
+  width = 32,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "gate2_2",
+  layer = 0,
+  x = 176,
+  y = 704,
+  pattern = "221",
+  width = 32,
+  height = 16,
+  enabled_at_start = true,
 }
 
 tile{

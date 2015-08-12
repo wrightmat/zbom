@@ -1,0 +1,20 @@
+animation{
+  name = "stake",
+  src_image = "tileset",
+  directions = {
+    { x = 272, y = 168, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
+    { x = 272, y = 168, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
+    { x = 272, y = 168, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
+    { x = 272, y = 168, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
+  },
+}
+animation{
+  name = "hammered",
+  src_image = "tileset",
+  directions = {
+    { x = 288, y = 168, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
+    { x = 288, y = 168, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
+    { x = 288, y = 168, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
+    { x = 288, y = 168, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
+  },
+}

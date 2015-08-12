@@ -714,6 +714,15 @@ you to lift most anything!
 }
 
 dialog{
+  id = "_item_description.hammer.1",
+  icon = "27",
+  skip = "current",
+  text = [[
+This powerful hammer can pound
+wooden stakes into the ground.]]
+}
+
+dialog{
   id = "_item_description.hookshot.1",
   icon = "6",
   skip = "current",
@@ -1785,6 +1794,16 @@ You got the  $r Gold Bracelet$w!$0
 Its magic allows you to lift
 just about anything!
   ]]
+}
+
+dialog{
+  id = "_treasure.hammer.1",
+  icon = "27",
+  skip = "current",
+  text = [[
+You got the $r Goron Hammer!$w
+This powerful weapon can pound stakes
+into the ground.]]
 }
 
 dialog{
@@ -7638,6 +7657,15 @@ Don't have enough cash, eh?
 I heard there's a man in  $b Castle
 Town$w who's running a game where the
 grand prize is a bigger wallet!
+  ]]
+}
+
+dialog{
+  id = "shopkeep.goron_market",
+  text = [[
+Welcome to the open air Goron Market!
+If there's anything you like, just
+pick it up!
   ]]
 }
 

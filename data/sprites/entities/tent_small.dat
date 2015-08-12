@@ -1,0 +1,7 @@
+animation{
+  name = "tent",
+  src_image = "entities/tents.png",
+  directions = {
+    { x = 256, y = 96, frame_width = 80, frame_height = 88, origin_x = 0, origin_y = 0 },
+  },
+}

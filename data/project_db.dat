@@ -5,7 +5,7 @@ map{ id = "100", description = "Outside E1 (Northern Waters)" }
 map{ id = "101", description = "Outside E2 (Tantan Desert)" }
 map{ id = "102", description = "Outside E3 (North Castle)" }
 map{ id = "103", description = "Outside E4 (Midoro Swamp/Saria Town)" }
-map{ id = "104", description = "Outside F1 (Nortern Waters)" }
+map{ id = "104", description = "Outside F1 (Northern Waters)" }
 map{ id = "105", description = "Outside F2 (Tantan Desert)" }
 map{ id = "106", description = "Outside F3 (Rauru Town)" }
 map{ id = "107", description = "Outside F4 (Midoro Swamp)" }
@@ -351,6 +351,7 @@ sprite{ id = "entities/fire_small", description = "Fire (small)" }
 sprite{ id = "entities/fireworks_shell", description = "Fireworks (aerial shell)" }
 sprite{ id = "entities/fireworks_shower", description = "Fireworks (ground shower)" }
 sprite{ id = "entities/grass", description = "Grass" }
+sprite{ id = "entities/hammer_stake", description = "Hammer Stake" }
 sprite{ id = "entities/hint_stone", description = "Hint stone" }
 sprite{ id = "entities/hookshot", description = "Hookshot" }
 sprite{ id = "entities/ice_block", description = "Ice Block" }
@@ -389,6 +390,8 @@ sprite{ id = "entities/teletransporter", description = "Transporter" }
 sprite{ id = "entities/teletransporter_blue", description = "Transporter (Blue)" }
 sprite{ id = "entities/teletransporter_hole", description = "Transporter (Hole)" }
 sprite{ id = "entities/teletransporter_subrosia", description = "Transporter (Subrosia)" }
+sprite{ id = "entities/tent_bazaar", description = "Bazaar Tent" }
+sprite{ id = "entities/tent_small", description = "Small Tent" }
 sprite{ id = "entities/torch", description = "Stone torch" }
 sprite{ id = "entities/torch_candle", description = "Candle torch" }
 sprite{ id = "entities/torch_lantern", description = "Lantern torch" }
@@ -844,6 +847,7 @@ enemy{ id = "rock_lux", description = "Lux rock" }
 enemy{ id = "rock_small", description = "Small rock" }
 enemy{ id = "ropa", description = "Ropa" }
 enemy{ id = "rope", description = "Rope" }
+enemy{ id = "shadow_link", description = "Shadow Link (Miniboss)" }
 enemy{ id = "skeletor", description = "Skeletor" }
 enemy{ id = "snap_dragon", description = "Snap Dragon" }
 enemy{ id = "soldier_green", description = "Soldier, Green" }

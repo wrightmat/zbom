@@ -33,14 +33,35 @@ animation{
   },
 }
 animation{
+  name = "parry",
+  src_image = "enemies/shadow_link.png",
+  frame_delay = 100,
+  directions = {
+    { x = 0, y = 120, frame_width = 40, frame_height = 40, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 0, y = 0, frame_width = 40, frame_height = 40, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 0, y = 40, frame_width = 40, frame_height = 40, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 0, y = 80, frame_width = 40, frame_height = 40, origin_x = 16, origin_y = 29, num_frames = 4 },
+  },
+}
+animation{
   name = "shaking",
   src_image = "enemies/shadow_link.png",
   frame_delay = 100,
-  frame_to_loop_on = 0,
   directions = {
-    { x = 208, y = 256, frame_width = 40, frame_height = 40, origin_x = 16, origin_y = 29, num_frames = 8 },
-    { x = 208, y = 152, frame_width = 40, frame_height = 40, origin_x = 16, origin_y = 29, num_frames = 8 },
-    { x = 208, y = 192, frame_width = 40, frame_height = 40, origin_x = 16, origin_y = 29, num_frames = 8 },
-    { x = 208, y = 224, frame_width = 40, frame_height = 40, origin_x = 16, origin_y = 29, num_frames = 8 },
+    { x = 192, y = 256, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 8 },
+    { x = 192, y = 160, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 8 },
+    { x = 192, y = 192, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 8 },
+    { x = 192, y = 224, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 8 },
+  },
+}
+animation{
+  name = "sword",
+  src_image = "enemies/shadow_link.png",
+  frame_delay = 100,
+  directions = {
+    { x = 160, y = 120, frame_width = 40, frame_height = 40, origin_x = 16, origin_y = 29, num_frames = 7 },
+    { x = 160, y = 0, frame_width = 40, frame_height = 40, origin_x = 16, origin_y = 29, num_frames = 7 },
+    { x = 160, y = 40, frame_width = 40, frame_height = 40, origin_x = 16, origin_y = 29, num_frames = 7 },
+    { x = 160, y = 80, frame_width = 40, frame_height = 40, origin_x = 16, origin_y = 29, num_frames = 7 },
   },
 }
