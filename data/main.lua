@@ -1,7 +1,7 @@
 -- Main script of the quest.
 
-local console = require("console")
-local quest_manager = require("quest_manager")
+local console = require("scripts/console")
+local quest_manager = require("scripts/quest_manager")
 
 local debug_enabled = false
 function sol.main.is_debug_enabled()
@@ -234,8 +234,8 @@ end
 
 -- Starts a game.
 function sol.main:start_savegame(game)
-  local play_game = sol.main.load_file("play_game")
-  play_game(game)
+  local game_manager = sol.main.load_file("scripts/game_manager")
+  game_manager(game)
 end
 
 -- Returns the font and size to be used for dialogs

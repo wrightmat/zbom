@@ -1,28 +1,31 @@
 local game = ...
 
--- Include the various game features.
-sol.main.load_file("dungeons")(game)
-sol.main.load_file("equipment")(game)
-sol.main.load_file("menus/pause")(game)
-sol.main.load_file("menus/dialog_box")(game)
-sol.main.load_file("menus/game_over")(game)
-sol.main.load_file("hud/hud")(game)
-sol.main.load_file("particles")(game)
-local condition_manager = require("hero_condition")
+-- This script handles global properties of a particular savegame.
 
--- Useful functions for this specific quest.
+-- Include the various game features.
+sol.main.load_file("hud/hud")(game)
+sol.main.load_file("menus/pause")(game)
+sol.main.load_file("menus/game_over")(game)
+sol.main.load_file("menus/dialog_box")(game)
+sol.main.load_file("scripts/dungeons")(game)
+sol.main.load_file("scripts/equipment")(game)
+sol.main.load_file("scripts/particles")(game)
+local camera_manager = require("scripts/camera_manager")
+local condition_manager = require("scripts/hero_condition")
 
 function game:on_started()
   -- Set up the dialog box, HUD, hero conditions and effects.
   condition_manager:initialize(self)
   self:initialize_dialog_box()
   self:initialize_hud()
+  camera = camera_manager:create(game)
 end
 
 function game:on_finished()
   -- Clean what was created by on_started().
   self:quit_hud()
   self:quit_dialog_box()
+  camera = nil
 end
 
 -- This event is called when a new map has just become active.

@@ -1,6 +1,7 @@
+local quest_manager = {}
+
 -- This script handles global behavior of this quest,
 -- that is, things not related to a particular savegame.
-local quest_manager = {}
 
 -- Initializes the behavior of destructible entities.
 local function initialize_destructibles()
