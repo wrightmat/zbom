@@ -6,6 +6,31 @@ function item:on_created()
   self:set_assignable(true)
 end
 
+-- Create an ice square at the specified place if there is deep water.
+local function check_square(x, y)
+  local map = item:get_map()
+  local _, _, layer = item:get_position()
+
+  -- Top-left corner of the candidate 16x16 square.
+  x = math.floor(x / 16) * 16
+  y = math.floor(y / 16) * 16
+
+  -- Check that the four corners of the 16x16 square are on deep water
+  if map:get_ground(      x,      y, layer) ~= "deep_water" or
+      map:get_ground(x + 15,      y, layer) ~= "deep_water" or
+      map:get_ground(     x, y + 15, layer) ~= "deep_water" or
+      map:get_ground(x + 15, y + 15, layer) ~= "deep_water" then
+    return
+  end
+
+  local ice_path = map:create_custom_entity({
+    x = x, y = y, layer = layer, width = 16, height = 16, direction = 0, ground = "ice"
+  })
+  ice_path:set_origin(0, 0)
+  ice_path:set_modified_ground("ice")
+  ice_path:create_sprite("entities/ice")
+end
+
 function item:on_using()
   local magic_needed = 7
   local game = self:get_game()
@@ -28,16 +53,16 @@ function item:on_using()
 	model = "ice_block"
       }
       self.created = true
+      check_square(x,y) -- freeze water if under the ice cane block
     else
       -- Reuse the old one.
       local old_x, old_y, old_layer = self.ice_block:get_position()
       if x ~= old_x or y ~= old_y or layer ~= old_layer then
-
 	sol.audio.play_sound("cane")
 	sol.audio.play_sound("magic_bar")
 	game:remove_magic(magic_needed)
-
 	self.ice_block:set_position(x, y, layer)
+        check_square(x,y) -- freeze water if under the ice cane block
       end
     end
   else
