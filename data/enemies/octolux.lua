@@ -3,7 +3,7 @@ local can_shoot = true
 local map = enemy:get_map()
 local hero = map:get_hero()
 
--- Octorok: simple enemy who wanders and shoots rocks
+-- Octolux: More powerful enemy who wanders and shoots rocks.
 
 function enemy:on_created()
   self:set_life(4); self:set_damage(6)

@@ -1,7 +1,7 @@
 local enemy = ...
 local map = enemy:get_map()
 
--- Shadow Link
+-- Shadow Link.
 
 function enemy:on_created()
   self:set_life(10); self:set_damage(8)

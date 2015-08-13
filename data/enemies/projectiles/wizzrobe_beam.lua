@@ -1,7 +1,7 @@
 local enemy = ...
 local type
 
--- A magic beam thrown by a Wizzrobe
+-- A magic beam thrown by another enemy (Wizzrobe).
 
 function enemy:on_created()
   self:set_life(1); self:set_damage(6)

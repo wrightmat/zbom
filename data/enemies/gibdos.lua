@@ -1,7 +1,7 @@
 local enemy = ...
 local behavior = require("enemies/generic/toward_hero")
 
--- Gibdos: Hylian mummy
+-- Gibdos: Hylian mummy.
 
 local properties = {
   sprite = "enemies/gibdos",

@@ -1178,6 +1178,78 @@ tile{
   pattern = "522",
 }
 
+tile{
+  layer = 0,
+  x = 488,
+  y = 496,
+  width = 48,
+  height = 48,
+  pattern = "1644",
+}
+
+tile{
+  layer = 0,
+  x = 456,
+  y = 848,
+  width = 48,
+  height = 48,
+  pattern = "1644",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 824,
+  width = 48,
+  height = 48,
+  pattern = "1644",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 280,
+  width = 48,
+  height = 48,
+  pattern = "1644",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 72,
+  width = 48,
+  height = 48,
+  pattern = "1644",
+}
+
+tile{
+  layer = 0,
+  x = 768,
+  y = 376,
+  width = 48,
+  height = 48,
+  pattern = "1644",
+}
+
+tile{
+  layer = 0,
+  x = 936,
+  y = 120,
+  width = 48,
+  height = 48,
+  pattern = "1644",
+}
+
+tile{
+  layer = 0,
+  x = 880,
+  y = 712,
+  width = 48,
+  height = 48,
+  pattern = "1644",
+}
+
 teletransporter{
   name = "to_L4",
   layer = 0,
@@ -1236,6 +1308,56 @@ teletransporter{
   transition = "scrolling",
   destination_map = "130",
   destination = "_side",
+}
+
+enemy{
+  name = "hinox_1",
+  layer = 0,
+  x = 224,
+  y = 701,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "hinox_2",
+  layer = 0,
+  x = 680,
+  y = 789,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "hinox_3",
+  layer = 0,
+  x = 328,
+  y = 981,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "hinox_4",
+  layer = 0,
+  x = 936,
+  y = 557,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "hinox_5",
+  layer = 0,
+  x = 592,
+  y = 277,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random_north",
 }
 
 tile{

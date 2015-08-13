@@ -2385,6 +2385,16 @@ npc{
   behavior = "item#hammer",
 }
 
+enemy{
+  name = "hinox_3",
+  layer = 0,
+  x = 224,
+  y = 525,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random_north",
+}
+
 tile{
   layer = 2,
   x = 968,

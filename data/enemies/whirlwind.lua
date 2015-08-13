@@ -1,6 +1,6 @@
 local enemy = ...
 
--- A whirlwind shot by another enemy
+-- A whirlwind created by another enemy.
 
 function enemy:on_created()
   self:set_life(1); self:set_damage(4)

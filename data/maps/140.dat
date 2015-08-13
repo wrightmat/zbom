@@ -1139,3 +1139,53 @@ teletransporter{
   destination = "_side",
 }
 
+enemy{
+  name = "snapdragon_1",
+  layer = 0,
+  x = 552,
+  y = 925,
+  direction = 0,
+  breed = "snap_dragon",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "snapdragon_2",
+  layer = 0,
+  x = 976,
+  y = 965,
+  direction = 0,
+  breed = "snap_dragon",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "snapdragon_3",
+  layer = 0,
+  x = 208,
+  y = 1053,
+  direction = 0,
+  breed = "snap_dragon",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "snapdragon_4",
+  layer = 0,
+  x = 256,
+  y = 413,
+  direction = 0,
+  breed = "snap_dragon",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "snapdragon_5",
+  layer = 0,
+  x = 784,
+  y = 285,
+  direction = 0,
+  breed = "snap_dragon",
+  treasure_name = "random_north",
+}
+

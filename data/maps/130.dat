@@ -1684,6 +1684,36 @@ jumper{
   jump_length = 72,
 }
 
+enemy{
+  name = "hinox_3",
+  layer = 0,
+  x = 448,
+  y = 1037,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "hinox_4",
+  layer = 0,
+  x = 832,
+  y = 1021,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "hinox_5",
+  layer = 0,
+  x = 216,
+  y = 949,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random_north",
+}
+
 tile{
   layer = 2,
   x = 472,

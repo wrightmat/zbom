@@ -1,6 +1,6 @@
 local enemy = ...
 
--- Rock shot by another enemy (Octorok)
+-- Rock made of light shot by another enemy (Octolux)
 
 function enemy:on_created()
   self:set_life(1); self:set_damage(4)
