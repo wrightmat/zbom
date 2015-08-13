@@ -1,21 +1,18 @@
 local enemy = ...
-
--- Peahat: a flying enemy that follows the hero in the air (and lands periodically)
-
 local state = "stopped"
 local timer
 
+-- Peahat: A flying enemy that follows the hero in the air (and lands periodically).
+
 function enemy:on_created()
-  self:set_life(3)
-  self:set_damage(4)
+  self:set_life(3); self:set_damage(4)
   self:create_sprite("enemies/peahat")
+  self:set_size(32, 48); self:set_origin(16, 45)
   self:set_hurt_style("monster")
   self:set_pushed_back_when_hurt(true)
   self:set_push_hero_on_sword(true)
   self:set_obstacle_behavior("flying")
   self:set_layer_independent_collisions(true)
-  self:set_size(32, 48)
-  self:set_origin(16, 45)
 end
 
 function enemy:on_obstacle_reached(movement)

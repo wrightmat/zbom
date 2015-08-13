@@ -8,14 +8,12 @@ local going_hero = false
 local timer
 
 function enemy:on_created()
-  self:set_life(1)
-  self:set_damage(2)
+  self:set_life(1); self:set_damage(2)
   self:create_sprite("enemies/arrghus_baby")
+  self:set_size(16, 16); self:set_origin(8, 13)
   self:set_hurt_style("monster")
   self:set_pushed_back_when_hurt(true)
   self:set_push_hero_on_sword(false)
-  self:set_size(16, 16)
-  self:set_origin(8, 13)
   self:set_attack_consequence("arrow", "protected")
 end
 

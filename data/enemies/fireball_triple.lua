@@ -1,7 +1,5 @@
 local enemy = ...
 
--- A bouncing triple fireball, usually shot by another enemy.
-
 local speed = 192
 local bounces = 0
 local max_bounces = 3
@@ -9,17 +7,17 @@ local used_sword = false
 local sprite2 = nil
 local sprite3 = nil
 
+-- A bouncing triple fireball, usually shot by another enemy.
+
 function enemy:on_created()
-  self:set_life(1)
-  self:set_damage(8)
+  self:set_life(1); self:set_damage(8)
   self:create_sprite("enemies/fireball_triple")
-  self:set_size(16, 16)
-  self:set_origin(8, 8)
+  self:set_size(16, 16); self:set_origin(8, 8)
   self:set_obstacle_behavior("flying")
   self:set_invincible()
   self:set_attack_consequence("sword", "custom")
 
-  -- Two smaller fireballs just for the displaying.
+  -- Two smaller fireballs just for appearances.
   sprite2 = sol.sprite.create("enemies/fireball_triple")
   sprite2:set_animation("small")
   sprite3 = sol.sprite.create("enemies/fireball_triple")

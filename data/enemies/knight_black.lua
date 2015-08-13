@@ -2,7 +2,7 @@ local enemy = ...
 
 -- Black knight soldier (Leader).
 
-sol.main.load_file("enemies/generic_leader")(enemy)
+sol.main.load_file("enemies/generic/leader")(enemy)
 enemy:set_properties({
   main_sprite = "enemies/knight_black",
   life = 8,

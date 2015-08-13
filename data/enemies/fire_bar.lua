@@ -2,10 +2,8 @@ local enemy = ...
 local son1, son2, son3, son4
 
 function enemy:on_created()
-  self:set_life(1)
-  self:set_damage(0)
-  self:set_size(16, 16)
-  self:set_origin(8, 8)
+  self:set_life(1); self:set_damage(0)
+  self:set_size(16, 16); self:set_origin(8, 8)
   self:set_invincible()
   self:set_obstacle_behavior("flying")
 

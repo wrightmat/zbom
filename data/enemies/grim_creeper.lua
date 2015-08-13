@@ -5,14 +5,12 @@ local son_breed = "keese"
 local nb_sons_created = 0
 local nb_sons_to_create = 0
 
--- Grim Creeper
+-- Grim Creeper: Miniboss who controls flocks of Keese.
 
 function enemy:on_created()
-  self:set_life(8)
-  self:set_damage(3)
+  self:set_life(8); self:set_damage(3)
   self:create_sprite("enemies/grim_creeper")
-  self:set_size(16, 24)
-  self:set_origin(8, 17)
+  self:set_size(16, 24); self:set_origin(8, 17)
   self:set_invincible()
   self:set_attack_consequence("explosion", 1)
   self:set_pushed_back_when_hurt(false)

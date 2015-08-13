@@ -1,10 +1,11 @@
 local enemy = ...
+local behavior = require("enemies/generic/toward_hero")
 
 -- Skeletor.
 
-sol.main.load_file("enemies/generic_towards_hero")(enemy)
-enemy:set_properties({
-  sprite = "enemies/skeletor",
+local properties = {
+  sprite = "enemies/zola",
   life = 3,
-  damage = 2
-})
+  damage = 2,
+}
+behavior:create(enemy, properties)

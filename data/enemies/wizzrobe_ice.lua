@@ -1,10 +1,9 @@
 local enemy = ...
-
--- Wizzrobe, Ice
-
 local vulnerable = false
 local timers = {}
 local ex, ey, el
+
+-- Wizzrobe: Ice magic enemy which shoots beams at the hero.
 
 function enemy:on_created()
   self:set_life(3); self:set_damage(2)

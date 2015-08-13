@@ -1,18 +1,14 @@
 local enemy = ...
-
--- Lanmola: segmented enemy who appears from underground - this defines the
---          head segment directly then creates the body segments dynamically.
-
 local head_present = false
 local body_segment = 0
 
+-- Lanmola: Segmented enemy who appears from underground. This defines the head and creates the body segments dynamically.
+
 function enemy:on_created()
-  self:set_life(1)
-  self:set_damage(2)
+  self:set_life(1); self:set_damage(2)
   self:create_sprite("enemies/lanmola")
+  self:set_size(16, 16); self:set_origin(8, 8)
   self:set_hurt_style("boss")
-  self:set_size(16, 16)
-  self:set_origin(8, 8)
   self:set_invincible(true)
 end
 

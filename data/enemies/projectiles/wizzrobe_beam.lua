@@ -1,15 +1,12 @@
 local enemy = ...
+local type
 
 -- A magic beam thrown by a Wizzrobe
 
-local type
-
 function enemy:on_created()
-  self:set_life(1)
-  self:set_damage(6)
+  self:set_life(1); self:set_damage(6)
   self:create_sprite("enemies/wizzrobe_beam")
-  self:set_size(16, 16)
-  self:set_origin(8, 8)
+  self:set_size(16, 16); self:set_origin(8, 8)
   self:set_invincible()
   self:set_minimum_shield_needed(2)
   self:set_can_hurt_hero_running(true)

@@ -1,23 +1,17 @@
 local enemy = ...
+local behavior = require("enemies/generic/toward_hero")
 
 -- Redead: an undead enemy.
 
-function enemy:on_created()
-  self:set_life(6)
-  self:set_damage(4)
-  self:create_sprite("enemies/redead")
-  self:set_size(32, 32)
-  self:set_origin(16, 29)
-end
+local properties = {
+  sprite = "enemies/redead",
+  life = 6,
+  damage = 4,
+  normal_speed = 32,
+  faster_speed = 40,
+}
+behavior:create(enemy, properties)
 
-function enemy:on_restarted()
-  local m = sol.movement.create("path_finding")
-  m:set_speed(16)
-  m:start(self)
-end
-
-function enemy:on_movement_changed(movement)
-  local direction4 = movement:get_direction4()
-  local sprite = self:get_sprite()
-  sprite:set_direction(direction4)
-end
+enemy:set_attack_consequence("arrow", "protected")
+enemy:set_attack_consequence("boomerang", "protected")
+enemy:set_attack_consequence("thrown_item", "protected")

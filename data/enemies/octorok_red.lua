@@ -1,96 +1,83 @@
 local enemy = ...
+local can_shoot = true
+local map = enemy:get_map()
+local hero = map:get_hero()
 
--- Octorok: simple enemy who wanders and shoots rocks
-
-local going_hero = false
-local near_hero = false
-local shooting = false
-local timer, shoot_timer
+-- Octorok: simple enemy who wanders and shoots rocks.
 
 function enemy:on_created()
-  self:set_life(1); self:set_damage(2)
+  self:set_life(2); self:set_damage(2)
   self:create_sprite("enemies/octorok_red")
+  self:set_size(16, 16); self:set_origin(8, 13)
   self:set_hurt_style("monster")
   self:set_pushed_back_when_hurt(true)
   self:set_push_hero_on_sword(false)
-  self:set_size(16, 16); self:set_origin(8, 13)
+end
+
+local function go_hero()
+  local sprite = enemy:get_sprite()
+  sprite:set_animation("walking")
+  local movement = sol.movement.create("target")
+  movement:set_speed(64)
+  movement:start(enemy)
+end
+
+local function shoot()
+  if not enemy:is_in_same_region(hero) then
+    return true  -- Repeat the timer.
+  end
+
+  local sprite = enemy:get_sprite()
+  local x, y, layer = enemy:get_position()
+  local direction = sprite:get_direction()
+
+  -- Where to create the projectile.
+  local dxy = {
+    {  8,  -4 },
+    {  0, -13 },
+    { -8,  -4 },
+    {  0,   0 },
+  }
+
+  sprite:set_animation("shooting")
+  enemy:stop_movement()
+  sol.timer.start(enemy, 300, function()
+    sol.audio.play_sound("stone")
+    local stone = enemy:create_enemy({
+      breed = "projectiles/rock_small",
+      x = dxy[direction + 1][1],
+      y = dxy[direction + 1][2],
+    })
+
+    stone:go(direction)
+    sol.timer.start(enemy, 500, go_hero)
+  end)
+end
+
+function enemy:on_restarted()
+  go_hero()
+  can_shoot = true
+
+  sol.timer.start(enemy, 100, function()
+    local hero_x, hero_y = hero:get_position()
+    local x, y = enemy:get_center_position()
+
+    if can_shoot then
+      local aligned = (math.abs(hero_x - x) < 16 or math.abs(hero_y - y) < 16) 
+      if aligned and enemy:get_distance(hero) < 200 then
+        shoot()
+        can_shoot = false
+        sol.timer.start(enemy, 1500, function()
+          can_shoot = true
+        end)
+      end
+    end
+    return true  -- Repeat the timer.
+  end)
 end
 
 function enemy:on_movement_changed(movement)
   local direction4 = movement:get_direction4()
   local sprite = self:get_sprite()
   sprite:set_direction(direction4)
-end
-
-function enemy:on_obstacle_reached(movement)
-  self:check_hero()
-end
-
-function enemy:on_restarted()
-  if not near_hero then
-    self:go_random()
-  else
-    self:go_hero()
-  end
-  self:check_hero()
-end
-
-function enemy:on_hurt()
-  if timer ~= nil then
-    timer:stop()
-    timer = nil
-  end
-  if shoot_timer ~= nil then
-    shoot_timer:stop()
-    shoot_timer = nil
-  end
-end
-
-function enemy:check_hero()
-  local hero = self:get_map():get_entity("hero")
-  local _, _, layer = self:get_position()
-  local _, _, hero_layer = hero:get_position()
-  local near_hero = layer == hero_layer
-    and self:get_distance(hero) < 100
-
-  if near_hero and not going_hero then
-    self:go_hero()
-  elseif not near_hero and going_hero then
-    self:go_random()
-  elseif not near_hero and not going_hero then
-    self:go_random()
-  elseif near_hero and going_hero then
-    if not shoot_timer then self:shoot() end
-  end
-
-  timer = sol.timer.start(self, 1000, function() self:check_hero() end)
-end
-
-function enemy:shoot()
-  self:stop_movement()
-  local d = self:get_sprite():get_direction()
-  self:get_sprite():set_animation("shooting")
-  shoot_timer = sol.timer.start(self, 100, function()
-    local rock = self:create_enemy({ breed = "projectiles/rock_small", direction = d })
-    sol.timer.start(self, 2000, function()
-      shoot_timer = nil
-      self:check_hero()
-    end)
-  end)
-end
-
-function enemy:go_random()
-  local m = sol.movement.create("straight")
-  m:set_speed(32)
-  m:start(self)
-  d = m:get_direction4()
-  going_hero = false
-end
-
-function enemy:go_hero()
-  local m = sol.movement.create("target")
-  m:set_speed(48)
-  m:start(self)
-  d = m:get_direction4()
-  going_hero = true
 end

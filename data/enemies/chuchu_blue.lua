@@ -4,11 +4,9 @@ local enemy = ...
 -- The blue variety can disappear into the ground.
 
 function enemy:on_created()
-  self:set_life(3)
-  self:set_damage(3)
+  self:set_life(3); self:set_damage(3)
   self:create_sprite("enemies/chuchu_blue")
-  self:set_size(16, 16)
-  self:set_origin(8, 13)
+  self:set_size(16, 16); self:set_origin(8, 13)
 end
 
 function enemy:on_restarted()

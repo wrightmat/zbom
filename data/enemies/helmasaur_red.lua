@@ -1,21 +1,13 @@
 local enemy = ...
+local behavior = require("enemies/generic/toward_hero")
 
-function enemy:on_created()
-  self:set_life(3)
-  self:set_damage(4)
-  self:create_sprite("enemies/helmasaur_red")
-  self:set_size(16, 16)
-  self:set_origin(8, 13)
-end
+-- Red Helmasaur.
 
-function enemy:on_restarted()
-  local m = sol.movement.create("path_finding")
-  m:set_speed(32)
-  m:start(self)
-end
-
-function enemy:on_movement_changed(movement)
-  local direction4 = movement:get_direction4()
-  local sprite = self:get_sprite()
-  sprite:set_direction(direction4)
-end
+local properties = {
+  sprite = "enemies/helmasaur_red",
+  life = 3,
+  damage = 4,
+  normal_speed = 32,
+  faster_speed = 48,
+}
+behavior:create(enemy, properties)

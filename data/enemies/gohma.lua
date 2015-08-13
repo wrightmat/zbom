@@ -1,17 +1,15 @@
 local enemy = ...
 local map = enemy:get_map()
 
--- Gohma: Boss who has to be shot in the eye with an arrow to be hurt
+-- Gohma: Boss who has to be shot in the eye with an arrow to be hurt.
 
 function enemy:on_created()
-  self:set_life(9)
-  self:set_damage(2)
-  self:create_sprite("enemies/gohma")
+  self:set_life(9); self:set_damage(2)
+  local sprite = self:create_sprite("enemies/gohma")
+  self:set_size(64, 32); self:set_origin(32, 29)
   self:set_hurt_style("boss")
-  self:set_size(64, 32)
-  self:set_origin(32, 29)
   self:set_attack_consequence("sword", "protected")
-  self:get_sprite():set_animation("walking")
+  sprite:set_animation("walking")
 end
 
 function enemy:check_action()

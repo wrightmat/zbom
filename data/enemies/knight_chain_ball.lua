@@ -4,13 +4,11 @@ local chain = nil
 -- Knight with a chain and ball.
 
 function enemy:on_created()
-  self:set_life(10)
-  self:set_damage(3)
+  self:set_life(10); self:set_damage(3)
+  self:create_sprite("enemies/knight_green")
+  self:set_size(48, 48); self:set_origin(24, 29)
   self:set_pushed_back_when_hurt(false)
   self:set_push_hero_on_sword(true)
-  self:create_sprite("enemies/knight_green")
-  self:set_size(48, 48)
-  self:set_origin(24, 29)
   self:set_invincible()
   self:set_attack_consequence("sword", 2)
   self:set_attack_consequence("thrown_item", 1)

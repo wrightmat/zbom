@@ -1,13 +1,11 @@
 local enemy = ...
 
--- Lanmola: segmented enemy who appears from underground- this defines the body segments.
+-- Lanmola: Segmented enemy who appears from underground. This defines the body segments.
 
 function enemy:on_created()
-  self:set_life(1)
-  self:set_damage(1)
+  self:set_life(1); self:set_damage(1)
   self:create_sprite("enemies/lanmola_body")
-  self:set_size(16, 16)
-  self:set_origin(8, 8)
+  self:set_size(16, 16); self:set_origin(8, 8)
   self:go(40)
   self:set_invincible(true)
 end

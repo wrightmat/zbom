@@ -1,23 +1,20 @@
 local enemy = ...
-
--- Fire Keese (bat): Basic flying enemy, but also on fire!
-
 local state = "stopped"
 local timer
 
+-- Fire Keese (bat): Basic flying enemy, but also on fire!
+
 function enemy:on_created()
-  self:set_life(1)
-  self:set_damage(2)
-  self:create_sprite("enemies/keese_fire")
+  self:set_life(1); self:set_damage(2)
+  local sprite = self:create_sprite("enemies/keese_fire")
+  self:set_size(16, 16); self:set_origin(8, 13)
   self:set_hurt_style("monster")
   self:set_pushed_back_when_hurt(true)
   self:set_push_hero_on_sword(false)
   self:set_obstacle_behavior("flying")
   self:set_layer_independent_collisions(true)
-  self:set_size(16, 16)
-  self:set_origin(8, 13)
-  self:get_sprite():set_animation("stopped")
   self:set_attack_consequence("fire", "protected")
+  sprite:set_animation("stopped")
 end
 
 function enemy:on_update()

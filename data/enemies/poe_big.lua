@@ -1,21 +1,18 @@
 local enemy = ...
+local going_hero = false
+local timer
 
 -- Big Poe: Larger ghost boss composed of smaller Poes, which
 -- disappears occasionally and throws fire from its lantern.
 
-local going_hero = false
-local timer
-
 function enemy:on_created()
-  self:set_life(8)
-  self:set_damage(3)
+  self:set_life(8); self:set_damage(3)
   self:create_sprite("enemies/poe_big")
+  self:set_size(32, 40); self:set_origin(16, 37)
   self:set_hurt_style("boss")
   self:set_pushed_back_when_hurt(false)
   self:set_push_hero_on_sword(false)
   self:set_obstacle_behavior("flying")
-  self:set_size(32, 40)
-  self:set_origin(16, 37)
 end
 
 function enemy:on_movement_changed(movement)

@@ -1,14 +1,12 @@
 local enemy = ...
 
--- Manhandla: boss with multiple heads to attack - this file defines the head segments.
+-- Manhandla: Boss with multiple heads to attack. This file defines the head segments.
 
 function enemy:on_created()
-  self:set_life(1)
-  self:set_damage(1)
+  self:set_life(1); self:set_damage(1)
   self:create_sprite("enemies/manhandla_head")
+  self:set_size(24, 24); self:set_origin(12, 12)
   self:set_hurt_style("monster")
-  self:set_size(24, 24)
-  self:set_origin(12, 12)
   self:set_attack_consequence("arrow", "protected")
 end
 

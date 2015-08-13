@@ -1,8 +1,9 @@
 local enemy = ...
 local map = enemy:get_map()
-
--- Stalfos: An undead soldier boss.
-
+local vulnerable = false
+local hidden = false
+local hide_timer = nil
+local hit_counter = 0
 -- Possible positions where he lands.
 local positions = {
   {x = 224, y = 288, direction4 = 3},
@@ -11,17 +12,12 @@ local positions = {
   {x = 336, y = 184, direction4 = 3}
 }
 
-local vulnerable = false
-local hidden = false
-local hide_timer = nil
-local hit_counter = 0
+-- Stalfos: An undead soldier boss.
 
 function enemy:on_created()
-  self:set_life(8)
-  self:set_damage(4)
+  self:set_life(8); self:set_damage(4)
   self:create_sprite("enemies/stalfos_knight")
-  self:set_size(32, 40)
-  self:set_origin(16, 36)
+  self:set_size(32, 40); self:set_origin(16, 36)
   self:set_hurt_style("boss")
   self:set_attack_consequence("arrow", "protected")
   self:set_attack_consequence("hookshot", "protected")

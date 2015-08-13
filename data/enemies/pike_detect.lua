@@ -1,17 +1,14 @@
 local enemy = ...
-
--- Pike that moves when the hero is close.
-
 local state = "stopped"  -- "stopped", "moving", "going_back" or "paused".
 local initial_xy = {}
 local activation_distance = 24
 
+-- Pike that moves when the hero is close.
+
 function enemy:on_created()
-  self:set_life(1)
-  self:set_damage(4)
+  self:set_life(1); self:set_damage(4)
   self:create_sprite("enemies/pike_detect")
-  self:set_size(16, 16)
-  self:set_origin(8, 13)
+  self:set_size(16, 16); self:set_origin(8, 13)
   self:set_can_hurt_hero_running(true)
   self:set_invincible()
   self:set_attack_consequence("sword", "protected")

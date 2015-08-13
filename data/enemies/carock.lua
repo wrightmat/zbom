@@ -1,7 +1,10 @@
 local enemy = ...
-
--- Carock (Dark Tribe member, boss of Sewers)
-
+local nb_sons_created = 0
+local initial_life = 8
+local finished = false
+local fireball_proba = 33  -- Percent.
+local vulnerable = false
+local timers = {}
 -- Possible positions where he appears.
 local positions = {
   {x = 1944, y = 544, direction4 = 3},
@@ -10,20 +13,13 @@ local positions = {
   {x = 2032, y = 512, direction4 = 1}
 }
 
-local nb_sons_created = 0
-local initial_life = 8
-local finished = false
-local fireball_proba = 33  -- Percent.
-local vulnerable = false
-local timers = {}
+-- Carock (Dark Tribe member, boss of Sewers)
 
 function enemy:on_created()
-  self:set_life(initial_life)
-  self:set_damage(2)
-  self:create_sprite("enemies/carock")
+  self:set_life(initial_life); self:set_damage(2)
+  local sprite = self:create_sprite("enemies/carock")
+  self:set_size(16, 16); self:set_origin(8, 13)
   self:set_optimization_distance(0)
-  self:set_size(16, 16)
-  self:set_origin(8, 13)
   self:set_invincible()
   self:set_attack_consequence("sword", "protected")
   self:set_attack_consequence("arrow", "protected")
@@ -31,8 +27,6 @@ function enemy:on_created()
   self:set_attack_consequence("boomerang", "protected")
   self:set_pushed_back_when_hurt(false)
   self:set_push_hero_on_sword(true)
-
-  local sprite = self:get_sprite()
   sprite:set_animation("stopped")
 end
 

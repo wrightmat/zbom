@@ -1,12 +1,11 @@
 local enemy = ...
 
 -- A simple fireball thrown by another enemy.
+
 function enemy:on_created()
-  self:set_life(1)
-  self:set_damage(12)
+  self:set_life(1); self:set_damage(12)
   self:create_sprite("enemies/fireball_simple")
-  self:set_size(16, 16)
-  self:set_origin(8, 8)
+  self:set_size(16, 16); self:set_origin(8, 8)
   self:set_invincible()
   self:set_obstacle_behavior("flying")
 end

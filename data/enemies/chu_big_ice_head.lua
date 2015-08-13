@@ -1,21 +1,15 @@
 local enemy = ...
 
--- Big Ice Chu: A large gelatinous miniboss who
--- tries to either squish or freeze our hero.
-
--- This is the head, which can't be hurt but
--- reacts to the base being hurt.
+-- Big Ice Chu: A large gelatinous miniboss who tries to either squish or freeze our hero.
+-- This is the head, which can't be hurt but reacts to the base being hurt.
 
 local initial_xy = {}
 
 function enemy:on_created()
   base = self:get_map():get_entity("miniboss_chu")
-
-  self:set_life(1)
-  self:set_damage(1)
-  self:set_size(48, 48)
-  self:set_origin(24, 43)
-  self:set_invincible(true)
+  self:set_life(1); self:set_damage(1)
+  self:set_size(48, 48); self:set_origin(24, 43)
+  self:set_invincible()
   self:set_attack_consequence("sword", "ignored")
   self:set_attack_consequence("arrow", "ignored")
   self:set_attack_consequence("hookshot", "ignored")

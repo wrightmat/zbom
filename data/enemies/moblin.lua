@@ -1,11 +1,14 @@
 local enemy = ...
+local behavior = require("enemies/generic/soldier")
 
 -- Moblin.
 
-sol.main.load_file("enemies/generic_soldier")(enemy)
-enemy:set_properties({
+local properties = {
   main_sprite = "enemies/moblin",
   life = 8,
-  damage = 4,
-  play_hero_seen_sound = true
-})
+  damage = 3,
+  normal_speed = 40,
+  faster_speed = 48,
+}
+
+behavior:create(enemy, properties)

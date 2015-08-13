@@ -1,13 +1,11 @@
 local enemy = ...
 
--- Lanmola: segmented enemy who appears from underground- this defines the tail segment.
+-- Lanmola: Segmented enemy who appears from underground. This defines the tail segment.
 
 function enemy:on_created()
-  self:set_life(8)
-  self:set_damage(2)
+  self:set_life(8); self:set_damage(2)
   self:create_sprite("enemies/lanmola_tail")
-  self:set_size(16, 16)
-  self:set_origin(8, 8)
+  self:set_size(16, 16); self:set_origin(8, 8)
   self:go(36)
 end
 

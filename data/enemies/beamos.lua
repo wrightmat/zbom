@@ -1,7 +1,4 @@
 local enemy = ...
-
--- Beamos
-
 local particle_sprite = "enemies/beamos_particle"
 local damage = 1
 local speed = 200
@@ -10,13 +7,15 @@ local time_between_particles = 20
 local particles_per_beam = 10
 local stop_time = 1000
 
+-- Beamos
+
 function enemy:on_created()
-  self:create_sprite("enemies/beamos")
   self:set_life(1)
+  self:create_sprite("enemies/beamos")
+  self:set_size(16,32); self:set_origin(8,27)
   self:set_invincible()
   self:set_can_attack(false)
   self:set_traversable(true)
-  self:set_size(16,32); self:set_origin(8,27)
   self:set_attack_consequence("explosion", 1)
 end
 

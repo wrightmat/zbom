@@ -1,8 +1,7 @@
 local enemy = ...
 local map = enemy:get_map()
-
--- Vire Sorceror (Boss of Mausoleum): creates Vires and Fire Keese
-
+local vulnerable = false
+local timers = {}
 -- Possible positions where he appears.
 local positions = {
   {x = 1576, y = 128, direction4 = 3},
@@ -12,23 +11,18 @@ local positions = {
   {x = 1584, y = 64, direction4 = 3}
 }
 
-local vulnerable = false
-local timers = {}
+-- Vire Sorceror (Boss of Mausoleum): creates Vires and Fire Keese.
 
 function enemy:on_created()
-  self:set_life(8)
-  self:set_damage(2)
-  self:create_sprite("enemies/vire_sorceror")
-  self:set_size(32, 32)
-  self:set_origin(16, 19)
+  self:set_life(8); self:set_damage(2)
+  local sprite = self:create_sprite("enemies/vire_sorceror")
+  self:set_size(32, 32); self:set_origin(16, 19)
   self:set_hurt_style("boss")
   self:set_attack_consequence("arrow", "protected")
   self:set_attack_consequence("hookshot", "protected")
   self:set_attack_consequence("boomerang", "protected")
   self:set_pushed_back_when_hurt(true)
   self:set_push_hero_on_sword(false)
-
-  local sprite = self:get_sprite()
   sprite:set_animation("immobilized")
 end
 

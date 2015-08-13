@@ -1,21 +1,18 @@
 local enemy = ...
-
--- Vire: Flying enemy which also creates and controls Keese
-
 local going_hero = false
 local timer
 
+-- Vire: Flying enemy which also creates and controls Keese
+
 function enemy:on_created()
-  self:set_life(3)
-  self:set_damage(2)
+  self:set_life(3); self:set_damage(2)
   self:create_sprite("enemies/vire")
+  self:set_size(24, 16); self:set_origin(12, 13)
   self:set_hurt_style("monster")
   self:set_pushed_back_when_hurt(true)
   self:set_push_hero_on_sword(false)
   self:set_obstacle_behavior("flying")
   self:set_layer_independent_collisions(true)
-  self:set_size(24, 16)
-  self:set_origin(12, 13)
 end
 
 function enemy:on_restarted()

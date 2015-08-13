@@ -1,21 +1,18 @@
 local enemy = ...
-
--- Poe: Small flying ghosts
-
 local going_hero = false
 local timer
 
+-- Poe: Small flying ghost.
+
 function enemy:on_created()
-  self:set_life(2)
-  self:set_damage(2)
+  self:set_life(2); self:set_damage(2)
   self:create_sprite("enemies/poe")
+  self:set_size(16, 16); self:set_origin(8, 13)
   self:set_hurt_style("monster")
   self:set_pushed_back_when_hurt(true)
   self:set_push_hero_on_sword(false)
   self:set_obstacle_behavior("flying")
   self:set_layer_independent_collisions(true)
-  self:set_size(16, 16)
-  self:set_origin(8, 13)
 end
 
 function enemy:on_movement_changed(movement)

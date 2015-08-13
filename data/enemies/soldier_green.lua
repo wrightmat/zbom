@@ -1,23 +1,21 @@
 local enemy = ...
 
--- Simple green soldier: a stupid soldier with a small sword
--- who goes in a random direction.
+-- Simple green soldier: a stupid soldier with a small sword who goes in a random direction.
 -- Unlike the normal green soldier, he cannot see or follow the hero.
 
-enemy:set_life(2)
-enemy:set_damage(2)
-enemy:set_size(16, 16)
-enemy:set_origin(8, 13)
+function enemy:on_created()
+  self:set_life(2); self:set_damage(2)
+  local sprite = enemy:create_sprite("enemies/soldier_green")
+  self:set_size(16, 16); self:set_origin(8, 13)
 
-local sprite = enemy:create_sprite("enemies/soldier_green")
-function sprite:on_animation_finished(animation)
-  -- If the enemy was stopped and looking to a direction, go to that direction.
-  local direction = self:get_direction()
-  if animation == "stopped_watching_left" then
-    enemy:go((direction + 1) % 4)
-  elseif animation == "stopped_watching_right" then
-    enemy:go((direction + 3) % 4)
-  end
+  function sprite:on_animation_finished(animation)
+    -- If the enemy was stopped and looking to a direction, go to that direction.
+    local direction = self:get_direction()
+    if animation == "stopped_watching_left" then
+      enemy:go((direction + 1) % 4)
+    elseif animation == "stopped_watching_right" then
+      enemy:go((direction + 3) % 4)
+    end
 end
 
 -- The enemy was stopped for some reason and should restart.

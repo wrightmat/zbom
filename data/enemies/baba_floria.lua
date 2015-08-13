@@ -6,11 +6,9 @@ local in_ground = false
 local shoot_timer
 
 function enemy:on_created()
-  self:set_life(4)
-  self:set_damage(4)
+  self:set_life(4); self:set_damage(4)
   self:create_sprite("enemies/baba_floria")
-  self:set_size(24, 32)
-  self:set_origin(12, 29)
+  self:set_size(24, 32); self:set_origin(12, 29)
   self:set_pushed_back_when_hurt(false)
   self:set_attack_consequence("sword", "custom")
   self:set_attack_consequence("arrow", "custom")
@@ -25,7 +23,7 @@ function enemy:shoot()
   local d = self:get_sprite():get_direction()
   shoot_timer = sol.timer.start(self, 100, function()
     local seed = self:create_enemy{
-      breed = "baba_seed",
+      breed = "projectiles/baba_seed",
       direction = d
     }
     sol.timer.start(self, 2000, function()

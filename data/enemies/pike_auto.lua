@@ -1,16 +1,12 @@
 local enemy = ...
-
--- Pike that always moves, horizontally or vertically
--- depending on its direction.
-
 local recent_obstacle = 0
 
+-- Pike that always moves, horizontally or vertically depending on its direction.
+
 function enemy:on_created()
-  self:set_life(1)
-  self:set_damage(4)
+  self:set_life(1); self:set_damage(4)
   self:create_sprite("enemies/pike_auto")
-  self:set_size(16, 16)
-  self:set_origin(8, 13)
+  self:set_size(16, 16); self:set_origin(8, 13)
   self:set_can_hurt_hero_running(true)
   self:set_invincible()
   self:set_attack_consequence("sword", "protected")

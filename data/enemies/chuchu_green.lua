@@ -4,11 +4,9 @@ local enemy = ...
 -- The green variety is the first discovered and easiest in this game.
 
 function enemy:on_created()
-  self:set_life(1)
-  self:set_damage(2)
+  self:set_life(1); self:set_damage(2)
   self:create_sprite("enemies/chuchu_green")
-  self:set_size(16, 16)
-  self:set_origin(8, 13)
+  self:set_size(16, 16); self:set_origin(8, 13)
 end
 
 function enemy:on_restarted()

@@ -1,8 +1,7 @@
 local enemy = ...
+local firing = false
 
 -- Aquadraco: A flying, water-based miniboss who shoots blue flames.
-
-local firing = false
 
 -- Possible positions where he flys to.
 local positions = {
@@ -15,15 +14,13 @@ local positions = {
 }
 
 function enemy:on_created()
-  self:set_life(10)
-  self:set_damage(2)
+  self:set_life(10); self:set_damage(2)
   self:create_sprite("enemies/aquadraco")
+  self:set_size(32, 40); self:set_origin(16, 37)
   self:set_hurt_style("boss")
   self:set_pushed_back_when_hurt(true)
   self:set_push_hero_on_sword(false)
   self:set_obstacle_behavior("flying")
-  self:set_size(32, 40)
-  self:set_origin(16, 37)
 end
 
 function enemy:on_movement_changed(movement)

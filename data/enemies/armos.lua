@@ -1,27 +1,18 @@
 local enemy = ...
-
--- Armos Status: Stationary until hero gets close, then comes to life.
-
 local going_hero = false
 local timer
 
+-- Armos Status: Stationary until hero gets close, then comes to life.
+
 function enemy:on_created()
-  self:set_life(2)
-  self:set_damage(2)
-  self:create_sprite("enemies/armos")
+  self:set_life(2); self:set_damage(2)
+  local sprite = self:create_sprite("enemies/armos")
+  self:set_size(24, 40); self:set_origin(12, 35)
   self:set_hurt_style("monster")
   self:set_pushed_back_when_hurt(true)
   self:set_push_hero_on_sword(true)
-  self:set_size(24, 40)
-  self:set_origin(12, 35)
-  self:get_sprite():set_animation("immobilized")
-  self:set_attack_consequence("sword", "protected")
-  self:set_attack_consequence("arrow", "protected")
-  self:set_attack_consequence("thrown_item", "protected")
-  self:set_attack_consequence("hookshot", "protected")
-  self:set_attack_consequence("boomerang", "protected")
-  self:set_attack_consequence("explosion", "protected")
-  self:set_attack_consequence("fire", "protected")
+  self:set_invincible()
+  sprite:set_animation("immobilized")
 end
 
 function enemy:on_obstacle_reached(movement)

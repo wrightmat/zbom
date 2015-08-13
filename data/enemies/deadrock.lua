@@ -1,16 +1,13 @@
 local enemy = ...
+timer = nil
 
 -- Deadrock: a basic enemy.
 
-timer = nil
-
 function enemy:on_created()
-  self:set_life(6)
-  self:set_damage(2)
+  self:set_life(6); self:set_damage(2)
   self:create_sprite("enemies/deadrock")
-  self:set_size(16, 16)
-  self:set_origin(8, 13)
-  enemy:go_random()
+  self:set_size(16, 16); self:set_origin(8, 13)
+  self:go_random()
 end
 
 function enemy:go_random()

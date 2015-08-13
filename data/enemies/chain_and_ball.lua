@@ -23,11 +23,9 @@ local center_enemy = nil          -- The enemy this chain and ball is attached t
 local center_xy = {x = 0, y = 0}  -- Center point of the circles, relative to the center enemy if any.
 
 function enemy:on_created()
-  self:set_life(1)
-  self:set_damage(3)
+  self:set_life(1); self:set_damage(3)
   self:create_sprite("enemies/chain_and_ball")
-  self:set_size(16, 16)
-  self:set_origin(8, 8)
+  self:set_size(16, 16); self:set_origin(8, 8)
   self:set_invincible()
 
   -- Create a second sprite that stays independent of the enemy.

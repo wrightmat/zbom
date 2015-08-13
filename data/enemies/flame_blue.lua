@@ -3,11 +3,9 @@ local enemy = ...
 -- A blue flame shot by another enemy.
 
 function enemy:on_created()
-  self:set_life(1)
-  self:set_damage(4)
+  self:set_life(1); self:set_damage(4)
   self:create_sprite("enemies/flame_blue")
-  self:set_size(16, 16)
-  self:set_origin(8, 13)
+  self:set_size(16, 16); self:set_origin(8, 13)
   self:set_invincible()
   self:set_obstacle_behavior("flying")
   self:set_layer_independent_collisions(true)

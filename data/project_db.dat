@@ -230,6 +230,7 @@ sprite{ id = "enemies/chuchu_red", description = "Red ChuChu" }
 sprite{ id = "enemies/chuchu_yellow", description = "Yellow ChuChu" }
 sprite{ id = "enemies/crab", description = "Crab" }
 sprite{ id = "enemies/crab_huge", description = "Huge Crab" }
+sprite{ id = "enemies/cucco", description = "Cucco" }
 sprite{ id = "enemies/deadrock", description = "Deadrock" }
 sprite{ id = "enemies/dodongo", description = "Dodongo" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy Killed" }
@@ -249,6 +250,7 @@ sprite{ id = "enemies/hardhat_beetle_blue", description = "Hardhat Beetle, blue"
 sprite{ id = "enemies/hardhat_beetle_red", description = "Hardhat Beetle, red" }
 sprite{ id = "enemies/helmaroc_rex", description = "Helmaroc Rex" }
 sprite{ id = "enemies/helmasaur_red", description = "Helmasaur, red" }
+sprite{ id = "enemies/hinox", description = "Hinox" }
 sprite{ id = "enemies/keese", description = "Keese" }
 sprite{ id = "enemies/keese_dark", description = "Keese, dark" }
 sprite{ id = "enemies/keese_elec", description = "Keese, electric" }
@@ -280,6 +282,7 @@ sprite{ id = "enemies/octolux", description = "Octolux" }
 sprite{ id = "enemies/octorok_blue", description = "Octorok, blue" }
 sprite{ id = "enemies/octorok_red", description = "Octorok, red" }
 sprite{ id = "enemies/peahat", description = "Peahat" }
+sprite{ id = "enemies/pengator", description = "Pengator" }
 sprite{ id = "enemies/pike_auto", description = "Pike, auto" }
 sprite{ id = "enemies/pike_detect", description = "Pike, detect" }
 sprite{ id = "enemies/pike_fixed", description = "Pike, fixed" }
@@ -299,6 +302,7 @@ sprite{ id = "enemies/shadow_link", description = "Shadow Link" }
 sprite{ id = "enemies/skeletor", description = "Skeletor" }
 sprite{ id = "enemies/snap_dragon", description = "Snap dragon" }
 sprite{ id = "enemies/soldier_green", description = "Soldier, green" }
+sprite{ id = "enemies/stal", description = "Stal" }
 sprite{ id = "enemies/stalfos_head", description = "Stalfos Head" }
 sprite{ id = "enemies/stalfos_knight", description = "Stalfos Knight" }
 sprite{ id = "enemies/tektite_blue", description = "Tektite, blue" }
@@ -315,6 +319,7 @@ sprite{ id = "enemies/wizzrobe_beam", description = "Wizzrobe Beam" }
 sprite{ id = "enemies/wizzrobe_fire", description = "Wizzrobe, Fire" }
 sprite{ id = "enemies/wizzrobe_ice", description = "Wizzrobe, Ice" }
 sprite{ id = "enemies/zirna", description = "Zirna" }
+sprite{ id = "enemies/zola", description = "Zola" }
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/bed", description = "Bed" }
 sprite{ id = "entities/bed_snores", description = "Snores" }
@@ -764,7 +769,6 @@ enemy{ id = "armos_big", description = "Armos Statue, Big (laser)" }
 enemy{ id = "arrghus_baby", description = "arrghus_baby" }
 enemy{ id = "arrghus_stone", description = "Stone Arrghus (Miniboss)" }
 enemy{ id = "baba_floria", description = "Baba, Floria" }
-enemy{ id = "baba_seed", description = "baba_seed" }
 enemy{ id = "bari_blue", description = "Bari, Blue" }
 enemy{ id = "bari_mini", description = "bari_mini" }
 enemy{ id = "bari_red", description = "Bari, Red" }
@@ -783,6 +787,7 @@ enemy{ id = "chuchu_red", description = "ChuChu, Red" }
 enemy{ id = "chuchu_yellow", description = "ChuChu, Yellow" }
 enemy{ id = "crab", description = "Crab" }
 enemy{ id = "crab_huge", description = "Huge Crab" }
+enemy{ id = "cucco", description = "Cucco" }
 enemy{ id = "deadrock", description = "Deadrock" }
 enemy{ id = "dodongo", description = "Dodongo" }
 enemy{ id = "evil_tile", description = "Evil Tile" }
@@ -818,7 +823,6 @@ enemy{ id = "leever_green", description = "Leever, Green" }
 enemy{ id = "leever_purple", description = "Leever, Purple" }
 enemy{ id = "lizalfos", description = "Lizalfos" }
 enemy{ id = "lynel", description = "Lynel" }
-enemy{ id = "lynel_fire", description = "Lynel (fire shot)" }
 enemy{ id = "manhandla", description = "Manhandla (Boss)" }
 enemy{ id = "moblin", description = "Moblin" }
 enemy{ id = "moth", description = "Moth" }
@@ -835,6 +839,7 @@ enemy{ id = "plasmarine_blue", description = "Plasmarine, Blue (Boss)" }
 enemy{ id = "plasmarine_red", description = "Plasmarine, Red (Boss)" }
 enemy{ id = "poe", description = "Poe" }
 enemy{ id = "poe_big", description = "Big Poe (Boss)" }
+enemy{ id = "projectiles/baba_seed", description = "Baba Seed" }
 enemy{ id = "projectiles/beam_particle", description = "Beam Particle" }
 enemy{ id = "projectiles/lynel_fire", description = "Lynel Fireball" }
 enemy{ id = "projectiles/plasmarine_ball", description = "Plasmarine Electicity Ball" }
@@ -843,14 +848,13 @@ enemy{ id = "projectiles/rock_small", description = "Octoroc Rock" }
 enemy{ id = "projectiles/wizzrobe_beam", description = "Wizzrobe Beam" }
 enemy{ id = "rat", description = "Rat" }
 enemy{ id = "redead", description = "ReDead" }
-enemy{ id = "rock_lux", description = "Lux rock" }
-enemy{ id = "rock_small", description = "Small rock" }
 enemy{ id = "ropa", description = "Ropa" }
 enemy{ id = "rope", description = "Rope" }
 enemy{ id = "shadow_link", description = "Shadow Link (Miniboss)" }
 enemy{ id = "skeletor", description = "Skeletor" }
 enemy{ id = "snap_dragon", description = "Snap Dragon" }
 enemy{ id = "soldier_green", description = "Soldier, Green" }
+enemy{ id = "stal", description = "Stal" }
 enemy{ id = "stalfos_knight", description = "Stalfos Knight (Boss)" }
 enemy{ id = "tektite_blue", description = "Tektite, Blue" }
 enemy{ id = "tektite_green", description = "Tektite, Green" }
@@ -862,10 +866,10 @@ enemy{ id = "vire_sorceror", description = "Vire Sorceror (Boss)" }
 enemy{ id = "wallmaster", description = "Wallmaster" }
 enemy{ id = "whirlwind", description = "Whirlwind" }
 enemy{ id = "wizzrobe", description = "Wizzrobe" }
-enemy{ id = "wizzrobe_beam", description = "Wizzrobe Beam" }
 enemy{ id = "wizzrobe_fire", description = "Wizzrobe, Fire" }
 enemy{ id = "wizzrobe_ice", description = "Wizzrobe, Ice" }
 enemy{ id = "zirna", description = "Zirna (Dark Interloper)" }
+enemy{ id = "zola", description = "Zola" }
 
 entity{ id = "butterfly", description = "Butterfly" }
 entity{ id = "ice_block", description = "Ice Block" }

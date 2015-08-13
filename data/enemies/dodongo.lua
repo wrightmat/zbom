@@ -3,11 +3,9 @@ local enemy = ...
 -- Dodongo
 
 function enemy:on_created()
-  self:set_life(2)
-  self:set_damage(2)
+  self:set_life(2); self:set_damage(2)
   self:create_sprite("enemies/dodongo")
-  self:set_size(48, 48)
-  self:set_origin(24, 29)
+  self:set_size(48, 48); self:set_origin(24, 29)
   self:set_attack_consequence("sword", "protected")
   self:set_attack_consequence("arrow", "protected")
 end

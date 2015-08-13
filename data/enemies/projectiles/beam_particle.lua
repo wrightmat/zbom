@@ -1,8 +1,8 @@
 local enemy = ...
-
--- Default parameters of the beam particle.
 local particle_sprite = "enemies/beamos_particle"
 local damage = 1
+
+-- Default parameters of the beam particle.
 
 function enemy:on_created(properties)
   -- Get properties and target coordinates.
@@ -18,6 +18,5 @@ function enemy:on_created(properties)
 end
 
 function enemy:explode()
-  -- (SHOW AN EXPLOSION ANIMATION HERE + SOUND).
   self:remove()
 end
