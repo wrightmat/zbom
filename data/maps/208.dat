@@ -5200,8 +5200,8 @@ custom_entity{
   x = 72,
   y = 400,
   direction = 3,
-  sprite = "entities/somaria_pit",
-  model = "somaria_pit",
+  sprite = "entities/ice_pit",
+  model = "ice_pit",
 }
 
 custom_entity{
@@ -5210,8 +5210,8 @@ custom_entity{
   x = 88,
   y = 400,
   direction = 3,
-  sprite = "entities/somaria_pit",
-  model = "somaria_pit",
+  sprite = "entities/ice_pit",
+  model = "ice_pit",
 }
 
 chest{
@@ -6065,6 +6065,55 @@ destructible{
   treasure_variant = 2,
   sprite = "entities/pot",
   destruction_sound = "stone",
+}
+
+enemy{
+  name = "room5_pengator_1",
+  layer = 0,
+  x = 840,
+  y = 1181,
+  direction = 3,
+  breed = "pengator",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "room5_pengator_2",
+  layer = 0,
+  x = 856,
+  y = 1365,
+  direction = 3,
+  breed = "pengator",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "room10_pengator_1",
+  layer = 0,
+  x = 808,
+  y = 685,
+  direction = 3,
+  breed = "pengator",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "room10_pengator_2",
+  layer = 0,
+  x = 864,
+  y = 597,
+  direction = 3,
+  breed = "pengator",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "wallmaster",
+  layer = 0,
+  x = 568,
+  y = 621,
+  direction = 0,
+  breed = "wallmaster",
 }
 
 wall{

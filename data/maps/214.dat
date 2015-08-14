@@ -6792,6 +6792,24 @@ sensor{
   height = 32,
 }
 
+enemy{
+  name = "beamos_1",
+  layer = 0,
+  x = 416,
+  y = 325,
+  direction = 0,
+  breed = "beamos",
+}
+
+enemy{
+  name = "beamos_2",
+  layer = 0,
+  x = 496,
+  y = 325,
+  direction = 0,
+  breed = "beamos",
+}
+
 tile{
   layer = 2,
   x = 192,

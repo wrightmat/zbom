@@ -4,7 +4,7 @@ local behavior = require("enemies/generic/toward_hero")
 -- Skeletor.
 
 local properties = {
-  sprite = "enemies/zola",
+  sprite = "enemies/skeletor",
   life = 3,
   damage = 2,
 }

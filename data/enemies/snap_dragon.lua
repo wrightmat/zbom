@@ -1,11 +1,12 @@
 local enemy = ...
 local timer
+local sprite
 
 -- Snap Dragon.
 
 function enemy:on_created()
   self:set_life(3); self:set_damage(4)
-  self:create_sprite("enemies/snap_dragon")
+  sprite = self:create_sprite("enemies/snap_dragon")
   self:set_size(16, 16); self:set_origin(8, 13)
   self:set_hurt_style("monster")
 end
@@ -47,11 +48,12 @@ function enemy:go_random()
   end
   timer = sol.timer.start(self, 300 + math.random(1500), function()
     sprite:set_animation("bite")
-  end)
-end
 
-function sprite:on_animation_finished(animation)
-  if animation == "bite" then
-    self:set_animation("walking")
-  end
+    function sprite:on_animation_finished(animation)
+      if animation == "bite" then
+        self:set_animation("walking")
+      end
+    end
+
+  end)
 end

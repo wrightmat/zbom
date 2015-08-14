@@ -6242,24 +6242,6 @@ enemy{
 }
 
 enemy{
-  name = "laser_1",
-  layer = 0,
-  x = 376,
-  y = 464,
-  direction = 3,
-  breed = "laser",
-}
-
-enemy{
-  name = "laser_2",
-  layer = 0,
-  x = 536,
-  y = 464,
-  direction = 3,
-  breed = "laser",
-}
-
-enemy{
   name = "bubble_2",
   layer = 0,
   x = 704,
@@ -6681,7 +6663,7 @@ wall{
 wall{
   layer = 0,
   x = 360,
-  y = 464,
+  y = 456,
   width = 32,
   height = 8,
   stops_enemies = true,
@@ -6690,7 +6672,7 @@ wall{
 wall{
   layer = 0,
   x = 520,
-  y = 464,
+  y = 456,
   width = 32,
   height = 8,
   stops_enemies = true,

@@ -3,13 +3,13 @@ local map = entity:get_map()
 local pushing = false
 local block_on_switch = false
 
--- Ice block: special block made of ice that can fill a
--- somaria pit, turn lava solid, and possibly other things.
+-- Ice block: special block made of ice that can fill an
+-- ice pit, turn lava solid, and freeze water.
 
 function entity:on_created()
   self:set_size(16, 16)
   self:snap_to_grid()
-  self:set_modified_ground("ice") --is this useful?
+  self:set_modified_ground("ice")
   self:set_traversable_by("hero", false)
   self:set_traversable_by("custom_entity", true) --to allow pushing block into pit
   self:create_sprite("entities/ice_block")
@@ -90,5 +90,5 @@ function entity:on_created()
 end
 
 function entity:on_removed()
-  --melting animation
+  self:get_sprite():set_animation("destroy")
 end

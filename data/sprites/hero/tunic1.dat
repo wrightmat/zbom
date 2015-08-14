@@ -124,6 +124,17 @@ animation{
   },
 }
 animation{
+  name = "hammer",
+  src_image = "hero/hammer.tunic.png",
+  frame_delay = 50,
+  directions = {
+    { x = 0, y = 0, frame_width = 64, frame_height = 40, origin_x = 32, origin_y = 29, num_frames = 7 },
+    { x = 0, y = 40, frame_width = 64, frame_height = 40, origin_x = 32, origin_y = 29, num_frames = 7 },
+    { x = 0, y = 80, frame_width = 64, frame_height = 40, origin_x = 32, origin_y = 29, num_frames = 7 },
+    { x = 0, y = 120, frame_width = 64, frame_height = 40, origin_x = 32, origin_y = 29, num_frames = 7 },
+  },
+}
+animation{
   name = "hookshot",
   src_image = "hero/hookshot.tunic.png",
   directions = {

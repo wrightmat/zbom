@@ -1,14 +1,14 @@
 local enemy = ...
-local behavior = require("enemies/generic/soldier")
+local behavior = require("enemies/generic/toward_hero")
 
 -- Moblin.
 
 local properties = {
-  main_sprite = "enemies/moblin",
+  sprite = "enemies/moblin",
   life = 8,
   damage = 3,
   normal_speed = 40,
-  faster_speed = 48,
+  faster_speed = 48
 }
 
 behavior:create(enemy, properties)

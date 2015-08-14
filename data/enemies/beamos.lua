@@ -20,41 +20,44 @@ function enemy:on_created()
 end
 
 function enemy:on_restarted()
+  self:get_sprite():set_animation("shaking")
   -- Start throwing beam particles.
   local properties = {particle_sprite = particle_sprite, damage = damage, breed = "projectiles/beam_particle"}
   local particles = particles_per_beam
   -- Function used to shoot a beam.
   local function shoot(tx, ty)
     -- Create new particle.
-	local e = enemy:create_enemy(properties)
-	-- Create movement. Destroy enemy when the movement ends.
+    local e = enemy:create_enemy(properties)
+    sol.audio.play_sound("beamos")
+    -- Create movement. Destroy enemy when the movement ends.
     local m = sol.movement.create("target")
     m:set_target(tx, ty); m:set_speed(speed)
     function m:on_finished() e:explode() end
     function m:on_obstacle_reached() e:explode() end
     m:start(e)
     -- Stop creating particles if necessary.
-	particles = particles -1
+    particles = particles -1
     if particles <= 0 then enemy:stop_firing(); return 
-	else
-	  sol.timer.start(enemy, time_between_particles, function()
-	    shoot(tx, ty)
-	  end)
-	end
+    else
+      sol.timer.start(enemy, time_between_particles, function()
+        shoot(tx, ty)
+      end)
+    end
   end
   -- Check if hero is close to shoot.
   sol.timer.start(enemy, 50, function()
     local tx, ty, _ = enemy:get_map():get_hero():get_position()
-	if enemy:get_distance(tx, ty) < max_distance then
-	  shoot(tx, ty)
-	  return false -- Stop timer.
-	end
-	return true
+    if enemy:get_distance(tx, ty) < max_distance then
+      shoot(tx, ty)
+      return false -- Stop timer.
+    end
+    return true
   end)
 end
 
 -- Function to stop firing for a while.
 function enemy:stop_firing()
+  self:get_sprite():set_animation("walking")
   sol.timer.stop_all(enemy)
   sol.timer.start(enemy, stop_time, function() enemy:on_restarted() end)
 end

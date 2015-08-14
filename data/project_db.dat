@@ -214,6 +214,8 @@ sprite{ id = "enemies/bari_blue", description = "Blue Bari" }
 sprite{ id = "enemies/bari_mini", description = "Mini Bari" }
 sprite{ id = "enemies/bari_red", description = "Red Bari" }
 sprite{ id = "enemies/beamos", description = "Beamos" }
+sprite{ id = "enemies/beamos_laser", description = "Beamos Laser" }
+sprite{ id = "enemies/beamos_particle", description = "Beamos Particle" }
 sprite{ id = "enemies/boulder", description = "Boulder" }
 sprite{ id = "enemies/bubble_blue", description = "Blue Bubble" }
 sprite{ id = "enemies/bubble_green", description = "Green Bubble" }
@@ -266,7 +268,6 @@ sprite{ id = "enemies/knight_red_sword", description = "Knight, red (sword)" }
 sprite{ id = "enemies/lanmola", description = "Lanmola (head)" }
 sprite{ id = "enemies/lanmola_body", description = "Lanmola (body)" }
 sprite{ id = "enemies/lanmola_tail", description = "Lanmola (tail)" }
-sprite{ id = "enemies/laser", description = "Laser Beam" }
 sprite{ id = "enemies/leever_green", description = "Leever, green" }
 sprite{ id = "enemies/leever_purple", description = "Leever, purple" }
 sprite{ id = "enemies/lizalfos", description = "Lizalfos" }
@@ -330,7 +331,6 @@ sprite{ id = "entities/bomb_flower", description = "Bomb Flower" }
 sprite{ id = "entities/boomerang1", description = "Boomerang 1" }
 sprite{ id = "entities/boomerang2", description = "Boomerang 2" }
 sprite{ id = "entities/bush", description = "Bush" }
-sprite{ id = "entities/cannon", description = "Cannon" }
 sprite{ id = "entities/chest", description = "Chest (normal)" }
 sprite{ id = "entities/chest_big", description = "Chest (big)" }
 sprite{ id = "entities/conveyor", description = "Conveyor (Arrows)" }
@@ -360,6 +360,7 @@ sprite{ id = "entities/hammer_stake", description = "Hammer Stake" }
 sprite{ id = "entities/hint_stone", description = "Hint stone" }
 sprite{ id = "entities/hookshot", description = "Hookshot" }
 sprite{ id = "entities/ice_block", description = "Ice Block" }
+sprite{ id = "entities/ice_pit", description = "Ice Pit (Cane)" }
 sprite{ id = "entities/items", description = "(Items)" }
 sprite{ id = "entities/mailbox", description = "Mailbox" }
 sprite{ id = "entities/mine", description = "Mine" }
@@ -374,7 +375,6 @@ sprite{ id = "entities/sign", description = "Sign" }
 sprite{ id = "entities/sign_stone", description = "Sign, stone" }
 sprite{ id = "entities/slot_machine", description = "Slot Machine" }
 sprite{ id = "entities/soil", description = "Soil (shovel)" }
-sprite{ id = "entities/somaria_pit", description = "Somaria Pit (Cane)" }
 sprite{ id = "entities/star", description = "Star" }
 sprite{ id = "entities/statue", description = "Statue" }
 sprite{ id = "entities/statue_castle", description = "Castle Statue (Armament)" }
@@ -404,6 +404,7 @@ sprite{ id = "entities/torch_metal", description = "Metal torch" }
 sprite{ id = "entities/torch_wood", description = "Wooden torch" }
 sprite{ id = "entities/tower_wind_base", description = "Tower of Wind (base)" }
 sprite{ id = "entities/tower_wind_top", description = "Tower of Wind (top)" }
+sprite{ id = "entities/warp_appears", description = "Warp Appears" }
 sprite{ id = "hero/ground1", description = "Hero: Ground 1 (grass)" }
 sprite{ id = "hero/ground2", description = "Hero: Ground 2 (water)" }
 sprite{ id = "hero/shield1", description = "Hero: Shield 1" }
@@ -578,6 +579,7 @@ music{ id = "underground", description = "Underground" }
 music{ id = "zora", description = "Zora's Domain" }
 
 sound{ id = "arrow_hit", description = "arrow_hit" }
+sound{ id = "beamos", description = "beamos" }
 sound{ id = "bomb", description = "bomb" }
 sound{ id = "boomerang", description = "boomerang" }
 sound{ id = "boss_charge", description = "boss_charge" }
@@ -819,7 +821,6 @@ enemy{ id = "knight_chain_ball", description = "Knight, Chain and Ball" }
 enemy{ id = "knight_green", description = "Knight, Green" }
 enemy{ id = "knight_red", description = "Knight, Red" }
 enemy{ id = "lanmola", description = "Lanmola (Miniboss)" }
-enemy{ id = "laser", description = "Laser Beam" }
 enemy{ id = "leever_green", description = "Leever, Green" }
 enemy{ id = "leever_purple", description = "Leever, Purple" }
 enemy{ id = "lizalfos", description = "Lizalfos" }
@@ -874,7 +875,9 @@ enemy{ id = "zirna", description = "Zirna (Dark Interloper)" }
 enemy{ id = "zola", description = "Zola" }
 
 entity{ id = "butterfly", description = "Butterfly" }
+entity{ id = "hammer_stake", description = "Hammer Stake" }
 entity{ id = "ice_block", description = "Ice Block" }
+entity{ id = "ice_pit", description = "Ice Pit" }
 entity{ id = "mailbox", description = "Mailbox" }
 entity{ id = "npc_crista", description = "NPC: Crista (Ordon)" }
 entity{ id = "npc_julita", description = "NPC: Julita (Ordon)" }
@@ -882,7 +885,6 @@ entity{ id = "npc_pim", description = "NPC: Pim (Ordon)" }
 entity{ id = "platform", description = "Moving Platform" }
 entity{ id = "quicksand", description = "Quicksand (Lakebed)" }
 entity{ id = "soil", description = "Soft soil (Shovel)" }
-entity{ id = "somaria_pit", description = "Somaria Pit (Cane)" }
 entity{ id = "statue_goron", description = "Goron Statue (Mausoleum)" }
 entity{ id = "stone_pile", description = "Stone pile" }
 entity{ id = "switch_lever", description = "Switch, Lever" }

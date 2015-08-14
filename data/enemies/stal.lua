@@ -1,9 +1,9 @@
 local enemy = ...
+local behavior = require("enemies/generic/waiting_hero")
 
 -- Stal: small skull which can only be destroyed with the hammer.
 
-sol.main.load_file("enemies/generic/waiting_hero")(enemy)
-enemy:set_properties({
+local properties = {
   sprite = "enemies/stal",
   life = 1,
   damage = 2,
@@ -18,7 +18,8 @@ enemy:set_properties({
     local m = sol.movement.create("target")
     return m
   end
-})
+}
+behavior:create(enemy, properties)
 
 enemy:set_invincible()
---enemy:set_hammer_reaction(1)
+enemy:set_hammer_reaction(1)

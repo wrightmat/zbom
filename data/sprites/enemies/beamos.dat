@@ -13,13 +13,6 @@ animation{
   },
 }
 animation{
-  name = "beam",
-  src_image = "enemies/beamos.png",
-  directions = {
-    { x = 16, y = 0, frame_width = 8, frame_height = 8, origin_x = 8, origin_y = 13 },
-  },
-}
-animation{
   name = "hurt",
   src_image = "enemies/beamos.png",
   directions = {

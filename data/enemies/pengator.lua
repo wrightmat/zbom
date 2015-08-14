@@ -4,11 +4,11 @@ local behavior = require("enemies/generic/toward_hero")
 -- Pengator.
 
 local properties = {
-  main_sprite = "enemies/pengator",
+  sprite = "enemies/pengator",
   life = 4,
   damage = 4,
-  normal_speed = 40,
-  faster_speed = 64,
+  normal_speed = 32,
+  faster_speed = 48
 }
 
 behavior:create(enemy, properties)
