@@ -18,6 +18,10 @@ function map:on_started(destination)
 end
 
 function npc_anouki_2:on_interaction()
-  game:start_dialog("anouki_2."..anouki_talk..".snowpeak")
-  if anouki_talk == 0 then anouki_talk = 1 else anouki_talk = 0 end
+  if game:get_value("b1150") then
+    game:start_dialog("anouki_2.3.snowpeak")
+  else
+    game:start_dialog("anouki_2."..anouki_talk..".snowpeak")
+    if anouki_talk == 0 then anouki_talk = 1 else anouki_talk = 0 end
+  end
 end

@@ -8,15 +8,16 @@ local grabbed_hero
 -- Wallmaster: Falling hand that teleports the hero back to the entrance.
 
 function enemy:on_created()
-  self:set_life(1); self:set_damage(0)
+  self:set_life(10); self:set_damage(0)
   sprite = self:create_sprite("enemies/wallmaster")
   self:set_size(16, 16); self:set_origin(8, 13)
   self:set_obstacle_behavior("flying")
   self:set_can_hurt_hero_running(true)
   self:set_layer_independent_collisions(true)
   self:set_optimization_distance(0)
-  self:set_invincible()
   sprite:set_animation("sleeping")
+  self:set_pushed_back_when_hurt(false)
+  self:set_attack_consequence("arrow", 5)
 end
 
 function enemy:on_restarted()
@@ -26,7 +27,7 @@ function enemy:on_restarted()
   grabbed_hero = false
   sprite:set_animation("sleeping")
 
-  sol.timer.start(enemy, 5000, function()
+  sol.timer.start(enemy, math.random(10)*2000, function()
     if not enemy:is_in_same_region(hero) then
       return true
     end
@@ -83,7 +84,6 @@ end
 
 -- Function called when overlapping the hero.
 function enemy:on_attacking_hero(hero, enemy_sprite)
-
   local movement = sprite:get_movement()
   if movement ~= nil and movement:get_speed() ~= 0 then
     -- Currently moving: don't grab the hero now.
@@ -106,7 +106,6 @@ function enemy:on_attacking_hero(hero, enemy_sprite)
   end
 
   -- Teleport the hero.
-  -- TODO if teleporting to the same map, the map is not reset, take care of separator regions
   grabbed_hero = true
   hero:freeze()
   hero:set_invincible(true, 500)

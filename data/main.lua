@@ -282,8 +282,8 @@ function sol.language.get_book_font(language)
   local font, size
   if language == "zh_TW" or language == "zh_CN" then
     -- Chinese font.
-    font = "wqy-microhei"
-    size = 12
+    --font = "wqy-microhei"
+    --size = 12
   else
     font = "bom"
     size = 14

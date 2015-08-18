@@ -4962,7 +4962,7 @@ wall{
   layer = 0,
   x = 80,
   y = 120,
-  width = 112,
+  width = 320,
   height = 8,
   stops_enemies = true,
 }
@@ -4971,25 +4971,7 @@ wall{
   layer = 0,
   x = 80,
   y = 304,
-  width = 112,
-  height = 8,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 288,
-  y = 304,
-  width = 112,
-  height = 8,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 288,
-  y = 120,
-  width = 112,
+  width = 320,
   height = 8,
   stops_enemies = true,
 }
@@ -4997,24 +4979,6 @@ wall{
 wall{
   layer = 0,
   x = 72,
-  y = 128,
-  width = 8,
-  height = 176,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 184,
-  y = 128,
-  width = 8,
-  height = 176,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 288,
   y = 128,
   width = 8,
   height = 176,

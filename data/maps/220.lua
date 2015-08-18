@@ -1,10 +1,14 @@
 local map = ...
 local game = map:get_game()
 
+local cEmitter = require("scripts/particle_emitter")
+sol.main.load_file("scripts/particles/test.lua")(game)
+
 function map:on_started()
-  enemy:set_enabled(false)
+  local emitter = cEmitter:new(partTest)
+  emitter:start()
 end
 
-function sensor:on_activated()
-  enemy:set_enabled(true)
+function map:on_update()
+  --emitter:play(event.deltaTime,mx,my,override)
 end

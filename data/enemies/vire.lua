@@ -54,7 +54,7 @@ function enemy:check_hero()
 end
 
 function enemy:go_random()
-  self:get_sprite():set_animation("walking")
+  if sprite == "enemies/vire" then self:get_sprite():set_animation("walking") end
   local m = sol.movement.create("circle")
   m:set_radius(32)
   m:set_radius_speed(48)

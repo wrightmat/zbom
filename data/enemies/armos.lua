@@ -17,13 +17,12 @@ end
 
 function enemy:on_obstacle_reached(movement)
   if not going_hero then
-    self:stop()
+    self:stop(movement)
     self:check_hero()
   end
 end
 
 function enemy:on_restarted()
-  self:stop()
   self:check_hero()
 end
 
@@ -38,23 +37,22 @@ function enemy:check_hero()
   local hero = self:get_map():get_entity("hero")
   local _, _, layer = self:get_position()
   local _, _, hero_layer = hero:get_position()
-  local near_hero = layer == hero_layer
-    and self:get_distance(hero) < 100
+  local near_hero = layer == hero_layer and self:get_distance(hero) < 100
 
   if near_hero and not going_hero then
     self:go_hero()
   elseif not near_hero and going_hero then
-    self:stop(movement)
+    self:stop(self:get_movement())
   end
   timer = sol.timer.start(self, 2000, function() self:check_hero() end)
 end
 
-function enemy:stop()
+function enemy:stop(movement)
   self:set_attack_consequence("arrow", "protected")
   self:set_can_attack(false)
   self:set_can_hurt_hero_running(false)
   self:get_sprite():set_animation("immobilized")
-  --movement:stop(self)
+  movement:stop(self)
   going_hero = false
 end
 

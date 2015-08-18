@@ -3,13 +3,13 @@ local game = ...
 -- This script handles global properties of a particular savegame.
 
 -- Include the various game features.
-sol.main.load_file("hud/hud")(game)
 sol.main.load_file("menus/pause")(game)
 sol.main.load_file("menus/game_over")(game)
 sol.main.load_file("menus/dialog_box")(game)
+sol.main.load_file("scripts/hud/hud")(game)
 sol.main.load_file("scripts/dungeons")(game)
 sol.main.load_file("scripts/equipment")(game)
-sol.main.load_file("scripts/particles")(game)
+sol.main.load_file("scripts/particle_emitter")(game)
 local camera_manager = require("scripts/camera_manager")
 local condition_manager = require("scripts/hero_condition")
 

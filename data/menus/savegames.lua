@@ -255,7 +255,7 @@ function savegame_menu:read_savegames()
       slot.player_name_text:set_text(slot.savegame:get_value("player_name"))
 
       -- Hearts.
-      local hearts_class = require("hud/hearts")
+      local hearts_class = require("scripts/hud/hearts")
       slot.hearts_view = hearts_class:new(slot.savegame)
     else
       -- New file.

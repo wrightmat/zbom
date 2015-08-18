@@ -5,7 +5,7 @@ local behavior = require("enemies/generic/toward_hero")
 
 local properties = {
   sprite = "enemies/ropa",
-  life = 6,
+  life = 8,
   damage = 4,
   normal_speed = 32,
   faster_speed = 40,

@@ -118,7 +118,7 @@ function enemy:on_custom_attack_received(attack, sprite)
       sol.audio.play_sound("enemy_awake")
       self:get_sprite():set_animation("immobilized")
       self:set_attack_consequence("explosion", 1)
-      attack_timer = sol.timer.start(self, 8000, function()
+      attack_timer = sol.timer.start(self, 10000, function()
         vulnerable = false
         sol.audio.play_sound("hero_pushes")
         self:set_attack_consequence("explosion", "ignored")

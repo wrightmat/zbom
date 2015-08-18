@@ -10,6 +10,8 @@ function entity:on_created()
   self:set_size(16, 16)
   self:snap_to_grid()
   self:set_modified_ground("ice")
+  self:set_can_traverse("wall", false)
+  self:set_can_traverse("dynamic_tile", true)
   self:set_traversable_by("hero", false)
   self:set_traversable_by("custom_entity", true) --to allow pushing block into pit
   self:create_sprite("entities/ice_block")
@@ -41,13 +43,13 @@ function entity:on_created()
       self:remove()
       if (sy < lpy + 32 or sy > lpy - 32) then
 	if map:get_hero():get_direction() == 3 then
-          crust = map:create_dynamic_tile({ x = sx-16, y = sy, layer = sl, width = 32, height = 32, pattern = "lava_crust", enabled_at_start = true })
+          crust = map:create_dynamic_tile({x=sx-16,y=sy,layer=sl,width=32,height=32,pattern="lava_crust",enabled_at_start=true})
 	elseif map:get_hero():get_direction() == 1 then
-          crust = map:create_dynamic_tile({ x = sx-16, y = sy-48, layer = sl, width = 32, height = 32, pattern = "lava_crust", enabled_at_start = true })
+          crust = map:create_dynamic_tile({x=sx-16,y=sy-48,layer=sl,width=32,height=32,pattern="lava_crust",enabled_at_start=true})
 	elseif map:get_hero():get_direction() == 0 then
-          crust = map:create_dynamic_tile({ x = sx+8, y = sy-16, layer = sl, width = 32, height = 32, pattern = "lava_crust", enabled_at_start = true })
+          crust = map:create_dynamic_tile({x=sx+8,y=sy-16,layer=sl,width=32,height=32,pattern="lava_crust",enabled_at_start=true})
 	elseif map:get_hero():get_direction() == 2 then
-          crust = map:create_dynamic_tile({ x = sx-40, y = sy-16, layer = sl, width = 32, height = 32, pattern = "lava_crust", enabled_at_start = true })
+          crust = map:create_dynamic_tile({x=sx-40,y=sy-16,layer=sl,width=32,height=32,pattern="lava_crust",enabled_at_start=true})
 	end
         crust:snap_to_grid()
         sol.audio.play_sound("freeze")

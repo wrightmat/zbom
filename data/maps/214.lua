@@ -38,18 +38,21 @@ end
 
 function switch_chest:on_activated()
   chest_key_2:set_enabled(true)
+  sol.audio.play_sounds("chest_appears")
 end
 
 for enemy in map:get_entities("chuchu") do
   enemy.on_dead = function()
     if not map:has_entities("chuchu") then
       warp_chuchu:set_enabled(true)
+      sol.audio.play_sounds("secret")
     end
   end
 end
 
-function map:on_obtained_treasure(treasure_item, treasure_variant, treasure_savegame_variable)
-  if treasure_name == shield then
+function map:on_obtained_treasure(treasure_name, treasure_variant, treasure_savegame_variable)
+  if treasure_name == "shield" then
     hole_item:set_enabled(false)
+    fall_below_2:set_enabled(false)
   end
 end

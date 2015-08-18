@@ -1,8 +1,8 @@
 properties{
   x = 0,
   y = 0,
-  width = 336,
-  height = 320,
+  width = 320,
+  height = 240,
   world = "test_world",
   tileset = "10",
 }
@@ -11,8 +11,8 @@ tile{
   layer = 0,
   x = 0,
   y = 0,
-  width = 336,
-  height = 320,
+  width = 320,
+  height = 240,
   pattern = "22",
 }
 
@@ -44,8 +44,8 @@ pickable{
 enemy{
   layer = 0,
   x = 152,
-  y = 173,
+  y = 125,
   direction = 0,
-  breed = "beamos",
+  breed = "zola",
 }
 

@@ -9,6 +9,7 @@ function map:on_started(destination)
   map:set_doors_open("door_miniboss")
   if miniboss_chu ~= nil then miniboss_chu:set_enabled(false) end
   if not game:get_value("b1144") then chest_big_key:set_enabled(false) end
+  if not game:get_value("b1151") then chest_key_1:set_enabled(false) end
 end
 
 function sensor_miniboss:on_activated()
@@ -28,6 +29,15 @@ if miniboss_chu ~= nil then
       chest_big_key:set_enabled(true)
       sol.audio.play_sound("chest_appears")
     end)
+  end
+end
+
+for enemy in map:get_entities("room5_enemy") do
+  enemy.on_dead = function()
+    if not map:has_entities("room5_enemy") and not game:get_value("b1151") then
+      chest_key_1:set_enabled(true)
+      sol.audio.play_sound("chest_appears")
+    end
   end
 end
 

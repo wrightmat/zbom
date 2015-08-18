@@ -5922,6 +5922,52 @@ tile{
   pattern = "95",
 }
 
+door{
+  name = "door_key2_1",
+  layer = 0,
+  x = 696,
+  y = 1576,
+  direction = 0,
+  sprite = "entities/door_small_key",
+  savegame_variable = "b1154",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_6_small_keys",
+  opening_condition_consumed = true,
+  cannot_open_dialog = "_small_key_required",
+}
+
+door{
+  name = "door_key2_2",
+  layer = 0,
+  x = 744,
+  y = 1576,
+  direction = 2,
+  sprite = "entities/door_small_key",
+  savegame_variable = "b1154",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_6_small_keys",
+  opening_condition_consumed = true,
+  cannot_open_dialog = "_small_key_required",
+}
+
+sensor{
+  name = "sensor_save_ground",
+  layer = 0,
+  x = 760,
+  y = 1581,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "sensor_reset_ground",
+  layer = 0,
+  x = 696,
+  y = 1581,
+  width = 16,
+  height = 32,
+}
+
 wall{
   layer = 0,
   x = 568,
@@ -6444,7 +6490,7 @@ dynamic_tile{
 }
 
 enemy{
-  name = "hardhat_6",
+  name = "room7_hardhat_1",
   layer = 0,
   x = 872,
   y = 781,
@@ -6454,7 +6500,7 @@ enemy{
 }
 
 enemy{
-  name = "hardhat_7",
+  name = "room7_hardhat_2",
   layer = 0,
   x = 912,
   y = 869,
@@ -6464,7 +6510,7 @@ enemy{
 }
 
 enemy{
-  name = "hardhat_8",
+  name = "room7_hardhat_3",
   layer = 0,
   x = 856,
   y = 973,
@@ -6569,7 +6615,7 @@ wall{
 }
 
 enemy{
-  name = "hardhat_9",
+  name = "room5_hardhat_1",
   layer = 0,
   x = 248,
   y = 525,
@@ -6579,7 +6625,7 @@ enemy{
 }
 
 enemy{
-  name = "hardhat_10",
+  name = "room5_hardhat_2",
   layer = 0,
   x = 328,
   y = 669,
@@ -7145,15 +7191,6 @@ wall{
   stops_projectiles = true,
 }
 
-sensor{
-  name = "sensor_save_ground",
-  layer = 0,
-  x = 752,
-  y = 1581,
-  width = 16,
-  height = 32,
-}
-
 destructible{
   name = "hookshot",
   layer = 0,
@@ -7545,15 +7582,6 @@ sensor{
 }
 
 sensor{
-  name = "sensor_reset_ground",
-  layer = 0,
-  x = 704,
-  y = 1581,
-  width = 16,
-  height = 32,
-}
-
-sensor{
   name = "dungeon_room_2b_",
   layer = 0,
   x = 72,
@@ -7744,6 +7772,65 @@ destructible{
   destruction_sound = "stone",
 }
 
+chest{
+  name = "chest_key_2",
+  layer = 0,
+  x = 808,
+  y = 797,
+  treasure_name = "small_key",
+  treasure_savegame_variable = "b1153",
+  sprite = "entities/chest",
+}
+
+chest{
+  name = "chest_key_3",
+  layer = 0,
+  x = 360,
+  y = 525,
+  treasure_name = "small_key",
+  treasure_savegame_variable = "b1155",
+  sprite = "entities/chest",
+}
+
+door{
+  name = "door_key3_1",
+  layer = 0,
+  x = 840,
+  y = 488,
+  direction = 1,
+  sprite = "entities/door_small_key",
+  savegame_variable = "b1156",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_6_small_keys",
+  opening_condition_consumed = true,
+  cannot_open_dialog = "_small_key_required",
+}
+
+door{
+  name = "door_key3_2",
+  layer = 0,
+  x = 840,
+  y = 440,
+  direction = 3,
+  sprite = "entities/door_small_key",
+  savegame_variable = "b1156",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_6_small_keys",
+  opening_condition_consumed = true,
+  cannot_open_dialog = "_small_key_required",
+}
+
+enemy{
+  name = "wallmaster",
+  layer = 0,
+  x = 424,
+  y = 997,
+  direction = 0,
+  breed = "wallmaster",
+  treasure_name = "rupee",
+  treasure_variant = 3,
+}
+
 tile{
   layer = 1,
   x = 536,
@@ -7772,12 +7859,30 @@ tile{
 }
 
 sensor{
-  name = "dungeon_room_6_",
+  name = "dungeon_room_6a_",
   layer = 1,
   x = 488,
   y = 621,
   width = 16,
   height = 32,
+}
+
+sensor{
+  name = "dungeon_room_6b_",
+  layer = 1,
+  x = 888,
+  y = 653,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_6c_",
+  layer = 1,
+  x = 840,
+  y = 525,
+  width = 32,
+  height = 16,
 }
 
 tile{

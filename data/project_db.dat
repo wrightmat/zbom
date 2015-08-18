@@ -359,9 +359,11 @@ sprite{ id = "entities/grass", description = "Grass" }
 sprite{ id = "entities/hammer_stake", description = "Hammer Stake" }
 sprite{ id = "entities/hint_stone", description = "Hint stone" }
 sprite{ id = "entities/hookshot", description = "Hookshot" }
+sprite{ id = "entities/ice", description = "Ice" }
 sprite{ id = "entities/ice_block", description = "Ice Block" }
 sprite{ id = "entities/ice_pit", description = "Ice Pit (Cane)" }
 sprite{ id = "entities/items", description = "(Items)" }
+sprite{ id = "entities/lava", description = "Lava" }
 sprite{ id = "entities/mailbox", description = "Mailbox" }
 sprite{ id = "entities/mine", description = "Mine" }
 sprite{ id = "entities/platform", description = "Moving Platform" }
@@ -648,7 +650,6 @@ sound{ id = "ok", description = "ok" }
 sound{ id = "pause_closed", description = "pause_closed" }
 sound{ id = "pause_open", description = "pause_open" }
 sound{ id = "peahat_awake", description = "peahat_awake" }
-sound{ id = "people_talking", description = "people_talking" }
 sound{ id = "picked_item", description = "picked_item" }
 sound{ id = "picked_rupee", description = "picked_rupee" }
 sound{ id = "picked_small_key", description = "picked_small_key" }
@@ -900,5 +901,4 @@ font{ id = "minecraftia", description = "minecraftia" }
 font{ id = "small_green_digits", description = "small_green_digits" }
 font{ id = "small_white_digits", description = "small_white_digits" }
 font{ id = "white_digits", description = "white_digits" }
-font{ id = "wqy-microhei", description = "wqy-microhei" }
 

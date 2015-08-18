@@ -5934,6 +5934,42 @@ custom_entity{
   model = "mailbox",
 }
 
+enemy{
+  name = "cucco_1",
+  layer = 0,
+  x = 168,
+  y = 333,
+  direction = 0,
+  breed = "cucco",
+}
+
+enemy{
+  name = "cucco_2",
+  layer = 0,
+  x = 360,
+  y = 965,
+  direction = 0,
+  breed = "cucco",
+}
+
+enemy{
+  name = "cucco_3",
+  layer = 0,
+  x = 936,
+  y = 965,
+  direction = 0,
+  breed = "cucco",
+}
+
+enemy{
+  name = "cucco_4",
+  layer = 0,
+  x = 896,
+  y = 357,
+  direction = 0,
+  breed = "cucco",
+}
+
 tile{
   layer = 1,
   x = 904,

@@ -10,6 +10,42 @@ properties{
 
 tile{
   layer = 0,
+  x = 776,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "271",
+}
+
+tile{
+  layer = 0,
+  x = 768,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "271",
+}
+
+tile{
+  layer = 0,
+  x = 664,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "272",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "272",
+}
+
+tile{
+  layer = 0,
   x = 0,
   y = 952,
   width = 48,
@@ -2721,7 +2757,7 @@ tile{
   layer = 0,
   x = 544,
   y = 112,
-  width = 368,
+  width = 128,
   height = 8,
   pattern = "265",
 }
@@ -2730,7 +2766,7 @@ tile{
   layer = 0,
   x = 544,
   y = 104,
-  width = 368,
+  width = 128,
   height = 8,
   pattern = "259",
 }
@@ -4616,37 +4652,82 @@ tile{
   pattern = "192",
 }
 
+tile{
+  layer = 0,
+  x = 784,
+  y = 104,
+  width = 128,
+  height = 8,
+  pattern = "259",
+}
+
+tile{
+  layer = 0,
+  x = 784,
+  y = 112,
+  width = 128,
+  height = 8,
+  pattern = "265",
+}
+
+tile{
+  layer = 0,
+  x = 680,
+  y = 112,
+  width = 96,
+  height = 8,
+  pattern = "464",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "1626",
+}
+
+tile{
+  layer = 0,
+  x = 784,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "1626",
+}
+
 teletransporter{
+  name = "to_E7",
   layer = 0,
   x = 0,
   y = 1120,
   width = 1120,
   height = 16,
-  name = "to_E7",
   transition = "scrolling",
   destination_map = "50",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_F6",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 1120,
-  name = "to_F6",
   transition = "scrolling",
   destination_map = "64",
   destination = "_side",
 }
 
 jumper{
+  name = "jump_sensor",
   layer = 0,
   x = 664,
   y = 728,
   width = 64,
   height = 8,
-  name = "jump_sensor",
   direction = 6,
   jump_length = 184,
 }
@@ -4672,240 +4753,240 @@ destructible{
 }
 
 teletransporter{
+  name = "to_D6",
   layer = 0,
   x = -16,
   y = 0,
   width = 16,
   height = 624,
-  name = "to_D6",
   transition = "scrolling",
   destination_map = "62",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_D6_2",
   layer = 0,
   x = -16,
   y = 1088,
   width = 16,
   height = 32,
-  name = "to_D6_2",
   transition = "scrolling",
   destination_map = "62",
   destination = "_side",
 }
 
 enemy{
+  name = "geyser_1",
   layer = 0,
   x = 1032,
   y = 69,
-  name = "geyser_1",
   direction = 3,
   breed = "geyser",
   treasure_name = "random",
 }
 
 enemy{
+  name = "geyser_2",
   layer = 0,
   x = 712,
   y = 61,
-  name = "geyser_2",
   direction = 3,
   breed = "geyser",
   treasure_name = "random",
 }
 
 enemy{
+  name = "geyser_3",
   layer = 0,
   x = 360,
   y = 61,
-  name = "geyser_3",
   direction = 3,
   breed = "geyser",
   treasure_name = "random",
 }
 
 enemy{
+  name = "geyser_4",
   layer = 0,
   x = 112,
   y = 109,
-  name = "geyser_4",
   direction = 3,
   breed = "geyser",
   treasure_name = "random",
 }
 
 destination{
+  name = "from_cave_1",
   layer = 0,
   x = 384,
   y = 861,
-  name = "from_cave_1",
   direction = 3,
 }
 
 destination{
+  name = "from_cave_2",
   layer = 0,
   x = 264,
   y = 261,
-  name = "from_cave_2",
   direction = 3,
 }
 
 destination{
+  name = "from_cave_3",
   layer = 0,
   x = 688,
   y = 717,
-  name = "from_cave_3",
   direction = 3,
 }
 
 destination{
+  name = "from_cave_4",
   layer = 0,
   x = 944,
   y = 653,
-  name = "from_cave_4",
   direction = 3,
 }
 
 teletransporter{
+  name = "to_cave_1",
   layer = 0,
   x = 376,
   y = 832,
   width = 16,
   height = 16,
-  name = "to_cave_1",
   destination_map = "63",
   destination = "from_cave_2",
 }
 
 teletransporter{
+  name = "to_cave_2",
   layer = 0,
   x = 256,
   y = 232,
   width = 16,
   height = 16,
-  name = "to_cave_2",
   destination_map = "63",
   destination = "from_cave_1",
 }
 
 destination{
+  name = "from_great_fairy",
   layer = 0,
   x = 408,
   y = 725,
-  name = "from_great_fairy",
   direction = 3,
 }
 
 teletransporter{
+  name = "to_E5",
   layer = 0,
   x = 0,
   y = -16,
   width = 1120,
   height = 16,
-  name = "to_E5",
   transition = "scrolling",
   destination_map = "55",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_cave_3",
   layer = 0,
   x = 936,
   y = 624,
   width = 16,
   height = 16,
-  name = "to_cave_3",
   destination_map = "63",
   destination = "from_cave_3",
 }
 
 teletransporter{
+  name = "to_cave_4",
   layer = 0,
   x = 680,
   y = 688,
   width = 16,
   height = 16,
-  name = "to_cave_4",
   destination_map = "63",
   destination = "from_cave_4",
 }
 
 enemy{
+  name = "tektite_1",
   layer = 0,
   x = 800,
-  y = 85,
-  name = "tektite_1",
+  y = 77,
   direction = 3,
   breed = "tektite_red",
   treasure_name = "random",
 }
 
 enemy{
+  name = "tektite_2",
   layer = 0,
   x = 480,
   y = 61,
-  name = "tektite_2",
   direction = 3,
   breed = "tektite_red",
   treasure_name = "random",
 }
 
 enemy{
+  name = "tektite_3",
   layer = 0,
   x = 184,
   y = 61,
-  name = "tektite_3",
   direction = 3,
   breed = "tektite_red",
   treasure_name = "random",
 }
 
 enemy{
+  name = "tektite_4",
   layer = 0,
   x = 640,
   y = 285,
-  name = "tektite_4",
   direction = 3,
   breed = "tektite_red",
   treasure_name = "random",
 }
 
 enemy{
+  name = "tektite_5",
   layer = 0,
   x = 136,
   y = 349,
-  name = "tektite_5",
   direction = 3,
   breed = "tektite_red",
   treasure_name = "random",
 }
 
 enemy{
+  name = "tektite_6",
   layer = 0,
   x = 944,
   y = 501,
-  name = "tektite_6",
   direction = 3,
   breed = "tektite_red",
   treasure_name = "random",
 }
 
 enemy{
+  name = "knight_1",
   layer = 0,
   x = 272,
   y = 141,
-  name = "knight_1",
   direction = 3,
   breed = "knight_red",
   treasure_name = "random",
 }
 
 enemy{
+  name = "knight_2",
   layer = 0,
   x = 952,
   y = 37,
-  name = "knight_2",
   direction = 3,
   breed = "knight_red",
   treasure_name = "random",
@@ -4930,24 +5011,34 @@ wall{
 }
 
 teletransporter{
+  name = "to_great_fairy",
   layer = 0,
   x = 400,
   y = 696,
   width = 16,
   height = 16,
-  name = "to_great_fairy",
   destination_map = "164",
   destination = "from_outside",
 }
 
 npc{
+  name = "npc_goron",
   layer = 0,
   x = 360,
   y = 773,
-  name = "npc_goron",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/goron",
+}
+
+jumper{
+  layer = 0,
+  x = 680,
+  y = 112,
+  width = 96,
+  height = 8,
+  direction = 6,
+  jump_length = 120,
 }
 
 tile{

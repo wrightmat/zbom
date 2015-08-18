@@ -27,6 +27,7 @@ for enemy in map:get_entities("geldman") do
   enemy.on_dead = function()
     if not map:has_entities("geldman") and not map:has_entities("armos") then
       chest_compass:set_enabled(true)
+      sol.audio.play_sound("chest_appears")
     end
   end
 end
@@ -34,6 +35,7 @@ for enemy in map:get_entities("armos") do
   enemy.on_dead = function()
     if not map:has_entities("geldman") and not map:has_entities("armos") then
       chest_compass:set_enabled(true)
+      sol.audio.play_sound("chest_appears")
     end
   end
 end
@@ -42,6 +44,7 @@ for enemy in map:get_entities("gibdos") do
   enemy.on_dead = function()
     if not map:has_entities("gibdos") and not map:has_entities("giga") then
       chest_key_1:set_enabled(true)
+      sol.audio.play_sound("chest_appears")
     end
   end
 end
@@ -49,6 +52,7 @@ for enemy in map:get_entities("giga") do
   enemy.on_dead = function()
     if not map:has_entities("gibdos") and not map:has_entities("giga") then
       chest_key_1:set_enabled(true)
+      sol.audio.play_sound("chest_appears")
     end
   end
 end

@@ -5305,7 +5305,9 @@ wall{
   y = 56,
   width = 48,
   height = 8,
+  stops_npcs = true,
   stops_blocks = true,
+  stops_projectiles = true,
 }
 
 wall{
@@ -5314,7 +5316,9 @@ wall{
   y = 360,
   width = 48,
   height = 8,
+  stops_npcs = true,
   stops_blocks = true,
+  stops_projectiles = true,
 }
 
 wall{
@@ -5323,7 +5327,9 @@ wall{
   y = 360,
   width = 48,
   height = 8,
+  stops_npcs = true,
   stops_blocks = true,
+  stops_projectiles = true,
 }
 
 wall{
@@ -5332,7 +5338,9 @@ wall{
   y = 192,
   width = 8,
   height = 48,
+  stops_npcs = true,
   stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{

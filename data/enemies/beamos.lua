@@ -4,7 +4,7 @@ local damage = 1
 local speed = 200
 local max_distance = 100
 local time_between_particles = 20
-local particles_per_beam = 10
+local particles_per_beam = 30
 local stop_time = 1000
 
 -- Beamos
@@ -16,11 +16,16 @@ function enemy:on_created()
   self:set_invincible()
   self:set_can_attack(false)
   self:set_traversable(true)
+  self:set_pushed_back_when_hurt(false)
   self:set_attack_consequence("explosion", 1)
 end
 
 function enemy:on_restarted()
-  self:get_sprite():set_animation("shaking")
+  -- Create "movement" to make Beamos continually change direction and face hero
+  local m = sol.movement.create("target")
+  m:set_target(self:get_map():get_hero())
+  m:set_speed(0)
+  m:start(self)
   -- Start throwing beam particles.
   local properties = {particle_sprite = particle_sprite, damage = damage, breed = "projectiles/beam_particle"}
   local particles = particles_per_beam
@@ -48,7 +53,8 @@ function enemy:on_restarted()
   sol.timer.start(enemy, 50, function()
     local tx, ty, _ = enemy:get_map():get_hero():get_position()
     if enemy:get_distance(tx, ty) < max_distance then
-      shoot(tx, ty)
+      self:get_sprite():set_animation("shaking")
+      sol.timer.start(self, 1000, function() shoot(tx-5, ty) end)
       return false -- Stop timer.
     end
     return true

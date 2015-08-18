@@ -16,6 +16,7 @@ function enemy:on_created()
     elseif animation == "stopped_watching_right" then
       enemy:go((direction + 3) % 4)
     end
+  end
 end
 
 -- The enemy was stopped for some reason and should restart.

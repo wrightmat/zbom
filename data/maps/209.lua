@@ -8,6 +8,8 @@ local game = map:get_game()
 function map:on_started(destination)
   if not game:get_value("b1147") then boss_stalfos:set_enabled(false) end
   if not game:get_value("b1149") then boss_heart:set_enabled(false) end
+  if not game:get_value("b1153") then chest_key_2:set_enabled(false) end
+  if not game:get_value("b1155") then chest_key_3:set_enabled(false) end
 end
 
 function switch_star_1:on_activated()
@@ -146,6 +148,24 @@ function sensor_save_ground:on_activated()
 end
 function sensor_reset_ground:on_activated()
   hero:reset_solid_ground()
+end
+
+for enemy in map:get_entities("room7_hardhat") do
+  enemy.on_dead = function()
+    if not map:has_entities("room7_hardhat") and not game:get_value("b1153") then
+      chest_key_2:set_enabled(true)
+      sol.audio.play_sound("chest_appears")
+    end
+  end
+end
+
+for enemy in map:get_entities("room5_hardhat") do
+  enemy.on_dead = function()
+    if not map:has_entities("room5_hardhat") and not game:get_value("b1155") then
+      chest_key_3:set_enabled(true)
+      sol.audio.play_sound("chest_appears")
+    end
+  end
 end
 
 function sensor_boss:on_activated()

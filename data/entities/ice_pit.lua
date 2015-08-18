@@ -25,7 +25,7 @@ function entity:set_filled(other)
   local sprite = self:get_sprite()
   sprite:set_animation("filled")
   self:set_traversable_by("hero", true) -- pit is filled so hero can walk over it
-  other:remove() -- remove the ice block, it's in the pit
+  if other ~= nil then other:remove() end -- remove the ice block, it's in the pit
   sol.timer.start(self:get_map(), 10000, function()
     if hero_on_pit then
       return true

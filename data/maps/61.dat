@@ -2679,6 +2679,26 @@ wall{
   stops_projectiles = true,
 }
 
+enemy{
+  name = "pengator_2",
+  layer = 0,
+  x = 976,
+  y = 989,
+  direction = 3,
+  breed = "pengator",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "pengator_1",
+  layer = 0,
+  x = 216,
+  y = 901,
+  direction = 3,
+  breed = "pengator",
+  treasure_name = "random",
+}
+
 tile{
   layer = 1,
   x = 200,
@@ -2848,26 +2868,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "1669",
-}
-
-enemy{
-  name = "pengator_1",
-  layer = 1,
-  x = 216,
-  y = 901,
-  direction = 3,
-  breed = "pengator",
-  treasure_name = "random",
-}
-
-enemy{
-  name = "pengator_2",
-  layer = 1,
-  x = 976,
-  y = 989,
-  direction = 3,
-  breed = "pengator",
-  treasure_name = "random",
 }
 
 tile{

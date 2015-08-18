@@ -15,6 +15,7 @@ function enemy:on_created(properties)
   self:set_invincible()
   self:create_sprite(particle_sprite)
   self:set_damage(damage)
+  self:set_minimum_shield_needed(3) --light shield
 end
 
 function enemy:explode()
