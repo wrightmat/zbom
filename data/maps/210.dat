@@ -4671,6 +4671,26 @@ tile{
   pattern = "482",
 }
 
+dynamic_tile{
+  layer = 0,
+  x = 272,
+  y = 600,
+  pattern = "603",
+  width = 48,
+  height = 64,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 160,
+  y = 600,
+  pattern = "605",
+  width = 48,
+  height = 64,
+  enabled_at_start = true,
+}
+
 teletransporter{
   name = "to_outside",
   layer = 0,
@@ -5424,6 +5444,83 @@ enemy{
   direction = 3,
   breed = "hinox",
   treasure_name = "random",
+}
+
+dynamic_tile{
+  name = "print_1",
+  layer = 0,
+  x = 96,
+  y = 680,
+  pattern = "607",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "print_2",
+  layer = 0,
+  x = 96,
+  y = 648,
+  pattern = "607",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "print_3",
+  layer = 0,
+  x = 96,
+  y = 616,
+  pattern = "607",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "print_4",
+  layer = 0,
+  x = 96,
+  y = 584,
+  pattern = "607",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "print_5",
+  layer = 0,
+  x = 96,
+  y = 552,
+  pattern = "607",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "print_6",
+  layer = 0,
+  x = 96,
+  y = 520,
+  pattern = "607",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "print_7",
+  layer = 0,
+  x = 96,
+  y = 488,
+  pattern = "607",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
 }
 
 tile{

@@ -1,11 +1,9 @@
 animation{
-  name = "ice",
+  name = "lava",
   src_image = "entities/ice.png",
   frame_delay = 100,
+  frame_to_loop_on = 0,
   directions = {
-    { x = 64, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 64, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
-    { x = 64, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
-    { x = 64, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
+    { x = 0, y = 32, frame_width = 32, frame_height = 32, origin_x = 8, origin_y = 16 },
   },
 }
