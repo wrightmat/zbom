@@ -7,7 +7,6 @@ $gGreen: People
 $cCyan: Book of Mudora
 $mMagenta: Dark Tribe
 $wYellow: Ordona/Light
-  
 ]]
 }
 
@@ -16,9 +15,8 @@ dialog{
   icon = "73",
   skip = "current",
   text = [[
-This chest is locked with a giant
-lock.$0 Go find a big key!
-  
+This chest is locked with a giant lock.$0
+Go find a big key!
 ]]
 }
 
@@ -27,10 +25,9 @@ dialog{
   icon = "74",
   skip = "current",
   text = [[
-The door that leads to the Boss's
-lair is locked with a giant lock.
+The door that leads to the Boss's lair
+is locked with a giant lock.
 Find the Boss's key to open it!
-  
 ]]
 }
 
@@ -38,9 +35,8 @@ dialog{
   id = "_cannot_lift_should_cut",
   skip = "current",
   text = [[
-This would be difficult to lift,
-why not find something to cut it?
-  
+This would be difficult to lift, why
+not find something to cut it?
 ]]
 }
 
@@ -48,9 +44,8 @@ dialog{
   id = "_cannot_lift_still_too_heavy",
   skip = "current",
   text = [[
-It's still too heavy to lift even
-with your increased strength!
-  
+It's still too heavy to lift even with
+your increased strength!
 ]]
 }
 
@@ -60,7 +55,6 @@ dialog{
   text = [[
 It's too heavy to lift with just your
 bare hands!
-  
 ]]
 }
 
@@ -68,9 +62,8 @@ dialog{
   id = "_cannot_see_need_lamp",
   skip = "current",
   text = [[
-You can't see a thing! Maybe you
-should find a source of light...
-  
+You can't see a thing! Maybe you should
+find a source of light...
 ]]
 }
 
@@ -78,9 +71,8 @@ dialog{
   id = "_cannot_see_need_magic",
   skip = "current",
   text = [[
-You ran out of magic, now you can't
-see a thing!$0 Find more magic!
-  
+You ran out of magic, now you can't see
+a thing!$0 Find more magic!
 ]]
 }
 
@@ -90,7 +82,6 @@ dialog{
   text = [[
 It's a crystal switch.
 Try to hit it with something...
-  
 ]]
 }
 
@@ -100,7 +91,6 @@ dialog{
   text = [[
 You've been cursed!
 You won't be able to draw your sword.
-  
 ]]
 }
 
@@ -110,7 +100,6 @@ dialog{
   text = [[
 This chest is empty!
 Tough luck...
-  
 ]]
 }
 
@@ -118,12 +107,10 @@ dialog{
   id = "_goron_statue",
   skip = "current",
   text = [[
-Brother! my spirit seems to have
-been trapped in this weird statue!
-Maybe something with some explosive
-power could blow me out of
-this thing...
-  
+Brother! my spirit seems to have been
+trapped in this weird statue! Maybe
+something with some explosive power could
+blow me out of this thing...
 ]]
 }
 
@@ -131,10 +118,8 @@ dialog{
   id = "_goron_statue_destroyed",
   skip = "current",
   text = [[
-Thank you Brother...
-$0Take this magic as a gift from
-my spirit...
-  
+Thank you Brother...$0
+Take this magic as a gift from my spirit...
 ]]
 }
 
@@ -144,7 +129,6 @@ dialog{
   text = [[
 A large chunk of Magnetite -
 a rare metal ore.
-  
 ]]
 }
 
@@ -154,7 +138,6 @@ dialog{
   text = [[
 A huge metal propeller.
 Not sure what this is for?
-  
 ]]
 }
 
@@ -162,19 +145,18 @@ dialog{
   id = "_item_description.airship_part.3",
   skip = "current",
   text = [[
-Din's Pearl is a magical artifact
-which should help speed repair work.
-  
+Din's Pearl is a magical artifact which
+should help speed repair work.
 ]]
 }
 
 dialog{
   id = "_item_description.airship_part.4",
+  icon = "29",
   skip = "current",
   text = [[
-Master Ore is rare and useful for
-things like sword smithing.
-  
+Master Ore is rare and useful for things
+like sword smithing.
 ]]
 }
 
@@ -182,9 +164,8 @@ dialog{
   id = "_item_description.alchemy_counter.1",
   skip = "current",
   text = [[
-Desired by many, this artifact is
-said to bring riches to its owner.
-  
+Desired by many, this artifact is said
+to bring riches to its owner.
 ]]
 }
 
@@ -194,7 +175,6 @@ dialog{
   text = [[
 This tasty Goron treat is valuable
 because it contains a bug!
-  
 ]]
 }
 
@@ -206,7 +186,6 @@ dialog{
 Crisp, red apples can be found
 throughout Hyrule. Eat one to
 restore some of your energy!
-  
 ]]
 }
 
@@ -218,7 +197,6 @@ dialog{
 Crisp, red apples can be found
 throughout Hyrule. Eat one to
 restore some of your energy!
-  
 ]]
 }
 
@@ -229,7 +207,6 @@ dialog{
   text = [[
 Use Bombs against enemies or to
 blow up obstacles!
-  
 ]]
 }
 
@@ -239,7 +216,6 @@ dialog{
   text = [[
 It's a musty piece of paper found
 in a musty dungeon.
-  
 ]]
 }
 
@@ -249,7 +225,6 @@ dialog{
   text = [[
 A couple pages which belong to a
 much larger $c book$w.
-  
 ]]
 }
 
@@ -259,7 +234,6 @@ dialog{
   text = [[
 A collection of pages from the
 legendary $c Book of Mudora$w.
-  
 ]]
 }
 
@@ -269,7 +243,6 @@ dialog{
   text = [[
 A collection of pages from the
 legendary $c Book of Mudora$w.
-  
 ]]
 }
 
@@ -279,7 +252,6 @@ dialog{
   text = [[
 A collection of pages from the
 legendary $c Book of Mudora$w.
-  
 ]]
 }
 
@@ -289,7 +261,15 @@ dialog{
   text = [[
 A collection of pages from the
 legendary $c Book of Mudora$w.
-  
+]]
+}
+
+dialog{
+  id = "_item_description.book_mudora.7",
+  skip = "current",
+  text = [[
+The legendary and enchanted
+$cBook of Mudora$w.
 ]]
 }
 
@@ -301,7 +281,6 @@ dialog{
 Use the Boomerang to immobilize
 enemies or to catch objects in
 remote locations.
-  
 ]]
 }
 
@@ -313,7 +292,6 @@ dialog{
 Use the Magical Boomerang to
 immobilize enemies or to catch
 objects in very remote places.
-  
 ]]
 }
 
@@ -325,7 +303,6 @@ dialog{
 Slip on the Pegasus Boots to dash!
 Crash into things or simply get
 where you're going faster!
-  
 ]]
 }
 
@@ -703,7 +680,6 @@ dialog{
   skip = "current",
   text = [[
 You are out of arrows!
-  
 ]]
 }
 
@@ -714,7 +690,6 @@ dialog{
   text = [[
 Shoot arrows to conquer some
 tougher enemies.
-  
 ]]
 }
 
@@ -724,9 +699,9 @@ dialog{
   next = "_warning_magic",
   skip = "current",
   text = [[
-This cane emits a strange, chilling
-glow and can create blocks on a whim! 
-  
+This cane emits a strange,
+chilling glow and can create
+blocks on a whim! 
 ]]
 }
 
@@ -736,7 +711,6 @@ dialog{
   text = [[
 No one knows how this solid chunk of
 pure, crystallized magic came to be...
-  
 ]]
 }
 
@@ -745,9 +719,8 @@ dialog{
   icon = "0",
   skip = "current",
   text = [[
-Use a Rito's Feather to jump and
-get across obstacles.
-  
+Use a Rito's Feather to jump
+and get across obstacles.
 ]]
 }
 
@@ -758,7 +731,6 @@ dialog{
   text = [[
 Flippers let you swim in deep
 water without fear!
-  
 ]]
 }
 
@@ -769,7 +741,6 @@ dialog{
   text = [[
 This special Iron Bracelet enables
 you to lift boulders.
-  
 ]]
 }
 
@@ -780,7 +751,6 @@ dialog{
   text = [[
 This magical Golden Bracelet enables
 you to lift most anything!
-  
 ]]
 }
 
@@ -801,7 +771,6 @@ dialog{
   text = [[
 The hookshot's long chain can
 propel you to far away places!
-  
 ]]
 }
 
@@ -812,7 +781,6 @@ dialog{
 Mystic Jade is captivating and very
 valuable because of its beautiful
 form and color.
-  
 ]]
 }
 
@@ -823,7 +791,6 @@ dialog{
   text = [[
 A lantern to light torches and
 give off light in dark places.
-  
 ]]
 }
 
@@ -833,8 +800,8 @@ dialog{
   skip = "current",
   text = [[
 The magical musical instrument
-will take you where you need to go!
-  
+will take you where you need
+to go!
 ]]
 }
 
@@ -845,7 +812,6 @@ dialog{
 This strong metallic compound is
 found only in the deepest depths
 of the earth.
-  
 ]]
 }
 
@@ -856,7 +822,6 @@ dialog{
 Rumors say this item was dropped by the
 goddess in a long-forgotten era. It's a
 legendary treasure few will ever behold!
-  
 ]]
 }
 
@@ -868,7 +833,6 @@ dialog{
 Bright orange pumpkins grow only in the
 south of Hyrule. Eat one to revitalize
 yourself, or sell them to someone else!
-  
 ]]
 }
 
@@ -878,7 +842,6 @@ dialog{
   text = [[
 This sturdy shovel is able to dig up
 any buried treasure!
-  
 ]]
 }
 
@@ -889,7 +852,6 @@ dialog{
 Deku sticks are found in forrested
 areas and can be used to create
 powerful potions.
-  
 ]]
 }
 
@@ -901,7 +863,6 @@ dialog{
 It's an Odd Mushroom with a very
 pungent aroma. Take it to a potion
 maker, probably.
-  
 ]]
 }
 
@@ -912,7 +873,6 @@ dialog{
   text = [[
 It's a scale from one of the Zora
 people. How will this be useful?
-  
 ]]
 }
 
@@ -923,7 +883,6 @@ dialog{
   text = [[
 It's a frozen fish. Not so sure this
 was trading up...
-  
 ]]
 }
 
@@ -935,7 +894,6 @@ dialog{
 It's the most famous cookbook in
 all Hyrule!
 This could be valuable!
-  
 ]]
 }
 
@@ -954,7 +912,6 @@ dialog{
   text = [[
 It's an Odd Potion. What do you
 think you should do with it?
-  
 ]]
 }
 
@@ -965,7 +922,6 @@ dialog{
   text = [[
 It's a mask in the form of a Deku.
 Maybe someone will like it?
-  
 ]]
 }
 
@@ -976,7 +932,6 @@ dialog{
   text = [[
 It's said to be a tear from the
 moon itself.$0 It glistens!
-  
 ]]
 }
 
@@ -987,7 +942,6 @@ dialog{
   text = [[
 It's a shining ball made from
 pure crystal.
-  
 ]]
 }
 
@@ -998,7 +952,6 @@ dialog{
   text = [[
 It's supposed to be tasty meat.$0
 Not sure it's actually edible.
-  
 ]]
 }
 
@@ -1010,7 +963,6 @@ dialog{
 It's some interesing looking dog
 food. Maybe someone other than a
 dog will like it?
-  
 ]]
 }
 
@@ -1021,7 +973,6 @@ dialog{
   text = [[
 It's a bunch of delicious looking
 bananas!
-  
 ]]
 }
 
@@ -1032,7 +983,6 @@ dialog{
   text = [[
 It's a beautiful vase fashioned by
 the Goron people.
-  
 ]]
 }
 
@@ -1040,12 +990,11 @@ dialog{
   id = "_mausoleum_outro",
   skip = "current",
   text = [[
-Do you think you're safe now that
-I'm gone? There was evil crawling
-all over this place long before I
-got here. Enjoy making your way out
-of this dreaded cave, hero...
-  
+Do you think you're safe now that I'm
+gone? There was evil crawling all over
+this place long before I got here. Enjoy
+making your way out of this dreaded
+cave, hero...
 ]]
 }
 
@@ -1056,7 +1005,6 @@ dialog{
 It sounds like that switch may have
 drained more water than just what's right
 here - go outside and check it out!
-  
 ]]
 }
 
@@ -1065,7 +1013,6 @@ dialog{
   skip = "current",
   text = [[
 You can't hold any more!
-  
 ]]
 }
 
@@ -1074,7 +1021,6 @@ dialog{
   skip = "current",
   text = [[
 It seems like you don't have enough!
-  
 ]]
 }
 
@@ -1086,7 +1032,6 @@ dialog{
 Price: $v rupees.
 Buy
 Don't Buy
-  
 ]]
 }
 
@@ -1098,7 +1043,6 @@ dialog{
 Price: $v ore chunks.
 Buy
 Don't Buy
-  
 ]]
 }
 
@@ -1110,7 +1054,6 @@ dialog{
 Would you like to sleep?
 Yes
 No
-  
 ]]
 }
 
@@ -1121,7 +1064,6 @@ dialog{
   text = [[
 It looks like this door is locked -
 better find a $r key$w!
-  
 ]]
 }
 
@@ -1132,7 +1074,6 @@ dialog{
 There's a patch of soft soil here -
 if you had the right tools, you could
 probably dig it up.
-  
 ]]
 }
 
@@ -1143,7 +1084,6 @@ dialog{
 You're exhausted!$0 You won't be
 able to continue much farther until
 you sleep or eat something!
-  
 ]]
 }
 
@@ -1152,9 +1092,8 @@ dialog{
   skip = "current",
   text = [[
 Wow, this looks pretty heavy!
-You won't be able to lift it with
-just your bare hands.
-  
+You won't be able to lift it with just
+your bare hands.
 ]]
 }
 
@@ -1165,7 +1104,6 @@ dialog{
 You found a chunk of   $r Magnetite$w!$0
 This could help the Gerudo with
 their repairs!
-  
 ]]
 }
 
@@ -1175,7 +1113,6 @@ dialog{
   text = [[
 You found a  $r Propeller$w!$0
 What could the Gerudo need with this?
-  
 ]]
 }
 
@@ -1187,7 +1124,6 @@ You found  $r Din's Pearl$w!$0
 The magic from this artifact should
 speed the Gerudo's repairs considerably!
 Get back as soon as you can.
-  
 ]]
 }
 
@@ -1199,7 +1135,6 @@ dialog{
 You got some  $r Master Ore$w!$0
 The blacksmith can use it to
 improve your sword!
-  
 ]]
 }
 
@@ -1211,7 +1146,6 @@ dialog{
 You got an $r Alchemy Stone$w!
 This artifact is said to bring
 riches to its owner.
-  
 ]]
 }
 
@@ -1223,7 +1157,6 @@ dialog{
 You got $r Goron Amber$w!
 This tasty Goron treat is valuable
 because it contains a bug!
-  
 ]]
 }
 
@@ -1234,7 +1167,6 @@ dialog{
   text = [[
 You got an $r Apple$w!$0
 Eat it to regain some stamina!
-  
 ]]
 }
 
@@ -1245,7 +1177,6 @@ dialog{
   text = [[
 You got some $r Apples$w!$0
 Eat them to regain some stamina!
-  
 ]]
 }
 
@@ -1257,7 +1188,6 @@ dialog{
 You got some $r Arrows$w!$0
 Use them in your bow to hit things
 at a distance.
-  
 ]]
 }
 
@@ -1269,7 +1199,6 @@ dialog{
 You got some $r Arrows$w!$0
 Use them in your bow to hit things
 at a distance.
-  
 ]]
 }
 
@@ -1281,7 +1210,6 @@ dialog{
 You got some $r Arrows$w!$0
 Use them in your bow to hit things
 at a distance.
-  
 ]]
 }
 
@@ -1293,7 +1221,6 @@ dialog{
 You found a $r  Big Key$w!$0
 Now just find a big keyhole to
 put it in!
-  
 ]]
 }
 
@@ -1305,7 +1232,6 @@ dialog{
 You got a $r Bomb$w!$0
 Use it to blow something up!$0
 Ka$0 BOOM!
-  
 ]]
 }
 
@@ -1317,7 +1243,6 @@ dialog{
 You got a pack of $r Bombs$w!$0
 Use them to blow something up!$0
 Ka $0 BOOM!
-  
 ]]
 }
 
@@ -1329,7 +1254,6 @@ dialog{
 You got a pack of $r Bombs$w!$0
 Use them to blow something up!$0
 Ka $0 BOOM!
-  
 ]]
 }
 
@@ -1340,7 +1264,6 @@ dialog{
   text = [[
 You received a  $r Bomb Bag$w!$0
 It can hold 10 Bombs.
-  
 ]]
 }
 
@@ -1351,7 +1274,6 @@ dialog{
   text = [[
 You got a $r Large Bomb Bag$w!$0
 It holds 30 Bombs.
-  
 ]]
 }
 
@@ -1362,7 +1284,6 @@ dialog{
   text = [[
 You got a $r Huge Bomb Bag$w!$0
 It holds 60 Bombs!
-  
 ]]
 }
 
@@ -1376,7 +1297,6 @@ This seems like an awfully
 paltry prize after braving
 this whole dungeon. Maybe
 it'll be useful in some way?
-  
 ]]
 }
 
@@ -1388,7 +1308,6 @@ dialog{
 You got another  $c book$w page!
 I guess this one will replace
 what that monkey stole...
-  
 ]]
 }
 
@@ -1400,7 +1319,6 @@ dialog{
 You got a page to the
 $cBook of Mudora!$w
 It's coming together!
-  
 ]]
 }
 
@@ -1414,7 +1332,6 @@ $cBook of Mudora!$w
 
 It's starting to look like
 a real book!
-  
 ]]
 }
 
@@ -1428,7 +1345,6 @@ $cBook of Mudora!$w
 
 You have almost a complete
 book now!
-  
 ]]
 }
 
@@ -1443,7 +1359,6 @@ $cBook of Mudora!$w
 The book is complete, now
 it just needs its magic
 restored!
-  
 ]]
 }
 
@@ -1455,7 +1370,6 @@ dialog{
 The $c Book of Mudora$w has been
 enchanted! Finally the book
 is back to its full power!
-  
 ]]
 }
 
@@ -1467,7 +1381,6 @@ dialog{
 You got a $r Boomerang$w!$0
 Use it to immobilize enemies
 and reach distant objects.
-  
 ]]
 }
 
@@ -1479,7 +1392,6 @@ dialog{
 You got a $r Magical Boomerang$w !$0
 It can immobilize enemies and reach
 objects at even futher distances!
-  
 ]]
 }
 
@@ -1490,7 +1402,6 @@ dialog{
   text = [[
 You found the  $r Pegasus Boots$w!
 Slip them on and dash about!
-  
 ]]
 }
 
@@ -1502,7 +1413,6 @@ dialog{
 You found the $r Boss Key$w!$0
 Now you can open the door to
 the boss's lair!
-  
 ]]
 }
 
@@ -1875,7 +1785,6 @@ You found the $r  Hero's Bow$w!$0
 This is said to have been
 wielded by a legendary hero
 long ago.
-  
 ]]
 }
 
@@ -1888,7 +1797,6 @@ dialog{
 You found the $r Cane of Ice$w!$0
 Use it to create blocks
 on a whim.
-  
 ]]
 }
 
@@ -1903,7 +1811,6 @@ but only works in this dungeon.
 This one has a special feature -
 when you enter a room with hidden
 treasure, a sound will play!
-  
 ]]
 }
 
@@ -1916,7 +1823,6 @@ You got a $r Magic Crystal$w!$0
 No one knows how this solid
 chunk of pure, crystallized
 magic came to be...
-  
 ]]
 }
 
@@ -1929,7 +1835,6 @@ You got a $r Rito Feather$w!$0
 Use it to jump across
 obstacles safely. You'll be
 light as air!
-  
 ]]
 }
 
@@ -1941,7 +1846,6 @@ dialog{
 You got the $r Flippers$w!$0
 Now you'll be able to swim
 like a pro!
-  
 ]]
 }
 
@@ -1953,7 +1857,6 @@ dialog{
 You found the  $r Iron Bracelet$w!$0
 Its power allows you to lift
 heavy things!
-  
 ]]
 }
 
@@ -1965,7 +1868,6 @@ dialog{
 You got the  $r Gold Bracelet$w!$0
 Its magic allows you to lift
 just about anything!
-  
 ]]
 }
 
@@ -1987,8 +1889,7 @@ dialog{
   text = [[
 You found a $r Heart$w!$0
 Some life has been
-replinished.
-  
+replenished.
 ]]
 }
 
@@ -2000,7 +1901,6 @@ dialog{
 You found a $r Heart Container$w!$0
 Your life has been increased
 by one. Congratulations!
-  
 ]]
 }
 
@@ -2010,7 +1910,6 @@ dialog{
   skip = "current",
   text = [[
 You found a $r Piece of Heart$w!
-  
 ]]
 }
 
@@ -2023,7 +1922,6 @@ You found a $r Hookshot$w!$0
 Immobilize enemies and travel
 across distances previously
 unreachable!
-  
 ]]
 }
 
@@ -2034,7 +1932,6 @@ dialog{
   text = [[
 You got some  $r Mystic Jade$w!
 It's such a beautiful color!
-  
 ]]
 }
 
@@ -2047,7 +1944,6 @@ dialog{
 You found a $r Lantern$w!$0
 Light the way and travel in
 safety!
-  
 ]]
 }
 
@@ -2058,7 +1954,6 @@ dialog{
 You've had your magic bar upgraded!
 You now have room for twice as
 much magic!
-  
 ]]
 }
 
@@ -2070,7 +1965,6 @@ dialog{
 You found a small jar of
 Magic Potion!$0
 Some magic is renewed!
-  
 ]]
 }
 
@@ -2082,7 +1976,6 @@ dialog{
 You found a large jar of
 Magic Potion!$0
 Some magic is renewed!
-  
 ]]
 }
 
@@ -2094,7 +1987,6 @@ dialog{
 You found a $r Dungeon Map$w!
 Use it to navigate difficult areas
 and explore places you haven't yet!
-  
 ]]
 }
 
@@ -2106,7 +1998,6 @@ dialog{
 You got the $r Ocarina of Wind$w!$0
 Use this magical instrument
 to get where you need to go!
-  
 ]]
 }
 
@@ -2118,7 +2009,6 @@ dialog{
 You found $r Subrosian Ore$w! It's
 strong metallic compound from
 the deepest depths of the earth!
-  
 ]]
 }
 
@@ -2130,7 +2020,6 @@ dialog{
 You found a $r Goddess Plume$w!
 This is a legendary treasure
 few will ever behold!
-  
 ]]
 }
 
@@ -2141,7 +2030,6 @@ dialog{
   text = [[
 You got some  $r Heart Potion$w!$0
 Use it to restore your life.
-  
 ]]
 }
 
@@ -2153,7 +2041,6 @@ dialog{
 You got some  $r Magic Potion$w!$0
 Use it to refill your
 magic meter.
-  
 ]]
 }
 
@@ -2164,7 +2051,6 @@ dialog{
   text = [[
 You got  $r Stamina Potion$w!$0
 It restores your stamina!
-  
 ]]
 }
 
@@ -2176,7 +2062,6 @@ dialog{
 You got $r Revitalizing Potion$w!$0
 It restores life, magic
 and stamina!
-  
 ]]
 }
 
@@ -2187,7 +2072,6 @@ dialog{
   text = [[
 You got a $r Pumpkin$w!
 It looks quite nutritious.
-  
 ]]
 }
 
@@ -2199,7 +2083,6 @@ dialog{
 You received a  $r Small Quiver$W!$0
 It holds your arrows, but only
 10 at once.
-  
 ]]
 }
 
@@ -2210,7 +2093,6 @@ dialog{
   text = [[
 You received a  $r Large Quiver$w!$0
 It can hold 30 arrows at a time!
-  
 ]]
 }
 
@@ -2221,7 +2103,6 @@ dialog{
   text = [[
 You received a  $r Huge Quiver$w!$0
 It can hold 60 arrows!
-  
 ]]
 }
 
@@ -2233,7 +2114,6 @@ dialog{
 You found a  $g Green Rupee$w!$0
 That's worth 1 Rupee, so you'd
 better get lots!
-  
 ]]
 }
 
@@ -2244,7 +2124,6 @@ dialog{
   text = [[
 You found a  $b Blue Rupee$w!$0
 That's worth 5 Rupees.
-  
 ]]
 }
 
@@ -2255,7 +2134,6 @@ dialog{
   text = [[
 You found a  $r Red Rupee$w!$0
 That's worth 20 Rupees!
-  
 ]]
 }
 
@@ -2266,7 +2144,6 @@ dialog{
   text = [[
 You found a  $p Purple Rupee$w!$0
 This one's worth 50 Rupees!
-  
 ]]
 }
 
@@ -2278,7 +2155,6 @@ dialog{
 You found a  $s Silver Rupee$w!$0
 It's worth 100 Rupees!
 Lucky!
-  
 ]]
 }
 
@@ -2290,7 +2166,6 @@ dialog{
 You found a  $y Gold Rupee$w!$0
 It's worth 200 Rupees!
 Amazing!
-  
 ]]
 }
 
@@ -2301,7 +2176,6 @@ dialog{
   text = [[
 You got the $r Large Rupee Bag$w!$0
 It holds 1000 rupees!
-  
 ]]
 }
 
@@ -2312,7 +2186,6 @@ dialog{
   text = [[
 You got the $r Huge Rupee Bag$w!$0
 It holds a whopping 5000 rupees!
-  
 ]]
 }
 
@@ -2324,7 +2197,6 @@ dialog{
 You were awarded a trusty   $r  wooden
 shield of Ordon origins $w. Be careful,
 it's only made of wood.
-  
 ]]
 }
 
@@ -2336,7 +2208,6 @@ dialog{
 You received a strong  $r Hylian
 Shield$w!$0 It's made of nearly
 impenetrable Hylian metal.
-  
 ]]
 }
 
@@ -2351,7 +2222,6 @@ metal and infused with the
 purity of light, this shield
 will protect its wielder
 from most anything!
-  
 ]]
 }
 
@@ -2362,7 +2232,6 @@ dialog{
 You got a sturdy $r Shovel$w! Use
 it to dig up any buried treasue
 you can find!
-  
 ]]
 }
 
@@ -2374,7 +2243,6 @@ dialog{
 You found a  $r Small Key$w!$0
 Use it to open doors, but only
 in this area.
-  
 ]]
 }
 
@@ -2386,7 +2254,6 @@ dialog{
 You found a $r Deku stick$w!
 Maybe someone will be able
 to make something of it...
-  
 ]]
 }
 
@@ -2400,7 +2267,6 @@ It is a lightweight but durable
 blade which has been passed down
 by the Ordon people for many
 generations.
-  
 ]]
 }
 
@@ -2412,7 +2278,6 @@ dialog{
 You received the $r  Forged Blade$w!$0
 Its edge is a force to be
 reckoned with!
-  
 ]]
 }
 
@@ -2424,7 +2289,6 @@ dialog{
 You received the $r  Light Sword$w!$0
 Its shining edge can destroy
 most anything!
-  
 ]]
 }
 
@@ -2436,7 +2300,6 @@ dialog{
 You found an $r Odd Mushroom$w!
 The scent is quite...
 interesting.
-  
 ]]
 }
 
@@ -2449,7 +2312,6 @@ You traded the  $r Goron Vase$w
 for a $r Zora Scale$w!$0
 Another race-specific thing, I wonder
 what you'll do with it?
-  
 ]]
 }
 
@@ -2461,7 +2323,6 @@ dialog{
 You traded the  $r Zora Scale$w for a
 $rFrozen Fish$w!$0
 Finally something with some mass appeal!
-  
 ]]
 }
 
@@ -2473,7 +2334,6 @@ dialog{
 You traded the  $r Frozen Fish$w for the
 $rCulinary Arts of Hyrule book$w !$0
 Neat!
-  
 ]]
 }
 
@@ -2486,7 +2346,6 @@ You traded the $r Culinary Arts of
 Hyrule book$w for a $r Rito Feather$w!$0
 Finally a truly useful item! Maybe this
 trading stuff is done?
-  
 ]]
 }
 
@@ -2499,7 +2358,6 @@ Your $r Odd Mushroom$w  was made
 into some $r Odd Potion$w!
 Whatever you do with it, 
 don't try to drink it!
-  
 ]]
 }
 
@@ -2513,7 +2371,6 @@ a $rDeku Mask$w!$0
 Not sure what the  $g Deku$w wanted
 with that potion, but I'll bet
 this is considered trading up!
-  
 ]]
 }
 
@@ -2522,13 +2379,12 @@ dialog{
   icon = "43",
   skip = "current",
   text = [[
-You traded the  $r Deku Mask$w for a
-$rMoon Tear$w!$0
+You traded the  $r Deku Mask$w for
+a $rMoon Tear$w!$0
 
 It's weird that the guy wanted
-the mask so bad, but who cares
+the mask so badly, but who cares
 since this is shiny!
-  
 ]]
 }
 
@@ -2541,7 +2397,6 @@ You traded the  $r Moon Tear$w
 for a $r Crystal Ball$w!$0
 You swapped one shiny thing
 for another!
-  
 ]]
 }
 
@@ -2554,7 +2409,6 @@ You traded a $r Crystal Ball$w
 for a $r hunk of meat$w!$0
 Impa thinks it's tasty, but
 I wouldn't try it.
-  
 ]]
 }
 
@@ -2568,7 +2422,6 @@ for $r Dog Food$w!$0
 Not exactly a fair trade, 
 but you felt bad for the
 hungry Moblin.
-  
 ]]
 }
 
@@ -2580,7 +2433,6 @@ dialog{
 You traded the  $r Dog Food$w 
 for some yummy  $r Bananas$w!$0
 Now we're getting somewhere!
-  
 ]]
 }
 
@@ -2593,7 +2445,6 @@ You traded $r Bananas$w for a
 $rGoron Vase$w!$0
 It's quite beautiful but you're not sure
 who would want one besides a  $g Goron$w.
-  
 ]]
 }
 
@@ -2605,7 +2456,6 @@ dialog{
 You found the  $r Red Tunic$w!$0
 This will prevent heat exhaustion
 as well as cut the damage you take!
-  
 ]]
 }
 
@@ -2618,7 +2468,6 @@ You found the  $r Blue Tunic$w!$0
 This will prevent you from getting
 too tired while swimming, as well
 as cut the damage you take!
-  
 ]]
 }
 
@@ -2629,7 +2478,6 @@ dialog{
   text = [[
 You got a $r World Map$w!$0
 Now you may not get lost!
-  
 ]]
 }
 
@@ -2641,7 +2489,6 @@ dialog{
 You got an $r expanded World Map$w!$0
 Now you can explore the Subrosian
 underworld without fear!
-  
 ]]
 }
 
@@ -2653,7 +2500,6 @@ dialog{
 You got a $r complete World Map$w!$0
 Now you can explore the entirety
 of Hyrule without hesitation!
-  
 ]]
 }
 
@@ -2662,7 +2508,6 @@ dialog{
   skip = "current",
   text = [[
 Watch your $g Magic Meter$w!
-  
 ]]
 }
 
@@ -2674,7 +2519,6 @@ Us $g Anouki$w... We gotta reputation for
 having sensitive hearts and refined
 speech...$0 'Cause, ya know, that's
 what we're all about!
-  
 ]]
 }
 
@@ -2684,7 +2528,6 @@ dialog{
   text = [[
 What's up here? What do you mean?!
 Look at all this awesome snow and ice!
-  
 ]]
 }
 
@@ -2696,8 +2539,7 @@ Well, I guess there is a neat cave not far
 from here. I used to go all the time, but
 lately there's been a bunch of scary
 monsters in there. Maybe you could take
-care of that.
-  
+care of that, mister.
 ]]
 }
 
@@ -2706,9 +2548,8 @@ dialog{
   skip = "current",
   text = [[
 You took care of the cave, you say?
-Well thanks mister!$0
+Well thanks, mister!$0
 You're pretty okay.
-  
 ]]
 }
 
@@ -2719,7 +2560,6 @@ dialog{
 Cave? Yeah, $b Snowpeak Caverns$w!
 It's the best.$0 Nothing but cold and
 dark as far as the eye can see.
-  
 ]]
 }
 
@@ -2733,7 +2573,6 @@ so maybe you should explore somewhere
 safer first. Have you been to the $b other
 side of the mountain that's not covered 
 in snow?$w
-  
 ]]
 }
 
@@ -2744,7 +2583,6 @@ dialog{
 THERE'S TWO CAVES HERE!!!
 Caves are just the best. That one over
 there even has a flying lady inside.
-  
 ]]
 }
 
@@ -2754,7 +2592,6 @@ dialog{
   text = [[
 What am I doing way over here?
 Um... I'd ask you the same thing, mister.
-  
 ]]
 }
 
@@ -2766,7 +2603,6 @@ You like our ice sculptures? Thanks!
 I made several of them myself. It's fun
 to turn ice into other things that
 aren't normally ice.
-  
 ]]
 }
 
@@ -2785,7 +2621,6 @@ to do much. Sometimes I wish I had
 someone to pass my knowledge onto.
 Someone who could do the great work that
 I can no longer do.
-  
 ]]
 }
 
@@ -2797,7 +2632,6 @@ You say you've met someone who would like
 to learn my ways? Well, that's great
 news! If you can convinve him to come
 here, we can start our work right away!
-  
 ]]
 }
 
@@ -2808,7 +2642,6 @@ dialog{
 He'll be here any time, you say?
 Well, I should hurry and prepare my
 materials!
-  
 ]]
 }
 
@@ -2821,7 +2654,6 @@ well! Of course it will be some time
 before he'll be of any use to his city,
 but someday he could be almost as great
 as me!
-  
 ]]
 }
 
@@ -2830,7 +2662,6 @@ dialog{
   text = [[
 Get out your bow and start firing,
 and good luck!
-  
 ]]
 }
 
@@ -2848,7 +2679,6 @@ points that you get!
 So, wanna play?
 Yes
 No
-  
 ]]
 }
 
@@ -2858,7 +2688,6 @@ dialog{
 You don't have enough arrows. Tell
 you what, I'll give you 10 just for
 paying to play my little game.
-  
 ]]
 }
 
@@ -2918,10 +2747,8 @@ dialog{
   id = "astronomer.0.house",
   skip = "current",
   text = [[
-Good day. My name is Mosq, and I'm
-a famous astronomer in this area
-of Hyrule.
-  
+Good day. My name is Mosq, and I'm a
+famous astronomer in this area of Hyrule.
 ]]
 }
 
@@ -2950,10 +2777,8 @@ dialog{
   id = "astronomer.0.trading_no",
   skip = "current",
   text = [[
-You are quite cruel for getting my
-hopes up like that. Please leave
-my house.
-  
+You are quite cruel for getting my hopes
+up like that. Please leave my house.
 ]]
 }
 
@@ -2962,13 +2787,11 @@ dialog{
   skip = "current",
   text = [[
 Thank you so much for your kindness!
-You have made me very happy. So
-happy in fact that I will give you
-my most prized posession. This Moon
-Tear is incredibly rare and only
-known to astronomers like me.
+You have made me very happy. So happy in
+fact that I will give you my most prized
+posession. This Moon Tear is incredibly
+rare and only known to astronomers like me.
 Please cherish it as I have.
-  
 ]]
 }
 
@@ -2976,12 +2799,11 @@ dialog{
   id = "bagu.0.bridge",
   skip = "current",
   text = [[
-Bagu is my name. I protect the city
-of Saria and won't let the weak in.
-Show you have true strength to lift
-even the heaviest of items, and I'll
-let you cross the bridge.
-  
+Bagu is my name. I protect the city of
+Saria and won't let the weak in. Show you
+have true strength to lift even the
+greatest of items, and I'll let you
+cross the bridge.
 ]]
 }
 
@@ -3005,13 +2827,79 @@ Enjoy the beautiful city of Saria.
 }
 
 dialog{
+  id = "belahim.0.speech_1",
+  text = [[
+Ever since this world was created from
+nothing by the so-called Golden Goddesses,
+there have been those who are attracted
+to the beautiful things which are visible
+in the light, and there are those who are
+enthraled by the darkness which is less
+visible.
+]]
+}
+
+dialog{
+  id = "belahim.0.speech_2",
+  text = [[
+What's that? You didn't know that what
+you call "evil" has existed since the
+beginning? Of course, young boy, you must
+know that everything lives in balance -
+light and dark, "good" and "evil" - and
+that this distinction has always been.
+]]
+}
+
+dialog{
+  id = "belahim.0.speech_3",
+  text = [[
+My people were drawn to the story of
+parallel creation. The opposite force that
+was brought into being in response to
+Din's formation of the land, Farore's
+spawning of life and Nayru's creation of
+law and order. Legend tells of the
+imprisoning of the Primodial Chaos in Din's
+earth in the beginning, and the frequent
+repeated attempts to trap it again since.
+All of this repeated bloodshed is required
+by Nayru's "Law" and her pathetic notion
+of "Fate" or "Destiny". 
+]]
+}
+
+dialog{
+  id = "belahim.0.speech_4",
+  text = [[
+And finally, the last piece is the people
+who shield the Chaos, the Demise, from
+destruction. The tribe which has always
+existed, since the dawn of creation, in
+order to further the interests of darkness
+in this magical land - all as the Goddesses
+themselves so desired, in the glorious
+name of balance.
+]]
+}
+
+dialog{
+  id = "belahim.0.speech_5",
+  text = [[
+For you see, though darkness and light
+cannot exist without the other, one can
+always be in control - and this world
+has been bathed in light for long enough!
+]]
+}
+
+dialog{
   id = "bilo.0",
   skip = "current",
   text = [[
 Such a beautiful day for a festival,
 isn't it? Just another amazing day in
 my life! Now run off and have fun!
-  
 ]]
 }
 
@@ -3027,7 +2915,6 @@ should stop by $b Hyrule Castle Town$w and
 ask the mayor - it's straight north
 of here, through the woods.
 Can't miss it!
-  
 ]]
 }
 
@@ -3039,7 +2926,6 @@ Hmm... guess I have a roommate now.
 Or wait, I'm the roommate?
 I'm confused.$0 Either way, I don't
 live well with others!
-  
 ]]
 }
 
@@ -3051,7 +2937,6 @@ Silly human. You think you're strong
 enough to face the entirety of the
 great $mDark Tribe$w? We shall show you
 how far our power reaches!
-  
 ]]
 }
 
@@ -3062,7 +2947,6 @@ dialog{
 You may have defeated me, but you're too
 late to stop what  $m my people$whave already
 set into motion!
-  
 ]]
 }
 
@@ -3079,7 +2963,6 @@ trying new and exciting foods.
 If you find something I might like
 to try, then I'd gladly repay you
 with bananas!
-  
 ]]
 }
 
@@ -3097,7 +2980,6 @@ I'll happily give it a try!
 Trade?
 Yes
 No
-  
 ]]
 }
 
@@ -3105,10 +2987,9 @@ dialog{
   id = "chef.0.trading_no",
   skip = "current",
   text = [[
-That's too bad. I guess I'll just
-need to keep my nose peeled for
-other intriguing smells!
-  
+That's too bad. I guess I'll just need
+to keep my nose peeled for other
+intriguing smells!
 ]]
 }
 
@@ -3120,11 +3001,9 @@ dialog{
 Delicious! I must say, this might be
 my new favorite food!$0
 What do you call it?$0 Dog Food?$0
-What an odd name. I will have to
-find some more of this dog food...
-Anyway, here are the bananas
-I promised!
-  
+What an odd name. I will have to find
+some more of this dog food...
+Anyway, here are the bananas I promised!
 ]]
 }
 
@@ -3158,7 +3037,6 @@ chests and try to earn as many rupees
 as you can! So, want to play?
 Yes
 No
-  
 ]]
 }
 
@@ -3173,7 +3051,6 @@ still want to play, I'll let you- but you
 won't win anything as good as the wallet!
 Play
 Don't
-  
 ]]
 }
 
@@ -3208,7 +3085,6 @@ It's 20 rupees!
 Play?
 Yes
 No
-  
 ]]
 }
 
@@ -3219,7 +3095,6 @@ dialog{
 That's our best prize! You won't be
 getting anything as cool as that
 again...
-  
 ]]
 }
 
@@ -3336,8 +3211,8 @@ fun to make, thanks!
 dialog{
   id = "crista.0.potion_free",
   text = [[
-I'll even give you the first one free when you come
-to the shop!
+I'll even give you the first one free when
+you come to the shop!
 ]]
 }
 
@@ -3392,7 +3267,6 @@ for me to make a Blue Potion!
 Would you like me to?
 Sure!
 Nope.
-  
 ]]
 }
 
@@ -3407,7 +3281,6 @@ for me to make a Revitalizing Potion!
 Would you like me to?
 Sure!
 Nope.
-  
 ]]
 }
 
@@ -3425,7 +3298,6 @@ able to make an interesting potion.
 What do you say?
 Sure!
 Nope.
-  
 ]]
 }
 
@@ -3449,7 +3321,6 @@ just stay here for hours!$0. $0. $0.
 What do you think?
 I agree, it's great!
 Looks like woods...
-  
 ]]
 }
 
@@ -3463,7 +3334,6 @@ I know what you'd like! The odd
 structure just north of here! I'd check
 it out myself, but it's dark and you
 have a lantern...
-  
 ]]
 }
 
@@ -3475,7 +3345,6 @@ Obviously you haven't explored enough
 of these woods! You should really look
 around more... Yeah!
 Like that odd structure just up ahead!
-  
 ]]
 }
 
@@ -3523,7 +3392,6 @@ dialog{
 Did you check out that place?$0
 I really want to know what it is, but
 I'm afraid of the dark.
-  
 ]]
 }
 
@@ -3544,7 +3412,6 @@ dialog{
 Thank you so much, $v!
 I'm heading back to the village now...
 Care to come with?
-  
 ]]
 }
 
@@ -3555,7 +3422,6 @@ dialog{
 What's that?$0 Oh, mother's concerned
 about me? I probably have enough for
 now, and I don't want her worrying!
-  
 ]]
 }
 
@@ -4084,7 +3950,6 @@ dialog{
 I don't think we're unreasonable. We were
 here first and we need our space. These
 $gSLIMY SNAKES$w$0   can go back to the water!
-  
 ]]
 }
 
@@ -4213,7 +4078,6 @@ dialog{
 Step on the warp tile in front of
 you to exit the perils of the cave -
 if you return, you must begin again.
-  
 ]]
 }
 
@@ -4229,7 +4093,6 @@ She looks marvelous!
 What now?
 Fill up hearts
 Keep in bottle
-  
 ]]
 }
 
@@ -4305,7 +4168,6 @@ It looks mysterious.
 What now?
 Keep in bottle
 Let go
-  
 ]]
 }
 
@@ -4315,24 +4177,20 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-Would you like to fill an
-empty Bottle up with water?
-
-
+Fill an empty Bottle with water?
 Fill
 Don't
-  
 ]]
 }
 
 dialog{
   id = "found_water.no_bottle",
+  icon = "8",
   skip = "current",
   text = [[
 There's water here, but
 you don't have anything
 to keep it in...
-  
 ]]
 }
 
@@ -4341,9 +4199,9 @@ dialog{
   icon = "8",
   skip = "current",
   text = [[
-There's water here,
-but you don't have
-any empty Bottles!
+There's water here, but
+you don't have any empty
+Bottles!
   
 ]]
 }
@@ -4356,7 +4214,6 @@ Yeah, they really outdid themselves
 this year! There's also goat rides, and
 milking contests, and Rudy is doing
 smith demonstrations all day!
-  
 ]]
 }
 
@@ -4365,7 +4222,6 @@ dialog{
   skip = "current",
   text = [[
 Yeah, what do you wanna do?
-  
 ]]
 }
 
@@ -4374,7 +4230,6 @@ dialog{
   skip = "current",
   text = [[
 Uncle Tristan! Can we try the maze race?
-  
 ]]
 }
 
@@ -4386,7 +4241,6 @@ dialog{
 Yeah! Wanna race?
 Sure!
 Nope
-  
 ]]
 }
 
@@ -4396,21 +4250,17 @@ dialog{
   text = [[
 See that $b blue bar$w up there?
 That's called your "Stamina Bar".
-It decreases any time you do
-something that takes energy, like
-use an item or perform an action!
-If it gets too low, you won't want
-to do stuff anymore. Then you'll
-need to eat something, like an
-apple or a pumpkin, or go to sleep
-to restore your energy.
-Your stamina also gets restored a
-very little bit any time you get
-a heart or a fairy!$0
-Be sure to find the balance between
-random adventuring and taking
-care of yourself!
-  
+It decreases any time you do something
+that takes energy, like use an item or
+perform an action! If it gets too low,
+you won't want to do stuff anymore. Then
+you'll need to eat something, like an
+apple or a pumpkin, or go to sleep to
+restore your energy. Your stamina also
+gets restored a very little bit any time
+you get a heart or a fairy!$0
+Be sure to find the balance between random
+adventuring and taking care of yourself!
 ]]
 }
 
@@ -4419,12 +4269,11 @@ dialog{
   skip = "current",
   text = [[
 So you noticed my trees, huh?
-I'm working as the groundskeeper
-here, so I planted saplings that I
-got from friends up north and next
-thing you know, I got these beauts!
+I'm working as the groundskeeper here,
+so I planted saplings that I got from
+friends up north and next thing you know,
+I got these beauts!
 One of a kind, these are...
-  
 ]]
 }
 
@@ -4432,10 +4281,8 @@ dialog{
   id = "gaira.1.ordon",
   skip = "current",
   text = [[
-What's that? You saw some of my
-trees somewhere else? I'm not 
-sure I believe it!
-  
+What's that? You saw some of my trees
+somewhere else? I'm not sure I believe it!
 ]]
 }
 
@@ -4454,11 +4301,10 @@ dialog{
   id = "gaira.2.ordon",
   skip = "current",
   text = [[
-Poisoned trees you say? Well, I
-can't allow that to happen so near
-to me and not take a look, now can I?
-Show me where they are, and I'll
-fix them right up for sure!
+Poisoned trees you say? Well, I can't
+allow that to happen so near to me and not
+take a look, now can I? Show me where they
+are, and I'll fix them right up for sure!
   
 ]]
 }
@@ -6152,7 +5998,6 @@ dialog{
   text = [[
 $v, come on!
 You're gonna miss the whole festival!
-  
 ]]
 }
 
@@ -6187,7 +6032,6 @@ menu, and you can play with a pad!
 Did you get everything?
 Yup!
 Not a word!
-  
 ]]
 }
 
@@ -6195,11 +6039,9 @@ dialog{
   id = "jarred.1.ordon_next",
   skip = "current",
   text = [[
-Thanks for listening to me all
-along! I know I can ramble.
-Here, I think you deserve a little
-gift for my rambling...
-  
+Thanks for listening to me all along!
+I know I can ramble. Here, I think you
+deserve a little gift for my rambling...
 ]]
 }
 
@@ -6297,7 +6139,6 @@ dialog{
   text = [[
 Hi there! I'm Julita, and I run the
 potion shop.
-  
 ]]
 }
 
@@ -6309,7 +6150,6 @@ dialog{
 Care to try a potion?
 Yes
 No
-  
 ]]
 }
 
@@ -6319,7 +6159,6 @@ dialog{
   text = [[
 You don't have anything that uses
 magic! No need to sample our potion!
-  
 ]]
 }
 
@@ -6329,7 +6168,6 @@ dialog{
   text = [[
 Ok, but stop by if you want to try
 our famous $r Magic Potion$w.
-  
 ]]
 }
 
@@ -6340,7 +6178,6 @@ dialog{
 That's a sample of our famous
 $rMagic Potion$w.
 Your meter is filled!
-  
 ]]
 }
 
@@ -6360,7 +6197,6 @@ should be enough to protect you and that
 $rlantern$w will light the way should it get
 too dark. I really appreciate you putting
 my worries to rest!
-  
 ]]
 }
 
@@ -6371,7 +6207,6 @@ dialog{
 What? You say you don't have a
 $r shield$w? Well go talk to $g Rudy$w and
 claim your prize!
-  
 ]]
 }
 
@@ -6381,7 +6216,6 @@ dialog{
   text = [[
 Thanks again for finding my beloved
 $gCrista$w!
-  
 ]]
 }
 
@@ -6391,7 +6225,6 @@ dialog{
   text = [[
 Hey! $g Crista's$w at the shop if you'd
 like to say hello!
-  
 ]]
 }
 
@@ -6405,7 +6238,6 @@ I swear he knows everything about
 those woods and probably other places
 too! If you don't know where to go
 next, I bet he'd have some ideas.
-  
 ]]
 }
 
@@ -6879,8 +6711,7 @@ Tell you what, if you come back when you
 have two rows of hearts, I'll give you
 a $r map to this area$w, and you can explore.
 Until then, how about heading back home
-before you get hurt?
-
+before you get hurt!
 ]]
 }
 
@@ -6891,7 +6722,6 @@ Wow, you have a lot of hearts! I think
 now I trust you to explore my part of
 the world. This  $r map$w should ensure you
 don't get lost too easily.
-  
 ]]
 }
 
@@ -6914,7 +6744,6 @@ dialog{
 Me hear protecting this dangerous cave.
 You no go inside. Way dark, scary and
 full of monsters!
-  
 ]]
 }
 
@@ -6929,7 +6758,6 @@ Me so hungry...
 You give tasty meat?
 Yes
 No
-  
 ]]
 }
 
@@ -6939,7 +6767,6 @@ dialog{
   text = [[
 Me no like you.$0
 Get out of Moblin cave!
-  
 ]]
 }
 
@@ -6950,7 +6777,6 @@ dialog{
 (munch) *munch*$0 Yum!
 Moblin so happy. Moblin give you this
 can of dog food. Moblin only possession.
-  
 ]]
 }
 
@@ -6962,7 +6788,6 @@ Hmmm... we're bored now that all
 the fun fighting is over. I guess
 you can have this  $c dingy paper$w back -
 we won't need it where we're going!
-  
 ]]
 }
 
@@ -6972,7 +6797,6 @@ dialog{
   text = [[
 We already said it...
 We're bored with you.
-  
 ]]
 }
 
@@ -6980,11 +6804,9 @@ dialog{
   id = "monkey1.0.faron",
   skip = "current",
   text = [[
-This fighting is so much fun to
-watch! I heard yelling from all
-the way on the other side of the
-forest and I came running!
-  
+This fighting is so much fun to watch!
+I heard yelling from all the way on the
+other side of the forest and came running!
 ]]
 }
 
@@ -6994,7 +6816,6 @@ dialog{
   text = [[
 What're you doing?$0
 There's nothing to see up here...
-  
 ]]
 }
 
@@ -7007,7 +6828,6 @@ have there. It looks important! I like
 important things, so I'm takin' it!$0
 ...$0And don't go trying to find me,
 $gBoy in Green$w!
-  
 ]]
 }
 
@@ -7017,7 +6837,6 @@ dialog{
   text = [[
 You should get a little closer and
 enjoy the show...
-  
 ]]
 }
 
@@ -7088,7 +6907,6 @@ in your lantern. When you require
 assistance I'll be there. For now,
 return to your people. Fate will inform
 when you are needed...
-  
 ]]
 }
 
@@ -7099,7 +6917,6 @@ Wait, $v!
 You haven't gotten all of the parts for
 the $gGerudo$w yet! If you want to help the
 $gTokay$w, you should go back to the pyramid.
-  
 ]]
 }
 
@@ -7126,7 +6943,6 @@ find the evil that lies in wait and
 vanquish it! Your village home is safe
 for now, but will remain so only as long
 as you fight!$0 Onward hero!
-  
 ]]
 }
 
@@ -7143,7 +6959,6 @@ Elders in $bCastle Town$w. If you venture to
 the center of the land, you will find
 the castle and your questions may
 be answered...
-  
 ]]
 }
 
@@ -7157,7 +6972,6 @@ You have extensively searched the south
 and west of Hyrule, so I would recommend
 traveling north or east. Perhaps the
 friendly $g Gorons$w will have advice?
-  
 ]]
 }
 
@@ -7175,7 +6989,6 @@ waters.$0 You should also know that
 directly north of here, amidst pools of
 lava, lies a portal to the underground
 realm of $b Subrosia$w.
-  
 ]]
 }
 
@@ -7190,7 +7003,6 @@ $bSnowpeak$w and the  $g Anouki people$w lie on the
 far end of the world, in the north-west
 edge. They may be able to lead you to
 your next prize.$0
-  
 ]]
 }
 
@@ -7206,7 +7018,6 @@ new addition to our landscape. A great
 tower has been built by the people there,
 and it seems likely that the prize you
 seek will be at the top.
-  
 ]]
 }
 
@@ -7225,7 +7036,6 @@ conceal it. I can sense a large
 concentration of $m dark magic$w in the
 eastern woods - what was once referred
 to as the $r Lost Woods$w.
-  
 ]]
 }
 
@@ -7511,7 +7321,6 @@ you bear $w.$0 You will be permitted to
 step foot on this hallowed ground. But
 be warned, leave anything amiss and you
 will be severely punished!
-  
 ]]
 }
 
@@ -7523,7 +7332,6 @@ Daddy set up a maze race around town
 for all us kids, and whoever can run
 through it fast enough and light all
 the torches wins!
-  
 ]]
 }
 
@@ -7532,7 +7340,6 @@ dialog{
   skip = "current",
   text = [[
 What do you wanna do, $v?
-  
 ]]
 }
 
@@ -7549,7 +7356,6 @@ out an object, talk to someone, read a
 sign, lift a jar... Look up often at the
 $bblue icon$w to know when you can do
 neat stuff!
-  
 ]]
 }
 
@@ -7878,12 +7684,10 @@ dialog{
   id = "rudy.0",
   skip = "current",
   text = [[
-Hello there! I don't believe we've
-met. My name is $g Rudy$W, I'm the
-village blacksmith. If you need
-anything fixed up, be sure to
-find me!
-  
+Hello there! I don't believe we've met.
+My name is $g Rudy$W, I'm the village
+blacksmith. If you need anything fixed up,
+be sure to find me!
 ]]
 }
 
@@ -7894,7 +7698,6 @@ dialog{
 Hey there! I just finished one of my
 demonstrations, but if you come back in
 an hour or so I'll be ready to go again.
-  
 ]]
 }
 
@@ -7904,7 +7707,6 @@ dialog{
   text = [[
 So you won $g Tristan's$w race, huh?
 Well, then I suppose this is yours.
-  
 ]]
 }
 
@@ -7915,7 +7717,6 @@ dialog{
 Take care of that. And come visit me
 later if you need anything. I live in a
 cave just west of here in the woods.
-  
 ]]
 }
 
@@ -7925,7 +7726,6 @@ dialog{
   text = [[
 By the way, I heard your friend at
 the potion shop was looking for you.
-  
 ]]
 }
 
@@ -7943,7 +7743,6 @@ beach where I usually fill up, there
 were some strange women blocking the
 path. Would you mind checking out the
 situation and getting me some water?
-  
 ]]
 }
 
@@ -7953,7 +7752,6 @@ dialog{
   text = [[
 Hey there! Isn't it a beautiful time
 for the festival?
-  
 ]]
 }
 
@@ -7963,7 +7761,6 @@ dialog{
   text = [[
 Would you mind checking out the
 situation and getting me some water?
-  
 ]]
 }
 
@@ -7975,7 +7772,6 @@ Wait a second, you don't have a
 $rbottle$w to hold water in! Here, you
 can borrow mine for a little while.
 Thanks for your help!
-  
 ]]
 }
 
@@ -7985,10 +7781,8 @@ dialog{
   text = [[
 That's exactly what I need!
 Thank you so much.
-I'll get that poured into my basin
-and I'll be ready to work on whatever
-you need!
-  
+I'll get that poured into my basin and
+I'll be ready to work on whatever you need!
 ]]
 }
 
@@ -8000,7 +7794,6 @@ dialog{
 Hey, what do you need?
 Some work done
 Just to chat
-  
 ]]
 }
 
@@ -8011,7 +7804,6 @@ dialog{
 Hmm... never been too good with
 small talk. $0
 Seen any good  $r metal ore$w recently?
-  
 ]]
 }
 
@@ -8022,7 +7814,6 @@ dialog{
 Just so you know, I could probably
 improve your sword if you were able
 to find me the right materials.
-  
 ]]
 }
 
@@ -8040,7 +7831,6 @@ in no time!
 How about it?
 Yes
 No
-  
 ]]
 }
 
@@ -8050,7 +7840,6 @@ dialog{
   text = [[
 Wonderful! Leave it to me and I'll
 get your old sword perked right up!
-  
 ]]
 }
 
@@ -8060,7 +7849,6 @@ dialog{
   text = [[
 Not sure what else you'll do with a
 hunk of ore, but it's your choice.
-  
 ]]
 }
 
@@ -8070,7 +7858,6 @@ dialog{
   text = [[
 Leaving already? Well, you wouldn't
 want to go without this, right?
-  
 ]]
 }
 
@@ -8079,7 +7866,6 @@ dialog{
   skip = "current",
   text = [[
 Feels great to work on a sword again!
-  
 ]]
 }
 
@@ -8087,11 +7873,9 @@ dialog{
   id = "rudy.6.cave",
   skip = "current",
   text = [[
-I don't know how much more
-I'll be able to help you on
-your adventure, but if I can,
-please come see me!
-  
+I don't know how much more I'll be able
+to help you on your adventure, but if I
+can, please come see me!
 ]]
 }
 
@@ -9052,7 +8836,6 @@ dialog{
 This here's the $b Ordon Ranch$w. If
 you come back in a bit, I might
 have some milkin' contests goin'!
-  
 ]]
 }
 
@@ -9062,7 +8845,6 @@ dialog{
   text = [[
 Why'd you stop to talk to me?
 The clock's tickin'!
-  
 ]]
 }
 
@@ -9072,7 +8854,6 @@ dialog{
   text = [[
 Howdy kid. Whatever you do, don't
 go spookin' my goats!
-  
 ]]
 }
 
@@ -9115,7 +8896,6 @@ Wait! Where are you going? Aren't you
 going to help us get our beach back?
 Please get whatever the pirates need
 from the desert! Please?
-  
 ]]
 }
 
@@ -9128,7 +8908,6 @@ forest here and and you're saying you
 can't even share part of it? We were
 forced out of our homes! All we're
 looking for is a little help.
-  
 ]]
 }
 
@@ -9213,7 +8992,6 @@ dialog{
   text = [[
 We need our beach back!$0
 Could you please help us?
-  
 ]]
 }
 
@@ -9223,7 +9001,6 @@ dialog{
   text = [[
 They can't share one little corner of
 this huge forest?
-  
 ]]
 }
 
@@ -9236,7 +9013,6 @@ have our beach back, but those women
 with the spears are much scarier than
 these $g OVERGROWN SHRUBS$w$0,   so we
 have no choice but to stay here.
-  
 ]]
 }
 
@@ -9247,7 +9023,6 @@ dialog{
 Thank you so much for getting us our
 beach back! Please visit any time
 you'd like.
-  
 ]]
 }
 
@@ -9279,8 +9054,7 @@ dialog{
   skip = "current",
   text = [[
 Moths are attracted to flame!
-Wonder what would happen if
-you light this?
+Wonder what would happen if you light this?
 ]]
 }
 
@@ -9288,8 +9062,8 @@ dialog{
   id = "torch.need_lamp",
   skip = "current",
   text = [[
-It looks like this torch could be
-lit, if you had access to some fire.
+It looks like this torch could be lit,
+if you had access to some fire.
 ]]
 }
 
@@ -9518,13 +9292,12 @@ Why hello $v!
 It's good to see you again, but what
 brings you to the castle, I wonder?$0
 What's that?$0 $c Book of Mudora$w?$0
-I've heard legends which speak of
-the book, but I know none of the
-details. The book was said to be
-written by a man very close to an
-ancient Royal Family, so maybe you
-should ask $g Princess Zelda$w what
-she knows.
+I've heard legends which speak of the
+book, but I know none of the details.
+The book was said to be written by a man
+very close to an ancient Royal Family, so
+maybe you should ask $g Princess Zelda$w
+what she knows.
 ]]
 }
 
