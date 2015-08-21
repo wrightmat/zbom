@@ -2357,6 +2357,15 @@ tile{
   pattern = "420",
 }
 
+tile{
+  layer = 0,
+  x = 192,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "139",
+}
+
 destination{
   name = "from_outside_house_1",
   layer = 0,

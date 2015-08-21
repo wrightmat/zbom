@@ -6,7 +6,7 @@ local enemy = ...
 local shocking = false
 
 function enemy:on_created()
-  self:set_life(3); self:set_damage(3)
+  self:set_life(3); self:set_damage(4)
   self:create_sprite("enemies/chuchu_yellow")
   self:set_size(16, 16); self:set_origin(8, 13)
 end

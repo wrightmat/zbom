@@ -1,67 +1,85 @@
 animation{
-  name = "walking",
+  name = "stopped",
   src_image = "enemies/shadow_link.png",
-  frame_delay = 200,
-  frame_to_loop_on = 0,
   directions = {
-    { x = 0, y = 256, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 6 },
-    { x = 0, y = 160, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 6 },
-    { x = 0, y = 192, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 6 },
-    { x = 0, y = 224, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 6 },
+    { x = 0, y = 0, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
+    { x = 0, y = 32, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
+    { x = 0, y = 96, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
+    { x = 0, y = 128, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29 },
+  },
+}
+animation{
+  name = "dying",
+  src_image = "enemies/shadow_link.png",
+  frame_delay = 125,
+  frame_to_loop_on = 9,
+  directions = {
+    { x = 288, y = 136, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 10 },
   },
 }
 animation{
   name = "hurt",
   src_image = "enemies/shadow_link.png",
-  frame_delay = 50,
-  frame_to_loop_on = 0,
   directions = {
-    { x = 0, y = 256, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
-    { x = 0, y = 160, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
-    { x = 0, y = 192, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
-    { x = 0, y = 224, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+    { x = 216, y = 136, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 240, y = 136, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 264, y = 136, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 288, y = 136, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
   },
 }
 animation{
-  name = "immobilized",
+  name = "spin_attack",
   src_image = "enemies/shadow_link.png",
+  frame_delay = 30,
   directions = {
-    { x = 0, y = 256, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
-    { x = 0, y = 160, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
-    { x = 0, y = 192, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
-    { x = 0, y = 224, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
-  },
-}
-animation{
-  name = "parry",
-  src_image = "enemies/shadow_link.png",
-  frame_delay = 100,
-  directions = {
-    { x = 0, y = 120, frame_width = 40, frame_height = 40, origin_x = 16, origin_y = 29, num_frames = 4 },
-    { x = 0, y = 0, frame_width = 40, frame_height = 40, origin_x = 16, origin_y = 29, num_frames = 4 },
-    { x = 0, y = 40, frame_width = 40, frame_height = 40, origin_x = 16, origin_y = 29, num_frames = 4 },
-    { x = 0, y = 80, frame_width = 40, frame_height = 40, origin_x = 16, origin_y = 29, num_frames = 4 },
-  },
-}
-animation{
-  name = "shaking",
-  src_image = "enemies/shadow_link.png",
-  frame_delay = 100,
-  directions = {
-    { x = 192, y = 256, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 8 },
-    { x = 192, y = 160, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 8 },
-    { x = 192, y = 192, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 8 },
-    { x = 192, y = 224, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 8 },
+    { x = 0, y = 160, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 22 },
+    { x = 0, y = 184, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 22 },
+    { x = 0, y = 208, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 22 },
+    { x = 0, y = 232, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 22 },
   },
 }
 animation{
   name = "sword",
   src_image = "enemies/shadow_link.png",
-  frame_delay = 100,
+  frame_delay = 30,
   directions = {
-    { x = 160, y = 120, frame_width = 40, frame_height = 40, origin_x = 16, origin_y = 29, num_frames = 7 },
-    { x = 160, y = 0, frame_width = 40, frame_height = 40, origin_x = 16, origin_y = 29, num_frames = 7 },
-    { x = 160, y = 40, frame_width = 40, frame_height = 40, origin_x = 16, origin_y = 29, num_frames = 7 },
-    { x = 160, y = 80, frame_width = 40, frame_height = 40, origin_x = 16, origin_y = 29, num_frames = 7 },
+    { x = 0, y = 256, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 12 },
+    { x = 0, y = 288, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 12 },
+    { x = 0, y = 320, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 12 },
+    { x = 0, y = 352, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 12 },
+  },
+}
+animation{
+  name = "sword_loading_stopped",
+  src_image = "enemies/shadow_link.png",
+  directions = {
+    { x = 192, y = 8, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 192, y = 32, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 192, y = 56, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 192, y = 80, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+  },
+}
+animation{
+  name = "sword_loading_walking",
+  src_image = "enemies/shadow_link.png",
+  frame_delay = 100,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 192, y = 8, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 6 },
+    { x = 192, y = 32, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 6 },
+    { x = 192, y = 56, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 6 },
+    { x = 192, y = 80, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 6 },
+  },
+}
+animation{
+  name = "walking",
+  src_image = "enemies/shadow_link.png",
+  frame_delay = 100,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 8 },
+    { x = 0, y = 32, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 8 },
+    { x = 0, y = 96, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 8 },
+    { x = 0, y = 128, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 8 },
   },
 }

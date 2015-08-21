@@ -3,7 +3,7 @@ local enemy = ...
 -- Tektite: a jumping enemy which moves toward the hero.
 
 function enemy:on_created()
-  self:set_life(3); self:set_damage(3)
+  self:set_life(3); self:set_damage(4)
   self:create_sprite("enemies/tektite_blue")
   self:set_size(16, 16); self:set_origin(8, 13)
   self:set_hurt_style("monster")

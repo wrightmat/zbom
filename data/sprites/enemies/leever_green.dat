@@ -15,10 +15,10 @@ animation{
   src_image = "enemies/leever.png",
   frame_delay = 80,
   directions = {
-    { x = 0, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8, num_frames = 5, num_columns = 1 },
-    { x = 0, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8, num_frames = 5, num_columns = 1 },
-    { x = 0, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8, num_frames = 5, num_columns = 1 },
-    { x = 0, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8, num_frames = 5, num_columns = 1 },
+    { x = 0, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8, num_frames = 8, num_columns = 4 },
+    { x = 0, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8, num_frames = 8, num_columns = 4 },
+    { x = 0, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8, num_frames = 8, num_columns = 4 },
+    { x = 0, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8, num_frames = 8, num_columns = 4 },
   },
 }
 animation{
@@ -27,10 +27,10 @@ animation{
   frame_delay = 50,
   frame_to_loop_on = 0,
   directions = {
-    { x = 16, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 16, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 16, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 16, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 0, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 0, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 0, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 0, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
   },
 }
 animation{
@@ -56,7 +56,18 @@ animation{
   },
 }
 animation{
-  name = "sinking",
+  name = "sinking_end",
+  src_image = "enemies/leever.png",
+  frame_delay = 150,
+  directions = {
+    { x = 0, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8, num_frames = 4 },
+    { x = 0, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8, num_frames = 4 },
+    { x = 0, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8, num_frames = 4 },
+    { x = 0, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8, num_frames = 4 },
+  },
+}
+animation{
+  name = "sinking_start",
   src_image = "enemies/leever.png",
   frame_delay = 150,
   directions = {

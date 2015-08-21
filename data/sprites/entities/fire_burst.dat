@@ -1,0 +1,8 @@
+animation{
+  name = "fire_burst",
+  src_image = "entities/fire.png",
+  frame_delay = 80,
+  directions = {
+    { x = 48, y = 0, frame_width = 24, frame_height = 24, origin_x = 8, origin_y = 8, num_frames = 5 },
+  },
+}
