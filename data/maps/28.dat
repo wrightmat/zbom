@@ -6380,6 +6380,24 @@ tile{
   pattern = "1450",
 }
 
+tile{
+  layer = 0,
+  x = 448,
+  y = 152,
+  width = 16,
+  height = 16,
+  pattern = "156",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "155",
+}
+
 wall{
   layer = 0,
   x = 808,
@@ -7412,6 +7430,18 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
+}
+
+teletransporter{
+  name = "to_G11_water",
+  layer = 0,
+  x = 392,
+  y = -16,
+  width = 448,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "33",
+  destination = "_side",
 }
 
 tile{

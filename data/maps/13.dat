@@ -4809,6 +4809,30 @@ destructible{
   can_be_cut = true,
 }
 
+teletransporter{
+  name = "to_H13_water",
+  layer = 0,
+  x = 456,
+  y = -16,
+  width = 672,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "19",
+  destination = "_side",
+}
+
+teletransporter{
+  name = "to_G14_water",
+  layer = 0,
+  x = -16,
+  y = 96,
+  width = 16,
+  height = 1024,
+  transition = "scrolling",
+  destination_map = "12",
+  destination = "_side",
+}
+
 tile{
   layer = 2,
   x = 104,

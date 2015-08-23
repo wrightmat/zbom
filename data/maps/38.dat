@@ -9270,6 +9270,46 @@ destructible{
   can_be_cut = true,
 }
 
+enemy{
+  name = "lizalfos_1",
+  layer = 0,
+  x = 744,
+  y = 221,
+  direction = 0,
+  breed = "lizalfos",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "lizalfos_2",
+  layer = 0,
+  x = 808,
+  y = 493,
+  direction = 0,
+  breed = "lizalfos",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "lizalfos_3",
+  layer = 0,
+  x = 704,
+  y = 861,
+  direction = 0,
+  breed = "lizalfos",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "lizalfos_4",
+  layer = 0,
+  x = 784,
+  y = 1029,
+  direction = 0,
+  breed = "lizalfos",
+  treasure_name = "random",
+}
+
 tile{
   layer = 2,
   x = 264,

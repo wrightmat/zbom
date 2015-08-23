@@ -5458,6 +5458,30 @@ npc{
   behavior = "dialog#sign.H13_floria",
 }
 
+teletransporter{
+  name = "to_H12_water",
+  layer = 0,
+  x = 896,
+  y = -16,
+  width = 224,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "29",
+  destination = "_side",
+}
+
+teletransporter{
+  name = "to_H14_water",
+  layer = 0,
+  x = 472,
+  y = 1120,
+  width = 656,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "13",
+  destination = "_side",
+}
+
 tile{
   layer = 2,
   x = 96,

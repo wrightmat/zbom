@@ -5948,49 +5948,58 @@ tile{
   pattern = "464",
 }
 
+tile{
+  layer = 0,
+  x = 560,
+  y = 984,
+  width = 48,
+  height = 16,
+  pattern = "181",
+}
+
 teletransporter{
+  name = "to_F14",
   layer = 0,
   x = 1120,
   y = 592,
   width = 16,
   height = 528,
-  name = "to_F14",
   transition = "scrolling",
   destination_map = "11",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_E15",
   layer = 0,
   x = 256,
   y = 1120,
   width = 496,
   height = 16,
-  name = "to_E15",
   transition = "scrolling",
   destination_map = "14",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_D14",
   layer = 0,
   x = -16,
   y = 776,
   width = 16,
   height = 288,
-  name = "to_D14",
   transition = "scrolling",
   destination_map = "23",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_smith_cave",
   layer = 0,
   x = 680,
   y = 664,
   width = 16,
   height = 16,
-  name = "to_smith_cave",
   destination_map = "9",
   destination = "from_outside_blacksmith",
 }
@@ -8031,36 +8040,36 @@ destructible{
 }
 
 teletransporter{
+  name = "to_E13",
   layer = 0,
   x = 712,
   y = -16,
   width = 96,
   height = 16,
-  name = "to_E13",
   transition = "scrolling",
   destination_map = "16",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_F14_2",
   layer = 0,
   x = 1120,
   y = 40,
   width = 16,
   height = 32,
-  name = "to_F14_2",
   transition = "scrolling",
   destination_map = "11",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_F14_3",
   layer = 0,
   x = 1120,
   y = 224,
   width = 16,
   height = 80,
-  name = "to_F14_3",
   transition = "scrolling",
   destination_map = "11",
   destination = "_side",
@@ -9025,24 +9034,24 @@ destructible{
 }
 
 teletransporter{
+  name = "to_D14_2",
   layer = 0,
   x = -16,
   y = 248,
   width = 16,
   height = 480,
-  name = "to_D14_2",
   transition = "scrolling",
   destination_map = "23",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_D14_3",
   layer = 0,
   x = -16,
   y = 40,
   width = 16,
   height = 32,
-  name = "to_D14_3",
   transition = "scrolling",
   destination_map = "23",
   destination = "_side",
@@ -9181,42 +9190,42 @@ destructible{
 }
 
 destination{
+  name = "from_smith_cave",
   layer = 0,
   x = 688,
   y = 701,
-  name = "from_smith_cave",
   direction = 3,
 }
 
 enemy{
+  name = "chuchu_2",
   layer = 0,
   x = 960,
   y = 573,
-  name = "chuchu_2",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 teletransporter{
+  name = "to_E15_2",
   layer = 0,
   x = 888,
   y = 1120,
   width = 48,
   height = 16,
-  name = "to_E15_2",
   transition = "scrolling",
   destination_map = "14",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_F14_4",
   layer = 0,
   x = 1120,
   y = 344,
   width = 16,
   height = 176,
-  name = "to_F14_4",
   transition = "scrolling",
   destination_map = "11",
   destination = "_side",

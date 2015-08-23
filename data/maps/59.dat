@@ -1726,6 +1726,66 @@ enemy{
   treasure_name = "random_mountain",
 }
 
+enemy{
+  name = "lynel_3",
+  layer = 0,
+  x = 792,
+  y = 509,
+  direction = 0,
+  breed = "lynel",
+  treasure_name = "random_mountain",
+}
+
+enemy{
+  name = "lynel_4",
+  layer = 0,
+  x = 88,
+  y = 373,
+  direction = 0,
+  breed = "lynel",
+  treasure_name = "random_mountain",
+}
+
+enemy{
+  name = "lynel_5",
+  layer = 0,
+  x = 120,
+  y = 685,
+  direction = 0,
+  breed = "lynel",
+  treasure_name = "random_mountain",
+}
+
+enemy{
+  name = "tektite_3",
+  layer = 0,
+  x = 592,
+  y = 477,
+  direction = 3,
+  breed = "tektite_red",
+  treasure_name = "random_mountain",
+}
+
+enemy{
+  name = "tektite_4",
+  layer = 0,
+  x = 744,
+  y = 965,
+  direction = 3,
+  breed = "tektite_red",
+  treasure_name = "random_mountain",
+}
+
+enemy{
+  name = "tektite_5",
+  layer = 0,
+  x = 640,
+  y = 205,
+  direction = 3,
+  breed = "tektite_red",
+  treasure_name = "random_mountain",
+}
+
 tile{
   layer = 2,
   x = 544,

@@ -4203,12 +4203,12 @@ tile{
 }
 
 teletransporter{
+  name = "to_G8",
   layer = 0,
   x = 64,
   y = 1120,
   width = 464,
   height = 16,
-  name = "to_G8",
   transition = "scrolling",
   destination_map = "46",
   destination = "_side",
@@ -7451,24 +7451,24 @@ destructible{
 }
 
 teletransporter{
+  name = "to_F7",
   layer = 0,
   x = -16,
   y = 24,
   width = 16,
   height = 672,
-  name = "to_F7",
   transition = "scrolling",
   destination_map = "49",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_F7_2",
   layer = 0,
   x = -16,
   y = 760,
   width = 16,
   height = 336,
-  name = "to_F7_2",
   transition = "scrolling",
   destination_map = "49",
   destination = "_side",
@@ -7607,121 +7607,145 @@ destructible{
 }
 
 teletransporter{
+  name = "to_G6",
   layer = 0,
   x = 48,
   y = -16,
   width = 736,
   height = 16,
-  name = "to_G6",
   transition = "scrolling",
   destination_map = "65",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_G8_2",
   layer = 0,
   x = 912,
   y = 1120,
   width = 208,
   height = 16,
-  name = "to_G8_2",
   transition = "scrolling",
   destination_map = "46",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_H7",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 1120,
-  name = "to_H7",
   transition = "scrolling",
   destination_map = "67",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_G6_2",
   layer = 0,
   x = 992,
   y = -16,
   width = 128,
   height = 16,
-  name = "to_G6_2",
   transition = "scrolling",
   destination_map = "65",
   destination = "_side",
 }
 
 enemy{
+  name = "soldier_green_1",
   layer = 0,
   x = 424,
   y = 805,
-  name = "soldier_green_1",
   direction = 3,
   breed = "soldier_green",
   treasure_name = "random",
 }
 
 enemy{
+  name = "tektite_1",
   layer = 0,
   x = 904,
   y = 757,
-  name = "tektite_1",
   direction = 3,
   breed = "tektite_red",
   treasure_name = "random",
 }
 
 enemy{
+  name = "tektite_2",
   layer = 0,
   x = 1008,
   y = 1085,
-  name = "tektite_2",
   direction = 3,
   breed = "tektite_red",
   treasure_name = "random",
 }
 
 enemy{
+  name = "tektite_3",
   layer = 0,
   x = 992,
   y = 381,
-  name = "tektite_3",
   direction = 3,
   breed = "tektite_red",
   treasure_name = "random",
 }
 
 enemy{
+  name = "octorok_1",
   layer = 0,
   x = 272,
   y = 461,
-  name = "octorok_1",
   direction = 3,
   breed = "octorok_blue",
   treasure_name = "random",
 }
 
 enemy{
+  name = "octorok_2",
   layer = 0,
   x = 688,
   y = 157,
-  name = "octorok_2",
   direction = 3,
   breed = "octorok_blue",
   treasure_name = "random",
 }
 
 enemy{
+  name = "octorok_3",
   layer = 0,
   x = 80,
   y = 181,
-  name = "octorok_3",
   direction = 3,
   breed = "octorok_blue",
   treasure_name = "random",
+}
+
+teletransporter{
+  name = "to_G8_water",
+  layer = 0,
+  x = 712,
+  y = 1120,
+  width = 128,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "46",
+  destination = "_side",
+}
+
+teletransporter{
+  name = "to_G6_water",
+  layer = 0,
+  x = 856,
+  y = -16,
+  width = 64,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "65",
+  destination = "_side",
 }
 
 tile{

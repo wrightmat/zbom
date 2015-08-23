@@ -1485,97 +1485,107 @@ tile{
 }
 
 teletransporter{
-  layer = 0,
-  x = 208,
-  y = 1120,
-  width = 912,
-  height = 16,
   name = "to_C12",
+  layer = 0,
+  x = 0,
+  y = 1120,
+  width = 1120,
+  height = 16,
   transition = "scrolling",
   destination_map = "81",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_D11",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 1120,
-  name = "to_D11",
   transition = "scrolling",
   destination_map = "30",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_C12_5",
   layer = 0,
   x = 672,
   y = -152,
   width = 944,
   height = 16,
-  name = "to_C12_5",
   transition = "scrolling",
   destination_map = "81",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_C12_6",
   layer = 0,
   x = 160,
   y = -264,
   width = 944,
   height = 16,
-  name = "to_C12_6",
   transition = "scrolling",
   destination_map = "81",
   destination = "_side",
 }
 
 enemy{
+  name = "crab_3",
   layer = 0,
   x = 568,
   y = 413,
-  name = "crab_3",
   direction = 3,
   breed = "crab",
   treasure_name = "random",
 }
 
 teletransporter{
+  name = "to_C10",
   layer = 0,
   x = 0,
   y = -16,
   width = 1120,
   height = 16,
-  name = "to_C10",
   transition = "scrolling",
   destination_map = "77",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_B11",
   layer = 0,
   x = -16,
   y = 0,
   width = 16,
   height = 32,
-  name = "to_B11",
   transition = "scrolling",
   destination_map = "79",
   destination = "_side",
 }
 
 custom_entity{
+  name = "npc_pim",
   layer = 0,
   x = 756,
   y = 605,
-  width = 16,
-  height = 16,
-  name = "npc_pim",
   direction = 3,
   sprite = "npc/ordon_pim",
   model = "npc_pim",
+}
+
+teletransporter{
+  name = "to_B11_water",
+  layer = 0,
+  x = -16,
+  y = 128,
+  width = 16,
+  height = 992,
+  transition = "scrolling",
+  destination_map = "79",
+  destination = "_side",
 }
 
 tile{

@@ -4337,6 +4337,51 @@ tile{
   pattern = "522",
 }
 
+tile{
+  layer = 0,
+  x = 768,
+  y = 960,
+  width = 16,
+  height = 8,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 768,
+  width = 8,
+  height = 8,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 728,
+  y = 608,
+  width = 8,
+  height = 8,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 344,
+  width = 16,
+  height = 8,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 848,
+  y = 88,
+  width = 8,
+  height = 8,
+  pattern = "12",
+}
+
 teletransporter{
   name = "to_D9",
   layer = 0,

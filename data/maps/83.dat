@@ -4126,6 +4126,60 @@ destructible{
   can_be_cut = true,
 }
 
+teletransporter{
+  name = "to_G11_water",
+  layer = 0,
+  x = -16,
+  y = 160,
+  width = 16,
+  height = 496,
+  transition = "scrolling",
+  destination_map = "33",
+  destination = "_side",
+}
+
+teletransporter{
+  name = "to_H12_water",
+  layer = 0,
+  x = 800,
+  y = 1120,
+  width = 320,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "29",
+  destination = "_side",
+}
+
+enemy{
+  name = "lizalfos_1",
+  layer = 0,
+  x = 384,
+  y = 69,
+  direction = 0,
+  breed = "lizalfos",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "lizalfos_2",
+  layer = 0,
+  x = 696,
+  y = 37,
+  direction = 0,
+  breed = "lizalfos",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "lizalfos_3",
+  layer = 0,
+  x = 992,
+  y = 29,
+  direction = 0,
+  breed = "lizalfos",
+  treasure_name = "random",
+}
+
 tile{
   layer = 2,
   x = -16,

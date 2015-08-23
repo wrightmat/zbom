@@ -1587,7 +1587,7 @@ tile{
   layer = 0,
   x = 920,
   y = 328,
-  width = 64,
+  width = 32,
   height = 16,
   pattern = "1128",
 }
@@ -1662,6 +1662,24 @@ tile{
   width = 64,
   height = 8,
   pattern = "464",
+}
+
+tile{
+  layer = 0,
+  x = 968,
+  y = 328,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 952,
+  y = 312,
+  width = 16,
+  height = 16,
+  pattern = "1128",
 }
 
 sensor{
@@ -1996,7 +2014,7 @@ destructible{
 destructible{
   layer = 0,
   x = 960,
-  y = 341,
+  y = 325,
   treasure_name = "random_mountain",
   sprite = "entities/stone_small_white",
   destruction_sound = "stone",

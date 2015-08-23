@@ -4589,6 +4589,16 @@ wall{
   stops_enemies = true,
 }
 
+enemy{
+  name = "crab_4",
+  layer = 0,
+  x = 728,
+  y = 613,
+  direction = 3,
+  breed = "crab",
+  treasure_name = "random",
+}
+
 tile{
   layer = 1,
   x = 16,

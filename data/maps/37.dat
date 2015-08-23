@@ -8564,6 +8564,26 @@ wall{
   stops_projectiles = true,
 }
 
+enemy{
+  name = "lizalfos_1",
+  layer = 0,
+  x = 544,
+  y = 405,
+  direction = 0,
+  breed = "lizalfos",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "lizalfos_2",
+  layer = 0,
+  x = 808,
+  y = 893,
+  direction = 0,
+  breed = "lizalfos",
+  treasure_name = "random",
+}
+
 tile{
   layer = 2,
   x = 16,

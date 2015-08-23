@@ -9617,6 +9617,30 @@ teletransporter{
   destination = "_side",
 }
 
+teletransporter{
+  name = "to_G7_water",
+  layer = 0,
+  x = 848,
+  y = 1120,
+  width = 64,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "47",
+  destination = "_side",
+}
+
+teletransporter{
+  name = "to_G5_water",
+  layer = 0,
+  x = 768,
+  y = -16,
+  width = 80,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "57",
+  destination = "_side",
+}
+
 tile{
   layer = 2,
   x = 216,

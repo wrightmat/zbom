@@ -8200,6 +8200,18 @@ custom_entity{
   model = "mailbox",
 }
 
+teletransporter{
+  name = "to_G7_water",
+  layer = 0,
+  x = 696,
+  y = -16,
+  width = 128,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "47",
+  destination = "_side",
+}
+
 tile{
   layer = 1,
   x = 408,

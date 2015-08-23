@@ -4547,7 +4547,7 @@ tile{
 tile{
   layer = 0,
   x = 584,
-  y = 704,
+  y = 696,
   width = 32,
   height = 32,
   pattern = "630",
@@ -4556,7 +4556,7 @@ tile{
 tile{
   layer = 0,
   x = 616,
-  y = 720,
+  y = 712,
   width = 24,
   height = 16,
   pattern = "952",
@@ -5244,6 +5244,15 @@ tile{
   width = 8,
   height = 16,
   pattern = "1498",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 760,
+  width = 128,
+  height = 16,
+  pattern = "180",
 }
 
 wall{

@@ -7088,6 +7088,45 @@ teletransporter{
   destination = "from_outside",
 }
 
+enemy{
+  name = "lizalfos_1",
+  layer = 0,
+  x = 752,
+  y = 621,
+  direction = 0,
+  breed = "lizalfos",
+  treasure_name = "random",
+}
+
+wall{
+  layer = 0,
+  x = 656,
+  y = 608,
+  width = 16,
+  height = 56,
+  stops_enemies = true,
+}
+
+enemy{
+  name = "lizalfos_2",
+  layer = 0,
+  x = 736,
+  y = 701,
+  direction = 0,
+  breed = "lizalfos",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "lizalfos_3",
+  layer = 0,
+  x = 816,
+  y = 661,
+  direction = 0,
+  breed = "lizalfos",
+  treasure_name = "random",
+}
+
 tile{
   layer = 1,
   x = 464,

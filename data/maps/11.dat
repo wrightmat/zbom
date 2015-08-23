@@ -10,6 +10,15 @@ properties{
 
 tile{
   layer = 0,
+  x = 448,
+  y = 968,
+  width = 136,
+  height = 16,
+  pattern = "45",
+}
+
+tile{
+  layer = 0,
   x = 848,
   y = 296,
   width = 32,
@@ -2227,24 +2236,6 @@ tile{
   x = 440,
   y = 1000,
   width = 8,
-  height = 16,
-  pattern = "44",
-}
-
-tile{
-  layer = 0,
-  x = 448,
-  y = 968,
-  width = 144,
-  height = 16,
-  pattern = "45",
-}
-
-tile{
-  layer = 0,
-  x = 448,
-  y = 968,
-  width = 136,
   height = 16,
   pattern = "44",
 }
@@ -10808,6 +10799,159 @@ tile{
   pattern = "161",
 }
 
+tile{
+  layer = 0,
+  x = 448,
+  y = 968,
+  width = 8,
+  height = 16,
+  pattern = "152",
+}
+
+tile{
+  layer = 0,
+  x = 456,
+  y = 968,
+  width = 8,
+  height = 16,
+  pattern = "44",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 968,
+  width = 8,
+  height = 16,
+  pattern = "152",
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 968,
+  width = 8,
+  height = 16,
+  pattern = "44",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 968,
+  width = 8,
+  height = 16,
+  pattern = "152",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 968,
+  width = 8,
+  height = 16,
+  pattern = "44",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 968,
+  width = 8,
+  height = 16,
+  pattern = "152",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 968,
+  width = 8,
+  height = 16,
+  pattern = "44",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 968,
+  width = 8,
+  height = 16,
+  pattern = "152",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 968,
+  width = 8,
+  height = 16,
+  pattern = "44",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 968,
+  width = 8,
+  height = 16,
+  pattern = "152",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 968,
+  width = 8,
+  height = 16,
+  pattern = "44",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 968,
+  width = 8,
+  height = 16,
+  pattern = "152",
+}
+
+tile{
+  layer = 0,
+  x = 552,
+  y = 968,
+  width = 8,
+  height = 16,
+  pattern = "44",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 968,
+  width = 8,
+  height = 16,
+  pattern = "152",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 968,
+  width = 8,
+  height = 16,
+  pattern = "44",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 968,
+  width = 8,
+  height = 16,
+  pattern = "152",
+}
+
 destructible{
   layer = 0,
   x = 1008,
@@ -10927,7 +11071,7 @@ teletransporter{
 }
 
 teletransporter{
-  name = "to_J6",
+  name = "to_G14",
   layer = 0,
   x = 1120,
   y = 336,
@@ -13137,6 +13281,18 @@ custom_entity{
   direction = 0,
   sprite = "entities/mailbox",
   model = "mailbox",
+}
+
+teletransporter{
+  name = "to_G14_water",
+  layer = 0,
+  x = 1120,
+  y = 800,
+  width = 16,
+  height = 320,
+  transition = "scrolling",
+  destination_map = "12",
+  destination = "_side",
 }
 
 tile{
