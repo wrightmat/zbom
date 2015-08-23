@@ -568,69 +568,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 72,
-  y = 48,
-  width = 32,
-  height = 32,
-  pattern = "102",
-}
-
-tile{
-  layer = 0,
-  x = 136,
-  y = 48,
-  width = 32,
-  height = 32,
-  pattern = "103",
-}
-
-tile{
-  layer = 0,
-  x = 104,
-  y = 56,
-  width = 32,
-  height = 16,
-  pattern = "104",
-}
-
-tile{
-  layer = 0,
-  x = 8,
-  y = 16,
-  width = 32,
-  height = 48,
-  pattern = "809",
-}
-
-tile{
-  layer = 0,
-  x = 200,
-  y = 16,
-  width = 32,
-  height = 48,
-  pattern = "809",
-}
-
-tile{
-  layer = 0,
-  x = 48,
-  y = 56,
-  width = 16,
-  height = 16,
-  pattern = "1128",
-}
-
-tile{
-  layer = 0,
-  x = 176,
-  y = 56,
-  width = 16,
-  height = 16,
-  pattern = "1128",
-}
-
-tile{
-  layer = 0,
   x = 192,
   y = 280,
   width = 48,
@@ -1754,6 +1691,132 @@ tile{
   pattern = "63",
 }
 
+tile{
+  layer = 0,
+  x = 104,
+  y = 56,
+  width = 32,
+  height = 32,
+  pattern = "156",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 64,
+  width = 40,
+  height = 16,
+  pattern = "124",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 64,
+  width = 40,
+  height = 16,
+  pattern = "155",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 56,
+  width = 40,
+  height = 8,
+  pattern = "161",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 56,
+  width = 40,
+  height = 8,
+  pattern = "157",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 32,
+  width = 48,
+  height = 24,
+  pattern = "158",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 32,
+  width = 32,
+  height = 16,
+  pattern = "160",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 32,
+  width = 48,
+  height = 24,
+  pattern = "162",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 8,
+  width = 128,
+  height = 24,
+  pattern = "163",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 88,
+  width = 32,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 88,
+  width = 32,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 24,
+  width = 32,
+  height = 48,
+  pattern = "1430",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 24,
+  width = 32,
+  height = 48,
+  pattern = "1430",
+}
+
+tile{
+  layer = 0,
+  x = 216,
+  y = 872,
+  width = 32,
+  height = 48,
+  pattern = "1430",
+}
+
 teletransporter{
   name = "to_D2",
   layer = 0,
@@ -1811,26 +1874,6 @@ teletransporter{
   transition = "scrolling",
   destination_map = "92",
   destination = "_side",
-}
-
-destructible{
-  layer = 0,
-  x = 56,
-  y = 69,
-  treasure_name = "random_north",
-  sprite = "entities/stone_small_white",
-  destruction_sound = "stone",
-  weight = 1,
-}
-
-destructible{
-  layer = 0,
-  x = 184,
-  y = 69,
-  treasure_name = "random_north",
-  sprite = "entities/stone_small_white",
-  destruction_sound = "stone",
-  weight = 1,
 }
 
 destructible{
@@ -2160,13 +2203,44 @@ destination{
   direction = 3,
 }
 
-tile{
-  layer = 1,
+destructible{
+  layer = 0,
   x = 72,
-  y = 24,
-  width = 96,
-  height = 24,
-  pattern = "101",
+  y = 101,
+  treasure_name = "random_north",
+  sprite = "entities/stone_small_white",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 88,
+  y = 101,
+  treasure_name = "random_north",
+  sprite = "entities/stone_small_white",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 152,
+  y = 101,
+  treasure_name = "random_north",
+  sprite = "entities/stone_small_white",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 168,
+  y = 101,
+  treasure_name = "random_north",
+  sprite = "entities/stone_small_white",
+  destruction_sound = "stone",
+  weight = 1,
 }
 
 tile{
@@ -2608,5 +2682,23 @@ tile{
   width = 48,
   height = 16,
   pattern = "521",
+}
+
+tile{
+  layer = 2,
+  x = 104,
+  y = 48,
+  width = 32,
+  height = 8,
+  pattern = "159",
+}
+
+tile{
+  layer = 2,
+  x = 56,
+  y = 0,
+  width = 128,
+  height = 8,
+  pattern = "164",
 }
 
