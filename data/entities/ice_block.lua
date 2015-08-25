@@ -11,8 +11,9 @@ function entity:on_created()
   self:snap_to_grid()
   self:set_modified_ground("ice")
   self:set_traversable_by("hero", false)
+  self:set_traversable_by("dynamic_tile", true)
   self:set_traversable_by("custom_entity", true) --to allow pushing block into pit
-  self:set_can_traverse("dynamic_tile", true) --bug in Solarus 1.4.3 prevents this from working, so can't push block into lava/water
+  self:set_can_traverse("dynamic_tile", true)
   self:create_sprite("entities/ice_block")
 
   self:add_collision_test("facing", function(self, other)

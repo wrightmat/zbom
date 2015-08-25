@@ -6039,6 +6039,15 @@ tile{
   pattern = "104",
 }
 
+sensor{
+  name = "sensor_boss",
+  layer = 0,
+  x = 872,
+  y = 1349,
+  width = 32,
+  height = 16,
+}
+
 dynamic_tile{
   name = "gate3_2",
   layer = 0,
@@ -6089,7 +6098,8 @@ teletransporter{
   y = 1368,
   width = 16,
   height = 16,
-  destination_map = "218",
+  destination_map = "219",
+  destination = "from_above",
 }
 
 destination{
@@ -6805,6 +6815,8 @@ enemy{
   y = 1221,
   direction = 3,
   breed = "poe_big",
+  treasure_name = "big_key",
+  treasure_savegame_variable = "b1182",
 }
 
 chest{
@@ -6885,8 +6897,9 @@ door{
   direction = 0,
   sprite = "entities/door_big_key",
   savegame_variable = "b1189",
-  opening_condition = "dungeon_8_small_keys",
-  opening_condition_consumed = true,
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "b1182",
+  cannot_open_dialog = "_big_key_required",
 }
 
 door{
@@ -6897,8 +6910,8 @@ door{
   direction = 2,
   sprite = "entities/door_shutter",
   savegame_variable = "b1189",
-  opening_condition = "dungeon_8_small_keys",
-  opening_condition_consumed = true,
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "b1182",
 }
 
 door{
@@ -7000,6 +7013,159 @@ dynamic_tile{
   width = 32,
   height = 16,
   enabled_at_start = true,
+}
+
+sensor{
+  name = "sensor_miniboss",
+  layer = 0,
+  x = 752,
+  y = 1245,
+  width = 16,
+  height = 32,
+}
+
+wall{
+  layer = 0,
+  x = 512,
+  y = 1312,
+  width = 32,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+chest{
+  name = "chest_item",
+  layer = 0,
+  x = 528,
+  y = 1317,
+  treasure_name = "bow",
+  treasure_variant = 2,
+  treasure_savegame_variable = "b1801",
+  sprite = "entities/chest_big",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "b1182",
+  cannot_open_dialog = "_big_key_required",
+}
+
+pickable{
+  name = "boss_heart",
+  layer = 0,
+  x = 880,
+  y = 997,
+  treasure_name = "heart_container",
+  treasure_savegame_variable = "b1192",
+}
+
+sensor{
+  name = "dungeon_room_1_",
+  layer = 0,
+  x = 184,
+  y = 1341,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_2_",
+  layer = 0,
+  x = 184,
+  y = 1069,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_3_",
+  layer = 0,
+  x = 184,
+  y = 797,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_4_",
+  layer = 0,
+  x = 184,
+  y = 525,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_5_",
+  layer = 0,
+  x = 408,
+  y = 429,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_6_",
+  layer = 0,
+  x = 520,
+  y = 253,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_7_",
+  layer = 0,
+  x = 744,
+  y = 429,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_8_",
+  layer = 0,
+  x = 856,
+  y = 621,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_9_",
+  layer = 0,
+  x = 648,
+  y = 701,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_10_",
+  layer = 0,
+  x = 520,
+  y = 893,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_11_",
+  layer = 0,
+  x = 520,
+  y = 1165,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_12_",
+  layer = 0,
+  x = 768,
+  y = 1245,
+  width = 16,
+  height = 32,
 }
 
 tile{

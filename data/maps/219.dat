@@ -14254,7 +14254,7 @@ wall{
   layer = 0,
   x = 472,
   y = 832,
-  width = 168,
+  width = 176,
   height = 8,
   stops_npcs = true,
   stops_enemies = true,
@@ -14266,7 +14266,7 @@ wall{
   layer = 0,
   x = 472,
   y = 632,
-  width = 168,
+  width = 176,
   height = 8,
   stops_npcs = true,
   stops_enemies = true,
@@ -14348,9 +14348,9 @@ wall{
 
 wall{
   layer = 0,
-  x = 816,
+  x = 808,
   y = 360,
-  width = 160,
+  width = 176,
   height = 8,
   stops_npcs = true,
   stops_enemies = true,
@@ -14360,9 +14360,9 @@ wall{
 
 wall{
   layer = 0,
-  x = 816,
+  x = 808,
   y = 288,
-  width = 160,
+  width = 176,
   height = 8,
   stops_npcs = true,
   stops_enemies = true,
@@ -14556,6 +14556,1395 @@ dynamic_tile{
   width = 16,
   height = 16,
   enabled_at_start = true,
+}
+
+sensor{
+  name = "dungeon_room_1a_",
+  layer = 0,
+  x = 896,
+  y = 1373,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_2a_",
+  layer = 0,
+  x = 680,
+  y = 1221,
+  width = 16,
+  height = 144,
+}
+
+sensor{
+  name = "dungeon_room_3a_",
+  layer = 0,
+  x = 344,
+  y = 1277,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_4a_",
+  layer = 0,
+  x = 216,
+  y = 1101,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_5a_",
+  layer = 0,
+  x = 440,
+  y = 1005,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_6b_",
+  layer = 0,
+  x = 776,
+  y = 1005,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_7c_",
+  layer = 0,
+  x = 888,
+  y = 829,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_8a_",
+  layer = 0,
+  x = 680,
+  y = 677,
+  width = 16,
+  height = 144,
+}
+
+sensor{
+  name = "dungeon_room_9a_",
+  layer = 0,
+  x = 344,
+  y = 677,
+  width = 16,
+  height = 144,
+}
+
+sensor{
+  name = "dungeon_room_10c_",
+  layer = 0,
+  x = 216,
+  y = 557,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_11b_",
+  layer = 0,
+  x = 216,
+  y = 285,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_12a_",
+  layer = 0,
+  x = 440,
+  y = 189,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_13a_",
+  layer = 0,
+  x = 552,
+  y = 381,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_14d_",
+  layer = 0,
+  x = 776,
+  y = 461,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_15a_",
+  layer = 0,
+  x = 1112,
+  y = 461,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_16b_",
+  layer = 0,
+  x = 1224,
+  y = 285,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_17a_",
+  layer = 0,
+  x = 1448,
+  y = 189,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_18a_",
+  layer = 0,
+  x = 1560,
+  y = 381,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_19a_",
+  layer = 0,
+  x = 1560,
+  y = 653,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_20b_",
+  layer = 0,
+  x = 1352,
+  y = 677,
+  width = 16,
+  height = 144,
+}
+
+sensor{
+  name = "dungeon_room_21a_",
+  layer = 0,
+  x = 1224,
+  y = 925,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_22b_",
+  layer = 0,
+  x = 1448,
+  y = 1005,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_23b_",
+  layer = 0,
+  x = 1560,
+  y = 1197,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_24b_",
+  layer = 0,
+  x = 1352,
+  y = 1277,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_25a_",
+  layer = 0,
+  x = 1016,
+  y = 133,
+  width = 16,
+  height = 144,
+}
+
+sensor{
+  name = "dungeon_room_25b_",
+  layer = 0,
+  x = 776,
+  y = 133,
+  width = 16,
+  height = 144,
+}
+
+sensor{
+  name = "dungeon_room_25c_",
+  layer = 0,
+  x = 816,
+  y = 285,
+  width = 176,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_1b_",
+  layer = 0,
+  x = 776,
+  y = 1221,
+  width = 16,
+  height = 144,
+}
+
+sensor{
+  name = "dungeon_room_1c_",
+  layer = 0,
+  x = 824,
+  y = 1197,
+  width = 160,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_1d_",
+  layer = 0,
+  x = 1016,
+  y = 1221,
+  width = 16,
+  height = 144,
+}
+
+sensor{
+  name = "dungeon_room_2b_",
+  layer = 0,
+  x = 440,
+  y = 1277,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_2c_",
+  layer = 0,
+  x = 552,
+  y = 1197,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_3b_",
+  layer = 0,
+  x = 216,
+  y = 1197,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_4b_",
+  layer = 0,
+  x = 216,
+  y = 925,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_4c_",
+  layer = 0,
+  x = 344,
+  y = 1005,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_9b_",
+  layer = 0,
+  x = 216,
+  y = 829,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_9c_",
+  layer = 0,
+  x = 216,
+  y = 653,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_5b_",
+  layer = 0,
+  x = 480,
+  y = 925,
+  width = 176,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_5c_",
+  layer = 0,
+  x = 680,
+  y = 1005,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_5d_",
+  layer = 0,
+  x = 552,
+  y = 1101,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_24a_",
+  layer = 0,
+  x = 1112,
+  y = 1221,
+  width = 16,
+  height = 144,
+}
+
+sensor{
+  name = "dungeon_room_24c_",
+  layer = 0,
+  x = 1224,
+  y = 1197,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_23a_",
+  layer = 0,
+  x = 1448,
+  y = 1277,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_22a_",
+  layer = 0,
+  x = 1560,
+  y = 925,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_22c_",
+  layer = 0,
+  x = 1560,
+  y = 1101,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_21c_",
+  layer = 0,
+  x = 1224,
+  y = 1101,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_21b_",
+  layer = 0,
+  x = 1112,
+  y = 1005,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_6a_",
+  layer = 0,
+  x = 824,
+  y = 1101,
+  width = 160,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_6c_",
+  layer = 0,
+  x = 888,
+  y = 925,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_8b_",
+  layer = 0,
+  x = 440,
+  y = 677,
+  width = 16,
+  height = 144,
+}
+
+sensor{
+  name = "dungeon_room_8c_",
+  layer = 0,
+  x = 480,
+  y = 653,
+  width = 176,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_8d_",
+  layer = 0,
+  x = 480,
+  y = 829,
+  width = 176,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_7a_",
+  layer = 0,
+  x = 776,
+  y = 677,
+  width = 16,
+  height = 144,
+}
+
+sensor{
+  name = "dungeon_room_7b_",
+  layer = 0,
+  x = 1016,
+  y = 677,
+  width = 16,
+  height = 144,
+}
+
+sensor{
+  name = "dungeon_room_7d_",
+  layer = 0,
+  x = 888,
+  y = 653,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_20a_",
+  layer = 0,
+  x = 1112,
+  y = 677,
+  width = 16,
+  height = 144,
+}
+
+sensor{
+  name = "dungeon_room_20c_",
+  layer = 0,
+  x = 1152,
+  y = 653,
+  width = 176,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_20d_",
+  layer = 0,
+  x = 1152,
+  y = 829,
+  width = 176,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_19b_",
+  layer = 0,
+  x = 1448,
+  y = 677,
+  width = 16,
+  height = 144,
+}
+
+sensor{
+  name = "dungeon_room_19c_",
+  layer = 0,
+  x = 1560,
+  y = 829,
+  width = 32,
+  height = 16,
+}
+
+wall{
+  layer = 0,
+  x = 880,
+  y = 904,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1552,
+  y = 904,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1552,
+  y = 1176,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1552,
+  y = 1104,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1216,
+  y = 1176,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1216,
+  y = 1104,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 208,
+  y = 1176,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 208,
+  y = 1104,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 208,
+  y = 904,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 208,
+  y = 832,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 208,
+  y = 632,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 208,
+  y = 560,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 208,
+  y = 288,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 208,
+  y = 360,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 544,
+  y = 360,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 880,
+  y = 560,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1216,
+  y = 360,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1216,
+  y = 288,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1552,
+  y = 288,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1552,
+  y = 360,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1552,
+  y = 560,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1552,
+  y = 632,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1552,
+  y = 832,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1144,
+  y = 560,
+  width = 176,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1144,
+  y = 904,
+  width = 176,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 352,
+  y = 992,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 424,
+  y = 992,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 352,
+  y = 1264,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 424,
+  y = 1264,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 544,
+  y = 1176,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 544,
+  y = 1104,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1360,
+  y = 1264,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1432,
+  y = 1264,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1096,
+  y = 992,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1024,
+  y = 992,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+sensor{
+  name = "dungeon_room_6d_",
+  layer = 0,
+  x = 1016,
+  y = 1005,
+  width = 16,
+  height = 32,
+}
+
+wall{
+  layer = 0,
+  x = 760,
+  y = 992,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 688,
+  y = 992,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 472,
+  y = 904,
+  width = 176,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 352,
+  y = 448,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 424,
+  y = 448,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 688,
+  y = 448,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 472,
+  y = 560,
+  width = 176,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 760,
+  y = 448,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1024,
+  y = 448,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 880,
+  y = 632,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1096,
+  y = 448,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1360,
+  y = 448,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1432,
+  y = 448,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1432,
+  y = 176,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1360,
+  y = 176,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 424,
+  y = 176,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 352,
+  y = 176,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 544,
+  y = 288,
+  width = 32,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+sensor{
+  name = "dungeon_room_10a_",
+  layer = 0,
+  x = 216,
+  y = 381,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_10b_",
+  layer = 0,
+  x = 344,
+  y = 461,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_11a_",
+  layer = 0,
+  x = 344,
+  y = 189,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_12b_",
+  layer = 0,
+  x = 552,
+  y = 285,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_12c_",
+  layer = 0,
+  x = 680,
+  y = 133,
+  width = 16,
+  height = 144,
+}
+
+sensor{
+  name = "dungeon_room_13b_",
+  layer = 0,
+  x = 440,
+  y = 461,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_13c_",
+  layer = 0,
+  x = 480,
+  y = 557,
+  width = 176,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_13d_",
+  layer = 0,
+  x = 680,
+  y = 461,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_14b_",
+  layer = 0,
+  x = 1016,
+  y = 461,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_14a_",
+  layer = 0,
+  x = 816,
+  y = 381,
+  width = 176,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_14c_",
+  layer = 0,
+  x = 888,
+  y = 557,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_16a",
+  layer = 0,
+  x = 1112,
+  y = 133,
+  width = 16,
+  height = 144,
+}
+
+sensor{
+  name = "dungeon_room_16c_",
+  layer = 0,
+  x = 1352,
+  y = 189,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_17b_",
+  layer = 0,
+  x = 1560,
+  y = 285,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_18b_",
+  layer = 0,
+  x = 1448,
+  y = 461,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "dungeon_room_18c_",
+  layer = 0,
+  x = 1560,
+  y = 557,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_15b_",
+  layer = 0,
+  x = 1224,
+  y = 381,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_15c_",
+  layer = 0,
+  x = 1152,
+  y = 557,
+  width = 176,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_15d_",
+  layer = 0,
+  x = 1352,
+  y = 461,
+  width = 16,
+  height = 32,
+}
+
+wall{
+  layer = 0,
+  x = 1360,
+  y = 992,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1432,
+  y = 992,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+sensor{
+  name = "dungeon_room_21d_",
+  layer = 0,
+  x = 1352,
+  y = 1005,
+  width = 16,
+  height = 32,
 }
 
 tile{
