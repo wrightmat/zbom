@@ -1,0 +1,26 @@
+animation{
+  name = "0",
+  src_image = "menus/dungeon_maps/map8.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 123, frame_height = 119, origin_x = 0, origin_y = 0 },
+    { x = 9, y = 217, frame_width = 24, frame_height = 19, origin_x = -9, origin_y = -98 },
+    { x = 9, y = 199, frame_width = 24, frame_height = 19, origin_x = -9, origin_y = -80 },
+    { x = 9, y = 181, frame_width = 24, frame_height = 19, origin_x = -9, origin_y = -62 },
+    { x = 9, y = 163, frame_width = 24, frame_height = 19, origin_x = -9, origin_y = -44 },
+    { x = 32, y = 163, frame_width = 24, frame_height = 19, origin_x = -32, origin_y = -44 },
+    { x = 32, y = 145, frame_width = 24, frame_height = 19, origin_x = -32, origin_y = -26 },
+    { x = 55, y = 163, frame_width = 24, frame_height = 19, origin_x = -55, origin_y = -44 },
+    { x = 55, y = 181, frame_width = 24, frame_height = 19, origin_x = -55, origin_y = -62 },
+    { x = 32, y = 181, frame_width = 24, frame_height = 19, origin_x = -32, origin_y = -62 },
+    { x = 32, y = 199, frame_width = 24, frame_height = 19, origin_x = -32, origin_y = -80 },
+    { x = 32, y = 217, frame_width = 24, frame_height = 19, origin_x = -32, origin_y = -98 },
+    { x = 55, y = 199, frame_width = 24, frame_height = 37, origin_x = -55, origin_y = -80 },
+  },
+}
+animation{
+  name = "-1",
+  src_image = "menus/dungeon_maps/map8.png",
+  directions = {
+    { x = 123, y = 0, frame_width = 123, frame_height = 119, origin_x = 0, origin_y = 0 },
+  },
+}
