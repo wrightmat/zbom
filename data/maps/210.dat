@@ -11,6 +11,15 @@ properties{
 
 tile{
   layer = 0,
+  x = 72,
+  y = 440,
+  width = 336,
+  height = 304,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
   x = 64,
   y = 64,
   width = 352,
@@ -47,19 +56,19 @@ tile{
 
 tile{
   layer = 0,
-  x = 400,
-  y = 472,
-  width = 16,
-  height = 240,
+  x = 392,
+  y = 464,
+  width = 32,
+  height = 256,
   pattern = "524",
 }
 
 tile{
   layer = 0,
-  x = 64,
-  y = 472,
-  width = 16,
-  height = 240,
+  x = 56,
+  y = 464,
+  width = 32,
+  height = 256,
   pattern = "524",
 }
 
@@ -196,15 +205,6 @@ tile{
   width = 32,
   height = 80,
   pattern = "137",
-}
-
-tile{
-  layer = 0,
-  x = 80,
-  y = 440,
-  width = 320,
-  height = 304,
-  pattern = "22",
 }
 
 tile{
@@ -4475,7 +4475,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 128,
+  x = 120,
   y = 616,
   width = 32,
   height = 32,
@@ -4484,7 +4484,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 320,
+  x = 328,
   y = 616,
   width = 32,
   height = 32,
@@ -4673,7 +4673,7 @@ tile{
 
 dynamic_tile{
   layer = 0,
-  x = 272,
+  x = 280,
   y = 600,
   pattern = "603",
   width = 48,
@@ -4683,7 +4683,7 @@ dynamic_tile{
 
 dynamic_tile{
   layer = 0,
-  x = 160,
+  x = 152,
   y = 600,
   pattern = "605",
   width = 48,
@@ -5446,81 +5446,17 @@ enemy{
   treasure_name = "random",
 }
 
-dynamic_tile{
-  name = "print_1",
+teletransporter{
+  name = "miniboss_warp",
   layer = 0,
-  x = 96,
-  y = 680,
-  pattern = "607",
+  x = 232,
+  y = 536,
   width = 16,
   height = 16,
-  enabled_at_start = false,
-}
-
-dynamic_tile{
-  name = "print_2",
-  layer = 0,
-  x = 96,
-  y = 648,
-  pattern = "607",
-  width = 16,
-  height = 16,
-  enabled_at_start = false,
-}
-
-dynamic_tile{
-  name = "print_3",
-  layer = 0,
-  x = 96,
-  y = 616,
-  pattern = "607",
-  width = 16,
-  height = 16,
-  enabled_at_start = false,
-}
-
-dynamic_tile{
-  name = "print_4",
-  layer = 0,
-  x = 96,
-  y = 584,
-  pattern = "607",
-  width = 16,
-  height = 16,
-  enabled_at_start = false,
-}
-
-dynamic_tile{
-  name = "print_5",
-  layer = 0,
-  x = 96,
-  y = 552,
-  pattern = "607",
-  width = 16,
-  height = 16,
-  enabled_at_start = false,
-}
-
-dynamic_tile{
-  name = "print_6",
-  layer = 0,
-  x = 96,
-  y = 520,
-  pattern = "607",
-  width = 16,
-  height = 16,
-  enabled_at_start = false,
-}
-
-dynamic_tile{
-  name = "print_7",
-  layer = 0,
-  x = 96,
-  y = 488,
-  pattern = "607",
-  width = 16,
-  height = 16,
-  enabled_at_start = false,
+  destination_map = "215",
+  destination = "miniboss_warp_dest",
+  sprite = "entities/teletransporter",
+  sound = "warp",
 }
 
 tile{

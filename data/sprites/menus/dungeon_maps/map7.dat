@@ -36,10 +36,10 @@ animation{
   src_image = "menus/dungeon_maps/map7.png",
   directions = {
     { x = 360, y = 0, frame_width = 123, frame_height = 119, origin_x = 0, origin_y = 0 },
-    { x = 360, y = 180, frame_width = 60, frame_height = 50, origin_x = -237, origin_y = -61 },
-    { x = 360, y = 130, frame_width = 60, frame_height = 50, origin_x = -237, origin_y = -11 },
-    { x = 420, y = 130, frame_width = 60, frame_height = 50, origin_x = -297, origin_y = -11 },
-    { x = 420, y = 180, frame_width = 60, frame_height = 50, origin_x = -297, origin_y = -61 },
+    { x = 360, y = 180, frame_width = 60, frame_height = 50, origin_x = 0, origin_y = -61 },
+    { x = 360, y = 130, frame_width = 60, frame_height = 50, origin_x = 0, origin_y = -11 },
+    { x = 420, y = 130, frame_width = 60, frame_height = 50, origin_x = -60, origin_y = -11 },
+    { x = 420, y = 180, frame_width = 60, frame_height = 50, origin_x = -60, origin_y = -61 },
   },
 }
 animation{
@@ -47,15 +47,15 @@ animation{
   src_image = "menus/dungeon_maps/map7.png",
   directions = {
     { x = 480, y = 0, frame_width = 123, frame_height = 119, origin_x = 0, origin_y = 0 },
-    { x = 531, y = 140, frame_width = 20, frame_height = 32, origin_x = -408, origin_y = -21 },
-    { x = 548, y = 172, frame_width = 40, frame_height = 18, origin_x = -425, origin_y = -53 },
-    { x = 531, y = 190, frame_width = 20, frame_height = 32, origin_x = -408, origin_y = -71 },
-    { x = 492, y = 172, frame_width = 40, frame_height = 18, origin_x = -369, origin_y = -53 },
-    { x = 532, y = 172, frame_width = 16, frame_height = 18, origin_x = -409, origin_y = -53 },
-    { x = 486, y = 134, frame_width = 46, frame_height = 39, origin_x = -363, origin_y = -15 },
-    { x = 486, y = 190, frame_width = 46, frame_height = 39, origin_x = -363, origin_y = -71 },
-    { x = 550, y = 134, frame_width = 46, frame_height = 39, origin_x = -427, origin_y = -15 },
-    { x = 550, y = 189, frame_width = 46, frame_height = 39, origin_x = -427, origin_y = -70 },
+    { x = 531, y = 140, frame_width = 20, frame_height = 32, origin_x = -51, origin_y = -21 },
+    { x = 548, y = 172, frame_width = 40, frame_height = 18, origin_x = -68, origin_y = -53 },
+    { x = 531, y = 190, frame_width = 20, frame_height = 32, origin_x = -51, origin_y = -71 },
+    { x = 492, y = 172, frame_width = 40, frame_height = 18, origin_x = -12, origin_y = -53 },
+    { x = 532, y = 172, frame_width = 16, frame_height = 18, origin_x = -52, origin_y = -53 },
+    { x = 486, y = 134, frame_width = 46, frame_height = 39, origin_x = -6, origin_y = -15 },
+    { x = 486, y = 190, frame_width = 46, frame_height = 39, origin_x = -6, origin_y = -71 },
+    { x = 550, y = 134, frame_width = 46, frame_height = 39, origin_x = -70, origin_y = -15 },
+    { x = 550, y = 189, frame_width = 46, frame_height = 39, origin_x = -70, origin_y = -70 },
   },
 }
 animation{
@@ -63,15 +63,15 @@ animation{
   src_image = "menus/dungeon_maps/map7.png",
   directions = {
     { x = 600, y = 0, frame_width = 123, frame_height = 119, origin_x = 0, origin_y = 0 },
-    { x = 651, y = 140, frame_width = 20, frame_height = 32, origin_x = -528, origin_y = -21 },
-    { x = 668, y = 172, frame_width = 40, frame_height = 18, origin_x = -545, origin_y = -53 },
-    { x = 651, y = 190, frame_width = 20, frame_height = 32, origin_x = -528, origin_y = -71 },
-    { x = 612, y = 172, frame_width = 40, frame_height = 18, origin_x = -489, origin_y = -53 },
-    { x = 652, y = 172, frame_width = 16, frame_height = 18, origin_x = -529, origin_y = -53 },
-    { x = 606, y = 134, frame_width = 46, frame_height = 39, origin_x = -483, origin_y = -15 },
-    { x = 606, y = 190, frame_width = 46, frame_height = 39, origin_x = -483, origin_y = -71 },
-    { x = 670, y = 134, frame_width = 46, frame_height = 39, origin_x = -547, origin_y = -15 },
-    { x = 670, y = 189, frame_width = 46, frame_height = 39, origin_x = -547, origin_y = -70 },
+    { x = 651, y = 140, frame_width = 20, frame_height = 32, origin_x = -51, origin_y = -21 },
+    { x = 668, y = 172, frame_width = 40, frame_height = 18, origin_x = -68, origin_y = -53 },
+    { x = 651, y = 190, frame_width = 20, frame_height = 32, origin_x = -51, origin_y = -71 },
+    { x = 612, y = 172, frame_width = 40, frame_height = 18, origin_x = -12, origin_y = -53 },
+    { x = 652, y = 172, frame_width = 16, frame_height = 18, origin_x = -52, origin_y = -53 },
+    { x = 606, y = 134, frame_width = 46, frame_height = 39, origin_x = -6, origin_y = -15 },
+    { x = 606, y = 190, frame_width = 46, frame_height = 39, origin_x = -6, origin_y = -71 },
+    { x = 670, y = 134, frame_width = 46, frame_height = 39, origin_x = -70, origin_y = -15 },
+    { x = 670, y = 189, frame_width = 46, frame_height = 39, origin_x = -70, origin_y = -70 },
   },
 }
 animation{
@@ -79,10 +79,10 @@ animation{
   src_image = "menus/dungeon_maps/map7.png",
   directions = {
     { x = 720, y = 0, frame_width = 123, frame_height = 119, origin_x = 0, origin_y = 0 },
-    { x = 720, y = 180, frame_width = 60, frame_height = 50, origin_x = -597, origin_y = -61 },
-    { x = 720, y = 130, frame_width = 60, frame_height = 50, origin_x = -597, origin_y = -11 },
-    { x = 780, y = 130, frame_width = 60, frame_height = 50, origin_x = -657, origin_y = -11 },
-    { x = 780, y = 180, frame_width = 60, frame_height = 50, origin_x = -657, origin_y = -61 },
+    { x = 720, y = 180, frame_width = 60, frame_height = 50, origin_x = 0, origin_y = -61 },
+    { x = 720, y = 130, frame_width = 60, frame_height = 50, origin_x = 0, origin_y = -11 },
+    { x = 780, y = 130, frame_width = 60, frame_height = 50, origin_x = -60, origin_y = -11 },
+    { x = 780, y = 180, frame_width = 60, frame_height = 50, origin_x = -60, origin_y = -61 },
   },
 }
 animation{
@@ -90,8 +90,8 @@ animation{
   src_image = "menus/dungeon_maps/map7.png",
   directions = {
     { x = 840, y = 0, frame_width = 123, frame_height = 119, origin_x = 0, origin_y = 0 },
-    { x = 840, y = 180, frame_width = 60, frame_height = 50, origin_x = -717, origin_y = -61 },
-    { x = 840, y = 130, frame_width = 120, frame_height = 50, origin_x = -717, origin_y = -11 },
-    { x = 900, y = 180, frame_width = 60, frame_height = 50, origin_x = -777, origin_y = -61 },
+    { x = 840, y = 180, frame_width = 60, frame_height = 50, origin_x = 0, origin_y = -61 },
+    { x = 840, y = 130, frame_width = 120, frame_height = 50, origin_x = 0, origin_y = -11 },
+    { x = 900, y = 180, frame_width = 60, frame_height = 50, origin_x = -60, origin_y = -61 },
   },
 }

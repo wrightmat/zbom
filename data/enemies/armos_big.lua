@@ -2,10 +2,10 @@ local enemy = ...
 local particle_sprite = "enemies/beamos_laser"
 local damage = 1
 local speed = 200
-local max_distance = 300
+local max_distance = 150
 local time_between_particles = 20
 local particles_per_beam = 50
-local stop_time = 2000
+local stop_time = 1000
 
 -- Big Armos Status: Shoots lasers from its eye.
 

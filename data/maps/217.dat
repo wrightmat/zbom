@@ -3908,9 +3908,10 @@ door{
   y = 416,
   direction = 1,
   sprite = "entities/door_big_key",
+  savegame_variable = "b1167",
   opening_method = "interaction_if_savegame_variable",
-  opening_condition = "b1167",
-  cannot_open_dialog = "_big_key_required",
+  opening_condition = "b1162",
+  cannot_open_dialog = "_boss_key_required",
 }
 
 door{
@@ -3920,9 +3921,8 @@ door{
   y = 368,
   direction = 3,
   sprite = "entities/door_shutter",
-  opening_method = "interaction_if_savegame_variable",
+  savegame_variable = "b1167",
   opening_condition = "b1167",
-  cannot_open_dialog = "_big_key_required",
 }
 
 door{
@@ -4070,7 +4070,7 @@ destructible{
   layer = 0,
   x = 840,
   y = 189,
-  treasure_name = "random",
+  treasure_name = "arrow",
   sprite = "entities/pot",
   destruction_sound = "stone",
 }
@@ -4088,7 +4088,7 @@ destructible{
   layer = 0,
   x = 840,
   y = 157,
-  treasure_name = "random",
+  treasure_name = "heart",
   sprite = "entities/pot",
   destruction_sound = "stone",
 }
@@ -4097,7 +4097,7 @@ destructible{
   layer = 0,
   x = 840,
   y = 285,
-  treasure_name = "random",
+  treasure_name = "heart",
   sprite = "entities/pot",
   destruction_sound = "stone",
 }
@@ -4115,7 +4115,7 @@ destructible{
   layer = 0,
   x = 840,
   y = 253,
-  treasure_name = "random",
+  treasure_name = "arrow",
   sprite = "entities/pot",
   destruction_sound = "stone",
 }

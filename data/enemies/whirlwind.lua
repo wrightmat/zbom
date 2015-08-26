@@ -46,7 +46,7 @@ function enemy:go(angle)
 end
 
 function enemy:on_custom_attack_received(attack, sprite)
-  if attack == "sword" and game:get_item("sword"):get_variant == 3 then
+  if attack == "sword" and game:get_item("sword"):get_variant() == 3 then
     -- only hurt by the light sword
     sprite:fade_out(20, function() self:remove() end)
   end

@@ -111,7 +111,7 @@ end
 function enemy:go_attack()
   local movement = self:get_movement()
   if movement then movement:stop() end
-  if random(3) == 1 then
+  if math.random(3) == 1 then
     state = "spin_attack"
     sword_sprite:set_animation("spin_attack")
   else
@@ -120,7 +120,7 @@ function enemy:go_attack()
   end
 
   function sword_sprite:on_animation_finished(animation)
-    self:restart()
+    enemy:check_hero()
   end
 end
 

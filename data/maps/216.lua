@@ -14,8 +14,8 @@ function switch_door:on_activated()
 end
 
 function sensor_door_close:on_activated()
+  map:close_doors("door_statues")
   if not door_timer then
-    map:close_doors("door_statues")
     door_timer = sol.timer.start(5000, function()
       map:open_doors("door_statues")
     end)

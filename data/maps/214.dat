@@ -6111,6 +6111,15 @@ tile{
   pattern = "95",
 }
 
+tile{
+  layer = 0,
+  x = 712,
+  y = 392,
+  width = 16,
+  height = 16,
+  pattern = "525",
+}
+
 dynamic_tile{
   name = "hole_item",
   layer = 0,
@@ -6855,6 +6864,16 @@ teletransporter{
   destination = "from_floor_5",
 }
 
+destructible{
+  layer = 0,
+  x = 720,
+  y = 405,
+  treasure_name = "arrow",
+  treasure_variant = 3,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
 tile{
   layer = 2,
   x = 192,
@@ -7142,3 +7161,4 @@ tile{
   height = 16,
   pattern = "571",
 }
+

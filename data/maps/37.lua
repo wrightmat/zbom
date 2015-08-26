@@ -23,15 +23,15 @@ function npc_deku_1:on_interaction()
   if game:get_value("b2022") then
     trading()
   else
-    game:start_dialog("deku.0.lost_woods")
+    if game:get_value("i1807") == 7 then
+      game:start_dialog("deku.2.lost_woods")
+    else
+      game:start_dialog("deku.0.lost_woods")
+    end
   end
 end
 function npc_deku_2:on_interaction()
-  if game:get_value("b2022") then
-    trading()
-  else
-    game:start_dialog("deku.0.lost_woods")
-  end
+  npc_deku_1:on_interaction()
 end
 
 function ocarina_wind_to_C13:on_interaction()

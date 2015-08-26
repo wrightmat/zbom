@@ -6,6 +6,10 @@ local game = map:get_game()
 ---------------------------------------------
 
 function map:on_started(destination)
+  if not game:get_value("b1166") then
+    miniboss_warp:set_enabled(false)
+  end
+
   sol.timer.start(map, 500, function()
     map:create_enemy({
 	x = 72,

@@ -11,15 +11,6 @@ properties{
 
 tile{
   layer = 0,
-  x = 256,
-  y = 752,
-  width = 48,
-  height = 16,
-  pattern = "8",
-}
-
-tile{
-  layer = 0,
   x = 424,
   y = 136,
   width = 64,
@@ -56,9 +47,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 552,
+  x = 560,
   y = 56,
-  width = 304,
+  width = 288,
   height = 256,
   pattern = "22",
 }
@@ -805,7 +796,7 @@ tile{
   layer = 0,
   x = 112,
   y = 752,
-  width = 48,
+  width = 176,
   height = 16,
   pattern = "8",
 }
@@ -895,7 +886,7 @@ tile{
   layer = 0,
   x = 112,
   y = 744,
-  width = 48,
+  width = 176,
   height = 8,
   pattern = "19",
 }
@@ -5807,51 +5798,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 160,
-  y = 672,
-  width = 16,
-  height = 16,
-  pattern = "118",
-}
-
-tile{
-  layer = 0,
-  x = 160,
-  y = 752,
-  width = 16,
-  height = 16,
-  pattern = "10",
-}
-
-tile{
-  layer = 0,
-  x = 160,
-  y = 688,
-  width = 16,
-  height = 64,
-  pattern = "12",
-}
-
-tile{
-  layer = 0,
-  x = 152,
-  y = 744,
-  width = 8,
-  height = 8,
-  pattern = "20",
-}
-
-tile{
-  layer = 0,
-  x = 152,
-  y = 664,
-  width = 8,
-  height = 80,
-  pattern = "21",
-}
-
-tile{
-  layer = 0,
   x = 144,
   y = 736,
   width = 8,
@@ -5870,74 +5816,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 176,
-  y = 672,
-  width = 64,
-  height = 16,
-  pattern = "9",
-}
-
-tile{
-  layer = 0,
-  x = 240,
-  y = 752,
-  width = 16,
-  height = 16,
-  pattern = "7",
-}
-
-tile{
-  layer = 0,
-  x = 240,
-  y = 688,
-  width = 16,
-  height = 64,
-  pattern = "6",
-}
-
-tile{
-  layer = 0,
-  x = 240,
-  y = 672,
-  width = 16,
-  height = 16,
-  pattern = "119",
-}
-
-tile{
-  layer = 0,
   x = 272,
   y = 736,
   width = 16,
   height = 8,
   pattern = "66",
-}
-
-tile{
-  layer = 0,
-  x = 256,
-  y = 744,
-  width = 32,
-  height = 8,
-  pattern = "19",
-}
-
-tile{
-  layer = 0,
-  x = 256,
-  y = 744,
-  width = 8,
-  height = 8,
-  pattern = "18",
-}
-
-tile{
-  layer = 0,
-  x = 256,
-  y = 664,
-  width = 8,
-  height = 80,
-  pattern = "17",
 }
 
 tile{
@@ -5956,33 +5839,6 @@ tile{
   width = 8,
   height = 80,
   pattern = "64",
-}
-
-tile{
-  layer = 0,
-  x = 160,
-  y = 664,
-  width = 96,
-  height = 8,
-  pattern = "19",
-}
-
-tile{
-  layer = 0,
-  x = 256,
-  y = 664,
-  width = 8,
-  height = 8,
-  pattern = "122",
-}
-
-tile{
-  layer = 0,
-  x = 152,
-  y = 664,
-  width = 8,
-  height = 8,
-  pattern = "125",
 }
 
 tile{
@@ -6010,15 +5866,6 @@ tile{
   width = 112,
   height = 8,
   pattern = "66",
-}
-
-tile{
-  layer = 0,
-  x = 176,
-  y = 688,
-  width = 64,
-  height = 80,
-  pattern = "137",
 }
 
 tile{
@@ -6118,6 +5965,105 @@ tile{
   width = 112,
   height = 8,
   pattern = "113",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 664,
+  width = 16,
+  height = 16,
+  pattern = "190",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 664,
+  width = 48,
+  height = 16,
+  pattern = "192",
+}
+
+tile{
+  layer = 0,
+  x = 216,
+  y = 664,
+  width = 32,
+  height = 16,
+  pattern = "197",
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 664,
+  width = 16,
+  height = 16,
+  pattern = "198",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 680,
+  width = 16,
+  height = 64,
+  pattern = "191",
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 680,
+  width = 16,
+  height = 64,
+  pattern = "199",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 680,
+  width = 80,
+  height = 64,
+  pattern = "162",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 168,
+  width = 16,
+  height = 16,
+  pattern = "476",
+}
+
+tile{
+  layer = 0,
+  x = 784,
+  y = 168,
+  width = 16,
+  height = 16,
+  pattern = "476",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 232,
+  width = 16,
+  height = 16,
+  pattern = "476",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 232,
+  width = 16,
+  height = 16,
+  pattern = "476",
 }
 
 sensor{
@@ -6245,17 +6191,9 @@ enemy{
   name = "bubble_2",
   layer = 0,
   x = 704,
-  y = 213,
+  y = 197,
   direction = 0,
   breed = "bubble_red",
-}
-
-enemy{
-  layer = 0,
-  x = 624,
-  y = 133,
-  direction = 0,
-  breed = "evil_tile",
 }
 
 switch{
@@ -6268,292 +6206,6 @@ switch{
   sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
-}
-
-enemy{
-  layer = 0,
-  x = 624,
-  y = 117,
-  direction = 0,
-  breed = "evil_tile",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 0,
-  x = 640,
-  y = 117,
-  direction = 0,
-  breed = "evil_tile",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 0,
-  x = 640,
-  y = 133,
-  direction = 0,
-  breed = "evil_tile",
-}
-
-enemy{
-  layer = 0,
-  x = 624,
-  y = 149,
-  direction = 0,
-  breed = "evil_tile",
-}
-
-enemy{
-  layer = 0,
-  x = 640,
-  y = 149,
-  direction = 0,
-  breed = "evil_tile",
-}
-
-enemy{
-  layer = 0,
-  x = 656,
-  y = 149,
-  direction = 0,
-  breed = "evil_tile",
-}
-
-enemy{
-  layer = 0,
-  x = 672,
-  y = 149,
-  direction = 0,
-  breed = "evil_tile",
-}
-
-enemy{
-  layer = 0,
-  x = 688,
-  y = 149,
-  direction = 0,
-  breed = "evil_tile",
-}
-
-enemy{
-  layer = 0,
-  x = 704,
-  y = 149,
-  direction = 0,
-  breed = "evil_tile",
-}
-
-enemy{
-  layer = 0,
-  x = 720,
-  y = 149,
-  direction = 0,
-  breed = "evil_tile",
-}
-
-enemy{
-  layer = 0,
-  x = 736,
-  y = 149,
-  direction = 0,
-  breed = "evil_tile",
-}
-
-enemy{
-  layer = 0,
-  x = 656,
-  y = 133,
-  direction = 0,
-  breed = "evil_tile",
-}
-
-enemy{
-  layer = 0,
-  x = 656,
-  y = 117,
-  direction = 0,
-  breed = "evil_tile",
-}
-
-enemy{
-  layer = 0,
-  x = 752,
-  y = 149,
-  direction = 0,
-  breed = "evil_tile",
-}
-
-enemy{
-  layer = 0,
-  x = 752,
-  y = 133,
-  direction = 0,
-  breed = "evil_tile",
-}
-
-enemy{
-  layer = 0,
-  x = 752,
-  y = 117,
-  direction = 0,
-  breed = "evil_tile",
-}
-
-enemy{
-  layer = 0,
-  x = 768,
-  y = 117,
-  direction = 0,
-  breed = "evil_tile",
-}
-
-enemy{
-  layer = 0,
-  x = 768,
-  y = 133,
-  direction = 0,
-  breed = "evil_tile",
-}
-
-enemy{
-  layer = 0,
-  x = 768,
-  y = 149,
-  direction = 0,
-  breed = "evil_tile",
-}
-
-enemy{
-  layer = 0,
-  x = 784,
-  y = 117,
-  direction = 0,
-  breed = "evil_tile",
-}
-
-enemy{
-  layer = 0,
-  x = 784,
-  y = 133,
-  direction = 0,
-  breed = "evil_tile",
-}
-
-enemy{
-  layer = 0,
-  x = 784,
-  y = 149,
-  direction = 0,
-  breed = "evil_tile",
-}
-
-enemy{
-  layer = 0,
-  x = 624,
-  y = 165,
-  direction = 0,
-  breed = "evil_tile",
-}
-
-enemy{
-  layer = 0,
-  x = 640,
-  y = 165,
-  direction = 0,
-  breed = "evil_tile",
-}
-
-enemy{
-  layer = 0,
-  x = 656,
-  y = 165,
-  direction = 0,
-  breed = "evil_tile",
-}
-
-enemy{
-  layer = 0,
-  x = 672,
-  y = 165,
-  direction = 0,
-  breed = "evil_tile",
-}
-
-enemy{
-  layer = 0,
-  x = 688,
-  y = 165,
-  direction = 0,
-  breed = "evil_tile",
-}
-
-enemy{
-  layer = 0,
-  x = 704,
-  y = 165,
-  direction = 0,
-  breed = "evil_tile",
-}
-
-enemy{
-  layer = 0,
-  x = 720,
-  y = 165,
-  direction = 0,
-  breed = "evil_tile",
-}
-
-enemy{
-  layer = 0,
-  x = 736,
-  y = 165,
-  direction = 0,
-  breed = "evil_tile",
-}
-
-enemy{
-  layer = 0,
-  x = 752,
-  y = 165,
-  direction = 0,
-  breed = "evil_tile",
-}
-
-enemy{
-  layer = 0,
-  x = 768,
-  y = 165,
-  direction = 0,
-  breed = "evil_tile",
-}
-
-enemy{
-  layer = 0,
-  x = 784,
-  y = 165,
-  direction = 0,
-  breed = "evil_tile",
-}
-
-npc{
-  name = "block_1",
-  layer = 0,
-  x = 448,
-  y = 325,
-  direction = 3,
-  subtype = 0,
-  sprite = "entities/block",
-}
-
-npc{
-  name = "block_2",
-  layer = 0,
-  x = 464,
-  y = 229,
-  direction = 3,
-  subtype = 0,
-  sprite = "entities/block",
 }
 
 switch{
@@ -6590,10 +6242,8 @@ door{
   direction = 1,
   sprite = "entities/door_shutter",
   savegame_variable = "b1174",
-  opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_7_small_keys",
   opening_condition_consumed = true,
-  cannot_open_dialog = "_small_key_required",
 }
 
 enemy{
@@ -6633,15 +6283,6 @@ chest{
   sprite = "entities/chest",
 }
 
-enemy{
-  name = "miniboss_grim_creeper",
-  layer = 0,
-  x = 216,
-  y = 733,
-  direction = 3,
-  breed = "grim_creeper",
-}
-
 wall{
   layer = 0,
   x = 360,
@@ -6662,18 +6303,9 @@ wall{
 
 wall{
   layer = 0,
-  x = 360,
+  x = 344,
   y = 456,
-  width = 32,
-  height = 8,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 520,
-  y = 456,
-  width = 32,
+  width = 224,
   height = 8,
   stops_enemies = true,
 }
@@ -6906,6 +6538,144 @@ sensor{
   y = 309,
   width = 32,
   height = 16,
+}
+
+wall{
+  layer = 0,
+  x = 568,
+  y = 384,
+  width = 8,
+  height = 80,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 336,
+  y = 384,
+  width = 8,
+  height = 80,
+  stops_enemies = true,
+}
+
+dynamic_tile{
+  name = "stairs_1",
+  layer = 0,
+  x = 200,
+  y = 648,
+  pattern = "184",
+  width = 16,
+  height = 32,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "stairs_2",
+  layer = 0,
+  x = 192,
+  y = 648,
+  pattern = "183",
+  width = 8,
+  height = 32,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "stairs_3",
+  layer = 0,
+  x = 216,
+  y = 648,
+  pattern = "185",
+  width = 8,
+  height = 32,
+  enabled_at_start = false,
+}
+
+destination{
+  name = "miniboss_warp_dest",
+  layer = 0,
+  x = 208,
+  y = 725,
+  direction = 1,
+}
+
+teletransporter{
+  name = "miniboss_warp",
+  layer = 0,
+  x = 200,
+  y = 696,
+  width = 16,
+  height = 16,
+  destination_map = "210",
+  destination = "from_outside",
+  sprite = "entities/teletransporter",
+  sound = "warp",
+}
+
+enemy{
+  name = "miniboss_grim_creeper",
+  layer = 0,
+  x = 216,
+  y = 733,
+  direction = 3,
+  breed = "grim_creeper",
+  savegame_variable = "b1166",
+}
+
+destructible{
+  name = "block_1",
+  layer = 0,
+  x = 448,
+  y = 325,
+  sprite = "entities/block",
+  weight = 4,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  name = "block_2",
+  layer = 0,
+  x = 464,
+  y = 229,
+  sprite = "entities/block",
+  weight = 4,
+  damage_on_enemies = 0,
+}
+
+enemy{
+  name = "firebar_1",
+  layer = 0,
+  x = 616,
+  y = 189,
+  direction = 0,
+  breed = "fire_bar",
+}
+
+enemy{
+  name = "firebar_2",
+  layer = 0,
+  x = 792,
+  y = 189,
+  direction = 0,
+  breed = "fire_bar",
+}
+
+enemy{
+  name = "firebar_3",
+  layer = 0,
+  x = 680,
+  y = 253,
+  direction = 0,
+  breed = "fire_bar",
+}
+
+enemy{
+  name = "firebar_4",
+  layer = 0,
+  x = 728,
+  y = 253,
+  direction = 0,
+  breed = "fire_bar",
 }
 
 tile{

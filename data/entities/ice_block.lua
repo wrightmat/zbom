@@ -96,6 +96,7 @@ function entity:on_position_changed(x, y, layer)
           lava_crust:set_modified_ground("traversable")
           lava_crust:set_traversable_by("hero", true)
           lava_crust:set_traversable_by("enemy", true)
+          lava_crust:set_traversable_by("block", true)
 	  sol.timer.start(map, 15000, function() lava_crust:remove() end)
         elseif map:get_ground(e:get_position()) == "deep_water" then
           self:remove()
@@ -113,6 +114,7 @@ function entity:on_position_changed(x, y, layer)
           ice_patch:set_modified_ground("ice")
           ice_patch:set_traversable_by("hero", true)
           ice_patch:set_traversable_by("enemy", true)
+          ice_patch:set_traversable_by("block", true)
 	  sol.timer.start(map, 15000, function() ice_patch:remove() end)
         end
       end

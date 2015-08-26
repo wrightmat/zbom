@@ -4,9 +4,9 @@ properties{
   width = 1792,
   height = 1472,
   world = "dungeon_8",
-  floor = 0,
+  floor = -1,
   tileset = "11",
-  music = "cave",
+  music = "temple_sanctum",
 }
 
 tile{
@@ -13905,6 +13905,33 @@ tile{
   pattern = "354",
 }
 
+tile{
+  layer = 0,
+  x = 888,
+  y = 1376,
+  width = 8,
+  height = 32,
+  pattern = "183",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 1376,
+  width = 16,
+  height = 32,
+  pattern = "184",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 1376,
+  width = 8,
+  height = 32,
+  pattern = "185",
+}
+
 dynamic_tile{
   name = "stairs_2",
   layer = 0,
@@ -15947,31 +15974,22 @@ sensor{
   height = 32,
 }
 
-tile{
-  layer = 1,
+teletransporter{
+  name = "to_above",
+  layer = 0,
   x = 896,
-  y = 1376,
+  y = 1392,
   width = 16,
-  height = 32,
-  pattern = "184",
+  height = 16,
+  destination_map = "219",
 }
 
-tile{
-  layer = 1,
-  x = 888,
-  y = 1376,
-  width = 8,
-  height = 32,
-  pattern = "183",
-}
-
-tile{
-  layer = 1,
-  x = 912,
-  y = 1376,
-  width = 8,
-  height = 32,
-  pattern = "185",
+destination{
+  name = "from_above",
+  layer = 0,
+  x = 904,
+  y = 1381,
+  direction = 1,
 }
 
 tile{
@@ -16010,24 +16028,6 @@ dynamic_tile{
   width = 8,
   height = 32,
   enabled_at_start = false,
-}
-
-destination{
-  name = "from_above",
-  layer = 1,
-  x = 904,
-  y = 1381,
-  direction = 1,
-}
-
-teletransporter{
-  name = "to_above",
-  layer = 1,
-  x = 896,
-  y = 1392,
-  width = 16,
-  height = 16,
-  destination_map = "219",
 }
 
 tile{

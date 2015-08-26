@@ -15,7 +15,7 @@ dialog{
   icon = "73",
   skip = "current",
   text = [[
-This chest is locked with a giant lock.$0
+This is locked with a giant lock.$0
 Go find a big key!
 ]]
 }
@@ -27,7 +27,7 @@ dialog{
   text = [[
 The door that leads to the Boss's lair
 is locked with a giant lock.
-Find the Boss's key to open it!
+Find the Big key to open it!
 ]]
 }
 
@@ -1367,7 +1367,7 @@ dialog{
   icon = "20",
   skip = "current",
   text = [[
-The $c Book of Mudora$w has been
+The $c Book of Mudora$w  has been
 enchanted! Finally the book
 is back to its full power!
 ]]
@@ -1785,6 +1785,18 @@ You found the $r  Hero's Bow$w!$0
 This is said to have been
 wielded by a legendary hero
 long ago.
+]]
+}
+
+dialog{
+  id = "_treasure.bow.2",
+  icon = "2",
+  skip = "current",
+  text = [[
+You found the $r  Light Bow$w!$0
+This is a powerful weapon which
+allows you to shoot pure arrows
+of light!
 ]]
 }
 
@@ -2216,11 +2228,10 @@ dialog{
   icon = "65",
   skip = "current",
   text = [[
-You found the magical $r Light
-Shield$w!$0 Made of polished
-metal and infused with the
-purity of light, this shield
-will protect its wielder
+You found the magical  $r Light
+Shield$w!$0 Made of polished metal
+and infused with the purity of light,
+this shield will protect its wielder
 from most anything!
 ]]
 }
@@ -3752,7 +3763,6 @@ dialog{
 You losing your beach isn't our
 problem! We need our space and don't
 have room for your pity party!
-  
 ]]
 }
 
@@ -3762,7 +3772,6 @@ dialog{
   text = [[
 Hey kid, scram or you'll get lost
 or something...
-  
 ]]
 }
 
@@ -3777,7 +3786,6 @@ a potion? I must have it!
 Will you give it to me?
 Yes
 No
-  
 ]]
 }
 
@@ -3788,35 +3796,32 @@ dialog{
 Yay! Thanks mister! In exchange,
 I'll give you this cool mask. It's so
 cool because it looks just like me!
-  
 ]]
 }
 
 dialog{
   id = "deku.0.warning",
+  skip = "current",
   text = [[
 Hey kid, I wouldn't wander too far -
-it's dangerous in these woods! At
-least try to find another weapon
-first, maybe something with a range.
-There's a stump with a door south-
-west of here, I'll bet it would have
-some interesting stuff if you
-checked it out.
-  
+it's dangerous in these woods! At least
+try to find another weapon first, maybe
+something with some range. There's a stump
+with a door south-west of here, I'll bet
+it would have some interesting stuff if
+you checked it out.
 ]]
 }
 
 dialog{
   id = "deku.1.lost_woods",
+  skip = "current",
   text = [[
-Hey kid, you might as well get out
-of here. Without the $c  power of the
-sage Mudora$w, you have no chance
-of finding your way in these woods -
-they're all twisted around from the
-evil that's here now.
-  
+Hey kid, you might as well get out of here.
+Without the $c  power of the sage Mudora$w,
+you have no chance of finding your way in
+these woods - they're all twisted around
+from the evil that's here now.
 ]]
 }
 
@@ -3826,21 +3831,20 @@ dialog{
   text = [[
 Thank you so much for getting those
 slimy creatures out of our forest!
-  
 ]]
 }
 
 dialog{
   id = "deku.2.lost_woods",
+  skip = "current",
   text = [[
 At least you have the power of the
-complete $c book$w, but this place is
-still dangerous. The building at
-the heart of the woods is the
-worst - it was evil just streaming
-from it. Be sure you don't enter
-until you're sure you're prepared!
-  
+complete  $cbook$w, but this place is
+still dangerous. The building at the
+heart of the woods is the worst - it has
+evil just streaming from it. Be sure you
+don't enter until you're SURE you're
+prepared!
 ]]
 }
 
@@ -3861,7 +3865,19 @@ the huge sewer system running under our
 feet! Anyway, you should be able to
 find another sewer access just east
 of $bHyrule Castle Town$w.
-  
+]]
+}
+
+dialog{
+  id = "deku.3.lost_woods",
+  skip = "current",
+  text = [[
+I mean it... don't go near the structure
+in the middle of the Lost Wo...$0
+Forest of Light...$0 unless you're totally
+prepared! The masters... I mean...$0
+The $mDark Tribe$w won't be very happy to
+see you, and they won't make things easy!
 ]]
 }
 
@@ -3871,7 +3887,6 @@ dialog{
   text = [[
 Thank you so much for getting those
 slimy creatures out of our forest!
-  
 ]]
 }
 
@@ -3882,7 +3897,6 @@ dialog{
 You can find valuable stuff like
 $rMystic Jade$w  and $rDeku Sticks$w scattered
 around the forest sometimes.
-  
 ]]
 }
 
@@ -3890,10 +3904,9 @@ dialog{
   id = "deku.4.faron.3",
   skip = "current",
   text = [[
-Find enough Mystic Jade and the Great
+Find enough $r Mystic Jade$w and the Great
 Fairy of the Forest will give you
 something great!
-  
 ]]
 }
 
@@ -3901,9 +3914,8 @@ dialog{
   id = "deku.4.faron.4",
   skip = "current",
   text = [[
-Find enough Deku Sticks and they can
+Find enough $r Deku Sticks$w and they can
 be used to make great potions!
-  
 ]]
 }
 
@@ -3917,9 +3929,8 @@ they're just confused by that forest
 and it makes them angry. I have heard
 them say that they like odd smelling
 potions. Maybe if you gave them one of
-those it would cheer them up?
-$0Probably not...
-  
+those it would cheer them up?$0
+Probably not...
 ]]
 }
 
@@ -3929,7 +3940,6 @@ dialog{
   text = [[
 We want these lizards out of our forest!
 Can you please help?
-  
 ]]
 }
 
@@ -3939,7 +3949,6 @@ dialog{
   text = [[
 We $gDeku$w are a proud and protective
 people. This will be a standoff...
-  
 ]]
 }
 
@@ -5395,7 +5404,6 @@ Descent into the Cave of Ordeals
 to test your courage. Fifty
 floors of trials await you.
 Not for the weak.
-  
 ]]
 }
 
@@ -5422,7 +5430,6 @@ dialog{
   text = [[
 The path to this point will help you
 light the way to the path forward.
-  
 ]]
 }
 
@@ -5432,7 +5439,6 @@ dialog{
   text = [[
 Pierce the eyes in order
 to proceed.
-  
 ]]
 }
 
@@ -5441,7 +5447,6 @@ dialog{
   skip = "current",
   text = [[
 Eyes of statues hold secrets.
-  
 ]]
 }
 
@@ -5450,7 +5455,6 @@ dialog{
   skip = "current",
   text = [[
 Gibdos burn easily.
-  
 ]]
 }
 
@@ -5458,12 +5462,11 @@ dialog{
   id = "hint_stone.ruins",
   skip = "current",
   text = [[
-If you get stuck, keep in mind that
-there are multiple routes to the sewers
-below: one in a forest, one near some
-ruins, one near a lake, and one on the
-tip of a mountain.
-  
+If you get stuck, keep in mind that there
+are multiple routes to the sewers below:
+one in a forest, one near some ruins, one
+near a lake, and one on the tip of a
+mountain.
 ]]
 }
 
@@ -5474,7 +5477,6 @@ dialog{
 Beware the Tower of Winds!
 Each floor contains a new type of
 weather-related danger!
-  
 ]]
 }
 
@@ -5482,10 +5484,9 @@ dialog{
   id = "hint_stone.tower.1.2",
   skip = "current",
   text = [[
-Bask in the Light Breezes of
-the Earth element as you begin
-your ascent of the Tower of Winds.
-  
+Bask in the Light Breezes of the
+Earth element as you begin your ascent
+of the Tower of Winds.
 ]]
 }
 
@@ -5493,11 +5494,9 @@ dialog{
   id = "hint_stone.tower.2",
   skip = "current",
   text = [[
-The Cool Breezes of this floor
-will suscept you to Water and the
-Ice it makes. Remember, fire and
-ice don't mix.
-  
+The Cool Breezes of this floor will
+suscept you to Water and the Ice it makes.
+Remember, fire and ice don't mix.
 ]]
 }
 
@@ -5506,10 +5505,9 @@ dialog{
   skip = "current",
   text = [[
 Embrace the Warm Breezes of the third
-floor as you fight the Element of
-Fire. An elemental rod in opposition
-would be quite beneficial.
-  
+floor as you fight the Element of Fire.
+An elemental rod in opposition would be
+quite beneficial.
 ]]
 }
 
@@ -5517,10 +5515,8 @@ dialog{
   id = "hint_stone.tower.4",
   skip = "current",
   text = [[
-The Warm Rains of this floor are
-caused by the intersection of
-Fire and Earth.
-  
+The Warm Rains of this floor are caused
+by the intersection of Fire and Earth.
 ]]
 }
 
@@ -5530,7 +5526,6 @@ dialog{
   text = [[
 Refresh yourself in the Light Rains
 that result from Water and Fire.
-  
 ]]
 }
 
@@ -5538,10 +5533,9 @@ dialog{
   id = "hint_stone.tower.6",
   skip = "current",
   text = [[
-Beware the Warm Storms that are
-stirred up by Fire and Electricity
-on the sixth floor.
-  
+Beware the Warm Storms that are stirred
+up by Fire and Electricity on the
+sixth floor.
 ]]
 }
 
@@ -5549,11 +5543,9 @@ dialog{
   id = "hint_stone.tower.7",
   skip = "current",
   text = [[
-The Cold Rains that are produced
-by Earth and Water on the seventh
-floor can be as dangerous as they
-are refreshing.
-  
+The Cold Rains that are produced by Earth
+and Water on the seventh floor can be as
+dangerous as they are refreshing.
 ]]
 }
 
@@ -5561,10 +5553,9 @@ dialog{
   id = "hint_stone.tower.8",
   skip = "current",
   text = [[
-Cold Storms are brewing on the
-top floor. Water and Electricity
-are a dangerous pairing!
-  
+Cold Storms are brewing on the top floor.
+Water and Electricity are a dangerous
+pairing!
 ]]
 }
 
@@ -7027,15 +7018,16 @@ dialog{
   text = [[
 $v! $0. $0. $0.
 You have done well to put back
-together the $c Book of Mudora$w!
+together the  $c Book of Mudora$w!
 It is now enchanted and complete, so it
 is finally time for you to seek out the
-dark tribe. I'm afraid I can no longer
-see your way, as the $m darkness$w will
+$mdark tribe$w . I'm afraid I can no longer
+see your way, as the  $m  darkness$w will
 conceal it. I can sense a large
-concentration of $m dark magic$w in the
+concentration of  $m dark magic$w in the
 eastern woods - what was once referred
-to as the $r Lost Woods$w.
+to as the $r Lost Woods$w and most recently
+as the Forest of Light.
 ]]
 }
 
@@ -7373,7 +7365,6 @@ reason, and I very much enjoy cooking.
 Would you consider giving the book to me?
 Yes
 No
-  
 ]]
 }
 
@@ -7385,7 +7376,6 @@ I have all of my cooking equipment
 ready to go, but no knowledge and no
 way to learn. It's sad when one's
 unable to pursue their dream...
-  
 ]]
 }
 
@@ -7396,7 +7386,6 @@ dialog{
 Well... that is not very kind of you.
 If you can't share, then I'd like you
 to leave my home.
-  
 ]]
 }
 
@@ -7414,7 +7403,6 @@ feathers$w actually have magical properties,
 and should let non-Ritos like you float
 in the air for short periods of time.
 Yes, that's what I'll offer in return!
-  
 ]]
 }
 
@@ -7425,7 +7413,6 @@ dialog{
 Hello sir, and welcome to the newly
 established $b Septen Heights$w! There's not
 a lot here yet, but we're growing fast!
-  
 ]]
 }
 
@@ -7437,7 +7424,6 @@ We $g Rito$w are a mysterious people - even
 we don't fully know how we got here!
 Hyrule is a magical place, let's just
 leave it at that.
-  
 ]]
 }
 
@@ -7452,7 +7438,6 @@ she uses her crystal ball to see the
 future, but that even she can't see the
 location of the thing she wants the most-
 a $rMoon's Tear$w.
-  
 ]]
 }
 
@@ -7467,7 +7452,6 @@ the wind. If you could get rid of the
 rock pile blocking the way, you could
 probably look around early, but I
 wouldn't recommend it!
-  
 ]]
 }
 
@@ -7482,7 +7466,6 @@ at the top of the Tower! We can't
 possibly go pray there now, it's much
 too dangerous.$0
 Can you do anything to help?
-  
 ]]
 }
 
@@ -7496,7 +7479,6 @@ believe it? You won't be able to get
 there right now, but if you could you'd
 be able to visit  $bRauru, Darunia, Nabooru,
 Ruto,$w or any of the other towns there!
-  
 ]]
 }
 
@@ -7505,14 +7487,12 @@ dialog{
   skip = "current",
   text = [[
 How'd you get the bridge back up?
-Doesn't matter...$0 My favorite place
-to visit in the Northern Province is
+Doesn't matter...$0 My favorite place to
+visit in the Northern Province is
 $b Three Eye Rock$w. It's a very relaxing
 beach on the southern tip of the
-continent. In fact, the Ocarina patch
-in our own little town will get you
-right there!
-  
+continent. In fact, the Ocarina patch in
+our own little town will get you there!
 ]]
 }
 
@@ -7528,7 +7508,6 @@ other Temples of Hyrule? There's one
 in the forest, one in the desert, one
 on a mountain, one under a lake, one
 in a snowy peak and one in some ruins.
-  
 ]]
 }
 
@@ -7542,7 +7521,6 @@ Unfortunatly, I don't know much about
 carpentry yet, and I don't have anyone
 to learn from, so I guess I'll just stare
 at this until I figure out how to fix it. 
-  
 ]]
 }
 
@@ -7556,7 +7534,6 @@ That sounds perfect for me! I can learn
 everything he has to teach and bring it
 back to my city. Thank you for the
 great information!
-  
 ]]
 }
 
@@ -7566,7 +7543,6 @@ dialog{
   text = [[
 I've learned so much already. I can't
 thank you enough for this opportunity!
-  
 ]]
 }
 

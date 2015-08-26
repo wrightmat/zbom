@@ -38,14 +38,14 @@ end
 
 function switch_chest:on_activated()
   chest_key_2:set_enabled(true)
-  sol.audio.play_sounds("chest_appears")
+  sol.audio.play_sound("chest_appears")
 end
 
 for enemy in map:get_entities("chuchu") do
   enemy.on_dead = function()
     if not map:has_entities("chuchu") then
       warp_chuchu:set_enabled(true)
-      sol.audio.play_sounds("secret")
+      sol.audio.play_sound("secret")
     end
   end
 end

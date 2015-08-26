@@ -12,6 +12,8 @@ function map:on_started(destination)
     miniboss_shadow_link:set_enabled(false)
     chest_item:set_enabled(false)
   end
+  if not game:get_value("b1190") then boss_zirna:set_enabled(false) end
+  --if not game:get_value("b1191") then boss_belahim:set_enabled(false) end
   if not game:get_value("b1190") and not game:get_value("b1191") then
     boss_heart:set_enabled(false)
   end

@@ -52,7 +52,7 @@ function enemy:stop(movement)
   self:set_can_attack(false)
   self:set_can_hurt_hero_running(false)
   self:get_sprite():set_animation("immobilized")
-  movement:stop(self)
+  self:stop_movement
   going_hero = false
 end
 
