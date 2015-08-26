@@ -1,9 +1,9 @@
 local game = ...
 
-local inventory_builder = require("menus/pause_inventory")
-local map_builder = require("menus/pause_map")
-local quest_status_builder = require("menus/pause_quest_status")
-local options_builder = require("menus/pause_options")
+local inventory_builder = require("scripts/menus/pause_inventory")
+local map_builder = require("scripts/menus/pause_map")
+local quest_status_builder = require("scripts/menus/pause_quest_status")
+local options_builder = require("scripts/menus/pause_options")
 
 function game:start_pause_menu()
 
@@ -34,4 +34,3 @@ function game:stop_pause_menu()
   self:set_custom_command_effect("action", nil)
   self:set_custom_command_effect("attack", nil)
 end
-

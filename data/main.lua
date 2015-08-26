@@ -20,10 +20,10 @@ function sol.main:on_started()
   -- If there is a file called "debug" in the write directory, enable debug mode.
   debug_enabled = sol.file.exists("debug")
 
-  local solarus_logo = require("menus/solarus_logo")
-  local language_menu = require("menus/language")
-  local title_screen = require("menus/title")
-  local savegame_menu = require("menus/savegames")
+  local solarus_logo = require("scripts/menus/solarus_logo")
+  local language_menu = require("scripts/menus/language")
+  local title_screen = require("scripts/menus/title")
+  local savegame_menu = require("scripts/menus/savegames")
 
   -- Show the Solarus logo first.
   sol.menu.start(self, solarus_logo)

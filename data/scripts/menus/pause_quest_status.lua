@@ -1,4 +1,4 @@
-local submenu = require("menus/pause_submenu")
+local submenu = require("scripts/menus/pause_submenu")
 local quest_status_submenu = submenu:new()
 
 function quest_status_submenu:on_started()
