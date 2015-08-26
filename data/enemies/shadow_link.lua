@@ -133,3 +133,7 @@ function enemy:on_attacking_hero(hero, enemy_sprite)
     hero:start_hurt(damage)
   end
 end
+
+function enemy:on_hurt(attack)
+  self:go_attack()
+end

@@ -6974,27 +6974,13 @@ sensor{
   height = 32,
 }
 
-wall{
-  layer = 0,
-  x = 512,
-  y = 1312,
-  width = 32,
-  height = 8,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
 chest{
   name = "chest_item",
   layer = 0,
   x = 528,
   y = 1317,
-  treasure_name = "bow",
-  treasure_variant = 2,
-  treasure_savegame_variable = "b1801",
+  treasure_name = "bow_light",
+  treasure_savegame_variable = "i1852",
   sprite = "entities/chest_big",
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "b1182",
@@ -7701,13 +7687,5 @@ tile{
   width = 16,
   height = 8,
   pattern = "198",
-}
-
-separator{
-  layer = 2,
-  x = 704,
-  y = 880,
-  width = 16,
-  height = 528,
 }
 

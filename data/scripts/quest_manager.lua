@@ -74,6 +74,22 @@ local function initialize_enemies()
     local reaction = self:get_attack_consequence_sprite(enemy_sprite, "sword")
     self:remove_life(reaction * damage_factor)
   end
+
+  -- Helper function to inflict an explicit reaction from a scripted weapon.
+  function enemy_meta:receive_attack_consequence(attack, reaction)
+    if type(reaction) == "number" then
+      self:hurt(reaction)
+    elseif reaction == "immobilized" then
+      self:immobilize()
+    elseif reaction == "protected" then
+      sol.audio.play_sound("sword_tapping")
+    elseif reaction == "custom" then
+      if self.on_custom_attack_received ~= nil then
+        self:on_custom_attack_received(attack)
+      end
+    end
+  end
+
 end
 
 -- Initializes map entity related behaviors.

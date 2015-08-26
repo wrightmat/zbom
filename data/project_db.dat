@@ -325,6 +325,7 @@ sprite{ id = "enemies/wizzrobe_ice", description = "Wizzrobe, Ice" }
 sprite{ id = "enemies/zirna", description = "Zirna" }
 sprite{ id = "enemies/zola", description = "Zola" }
 sprite{ id = "entities/arrow", description = "Arrow" }
+sprite{ id = "entities/arrow_light", description = "Light Arrow" }
 sprite{ id = "entities/bed", description = "Bed" }
 sprite{ id = "entities/bed_snores", description = "Snores" }
 sprite{ id = "entities/block", description = "Block" }
@@ -713,6 +714,7 @@ item{ id = "amber_counter", description = "Goron Amber counter" }
 item{ id = "apple", description = "Apple" }
 item{ id = "apple_counter", description = "Apple counter" }
 item{ id = "arrow", description = "Arrows (x1 / x3 / x5)" }
+item{ id = "arrow_light", description = "Light Arrows (x1 / x3 / x5)" }
 item{ id = "big_key", description = "Dungeon Big Key" }
 item{ id = "bomb", description = "Bombs (x1 / x3 / x5)" }
 item{ id = "bomb_bag", description = "Bomb bag (small / large / huge)" }
@@ -725,7 +727,8 @@ item{ id = "bottle_1", description = "Bottle 1" }
 item{ id = "bottle_2", description = "Bottle 2" }
 item{ id = "bottle_3", description = "Bottle 3" }
 item{ id = "bottle_4", description = "Bottle 4" }
-item{ id = "bow", description = "Bow (Regular Arrows / Light Arrows)" }
+item{ id = "bow", description = "Heros Bow" }
+item{ id = "bow_light", description = "Bow of Light" }
 item{ id = "cane", description = "Cane of Ice" }
 item{ id = "compass", description = "Dungeon Compass" }
 item{ id = "crystal", description = "Magic Crystal" }
@@ -882,6 +885,7 @@ enemy{ id = "wizzrobe_ice", description = "Wizzrobe, Ice" }
 enemy{ id = "zirna", description = "Zirna (Dark Interloper)" }
 enemy{ id = "zola", description = "Zola" }
 
+entity{ id = "arrow", description = "Arrow" }
 entity{ id = "butterfly", description = "Butterfly" }
 entity{ id = "hammer_stake", description = "Hammer Stake" }
 entity{ id = "ice_block", description = "Ice Block" }
