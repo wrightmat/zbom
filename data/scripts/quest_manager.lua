@@ -3,11 +3,9 @@ local quest_manager = {}
 -- This script handles global behavior of this quest,
 -- that is, things not related to a particular savegame.
 
--- Initializes the behavior of destructible entities.
+-- Initialize the behavior of destructible entities.
 local function initialize_destructibles()
-  -- Show a dialog when the player cannot lift them.
   local destructible_meta = sol.main.get_metatable("destructible")
-  -- destructible_meta represents the shared behavior of all destructible objects.
 
   function destructible_meta:on_looked()
     -- Here, self is the destructible object.
@@ -28,18 +26,16 @@ local function initialize_destructibles()
 end
 
 -- Initialize sensor behavior specific to this quest.
-local function initialize_sensor()
-
+local function initialize_sensors()
   local sensor_meta = sol.main.get_metatable("sensor")
 
   function sensor_meta:on_activated()
-
     local game = self:get_game()
     local hero = self:get_map():get_hero()
     local name = self:get_name()
     local dungeon = game:get_dungeon()
 
-    -- Sensors prefixed by "dungeon_room_N" save exploration state of room "N" of current dungeon floor.
+    -- Sensors prefixed by "dungeon_room_N_" save exploration state of room "N" of current dungeon floor.
     -- Optional treasure savegame value appended to end will play signal chime if value is false and hero has compass in inventory. "dungeon_room_N_bxxx"
     local room = name:match("^dungeon_room_(%d+)")
     local signal = name:match("(%U%d+)$")
@@ -54,12 +50,11 @@ local function initialize_sensor()
   end
 end
 
--- Initializes the behavior of enemies.
+-- Initialize the behavior of enemies.
 local function initialize_enemies()
-  -- Enemies: redefine the damage of the hero's sword.
-  -- (The default damages are less important.)
   local enemy_meta = sol.main.get_metatable("enemy")
 
+  -- Enemies: redefine the damage of the hero's sword. (The default damages are less important.)
   function enemy_meta:on_hurt_by_sword(hero, enemy_sprite)
     -- Here, self is the enemy.
     local game = self:get_game()
@@ -89,14 +84,27 @@ local function initialize_enemies()
       end
     end
   end
-
 end
 
--- Initializes map entity related behaviors.
+-- Initialize NPC behavior specific to this quest.
+local function initialize_npcs()
+  local npc_meta = sol.main.get_metatable("npc")
+
+  -- Make signs and mailboxes hooks for the hookshot.
+  function npc_meta:is_hookshot_hook()
+    if self:get_sprite():get_animation_set() == "entities/sign" then return true
+    elseif self:get_sprite():get_animation_set() == "entities/mailbox" then return true
+    else return false end
+  end
+end
+
+
+-- Initialize map entity related behaviors.
 local function initialize_entities()
   initialize_destructibles()
   initialize_enemies()
-  initialize_sensor()
+  initialize_sensors()
+  initialize_npcs()
 end
 
 local function initialize_maps()
@@ -105,7 +113,7 @@ local function initialize_maps()
   local heat_timer, swim_timer
 
   function map_metatable:on_draw(dst_surface)
-    -- Put the night overlay on any outdoor map if it's night time
+    -- Put the night overlay on any outdoor map if it's night time.
     if (self:get_game():is_in_outside_world() and self:get_game():get_time_of_day() == "night") or
 	(self:get_world() == "dungeon_2" and self:get_id() == "20" and self:get_game():get_time_of_day() == "night") or
 	(self:get_world() == "dungeon_2" and self:get_id() == "21" and self:get_game():get_time_of_day() == "night") or
@@ -129,7 +137,7 @@ local function initialize_maps()
       return math.random(math.ceil(lower/8), math.floor(upper/8))*8
     end
 
-    -- Night time is more dangerous - add various enemies
+    -- Night time is more dangerous - add various enemies.
     if game:get_map():get_world() == "outside_world" and
     game:get_time_of_day() == "night" then
       local keese_random = math.random()
@@ -183,8 +191,7 @@ local function initialize_maps()
   end
 
   function map_metatable:on_update()
-
-    -- if hero doesn't have red tunic, slowly remove stamina in Subrosia
+    -- if hero doesn't have red tunic, slowly remove stamina in Subrosia.
     if self:get_game():get_map():get_world() == "outside_subrosia" and
     self:get_game():get_item("tunic"):get_variant() < 2 then
       if not heat_timer then
@@ -200,7 +207,7 @@ local function initialize_maps()
       end
     end
 
-    -- if hero doesn't have blue tunic, slowly remove stamina while swimming
+    -- if hero doesn't have blue tunic, slowly remove stamina while swimming.
     if self:get_game():get_hero():get_state() == "swimming" and
     self:get_game():get_item("tunic"):get_variant() < 3 then
       if not swim_timer then
@@ -215,15 +222,13 @@ local function initialize_maps()
         swim_timer = nil
       end
     end
-
   end
-
 end
 
 local function initialize_game()
   local game_metatable = sol.main.get_metatable("game")
 
-  -- Stamina functions mirror magic and life functions
+  -- Stamina functions mirror magic and life functions.
   function game_metatable:get_stamina()
     return self:get_value("i1024")
   end
@@ -254,7 +259,7 @@ local function initialize_game()
   end
 
   function game_metatable:set_max_stamina(value)
-    if value >= 20 then -- stamina can't be too low or hero can't do anything!
+    if value >= 20 then -- Stamina can't be too low or hero can't do anything!
       return self:set_value("i1025", value)
     end
   end
@@ -281,9 +286,7 @@ local function initialize_game()
         return x,y
       end
     end
-  
   end
-
 end
 
 -- Performs global initializations specific to this quest.

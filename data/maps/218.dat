@@ -5051,15 +5051,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 112,
-  y = 1232,
-  width = 16,
-  height = 16,
-  pattern = "472",
-}
-
-tile{
-  layer = 0,
   x = 256,
   y = 1232,
   width = 16,
@@ -6037,6 +6028,15 @@ tile{
   width = 8,
   height = 8,
   pattern = "104",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 1232,
+  width = 16,
+  height = 16,
+  pattern = "472",
 }
 
 sensor{
