@@ -1,14 +1,18 @@
 local map = ...
-local game = map:get_game()
 
---local cEmitter = require("scripts/particle_emitter")
---sol.main.load_file("scripts/particles/test.lua")(game)
+function map:on_started(destination)
+  local surface = sol.surface.create(16, 16)
+  surface:fill_color({128, 64, 0, 255})
 
---function map:on_started()
---  local emitter = cEmitter:new(partTest)
---  emitter:start()
---end
+  local pixels = surface:get_pixels()
+  local r, g, b, a = pixels:byte(1, 4)
 
---function map:on_update()
-  --emitter:play(event.deltaTime,mx,my,override)
---end
+  sol.timer.start(self, 5000, function()
+    a = a - 100
+    surface:set_pixels(r, g, b, a)
+  end)
+end
+
+function map:on_draw(dst_surface)
+  if surface ~= nil then surface:draw(dst_surface) end
+end
