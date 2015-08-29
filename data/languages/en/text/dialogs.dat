@@ -5085,6 +5085,52 @@ waiting for.
 }
 
 dialog{
+  id = "guard.0.attic",
+  text = [[
+You probably shouldn't be up here. If this
+wasn't my last week on the job, I'd kick
+you out. Just don't do anything stupid.
+]]
+}
+
+dialog{
+  id = "guard.0.castle",
+  text = [[
+Welcome to Hyrule Castle. The Hylian Guard
+will be keeping an eye on you while you're
+visiting. Don't do anything stupid.
+]]
+}
+
+dialog{
+  id = "guard.0.council",
+  text = [[
+Ahead is the Council Chambers. All of the
+Elders gather here to discuss policy.
+Try not to bother them.
+]]
+}
+
+dialog{
+  id = "guard.0.outside",
+  text = [[
+The great Hyrule Castle is open to visitors
+throughout the daylight hours. If you
+behave yourself, you can look at anything
+you'd like while inside.
+]]
+}
+
+dialog{
+  id = "guard.0.throne",
+  text = [[
+Through that door is the Throne Room, but
+it's no longer open to the public. The
+Council Chambers is more interesting now.
+]]
+}
+
+dialog{
   id = "hesla.0.beach",
   skip = "current",
   text = [[
@@ -9562,3 +9608,4 @@ But if that's what my commander wants,
 then who am I to stand in the way.
 ]]
 }
+

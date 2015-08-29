@@ -5302,6 +5302,28 @@ jumper{
   jump_length = 40,
 }
 
+npc{
+  name = "npc_guard_1",
+  layer = 0,
+  x = 408,
+  y = 981,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/guard",
+  behavior = "dialog#guard.0.outside",
+}
+
+npc{
+  name = "npc_guard_2",
+  layer = 0,
+  x = 824,
+  y = 973,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/guard",
+  behavior = "dialog#guard.0.outside",
+}
+
 tile{
   layer = 1,
   x = 536,

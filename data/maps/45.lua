@@ -7,6 +7,13 @@ local game = map:get_game()
 
 local torch_overlay = nil
 
+local function random_walk(npc)
+  local m = sol.movement.create("random_path")
+  m:set_speed(32)
+  m:start(npc)
+  npc:get_sprite():set_animation("walking")
+end
+
 function map:on_started(destination)
   -- Opening doors
   local entrance_names = {
@@ -16,8 +23,7 @@ function map:on_started(destination)
     local sensor = map:get_entity(entrance_name .. "_door_sensor")
     local tile = map:get_entity(entrance_name .. "_door")
     sensor.on_activated_repeat = function()
-      if hero:get_direction() == 1
-	  and tile:is_enabled() then
+      if hero:get_direction() == 1 and tile:is_enabled() and game:get_time_of_day() == "day" then
 	tile:set_enabled(false)
 	sol.audio.play_sound("door_open")
       end
@@ -40,6 +46,9 @@ function map:on_started(destination)
       end)
     end)
   end
+
+  random_walk(npc_guard_1)
+  random_walk(npc_guard_2)
 end
 
 function map:on_draw(dst_surface)

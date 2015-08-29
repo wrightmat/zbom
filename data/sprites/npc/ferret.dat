@@ -4,19 +4,19 @@ animation{
   frame_delay = 125,
   frame_to_loop_on = 0,
   directions = {
-    { x = 0, y = 144, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 21, num_frames = 4 },
-    { x = 0, y = 172, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 21, num_frames = 4 },
-    { x = 0, y = 120, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 21, num_frames = 4 },
-    { x = 0, y = 96, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 21, num_frames = 4 },
+    { x = 0, y = 168, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 21, num_frames = 3 },
+    { x = 0, y = 212, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 21, num_frames = 3 },
+    { x = 0, y = 136, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 21, num_frames = 3 },
+    { x = 0, y = 96, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 21, num_frames = 3 },
   },
 }
 animation{
   name = "stopped",
   src_image = "npc/animals.png",
   directions = {
-    { x = 0, y = 144, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 21 },
-    { x = 0, y = 172, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 21 },
-    { x = 0, y = 120, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 21 },
+    { x = 0, y = 176, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 21 },
+    { x = 0, y = 212, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 21 },
+    { x = 0, y = 136, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 21 },
     { x = 0, y = 96, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 21 },
   },
 }

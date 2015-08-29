@@ -9706,6 +9706,83 @@ chest{
   sprite = "entities/chest",
 }
 
+npc{
+  name = "npc_guard_1",
+  layer = 0,
+  x = 232,
+  y = 733,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/guard",
+  behavior = "dialog#guard.0.throne",
+}
+
+npc{
+  name = "npc_guard_2",
+  layer = 0,
+  x = 352,
+  y = 733,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/guard",
+  behavior = "dialog#guard.0.throne",
+}
+
+npc{
+  name = "npc_guard_3",
+  layer = 0,
+  x = 504,
+  y = 861,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/guard",
+  behavior = "dialog#guard.0.castle",
+}
+
+npc{
+  name = "npc_guard_4",
+  layer = 0,
+  x = 664,
+  y = 861,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/guard",
+  behavior = "dialog#guard.0.castle",
+}
+
+npc{
+  name = "npc_guard_5",
+  layer = 0,
+  x = 752,
+  y = 661,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/guard",
+  behavior = "dialog#guard.0.council",
+}
+
+npc{
+  name = "npc_guard_6",
+  layer = 0,
+  x = 1008,
+  y = 661,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/guard",
+  behavior = "dialog#guard.0.council",
+}
+
+npc{
+  name = "npc_guard_7",
+  layer = 0,
+  x = 112,
+  y = 1181,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/guard",
+  behavior = "dialog#guard.0.attic",
+}
+
 tile{
   layer = 1,
   x = 848,
