@@ -126,16 +126,32 @@ function shelf_14:on_interaction()
   game:start_dialog("library_shelf_14")
 end
 function shelf_15:on_interaction()
-  game:start_dialog("library_shelf_15")
+  if game:get_item("book_mudora"):get_variant() == 6 then
+    game:start_dialog("library_shelf_15")
+  else
+    game:start_dialog("library_shelf")
+  end
 end
 function shelf_16:on_interaction()
-  game:start_dialog("library_shelf")
+  if game:get_item("book_mudora"):get_variant() == 7 then
+    game:start_dialog("library_shelf_16")
+  else
+    game:start_dialog("library_shelf")
+  end
 end
 function shelf_17:on_interaction()
-  game:start_dialog("library_shelf")
+  if game:get_item("book_mudora"):get_variant() == 7 then
+    game:start_dialog("library_shelf_17")
+  else
+    game:start_dialog("library_shelf")
+  end
 end
 function shelf_18:on_interaction()
-  game:start_dialog("library_shelf")
+  if game:get_item("book_mudora"):get_variant() == 8 then
+    game:start_dialog("library_shelf_18")
+  else
+    game:start_dialog("library_shelf")
+  end
 end
 
 function npc_spoils_shopkeep:on_interaction()
