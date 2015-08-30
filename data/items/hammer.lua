@@ -50,7 +50,7 @@ function item:on_using()
       return
     end
     enemies_touched[enemy] = true
-    local reaction = enemy:get_hammer_reaction(enemy_sprite)
+    local reaction = enemy:get_attack_hammer(enemy_sprite)
     enemy:receive_attack_consequence("hammer", reaction)
   end)
 
@@ -73,38 +73,38 @@ end
 local function initialize_meta()
   -- Add Lua hammer properties to enemies.
   local enemy_meta = sol.main.get_metatable("enemy")
-  if enemy_meta.get_hammer_reaction ~= nil then
+  if enemy_meta.get_attack_hammer ~= nil then
     -- Already done.
     return
   end
 
-  enemy_meta.hammer_reaction = 3  -- 3 life points by default.
-  enemy_meta.hammer_reaction_sprite = {}
-  function enemy_meta:get_hammer_reaction(sprite)
-    if sprite ~= nil and self.hammer_reaction_sprite[sprite] ~= nil then
-      return self.hammer_reaction_sprite[sprite]
+  enemy_meta.attack_hammer = 3  -- 3 life points by default.
+  enemy_meta.attack_hammer_sprite = {}
+  function enemy_meta:get_attack_hammer(sprite)
+    if sprite ~= nil and self.attack_hammer_sprite[sprite] ~= nil then
+      return self.attack_hammer_sprite[sprite]
     end
-    return self.hammer_reaction
+    return self.attack_hammer
   end
 
-  function enemy_meta:set_hammer_reaction(reaction, sprite)
-    self.hammer_reaction = reaction
+  function enemy_meta:set_attack_hammer(reaction, sprite)
+    self.attack_hammer = reaction
   end
 
-  function enemy_meta:set_hammer_reaction_sprite(sprite, reaction)
-    self.hammer_reaction_sprite[sprite] = reaction
+  function enemy_meta:set_attack_hammer_sprite(sprite, reaction)
+    self.attack_hammer_sprite[sprite] = reaction
   end
 
   -- Change the default enemy:set_invincible() to also take into account the hammer.
   local previous_set_invincible = enemy_meta.set_invincible
   function enemy_meta:set_invincible()
     previous_set_invincible(self)
-    self:set_hammer_reaction("ignored")
+    self:set_attack_hammer("ignored")
   end
   local previous_set_invincible_sprite = enemy_meta.set_invincible_sprite
   function enemy_meta:set_invincible_sprite(sprite)
     previous_set_invincible_sprite(self, sprite)
-    self:set_hammer_reaction_sprite(sprite, "ignored")
+    self:set_attack_hammer_sprite(sprite, "ignored")
   end
 end
 
