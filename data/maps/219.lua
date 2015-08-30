@@ -1,6 +1,16 @@
 local map = ...
 local game = map:get_game()
 local room9_1, room9_2, room9_3 = false
+local rooms = {
+  {x = 736, y = 1152},
+  {x = 400, y = 1152},
+  {x = 64, y = 1152},
+  {x = 64, y = 880},
+  {x = 400, y = 880},
+  {x = 736, y = 880},
+  {x = 1072, y = 880},
+  {x = 1408, y = 880}
+}
 
 ----------------------------------------------
 -- Dungeon 8: Interloper Sanctum (Basement) --
@@ -66,27 +76,20 @@ end
 
 function map:on_draw(dst_surface)
   local i
+  local room_overlay
 
   -- Draw each room as dark or lit
-  local rooms = {
-    {x = 736, y = 1152},
-    {x = 400, y = 1152},
-    {x = 64, y = 1152},
-    {x = 64, y = 880},
-    {x = 400, y = 880},
-    {x = 736, y = 880},
-    {x = 1072, y = 880},
-    {x = 1408, y = 880}
-  }
   for i = 1, #rooms do
     if game:get_value("dungeon_8_room"..i.."_lit") then
-      local room_overlay[i] = sol.surface.create("entities/dark_room.png")
-      room_overlay[i]:draw_region(rooms[i].x, rooms[i].y, 320, 256, dst_surface)
+      if room_overlay then room_overlay = nil end
+      room_overlay = sol.surface.create("entities/dark_room.png")
+      room_overlay:draw_region(rooms[i].x, rooms[i].y, 328, 262, dst_surface)
     else
-      local room_overlay[i] = sol.surface.create(320,256)
-      room_overlay[i]:set_opacity(0.9 * 255)
-      room_overlay[i]:fill_color{0, 0, 0}
-      room_overlay[i]:draw_region(rooms[i].x, rooms[i].y, 320, 256, dst_surface)
+      if room_overlay then room_overlay = nil end
+      room_overlay = sol.surface.create(328,262)
+      room_overlay:fill_color{0, 0, 0}
+      room_overlay:set_opacity(0.9 * 255)
+      room_overlay:draw_region(rooms[i].x, rooms[i].y, 328, 262, dst_surface)
     end
   end
 

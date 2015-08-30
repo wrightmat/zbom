@@ -7284,6 +7284,17 @@ wall{
   stops_enemies = true,
 }
 
+teletransporter{
+  layer = 0,
+  x = 184,
+  y = 1232,
+  width = 16,
+  height = 16,
+  destination_map = "219",
+  sprite = "entities/teletransporter",
+  sound = "warp",
+}
+
 tile{
   layer = 2,
   x = 704,

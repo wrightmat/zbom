@@ -2,9 +2,9 @@ local item = ...
 local game = item:get_game()
 
 function item:on_created()
-  item:set_shadow("small")
-  item:set_can_disappear(true)
-  item:set_brandish_when_picked(false)
+  self:set_shadow("small")
+  self:set_can_disappear(true)
+  self:set_brandish_when_picked(false)
 end
 
 function item:on_started()

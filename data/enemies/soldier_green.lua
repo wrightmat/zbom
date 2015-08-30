@@ -45,11 +45,10 @@ end
 
 -- Makes the soldier walk towards a direction.
 function enemy:go(direction4)
-  -- Set the sprite.
+  local sprite = self:get_sprite()
   sprite:set_animation("walking")
   sprite:set_direction(direction4)
 
-  -- Set the movement.
   local m = self:get_movement()
   local max_distance = 40 + math.random(120)
   m:set_max_distance(max_distance)
