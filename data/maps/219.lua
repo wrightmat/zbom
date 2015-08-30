@@ -7,7 +7,7 @@ local room9_1, room9_2, room9_3 = false
 ----------------------------------------------
 
 function map:on_started(destination)
-   game:set_value("dungeon_8_room25_lit")
+   game:set_value("dungeon_8_room25_lit", true)
 end
 
 for enemy in map:get_entities("room_1") do
@@ -61,4 +61,33 @@ function map:on_update()
     room12_gate_w1:set_enabled(false)
     room12_gate_w2:set_enabled(false)
   end
+end
+
+
+function map:on_draw(dst_surface)
+  local i
+
+  -- Draw each room as dark or lit
+  local rooms = {
+    {x = 736, y = 1152},
+    {x = 400, y = 1152},
+    {x = 64, y = 1152},
+    {x = 64, y = 880},
+    {x = 400, y = 880},
+    {x = 736, y = 880},
+    {x = 1072, y = 880},
+    {x = 1408, y = 880}
+  }
+  for i = 1, #rooms do
+    if game:get_value("dungeon_8_room"..i.."_lit") then
+      local room_overlay[i] = sol.surface.create("entities/dark_room.png")
+      room_overlay[i]:draw_region(rooms[i].x, rooms[i].y, 320, 256, dst_surface)
+    else
+      local room_overlay[i] = sol.surface.create(320,256)
+      room_overlay[i]:set_opacity(0.9 * 255)
+      room_overlay[i]:fill_color{0, 0, 0}
+      room_overlay[i]:draw_region(rooms[i].x, rooms[i].y, 320, 256, dst_surface)
+    end
+  end
+
 end

@@ -279,7 +279,6 @@ local function initialize_game()
     function random_points()
       local x = random_8(1, 1120)
       local y = random_8(1, 1120)
-	print('random point: x= '..x..', y= '..y..', traversable= '..tostring(self:get_map():get_ground(x,y,1)))
       if self:get_map():get_ground(x,y,1) ~= "traversable" then
          random_points()
       else
