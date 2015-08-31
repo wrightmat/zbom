@@ -15,10 +15,10 @@ local probabilities = {
   [{ "magic_flask", 2}] = 8,    -- Big magic jar.
   [{ "heart", 1}]       = 60,  -- Heart.
   [{ "fairy", 1}]       = 2,    -- Fairy.
-  [{ "alchemy", 1}]     = 1,    -- Alchemy Stone (rare drop item).
-  [{ "plume", 1 }]      = 0.5,  -- Goddess Plume (exceptionally rare drop item).
-  [{ "amber", 1 }]      = 2,    -- Goron Amber (fairly rare drop item, only found in mountain areas).
-  [{ "crystal", 1 }]    = 2,    -- Magic Crystal (fairly rare drop item, only found in North Hyrule).
+  [{ "alchemy", 1}]     = 1.5,    -- Alchemy Stone (rare drop item).
+  [{ "plume", 1 }]      = 1,  -- Goddess Plume (exceptionally rare drop item).
+  [{ "amber", 1 }]      = 4,    -- Goron Amber (fairly rare drop item, only found in mountain areas).
+  [{ "crystal", 1 }]    = 3,    -- Magic Crystal (fairly rare drop item, only found in North Hyrule).
   [{ "ore", 1 }]        = 40,    -- Subrosian Ore (drop item, only found in Subrosia).
 }
 
