@@ -5843,15 +5843,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 272,
-  y = 1344,
-  width = 16,
-  height = 24,
-  pattern = "46",
-}
-
-tile{
-  layer = 0,
   x = 72,
   y = 32,
   width = 16,
@@ -5893,6 +5884,51 @@ tile{
   width = 16,
   height = 24,
   pattern = "95",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 1568,
+  width = 16,
+  height = 16,
+  pattern = "604",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 1568,
+  width = 16,
+  height = 16,
+  pattern = "604",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 1592,
+  width = 16,
+  height = 16,
+  pattern = "604",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 1368,
+  width = 16,
+  height = 16,
+  pattern = "604",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 1400,
+  width = 16,
+  height = 16,
+  pattern = "604",
 }
 
 door{
@@ -6609,7 +6645,7 @@ enemy{
 
 destructible{
   layer = 0,
-  x = 256,
+  x = 304,
   y = 1381,
   treasure_name = "magic_flask",
   treasure_variant = 2,
@@ -7379,17 +7415,6 @@ destructible{
   weight = 2,
 }
 
-destructible{
-  layer = 0,
-  x = 256,
-  y = 1413,
-  treasure_name = "random",
-  sprite = "entities/stone_small_black",
-  destruction_sound = "stone",
-  weight = 2,
-  damage_on_enemies = 2,
-}
-
 wall{
   layer = 0,
   x = 448,
@@ -7784,37 +7809,59 @@ enemy{
   treasure_variant = 3,
 }
 
-dynamic_tile{
-  name = "hook_2",
-  layer = 0,
-  x = 536,
-  y = 1568,
-  pattern = "604",
-  width = 16,
-  height = 16,
-  enabled_at_start = true,
-}
-
-dynamic_tile{
+custom_entity{
   name = "hook_1",
   layer = 0,
-  x = 488,
-  y = 1568,
-  pattern = "604",
-  width = 16,
-  height = 16,
-  enabled_at_start = true,
+  x = 496,
+  y = 1573,
+  direction = 0,
+  model = "hook",
 }
 
-dynamic_tile{
+custom_entity{
+  name = "hook_2",
+  layer = 0,
+  x = 544,
+  y = 1573,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
   name = "hook_3",
   layer = 0,
-  x = 512,
-  y = 1592,
-  pattern = "604",
-  width = 16,
-  height = 16,
-  enabled_at_start = true,
+  x = 520,
+  y = 1597,
+  direction = 0,
+  model = "hook",
+}
+
+destructible{
+  layer = 0,
+  x = 304,
+  y = 1413,
+  treasure_name = "magic_flask",
+  treasure_variant = 2,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+custom_entity{
+  name = "hook_4",
+  layer = 0,
+  x = 264,
+  y = 1381,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_5",
+  layer = 0,
+  x = 264,
+  y = 1413,
+  direction = 0,
+  model = "hook",
 }
 
 tile{
@@ -8319,5 +8366,23 @@ tile{
   width = 16,
   height = 48,
   pattern = "5",
+}
+
+tile{
+  layer = 2,
+  x = 256,
+  y = 1360,
+  width = 16,
+  height = 8,
+  pattern = "605",
+}
+
+tile{
+  layer = 2,
+  x = 256,
+  y = 1392,
+  width = 16,
+  height = 8,
+  pattern = "605",
 }
 

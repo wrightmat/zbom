@@ -6137,16 +6137,6 @@ npc{
   behavior = "item#lamp",
 }
 
-destructible{
-  name = "hookshot",
-  layer = 0,
-  x = 968,
-  y = 669,
-  sprite = "entities/items",
-  weight = -1,
-  damage_on_enemies = 0,
-}
-
 tile{
   layer = 1,
   x = 128,

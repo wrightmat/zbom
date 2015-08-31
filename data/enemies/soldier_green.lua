@@ -31,7 +31,7 @@ end
 -- An obstacle is reached: stop for a while, looking to a next direction.
 function enemy:on_obstacle_reached(movement)
   -- Look to the left or to the right.
-  local animation = sprite:get_animation()
+  local animation = self:get_sprite():get_animation()
   if animation == "walking" then
     self:look_left_or_right()
   end

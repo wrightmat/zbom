@@ -4935,26 +4935,6 @@ enemy{
   breed = "hardhat_beetle_blue",
 }
 
-destructible{
-  name = "hookshot_1",
-  layer = 0,
-  x = 248,
-  y = 221,
-  sprite = "entities/items",
-  weight = -1,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  name = "hookshot_2",
-  layer = 0,
-  x = 104,
-  y = 125,
-  sprite = "entities/items",
-  weight = -1,
-  damage_on_enemies = 0,
-}
-
 enemy{
   name = "hardhat_room1_1",
   layer = 0,
@@ -5341,6 +5321,33 @@ wall{
   stops_npcs = true,
   stops_blocks = true,
   stops_projectiles = true,
+}
+
+custom_entity{
+  name = "hook_1",
+  layer = 0,
+  x = 248,
+  y = 221,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_2",
+  layer = 0,
+  x = 104,
+  y = 125,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_3",
+  layer = 0,
+  x = 648,
+  y = 237,
+  direction = 0,
+  model = "hook",
 }
 
 tile{

@@ -26,7 +26,9 @@ function map:on_started(destination)
     obstacle:set_enabled(false)
     obstacle_2:set_enabled(false)
   end
-  stone:set_enabled(false)
+  pillar_1:set_enabled(false)
+  pillar_2:set_enabled(false)
+  hook_1:set_enabled(false)
 end
 
 function door_bomb_1:on_opened()
@@ -117,10 +119,14 @@ function switch_water_chest:on_activated()
 end
 
 function switch_stone:on_activated()
-  stone:set_enabled(true)
+  pillar_1:set_enabled(true)
+  pillar_2:set_enabled(true)
+  hook_1:set_enabled(true)
 end
 function switch_stone:on_inactivated()
-  stone:set_enabled(false)
+  pillar_1:set_enabled(false)
+  pillar_2:set_enabled(false)
+  hook_1:set_enabled(false)
 end
 
 function switch_arrow_map:on_activated()

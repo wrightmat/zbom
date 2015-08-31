@@ -90,10 +90,18 @@ end
 local function initialize_npcs()
   local npc_meta = sol.main.get_metatable("npc")
 
-  -- Make signs and mailboxes hooks for the hookshot.
+  -- Make certain entities automatic hooks for the hookshot.
   function npc_meta:is_hookshot_hook()
-    if self:get_sprite():get_animation_set() == "entities/sign" then return true
-    elseif self:get_sprite():get_animation_set() == "entities/mailbox" then return true
+    if self:get_sprite() ~= nil then
+      if self:get_sprite():get_animation_set() == "entities/sign" then return true
+      elseif self:get_sprite():get_animation_set() == "entities/mailbox" then return true
+      elseif self:get_sprite():get_animation_set() == "entities/pot" then return true
+      elseif self:get_sprite():get_animation_set() == "entities/block" then return true
+      elseif self:get_sprite():get_animation_set() == "entities/chest" then return true
+      elseif self:get_sprite():get_animation_set() == "entities/chest_big" then return true
+      elseif self:get_sprite():get_animation_set() == "entities/torch" then return true
+      elseif self:get_sprite():get_animation_set() == "entities/torch_wood" then return true
+      else return false end
     else return false end
   end
 end

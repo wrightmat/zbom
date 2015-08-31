@@ -42,7 +42,7 @@ local speed = 240   -- Speed in pixels per second.
 local catchable_entity_types = { "pickable" }
 -- What types of entities the hookshot can attach to.
 -- Additionally, all entities that have a method "is_hookshot_hook(true)"
-local hook_entity_types = { "destructible" }
+local hook_entity_types = {}
 
 function item:on_created()
   self:set_savegame_variable("i1819")
@@ -369,7 +369,7 @@ function item:on_using()
       return      -- No need to check coordinates, we are already hooked.
     end
 
-    if entity.is_hookable == nil or not entity:is_hookable() then
+    if entity.is_hookshot_hook == nil or not entity:is_hookshot_hook() then
       return      -- Don't bother check coordinates, we don't care about this entity.
     end
 

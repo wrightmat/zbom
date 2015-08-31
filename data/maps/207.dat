@@ -19545,17 +19545,6 @@ enemy{
 }
 
 destructible{
-  name = "stone",
-  layer = 0,
-  x = 1160,
-  y = 1301,
-  treasure_name = "random",
-  sprite = "entities/stone_small_black",
-  destruction_sound = "stone",
-  weight = 2,
-}
-
-destructible{
   layer = 0,
   x = 584,
   y = 1277,
@@ -20029,54 +20018,69 @@ switch{
   inactivate_when_leaving = false,
 }
 
-destructible{
-  name = "hookshot",
+dynamic_tile{
+  name = "pillar_1",
   layer = 0,
-  x = 1824,
-  y = 461,
-  sprite = "entities/items",
-  weight = -1,
-  damage_on_enemies = 0,
+  x = 1152,
+  y = 1288,
+  pattern = "51",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
 }
 
-destructible{
-  name = "hookshot_2",
+custom_entity{
+  name = "hook_1",
+  layer = 0,
+  x = 1160,
+  y = 1301,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_2",
   layer = 0,
   x = 1112,
   y = 1165,
-  sprite = "entities/items",
-  weight = -1,
-  damage_on_enemies = 0,
+  direction = 0,
+  model = "hook",
 }
 
-destructible{
-  name = "hookshot_3",
+custom_entity{
+  name = "hook_3",
   layer = 0,
   x = 1912,
   y = 789,
-  sprite = "entities/items",
-  weight = -1,
-  damage_on_enemies = 0,
+  direction = 0,
+  model = "hook",
 }
 
-destructible{
-  name = "hookshot_4",
+custom_entity{
+  name = "hook_4",
   layer = 0,
   x = 1912,
   y = 933,
-  sprite = "entities/items",
-  weight = -1,
-  damage_on_enemies = 0,
+  direction = 0,
+  model = "hook",
 }
 
-destructible{
-  name = "hookshot_5",
+custom_entity{
+  name = "hook_5",
+  layer = 0,
+  x = 1824,
+  y = 461,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_6",
   layer = 0,
   x = 808,
   y = 845,
-  sprite = "entities/items",
-  weight = -1,
-  damage_on_enemies = 0,
+  direction = 0,
+  model = "hook",
 }
 
 tile{
@@ -20248,6 +20252,17 @@ tile{
   width = 16,
   height = 16,
   pattern = "52",
+}
+
+dynamic_tile{
+  name = "pillar_2",
+  layer = 1,
+  x = 1152,
+  y = 1272,
+  pattern = "52",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
 }
 
 tile{
