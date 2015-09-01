@@ -1,6 +1,5 @@
 local item = ...
 local game = item:get_game()
-local bow
 
 function item:on_created()
   self:set_savegame_variable("i1852")
@@ -26,6 +25,8 @@ function item:on_obtaining(variant, savegame_variable)
   if game:get_item_assigned(2) == game:get_item("bow") then
     game:set_item_assigned(2, item)
   end
+  game:get_item("arrow_light"):set_obtainable(true)
+  game:get_item("bow").on_obtaining(item, variant, savegame_variable)
 end
 
 function item:get_force()

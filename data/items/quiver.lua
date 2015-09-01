@@ -12,6 +12,7 @@ function item:on_variant_changed(variant)
   -- The quiver determines the maximum amount of the bow.
   local bow = self:get_game():get_item("bow")
   local arrow = self:get_game():get_item("arrow")
+
   if variant == 0 then
     bow:set_max_amount(0)
     arrow:set_obtainable(false)

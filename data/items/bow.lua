@@ -58,13 +58,21 @@ function item:on_amount_changed(amount)
 end
 
 function item:on_obtaining(variant, savegame_variable)
-  local quiver = self:get_game():get_item("quiver")
+  local arrow = game:get_item("arrow")
+  local quiver = game:get_item("quiver")
+
   if not quiver:has_variant() then
     -- Give the first quiver and some arrows with the bow.
     quiver:set_variant(1)
     self:add_amount(10)
     arrow:set_obtainable(true)
+  else
+    -- Set the max value of the bow counter.
+    local max_amounts = {10, 30, 60}
+    local max_amount = max_amounts[quiver:get_variant()]
+    self:set_max_amount(max_amount)
   end
+  if amount == 0 then self:set_variant(1) else self:set_variant(2) end
 end
 
 function item:get_force()
