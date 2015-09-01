@@ -17,7 +17,7 @@ function enemy:on_created()
   self:set_optimization_distance(0)
   sprite:set_animation("sleeping")
   self:set_pushed_back_when_hurt(false)
-  self:set_attack_consequence("arrow", 5)
+  self:set_attack_arrow(5)
 end
 
 function enemy:on_restarted()

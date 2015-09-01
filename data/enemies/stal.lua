@@ -22,4 +22,4 @@ local properties = {
 behavior:create(enemy, properties)
 
 enemy:set_invincible()
-enemy:set_hammer_reaction(1)
+enemy:set_attack_hammer(1)

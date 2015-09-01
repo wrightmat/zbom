@@ -60,7 +60,7 @@ function enemy:blink()
   sprite:set_animation("blinking")
   
   function sprite:on_animation_finished(animation)
-    enemy:set_attack_consequence("arrow", "protected")
+    enemy:set_attack_arrow("protected")
     sprite:set_animation("closed")
     sol.timer.start(enemy, math.random(6)*2000, function() enemy:open() end)
   end
@@ -71,7 +71,7 @@ function enemy:open()
   sprite:set_animation("opening")
 
   function sprite:on_animation_finished(animation)
-    enemy:set_attack_consequence("arrow", 1)
+    enemy:set_attack_arrow(1)
     sprite:set_animation("walking")
     sol.timer.start(enemy, 3000, function() enemy:check_action() end)
   end

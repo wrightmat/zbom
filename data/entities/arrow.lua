@@ -121,28 +121,31 @@ end)
 -- Activate crystals and solid switches.
 arrow:add_collision_test("overlapping", function(arrow, entity)
   local entity_type = entity:get_type()
-
   if entity_type == "crystal" then
     -- Activate crystals.
     if flying then
       sol.audio.play_sound("switch")
       map:change_crystal_state()
       attach_to_entity(entity)
-
-    elseif entity_type == "switch" then
-      -- Activate solid switches.
-      local switch = entity
-      local sprite = switch:get_sprite()
-      if flying and
-         sprite ~= nil and
-         sprite:get_animation_set() == "entities/solid_switch" then
-
-        if not switch:is_activated() then
-          sol.audio.play_sound("switch")
-          switch:set_activated(true)
-        end
-        attach_to_entity(entity)
+    end
+  elseif entity_type == "switch" then
+    -- Activate solid switches.
+    local switch = entity
+    local sprite = switch:get_sprite()
+    if flying and sprite ~= nil and
+         (sprite:get_animation_set() == "entities/switch_crystal" or
+         sprite:get_animation_set() == "entities/switch_eye_down" or
+         sprite:get_animation_set() == "entities/switch_eye_left" or
+         sprite:get_animation_set() == "entities/switch_eye_right" or
+         sprite:get_animation_set() == "entities/switch_eye_up" or
+         sprite:get_animation_set() == "entities/switch_eye_invisible") then
+print("switch")
+      if not switch:is_activated() then
+        sol.audio.play_sound("switch")
+        switch:set_activated(true)
+        if switch:on_activated() ~= nil then switch:on_activated() end
       end
+      attach_to_entity(entity)
     end
   end
 end)

@@ -11,11 +11,6 @@ function enemy:on_created()
   self:set_size(16, 16); self:set_origin(8, 13)
   self:set_can_hurt_hero_running(true)
   self:set_invincible()
-  self:set_attack_consequence("sword", "protected")
-  self:set_attack_consequence("thrown_item", "protected")
-  self:set_attack_consequence("arrow", "protected")
-  self:set_attack_consequence("hookshot", "protected")
-  self:set_attack_consequence("boomerang", "protected")
   initial_xy.x, initial_xy.y = self:get_position()
 end
 

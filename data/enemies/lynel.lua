@@ -9,8 +9,8 @@ function enemy:on_created()
   self:create_sprite("enemies/lynel")
   self:set_size(32, 32); self:set_origin(16, 27)
   self:set_pushed_back_when_hurt(false)
+  self:set_attack_arrow("protected")
   self:set_attack_consequence("boomerang", "protected")
-  self:set_attack_consequence("arrow", "protected")
   self:set_attack_consequence("fire", "protected")
 end
 

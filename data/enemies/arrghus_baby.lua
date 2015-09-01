@@ -14,7 +14,7 @@ function enemy:on_created()
   self:set_hurt_style("monster")
   self:set_pushed_back_when_hurt(true)
   self:set_push_hero_on_sword(false)
-  self:set_attack_consequence("arrow", "protected")
+  self:set_attack_arrow("protected")
 end
 
 function enemy:on_movement_changed(movement)

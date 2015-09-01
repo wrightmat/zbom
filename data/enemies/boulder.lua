@@ -8,11 +8,6 @@ function enemy:on_created()
   self:set_size(32, 32); self:set_origin(16, 26)
   self:set_can_hurt_hero_running(true)
   self:set_invincible()
-  self:set_attack_consequence("sword", "protected")
-  self:set_attack_consequence("thrown_item", "protected")
-  self:set_attack_consequence("arrow", "protected")
-  self:set_attack_consequence("hookshot", "protected")
-  self:set_attack_consequence("boomerang", "protected")
 end
 
 function enemy:on_restarted()

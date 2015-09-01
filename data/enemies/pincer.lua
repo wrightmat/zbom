@@ -87,10 +87,10 @@ function enemy:on_update()
   if not visible then
     self:set_invincible(true)
   else
+    self:set_attack_arrow(1)
+    self:set_attack_hookshot("immobilized")
     self:set_attack_consequence("sword", 1)
-    self:set_attack_consequence("arrow", 1)
     self:set_attack_consequence("explosion", 1)
-    self:set_attack_consequence("hookshot", "immobilized")
     self:set_attack_consequence("boomerang", "immobilized")
   end
 end

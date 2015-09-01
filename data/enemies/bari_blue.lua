@@ -8,7 +8,7 @@ function enemy:on_created()
   self:set_life(2); self:set_damage(2)
   self:create_sprite("enemies/bari_blue")
   self:set_size(16, 16); self:set_origin(8, 13)
-  self:set_attack_consequence("hookshot", "immobilized")
+  self:set_attack_hookshot("immobilized")
 end
 
 function enemy:shock()

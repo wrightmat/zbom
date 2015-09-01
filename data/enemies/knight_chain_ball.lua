@@ -10,9 +10,10 @@ function enemy:on_created()
   self:set_pushed_back_when_hurt(false)
   self:set_push_hero_on_sword(true)
   self:set_invincible()
+  self:set_attack_arrow(1)
+  self:set_attack_hookshot(1)
   self:set_attack_consequence("sword", 2)
   self:set_attack_consequence("thrown_item", 1)
-  self:set_attack_consequence("arrow", 1)
 end
 
 function enemy:on_enabled()

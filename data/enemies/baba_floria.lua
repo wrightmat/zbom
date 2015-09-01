@@ -10,8 +10,8 @@ function enemy:on_created()
   self:create_sprite("enemies/baba_floria")
   self:set_size(24, 32); self:set_origin(12, 29)
   self:set_pushed_back_when_hurt(false)
+  self:set_attack_arrow("custom")
   self:set_attack_consequence("sword", "custom")
-  self:set_attack_consequence("arrow", "custom")
   sol.timer.start(self, 2000, function() self:check_hero() end)
 end
 

@@ -48,16 +48,16 @@ function enemy:check_hero()
 end
 
 function enemy:stop(movement)
-  self:set_attack_consequence("arrow", "protected")
+  self:set_attack_arrow("protected")
   self:set_can_attack(false)
   self:set_can_hurt_hero_running(false)
   self:get_sprite():set_animation("immobilized")
-  self:stop_movement
+  self:stop_movement()
   going_hero = false
 end
 
 function enemy:go_hero()
-  self:set_attack_consequence("arrow", 1)
+  self:set_attack_arrow(1)
   self:set_can_attack(true)
   self:set_can_hurt_hero_running(true)
   self:get_sprite():set_animation("walking")

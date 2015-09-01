@@ -10,4 +10,5 @@ local properties = {
   normal_speed = 32,
   faster_speed = 48,
 }
+
 behavior:create(enemy, properties)

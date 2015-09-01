@@ -10352,8 +10352,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 320,
-  y = 96,
+  x = 312,
+  y = 104,
   width = 16,
   height = 16,
   pattern = "525",
@@ -10361,8 +10361,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 320,
-  y = 208,
+  x = 312,
+  y = 200,
   width = 16,
   height = 16,
   pattern = "525",
@@ -12814,9 +12814,10 @@ chest{
 switch{
   name = "switch_room13_arrow_3",
   layer = 0,
-  x = 40,
+  x = 48,
   y = 776,
   subtype = "arrow_target",
+  sprite = "entities/switch_eye_invisible",
   sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
@@ -12825,9 +12826,10 @@ switch{
 switch{
   name = "switch_room13_arrow_4",
   layer = 0,
-  x = 376,
+  x = 368,
   y = 776,
   subtype = "arrow_target",
+  sprite = "entities/switch_eye_invisible",
   sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
@@ -12837,8 +12839,9 @@ switch{
   name = "switch_room13_arrow_1",
   layer = 0,
   x = 120,
-  y = 840,
+  y = 832,
   subtype = "arrow_target",
+  sprite = "entities/switch_eye_invisible",
   sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
@@ -12848,8 +12851,9 @@ switch{
   name = "switch_room13_arrow_2",
   layer = 0,
   x = 296,
-  y = 840,
+  y = 832,
   subtype = "arrow_target",
+  sprite = "entities/switch_eye_invisible",
   sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
@@ -14009,9 +14013,10 @@ sensor{
 switch{
   name = "switch_room11_arrow_1",
   layer = 0,
-  x = 376,
+  x = 368,
   y = 104,
   subtype = "arrow_target",
+  sprite = "entities/switch_eye_invisible",
   sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
@@ -14020,9 +14025,10 @@ switch{
 switch{
   name = "switch_room11_arrow_2",
   layer = 0,
-  x = 376,
+  x = 368,
   y = 200,
   subtype = "arrow_target",
+  sprite = "entities/switch_eye_invisible",
   sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
@@ -14116,8 +14122,8 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 328,
-  y = 109,
+  x = 320,
+  y = 117,
   treasure_name = "heart",
   sprite = "entities/pot",
   destruction_sound = "stone",
@@ -14125,8 +14131,8 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 328,
-  y = 221,
+  x = 320,
+  y = 213,
   treasure_name = "arrow",
   treasure_variant = 2,
   sprite = "entities/pot",

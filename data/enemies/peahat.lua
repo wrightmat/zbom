@@ -89,9 +89,9 @@ function enemy:go_hero()
 end
 
 function enemy:set_invincible_false()
+  enemy:set_attack_arrow(1)
+  enemy:set_attack_hookshot("immobilized")
   enemy:set_attack_consequence("sword", 1)
-  enemy:set_attack_consequence("arrow", 1)
   enemy:set_attack_consequence("boomerang", "immobilized")
-  enemy:set_attack_consequence("hookshot", "immobilized")
   enemy:set_attack_consequence("explosion", 1)
 end

@@ -78,12 +78,12 @@ function enemy:on_update()
   if heads_present > 0 then
     -- if there are heads (and how many)
     self:set_attack_consequence("sword", "protected")
-    self:set_attack_consequence("arrow", "protected")
+    self:set_attack_arrow("protected")
     body_speed = 80
   else
     -- if only the body is left (only a few more hits until dead!)
     self:set_attack_consequence("sword", 1)
-    self:set_attack_consequence("arrow", 1)
+    self:set_attack_arrow(1)
     body_speed = 96
   end
 end

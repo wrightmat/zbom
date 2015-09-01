@@ -13,6 +13,6 @@ local properties = {
 }
 behavior:create(enemy, properties)
 
+enemy:set_attack_arrow("protected")
 enemy:set_attack_consequence("sword", "protected")
-enemy:set_attack_consequence("arrow", "protected")
 enemy:set_attack_consequence("thrown_item", "protected")
