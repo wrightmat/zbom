@@ -3,7 +3,7 @@ This quest is a free, open-source game that works with Solarus,
 an open-source Zelda-like 2D game engine.
 To play this game, you need Solarus. The compiled engine is included for Windows and Linux.
 
-The game is currently in version 0.45 (16-JUL-15, Solarus v1.4.2)
+The game is currently in version 0.47 (01-SEP-15, Solarus v1.4.4)
 
 To run:
   Windows: execute "solarus.exe"
@@ -16,10 +16,33 @@ To play: Default button mapping:
   "Space" for blue circle (action or back in dialogs).
   "D" for Pause menu (or to exit pause). Left or right arrows to scroll between items and submenus.
   Buttons can be remapped (to other keys or joypad buttons) from within the Options submenu.
+  Control key allows you to pan the camera slightly.
 
 See our website http://sites.google.com/site/zeldabom for more information.
 
 Enjoy!
+
+VERSION 0.47 released 01-SEP-15
+  - Work on last two dungeons - Tower of Winds is fully playable, Interloper Sanctum is not
+  - Allow ice cane to freeze water as well as lava
+  - Enabled more waterway swimming and added a few secrets
+  - Corrected behavior of ice cane and creating/pushing ice blocks (could still use a little tweaking)
+  - Fully scripted bow/arrows to allow two different types of arrows and better behavior
+  - Fully scripted hookshot to allow more configurable behavior
+  - Starting to add more Hylian NPCs for North Hyrule and a few other areas
+
+VERSION 0.46 released 17-AUG-15
+  - Show temporary HUD popup when collectible is picked
+  - Fully implemented red and blue tunics
+  - Finished advanced maps for last two dungeons
+  - Dynamically determine Book variant to give so dungeons can be truly done in any order
+  - Implement shovel and soft soil
+  - Implement ability to make and buy advanced potions
+  - Additional or improved enemies
+  - Additional heart pieces
+  - Begin implementation of hammer
+  - Optimization of scripts and sprites
+  - Implement camera movement with control key
 
 VERSION 0.45 released 16-JUL-15
   - Added dungeon exploration mechanic and advanced compass (with secret chime) [still in progress]
