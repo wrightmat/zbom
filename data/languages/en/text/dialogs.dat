@@ -2697,6 +2697,15 @@ famous astronomer in this area of Hyrule.
 }
 
 dialog{
+  id = "astronomer.0.painting",
+  text = [[
+This Deku's stare is burning into your
+soul. This guy must have an intense love
+for Dekus to have this painting.
+]]
+}
+
+dialog{
   id = "astronomer.0.trading",
   question = "1",
   skip = "current",
