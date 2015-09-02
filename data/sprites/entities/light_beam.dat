@@ -1,0 +1,8 @@
+animation{
+  name = "light_beam",
+  src_image = "entities/light.png",
+  frame_delay = 100,
+  directions = {
+    { x = 0, y = 192, frame_width = 96, frame_height = 192, origin_x = 0, origin_y = 0, num_frames = 5 },
+  },
+}
