@@ -5,7 +5,7 @@ local dialog_box = {
   -- Dialog box properties.
   dialog = nil,                -- Dialog being displayed or nil.
   first = true,                -- Whether this is the first dialog of a sequence.
-  style = nil,                 -- "box" or "empty".
+  style = nil,                 -- "default", "wood", "stone" or "empty".
   vertical_position = "auto",  -- "auto", "top" or "bottom".
   skip_mode = nil,             -- "none", "current", "all" or "unchanged".
   icon_index = nil,            -- Index of the 16x16 icon in hud/dialog_icons.png or nil.
@@ -70,10 +70,9 @@ function game:initialize_dialog_box()
   end
   
   dialog_box.dialog_surface = sol.surface.create(sol.video.get_quest_size())
-  dialog_box.box_img = sol.surface.create("hud/dialog_box.png")
   dialog_box.icons_img = sol.surface.create("hud/dialog_icons.png")
   dialog_box.end_lines_sprite = sol.sprite.create("hud/dialog_box_message_end")
-  game:set_dialog_style("box")
+  game:set_dialog_style("default")
 end
 
 -- Exits the dialog box system.
@@ -113,14 +112,22 @@ end
 
 -- Sets the style of the dialog box for subsequent dialogs.
 -- style must be one of:
--- - "box" (default): Usual dialog box.
+-- - "default" (default): Usual dialog box.
+-- - "wood": Wooden design (for example, signs).
+-- - "stone": Stone design (for example, hint stones).
 -- - "empty": No decoration.
 function game:set_dialog_style(style)
 
   dialog_box.style = style
-  if style == "box" then
-    -- Make the dialog box slightly transparent.
-    dialog_box.dialog_surface:set_opacity(216)
+  if style == "wood" then
+    dialog_box.box_img = sol.surface.create("hud/dialog_box_wood.png")
+    dialog_box.end_lines_sprite:set_animation("wood")
+  elseif style == "stone" then
+    dialog_box.box_img = sol.surface.create("hud/dialog_box_stone.png")
+    dialog_box.end_lines_sprite:set_animation("stone")
+  else
+    dialog_box.box_img = sol.surface.create("hud/dialog_box.png")
+    dialog_box.end_lines_sprite:set_animation("default")
   end
 end
 
@@ -151,10 +158,10 @@ local function repeat_show_character()
     if dialog_box:has_more_lines()
         or dialog_box.dialog.next ~= nil
         or dialog_box.selected_answer ~= nil then
-      dialog_box.end_lines_sprite:set_animation("next")
+      dialog_box.end_lines_sprite:set_direction(0)
       game:set_custom_command_effect("action", "next")
     else
-      dialog_box.end_lines_sprite:set_animation("last")
+      dialog_box.end_lines_sprite:set_direction(1)
       game:set_custom_command_effect("action", "return")
     end
     game:set_custom_command_effect("attack", nil)
@@ -585,7 +592,7 @@ function dialog_box:on_draw(dst_surface)
   if self.selected_answer ~= nil
       and self:is_full()
       and not self:has_more_lines() then
-    self.box_img:draw_region(96, 60, 8, 8, self.dialog_surface,
+    self.box_img:draw_region(128, 60, 8, 8, self.dialog_surface,
         self.question_dst_position.x, self.question_dst_position.y)
   end
 

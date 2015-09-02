@@ -5447,7 +5447,7 @@ dialog{
   text = [[
 There's this weird astronomer guy who is
 obsessed with these creatures known as
-$g Dekus$w. I hear his talk about them
+$gDekus$w. I hear him talk about them
 all of the time. He wants to look just
 like them!
 ]]
@@ -5456,16 +5456,15 @@ like them!
 dialog{
   id = "hylian_3.0.kakariko",
   text = [[
-The quickest way to move around
-is to get yourself an $r Ocarina$w.
-Have you seen the ocarina-shaped
-dirt patches? If you approach one
-of these, you'll be able to
-instantly warp to an entirely
-different area of the world!
-Use these and your world map
-wisely and you'll have no problem
-getting around quickly!
+The quickest way to move around is to
+get yourself an  $r Ocarina$w.
+Have you seen the ocarina-shaped dirt
+patches? If you approach one of these,
+you'll be able to instantly warp to an
+entirely different area of the world!
+Use these and your world map wisely and
+you'll have no problem getting around
+quickly!
 ]]
 }
 
@@ -8060,8 +8059,19 @@ dialog{
   skip = "current",
   text = [[
 Kakariko Riverside Ampitheater.
+
 All patrons of the arts welcome!
-  
+]]
+}
+
+dialog{
+  id = "sign.ampitheater.2",
+  skip = "current",
+  text = [[
+Kakariko Riverside Ampitheater.
+
+Stage show tonight!
+]]
 }
 
 dialog{

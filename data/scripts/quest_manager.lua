@@ -90,6 +90,15 @@ end
 local function initialize_npcs()
   local npc_meta = sol.main.get_metatable("npc")
 
+  -- Give default dialog styles to certain entities.
+  function npc_meta:on_interaction()
+    local name = self:get_name()
+    if name:match("^sign_") then game:set_dialog_style("wood")
+    elseif name:match("^mailbox_") then game:set_dialog_style("wood")
+    elseif name:match("^hint_") then game:set_dialog_style("stone")
+    else game:set_dialog_style("default") end
+  end
+
   -- Make certain entities automatic hooks for the hookshot.
   function npc_meta:is_hookshot_hook()
     if self:get_sprite() ~= nil then
