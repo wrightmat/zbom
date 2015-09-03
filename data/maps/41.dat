@@ -8241,6 +8241,16 @@ teletransporter{
   destination = "_side",
 }
 
+npc{
+  name = "npc_marryn",
+  layer = 0,
+  x = 632,
+  y = 445,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/hylian_marryn",
+}
+
 tile{
   layer = 1,
   x = 320,

@@ -21,4 +21,10 @@ function map:on_started(destination)
       end
     end
   end
+
+  npc_marryn:set_animation("singing")
+end
+
+function npc_marryn:on_interaction()
+  game:start_dialog("marryn.0.ranch")
 end
