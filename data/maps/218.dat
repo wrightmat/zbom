@@ -6890,8 +6890,8 @@ enemy{
 enemy{
   name = "boss_zirna",
   layer = 0,
-  x = 880,
-  y = 1077,
+  x = 800,
+  y = 997,
   direction = 3,
   breed = "zirna",
   rank = 2,
@@ -7293,6 +7293,18 @@ teletransporter{
   destination_map = "219",
   sprite = "entities/teletransporter",
   sound = "warp",
+}
+
+enemy{
+  name = "boss_belahim",
+  layer = 0,
+  x = 944,
+  y = 973,
+  direction = 3,
+  breed = "belahim",
+  rank = 2,
+  savegame_variable = "b1191",
+  treasure_name = "crystal",
 }
 
 tile{

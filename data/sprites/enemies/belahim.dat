@@ -1,0 +1,54 @@
+animation{
+  name = "stopped",
+  src_image = "enemies/belahim.png",
+  directions = {
+    { x = 64, y = 0, frame_width = 64, frame_height = 64, origin_x = 16, origin_y = 28 },
+    { x = 64, y = 0, frame_width = 64, frame_height = 64, origin_x = 16, origin_y = 28 },
+    { x = 64, y = 0, frame_width = 64, frame_height = 64, origin_x = 16, origin_y = 28 },
+    { x = 64, y = 0, frame_width = 64, frame_height = 64, origin_x = 16, origin_y = 28 },
+  },
+}
+animation{
+  name = "hurt",
+  src_image = "enemies/belahim.png",
+  directions = {
+    { x = 192, y = 0, frame_width = 48, frame_height = 64, origin_x = 16, origin_y = 28 },
+    { x = 192, y = 0, frame_width = 48, frame_height = 64, origin_x = 16, origin_y = 28 },
+    { x = 192, y = 0, frame_width = 48, frame_height = 64, origin_x = 16, origin_y = 28 },
+    { x = 192, y = 0, frame_width = 48, frame_height = 64, origin_x = 16, origin_y = 28 },
+  },
+}
+animation{
+  name = "shadow",
+  src_image = "enemies/belahim.png",
+  frame_delay = 100,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 192, y = 64, frame_width = 48, frame_height = 40, origin_x = 8, origin_y = 8, num_frames = 2 },
+    { x = 336, y = 64, frame_width = 48, frame_height = 40, origin_x = 8, origin_y = 8, num_frames = 2 },
+    { x = 480, y = 64, frame_width = 48, frame_height = 40, origin_x = 8, origin_y = 8, num_frames = 2 },
+    { x = 48, y = 64, frame_width = 48, frame_height = 40, origin_x = 8, origin_y = 8, num_frames = 2 },
+  },
+}
+animation{
+  name = "shadow_stopped",
+  src_image = "enemies/belahim.png",
+  directions = {
+    { x = 144, y = 64, frame_width = 48, frame_height = 40, origin_x = 8, origin_y = 8 },
+    { x = 288, y = 64, frame_width = 48, frame_height = 40, origin_x = 8, origin_y = 8 },
+    { x = 432, y = 64, frame_width = 48, frame_height = 40, origin_x = 8, origin_y = 8 },
+    { x = 0, y = 64, frame_width = 48, frame_height = 40, origin_x = 8, origin_y = 8 },
+  },
+}
+animation{
+  name = "walking",
+  src_image = "enemies/belahim.png",
+  frame_delay = 200,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 64, y = 0, frame_width = 64, frame_height = 64, origin_x = 16, origin_y = 28, num_frames = 2 },
+    { x = 64, y = 0, frame_width = 64, frame_height = 64, origin_x = 16, origin_y = 28, num_frames = 2 },
+    { x = 64, y = 0, frame_width = 64, frame_height = 64, origin_x = 16, origin_y = 28, num_frames = 2 },
+    { x = 64, y = 0, frame_width = 64, frame_height = 64, origin_x = 16, origin_y = 28, num_frames = 2 },
+  },
+}
