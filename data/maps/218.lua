@@ -56,3 +56,17 @@ if miniboss_shadow_link ~= nil then
     sol.audio.play_music("temple_sanctum")
   end
 end
+
+function sensor_boss_zirna:on_activated()
+  if boss_zirna ~= nil then
+    boss_zirna:set_enabled(true)
+    sol.audio.play_music("boss")
+  end
+end
+
+function sensor_boss_belahim:on_activated()
+  if boss_belahim ~= nil then
+    boss_belahim:set_enabled(true)
+    sol.audio.play_music("boss")
+  end
+end

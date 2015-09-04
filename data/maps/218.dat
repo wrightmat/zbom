@@ -7307,6 +7307,24 @@ enemy{
   treasure_name = "crystal",
 }
 
+sensor{
+  name = "sensor_boss_zirna",
+  layer = 0,
+  x = 776,
+  y = 1029,
+  width = 64,
+  height = 16,
+}
+
+sensor{
+  name = "sensor_boss_belahim",
+  layer = 0,
+  x = 936,
+  y = 1029,
+  width = 64,
+  height = 16,
+}
+
 tile{
   layer = 2,
   x = 704,

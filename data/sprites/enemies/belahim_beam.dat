@@ -1,0 +1,12 @@
+animation{
+  name = "walking",
+  src_image = "enemies/belahim.png",
+  frame_delay = 80,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 104, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8, num_frames = 2 },
+    { x = 0, y = 104, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8, num_frames = 2 },
+    { x = 32, y = 104, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8, num_frames = 2 },
+    { x = 32, y = 104, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8, num_frames = 2 },
+  },
+}

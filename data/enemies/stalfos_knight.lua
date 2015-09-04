@@ -36,7 +36,7 @@ function enemy:on_restarted()
       sol.timer.start(self, 500, function()
         self:create_enemy({
 	  breed = "stalfos_head",
-	  treasur_name = "magic_jar"
+	  treasure_name = "magic_jar"
         })
       end)
       self:go_hero()
@@ -49,6 +49,7 @@ end
 function enemy:on_obstacle_reached(movement)
   enemy:restart()
 end
+
 function enemy:on_hurt()
   self:get_sprite():set_animation("hurt")
   vulnerable = false

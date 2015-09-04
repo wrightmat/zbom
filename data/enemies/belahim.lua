@@ -1,12 +1,16 @@
 local enemy = ...
-local initial_life = 20
-local finished = false
+local initial_life = 22
+local second_life = 12
+local second_stage = false
 local fireball_proba = 33  -- Percent.
-local vulnerable = false
+local shadow = false
 local timers = {}
 
 -- Belahim (Dark Tribe leader, final boss of game)
--- THIS IS A PLACEHOLDER BASED ON CAROCK
+-- Behavior: Invincible as normal form, must avoid both boss and beams he throws
+--       Vulnerable to only light arrows as shadow form, which he shrinks to periodically
+--       Once hit with light arrows 10 times, he shows his true form and is vulnerable to sword
+--       (Light sword does three times as much damage, must hit him 12 times with Forged Sword)
 
 function enemy:on_created()
   self:set_life(initial_life); self:set_damage(8)
@@ -20,97 +24,82 @@ function enemy:on_created()
 end
 
 function enemy:on_restarted()
-  vulnerable = false
+  shadow = false
   for _, t in ipairs(timers) do t:stop() end
-  local sprite = self:get_sprite()
-
-  if not finished then
-    sprite:fade_out()
-    timers[#timers + 1] = sol.timer.start(self, 700, function() self:hide() end)
+  local rand = math.random(3)
+  if rand == 1 then
+    self:go_shadow()
+  elseif rand == 2 then
+    self:go_beam()
   else
-    sprite:set_animation("hurt")
-    timers[#timers + 1] = sol.timer.start(self, 500, function() self:end_dialog() end)
+    self:go_hero()
   end
 end
 
-function enemy:hide()
-  vulnerable = false
-  self:set_position(-100, -100)
-  timers[#timers + 1] = sol.timer.start(self, 500, function() self:unhide() end)
+function enemy:go_shadow()
+  self:get_sprite():set_animation("shrink")
+  sol.timer.start(self, 1000, function() self:get_sprite():set_animation("shadow") end)
+  shadow = true
+  timers[#timers + 1] = sol.timer.start(self:get_map(), math.random(10)*500, function() enemy:go_normal() end)
 end
 
-function enemy:unhide()
-  local position = (positions[math.random(#positions)])
-  self:set_position(position.x, position.y)
-  local sprite = self:get_sprite()
-  sprite:set_direction(position.direction4)
-  sprite:fade_in()
-  timers[#timers + 1] = sol.timer.start(self, 1000, function() self:fire_step_1() end)
+function enemy:go_normal()
+  shadow = false
+  self:get_sprite():set_animation("walking")
 end
 
-function enemy:fire_step_1()
-  local sprite = self:get_sprite()
-  sprite:set_animation("arms_up")
-  timers[#timers + 1] = sol.timer.start(self, 1000, function() self:fire_step_2() end)
-end
-
-function enemy:fire_step_2()
-  local sprite = self:get_sprite()
-  if math.random(100) <= fireball_proba then
-    sprite:set_animation("arms_out")
-  else
-
-  end
-  sol.audio.play_sound("boss_charge")
-  timers[#timers + 1] = sol.timer.start(self, 1500, function() self:fire_step_3() end)
-end
-
-function enemy:fire_step_3()
+function enemy:go_beam()
   local sprite = self:get_sprite()
   local sound, breed
-  if sprite:get_animation() == "arms_out" then
-    sound = "boss_fireball"
-    breed = "fireball_triple"
-  end
   sprite:set_animation("stopped")
   if sound ~= nil then sol.audio.play_sound(sound) end
 
-  vulnerable = true
   timers[#timers + 1] = sol.timer.start(self, 700, function() self:restart() end)
 
-  function throw_fire()
+  function throw_beam()
     nb_sons_created = nb_sons_created + 1
-    self:create_enemy({x = 0, y = 21, breed = "fireball_triple", name = "carock_fireball_" .. nb_sons_created})
+    self:create_enemy({x = 0, y = 21, breed = "belahim_beam", name = "belahim_beam_" .. nb_sons_created})
   end
 
-  throw_fire()
+  throw_beam()
   if self:get_life() <= initial_life / 2 then
     timers[#timers + 1] = sol.timer.start(self, 200, function()
-      if self:throw_fire() ~= nil then self:throw_fire() end
+      throw_beam()
     end)
     timers[#timers + 1] = sol.timer.start(self, 400, function()
-      if self:throw_fire() ~= nil then self:throw_fire() end
+      throw_beam()
     end)
   end
 end
 
-function enemy:receive_bounced_fireball(fireball)
-  if fireball:get_name():find("^carock_fireball")
-      and vulnerable then
-    -- Receive a fireball shot back by the hero: get hurt.
-    for _, t in ipairs(timers) do t:stop() end
-    fireball:remove()
-    self:hurt(1)
-  end
+function enemy:go_hero()
+  local m = sol.movement.create("target")
+  m:set_speed(32)
+  m:start(self)
+  sol.timer.start(enemy, math.random(10)*500, function() enemy:restart() end)
 end
 
 function enemy:on_hurt(attack)
   local life = self:get_life()
   if life <= 0 then
-    self:get_map():remove_entities("carock_fireball")
-    self:set_life(1)
-    finished = true
+    self:get_map():remove_entities("belahim_beam")
+    self:set_life(second_life)
+    second_stage = true
   elseif life <= initial_life / 3 then
     fireball_proba = 50
+  end
+end
+
+function enemy:on_update()
+  if shadow then
+    self:set_attack_arrow("custom")
+  else
+    self:set_attack_arrow("protected")
+  end
+end
+
+function enemy:on_custom_attack_received(attack, sprite)
+  if sprite == "arrow_light" and shadow then
+    self:hurt(4)
   end
 end
