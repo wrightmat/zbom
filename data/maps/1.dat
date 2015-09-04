@@ -6228,6 +6228,16 @@ npc{
   behavior = "dialog#impa.0.shelf_2",
 }
 
+teletransporter{
+  layer = 0,
+  x = 104,
+  y = 120,
+  width = 16,
+  height = 16,
+  destination_map = "220",
+  sprite = "entities/teletransporter",
+}
+
 tile{
   layer = 2,
   x = 288,
