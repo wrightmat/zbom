@@ -1133,7 +1133,7 @@ dialog{
   icon = "16",
   skip = "current",
   text = [[
-You got an $r Apple$w!$0
+You got an  $r Apple$w!$0
 Eat it to regain some stamina!
 ]]
 }
@@ -1143,7 +1143,7 @@ dialog{
   icon = "16",
   skip = "current",
   text = [[
-You got some $r Apples$w!$0
+You got some  $r Apples$w!$0
 Eat them to regain some stamina!
 ]]
 }
@@ -2244,7 +2244,7 @@ dialog{
   icon = "40",
   skip = "current",
   text = [[
-You found an $r Odd Mushroom$w!
+You found an  $r Odd Mushroom$w!
 The scent is quite...
 interesting.
 ]]
@@ -3761,7 +3761,7 @@ got that neat sword was actually part of
 the huge sewer system running under our
 feet! Anyway, you should be able to
 find another sewer access just east
-of $bHyrule Castle Town$w.
+of $bHyrule Castle Town$w  .
 ]]
 }
 
@@ -3792,7 +3792,7 @@ dialog{
   skip = "current",
   text = [[
 You can find valuable stuff like
-$rMystic Jade$w  and $rDeku Sticks$w scattered
+$rMystic Jade$w  and$rDeku Sticks$w  scattered
 around the forest sometimes.
 ]]
 }
@@ -6640,7 +6640,7 @@ dialog{
   text = [[
 Hmmm... we're bored now that all
 the fun fighting is over. I guess
-you can have this  $c dingy paper$w back -
+you can have this   $cdingy paper$w back -
 we won't need it where we're going!
 ]]
 }
@@ -6941,7 +6941,7 @@ dialog{
   id = "pim.0.house",
   skip = "current",
   text = [[
-Hi, my name is $g Pim$w.
+Hi, my name is  $gPim$w.
 I'm sure you've seen the big pumpkin
 patch by your house. Well, that's mine!
 I grow pumpkins for most of the town
@@ -6966,7 +6966,7 @@ dialog{
   text = [[
 Did you know that eating pumpkins
 or apples can perk you right up?
-You see, that  $b blue bar$wup there is
+You see, that   $bblue bar$wup there is
 your stamina- or the amount of energy
 you have to do things. Always keep
 an apple or pumpkin on hand, and
@@ -6981,11 +6981,11 @@ dialog{
   text = [[
 Of course, the best way to rest is in
 a bed! Sleeping will fill your stamina
-all of the way up  and may even increase
+all of the way up and may even increase
 it if you've been out adventuring for
 a long time and eating a lot on the way!
 Be careful though, sleeping too much
-can actually decrease your  $b stamina$w-
+can actually decrease your    $bstamina$w-
 you don't want to be lazy!
 ]]
 }
@@ -6994,10 +6994,9 @@ dialog{
   id = "pim.2.no_directions",
   skip = "current",
   text = [[
-If you say so. I spend most of
-my time walking around and selling
-my crop, so if you need anything,
-just ask!
+If you say so. I spend most of my time
+walking around and selling my crop, so
+if you need anything, just ask!
 ]]
 }
 
@@ -7006,9 +7005,9 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-Don't need energy, huh? Well, if I
-let you get lost without food, I
-wouldn't be able to forgive myself.
+Don't need energy, huh? Well, if I let
+you get lost without food, I wouldn't be
+able to forgive myself.
 Are you lost? Need any directions?
 Yeah!
 I'm okay
@@ -7020,13 +7019,13 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-Hey there! You look like you could
-use one of my prize-winning Pumpkins!
-Don't forget, if you ever get tired,
-all you have to do is eat one of
-these. What do you say, how about
-giving me 100 rupees for a juicy
-pumpkin?
+Hey there! You look like you could use
+one of my prize-winning Pumpkins!
+Don't forget - if you ever get tired, all
+you have to do is eat one of these.
+What do you say, how about giving me
+100 rupees for a juicy pumpkin?
+Buy?
 Sure
 Nope
 ]]
@@ -7047,15 +7046,14 @@ dialog{
   text = [[
 Yeah, these are pretty big woods!
 South of that ridge and then east is
-the $bBlacksmith's place$w. Further
-east will lead you back to  $b Ordon
-Village$w.$0 South of here is the
-$bSacred Grove$w, with access to an
-underground area beneath a tree to the
-west. The beach and desert are north of
-the Grove.$0 You can't get to  $b Hyrule
-Field$w directly from here because of
-the divide just to the north.$0
+the $bBlacksmith's place$w . Further east
+will lead you back to  $b Ordon Village$w.$0
+South of here is the  $bSacred Grove$w,
+with access to an underground area beneath
+a tree to the west. The beach and desert
+are north of the Grove.$0 You can't get
+to $bHyrule Field$w directly from here
+because of the divide just to the north.$0
 Be careful if you go directly west too -
 I think I saw a scary monster over there!
 ]]

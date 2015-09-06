@@ -9,6 +9,6 @@ local properties = {
   damage = 2,
   normal_speed = 40,
   faster_speed = 48,
-  waking_distance = 80
+  waking_distance = 200
 }
 behavior:create(enemy, properties)

@@ -1970,6 +1970,33 @@ tile{
   pattern = "282",
 }
 
+tile{
+  layer = 0,
+  x = 40,
+  y = 1112,
+  width = 16,
+  height = 16,
+  pattern = "153",
+}
+
+tile{
+  layer = 0,
+  x = 24,
+  y = 1096,
+  width = 16,
+  height = 16,
+  pattern = "153",
+}
+
+tile{
+  layer = 0,
+  x = 8,
+  y = 1088,
+  width = 16,
+  height = 16,
+  pattern = "153",
+}
+
 teletransporter{
   name = "to_B8",
   layer = 0,
@@ -1997,9 +2024,9 @@ teletransporter{
 teletransporter{
   name = "to_B10",
   layer = 0,
-  x = 0,
+  x = 64,
   y = 1120,
-  width = 1120,
+  width = 1056,
   height = 16,
   transition = "scrolling",
   destination_map = "76",
@@ -2400,6 +2427,52 @@ enemy{
   direction = 0,
   breed = "leever_green",
   treasure_name = "random",
+}
+
+teletransporter{
+  name = "enter_gerudo_4",
+  layer = 0,
+  x = 104,
+  y = 144,
+  width = 16,
+  height = 16,
+  destination_map = "6",
+  destination = "enter_desert_4",
+}
+
+destination{
+  name = "from_gerudo_4",
+  layer = 0,
+  x = 112,
+  y = 173,
+  direction = 3,
+}
+
+tile{
+  layer = 1,
+  x = 40,
+  y = 1080,
+  width = 16,
+  height = 32,
+  pattern = "154",
+}
+
+tile{
+  layer = 1,
+  x = 24,
+  y = 1064,
+  width = 16,
+  height = 32,
+  pattern = "154",
+}
+
+tile{
+  layer = 1,
+  x = 8,
+  y = 1056,
+  width = 16,
+  height = 32,
+  pattern = "154",
 }
 
 npc{

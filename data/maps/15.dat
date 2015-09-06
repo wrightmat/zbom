@@ -5957,6 +5957,15 @@ tile{
   pattern = "181",
 }
 
+tile{
+  layer = 0,
+  x = 0,
+  y = 952,
+  width = 8,
+  height = 16,
+  pattern = "1500",
+}
+
 teletransporter{
   name = "to_F14",
   layer = 0,
@@ -5987,7 +5996,7 @@ teletransporter{
   x = -16,
   y = 776,
   width = 16,
-  height = 288,
+  height = 48,
   transition = "scrolling",
   destination_map = "23",
   destination = "_side",
@@ -9250,6 +9259,18 @@ wall{
   stops_hero = true,
 }
 
+teletransporter{
+  name = "to_D14_4",
+  layer = 0,
+  x = -16,
+  y = 976,
+  width = 16,
+  height = 80,
+  transition = "scrolling",
+  destination_map = "23",
+  destination = "_side",
+}
+
 tile{
   layer = 2,
   x = 1096,
@@ -11120,5 +11141,14 @@ tile{
   width = 192,
   height = 32,
   pattern = "1495",
+}
+
+tile{
+  layer = 2,
+  x = 0,
+  y = 928,
+  width = 8,
+  height = 24,
+  pattern = "1497",
 }
 

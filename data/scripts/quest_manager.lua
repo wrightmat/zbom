@@ -92,10 +92,24 @@ local function initialize_npcs()
 
   -- Give default dialog styles to certain entities.
   function npc_meta:on_interaction()
+    local game = self:get_game()
     local name = self:get_name()
-    if name:match("^sign_") then game:set_dialog_style("wood")
-    elseif name:match("^mailbox_") then game:set_dialog_style("wood")
-    elseif name:match("^hint_") then game:set_dialog_style("stone")
+
+    if name:match("^sign") then
+      game:set_dialog_style("wood")
+      game:start_dialog(name)
+    elseif name:match("^mailbox") then
+      game:set_dialog_style("wood")
+      if self:get_name() == "mailbox_link" then
+        game:start_dialog("mailbox.link")
+      elseif self:get_name() == "mailbox_office" then
+        game:start_dialog("mailbox.office")
+      else
+        game:start_dialog("mailbox")
+      end
+    elseif name:match("^hint_stone") then
+      game:set_dialog_style("stone")
+      game:start_dialog(name)
     else game:set_dialog_style("default") end
   end
 

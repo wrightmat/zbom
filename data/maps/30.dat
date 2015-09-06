@@ -3021,11 +3021,11 @@ teletransporter{
 }
 
 teletransporter{
-  name = "to_D12_water",
+  name = "to_D12_2",
   layer = 0,
   x = 0,
   y = 1120,
-  width = 672,
+  width = 528,
   height = 16,
   transition = "scrolling",
   destination_map = "25",
@@ -3254,6 +3254,18 @@ teletransporter{
   height = 16,
   transition = "scrolling",
   destination_map = "78",
+  destination = "_side",
+}
+
+teletransporter{
+  name = "to_D12_water",
+  layer = 0,
+  x = 528,
+  y = 1120,
+  width = 144,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "25",
   destination = "_side",
 }
 

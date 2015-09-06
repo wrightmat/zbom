@@ -2504,18 +2504,9 @@ tile{
 tile{
   layer = 0,
   x = 448,
-  y = 152,
-  width = 64,
-  height = 24,
-  pattern = "67",
-}
-
-tile{
-  layer = 0,
-  x = 448,
   y = 144,
   width = 64,
-  height = 8,
+  height = 16,
   pattern = "1127",
 }
 
@@ -3401,6 +3392,15 @@ tile{
   pattern = "1777",
 }
 
+tile{
+  layer = 0,
+  x = 448,
+  y = 160,
+  width = 64,
+  height = 16,
+  pattern = "905",
+}
+
 teletransporter{
   name = "to_B8",
   layer = 0,
@@ -3429,7 +3429,7 @@ teletransporter{
   name = "to_pyramid",
   layer = 0,
   x = 448,
-  y = 152,
+  y = 144,
   width = 64,
   height = 16,
   destination_map = "204",

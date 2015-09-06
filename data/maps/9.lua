@@ -116,5 +116,9 @@ function sensor_leaving:on_activated()
       game:set_value("i1841", 0) -- remove Master Ore
       game:set_value("i1902", 6)
     end)
+  elseif not game:has_item("bottle_1") and game:get_value("i1902") >= 1 then
+    game:start_dialog("rudy.2.cave_bottle", function()
+      hero:start_treasure("bottle_1")
+    end)
   end
 end

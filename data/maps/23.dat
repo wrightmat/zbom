@@ -6825,9 +6825,9 @@ teletransporter{
   name = "to_E14",
   layer = 0,
   x = 1120,
-  y = 768,
+  y = 776,
   width = 16,
-  height = 304,
+  height = 48,
   transition = "scrolling",
   destination_map = "15",
   destination = "_side",
@@ -7385,6 +7385,18 @@ teletransporter{
   height = 96,
   transition = "scrolling",
   destination_map = "22",
+  destination = "_side",
+}
+
+teletransporter{
+  name = "to_E14_4",
+  layer = 0,
+  x = 1120,
+  y = 976,
+  width = 16,
+  height = 80,
+  transition = "scrolling",
+  destination_map = "15",
   destination = "_side",
 }
 

@@ -1,7 +1,7 @@
 properties{
   x = 0,
   y = 0,
-  width = 800,
+  width = 1088,
   height = 848,
   world = "inside_world",
   tileset = "0",
@@ -3041,6 +3041,303 @@ tile{
   pattern = "364",
 }
 
+tile{
+  layer = 0,
+  x = 888,
+  y = 680,
+  width = 144,
+  height = 120,
+  pattern = "698",
+}
+
+tile{
+  layer = 0,
+  x = 952,
+  y = 800,
+  width = 8,
+  height = 16,
+  pattern = "71",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 800,
+  width = 8,
+  height = 16,
+  pattern = "71",
+}
+
+tile{
+  layer = 0,
+  x = 880,
+  y = 656,
+  width = 16,
+  height = 24,
+  pattern = "680",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 656,
+  width = 16,
+  height = 24,
+  pattern = "679",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 656,
+  width = 96,
+  height = 24,
+  pattern = "681",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 656,
+  width = 16,
+  height = 24,
+  pattern = "683",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 656,
+  width = 16,
+  height = 24,
+  pattern = "682",
+}
+
+tile{
+  layer = 0,
+  x = 880,
+  y = 680,
+  width = 8,
+  height = 8,
+  pattern = "684",
+}
+
+tile{
+  layer = 0,
+  x = 888,
+  y = 680,
+  width = 8,
+  height = 8,
+  pattern = "693",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 680,
+  width = 16,
+  height = 8,
+  pattern = "694",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 680,
+  width = 96,
+  height = 8,
+  pattern = "695",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 680,
+  width = 16,
+  height = 8,
+  pattern = "696",
+}
+
+tile{
+  layer = 0,
+  x = 1032,
+  y = 680,
+  width = 8,
+  height = 8,
+  pattern = "692",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 680,
+  width = 8,
+  height = 8,
+  pattern = "697",
+}
+
+tile{
+  layer = 0,
+  x = 880,
+  y = 688,
+  width = 8,
+  height = 96,
+  pattern = "685",
+}
+
+tile{
+  layer = 0,
+  x = 880,
+  y = 784,
+  width = 8,
+  height = 16,
+  pattern = "686",
+}
+
+tile{
+  layer = 0,
+  x = 888,
+  y = 792,
+  width = 72,
+  height = 8,
+  pattern = "687",
+}
+
+tile{
+  layer = 0,
+  x = 1032,
+  y = 688,
+  width = 8,
+  height = 96,
+  pattern = "691",
+}
+
+tile{
+  layer = 0,
+  x = 1032,
+  y = 784,
+  width = 8,
+  height = 16,
+  pattern = "690",
+}
+
+tile{
+  layer = 0,
+  x = 984,
+  y = 792,
+  width = 48,
+  height = 8,
+  pattern = "689",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 792,
+  width = 16,
+  height = 8,
+  pattern = "703",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 792,
+  width = 16,
+  height = 8,
+  pattern = "704",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 736,
+  width = 96,
+  height = 32,
+  pattern = "318",
+}
+
+tile{
+  layer = 0,
+  x = 952,
+  y = 656,
+  width = 40,
+  height = 24,
+  pattern = "558",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 792,
+  width = 16,
+  height = 24,
+  pattern = "698",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 816,
+  width = 16,
+  height = 8,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 1000,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "609",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 656,
+  width = 24,
+  height = 24,
+  pattern = "564",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 768,
+  width = 16,
+  height = 16,
+  pattern = "669",
+}
+
+tile{
+  layer = 0,
+  x = 904,
+  y = 696,
+  width = 16,
+  height = 24,
+  pattern = "424",
+}
+
+tile{
+  layer = 0,
+  x = 920,
+  y = 688,
+  width = 16,
+  height = 24,
+  pattern = "424",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 704,
+  width = 16,
+  height = 24,
+  pattern = "424",
+}
+
 dynamic_tile{
   name = "night_window_29",
   layer = 0,
@@ -3677,6 +3974,34 @@ npc{
   behavior = "dialog#astronomer.0.painting",
 }
 
+destination{
+  name = "enter_desert_4",
+  layer = 0,
+  x = 968,
+  y = 797,
+  direction = 1,
+}
+
+teletransporter{
+  name = "to_outside_desert_4",
+  layer = 0,
+  x = 960,
+  y = 800,
+  width = 16,
+  height = 16,
+  destination_map = "74",
+  destination = "from_gerudo_4",
+}
+
+tile{
+  layer = 1,
+  x = 1008,
+  y = 752,
+  width = 16,
+  height = 16,
+  pattern = "670",
+}
+
 tile{
   layer = 2,
   x = 96,
@@ -3708,7 +4033,7 @@ tile{
   layer = 2,
   x = 32,
   y = 0,
-  width = 768,
+  width = 1056,
   height = 48,
   pattern = "480",
 }
@@ -3769,7 +4094,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 752,
+  x = 1040,
   y = 48,
   width = 48,
   height = 800,
@@ -3956,11 +4281,56 @@ tile{
   pattern = "573",
 }
 
+tile{
+  layer = 2,
+  x = 752,
+  y = 48,
+  width = 128,
+  height = 800,
+  pattern = "480",
+}
+
+tile{
+  layer = 2,
+  x = 880,
+  y = 800,
+  width = 80,
+  height = 48,
+  pattern = "677",
+}
+
+tile{
+  layer = 2,
+  x = 976,
+  y = 800,
+  width = 64,
+  height = 48,
+  pattern = "480",
+}
+
+tile{
+  layer = 2,
+  x = 960,
+  y = 816,
+  width = 16,
+  height = 32,
+  pattern = "480",
+}
+
+tile{
+  layer = 2,
+  x = 880,
+  y = 48,
+  width = 160,
+  height = 608,
+  pattern = "480",
+}
+
 separator{
   layer = 2,
   x = 0,
   y = 256,
-  width = 800,
+  width = 1088,
   height = 16,
 }
 
@@ -4000,7 +4370,7 @@ separator{
   layer = 2,
   x = 0,
   y = 544,
-  width = 800,
+  width = 1088,
   height = 16,
 }
 
@@ -4015,6 +4385,14 @@ separator{
 separator{
   layer = 2,
   x = 520,
+  y = 560,
+  width = 16,
+  height = 288,
+}
+
+separator{
+  layer = 2,
+  x = 808,
   y = 560,
   width = 16,
   height = 288,

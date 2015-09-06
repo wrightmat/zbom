@@ -2836,7 +2836,7 @@ tile{
 
 tile{
   layer = 0,
-  x = -24,
+  x = -16,
   y = 728,
   width = 96,
   height = 16,
@@ -3547,7 +3547,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 32,
+  x = 40,
   y = 744,
   width = 32,
   height = 8,
@@ -4879,7 +4879,7 @@ tile{
 
 tile{
   layer = 0,
-  x = -24,
+  x = -16,
   y = 704,
   width = 96,
   height = 24,
@@ -4906,7 +4906,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 72,
+  x = 80,
   y = 720,
   width = 8,
   height = 16,
@@ -7696,7 +7696,7 @@ tile{
 
 tile{
   layer = 0,
-  x = -16,
+  x = -8,
   y = 744,
   width = 32,
   height = 8,
@@ -12271,14 +12271,13 @@ destructible{
 }
 
 npc{
-  name = "sign_exit",
+  name = "sign.ordon_ranch",
   layer = 0,
   x = 808,
   y = 21,
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
-  behavior = "dialog#sign.ordon_ranch",
 }
 
 destructible{
@@ -13236,17 +13235,6 @@ destructible{
   can_be_cut = true,
 }
 
-custom_entity{
-  name = "mailbox_1",
-  layer = 0,
-  x = 280,
-  y = 909,
-  height = 24,
-  direction = 0,
-  sprite = "entities/mailbox",
-  model = "mailbox",
-}
-
 teletransporter{
   name = "to_G14_water",
   layer = 0,
@@ -13257,6 +13245,28 @@ teletransporter{
   transition = "scrolling",
   destination_map = "12",
   destination = "_side",
+}
+
+teletransporter{
+  name = "to_E14_6",
+  layer = 0,
+  x = -16,
+  y = 744,
+  width = 16,
+  height = 192,
+  transition = "scrolling",
+  destination_map = "15",
+  destination = "_side",
+}
+
+npc{
+  name = "mailbox",
+  layer = 0,
+  x = 280,
+  y = 909,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/mailbox",
 }
 
 tile{
@@ -13972,7 +13982,7 @@ tile{
 
 tile{
   layer = 2,
-  x = -24,
+  x = -16,
   y = 672,
   width = 96,
   height = 32,
@@ -13999,7 +14009,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 72,
+  x = 80,
   y = 696,
   width = 8,
   height = 24,

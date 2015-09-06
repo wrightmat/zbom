@@ -592,7 +592,7 @@ function dialog_box:on_draw(dst_surface)
   if self.selected_answer ~= nil
       and self:is_full()
       and not self:has_more_lines() then
-    self.box_img:draw_region(128, 60, 8, 8, self.dialog_surface,
+    self.box_img:draw_region(128, 60, 16, 16, self.dialog_surface,
         self.question_dst_position.x, self.question_dst_position.y)
   end
 
