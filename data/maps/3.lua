@@ -49,6 +49,7 @@ function map:on_started()
 end
 
 function npc_rito_4:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("b1150") then
     game:start_dialog("rito_4.1.septen")
   else
@@ -57,12 +58,14 @@ function npc_rito_4:on_interaction()
 end
 
 function npc_rito_5:on_interaction()
+  game:set_dialog_style("default")
   if not game:get_value("b1150") then
     game:start_dialog("rito_5.0.septen")
   end
 end
 
 function npc_rito_trading:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("b2032") then
     game:start_dialog("rito.0.trading", function(answer)
       if answer == 1 then
@@ -84,12 +87,13 @@ function npc_rito_trading:on_interaction()
 end
 
 function npc_shopkeeper:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("shopkeep.0")
 end
 
 if shop_world_map_2 ~= nil then
   function shop_world_map_2:on_interaction()
-
+    game:set_dialog_style("default")
     -- Custom shop script to subtract ore instead of rupees
     game:start_dialog("shop.world_map", function()
       game:start_dialog("_shop.question_ore", 30, function(answer)
@@ -109,7 +113,7 @@ if shop_world_map_2 ~= nil then
 end
 
 function shop_poe_soul:on_interaction()
-
+  game:set_dialog_style("default")
   -- Custom shop script to subtract ore instead of rupees
   game:start_dialog("shop.poe_soul", function()
     game:start_dialog("_shop.question_ore", 80, function(answer)
@@ -123,5 +127,4 @@ function shop_poe_soul:on_interaction()
       end
     end)
   end)
-
 end

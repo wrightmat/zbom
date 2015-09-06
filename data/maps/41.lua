@@ -6,10 +6,7 @@ local game = map:get_game()
 ------------------------------------------------------------
 
 function map:on_started(destination)
-  -- Opening doors
-  local entrance_names = {
-    "ranch"
-  }
+  local entrance_names = { "ranch" }
   for _, entrance_name in ipairs(entrance_names) do
     local sensor = map:get_entity(entrance_name .. "_door_sensor")
     local tile = map:get_entity(entrance_name .. "_door")
@@ -22,7 +19,7 @@ function map:on_started(destination)
     end
   end
 
-  npc_marryn:set_animation("singing")
+  npc_marryn:get_sprite():set_animation("singing")
 end
 
 function npc_marryn:on_interaction()

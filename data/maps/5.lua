@@ -62,7 +62,7 @@ function map:on_started(destination)
   end
 
   -- Replace shop items if they're bought
-  if game:get_value("i1806") >= 1 then --bomb bag
+  if game:get_value("b1806") then --bomb bag
     self:create_shop_treasure({
 	name = "shop_item_2",
 	layer = 0,
@@ -77,6 +77,7 @@ function map:on_started(destination)
 end
 
 function npc_dargor:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("i1914") == 1 then
     game:start_dialog("dargor.1.house", function()
       game:set_value("i1914", game:get_value("i1914")+1)
@@ -96,6 +97,7 @@ function npc_dargor:on_interaction()
 end
 
 function npc_galen:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("i1029") == 1 then
     game:start_dialog("galen.1.house", function()
       game:set_value("i1916", game:get_value("i1916")+1)
@@ -109,14 +111,17 @@ function npc_galen:on_interaction()
 end
 
 function npc_osgor:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("osgor.0.house")
 end
 
 function npc_gor_larin:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("larin.1.house")
 end
 
 function npc_goron_smith:on_interaction()
+  game:set_dialog_style("default")
   if not game:has_item("bomb_bag") then
     game:start_dialog("goron_smith.0.shop", function(answer)
       if answer == 1 then --yes
@@ -145,6 +150,7 @@ function npc_goron_smith:on_interaction()
 end
 
 function npc_goron_trading:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("b2028") then
     game:start_dialog("goron.0.trading", function(answer)
       if answer == 1 then
@@ -184,6 +190,7 @@ function inn_bed:on_activated()
 end
 
 function innkeeper_sensor:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("goron.0.inn", function(answer)
     if answer == 1 then
       game:remove_money(20)
@@ -209,10 +216,12 @@ function innkeeper_sensor:on_interaction()
   end)
 end
 function npc_goron_innkeep:on_interaction()
+  game:set_dialog_style("default")
   innkeeper_sensor:on_interaction()
 end
 
 function npc_shopkeeper:on_interaction()
+  game:set_dialog_style("default")
   if math.random(4) == 1 then
     -- Randomly mention the bigger wallet
     game:start_dialog("shopkeep.1")

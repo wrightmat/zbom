@@ -27,6 +27,7 @@ function map:on_started(destination)
 end
 
 function npc_rudy:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("i1902") == 0 then   -- General dialogs for low Rep
     game:start_dialog("rudy.0", rudy_reputation)
   elseif game:get_value("i1841") == 4 then
@@ -110,6 +111,7 @@ function npc_rudy:on_interaction()
 end
 
 function sensor_leaving:on_activated()
+  game:set_dialog_style("default")
   if game:get_ability("sword") == 0 then
     game:start_dialog("rudy.5.sword_leaving", function()
       hero:start_treasure("sword", 2)

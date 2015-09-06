@@ -1,7 +1,6 @@
 local game = ...
 
 local dialog_box = {
-
   -- Dialog box properties.
   dialog = nil,                -- Dialog being displayed or nil.
   first = true,                -- Whether this is the first dialog of a sequence.
@@ -49,7 +48,6 @@ local box_height = 60
 
 -- Initializes the dialog box system.
 function game:initialize_dialog_box()
-
   game.dialog_box = dialog_box
 
   -- Initialize dialog box data.
@@ -77,7 +75,6 @@ end
 
 -- Exits the dialog box system.
 function game:quit_dialog_box()
-
   if dialog_box ~= nil then
     if game:is_dialog_enabled() then
       sol.menu.stop(dialog_box)
@@ -88,7 +85,6 @@ end
 
 -- Called by the engine when a dialog starts.
 function game:on_dialog_started(dialog, info)
-
   dialog_box.dialog = dialog
   dialog_box.info = info
   dialog_box:set_color({255,255,255}) -- Reset color text to white.
@@ -97,7 +93,6 @@ end
 
 -- Called by the engine when a dialog finishes.
 function game:on_dialog_finished(dialog)
-
   sol.menu.stop(dialog_box)
   dialog_box.dialog = nil
   dialog_box.info = nil
@@ -117,7 +112,6 @@ end
 -- - "stone": Stone design (for example, hint stones).
 -- - "empty": No decoration.
 function game:set_dialog_style(style)
-
   dialog_box.style = style
   if style == "wood" then
     dialog_box.box_img = sol.surface.create("hud/dialog_box_wood.png")
@@ -141,7 +135,6 @@ function game:set_dialog_position(vertical_position)
 end
 
 local function repeat_show_character()
-
   dialog_box:check_full()
   while not dialog_box:is_full()
       and dialog_box.char_index > #dialog_box.lines[dialog_box.line_index] do
@@ -170,7 +163,6 @@ end
 
 -- The first dialog of a sequence starts.
 function dialog_box:on_started()
-
   -- Set the initial properties.
   -- Subsequent dialogs in the same sequence do not reset them.
   self.icon_index = nil

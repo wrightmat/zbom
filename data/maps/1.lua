@@ -158,6 +158,7 @@ function house_bed:on_activated()
 end
 
 function npc_bilo:on_interaction()
+  game:set_dialog_style("default")
   if map:get_game():get_value("i3005") == 0 then
     game:start_dialog("bilo.0")
   else
@@ -170,6 +171,7 @@ function npc_bilo:on_interaction()
 end
 
 function npc_ulo:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("b1117") and game:get_value("i1030") < 2 then
     game:start_dialog("ulo.5.ordon")
   elseif game:get_value("i1029") >= 6 then
@@ -180,6 +182,7 @@ function npc_ulo:on_interaction()
 end
 
 function npc_deacon:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("i1602") == 3 then
     game:start_dialog("deacon.3.house", function()
       game:set_value("i1602", 4)
@@ -199,6 +202,7 @@ function npc_deacon:on_interaction()
 end
 
 function npc_gaira:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("i1030") == 1 then
     game:start_dialog("gaira.6.house")
   elseif not game:get_value("b1722") then
@@ -211,6 +215,7 @@ function npc_gaira:on_interaction()
 end
 
 function npc_impa:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("b2025") then
     game:start_dialog("impa.0.trading", function(answer)
       if answer == 1 then
@@ -275,10 +280,12 @@ function sensor_sleep:on_activated()
 end
 
 function shelf_1:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("pim.1.house")
 end
 
 function npc_shopkeeper:on_interaction()
+  game:set_dialog_style("default")
   if math.random(4) == 1 and game:get_item("rupee_bag"):get_variant() < 2 then
     -- Randomly mention the bigger wallet
     game:start_dialog("shopkeep.1")

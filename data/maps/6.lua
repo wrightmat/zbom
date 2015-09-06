@@ -24,6 +24,7 @@ function map:on_started(destination)
 end
 
 function npc_astronomer:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("b2023") then
    game:start_dialog("astronomer.0.trading", function(answer)
     if answer == 1 then
@@ -44,6 +45,7 @@ function npc_astronomer:on_interaction()
 end
 
 function npc_tokay_jade:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("tokay.mystic_jade", function(answer)
     if answer == 1 then
       hero:start_treasure("jade")
@@ -53,6 +55,7 @@ function npc_tokay_jade:on_interaction()
 end
 
 function npc_tokay_amber:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("tokay.goron_amber", function(answer)
     if answer == 1 then
       hero:start_treasure("amber")
@@ -62,6 +65,7 @@ function npc_tokay_amber:on_interaction()
 end
 
 function npc_tokay_alchemy:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("tokay.alchemy_stone", function(answer)
     if answer == 1 then
       hero:start_treasure("alchemy")
@@ -71,6 +75,7 @@ function npc_tokay_alchemy:on_interaction()
 end
 
 function npc_tokay_crystal:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("tokay.magic_crystal", function(answer)
     if answer == 1 then
       hero:start_treasure("crystal")
@@ -80,6 +85,7 @@ function npc_tokay_crystal:on_interaction()
 end
 
 function npc_tokay_plume:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("tokay.goddess_plume", function(answer)
     if answer == 1 then
       hero:start_treasure("plume")

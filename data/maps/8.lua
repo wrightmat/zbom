@@ -30,6 +30,7 @@ function map:on_started(destination)
 end
 
 function npc_isan:on_interaction()
+  game:set_dialog_style("default")
     if game:get_value("b2031") then
       game:start_dialog("isan.0.trading", function(answer)
         if answer == 1 then
@@ -63,6 +64,7 @@ function npc_isan:on_interaction()
 end
 
 function npc_saria_witch:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("b2024") then
     game:start_dialog("witch.0.trading", function(answer)
       if answer == 1 then
@@ -84,48 +86,63 @@ function npc_saria_witch:on_interaction()
 end
 
 function shelf_1:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("library_shelf_1")
 end
 function shelf_2:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("library_shelf_2")
 end
 function shelf_3:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("library_shelf_3")
 end
 function shelf_4:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("library_shelf_4")
 end
 function shelf_5:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("library_shelf_5")
 end
 function shelf_6:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("library_shelf_6")
 end
 function shelf_7:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("library_shelf_7")
 end
 function shelf_8:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("library_shelf_8")
 end
 function shelf_9:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("library_shelf_9")
 end
 function shelf_10:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("library_shelf_10")
 end
 function shelf_11:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("library_shelf_11")
 end
 function shelf_12:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("library_shelf_12")
 end
 function shelf_13:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("library_shelf_13")
 end
 function shelf_14:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("library_shelf_14")
 end
 function shelf_15:on_interaction()
+  game:set_dialog_style("default")
   if game:get_item("book_mudora"):get_variant() == 6 then
     game:start_dialog("library_shelf_15")
   else
@@ -133,6 +150,7 @@ function shelf_15:on_interaction()
   end
 end
 function shelf_16:on_interaction()
+  game:set_dialog_style("default")
   if game:get_item("book_mudora"):get_variant() == 7 then
     game:start_dialog("library_shelf_16")
   else
@@ -140,6 +158,7 @@ function shelf_16:on_interaction()
   end
 end
 function shelf_17:on_interaction()
+  game:set_dialog_style("default")
   if game:get_item("book_mudora"):get_variant() == 7 then
     game:start_dialog("library_shelf_17")
   else
@@ -147,6 +166,7 @@ function shelf_17:on_interaction()
   end
 end
 function shelf_18:on_interaction()
+  game:set_dialog_style("default")
   if game:get_item("book_mudora"):get_variant() == 8 then
     game:start_dialog("library_shelf_18")
   else
@@ -155,10 +175,12 @@ function shelf_18:on_interaction()
 end
 
 function npc_spoils_shopkeep:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("shopkeep.spoils_explain")
 end
 
 function spoils_jade:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("shopkeep.spoils", "mystic jade", function(answer)
     if answer == 1 then
       if game:get_value("i1849") >= 5 then
@@ -175,6 +197,7 @@ function spoils_jade:on_interaction()
 end
 
 function spoils_stick:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("shopkeep.spoils", "deku sticks", function(answer)
     if answer == 1 then
       if game:get_value("i1847") >= 5 then
@@ -191,6 +214,7 @@ function spoils_stick:on_interaction()
 end
 
 function spoils_amber:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("shopkeep.spoils", "goron amber", function(answer)
     if answer == 1 then
       if game:get_value("i1828") >= 5 then
@@ -207,6 +231,7 @@ function spoils_amber:on_interaction()
 end
 
 function spoils_alchemy:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("shopkeep.spoils", "alchemy stone", function(answer)
     if answer == 1 then
       if game:get_value("i1830") >= 5 then
@@ -223,6 +248,7 @@ function spoils_alchemy:on_interaction()
 end
 
 function spoils_plume:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("shopkeep.spoils", "goddess plume", function(answer)
     if answer == 1 then
       if game:get_value("i1832") >= 5 then
@@ -239,6 +265,7 @@ function spoils_plume:on_interaction()
 end
 
 function spoils_ore:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("shopkeep.spoils", "subrosian ore", function(answer)
     if answer == 1 then
       if game:get_value("i1836") >= 5 then

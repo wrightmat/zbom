@@ -88,6 +88,7 @@ function map:on_started(destination)
 end
 
 function elder_ulo:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("i1032") > 2 then
     game:start_dialog("ulo.2.council_zelda", game:get_player_name())
   else
@@ -96,6 +97,7 @@ function elder_ulo:on_interaction()
 end
 
 function elder_juba:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("i1032") > 2 then
     game:start_dialog("juba.0.council_zelda")
   else
@@ -103,6 +105,7 @@ function elder_juba:on_interaction()
   end
 end
 function elder_juba_office:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("i1923") >= 1 and game:get_value("b1134") and not game:get_value("b1816") then
     game:start_dialog("juba.2.office", function()
       hero:start_treasure("flippers", 1)
@@ -119,6 +122,7 @@ function elder_juba_office:on_interaction()
 end
 
 function elder_gin:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("i1032") > 2 then
     game:start_dialog("gin.0.council_zelda")
   else
@@ -127,6 +131,7 @@ function elder_gin:on_interaction()
 end
 
 function elder_zelda:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("zelda.0.council", game:get_player_name(), function()
     if game:get_value("i1032") >= 1 then
       game:start_dialog("zelda.1.council")
@@ -141,6 +146,7 @@ function elder_zelda:on_interaction()
 end
 
 function elder_larin:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("i1032") > 2 then
     game:start_dialog("larin.0.council_zelda")
   else
@@ -149,6 +155,7 @@ function elder_larin:on_interaction()
 end
 
 function elder_gonpho:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("i1032") > 2 then
     game:start_dialog("gonpho.0.council_zelda")
   else
@@ -157,10 +164,12 @@ function elder_gonpho:on_interaction()
 end
 
 function elder_gonpho_office:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("gonpho.0.office")
 end
 
 function elder_koshi:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("i1032") > 2 then
     game:start_dialog("koshi.0.council_zelda")
   else
@@ -169,6 +178,7 @@ function elder_koshi:on_interaction()
 end
 
 function elder_koshi_office:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("koshi.0.office")
 end
 
@@ -217,6 +227,7 @@ function sensor_sleep:on_activated()
 end
 
 function sensor_zirna_cutscene:on_activated()
+  game:set_dialog_style("default")
   -- If the player has been to library and heard
   -- Ordona speak, then continue the story with a
   -- Dark Interloper cutscene where they take Zelda
@@ -274,6 +285,7 @@ end
 
 
 function chests_man:on_interaction()
+  game:set_dialog_style("default")
   -- chest game dialog
   if playing_chests then
     -- the player is already playing: tell him to choose a chest
@@ -296,6 +308,7 @@ function chests_man:on_interaction()
 end
 
 function slots_man:on_interaction()
+  game:set_dialog_style("default")
   -- slots game dialog
   if playing_slots then
     -- the player is already playing: tell him to stop the reels
@@ -307,6 +320,7 @@ function slots_man:on_interaction()
 end
 
 function arrow_man:on_interaction()
+  game:set_dialog_style("default")
   -- arrow game dialog
   if playing_arrows then
     -- player is already playing the game
@@ -648,6 +662,7 @@ function shop_item_3:on_buying()
 end
 
 function npc_shopkeeper:on_interaction()
+  game:set_dialog_style("default")
   if math.random(4) == 1 and game:get_item("rupee_bag"):get_variant() < 2 then
     -- Randomly mention the bigger wallet
     game:start_dialog("shopkeep.1")
@@ -657,6 +672,7 @@ function npc_shopkeeper:on_interaction()
 end
 
 function npc_attendant_dialog()
+  game:set_dialog_style("default")
   if game:get_value("b1170") then game:start_dialog("council_attendant.7")
   elseif game:get_value("b1150") then game:start_dialog("council_attendant.6")
   elseif game:get_value("b1134") then game:start_dialog("council_attendant.5")
@@ -666,6 +682,7 @@ function npc_attendant_dialog()
   elseif game:get_value("b1033") then game:start_dialog("council_attendant.8") end
 end
 function npc_attendant:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("i1032") >= 3 then
     game:start_dialog("council_attendant.1", npc_attendant_dialog)
   else
