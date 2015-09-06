@@ -5189,23 +5189,21 @@ enemy{
 }
 
 npc{
-  name = "hint_1",
+  name = "hint_stone.tower.1.1",
   layer = 0,
   x = 184,
   y = 429,
   direction = 3,
   subtype = 0,
-  behavior = "dialog#hint_stone.tower.1.1",
 }
 
 npc{
-  name = "hint_2",
+  name = "hint_stone.tower.1.2",
   layer = 0,
   x = 304,
   y = 429,
   direction = 3,
   subtype = 0,
-  behavior = "dialog#hint_stone.tower.1.2",
 }
 
 wall{

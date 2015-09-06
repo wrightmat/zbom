@@ -2418,25 +2418,23 @@ teletransporter{
 }
 
 npc{
-  name = "sign_overlook",
+  name = "sign.overlook",
   layer = 0,
   x = 840,
   y = 309,
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
-  behavior = "dialog#sign.overlook",
 }
 
 npc{
-  name = "sign_cemetary",
+  name = "sign.cemetary",
   layer = 0,
   x = 632,
   y = 917,
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
-  behavior = "dialog#sign.cemetary",
 }
 
 teletransporter{

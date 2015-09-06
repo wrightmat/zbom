@@ -2912,26 +2912,24 @@ teletransporter{
   destination = "_side",
 }
 
-custom_entity{
-  name = "mailbox_1",
+npc{
+  name = "mailbox",
   layer = 0,
   x = 416,
   y = 173,
-  height = 24,
-  direction = 0,
+  direction = 3,
+  subtype = 0,
   sprite = "entities/mailbox",
-  model = "mailbox",
 }
 
-custom_entity{
+npc{
   name = "mailbox_2",
   layer = 0,
   x = 976,
   y = 701,
-  height = 24,
-  direction = 0,
+  direction = 3,
+  subtype = 0,
   sprite = "entities/mailbox",
-  model = "mailbox",
 }
 
 npc{

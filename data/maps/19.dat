@@ -5448,14 +5448,13 @@ destructible{
 }
 
 npc{
-  name = "sign_floria",
+  name = "sign.H13_floria",
   layer = 0,
   x = 232,
   y = 989,
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
-  behavior = "dialog#sign.H13_floria",
 }
 
 teletransporter{

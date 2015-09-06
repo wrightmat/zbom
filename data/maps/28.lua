@@ -49,15 +49,19 @@ end
 
 function sign_directions_1:on_interaction()
   if game:has_item("sword") then
+    game:set_dialog_style("wood")
     game:start_dialog("sign.G12_directions_1")
   else
+    game:set_dialog_style("wood")
     game:start_dialog("sign.G12_danger")
   end
 end
 function sign_directions_2:on_interaction()
   if game:has_item("sword") then
+    game:set_dialog_style("wood")
     game:start_dialog("sign.G12_directions_2")
   else
+    game:set_dialog_style("wood")
     game:start_dialog("sign.G12_danger")
   end
 end

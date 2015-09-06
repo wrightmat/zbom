@@ -4581,6 +4581,15 @@ tile{
   pattern = "525",
 }
 
+tile{
+  layer = 0,
+  x = 608,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "482",
+}
+
 wall{
   layer = 0,
   x = 56,
@@ -5266,6 +5275,15 @@ enemy{
   y = 173,
   direction = 0,
   breed = "hardhat_beetle_blue",
+}
+
+npc{
+  name = "hint_stone.tower.7",
+  layer = 0,
+  x = 616,
+  y = 429,
+  direction = 3,
+  subtype = 0,
 }
 
 tile{

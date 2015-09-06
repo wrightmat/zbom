@@ -2403,68 +2403,67 @@ tile{
 }
 
 teletransporter{
+  name = "to_G8",
   layer = 0,
   x = -16,
   y = 0,
   width = 16,
   height = 160,
-  name = "to_G8",
   transition = "scrolling",
   destination_map = "46",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_H7",
   layer = 0,
   x = 0,
   y = -16,
   width = 832,
   height = 16,
-  name = "to_H7",
   transition = "scrolling",
   destination_map = "67",
   destination = "_side",
 }
 
 enemy{
+  name = "geyser_1",
   layer = 0,
   x = 440,
   y = 301,
-  name = "geyser_1",
   direction = 3,
   breed = "geyser",
   treasure_name = "random",
 }
 
 enemy{
+  name = "geyser_2",
   layer = 0,
   x = 216,
   y = 477,
-  name = "geyser_2",
   direction = 3,
   breed = "geyser",
   treasure_name = "random",
 }
 
 enemy{
+  name = "geyser_3",
   layer = 0,
   x = 624,
   y = 573,
-  name = "geyser_3",
   direction = 3,
   breed = "geyser",
   treasure_name = "random",
 }
 
 npc{
+  name = "sign.H8_directions",
   layer = 0,
   x = 120,
   y = 141,
-  name = "sign_H8_directions",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
-  behavior = "dialog#sign.H8_directions",
 }
 
 destructible{
@@ -2494,44 +2493,44 @@ destructible{
 }
 
 teletransporter{
+  name = "to_H7_water",
   layer = 0,
   x = 912,
   y = -16,
   width = 208,
   height = 16,
-  name = "to_H7_water",
   transition = "scrolling",
   destination_map = "67",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_G8_water",
   layer = 0,
   x = -16,
   y = 240,
   width = 16,
   height = 864,
-  name = "to_G8_water",
   transition = "scrolling",
   destination_map = "46",
   destination = "_side",
 }
 
 destination{
+  name = "from_sewer",
   layer = 0,
   x = 512,
   y = 757,
-  name = "from_sewer",
   direction = 3,
 }
 
 teletransporter{
+  name = "to_sewer",
   layer = 0,
   x = 504,
   y = 720,
   width = 16,
   height = 16,
-  name = "to_sewer",
   destination_map = "202",
   destination = "from_H8",
 }

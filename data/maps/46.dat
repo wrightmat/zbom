@@ -8189,17 +8189,6 @@ destructible{
   damage_on_enemies = 2,
 }
 
-custom_entity{
-  name = "mailbox_impa",
-  layer = 0,
-  x = 776,
-  y = 373,
-  height = 24,
-  direction = 0,
-  sprite = "entities/mailbox",
-  model = "mailbox",
-}
-
 teletransporter{
   name = "to_G7_water",
   layer = 0,
@@ -8210,6 +8199,16 @@ teletransporter{
   transition = "scrolling",
   destination_map = "47",
   destination = "_side",
+}
+
+npc{
+  name = "mailbox",
+  layer = 0,
+  x = 776,
+  y = 373,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/mailbox",
 }
 
 tile{

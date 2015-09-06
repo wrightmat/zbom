@@ -3075,61 +3075,6 @@ npc{
   sprite = "npc/rito",
 }
 
-custom_entity{
-  name = "mailbox_1",
-  layer = 0,
-  x = 328,
-  y = 565,
-  height = 24,
-  direction = 0,
-  sprite = "entities/mailbox",
-  model = "mailbox",
-}
-
-custom_entity{
-  name = "mailbox_2",
-  layer = 0,
-  x = 416,
-  y = 749,
-  height = 24,
-  direction = 0,
-  sprite = "entities/mailbox",
-  model = "mailbox",
-}
-
-custom_entity{
-  name = "mailbox_3",
-  layer = 0,
-  x = 624,
-  y = 597,
-  height = 24,
-  direction = 0,
-  sprite = "entities/mailbox",
-  model = "mailbox",
-}
-
-custom_entity{
-  name = "mailbox_4",
-  layer = 0,
-  x = 968,
-  y = 541,
-  height = 24,
-  direction = 0,
-  sprite = "entities/mailbox",
-  model = "mailbox",
-}
-
-custom_entity{
-  name = "mailbox_5",
-  layer = 0,
-  x = 1040,
-  y = 717,
-  height = 24,
-  direction = 0,
-  sprite = "entities/mailbox",
-  model = "mailbox",
-}
-
 destructible{
   layer = 0,
   x = 936,
@@ -3248,6 +3193,56 @@ enemy{
   direction = 0,
   breed = "tektite_water",
   treasure_name = "random",
+}
+
+npc{
+  name = "mailbox",
+  layer = 0,
+  x = 328,
+  y = 565,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/mailbox",
+}
+
+npc{
+  name = "mailbox_2",
+  layer = 0,
+  x = 624,
+  y = 597,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/mailbox",
+}
+
+npc{
+  name = "mailbox_3",
+  layer = 0,
+  x = 416,
+  y = 749,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/mailbox",
+}
+
+npc{
+  name = "mailbox_4",
+  layer = 0,
+  x = 968,
+  y = 541,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/mailbox",
+}
+
+npc{
+  name = "mailbox_5",
+  layer = 0,
+  x = 1040,
+  y = 717,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/mailbox",
 }
 
 tile{

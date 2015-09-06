@@ -5197,14 +5197,13 @@ destructible{
 }
 
 npc{
-  name = "sign_bomb_shop",
+  name = "sign.bomb_shop",
   layer = 0,
   x = 720,
   y = 437,
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
-  behavior = "dialog#sign.bomb_shop",
 }
 
 destination{
@@ -5479,47 +5478,13 @@ wall{
 }
 
 npc{
-  name = "sign_E7_kakariko",
+  name = "sign.E7_kakariko",
   layer = 0,
   x = 960,
   y = 565,
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
-  behavior = "dialog#sign.E7_kakariko",
-}
-
-custom_entity{
-  name = "mailbox_1",
-  layer = 0,
-  x = 432,
-  y = 525,
-  height = 24,
-  direction = 0,
-  sprite = "entities/mailbox",
-  model = "mailbox",
-}
-
-custom_entity{
-  name = "mailbox_2",
-  layer = 0,
-  x = 464,
-  y = 261,
-  height = 24,
-  direction = 0,
-  sprite = "entities/mailbox",
-  model = "mailbox",
-}
-
-custom_entity{
-  name = "mailbox_3",
-  layer = 0,
-  x = 936,
-  y = 197,
-  height = 24,
-  direction = 0,
-  sprite = "entities/mailbox",
-  model = "mailbox",
 }
 
 enemy{
@@ -5547,6 +5512,36 @@ enemy{
   y = 269,
   direction = 0,
   breed = "cucco",
+}
+
+npc{
+  name = "mailbox",
+  layer = 0,
+  x = 432,
+  y = 525,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/mailbox",
+}
+
+npc{
+  name = "mailbox_2",
+  layer = 0,
+  x = 464,
+  y = 261,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/mailbox",
+}
+
+npc{
+  name = "mailbox_3",
+  layer = 0,
+  x = 936,
+  y = 197,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/mailbox",
 }
 
 tile{

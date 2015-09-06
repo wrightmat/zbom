@@ -6926,14 +6926,13 @@ teletransporter{
 }
 
 npc{
-  name = "sign_directions",
+  name = "sign.G11_directions",
   layer = 0,
   x = 296,
   y = 589,
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
-  behavior = "dialog#sign.G11_directions",
 }
 
 teletransporter{

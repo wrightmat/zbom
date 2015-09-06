@@ -4789,13 +4789,12 @@ teletransporter{
 }
 
 npc{
-  name = "hint",
+  name = "hint_stone.tower.3",
   layer = 0,
   x = 304,
   y = 429,
   direction = 3,
   subtype = 0,
-  behavior = "dialog#hint_stone.tower.3",
 }
 
 destructible{

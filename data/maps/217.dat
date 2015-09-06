@@ -3825,6 +3825,15 @@ tile{
   pattern = "607",
 }
 
+tile{
+  layer = 0,
+  x = 144,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "482",
+}
+
 sensor{
   name = "dungeon_room_1_",
   layer = 0,
@@ -4329,6 +4338,15 @@ sensor{
   y = 453,
   width = 32,
   height = 16,
+}
+
+npc{
+  name = "hint_stone.tower.8",
+  layer = 0,
+  x = 152,
+  y = 429,
+  direction = 3,
+  subtype = 0,
 }
 
 tile{

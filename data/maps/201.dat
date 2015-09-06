@@ -6007,13 +6007,12 @@ wall{
 }
 
 npc{
-  name = "hint_stone",
+  name = "hint_stone.ruins",
   layer = 0,
   x = 512,
   y = 357,
   direction = 3,
   subtype = 0,
-  behavior = "dialog#hint_stone.ruins",
 }
 
 teletransporter{

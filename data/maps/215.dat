@@ -6129,13 +6129,12 @@ destination{
 }
 
 npc{
-  name = "hint",
+  name = "hint_stone.tower.6",
   layer = 0,
   x = 632,
   y = 381,
   direction = 3,
   subtype = 0,
-  behavior = "dialog#hint_stone.tower.6",
 }
 
 teletransporter{

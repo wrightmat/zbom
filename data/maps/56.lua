@@ -69,8 +69,10 @@ end
 
 function sign_tower:on_interaction()
   if game:get_value("b1150") then -- Tower under construction until after Snowpeak
+    game:set_dialog_style("wood")
     game:start_dialog("sign.tower")
   else
+    game:set_dialog_style("wood")
     game:start_dialog("sign.tower_construction")
   end
 end

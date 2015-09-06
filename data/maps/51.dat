@@ -7192,61 +7192,6 @@ sensor{
   height = 16,
 }
 
-custom_entity{
-  name = "mailbox_1",
-  layer = 0,
-  x = 264,
-  y = 933,
-  height = 24,
-  direction = 0,
-  sprite = "entities/mailbox",
-  model = "mailbox",
-}
-
-custom_entity{
-  name = "mailbox_2",
-  layer = 0,
-  x = 528,
-  y = 1013,
-  height = 24,
-  direction = 0,
-  sprite = "entities/mailbox",
-  model = "mailbox",
-}
-
-custom_entity{
-  name = "mailbox_3",
-  layer = 0,
-  x = 816,
-  y = 973,
-  height = 24,
-  direction = 0,
-  sprite = "entities/mailbox",
-  model = "mailbox",
-}
-
-custom_entity{
-  name = "mailbox_4",
-  layer = 0,
-  x = 944,
-  y = 725,
-  height = 24,
-  direction = 0,
-  sprite = "entities/mailbox",
-  model = "mailbox",
-}
-
-custom_entity{
-  name = "mailbox_5",
-  layer = 0,
-  x = 976,
-  y = 269,
-  height = 24,
-  direction = 0,
-  sprite = "entities/mailbox",
-  model = "mailbox",
-}
-
 enemy{
   name = "cucco_1",
   layer = 0,
@@ -7281,6 +7226,56 @@ enemy{
   y = 357,
   direction = 0,
   breed = "cucco",
+}
+
+npc{
+  name = "mailbox",
+  layer = 0,
+  x = 264,
+  y = 933,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/mailbox",
+}
+
+npc{
+  name = "mailbox_2",
+  layer = 0,
+  x = 528,
+  y = 1013,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/mailbox",
+}
+
+npc{
+  name = "mailbox_3",
+  layer = 0,
+  x = 816,
+  y = 973,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/mailbox",
+}
+
+npc{
+  name = "mailbox_4",
+  layer = 0,
+  x = 944,
+  y = 725,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/mailbox",
+}
+
+npc{
+  name = "mailbox_5",
+  layer = 0,
+  x = 976,
+  y = 269,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/mailbox",
 }
 
 tile{

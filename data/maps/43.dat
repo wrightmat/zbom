@@ -2367,72 +2367,72 @@ tile{
 }
 
 teletransporter{
+  name = "to_D9",
   layer = 0,
   x = 0,
   y = 1120,
   width = 1056,
   height = 16,
-  name = "to_D9",
   transition = "scrolling",
   destination_map = "42",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_E8",
   layer = 0,
   x = 1120,
   y = 24,
   width = 16,
   height = 1088,
-  name = "to_E8",
   transition = "scrolling",
   destination_map = "44",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_D7",
   layer = 0,
   x = 0,
   y = -16,
   width = 848,
   height = 16,
-  name = "to_D7",
   transition = "scrolling",
   destination_map = "51",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_C8",
   layer = 0,
   x = -16,
   y = 112,
   width = 16,
   height = 1008,
-  name = "to_C8",
   transition = "scrolling",
   destination_map = "73",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_C8_2",
   layer = 0,
   x = -16,
   y = 0,
   width = 16,
   height = 64,
-  name = "to_C8_2",
   transition = "scrolling",
   destination_map = "73",
   destination = "_side",
 }
 
 jumper{
+  name = "jump_sensor",
   layer = 0,
   x = 312,
   y = 80,
   width = 48,
   height = 8,
-  name = "jump_sensor",
   direction = 6,
   jump_length = 64,
 }
@@ -3516,63 +3516,62 @@ destructible{
 }
 
 enemy{
+  name = "soldier_red_1",
   layer = 0,
   x = 600,
   y = 701,
-  name = "soldier_red_1",
   direction = 3,
   breed = "knight_red",
   treasure_name = "random",
 }
 
 enemy{
+  name = "soldier_red_2",
   layer = 0,
   x = 328,
   y = 957,
-  name = "soldier_red_2",
   direction = 3,
   breed = "knight_red",
   treasure_name = "random",
 }
 
 enemy{
+  name = "soldier_red_3",
   layer = 0,
   x = 392,
   y = 349,
-  name = "soldier_red_3",
   direction = 3,
   breed = "knight_red",
   treasure_name = "random",
 }
 
 enemy{
+  name = "soldier_red_4",
   layer = 0,
   x = 952,
   y = 141,
-  name = "soldier_red_4",
   direction = 3,
   breed = "knight_red",
   treasure_name = "random",
 }
 
 sensor{
+  name = "sensor_enter_field",
   layer = 0,
   x = 320,
   y = 133,
   width = 48,
   height = 16,
-  name = "sensor_enter_field",
 }
 
 npc{
+  name = "sign.D8_directions",
   layer = 0,
   x = 256,
   y = 533,
-  name = "sign_D8_directions",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
-  behavior = "dialog#sign.D8_directions",
 }
 
 tile{

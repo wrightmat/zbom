@@ -7751,14 +7751,13 @@ enemy{
 }
 
 npc{
-  name = "sign_directions",
+  name = "sign.E13_directions",
   layer = 0,
   x = 616,
   y = 325,
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
-  behavior = "dialog#sign.E13_directions",
 }
 
 npc{

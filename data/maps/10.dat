@@ -7669,15 +7669,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 472,
-  y = 792,
-  width = 24,
-  height = 16,
-  pattern = "662",
-}
-
-tile{
-  layer = 0,
   x = 848,
   y = 880,
   width = 16,
@@ -8547,6 +8538,15 @@ tile{
   width = 8,
   height = 16,
   pattern = "152",
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 792,
+  width = 16,
+  height = 16,
+  pattern = "664",
 }
 
 dynamic_tile{
@@ -10235,39 +10235,6 @@ custom_entity{
   model = "mailbox",
 }
 
-custom_entity{
-  name = "mailbox_link",
-  layer = 0,
-  x = 616,
-  y = 941,
-  height = 24,
-  direction = 0,
-  sprite = "entities/mailbox",
-  model = "mailbox",
-}
-
-custom_entity{
-  name = "mailbox_2",
-  layer = 0,
-  x = 784,
-  y = 445,
-  height = 24,
-  direction = 0,
-  sprite = "entities/mailbox",
-  model = "mailbox",
-}
-
-custom_entity{
-  name = "mailbox_3",
-  layer = 0,
-  x = 408,
-  y = 269,
-  height = 24,
-  direction = 0,
-  sprite = "entities/mailbox",
-  model = "mailbox",
-}
-
 destructible{
   layer = 0,
   x = 352,
@@ -10376,6 +10343,36 @@ destructible{
   destruction_sound = "bush",
   weight = 1,
   can_be_cut = true,
+}
+
+npc{
+  name = "mailbox_link",
+  layer = 0,
+  x = 616,
+  y = 941,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/mailbox",
+}
+
+npc{
+  name = "mailbox_3",
+  layer = 0,
+  x = 408,
+  y = 269,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/mailbox",
+}
+
+npc{
+  name = "mailbox_4",
+  layer = 0,
+  x = 784,
+  y = 445,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/mailbox",
 }
 
 tile{

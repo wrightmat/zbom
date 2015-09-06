@@ -9554,15 +9554,14 @@ custom_entity{
   model = "mailbox",
 }
 
-custom_entity{
-  name = "mailbox_2",
+npc{
+  name = "mailbox",
   layer = 0,
   x = 976,
   y = 269,
-  height = 24,
-  direction = 0,
+  direction = 3,
+  subtype = 0,
   sprite = "entities/mailbox",
-  model = "mailbox",
 }
 
 tile{

@@ -4806,84 +4806,84 @@ tile{
 }
 
 teletransporter{
+  name = "to_F13",
   layer = 0,
   x = 440,
   y = 1120,
   width = 80,
   height = 16,
-  name = "to_F13",
   transition = "scrolling",
   destination_map = "17",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_F11",
   layer = 0,
   x = 0,
   y = -16,
   width = 736,
   height = 16,
-  name = "to_F11",
   transition = "scrolling",
   destination_map = "32",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_F11_2",
   layer = 0,
   x = 912,
   y = -16,
   width = 208,
   height = 16,
-  name = "to_F11_2",
   transition = "scrolling",
   destination_map = "32",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_F13_2",
   layer = 0,
   x = 40,
   y = 1120,
   width = 64,
   height = 16,
-  name = "to_F13_2",
   transition = "scrolling",
   destination_map = "17",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_E12",
   layer = 0,
   x = -16,
   y = 848,
   width = 16,
   height = 256,
-  name = "to_E12",
   transition = "scrolling",
   destination_map = "26",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_E12_2",
   layer = 0,
   x = -16,
   y = 600,
   width = 16,
   height = 208,
-  name = "to_E12_2",
   transition = "scrolling",
   destination_map = "26",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_E12_3",
   layer = 0,
   x = -16,
   y = 0,
   width = 16,
   height = 224,
-  name = "to_E12_3",
   transition = "scrolling",
   destination_map = "26",
   destination = "_side",
@@ -5121,30 +5121,30 @@ destructible{
 }
 
 enemy{
+  name = "enemy",
   layer = 0,
   x = 632,
   y = 413,
-  name = "enemy",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "enemy_2",
   layer = 0,
   x = 232,
   y = 293,
-  name = "enemy_2",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "enemy_3",
   layer = 0,
   x = 264,
   y = 637,
-  name = "enemy_3",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
@@ -5283,74 +5283,74 @@ destructible{
 }
 
 teletransporter{
+  name = "to_G12",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 1088,
-  name = "to_G12",
   transition = "scrolling",
   destination_map = "28",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_E12_4",
   layer = 0,
   x = -16,
   y = 288,
   width = 16,
   height = 240,
-  name = "to_E12_4",
   transition = "scrolling",
   destination_map = "26",
   destination = "_side",
 }
 
 enemy{
+  name = "enemy_4",
   layer = 0,
   x = 904,
   y = 357,
-  name = "enemy_4",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "enemy_5",
   layer = 0,
   x = 1032,
   y = 253,
-  name = "enemy_5",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "enemy_6",
   layer = 0,
   x = 1072,
   y = 405,
-  name = "enemy_6",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "enemy_7",
   layer = 0,
   x = 552,
   y = 541,
-  name = "enemy_7",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "enemy_8",
   layer = 0,
   x = 568,
   y = 173,
-  name = "enemy_8",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
@@ -5434,14 +5434,13 @@ destructible{
 }
 
 npc{
+  name = "sign.F12_directions",
   layer = 0,
   x = 376,
   y = 485,
-  name = "sign_directions",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/sign",
-  behavior = "dialog#sign.F12_directions",
 }
 
 wall{

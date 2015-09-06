@@ -3387,17 +3387,6 @@ custom_entity{
 }
 
 custom_entity{
-  name = "mailbox_1",
-  layer = 0,
-  x = 664,
-  y = 661,
-  height = 24,
-  direction = 0,
-  sprite = "entities/mailbox",
-  model = "mailbox",
-}
-
-custom_entity{
   layer = 0,
   x = 696,
   y = 197,
@@ -3440,6 +3429,16 @@ custom_entity{
   direction = 0,
   sprite = "entities/soil",
   model = "soil",
+}
+
+npc{
+  name = "mailbox",
+  layer = 0,
+  x = 664,
+  y = 661,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/mailbox",
 }
 
 tile{

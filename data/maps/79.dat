@@ -2420,6 +2420,24 @@ tile{
   pattern = "22",
 }
 
+tile{
+  layer = 0,
+  x = 688,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "1700",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "1700",
+}
+
 teletransporter{
   name = "to_B10",
   layer = 0,

@@ -8141,14 +8141,13 @@ destructible{
 }
 
 npc{
-  name = "sign",
+  name = "sign.lonlon_ranch",
   layer = 0,
   x = 176,
   y = 821,
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
-  behavior = "dialog#sign.lonlon_ranch",
 }
 
 dynamic_tile{
@@ -8206,17 +8205,6 @@ destructible{
   can_be_cut = true,
 }
 
-custom_entity{
-  name = "mailbox_1",
-  layer = 0,
-  x = 416,
-  y = 501,
-  height = 24,
-  direction = 0,
-  sprite = "entities/mailbox",
-  model = "mailbox",
-}
-
 teletransporter{
   name = "to_D9_water",
   layer = 0,
@@ -8249,6 +8237,16 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/hylian_marryn",
+}
+
+npc{
+  name = "mailbox",
+  layer = 0,
+  x = 416,
+  y = 501,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/mailbox",
 }
 
 tile{

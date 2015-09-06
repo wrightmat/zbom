@@ -13367,23 +13367,21 @@ chest{
 }
 
 npc{
-  name = "hint_stone_1",
+  name = "hint_stone.grove.1",
   layer = 0,
   x = 1416,
   y = 629,
   direction = 3,
   subtype = 0,
-  behavior = "dialog#hint_stone.grove.1",
 }
 
 npc{
-  name = "hint_stone_2",
+  name = "hint_stone.grove.2",
   layer = 0,
   x = 448,
   y = 453,
   direction = 0,
   subtype = 0,
-  behavior = "dialog#hint_stone.grove.2",
 }
 
 sensor{

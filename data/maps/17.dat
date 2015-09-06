@@ -6054,15 +6054,14 @@ wall{
   stops_hero = true,
 }
 
-custom_entity{
+npc{
   name = "mailbox_lumberjack",
   layer = 0,
   x = 152,
   y = 677,
-  height = 24,
-  direction = 0,
+  direction = 3,
+  subtype = 0,
   sprite = "entities/mailbox",
-  model = "mailbox",
 }
 
 tile{

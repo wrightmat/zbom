@@ -15361,23 +15361,21 @@ destructible{
 }
 
 npc{
-  name = "hint_stone_1",
+  name = "hint_stone.pyramid.1",
   layer = 0,
   x = 216,
   y = 53,
   direction = 3,
   subtype = 0,
-  behavior = "dialog#hint_stone.pyramid.1",
 }
 
 npc{
-  name = "hint_stone_2",
+  name = "hint_stone.pyramid.2",
   layer = 0,
   x = 1528,
   y = 1205,
   direction = 3,
   subtype = 0,
-  behavior = "dialog#hint_stone.pyramid.2",
 }
 
 destructible{

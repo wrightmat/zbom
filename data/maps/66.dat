@@ -2046,28 +2046,6 @@ destination{
   direction = 3,
 }
 
-custom_entity{
-  name = "mailbox_1",
-  layer = 0,
-  x = 960,
-  y = 621,
-  height = 24,
-  direction = 0,
-  sprite = "entities/mailbox",
-  model = "mailbox",
-}
-
-custom_entity{
-  name = "mailbox_2",
-  layer = 0,
-  x = 192,
-  y = 869,
-  height = 24,
-  direction = 0,
-  sprite = "entities/mailbox",
-  model = "mailbox",
-}
-
 jumper{
   layer = 0,
   x = 576,
@@ -2076,6 +2054,26 @@ jumper{
   height = 8,
   direction = 6,
   jump_length = 72,
+}
+
+npc{
+  name = "mailbox",
+  layer = 0,
+  x = 960,
+  y = 621,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/mailbox",
+}
+
+npc{
+  name = "mailbox_2",
+  layer = 0,
+  x = 192,
+  y = 869,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/mailbox",
 }
 
 npc{

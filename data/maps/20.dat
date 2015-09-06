@@ -8074,14 +8074,13 @@ teletransporter{
 }
 
 npc{
-  name = "sign_D15_blacksmith",
+  name = "sign.D15_blacksmith",
   layer = 0,
   x = 416,
   y = 125,
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
-  behavior = "dialog#sign.D15_blacksmith",
 }
 
 destructible{
