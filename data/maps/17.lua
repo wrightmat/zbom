@@ -27,6 +27,7 @@ local function random_walk(npc)
 end
 
 function map:on_started(destination)
+  game:set_dialog_style("default")
   if game:get_value("i1602") <= 2 or game:get_value("i1602") > 4 then
     npc_gaira:remove()
   elseif game:get_value("i1602") == 3 then
@@ -61,6 +62,7 @@ function map:on_started(destination)
 end
 
 function npc_deacon:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("b1117") then
     game:start_dialog("deacon.6.house")
   elseif game:get_value("i1602") == 1 then
@@ -79,6 +81,7 @@ function npc_deacon:on_interaction()
 end
 
 function npc_gaira:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("i1602") == 3 then
     game:start_dialog("gaira.4.faron")
   end

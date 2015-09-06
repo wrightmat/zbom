@@ -31,6 +31,7 @@ function sensor_snow_drift_2:on_activated()
 end
 
 function ocarina_wind_to_B1:on_interaction()
+  game:set_dialog_style("default")
   -- if this point not previously discovered
   -- then add it, otherwise do nothing
   if not game:get_value("b1508") then

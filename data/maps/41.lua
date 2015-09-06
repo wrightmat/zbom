@@ -1,9 +1,9 @@
 local map = ...
 local game = map:get_game()
 
-------------------------------------------------------------
--- Outside World E9 (Lon Lon Ranch)                       --
-------------------------------------------------------------
+--------------------------------------
+-- Outside World E9 (Lon Lon Ranch) --
+--------------------------------------
 
 function map:on_started(destination)
   local entrance_names = { "ranch" }
@@ -23,5 +23,6 @@ function map:on_started(destination)
 end
 
 function npc_marryn:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("marryn.0.ranch")
 end

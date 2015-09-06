@@ -19,13 +19,16 @@ function map:on_started(destination)
 end
 
 function npc_gerudo_pirate_1:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("gerudo.3.desert")
 end
 
 function npc_gerudo_pirate_2:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("gerudo.3.desert")
 end
 
 function npc_gerudo_leader:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("hesla.6.desert")
 end

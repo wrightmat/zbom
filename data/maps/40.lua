@@ -42,6 +42,7 @@ function sensor_bridge_2:on_activated()
 end
 
 function ocarina_wind_to_north:on_interaction()
+  game:set_dialog_style("default")
   if game:has_item("ocarina") then
     game:start_dialog("warp.to_D7", function(answer)
       if answer == 1 then
@@ -52,6 +53,7 @@ function ocarina_wind_to_north:on_interaction()
   end
 end
 function ocarina_wind_to_east:on_interaction()
+  game:set_dialog_style("default")
   if game:has_item("ocarina") then
     game:start_dialog("warp.to_H6", function(answer)
       if answer == 1 then
@@ -62,6 +64,7 @@ function ocarina_wind_to_east:on_interaction()
   end
 end
 function ocarina_wind_to_south:on_interaction()
+  game:set_dialog_style("default")
   if game:has_item("ocarina") then
     game:start_dialog("warp.to_F14", function(answer)
       if answer == 1 then
@@ -72,6 +75,7 @@ function ocarina_wind_to_south:on_interaction()
   end
 end
 function ocarina_wind_to_west:on_interaction()
+  game:set_dialog_style("default")
   if game:has_item("ocarina") then
     game:start_dialog("warp.to_B8", function(answer)
       if answer == 1 then

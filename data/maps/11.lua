@@ -147,6 +147,7 @@ function map:on_draw(dst_surface)
 end
 
 function sensor_festival_dialog:on_activated()
+  game:set_dialog_style("default")
   if game:get_value("i1027") < 3 and game:get_value("i1028") == 0 and hero:get_direction() == 1 then
     npc_tristan:get_sprite():set_animation("pose1")
     game:start_dialog("tristan.0.festival", game:get_player_name(), function()
@@ -238,6 +239,7 @@ function sensor_ordona_speak:on_activated()
 end
 
 function npc_tern:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("i1027") <= 5 then
     if game:get_value("i1028") > 1 and game:get_value("i1028") <= 3 then
       game:start_dialog("tern.0.festival_race")
@@ -250,6 +252,7 @@ function npc_tern:on_interaction()
 end
 
 function npc_tristan:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("i1028") == 1 then
     if game:has_item("lamp") then
       game:start_dialog("tristan.0.festival_rules")
@@ -283,6 +286,7 @@ function npc_tristan:on_interaction()
 end
 
 function npc_gaira:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("i1911") == 1 then
     game:start_dialog("gaira.1.ordon", function()
       game:set_value("i1911", game:get_value("i1911")+1)
@@ -320,6 +324,7 @@ function torch_3:on_interaction_item(lamp)
 end
 
 function ocarina_wind_to_D7:on_interaction()
+  game:set_dialog_style("default")
   -- if this point not previously discovered
   -- then add it, otherwise do nothing
   if not game:get_value("b1502") then

@@ -18,6 +18,7 @@ function map:on_started(destination)
 end
 
 function npc_anouki_2:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("b1150") then
     game:start_dialog("anouki_2.3.snowpeak")
   else

@@ -16,6 +16,7 @@ function map:on_started(destination)
   random_walk(npc_goron_5)
   random_walk(npc_goron_6)
   random_walk(npc_goron_7)
+  game:set_dialog_style("default")
 
   -- Opening doors
   local entrance_names = {
@@ -74,5 +75,4 @@ function map:on_started(destination)
   else
     npc_goron_ghost:remove()
   end
-
 end

@@ -2870,6 +2870,19 @@ tile{
   pattern = "100",
 }
 
+wall{
+  layer = 0,
+  x = 608,
+  y = 296,
+  width = 48,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
 teletransporter{
   name = "to_K4",
   layer = 0,

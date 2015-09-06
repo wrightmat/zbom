@@ -27,9 +27,7 @@ local positions = {
 }
 
 function map:on_started(destination)
-  local entrance_names = {
-    "house"
-  }
+  local entrance_names = { "house" }
   for _, entrance_name in ipairs(entrance_names) do
     local sensor = map:get_entity(entrance_name .. "_door_sensor")
     sensor.on_activated_repeat = function()
@@ -73,6 +71,7 @@ function thief_caught()
 end
 
 function thief:on_interaction()
+  game:set_dialog_style("default")
   local position = (positions[math.random(#positions)])
   local m = sol.movement.create("target")
   m:set_smooth(true)
@@ -104,5 +103,4 @@ function thief:on_interaction()
     end
     return true
   end)
-
 end

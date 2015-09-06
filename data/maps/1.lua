@@ -103,7 +103,7 @@ function map:on_started(destination)
   end
 
   -- Replace shop items if they're bought
-  if game:get_value("i1806") >= 1 and game:get_value("i2014") >= 10 then --bomb bag
+  if game:get_value("b1806") and game:get_value("i2014") >= 10 then --bomb bag
     self:create_shop_treasure({
 	name = "shop_potion",
 	layer = 0,

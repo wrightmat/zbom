@@ -55,14 +55,17 @@ function map:on_started(destination)
 end
 
 function npc_warun:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("warun.0")
 end
 
 function npc_moriss:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("moriss.0.show")
 end
 
 function npc_rowin:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("i1920") == 1 then
     game:start_dialog("rowin.1.show", function()
       game:set_value("i1920", game:get_value("i1920")+1)
@@ -95,6 +98,7 @@ function sign_ampitheater:on_interaction()
 end
 
 function ocarina_wind_to_F14:on_interaction()
+  game:set_dialog_style("default")
   -- if this point not previously discovered
   -- then add it, otherwise do nothing
   if not game:get_value("b1503") then

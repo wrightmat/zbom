@@ -50,6 +50,7 @@ function map:on_draw(dst_surface)
 end
 
 function npc_anouki_3:on_interaction()
+  game:set_dialog_style("default")
   if not game:get_value("b1117") then
     -- If at least Mausoleum not completed, suggest going there instead
     game:start_dialog("anouki_3.0.snowpeak", function()

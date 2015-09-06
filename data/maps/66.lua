@@ -17,6 +17,7 @@ function map:on_started(destination)
   random_walk(npc_goron_2)
   random_walk(npc_goron_3)
   random_walk(npc_goron_4)
+  game:set_dialog_style("default")
 
   if game:get_value("i1029") == 5 then
     -- set position to hero and then follow
@@ -37,6 +38,7 @@ function map:on_started(destination)
 end
 
 function ocarina_wind_to_B8:on_interaction()
+  game:set_dialog_style("default")
   -- if this point not previously discovered
   -- then add it, otherwise do nothing
   if not game:get_value("b1505") then

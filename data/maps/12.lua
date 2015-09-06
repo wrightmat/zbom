@@ -107,6 +107,7 @@ function map:on_draw(dst_surface)
 end
 
 function npc_tristan:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("i1068") >= 9 then
     game:start_dialog("tristan.3.castle_town")
   elseif game:get_value("i1068") >= 3 then

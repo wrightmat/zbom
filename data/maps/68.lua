@@ -61,5 +61,6 @@ function map:on_draw(dst_surface)
 end
 
 function npc_dampeh:on_interaction()
+  game:set_dialog_style("default")
   game:start_dialog("dampeh.2.mausoleum")
 end

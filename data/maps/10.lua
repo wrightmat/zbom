@@ -162,6 +162,7 @@ function map:on_started(destination)
 end
 
 function npc_rudy:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("i1027") >= 3 then
     if not game:has_item("shield") then
       game:start_dialog("rudy.0.festival_reward", function()
@@ -184,24 +185,28 @@ function npc_rudy:on_interaction()
 end
 
 function npc_quint:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("i1907") >= 1 then
     if game:get_value("i1028") > 1 then game:start_dialog("quint.1.ordon") end
   end
 end
 
 function npc_francis:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("i1908") >= 1 then
     if game:get_value("i1028") > 1 then game:start_dialog("francis.1.ordon") end
   end
 end
 
 function npc_jarred:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("i1909") >= 1 then
     if game:get_value("i1028") > 1 then game:start_dialog("jarred.1.ordon", function() game:add_money(10) end) end
   end
 end
 
 function npc_bilo:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("i1905") >= 1 and game:get_value("i1027") >= 4 then
     game:start_dialog("bilo.1")
   else
@@ -210,6 +215,7 @@ function npc_bilo:on_interaction()
 end
 
 function npc_ulo:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("i1904") >= 1 then
     if game:has_item("lamp") then
       game:start_dialog("ulo.1.festival")
