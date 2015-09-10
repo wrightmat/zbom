@@ -18,10 +18,10 @@ local probabilities = {
   [{ "magic_flask", 2}] = 8,    -- Big magic jar.
   [{ "heart", 1}]       = 100,  -- Heart.
   [{ "fairy", 1}]       = 2,    -- Fairy.
-  [{ "alchemy", 1}]     = 1.5,    -- Alchemy Stone (rare drop item).
-  [{ "plume", 1 }]      = 1,  -- Goddess Plume (exceptionally rare drop item).
+  [{ "alchemy", 1}]     = 1.5,  -- Alchemy Stone (rare drop item).
+  [{ "plume", 1 }]      = 1,    -- Goddess Plume (exceptionally rare drop item).
   [{ "stick", 1 }]      = 4,    -- Deku stick (only in wooded areas).
-  [{ "jade", 1 }]       = 5,    -- Mystic jade (fairly rare drop item, only in wooded areas).
+  [{ "jade", 1 }]       = 6,    -- Mystic jade (fairly rare drop item, only in wooded areas).
 }
 
 function item:on_pickable_created(pickable)

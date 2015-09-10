@@ -214,6 +214,8 @@ function npc_garroth_sensor:on_interaction()
       game:start_dialog("garroth."..game:get_value("i1918")..".pub", function()
         game:set_value("i1918", game:get_value("i1918")+1)
       end)
+    else
+      game:start_dialog("garroth.0.pub")
     end
   else
     if game:get_value("i1830") >= 75 then
@@ -267,6 +269,7 @@ function npc_turt_sensor:on_interaction()
 end
 
 function sensor_bottle:on_activated()
+  game:set_dialog_style("default")
   game:start_dialog("strap.0.bottle")
 end
 

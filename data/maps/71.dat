@@ -2508,17 +2508,6 @@ npc{
   sprite = "npc/hylian_thief",
 }
 
-custom_entity{
-  name = "mailbox_1",
-  layer = 0,
-  x = 184,
-  y = 893,
-  height = 24,
-  direction = 0,
-  sprite = "entities/mailbox",
-  model = "mailbox",
-}
-
 enemy{
   name = "cucco_1",
   layer = 0,
@@ -2535,6 +2524,16 @@ enemy{
   y = 605,
   direction = 0,
   breed = "cucco",
+}
+
+npc{
+  name = "mailbox_3",
+  layer = 0,
+  x = 184,
+  y = 893,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/mailbox",
 }
 
 tile{

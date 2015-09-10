@@ -52,6 +52,7 @@ function entity:on_created()
 end
 
 function entity:on_interaction()
+  game:set_dialog_style("default")
   if game:get_map():get_id() == "28" then
     -- Faron Woods access to sewer, to get sword
     if game:get_value("i1901") >= 1 then

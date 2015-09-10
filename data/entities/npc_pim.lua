@@ -39,6 +39,7 @@ function entity:on_created()
 end
 
 function entity:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("i1024") <= 80 and not warned then
     game:start_dialog("pim.0.stamina")
     warned = true

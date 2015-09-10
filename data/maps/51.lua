@@ -89,11 +89,9 @@ function sign_ampitheater:on_interaction()
   if game:get_time_of_day() == "night" then
     game:set_dialog_style("wood")
     game:start_dialog("sign.ampitheater.2")
-    game:set_dialog_style("default")
   else
     game:set_dialog_style("wood")
     game:start_dialog("sign.ampitheater")
-    game:set_dialog_style("default")
   end
 end
 

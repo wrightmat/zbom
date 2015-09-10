@@ -2327,7 +2327,7 @@ dialog{
   skip = "current",
   text = [[
 You traded the  $r Deku Mask$w for
-a $rMoon Tear$w!$0
+a $rMoon Tear$w !$0
 
 It's weird that the guy wanted
 the mask so badly, but who cares
@@ -3642,7 +3642,7 @@ You're a little stumped, huh?
 Don't know where to go next?
 Well I'll tell you an interesting
 story - I once heard that there was
-treasure BENEATH $b Lake Hylia$w!$0
+treasure BENEATH   $bLake Hylia$w!$0
 Can you imagine that? Treasure under
 a lake? Sounds like something you
 would love to check out, right?
@@ -3943,7 +3943,7 @@ dialog{
   id = "etnaya.0",
   skip = "current",
   text = [[
-Welcome to the $b Kakariko $wGallery
+Welcome to the  $b Kakariko $wGallery
 and Ampitheater!
 This city has long been seen as the
 cultural hub of all Hyrule, and this
@@ -4352,12 +4352,11 @@ dialog{
   id = "garroth.0.pub",
   skip = "current",
   text = [[
-Why hello young patron!
-Welcome to my little pub, the
-Alchemist's Alehouse.$0
+Why hello young patron! Welcome to my
+little pub, the Alchemist's Alehouse.$0
 Why did I name it that, you ask?
-Well...$0 I'd rather not discuss
-that with someone I just met.
+Well...$0 I'd rather not discuss that with
+someone I just met.
 Either way, enjoy yourself!
 ]]
 }
@@ -4376,16 +4375,14 @@ dialog{
   id = "garroth.2.pub",
   skip = "current",
   text = [[
-What's that?$0 Still pondering the
-name of my little pub? Persistant
-little guy, huh?$0
-Fine...$0 Truth is that I heard about
-these gems called 'Alchemy Stones'
-which are supposed to be hidden all
-over this area. I set up shop so I
-could hunt for them and rake in the
-dough! Now I've got this place and
-no stones to my name. A shame, but
+What's that?$0 Still pondering the name of
+my little pub? Persistant little guy, huh?$0
+Fine...$0 Truth is that I heard about these
+gems called 'Alchemy Stones' which are
+supposed to be hidden all over this area.
+I set up shop so I could hunt for them and
+rake in the dough! Now I've got this place
+and no stones to my name. A shame, but
 life could be worse!
 ]]
 }
@@ -4394,13 +4391,12 @@ dialog{
   id = "garroth.3.pub",
   skip = "current",
   text = [[
-Alright, since you've been so
-friendly, I'll let you in on a little
-secret. I didn't start collecting
-Alchemy Stones for the money... I
-started collecting them for their
-power! Alchemy is the ultimate trans-
-formation... anything into pure gold!
+Alright, since you've been so friendly,
+I'll let you in on a little secret.
+I didn't start collecting Alchemy Stones
+for the money... I started collecting them
+for their power! Alchemy is the ultimate
+transformation... anything into pure gold!
 Okay, I guess I kinda did do it for
 the money then...
 ]]
@@ -4410,14 +4406,13 @@ dialog{
   id = "garroth.4.pub",
   skip = "current",
   text = [[
-You know, not everyone knows that
-alchemy isn't solely for transforming
-stuff into gold... It's more than
-the power of transformation, it's
-control over what makes up our world.
-This could be money (if that's your
-thing), or it could be something even
-grander - an elixer of life!$0
+You know, not everyone knows that alchemy
+isn't solely for transforming stuff into
+gold... It's more than the power of
+transformation, it's control over what
+makes up our world. This could be money
+(if that's your thing), or it could be
+something even grander - an elixer of life!$0
 Living young forever, imagine it!
 ]]
 }
@@ -4427,10 +4422,9 @@ dialog{
   skip = "current",
   text = [[
 Of course, I'm still just in the
-dabbling stages. If you learn
-anything useful, or find any of those
-Alchemy Stones, but sure to let me
-know, friend!
+dabbling stages. If you learn anything
+useful, or find any of those Alchemy
+Stones, but sure to let me know, friend!
 ]]
 }
 
@@ -4438,11 +4432,10 @@ dialog{
   id = "garroth.6.alchemy",
   skip = "current",
   text = [[
-Wow, you have $v Alchemy Stones
-already? That's more than I've
-collected in my whole time here!
-In honor of your achievement, I'd
-like to give you something!
+Wow, you have $v Alchemy Stones already?
+That's more than I've collected in my whole
+time here! In honor of your achievement,
+I'd like to give you something!
 ]]
 }
 
@@ -4450,11 +4443,10 @@ dialog{
   id = "garroth.7.alchemy",
   skip = "current",
   text = [[
-Wow, you have $v Alchemy Stones
-already? That's more than I could
-imagine collecting in my lifetime!
-In honor of your achievement, I'd
-like to give you something!
+Wow, you have $v Alchemy Stones already?
+That's more than I could imagine collecting
+in my lifetime! In honor of the achievement,
+I'd like to give you something!
 ]]
 }
 
@@ -4463,10 +4455,9 @@ dialog{
   skip = "current",
   text = [[
 Wow, you have $v Alchemy Stones?
-That's more than I thought were in
-the whole world! In honor of your
-achievement, I'd like to give you
-something!
+That's more than I thought were in the
+whole world! In honor of your achievement,
+I'd like to give you something!
 ]]
 }
 
@@ -5435,8 +5426,8 @@ so centrally located! Sometimes I want
 to wander in the desert for a bit, and
 it's just over the bridge. Or the pretty
 mountains are up north, even with snowy
-ones way up there! Then the $g Zoras$w and
-$g Gorons$w are to the east and $b Castle Town$w
+ones way up there! Then the   $g Zoras$w and
+$g Gorons$w are to the east and  $b Castle Town$w
 is pretty close to the south!
 ]]
 }
@@ -5483,12 +5474,10 @@ dialog{
   text = [[
 Sewers underneath Hyrule?
 That's cool! $0
-Wait, maybe that's what those
-stone grates I see all over the
-place connect to. When you see
-one of those, you should look
-around the area and see if you
-can find a way in!
+Wait, maybe that's what those stone grates
+I see all over the place connect to. When
+you see one of those, you should look
+and see if you can find a way in!
 ]]
 }
 
@@ -6691,7 +6680,7 @@ dialog{
   id = "moriss.0.pub",
   skip = "current",
   text = [[
-Hi there! My name's $g Moriss$w and I'm an
+Hi there! My name's  $g Moriss$w and I'm an
 actor with the local troupe. I normally
 spend time over at the ampitheater, but
 I like to slip in here sometimes and
@@ -6704,7 +6693,7 @@ dialog{
   id = "moriss.0.show",
   skip = "current",
   text = [[
-Hi there! My name's $g Moriss$w and I'm the
+Hi there! My name's  $g Moriss$w and I'm the
 co-star of this show. $g Rowin$w over there is
 the real star, you should go talk to him.
 ]]
@@ -6714,7 +6703,7 @@ dialog{
   id = "moriss.1.pub",
   skip = "current",
   text = [[
-Oh, so you've met my friend $g Rowin$w over
+Oh, so you've met my friend   $g Rowin$w over
 there, have you?$0 He's not really so
 bad once you get to know him, he's just
 a bit of a downer sometimes.
@@ -7083,21 +7072,21 @@ dialog{
   id = "pim.directions.40",
   skip = "current",
   text = [[
-Good, you found your way to  $bCastle
+Good, you found your way to    $bCastle
 Town$w! This is almost in the center of
 Hyrule. $b Kakariko$w, $bDeath Mountain$w
 and $bSnowpeak$w are to the north.
 $b Lon Lon Ranch$w is directly to the
-west, with $b Lake Hylia$w beyond that
-and the desert on the other side.$0
-The now abandoned $b Hidden Village$w is
+west, with $b Lake Hylia$w beyond that and
+the desert on the other side.$0
+The now abandoned  $b Hidden Village$w is
 directly to the east, through the trees.
 Then is $b Zora's Domain$w and the rest
-of $b Death Mountain$w including $b Goron
+of $bDeath Mountain$w including $bGoron
 City.$w$0 Oh! I almost forgot the coolest
 thing! You know about warp points?$0
 Well, somewhere in town is an instrument
-known as the $r Ocarina of Wind$w which
+known as the  $r Ocarina of Wind$w which
 will allow you to instantly transport to
 different places. In fact, the structure
 with the cardinal directions up there

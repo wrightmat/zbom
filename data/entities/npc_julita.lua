@@ -44,8 +44,8 @@ function entity:on_created()
 end
 
 function entity:on_interaction()
+  game:set_dialog_style("default")
   if game:get_map():get_id() == "10" then
-
     if game:get_value("i1027") >= 4 then
       if quest_julita ~= nil then quest_julita:remove() end
       game:start_dialog("julita.1", game:get_player_name(), function()
@@ -69,15 +69,12 @@ function entity:on_interaction()
     else
       game:start_dialog("julita.0")
     end
-
   else
-
     if game:get_value("i1029") >= 6 then
       game:start_dialog("julita.4.house")
     else
       game:start_dialog("julita.3.house")
     end
-
   end
 end
 

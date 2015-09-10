@@ -401,7 +401,7 @@ function dialog_box:add_character()
 
     elseif current_char == "b" then
       self:create_surface("blue")
-      self:set_color({102,102,255})
+      self:set_color({122,122,255})
 
     elseif current_char == "y" then
       self:create_surface("yellow")
@@ -413,7 +413,7 @@ function dialog_box:add_character()
 
     elseif current_char == "m" then
       self:create_surface("magenta")
-      self:set_color({255,0,255})
+      self:set_color({255,102,255})
 
     elseif current_char == "o" then
       self:create_surface("orange")
@@ -421,7 +421,7 @@ function dialog_box:add_character()
 
     elseif current_char == "p" then
       self:create_surface("purple")
-      self:set_color({181,0,181})
+      self:set_color({181,102,181})
 
     elseif current_char == "s" then
       self:create_surface("silver")

@@ -18,8 +18,8 @@ local probabilities = {
   [{ "magic_flask", 2}] = 8,    -- Big magic jar.
   [{ "heart", 1}]       = 100,  -- Heart.
   [{ "fairy", 1}]       = 2,    -- Fairy.
-  [{ "alchemy", 1}]     = 1.5,    -- Alchemy Stone (rare drop item).
-  [{ "plume", 1 }]      = 1,  -- Goddess Plume (exceptionally rare drop item).
+  [{ "alchemy", 1}]     = 1.5,  -- Alchemy Stone (rare drop item).
+  [{ "plume", 1 }]      = 1,    -- Goddess Plume (exceptionally rare drop item).
   [{ "amber", 1 }]      = 4,    -- Goron Amber (fairly rare drop item, only found in mountain areas).
 }
 
