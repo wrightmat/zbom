@@ -4494,7 +4494,7 @@ tile{
   layer = 0,
   x = 48,
   y = 0,
-  width = 144,
+  width = 96,
   height = 16,
   pattern = "628",
 }
@@ -4502,15 +4502,6 @@ tile{
 tile{
   layer = 0,
   x = 104,
-  y = 16,
-  width = 32,
-  height = 8,
-  pattern = "629",
-}
-
-tile{
-  layer = 0,
-  x = 152,
   y = 16,
   width = 32,
   height = 8,
@@ -4528,7 +4519,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 192,
+  x = 144,
   y = -8,
   width = 8,
   height = 16,
@@ -7012,9 +7003,9 @@ teletransporter{
 teletransporter{
   name = "to_F9_2",
   layer = 0,
-  x = 192,
+  x = 152,
   y = -16,
-  width = 112,
+  width = 160,
   height = 16,
   transition = "scrolling",
   destination_map = "40",

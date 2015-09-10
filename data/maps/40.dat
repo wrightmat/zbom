@@ -3538,7 +3538,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 192,
+  x = 144,
   y = 1112,
   width = 8,
   height = 16,
@@ -8175,7 +8175,7 @@ tile{
   layer = 0,
   x = 48,
   y = 1080,
-  width = 144,
+  width = 96,
   height = 40,
   pattern = "522",
 }
@@ -8738,6 +8738,24 @@ tile{
   pattern = "1956",
 }
 
+tile{
+  layer = 0,
+  x = 176,
+  y = 992,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 864,
+  width = 8,
+  height = 8,
+  pattern = "40",
+}
+
 dynamic_tile{
   name = "night_entrance_6",
   layer = 0,
@@ -8927,9 +8945,9 @@ teletransporter{
 teletransporter{
   name = "to_F10_2",
   layer = 0,
-  x = 192,
+  x = 152,
   y = 1120,
-  width = 128,
+  width = 160,
   height = 16,
   transition = "scrolling",
   destination_map = "35",
@@ -9543,22 +9561,21 @@ wall{
   stops_projectiles = true,
 }
 
-custom_entity{
-  name = "mailbox_office",
-  layer = 0,
-  x = 424,
-  y = 653,
-  height = 24,
-  direction = 0,
-  sprite = "entities/mailbox",
-  model = "mailbox",
-}
-
 npc{
   name = "mailbox",
   layer = 0,
   x = 976,
   y = 269,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/mailbox",
+}
+
+npc{
+  name = "mailbox_office",
+  layer = 0,
+  x = 432,
+  y = 653,
   direction = 3,
   subtype = 0,
   sprite = "entities/mailbox",
@@ -10416,14 +10433,14 @@ tile{
   layer = 2,
   x = 48,
   y = 1064,
-  width = 144,
+  width = 96,
   height = 16,
   pattern = "521",
 }
 
 tile{
   layer = 2,
-  x = 192,
+  x = 144,
   y = 1072,
   width = 8,
   height = 40,
