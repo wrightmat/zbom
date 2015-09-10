@@ -140,7 +140,6 @@ arrow:add_collision_test("overlapping", function(arrow, entity)
          sprite:get_animation_set() == "entities/switch_eye_right" or
          sprite:get_animation_set() == "entities/switch_eye_up" or
          sprite:get_animation_set() == "entities/switch_eye_invisible") then
-print("switch")
       if not switch:is_activated() then
         sol.audio.play_sound("switch")
         switch:set_activated(true)

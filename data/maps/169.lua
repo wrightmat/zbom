@@ -528,6 +528,7 @@ function treasure_dest:on_activated()
 end
 
 function npc_moblin:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("b2026") then
     game:start_dialog("moblin.0.trading", function(answer)
       if answer == 1 then
@@ -549,6 +550,7 @@ function npc_moblin:on_interaction()
 end
 
 function sensor_exit:on_activated()
+  game:set_dialog_style("default")
   if game:get_hero():get_direction() == 1 then
     game:start_dialog("exit.cave_ordeals")
   end

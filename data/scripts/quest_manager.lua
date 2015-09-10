@@ -98,7 +98,6 @@ local function initialize_npcs()
     if name:match("^sign") then
       game:set_dialog_style("wood")
       game:start_dialog(name)
-print("wood style: "..name)
     elseif name:match("^mailbox") then
       game:set_dialog_style("wood")
       if self:get_name() == "mailbox_link" then
@@ -108,14 +107,11 @@ print("wood style: "..name)
       else
         game:start_dialog("mailbox")
       end
-print("wood style: "..name)
     elseif name:match("^hint_stone") then
       game:set_dialog_style("stone")
       game:start_dialog(name)
-print("stone style: "..name)
     else
       game:set_dialog_style("default")
-print("default style: "..name)
     end
   end
 

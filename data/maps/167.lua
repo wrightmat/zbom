@@ -20,7 +20,7 @@ function map:on_started(destination)
 end
 
 function sensor_fairy_speak:on_activated()
-
+  game:set_dialog_style("default")
   if game:get_value("i1607") == 1 then
     game:start_dialog("great_fairy.1")
   elseif game:get_value("i1607") == 2 then
@@ -28,9 +28,7 @@ function sensor_fairy_speak:on_activated()
   elseif game:get_value("i1607") == 3 then
     game:start_dialog("great_fairy.3")
   elseif game:get_value("i1607") == 4 then
-
     game:start_dialog("great_fairy.4")
-
   elseif game:get_value("i1607") == 5 then
     game:start_dialog("great_fairy.5.subrosia", function()
       game:set_value("i1607", 6)
@@ -44,5 +42,4 @@ function sensor_fairy_speak:on_activated()
     end)
   end
   sensor_fairy_speak:set_enabled(false)
-
 end
