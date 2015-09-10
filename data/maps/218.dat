@@ -6042,9 +6042,9 @@ tile{
 sensor{
   name = "sensor_boss",
   layer = 0,
-  x = 872,
+  x = 864,
   y = 1349,
-  width = 32,
+  width = 48,
   height = 16,
 }
 
@@ -6968,10 +6968,10 @@ dynamic_tile{
 sensor{
   name = "sensor_miniboss",
   layer = 0,
-  x = 752,
-  y = 1245,
+  x = 760,
+  y = 1237,
   width = 16,
-  height = 32,
+  height = 48,
 }
 
 chest{
@@ -6999,36 +6999,36 @@ pickable{
 sensor{
   name = "dungeon_room_1_",
   layer = 0,
-  x = 184,
+  x = 176,
   y = 1341,
-  width = 32,
+  width = 48,
   height = 16,
 }
 
 sensor{
   name = "dungeon_room_2_",
   layer = 0,
-  x = 184,
+  x = 176,
   y = 1069,
-  width = 32,
+  width = 48,
   height = 16,
 }
 
 sensor{
   name = "dungeon_room_3_",
   layer = 0,
-  x = 184,
+  x = 176,
   y = 797,
-  width = 32,
+  width = 48,
   height = 16,
 }
 
 sensor{
   name = "dungeon_room_4_",
   layer = 0,
-  x = 184,
+  x = 176,
   y = 525,
-  width = 32,
+  width = 48,
   height = 16,
 }
 
@@ -7036,17 +7036,17 @@ sensor{
   name = "dungeon_room_5_",
   layer = 0,
   x = 408,
-  y = 429,
+  y = 421,
   width = 16,
-  height = 32,
+  height = 48,
 }
 
 sensor{
   name = "dungeon_room_6_",
   layer = 0,
-  x = 520,
+  x = 512,
   y = 253,
-  width = 32,
+  width = 48,
   height = 16,
 }
 
@@ -7054,17 +7054,17 @@ sensor{
   name = "dungeon_room_7_",
   layer = 0,
   x = 744,
-  y = 429,
+  y = 421,
   width = 16,
-  height = 32,
+  height = 48,
 }
 
 sensor{
   name = "dungeon_room_8_",
   layer = 0,
-  x = 856,
+  x = 848,
   y = 621,
-  width = 32,
+  width = 48,
   height = 16,
 }
 
@@ -7072,36 +7072,36 @@ sensor{
   name = "dungeon_room_9_",
   layer = 0,
   x = 648,
-  y = 701,
+  y = 693,
   width = 16,
-  height = 32,
+  height = 48,
 }
 
 sensor{
   name = "dungeon_room_10_",
   layer = 0,
-  x = 520,
+  x = 512,
   y = 893,
-  width = 32,
+  width = 48,
   height = 16,
 }
 
 sensor{
   name = "dungeon_room_11_",
   layer = 0,
-  x = 520,
+  x = 512,
   y = 1165,
-  width = 32,
+  width = 48,
   height = 16,
 }
 
 sensor{
   name = "dungeon_room_12_",
   layer = 0,
-  x = 768,
-  y = 1245,
+  x = 776,
+  y = 1237,
   width = 16,
-  height = 32,
+  height = 48,
 }
 
 wall{
@@ -7323,6 +7323,18 @@ sensor{
   y = 1029,
   width = 64,
   height = 16,
+}
+
+wall{
+  layer = 0,
+  x = 760,
+  y = 1232,
+  width = 8,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{

@@ -3838,9 +3838,9 @@ sensor{
   name = "dungeon_room_1_",
   layer = 0,
   x = 72,
-  y = 589,
+  y = 581,
   width = 16,
-  height = 32,
+  height = 48,
 }
 
 wall{
@@ -3985,9 +3985,9 @@ destructible{
 sensor{
   name = "sensor_boss",
   layer = 0,
-  x = 216,
+  x = 224,
   y = 373,
-  width = 64,
+  width = 48,
   height = 16,
 }
 
@@ -4325,18 +4325,18 @@ teletransporter{
 sensor{
   name = "dungeon_room_2_",
   layer = 0,
-  x = 232,
+  x = 224,
   y = 357,
-  width = 32,
+  width = 48,
   height = 16,
 }
 
 sensor{
   name = "dungeon_room_3_",
   layer = 0,
-  x = 664,
+  x = 656,
   y = 453,
-  width = 32,
+  width = 48,
   height = 16,
 }
 
