@@ -187,21 +187,39 @@ end
 function npc_quint:on_interaction()
   game:set_dialog_style("default")
   if game:get_value("i1907") >= 1 then
-    if game:get_value("i1028") > 1 then game:start_dialog("quint.1.ordon") end
+    if game:get_value("i1027") >= 6 then
+      repeat -- make sure the same quote is not picked again
+        index = math.random(3)
+      until index ~= last_message
+      game:start_dialog("quint.2.hint_"..index)
+      last_message = index
+    elseif game:get_value("i1028") > 1 then game:start_dialog("quint.1.ordon") end
   end
 end
 
 function npc_francis:on_interaction()
   game:set_dialog_style("default")
   if game:get_value("i1908") >= 1 then
-    if game:get_value("i1028") > 1 then game:start_dialog("francis.1.ordon") end
+    if game:get_value("i1027") >= 6 then
+      repeat -- make sure the same quote is not picked again
+        index = math.random(3)
+      until index ~= last_message
+      game:start_dialog("francis.2.hint_"..index)
+      last_message = index
+    elseif game:get_value("i1028") > 1 then game:start_dialog("francis.1.ordon") end
   end
 end
 
 function npc_jarred:on_interaction()
   game:set_dialog_style("default")
   if game:get_value("i1909") >= 1 then
-    if game:get_value("i1028") > 1 then game:start_dialog("jarred.1.ordon", function() game:add_money(10) end) end
+    if game:get_value("i1027") >= 6 then
+      repeat -- make sure the same quote is not picked again
+        index = math.random(3)
+      until index ~= last_message
+      game:start_dialog("jarred.2.hint_"..index)
+      last_message = index
+    elseif game:get_value("i1028") > 1 then game:start_dialog("jarred.1.ordon", function() game:add_money(10) end) end
   end
 end
 
