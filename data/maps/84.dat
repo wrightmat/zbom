@@ -7100,18 +7100,18 @@ enemy{
 
 wall{
   layer = 0,
-  x = 656,
-  y = 608,
+  x = 720,
+  y = 568,
   width = 16,
-  height = 56,
+  height = 184,
   stops_enemies = true,
 }
 
 enemy{
   name = "lizalfos_2",
   layer = 0,
-  x = 736,
-  y = 701,
+  x = 752,
+  y = 709,
   direction = 0,
   breed = "lizalfos",
   treasure_name = "random",
@@ -7125,6 +7125,15 @@ enemy{
   direction = 0,
   breed = "lizalfos",
   treasure_name = "random",
+}
+
+wall{
+  layer = 0,
+  x = 656,
+  y = 552,
+  width = 80,
+  height = 16,
+  stops_enemies = true,
 }
 
 tile{

@@ -6199,14 +6199,13 @@ teletransporter{
 }
 
 npc{
-  name = "sign_library",
+  name = "sign.ancient_library",
   layer = 0,
   x = 360,
   y = 613,
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
-  behavior = "dialog#sign.ancient_library",
 }
 
 teletransporter{

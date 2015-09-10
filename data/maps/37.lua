@@ -20,6 +20,7 @@ function trading()
 end
 
 function npc_deku_1:on_interaction()
+  game:set_dialog_style("default")
   if game:get_value("b2022") then
     trading()
   else
@@ -35,6 +36,7 @@ function npc_deku_2:on_interaction()
 end
 
 function ocarina_wind_to_C13:on_interaction()
+  game:set_dialog_style("default")
   -- if this point not previously discovered
   -- then add it, otherwise do nothing
   if not game:get_value("b1506") then

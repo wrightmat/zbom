@@ -1,15 +1,4 @@
 animation{
-  name = "stopped",
-  src_image = "enemies/zirna.png",
-  directions = {
-    { x = 0, y = 0, frame_width = 24, frame_height = 40, origin_x = 12, origin_y = 37 },
-    { x = 0, y = 40, frame_width = 24, frame_height = 40, origin_x = 12, origin_y = 37 },
-    { x = 48, y = 0, frame_width = 24, frame_height = 40, origin_x = 12, origin_y = 37 },
-    { x = 0, y = 80, frame_width = 24, frame_height = 40, origin_x = 12, origin_y = 37 },
-  },
-}
-
-animation{
   name = "walking",
   src_image = "enemies/zirna.png",
   frame_delay = 200,
@@ -21,7 +10,6 @@ animation{
     { x = 0, y = 80, frame_width = 24, frame_height = 40, origin_x = 12, origin_y = 37, num_frames = 3 },
   },
 }
-
 animation{
   name = "pose1",
   src_image = "npc/zirna.png",
@@ -32,7 +20,6 @@ animation{
     { x = 72, y = 40, frame_width = 24, frame_height = 40, origin_x = 12, origin_y = 37 },
   },
 }
-
 animation{
   name = "pose2",
   src_image = "npc/zirna.png",
@@ -41,5 +28,15 @@ animation{
     { x = 72, y = 80, frame_width = 24, frame_height = 40, origin_x = 12, origin_y = 37 },
     { x = 72, y = 80, frame_width = 24, frame_height = 40, origin_x = 12, origin_y = 37 },
     { x = 72, y = 80, frame_width = 24, frame_height = 40, origin_x = 12, origin_y = 37 },
+  },
+}
+animation{
+  name = "stopped",
+  src_image = "enemies/zirna.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 24, frame_height = 40, origin_x = 12, origin_y = 37 },
+    { x = 0, y = 40, frame_width = 24, frame_height = 40, origin_x = 12, origin_y = 37 },
+    { x = 48, y = 0, frame_width = 24, frame_height = 40, origin_x = 12, origin_y = 37 },
+    { x = 0, y = 80, frame_width = 24, frame_height = 40, origin_x = 12, origin_y = 37 },
   },
 }
