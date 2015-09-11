@@ -1,12 +1,8 @@
 local submenu = require("scripts/menus/pause_submenu")
 local map_submenu = submenu:new()
 
-local outside_world_size = { width = 8000, height = 13452 } --Hyrule
-local outside_world_minimap_size = { width = 225, height = 388 }
-local outside_world_2_size = { width = 2240, height = 3360 } --Subrosia
-local outside_world_2_minimap_size = { width = 225, height = 300 }
-local outside_world_3_size = { width = 16800, height = 6720 } --North
-local outside_world_3_minimap_size = { width = 659, height = 255 }
+local outside_world_size = {}
+local outside_world_minimap_size = {}
 local map_shown = false
 
 function map_submenu:on_started()
@@ -33,28 +29,47 @@ function map_submenu:on_started()
       hero_absolute_y = hero_absolute_y + hero_map_y
     end
 
-    local hero_minimap_x = math.floor(hero_absolute_x * outside_world_minimap_size.width / outside_world_size.width) - 35
-    local hero_minimap_y = math.floor(hero_absolute_y * outside_world_minimap_size.height / outside_world_size.height) - 110
-    self.hero_x = hero_minimap_x + 40
-    self.hero_y = hero_minimap_y + 53
-
     self.world_minimap_movement = nil
     self.world_minimap_visible_xy = {x = 0, y = 0}
     if self.game:get_item("world_map"):get_variant() > 0 and self.game:get_map():get_world() == "outside_world" then
-      -- if in South Hyrule with World Map, then show the map
+      -- If in South Hyrule with World Map, then show the map.
       map_shown = true
+      self.outside_world_size = { width = 8000, height = 13452 }
+      self.outside_world_minimap_size = { width = 225, height = 388 }
       self.world_minimap_img = sol.surface.create("menus/outside_world_map.png")
-      self.world_minimap_visible_xy.y = math.min(outside_world_minimap_size.height - 133, math.max(0, hero_minimap_y - 65))
+
+      local hero_minimap_x = math.floor(hero_absolute_x * self.outside_world_minimap_size.width / self.outside_world_size.width) - 35
+      local hero_minimap_y = math.floor(hero_absolute_y * self.outside_world_minimap_size.height / self.outside_world_size.height) - 110
+      self.hero_x = hero_minimap_x + 40
+      self.hero_y = hero_minimap_y + 53
+
+      self.world_minimap_visible_xy.y = math.min(self.outside_world_minimap_size.height - 133, math.max(0, hero_minimap_y - 65))
     elseif self.game:get_item("world_map"):get_variant() > 1 and self.game:get_map():get_world() == "outside_subrosia" then
-      -- if in Subrosia with upgraded World Map, then show the map
+      -- If in Subrosia with upgraded World Map, then show the map.
       map_shown = true
+      self.outside_world_size = { width = 2240, height = 3360 }
+      self.outside_world_minimap_size = { width = 225, height = 300 }
       self.world_minimap_img = sol.surface.create("menus/outside_world_map_2.png")
-      self.world_minimap_visible_xy.y = math.min(outside_world_minimap_size.height - 133, math.max(0, hero_minimap_y - 65))
+
+      local hero_minimap_x = math.floor(hero_absolute_x * self.outside_world_minimap_size.width / self.outside_world_size.width) - 35
+      local hero_minimap_y = math.floor(hero_absolute_y * self.outside_world_minimap_size.height / self.outside_world_size.height) - 110
+      self.hero_x = hero_minimap_x + 40
+      self.hero_y = hero_minimap_y + 53
+
+      self.world_minimap_visible_xy.y = math.min(self.outside_world_minimap_size.height - 133, math.max(0, hero_minimap_y - 65))
     elseif self.game:get_item("world_map"):get_variant() > 2 and self.game:get_map():get_world() == "outside_north" then
-      -- if in North Hyrule with upgraded World Map, then show the map
+      -- If in North Hyrule with upgraded World Map, then show the map.
       map_shown = true
+      self.outside_world_size = { width = 16800, height = 6720 }
+      self.outside_world_minimap_size = { width = 225, height = 133 }
       self.world_minimap_img = sol.surface.create("menus/outside_world_map_3.png")
-      self.world_minimap_visible_xy.y = math.min(outside_world_minimap_size.height - 133, math.max(0, hero_minimap_y - 65))
+
+      local hero_minimap_x = math.floor(hero_absolute_x * self.outside_world_minimap_size.width / self.outside_world_size.width) - 35
+      local hero_minimap_y = math.floor(hero_absolute_y * self.outside_world_minimap_size.height / self.outside_world_size.height) - 110
+      self.hero_x = hero_minimap_x + 40
+      self.hero_y = hero_minimap_y + 53
+
+      self.world_minimap_visible_xy.y = math.min(self.outside_world_minimap_size.height - 133, math.max(0, hero_minimap_y - 65))
     else
       -- if World Map not in inventory, show clouds in map screen
       map_shown = false
@@ -134,7 +149,7 @@ function map_submenu:on_command_pressed(command)
       if map_shown then
 
         if (command == "up" and self.world_minimap_visible_xy.y > 0) or
-            (command == "down" and self.world_minimap_visible_xy.y < outside_world_minimap_size.height - 134) then
+            (command == "down" and self.world_minimap_visible_xy.y < self.outside_world_minimap_size.height - 134) then
 
             local angle
             if command == "up" then
@@ -160,7 +175,7 @@ function map_submenu:on_command_pressed(command)
             end
 
             if (command == "up" and submenu.world_minimap_visible_xy.y <= 0) or
-                (command == "down" and submenu.world_minimap_visible_xy.y >= outside_world_minimap_size.height - 134) then
+                (command == "down" and submenu.world_minimap_visible_xy.y >= submenu.outside_world_minimap_size.height - 134) then
               self:stop()
               submenu.world_minimap_movement = nil
             end
@@ -231,7 +246,7 @@ function map_submenu:draw_world_map(dst_surface)
       self.up_arrow_sprite:draw(dst_surface, 211, 55)
     end
 
-    if self.world_minimap_visible_xy.y < outside_world_minimap_size.height - 134 then
+    if self.world_minimap_visible_xy.y < self.outside_world_minimap_size.height - 134 then
       self.down_arrow_sprite:draw(dst_surface, 96, 188)
       self.down_arrow_sprite:draw(dst_surface, 211, 188)
     end

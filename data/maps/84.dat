@@ -6832,7 +6832,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 352,
+  x = 360,
   y = 728,
   width = 32,
   height = 8,
@@ -6841,7 +6841,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 344,
+  x = 352,
   y = 712,
   width = 48,
   height = 16,
@@ -6850,7 +6850,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 344,
+  x = 352,
   y = 688,
   width = 48,
   height = 24,
@@ -6859,7 +6859,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 392,
+  x = 400,
   y = 704,
   width = 8,
   height = 16,
@@ -6868,11 +6868,20 @@ tile{
 
 tile{
   layer = 0,
-  x = 336,
+  x = 344,
   y = 704,
   width = 8,
   height = 16,
   pattern = "1498",
+}
+
+tile{
+  layer = 0,
+  x = 784,
+  y = 464,
+  width = 32,
+  height = 16,
+  pattern = "910",
 }
 
 sensor{
@@ -6936,66 +6945,6 @@ sensor{
   y = 133,
   width = 16,
   height = 48,
-}
-
-destructible{
-  layer = 0,
-  x = 128,
-  y = 605,
-  sprite = "entities/grass",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 144,
-  y = 605,
-  sprite = "entities/grass",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 384,
-  y = 493,
-  sprite = "entities/grass",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 400,
-  y = 493,
-  sprite = "entities/grass",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 736,
-  y = 269,
-  sprite = "entities/grass",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 752,
-  y = 269,
-  sprite = "entities/grass",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
 }
 
 npc{
@@ -7134,6 +7083,102 @@ wall{
   width = 80,
   height = 16,
   stops_enemies = true,
+}
+
+destructible{
+  layer = 0,
+  x = 128,
+  y = 605,
+  treasure_name = "random_woods",
+  sprite = "entities/grass",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 144,
+  y = 605,
+  treasure_name = "random_woods",
+  sprite = "entities/grass",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 384,
+  y = 493,
+  treasure_name = "random_woods",
+  sprite = "entities/grass",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 400,
+  y = 493,
+  treasure_name = "random_woods",
+  sprite = "entities/grass",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 736,
+  y = 269,
+  treasure_name = "random_woods",
+  sprite = "entities/grass",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 752,
+  y = 269,
+  treasure_name = "random_woods",
+  sprite = "entities/grass",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 792,
+  y = 477,
+  treasure_name = "random_woods",
+  sprite = "entities/grass",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 808,
+  y = 477,
+  treasure_name = "random_woods",
+  sprite = "entities/grass",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  ground = "grass",
 }
 
 tile{
@@ -7786,7 +7831,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 344,
+  x = 352,
   y = 656,
   width = 48,
   height = 32,
@@ -7795,7 +7840,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 392,
+  x = 400,
   y = 680,
   width = 8,
   height = 24,
@@ -7804,7 +7849,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 336,
+  x = 344,
   y = 680,
   width = 8,
   height = 24,
