@@ -23,6 +23,13 @@ local function initialize_destructibles()
       game:start_dialog("_cannot_lift_still_too_heavy");
     end
   end
+
+  -- Make certain entities automatic hooks for the hookshot.
+  function destructible_meta:is_hookshot_hook()
+    if self:get_destruction_sound() ~= nil then
+      if self:get_destruction_sound() == "stone" then return true end
+    else return false end
+  end
 end
 
 -- Initialize sensor behavior specific to this quest.
@@ -89,6 +96,7 @@ end
 -- Initialize NPC behavior specific to this quest.
 local function initialize_npcs()
   local npc_meta = sol.main.get_metatable("npc")
+  local chest_meta = sol.main.get_metatable("chest")
 
   -- Give default dialog styles to certain entities.
   function npc_meta:on_interaction()
@@ -118,16 +126,14 @@ local function initialize_npcs()
   -- Make certain entities automatic hooks for the hookshot.
   function npc_meta:is_hookshot_hook()
     if self:get_sprite() ~= nil then
-      if self:get_sprite():get_animation_set() == "entities/sign" then return true
-      elseif self:get_sprite():get_animation_set() == "entities/mailbox" then return true
-      elseif self:get_sprite():get_animation_set() == "entities/pot" then return true
-      elseif self:get_sprite():get_animation_set() == "entities/block" then return true
-      elseif self:get_sprite():get_animation_set() == "entities/chest" then return true
-      elseif self:get_sprite():get_animation_set() == "entities/chest_big" then return true
-      elseif self:get_sprite():get_animation_set() == "entities/torch" then return true
-      elseif self:get_sprite():get_animation_set() == "entities/torch_wood" then return true
-      else return false end
+      if self:get_sprite():get_animation_set() == "entities/sign" then return true end
+      if self:get_sprite():get_animation_set() == "entities/mailbox" then return true end
+      if self:get_sprite():get_animation_set() == "entities/torch" then return true end
+      if self:get_sprite():get_animation_set() == "entities/torch_wood" then return true end
     else return false end
+  end
+  function chest_meta:is_hookshot_hook()
+    return true
   end
 end
 

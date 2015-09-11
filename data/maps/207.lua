@@ -171,3 +171,16 @@ function chest_book:on_empty()
   local book_variant = game:get_item("book_mudora"):get_variant() + 1
   map:get_hero():start_treasure("book_mudora", book_variant)
 end
+
+function sensor_reset_ground_1:on_activated()
+  hero:reset_solid_ground()
+end
+function sensor_reset_ground_2:on_activated()
+  hero:reset_solid_ground()
+end
+function sensor_reset_ground_3:on_activated()
+  hero:reset_solid_ground()
+end
+function sensor_reset_ground_4:on_activated()
+  hero:reset_solid_ground()
+end

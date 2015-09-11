@@ -155,8 +155,8 @@ dialog{
   icon = "29",
   skip = "current",
   text = [[
-Master Ore is rare and useful for things
-like sword smithing.
+Master Ore is rare and useful for
+things like sword smithing.
 ]]
 }
 
@@ -5959,10 +5959,10 @@ dialog{
   id = "juba.1.office",
   skip = "current",
   text = [[
-With the disappearance of  $g Zelda $w, the
+With the disappearance of    $gZelda$w, the
 council has disbanded. But some of us
 actually care about our work, so we've
-set up here in the  $b Council office$w.
+set up here in the   $bCouncil office$w.
 ]]
 }
 
@@ -6899,7 +6899,7 @@ dialog{
 $v! $0. $0. $0.
 The waters have been cleansed, but now
 Hyrule's soul of cold requires your help.
-$bSnowpeak$w and the  $g Anouki people$w lie on the
+$bSnowpeak$w  and the $g Anouki people$w lie on the
 far end of the world, in the north-west
 edge. They may be able to lead you to
 your next prize.$0
@@ -7722,7 +7722,7 @@ dialog{
   skip = "current",
   text = [[
 That's... that's...$0
-$rMaster Ore$w !!!$0
+$rMaster Ore$w  !!!$0
 I don't know how you found that, but
 boy are you lucky! With that, I'll be
 able to make your sword more powerful
@@ -7780,7 +7780,7 @@ can, please come see me!
 
 dialog{
   id = "shop.bomb_1",
-  icon = "2",
+  icon = "1",
   skip = "current",
   text = [[
 A single bomb.
@@ -7789,7 +7789,7 @@ A single bomb.
 
 dialog{
   id = "shop.bomb_2",
-  icon = "2",
+  icon = "1",
   skip = "current",
   text = [[
 A pack of three bombs.
@@ -7798,7 +7798,7 @@ A pack of three bombs.
 
 dialog{
   id = "shop.bomb_3",
-  icon = "2",
+  icon = "1",
   skip = "current",
   text = [[
 A bunch of eight bombs.
@@ -7807,6 +7807,7 @@ A bunch of eight bombs.
 
 dialog{
   id = "shop.bomb_bag_1",
+  icon = "50",
   skip = "current",
   text = [[
 A small bomb bag that can
@@ -7816,6 +7817,7 @@ hold 10 bombs.
 
 dialog{
   id = "shop.bomb_bag_2",
+  icon = "51",
   skip = "current",
   text = [[
 A bomb bag that can
@@ -7824,7 +7826,18 @@ hold 20 bombs.
 }
 
 dialog{
+  id = "shop.bottle",
+  icon = "7",
+  skip = "current",
+  text = [[
+A very rare glass bottle in
+which to hold various things.
+]]
+}
+
+dialog{
   id = "shop.heart",
+  icon = "77",
   skip = "current",
   text = [[
 A single heart to restore some
@@ -7834,10 +7847,12 @@ of your life.
 
 dialog{
   id = "shop.hyrule_shield",
+  icon = "59",
   skip = "current",
   text = [[
-A durable shield made of nearly
-impenetrable Hylian metal.
+A durable shield made of
+nearly impenetrable
+Hylian metal.
 ]]
 }
 
@@ -7853,56 +7868,66 @@ them in! Maybe try to find a bottle?
 
 dialog{
   id = "shop.ordon_shield",
+  icon = "58",
   skip = "current",
   text = [[
-A sturdy shield passed down among
-the Ordon Village residents.
+A sturdy shield passed down
+among the Ordon Village
+residents.
 ]]
 }
 
 dialog{
   id = "shop.poe_soul",
+  icon = "75",
   skip = "current",
   text = [[
-Some say poe souls have useful
-knowledge...
+Some say poe souls have
+useful knowledge...
 ]]
 }
 
 dialog{
   id = "shop.potion_blue",
+  icon = "11",
   skip = "current",
   text = [[
-A tasty potion made from deku sticks
-which restores both life and magic!
+A tasty potion made from deku
+sticks which restores both
+life and magic!
 ]]
 }
 
 dialog{
   id = "shop.potion_green",
+  icon = "10",
   skip = "current",
   text = [[
-A delicious potion from local herbs.
-It'll make you feel more magical!
+A delicious potion from local
+herbs. It'll make you feel
+more magical!
 ]]
 }
 
 dialog{
   id = "shop.potion_red",
+  icon = "9",
   skip = "current",
   text = [[
-A tasty potion from local herbs.
-It'll perk you right up!
+A tasty potion from local
+herbs. It'll perk you
+right up!
 ]]
 }
 
 dialog{
   id = "shop.potion_revitalizing",
+  icon = "12",
   skip = "current",
   text = [[
-A delicious potion made from deku sticks
-that will restore your life, magic, and
-stamina!
+A delicious potion made from
+deku sticks that will restore
+your life, magic, and stamina!
 ]]
 }
 
@@ -7938,6 +7963,7 @@ swimming.
 
 dialog{
   id = "shop.wallet",
+  icon = "49",
   skip = "current",
   text = [[
 A huge wallet which can hold
@@ -7947,9 +7973,11 @@ almost uncountable rupees!
 
 dialog{
   id = "shop.world_map",
+  icon = "46",
   skip = "current",
   text = [[
-A map of the Subrosian underworld.
+A map of the Subrosian
+underworld.
 ]]
 }
 
@@ -8546,6 +8574,26 @@ Everyone's a critic...
 }
 
 dialog{
+  id = "subrosian_1.0.house",
+  text = [[
+If you've ever wanted to lift those
+REALLY heavy dark stones, be sure to
+visit the Great Fairy in our land.
+]]
+}
+
+dialog{
+  id = "subrosian_2.0.house",
+  text = [[
+There is more than one access to our
+underground home. The one you likely found
+first is in your area of Hyrule, but
+there's also a portal in (or to) the
+northern reaches of the land.
+]]
+}
+
+dialog{
   id = "subrosian_blue.0.subrosia",
   skip = "current",
   text = [[
@@ -8741,7 +8789,7 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-You'd like one of these $r shiny stones$w
+You'd like one of these  $r shiny stones$w
 I found? Okay, I'll trade you for
 some rupees.
 Trade?
@@ -8755,7 +8803,7 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-You'd like one of these $r neat feathers$w
+You'd like one of these  $r neat feathers$w
 I found? Okay, I'll trade you for
 some rupees.
 Trade?
@@ -8769,7 +8817,7 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-You'd like one of these $r cool things$w
+You'd like one of these  $r cool things$w
 I found? Okay, I'll trade you for 
 some rupees.
 Trade?
@@ -8783,9 +8831,9 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-You'd like one of these $rshiny
-crystals$w I found? Okay, I'll trade
-you for some rupees.
+You'd like one of these  $rshiny crystals$w
+I found? Okay, I'll trade you for
+some rupees.
 Trade?
 Yes
 No
@@ -8797,9 +8845,9 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-You'd like one of these $r pretty
-rocks$w I found? Okay, I'll trade
-you for some rupees.
+You'd like one of these  $r pretty rocks$w
+I found? Okay, I'll trade you for
+some rupees.
 Trade?
 Yes
 No

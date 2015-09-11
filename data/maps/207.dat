@@ -17730,6 +17730,24 @@ tile{
   pattern = "646",
 }
 
+tile{
+  layer = 0,
+  x = 1472,
+  y = 1024,
+  width = 16,
+  height = 16,
+  pattern = "53",
+}
+
+tile{
+  layer = 0,
+  x = 1496,
+  y = 1040,
+  width = 16,
+  height = 16,
+  pattern = "53",
+}
+
 chest{
   name = "chest_key_3",
   layer = 0,
@@ -19415,14 +19433,6 @@ destructible{
 }
 
 enemy{
-  layer = 0,
-  x = 1480,
-  y = 1037,
-  direction = 3,
-  breed = "flame_blue",
-}
-
-enemy{
   name = "bubble_blue",
   layer = 0,
   x = 1336,
@@ -19534,14 +19544,6 @@ destructible{
   treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
-}
-
-enemy{
-  layer = 0,
-  x = 1488,
-  y = 1053,
-  direction = 3,
-  breed = "flame_blue",
 }
 
 destructible{
@@ -19706,42 +19708,6 @@ destructible{
   destruction_sound = "stone",
 }
 
-wall{
-  layer = 0,
-  x = 1480,
-  y = 1056,
-  width = 16,
-  height = 16,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 1464,
-  y = 1040,
-  width = 16,
-  height = 16,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 1488,
-  y = 1024,
-  width = 16,
-  height = 16,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 1496,
-  y = 1040,
-  width = 16,
-  height = 16,
-  stops_enemies = true,
-}
-
 enemy{
   name = "leever_room12_1",
   layer = 0,
@@ -19782,7 +19748,7 @@ sensor{
 }
 
 sensor{
-  name = "dungeon_room_12_",
+  name = "dungeon_room_12_b1124",
   layer = 0,
   x = 1000,
   y = 1269,
@@ -19872,7 +19838,7 @@ sensor{
 }
 
 sensor{
-  name = "dungeon_room_17b_b1125",
+  name = "dungeon_room_17b_",
   layer = 0,
   x = 1008,
   y = 325,
@@ -19881,7 +19847,7 @@ sensor{
 }
 
 sensor{
-  name = "dungeon_room_18_",
+  name = "dungeon_room_18b_",
   layer = 0,
   x = 1024,
   y = 325,
@@ -20083,6 +20049,51 @@ custom_entity{
   model = "hook",
 }
 
+sensor{
+  name = "sensor_reset_ground_1",
+  layer = 0,
+  x = 1808,
+  y = 1237,
+  width = 48,
+  height = 16,
+}
+
+sensor{
+  name = "sensor_reset_ground_2",
+  layer = 0,
+  x = 1808,
+  y = 1301,
+  width = 48,
+  height = 16,
+}
+
+sensor{
+  name = "sensor_reset_ground_3",
+  layer = 0,
+  x = 1808,
+  y = 1389,
+  width = 48,
+  height = 16,
+}
+
+sensor{
+  name = "sensor_reset_ground_4",
+  layer = 0,
+  x = 1808,
+  y = 1453,
+  width = 48,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_18a_b1125",
+  layer = 0,
+  x = 1120,
+  y = 429,
+  width = 48,
+  height = 16,
+}
+
 tile{
   layer = 1,
   x = 1904,
@@ -20252,6 +20263,24 @@ tile{
   width = 16,
   height = 16,
   pattern = "52",
+}
+
+tile{
+  layer = 1,
+  x = 1472,
+  y = 1008,
+  width = 16,
+  height = 16,
+  pattern = "54",
+}
+
+tile{
+  layer = 1,
+  x = 1496,
+  y = 1024,
+  width = 16,
+  height = 16,
+  pattern = "54",
 }
 
 dynamic_tile{

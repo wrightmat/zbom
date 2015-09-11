@@ -9916,6 +9916,51 @@ enemy{
   treasure_name = "random",
 }
 
+sensor{
+  name = "sensor_reset_ground_1",
+  layer = 0,
+  x = 312,
+  y = 229,
+  width = 16,
+  height = 48,
+}
+
+sensor{
+  name = "sensor_reset_ground_2",
+  layer = 0,
+  x = 376,
+  y = 229,
+  width = 16,
+  height = 48,
+}
+
+sensor{
+  name = "sensor_reset_ground_3",
+  layer = 0,
+  x = 336,
+  y = 277,
+  width = 48,
+  height = 16,
+}
+
+sensor{
+  name = "sensor_reset_ground_4",
+  layer = 0,
+  x = 1440,
+  y = 445,
+  width = 80,
+  height = 16,
+}
+
+sensor{
+  name = "sensor_reset_ground_5",
+  layer = 0,
+  x = 1440,
+  y = 509,
+  width = 80,
+  height = 16,
+}
+
 tile{
   layer = 1,
   x = 416,

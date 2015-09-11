@@ -13,9 +13,9 @@ local item_names = {
   "pumpkin_counter",
   "hookshot",
   "cane",
+  "feather",
   "shovel",
   "hammer",
-  "feather",
   "bottle_2",
 
   "stick_counter",

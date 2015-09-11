@@ -2242,6 +2242,19 @@ dynamic_tile{
   enabled_at_start = false,
 }
 
+wall{
+  name = "custom_obstacle",
+  layer = 0,
+  x = 192,
+  y = 120,
+  width = 32,
+  height = 24,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
 teletransporter{
   name = "to_outside_blacksmith",
   layer = 0,
@@ -2299,19 +2312,6 @@ destructible{
   sprite = "entities/pot",
   destruction_sound = "stone",
   damage_on_enemies = 2,
-}
-
-wall{
-  name = "custom_obstacle",
-  layer = 0,
-  x = 192,
-  y = 120,
-  width = 32,
-  height = 16,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
 }
 
 npc{

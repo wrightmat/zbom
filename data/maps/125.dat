@@ -1057,11 +1057,11 @@ wall{
 }
 
 npc{
-  name = "tent_4",
+  name = "tent_8",
   layer = 0,
   x = 760,
-  y = 925,
-  direction = -1,
+  y = 981,
+  direction = 3,
   subtype = 0,
   sprite = "entities/tent_small",
 }
@@ -1077,6 +1077,16 @@ wall{
   stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
+}
+
+npc{
+  name = "tent_5",
+  layer = 0,
+  x = 152,
+  y = 293,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/tent_small",
 }
 
 wall{
@@ -1180,16 +1190,6 @@ teletransporter{
   destination = "_side",
 }
 
-npc{
-  name = "tent_2",
-  layer = 0,
-  x = 624,
-  y = 213,
-  direction = -1,
-  subtype = 0,
-  sprite = "entities/tent_bazaar",
-}
-
 wall{
   layer = 0,
   x = 408,
@@ -1256,16 +1256,6 @@ wall{
 }
 
 npc{
-  name = "tent_3",
-  layer = 0,
-  x = 256,
-  y = 629,
-  direction = -1,
-  subtype = 0,
-  sprite = "entities/tent_bazaar",
-}
-
-npc{
   name = "goron_1",
   layer = 0,
   x = 384,
@@ -1285,16 +1275,6 @@ npc{
   subtype = 1,
   sprite = "npc/goron",
   behavior = "dialog#shopkeep.goron_market",
-}
-
-npc{
-  name = "tent",
-  layer = 0,
-  x = 152,
-  y = 237,
-  direction = -1,
-  subtype = 0,
-  sprite = "entities/tent_small",
 }
 
 npc{
@@ -1392,114 +1372,106 @@ wall{
 }
 
 shop_treasure{
+  name = "market_apple",
   layer = 0,
   x = 768,
   y = 984,
   treasure_name = "apple",
   price = 10,
-  dialog = "",
+  dialog = "_item_description.apple.1",
 }
 
 shop_treasure{
+  name = "market_amber",
   layer = 0,
   x = 800,
   y = 984,
   treasure_name = "amber",
   price = 100,
-  dialog = "",
+  dialog = "_item_description.amber_counter.1",
 }
 
 shop_treasure{
+  name = "market_bombs",
   layer = 0,
   x = 160,
-  y = 288,
+  y = 296,
   treasure_name = "bomb",
   treasure_variant = 3,
   price = 40,
-  dialog = "",
+  dialog = "shop.bomb_3",
 }
 
 shop_treasure{
+  name = "market_pumpkin",
   layer = 0,
   x = 192,
-  y = 288,
+  y = 296,
   treasure_name = "pumpkin",
-  price = 60,
-  dialog = "",
+  price = 80,
+  dialog = "shop.pumpkin",
 }
 
 shop_treasure{
+  name = "market_alchemy",
   layer = 0,
-  x = 320,
-  y = 784,
+  x = 328,
+  y = 792,
   treasure_name = "alchemy",
   price = 100,
-  dialog = "",
+  dialog = "_item_description.alchemy_counter.1",
 }
 
 shop_treasure{
+  name = "market_hammer",
   layer = 0,
-  x = 352,
-  y = 784,
-  treasure_name = "crystal",
-  price = 100,
-  dialog = "",
-}
-
-shop_treasure{
-  layer = 0,
-  x = 384,
-  y = 784,
+  x = 368,
+  y = 792,
   treasure_name = "hammer",
   treasure_savegame_variable = "b1839",
   price = 999,
-  dialog = "",
+  dialog = "_item_description.hammer.1",
 }
 
 shop_treasure{
+  name = "market_jade",
   layer = 0,
-  x = 416,
-  y = 784,
+  x = 408,
+  y = 792,
   treasure_name = "jade",
   price = 100,
-  dialog = "",
+  dialog = "_item_description.jade_counter.1",
 }
 
 shop_treasure{
+  name = "market_plume",
   layer = 0,
-  x = 688,
-  y = 368,
+  x = 696,
+  y = 376,
   treasure_name = "plume",
   price = 100,
-  dialog = "",
+  dialog = "_item_description.plume_counter.1",
 }
 
 shop_treasure{
+  name = "market_stick",
   layer = 0,
-  x = 720,
-  y = 368,
+  x = 776,
+  y = 376,
   treasure_name = "stick",
   price = 100,
-  dialog = "",
+  dialog = "_item_description.stick_counter.1",
 }
 
 shop_treasure{
+  name = "market_bottle",
   layer = 0,
-  x = 752,
-  y = 368,
+  x = 736,
+  y = 376,
   treasure_name = "bottle_4",
   treasure_savegame_variable = "b1813",
   price = 800,
-  dialog = "",
-}
-
-shop_treasure{
-  layer = 0,
-  x = 784,
-  y = 368,
-  treasure_name = "ore",
-  price = 150,
-  dialog = "",
+  dialog = "shop.bottle",
 }
 
 wall{
@@ -1596,6 +1568,66 @@ teletransporter{
   transition = "scrolling",
   destination_map = "130",
   destination = "_side",
+}
+
+npc{
+  name = "tent_6",
+  layer = 0,
+  x = 256,
+  y = 701,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/tent_bazaar",
+}
+
+npc{
+  name = "tent_7",
+  layer = 0,
+  x = 624,
+  y = 285,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/tent_bazaar",
+}
+
+npc{
+  name = "tent",
+  layer = 1,
+  x = 152,
+  y = 237,
+  direction = -1,
+  subtype = 0,
+  sprite = "entities/tent_small",
+}
+
+npc{
+  name = "tent_3",
+  layer = 1,
+  x = 256,
+  y = 629,
+  direction = -1,
+  subtype = 0,
+  sprite = "entities/tent_bazaar",
+}
+
+npc{
+  name = "tent_2",
+  layer = 1,
+  x = 624,
+  y = 213,
+  direction = -1,
+  subtype = 0,
+  sprite = "entities/tent_bazaar",
+}
+
+npc{
+  name = "tent_4",
+  layer = 1,
+  x = 760,
+  y = 925,
+  direction = -1,
+  subtype = 0,
+  sprite = "entities/tent_small",
 }
 
 tile{

@@ -2366,6 +2366,33 @@ tile{
   pattern = "2072",
 }
 
+tile{
+  layer = 0,
+  x = 760,
+  y = 536,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 496,
+  width = 16,
+  height = 16,
+  pattern = "1694",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 496,
+  width = 16,
+  height = 16,
+  pattern = "1694",
+}
+
 teletransporter{
   name = "to_C4",
   layer = 0,
@@ -2531,6 +2558,17 @@ teletransporter{
   height = 16,
   destination_map = "3",
   destination = "from_subrosia_3",
+}
+
+destructible{
+  layer = 0,
+  x = 768,
+  y = 549,
+  treasure_name = "random_subrosia",
+  sprite = "entities/stone_small_black",
+  destruction_sound = "stone",
+  weight = 2,
+  damage_on_enemies = 2,
 }
 
 tile{
@@ -2837,5 +2875,14 @@ tile{
   width = 64,
   height = 16,
   pattern = "2023",
+}
+
+tile{
+  layer = 2,
+  x = 280,
+  y = 336,
+  width = 96,
+  height = 24,
+  pattern = "2072",
 }
 

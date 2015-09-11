@@ -122,3 +122,19 @@ function npc_zora:on_interaction()
     game:start_dialog("zora.0.lakebed")
   end
 end
+
+function sensor_reset_ground_1:on_activated()
+  hero:reset_solid_ground()
+end
+function sensor_reset_ground_2:on_activated()
+  hero:reset_solid_ground()
+end
+function sensor_reset_ground_3:on_activated()
+  hero:reset_solid_ground()
+end
+function sensor_reset_ground_4:on_activated()
+  hero:reset_solid_ground()
+end
+function sensor_reset_ground_5:on_activated()
+  hero:reset_solid_ground()
+end

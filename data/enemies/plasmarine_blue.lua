@@ -29,7 +29,7 @@ function enemy:on_restarted()
 end
 
 function enemy:on_collision_enemy(other_enemy, other_sprite, my_sprite)
-  if other_enemy:get_breed() == "plasmarine_ball" then
+  if other_enemy:get_breed() == "projectiles/plasmarine_ball" then
     if other_sprite:get_direction() == 2 or other_sprite:get_direction() == 3 then
       sol.timer.start(self, 100, function()
 	self:hurt(1)

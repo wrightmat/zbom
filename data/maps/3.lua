@@ -128,3 +128,13 @@ function shop_poe_soul:on_interaction()
     end)
   end)
 end
+
+function npc_subrosian_1:on_interaction()
+  game:set_dialog_style("default")
+  game:start_dialog("subrosian_1.0.house")
+end
+
+function npc_subrosian_2:on_interaction()
+  game:set_dialog_style("default")
+  game:start_dialog("subrosian_2.0.house")
+end

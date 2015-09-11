@@ -2,6 +2,9 @@ animation{
   name = "tent",
   src_image = "entities/tents.png",
   directions = {
-    { x = 256, y = 96, frame_width = 80, frame_height = 88, origin_x = 0, origin_y = 0 },
+    { x = 256, y = 96, frame_width = 80, frame_height = 50, origin_x = 0, origin_y = 0 },
+    { x = 256, y = 96, frame_width = 80, frame_height = 50, origin_x = 0, origin_y = 0 },
+    { x = 256, y = 146, frame_width = 80, frame_height = 42, origin_x = 0, origin_y = 6 },
+    { x = 256, y = 146, frame_width = 80, frame_height = 42, origin_x = 0, origin_y = 6 },
   },
 }
