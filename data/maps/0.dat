@@ -13,15 +13,44 @@ tile{
   y = 0,
   width = 320,
   height = 240,
-  pattern = 480,
+  pattern = "677",
 }
 
 destination{
-  layer = 0,
-  x = 24,
-  y = 29,
   name = "start_position",
+  layer = 0,
+  x = 8,
+  y = 13,
   direction = 3,
   default = true,
+}
+
+npc{
+  name = "light_beam",
+  layer = 0,
+  x = 24,
+  y = -11,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/light_beam",
+}
+
+npc{
+  name = "dark_mirror",
+  layer = 0,
+  x = 152,
+  y = 61,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/dark_mirror",
+}
+
+enemy{
+  name = "belahim",
+  layer = 0,
+  x = 200,
+  y = 61,
+  direction = 0,
+  breed = "belahim",
 }
 

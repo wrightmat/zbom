@@ -1,0 +1,12 @@
+animation{
+  name = "normal",
+  src_image = "entities/dark_mirror.png",
+  frame_delay = 100,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 128, frame_height = 128, origin_x = 0, origin_y = 0 },
+    { x = 0, y = 0, frame_width = 128, frame_height = 128, origin_x = 0, origin_y = 0 },
+    { x = 0, y = 0, frame_width = 128, frame_height = 128, origin_x = 0, origin_y = 0 },
+    { x = 0, y = 0, frame_width = 128, frame_height = 128, origin_x = 0, origin_y = 0 },
+  },
+}

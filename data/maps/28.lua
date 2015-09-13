@@ -35,7 +35,7 @@ for enemy in map:get_entities("chuchu") do
       game:start_dialog("crista.1.woods_chuchu_after", game:get_player_name(), function()
         game:set_value("i1027", 5)
         local m = sol.movement.create("target")
-	m:set_ignore_obstacles(true)
+        m:set_ignore_obstacles(true)
         m:set_target(768, 1120)
         m:set_speed(32)
         npc_crista:get_sprite():set_animation("walking")

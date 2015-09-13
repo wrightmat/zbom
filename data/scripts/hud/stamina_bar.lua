@@ -84,16 +84,16 @@ function stamina_bar:rebuild_surface()
   -- Any condition icon that needs display
   if self.game:get_hero():is_condition_active('exhausted') then
 print("exhausted")
-    self.condition_icon_img:draw_region(96, 0, 24, 24, self.surface, -16, 0)
+    self.condition_icons_img:draw_region(96, 0, 24, 24, self.surface, -16, 0)
   elseif self.game:get_hero():is_condition_active('poison') then
 print("poison")
-    self.condition_icon_img:draw_region(24, 0, 24, 24, self.surface, -16, 0)
+    self.condition_icons_img:draw_region(24, 0, 24, 24, self.surface, -16, 0)
   elseif self.game:get_hero():is_condition_active('cursed') then
 print("cursed")
-    self.condition_icon_img:draw_region(0, 0, 24, 24, self.surface, -16, 0)
+    self.condition_icons_img:draw_region(0, 0, 24, 24, self.surface, -16, 0)
   elseif self.game:get_hero():is_condition_active('confusion') then
 print("confusion")
-    self.condition_icon_img:draw_region(48, 0, 24, 24, self.surface, -16, 0)
+    self.condition_icons_img:draw_region(48, 0, 24, 24, self.surface, -16, 0)
   end
 end
 

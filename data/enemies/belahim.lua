@@ -24,15 +24,17 @@ function enemy:on_created()
 end
 
 function enemy:on_restarted()
-  shadow = false
-  for _, t in ipairs(timers) do t:stop() end
-  local rand = math.random(3)
-  if rand == 1 then
-    self:go_shadow()
-  elseif rand == 2 then
-    self:go_beam()
-  else
-    self:go_hero()
+  if self:get_game():get_map():get_id() ~= "0" then -- Don't want Belahim to act during the intro.
+    shadow = false
+    for _, t in ipairs(timers) do t:stop() end
+    local rand = math.random(3)
+    if rand == 1 then
+      self:go_shadow()
+    elseif rand == 2 then
+      self:go_beam()
+    else
+      self:go_hero()
+    end
   end
 end
 
