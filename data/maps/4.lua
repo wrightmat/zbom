@@ -40,6 +40,7 @@ function map:on_started(destination)
       bottle:remove()
       sensor_bottle:remove()
       wall_bottle:remove()
+      npc_strap:remove() -- Strap is at the pub
     else
       bottle:remove() --bottle is missing at night, hence the quest
       sensor_bottle:remove()
@@ -54,6 +55,11 @@ function map:on_started(destination)
   else
     quest_bottle:remove() --quest only available at night
     npc_strap_pub:remove()
+    if game:get_value("b1812") then
+      bottle:remove()
+      sensor_bottle:remove()
+      wall_bottle:remove()
+    end
   end
 
   if destination ~= inn_bed then

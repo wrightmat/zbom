@@ -66,7 +66,7 @@ function enemy:on_attacking_hero(hero)
 
   -- Hero is poisoned.
   hero:set_invincible(true, 100)
-  hero:start_poison(1, 4000, 4)
+  if not hero:is_condition_active('poison') then hero:start_poison(1, 4000, 4) end
 
   -- If hero has magic, it is drained.
   if game:get_magic() > 0 then

@@ -42,6 +42,15 @@ local function initialize_sensors()
     local name = self:get_name()
     local dungeon = game:get_dungeon()
 
+    -- Sensors named "to_layer_X_sensor" move the hero on that layer.
+    if name:match("^layer_up_sensor") then
+      local x, y, layer = hero:get_position()
+      if layer < 2 then hero:set_position(x, y, layer + 1) end
+    elseif name:match("^layer_down_sensor") then
+      local x, y, layer = hero:get_position()
+      if layer > 0 then hero:set_position(x, y, layer - 1) end
+    end
+
     -- Sensors prefixed by "dungeon_room_N_" save exploration state of room "N" of current dungeon floor.
     -- Optional treasure savegame value appended to end will play signal chime if value is false and hero has compass in inventory. "dungeon_room_N_bxxx"
     local room = name:match("^dungeon_room_(%d+)")
@@ -112,6 +121,8 @@ local function initialize_npcs()
         game:start_dialog("mailbox.link")
       elseif self:get_name() == "mailbox_office" then
         game:start_dialog("mailbox.office")
+      elseif self:get_name() == "mailbox_relic_collector" then
+        game:start_dialog("mailbox.relic_collector")
       else
         game:start_dialog("mailbox")
       end

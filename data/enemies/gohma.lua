@@ -1,5 +1,7 @@
 local enemy = ...
 local map = enemy:get_map()
+local max_number_sons = 50
+local number_sons = 0
 
 -- Gohma: Boss who has to be shot in the eye with an arrow to be hurt.
 
@@ -16,31 +18,34 @@ function enemy:check_action()
   local action = math.random(10)
   if self:get_life() > 6 then
     -- first phase: if less than three hits then mostly just move around (slowly), and create tektites
-    if math.random(3) == 1 and map:get_entities_count(self:get_name().."_son") <= 5 then
+    if math.random(3) == 1 and map:get_entities_count(self:get_name().."_son") <= 5 and number_sons < max_number_sons then
      self:create_enemy{
       name = self:get_name().."_son",
       breed = "tektite_green"
      }
+     number_sons = number_sons + 1
     end
     if action >= 1 and action <= 7 then self:go(64) else self:blink() end
   elseif self:get_life() > 3 and self:get_life() <= 6 then
     -- second phase: if more than 3 but less than 6 hits then blink a lot more, and create tektites
-    if math.random(2) == 1 and map:get_entities_count(self:get_name().."_son") <= 10 then
+    if math.random(2) == 1 and map:get_entities_count(self:get_name().."_son") <= 8 and number_sons < max_number_sons then
      self:create_enemy{
       name = self:get_name().."_son",
       breed = "tektite_green",
       treasure_name = "heart"
      }
+     number_sons = number_sons + 1
     end
     if action >= 1 and action <= 7 then self:blink() else self:go(72) end
   elseif self:get_life() <= 3 then
     -- final phase: if more than 6 hits then move a lot faster, and create tektites!
-    if math.random(2) == 1 and map:get_entities_count(self:get_name().."_son") <= 10 then
+    if math.random(2) == 1 and map:get_entities_count(self:get_name().."_son") <= 8 and number_sons < max_number_sons then
      self:create_enemy{
       name = self:get_name().."_son",
       breed = "tektite_green",
       treasure_name = "random_woods"
      }
+     number_sons = number_sons + 1
     end
     if action >= 1 and action <= 6 then self:blink() else self:go(104) end
   end

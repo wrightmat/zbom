@@ -1,4 +1,5 @@
--- The stamina bar shown in the game screen.
+-- The stamina bar shown on the game screen.
+-- Also handles icons on the HUD when conditions are applied to the hero.
 
 local stamina_bar = {}
 
@@ -19,6 +20,8 @@ function stamina_bar:initialize(game)
   self.container_img = sol.surface.create("hud/magic_bar.png")
   self.stamina_displayed = game:get_stamina()
   self.max_stamina_displayed = 0
+
+  self.condition_icons_img = sol.surface.create("hud/condition_icon.png")
 
   self:check()
   self:rebuild_surface()
@@ -77,6 +80,21 @@ function stamina_bar:rebuild_surface()
 
   -- Current stamina (divided so it takes up less space).
   self.stamina_bar_img:draw_region(46, 32, 2 + self.stamina_displayed/12, 8, self.surface)
+
+  -- Any condition icon that needs display
+  if self.game:get_hero():is_condition_active('exhausted') then
+print("exhausted")
+    self.condition_icon_img:draw_region(96, 0, 24, 24, self.surface, -16, 0)
+  elseif self.game:get_hero():is_condition_active('poison') then
+print("poison")
+    self.condition_icon_img:draw_region(24, 0, 24, 24, self.surface, -16, 0)
+  elseif self.game:get_hero():is_condition_active('cursed') then
+print("cursed")
+    self.condition_icon_img:draw_region(0, 0, 24, 24, self.surface, -16, 0)
+  elseif self.game:get_hero():is_condition_active('confusion') then
+print("confusion")
+    self.condition_icon_img:draw_region(48, 0, 24, 24, self.surface, -16, 0)
+  end
 end
 
 function stamina_bar:set_dst_position(x, y)

@@ -5,7 +5,7 @@ properties{
   height = 1120,
   world = "outside_world",
   tileset = "3",
-  music = "death_mountain",
+  music = "same",
 }
 
 tile{
@@ -4417,7 +4417,7 @@ npc{
 chest{
   name = "chest_amber",
   layer = 0,
-  x = 640,
+  x = 632,
   y = 69,
   treasure_name = "amber",
   treasure_savegame_variable = "b1747",

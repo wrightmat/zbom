@@ -4,8 +4,8 @@ local inventory_submenu = submenu:new()
 local item_names = {
   "apple_counter",
   "lamp",
-  "bomb_counter",
   "bow",
+  "bomb_counter",
   "boomerang",
   "boots",
   "bottle_1",
@@ -251,6 +251,7 @@ function inventory_submenu:show_info_message()
 
   self.game:set_custom_command_effect("action", nil)
   self.game:set_custom_command_effect("attack", nil)
+  self.game:set_dialog_style("default")
   self.game:start_dialog("_item_description." .. item_name .. "." .. variant, function()
     self.game:set_custom_command_effect("action", "info")
     self.game:set_custom_command_effect("attack", "save")

@@ -7263,71 +7263,71 @@ tile{
 }
 
 teletransporter{
+  name = "to_F15",
   layer = 0,
   x = 1120,
   y = 816,
   width = 16,
   height = 48,
-  name = "to_F15",
   transition = "scrolling",
   destination_map = "10",
   destination = "_side",
 }
 
 jumper{
+  name = "jump_sensor",
   layer = 0,
   x = 680,
   y = 632,
   width = 64,
   height = 8,
-  name = "jump_sensor",
   direction = 6,
   jump_length = 72,
 }
 
 teletransporter{
+  name = "to_F15_2",
   layer = 0,
   x = 1120,
   y = 280,
   width = 16,
   height = 96,
-  name = "to_F15_2",
   transition = "scrolling",
   destination_map = "10",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_D15",
   layer = 0,
   x = -16,
   y = 720,
   width = 16,
   height = 240,
-  name = "to_D15",
   transition = "scrolling",
   destination_map = "20",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_D15_2",
   layer = 0,
   x = -16,
   y = 64,
   width = 16,
   height = 464,
-  name = "to_D15_2",
   transition = "scrolling",
   destination_map = "20",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_E14",
   layer = 0,
   x = 256,
   y = -16,
   width = 496,
   height = 16,
-  name = "to_E14",
   transition = "scrolling",
   destination_map = "15",
   destination = "_side",
@@ -8038,10 +8038,10 @@ destructible{
 }
 
 chest{
+  name = "chest_rupees",
   layer = 0,
   x = 128,
   y = 861,
-  name = "chest_rupees",
   treasure_name = "rupee",
   treasure_variant = 4,
   treasure_savegame_variable = "b1744",
@@ -8050,7 +8050,7 @@ chest{
 
 stream{
   layer = 0,
-  x = 224,
+  x = 232,
   y = 853,
   direction = 0,
   sprite = "entities/conveyor",
@@ -8060,7 +8060,7 @@ stream{
 
 stream{
   layer = 0,
-  x = 224,
+  x = 232,
   y = 869,
   direction = 0,
   sprite = "entities/conveyor",
@@ -8080,59 +8080,59 @@ destructible{
 }
 
 pickable{
+  name = "odd_mushroom",
   layer = 0,
   x = 312,
   y = 621,
-  name = "odd_mushroom",
   treasure_name = "trading",
   treasure_savegame_variable = "b2020",
 }
 
 enemy{
+  name = "chuchu_1",
   layer = 0,
   x = 968,
   y = 477,
-  name = "chuchu_1",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "chuchu_2",
   layer = 0,
   x = 600,
   y = 517,
-  name = "chuchu_2",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "chuchu_3",
   layer = 0,
   x = 72,
   y = 461,
-  name = "chuchu_3",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "chuchu_4",
   layer = 0,
   x = 344,
   y = 253,
-  name = "chuchu_4",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "chuchu_5",
   layer = 0,
   x = 504,
   y = 117,
-  name = "chuchu_5",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
@@ -8172,22 +8172,22 @@ destructible{
 }
 
 teletransporter{
+  name = "to_F15_3",
   layer = 0,
   x = 1120,
   y = 72,
   width = 16,
   height = 80,
-  name = "to_F15_3",
   transition = "scrolling",
   destination_map = "10",
   destination = "_side",
 }
 
 chest{
+  name = "chest_jade",
   layer = 0,
   x = 808,
   y = 101,
-  name = "chest_jade",
   treasure_name = "jade",
   treasure_savegame_variable = "b1780",
   sprite = "entities/chest",
@@ -8238,12 +8238,12 @@ destructible{
 }
 
 teletransporter{
+  name = "to_E14_2",
   layer = 0,
   x = 888,
   y = -16,
   width = 48,
   height = 16,
-  name = "to_E14_2",
   transition = "scrolling",
   destination_map = "15",
   destination = "_side",

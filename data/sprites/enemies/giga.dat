@@ -13,13 +13,13 @@ animation{
 animation{
   name = "hurt",
   src_image = "enemies/giga.png",
-  frame_delay = 100,
+  frame_delay = 50,
   frame_to_loop_on = 0,
   directions = {
-    { x = 96, y = 0, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 36 },
-    { x = 96, y = 40, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 36 },
-    { x = 96, y = 80, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 36 },
-    { x = 96, y = 120, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 36 },
+    { x = 128, y = 0, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 36, num_frames = 3 },
+    { x = 128, y = 40, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 36, num_frames = 3 },
+    { x = 128, y = 80, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 36, num_frames = 3 },
+    { x = 128, y = 120, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 36, num_frames = 3 },
   },
 }
 animation{

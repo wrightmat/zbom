@@ -18,7 +18,7 @@ function map:on_started(destination)
     game:set_starting_location("203", "from_outside")
   end
   -- hidden chests
-  if not game:get_value("b1066") then chest_jade:set_enabled(false) end
+  if not game:get_value("b1066") then chest_apple:set_enabled(false) end
   if not game:get_value("b1055") then chest_map:set_enabled(false) end
   -- open up miniboss shutter doors that will close later during battle
   map:set_doors_open("door_miniboss")
@@ -33,8 +33,7 @@ function map:on_started(destination)
 end
 
 function sensor_open_room18:on_activated()
-  -- open only if big key in inventory (helps prevent running around)
-  if game:get_value("b1053") then map:open_doors("room18_shutter") end
+  map:open_doors("room18_shutter")
 end
 function sensor_close_room18:on_activated()
   if map:get_entity("hero"):get_direction() == 2 and not room18_arrow:is_activated() then map:close_doors("room1_shutter") end
@@ -59,16 +58,6 @@ function sensor_miniboss_start:on_activated()
     map:close_doors("door_miniboss")
     sol.audio.play_music("miniboss")
   end
-end
-
-function sensor_out_torches_room:on_activated()
-  torches_puzzle_nb_enabled = 0
-  torches_puzzle_correct = false
-  torch_room6_1:get_sprite():set_animation("unlit")
-  torch_room6_2:get_sprite():set_animation("unlit")
-  torch_room6_3:get_sprite():set_animation("unlit")
-  torch_room6_4:get_sprite():set_animation("unlit")
-  torch_room6_5:get_sprite():set_animation("unlit")
 end
 
 function room18_arrow:on_activated()
@@ -145,7 +134,7 @@ end
 for enemy in map:get_entities("room2") do
   enemy.on_dead = function()
     if not map:has_entities("room2_rope") and not game:get_value("b1066") then
-      chest_jade:set_enabled(true)
+      chest_apple:set_enabled(true)
       sol.audio.play_sound("chest_appears")
     end
   end

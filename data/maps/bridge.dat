@@ -1,0 +1,348 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 320,
+  height = 240,
+  tileset = "2",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 80,
+  width = 192,
+  height = 16,
+  pattern = "grass.cliff.1",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 64,
+  width = 192,
+  height = 16,
+  pattern = "cliff.1",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 56,
+  width = 192,
+  height = 8,
+  pattern = "cliff.top.1",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 40,
+  width = 48,
+  height = 8,
+  pattern = "grass.cliff.top.border.1",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 48,
+  width = 48,
+  height = 8,
+  pattern = "cliff.top.border.1",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 144,
+  width = 192,
+  height = 8,
+  pattern = "grass.cliff.2",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 136,
+  width = 192,
+  height = 8,
+  pattern = "grass.shadow.4",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 152,
+  width = 192,
+  height = 8,
+  pattern = "cliff.2",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 160,
+  width = 192,
+  height = 8,
+  pattern = "cliff.top.2",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 168,
+  width = 48,
+  height = 8,
+  pattern = "cliff.top.border.2",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 176,
+  width = 48,
+  height = 8,
+  pattern = "grass.cliff.top.border.2",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 48,
+  width = 16,
+  height = 8,
+  pattern = "bridge_a",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 168,
+  width = 16,
+  height = 8,
+  pattern = "bridge_a.2",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "bridge_a.2b",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 40,
+  width = 16,
+  height = 8,
+  pattern = "bridge_a.1",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 32,
+  width = 16,
+  height = 8,
+  pattern = "bridge_a.1b",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 48,
+  width = 16,
+  height = 8,
+  pattern = "bridge_a",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 168,
+  width = 16,
+  height = 8,
+  pattern = "bridge_a.2",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "bridge_a.2b",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 40,
+  width = 16,
+  height = 8,
+  pattern = "bridge_a.1",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 32,
+  width = 16,
+  height = 8,
+  pattern = "bridge_a.1b",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 40,
+  width = 64,
+  height = 32,
+  pattern = "bridge_a.slab.4",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 168,
+  width = 48,
+  height = 8,
+  pattern = "cliff.top.border.2",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 176,
+  width = 48,
+  height = 8,
+  pattern = "grass.cliff.top.border.2",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 40,
+  width = 48,
+  height = 8,
+  pattern = "grass.cliff.top.border.1",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 48,
+  width = 48,
+  height = 8,
+  pattern = "cliff.top.border.1",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 152,
+  width = 64,
+  height = 32,
+  pattern = "bridge_a.slab.4",
+}
+
+destination{
+  layer = 0,
+  x = 152,
+  y = 213,
+  direction = 1,
+}
+
+sensor{
+  name = "layer_up_sensor",
+  layer = 0,
+  x = 128,
+  y = 173,
+  width = 64,
+  height = 16,
+}
+
+sensor{
+  name = "layer_up_sensor_2",
+  layer = 0,
+  x = 128,
+  y = 61,
+  width = 64,
+  height = 16,
+}
+
+tile{
+  layer = 1,
+  x = 120,
+  y = 72,
+  width = 64,
+  height = 80,
+  pattern = "bridge_a.slab.4",
+}
+
+tile{
+  layer = 1,
+  x = 184,
+  y = 48,
+  width = 16,
+  height = 120,
+  pattern = "bridge_a",
+}
+
+tile{
+  layer = 1,
+  x = 104,
+  y = 48,
+  width = 16,
+  height = 120,
+  pattern = "bridge_a",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 224,
+  width = 64,
+  height = 16,
+  pattern = "invisible_traversable",
+}
+
+tile{
+  layer = 1,
+  x = 120,
+  y = 152,
+  width = 64,
+  height = 32,
+  pattern = "invisible_traversable",
+}
+
+tile{
+  layer = 1,
+  x = 120,
+  y = 40,
+  width = 64,
+  height = 32,
+  pattern = "invisible_traversable",
+}
+
+sensor{
+  name = "layer_down_sensor",
+  layer = 1,
+  x = 128,
+  y = 181,
+  width = 64,
+  height = 16,
+}
+
+sensor{
+  name = "layer_down_sensor_2",
+  layer = 1,
+  x = 128,
+  y = 53,
+  width = 64,
+  height = 16,
+}
+

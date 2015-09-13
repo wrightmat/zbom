@@ -7,7 +7,7 @@ local game = map:get_game()
 
 local positions = {
   {x = 216, y = 824},
-  {x = 296, y = 704},
+  {x = 296, y = 720},
   {x = 520, y = 792},
   {x = 328, y = 576},
   {x = 656, y = 584},
@@ -44,11 +44,14 @@ function sensor_deku_tokay:on_activated()
   if game:get_value("i1068") < 1 and hero:get_direction() == 2 then --only walking left
     game:set_value("i1068", 1)
     sol.audio.play_sound("tokay")
+    game:set_dialog_position("top")
     game:start_dialog("tokay.0.faron", function()
       sol.audio.play_sound("deku")
+      game:set_dialog_position("bottom")
       game:start_dialog("deku.0.faron")
     end)
   elseif game:get_value("i1068") >= 2 and game:get_value("i1068") <= 4 and hero:get_direction() == 0 then --only walking right
+    game:set_dialog_position("top")
     game:start_dialog("tokay.0.desert")
   elseif game:get_value("i1068") == 7 then
     -- In the future there may be a mini-game to retrieve book piece, but for now just give it back

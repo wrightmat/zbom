@@ -27,8 +27,8 @@ function map:on_started(destination)
 	tile:set_enabled(false)
 	sol.audio.play_sound("door_open")
       elseif hero:get_direction() == 3 then
-	-- Special case on this map to play kakariko music when coming out of houses
-	-- so house music doesn't continue. Map doesn't specify music.
+	-- Special case on this map to play kakariko music when coming out of
+	-- house so house music doesn't continue. Map doesn't specify music.
 	sol.audio.play_music("town_kakariko")
       end
     end
@@ -38,6 +38,9 @@ function map:on_started(destination)
     for entity in map:get_entities("night_") do
       entity:set_enabled(true)
     end
+  end
+  if game:get_value("b1812") and game:get_time_of_day() == "night" then
+    shop_door:set_enabled(true)  -- Shop is closed at night after Strap's bottle is stolen.
   end
 end
 

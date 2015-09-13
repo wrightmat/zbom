@@ -5544,6 +5544,17 @@ npc{
   sprite = "entities/mailbox",
 }
 
+dynamic_tile{
+  name = "shop_door",
+  layer = 0,
+  x = 160,
+  y = 144,
+  pattern = "1120",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
 tile{
   layer = 1,
   x = 104,

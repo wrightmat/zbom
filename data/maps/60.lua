@@ -1,5 +1,6 @@
 local map = ...
 local game = map:get_game()
+local anouki_talk = 0
 
 -----------------------------------------------
 -- Outside World B6 (Snowpeak) - Snow drifts --
@@ -17,7 +18,9 @@ function map:on_started(destination)
 end
 
 function npc_anouki_1:on_interaction()
-  game:start_dialog("anouki_1.0.snowpeak")
+  game:set_dialog_style("default")
+  game:start_dialog("anouki_1."..anouki_talk..".snowpeak")
+  if anouki_talk == 0 then anouki_talk = 1 else anouki_talk = 0 end
 end
 
 function sensor_snow_drift_1:on_activated()

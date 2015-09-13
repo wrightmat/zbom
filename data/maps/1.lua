@@ -187,10 +187,10 @@ function npc_deacon:on_interaction()
     game:start_dialog("deacon.3.house", function()
       game:set_value("i1602", 4)
     end)
-  elseif game:get_value("i1602") == 6 and not game:get_value("b1117") then
+  elseif game:get_value("i1602") == 6 then
     game:start_dialog("deacon.5.faron", game:get_player_name())
   else
-    if game:get_value("i1913") >= 3 and game:get_value("b1117") then
+    if game:get_value("i1913") >= 3 and not game:get_value("b1134") then
       game:start_dialog("deacon.6.house", function()
 	game:set_value("i1030", 1)
       end)

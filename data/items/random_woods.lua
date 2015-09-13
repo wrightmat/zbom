@@ -18,6 +18,7 @@ local probabilities = {
   [{ "magic_flask", 2}] = 8,    -- Big magic jar.
   [{ "heart", 1}]       = 100,  -- Heart.
   [{ "fairy", 1}]       = 2,    -- Fairy.
+  [{ "apple", 1}]       = 2,    -- Apple.
   [{ "alchemy", 1}]     = 1.5,  -- Alchemy Stone (rare drop item).
   [{ "plume", 1 }]      = 1,    -- Goddess Plume (exceptionally rare drop item).
   [{ "stick", 1 }]      = 4,    -- Deku stick (only in wooded areas).

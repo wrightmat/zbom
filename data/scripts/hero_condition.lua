@@ -20,7 +20,8 @@ function condition_manager:initialize(game)
     poison = false,
     confusion = false,
     electrocution = false,
-    cursed = false
+    cursed = false,
+    exhausted = false
   }
 
   function hero:is_condition_active(condition)
@@ -38,13 +39,11 @@ function condition_manager:initialize(game)
       if (command == "item_1" and game:get_item_assigned(1) == nil) or (command == "item_2" and game:get_item_assigned(2) == nil) then return false end
       if game:get_max_stamina() > 0 then
         if game:get_stamina() == 0 then
-	if not game:get_value("stamina_gone") then -- when stamina out, show a dialog
-	  game:start_dialog("_stamina_gone", function()
-	    game:set_value("stamina_gone", true)
-	    return true
-	  end)
+	if not game:get_value("stamina_gone") then -- when stamina out, set exhaustion
+           hero:set_condition('exhausted', true)
+	  game:set_value("stamina_gone", true)
 	else
-	  if math.random(3) == 1 then  -- when stamina out, buttons don't always work
+	  if math.random(4) == 1 then  -- when stamina out, buttons don't always work
 	    sol.audio.play_sound("wrong")
 	    return true
 	  else
@@ -250,6 +249,7 @@ function condition_manager:initialize(game)
 
     hero:set_blinking(true, delay)
     hero:set_condition('poison', true)
+    game:start_dialog("_poisoned")
     do_poison()
   end
 

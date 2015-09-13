@@ -967,6 +967,15 @@ cave, hero...
 }
 
 dialog{
+  id = "_poisoned",
+  text = [[
+You've been poisoned!
+You'll slowly lose life for a period
+of time.
+]]
+}
+
+dialog{
   id = "_sewer_water",
   skip = "current",
   text = [[
@@ -1194,7 +1203,7 @@ put it in!
 
 dialog{
   id = "_treasure.bomb.1",
-  icon = "82",
+  icon = "1",
   skip = "current",
   text = [[
 You got a $r Bomb$w!$0
@@ -1205,7 +1214,7 @@ Ka$0 BOOM!
 
 dialog{
   id = "_treasure.bomb.2",
-  icon = "82",
+  icon = "1",
   skip = "current",
   text = [[
 You got a pack of $r Bombs$w!$0
@@ -1216,7 +1225,7 @@ Ka $0 BOOM!
 
 dialog{
   id = "_treasure.bomb.3",
-  icon = "82",
+  icon = "1",
   skip = "current",
   text = [[
 You got a pack of $r Bombs$w!$0
@@ -2466,6 +2475,16 @@ Us $g Anouki$w... We gotta reputation for
 having sensitive hearts and refined
 speech...$0 'Cause, ya know, that's
 what we're all about!
+]]
+}
+
+dialog{
+  id = "anouki_1.1.snowpeak",
+  text = [[
+Even with our laid back attitudes, it is
+a little scary here now that even our
+pets have turned mean. I don't know what's
+going on, but I hope it gets better.
 ]]
 }
 
@@ -3968,7 +3987,7 @@ dialog{
   skip = "current",
   text = [[
 Welcome one and all to this year's
-stage show at $b Kakariko Ampitheater$w!
+stage show at  $b Kakariko Ampitheater$w!
 I'm proud to introduce our star,
 the one and only Rowin!
 
@@ -5314,6 +5333,13 @@ to proceed.
 }
 
 dialog{
+  id = "hint_stone.grove.3",
+  text = [[
+Patterns to torches are the key.
+]]
+}
+
+dialog{
   id = "hint_stone.pyramid.1",
   skip = "current",
   text = [[
@@ -5434,17 +5460,15 @@ dialog{
   id = "hylian_1.0.kakariko",
   skip = "current",
   text = [[
-Did you know there are creatures
-called $g Great Fairies$w hiding
-throughout Hyrule? They have
-incredible magic and can even do
+Did you know there are creatures called
+$gGreat Fairies$w hiding throughout Hyrule?
+They have incredible magic and can even do
 things like increase your equipment!
-There should be one in the forest,
-one on the mountain, one on the
-frozen tundra, one near the lake,
-one in the depths of the earth, and
-one in the northern reaches of the
-land. It would do you good to find
+There should be one in the forest, one on
+the mountain, one on the frozen tundra,
+one near the lake, one in the depths of
+the earth, and one in the northern reaches
+of the land. It would do you good to find
 them all!
 ]]
 }
@@ -5486,6 +5510,9 @@ entirely different area of the world!
 Use these and your world map wisely and
 you'll have no problem getting around
 quickly!
+I have a relic collector friend in Hyrule
+Castle Town who knows even more about
+this stuff.
 ]]
 }
 
@@ -6594,6 +6621,14 @@ Mailbox is for official use only!
 }
 
 dialog{
+  id = "mailbox.relic_collector",
+  text = [[
+This is completely full - this guy hasn't
+been home for a while!
+]]
+}
+
+dialog{
   id = "marryn.0.ranch",
   text = [[
 Welcome to Lon Lon Ranch!$0
@@ -6759,8 +6794,8 @@ dialog{
   id = "moriss.0.show",
   skip = "current",
   text = [[
-Hi there! My name's  $g Moriss$w and I'm the
-co-star of this show. $g Rowin$w over there is
+Hi there! My name's   $g Moriss$w and I'm the
+co-star of this show.  $g Rowin$w over there is
 the real star, you should go talk to him.
 ]]
 }
@@ -7807,7 +7842,7 @@ A bunch of eight bombs.
 
 dialog{
   id = "shop.bomb_bag_1",
-  icon = "50",
+  icon = "54",
   skip = "current",
   text = [[
 A small bomb bag that can
@@ -7817,7 +7852,7 @@ hold 10 bombs.
 
 dialog{
   id = "shop.bomb_bag_2",
-  icon = "51",
+  icon = "55",
   skip = "current",
   text = [[
 A bomb bag that can
@@ -7915,7 +7950,7 @@ dialog{
   skip = "current",
   text = [[
 A tasty potion from local
-herbs. It'll perk you
+herbs. It'll fill your life
 right up!
 ]]
 }
@@ -8558,7 +8593,7 @@ prized possession was stolen from me!$0
 I ran after him for a while, but he
 ran into the graveyard and I was too
 afraid.$0 Will you please go after him
-and get my $r bottle$w back?
+and get my  $r bottle$w back?
 ]]
 }
 
@@ -9025,7 +9060,7 @@ dialog{
   id = "tristan.0.festival_shield",
   skip = "current",
   text = [[
-You better take care of that  $r   shield$w,
+You better take care of that    $r shield$w,
 too. It's a fine creation, $g  Rudy$w
 really outdid himself with the prizes
 for my little game here. I have no
@@ -9086,7 +9121,7 @@ dialog{
   skip = "current",
   text = [[
 Gotten a little confused, have you?
-$b Hyrule Castle Town$w is the center of
+$bHyrule Castle Town$w is the center of
 Hyrule. $0I'll bet that if you make
 it there, someone would be able to
 help you out. If all else fails,

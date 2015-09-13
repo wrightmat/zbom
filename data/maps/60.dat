@@ -1870,7 +1870,7 @@ teletransporter{
   layer = 0,
   x = 16,
   y = -16,
-  width = 1104,
+  width = 896,
   height = 16,
   transition = "scrolling",
   destination_map = "52",
@@ -2388,6 +2388,31 @@ destination{
   x = 704,
   y = 749,
   direction = 3,
+}
+
+wall{
+  layer = 0,
+  x = 936,
+  y = 0,
+  width = 16,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+teletransporter{
+  name = "to_B5_2",
+  layer = 0,
+  x = 976,
+  y = -16,
+  width = 144,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "52",
+  destination = "_side",
 }
 
 tile{

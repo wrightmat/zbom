@@ -9616,6 +9616,24 @@ npc{
   sprite = "entities/torch_wood",
 }
 
+sensor{
+  name = "sensor_water_bottle_2",
+  layer = 0,
+  x = 136,
+  y = 349,
+  width = 128,
+  height = 16,
+}
+
+sensor{
+  name = "sensor_water_bottle_3",
+  layer = 0,
+  x = 368,
+  y = 237,
+  width = 160,
+  height = 16,
+}
+
 tile{
   layer = 1,
   x = 88,

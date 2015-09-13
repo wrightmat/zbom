@@ -7869,16 +7869,6 @@ chest{
   sprite = "entities/chest",
 }
 
-stream{
-  layer = 0,
-  x = 400,
-  y = 933,
-  direction = 0,
-  sprite = "entities/conveyor",
-  allow_movement = false,
-  allow_item = false,
-}
-
 chest{
   name = "chest_big_key",
   layer = 0,

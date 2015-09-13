@@ -157,21 +157,27 @@ function sensor_festival_dialog:on_activated()
       m:set_distance(8)
       m:start(npc_francis)
       sol.timer.start(400, function()
+        game:set_dialog_position("top")
         game:start_dialog("francis.1.festival", function()
           npc_tristan:get_sprite():set_animation("pose2")
+          game:set_dialog_position("bottom")
           game:start_dialog("tristan.0.festival_response", game:get_player_name(), function()
+            game:set_dialog_position("top")
             game:start_dialog("francis.1.festival_race", function(answer)
               if answer == 1 then
-	        game:set_value("i1028", 1)
+	       game:set_value("i1028", 1)
                 if game:has_item("lamp") then
+                  game:set_dialog_position("bottom")
                   game:start_dialog("tristan.0.festival_rules", function()
                     random_walk(npc_jarred)
-		random_walk(npc_francis)
+		  random_walk(npc_francis)
                   end)
                 else
+                  game:set_dialog_position("bottom")
                   game:start_dialog("tristan.0.festival_lamp")
                 end
               else
+                game:set_dialog_position("bottom")
                 game:start_dialog("tristan.0.festival_no")
               end
             end)

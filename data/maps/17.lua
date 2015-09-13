@@ -30,7 +30,8 @@ function map:on_started(destination)
   game:set_dialog_style("default")
   if game:get_value("i1602") <= 2 or game:get_value("i1602") > 4 then
     npc_gaira:remove()
-  elseif game:get_value("i1602") == 3 then
+  end
+  if game:get_value("i1602") == 3 then
     npc_deacon:remove()
     follow_hero(npc_gaira)
     sol.timer.start(2000, function()
@@ -42,10 +43,15 @@ function map:on_started(destination)
     sol.timer.start(1000, function()
       game:set_value("i1602", 5)
       game:start_dialog("gaira.4.faron_deacon1", function()
+         game:set_dialog_position("top")
 	game:start_dialog("deacon.4.faron", game:get_player_name(), function()
+           game:set_dialog_position("bottom")
 	  game:start_dialog("gaira.4.faron_deacon2", game:get_player_name(), function()
+             game:set_dialog_position("top")
 	    game:start_dialog("deacon.4.faron_gaira3", function()
+               game:set_dialog_position("bottom")
 	      game:start_dialog("gaira.4.faron_deacon4", function()
+                  game:set_dialog_position("top")
 		game:start_dialog("deacon.4.faron_gaira5", function()
 		  game:set_value("i1602", 6)
 		end)
@@ -55,15 +61,14 @@ function map:on_started(destination)
         end)
       end)
     end)
-  elseif game:get_value("i1602") >= 6 then
+  elseif game:get_value("i1602") == 6 then
     npc_deacon:remove()
-    npc_gaira:remove()
   end
 end
 
 function npc_deacon:on_interaction()
   game:set_dialog_style("default")
-  if game:get_value("b1117") then
+  if game:get_value("b1117") and not game:get_value("b1134") then -- Finished Mausoleum but not Lakebed
     game:start_dialog("deacon.6.house")
   elseif game:get_value("i1602") == 1 then
     game:start_dialog("deacon.2.faron", function()
@@ -85,4 +90,8 @@ function npc_gaira:on_interaction()
   if game:get_value("i1602") == 3 then
     game:start_dialog("gaira.4.faron")
   end
+end
+
+function sensor_music:on_activated()
+  if game:get_hero():get_direction() == 3 then sol.audio.play_music("town_ordon") end
 end

@@ -6986,7 +6986,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 200,
+  x = 272,
   y = 896,
   width = 16,
   height = 24,
@@ -9808,6 +9808,15 @@ tile{
   width = 16,
   height = 16,
   pattern = "116",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 896,
+  width = 16,
+  height = 16,
+  pattern = "482",
 }
 
 sensor{
@@ -12777,18 +12786,6 @@ sensor{
 }
 
 switch{
-  name = "sensor_out_torches_room",
-  layer = 0,
-  x = 1536,
-  y = 656,
-  subtype = "walkable",
-  sprite = "entities/switch",
-  sound = "switch",
-  needs_block = false,
-  inactivate_when_leaving = true,
-}
-
-switch{
   name = "room18_arrow",
   layer = 0,
   x = 1144,
@@ -13357,11 +13354,11 @@ switch{
 }
 
 chest{
-  name = "chest_jade",
+  name = "chest_apple",
   layer = 0,
   x = 104,
   y = 1317,
-  treasure_name = "jade",
+  treasure_name = "apple",
   treasure_savegame_variable = "b1066",
   sprite = "entities/chest",
 }
@@ -13738,6 +13735,63 @@ wall{
   stops_npcs = true,
   stops_enemies = true,
   stops_blocks = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1272,
+  y = 653,
+  treasure_name = "heart",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = 1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 1560,
+  y = 653,
+  treasure_name = "heart",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = 1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 1272,
+  y = 829,
+  treasure_name = "heart",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = 1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 1560,
+  y = 829,
+  treasure_name = "heart",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = 1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+npc{
+  name = "hint_stone.grove.3",
+  layer = 0,
+  x = 216,
+  y = 909,
+  direction = 3,
+  subtype = 0,
 }
 
 tile{
