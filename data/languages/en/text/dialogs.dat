@@ -77,6 +77,16 @@ a thing!$0 Find more magic!
 }
 
 dialog{
+  id = "_confusion",
+  icon = "99",
+  text = [[
+You're confused!
+You won't know which direction
+to go for a short time.
+]]
+}
+
+dialog{
   id = "_crystal_switch",
   skip = "current",
   text = [[
@@ -87,10 +97,11 @@ Try to hit it with something...
 
 dialog{
   id = "_cursed",
-  skip = "current",
+  icon = "96",
   text = [[
 You've been cursed!
-You won't be able to draw your sword.
+You won't be able to draw your
+sword for a short time.
 ]]
 }
 
@@ -100,6 +111,16 @@ dialog{
   text = [[
 This chest is empty!
 Tough luck...
+]]
+}
+
+dialog{
+  id = "_exhausted",
+  icon = "98",
+  text = [[
+You're exhausted!$0 You won't be
+able to continue much farther until
+you sleep or eat something!
 ]]
 }
 
@@ -968,6 +989,7 @@ cave, hero...
 
 dialog{
   id = "_poisoned",
+  icon = "97",
   text = [[
 You've been poisoned!
 You'll slowly lose life for a period
@@ -1051,16 +1073,6 @@ dialog{
 There's a patch of soft soil here -
 if you had the right tools, you could
 probably dig it up.
-]]
-}
-
-dialog{
-  id = "_stamina_gone",
-  skip = "none",
-  text = [[
-You're exhausted!$0 You won't be
-able to continue much farther until
-you sleep or eat something!
 ]]
 }
 

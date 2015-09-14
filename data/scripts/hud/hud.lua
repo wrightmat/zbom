@@ -12,6 +12,7 @@ function game:initialize_hud()
   local pause_icon_builder = require("scripts/hud/pause_icon")
   local small_keys_builder = require("scripts/hud/small_keys")
   local stamina_bar_builder = require("scripts/hud/stamina_bar")
+  local hero_condition_builder = require("scripts/hud/hero_condition")
   local attack_icon_builder = require("scripts/hud/attack_icon")
   local action_icon_builder = require("scripts/hud/action_icon")
 
@@ -30,7 +31,11 @@ function game:initialize_hud()
   self.hud[#self.hud + 1] = menu
 
   menu = stamina_bar_builder:new(self)
-  menu:set_dst_position(-100, 34)
+  menu:set_dst_position(-104, 34)
+  self.hud[#self.hud + 1] = menu
+
+  menu = hero_condition_builder:new(self)
+  menu:set_dst_position(-130, 20)
   self.hud[#self.hud + 1] = menu
 
   menu = rupees_builder:new(self)

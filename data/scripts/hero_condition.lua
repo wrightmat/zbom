@@ -42,6 +42,10 @@ function condition_manager:initialize(game)
 	if not game:get_value("stamina_gone") then -- when stamina out, set exhaustion
            hero:set_condition('exhausted', true)
 	  game:set_value("stamina_gone", true)
+	  if not game:get_value("exhaused_once") then
+             game:start_dialog("_exhausted")
+             game:set_value("exhausted_once", true)
+           end
 	else
 	  if math.random(4) == 1 then  -- when stamina out, buttons don't always work
 	    sol.audio.play_sound("wrong")
@@ -181,6 +185,10 @@ function condition_manager:initialize(game)
     end
 
     hero:set_condition('confusion', true)
+    if not game:get_value("confusion_once") then
+      game:start_dialog("_confusion")
+      game:set_value("confusion_once", true)
+    end
 
     condition_manager.timers['confusion'] = sol.timer.start(hero, delay, function()
       hero:stop_confusion()
@@ -249,7 +257,10 @@ function condition_manager:initialize(game)
 
     hero:set_blinking(true, delay)
     hero:set_condition('poison', true)
-    game:start_dialog("_poisoned")
+    if not game:get_value("poison_once") then
+      game:start_dialog("_poison")
+      game:set_value("poison_once", true)
+    end
     do_poison()
   end
 
@@ -273,7 +284,10 @@ function condition_manager:initialize(game)
     hero:set_condition('cursed', true)
     sword_level = game:get_ability("sword")
     game:set_ability("sword", 0)
-    game:start_dialog("_cursed")
+    if not game:get_value("cursed_once") then
+      game:start_dialog("_cursed")
+      game:set_value("cursed_once", true)
+    end
 
     condition_manager.timers['cursed'] = sol.timer.start(hero, delay, function()
       hero:stop_cursed()
