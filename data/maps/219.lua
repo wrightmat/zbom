@@ -86,9 +86,11 @@ end
 local function game_won()
 print("game won!")
   sol.audio.play_sound("secret")
-  stairs_1:set_enabled(true)
-  stairs_2:set_enabled(true)
-  stairs_3:set_enabled(true)
+  map:move_camera(896, 144, 250, function()
+    stairs_1:set_enabled(true)
+    stairs_2:set_enabled(true)
+    stairs_3:set_enabled(true)
+  end, 500, 2000)
 end
 
 for enemy in map:get_entities("room_1") do
