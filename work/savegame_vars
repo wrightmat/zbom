@@ -3,7 +3,7 @@ Game-specific values start at 1024 and go to 2047
 
 # 1024-1699: Game State Variables
 i1024: Current Stamina
-i1025: Max Stamina
+i1025: Max Stamina (out of 1260)
 i1026: Stamina modifier (number of subsequent apples/pumpkins used)
 i1027: Ordon Festival progress (1=initial dialog done, 2=first area complete, 3=race won, 4=Ordona heard, 5=Crista saved-festival over, 6=Ordona directed Link to Sacred Grove)
 i1028: Festival maze race progress (1= initial dialog done, 2=race begun, 3=torches in first screen lit, 4=lost, 5=won)

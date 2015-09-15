@@ -7040,26 +7040,27 @@ teletransporter{
 enemy{
   name = "lizalfos_1",
   layer = 0,
-  x = 752,
-  y = 621,
+  x = 792,
+  y = 629,
   direction = 0,
   breed = "lizalfos",
   treasure_name = "random",
 }
 
 wall{
+  name = "obstacle_temple",
   layer = 0,
-  x = 720,
-  y = 568,
+  x = 752,
+  y = 512,
   width = 16,
-  height = 184,
+  height = 240,
   stops_enemies = true,
 }
 
 enemy{
   name = "lizalfos_2",
   layer = 0,
-  x = 752,
+  x = 784,
   y = 709,
   direction = 0,
   breed = "lizalfos",
@@ -7074,15 +7075,6 @@ enemy{
   direction = 0,
   breed = "lizalfos",
   treasure_name = "random",
-}
-
-wall{
-  layer = 0,
-  x = 656,
-  y = 552,
-  width = 80,
-  height = 16,
-  stops_enemies = true,
 }
 
 destructible{

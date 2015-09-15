@@ -28,13 +28,15 @@ function enemy:on_created()
 end
 
 function enemy:on_restarted()
-  state = nil
-  if not being_pushed then
-    if going_hero then
-      enemy:go_hero()
-    else
-      enemy:go_random()
-      enemy:check_hero()
+  if self:get_game():get_map():get_id() ~= "219" then -- Don't want Shadow Link to act during the game.
+    state = nil
+    if not being_pushed then
+      if going_hero then
+        enemy:go_hero()
+      else
+        enemy:go_random()
+        enemy:check_hero()
+      end
     end
   end
 end

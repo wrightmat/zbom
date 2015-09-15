@@ -7834,6 +7834,22 @@ can, please come see me!
 }
 
 dialog{
+  id = "shadow_link.sanctum_basement",
+  text = [[
+Hey $v, ready to play a little game?
+Each room has a way to turn it from dark
+to light. If you can light five rooms in
+a row before I put one of them out,
+you'll win!$0
+It won't be as easy as it sounds though.
+Each room is different, and I'm very good
+at this game!$0
+Oh, and your lantern is no good here.
+Have fun!
+]]
+}
+
+dialog{
   id = "shop.bomb_1",
   icon = "1",
   skip = "current",

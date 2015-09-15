@@ -35,6 +35,7 @@ function map:on_started()
     sensor_b1:set_enabled(false)
     sensor_c1:set_enabled(false)
     tree_temple:set_enabled(false)
+    obstacle_temple:set_enabled(false)
   end
 
   woods_overlay = sol.surface.create("effects/woods.png")

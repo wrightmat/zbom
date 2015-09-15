@@ -4,6 +4,7 @@ local second_life = 12
 local second_stage = false
 local fireball_proba = 33  -- Percent.
 local shadow = false
+local nb_sons_created = 0
 local timers = {}
 
 -- Belahim (Dark Tribe leader, final boss of game)

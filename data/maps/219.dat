@@ -11,6 +11,42 @@ properties{
 
 tile{
   layer = 0,
+  x = 760,
+  y = 80,
+  width = 272,
+  height = 8,
+  pattern = "15",
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 64,
+  width = 288,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 640,
+  width = 256,
+  height = 192,
+  pattern = "299",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 688,
+  width = 24,
+  height = 8,
+  pattern = "105",
+}
+
+tile{
+  layer = 0,
   x = 984,
   y = 1168,
   width = 48,
@@ -1064,15 +1100,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 752,
-  y = 64,
-  width = 288,
-  height = 16,
-  pattern = "2",
-}
-
-tile{
-  layer = 0,
   x = 1576,
   y = 624,
   width = 128,
@@ -9376,15 +9403,6 @@ tile{
   width = 8,
   height = 8,
   pattern = "13",
-}
-
-tile{
-  layer = 0,
-  x = 760,
-  y = 80,
-  width = 272,
-  height = 8,
-  pattern = "15",
 }
 
 tile{
@@ -10821,15 +10839,6 @@ tile{
 tile{
   layer = 0,
   x = 128,
-  y = 1384,
-  width = 64,
-  height = 24,
-  pattern = "229",
-}
-
-tile{
-  layer = 0,
-  x = 128,
   y = 1240,
   width = 16,
   height = 16,
@@ -11351,15 +11360,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 96,
-  y = 640,
-  width = 256,
-  height = 192,
-  pattern = "299",
-}
-
-tile{
-  layer = 0,
   x = 1440,
   y = 1184,
   width = 256,
@@ -11630,38 +11630,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 1416,
-  y = 784,
-  width = 16,
-  height = 16,
-  pattern = "344",
-}
-
-tile{
-  layer = 0,
-  x = 1416,
-  y = 672,
-  width = 16,
-  height = 16,
-  pattern = "344",
-}
-
-tile{
-  layer = 0,
   x = 1408,
   y = 688,
   width = 24,
   height = 8,
   pattern = "343",
-}
-
-tile{
-  layer = 0,
-  x = 1080,
-  y = 672,
-  width = 16,
-  height = 16,
-  pattern = "344",
 }
 
 tile{
@@ -11680,15 +11653,6 @@ tile{
   width = 24,
   height = 8,
   pattern = "343",
-}
-
-tile{
-  layer = 0,
-  x = 1080,
-  y = 784,
-  width = 16,
-  height = 16,
-  pattern = "344",
 }
 
 tile{
@@ -12693,15 +12657,6 @@ tile{
 tile{
   layer = 0,
   x = 1032,
-  y = 672,
-  width = 16,
-  height = 16,
-  pattern = "348",
-}
-
-tile{
-  layer = 0,
-  x = 1032,
   y = 800,
   width = 24,
   height = 8,
@@ -12724,15 +12679,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "370",
-}
-
-tile{
-  layer = 0,
-  x = 1032,
-  y = 784,
-  width = 16,
-  height = 16,
-  pattern = "348",
 }
 
 tile{
@@ -12760,15 +12706,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "370",
-}
-
-tile{
-  layer = 0,
-  x = 1368,
-  y = 784,
-  width = 16,
-  height = 16,
-  pattern = "348",
 }
 
 tile{
@@ -12796,15 +12733,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "370",
-}
-
-tile{
-  layer = 0,
-  x = 1368,
-  y = 672,
-  width = 16,
-  height = 16,
-  pattern = "348",
 }
 
 tile{
@@ -12944,15 +12872,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1152,
-  y = 616,
-  width = 16,
-  height = 16,
-  pattern = "350",
-}
-
-tile{
-  layer = 0,
   x = 1288,
   y = 608,
   width = 8,
@@ -12967,15 +12886,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "174",
-}
-
-tile{
-  layer = 0,
-  x = 1296,
-  y = 616,
-  width = 16,
-  height = 16,
-  pattern = "350",
 }
 
 tile{
@@ -13007,15 +12917,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1152,
-  y = 568,
-  width = 16,
-  height = 16,
-  pattern = "354",
-}
-
-tile{
-  layer = 0,
   x = 1288,
   y = 568,
   width = 8,
@@ -13039,15 +12940,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "175",
-}
-
-tile{
-  layer = 0,
-  x = 1296,
-  y = 568,
-  width = 16,
-  height = 16,
-  pattern = "354",
 }
 
 tile{
@@ -13475,42 +13367,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1152,
-  y = 888,
-  width = 16,
-  height = 16,
-  pattern = "350",
-}
-
-tile{
-  layer = 0,
-  x = 1296,
-  y = 888,
-  width = 16,
-  height = 16,
-  pattern = "350",
-}
-
-tile{
-  layer = 0,
-  x = 1152,
-  y = 840,
-  width = 16,
-  height = 16,
-  pattern = "354",
-}
-
-tile{
-  layer = 0,
-  x = 1296,
-  y = 840,
-  width = 16,
-  height = 16,
-  pattern = "354",
-}
-
-tile{
-  layer = 0,
   x = 832,
   y = 1120,
   width = 48,
@@ -13790,20 +13646,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 312,
+  x = 320,
   y = 688,
   width = 8,
   height = 8,
   pattern = "104",
-}
-
-tile{
-  layer = 0,
-  x = 320,
-  y = 688,
-  width = 24,
-  height = 8,
-  pattern = "105",
 }
 
 tile{
@@ -13813,6 +13660,17 @@ tile{
   width = 8,
   height = 8,
   pattern = "104",
+}
+
+dynamic_tile{
+  name = "stairs_3",
+  layer = 0,
+  x = 904,
+  y = 64,
+  pattern = "188",
+  width = 8,
+  height = 32,
+  enabled_at_start = false,
 }
 
 dynamic_tile{
@@ -13838,7 +13696,7 @@ teletransporter{
 }
 
 enemy{
-  name = "room1_tektite_1",
+  name = "room_1_tektite_1",
   layer = 0,
   x = 816,
   y = 1221,
@@ -13848,7 +13706,7 @@ enemy{
 }
 
 enemy{
-  name = "room1_tektite_2",
+  name = "room_1_tektite_2",
   layer = 0,
   x = 832,
   y = 1333,
@@ -13858,7 +13716,7 @@ enemy{
 }
 
 enemy{
-  name = "room1_tektite_3",
+  name = "room_1_tektite_3",
   layer = 0,
   x = 928,
   y = 1253,
@@ -13868,7 +13726,7 @@ enemy{
 }
 
 enemy{
-  name = "room1_tektite_4",
+  name = "room_1_tektite_4",
   layer = 0,
   x = 976,
   y = 1333,
@@ -13878,7 +13736,7 @@ enemy{
 }
 
 enemy{
-  name = "room12_gibdos_1",
+  name = "room_12_gibdos_1",
   layer = 0,
   x = 488,
   y = 685,
@@ -13888,7 +13746,7 @@ enemy{
 }
 
 enemy{
-  name = "room12_gibdos_2",
+  name = "room_12_gibdos_2",
   layer = 0,
   x = 480,
   y = 797,
@@ -13898,7 +13756,7 @@ enemy{
 }
 
 enemy{
-  name = "room12_gibdos_3",
+  name = "room_12_gibdos_3",
   layer = 0,
   x = 536,
   y = 733,
@@ -13908,7 +13766,7 @@ enemy{
 }
 
 enemy{
-  name = "room12_gibdos_4",
+  name = "room_12_gibdos_4",
   layer = 0,
   x = 616,
   y = 685,
@@ -13918,7 +13776,7 @@ enemy{
 }
 
 enemy{
-  name = "room12_gibdos_5",
+  name = "room_12_gibdos_5",
   layer = 0,
   x = 632,
   y = 749,
@@ -13928,7 +13786,7 @@ enemy{
 }
 
 enemy{
-  name = "room12_gibdos_6",
+  name = "room_12_gibdos_6",
   layer = 0,
   x = 576,
   y = 805,
@@ -13938,7 +13796,7 @@ enemy{
 }
 
 enemy{
-  name = "room14_tentacle_1",
+  name = "room_20_tentacle_1",
   layer = 0,
   x = 1176,
   y = 717,
@@ -13948,7 +13806,7 @@ enemy{
 }
 
 enemy{
-  name = "room14_tentacle_2",
+  name = "room_20_tentacle_2",
   layer = 0,
   x = 1248,
   y = 669,
@@ -13958,7 +13816,7 @@ enemy{
 }
 
 enemy{
-  name = "room14_tentacle_3",
+  name = "room_20_tentacle_3",
   layer = 0,
   x = 1280,
   y = 717,
@@ -13968,7 +13826,7 @@ enemy{
 }
 
 enemy{
-  name = "room14_tentacle_4",
+  name = "room_20_tentacle_4",
   layer = 0,
   x = 1272,
   y = 797,
@@ -13978,7 +13836,7 @@ enemy{
 }
 
 enemy{
-  name = "room14_tentacle_5",
+  name = "room_20_tentacle_5",
   layer = 0,
   x = 1232,
   y = 757,
@@ -13988,7 +13846,7 @@ enemy{
 }
 
 enemy{
-  name = "room14_tentacle_6",
+  name = "room_20_tentacle_6",
   layer = 0,
   x = 1152,
   y = 805,
@@ -13998,7 +13856,7 @@ enemy{
 }
 
 enemy{
-  name = "room14_tentacle_7",
+  name = "room_20_tentacle_7",
   layer = 0,
   x = 1128,
   y = 685,
@@ -14008,7 +13866,7 @@ enemy{
 }
 
 enemy{
-  name = "room14_tentacle_8",
+  name = "room_20_tentacle_8",
   layer = 0,
   x = 1328,
   y = 765,
@@ -14018,7 +13876,7 @@ enemy{
 }
 
 enemy{
-  name = "room14_chuchu_1",
+  name = "room_20_chuchu_1",
   layer = 0,
   x = 1312,
   y = 677,
@@ -14028,7 +13886,7 @@ enemy{
 }
 
 enemy{
-  name = "room14_chuchu_2",
+  name = "room_20_chuchu_2",
   layer = 0,
   x = 1320,
   y = 805,
@@ -14038,7 +13896,7 @@ enemy{
 }
 
 enemy{
-  name = "room14_chuchu_3",
+  name = "room_20_chuchu_3",
   layer = 0,
   x = 1208,
   y = 797,
@@ -14048,7 +13906,7 @@ enemy{
 }
 
 enemy{
-  name = "room14_chuchu_4",
+  name = "room_20_chuchu_4",
   layer = 0,
   x = 1136,
   y = 757,
@@ -14058,7 +13916,7 @@ enemy{
 }
 
 enemy{
-  name = "room14_chuchu_5",
+  name = "room_20_chuchu_5",
   layer = 0,
   x = 1168,
   y = 669,
@@ -14068,7 +13926,7 @@ enemy{
 }
 
 enemy{
-  name = "room14_chuchu_6",
+  name = "room_20_chuchu_6",
   layer = 0,
   x = 1232,
   y = 717,
@@ -15867,7 +15725,7 @@ destination{
 }
 
 enemy{
-  name = "room1_tektite_5",
+  name = "room_1_tektite_5",
   layer = 0,
   x = 872,
   y = 1269,
@@ -15877,7 +15735,7 @@ enemy{
 }
 
 enemy{
-  name = "room1_tektite_6",
+  name = "room_1_tektite_6",
   layer = 0,
   x = 920,
   y = 1325,
@@ -15887,7 +15745,7 @@ enemy{
 }
 
 enemy{
-  name = "room1_tektite_7",
+  name = "room_1_tektite_7",
   layer = 0,
   x = 976,
   y = 1221,
@@ -15941,7 +15799,7 @@ dynamic_tile{
 }
 
 enemy{
-  name = "room12_gibdos_7",
+  name = "room_12_gibdos_7",
   layer = 0,
   x = 592,
   y = 717,
@@ -16434,53 +16292,58 @@ enemy{
 }
 
 npc{
-  name = "room3_torch_1",
+  name = "torch_room3_1",
   layer = 0,
   x = 120,
   y = 1213,
   direction = 3,
   subtype = 0,
   sprite = "entities/torch",
+  behavior = "item#lamp",
 }
 
 npc{
-  name = "room3_torch_2",
+  name = "torch_room3_2",
   layer = 0,
   x = 120,
   y = 1357,
   direction = 3,
   subtype = 0,
   sprite = "entities/torch",
+  behavior = "item#lamp",
 }
 
 npc{
-  name = "room3_torch_3",
+  name = "torch_room3_3",
   layer = 0,
   x = 320,
   y = 1213,
   direction = 3,
   subtype = 0,
   sprite = "entities/torch",
+  behavior = "item#lamp",
 }
 
 npc{
-  name = "room3_torch_4",
+  name = "torch_room3_4",
   layer = 0,
   x = 320,
   y = 1357,
   direction = 3,
   subtype = 0,
   sprite = "entities/torch",
+  behavior = "item#lamp",
 }
 
 npc{
-  name = "room3_torch_5",
+  name = "torch_room3_5",
   layer = 0,
   x = 224,
   y = 1285,
   direction = 3,
   subtype = 0,
   sprite = "entities/torch",
+  behavior = "item#lamp",
 }
 
 switch{
@@ -16573,42 +16436,445 @@ dynamic_tile{
   enabled_at_start = true,
 }
 
-tile{
-  layer = 1,
-  x = 880,
-  y = 8,
-  width = 8,
-  height = 32,
-  pattern = "186",
+destructible{
+  layer = 0,
+  x = 136,
+  y = 1397,
+  treasure_name = "random",
+  sprite = "entities/vines",
+  destruction_sound = "bush",
+  can_be_cut = true,
+  damage_on_enemies = 0,
 }
 
-tile{
-  layer = 1,
-  x = 888,
-  y = 8,
-  width = 16,
-  height = 32,
-  pattern = "187",
+destructible{
+  layer = 0,
+  x = 152,
+  y = 1397,
+  treasure_name = "magic_flask",
+  treasure_variant = 2,
+  sprite = "entities/vines",
+  destruction_sound = "bush",
+  can_be_cut = true,
+  damage_on_enemies = 0,
 }
 
-tile{
-  layer = 1,
-  x = 904,
-  y = 8,
-  width = 8,
-  height = 32,
-  pattern = "188",
+destructible{
+  layer = 0,
+  x = 168,
+  y = 1397,
+  treasure_name = "random",
+  sprite = "entities/vines",
+  destruction_sound = "bush",
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 184,
+  y = 1397,
+  treasure_name = "random",
+  sprite = "entities/vines",
+  destruction_sound = "bush",
+  can_be_cut = true,
+  damage_on_enemies = 0,
 }
 
 dynamic_tile{
-  name = "stairs_3",
-  layer = 1,
-  x = 904,
+  name = "room7_gate_e1",
+  layer = 0,
+  x = 1032,
+  y = 672,
+  pattern = "348",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "room7_gate_e2",
+  layer = 0,
+  x = 1032,
+  y = 784,
+  pattern = "348",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "room20_gate_w1",
+  layer = 0,
+  x = 1080,
+  y = 672,
+  pattern = "344",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "room20_gate_w2",
+  layer = 0,
+  x = 1080,
+  y = 784,
+  pattern = "344",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "room20_gate_e1",
+  layer = 0,
+  x = 1368,
+  y = 672,
+  pattern = "348",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "room20_gate_e2",
+  layer = 0,
+  x = 1368,
+  y = 784,
+  pattern = "348",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "room20_gate_s1",
+  layer = 0,
+  x = 1152,
+  y = 840,
+  pattern = "354",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "room20_gate_s2",
+  layer = 0,
+  x = 1296,
+  y = 840,
+  pattern = "354",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "room21_gate_n1",
+  layer = 0,
+  x = 1152,
+  y = 888,
+  pattern = "350",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "room21_gate_n2",
+  layer = 0,
+  x = 1296,
+  y = 888,
+  pattern = "350",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "room20_gate_n1",
+  layer = 0,
+  x = 1152,
+  y = 616,
+  pattern = "350",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "room20_gate_n2",
+  layer = 0,
+  x = 1296,
+  y = 616,
+  pattern = "350",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "room15_gate_s1",
+  layer = 0,
+  x = 1152,
+  y = 568,
+  pattern = "354",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "room15_gate_s2",
+  layer = 0,
+  x = 1296,
+  y = 568,
+  pattern = "354",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "room19_gate_w1",
+  layer = 0,
+  x = 1416,
+  y = 672,
+  pattern = "344",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "room19_gate_w2",
+  layer = 0,
+  x = 1416,
+  y = 784,
+  pattern = "344",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "stairs_2",
+  layer = 0,
+  x = 880,
   y = 64,
-  pattern = "188",
+  pattern = "186",
   width = 8,
   height = 32,
   enabled_at_start = false,
+}
+
+enemy{
+  name = "room4_bubble",
+  layer = 0,
+  x = 224,
+  y = 1005,
+  direction = 3,
+  breed = "bubble_green",
+}
+
+enemy{
+  name = "room_4_moth_1",
+  layer = 0,
+  x = 288,
+  y = 965,
+  direction = 3,
+  breed = "moth",
+  treasure_name = "random_woods",
+}
+
+enemy{
+  name = "room_4_moth_2",
+  layer = 0,
+  x = 256,
+  y = 957,
+  direction = 3,
+  breed = "moth",
+  treasure_name = "random_woods",
+}
+
+enemy{
+  name = "room_4_moth_3",
+  layer = 0,
+  x = 176,
+  y = 941,
+  direction = 3,
+  breed = "moth",
+  treasure_name = "random_woods",
+}
+
+enemy{
+  name = "room_4_moth_4",
+  layer = 0,
+  x = 312,
+  y = 941,
+  direction = 3,
+  breed = "moth",
+  treasure_name = "random_woods",
+}
+
+enemy{
+  name = "room_4_moth_5",
+  layer = 0,
+  x = 296,
+  y = 997,
+  direction = 3,
+  breed = "moth",
+  treasure_name = "random_woods",
+}
+
+enemy{
+  name = "room_4_moth_6",
+  layer = 0,
+  x = 320,
+  y = 1045,
+  direction = 3,
+  breed = "moth",
+  treasure_name = "random_woods",
+}
+
+enemy{
+  name = "room_4_moth_7",
+  layer = 0,
+  x = 320,
+  y = 1085,
+  direction = 3,
+  breed = "moth",
+  treasure_name = "random_woods",
+}
+
+enemy{
+  name = "room_4_moth_8",
+  layer = 0,
+  x = 256,
+  y = 1069,
+  direction = 3,
+  breed = "moth",
+  treasure_name = "random_woods",
+}
+
+enemy{
+  name = "room_4_moth_9",
+  layer = 0,
+  x = 256,
+  y = 1013,
+  direction = 3,
+  breed = "moth",
+  treasure_name = "random_woods",
+}
+
+enemy{
+  name = "room_4_moth_10",
+  layer = 0,
+  x = 216,
+  y = 1053,
+  direction = 3,
+  breed = "moth",
+  treasure_name = "random_woods",
+}
+
+enemy{
+  name = "room_4_moth_11",
+  layer = 0,
+  x = 184,
+  y = 1005,
+  direction = 3,
+  breed = "moth",
+  treasure_name = "random_woods",
+}
+
+enemy{
+  name = "room_4_moth_12",
+  layer = 0,
+  x = 216,
+  y = 965,
+  direction = 3,
+  breed = "moth",
+  treasure_name = "random_woods",
+}
+
+enemy{
+  name = "room_4_moth_13",
+  layer = 0,
+  x = 128,
+  y = 941,
+  direction = 3,
+  breed = "moth",
+  treasure_name = "random_woods",
+}
+
+enemy{
+  name = "room_4_moth_14",
+  layer = 0,
+  x = 128,
+  y = 989,
+  direction = 3,
+  breed = "moth",
+  treasure_name = "random_woods",
+}
+
+enemy{
+  name = "room_4_moth_15",
+  layer = 0,
+  x = 136,
+  y = 1037,
+  direction = 3,
+  breed = "moth",
+  treasure_name = "random_woods",
+}
+
+enemy{
+  name = "room_4_moth_16",
+  layer = 0,
+  x = 168,
+  y = 1053,
+  direction = 3,
+  breed = "moth",
+  treasure_name = "random_woods",
+}
+
+enemy{
+  name = "room_4_moth_17",
+  layer = 0,
+  x = 128,
+  y = 1093,
+  direction = 3,
+  breed = "moth",
+  treasure_name = "random_woods",
+}
+
+enemy{
+  name = "room_4_moth_18",
+  layer = 0,
+  x = 184,
+  y = 1093,
+  direction = 3,
+  breed = "moth",
+  treasure_name = "random_woods",
+}
+
+enemy{
+  name = "room_4_moth_19",
+  layer = 0,
+  x = 328,
+  y = 973,
+  direction = 3,
+  breed = "moth",
+  treasure_name = "random_woods",
+}
+
+enemy{
+  name = "room_4_moth_20",
+  layer = 0,
+  x = 280,
+  y = 1037,
+  direction = 3,
+  breed = "moth",
+  treasure_name = "random_woods",
 }
 
 tile{
@@ -18126,7 +18392,7 @@ tile{
 separator{
   layer = 2,
   x = 720,
-  y = 0,
+  y = -8,
   width = 16,
   height = 1472,
 }
@@ -18409,5 +18675,274 @@ separator{
   y = 48,
   width = 320,
   height = 16,
+}
+
+enemy{
+  name = "shadow_link",
+  layer = 2,
+  x = 992,
+  y = 1453,
+  direction = 3,
+  breed = "shadow_link",
+}
+
+npc{
+  name = "room_overlay_1",
+  layer = 2,
+  x = 736,
+  y = 1149,
+  direction = 1,
+  subtype = 0,
+  sprite = "entities/dark_room",
+}
+
+npc{
+  name = "room_overlay_2",
+  layer = 2,
+  x = 400,
+  y = 1149,
+  direction = 1,
+  subtype = 0,
+  sprite = "entities/dark_room",
+}
+
+npc{
+  name = "room_overlay_3",
+  layer = 2,
+  x = 64,
+  y = 1149,
+  direction = 1,
+  subtype = 0,
+  sprite = "entities/dark_room",
+}
+
+npc{
+  name = "room_overlay_4",
+  layer = 2,
+  x = 64,
+  y = 877,
+  direction = 1,
+  subtype = 0,
+  sprite = "entities/dark_room",
+}
+
+npc{
+  name = "room_overlay_5",
+  layer = 2,
+  x = 400,
+  y = 877,
+  direction = 1,
+  subtype = 0,
+  sprite = "entities/dark_room",
+}
+
+npc{
+  name = "room_overlay_6",
+  layer = 2,
+  x = 736,
+  y = 877,
+  direction = 1,
+  subtype = 0,
+  sprite = "entities/dark_room",
+}
+
+npc{
+  name = "room_overlay_7",
+  layer = 2,
+  x = 736,
+  y = 605,
+  direction = 1,
+  subtype = 0,
+  sprite = "entities/dark_room",
+}
+
+npc{
+  name = "room_overlay_8",
+  layer = 2,
+  x = 400,
+  y = 605,
+  direction = 1,
+  subtype = 0,
+  sprite = "entities/dark_room",
+}
+
+npc{
+  name = "room_overlay_9",
+  layer = 2,
+  x = 64,
+  y = 605,
+  direction = 1,
+  subtype = 0,
+  sprite = "entities/dark_room",
+}
+
+npc{
+  name = "room_overlay_10",
+  layer = 2,
+  x = 64,
+  y = 333,
+  direction = 1,
+  subtype = 0,
+  sprite = "entities/dark_room",
+}
+
+npc{
+  name = "room_overlay_11",
+  layer = 2,
+  x = 64,
+  y = 61,
+  direction = 1,
+  subtype = 0,
+  sprite = "entities/dark_room",
+}
+
+npc{
+  name = "room_overlay_12",
+  layer = 2,
+  x = 400,
+  y = 61,
+  direction = 1,
+  subtype = 0,
+  sprite = "entities/dark_room",
+}
+
+npc{
+  name = "room_overlay_13",
+  layer = 2,
+  x = 400,
+  y = 333,
+  direction = 1,
+  subtype = 0,
+  sprite = "entities/dark_room",
+}
+
+npc{
+  name = "room_overlay_14",
+  layer = 2,
+  x = 736,
+  y = 333,
+  direction = 1,
+  subtype = 0,
+  sprite = "entities/dark_room",
+}
+
+npc{
+  name = "room_overlay_15",
+  layer = 2,
+  x = 1072,
+  y = 333,
+  direction = 1,
+  subtype = 0,
+  sprite = "entities/dark_room",
+}
+
+npc{
+  name = "room_overlay_16",
+  layer = 2,
+  x = 1072,
+  y = 61,
+  direction = 1,
+  subtype = 0,
+  sprite = "entities/dark_room",
+}
+
+npc{
+  name = "room_overlay_17",
+  layer = 2,
+  x = 1408,
+  y = 61,
+  direction = 1,
+  subtype = 0,
+  sprite = "entities/dark_room",
+}
+
+npc{
+  name = "room_overlay_18",
+  layer = 2,
+  x = 1408,
+  y = 333,
+  direction = 1,
+  subtype = 0,
+  sprite = "entities/dark_room",
+}
+
+npc{
+  name = "room_overlay_19",
+  layer = 2,
+  x = 1408,
+  y = 605,
+  direction = 1,
+  subtype = 0,
+  sprite = "entities/dark_room",
+}
+
+npc{
+  name = "room_overlay_20",
+  layer = 2,
+  x = 1072,
+  y = 605,
+  direction = 1,
+  subtype = 0,
+  sprite = "entities/dark_room",
+}
+
+npc{
+  name = "room_overlay_21",
+  layer = 2,
+  x = 1072,
+  y = 877,
+  direction = 1,
+  subtype = 0,
+  sprite = "entities/dark_room",
+}
+
+npc{
+  name = "room_overlay_22",
+  layer = 2,
+  x = 1408,
+  y = 877,
+  direction = 1,
+  subtype = 0,
+  sprite = "entities/dark_room",
+}
+
+npc{
+  name = "room_overlay_23",
+  layer = 2,
+  x = 1408,
+  y = 1149,
+  direction = 1,
+  subtype = 0,
+  sprite = "entities/dark_room",
+}
+
+npc{
+  name = "room_overlay_24",
+  layer = 2,
+  x = 1072,
+  y = 1149,
+  direction = 1,
+  subtype = 0,
+  sprite = "entities/dark_room",
+}
+
+npc{
+  name = "room_overlay_25",
+  layer = 2,
+  x = 736,
+  y = 61,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/dark_room",
+}
+
+npc{
+  name = "room_overlay_link",
+  layer = 2,
+  x = 736,
+  y = 1427,
+  direction = 1,
+  subtype = 0,
+  sprite = "entities/dark_room",
 }
 
