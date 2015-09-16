@@ -278,19 +278,19 @@ function condition_manager:initialize(game)
   function hero:start_cursed(delay)
     if hero:is_condition_active('cursed') and condition_manager.timers['cursed'] ~= nil then
       condition_manager.timers['cursed']:stop()
-    end
+    else
+      hero:set_condition('cursed', true)
+      if game:get_ability("sword") > 0 then sword_level = game:get_ability("sword") end
+      game:set_ability("sword", 0)
+      if not game:get_value("cursed_once") then
+        game:start_dialog("_cursed")
+        game:set_value("cursed_once", true)
+      end
 
-    hero:set_condition('cursed', true)
-    sword_level = game:get_ability("sword")
-    game:set_ability("sword", 0)
-    if not game:get_value("cursed_once") then
-      game:start_dialog("_cursed")
-      game:set_value("cursed_once", true)
+      condition_manager.timers['cursed'] = sol.timer.start(hero, delay, function()
+        hero:stop_cursed()
+      end)
     end
-
-    condition_manager.timers['cursed'] = sol.timer.start(hero, delay, function()
-      hero:stop_cursed()
-    end)
   end
 
   function hero:stop_confusion()
