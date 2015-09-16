@@ -53,10 +53,12 @@ local function update_rooms()
   if game:get_value("dungeon_8_explored_1b_24") then room_overlay_24:get_sprite():set_direction(3) else room_overlay_24:get_sprite():set_direction(1) end
   if game:get_value("dungeon_8_explored_1b_25") then room_overlay_25:get_sprite():set_direction(3) else room_overlay_25:get_sprite():set_direction(1) end
 
-  if math.random(4) == 1 then  -- 1 in 4 chance of "switching off" a room each cycle.
+  if math.random(10) == 1 then  -- 1 in 10 chance of "switching off" a room each cycle.
     room = math.random(25)
-    game:set_value("dungeon_8_explored_1b_"..room, false)
-    sol.audio.play_sound("poe_soul")
+    if game:get_value("dungeon_8_explored_1b_"..room) then
+      game:set_value("dungeon_8_explored_1b_"..room, false)
+      sol.audio.play_sound("poe_soul")
+    end
   end
 
 end
@@ -102,7 +104,6 @@ print("game won!")
 end
 
 for enemy in map:get_entities("room_1_") do
-print(enemy:get_name())
   enemy.on_dead = function()
     if not map:has_entities("room_1_") then
       sol.audio.play_sound("lamp")
@@ -141,9 +142,9 @@ end
 
 -- Room 3 in map:on_update()
 
-for enemy in map:get_entities("room_4") do
+for enemy in map:get_entities("room_4_") do
   enemy.on_dead = function()
-    if not map:has_entities("room_4") then
+    if not map:has_entities("room_4_") then
       sol.audio.play_sound("lamp")
       game:set_value("dungeon_8_explored_1b_4", true)
     end
@@ -154,27 +155,27 @@ function room5_switch:on_activated()
   game:set_value("dungeon_8_explored_1b_5", true)
 end
 
-for enemy in map:get_entities("room_6") do
+for enemy in map:get_entities("room_6_") do
   enemy.on_dead = function()
-    if not map:has_entities("room_6") then
+    if not map:has_entities("room_6_") then
       sol.audio.play_sound("lamp")
       game:set_value("dungeon_8_explored_1b_6", true)
     end
   end
 end
 
-for enemy in map:get_entities("room_7") do
+for enemy in map:get_entities("room_7_") do
   enemy.on_dead = function()
-    if not map:has_entities("room_7") then
+    if not map:has_entities("room_7_") then
       sol.audio.play_sound("lamp")
       game:set_value("dungeon_8_explored_1b_7", true)
     end
   end
 end
 
-for enemy in map:get_entities("room_8") do
+for enemy in map:get_entities("room_8_") do
   enemy.on_dead = function()
-    if not map:has_entities("room_8") then
+    if not map:has_entities("room_8_") then
       sol.audio.play_sound("lamp")
       game:set_value("dungeon_8_explored_1b_8", true)
     end
@@ -213,45 +214,46 @@ function room10_arrow_2:on_activated()
   end
 end
 
-for entity in map:get_entities("room_11") do
+for entity in map:get_entities("room_11_") do
   entity.on_removed = function()
-    if not map:has_entities("room_11") then
+print(entity:get_name())
+    if not map:has_entities("room_11_") then
       sol.audio.play_sound("lamp")
       game:set_value("dungeon_8_explored_1b_11", true)
     end
   end
 end
 
-for enemy in map:get_entities("room_12") do
+for enemy in map:get_entities("room_12_") do
   enemy.on_dead = function()
-    if not map:has_entities("room_12") then
+    if not map:has_entities("room_12_") then
       sol.audio.play_sound("lamp")
       game:set_value("dungeon_8_explored_1b_12", true)
     end
   end
 end
 
-for enemy in map:get_entities("room_13") do
+for enemy in map:get_entities("room_13_") do
   enemy.on_dead = function()
-    if not map:has_entities("room_13") then
+    if not map:has_entities("room_13_") then
       sol.audio.play_sound("lamp")
       game:set_value("dungeon_8_explored_1b_13", true)
     end
   end
 end
 
-for enemy in map:get_entities("room_14") do
+for enemy in map:get_entities("room_14_") do
   enemy.on_dead = function()
-    if not map:has_entities("room_14") then
+    if not map:has_entities("room_14_") then
       sol.audio.play_sound("lamp")
       game:set_value("dungeon_8_explored_1b_14", true)
     end
   end
 end
 
-for enemy in map:get_entities("room_20") do
+for enemy in map:get_entities("room_20_") do
   enemy.on_dead = function()
-    if not map:has_entities("room_20") then
+    if not map:has_entities("room_20_") then
       sol.audio.play_sound("lamp")
       game:set_value("dungeon_8_explored_1b_20", true)
     end
