@@ -53,7 +53,7 @@ local function update_rooms()
   if game:get_value("dungeon_8_explored_1b_24") then room_overlay_24:get_sprite():set_direction(3) else room_overlay_24:get_sprite():set_direction(1) end
   if game:get_value("dungeon_8_explored_1b_25") then room_overlay_25:get_sprite():set_direction(3) else room_overlay_25:get_sprite():set_direction(1) end
 
-  if math.random(10) == 1 then  -- 1 in 10 chance of "switching off" a room each cycle.
+  if math.random(20) == 1 then  -- 1 in 20 chance of "switching off" a room each cycle.
     room = math.random(25)
     if game:get_value("dungeon_8_explored_1b_"..room) then
       game:set_value("dungeon_8_explored_1b_"..room, false)
@@ -61,15 +61,24 @@ local function update_rooms()
     end
   end
 
+  map:create_enemy({ x = 1160, y = 925, layer = 0, direction = 0, breed = "boulder" })
+  map:create_enemy({ x = 1304, y = 925, layer = 0, direction = 0, breed = "boulder" })
 end
 
 function map:on_started(destination)
+  -- The only way to get out of the game is to die.
+  game:set_starting_location("218", "from_outside")
+
   if destination == from_above then
     sol.timer.start(self, 1000, function()
       map:move_camera(992, 1453, 250, function()
         sol.audio.play_sound("poe_soul")
         game:start_dialog("shadow_link.sanctum_basement", game:get_player_name(), function()
-          shadow_link:get_sprite():fade_out()
+          shadow_link:get_sprite():fade_out(50, function()
+            enter_stairs_1:set_enabled(false)
+            enter_stairs_2:set_enabled(false)
+            enter_stairs_3:set_enabled(false)
+          end)
         end)
       end, 500, 10000)
     end)
@@ -97,9 +106,9 @@ local function game_won()
 print("game won!")
   sol.audio.play_sound("secret")
   map:move_camera(896, 144, 250, function()
-    stairs_1:set_enabled(true)
-    stairs_2:set_enabled(true)
-    stairs_3:set_enabled(true)
+    exit_stairs_1:set_enabled(true)
+    exit_stairs_2:set_enabled(true)
+    exit_stairs_3:set_enabled(true)
   end, 500, 2000)
 end
 
@@ -251,11 +260,49 @@ for enemy in map:get_entities("room_14_") do
   end
 end
 
+for enemy in map:get_entities("room_17_") do
+  enemy.on_dead = function()
+    if not map:has_entities("room_17_") then
+      sol.audio.play_sound("lamp")
+      game:set_value("dungeon_8_explored_1b_17", true)
+    end
+  end
+end
+
 for enemy in map:get_entities("room_20_") do
   enemy.on_dead = function()
     if not map:has_entities("room_20_") then
       sol.audio.play_sound("lamp")
       game:set_value("dungeon_8_explored_1b_20", true)
+    end
+  end
+end
+
+function room21_crystal:on_activated()
+print("room 21 activated")
+  sol.audio.play_sound("lamp")
+  game:set_value("dungeon_8_explored_1b_21", true)
+end
+
+function room22_switch:on_activated()
+  sol.audio.play_sound("lamp")
+  game:set_value("dungeon_8_explored_1b_22", true)
+end
+
+for enemy in map:get_entities("room_23_") do
+  enemy.on_dead = function()
+    if not map:has_entities("room_23_") then
+      sol.audio.play_sound("lamp")
+      game:set_value("dungeon_8_explored_1b_23", true)
+    end
+  end
+end
+
+for enemy in map:get_entities("room_24_") do
+  enemy.on_dead = function()
+    if not map:has_entities("room_24_") then
+      sol.audio.play_sound("lamp")
+      game:set_value("dungeon_8_explored_1b_24", true)
     end
   end
 end
