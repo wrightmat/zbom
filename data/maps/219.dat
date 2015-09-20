@@ -19483,7 +19483,7 @@ dynamic_tile{
   name = "room19_pit_2",
   layer = 0,
   x = 1552,
-  y = 688,
+  y = 680,
   pattern = "524",
   width = 32,
   height = 32,
@@ -19494,11 +19494,35 @@ dynamic_tile{
   name = "room19_pit_3",
   layer = 0,
   x = 1552,
-  y = 752,
+  y = 760,
   pattern = "524",
   width = 32,
   height = 32,
   enabled_at_start = true,
+}
+
+switch{
+  name = "room19_switch_1",
+  layer = 0,
+  x = 1664,
+  y = 728,
+  subtype = "walkable",
+  sprite = "entities/switch_star",
+  sound = "switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+switch{
+  name = "room19_switch_2",
+  layer = 0,
+  x = 1560,
+  y = 728,
+  subtype = "walkable",
+  sprite = "entities/switch_star",
+  sound = "switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
 }
 
 tile{
