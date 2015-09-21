@@ -61,8 +61,13 @@ function action_icon:compute_icon_region_y()
       ["speak"] = 12,
       ["change"] = 13,
       ["swim"] = 14,
+      ["custom_lift"] = 8,
+      ["custom_carry"] = nil,
+      ["custom_jump"] = nil,
     }
-    self.icon_region_y = 24 * effects_indexes[self.effect_displayed]
+    if effects_indexes[action_icon.effect_displayed] ~= nil then
+      action_icon.icon_region_y = 24 * effects_indexes[action_icon.effect_displayed]
+    end
   end
 end
 

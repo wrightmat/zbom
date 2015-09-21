@@ -5555,6 +5555,15 @@ dynamic_tile{
   enabled_at_start = false,
 }
 
+custom_entity{
+  layer = 0,
+  x = 856,
+  y = 277,
+  direction = 0,
+  sprite = "entities/mine",
+  model = "generic_portable",
+}
+
 tile{
   layer = 1,
   x = 104,

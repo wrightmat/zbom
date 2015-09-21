@@ -34,6 +34,16 @@ function condition_manager:initialize(game)
 
   function game:on_command_pressed(command)
 
+    local action_effect = game:get_custom_command_effect("action")
+    -- Custom action effects.
+    if action_effect and game:get_interaction_entity() then
+      game:get_hero().custom_interaction:on_custom_interaction(); return true
+    end
+    if attack_effect == "custom_carry" then
+      -- THIS IS NEEDED FOR THE GENERIC_PORTABLE.LUA SCRIPT!!!!
+      game:get_hero().custom_carry:throw(); return true
+    end
+
     -- It takes stamina to use an attack, action or item - but only if it's actually equipped
     if (command == "item_1" or command == "item_2" or command == "attack" or command == "action") and game:get_command_effect(command) ~= nil then
       if (command == "item_1" and game:get_item_assigned(1) == nil) or (command == "item_2" and game:get_item_assigned(2) == nil) then return false end

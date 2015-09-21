@@ -148,6 +148,26 @@ local function initialize_npcs()
   end
 end
 
+local function initialize_hero()
+  -- Modify metatable of hero to make carried entities follow him with hero:on_position_changed().
+  local hero_metatable = sol.main.get_metatable("hero")
+  function hero_metatable:on_position_changed()
+    if self.custom_carry then
+      self:set_animation("carrying_walking")
+      local x, y, layer = self:get_position()
+      self.custom_carry:set_position(x, y+2, layer)
+    end
+  end
+
+  function hero_metatable:set_carrying(boolean)
+    if boolean then
+      self:set_animation("carrying_stopped")
+    else
+      self:set_animation("stopped")
+    end
+  end
+end
+
 
 -- Initialize map entity related behaviors.
 local function initialize_entities()
@@ -155,6 +175,7 @@ local function initialize_entities()
   initialize_enemies()
   initialize_sensors()
   initialize_npcs()
+  initialize_hero()
 end
 
 local function initialize_maps()

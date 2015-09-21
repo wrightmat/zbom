@@ -10,8 +10,11 @@ sol.main.load_file("scripts/hud/hud")(game)
 sol.main.load_file("scripts/dungeons")(game)
 sol.main.load_file("scripts/equipment")(game)
 sol.main.load_file("scripts/particle_emitter")(game)
+sol.main.load_file("scripts/custom_interactions.lua")(game)
+sol.main.load_file("scripts/collision_test_manager.lua")(game)
 local camera_manager = require("scripts/camera_manager")
 local condition_manager = require("scripts/hero_condition")
+
 
 function game:on_started()
   -- Set up the dialog box, HUD, hero conditions and effects.

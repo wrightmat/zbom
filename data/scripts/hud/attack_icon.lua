@@ -59,8 +59,12 @@ function attack_icon:compute_icon_region_y()
         ["return"] = 2,
         ["validate"] = 3,
         ["skip"] = 4,
+        ["custom_carry"] = 5,
+        ["custom_jump"] = nil,
       }
-      self.icon_region_y = 24 * effects_indexes[self.effect_displayed]
+      if effects_indexes[attack_icon.effect_displayed] ~= nil then
+        attack_icon.icon_region_y = 24 * effects_indexes[attack_icon.effect_displayed]
+      end
     end
   end
 end
