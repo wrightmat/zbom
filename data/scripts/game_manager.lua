@@ -12,21 +12,22 @@ sol.main.load_file("scripts/equipment")(game)
 sol.main.load_file("scripts/particle_emitter")(game)
 sol.main.load_file("scripts/custom_interactions.lua")(game)
 sol.main.load_file("scripts/collision_test_manager.lua")(game)
+local hud_manager = require("scripts/hud/hud")
 local camera_manager = require("scripts/camera_manager")
 local condition_manager = require("scripts/hero_condition")
-
+local custom_command_effects = {}
 
 function game:on_started()
   -- Set up the dialog box, HUD, hero conditions and effects.
   condition_manager:initialize(self)
   self:initialize_dialog_box()
-  self:initialize_hud()
+  self.hud = hud_manager:create(game)
   camera = camera_manager:create(game)
 end
 
 function game:on_finished()
   -- Clean what was created by on_started().
-  self:quit_hud()
+  self.hud:quit()
   self:quit_dialog_box()
   camera = nil
 end
@@ -34,17 +35,17 @@ end
 -- This event is called when a new map has just become active.
 function game:on_map_changed(map)
   -- Notify the hud.
-  self:hud_on_map_changed(map)
+  self.hud:on_map_changed(map)
 end
 
 function game:on_paused()
-  self:hud_on_paused()
+  self.hud:on_paused()
   self:start_pause_menu()
 end
 
 function game:on_unpaused()
   self:stop_pause_menu()
-  self:hud_on_unpaused()
+  self.hud:on_unpaused()
 end
 
 function game:get_player_name()
@@ -88,6 +89,17 @@ function game:switch_time_of_day()
     game:set_value("time_of_day", "day")
   end
   return true
+end
+
+-- Returns the current customized effect of the action or attack command.
+-- nil means the built-in effect.
+function game:get_custom_command_effect(command)
+  return custom_command_effects[command]
+end
+-- Overrides the effect of the action or attack command.
+-- Set the effect to nil to restore the built-in effect.
+function game:set_custom_command_effect(command, effect)
+  custom_command_effects[command] = effect
 end
 
 -- Run the game.

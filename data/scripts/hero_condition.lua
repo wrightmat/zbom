@@ -34,14 +34,14 @@ function condition_manager:initialize(game)
 
   function game:on_command_pressed(command)
 
-    local action_effect = game:get_custom_command_effect("action")
-    -- Custom action effects.
-    if action_effect and game:get_interaction_entity() then
-      game:get_hero().custom_interaction:on_custom_interaction(); return true
-    end
-    if attack_effect == "custom_carry" then
-      -- THIS IS NEEDED FOR THE GENERIC_PORTABLE.LUA SCRIPT!!!!
-      game:get_hero().custom_carry:throw(); return true
+    if command == "action" then
+      local action_effect = game:get_custom_command_effect("action")
+      -- Custom action effects. THIS IS NEEDED FOR THE GENERIC_PORTABLE.LUA SCRIPT!!!!
+      if action_effect and game:get_interaction_entity() then
+        game:get_hero().custom_interaction:on_custom_interaction(); return true
+      elseif game:get_hero().custom_carry then
+        game:get_hero().custom_carry:throw(); return true
+      end
     end
 
     -- It takes stamina to use an attack, action or item - but only if it's actually equipped

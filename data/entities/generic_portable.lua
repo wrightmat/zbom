@@ -37,7 +37,7 @@ entity.is_independent = nil -- If true, saves position on the map (when the hero
 entity.can_push_buttons = nil
 entity.moved_on_platform = true
 entity.state = "on_ground"
-entity.sound = "item_fall" -- Default id of the bouncing sound.
+entity.sound = "throw" -- Default id of the bouncing sound.
 entity.action_effect = "custom_lift" -- Used to interact (see custom_interactions script).
 
 local game = entity:get_game()
@@ -65,8 +65,8 @@ end
 -- On interaction, lift the entity.
 function entity:on_custom_interaction()
   game:set_interaction_enabled(entity, false)
-	game:set_custom_command_effect("action", nil) -- Change the custom action effects.
-	game:set_custom_command_effect("attack", "custom_carry")
+	game:set_custom_command_effect("action", "custom_carry") -- Change the custom action effects.
+	game:set_custom_command_effect("attack", nil)
   self:lift()
 end 
  
@@ -130,7 +130,8 @@ function entity:throw()
   local temp_moved_on_platform = self.moved_on_platform; self.moved_on_platform = nil
   -- Change animation set of hero to stop carrying. Start animation throw of the hero.
   hero:set_carrying(false)
-  hero:set_animation("throw", function() 
+  hero:set_animation("grabbing")
+  sol.timer.start(self, 200, function()
     hero:set_animation("stopped"); hero:set_invincible(false); hero:unfreeze()
   end)
   game:set_custom_command_effect("action", nil); game:set_custom_command_effect("attack", nil)
@@ -139,7 +140,7 @@ function entity:throw()
   local hx,hy,hz = hero:get_position(); self:set_position(hx,hy,hz); sprite:set_xy(0,-22)
   -- Create a custom_entity for shadow (this one is drawn below).
   self.shadow = map:create_custom_entity({direction=0,layer=hz,x=hx,y=hy})    
-  self.shadow:create_sprite("things/ground_effects") -- Create sprite of the shadow.
+  self.shadow:create_sprite("entities/ground_effects") -- Create sprite of the shadow.
   self.shadow:get_sprite():set_animation("shadow_small")
   self.shadow:bring_to_back()
   -- Set falling animation if any.
@@ -222,27 +223,27 @@ function entity:check_on_ground()
     x = math.floor(x/8)*8 + 4; if map:get_ground(x, y, layer) ~= "hole" then x = x + 4 end
     y = math.floor(y/8)*8 + 4; if map:get_ground(x, y, layer) ~= "hole" then y = y + 4 end
     local fall_on_hole = map:create_custom_entity({x = x, y = y, layer = layer, direction = 0})
-    local sprite = fall_on_hole:create_sprite("things/ground_effects")
+    local sprite = fall_on_hole:create_sprite("entities/ground_effects")
     sprite:set_animation("hole_fall")
     self.shadow:remove(); self:remove()
     function sprite:on_animation_finished() fall_on_hole:remove() end
-    sol.audio.play_sound("falling_on_hole")
+    --sol.audio.play_sound("falling_on_hole")
   elseif ground == "deep_water" then
     -- Sink in water.
     local water_splash = map:create_custom_entity({x = x, y = y, layer = layer, direction = 0})    
-    local sprite = water_splash:create_sprite("things/ground_effects")
+    local sprite = water_splash:create_sprite("entities/ground_effects")
     sprite:set_animation("water_splash")
     self.shadow:remove(); self:remove()
     function sprite:on_animation_finished() water_splash:remove() end
-    sol.audio.play_sound("splash")
+    --sol.audio.play_sound("splash")
   elseif ground == "lava" then
     -- Sink in lava.
     local lava_splash = map:create_custom_entity({x = x, y = y, layer = layer, direction = 0})    
-    local sprite = lava_splash:create_sprite("things/ground_effects")
+    local sprite = lava_splash:create_sprite("entities/ground_effects")
     sprite:set_animation("lava_splash")
     self.shadow:remove(); self:remove()
     function sprite:on_animation_finished() lava_splash:remove() end
-    sol.audio.play_sound("splash")
+    --sol.audio.play_sound("splash")
   elseif self.state == "falling" then -- Used for bounces, when the entity is thrown.
     sol.audio.play_sound(self.sound) -- Bouncing sound.
   end

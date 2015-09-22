@@ -158,6 +158,15 @@ local function initialize_hero()
       self.custom_carry:set_position(x, y+2, layer)
     end
   end
+  function hero_metatable:on_movement_finished()
+print("movement finished")
+    if self.custom_carry then
+      self:set_animation("carrying_stopped")
+    end
+  end
+  function hero_metatable:on_movement_changed(movement)
+print("movement changed")
+  end
 
   function hero_metatable:set_carrying(boolean)
     if boolean then

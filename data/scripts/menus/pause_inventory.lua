@@ -36,7 +36,6 @@ local item_names = {
 }
 
 function inventory_submenu:on_started()
-
   submenu.on_started(self)
 
   self.cursor_sprite = sol.sprite.create("menus/pause_cursor")
@@ -78,7 +77,6 @@ function inventory_submenu:on_started()
 end
 
 function inventory_submenu:on_finished()
-
   if submenu.on_finished then
     submenu.on_finished(self)
   end
@@ -88,13 +86,12 @@ function inventory_submenu:on_finished()
   end
 
   if self.game.hud ~= nil then
-    self.game.hud.item_icon_1.surface:set_opacity(255)
-    self.game.hud.item_icon_2.surface:set_opacity(255)
+    self.game.hud.elements[10].surface:set_opacity(255)
+    self.game.hud.elements[11].surface:set_opacity(255)
   end
 end
 
 function inventory_submenu:set_cursor_position(row, column)
-
   self.cursor_row = row
   self.cursor_column = column
 
@@ -117,27 +114,23 @@ function inventory_submenu:set_cursor_position(row, column)
     self:set_caption(nil)
     self.game:set_custom_command_effect("action", nil)
   end
-  self.game.hud.item_icon_1.surface:set_opacity(item_icon_opacity)
-  self.game.hud.item_icon_2.surface:set_opacity(item_icon_opacity)
+  self.game.hud.elements[10].surface:set_opacity(item_icon_opacity) --item_icon_1
+  self.game.hud.elements[11].surface:set_opacity(item_icon_opacity) --item_icon_2
 end
 
 function inventory_submenu:get_selected_index()
-
   return self.cursor_row * 7 + self.cursor_column
 end
 
 function inventory_submenu:is_item_selected()
-
   local item_name = item_names[self:get_selected_index() + 1]
   return self.game:get_item(item_name):get_variant() > 0
 end
 
 function inventory_submenu:on_command_pressed(command)
-  
   local handled = submenu.on_command_pressed(self, command)
 
   if not handled then
-
     if command == "action" then
       if self.game:get_command_effect("action") == nil
             and self.game:get_custom_command_effect("action") == "info" then
@@ -192,7 +185,6 @@ function inventory_submenu:on_command_pressed(command)
 end
 
 function inventory_submenu:on_draw(dst_surface)
-
   self:draw_background(dst_surface)
   self:draw_caption(dst_surface)
 
@@ -257,7 +249,6 @@ function inventory_submenu:show_info_message()
     self.game:set_custom_command_effect("attack", "save")
     self.game:set_dialog_position("auto")  -- Back to automatic position.
   end)
-
 end
 
 -- Assigns the selected item to a slot (1 or 2).
@@ -332,4 +323,3 @@ function inventory_submenu:finish_assigning_item()
 end
 
 return inventory_submenu
-
