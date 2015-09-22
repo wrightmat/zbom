@@ -4661,24 +4661,6 @@ tile{
   pattern = "1128",
 }
 
-tile{
-  layer = 0,
-  x = 888,
-  y = 256,
-  width = 32,
-  height = 32,
-  pattern = "1127",
-}
-
-tile{
-  layer = 0,
-  x = 944,
-  y = 264,
-  width = 16,
-  height = 16,
-  pattern = "825",
-}
-
 sensor{
   name = "sensor_music_3",
   layer = 0,
@@ -5571,15 +5553,6 @@ dynamic_tile{
   width = 16,
   height = 16,
   enabled_at_start = false,
-}
-
-custom_entity{
-  layer = 0,
-  x = 856,
-  y = 277,
-  direction = 0,
-  sprite = "entities/mine",
-  model = "generic_portable",
 }
 
 tile{
