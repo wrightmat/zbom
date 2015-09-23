@@ -9,12 +9,13 @@ sol.main.load_file("scripts/menus/dialog_box")(game)
 sol.main.load_file("scripts/hud/hud")(game)
 sol.main.load_file("scripts/dungeons")(game)
 sol.main.load_file("scripts/equipment")(game)
-sol.main.load_file("scripts/particle_emitter")(game)
 sol.main.load_file("scripts/custom_interactions.lua")(game)
 sol.main.load_file("scripts/collision_test_manager.lua")(game)
 local hud_manager = require("scripts/hud/hud")
 local camera_manager = require("scripts/camera_manager")
 local condition_manager = require("scripts/hero_condition")
+game.save_between_maps = require("scripts/save_between_maps")
+game.independent_entities = {}
 local custom_command_effects = {}
 
 function game:on_started()
@@ -36,6 +37,9 @@ end
 function game:on_map_changed(map)
   -- Notify the hud.
   self.hud:on_map_changed(map)
+
+  game:set_custom_command_effect("action", nil) -- Reset. To avoid problems with custom_interactions.lua.
+  game.save_between_maps:load_map(map) -- Create saved and carried entities.
 end
 
 function game:on_paused()

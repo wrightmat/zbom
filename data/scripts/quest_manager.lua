@@ -153,27 +153,17 @@ local function initialize_hero()
   local hero_metatable = sol.main.get_metatable("hero")
   function hero_metatable:on_position_changed()
     if self.custom_carry then
+      sol.timer.start(self, 10, function()
+        if self:get_animation() == "stopped" or self:get_animation() == "stopped_with_shield" then self:set_animation("carrying_stopped") end
+      end)
       self:set_animation("carrying_walking")
       local x, y, layer = self:get_position()
       self.custom_carry:set_position(x, y+2, layer)
     end
   end
-  function hero_metatable:on_movement_finished()
-print("movement finished")
-    if self.custom_carry then
-      self:set_animation("carrying_stopped")
-    end
-  end
-  function hero_metatable:on_movement_changed(movement)
-print("movement changed")
-  end
 
   function hero_metatable:set_carrying(boolean)
-    if boolean then
-      self:set_animation("carrying_stopped")
-    else
-      self:set_animation("stopped")
-    end
+    if boolean then self:set_animation("carrying_stopped") end
   end
 end
 
@@ -267,7 +257,10 @@ local function initialize_maps()
 	self:create_enemy({ breed="redead", x=ex, y=ey, layer=0, direction=1 })
       end
     end
+  end
 
+  function map_metatable:on_finished()
+    self:get_game().save_between_maps:save_map(self)
   end
 
   function map_metatable:on_update()

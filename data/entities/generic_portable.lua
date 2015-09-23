@@ -65,8 +65,8 @@ end
 -- On interaction, lift the entity.
 function entity:on_custom_interaction()
   game:set_interaction_enabled(entity, false)
-	game:set_custom_command_effect("action", "custom_carry") -- Change the custom action effects.
-	game:set_custom_command_effect("attack", nil)
+	game:set_custom_command_effect("action", nil) -- Change the custom action effects.
+	game:set_custom_command_effect("attack", "custom_carry")
   self:lift()
 end 
  
@@ -135,7 +135,7 @@ function entity:throw()
     hero:set_animation("stopped"); hero:set_invincible(false); hero:unfreeze()
   end)
   game:set_custom_command_effect("action", nil); game:set_custom_command_effect("attack", nil)
-  local dx, dy = 0, 0; if animation == "walking" then dx, dy = math.cos(direction*math.pi/2), -math.sin(direction*math.pi/2) end
+  local dx, dy = 0, 0; if animation == "carrying_walking" then dx, dy = math.cos(direction*math.pi/2), -math.sin(direction*math.pi/2) end
   -- Set position on hero position and the sprite above of the entity.
   local hx,hy,hz = hero:get_position(); self:set_position(hx,hy,hz); sprite:set_xy(0,-22)
   -- Create a custom_entity for shadow (this one is drawn below).
@@ -174,7 +174,7 @@ function entity:throw()
       return true
     end)
     -- Move the shadow if necessary. Make the entity stop if its shadow collisions with some obstacle.
-    if animation == "walking" then
+    if animation == "carrying_walking" then
       local m = sol.movement.create("straight"); m:set_angle(direction*math.pi/2)
       m:set_speed(speed); m:set_max_distance(x_f); m:set_smooth(false)
       function m:on_obstacle_reached() m:stop(); is_obstacle_reached = true end
