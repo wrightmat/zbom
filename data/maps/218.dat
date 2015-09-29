@@ -7337,6 +7337,16 @@ wall{
   stops_projectiles = true,
 }
 
+npc{
+  name = "dark_mirror",
+  layer = 0,
+  x = 816,
+  y = 1045,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/dark_mirror",
+}
+
 tile{
   layer = 2,
   x = 704,

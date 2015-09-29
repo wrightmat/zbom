@@ -4,6 +4,7 @@ local game = map:get_game()
 local arrow_puzzle_nb_correct = 0
 local arrow_puzzle_correct = false
 local room9_1, room9_2, room9_3 = false
+local room17_1, room17_2, room17_3 = false
 
 ----------------------------------------------
 -- Dungeon 8: Interloper Sanctum (Basement) --
@@ -260,14 +261,47 @@ for enemy in map:get_entities("room_14_") do
   end
 end
 
-for enemy in map:get_entities("room_17_") do
+for enemy in map:get_entities("room_15_") do
   enemy.on_dead = function()
-    if not map:has_entities("room_17_") then
+    if not map:has_entities("room_15_") then
       sol.audio.play_sound("lamp")
-      game:set_value("dungeon_8_explored_1b_17", true)
+      game:set_value("dungeon_8_explored_1b_15", true)
     end
   end
 end
+
+for enemy in map:get_entities("room_16_") do
+  enemy.on_dead = function()
+    if not map:has_entities("room_16_") then
+      sol.audio.play_sound("lamp")
+      game:set_value("dungeon_8_explored_1b_16", true)
+    end
+  end
+end
+
+function room17_switch_1:on_activated()
+  room17_1 = true
+  if room17_1 and room17_2 and room17_3 then game:set_value("dungeon_8_explored_1b_17", true) end
+end
+function room17_switch_2:on_activated()
+  room17_2 = true
+  if room17_1 and room17_2 and room17_3 then game:set_value("dungeon_8_explored_1b_17", true) end
+end
+function room17_switch_3:on_activated()
+  room17_3 = true
+  if room17_1 and room17_2 and room17_3 then game:set_value("dungeon_8_explored_1b_17", true) end
+end
+
+for enemy in map:get_entities("room_18_") do
+  enemy.on_dead = function()
+    if not map:has_entities("room_18_") then
+      sol.audio.play_sound("lamp")
+      game:set_value("dungeon_8_explored_1b_18", true)
+    end
+  end
+end
+
+-- 19: Star switch
 
 for enemy in map:get_entities("room_20_") do
   enemy.on_dead = function()

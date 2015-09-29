@@ -14274,6 +14274,105 @@ tile{
   pattern = "294",
 }
 
+tile{
+  layer = 0,
+  x = 1456,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "237",
+}
+
+tile{
+  layer = 0,
+  x = 1432,
+  y = 144,
+  width = 272,
+  height = 32,
+  pattern = "524",
+}
+
+tile{
+  layer = 0,
+  x = 1432,
+  y = 208,
+  width = 112,
+  height = 32,
+  pattern = "524",
+}
+
+tile{
+  layer = 0,
+  x = 1512,
+  y = 232,
+  width = 32,
+  height = 64,
+  pattern = "524",
+}
+
+tile{
+  layer = 0,
+  x = 1560,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "237",
+}
+
+tile{
+  layer = 0,
+  x = 1664,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "237",
+}
+
+tile{
+  layer = 0,
+  x = 1472,
+  y = 264,
+  width = 16,
+  height = 16,
+  pattern = "237",
+}
+
+tile{
+  layer = 0,
+  x = 1440,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "525",
+}
+
+tile{
+  layer = 0,
+  x = 1440,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "525",
+}
+
+tile{
+  layer = 0,
+  x = 1680,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "525",
+}
+
+tile{
+  layer = 0,
+  x = 1680,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "525",
+}
+
 dynamic_tile{
   name = "enter_stairs_1",
   layer = 0,
@@ -18724,7 +18823,7 @@ wall{
 }
 
 enemy{
-  name = "room_17_keese_1",
+  name = "room_16_keese_1",
   layer = 0,
   x = 1288,
   y = 253,
@@ -18734,7 +18833,7 @@ enemy{
 }
 
 enemy{
-  name = "room_17_keese_2",
+  name = "room_16_keese_2",
   layer = 0,
   x = 1160,
   y = 141,
@@ -18744,7 +18843,7 @@ enemy{
 }
 
 enemy{
-  name = "room_17_keese_3",
+  name = "room_16_keese_3",
   layer = 0,
   x = 1192,
   y = 173,
@@ -18754,7 +18853,7 @@ enemy{
 }
 
 enemy{
-  name = "room_17_keese_4",
+  name = "room_16_keese_4",
   layer = 0,
   x = 1272,
   y = 221,
@@ -18764,7 +18863,7 @@ enemy{
 }
 
 enemy{
-  name = "room_17_keese_5",
+  name = "room_16_keese_5",
   layer = 0,
   x = 1320,
   y = 253,
@@ -18774,7 +18873,7 @@ enemy{
 }
 
 enemy{
-  name = "room_17_keese_6",
+  name = "room_16_keese_6",
   layer = 0,
   x = 1152,
   y = 173,
@@ -18784,7 +18883,7 @@ enemy{
 }
 
 enemy{
-  name = "room_17_keese_7",
+  name = "room_16_keese_7",
   layer = 0,
   x = 1192,
   y = 141,
@@ -18794,7 +18893,7 @@ enemy{
 }
 
 enemy{
-  name = "room_17_keese_8",
+  name = "room_16_keese_8",
   layer = 0,
   x = 1312,
   y = 221,
@@ -18804,7 +18903,7 @@ enemy{
 }
 
 enemy{
-  name = "room_17_tektite_1",
+  name = "room_16_tektite_1",
   layer = 0,
   x = 1160,
   y = 253,
@@ -18814,7 +18913,7 @@ enemy{
 }
 
 enemy{
-  name = "room_17_tektite_2",
+  name = "room_16_tektite_2",
   layer = 0,
   x = 1216,
   y = 221,
@@ -18824,7 +18923,7 @@ enemy{
 }
 
 enemy{
-  name = "room_17_tektite_3",
+  name = "room_16_tektite_3",
   layer = 0,
   x = 1256,
   y = 165,
@@ -18834,7 +18933,7 @@ enemy{
 }
 
 enemy{
-  name = "room_17_tektite_4",
+  name = "room_16_tektite_4",
   layer = 0,
   x = 1312,
   y = 133,
@@ -19523,6 +19622,511 @@ switch{
   sound = "switch",
   needs_block = false,
   inactivate_when_leaving = false,
+}
+
+custom_entity{
+  name = "hook_1",
+  layer = 0,
+  x = 1464,
+  y = 109,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_2",
+  layer = 0,
+  x = 1568,
+  y = 125,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_5",
+  layer = 0,
+  x = 1672,
+  y = 109,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_6",
+  layer = 0,
+  x = 1480,
+  y = 277,
+  direction = 0,
+  model = "hook",
+}
+
+switch{
+  name = "room17_switch_1",
+  layer = 0,
+  x = 1504,
+  y = 112,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  sound = "switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+switch{
+  name = "room17_switch_2",
+  layer = 0,
+  x = 1616,
+  y = 112,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  sound = "switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+switch{
+  name = "room17_switch_3",
+  layer = 0,
+  x = 1448,
+  y = 256,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  sound = "switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+custom_entity{
+  name = "quicksand_1",
+  layer = 0,
+  x = 1152,
+  y = 461,
+  direction = 3,
+  sprite = "entities/quicksand",
+  model = "quicksand",
+}
+
+custom_entity{
+  name = "quicksand_2",
+  layer = 0,
+  x = 1312,
+  y = 461,
+  direction = 3,
+  sprite = "entities/quicksand",
+  model = "quicksand",
+}
+
+custom_entity{
+  name = "quicksand_3",
+  layer = 0,
+  x = 1232,
+  y = 413,
+  direction = 3,
+  sprite = "entities/quicksand",
+  model = "quicksand",
+}
+
+custom_entity{
+  name = "quicksand_4",
+  layer = 0,
+  x = 1232,
+  y = 517,
+  direction = 3,
+  sprite = "entities/quicksand",
+  model = "quicksand",
+}
+
+enemy{
+  name = "room_15_leever_1",
+  layer = 0,
+  x = 1208,
+  y = 469,
+  direction = 0,
+  breed = "leever_purple",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "room_15_leever_2",
+  layer = 0,
+  x = 1256,
+  y = 469,
+  direction = 0,
+  breed = "leever_purple",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "room_15_leever_3",
+  layer = 0,
+  x = 1176,
+  y = 421,
+  direction = 0,
+  breed = "leever_purple",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "room_15_leever_4",
+  layer = 0,
+  x = 1296,
+  y = 421,
+  direction = 0,
+  breed = "leever_purple",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "room_15_leever_5",
+  layer = 0,
+  x = 1176,
+  y = 525,
+  direction = 0,
+  breed = "leever_purple",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "room_15_leever_6",
+  layer = 0,
+  x = 1296,
+  y = 525,
+  direction = 0,
+  breed = "leever_purple",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "room_18_enemy_1",
+  layer = 0,
+  x = 1496,
+  y = 421,
+  direction = 3,
+  breed = "aquadracini",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "room_18_enemy_2",
+  layer = 0,
+  x = 1488,
+  y = 509,
+  direction = 3,
+  breed = "aquadracini",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "room_18_enemy_3",
+  layer = 0,
+  x = 1536,
+  y = 461,
+  direction = 3,
+  breed = "aquadracini",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "room_18_enemy_4",
+  layer = 0,
+  x = 1608,
+  y = 413,
+  direction = 3,
+  breed = "aquadracini",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "room_18_enemy_5",
+  layer = 0,
+  x = 1624,
+  y = 485,
+  direction = 3,
+  breed = "aquadracini",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "room_18_enemy_6",
+  layer = 0,
+  x = 1568,
+  y = 525,
+  direction = 3,
+  breed = "aquadracini",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "room_18_enemy_7",
+  layer = 0,
+  x = 1664,
+  y = 533,
+  direction = 3,
+  breed = "aquadracini",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "room_18_enemy_8",
+  layer = 0,
+  x = 1664,
+  y = 437,
+  direction = 3,
+  breed = "aquadracini",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "room_18_enemy_9",
+  layer = 0,
+  x = 1560,
+  y = 405,
+  direction = 3,
+  breed = "aquadracini",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "room_18_enemy_10",
+  layer = 0,
+  x = 1544,
+  y = 549,
+  direction = 3,
+  breed = "aquadracini",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "room_18_enemy_11",
+  layer = 0,
+  x = 1472,
+  y = 469,
+  direction = 3,
+  breed = "aquadracini",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "room_18_enemy_12",
+  layer = 0,
+  x = 1464,
+  y = 397,
+  direction = 3,
+  breed = "aquadracini",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "room_18_enemy_13",
+  layer = 0,
+  x = 1472,
+  y = 541,
+  direction = 3,
+  breed = "aquadracini",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "room_18_enemy_14",
+  layer = 0,
+  x = 1584,
+  y = 453,
+  direction = 3,
+  breed = "aquadracini",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "room_18_enemy_15",
+  layer = 0,
+  x = 1664,
+  y = 397,
+  direction = 3,
+  breed = "aquadracini",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "room_18_enemy_16",
+  layer = 0,
+  x = 1632,
+  y = 541,
+  direction = 3,
+  breed = "aquadracini",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "room_18_enemy_17",
+  layer = 0,
+  x = 1672,
+  y = 485,
+  direction = 3,
+  breed = "aquadracini",
+  treasure_name = "random",
+}
+
+destructible{
+  layer = 0,
+  x = 1448,
+  y = 381,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 1448,
+  y = 557,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 1688,
+  y = 557,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 1688,
+  y = 381,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+enemy{
+  name = "room_14_armos_1",
+  layer = 0,
+  x = 816,
+  y = 429,
+  direction = 3,
+  breed = "armos",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "room_14_armos_2",
+  layer = 0,
+  x = 896,
+  y = 429,
+  direction = 3,
+  breed = "armos",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "room_14_armos_3",
+  layer = 0,
+  x = 976,
+  y = 429,
+  direction = 3,
+  breed = "armos",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "room_14_armos_4",
+  layer = 0,
+  x = 816,
+  y = 477,
+  direction = 3,
+  breed = "armos",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "room_14_armos_5",
+  layer = 0,
+  x = 816,
+  y = 525,
+  direction = 3,
+  breed = "armos",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "room_14_armos_6",
+  layer = 0,
+  x = 896,
+  y = 525,
+  direction = 3,
+  breed = "armos",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "room_14_armos_7",
+  layer = 0,
+  x = 896,
+  y = 477,
+  direction = 3,
+  breed = "armos",
+  treasure_name = "arrow",
+  treasure_variant = 3,
+}
+
+enemy{
+  name = "room_14_armos_8",
+  layer = 0,
+  x = 976,
+  y = 477,
+  direction = 3,
+  breed = "armos",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "room_14_armos_9",
+  layer = 0,
+  x = 976,
+  y = 525,
+  direction = 3,
+  breed = "armos",
+  treasure_name = "random",
+}
+
+tile{
+  layer = 1,
+  x = 1456,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "239",
+}
+
+tile{
+  layer = 1,
+  x = 1560,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "239",
+}
+
+tile{
+  layer = 1,
+  x = 1664,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "239",
+}
+
+tile{
+  layer = 1,
+  x = 1472,
+  y = 248,
+  width = 16,
+  height = 16,
+  pattern = "239",
 }
 
 tile{

@@ -17,6 +17,7 @@ function map:on_started(destination)
   if not game:get_value("b1190") and not game:get_value("b1191") then
     boss_heart:set_enabled(false)
   end
+  dark_mirror:set_enabled(false)
 end
 
 for enemy in map:get_entities("wizzrobe_room6") do
