@@ -257,6 +257,7 @@ local function initialize_maps()
 	self:create_enemy({ breed="redead", x=ex, y=ey, layer=0, direction=1 })
       end
     end
+
   end
 
   function map_metatable:on_finished()
