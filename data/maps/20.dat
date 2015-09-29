@@ -8127,6 +8127,14 @@ npc{
   sprite = "npc/deku",
 }
 
+destination{
+  name = "from_game",
+  layer = 0,
+  x = 296,
+  y = 717,
+  direction = 1,
+}
+
 tile{
   layer = 2,
   x = 240,

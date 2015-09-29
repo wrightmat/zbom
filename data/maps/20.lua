@@ -53,27 +53,33 @@ function sensor_deku_tokay:on_activated()
   elseif game:get_value("i1068") >= 2 and game:get_value("i1068") <= 4 and hero:get_direction() == 0 then --only walking right
     game:set_dialog_position("top")
     game:start_dialog("tokay.0.desert")
-  elseif game:get_value("i1068") == 7 then
-    -- In the future there may be a mini-game to retrieve book piece, but for now just give it back
-    game:set_value("i1068", 9)
+  elseif game:get_value("i1068") == 7 or game:get_value("i1068") == 8 then
+    -- Mini-game to retrieve book piece.
     sol.audio.play_sound("monkey")
-    game:start_dialog("monkey.2.faron", function()
-      game:get_item("book_mudora"):set_variant(2) --give back book piece
-      game:set_value("b1061", true)
+    game:start_dialog("monkey.1.faron", function(answer)
+      if answer == 1 then
+        game:set_value("i1068", 8)
+        game:get_hero():teleport("171")
+      else
+        game:start_dialog("monkey.1.faron_no")
+      end
     end)
   end
 end
 
 function npc_monkey_1:on_interaction()
   game:set_dialog_style("default")
-  if game:get_value("i1068") == 7 then
-    game:set_value("i1068", 9)
+  if game:get_value("i1068") == 7 or game:get_value("i1068") == 8 then
+    -- Mini-game to retrieve book piece.
     sol.audio.play_sound("monkey")
-    game:start_dialog("monkey.2.faron", function()
-      game:get_item("book_mudora"):set_variant(2) --give back book piece
+    game:start_dialog("monkey.1.faron", function(answer)
+      if answer == 1 then
+        game:set_value("i1068", 8)
+        game:get_hero():teleport("171")
+      else
+        game:start_dialog("monkey.1.faron_no")
+      end
     end)
-  elseif game:get_value("i1068") == 8 then
-    -- may be a mini game later
   elseif game:get_value("i1068") == 9 then
     sol.audio.play_sound("monkey")
     game:start_dialog("monkey.3.faron")
@@ -85,14 +91,17 @@ end
 
 function npc_monkey_2:on_interaction()
   game:set_dialog_style("default")
-  if game:get_value("i1068") == 7 then
-    game:set_value("i1068", 9)
+  if game:get_value("i1068") == 7 or game:get_value("i1068") == 8 then
+    -- Mini-game to retrieve book piece.
     sol.audio.play_sound("monkey")
-    game:start_dialog("monkey.2.faron", function()
-      game:get_item("book_mudora"):set_variant(2) --give back book piece
+    game:start_dialog("monkey.1.faron", function(answer)
+      if answer == 1 then
+        game:set_value("i1068", 8)
+        game:get_hero():teleport("171")
+      else
+        game:start_dialog("monkey.1.faron_no")
+      end
     end)
-  elseif game:get_value("i1068") == 8 then
-    -- may be a mini game later
   elseif game:get_value("i1068") == 9 then
     sol.audio.play_sound("monkey")
     game:start_dialog("monkey.3.faron")
