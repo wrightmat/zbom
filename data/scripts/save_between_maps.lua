@@ -21,8 +21,7 @@ entity:can_change_map_now(). (This is not necessary if the independent entity is
 
 local save_between_maps = {}
 
--- Function called when the player goes to another map. Save the state of the entities left in the map,
--- but only in case some npc_hero is left on the map too. The info is stored temporarily in "game.active_maps".
+-- Function called when the player goes to another map. Save the state of some the entities left in the map.
 function save_between_maps:save_map(map) 
   local game = map:get_game(); local hero = game:get_hero()
   local map_info = {}
@@ -98,7 +97,8 @@ function save_between_maps:load_map(map)
   -- Create independent entities left on this map.
   for unique_id, entity_info in pairs(game.independent_entities) do
     if entity_info.map == map:get_id() then
-      save_between_maps:create_entity(map, entity_info)
+      local entity = save_between_maps:create_entity(map, entity_info)
+      entity.is_independent = true
       game.independent_entities[unique_id] = nil -- Destroy the info.
     end
   end  
@@ -113,7 +113,6 @@ function save_between_maps:load_map(map)
   end
 end
 
-
 -- Returns boolean. True if the entity of this unique_id exists in some of the current maps.
 function save_between_maps:entity_exists(game, unique_id)
   -- Check if the entity exists in the current map.
@@ -124,14 +123,10 @@ function save_between_maps:entity_exists(game, unique_id)
   -- Check again for carried entities and followers (that may have not been created yet).
   if self.custom_carry then if self.custom_carry.unique_id == unique_id then return true end end
   if self.following_entities then
-    for _, follower in pairs(self.following_entities) do
-      if follower.unique_id == unique_id then return true end
-    end
+    if self.following_entities[unique_id] ~= nil then return true end
   end
   -- Check if the entity exists in some other map.
-  for _, entity_info in pairs(game.independent_entities) do
-      if entity_info.unique_id == unique_id then return true end
-  end
+  if game.independent_entities[unique_id] ~= nil then return true end
   -- Return false otherwise.
   return false
 end
