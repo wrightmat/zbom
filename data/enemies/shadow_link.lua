@@ -12,7 +12,7 @@ local damage = 8
 -- Shadow Link.
 
 function enemy:on_created()
-  self:set_life(16); self:set_damage(damage)
+  self:set_life(20); self:set_damage(damage)
   main_sprite = self:create_sprite("enemies/shadow_link")
   sword_sprite = self:create_sprite("enemies/shadow_link_sword")
   self:set_size(32, 40); self:set_origin(16, 36)
@@ -28,7 +28,7 @@ function enemy:on_created()
 end
 
 function enemy:on_restarted()
-  if self:get_game():get_map():get_id() ~= "219" then -- Don't want Shadow Link to act during the game.
+  if self:get_game():get_map():get_id() == "218" then -- Don't want Shadow Link to act during the game.
     state = nil
     if not being_pushed then
       if going_hero then
@@ -44,9 +44,7 @@ end
 function enemy:check_hero()
   local _, _, layer = enemy:get_position()
   local _, _, hero_layer = hero:get_position()
-  local near_hero = layer == hero_layer
-	and enemy:get_distance(hero) < 500
-        and enemy:is_in_same_region(hero)
+  local near_hero = layer == hero_layer and enemy:get_distance(hero) < 500 and enemy:is_in_same_region(hero)
 
   if near_hero and not going_hero then
     enemy:go_hero()
@@ -68,15 +66,11 @@ function enemy:on_movement_changed(movement)
 end
 
 function enemy:on_movement_finished(movement)
-  if being_pushed then
-    enemy:go_hero()
-  end
+  if being_pushed then enemy:go_hero() end
 end
 
 function enemy:on_obstacle_reached(movement)
-  if being_pushed then
-    enemy:go_hero()
-  end
+  if being_pushed then enemy:go_hero() end
 end
 
 function enemy:on_custom_attack_received(attack, sprite)
@@ -96,7 +90,7 @@ end
 
 function enemy:go_random()
   local movement = sol.movement.create("random_path")
-  movement:set_speed(32)
+  movement:set_speed(40)
   movement:start(enemy)
   being_pushed = false
   going_hero = false
@@ -104,7 +98,7 @@ end
 
 function enemy:go_hero()
   local movement = sol.movement.create("target")
-  movement:set_speed(48)
+  movement:set_speed(56)
   movement:start(self)
   being_pushed = false
   going_hero = true
@@ -122,7 +116,7 @@ function enemy:go_attack()
   end
 
   function sword_sprite:on_animation_finished(animation)
-    enemy:check_hero()
+    sol.timer.start(self, 1000, function() enemy:check_hero() end)
   end
 end
 
@@ -137,5 +131,6 @@ function enemy:on_attacking_hero(hero, enemy_sprite)
 end
 
 function enemy:on_hurt(attack)
+  if sword_sprite:get_animation() == "spin_attack" or sword_sprite:get_animation() == "attack" then return false end
   self:go_attack()
 end

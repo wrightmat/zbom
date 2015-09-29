@@ -11,6 +11,16 @@ animation{
   },
 }
 animation{
+  name = "casting",
+  src_image = "enemies/zirna.png",
+  directions = {
+    { x = 72, y = 80, frame_width = 24, frame_height = 40, origin_x = 12, origin_y = 37 },
+    { x = 72, y = 80, frame_width = 24, frame_height = 40, origin_x = 12, origin_y = 37 },
+    { x = 72, y = 80, frame_width = 24, frame_height = 40, origin_x = 12, origin_y = 37 },
+    { x = 72, y = 80, frame_width = 24, frame_height = 40, origin_x = 12, origin_y = 37 },
+  },
+}
+animation{
   name = "hurt",
   src_image = "enemies/zirna.png",
   frame_delay = 50,
@@ -30,6 +40,16 @@ animation{
     { x = 0, y = 40, frame_width = 24, frame_height = 40, origin_x = 12, origin_y = 37 },
     { x = 48, y = 0, frame_width = 24, frame_height = 40, origin_x = 12, origin_y = 37 },
     { x = 0, y = 80, frame_width = 24, frame_height = 40, origin_x = 12, origin_y = 37 },
+  },
+}
+animation{
+  name = "pose",
+  src_image = "enemies/zirna.png",
+  directions = {
+    { x = 72, y = 40, frame_width = 24, frame_height = 40, origin_x = 12, origin_y = 37 },
+    { x = 72, y = 40, frame_width = 24, frame_height = 40, origin_x = 12, origin_y = 37 },
+    { x = 72, y = 40, frame_width = 24, frame_height = 40, origin_x = 12, origin_y = 37 },
+    { x = 72, y = 40, frame_width = 24, frame_height = 40, origin_x = 12, origin_y = 37 },
   },
 }
 animation{

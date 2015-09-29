@@ -9235,16 +9235,6 @@ sensor{
   height = 16,
 }
 
-npc{
-  name = "npc_zirna",
-  layer = 0,
-  x = 872,
-  y = 621,
-  direction = 1,
-  subtype = 1,
-  sprite = "npc/zirna",
-}
-
 chest{
   name = "chest_collector_4",
   layer = 0,
@@ -9781,6 +9771,15 @@ npc{
   subtype = 1,
   sprite = "npc/guard",
   behavior = "dialog#guard.0.attic",
+}
+
+enemy{
+  name = "npc_zirna",
+  layer = 0,
+  x = 872,
+  y = 605,
+  direction = 1,
+  breed = "zirna",
 }
 
 tile{

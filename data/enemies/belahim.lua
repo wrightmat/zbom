@@ -1,5 +1,5 @@
 local enemy = ...
-local initial_life = 22
+local initial_life = 40
 local second_life = 12
 local second_stage = false
 local fireball_proba = 33  -- Percent.
@@ -25,7 +25,7 @@ function enemy:on_created()
 end
 
 function enemy:on_restarted()
-  if self:get_game():get_map():get_id() ~= "0" then -- Don't want Belahim to act during the intro.
+  if self:get_game():get_map():get_id() == "218" then -- Don't want Belahim to act during the intro.
     shadow = false
     for _, t in ipairs(timers) do t:stop() end
     local rand = math.random(3)
@@ -82,6 +82,14 @@ function enemy:go_hero()
   sol.timer.start(enemy, math.random(10)*500, function() enemy:restart() end)
 end
 
+function enemy:on_update()
+  if shadow then
+    self:set_attack_arrow("custom")
+  else
+    self:set_attack_arrow("protected")
+  end
+end
+
 function enemy:on_hurt(attack)
   local life = self:get_life()
   if life <= 0 then
@@ -93,16 +101,10 @@ function enemy:on_hurt(attack)
   end
 end
 
-function enemy:on_update()
-  if shadow then
-    self:set_attack_arrow("custom")
-  else
-    self:set_attack_arrow("protected")
-  end
+function enemy:on_hurt_by_sword(hero, enemy_sprite)
+  if game:get_ability("sword") == 3 then self:hurt(3) else self:hurt(1) end
 end
 
 function enemy:on_custom_attack_received(attack, sprite)
-  if sprite == "arrow_light" and shadow then
-    self:hurt(4)
-  end
+  if sprite == "arrow_light" and shadow then self:hurt(4) end
 end
