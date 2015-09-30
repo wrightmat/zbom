@@ -3,6 +3,7 @@ properties{
   y = 0,
   width = 680,
   height = 272,
+  world = "inside_world",
   tileset = "2",
 }
 
@@ -1906,67 +1907,67 @@ destination{
   default = true,
 }
 
-sensor{
-  name = "sensor_tree_1",
+npc{
+  name = "tree_1",
   layer = 0,
-  x = 72,
+  x = 88,
   y = 173,
-  width = 48,
-  height = 16,
+  direction = 3,
+  subtype = 0,
 }
 
-sensor{
-  name = "sensor_tree_2",
+npc{
+  name = "tree_2",
   layer = 0,
-  x = 112,
+  x = 128,
   y = 85,
-  width = 48,
-  height = 16,
+  direction = 3,
+  subtype = 0,
 }
 
-sensor{
-  name = "sensor_tree_3",
+npc{
+  name = "tree_3",
   layer = 0,
-  x = 160,
+  x = 176,
   y = 149,
-  width = 48,
-  height = 16,
+  direction = 3,
+  subtype = 0,
 }
 
-sensor{
-  name = "sensor_tree_4",
+npc{
+  name = "tree_4",
   layer = 0,
-  x = 208,
+  x = 224,
   y = 77,
-  width = 48,
-  height = 16,
+  direction = 3,
+  subtype = 0,
 }
 
-sensor{
-  name = "sensor_tree_5",
+npc{
+  name = "tree_5",
   layer = 0,
-  x = 240,
+  x = 256,
   y = 189,
-  width = 48,
-  height = 16,
+  direction = 3,
+  subtype = 0,
 }
 
-sensor{
-  name = "sensor_tree_6",
+npc{
+  name = "tree_6",
   layer = 0,
-  x = 288,
+  x = 304,
   y = 85,
-  width = 48,
-  height = 16,
+  direction = 3,
+  subtype = 0,
 }
 
-sensor{
-  name = "sensor_tree_7",
+npc{
+  name = "tree_7",
   layer = 0,
-  x = 328,
+  x = 344,
   y = 157,
-  width = 48,
-  height = 16,
+  direction = 3,
+  subtype = 0,
 }
 
 tile{

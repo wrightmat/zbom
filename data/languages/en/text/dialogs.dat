@@ -1294,9 +1294,9 @@ dialog{
   icon = "20",
   skip = "current",
   text = [[
-You got another  $c book$w page!
-I guess this one will replace
-what that monkey stole...
+You got your  $c book$w page!
+Don't let a monkey steal it
+again!
 ]]
 }
 
@@ -6766,6 +6766,7 @@ can of dog food. Moblin only possession.
 
 dialog{
   id = "monkey.1.faron",
+  question = "1",
   skip = "current",
   text = [[
 Hmmm... we're bored now that all the fun
@@ -9248,7 +9249,7 @@ dialog{
   skip = "current",
   text = [[
 Gotten a little confused, have you?
-$bHyrule Castle Town$w is the center of
+$bHyrule Castle Town$w   is the center of
 Hyrule. $0I'll bet that if you make
 it there, someone would be able to
 help you out. If all else fails,
@@ -9378,7 +9379,7 @@ In fact, it can even be used to
 manipulate the flow of water in certain
 places! I seem to recall there being
 a certain switch which can even change
-the water level of $b Lake Hylia$w, but I'm
+the water level of  $b Lake Hylia$w, but I'm
 sure it hasn't been used in a long time.
 ]]
 }

@@ -10224,17 +10224,6 @@ wall{
   stops_npcs = true,
 }
 
-custom_entity{
-  name = "mailbox_1",
-  layer = 0,
-  x = 488,
-  y = 813,
-  height = 24,
-  direction = 0,
-  sprite = "entities/mailbox",
-  model = "mailbox",
-}
-
 destructible{
   layer = 0,
   x = 352,
@@ -10370,6 +10359,16 @@ npc{
   layer = 0,
   x = 784,
   y = 445,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/mailbox",
+}
+
+npc{
+  name = "mailbox_5",
+  layer = 0,
+  x = 488,
+  y = 813,
   direction = 3,
   subtype = 0,
   sprite = "entities/mailbox",

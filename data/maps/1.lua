@@ -173,7 +173,7 @@ end
 function npc_ulo:on_interaction()
   game:set_dialog_style("default")
   if game:get_value("b1117") and game:get_value("i1030") < 2 then
-    game:start_dialog("ulo.5.ordon")
+    game:start_dialog("ulo.5.ordon", game:get_player_name())
   elseif game:get_value("i1029") >= 6 then
     game:start_dialog("ulo.4.ordon")
   else
@@ -203,12 +203,12 @@ end
 
 function npc_gaira:on_interaction()
   game:set_dialog_style("default")
-  if game:get_value("i1030") == 1 then
-    game:start_dialog("gaira.6.house")
-  elseif not game:get_value("b1722") then
+  if not game:get_value("b1722") then
     game:start_dialog("gaira.5.faron", game:get_player_name(), function()
       hero:start_treasure("heart_piece", 1, "b1722")
     end)
+  elseif game:get_value("i1030") < 2 then
+    game:start_dialog("gaira.6.house")
   else
     game:start_dialog("gaira.5.forest")
   end

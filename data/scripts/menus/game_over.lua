@@ -171,7 +171,7 @@ function game_over_menu:on_command_pressed(command)
 
     state = "finished"
     sol.audio.play_sound("danger")
-    game:set_hud_enabled(false)
+    game.hud:set_enabled(false)
     game:add_life(7 * 4)  -- Restore 7 hearts.
 
     if cursor_position == 0 then
