@@ -57,7 +57,7 @@ VERSION 0.44 released 2-JUL-15:
   - core path of wind tower finish - able to obtain book
   - additional warp points
   - short cut added to Pyramid
-  - additional player direction from NPCs, including new attendent in council office
+  - additional player direction from NPCs, including new attendant in council office
   - trading sequence finished - able to obtain feather
   - lost woods expanded
   - dialog font replaced and dialog line breaks redone to utilize additional space
