@@ -56,6 +56,11 @@ function enemy:on_obstacle_reached(movement)
   enemy:restart()
 end
 
+function enemy:on_movement_changed(movement)
+  local direction4 = movement:get_direction4()
+  self:get_sprite():set_direction(direction4)
+end
+
 function enemy:go_hero()
   casting = false
   self:get_sprite():set_animation("walking")
