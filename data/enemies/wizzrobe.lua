@@ -29,7 +29,7 @@ function enemy:hide()
   self:get_sprite():set_animation("immobilized")
   ex, ey, el = self:get_position()
   self:set_position(-100, -100)
-  timers[#timers + 1] = sol.timer.start(self, 500, function() self:unhide() end)
+  sol.timer.start(self:get_map(), math.random(10)*100, function() self:unhide() end)
 end
 
 function enemy:unhide()
@@ -38,7 +38,7 @@ function enemy:unhide()
   self:get_sprite():fade_in()
   self:get_sprite():set_animation("walking")
   local m = sol.movement.create("path_finding")
-  m:set_speed(56)
+  m:set_speed(48)
   m:start(self)
   timers[#timers + 1] = sol.timer.start(self, 1000, function() self:fire() end)
 end

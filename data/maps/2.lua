@@ -38,7 +38,6 @@ local score_x = 0
 local score_y = 0
 
 function map:on_started(destination)
-game:set_value("i1032", 2)
   chest_1.on_empty = open_chest
   chest_2.on_empty = open_chest
   chest_3.on_empty = open_chest
