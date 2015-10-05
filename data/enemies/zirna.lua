@@ -1,5 +1,5 @@
 local enemy = ...
-local casting = false
+local vulnerable = false
 local dark_magic_sprite = sol.sprite.create("entities/dark_appears")
 
 -- Zirna (Dark Tribe enchantress)
@@ -20,15 +20,18 @@ end
 
 function enemy:on_custom_attack_received(attack, sprite)
   if attack == "arrow" and self:get_game():has_item("bow_light") then
-    self:hurt(8)
-    casting = false
+print("attacked with light arrow")
+    if vulnerable then
+print("casting, so attack successful")
+      self:hurt(8)
+      vulnerable = false
+    end
   end
 end
 
 function enemy:on_restarted()
   if self:get_game():get_map():get_id() == "218" then -- Don't want Zirna to act during the cutscene.
-    casting = true
-print("creating enemy: casting true?")
+    vulnerable = true
     local rand = math.random(5)
     if rand == 1 then
       sol.timer.start(self, 2000, function()
@@ -61,7 +64,7 @@ function enemy:on_movement_changed(movement)
 end
 
 function enemy:go_hero()
-  casting = false
+  --vulnerable = false
   self:get_sprite():set_animation("walking")
   local m = sol.movement.create("target")
   m:set_speed(32)
@@ -70,8 +73,8 @@ function enemy:go_hero()
 end
 
 function enemy:on_post_draw()
-print(casting)
-  if casting then
+  if vulnerable then
+print("casting. vulnerable!")
     local x, y, layer = self:get_position()
     self:get_map():draw_sprite(dark_magic_sprite, x, y)
   end

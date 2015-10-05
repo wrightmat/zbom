@@ -14,6 +14,7 @@ local timers = {}
 --       (Light sword does three times as much damage, must hit him 12 times with Forged Sword)
 
 function enemy:on_created()
+print("belahim created")
   self:set_life(initial_life); self:set_damage(8)
   local sprite = self:create_sprite("enemies/belahim")
   self:set_size(64, 64); self:set_origin(32, 57)
@@ -25,7 +26,9 @@ function enemy:on_created()
 end
 
 function enemy:on_restarted()
+print(self:get_game():get_map():get_id())
   if self:get_game():get_map():get_id() == "218" then -- Don't want Belahim to act during the intro.
+print("restarted")
     shadow = false
     for _, t in ipairs(timers) do t:stop() end
     local rand = math.random(3)
@@ -106,5 +109,10 @@ function enemy:on_hurt_by_sword(hero, enemy_sprite)
 end
 
 function enemy:on_custom_attack_received(attack, sprite)
-  if sprite == "arrow_light" and shadow then self:hurt(4) end
+  if attack == "arrow" and self:get_game():has_item("bow_light") then
+    if vulnerable then
+      self:hurt(4)
+      vulnerable = false
+    end
+  end
 end

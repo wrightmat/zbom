@@ -11,8 +11,10 @@ function enemy:on_created(properties)
   self:set_minimum_shield_needed(2)
   self:set_can_hurt_hero_running(true)
   self:set_obstacle_behavior("flying")
-  if self:get_name() == "fire" or self:get_name():match("^fire_(%d+)") then type = "fire" end
-  if self:get_name() == "ice" or self:get_name():match("^ice_(%d+)") then type = "ice" end
+  if self:get_name() ~= nil then
+    if self:get_name() == "fire" or self:get_name():match("^fire_(%d+)") then type = "fire" end
+    if self:get_name() == "ice" or self:get_name():match("^ice_(%d+)") then type = "ice" end
+  end
 end
 
 function enemy:on_obstacle_reached()
