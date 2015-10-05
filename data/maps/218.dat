@@ -6039,6 +6039,42 @@ tile{
   pattern = "472",
 }
 
+tile{
+  layer = 0,
+  x = 640,
+  y = 1216,
+  width = 16,
+  height = 16,
+  pattern = "136",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 1264,
+  width = 16,
+  height = 16,
+  pattern = "136",
+}
+
+tile{
+  layer = 0,
+  x = 832,
+  y = 1328,
+  width = 16,
+  height = 16,
+  pattern = "136",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 1328,
+  width = 16,
+  height = 16,
+  pattern = "136",
+}
+
 sensor{
   name = "sensor_boss",
   layer = 0,
@@ -7307,24 +7343,6 @@ enemy{
   treasure_name = "crystal",
 }
 
-sensor{
-  name = "sensor_boss_zirna",
-  layer = 0,
-  x = 776,
-  y = 1029,
-  width = 64,
-  height = 16,
-}
-
-sensor{
-  name = "sensor_boss_belahim",
-  layer = 0,
-  x = 936,
-  y = 1029,
-  width = 64,
-  height = 16,
-}
-
 wall{
   layer = 0,
   x = 760,
@@ -7345,6 +7363,101 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/dark_mirror",
+}
+
+destructible{
+  layer = 0,
+  x = 840,
+  y = 981,
+  treasure_name = "arrow",
+  treasure_variant = 3,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 840,
+  y = 997,
+  treasure_name = "arrow",
+  treasure_variant = 3,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 840,
+  y = 1013,
+  treasure_name = "arrow",
+  treasure_variant = 3,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 920,
+  y = 981,
+  treasure_name = "heart",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 920,
+  y = 997,
+  treasure_name = "heart",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 920,
+  y = 1013,
+  treasure_name = "heart",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 648,
+  y = 1229,
+  treasure_name = "fairy",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 648,
+  y = 1277,
+  treasure_name = "arrow",
+  treasure_variant = 3,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 840,
+  y = 1341,
+  treasure_name = "fairy",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 920,
+  y = 1341,
+  treasure_name = "arrow",
+  treasure_variant = 3,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
 }
 
 tile{

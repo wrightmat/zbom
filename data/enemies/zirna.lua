@@ -19,8 +19,7 @@ function enemy:on_created()
 end
 
 function enemy:on_custom_attack_received(attack, sprite)
-print(sprite)
-  if sprite == "arrow_light" and casting then
+  if attack == "arrow" and self:get_game():has_item("bow_light") then
     self:hurt(8)
     casting = false
   end
@@ -29,6 +28,7 @@ end
 function enemy:on_restarted()
   if self:get_game():get_map():get_id() == "218" then -- Don't want Zirna to act during the cutscene.
     casting = true
+print("creating enemy: casting true?")
     local rand = math.random(5)
     if rand == 1 then
       sol.timer.start(self, 2000, function()
@@ -52,7 +52,6 @@ function enemy:on_restarted()
 end
 
 function enemy:on_obstacle_reached(movement)
-  casting = false
   enemy:restart()
 end
 
@@ -71,6 +70,7 @@ function enemy:go_hero()
 end
 
 function enemy:on_post_draw()
+print(casting)
   if casting then
     local x, y, layer = self:get_position()
     self:get_map():draw_sprite(dark_magic_sprite, x, y)

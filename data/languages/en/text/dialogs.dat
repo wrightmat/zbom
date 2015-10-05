@@ -2811,6 +2811,7 @@ Enjoy the beautiful city of Saria.
 
 dialog{
   id = "belahim.0.speech_1",
+  next = "belahim.0.speech_2",
   skip = "current",
   text = [[
 Ever since this world was created from
@@ -2825,6 +2826,7 @@ visible.
 
 dialog{
   id = "belahim.0.speech_2",
+  next = "belahim.0.speech_3",
   skip = "current",
   text = [[
 What's that? You didn't know that what
@@ -2838,6 +2840,7 @@ that this distinction has always been.
 
 dialog{
   id = "belahim.0.speech_3",
+  next = "belahim.0.speech_4",
   skip = "current",
   text = [[
 My people were drawn to the story of
@@ -2857,6 +2860,7 @@ of "Fate" or "Destiny".
 
 dialog{
   id = "belahim.0.speech_4",
+  next = "belahim.0.speech_5",
   skip = "current",
   text = [[
 And finally, the last piece is the people

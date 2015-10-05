@@ -15,12 +15,12 @@ end
 function map:on_started(destination)
   random_walk(npc_ildus)
 
-  -- Create independent entity if it does not exist.
+-- Create independent entity if it does not exist.
 --  local unique_id = "metal_ball"
 --  if not game.save_between_maps:entity_exists(game, unique_id) then 
 --    local entity = map:create_custom_entity({x=840, y=277, layer=0, direction=0, sprite="entities/metal_ball", model="generic_portable.lua"})
---    entity.is_independent = true
 --    entity.unique_id = unique_id
+--    entity.is_independent = true
 --  end
 
   -- Opening doors

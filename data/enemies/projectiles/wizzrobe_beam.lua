@@ -11,9 +11,8 @@ function enemy:on_created(properties)
   self:set_minimum_shield_needed(2)
   self:set_can_hurt_hero_running(true)
   self:set_obstacle_behavior("flying")
-  if properties then
-    if properties.type then type = properties.type end
-  end
+  if self:get_name() == "fire" or self:get_name():match("^fire_(%d+)") then type = "fire" end
+  if self:get_name() == "ice" or self:get_name():match("^ice_(%d+)") then type = "ice" end
 end
 
 function enemy:on_obstacle_reached()
@@ -38,4 +37,11 @@ function enemy:on_restarted()
   m:set_speed(92)
   m:set_angle(angle)
   m:start(self)
+end
+
+function enemy:on_attacking_hero(hero)
+  if type == "ice" then
+    hero:start_frozen(4000)
+    hero:set_invincible()
+  end
 end

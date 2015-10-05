@@ -45,7 +45,6 @@ function sensor_miniboss:on_activated()
     sol.audio.play_music("boss")
   end
 end
-
 if miniboss_shadow_link ~= nil then
   function miniboss_shadow_link:on_dead()
     game:set_value("b1131", true)
@@ -58,16 +57,16 @@ if miniboss_shadow_link ~= nil then
   end
 end
 
-function sensor_boss_zirna:on_activated()
+function sensor_boss:on_activated()
   if boss_zirna ~= nil then
     boss_zirna:set_enabled(true)
     sol.audio.play_music("boss")
   end
 end
-
-function sensor_boss_belahim:on_activated()
-  if boss_belahim ~= nil then
-    boss_belahim:set_enabled(true)
-    sol.audio.play_music("boss")
+if boss_zirna ~= nil then
+  function boss_zirna:on_dead()
+    game:start_dialog("belahim.0.speech_1", function()
+      boss_belahim:set_enabled(true)
+    end)
   end
 end

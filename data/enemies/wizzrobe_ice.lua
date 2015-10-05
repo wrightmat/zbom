@@ -29,7 +29,7 @@ function enemy:hide()
   self:get_sprite():set_animation("immobilized")
   ex, ey, el = self:get_position()
   self:set_position(-100, -100)
-  timers[#timers + 1] = sol.timer.start(self, 500, function() self:unhide() end)
+  sol.timer.start(self:get_map(), math.random(10)*100, function() self:unhide() end)
 end
 
 function enemy:unhide()
@@ -46,7 +46,6 @@ end
 function enemy:fire()
   vulnerable = true
   self:get_sprite():set_animation("shaking")
-  local properties = { breed = "projectiles/wizzrobe_beam", direction = self:get_sprite():get_direction(), type = "ice" }
-  local beam = self:create_enemy(properties)
+  local beam = self:create_enemy({ breed = "projectiles/wizzrobe_beam", direction = self:get_sprite():get_direction(), name = "ice" })
   self:restart()
 end

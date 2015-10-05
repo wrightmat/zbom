@@ -12,7 +12,7 @@ local damage = 8
 -- Shadow Link.
 
 function enemy:on_created()
-  self:set_life(20); self:set_damage(damage)
+  self:set_life(30); self:set_damage(damage)
   main_sprite = self:create_sprite("enemies/shadow_link")
   sword_sprite = self:create_sprite("enemies/shadow_link_sword")
   self:set_size(32, 40); self:set_origin(16, 36)

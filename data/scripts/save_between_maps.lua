@@ -68,6 +68,7 @@ function save_between_maps:get_entity_info(entity)
   if entity_properties then
     if entity.get_saved_info ~= nil then entity_properties.extra_properties = entity:get_saved_info() end
     entity_properties.unique_id = entity.unique_id -- Get  unique id.
+    entity_properties.is_independent = entity.is_independent
     entity_properties.map = entity:get_map():get_id() -- Get map.
   end
   return entity_properties
@@ -78,6 +79,7 @@ function save_between_maps:create_entity(map, info)
   local entity = map:create_custom_entity(info.properties)
   if info.extra_properties then entity:set_saved_info(info.extra_properties) end
   entity.unique_id = info.unique_id -- Set entity unique id.
+  entity.is_independent = info.is_independent
   return entity
 end
 

@@ -13448,24 +13448,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 816,
-  y = 1112,
-  width = 16,
-  height = 16,
-  pattern = "354",
-}
-
-tile{
-  layer = 0,
-  x = 960,
-  y = 1112,
-  width = 16,
-  height = 16,
-  pattern = "354",
-}
-
-tile{
-  layer = 0,
   x = 560,
   y = 1320,
   width = 16,
@@ -20505,6 +20487,28 @@ destructible{
   treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
+}
+
+dynamic_tile{
+  name = "room6_gate_s1",
+  layer = 0,
+  x = 816,
+  y = 1112,
+  pattern = "354",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "room6_gate_s2",
+  layer = 0,
+  x = 960,
+  y = 1112,
+  pattern = "354",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
 }
 
 tile{

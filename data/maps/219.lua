@@ -25,7 +25,15 @@ local function update_rooms()
   if game:get_value("dungeon_8_explored_1b_3") then room_overlay_3:get_sprite():set_direction(3) else room_overlay_3:get_sprite():set_direction(1) end
   if game:get_value("dungeon_8_explored_1b_4") then room_overlay_4:get_sprite():set_direction(3) else room_overlay_4:get_sprite():set_direction(1) end
   if game:get_value("dungeon_8_explored_1b_5") then room_overlay_5:get_sprite():set_direction(3) else room_overlay_5:get_sprite():set_direction(1) end
-  if game:get_value("dungeon_8_explored_1b_6") then room_overlay_6:get_sprite():set_direction(3) else room_overlay_6:get_sprite():set_direction(1) end
+  if game:get_value("dungeon_8_explored_1b_6") then
+    room_overlay_6:get_sprite():set_direction(3)
+    room6_gate_s1:set_enabled(false)
+    room6_gate_s2:set_enabled(false)
+    room1_gate_n1:set_enabled(false)
+    room1_gate_n2:set_enabled(false)
+  else
+    room_overlay_6:get_sprite():set_direction(1)
+  end
   if game:get_value("dungeon_8_explored_1b_7") then room_overlay_7:get_sprite():set_direction(3) else room_overlay_7:get_sprite():set_direction(1) end
   if game:get_value("dungeon_8_explored_1b_8") then room_overlay_8:get_sprite():set_direction(3) else room_overlay_8:get_sprite():set_direction(1) end
   if game:get_value("dungeon_8_explored_1b_9") then
@@ -51,7 +59,15 @@ local function update_rooms()
   if game:get_value("dungeon_8_explored_1b_21") then room_overlay_21:get_sprite():set_direction(3) else room_overlay_21:get_sprite():set_direction(1) end
   if game:get_value("dungeon_8_explored_1b_22") then room_overlay_22:get_sprite():set_direction(3) else room_overlay_22:get_sprite():set_direction(1) end
   if game:get_value("dungeon_8_explored_1b_23") then room_overlay_23:get_sprite():set_direction(3) else room_overlay_23:get_sprite():set_direction(1) end
-  if game:get_value("dungeon_8_explored_1b_24") then room_overlay_24:get_sprite():set_direction(3) else room_overlay_24:get_sprite():set_direction(1) end
+  if game:get_value("dungeon_8_explored_1b_24") then
+    room_overlay_24:get_sprite():set_direction(3)
+    room1_gate_e1:set_enabled(false)
+    room1_gate_e2:set_enabled(false)
+    room24_gate_w1:set_enabled(false)
+    room24_gate_w2:set_enabled(false)
+  else
+    room_overlay_24:get_sprite():set_direction(1)
+  end
   if game:get_value("dungeon_8_explored_1b_25") then room_overlay_25:get_sprite():set_direction(3) else room_overlay_25:get_sprite():set_direction(1) end
 
   if math.random(20) == 1 then  -- 1 in 20 chance of "switching off" a room each cycle.
@@ -62,6 +78,7 @@ local function update_rooms()
     end
   end
 
+  -- For Room 21.
   map:create_enemy({ x = 1160, y = 925, layer = 0, direction = 0, breed = "boulder" })
   map:create_enemy({ x = 1304, y = 925, layer = 0, direction = 0, breed = "boulder" })
 end
@@ -224,15 +241,7 @@ function room10_arrow_2:on_activated()
   end
 end
 
-for entity in map:get_entities("room_11_") do
-  entity.on_removed = function()
-print(entity:get_name())
-    if not map:has_entities("room_11_") then
-      sol.audio.play_sound("lamp")
-      game:set_value("dungeon_8_explored_1b_11", true)
-    end
-  end
-end
+-- Room 11 in map:on_update()
 
 for enemy in map:get_entities("room_12_") do
   enemy.on_dead = function()
@@ -301,7 +310,38 @@ for enemy in map:get_entities("room_18_") do
   end
 end
 
--- 19: Star switch
+function room19_switch_1:on_activated()
+  room19_switch_2:set_activated(false)
+  local positions_1 = { {x = 1440, y = 720}, {x = 1552, y = 680}, {x = 1552, y = 760} }
+  local positions_2 = { {x = 1520, y = 720}, {x = 1552, y = 640}, {x = 1552, y = 800} }
+  local c = map:get_entities_count("room19_pit")
+  for i = 1, c do
+    local ex, ey, el = map:get_entity("room19_pit_"..c):get_position()
+    if (ex == positions_2[c].x) and (ey == positions_2[c].y) then
+      map:get_entity("room19_pit_"..i):set_position(positions_1[i].x, positions_1[i].y)
+    else
+      map:get_entity("room19_pit_"..i):set_position(positions_2[i].x, positions_2[i].y)
+    end
+  end
+end
+function room19_switch_2:on_activated()
+  if not game:get_value("dungeon_8_explored_1b_19") then
+    sol.audio.play_sound("lamp")
+    game:set_value("dungeon_8_explored_1b_19", true)
+  end
+  room19_switch_1:set_activated(false)
+  local positions_1 = { {x = 1440, y = 720}, {x = 1552, y = 680}, {x = 1552, y = 760} }
+  local positions_2 = { {x = 1520, y = 720}, {x = 1552, y = 640}, {x = 1552, y = 800} }
+  local c = map:get_entities_count("room19_pit")
+  for i = 1, c do
+    local ex, ey, el = map:get_entity("room19_pit_"..c):get_position()
+    if (ex == positions_2[c].x) and (ey == positions_2[c].y) then
+      map:get_entity("room19_pit_"..i):set_position(positions_1[i].x, positions_1[i].y)
+    else
+      map:get_entity("room19_pit_"..i):set_position(positions_2[i].x, positions_2[i].y)
+    end
+  end
+end
 
 for enemy in map:get_entities("room_20_") do
   enemy.on_dead = function()
@@ -350,6 +390,11 @@ function map:on_update()
      not game:get_value("dungeon_8_explored_1b_3") then
     sol.audio.play_sound("lamp")
     game:set_value("dungeon_8_explored_1b_3", true)
+  end
+
+  if not map:has_entities("room_11_") and not game:get_value("dungeon_8_explored_1b_11") then
+    sol.audio.play_sound("lamp")
+    game:set_value("dungeon_8_explored_1b_11", true)
   end
 
   -- Win Conditions (12 total).
