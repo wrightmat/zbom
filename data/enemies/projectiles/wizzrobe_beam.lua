@@ -43,7 +43,7 @@ end
 
 function enemy:on_attacking_hero(hero)
   if type == "ice" then
-    hero:start_frozen(4000)
+    hero:start_frozen(2000)
     hero:set_invincible()
   end
 end

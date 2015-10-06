@@ -121,7 +121,7 @@ local function reset_arrow_puzzle()
 end
 
 local function game_won()
-print("game won!")
+  game:set_value("dungeon_8_explored_1b_complete", true)
   sol.audio.play_sound("secret")
   map:move_camera(896, 144, 250, function()
     exit_stairs_1:set_enabled(true)

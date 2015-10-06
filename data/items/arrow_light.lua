@@ -13,5 +13,5 @@ end
 
 function item:on_obtaining(variant, savegame_variable)
   -- Call the code of normal arrows (their counter is common).
-  game:get_item("bow"):on_obtaining(variant, savegame_variable)
+  game:get_item("arrow"):on_obtaining(variant, savegame_variable)
 end

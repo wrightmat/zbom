@@ -1,11 +1,13 @@
 animation{
-  name = "stopped",
+  name = "walking",
   src_image = "enemies/belahim.png",
+  frame_delay = 200,
+  frame_to_loop_on = 0,
   directions = {
-    { x = 64, y = 0, frame_width = 64, frame_height = 64, origin_x = 16, origin_y = 28 },
-    { x = 64, y = 0, frame_width = 64, frame_height = 64, origin_x = 16, origin_y = 28 },
-    { x = 64, y = 0, frame_width = 64, frame_height = 64, origin_x = 16, origin_y = 28 },
-    { x = 64, y = 0, frame_width = 64, frame_height = 64, origin_x = 16, origin_y = 28 },
+    { x = 64, y = 0, frame_width = 64, frame_height = 64, origin_x = 16, origin_y = 28, num_frames = 2 },
+    { x = 64, y = 0, frame_width = 64, frame_height = 64, origin_x = 16, origin_y = 28, num_frames = 2 },
+    { x = 64, y = 0, frame_width = 64, frame_height = 64, origin_x = 16, origin_y = 28, num_frames = 2 },
+    { x = 64, y = 0, frame_width = 64, frame_height = 64, origin_x = 16, origin_y = 28, num_frames = 2 },
   },
 }
 animation{
@@ -44,21 +46,19 @@ animation{
   name = "shrink",
   src_image = "enemies/belahim.png",
   directions = {
-    { x = 192, y = 0, frame_width = 48, frame_height = 64, origin_x = 16, origin_y = 28 },
-    { x = 192, y = 0, frame_width = 48, frame_height = 64, origin_x = 16, origin_y = 28 },
-    { x = 192, y = 0, frame_width = 48, frame_height = 64, origin_x = 16, origin_y = 28 },
-    { x = 192, y = 0, frame_width = 48, frame_height = 64, origin_x = 16, origin_y = 28 },
+    { x = 128, y = 0, frame_width = 56, frame_height = 64, origin_x = 16, origin_y = 28, num_frames = 2 },
+    { x = 128, y = 0, frame_width = 56, frame_height = 64, origin_x = 16, origin_y = 28, num_frames = 2 },
+    { x = 128, y = 0, frame_width = 56, frame_height = 64, origin_x = 16, origin_y = 28, num_frames = 2 },
+    { x = 128, y = 0, frame_width = 56, frame_height = 64, origin_x = 16, origin_y = 28, num_frames = 2 },
   },
 }
 animation{
-  name = "walking",
+  name = "stopped",
   src_image = "enemies/belahim.png",
-  frame_delay = 200,
-  frame_to_loop_on = 0,
   directions = {
-    { x = 64, y = 0, frame_width = 64, frame_height = 64, origin_x = 16, origin_y = 28, num_frames = 2 },
-    { x = 64, y = 0, frame_width = 64, frame_height = 64, origin_x = 16, origin_y = 28, num_frames = 2 },
-    { x = 64, y = 0, frame_width = 64, frame_height = 64, origin_x = 16, origin_y = 28, num_frames = 2 },
-    { x = 64, y = 0, frame_width = 64, frame_height = 64, origin_x = 16, origin_y = 28, num_frames = 2 },
+    { x = 64, y = 0, frame_width = 64, frame_height = 64, origin_x = 16, origin_y = 28 },
+    { x = 64, y = 0, frame_width = 64, frame_height = 64, origin_x = 16, origin_y = 28 },
+    { x = 64, y = 0, frame_width = 64, frame_height = 64, origin_x = 16, origin_y = 28 },
+    { x = 64, y = 0, frame_width = 64, frame_height = 64, origin_x = 16, origin_y = 28 },
   },
 }

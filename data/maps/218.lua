@@ -58,15 +58,35 @@ if miniboss_shadow_link ~= nil then
 end
 
 function sensor_boss:on_activated()
-  if boss_zirna ~= nil then
+  if boss_zirna ~= nil and game:get_value("dungeon_8_explored_1b_complete") then
     boss_zirna:set_enabled(true)
     sol.audio.play_music("boss")
+    map:close_doors("door_boss")
   end
 end
 if boss_zirna ~= nil then
   function boss_zirna:on_dead()
-    game:start_dialog("belahim.0.speech_1", function()
-      boss_belahim:set_enabled(true)
+    sol.timer.start(self:get_map(), 5000, function()
+      game:start_dialog("belahim.0.speech_1", function()
+        boss_belahim:set_enabled(true)
+      end)
+    end)
+  end
+end
+if boss_belahim ~= nil then
+  function boss_belahim:on_dead()
+    sol.audio.play_sound("boss_killed")
+    boss_heart:set_enabled(true)
+    sol.timer.start(1000, function()
+      sol.audio.play_music("temple_sanctum")
+      dark_mirror:fade_in(100, function()
+        -- dialog to explain the dark mirror and fate of the dark tribe (by Ordona?)
+        bed_zelda:fade_out(100, function()
+          -- dialog about Zelda disappearing and returning to Hyrule Castle
+          map:get_hero():teleport("84", "from_sanctum")  -- Teleport hero outside of Sanctum.
+        end)
+      end)
+      map:open_doors("door_boss")
     end)
   end
 end

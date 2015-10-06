@@ -5762,15 +5762,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 848,
-  y = 912,
-  width = 64,
-  height = 40,
-  pattern = "196",
-}
-
-tile{
-  layer = 0,
   x = 816,
   y = 912,
   width = 16,
@@ -6073,6 +6064,15 @@ tile{
   width = 16,
   height = 16,
   pattern = "136",
+}
+
+tile{
+  layer = 0,
+  x = 848,
+  y = 912,
+  width = 64,
+  height = 40,
+  pattern = "150",
 }
 
 sensor{
@@ -7326,7 +7326,8 @@ teletransporter{
   y = 1232,
   width = 16,
   height = 16,
-  destination_map = "219",
+  destination_map = "218",
+  destination = "from_basement_2",
   sprite = "entities/teletransporter",
   sound = "warp",
 }
@@ -7458,6 +7459,17 @@ destructible{
   treasure_variant = 3,
   sprite = "entities/pot",
   destruction_sound = "stone",
+}
+
+dynamic_tile{
+  name = "bed_zelda",
+  layer = 0,
+  x = 848,
+  y = 912,
+  pattern = "196",
+  width = 64,
+  height = 40,
+  enabled_at_start = true,
 }
 
 tile{
