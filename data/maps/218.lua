@@ -79,15 +79,23 @@ if boss_belahim ~= nil then
     boss_heart:set_enabled(true)
     sol.timer.start(1000, function()
       sol.audio.play_music("temple_sanctum")
-      dark_mirror:fade_in(100, function()
-        game:start_dialog("ordona.8.boss_dead", game:get_player_name(), function()
-          bed_zelda:fade_out(100, function()
-            -- dialog about Zelda disappearing and returning to Hyrule Castle
-            map:get_hero():teleport("84", "from_sanctum")  -- Teleport hero outside of Sanctum.
+      game:start_dialog("ordona.8.boss_dead", game:get_player_name(), function()
+        local m = sol.movement.create("target")
+        m:set_target(880, 1200)
+        map:get_hero():get_sprite():set_animation("walking")
+        m:start(map:get_hero(), function()
+          map:get_hero():get_sprite():set_animation("book_mudora")
+          sol.timer.start(self, 1000, function() dark_mirror:fade_in(100) end)
+          game:start_dialog("ordona.8.mirror", game:get_player_name(), function()
+            map:get_hero():get_sprite():set_animation("stopped")
+            bed_zelda:fade_out(100, function()
+              game:start_dialog("ordona.8.zelda", function()
+                map:get_hero():teleport("84", "from_sanctum")  -- Teleport hero outside of Sanctum.
+              end)
+            end
           end)
         end)
       end)
-      map:open_doors("door_boss")
     end)
   end
 end

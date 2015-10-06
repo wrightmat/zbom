@@ -7087,7 +7087,7 @@ dialog{
   text = [[
 $v! $0. $0. $0.
 You have done well to defeat the darkness
-the overtook this place. With the power
+that overtook this place. With the power
 of the $m Tribe$w now diminised, my   $y light$w
 was able to break through!
 I must tell you of a powerful artifact
@@ -7102,6 +7102,24 @@ dialog{
   id = "ordona.8.mirror",
   skip = "current",
   text = [[
+Behold, $v, the Mirror of Darkness!
+This ancient artifact was created alongside
+the Mirror of Twilight long ago - one was
+hidden in the desert and one in the forest.
+Generations ago, the Mirror of Twilight
+was destroyed by the Twilight Princess
+after defeating the Usurper and Demon
+Kings, but few knew of the Mirror of
+Darknesses' existance. The Dark Tribe
+discovered this relic and used it to return
+to the world of light. As you know, they
+weren't able to get their hands on the
+complete $c Book of Mudora$w as they'd planned,
+but they were still able to throw the land
+into chaos. Now that they've been defeated,
+the Dark Mirror can be used to banish them
+entirely. With their magic gone, the hold
+on Zelda should release as well.
 ]]
 }
 
@@ -7109,6 +7127,15 @@ dialog{
   id = "ordona.8.zelda",
   skip = "current",
   text = [[
+Indeed, with the Dark Tribe entirely gone,
+Zelda has returned to where she was taken
+- $b Hyrule Castle$w.
+With the $c Book of Mudora$w returned to
+its former state, the land of Hyrule
+should soon return to its former state as
+well. Even so, continuing to explore the
+world and help its residents could be
+beneficial.
 ]]
 }
 

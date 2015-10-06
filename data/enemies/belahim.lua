@@ -29,7 +29,6 @@ function enemy:on_restarted()
   if self:get_game():get_map():get_id() == "218" then -- Don't want Belahim to act during the intro.
     shadow = false
     local rand = math.random(4)
-print("restarted. action "..rand)
     if rand == 1 then
       self:go_shadow()
     elseif rand == 2 then
