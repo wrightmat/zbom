@@ -7082,6 +7082,37 @@ as the Forest of Light.
 }
 
 dialog{
+  id = "ordona.8.boss_dead",
+  skip = "current",
+  text = [[
+$v! $0. $0. $0.
+You have done well to defeat the darkness
+the overtook this place. With the power
+of the $m Tribe$w now diminised, my   $y light$w
+was able to break through!
+I must tell you of a powerful artifact
+that we can use to banish the $m Dark Tribe$w
+once again. The Mirror of Darkness can be
+called forth by using the power of the
+complete $c Book of Mudora$w.
+]]
+}
+
+dialog{
+  id = "ordona.8.mirror",
+  skip = "current",
+  text = [[
+]]
+}
+
+dialog{
+  id = "ordona.8.zelda",
+  skip = "current",
+  text = [[
+]]
+}
+
+dialog{
   id = "osgor.0.ghost",
   skip = "current",
   text = [[

@@ -80,10 +80,11 @@ if boss_belahim ~= nil then
     sol.timer.start(1000, function()
       sol.audio.play_music("temple_sanctum")
       dark_mirror:fade_in(100, function()
-        -- dialog to explain the dark mirror and fate of the dark tribe (by Ordona?)
-        bed_zelda:fade_out(100, function()
-          -- dialog about Zelda disappearing and returning to Hyrule Castle
-          map:get_hero():teleport("84", "from_sanctum")  -- Teleport hero outside of Sanctum.
+        game:start_dialog("ordona.8.boss_dead", game:get_player_name(), function()
+          bed_zelda:fade_out(100, function()
+            -- dialog about Zelda disappearing and returning to Hyrule Castle
+            map:get_hero():teleport("84", "from_sanctum")  -- Teleport hero outside of Sanctum.
+          end)
         end)
       end)
       map:open_doors("door_boss")
