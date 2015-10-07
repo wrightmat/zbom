@@ -2474,15 +2474,6 @@ tile{
   pattern = "1941",
 }
 
-tile{
-  layer = 0,
-  x = 728,
-  y = 816,
-  width = 16,
-  height = 16,
-  pattern = "311",
-}
-
 teletransporter{
   name = "to_C14",
   layer = 0,
@@ -2635,21 +2626,21 @@ teletransporter{
   destination = "enter_house_4",
 }
 
-npc{
-  name = "ocarina_wind_to_H10",
-  layer = 0,
-  x = 736,
-  y = 829,
-  direction = 3,
-  subtype = 0,
-}
-
 destination{
   name = "ocarina_warp",
   layer = 0,
   x = 736,
   y = 845,
   direction = 3,
+}
+
+custom_entity{
+  name = "b1507",
+  layer = 0,
+  x = 736,
+  y = 829,
+  direction = 0,
+  model = "ocarina_patch",
 }
 
 tile{

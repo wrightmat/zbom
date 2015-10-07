@@ -6094,15 +6094,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 624,
-  y = 632,
-  width = 16,
-  height = 16,
-  pattern = "311",
-}
-
-tile{
-  layer = 0,
   x = 416,
   y = 424,
   width = 32,
@@ -9110,15 +9101,6 @@ destination{
   direction = 3,
 }
 
-npc{
-  name = "ocarina_wind_to_G8",
-  layer = 0,
-  x = 632,
-  y = 645,
-  direction = 3,
-  subtype = 0,
-}
-
 teletransporter{
   name = "to_K5",
   layer = 0,
@@ -9139,6 +9121,15 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
+}
+
+custom_entity{
+  name = "b1501",
+  layer = 0,
+  x = 632,
+  y = 645,
+  direction = 0,
+  model = "ocarina_patch",
 }
 
 tile{

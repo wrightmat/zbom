@@ -3338,15 +3338,6 @@ tile{
   pattern = "316",
 }
 
-tile{
-  layer = 0,
-  x = 824,
-  y = 160,
-  width = 16,
-  height = 16,
-  pattern = "311",
-}
-
 dynamic_tile{
   name = "water_11",
   layer = 0,
@@ -4416,15 +4407,6 @@ wall{
   stops_hero = true,
 }
 
-npc{
-  name = "ocarina_wind_to_H14",
-  layer = 0,
-  x = 832,
-  y = 173,
-  direction = 3,
-  subtype = 0,
-}
-
 destination{
   name = "ocarina_warp",
   layer = 0,
@@ -4467,6 +4449,15 @@ teletransporter{
   transition = "scrolling",
   destination_map = "78",
   destination = "_side",
+}
+
+custom_entity{
+  name = "b1515",
+  layer = 0,
+  x = 832,
+  y = 173,
+  direction = 0,
+  model = "ocarina_patch",
 }
 
 tile{

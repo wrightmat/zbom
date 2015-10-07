@@ -1,0 +1,23 @@
+animation{
+  name = "on_ground",
+  src_image = "entities/miscellaneous.png",
+  directions = {
+    { x = 96, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "activated",
+  src_image = "entities/miscellaneous.png",
+  directions = {
+    { x = 112, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
+  },
+}
+animation{
+  name = "linked",
+  src_image = "entities/miscellaneous.png",
+  frame_delay = 1000,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 96, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 3 },
+  },
+}

@@ -5689,15 +5689,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 592,
-  y = 328,
-  width = 16,
-  height = 16,
-  pattern = "311",
-}
-
-tile{
-  layer = 0,
   x = 720,
   y = 880,
   width = 16,
@@ -7061,15 +7052,6 @@ teletransporter{
   destination = "_side",
 }
 
-npc{
-  name = "ocarina_wind_to_C2",
-  layer = 0,
-  x = 600,
-  y = 341,
-  direction = 3,
-  subtype = 0,
-}
-
 destination{
   name = "ocarina_warp",
   layer = 0,
@@ -7316,5 +7298,14 @@ teletransporter{
   transition = "scrolling",
   destination_map = "65",
   destination = "_side",
+}
+
+custom_entity{
+  name = "b1513",
+  layer = 0,
+  x = 600,
+  y = 341,
+  direction = 0,
+  model = "ocarina_patch",
 }
 

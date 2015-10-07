@@ -1844,15 +1844,6 @@ tile{
   pattern = "2193",
 }
 
-tile{
-  layer = 0,
-  x = 696,
-  y = 720,
-  width = 16,
-  height = 16,
-  pattern = "311",
-}
-
 teletransporter{
   name = "to_C6",
   layer = 0,
@@ -2373,15 +2364,6 @@ npc{
   sprite = "npc/snowpeak_anouki",
 }
 
-npc{
-  name = "ocarina_wind_to_B1",
-  layer = 0,
-  x = 704,
-  y = 733,
-  direction = 3,
-  subtype = 0,
-}
-
 destination{
   name = "ocarina_warp",
   layer = 0,
@@ -2413,6 +2395,15 @@ teletransporter{
   transition = "scrolling",
   destination_map = "52",
   destination = "_side",
+}
+
+custom_entity{
+  name = "b1509",
+  layer = 0,
+  x = 704,
+  y = 733,
+  direction = 0,
+  model = "ocarina_patch",
 }
 
 tile{

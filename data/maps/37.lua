@@ -34,29 +34,3 @@ end
 function npc_deku_2:on_interaction()
   npc_deku_1:on_interaction()
 end
-
-function ocarina_wind_to_C13:on_interaction()
-  game:set_dialog_style("default")
-  -- if this point not previously discovered
-  -- then add it, otherwise do nothing
-  if not game:get_value("b1506") then
-    game:start_dialog("warp.new_point", function()
-      game:set_value("b1506", true)
-    end)
-  else
-    -- if other paired point is discovered (and they have the Ocarina),
-    -- then ask the player if they want to warp there!
-   if game:has_item("ocarina") then
-    if game:get_value("b1507") then
-      game:start_dialog("warp.to_C13", function(answer)
-        if answer == 1 then
-          sol.audio.play_sound("ocarina_wind")
-          map:get_entity("hero"):teleport(82, "ocarina_warp", "fade")
-        end
-      end)
-    else
-      game:start_dialog("warp.interaction")
-    end
-   end
-  end
-end

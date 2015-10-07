@@ -8695,15 +8695,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 952,
-  y = 968,
-  width = 16,
-  height = 16,
-  pattern = "311",
-}
-
-tile{
-  layer = 0,
   x = 424,
   y = 640,
   width = 16,
@@ -13087,15 +13078,6 @@ npc{
   sprite = "entities/torch_wood",
 }
 
-npc{
-  name = "ocarina_wind_to_D7",
-  layer = 0,
-  x = 960,
-  y = 981,
-  direction = 3,
-  subtype = 0,
-}
-
 destination{
   name = "ocarina_warp",
   layer = 0,
@@ -13267,6 +13249,15 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/mailbox",
+}
+
+custom_entity{
+  name = "b1502",
+  layer = 0,
+  x = 960,
+  y = 981,
+  direction = 0,
+  model = "ocarina_patch",
 }
 
 tile{

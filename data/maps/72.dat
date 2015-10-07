@@ -1988,15 +1988,6 @@ tile{
   pattern = "282",
 }
 
-tile{
-  layer = 0,
-  x = 56,
-  y = 672,
-  width = 16,
-  height = 16,
-  pattern = "311",
-}
-
 teletransporter{
   name = "to_C8",
   layer = 0,
@@ -2090,15 +2081,6 @@ destination{
   direction = 3,
 }
 
-npc{
-  name = "ocarina_wind_to_H6",
-  layer = 0,
-  x = 64,
-  y = 685,
-  direction = 3,
-  subtype = 0,
-}
-
 destination{
   name = "ocarina_warp",
   layer = 0,
@@ -2165,6 +2147,15 @@ enemy{
   direction = 0,
   breed = "leever_green",
   treasure_name = "random",
+}
+
+custom_entity{
+  name = "b1505",
+  layer = 0,
+  x = 64,
+  y = 685,
+  direction = 0,
+  model = "ocarina_patch",
 }
 
 tile{

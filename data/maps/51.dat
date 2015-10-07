@@ -4798,15 +4798,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 784,
-  y = 120,
-  width = 16,
-  height = 16,
-  pattern = "311",
-}
-
-tile{
-  layer = 0,
   x = 944,
   y = 1016,
   width = 48,
@@ -7015,15 +7006,6 @@ dynamic_tile{
   enabled_at_start = true,
 }
 
-npc{
-  name = "ocarina_wind_to_F14",
-  layer = 0,
-  x = 792,
-  y = 133,
-  direction = 3,
-  subtype = 0,
-}
-
 destination{
   name = "ocarina_warp",
   layer = 0,
@@ -7276,6 +7258,15 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/mailbox",
+}
+
+custom_entity{
+  name = "b1503",
+  layer = 0,
+  x = 792,
+  y = 133,
+  direction = 0,
+  model = "ocarina_patch",
 }
 
 tile{

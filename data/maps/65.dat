@@ -7883,6 +7883,15 @@ tile{
   pattern = "1588",
 }
 
+tile{
+  layer = 0,
+  x = 136,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "71",
+}
+
 teletransporter{
   name = "to_G7",
   layer = 0,
@@ -10792,15 +10801,6 @@ tile{
   width = 8,
   height = 40,
   pattern = "519",
-}
-
-tile{
-  layer = 2,
-  x = 136,
-  y = 128,
-  width = 16,
-  height = 16,
-  pattern = "71",
 }
 
 tile{
