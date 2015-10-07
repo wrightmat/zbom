@@ -31,8 +31,9 @@ end
 function ocarina_wind_to_north:on_interaction()
   game:set_dialog_style("default")
   if game:has_item("ocarina") then
-    game:start_dialog("warp.to_D7", function(answer)
+    game:start_dialog("warp.to_51", function(answer)
       if answer == 1 then
+        map:get_hero():set_animation("ocarina")
         sol.audio.play_sound("ocarina_wind")
         map:get_entity("hero"):teleport(51, "ocarina_warp", "fade")
       end
@@ -42,8 +43,9 @@ end
 function ocarina_wind_to_east:on_interaction()
   game:set_dialog_style("default")
   if game:has_item("ocarina") then
-    game:start_dialog("warp.to_H6", function(answer)
+    game:start_dialog("warp.to_66", function(answer)
       if answer == 1 then
+        map:get_hero():set_animation("ocarina")
         sol.audio.play_sound("ocarina_wind")
         map:get_entity("hero"):teleport(66, "ocarina_warp", "fade")
       end
@@ -53,8 +55,9 @@ end
 function ocarina_wind_to_south:on_interaction()
   game:set_dialog_style("default")
   if game:has_item("ocarina") then
-    game:start_dialog("warp.to_F14", function(answer)
+    game:start_dialog("warp.to_11", function(answer)
       if answer == 1 then
+        map:get_hero():set_animation("ocarina")
         sol.audio.play_sound("ocarina_wind")
         map:get_entity("hero"):teleport(11, "ocarina_warp", "fade")
       end
@@ -64,8 +67,9 @@ end
 function ocarina_wind_to_west:on_interaction()
   game:set_dialog_style("default")
   if game:has_item("ocarina") then
-    game:start_dialog("warp.to_B8", function(answer)
+    game:start_dialog("warp.to_72", function(answer)
       if answer == 1 then
+        map:get_hero():set_animation("ocarina")
         sol.audio.play_sound("ocarina_wind")
         map:get_entity("hero"):teleport(72, "ocarina_warp", "fade")
       end
