@@ -22,6 +22,18 @@ See our website http://sites.google.com/site/zeldabom for more information.
 
 Enjoy!
 
+VERSION 0.48, released 06-OCT-15
+  - New dialog box styles for wooden and stone signs
+  - Improved ocarina warp points which include visual indication of discovery
+  - Simpler map for North Hyrule (LttP style)
+  - A lot of work on the final dungeon - almost done!
+  - Starting work on final bosses and closing sequence
+  - Opening (dream) sequence implemented
+  - Add minigame before monkey will give back Book page
+  - HUD icons for hero conditions (exhaustion, cursed, poison, etc.)
+  - Hints and fixes
+
+
 VERSION 0.47 released 01-SEP-15
   - Work on last two dungeons - Tower of Winds is fully playable, Interloper Sanctum is not
   - Allow ice cane to freeze water as well as lava
@@ -57,7 +69,7 @@ VERSION 0.44 released 2-JUL-15:
   - core path of wind tower finish - able to obtain book
   - additional warp points
   - short cut added to Pyramid
-  - additional player direction from NPCs, including new attendent in council office
+  - additional player direction from NPCs, including new attendant in council office
   - trading sequence finished - able to obtain feather
   - lost woods expanded
   - dialog font replaced and dialog line breaks redone to utilize additional space
