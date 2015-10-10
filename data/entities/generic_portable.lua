@@ -65,8 +65,8 @@ end
 -- On interaction, lift the entity.
 function entity:on_custom_interaction()
   game:set_interaction_enabled(entity, false)
-	game:set_custom_command_effect("action", nil) -- Change the custom action effects.
-	game:set_custom_command_effect("attack", "custom_carry")
+  game:set_custom_command_effect("action", nil) -- Change the custom action effects.
+  game:set_custom_command_effect("attack", "custom_carry")
   self:lift()
 end 
  

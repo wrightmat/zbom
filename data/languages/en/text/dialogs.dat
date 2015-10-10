@@ -87,6 +87,16 @@ to go for a short time.
 }
 
 dialog{
+  id = "_credits",
+  question = "1",
+  text = [[
+Thanks again for playing! Now what?
+Save and Continue
+Quit (Don't Save)
+]]
+}
+
+dialog{
   id = "_crystal_switch",
   skip = "current",
   text = [[

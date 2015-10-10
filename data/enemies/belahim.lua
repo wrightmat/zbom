@@ -15,8 +15,7 @@ local nb_sons_created = 0
 function enemy:on_created()
   self:set_life(initial_life); self:set_damage(8)
   local sprite = self:create_sprite("enemies/belahim")
-  self:set_size(64, 64); self:set_origin(32, 57)
-  self:set_optimization_distance(0)
+  self:set_size(64, 64); self:set_origin(32, 56)
   self:set_invincible()
   self:set_attack_arrow("custom")
   self:set_attack_consequence("sword", 1)
@@ -26,62 +25,60 @@ function enemy:on_created()
 end
 
 function enemy:on_restarted()
-  if self:get_game():get_map():get_id() == "218" then -- Don't want Belahim to act during the intro.
+--  if self:get_game():get_map():get_id() == "218" then -- Don't want Belahim to act during the intro.
     shadow = false
     local rand = math.random(4)
-    if rand == 1 then
-      self:go_shadow()
-    elseif rand == 2 then
-      self:go_beam()
-    else
-      self:go_hero()
-    end
-  end
+    if rand == 1 then self:go_shadow()
+    elseif rand == 2 then self:go_beam()
+    else self:go_hero() end
+--  end
+end
+
+function enemy:on_obstacle_reached(movement)
+  self:restart()
+end
+
+function enemy:on_movement_changed(movement)
+  local direction4 = movement:get_direction4()
+  self:get_sprite():set_direction(direction4)
 end
 
 function enemy:go_shadow()
-print("go shadow")
+  shadow = true
+  self:stop_movement()
   self:get_sprite():set_animation("shrink")
   sol.timer.start(self:get_map(), 1000, function() self:get_sprite():set_animation("shadow") end)
-  shadow = true
   sol.timer.start(self:get_map(), math.random(10)*500, function() enemy:go_normal() end)
 end
 
 function enemy:go_normal()
-print("go normal")
   shadow = false
   self:get_sprite():set_animation("walking")
   self:restart()
 end
 
 function enemy:go_beam()
-print("throw beam")
-  local sprite = self:get_sprite()
-  sprite:set_animation("stopped")
-  sol.timer.start(self:get_map(), 700, function() self:restart() end)
+  self:get_sprite():set_animation("stopped")
+  sol.timer.start(self:get_map(), 7000, function() self:restart() end)
 
   function throw_beam()
     nb_sons_created = nb_sons_created + 1
-    self:create_enemy({x = 0, y = 21, breed = "belahim_beam", name = "belahim_beam_" .. nb_sons_created})
+    self:create_enemy({x = 0, y = 8, breed = "projectiles/belahim_beam", name = "belahim_beam_" .. nb_sons_created})
   end
 
   throw_beam()
   if self:get_life() <= initial_life / 2 then
-    sol.timer.start(self, 200, function()
-      throw_beam()
-    end)
-    sol.timer.start(self, 400, function()
-      throw_beam()
-    end)
+    sol.timer.start(self, 200, function() throw_beam() end)
+    sol.timer.start(self, 400, function() throw_beam() end)
   end
 end
 
 function enemy:go_hero()
   local m = sol.movement.create("target")
   m:set_target(self:get_map():get_hero())
-  m:set_speed(32)
+  m:set_ignore_obstacles(true)
+  m:set_speed(40)
   m:start(self)
-print("go hero")
   sol.timer.start(self:get_map(), math.random(10)*500, function() enemy:restart() end)
 end
 

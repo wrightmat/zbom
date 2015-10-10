@@ -3,7 +3,6 @@
 local title_screen = {}
 
 function title_screen:on_started()
-
   -- black screen during 0.3 seconds
   self.phase = "black"
 
@@ -17,12 +16,9 @@ function title_screen:on_started()
 end
 
 function title_screen:phase_zs_presents()
-
   -- "Zelda Solarus presents" displayed for two seconds
   self.phase = "zs_presents"
-
-  local zs_presents_img =
-      sol.surface.create("title_screen_initialization.png", true)
+  local zs_presents_img = sol.surface.create("title_screen_initialization.png", true)
 
   local width, height = zs_presents_img:get_size()
   local x, y = 160 - width / 2, 120 - height / 2
@@ -38,7 +34,6 @@ function title_screen:phase_zs_presents()
 end
 
 function title_screen:phase_title()
-
   -- actual title screen
   self.phase = "title"
 
@@ -57,10 +52,8 @@ function title_screen:phase_title()
   end
 
   -- create all images
-  self.background_img = sol.surface.create("menus/title_" .. time_of_day
-      .. "_background.png")
-  self.clouds_img = sol.surface.create("menus/title_" .. time_of_day
-      .. "_clouds.png")
+  self.background_img = sol.surface.create("menus/title_" .. time_of_day .. "_background.png")
+  self.clouds_img = sol.surface.create("menus/title_" .. time_of_day .. "_clouds.png")
   self.logo_img = sol.surface.create("menus/title_logo.png")
 
   self.website_img = sol.text_surface.create{

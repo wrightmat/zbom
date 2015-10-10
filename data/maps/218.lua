@@ -91,6 +91,7 @@ if boss_belahim ~= nil then
             bed_zelda:fade_out(100, function()
               game:start_dialog("ordona.8.zelda", function()
                 map:get_hero():teleport("84", "from_sanctum")  -- Teleport hero outside of Sanctum.
+                map:get_game():on_credits_started()
               end)
             end
           end)

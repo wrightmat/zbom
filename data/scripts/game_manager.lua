@@ -4,6 +4,7 @@ local game = ...
 
 -- Include the various game features.
 sol.main.load_file("scripts/menus/pause")(game)
+sol.main.load_file("scripts/menus/credits")(game)
 sol.main.load_file("scripts/menus/game_over")(game)
 sol.main.load_file("scripts/menus/dialog_box")(game)
 sol.main.load_file("scripts/hud/hud")(game)
