@@ -72,7 +72,7 @@ function item:on_obtaining(variant, savegame_variable)
     local max_amount = max_amounts[quiver:get_variant()]
     self:set_max_amount(max_amount)
   end
-  if amount == 0 then self:set_variant(1) else self:set_variant(2) end
+  if self:get_amount() == 0 then self:set_variant(1) else self:set_variant(2) end
 end
 
 function item:get_force()

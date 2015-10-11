@@ -79,8 +79,8 @@ local function update_rooms()
   end
 
   -- For Room 21.
-  map:create_enemy({ x = 1160, y = 925, layer = 0, direction = 0, breed = "boulder" })
-  map:create_enemy({ x = 1304, y = 925, layer = 0, direction = 0, breed = "boulder" })
+  map:create_enemy({ x = 1160, y = 941, layer = 0, direction = 0, breed = "boulder" })
+  map:create_enemy({ x = 1304, y = 941, layer = 0, direction = 0, breed = "boulder" })
 end
 
 function map:on_started(destination)
@@ -92,6 +92,7 @@ function map:on_started(destination)
       map:move_camera(992, 1453, 250, function()
         sol.audio.play_sound("poe_soul")
         game:start_dialog("shadow_link.sanctum_basement", game:get_player_name(), function()
+          game:get_item("dungeon_map"):set_variant(1) -- Give map so explored and non-explored rooms show correctly.
           shadow_link:get_sprite():fade_out(50, function()
             enter_stairs_1:set_enabled(false)
             enter_stairs_2:set_enabled(false)
@@ -121,13 +122,16 @@ local function reset_arrow_puzzle()
 end
 
 local function game_won()
-  game:set_value("dungeon_8_explored_1b_complete", true)
-  sol.audio.play_sound("secret")
-  map:move_camera(896, 144, 250, function()
-    exit_stairs_1:set_enabled(true)
-    exit_stairs_2:set_enabled(true)
-    exit_stairs_3:set_enabled(true)
-  end, 500, 2000)
+  if not game:get_value("dungeon_8_explored_1b_complete") then
+    game:set_value("dungeon_8_explored_1b_complete", true)
+    room_overlay_25:get_sprite():set_direction(3)
+    sol.audio.play_sound("secret")
+    map:move_camera(896, 144, 250, function()
+      exit_stairs_1:set_enabled(true)
+      exit_stairs_2:set_enabled(true)
+      exit_stairs_3:set_enabled(true)
+    end, 500, 2000)
+  end
 end
 
 for enemy in map:get_entities("room_1_") do
@@ -328,6 +332,7 @@ function room19_switch_2:on_activated()
   if not game:get_value("dungeon_8_explored_1b_19") then
     sol.audio.play_sound("lamp")
     game:set_value("dungeon_8_explored_1b_19", true)
+    room19_block:set_enabled(false)
   end
   room19_switch_1:set_activated(false)
   local positions_1 = { {x = 1440, y = 720}, {x = 1552, y = 680}, {x = 1552, y = 760} }
@@ -352,8 +357,7 @@ for enemy in map:get_entities("room_20_") do
   end
 end
 
-function room21_crystal:on_activated()
-print("room 21 activated")
+function room21_switch:on_activated()
   sol.audio.play_sound("lamp")
   game:set_value("dungeon_8_explored_1b_21", true)
 end
@@ -398,16 +402,16 @@ function map:on_update()
   end
 
   -- Win Conditions (12 total).
-  if game:get_value("dungeon_8_explored_1b_3") and game:get_value("dungeon_8_explored_1b_4") and game:get_value("dungeon_8_explored_1b_9") and game:get_value("dungeon_8_explored_1b_10") and game:get_value("dungeon_8_explored_1b_11") then self:game_won() end  -- 1st Column
-  if game:get_value("dungeon_8_explored_1b_2") and game:get_value("dungeon_8_explored_1b_5") and game:get_value("dungeon_8_explored_1b_8") and game:get_value("dungeon_8_explored_1b_12") and game:get_value("dungeon_8_explored_1b_13") then self:game_won() end  -- 2nd Column
-  if game:get_value("dungeon_8_explored_1b_1") and game:get_value("dungeon_8_explored_1b_6") and game:get_value("dungeon_8_explored_1b_7") and game:get_value("dungeon_8_explored_1b_14") and game:get_value("dungeon_8_explored_1b_25") then self:game_won() end  -- 3rd Column
-  if game:get_value("dungeon_8_explored_1b_15") and game:get_value("dungeon_8_explored_1b_16") and game:get_value("dungeon_8_explored_1b_20") and game:get_value("dungeon_8_explored_1b_21") and game:get_value("dungeon_8_explored_1b_24") then self:game_won() end  -- 4th Column
-  if game:get_value("dungeon_8_explored_1b_23") and game:get_value("dungeon_8_explored_1b_22") and game:get_value("dungeon_8_explored_1b_19") and game:get_value("dungeon_8_explored_1b_18") and game:get_value("dungeon_8_explored_1b_17") then self:game_won() end  -- 5th Column
-  if game:get_value("dungeon_8_explored_1b_11") and game:get_value("dungeon_8_explored_1b_12") and game:get_value("dungeon_8_explored_1b_16") and game:get_value("dungeon_8_explored_1b_17") and game:get_value("dungeon_8_explored_1b_25") then self:game_won() end  -- 1st Row
-  if game:get_value("dungeon_8_explored_1b_10") and game:get_value("dungeon_8_explored_1b_13") and game:get_value("dungeon_8_explored_1b_14") and game:get_value("dungeon_8_explored_1b_15") and game:get_value("dungeon_8_explored_1b_18") then self:game_won() end  -- 2nd Row
-  if game:get_value("dungeon_8_explored_1b_7") and game:get_value("dungeon_8_explored_1b_8") and game:get_value("dungeon_8_explored_1b_9") and game:get_value("dungeon_8_explored_1b_19") and game:get_value("dungeon_8_explored_1b_20") then self:game_won() end  -- 3rd Row
-  if game:get_value("dungeon_8_explored_1b_4") and game:get_value("dungeon_8_explored_1b_5") and game:get_value("dungeon_8_explored_1b_6") and game:get_value("dungeon_8_explored_1b_21") and game:get_value("dungeon_8_explored_1b_22") then self:game_won() end  -- 4th Row
-  if game:get_value("dungeon_8_explored_1b_1") and game:get_value("dungeon_8_explored_1b_2") and game:get_value("dungeon_8_explored_1b_3") and game:get_value("dungeon_8_explored_1b_23") and game:get_value("dungeon_8_explored_1b_24") then self:game_won() end  -- 5th Row
-  if game:get_value("dungeon_8_explored_1b_11") and game:get_value("dungeon_8_explored_1b_13") and game:get_value("dungeon_8_explored_1b_7") and game:get_value("dungeon_8_explored_1b_21") and game:get_value("dungeon_8_explored_1b_23") then self:game_won() end  -- 1st Diagonal
-  if game:get_value("dungeon_8_explored_1b_17") and game:get_value("dungeon_8_explored_1b_15") and game:get_value("dungeon_8_explored_1b_7") and game:get_value("dungeon_8_explored_1b_5") and game:get_value("dungeon_8_explored_1b_3") then self:game_won() end  -- 2nd Diagonal
+  if game:get_value("dungeon_8_explored_1b_3") and game:get_value("dungeon_8_explored_1b_4") and game:get_value("dungeon_8_explored_1b_9") and game:get_value("dungeon_8_explored_1b_10") and game:get_value("dungeon_8_explored_1b_11") then game_won() end  -- 1st Column
+  if game:get_value("dungeon_8_explored_1b_2") and game:get_value("dungeon_8_explored_1b_5") and game:get_value("dungeon_8_explored_1b_8") and game:get_value("dungeon_8_explored_1b_12") and game:get_value("dungeon_8_explored_1b_13") then game_won() end  -- 2nd Column
+  if game:get_value("dungeon_8_explored_1b_1") and game:get_value("dungeon_8_explored_1b_6") and game:get_value("dungeon_8_explored_1b_7") and game:get_value("dungeon_8_explored_1b_14") and game:get_value("dungeon_8_explored_1b_25") then game_won() end  -- 3rd Column
+  if game:get_value("dungeon_8_explored_1b_15") and game:get_value("dungeon_8_explored_1b_16") and game:get_value("dungeon_8_explored_1b_20") and game:get_value("dungeon_8_explored_1b_21") and game:get_value("dungeon_8_explored_1b_24") then game_won() end  -- 4th Column
+  if game:get_value("dungeon_8_explored_1b_23") and game:get_value("dungeon_8_explored_1b_22") and game:get_value("dungeon_8_explored_1b_19") and game:get_value("dungeon_8_explored_1b_18") and game:get_value("dungeon_8_explored_1b_17") then game_won() end  -- 5th Column
+  if game:get_value("dungeon_8_explored_1b_11") and game:get_value("dungeon_8_explored_1b_12") and game:get_value("dungeon_8_explored_1b_16") and game:get_value("dungeon_8_explored_1b_17") and game:get_value("dungeon_8_explored_1b_25") then game_won() end  -- 1st Row
+  if game:get_value("dungeon_8_explored_1b_10") and game:get_value("dungeon_8_explored_1b_13") and game:get_value("dungeon_8_explored_1b_14") and game:get_value("dungeon_8_explored_1b_15") and game:get_value("dungeon_8_explored_1b_18") then game_won() end  -- 2nd Row
+  if game:get_value("dungeon_8_explored_1b_7") and game:get_value("dungeon_8_explored_1b_8") and game:get_value("dungeon_8_explored_1b_9") and game:get_value("dungeon_8_explored_1b_19") and game:get_value("dungeon_8_explored_1b_20") then game_won() end  -- 3rd Row
+  if game:get_value("dungeon_8_explored_1b_4") and game:get_value("dungeon_8_explored_1b_5") and game:get_value("dungeon_8_explored_1b_6") and game:get_value("dungeon_8_explored_1b_21") and game:get_value("dungeon_8_explored_1b_22") then game_won() end  -- 4th Row
+  if game:get_value("dungeon_8_explored_1b_1") and game:get_value("dungeon_8_explored_1b_2") and game:get_value("dungeon_8_explored_1b_3") and game:get_value("dungeon_8_explored_1b_23") and game:get_value("dungeon_8_explored_1b_24") then game_won() end  -- 5th Row
+  if game:get_value("dungeon_8_explored_1b_11") and game:get_value("dungeon_8_explored_1b_13") and game:get_value("dungeon_8_explored_1b_7") and game:get_value("dungeon_8_explored_1b_21") and game:get_value("dungeon_8_explored_1b_23") then game_won() end  -- 1st Diagonal
+  if game:get_value("dungeon_8_explored_1b_17") and game:get_value("dungeon_8_explored_1b_15") and game:get_value("dungeon_8_explored_1b_7") and game:get_value("dungeon_8_explored_1b_5") and game:get_value("dungeon_8_explored_1b_3") then game_won() end  -- 2nd Diagonal
 end

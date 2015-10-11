@@ -6896,7 +6896,6 @@ door{
   direction = 2,
   sprite = "entities/door_shutter",
   savegame_variable = "b1189",
-  opening_method = "interaction_if_savegame_variable",
   opening_condition = "b1182",
 }
 
@@ -7326,8 +7325,7 @@ teletransporter{
   y = 1232,
   width = 16,
   height = 16,
-  destination_map = "218",
-  destination = "from_basement_2",
+  destination_map = "219",
   sprite = "entities/teletransporter",
   sound = "warp",
 }

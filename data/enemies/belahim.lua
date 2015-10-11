@@ -25,13 +25,14 @@ function enemy:on_created()
 end
 
 function enemy:on_restarted()
---  if self:get_game():get_map():get_id() == "218" then -- Don't want Belahim to act during the intro.
-    shadow = false
-    local rand = math.random(4)
-    if rand == 1 then self:go_shadow()
-    elseif rand == 2 then self:go_beam()
-    else self:go_hero() end
---  end
+  if self:get_game():get_map():get_id() == "218" then -- Don't want Belahim to act during the intro.
+    if not shadow then
+      local rand = math.random(4)
+      if rand == 1 then self:go_shadow()
+      elseif rand == 2 then self:go_beam()
+      else self:go_hero() end
+    end
+  end
 end
 
 function enemy:on_obstacle_reached(movement)
@@ -48,7 +49,7 @@ function enemy:go_shadow()
   self:stop_movement()
   self:get_sprite():set_animation("shrink")
   sol.timer.start(self:get_map(), 1000, function() self:get_sprite():set_animation("shadow") end)
-  sol.timer.start(self:get_map(), math.random(10)*500, function() enemy:go_normal() end)
+  --sol.timer.start(self:get_map(), math.random(10)*500, function() enemy:go_normal() end)
 end
 
 function enemy:go_normal()
@@ -103,12 +104,10 @@ function enemy:on_hurt(attack)
 end
 
 function enemy:on_hurt_by_sword(hero, enemy_sprite)
-  if self:get_game():get_ability("sword") == 3 then
+  if self:get_game():get_ability("sword") == 3 and not shadow and not second_stage then
     self:hurt(3)
     enemy:remove_life(3)
-print("hurt by sword - 3 life points removed. life= "..self:get_life())
-  else
-print("hurt by sword - 1 life point removed. life= "..self:get_life())
+  elseif not shadow and not second_stage then
     self:hurt(1)
     enemy:remove_life(1)
   end
@@ -117,9 +116,11 @@ end
 function enemy:on_custom_attack_received(attack, sprite)
   if attack == "arrow" and self:get_game():has_item("bow_light") then
     if shadow then
-print("hurt by light arrow - 6 life points removed. life= "..self:get_life())
-      self:hurt(6)
-      enemy:remove_life(6)
+      if second_stage then
+        self:hurt(2); self:remove_life(2)
+      else
+        self:hurt(6); enemy:remove_life(6)
+      end
       vulnerable = false
     end
   end

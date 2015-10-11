@@ -8,7 +8,7 @@ function item:on_created()
 end
 
 function item:on_started()
-  item:set_obtainable(self:get_game():has_item("bow_light"))
+  item:set_obtainable(game:has_item("bow_light"))
 end
 
 function item:on_obtaining(variant, savegame_variable)
