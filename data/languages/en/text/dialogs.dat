@@ -4626,6 +4626,15 @@ Can't say I even know what that is!
 }
 
 dialog{
+  id = "gin.2.council",
+  text = [[
+Zelda told me all about this Book you
+mentioned when she got back. Sounds like
+you had quite the adventure!
+]]
+}
+
+dialog{
   id = "gonpho.0.council",
   skip = "current",
   text = [[
@@ -4654,6 +4663,14 @@ hit the bustling city of  $b Kakariko$w. If
 you continue north and west past that,
 you'll find my home of  $b Snowpeak$w. Surely
 not bustling, but a nice home anyhow.
+]]
+}
+
+dialog{
+  id = "gonpho.1.council",
+  text = [[
+We knew you'd come through and find
+Zelda! Great work, hero!
 ]]
 }
 
@@ -6073,6 +6090,15 @@ treasure - known as $r  Zora's Flippers$w.
 }
 
 dialog{
+  id = "juba.3.council",
+  text = [[
+Good to see that Zelda is back.
+I actually did miss her a litte. And she's
+a little quieter since she got back.
+]]
+}
+
+dialog{
   id = "julita.0",
   skip = "current",
   text = [[
@@ -6218,6 +6244,15 @@ people - we call it $b Septen Heights$w.
 }
 
 dialog{
+  id = "koshi.1.council",
+  text = [[
+Thank you for reuniting our council!
+Now back to the important work of
+leading Hyrule.
+]]
+}
+
+dialog{
   id = "lakebed.room_flooded",
   skip = "current",
   text = [[
@@ -6273,6 +6308,15 @@ be best to disband for now. So I get
 to spend some quality time with my
 people!$0 I just wish the conditions
 were better...
+]]
+}
+
+dialog{
+  id = "larin.2.council",
+  text = [[
+Brother! You've saved my entire people
+and the leader of our council! We can't
+possibly thank you enough!
 ]]
 }
 
@@ -9460,6 +9504,16 @@ sure it hasn't been used in a long time.
 }
 
 dialog{
+  id = "ulo.6.council",
+  text = [[
+Great work saving Zelda! I knew you
+would be the one to defeat the Darkness.
+We Ordons have always had a way with
+the $y Light!$w
+]]
+}
+
+dialog{
   id = "use_apple",
   icon = "16",
   question = "1",
@@ -9850,6 +9904,16 @@ if they find you here with the pieces
 of that $c Book$wyou possess, it is unlikely
 that you'll escape alive. Get away from
 the castle as fast as you can!
+]]
+}
+
+dialog{
+  id = "zelda.2.council",
+  text = [[
+$v, I can't thank you enough for saving
+me from those vile people! Mark my words,
+as long as I live, the  $m Dark Tribe will
+never threaten Hyrule again.
 ]]
 }
 

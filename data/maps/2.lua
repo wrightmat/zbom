@@ -50,7 +50,7 @@ function map:on_started(destination)
   end
   slots_man_sprite = slots_man:get_sprite()
   npc_zirna:set_enabled(false)
-  if game:get_value("i1032") >= 3 then
+  if game:get_value("i1032") >= 3 and not game:get_value("b1699") then
     -- Council disbands after Zelda kidnapped
     elder_ulo:remove()
     elder_juba:remove()
@@ -89,7 +89,9 @@ end
 
 function elder_ulo:on_interaction()
   game:set_dialog_style("default")
-  if game:get_value("i1032") > 2 then
+  if game:get_value("b1699") then
+    game:start_dialog("ulo.6.council")
+  elseif game:get_value("i1032") > 2 then
     game:start_dialog("ulo.2.council_zelda", game:get_player_name())
   else
     game:start_dialog("ulo.2.council", game:get_player_name())
@@ -98,7 +100,9 @@ end
 
 function elder_juba:on_interaction()
   game:set_dialog_style("default")
-  if game:get_value("i1032") > 2 then
+  if game:get_value("b1699") then
+    game:start_dialog("juba.3.council")
+  elseif game:get_value("i1032") > 2 then
     game:start_dialog("juba.0.council_zelda")
   else
     game:start_dialog("juba.0.council")
@@ -123,7 +127,9 @@ end
 
 function elder_gin:on_interaction()
   game:set_dialog_style("default")
-  if game:get_value("i1032") > 2 then
+  if game:get_value("b1699") then
+    game:start_dialog("gin.2.council")
+  elseif game:get_value("i1032") > 2 then
     game:start_dialog("gin.0.council_zelda")
   else
     game:start_dialog("gin.0.council")
@@ -132,22 +138,28 @@ end
 
 function elder_zelda:on_interaction()
   game:set_dialog_style("default")
-  game:start_dialog("zelda.0.council", game:get_player_name(), function()
-    if game:get_value("i1032") >= 1 then
-      game:start_dialog("zelda.1.council")
-    else
-      game:start_dialog("zelda.0.goto_old_hyrule", function()
-        if not game:has_item("glove") then
-          game:start_dialog("zelda.0.goto_old_hyrule_glove")
-        end
-      end)
-    end
-  end)
+  if game:get_value("b1699") then
+    game:start_dialog("zelda.2.council", game:get_player_name())
+  else
+    game:start_dialog("zelda.0.council", game:get_player_name(), function()
+      if game:get_value("i1032") >= 1 then
+        game:start_dialog("zelda.1.council")
+      else
+        game:start_dialog("zelda.0.goto_old_hyrule", function()
+          if not game:has_item("glove") then
+            game:start_dialog("zelda.0.goto_old_hyrule_glove")
+          end
+        end)
+      end
+    end)
+  end
 end
 
 function elder_larin:on_interaction()
   game:set_dialog_style("default")
-  if game:get_value("i1032") > 2 then
+  if game:get_value("b1699") then
+    game:start_dialog("larin.2.council")
+  elseif game:get_value("i1032") > 2 then
     game:start_dialog("larin.0.council_zelda")
   else
     game:start_dialog("larin.0.council")
@@ -156,7 +168,9 @@ end
 
 function elder_gonpho:on_interaction()
   game:set_dialog_style("default")
-  if game:get_value("i1032") > 2 then
+  if game:get_value("b1699") then
+    game:start_dialog("gonpho.1.council")
+  elseif game:get_value("i1032") > 2 then
     game:start_dialog("gonpho.0.council_zelda")
   else
     game:start_dialog("gonpho.0.council")
@@ -170,7 +184,9 @@ end
 
 function elder_koshi:on_interaction()
   game:set_dialog_style("default")
-  if game:get_value("i1032") > 2 then
+  if game:get_value("b1699") then
+    game:start_dialog("koshi.1.council")
+  elseif game:get_value("i1032") > 2 then
     game:start_dialog("koshi.0.council_zelda")
   else
     game:start_dialog("koshi.0.council")
