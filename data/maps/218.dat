@@ -6119,7 +6119,7 @@ wall{
 }
 
 enemy{
-  name = "wallmaster_room4",
+  name = "wallmaster",
   layer = 0,
   x = 200,
   y = 452,
@@ -7317,17 +7317,6 @@ wall{
   width = 304,
   height = 8,
   stops_enemies = true,
-}
-
-teletransporter{
-  layer = 0,
-  x = 184,
-  y = 1232,
-  width = 16,
-  height = 16,
-  destination_map = "219",
-  sprite = "entities/teletransporter",
-  sound = "warp",
 }
 
 enemy{

@@ -71,7 +71,7 @@ local function update_rooms()
   if game:get_value("dungeon_8_explored_1b_25") then room_overlay_25:get_sprite():set_direction(3) else room_overlay_25:get_sprite():set_direction(1) end
 
   if math.random(20) == 1 then  -- 1 in 20 chance of "switching off" a room each cycle.
-    room = math.random(25)
+    room = math.random(24)
     if game:get_value("dungeon_8_explored_1b_"..room) then
       game:set_value("dungeon_8_explored_1b_"..room, false)
       sol.audio.play_sound("poe_soul")
@@ -87,12 +87,12 @@ function map:on_started(destination)
   -- The only way to get out of the game is to die.
   game:set_starting_location("218", "from_outside")
 
-  if destination == from_above then
+  if destination == from_above and not game:get_value("dungeon_8_explored_1b_complete") then
     sol.timer.start(self, 1000, function()
       map:move_camera(992, 1453, 250, function()
         sol.audio.play_sound("poe_soul")
         game:start_dialog("shadow_link.sanctum_basement", game:get_player_name(), function()
-          game:get_item("dungeon_map"):set_variant(1) -- Give map so explored and non-explored rooms show correctly.
+          game:get_hero():start_treasure("map", 1, "b1181") -- Give map so explored and non-explored rooms show correctly.
           shadow_link:get_sprite():fade_out(50, function()
             enter_stairs_1:set_enabled(false)
             enter_stairs_2:set_enabled(false)

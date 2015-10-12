@@ -14490,6 +14490,42 @@ tile{
   pattern = "525",
 }
 
+tile{
+  layer = 0,
+  x = 1536,
+  y = 880,
+  width = 16,
+  height = 24,
+  pattern = "287",
+}
+
+tile{
+  layer = 0,
+  x = 1584,
+  y = 880,
+  width = 16,
+  height = 24,
+  pattern = "287",
+}
+
+tile{
+  layer = 0,
+  x = 1600,
+  y = 264,
+  width = 16,
+  height = 16,
+  pattern = "237",
+}
+
+tile{
+  layer = 0,
+  x = 1600,
+  y = 200,
+  width = 16,
+  height = 16,
+  pattern = "237",
+}
+
 dynamic_tile{
   name = "enter_stairs_1",
   layer = 0,
@@ -19771,7 +19807,7 @@ custom_entity{
 custom_entity{
   name = "hook_6",
   layer = 0,
-  x = 1480,
+  x = 1488,
   y = 277,
   direction = 0,
   model = "hook",
@@ -20691,6 +20727,42 @@ destructible{
   destruction_sound = "stone",
 }
 
+custom_entity{
+  name = "hook_7",
+  layer = 0,
+  x = 1544,
+  y = 909,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_8",
+  layer = 0,
+  x = 1592,
+  y = 909,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_9",
+  layer = 0,
+  x = 1608,
+  y = 277,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_10",
+  layer = 0,
+  x = 1608,
+  y = 213,
+  direction = 0,
+  model = "hook",
+}
+
 tile{
   layer = 1,
   x = 1456,
@@ -20722,6 +20794,24 @@ tile{
   layer = 1,
   x = 1472,
   y = 248,
+  width = 16,
+  height = 16,
+  pattern = "239",
+}
+
+tile{
+  layer = 1,
+  x = 1600,
+  y = 248,
+  width = 16,
+  height = 16,
+  pattern = "239",
+}
+
+tile{
+  layer = 1,
+  x = 1600,
+  y = 184,
   width = 16,
   height = 16,
   pattern = "239",

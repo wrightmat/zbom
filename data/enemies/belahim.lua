@@ -2,7 +2,6 @@ local enemy = ...
 local initial_life = 40
 local second_life = 12
 local second_stage = false
-local fireball_proba = 33  -- Percent.
 local shadow = false
 local nb_sons_created = 0
 
@@ -26,12 +25,11 @@ end
 
 function enemy:on_restarted()
   if self:get_game():get_map():get_id() == "218" then -- Don't want Belahim to act during the intro.
-    if not shadow then
-      local rand = math.random(4)
-      if rand == 1 then self:go_shadow()
-      elseif rand == 2 then self:go_beam()
-      else self:go_hero() end
-    end
+    if second_stage then local rand = math.random(10) else local rand = math.random(6) end
+    if rand == 1 then
+      if not shadow then self:go_shadow() else self:go_normal() end
+    elseif rand == 2 and not shadow then self:go_beam()
+    else self:go_hero() end
   end
 end
 
@@ -49,7 +47,7 @@ function enemy:go_shadow()
   self:stop_movement()
   self:get_sprite():set_animation("shrink")
   sol.timer.start(self:get_map(), 1000, function() self:get_sprite():set_animation("shadow") end)
-  --sol.timer.start(self:get_map(), math.random(10)*500, function() enemy:go_normal() end)
+  sol.timer.start(self:get_map(), math.random(10)*5000, function() enemy:go_normal() end)
 end
 
 function enemy:go_normal()
@@ -78,7 +76,7 @@ function enemy:go_hero()
   local m = sol.movement.create("target")
   m:set_target(self:get_map():get_hero())
   m:set_ignore_obstacles(true)
-  m:set_speed(40)
+  if second_stage then m:set_speed(56) else m:set_speed(40) end
   m:start(self)
   sol.timer.start(self:get_map(), math.random(10)*500, function() enemy:restart() end)
 end
@@ -98,8 +96,6 @@ function enemy:on_hurt(attack)
     self:get_map():remove_entities("belahim_beam")
     self:set_life(second_life)
     second_stage = true
-  elseif life <= initial_life / 3 then
-    fireball_proba = 50
   end
 end
 
@@ -121,7 +117,7 @@ function enemy:on_custom_attack_received(attack, sprite)
       else
         self:hurt(6); enemy:remove_life(6)
       end
-      vulnerable = false
+      shadow = false
     end
   end
 end

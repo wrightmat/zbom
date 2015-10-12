@@ -13,11 +13,13 @@ function map:on_started(destination)
     chest_item:set_enabled(false)
   end
   if not game:get_value("b1190") then boss_zirna:set_enabled(false) end
-  if not game:get_value("b1191") then boss_belahim:set_enabled(false) end
+  if not game:get_value("b1191") then
+    boss_belahim:set_enabled(false)
+    dark_mirror:set_enabled(false)
+  else bed_zelda:remove() end
   if not game:get_value("b1190") and not game:get_value("b1191") then
     boss_heart:set_enabled(false)
   end
-  dark_mirror:set_enabled(false)
 end
 
 for enemy in map:get_entities("wizzrobe_room6") do
@@ -40,7 +42,7 @@ end
 
 function sensor_miniboss:on_activated()
   if miniboss_shadow_link ~= nil then
-    map:close_doors("door_boss")
+    map:close_doors("boss_door")
     miniboss_shadow_link:set_enabled(true)
     sol.audio.play_music("boss")
   end
@@ -48,7 +50,7 @@ end
 if miniboss_shadow_link ~= nil then
   function miniboss_shadow_link:on_dead()
     game:set_value("b1131", true)
-    map:open_doors("door_boss") -- door out of boss chamber
+    map:open_doors("boss_door") -- Door out of boss chamber.
     map:open_doors("room11_shutter") -- door down to basement
     sol.audio.play_sound("boss_killed")
     chest_item:set_enabled(true)
@@ -62,6 +64,8 @@ function sensor_boss:on_activated()
     boss_zirna:set_enabled(true)
     sol.audio.play_music("boss")
     map:close_doors("boss_door")
+    wallmaster:remove() -- Don't want hero taken during boss fight.
+    wallmaster_2:remove()
   end
 end
 if boss_zirna ~= nil then
@@ -79,6 +83,7 @@ if boss_belahim ~= nil then
     boss_heart:set_enabled(true)
     sol.timer.start(5000, function()
       sol.audio.play_music("temple_sanctum")
+      game:set_value("b1699", true)  -- Main quest completed - Dark Tribe defeated.
       game:start_dialog("ordona.8.boss_dead", game:get_player_name(), function()
         local m = sol.movement.create("target")
         m:set_target(880, 1200)
@@ -86,15 +91,20 @@ if boss_belahim ~= nil then
         map:get_hero():set_animation("walking")
         m:start(map:get_hero(), function()
           map:get_hero():set_animation("book_mudora")
-          sol.timer.start(self, 1000, function() dark_mirror:get_sprite():fade_in(100) end)
-          game:start_dialog("ordona.8.mirror", game:get_player_name(), function()
-            m:set_target(880, 1032)
-            map:get_hero():set_animation("walking")
-            m:start(map:get_hero(), function()
-              bed_zelda:get_sprite():fade_out(100, function()
-                game:start_dialog("ordona.8.zelda", function()
-                  map:get_hero():teleport("84", "from_sanctum")  -- Teleport hero outside of Sanctum.
-                  map:get_game():on_credits_started()
+          sol.timer.start(self, 1000, function()
+            dark_mirror:set_enabled()
+            dark_mirror:get_sprite():fade_in(100, function()
+              game:start_dialog("ordona.8.mirror", game:get_player_name(), function()
+                m:set_target(880, 1032)
+                map:get_hero():set_direction(1) -- Walking upward.
+                map:get_hero():set_animation("walking")
+                m:start(map:get_hero(), function()
+                  map:get_hero():set_animation("stopped")
+                  bed_zelda:remove()
+                  game:start_dialog("ordona.8.zelda", function()
+                    map:get_hero():teleport("84", "from_sanctum")  -- Teleport hero outside of Sanctum.
+                    sol.timer.start(map:get_game(), 500, function() map:get_game():on_credits_started() end)
+                  end)
                 end)
               end)
             end)
