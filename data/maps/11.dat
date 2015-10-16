@@ -10907,6 +10907,15 @@ tile{
   pattern = "152",
 }
 
+tile{
+  layer = 0,
+  x = 736,
+  y = 744,
+  width = 16,
+  height = 16,
+  pattern = "1450",
+}
+
 destructible{
   layer = 0,
   x = 1008,
@@ -13258,6 +13267,16 @@ custom_entity{
   y = 981,
   direction = 0,
   model = "ocarina_patch",
+}
+
+npc{
+  name = "scarecrow",
+  layer = 0,
+  x = 744,
+  y = 749,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/scarecrow",
 }
 
 tile{
