@@ -22,6 +22,12 @@ See our website http://sites.google.com/site/zeldabom for more information.
 
 Enjoy!
 
+VERSION 0.49, released 16-OCT-15
+  - Credits sequence implemented
+  - Interloper Sanctum basement is fully playable - may still be bugs to work out
+  - Final boss is working, but there may be tweaks in the next version
+  - Improvements to main font to allow for non-English translation (more to come)
+
 VERSION 0.48, released 06-OCT-15
   - New dialog box styles for wooden and stone signs
   - Improved ocarina warp points which include visual indication of discovery
