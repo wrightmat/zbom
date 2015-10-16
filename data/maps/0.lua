@@ -3,7 +3,7 @@ local game = map:get_game()
 
 function map:on_started(destination)
   -- Remove HUD and hero.
-  map:get_game():set_hud_enabled(false)
+  map:get_game().hud:set_enabled(false)
   map:get_hero():set_position(-100, -100)
 
   -- Set initial and max stamina.
