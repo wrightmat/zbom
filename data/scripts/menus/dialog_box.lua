@@ -55,14 +55,21 @@ function game:initialize_dialog_box()
   dialog_box.current_line_surface = dialog_box.line_surfaces.default
   -- Text properties used to initialize surfaces.
   local font, font_size = sol.language.get_dialog_font()
-  dialog_box.text_properties = { 
-    horizontal_alignment = "left",
-    vertical_alignment = "top",
-    font = font,
-    font_size = font_size,
-  }
   if sol.video.get_mode() == "normal" or sol.video.get_mode() == "scale2x" then
-    dialog_box.text_properties:set_rendering_mode("antialiasing")
+    dialog_box.text_properties = { 
+      horizontal_alignment = "left",
+      vertical_alignment = "top",
+      font = font,
+      font_size = font_size,
+      rendering_mode = "antialiasing"
+    }
+  else
+    dialog_box.text_properties = { 
+      horizontal_alignment = "left",
+      vertical_alignment = "top",
+      font = font,
+      font_size = font_size
+    }
   end
   for i = 1, nb_visible_lines do
     dialog_box.lines[i] = ""
