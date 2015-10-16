@@ -10,6 +10,7 @@ local function initialize_destructibles()
   function destructible_meta:on_looked()
     -- Here, self is the destructible object.
     local game = self:get_game()
+    game:set_dialog_style("default")
     if self:get_can_be_cut()
         and not self:get_can_explode()
         and not self:get_game():has_ability("sword") then
