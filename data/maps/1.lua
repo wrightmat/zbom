@@ -158,19 +158,6 @@ function house_bed:on_activated()
   end)
 end
 
-function npc_bilo:on_interaction()
-  game:set_dialog_style("default")
-  if map:get_game():get_value("i3005") == 0 then
-    game:start_dialog("bilo.0")
-  else
-    if game:get_value("i1032") >= 3 then
-      game:start_dialog("bilo.2")
-    else
-      game:start_dialog("bilo.1")
-    end
-  end
-end
-
 function npc_ulo:on_interaction()
   game:set_dialog_style("default")
   if game:get_value("b1117") and game:get_value("i1030") < 2 then

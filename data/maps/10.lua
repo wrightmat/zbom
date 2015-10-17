@@ -10,7 +10,6 @@ if game:get_value("i1028")==nil then game:set_value("i1028", 0) end --Race progr
 if game:get_value("i1902")==nil then game:set_value("i1902", 0) end --Rudy
 if game:get_value("i1903")==nil then game:set_value("i1903", 0) end --Julita
 if game:get_value("i1904")==nil then game:set_value("i1904", 0) end --Ulo
-if game:get_value("i1905")==nil then game:set_value("i1905", 0) end --Bilo
 if game:get_value("i1907")==nil then game:set_value("i1907", 0) end --Quint
 if game:get_value("i1908")==nil then game:set_value("i1908", 0) end --Francis
 if game:get_value("i1909")==nil then game:set_value("i1909", 0) end --Jarred
@@ -220,15 +219,6 @@ function npc_jarred:on_interaction()
       game:start_dialog("jarred.2.hint_"..index)
       last_message = index
     elseif game:get_value("i1028") > 1 then game:start_dialog("jarred.1.ordon", function() game:add_money(10) end) end
-  end
-end
-
-function npc_bilo:on_interaction()
-  game:set_dialog_style("default")
-  if game:get_value("i1905") >= 1 and game:get_value("i1027") >= 4 then
-    game:start_dialog("bilo.1")
-  else
-    game:start_dialog("bilo.0")
   end
 end
 

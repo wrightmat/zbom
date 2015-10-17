@@ -4923,6 +4923,43 @@ teletransporter{
   destination = "_side",
 }
 
+custom_entity{
+  name = "npc_bilo",
+  layer = 0,
+  x = 440,
+  y = 229,
+  direction = 3,
+  sprite = "npc/ordon_bilo",
+  model = "npc_bilo",
+}
+
+wall{
+  layer = 0,
+  x = 272,
+  y = 80,
+  width = 16,
+  height = 248,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 168,
+  y = 328,
+  width = 512,
+  height = 16,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 576,
+  y = 200,
+  width = 16,
+  height = 128,
+  stops_enemies = true,
+}
+
 tile{
   layer = 2,
   x = 1048,

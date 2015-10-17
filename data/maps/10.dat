@@ -9720,16 +9720,6 @@ teletransporter{
 }
 
 npc{
-  name = "npc_bilo",
-  layer = 0,
-  x = 880,
-  y = 549,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/ordon_bilo",
-}
-
-npc{
   name = "npc_ulo",
   layer = 0,
   x = 600,
@@ -10372,6 +10362,16 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/mailbox",
+}
+
+custom_entity{
+  name = "npc_bilo",
+  layer = 0,
+  x = 880,
+  y = 557,
+  direction = 3,
+  sprite = "npc/ordon_bilo",
+  model = "npc_bilo",
 }
 
 tile{
