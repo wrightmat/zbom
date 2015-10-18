@@ -7889,6 +7889,33 @@ custom_entity{
   model = "hook",
 }
 
+sensor{
+  name = "dungeon_room_6b_",
+  layer = 0,
+  x = 880,
+  y = 653,
+  width = 48,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_6c_",
+  layer = 0,
+  x = 832,
+  y = 525,
+  width = 48,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_6a_",
+  layer = 0,
+  x = 488,
+  y = 613,
+  width = 16,
+  height = 48,
+}
+
 tile{
   layer = 1,
   x = 536,
@@ -7914,33 +7941,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "605",
-}
-
-sensor{
-  name = "dungeon_room_6a_",
-  layer = 1,
-  x = 488,
-  y = 613,
-  width = 16,
-  height = 48,
-}
-
-sensor{
-  name = "dungeon_room_6b_",
-  layer = 1,
-  x = 880,
-  y = 653,
-  width = 48,
-  height = 16,
-}
-
-sensor{
-  name = "dungeon_room_6c_",
-  layer = 1,
-  x = 832,
-  y = 525,
-  width = 48,
-  height = 16,
 }
 
 tile{
