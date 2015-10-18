@@ -5,7 +5,7 @@ local going_hero = false
 -- Mothulita: Miniboss of Sacred Grove, enemy who generates a swarm of moths and attacks.
 
 function enemy:on_created()
-  self:set_life(5); self:set_damage(1)
+  self:set_life(6); self:set_damage(2)
   self:create_sprite("enemies/mothulita")
   self:set_size(32, 32); self:set_origin(16, 29)
   self:set_hurt_style("boss")
