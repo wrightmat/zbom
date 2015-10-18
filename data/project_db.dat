@@ -307,10 +307,13 @@ sprite{ id = "enemies/shadow_link", description = "Shadow Link" }
 sprite{ id = "enemies/shadow_link_sword", description = "Shadow Link (sword)" }
 sprite{ id = "enemies/skeletor", description = "Skeletor" }
 sprite{ id = "enemies/snap_dragon", description = "Snap dragon" }
+sprite{ id = "enemies/soldier_cannon", description = "Soldier, Cannon" }
 sprite{ id = "enemies/soldier_green", description = "Soldier, green" }
 sprite{ id = "enemies/stal", description = "Stal" }
 sprite{ id = "enemies/stalfos_head", description = "Stalfos Head" }
 sprite{ id = "enemies/stalfos_knight", description = "Stalfos Knight" }
+sprite{ id = "enemies/swamp_flower_big", description = "Swamp Flower, Big" }
+sprite{ id = "enemies/swamp_flower_small", description = "Swamp Flower, Small" }
 sprite{ id = "enemies/tektite_blue", description = "Tektite, blue" }
 sprite{ id = "enemies/tektite_green", description = "Tektite, green" }
 sprite{ id = "enemies/tektite_red", description = "Tektite, red" }
@@ -888,6 +891,8 @@ enemy{ id = "snap_dragon", description = "Snap Dragon" }
 enemy{ id = "soldier_green", description = "Soldier, Green" }
 enemy{ id = "stal", description = "Stal" }
 enemy{ id = "stalfos_knight", description = "Stalfos Knight (Boss)" }
+enemy{ id = "swamp_flower_big", description = "Swamp Flower, Big" }
+enemy{ id = "swamp_flower_small", description = "Swamp, Flower, Small" }
 enemy{ id = "tektite_blue", description = "Tektite, Blue" }
 enemy{ id = "tektite_green", description = "Tektite, Green" }
 enemy{ id = "tektite_red", description = "Tektite, Red" }

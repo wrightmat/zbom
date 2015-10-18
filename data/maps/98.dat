@@ -2352,6 +2352,36 @@ teletransporter{
   destination = "_side",
 }
 
+enemy{
+  name = "flower_1",
+  layer = 0,
+  x = 200,
+  y = 221,
+  direction = 0,
+  breed = "swamp_flower_big",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "flower_2",
+  layer = 0,
+  x = 200,
+  y = 437,
+  direction = 0,
+  breed = "swamp_flower_big",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "flower_3",
+  layer = 0,
+  x = 176,
+  y = 989,
+  direction = 0,
+  breed = "swamp_flower_big",
+  treasure_name = "random_north",
+}
+
 tile{
   layer = 1,
   x = 928,

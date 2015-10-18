@@ -19,7 +19,7 @@ if game:get_value("i2021")==nil then game:set_value("i2021", 0) end
 
 function map:on_started(destination)
   if game:get_item("trading"):get_variant() >= 6 then table_crystal_ball:set_enabled(true) end
-  -- increment potion counters
+  -- Increment potion counters.
   if game:get_value("i2014") >= 10 then
     local tx,ty,tl = shop_potion_1:get_position()
     shop_potion_1:remove()
@@ -48,20 +48,20 @@ function map:on_started(destination)
 
   if destination == main_entrance_shop and game:get_value("i2021") >= 5 then
     game:start_dialog("crista.0.potion_done", function()
-      hero:start_treasure("trading", 2) -- give Odd Potion...
+      hero:start_treasure("trading", 2) -- Give Odd Potion...
       game:set_value("b2022", true)
-      game:set_value("b2020", false) -- take mushroom
-      game:set_value("i2021", 0) -- and get rid of potion counter
+      game:set_value("b2020", false) -- take Odd Mushroom...
+      game:set_value("i2021", 0) -- and get rid of potion counter.
     end)
   elseif destination == main_entrance_shop and game:get_value("i2015") >= 10 and game:get_value("i2015") <= 19 then
     game:start_dialog("shopkeep.potion", function()
       game:set_value("i1847", game:get_value("i1847")-25)
-      game:set_value("i2015", 20) -- allow potion to be bought
+      game:set_value("i2015", 20) -- Allow potion to be bought.
     end)
   elseif destination == main_entrance_shop and game:get_value("i2014") >= 10 and game:get_value("i2014") <= 19 then
     game:start_dialog("shopkeep.potion", function()
       game:set_value("i1847", game:get_value("i1847")-10)
-      game:set_value("i2014", 20) -- allow potion to be bought
+      game:set_value("i2014", 20) -- Allow potion to be bought.
     end)
   end
   if destination == from_intro then
@@ -87,6 +87,8 @@ function map:on_started(destination)
   if game:get_value("i1027") < 5 then
     npc_julita:remove()
     npc_bilo:remove()
+  elseif game:get_value("b1117") then
+    npc_bilo:remove() -- Bilo is headed to Hyrule Castle Town.
   end
   if game:get_value("i1032") >= 3 then
     for entity in map:get_entities("box") do
@@ -103,8 +105,8 @@ function map:on_started(destination)
     npc_gaira:remove()
   end
 
-  -- Replace shop items if they're bought
-  if game:get_value("b1806") and game:get_value("i2014") >= 10 then --bomb bag
+  -- Replace shop items if they're bought.
+  if game:get_value("b1806") and game:get_value("i2014") >= 10 then -- Bomb bag
     self:create_shop_treasure({
 	name = "shop_potion",
 	layer = 0,
@@ -117,14 +119,14 @@ function map:on_started(destination)
     })
   end
 
-  -- Activate any night-specific dynamic tiles
+  -- Activate any night-specific dynamic tiles.
   if game:get_time_of_day() == "night" then
     for entity in map:get_entities("night_") do
       entity:set_enabled(true)
     end
   end
 
-  -- Apply to all potions, even dynamically created ones
+  -- Apply to all potions, even dynamically created ones.
   for treasure in map:get_entities("shop_potion") do
     treasure.on_buying = function()
       if treasure:get_game():get_first_empty_bottle() == nil then
@@ -207,14 +209,14 @@ function npc_impa:on_interaction()
   if game:get_value("b2025") then
     game:start_dialog("impa.0.trading", function(answer)
       if answer == 1 then
-        -- give her the crystal ball, get the tasty meat
+        -- Give her the crystal ball, get the tasty meat.
         game:start_dialog("impa.0.trading_yes", function()
           hero:start_treasure("trading", 6)
           game:set_value("b2026", true)
           game:set_value("b2025", false)
         end)
       else
-        -- don't give her the crystal ball
+        -- Don't give her the crystal ball.
         game:start_dialog("impa.0.trading_no")
       end
     end)
@@ -275,7 +277,7 @@ end
 function npc_shopkeeper:on_interaction()
   game:set_dialog_style("default")
   if math.random(4) == 1 and game:get_item("rupee_bag"):get_variant() < 2 then
-    -- Randomly mention the bigger wallet
+    -- Randomly mention the bigger wallet.
     game:start_dialog("shopkeep.1")
   else
     game:start_dialog("shopkeep.0")

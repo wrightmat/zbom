@@ -4337,60 +4337,6 @@ tile{
   pattern = "524",
 }
 
-tile{
-  layer = 0,
-  x = 176,
-  y = 680,
-  width = 32,
-  height = 32,
-  pattern = "176",
-}
-
-tile{
-  layer = 0,
-  x = 208,
-  y = 400,
-  width = 32,
-  height = 32,
-  pattern = "176",
-}
-
-tile{
-  layer = 0,
-  x = 416,
-  y = 688,
-  width = 32,
-  height = 32,
-  pattern = "176",
-}
-
-tile{
-  layer = 0,
-  x = 48,
-  y = 472,
-  width = 32,
-  height = 32,
-  pattern = "176",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 224,
-  width = 32,
-  height = 32,
-  pattern = "176",
-}
-
-tile{
-  layer = 0,
-  x = 432,
-  y = 192,
-  width = 32,
-  height = 32,
-  pattern = "176",
-}
-
 teletransporter{
   name = "to_E4_water",
   layer = 0,
@@ -5175,6 +5121,196 @@ teletransporter{
   transition = "scrolling",
   destination_map = "98",
   destination = "_side",
+}
+
+enemy{
+  name = "flower_1",
+  layer = 0,
+  x = 432,
+  y = 717,
+  direction = 0,
+  breed = "swamp_flower_big",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "flower_2",
+  layer = 0,
+  x = 192,
+  y = 709,
+  direction = 0,
+  breed = "swamp_flower_big",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "flower_3",
+  layer = 0,
+  x = 64,
+  y = 493,
+  direction = 0,
+  breed = "swamp_flower_big",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "flower_4",
+  layer = 0,
+  x = 224,
+  y = 421,
+  direction = 0,
+  breed = "swamp_flower_big",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "flower_5",
+  layer = 0,
+  x = 160,
+  y = 253,
+  direction = 0,
+  breed = "swamp_flower_big",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "flower_6",
+  layer = 0,
+  x = 448,
+  y = 213,
+  direction = 0,
+  breed = "swamp_flower_big",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "flower_small_1",
+  layer = 0,
+  x = 264,
+  y = 869,
+  direction = 0,
+  breed = "swamp_flower_small",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "flower_small_2",
+  layer = 0,
+  x = 264,
+  y = 853,
+  direction = 0,
+  breed = "swamp_flower_small",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "flower_small_3",
+  layer = 0,
+  x = 264,
+  y = 837,
+  direction = 0,
+  breed = "swamp_flower_small",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "flower_small_4",
+  layer = 0,
+  x = 264,
+  y = 821,
+  direction = 0,
+  breed = "swamp_flower_small",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "flower_small_5",
+  layer = 0,
+  x = 264,
+  y = 805,
+  direction = 0,
+  breed = "swamp_flower_small",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "flower_small_6",
+  layer = 0,
+  x = 264,
+  y = 789,
+  direction = 0,
+  breed = "swamp_flower_small",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "flower_small_7",
+  layer = 0,
+  x = 256,
+  y = 773,
+  direction = 0,
+  breed = "swamp_flower_small",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "flower_small_8",
+  layer = 0,
+  x = 272,
+  y = 773,
+  direction = 0,
+  breed = "swamp_flower_small",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "flower_small_9",
+  layer = 0,
+  x = 704,
+  y = 501,
+  direction = 0,
+  breed = "swamp_flower_small",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "flower_small_10",
+  layer = 0,
+  x = 728,
+  y = 629,
+  direction = 0,
+  breed = "swamp_flower_small",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "flower_small_11",
+  layer = 0,
+  x = 792,
+  y = 541,
+  direction = 0,
+  breed = "swamp_flower_small",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "flower_small_12",
+  layer = 0,
+  x = 440,
+  y = 245,
+  direction = 0,
+  breed = "swamp_flower_small",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "flower_small_13",
+  layer = 0,
+  x = 456,
+  y = 245,
+  direction = 0,
+  breed = "swamp_flower_small",
+  treasure_name = "random_north",
 }
 
 tile{
