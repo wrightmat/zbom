@@ -1,5 +1,6 @@
 local enemy = ...
 local going_hero = false
+local timer
 
 -- Moth: a small flying enemy that follows the hero in the air, but is attracted to flame.
 
@@ -36,8 +37,7 @@ function enemy:check_hero()
   local hero = self:get_map():get_entity("hero")
   local _, _, layer = self:get_position()
   local _, _, hero_layer = hero:get_position()
-  local near_hero = layer == hero_layer
-    and self:get_distance(hero) < 100
+  local near_hero = layer == hero_layer and self:get_distance(hero) < 100
 
   if self:get_map():get_entity("torch_moth") ~= nil then
     local torch_moth = self:get_map():get_entity("torch_moth")
@@ -69,11 +69,9 @@ function enemy:go_hero()
 end
 
 function enemy:go_torch()
-  local m = sol.movement.create("circle")
-  local torch_moth = self:get_map():get_entity("torch_moth")
-  m:set_center(torch_moth)
-  m:set_radius(32)
-  m:set_angle_speed(60)
+  local m = sol.movement.create("target")
+  m:set_target(self:get_map():get_entity("torch_moth"))
+  m:set_speed(32)
   m:start(self)
   going_hero = false
 end
