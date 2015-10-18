@@ -4501,15 +4501,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 56,
-  y = 64,
-  width = 32,
-  height = 24,
-  pattern = "1021",
-}
-
-tile{
-  layer = 0,
   x = 104,
   y = 32,
   width = 48,
@@ -9181,6 +9172,17 @@ teletransporter{
   transition = "scrolling",
   destination_map = "102",
   destination = "_side",
+}
+
+teletransporter{
+  name = "to_inside_house_4",
+  layer = 0,
+  x = 64,
+  y = 88,
+  width = 16,
+  height = 16,
+  destination_map = "8",
+  destination = "from_outside_house_4",
 }
 
 tile{
