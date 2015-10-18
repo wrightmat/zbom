@@ -11,6 +11,15 @@ properties{
 
 tile{
   layer = 0,
+  x = 64,
+  y = 488,
+  width = 288,
+  height = 256,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
   x = 488,
   y = 312,
   width = 32,
@@ -87,15 +96,6 @@ tile{
   y = 312,
   width = 48,
   height = 48,
-  pattern = "22",
-}
-
-tile{
-  layer = 0,
-  x = 64,
-  y = 488,
-  width = 288,
-  height = 256,
   pattern = "22",
 }
 
@@ -1150,15 +1150,6 @@ tile{
   width = 8,
   height = 128,
   pattern = "63",
-}
-
-tile{
-  layer = 0,
-  x = 344,
-  y = 688,
-  width = 8,
-  height = 8,
-  pattern = "142",
 }
 
 tile{
@@ -6121,6 +6112,17 @@ tile{
 }
 
 dynamic_tile{
+  name = "lava_2",
+  layer = 0,
+  x = 128,
+  y = 680,
+  pattern = "605",
+  width = 224,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
   name = "hole_item",
   layer = 0,
   x = 488,
@@ -6606,10 +6608,10 @@ dynamic_tile{
   name = "lava",
   layer = 0,
   x = 64,
-  y = 664,
+  y = 648,
   pattern = "605",
-  width = 288,
-  height = 32,
+  width = 208,
+  height = 16,
   enabled_at_start = true,
 }
 
@@ -6871,6 +6873,15 @@ destructible{
   treasure_variant = 3,
   sprite = "entities/pot",
   destruction_sound = "stone",
+}
+
+tile{
+  layer = 1,
+  x = 344,
+  y = 688,
+  width = 8,
+  height = 8,
+  pattern = "142",
 }
 
 tile{

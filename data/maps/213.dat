@@ -5179,6 +5179,54 @@ sensor{
   height = 16,
 }
 
+wall{
+  layer = 0,
+  x = 464,
+  y = 408,
+  width = 416,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 464,
+  y = 416,
+  width = 8,
+  height = 344,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 872,
+  y = 416,
+  width = 8,
+  height = 344,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 464,
+  y = 760,
+  width = 416,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
 enemy{
   name = "keese_1",
   layer = 1,
@@ -5294,54 +5342,6 @@ enemy{
   y = 701,
   direction = 3,
   breed = "keese_dark",
-}
-
-wall{
-  layer = 1,
-  x = 464,
-  y = 760,
-  width = 416,
-  height = 8,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 1,
-  x = 464,
-  y = 416,
-  width = 8,
-  height = 344,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 1,
-  x = 464,
-  y = 408,
-  width = 416,
-  height = 8,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 1,
-  x = 872,
-  y = 416,
-  width = 8,
-  height = 344,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
 }
 
 tile{

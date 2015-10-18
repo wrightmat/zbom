@@ -6677,6 +6677,42 @@ enemy{
   breed = "fire_bar",
 }
 
+wall{
+  layer = 0,
+  x = 32,
+  y = 456,
+  width = 8,
+  height = 320,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 40,
+  y = 456,
+  width = 296,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 376,
+  y = 464,
+  width = 8,
+  height = 304,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
 tile{
   layer = 2,
   x = 192,
@@ -6963,5 +6999,17 @@ tile{
   width = 16,
   height = 8,
   pattern = "568",
+}
+
+wall{
+  layer = 2,
+  x = 40,
+  y = 760,
+  width = 336,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
