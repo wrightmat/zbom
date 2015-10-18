@@ -5390,6 +5390,51 @@ tile{
   pattern = "2135",
 }
 
+tile{
+  layer = 0,
+  x = 152,
+  y = 104,
+  width = 32,
+  height = 8,
+  pattern = "2135",
+}
+
+tile{
+  layer = 0,
+  x = 632,
+  y = 192,
+  width = 16,
+  height = 8,
+  pattern = "1683",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 200,
+  width = 8,
+  height = 8,
+  pattern = "1684",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 200,
+  width = 8,
+  height = 8,
+  pattern = "1682",
+}
+
+tile{
+  layer = 0,
+  x = 632,
+  y = 200,
+  width = 16,
+  height = 8,
+  pattern = "1692",
+}
+
 teletransporter{
   name = "to_C5",
   layer = 0,

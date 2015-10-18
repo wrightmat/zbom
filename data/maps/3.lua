@@ -50,7 +50,7 @@ end
 
 function npc_rito_4:on_interaction()
   game:set_dialog_style("default")
-  if game:get_value("b1150") then
+  if game:is_dungeon_finished(7) then
     game:start_dialog("rito_4.1.septen")
   else
     game:start_dialog("rito_4.0.septen")

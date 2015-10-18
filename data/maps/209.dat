@@ -5931,6 +5931,24 @@ tile{
   pattern = "604",
 }
 
+tile{
+  layer = 0,
+  x = 832,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "604",
+}
+
+tile{
+  layer = 0,
+  x = 848,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "604",
+}
+
 door{
   name = "door_key2_1",
   layer = 0,
@@ -7232,16 +7250,6 @@ dynamic_tile{
 
 destructible{
   layer = 0,
-  x = 840,
-  y = 349,
-  treasure_name = "random",
-  sprite = "entities/stone_small_black",
-  destruction_sound = "stone",
-  weight = 2,
-}
-
-destructible{
-  layer = 0,
   x = 776,
   y = 77,
   treasure_name = "random",
@@ -7403,16 +7411,6 @@ destructible{
   treasure_variant = 2,
   sprite = "entities/pot",
   destruction_sound = "stone",
-}
-
-destructible{
-  layer = 0,
-  x = 856,
-  y = 349,
-  treasure_name = "random",
-  sprite = "entities/stone_small_black",
-  destruction_sound = "stone",
-  weight = 2,
 }
 
 wall{
@@ -7916,6 +7914,24 @@ sensor{
   height = 48,
 }
 
+custom_entity{
+  name = "hook_8",
+  layer = 0,
+  x = 840,
+  y = 349,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_9",
+  layer = 0,
+  x = 856,
+  y = 349,
+  direction = 0,
+  model = "hook",
+}
+
 tile{
   layer = 1,
   x = 536,
@@ -8406,6 +8422,24 @@ tile{
   layer = 2,
   x = 240,
   y = 1392,
+  width = 16,
+  height = 8,
+  pattern = "605",
+}
+
+tile{
+  layer = 2,
+  x = 832,
+  y = 328,
+  width = 16,
+  height = 8,
+  pattern = "605",
+}
+
+tile{
+  layer = 2,
+  x = 848,
+  y = 328,
   width = 16,
   height = 8,
   pattern = "605",

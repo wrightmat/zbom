@@ -37,7 +37,7 @@ function entity:on_created()
   end)
 
   self:add_collision_test("overlapping", function(self, other)
-    if other:get_type() == "switch" then
+    if other:get_type() == "switch" and other:get_sprite() == "switch" then
       block_on_switch = true
       other:set_activated(true)
       if other:on_activated() ~= nil and not other.active then
