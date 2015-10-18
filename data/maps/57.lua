@@ -19,6 +19,8 @@ for enemy in map:get_entities("pincer") do
 end
 
 function npc_zora_1:on_interaction()
+  game:set_dialog_style("default")
+  sol.audio.play_sound("zora")
   if game:get_item("tunic"):get_variant() < 3 then
     game:start_dialog("zora.0.tunic")
   else
@@ -27,6 +29,8 @@ function npc_zora_1:on_interaction()
 end
 
 function npc_zora_2:on_interaction()
+  game:set_dialog_style("default")
+  sol.audio.play_sound("zora")
   if game:get_item("tunic"):get_variant() < 3 then
     game:start_dialog("zora.0.tunic")
   else
@@ -35,10 +39,14 @@ function npc_zora_2:on_interaction()
 end
 
 function npc_zora_3:on_interaction()
+  game:set_dialog_style("default")
+  sol.audio.play_sound("zora")
   game:start_dialog("zora.0.domain")
 end
 
 function npc_zora_trading:on_interaction()
+  game:set_dialog_style("default")
+  sol.audio.play_sound("zora")
   if game:get_value("b2029") then
     game:start_dialog("zora.0.trading", function(answer)
       if answer == 1 then

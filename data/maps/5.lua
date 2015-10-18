@@ -19,7 +19,7 @@ function map:on_started(destination)
   end
 
   snores:set_enabled(false)
-  npc_galen_2:get_sprite():set_direction(1)--up
+  npc_galen_2:get_sprite():set_direction(1) -- Up
 
   if game:get_value("i1029") < 2 then
     npc_galen_2:remove()
@@ -41,9 +41,9 @@ function map:on_started(destination)
 	m:set_speed(32)
 	m:start(npc_galen_2, function()
 	  npc_galen_2:get_sprite():set_animation("stopped")
-	  npc_galen_2:get_sprite():set_direction(2)--left/west
+	  npc_galen_2:get_sprite():set_direction(2) -- Left / West
           sol.timer.start(2000, function()
-	    npc_galen_2:get_sprite():set_direction(0)--right/east
+	    npc_galen_2:get_sprite():set_direction(0) -- Right / East
 	    game:start_dialog("galen.2.house", game:get_player_name(), function()
 	      npc_galen_2:get_sprite():set_animation("walking")
 	      local m2 = sol.movement.create("target")
@@ -62,7 +62,7 @@ function map:on_started(destination)
   end
 
   -- Replace shop items if they're bought
-  if game:get_value("b1806") then --bomb bag
+  if game:get_value("b1806") then -- Bomb bag
     self:create_shop_treasure({
 	name = "shop_item_2",
 	layer = 0,
@@ -79,17 +79,21 @@ end
 function npc_dargor:on_interaction()
   game:set_dialog_style("default")
   if game:get_value("i1914") == 1 then
+    sol.audio.play_sound("goron_happy")
     game:start_dialog("dargor.1.house", function()
       game:set_value("i1914", game:get_value("i1914")+1)
     end)
   elseif game:get_value("i1914") == 2 then
+    sol.audio.play_sound("goron_happy")
     game:start_dialog("dargor.2.house", function()
       game:set_value("i1914", game:get_value("i1914")+1)
       game:set_value("i1029", 1)
     end)
   elseif game:get_value("i1029") >= 3 then
+    sol.audio.play_sound("goron_sad")
     game:start_dialog("dargor.4.house", game:get_player_name())
   else
+    sol.audio.play_sound("goron_sad")
     game:start_dialog("dargor.0.house", function()
       game:set_value("i1914", game:get_value("i1914")+1)
     end)
@@ -99,11 +103,13 @@ end
 function npc_galen:on_interaction()
   game:set_dialog_style("default")
   if game:get_value("i1029") == 1 then
+    sol.audio.play_sound("goron_sad")
     game:start_dialog("galen.1.house", function()
       game:set_value("i1916", game:get_value("i1916")+1)
       game:set_value("i1029", 2)
     end)
   else
+    sol.audio.play_sound("goron_happy")
     game:start_dialog("galen.0.house", function()
       game:set_value("i1916", game:get_value("i1916")+1)
     end)
@@ -117,14 +123,16 @@ end
 
 function npc_gor_larin:on_interaction()
   game:set_dialog_style("default")
+    sol.audio.play_sound("goron_happy")
   game:start_dialog("larin.1.house")
 end
 
 function npc_goron_smith:on_interaction()
   game:set_dialog_style("default")
   if not game:has_item("bomb_bag") then
+    sol.audio.play_sound("goron_question")
     game:start_dialog("goron_smith.0.shop", function(answer)
-      if answer == 1 then --yes
+      if answer == 1 then -- Yes
         if game:get_money() >= 300 then
 	hero:start_treasure("bomb_bag")
 	game:remove_money(300)
@@ -134,8 +142,9 @@ function npc_goron_smith:on_interaction()
       end
     end)
   elseif game:get_value("i1805") < 5 then
+    sol.audio.play_sound("goron_question")
     game:start_dialog("goron_smith.1.shop_sell", function(answer)
-      if answer == 1 then --yes
+      if answer == 1 then -- Yes
         if game:get_money() >= 50 then
 	hero:start_treasure("bomb", 3)
 	game:remove_money(50)
@@ -145,6 +154,7 @@ function npc_goron_smith:on_interaction()
       end
     end)
   else
+    sol.audio.play_sound("goron_happy")
     game:start_dialog("goron_smith.1.shop")
   end
 end
@@ -152,20 +162,24 @@ end
 function npc_goron_trading:on_interaction()
   game:set_dialog_style("default")
   if game:get_value("b2028") then
+    sol.audio.play_sound("goron_question")
     game:start_dialog("goron.0.trading", function(answer)
       if answer == 1 then
-        -- give him the bananas, get the goron vase
+        -- Give him the bananas, get the Goron Vase.
+        sol.audio.play_sound("goron_happy")
         game:start_dialog("goron.0.trading_yes", function()
           hero:start_treasure("trading", 9)
           game:set_value("b2029", true)
           game:set_value("b2028", false)
         end)
       else
-        -- don't give him the bananas
+        -- Don't give him the bananas.
+        sol.audio.play_sound("goron_sad")
         game:start_dialog("goron.0.trading_no")
       end
     end)
   else
+    sol.audio.play_sound("goron_sad")
     game:start_dialog("goron.0.house")
   end
 end
@@ -191,6 +205,7 @@ end
 
 function innkeeper_sensor:on_interaction()
   game:set_dialog_style("default")
+  sol.audio.play_sound("goron_question")
   game:start_dialog("goron.0.inn", function(answer)
     if answer == 1 then
       game:remove_money(20)

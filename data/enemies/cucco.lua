@@ -51,6 +51,7 @@ function enemy:go_angry()
   angry = true
   map.angry_cuccos = true
   going_hero = true
+  sol.audio.play_sound("cucco")
   local movement = sol.movement.create("target")
   movement:set_speed(96)
   movement:start(enemy)
@@ -59,6 +60,7 @@ function enemy:go_angry()
 end
 
 function enemy:on_hurt()
+  sol.audio.play_sound("cucco")
   num_times_hurt = num_times_hurt + 1
   if num_times_hurt == 3 and not map.angry_cuccos then
     -- Make all cuccos of the map attack the hero.
