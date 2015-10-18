@@ -4441,37 +4441,34 @@ wall{
   stops_hero = true,
 }
 
-custom_entity{
-  name = "mailbox_1",
-  layer = 0,
-  x = 464,
-  y = 605,
-  height = 24,
-  direction = 0,
-  sprite = "entities/mailbox",
-  model = "mailbox",
-}
-
-custom_entity{
+npc{
   name = "mailbox_2",
   layer = 0,
   x = 320,
   y = 949,
-  height = 24,
-  direction = 0,
+  direction = 3,
+  subtype = 0,
   sprite = "entities/mailbox",
-  model = "mailbox",
 }
 
-custom_entity{
+npc{
+  name = "mailbox_1",
+  layer = 0,
+  x = 464,
+  y = 605,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/mailbox",
+}
+
+npc{
   name = "mailbox_3",
   layer = 0,
   x = 712,
   y = 965,
-  height = 24,
-  direction = 0,
+  direction = 3,
+  subtype = 0,
   sprite = "entities/mailbox",
-  model = "mailbox",
 }
 
 tile{

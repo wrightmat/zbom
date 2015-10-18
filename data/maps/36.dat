@@ -10,6 +10,24 @@ properties{
 
 tile{
   layer = 0,
+  x = 384,
+  y = 312,
+  width = 48,
+  height = 16,
+  pattern = "295",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 296,
+  width = 64,
+  height = 16,
+  pattern = "295",
+}
+
+tile{
+  layer = 0,
   x = 544,
   y = 976,
   width = 32,
@@ -2229,15 +2247,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "769",
-}
-
-tile{
-  layer = 0,
-  x = 368,
-  y = 296,
-  width = 64,
-  height = 40,
-  pattern = "295",
 }
 
 tile{
@@ -5355,144 +5364,144 @@ tile{
 }
 
 teletransporter{
+  name = "to_G11",
   layer = 0,
   x = 264,
   y = 1120,
   width = 336,
   height = 16,
-  name = "to_G11",
   transition = "scrolling",
   destination_map = "33",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_F5",
   layer = 0,
   x = -16,
   y = 928,
   width = 16,
   height = 192,
-  name = "to_F5",
   transition = "scrolling",
   destination_map = "35",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_F5_2",
   layer = 0,
   x = -16,
   y = 504,
   width = 16,
   height = 384,
-  name = "to_F5_2",
   transition = "scrolling",
   destination_map = "35",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_F5_3",
   layer = 0,
   x = -16,
   y = 0,
   width = 16,
   height = 448,
-  name = "to_F5_3",
   transition = "scrolling",
   destination_map = "35",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_G9",
   layer = 0,
   x = 336,
   y = -16,
   width = 736,
   height = 16,
-  name = "to_G9",
   transition = "scrolling",
   destination_map = "39",
   destination = "_side",
 }
 
 wall{
+  name = "custom_obstacle",
   layer = 0,
-  x = 456,
+  x = 368,
   y = 40,
   width = 16,
-  height = 376,
-  name = "custom_obstacle",
+  height = 400,
   stops_enemies = true,
 }
 
 wall{
+  name = "custom_obstacle_2",
   layer = 0,
-  x = 824,
+  x = 984,
   y = 40,
   width = 16,
-  height = 376,
-  name = "custom_obstacle_2",
+  height = 448,
   stops_enemies = true,
 }
 
 enemy{
-  layer = 0,
-  x = 536,
-  y = 117,
   name = "enemy",
+  layer = 0,
+  x = 552,
+  y = 117,
   direction = 0,
   breed = "octorok_red",
   treasure_name = "random",
 }
 
 enemy{
-  layer = 0,
-  x = 760,
-  y = 221,
   name = "enemy_2",
+  layer = 0,
+  x = 752,
+  y = 221,
   direction = 2,
   breed = "octorok_red",
   treasure_name = "random",
 }
 
 enemy{
-  layer = 0,
-  x = 536,
-  y = 309,
   name = "enemy_3",
+  layer = 0,
+  x = 552,
+  y = 309,
   direction = 0,
   breed = "octorok_red",
   treasure_name = "random",
 }
 
 enemy{
+  name = "enemy_4",
   layer = 0,
   x = 760,
   y = 381,
-  name = "enemy_4",
   direction = 2,
   breed = "octorok_red",
   treasure_name = "random",
 }
 
 teletransporter{
+  name = "to_G11_2",
   layer = 0,
   x = 1016,
   y = 1120,
   width = 64,
   height = 16,
-  name = "to_G11_2",
   transition = "scrolling",
   destination_map = "33",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_H10",
   layer = 0,
   x = 1120,
   y = 56,
   width = 16,
   height = 912,
-  name = "to_H10",
   transition = "scrolling",
   destination_map = "37",
   destination = "_side",

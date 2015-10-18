@@ -2942,6 +2942,33 @@ tile{
   pattern = "951",
 }
 
+tile{
+  layer = 0,
+  x = 240,
+  y = 1032,
+  width = 16,
+  height = 8,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 1080,
+  width = 8,
+  height = 8,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 880,
+  y = 1048,
+  width = 16,
+  height = 8,
+  pattern = "11",
+}
+
 teletransporter{
   name = "to_G4_water",
   layer = 0,

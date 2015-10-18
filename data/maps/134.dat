@@ -1079,6 +1079,177 @@ tile{
   pattern = "272",
 }
 
+tile{
+  layer = 0,
+  x = 576,
+  y = 856,
+  width = 8,
+  height = 8,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 968,
+  y = 912,
+  width = 8,
+  height = 8,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 792,
+  y = 1072,
+  width = 8,
+  height = 8,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 1016,
+  width = 8,
+  height = 8,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 904,
+  width = 8,
+  height = 8,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 864,
+  width = 16,
+  height = 16,
+  pattern = "178",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 864,
+  width = 32,
+  height = 16,
+  pattern = "179",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 864,
+  width = 32,
+  height = 16,
+  pattern = "180",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 864,
+  width = 16,
+  height = 16,
+  pattern = "181",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 880,
+  width = 16,
+  height = 16,
+  pattern = "182",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 896,
+  width = 16,
+  height = 16,
+  pattern = "183",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 912,
+  width = 16,
+  height = 16,
+  pattern = "184",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 912,
+  width = 48,
+  height = 16,
+  pattern = "191",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 912,
+  width = 16,
+  height = 16,
+  pattern = "195",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 896,
+  width = 16,
+  height = 16,
+  pattern = "196",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 896,
+  width = 16,
+  height = 16,
+  pattern = "197",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 880,
+  width = 16,
+  height = 16,
+  pattern = "198",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 880,
+  width = 16,
+  height = 16,
+  pattern = "199",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 880,
+  width = 48,
+  height = 32,
+  pattern = "200",
+}
+
 teletransporter{
   name = "to_N1",
   layer = 0,
@@ -1125,5 +1296,45 @@ teletransporter{
   transition = "scrolling",
   destination_map = "135",
   destination = "_side",
+}
+
+enemy{
+  name = "hinox_1",
+  layer = 0,
+  x = 480,
+  y = 885,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "hinox_2",
+  layer = 0,
+  x = 184,
+  y = 1013,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "hinox_3",
+  layer = 0,
+  x = 704,
+  y = 997,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "hinox_4",
+  layer = 0,
+  x = 1024,
+  y = 869,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random_north",
 }
 

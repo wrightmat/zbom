@@ -1187,6 +1187,42 @@ tile{
   pattern = "62",
 }
 
+tile{
+  layer = 0,
+  x = 112,
+  y = 432,
+  width = 16,
+  height = 8,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 912,
+  width = 8,
+  height = 8,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 408,
+  width = 16,
+  height = 8,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 448,
+  width = 8,
+  height = 8,
+  pattern = "12",
+}
+
 teletransporter{
   name = "to_I1",
   layer = 0,
@@ -1272,6 +1308,36 @@ enemy{
   y = 1053,
   direction = 0,
   breed = "chuchu_yellow",
+}
+
+enemy{
+  name = "leever_1",
+  layer = 0,
+  x = 640,
+  y = 205,
+  direction = 0,
+  breed = "leever_purple",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "leever_2",
+  layer = 0,
+  x = 280,
+  y = 141,
+  direction = 0,
+  breed = "leever_purple",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "leever_3",
+  layer = 0,
+  x = 1024,
+  y = 117,
+  direction = 0,
+  breed = "leever_purple",
+  treasure_name = "random_north",
 }
 
 tile{

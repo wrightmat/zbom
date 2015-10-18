@@ -4069,24 +4069,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 696,
-  y = 824,
-  width = 16,
-  height = 24,
-  pattern = "1455",
-}
-
-tile{
-  layer = 0,
-  x = 848,
-  y = 176,
-  width = 16,
-  height = 24,
-  pattern = "1455",
-}
-
-tile{
-  layer = 0,
   x = 1112,
   y = 176,
   width = 8,
@@ -5626,17 +5608,6 @@ npc{
   sprite = "npc/hylian_7",
 }
 
-custom_entity{
-  name = "mailbox_1",
-  layer = 0,
-  x = 1016,
-  y = 509,
-  height = 24,
-  direction = 0,
-  sprite = "entities/mailbox",
-  model = "mailbox",
-}
-
 sensor{
   name = "house1_door_sensor",
   layer = 0,
@@ -5652,6 +5623,36 @@ destination{
   x = 760,
   y = 869,
   direction = 3,
+}
+
+npc{
+  name = "mailbox_2",
+  layer = 0,
+  x = 856,
+  y = 189,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/mailbox",
+}
+
+npc{
+  name = "mailbox_3",
+  layer = 0,
+  x = 1016,
+  y = 509,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/mailbox",
+}
+
+npc{
+  name = "mailbox_4",
+  layer = 0,
+  x = 704,
+  y = 837,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/mailbox",
 }
 
 tile{

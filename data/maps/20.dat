@@ -3250,35 +3250,17 @@ tile{
 
 tile{
   layer = 0,
+  x = 1016,
+  y = 48,
+  width = 144,
+  height = 16,
+  pattern = "505",
+}
+
+tile{
+  layer = 0,
   x = 1024,
-  y = 40,
-  width = 48,
-  height = 16,
-  pattern = "505",
-}
-
-tile{
-  layer = 0,
-  x = 1032,
-  y = 56,
-  width = 32,
-  height = 8,
-  pattern = "523",
-}
-
-tile{
-  layer = 0,
-  x = 1072,
-  y = 24,
-  width = 48,
-  height = 16,
-  pattern = "505",
-}
-
-tile{
-  layer = 0,
-  x = 1080,
-  y = 40,
+  y = 64,
   width = 32,
   height = 8,
   pattern = "523",
@@ -3466,18 +3448,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 1072,
-  y = 0,
-  width = 48,
-  height = 24,
-  pattern = "1499",
-}
-
-tile{
-  layer = 0,
-  x = 1024,
-  y = 16,
-  width = 48,
+  x = 1016,
+  y = 24,
+  width = 144,
   height = 24,
   pattern = "1499",
 }
@@ -3813,15 +3786,6 @@ tile{
   width = 48,
   height = 24,
   pattern = "1499",
-}
-
-tile{
-  layer = 0,
-  x = 1072,
-  y = 32,
-  width = 8,
-  height = 16,
-  pattern = "1500",
 }
 
 tile{
@@ -4978,7 +4942,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1000,
+  x = 992,
   y = 0,
   width = 32,
   height = 8,
@@ -6731,6 +6695,15 @@ tile{
   pattern = "524",
 }
 
+tile{
+  layer = 0,
+  x = 1072,
+  y = 64,
+  width = 32,
+  height = 8,
+  pattern = "523",
+}
+
 sensor{
   name = "sensor_deku_tokay",
   layer = 0,
@@ -6765,12 +6738,12 @@ teletransporter{
 }
 
 teletransporter{
-  name = "to_K4_2",
+  name = "to_E15_2",
   layer = 0,
   x = 1120,
-  y = 32,
+  y = 64,
   width = 16,
-  height = 608,
+  height = 576,
   transition = "scrolling",
   destination_map = "14",
   destination = "_side",
@@ -8191,17 +8164,8 @@ tile{
 
 tile{
   layer = 2,
-  x = 1016,
-  y = 8,
-  width = 8,
-  height = 24,
-  pattern = "1494",
-}
-
-tile{
-  layer = 2,
-  x = 1064,
-  y = -8,
+  x = 1008,
+  y = 16,
   width = 8,
   height = 24,
   pattern = "1494",
@@ -8470,9 +8434,9 @@ tile{
 
 tile{
   layer = 2,
-  x = 1024,
-  y = -16,
-  width = 48,
+  x = 1016,
+  y = -8,
+  width = 144,
   height = 32,
   pattern = "1495",
 }
@@ -8538,15 +8502,6 @@ tile{
   width = 192,
   height = 32,
   pattern = "1495",
-}
-
-tile{
-  layer = 2,
-  x = 1072,
-  y = 8,
-  width = 8,
-  height = 24,
-  pattern = "1497",
 }
 
 tile{

@@ -1673,6 +1673,60 @@ tile{
   pattern = "1693",
 }
 
+tile{
+  layer = 0,
+  x = 200,
+  y = 936,
+  width = 16,
+  height = 8,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 728,
+  width = 8,
+  height = 8,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 512,
+  width = 16,
+  height = 8,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 664,
+  y = 312,
+  width = 8,
+  height = 8,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 96,
+  width = 16,
+  height = 8,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 272,
+  width = 8,
+  height = 8,
+  pattern = "12",
+}
+
 jumper{
   layer = 0,
   x = 1032,
@@ -1763,6 +1817,26 @@ teletransporter{
   transition = "scrolling",
   destination_map = "105",
   destination = "_side",
+}
+
+enemy{
+  name = "tektite_1",
+  layer = 0,
+  x = 600,
+  y = 565,
+  direction = 0,
+  breed = "tektite_water",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "tektite_2",
+  layer = 0,
+  x = 312,
+  y = 989,
+  direction = 0,
+  breed = "tektite_water",
+  treasure_name = "random_north",
 }
 
 tile{

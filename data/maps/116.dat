@@ -737,6 +737,51 @@ tile{
   pattern = "1009",
 }
 
+tile{
+  layer = 0,
+  x = 200,
+  y = 440,
+  width = 16,
+  height = 8,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 112,
+  width = 8,
+  height = 8,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 304,
+  width = 8,
+  height = 8,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 800,
+  y = 144,
+  width = 16,
+  height = 8,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 984,
+  y = 344,
+  width = 8,
+  height = 8,
+  pattern = "12",
+}
+
 teletransporter{
   name = "to_J1",
   layer = 0,
@@ -795,6 +840,86 @@ teletransporter{
   transition = "scrolling",
   destination_map = "120",
   destination = "_side",
+}
+
+enemy{
+  name = "leever_1",
+  layer = 0,
+  x = 248,
+  y = 925,
+  direction = 0,
+  breed = "leever_purple",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "leever_2",
+  layer = 0,
+  x = 144,
+  y = 781,
+  direction = 0,
+  breed = "leever_purple",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "leever_3",
+  layer = 0,
+  x = 440,
+  y = 685,
+  direction = 0,
+  breed = "leever_purple",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "leever_4",
+  layer = 0,
+  x = 568,
+  y = 949,
+  direction = 0,
+  breed = "leever_purple",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "leever_5",
+  layer = 0,
+  x = 848,
+  y = 1037,
+  direction = 0,
+  breed = "leever_purple",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "leever_6",
+  layer = 0,
+  x = 976,
+  y = 869,
+  direction = 0,
+  breed = "leever_purple",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "leever_7",
+  layer = 0,
+  x = 984,
+  y = 589,
+  direction = 0,
+  breed = "leever_purple",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "leever_8",
+  layer = 0,
+  x = 760,
+  y = 741,
+  direction = 0,
+  breed = "leever_purple",
+  treasure_name = "random_north",
 }
 
 tile{

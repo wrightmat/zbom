@@ -18,7 +18,7 @@ function sol.main:on_started()
   sol.main.load_settings()
 
   -- If there is a file called "debug" in the write directory, enable debug mode.
-  debug_enabled = sol.file.exists("debug")
+  --debug_enabled = sol.file.exists("debug")
 
   local solarus_logo = require("scripts/menus/solarus_logo")
   local language_menu = require("scripts/menus/language")
@@ -216,7 +216,6 @@ function sol.main:on_key_pressed(key, modifiers)
 
   -- Normal features.
   if not handled then
-
     if key == "f5" then
       -- F5: change the video mode.
       sol.video.switch_mode()
@@ -242,17 +241,15 @@ end
 -- depending on the specified language (the current one by default).
 function sol.language.get_dialog_font(language)
   language = language or sol.language.get_language()
-
   local font
   if language == "zh_TW" or language == "zh_CN" then
     -- Chinese font.
-    font = "zqy-microhei"
-    size = 12
+    --font = "zqy-microhei"
+    --size = 12
   else
     font = "lttp"
     size = 14
   end
-
   return font, size
 end
 
@@ -260,17 +257,15 @@ end
 -- depending on the specified language (the current one by default).
 function sol.language.get_menu_font(language)
   language = language or sol.language.get_language()
-
   local font, size
   if language == "zh_TW" or language == "zh_CN" then
     -- Chinese font.
-    font = "wqy-microhei"
-    size = 12
+    --font = "wqy-microhei"
+    --size = 12
   else
     font = "minecraftia"
     size = 8
   end
-
   return font, size
 end
 
@@ -278,7 +273,6 @@ end
 -- depending on the specified language (the current one by default).
 function sol.language.get_book_font(language)
   language = language or sol.language.get_language()
-
   local font, size
   if language == "zh_TW" or language == "zh_CN" then
     -- Chinese font.
@@ -288,6 +282,5 @@ function sol.language.get_book_font(language)
     font = "bom"
     size = 14
   end
-
   return font, size
 end

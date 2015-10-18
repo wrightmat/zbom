@@ -3869,6 +3869,15 @@ tile{
   pattern = "522",
 }
 
+tile{
+  layer = 0,
+  x = 792,
+  y = 8,
+  width = 8,
+  height = 16,
+  pattern = "627",
+}
+
 teletransporter{
   name = "hole_cave",
   layer = 0,
@@ -3911,7 +3920,7 @@ teletransporter{
   layer = 0,
   x = 464,
   y = -16,
-  width = 576,
+  width = 272,
   height = 16,
   transition = "scrolling",
   destination_map = "35",
@@ -4168,7 +4177,7 @@ enemy{
 }
 
 teletransporter{
-  name = "to_F5_3",
+  name = "to_F10_3",
   layer = 0,
   x = 72,
   y = -16,
@@ -4872,15 +4881,6 @@ destructible{
   can_be_cut = true,
 }
 
-wall{
-  layer = 0,
-  x = 792,
-  y = 0,
-  width = 8,
-  height = 8,
-  stops_hero = true,
-}
-
 custom_entity{
   name = "stone_pile_2",
   layer = 0,
@@ -4958,6 +4958,18 @@ wall{
   width = 16,
   height = 128,
   stops_enemies = true,
+}
+
+teletransporter{
+  name = "to_F10_2",
+  layer = 0,
+  x = 792,
+  y = -16,
+  width = 240,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "35",
+  destination = "_side",
 }
 
 tile{

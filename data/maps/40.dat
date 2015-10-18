@@ -4267,15 +4267,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1000,
-  y = 88,
-  width = 48,
-  height = 16,
-  pattern = "628",
-}
-
-tile{
-  layer = 0,
   x = 1008,
   y = 152,
   width = 48,
@@ -4591,15 +4582,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1008,
-  y = 104,
-  width = 32,
-  height = 8,
-  pattern = "629",
-}
-
-tile{
-  layer = 0,
   x = 920,
   y = 96,
   width = 8,
@@ -4614,24 +4596,6 @@ tile{
   width = 8,
   height = 16,
   pattern = "626",
-}
-
-tile{
-  layer = 0,
-  x = 992,
-  y = 80,
-  width = 8,
-  height = 16,
-  pattern = "626",
-}
-
-tile{
-  layer = 0,
-  x = 1048,
-  y = 80,
-  width = 8,
-  height = 16,
-  pattern = "627",
 }
 
 tile{
@@ -8110,8 +8074,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 816,
-  y = 464,
+  x = 808,
+  y = 496,
   width = 16,
   height = 16,
   pattern = "43",
@@ -8533,15 +8497,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1000,
-  y = 48,
-  width = 48,
-  height = 40,
-  pattern = "522",
-}
-
-tile{
-  layer = 0,
   x = 872,
   y = 64,
   width = 48,
@@ -8826,6 +8781,24 @@ tile{
   width = 32,
   height = 16,
   pattern = "1107",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 328,
+  width = 16,
+  height = 16,
+  pattern = "43",
 }
 
 dynamic_tile{
@@ -11160,15 +11133,6 @@ tile{
 
 tile{
   layer = 2,
-  x = 1000,
-  y = 32,
-  width = 48,
-  height = 16,
-  pattern = "521",
-}
-
-tile{
-  layer = 2,
   x = 864,
   y = 56,
   width = 8,
@@ -11180,24 +11144,6 @@ tile{
   layer = 2,
   x = 920,
   y = 56,
-  width = 8,
-  height = 40,
-  pattern = "520",
-}
-
-tile{
-  layer = 2,
-  x = 992,
-  y = 40,
-  width = 8,
-  height = 40,
-  pattern = "519",
-}
-
-tile{
-  layer = 2,
-  x = 1048,
-  y = 40,
   width = 8,
   height = 40,
   pattern = "520",

@@ -6630,8 +6630,8 @@ wall{
   width = 16,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -6643,8 +6643,8 @@ wall{
   width = 16,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
@@ -6656,43 +6656,43 @@ wall{
   width = 16,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 teletransporter{
+  name = "to_F13",
   layer = 0,
   x = -16,
   y = 944,
   width = 16,
   height = 160,
-  name = "to_F13",
   transition = "scrolling",
   destination_map = "17",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_F13_2",
   layer = 0,
   x = -16,
   y = 704,
   width = 16,
   height = 192,
-  name = "to_F13_2",
   transition = "scrolling",
   destination_map = "17",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_F13_4",
   layer = 0,
   x = -16,
   y = 8,
   width = 16,
-  height = 640,
-  name = "to_F13_4",
+  height = 656,
   transition = "scrolling",
   destination_map = "17",
   destination = "_side",
@@ -6787,24 +6787,24 @@ destructible{
 }
 
 teletransporter{
+  name = "to_G12",
   layer = 0,
   x = 736,
   y = -16,
   width = 80,
   height = 16,
-  name = "to_G12",
   transition = "scrolling",
   destination_map = "28",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_H13",
   layer = 0,
   x = 1120,
   y = 24,
   width = 16,
   height = 960,
-  name = "to_H13",
   transition = "scrolling",
   destination_map = "19",
   destination = "_side",
@@ -8241,34 +8241,34 @@ destructible{
 }
 
 npc{
+  name = "torch_1",
   layer = 0,
   x = 480,
   y = 1077,
-  name = "torch_1",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/torch_wood",
   behavior = "item#lamp",
 }
 
 npc{
+  name = "torch_2",
   layer = 0,
   x = 968,
   y = 885,
-  name = "torch_2",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/torch_wood",
   behavior = "item#lamp",
 }
 
 npc{
+  name = "torch_3",
   layer = 0,
   x = 736,
   y = 221,
-  name = "torch_3",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/torch_wood",
   behavior = "item#lamp",
 }
@@ -8472,20 +8472,20 @@ destructible{
 }
 
 enemy{
+  name = "chuchu_1",
   layer = 0,
   x = 824,
   y = 1005,
-  name = "chuchu_1",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",
 }
 
 enemy{
+  name = "chuchu_2",
   layer = 0,
   x = 848,
   y = 261,
-  name = "chuchu_2",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random_woods",

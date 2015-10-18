@@ -10916,6 +10916,24 @@ tile{
   pattern = "1450",
 }
 
+tile{
+  layer = 0,
+  x = 1104,
+  y = 1104,
+  width = 16,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 1104,
+  width = 16,
+  height = 16,
+  pattern = "10",
+}
+
 destructible{
   layer = 0,
   x = 1008,
@@ -13232,7 +13250,7 @@ teletransporter{
   x = 1120,
   y = 800,
   width = 16,
-  height = 320,
+  height = 304,
   transition = "scrolling",
   destination_map = "12",
   destination = "_side",

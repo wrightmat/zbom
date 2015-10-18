@@ -3820,7 +3820,7 @@ teletransporter{
   x = 1120,
   y = 0,
   width = 16,
-  height = 512,
+  height = 224,
   transition = "scrolling",
   destination_map = "27",
   destination = "_side",
@@ -4451,15 +4451,6 @@ wall{
 
 wall{
   layer = 0,
-  x = 904,
-  y = 1112,
-  width = 216,
-  height = 8,
-  stops_hero = true,
-}
-
-wall{
-  layer = 0,
   x = 1112,
   y = 632,
   width = 8,
@@ -4520,6 +4511,18 @@ destination{
   x = 832,
   y = 797,
   direction = 3,
+}
+
+teletransporter{
+  name = "to_F12_3",
+  layer = 0,
+  x = 1120,
+  y = 280,
+  width = 16,
+  height = 240,
+  transition = "scrolling",
+  destination_map = "27",
+  destination = "_side",
 }
 
 tile{

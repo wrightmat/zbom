@@ -2105,6 +2105,87 @@ tile{
   pattern = "546",
 }
 
+tile{
+  layer = 0,
+  x = 440,
+  y = 160,
+  width = 40,
+  height = 32,
+  pattern = "200",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 184,
+  width = 16,
+  height = 24,
+  pattern = "872",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 176,
+  width = 8,
+  height = 32,
+  pattern = "869",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 176,
+  width = 8,
+  height = 32,
+  pattern = "870",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 176,
+  width = 16,
+  height = 8,
+  pattern = "871",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 168,
+  width = 32,
+  height = 32,
+  pattern = "1013",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 48,
+  width = 32,
+  height = 32,
+  pattern = "1014",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 56,
+  width = 32,
+  height = 32,
+  pattern = "1008",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "1009",
+}
+
 teletransporter{
   name = "to_J3",
   layer = 0,
@@ -2223,6 +2304,25 @@ enemy{
   y = 925,
   direction = 0,
   breed = "chuchu_yellow",
+}
+
+destination{
+  name = "from_cave",
+  layer = 0,
+  x = 512,
+  y = 213,
+  direction = 3,
+}
+
+teletransporter{
+  name = "to_cave",
+  layer = 0,
+  x = 504,
+  y = 184,
+  width = 16,
+  height = 16,
+  destination_map = "9",
+  destination = "from_J2",
 }
 
 tile{

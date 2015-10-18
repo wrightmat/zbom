@@ -3131,6 +3131,24 @@ tile{
   pattern = "951",
 }
 
+tile{
+  layer = 0,
+  x = 184,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "179",
+}
+
+tile{
+  layer = 0,
+  x = 784,
+  y = 408,
+  width = 16,
+  height = 16,
+  pattern = "178",
+}
+
 sensor{
   name = "door_sensor_1",
   layer = 0,

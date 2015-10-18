@@ -1808,6 +1808,33 @@ tile{
   pattern = "1430",
 }
 
+tile{
+  layer = 0,
+  x = 272,
+  y = 96,
+  width = 8,
+  height = 8,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 720,
+  width = 8,
+  height = 8,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 224,
+  width = 8,
+  height = 8,
+  pattern = "62",
+}
+
 teletransporter{
   name = "to_D2",
   layer = 0,

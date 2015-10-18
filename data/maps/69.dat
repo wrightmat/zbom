@@ -3059,6 +3059,32 @@ wall{
   stops_projectiles = true,
 }
 
+wall{
+  layer = 0,
+  x = 144,
+  y = 704,
+  width = 8,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 168,
+  y = 704,
+  width = 8,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
 npc{
   name = "npc_goron_ghost",
   layer = 1,

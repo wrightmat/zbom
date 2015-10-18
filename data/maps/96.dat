@@ -1421,6 +1421,15 @@ tile{
   pattern = "10",
 }
 
+tile{
+  layer = 0,
+  x = 256,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "1626",
+}
+
 teletransporter{
   name = "to_C1",
   layer = 0,

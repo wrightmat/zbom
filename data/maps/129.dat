@@ -5,7 +5,7 @@ properties{
   height = 1120,
   world = "outside_north",
   tileset = "3",
-  music = "same",
+  music = "town_darunia",
 }
 
 tile{
@@ -1275,6 +1275,105 @@ tile{
   width = 16,
   height = 16,
   pattern = "1765",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 216,
+  width = 8,
+  height = 16,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 856,
+  y = 448,
+  width = 8,
+  height = 8,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 576,
+  width = 8,
+  height = 8,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 360,
+  width = 8,
+  height = 8,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 616,
+  width = 8,
+  height = 8,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 192,
+  width = 8,
+  height = 8,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 872,
+  width = 8,
+  height = 8,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 760,
+  y = 928,
+  width = 8,
+  height = 8,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 1048,
+  y = 832,
+  width = 8,
+  height = 8,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 1056,
+  width = 8,
+  height = 8,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 1024,
+  width = 8,
+  height = 8,
+  pattern = "62",
 }
 
 teletransporter{

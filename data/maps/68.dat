@@ -10,6 +10,141 @@ properties{
 
 tile{
   layer = 0,
+  x = 80,
+  y = 848,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 952,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 1064,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 1064,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 952,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 952,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 952,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 848,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 736,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 624,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 624,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 736,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 848,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 848,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 736,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
   x = 752,
   y = 992,
   width = 48,
@@ -1203,91 +1338,91 @@ wall{
   width = 16,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 teletransporter{
+  name = "to_I7",
   layer = 0,
   x = 0,
   y = 1120,
   width = 704,
   height = 16,
-  name = "to_I7",
   transition = "scrolling",
   destination_map = "69",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_H6",
   layer = 0,
   x = -16,
   y = 0,
   width = 16,
   height = 1120,
-  name = "to_H6",
   transition = "scrolling",
   destination_map = "66",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_I5",
   layer = 0,
   x = 0,
   y = -16,
   width = 816,
   height = 16,
-  name = "to_I5",
   transition = "scrolling",
   destination_map = "59",
   destination = "_side",
 }
 
 destination{
+  name = "from_mausoleum",
   layer = 0,
   x = 424,
   y = 413,
-  name = "from_mausoleum",
   direction = 3,
 }
 
 enemy{
+  name = "geyser_1",
   layer = 0,
   x = 120,
   y = 77,
-  name = "geyser_1",
   direction = 3,
   breed = "geyser",
   treasure_name = "random",
 }
 
 enemy{
+  name = "geyser_2",
   layer = 0,
   x = 680,
   y = 61,
-  name = "geyser_2",
   direction = 3,
   breed = "geyser",
   treasure_name = "random",
 }
 
 enemy{
+  name = "geyser_3",
   layer = 0,
   x = 560,
   y = 213,
-  name = "geyser_3",
   direction = 3,
   breed = "geyser",
   treasure_name = "random",
 }
 
 destructible{
+  name = "bombflower_1",
   layer = 0,
   x = 112,
   y = 253,
-  name = "bombflower_1",
   treasure_name = "random_mountain",
   sprite = "entities/bomb_flower",
   destruction_sound = "bush",
@@ -1298,23 +1433,23 @@ destructible{
 }
 
 teletransporter{
+  name = "to_mausoleum",
   layer = 0,
   x = 416,
   y = 376,
   width = 16,
   height = 16,
-  name = "to_mausoleum",
   destination_map = "205",
   destination = "from_outside",
 }
 
 npc{
+  name = "npc_dampeh",
   layer = 0,
   x = 488,
   y = 445,
-  name = "npc_dampeh",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/goron_dampeh",
 }
 
@@ -1325,63 +1460,63 @@ wall{
   width = 16,
   height = 8,
   stops_hero = true,
-  stops_enemies = true,
   stops_npcs = true,
+  stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
 }
 
 npc{
+  name = "torch_1",
   layer = 0,
   x = 480,
   y = 365,
-  name = "torch_1",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/torch_wood",
 }
 
 npc{
+  name = "torch_2",
   layer = 0,
   x = 368,
   y = 365,
-  name = "torch_2",
   direction = 3,
-  subtype = "0",
+  subtype = 0,
   sprite = "entities/torch_wood",
 }
 
 teletransporter{
+  name = "to_I5_water",
   layer = 0,
   x = 864,
   y = -16,
   width = 256,
   height = 16,
-  name = "to_I5_water",
   transition = "scrolling",
   destination_map = "59",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_I7_water",
   layer = 0,
   x = 752,
   y = 1120,
   width = 368,
   height = 16,
-  name = "to_I7_water",
   transition = "scrolling",
   destination_map = "69",
   destination = "_side",
 }
 
 npc{
+  name = "npc_goron_ghost",
   layer = 1,
   x = 384,
   y = 1101,
-  name = "npc_goron_ghost",
   direction = 3,
-  subtype = "1",
+  subtype = 1,
   sprite = "npc/goron_ghost",
 }
 

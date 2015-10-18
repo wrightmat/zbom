@@ -1700,6 +1700,33 @@ tile{
   pattern = "63",
 }
 
+tile{
+  layer = 0,
+  x = 568,
+  y = 792,
+  width = 32,
+  height = 48,
+  pattern = "1431",
+}
+
+tile{
+  layer = 0,
+  x = 584,
+  y = 1016,
+  width = 32,
+  height = 48,
+  pattern = "1431",
+}
+
+tile{
+  layer = 0,
+  x = 1000,
+  y = 704,
+  width = 32,
+  height = 48,
+  pattern = "1431",
+}
+
 teletransporter{
   name = "to_I4",
   layer = 0,

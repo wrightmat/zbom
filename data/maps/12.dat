@@ -5291,6 +5291,60 @@ tile{
   pattern = "524",
 }
 
+tile{
+  layer = 0,
+  x = 0,
+  y = 1104,
+  width = 16,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 1112,
+  width = 64,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 1104,
+  width = 16,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 1112,
+  width = 16,
+  height = 16,
+  pattern = "162",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 1104,
+  width = 16,
+  height = 16,
+  pattern = "162",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 1112,
+  width = 16,
+  height = 16,
+  pattern = "162",
+}
+
 wall{
   layer = 0,
   x = 816,
@@ -7030,7 +7084,7 @@ teletransporter{
   x = -16,
   y = 800,
   width = 16,
-  height = 320,
+  height = 304,
   transition = "scrolling",
   destination_map = "11",
   destination = "_side",

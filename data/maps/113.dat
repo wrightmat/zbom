@@ -4040,6 +4040,51 @@ tile{
   pattern = "953",
 }
 
+tile{
+  layer = 0,
+  x = 944,
+  y = 952,
+  width = 16,
+  height = 8,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1016,
+  y = 640,
+  width = 8,
+  height = 8,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 768,
+  width = 16,
+  height = 8,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 432,
+  width = 8,
+  height = 8,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 408,
+  width = 16,
+  height = 8,
+  pattern = "11",
+}
+
 teletransporter{
   name = "to_H3",
   layer = 0,
@@ -4338,6 +4383,16 @@ teletransporter{
   height = 16,
   destination_map = "113",
   destination = "from_desert_entrance",
+}
+
+enemy{
+  name = "geldman_1",
+  layer = 0,
+  x = 936,
+  y = 205,
+  direction = 0,
+  breed = "geldman",
+  treasure_name = "random_north",
 }
 
 tile{

@@ -4069,33 +4069,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 520,
-  y = 1096,
-  width = 96,
-  height = 24,
-  pattern = "1499",
-}
-
-tile{
-  layer = 0,
-  x = 512,
-  y = 1112,
-  width = 8,
-  height = 16,
-  pattern = "1498",
-}
-
-tile{
-  layer = 0,
-  x = 616,
-  y = 1112,
-  width = 8,
-  height = 16,
-  pattern = "1500",
-}
-
-tile{
-  layer = 0,
   x = 8,
   y = 1072,
   width = 48,
@@ -4805,12 +4778,21 @@ tile{
   pattern = "524",
 }
 
+tile{
+  layer = 0,
+  x = 616,
+  y = 1104,
+  width = 16,
+  height = 16,
+  pattern = "524",
+}
+
 teletransporter{
   name = "to_F13",
   layer = 0,
   x = 440,
   y = 1120,
-  width = 80,
+  width = 176,
   height = 16,
   transition = "scrolling",
   destination_map = "17",
@@ -5288,7 +5270,7 @@ teletransporter{
   x = 1120,
   y = 0,
   width = 16,
-  height = 1088,
+  height = 512,
   transition = "scrolling",
   destination_map = "28",
   destination = "_side",
@@ -5298,7 +5280,7 @@ teletransporter{
   name = "to_E12_4",
   layer = 0,
   x = -16,
-  y = 288,
+  y = 280,
   width = 16,
   height = 240,
   transition = "scrolling",
@@ -5489,6 +5471,29 @@ destructible{
   layer = 0,
   x = 808,
   y = 845,
+  treasure_name = "random_woods",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = 1,
+  can_be_cut = true,
+}
+
+teletransporter{
+  name = "to_G12_2",
+  layer = 0,
+  x = 1120,
+  y = 592,
+  width = 16,
+  height = 496,
+  transition = "scrolling",
+  destination_map = "28",
+  destination = "_side",
+}
+
+destructible{
+  layer = 0,
+  x = 624,
+  y = 1117,
   treasure_name = "random_woods",
   sprite = "entities/bush",
   destruction_sound = "bush",
@@ -7480,33 +7485,6 @@ tile{
   layer = 2,
   x = 440,
   y = 1096,
-  width = 8,
-  height = 24,
-  pattern = "1497",
-}
-
-tile{
-  layer = 2,
-  x = 520,
-  y = 1064,
-  width = 96,
-  height = 32,
-  pattern = "1495",
-}
-
-tile{
-  layer = 2,
-  x = 512,
-  y = 1088,
-  width = 8,
-  height = 24,
-  pattern = "1494",
-}
-
-tile{
-  layer = 2,
-  x = 616,
-  y = 1088,
   width = 8,
   height = 24,
   pattern = "1497",
