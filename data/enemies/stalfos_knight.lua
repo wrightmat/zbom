@@ -34,10 +34,7 @@ function enemy:on_restarted()
       hide_timer = sol.timer.start(self, math.random(10)*500, function() self:hide() end)
     else
       sol.timer.start(self, 500, function()
-        self:create_enemy({
-	  breed = "stalfos_head",
-	  treasure_name = "magic_jar"
-        })
+        self:create_enemy({ breed = "stalfos_head", treasure_name = "magic_flask" })
       end)
       self:go_hero()
     end
@@ -75,10 +72,7 @@ function enemy:hide()
   hidden = true
   self:get_sprite():set_animation("head")
   sol.audio.play_sound("stalfos_laugh")
-  self:create_enemy({
-    breed = "stalfos_head",
-    treasure_name = "bomb"
-  })
+  self:create_enemy({ breed = "stalfos_head", treasure_name = "bomb" })
   sol.timer.start(self, 1000, function()
     local m = sol.movement.create("jump")
     m:set_direction8(2)
