@@ -33,9 +33,7 @@ function map:on_started(destination)
   end
 
   -- Opening doors
-  local entrance_names = {
-    "house_5", "house_7", "house_8", "house_9", "house_10"
-  }
+  local entrance_names = { "house_5", "house_7", "house_8", "house_9", "house_10" }
   for _, entrance_name in ipairs(entrance_names) do
     local sensor = map:get_entity(entrance_name .. "_door_sensor")
     local tile = map:get_entity(entrance_name .. "_door")
@@ -44,12 +42,6 @@ function map:on_started(destination)
 	tile:set_enabled(false)
 	sol.audio.play_sound("door_open")
       end
-    end
-  end
-  -- Activate any night-specific dynamic tiles
-  if game:get_time_of_day() == "night" then
-    for entity in map:get_entities("night_") do
-      entity:set_enabled(true)
     end
   end
 end

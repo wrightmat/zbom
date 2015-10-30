@@ -15,40 +15,25 @@ end
 function map:on_started(destination)
   random_walk(npc_ildus)
 
--- Create independent entity if it does not exist.
---  local unique_id = "metal_ball"
---  if not game.save_between_maps:entity_exists(game, unique_id) then 
---    local entity = map:create_custom_entity({x=840, y=277, layer=0, direction=0, sprite="entities/metal_ball", model="metal_ball"})
---    entity.unique_id = unique_id
---  end
-
   -- Opening doors
-  local entrance_names = {
-    "house_1", "house_3", "house_4"
-  }
+  local entrance_names = { "house_1", "house_3", "house_4" }
   for _, entrance_name in ipairs(entrance_names) do
     local sensor = map:get_entity(entrance_name .. "_door_sensor")
     local tile = map:get_entity(entrance_name .. "_door")
     sensor.on_activated_repeat = function()
       if hero:get_direction() == 1 and tile:is_enabled() and game:get_time_of_day() == "day" then
-	tile:set_enabled(false)
-	sol.audio.play_sound("door_open")
+        tile:set_enabled(false)
+        sol.audio.play_sound("door_open")
       elseif hero:get_direction() == 3 then
-	-- Special case on this map to play kakariko music when coming out of
-	-- house so house music doesn't continue. Map doesn't specify music.
-	sol.audio.play_music("town_kakariko")
+        -- Special case on this map to play kakariko music when coming out of
+        -- house so house music doesn't continue. Map doesn't specify music.
+        sol.audio.play_music("town_kakariko")
       end
     end
   end
-  -- Activate any night-specific dynamic tiles
-  if game:get_time_of_day() == "night" then
-    for entity in map:get_entities("night_") do
-      entity:set_enabled(true)
-    end
-  end
-  if game:get_value("b1812") and game:get_time_of_day() == "night" then
-    shop_door:set_enabled(true)  -- Shop is closed at night after Strap's bottle is stolen.
-  end
+
+  -- Shop is closed at night after Strap's bottle is stolen.
+  if game:get_value("b1812") and game:get_time_of_day() == "night" then shop_door:set_enabled(true) end
 end
 
 function npc_ildus:on_interaction()

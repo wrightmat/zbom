@@ -26,10 +26,6 @@ local function follow_hero(npc)
   local hero_x, hero_y, hero_layer = hero:get_position()
   local npc_x, npc_y, npc_layer = npc:get_position()
   local distance_hero = math.abs((hero_x+hero_y)-(npc_x+npc_y))
-  --sol.timer.start(1000, function()
-    --if distance_hero < 100 then npc:set_traversable(true) end
-    --return true
-  --end)
   local m = sol.movement.create("target")
   m:set_ignore_obstacles(false)
   m:set_speed(40)
@@ -131,31 +127,20 @@ function map:on_started(destination)
     npc_bilo:remove()
   end
 
-  -- Show the quest bubble for the "find Crista for Julita" quest only at the appropriate time
-  if game:get_value("i1027") ~= 4 and quest_julita:exists() then
-    quest_julita:remove()
-  end
+  -- Show the quest bubble for the "find Crista for Julita" quest only at the appropriate time.
+  if game:get_value("i1027") ~= 4 and quest_julita:exists() then quest_julita:remove() end
 
   -- Entrances of houses.
-  local entrance_names = {
-    "pim", "ulo", "julita"
-  }
+  local entrance_names = { "pim", "ulo", "julita" }
   for _, entrance_name in ipairs(entrance_names) do
     local sensor = map:get_entity(entrance_name .. "_door_sensor")
     local tile = map:get_entity(entrance_name .. "_door")
-
     sensor.on_activated_repeat = function()
       if hero:get_direction() == 1
 	  and tile:is_enabled() then
 	tile:set_enabled(false)
 	sol.audio.play_sound("door_open")
       end
-    end
-  end
-  -- Activate any night-specific dynamic tiles
-  if game:get_time_of_day() == "night" then
-    for entity in map:get_entities("night_") do
-      entity:set_enabled(true)
     end
   end
 end
@@ -174,9 +159,7 @@ function npc_rudy:on_interaction()
           end)
         end)
       end)
-    else
-      game:start_dialog("rudy.1.festival")
-    end
+    else game:start_dialog("rudy.1.festival") end
   else
     game:start_dialog("rudy.0.festival")
     if game:get_value("i1902") == 0 then game:set_value("i1902", 1) end
@@ -187,7 +170,7 @@ function npc_quint:on_interaction()
   game:set_dialog_style("default")
   if game:get_value("i1907") >= 1 then
     if game:get_value("i1027") >= 6 then
-      repeat -- make sure the same quote is not picked again
+      repeat -- Make sure the same quote is not picked again.
         index = math.random(3)
       until index ~= last_message
       game:start_dialog("quint.2.hint_"..index)
@@ -200,7 +183,7 @@ function npc_francis:on_interaction()
   game:set_dialog_style("default")
   if game:get_value("i1908") >= 1 then
     if game:get_value("i1027") >= 6 then
-      repeat -- make sure the same quote is not picked again
+      repeat -- Make sure the same quote is not picked again.
         index = math.random(3)
       until index ~= last_message
       game:start_dialog("francis.2.hint_"..index)
@@ -213,7 +196,7 @@ function npc_jarred:on_interaction()
   game:set_dialog_style("default")
   if game:get_value("i1909") >= 1 then
     if game:get_value("i1027") >= 6 then
-      repeat -- make sure the same quote is not picked again
+      repeat -- Make sure the same quote is not picked again.
         index = math.random(3)
       until index ~= last_message
       game:start_dialog("jarred.2.hint_"..index)

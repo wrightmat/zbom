@@ -208,6 +208,13 @@ local function initialize_maps()
       return math.random(math.ceil(lower/8), math.floor(upper/8))*8
     end
 
+    -- Activate any night-specific dynamic tiles.
+    if game:get_time_of_day() == "night" then
+      for entity in game:get_map():get_entities("night_") do
+        entity:set_enabled(true)
+      end
+    end
+
     -- Night time is more dangerous - add various enemies.
     if game:get_map():get_world() == "outside_world" and
     game:get_time_of_day() == "night" then
