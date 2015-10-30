@@ -6173,6 +6173,28 @@ tile{
   pattern = "30",
 }
 
+dynamic_tile{
+  name = "night_entrance_2",
+  layer = 0,
+  x = 504,
+  y = 584,
+  pattern = "2172",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_entrance",
+  layer = 0,
+  x = 376,
+  y = 584,
+  pattern = "2172",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
 wall{
   layer = 0,
   x = 304,
@@ -6579,6 +6601,39 @@ teletransporter{
   transition = "scrolling",
   destination_map = "144",
   destination = "_side",
+}
+
+dynamic_tile{
+  name = "night_window",
+  layer = 0,
+  x = 336,
+  y = 584,
+  pattern = "2173",
+  width = 24,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_window_2",
+  layer = 0,
+  x = 416,
+  y = 584,
+  pattern = "2173",
+  width = 24,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_window_3",
+  layer = 0,
+  x = 456,
+  y = 584,
+  pattern = "2173",
+  width = 24,
+  height = 16,
+  enabled_at_start = false,
 }
 
 tile{

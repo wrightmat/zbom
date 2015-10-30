@@ -7307,6 +7307,17 @@ tile{
   pattern = "179",
 }
 
+dynamic_tile{
+  name = "night_entrance",
+  layer = 0,
+  x = 368,
+  y = 480,
+  pattern = "2172",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
 sensor{
   name = "ranch_door_sensor",
   layer = 0,
@@ -8260,6 +8271,17 @@ wall{
   stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
+}
+
+dynamic_tile{
+  name = "night_window",
+  layer = 0,
+  x = 328,
+  y = 480,
+  pattern = "2173",
+  width = 24,
+  height = 16,
+  enabled_at_start = false,
 }
 
 tile{

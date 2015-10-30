@@ -6,11 +6,8 @@ local game = map:get_game()
 -------------------------------------------------------------------------------
 
 function map:on_started(destination)
-  --ocarina_wind_to_L5:set_traversable_by(true)
   -- Opening doors
-  local entrance_names = {
-    "impa"
-  }
+  local entrance_names = { "impa" }
   for _, entrance_name in ipairs(entrance_names) do
     local sensor = map:get_entity(entrance_name .. "_door_sensor")
     local tile = map:get_entity(entrance_name .. "_door")
@@ -22,4 +19,11 @@ function map:on_started(destination)
       end
     end
   end
+
+    -- Activate any night-specific dynamic tiles.
+    if game:get_time_of_day() == "night" then
+      for entity in game:get_map():get_entities("night_") do
+        entity:set_enabled(true)
+      end
+    end
 end

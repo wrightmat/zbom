@@ -27,6 +27,13 @@ function map:on_started(destination)
   spoils_alchemy:get_sprite():set_animation("alchemy")
   spoils_plume:get_sprite():set_animation("plume")
   spoils_ore:get_sprite():set_animation("ore")
+
+    -- Activate any night-specific dynamic tiles.
+    if game:get_time_of_day() == "night" then
+      for entity in game:get_map():get_entities("night_") do
+        entity:set_enabled(true)
+      end
+    end
 end
 
 function npc_isan:on_interaction()

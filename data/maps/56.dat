@@ -2366,6 +2366,72 @@ tile{
   pattern = "524",
 }
 
+dynamic_tile{
+  name = "night_entrance_7",
+  layer = 0,
+  x = 1000,
+  y = 696,
+  pattern = "2172",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_entrance_6",
+  layer = 0,
+  x = 928,
+  y = 520,
+  pattern = "2172",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_entrance_5",
+  layer = 0,
+  x = 584,
+  y = 576,
+  pattern = "2172",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_entrance_4",
+  layer = 0,
+  x = 648,
+  y = 752,
+  pattern = "2172",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_entrance_2",
+  layer = 0,
+  x = 376,
+  y = 728,
+  pattern = "2172",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_entrance",
+  layer = 0,
+  x = 288,
+  y = 544,
+  pattern = "2172",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
 destination{
   name = "from_inside_4",
   layer = 0,
@@ -3247,6 +3313,50 @@ wall{
   stops_npcs = true,
   stops_enemies = true,
   stops_blocks = true,
+}
+
+dynamic_tile{
+  name = "night_window",
+  layer = 0,
+  x = 256,
+  y = 544,
+  pattern = "2173",
+  width = 24,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_window_2",
+  layer = 0,
+  x = 344,
+  y = 728,
+  pattern = "2173",
+  width = 24,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_window_3",
+  layer = 0,
+  x = 552,
+  y = 576,
+  pattern = "2173",
+  width = 24,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_window_4",
+  layer = 0,
+  x = 968,
+  y = 696,
+  pattern = "2173",
+  width = 24,
+  height = 16,
+  enabled_at_start = false,
 }
 
 tile{
@@ -5029,6 +5139,17 @@ tile{
   width = 8,
   height = 24,
   pattern = "676",
+}
+
+dynamic_tile{
+  name = "night_entrance_3",
+  layer = 1,
+  x = 608,
+  y = 736,
+  pattern = "2172",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
 }
 
 dynamic_tile{

@@ -2456,6 +2456,17 @@ tile{
   pattern = "1128",
 }
 
+dynamic_tile{
+  name = "night_entrance",
+  layer = 0,
+  x = 616,
+  y = 640,
+  pattern = "2172",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
 npc{
   name = "tower_base",
   layer = 0,
@@ -3439,6 +3450,17 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/mailbox",
+}
+
+dynamic_tile{
+  name = "night_window",
+  layer = 0,
+  x = 576,
+  y = 640,
+  pattern = "2173",
+  width = 24,
+  height = 16,
+  enabled_at_start = false,
 }
 
 tile{

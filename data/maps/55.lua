@@ -8,7 +8,7 @@ local game = map:get_game()
 local torch_overlay = nil
 
 function map:on_started(destination)
-  if game:get_value("b1150") then stone_pile:remove() end -- Tower construction over after Snowpeak Caverns beat
+  if game:get_value("b1150") then stone_pile:remove() end -- Tower construction over after Snowpeak Caverns beat.
   if game:get_value("b1170") and game:get_value("i1910") < 7 then
     torch_1:get_sprite():set_animation("lit")
     sol.timer.start(1000, function()
@@ -26,10 +26,17 @@ function map:on_started(destination)
       end)
     end)
   end
+
+    -- Activate any night-specific dynamic tiles.
+    if game:get_time_of_day() == "night" then
+      for entity in game:get_map():get_entities("night_") do
+        entity:set_enabled(true)
+      end
+    end
 end
 
 function map:on_draw(dst_surface)
-  -- Show torch overlay for Ordona dialog
+  -- Show torch overlay for Ordona dialog.
   if game:get_time_of_day() ~= "night" and torch_overlay ~= nil then
     local screen_width, screen_height = dst_surface:get_size()
     local cx, cy = map:get_camera_position()
@@ -41,13 +48,13 @@ function map:on_draw(dst_surface)
 end
 
 function sensor_change_layer:on_activated()
-  -- if walking forward on low level, change to intermediate level
+  -- If walking forward on low level, change to intermediate level.
   if layer ~= 1 and hero:get_direction() == 1 then
     local x, y, layer = hero:get_position()
     hero:set_position(x, y, layer+1)
   end
 
-  -- if walking down on intermediate level, changle to low level
+  -- If walking down on intermediate level, changle to low level.
   if layer ~= 0 and hero:get_direction() == 3 then
     local x, y, layer = hero:get_position()
     hero:set_position(x, y, layer-1)

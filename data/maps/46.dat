@@ -8202,6 +8202,17 @@ custom_entity{
   model = "ocarina_patch",
 }
 
+dynamic_tile{
+  name = "night_window_2",
+  layer = 0,
+  x = 656,
+  y = 352,
+  pattern = "237",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
 tile{
   layer = 1,
   x = 408,

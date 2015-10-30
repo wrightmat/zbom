@@ -27,6 +27,13 @@ function map:on_started(destination)
   elseif game:get_value("i1926") >= 2 and game:get_value("i1927") >= 2 then
     npc_rito_carpenter:remove()
   end
+
+    -- Activate any night-specific dynamic tiles.
+    if game:get_time_of_day() == "night" then
+      for entity in game:get_map():get_entities("night_") do
+        entity:set_enabled(true)
+      end
+    end
 end
 
 function npc_rito_1:on_interaction()
