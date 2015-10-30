@@ -208,13 +208,6 @@ local function initialize_maps()
       return math.random(math.ceil(lower/8), math.floor(upper/8))*8
     end
 
-    -- Activate any night-specific dynamic tiles.
-    if game:get_time_of_day() == "night" then
-      for entity in game:get_map():get_entities("night_") do
-        entity:set_enabled(true)
-      end
-    end
-
     -- Night time is more dangerous - add various enemies.
     if game:get_map():get_world() == "outside_world" and
     game:get_time_of_day() == "night" then
@@ -265,7 +258,6 @@ local function initialize_maps()
 	self:create_enemy({ breed="redead", x=ex, y=ey, layer=0, direction=1 })
       end
     end
-
   end
 
   function map_metatable:on_finished()
@@ -273,7 +265,7 @@ local function initialize_maps()
   end
 
   function map_metatable:on_update()
-    -- if hero doesn't have red tunic, slowly remove stamina in Subrosia.
+    -- If hero doesn't have red tunic, slowly remove stamina in Subrosia.
     if self:get_game():get_map():get_world() == "outside_subrosia" and
     self:get_game():get_item("tunic"):get_variant() < 2 then
       if not heat_timer then
@@ -289,7 +281,7 @@ local function initialize_maps()
       end
     end
 
-    -- if hero doesn't have blue tunic, slowly remove stamina while swimming.
+    -- If hero doesn't have blue tunic, slowly remove stamina while swimming.
     if self:get_game():get_hero():get_state() == "swimming" and
     self:get_game():get_item("tunic"):get_variant() < 3 then
       if not swim_timer then

@@ -65,13 +65,6 @@ function map:on_started(destination)
     elder_koshi_office:remove()
   end
 
-  -- Activate any night-specific dynamic tiles
-  if game:get_time_of_day() == "night" then
-    for entity in map:get_entities("night_") do
-      entity:set_enabled(true)
-    end
-  end
-
   -- Replace shop items if they're bought
   if game:get_value("i1820") >= 2 then --shield
     self:create_shop_treasure({
@@ -85,6 +78,13 @@ function map:on_started(destination)
 	treasure_variant = 3
     })
   end
+
+    -- Activate any night-specific dynamic tiles.
+    if game:get_time_of_day() == "night" then
+      for entity in game:get_map():get_entities("night_") do
+        entity:set_enabled(true)
+      end
+    end
 end
 
 function elder_ulo:on_interaction()

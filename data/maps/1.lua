@@ -119,12 +119,12 @@ function map:on_started(destination)
     })
   end
 
-  -- Activate any night-specific dynamic tiles.
-  if game:get_time_of_day() == "night" then
-    for entity in map:get_entities("night_") do
-      entity:set_enabled(true)
+    -- Activate any night-specific dynamic tiles.
+    if game:get_time_of_day() == "night" then
+      for entity in game:get_map():get_entities("night_") do
+        entity:set_enabled(true)
+      end
     end
-  end
 
   -- Apply to all potions, even dynamically created ones.
   for treasure in map:get_entities("shop_potion") do
@@ -137,7 +137,6 @@ function map:on_started(destination)
       end
     end
   end
-
 end
 
 function house_bed:on_activated()
