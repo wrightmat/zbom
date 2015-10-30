@@ -390,6 +390,16 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "134",
+  ground = "wall",
+  default_layer = 0,
+  x = 208,
+  y = 272,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
   id = "135",
   ground = "traversable",
   default_layer = 0,
@@ -687,6 +697,16 @@ tile_pattern{
   y = 184,
   width = 8,
   height = 16,
+}
+
+tile_pattern{
+  id = "162",
+  ground = "traversable",
+  default_layer = 2,
+  x = 208,
+  y = 264,
+  width = 16,
+  height = 8,
 }
 
 tile_pattern{
