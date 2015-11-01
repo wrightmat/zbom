@@ -5219,6 +5219,15 @@ tile{
   pattern = "623",
 }
 
+tile{
+  layer = 0,
+  x = 352,
+  y = 136,
+  width = 32,
+  height = 32,
+  pattern = "441",
+}
+
 dynamic_tile{
   name = "bed_bilo",
   layer = 0,
@@ -6226,6 +6235,17 @@ custom_entity{
   direction = 3,
   sprite = "npc/ordon_bilo",
   model = "npc_bilo",
+}
+
+dynamic_tile{
+  name = "night_window_17",
+  layer = 0,
+  x = 352,
+  y = 136,
+  pattern = "709",
+  width = 32,
+  height = 32,
+  enabled_at_start = false,
 }
 
 tile{

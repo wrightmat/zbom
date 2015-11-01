@@ -7271,6 +7271,15 @@ tile{
   pattern = "1574",
 }
 
+tile{
+  layer = 0,
+  x = 632,
+  y = 248,
+  width = 16,
+  height = 16,
+  pattern = "1574",
+}
+
 teletransporter{
   name = "to_F15",
   layer = 0,
@@ -8318,6 +8327,17 @@ dynamic_tile{
   layer = 0,
   x = 296,
   y = 872,
+  pattern = "236",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_mushroom_6",
+  layer = 0,
+  x = 632,
+  y = 248,
   pattern = "236",
   width = 16,
   height = 16,
@@ -10599,25 +10619,5 @@ tile{
   width = 8,
   height = 24,
   pattern = "1494",
-}
-
-tile{
-  layer = 2,
-  x = 632,
-  y = 248,
-  width = 16,
-  height = 16,
-  pattern = "1574",
-}
-
-dynamic_tile{
-  name = "night_mushroom_6",
-  layer = 2,
-  x = 632,
-  y = 248,
-  pattern = "236",
-  width = 16,
-  height = 16,
-  enabled_at_start = false,
 }
 

@@ -80,7 +80,6 @@ function enemy:on_hurt(attack)
   -- The head wobbles when hurt.
   head:stop_movement()
   head:get_sprite():set_animation("hurt")
-
   sol.timer.start(self, 1000, function() self:go_random() end)
 end
 
@@ -123,17 +122,11 @@ function enemy:check_hero()
     local hero = self:get_map():get_entity("hero")
     local _, _, layer = self:get_position()
     local _, _, hero_layer = hero:get_position()
-    local near_hero = layer == hero_layer
-      and self:get_distance(hero) < 200
+    local near_hero = layer == hero_layer and self:get_distance(hero) < 200
 
     if near_hero then
       if math.random(2) == 1 then
-	self:create_enemy{
-	  name = "miniboss_chuchu",
-	  breed = "chuchu_blue",
-	  x = -16,
-	  y = -16
-	}
+	self:create_enemy{ name = "miniboss_chuchu", breed = "chuchu_blue", x = -16, y = -16 }
       else
         self:go_hero()
       end

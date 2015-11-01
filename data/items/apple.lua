@@ -7,4 +7,5 @@ function item:on_obtaining(variant, savegame_variable)
     apple_counter:set_variant(1)
   end
   apple_counter:add_amount(1)
+  self:get_game():set_value("item_apple_obtained", true)
 end
