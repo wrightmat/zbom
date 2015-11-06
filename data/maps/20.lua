@@ -24,14 +24,20 @@ function map:on_started(destination)
     npc_tokay_2:remove()
     npc_tokay_3:remove()
     npc_deku_warning:remove()
-    local position1 = (positions[math.random(#positions)])
-    npc_deku_1:set_position(position1.x, position1.y)
-    local position2 = (positions[math.random(#positions)])
-    if position2 == position1 then position2 = (positions[math.random(#positions)]) end
-    npc_deku_2:set_position(position2.x, position2.y)
-    local position3 = (positions[math.random(#positions)])
-    if position3 == position1 or position3 == position2 then position3 = (positions[math.random(#positions)]) end
-    npc_deku_3:set_position(position3.x, position3.y)
+    if game:get_value("i1032") == 4 then
+      npc_deku_1:remove()
+      npc_deku_2:remove()
+      npc_deku_3:remove()
+    else
+      local position1 = (positions[math.random(#positions)])
+      npc_deku_1:set_position(position1.x, position1.y)
+      local position2 = (positions[math.random(#positions)])
+      if position2 == position1 then position2 = (positions[math.random(#positions)]) end
+      npc_deku_2:set_position(position2.x, position2.y)
+      local position3 = (positions[math.random(#positions)])
+      if position3 == position1 or position3 == position2 then position3 = (positions[math.random(#positions)]) end
+      npc_deku_3:set_position(position3.x, position3.y)
+    end
   end
   if game:get_value("i1068") == 9 then
     npc_monkey_1:remove()

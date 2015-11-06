@@ -5657,6 +5657,15 @@ npc{
 
 tile{
   layer = 1,
+  x = 752,
+  y = 824,
+  width = 16,
+  height = 8,
+  pattern = "637",
+}
+
+tile{
+  layer = 1,
   x = 712,
   y = 784,
   width = 24,
@@ -7309,14 +7318,5 @@ tile{
   width = 8,
   height = 40,
   pattern = "519",
-}
-
-tile{
-  layer = 2,
-  x = 752,
-  y = 824,
-  width = 16,
-  height = 8,
-  pattern = "637",
 }
 

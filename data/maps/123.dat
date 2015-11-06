@@ -4103,6 +4103,15 @@ tile{
   pattern = "42",
 }
 
+tile{
+  layer = 0,
+  x = -24,
+  y = 16,
+  width = 48,
+  height = 40,
+  pattern = "522",
+}
+
 teletransporter{
   name = "to_K4",
   layer = 0,
@@ -4571,15 +4580,6 @@ tile{
   width = 48,
   height = 16,
   pattern = "521",
-}
-
-tile{
-  layer = 2,
-  x = -24,
-  y = 16,
-  width = 48,
-  height = 40,
-  pattern = "522",
 }
 
 tile{
