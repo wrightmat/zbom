@@ -3210,6 +3210,16 @@ npc{
   sprite = "entities/bed_snores",
 }
 
+npc{
+  name = "quest_trading_vase",
+  layer = 0,
+  x = 792,
+  y = 397,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/quest_bubble",
+}
+
 tile{
   layer = 1,
   x = 72,

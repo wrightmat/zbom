@@ -5361,7 +5361,7 @@ dialog{
   id = "hint_stone.cave_ordeals",
   skip = "current",
   text = [[
-Descent into the Cave of Ordeals
+Descend into the Cave of Ordeals
 to test your courage. Fifty
 floors of trials await you.
 Not for the weak.
@@ -5669,7 +5669,7 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-Wait... do you have a $r Crystal Ball$w?
+Wait... do you have a  $r Crystal Ball$w?
 How did you come into possesion of that?
 Those are so rare and I've been wanting
 one for so long!
@@ -9813,7 +9813,7 @@ you have in your possession?
 Please give it to me!$0
 Please?$0
 I will give you my most prized
-possession, my  $r Crystal Ball$w.
+possession, my   $r Crystal Ball$w.
 Give it to her?
 Yes
 No
@@ -9836,8 +9836,17 @@ dialog{
   text = [[
 Thank you so much for your kindness!
 You have made me very happy! As
-promised, here's my beloved  $r  Crystal
+promised, here's my beloved   $r  Crystal
 Ball$w. Please find a good home for it.
+]]
+}
+
+dialog{
+  id = "witch.1.house",
+  text = [[
+Now that I have my   $r Moon Tear $w
+maybe I'll look to the stars for more
+power.
 ]]
 }
 

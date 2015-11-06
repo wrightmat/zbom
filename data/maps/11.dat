@@ -13396,6 +13396,16 @@ tile{
   pattern = "1634",
 }
 
+npc{
+  name = "quest_gaira",
+  layer = 1,
+  x = 520,
+  y = 397,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/quest_bubble",
+}
+
 tile{
   layer = 2,
   x = 16,

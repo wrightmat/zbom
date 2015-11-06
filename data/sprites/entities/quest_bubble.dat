@@ -1,6 +1,6 @@
 animation{
-  name = "normal",
-  src_image = "entities/status_bubbles.png",
+  name = "quest",
+  src_image = "entities/quest_bubble.png",
   frame_delay = 450,
   frame_to_loop_on = 0,
   directions = {
@@ -12,7 +12,7 @@ animation{
 }
 animation{
   name = "confused",
-  src_image = "entities/status_bubbles.png",
+  src_image = "entities/quest_bubble.png",
   frame_delay = 450,
   frame_to_loop_on = 0,
   directions = {
@@ -24,7 +24,7 @@ animation{
 }
 animation{
   name = "mute",
-  src_image = "entities/status_bubbles.png",
+  src_image = "entities/quest_bubble.png",
   frame_delay = 450,
   frame_to_loop_on = 0,
   directions = {
@@ -36,7 +36,7 @@ animation{
 }
 animation{
   name = "sleeping",
-  src_image = "entities/status_bubbles.png",
+  src_image = "entities/quest_bubble.png",
   frame_delay = 450,
   frame_to_loop_on = 0,
   directions = {

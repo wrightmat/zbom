@@ -215,7 +215,6 @@ function map_submenu:draw_world_map(dst_surface)
   if map_shown then
     -- Draw the hero's position.
     local hero_visible_y = self.hero_y - self.world_minimap_visible_xy.y
-print(self.hero_x..", "..hero_visible_y)
     if hero_visible_y >= 51 and hero_visible_y <= 133 + 51 then
       self.hero_head_sprite:draw(dst_surface, self.hero_x, hero_visible_y)
     end

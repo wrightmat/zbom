@@ -8593,6 +8593,16 @@ custom_entity{
   model = "ocarina_patch",
 }
 
+npc{
+  name = "quest_trading_mask",
+  layer = 1,
+  x = 200,
+  y = 733,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/quest_bubble",
+}
+
 tile{
   layer = 2,
   x = 16,

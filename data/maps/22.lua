@@ -8,6 +8,7 @@ local game = map:get_game()
 if game:get_value("i1068") == nil then game:set_value("i1068", 0) end
 
 function map:on_started(destination)
+  if not game:get_value("b2027") then quest_trading_bananas:remove() end
   if not game:get_value("b1058") then
     to_book_chamber:set_enabled(false)
     boss_heart:set_enabled(false)
@@ -40,14 +41,15 @@ function npc_tokay_chef:on_interaction()
   if game:get_value("b2027") then
     game:start_dialog("chef.0.trading", function(answer)
       if answer == 1 then
-        -- give him the dog food, get the bananas
+        -- Give him the Dog Food, get the Bananas.
         game:start_dialog("chef.0.trading_yes", function()
           hero:start_treasure("trading", 8)
           game:set_value("b2028", true)
           game:set_value("b2027", false)
+          quest_trading_bananas:remove()
         end)
       else
-        -- don't give him the dog food
+        -- Don't give him the Dog Food.
         game:start_dialog("chef.0.trading_no")
       end
     end)

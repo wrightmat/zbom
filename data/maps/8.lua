@@ -8,16 +8,11 @@ local game = map:get_game()
 if game:get_value("i1912")==nil then game:set_value("i1912", 0) end
 
 function map:on_started(destination)
-  if destination == from_outside_door1 or destination == from_outside_door2 then
-    sol.audio.play_music("mudora")
-  end
-
-  if game:get_value("i1032") >= 2 then
-    door:set_enabled(false)
-  end
+  if destination == from_outside_door1 or destination == from_outside_door2 then sol.audio.play_music("mudora") end
+  if not game:get_value("b2024") then quest_trading_ball:remove() end
+  if game:get_value("i1032") >= 2 then door:set_enabled(false) end
   if game:get_value("i1840") >= 5 then
-    -- crystal ball is gone
-    table_witch:set_enabled(true)
+    table_witch:set_enabled(true) -- Crystal ball is gone.
   end
   if game:get_value("i1068") == "9" then game:set_value("i1068", "10") end
 
@@ -28,12 +23,12 @@ function map:on_started(destination)
   spoils_plume:get_sprite():set_animation("plume")
   spoils_ore:get_sprite():set_animation("ore")
 
-    -- Activate any night-specific dynamic tiles.
-    if game:get_time_of_day() == "night" then
-      for entity in game:get_map():get_entities("night_") do
-        entity:set_enabled(true)
-      end
+  -- Activate any night-specific dynamic tiles.
+  if game:get_time_of_day() == "night" then
+    for entity in game:get_map():get_entities("night_") do
+      entity:set_enabled(true)
     end
+  end
 end
 
 function npc_isan:on_interaction()
@@ -72,18 +67,21 @@ end
 
 function npc_saria_witch:on_interaction()
   game:set_dialog_style("default")
-  if game:get_value("b2024") then
+  if game:get_value("i1840") >= 5 then
+    game:start_dialog("witch.1.house")
+  elseif game:get_value("b2024") then
     game:start_dialog("witch.0.trading", function(answer)
       if answer == 1 then
-        -- give her the tear, get the crystal ball
+        -- Give her the tear, get the crystal ball.
         game:start_dialog("witch.0.trading_yes", function()
           hero:start_treasure("trading", 5)
           game:set_value("b2025", true)
           game:set_value("b2024", false)
-	  table_witch:set_enabled(true)
+          table_witch:set_enabled(true)
+          quest_trading_ball:remove()
         end)
       else
-        -- don't give her the tear
+        -- Don't give her the tear.
         game:start_dialog("witch.0.trading_no")
       end
     end)

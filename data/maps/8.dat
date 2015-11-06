@@ -10,6 +10,15 @@ properties{
 
 tile{
   layer = 0,
+  x = 32,
+  y = 624,
+  width = 232,
+  height = 16,
+  pattern = "677",
+}
+
+tile{
+  layer = 0,
   x = 200,
   y = 448,
   width = 64,
@@ -78,15 +87,6 @@ tile{
   width = 160,
   height = 32,
   pattern = "151",
-}
-
-tile{
-  layer = 0,
-  x = 32,
-  y = 624,
-  width = 232,
-  height = 16,
-  pattern = "677",
 }
 
 tile{
@@ -3557,6 +3557,52 @@ tile{
   width = 32,
   height = 128,
   pattern = "166",
+}
+
+tile{
+  layer = 1,
+  x = 136,
+  y = 624,
+  width = 32,
+  height = 16,
+  pattern = "480",
+}
+
+tile{
+  layer = 1,
+  x = 488,
+  y = 624,
+  width = 32,
+  height = 16,
+  pattern = "480",
+}
+
+tile{
+  layer = 1,
+  x = 848,
+  y = 624,
+  width = 32,
+  height = 16,
+  pattern = "480",
+}
+
+tile{
+  layer = 1,
+  x = 1208,
+  y = 624,
+  width = 32,
+  height = 16,
+  pattern = "480",
+}
+
+npc{
+  name = "quest_trading_ball",
+  layer = 1,
+  x = 496,
+  y = 493,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/quest_bubble",
 }
 
 tile{

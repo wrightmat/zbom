@@ -11,6 +11,7 @@ if game:get_value("i1914") == nil then game:set_value("i1914", 0) end --Dargor r
 if game:get_value("i1916") == nil then game:set_value("i1916", 0) end --Galen rep
 
 function map:on_started(destination)
+  if not game:get_value("b2028") then quest_trading_vase:remove() end
   if game:get_time_of_day() == "night" then
     -- Activate any night-specific dynamic tiles
     for entity in map:get_entities("night_") do
@@ -171,6 +172,7 @@ function npc_goron_trading:on_interaction()
           hero:start_treasure("trading", 9)
           game:set_value("b2029", true)
           game:set_value("b2028", false)
+          quest_trading_vase:remove()
         end)
       else
         -- Don't give him the bananas.

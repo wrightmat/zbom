@@ -2461,13 +2461,12 @@ sensor{
 }
 
 npc{
-  name = "hint_stone",
+  name = "hint_stone.cave_ordeals",
   layer = 0,
   x = 928,
   y = 293,
   direction = 3,
   subtype = 0,
-  behavior = "dialog#hint_stone.cave_ordeals",
 }
 
 destructible{
@@ -2725,6 +2724,16 @@ destructible{
   destruction_sound = "stone",
   weight = 1,
   can_regenerate = true,
+}
+
+npc{
+  name = "quest_trading_food",
+  layer = 0,
+  x = 920,
+  y = 517,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/quest_bubble",
 }
 
 wall{

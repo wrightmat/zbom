@@ -19,6 +19,8 @@ if game:get_value("i2021")==nil then game:set_value("i2021", 0) end
 
 function map:on_started(destination)
   if game:get_item("trading"):get_variant() >= 6 then table_crystal_ball:set_enabled(true) end
+  if not game:get_value("b2020") then quest_trading_potion:remove() end
+  if not game:get_value("b2025") then quest_trading_meat:remove() end
   -- Increment potion counters.
   if game:get_value("i2014") >= 10 then
     local tx,ty,tl = shop_potion_1:get_position()
@@ -52,6 +54,7 @@ function map:on_started(destination)
       game:set_value("b2022", true)
       game:set_value("b2020", false) -- take Odd Mushroom...
       game:set_value("i2021", 0) -- and get rid of potion counter.
+      quest_trading_potion:remove()
     end)
   elseif destination == main_entrance_shop and game:get_value("i2015") >= 10 and game:get_value("i2015") <= 19 then
     game:start_dialog("shopkeep.potion", function()
@@ -119,12 +122,12 @@ function map:on_started(destination)
     })
   end
 
-    -- Activate any night-specific dynamic tiles.
-    if game:get_time_of_day() == "night" then
-      for entity in game:get_map():get_entities("night_") do
-        entity:set_enabled(true)
-      end
+  -- Activate any night-specific dynamic tiles.
+  if game:get_time_of_day() == "night" then
+    for entity in game:get_map():get_entities("night_") do
+      entity:set_enabled(true)
     end
+  end
 
   -- Apply to all potions, even dynamically created ones.
   for treasure in map:get_entities("shop_potion") do
@@ -213,6 +216,7 @@ function npc_impa:on_interaction()
           hero:start_treasure("trading", 6)
           game:set_value("b2026", true)
           game:set_value("b2025", false)
+          quest_trading_meat:remove()
         end)
       else
         -- Don't give her the crystal ball.

@@ -4417,6 +4417,16 @@ tile{
   pattern = "670",
 }
 
+npc{
+  name = "quest_trading_tear",
+  layer = 1,
+  x = 688,
+  y = 405,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/quest_bubble",
+}
+
 tile{
   layer = 2,
   x = 96,

@@ -6,6 +6,7 @@ local game = map:get_game()
 ----------------------------------------------------------------------
 
 function map:on_started(destination)
+  if not game:get_value("b2023") then quest_trading_tear:remove() end
   if destination == enter_astronomer then
     sol.audio.play_music("house_zuna")
   end
@@ -28,14 +29,15 @@ function npc_astronomer:on_interaction()
   if game:get_value("b2023") then
    game:start_dialog("astronomer.0.trading", function(answer)
     if answer == 1 then
-      -- give him the potion, get the deku mask
+      -- Give him the Deku Mask, get the Moon Tear.
       game:start_dialog("astronomer.0.trading_yes", function()
         hero:start_treasure("trading", 4)
         game:set_value("b2024", true)
         game:set_value("b2023", false)
+        quest_trading_tear:remove()
       end)
     else
-      -- don't give him the potion
+      -- Don't give him the Mask.
       game:start_dialog("astronomer.0.trading_no")
     end
    end)

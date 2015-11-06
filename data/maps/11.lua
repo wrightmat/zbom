@@ -94,6 +94,7 @@ function map:on_started(destination)
     torch_2:get_sprite():set_animation("lit")
     torch_3:get_sprite():set_animation("lit")
   end
+  if game:get_value("i1911") ~= 2 then quest_gaira:remove() end -- Poisoned trees Deacon side quest.
 end
 
 function map:on_update()
@@ -299,6 +300,7 @@ function npc_gaira:on_interaction()
     end)
   elseif game:get_value("i1911") == 2 then
     game:start_dialog("gaira.2.ordon", function()
+      game:set_value("i1911", game:get_value("i1911")+1)
       game:set_value("i1602", 1)
     end)
   else
