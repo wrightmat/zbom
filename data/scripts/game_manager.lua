@@ -3,6 +3,7 @@ local game = ...
 -- This script handles global properties of a particular savegame.
 
 -- Include the various game features.
+sol.main.load_file("scripts/menus/warp")(game)
 sol.main.load_file("scripts/menus/pause")(game)
 sol.main.load_file("scripts/menus/credits")(game)
 sol.main.load_file("scripts/menus/game_over")(game)
