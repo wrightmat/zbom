@@ -8,6 +8,7 @@ local game = map:get_game()
 if game:get_value("i1912")==nil then game:set_value("i1912", 0) end
 
 function map:on_started(destination)
+  if not game:get_value("b2031") then quest_trading_book:remove() end
   if destination == from_outside_door1 or destination == from_outside_door2 then sol.audio.play_music("mudora") end
   if not game:get_value("b2024") then quest_trading_ball:remove() end
   if game:get_value("i1032") >= 2 then door:set_enabled(false) end
@@ -41,6 +42,7 @@ function npc_isan:on_interaction()
             hero:start_treasure("trading", 12)
             game:set_value("b2032", true)
             game:set_value("b2031", false)
+            quest_trading_book:remove()
           end)
         else
           -- don't give him the fish

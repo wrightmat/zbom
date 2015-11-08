@@ -6,6 +6,7 @@ local game = map:get_game()
 --------------------------------------
 
 function map:on_started()
+  if not game:get_value("b2029") then quest_trading_scale:remove() end
   if not game:get_value("b1721") then chest_heart_piece_2:set_enabled(false) end
 end
 
@@ -55,6 +56,7 @@ function npc_zora_trading:on_interaction()
           hero:start_treasure("trading", 10)
           game:set_value("b2030", true)
           game:set_value("b2029", false)
+          quest_trading_scale:remove()
         end)
       else
         -- don't give him the vase

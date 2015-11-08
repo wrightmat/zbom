@@ -7327,3 +7327,13 @@ custom_entity{
   model = "ocarina_patch",
 }
 
+npc{
+  name = "quest_trading_scale",
+  layer = 0,
+  x = 280,
+  y = 613,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/quest_bubble",
+}
+

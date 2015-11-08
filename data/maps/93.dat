@@ -2243,6 +2243,16 @@ custom_entity{
   model = "ocarina_patch",
 }
 
+npc{
+  name = "quest_trading_fish",
+  layer = 0,
+  x = 368,
+  y = 485,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/quest_bubble",
+}
+
 tile{
   layer = 1,
   x = 192,

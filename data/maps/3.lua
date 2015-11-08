@@ -13,6 +13,7 @@ local function random_walk(npc)
 end
 
 function map:on_started()
+  if not game:get_value("b2032") then quest_trading_feather:remove() end
   random_walk(npc_rito_4)
   shop_world_map_2:get_sprite():set_animation("world_map")
   shop_world_map_2:get_sprite():set_direction(1)
@@ -75,6 +76,7 @@ function npc_rito_trading:on_interaction()
 	game:get_item("trading"):set_variant(13)
           game:set_value("b2033", true)
           game:set_value("b2032", false)
+          quest_trading_feather:remove()
         end)
       else
         -- don't give him the cookbook
