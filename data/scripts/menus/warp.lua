@@ -2,6 +2,7 @@ local game = ...
 local warp_menu = {}  -- The warp menu.
 local initial_point
 local initial_y = 10
+local initial_volume 
 local index
 
 -- Warp point name, Companion point, Warp to map, Coordinate x on minimap, Coordinate y on minimap, Name of warp.
@@ -26,11 +27,10 @@ warp_points = {         -- Intentionally Global!
 
 function game:on_warp_started(point)
   initial_point = point
-  if not sol.menu.is_started(warp_menu) then sol.menu.start(game:get_map(), warp_menu) end
+  if not sol.menu.is_started(warp_menu) then sol.menu.start(game, warp_menu) end
 end
 
 function warp_menu:on_started()
-  game:get_map():get_hero():freeze()
   self.hero_head_sprite = sol.sprite.create("menus/hero_head")
   self.hero_head_sprite:set_animation("tunic" .. game:get_item("tunic"):get_variant())
   self.background_surfaces = sol.surface.create("pause_submenus.png", true)
@@ -66,6 +66,18 @@ function warp_menu:on_started()
       self.world_minimap_visible_xy = {x = 0, y = initial_y }
     end
   end
+
+  -- Update HUD icons (not working).
+  game:set_custom_command_effect("action", nil)
+  game:set_custom_command_effect("attack", "validate")
+  game:set_custom_command_effect("pause", "return")
+
+  -- Ensure the hero can't move.
+  game:get_map():get_hero():freeze()
+
+  -- Lower to volume (so ocarina sound can be heard when point selected.
+  initial_volume = sol.audio.get_music_volume()
+  sol.audio.set_music_volume(initial_volume/3)
 end
 
 function warp_menu:on_command_pressed(command)
@@ -169,6 +181,11 @@ function warp_menu:on_draw(dst_surface)
   local width, height = dst_surface:get_size()
   self.background_surfaces:draw_region(320, 0, 320, 240, dst_surface, (width - 320) / 2, (height - 240) / 2)
 
+  -- Draw caption (Not working currently for some reason).
+  local width, height = dst_surface:get_size()
+  self.caption_text_1:draw(dst_surface, width / 2, height / 2 + 83)
+  self.caption_text_2:draw(dst_surface, width / 2, height / 2 + 95)
+
   -- Draw the minimap.
   self.world_minimap_img:draw_region(self.world_minimap_visible_xy.x, self.world_minimap_visible_xy.y, 255, 133, dst_surface, 48, 59)
 
@@ -184,13 +201,9 @@ function warp_menu:on_draw(dst_surface)
   if self.cursor_y >= (10 + self.world_minimap_visible_xy.y) and self.cursor_y <= (133 + self.world_minimap_visible_xy.y) then
     self.cursor_sprite:draw(dst_surface, self.cursor_x + 48, self.cursor_y + 55 - self.world_minimap_visible_xy.y)
   end
-
-  -- Draw caption (Not working currently for some reason).
-  local width, height = dst_surface:get_size()
-  self.caption_text_1:draw(dst_surface, width / 2, 200)
-  self.caption_text_2:draw(dst_surface, width / 2, 213)
 end
 
 function warp_menu:on_finished()
+  sol.audio.set_music_volume(initial_volume)
   game:get_map():get_hero():unfreeze()
 end

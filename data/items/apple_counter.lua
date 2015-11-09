@@ -23,7 +23,3 @@ function item:on_using()
   end
   self:set_finished()
 end
-
-function item:on_pickable_created(pickable)
-  if game:get_value("item_apple_obtained") then self:set_brandish_when_picked(false) end
-end

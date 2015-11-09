@@ -110,12 +110,9 @@ function game:on_dialog_finished(dialog)
     if k ~= "default" then dialog_box.line_surfaces[k] = nil end
   end
   dialog_box.current_line_surface = dialog_box.line_surfaces.default
-  -- Call a custom function (it can be created on the game manager).
-  -- if game.on_custom_dialog_finished then game:on_custom_dialog_finished() end 
 end
 
--- Sets the style of the dialog box for subsequent dialogs.
--- style must be one of:
+-- Sets the style of the dialog box for subsequent dialogs. Style must be one of:
 -- - "default" (default): Usual dialog box.
 -- - "wood": Wooden design (for example, signs).
 -- - "stone": Stone design (for example, hint stones).
@@ -209,10 +206,12 @@ end
 
 -- The dialog box is being closed.
 function dialog_box:on_finished()
-
   -- Remove overriden command effects.
   game:set_custom_command_effect("action", nil)
   game:set_custom_command_effect("attack", nil)
+
+  -- Restore default style.
+  game:set_dialog_style("default")
 end
 
 -- A dialog starts (not necessarily the first one of its sequence).
@@ -319,7 +318,6 @@ end
 -- Starts showing a new group of 3 lines in the dialog.
 -- Shows the next dialog (if any) if there are no remaining lines.
 function dialog_box:show_more_lines()
-
   self.gradual = true
     
   if not self:has_more_lines() then
@@ -358,7 +356,6 @@ end
 -- If this is a special character (like $0, $v, etc.),
 -- the corresponding action is performed.
 function dialog_box:add_character()
-
   local line = self.lines[self.line_index]
   local current_char = line:sub(self.char_index, self.char_index)
   if current_char == "" then
@@ -510,7 +507,6 @@ function dialog_box:show_all_now()
 end
 
 function dialog_box:on_command_pressed(command)
-
   if command == "action" then
 
     -- Display more lines.
@@ -549,7 +545,6 @@ function dialog_box:on_command_pressed(command)
 end
 
 function dialog_box:on_draw(dst_surface)
-
   local x, y = self.box_dst_position.x, self.box_dst_position.y
 
   self.dialog_surface:clear()

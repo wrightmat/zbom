@@ -35,7 +35,7 @@ local function end_race_won()
   game:start_dialog("tristan.0.festival_won", game:get_player_name(), function()
     if game:get_value("i1027") < 4 then
       sol.timer.start(1000, function()
-        banner_4:set_enabled(false) --make it easier to exit the map
+        banner_4:set_enabled(false) -- Make it easier to exit the map.
         banner_5:set_enabled(false)
         hero:freeze()
         map:move_camera(824, 517, 250, function()
@@ -49,12 +49,12 @@ local function end_race_won()
             game:set_value("i1910", game:get_value("i1910")+1)
             sol.timer.start(2000, function() torch_5:get_sprite():set_animation("unlit") end)
           end)
-        end, 500, 30000) --move_camera
-      end) --timer
+        end, 500, 30000)
+      end)
     end
   end)
-  game:quit_hud()
-  game:initialize_hud() -- reset the hud or it freezes for some reason
+  game:hud.quit()
+  game:initialize_hud() -- Reset the hud or it freezes for some reason.
 end
 
 function map:on_started(destination)

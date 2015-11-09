@@ -1,4 +1,5 @@
 local item = ...
+local game = item:get_game()
 
 function item:on_created()
   self:set_savegame_variable("i1846")
@@ -9,8 +10,6 @@ end
 function item:on_using()
   if self:get_amount() == 0 then
     sol.audio.play_sound("wrong")
-  else
-
   end
   self:set_finished()
 end

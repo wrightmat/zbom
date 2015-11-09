@@ -1510,6 +1510,56 @@ custom_entity{
   model = "ocarina_patch",
 }
 
+enemy{
+  name = "pengator_1",
+  layer = 0,
+  x = 256,
+  y = 541,
+  direction = 3,
+  breed = "pengator",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "pengator_2",
+  layer = 0,
+  x = 448,
+  y = 349,
+  direction = 3,
+  breed = "pengator",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "pengator_3",
+  layer = 0,
+  x = 400,
+  y = 109,
+  direction = 3,
+  breed = "pengator",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "pengator_4",
+  layer = 0,
+  x = 512,
+  y = 637,
+  direction = 3,
+  breed = "pengator",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "pengator_5",
+  layer = 0,
+  x = 392,
+  y = 941,
+  direction = 3,
+  breed = "pengator",
+  treasure_name = "random_north",
+}
+
 tile{
   layer = 2,
   x = 656,

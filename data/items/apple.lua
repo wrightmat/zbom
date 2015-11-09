@@ -1,4 +1,10 @@
 local item = ...
+local game = item:get_game()
+
+function item:on_created()
+  self:set_shadow("small")
+  self:set_can_disappear(false)
+end
 
 -- Obtaining an apple
 function item:on_obtaining(variant, savegame_variable)
@@ -8,4 +14,8 @@ function item:on_obtaining(variant, savegame_variable)
   end
   apple_counter:add_amount(1)
   self:get_game():set_value("item_apple_obtained", true)
+end
+
+function item:on_pickable_created(pickable)
+  if game:get_value("item_apple_obtained") then self:set_brandish_when_picked(false) end
 end

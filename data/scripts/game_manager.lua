@@ -18,7 +18,6 @@ local camera_manager = require("scripts/camera_manager")
 local condition_manager = require("scripts/hero_condition")
 game.save_between_maps = require("scripts/save_between_maps")
 game.independent_entities = {}
-local custom_command_effects = {}
 
 function game:on_started()
   -- Set up the dialog box, HUD, hero conditions and effects.
@@ -97,17 +96,6 @@ function game:switch_time_of_day()
     game:set_value("time_of_day", "day")
   end
   return true
-end
-
--- Returns the current customized effect of the action or attack command.
--- nil means the built-in effect.
-function game:get_custom_command_effect(command)
-  return custom_command_effects[command]
-end
--- Overrides the effect of the action or attack command.
--- Set the effect to nil to restore the built-in effect.
-function game:set_custom_command_effect(command, effect)
-  custom_command_effects[command] = effect
 end
 
 -- Run the game.

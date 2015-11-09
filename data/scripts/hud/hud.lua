@@ -11,7 +11,19 @@ function hud_manager:create(game)
     showing_dialog = false,
     top_left_opacity = 255,
     elements = {},
+    custom_command_effects = {},
   }
+
+  -- Returns the current customized effect of the action or attack command.
+  -- nil means the built-in effect.
+  function game:get_custom_command_effect(command)
+    return hud.custom_command_effects[command]
+  end
+  -- Overrides the effect of the action or attack command.
+  -- Set the effect to nil to restore the built-in effect.
+  function game:set_custom_command_effect(command, effect)
+    hud.custom_command_effects[command] = effect
+  end 
 
   -- Create each element of the HUD.
   local floor_builder = require("scripts/hud/floor")
