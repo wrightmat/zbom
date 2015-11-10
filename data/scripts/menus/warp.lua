@@ -171,7 +171,7 @@ function warp_menu:set_cursor_position(x, y)
 
   -- Update the caption text.
   for k, v in pairs(warp_points) do
-    if v[3] == self.cursor_x then
+    if v[3] == self.cursor_x and v[4] == self.cursor_y then
       self.caption_text_2:set_text(v[5])
     end
   end
@@ -205,6 +205,6 @@ function warp_menu:on_draw(dst_surface)
 end
 
 function warp_menu:on_finished()
-  sol.audio.set_music_volume(initial_volume)
+  sol.timer.start(game, 2000, function() sol.audio.set_music_volume(initial_volume) end)
   game:get_map():get_hero():unfreeze()
 end
