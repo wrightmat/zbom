@@ -1268,6 +1268,24 @@ tile{
   pattern = "63",
 }
 
+tile{
+  layer = 0,
+  x = 136,
+  y = 72,
+  width = 16,
+  height = 8,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 48,
+  width = 8,
+  height = 8,
+  pattern = "12",
+}
+
 teletransporter{
   name = "to_L1",
   layer = 0,

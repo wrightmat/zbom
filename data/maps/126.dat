@@ -2773,8 +2773,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 264,
-  y = 88,
+  x = 240,
+  y = 200,
   width = 8,
   height = 8,
   pattern = "63",
@@ -2879,6 +2879,33 @@ tile{
   pattern = "100",
 }
 
+tile{
+  layer = 0,
+  x = 56,
+  y = 304,
+  width = 16,
+  height = 8,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "100",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "100",
+}
+
 wall{
   layer = 0,
   x = 608,
@@ -2970,6 +2997,66 @@ jumper{
   height = 8,
   direction = 6,
   jump_length = 72,
+}
+
+enemy{
+  name = "chuchu_red",
+  layer = 0,
+  x = 568,
+  y = 893,
+  direction = 0,
+  breed = "chuchu_red",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "chuchu_red_2",
+  layer = 0,
+  x = 952,
+  y = 869,
+  direction = 0,
+  breed = "chuchu_red",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "chuchu_red_3",
+  layer = 0,
+  x = 256,
+  y = 1029,
+  direction = 0,
+  breed = "chuchu_red",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "chuchu_red_4",
+  layer = 0,
+  x = 256,
+  y = 733,
+  direction = 0,
+  breed = "chuchu_red",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "chuchu_red_5",
+  layer = 0,
+  x = 448,
+  y = 125,
+  direction = 0,
+  breed = "chuchu_red",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "chuchu_red_6",
+  layer = 0,
+  x = 904,
+  y = 101,
+  direction = 0,
+  breed = "chuchu_red",
+  treasure_name = "random_north",
 }
 
 tile{

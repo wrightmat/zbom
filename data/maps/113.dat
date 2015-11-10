@@ -6920,6 +6920,33 @@ tile{
   pattern = "2200",
 }
 
+tile{
+  layer = 0,
+  x = 112,
+  y = 560,
+  width = 8,
+  height = 8,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 608,
+  width = 8,
+  height = 8,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 904,
+  width = 8,
+  height = 8,
+  pattern = "63",
+}
+
 teletransporter{
   name = "to_H3",
   layer = 0,

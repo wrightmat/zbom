@@ -1538,6 +1538,51 @@ tile{
   pattern = "62",
 }
 
+tile{
+  layer = 0,
+  x = 880,
+  y = 680,
+  width = 48,
+  height = 40,
+  pattern = "522",
+}
+
+tile{
+  layer = 0,
+  x = 880,
+  y = 720,
+  width = 48,
+  height = 16,
+  pattern = "628",
+}
+
+tile{
+  layer = 0,
+  x = 888,
+  y = 736,
+  width = 32,
+  height = 8,
+  pattern = "629",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 712,
+  width = 8,
+  height = 16,
+  pattern = "627",
+}
+
+tile{
+  layer = 0,
+  x = 872,
+  y = 712,
+  width = 8,
+  height = 16,
+  pattern = "626",
+}
+
 teletransporter{
   name = "to_N3",
   layer = 0,
@@ -2056,6 +2101,33 @@ tile{
   layer = 2,
   x = 1072,
   y = 896,
+  width = 8,
+  height = 40,
+  pattern = "519",
+}
+
+tile{
+  layer = 2,
+  x = 880,
+  y = 664,
+  width = 48,
+  height = 16,
+  pattern = "521",
+}
+
+tile{
+  layer = 2,
+  x = 928,
+  y = 672,
+  width = 8,
+  height = 40,
+  pattern = "520",
+}
+
+tile{
+  layer = 2,
+  x = 872,
+  y = 672,
   width = 8,
   height = 40,
   pattern = "519",

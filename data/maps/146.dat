@@ -3221,6 +3221,51 @@ tile{
   pattern = "1626",
 }
 
+tile{
+  layer = 0,
+  x = 736,
+  y = 88,
+  width = 16,
+  height = 8,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 232,
+  width = 8,
+  height = 8,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 792,
+  y = 488,
+  width = 16,
+  height = 8,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1016,
+  y = 680,
+  width = 8,
+  height = 8,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 1000,
+  width = 16,
+  height = 8,
+  pattern = "11",
+}
+
 teletransporter{
   name = "to_O2",
   layer = 0,

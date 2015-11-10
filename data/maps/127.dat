@@ -4121,6 +4121,123 @@ tile{
   pattern = "1793",
 }
 
+tile{
+  layer = 0,
+  x = 464,
+  y = 440,
+  width = 16,
+  height = 8,
+  pattern = "1693",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 216,
+  width = 8,
+  height = 8,
+  pattern = "39",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 456,
+  width = 8,
+  height = 8,
+  pattern = "38",
+}
+
+tile{
+  layer = 0,
+  x = 848,
+  y = 664,
+  width = 8,
+  height = 8,
+  pattern = "40",
+}
+
+tile{
+  layer = 0,
+  x = 992,
+  y = 912,
+  width = 8,
+  height = 8,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 744,
+  y = 888,
+  width = 8,
+  height = 8,
+  pattern = "40",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 840,
+  width = 8,
+  height = 8,
+  pattern = "39",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 968,
+  width = 8,
+  height = 8,
+  pattern = "38",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 864,
+  width = 16,
+  height = 8,
+  pattern = "1693",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 712,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 520,
+  width = 8,
+  height = 8,
+  pattern = "38",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 608,
+  width = 16,
+  height = 16,
+  pattern = "43",
+}
+
+tile{
+  layer = 0,
+  x = 1048,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
 teletransporter{
   name = "to_L4",
   layer = 0,
@@ -5110,7 +5227,7 @@ enemy{
   y = 677,
   direction = 0,
   breed = "chuchu_yellow",
-  treasure_name = "random",
+  treasure_name = "random_north",
 }
 
 enemy{
@@ -5120,7 +5237,7 @@ enemy{
   y = 245,
   direction = 0,
   breed = "chuchu_yellow",
-  treasure_name = "random",
+  treasure_name = "random_north",
 }
 
 enemy{
@@ -5130,7 +5247,7 @@ enemy{
   y = 949,
   direction = 0,
   breed = "chuchu_yellow",
-  treasure_name = "random",
+  treasure_name = "random_north",
 }
 
 enemy{
@@ -5140,7 +5257,7 @@ enemy{
   y = 1077,
   direction = 0,
   breed = "chuchu_yellow",
-  treasure_name = "random",
+  treasure_name = "random_north",
 }
 
 enemy{
@@ -5150,7 +5267,7 @@ enemy{
   y = 645,
   direction = 0,
   breed = "peahat",
-  treasure_name = "random",
+  treasure_name = "random_north",
 }
 
 enemy{
@@ -5160,7 +5277,7 @@ enemy{
   y = 669,
   direction = 0,
   breed = "peahat",
-  treasure_name = "random",
+  treasure_name = "random_north",
 }
 
 enemy{
@@ -5170,7 +5287,7 @@ enemy{
   y = 101,
   direction = 0,
   breed = "chuchu_red",
-  treasure_name = "random",
+  treasure_name = "random_north",
 }
 
 enemy{
@@ -5180,7 +5297,7 @@ enemy{
   y = 213,
   direction = 0,
   breed = "chuchu_red",
-  treasure_name = "random",
+  treasure_name = "random_north",
 }
 
 tile{

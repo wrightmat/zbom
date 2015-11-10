@@ -2294,6 +2294,51 @@ tile{
   pattern = "1123",
 }
 
+tile{
+  layer = 0,
+  x = 928,
+  y = 568,
+  width = 16,
+  height = 16,
+  pattern = "524",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 408,
+  width = 16,
+  height = 32,
+  pattern = "524",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 120,
+  width = 32,
+  height = 32,
+  pattern = "524",
+}
+
+tile{
+  layer = 0,
+  x = 1032,
+  y = 904,
+  width = 32,
+  height = 32,
+  pattern = "524",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 1072,
+  width = 32,
+  height = 16,
+  pattern = "524",
+}
+
 teletransporter{
   name = "to_E3",
   layer = 0,
@@ -2379,6 +2424,165 @@ enemy{
   y = 989,
   direction = 0,
   breed = "swamp_flower_big",
+  treasure_name = "random_north",
+}
+
+destructible{
+  layer = 0,
+  x = 1064,
+  y = 1085,
+  treasure_name = "random_north",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1080,
+  y = 1085,
+  treasure_name = "random_north",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1040,
+  y = 917,
+  treasure_name = "random_north",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1040,
+  y = 933,
+  treasure_name = "random_north",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1056,
+  y = 933,
+  treasure_name = "random_north",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1056,
+  y = 917,
+  treasure_name = "random_north",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1064,
+  y = 437,
+  treasure_name = "random_north",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 984,
+  y = 133,
+  treasure_name = "random_north",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1000,
+  y = 149,
+  treasure_name = "random_north",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+enemy{
+  name = "flower_small_9",
+  layer = 0,
+  x = 936,
+  y = 581,
+  direction = 0,
+  breed = "swamp_flower_small",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "flower_small_10",
+  layer = 0,
+  x = 984,
+  y = 149,
+  direction = 0,
+  breed = "swamp_flower_small",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "flower_small_11",
+  layer = 0,
+  x = 184,
+  y = 333,
+  direction = 0,
+  breed = "swamp_flower_small",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "flower_small_12",
+  layer = 0,
+  x = 200,
+  y = 333,
+  direction = 0,
+  breed = "swamp_flower_small",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "flower_small_13",
+  layer = 0,
+  x = 216,
+  y = 333,
+  direction = 0,
+  breed = "swamp_flower_small",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "flower_small_14",
+  layer = 0,
+  x = 504,
+  y = 677,
+  direction = 0,
+  breed = "swamp_flower_small",
   treasure_name = "random_north",
 }
 

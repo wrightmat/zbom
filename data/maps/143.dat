@@ -5124,7 +5124,7 @@ destructible{
   layer = 0,
   x = 496,
   y = 469,
-  treasure_name = "random",
+  treasure_name = "random_north",
   sprite = "entities/bush",
   destruction_sound = "bush",
   weight = 1,
@@ -5135,7 +5135,7 @@ destructible{
   layer = 0,
   x = 480,
   y = 469,
-  treasure_name = "random",
+  treasure_name = "random_north",
   sprite = "entities/bush",
   destruction_sound = "bush",
   weight = 1,
@@ -5146,7 +5146,7 @@ destructible{
   layer = 0,
   x = 464,
   y = 469,
-  treasure_name = "random",
+  treasure_name = "random_north",
   sprite = "entities/bush",
   destruction_sound = "bush",
   weight = 1,
@@ -5157,7 +5157,7 @@ destructible{
   layer = 0,
   x = 464,
   y = 485,
-  treasure_name = "random",
+  treasure_name = "random_north",
   sprite = "entities/bush",
   destruction_sound = "bush",
   weight = 1,
@@ -5168,7 +5168,7 @@ destructible{
   layer = 0,
   x = 480,
   y = 485,
-  treasure_name = "random",
+  treasure_name = "random_north",
   sprite = "entities/bush",
   destruction_sound = "bush",
   weight = 1,
@@ -5179,7 +5179,7 @@ destructible{
   layer = 0,
   x = 496,
   y = 485,
-  treasure_name = "random",
+  treasure_name = "random_north",
   sprite = "entities/bush",
   destruction_sound = "bush",
   weight = 1,
@@ -5190,7 +5190,7 @@ destructible{
   layer = 0,
   x = 496,
   y = 501,
-  treasure_name = "random",
+  treasure_name = "random_north",
   sprite = "entities/bush",
   destruction_sound = "bush",
   weight = 1,
@@ -5200,17 +5200,6 @@ destructible{
 destructible{
   layer = 0,
   x = 480,
-  y = 501,
-  treasure_name = "random",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = 1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 464,
   y = 501,
   treasure_name = "random",
   sprite = "entities/bush",
@@ -5222,8 +5211,19 @@ destructible{
 destructible{
   layer = 0,
   x = 464,
+  y = 501,
+  treasure_name = "random_north",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = 1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 464,
   y = 517,
-  treasure_name = "random",
+  treasure_name = "random_north",
   sprite = "entities/bush",
   destruction_sound = "bush",
   weight = 1,
@@ -5234,7 +5234,7 @@ destructible{
   layer = 0,
   x = 480,
   y = 517,
-  treasure_name = "random",
+  treasure_name = "random_north",
   sprite = "entities/bush",
   destruction_sound = "bush",
   weight = 1,
@@ -5245,7 +5245,7 @@ destructible{
   layer = 0,
   x = 496,
   y = 517,
-  treasure_name = "random",
+  treasure_name = "random_north",
   sprite = "entities/bush",
   destruction_sound = "bush",
   weight = 1,
@@ -5535,7 +5535,7 @@ enemy{
   y = 893,
   direction = 0,
   breed = "chuchu_yellow",
-  treasure_name = "random",
+  treasure_name = "random_north",
 }
 
 enemy{
@@ -5545,7 +5545,7 @@ enemy{
   y = 637,
   direction = 0,
   breed = "chuchu_yellow",
-  treasure_name = "random",
+  treasure_name = "random_north",
 }
 
 enemy{
@@ -5555,7 +5555,7 @@ enemy{
   y = 333,
   direction = 0,
   breed = "chuchu_yellow",
-  treasure_name = "random",
+  treasure_name = "random_north",
 }
 
 enemy{
@@ -5565,7 +5565,7 @@ enemy{
   y = 45,
   direction = 0,
   breed = "chuchu_yellow",
-  treasure_name = "random",
+  treasure_name = "random_north",
 }
 
 enemy{
@@ -5575,7 +5575,7 @@ enemy{
   y = 301,
   direction = 0,
   breed = "chuchu_yellow",
-  treasure_name = "random",
+  treasure_name = "random_north",
 }
 
 enemy{
@@ -5585,7 +5585,7 @@ enemy{
   y = 869,
   direction = 0,
   breed = "chuchu_yellow",
-  treasure_name = "random",
+  treasure_name = "random_north",
 }
 
 enemy{
@@ -5595,7 +5595,7 @@ enemy{
   y = 1101,
   direction = 0,
   breed = "chuchu_yellow",
-  treasure_name = "random",
+  treasure_name = "random_north",
 }
 
 npc{

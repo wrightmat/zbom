@@ -4,6 +4,7 @@ local initial_point
 local initial_y = 10
 local initial_volume 
 local index
+local hero_x, hero_y
 
 -- Warp point name, Companion point, Warp to map, Coordinate x on minimap, Coordinate y on minimap, Name of warp.
 warp_points = {         -- Intentionally Global!
@@ -27,7 +28,7 @@ warp_points = {         -- Intentionally Global!
 
 function game:on_warp_started(point)
   initial_point = point
-  if not sol.menu.is_started(warp_menu) then sol.menu.start(game, warp_menu) end
+  if not sol.menu.is_started(warp_menu) then sol.menu.start(game:get_map(), warp_menu) end
 end
 
 function warp_menu:on_started()
@@ -72,7 +73,9 @@ function warp_menu:on_started()
   game:set_custom_command_effect("pause", "return")
 
   -- Ensure the hero can't move.
-  game:get_map():get_hero():freeze()
+  hero_x, hero_y = game:get_map():get_hero():get_position()
+  game:get_map():get_hero():set_position(-100, -100)
+  --game:get_map():get_hero():freeze()
 
   -- Lower the volume (so ocarina sound can be heard when point selected).
   initial_volume = sol.audio.get_music_volume()
@@ -92,6 +95,7 @@ function warp_menu:on_command_pressed(command)
         game:start_dialog("warp.to_"..v[2], function(answer)
           if answer == 1 then
             sol.menu.stop(warp_menu)
+            game:get_map():get_hero():set_position(hero_x, hero_y)
             game:get_map():get_hero():set_animation("ocarina")
             sol.audio.play_sound("ocarina_wind")
             game:get_map():get_entity("hero"):teleport(v[2], "ocarina_warp", "fade")
@@ -101,6 +105,7 @@ function warp_menu:on_command_pressed(command)
     end
   elseif command == "pause" then
     sol.menu.stop(warp_menu)
+    game:get_map():get_hero():set_position(hero_x, hero_y)
   end
 
   return true
@@ -205,6 +210,6 @@ function warp_menu:on_draw(dst_surface)
 end
 
 function warp_menu:on_finished()
-  sol.timer.start(game, 2000, function() sol.audio.set_music_volume(initial_volume) end)
+  sol.timer.start(game, 1500, function() sol.audio.set_music_volume(initial_volume) end)
   game:get_map():get_hero():unfreeze()
 end

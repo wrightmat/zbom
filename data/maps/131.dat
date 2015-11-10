@@ -1367,6 +1367,105 @@ tile{
   pattern = "296",
 }
 
+tile{
+  layer = 0,
+  x = 272,
+  y = 1032,
+  width = 16,
+  height = 16,
+  pattern = "1626",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 968,
+  width = 16,
+  height = 16,
+  pattern = "1626",
+}
+
+tile{
+  layer = 0,
+  x = 864,
+  y = 872,
+  width = 16,
+  height = 16,
+  pattern = "1626",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 840,
+  width = 16,
+  height = 16,
+  pattern = "1626",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 240,
+  width = 32,
+  height = 24,
+  pattern = "1719",
+}
+
+tile{
+  layer = 0,
+  x = 832,
+  y = 176,
+  width = 32,
+  height = 24,
+  pattern = "1719",
+}
+
+tile{
+  layer = 0,
+  x = 776,
+  y = 608,
+  width = 32,
+  height = 24,
+  pattern = "1719",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 544,
+  width = 32,
+  height = 24,
+  pattern = "1719",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 776,
+  width = 32,
+  height = 24,
+  pattern = "1719",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 1000,
+  width = 16,
+  height = 16,
+  pattern = "1721",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 920,
+  width = 16,
+  height = 16,
+  pattern = "1721",
+}
+
 teletransporter{
   name = "to_L4",
   layer = 0,
@@ -1529,5 +1628,68 @@ tile{
   width = 8,
   height = 40,
   pattern = "520",
+}
+
+tile{
+  layer = 2,
+  x = 352,
+  y = 232,
+  width = 32,
+  height = 8,
+  pattern = "1720",
+}
+
+tile{
+  layer = 2,
+  x = 832,
+  y = 168,
+  width = 32,
+  height = 8,
+  pattern = "1720",
+}
+
+tile{
+  layer = 2,
+  x = 776,
+  y = 600,
+  width = 32,
+  height = 8,
+  pattern = "1720",
+}
+
+tile{
+  layer = 2,
+  x = 288,
+  y = 536,
+  width = 32,
+  height = 8,
+  pattern = "1720",
+}
+
+tile{
+  layer = 2,
+  x = 72,
+  y = 768,
+  width = 32,
+  height = 8,
+  pattern = "1720",
+}
+
+tile{
+  layer = 2,
+  x = 416,
+  y = 992,
+  width = 16,
+  height = 8,
+  pattern = "1722",
+}
+
+tile{
+  layer = 2,
+  x = 656,
+  y = 912,
+  width = 16,
+  height = 8,
+  pattern = "1722",
 }
 

@@ -14,7 +14,7 @@ if game:get_item("bottle_1"):get_variant() == 8 or -- If hero has a Poe Soul,
   fog_overlay:set_opacity(192)
 else
   fog_overlay = sol.surface.create("effects/fog.png")
-  fog_overlay:set_opacity(255)
+  fog_overlay:set_opacity(225)
 end
 
 function map:on_started(destination)
