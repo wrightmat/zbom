@@ -47,9 +47,9 @@ function entity:on_interaction()
   game:set_dialog_style("default")
   if game:get_map():get_id() == "10" then
     if game:get_value("i1027") >= 4 then
-      if quest_julita ~= nil then quest_julita:remove() end
       game:start_dialog("julita.1", game:get_player_name(), function()
         game:set_value("i1903", 2)
+        game:get_map():get_entity("quest_julita"):remove()
         if not game:has_item("shield") then game:start_dialog("julita.1.shield") end
       end)
     elseif game:get_value("i1027") < 5 then

@@ -36,17 +36,16 @@ function warp_menu:on_started()
   self.background_surfaces = sol.surface.create("pause_submenus.png", true)
   self.background_surfaces:set_opacity(192)
   self.cursor_sprite = sol.sprite.create("menus/pause_cursor")
+  local menu_font, menu_font_size = sol.language.get_menu_font()
   self.caption_text_1 = sol.text_surface.create{
     horizontal_alignment = "center",
     vertical_alignment = "middle",
-    font = "fixed",
     font = menu_font,
     font_size = menu_font_size,
   }
   self.caption_text_2 = sol.text_surface.create{
     horizontal_alignment = "center",
     vertical_alignment = "middle",
-    font = "fixed",
     font = menu_font,
     font_size = menu_font_size,
   }
@@ -75,7 +74,7 @@ function warp_menu:on_started()
   -- Ensure the hero can't move.
   game:get_map():get_hero():freeze()
 
-  -- Lower to volume (so ocarina sound can be heard when point selected.
+  -- Lower the volume (so ocarina sound can be heard when point selected).
   initial_volume = sol.audio.get_music_volume()
   sol.audio.set_music_volume(initial_volume/3)
 end
@@ -167,12 +166,14 @@ function warp_menu:set_cursor_position(x, y)
   self.cursor_x = x
   self.cursor_y = y
   if y > 133 then
-    if y <399 then self.world_minimap_visible_xy.y = y - 51 else self.world_minimap_visible_xy.y = 399 end
+    if y < 399 then self.world_minimap_visible_xy.y = y - 51 else self.world_minimap_visible_xy.y = 399 end
   end
 
   -- Update the caption text.
   for k, v in pairs(warp_points) do
-    if k == initial_point then self.caption_text_2:set_text(sol.language.get_string(v[5])) end
+    if v[3] == self.cursor_x then
+      self.caption_text_2:set_text(v[5])
+    end
   end
 end
 
@@ -181,7 +182,7 @@ function warp_menu:on_draw(dst_surface)
   local width, height = dst_surface:get_size()
   self.background_surfaces:draw_region(320, 0, 320, 240, dst_surface, (width - 320) / 2, (height - 240) / 2)
 
-  -- Draw caption (Not working currently for some reason).
+  -- Draw caption.
   local width, height = dst_surface:get_size()
   self.caption_text_1:draw(dst_surface, width / 2, height / 2 + 83)
   self.caption_text_2:draw(dst_surface, width / 2, height / 2 + 95)

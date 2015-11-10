@@ -35,26 +35,26 @@ local function end_race_won()
   game:start_dialog("tristan.0.festival_won", game:get_player_name(), function()
     if game:get_value("i1027") < 4 then
       sol.timer.start(1000, function()
-        banner_4:set_enabled(false) -- Make it easier to exit the map.
-        banner_5:set_enabled(false)
-        hero:freeze()
         map:move_camera(824, 517, 250, function()
           torch_overlay = sol.surface.create("entities/dark.png")
           torch_overlay:fade_in(50)
+          hero:set_direction(0)
           game:start_dialog("ordona.0.festival", game:get_player_name(), function()
             torch_overlay:fade_out(50)
-            sol.timer.start(2000, function() torch_overlay = nil end)
-            hero:unfreeze()
+            sol.timer.start(2000, function()
+              torch_overlay = nil
+              torch_5:get_sprite():set_animation("unlit")
+            end)
             game:set_value("i1027", 4)
             game:set_value("i1910", game:get_value("i1910")+1)
-            sol.timer.start(2000, function() torch_5:get_sprite():set_animation("unlit") end)
+            banner_4:set_enabled(false) -- Make it easier to exit the map.
+            banner_5:set_enabled(false)
           end)
         end, 500, 30000)
       end)
     end
   end)
-  game:hud.quit()
-  game:initialize_hud() -- Reset the hud or it freezes for some reason.
+  -- TODO: Figure out why HUD freezes at this point, and find a way to reset it.
 end
 
 function map:on_started(destination)
@@ -130,9 +130,7 @@ function npc_tristan:on_interaction()
 end
 
 function map:on_update()
-  if are_all_torches_on() then
-    end_race_won()
-  end
+  if are_all_torches_on() then end_race_won() end
 end
 
 function torch_1:on_interaction_item(lamp)

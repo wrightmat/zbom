@@ -193,7 +193,7 @@ end
 
 function sensor_start_race:on_activated()
   if hero:get_direction() == 1 and game:has_item("lamp") and not game.race_timer then
-    if (game:get_value("i1028") >= 1 and game:get_value("i1028") <= 3) or game:get_value("i1029") == 4 then
+    if (game:get_value("i1028") >= 1 and game:get_value("i1028") <= 3) or game:get_value("i1028") == 4 then
       game:set_value("i1028", 2)
       game.race_timer = sol.timer.start(game, 120000, function()
 	sol.audio.play_sound("wrong")
@@ -221,7 +221,7 @@ function sensor_race:on_activated()
 end
 
 function sensor_ordona_speak:on_activated()
-  -- you've finished everything in Ordon - Ordona directs you to Faron
+  -- You've finished everything in Ordon - Ordona directs you to Faron.
   if game:has_item("sword") and game:get_value("i1027") < 6 then
     sol.timer.start(1000, function() torch_1:get_sprite():set_animation("lit") end)
     sol.timer.start(2000, function()

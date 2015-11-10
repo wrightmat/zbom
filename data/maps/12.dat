@@ -2892,7 +2892,7 @@ tile{
   layer = 0,
   x = 344,
   y = 408,
-  width = 32,
+  width = 16,
   height = 16,
   pattern = "524",
 }
@@ -2944,9 +2944,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 248,
+  x = 264,
   y = 560,
-  width = 160,
+  width = 144,
   height = 32,
   pattern = "524",
 }
@@ -3611,7 +3611,7 @@ tile{
 tile{
   layer = 0,
   x = 184,
-  y = 320,
+  y = 328,
   width = 16,
   height = 16,
   pattern = "42",
@@ -5356,6 +5356,19 @@ tile{
 
 wall{
   layer = 0,
+  x = 240,
+  y = 552,
+  width = 16,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
   x = 816,
   y = 496,
   width = 16,
@@ -5383,7 +5396,7 @@ wall{
 wall{
   layer = 0,
   x = 184,
-  y = 272,
+  y = 288,
   width = 16,
   height = 8,
   stops_hero = true,
@@ -5772,28 +5785,6 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 256,
-  y = 573,
-  treasure_name = "random",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = 1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 256,
-  y = 589,
-  treasure_name = "random",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = 1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
   x = 272,
   y = 573,
   treasure_name = "random",
@@ -6168,8 +6159,8 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 368,
-  y = 421,
+  x = 352,
+  y = 405,
   treasure_name = "random",
   sprite = "entities/bush",
   destruction_sound = "bush",
@@ -6839,8 +6830,8 @@ npc{
 npc{
   name = "torch_1",
   layer = 0,
-  x = 240,
-  y = 557,
+  x = 248,
+  y = 573,
   direction = 3,
   subtype = 0,
   sprite = "entities/torch_wood",
@@ -6860,7 +6851,7 @@ npc{
   name = "torch_3",
   layer = 0,
   x = 192,
-  y = 293,
+  y = 309,
   direction = 3,
   subtype = 0,
   sprite = "entities/torch_wood",
