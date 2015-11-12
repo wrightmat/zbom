@@ -7,6 +7,7 @@ local game = map:get_game()
 
 if game:get_value("i1026")==nil then game:set_value("i1026", 0) end
 if game:get_value("i1032")==nil then game:set_value("i1032", 0) end
+if game:get_value("i1820")==nil then game:set_value("i1820", 0) end
 if game:get_value("i1924")==nil then game:set_value("i1924", 0) end --Juba
 
 local playing_chests = false

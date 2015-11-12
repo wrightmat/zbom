@@ -19,7 +19,7 @@ local exiting = false
 -- 41: 6 blue bari, 6 red bari 42: 10 ropes, 2 redeads, 2 poes, 43: 8 red hardhats, 44: 3 regular, 3 fire, 3 ice wizzrobes
 -- 46: 4 redeads, 2 skeletors, 47: 4 gigas, 4 rats, 48: 4 purple leevers, 8 green leevers, 2 lynel, 49: 2 peahats, 2 redead, 4 red tektites, big poe
 
-game:set_value("i1609", 0)
+if game:get_value("i1609") < 50 then game:set_value("i1609",0) end
 
 function random_8(lower, upper)
   math.randomseed(os.time() - os.clock() * 1000)
@@ -504,6 +504,7 @@ function room4_dest:on_activated()
       map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="poe_big",name="enemy" })
 
       -- go to treasure room finally!
+      game:set_value("i1609", 50) 
       room4_tran:set_destination("treasure_dest")
     end
 end
@@ -514,7 +515,7 @@ function room5_dest:on_activated()
 end
 
 function room5_exit:on_activated()
-  game:get_value("i1609",0)
+  if game:get_value("i1609") < 50 then game:set_value("i1609",0) end
 end
 
 function treasure_dest:on_activated()

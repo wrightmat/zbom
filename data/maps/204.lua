@@ -18,7 +18,7 @@ function map:on_started(destination)
   if not game:get_value("b1074") then boss_heart:set_enabled(false) end
   if not game:get_value("b1075") then chest_room17_map:set_enabled(false) end
   if not game:get_value("b1076") then chest_room7_compass:set_enabled(false) end
-  if not game:get_value("b1077") then chest_room15_item:set_enabled(false) end
+  if not game:get_value("b1077") and not game:get_value("b1078") then chest_room15_item:set_enabled(false) end
   if not game:get_value("b1079") then boss_manhandla:set_enabled(false) end
   if not game:get_value("b1087") then chest_room9_part:set_enabled(false) end
   if not game:get_value("b1088") then chest_room19_part:set_enabled(false) end

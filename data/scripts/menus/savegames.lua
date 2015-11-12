@@ -192,10 +192,13 @@ function savegame_menu:draw_savegame(slot_index)
   local slot = self.slots[slot_index]
   self.save_container_img:draw(self.surface, 57, 48 + slot_index * 27)
   slot.player_name_text:draw(self.surface, 87, 61 + slot_index * 27)
-
   if slot.hearts_view ~= nil then
     slot.hearts_view:set_dst_position(168, 51 + slot_index * 27)
     slot.hearts_view:on_draw(self.surface)
+  end
+  if slot.percent_complete ~= nil then
+    slot.percent_complete:set_dst_position(180, 51 + slot_index * 27)
+    slot.percent_complete:on_draw(self.surface)
   end
 end
 
@@ -257,6 +260,11 @@ function savegame_menu:read_savegames()
       -- Hearts.
       local hearts_class = require("scripts/hud/hearts")
       slot.hearts_view = hearts_class:new(slot.savegame)
+
+      -- Completion Percentage.
+      if slot.savegame:get_value("b1699") then
+        slot.percent_complete = self:calculate_percent_complete(slot.savegame)
+      end
     else
       -- New file.
       local name = "- " .. sol.language.get_string("selection_menu.empty") .. " -"
@@ -1021,6 +1029,60 @@ function savegame_menu:set_initial_values(savegame)
   savegame:get_item("tunic"):set_variant(1)
   savegame:set_ability("tunic", 1)
   savegame:get_item("rupee_bag"):set_variant(1)
+end
+
+function savegame_menu:calculate_percent_complete(savegame)
+  -- 100 total values = 100 percent.
+  -- 32 values for heart pieces, 12 for trading sequence, 16 for warp points, 30 for misc. sidequests/items, 10 for ???
+  local percent_complete = savegame:get_value("b1701") +
+    savegame:get_value("b1702") + savegame:get_value("b1703") + 
+    savegame:get_value("b1704") + savegame:get_value("b1705") + 
+    savegame:get_value("b1706") + savegame:get_value("b1707") + 
+    savegame:get_value("b1708") + savegame:get_value("b1709") + 
+    savegame:get_value("b1710") + savegame:get_value("b1711") + 
+    savegame:get_value("b1712") + savegame:get_value("b1713") + 
+    savegame:get_value("b1714") + savegame:get_value("b1715") + 
+    savegame:get_value("b1716") + savegame:get_value("b1717") + 
+    savegame:get_value("b1718") + savegame:get_value("b1719") + 
+    savegame:get_value("b1720") + savegame:get_value("b1721") + 
+    savegame:get_value("b1722") + savegame:get_value("b1723") + 
+    savegame:get_value("b1724") + savegame:get_value("b1725") + 
+    savegame:get_value("b1726") + savegame:get_value("b1727") + 
+    savegame:get_value("b1728") + savegame:get_value("b1729") + 
+    savegame:get_value("b1730") + savegame:get_value("b1731") + 
+    savegame:get_value("b1732") +
+    (savegame:get_value("i1830") - 1) + --  Heart Pieces above. Trading here.
+
+    savegame:get_value("b1500") + savegame:get_value("b1501") +
+    savegame:get_value("b1502") + savegame:get_value("b1503") +
+    savegame:get_value("b1504") + savegame:get_value("b1505") +
+    savegame:get_value("b1506") + savegame:get_value("b1507") +
+    savegame:get_value("b1508") + savegame:get_value("b1509") +
+    savegame:get_value("b1510") + savegame:get_value("b1511") +
+    savegame:get_value("b1512") + savegame:get_value("b1513") +
+    savegame:get_value("b1514") + savegame:get_value("b1515") -- Warp points
+
+    if savegame:get_value("i1602") >= 6 then percent_complete = percent_complete + 2 end  -- Gaira/Deacon
+    if savegame:get_value("i1603") >= 5 then percent_complete = percent_complete + 2 end  -- Great Fairy Mystic Jade
+    if savegame:get_value("i1604") >= 5 then percent_complete = percent_complete + 2 end  -- Great Fairy Goron Amber
+    if savegame:get_value("i1605") >= 5 then percent_complete = percent_complete + 2 end  -- Great Fairy Alchemy Stone
+    if savegame:get_value("i1606") >= 5 then percent_complete = percent_complete + 2 end  -- Great Fairy Goddess Plume
+    if savegame:get_value("i1607") >= 5 then percent_complete = percent_complete + 2 end  -- Great Fairy Subrosian Ore
+    if savegame:get_value("i1608") >= 5 then percent_complete = percent_complete + 2 end  -- Great Fairy Magic Crystal
+    if savegame:get_value("i1609") >= 50 then percent_complete = percent_complete + 2 end  -- Cave of Ordeals
+    if savegame:get_value("b1810") then percent_complete = percent_complete + 2 end  -- Bottle 1 (Rudy)
+    if savegame:get_value("b1811") then percent_complete = percent_complete + 2 end  -- Bottle 2 (Relic Collector)
+    if savegame:get_value("b1812") then percent_complete = percent_complete + 2 end  -- Bottle 3 (Kakariko Thief)
+    if savegame:get_value("b1813") then percent_complete = percent_complete + 2 end  -- Bottle 4
+    if savegame:get_value("b1838") then percent_complete = percent_complete + 2 end  -- Shovel
+    if savegame:get_value("b1839") then percent_complete = percent_complete + 2 end  -- Hammer
+    if savegame:get_value("b1699") then percent_complete = percent_complete + 2 end  -- Main Quest
+
+    -- Last 10% - Character reputations? Random treasure chests?
+
+print(percent_complete)
+  return percent_complete
+
 end
 
 return savegame_menu
