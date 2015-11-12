@@ -10,6 +10,42 @@ properties{
 
 tile{
   layer = 0,
+  x = 344,
+  y = 232,
+  width = 16,
+  height = 16,
+  pattern = "271",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 232,
+  width = 16,
+  height = 16,
+  pattern = "272",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "271",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "272",
+}
+
+tile{
+  layer = 0,
   x = 664,
   y = 0,
   width = 224,
@@ -2388,7 +2424,7 @@ tile{
   layer = 0,
   x = 192,
   y = 240,
-  width = 256,
+  width = 96,
   height = 8,
   pattern = "265",
 }
@@ -2397,7 +2433,7 @@ tile{
   layer = 0,
   x = 192,
   y = 232,
-  width = 256,
+  width = 96,
   height = 8,
   pattern = "259",
 }
@@ -4209,6 +4245,96 @@ tile{
   width = 16,
   height = 8,
   pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 232,
+  width = 96,
+  height = 8,
+  pattern = "259",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 240,
+  width = 96,
+  height = 8,
+  pattern = "265",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 240,
+  width = 8,
+  height = 8,
+  pattern = "464",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 264,
+  width = 16,
+  height = 24,
+  pattern = "815",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 264,
+  width = 8,
+  height = 24,
+  pattern = "813",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 264,
+  width = 8,
+  height = 24,
+  pattern = "814",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 248,
+  width = 16,
+  height = 16,
+  pattern = "812",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 248,
+  width = 8,
+  height = 16,
+  pattern = "810",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 248,
+  width = 8,
+  height = 16,
+  pattern = "811",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 240,
+  width = 8,
+  height = 8,
+  pattern = "464",
 }
 
 teletransporter{

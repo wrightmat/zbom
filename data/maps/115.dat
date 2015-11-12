@@ -10,6 +10,15 @@ properties{
 
 tile{
   layer = 0,
+  x = 728,
+  y = 344,
+  width = 16,
+  height = 16,
+  pattern = "699",
+}
+
+tile{
+  layer = 0,
   x = 0,
   y = 960,
   width = 976,
@@ -721,15 +730,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 640,
-  y = 880,
-  width = 32,
-  height = 16,
-  pattern = "1853",
-}
-
-tile{
-  layer = 0,
   x = 592,
   y = 880,
   width = 16,
@@ -1140,15 +1140,6 @@ tile{
   width = 128,
   height = 32,
   pattern = "1824",
-}
-
-tile{
-  layer = 0,
-  x = 648,
-  y = 896,
-  width = 16,
-  height = 16,
-  pattern = "1899",
 }
 
 tile{
@@ -2197,15 +2188,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 728,
-  y = 344,
-  width = 16,
-  height = 16,
-  pattern = "699",
-}
-
-tile{
-  layer = 0,
   x = 744,
   y = 344,
   width = 16,
@@ -2967,6 +2949,17 @@ tile{
   width = 16,
   height = 8,
   pattern = "11",
+}
+
+teletransporter{
+  name = "to_land",
+  layer = 0,
+  x = 648,
+  y = 888,
+  width = 16,
+  height = 16,
+  destination_map = "115",
+  destination = "from_port",
 }
 
 teletransporter{
@@ -3850,6 +3843,23 @@ teletransporter{
   destination = "_side",
 }
 
+sensor{
+  name = "layer_up_sensor",
+  layer = 0,
+  x = 600,
+  y = 1061,
+  width = 128,
+  height = 16,
+}
+
+destination{
+  name = "from_port",
+  layer = 0,
+  x = 736,
+  y = 373,
+  direction = 3,
+}
+
 tile{
   layer = 1,
   x = 712,
@@ -3938,6 +3948,15 @@ tile{
   width = 16,
   height = 128,
   pattern = "1850",
+}
+
+tile{
+  layer = 1,
+  x = 640,
+  y = 880,
+  width = 32,
+  height = 16,
+  pattern = "1853",
 }
 
 tile{
