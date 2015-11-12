@@ -739,7 +739,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 608,
+  x = 592,
   y = 808,
   width = 48,
   height = 16,
@@ -748,7 +748,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 616,
+  x = 600,
   y = 824,
   width = 32,
   height = 8,
@@ -757,7 +757,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 608,
+  x = 592,
   y = 768,
   width = 48,
   height = 40,
@@ -766,7 +766,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 600,
+  x = 584,
   y = 800,
   width = 8,
   height = 16,
@@ -775,7 +775,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 656,
+  x = 640,
   y = 800,
   width = 8,
   height = 16,
@@ -1347,15 +1347,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "2145",
-}
-
-tile{
-  layer = 0,
-  x = 368,
-  y = 248,
-  width = 16,
-  height = 24,
-  pattern = "1609",
 }
 
 tile{
@@ -4429,15 +4420,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 360,
-  y = 256,
-  width = 32,
-  height = 16,
-  pattern = "1020",
-}
-
-tile{
-  layer = 0,
   x = 64,
   y = 96,
   width = 16,
@@ -7462,83 +7444,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 664,
-  y = 744,
-  width = 16,
-  height = 8,
-  pattern = "1094",
-}
-
-tile{
-  layer = 0,
-  x = 664,
-  y = 752,
-  width = 16,
-  height = 24,
-  pattern = "1097",
-}
-
-tile{
-  layer = 0,
-  x = 664,
-  y = 776,
-  width = 16,
-  height = 16,
-  pattern = "1100",
-}
-
-tile{
-  layer = 0,
-  x = 680,
-  y = 752,
-  width = 160,
-  height = 24,
-  pattern = "1098",
-}
-
-tile{
-  layer = 0,
-  x = 680,
-  y = 744,
-  width = 160,
-  height = 8,
-  pattern = "1095",
-}
-
-tile{
-  layer = 0,
-  x = 680,
-  y = 776,
-  width = 160,
-  height = 16,
-  pattern = "1101",
-}
-
-tile{
-  layer = 0,
   x = 840,
   y = 744,
   width = 16,
   height = 8,
   pattern = "1096",
-}
-
-tile{
-  layer = 0,
-  x = 840,
-  y = 752,
-  width = 16,
-  height = 24,
-  pattern = "1099",
-}
-
-tile{
-  layer = 0,
-  x = 840,
-  y = 776,
-  width = 16,
-  height = 16,
-  pattern = "1102",
 }
 
 jumper{
@@ -9185,6 +9095,105 @@ teletransporter{
   destination = "from_outside_house_4",
 }
 
+sensor{
+  name = "layer_up_sensor_2",
+  layer = 0,
+  x = 664,
+  y = 765,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "layer_up_sensor",
+  layer = 0,
+  x = 856,
+  y = 765,
+  width = 16,
+  height = 32,
+}
+
+tile{
+  layer = 1,
+  x = 680,
+  y = 744,
+  width = 160,
+  height = 8,
+  pattern = "1095",
+}
+
+tile{
+  layer = 1,
+  x = 664,
+  y = 744,
+  width = 16,
+  height = 8,
+  pattern = "1094",
+}
+
+tile{
+  layer = 1,
+  x = 680,
+  y = 752,
+  width = 160,
+  height = 24,
+  pattern = "1098",
+}
+
+tile{
+  layer = 1,
+  x = 664,
+  y = 752,
+  width = 16,
+  height = 24,
+  pattern = "1097",
+}
+
+tile{
+  layer = 1,
+  x = 840,
+  y = 752,
+  width = 16,
+  height = 24,
+  pattern = "1099",
+}
+
+tile{
+  layer = 1,
+  x = 680,
+  y = 776,
+  width = 160,
+  height = 16,
+  pattern = "1101",
+}
+
+tile{
+  layer = 1,
+  x = 840,
+  y = 776,
+  width = 16,
+  height = 16,
+  pattern = "1102",
+}
+
+tile{
+  layer = 1,
+  x = 664,
+  y = 776,
+  width = 16,
+  height = 16,
+  pattern = "1100",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = 248,
+  width = 16,
+  height = 24,
+  pattern = "1609",
+}
+
 tile{
   layer = 2,
   x = 904,
@@ -9376,7 +9385,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 608,
+  x = 592,
   y = 752,
   width = 48,
   height = 16,
@@ -9385,7 +9394,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 656,
+  x = 640,
   y = 760,
   width = 8,
   height = 40,
@@ -9394,7 +9403,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 600,
+  x = 584,
   y = 760,
   width = 8,
   height = 40,
@@ -11253,5 +11262,14 @@ tile{
   width = 8,
   height = 40,
   pattern = "520",
+}
+
+tile{
+  layer = 2,
+  x = 360,
+  y = 256,
+  width = 32,
+  height = 16,
+  pattern = "1020",
 }
 

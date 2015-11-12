@@ -10,6 +10,7 @@ function enemy:on_created()
   self:set_size(32, 32); self:set_origin(16, 27)
   self:set_pushed_back_when_hurt(false)
   self:set_invincible(true)
+  self:set_obstacle_behavior("swimming")
 end
 
 local function shoot_fire()
@@ -19,17 +20,19 @@ local function shoot_fire()
   sprite:set_animation("shooting")
   sol.timer.start(enemy, 500, function()
     sol.audio.play_sound("lamp")
-    local flame = enemy:create_enemy({ breed = "projectiles/fireball_simple", x = x, y = y })
+    local flame = enemy:create_enemy({ breed = "projectiles/fireball_simple", x = x + 10, y = y + 10 })
   end)
 end
 
 function enemy:on_restarted()
+  local sprite = enemy:get_sprite()
+  sprite:set_animation("stopped")
   can_shoot = true
   sol.timer.start(enemy, 200, function()
     if can_shoot then
       shoot_fire()
       can_shoot = false
-      sol.timer.start(enemy, 1500, function() can_shoot = true end)
+      sol.timer.start(enemy, 15000, function() can_shoot = true end)
     end
     return true  -- Repeat the timer.
   end)

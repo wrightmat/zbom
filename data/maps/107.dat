@@ -5390,6 +5390,24 @@ tile{
   pattern = "296",
 }
 
+tile{
+  layer = 0,
+  x = 472,
+  y = 40,
+  width = 48,
+  height = 40,
+  pattern = "522",
+}
+
+tile{
+  layer = 0,
+  x = 744,
+  y = 16,
+  width = 48,
+  height = 40,
+  pattern = "522",
+}
+
 teletransporter{
   name = "to_F5_water",
   layer = 0,
@@ -5657,15 +5675,6 @@ teletransporter{
 tile{
   layer = 2,
   x = 744,
-  y = 16,
-  width = 48,
-  height = 40,
-  pattern = "522",
-}
-
-tile{
-  layer = 2,
-  x = 744,
   y = 0,
   width = 48,
   height = 16,
@@ -5688,15 +5697,6 @@ tile{
   width = 8,
   height = 40,
   pattern = "520",
-}
-
-tile{
-  layer = 2,
-  x = 472,
-  y = 40,
-  width = 48,
-  height = 40,
-  pattern = "522",
 }
 
 tile{

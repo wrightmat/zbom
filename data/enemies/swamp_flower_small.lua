@@ -7,4 +7,5 @@ function enemy:on_created()
   self:create_sprite("enemies/swamp_flower_small")
   self:set_size(16, 16); self:set_origin(8, 13)
   self:set_pushed_back_when_hurt(false)
+  self:set_obstacle_behavior("swimming")
 end

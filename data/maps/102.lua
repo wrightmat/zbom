@@ -6,9 +6,18 @@ local game = map:get_game()
 -----------------------------------------------------------------
 
 function map:on_started(destination)
+  for enemy in map:get_entities("enemy") do
+    enemy:set_enabled(false)
+  end
   to_level2_1:set_enabled(false)
   to_level2_2:set_enabled(false)
-  if not game:get_value("b1732" then chest_heart_piece:set_enabled(false) end
+  if not game:get_value("b1732") then chest_heart_piece:set_enabled(false) end
+end
+
+function sensor_enemy_hoard:on_activated()
+  for enemy in map:get_entities("enemy") do
+    enemy:set_enabled(true)
+  end
 end
 
 for enemy in map:get_entities("enemy_wave1") do
