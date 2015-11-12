@@ -56,21 +56,17 @@ function warp_menu:on_started()
   self.outside_world_minimap_size = { width = 225, height = 399 }
   self.world_minimap_img = sol.surface.create("menus/warp_map.png")
   self.world_minimap_movement = nil
+  self.world_minimap_visible_xy = {x = 0, y = 0 }
 
   -- Initialize the cursor and scroll map to initial point.
   for k, v in pairs(warp_points) do
     if k == initial_point then
       index = k
       self:set_cursor_position(v[3], v[4])
-      if v[4] >= 133 then initial_y = v[4] - 133 + 10 else initial_y = 0 end
+      if v[4] >= 133 then initial_y = v[4] - 133 + 10 end
       self.world_minimap_visible_xy = {x = 0, y = initial_y }
     end
   end
-
-  -- Update HUD icons (not working).
-  game:set_custom_command_effect("action", nil)
-  game:set_custom_command_effect("attack", "validate")
-  game:set_custom_command_effect("pause", "return")
 
   -- Ensure the hero can't move.
   hero_x, hero_y = game:get_map():get_hero():get_position()

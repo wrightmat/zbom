@@ -18,7 +18,10 @@ else
 end
 
 function map:on_started(destination)
-  if fog_overlay then fog_overlay:fade_in(150) end
+  local hero_x, hero_y = map:get_hero():get_position()
+  if hero_y > 16 then  -- If coming from the north end of the map, fog is already present.
+    if fog_overlay then fog_overlay:fade_in(150) end
+  end
 end
 
 function map:on_draw(dst_surface)
@@ -30,6 +33,6 @@ end
 function map:on_finished()
   if fog_overlay then
     fog_overlay:fade_out()
-    fog_overlay = nil
+    sol.timer.start(game, 1000, function() fog_overlay = nil end)
   end
 end

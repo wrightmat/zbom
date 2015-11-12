@@ -4339,15 +4339,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 440,
-  y = 528,
-  width = 64,
-  height = 16,
-  pattern = "1305",
-}
-
-tile{
-  layer = 0,
   x = 536,
   y = 528,
   width = 176,
@@ -4731,15 +4722,6 @@ tile{
   width = 8,
   height = 16,
   pattern = "1856",
-}
-
-tile{
-  layer = 0,
-  x = 456,
-  y = 424,
-  width = 32,
-  height = 16,
-  pattern = "1853",
 }
 
 tile{
@@ -5768,6 +5750,28 @@ tile{
   pattern = "179",
 }
 
+dynamic_tile{
+  name = "ladder2_3",
+  layer = 0,
+  x = 656,
+  y = 264,
+  pattern = "1876",
+  width = 16,
+  height = 24,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "ladder1_3",
+  layer = 0,
+  x = 272,
+  y = 264,
+  pattern = "1876",
+  width = 16,
+  height = 24,
+  enabled_at_start = false,
+}
+
 teletransporter{
   name = "to_F3",
   layer = 0,
@@ -6377,6 +6381,422 @@ chest{
   treasure_name = "heart_piece",
   treasure_savegame_variable = "b1732",
   sprite = "entities/chest",
+}
+
+destination{
+  name = "from_inside",
+  layer = 0,
+  x = 472,
+  y = 589,
+  direction = 3,
+  default = true,
+}
+
+teletransporter{
+  name = "to_inside",
+  layer = 0,
+  x = 456,
+  y = 536,
+  width = 32,
+  height = 16,
+  destination_map = "8",
+  destination = "from_outside_castle",
+}
+
+destination{
+  name = "from_inside_terrace",
+  layer = 0,
+  x = 472,
+  y = 469,
+  direction = 3,
+}
+
+teletransporter{
+  name = "to_inside_terrace",
+  layer = 0,
+  x = 464,
+  y = 432,
+  width = 16,
+  height = 16,
+  destination_map = "8",
+  destination = "from_terrace",
+}
+
+sensor{
+  name = "sensor_enemy_hoard",
+  layer = 0,
+  x = 432,
+  y = 485,
+  width = 96,
+  height = 16,
+}
+
+enemy{
+  name = "enemy_wave1_1",
+  layer = 0,
+  x = 264,
+  y = 253,
+  direction = 0,
+  breed = "chuchu_yellow",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "enemy_wave1_2",
+  layer = 0,
+  x = 264,
+  y = 405,
+  direction = 0,
+  breed = "chuchu_red",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "enemy_wave1_3",
+  layer = 0,
+  x = 328,
+  y = 501,
+  direction = 0,
+  breed = "chuchu_blue",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "enemy_wave1_4",
+  layer = 0,
+  x = 624,
+  y = 509,
+  direction = 0,
+  breed = "chuchu_blue",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "enemy_wave1_5",
+  layer = 0,
+  x = 680,
+  y = 405,
+  direction = 0,
+  breed = "chuchu_red",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "enemy_wave1_6",
+  layer = 0,
+  x = 688,
+  y = 261,
+  direction = 0,
+  breed = "chuchu_yellow",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "enemy_wave2_1",
+  layer = 0,
+  x = 264,
+  y = 325,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "enemy_wave2_2",
+  layer = 0,
+  x = 368,
+  y = 501,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "enemy_wave2_3",
+  layer = 0,
+  x = 464,
+  y = 245,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "enemy_wave2_4",
+  layer = 0,
+  x = 680,
+  y = 333,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "enemy_wave2_5",
+  layer = 0,
+  x = 576,
+  y = 501,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "enemy_wave3_1",
+  layer = 0,
+  x = 368,
+  y = 253,
+  direction = 3,
+  breed = "knight_green",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "enemy_wave3_2",
+  layer = 0,
+  x = 576,
+  y = 253,
+  direction = 3,
+  breed = "knight_green",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "enemy_wave3_3",
+  layer = 0,
+  x = 640,
+  y = 245,
+  direction = 3,
+  breed = "knight_green",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "enemy_wave3_4",
+  layer = 0,
+  x = 312,
+  y = 245,
+  direction = 3,
+  breed = "knight_green",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "enemy_wave4_2",
+  layer = 0,
+  x = 416,
+  y = 253,
+  direction = 3,
+  breed = "lynel",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "enemy_wave4_1",
+  layer = 0,
+  x = 520,
+  y = 253,
+  direction = 3,
+  breed = "lynel",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "enemy_wave3_5",
+  layer = 0,
+  x = 272,
+  y = 493,
+  direction = 3,
+  breed = "lizalfos",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "enemy_wave3_6",
+  layer = 0,
+  x = 672,
+  y = 501,
+  direction = 3,
+  breed = "lizalfos",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "enemy_wave4_3",
+  layer = 0,
+  x = 264,
+  y = 445,
+  direction = 3,
+  breed = "octolux",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "enemy_wave4_4",
+  layer = 0,
+  x = 680,
+  y = 453,
+  direction = 3,
+  breed = "octolux",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "enemy_wave4_5",
+  layer = 0,
+  x = 264,
+  y = 357,
+  direction = 3,
+  breed = "octolux",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "enemy_wave4_6",
+  layer = 0,
+  x = 680,
+  y = 365,
+  direction = 3,
+  breed = "octolux",
+  treasure_name = "random_north",
+}
+
+teletransporter{
+  name = "to_level2_1",
+  layer = 0,
+  x = 272,
+  y = 272,
+  width = 16,
+  height = 16,
+  destination_map = "102",
+  destination = "from_level1_1",
+}
+
+teletransporter{
+  name = "to_level2_2",
+  layer = 0,
+  x = 656,
+  y = 272,
+  width = 16,
+  height = 16,
+  destination_map = "102",
+  destination = "from_level1_2",
+}
+
+destination{
+  name = "from_level2_1",
+  layer = 0,
+  x = 280,
+  y = 269,
+  direction = 1,
+}
+
+destination{
+  name = "from_level2_2",
+  layer = 0,
+  x = 664,
+  y = 269,
+  direction = 1,
+}
+
+destination{
+  name = "from_level1_1",
+  layer = 0,
+  x = 376,
+  y = 325,
+  direction = 1,
+}
+
+destination{
+  name = "from_level1_2",
+  layer = 0,
+  x = 568,
+  y = 325,
+  direction = 1,
+}
+
+teletransporter{
+  name = "to_level1_1",
+  layer = 0,
+  x = 368,
+  y = 328,
+  width = 16,
+  height = 16,
+  destination_map = "102",
+  destination = "from_level2_1",
+}
+
+teletransporter{
+  name = "to_level1_2",
+  layer = 0,
+  x = 560,
+  y = 328,
+  width = 16,
+  height = 16,
+  destination_map = "102",
+  destination = "from_level2_2",
+}
+
+dynamic_tile{
+  name = "ladder1_1",
+  layer = 0,
+  x = 264,
+  y = 264,
+  pattern = "1871",
+  width = 8,
+  height = 32,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "ladder1_2",
+  layer = 0,
+  x = 272,
+  y = 288,
+  pattern = "1873",
+  width = 16,
+  height = 8,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "ladder2_1",
+  layer = 0,
+  x = 672,
+  y = 264,
+  pattern = "1872",
+  width = 8,
+  height = 32,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "ladder2_2",
+  layer = 0,
+  x = 656,
+  y = 288,
+  pattern = "1873",
+  width = 16,
+  height = 8,
+  enabled_at_start = false,
+}
+
+tile{
+  layer = 1,
+  x = 440,
+  y = 528,
+  width = 64,
+  height = 16,
+  pattern = "1305",
+}
+
+tile{
+  layer = 1,
+  x = 456,
+  y = 424,
+  width = 32,
+  height = 16,
+  pattern = "1853",
 }
 
 tile{
