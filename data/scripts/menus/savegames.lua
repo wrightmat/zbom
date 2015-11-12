@@ -191,14 +191,14 @@ function savegame_menu:draw_savegame(slot_index)
 
   local slot = self.slots[slot_index]
   self.save_container_img:draw(self.surface, 57, 48 + slot_index * 27)
-  slot.player_name_text:draw(self.surface, 87, 61 + slot_index * 27)
+  slot.player_name_text:draw(self.surface, 87, 58 + slot_index * 27)
   if slot.hearts_view ~= nil then
     slot.hearts_view:set_dst_position(168, 51 + slot_index * 27)
+    slot.hearts_view:rebuild_surface()
     slot.hearts_view:on_draw(self.surface)
   end
   if slot.percent_complete ~= nil then
-    slot.percent_complete:set_dst_position(180, 51 + slot_index * 27)
-    slot.percent_complete:on_draw(self.surface)
+    slot.percent_complete:draw(self.surface, 132, 58 + slot_index * 27)
   end
 end
 
@@ -263,7 +263,8 @@ function savegame_menu:read_savegames()
 
       -- Completion Percentage.
       if slot.savegame:get_value("b1699") then
-        slot.percent_complete = self:calculate_percent_complete(slot.savegame)
+        slot.percent_complete = sol.text_surface.create{ font = font, font_size = 10 }
+        slot.percent_complete:set_text("["..self:calculate_percent_complete(slot.savegame).."%]")
       end
     else
       -- New file.
@@ -1034,33 +1035,42 @@ end
 function savegame_menu:calculate_percent_complete(savegame)
   -- 100 total values = 100 percent.
   -- 32 values for heart pieces, 12 for trading sequence, 16 for warp points, 30 for misc. sidequests/items, 10 for ???
-  local percent_complete = savegame:get_value("b1701") +
-    savegame:get_value("b1702") + savegame:get_value("b1703") + 
-    savegame:get_value("b1704") + savegame:get_value("b1705") + 
-    savegame:get_value("b1706") + savegame:get_value("b1707") + 
-    savegame:get_value("b1708") + savegame:get_value("b1709") + 
-    savegame:get_value("b1710") + savegame:get_value("b1711") + 
-    savegame:get_value("b1712") + savegame:get_value("b1713") + 
-    savegame:get_value("b1714") + savegame:get_value("b1715") + 
-    savegame:get_value("b1716") + savegame:get_value("b1717") + 
-    savegame:get_value("b1718") + savegame:get_value("b1719") + 
-    savegame:get_value("b1720") + savegame:get_value("b1721") + 
-    savegame:get_value("b1722") + savegame:get_value("b1723") + 
-    savegame:get_value("b1724") + savegame:get_value("b1725") + 
-    savegame:get_value("b1726") + savegame:get_value("b1727") + 
-    savegame:get_value("b1728") + savegame:get_value("b1729") + 
-    savegame:get_value("b1730") + savegame:get_value("b1731") + 
-    savegame:get_value("b1732") +
+  local percent_complete = (savegame:get_value("b1701") and 1 or 0) +
+    (savegame:get_value("b1702") and 1 or 0) + (savegame:get_value("b1703") and 1 or 0) + 
+    (savegame:get_value("b1704") and 1 or 0) + (savegame:get_value("b1705") and 1 or 0) + 
+    (savegame:get_value("b1706") and 1 or 0) + (savegame:get_value("b1707") and 1 or 0) + 
+    (savegame:get_value("b1708") and 1 or 0) + (savegame:get_value("b1709") and 1 or 0) + 
+    (savegame:get_value("b1710") and 1 or 0) + (savegame:get_value("b1711") and 1 or 0) + 
+    (savegame:get_value("b1712") and 1 or 0) + (savegame:get_value("b1713") and 1 or 0) + 
+    (savegame:get_value("b1714") and 1 or 0) + (savegame:get_value("b1715") and 1 or 0) + 
+    (savegame:get_value("b1716") and 1 or 0) + (savegame:get_value("b1717") and 1 or 0) + 
+    (savegame:get_value("b1718") and 1 or 0) + (savegame:get_value("b1719") and 1 or 0) + 
+    (savegame:get_value("b1720") and 1 or 0) + (savegame:get_value("b1721") and 1 or 0) + 
+    (savegame:get_value("b1722") and 1 or 0) + (savegame:get_value("b1723") and 1 or 0) + 
+    (savegame:get_value("b1724") and 1 or 0) + (savegame:get_value("b1725") and 1 or 0) + 
+    (savegame:get_value("b1726") and 1 or 0) + (savegame:get_value("b1727") and 1 or 0) + 
+    (savegame:get_value("b1728") and 1 or 0) + (savegame:get_value("b1729") and 1 or 0) + 
+    (savegame:get_value("b1730") and 1 or 0) + (savegame:get_value("b1731") and 1 or 0) + 
+    (savegame:get_value("b1732") and 1 or 0) +
     (savegame:get_value("i1830") - 1) + --  Heart Pieces above. Trading here.
 
-    savegame:get_value("b1500") + savegame:get_value("b1501") +
-    savegame:get_value("b1502") + savegame:get_value("b1503") +
-    savegame:get_value("b1504") + savegame:get_value("b1505") +
-    savegame:get_value("b1506") + savegame:get_value("b1507") +
-    savegame:get_value("b1508") + savegame:get_value("b1509") +
-    savegame:get_value("b1510") + savegame:get_value("b1511") +
-    savegame:get_value("b1512") + savegame:get_value("b1513") +
-    savegame:get_value("b1514") + savegame:get_value("b1515") -- Warp points
+    (savegame:get_value("b1500") and 1 or 0) + (savegame:get_value("b1501") and 1 or 0) +
+    (savegame:get_value("b1502") and 1 or 0) + (savegame:get_value("b1503") and 1 or 0) +
+    (savegame:get_value("b1504") and 1 or 0) + (savegame:get_value("b1505") and 1 or 0) +
+    (savegame:get_value("b1506") and 1 or 0) + (savegame:get_value("b1507") and 1 or 0) +
+    (savegame:get_value("b1508") and 1 or 0) + (savegame:get_value("b1509") and 1 or 0) +
+    (savegame:get_value("b1510") and 1 or 0) + (savegame:get_value("b1511") and 1 or 0) +
+    (savegame:get_value("b1512") and 1 or 0) + (savegame:get_value("b1513") and 1 or 0) +
+    (savegame:get_value("b1514") and 1 or 0) + (savegame:get_value("b1515") and 1 or 0) -- Warp points
+
+    if savegame:get_value("i1602")==nil then savegame:set_value("i1602", 0) end
+    if savegame:get_value("i1603")==nil then savegame:set_value("i1603", 0) end
+    if savegame:get_value("i1604")==nil then savegame:set_value("i1604", 0) end
+    if savegame:get_value("i1605")==nil then savegame:set_value("i1605", 0) end
+    if savegame:get_value("i1606")==nil then savegame:set_value("i1606", 0) end
+    if savegame:get_value("i1607")==nil then savegame:set_value("i1607", 0) end
+    if savegame:get_value("i1608")==nil then savegame:set_value("i1608", 0) end
+    if savegame:get_value("i1609")==nil then savegame:set_value("i1609", 0) end
 
     if savegame:get_value("i1602") >= 6 then percent_complete = percent_complete + 2 end  -- Gaira/Deacon
     if savegame:get_value("i1603") >= 5 then percent_complete = percent_complete + 2 end  -- Great Fairy Mystic Jade
@@ -1070,17 +1080,16 @@ function savegame_menu:calculate_percent_complete(savegame)
     if savegame:get_value("i1607") >= 5 then percent_complete = percent_complete + 2 end  -- Great Fairy Subrosian Ore
     if savegame:get_value("i1608") >= 5 then percent_complete = percent_complete + 2 end  -- Great Fairy Magic Crystal
     if savegame:get_value("i1609") >= 50 then percent_complete = percent_complete + 2 end  -- Cave of Ordeals
-    if savegame:get_value("b1810") then percent_complete = percent_complete + 2 end  -- Bottle 1 (Rudy)
-    if savegame:get_value("b1811") then percent_complete = percent_complete + 2 end  -- Bottle 2 (Relic Collector)
-    if savegame:get_value("b1812") then percent_complete = percent_complete + 2 end  -- Bottle 3 (Kakariko Thief)
-    if savegame:get_value("b1813") then percent_complete = percent_complete + 2 end  -- Bottle 4
-    if savegame:get_value("b1838") then percent_complete = percent_complete + 2 end  -- Shovel
-    if savegame:get_value("b1839") then percent_complete = percent_complete + 2 end  -- Hammer
-    if savegame:get_value("b1699") then percent_complete = percent_complete + 2 end  -- Main Quest
+    if (savegame:get_value("b1810") and 1 or 0) then percent_complete = percent_complete + 2 end  -- Bottle 1 (Rudy)
+    if (savegame:get_value("b1811") and 1 or 0) then percent_complete = percent_complete + 2 end  -- Bottle 2 (Relic Collector)
+    if (savegame:get_value("b1812") and 1 or 0) then percent_complete = percent_complete + 2 end  -- Bottle 3 (Kakariko Thief)
+    if (savegame:get_value("b1813") and 1 or 0) then percent_complete = percent_complete + 2 end  -- Bottle 4
+    if (savegame:get_value("b1838") and 1 or 0) then percent_complete = percent_complete + 2 end  -- Shovel
+    if (savegame:get_value("b1839") and 1 or 0) then percent_complete = percent_complete + 2 end  -- Hammer
+    if (savegame:get_value("b1699") and 1 or 0) then percent_complete = percent_complete + 2 end  -- Main Quest
 
     -- Last 10% - Character reputations? Random treasure chests?
 
-print(percent_complete)
   return percent_complete
 
 end
