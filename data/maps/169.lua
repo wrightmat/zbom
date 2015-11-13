@@ -450,12 +450,12 @@ function room4_dest:on_activated()
       end
     elseif game:get_value("i1609") == 34 then
       -- Room 34: Redead and poes
-      for i=1,2 do
+      for i=1,3 do
 	ex = random_8(472,680)
 	ey = random_8(472,600)
 	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="redead",name="enemy" })
       end
-      for i=1,2 do
+      for i=1,5 do
 	ex = random_8(472,680)
 	ey = random_8(472,600)
 	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="poe",name="enemy" })

@@ -10,12 +10,12 @@ local boss_visible = false
 if game:get_value("i1613") == nil then game:set_value("i1613", 1) end
 
 function map:on_started(destination)
-game:set_value("i1613", 1)
   map:set_tileset("13")
   warp:set_enabled(false)
 end
 
 function sensor_boss:on_activated()
+  warp:set_enabled(false)
   sol.audio.play_music("boss")
   if game:get_value("i1613") == 1 then
     map:create_enemy({ name = "boss", x = 416, y = 168, layer = 0, direction = 3, breed = "poe_big", treasure_name = "fairy" })
@@ -82,4 +82,5 @@ end
 
 function warp:on_activated()
   game:set_value("i1613", game:get_value("i1613")+1)
+  map:set_tileset("13")
 end

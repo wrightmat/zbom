@@ -1,4 +1,5 @@
 local enemy = ...
+local game = enemy:get_game()
 
 -- A whirlwind created by another enemy.
 

@@ -26,12 +26,13 @@ local function are_all_torches_on()
 end
 
 local function end_race_won()
-  sol.timer.stop_all(game)
+  sol.timer.stop_all(map)
+  game.race_timer:stop()
+  game.race_timer = nil
   sol.audio.play_sound("secret")
   game:set_value("i1027", 3)
   game:set_value("i1028", 5)
   npc_tristan:get_sprite():set_direction(0)
-  game.race_timer = nil
   game:start_dialog("tristan.0.festival_won", game:get_player_name(), function()
     if game:get_value("i1027") < 4 then
       sol.timer.start(1000, function()
@@ -54,7 +55,6 @@ local function end_race_won()
       end)
     end
   end)
-  -- TODO: Figure out why HUD freezes at this point, and find a way to reset it.
 end
 
 function map:on_started(destination)

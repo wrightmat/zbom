@@ -29,9 +29,7 @@ function enemy:on_restarted()
   local m = sol.movement.create("random")
   m:set_speed(32)
   m:start(self)
-  sol.timer.start(self, math.random(20)*1000), function()
-    self:prepare_wind()
-  end)
+  sol.timer.start(self, math.random(20)*1000, function() self:prepare_wind() end)
 end
 
 function enemy:prepare_wind()
