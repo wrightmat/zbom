@@ -4,8 +4,10 @@ local game = entity:get_game()
 -- Julita is the mothers of Christa who runs the potion
 -- shop. She's also a mother-like figure to our hero.
 
+if game:get_value("i1027")==nil then game:set_value("i1027", 0) end
 if game:get_value("i1029")==nil then game:set_value("i1029", 0) end
 if game:get_value("i1032")==nil then game:set_value("i1032", 0) end
+if game:get_value("i1903")==nil then game:set_value("i1903", 0) end
 
 local function random_walk()
   local m = sol.movement.create("random_path")
