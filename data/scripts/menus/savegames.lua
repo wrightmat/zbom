@@ -1013,8 +1013,10 @@ function savegame_menu:validate_player_name()
 
   local savegame = self.slots[self.cursor_position].savegame
   self:set_initial_values(savegame)
-  savegame:save()
-  self:read_savegames()
+  sol.timer.start(self, 200, function()
+    savegame:save()
+    self:read_savegames()
+  end)
   return true
 end
 
