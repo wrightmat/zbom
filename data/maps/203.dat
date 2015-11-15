@@ -328,7 +328,7 @@ tile{
   layer = 0,
   x = 464,
   y = 1408,
-  width = 304,
+  width = 112,
   height = 8,
   pattern = "65",
 }
@@ -9817,6 +9817,24 @@ tile{
   width = 16,
   height = 16,
   pattern = "482",
+}
+
+tile{
+  layer = 0,
+  x = 600,
+  y = 1408,
+  width = 32,
+  height = 8,
+  pattern = "39",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 1408,
+  width = 112,
+  height = 8,
+  pattern = "65",
 }
 
 sensor{

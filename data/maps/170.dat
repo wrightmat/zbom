@@ -10,11 +10,38 @@ properties{
 
 tile{
   layer = 0,
+  x = 256,
+  y = 560,
+  width = 112,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 560,
+  width = 112,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
   x = 464,
   y = 352,
   width = 288,
   height = 208,
   pattern = "22",
+}
+
+tile{
+  layer = 0,
+  x = 552,
+  y = 440,
+  width = 112,
+  height = 32,
+  pattern = "248",
 }
 
 tile{
@@ -73,15 +100,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 552,
-  y = 440,
-  width = 112,
-  height = 32,
-  pattern = "212",
-}
-
-tile{
-  layer = 0,
   x = 232,
   y = 552,
   width = 128,
@@ -96,15 +114,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "1",
-}
-
-tile{
-  layer = 0,
-  x = 80,
-  y = 336,
-  width = 128,
-  height = 16,
-  pattern = "2",
 }
 
 tile{
@@ -150,15 +159,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "10",
-}
-
-tile{
-  layer = 0,
-  x = 80,
-  y = 560,
-  width = 128,
-  height = 16,
-  pattern = "8",
 }
 
 tile{
@@ -433,15 +433,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 240,
-  y = 560,
-  width = 128,
-  height = 16,
-  pattern = "8",
-}
-
-tile{
-  layer = 0,
   x = 232,
   y = 264,
   width = 368,
@@ -456,15 +447,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "1",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 48,
-  width = 544,
-  height = 16,
-  pattern = "2",
 }
 
 tile{
@@ -510,15 +492,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "10",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 272,
-  width = 64,
-  height = 16,
-  pattern = "8",
 }
 
 tile{
@@ -667,24 +640,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 240,
-  y = 272,
-  width = 352,
-  height = 16,
-  pattern = "8",
-}
-
-tile{
-  layer = 0,
-  x = 240,
-  y = 336,
-  width = 128,
-  height = 16,
-  pattern = "2",
-}
-
-tile{
-  layer = 0,
   x = 232,
   y = 352,
   width = 128,
@@ -699,15 +654,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "1",
-}
-
-tile{
-  layer = 0,
-  x = 464,
-  y = 336,
-  width = 128,
-  height = 16,
-  pattern = "2",
 }
 
 tile{
@@ -753,15 +699,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "10",
-}
-
-tile{
-  layer = 0,
-  x = 464,
-  y = 560,
-  width = 288,
-  height = 16,
-  pattern = "8",
 }
 
 tile{
@@ -906,15 +843,6 @@ tile{
   width = 256,
   height = 8,
   pattern = "65",
-}
-
-tile{
-  layer = 0,
-  x = 624,
-  y = 336,
-  width = 128,
-  height = 16,
-  pattern = "2",
 }
 
 tile{
@@ -1286,6 +1214,87 @@ tile{
   pattern = "66",
 }
 
+tile{
+  layer = 0,
+  x = 184,
+  y = 544,
+  width = 24,
+  height = 32,
+  pattern = "23",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 544,
+  width = 24,
+  height = 32,
+  pattern = "24",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 336,
+  width = 128,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 336,
+  width = 128,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 560,
+  width = 288,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 48,
+  width = 544,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 272,
+  width = 352,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 272,
+  width = 64,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 336,
+  width = 128,
+  height = 16,
+  pattern = "3",
+}
+
 chest{
   name = "chest_heart_piece",
   layer = 0,
@@ -1545,6 +1554,15 @@ tile{
   width = 64,
   height = 240,
   pattern = "524",
+}
+
+tile{
+  layer = 2,
+  x = 80,
+  y = 336,
+  width = 128,
+  height = 16,
+  pattern = "3",
 }
 
 separator{
