@@ -85,9 +85,7 @@ function credits_menu:on_started()
                 show_group(7)
                 sol.timer.start(map, 10000, function()
                   show_group(8)
-                  sol.timer.start(map, 6000, function()
-                    end_credits()
-                  end)
+                  sol.timer.start(map, 6000, function() end_credits() end)
                 end)
               end)
             end)
@@ -96,7 +94,6 @@ function credits_menu:on_started()
       end)
     end)
   end)
-
 end
 
 function credits_menu:on_finished()
@@ -105,7 +102,9 @@ end
 
 function credits_menu:on_draw(dst_surface)
   local camera_x, camera_y, camera_width, camera_height = game:get_map():get_camera_position()
-  dst_surface:fill_color({0,0,0})
+  local credits_background = sol.surface.create("menus/credits_background")
+  credits_background:draw(dst_surface)
+
   if self.group ~= nil then
     self.group:draw(dst_surface, (camera_width/2)-150, (camera_height/2)-80)
   end
