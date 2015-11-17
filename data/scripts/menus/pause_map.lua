@@ -53,7 +53,7 @@ function map_submenu:on_started()
       self.world_minimap_visible_xy.y = math.min(self.outside_world_minimap_size.height - 133, math.max(0, hero_minimap_y - 65))
     elseif self.game:get_item("world_map"):get_variant() > 2 and self.game:get_map():get_world() == "outside_north" then
       map_shown = true      -- If in North Hyrule with upgraded World Map, then show the map.
-      self.outside_world_size = { width = 16800, height = 8600 }
+      self.outside_world_size = { width = 17000, height = 6600 }
       self.outside_world_minimap_size = { width = 225, height = 133 }
       self.world_minimap_img = sol.surface.create("menus/outside_world_map_3.png")
       local hero_minimap_x = math.floor(hero_absolute_x * self.outside_world_minimap_size.width / self.outside_world_size.width)
