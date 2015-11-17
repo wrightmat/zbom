@@ -287,3 +287,7 @@ function spoils_ore:on_interaction()
     end
   end)
 end
+
+function hylian_2:on_interaction()
+  game:start_dialog("hylian_2.0.rauru")
+end

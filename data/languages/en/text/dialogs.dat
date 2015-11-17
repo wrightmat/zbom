@@ -5548,6 +5548,19 @@ them all!
 }
 
 dialog{
+  id = "hylian_1.0.rauru",
+  text = [[
+Of course I always have an umbrella! You
+must be new here to know how often it
+rains in this area. My theory is that the
+fog from the Forest of Deception in the
+north-west causes the weird weather
+patterns throughout this area of Hyrule.
+Do you think that's true?
+]]
+}
+
+dialog{
   id = "hylian_2.0.kakariko",
   skip = "current",
   text = [[
@@ -5559,6 +5572,20 @@ mountains are up north, even with snowy
 ones way up there! Then the $g    Zoras$w and
 $gGorons$w are to the east and  $b Castle Town$w
 is pretty close to the south!
+]]
+}
+
+dialog{
+  id = "hylian_2.0.rauru",
+  text = [[
+Have you heard of the  $b Forest of Deception$w
+that's north-west of the Castle? I would
+not recommend going there unless you have
+a powerful spirit captured in a bottle.
+These spirits serve as guides in scary,
+foggy places like that. The best place to
+capture a spirit is the  $b King's Tomb$w
+graveyard east of here.
 ]]
 }
 

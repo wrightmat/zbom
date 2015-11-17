@@ -3572,8 +3572,52 @@ tile{
   pattern = "522",
 }
 
+teletransporter{
+  name = "to_house_1",
+  layer = 0,
+  x = 296,
+  y = 408,
+  width = 16,
+  height = 16,
+  destination_map = "8",
+  destination = "enter_rauru_1",
+}
+
+teletransporter{
+  name = "to_house_3",
+  layer = 0,
+  x = 800,
+  y = 584,
+  width = 16,
+  height = 16,
+  destination_map = "8",
+  destination = "enter_rauru_3",
+}
+
+teletransporter{
+  name = "to_house_4",
+  layer = 0,
+  x = 872,
+  y = 952,
+  width = 16,
+  height = 16,
+  destination_map = "8",
+  destination = "enter_rauru_4",
+}
+
+teletransporter{
+  name = "to_house_2",
+  layer = 0,
+  x = 392,
+  y = 880,
+  width = 16,
+  height = 16,
+  destination_map = "8",
+  destination = "enter_rauru_2",
+}
+
 sensor{
-  name = "door_sensor_1",
+  name = "house_1_door_sensor",
   layer = 0,
   x = 296,
   y = 445,
@@ -3685,7 +3729,7 @@ dynamic_tile{
 }
 
 dynamic_tile{
-  name = "julita_door",
+  name = "house_1_door",
   layer = 0,
   x = 296,
   y = 416,
@@ -3696,7 +3740,7 @@ dynamic_tile{
 }
 
 sensor{
-  name = "door_sensor_2",
+  name = "house_2_door_sensor",
   layer = 0,
   x = 392,
   y = 917,
@@ -3748,7 +3792,7 @@ dynamic_tile{
 }
 
 dynamic_tile{
-  name = "julita_door_2",
+  name = "house_2_door",
   layer = 0,
   x = 392,
   y = 888,
@@ -3759,7 +3803,7 @@ dynamic_tile{
 }
 
 sensor{
-  name = "door_sensor_3",
+  name = "house_3_door_sensor",
   layer = 0,
   x = 800,
   y = 621,
@@ -3811,7 +3855,7 @@ dynamic_tile{
 }
 
 dynamic_tile{
-  name = "julita_door_3",
+  name = "house_3_door",
   layer = 0,
   x = 800,
   y = 592,
@@ -3822,7 +3866,7 @@ dynamic_tile{
 }
 
 sensor{
-  name = "door_sensor_4",
+  name = "house_4_door_sensor",
   layer = 0,
   x = 872,
   y = 989,
@@ -3874,7 +3918,7 @@ dynamic_tile{
 }
 
 dynamic_tile{
-  name = "julita_door_4",
+  name = "house_4_door",
   layer = 0,
   x = 872,
   y = 960,
@@ -4296,6 +4340,16 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/mailbox",
+}
+
+npc{
+  name = "hylian_1",
+  layer = 0,
+  x = 696,
+  y = 709,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/hylian_11",
 }
 
 tile{
