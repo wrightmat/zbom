@@ -24,14 +24,13 @@ local state
 -- "finished": An action was validated in the menu.
 
 function game:on_game_over_started()
-
   -- Attach the game-over menu to the map so that the map's fade-out
   -- effect applies to it when restarting the game.
+  if game:get_hero():is_condition_active('cursed') then game:get_hero():stop_cursed() end -- Otherwise sword is permanently disabled!
   sol.menu.start(game:get_map(), game_over_menu)
 end
 
 function game_over_menu:on_started()
-
   local hero = game:get_hero()
   hero_was_visible = hero:is_visible()
   hero:set_visible(false)
@@ -105,7 +104,6 @@ function game_over_menu:on_started()
 end
 
 function game_over_menu:on_finished()
-
   local hero = game:get_hero()
   if hero ~= nil then
     hero:set_visible(hero_was_visible)
@@ -124,7 +122,6 @@ local black = {0, 0, 0}
 local red = {224, 32, 32}
 
 function game_over_menu:on_draw(dst_surface)
-
   if state ~= "waiting_start" and state ~= "closing_game" then
     -- Hide the whole map.
     dst_surface:fill_color(black)
@@ -149,7 +146,6 @@ function game_over_menu:on_draw(dst_surface)
 end
 
 function game_over_menu:on_command_pressed(command)
-
   if state ~= "menu" then
     -- Commands are not available during the game-over opening animations.
     return
@@ -191,4 +187,3 @@ function game_over_menu:on_command_pressed(command)
     end
   end
 end
-

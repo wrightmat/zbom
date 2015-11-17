@@ -3403,6 +3403,25 @@ enemy{
   treasure_name = "random_north",
 }
 
+destination{
+  name = "from_cave",
+  layer = 0,
+  x = 136,
+  y = 53,
+  direction = 3,
+}
+
+teletransporter{
+  name = "to_cave",
+  layer = 0,
+  x = 128,
+  y = 24,
+  width = 16,
+  height = 16,
+  destination_map = "9",
+  destination = "from_A1",
+}
+
 tile{
   layer = 1,
   x = 120,

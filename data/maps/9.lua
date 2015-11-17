@@ -21,8 +21,8 @@ function map:on_started(destination)
     blacksmith_water:set_enabled(true)
   end
   if game:get_value("i1840") >= 7 then
-    blocker:set_enabled(false)
-    npc_moblin:remove()
+    if blocker ~= nil then blocker:set_enabled(false) end
+    if npc_moblin ~= nil then npc_moblin:remove() end
   end
 end
 
