@@ -31,8 +31,8 @@ end
 
 function map:on_update()
   if num_tries == 3 and not game_lost then
+    game_lost = true
     game:start_dialog("monkey.2.faron", function()
-      game_lost = true
       map:get_hero():teleport("20", "from_game")
     end)
   end
