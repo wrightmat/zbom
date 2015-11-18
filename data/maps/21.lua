@@ -1,5 +1,6 @@
 local map = ...
 local game = map:get_game()
+local hero = map:get_hero()
 local ship_timer = nil
 
 -------------------------------------------------------------------------------------------------
@@ -27,14 +28,14 @@ function map:on_started(destination)
   if destination == from_temple then
     sol.audio.play_music("faron_woods")
     if game:get_value("b1061") and game:get_value("i1068") < 9 then
-      -- Temple is complete- have monkey steal book page and jump away
+      -- Temple is complete- have monkey steal book page and jump away.
       npc_monkey:set_position(648, 752, 2)
       sol.audio.play_sound("monkey")
       game:set_dialog_style("default")
       sol.timer.start(1000, function()
         sol.audio.play_sound("monkey")
         game:start_dialog("monkey1.1.grove", function()
-          game:get_item("book_mudora"):set_variant(0) --take away book page
+          game:get_item("book_mudora"):set_variant(0) -- Take away book page.
           game:set_value("b1061", false)
           sol.timer.start(300, function()
             sol.audio.play_sound("monkey")
@@ -81,7 +82,7 @@ function map:on_started(destination)
     end--if
   end
   if game:get_item("airship_part"):get_variant() == 3 or (game:get_value("b1087") and game:get_value("b1088") and game:get_value("b1089") and game:get_value("i1068") == 3) then
-    -- If player has all three airship parts, proceed with Gerudo storyline
+    -- If player has all three airship parts, proceed with Gerudo storyline.
     game:set_value("i1068", 4)
   end
   if game:get_value("i1068") == 2 then
@@ -138,7 +139,7 @@ function npc_gerudo_leader:on_interaction()
       game:start_dialog("hesla.2.beach", function()
         hero:start_treasure("world_map")
         game:set_value("i1068", 3)
-        -- Move Hesla out of the way so we can get to the beach
+        -- Move Hesla out of the way so we can get to the beach.
         local m = sol.movement.create("target")
         npc_gerudo_leader:get_sprite():set_animation("walking")
         m:set_speed(24)
@@ -152,11 +153,11 @@ function npc_gerudo_leader:on_interaction()
       game:start_dialog("hesla.3.beach")
     elseif game:get_value("i1068") == 4 then
       game:start_dialog("hesla.4.beach")
-      game:get_item("airship_part"):set_variant(0) --take airship parts from inventory
+      game:get_item("airship_part"):set_variant(0) -- Take airship parts from inventory.
       game:set_value("i1068", 5)
     elseif game:get_value("i1068") == 5 then
       game:start_dialog("hesla.5.beach")
-      -- After 5 real-time minutes the ship will be repaired
+      -- After 5 real-time minutes the ship will be repaired.
       sol.timer.start(game, 30000, function()
         ship_timer = game:set_value("i1068", 6)
       end)
@@ -187,7 +188,7 @@ function npc_monkey:on_interaction()
 end
 
 function sensor_water_bottle:on_activated()
-  if game:has_bottle() and game:get_hero():get_direction() == 3 then
+  if game:has_bottle() and hero:get_direction() == 3 then
     local first_empty_bottle = game:get_first_empty_bottle()
     if first_empty_bottle ~= nil then
       game:start_dialog("found_water", function(answer)

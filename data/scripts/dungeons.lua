@@ -88,7 +88,12 @@ game.dungeons = {
 function game:get_dungeon_index()
   local world = self:get_map():get_world()
   local index = tonumber(world:match("^dungeon_([0-9]+)$"))
-  return index
+  -- Special case for Sacred Grove Temple since it's indoor and outdoor - return to world map when dungeon is complete.
+  if game:is_dungeon_finished(2) and (self:get_map():get_id() == "20" or self:get_map():get_id() == "21" or self:get_map():get_id() == "22") then
+    return nil
+  else
+    return index
+  end
 end
 
 -- Returns the current dungeon if any, or nil.

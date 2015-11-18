@@ -31,7 +31,7 @@ function map_submenu:on_started()
 
     self.world_minimap_movement = nil
     self.world_minimap_visible_xy = {x = 0, y = 0}
-    if self.game:get_item("world_map"):get_variant() > 0 and self.game:get_map():get_world() == "outside_world" then
+    if self.game:get_item("world_map"):get_variant() > 0 and (self.game:get_map():get_world() == "outside_world"  or self.game:get_map():get_id() == "20" or self.game:get_map():get_id() == "21" or self.game:get_map():get_id() == "22") then
       map_shown = true      -- If in South Hyrule with World Map, then show the map.
       self.outside_world_size = { width = 7700, height = 13452 }
       self.outside_world_minimap_size = { width = 225, height = 266 }
