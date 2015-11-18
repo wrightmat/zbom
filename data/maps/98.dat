@@ -2715,7 +2715,7 @@ enemy{
 wall{
   layer = 0,
   x = 184,
-  y = 616,
+  y = 624,
   width = 32,
   height = 16,
   stops_hero = true,
@@ -2728,7 +2728,7 @@ wall{
 wall{
   layer = 0,
   x = 304,
-  y = 712,
+  y = 720,
   width = 32,
   height = 16,
   stops_hero = true,
@@ -2741,7 +2741,7 @@ wall{
 wall{
   layer = 0,
   x = 72,
-  y = 712,
+  y = 720,
   width = 32,
   height = 16,
   stops_hero = true,
@@ -2749,6 +2749,25 @@ wall{
   stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
+}
+
+destination{
+  name = "from_cave",
+  layer = 0,
+  x = 200,
+  y = 677,
+  direction = 1,
+}
+
+teletransporter{
+  name = "to_cave",
+  layer = 0,
+  x = 192,
+  y = 640,
+  width = 16,
+  height = 16,
+  destination_map = "9",
+  destination = "from_D3",
 }
 
 tile{

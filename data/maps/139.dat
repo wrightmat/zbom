@@ -4129,27 +4129,27 @@ teletransporter{
 
 wall{
   layer = 0,
-  x = 280,
+  x = 272,
   y = 640,
-  width = 16,
+  width = 32,
   height = 16,
   stops_hero = true,
 }
 
 wall{
   layer = 0,
-  x = 424,
+  x = 416,
   y = 496,
-  width = 16,
+  width = 32,
   height = 16,
   stops_hero = true,
 }
 
 wall{
   layer = 0,
-  x = 568,
+  x = 560,
   y = 640,
-  width = 16,
+  width = 32,
   height = 16,
   stops_hero = true,
 }
@@ -4169,6 +4169,25 @@ custom_entity{
   y = 325,
   direction = 0,
   model = "ocarina_patch",
+}
+
+destination{
+  name = "from_cave",
+  layer = 0,
+  x = 432,
+  y = 549,
+  direction = 3,
+}
+
+teletransporter{
+  name = "to_cave",
+  layer = 0,
+  x = 424,
+  y = 512,
+  width = 16,
+  height = 16,
+  destination_map = "9",
+  destination = "from_M6",
 }
 
 tile{
