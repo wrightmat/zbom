@@ -4,7 +4,6 @@ local game = item:get_game()
 function item:on_created()
   self:set_shadow("small")
   self:set_can_disappear(false)
-  self:set_brandish_when_picked(false)
 end
 
 -- Obtaining Goddess Plume

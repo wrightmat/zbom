@@ -74,5 +74,5 @@ function enemy:go_torch()
   m:set_speed(32)
   m:start(self)
   going_hero = false
-  timer = sol.timer.start(self, random(10)*500, function() self:check_hero() end)
+  timer = sol.timer.start(self, math.random(10)*500, function() self:check_hero() end)
 end
