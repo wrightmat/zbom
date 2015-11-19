@@ -5,11 +5,12 @@ local initial_y = 10
 local initial_volume 
 local index
 local hero_x, hero_y
+local matched = {}
 
 -- Warp point name, Companion point, Warp to map, Coordinate x on minimap, Coordinate y on minimap, Name of warp.
 warp_points = {         -- Intentionally Global!
-  b1500 = { "b1501", "133", 166, 102, "Old Kasuto" },
-  b1501 = { "b1500", "46", 178, 220, "Hidden Village" },
+  b1500 = { "b1501", "133", 166, 102, "Old Kasuto" },     -- Patch at Hidden Village (G8)
+  b1501 = { "b1500", "46", 178, 220, "Hidden Village" },  -- Patch at Old Kasuto (L5)
   b1502 = { "b1503", "51", 90, 194, "Kakariko City" },
   b1503 = { "b1502", "11", 162, 372, "Ordon Village" },
   b1504 = { "b1505", "72", 2, 228, "Gerudo Camp" },
@@ -61,11 +62,16 @@ function warp_menu:on_started()
   -- Initialize the cursor and scroll map to initial point.
   for k, v in pairs(warp_points) do
     if k == initial_point then
-      index = k
+      index = v[1]
       self:set_cursor_position(v[3], v[4])
       if v[4] >= 133 then initial_y = v[4] - 133 + 10 end
       self.world_minimap_visible_xy = {x = 0, y = initial_y }
     end
+  end
+
+  -- Build new table just for matched points.
+  for k, v in pairs(warp_points) do
+    if game:get_value(v[1]) then table.insert(matched, v[1]) end
   end
 
   -- Ensure the hero can't move.
@@ -79,15 +85,12 @@ function warp_menu:on_started()
 end
 
 function warp_menu:on_command_pressed(command)
-  if command == "left" or command == "up" then
-    self:previous_warp_point()
-    handled = true
-  elseif command == "right" or command == "down" then
+  if command == "left" or command == "up" or command == "right" or command == "down" then
     self:next_warp_point()
     handled = true
   elseif command == "action" or command == "attack" then
     for k, v in pairs(warp_points) do
-      if k == index and game:get_value(v[1]) then
+      if v[1] == index and game:get_value(v[1]) then
         game:start_dialog("warp.to_"..v[2], function(answer)
           if answer == 1 then
             sol.menu.stop(warp_menu)
@@ -108,59 +111,30 @@ function warp_menu:on_command_pressed(command)
 end
 
 function warp_menu:next_warp_point()
-  if index == "b1500" then index = "b1501"
-  elseif index == "b1501" then index = "b1502"
-  elseif index == "b1502" then index = "b1503"
-  elseif index == "b1503" then index = "b1504"
-  elseif index == "b1504" then index = "b1505"
-  elseif index == "b1505" then index = "b1506"
-  elseif index == "b1506" then index = "b1507"
-  elseif index == "b1507" then index = "b1508"
-  elseif index == "b1508" then index = "b1509"
-  elseif index == "b1509" then index = "b1510"
-  elseif index == "b1510" then index = "b1511"
-  elseif index == "b1511" then index = "b1512"
-  elseif index == "b1512" then index = "b1513"
-  elseif index == "b1513" then index = "b1514"
-  elseif index == "b1514" then index = "b1515"
-  elseif index == "b1515" then index = "b1500" end
+  local matched_index = 1
 
   -- Move cursor and scroll map to new warp point.
-  for k, v in pairs(warp_points) do
-    if k == index and game:get_value(v[1]) then
-      self:set_cursor_position(v[3], v[4])
-      if v[4] >= 133 then initial_y = v[4] - 133 + 10 else initial_y = 0 end
-      self.world_minimap_visible_xy = {x = 0, y = initial_y }
+  for k, v in ipairs(matched) do
+    if k == matched_index then
+      index = v
+      for k, v in pairs(warp_points) do
+        if v[1] == index then
+          self:set_cursor_position(v[3], v[4])
+          if v[4] >= 133 then initial_y = v[4] - 133 + 10 else initial_y = 0 end
+          self.world_minimap_visible_xy = {x = 0, y = initial_y }
+        end
+      end
+      table.remove(matched, matched_index)
     end
   end
-end
 
-function warp_menu:previous_warp_point()
-  if index == "b1500" then index = "b1515"
-  elseif index == "b1501" then index = "b1500"
-  elseif index == "b1502" then index = "b1501"
-  elseif index == "b1503" then index = "b1502"
-  elseif index == "b1504" then index = "b1503"
-  elseif index == "b1505" then index = "b1504"
-  elseif index == "b1506" then index = "b1505"
-  elseif index == "b1507" then index = "b1506"
-  elseif index == "b1508" then index = "b1507"
-  elseif index == "b1509" then index = "b1508"
-  elseif index == "b1510" then index = "b1509"
-  elseif index == "b1511" then index = "b1510"
-  elseif index == "b1512" then index = "b1511"
-  elseif index == "b1513" then index = "b1512"
-  elseif index == "b1514" then index = "b1513"
-  elseif index == "b1515" then index = "b1514" end
-
-  -- Move cursor and scroll map to new warp point.
-  for k, v in pairs(warp_points) do
-    if k == index and game:get_value(v[1]) then
-      self:set_cursor_position(v[3], v[4])
-      if v[4] >= 133 then initial_y = v[4] - 133 + 10 else initial_y = 0 end
-      self.world_minimap_visible_xy = {x = 0, y = initial_y }
+  if table.getn(matched) == 0 then
+    -- Re-build table for matched points when it's been looped through.
+    for k, v in pairs(warp_points) do
+      if game:get_value(v[1]) then table.insert(matched, v[1]) end
     end
   end
+
 end
 
 function warp_menu:set_cursor_position(x, y)
@@ -170,9 +144,9 @@ function warp_menu:set_cursor_position(x, y)
     if y < 399 then self.world_minimap_visible_xy.y = y - 51 else self.world_minimap_visible_xy.y = 399 end
   end
 
-  -- Update the caption text.
+  -- Update the caption text. Only show it if that point has been discovered.
   for k, v in pairs(warp_points) do
-    if v[3] == self.cursor_x and v[4] == self.cursor_y then
+    if v[3] == self.cursor_x and v[4] == self.cursor_y and game:get_value(v[1]) then
       self.caption_text_2:set_text(v[5])
     end
   end
