@@ -6111,6 +6111,15 @@ tile{
   pattern = "64",
 }
 
+sensor{
+  name = "dungeon_room_9b_",
+  layer = 0,
+  x = 680,
+  y = 501,
+  width = 64,
+  height = 16,
+}
+
 dynamic_tile{
   name = "lava_2",
   layer = 0,
@@ -6137,9 +6146,9 @@ sensor{
   name = "dungeon_room_4_",
   layer = 0,
   x = 352,
-  y = 397,
+  y = 389,
   width = 16,
-  height = 32,
+  height = 48,
 }
 
 sensor{
@@ -6155,18 +6164,18 @@ sensor{
   name = "dungeon_room_2_",
   layer = 0,
   x = 560,
-  y = 397,
+  y = 389,
   width = 16,
-  height = 32,
+  height = 48,
 }
 
 sensor{
   name = "dungeon_room_1_",
   layer = 0,
   x = 472,
-  y = 173,
+  y = 165,
   width = 16,
-  height = 48,
+  height = 64,
 }
 
 dynamic_tile{
@@ -6781,37 +6790,37 @@ sensor{
 sensor{
   name = "dungeon_room_6_",
   layer = 0,
-  x = 192,
+  x = 184,
   y = 309,
-  width = 48,
+  width = 64,
   height = 16,
 }
 
 sensor{
   name = "dungeon_room_7_",
   layer = 0,
-  x = 192,
+  x = 184,
   y = 501,
-  width = 48,
+  width = 64,
   height = 16,
 }
 
 sensor{
   name = "dungeon_room_8_",
   layer = 0,
-  x = 688,
+  x = 680,
   y = 309,
-  width = 48,
+  width = 64,
   height = 16,
 }
 
 sensor{
-  name = "dungeon_room_9_",
+  name = "dungeon_room_9a_",
   layer = 0,
   x = 568,
-  y = 597,
+  y = 589,
   width = 16,
-  height = 48,
+  height = 64,
 }
 
 enemy{

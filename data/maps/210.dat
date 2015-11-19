@@ -11,6 +11,15 @@ properties{
 
 tile{
   layer = 0,
+  x = 496,
+  y = 440,
+  width = 352,
+  height = 304,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
   x = 848,
   y = 504,
   width = 8,
@@ -1411,15 +1420,6 @@ tile{
   width = 32,
   height = 80,
   pattern = "137",
-}
-
-tile{
-  layer = 0,
-  x = 496,
-  y = 440,
-  width = 352,
-  height = 304,
-  pattern = "22",
 }
 
 tile{
@@ -4671,6 +4671,15 @@ tile{
   pattern = "482",
 }
 
+sensor{
+  name = "dungeon_room_4b_",
+  layer = 0,
+  x = 504,
+  y = 581,
+  width = 16,
+  height = 48,
+}
+
 dynamic_tile{
   layer = 0,
   x = 280,
@@ -5401,36 +5410,36 @@ crystal_block{
 sensor{
   name = "dungeon_room_1_",
   layer = 0,
-  x = 224,
+  x = 216,
   y = 733,
-  width = 48,
+  width = 64,
   height = 16,
 }
 
 sensor{
-  name = "dungeon_room_2_",
+  name = "dungeon_room_2a_",
   layer = 0,
-  x = 224,
+  x = 216,
   y = 357,
-  width = 48,
+  width = 64,
   height = 16,
 }
 
 sensor{
-  name = "dungeon_room_3_",
+  name = "dungeon_room_3a_",
   layer = 0,
-  x = 656,
+  x = 648,
   y = 77,
-  width = 48,
+  width = 64,
   height = 16,
 }
 
 sensor{
-  name = "dungeon_room_4_",
+  name = "dungeon_room_4a_",
   layer = 0,
-  x = 656,
+  x = 648,
   y = 453,
-  width = 48,
+  width = 64,
   height = 16,
 }
 
@@ -5455,6 +5464,24 @@ teletransporter{
   destination = "miniboss_warp_dest",
   sprite = "entities/teletransporter",
   sound = "warp",
+}
+
+sensor{
+  name = "dungeon_room_2b_",
+  layer = 0,
+  x = 216,
+  y = 77,
+  width = 64,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_3b_",
+  layer = 0,
+  x = 648,
+  y = 357,
+  width = 64,
+  height = 16,
 }
 
 tile{

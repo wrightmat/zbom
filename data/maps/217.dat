@@ -3835,12 +3835,12 @@ tile{
 }
 
 sensor{
-  name = "dungeon_room_1_",
+  name = "dungeon_room_1a_",
   layer = 0,
   x = 72,
-  y = 581,
+  y = 573,
   width = 16,
-  height = 48,
+  height = 64,
 }
 
 wall{
@@ -4323,20 +4323,20 @@ teletransporter{
 }
 
 sensor{
-  name = "dungeon_room_2_",
+  name = "dungeon_room_2a_",
   layer = 0,
-  x = 224,
+  x = 216,
   y = 357,
-  width = 48,
+  width = 64,
   height = 16,
 }
 
 sensor{
   name = "dungeon_room_3_",
   layer = 0,
-  x = 656,
+  x = 648,
   y = 453,
-  width = 48,
+  width = 64,
   height = 16,
 }
 
@@ -4347,6 +4347,24 @@ npc{
   y = 429,
   direction = 3,
   subtype = 0,
+}
+
+sensor{
+  name = "dungeon_room_1b_",
+  layer = 0,
+  x = 216,
+  y = 453,
+  width = 64,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_2b_",
+  layer = 0,
+  x = 648,
+  y = 357,
+  width = 64,
+  height = 16,
 }
 
 tile{

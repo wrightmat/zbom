@@ -4716,6 +4716,15 @@ tile{
   pattern = "51",
 }
 
+sensor{
+  name = "dungeon_room_4b_",
+  layer = 0,
+  x = 504,
+  y = 573,
+  width = 16,
+  height = 64,
+}
+
 wall{
   layer = 0,
   x = 488,
@@ -5233,38 +5242,38 @@ wall{
 }
 
 sensor{
-  name = "dungeon_room_1_",
+  name = "dungeon_room_1a_",
   layer = 0,
   x = 72,
-  y = 581,
+  y = 573,
   width = 16,
-  height = 48,
+  height = 64,
 }
 
 sensor{
-  name = "dungeon_room_2_",
+  name = "dungeon_room_2a_",
   layer = 0,
-  x = 224,
+  x = 216,
   y = 357,
-  width = 48,
+  width = 64,
   height = 16,
 }
 
 sensor{
-  name = "dungeon_room_3_",
+  name = "dungeon_room_3a_",
   layer = 0,
   x = 504,
-  y = 205,
+  y = 197,
   width = 16,
-  height = 48,
+  height = 64,
 }
 
 sensor{
-  name = "dungeon_room_4_",
+  name = "dungeon_room_4a_",
   layer = 0,
-  x = 656,
+  x = 648,
   y = 453,
-  width = 48,
+  width = 64,
   height = 16,
 }
 
@@ -5395,6 +5404,33 @@ wall{
   stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
+}
+
+sensor{
+  name = "dungeon_room_1b_",
+  layer = 0,
+  x = 216,
+  y = 453,
+  width = 64,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_2b_",
+  layer = 0,
+  x = 408,
+  y = 197,
+  width = 16,
+  height = 64,
+}
+
+sensor{
+  name = "dungeon_room_3b_",
+  layer = 0,
+  x = 648,
+  y = 357,
+  width = 64,
+  height = 16,
 }
 
 tile{

@@ -6029,59 +6029,59 @@ teletransporter{
 sensor{
   name = "dungeon_room_1_",
   layer = 0,
-  x = 160,
+  x = 152,
   y = 749,
-  width = 48,
+  width = 64,
   height = 16,
 }
 
 sensor{
   name = "dungeon_room_2_",
   layer = 0,
-  x = 160,
+  x = 152,
   y = 509,
-  width = 48,
+  width = 64,
   height = 16,
 }
 
 sensor{
   name = "dungeon_room_3_",
   layer = 0,
-  x = 136,
+  x = 128,
   y = 213,
-  width = 48,
+  width = 64,
   height = 16,
 }
 
 sensor{
-  name = "dungeon_room_4_",
+  name = "dungeon_room_4a_",
   layer = 0,
   x = 392,
-  y = 413,
+  y = 405,
   width = 16,
-  height = 48,
+  height = 64,
 }
 
 sensor{
-  name = "dungeon_room_5_",
+  name = "dungeon_room_5a_",
   layer = 0,
   x = 728,
-  y = 413,
+  y = 405,
   width = 16,
-  height = 48,
+  height = 64,
 }
 
 sensor{
-  name = "dungeon_room_6_",
+  name = "dungeon_room_6a_",
   layer = 0,
   x = 1272,
-  y = 413,
+  y = 405,
   width = 16,
-  height = 48,
+  height = 64,
 }
 
 sensor{
-  name = "dungeon_room_7_",
+  name = "dungeon_room_7a_",
   layer = 0,
   x = 1352,
   y = 589,
@@ -6090,29 +6090,29 @@ sensor{
 }
 
 sensor{
-  name = "dungeon_room_8_",
+  name = "dungeon_room_8a_",
   layer = 0,
   x = 1560,
-  y = 717,
+  y = 709,
   width = 16,
-  height = 48,
+  height = 64,
 }
 
 sensor{
-  name = "dungeon_room_9_",
+  name = "dungeon_room_9a_",
   layer = 0,
   x = 1880,
-  y = 653,
+  y = 645,
   width = 16,
-  height = 48,
+  height = 64,
 }
 
 sensor{
   name = "dungeon_room_10_",
   layer = 0,
-  x = 2016,
+  x = 2008,
   y = 365,
-  width = 48,
+  width = 64,
   height = 16,
 }
 
@@ -6134,6 +6134,69 @@ npc{
   subtype = 0,
   sprite = "entities/torch",
   behavior = "item#lamp",
+}
+
+sensor{
+  name = "dungeon_room_4b_",
+  layer = 0,
+  x = 392,
+  y = 637,
+  width = 16,
+  height = 64,
+}
+
+sensor{
+  name = "dungeon_room_4c_",
+  layer = 0,
+  x = 632,
+  y = 405,
+  width = 16,
+  height = 64,
+}
+
+sensor{
+  name = "dungeon_room_5b_",
+  layer = 0,
+  x = 1176,
+  y = 405,
+  width = 16,
+  height = 64,
+}
+
+sensor{
+  name = "dungeon_room_6b_",
+  layer = 0,
+  x = 1344,
+  y = 493,
+  width = 64,
+  height = 16,
+}
+
+sensor{
+  name = "dungeon_room_7b_",
+  layer = 0,
+  x = 1464,
+  y = 709,
+  width = 16,
+  height = 64,
+}
+
+sensor{
+  name = "dungeon_room_8b_",
+  layer = 0,
+  x = 1768,
+  y = 645,
+  width = 16,
+  height = 64,
+}
+
+sensor{
+  name = "dungeon_room_9b_",
+  layer = 0,
+  x = 2008,
+  y = 477,
+  width = 64,
+  height = 16,
 }
 
 tile{

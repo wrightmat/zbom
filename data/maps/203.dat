@@ -8156,15 +8156,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1384,
-  y = 1704,
-  width = 64,
-  height = 24,
-  pattern = "557",
-}
-
-tile{
-  layer = 0,
   x = 704,
   y = 976,
   width = 32,
@@ -9835,6 +9826,50 @@ tile{
   width = 112,
   height = 8,
   pattern = "65",
+}
+
+destructible{
+  layer = 0,
+  x = 1392,
+  y = 1717,
+  treasure_name = "random",
+  sprite = "entities/vines",
+  destruction_sound = "bush",
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 1408,
+  y = 1717,
+  treasure_name = "random",
+  sprite = "entities/vines",
+  destruction_sound = "bush",
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 1424,
+  y = 1717,
+  treasure_name = "random",
+  sprite = "entities/vines",
+  destruction_sound = "bush",
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 1440,
+  y = 1717,
+  treasure_name = "random",
+  sprite = "entities/vines",
+  destruction_sound = "bush",
+  can_be_cut = true,
+  damage_on_enemies = 0,
 }
 
 wall{
@@ -13415,9 +13450,9 @@ npc{
 sensor{
   name = "dungeon_room_1_",
   layer = 0,
-  x = 600,
+  x = 592,
   y = 1405,
-  width = 48,
+  width = 64,
   height = 16,
 }
 
@@ -13425,17 +13460,17 @@ sensor{
   name = "dungeon_room_2_b1066",
   layer = 0,
   x = 360,
-  y = 1301,
+  y = 1293,
   width = 16,
-  height = 48,
+  height = 64,
 }
 
 sensor{
   name = "dungeon_room_3_",
   layer = 0,
-  x = 200,
+  x = 192,
   y = 1117,
-  width = 48,
+  width = 64,
   height = 16,
 }
 
@@ -13443,17 +13478,17 @@ sensor{
   name = "dungeon_room_4_",
   layer = 0,
   x = 472,
-  y = 1013,
+  y = 1005,
   width = 16,
-  height = 48,
+  height = 64,
 }
 
 sensor{
   name = "dungeon_room_5_",
   layer = 0,
-  x = 1000,
+  x = 992,
   y = 829,
-  width = 48,
+  width = 64,
   height = 16,
 }
 
@@ -13461,27 +13496,27 @@ sensor{
   name = "dungeon_room_6_",
   layer = 0,
   x = 1272,
-  y = 725,
+  y = 717,
   width = 16,
-  height = 48,
+  height = 64,
 }
 
 sensor{
   name = "dungeon_room_7_",
   layer = 0,
   x = 1672,
-  y = 725,
+  y = 717,
   width = 16,
-  height = 48,
+  height = 64,
 }
 
 sensor{
   name = "dungeon_room_8_",
   layer = 0,
   x = 1560,
-  y = 1013,
+  y = 1005,
   width = 16,
-  height = 48,
+  height = 64,
 }
 
 wall{
@@ -13542,9 +13577,9 @@ wall{
 sensor{
   name = "dungeon_room_9_",
   layer = 0,
-  x = 1400,
+  x = 1392,
   y = 1229,
-  width = 48,
+  width = 64,
   height = 16,
 }
 
@@ -13552,9 +13587,9 @@ sensor{
   name = "dungeon_room_10_b1055",
   layer = 0,
   x = 1672,
-  y = 1301,
+  y = 1293,
   width = 16,
-  height = 48,
+  height = 64,
 }
 
 wall{
@@ -13571,9 +13606,9 @@ wall{
 sensor{
   name = "dungeon_room_11_",
   layer = 0,
-  x = 1800,
+  x = 1792,
   y = 1517,
-  width = 48,
+  width = 64,
   height = 16,
 }
 
@@ -13581,35 +13616,35 @@ sensor{
   name = "dungeon_room_12_",
   layer = 0,
   x = 1560,
-  y = 1589,
+  y = 1581,
   width = 16,
-  height = 48,
+  height = 64,
 }
 
 sensor{
   name = "dungeon_room_13_",
   layer = 0,
   x = 1160,
-  y = 1589,
+  y = 1581,
   width = 16,
-  height = 48,
+  height = 64,
 }
 
 sensor{
-  name = "dungeon_room_18_",
+  name = "dungeon_room_18a_",
   layer = 0,
   x = 1160,
-  y = 1301,
+  y = 1293,
   width = 16,
-  height = 48,
+  height = 64,
 }
 
 sensor{
   name = "dungeon_room_14_",
   layer = 0,
-  x = 1000,
+  x = 992,
   y = 541,
-  width = 48,
+  width = 64,
   height = 16,
 }
 
@@ -13650,17 +13685,17 @@ sensor{
   name = "dungeon_room_15_",
   layer = 0,
   x = 760,
-  y = 437,
+  y = 429,
   width = 16,
-  height = 48,
+  height = 64,
 }
 
 sensor{
   name = "dungeon_room_16_",
   layer = 0,
-  x = 600,
+  x = 592,
   y = 253,
-  width = 48,
+  width = 64,
   height = 16,
 }
 
@@ -13668,9 +13703,9 @@ sensor{
   name = "dungeon_room_17_",
   layer = 0,
   x = 872,
-  y = 149,
+  y = 141,
   width = 16,
-  height = 48,
+  height = 64,
 }
 
 wall{
@@ -13731,9 +13766,9 @@ wall{
 sensor{
   name = "dungeon_room_19_",
   layer = 0,
-  x = 1808,
+  x = 1800,
   y = 205,
-  width = 32,
+  width = 48,
   height = 16,
 }
 
@@ -13741,9 +13776,9 @@ sensor{
   name = "dungeon_room_18b_",
   layer = 0,
   x = 872,
-  y = 1301,
+  y = 1293,
   width = 16,
-  height = 48,
+  height = 64,
 }
 
 wall{
