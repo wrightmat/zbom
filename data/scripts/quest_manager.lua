@@ -61,8 +61,8 @@ local function initialize_sensors()
       if signal ~= nil and not game:get_value(signal) then
         if game:has_dungeon_compass(game:get_dungeon_index()) then
           sol.audio.play_sound("signal")
-          name:set_enabled(false)  -- Disable and re-enabled after 10 seconds to avoid multiple chimes.
-          sol.timer.start(game, 10000, function() name:set_enabled(true) end)
+          self:set_enabled(false)  -- Disable and re-enabled after 10 seconds to avoid multiple chimes.
+          sol.timer.start(game, 10000, function() self:set_enabled(true) end)
         end
       end
     end
