@@ -38,9 +38,7 @@ function magic_bar:check()
       self.magic_displayed = max_magic
     end
     self.max_magic_displayed = max_magic
-    if max_magic > 0 then
-      self.container_sprite:set_direction(max_magic / 42 - 1)
-    end
+    if max_magic > 0 then self.container_sprite:set_direction(max_magic / 42 - 1) end
   end
 
   -- Current magic.

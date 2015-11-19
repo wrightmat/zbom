@@ -39,7 +39,7 @@ function entity:on_created()
   if game:get_map():get_id() == "1" then
     if game:get_value("i1027") == 4 then self:remove() end
     if game:get_value("i1032") >= 3 then
-      -- Julita and Crista switch places at this time: Crista at home, Julita running the shop
+      -- Julita and Crista switch places at this time: Crista at home, Julita running the shop.
       self:set_position(1128, 557)
     else
       -- Normally Crista is at the shop and Julita is at home.
@@ -51,7 +51,7 @@ end
 function entity:on_interaction()
   game:set_dialog_style("default")
   if game:get_map():get_id() == "28" then
-    -- Faron Woods access to sewer, to get sword
+    -- Faron Woods access to sewer, to get sword.
     if game:get_value("i1901") >= 1 then
       if not map:has_entities("chuchu") and game:get_value("i1027") <= 4 then 
         game:start_dialog("crista.1.woods")
@@ -76,7 +76,7 @@ function entity:on_interaction()
       end
     end
   elseif game:get_value("b2020") and not game:get_value("b2022") then
-    -- Has odd mushroom
+    -- Has odd mushroom (trading sequence).
     if game:get_value("i2021") >= 1 then
       game:start_dialog("crista.0.potion_work", function()
         if game:get_value("i2021") < 10 then game:set_value("i2021", game:get_value("i2021")+1) end
@@ -85,14 +85,15 @@ function entity:on_interaction()
       game:start_dialog("crista.0.shop_mushroom", function(answer)
         if answer == 1 then
           game:start_dialog("crista.0.potion_work_yes", function()
-            game:set_value("i2021", 1) -- start potion counter
+            game:set_value("i2021", 1) -- Start potion counter.
+            map:get_entity("quest_trading_potion"):remove()
 	  end)
         else
           game:start_dialog("crista.0.potion_work_no")
         end
       end)
     end
-  elseif game:get_value("i1847") >= 25 then  -- Has enough deku sticks for revitalizing potion
+  elseif game:get_value("i1847") >= 25 then  -- Has enough deku sticks for revitalizing potion.
     if game:get_value("i2015") >= 1 then
       game:start_dialog("crista.0.potion_work", function()
         if game:get_value("i2015") < 10 then game:set_value("i2015", game:get_value("i2015")+1) end
@@ -101,14 +102,14 @@ function entity:on_interaction()
       game:start_dialog("crista.0.shop_deku_sticks_2", function(answer)
         if answer == 1 then
           game:start_dialog("crista.0.potion_work_yes", function()
-            game:set_value("i2015", 1) -- start potion counter
+            game:set_value("i2015", 1) -- Start potion counter.
 	  end)
         else
           game:start_dialog("crista.0.potion_work_no")
         end
       end)
     end
-  elseif game:get_value("i1847") >= 10 then  -- Has enough deku sticks for blue potion
+  elseif game:get_value("i1847") >= 10 then  -- Has enough deku sticks for blue potion.
     if game:get_value("i2014") >= 1 then
       game:start_dialog("crista.0.potion_work", function()
         if game:get_value("i2014") < 10 then game:set_value("i2014", game:get_value("i2014")+1) end
@@ -117,7 +118,7 @@ function entity:on_interaction()
       game:start_dialog("crista.0.shop_deku_sticks_1", function(answer)
         if answer == 1 then
           game:start_dialog("crista.0.potion_work_yes", function()
-            game:set_value("i2014", 1) -- start potion counter
+            game:set_value("i2014", 1) -- Start potion counter.
 	  end)
         else
           game:start_dialog("crista.0.potion_work_no")
@@ -127,7 +128,7 @@ function entity:on_interaction()
   else
     local rand = math.random(4)
     if rand == 1 and game:get_item("trading"):get_variant() < 1 then
-      -- Randomly mention the mushroom on occasion (if not already obtained) or deku sticks
+      -- Randomly mention the mushroom on occasion (if not already obtained) or deku sticks.
       game:start_dialog("crista.1.shop_mushroom", game:get_player_name())
     elseif rand == 2 then
       game:start_dialog("crista.1.shop_deku_stick", game:get_player_name())

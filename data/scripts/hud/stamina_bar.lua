@@ -74,6 +74,7 @@ function stamina_bar:rebuild_surface()
 
   -- Max stamina.
   self.container_img:draw_region(46, 8, 2 + self.max_stamina_displayed/12, 8, self.surface)
+  self.container_img:draw_region(132, 8, 2, 8, self.surface, self.max_stamina_displayed/12 + 2, 0)
 
   -- Current stamina (divided so it takes up less space).
   self.stamina_bar_img:draw_region(46, 32, 2 + self.stamina_displayed/12, 8, self.surface)

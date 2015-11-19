@@ -2897,6 +2897,13 @@ has been bathed in light for long enough!
 
 dialog{
   id = "bilo.0",
+  text = [[
+Hey there hero, how are you doing today?
+]]
+}
+
+dialog{
+  id = "bilo.0.festival",
   skip = "current",
   text = [[
 Such a beautiful day for a festival,

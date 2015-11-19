@@ -5,7 +5,6 @@ local map = entity:get_game():get_map()
 if game:get_value("i1027")==nil then game:set_value("i1027", 0) end
 if game:get_value("i1032")==nil then game:set_value("i1032", 0) end
 if game:get_value("i1905")==nil then game:set_value("i1905", 0) end
-if game:get_value("i3005")==nil then game:set_value("i3005", 0) end
 
 -- Bilo is a minor NPC who lives in Ordon.
 -- He can be found traveling around, looking for a more permanent home.
@@ -42,8 +41,8 @@ function entity:on_interaction()
   if map:get_id() == "32" then
     game:start_dialog("bilo.0.field")
   else
-    if map:get_game():get_value("i3005") == 0 then
-      game:start_dialog("bilo.0")
+    if game:get_value("i1027") < 5 then
+      game:start_dialog("bilo.0.festival")
     elseif game:get_value("i1032") >= 3 then
       game:start_dialog("bilo.2")
     elseif game:get_value("i1905") >= 1 and game:get_value("i1027") >= 4 then
