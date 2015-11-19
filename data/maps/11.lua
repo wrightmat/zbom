@@ -40,7 +40,7 @@ function map:on_started(destination)
   random_walk(goat_3)
   random_walk(goat_4)
   random_walk(goat_5)
-  -- if the festival isn't over, make sure banners, booths and NPCs are outside
+  -- If the festival isn't over, make sure banners, booths and NPCs are outside.
   if game:get_value("i1027") < 5 then
     banner_1:set_enabled(true)
     banner_2:set_enabled(true)
@@ -121,29 +121,31 @@ function map:on_update()
   end
 end
 
-function map:on_draw(dst_surface)
-  -- Show torch overlay for Ordona dialog
-  if game:get_time_of_day() ~= "night" and torch_overlay ~= nil then
-    local screen_width, screen_height = dst_surface:get_size()
-    local cx, cy = map:get_camera_position()
-    local tx, ty = torch_1:get_center_position()
-    local x = 320 - tx + cx
-    local y = 240 - ty + cy
-    torch_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
-  end
+if game:get_time_of_day() ~= "night" then
+  function map:on_draw(dst_surface)
+    -- Show torch overlay for Ordona dialog.
+    if torch_overlay ~= nil then
+      local screen_width, screen_height = dst_surface:get_size()
+      local cx, cy = map:get_camera_position()
+      local tx, ty = torch_1:get_center_position()
+      local x = 320 - tx + cx
+      local y = 240 - ty + cy
+      torch_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
+    end
 
-  -- Show remaining timer time on screen
-  if game.race_timer ~= nil then
-    local timer_icon = sol.surface.create("hud/timer.png")
-    local timer_time = math.floor(game.race_timer:get_remaining_time() / 1000)
-    local timer_text = sol.text_surface.create{
-      font = "white_digits",
-      horizontal_alignment = "left",
-      vertical_alignment = "top",
-    }
-    timer_icon:draw(dst_surface, 5, 55)
-    timer_text:set_text(timer_time)
-    timer_text:draw(dst_surface, 22, 58)
+    -- Show remaining timer time on screen.
+    if game.race_timer ~= nil then
+      local timer_icon = sol.surface.create("hud/timer.png")
+      local timer_time = math.floor(game.race_timer:get_remaining_time() / 1000)
+      local timer_text = sol.text_surface.create{
+        font = "white_digits",
+        horizontal_alignment = "left",
+        vertical_alignment = "top",
+      }
+      timer_icon:draw(dst_surface, 5, 55)
+      timer_text:set_text(timer_time)
+      timer_text:draw(dst_surface, 22, 58)
+    end
   end
 end
 
@@ -253,9 +255,7 @@ function npc_tern:on_interaction()
     else
       game:start_dialog("tern.0.festival")
     end
-  else
-    game:start_dialog("tern.1.ranch")
-  end
+  else game:start_dialog("tern.1.ranch") end
 end
 
 function npc_tristan:on_interaction()

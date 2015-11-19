@@ -95,7 +95,9 @@ end
 
 function switch_shortcut:on_activated()
   game:set_value("b1090", true)
-  map:open_doors("door_shortcut")
+  map:move_camera(736, 1416, 300, function()
+    map:open_doors("door_shortcut")
+  end)
 end
 
 if miniboss_lanmola ~= nil then

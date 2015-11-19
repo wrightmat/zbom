@@ -86,6 +86,7 @@ function map:on_started(destination)
     end)
   else
     snores:set_enabled(false)
+    impa_snores:set_enabled(false)
   end
   if game:get_value("i1027") < 5 then
     npc_julita:remove()
@@ -140,26 +141,6 @@ function map:on_started(destination)
       end
     end
   end
-end
-
-function house_bed:on_activated()
-  snores:set_enabled(true)
-  bed:set_enabled(true)
-  bed:get_sprite():set_animation("hero_sleeping")
-  hero:freeze()
-  hero:set_visible(false)
-  sol.timer.start(1000, function()
-    snores:remove()
-    bed:get_sprite():set_animation("hero_waking")
-    sleep_timer = sol.timer.start(1000, function()
-      sensor_sleep:set_enabled(false)
-      hero:set_visible(true)
-      hero:start_jumping(4, 24, true)
-      bed:get_sprite():set_animation("empty_open")
-      sol.audio.play_sound("hero_lands")
-    end)
-    sleep_timer:set_with_sound(false)
-  end)
 end
 
 function npc_ulo:on_interaction()
@@ -247,29 +228,95 @@ function npc_impa:on_interaction()
 end
 
 function sensor_sleep:on_activated()
- if game:get_value("i1027") >= 6 then
-  game:start_dialog("_sleep_bed", function(answer)
-    if answer == 1 then
-      hero:teleport("1", "house_bed", "fade")
-      game:set_life(game:get_max_life())
-      game:set_stamina(game:get_max_stamina())
-      if game:get_value("i1026") < 1 then game:set_max_stamina(game:get_max_stamina()-20) end
-      if game:get_value("i1026") > 3 then game:set_max_stamina(game:get_max_stamina()+20) end
-      game:set_value("i1026", 0)
-      game:switch_time_of_day()
-      if game:get_time_of_day() == "day" then
-        for entity in map:get_entities("night_") do
-          entity:set_enabled(false)
-        end
-        night_overlay = nil
-      else
-        for entity in map:get_entities("night_") do
-          entity:set_enabled(true)
+  if game:get_value("i1027") >= 6 then
+    game:start_dialog("_sleep_bed", function(answer)
+      if answer == 1 then
+        hero:teleport("1", "house_bed", "fade")
+        game:set_life(game:get_max_life())
+        game:set_stamina(game:get_max_stamina())
+        if game:get_value("i1026") < 1 then game:set_max_stamina(game:get_max_stamina()-20) end
+        if game:get_value("i1026") > 3 then game:set_max_stamina(game:get_max_stamina()+20) end
+        game:set_value("i1026", 0)
+        game:switch_time_of_day()
+        if game:get_time_of_day() == "day" then
+          for entity in map:get_entities("night_") do
+            entity:set_enabled(false)
+          end
+          night_overlay = nil
+        else
+          for entity in map:get_entities("night_") do
+            entity:set_enabled(true)
+          end
         end
       end
-    end
+    end)
+  end
+end
+
+function house_bed:on_activated()
+  snores:set_enabled(true)
+  bed:set_enabled(true)
+  bed:get_sprite():set_animation("hero_sleeping")
+  hero:freeze()
+  hero:set_visible(false)
+  sol.timer.start(1000, function()
+    snores:remove()
+    bed:get_sprite():set_animation("hero_waking")
+    sleep_timer = sol.timer.start(1000, function()
+      sensor_sleep:set_enabled(false)
+      hero:set_visible(true)
+      hero:start_jumping(4, 24, true)
+      bed:get_sprite():set_animation("empty_open")
+      sol.audio.play_sound("hero_lands")
+    end)
+    sleep_timer:set_with_sound(false)
   end)
- end
+end
+
+function sensor_sleep_impa:on_activated()
+  if game:get_value("i1027") >= 6 then
+    game:start_dialog("_sleep_bed", function(answer)
+      if answer == 1 then
+        hero:teleport("1", "impa_bed_dest", "fade")
+        game:set_life(game:get_max_life())
+        game:set_stamina(game:get_max_stamina())
+        if game:get_value("i1026") < 1 then game:set_max_stamina(game:get_max_stamina()-20) end
+        if game:get_value("i1026") > 3 then game:set_max_stamina(game:get_max_stamina()+20) end
+        game:set_value("i1026", 0)
+        game:switch_time_of_day()
+        if game:get_time_of_day() == "day" then
+          for entity in map:get_entities("night_") do
+            entity:set_enabled(false)
+          end
+          night_overlay = nil
+        else
+          for entity in map:get_entities("night_") do
+            entity:set_enabled(true)
+          end
+        end
+      end
+    end)
+  end
+end
+
+function impa_bed_dest:on_activated()
+  impa_snores:set_enabled(true)
+  impa_bed:set_enabled(true)
+  impa_bed:get_sprite():set_animation("hero_sleeping")
+  hero:freeze()
+  hero:set_visible(false)
+  sol.timer.start(1000, function()
+    impa_snores:remove()
+    impa_bed:get_sprite():set_animation("hero_waking")
+    sleep_timer = sol.timer.start(1000, function()
+      sensor_sleep_impa:set_enabled(false)
+      hero:set_visible(true)
+      hero:start_jumping(4, 24, true)
+      impa_bed:get_sprite():set_animation("empty_open")
+      sol.audio.play_sound("hero_lands")
+    end)
+    sleep_timer:set_with_sound(false)
+  end)
 end
 
 function shelf_1:on_interaction()

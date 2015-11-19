@@ -7,9 +7,7 @@ local game = map:get_game()
 
 function map:on_started(destination)
   if game:get_value("i1032") == 1 then
-    sol.timer.start(1500, function()
-      torch_ordona:get_sprite():set_animation("lit")
-    end)
+    sol.timer.start(1500, function() torch_ordona:get_sprite():set_animation("lit") end)
     sol.timer.start(2000, function()
       hero:freeze()
       torch_overlay = sol.surface.create("entities/dark.png")
@@ -27,22 +25,20 @@ function map:on_started(destination)
         game:set_value("i1032", 2)
       end)
     end)
-  elseif game:get_value("i1032") >= 2 then
-    door:set_enabled(false)
-  end
+  elseif game:get_value("i1032") >= 2 then door:set_enabled(false) end
 
-    -- Activate any night-specific dynamic tiles.
-    if game:get_time_of_day() == "night" then
-      for entity in game:get_map():get_entities("night_") do
-        entity:set_enabled(true)
-      end
+  -- Activate any night-specific dynamic tiles.
+  if game:get_time_of_day() == "night" then
+    for entity in game:get_map():get_entities("night_") do
+      entity:set_enabled(true)
     end
+  end
 end
 
 if game:get_time_of_day() ~= "night" then
-function game:on_map_changed(map)
   function map:on_draw(dst_surface)
-    if map:get_id() == "138" and torch_overlay then
+    -- Show torch overlay for Ordona dialog.
+    if torch_overlay ~= nil then
       local screen_width, screen_height = dst_surface:get_size()
       local cx, cy = map:get_camera_position()
       local tx, ty = torch_ordona:get_center_position()
@@ -51,5 +47,4 @@ function game:on_map_changed(map)
       torch_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
     end
   end
-end
 end

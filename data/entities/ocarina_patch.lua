@@ -15,9 +15,11 @@ function entity:on_created()
   game:set_interaction_enabled(entity, true)
   -- If other point is discovered, visually display on the tile.
   for k, v in pairs(warp_points) do
-    if k == self:get_name() and game:get_value(v[1]) then
+    if k == self:get_name() and game:get_value(v[1]) and game:get_value(self:get_name()) then
+      -- Shining effect only if both paired points are discovered.
       self:get_sprite():set_animation("linked")
-    elseif k == self:get_name() and game:get_value(self:get_name()) then
+    elseif k == self:get_name() and (game:get_value(self:get_name()) or game:get_value(v[1])) then
+      -- Lighter sprite if at least one point is discovered.
       self:get_sprite():set_animation("activated")
     end
   end

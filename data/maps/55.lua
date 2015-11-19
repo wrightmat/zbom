@@ -27,23 +27,25 @@ function map:on_started(destination)
     end)
   end
 
-    -- Activate any night-specific dynamic tiles.
-    if game:get_time_of_day() == "night" then
-      for entity in game:get_map():get_entities("night_") do
-        entity:set_enabled(true)
-      end
+  -- Activate any night-specific dynamic tiles.
+  if game:get_time_of_day() == "night" then
+    for entity in game:get_map():get_entities("night_") do
+      entity:set_enabled(true)
     end
+  end
 end
 
-function map:on_draw(dst_surface)
-  -- Show torch overlay for Ordona dialog.
-  if game:get_time_of_day() ~= "night" and torch_overlay ~= nil then
-    local screen_width, screen_height = dst_surface:get_size()
-    local cx, cy = map:get_camera_position()
-    local tx, ty = torch_1:get_center_position()
-    local x = 320 - tx + cx
-    local y = 240 - ty + cy
-    torch_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
+if game:get_time_of_day() ~= "night" then
+  function map:on_draw(dst_surface)
+    -- Show torch overlay for Ordona dialog.
+    if torch_overlay ~= nil then
+      local screen_width, screen_height = dst_surface:get_size()
+      local cx, cy = map:get_camera_position()
+      local tx, ty = torch_1:get_center_position()
+      local x = 320 - tx + cx
+      local y = 240 - ty + cy
+      torch_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
+    end
   end
 end
 

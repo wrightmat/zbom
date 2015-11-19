@@ -8,7 +8,7 @@ local game = map:get_game()
 local torch_overlay = nil
 
 function map:on_started(destination)
-  -- If you haven't gotten all of the parts, Ordona directs you back
+  -- If you haven't gotten all of the parts, Ordona directs you back.
   if destination == from_pyramid then
     if not game:get_value("b1087") or not game:get_value("b1088") or not game:get_value("b1089") then
       torch_1:get_sprite():set_animation("lit")
@@ -21,7 +21,7 @@ function map:on_started(destination)
           torch_overlay:fade_out(50)
           sol.timer.start(2000, function() torch_overlay = nil end)
           hero:unfreeze()
-	game:set_stamina(game:get_max_stamina())
+          game:set_stamina(game:get_max_stamina())
           torch_1:get_sprite():set_animation("unlit")
         end)
       end)
@@ -29,14 +29,16 @@ function map:on_started(destination)
   end
 end
 
-function map:on_draw(dst_surface)
-  -- Show torch overlay for Ordona dialog
-  if game:get_time_of_day() ~= "night" and torch_overlay ~= nil then
-    local screen_width, screen_height = dst_surface:get_size()
-    local cx, cy = map:get_camera_position()
-    local tx, ty = torch_1:get_center_position()
-    local x = 320 - tx + cx
-    local y = 240 - ty + cy
-    torch_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
+if game:get_time_of_day() ~= "night" then
+  function map:on_draw(dst_surface)
+    -- Show torch overlay for Ordona dialog.
+    if torch_overlay ~= nil then
+      local screen_width, screen_height = dst_surface:get_size()
+      local cx, cy = map:get_camera_position()
+      local tx, ty = torch_1:get_center_position()
+      local x = 320 - tx + cx
+      local y = 240 - ty + cy
+      torch_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
+    end
   end
 end

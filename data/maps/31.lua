@@ -10,7 +10,7 @@ local torch_overlay = nil
 
 function map:on_started(destination)
   if game:get_value("b1134") then
-    -- If the dungeon has been completed, the water returns
+    -- If the dungeon has been completed, the water returns.
     map:set_entities_enabled("water", true)
     map:set_entities_enabled("wake", true)
 
@@ -31,9 +31,8 @@ function map:on_started(destination)
         end)
       end)
     end
-
   elseif game:get_value("i1030") >= 2 then
-    -- If the switch has been flipped in the sewers, the water is gone
+    -- If the switch has been flipped in the sewers, the water is gone.
     map:set_entities_enabled("water", false)
     map:set_entities_enabled("wake", false)
     sx, sy, sl = statue:get_position()
@@ -43,14 +42,16 @@ function map:on_started(destination)
   end
 end
 
-function map:on_draw(dst_surface)
- -- Show torch overlay for Ordona dialog
-  if game:get_time_of_day() ~= "night" and torch_overlay ~= nil then
-    local screen_width, screen_height = dst_surface:get_size()
-    local cx, cy = map:get_camera_position()
-    local tx, ty = torch_1:get_center_position()
-    local x = 320 - tx + cx
-    local y = 240 - ty + cy
-    torch_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
+if game:get_time_of_day() ~= "night" then
+  function map:on_draw(dst_surface)
+   -- Show torch overlay for Ordona dialog.
+    if torch_overlay ~= nil then
+      local screen_width, screen_height = dst_surface:get_size()
+      local cx, cy = map:get_camera_position()
+      local tx, ty = torch_1:get_center_position()
+      local x = 320 - tx + cx
+      local y = 240 - ty + cy
+      torch_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
+    end
   end
 end

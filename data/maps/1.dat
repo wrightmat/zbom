@@ -111,7 +111,7 @@ tile{
   layer = 0,
   x = 960,
   y = 112,
-  width = 32,
+  width = 64,
   height = 112,
   pattern = "482",
 }
@@ -228,7 +228,7 @@ tile{
   layer = 0,
   x = 960,
   y = 104,
-  width = 32,
+  width = 64,
   height = 8,
   pattern = "457",
 }
@@ -262,7 +262,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 992,
+  x = 1024,
   y = 112,
   width = 8,
   height = 112,
@@ -1072,7 +1072,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1000,
+  x = 1032,
   y = 80,
   width = 24,
   height = 24,
@@ -1081,7 +1081,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1000,
+  x = 1032,
   y = 232,
   width = 24,
   height = 24,
@@ -1092,7 +1092,7 @@ tile{
   layer = 0,
   x = 952,
   y = 80,
-  width = 48,
+  width = 80,
   height = 24,
   pattern = "49",
 }
@@ -1164,14 +1164,14 @@ tile{
   layer = 0,
   x = 968,
   y = 232,
-  width = 32,
+  width = 64,
   height = 24,
   pattern = "52",
 }
 
 tile{
   layer = 0,
-  x = 1000,
+  x = 1032,
   y = 104,
   width = 24,
   height = 128,
@@ -3493,7 +3493,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 968,
+  x = 992,
   y = 168,
   width = 32,
   height = 40,
@@ -3592,7 +3592,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 968,
+  x = 976,
   y = 88,
   width = 24,
   height = 40,
@@ -3871,7 +3871,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 992,
+  x = 1024,
   y = 104,
   width = 8,
   height = 8,
@@ -3880,7 +3880,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 992,
+  x = 1024,
   y = 224,
   width = 8,
   height = 8,
@@ -3918,7 +3918,7 @@ tile{
   layer = 0,
   x = 960,
   y = 224,
-  width = 32,
+  width = 64,
   height = 8,
   pattern = "456",
 }
@@ -5228,6 +5228,16 @@ tile{
   pattern = "441",
 }
 
+npc{
+  name = "impa_bed",
+  layer = 0,
+  x = 1008,
+  y = 181,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/bed",
+}
+
 dynamic_tile{
   name = "bed_bilo",
   layer = 0,
@@ -6248,6 +6258,33 @@ dynamic_tile{
   enabled_at_start = false,
 }
 
+sensor{
+  name = "sensor_sleep_impa",
+  layer = 0,
+  x = 984,
+  y = 181,
+  width = 16,
+  height = 48,
+}
+
+destination{
+  name = "impa_bed_dest",
+  layer = 0,
+  x = 992,
+  y = 197,
+  direction = 2,
+}
+
+npc{
+  name = "impa_snores",
+  layer = 0,
+  x = 1000,
+  y = 173,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/bed_snores",
+}
+
 npc{
   name = "quest_trading_potion",
   layer = 1,
@@ -6414,9 +6451,9 @@ tile{
 
 tile{
   layer = 2,
-  x = 1024,
+  x = 1056,
   y = 48,
-  width = 256,
+  width = 224,
   height = 208,
   pattern = "480",
 }
@@ -6479,7 +6516,7 @@ tile{
   layer = 2,
   x = 928,
   y = 48,
-  width = 96,
+  width = 128,
   height = 32,
   pattern = "480",
 }
@@ -6599,7 +6636,7 @@ separator{
 
 separator{
   layer = 2,
-  x = 1088,
+  x = 1104,
   y = 0,
   width = 16,
   height = 320,
