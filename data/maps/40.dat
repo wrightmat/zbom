@@ -9626,6 +9626,26 @@ wall{
   stops_projectiles = true,
 }
 
+enemy{
+  name = "moth_1",
+  layer = 0,
+  x = 408,
+  y = 461,
+  direction = 0,
+  breed = "moth",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "moth_2",
+  layer = 0,
+  x = 752,
+  y = 325,
+  direction = 0,
+  breed = "moth",
+  treasure_name = "random",
+}
+
 tile{
   layer = 1,
   x = 680,

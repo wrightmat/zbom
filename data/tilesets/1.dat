@@ -20,6 +20,16 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "11",
+  ground = "hole",
+  default_layer = 0,
+  x = 128,
+  y = 232,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
   id = "2",
   ground = "wall",
   default_layer = 0,

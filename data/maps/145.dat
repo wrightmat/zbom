@@ -2753,6 +2753,15 @@ tile{
   pattern = "11",
 }
 
+tile{
+  layer = 0,
+  x = 0,
+  y = 120,
+  width = 16,
+  height = 16,
+  pattern = "965",
+}
+
 teletransporter{
   name = "to_M6",
   layer = 0,

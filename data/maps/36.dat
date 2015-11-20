@@ -5426,10 +5426,10 @@ teletransporter{
 wall{
   name = "custom_obstacle",
   layer = 0,
-  x = 368,
+  x = 344,
   y = 40,
   width = 16,
-  height = 400,
+  height = 288,
   stops_enemies = true,
 }
 
@@ -5439,7 +5439,7 @@ wall{
   x = 984,
   y = 40,
   width = 16,
-  height = 448,
+  height = 240,
   stops_enemies = true,
 }
 
@@ -5505,6 +5505,26 @@ teletransporter{
   transition = "scrolling",
   destination_map = "37",
   destination = "_side",
+}
+
+wall{
+  name = "custom_obstacle_3",
+  layer = 0,
+  x = 952,
+  y = 280,
+  width = 16,
+  height = 264,
+  stops_enemies = true,
+}
+
+wall{
+  name = "custom_obstacle_4",
+  layer = 0,
+  x = 416,
+  y = 368,
+  width = 16,
+  height = 192,
+  stops_enemies = true,
 }
 
 tile{

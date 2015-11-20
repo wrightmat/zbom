@@ -14,6 +14,13 @@ end
 
 function map:on_started(destination)
   random_walk(npc_dog)
+
+  -- Activate any night-specific dynamic tiles.
+  if game:get_time_of_day() == "night" then
+    for entity in game:get_map():get_entities("night_") do
+      entity:set_enabled(true)
+    end
+  end
 end
 
 function npc_dog:on_interaction()

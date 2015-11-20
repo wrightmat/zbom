@@ -95,6 +95,13 @@ function map:on_started(destination)
     torch_3:get_sprite():set_animation("lit")
   end
   if game:get_value("i1911") ~= 2 then quest_gaira:remove() end -- Poisoned trees Deacon side quest.
+
+  -- Activate any night-specific dynamic tiles.
+  if game:get_time_of_day() == "night" then
+    for entity in game:get_map():get_entities("night_") do
+      entity:set_enabled(true)
+    end
+  end
 end
 
 function map:on_update()

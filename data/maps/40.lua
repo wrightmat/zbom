@@ -7,9 +7,7 @@ local game = map:get_game()
 
 function map:on_started(destination)
   -- Opening doors
-  local entrance_names = {
-    "office", "collector"
-  }
+  local entrance_names = { "office", "collector" }
   for _, entrance_name in ipairs(entrance_names) do
     local sensor = map:get_entity(entrance_name .. "_door_sensor")
     local tile = map:get_entity(entrance_name .. "_door")
@@ -20,11 +18,16 @@ function map:on_started(destination)
       end
     end
   end
-  -- Activate any night-specific dynamic tiles
+  -- Activate any night-specific dynamic tiles/entities.
   if game:get_time_of_day() == "night" then
     for entity in map:get_entities("night_") do
       entity:set_enabled(true)
     end
+    butterfly_1:remove()
+    butterfly_2:remove()
+  else
+    moth_1:remove()
+    moth_2:remove()
   end
 end
 

@@ -4841,6 +4841,17 @@ tile{
   pattern = "522",
 }
 
+dynamic_tile{
+  name = "night_entrance",
+  layer = 0,
+  x = 752,
+  y = 840,
+  pattern = "2172",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
 teletransporter{
   name = "to_inside_house1",
   layer = 0,
@@ -5653,6 +5664,61 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/mailbox",
+}
+
+dynamic_tile{
+  name = "night_window",
+  layer = 0,
+  x = 720,
+  y = 840,
+  pattern = "2173",
+  width = 24,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_window_2",
+  layer = 0,
+  x = 776,
+  y = 840,
+  pattern = "2173",
+  width = 24,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_window_3",
+  layer = 0,
+  x = 920,
+  y = 512,
+  pattern = "2173",
+  width = 24,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_window_4",
+  layer = 0,
+  x = 976,
+  y = 512,
+  pattern = "2173",
+  width = 24,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_window_5",
+  layer = 0,
+  x = 904,
+  y = 168,
+  pattern = "2173",
+  width = 24,
+  height = 16,
+  enabled_at_start = false,
 }
 
 tile{
