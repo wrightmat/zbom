@@ -4165,12 +4165,15 @@ sensor{
   height = 16,
 }
 
-destination{
-  name = "from_port",
+teletransporter{
+  name = "to_house",
   layer = 0,
-  x = 736,
-  y = 373,
-  direction = 3,
+  x = 728,
+  y = 336,
+  width = 16,
+  height = 16,
+  destination_map = "9",
+  destination = "from_H4_house",
 }
 
 tile{
@@ -4279,8 +4282,8 @@ teletransporter{
   y = 888,
   width = 16,
   height = 16,
-  destination_map = "115",
-  destination = "from_port",
+  destination_map = "9",
+  destination = "from_H4_port",
 }
 
 wall{
@@ -4333,6 +4336,22 @@ wall{
   stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
+}
+
+destination{
+  name = "from_port",
+  layer = 1,
+  x = 656,
+  y = 925,
+  direction = 3,
+}
+
+destination{
+  name = "from_house",
+  layer = 1,
+  x = 736,
+  y = 373,
+  direction = 3,
 }
 
 tile{

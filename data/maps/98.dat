@@ -2752,7 +2752,7 @@ wall{
 }
 
 destination{
-  name = "from_cave",
+  name = "from_palace",
   layer = 0,
   x = 200,
   y = 677,
@@ -2760,14 +2760,14 @@ destination{
 }
 
 teletransporter{
-  name = "to_cave",
+  name = "to_palace",
   layer = 0,
   x = 192,
   y = 640,
   width = 16,
   height = 16,
-  destination_map = "9",
-  destination = "from_D3",
+  destination_map = "173",
+  destination = "from_outside",
 }
 
 tile{

@@ -10,6 +10,24 @@ properties{
 
 tile{
   layer = 0,
+  x = 928,
+  y = 32,
+  width = 96,
+  height = 16,
+  pattern = "547",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 32,
+  width = 96,
+  height = 16,
+  pattern = "547",
+}
+
+tile{
+  layer = 0,
   x = 856,
   y = 424,
   width = 336,
@@ -2909,7 +2927,7 @@ tile{
 tile{
   layer = 0,
   x = 1016,
-  y = 184,
+  y = 248,
   width = 112,
   height = 8,
   pattern = "560",
@@ -2920,7 +2938,7 @@ tile{
   x = 936,
   y = 56,
   width = 192,
-  height = 128,
+  height = 192,
   pattern = "565",
 }
 
@@ -2937,7 +2955,7 @@ tile{
   layer = 0,
   x = 936,
   y = 48,
-  width = 192,
+  width = 80,
   height = 8,
   pattern = "564",
 }
@@ -2956,14 +2974,14 @@ tile{
   x = 912,
   y = 48,
   width = 16,
-  height = 144,
+  height = 208,
   pattern = "556",
 }
 
 tile{
   layer = 0,
   x = 912,
-  y = 192,
+  y = 256,
   width = 16,
   height = 16,
   pattern = "554",
@@ -2972,7 +2990,7 @@ tile{
 tile{
   layer = 0,
   x = 928,
-  y = 192,
+  y = 256,
   width = 64,
   height = 16,
   pattern = "552",
@@ -2981,7 +2999,7 @@ tile{
 tile{
   layer = 0,
   x = 1136,
-  y = 192,
+  y = 256,
   width = 16,
   height = 16,
   pattern = "551",
@@ -2992,7 +3010,7 @@ tile{
   x = 1136,
   y = 48,
   width = 16,
-  height = 144,
+  height = 208,
   pattern = "549",
 }
 
@@ -3003,15 +3021,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "548",
-}
-
-tile{
-  layer = 0,
-  x = 928,
-  y = 32,
-  width = 208,
-  height = 16,
-  pattern = "547",
 }
 
 tile{
@@ -3028,14 +3037,14 @@ tile{
   x = 928,
   y = 56,
   width = 8,
-  height = 128,
+  height = 192,
   pattern = "558",
 }
 
 tile{
   layer = 0,
   x = 928,
-  y = 184,
+  y = 248,
   width = 8,
   height = 8,
   pattern = "559",
@@ -3044,7 +3053,7 @@ tile{
 tile{
   layer = 0,
   x = 936,
-  y = 184,
+  y = 248,
   width = 64,
   height = 8,
   pattern = "560",
@@ -3053,7 +3062,7 @@ tile{
 tile{
   layer = 0,
   x = 1128,
-  y = 184,
+  y = 248,
   width = 8,
   height = 8,
   pattern = "561",
@@ -3064,7 +3073,7 @@ tile{
   x = 1128,
   y = 56,
   width = 8,
-  height = 128,
+  height = 192,
   pattern = "562",
 }
 
@@ -3080,7 +3089,7 @@ tile{
 tile{
   layer = 0,
   x = 944,
-  y = 176,
+  y = 240,
   width = 176,
   height = 8,
   pattern = "575",
@@ -3091,7 +3100,7 @@ tile{
   x = 936,
   y = 64,
   width = 8,
-  height = 112,
+  height = 176,
   pattern = "574",
 }
 
@@ -3100,14 +3109,14 @@ tile{
   x = 1120,
   y = 64,
   width = 8,
-  height = 112,
+  height = 176,
   pattern = "573",
 }
 
 tile{
   layer = 0,
   x = 1120,
-  y = 176,
+  y = 240,
   width = 8,
   height = 8,
   pattern = "569",
@@ -3134,7 +3143,7 @@ tile{
 tile{
   layer = 0,
   x = 936,
-  y = 176,
+  y = 240,
   width = 8,
   height = 8,
   pattern = "568",
@@ -3143,7 +3152,7 @@ tile{
 tile{
   layer = 0,
   x = 1024,
-  y = 192,
+  y = 256,
   width = 112,
   height = 16,
   pattern = "552",
@@ -3152,7 +3161,7 @@ tile{
 tile{
   layer = 0,
   x = 1000,
-  y = 184,
+  y = 248,
   width = 16,
   height = 16,
   pattern = "693",
@@ -3161,7 +3170,7 @@ tile{
 tile{
   layer = 0,
   x = 992,
-  y = 184,
+  y = 248,
   width = 8,
   height = 16,
   pattern = "694",
@@ -3170,7 +3179,7 @@ tile{
 tile{
   layer = 0,
   x = 1016,
-  y = 184,
+  y = 248,
   width = 8,
   height = 16,
   pattern = "695",
@@ -3179,7 +3188,7 @@ tile{
 tile{
   layer = 0,
   x = 992,
-  y = 176,
+  y = 240,
   width = 32,
   height = 8,
   pattern = "696",
@@ -3188,7 +3197,7 @@ tile{
 tile{
   layer = 0,
   x = 992,
-  y = 208,
+  y = 272,
   width = 8,
   height = 16,
   pattern = "641",
@@ -3197,7 +3206,7 @@ tile{
 tile{
   layer = 0,
   x = 1016,
-  y = 208,
+  y = 272,
   width = 8,
   height = 16,
   pattern = "641",
@@ -3206,7 +3215,7 @@ tile{
 tile{
   layer = 0,
   x = 1000,
-  y = 224,
+  y = 288,
   width = 16,
   height = 8,
   pattern = "642",
@@ -3336,6 +3345,78 @@ tile{
   width = 48,
   height = 16,
   pattern = "665",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 40,
+  width = 16,
+  height = 16,
+  pattern = "690",
+}
+
+tile{
+  layer = 0,
+  x = 1016,
+  y = 40,
+  width = 8,
+  height = 16,
+  pattern = "689",
+}
+
+tile{
+  layer = 0,
+  x = 1048,
+  y = 48,
+  width = 80,
+  height = 8,
+  pattern = "564",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 40,
+  width = 8,
+  height = 16,
+  pattern = "688",
+}
+
+tile{
+  layer = 0,
+  x = 1016,
+  y = 56,
+  width = 32,
+  height = 8,
+  pattern = "691",
+}
+
+tile{
+  layer = 0,
+  x = 1016,
+  y = 16,
+  width = 8,
+  height = 16,
+  pattern = "641",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 16,
+  width = 8,
+  height = 16,
+  pattern = "641",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 8,
+  width = 16,
+  height = 8,
+  pattern = "642",
 }
 
 dynamic_tile{
@@ -3625,18 +3706,18 @@ destructible{
 }
 
 teletransporter{
-  name = "to_J2",
+  name = "to_J1",
   layer = 0,
   x = 120,
   y = 944,
   width = 16,
   height = 16,
-  destination_map = "121",
-  destination = "from_cave",
+  destination_map = "120",
+  destination = "from_palace",
 }
 
 destination{
-  name = "from_J2",
+  name = "from_J1",
   layer = 0,
   x = 128,
   y = 925,
@@ -3813,7 +3894,7 @@ teletransporter{
 
 enemy{
   layer = 0,
-  x = 968,
+  x = 976,
   y = 93,
   direction = 3,
   breed = "wizzrobe",
@@ -3823,8 +3904,8 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 1000,
-  y = 125,
+  x = 984,
+  y = 181,
   direction = 3,
   breed = "wizzrobe",
   treasure_name = "rupee",
@@ -3833,8 +3914,8 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 1032,
-  y = 85,
+  x = 1040,
+  y = 133,
   direction = 3,
   breed = "wizzrobe",
   treasure_name = "rupee",
@@ -3843,8 +3924,8 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 1048,
-  y = 125,
+  x = 1072,
+  y = 197,
   direction = 3,
   breed = "wizzrobe",
   treasure_name = "rupee",
@@ -3853,8 +3934,8 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 1088,
-  y = 85,
+  x = 1096,
+  y = 109,
   direction = 3,
   breed = "wizzrobe",
   treasure_name = "rupee",
@@ -3926,22 +4007,41 @@ enemy{
 }
 
 destination{
-  name = "from_D3",
+  name = "from_H4_port",
   layer = 0,
   x = 1008,
-  y = 189,
+  y = 245,
   direction = 1,
 }
 
 teletransporter{
-  name = "to_D3",
+  name = "to_H4_port",
   layer = 0,
   x = 1000,
-  y = 208,
+  y = 272,
   width = 16,
   height = 16,
-  destination_map = "98",
-  destination = "from_cave",
+  destination_map = "115",
+  destination = "from_port",
+}
+
+destination{
+  name = "from_H4_house",
+  layer = 0,
+  x = 1032,
+  y = 69,
+  direction = 3,
+}
+
+teletransporter{
+  name = "to_H4_house",
+  layer = 0,
+  x = 1024,
+  y = 16,
+  width = 16,
+  height = 16,
+  destination_map = "115",
+  destination = "from_house",
 }
 
 tile{
@@ -4190,7 +4290,7 @@ tile{
 tile{
   layer = 2,
   x = 992,
-  y = 200,
+  y = 264,
   width = 32,
   height = 8,
   pattern = "692",
@@ -4198,20 +4298,20 @@ tile{
 
 tile{
   layer = 2,
-  x = 912,
-  y = 208,
-  width = 304,
-  height = 64,
+  x = 1152,
+  y = 32,
+  width = 64,
+  height = 240,
   pattern = "751",
 }
 
 tile{
   layer = 2,
-  x = 1152,
+  x = 1016,
   y = 32,
-  width = 64,
-  height = 176,
-  pattern = "751",
+  width = 32,
+  height = 8,
+  pattern = "686",
 }
 
 separator{

@@ -3059,6 +3059,25 @@ enemy{
   treasure_name = "random_north",
 }
 
+destination{
+  name = "from_sanctuary",
+  layer = 0,
+  x = 632,
+  y = 373,
+  direction = 3,
+}
+
+teletransporter{
+  name = "to_sanctuary",
+  layer = 0,
+  x = 624,
+  y = 328,
+  width = 16,
+  height = 16,
+  destination_map = "172",
+  destination = "from_outside",
+}
+
 tile{
   layer = 2,
   x = 616,
