@@ -1153,42 +1153,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 648,
-  y = 720,
-  width = 16,
-  height = 24,
-  pattern = "1876",
-}
-
-tile{
-  layer = 0,
-  x = 648,
-  y = 744,
-  width = 16,
-  height = 8,
-  pattern = "1873",
-}
-
-tile{
-  layer = 0,
-  x = 664,
-  y = 720,
-  width = 8,
-  height = 32,
-  pattern = "1872",
-}
-
-tile{
-  layer = 0,
-  x = 640,
-  y = 720,
-  width = 8,
-  height = 32,
-  pattern = "1871",
-}
-
-tile{
-  layer = 0,
   x = 504,
   y = 328,
   width = 48,
@@ -4057,25 +4021,6 @@ wall{
   width = 48,
   height = 16,
   stops_hero = true,
-}
-
-teletransporter{
-  name = "to_fairy",
-  layer = 0,
-  x = 648,
-  y = 728,
-  width = 16,
-  height = 16,
-  destination_map = "168",
-  destination = "from_outside",
-}
-
-destination{
-  name = "from_fairy",
-  layer = 0,
-  x = 656,
-  y = 717,
-  direction = 1,
 }
 
 destructible{

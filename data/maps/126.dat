@@ -3032,7 +3032,7 @@ enemy{
 enemy{
   name = "chuchu_red_4",
   layer = 0,
-  x = 256,
+  x = 288,
   y = 733,
   direction = 0,
   breed = "chuchu_red",
@@ -3076,6 +3076,654 @@ teletransporter{
   height = 16,
   destination_map = "172",
   destination = "from_outside",
+}
+
+custom_entity{
+  layer = 0,
+  x = 96,
+  y = 1117,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 112,
+  y = 1093,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 128,
+  y = 1077,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 144,
+  y = 1069,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 168,
+  y = 1061,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 192,
+  y = 1037,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 200,
+  y = 997,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 192,
+  y = 1061,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 208,
+  y = 1021,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 216,
+  y = 973,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 232,
+  y = 941,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 216,
+  y = 917,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 232,
+  y = 893,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 248,
+  y = 869,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 272,
+  y = 853,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 248,
+  y = 885,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 248,
+  y = 917,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 272,
+  y = 981,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 312,
+  y = 917,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 248,
+  y = 829,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 240,
+  y = 805,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 232,
+  y = 773,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 240,
+  y = 749,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 240,
+  y = 725,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 232,
+  y = 709,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 248,
+  y = 781,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 240,
+  y = 685,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 224,
+  y = 661,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 216,
+  y = 637,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 232,
+  y = 621,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 248,
+  y = 605,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 256,
+  y = 589,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 240,
+  y = 589,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 248,
+  y = 573,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 256,
+  y = 557,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 272,
+  y = 541,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 288,
+  y = 533,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 280,
+  y = 565,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 280,
+  y = 629,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 344,
+  y = 573,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 384,
+  y = 629,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 384,
+  y = 717,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 336,
+  y = 669,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 440,
+  y = 821,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 528,
+  y = 981,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 680,
+  y = 821,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 720,
+  y = 1037,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 936,
+  y = 949,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 872,
+  y = 805,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1032,
+  y = 725,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 640,
+  y = 509,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 744,
+  y = 429,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 496,
+  y = 413,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 312,
+  y = 221,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 304,
+  y = 205,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 312,
+  y = 189,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 320,
+  y = 173,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 304,
+  y = 173,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 312,
+  y = 157,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 296,
+  y = 133,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 288,
+  y = 101,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 304,
+  y = 117,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 256,
+  y = 45,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 256,
+  y = 69,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 280,
+  y = 69,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 272,
+  y = 29,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 264,
+  y = 13,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 392,
+  y = 101,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 480,
+  y = 181,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 544,
+  y = 45,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 808,
+  y = 189,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 736,
+  y = 269,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
 }
 
 tile{

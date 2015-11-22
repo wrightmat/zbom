@@ -10,6 +10,15 @@ properties{
 
 tile{
   layer = 0,
+  x = 192,
+  y = 888,
+  width = 48,
+  height = 16,
+  pattern = "628",
+}
+
+tile{
+  layer = 0,
   x = 448,
   y = 0,
   width = 160,
@@ -2890,17 +2899,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 48,
-  y = 824,
-  width = 48,
-  height = 16,
-  pattern = "628",
-}
-
-tile{
-  layer = 0,
-  x = 40,
-  y = 816,
+  x = 184,
+  y = 880,
   width = 8,
   height = 16,
   pattern = "626",
@@ -2908,8 +2908,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 96,
-  y = 816,
+  x = 240,
+  y = 880,
   width = 8,
   height = 16,
   pattern = "627",
@@ -2917,8 +2917,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 56,
-  y = 840,
+  x = 200,
+  y = 904,
   width = 32,
   height = 8,
   pattern = "629",
@@ -2926,8 +2926,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 48,
-  y = 784,
+  x = 192,
+  y = 848,
   width = 48,
   height = 40,
   pattern = "522",
@@ -3952,8 +3952,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 176,
-  y = 752,
+  x = 224,
+  y = 648,
   width = 48,
   height = 32,
   pattern = "524",
@@ -4195,8 +4195,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 224,
-  y = 864,
+  x = 280,
+  y = 944,
   width = 16,
   height = 8,
   pattern = "1693",
@@ -4204,8 +4204,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 96,
-  y = 712,
+  x = 120,
+  y = 544,
   width = 16,
   height = 16,
   pattern = "42",
@@ -4236,6 +4236,105 @@ tile{
   width = 16,
   height = 16,
   pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 840,
+  width = 8,
+  height = 16,
+  pattern = "44",
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 840,
+  width = 48,
+  height = 16,
+  pattern = "45",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 840,
+  width = 8,
+  height = 16,
+  pattern = "46",
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 840,
+  width = 8,
+  height = 16,
+  pattern = "44",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 840,
+  width = 8,
+  height = 16,
+  pattern = "44",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 840,
+  width = 8,
+  height = 16,
+  pattern = "44",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 840,
+  width = 8,
+  height = 16,
+  pattern = "44",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 840,
+  width = 8,
+  height = 16,
+  pattern = "44",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 840,
+  width = 8,
+  height = 16,
+  pattern = "44",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "180",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 664,
+  width = 16,
+  height = 16,
+  pattern = "181",
 }
 
 teletransporter{
@@ -4509,8 +4608,8 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 184,
-  y = 781,
+  x = 232,
+  y = 677,
   treasure_name = "random_north",
   sprite = "entities/bush",
   destruction_sound = "bush",
@@ -4520,8 +4619,8 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 184,
-  y = 765,
+  x = 232,
+  y = 661,
   treasure_name = "random_north",
   sprite = "entities/bush",
   destruction_sound = "bush",
@@ -4531,8 +4630,8 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 200,
-  y = 765,
+  x = 248,
+  y = 661,
   treasure_name = "random_north",
   sprite = "entities/bush",
   destruction_sound = "bush",
@@ -4542,8 +4641,8 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 200,
-  y = 781,
+  x = 248,
+  y = 677,
   treasure_name = "random_north",
   sprite = "entities/bush",
   destruction_sound = "bush",
@@ -4553,8 +4652,8 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 216,
-  y = 781,
+  x = 264,
+  y = 677,
   treasure_name = "random_north",
   sprite = "entities/bush",
   destruction_sound = "bush",
@@ -4564,8 +4663,8 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 216,
-  y = 765,
+  x = 264,
+  y = 661,
   treasure_name = "random_north",
   sprite = "entities/bush",
   destruction_sound = "bush",
@@ -5243,8 +5342,8 @@ enemy{
 enemy{
   name = "chuchu_3",
   layer = 0,
-  x = 256,
-  y = 949,
+  x = 424,
+  y = 877,
   direction = 0,
   breed = "chuchu_yellow",
   treasure_name = "random_north",
@@ -5273,8 +5372,8 @@ enemy{
 enemy{
   name = "peahat_3",
   layer = 0,
-  x = 248,
-  y = 669,
+  x = 992,
+  y = 181,
   direction = 0,
   breed = "peahat",
   treasure_name = "random_north",
@@ -5293,11 +5392,221 @@ enemy{
 enemy{
   name = "chuchu_red_2",
   layer = 0,
-  x = 120,
-  y = 213,
+  x = 312,
+  y = 221,
   direction = 0,
   breed = "chuchu_red",
   treasure_name = "random_north",
+}
+
+teletransporter{
+  name = "to_island",
+  layer = 0,
+  x = 128,
+  y = 752,
+  width = 16,
+  height = 16,
+  destination_map = "123",
+  destination = "from_mainland",
+  sprite = "entities/teletransporter",
+  sound = "warp",
+}
+
+destination{
+  name = "from_island",
+  layer = 0,
+  x = 136,
+  y = 781,
+  direction = 3,
+}
+
+custom_entity{
+  layer = 0,
+  x = 152,
+  y = 317,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 144,
+  y = 301,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 144,
+  y = 285,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 136,
+  y = 269,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 136,
+  y = 245,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 120,
+  y = 221,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 120,
+  y = 197,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 112,
+  y = 173,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 96,
+  y = 149,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 88,
+  y = 133,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 80,
+  y = 149,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 80,
+  y = 109,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 80,
+  y = 85,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 88,
+  y = 61,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 80,
+  y = 29,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 128,
+  y = 37,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 208,
+  y = 93,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 72,
+  y = 53,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 96,
+  y = 13,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 48,
+  y = 205,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 96,
+  y = 253,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
 }
 
 tile{
@@ -6040,8 +6349,8 @@ tile{
 
 tile{
   layer = 2,
-  x = 48,
-  y = 768,
+  x = 192,
+  y = 832,
   width = 48,
   height = 16,
   pattern = "521",
@@ -6049,8 +6358,8 @@ tile{
 
 tile{
   layer = 2,
-  x = 40,
-  y = 776,
+  x = 184,
+  y = 840,
   width = 8,
   height = 40,
   pattern = "519",
@@ -6058,8 +6367,8 @@ tile{
 
 tile{
   layer = 2,
-  x = 96,
-  y = 776,
+  x = 240,
+  y = 840,
   width = 8,
   height = 40,
   pattern = "520",
