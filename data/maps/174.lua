@@ -15,6 +15,7 @@ function map:on_started(destination)
     if game:get_value("i1834") >= 35 then game:set_value("i1608", 4) end
     if game:get_value("i1834") >= 50 then game:set_value("i1608", 5) end
   end
+  if game:get_value("b1200") then map:set_doors_open("door_fairy") end
 end
 
 function sensor_fairy_speak:on_activated()
@@ -40,4 +41,9 @@ function sensor_fairy_speak:on_activated()
     end)
   end
   sensor_fairy_speak:set_enabled(false)
+end
+
+function sensor_fairy_room:on_activated()
+  map:open_doors("door_fairy")
+  game:set_value("b1200", true)
 end
