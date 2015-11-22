@@ -15,7 +15,7 @@ behavior:create(enemy, properties)
 
 enemy:set_attack_arrow("protected")
 enemy:set_attack_hookshot("protected")
-enemy:set_attack_consequence("fire", "custom)
+enemy:set_attack_consequence("fire", "custom")
 enemy:set_attack_consequence("boomerang", "protected")
 enemy:set_attack_consequence("thrown_item", "protected")
 
