@@ -1162,42 +1162,32 @@ tile_pattern{
 
 tile_pattern{
   id = "203",
-  ground = "ladder",
+  ground = "wall",
   default_layer = 0,
   x = 184,
   y = 208,
-  width = 16,
-  height = 16,
+  width = 8,
+  height = 32,
 }
 
 tile_pattern{
   id = "204",
-  ground = "ladder",
+  ground = "wall",
   default_layer = 0,
-  x = 184,
-  y = 224,
-  width = 16,
-  height = 16,
+  x = 208,
+  y = 208,
+  width = 8,
+  height = 32,
 }
 
 tile_pattern{
   id = "205",
   ground = "ladder",
   default_layer = 0,
-  x = 200,
+  x = 192,
   y = 208,
   width = 16,
-  height = 16,
-}
-
-tile_pattern{
-  id = "206",
-  ground = "ladder",
-  default_layer = 0,
-  x = 200,
-  y = 224,
-  width = 16,
-  height = 16,
+  height = 32,
 }
 
 tile_pattern{
