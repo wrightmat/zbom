@@ -415,6 +415,7 @@ sprite{ id = "entities/switch_eye_left", description = "Switch, Eye (left)" }
 sprite{ id = "entities/switch_eye_right", description = "Switch, Eye (right)" }
 sprite{ id = "entities/switch_eye_up", description = "Switch, Eye (up)" }
 sprite{ id = "entities/switch_lever", description = "Switch, Lever" }
+sprite{ id = "entities/switch_rust", description = "Switch, Rusted" }
 sprite{ id = "entities/switch_star", description = "Switch, Star" }
 sprite{ id = "entities/teletransporter", description = "Transporter" }
 sprite{ id = "entities/teletransporter_blue", description = "Transporter (Blue)" }
@@ -934,6 +935,7 @@ entity{ id = "quicksand", description = "Quicksand (Lakebed)" }
 entity{ id = "soil", description = "Soft soil (Shovel)" }
 entity{ id = "statue_goron", description = "Goron Statue (Mausoleum)" }
 entity{ id = "stone_pile", description = "Stone pile" }
+entity{ id = "switch_rust", description = "Switch, Rusted" }
 
 language{ id = "en", description = "English" }
 

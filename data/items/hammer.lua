@@ -20,7 +20,7 @@ function item:on_using()
     item:set_pushed_stake(false)
   end)
  
-  -- Detect enemies with an invisible custom entity.
+  -- Detect enemies and switches with an invisible custom entity.
   local x, y, layer = hero:get_position()
   local direction4 = hero:get_direction()
   if direction4 == 0 then x = x + 12
@@ -40,18 +40,22 @@ function item:on_using()
   local enemies_touched = { }
   hammer:set_origin(4, 5)
   hammer:add_collision_test("overlapping", function(hammer, entity)
-    if entity:get_type() ~= "enemy" then
-      return
-    end
+    if entity:get_type() == "enemy" then
 
-    local enemy = entity
-    if enemies_touched[enemy] then
-      -- If protected we don't want to play the sound repeatedly.
-      return
+      local enemy = entity
+      if enemies_touched[enemy] then
+        return  -- If protected we don't want to play the sound repeatedly.
+      end
+      enemies_touched[enemy] = true
+      local reaction = enemy:get_attack_hammer(enemy_sprite)
+      enemy:receive_attack_consequence("hammer", reaction)
+    elseif entity:get_type() == "custom_entity" then
+
+      -- For our custom (rusted) switches which can only be activated by the hammer or a heavy object.
+      if entity:get_model() == "switch_rust" then
+        entity:set_activated(true)
+      end
     end
-    enemies_touched[enemy] = true
-    local reaction = enemy:get_attack_hammer(enemy_sprite)
-    enemy:receive_attack_consequence("hammer", reaction)
   end)
 
   -- Start the animation.

@@ -3383,7 +3383,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 752,
+  x = 688,
   y = 576,
   width = 16,
   height = 32,
@@ -3392,7 +3392,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 744,
+  x = 680,
   y = 576,
   width = 8,
   height = 32,
@@ -3401,7 +3401,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 768,
+  x = 704,
   y = 576,
   width = 8,
   height = 32,
@@ -4451,7 +4451,27 @@ custom_entity{
   y = 653,
   direction = 0,
   sprite = "entities/metal_ball",
-  model = "generic_portable",
+  model = "metal_ball",
+}
+
+custom_entity{
+  name = "switch_rust_1",
+  layer = 0,
+  x = 608,
+  y = 469,
+  direction = 0,
+  sprite = "entities/switch_rust",
+  model = "switch_rust",
+}
+
+custom_entity{
+  name = "switch_rust_2",
+  layer = 0,
+  x = 768,
+  y = 493,
+  direction = 0,
+  sprite = "entities/switch_rust",
+  model = "switch_rust",
 }
 
 tile{
