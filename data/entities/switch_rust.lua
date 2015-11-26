@@ -34,12 +34,13 @@ function entity:on_created()
   -- Initialize variables and sprite. Starts checking.
   self:set_size(16, 16); self:set_origin(8, 13)
   self:snap_to_grid()
+  self.unique_id = entity:get_name()
 
   button_x, button_y, button_z = entity:get_position()
   local map_name = entity:get_map():get_id()
   savegame_variable = map_name .."_button_".. button_x .."_".. button_y
   sprite = self:get_sprite() -- Create sprite if necessary.
-  if not sprite then sprite = entity:create_sprite("things/button_green") end
+  if not sprite then sprite = entity:create_sprite("entities/switch_rust") end
 
   entity:draw_activated(false)
   entity:check()
@@ -51,11 +52,9 @@ function entity:check()
   local map = entity:get_map()
   local entity_list = {} -- Create a list of entities that can push the button.
 
-  -- Add the hero (if not jumping) and custom entities that can push buttons (npc heroes are included).
+  -- Add the hero and custom entities that can push buttons (npc heroes are included).
   local hero = map:get_entity("hero")
-  local jumping_tunic = self:get_game().hero_manager.hero_tunic_sprites[hero:get_index()] .. "_jumping"
-  local is_hero_jumping = jumping_tunic == hero:get_tunic_sprite_id()
-  if not is_hero_jumping then table.insert(entity_list, hero) end
+  table.insert(entity_list, hero)
   for entity in map:get_entities("") do 
     if entity.can_push_buttons then table.insert(entity_list, entity) end
   end
