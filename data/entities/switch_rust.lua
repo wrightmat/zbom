@@ -52,9 +52,7 @@ function entity:check()
   local map = entity:get_map()
   local entity_list = {} -- Create a list of entities that can push the button.
 
-  -- Add the hero and custom entities that can push buttons (npc heroes are included).
-  local hero = map:get_entity("hero")
-  table.insert(entity_list, hero)
+  -- Add custom entities that can push buttons.
   for entity in map:get_entities("") do 
     if entity.can_push_buttons then table.insert(entity_list, entity) end
   end
@@ -95,7 +93,11 @@ function entity:set_activated(enable)
     entity:draw_activated(enable)
 
     -- Call the custom button:function on_activated() when it has been defined (by the map script).
-    if entity.on_activated ~= nil then entity:on_activated() end
+    if enable then
+      if entity.on_activated ~= nil then entity:on_activated() end
+    else
+      if entity.on_inactivated ~= nil then entity:on_inactivated() end
+    end
   end
 end
 
