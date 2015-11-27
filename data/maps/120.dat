@@ -5290,14 +5290,14 @@ destination{
 }
 
 teletransporter{
-  name = "to_cave",
+  name = "to_palace",
   layer = 0,
   x = 264,
   y = 592,
   width = 16,
   height = 16,
-  destination_map = "9",
-  destination = "from_J1",
+  destination_map = "172",
+  destination = "from_outside",
 }
 
 tile{

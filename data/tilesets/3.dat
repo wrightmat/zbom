@@ -4740,6 +4740,16 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "230",
+  ground = "wall",
+  default_layer = 0,
+  x = 496,
+  y = 512,
+  width = 32,
+  height = 32,
+}
+
+tile_pattern{
   id = "24",
   ground = "deep_water",
   default_layer = 0,

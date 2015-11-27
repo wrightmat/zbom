@@ -4464,146 +4464,29 @@ tile{
 
 tile{
   layer = 0,
-  x = 608,
-  y = 272,
-  width = 32,
-  height = 24,
-  pattern = "211",
-}
-
-tile{
-  layer = 0,
-  x = 616,
-  y = 288,
-  width = 16,
-  height = 16,
-  pattern = "213",
-}
-
-tile{
-  layer = 0,
-  x = 616,
-  y = 304,
-  width = 16,
-  height = 16,
-  pattern = "214",
-}
-
-tile{
-  layer = 0,
-  x = 616,
-  y = 320,
-  width = 16,
-  height = 16,
-  pattern = "215",
-}
-
-tile{
-  layer = 0,
-  x = 616,
-  y = 336,
-  width = 16,
-  height = 176,
-  pattern = "134",
-}
-
-tile{
-  layer = 0,
-  x = 632,
-  y = 320,
-  width = 16,
-  height = 192,
-  pattern = "134",
-}
-
-tile{
-  layer = 0,
-  x = 648,
-  y = 496,
-  width = 96,
-  height = 16,
-  pattern = "134",
-}
-
-tile{
-  layer = 0,
-  x = 648,
-  y = 480,
-  width = 96,
-  height = 16,
-  pattern = "134",
-}
-
-tile{
-  layer = 0,
-  x = 616,
-  y = 336,
-  width = 8,
-  height = 176,
-  pattern = "114",
-}
-
-tile{
-  layer = 0,
-  x = 624,
-  y = 504,
-  width = 112,
-  height = 8,
-  pattern = "113",
-}
-
-tile{
-  layer = 0,
-  x = 616,
-  y = 504,
+  x = 512,
+  y = 56,
   width = 8,
   height = 8,
-  pattern = "110",
+  pattern = "104",
 }
 
 tile{
   layer = 0,
-  x = 736,
-  y = 504,
+  x = 512,
+  y = 64,
+  width = 8,
+  height = 144,
+  pattern = "106",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 208,
   width = 8,
   height = 8,
-  pattern = "111",
-}
-
-tile{
-  layer = 0,
-  x = 736,
-  y = 480,
-  width = 8,
-  height = 8,
-  pattern = "109",
-}
-
-tile{
-  layer = 0,
-  x = 736,
-  y = 488,
-  width = 8,
-  height = 16,
-  pattern = "115",
-}
-
-tile{
-  layer = 0,
-  x = 648,
-  y = 480,
-  width = 88,
-  height = 8,
-  pattern = "112",
-}
-
-tile{
-  layer = 0,
-  x = 640,
-  y = 320,
-  width = 8,
-  height = 160,
-  pattern = "115",
+  pattern = "104",
 }
 
 destination{
@@ -4622,8 +4505,8 @@ teletransporter{
   y = 904,
   width = 16,
   height = 16,
-  destination_map = "126",
-  destination = "from_sanctuary",
+  destination_map = "120",
+  destination = "from_palace",
 }
 
 jumper{
@@ -4783,16 +4666,6 @@ jumper{
   width = 16,
   height = 8,
   direction = 6,
-  jump_length = 56,
-}
-
-jumper{
-  layer = 0,
-  x = 512,
-  y = 80,
-  width = 8,
-  height = 112,
-  direction = 0,
   jump_length = 56,
 }
 

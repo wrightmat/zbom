@@ -109,9 +109,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 656,
+  x = 480,
   y = 336,
-  width = 128,
+  width = 304,
   height = 8,
   pattern = "194",
 }
@@ -119,35 +119,8 @@ tile{
 tile{
   layer = 0,
   x = 480,
-  y = 336,
-  width = 128,
-  height = 8,
-  pattern = "194",
-}
-
-tile{
-  layer = 0,
-  x = 640,
-  y = 360,
-  width = 144,
-  height = 16,
-  pattern = "177",
-}
-
-tile{
-  layer = 0,
-  x = 640,
   y = 344,
-  width = 144,
-  height = 16,
-  pattern = "192",
-}
-
-tile{
-  layer = 0,
-  x = 480,
-  y = 344,
-  width = 144,
+  width = 304,
   height = 16,
   pattern = "192",
 }
@@ -156,7 +129,7 @@ tile{
   layer = 0,
   x = 480,
   y = 360,
-  width = 144,
+  width = 304,
   height = 16,
   pattern = "177",
 }
@@ -1981,132 +1954,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 600,
-  y = 288,
-  width = 64,
-  height = 16,
-  pattern = "848",
-}
-
-tile{
-  layer = 0,
-  x = 600,
-  y = 304,
-  width = 16,
-  height = 32,
-  pattern = "850",
-}
-
-tile{
-  layer = 0,
-  x = 648,
-  y = 304,
-  width = 16,
-  height = 32,
-  pattern = "849",
-}
-
-tile{
-  layer = 0,
-  x = 600,
-  y = 336,
-  width = 24,
-  height = 24,
-  pattern = "864",
-}
-
-tile{
-  layer = 0,
-  x = 624,
-  y = 336,
-  width = 16,
-  height = 24,
-  pattern = "859",
-}
-
-tile{
-  layer = 0,
-  x = 640,
-  y = 336,
-  width = 24,
-  height = 24,
-  pattern = "863",
-}
-
-tile{
-  layer = 0,
-  x = 624,
-  y = 344,
-  width = 16,
-  height = 32,
-  pattern = "886",
-}
-
-tile{
-  layer = 0,
-  x = 624,
-  y = 376,
-  width = 16,
-  height = 8,
-  pattern = "900",
-}
-
-tile{
-  layer = 0,
-  x = 616,
-  y = 352,
-  width = 8,
-  height = 16,
-  pattern = "894",
-}
-
-tile{
-  layer = 0,
-  x = 640,
-  y = 352,
-  width = 8,
-  height = 16,
-  pattern = "895",
-}
-
-tile{
-  layer = 0,
-  x = 616,
-  y = 368,
-  width = 8,
-  height = 8,
-  pattern = "896",
-}
-
-tile{
-  layer = 0,
-  x = 616,
-  y = 376,
-  width = 8,
-  height = 8,
-  pattern = "898",
-}
-
-tile{
-  layer = 0,
-  x = 640,
-  y = 376,
-  width = 8,
-  height = 8,
-  pattern = "899",
-}
-
-tile{
-  layer = 0,
-  x = 640,
-  y = 368,
-  width = 8,
-  height = 8,
-  pattern = "897",
-}
-
-tile{
-  layer = 0,
   x = 464,
   y = 360,
   width = 16,
@@ -2233,18 +2080,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 664,
-  y = 328,
-  width = 120,
-  height = 8,
-  pattern = "464",
-}
-
-tile{
-  layer = 0,
   x = 480,
   y = 328,
-  width = 120,
+  width = 296,
   height = 8,
   pattern = "464",
 }
@@ -2818,8 +2656,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 600,
-  y = 368,
+  x = 568,
+  y = 408,
   width = 16,
   height = 16,
   pattern = "100",
@@ -2827,8 +2665,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 648,
-  y = 368,
+  x = 680,
+  y = 408,
   width = 16,
   height = 16,
   pattern = "100",
@@ -2906,19 +2744,6 @@ tile{
   pattern = "100",
 }
 
-wall{
-  layer = 0,
-  x = 608,
-  y = 296,
-  width = 48,
-  height = 16,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
 teletransporter{
   name = "to_K4",
   layer = 0,
@@ -2983,17 +2808,7 @@ jumper{
   layer = 0,
   x = 488,
   y = 328,
-  width = 112,
-  height = 8,
-  direction = 6,
-  jump_length = 72,
-}
-
-jumper{
-  layer = 0,
-  x = 664,
-  y = 328,
-  width = 112,
+  width = 288,
   height = 8,
   direction = 6,
   jump_length = 72,
@@ -3057,25 +2872,6 @@ enemy{
   direction = 0,
   breed = "chuchu_red",
   treasure_name = "random_north",
-}
-
-destination{
-  name = "from_sanctuary",
-  layer = 0,
-  x = 632,
-  y = 373,
-  direction = 3,
-}
-
-teletransporter{
-  name = "to_sanctuary",
-  layer = 0,
-  x = 624,
-  y = 328,
-  width = 16,
-  height = 16,
-  destination_map = "172",
-  destination = "from_outside",
 }
 
 custom_entity{
@@ -3724,14 +3520,5 @@ custom_entity{
   direction = 0,
   sprite = "entities/soil",
   model = "soil",
-}
-
-tile{
-  layer = 2,
-  x = 616,
-  y = 304,
-  width = 32,
-  height = 32,
-  pattern = "844",
 }
 

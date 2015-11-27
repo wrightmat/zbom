@@ -3706,18 +3706,18 @@ destructible{
 }
 
 teletransporter{
-  name = "to_J1",
+  name = "to_J2",
   layer = 0,
   x = 120,
   y = 944,
   width = 16,
   height = 16,
-  destination_map = "120",
-  destination = "from_palace",
+  destination_map = "121",
+  destination = "from_cave",
 }
 
 destination{
-  name = "from_J1",
+  name = "from_J2",
   layer = 0,
   x = 128,
   y = 925,
