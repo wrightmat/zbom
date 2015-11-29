@@ -53,17 +53,26 @@ function entity:check()
   local entity_list = {} -- Create a list of entities that can push the button.
 
   -- Add custom entities that can push buttons.
-  for entity in map:get_entities("") do 
+  for entity in map:get_entities("") do
     if entity.can_push_buttons then table.insert(entity_list, entity) end
   end
 
   -- Check if some entity is pushing the button.
   for _, e in pairs(entity_list) do
-    if entity:is_under(e) then 
+    if entity:is_under(e) then
       if (not entity:is_activated()) then entity:set_activated(true) end
       sol.timer.start(entity:get_map(), 50, function() entity:check() end)
       return
     end
+  end
+
+  -- Hammer also activates switches.
+  local hero = entity:get_game():get_hero()
+
+  if hero:get_animation() == "hammer" and entity:is_under_hero_hammer() then
+    if (not entity:is_activated()) then entity:set_activated(true) end
+    sol.timer.start(entity:get_map(), 50, function() entity:check() end)
+    return
   end
 
   if entity:is_activated() then entity:set_activated(false) end
@@ -74,6 +83,19 @@ end
 function entity:is_under(entity)
   local x, y, z = entity:get_position()
   return (z == button_z) and (math.abs(x-button_x)<=4) and (math.abs(y-button_y)<=4)
+end
+
+function entity:is_under_hero_hammer()
+  local hero = entity:get_game():get_hero()
+
+  local x, y, z = hero:get_position()
+  local direction4 = hero:get_direction()
+  if direction4 == 0 then x = x + 12
+  elseif direction4 == 1 then y = y - 12
+  elseif direction4 == 2 then x = x - 12
+  else y = y + 12 end
+
+  return (z == button_z) and (math.abs(x-button_x)<=8) and (math.abs(y-button_y)<=8)
 end
 
 function entity:is_activated()

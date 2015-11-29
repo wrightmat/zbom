@@ -6,5 +6,4 @@ function entity:on_custom_created()
   self.sound = "throw" -- Change the default bouncing sound.
   self.can_push_buttons = true
   self.moved_on_platform = false
-  self.is_independent = true
 end

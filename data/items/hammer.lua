@@ -1,6 +1,4 @@
 local item = ...
-local game = item:get_game()
-local hero = game:get_hero()
 
 function item:on_created()
   item:set_savegame_variable("i1839")
@@ -9,6 +7,9 @@ function item:on_created()
 end
 
 function item:on_using()
+  local game = item:get_game()
+  local hero = game:get_hero()
+
   -- Handle stakes.
   item:set_pushed_stake(false)
   sol.timer.start(item, 50, function()
@@ -41,7 +42,6 @@ function item:on_using()
   hammer:set_origin(4, 5)
   hammer:add_collision_test("overlapping", function(hammer, entity)
     if entity:get_type() == "enemy" then
-
       local enemy = entity
       if enemies_touched[enemy] then
         return  -- If protected we don't want to play the sound repeatedly.
@@ -49,12 +49,6 @@ function item:on_using()
       enemies_touched[enemy] = true
       local reaction = enemy:get_attack_hammer(enemy_sprite)
       enemy:receive_attack_consequence("hammer", reaction)
-    elseif entity:get_type() == "custom_entity" then
-
-      -- For our custom (rusted) switches which can only be activated by the hammer or a heavy object.
-      if entity:get_model() == "switch_rust" then
-        entity:set_activated(true)
-      end
     end
   end)
 

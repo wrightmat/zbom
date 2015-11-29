@@ -14,6 +14,7 @@ local properties = {
   awaking_animation = "shaking",
   normal_animation = "walking",
   obstacle_behavior = "flying",
+  waking_distance = 50,
   movement_create = function()
     local m = sol.movement.create("target")
     return m

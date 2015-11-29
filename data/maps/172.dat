@@ -5525,6 +5525,24 @@ tile{
   pattern = "103",
 }
 
+tile{
+  layer = 0,
+  x = 576,
+  y = 768,
+  width = 16,
+  height = 48,
+  pattern = "212",
+}
+
+tile{
+  layer = 0,
+  x = 768,
+  y = 768,
+  width = 16,
+  height = 48,
+  pattern = "212",
+}
+
 destination{
   name = "from_outside",
   layer = 0,
@@ -6097,6 +6115,132 @@ enemy{
   direction = 0,
   breed = "leever_purple",
   treasure_name = "random_north",
+}
+
+wall{
+  layer = 0,
+  x = 680,
+  y = 184,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 680,
+  y = 320,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 456,
+  y = 208,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 448,
+  y = 456,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 312,
+  y = 456,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 904,
+  y = 488,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1040,
+  y = 488,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1016,
+  y = 328,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+destructible{
+  layer = 0,
+  x = 584,
+  y = 781,
+  treasure_name = "random_north",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 584,
+  y = 797,
+  treasure_name = "random_north",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 584,
+  y = 813,
+  treasure_name = "random_north",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 776,
+  y = 781,
+  treasure_name = "random_north",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 776,
+  y = 797,
+  treasure_name = "random_north",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 776,
+  y = 813,
+  treasure_name = "random_north",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
 }
 
 tile{
