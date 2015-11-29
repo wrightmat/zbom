@@ -4489,6 +4489,69 @@ tile{
   pattern = "104",
 }
 
+tile{
+  layer = 0,
+  x = 120,
+  y = 568,
+  width = 16,
+  height = 80,
+  pattern = "212",
+}
+
+tile{
+  layer = 0,
+  x = 1224,
+  y = 472,
+  width = 16,
+  height = 80,
+  pattern = "212",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 328,
+  width = 32,
+  height = 16,
+  pattern = "212",
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 328,
+  width = 32,
+  height = 16,
+  pattern = "212",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "212",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "212",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 584,
+  width = 16,
+  height = 64,
+  pattern = "212",
+}
+
 destination{
   name = "from_outside",
   layer = 0,
@@ -4521,31 +4584,11 @@ jumper{
 
 jumper{
   layer = 0,
-  x = 624,
-  y = 616,
-  width = 8,
-  height = 40,
-  direction = 4,
-  jump_length = 56,
-}
-
-jumper{
-  layer = 0,
   x = 448,
   y = 576,
   width = 88,
   height = 8,
   direction = 2,
-  jump_length = 56,
-}
-
-jumper{
-  layer = 0,
-  x = 536,
-  y = 584,
-  width = 8,
-  height = 72,
-  direction = 0,
   jump_length = 56,
 }
 
@@ -4791,6 +4834,206 @@ jumper{
   height = 8,
   direction = 6,
   jump_length = 56,
+}
+
+enemy{
+  name = "stal_1",
+  layer = 0,
+  x = 128,
+  y = 581,
+  direction = 0,
+  breed = "stal",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "stal_2",
+  layer = 0,
+  x = 128,
+  y = 597,
+  direction = 0,
+  breed = "stal",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "stal_3",
+  layer = 0,
+  x = 128,
+  y = 613,
+  direction = 0,
+  breed = "stal",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "stal_4",
+  layer = 0,
+  x = 128,
+  y = 629,
+  direction = 0,
+  breed = "stal",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "stal_5",
+  layer = 0,
+  x = 128,
+  y = 645,
+  direction = 0,
+  breed = "stal",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "stal_6",
+  layer = 0,
+  x = 1232,
+  y = 485,
+  direction = 0,
+  breed = "stal",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "stal_7",
+  layer = 0,
+  x = 1232,
+  y = 501,
+  direction = 0,
+  breed = "stal",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "stal_8",
+  layer = 0,
+  x = 1232,
+  y = 517,
+  direction = 0,
+  breed = "stal",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "stal_9",
+  layer = 0,
+  x = 1232,
+  y = 533,
+  direction = 0,
+  breed = "stal",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "stal_10",
+  layer = 0,
+  x = 1232,
+  y = 549,
+  direction = 0,
+  breed = "stal",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "stal_11",
+  layer = 0,
+  x = 584,
+  y = 341,
+  direction = 0,
+  breed = "stal",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "stal_12",
+  layer = 0,
+  x = 600,
+  y = 341,
+  direction = 0,
+  breed = "stal",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "stal_13",
+  layer = 0,
+  x = 760,
+  y = 341,
+  direction = 0,
+  breed = "stal",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "stal_14",
+  layer = 0,
+  x = 776,
+  y = 341,
+  direction = 0,
+  breed = "stal",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "stal_15",
+  layer = 0,
+  x = 440,
+  y = 77,
+  direction = 0,
+  breed = "stal",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "stal_16",
+  layer = 0,
+  x = 504,
+  y = 77,
+  direction = 0,
+  breed = "stal",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "stal_17",
+  layer = 0,
+  x = 584,
+  y = 645,
+  direction = 0,
+  breed = "stal",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "stal_18",
+  layer = 0,
+  x = 584,
+  y = 629,
+  direction = 0,
+  breed = "stal",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "stal_19",
+  layer = 0,
+  x = 584,
+  y = 613,
+  direction = 0,
+  breed = "stal",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "stal_20",
+  layer = 0,
+  x = 584,
+  y = 597,
+  direction = 0,
+  breed = "stal",
+  treasure_name = "random_north",
 }
 
 tile{

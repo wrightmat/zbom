@@ -8423,6 +8423,24 @@ tile{
   pattern = "243",
 }
 
+tile{
+  layer = 0,
+  x = 464,
+  y = 744,
+  width = 8,
+  height = 40,
+  pattern = "2007",
+}
+
+tile{
+  layer = 0,
+  x = 552,
+  y = 744,
+  width = 8,
+  height = 40,
+  pattern = "2013",
+}
+
 dynamic_tile{
   name = "night_window_2",
   layer = 0,
@@ -10438,24 +10456,6 @@ tile{
   width = 8,
   height = 8,
   pattern = "2012",
-}
-
-tile{
-  layer = 1,
-  x = 464,
-  y = 744,
-  width = 8,
-  height = 40,
-  pattern = "2007",
-}
-
-tile{
-  layer = 1,
-  x = 552,
-  y = 744,
-  width = 8,
-  height = 40,
-  pattern = "2013",
 }
 
 tile{
