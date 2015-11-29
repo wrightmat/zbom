@@ -6120,6 +6120,33 @@ tile{
   pattern = "556",
 }
 
+tile{
+  layer = 0,
+  x = 96,
+  y = 248,
+  width = 16,
+  height = 16,
+  pattern = "565",
+}
+
+tile{
+  layer = 0,
+  x = 2184,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "561",
+}
+
+tile{
+  layer = 0,
+  x = 1968,
+  y = 1016,
+  width = 16,
+  height = 16,
+  pattern = "565",
+}
+
 sensor{
   name = "dungeon_room_8_",
   layer = 0,
@@ -8259,6 +8286,24 @@ tile{
   width = 32,
   height = 8,
   pattern = "171",
+}
+
+tile{
+  layer = 2,
+  x = 96,
+  y = 264,
+  width = 16,
+  height = 8,
+  pattern = "569",
+}
+
+tile{
+  layer = 2,
+  x = 1968,
+  y = 1032,
+  width = 16,
+  height = 8,
+  pattern = "569",
 }
 
 separator{

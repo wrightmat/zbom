@@ -2,7 +2,7 @@ local map = ...
 local game = map:get_game()
 
 -------------------------------------------
--- Fire Sanctuary - Mini Dungeon, Hammer --
+-- Parapa Palace - Mini Dungeon (Hammer) --
 -------------------------------------------
 
 function map:on_started(destination)
