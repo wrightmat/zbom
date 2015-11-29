@@ -5,7 +5,7 @@ properties{
   height = 1120,
   world = "outside_north",
   tileset = "2",
-  music = "same",
+  music = "north",
 }
 
 tile{
@@ -3707,7 +3707,7 @@ destination{
 wall{
   layer = 0,
   x = 256,
-  y = 384,
+  y = 376,
   width = 96,
   height = 16,
   stops_hero = true,
@@ -3770,7 +3770,7 @@ destination{
 wall{
   layer = 0,
   x = 352,
-  y = 856,
+  y = 848,
   width = 96,
   height = 16,
   stops_hero = true,
@@ -3833,7 +3833,7 @@ destination{
 wall{
   layer = 0,
   x = 760,
-  y = 560,
+  y = 552,
   width = 96,
   height = 16,
   stops_hero = true,
@@ -3896,7 +3896,7 @@ destination{
 wall{
   layer = 0,
   x = 832,
-  y = 928,
+  y = 920,
   width = 96,
   height = 16,
   stops_hero = true,

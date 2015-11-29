@@ -5543,11 +5543,38 @@ tile{
   pattern = "212",
 }
 
+tile{
+  layer = 0,
+  x = 664,
+  y = 912,
+  width = 8,
+  height = 16,
+  pattern = "106",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 928,
+  width = 16,
+  height = 8,
+  pattern = "105",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 912,
+  width = 8,
+  height = 16,
+  pattern = "106",
+}
+
 destination{
   name = "from_outside",
   layer = 0,
   x = 680,
-  y = 885,
+  y = 901,
   direction = 1,
   default = true,
 }
@@ -5556,7 +5583,7 @@ teletransporter{
   name = "to_outside",
   layer = 0,
   x = 672,
-  y = 904,
+  y = 912,
   width = 16,
   height = 16,
   destination_map = "120",

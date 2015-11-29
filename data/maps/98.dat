@@ -5,7 +5,7 @@ properties{
   height = 1120,
   world = "outside_north",
   tileset = "3",
-  music = "same",
+  music = "north",
 }
 
 tile{
@@ -47,7 +47,7 @@ tile{
 tile{
   layer = 0,
   x = 928,
-  y = 880,
+  y = 888,
   width = 48,
   height = 48,
   pattern = "696",
@@ -2465,6 +2465,24 @@ tile{
   pattern = "522",
 }
 
+tile{
+  layer = 0,
+  x = 928,
+  y = 920,
+  width = 16,
+  height = 8,
+  pattern = "694",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 920,
+  width = 16,
+  height = 8,
+  pattern = "694",
+}
+
 teletransporter{
   name = "to_E3",
   layer = 0,
@@ -2756,7 +2774,7 @@ destination{
   layer = 0,
   x = 200,
   y = 677,
-  direction = 1,
+  direction = 3,
 }
 
 teletransporter{
@@ -2786,6 +2804,24 @@ tile{
   width = 8,
   height = 8,
   pattern = "690",
+}
+
+tile{
+  layer = 1,
+  x = 944,
+  y = 920,
+  width = 16,
+  height = 8,
+  pattern = "694",
+}
+
+tile{
+  layer = 1,
+  x = 920,
+  y = 880,
+  width = 8,
+  height = 8,
+  pattern = "688",
 }
 
 tile{
@@ -2840,15 +2876,6 @@ tile{
   width = 8,
   height = 40,
   pattern = "520",
-}
-
-tile{
-  layer = 2,
-  x = 920,
-  y = 880,
-  width = 8,
-  height = 8,
-  pattern = "688",
 }
 
 tile{
