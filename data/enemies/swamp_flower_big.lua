@@ -20,15 +20,16 @@ local function shoot_fire()
   sprite:set_animation("shooting")
   sol.timer.start(enemy, 500, function()
     sol.audio.play_sound("lamp")
-    local flame = enemy:create_enemy({ breed = "projectiles/fireball_simple", x = x + 10, y = y + 10 })
+    local flame = enemy:create_enemy({ breed = "fireball_small", x, y, layer = 1, direction = 0 })
   end)
+  sol.timer.start(enemy, 2000, function () enemy:restart() end)
 end
 
 function enemy:on_restarted()
   local sprite = enemy:get_sprite()
   sprite:set_animation("stopped")
   can_shoot = true
-  sol.timer.start(enemy, 200, function()
+  sol.timer.start(enemy, 2000, function()
     if can_shoot then
       shoot_fire()
       can_shoot = false

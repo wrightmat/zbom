@@ -6,7 +6,9 @@ local game = map:get_game()
 -------------------------------------------
 
 function map:on_started(destination)
-
+  map:get_entity("torch_1"):get_sprite():set_animation("lit")
+  map:get_entity("torch_2"):get_sprite():set_animation("lit")
+  map:get_entity("torch_3"):get_sprite():set_animation("lit")
 end
 
 for enemy in map:get_entities("octolux") do

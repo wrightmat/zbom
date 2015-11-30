@@ -246,6 +246,7 @@ sprite{ id = "enemies/enemy_killed", description = "Enemy Killed" }
 sprite{ id = "enemies/evil_tile", description = "Evil Tile" }
 sprite{ id = "enemies/fireball_animated", description = "Fireball, animated" }
 sprite{ id = "enemies/fireball_simple", description = "Fireball, simple" }
+sprite{ id = "enemies/fireball_small", description = "Fireball, Small" }
 sprite{ id = "enemies/fireball_triple", description = "Fireball, triple" }
 sprite{ id = "enemies/flame_blue", description = "Flame, blue" }
 sprite{ id = "enemies/flame_red", description = "Flame, red" }
@@ -837,6 +838,7 @@ enemy{ id = "evil_tile", description = "Evil Tile" }
 enemy{ id = "fire_bar", description = "Fire bar (clockwise)" }
 enemy{ id = "fireball_animated", description = "Fireball, Animated" }
 enemy{ id = "fireball_simple", description = "Fireball, Simple" }
+enemy{ id = "fireball_small", description = "Fireball, Small" }
 enemy{ id = "fireball_triple", description = "Fireball, Triple" }
 enemy{ id = "flame_blue", description = "Flame, Blue" }
 enemy{ id = "flame_red", description = "Flame, Red" }
