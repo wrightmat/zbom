@@ -240,11 +240,16 @@ function room2_dest:on_activated()
 	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="dodongo",name="enemy" })
       end
     elseif game:get_value("i1609") == 37 then
-      -- Room 37: Ice Keese
+      -- Room 37: Ice Keese and Wizzrobes
       for i=1,8 do
 	ex = random_8(472,680)
 	ey = random_8(96,240)
 	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="keese_ice",name="enemy" })
+      end
+      for i=1,2 do
+	ex = random_8(72,288)
+	ey = random_8(464,600)
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="wizzrobe_ice",name="enemy" })
       end
     elseif game:get_value("i1609") == 42 then
       -- Room 42: Ropes, Redead and Poes
@@ -346,12 +351,12 @@ function room3_dest:on_activated()
       end
     elseif game:get_value("i1609") == 38 then
       -- Room 38: Ice and Fire Wizzrobes
-      for i=1,2 do
+      for i=1,3 do
 	ex = random_8(72,288)
 	ey = random_8(464,600)
 	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="wizzrobe_fire",name="enemy" })
       end
-      for i=1,2 do
+      for i=1,3 do
 	ex = random_8(72,288)
 	ey = random_8(464,600)
 	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="wizzrobe_ice",name="enemy" })

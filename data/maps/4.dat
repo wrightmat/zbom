@@ -10,6 +10,51 @@ properties{
 
 tile{
   layer = 0,
+  x = 168,
+  y = 888,
+  width = 16,
+  height = 16,
+  pattern = "468",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 840,
+  width = 16,
+  height = 16,
+  pattern = "469",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 880,
+  width = 128,
+  height = 24,
+  pattern = "49",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 840,
+  width = 128,
+  height = 24,
+  pattern = "52",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 848,
+  width = 24,
+  height = 48,
+  pattern = "51",
+}
+
+tile{
+  layer = 0,
   x = 1192,
   y = 824,
   width = 24,
@@ -1743,24 +1788,6 @@ tile{
   width = 24,
   height = 24,
   pattern = "45",
-}
-
-tile{
-  layer = 0,
-  x = 56,
-  y = 840,
-  width = 112,
-  height = 24,
-  pattern = "52",
-}
-
-tile{
-  layer = 0,
-  x = 56,
-  y = 880,
-  width = 112,
-  height = 24,
-  pattern = "49",
 }
 
 tile{
@@ -4879,8 +4906,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 168,
-  y = 840,
+  x = 160,
+  y = 848,
   width = 16,
   height = 16,
   pattern = "471",
@@ -4915,8 +4942,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 168,
-  y = 888,
+  x = 160,
+  y = 880,
   width = 16,
   height = 16,
   pattern = "473",
@@ -4929,15 +4956,6 @@ tile{
   width = 32,
   height = 16,
   pattern = "366",
-}
-
-tile{
-  layer = 0,
-  x = 160,
-  y = 856,
-  width = 24,
-  height = 32,
-  pattern = "51",
 }
 
 tile{

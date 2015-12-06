@@ -2260,15 +2260,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 608,
-  y = 752,
-  width = 16,
-  height = 8,
-  pattern = "676",
-}
-
-tile{
-  layer = 0,
   x = 992,
   y = 520,
   width = 16,
@@ -5138,6 +5129,15 @@ tile{
   y = 872,
   width = 8,
   height = 24,
+  pattern = "676",
+}
+
+tile{
+  layer = 1,
+  x = 608,
+  y = 752,
+  width = 16,
+  height = 8,
   pattern = "676",
 }
 

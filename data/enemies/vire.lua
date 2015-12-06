@@ -22,11 +22,7 @@ end
 
 function enemy:on_hurt()
   if self:get_map():get_entities_count("keese_fire") <= 4 then
-    self:create_enemy({
-      name = "keese_fire_",
-      breed = "keese_fire",
-      treasure_name = "random"
-    })
+    self:create_enemy({ name = "keese_fire_", breed = "keese_fire", treasure_name = "random" })
   end
 end
 
@@ -43,11 +39,7 @@ function enemy:check_hero()
     self:go_random()
   else
     if self:get_map():get_entities_count("keese_fire") <= 4 then
-      self:create_enemy({
-	name = "keese_fire_",
-	breed = "keese_fire",
-	treasure_name = "random"
-      })
+      self:create_enemy({ name = "keese_fire_", breed = "keese_fire", treasure_name = "random" })
     end
   end
   sol.timer.start(self:get_map(), 2000, function() self:check_hero() end)

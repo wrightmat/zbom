@@ -33,7 +33,7 @@ function enemy:on_restarted()
 
   if not finished then
     sprite:fade_out()
-    timers[#timers + 1] = sol.timer.start(self, 700, function() self:hide() end)
+    timers[#timers + 1] = sol.timer.start(self:get_map(), 700, function() self:hide() end)
   end
   ex, ey, el = self:get_position()
   if ex == -100 and ey == -100 then
@@ -53,7 +53,7 @@ function enemy:unhide()
   local sprite = self:get_sprite()
   sprite:set_direction(position.direction4)
   sprite:fade_in()
-  timers[#timers + 1] = sol.timer.start(self, 1000, function()
+  timers[#timers + 1] = sol.timer.start(self:get_map(), 1000, function()
     if map:get_entities_count("vire") < 2 then
       self:create_enemy({
 	x = position.x + 20,

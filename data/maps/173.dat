@@ -10,28 +10,91 @@ properties{
 
 tile{
   layer = 0,
-  x = 216,
-  y = 88,
-  width = 176,
-  height = 128,
+  x = 80,
+  y = 80,
+  width = 304,
+  height = 48,
   pattern = "248",
 }
 
 tile{
   layer = 0,
+  x = 72,
+  y = 120,
+  width = 128,
+  height = 32,
+  pattern = "248",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 72,
+  width = 64,
+  height = 32,
+  pattern = "134",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 72,
+  width = 112,
+  height = 48,
+  pattern = "134",
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 72,
+  width = 144,
+  height = 48,
+  pattern = "134",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 120,
+  width = 192,
+  height = 96,
+  pattern = "248",
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 120,
+  width = 96,
+  height = 32,
+  pattern = "134",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 120,
+  width = 112,
+  height = 32,
+  pattern = "134",
+}
+
+tile{
+  layer = 0,
   x = 88,
-  y = 88,
+  y = 152,
   width = 48,
-  height = 128,
+  height = 64,
   pattern = "248",
 }
 
 tile{
   layer = 0,
   x = 136,
-  y = 88,
-  width = 80,
-  height = 128,
+  y = 152,
+  width = 64,
+  height = 64,
   pattern = "248",
 }
 
@@ -2918,45 +2981,18 @@ tile{
 tile{
   layer = 0,
   x = 80,
-  y = 80,
+  y = 152,
   width = 8,
-  height = 8,
-  pattern = "91",
-}
-
-tile{
-  layer = 0,
-  x = 376,
-  y = 80,
-  width = 8,
-  height = 8,
-  pattern = "92",
-}
-
-tile{
-  layer = 0,
-  x = 88,
-  y = 80,
-  width = 288,
-  height = 8,
-  pattern = "98",
-}
-
-tile{
-  layer = 0,
-  x = 80,
-  y = 88,
-  width = 8,
-  height = 128,
+  height = 64,
   pattern = "96",
 }
 
 tile{
   layer = 0,
   x = 376,
-  y = 88,
+  y = 120,
   width = 8,
-  height = 80,
+  height = 48,
   pattern = "97",
 }
 
@@ -4499,6 +4535,159 @@ tile{
   pattern = "77",
 }
 
+tile{
+  layer = 0,
+  x = 184,
+  y = 96,
+  width = 64,
+  height = 8,
+  pattern = "113",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 144,
+  width = 96,
+  height = 8,
+  pattern = "113",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 104,
+  width = 8,
+  height = 40,
+  pattern = "115",
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 104,
+  width = 8,
+  height = 40,
+  pattern = "114",
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 144,
+  width = 8,
+  height = 8,
+  pattern = "110",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 144,
+  width = 80,
+  height = 8,
+  pattern = "113",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 144,
+  width = 8,
+  height = 8,
+  pattern = "111",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 120,
+  width = 8,
+  height = 24,
+  pattern = "115",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 112,
+  width = 40,
+  height = 8,
+  pattern = "113",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 152,
+  width = 8,
+  height = 8,
+  pattern = "104",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 160,
+  width = 8,
+  height = 48,
+  pattern = "106",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 208,
+  width = 8,
+  height = 8,
+  pattern = "104",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 144,
+  width = 8,
+  height = 8,
+  pattern = "111",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 152,
+  width = 16,
+  height = 16,
+  pattern = "104",
+}
+
+tile{
+  layer = 0,
+  x = 376,
+  y = 120,
+  width = 8,
+  height = 8,
+  pattern = "104",
+}
+
+tile{
+  layer = 0,
+  x = 376,
+  y = 128,
+  width = 8,
+  height = 32,
+  pattern = "106",
+}
+
+tile{
+  layer = 0,
+  x = 376,
+  y = 160,
+  width = 8,
+  height = 8,
+  pattern = "104",
+}
+
 chest{
   name = "chest_spoil",
   layer = 0,
@@ -4644,6 +4833,7 @@ enemy{
 }
 
 enemy{
+  name = "flower_2",
   layer = 0,
   x = 784,
   y = 845,
@@ -4652,6 +4842,7 @@ enemy{
 }
 
 enemy{
+  name = "flower_1",
   layer = 0,
   x = 544,
   y = 845,
@@ -4884,8 +5075,8 @@ wall{
 npc{
   name = "torch_3",
   layer = 0,
-  x = 216,
-  y = 141,
+  x = 224,
+  y = 149,
   direction = 3,
   subtype = 0,
   sprite = "entities/torch",
@@ -5024,6 +5215,42 @@ custom_entity{
   direction = 0,
   sprite = "entities/soil",
   model = "soil",
+}
+
+enemy{
+  layer = 0,
+  x = 136,
+  y = 125,
+  direction = 0,
+  breed = "swamp_flower_big",
+}
+
+enemy{
+  layer = 0,
+  x = 296,
+  y = 125,
+  direction = 0,
+  breed = "swamp_flower_big",
+}
+
+switch{
+  name = "switch_1",
+  layer = 0,
+  x = 360,
+  y = 136,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  sound = "switch",
+  needs_block = true,
+  inactivate_when_leaving = true,
+}
+
+enemy{
+  layer = 0,
+  x = 128,
+  y = 277,
+  direction = 0,
+  breed = "swamp_flower_big",
 }
 
 tile{
@@ -8070,6 +8297,15 @@ wall{
   stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
+}
+
+custom_entity{
+  layer = 1,
+  x = 776,
+  y = 173,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
 }
 
 tile{

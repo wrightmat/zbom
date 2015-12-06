@@ -51,8 +51,8 @@ function map:on_started(destination)
     npc_gaira:remove()
   else
     random_walk(npc_tern)
-    torch_2:remove()
-    torch_3:remove()
+    torch_2:remove(); wall_2:remove()
+    torch_3:remove(); wall_3:remove()
   end
   if game:get_value("i1027") < 3 then
     if game:get_value("i1028") < 1 then

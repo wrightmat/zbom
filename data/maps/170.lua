@@ -22,8 +22,7 @@ function sensor_boss:on_activated()
   elseif game:get_value("i1613") == 2 then
     map:create_enemy({ name = "boss", x = 416, y = 168, layer = 0, direction = 3, breed = "gohma", treasure_name = "arrow", treasure_variant = 3 })
   elseif game:get_value("i1613") == 3 then
-    local boss = map:create_enemy({ name = "boss", x = 416, y = 168, layer = 0, direction = 3, breed = "manhandla", treasure_name = "apple" })
-    boss:set_enabled()
+    map:create_enemy({ name = "boss", x = 416, y = 168, layer = 0, direction = 3, breed = "manhandla", treasure_name = "apple" })
   elseif game:get_value("i1613") == 4 then
     map:create_enemy({ name = "boss", x = 416, y = 168, layer = 0, direction = 3, breed = "vire", treasure_name = "bomb", treasure_variant = 3 })
     map:create_enemy({ name = "boss_2", x = 416, y = 192, layer = 0, direction = 3, breed = "vire_sorceror", treasure_name = "bomb", treasure_variant = 3 })
@@ -38,17 +37,17 @@ function sensor_boss:on_activated()
     map:create_enemy({ name = "boss", x = 416, y = 168, layer = 0, direction = 3, breed = "shadow_link", treasure_name = "arrow", treasure_variant = 3 })
     map:create_enemy({ name = "boss_2", x = 416, y = 192, layer = 0, direction = 3, breed = "zirna", treasure_name = "arrow", treasure_variant = 3 })
   end
+  if boss ~= nil then boss:set_enabled(true) end
+  if boss_2 ~= nil then boss_2:set_enabled(true) end
   boss_visible = true
 end
 
 function map:on_update()
   if not map:has_entities("boss") then
     if game:get_value("i1613") < 8 and not warp:is_enabled() and boss_visible then
-print("warp enabled")
       warp:set_enabled(true)
       sol.audio.play_music("underground")
     elseif game:get_value("i1613") == 8 and boss_visible then
-print("door enabled")
       map:open_doors("door")
       game:set_value("i1613", 9)
       sol.audio.play_music("underground")

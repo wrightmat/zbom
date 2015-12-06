@@ -72,11 +72,11 @@ function map:on_started(destination)
     npc_tristan:remove()
   elseif game:get_value("i1027") >= 5 then
     random_walk(npc_tristan)
-    torch_1:remove()
-    torch_2:remove()
-    torch_3:remove()
-    torch_4:remove()
-    torch_5:remove()
+    torch_1:remove(); wall_1:remove()
+    torch_2:remove(); wall_2:remove()
+    torch_3:remove(); wall_3:remove()
+    torch_4:remove(); wall_4:remove()
+    torch_5:remove(); wall_5:remove()
   end
 end
 

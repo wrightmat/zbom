@@ -43,6 +43,7 @@ function enemy:check_hero()
     self:go_hero()
   elseif not near_hero and going_hero then
     self:stop(self:get_movement())
+    self:get_sprite():set_animation("immobilized")
   end
   timer = sol.timer.start(self, 2000, function() self:check_hero() end)
 end

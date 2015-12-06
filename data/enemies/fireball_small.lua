@@ -3,7 +3,7 @@ local enemy = ...
 -- A small fireball which automatically moves toward the hero.
 
 function enemy:on_created()
-  self:set_life(1); self:set_damage(8)
+  self:set_life(1); self:set_damage(4)
   self:create_sprite("enemies/fireball_small")
   self:set_size(16, 16); self:set_origin(8, 8)
   self:set_invincible()

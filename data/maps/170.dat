@@ -1295,6 +1295,51 @@ tile{
   pattern = "3",
 }
 
+tile{
+  layer = 0,
+  x = 80,
+  y = 336,
+  width = 128,
+  height = 16,
+  pattern = "3",
+}
+
+wall{
+  layer = 0,
+  x = 672,
+  y = 72,
+  width = 8,
+  height = 192,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 160,
+  y = 72,
+  width = 512,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 152,
+  y = 72,
+  width = 8,
+  height = 192,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 160,
+  y = 256,
+  width = 512,
+  height = 8,
+  stops_enemies = true,
+}
+
 chest{
   name = "chest_heart_piece",
   layer = 0,
@@ -1360,7 +1405,7 @@ sensor{
   name = "sensor_tileset",
   layer = 0,
   x = 208,
-  y = 309,
+  y = 317,
   width = 48,
   height = 16,
 }
@@ -1554,15 +1599,6 @@ tile{
   width = 64,
   height = 240,
   pattern = "524",
-}
-
-tile{
-  layer = 2,
-  x = 80,
-  y = 336,
-  width = 128,
-  height = 16,
-  pattern = "3",
 }
 
 separator{
