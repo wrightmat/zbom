@@ -37,7 +37,9 @@ function map:on_started(destination)
     end
   end
 
-  if not game:get_value("b1612") then thief:remove() end
+  if not game:get_value("b1612") or game:get_value("b1812") then
+    thief:remove()  -- If not ready for the thief game, or already have the bottle.
+  end
 end
 
 function sensor_enter_kakariko:on_activated()

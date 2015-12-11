@@ -7802,6 +7802,19 @@ tile{
   pattern = "265",
 }
 
+wall{
+  layer = 0,
+  x = 736,
+  y = 296,
+  width = 56,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
 dynamic_tile{
   name = "night_entrance",
   layer = 0,
@@ -7988,9 +8001,9 @@ wall{
   name = "custom_obstacle",
   layer = 0,
   x = 792,
-  y = 328,
+  y = 336,
   width = 32,
-  height = 16,
+  height = 8,
   stops_hero = true,
   stops_npcs = true,
   stops_enemies = true,

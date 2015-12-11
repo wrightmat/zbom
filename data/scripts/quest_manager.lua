@@ -144,6 +144,7 @@ local function initialize_npcs()
       if self:get_sprite():get_animation_set() == "entities/mailbox" then return true end
       if self:get_sprite():get_animation_set() == "entities/torch" then return true end
       if self:get_sprite():get_animation_set() == "entities/torch_wood" then return true end
+      if self:get_sprite():get_animation_set() == "entities/block" then return true end
     else return false end
   end
   function chest_meta:is_hookshot_hook()

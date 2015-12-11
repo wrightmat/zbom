@@ -123,6 +123,20 @@ function map:on_started(destination)
     })
   end
 
+  if game:get_value("i1820") >= 2 then  -- Shield. Don't allow lesser version to be bought after Hylian or Light.
+    shop_ordon_shield:remove()
+    self:create_shop_treasure({
+	name = "shop_arrow",
+	layer = 0,
+	x = 144,
+	y = 504,
+	price = 40,
+	dialog = "shop.arrow",
+	treasure_name = "arrow",
+	treasure_variant = 3
+    })
+  end
+
   -- Activate any night-specific dynamic tiles.
   if game:get_time_of_day() == "night" then
     for entity in game:get_map():get_entities("night_") do

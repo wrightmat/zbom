@@ -6731,6 +6731,24 @@ sensor{
   height = 64,
 }
 
+custom_entity{
+  name = "hook_1",
+  layer = 0,
+  x = 448,
+  y = 325,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_2",
+  layer = 0,
+  x = 464,
+  y = 229,
+  direction = 0,
+  model = "hook",
+}
+
 tile{
   layer = 2,
   x = 192,

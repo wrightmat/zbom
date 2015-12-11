@@ -1,0 +1,7 @@
+animation{
+  name = "green",
+  src_image = "entities/miscellaneous.png",
+  directions = {
+    { x = 32, y = 24, frame_width = 8, frame_height = 8, origin_x = 0, origin_y = 0 },
+  },
+}

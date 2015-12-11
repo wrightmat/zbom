@@ -55,8 +55,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 200,
-  y = 120,
+  x = 192,
+  y = 128,
   width = 192,
   height = 96,
   pattern = "248",
@@ -5251,6 +5251,16 @@ enemy{
   y = 277,
   direction = 0,
   breed = "swamp_flower_big",
+}
+
+npc{
+  name = "torch_4",
+  layer = 0,
+  x = 352,
+  y = 213,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/torch",
 }
 
 tile{

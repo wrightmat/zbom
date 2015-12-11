@@ -49,9 +49,9 @@ end
 function npc_tokay_jade:on_interaction()
   game:set_dialog_style("default")
   game:start_dialog("tokay.mystic_jade", function(answer)
-    if answer == 1 then
-      hero:start_treasure("jade")
+    if answer == 1 and game:get_money() >= 175 then
       game:remove_money(175)
+      hero:start_treasure("jade")
     end
   end)
 end
@@ -59,9 +59,9 @@ end
 function npc_tokay_amber:on_interaction()
   game:set_dialog_style("default")
   game:start_dialog("tokay.goron_amber", function(answer)
-    if answer == 1 then
-      hero:start_treasure("amber")
+    if answer == 1 and game:get_money() >= 180 then
       game:remove_money(180)
+      hero:start_treasure("amber")
     end
   end)
 end
@@ -69,9 +69,9 @@ end
 function npc_tokay_alchemy:on_interaction()
   game:set_dialog_style("default")
   game:start_dialog("tokay.alchemy_stone", function(answer)
-    if answer == 1 then
-      hero:start_treasure("alchemy")
+    if answer == 1 and game:get_money() >= 185 then
       game:remove_money(185)
+      hero:start_treasure("alchemy")
     end
   end)
 end
@@ -79,9 +79,9 @@ end
 function npc_tokay_crystal:on_interaction()
   game:set_dialog_style("default")
   game:start_dialog("tokay.magic_crystal", function(answer)
-    if answer == 1 then
-      hero:start_treasure("crystal")
+    if answer == 1 and game:get_money() >= 190 then
       game:remove_money(190)
+      hero:start_treasure("crystal")
     end
   end)
 end
@@ -89,9 +89,9 @@ end
 function npc_tokay_plume:on_interaction()
   game:set_dialog_style("default")
   game:start_dialog("tokay.goddess_plume", function(answer)
-    if answer == 1 then
-      hero:start_treasure("plume")
+    if answer == 1 and game:get_money() >= 195 then
       game:remove_money(195)
+      hero:start_treasure("plume")
     end
   end)
 end

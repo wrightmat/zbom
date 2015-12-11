@@ -8101,6 +8101,17 @@ Have fun!
 }
 
 dialog{
+  id = "shop.arrow",
+  icon = "83",
+  skip = "current",
+  text = [[
+A bunch of arrows.
+Use them in your bow to hit
+things at a distance.
+]]
+}
+
+dialog{
   id = "shop.bomb_1",
   icon = "1",
   skip = "current",

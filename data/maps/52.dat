@@ -5518,6 +5518,32 @@ enemy{
   treasure_name = "random",
 }
 
+wall{
+  layer = 0,
+  x = 136,
+  y = 64,
+  width = 64,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 312,
+  y = 960,
+  width = 64,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
 tile{
   layer = 1,
   x = 872,

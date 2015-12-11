@@ -17,6 +17,8 @@ function map:on_started(destination)
   if not game:get_value("b1178") then
     block_1:set_enabled(false)
     block_2:set_enabled(false)
+    hook_1:set_enabled(false)
+    hook_2:set_enabled(false)
   end
   if not game:get_value("b1161") then chest_map:set_enabled(false) end
 end
@@ -24,6 +26,7 @@ end
 function switch_1:on_activated()
   map:move_camera(448, 325, 250, function()
     block_1:set_enabled(true)
+    hook_1:set_enabled(true)
   end, 500, 500)
   if switch_2:is_activated() then game:set_value("b1178", true) end
 end
@@ -31,6 +34,7 @@ end
 function switch_2:on_activated()
   map:move_camera(464, 229, 250, function()
     block_2:set_enabled(true)
+    hook_2:set_enabled(true)
   end, 500, 500)
   if switch_1:is_activated() then game:set_value("b1178", true) end
 end
