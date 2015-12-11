@@ -52,7 +52,7 @@ function map:on_started(destination)
   slots_man_sprite = slots_man:get_sprite()
   npc_zirna:set_enabled(false)
   if game:get_value("i1032") >= 3 and not game:get_value("b1699") then
-    -- Council disbands after Zelda kidnapped
+    -- Council disbands after Zelda kidnapped.
     elder_ulo:remove()
     elder_juba:remove()
     elder_gin:remove()
@@ -245,9 +245,8 @@ end
 
 function sensor_zirna_cutscene:on_activated()
   game:set_dialog_style("default")
-  -- If the player has been to library and heard
-  -- Ordona speak, then continue the story with a
-  -- Dark Interloper cutscene where they take Zelda
+  -- If the player has been to library and heard Ordona speak, then
+  -- continue the story with a Dark Interloper cutscene where they take Zelda.
   if game:get_value("i1032") == 2 then
     local hx, hy, hl = map:get_hero():get_position()
     npc_zirna:set_enabled(true)
@@ -303,21 +302,21 @@ end
 
 function chests_man:on_interaction()
   game:set_dialog_style("default")
-  -- chest game dialog
+  -- Chest game dialog.
   if playing_chests then
-    -- the player is already playing: tell him to choose a chest
+    -- The player is already playing: tell him to choose a chest.
     game:start_dialog("chest_game.choose_chest")
   else
-    -- see if the player can still play
+    -- See if the player can still play.
     if unauthorized then
-      -- the player already won the wallet, so discourage play
+      -- The player already won the wallet, so discourage play.
       game:start_dialog("chest_game.not_allowed", chests_question_dialog_finished)
     else
       if not already_played_game_1 then
-        -- first time: long dialog with the game rules
+        -- First time: long dialog with the game rules.
         game:start_dialog("chest_game.intro", chests_question_dialog_finished)
       else
-        -- quick dialog to play again
+        -- Quick dialog to play again.
         game:start_dialog("chest_game.play_again", chests_question_dialog_finished)
       end
     end
@@ -328,25 +327,25 @@ function slots_man:on_interaction()
   game:set_dialog_style("default")
   -- slots game dialog
   if playing_slots then
-    -- the player is already playing: tell him to stop the reels
+    -- The player is already playing: tell him to stop the reels.
     game:start_dialog("slot_game.playing")
   else
-    -- dialog with the game rules
+    -- Dialog with the game rules.
     game:start_dialog("slot_game.intro", slots_question_dialog_finished)
   end
 end
 
 function arrow_man:on_interaction()
   game:set_dialog_style("default")
-  -- arrow game dialog
+  -- Arrow game dialog.
   if playing_arrows then
-    -- player is already playing the game
+    -- Player is already playing the game.
     game:start_dialog("arrow_game.playing")
   elseif game:has_item("bow") then
-    -- dialog with game rules
+    -- Dialog with game rules.
     game:start_dialog("arrow_game.intro", arrow_question_dialog_finished)
   else
-    -- game not open until bow is obtained
+    -- Game not open until bow is obtained.
     game:start_dialog("arrow_game.not_open")
   end
 end
@@ -375,16 +374,16 @@ end
 
 function chests_question_dialog_finished(answer)
   if answer == 2 then
-    -- the player does not want to play the game
+    -- The player does not want to play the game.
     game:start_dialog("chest_game.not_playing")
   else
-    -- wants to play chest game
+    -- Wants to play chest game.
     if game:get_money() < 20 then
-      -- not enough money
+      -- Not enough money.
       sol.audio.play_sound("wrong")
       game:start_dialog("slot_game.not_enough_money")
     else
-      -- enough money: reset the 3 chests, pay and start the game
+      -- Enough money: reset the 3 chests, pay and start the game.
       chest_1:set_open(false)
       chest_2:set_open(false)
       chest_3:set_open(false)
@@ -397,10 +396,10 @@ end
 
 function slots_question_dialog_finished(answer)
   if answer == 2 then
-    -- don't want to play the game
+    -- Don't want to play the game.
     game:start_dialog("slot_game.not_playing")
   else
-    -- wants to play slots game
+    -- Wants to play slots game.
     game:start_dialog("slot_game.choose_bet", slots_choose_bet_dialog_finished)
   end
 end
@@ -414,16 +413,16 @@ function slots_choose_bet_dialog_finished(answer)
     game_2_bet = 20
   end
   if map:get_game():get_money() < slots_bet then
-    -- not enough money
+    -- Not enough money.
     sol.audio.play_sound("wrong")
     game:start_dialog("slot_game.not_enough_money")
   else
-    -- enough money: pay and start the game
+    -- Enough money: pay and start the game.
     game:remove_money(slots_bet)
     game:start_dialog("slot_game.just_paid")
     playing_slots = true
 
-    -- start the slot machine animations
+    -- Start the slot machine animations.
     for k, v in pairs(slots_slots) do
       v.symbol = -1
       v.current_delay = v.initial_delay
@@ -437,23 +436,24 @@ end
 
 function arrow_question_dialog_finished(answer)
   if answer == 2 then
-    -- the player does not want to play the game
+    -- The player does not want to play the game.
     game:start_dialog("arrow_game.not_playing")
   else
-    -- wants to play arrow game
+    -- Wants to play arrow game.
     if game:get_money() < 50 then
       -- not enough money
       sol.audio.play_sound("wrong")
       game:start_dialog("slot_game.not_enough_money")
     else
-      -- enough money: create the targets and start them moving
+      -- Enough money: create the targets and start them moving.
       game:remove_money(50)
       if game:get_value("i1802") < 10 then
         game:start_dialog("arrow_game.not_enough_arrows", function()
           game:set_value("i1802", game:get_value("i1802")+10)
         end)
+      else
+        game:start_dialog("arrow_game.good_luck")
       end
-      game:start_dialog("arrow_game.good_luck")
       local nb_targets = (arrow_plays + 1) * 3
       if nb_targets > 20 then nb_targets = 20 end
       for i=1,nb_targets do
@@ -497,10 +497,8 @@ function arrow_question_dialog_finished(answer)
             game:set_value("i17", game:get_value("i17")+1)
           end
         end
-
         return true
       end)
-
     end
   end
 end
@@ -517,34 +515,34 @@ end
 -- whose feature is to call the script).
 function open_chest(chest)
   if not playing_chests then
-    -- trying to open a chest but not playing yet
+    -- Trying to open a chest but not playing yet.
     game:start_dialog("chest_game.pay_first")
     chest:set_open(false)
     sol.audio.play_sound("wrong")
     hero:unfreeze()
   else
-    -- give a random reward
+    -- Give a random reward.
     local index = math.random(#chests_rewards)
     local amount = chests_rewards[index]
     if amount == 100 and not already_played_chests then
-      -- don't give best prize at the first attempt
+      -- Don't give best prize at the first attempt.
       amount = 5
     end
-    -- give the rupees
+    -- Give the rupees.
     if amount == 5 then
       hero:start_treasure("rupee", 2)
     elseif amount == 20 then
       hero:start_treasure("rupee", 3)
     elseif amount == 100 then
       if game:get_item("rupee_bag"):get_variant() == 1 then
-        -- give bigger rupee bag
+        -- Give bigger rupee bag.
         hero:start_treasure("rupee_bag", 2)
       else
         hero:start_treasure("rupee", 4)
       end
     end
     if amount == 100 then
-      -- the maximum reward was found: the game will discourage playing again
+      -- The maximum reward was found: the game will discourage playing again.
       game:set_value("b16", true)
     end
     playing_chests = false
@@ -552,10 +550,10 @@ function open_chest(chest)
   end
 end
 
--- Updates the slot machine
+-- Updates the slot machine.
 function map:on_update()
   if playing_slots then
-    -- stop the reels when necessary
+    -- Stop the reels when necessary.
     local nb_finished = 0
     for k, v in pairs(slots_slots) do
       if v.sprite:is_paused() then
@@ -602,9 +600,9 @@ function map:on_update()
 
 end
 
--- This function gives the reward to the player in the slot machine game
+-- This function gives the reward to the player in the slot machine game.
 function slots_timeout()
-  -- see if the player has won
+  -- See if the player has won.
   local i = 1
   local green_found = false
   local blue_found = false
@@ -623,9 +621,9 @@ function slots_timeout()
   end
 
   local function slots_give_reward()
-    if slots_reward + game:get_money() > 100 then
+    if slots_reward + game:get_money() > 200 then
       if game:get_item("rupee_bag"):get_variant() == 1 then
-        -- give bigger rupee bag
+        -- Give bigger rupee bag.
         hero:start_treasure("rupee_bag", 2)
       else
         hero:start_treasure("rupee", 4)
@@ -635,7 +633,7 @@ function slots_timeout()
   end
 
   if symbols[1] == symbols[2] and symbols[2] == symbols[3] then
-    -- three identical symbols
+    -- Three identical symbols.
     if symbols[1] == 0 then -- 3 green rupees
       game:start_dialog("slot_game.reward.green_rupees", slots_give_reward)
       slots_reward = 5 * slots_bet
@@ -653,7 +651,7 @@ function slots_timeout()
       slots_reward = 4 * slots_bet
     end
   elseif green_found and blue_found and red_found then
-    -- three rupees with different colors
+    -- Three rupees with different colors.
     game:start_dialog("slot_game.reward.different_rupees", slots_give_reward)
     slots_reward = 15 * slots_bet
   else
@@ -681,7 +679,7 @@ end
 function npc_shopkeeper:on_interaction()
   game:set_dialog_style("default")
   if math.random(4) == 1 and game:get_item("rupee_bag"):get_variant() < 2 then
-    -- Randomly mention the bigger wallet
+    -- Randomly mention the bigger wallet.
     game:start_dialog("shopkeep.1")
   else
     game:start_dialog("shopkeep.0")
