@@ -9,14 +9,12 @@ if game:get_value("i1606")==nil then game:set_value("i1606", 0) end
 if game:get_value("i1832")==nil then game:set_value("i1832", 0) end
 
 function map:on_started(destination)
-
   if game:get_value("i1606") >= 1 and game:get_value("i1606") < 5 then  -- force the initial dialog to be heard
     if game:get_value("i1832") >= 10 then game:set_value("i1606", 2) end
     if game:get_value("i1832") >= 20 then game:set_value("i1606", 3) end
     if game:get_value("i1832") >= 35 then game:set_value("i1606", 4) end
     if game:get_value("i1832") >= 50 then game:set_value("i1606", 5) end
   end
-
 end
 
 function sensor_fairy_speak:on_activated()
