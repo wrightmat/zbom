@@ -405,10 +405,10 @@ end
 function slots_choose_bet_dialog_finished(answer)
   if answer == 1 then
     -- bet 5 rupees
-    game_2_bet = 5
+    slots_bet = 5
   else
     -- bet 20 rupees
-    game_2_bet = 20
+    slots_bet = 20
   end
   if map:get_game():get_money() < slots_bet then
     -- Not enough money.
