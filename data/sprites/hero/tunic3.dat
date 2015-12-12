@@ -258,6 +258,7 @@ animation{
   name = "shovel",
   src_image = "hero/shovel.tunic.png",
   frame_delay = 50,
+  frame_to_loop_on = 0,
   directions = {
     { x = 128, y = 0, frame_width = 64, frame_height = 40, origin_x = 32, origin_y = 29 },
     { x = 128, y = 40, frame_width = 64, frame_height = 40, origin_x = 32, origin_y = 29 },
