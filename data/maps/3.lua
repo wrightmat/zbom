@@ -62,6 +62,8 @@ function npc_rito_5:on_interaction()
   game:set_dialog_style("default")
   if not game:get_value("b1150") then
     game:start_dialog("rito_5.0.septen")
+  else
+    game:start_dialog("rito_5.1.septen")
   end
 end
 

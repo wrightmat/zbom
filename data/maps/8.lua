@@ -288,6 +288,14 @@ function spoils_ore:on_interaction()
   end)
 end
 
-function hylian_2:on_interaction()
+function npc_kokiri_1:on_interaction()
+  game:start_dialog("kokiri_1.0.saria")
+end
+
+function npc_kokiri_2:on_interaction()
+  game:start_dialog("kokiri_2.0.saria")
+end
+
+function npc_hylian_2:on_interaction()
   game:start_dialog("hylian_2.0.rauru")
 end

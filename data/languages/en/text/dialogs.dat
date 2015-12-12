@@ -6252,6 +6252,20 @@ next, I bet he'd have some ideas.
 }
 
 dialog{
+  id = "kokiri_1.0.saria",
+  text = [[
+Welcome to Saria!
+]]
+}
+
+dialog{
+  id = "kokiri_2.0.saria",
+  text = [[
+I love our beautiful woods home!
+]]
+}
+
+dialog{
   id = "koshi.0.council",
   skip = "current",
   text = [[
@@ -7741,6 +7755,14 @@ other Temples of Hyrule? There's one
 in the forest, one in the desert, one
 on a mountain, one under a lake, one
 in a snowy peak and one in some ruins.
+]]
+}
+
+dialog{
+  id = "rito_5.1.septen",
+  text = [[
+Doens't our Tower of Winds just
+look amazing?
 ]]
 }
 
