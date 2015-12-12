@@ -318,21 +318,21 @@ function npc_gaira:on_interaction()
 end
 
 function torch_1:on_interaction()
-  map:get_game():start_dialog("torch.need_lamp")
+  if torch_1:get_sprite():get_animation() == "unlit" then map:get_game():start_dialog("torch.need_lamp") end
 end
 function torch_1:on_interaction_item(lamp)
   torch_1:get_sprite():set_animation("lit")
 end
 
 function torch_2:on_interaction()
-  map:get_game():start_dialog("torch.need_lamp")
+  if torch_2:get_sprite():get_animation() == "unlit" then map:get_game():start_dialog("torch.need_lamp") end
 end
 function torch_2:on_interaction_item(lamp)
   torch_2:get_sprite():set_animation("lit")
 end
 
 function torch_3:on_interaction()
-  map:get_game():start_dialog("torch.need_lamp")
+  if torch_3:get_sprite():get_animation() == "unlit" then map:get_game():start_dialog("torch.need_lamp") end
 end
 function torch_3:on_interaction_item(lamp)
   torch_3:get_sprite():set_animation("lit")
