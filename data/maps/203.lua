@@ -30,6 +30,9 @@ function map:on_started(destination)
   else
     map:set_doors_open("room6_shutter")
   end
+  -- Don't allow to get the page again (which is possible since it's taken away by the monkey).
+  -- Going back and getting it again forces the player to go back to the Pyramid to retrieve parts as well.
+  if game:get_value("i1807") >= 1 then chest_book:remove() end
 end
 
 function sensor_open_room18:on_activated()
