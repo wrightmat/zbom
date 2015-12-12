@@ -11,10 +11,91 @@ properties{
 tile{
   layer = 0,
   x = 0,
-  y = 0,
+  y = -8,
   width = 1120,
   height = 1072,
   pattern = "1692",
+}
+
+tile{
+  layer = 0,
+  x = 880,
+  y = 504,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 472,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 1048,
+  y = 680,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 696,
+  y = 840,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 552,
+  y = 976,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 568,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 904,
+  width = 16,
+  height = 16,
+  pattern = "1128",
 }
 
 tile{
@@ -2521,87 +2602,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 176,
-  y = 72,
-  width = 16,
-  height = 16,
-  pattern = "2193",
-}
-
-tile{
-  layer = 0,
-  x = 48,
-  y = 568,
-  width = 16,
-  height = 16,
-  pattern = "2193",
-}
-
-tile{
-  layer = 0,
-  x = 272,
-  y = 472,
-  width = 16,
-  height = 16,
-  pattern = "2193",
-}
-
-tile{
-  layer = 0,
-  x = 880,
-  y = 504,
-  width = 16,
-  height = 16,
-  pattern = "2193",
-}
-
-tile{
-  layer = 0,
-  x = 696,
-  y = 840,
-  width = 16,
-  height = 16,
-  pattern = "2193",
-}
-
-tile{
-  layer = 0,
-  x = 552,
-  y = 976,
-  width = 16,
-  height = 16,
-  pattern = "2193",
-}
-
-tile{
-  layer = 0,
-  x = 320,
-  y = 904,
-  width = 16,
-  height = 16,
-  pattern = "2193",
-}
-
-tile{
-  layer = 0,
-  x = 392,
-  y = 320,
-  width = 16,
-  height = 16,
-  pattern = "2193",
-}
-
-tile{
-  layer = 0,
-  x = 1048,
-  y = 680,
-  width = 16,
-  height = 16,
-  pattern = "2193",
-}
-
-tile{
-  layer = 0,
   x = 320,
   y = 304,
   width = 8,
@@ -3228,6 +3228,87 @@ enemy{
   direction = 3,
   breed = "pengator",
   treasure_name = "random",
+}
+
+custom_entity{
+  layer = 0,
+  x = 888,
+  y = 517,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1056,
+  y = 693,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 704,
+  y = 853,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 560,
+  y = 989,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 328,
+  y = 917,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 56,
+  y = 581,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 280,
+  y = 485,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 400,
+  y = 333,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 184,
+  y = 85,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
 }
 
 tile{

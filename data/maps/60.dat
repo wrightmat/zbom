@@ -19,6 +19,60 @@ tile{
 
 tile{
   layer = 0,
+  x = 768,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 984,
+  y = 944,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 584,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 872,
+  y = 552,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 768,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
   x = 1080,
   y = 1112,
   width = 16,
@@ -1792,51 +1846,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 296,
-  y = 160,
-  width = 16,
-  height = 16,
-  pattern = "2193",
-}
-
-tile{
-  layer = 0,
-  x = 768,
-  y = 160,
-  width = 16,
-  height = 16,
-  pattern = "2193",
-}
-
-tile{
-  layer = 0,
-  x = 872,
-  y = 552,
-  width = 16,
-  height = 16,
-  pattern = "2193",
-}
-
-tile{
-  layer = 0,
-  x = 984,
-  y = 944,
-  width = 16,
-  height = 16,
-  pattern = "2193",
-}
-
-tile{
-  layer = 0,
-  x = 304,
-  y = 584,
-  width = 16,
-  height = 16,
-  pattern = "2193",
-}
-
-tile{
-  layer = 0,
   x = 0,
   y = -8,
   width = 16,
@@ -2413,6 +2422,51 @@ custom_entity{
   y = 733,
   direction = 0,
   model = "ocarina_patch",
+}
+
+custom_entity{
+  layer = 0,
+  x = 304,
+  y = 173,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 776,
+  y = 173,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 312,
+  y = 597,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 992,
+  y = 957,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 880,
+  y = 565,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
 }
 
 tile{

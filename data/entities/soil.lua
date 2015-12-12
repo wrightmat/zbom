@@ -4,7 +4,7 @@ local hero = game:get_hero()
 local map = soil:get_map()
 
 -- Soft soil: special entity that the hero uses the
--- shovel on to dig up treasure.
+-- shovel on to dig up treasures.
 
 soil:set_traversable_by(false)
 
@@ -41,10 +41,12 @@ local function test_collision_with_hero_shovel(soil, entity)
 end
 
 soil:add_collision_test(test_collision_with_hero_shovel, function(soil, entity)
-  -- Remove the soil pile.
+  -- Remove the soil pile and leave several treasures.
   local sx, sy, sl = soil:get_position()
-  soil:remove()
   map:create_pickable({ layer = sl, x = sx, y = sy, treasure_name = "random" })
+  sol.timer.start(soil, 100, function() -- Delay causes multiple treasures to be created.
+    soil:remove()
+  end)
 
   -- Notify people.
   if soil.on_dug ~= nil then soil:on_dug() end

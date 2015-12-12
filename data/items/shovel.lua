@@ -26,7 +26,7 @@ function item:on_using()
   sol.audio.play_sound("shovel")
 
   -- End the animation and restore control.
-  sol.timer.start(hero, 500, function()
+  sol.timer.start(hero, 400, function()
     hero:set_animation("stopped")
     hero:unfreeze()
   end)
