@@ -147,9 +147,7 @@ function elder_zelda:on_interaction()
         game:start_dialog("zelda.1.council")
       else
         game:start_dialog("zelda.0.goto_old_hyrule", function()
-          if not game:has_item("glove") then
-            game:start_dialog("zelda.0.goto_old_hyrule_glove")
-          end
+          if not game:has_item("glove") then game:start_dialog("zelda.0.goto_old_hyrule_glove") end
         end)
       end
     end)
@@ -435,6 +433,7 @@ function slots_choose_bet_dialog_finished(answer)
 end
 
 function arrow_question_dialog_finished(answer)
+  arrow_score = 0
   if answer == 2 then
     -- The player does not want to play the game.
     game:start_dialog("arrow_game.not_playing")
@@ -446,7 +445,7 @@ function arrow_question_dialog_finished(answer)
       game:start_dialog("slot_game.not_enough_money")
     else
       -- Enough money: create the targets and start them moving.
-      game:remove_money(50)
+      --game:remove_money(50)
       if game:get_value("i1802") < 10 then
         game:start_dialog("arrow_game.not_enough_arrows", function()
           game:set_value("i1802", game:get_value("i1802")+10)
@@ -473,7 +472,9 @@ function arrow_question_dialog_finished(answer)
         end)
       end
 
-      sol.timer.start(map, 30, function()
+      local time = math.random(6)*8
+      if time < 15 then time = 15 end
+      sol.timer.start(map, time, function()
         for switch in map:get_entities("arrow_game_switch") do
           -- move targets to the left of the screen
           local sx,sy,sl = switch:get_position()
@@ -556,9 +557,7 @@ function map:on_update()
     -- Stop the reels when necessary.
     local nb_finished = 0
     for k, v in pairs(slots_slots) do
-      if v.sprite:is_paused() then
-	 nb_finished = nb_finished + 1
-      end
+      if v.sprite:is_paused() then nb_finished = nb_finished + 1 end
     end
     for k, v in pairs(slots_slots) do
       local frame = v.sprite:get_frame()
@@ -582,11 +581,7 @@ function map:on_update()
         local this_score = math.floor(math.random(5)+(arrow_plays*2)/4)
         arrow_score = arrow_score + this_score
         score_x, score_y = switch:get_position()
-        score_text = sol.text_surface.create({
-          horizontal_alignment = "center",
-          font = "bom",
-          text = this_score
-        })
+        score_text = sol.text_surface.create({ horizontal_alignment = "center", font = "bom", text = this_score })
       end
     end
   end

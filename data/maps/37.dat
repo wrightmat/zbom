@@ -7780,7 +7780,7 @@ teletransporter{
   layer = 0,
   x = 112,
   y = 1120,
-  width = 960,
+  width = 96,
   height = 16,
   transition = "scrolling",
   destination_map = "83",
@@ -8591,6 +8591,18 @@ custom_entity{
   y = 613,
   direction = 0,
   model = "ocarina_patch",
+}
+
+teletransporter{
+  name = "to_H11_2",
+  layer = 0,
+  x = 256,
+  y = 1120,
+  width = 816,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "83",
+  destination = "_side",
 }
 
 npc{
