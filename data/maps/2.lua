@@ -445,7 +445,7 @@ function arrow_question_dialog_finished(answer)
       game:start_dialog("slot_game.not_enough_money")
     else
       -- Enough money: create the targets and start them moving.
-      --game:remove_money(50)
+      game:remove_money(50)
       if game:get_value("i1802") < 10 then
         game:start_dialog("arrow_game.not_enough_arrows", function()
           game:set_value("i1802", game:get_value("i1802")+10)
