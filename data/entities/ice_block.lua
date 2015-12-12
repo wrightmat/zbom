@@ -12,7 +12,7 @@ function entity:on_created()
   self:snap_to_grid()
   self:set_modified_ground("ice")
   self:set_traversable_by("hero", false)
-  self:set_traversable_by("custom_entity", true) --to allow pushing block into pit
+  self:set_traversable_by("custom_entity", true) -- To allow pushing block into pit.
   self:create_sprite("entities/ice_block")
 
   self:add_collision_test("facing", function(self, other)
@@ -37,7 +37,7 @@ function entity:on_created()
   end)
 
   self:add_collision_test("overlapping", function(self, other)
-    if other:get_type() == "switch" and other:get_sprite() == "switch" then
+    if other:get_type() == "switch" and other:get_sprite():get_animation_set() == "entities/switch" then
       block_on_switch = true
       other:set_activated(true)
       if other:on_activated() ~= nil and not other.active then
