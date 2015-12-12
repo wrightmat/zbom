@@ -19,7 +19,7 @@ local exiting = false
 -- 41: 6 blue bari, 6 red bari 42: 10 ropes, 2 redeads, 2 poes, 43: 8 red hardhats, 44: 3 regular, 3 fire, 3 ice wizzrobes
 -- 46: 4 redeads, 2 skeletors, 47: 4 gigas, 4 rats, 48: 4 purple leevers, 8 green leevers, 2 lynel, 49: 2 peahats, 2 redead, 4 red tektites, big poe
 
-if game:get_value("i1609")==nil then game:set_value("i1609),0) end
+if game:get_value("i1609")==nil then game:set_value("i1609",0) end
 if game:get_value("i1609") < 50 then game:set_value("i1609",0) end
 
 function random_8(lower, upper)

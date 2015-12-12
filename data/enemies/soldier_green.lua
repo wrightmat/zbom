@@ -55,6 +55,7 @@ function enemy:go(direction4)
   m:set_smooth(true)
   m:set_speed(40)
   m:set_angle(direction4 * math.pi / 2)
+  m:start(self)
 end
 
 -- Makes the soldier look to its left or to its right (random choice).
@@ -65,4 +66,5 @@ function enemy:look_left_or_right()
   else
     sprite:set_animation("stopped_watching_right")
   end
+  sol.timer.start(self, math.random(8)*1000, function() enemy:restart() end)
 end
