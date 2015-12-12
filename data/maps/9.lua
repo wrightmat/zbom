@@ -28,7 +28,7 @@ end
 
 function npc_rudy:on_interaction()
   game:set_dialog_style("default")
-  if game:get_value("i1902") == 0 then   -- General dialogs for low Rep
+  if game:get_value("i1902") == 0 then   -- General dialogs for low Rep.
     game:start_dialog("rudy.0", rudy_reputation)
   elseif game:get_value("i1841") == 4 then
     if game:get_value("i1902") >= 5 then
@@ -115,7 +115,7 @@ function sensor_leaving:on_activated()
   if game:get_ability("sword") == 0 then
     game:start_dialog("rudy.5.sword_leaving", function()
       hero:start_treasure("sword", 2)
-      game:set_value("i1841", 0) -- remove Master Ore
+      game:set_value("i1841", 5) -- Remove Master Ore.
       game:set_value("i1902", 6)
     end)
   elseif not game:has_item("bottle_1") and game:get_value("i1902") >= 1 and game:get_hero():get_direction() == 3 then
