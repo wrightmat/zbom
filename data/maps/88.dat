@@ -10,6 +10,51 @@ properties{
 
 tile{
   layer = 0,
+  x = 104,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 392,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 872,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 1056,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
   x = 184,
   y = 216,
   width = 24,
@@ -865,42 +910,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 104,
-  y = 256,
-  width = 16,
-  height = 16,
-  pattern = "1",
-}
-
-tile{
-  layer = 0,
-  x = 160,
-  y = 392,
-  width = 16,
-  height = 16,
-  pattern = "1",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 672,
-  width = 16,
-  height = 16,
-  pattern = "1",
-}
-
-tile{
-  layer = 0,
-  x = 96,
-  y = 872,
-  width = 16,
-  height = 16,
-  pattern = "1",
-}
-
-tile{
-  layer = 0,
   x = 48,
   y = 1056,
   width = 16,
@@ -1738,6 +1747,42 @@ enemy{
   direction = 3,
   breed = "pengator",
   treasure_name = "random_north",
+}
+
+custom_entity{
+  layer = 0,
+  x = 104,
+  y = 885,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 152,
+  y = 685,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 168,
+  y = 405,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 112,
+  y = 269,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
 }
 
 tile{

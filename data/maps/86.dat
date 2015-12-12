@@ -2312,6 +2312,87 @@ tile{
   pattern = "63",
 }
 
+tile{
+  layer = 0,
+  x = 448,
+  y = 136,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 824,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 680,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 984,
+  y = 88,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 88,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 824,
+  y = 888,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
 teletransporter{
   name = "to_A1",
   layer = 0,
@@ -2466,6 +2547,87 @@ enemy{
   direction = 3,
   breed = "pengator",
   treasure_name = "random_north",
+}
+
+custom_entity{
+  layer = 0,
+  x = 312,
+  y = 77,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 456,
+  y = 149,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 616,
+  y = 285,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 688,
+  y = 477,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 696,
+  y = 101,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 832,
+  y = 69,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 968,
+  y = 85,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 992,
+  y = 101,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 832,
+  y = 901,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
 }
 
 tile{
