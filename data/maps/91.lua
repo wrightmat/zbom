@@ -60,6 +60,7 @@ end
 
 function sensor_poe_guide:on_activated()
   if hero:get_direction() == 1 then -- Only start if hero is facing up (coming from Maruge Swamp).
+    game:start_dialog("poe.0.forest_deception")
     local position = (positions[position_step])
     local m = sol.movement.create("target")
     m:set_speed(48)

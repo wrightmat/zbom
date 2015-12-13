@@ -7531,6 +7531,13 @@ with the guy in the house near there too.
 }
 
 dialog{
+  id = "poe.0.forest_deception",
+  text = [[
+This forest can be quite deceiving
+]]
+}
+
+dialog{
   id = "potion.no_empty_bottle",
   icon = "81",
   skip = "current",
