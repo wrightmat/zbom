@@ -337,3 +337,22 @@ end
 function torch_3:on_interaction_item(lamp)
   torch_3:get_sprite():set_animation("lit")
 end
+
+function goat_1:on_interaction()
+  sol.audio.play_sound("goat")
+end
+function goat_2:on_interaction()
+  sol.audio.play_sound("goat")
+end
+function goat_3:on_interaction()
+  sol.audio.play_sound("goat")
+end
+function goat_4:on_interaction()
+  sol.audio.play_sound("goat")
+end
+function goat_5:on_interaction()
+  sol.audio.play_sound("goat")
+end
+function scarecrow:on_interaction()
+  sol.audio.play_sound("scarecrow")
+end
