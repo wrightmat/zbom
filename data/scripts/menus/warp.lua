@@ -22,7 +22,7 @@ warp_points = {         -- Intentionally Global!
   b1510 = { "b1511", "56", 160, 150, "Septen Heights" },
   b1511 = { "b1510", "139", 178, 126, "Three Eye Rock" },
   b1512 = { "b1513", "57", 184, 150, "Zora's Domain" },
-  b1513 = { "b1512", "93", 34, 40, "Rito Town" },
+  b1513 = { "b1512", "93", 34, 40, "Ruto Town" },
   b1514 = { "b1515", "34", 120, 258, "Lake Hylia" },
   b1515 = { "b1514", "13", 210, 365, "Floria Peninsula" }
 }

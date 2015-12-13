@@ -1,5 +1,6 @@
 local map = ...
 local game = map:get_game()
+local door_timer = nil
 
 ---------------------------------------------
 -- Dungeon 7: Tower of the Winds (Floor 7) --
@@ -20,4 +21,8 @@ function sensor_door_close:on_activated()
       map:open_doors("door_statues")
     end)
   end
+end
+
+function sensor_door_open:on_activated()
+  map:open_doors("door_statues")
 end

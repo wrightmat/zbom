@@ -2539,7 +2539,7 @@ teletransporter{
   layer = 0,
   x = 48,
   y = 1120,
-  width = 1072,
+  width = 208,
   height = 16,
   transition = "scrolling",
   destination_map = "126",
@@ -3271,6 +3271,18 @@ teletransporter{
   height = 16,
   destination_map = "174",
   destination = "from_outside",
+}
+
+teletransporter{
+  name = "to_K3_2",
+  layer = 0,
+  x = 272,
+  y = 1120,
+  width = 848,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "126",
+  destination = "_side",
 }
 
 tile{

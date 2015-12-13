@@ -4561,7 +4561,7 @@ teletransporter{
   layer = 0,
   x = 0,
   y = -16,
-  width = 944,
+  width = 80,
   height = 16,
   transition = "scrolling",
   destination_map = "126",
@@ -5778,6 +5778,18 @@ custom_entity{
   direction = 0,
   sprite = "entities/soil",
   model = "soil",
+}
+
+teletransporter{
+  name = "to_K3_2",
+  layer = 0,
+  x = 104,
+  y = -16,
+  width = 832,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "126",
+  destination = "_side",
 }
 
 tile{

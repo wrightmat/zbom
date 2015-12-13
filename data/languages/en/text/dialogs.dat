@@ -192,6 +192,13 @@ things like sword smithing.
 }
 
 dialog{
+  id = "_item_description.airship_part.5",
+  text = [[
+This sequence is complete!
+]]
+}
+
+dialog{
   id = "_item_description.alchemy_counter.1",
   skip = "current",
   text = [[
@@ -2288,8 +2295,8 @@ dialog{
   text = [[
 You traded the  $r Goron Vase$w
 for a $r Zora Scale$w!$0
-Another race-specific thing, I wonder
-what you'll do with it?
+Another race-specific thing, I
+wonder what you'll do with it?
 ]]
 }
 
@@ -2299,8 +2306,8 @@ dialog{
   skip = "current",
   text = [[
 You traded the  $r Zora Scale$w for a
-$rFrozen Fish$w!$0
-Finally something with some mass appeal!
+$rFrozen Fish$w!$0  Finally something
+with some mass appeal!
 ]]
 }
 
@@ -2420,9 +2427,9 @@ dialog{
   skip = "current",
   text = [[
 You traded $r Bananas$w for a 
-$rGoron Vase$w!$0
-It's quite beautiful but you're not sure
-who would want one besides a  $g Goron$w.
+$rGoron Vase$w!$0  It's quite
+beautiful but you're not sure who
+would want one besides a  $g Goron$w.
 ]]
 }
 
@@ -10140,7 +10147,7 @@ dialog{
   id = "zora.1.trading",
   skip = "current",
   text = [[
-What? How did you get a  $r Zora's scale$w?!$0
+What? How did you get a   $r Zora's scale$w?!$0
 You can't have that. I must insist
 that you give it to me right now.
 ]]

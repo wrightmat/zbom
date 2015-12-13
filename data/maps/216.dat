@@ -4590,6 +4590,26 @@ tile{
   pattern = "482",
 }
 
+tile{
+  layer = 0,
+  x = 224,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "117",
+}
+
+switch{
+  name = "switch_door",
+  layer = 0,
+  x = 240,
+  y = 112,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  needs_block = true,
+  inactivate_when_leaving = true,
+}
+
 sensor{
   name = "dungeon_room_1b_",
   layer = 0,
@@ -4749,17 +4769,6 @@ block{
   pushable = true,
   pullable = true,
   maximum_moves = 2,
-}
-
-switch{
-  name = "switch_door",
-  layer = 0,
-  x = 240,
-  y = 112,
-  subtype = "walkable",
-  sprite = "entities/switch",
-  needs_block = true,
-  inactivate_when_leaving = true,
 }
 
 block{
@@ -5263,7 +5272,6 @@ destructible{
   x = 88,
   y = 221,
   treasure_name = "heart",
-  treasure_variant = 2,
   sprite = "entities/pot",
   destruction_sound = "stone",
 }
@@ -5320,6 +5328,24 @@ sensor{
   y = 357,
   width = 64,
   height = 16,
+}
+
+custom_entity{
+  name = "hook_1",
+  layer = 0,
+  x = 232,
+  y = 205,
+  direction = 0,
+  model = "hook",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "134",
 }
 
 tile{
