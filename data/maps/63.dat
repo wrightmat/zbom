@@ -4855,8 +4855,8 @@ teletransporter{
   y = 832,
   width = 16,
   height = 16,
-  destination_map = "63",
-  destination = "from_cave_2",
+  destination_map = "9",
+  destination = "from_cave_1",
 }
 
 teletransporter{
@@ -4866,8 +4866,8 @@ teletransporter{
   y = 232,
   width = 16,
   height = 16,
-  destination_map = "63",
-  destination = "from_cave_1",
+  destination_map = "9",
+  destination = "from_cave_2",
 }
 
 destination{
@@ -4891,25 +4891,25 @@ teletransporter{
 }
 
 teletransporter{
-  name = "to_cave_3",
+  name = "to_cave_4",
   layer = 0,
   x = 936,
   y = 624,
   width = 16,
   height = 16,
-  destination_map = "63",
-  destination = "from_cave_3",
+  destination_map = "9",
+  destination = "from_cave_4",
 }
 
 teletransporter{
-  name = "to_cave_4",
+  name = "to_cave_3",
   layer = 0,
   x = 680,
   y = 688,
   width = 16,
   height = 16,
-  destination_map = "63",
-  destination = "from_cave_4",
+  destination_map = "9",
+  destination = "from_cave_3",
 }
 
 enemy{
