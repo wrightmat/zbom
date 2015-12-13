@@ -5600,7 +5600,7 @@ sensor{
 door{
   name = "door_fairy_1",
   layer = 0,
-  x = 1032,
+  x = 744,
   y = 1344,
   direction = 0,
   sprite = "entities/door_shutter",
@@ -5609,7 +5609,7 @@ door{
 door{
   name = "door_fairy_2",
   layer = 0,
-  x = 1096,
+  x = 808,
   y = 1344,
   direction = 2,
   sprite = "entities/door_shutter",
@@ -5643,6 +5643,15 @@ teletransporter{
   width = 16,
   height = 48,
   destination_map = "174",
+}
+
+door{
+  name = "door_temp",
+  layer = 0,
+  x = 1416,
+  y = 1344,
+  direction = 0,
+  sprite = "entities/door_shutter",
 }
 
 tile{
