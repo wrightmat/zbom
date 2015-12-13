@@ -11,6 +11,15 @@ properties{
 tile{
   layer = 0,
   x = 1056,
+  y = 160,
+  width = 32,
+  height = 32,
+  pattern = "527",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
   y = 1104,
   width = 16,
   height = 16,
@@ -6751,8 +6760,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 864,
-  y = 1088,
+  x = 888,
+  y = 1064,
   width = 16,
   height = 8,
   pattern = "1693",
@@ -7388,6 +7397,105 @@ tile{
   pattern = "524",
 }
 
+tile{
+  layer = 0,
+  x = 24,
+  y = 1016,
+  width = 16,
+  height = 16,
+  pattern = "2141",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "2141",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "2141",
+}
+
+tile{
+  layer = 0,
+  x = 696,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "2141",
+}
+
+tile{
+  layer = 0,
+  x = 832,
+  y = 1088,
+  width = 32,
+  height = 32,
+  pattern = "630",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 56,
+  width = 32,
+  height = 32,
+  pattern = "630",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 584,
+  width = 32,
+  height = 32,
+  pattern = "630",
+}
+
+tile{
+  layer = 0,
+  x = 1096,
+  y = 16,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 32,
+  width = 8,
+  height = 16,
+  pattern = "1498",
+}
+
+tile{
+  layer = 0,
+  x = 1096,
+  y = 40,
+  width = 48,
+  height = 16,
+  pattern = "505",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
+  y = 56,
+  width = 32,
+  height = 8,
+  pattern = "523",
+}
+
 teletransporter{
   name = "to_B3",
   layer = 0,
@@ -7404,9 +7512,9 @@ teletransporter{
   name = "to_C4",
   layer = 0,
   x = 1120,
-  y = 0,
+  y = 696,
   width = 16,
-  height = 1120,
+  height = 368,
   transition = "scrolling",
   destination_map = "95",
   destination = "_side",
@@ -7417,7 +7525,7 @@ teletransporter{
   layer = 0,
   x = 944,
   y = -16,
-  width = 176,
+  width = 160,
   height = 16,
   transition = "scrolling",
   destination_map = "90",
@@ -7976,6 +8084,25 @@ destructible{
   destruction_sound = "bush",
   weight = -1,
   can_be_cut = true,
+}
+
+sensor{
+  name = "sensor_poe_guide",
+  layer = 0,
+  x = 1048,
+  y = 685,
+  width = 48,
+  height = 16,
+}
+
+npc{
+  name = "poe_guide",
+  layer = 1,
+  x = 1088,
+  y = 741,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/poe_soul",
 }
 
 tile{
@@ -11648,5 +11775,50 @@ tile{
   width = 16,
   height = 16,
   pattern = "271",
+}
+
+tile{
+  layer = 2,
+  x = 1112,
+  y = 408,
+  width = 8,
+  height = 24,
+  pattern = "1494",
+}
+
+tile{
+  layer = 2,
+  x = 1112,
+  y = 432,
+  width = 8,
+  height = 16,
+  pattern = "1498",
+}
+
+tile{
+  layer = 2,
+  x = 1096,
+  y = -16,
+  width = 48,
+  height = 32,
+  pattern = "1495",
+}
+
+tile{
+  layer = 2,
+  x = 1088,
+  y = 8,
+  width = 8,
+  height = 24,
+  pattern = "1494",
+}
+
+tile{
+  layer = 2,
+  x = 1048,
+  y = 256,
+  width = 32,
+  height = 32,
+  pattern = "630",
 }
 

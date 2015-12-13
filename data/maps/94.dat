@@ -2675,9 +2675,9 @@ teletransporter{
 teletransporter{
   name = "to_C4",
   layer = 0,
-  x = 0,
+  x = 16,
   y = 1120,
-  width = 1120,
+  width = 1104,
   height = 16,
   transition = "scrolling",
   destination_map = "95",
@@ -3680,5 +3680,14 @@ tile{
   width = 48,
   height = 16,
   pattern = "521",
+}
+
+tile{
+  layer = 2,
+  x = -24,
+  y = 1104,
+  width = 48,
+  height = 32,
+  pattern = "1495",
 }
 
