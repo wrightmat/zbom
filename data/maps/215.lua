@@ -19,6 +19,9 @@ function map:on_started(destination)
     block_2:set_enabled(false)
     hook_1:set_enabled(false)
     hook_2:set_enabled(false)
+  else
+    switch_1:set_activated(true)
+    switch_2:set_activated(true)
   end
   if not game:get_value("b1161") then chest_map:set_enabled(false) end
 end

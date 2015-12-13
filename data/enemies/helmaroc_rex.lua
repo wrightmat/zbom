@@ -2,9 +2,10 @@ local enemy = ...
 local main_sprite = nil
 local claw_sprite = nil
 local nb_sons_created = 0
-local initial_life = 7
+local initial_life = 10
 
 -- Helmaroc Rex: giant bird, boss of Wind Tower.
+-- Hero must hit the bird on the claw section with his sword.
 
 function enemy:on_created()
   self:set_life(initial_life); self:set_damage(2)
@@ -14,12 +15,13 @@ function enemy:on_created()
   self:set_size(16, 16); self:set_origin(8, 13)
   self:set_obstacle_behavior("flying")
   self:set_layer_independent_collisions(true)
-  self:set_invincible()
-  self:set_attack_arrow("protected")
   self:set_attack_hookshot("protected")
+  self:set_attack_arrow("protected")
+  self:set_attack_consequence("fire", "protected")
   self:set_attack_consequence("sword", "protected")
+  self:set_attack_consequence("explosion", "protected")
   self:set_attack_consequence("boomerang", "protected")
-  self:set_attack_arrow_sprite(claw_sprite, 1)
+  self:set_attack_consequence_sprite(claw_sprite, "sword", 1)
   self:set_pushed_back_when_hurt(false)
   self:set_push_hero_on_sword(true)
 end

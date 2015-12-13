@@ -15,7 +15,7 @@ function enemy:on_created()
   self:set_can_hurt_hero_running(true)
   self:set_push_hero_on_sword(true)
   self:set_optimization_distance(0)
-  self:set_minimum_shield_needed(3)  -- Mirror shield protects hero
+  self:set_minimum_shield_needed(3)  -- Mirror shield protects hero.
 end
 
 function enemy:on_restarted()
@@ -33,7 +33,7 @@ function enemy:on_restarted()
 end
 
 function enemy:on_movement_finished(movement)
-  sol.timer.start(self, 25000, function() 
+  sol.timer.start(self, 20000, function() 
     self:remove()
   end)
 end
@@ -48,7 +48,7 @@ end
 
 function enemy:on_custom_attack_received(attack, sprite)
   if attack == "sword" and game:get_item("sword"):get_variant() == 3 then
-    -- only hurt by the light sword
+    -- Only hurt by the light sword.
     sprite:fade_out(20, function() self:remove() end)
   end
 end

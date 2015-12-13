@@ -8350,6 +8350,16 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "238",
+  ground = "ladder",
+  default_layer = 0,
+  x = 128,
+  y = 0,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
   id = "239",
   ground = "traversable",
   default_layer = 1,

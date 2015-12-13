@@ -307,7 +307,7 @@ dialog{
   skip = "current",
   text = [[
 The legendary and enchanted
-$cBook of Mudora$w.
+$cBook of Mudora$w .
 ]]
 }
 
@@ -3823,6 +3823,20 @@ prepared!
 }
 
 dialog{
+  id = "deku.2.lost_woods_first",
+  text = [[
+Hey kid, you might as well get out of here.
+Without the $c  power of the sage Mudora$w  ,
+you have no chance of finding your way in
+these woods- they're all twisted around...
+Wait. Is that the $c Book of Mudora$w?!
+And it's fully enchanted! If you were
+able to put that together, maybe you
+will be able to face the evil here.
+]]
+}
+
+dialog{
   id = "deku.3.faron",
   skip = "current",
   text = [[
@@ -7192,8 +7206,8 @@ together the  $c Book of Mudora$w!
 It is now enchanted and complete, so it
 is finally time for you to seek out the
 $mdark tribe$w . I'm afraid I can no longer
-see your way, as the  $m  darkness$w will
-conceal it. I can sense a large
+see your way, as the    $m darkness$wwill
+conceal it.  I can sense a large
 concentration of  $m dark magic$w in the
 eastern woods - what was once referred
 to as the $r Lost Woods$w and most recently

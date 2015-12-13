@@ -111,7 +111,7 @@ local function initialize_meta()
     return self.arrow_reaction
   end
 
-  function enemy_meta:set_attack_arrow(reaction, sprite)
+  function enemy_meta:set_attack_arrow(reaction)
     self.arrow_reaction = reaction
   end
 
