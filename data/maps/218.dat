@@ -7015,7 +7015,7 @@ chest{
   x = 528,
   y = 1317,
   treasure_name = "bow_light",
-  treasure_savegame_variable = "i1852",
+  treasure_savegame_variable = "b1184",
   sprite = "entities/chest_big",
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "b1182",
@@ -7077,7 +7077,7 @@ sensor{
 }
 
 sensor{
-  name = "dungeon_room_6_",
+  name = "dungeon_room_6_b1180",
   layer = 0,
   x = 504,
   y = 253,
@@ -7086,7 +7086,7 @@ sensor{
 }
 
 sensor{
-  name = "dungeon_room_7a_",
+  name = "dungeon_room_7a_b1185",
   layer = 0,
   x = 744,
   y = 413,
@@ -7104,7 +7104,7 @@ sensor{
 }
 
 sensor{
-  name = "dungeon_room_9a_",
+  name = "dungeon_room_9a_b1182",
   layer = 0,
   x = 648,
   y = 685,
@@ -7122,7 +7122,7 @@ sensor{
 }
 
 sensor{
-  name = "dungeon_room_11_",
+  name = "dungeon_room_11_b1184",
   layer = 0,
   x = 504,
   y = 1165,
@@ -7505,7 +7505,7 @@ sensor{
 }
 
 sensor{
-  name = "dungeon_room_9b_",
+  name = "dungeon_room_9b_b1182",
   layer = 0,
   x = 504,
   y = 797,
@@ -7523,7 +7523,7 @@ sensor{
 }
 
 sensor{
-  name = "dungeon_room_7b_",
+  name = "dungeon_room_7b_b1185",
   layer = 0,
   x = 840,
   y = 525,
