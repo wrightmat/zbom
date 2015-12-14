@@ -73,7 +73,7 @@ function sensor_poe_guide:on_activated()
 end
 
 function to_C4:on_activated()
-  game.deception_fog_overlay:fade_out()
+  game.deception_fog_overlay:fade_out(150)
   sol.timer.start(game, 1000, function() game.deception_fog_overlay = nil end)
 end
 

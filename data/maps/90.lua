@@ -76,17 +76,17 @@ function sensor_poe_guide:on_activated()
 end
 
 function to_A3:on_activated()
-  game.deception_fog_overlay:fade_out()
+  game.deception_fog_overlay:fade_out(150)
   sol.timer.start(game, 5000, function() game.deception_fog_overlay = nil end)
 end
 
 function to_B2:on_activated()
-  game.deception_fog_overlay:fade_out()
+  game.deception_fog_overlay:fade_out(150)
   sol.timer.start(game, 5000, function() game.deception_fog_overlay = nil end)
 end
 
 function to_C3:on_activated()
-  game.deception_fog_overlay:fade_out()
+  game.deception_fog_overlay:fade_out(150)
   sol.timer.start(game, 5000, function() game.deception_fog_overlay = nil end)
 end
 
