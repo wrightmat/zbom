@@ -5573,7 +5573,7 @@ enemy{
 teletransporter{
   name = "to_island",
   layer = 0,
-  x = 128,
+  x = 208,
   y = 752,
   width = 16,
   height = 16,
@@ -5586,8 +5586,8 @@ teletransporter{
 destination{
   name = "from_island",
   layer = 0,
-  x = 136,
-  y = 781,
+  x = 200,
+  y = 765,
   direction = 3,
 }
 

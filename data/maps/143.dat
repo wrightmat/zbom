@@ -101,7 +101,7 @@ tile{
 tile{
   layer = 0,
   x = 0,
-  y = 48,
+  y = 64,
   width = 64,
   height = 928,
   pattern = "49",
@@ -2072,16 +2072,7 @@ tile{
 tile{
   layer = 0,
   x = 16,
-  y = 64,
-  width = 16,
-  height = 16,
-  pattern = "21",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 48,
+  y = 80,
   width = 16,
   height = 16,
   pattern = "21",
@@ -2091,6 +2082,15 @@ tile{
   layer = 0,
   x = 0,
   y = 64,
+  width = 16,
+  height = 16,
+  pattern = "21",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 80,
   width = 16,
   height = 16,
   pattern = "22",
@@ -2099,7 +2099,25 @@ tile{
 tile{
   layer = 0,
   x = 0,
-  y = 32,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "186",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "186",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 80,
   width = 16,
   height = 16,
   pattern = "186",
@@ -2111,22 +2129,13 @@ tile{
   y = 48,
   width = 16,
   height = 16,
-  pattern = "186",
+  pattern = "185",
 }
 
 tile{
   layer = 0,
   x = 32,
   y = 64,
-  width = 16,
-  height = 16,
-  pattern = "186",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 32,
   width = 16,
   height = 16,
   pattern = "185",
@@ -2138,24 +2147,6 @@ tile{
   y = 48,
   width = 16,
   height = 16,
-  pattern = "185",
-}
-
-tile{
-  layer = 0,
-  x = 32,
-  y = 32,
-  width = 16,
-  height = 16,
-  pattern = "272",
-}
-
-tile{
-  layer = 0,
-  x = 48,
-  y = 48,
-  width = 16,
-  height = 16,
   pattern = "272",
 }
 
@@ -2163,6 +2154,15 @@ tile{
   layer = 0,
   x = 48,
   y = 64,
+  width = 16,
+  height = 16,
+  pattern = "272",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 80,
   width = 16,
   height = 16,
   pattern = "185",
@@ -2171,7 +2171,7 @@ tile{
 tile{
   layer = 0,
   x = 64,
-  y = 64,
+  y = 80,
   width = 16,
   height = 16,
   pattern = "272",
@@ -2180,7 +2180,7 @@ tile{
 tile{
   layer = 0,
   x = 0,
-  y = 16,
+  y = 32,
   width = 16,
   height = 16,
   pattern = "185",
@@ -2189,7 +2189,7 @@ tile{
 tile{
   layer = 0,
   x = 16,
-  y = 16,
+  y = 32,
   width = 16,
   height = 16,
   pattern = "272",
@@ -2198,7 +2198,7 @@ tile{
 tile{
   layer = 0,
   x = 0,
-  y = 0,
+  y = 16,
   width = 16,
   height = 16,
   pattern = "272",
@@ -2207,15 +2207,6 @@ tile{
 tile{
   layer = 0,
   x = 8,
-  y = 8,
-  width = 16,
-  height = 16,
-  pattern = "272",
-}
-
-tile{
-  layer = 0,
-  x = 24,
   y = 24,
   width = 16,
   height = 16,
@@ -2224,7 +2215,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 40,
+  x = 24,
   y = 40,
   width = 16,
   height = 16,
@@ -2233,7 +2224,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 56,
+  x = 40,
   y = 56,
   width = 16,
   height = 16,
@@ -2242,26 +2233,35 @@ tile{
 
 tile{
   layer = 0,
-  x = 48,
-  y = 80,
+  x = 56,
+  y = 72,
   width = 16,
-  height = 848,
+  height = 16,
+  pattern = "272",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 96,
+  width = 16,
+  height = 832,
   pattern = "129",
 }
 
 tile{
   layer = 0,
   x = 64,
-  y = 80,
+  y = 96,
   width = 8,
-  height = 848,
+  height = 832,
   pattern = "130",
 }
 
 tile{
   layer = 0,
   x = 72,
-  y = 80,
+  y = 96,
   width = 8,
   height = 368,
   pattern = "274",
@@ -4841,6 +4841,15 @@ tile{
   pattern = "522",
 }
 
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "1792",
+}
+
 dynamic_tile{
   name = "night_entrance",
   layer = 0,
@@ -4902,9 +4911,9 @@ teletransporter{
 teletransporter{
   name = "to_N3",
   layer = 0,
-  x = 0,
+  x = 16,
   y = -16,
-  width = 1120,
+  width = 1104,
   height = 16,
   transition = "scrolling",
   destination_map = "142",

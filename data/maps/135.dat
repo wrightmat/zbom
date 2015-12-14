@@ -1828,8 +1828,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 312,
-  y = 176,
+  x = 440,
+  y = 40,
   width = 48,
   height = 48,
   pattern = "1644",
@@ -2375,6 +2375,96 @@ tile{
   pattern = "1626",
 }
 
+tile{
+  layer = 0,
+  x = 192,
+  y = 120,
+  width = 120,
+  height = 64,
+  pattern = "111",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 184,
+  width = 104,
+  height = 8,
+  pattern = "112",
+}
+
+tile{
+  layer = 0,
+  x = 216,
+  y = 192,
+  width = 72,
+  height = 8,
+  pattern = "113",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 200,
+  width = 40,
+  height = 8,
+  pattern = "114",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 120,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 136,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 152,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 120,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 136,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 152,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
 teletransporter{
   name = "to_N2",
   layer = 0,
@@ -2552,6 +2642,60 @@ destructible{
   layer = 0,
   x = 872,
   y = 621,
+  treasure_name = "random_north",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 184,
+  y = 165,
+  treasure_name = "random_north",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 192,
+  y = 149,
+  treasure_name = "random_north",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 200,
+  y = 133,
+  treasure_name = "random_north",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 304,
+  y = 133,
+  treasure_name = "random_north",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 312,
+  y = 149,
+  treasure_name = "random_north",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 320,
+  y = 165,
   treasure_name = "random_north",
   sprite = "entities/pot",
   destruction_sound = "stone",
@@ -2750,6 +2894,15 @@ tile{
   layer = 2,
   x = 784,
   y = 432,
+  width = 72,
+  height = 16,
+  pattern = "115",
+}
+
+tile{
+  layer = 2,
+  x = 216,
+  y = 104,
   width = 72,
   height = 16,
   pattern = "115",
