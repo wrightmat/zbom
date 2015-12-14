@@ -10,6 +10,15 @@ properties{
 
 tile{
   layer = 0,
+  x = 376,
+  y = 296,
+  width = 8,
+  height = 256,
+  pattern = "97",
+}
+
+tile{
+  layer = 0,
   x = 80,
   y = 80,
   width = 304,
@@ -1182,16 +1191,16 @@ tile{
   layer = 0,
   x = 48,
   y = 592,
-  width = 176,
+  width = 160,
   height = 16,
   pattern = "8",
 }
 
 tile{
   layer = 0,
-  x = 240,
+  x = 256,
   y = 592,
-  width = 176,
+  width = 160,
   height = 16,
   pattern = "8",
 }
@@ -1461,7 +1470,7 @@ tile{
   layer = 0,
   x = 48,
   y = 640,
-  width = 176,
+  width = 160,
   height = 16,
   pattern = "2",
 }
@@ -1522,9 +1531,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 240,
+  x = 256,
   y = 640,
-  width = 176,
+  width = 160,
   height = 16,
   pattern = "2",
 }
@@ -1559,18 +1568,18 @@ tile{
 tile{
   layer = 0,
   x = 216,
-  y = 608,
+  y = 584,
   width = 8,
-  height = 32,
+  height = 80,
   pattern = "106",
 }
 
 tile{
   layer = 0,
   x = 240,
-  y = 608,
+  y = 584,
   width = 8,
-  height = 32,
+  height = 80,
   pattern = "106",
 }
 
@@ -3171,7 +3180,7 @@ tile{
   layer = 0,
   x = 160,
   y = 736,
-  width = 224,
+  width = 112,
   height = 8,
   pattern = "88",
 }
@@ -4330,15 +4339,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 376,
-  y = 296,
-  width = 8,
-  height = 256,
-  pattern = "97",
-}
-
-tile{
-  layer = 0,
   x = 256,
   y = 264,
   width = 8,
@@ -4823,6 +4823,39 @@ tile{
   pattern = "212",
 }
 
+tile{
+  layer = 0,
+  x = 304,
+  y = 736,
+  width = 80,
+  height = 8,
+  pattern = "88",
+}
+
+switch{
+  name = "switch_2",
+  layer = 0,
+  x = 104,
+  y = 520,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  sound = "switch",
+  needs_block = true,
+  inactivate_when_leaving = true,
+}
+
+switch{
+  name = "switch_1",
+  layer = 0,
+  x = 360,
+  y = 136,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  sound = "switch",
+  needs_block = true,
+  inactivate_when_leaving = true,
+}
+
 chest{
   name = "chest_spoil",
   layer = 0,
@@ -4869,6 +4902,7 @@ door{
   y = 560,
   direction = 3,
   sprite = "entities/door_shutter",
+  savegame_variable = "b1222",
 }
 
 door{
@@ -4878,6 +4912,7 @@ door{
   y = 672,
   direction = 1,
   sprite = "entities/door_shutter",
+  savegame_variable = "b1222",
 }
 
 dynamic_tile{
@@ -5079,18 +5114,6 @@ block{
   pushable = true,
   pullable = true,
   maximum_moves = 2,
-}
-
-switch{
-  name = "switch_2",
-  layer = 0,
-  x = 104,
-  y = 520,
-  subtype = "walkable",
-  sprite = "entities/switch",
-  sound = "switch",
-  needs_block = true,
-  inactivate_when_leaving = true,
 }
 
 npc{
@@ -5368,18 +5391,6 @@ enemy{
   breed = "swamp_flower_big",
 }
 
-switch{
-  name = "switch_1",
-  layer = 0,
-  x = 360,
-  y = 136,
-  subtype = "walkable",
-  sprite = "entities/switch",
-  sound = "switch",
-  needs_block = true,
-  inactivate_when_leaving = true,
-}
-
 enemy{
   layer = 0,
   x = 128,
@@ -5396,6 +5407,95 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/torch",
+}
+
+sensor{
+  name = "layer_up_sensor_2",
+  layer = 0,
+  x = 280,
+  y = 757,
+  width = 32,
+  height = 16,
+}
+
+wall{
+  layer = 0,
+  x = 256,
+  y = 744,
+  width = 16,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 304,
+  y = 744,
+  width = 16,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+sensor{
+  name = "sensor_temp",
+  layer = 0,
+  x = 224,
+  y = 469,
+  width = 48,
+  height = 16,
+}
+
+tile{
+  layer = 1,
+  x = 840,
+  y = 768,
+  width = 80,
+  height = 16,
+  pattern = "22",
+}
+
+tile{
+  layer = 1,
+  x = 408,
+  y = 768,
+  width = 80,
+  height = 16,
+  pattern = "22",
+}
+
+tile{
+  layer = 1,
+  x = 176,
+  y = 768,
+  width = 224,
+  height = 112,
+  pattern = "22",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 744,
+  width = 96,
+  height = 16,
+  pattern = "78",
+}
+
+tile{
+  layer = 1,
+  x = 160,
+  y = 744,
+  width = 112,
+  height = 16,
+  pattern = "78",
 }
 
 tile{
@@ -6840,15 +6940,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 160,
-  y = 744,
-  width = 240,
-  height = 16,
-  pattern = "78",
-}
-
-tile{
-  layer = 1,
   x = 176,
   y = 880,
   width = 224,
@@ -6863,15 +6954,6 @@ tile{
   width = 224,
   height = 8,
   pattern = "65",
-}
-
-tile{
-  layer = 1,
-  x = 176,
-  y = 768,
-  width = 224,
-  height = 112,
-  pattern = "22",
 }
 
 tile{
@@ -7052,33 +7134,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "170",
-}
-
-tile{
-  layer = 1,
-  x = 280,
-  y = 728,
-  width = 16,
-  height = 32,
-  pattern = "205",
-}
-
-tile{
-  layer = 1,
-  x = 272,
-  y = 728,
-  width = 8,
-  height = 32,
-  pattern = "203",
-}
-
-tile{
-  layer = 1,
-  x = 296,
-  y = 728,
-  width = 8,
-  height = 32,
-  pattern = "204",
 }
 
 tile{
@@ -8080,7 +8135,7 @@ jumper{
   width = 48,
   height = 8,
   direction = 2,
-  jump_length = 40,
+  jump_length = 24,
 }
 
 jumper{
@@ -8090,7 +8145,7 @@ jumper{
   width = 48,
   height = 8,
   direction = 6,
-  jump_length = 40,
+  jump_length = 24,
 }
 
 jumper{
@@ -8127,7 +8182,7 @@ jumper{
   layer = 1,
   x = 176,
   y = 760,
-  width = 96,
+  width = 88,
   height = 8,
   direction = 2,
   jump_length = 56,
@@ -8135,9 +8190,9 @@ jumper{
 
 jumper{
   layer = 1,
-  x = 304,
+  x = 312,
   y = 760,
-  width = 80,
+  width = 72,
   height = 8,
   direction = 2,
   jump_length = 56,
@@ -8420,7 +8475,7 @@ enemy{
   name = "octolux_5",
   layer = 1,
   x = 288,
-  y = 797,
+  y = 805,
   direction = 0,
   breed = "octolux",
   treasure_name = "random_north",
@@ -8532,7 +8587,7 @@ jumper{
   width = 320,
   height = 8,
   direction = 2,
-  jump_length = 56,
+  jump_length = 48,
 }
 
 wall{
@@ -8604,6 +8659,50 @@ custom_entity{
   direction = 0,
   sprite = "entities/soil",
   model = "soil",
+}
+
+wall{
+  layer = 1,
+  x = 176,
+  y = 768,
+  width = 224,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 176,
+  y = 776,
+  width = 8,
+  height = 112,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 264,
+  y = 736,
+  width = 16,
+  height = 24,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 296,
+  y = 736,
+  width = 16,
+  height = 24,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{
@@ -8896,9 +8995,9 @@ tile{
 
 tile{
   layer = 2,
-  x = 224,
+  x = 208,
   y = 640,
-  width = 16,
+  width = 48,
   height = 16,
   pattern = "3",
 }
@@ -8923,9 +9022,9 @@ tile{
 
 tile{
   layer = 2,
-  x = 224,
+  x = 208,
   y = 592,
-  width = 16,
+  width = 48,
   height = 16,
   pattern = "9",
 }

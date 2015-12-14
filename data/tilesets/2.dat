@@ -8380,6 +8380,36 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "240",
+  ground = "wall",
+  default_layer = 0,
+  x = 664,
+  y = 192,
+  width = 24,
+  height = 16,
+}
+
+tile_pattern{
+  id = "241",
+  ground = "wall",
+  default_layer = 0,
+  x = 720,
+  y = 192,
+  width = 24,
+  height = 16,
+}
+
+tile_pattern{
+  id = "242",
+  ground = "traversable",
+  default_layer = 1,
+  x = 664,
+  y = 160,
+  width = 80,
+  height = 32,
+}
+
+tile_pattern{
   id = "243",
   ground = "wall",
   default_layer = 0,

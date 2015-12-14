@@ -1,6 +1,7 @@
 local map = ...
 local game = map:get_game()
 local poe_guided
+local being_guided
 local position_step = 1
 local positions = {
   { x = 176, y = 1040 },
@@ -63,7 +64,7 @@ local function next_poe_step()
 end
 
 function sensor_poe_guide:on_activated()
-  if hero:get_direction() == 1 then -- Only start if hero is facing up (coming from other Forest map).
+  if hero:get_direction() == 1 and not being_guided then -- Only start if hero is facing up (coming from other Forest map).
     local position = (positions[position_step])
     local m = sol.movement.create("target")
     m:set_speed(48)
@@ -71,23 +72,43 @@ function sensor_poe_guide:on_activated()
     m:set_target(position.x, position.y)
     poe_guide:get_sprite():set_animation("walking")
     m:start(poe_guide)
+    being_guided = true
     sol.timer.start(map, 5000, function() next_poe_step() end)
+  end
+end
+
+function sensor_poe_hide_1:on_activated()
+  if hero:get_direction() == 0 and not being_guided then
+    poe_guide:set_enabled(false)
+    sensor_poe_guide:set_enabled(false)
+  end
+end
+
+function sensor_poe_hide_2:on_activated()
+  if hero:get_direction() == 2 and not being_guided then
+    poe_guide:set_enabled(false)
+    sensor_poe_guide:set_enabled(false)
   end
 end
 
 function to_A3:on_activated()
   game.deception_fog_overlay:fade_out(150)
-  sol.timer.start(game, 5000, function() game.deception_fog_overlay = nil end)
+  sol.timer.start(game, 4000, function() game.deception_fog_overlay = nil end)
+end
+
+function to_A3_2:on_activated()
+  game.deception_fog_overlay:fade_out(150)
+  sol.timer.start(game, 4000, function() game.deception_fog_overlay = nil end)
 end
 
 function to_B2:on_activated()
   game.deception_fog_overlay:fade_out(150)
-  sol.timer.start(game, 5000, function() game.deception_fog_overlay = nil end)
+  sol.timer.start(game, 4000, function() game.deception_fog_overlay = nil end)
 end
 
 function to_C3:on_activated()
   game.deception_fog_overlay:fade_out(150)
-  sol.timer.start(game, 5000, function() game.deception_fog_overlay = nil end)
+  sol.timer.start(game, 4000, function() game.deception_fog_overlay = nil end)
 end
 
 function map:on_draw(dst_surface)

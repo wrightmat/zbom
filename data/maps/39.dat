@@ -6371,6 +6371,51 @@ tile{
   pattern = "1128",
 }
 
+tile{
+  layer = 0,
+  x = 856,
+  y = 120,
+  width = 24,
+  height = 16,
+  pattern = "240",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 120,
+  width = 24,
+  height = 16,
+  pattern = "241",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 1024,
+  width = 24,
+  height = 16,
+  pattern = "240",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 1024,
+  width = 24,
+  height = 16,
+  pattern = "241",
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 800,
+  width = 32,
+  height = 48,
+  pattern = "1431",
+}
+
 teletransporter{
   name = "to_F9",
   layer = 0,
@@ -6686,6 +6731,24 @@ tile{
   width = 16,
   height = 8,
   pattern = "1382",
+}
+
+tile{
+  layer = 1,
+  x = 856,
+  y = 88,
+  width = 80,
+  height = 32,
+  pattern = "242",
+}
+
+tile{
+  layer = 1,
+  x = 648,
+  y = 992,
+  width = 80,
+  height = 32,
+  pattern = "242",
 }
 
 tile{

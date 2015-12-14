@@ -2214,7 +2214,7 @@ dialog{
   id = "_treasure.shovel.1",
   skip = "current",
   text = [[
-You got a sturdy $r Shovel$w! Use
+You got a sturdy  $r Shovel$w! Use
 it to dig up any buried treasue
 you can find!
 ]]
@@ -2416,7 +2416,7 @@ dialog{
   skip = "current",
   text = [[
 You traded the  $r Dog Food$w 
-for some yummy  $r Bananas$w!$0
+for some yummy   $r Bananas$w!$0
 Now we're getting somewhere!
 ]]
 }
@@ -7533,7 +7533,9 @@ with the guy in the house near there too.
 dialog{
   id = "poe.0.forest_deception",
   text = [[
-This forest can be quite deceiving
+This forest can be quite deceiving,
+but if you stick with me you probably
+won't get as turned around.
 ]]
 }
 

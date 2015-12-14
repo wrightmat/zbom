@@ -8089,17 +8089,26 @@ destructible{
 sensor{
   name = "sensor_poe_guide",
   layer = 0,
-  x = 1048,
-  y = 685,
+  x = 1040,
+  y = 645,
   width = 48,
+  height = 16,
+}
+
+sensor{
+  name = "sensor_poe_hide",
+  layer = 0,
+  x = 896,
+  y = 813,
+  width = 96,
   height = 16,
 }
 
 npc{
   name = "poe_guide",
   layer = 1,
-  x = 1088,
-  y = 741,
+  x = 1064,
+  y = 693,
   direction = 3,
   subtype = 1,
   sprite = "npc/poe_soul",

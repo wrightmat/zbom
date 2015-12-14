@@ -1,6 +1,7 @@
 local map = ...
 local game = map:get_game()
 local poe_guided
+local being_guided
 local position_step = 1
 local positions = {
   { x = 1040, y = 544 },
@@ -59,7 +60,12 @@ local function next_poe_step()
 end
 
 function sensor_poe_guide:on_activated()
-  if hero:get_direction() == 1 then -- Only start if hero is facing up (coming from Maruge Swamp).
+  if hero:get_direction() == 1 and not being_guided then -- Only start if hero is facing up (coming from Maruge Swamp).
+    if game:get_item("bottle_1"):get_variant() == 8 then game:get_item("bottle_1"):set_variant(1) -- Remove Poe Soul from bottle.
+    elseif game:get_item("bottle_2"):get_variant() == 8 then game:get_item("bottle_2"):set_variant(1)
+    elseif game:get_item("bottle_3"):get_variant() == 8 then game:get_item("bottle_3"):set_variant(1)
+    elseif game:get_item("bottle_4"):get_variant() == 8 then game:get_item("bottle_4"):set_variant(1) end
+
     game:start_dialog("poe.0.forest_deception")
     local position = (positions[position_step])
     local m = sol.movement.create("target")
@@ -68,13 +74,21 @@ function sensor_poe_guide:on_activated()
     m:set_target(position.x, position.y)
     poe_guide:get_sprite():set_animation("walking")
     m:start(poe_guide)
+    being_guided = true
     sol.timer.start(map, 5000, function() next_poe_step() end)
+  end
+end
+
+function sensor_poe_hide:on_activated()
+  if hero:get_direction() == 1 and not being_guided then
+    poe_guide:set_enabled(false)
+    sensor_poe_guide:set_enabled(false)
   end
 end
 
 function to_C4:on_activated()
   game.deception_fog_overlay:fade_out(150)
-  sol.timer.start(game, 1000, function() game.deception_fog_overlay = nil end)
+  sol.timer.start(game, 4000, function() game.deception_fog_overlay = nil end)
 end
 
 function map:on_draw(dst_surface)

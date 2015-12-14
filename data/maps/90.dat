@@ -6285,6 +6285,24 @@ sensor{
   height = 16,
 }
 
+sensor{
+  name = "sensor_poe_hide_1",
+  layer = 0,
+  x = 48,
+  y = 933,
+  width = 16,
+  height = 80,
+}
+
+sensor{
+  name = "sensor_poe_hide_2",
+  layer = 0,
+  x = 400,
+  y = 957,
+  width = 16,
+  height = 64,
+}
+
 npc{
   name = "poe_guide",
   layer = 1,
