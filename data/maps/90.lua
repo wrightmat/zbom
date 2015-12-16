@@ -2,6 +2,7 @@ local map = ...
 local game = map:get_game()
 local poe_guided
 local being_guided
+local opacity = 0
 local position_step = 1
 local positions = {
   { x = 176, y = 1040 },
@@ -43,9 +44,19 @@ end
 function map:on_started(destination)
   local hero_x, hero_y = map:get_hero():get_position()
   if hero_y < 1104 then  -- If coming from the south end of the map, fog is already present.
-    if game.deception_fog_overlay then game.deception_fog_overlay:fade_in(150, function()
-      if poe_guided then game.deception_fog_overlay:set_opacity(168) else game.deception_fog_overlay:set_opacity(216) end
-    end) end
+    if game.deception_fog_overlay and poe_guided then
+      sol.timer.start(game, 10, function()
+        opacity = opacity + 1
+        game.deception_fog_overlay:set_opacity(opacity)
+        if opacity < 168 then return true end
+      end)
+    elseif game.deception_fog_overlay and not poe_guided then
+      sol.timer.start(game, 10, function()
+        opacity = opacity + 1
+        game.deception_fog_overlay:set_opacity(opacity)
+        if opacity < 216 then return true end
+      end)
+    end
   end
 end
 
@@ -91,24 +102,46 @@ function sensor_poe_hide_2:on_activated()
   end
 end
 
+-- Custom fade out script to go from current opacity to zero. Same for all transitions.
+-- Starting the opacity higher compensates for the screen transition and makes the effect look right.
 function to_A3:on_activated()
-  game.deception_fog_overlay:fade_out(150)
-  sol.timer.start(game, 4000, function() game.deception_fog_overlay = nil end)
+  if poe_guided then opacity = 188 else opacity = 236 end
+  sol.timer.start(game, 10, function()
+    opacity = opacity - 1
+    game.deception_fog_overlay:set_opacity(opacity)
+    if opacity > 0 then return true
+    else game.deception_fog_overlay = nil end
+  end)
 end
 
 function to_A3_2:on_activated()
-  game.deception_fog_overlay:fade_out(150)
-  sol.timer.start(game, 4000, function() game.deception_fog_overlay = nil end)
+  if poe_guided then opacity = 188 else opacity = 236 end
+  sol.timer.start(game, 10, function()
+    opacity = opacity - 1
+    game.deception_fog_overlay:set_opacity(opacity)
+    if opacity > 0 then return true
+    else game.deception_fog_overlay = nil end
+  end)
 end
 
 function to_B2:on_activated()
-  game.deception_fog_overlay:fade_out(150)
-  sol.timer.start(game, 4000, function() game.deception_fog_overlay = nil end)
+  if poe_guided then opacity = 188 else opacity = 236 end
+  sol.timer.start(game, 10, function()
+    opacity = opacity - 1
+    game.deception_fog_overlay:set_opacity(opacity)
+    if opacity > 0 then return true
+    else game.deception_fog_overlay = nil end
+  end)
 end
 
 function to_C3:on_activated()
-  game.deception_fog_overlay:fade_out(150)
-  sol.timer.start(game, 4000, function() game.deception_fog_overlay = nil end)
+  if poe_guided then opacity = 188 else opacity = 236 end
+  sol.timer.start(game, 10, function()
+    opacity = opacity - 1
+    game.deception_fog_overlay:set_opacity(opacity)
+    if opacity > 0 then return true
+    else game.deception_fog_overlay = nil end
+  end)
 end
 
 function map:on_draw(dst_surface)
