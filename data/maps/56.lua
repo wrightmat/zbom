@@ -37,12 +37,14 @@ function map:on_started(destination)
 end
 
 function npc_rito_1:on_interaction()
-  game:set_dialog_style("default")
-  game:start_dialog("rito_1.0.septen")
+  if math.random(2) == 1 then
+    game:start_dialog("rito_1.0.septen")
+  else
+    game:start_dialog("rito_1.1.zora")
+  end
 end
 
 function npc_rito_2:on_interaction()
-  game:set_dialog_style("default")
   if game:get_value("i1928") >= 1 then
     if game:get_value("i1840") < 5 then
       game:start_dialog("rito_2.1.septen")
@@ -57,7 +59,6 @@ function npc_rito_2:on_interaction()
 end
 
 function npc_rito_3:on_interaction()
-  game:set_dialog_style("default")
   if game:get_value("b1150") then
     game:start_dialog("rito_3.1.septen")
   else
@@ -66,7 +67,6 @@ function npc_rito_3:on_interaction()
 end
 
 function npc_rito_carpenter:on_interaction()
-  game:set_dialog_style("default")
   if game:is_dungeon_finished(7) then
     game:start_dialog("rito_carpenter.2.septen")
   elseif game:get_value("i1926") >= 1 then
