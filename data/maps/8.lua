@@ -5,6 +5,7 @@ local game = map:get_game()
 -- Inside North Hyrule houses and such  --
 ------------------------------------------
 
+if game:get_value("i1615")==nil then game:set_value("i1615", 0) end
 if game:get_value("i1912")==nil then game:set_value("i1912", 0) end
 
 function map:on_started(destination)
@@ -48,14 +49,14 @@ function npc_isan:on_interaction()
         game:start_dialog("isan.0.trading_no")
       end
     end)
-  elseif game:get_value("i1615") >= 1 and game:get_value("b1614") then
+  elseif game:get_value("i1615") > 1 and game:get_value("b1614") then
     if game:get_value("i1615") == 12 then
-      game:start_dialog("isan.library.2_done", function()
+      game:start_dialog("isan.2.library.2_done", function()
         game:set_value("b1614", false)
         map:get_hero():start_treasure("rupees", 5)
       end)
     else
-      game:start_dialog("isan.library.2_count")
+      game:start_dialog("isan.2.library.2_count", game:get_value("i1615"))
     end
   elseif game:get_value("i1912") == 2 then
     repeat -- Make sure the same quote is not picked again.
@@ -104,64 +105,64 @@ end
 
 function shelf_1:on_interaction()
   game:set_dialog_style("default")
-  game:start_dialog("library_shelf_1")
+  game:start_dialog("library_shelf.1")
 end
 function shelf_2:on_interaction()
   game:set_dialog_style("default")
-  game:start_dialog("library_shelf_2")
+  game:start_dialog("library_shelf.2")
 end
 function shelf_3:on_interaction()
   game:set_dialog_style("default")
-  game:start_dialog("library_shelf_3")
+  game:start_dialog("library_shelf.3")
 end
 function shelf_4:on_interaction()
   game:set_dialog_style("default")
-  game:start_dialog("library_shelf_4")
+  game:start_dialog("library_shelf.4")
 end
 function shelf_5:on_interaction()
   game:set_dialog_style("default")
-  game:start_dialog("library_shelf_5")
+  game:start_dialog("library_shelf.5")
 end
 function shelf_6:on_interaction()
   game:set_dialog_style("default")
-  game:start_dialog("library_shelf_6")
+  game:start_dialog("library_shelf.6")
 end
 function shelf_7:on_interaction()
   game:set_dialog_style("default")
-  game:start_dialog("library_shelf_7")
+  game:start_dialog("library_shelf.7")
 end
 function shelf_8:on_interaction()
   game:set_dialog_style("default")
-  game:start_dialog("library_shelf_8")
+  game:start_dialog("library_shelf.8")
 end
 function shelf_9:on_interaction()
   game:set_dialog_style("default")
-  game:start_dialog("library_shelf_9")
+  game:start_dialog("library_shelf.9")
 end
 function shelf_10:on_interaction()
   game:set_dialog_style("default")
-  game:start_dialog("library_shelf_10")
+  game:start_dialog("library_shelf.10")
 end
 function shelf_11:on_interaction()
   game:set_dialog_style("default")
-  game:start_dialog("library_shelf_11")
+  game:start_dialog("library_shelf.11")
 end
 function shelf_12:on_interaction()
   game:set_dialog_style("default")
-  game:start_dialog("library_shelf_12")
+  game:start_dialog("library_shelf.12")
 end
 function shelf_13:on_interaction()
   game:set_dialog_style("default")
-  game:start_dialog("library_shelf_13")
+  game:start_dialog("library_shelf.13")
 end
 function shelf_14:on_interaction()
   game:set_dialog_style("default")
-  game:start_dialog("library_shelf_14")
+  game:start_dialog("library_shelf.14")
 end
 function shelf_15:on_interaction()
   game:set_dialog_style("default")
   if game:get_item("book_mudora"):get_variant() == 6 then
-    game:start_dialog("library_shelf_15")
+    game:start_dialog("library_shelf.15")
   else
     game:start_dialog("library_shelf")
   end
@@ -169,7 +170,7 @@ end
 function shelf_16:on_interaction()
   game:set_dialog_style("default")
   if game:get_item("book_mudora"):get_variant() == 7 then
-    game:start_dialog("library_shelf_16")
+    game:start_dialog("library_shelf.16")
   else
     game:start_dialog("library_shelf")
   end
@@ -177,7 +178,7 @@ end
 function shelf_17:on_interaction()
   game:set_dialog_style("default")
   if game:get_item("book_mudora"):get_variant() == 7 then
-    game:start_dialog("library_shelf_17")
+    game:start_dialog("library_shelf.17")
   else
     game:start_dialog("library_shelf")
   end
@@ -185,7 +186,7 @@ end
 function shelf_18:on_interaction()
   game:set_dialog_style("default")
   if game:get_item("book_mudora"):get_variant() == 8 then
-    game:start_dialog("library_shelf_18")
+    game:start_dialog("library_shelf.18")
   else
     game:start_dialog("library_shelf")
   end
