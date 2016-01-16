@@ -6424,7 +6424,7 @@ something to help you translate.
 }
 
 dialog{
-  id = "library_shelf_1",
+  id = "library_shelf.1",
   skip = "current",
   text = [[
 The $g Ordon people$w are a peaceful
@@ -6444,7 +6444,7 @@ especially pumpkins.
 }
 
 dialog{
-  id = "library_shelf_10",
+  id = "library_shelf.10",
   skip = "current",
   text = [[
 The $g Goron people$w are often seen as
@@ -6461,7 +6461,7 @@ repurposed in order to house their dead.
 }
 
 dialog{
-  id = "library_shelf_11",
+  id = "library_shelf.11",
   skip = "current",
   text = [[
 The sewer system of Hyrule is
@@ -6485,7 +6485,7 @@ other accesses have been rumored.
 }
 
 dialog{
-  id = "library_shelf_12",
+  id = "library_shelf.12",
   skip = "current",
   text = [[
 The $g Zora people$w were once a friendly
@@ -6512,7 +6512,7 @@ a good bet...
 }
 
 dialog{
-  id = "library_shelf_13",
+  id = "library_shelf.13",
   skip = "current",
   text = [[
 The $g Anouki race$w are generally a
@@ -6532,7 +6532,7 @@ generate ice on a whim.
 }
 
 dialog{
-  id = "library_shelf_14",
+  id = "library_shelf.14",
   skip = "current",
   text = [[
 The $gRito$w people are a new transplant
@@ -6553,7 +6553,7 @@ but no one knows exactly what.
 }
 
 dialog{
-  id = "library_shelf_15",
+  id = "library_shelf.15",
   skip = "current",
   text = [[
 Here is written, the opening of the great
@@ -6584,7 +6584,7 @@ future greatness of Hyrule...
 }
 
 dialog{
-  id = "library_shelf_16",
+  id = "library_shelf.16",
   skip = "current",
   text = [[
 The $m Dark Tribe$w have a long and sordid
@@ -6610,7 +6610,7 @@ laid low until the time came...
 }
 
 dialog{
-  id = "library_shelf_17",
+  id = "library_shelf.17",
   skip = "current",
   text = [[
 The $y weapons of Light$w were created long
@@ -6630,7 +6630,7 @@ the threat to Hyrule.
 }
 
 dialog{
-  id = "library_shelf_18",
+  id = "library_shelf.18",
   skip = "current",
   text = [[
 The $m Dark Tribe$w believe that the
@@ -6651,7 +6651,7 @@ hadn't been stopped by the Hero of Light.
 }
 
 dialog{
-  id = "library_shelf_2",
+  id = "library_shelf.2",
   skip = "current",
   text = [[
 The $bwestern Faron Woods $w  are one of
@@ -6665,7 +6665,7 @@ be a cache of treasure...
 }
 
 dialog{
-  id = "library_shelf_3",
+  id = "library_shelf.3",
   skip = "current",
   text = [[
 The $g Monkeys $w of the forest are a
@@ -6681,7 +6681,7 @@ general, monkeys should be avoided.
 }
 
 dialog{
-  id = "library_shelf_4",
+  id = "library_shelf.4",
   skip = "current",
   text = [[
 The $g Deku Scrubs$w are a territorial
@@ -6700,7 +6700,7 @@ a Scrub, try giving them one.
 }
 
 dialog{
-  id = "library_shelf_5",
+  id = "library_shelf.5",
   skip = "current",
   text = [[
 The $g Tokay$w are a recent transplant
@@ -6715,7 +6715,7 @@ front of them.
 }
 
 dialog{
-  id = "library_shelf_6",
+  id = "library_shelf.6",
   skip = "current",
   text = [[
 $gGerudo$w are a notorious pirate race
@@ -6736,7 +6736,7 @@ born only once every 100 years.
 }
 
 dialog{
-  id = "library_shelf_7",
+  id = "library_shelf.7",
   skip = "current",
   text = [[
 An old mining facility once stood in
@@ -6750,7 +6750,7 @@ swarming with the undead.
 }
 
 dialog{
-  id = "library_shelf_8",
+  id = "library_shelf.8",
   skip = "current",
   text = [[
 The $g Hylian people$w are the primary
@@ -6772,7 +6772,7 @@ few secrets.
 }
 
 dialog{
-  id = "library_shelf_9",
+  id = "library_shelf.9",
   skip = "current",
   text = [[
 The thriving city of $b  Kakariko$wis
@@ -6784,6 +6784,97 @@ The most famous shop in the city is the
 bomb shop. While it's not the only place
 to get this special weapon, it is the
 most reputable.
+]]
+}
+
+dialog{
+  id = "library_shelf.book_anouki",
+  text = [[
+The Anouki people...
+]]
+}
+
+dialog{
+  id = "library_shelf.book_deku",
+  text = [[
+The Deku tribe...
+]]
+}
+
+dialog{
+  id = "library_shelf.book_gerudo",
+  text = [[
+The Gerudo tribe...
+]]
+}
+
+dialog{
+  id = "library_shelf.book_goron",
+  text = [[
+The Goron tribe...
+]]
+}
+
+dialog{
+  id = "library_shelf.book_hylian",
+  text = [[
+The Hylian people...
+]]
+}
+
+dialog{
+  id = "library_shelf.book_kakariko",
+  text = [[
+The Kakariko people...
+]]
+}
+
+dialog{
+  id = "library_shelf.book_kasuto",
+  text = [[
+The people of Kasuto...
+]]
+}
+
+dialog{
+  id = "library_shelf.book_ordon",
+  text = [[
+The Ordon People...
+]]
+}
+
+dialog{
+  id = "library_shelf.book_rauru",
+  text = [[
+The people of Rauru...
+]]
+}
+
+dialog{
+  id = "library_shelf.book_rito",
+  text = [[
+The Rito tribe...
+]]
+}
+
+dialog{
+  id = "library_shelf.book_tokay",
+  text = [[
+The Tokay clan...
+]]
+}
+
+dialog{
+  id = "library_shelf.book_zola",
+  text = [[
+The Zola gang...
+]]
+}
+
+dialog{
+  id = "library_shelf.book_zora",
+  text = [[
+The Zora tribe...
 ]]
 }
 
