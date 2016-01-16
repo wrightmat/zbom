@@ -5981,6 +5981,30 @@ dialog{
   text = [[
 Please return often if your path becomes
 unclear.$0 Allow the books to help.
+
+Speaking of books, there may be other
+books scattered throughout the land
+which could also educate you on the
+secrets of Hyrule. Always keep your
+eye open for odd looking books!
+]]
+}
+
+dialog{
+  id = "isan.2.library.2_count",
+  text = [[
+You've found $v books already -
+keep up your search!
+]]
+}
+
+dialog{
+  id = "isan.2.library.2_done",
+  text = [[
+I think you've all the books that
+could be helpful to you! You've
+earned a gift for all of your
+careful research.
 ]]
 }
 
