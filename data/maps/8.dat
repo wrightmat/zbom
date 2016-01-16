@@ -4859,6 +4859,177 @@ tile{
   pattern = "425",
 }
 
+tile{
+  layer = 0,
+  x = 816,
+  y = 568,
+  width = 16,
+  height = 8,
+  pattern = "212",
+}
+
+tile{
+  layer = 0,
+  x = 816,
+  y = 560,
+  width = 16,
+  height = 8,
+  pattern = "208",
+}
+
+tile{
+  layer = 0,
+  x = 808,
+  y = 560,
+  width = 8,
+  height = 8,
+  pattern = "207",
+}
+
+tile{
+  layer = 0,
+  x = 808,
+  y = 568,
+  width = 8,
+  height = 8,
+  pattern = "211",
+}
+
+tile{
+  layer = 0,
+  x = 808,
+  y = 576,
+  width = 8,
+  height = 8,
+  pattern = "213",
+}
+
+tile{
+  layer = 0,
+  x = 816,
+  y = 576,
+  width = 16,
+  height = 8,
+  pattern = "215",
+}
+
+tile{
+  layer = 0,
+  x = 832,
+  y = 576,
+  width = 8,
+  height = 8,
+  pattern = "214",
+}
+
+tile{
+  layer = 0,
+  x = 832,
+  y = 568,
+  width = 8,
+  height = 8,
+  pattern = "210",
+}
+
+tile{
+  layer = 0,
+  x = 832,
+  y = 560,
+  width = 8,
+  height = 8,
+  pattern = "209",
+}
+
+tile{
+  layer = 0,
+  x = 1192,
+  y = 184,
+  width = 8,
+  height = 8,
+  pattern = "207",
+}
+
+tile{
+  layer = 0,
+  x = 1200,
+  y = 184,
+  width = 16,
+  height = 8,
+  pattern = "208",
+}
+
+tile{
+  layer = 0,
+  x = 1216,
+  y = 184,
+  width = 8,
+  height = 8,
+  pattern = "209",
+}
+
+tile{
+  layer = 0,
+  x = 1192,
+  y = 192,
+  width = 8,
+  height = 8,
+  pattern = "211",
+}
+
+tile{
+  layer = 0,
+  x = 1200,
+  y = 192,
+  width = 16,
+  height = 8,
+  pattern = "212",
+}
+
+tile{
+  layer = 0,
+  x = 1216,
+  y = 192,
+  width = 8,
+  height = 8,
+  pattern = "210",
+}
+
+tile{
+  layer = 0,
+  x = 1192,
+  y = 200,
+  width = 8,
+  height = 8,
+  pattern = "213",
+}
+
+tile{
+  layer = 0,
+  x = 1200,
+  y = 200,
+  width = 16,
+  height = 8,
+  pattern = "215",
+}
+
+tile{
+  layer = 0,
+  x = 1216,
+  y = 200,
+  width = 8,
+  height = 8,
+  pattern = "214",
+}
+
+tile{
+  layer = 0,
+  x = 1200,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "609",
+}
+
 dynamic_tile{
   name = "door",
   layer = 0,
@@ -5925,6 +6096,36 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/hylian_12",
+}
+
+custom_entity{
+  name = "book_deku",
+  layer = 0,
+  x = 824,
+  y = 581,
+  direction = 0,
+  sprite = "entities/quest_books",
+  model = "quest_books",
+}
+
+custom_entity{
+  name = "book_kasuto",
+  layer = 0,
+  x = 1208,
+  y = 205,
+  direction = 0,
+  sprite = "entities/quest_books",
+  model = "quest_books",
+}
+
+custom_entity{
+  name = "book_rauru",
+  layer = 0,
+  x = 1992,
+  y = 893,
+  direction = 0,
+  sprite = "entities/quest_books",
+  model = "quest_books",
 }
 
 tile{

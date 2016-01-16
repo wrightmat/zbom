@@ -8576,6 +8576,33 @@ tile{
   pattern = "147",
 }
 
+tile{
+  layer = 0,
+  x = 1720,
+  y = 1504,
+  width = 16,
+  height = 32,
+  pattern = "44",
+}
+
+tile{
+  layer = 0,
+  x = 1736,
+  y = 1504,
+  width = 16,
+  height = 32,
+  pattern = "43",
+}
+
+tile{
+  layer = 0,
+  x = 1704,
+  y = 1504,
+  width = 16,
+  height = 32,
+  pattern = "42",
+}
+
 dynamic_tile{
   name = "tile",
   layer = 0,
@@ -9843,6 +9870,16 @@ wall{
   width = 8,
   height = 32,
   stops_enemies = true,
+}
+
+custom_entity{
+  name = "book_hylian",
+  layer = 0,
+  x = 1728,
+  y = 1541,
+  direction = 0,
+  sprite = "entities/quest_books",
+  model = "quest_books",
 }
 
 tile{

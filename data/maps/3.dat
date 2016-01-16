@@ -3491,6 +3491,15 @@ tile{
   pattern = "89",
 }
 
+tile{
+  layer = 0,
+  x = 952,
+  y = 824,
+  width = 16,
+  height = 16,
+  pattern = "609",
+}
+
 destination{
   name = "from_subrosia_1",
   layer = 0,
@@ -3814,6 +3823,16 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/quest_bubble",
+}
+
+custom_entity{
+  name = "book_rito",
+  layer = 0,
+  x = 960,
+  y = 845,
+  direction = 0,
+  sprite = "entities/quest_books",
+  model = "quest_books",
 }
 
 tile{

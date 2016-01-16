@@ -2852,6 +2852,60 @@ tile{
   pattern = "283",
 }
 
+tile{
+  layer = 0,
+  x = 408,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "754",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "753",
+}
+
+tile{
+  layer = 0,
+  x = 424,
+  y = 48,
+  width = 32,
+  height = 16,
+  pattern = "757",
+}
+
+tile{
+  layer = 0,
+  x = 456,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "755",
+}
+
+tile{
+  layer = 0,
+  x = 456,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "756",
+}
+
+tile{
+  layer = 0,
+  x = 424,
+  y = 64,
+  width = 32,
+  height = 16,
+  pattern = "758",
+}
+
 dynamic_tile{
   name = "night_doorway_7",
   layer = 0,
@@ -3086,7 +3140,7 @@ npc{
   name = "npc_galen",
   layer = 0,
   x = 480,
-  y = 117,
+  y = 133,
   direction = 3,
   subtype = 1,
   sprite = "npc/goron_galen",
@@ -3218,6 +3272,16 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/quest_bubble",
+}
+
+custom_entity{
+  name = "book_goron",
+  layer = 0,
+  x = 440,
+  y = 77,
+  direction = 0,
+  sprite = "entities/quest_books",
+  model = "quest_books",
 }
 
 tile{

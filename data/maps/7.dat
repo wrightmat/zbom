@@ -2359,11 +2359,29 @@ tile{
 
 tile{
   layer = 0,
-  x = 192,
-  y = 112,
+  x = 400,
+  y = 560,
   width = 16,
-  height = 16,
-  pattern = "139",
+  height = 24,
+  pattern = "560",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 568,
+  width = 16,
+  height = 24,
+  pattern = "560",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 568,
+  width = 16,
+  height = 24,
+  pattern = "560",
 }
 
 destination{
@@ -2498,6 +2516,16 @@ chest{
   treasure_name = "heart_piece",
   treasure_savegame_variable = "b1725",
   sprite = "entities/chest",
+}
+
+custom_entity{
+  name = "book_anouki",
+  layer = 0,
+  x = 200,
+  y = 133,
+  direction = 0,
+  sprite = "entities/quest_books",
+  model = "quest_books",
 }
 
 tile{
