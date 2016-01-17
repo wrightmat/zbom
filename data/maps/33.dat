@@ -6983,6 +6983,16 @@ teletransporter{
   destination = "_side",
 }
 
+custom_entity{
+  name = "plant_hibiscus",
+  layer = 0,
+  x = 1032,
+  y = 869,
+  direction = 0,
+  sprite = "entities/quest_plants",
+  model = "quest_plants",
+}
+
 tile{
   layer = 2,
   x = 256,

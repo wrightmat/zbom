@@ -3886,6 +3886,16 @@ enemy{
   treasure_name = "random_subrosia",
 }
 
+custom_entity{
+  name = "plant_flame",
+  layer = 0,
+  x = 640,
+  y = 421,
+  direction = 0,
+  sprite = "entities/quest_plants",
+  model = "quest_plants",
+}
+
 tile{
   layer = 2,
   x = 128,

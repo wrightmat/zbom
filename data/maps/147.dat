@@ -2753,6 +2753,16 @@ destructible{
   can_be_cut = true,
 }
 
+custom_entity{
+  name = "plant_sea",
+  layer = 0,
+  x = 936,
+  y = 765,
+  direction = 0,
+  sprite = "entities/quest_plants",
+  model = "quest_plants",
+}
+
 tile{
   layer = 2,
   x = 888,

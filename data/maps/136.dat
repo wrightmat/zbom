@@ -2080,8 +2080,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 304,
-  y = 120,
+  x = 416,
+  y = 80,
   width = 16,
   height = 16,
   pattern = "1694",
@@ -2752,6 +2752,16 @@ enemy{
   direction = 0,
   breed = "peahat",
   treasure_name = "random_north",
+}
+
+custom_entity{
+  name = "plant_town",
+  layer = 0,
+  x = 256,
+  y = 181,
+  direction = 0,
+  sprite = "entities/quest_plants",
+  model = "quest_plants",
 }
 
 tile{

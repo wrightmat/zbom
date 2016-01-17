@@ -7007,6 +7007,16 @@ destructible{
   can_be_cut = true,
 }
 
+custom_entity{
+  name = "plant_lavender",
+  layer = 0,
+  x = 624,
+  y = 397,
+  direction = 0,
+  sprite = "entities/quest_plants",
+  model = "quest_plants",
+}
+
 tile{
   layer = 2,
   x = 640,

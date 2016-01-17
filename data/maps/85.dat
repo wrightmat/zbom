@@ -3710,6 +3710,16 @@ custom_entity{
   model = "soil",
 }
 
+custom_entity{
+  name = "plant_corydalis",
+  layer = 0,
+  x = 56,
+  y = 405,
+  direction = 0,
+  sprite = "entities/quest_plants",
+  model = "quest_plants",
+}
+
 tile{
   layer = 1,
   x = 120,

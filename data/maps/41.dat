@@ -8284,6 +8284,16 @@ dynamic_tile{
   enabled_at_start = false,
 }
 
+custom_entity{
+  name = "plant_milkweed",
+  layer = 0,
+  x = 248,
+  y = 333,
+  direction = 0,
+  sprite = "entities/quest_plants",
+  model = "quest_plants",
+}
+
 tile{
   layer = 1,
   x = 320,

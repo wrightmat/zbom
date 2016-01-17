@@ -4352,6 +4352,16 @@ npc{
   sprite = "npc/hylian_11",
 }
 
+custom_entity{
+  name = "plant_town",
+  layer = 0,
+  x = 656,
+  y = 405,
+  direction = 0,
+  sprite = "entities/quest_plants",
+  model = "quest_plants",
+}
+
 tile{
   layer = 1,
   x = 256,

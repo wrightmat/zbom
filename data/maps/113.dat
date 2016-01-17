@@ -7338,6 +7338,16 @@ enemy{
   treasure_name = "random_north",
 }
 
+custom_entity{
+  name = "plant_gnarled",
+  layer = 0,
+  x = 392,
+  y = 821,
+  direction = 0,
+  sprite = "entities/quest_plants",
+  model = "quest_plants",
+}
+
 tile{
   layer = 2,
   x = 544,

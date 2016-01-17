@@ -4470,6 +4470,16 @@ enemy{
   treasure_name = "random_mountain",
 }
 
+custom_entity{
+  name = "plant_frost",
+  layer = 0,
+  x = 72,
+  y = 685,
+  direction = 0,
+  sprite = "entities/quest_plants",
+  model = "quest_plants",
+}
+
 tile{
   layer = 2,
   x = 392,

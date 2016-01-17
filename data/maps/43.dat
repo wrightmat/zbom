@@ -3574,6 +3574,16 @@ npc{
   sprite = "entities/sign",
 }
 
+custom_entity{
+  name = "plant_simple",
+  layer = 0,
+  x = 416,
+  y = 53,
+  direction = 0,
+  sprite = "entities/quest_plants",
+  model = "quest_plants",
+}
+
 tile{
   layer = 2,
   x = 864,

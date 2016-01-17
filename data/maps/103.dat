@@ -9156,6 +9156,16 @@ wall{
   stops_projectiles = true,
 }
 
+custom_entity{
+  name = "plant_deku",
+  layer = 0,
+  x = 480,
+  y = 397,
+  direction = 0,
+  sprite = "entities/quest_plants",
+  model = "quest_plants",
+}
+
 tile{
   layer = 1,
   x = 680,

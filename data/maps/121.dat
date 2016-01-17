@@ -4281,6 +4281,16 @@ teletransporter{
   destination = "from_J2",
 }
 
+custom_entity{
+  name = "plant_mystical",
+  layer = 0,
+  x = 688,
+  y = 813,
+  direction = 0,
+  sprite = "entities/quest_plants",
+  model = "quest_plants",
+}
+
 tile{
   layer = 2,
   x = 584,

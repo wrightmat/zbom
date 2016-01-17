@@ -3084,16 +3084,6 @@ enemy{
 }
 
 enemy{
-  name = "octolux_8",
-  layer = 0,
-  x = 648,
-  y = 445,
-  direction = 3,
-  breed = "octolux",
-  treasure_name = "random_north",
-}
-
-enemy{
   name = "octolux_9",
   layer = 0,
   x = 736,
@@ -3243,6 +3233,16 @@ destructible{
   destruction_sound = "bush",
   weight = -1,
   can_be_cut = true,
+}
+
+custom_entity{
+  name = "plant_pikit",
+  layer = 0,
+  x = 768,
+  y = 461,
+  direction = 0,
+  sprite = "entities/quest_plants",
+  model = "quest_plants",
 }
 
 tile{

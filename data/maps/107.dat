@@ -5606,6 +5606,16 @@ enemy{
   treasure_name = "random_north",
 }
 
+custom_entity{
+  name = "plant_goponga",
+  layer = 0,
+  x = 936,
+  y = 845,
+  direction = 0,
+  sprite = "entities/quest_plants",
+  model = "quest_plants",
+}
+
 tile{
   layer = 1,
   x = 608,

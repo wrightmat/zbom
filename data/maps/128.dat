@@ -3396,6 +3396,16 @@ enemy{
   treasure_name = "random",
 }
 
+custom_entity{
+  name = "plant_simple",
+  layer = 0,
+  x = 1072,
+  y = 117,
+  direction = 0,
+  sprite = "entities/quest_plants",
+  model = "quest_plants",
+}
+
 tile{
   layer = 2,
   x = 1112,
