@@ -9146,7 +9146,6 @@ shop_treasure{
   treasure_variant = 2,
   treasure_savegame_variable = "b2006",
   price = 400,
-  font = "la",
   dialog = "shop.hyrule_shield",
 }
 
@@ -9157,7 +9156,6 @@ shop_treasure{
   y = 472,
   treasure_name = "heart",
   price = 20,
-  font = "blue_digits",
   dialog = "shop.heart",
 }
 
@@ -9167,10 +9165,9 @@ shop_treasure{
   x = 1472,
   y = 472,
   treasure_name = "potion",
-  treasure_variant = 3,
-  price = 200,
-  font = "la",
-  dialog = "shop.potion_blue",
+  treasure_variant = 2,
+  price = 150,
+  dialog = "shop.potion_green",
 }
 
 destructible{

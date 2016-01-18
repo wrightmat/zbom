@@ -18,6 +18,7 @@ if game:get_value("i2015")==nil then game:set_value("i2015", 0) end
 if game:get_value("i2021")==nil then game:set_value("i2021", 0) end
 
 function map:on_started(destination)
+print(game:get_value("i1806"))
   if game:get_item("trading"):get_variant() >= 6 then table_crystal_ball:set_enabled(true) end
   if not game:get_value("b2020") then quest_trading_potion:remove() end
   if not game:get_value("b2025") then quest_trading_meat:remove() end
@@ -118,7 +119,7 @@ function map:on_started(destination)
   end
 
   -- Replace shop items if they're bought.
-  if game:get_value("b1806") and game:get_value("i2015") >= 10 then -- Bomb bag replaced by red potion if it's no longer available on potion side.
+  if game:get_value("i1806") >= 1 and game:get_value("i2015") >= 10 then -- Bomb bag replaced by red potion if it's no longer available on potion side.
     self:create_shop_treasure({
 	name = "shop_potion",
 	layer = 0,
@@ -136,7 +137,7 @@ function map:on_started(destination)
     self:create_shop_treasure({
 	name = "shop_arrow",
 	layer = 0,
-	x = 144,
+	x = 96,
 	y = 504,
 	price = 40,
 	dialog = "shop.arrow",
