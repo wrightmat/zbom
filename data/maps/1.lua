@@ -18,7 +18,6 @@ if game:get_value("i2015")==nil then game:set_value("i2015", 0) end
 if game:get_value("i2021")==nil then game:set_value("i2021", 0) end
 
 function map:on_started(destination)
-print(game:get_value("i1806"))
   if game:get_item("trading"):get_variant() >= 6 then table_crystal_ball:set_enabled(true) end
   if not game:get_value("b2020") then quest_trading_potion:remove() end
   if not game:get_value("b2025") then quest_trading_meat:remove() end
