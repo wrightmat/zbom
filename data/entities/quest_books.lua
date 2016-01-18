@@ -57,9 +57,10 @@ function entity:on_interaction()
     if entity:get_name() == "book_tokay" then game:set_value("b1626", true) end
     if entity:get_name() == "book_zola" then game:set_value("b1627", true) end
     if entity:get_name() == "book_zora" then game:set_value("b1628", true) end
+
+    -- Lastly, remove the book - it's taken.
+    entity:remove()
   end)
-  -- Lastly, remove the book - it's taken.
-  entity:remove()
 end
 
 function entity:on_update()

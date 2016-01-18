@@ -6,6 +6,7 @@ local game = map:get_game()
 ------------------------------------------
 
 if game:get_value("i1615")==nil then game:set_value("i1615", 0) end
+if game:get_value("i1631")==nil then game:set_value("i1631", 0) end
 if game:get_value("i1912")==nil then game:set_value("i1912", 0) end
 
 function map:on_started(destination)
@@ -304,7 +305,13 @@ function npc_kokiri_1:on_interaction()
 end
 
 function npc_kokiri_2:on_interaction()
-  game:start_dialog("kokiri_2.0.saria")
+  if not game:get_value("b1630") then
+    game:start_dialog("kokiri_2.0.saria", function()
+      game:set_value("b1630", true)
+    end)
+  else
+    game:start_dialog("kokiri_2.0.saria_count", game:get_value("i1631"))
+  end
 end
 
 function npc_hylian_2:on_interaction()

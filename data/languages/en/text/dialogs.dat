@@ -6320,6 +6320,24 @@ dialog{
   id = "kokiri_2.0.saria",
   text = [[
 I love our beautiful woods home!
+
+
+The rest of Hyrule is pretty also -
+have you explored it thoroughly?
+
+Most people don't know that rare flowers
+and plants grow throughout the land, and
+can be used to create powerful potions!
+]]
+}
+
+dialog{
+  id = "kokiri_2.0.saria_count",
+  text = [[
+If you collect all the rare plant
+species, a potion maker will be able
+to create new and exciting things for
+you! So far you've found $v.
 ]]
 }
 

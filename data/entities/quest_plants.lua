@@ -6,6 +6,7 @@ local action_command = false
 
 function entity:on_created()
   self:set_traversable_by("hero", false)
+  self:set_drawn_in_y_order(true)
   if game:get_value("b1630") then
     entity:get_sprite():set_animation(entity:get_name())
   else
@@ -45,7 +46,7 @@ end)
 function entity:on_interaction()
   -- If the plant is interacted with, then start
   -- the dialog and increment the quest counter.
-  game:start_dialog("library_shelf."..entity:get_name(), function()
+  game:start_dialog("plants."..entity:get_name(), function()
     game:set_value("i1631", game:get_value("i1631")+1)
     if entity:get_name() == "plant_baba" then game:set_value("b1632", true) end
     if entity:get_name() == "plant_corydalis" then game:set_value("b1633", true) end
@@ -63,9 +64,10 @@ function entity:on_interaction()
     if entity:get_name() == "plant_sea" then game:set_value("b1645", true) end
     if entity:get_name() == "plant_simple" then game:set_value("b1646", true) end
     if entity:get_name() == "plant_town" then game:set_value("b1647", true) end
+
+    -- Lastly, remove the plant - it's taken.
+    entity:remove()
   end)
-  -- Lastly, remove the plant - it's taken.
-  entity:remove()
 end
 
 function entity:on_update()
