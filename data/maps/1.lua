@@ -22,29 +22,37 @@ function map:on_started(destination)
   if not game:get_value("b2020") then quest_trading_potion:remove() end
   if not game:get_value("b2025") then quest_trading_meat:remove() end
   -- Increment potion counters.
+  if game:get_value("i1631") == 13 then
+    -- If all herbs are found in fetch quest, the final potion becomes available.
+    local tx,ty,tl = shop_potion_2:get_position()
+    shop_potion_2:remove()  -- Revitalizing Potion replaces Green Potion.
+    map:create_shop_treasure({x=tx,y=ty,layer=tl,name="shop_potion",treasure_name="potion",treasure_variant=4,dialog="shop.potion_revitalizing",price=200})
+  end
   if game:get_value("i2014") >= 10 then
-    local tx,ty,tl = shop_potion_1:get_position()
-    shop_potion_1:remove()
+    local tx,ty,tl = shop_potion_2:get_position()
+    shop_potion_2:remove()  -- Green Potion takes second spot, which is empty (placeholder to make positioning easier).
     if game:get_value("i2014") == 20 then
-      map:create_shop_treasure({x=tx,y=ty,layer=tl,name="shop_potion",treasure_name="potion",treasure_variant=3,dialog="shop.potion_blue",price=0})
+      map:create_shop_treasure({x=tx,y=ty,layer=tl,name="shop_potion",treasure_name="potion",treasure_variant=2,dialog="shop.potion_green",price=0})
       game:set_value("i2014", 30)
+    else
+      map:create_shop_treasure({x=tx,y=ty,layer=tl,name="shop_potion",treasure_name="potion",treasure_variant=2,dialog="shop.potion_green",price=100})
+    end
+  elseif game:get_value("i2014") >= 1 then
+    game:set_value("i2014", game:get_value("i2014")+1)  -- Green Potion.
+  else
+    shop_potion_2:remove()
+  end
+  if game:get_value("i2015") >= 10 then
+    local tx,ty,tl = shop_potion_1:get_position()
+    shop_potion_1:remove()  -- Blue Potion replaces Red Potion.
+    if game:get_value("i2015") == 20 then
+      map:create_shop_treasure({x=tx,y=ty,layer=tl,name="shop_potion",treasure_name="potion",treasure_variant=3,dialog="shop.potion_blue",price=0})
+      game:set_value("i2015", 30)
     else
       map:create_shop_treasure({x=tx,y=ty,layer=tl,name="shop_potion",treasure_name="potion",treasure_variant=3,dialog="shop.potion_blue",price=150})
     end
-  elseif game:get_value("i2014") >= 1 then
-    game:set_value("i2014", game:get_value("i2014")+1)  -- Blue
-  end
-  if game:get_value("i2015") >= 10 then
-    local tx,ty,tl = shop_potion_2:get_position()
-    shop_potion_2:remove()
-    if game:get_value("i2015") == 20 then
-      map:create_shop_treasure({x=tx,y=ty,layer=tl,name="shop_potion",treasure_name="potion",treasure_variant=4,dialog="shop.potion_revitalizing",price=0})
-      game:set_value("i2015", 30)
-    else
-      map:create_shop_treasure({x=tx,y=ty,layer=tl,name="shop_potion",treasure_name="potion",treasure_variant=4,dialog="shop.potion_revitalizing",price=200})
-    end
   elseif game:get_value("i2015") >= 1 then
-    game:set_value("i2015", game:get_value("i2015")+1)  -- Revitalizing
+    game:set_value("i2015", game:get_value("i2015")+1)  -- Blue Potion.
   end
   if game:get_value("i2021") >= 1 then game:set_value("i2021", game:get_value("i2021")+1) end  -- Odd (trading)
 
@@ -110,7 +118,7 @@ function map:on_started(destination)
   end
 
   -- Replace shop items if they're bought.
-  if game:get_value("b1806") and game:get_value("i2014") >= 10 then -- Bomb bag
+  if game:get_value("b1806") and game:get_value("i2015") >= 10 then -- Bomb bag replaced by red potion if it's no longer available on potion side.
     self:create_shop_treasure({
 	name = "shop_potion",
 	layer = 0,

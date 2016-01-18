@@ -5441,10 +5441,9 @@ shop_treasure{
   layer = 0,
   x = 264,
   y = 480,
-  treasure_name = "potion",
-  treasure_variant = 2,
-  price = 100,
-  dialog = "shop.potion_green",
+  treasure_name = "",
+  price = 0,
+  dialog = "",
 }
 
 shop_treasure{

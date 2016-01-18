@@ -93,7 +93,9 @@ function entity:on_interaction()
         end
       end)
     end
-  elseif game:get_value("i1847") >= 25 then  -- Has enough deku sticks for revitalizing potion.
+  elseif game:get_value("i1631") >= 7 then
+    game:start_dialog("crista.5.shop_progress")  -- Progress on plants fetch quest.
+  elseif game:get_value("i1847") >= 25 and game:get_value("i2015") < 20 then  -- Has enough deku sticks for blue potion.
     if game:get_value("i2015") >= 1 then
       game:start_dialog("crista.0.potion_work", function()
         if game:get_value("i2015") < 10 then game:set_value("i2015", game:get_value("i2015")+1) end
@@ -109,7 +111,7 @@ function entity:on_interaction()
         end
       end)
     end
-  elseif game:get_value("i1847") >= 10 then  -- Has enough deku sticks for blue potion.
+  elseif game:get_value("i1847") >= 10 and game:get_value("i2014") < 20 then  -- Has enough deku sticks for green potion.
     if game:get_value("i2014") >= 1 then
       game:start_dialog("crista.0.potion_work", function()
         if game:get_value("i2014") < 10 then game:set_value("i2014", game:get_value("i2014")+1) end
@@ -135,7 +137,12 @@ function entity:on_interaction()
     elseif game:get_value("b1117") and game:get_value("i1030") < 1 then
       game:start_dialog("crista.4.shop")
     elseif game:get_value("i1032") >= 6 then
-      game:start_dialog("crista.3.shop")
+      local rand_2 = math.random(4)
+      if rand_2 == 1 then
+        game:start_dialog("crista.5.shop")
+      else
+        game:start_dialog("crista.3.shop")
+      end
     elseif game:get_value("i1032") >= 3 then
       game:start_dialog("crista.2.house", game:get_player_name())
     elseif game:get_value("i1032") >= 1 then

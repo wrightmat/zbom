@@ -3387,7 +3387,7 @@ Hey, $v! I almost forgot to mention...
 I haven't been able to leave the shop
 very much, so if you could bring me
 some $rdeku sticks$w, I know I'd be able
-to make a new potion. 10 sticks
+to make a new potion or two. 10 sticks
 should get me started, but 25 or so
 should make something really great!
 ]]
@@ -3502,6 +3502,31 @@ treasure under the lake! I told him
 he was crazy and that wasn't possible,
 but he insisted. Maybe you should
 ask him about it.
+]]
+}
+
+dialog{
+  id = "crista.5.shop",
+  text = [[
+You know how I've mentioned all of the
+plants that grow in Hyrule? Well, if
+you could find a selection of these
+plants, I could make the greatest potion
+yet! It could probably recover your life,
+magic and stamina! Think about it!
+I have a friend who lives in Saria who
+should be able to get you started on
+the plants' locations. She knows more
+about Hyrule's flora than even I do!
+]]
+}
+
+dialog{
+  id = "crista.5.shop_progress",
+  text = [[
+You've made great progress on the
+plant search! I'd say you've found at
+least half of the species I need.
 ]]
 }
 
