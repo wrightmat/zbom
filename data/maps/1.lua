@@ -39,6 +39,7 @@ function map:on_started(destination)
     end
   elseif game:get_value("i2014") >= 1 then
     game:set_value("i2014", game:get_value("i2014")+1)  -- Green Potion.
+    shop_potion_2:remove()
   else
     shop_potion_2:remove()
   end

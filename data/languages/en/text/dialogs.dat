@@ -3285,7 +3285,7 @@ dialog{
   skip = "current",
   text = [[
 Wow, You have enough deku sticks
-for me to make a Blue Potion!
+for me to make a Green Potion!
 
 Would you like me to?
 Sure!
@@ -3299,7 +3299,7 @@ dialog{
   skip = "current",
   text = [[
 Wow, You have enough deku sticks
-for me to make a Revitalizing Potion!
+for me to make a Blue Potion!
 
 Would you like me to?
 Sure!
@@ -3507,6 +3507,7 @@ ask him about it.
 
 dialog{
   id = "crista.5.shop",
+  skip = "current",
   text = [[
 You know how I've mentioned all of the
 plants that grow in Hyrule? Well, if
@@ -3523,6 +3524,7 @@ about Hyrule's flora than even I do!
 
 dialog{
   id = "crista.5.shop_progress",
+  skip = "current",
   text = [[
 You've made great progress on the
 plant search! I'd say you've found at
@@ -8650,8 +8652,8 @@ dialog{
   skip = "current",
   text = [[
 A delicious potion from local
-herbs. It'll make you feel
-more magical!
+herbs and sticks. It'll make you
+feel more magical!
 ]]
 }
 
