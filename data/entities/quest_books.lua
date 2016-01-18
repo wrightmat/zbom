@@ -4,6 +4,8 @@ local map = entity:get_map()
 local hero_facing = false
 local action_command = false
 
+if game:get_value("i1615")==nil then game:set_value("i1615", 0) end
+
 function entity:on_created()
   self:set_traversable_by("hero", false)
   if game:get_value("b1614") then
