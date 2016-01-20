@@ -5720,7 +5720,7 @@ dynamic_tile{
 }
 
 npc{
-  name = "quest_trading_book",
+  name = "quest_book",
   layer = 0,
   x = 400,
   y = 133,
@@ -6126,6 +6126,16 @@ custom_entity{
   direction = 0,
   sprite = "entities/quest_books",
   model = "quest_books",
+}
+
+npc{
+  name = "quest_plants",
+  layer = 0,
+  x = 1232,
+  y = 549,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/quest_bubble",
 }
 
 tile{
