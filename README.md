@@ -1,5 +1,4 @@
 ![Zelda Book of Mudora logo](title_logo.png)
-
 #Zelda Book of Mudora
 
 This package contains the data files of the quest **Zelda: Book of Mudora**.
