@@ -4,7 +4,7 @@
 This package contains the data files of the quest **Zelda: Book of Mudora**.
 This quest is a free, open-source game that works with Solarus,
 an open-source Zelda-like 2D game engine.
-To play this game, you need Solarus. The compiled engine is included for Windows and Linux.
+To play this game, you need Solarus. The compiled engine is included for Windows.
 
 The game is currently in Version 0.7 Beta (20-Jan-16, Solarus v1.4.5)
 
