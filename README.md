@@ -1,4 +1,4 @@
-![Zelda Book of Mudora logo](https://www.dropbox.com/s/gwjx2xcjf89froa/title_logo.png?dl=0)
+![Zelda Book of Mudora logo](data/sprites/menus/title_logo.png)
 
 #Zelda Book of Mudora
 
