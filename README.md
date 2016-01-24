@@ -1,3 +1,5 @@
+https://www.dropbox.com/s/gwjx2xcjf89froa/title_logo.png?dl=0
+
 This package contains the data files of the quest Zelda: Book of Mudora.
 This quest is a free, open-source game that works with Solarus,
 an open-source Zelda-like 2D game engine.
