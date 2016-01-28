@@ -6,10 +6,11 @@ local game = map:get_game()
 --------------------------------------------------------------------
 
 local torch_overlay = nil
+if game:get_value("i1068")==nil then game:set_value("i1068", 0) end
 
 function map:on_started(destination)
-  -- If you haven't gotten all of the parts, Ordona directs you back.
-  if destination == from_pyramid then
+  -- If you haven't gotten all of the parts (and have met the Geruod), Ordona directs you back.
+  if destination == from_pyramid and game:get_value("i1068") >= 1 then
     if not game:get_value("b1087") or not game:get_value("b1088") or not game:get_value("b1089") then
       torch_1:get_sprite():set_animation("lit")
       sol.timer.start(1000, function()
