@@ -11,6 +11,15 @@ properties{
 
 tile{
   layer = 0,
+  x = 1080,
+  y = 1016,
+  width = 128,
+  height = 8,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
   x = 1120,
   y = 96,
   width = 1056,
@@ -2830,7 +2839,7 @@ tile{
   layer = 0,
   x = 928,
   y = 1024,
-  width = 288,
+  width = 128,
   height = 16,
   pattern = "9",
 }
@@ -2902,7 +2911,7 @@ tile{
   layer = 0,
   x = 936,
   y = 1016,
-  width = 272,
+  width = 128,
   height = 8,
   pattern = "19",
 }
@@ -6147,6 +6156,78 @@ tile{
   pattern = "565",
 }
 
+tile{
+  layer = 0,
+  x = 1088,
+  y = 1024,
+  width = 128,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 1016,
+  width = 16,
+  height = 16,
+  pattern = "158",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 1016,
+  width = 8,
+  height = 16,
+  pattern = "159",
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 1016,
+  width = 8,
+  height = 16,
+  pattern = "161",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 1040,
+  width = 8,
+  height = 16,
+  pattern = "106",
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 1056,
+  width = 16,
+  height = 8,
+  pattern = "105",
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 1040,
+  width = 8,
+  height = 16,
+  pattern = "106",
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 1016,
+  width = 16,
+  height = 16,
+  pattern = "565",
+}
+
 sensor{
   name = "dungeon_room_8_",
   layer = 0,
@@ -6197,8 +6278,8 @@ destination{
   name = "from_F10",
   layer = 0,
   x = 1072,
-  y = 973,
-  direction = -1,
+  y = 1029,
+  direction = 1,
 }
 
 destination{
@@ -7735,6 +7816,26 @@ wall{
   stops_enemies = true,
 }
 
+teletransporter{
+  name = "to_surface",
+  layer = 0,
+  x = 1064,
+  y = 1040,
+  width = 16,
+  height = 16,
+  destination_map = "35",
+  destination = "from_sewer",
+}
+
+wall{
+  layer = 0,
+  x = 1056,
+  y = 1008,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+}
+
 tile{
   layer = 1,
   x = 848,
@@ -8304,6 +8405,15 @@ tile{
   width = 16,
   height = 8,
   pattern = "569",
+}
+
+tile{
+  layer = 2,
+  x = 1056,
+  y = 1032,
+  width = 32,
+  height = 8,
+  pattern = "160",
 }
 
 separator{
