@@ -188,19 +188,19 @@ function npc_monkey:on_interaction()
 end
 
 function sensor_water_bottle:on_activated()
-  if game:has_bottle() and hero:get_direction() == 3 then
-    local first_empty_bottle = game:get_first_empty_bottle()
-    if first_empty_bottle ~= nil then
-      game:start_dialog("found_water", function(answer)
-	if answer == 1 then
-	  hero:start_treasure(first_empty_bottle:get_name(), 2, nil)
-	end
-      end)
+  if hero:get_direction == 3 then -- Only activate if facing the water.
+    if game:has_bottle() then
+      local first_empty_bottle = game:get_first_empty_bottle()
+      if first_empty_bottle ~= nil then
+        game:start_dialog("found_water", function(answer)
+	  if answer == 1 then hero:start_treasure(first_empty_bottle:get_name(), 2, nil) end
+        end)
+      else
+        game:start_dialog("found_water.no_empty_bottle")
+      end
     else
-      game:start_dialog("found_water.no_empty_bottle")
+      game:start_dialog("found_water.no_bottle")
     end
-  else
-    game:start_dialog("found_water.no_bottle")
   end
 end
 function sensor_water_bottle_2:on_activated()
