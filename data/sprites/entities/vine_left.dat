@@ -1,0 +1,22 @@
+animation{
+  name = "on_ground",
+  src_image = "entities/vines.png",
+  directions = {
+    { x = 56, y = 0, frame_width = 24, frame_height = 16, origin_x = 21, origin_y = 13 },
+  },
+}
+animation{
+  name = "destroy",
+  src_image = "tileset",
+  frame_delay = 100,
+  directions = {
+    { x = 0, y = 272, frame_width = 40, frame_height = 48, origin_x = 24, origin_y = 32, num_frames = 8 },
+  },
+}
+animation{
+  name = "stopped",
+  src_image = "entities/vines.png",
+  directions = {
+    { x = 56, y = 0, frame_width = 24, frame_height = 16, origin_x = 21, origin_y = 13 },
+  },
+}

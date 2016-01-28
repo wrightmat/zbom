@@ -1073,15 +1073,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 504,
-  y = 1416,
-  width = 16,
-  height = 24,
-  pattern = "557",
-}
-
-tile{
-  layer = 0,
   x = 696,
   y = 1408,
   width = 16,
@@ -8138,24 +8129,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1368,
-  y = 1472,
-  width = 16,
-  height = 24,
-  pattern = "556",
-}
-
-tile{
-  layer = 0,
-  x = 1448,
-  y = 1472,
-  width = 16,
-  height = 24,
-  pattern = "556",
-}
-
-tile{
-  layer = 0,
   x = 704,
   y = 976,
   width = 32,
@@ -8359,123 +8332,6 @@ tile{
   width = 8,
   height = 48,
   pattern = "544",
-}
-
-tile{
-  layer = 0,
-  x = 1632,
-  y = 72,
-  width = 24,
-  height = 16,
-  pattern = "559",
-}
-
-tile{
-  layer = 0,
-  x = 1632,
-  y = 216,
-  width = 24,
-  height = 16,
-  pattern = "559",
-}
-
-tile{
-  layer = 0,
-  x = 1632,
-  y = 144,
-  width = 24,
-  height = 16,
-  pattern = "559",
-}
-
-tile{
-  layer = 0,
-  x = 1976,
-  y = 144,
-  width = 24,
-  height = 16,
-  pattern = "558",
-}
-
-tile{
-  layer = 0,
-  x = 1976,
-  y = 72,
-  width = 24,
-  height = 16,
-  pattern = "558",
-}
-
-tile{
-  layer = 0,
-  x = 1976,
-  y = 216,
-  width = 24,
-  height = 16,
-  pattern = "558",
-}
-
-tile{
-  layer = 0,
-  x = 1784,
-  y = 264,
-  width = 16,
-  height = 24,
-  pattern = "557",
-}
-
-tile{
-  layer = 0,
-  x = 1832,
-  y = 264,
-  width = 16,
-  height = 24,
-  pattern = "557",
-}
-
-tile{
-  layer = 0,
-  x = 1680,
-  y = 264,
-  width = 16,
-  height = 24,
-  pattern = "557",
-}
-
-tile{
-  layer = 0,
-  x = 1936,
-  y = 264,
-  width = 16,
-  height = 24,
-  pattern = "557",
-}
-
-tile{
-  layer = 0,
-  x = 1800,
-  y = 32,
-  width = 16,
-  height = 24,
-  pattern = "556",
-}
-
-tile{
-  layer = 0,
-  x = 1928,
-  y = 32,
-  width = 16,
-  height = 24,
-  pattern = "556",
-}
-
-tile{
-  layer = 0,
-  x = 1688,
-  y = 32,
-  width = 16,
-  height = 24,
-  pattern = "556",
 }
 
 tile{
@@ -9830,11 +9686,24 @@ tile{
 
 destructible{
   layer = 0,
-  x = 1392,
-  y = 1717,
+  x = 1448,
+  y = 1485,
   treasure_name = "random",
-  sprite = "entities/vines",
+  sprite = "entities/vine_up",
   destruction_sound = "bush",
+  weight = 4,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 1384,
+  y = 1485,
+  treasure_name = "random",
+  sprite = "entities/vine_up",
+  destruction_sound = "bush",
+  weight = 4,
   can_be_cut = true,
   damage_on_enemies = 0,
 }
@@ -9844,8 +9713,9 @@ destructible{
   x = 1408,
   y = 1717,
   treasure_name = "random",
-  sprite = "entities/vines",
+  sprite = "entities/vine_down",
   destruction_sound = "bush",
+  weight = 4,
   can_be_cut = true,
   damage_on_enemies = 0,
 }
@@ -9855,8 +9725,9 @@ destructible{
   x = 1424,
   y = 1717,
   treasure_name = "random",
-  sprite = "entities/vines",
+  sprite = "entities/vine_down",
   destruction_sound = "bush",
+  weight = 4,
   can_be_cut = true,
   damage_on_enemies = 0,
 }
@@ -9866,8 +9737,21 @@ destructible{
   x = 1440,
   y = 1717,
   treasure_name = "random",
-  sprite = "entities/vines",
+  sprite = "entities/vine_down",
   destruction_sound = "bush",
+  weight = 4,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 1392,
+  y = 1717,
+  treasure_name = "random",
+  sprite = "entities/vine_down",
+  destruction_sound = "bush",
+  weight = 4,
   can_be_cut = true,
   damage_on_enemies = 0,
 }
@@ -13859,6 +13743,174 @@ npc{
   y = 917,
   direction = 3,
   subtype = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 512,
+  y = 1429,
+  treasure_name = "random",
+  sprite = "entities/vine_down",
+  destruction_sound = "bush",
+  weight = 4,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 1688,
+  y = 277,
+  treasure_name = "random",
+  sprite = "entities/vine_down",
+  destruction_sound = "bush",
+  weight = 4,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 1792,
+  y = 277,
+  treasure_name = "random",
+  sprite = "entities/vine_down",
+  destruction_sound = "bush",
+  weight = 4,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 1840,
+  y = 277,
+  treasure_name = "random",
+  sprite = "entities/vine_down",
+  destruction_sound = "bush",
+  weight = 4,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 1944,
+  y = 277,
+  treasure_name = "random",
+  sprite = "entities/vine_down",
+  destruction_sound = "bush",
+  weight = 4,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 1696,
+  y = 45,
+  treasure_name = "random",
+  sprite = "entities/vine_up",
+  destruction_sound = "bush",
+  weight = 4,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 1808,
+  y = 45,
+  treasure_name = "random",
+  sprite = "entities/vine_up",
+  destruction_sound = "bush",
+  weight = 4,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 1936,
+  y = 45,
+  treasure_name = "random",
+  sprite = "entities/vine_up",
+  destruction_sound = "bush",
+  weight = 4,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 1992,
+  y = 85,
+  treasure_name = "random",
+  sprite = "entities/vine_right",
+  destruction_sound = "bush",
+  weight = 4,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 1992,
+  y = 157,
+  treasure_name = "random",
+  sprite = "entities/vine_right",
+  destruction_sound = "bush",
+  weight = 4,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 1992,
+  y = 229,
+  treasure_name = "random",
+  sprite = "entities/vine_right",
+  destruction_sound = "bush",
+  weight = 4,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 1656,
+  y = 229,
+  treasure_name = "random",
+  sprite = "entities/vine_left",
+  destruction_sound = "bush",
+  weight = 4,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 1656,
+  y = 157,
+  treasure_name = "random",
+  sprite = "entities/vine_left",
+  destruction_sound = "bush",
+  weight = 4,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 1656,
+  y = 85,
+  treasure_name = "random",
+  sprite = "entities/vine_left",
+  destruction_sound = "bush",
+  weight = 4,
+  can_be_cut = true,
+  damage_on_enemies = 0,
 }
 
 tile{
