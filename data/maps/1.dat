@@ -5447,14 +5447,13 @@ shop_treasure{
 }
 
 shop_treasure{
-  name = "shop_ordon_bomb_bag",
+  name = "shop_ordon_apple",
   layer = 0,
   x = 144,
   y = 504,
-  treasure_name = "bomb_bag",
-  treasure_savegame_variable = "i1806",
-  price = 500,
-  dialog = "shop.bomb_bag_1",
+  treasure_name = "apple",
+  price = 50,
+  dialog = "_item_description.apple.1",
 }
 
 npc{

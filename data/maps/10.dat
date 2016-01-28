@@ -9448,12 +9448,11 @@ destination{
 }
 
 chest{
-  name = "chest_rupees",
+  name = "chest_deku",
   layer = 0,
   x = 192,
   y = 989,
-  treasure_name = "rupee",
-  treasure_variant = 4,
+  treasure_name = "stick",
   treasure_savegame_variable = "b1740",
   sprite = "entities/chest",
 }

@@ -119,8 +119,9 @@ function map:on_started(destination)
     npc_gaira:remove()
   end
 
-  -- Replace shop items if they're bought.
-  if game:get_value("i1806") >= 1 and game:get_value("i2015") >= 10 then -- Bomb bag replaced by red potion if it's no longer available on potion side.
+  -- Replace shop items as the game progresses.
+  if game:get_value("i2015") >= 10 then -- Apples replaced by red potion if it's no longer available on potion side.
+    shop_ordon_apple:remove()
     self:create_shop_treasure({
 	name = "shop_potion",
 	layer = 0,
