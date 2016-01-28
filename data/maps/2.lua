@@ -7,6 +7,7 @@ local game = map:get_game()
 
 if game:get_value("i1026")==nil then game:set_value("i1026", 0) end
 if game:get_value("i1032")==nil then game:set_value("i1032", 0) end
+if game:get_value("i1068")==nil then game:set_value("i1068", 0) end
 if game:get_value("i1820")==nil then game:set_value("i1820", 0) end
 if game:get_value("i1924")==nil then game:set_value("i1924", 0) end --Juba
 
@@ -89,18 +90,18 @@ function map:on_started(destination)
 end
 
 function elder_ulo:on_interaction()
-  game:set_dialog_style("default")
   if game:get_value("b1699") then
     game:start_dialog("ulo.6.council")
   elseif game:get_value("i1032") > 2 then
     game:start_dialog("ulo.2.council_zelda", game:get_player_name())
   else
-    game:start_dialog("ulo.2.council", game:get_player_name())
+    game:start_dialog("ulo.2.council", game:get_player_name(), function()
+      if game:get_value("i1032") >= 1 then game:start_dialog("ulo.2.council_book") end
+    end)
   end
 end
 
 function elder_juba:on_interaction()
-  game:set_dialog_style("default")
   if game:get_value("b1699") then
     game:start_dialog("juba.3.council")
   elseif game:get_value("i1032") > 2 then
@@ -110,7 +111,6 @@ function elder_juba:on_interaction()
   end
 end
 function elder_juba_office:on_interaction()
-  game:set_dialog_style("default")
   if game:get_value("i1923") >= 1 and game:get_value("b1134") and not game:get_value("b1816") then
     game:start_dialog("juba.2.office", function()
       hero:start_treasure("flippers", 1)
@@ -127,18 +127,18 @@ function elder_juba_office:on_interaction()
 end
 
 function elder_gin:on_interaction()
-  game:set_dialog_style("default")
   if game:get_value("b1699") then
     game:start_dialog("gin.2.council")
   elseif game:get_value("i1032") > 2 then
     game:start_dialog("gin.0.council_zelda")
   else
-    game:start_dialog("gin.0.council")
+    game:start_dialog("gin.0.council", function()
+      if game:get_value("i1068") >= 1 then game:start_dialog("gin.0.council_gerudo") end
+    end)
   end
 end
 
 function elder_zelda:on_interaction()
-  game:set_dialog_style("default")
   if game:get_value("b1699") then
     game:start_dialog("zelda.2.council", game:get_player_name())
   else
@@ -155,7 +155,6 @@ function elder_zelda:on_interaction()
 end
 
 function elder_larin:on_interaction()
-  game:set_dialog_style("default")
   if game:get_value("b1699") then
     game:start_dialog("larin.2.council")
   elseif game:get_value("i1032") > 2 then
@@ -166,7 +165,6 @@ function elder_larin:on_interaction()
 end
 
 function elder_gonpho:on_interaction()
-  game:set_dialog_style("default")
   if game:get_value("b1699") then
     game:start_dialog("gonpho.1.council")
   elseif game:get_value("i1032") > 2 then
@@ -175,14 +173,11 @@ function elder_gonpho:on_interaction()
     game:start_dialog("gonpho.0.council")
   end
 end
-
 function elder_gonpho_office:on_interaction()
-  game:set_dialog_style("default")
   game:start_dialog("gonpho.0.office")
 end
 
 function elder_koshi:on_interaction()
-  game:set_dialog_style("default")
   if game:get_value("b1699") then
     game:start_dialog("koshi.1.council")
   elseif game:get_value("i1032") > 2 then
@@ -191,9 +186,7 @@ function elder_koshi:on_interaction()
     game:start_dialog("koshi.0.council")
   end
 end
-
 function elder_koshi_office:on_interaction()
-  game:set_dialog_style("default")
   game:start_dialog("koshi.0.office")
 end
 

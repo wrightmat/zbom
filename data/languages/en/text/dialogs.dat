@@ -4678,6 +4678,13 @@ dialog{
   text = [[
 Hello young man! My name is Tokage Gin
 and I'm the Elder of the Tokay tribe.$0
+]]
+}
+
+dialog{
+  id = "gin.0.council_gerudo",
+  skip = "current",
+  text = [[
 Huh? You say you already know of us?
 Gerudo huh?$0 You don't say!$0 I guess I
 should get home more often!$0 Well, thank
@@ -9912,6 +9919,12 @@ dialog{
 Why hello $v!
 It's good to see you again, but what
 brings you to the castle, I wonder?$0
+]]
+}
+
+dialog{
+  id = "ulo.2.council_book",
+  text = [[
 What's that?$0  $c Book of Mudora$w?$0
 I've heard legends which speak of the
 book, but I know none of the details.
