@@ -192,7 +192,8 @@ function entity:throw()
     entity:on_position_changed() -- Notify the entity (to move secondary sprites, etc).
     if temp_moved_on_platform then entity.moved_on_platform = true end -- Allow to be moved on platforms again, if necessary.
     if temp_can_push_buttons then self.can_push_buttons = true end -- Allow to push buttons again, if necessary.
-    entity:start_checking_ground() -- Restart the timer to check ground once per second.
+    --entity:start_checking_ground() -- Restart the timer to check ground once per second.
+                                     -- (creates multiple timers so recommended to remove by Diarandor for v0.8)
   end
   
   -- Start movement of the shadow. Throw the entity away in the direction of the hero and start checking the hero.
