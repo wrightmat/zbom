@@ -13,8 +13,17 @@ tile{
   x = 0,
   y = -8,
   width = 1120,
-  height = 1072,
+  height = 1096,
   pattern = "1692",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 1080,
+  width = 16,
+  height = 16,
+  pattern = "2169",
 }
 
 tile{
@@ -258,24 +267,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "1669",
-}
-
-tile{
-  layer = 0,
-  x = 32,
-  y = 1072,
-  width = 24,
-  height = 24,
-  pattern = "1692",
-}
-
-tile{
-  layer = 0,
-  x = 48,
-  y = 1080,
-  width = 16,
-  height = 16,
-  pattern = "2169",
 }
 
 tile{
