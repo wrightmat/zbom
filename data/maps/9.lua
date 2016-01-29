@@ -86,9 +86,11 @@ function npc_rudy:on_interaction()
       else
         game:start_dialog("rudy.2.cave", function()
           if not game:has_item("bottle_1") then
-            game:start_dialog("rudy.2.cave_bottle", function()
-              hero:start_treasure("bottle_1")
-            end)
+            if game:has_item("bottle_2") or game:has_item("bottle_3") or game:has_item("bottle_4") then
+              game:start_dialog("rudy.2.cave_bottle_2", function() hero:start_treasure("bottle_1") end)
+            else
+              game:start_dialog("rudy.2.cave_bottle", function() hero:start_treasure("bottle_1") end)
+            end
           end
         end)
       end
