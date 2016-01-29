@@ -165,14 +165,12 @@ function map:on_started(destination)
         return true
       end
     end
+    treasure.on_bought = function()
+      if treasure:get_game():get_value("i2014") == 20 then treasure:get_game():set_value("i2014", 30) end
+      if treasure:get_game():get_value("i2015") == 20 then treasure:get_game():set_value("i2015", 30) end
+    end
   end
 end
-
-function shop_potion:on_bought()
-  if game:get_value("i2014") == 20 then game:set_value("i2014", 30) end
-  if game:get_value("i2015") == 20 then game:set_value("i2015", 30) end
-end
-
 
 function npc_ulo:on_interaction()
   game:set_dialog_style("default")
