@@ -3,7 +3,7 @@
 local title_screen = {}
 
 function title_screen:on_started()
-  -- black screen during 0.3 seconds
+  -- Black screen during 0.3 seconds.
   self.phase = "black"
 
   self.surface = sol.surface.create(320, 240)
@@ -11,12 +11,12 @@ function title_screen:on_started()
     self:phase_zs_presents()
   end)
 
-  -- use these 0.3 seconds to preload all sound effects
+  -- Use these 0.3 seconds to preload all sound effects.
   sol.audio.preload_sounds()
 end
 
 function title_screen:phase_zs_presents()
-  -- "Zelda Solarus presents" displayed for two seconds
+  -- "Zelda Solarus presents" displayed for two seconds.
   self.phase = "zs_presents"
   local zs_presents_img = sol.surface.create("title_screen_initialization.png", true)
 
@@ -34,13 +34,13 @@ function title_screen:phase_zs_presents()
 end
 
 function title_screen:phase_title()
-  -- actual title screen
+  -- Actual title screen.
   self.phase = "title"
 
-  -- start music
+  -- Start music.
   sol.audio.play_music("title_screen")
 
-  -- show a background that depends on the hour of the day
+  -- Show a background that depends on the hour of the day.
   local hours = tonumber(os.date("%H"))
   local time_of_day
   if hours >= 8 and hours < 18 then
@@ -79,7 +79,7 @@ function title_screen:phase_title()
   end
   sol.timer.start(self, 6500, switch_press_space)
 
-  -- make the clouds move
+  -- Make the clouds move.
   self.clouds_xy = {x = 320, y = 240}
   function move_clouds()
 
@@ -95,7 +95,7 @@ function title_screen:phase_title()
   end
   sol.timer.start(self, 50, move_clouds)
 
-  -- show an opening transition
+  -- Show an opening transition.
   self.surface:fade_in(30)
 
   self.allow_skip = false
@@ -105,23 +105,21 @@ function title_screen:phase_title()
 end
 
 function title_screen:on_draw(dst_surface)
-
   if self.phase == "title" then
     self:draw_phase_title(dst_surface)
   end
 
-  -- final blit (dst_surface may be larger)
+  -- Final blit (dst_surface may be larger).
   local width, height = dst_surface:get_size()
   self.surface:draw(dst_surface, width / 2 - 160, height / 2 - 120)
 end
 
 function title_screen:draw_phase_title()
-
-  -- background
+  -- Background.
   self.surface:fill_color({0, 0, 0})
   self.background_img:draw(self.surface)
 
-  -- clouds
+  -- Clouds.
   local x, y = self.clouds_xy.x, self.clouds_xy.y
   self.clouds_img:draw(self.surface, x, y)
   x = self.clouds_xy.x - 535
@@ -133,7 +131,7 @@ function title_screen:draw_phase_title()
   y = self.clouds_xy.y - 299
   self.clouds_img:draw(self.surface, x, y)
 
-  -- website name and logo
+  -- Website name and logo.
   self.website_img:draw(self.surface, 160, 220)
   self.logo_img:draw(self.surface)
 
@@ -144,24 +142,20 @@ function title_screen:draw_phase_title()
     self.star_img:draw(self.surface)
   end
   if self.show_press_space then
-    self.press_space_img:draw(self.surface, 200, 170)
+    self.press_space_img:draw(self.surface, 200, 195)
   end
 end
 
 function title_screen:on_key_pressed(key)
-
   local handled = false
 
   if key == "escape" then
-    -- stop the program
+    -- Stop the program.
     sol.main.exit()
     handled = true
-
   elseif key == "space" or key == "return" then
     handled = self:try_finish_title()
-
---  Debug.
-  elseif sol.main.is_debug_enabled() then
+  elseif sol.main.is_debug_enabled() then  --  Debug.
     if key == "left shift" or key == "right shift" then
       self:finish_title()
       handled = true
@@ -170,14 +164,12 @@ function title_screen:on_key_pressed(key)
 end
 
 function title_screen:on_joypad_button_pressed(button)
-
   return self:try_finish_title()
 end
 
--- Ends the title screen (if possible)
--- and starts the savegame selection screen
+-- Ends the title screen (if possible) and
+-- starts the savegame selection screen.
 function title_screen:try_finish_title()
-
   local handled = false
 
   if self.phase == "title"
@@ -197,10 +189,8 @@ function title_screen:try_finish_title()
 end
 
 function title_screen:finish_title()
-
   sol.audio.stop_music()
   sol.menu.stop(self)
 end
 
 return title_screen
-
