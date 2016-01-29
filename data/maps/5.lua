@@ -12,6 +12,8 @@ if game:get_value("i1916") == nil then game:set_value("i1916", 0) end --Galen re
 
 function map:on_started(destination)
   if not game:get_value("b2028") then quest_trading_vase:remove() end
+  if game:get_value("i1032") < 4 then npc_gor_larin:remove() end -- Elder only comes back to village after Zelda is kidnapped.
+
   if game:get_time_of_day() == "night" then
     -- Activate any night-specific dynamic tiles
     for entity in map:get_entities("night_") do
