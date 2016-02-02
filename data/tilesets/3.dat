@@ -1291,7 +1291,7 @@ tile_pattern{
 
 tile_pattern{
   id = "1392",
-  ground = "traversable",
+  ground = "ladder",
   default_layer = 0,
   x = 568,
   y = 200,
@@ -4747,6 +4747,16 @@ tile_pattern{
   y = 512,
   width = 32,
   height = 32,
+}
+
+tile_pattern{
+  id = "231",
+  ground = "ladder",
+  default_layer = 0,
+  x = 552,
+  y = 392,
+  width = 32,
+  height = 16,
 }
 
 tile_pattern{
@@ -9806,7 +9816,7 @@ tile_pattern{
   x = 552,
   y = 344,
   width = 32,
-  height = 64,
+  height = 48,
 }
 
 tile_pattern{

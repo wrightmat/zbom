@@ -2452,7 +2452,7 @@ tile{
   x = 320,
   y = 312,
   width = 32,
-  height = 64,
+  height = 48,
   pattern = "99",
 }
 
@@ -4380,6 +4380,15 @@ tile{
   width = 16,
   height = 64,
   pattern = "1724",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 360,
+  width = 32,
+  height = 16,
+  pattern = "231",
 }
 
 teletransporter{
