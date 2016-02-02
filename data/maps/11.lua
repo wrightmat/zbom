@@ -206,7 +206,7 @@ function sensor_start_race:on_activated()
       game:set_value("i1028", 2)
       game.race_timer = sol.timer.start(game, 120000, function()
 	sol.audio.play_sound("wrong")
-	game:set_value("i1028", 4);
+	game:set_value("i1028", 4)
 	local map = game:get_map()
 	map:get_entity("torch_1"):get_sprite():set_animation("unlit")
 	map:get_entity("torch_2"):get_sprite():set_animation("unlit")
@@ -285,10 +285,9 @@ function npc_tristan:on_interaction()
     end
   else
     game:start_dialog("tristan.0.festival_question", function(answer)
-      if game:has_item("lamp") then
-        if answer == 1 then
-          game:set_value("i1028", 1)
-          game:start_dialog("tristan.0.festival_rules")
+      if answer == 1 then
+        if game:has_item("lamp") then
+          game:start_dialog("tristan.0.festival_rules", function() game:set_value("i1028", 1) end)
         else
           game:start_dialog("tristan.0.festival_lamp")
         end

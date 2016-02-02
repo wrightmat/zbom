@@ -78,6 +78,7 @@ function map:on_started(destination)
     torch_4:remove(); wall_4:remove()
     torch_5:remove(); wall_5:remove()
   end
+  if game:get_value("i1028") <= 1 then npc_tristan:remove() end
 end
 
 function map:on_draw(dst_surface)
@@ -120,7 +121,7 @@ function npc_tristan:on_interaction()
     else
       game:start_dialog("tristan.0.festival_won", game:get_player_name())
     end
-  elseif game:get_value("i1028") > 0 and game:get_value("i1028") < 4 then
+  elseif game:get_value("i1028") > 1 and game:get_value("i1028") <= 3 then
     game:start_dialog("tristan.0.festival_underway")
   elseif game:get_value("i1028") == 4 then
     game:start_dialog("tristan.0.festival_lost")
