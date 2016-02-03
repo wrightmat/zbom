@@ -10,6 +10,15 @@ function map:on_started(destination)
   map:get_entity("torch_2"):get_sprite():set_animation("lit")
   map:get_entity("torch_3"):get_sprite():set_animation("lit")
   map:get_entity("torch_4"):get_sprite():set_animation("lit")
+  flying_heart:get_sprite():set_animation("heart")
+  flying_heart_2:get_sprite():set_animation("heart")
+end
+
+function flying_heart:on_obtained()
+  self:get_game():add_life(4); self:get_game():add_stamina(8)
+end
+function flying_heart_2:on_obtained()
+  self:get_game():add_life(4); self:get_game():add_stamina(8)
 end
 
 function switch_1:on_activated()
