@@ -6271,6 +6271,16 @@ destructible{
   destruction_sound = "stone",
 }
 
+custom_entity{
+  name = "flying_heart",
+  layer = 0,
+  x = 680,
+  y = 821,
+  direction = 0,
+  sprite = "entities/items",
+  model = "generic_flying_pickable",
+}
+
 tile{
   layer = 2,
   x = 664,

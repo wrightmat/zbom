@@ -8,6 +8,11 @@ local game = map:get_game()
 function map:on_started(destination)
   chest_rupees:set_enabled(false)
   switch_rust_3:set_properties({ stay_down = true })
+  flying_heart:get_sprite():set_animation("heart")
+end
+
+function flying_heart:on_obtained()
+  self:get_game():add_life(4); self:get_game():add_stamina(8)
 end
 
 function switch_rust_1:on_activated()
