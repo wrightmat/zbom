@@ -322,7 +322,41 @@ end
 
 -- Check for bad ground (water, hole and lava) and for empty ground (used on each bounce when thrown).
 function entity:check_on_ground()
-  --self:get_map():ground_collision(entity)
+local x, y, layer = self:get_position()
+  local ground = map:get_ground(x, y, layer)
+  if ground == "empty" and layer > 0 then 
+    -- Fall to lower layer and check ground again.
+     self:set_position(x, y, layer-1)
+     self:check_on_ground() -- Check again new ground.
+  elseif ground == "hole" then  
+    -- Create falling animation centered correctly on the 8x8 grid.
+    x = math.floor(x/8)*8 + 4; if map:get_ground(x, y, layer) ~= "hole" then x = x + 4 end
+    y = math.floor(y/8)*8 + 4; if map:get_ground(x, y, layer) ~= "hole" then y = y + 4 end
+    local fall_on_hole = map:create_custom_entity({x = x, y = y, layer = layer, direction = 0})
+    local sprite = fall_on_hole:create_sprite("entities/ground_effects")
+    sprite:set_animation("hole_fall")
+    self.shadow:remove(); self:remove()
+    function sprite:on_animation_finished() fall_on_hole:remove() end
+    sol.audio.play_sound("falling_on_hole")
+  elseif ground == "deep_water" then
+    -- Sink in water.
+    local water_splash = map:create_custom_entity({x = x, y = y, layer = layer, direction = 0})    
+    local sprite = water_splash:create_sprite("entities/ground_effects")
+    sprite:set_animation("water_splash")
+    self.shadow:remove(); self:remove()
+    function sprite:on_animation_finished() water_splash:remove() end
+    sol.audio.play_sound("splash")
+  elseif ground == "lava" then
+    -- Sink in lava.
+    local lava_splash = map:create_custom_entity({x = x, y = y, layer = layer, direction = 0})    
+    local sprite = lava_splash:create_sprite("entities/ground_effects")
+    sprite:set_animation("lava_splash")
+    self.shadow:remove(); self:remove()
+    function sprite:on_animation_finished() lava_splash:remove() end
+    sol.audio.play_sound("splash")
+  elseif self.state == "falling" then -- Used for bounces, when the entity is thrown.
+    sol.audio.play_sound(self.sound) -- Bouncing sound.
+  end
 end
 
 -- Start a timer to check ground once per second (useful if the ground moves or changes type!!!).
