@@ -8677,8 +8677,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 752,
-  y = 1024,
+  x = 744,
+  y = 1016,
   width = 16,
   height = 16,
   pattern = "524",
@@ -11061,9 +11061,9 @@ teletransporter{
 teletransporter{
   name = "to_F13",
   layer = 0,
-  x = 728,
+  x = 736,
   y = -16,
-  width = 64,
+  width = 48,
   height = 16,
   transition = "scrolling",
   destination_map = "17",
@@ -12601,31 +12601,11 @@ npc{
   sprite = "npc/ordon_tristan",
 }
 
-npc{
-  name = "npc_jarred",
-  layer = 0,
-  x = 712,
-  y = 1109,
-  direction = 1,
-  subtype = 1,
-  sprite = "npc/ordon_jarred",
-}
-
-npc{
-  name = "npc_francis",
-  layer = 0,
-  x = 680,
-  y = 1109,
-  direction = 1,
-  subtype = 1,
-  sprite = "npc/ordon_francis",
-}
-
 sensor{
   name = "sensor_festival_dialog",
   layer = 0,
   x = 672,
-  y = 1029,
+  y = 1021,
   width = 80,
   height = 16,
 }
@@ -13056,8 +13036,8 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 760,
-  y = 1037,
+  x = 752,
+  y = 1029,
   treasure_name = "random",
   sprite = "entities/bush",
   destruction_sound = "bush",
@@ -13289,6 +13269,26 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/scarecrow",
+}
+
+custom_entity{
+  name = "npc_francis",
+  layer = 0,
+  x = 688,
+  y = 1109,
+  direction = 1,
+  sprite = "npc/ordon_francis",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_jarred",
+  layer = 0,
+  x = 704,
+  y = 1109,
+  direction = 1,
+  sprite = "npc/ordon_jarred",
+  model = "npc_generic",
 }
 
 tile{

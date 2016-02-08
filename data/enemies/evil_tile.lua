@@ -9,9 +9,7 @@ function enemy:on_created()
   self:set_life(1); self:set_damage(4)
   local sprite = self:create_sprite("enemies/evil_tile")
   function sprite:on_animation_finished(animation)
-    if state == "destroying" then
-      enemy:remove()
-    end
+    if state == "destroying" then enemy:remove() end
   end
   self:set_size(16, 16); self:set_origin(8, 13)
   self:set_invincible()
@@ -47,9 +45,7 @@ function enemy:on_obstacle_reached()
 end
 
 function enemy:on_custom_attack_received(attack, sprite)
-  if state == "attacking" then
-    self:disappear()
-  end
+  if state == "attacking" then self:disappear() end
 end
 
 function enemy:disappear()
@@ -60,9 +56,7 @@ function enemy:disappear()
     self:stop_movement()
     sprite:set_animation("destroy")
     sol.audio.play_sound("stone")
-    if timer ~= nil then
-      timer:stop()
-    end
+    if timer ~= nil then timer:stop() end
   end
 end
 
@@ -70,11 +64,8 @@ function enemy:on_pre_draw()
   -- Show the shadow.
   if state ~= "destroying" then
     local x, y = self:get_position()
-    if state == "attacking" then
-      y = y + 16
-    else
-      y = initial_y or y
-    end
+    if state == "attacking" then y = y + 16
+    else y = initial_y or y end
     self:get_map():draw_sprite(shadow_sprite, x, y)
   end
 end

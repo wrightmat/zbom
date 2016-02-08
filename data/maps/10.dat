@@ -9487,26 +9487,6 @@ teletransporter{
   destination = "main_entrance_shop",
 }
 
-npc{
-  name = "npc_jarred",
-  layer = 0,
-  x = 728,
-  y = 973,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/ordon_jarred",
-}
-
-npc{
-  name = "npc_quint",
-  layer = 0,
-  x = 760,
-  y = 957,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/ordon_quint",
-}
-
 dynamic_tile{
   name = "booth_1",
   layer = 0,
@@ -9538,16 +9518,6 @@ dynamic_tile{
   width = 32,
   height = 24,
   enabled_at_start = false,
-}
-
-npc{
-  name = "npc_francis",
-  layer = 0,
-  x = 776,
-  y = 925,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/ordon_francis",
 }
 
 dynamic_tile{
@@ -10248,6 +10218,36 @@ wall{
   width = 8,
   height = 8,
   stops_npcs = true,
+}
+
+custom_entity{
+  name = "npc_jarred",
+  layer = 0,
+  x = 728,
+  y = 973,
+  direction = 3,
+  sprite = "npc/ordon_jarred",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_quint",
+  layer = 0,
+  x = 760,
+  y = 957,
+  direction = 3,
+  sprite = "npc/ordon_quint",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_francis",
+  layer = 0,
+  x = 776,
+  y = 925,
+  direction = 3,
+  sprite = "npc/ordon_francis",
+  model = "npc_generic",
 }
 
 tile{

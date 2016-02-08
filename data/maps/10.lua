@@ -37,7 +37,7 @@ end
 
 function map:on_started(destination)
   -- if Link walks out of his house and the festival's going on
-  -- then start the initial dialog (if it hasn't been done already)
+  -- then start the initial dialog (if it hasn't been done already).
   if game:get_value("i1027") == 0 and destination == from_house_inside then
     follow_hero(npc_jarred)
     follow_hero(npc_quint)
@@ -47,33 +47,33 @@ function map:on_started(destination)
       game:set_value("i1027", 1)
       local m = sol.movement.create("jump")
       sol.audio.play_sound("jump")
-      m:set_direction8(6) --face down to indicate speaking
+      m:set_direction8(6) -- Face down to indicate speaking.
       m:set_distance(8)
       m:set_speed(32)
       m:start(npc_jarred)
       sol.timer.start(400, function()
         game:start_dialog("jarred.0.festival", game:get_player_name(), function()
           sol.audio.play_sound("jump")
-          m:set_direction8(6) --face down to indicate speaking
+          m:set_direction8(6) -- Face down to indicate speaking.
           m:set_distance(8)
           m:start(npc_quint)
 	  sol.timer.start(400, function()
             game:set_dialog_position("top")
             game:start_dialog("quint.0.festival", function()
               sol.audio.play_sound("jump")
-              m:set_direction8(6) --face down to indicate speaking
+              m:set_direction8(6) -- Face down to indicate speaking.
               m:set_distance(8)
               m:start(npc_francis)
 	      sol.timer.start(400, function()
                 game:set_dialog_position("bottom")
                 game:start_dialog("francis.0.festival", function()
-                  m:set_direction8(4) --face hero
+                  m:set_direction8(4) -- Face hero.
                   m:set_distance(8)
                   m:start(npc_quint)
 	          sol.timer.start(400, function()
                      game:set_dialog_position("top")
                      game:start_dialog("quint.0.festival_2", game:get_player_name(), function()
-                       m:set_direction8(4) --face hero
+                       m:set_direction8(4) -- Face hero.
                        m:set_distance(8)
                        m:start(npc_francis)
 	              sol.timer.start(400, function()
@@ -98,7 +98,7 @@ function map:on_started(destination)
         end)
       end)
    end)
-  elseif game:get_value("i1027") < 2 then  -- Whether or not kids should be walking around
+  elseif game:get_value("i1027") < 2 then  -- Whether or not kids should be walking around.
     follow_hero(npc_jarred)
     follow_hero(npc_quint)
     follow_hero(npc_francis)
@@ -108,7 +108,7 @@ function map:on_started(destination)
     random_walk(npc_francis)
   end
 
-  -- If the festival isn't over, make sure banner, booths and NPCs are outside
+  -- If the festival isn't over, make sure banner, booths and NPCs are outside.
   if game:get_value("i1027") < 5 then
     banner_1:set_enabled(true)
     banner_2:set_enabled(true)
@@ -124,7 +124,7 @@ function map:on_started(destination)
     blacksmith_furnace:set_enabled(true)
     random_walk(npc_ulo)
     --random_walk(npc_bilo) -- TODO: add back once he has all of his directions/animations
-  else  -- If festival is over, then don't have NPCs walking around outside
+  else  -- If festival is over, then don't have NPCs walking around outside.
     npc_rudy:remove()
     npc_julita:remove()
     npc_ulo:remove()
