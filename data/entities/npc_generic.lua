@@ -32,6 +32,18 @@ function entity:on_created()
   -- Don't allow NPC to traverse other NPCs when moving.
   self:set_traversable_by("npc", false)
   self:set_traversable_by("custom_entity", false)
+
+  sol.timer.start(self, 1000, function()
+    -- If too close to the hero, become traversable so as not to trap hero in a corner.
+    -- TODO in the future? Check to see if the movement type is "target" because it's only needed when the NPC is following and this does odd things on "random_path" movements.
+    -- if self:get_movement():get_type() == "target" then
+    local _, _, layer = self:get_position()
+    local _, _, hero_layer = map:get_hero():get_position()
+    local near_hero = layer == hero_layer and self:get_distance(map:get_hero()) < 17
+    if near_hero then self:set_traversable_by("hero", true) end
+
+    return true
+  end)
 end
 
 function entity:on_movement_changed(movement)
@@ -58,11 +70,4 @@ function entity:on_update()
     action_command = false
   end
   hero_facing = false
-  -- If too close to the hero, become traversable so as not to trap hero in a corner.
-  -- TODO in the future? Check to see if the movement type is "target" because it's only needed when the NPC is following and this does odd things on "random_path" movements.
-  -- if self:get_movement():get_type() == "target" then
-  local _, _, layer = self:get_position()
-  local _, _, hero_layer = map:get_hero():get_position()
-  local near_hero = layer == hero_layer and self:get_distance(map:get_hero()) < 17
-  if near_hero then self:set_traversable_by("hero", true) end
 end
