@@ -3208,16 +3208,6 @@ shop_treasure{
 }
 
 npc{
-  name = "npc_galen_2",
-  layer = 0,
-  x = 160,
-  y = 461,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/goron_galen",
-}
-
-npc{
   name = "npc_goron_trading",
   layer = 0,
   x = 960,
@@ -3282,6 +3272,16 @@ custom_entity{
   direction = 0,
   sprite = "entities/quest_books",
   model = "quest_books",
+}
+
+custom_entity{
+  name = "npc_galen_2",
+  layer = 0,
+  x = 160,
+  y = 461,
+  direction = 3,
+  sprite = "npc/goron_galen",
+  model = "npc_generic",
 }
 
 tile{

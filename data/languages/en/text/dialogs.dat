@@ -5723,7 +5723,7 @@ dialog{
   skip = "current",
   text = [[
 Greetings, young hero.
-My name is $g Impa$w, the last resident of
+My name is  $gImpa$w, the last resident of
 this village and the last of my kind.
 I know much about this land.$0
 What's that? You're unsure of where to
@@ -5737,7 +5737,7 @@ dialog{
   id = "impa.0.house_2",
   skip = "current",
   text = [[
-Far from here is an  $b Ancient Library$w.
+Far from here is an   $b Ancient Library$w.
 You will be unable to get there as you're
 equipped. If you can find a   $r special
 instrument$w , you may be able to access the
@@ -5822,7 +5822,7 @@ dialog{
   id = "impa.1.house_2",
   skip = "current",
   text = [[
-Far from here is an $b Ancient Library$w .
+Far from here is an  $b Ancient Library$w .
 I see you already have the magical
 $rOcarina$w which will help you get there
 and back. Outside of my house is a
@@ -5833,7 +5833,7 @@ later. Head south-east of here to the
 $bRuins$w and lift the small rock in front
 of the entrance. When you've reached
 the end of the sewers, you'll be in
-the $b northern region of Hyrule$w .
+the $b northern region of Hyrule$w  .
 ]]
 }
 
@@ -5843,7 +5843,7 @@ dialog{
   text = [[
 You say you can't lift the rock?
 Well you must not have visited the
-great $b pyramid in the western desert$w  !
+great $bpyramid in the western desert$w   !
 Go there and find all of the magical
 artifacts that lie inside.
 ]]
@@ -8873,7 +8873,7 @@ dialog{
 NorthWest: Lake Hylia
 (by way of Hyrule Field)
 East: Sewer access
-South: Lumberjack/Ordon Village
+South: Lumberjack-Ordon Village
 ]]
 }
 
@@ -10072,7 +10072,7 @@ dialog{
   skip = "current",
   text = [[
 You've discovered a new warp point!
-Now you can easily return here later!
+You can easily return here later!
 ]]
 }
 
