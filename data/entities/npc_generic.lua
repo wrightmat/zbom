@@ -2,8 +2,8 @@ local entity = ...
 local game = entity:get_game()
 local map = entity:get_game():get_map()
 
--- Jarred is a minor NPC who lives in Ordon.
--- He is one of the three children who is involved in the intro, and gives Link hints later.
+-- Generic NPC script which prevents the hero from being stuck
+-- behind non-traversable moving characters (primarily for intro).
 
 local function random_walk()
   local m = sol.movement.create("random_path")
