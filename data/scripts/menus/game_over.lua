@@ -169,6 +169,7 @@ function game_over_menu:on_command_pressed(command)
     sol.audio.play_sound("danger")
     game.hud:set_enabled(false)
     game:add_life(7 * 4)  -- Restore 7 hearts.
+    if game:get_stamina() <= 100 then game:add_stamina(100) end  -- Restore some stamina if it's too low.
 
     if cursor_position == 0 then
       -- Save and continue.
