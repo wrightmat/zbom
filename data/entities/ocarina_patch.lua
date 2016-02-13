@@ -31,6 +31,7 @@ function entity:on_custom_interaction()
   if not game:get_value(entity:get_name()) then
     game:start_dialog("warp.new_point", function()
       game:set_value(entity:get_name(), true)
+      self:get_sprite():set_animation("activated")
     end)
   else
     -- If player has the Ocarina, then show warp selection menu.
