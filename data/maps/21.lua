@@ -188,7 +188,7 @@ function npc_monkey:on_interaction()
 end
 
 function sensor_water_bottle:on_activated()
-  if hero:get_direction == 3 then -- Only activate if facing the water.
+  if hero:get_direction() == 3 then -- Only activate if facing the water.
     if game:has_bottle() then
       local first_empty_bottle = game:get_first_empty_bottle()
       if first_empty_bottle ~= nil then

@@ -134,4 +134,3 @@ function item_icon:on_draw(dst_surface)
 end
 
 return item_icon
-

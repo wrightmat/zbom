@@ -5,6 +5,7 @@ local game = map:get_game()
 -- Dungeon 2: Sacred Grove Temple --
 ------------------------------------
 
+if game:get_value("i1807") == nil then game:set_value("i1807", 0) end
 local torches_puzzle_nb_enabled = 0
 local torches_puzzle_correct = false
 local arrow_puzzle_nb_correct = 0

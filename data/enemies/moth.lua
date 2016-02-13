@@ -39,14 +39,11 @@ function enemy:check_hero()
   local _, _, hero_layer = hero:get_position()
   local near_hero = layer == hero_layer and self:get_distance(hero) < 100
 
-  if self:get_map():get_entity("torch_moth") ~= nil then
-    local torch_moth = self:get_map():get_entity("torch_moth")
-    if torch_moth:get_sprite():get_animation() == "lit" then
-      self:go_torch()
-    end
-  end
-
-  if near_hero and not going_hero then
+  if self:get_map():get_entity("torch_moth") and
+      self:get_map():get_entity("torch_moth"):get_sprite():get_animation() == "lit" and
+      math.random(3) == 1 then  -- If a lit torch is nearby, moths are attracted to it randomly.
+    self:go_torch()
+  elseif near_hero and not going_hero then
     self:go_hero()
   elseif not near_hero and going_hero then
     self:go_random()
