@@ -82,7 +82,8 @@ function game_over_menu:on_started()
 
           movement:start(fairy_sprite, function()
             state = "waiting_end"
-            game:add_life(7 * 4)  -- Restore 7 hearts.
+            game:add_life(7 * 4)  -- Restore 7 hearts and some stamina.
+    	   game:add_stamina(20)
             sol.timer.start(self, 1000, function()
               state = "resume_game"
               sol.audio.play_music(music)
