@@ -241,6 +241,7 @@ function sensor_zirna_cutscene:on_activated()
   if game:get_value("i1032") == 2 then
     local hx, hy, hl = map:get_hero():get_position()
     npc_zirna:set_enabled(true)
+    npc_zirna:set_invincible()
     sol.audio.play_music("battle")
     local m = sol.movement.create("target")
     m:set_ignore_obstacles(true)
