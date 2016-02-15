@@ -11,6 +11,15 @@ properties{
 
 tile{
   layer = 0,
+  x = 712,
+  y = 320,
+  width = 8,
+  height = 288,
+  pattern = "64",
+}
+
+tile{
+  layer = 0,
   x = 920,
   y = 688,
   width = 64,
@@ -1627,15 +1636,6 @@ tile{
   width = 56,
   height = 8,
   pattern = "105",
-}
-
-tile{
-  layer = 0,
-  x = 712,
-  y = 320,
-  width = 8,
-  height = 288,
-  pattern = "64",
 }
 
 tile{
