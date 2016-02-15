@@ -1,5 +1,6 @@
 local map = ...
 local game = map:get_game()
+local warned = false
 
 --------------------------------------
 -- Dungeon 4: Mountaintop Mausoleum --
@@ -43,7 +44,7 @@ function map:on_started(destination)
   if not game:get_value("b1110") then
     boss_vire:set_enabled(false)
     boss_vire_sorceror:set_enabled(false)
-    -- Dodongos appear after the boss is defeated
+    -- Dodongos appear after the boss is defeated.
     map:set_entities_enabled("dodongo", false)
   else
     if npc_dampeh ~= nil then npc_dampeh:remove() end
@@ -53,7 +54,7 @@ function map:on_started(destination)
   if not game:get_value("b1118") then boss_heart:set_enabled(false) end
   if not game:get_value("b1119") then chest_rupees:set_enabled(false) end
 
-  -- Lantern slowly drains magic here so you're forced to find ways to refill magic
+  -- Lantern slowly drains magic here so you're forced to find ways to refill magic.
   magic_deplete = sol.timer.start(map, 5000, function()
     if not game:get_value("b1117") then
       game:remove_magic(1)
@@ -139,6 +140,10 @@ end
 function map:on_update()
   if game:get_magic() <= 0 and not game:get_value("b1117") then
     if lantern_overlay then lantern_overlay = nil end
+    if not warned then
+      game:start_dialog("_cannot_see_need_magic")
+      warned = true
+    end
   else
     if game:has_item("lamp") and lantern_overlay == nil then lantern_overlay = sol.surface.create("entities/dark.png") end
   end
@@ -204,7 +209,7 @@ function map:on_draw(dst_surface)
   local screen_width, screen_height = dst_surface:get_size()
   local camera_x, camera_y = map:get_camera_position()
 
-  -- Draw the lantern light that follows the hero
+  -- Draw the lantern light that follows the hero.
   if lantern_overlay then
     local hero = map:get_entity("hero")
     local hero_x, hero_y = hero:get_center_position()
@@ -239,7 +244,7 @@ function map:on_obtained_treasure(item, variant, savegame_variable)
 end
 
 function chest_book:on_empty()
-  --dynamically determine book variant to give, since dungeons can be done in any order
+  -- Dynamically determine book variant to give, since dungeons can be done in any order.
   local book_variant = game:get_item("book_mudora"):get_variant() + 1
   map:get_hero():start_treasure("book_mudora", book_variant)
 end
