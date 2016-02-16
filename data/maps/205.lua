@@ -50,6 +50,7 @@ function map:on_started(destination)
     if npc_dampeh ~= nil then npc_dampeh:remove() end
   end
   if not game:get_value("b1111") then chest_alchemy:set_enabled(false) end
+  if game:get_value("b1114") or game:get_value("b1115") then map:set_doors_open("door_shutter_key2") end
   if not game:get_value("b1117") then chest_book:set_enabled(false) end
   if not game:get_value("b1118") then boss_heart:set_enabled(false) end
   if not game:get_value("b1119") then chest_rupees:set_enabled(false) end

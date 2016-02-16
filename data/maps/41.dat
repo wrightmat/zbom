@@ -7307,6 +7307,15 @@ tile{
   pattern = "179",
 }
 
+sensor{
+  name = "sensor_singing",
+  layer = 0,
+  x = 584,
+  y = 413,
+  width = 112,
+  height = 96,
+}
+
 dynamic_tile{
   name = "night_entrance",
   layer = 0,

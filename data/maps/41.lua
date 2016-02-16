@@ -19,17 +19,24 @@ function map:on_started(destination)
     end
   end
 
-    -- Activate any night-specific dynamic tiles.
-    if game:get_time_of_day() == "night" then
-      for entity in game:get_map():get_entities("night_") do
-        entity:set_enabled(true)
-      end
+  -- Activate any night-specific dynamic tiles.
+  if game:get_time_of_day() == "night" then
+    for entity in game:get_map():get_entities("night_") do
+      entity:set_enabled(true)
     end
+  end
 
   npc_marryn:get_sprite():set_animation("singing")
 end
 
 function npc_marryn:on_interaction()
-  game:set_dialog_style("default")
-  game:start_dialog("marryn.0.ranch")
+  game:start_dialog("marryn.0.ranch", function()
+    sol.audio.play_music("ballad", function()
+      sol.audio.play_music("ranch")
+    end)
+  end)
+end
+
+function sensor_singing:on_left()
+  sol.audio.play_music("ranch")
 end
