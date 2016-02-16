@@ -8480,6 +8480,16 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "250",
+  ground = "traversable",
+  default_layer = 1,
+  x = 280,
+  y = 104,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
   id = "251",
   ground = "wall",
   default_layer = 0,
@@ -12514,9 +12524,9 @@ tile_pattern{
   ground = "wall",
   default_layer = 0,
   x = 280,
-  y = 104,
+  y = 120,
   width = 16,
-  height = 32,
+  height = 16,
 }
 
 tile_pattern{

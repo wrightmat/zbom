@@ -4817,9 +4817,9 @@ tile{
 tile{
   layer = 0,
   x = 488,
-  y = 320,
+  y = 336,
   width = 16,
-  height = 32,
+  height = 16,
   pattern = "804",
 }
 
@@ -10049,6 +10049,15 @@ tile{
   width = 32,
   height = 32,
   pattern = "210",
+}
+
+tile{
+  layer = 1,
+  x = 488,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "250",
 }
 
 custom_entity{

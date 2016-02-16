@@ -11,6 +11,24 @@ properties{
 
 tile{
   layer = 0,
+  x = 984,
+  y = 96,
+  width = 240,
+  height = 48,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
+  x = 1032,
+  y = 96,
+  width = 16,
+  height = 48,
+  pattern = "625",
+}
+
+tile{
+  layer = 0,
   x = 1160,
   y = 144,
   width = 64,
@@ -9632,15 +9650,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 984,
-  y = 96,
-  width = 240,
-  height = 48,
-  pattern = "22",
-}
-
-tile{
-  layer = 0,
   x = 1280,
   y = 24,
   width = 8,
@@ -9718,15 +9727,6 @@ tile{
   width = 368,
   height = 8,
   pattern = "19",
-}
-
-tile{
-  layer = 0,
-  x = 1032,
-  y = 96,
-  width = 16,
-  height = 48,
-  pattern = "625",
 }
 
 tile{
@@ -11727,6 +11727,19 @@ tile{
   pattern = "63",
 }
 
+wall{
+  layer = 0,
+  x = 1600,
+  y = 72,
+  width = 32,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
 sensor{
   name = "sensor_boss",
   layer = 0,
@@ -13686,8 +13699,11 @@ wall{
   y = 304,
   width = 400,
   height = 8,
+  stops_hero = true,
   stops_npcs = true,
   stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 wall{
@@ -13696,8 +13712,11 @@ wall{
   y = 8,
   width = 8,
   height = 304,
+  stops_hero = true,
   stops_npcs = true,
   stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 wall{
@@ -13706,8 +13725,11 @@ wall{
   y = 8,
   width = 400,
   height = 8,
+  stops_hero = true,
   stops_npcs = true,
   stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 wall{
@@ -13716,8 +13738,11 @@ wall{
   y = 8,
   width = 8,
   height = 304,
+  stops_hero = true,
   stops_npcs = true,
   stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 wall{
@@ -13828,6 +13853,24 @@ sensor{
   height = 32,
 }
 
+wall{
+  layer = 0,
+  x = 1032,
+  y = 96,
+  width = 16,
+  height = 8,
+  stops_hero = true,
+}
+
+wall{
+  layer = 0,
+  x = 1032,
+  y = 136,
+  width = 16,
+  height = 8,
+  stops_hero = true,
+}
+
 enemy{
   name = "keese_2",
   layer = 1,
@@ -13930,8 +13973,8 @@ enemy{
 enemy{
   name = "keese_rupees_1",
   layer = 1,
-  x = 1024,
-  y = 117,
+  x = 1064,
+  y = 109,
   direction = 3,
   breed = "keese_fire",
 }

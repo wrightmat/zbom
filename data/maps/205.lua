@@ -7,17 +7,27 @@ local warned = false
 --------------------------------------
 
 if game:get_value("i1029") == nil then game:set_value("i1029", 0) end
+local dark_overlay = nil
 local lantern_overlay = nil
 
 if game:has_item("lamp") then
-  lantern_overlay = sol.surface.create("entities/dark.png")
+  if lantern_overlay == nil and game:get_magic() > 0 then
+    lantern_overlay = sol.surface.create("entities/dark.png")
+  else
+    dark_overlay = sol.surface.create(640,480)
+    dark_overlay:set_opacity(0.9 * 255)
+    dark_overlay:fill_color{0, 0, 0}
+  end
 else
   game:start_dialog("_cannot_see_need_lamp")
-  lantern_overlay = sol.surface.create(640,480)
-  lantern_overlay:set_opacity(0.98 * 255)
-  lantern_overlay:fill_color{0, 0, 0}
+  dark_overlay = sol.surface.create(640,480)
+  dark_overlay:set_opacity(0.9 * 255)
+  dark_overlay:fill_color{0, 0, 0}
 end
-if game:get_value("b1117") and lantern_overlay then lantern_overlay:clear() end
+if game:get_value("b1117") then
+  if lantern_overlay then lantern_overlay:clear() end
+  if dark_overlay then dark_overlay:clear() end
+end
 
 function map:on_started(destination)
   if game:get_value("i1029") <= 4 then
@@ -50,7 +60,7 @@ function map:on_started(destination)
     if npc_dampeh ~= nil then npc_dampeh:remove() end
   end
   if not game:get_value("b1111") then chest_alchemy:set_enabled(false) end
-  if game:get_value("b1114") or game:get_value("b1115") then map:set_doors_open("door_shutter_key2") end
+  if game:get_value("b1113") or game:get_value("b1114") then map:set_doors_open("door_shutter_key2") end
   if not game:get_value("b1117") then chest_book:set_enabled(false) end
   if not game:get_value("b1118") then boss_heart:set_enabled(false) end
   if not game:get_value("b1119") then chest_rupees:set_enabled(false) end
@@ -140,8 +150,15 @@ end
 
 function map:on_update()
   if game:get_magic() <= 0 and not game:get_value("b1117") then
-    if lantern_overlay then lantern_overlay = nil end
-    if not warned then
+    if lantern_overlay then
+      lantern_overlay:clear()
+      lantern_overlay = nil
+      if dark_overlay == nil then
+        dark_overlay = sol.surface.create(640,480)
+        dark_overlay:set_opacity(0.9 * 255)
+        dark_overlay:fill_color{0, 0, 0}
+      end
+    elseif not warned then
       game:start_dialog("_cannot_see_need_magic")
       warned = true
     end
@@ -217,16 +234,11 @@ function map:on_draw(dst_surface)
     local x = 320 - hero_x + camera_x
     local y = 240 - hero_y + camera_y
     lantern_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
-  else
-    lantern_overlay = sol.surface.create(640,480)
-    lantern_overlay:set_opacity(0.9 * 255)
-    lantern_overlay:fill_color{0, 0, 0}
-    local hero = map:get_entity("hero")
-    local hero_x, hero_y = hero:get_center_position()
-    local camera_x, camera_y = map:get_camera_position()
-    local x = 320 - hero_x + camera_x
-    local y = 240 - hero_y + camera_y
-    lantern_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
+  elseif dark_overlay then
+    --dark_overlay = sol.surface.create(640,480)
+    --dark_overlay:set_opacity(0.9 * 255)
+    --dark_overlay:fill_color{0, 0, 0}
+    dark_overlay:draw(dst_surface, x, y)
   end
 end
 
@@ -234,6 +246,10 @@ function map:on_finished()
   if lantern_overlay then
     lantern_overlay:fade_out()
     lantern_overlay = nil
+  end
+  if dark_overlay then
+    dark_overlay:fade_out()
+    dark_overlay = nil
   end
 end
 

@@ -13,6 +13,7 @@ function game_won()
     game:get_hero():start_treasure("book_mudora", 2) -- Give back Book piece.
     game:set_value("b1061", true)
     game:set_value("i1068", 9) -- Game won.
+    sol.audio.play_music("faron_woods") -- Map music is "same as before", so we have to set it.
     sol.timer.start(map, 1000, function() map:get_hero():teleport("20", "from_game") end)
   end)
 end
@@ -32,9 +33,8 @@ end
 function map:on_update()
   if num_tries == 3 and not game_lost then
     game_lost = true
-    game:start_dialog("monkey.2.faron", function()
-      map:get_hero():teleport("20", "from_game")
-    end)
+    game:start_dialog("monkey.2.faron")
+    map:get_hero():teleport("20", "from_game")
   end
 end
 
