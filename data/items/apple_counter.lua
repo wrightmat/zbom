@@ -20,7 +20,6 @@ function item:on_using()
     game:add_life(4)
     game:set_value("i1026", game:get_value("i1026")+1)
     local amount = game:get_value("i1026")*20
-print(amount)
     game:add_stamina(amount)
   end
   self:set_finished()
