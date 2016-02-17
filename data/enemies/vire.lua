@@ -2,7 +2,7 @@ local enemy = ...
 local going_hero = false
 local timer
 
--- Vire: Flying enemy which also creates and controls Keese
+-- Vire: Flying enemy which also creates and controls Keese.
 
 function enemy:on_created()
   self:set_life(3); self:set_damage(2)
@@ -12,6 +12,7 @@ function enemy:on_created()
   self:set_pushed_back_when_hurt(true)
   self:set_push_hero_on_sword(false)
   self:set_obstacle_behavior("flying")
+  self:set_layer_independent_collisions(true)
 end
 
 function enemy:on_restarted()
