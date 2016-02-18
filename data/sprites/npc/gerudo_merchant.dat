@@ -9,6 +9,29 @@ animation{
   },
 }
 animation{
+  name = "guitar",
+  src_image = "npc/gerudo.png",
+  frame_delay = 160,
+  directions = {
+    { x = 256, y = 160, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 32 },
+    { x = 256, y = 160, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 32 },
+    { x = 256, y = 160, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 32 },
+    { x = 256, y = 160, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 32 },
+  },
+}
+animation{
+  name = "strumming",
+  src_image = "npc/gerudo.png",
+  frame_delay = 160,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 256, y = 160, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 32, num_frames = 2, num_columns = 1 },
+    { x = 256, y = 160, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 32, num_frames = 2, num_columns = 1 },
+    { x = 256, y = 160, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 32, num_frames = 2, num_columns = 1 },
+    { x = 256, y = 160, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 32, num_frames = 2, num_columns = 1 },
+  },
+}
+animation{
   name = "walking",
   src_image = "npc/gerudo.png",
   frame_delay = 200,
