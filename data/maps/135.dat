@@ -2841,7 +2841,7 @@ sensor{
   name = "sensor_band_1",
   layer = 0,
   x = 392,
-  y = 613,
+  y = 645,
   width = 320,
   height = 16,
 }
@@ -2852,7 +2852,7 @@ sensor{
   x = 696,
   y = 389,
   width = 16,
-  height = 224,
+  height = 256,
 }
 
 sensor{
@@ -2862,6 +2862,39 @@ sensor{
   y = 405,
   width = 16,
   height = 224,
+}
+
+destination{
+  name = "from_house_1",
+  layer = 0,
+  x = 224,
+  y = 949,
+  direction = 3,
+}
+
+destination{
+  name = "from_house_2",
+  layer = 0,
+  x = 576,
+  y = 813,
+  direction = 3,
+}
+
+destination{
+  name = "from_house_3",
+  layer = 0,
+  x = 744,
+  y = 173,
+  direction = 3,
+}
+
+sensor{
+  name = "sensor_band_start",
+  layer = 0,
+  x = 392,
+  y = 549,
+  width = 224,
+  height = 48,
 }
 
 tile{

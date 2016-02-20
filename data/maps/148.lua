@@ -14,6 +14,7 @@ end
 
 function map:on_started(destination)
   random_walk(npc_dog)
+  random_walk(npc_oracle_din)
 
   -- Activate any night-specific dynamic tiles.
   if game:get_time_of_day() == "night" then

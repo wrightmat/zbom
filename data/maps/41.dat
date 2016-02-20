@@ -8303,6 +8303,18 @@ custom_entity{
   model = "quest_plants",
 }
 
+teletransporter{
+  name = "to_135",
+  layer = 0,
+  x = 392,
+  y = 648,
+  width = 16,
+  height = 16,
+  destination_map = "135",
+  destination = "from_house_2",
+  sprite = "entities/teletransporter",
+}
+
 tile{
   layer = 1,
   x = 320,
