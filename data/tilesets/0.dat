@@ -980,6 +980,26 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "188",
+  ground = "wall",
+  default_layer = 0,
+  x = 392,
+  y = 112,
+  width = 16,
+  height = 24,
+}
+
+tile_pattern{
+  id = "189",
+  ground = "wall",
+  default_layer = 0,
+  x = 408,
+  y = 88,
+  width = 16,
+  height = 48,
+}
+
+tile_pattern{
   id = "19",
   ground = "traversable",
   default_layer = 0,

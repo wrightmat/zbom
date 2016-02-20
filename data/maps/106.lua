@@ -14,7 +14,7 @@ end
 
 function map:on_started(destination)
   -- Entrances of houses.
-  local entrance_names = { "house_1", "house_2", "house_3", "house_4" }
+  local entrance_names = { "house_1", "house_2", "house_3", "sanctuary" }
   for _, entrance_name in ipairs(entrance_names) do
     local sensor = map:get_entity(entrance_name .. "_door_sensor")
     local tile = map:get_entity(entrance_name .. "_door")
