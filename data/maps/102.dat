@@ -7029,6 +7029,16 @@ jumper{
   jump_length = 40,
 }
 
+npc{
+  name = "npc_oracal",
+  layer = 0,
+  x = 624,
+  y = 965,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/hylian_17",
+}
+
 tile{
   layer = 1,
   x = 440,
