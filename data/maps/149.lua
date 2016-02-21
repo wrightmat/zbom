@@ -5,6 +5,8 @@ local game = map:get_game()
 -- Outside World O4 (New Kasuto Town) - Spoils Shop --
 ------------------------------------------------------
 
+if game:get_value("i1230")==nil then game:set_value("i1230", 0) end
+
 function map:on_started()
   -- Entrances of houses.
   local entrance_names = { "house1" }
