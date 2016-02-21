@@ -318,3 +318,9 @@ end
 function npc_hylian_2:on_interaction()
   game:start_dialog("hylian_2.0.rauru")
 end
+
+function npc_gruce:on_interaction()
+  game:start_dialog("gruce.0.nabooru", function()
+    game:get_value("i1230", 1)
+  end)
+end

@@ -6164,6 +6164,16 @@ dynamic_tile{
   enabled_at_start = false,
 }
 
+npc{
+  name = "npc_oracle",
+  layer = 0,
+  x = 912,
+  y = 453,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/hylian_13",
+}
+
 tile{
   layer = 1,
   x = 712,

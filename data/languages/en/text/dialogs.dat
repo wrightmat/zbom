@@ -3991,6 +3991,25 @@ $gSLIMY SNAKES$w$0   can go back to the water!
 }
 
 dialog{
+  id = "din.0.kasuto",
+  skip = "current",
+  text = [[
+I've just moved here recently, but
+it's really starting to look nice!
+]]
+}
+
+dialog{
+  id = "din.0.kasuto_gerudo",
+  skip = "current",
+  text = [[
+You think I look like a race you've
+seen before? Is that so? I can't say
+I know what you're talking about.
+]]
+}
+
+dialog{
   id = "dungeon_1",
   skip = "current",
   text = [[
@@ -5271,6 +5290,39 @@ dialog{
 Thank you for all of your help.
 You truly are the hero I'd been
 waiting for.
+]]
+}
+
+dialog{
+  id = "gruce.0.band",
+  text = [[
+Are you ready to rock?!?
+]]
+}
+
+dialog{
+  id = "gruce.0.nabooru",
+  question = "true",
+  skip = "current",
+  text = [[
+Hey kid. Want to hear us play?
+Yes
+No
+]]
+}
+
+dialog{
+  id = "gruce.0.nabooru_no",
+  text = [[
+Your loss man. Check us out later.
+]]
+}
+
+dialog{
+  id = "gruce.0.nabooru_yes",
+  text = [[
+Cool. Head over to the stage and
+we'll set up.
 ]]
 }
 

@@ -1,13 +1,29 @@
 local map = ...
-local band_playing = false
+local game = map:get_game()
+
+---------------------------------------------------------------------------
+-- Outside World M2 (Nabooru Town) - Gerudo of the north, Gerutones band --
+---------------------------------------------------------------------------
+
+local band_playing = game:get_value("b1231")
 
 function map:on_started()
-  npc_gruce:get_sprite():set_animation("guitar")
-  npc_band_guitar:get_sprite():set_animation("guitar")
+  if game:get_value("i1230") >= 1 then
+    npc_band_gruce:get_sprite():set_animation("guitar")
+    npc_band_guitar:get_sprite():set_animation("guitar")
+  else
+    npc_band_gruce:remove()
+    npc_band_guitar:remove()
+    npc_band_drums:remove()
+    sensor_band_start:remove()
+    sensor_band_1:remove()
+    sensor_band_2:remove()
+    sensor_band_3:remove()
+  end
 end
 
 function sensor_band_start:on_activated()
-  --game:start_dialog("gruce")
+  game:start_dialog("gruce.0.band")
   band_playing = true
 
   sol.audio.play_music("gerutones", function()
@@ -26,6 +42,7 @@ function sensor_band_1:on_activated()
   if band_playing then
     npc_gruce:get_sprite():set_animation("guitar")
     sol.timer.start(map, 50, function()
+      band_playing = false
       sol.audio.set_music_volume(first_volume)
       first_volume = first_volume - 2  -- Fade music out by decreasing volume slowly (this is for the song).
       if first_volume <= 2 then return false else return true end
@@ -39,10 +56,13 @@ function sensor_band_1:on_activated()
     end)
   end
 end
-
 function sensor_band_2:on_activated()
   sensor_band_1:on_activated()
 end
 function sensor_band_3:on_activated()
   sensor_band_1:on_activated()
+end
+
+function map:on_finished()
+  game:set_value("b1231", band_playing)
 end

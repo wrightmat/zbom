@@ -2323,33 +2323,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 736,
-  y = 144,
-  width = 16,
-  height = 16,
-  pattern = "1765",
-}
-
-tile{
-  layer = 0,
-  x = 568,
-  y = 784,
-  width = 16,
-  height = 16,
-  pattern = "1765",
-}
-
-tile{
-  layer = 0,
-  x = 216,
-  y = 920,
-  width = 16,
-  height = 16,
-  pattern = "1765",
-}
-
-tile{
-  layer = 0,
   x = 704,
   y = 952,
   width = 16,
@@ -2800,7 +2773,7 @@ destructible{
 }
 
 npc{
-  name = "npc_gruce",
+  name = "npc_band_gruce",
   layer = 0,
   x = 504,
   y = 501,
@@ -2895,6 +2868,39 @@ sensor{
   y = 549,
   width = 224,
   height = 48,
+}
+
+teletransporter{
+  name = "to_house_1",
+  layer = 0,
+  x = 216,
+  y = 912,
+  width = 16,
+  height = 16,
+  destination_map = "8",
+  destination = "enter_nabooru_1",
+}
+
+teletransporter{
+  name = "to_house_2",
+  layer = 0,
+  x = 568,
+  y = 776,
+  width = 16,
+  height = 16,
+  destination_map = "8",
+  destination = "enter_nabooru_2",
+}
+
+teletransporter{
+  name = "to_house_3",
+  layer = 0,
+  x = 736,
+  y = 136,
+  width = 16,
+  height = 16,
+  destination_map = "8",
+  destination = "enter_nabooru_3",
 }
 
 tile{
