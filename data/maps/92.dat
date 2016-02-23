@@ -4391,6 +4391,24 @@ tile{
   pattern = "231",
 }
 
+tile{
+  layer = 0,
+  x = 512,
+  y = 688,
+  width = 16,
+  height = 16,
+  pattern = "232",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 216,
+  width = 16,
+  height = 16,
+  pattern = "232",
+}
+
 teletransporter{
   name = "to_B1",
   layer = 0,
@@ -4499,6 +4517,22 @@ wall{
   stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
+}
+
+destination{
+  name = "from_inside_3",
+  layer = 0,
+  x = 120,
+  y = 869,
+  direction = 3,
+}
+
+destination{
+  name = "from_inside_4",
+  layer = 0,
+  x = 336,
+  y = 317,
+  direction = 3,
 }
 
 tile{

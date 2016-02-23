@@ -1817,6 +1817,33 @@ tile{
   pattern = "62",
 }
 
+tile{
+  layer = 0,
+  x = 520,
+  y = 904,
+  width = 16,
+  height = 16,
+  pattern = "232",
+}
+
+tile{
+  layer = 0,
+  x = 552,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "232",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "232",
+}
+
 teletransporter{
   name = "to_D2",
   layer = 0,
@@ -2317,6 +2344,22 @@ wall{
   stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
+}
+
+destination{
+  name = "from_inside_1",
+  layer = 0,
+  x = 160,
+  y = 701,
+  direction = 3,
+}
+
+destination{
+  name = "from_inside_2",
+  layer = 0,
+  x = 840,
+  y = 621,
+  direction = 3,
 }
 
 tile{
