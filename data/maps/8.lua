@@ -12,6 +12,7 @@ if game:get_value("i1912")==nil then game:set_value("i1912", 0) end
 function map:on_started(destination)
   if not game:get_value("b2031") and not game:get_value("b1614") then quest_book:remove() end -- Quest bubble references trading quest and fetch quest.
   if destination == from_outside_door1 or destination == from_outside_door2 then sol.audio.play_music("mudora") end
+  if destination == enter_rauru_sanctuary then sol.audio.play_music("sanctuary") end
   if not game:get_value("b2024") then quest_trading_ball:remove() end
   if game:get_value("i1032") >= 2 then door:set_enabled(false) end
   if game:get_value("i1840") >= 5 then
