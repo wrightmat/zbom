@@ -1,0 +1,10 @@
+animation{
+  name = "sitting",
+  src_image = "npc/zora.png",
+  directions = {
+    { x = 88, y = 128, frame_width = 64, frame_height = 72, origin_x = 32, origin_y = 64 },
+    { x = 88, y = 128, frame_width = 64, frame_height = 72, origin_x = 32, origin_y = 64 },
+    { x = 88, y = 128, frame_width = 64, frame_height = 72, origin_x = 32, origin_y = 64 },
+    { x = 88, y = 128, frame_width = 64, frame_height = 72, origin_x = 32, origin_y = 64 },
+  },
+}

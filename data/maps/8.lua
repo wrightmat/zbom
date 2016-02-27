@@ -324,3 +324,20 @@ function npc_gruce:on_interaction()
     game:get_value("i1230", 1)
   end)
 end
+
+function npc_zora_guard_1:on_interaction()
+  game:start_dialog("zora_guard.0.great_hall")
+end
+function npc_zora_guard_2:on_interaction()
+  game:start_dialog("zora_guard.0.great_hall")
+end
+function npc_zora_guard_3:on_interaction()
+  game:start_dialog("zora_guard.0.great_hall")
+end
+function npc_zora_guard_4:on_interaction()
+  game:start_dialog("zora_guard.0.great_hall")
+end
+
+function npc_zora_king:on_interaction()
+  game:start_dialog("zora_king.0.great_hall")
+end

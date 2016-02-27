@@ -2281,76 +2281,11 @@ npc{
   sprite = "entities/quest_bubble",
 }
 
-wall{
-  layer = 0,
-  x = 200,
-  y = 320,
-  width = 32,
-  height = 8,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 144,
-  y = 664,
-  width = 32,
-  height = 8,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 544,
-  y = 256,
-  width = 32,
-  height = 8,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 824,
-  y = 584,
-  width = 32,
-  height = 8,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 512,
-  y = 888,
-  width = 32,
-  height = 8,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
 destination{
   name = "from_inside_1",
   layer = 0,
   x = 160,
-  y = 701,
+  y = 693,
   direction = 3,
 }
 
@@ -2358,8 +2293,30 @@ destination{
   name = "from_inside_2",
   layer = 0,
   x = 840,
-  y = 621,
+  y = 613,
   direction = 3,
+}
+
+teletransporter{
+  name = "to_inside_1",
+  layer = 0,
+  x = 152,
+  y = 664,
+  width = 16,
+  height = 16,
+  destination_map = "8",
+  destination = "enter_ruto_1",
+}
+
+teletransporter{
+  name = "to_inside_2",
+  layer = 0,
+  x = 832,
+  y = 584,
+  width = 16,
+  height = 16,
+  destination_map = "8",
+  destination = "enter_ruto_2",
 }
 
 tile{
