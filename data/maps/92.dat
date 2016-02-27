@@ -4409,6 +4409,42 @@ tile{
   pattern = "232",
 }
 
+tile{
+  layer = 0,
+  x = 368,
+  y = 816,
+  width = 16,
+  height = 16,
+  pattern = "1724",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 816,
+  width = 16,
+  height = 16,
+  pattern = "1724",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 816,
+  width = 16,
+  height = 16,
+  pattern = "1724",
+}
+
+tile{
+  layer = 0,
+  x = 1016,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "1724",
+}
+
 teletransporter{
   name = "to_B1",
   layer = 0,
@@ -4584,6 +4620,24 @@ tile{
   width = 32,
   height = 8,
   pattern = "74",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 792,
+  width = 48,
+  height = 40,
+  pattern = "70",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 240,
+  width = 64,
+  height = 48,
+  pattern = "87",
 }
 
 tile{
