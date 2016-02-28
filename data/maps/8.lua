@@ -5,6 +5,7 @@ local game = map:get_game()
 -- Inside North Hyrule houses and such  --
 ------------------------------------------
 
+local priest_spoken = false
 if game:get_value("i1615")==nil then game:set_value("i1615", 0) end
 if game:get_value("i1631")==nil then game:set_value("i1631", 0) end
 if game:get_value("i1912")==nil then game:set_value("i1912", 0) end
@@ -321,9 +322,7 @@ function npc_hylian_2:on_interaction()
 end
 
 function npc_gruce:on_interaction()
-  game:start_dialog("gruce.0.nabooru", function()
-    game:get_value("i1230", 1)
-  end)
+  game:start_dialog("gruce.0.nabooru", function() game:get_value("i1230", 1) end)
 end
 
 function npc_zora_guard_1:on_interaction()
@@ -341,4 +340,12 @@ end
 
 function npc_zora_king:on_interaction()
   game:start_dialog("zora_king.0.great_hall")
+end
+
+function npc_priest:on_interaction()
+  if priest_spoken then
+    game:start_dialog("priest.0.explain")
+  else
+    game:start_dialog("priest.0.sanctuary", function() priest_spoken = true end)
+  end
 end

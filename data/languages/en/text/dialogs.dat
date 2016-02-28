@@ -7945,6 +7945,46 @@ You don't have any empty Bottles!
 }
 
 dialog{
+  id = "priest.0.explain",
+  next = "priest.0.explain_2",
+  skip = "current",
+  text = [[
+Allow me to explain. Hylia was the
+white goddess who was left with the
+Great Power by the Golden Goddesses.
+When the original demon attacked,
+she was forced to give up her divinity
+in order to fight him, and was killed
+in the process.
+]]
+}
+
+dialog{
+  id = "priest.0.explain_2",
+  skip = "current",
+  text = [[
+Why do we still worship her after all
+this time? Well, there was a long
+period where Her Grace was forgotten.
+But recently, some ancient writings
+and a small statue were unearthed near
+here. Those who discovered these
+artifacts moved here and started up
+a new version of the ancient religion.
+]]
+}
+
+dialog{
+  id = "priest.0.sanctuary",
+  skip = "current",
+  text = [[
+Welcome, traveler, to the Sanctuary
+of Hylia.$0What?$0 You don't know of
+the Goddess Hylia?
+]]
+}
+
+dialog{
   id = "pyramid_enter",
   skip = "none",
   text = [[
