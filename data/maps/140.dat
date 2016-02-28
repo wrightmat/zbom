@@ -1079,6 +1079,186 @@ tile{
   pattern = "269",
 }
 
+tile{
+  layer = 0,
+  x = 248,
+  y = 96,
+  width = 48,
+  height = 48,
+  pattern = "1644",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 232,
+  width = 48,
+  height = 48,
+  pattern = "1644",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 336,
+  width = 48,
+  height = 48,
+  pattern = "1644",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 560,
+  width = 48,
+  height = 48,
+  pattern = "1644",
+}
+
+tile{
+  layer = 0,
+  x = 816,
+  y = 464,
+  width = 48,
+  height = 48,
+  pattern = "1644",
+}
+
+tile{
+  layer = 0,
+  x = 920,
+  y = 144,
+  width = 48,
+  height = 48,
+  pattern = "1644",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 80,
+  width = 8,
+  height = 8,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 160,
+  width = 8,
+  height = 8,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 232,
+  width = 8,
+  height = 8,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 368,
+  width = 8,
+  height = 8,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 392,
+  width = 8,
+  height = 8,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 952,
+  y = 256,
+  width = 8,
+  height = 8,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 1048,
+  y = 408,
+  width = 8,
+  height = 8,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 192,
+  width = 8,
+  height = 8,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 432,
+  width = 8,
+  height = 8,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 792,
+  width = 48,
+  height = 48,
+  pattern = "1644",
+}
+
+tile{
+  layer = 0,
+  x = 776,
+  y = 928,
+  width = 48,
+  height = 48,
+  pattern = "1644",
+}
+
+tile{
+  layer = 0,
+  x = 1048,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "233",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "233",
+}
+
 teletransporter{
   name = "to_N2",
   layer = 0,
@@ -1184,6 +1364,46 @@ enemy{
   layer = 0,
   x = 784,
   y = 285,
+  direction = 0,
+  breed = "snap_dragon",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "hinox_1",
+  layer = 0,
+  x = 504,
+  y = 149,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "hinox_2",
+  layer = 0,
+  x = 576,
+  y = 453,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "hinox_3",
+  layer = 0,
+  x = 944,
+  y = 389,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "snapdragon_6",
+  layer = 0,
+  x = 752,
+  y = 797,
   direction = 0,
   breed = "snap_dragon",
   treasure_name = "random_north",

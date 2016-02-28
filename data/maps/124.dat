@@ -982,15 +982,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 224,
-  y = 520,
-  width = 16,
-  height = 16,
-  pattern = "1765",
-}
-
-tile{
-  layer = 0,
   x = 624,
   y = 728,
   width = 16,
@@ -1293,6 +1284,105 @@ tile{
   width = 8,
   height = 8,
   pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 872,
+  y = 472,
+  width = 96,
+  height = 48,
+  pattern = "1646",
+}
+
+tile{
+  layer = 0,
+  x = 888,
+  y = 456,
+  width = 64,
+  height = 16,
+  pattern = "1645",
+}
+
+tile{
+  layer = 0,
+  x = 872,
+  y = 520,
+  width = 16,
+  height = 16,
+  pattern = "1648",
+}
+
+tile{
+  layer = 0,
+  x = 888,
+  y = 520,
+  width = 24,
+  height = 16,
+  pattern = "1647",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 520,
+  width = 24,
+  height = 16,
+  pattern = "1653",
+}
+
+tile{
+  layer = 0,
+  x = 952,
+  y = 520,
+  width = 16,
+  height = 16,
+  pattern = "1654",
+}
+
+tile{
+  layer = 0,
+  x = 888,
+  y = 536,
+  width = 16,
+  height = 16,
+  pattern = "1649",
+}
+
+tile{
+  layer = 0,
+  x = 904,
+  y = 536,
+  width = 8,
+  height = 16,
+  pattern = "1650",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 536,
+  width = 16,
+  height = 16,
+  pattern = "1651",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 536,
+  width = 8,
+  height = 16,
+  pattern = "1655",
+}
+
+tile{
+  layer = 0,
+  x = 936,
+  y = 536,
+  width = 16,
+  height = 16,
+  pattern = "1656",
 }
 
 teletransporter{
@@ -1658,6 +1748,44 @@ shop_treasure{
   dialog = "_item_description.amber_counter.1",
 }
 
+destination{
+  name = "from_inside_2",
+  layer = 0,
+  x = 232,
+  y = 541,
+  direction = 3,
+}
+
+destination{
+  name = "from_inside_3",
+  layer = 0,
+  x = 920,
+  y = 557,
+  direction = 3,
+}
+
+teletransporter{
+  name = "to_inside_2",
+  layer = 0,
+  x = 224,
+  y = 512,
+  width = 16,
+  height = 16,
+  destination_map = "9",
+  destination = "enter_darunia_2",
+}
+
+teletransporter{
+  name = "to_inside_3",
+  layer = 0,
+  x = 912,
+  y = 528,
+  width = 16,
+  height = 16,
+  destination_map = "9",
+  destination = "enter_darunia_3",
+}
+
 npc{
   name = "tent_3",
   layer = 1,
@@ -1691,6 +1819,15 @@ tile{
   layer = 2,
   x = 224,
   y = 504,
+  width = 16,
+  height = 16,
+  pattern = "1652",
+}
+
+tile{
+  layer = 2,
+  x = 912,
+  y = 520,
   width = 16,
   height = 16,
   pattern = "1652",

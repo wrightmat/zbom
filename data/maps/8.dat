@@ -2,7 +2,7 @@ properties{
   x = 0,
   y = 0,
   width = 3104,
-  height = 1400,
+  height = 1408,
   world = "inside_world",
   tileset = "0",
   music = "house",
@@ -12513,7 +12513,7 @@ tile{
   x = 32,
   y = 1152,
   width = 1280,
-  height = 248,
+  height = 256,
   pattern = "677",
 }
 
@@ -12702,7 +12702,7 @@ tile{
   x = 1312,
   y = 1312,
   width = 192,
-  height = 88,
+  height = 96,
   pattern = "677",
 }
 
@@ -12711,7 +12711,7 @@ tile{
   x = 1504,
   y = 1152,
   width = 160,
-  height = 248,
+  height = 256,
   pattern = "677",
 }
 
@@ -12738,7 +12738,7 @@ tile{
   x = 1664,
   y = 1312,
   width = 192,
-  height = 88,
+  height = 96,
   pattern = "677",
 }
 
@@ -12747,7 +12747,7 @@ tile{
   x = 1856,
   y = 1152,
   width = 160,
-  height = 248,
+  height = 256,
   pattern = "677",
 }
 
@@ -12756,7 +12756,7 @@ tile{
   x = 0,
   y = 0,
   width = 32,
-  height = 1400,
+  height = 1408,
   pattern = "677",
 }
 
@@ -12765,7 +12765,7 @@ tile{
   x = 3072,
   y = 0,
   width = 32,
-  height = 1400,
+  height = 1408,
   pattern = "677",
 }
 
@@ -12792,7 +12792,7 @@ tile{
   x = 2016,
   y = 1312,
   width = 192,
-  height = 88,
+  height = 96,
   pattern = "677",
 }
 
@@ -12809,8 +12809,8 @@ tile{
   layer = 2,
   x = 2208,
   y = 1152,
-  width = 192,
-  height = 248,
+  width = 864,
+  height = 256,
   pattern = "677",
 }
 
@@ -13070,5 +13070,13 @@ separator{
   y = 0,
   width = 16,
   height = 368,
+}
+
+separator{
+  layer = 2,
+  x = 2288,
+  y = 1088,
+  width = 16,
+  height = 320,
 }
 

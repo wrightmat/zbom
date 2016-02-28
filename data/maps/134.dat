@@ -1457,6 +1457,114 @@ tile{
   pattern = "62",
 }
 
+tile{
+  layer = 0,
+  x = 208,
+  y = 480,
+  width = 96,
+  height = 48,
+  pattern = "1646",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 464,
+  width = 64,
+  height = 16,
+  pattern = "1645",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "1648",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 528,
+  width = 24,
+  height = 16,
+  pattern = "1647",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 528,
+  width = 24,
+  height = 16,
+  pattern = "1653",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "1654",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "1649",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 544,
+  width = 8,
+  height = 16,
+  pattern = "1650",
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "1651",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 544,
+  width = 8,
+  height = 16,
+  pattern = "1655",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "1656",
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "1765",
+}
+
 teletransporter{
   name = "to_N1",
   layer = 0,
@@ -1543,5 +1651,54 @@ enemy{
   direction = 3,
   breed = "hinox",
   treasure_name = "random_north",
+}
+
+enemy{
+  name = "hinox_5",
+  layer = 0,
+  x = 1032,
+  y = 693,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "hinox_6",
+  layer = 0,
+  x = 912,
+  y = 461,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "hinox_7",
+  layer = 0,
+  x = 1040,
+  y = 229,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "hinox_8",
+  layer = 0,
+  x = 728,
+  y = 245,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random_north",
+}
+
+tile{
+  layer = 2,
+  x = 248,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "1652",
 }
 

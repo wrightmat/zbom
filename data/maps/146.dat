@@ -3266,6 +3266,87 @@ tile{
   pattern = "11",
 }
 
+tile{
+  layer = 0,
+  x = 96,
+  y = 152,
+  width = 48,
+  height = 48,
+  pattern = "1644",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 400,
+  width = 48,
+  height = 48,
+  pattern = "1644",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 760,
+  width = 48,
+  height = 48,
+  pattern = "1644",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 440,
+  width = 48,
+  height = 48,
+  pattern = "1644",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 1008,
+  width = 16,
+  height = 16,
+  pattern = "233",
+}
+
+tile{
+  layer = 0,
+  x = 600,
+  y = 696,
+  width = 16,
+  height = 16,
+  pattern = "233",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 752,
+  width = 16,
+  height = 16,
+  pattern = "233",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 472,
+  width = 16,
+  height = 16,
+  pattern = "233",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 136,
+  width = 16,
+  height = 16,
+  pattern = "233",
+}
+
 teletransporter{
   name = "to_O2",
   layer = 0,
@@ -3359,8 +3440,28 @@ enemy{
 enemy{
   name = "snapdragon_4",
   layer = 0,
-  x = 536,
-  y = 781,
+  x = 600,
+  y = 789,
+  direction = 0,
+  breed = "snap_dragon",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "snapdragon_5",
+  layer = 0,
+  x = 472,
+  y = 613,
+  direction = 0,
+  breed = "snap_dragon",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "snapdragon_6",
+  layer = 0,
+  x = 136,
+  y = 293,
   direction = 0,
   breed = "snap_dragon",
   treasure_name = "random_north",
