@@ -392,6 +392,7 @@ animation{
   src_image = "entities/items.png",
   directions = {
     { x = 604, y = 32, frame_width = 8, frame_height = 16, origin_x = 4, origin_y = 16 },
+    { x = 612, y = 32, frame_width = 8, frame_height = 16, origin_x = 4, origin_y = 16 },
   },
 }
 animation{
@@ -537,14 +538,14 @@ animation{
   name = "stick",
   src_image = "entities/items.png",
   directions = {
-    { x = 612, y = 32, frame_width = 8, frame_height = 16, origin_x = 4, origin_y = 16 },
+    { x = 620, y = 32, frame_width = 8, frame_height = 16, origin_x = 4, origin_y = 16 },
   },
 }
 animation{
   name = "stick_counter",
   src_image = "entities/items.png",
   directions = {
-    { x = 612, y = 32, frame_width = 8, frame_height = 16, origin_x = 4, origin_y = 16 },
+    { x = 620, y = 32, frame_width = 8, frame_height = 16, origin_x = 4, origin_y = 16 },
   },
 }
 animation{

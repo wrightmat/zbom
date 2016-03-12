@@ -52,7 +52,7 @@ function map:on_started(destination)
   if not game:get_value("b1107") then miniboss_arrghus:set_enabled(false) end
   if not game:get_value("b1108") then chest_big_key:set_enabled(false) end
   if not game:get_value("b1110") then
-    boss_vire:set_enabled(false)
+    vire:set_enabled(false)
     boss_vire_sorceror:set_enabled(false)
     -- Dodongos appear after the boss is defeated.
     map:set_entities_enabled("dodongo", false)
@@ -117,7 +117,7 @@ end
 function sensor_boss:on_activated()
   if boss_vire_sorceror ~= nil then
     map:close_doors("door_boss")
-    boss_vire:set_enabled(true)
+    vire:set_enabled(true)
     boss_vire_sorceror:set_enabled(true)
     sol.audio.play_music("boss")
   end
@@ -186,20 +186,20 @@ end
 for enemy in map:get_entities("tektite_map") do
   enemy.on_dead = function()
     if not map:has_entities("tektite_map") and not game:get_value("b1106") then
-      --map:move_camera(1304, 861, 250, function()
+      map:move_camera(1304, 861, 250, function()
         chest_map:set_enabled(true)
         sol.audio.play_sound("chest_appears")
-      --end, 500, 500)
+      end, 250, 250)
     end
   end
 end
 for enemy in map:get_entities("tektite_compass") do
   enemy.on_dead = function()
     if not map:has_entities("tektite_compass") and not game:get_value("b1105") then
-      --map:move_camera(1304, 1149, 250, function()
+      map:move_camera(1304, 1149, 250, function()
         chest_compass:set_enabled(true)
         sol.audio.play_sound("chest_appears")
-      --end, 500, 500)
+      end, 250, 250)
     end
   end
 end
@@ -235,9 +235,6 @@ function map:on_draw(dst_surface)
     local y = 240 - hero_y + camera_y
     lantern_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
   elseif dark_overlay then
-    --dark_overlay = sol.surface.create(640,480)
-    --dark_overlay:set_opacity(0.9 * 255)
-    --dark_overlay:fill_color{0, 0, 0}
     dark_overlay:draw(dst_surface, x, y)
   end
 end

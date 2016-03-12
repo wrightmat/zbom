@@ -19,7 +19,8 @@ local probabilities = {
   [{ "plume", 1 }]      = 1,    -- Goddess Plume (exceptionally rare drop item).
   [{ "amber", 1 }]      = 4,    -- Goron Amber (fairly rare drop item, only found in mountain areas).
   [{ "crystal", 1 }]    = 3,    -- Magic Crystal (fairly rare drop item, only found in North Hyrule).
-  [{ "ore", 1 }]        = 40,   -- Subrosian Ore (drop item, only found in Subrosia).
+  [{ "ore", 1 }]        = 50,   -- Subrosian Ore (drop item, only found in Subrosia).
+  [{ "ore", 2 }]        = 20,   -- Subrosian Ore (drop item, only found in Subrosia).
 }
 
 function item:on_pickable_created(pickable)

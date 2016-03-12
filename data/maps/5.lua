@@ -86,12 +86,12 @@ function npc_dargor:on_interaction()
     sol.audio.play_sound("goron_happy")
     game:start_dialog("dargor.1.house", function()
       game:set_value("i1914", game:get_value("i1914")+1)
+      game:set_value("i1029", 1)
     end)
   elseif game:get_value("i1914") == 2 then
     sol.audio.play_sound("goron_happy")
     game:start_dialog("dargor.2.house", function()
       game:set_value("i1914", game:get_value("i1914")+1)
-      game:set_value("i1029", 1)
     end)
   elseif game:get_value("i1029") >= 3 then
     sol.audio.play_sound("goron_sad")

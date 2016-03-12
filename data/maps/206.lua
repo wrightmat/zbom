@@ -27,6 +27,7 @@ function map:on_started(destination)
     npc_zora:set_enabled(false)
   end
   if not game:get_value("b1126") then chest_compass:set_enabled(false) end
+  if game:get_value("b1112") then grate:set_enabled(false) end
 end
 
 function sensor_miniboss:on_activated()
@@ -87,6 +88,7 @@ for enemy in map:get_entities("tektite") do
         grate:set_enabled(false)
         to_basement:set_enabled(true)
         sol.audio.play_sound("secret")
+        game:set_value("b1112")
       end, 500, 500)
     end
   end

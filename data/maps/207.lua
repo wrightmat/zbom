@@ -32,13 +32,15 @@ function map:on_started(destination)
 end
 
 function door_bomb_1:on_opened()
-  water_source_1:set_enabled(false)
-  water_source_2:set_enabled(false)
-  map:set_entities_enabled("water_stream", false)
   sol.audio.play_sound("water_drain")
-  game:set_value("b1141", true)
-  obstacle:set_enabled(false)
-  obstacle_2:set_enabled(false)
+  map:move_camera(1344, 736, 250, function()
+    water_source_1:set_enabled(false)
+    water_source_2:set_enabled(false)
+    map:set_entities_enabled("water_stream", false)
+    game:set_value("b1141", true)
+    obstacle:set_enabled(false)
+    obstacle_2:set_enabled(false)
+  end, 250, 250)
 end
 
 function sensor_boss:on_activated()

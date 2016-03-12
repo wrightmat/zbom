@@ -8,11 +8,12 @@ end
 
 -- Obtaining Subrosian Ore
 function item:on_obtaining(variant, savegame_variable)
+  local amounts = {1, 5}
+  local amount = amounts[variant]
   local ore_counter = self:get_game():get_item("ore_counter")
-  if ore_counter:get_variant() == 0 then
-    ore_counter:set_variant(1)
-  end
-  ore_counter:add_amount(1)
+  if ore_counter:get_variant() == 0 then ore_counter:set_variant(1) end
+  if amount == nil then error("Invalid variant '" .. variant .. "' for item 'rupee'") end
+  ore_counter:add_amount(amount)
   game:set_value("item_ore_obtained", true)
 end
 

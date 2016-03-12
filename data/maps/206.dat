@@ -8424,6 +8424,24 @@ tile{
   pattern = "115",
 }
 
+wall{
+  layer = 0,
+  x = 272,
+  y = 656,
+  width = 104,
+  height = 8,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 368,
+  y = 408,
+  width = 8,
+  height = 248,
+  stops_blocks = true,
+}
+
 door{
   name = "door_key1_2",
   layer = 0,
@@ -9977,6 +9995,78 @@ sensor{
   y = 429,
   width = 48,
   height = 16,
+}
+
+wall{
+  layer = 0,
+  x = 232,
+  y = 504,
+  width = 8,
+  height = 64,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 240,
+  y = 504,
+  width = 96,
+  height = 8,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 328,
+  y = 408,
+  width = 8,
+  height = 96,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 232,
+  y = 584,
+  width = 8,
+  height = 32,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 240,
+  y = 608,
+  width = 32,
+  height = 8,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 264,
+  y = 616,
+  width = 8,
+  height = 48,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 200,
+  y = 560,
+  width = 32,
+  height = 8,
+  stops_blocks = true,
+}
+
+wall{
+  layer = 0,
+  x = 200,
+  y = 584,
+  width = 32,
+  height = 8,
+  stops_blocks = true,
 }
 
 tile{
