@@ -3977,6 +3977,17 @@ tile{
   pattern = "12",
 }
 
+teletransporter{
+  name = "to_inside_house3",
+  layer = 0,
+  x = 760,
+  y = 960,
+  width = 16,
+  height = 16,
+  destination_map = "8",
+  destination = "enter_kasuto_3",
+}
+
 dynamic_tile{
   name = "door_1",
   layer = 0,
@@ -4533,6 +4544,43 @@ dynamic_tile{
   width = 24,
   height = 16,
   enabled_at_start = false,
+}
+
+sensor{
+  name = "house3_door_sensor",
+  layer = 0,
+  x = 760,
+  y = 997,
+  width = 32,
+  height = 16,
+}
+
+destination{
+  name = "from_inside_house3",
+  layer = 0,
+  x = 768,
+  y = 997,
+  direction = 3,
+}
+
+npc{
+  name = "npc_kasuto_1",
+  layer = 0,
+  x = 464,
+  y = 869,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/hylian_25",
+}
+
+npc{
+  name = "npc_kasuto_2",
+  layer = 0,
+  x = 320,
+  y = 477,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/hylian_16",
 }
 
 tile{

@@ -7,6 +7,13 @@ local game = map:get_game()
 
 if game:get_value("i1230")==nil then game:set_value("i1230", 0) end
 
+local function random_walk(npc)
+  local m = sol.movement.create("random_path")
+  m:set_speed(32)
+  m:start(npc)
+  npc:get_sprite():set_animation("walking")
+end
+
 function map:on_started()
   -- Entrances of houses.
   local entrance_names = { "house1" }
@@ -28,6 +35,9 @@ function map:on_started()
       entity:set_enabled(true)
     end
   end
+
+  random_walk(npc_oracle)
+  random_walk(npc_kasuto_5)
 end
 
 function npc_oracle:on_interaction()
@@ -38,4 +48,8 @@ function npc_oracle:on_interaction()
   else
     game:start_dialog("din.0.kasuto")
   end
+end
+
+function npc_kasuto_5:on_interaction()
+  game:start_dialog("hylian_5.0.kasuto")
 end

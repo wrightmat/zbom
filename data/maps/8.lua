@@ -333,6 +333,14 @@ function npc_hylian_5:on_interaction()
   game:start_dialog("hylian_5.0.rauru")
 end
 
+function npc_kasuto_3:on_interaction()
+  game:start_dialog("hylian_3.0.kasuto")
+end
+
+function npc_kasuto_4:on_interaction()
+  game:start_dialog("hylian_4.0.kasuto")
+end
+
 function npc_gruce:on_interaction()
   game:start_dialog("gruce.0.nabooru", function() game:get_value("i1230", 1) end)
 end

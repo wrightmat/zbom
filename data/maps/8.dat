@@ -10646,6 +10646,105 @@ tile{
   pattern = "71",
 }
 
+tile{
+  layer = 0,
+  x = 1856,
+  y = 832,
+  width = 32,
+  height = 40,
+  pattern = "705",
+}
+
+tile{
+  layer = 0,
+  x = 1856,
+  y = 920,
+  width = 24,
+  height = 32,
+  pattern = "607",
+}
+
+tile{
+  layer = 0,
+  x = 1752,
+  y = 928,
+  width = 16,
+  height = 8,
+  pattern = "212",
+}
+
+tile{
+  layer = 0,
+  x = 1752,
+  y = 920,
+  width = 16,
+  height = 8,
+  pattern = "208",
+}
+
+tile{
+  layer = 0,
+  x = 1744,
+  y = 920,
+  width = 8,
+  height = 8,
+  pattern = "207",
+}
+
+tile{
+  layer = 0,
+  x = 1744,
+  y = 928,
+  width = 8,
+  height = 8,
+  pattern = "211",
+}
+
+tile{
+  layer = 0,
+  x = 1768,
+  y = 920,
+  width = 8,
+  height = 8,
+  pattern = "209",
+}
+
+tile{
+  layer = 0,
+  x = 1768,
+  y = 928,
+  width = 8,
+  height = 8,
+  pattern = "210",
+}
+
+tile{
+  layer = 0,
+  x = 1768,
+  y = 936,
+  width = 8,
+  height = 8,
+  pattern = "214",
+}
+
+tile{
+  layer = 0,
+  x = 1752,
+  y = 936,
+  width = 16,
+  height = 8,
+  pattern = "215",
+}
+
+tile{
+  layer = 0,
+  x = 1744,
+  y = 936,
+  width = 8,
+  height = 8,
+  pattern = "213",
+}
+
 dynamic_tile{
   name = "door",
   layer = 0,
@@ -11504,8 +11603,8 @@ teletransporter{
   y = 1008,
   width = 16,
   height = 16,
-  destination_map = "106",
-  destination = "from_house_3",
+  destination_map = "148",
+  destination = "from_inside_house3",
 }
 
 dynamic_tile{
@@ -12139,6 +12238,26 @@ npc{
   direction = 1,
   subtype = 1,
   sprite = "npc/hylian_22",
+}
+
+npc{
+  name = "npc_kasuto_3",
+  layer = 0,
+  x = 1424,
+  y = 917,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/hylian_23",
+}
+
+npc{
+  name = "npc_kasuto_4",
+  layer = 0,
+  x = 1816,
+  y = 909,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/hylian_24",
 }
 
 tile{
@@ -12932,6 +13051,15 @@ tile{
   width = 320,
   height = 80,
   pattern = "677",
+}
+
+tile{
+  layer = 2,
+  x = 1856,
+  y = 912,
+  width = 24,
+  height = 8,
+  pattern = "608",
 }
 
 separator{

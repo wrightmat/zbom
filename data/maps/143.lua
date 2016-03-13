@@ -7,7 +7,7 @@ local game = map:get_game()
 
 function map:on_started()
   -- Entrances of houses.
-  local entrance_names = { "house1" }
+  local entrance_names = { "house2", "house4" }
   for _, entrance_name in ipairs(entrance_names) do
     local sensor = map:get_entity(entrance_name .. "_door_sensor")
     local tile = map:get_entity(entrance_name .. "_door")

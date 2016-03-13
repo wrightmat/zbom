@@ -4850,6 +4850,17 @@ tile{
   pattern = "1792",
 }
 
+teletransporter{
+  name = "to_inside_house4",
+  layer = 0,
+  x = 880,
+  y = 160,
+  width = 16,
+  height = 16,
+  destination_map = "8",
+  destination = "enter_kasuto_4",
+}
+
 dynamic_tile{
   name = "night_entrance",
   layer = 0,
@@ -4862,7 +4873,7 @@ dynamic_tile{
 }
 
 teletransporter{
-  name = "to_inside_house1",
+  name = "to_inside_house_2",
   layer = 0,
   x = 752,
   y = 832,
@@ -5629,7 +5640,7 @@ npc{
 }
 
 sensor{
-  name = "house1_door_sensor",
+  name = "house2_door_sensor",
   layer = 0,
   x = 752,
   y = 869,
@@ -5638,7 +5649,7 @@ sensor{
 }
 
 destination{
-  name = "from_inside_house1",
+  name = "from_inside_house_2",
   layer = 0,
   x = 760,
   y = 869,
@@ -5728,6 +5739,23 @@ dynamic_tile{
   width = 24,
   height = 16,
   enabled_at_start = false,
+}
+
+sensor{
+  name = "house4_door_sensor",
+  layer = 0,
+  x = 880,
+  y = 197,
+  width = 32,
+  height = 16,
+}
+
+destination{
+  name = "from_inside_house4",
+  layer = 0,
+  x = 888,
+  y = 197,
+  direction = 3,
 }
 
 tile{
