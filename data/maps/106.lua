@@ -28,8 +28,13 @@ function map:on_started(destination)
   end
 
   random_walk(hylian_1)
+  random_walk(hylian_2)
 end
 
 function hylian_1:on_interaction()
   game:start_dialog("hylian_1.0.rauru")
+end
+
+function hylian_6:on_interaction()
+  game:start_dialog("hylian_6.0.rauru")
 end

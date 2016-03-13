@@ -6,11 +6,14 @@ local game = map:get_game()
 ---------------------------------------------
 
 function map:on_started(destination)
+  flying_heart:get_sprite():set_animation("heart")
+  flying_apple:get_sprite():set_animation("apple")
+
   if not game:get_value("b1166") then
     miniboss_warp:set_enabled(false)
   end
 
-  sol.timer.start(map, 500, function()
+  sol.timer.start(map, 600, function()
     map:create_enemy({
 	x = 72,
 	y = 229,

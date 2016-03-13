@@ -2393,6 +2393,96 @@ tile{
   pattern = "1128",
 }
 
+tile{
+  layer = 0,
+  x = 384,
+  y = 760,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 784,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 688,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 976,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 944,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 360,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 376,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 1000,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
 teletransporter{
   name = "to_A1",
   layer = 0,
@@ -2482,8 +2572,8 @@ enemy{
 enemy{
   name = "pengator_6",
   layer = 0,
-  x = 672,
-  y = 1021,
+  x = 544,
+  y = 509,
   direction = 3,
   breed = "pengator",
   treasure_name = "random_north",
@@ -2543,7 +2633,7 @@ enemy{
   name = "pengator_12",
   layer = 0,
   x = 872,
-  y = 717,
+  y = 653,
   direction = 3,
   breed = "pengator",
   treasure_name = "random_north",
@@ -2625,6 +2715,126 @@ custom_entity{
   layer = 0,
   x = 832,
   y = 901,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
+}
+
+wall{
+  layer = 0,
+  x = 672,
+  y = 880,
+  width = 8,
+  height = 240,
+  stops_npcs = true,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 688,
+  y = 832,
+  width = 432,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+}
+
+npc{
+  name = "npc_earmuffs",
+  layer = 0,
+  x = 928,
+  y = 941,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/hylian_20",
+}
+
+custom_entity{
+  layer = 0,
+  x = 392,
+  y = 773,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 416,
+  y = 797,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 232,
+  y = 701,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 320,
+  y = 989,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 360,
+  y = 957,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 368,
+  y = 365,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 96,
+  y = 373,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 80,
+  y = 389,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 88,
+  y = 429,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1008,
+  y = 717,
   direction = 0,
   sprite = "entities/soil_snow",
   model = "soil",

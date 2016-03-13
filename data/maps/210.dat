@@ -5484,6 +5484,26 @@ sensor{
   height = 16,
 }
 
+custom_entity{
+  name = "flying_apple",
+  layer = 0,
+  x = 176,
+  y = 573,
+  direction = 0,
+  sprite = "entities/items",
+  model = "generic_flying_pickable",
+}
+
+custom_entity{
+  name = "flying_heart",
+  layer = 0,
+  x = 304,
+  y = 573,
+  direction = 0,
+  sprite = "entities/items",
+  model = "generic_flying_pickable",
+}
+
 tile{
   layer = 1,
   x = 32,

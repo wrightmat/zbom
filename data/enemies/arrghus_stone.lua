@@ -12,8 +12,20 @@ function enemy:on_created()
 end
 
 function enemy:check_action()
-  self:create_enemy({ breed = "arrghus_baby", treasure_name = "arrow" })
-  sol.timer.start(self, 2000, function() self:open() end)
+  if self:get_life() > 3 then
+    local x, y, l = self:get_position()
+    self:create_enemy({ x = x+10, y = y, breed = "arrghus_baby", treasure_name = "arrow" })
+    sol.timer.start(self, 2000, function() self:open() end)
+  else
+    -- In second phase, create a slew of enemies and then start moving around.
+    self:create_enemy({ breed = "arrghus_baby", treasure_name = "arrow" })
+    self:create_enemy({ breed = "arrghus_baby", treasure_name = "arrow" })
+    self:create_enemy({ breed = "arrghus_baby", treasure_name = "arrow" })
+    self:create_enemy({ breed = "arrghus_baby", treasure_name = "arrow" })
+    self:create_enemy({ breed = "arrghus_baby", treasure_name = "arrow" })
+    self:create_enemy({ breed = "arrghus_baby", treasure_name = "arrow" })
+    enemy:go(32)
+  end
 end
 
 function enemy:go(speed)
@@ -25,9 +37,10 @@ function enemy:go(speed)
 end
 
 function enemy:close()
+  local x, y, l = self:get_position()
   self:set_attack_arrow("protected")
   self:get_sprite():set_animation("closed")
-  self:create_enemy({ breed = "arrghus_baby", treasure_name = "arrow" })
+  self:create_enemy({ x = x+10, y = y, breed = "arrghus_baby", treasure_name = "arrow" })
   sol.timer.start(self, random(6)*1000, function() self:open() end)
   self:go(64)
 end

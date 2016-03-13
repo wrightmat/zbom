@@ -3596,7 +3596,7 @@ happened so suddenly. I used to work
 in the mines, but they were shut down
 a while ago when strange things
 started happening. At first nothing
-too serious: wierd sounds, things
+too serious: weird sounds, things
 went missing. Then people started
 getting sick and still no one could
 explain anything...
@@ -5748,6 +5748,55 @@ this stuff.
 }
 
 dialog{
+  id = "hylian_3.0.rauru",
+  text = [[
+There's another country whose border
+is not too far from here, but the Queen
+there has closed the border. I've
+never been to Calatia myself, but they
+say it's beautiful.
+]]
+}
+
+dialog{
+  id = "hylian_4.0.rauru",
+  text = [[
+Our faith is fairly new, but we're very
+devout. In fact, we built this
+sanctuary in less than a month! Our
+priest is a wonderful leader - you
+should speak with him.
+]]
+}
+
+dialog{
+  id = "hylian_5.0.rauru",
+  text = [[
+Have you heard about the Goddess? She
+was the woman who was entrused with
+with the Golden Power when the Old
+Goddesses left. She helped shape the
+land into the Hyrule we know, and
+protected her people when they were
+attacked. There's a lot we can still
+learn from her teachings even now.
+]]
+}
+
+dialog{
+  id = "hylian_earmuffs.0.calatia",
+  text = [[
+It's cold up here! When it gets this
+cold, snow stays accumulated on the
+trees. There's also permafrost dotted
+around. It's strange because on the
+other side of the mountian, Calatia
+is supposed to be green and beautiful!
+Weather is odd like that.
+]]
+}
+
+dialog{
   id = "ildus.0.outside",
   skip = "current",
   text = [[
@@ -6983,28 +7032,50 @@ become quite the zealots.
 dialog{
   id = "library_shelf.book_kakariko",
   text = [[
-The Kakariko people...
+The Kakariko people are well-read and
+cultured individuals who have set up
+a large city in the northern area of
+the Hyrule mainland. Stage plays, operas
+and dramatic readins are commonly put
+on in their amphitheater. They are also
+known for their shops, including the
+world famous bomb shop.
 ]]
 }
 
 dialog{
   id = "library_shelf.book_kasuto",
   text = [[
-The people of Kasuto...
+The people of Kasuto have recently
+re-settled into a new town directly
+east of their old town, due to an attack
+by the Dark Tribe. The old city remains
+in ruins, but the new city is already
+starting to thrive.
 ]]
 }
 
 dialog{
   id = "library_shelf.book_ordon",
   text = [[
-The Ordon People...
+The Ordon people are an agrarian race
+who reside in the south of Hyrule. They
+are famous for their goats, pumpkins
+and potions. The Ordon Village is
+fairly isolated, and the people don't
+often leave there.
 ]]
 }
 
 dialog{
   id = "library_shelf.book_rauru",
   text = [[
-The people of Rauru...
+The people of Rauru are a devout
+religious people who have recently
+re-discovered the Goddess Hylia and
+the faith associated with her. The
+main architectural feature in their
+town is their newly-built sanctuary.
 ]]
 }
 

@@ -12111,6 +12111,36 @@ npc{
   sprite = "npc/zora_king",
 }
 
+npc{
+  name = "npc_hylian_3",
+  layer = 0,
+  x = 1936,
+  y = 189,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/hylian_15",
+}
+
+npc{
+  name = "npc_hylian_4",
+  layer = 0,
+  x = 1968,
+  y = 613,
+  direction = 1,
+  subtype = 1,
+  sprite = "npc/hylian_18",
+}
+
+npc{
+  name = "npc_hylian_5",
+  layer = 0,
+  x = 2064,
+  y = 565,
+  direction = 1,
+  subtype = 1,
+  sprite = "npc/hylian_22",
+}
+
 tile{
   layer = 1,
   x = 176,

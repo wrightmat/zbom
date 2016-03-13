@@ -4533,8 +4533,8 @@ npc{
 npc{
   name = "hylian_1",
   layer = 0,
-  x = 696,
-  y = 709,
+  x = 440,
+  y = 613,
   direction = 3,
   subtype = 1,
   sprite = "npc/hylian_11",
@@ -4567,6 +4567,16 @@ destination{
   x = 832,
   y = 605,
   direction = 3,
+}
+
+npc{
+  name = "hylian_6",
+  layer = 0,
+  x = 696,
+  y = 965,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/hylian_19",
 }
 
 tile{
