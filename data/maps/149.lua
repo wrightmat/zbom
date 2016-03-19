@@ -43,10 +43,10 @@ end
 function npc_oracle:on_interaction()
   local informed = false
   if game:get_value("i1230") >= 1 not informed then
-    game:start_dialog("din.0.kasuto_gerudo")
+    game:start_dialog("oracle_1.0.kasuto_gerudo")
     informed = true
   else
-    game:start_dialog("din.0.kasuto")
+    game:start_dialog("oracle_1.0.kasuto")
   end
 end
 

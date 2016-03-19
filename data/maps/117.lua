@@ -15,3 +15,7 @@ end
 function map:on_started(destination)
   random_walk(npc_oracle)
 end
+
+function npc_oracle:on_interaction()
+  game:start_dialog("oracle_2.0.island_palace")
+end

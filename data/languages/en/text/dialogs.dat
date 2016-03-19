@@ -3991,25 +3991,6 @@ $gSLIMY SNAKES$w$0   can go back to the water!
 }
 
 dialog{
-  id = "din.0.kasuto",
-  skip = "current",
-  text = [[
-I've just moved here recently, but
-it's really starting to look nice!
-]]
-}
-
-dialog{
-  id = "din.0.kasuto_gerudo",
-  skip = "current",
-  text = [[
-You think I look like a race you've
-seen before? Is that so? I can't say
-I know what you're talking about.
-]]
-}
-
-dialog{
   id = "dungeon_1",
   skip = "current",
   text = [[
@@ -7434,6 +7415,50 @@ Oh, so you've met my friend   $g Rowin$w over
 there, have you?$0 He's not really so
 bad once you get to know him, he's just
 a bit of a downer sometimes.
+]]
+}
+
+dialog{
+  id = "oracle_1.0.kasuto",
+  skip = "current",
+  text = [[
+I've just moved here recently, but
+it's really starting to look nice!
+I was actually part of a traveling band,
+but we recently had a fight and split up.
+]]
+}
+
+dialog{
+  id = "oracle_1.0.kasuto_gerudo",
+  skip = "current",
+  text = [[
+You think I look like a race you've
+seen before? Is that so? I can't say
+I know what you're talking about.
+]]
+}
+
+dialog{
+  id = "oracle_2.0.island_palace",
+  text = [[
+Hello my dear. If you're looking for an
+autograph, I'm not interested. What?$0
+You don't know who I am?
+Who hasn't heard of the band Earth,
+Wind and Water?
+]]
+}
+
+dialog{
+  id = "oracle_3.0.north_castle",
+  text = [[
+Hey dude! Do you miss our music as
+much as I do? You don't know who I am?
+Well, maybe someday our band will get
+back together, we can stop traveling
+and fighting, and start making music
+again!
 ]]
 }
 

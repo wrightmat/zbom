@@ -65,3 +65,7 @@ for enemy in map:get_entities("enemy_wave4") do
     end
   end
 end
+
+function npc_oracle:on_interaction()
+  game:start_dialog("oracle_3.0.north_castle")
+end
