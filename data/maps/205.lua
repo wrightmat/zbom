@@ -225,7 +225,7 @@ end
 
 function map:on_draw(dst_surface)
   local screen_width, screen_height = dst_surface:get_size()
-  local camera_x, camera_y = map:get_camera_position()
+  local camera_x, camera_y = map:get_camera():get_position()
 
   -- Draw the lantern light that follows the hero.
   if lantern_overlay then

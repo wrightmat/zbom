@@ -5,6 +5,8 @@ properties{
   height = 1600,
   world = "dungeon_5",
   floor = -1,
+  min_layer = 0,
+  max_layer = 2,
   tileset = "8",
   music = "temple_lake",
 }
@@ -17843,7 +17845,6 @@ enemy{
   y = 1204,
   direction = 3,
   breed = "plasmarine_blue",
-  rank = 2,
   savegame_variable = "b1131",
   treasure_name = "plume",
 }
@@ -17855,7 +17856,6 @@ enemy{
   y = 1196,
   direction = 3,
   breed = "plasmarine_red",
-  rank = 2,
   savegame_variable = "b1131",
   treasure_name = "plume",
 }

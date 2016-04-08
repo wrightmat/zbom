@@ -178,7 +178,8 @@ function dialog_box:on_started()
 
   -- Determine the position of the dialog box on the screen.
   local map = game:get_map()
-  local camera_x, camera_y, camera_width, camera_height = map:get_camera_position()
+  local camera_x, camera_y = map:get_camera():get_position()
+  local camera_width, camera_height = map:get_camera():get_size()
   local top = false
   if self.vertical_position == "top" then
     top = true

@@ -3,7 +3,6 @@
 local rupees = {}
 
 function rupees:new(game)
-
   local object = {}
   setmetatable(object, self)
   self.__index = self
@@ -14,7 +13,6 @@ function rupees:new(game)
 end
 
 function rupees:initialize(game)
-
   self.game = game
   self.surface = sol.surface.create(48, 12)
   self.digits_text = sol.text_surface.create{
@@ -31,7 +29,6 @@ function rupees:initialize(game)
 end
 
 function rupees:check()
-
   local need_rebuild = false
   local rupee_bag = self.game:get_item("rupee_bag"):get_variant()
   local money = self.game:get_money()

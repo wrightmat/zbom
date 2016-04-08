@@ -5,6 +5,8 @@ properties{
   height = 1072,
   world = "dungeon_1",
   floor = -1,
+  min_layer = 0,
+  max_layer = 2,
   tileset = "4",
   music = "sewers",
 }
@@ -6819,7 +6821,6 @@ enemy{
   y = 573,
   direction = 3,
   breed = "poe_big",
-  rank = 2,
   savegame_variable = "b1047",
   treasure_name = "jade",
 }

@@ -5,6 +5,8 @@ properties{
   height = 1760,
   world = "dungeon_4",
   floor = 0,
+  min_layer = 0,
+  max_layer = 2,
   tileset = "7",
   music = "temple_mausoleum",
 }
@@ -11932,7 +11934,6 @@ enemy{
   y = 1320,
   direction = 3,
   breed = "arrghus_stone",
-  rank = 1,
   savegame_variable = "b1107",
   treasure_name = "amber",
 }
@@ -12832,7 +12833,6 @@ enemy{
   y = 155,
   direction = 3,
   breed = "vire_sorceror",
-  rank = 2,
   savegame_variable = "b1110",
   treasure_name = "amber",
 }
@@ -12844,7 +12844,6 @@ enemy{
   y = 165,
   direction = 3,
   breed = "vire",
-  rank = 1,
   treasure_name = "amber",
 }
 

@@ -3,7 +3,6 @@
 local item_icon = {}
 
 function item_icon:new(game, slot)
-
   local object = {}
   setmetatable(object, self)
   self.__index = self
@@ -14,7 +13,6 @@ function item_icon:new(game, slot)
 end
 
 function item_icon:initialize(game, slot)
-
   self.game = game
   self.slot = slot
   self.surface = sol.surface.create(32, 28)

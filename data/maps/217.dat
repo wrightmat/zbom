@@ -5,6 +5,8 @@ properties{
   height = 800,
   world = "dungeon_7",
   floor = 7,
+  min_layer = 0,
+  max_layer = 2,
   tileset = "10",
   music = "temple_wind",
 }
@@ -3999,7 +4001,6 @@ enemy{
   y = 189,
   direction = 0,
   breed = "helmaroc_rex",
-  rank = 2,
   savegame_variable = "b1168",
   treasure_name = "alchemy",
 }

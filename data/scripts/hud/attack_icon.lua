@@ -3,11 +3,9 @@
 local attack_icon_builder = {}
 
 function attack_icon_builder:new(game)
-
   local attack_icon = {}
 
   function attack_icon:initialize()
-
     attack_icon.surface = sol.surface.create(72, 24)
     attack_icon.icons_img = sol.surface.create("sword_icon.png", true)
     attack_icon.icon_region_y = nil

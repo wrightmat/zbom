@@ -5,6 +5,8 @@ properties{
   height = 1328,
   world = "dungeon_5",
   floor = 0,
+  min_layer = 0,
+  max_layer = 2,
   tileset = "8",
   music = "temple_lake",
 }
@@ -8752,7 +8754,6 @@ enemy{
   y = 405,
   direction = 3,
   breed = "aquadraco",
-  rank = 1,
   savegame_variable = "b1128",
   treasure_name = "crystal",
 }

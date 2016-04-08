@@ -5,6 +5,8 @@ properties{
   height = 1760,
   world = "dungeon_2",
   floor = 0,
+  min_layer = 0,
+  max_layer = 2,
   tileset = "5",
   music = "temple_grove",
 }
@@ -10594,7 +10596,6 @@ enemy{
   y = 1525,
   direction = 3,
   breed = "mothulita",
-  rank = 1,
   savegame_variable = "b1057",
   treasure_name = "jade",
 }

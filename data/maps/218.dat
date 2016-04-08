@@ -5,6 +5,8 @@ properties{
   height = 1408,
   world = "dungeon_8",
   floor = 0,
+  min_layer = 0,
+  max_layer = 2,
   tileset = "11",
   music = "temple_sanctum",
 }
@@ -6917,7 +6919,6 @@ enemy{
   y = 1237,
   direction = 3,
   breed = "shadow_link",
-  rank = 1,
   savegame_variable = "b1183",
   treasure_name = "crystal",
 }
@@ -6929,7 +6930,6 @@ enemy{
   y = 997,
   direction = 3,
   breed = "zirna",
-  rank = 2,
   savegame_variable = "b1190",
   treasure_name = "crystal",
 }
@@ -7326,7 +7326,6 @@ enemy{
   y = 1005,
   direction = 3,
   breed = "belahim",
-  rank = 2,
   savegame_variable = "b1191",
   treasure_name = "crystal",
 }

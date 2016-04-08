@@ -5,6 +5,8 @@ properties{
   height = 800,
   world = "dungeon_7",
   floor = 2,
+  min_layer = 0,
+  max_layer = 2,
   tileset = "10",
   music = "temple_wind",
 }

@@ -3,7 +3,6 @@
 local hearts = {}
 
 function hearts:new(game)
-
   local object = {}
   setmetatable(object, self)
   self.__index = self

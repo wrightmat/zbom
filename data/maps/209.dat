@@ -5,6 +5,8 @@ properties{
   height = 1760,
   world = "dungeon_6",
   floor = -2,
+  min_layer = 0,
+  max_layer = 2,
   tileset = "9",
   music = "temple_snow",
 }
@@ -6368,7 +6370,6 @@ enemy{
   y = 316,
   direction = 3,
   breed = "stalfos_knight",
-  rank = 2,
   savegame_variable = "b1147",
   treasure_name = "crystal",
 }

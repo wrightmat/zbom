@@ -15,15 +15,10 @@ function camera_manager:create(game)
 
   -- Moves the camera back to the hero.
   function restore_camera()
-
-    if not moving then
-      return
-    end
+    if not moving then  return end
 
     local map = game:get_map()
-    if map == nil then
-      return
-    end
+    if map == nil then return end
 
     local hero = map:get_hero()
     local hero_x, hero_y = hero:get_center_position()
@@ -49,15 +44,11 @@ function camera_manager:create(game)
     just_restored = false
 
     local map = game:get_map()
-    if map == nil then
-      return
-    end
+    if map == nil then return end
 
     local hero = map:get_hero()
-    if hero:get_state() ~= "free" then
       -- Don't interrupt special states.
-      return
-    end
+    if hero:get_state() ~= "free" then return end
 
     if not sol.input.is_key_pressed("left control") and
         not sol.input.is_key_pressed("right control") then
@@ -77,7 +68,7 @@ function camera_manager:create(game)
     end
 
     if not moving then
-      initial_x, initial_y, camera_width, camera_height = map:get_camera_position()
+      initial_x, initial_y, camera_width, camera_height = map:get_camera():get_position()
     end
     moving = true
 

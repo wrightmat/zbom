@@ -5,7 +5,6 @@ local visible = false
 local jade, stick, amber, alchemy, plume, crystal, plume, ore = 0
 
 function pickables:new(game)
-
   local object = {}
   setmetatable(object, self)
   self.__index = self

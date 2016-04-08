@@ -3,11 +3,9 @@
 local action_icon_builder = {}
 
 function action_icon_builder:new(game)
-
   local action_icon = {}
 
   function action_icon:initialize()
-
     action_icon.surface = sol.surface.create(72, 24)
     action_icon.icons_img = sol.surface.create("action_icon.png", true)
     action_icon.icon_region_y = nil

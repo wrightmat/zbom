@@ -101,7 +101,7 @@ function credits_menu:on_finished()
 end
 
 function credits_menu:on_draw(dst_surface)
-  local camera_x, camera_y, camera_width, camera_height = game:get_map():get_camera_position()
+  local camera_x, camera_y, camera_width, camera_height = game:get_map():get_camera():get_position()
   local credits_background = sol.surface.create("menus/credits_background")
   credits_background:draw(dst_surface)
 

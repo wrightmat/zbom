@@ -3,7 +3,6 @@
 local pause_icon = {}
 
 function pause_icon:new(game)
-
   local object = {}
   setmetatable(object, self)
   self.__index = self
@@ -14,7 +13,6 @@ function pause_icon:new(game)
 end
 
 function pause_icon:initialize(game)
-
   self.game = game
   self.is_game_paused = false
   self.surface = sol.surface.create(72, 24)

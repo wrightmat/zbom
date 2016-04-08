@@ -124,7 +124,7 @@ function map:on_draw(dst_surface)
   if lantern_overlay ~= nil then
     local screen_width, screen_height = dst_surface:get_size()
     local hero_x, hero_y = map:get_entity("hero"):get_center_position()
-    local camera_x, camera_y = map:get_camera_position()
+    local camera_x, camera_y = map:get_camera():get_position()
     local x = 320 - hero_x + camera_x
     local y = 240 - hero_y + camera_y
     lantern_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)

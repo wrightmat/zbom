@@ -5,6 +5,8 @@ properties{
   height = 1072,
   world = "dungeon_1",
   floor = 0,
+  min_layer = 0,
+  max_layer = 2,
   tileset = "4",
   music = "sewers",
 }
@@ -5240,7 +5242,6 @@ enemy{
   y = 548,
   direction = 3,
   breed = "carock",
-  rank = 2,
   savegame_variable = "b1046",
   treasure_name = "alchemy",
 }
@@ -5447,7 +5448,6 @@ enemy{
   y = 397,
   direction = 3,
   breed = "knight_chain_ball",
-  rank = 1,
   savegame_variable = "b1050",
   treasure_name = "jade",
 }

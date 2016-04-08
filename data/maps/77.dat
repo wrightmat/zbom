@@ -4,6 +4,8 @@ properties{
   width = 1120,
   height = 1120,
   world = "outside_world",
+  min_layer = 0,
+  max_layer = 2,
   tileset = "3",
   music = "gerudo",
 }
@@ -11525,7 +11527,6 @@ enemy{
   y = 597,
   direction = 0,
   breed = "lanmola",
-  rank = 1,
   treasure_name = "heart_piece",
   treasure_savegame_variable = "b1719",
 }

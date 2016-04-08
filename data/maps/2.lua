@@ -234,60 +234,64 @@ function sensor_sleep:on_activated()
   end)
 end
 
+
 function sensor_zirna_cutscene:on_activated()
   game:set_dialog_style("default")
   -- If the player has been to library and heard Ordona speak, then
   -- continue the story with a Dark Interloper cutscene where they take Zelda.
   if game:get_value("i1032") == 2 then
     local hx, hy, hl = map:get_hero():get_position()
-    npc_zirna:set_enabled(true)
-    npc_zirna:set_invincible()
+    npc_zirna:set_enabled(true); npc_zirna:set_invincible()
     sol.audio.play_music("battle")
     local m = sol.movement.create("target")
     m:set_ignore_obstacles(true)
-    m:set_speed(48)
-    m:set_target(872, 400)
+    m:set_speed(48); m:set_target(872, 400)
     m:start(npc_zirna, function()
-    npc_zirna:get_sprite():set_animation("walking")
-      m:set_target(976, 400)
-      m:start(npc_zirna, function()
-        m:set_target(976, 248)
-        m:start(npc_zirna, function()
-	  game:start_dialog("zirna.0.council", function()
-	    map:move_camera(992, 160, 350, function()
-              game:start_dialog("zelda.0.zirna", function()
-                local zix, ziy, zil = npc_zirna:get_position()
-                dark_appears = map:create_npc({name="dark_appears", x=zix, y=ziy, layer=1, direction=0, subtype=0, sprite="entities/dark_appears"})
-	        sol.timer.start(1000, function()
-		  dark_appears:set_enabled(true)
-                  dark_appears:set_position(992, 127)
-		  sol.timer.start(2000, function()
-                    npc_zirna:set_position(992, 127)
-    	            npc_zirna:get_sprite():set_animation("casting")
-	            game:start_dialog("zirna.0.council_2", function()
-                      zex, zey, zel = elder_zelda:get_position()
-		      dark_appears:set_enabled(true)
-		      dark_appears:set_position(zex, zey)
-		      elder_zelda:remove()
-		      sol.timer.start(1000, function()
-		        dark_appears:set_position(992, 127)
-		        dark_appears:set_enabled(true)
-		        npc_zirna:remove()
-		        dark_appears:remove()
-		        game:set_value("i1032", 3)
-		        sol.timer.start(1000, function()
-			  sol.audio.play_music("castle")
-		        end)
-		      end)
-                    end) --dialog
-		  end)
-                end)
-	      end) --dialog
-	    end, 500, 2000) --camera
-          end) --dialog
-        end)
-      end)
-    end)
+      m:set_ignore_obstacles(false)
+      local m_camera = sol.movement.create("target") -- Follow Zirna during the cutscene instead of the hero.
+      m_camera:set_speed(64)
+      local x, y, z = npc_zirna:get_position()
+      m_camera:set_target(x, y)
+      m_camera:start(map:get_camera())
+      map:get_camera():start_tracking(npc_zirna)
+      npc_zirna:get_sprite():set_animation("walking")
+      m:set_target(992, 248)
+      m:start(npc_zirna)
+      sol.timer.start(map, 5000, function()
+        game:set_dialog_position("bottom")
+        game:start_dialog("zirna.0.council", function()
+          game:set_dialog_position("top")
+          game:start_dialog("zelda.0.zirna", function()
+            dark_appears = map:create_npc({name="dark_appears", x=992, y=232, layer=1, direction=0, subtype=0, sprite="entities/dark_appears"})
+            sol.timer.start(1000, function()
+              dark_appears:set_enabled(true)
+              dark_appears:set_position(992, 127)
+              sol.timer.start(2000, function()
+                npc_zirna:set_position(992, 127)
+                npc_zirna:get_sprite():set_animation("casting")
+                game:set_dialog_position("bottom")
+                game:start_dialog("zirna.0.council_2", function()
+                  zex, zey, zel = elder_zelda:get_position()
+                  dark_appears:set_enabled(true)
+                  dark_appears:set_position(zex, zey)
+                  elder_zelda:remove()
+                  sol.timer.start(1000, function()
+		                dark_appears:set_position(992, 127)
+		                dark_appears:set_enabled(true)
+		                npc_zirna:remove(); dark_appears:remove()
+                    sol.timer.start(map, 1000, function()
+                      map:get_camera():start_tracking(map:get_hero()) -- Zirna's leaving, follow the hero again.
+		                  game:set_value("i1032", 3)
+                    end)
+		                sol.timer.start(1000, function() sol.audio.play_music("castle") end)
+		              end)
+                end) -- dialog
+		          end) -- timer
+            end) -- timer
+          end) -- dialog
+	      end) -- dialog
+      end) -- timer
+    end) -- movement
   end
 end
 

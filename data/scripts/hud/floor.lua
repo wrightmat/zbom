@@ -3,7 +3,6 @@
 local floor_view = {}
 
 function floor_view:new(game)
-
   local object = {}
   setmetatable(object, self)
   self.__index = self
