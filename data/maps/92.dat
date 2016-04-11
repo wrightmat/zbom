@@ -3,9 +3,9 @@ properties{
   y = 0,
   width = 1120,
   height = 1120,
-  world = "outside_north",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_north",
   tileset = "3",
   music = "town_ruto",
 }
@@ -4251,8 +4251,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 408,
-  y = 576,
+  x = 416,
+  y = 600,
   width = 8,
   height = 8,
   pattern = "62",
@@ -4445,6 +4445,60 @@ tile{
   width = 16,
   height = 16,
   pattern = "1724",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 552,
+  width = 24,
+  height = 16,
+  pattern = "235",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 552,
+  width = 24,
+  height = 16,
+  pattern = "235",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 792,
+  width = 24,
+  height = 16,
+  pattern = "235",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 632,
+  width = 24,
+  height = 16,
+  pattern = "235",
+}
+
+tile{
+  layer = 0,
+  x = 760,
+  y = 328,
+  width = 24,
+  height = 16,
+  pattern = "235",
+}
+
+tile{
+  layer = 0,
+  x = 920,
+  y = 88,
+  width = 24,
+  height = 16,
+  pattern = "235",
 }
 
 teletransporter{
@@ -4640,6 +4694,60 @@ tile{
   width = 64,
   height = 48,
   pattern = "87",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 504,
+  width = 40,
+  height = 48,
+  pattern = "234",
+}
+
+tile{
+  layer = 1,
+  x = 376,
+  y = 504,
+  width = 40,
+  height = 48,
+  pattern = "234",
+}
+
+tile{
+  layer = 1,
+  x = 40,
+  y = 744,
+  width = 40,
+  height = 48,
+  pattern = "234",
+}
+
+tile{
+  layer = 1,
+  x = 552,
+  y = 584,
+  width = 40,
+  height = 48,
+  pattern = "234",
+}
+
+tile{
+  layer = 1,
+  x = 752,
+  y = 280,
+  width = 40,
+  height = 48,
+  pattern = "234",
+}
+
+tile{
+  layer = 1,
+  x = 912,
+  y = 40,
+  width = 40,
+  height = 48,
+  pattern = "234",
 }
 
 tile{

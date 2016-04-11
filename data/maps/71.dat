@@ -3,9 +3,9 @@ properties{
   y = 6726,
   width = 1120,
   height = 1120,
-  world = "outside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_world",
   tileset = "3",
   music = "same",
 }
@@ -4627,6 +4627,33 @@ tile{
   pattern = "216",
 }
 
+tile{
+  layer = 0,
+  x = 1040,
+  y = 912,
+  width = 16,
+  height = 16,
+  pattern = "237",
+}
+
+tile{
+  layer = 0,
+  x = 888,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "237",
+}
+
+tile{
+  layer = 0,
+  x = 816,
+  y = 816,
+  width = 16,
+  height = 16,
+  pattern = "237",
+}
+
 sensor{
   name = "house_door_sensor",
   layer = 0,
@@ -5308,6 +5335,66 @@ tile{
   width = 16,
   height = 16,
   pattern = "175",
+}
+
+tile{
+  layer = 1,
+  x = 1040,
+  y = 864,
+  width = 16,
+  height = 48,
+  pattern = "238",
+}
+
+tile{
+  layer = 1,
+  x = 888,
+  y = 256,
+  width = 16,
+  height = 48,
+  pattern = "238",
+}
+
+tile{
+  layer = 1,
+  x = 816,
+  y = 768,
+  width = 16,
+  height = 48,
+  pattern = "238",
+}
+
+dynamic_tile{
+  name = "night_light_1",
+  layer = 1,
+  x = 1040,
+  y = 864,
+  pattern = "240",
+  width = 16,
+  height = 48,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_light_2",
+  layer = 1,
+  x = 888,
+  y = 256,
+  pattern = "240",
+  width = 16,
+  height = 48,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_light_3",
+  layer = 1,
+  x = 816,
+  y = 768,
+  pattern = "240",
+  width = 16,
+  height = 48,
+  enabled_at_start = false,
 }
 
 tile{

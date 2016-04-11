@@ -3,9 +3,9 @@ properties{
   y = 1121,
   width = 1120,
   height = 1120,
-  world = "outside_north",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_north",
   tileset = "2",
   music = "same",
 }
@@ -4175,6 +4175,60 @@ tile{
   width = 32,
   height = 32,
   pattern = "213",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 984,
+  width = 48,
+  height = 8,
+  pattern = "379",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 984,
+  width = 8,
+  height = 8,
+  pattern = "380",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 992,
+  width = 8,
+  height = 32,
+  pattern = "381",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 1024,
+  width = 48,
+  height = 8,
+  pattern = "383",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 1024,
+  width = 8,
+  height = 8,
+  pattern = "382",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 992,
+  width = 48,
+  height = 32,
+  pattern = "327",
 }
 
 teletransporter{
