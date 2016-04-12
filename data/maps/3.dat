@@ -3,9 +3,9 @@ properties{
   y = 0,
   width = 1088,
   height = 1040,
-  world = "inside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "inside_world",
   tileset = "0",
   music = "house",
 }
@@ -3500,6 +3500,15 @@ tile{
   width = 16,
   height = 16,
   pattern = "609",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 56,
+  width = 24,
+  height = 16,
+  pattern = "388",
 }
 
 destination{

@@ -3,9 +3,9 @@ properties{
   y = 0,
   width = 2080,
   height = 1680,
-  world = "inside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "inside_world",
   tileset = "0",
   music = "castle",
 }
@@ -8605,6 +8605,33 @@ tile{
   pattern = "42",
 }
 
+tile{
+  layer = 0,
+  x = 1384,
+  y = 392,
+  width = 24,
+  height = 16,
+  pattern = "388",
+}
+
+tile{
+  layer = 0,
+  x = 1464,
+  y = 392,
+  width = 24,
+  height = 16,
+  pattern = "387",
+}
+
+tile{
+  layer = 0,
+  x = 1480,
+  y = 880,
+  width = 32,
+  height = 24,
+  pattern = "479",
+}
+
 dynamic_tile{
   name = "tile",
   layer = 0,
@@ -9897,6 +9924,15 @@ tile{
   width = 32,
   height = 8,
   pattern = "292",
+}
+
+tile{
+  layer = 1,
+  x = 1480,
+  y = 864,
+  width = 32,
+  height = 16,
+  pattern = "486",
 }
 
 tile{

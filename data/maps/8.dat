@@ -3,11 +3,56 @@ properties{
   y = 0,
   width = 3104,
   height = 1408,
-  world = "inside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "inside_world",
   tileset = "0",
   music = "house",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 448,
+  width = 64,
+  height = 32,
+  pattern = "677",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 464,
+  width = 176,
+  height = 160,
+  pattern = "384",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 448,
+  width = 136,
+  height = 192,
+  pattern = "677",
+}
+
+tile{
+  layer = 0,
+  x = 2496,
+  y = 832,
+  width = 160,
+  height = 144,
+  pattern = "478",
+}
+
+tile{
+  layer = 0,
+  x = 2880,
+  y = 832,
+  width = 160,
+  height = 144,
+  pattern = "433",
 }
 
 tile{
@@ -165,15 +210,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 200,
-  y = 448,
-  width = 64,
-  height = 32,
-  pattern = "677",
-}
-
-tile{
-  layer = 0,
   x = 560,
   y = 448,
   width = 64,
@@ -233,24 +269,6 @@ tile{
   width = 160,
   height = 32,
   pattern = "151",
-}
-
-tile{
-  layer = 0,
-  x = 224,
-  y = 592,
-  width = 40,
-  height = 32,
-  pattern = "677",
-}
-
-tile{
-  layer = 0,
-  x = 56,
-  y = 472,
-  width = 192,
-  height = 144,
-  pattern = "483",
 }
 
 tile{
@@ -1291,55 +1309,10 @@ tile{
 tile{
   layer = 0,
   x = 232,
-  y = 32,
+  y = 40,
   width = 48,
-  height = 24,
+  height = 16,
   pattern = "559",
-}
-
-tile{
-  layer = 0,
-  x = 296,
-  y = 32,
-  width = 40,
-  height = 24,
-  pattern = "558",
-}
-
-tile{
-  layer = 0,
-  x = 304,
-  y = 32,
-  width = 8,
-  height = 24,
-  pattern = "561",
-}
-
-tile{
-  layer = 0,
-  x = 312,
-  y = 32,
-  width = 8,
-  height = 24,
-  pattern = "562",
-}
-
-tile{
-  layer = 0,
-  x = 320,
-  y = 32,
-  width = 8,
-  height = 24,
-  pattern = "561",
-}
-
-tile{
-  layer = 0,
-  x = 248,
-  y = 32,
-  width = 16,
-  height = 24,
-  pattern = "567",
 }
 
 tile{
@@ -9561,15 +9534,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 2496,
-  y = 832,
-  width = 160,
-  height = 144,
-  pattern = "529",
-}
-
-tile{
-  layer = 0,
   x = 2584,
   y = 984,
   width = 80,
@@ -9764,15 +9728,6 @@ tile{
   width = 160,
   height = 8,
   pattern = "202",
-}
-
-tile{
-  layer = 0,
-  x = 2880,
-  y = 832,
-  width = 160,
-  height = 144,
-  pattern = "529",
 }
 
 tile{
@@ -10745,6 +10700,24 @@ tile{
   width = 8,
   height = 8,
   pattern = "213",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 40,
+  width = 40,
+  height = 16,
+  pattern = "426",
+}
+
+tile{
+  layer = 0,
+  x = 1968,
+  y = 472,
+  width = 80,
+  height = 24,
+  pattern = "487",
 }
 
 dynamic_tile{
@@ -11963,7 +11936,7 @@ npc{
   name = "npc_priest",
   layer = 0,
   x = 2008,
-  y = 509,
+  y = 533,
   direction = 3,
   subtype = 1,
   sprite = "npc/hylian_14",
@@ -12352,6 +12325,42 @@ tile{
   pattern = "670",
 }
 
+tile{
+  layer = 1,
+  x = 304,
+  y = 32,
+  width = 8,
+  height = 24,
+  pattern = "561",
+}
+
+tile{
+  layer = 1,
+  x = 312,
+  y = 32,
+  width = 8,
+  height = 24,
+  pattern = "562",
+}
+
+tile{
+  layer = 1,
+  x = 320,
+  y = 32,
+  width = 8,
+  height = 24,
+  pattern = "561",
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 32,
+  width = 16,
+  height = 24,
+  pattern = "567",
+}
+
 npc{
   name = "quest_trading_ball",
   layer = 1,
@@ -12396,15 +12405,6 @@ tile{
   width = 32,
   height = 8,
   pattern = "153",
-}
-
-tile{
-  layer = 2,
-  x = 264,
-  y = 448,
-  width = 128,
-  height = 192,
-  pattern = "677",
 }
 
 tile{
@@ -13062,6 +13062,15 @@ tile{
   width = 24,
   height = 8,
   pattern = "608",
+}
+
+tile{
+  layer = 2,
+  x = 1968,
+  y = 440,
+  width = 80,
+  height = 32,
+  pattern = "488",
 }
 
 separator{

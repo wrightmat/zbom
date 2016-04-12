@@ -3,9 +3,9 @@ properties{
   y = 0,
   width = 976,
   height = 640,
-  world = "inside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "inside_world",
   tileset = "0",
   music = "cave_ice",
 }
@@ -836,15 +836,6 @@ tile{
   width = 24,
   height = 40,
   pattern = "412",
-}
-
-tile{
-  layer = 0,
-  x = 464,
-  y = 32,
-  width = 32,
-  height = 16,
-  pattern = "364",
 }
 
 tile{
@@ -2386,6 +2377,51 @@ tile{
   pattern = "560",
 }
 
+tile{
+  layer = 0,
+  x = 464,
+  y = 32,
+  width = 32,
+  height = 16,
+  pattern = "360",
+}
+
+tile{
+  layer = 0,
+  x = 792,
+  y = 560,
+  width = 32,
+  height = 24,
+  pattern = "479",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 512,
+  width = 80,
+  height = 24,
+  pattern = "431",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 440,
+  width = 24,
+  height = 16,
+  pattern = "387",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 432,
+  width = 8,
+  height = 16,
+  pattern = "389",
+}
+
 destination{
   name = "from_outside_house_1",
   layer = 0,
@@ -2546,6 +2582,15 @@ tile{
   width = 16,
   height = 8,
   pattern = "672",
+}
+
+tile{
+  layer = 1,
+  x = 792,
+  y = 544,
+  width = 32,
+  height = 16,
+  pattern = "486",
 }
 
 tile{

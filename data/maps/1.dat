@@ -3,9 +3,9 @@ properties{
   y = 0,
   width = 1280,
   height = 1024,
-  world = "inside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "inside_world",
   tileset = "0",
   music = "house",
 }
@@ -4710,24 +4710,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 256,
-  y = 416,
-  width = 40,
-  height = 24,
-  pattern = "558",
-}
-
-tile{
-  layer = 0,
-  x = 264,
-  y = 416,
-  width = 32,
-  height = 24,
-  pattern = "565",
-}
-
-tile{
-  layer = 0,
   x = 584,
   y = 896,
   width = 8,
@@ -5228,6 +5210,15 @@ tile{
   width = 32,
   height = 32,
   pattern = "441",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 424,
+  width = 40,
+  height = 16,
+  pattern = "426",
 }
 
 npc{
@@ -6293,6 +6284,15 @@ custom_entity{
   direction = 0,
   sprite = "entities/quest_books",
   model = "quest_books",
+}
+
+tile{
+  layer = 1,
+  x = 264,
+  y = 416,
+  width = 32,
+  height = 24,
+  pattern = "565",
 }
 
 npc{
