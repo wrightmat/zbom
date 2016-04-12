@@ -38,21 +38,22 @@ local function end_race_won()
       sol.timer.start(1000, function()
         hero:freeze()
         -- Move camera to Ordona's torch, and track it throughout the dialog.
-        local t = map:get_entities("torch_5")
+        local t = map:get_entity("torch_5")
         local m = sol.movement.create("target")
-        m:set_speed(32)
+        m:set_speed(16)
         m:set_target(t)
-        m:start(map:get_camera(), function() map:get_camera():start_tracking(t) end)
+        m:start(map:get_camera())
+        map:get_camera():start_tracking(t)
         torch_overlay = sol.surface.create("entities/dark.png")
         torch_overlay:fade_in(50)
-        hero:set_direction(0)
         game:start_dialog("ordona.0.festival", game:get_player_name(), function()
           torch_overlay:fade_out(50)
-          -- Move camera back to hero and track him.
-          local m = sol.movement.create("target")
-          m:set_target(map:get_hero())
-          m:start(map:get_camera(), function() map:get_camera():start_tracking(map:get_hero()) end)
           sol.timer.start(2000, function()
+          -- Move camera back to hero and track him.
+            local m = sol.movement.create("target")
+            m:set_target(map:get_hero())
+            m:start(map:get_camera())
+            map:get_camera():start_tracking(map:get_hero())
             torch_overlay = nil
             torch_5:get_sprite():set_animation("unlit")
           end)
@@ -95,7 +96,7 @@ function map:on_draw(dst_surface)
   -- Show torch overlay for Ordona dialog
   if game:get_time_of_day() ~= "night" and torch_overlay ~= nil then
     local screen_width, screen_height = dst_surface:get_size()
-    local cx, cy = map:get_camera_position()
+    local cx, cy = map:get_camera():get_position()
     local tx, ty = torch_5:get_center_position()
     local x = 320 - tx + cx
     local y = 240 - ty + cy
