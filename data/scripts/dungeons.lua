@@ -60,6 +60,12 @@ game.dungeons = {
     lowest_floor = -1,
     highest_floor = 0,
     maps = { "206", "207" },
+    boss = {
+      floor = -1,
+      x = 416,
+      y = 1192,
+      savegame_variable = "b1131",
+    },
   },
   [6] = {
     floor_width = 1024,
@@ -67,6 +73,12 @@ game.dungeons = {
     lowest_floor = -2,
     highest_floor = -1,
     maps = { "208", "209" },
+    boss = {
+      floor = -2,
+      x = 232,
+      y = 312,
+      savegame_variable = "b1147",
+    },
   },
   [7] = {
     floor_width = 912,
@@ -74,6 +86,12 @@ game.dungeons = {
     lowest_floor = 0,
     highest_floor = 7,
     maps = { "210", "211", "212", "213", "214", "215", "216", "217" },
+    boss = {
+      floor = 7,
+      x = 448,
+      y = 184,
+      savegame_variable = "b1110",
+    },
   },
   [8] = {
     floor_width = 2032,
@@ -81,6 +99,12 @@ game.dungeons = {
     lowest_floor = -1,
     highest_floor = 0,
     maps = { "218", "219" },
+    boss = {
+      floor = 0,
+      x = 880,
+      y = 180,
+      savegame_variable = "b1191",
+    },
   },
 }
 
