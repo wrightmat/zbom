@@ -21,7 +21,6 @@ if map:get_id() == "170" then
   }
 end
 
-
 -- Vire Sorceror (Boss of Mausoleum): creates Vires and Fire Keese.
 
 function enemy:on_created()
@@ -42,7 +41,7 @@ function enemy:on_restarted()
   for _, t in ipairs(timers) do t:stop() end
   local sprite = self:get_sprite()
 
-  if not finished then
+  if math.random(4) == 1 then
     sprite:fade_out()
     timers[#timers + 1] = sol.timer.start(self:get_map(), 700, function() self:hide() end)
   end
@@ -50,12 +49,18 @@ function enemy:on_restarted()
   if ex == -100 and ey == -100 then
     self:unhide()
   end
+  timers[#timers + 1] = sol.timer.start(self:get_map(), 1000, function()
+print(map:get_entities_count("vire"))
+    if map:get_entities_count("vire") < 2 then
+      self:create_enemy({ x = position.x + 20, y = position.y + 20, name = "vire_", breed = "vire",	treasure_name = "amber" })
+    end
+  end)
 end
 
 function enemy:hide()
   vulnerable = false
   self:set_position(-100, -100)
-  sol.timer.start(self:get_map(), 500, function() self:unhide() end)
+  sol.timer.start(self:get_map(), math.random(5)*500, function() self:unhide() end)
 end
 
 function enemy:unhide()
@@ -64,15 +69,5 @@ function enemy:unhide()
   local sprite = self:get_sprite()
   sprite:set_direction(position.direction4)
   sprite:fade_in()
-  timers[#timers + 1] = sol.timer.start(self:get_map(), 1000, function()
-    if map:get_entities_count("vire") < 2 then
-      self:create_enemy({
-	x = position.x + 20,
-	y = position.y + 20,
-	name = "vire_",
-	breed = "vire",
-	treasure_name = "amber"
-      })
-    end
-  end)
+  vulnerable = true
 end

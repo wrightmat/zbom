@@ -49,8 +49,8 @@ game.dungeons = {
     maps = { "205" },
     boss = {
       floor = 0,
-      x = 200,
-      y = 464,
+      x = 1528,
+      y = 160,
       savegame_variable = "b1110",
     },
   },
