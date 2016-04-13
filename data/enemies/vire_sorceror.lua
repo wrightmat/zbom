@@ -3,8 +3,15 @@ local map = enemy:get_map()
 local vulnerable = false
 local timers = {}
 -- Possible positions where he appears.
+local positions = {
+  {x = 1576, y = 128, direction4 = 3},
+  {x = 1448, y = 224, direction4 = 3},
+  {x = 1352, y = 160, direction4 = 3},
+  {x = 1608, y = 208, direction4 = 3},
+  {x = 1584, y = 64, direction4 = 3}
+}
 if map:get_id() == "170" then
--- Positions are different if this is the boss run.
+  -- Positions are different if this is the boss run.
   local positions = {
     {x = 440, y = 148, direction4 = 3},
     {x = 321, y = 244, direction4 = 3},
@@ -12,15 +19,8 @@ if map:get_id() == "170" then
     {x = 472, y = 228, direction4 = 3},
     {x = 448, y = 84, direction4 = 3}
   }
-else
-  local positions = {
-    {x = 1576, y = 128, direction4 = 3},
-    {x = 1448, y = 224, direction4 = 3},
-    {x = 1352, y = 160, direction4 = 3},
-    {x = 1608, y = 208, direction4 = 3},
-    {x = 1584, y = 64, direction4 = 3}
-  }
 end
+
 
 -- Vire Sorceror (Boss of Mausoleum): creates Vires and Fire Keese.
 
