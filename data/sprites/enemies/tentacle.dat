@@ -14,6 +14,7 @@ animation{
   name = "hurt",
   src_image = "enemies/tentacle.png",
   frame_delay = 100,
+  frame_to_loop_on = 0,
   directions = {
     { x = 0, y = 24, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 3 },
     { x = 0, y = 24, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 3 },

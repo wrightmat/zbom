@@ -14,10 +14,10 @@ animation{
   name = "hurt",
   src_image = "enemies/vire.png",
   directions = {
-    { x = 72, y = 32, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 13 },
-    { x = 72, y = 32, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 13 },
-    { x = 72, y = 32, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 13 },
-    { x = 72, y = 32, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 13 },
+    { x = 72, y = 32, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 13, num_frames = 2 },
+    { x = 72, y = 32, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 13, num_frames = 2 },
+    { x = 72, y = 32, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 13, num_frames = 2 },
+    { x = 72, y = 32, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 13, num_frames = 2 },
   },
 }
 animation{
@@ -34,7 +34,6 @@ animation{
   name = "shaking",
   src_image = "enemies/vire.png",
   frame_delay = 100,
-  frame_to_loop_on = 0,
   directions = {
     { x = 24, y = 32, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 13, num_frames = 2 },
     { x = 24, y = 32, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 13, num_frames = 2 },

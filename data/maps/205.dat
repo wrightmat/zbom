@@ -13924,6 +13924,132 @@ destructible{
   can_be_cut = true,
 }
 
+wall{
+  layer = 0,
+  x = 504,
+  y = 1248,
+  width = 8,
+  height = 176,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 224,
+  y = 1416,
+  width = 280,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 224,
+  y = 1248,
+  width = 192,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 496,
+  y = 1024,
+  width = 144,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 488,
+  y = 928,
+  width = 8,
+  height = 104,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 320,
+  y = 928,
+  width = 168,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 400,
+  y = 1096,
+  width = 240,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 656,
+  y = 664,
+  width = 144,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 792,
+  y = 672,
+  width = 8,
+  height = 152,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1024,
+  y = 488,
+  width = 8,
+  height = 144,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1032,
+  y = 488,
+  width = 328,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1128,
+  y = 216,
+  width = 8,
+  height = 224,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 880,
+  y = 216,
+  width = 248,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1136,
+  y = 208,
+  width = 112,
+  height = 8,
+  stops_enemies = true,
+}
+
 enemy{
   name = "keese_2",
   layer = 1,

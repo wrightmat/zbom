@@ -1,6 +1,8 @@
 local enemy = ...
 local map = enemy:get_map()
 local vulnerable = false
+local position_last = {}
+local enemies_region = 0
 local timers = {}
 -- Possible positions where he appears.
 local positions = {
@@ -50,14 +52,19 @@ function enemy:on_restarted()
     self:unhide()
   end
   timers[#timers + 1] = sol.timer.start(self:get_map(), 1000, function()
-print(map:get_entities_count("vire"))
-    if map:get_entities_count("vire") < 2 then
-      self:create_enemy({ x = position.x + 20, y = position.y + 20, name = "vire_", breed = "vire",	treasure_name = "amber" })
+    for entity in map:get_entities_in_rectangle(1272, 16, 408, 288) do
+      if entity:get_type() == "enemy" then enemies_region = enemies_region + 1 end
+    end
+    if enemies_region < 2 then
+      sol.timer.start(map, 5000, function()
+        self:create_enemy({ x = ex + 20, y = ey + 20, name = "vire", breed = "vire", treasure_name = "amber" })
+      end)
     end
   end)
 end
 
 function enemy:hide()
+  position_last = self:get_position()
   vulnerable = false
   self:set_position(-100, -100)
   sol.timer.start(self:get_map(), math.random(5)*500, function() self:unhide() end)
@@ -65,9 +72,16 @@ end
 
 function enemy:unhide()
   local position = (positions[math.random(#positions)])
+  if position == position_last then  -- Reselect position if it's the same as last time.
+    local position = (positions[math.random(#positions)])
+  end
   self:set_position(position.x, position.y)
   local sprite = self:get_sprite()
   sprite:set_direction(position.direction4)
   sprite:fade_in()
   vulnerable = true
+end
+
+function enemy:on_hurt()
+  sol.timer.start(map, 400, function() self:hide() end)
 end

@@ -23,7 +23,6 @@ function enemy:on_update()
   if self:get_distance(hero) <= 96 and state ~= "going" then
     if sprite == "enemies/keese" then sprite:set_animation("walking") end
     local m = sol.movement.create("target")
-    m:set_ignore_obstacles(true)
     m:set_speed(64)
     m:start(self)
     state = "going"
