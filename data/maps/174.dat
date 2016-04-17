@@ -12,6 +12,24 @@ properties{
 
 tile{
   layer = 0,
+  x = 440,
+  y = 200,
+  width = 304,
+  height = 64,
+  pattern = "384",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 56,
+  width = 304,
+  height = 64,
+  pattern = "384",
+}
+
+tile{
+  layer = 0,
   x = 824,
   y = 1288,
   width = 208,
@@ -3469,9 +3487,9 @@ tile{
 tile{
   layer = 0,
   x = 440,
-  y = 56,
+  y = 120,
   width = 304,
-  height = 208,
+  height = 80,
   pattern = "565",
 }
 
@@ -5572,6 +5590,393 @@ tile{
   pattern = "642",
 }
 
+tile{
+  layer = 0,
+  x = 224,
+  y = 1224,
+  width = 8,
+  height = 40,
+  pattern = "641",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 1216,
+  width = 8,
+  height = 8,
+  pattern = "640",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 1264,
+  width = 8,
+  height = 8,
+  pattern = "640",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 1264,
+  width = 104,
+  height = 8,
+  pattern = "642",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 1264,
+  width = 8,
+  height = 8,
+  pattern = "640",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 1272,
+  width = 8,
+  height = 80,
+  pattern = "641",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 1216,
+  width = 8,
+  height = 8,
+  pattern = "640",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 1224,
+  width = 8,
+  height = 80,
+  pattern = "641",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 1304,
+  width = 8,
+  height = 8,
+  pattern = "640",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 1352,
+  width = 8,
+  height = 8,
+  pattern = "640",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 1104,
+  width = 48,
+  height = 16,
+  pattern = "752",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 1104,
+  width = 48,
+  height = 16,
+  pattern = "752",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 928,
+  width = 16,
+  height = 32,
+  pattern = "752",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 928,
+  width = 16,
+  height = 16,
+  pattern = "752",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 928,
+  width = 16,
+  height = 32,
+  pattern = "752",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 928,
+  width = 16,
+  height = 16,
+  pattern = "752",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 1376,
+  width = 32,
+  height = 32,
+  pattern = "752",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 1216,
+  width = 32,
+  height = 16,
+  pattern = "752",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 1216,
+  width = 32,
+  height = 16,
+  pattern = "752",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 1304,
+  width = 32,
+  height = 32,
+  pattern = "399",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 1232,
+  width = 32,
+  height = 32,
+  pattern = "399",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 760,
+  width = 32,
+  height = 32,
+  pattern = "399",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 712,
+  width = 32,
+  height = 32,
+  pattern = "399",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 760,
+  width = 32,
+  height = 32,
+  pattern = "399",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 664,
+  width = 32,
+  height = 32,
+  pattern = "399",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 664,
+  width = 32,
+  height = 32,
+  pattern = "399",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 792,
+  width = 32,
+  height = 16,
+  pattern = "752",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 696,
+  width = 32,
+  height = 16,
+  pattern = "752",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 744,
+  width = 32,
+  height = 16,
+  pattern = "752",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 792,
+  width = 32,
+  height = 16,
+  pattern = "752",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 696,
+  width = 32,
+  height = 16,
+  pattern = "752",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 112,
+  width = 288,
+  height = 8,
+  pattern = "407",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 192,
+  width = 288,
+  height = 8,
+  pattern = "407",
+}
+
+tile{
+  layer = 0,
+  x = 1536,
+  y = 184,
+  width = 32,
+  height = 32,
+  pattern = "399",
+}
+
+tile{
+  layer = 0,
+  x = 1632,
+  y = 136,
+  width = 32,
+  height = 32,
+  pattern = "399",
+}
+
+tile{
+  layer = 0,
+  x = 1728,
+  y = 184,
+  width = 32,
+  height = 32,
+  pattern = "399",
+}
+
+tile{
+  layer = 0,
+  x = 1536,
+  y = 88,
+  width = 32,
+  height = 32,
+  pattern = "399",
+}
+
+tile{
+  layer = 0,
+  x = 1728,
+  y = 88,
+  width = 32,
+  height = 32,
+  pattern = "399",
+}
+
+tile{
+  layer = 0,
+  x = 1536,
+  y = 216,
+  width = 32,
+  height = 16,
+  pattern = "752",
+}
+
+tile{
+  layer = 0,
+  x = 1536,
+  y = 120,
+  width = 32,
+  height = 16,
+  pattern = "752",
+}
+
+tile{
+  layer = 0,
+  x = 1632,
+  y = 168,
+  width = 32,
+  height = 16,
+  pattern = "752",
+}
+
+tile{
+  layer = 0,
+  x = 1728,
+  y = 216,
+  width = 32,
+  height = 16,
+  pattern = "752",
+}
+
+tile{
+  layer = 0,
+  x = 1728,
+  y = 120,
+  width = 32,
+  height = 16,
+  pattern = "752",
+}
+
 npc{
   name = "npc_great_fairy",
   layer = 0,
@@ -5603,7 +6008,7 @@ sensor{
 door{
   name = "door_fairy_1",
   layer = 0,
-  x = 744,
+  x = 1032,
   y = 1344,
   direction = 0,
   sprite = "entities/door_shutter",
@@ -5612,7 +6017,7 @@ door{
 door{
   name = "door_fairy_2",
   layer = 0,
-  x = 808,
+  x = 1096,
   y = 1344,
   direction = 2,
   sprite = "entities/door_shutter",
@@ -5648,13 +6053,1273 @@ teletransporter{
   destination_map = "174",
 }
 
-door{
-  name = "door_temp",
+enemy{
+  name = "leever_1",
   layer = 0,
-  x = 1416,
-  y = 1344,
+  x = 512,
+  y = 1269,
   direction = 0,
-  sprite = "entities/door_shutter",
+  breed = "leever_purple",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "leever_2",
+  layer = 0,
+  x = 544,
+  y = 1373,
+  direction = 0,
+  breed = "leever_purple",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "leever_3",
+  layer = 0,
+  x = 632,
+  y = 1269,
+  direction = 0,
+  breed = "leever_purple",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "leever_4",
+  layer = 0,
+  x = 696,
+  y = 1349,
+  direction = 0,
+  breed = "leever_purple",
+  treasure_name = "random_north",
+}
+
+custom_entity{
+  name = "switch_rust_1",
+  layer = 0,
+  x = 248,
+  y = 1245,
+  direction = 0,
+  sprite = "entities/switch_rust",
+  model = "switch_rust",
+}
+
+custom_entity{
+  name = "metal_ball",
+  layer = 0,
+  x = 136,
+  y = 1389,
+  direction = 0,
+  sprite = "entities/metal_ball",
+  model = "metal_ball",
+}
+
+stream{
+  layer = 0,
+  x = 144,
+  y = 1349,
+  direction = 2,
+  sprite = "entities/conveyor",
+}
+
+stream{
+  layer = 0,
+  x = 144,
+  y = 1333,
+  direction = 2,
+  sprite = "entities/conveyor",
+}
+
+stream{
+  layer = 0,
+  x = 144,
+  y = 1317,
+  direction = 2,
+  sprite = "entities/conveyor",
+}
+
+stream{
+  layer = 0,
+  x = 144,
+  y = 1301,
+  direction = 0,
+  sprite = "entities/conveyor",
+}
+
+stream{
+  layer = 0,
+  x = 160,
+  y = 1301,
+  direction = 0,
+  sprite = "entities/conveyor",
+}
+
+stream{
+  layer = 0,
+  x = 128,
+  y = 1349,
+  direction = 2,
+  sprite = "entities/conveyor",
+}
+
+stream{
+  layer = 0,
+  x = 128,
+  y = 1333,
+  direction = 2,
+  sprite = "entities/conveyor",
+}
+
+stream{
+  layer = 0,
+  x = 128,
+  y = 1317,
+  direction = 2,
+  sprite = "entities/conveyor",
+}
+
+stream{
+  layer = 0,
+  x = 128,
+  y = 1301,
+  direction = 2,
+  sprite = "entities/conveyor",
+}
+
+stream{
+  layer = 0,
+  x = 128,
+  y = 1285,
+  direction = 0,
+  sprite = "entities/conveyor",
+}
+
+stream{
+  layer = 0,
+  x = 144,
+  y = 1285,
+  direction = 0,
+  sprite = "entities/conveyor",
+}
+
+stream{
+  layer = 0,
+  x = 160,
+  y = 1285,
+  direction = 0,
+  sprite = "entities/conveyor",
+}
+
+stream{
+  layer = 0,
+  x = 176,
+  y = 1285,
+  direction = 0,
+  sprite = "entities/conveyor",
+}
+
+stream{
+  layer = 0,
+  x = 176,
+  y = 1301,
+  direction = 0,
+  sprite = "entities/conveyor",
+}
+
+stream{
+  layer = 0,
+  x = 192,
+  y = 1301,
+  direction = 0,
+  sprite = "entities/conveyor",
+}
+
+stream{
+  layer = 0,
+  x = 192,
+  y = 1285,
+  direction = 0,
+  sprite = "entities/conveyor",
+}
+
+stream{
+  layer = 0,
+  x = 208,
+  y = 1285,
+  direction = 0,
+  sprite = "entities/conveyor",
+}
+
+stream{
+  layer = 0,
+  x = 208,
+  y = 1301,
+  direction = 0,
+  sprite = "entities/conveyor",
+}
+
+stream{
+  layer = 0,
+  x = 224,
+  y = 1301,
+  direction = 0,
+  sprite = "entities/conveyor",
+}
+
+stream{
+  layer = 0,
+  x = 224,
+  y = 1285,
+  direction = 0,
+  sprite = "entities/conveyor",
+}
+
+stream{
+  layer = 0,
+  x = 240,
+  y = 1285,
+  direction = 2,
+  sprite = "entities/conveyor",
+}
+
+stream{
+  layer = 0,
+  x = 256,
+  y = 1301,
+  direction = 2,
+  sprite = "entities/conveyor",
+}
+
+stream{
+  layer = 0,
+  x = 256,
+  y = 1285,
+  direction = 2,
+  sprite = "entities/conveyor",
+}
+
+stream{
+  layer = 0,
+  x = 256,
+  y = 1269,
+  direction = 2,
+  sprite = "entities/conveyor",
+}
+
+stream{
+  layer = 0,
+  x = 240,
+  y = 1269,
+  direction = 2,
+  sprite = "entities/conveyor",
+}
+
+stream{
+  layer = 0,
+  x = 240,
+  y = 1301,
+  direction = 0,
+  sprite = "entities/conveyor",
+}
+
+enemy{
+  name = "stal_20",
+  layer = 0,
+  x = 176,
+  y = 941,
+  direction = 0,
+  breed = "stal",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "stal_21",
+  layer = 0,
+  x = 240,
+  y = 941,
+  direction = 0,
+  breed = "stal",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "stal_22",
+  layer = 0,
+  x = 176,
+  y = 973,
+  direction = 0,
+  breed = "stal",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "stal_23",
+  layer = 0,
+  x = 240,
+  y = 973,
+  direction = 0,
+  breed = "stal",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "stal_24",
+  layer = 0,
+  x = 176,
+  y = 1005,
+  direction = 0,
+  breed = "stal",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "stal_25",
+  layer = 0,
+  x = 240,
+  y = 1005,
+  direction = 0,
+  breed = "stal",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "stal_26",
+  layer = 0,
+  x = 176,
+  y = 1037,
+  direction = 0,
+  breed = "stal",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "stal_27",
+  layer = 0,
+  x = 240,
+  y = 1037,
+  direction = 0,
+  breed = "stal",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "stal_28",
+  layer = 0,
+  x = 176,
+  y = 1069,
+  direction = 0,
+  breed = "stal",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "stal_29",
+  layer = 0,
+  x = 240,
+  y = 1069,
+  direction = 0,
+  breed = "stal",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "stal_30",
+  layer = 0,
+  x = 144,
+  y = 941,
+  direction = 0,
+  breed = "stal",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "stal_31",
+  layer = 0,
+  x = 272,
+  y = 941,
+  direction = 0,
+  breed = "stal",
+  treasure_name = "random_north",
+}
+
+destructible{
+  layer = 0,
+  x = 88,
+  y = 941,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 72,
+  y = 941,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 72,
+  y = 957,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 344,
+  y = 941,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 328,
+  y = 941,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 344,
+  y = 957,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 72,
+  y = 1117,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 88,
+  y = 1117,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 104,
+  y = 1117,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 344,
+  y = 1117,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 328,
+  y = 1117,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 312,
+  y = 1117,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 344,
+  y = 1405,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 344,
+  y = 1389,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 328,
+  y = 1389,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 328,
+  y = 1405,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 456,
+  y = 1229,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 472,
+  y = 1229,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 728,
+  y = 1229,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 712,
+  y = 1229,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+enemy{
+  name = "leever_5",
+  layer = 0,
+  x = 640,
+  y = 1389,
+  direction = 0,
+  breed = "leever_purple",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "leever_6",
+  layer = 0,
+  x = 704,
+  y = 1277,
+  direction = 0,
+  breed = "leever_purple",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "leever_7",
+  layer = 0,
+  x = 496,
+  y = 1333,
+  direction = 0,
+  breed = "leever_purple",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "octo_1",
+  layer = 0,
+  x = 112,
+  y = 413,
+  direction = 0,
+  breed = "octolux",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "octo_2",
+  layer = 0,
+  x = 160,
+  y = 485,
+  direction = 0,
+  breed = "octolux",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "octo_3",
+  layer = 0,
+  x = 232,
+  y = 421,
+  direction = 0,
+  breed = "octolux",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "octo_4",
+  layer = 0,
+  x = 288,
+  y = 509,
+  direction = 0,
+  breed = "octolux",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "octo_5",
+  layer = 0,
+  x = 320,
+  y = 389,
+  direction = 0,
+  breed = "octolux",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "octo_6",
+  layer = 0,
+  x = 104,
+  y = 509,
+  direction = 0,
+  breed = "octolux",
+  treasure_name = "random_north",
+}
+
+destructible{
+  layer = 0,
+  x = 104,
+  y = 805,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 120,
+  y = 805,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 200,
+  y = 757,
+  treasure_name = "heart",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 216,
+  y = 757,
+  treasure_name = "fairy",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 296,
+  y = 805,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 312,
+  y = 805,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 296,
+  y = 709,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 312,
+  y = 709,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 104,
+  y = 709,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 120,
+  y = 709,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+enemy{
+  name = "chuchu_4",
+  layer = 0,
+  x = 200,
+  y = 157,
+  direction = 0,
+  breed = "chuchu_blue",
+  treasure_name = "rupee",
+  treasure_variant = 2,
+}
+
+enemy{
+  name = "chuchu_5",
+  layer = 0,
+  x = 304,
+  y = 93,
+  direction = 0,
+  breed = "chuchu_blue",
+  treasure_name = "rupee",
+  treasure_variant = 2,
+}
+
+enemy{
+  name = "chuchu_6",
+  layer = 0,
+  x = 96,
+  y = 149,
+  direction = 0,
+  breed = "chuchu_blue",
+  treasure_name = "rupee",
+  treasure_variant = 2,
+}
+
+enemy{
+  name = "chuchu_7",
+  layer = 0,
+  x = 96,
+  y = 229,
+  direction = 0,
+  breed = "chuchu_blue",
+  treasure_name = "rupee",
+  treasure_variant = 2,
+}
+
+enemy{
+  name = "chuchu_8",
+  layer = 0,
+  x = 272,
+  y = 237,
+  direction = 0,
+  breed = "chuchu_blue",
+  treasure_name = "rupee",
+  treasure_variant = 2,
+}
+
+enemy{
+  layer = 0,
+  x = 496,
+  y = 101,
+  direction = 0,
+  breed = "swamp_flower_big",
+}
+
+enemy{
+  layer = 0,
+  x = 592,
+  y = 101,
+  direction = 0,
+  breed = "swamp_flower_big",
+}
+
+enemy{
+  layer = 0,
+  x = 688,
+  y = 101,
+  direction = 0,
+  breed = "swamp_flower_big",
+}
+
+enemy{
+  layer = 0,
+  x = 592,
+  y = 237,
+  direction = 0,
+  breed = "swamp_flower_big",
+}
+
+enemy{
+  layer = 0,
+  x = 496,
+  y = 237,
+  direction = 0,
+  breed = "swamp_flower_big",
+}
+
+enemy{
+  layer = 0,
+  x = 688,
+  y = 237,
+  direction = 0,
+  breed = "swamp_flower_big",
+}
+
+destructible{
+  layer = 0,
+  x = 1544,
+  y = 229,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 1560,
+  y = 229,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 1640,
+  y = 181,
+  treasure_name = "heart",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 1656,
+  y = 181,
+  treasure_name = "fairy",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 1736,
+  y = 229,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 1752,
+  y = 229,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 1736,
+  y = 133,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 1752,
+  y = 133,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 1544,
+  y = 133,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 1560,
+  y = 133,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  weight = 1,
+}
+
+wall{
+  layer = 0,
+  x = 736,
+  y = 1336,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 440,
+  y = 1296,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 192,
+  y = 1120,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 192,
+  y = 920,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 192,
+  y = 544,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 192,
+  y = 344,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 192,
+  y = 256,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 352,
+  y = 144,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 440,
+  y = 144,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 736,
+  y = 144,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 824,
+  y = 144,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1408,
+  y = 144,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1632,
+  y = 344,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1632,
+  y = 544,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1632,
+  y = 632,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1632,
+  y = 832,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1632,
+  y = 920,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1632,
+  y = 1120,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1632,
+  y = 1208,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1496,
+  y = 1336,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+custom_entity{
+  layer = 1,
+  x = 120,
+  y = 181,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 1,
+  x = 344,
+  y = 133,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 1,
+  x = 320,
+  y = 149,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 1,
+  x = 320,
+  y = 165,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 1,
+  x = 320,
+  y = 181,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 1,
+  x = 336,
+  y = 197,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 1,
+  x = 248,
+  y = 109,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 1,
+  x = 248,
+  y = 205,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 1,
+  x = 176,
+  y = 101,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 1,
+  x = 152,
+  y = 221,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 1,
+  x = 96,
+  y = 101,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 1,
+  x = 312,
+  y = 237,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
 }
 
 tile{
