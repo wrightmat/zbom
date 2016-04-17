@@ -3,9 +3,9 @@ properties{
   y = 0,
   width = 832,
   height = 640,
-  world = "inside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "inside_world",
   tileset = "13",
   music = "underground",
 }
@@ -1484,6 +1484,26 @@ destructible{
   treasure_variant = 3,
   sprite = "entities/pot",
   destruction_sound = "stone",
+}
+
+custom_entity{
+  name = "flying_heart",
+  layer = 0,
+  x = 152,
+  y = 461,
+  direction = 0,
+  sprite = "entities/items",
+  model = "generic_flying_pickable",
+}
+
+custom_entity{
+  name = "flying_heart_2",
+  layer = 0,
+  x = 288,
+  y = 461,
+  direction = 0,
+  sprite = "entities/items",
+  model = "generic_flying_pickable",
 }
 
 tile{

@@ -3,9 +3,9 @@ properties{
   y = 0,
   width = 1120,
   height = 1120,
-  world = "outside_north",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_north",
   tileset = "3",
   music = "same",
 }
@@ -1574,5 +1574,85 @@ teletransporter{
   transition = "scrolling",
   destination_map = "100",
   destination = "_side",
+}
+
+pickable{
+  layer = 0,
+  x = 528,
+  y = 245,
+  treasure_name = "rupee",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 544,
+  y = 245,
+  treasure_name = "rupee",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 560,
+  y = 245,
+  treasure_name = "rupee",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 576,
+  y = 245,
+  treasure_name = "rupee",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 592,
+  y = 245,
+  treasure_name = "rupee",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 480,
+  y = 245,
+  treasure_name = "rupee",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 464,
+  y = 245,
+  treasure_name = "rupee",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 448,
+  y = 245,
+  treasure_name = "rupee",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 432,
+  y = 245,
+  treasure_name = "rupee",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 245,
+  treasure_name = "rupee",
+  treasure_variant = 2,
 }
 

@@ -22,7 +22,7 @@ local function shoot_fire()
     sol.audio.play_sound("lamp")
     local flame = enemy:create_enemy({ breed = "fireball_small", x, y, layer = 1, direction = 0 })
   end)
-  sol.timer.start(enemy, 5000, function () enemy:restart() end)
+  sol.timer.start(enemy, 2000, function () enemy:restart() end)
 end
 
 function enemy:on_restarted()

@@ -1,4 +1,5 @@
 local enemy = ...
+local map = enemy:get_map()
 local vulnerable = false
 local last_action = 0
 local dark_magic_sprite = sol.sprite.create("entities/dark_appears")
@@ -82,15 +83,15 @@ function enemy:go_hero()
 end
 
 function enemy:on_restarted()
-  if self:get_game():get_map():get_id() == "218" then -- Don't want Zirna to act during the cutscene.
+  if map:get_id() == "218" or map:get_id() == "170" then -- Don't want Zirna to act during the cutscene.
     local rand = math.random(5)
     if last_action == rand then -- Try to get a different action than last time.
       sol.timer.start(self:get_map(), 1100, function() local rand = math.random(5) end)
     end
     last_action = rand
     if rand == 1 then self:create_son()
-    elseif rand == 2 then self:teleport("self")
-    elseif rand == 3 then self:teleport("hero")
+    elseif (rand == 2 and map:get_id() == "218") then self:teleport("self")
+    elseif (rand == 3 and map:get_id() == "218") then self:teleport("hero")
     else self:go_hero() end
   end
 end

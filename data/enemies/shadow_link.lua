@@ -28,7 +28,7 @@ function enemy:on_created()
 end
 
 function enemy:on_restarted()
-  if self:get_game():get_map():get_id() == "218" then -- Don't want Shadow Link to act during the game.
+  if map:get_id() == "218" or map:get_id() == "170" then -- Don't want Shadow Link to act during the game.
     state = nil
     if not being_pushed then
       if going_hero then

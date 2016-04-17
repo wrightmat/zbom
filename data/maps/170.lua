@@ -12,11 +12,25 @@ if game:get_value("i1613") == nil then game:set_value("i1613", 1) end
 function map:on_started(destination)
   map:set_tileset("13")
   warp:set_enabled(false)
+  flying_heart:get_sprite():set_animation("heart")
+  flying_heart_2:get_sprite():set_animation("heart")
+end
+
+function flying_heart:on_obtained()
+  self:get_game():add_life(4); self:get_game():add_stamina(8)
+end
+function flying_heart_2:on_obtained()
+  self:get_game():add_life(4); self:get_game():add_stamina(8)
 end
 
 function sensor_boss:on_activated()
-  warp:set_enabled(false)
-  sol.audio.play_music("boss")
+  if game:get_value("i1613") <= 8 then
+    warp:set_enabled(false)
+    sol.audio.play_music("boss")
+    boss_visible = true
+  else
+    map:open_doors("door")
+  end
   if game:get_value("i1613") == 1 then
     map:create_enemy({ name = "boss", x = 416, y = 168, layer = 0, direction = 3, breed = "poe_big", treasure_name = "fairy" })
   elseif game:get_value("i1613") == 2 then
@@ -34,12 +48,11 @@ function sensor_boss:on_activated()
   elseif game:get_value("i1613") == 7 then
     map:create_enemy({ name = "boss", x = 416, y = 168, layer = 0, direction = 3, breed = "helmaroc_rex", treasure_name = "arrow", treasure_variant = 3 })
   elseif game:get_value("i1613") == 8 then
-    map:create_enemy({ name = "boss", x = 416, y = 168, layer = 0, direction = 3, breed = "shadow_link", treasure_name = "arrow", treasure_variant = 3 })
-    map:create_enemy({ name = "boss_2", x = 416, y = 192, layer = 0, direction = 3, breed = "zirna", treasure_name = "arrow", treasure_variant = 3 })
+    map:create_enemy({ name = "boss", x = 376, y = 144, layer = 0, direction = 3, breed = "shadow_link", treasure_name = "arrow", treasure_variant = 3 })
+    map:create_enemy({ name = "boss_2", x = 480, y = 192, layer = 0, direction = 3, breed = "zirna", treasure_name = "arrow", treasure_variant = 3 })
   end
   if boss ~= nil then boss:set_enabled(true) end
   if boss_2 ~= nil then boss_2:set_enabled(true) end
-  boss_visible = true
 end
 
 function map:on_update()
@@ -47,7 +60,7 @@ function map:on_update()
     if game:get_value("i1613") < 8 and not warp:is_enabled() and boss_visible then
       warp:set_enabled(true)
       sol.audio.play_music("underground")
-    elseif game:get_value("i1613") == 8 and boss_visible then
+    elseif game:get_value("i1613") == 8 and not warp:is_enabled() and boss_visible then
       map:open_doors("door")
       game:set_value("i1613", 9)
       sol.audio.play_music("underground")
