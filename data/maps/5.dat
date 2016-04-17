@@ -3,9 +3,9 @@ properties{
   y = 0,
   width = 1152,
   height = 832,
-  world = "inside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "inside_world",
   tileset = "1",
   music = "cave",
 }
@@ -2604,7 +2604,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 112,
+  x = 136,
   y = 80,
   width = 32,
   height = 56,
@@ -2906,6 +2906,60 @@ tile{
   width = 32,
   height = 16,
   pattern = "758",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 72,
+  width = 32,
+  height = 24,
+  pattern = "35",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 72,
+  width = 32,
+  height = 24,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 96,
+  width = 32,
+  height = 24,
+  pattern = "35",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 304,
+  width = 64,
+  height = 32,
+  pattern = "32",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 304,
+  width = 64,
+  height = 32,
+  pattern = "32",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 304,
+  width = 64,
+  height = 32,
+  pattern = "32",
 }
 
 dynamic_tile{
@@ -3320,6 +3374,15 @@ tile{
   width = 16,
   height = 8,
   pattern = "776",
+}
+
+tile{
+  layer = 1,
+  x = 64,
+  y = 48,
+  width = 32,
+  height = 24,
+  pattern = "36",
 }
 
 npc{

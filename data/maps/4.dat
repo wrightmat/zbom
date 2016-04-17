@@ -1074,33 +1074,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 104,
-  y = 408,
-  width = 16,
-  height = 32,
-  pattern = "43",
-}
-
-tile{
-  layer = 0,
-  x = 88,
-  y = 408,
-  width = 16,
-  height = 32,
-  pattern = "44",
-}
-
-tile{
-  layer = 0,
-  x = 72,
-  y = 408,
-  width = 16,
-  height = 32,
-  pattern = "42",
-}
-
-tile{
-  layer = 0,
   x = 208,
   y = 464,
   width = 48,
@@ -7309,6 +7282,15 @@ tile{
   pattern = "479",
 }
 
+tile{
+  layer = 0,
+  x = 72,
+  y = 416,
+  width = 48,
+  height = 40,
+  pattern = "489",
+}
+
 destination{
   name = "enter_shop",
   layer = 0,
@@ -8364,6 +8346,15 @@ tile{
   width = 32,
   height = 16,
   pattern = "486",
+}
+
+tile{
+  layer = 1,
+  x = 72,
+  y = 400,
+  width = 48,
+  height = 16,
+  pattern = "490",
 }
 
 npc{
