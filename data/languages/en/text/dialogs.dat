@@ -5522,6 +5522,15 @@ Patterns to torches are the key.
 }
 
 dialog{
+  id = "hint_stone.island_palace",
+  text = [[
+Island Palace Boss Run:$0
+No entry for the inexperienced.
+Testing will be brutal.
+]]
+}
+
+dialog{
   id = "hint_stone.pyramid.1",
   skip = "current",
   text = [[
@@ -9253,6 +9262,38 @@ dialog{
 
     Kakariko Cemetary
 
+]]
+}
+
+dialog{
+  id = "sign.deep_water",
+  skip = "current",
+  text = [[
+Beware deep water!
+$0
+
+Do not enter without permission
+of the Zora. Inquire with Elder
+Juba in Castle Town.
+]]
+}
+
+dialog{
+  id = "sign.goron_doctor",
+  skip = "current",
+  text = [[
+Goron City Clinic
+Dr. Galen, physician
+]]
+}
+
+dialog{
+  id = "sign.island_palace",
+  skip = "current",
+  text = [[
+Island Palace
+$0
+Danger inside!
 ]]
 }
 

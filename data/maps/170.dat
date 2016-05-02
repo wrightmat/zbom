@@ -1306,6 +1306,15 @@ tile{
   pattern = "3",
 }
 
+tile{
+  layer = 0,
+  x = 160,
+  y = 344,
+  width = 16,
+  height = 16,
+  pattern = "482",
+}
+
 wall{
   layer = 0,
   x = 672,
@@ -1504,6 +1513,24 @@ custom_entity{
   direction = 0,
   sprite = "entities/items",
   model = "generic_flying_pickable",
+}
+
+npc{
+  name = "hint_stone.island_palace",
+  layer = 0,
+  x = 168,
+  y = 357,
+  direction = 3,
+  subtype = 0,
+}
+
+door{
+  name = "door_shutter",
+  layer = 0,
+  x = 216,
+  y = 344,
+  direction = 1,
+  sprite = "entities/door_shutter",
 }
 
 tile{

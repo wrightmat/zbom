@@ -3,9 +3,9 @@ properties{
   y = 2242,
   width = 1120,
   height = 1120,
-  world = "outside_north",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_north",
   tileset = "2",
   music = "north",
 }
@@ -426,8 +426,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 56,
-  y = 536,
+  x = 40,
+  y = 656,
   width = 48,
   height = 16,
   pattern = "628",
@@ -435,8 +435,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 48,
-  y = 528,
+  x = 32,
+  y = 648,
   width = 8,
   height = 16,
   pattern = "626",
@@ -444,8 +444,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 104,
-  y = 528,
+  x = 88,
+  y = 648,
   width = 8,
   height = 16,
   pattern = "627",
@@ -453,8 +453,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 64,
-  y = 552,
+  x = 48,
+  y = 672,
   width = 32,
   height = 8,
   pattern = "629",
@@ -1740,8 +1740,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 56,
-  y = 496,
+  x = 40,
+  y = 616,
   width = 48,
   height = 40,
   pattern = "522",
@@ -2053,6 +2053,168 @@ tile{
   pattern = "524",
 }
 
+tile{
+  layer = 0,
+  x = 88,
+  y = 416,
+  width = 16,
+  height = 8,
+  pattern = "1094",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 416,
+  width = 48,
+  height = 8,
+  pattern = "1095",
+}
+
+tile{
+  layer = 0,
+  x = 216,
+  y = 416,
+  width = 48,
+  height = 8,
+  pattern = "1095",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 416,
+  width = 16,
+  height = 8,
+  pattern = "1096",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 424,
+  width = 16,
+  height = 24,
+  pattern = "1097",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "1100",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 448,
+  width = 48,
+  height = 16,
+  pattern = "1101",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 424,
+  width = 48,
+  height = 24,
+  pattern = "1098",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "1102",
+}
+
+tile{
+  layer = 0,
+  x = 216,
+  y = 448,
+  width = 48,
+  height = 16,
+  pattern = "1101",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 424,
+  width = 16,
+  height = 24,
+  pattern = "1099",
+}
+
+tile{
+  layer = 0,
+  x = 216,
+  y = 424,
+  width = 48,
+  height = 24,
+  pattern = "1098",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 424,
+  width = 16,
+  height = 24,
+  pattern = "333",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 416,
+  width = 16,
+  height = 8,
+  pattern = "330",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "336",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 424,
+  width = 16,
+  height = 24,
+  pattern = "331",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 416,
+  width = 16,
+  height = 8,
+  pattern = "328",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "334",
+}
+
 teletransporter{
   name = "to_I4",
   layer = 0,
@@ -2114,7 +2276,7 @@ enemy{
   name = "chuchu_2",
   layer = 0,
   x = 72,
-  y = 709,
+  y = 749,
   direction = 0,
   breed = "chuchu_yellow",
 }
@@ -2503,6 +2665,14 @@ destructible{
   can_be_cut = true,
 }
 
+destructible{
+  layer = 1,
+  x = 120,
+  y = 437,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
 tile{
   layer = 2,
   x = 888,
@@ -2613,8 +2783,8 @@ tile{
 
 tile{
   layer = 2,
-  x = 56,
-  y = 480,
+  x = 40,
+  y = 600,
   width = 48,
   height = 16,
   pattern = "521",
@@ -2622,8 +2792,8 @@ tile{
 
 tile{
   layer = 2,
-  x = 48,
-  y = 488,
+  x = 32,
+  y = 608,
   width = 8,
   height = 40,
   pattern = "519",
@@ -2631,8 +2801,8 @@ tile{
 
 tile{
   layer = 2,
-  x = 104,
-  y = 488,
+  x = 88,
+  y = 608,
   width = 8,
   height = 40,
   pattern = "520",

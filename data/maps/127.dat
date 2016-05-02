@@ -3,9 +3,9 @@ properties{
   y = 3363,
   width = 1120,
   height = 1120,
-  world = "outside_north",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_north",
   tileset = "2",
   music = "same",
 }
@@ -4510,6 +4510,24 @@ tile{
   pattern = "1128",
 }
 
+tile{
+  layer = 0,
+  x = 208,
+  y = 736,
+  width = 16,
+  height = 8,
+  pattern = "1693",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 816,
+  width = 8,
+  height = 8,
+  pattern = "39",
+}
+
 teletransporter{
   name = "to_L4",
   layer = 0,
@@ -5570,27 +5588,6 @@ enemy{
   direction = 0,
   breed = "chuchu_red",
   treasure_name = "random_north",
-}
-
-teletransporter{
-  name = "to_island",
-  layer = 0,
-  x = 208,
-  y = 752,
-  width = 16,
-  height = 16,
-  destination_map = "123",
-  destination = "from_mainland",
-  sprite = "entities/teletransporter",
-  sound = "warp",
-}
-
-destination{
-  name = "from_island",
-  layer = 0,
-  x = 200,
-  y = 765,
-  direction = 3,
 }
 
 custom_entity{

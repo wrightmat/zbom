@@ -3,9 +3,9 @@ properties{
   y = 7847,
   width = 1120,
   height = 1120,
-  world = "outside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_world",
   tileset = "2",
   music = "town_hidden_village",
 }
@@ -8226,6 +8226,16 @@ dynamic_tile{
   width = 16,
   height = 16,
   enabled_at_start = false,
+}
+
+npc{
+  name = "sign.deep_water",
+  layer = 0,
+  x = 592,
+  y = 789,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/sign",
 }
 
 tile{

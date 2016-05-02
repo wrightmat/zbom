@@ -14,6 +14,7 @@ function map:on_started(destination)
   warp:set_enabled(false)
   flying_heart:get_sprite():set_animation("heart")
   flying_heart_2:get_sprite():set_animation("heart")
+  if game:get_value("b1190") then map:set_doors_open("door_shutter") end
 end
 
 function flying_heart:on_obtained()

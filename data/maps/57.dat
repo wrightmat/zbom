@@ -3,9 +3,9 @@ properties{
   y = 4484,
   width = 1120,
   height = 1120,
-  world = "outside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_world",
   tileset = "2",
   music = "same",
 }
@@ -5619,8 +5619,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 1040,
-  y = 248,
+  x = 1048,
+  y = 232,
   width = 8,
   height = 8,
   pattern = "62",
@@ -7337,5 +7337,15 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/quest_bubble",
+}
+
+npc{
+  name = "sign.deep_water",
+  layer = 0,
+  x = 1040,
+  y = 269,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/sign",
 }
 

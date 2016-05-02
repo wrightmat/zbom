@@ -3,9 +3,9 @@ properties{
   y = 5606,
   width = 1120,
   height = 1120,
-  world = "outside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_world",
   tileset = "3",
   music = "goron",
 }
@@ -2067,6 +2067,16 @@ custom_entity{
   y = 453,
   direction = 0,
   model = "ocarina_patch",
+}
+
+npc{
+  name = "sign.goron_doctor",
+  layer = 0,
+  x = 888,
+  y = 629,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/sign",
 }
 
 npc{

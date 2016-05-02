@@ -5164,16 +5164,6 @@ teletransporter{
   destination = "_side",
 }
 
-destination{
-  name = "from_mainland",
-  layer = 0,
-  x = 296,
-  y = 85,
-  direction = 3,
-  sprite = "entities/destination",
-  default = true,
-}
-
 teletransporter{
   name = "to_K4_2",
   layer = 0,
@@ -5479,6 +5469,16 @@ custom_entity{
   direction = 0,
   sprite = "entities/hammer_stake",
   model = "hammer_stake",
+}
+
+npc{
+  name = "sign.deep_water",
+  layer = 0,
+  x = 936,
+  y = 869,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/sign",
 }
 
 tile{

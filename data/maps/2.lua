@@ -111,6 +111,7 @@ function elder_juba:on_interaction()
   end
 end
 function elder_juba_office:on_interaction()
+  -- Have spoken to the gatekeeper, have beaten Lakebed and don't already have the flippers.
   if game:get_value("i1923") >= 1 and game:get_value("b1134") and not game:get_value("b1816") then
     game:start_dialog("juba.2.office", function()
       hero:start_treasure("flippers", 1)

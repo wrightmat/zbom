@@ -3,9 +3,9 @@ properties{
   y = 11210,
   width = 1120,
   height = 1120,
-  world = "outside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_world",
   tileset = "2",
   music = "same",
 }
@@ -6993,6 +6993,16 @@ custom_entity{
   direction = 0,
   sprite = "entities/quest_plants",
   model = "quest_plants",
+}
+
+npc{
+  name = "sign.deep_water",
+  layer = 0,
+  x = 968,
+  y = 85,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/sign",
 }
 
 tile{

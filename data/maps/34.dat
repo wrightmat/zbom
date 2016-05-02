@@ -3,9 +3,9 @@ properties{
   y = 10089,
   width = 1120,
   height = 1120,
-  world = "outside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_world",
   tileset = "2",
   music = "same",
 }
@@ -1551,8 +1551,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 944,
-  y = 176,
+  x = 936,
+  y = 160,
   width = 16,
   height = 8,
   pattern = "1693",
@@ -4460,6 +4460,16 @@ custom_entity{
   y = 173,
   direction = 0,
   model = "ocarina_patch",
+}
+
+npc{
+  name = "sign.deep_water",
+  layer = 0,
+  x = 960,
+  y = 197,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/sign",
 }
 
 tile{

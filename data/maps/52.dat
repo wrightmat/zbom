@@ -3,9 +3,9 @@ properties{
   y = 4484,
   width = 1120,
   height = 1120,
-  world = "outside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_world",
   tileset = "2",
   music = "snowpeak",
 }
@@ -6234,6 +6234,16 @@ destructible{
   sprite = "entities/bush_snow",
   destruction_sound = "bush",
   weight = 2,
+}
+
+npc{
+  name = "sign.deep_water",
+  layer = 0,
+  x = 816,
+  y = 229,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/sign",
 }
 
 tile{
