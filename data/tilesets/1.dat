@@ -80,6 +80,36 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "17",
+  ground = "lava",
+  default_layer = 0,
+  x = { 144, 160, 176, 160 },
+  y = { 352, 352, 352, 352 },
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "18",
+  ground = "traversable",
+  default_layer = 0,
+  x = 88,
+  y = 352,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "19",
+  ground = "wall",
+  default_layer = 0,
+  x = 80,
+  y = 336,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
   id = "2",
   ground = "wall",
   default_layer = 0,
