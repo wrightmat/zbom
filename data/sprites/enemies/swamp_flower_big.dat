@@ -18,3 +18,13 @@ animation{
     { x = 32, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 27 },
   },
 }
+animation{
+  name = "walking",
+  src_image = "enemies/swamp_flower.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 27 },
+    { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 27 },
+    { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 27 },
+    { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 27 },
+  },
+}

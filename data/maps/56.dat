@@ -2359,78 +2359,6 @@ tile{
   pattern = "524",
 }
 
-tile{
-  layer = 0,
-  x = 648,
-  y = 104,
-  width = 32,
-  height = 16,
-  pattern = "202",
-}
-
-tile{
-  layer = 0,
-  x = 680,
-  y = 104,
-  width = 8,
-  height = 16,
-  pattern = "203",
-}
-
-tile{
-  layer = 0,
-  x = 616,
-  y = 88,
-  width = 32,
-  height = 16,
-  pattern = "202",
-}
-
-tile{
-  layer = 0,
-  x = 608,
-  y = 88,
-  width = 8,
-  height = 16,
-  pattern = "201",
-}
-
-tile{
-  layer = 0,
-  x = 616,
-  y = 48,
-  width = 32,
-  height = 16,
-  pattern = "208",
-}
-
-tile{
-  layer = 0,
-  x = 608,
-  y = 48,
-  width = 8,
-  height = 16,
-  pattern = "207",
-}
-
-tile{
-  layer = 0,
-  x = 648,
-  y = 64,
-  width = 32,
-  height = 16,
-  pattern = "208",
-}
-
-tile{
-  layer = 0,
-  x = 680,
-  y = 64,
-  width = 8,
-  height = 16,
-  pattern = "209",
-}
-
 dynamic_tile{
   name = "night_entrance_7",
   layer = 0,
@@ -5213,6 +5141,78 @@ tile{
   width = 16,
   height = 8,
   pattern = "676",
+}
+
+tile{
+  layer = 1,
+  x = 608,
+  y = 48,
+  width = 8,
+  height = 16,
+  pattern = "207",
+}
+
+tile{
+  layer = 1,
+  x = 616,
+  y = 48,
+  width = 32,
+  height = 16,
+  pattern = "208",
+}
+
+tile{
+  layer = 1,
+  x = 648,
+  y = 64,
+  width = 32,
+  height = 16,
+  pattern = "208",
+}
+
+tile{
+  layer = 1,
+  x = 680,
+  y = 64,
+  width = 8,
+  height = 16,
+  pattern = "209",
+}
+
+tile{
+  layer = 1,
+  x = 608,
+  y = 88,
+  width = 8,
+  height = 16,
+  pattern = "201",
+}
+
+tile{
+  layer = 1,
+  x = 616,
+  y = 88,
+  width = 32,
+  height = 16,
+  pattern = "202",
+}
+
+tile{
+  layer = 1,
+  x = 648,
+  y = 104,
+  width = 32,
+  height = 16,
+  pattern = "202",
+}
+
+tile{
+  layer = 1,
+  x = 680,
+  y = 104,
+  width = 8,
+  height = 16,
+  pattern = "203",
 }
 
 dynamic_tile{

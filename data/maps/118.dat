@@ -2215,6 +2215,15 @@ tile{
   pattern = "334",
 }
 
+tile{
+  layer = 0,
+  x = 56,
+  y = 424,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
 teletransporter{
   name = "to_I4",
   layer = 0,
@@ -2666,10 +2675,10 @@ destructible{
 }
 
 destructible{
-  layer = 1,
-  x = 120,
+  layer = 0,
+  x = 64,
   y = 437,
-  sprite = "entities/pot",
+  sprite = "entities/stone_small_white",
   destruction_sound = "stone",
 }
 

@@ -5558,14 +5558,13 @@ wall{
 }
 
 npc{
-  name = "sign_witch",
+  name = "sign.witch",
   layer = 0,
   x = 704,
   y = 837,
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
-  behavior = "dialog#sign.witch",
 }
 
 enemy{

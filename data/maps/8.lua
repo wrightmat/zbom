@@ -6,6 +6,7 @@ local game = map:get_game()
 ------------------------------------------
 
 local priest_spoken = false
+local zora_king_spoken = false
 if game:get_value("i1615")==nil then game:set_value("i1615", 0) end
 if game:get_value("i1631")==nil then game:set_value("i1631", 0) end
 if game:get_value("i1912")==nil then game:set_value("i1912", 0) end
@@ -359,7 +360,15 @@ function npc_zora_guard_4:on_interaction()
 end
 
 function npc_zora_king:on_interaction()
-  game:start_dialog("zora_king.0.great_hall")
+  -- If player still doesn't have flippers, give them.
+  if zora_king_spoken and not game:get_value("b1816") then
+    game:start_dialog("zora_king.0.flippers", function()
+      hero:start_treasure("flippers", 1)
+    end)
+  end
+  game:start_dialog("zora_king.0.great_hall", function()
+    zora_king_spoken = true
+  end)
 end
 
 function npc_priest:on_interaction()

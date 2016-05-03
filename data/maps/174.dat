@@ -7214,6 +7214,51 @@ wall{
   stops_enemies = true,
 }
 
+enemy{
+  name = "bubble_1",
+  layer = 0,
+  x = 184,
+  y = 421,
+  direction = 0,
+  breed = "bubble_red",
+}
+
+enemy{
+  name = "bubble_2",
+  layer = 0,
+  x = 304,
+  y = 1029,
+  direction = 0,
+  breed = "bubble_grey",
+}
+
+enemy{
+  name = "bubble_3",
+  layer = 0,
+  x = 592,
+  y = 157,
+  direction = 0,
+  breed = "bubble_blue",
+}
+
+enemy{
+  name = "bubble_4",
+  layer = 0,
+  x = 1640,
+  y = 445,
+  direction = 0,
+  breed = "bubble_green",
+}
+
+enemy{
+  name = "bubble_5",
+  layer = 0,
+  x = 1648,
+  y = 1029,
+  direction = 0,
+  breed = "bubble_white",
+}
+
 custom_entity{
   layer = 1,
   x = 120,
