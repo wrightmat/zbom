@@ -9,7 +9,7 @@ local torch_overlay = nil
 
 function map:on_started(destination)
   if game:get_value("b1150") then stone_pile:remove() end -- Tower construction over after Snowpeak Caverns beat.
-  if game:get_value("b1170") and game:get_value("i1910") < 7 then
+  if game:get_value("b1168") and game:get_value("i1910") < 7 then
     torch_1:get_sprite():set_animation("lit")
     sol.timer.start(1000, function()
       hero:freeze()
@@ -40,7 +40,7 @@ if game:get_time_of_day() ~= "night" then
     -- Show torch overlay for Ordona dialog.
     if torch_overlay ~= nil then
       local screen_width, screen_height = dst_surface:get_size()
-      local cx, cy = map:get_camera_position()
+      local cx, cy = map:get_camera():get_position()
       local tx, ty = torch_1:get_center_position()
       local x = 320 - tx + cx
       local y = 240 - ty + cy

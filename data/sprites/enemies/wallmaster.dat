@@ -19,6 +19,18 @@ animation{
   },
 }
 animation{
+  name = "hurt",
+  src_image = "enemies/wallmaster.png",
+  frame_delay = 50,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 32, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 21, num_frames = 2, num_columns = 1 },
+    { x = 32, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 21, num_frames = 2, num_columns = 1 },
+    { x = 32, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 21, num_frames = 2, num_columns = 1 },
+    { x = 32, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 21, num_frames = 2, num_columns = 1 },
+  },
+}
+animation{
   name = "shadow",
   src_image = "enemies/wallmaster.png",
   directions = {
