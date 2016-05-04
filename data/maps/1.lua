@@ -226,6 +226,7 @@ function npc_impa:on_interaction()
           hero:start_treasure("trading", 6)
           game:set_value("b2026", true)
           game:set_value("b2025", false)
+          game:set_Value("i1921", 6) -- Immediatelly increase reputation.
           quest_trading_meat:remove()
         end)
       else
@@ -233,6 +234,9 @@ function npc_impa:on_interaction()
         game:start_dialog("impa.0.trading_no")
       end
     end)
+  elseif game:get_value("b1170") and game:get_value("i1920") >= 6 then
+    -- If player has finished Tower of Wind and she has crystal ball, direct to the Lost Woods.
+    game:start_dialog("impa.6.house")
   elseif game:get_value("b1117") then
     if game:get_value("i1921") < 6 then
       game:start_dialog("impa."..game:get_value("i1921")..".house")

@@ -9,7 +9,7 @@ local torch_overlay = nil
 
 function map:on_started(destination)
   if game:get_value("b1150") then stone_pile:remove() end -- Tower construction over after Snowpeak Caverns beat.
-  if game:get_value("b1168") and game:get_value("i1910") < 7 then
+  if game:get_value("b1170") and game:get_value("i1910") < 7 then
     torch_1:get_sprite():set_animation("lit")
     sol.timer.start(1000, function()
       hero:freeze()
