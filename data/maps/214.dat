@@ -3,10 +3,10 @@ properties{
   y = 0,
   width = 912,
   height = 800,
-  world = "dungeon_7",
-  floor = 4,
   min_layer = 0,
   max_layer = 2,
+  world = "dungeon_7",
+  floor = 4,
   tileset = "10",
   music = "temple_wind",
 }
@@ -6846,10 +6846,10 @@ enemy{
 teletransporter{
   name = "fall_below_1",
   layer = 0,
-  x = 400,
-  y = 368,
-  width = 16,
-  height = 80,
+  x = 392,
+  y = 360,
+  width = 32,
+  height = 96,
   destination_map = "213",
   destination = "from_floor_5",
 }
@@ -6857,10 +6857,10 @@ teletransporter{
 teletransporter{
   name = "fall_below_2",
   layer = 0,
-  x = 496,
-  y = 368,
-  width = 16,
-  height = 80,
+  x = 488,
+  y = 360,
+  width = 32,
+  height = 96,
   destination_map = "213",
   destination = "from_floor_5",
 }
@@ -6868,10 +6868,10 @@ teletransporter{
 teletransporter{
   name = "fall_below_3",
   layer = 0,
-  x = 416,
-  y = 432,
-  width = 80,
-  height = 16,
+  x = 424,
+  y = 424,
+  width = 64,
+  height = 32,
   destination_map = "213",
   destination = "from_floor_5",
 }

@@ -255,14 +255,9 @@ function torch_moth:on_interaction_item(lamp)
   end)
 end
 
-function map:on_obtained_treasure(item, variant, savegame_variable)
-  if item:get_name() == "book_mudora" then
-    game:set_dungeon_finished(2)
-  end
-end
-
-function chest_book:on_empty()
-  --dynamically determine book variant to give, since dungeons can be done in any order
+function chest_book:on_opened(item, variant, savegame_variable)
+  -- Dynamically determine book variant to give, since dungeons can be done in any order.
   local book_variant = game:get_item("book_mudora"):get_variant() + 1
   map:get_hero():start_treasure("book_mudora", book_variant)
+  game:set_dungeon_finished(2)
 end

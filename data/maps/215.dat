@@ -3,10 +3,10 @@ properties{
   y = 0,
   width = 912,
   height = 800,
-  world = "dungeon_7",
-  floor = 5,
   min_layer = 0,
   max_layer = 2,
+  world = "dungeon_7",
+  floor = 5,
   tileset = "10",
   music = "temple_wind",
 }
@@ -6068,6 +6068,33 @@ tile{
   pattern = "64",
 }
 
+tile{
+  layer = 0,
+  x = 64,
+  y = 160,
+  width = 16,
+  height = 48,
+  pattern = "525",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 680,
+  width = 16,
+  height = 48,
+  pattern = "525",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 680,
+  width = 16,
+  height = 48,
+  pattern = "525",
+}
+
 sensor{
   name = "dungeon_room_1b_",
   layer = 0,
@@ -6263,6 +6290,7 @@ enemy{
   y = 205,
   direction = 3,
   breed = "wizzrobe",
+  treasure_name = "random",
 }
 
 enemy{
@@ -6272,6 +6300,7 @@ enemy{
   y = 109,
   direction = 3,
   breed = "wizzrobe",
+  treasure_name = "random",
 }
 
 enemy{
@@ -6281,6 +6310,7 @@ enemy{
   y = 173,
   direction = 3,
   breed = "wizzrobe",
+  treasure_name = "random",
 }
 
 chest{
@@ -6311,15 +6341,6 @@ wall{
   stops_enemies = true,
 }
 
-wall{
-  layer = 0,
-  x = 344,
-  y = 456,
-  width = 224,
-  height = 8,
-  stops_enemies = true,
-}
-
 enemy{
   name = "chuchu_1",
   layer = 0,
@@ -6327,6 +6348,7 @@ enemy{
   y = 629,
   direction = 0,
   breed = "chuchu_red",
+  treasure_name = "random",
 }
 
 enemy{
@@ -6336,6 +6358,7 @@ enemy{
   y = 701,
   direction = 0,
   breed = "chuchu_yellow",
+  treasure_name = "random",
 }
 
 enemy{
@@ -6345,6 +6368,7 @@ enemy{
   y = 573,
   direction = 0,
   breed = "chuchu_red",
+  treasure_name = "random",
 }
 
 enemy{
@@ -6354,6 +6378,7 @@ enemy{
   y = 701,
   direction = 0,
   breed = "chuchu_red",
+  treasure_name = "random",
 }
 
 enemy{
@@ -6363,6 +6388,7 @@ enemy{
   y = 621,
   direction = 0,
   breed = "chuchu_yellow",
+  treasure_name = "random",
 }
 
 enemy{
@@ -6372,15 +6398,16 @@ enemy{
   y = 541,
   direction = 0,
   breed = "chuchu_yellow",
+  treasure_name = "random",
 }
 
 teletransporter{
   name = "to_below_2",
   layer = 0,
-  x = 400,
-  y = 368,
-  width = 112,
-  height = 48,
+  x = 392,
+  y = 360,
+  width = 128,
+  height = 64,
   destination_map = "214",
   destination = "from_hole_above",
 }
@@ -6550,29 +6577,11 @@ sensor{
   height = 16,
 }
 
-wall{
-  layer = 0,
-  x = 568,
-  y = 384,
-  width = 8,
-  height = 80,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 336,
-  y = 384,
-  width = 8,
-  height = 80,
-  stops_enemies = true,
-}
-
 dynamic_tile{
   name = "stairs_1",
   layer = 0,
   x = 200,
-  y = 648,
+  y = 656,
   pattern = "184",
   width = 16,
   height = 32,
@@ -6583,7 +6592,7 @@ dynamic_tile{
   name = "stairs_2",
   layer = 0,
   x = 192,
-  y = 648,
+  y = 656,
   pattern = "183",
   width = 8,
   height = 32,
@@ -6594,7 +6603,7 @@ dynamic_tile{
   name = "stairs_3",
   layer = 0,
   x = 216,
-  y = 648,
+  y = 656,
   pattern = "185",
   width = 8,
   height = 32,
@@ -6605,15 +6614,15 @@ destination{
   name = "miniboss_warp_dest",
   layer = 0,
   x = 208,
-  y = 693,
-  direction = 1,
+  y = 741,
+  direction = 3,
 }
 
 teletransporter{
   name = "miniboss_warp",
   layer = 0,
   x = 200,
-  y = 696,
+  y = 712,
   width = 16,
   height = 16,
   destination_map = "210",
@@ -6626,10 +6635,11 @@ enemy{
   name = "miniboss_grim_creeper",
   layer = 0,
   x = 216,
-  y = 733,
+  y = 725,
   direction = 3,
   breed = "grim_creeper",
   savegame_variable = "b1166",
+  treasure_name = "crystal",
 }
 
 destructible{
@@ -6704,7 +6714,7 @@ wall{
   layer = 0,
   x = 40,
   y = 456,
-  width = 296,
+  width = 344,
   height = 8,
   stops_npcs = true,
   stops_enemies = true,
@@ -6749,6 +6759,90 @@ custom_entity{
   y = 229,
   direction = 0,
   model = "hook",
+}
+
+destructible{
+  layer = 0,
+  x = 72,
+  y = 189,
+  treasure_name = "fairy",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 72,
+  y = 173,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 72,
+  y = 205,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 136,
+  y = 725,
+  treasure_name = "apple",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 136,
+  y = 709,
+  treasure_name = "bomb",
+  treasure_variant = 3,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 136,
+  y = 693,
+  treasure_name = "heart",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 280,
+  y = 725,
+  treasure_name = "bomb",
+  treasure_variant = 3,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 280,
+  y = 709,
+  treasure_name = "arrow",
+  treasure_variant = 3,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 280,
+  y = 693,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
 }
 
 tile{

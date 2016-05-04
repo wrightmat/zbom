@@ -3,10 +3,10 @@ properties{
   y = 0,
   width = 912,
   height = 800,
-  world = "dungeon_7",
-  floor = 2,
   min_layer = 0,
   max_layer = 2,
+  world = "dungeon_7",
+  floor = 2,
   tileset = "10",
   music = "temple_wind",
 }
@@ -5208,16 +5208,6 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 792,
-  y = 709,
-  treasure_name = "magic_flask",
-  treasure_variant = 2,
-  sprite = "entities/pot",
-  destruction_sound = "stone",
-}
-
-destructible{
-  layer = 0,
   x = 568,
   y = 725,
   treasure_name = "magic_flask",
@@ -5242,6 +5232,16 @@ sensor{
   y = 197,
   width = 16,
   height = 64,
+}
+
+destructible{
+  layer = 0,
+  x = 792,
+  y = 709,
+  treasure_name = "magic_flask",
+  treasure_variant = 2,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
 }
 
 tile{

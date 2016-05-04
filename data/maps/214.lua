@@ -11,16 +11,12 @@ function map:on_started(destination)
 end
 
 function warp:on_activated()
-print("warp activated")
   local hero = map:get_entity("hero")
-  if hero:get_direction() == 0 then --east
-print("hero east")
+  if hero:get_direction() == 0 then -- East
     warp:set_destination_name("destination_3")
-  elseif hero:get_direction() == 3 then --south
-print("hero south")
+  elseif hero:get_direction() == 3 then -- South
     warp:set_destination_name("destination_2")
-  elseif hero:get_direction() == 2 then -- west
-print("hero west")
+  elseif hero:get_direction() == 2 then -- West
     warp:set_destination_name("destination_1")
   end
 end
