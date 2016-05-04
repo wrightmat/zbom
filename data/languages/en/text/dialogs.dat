@@ -2202,9 +2202,9 @@ dialog{
   icon = "65",
   skip = "current",
   text = [[
-You found the magical  $r Light
+You found the magical  $r  Light
 Shield$w!$0 Made of polished metal
-and infused with the purity of light,
+and infused with purity of light,
 this shield will protect its wielder
 from most anything!
 ]]
@@ -4673,6 +4673,27 @@ Let the pilaging commence!
 }
 
 dialog{
+  id = "gerudo_1.0.nabooru",
+  text = [[
+The Gerudo honor the desert. We are
+trustworthy and pure of heart. Those
+lousy pirates in the south give our
+entire race a bad name!
+]]
+}
+
+dialog{
+  id = "gerudo_2.0.nabooru",
+  text = [[
+Gruce and the Gerutones have been
+rocking together up here for years!
+If you haven't heard of us, you
+must have been living under a rock -
+but definitely not a rock and roll!
+]]
+}
+
+dialog{
   id = "gin.0.council",
   skip = "current",
   text = [[
@@ -5276,6 +5297,7 @@ waiting for.
 
 dialog{
   id = "gruce.0.band",
+  skip = "current",
   text = [[
 Are you ready to rock?!?
 ]]
@@ -5294,6 +5316,7 @@ No
 
 dialog{
   id = "gruce.0.nabooru_no",
+  skip = "current",
   text = [[
 Your loss man. Check us out later.
 ]]
@@ -5301,6 +5324,7 @@ Your loss man. Check us out later.
 
 dialog{
   id = "gruce.0.nabooru_yes",
+  skip = "current",
   text = [[
 Cool. Head over to the stage and
 we'll set up.
@@ -5831,6 +5855,16 @@ land into the Hyrule we know, and
 protected her people when they were
 attacked. There's a lot we can still
 learn from her teachings even now.
+]]
+}
+
+dialog{
+  id = "hylian_6.0.rauru",
+  text = [[
+Rauru may be newly established, but
+we've got a lot to show for ourselves
+already! Please stick around as long
+as you'd like. 
 ]]
 }
 
@@ -8146,7 +8180,7 @@ dialog{
   skip = "current",
   text = [[
 Welcome, traveler, to the Sanctuary
-of Hylia.$0What?$0 You don't know of
+of Hylia.$0 What?$0 You don't know of
 the Goddess Hylia?
 ]]
 }
@@ -10863,6 +10897,34 @@ you this $r frozen fish$w I found at the
 bottom of our  $b Domain$w. Don't wander
 around with it too long though, or
 it'll thaw and be really gross.
+]]
+}
+
+dialog{
+  id = "zora_1.0.ruto",
+  text = [[
+We just want to be left alone to
+live as we choose. If more people
+would understand that, we wouldn't
+have such a bad reputation!
+]]
+}
+
+dialog{
+  id = "zora_2.0.ruto",
+  text = [[
+I just had my floors re-done.
+What do you think? $0 Too much?
+]]
+}
+
+dialog{
+  id = "zora_3.0.ruto",
+  text = [[
+The Zora are a proud race, and the
+most important one in Hyrule! The
+Hylians, you say? Well, do they control
+all of the waterways? No!
 ]]
 }
 

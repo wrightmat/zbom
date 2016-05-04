@@ -306,7 +306,6 @@ end
 function npc_kokiri_1:on_interaction()
   game:start_dialog("kokiri_1.0.saria")
 end
-
 function npc_kokiri_2:on_interaction()
   if not game:get_value("b1630") then
     game:start_dialog("kokiri_2.0.saria", function()
@@ -321,27 +320,28 @@ end
 function npc_hylian_2:on_interaction()
   game:start_dialog("hylian_2.0.rauru")
 end
-
 function npc_hylian_3:on_interaction()
   game:start_dialog("hylian_3.0.rauru")
 end
-
 function npc_hylian_4:on_interaction()
   game:start_dialog("hylian_4.0.rauru")
 end
-
 function npc_hylian_5:on_interaction()
   game:start_dialog("hylian_5.0.rauru")
 end
-
 function npc_kasuto_3:on_interaction()
   game:start_dialog("hylian_3.0.kasuto")
 end
-
 function npc_kasuto_4:on_interaction()
   game:start_dialog("hylian_4.0.kasuto")
 end
 
+function npc_gerudo_1:on_interaction()
+  game:start_dialog("gerudo_1.0.nabooru")
+end
+function npc_gerudo_2:on_interaction()
+  game:start_dialog("gerudo_2.0.nabooru")
+end
 function npc_gruce:on_interaction()
   game:start_dialog("gruce.0.nabooru", function() game:get_value("i1230", 1) end)
 end
@@ -357,6 +357,16 @@ function npc_zora_guard_3:on_interaction()
 end
 function npc_zora_guard_4:on_interaction()
   game:start_dialog("zora_guard.0.great_hall")
+end
+
+function npc_zora_1:on_interaction()
+  game:start_dialog("zora_1.0.ruto")
+end
+function npc_zora_2:on_interaction()
+  game:start_dialog("zora_2.0.ruto")
+end
+function npc_zora_3:on_interaction()
+  game:start_dialog("zora_3.0.ruto")
 end
 
 function npc_zora_king:on_interaction()
