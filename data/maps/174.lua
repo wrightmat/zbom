@@ -1,5 +1,6 @@
 local map = ...
 local game = map:get_game()
+local creating_fire = false
 
 ----------------------------------------------------
 -- Great Fairy Palace - Fountain of Understanding --
@@ -16,6 +17,16 @@ function map:on_started(destination)
     if game:get_value("i1834") >= 50 then game:set_value("i1608", 5) end
   end
   if game:get_value("b1200") then map:set_doors_open("door_fairy") end
+  custom_sensor_bubble:add_collision_test("overlapping", function(sensor, other)
+    if (other:get_type() == "enemy" and other:get_breed() == "bubble_red") or other:get_type() == "hero" then
+      -- Activate the alter.
+      if other:get_distance(map:get_hero()) < 200 and not creating_fire then
+        creating_fire = true
+        map:create_enemy({ breed = "flame_red", x = "1120", y = "69", layer = 1, direction = 0 })
+        sol.timer.start(map, 5000, function() creating_fire = false end)
+      end
+    end
+  end)
 end
 
 function sensor_fairy_speak:on_activated()
@@ -46,4 +57,16 @@ end
 function sensor_fairy_room:on_activated()
   map:open_doors("door_fairy")
   game:set_value("b1200", true)
+end
+
+function switch_rust_1:on_activated()
+  skull_1:set_enabled(false)
+end
+
+function switch_rust_2:on_activated()
+  skull_2:set_enabled(false)
+end
+
+function switch_rust_2:on_inactivated()
+  skull_2:set_enabled(true)
 end

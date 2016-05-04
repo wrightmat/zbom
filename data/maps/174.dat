@@ -5709,16 +5709,16 @@ tile{
 
 tile{
   layer = 0,
-  x = 120,
+  x = 112,
   y = 1264,
-  width = 104,
+  width = 112,
   height = 8,
   pattern = "642",
 }
 
 tile{
   layer = 0,
-  x = 112,
+  x = 104,
   y = 1264,
   width = 8,
   height = 8,
@@ -5727,10 +5727,10 @@ tile{
 
 tile{
   layer = 0,
-  x = 112,
+  x = 104,
   y = 1272,
   width = 8,
-  height = 80,
+  height = 96,
   pattern = "641",
 }
 
@@ -5763,8 +5763,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 112,
-  y = 1352,
+  x = 104,
+  y = 1368,
   width = 8,
   height = 8,
   pattern = "640",
@@ -5826,7 +5826,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 320,
+  x = 296,
   y = 1376,
   width = 32,
   height = 32,
@@ -6886,6 +6886,213 @@ tile{
   pattern = "752",
 }
 
+tile{
+  layer = 0,
+  x = 272,
+  y = 1304,
+  width = 56,
+  height = 8,
+  pattern = "642",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 1304,
+  width = 8,
+  height = 8,
+  pattern = "640",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 1328,
+  width = 32,
+  height = 8,
+  pattern = "642",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 1328,
+  width = 8,
+  height = 8,
+  pattern = "640",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 1336,
+  width = 8,
+  height = 64,
+  pattern = "641",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 1400,
+  width = 8,
+  height = 8,
+  pattern = "640",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 1328,
+  width = 8,
+  height = 8,
+  pattern = "640",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 1336,
+  width = 8,
+  height = 40,
+  pattern = "641",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 1368,
+  width = 8,
+  height = 8,
+  pattern = "640",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 1368,
+  width = 32,
+  height = 8,
+  pattern = "642",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 1296,
+  width = 120,
+  height = 8,
+  pattern = "642",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 1296,
+  width = 8,
+  height = 8,
+  pattern = "640",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 1296,
+  width = 8,
+  height = 8,
+  pattern = "640",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 1304,
+  width = 8,
+  height = 80,
+  pattern = "641",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 1384,
+  width = 8,
+  height = 8,
+  pattern = "640",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 1384,
+  width = 32,
+  height = 8,
+  pattern = "642",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 1384,
+  width = 8,
+  height = 8,
+  pattern = "640",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 1328,
+  width = 8,
+  height = 56,
+  pattern = "641",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 1328,
+  width = 8,
+  height = 8,
+  pattern = "640",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 1328,
+  width = 56,
+  height = 8,
+  pattern = "642",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 1328,
+  width = 8,
+  height = 8,
+  pattern = "640",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 1368,
+  width = 8,
+  height = 8,
+  pattern = "640",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 1344,
+  width = 32,
+  height = 32,
+  pattern = "1",
+}
+
 npc{
   name = "npc_great_fairy",
   layer = 0,
@@ -6952,16 +7159,6 @@ destination{
   default = true,
 }
 
-teletransporter{
-  name = "sensor_fairy_room",
-  layer = 0,
-  x = 1400,
-  y = 1328,
-  width = 16,
-  height = 48,
-  destination_map = "174",
-}
-
 enemy{
   name = "leever_1",
   layer = 0,
@@ -7003,7 +7200,7 @@ enemy{
 }
 
 custom_entity{
-  name = "switch_rust_1",
+  name = "switch_rust_2",
   layer = 0,
   x = 248,
   y = 1245,
@@ -7015,219 +7212,11 @@ custom_entity{
 custom_entity{
   name = "metal_ball",
   layer = 0,
-  x = 136,
-  y = 1389,
+  x = 312,
+  y = 1357,
   direction = 0,
   sprite = "entities/metal_ball",
   model = "metal_ball",
-}
-
-stream{
-  layer = 0,
-  x = 144,
-  y = 1349,
-  direction = 2,
-  sprite = "entities/conveyor",
-}
-
-stream{
-  layer = 0,
-  x = 144,
-  y = 1333,
-  direction = 2,
-  sprite = "entities/conveyor",
-}
-
-stream{
-  layer = 0,
-  x = 144,
-  y = 1317,
-  direction = 2,
-  sprite = "entities/conveyor",
-}
-
-stream{
-  layer = 0,
-  x = 144,
-  y = 1301,
-  direction = 0,
-  sprite = "entities/conveyor",
-}
-
-stream{
-  layer = 0,
-  x = 160,
-  y = 1301,
-  direction = 0,
-  sprite = "entities/conveyor",
-}
-
-stream{
-  layer = 0,
-  x = 128,
-  y = 1349,
-  direction = 2,
-  sprite = "entities/conveyor",
-}
-
-stream{
-  layer = 0,
-  x = 128,
-  y = 1333,
-  direction = 2,
-  sprite = "entities/conveyor",
-}
-
-stream{
-  layer = 0,
-  x = 128,
-  y = 1317,
-  direction = 2,
-  sprite = "entities/conveyor",
-}
-
-stream{
-  layer = 0,
-  x = 128,
-  y = 1301,
-  direction = 2,
-  sprite = "entities/conveyor",
-}
-
-stream{
-  layer = 0,
-  x = 128,
-  y = 1285,
-  direction = 0,
-  sprite = "entities/conveyor",
-}
-
-stream{
-  layer = 0,
-  x = 144,
-  y = 1285,
-  direction = 0,
-  sprite = "entities/conveyor",
-}
-
-stream{
-  layer = 0,
-  x = 160,
-  y = 1285,
-  direction = 0,
-  sprite = "entities/conveyor",
-}
-
-stream{
-  layer = 0,
-  x = 176,
-  y = 1285,
-  direction = 0,
-  sprite = "entities/conveyor",
-}
-
-stream{
-  layer = 0,
-  x = 176,
-  y = 1301,
-  direction = 0,
-  sprite = "entities/conveyor",
-}
-
-stream{
-  layer = 0,
-  x = 192,
-  y = 1301,
-  direction = 0,
-  sprite = "entities/conveyor",
-}
-
-stream{
-  layer = 0,
-  x = 192,
-  y = 1285,
-  direction = 0,
-  sprite = "entities/conveyor",
-}
-
-stream{
-  layer = 0,
-  x = 208,
-  y = 1285,
-  direction = 0,
-  sprite = "entities/conveyor",
-}
-
-stream{
-  layer = 0,
-  x = 208,
-  y = 1301,
-  direction = 0,
-  sprite = "entities/conveyor",
-}
-
-stream{
-  layer = 0,
-  x = 224,
-  y = 1301,
-  direction = 0,
-  sprite = "entities/conveyor",
-}
-
-stream{
-  layer = 0,
-  x = 224,
-  y = 1285,
-  direction = 0,
-  sprite = "entities/conveyor",
-}
-
-stream{
-  layer = 0,
-  x = 240,
-  y = 1285,
-  direction = 2,
-  sprite = "entities/conveyor",
-}
-
-stream{
-  layer = 0,
-  x = 256,
-  y = 1301,
-  direction = 2,
-  sprite = "entities/conveyor",
-}
-
-stream{
-  layer = 0,
-  x = 256,
-  y = 1285,
-  direction = 2,
-  sprite = "entities/conveyor",
-}
-
-stream{
-  layer = 0,
-  x = 256,
-  y = 1269,
-  direction = 2,
-  sprite = "entities/conveyor",
-}
-
-stream{
-  layer = 0,
-  x = 240,
-  y = 1269,
-  direction = 2,
-  sprite = "entities/conveyor",
-}
-
-stream{
-  layer = 0,
-  x = 240,
-  y = 1301,
-  direction = 0,
-  sprite = "entities/conveyor",
 }
 
 enemy{
@@ -7472,7 +7461,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 344,
+  x = 320,
   y = 1405,
   treasure_name = "random",
   sprite = "entities/pot",
@@ -7482,7 +7471,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 344,
+  x = 320,
   y = 1389,
   treasure_name = "random",
   sprite = "entities/pot",
@@ -7492,7 +7481,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 328,
+  x = 304,
   y = 1389,
   treasure_name = "random",
   sprite = "entities/pot",
@@ -7502,7 +7491,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 328,
+  x = 304,
   y = 1405,
   treasure_name = "random",
   sprite = "entities/pot",
@@ -8267,7 +8256,7 @@ wall{
 enemy{
   layer = 0,
   x = 1528,
-  y = 725,
+  y = 733,
   direction = 0,
   breed = "fire_bar",
 }
@@ -8275,41 +8264,9 @@ enemy{
 enemy{
   layer = 0,
   x = 1680,
-  y = 765,
+  y = 773,
   direction = 0,
   breed = "fire_bar",
-}
-
-enemy{
-  layer = 0,
-  x = 1520,
-  y = 637,
-  direction = 0,
-  breed = "keese_dark",
-}
-
-enemy{
-  layer = 0,
-  x = 1800,
-  y = 677,
-  direction = 0,
-  breed = "keese_dark",
-}
-
-enemy{
-  layer = 0,
-  x = 1520,
-  y = 837,
-  direction = 0,
-  breed = "keese_fire",
-}
-
-enemy{
-  layer = 0,
-  x = 1760,
-  y = 837,
-  direction = 0,
-  breed = "keese_fire",
 }
 
 enemy{
@@ -8430,30 +8387,6 @@ enemy{
   breed = "stal",
 }
 
-enemy{
-  layer = 0,
-  x = 1544,
-  y = 1253,
-  direction = 0,
-  breed = "moth",
-}
-
-enemy{
-  layer = 0,
-  x = 1760,
-  y = 1261,
-  direction = 0,
-  breed = "moth",
-}
-
-enemy{
-  layer = 0,
-  x = 1704,
-  y = 1341,
-  direction = 0,
-  breed = "moth",
-}
-
 destructible{
   layer = 0,
   x = 840,
@@ -8475,97 +8408,49 @@ destructible{
 }
 
 custom_entity{
-  layer = 1,
-  x = 120,
-  y = 181,
+  name = "custom_sensor_bubble",
+  layer = 0,
+  x = 1112,
+  y = 93,
+  width = 32,
+  height = 32,
   direction = 0,
-  sprite = "entities/soil",
-  model = "soil",
 }
 
 custom_entity{
-  layer = 1,
-  x = 344,
-  y = 133,
+  name = "switch_rust_1",
+  layer = 0,
+  x = 160,
+  y = 1373,
   direction = 0,
-  sprite = "entities/soil",
-  model = "soil",
+  sprite = "entities/switch_rust",
+  model = "switch_rust",
+}
+
+dynamic_tile{
+  name = "skull_1",
+  layer = 0,
+  x = 232,
+  y = 1256,
+  pattern = "1",
+  width = 32,
+  height = 32,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "skull_2",
+  layer = 0,
+  x = 88,
+  y = 1376,
+  pattern = "1",
+  width = 32,
+  height = 32,
+  enabled_at_start = true,
 }
 
 custom_entity{
-  layer = 1,
-  x = 320,
-  y = 149,
-  direction = 0,
-  sprite = "entities/soil",
-  model = "soil",
-}
-
-custom_entity{
-  layer = 1,
-  x = 320,
-  y = 165,
-  direction = 0,
-  sprite = "entities/soil",
-  model = "soil",
-}
-
-custom_entity{
-  layer = 1,
-  x = 320,
-  y = 181,
-  direction = 0,
-  sprite = "entities/soil",
-  model = "soil",
-}
-
-custom_entity{
-  layer = 1,
-  x = 336,
-  y = 197,
-  direction = 0,
-  sprite = "entities/soil",
-  model = "soil",
-}
-
-custom_entity{
-  layer = 1,
-  x = 248,
-  y = 109,
-  direction = 0,
-  sprite = "entities/soil",
-  model = "soil",
-}
-
-custom_entity{
-  layer = 1,
-  x = 248,
-  y = 205,
-  direction = 0,
-  sprite = "entities/soil",
-  model = "soil",
-}
-
-custom_entity{
-  layer = 1,
-  x = 176,
-  y = 101,
-  direction = 0,
-  sprite = "entities/soil",
-  model = "soil",
-}
-
-custom_entity{
-  layer = 1,
-  x = 152,
-  y = 221,
-  direction = 0,
-  sprite = "entities/soil",
-  model = "soil",
-}
-
-custom_entity{
-  layer = 1,
+  layer = 0,
   x = 96,
   y = 101,
   direction = 0,
@@ -8574,12 +8459,347 @@ custom_entity{
 }
 
 custom_entity{
-  layer = 1,
+  layer = 0,
+  x = 120,
+  y = 181,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 152,
+  y = 221,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 176,
+  y = 101,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 248,
+  y = 109,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 248,
+  y = 205,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 344,
+  y = 133,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 320,
+  y = 149,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 320,
+  y = 165,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 320,
+  y = 181,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
+  x = 336,
+  y = 197,
+  direction = 0,
+  sprite = "entities/soil",
+  model = "soil",
+}
+
+custom_entity{
+  layer = 0,
   x = 312,
   y = 237,
   direction = 0,
   sprite = "entities/soil",
   model = "soil",
+}
+
+sensor{
+  name = "sensor_fairy_room",
+  layer = 0,
+  x = 1408,
+  y = 1341,
+  width = 16,
+  height = 48,
+}
+
+wall{
+  layer = 0,
+  x = 416,
+  y = 32,
+  width = 8,
+  height = 256,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 760,
+  y = 32,
+  width = 8,
+  height = 256,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 424,
+  y = 32,
+  width = 336,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 424,
+  y = 280,
+  width = 336,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 800,
+  y = 32,
+  width = 8,
+  height = 256,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 808,
+  y = 32,
+  width = 624,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 808,
+  y = 280,
+  width = 624,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1432,
+  y = 32,
+  width = 8,
+  height = 256,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1472,
+  y = 320,
+  width = 8,
+  height = 256,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1480,
+  y = 320,
+  width = 344,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1816,
+  y = 328,
+  width = 8,
+  height = 256,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1480,
+  y = 568,
+  width = 336,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1472,
+  y = 608,
+  width = 8,
+  height = 256,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1816,
+  y = 608,
+  width = 8,
+  height = 256,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1480,
+  y = 608,
+  width = 336,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1480,
+  y = 856,
+  width = 336,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1480,
+  y = 1432,
+  width = 336,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1480,
+  y = 1184,
+  width = 336,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1472,
+  y = 1184,
+  width = 8,
+  height = 256,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1816,
+  y = 1184,
+  width = 8,
+  height = 256,
+  stops_enemies = true,
+}
+
+enemy{
+  layer = 1,
+  x = 1520,
+  y = 637,
+  direction = 0,
+  breed = "keese_dark",
+}
+
+enemy{
+  layer = 1,
+  x = 1800,
+  y = 677,
+  direction = 0,
+  breed = "keese_dark",
+}
+
+enemy{
+  layer = 1,
+  x = 1760,
+  y = 837,
+  direction = 0,
+  breed = "keese_fire",
+}
+
+enemy{
+  layer = 1,
+  x = 1520,
+  y = 837,
+  direction = 0,
+  breed = "keese_fire",
+}
+
+enemy{
+  layer = 1,
+  x = 1544,
+  y = 1253,
+  direction = 0,
+  breed = "moth",
+}
+
+enemy{
+  layer = 1,
+  x = 1704,
+  y = 1341,
+  direction = 0,
+  breed = "moth",
+}
+
+enemy{
+  layer = 1,
+  x = 1760,
+  y = 1261,
+  direction = 0,
+  breed = "moth",
 }
 
 tile{

@@ -9,7 +9,6 @@ function enemy:on_created()
   self:set_invincible()
   self:set_obstacle_behavior("flying")
   self:set_layer_independent_collisions(true)
-  self:set_optimization_distance(0)
 end
 
 function enemy:on_restarted()

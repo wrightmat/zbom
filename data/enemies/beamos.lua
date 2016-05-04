@@ -41,8 +41,10 @@ function enemy:on_restarted()
     function m:on_obstacle_reached() e:explode() end
     m:start(e)
     -- Stop creating particles if necessary.
-    particles = particles -1
-    if particles <= 0 then enemy:stop_firing(); return 
+    particles = particles - 1
+    if particles <= 0 then
+      enemy:stop_firing()
+      return 
     else
       sol.timer.start(enemy, time_between_particles, function()
         shoot(tx, ty)

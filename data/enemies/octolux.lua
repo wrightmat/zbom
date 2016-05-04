@@ -67,9 +67,7 @@ function enemy:on_restarted()
       if aligned and enemy:get_distance(hero) < 200 then
         shoot()
         can_shoot = false
-        sol.timer.start(enemy, 1500, function()
-          can_shoot = true
-        end)
+        sol.timer.start(enemy, 1500, function() can_shoot = true end)
       end
     end
     return true  -- Repeat the timer.
