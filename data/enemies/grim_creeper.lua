@@ -8,14 +8,10 @@ local nb_sons_to_create = 0
 -- Grim Creeper: Miniboss who controls flocks of Keese.
 
 function enemy:on_created()
-  self:set_life(8); self:set_damage(3)
+  self:set_life(6); self:set_damage(3)
   self:create_sprite("enemies/grim_creeper")
   self:set_size(16, 24); self:set_origin(8, 17)
-  self:set_attack_arrow("ignored")
-  self:set_attack_hookshot("ignored")
-  self:set_attack_consequence("fire", "ignored")
-  self:set_attack_consequence("sword", "ignored")
-  self:set_attack_consequence("boomerang", "ignored")
+  self:set_invincible(true)
   self:set_attack_consequence("explosion", 1)
   self:set_pushed_back_when_hurt(false)
   self:release_wave()
@@ -53,7 +49,7 @@ function enemy:throw_keese(breed)
   -- See what to do next.
   nb_sons_to_create = nb_sons_to_create - 1
   if nb_sons_to_create > 0 then
-    -- Throw another son in 0.5 second.
+    -- Throw another son in 0.5 seconds.
     sol.timer.start(self, 500, function() self:throw_keese(breed) end)
   else
     -- Finish the son phase.
@@ -65,8 +61,8 @@ function enemy:throw_keese(breed)
 end
 
 function enemy:release_wave()
-  self:get_sprite():set_animation("shaking")
-  -- Throw more keese as life is taken away
+  if self:get_sprite() == "enemies/grim_creeper" then self:get_sprite():set_animation("shaking") end
+  -- Throw more keese as life is taken away.
   if phase == 0 then
     nb_sons_to_create = 7 + (8-self:get_life())
     breed = "regular"
@@ -91,7 +87,8 @@ function enemy:on_enabled()
 end
 
 function enemy:on_hurt()
-  self:change_phase()
+  -- Wait one second to change phase so hurt animation isn't changed right away.
+  sol.timer.start(self:get_map(), 1000, function() self:change_phase() end)
 end
 
 function enemy:on_restarted()

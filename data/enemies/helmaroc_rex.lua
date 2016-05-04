@@ -2,7 +2,7 @@ local enemy = ...
 local main_sprite = nil
 local claw_sprite = nil
 local nb_sons_created = 0
-local initial_life = 20
+local initial_life = 24
 
 -- Helmaroc Rex: giant bird, boss of Wind Tower.
 -- Hero must hit the bird on the claw section with his sword.
@@ -13,14 +13,10 @@ function enemy:on_created()
   claw_sprite = self:create_sprite("enemies/helmaroc_rex")
   claw_sprite:set_animation("claw")
   self:set_size(128, 104); self:set_origin(64, 77)
+  self:set_hurt_style("boss")
   self:set_obstacle_behavior("flying")
   self:set_layer_independent_collisions(true)
-  self:set_attack_hookshot("protected")
-  self:set_attack_arrow_sprite(claw_sprite, "protected")
-  self:set_attack_consequence("fire", "protected")
-  self:set_attack_consequence("sword", "protected")
-  self:set_attack_consequence("explosion", "protected")
-  self:set_attack_consequence("boomerang", "protected")
+  self:set_invincible(true)
   self:set_attack_consequence_sprite(claw_sprite, "sword", 1)
   self:set_pushed_back_when_hurt(false)
   self:set_push_hero_on_sword(true)
@@ -58,5 +54,7 @@ end
 function enemy:on_hurt(attack, life_lost)
   if self:get_life() <= 0 then
     self:get_map():remove_entities(self:get_name() .. "_son_")
+  else
+    self:create_enemy{ name = son_name, breed = "whirlwind", x = 0, y = -16, layer = 0, treasure_name = "arrow" }
   end
 end

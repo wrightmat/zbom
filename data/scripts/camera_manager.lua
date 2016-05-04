@@ -68,7 +68,8 @@ function camera_manager:create(game)
     end
 
     if not moving then
-      initial_x, initial_y, camera_width, camera_height = map:get_camera():get_position()
+      initial_x, initial_y  = map:get_camera():get_position()
+      camera_width, camera_height = map:get_camera():get_size()
     end
     moving = true
 

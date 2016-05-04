@@ -12,6 +12,51 @@ properties{
 
 tile{
   layer = 0,
+  x = 928,
+  y = 0,
+  width = 192,
+  height = 432,
+  pattern = "295",
+}
+
+tile{
+  layer = 0,
+  x = 920,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "590",
+}
+
+tile{
+  layer = 0,
+  x = 920,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "587",
+}
+
+tile{
+  layer = 0,
+  x = 824,
+  y = 768,
+  width = 16,
+  height = 16,
+  pattern = "272",
+}
+
+tile{
+  layer = 0,
+  x = 824,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "269",
+}
+
+tile{
+  layer = 0,
   x = 896,
   y = 904,
   width = 16,
@@ -458,15 +503,6 @@ tile{
   width = 608,
   height = 848,
   pattern = "275",
-}
-
-tile{
-  layer = 0,
-  x = 928,
-  y = 0,
-  width = 192,
-  height = 432,
-  pattern = "295",
 }
 
 tile{
@@ -987,7 +1023,7 @@ tile{
   x = 928,
   y = 0,
   width = 8,
-  height = 416,
+  height = 144,
   pattern = "586",
 }
 
@@ -4506,7 +4542,7 @@ tile{
   x = 824,
   y = 512,
   width = 8,
-  height = 400,
+  height = 304,
   pattern = "130",
 }
 
@@ -4515,7 +4551,7 @@ tile{
   x = 832,
   y = 512,
   width = 8,
-  height = 400,
+  height = 192,
   pattern = "586",
 }
 
@@ -5338,6 +5374,51 @@ tile{
   pattern = "10",
 }
 
+tile{
+  layer = 0,
+  x = 832,
+  y = 784,
+  width = 8,
+  height = 128,
+  pattern = "586",
+}
+
+tile{
+  layer = 0,
+  x = 824,
+  y = 752,
+  width = 8,
+  height = 160,
+  pattern = "130",
+}
+
+tile{
+  layer = 0,
+  x = 832,
+  y = 720,
+  width = 8,
+  height = 48,
+  pattern = "57",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 240,
+  width = 8,
+  height = 176,
+  pattern = "586",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 160,
+  width = 8,
+  height = 64,
+  pattern = "572",
+}
+
 teletransporter{
   name = "to_K4",
   layer = 0,
@@ -5677,6 +5758,26 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
+}
+
+jumper{
+  layer = 0,
+  x = 832,
+  y = 720,
+  width = 8,
+  height = 48,
+  direction = 4,
+  jump_length = 72,
+}
+
+jumper{
+  layer = 0,
+  x = 928,
+  y = 160,
+  width = 8,
+  height = 64,
+  direction = 4,
+  jump_length = 72,
 }
 
 tile{

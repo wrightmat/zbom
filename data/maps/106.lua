@@ -28,7 +28,7 @@ function map:on_started(destination)
   end
 
   random_walk(hylian_1)
-  random_walk(hylian_2)
+  random_walk(hylian_6)
 end
 
 function hylian_1:on_interaction()

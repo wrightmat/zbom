@@ -10,18 +10,16 @@ local stop_time = 1000
 -- Beamos
 
 function enemy:on_created()
-  self:set_life(1)
+  self:set_life(1); self:set_damage(2)
   self:create_sprite("enemies/beamos")
   self:set_size(16,32); self:set_origin(8,27)
-  self:set_invincible()
-  self:set_can_attack(false)
-  self:set_traversable(true)
+  self:set_invincible(); self:set_can_attack(false); self:set_traversable(true)
   self:set_pushed_back_when_hurt(false)
   self:set_attack_consequence("explosion", 1)
 end
 
 function enemy:on_restarted()
-  -- Create "movement" to make Beamos continually change direction and face hero
+  -- Create "movement" to make Beamos continually change direction and face hero.
   local m = sol.movement.create("target")
   m:set_target(self:get_map():get_hero())
   m:set_speed(0)

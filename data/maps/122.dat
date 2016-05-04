@@ -3,9 +3,9 @@ properties{
   y = 2242,
   width = 1120,
   height = 1120,
-  world = "outside_north",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_north",
   tileset = "2",
   music = "same",
 }
@@ -3538,7 +3538,9 @@ teletransporter{
   y = 0,
   width = 16,
   height = 1120,
-  destination_map = "122",
+  transition = "scrolling",
+  destination_map = "118",
+  destination = "_side",
 }
 
 enemy{
