@@ -106,7 +106,8 @@ if boss_belahim ~= nil then
                   map:get_hero():set_animation("stopped")
                   bed_zelda:remove()
                   game:start_dialog("ordona.8.zelda", function()
-                    map:get_hero():teleport("84", "from_sanctum")  -- Teleport hero outside of Sanctum.
+                    map:get_hero():teleport("84", "from_sanctum")  -- Teleport hero outside of Sanctum and roll the credits.
+                    sol.timer.start(map:get_game(), 500, function() map:get_game():on_credits_started() end)
                   end)
                 end)
               end)

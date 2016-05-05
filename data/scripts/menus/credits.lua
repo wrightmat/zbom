@@ -2,7 +2,7 @@ local game = ...
 
 local credits_menu = {}  -- The credits menu.
 
-local credits_background = sol.surface.create("menus/credits_background")
+local credits_background = sol.surface.create("menus/credits_background.png")
 local text_width, text_height = 0
 
 function game:on_credits_started()
