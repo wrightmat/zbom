@@ -1,15 +1,20 @@
 local game = ...
+
 local credits_menu = {}  -- The credits menu.
+
+local credits_background = sol.surface.create("menus/credits_background")
 local text_width, text_height = 0
 
 function game:on_credits_started()
-  sol.menu.start(game:get_map(), credits_menu)
+  sol.menu.start(self, credits_menu)
 end
 
 function credits_menu:on_started()
-  sol.audio.play_music("credits", false)
   local map = game:get_map()
   local hero = game:get_hero()
+
+  sol.audio.play_music("credits", false)
+
   self.heading = sol.text_surface.create{
     font = "lttp",
     font_size = "20",
@@ -24,8 +29,8 @@ function credits_menu:on_started()
   }
 
   map:get_game().hud:set_enabled(false)
-  map:get_hero():set_position(-100, -100)
-  map:get_hero():freeze()
+  hero:set_position(-100, -100)
+  hero:freeze()
 
   function show_group(index)
     local i = 0
@@ -101,8 +106,8 @@ function credits_menu:on_finished()
 end
 
 function credits_menu:on_draw(dst_surface)
-  local camera_x, camera_y, camera_width, camera_height = game:get_map():get_camera():get_position()
-  local credits_background = sol.surface.create("menus/credits_background")
+  local camera_x, camera_y = game:get_map():get_camera():get_position()
+  local camera_width, camera_height = game:get_map():get_camera():get_size()
   credits_background:draw(dst_surface)
 
   if self.group ~= nil then

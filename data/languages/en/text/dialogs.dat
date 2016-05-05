@@ -7696,10 +7696,10 @@ dialog{
 $v! $0. $0. $0.
 You have done well to defeat the darkness
 that overtook this place. With the power
-of the $m Tribe$w now diminised, my   $y light$w
+of the $m Tribe$w now diminised, my   $y  light$w
 was able to break through!
 I must tell you of a powerful artifact
-that we can use to banish the   $m  Dark Tribe$w
+that we can use to banish the    $m  Dark Tribe$w
 once again. The Mirror of Darkness can be
 called forth by using the power of the
 complete $c Book of Mudora$w.
@@ -7737,10 +7737,10 @@ dialog{
   text = [[
 Indeed, with the Dark Tribe entirely gone,
 Zelda has returned to where she was taken
-- $bHyrule Castle$w.
+-$bHyrule Castle$w .
 With the $c Book of Mudora$w returned to
 its former state, the land of Hyrule
-should soon return to its former state as
+should soon return to its former glory as
 well. Even so, continuing to explore the
 world and help its residents could be
 beneficial.
@@ -9308,6 +9308,15 @@ dialog{
 
     Kakariko Cemetary
 
+]]
+}
+
+dialog{
+  id = "sign.credits",
+  text = [[
+Thanks for playing!
+Full credits will go here in
+final version!
 ]]
 }
 

@@ -67,8 +67,8 @@ function sensor_boss:on_activated()
     boss_zirna:set_enabled(true)
     sol.audio.play_music("boss")
     map:close_doors("boss_door")
-    wallmaster:remove() -- Don't want hero taken during boss fight.
-    wallmaster_2:remove()
+    if map:get_entity("wallmaster") then wallmaster:remove() end -- Don't want hero taken during boss fight.
+    if map:get_entity("wallmaster_2") then wallmaster_2:remove() end
   end
 end
 if boss_zirna ~= nil then
@@ -84,7 +84,7 @@ if boss_belahim ~= nil then
   function boss_belahim:on_dead()
     sol.audio.play_sound("boss_killed")
     boss_heart:set_enabled(true)
-    sol.timer.start(5000, function()
+    sol.timer.start(8000, function()
       sol.audio.play_music("temple_sanctum")
       game:set_value("b1699", true)  -- Main quest completed - Dark Tribe defeated.
       game:start_dialog("ordona.8.boss_dead", game:get_player_name(), function()
@@ -101,12 +101,12 @@ if boss_belahim ~= nil then
                 m:set_target(880, 1032)
                 map:get_hero():set_direction(1) -- Walking upward.
                 map:get_hero():set_animation("walking")
-                m:start(map:get_hero(), function()
+                m:start(map:get_hero())
+                sol.timer.start(map, 1800, function()
                   map:get_hero():set_animation("stopped")
                   bed_zelda:remove()
                   game:start_dialog("ordona.8.zelda", function()
                     map:get_hero():teleport("84", "from_sanctum")  -- Teleport hero outside of Sanctum.
-                    sol.timer.start(map:get_game(), 500, function() map:get_game():on_credits_started() end)
                   end)
                 end)
               end)

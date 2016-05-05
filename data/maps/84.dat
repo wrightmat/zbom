@@ -3,9 +3,9 @@ properties{
   y = 0,
   width = 864,
   height = 768,
-  world = "outside",
   min_layer = 0,
   max_layer = 2,
+  world = "outside",
   tileset = "2",
   music = "lost_woods",
 }
@@ -7225,6 +7225,16 @@ wall{
   stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
+}
+
+npc{
+  name = "signpost_credits",
+  layer = 0,
+  x = 824,
+  y = 429,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/sign",
 }
 
 tile{

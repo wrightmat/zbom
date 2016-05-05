@@ -43,6 +43,11 @@ function map:on_started()
       game:start_dialog("deku.2.lost_woods_first", function() game:set_value("b1179", true) end)
     end
   end
+  if game:get_value("b1191") then
+    signpost_credits:set_enabled(true)
+  else
+    signpost_credits:set_enabled(false)
+  end
 end
 
 function npc_deku_1:on_interaction()
@@ -65,4 +70,9 @@ end
 
 function map:on_finished()
   if woods_overlay then woods_overlay = nil end
+end
+
+function signpost_credits:on_interaction()
+  --game:on_credits_started()
+  game:start_dialog("sign.credits")
 end

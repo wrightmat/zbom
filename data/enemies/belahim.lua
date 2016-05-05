@@ -1,9 +1,10 @@
 local enemy = ...
 local initial_life = 40
-local second_life = 12
+local second_life = 20
 local second_stage = false
 local shadow = false
 local nb_sons_created = 0
+local last_action = 0
 
 -- Belahim (Dark Tribe leader, final boss of game)
 -- Behavior: Invincible as normal form, must avoid both boss and beams he throws
@@ -12,7 +13,7 @@ local nb_sons_created = 0
 --       (Light sword does three times as much damage, must hit him 12 times with Forged Sword)
 
 function enemy:on_created()
-  self:set_life(initial_life); self:set_damage(8)
+  self:set_life(initial_life); self:set_damage(12)
   local sprite = self:create_sprite("enemies/belahim")
   self:set_size(64, 64); self:set_origin(32, 56)
   self:set_invincible()
@@ -21,14 +22,17 @@ function enemy:on_created()
   self:set_pushed_back_when_hurt(false)
   self:set_push_hero_on_sword(true)
   sprite:set_animation("stopped")
+  self:set_hurt_style("boss")
 end
 
 function enemy:on_restarted()
   if self:get_game():get_map():get_id() == "218" then -- Don't want Belahim to act during the intro.
-    if second_stage then local rand = math.random(10) else local rand = math.random(6) end
-    if rand == 1 then
+    local action = math.random(6)
+    if action == last_action then local action = math.random(6) end
+    last_action = action
+    if action == 1 then
       if not shadow then self:go_shadow() else self:go_normal() end
-    elseif rand == 2 and not shadow then self:go_beam()
+    elseif action == 2 and not shadow then self:go_beam()
     else self:go_hero() end
   end
 end
@@ -46,13 +50,15 @@ function enemy:go_shadow()
   shadow = true
   self:stop_movement()
   self:get_sprite():set_animation("shrink")
-  sol.timer.start(self:get_map(), 1000, function() self:get_sprite():set_animation("shadow") end)
-  sol.timer.start(self:get_map(), math.random(10)*5000, function() enemy:go_normal() end)
+  sol.timer.start(self:get_map(), 1000, function()
+    if self:get_sprite() == "enemies/belahim" then self:get_sprite():set_animation("shadow") end
+  end)
+  sol.timer.start(self:get_map(), math.random(5)*10000, function() enemy:go_normal() end)
 end
 
 function enemy:go_normal()
   shadow = false
-  self:get_sprite():set_animation("walking")
+  if self:get_sprite() == "enemies/belahim" then self:get_sprite():set_animation("walking") end
   self:restart()
 end
 
@@ -88,6 +94,7 @@ function enemy:on_update()
   else
     self:set_attack_arrow("protected")
   end
+  if second_stage then self:set_attack_consequence("sword", "protected") end
 end
 
 function enemy:on_hurt(attack)
@@ -96,6 +103,7 @@ function enemy:on_hurt(attack)
     self:get_map():remove_entities("belahim_beam")
     self:set_life(second_life)
     second_stage = true
+    self:set_damage(20)
   end
 end
 
@@ -115,7 +123,7 @@ function enemy:on_custom_attack_received(attack, sprite)
       if second_stage then
         self:hurt(2); self:remove_life(2)
       else
-        self:hurt(6); enemy:remove_life(6)
+        self:hurt(4); enemy:remove_life(4)
       end
       shadow = false
     end
