@@ -86,6 +86,7 @@ if boss_belahim ~= nil then
     boss_heart:set_enabled(true)
     sol.timer.start(8000, function()
       sol.audio.play_music("temple_sanctum")
+      game:set_dungeon_finished(8)
       game:set_value("b1699", true)  -- Main quest completed - Dark Tribe defeated.
       game:start_dialog("ordona.8.boss_dead", game:get_player_name(), function()
         local m = sol.movement.create("target")
