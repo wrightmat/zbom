@@ -18,7 +18,7 @@ local positions = {
 --    Only vulnerable to light arrows when she's using dark magic - otherwise sword is minimally effective.
 
 function enemy:on_created()
-  self:set_life(64); self:set_damage(6)
+  self:set_life(80); self:set_damage(6)
   local sprite = self:create_sprite("enemies/zirna")
   self:set_size(24, 40); self:set_origin(12, 37)
   self:set_invincible()
@@ -48,7 +48,7 @@ function enemy:create_son()
       self:create_enemy({ breed = "poe", treasure_name = "random" })
     end)
   end
-  sol.timer.start(self, 3000, function() self:restart() end)
+  sol.timer.start(self, 3500, function() self:restart() end)
 end
 
 function enemy:teleport(object)
@@ -89,9 +89,9 @@ function enemy:on_restarted()
       sol.timer.start(self:get_map(), 1100, function() local rand = math.random(5) end)
     end
     last_action = rand
-    if rand == 1 then self:create_son()
-    elseif (rand == 2 and map:get_id() == "218") then self:teleport("self")
-    elseif (rand == 3 and map:get_id() == "218") then self:teleport("hero")
+    if rand == 1 or rand == 2 then self:create_son()
+    elseif (rand == 3 and map:get_id() == "218") then self:teleport("self")
+    elseif (rand == 4 and map:get_id() == "218") then self:teleport("hero")
     else self:go_hero() end
   end
 end
@@ -106,7 +106,7 @@ function enemy:on_movement_changed(movement)
 end
 
 function enemy:on_update()
-  if vulnerable then self:get_sprite():set_animation("casting") end
+  if vulnerable and self:get_sprite() == "enemies/zirna" then self:get_sprite():set_animation("casting") end
 end
 
 function enemy:on_post_draw()

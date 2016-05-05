@@ -11,6 +11,9 @@ function map:on_started(destination)
   if not game:get_value("b1183") then
     miniboss_shadow_link:set_enabled(false)
     chest_item:set_enabled(false)
+    miniboss_warp:set_enabled(false)
+  else
+    miniboss_warp:set_enabled(true)
   end
   if not game:get_value("b1190") then boss_zirna:set_enabled(false) end
   if not game:get_value("b1191") then

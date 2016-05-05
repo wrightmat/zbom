@@ -79,8 +79,10 @@ local function update_rooms()
   end
 
   -- For Room 21.
-  map:create_enemy({ x = 1160, y = 941, layer = 0, direction = 0, breed = "boulder" })
-  map:create_enemy({ x = 1304, y = 941, layer = 0, direction = 0, breed = "boulder" })
+  if room21_crystal:is_in_same_region(map:get_hero()) then
+    map:create_enemy({ x = 1160, y = 941, layer = 0, direction = 0, breed = "boulder" })
+    map:create_enemy({ x = 1304, y = 941, layer = 0, direction = 0, breed = "boulder" })
+  end
 end
 
 function map:on_started(destination)
@@ -89,17 +91,17 @@ function map:on_started(destination)
 
   if destination == from_above and not game:get_value("dungeon_8_explored_1b_complete") then
     sol.timer.start(self, 1000, function()
-      map:move_camera(992, 1453, 250, function()
-        sol.audio.play_sound("poe_soul")
-        game:start_dialog("shadow_link.sanctum_basement", game:get_player_name(), function()
-          game:get_hero():start_treasure("map", 1, "b1181") -- Give map so explored and non-explored rooms show correctly.
-          shadow_link:get_sprite():fade_out(50, function()
-            enter_stairs_1:set_enabled(false)
-            enter_stairs_2:set_enabled(false)
-            enter_stairs_3:set_enabled(false)
-          end)
+      map:get_camera():start_tracking(shadow_link)
+      sol.audio.play_sound("poe_soul")
+      game:start_dialog("shadow_link.sanctum_basement", game:get_player_name(), function()
+        game:get_hero():start_treasure("map", 1, "b1181") -- Give map so explored and non-explored rooms show correctly.
+        shadow_link:get_sprite():fade_out(50, function()
+          map:get_camera():start_tracking(map:get_hero())
+          enter_stairs_1:set_enabled(false)
+          enter_stairs_2:set_enabled(false)
+          enter_stairs_3:set_enabled(false)
         end)
-      end, 500, 10000)
+      end)
     end)
   end
   game:set_value("dungeon_8_explored_1b_25", true)

@@ -3,9 +3,9 @@ properties{
   y = 0,
   width = 1280,
   height = 1600,
-  world = "inside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "inside_world",
   tileset = "1",
   music = "cave",
 }
@@ -6049,8 +6049,7 @@ enemy{
   y = 829,
   direction = 3,
   breed = "wizzrobe_ice",
-  treasure_name = "rupee",
-  treasure_variant = 4,
+  treasure_name = "crystal",
 }
 
 enemy{
@@ -6069,8 +6068,7 @@ enemy{
   y = 821,
   direction = 3,
   breed = "wizzrobe_ice",
-  treasure_name = "rupee",
-  treasure_variant = 4,
+  treasure_name = "crystal",
 }
 
 enemy{
@@ -6089,8 +6087,7 @@ enemy{
   y = 821,
   direction = 3,
   breed = "wizzrobe_ice",
-  treasure_name = "rupee",
-  treasure_variant = 4,
+  treasure_name = "crystal",
 }
 
 enemy{
@@ -6099,8 +6096,7 @@ enemy{
   y = 829,
   direction = 3,
   breed = "wizzrobe_fire",
-  treasure_name = "rupee",
-  treasure_variant = 3,
+  treasure_name = "crystal",
 }
 
 enemy{
@@ -6119,8 +6115,7 @@ enemy{
   y = 829,
   direction = 3,
   breed = "wizzrobe_fire",
-  treasure_name = "rupee",
-  treasure_variant = 3,
+  treasure_name = "crystal",
 }
 
 enemy{
@@ -6139,8 +6134,7 @@ enemy{
   y = 829,
   direction = 3,
   breed = "wizzrobe_fire",
-  treasure_name = "rupee",
-  treasure_variant = 3,
+  treasure_name = "crystal",
 }
 
 destination{

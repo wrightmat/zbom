@@ -3,9 +3,9 @@ properties{
   y = 0,
   width = 1328,
   height = 944,
-  world = "inside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "inside_world",
   tileset = "13",
   music = "underground",
 }
@@ -8040,6 +8040,24 @@ tile{
   pattern = "212",
 }
 
+tile{
+  layer = 1,
+  x = 624,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "248",
+}
+
+tile{
+  layer = 1,
+  x = 688,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "248",
+}
+
 jumper{
   layer = 1,
   x = 616,
@@ -8725,6 +8743,26 @@ wall{
   stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
+}
+
+destructible{
+  layer = 1,
+  x = 632,
+  y = 117,
+  treasure_name = "crystal",
+  treasure_savegame_variable = "midoro_crystal_1",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 1,
+  x = 696,
+  y = 117,
+  treasure_name = "crystal",
+  treasure_savegame_variable = "midoro_crystal_2",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
 }
 
 tile{

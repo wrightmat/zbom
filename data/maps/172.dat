@@ -3,9 +3,9 @@ properties{
   y = 0,
   width = 1328,
   height = 944,
-  world = "inside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "inside_world",
   tileset = "13",
   music = "underground",
 }
@@ -6004,7 +6004,8 @@ enemy{
   y = 77,
   direction = 0,
   breed = "stal",
-  treasure_name = "random_north",
+  treasure_name = "crystal",
+  treasure_savegame_variable = "parapa_crystal_1",
 }
 
 enemy{
@@ -6014,7 +6015,8 @@ enemy{
   y = 77,
   direction = 0,
   breed = "stal",
-  treasure_name = "random_north",
+  treasure_name = "crystal",
+  treasure_savegame_variable = "parapa_crystal_2",
 }
 
 enemy{

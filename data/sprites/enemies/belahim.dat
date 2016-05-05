@@ -13,11 +13,13 @@ animation{
 animation{
   name = "hurt",
   src_image = "enemies/belahim.png",
+  frame_delay = 50,
+  frame_to_loop_on = 0,
   directions = {
-    { x = 304, y = 0, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 56 },
-    { x = 304, y = 0, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 56 },
-    { x = 304, y = 0, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 56 },
-    { x = 304, y = 0, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 56 },
+    { x = 304, y = 0, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 56, num_frames = 2 },
+    { x = 304, y = 0, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 56, num_frames = 2 },
+    { x = 304, y = 0, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 56, num_frames = 2 },
+    { x = 304, y = 0, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 56, num_frames = 2 },
   },
 }
 animation{
@@ -48,7 +50,7 @@ animation{
   directions = {
     { x = 128, y = 0, frame_width = 56, frame_height = 64, origin_x = 28, origin_y = 56, num_frames = 2 },
     { x = 128, y = 0, frame_width = 56, frame_height = 64, origin_x = 28, origin_y = 56, num_frames = 2 },
-    { x = 128, y = 0, frame_width = 56, frame_height = 64, origin_x = 28, origin_y = 56, num_frames = 2 },
+    { x = 131, y = 0, frame_width = 56, frame_height = 64, origin_x = 28, origin_y = 56, num_frames = 2 },
     { x = 128, y = 0, frame_width = 56, frame_height = 64, origin_x = 28, origin_y = 56, num_frames = 2 },
   },
 }

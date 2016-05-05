@@ -44,9 +44,9 @@ animation{
   name = "sleeping",
   src_image = "enemies/wallmaster.png",
   directions = {
-    { x = 32, y = 32, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
-    { x = 32, y = 32, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
-    { x = 32, y = 32, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
-    { x = 32, y = 32, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 0, y = 40, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 0, y = 40, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 0, y = 40, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 0, y = 40, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
   },
 }

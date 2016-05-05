@@ -7357,6 +7357,19 @@ sensor{
   height = 16,
 }
 
+teletransporter{
+  name = "miniboss_warp",
+  layer = 0,
+  x = 184,
+  y = 1232,
+  width = 16,
+  height = 16,
+  destination_map = "219",
+  destination = "from_above",
+  sprite = "entities/teletransporter",
+  sound = "warp",
+}
+
 enemy{
   name = "keese_room2_2",
   layer = 1,
