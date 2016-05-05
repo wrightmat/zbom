@@ -73,5 +73,7 @@ function map:on_finished()
 end
 
 function signpost_credits:on_interaction()
-  game:on_credits_started()
+  game:start_dialog("sign.credits", function(answer)
+    if answer == 1 then game:on_credits_started() end
+  end)
 end

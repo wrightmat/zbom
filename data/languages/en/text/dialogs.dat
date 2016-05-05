@@ -9312,6 +9312,16 @@ dialog{
 }
 
 dialog{
+  id = "sign.credits",
+  question = "1",
+  text = [[
+Replay the credits?
+Yes
+No
+]]
+}
+
+dialog{
   id = "sign.deep_water",
   skip = "current",
   text = [[
