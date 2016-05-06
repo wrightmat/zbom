@@ -11,11 +11,13 @@ animation{
 animation{
   name = "hurt",
   src_image = "enemies/armos.png",
+  frame_delay = 50,
+  frame_to_loop_on = 0,
   directions = {
-    { x = 112, y = 0, frame_width = 16, frame_height = 40, origin_x = 8, origin_y = 36 },
-    { x = 112, y = 0, frame_width = 16, frame_height = 40, origin_x = 8, origin_y = 36 },
-    { x = 112, y = 0, frame_width = 16, frame_height = 40, origin_x = 8, origin_y = 36 },
-    { x = 112, y = 0, frame_width = 16, frame_height = 40, origin_x = 8, origin_y = 36 },
+    { x = 112, y = 0, frame_width = 16, frame_height = 40, origin_x = 8, origin_y = 36, num_frames = 2 },
+    { x = 112, y = 0, frame_width = 16, frame_height = 40, origin_x = 8, origin_y = 36, num_frames = 2 },
+    { x = 112, y = 0, frame_width = 16, frame_height = 40, origin_x = 8, origin_y = 36, num_frames = 2 },
+    { x = 112, y = 0, frame_width = 16, frame_height = 40, origin_x = 8, origin_y = 36, num_frames = 2 },
   },
 }
 animation{

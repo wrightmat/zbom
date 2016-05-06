@@ -1,5 +1,6 @@
 local enemy = ...
 local going_hero = false
+local near_hero = false
 local timer
 
 -- Armos Status: Stationary until hero gets close, then comes to life.
@@ -12,7 +13,6 @@ function enemy:on_created()
   self:set_pushed_back_when_hurt(true)
   self:set_push_hero_on_sword(true)
   self:set_invincible()
-  sprite:set_animation("immobilized")
 end
 
 function enemy:on_obstacle_reached(movement)
@@ -31,18 +31,21 @@ function enemy:on_hurt()
     timer:stop()
     timer = nil
   end
+  going_hero = false
 end
 
 function enemy:check_hero()
   local hero = self:get_map():get_entity("hero")
   local _, _, layer = self:get_position()
   local _, _, hero_layer = hero:get_position()
-  local near_hero = layer == hero_layer and self:get_distance(hero) < 100
+  near_hero = layer == hero_layer and self:get_distance(hero) < 100
 
   if near_hero and not going_hero then
     self:go_hero()
   elseif not near_hero and going_hero then
     self:stop(self:get_movement())
+    self:get_sprite():set_animation("immobilized")
+  elseif not going_hero or not near_hero then
     self:get_sprite():set_animation("immobilized")
   end
   timer = sol.timer.start(self, 2000, function() self:check_hero() end)
