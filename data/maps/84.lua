@@ -51,7 +51,9 @@ function map:on_started()
 end
 
 function npc_deku_1:on_interaction()
-  if game:get_value("i1807") == 7 then
+  if game:get_value("b1699") then
+    game:start_dialog("deku.4.lost_woods")
+  elseif game:get_value("i1807") == 7 then
     if math.random(4) == 1 then
       game:start_dialog("deku.2.lost_woods")
     else

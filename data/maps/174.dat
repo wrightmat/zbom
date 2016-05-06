@@ -8640,19 +8640,19 @@ wall{
 
 wall{
   layer = 0,
-  x = 1472,
+  x = 1480,
   y = 320,
-  width = 8,
-  height = 256,
+  width = 344,
+  height = 8,
   stops_enemies = true,
 }
 
 wall{
   layer = 0,
-  x = 1480,
+  x = 1472,
   y = 320,
-  width = 344,
-  height = 8,
+  width = 8,
+  height = 256,
   stops_enemies = true,
 }
 
@@ -8671,78 +8671,6 @@ wall{
   y = 568,
   width = 336,
   height = 8,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 1472,
-  y = 608,
-  width = 8,
-  height = 256,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 1816,
-  y = 608,
-  width = 8,
-  height = 256,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 1480,
-  y = 608,
-  width = 336,
-  height = 8,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 1480,
-  y = 856,
-  width = 336,
-  height = 8,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 1480,
-  y = 1432,
-  width = 336,
-  height = 8,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 1480,
-  y = 1184,
-  width = 336,
-  height = 8,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 1472,
-  y = 1184,
-  width = 8,
-  height = 256,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 1816,
-  y = 1184,
-  width = 8,
-  height = 256,
   stops_enemies = true,
 }
 
@@ -8800,6 +8728,78 @@ enemy{
   y = 1261,
   direction = 0,
   breed = "moth",
+}
+
+wall{
+  layer = 1,
+  x = 1480,
+  y = 608,
+  width = 336,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1472,
+  y = 608,
+  width = 8,
+  height = 256,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1816,
+  y = 608,
+  width = 8,
+  height = 256,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1480,
+  y = 856,
+  width = 336,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1480,
+  y = 1184,
+  width = 336,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1472,
+  y = 1184,
+  width = 8,
+  height = 256,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1816,
+  y = 1184,
+  width = 8,
+  height = 256,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1480,
+  y = 1432,
+  width = 336,
+  height = 8,
+  stops_enemies = true,
 }
 
 tile{

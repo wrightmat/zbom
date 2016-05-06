@@ -135,7 +135,7 @@ if game:get_time_of_day() ~= "night" then
     -- Show torch overlay for Ordona dialog.
     if torch_overlay ~= nil then
       local screen_width, screen_height = dst_surface:get_size()
-      local cx, cy = map:get_camera_position()
+      local cx, cy = map:get_camera():get_position()
       local tx, ty = torch_1:get_center_position()
       local x = 320 - tx + cx
       local y = 240 - ty + cy
@@ -232,8 +232,27 @@ function sensor_race:on_activated()
 end
 
 function sensor_ordona_speak:on_activated()
-  -- You've finished everything in Ordon - Ordona directs you to Faron.
-  if game:has_item("sword") and game:get_value("i1027") < 6 then
+  if game:get_value("b1699") and not game:get_value("b1698") then
+    -- You've finished everything - Ordona bids you goodbye.
+    sol.timer.start(1000, function() torch_1:get_sprite():set_animation("lit") end)
+    sol.timer.start(2000, function()
+      hero:freeze()
+      torch_overlay = sol.surface.create("entities/dark.png")
+      torch_overlay:fade_in(50)
+      hero:set_direction(0)
+      game:start_dialog("ordona.8.village", game:get_player_name(), function()
+        torch_overlay:fade_out(50)
+        sol.timer.start(2000, function()
+          torch_overlay = nil
+          torch_1:get_sprite():set_animation("unlit")
+        end)
+        hero:unfreeze()
+        game:set_stamina(game:get_max_stamina())
+        game:set_value("b1698", true)
+      end)
+    end)
+  elseif game:has_item("sword") and game:get_value("i1027") < 6 then
+    -- You've finished everything in Ordon - Ordona directs you to Faron.
     sol.timer.start(1000, function() torch_1:get_sprite():set_animation("lit") end)
     sol.timer.start(2000, function()
       hero:freeze()

@@ -3963,6 +3963,16 @@ Probably not...
 }
 
 dialog{
+  id = "deku.4.lost_woods",
+  skip = "current",
+  text = [[
+The $m masters$w are gone?$0
+What will we do? We Deku need a
+strong leader, or we're lost!
+]]
+}
+
+dialog{
   id = "deku1.1.faron",
   skip = "current",
   text = [[
@@ -7728,6 +7738,24 @@ into chaos. Now that they're defeated,
 the Dark Mirror can be used to banish them
 entirely. With their magic gone, the hold
 on Zelda should release as well.
+]]
+}
+
+dialog{
+  id = "ordona.8.village",
+  text = [[
+$v! $0. $0. $0.
+I sense that the darkness has almost
+fully lifted. It would appear that
+your job has come to an end, hero.
+It has been my pleasure to assist you
+in your quest, but it is now time for
+us to part ways. Your lantern will
+return to its previous state, and I
+will return to my protection of only
+the Ordon people.$0
+
+Be well, young hero.
 ]]
 }
 

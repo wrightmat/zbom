@@ -3305,6 +3305,14 @@ teletransporter{
   destination = "_side",
 }
 
+enemy{
+  layer = 0,
+  x = 256,
+  y = 765,
+  direction = 0,
+  breed = "armos",
+}
+
 tile{
   layer = 2,
   x = 288,
