@@ -712,6 +712,17 @@ blocks on a whim!
 }
 
 dialog{
+  id = "_item_description.carrot_counter.1",
+  icon = "17",
+  skip = "current",
+  text = [[
+Deep orange carrots can be found in
+the ground throughout Hyrule. Eat one
+to revitalize yourself!
+]]
+}
+
+dialog{
   id = "_item_description.crystal_counter.1",
   skip = "current",
   text = [[
@@ -797,6 +808,17 @@ dialog{
   text = [[
 A lantern to light torches and
 give off light in dark places.
+]]
+}
+
+dialog{
+  id = "_item_description.meat_counter.1",
+  icon = "17",
+  skip = "current",
+  text = [[
+Chunks of meat may be left by enemies
+when you kill them. It may not look
+very appetizing, but it's nutritious!
 ]]
 }
 
@@ -1787,6 +1809,16 @@ on a whim.
 }
 
 dialog{
+  id = "_treasure.carrot.1",
+  icon = "16",
+  skip = "current",
+  text = [[
+You got a  $r Carrot$w!$0
+Eat it to regain some stamina!
+]]
+}
+
+dialog{
   id = "_treasure.compass.1",
   icon = "71",
   skip = "current",
@@ -1973,6 +2005,16 @@ dialog{
 You found a $r Dungeon Map$w!
 Use it to navigate difficult areas
 and explore places you haven't yet!
+]]
+}
+
+dialog{
+  id = "_treasure.meat.1",
+  icon = "16",
+  skip = "current",
+  text = [[
+You got some  $r Meat$w!$0
+Eat it to regain some stamina!
 ]]
 }
 
