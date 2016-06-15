@@ -3,9 +3,9 @@ properties{
   y = 1121,
   width = 1120,
   height = 1120,
-  world = "outside_north",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_north",
   tileset = "3",
   music = "same",
 }
@@ -4298,7 +4298,7 @@ enemy{
   y = 205,
   direction = 0,
   breed = "leever_purple",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -4308,7 +4308,7 @@ enemy{
   y = 141,
   direction = 0,
   breed = "leever_purple",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -4318,7 +4318,7 @@ enemy{
   y = 117,
   direction = 0,
   breed = "leever_purple",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 destructible{

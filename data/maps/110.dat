@@ -3,9 +3,9 @@ properties{
   y = 2242,
   width = 1120,
   height = 1120,
-  world = "outside_north",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_north",
   tileset = "2",
   music = "north",
 }
@@ -1850,6 +1850,7 @@ enemy{
   y = 517,
   direction = 0,
   breed = "chuchu_yellow",
+  treasure_name = "random_north",
 }
 
 enemy{
@@ -1859,6 +1860,7 @@ enemy{
   y = 917,
   direction = 0,
   breed = "chuchu_yellow",
+  treasure_name = "random_north",
 }
 
 enemy{
@@ -1868,6 +1870,7 @@ enemy{
   y = 477,
   direction = 0,
   breed = "knight_red",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -1877,6 +1880,7 @@ enemy{
   y = 805,
   direction = 0,
   breed = "knight_red",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -1886,6 +1890,7 @@ enemy{
   y = 269,
   direction = 0,
   breed = "knight_red",
+  treasure_name = "random_enemy",
 }
 
 destructible{

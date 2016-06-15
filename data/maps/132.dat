@@ -3,9 +3,9 @@ properties{
   y = 3363,
   width = 1120,
   height = 1120,
-  world = "outside_north",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_north",
   tileset = "2",
   music = "town_kasuto_old",
 }
@@ -3884,7 +3884,7 @@ enemy{
   y = 613,
   direction = 0,
   breed = "peahat",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -3894,7 +3894,7 @@ enemy{
   y = 509,
   direction = 0,
   breed = "peahat",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
