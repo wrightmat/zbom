@@ -3,9 +3,9 @@ properties{
   y = 1121,
   width = 1120,
   height = 1120,
-  world = "outside_north",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_north",
   tileset = "2",
   music = "same",
 }
@@ -5023,6 +5023,33 @@ tile{
   pattern = "11",
 }
 
+tile{
+  layer = 0,
+  x = 320,
+  y = 472,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 504,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 552,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
 teletransporter{
   name = "to_F3",
   layer = 0,
@@ -5101,5 +5128,35 @@ enemy{
   direction = 0,
   breed = "geldman",
   treasure_name = "random_north",
+}
+
+destructible{
+  layer = 0,
+  x = 328,
+  y = 485,
+  treasure_name = "crystal",
+  treasure_savegame_variable = "tantan_crystal_1",
+  sprite = "entities/stone_small_black",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 312,
+  y = 517,
+  treasure_name = "crystal",
+  treasure_savegame_variable = "tantan_crystal_2",
+  sprite = "entities/stone_small_black",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 328,
+  y = 565,
+  treasure_name = "crystal",
+  treasure_savegame_variable = "tantan_crystal_3",
+  sprite = "entities/stone_small_black",
+  destruction_sound = "stone",
 }
 

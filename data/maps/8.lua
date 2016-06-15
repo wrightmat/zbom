@@ -35,6 +35,10 @@ function map:on_started(destination)
       entity:set_enabled(true)
     end
   end
+  -- Mr. Write will be enabled after you've collected all the books. Will reward you with treasures (magic crystal mostly).
+  if not game:get_value("i1615") >= 13 then
+    npc_mr_write:set_enabled(false)
+  end
 end
 
 function npc_isan:on_interaction()
@@ -304,7 +308,14 @@ function spoils_ore:on_interaction()
 end
 
 function npc_kokiri_1:on_interaction()
-  game:start_dialog("kokiri_1.0.saria")
+  if game:get_value("i1631") >= 16 then
+    game:start_dialog("kokiri_1.0.plants", function()
+      map:get_hero():start_treasure("crystal") -- Give a total of 5 Magic Crystals.
+      game:set_value("i1834", game:get_value("i1834"+4))
+    end)
+  else
+    game:start_dialog("kokiri_1.0.saria")
+  end
 end
 function npc_kokiri_2:on_interaction()
   if not game:get_value("b1630") then
@@ -386,5 +397,23 @@ function npc_priest:on_interaction()
     game:start_dialog("priest.0.explain")
   else
     game:start_dialog("priest.0.sanctuary", function() priest_spoken = true end)
+  end
+end
+
+function npc_mr_write:on_interaction()
+  -- Mr. Write is enabled only when the books are found, so no need to do the check here.
+  game:start_dialog("mr_write.0.house", function()
+    map:get_hero():start_treasure("crystal") -- Give a total of 5 Magic Crystals.
+    game:set_value("i1834", game:get_value("i1834"+4))
+  end)
+end
+
+function npc_sanday:on_interaction()
+  -- If hero has spoken with Mosq (astronomer) the dialog changes.
+  if game:get_value("astronomer_spoken") and game:get_value("sanday_spoken") then
+    game:start_dialog("sanday.1.house")
+  else
+    game:start_dialog("sanday.0.house")
+    game:set_value("sanday_spoken", true)
   end
 end

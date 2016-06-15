@@ -21,8 +21,8 @@ function map:on_started(destination)
 
     sensor.on_activated_repeat = function()
       if hero:get_direction() == 1 and tile:is_enabled() then
-	tile:set_enabled(false)
-	sol.audio.play_sound("door_open")
+        tile:set_enabled(false)
+        sol.audio.play_sound("door_open")
       end
     end
   end
@@ -35,15 +35,20 @@ function map:on_started(destination)
   end
 
   random_walk(npc_dog)
-  random_walk(npc_kasuto_1)
   random_walk(npc_kasuto_2)
+  -- If hero has collected all the book, Mr. Write is in his house and rewards the player.
+  if game:get_value("i1615") >= 13 then
+    npc_mr_write:set_enabled(false)
+  else
+    random_walk(npc_mr_write)
+  end
 end
 
 function npc_dog:on_interaction()
   sol.audio.play_sound("dog")
 end
 
-function:npc_kasuto_1:on_interaction()
+function:npc_mr_write:on_interaction()
   game:start_dialog("hylian_1.0.kasuto")
 end
 

@@ -48,7 +48,7 @@ end
 
 function item:on_amount_changed(amount)
   if self:get_variant() ~= 0 then
-    -- update the icon (with or without arrow).
+    -- Update the icon (with or without arrow).
     if amount == 0 then
       self:set_variant(1)
     else

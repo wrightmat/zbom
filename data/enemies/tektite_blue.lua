@@ -41,7 +41,7 @@ function enemy:go_hero()
   m:set_target(self:get_map():get_hero())
   m:start(self)
   -- Prepare jump.
-  sol.timer.start(self, 1500, function()
+  sol.timer.start(self, 1000, function()
     self:prepare_jump()
   end)
 end
@@ -50,7 +50,7 @@ function enemy:prepare_jump()
   state = "prepare_jump"
   self:stop_movement()
   self:get_sprite():set_animation("shaking")
-  sol.timer.start(self, 1500, function()
+  sol.timer.start(self, 1000, function()
     enemy:jump()
   end)
 end

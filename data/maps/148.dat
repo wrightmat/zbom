@@ -3,9 +3,9 @@ properties{
   y = 2242,
   width = 1120,
   height = 1120,
-  world = "outside_north",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_north",
   tileset = "2",
   music = "town_kasuto",
 }
@@ -4484,7 +4484,7 @@ npc{
 }
 
 npc{
-  name = "mailbox_3",
+  name = "mailbox_mr_write",
   layer = 0,
   x = 712,
   y = 965,
@@ -4566,7 +4566,7 @@ destination{
 }
 
 npc{
-  name = "npc_kasuto_1",
+  name = "npc_mr_write",
   layer = 0,
   x = 464,
   y = 869,

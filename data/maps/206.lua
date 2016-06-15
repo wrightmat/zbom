@@ -88,7 +88,7 @@ for enemy in map:get_entities("tektite") do
         grate:set_enabled(false)
         to_basement:set_enabled(true)
         sol.audio.play_sound("secret")
-        game:set_value("b1112")
+        game:set_value("b1112", true)
       end, 500, 500)
     end
   end

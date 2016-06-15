@@ -231,6 +231,20 @@ animation{
   },
 }
 animation{
+  name = "carrot",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 176, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "carrot_counter",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 176, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "compass",
   src_image = "entities/items.png",
   directions = {
@@ -369,6 +383,20 @@ animation{
   src_image = "entities/items.png",
   directions = {
     { x = 560, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "meat",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 176, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "meat_counter",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 176, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
 animation{

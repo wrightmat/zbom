@@ -5874,7 +5874,8 @@ dialog{
 Rauru may be newly established, but
 we've got a lot to show for ourselves
 already! Please stick around as long
-as you'd like. 
+as you'd like, we welcome all visitors
+in the Hyli Province.
 ]]
 }
 
@@ -6552,9 +6553,22 @@ next, I bet he'd have some ideas.
 }
 
 dialog{
+  id = "kokiri_1.0.plants",
+  text = [[
+Wow, you've found all of the plants
+that are scattered around Hyrule!
+I love plants so much!
+So, as a reward for your search, I'd
+like to give you some treasure...
+]]
+}
+
+dialog{
   id = "kokiri_1.0.saria",
   text = [[
 Welcome to Saria!
+I live here because I love plants
+so much!
 ]]
 }
 
@@ -7233,6 +7247,16 @@ to be empty.
 }
 
 dialog{
+  id = "mailbox.mr_write",
+  skip = "current",
+  text = [[
+This mailbox is stuffed full of
+outgoing letters. Apparently the
+mailman doesn't make it up here often!
+]]
+}
+
+dialog{
   id = "mailbox.office",
   skip = "current",
   text = [[
@@ -7244,8 +7268,8 @@ dialog{
   id = "mailbox.relic_collector",
   skip = "current",
   text = [[
-This is completely full - this guy hasn't
-been home for a while!
+This is completely full - this guy
+hasn't been home for a while!
 ]]
 }
 
@@ -7480,6 +7504,21 @@ Oh, so you've met my friend   $g Rowin$w over
 there, have you?$0 He's not really so
 bad once you get to know him, he's just
 a bit of a downer sometimes.
+]]
+}
+
+dialog{
+  id = "mr_write.0.house",
+  skip = "current",
+  text = [[
+Wow, you've found all of the books
+that I scattered around our continent!
+Why would someone do that you ask?
+Well, you might say that I'm a little
+obsessed about books.$0
+Mr. Write here.$0 Nice to meet you!
+As a reward for your dedication, I'd
+like to give you some treasure...
 ]]
 }
 
@@ -8841,6 +8880,29 @@ dialog{
 I don't know how much more I'll be able
 to help you on your adventure, but if I
 can, please come see me!
+]]
+}
+
+dialog{
+  id = "sanday.0.house",
+  text = [[
+Hello, stranger. My name is Sanday
+and I'm the only remaining member
+of my people, the Zuna Tribe.
+It may seem like a lonely life, but
+I suppose I'm used to it.
+]]
+}
+
+dialog{
+  id = "sanday.1.house",
+  text = [[
+Wait... what?! You say you've met
+another of my kind? There's a desert
+in the southern continent with a house
+like mine? I will need to make a trip
+there as soon as I can prepare!$0
+Thank you!
 ]]
 }
 
@@ -10702,6 +10764,8 @@ dialog{
 Now that I have my   $r Moon Tear $w
 maybe I'll look to the stars for more
 power.
+People will remember the name Astra
+some day!
 ]]
 }
 

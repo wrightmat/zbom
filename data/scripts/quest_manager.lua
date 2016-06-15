@@ -126,6 +126,8 @@ local function initialize_npcs()
         game:start_dialog("mailbox.office")
       elseif self:get_name() == "mailbox_relic_collector" then
         game:start_dialog("mailbox.relic_collector")
+      elseif self:get_name() == "mailbox_mr_write" then
+        game:start_dialog("mailbox.mr_write")
       else
         game:start_dialog("mailbox")
       end

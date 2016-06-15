@@ -18,15 +18,15 @@ local item_names = {
   "hammer",
   "bottle_2",
 
+  "carrot_counter",
   "stick_counter",
-  "glove",
-  "flippers",
+  "jade_counter",
   "book_mudora",
   "trading",
   "airship_part",
   "bottle_3",
 
-  "jade_counter",
+  "meat_counter",
   "amber_counter",
   "alchemy_counter",
   "plume_counter",
