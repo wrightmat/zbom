@@ -3,9 +3,9 @@ properties{
   y = 0,
   width = 1120,
   height = 1120,
-  world = "outside_north",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_north",
   tileset = "3",
   music = "north",
 }
@@ -1622,7 +1622,7 @@ enemy{
   y = 885,
   direction = 3,
   breed = "hinox",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -1632,7 +1632,7 @@ enemy{
   y = 1013,
   direction = 3,
   breed = "hinox",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -1642,7 +1642,7 @@ enemy{
   y = 997,
   direction = 3,
   breed = "hinox",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -1652,7 +1652,7 @@ enemy{
   y = 869,
   direction = 3,
   breed = "hinox",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -1662,7 +1662,7 @@ enemy{
   y = 693,
   direction = 3,
   breed = "hinox",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -1672,7 +1672,7 @@ enemy{
   y = 461,
   direction = 3,
   breed = "hinox",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -1692,7 +1692,7 @@ enemy{
   y = 245,
   direction = 3,
   breed = "hinox",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 tile{

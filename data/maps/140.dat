@@ -3,9 +3,9 @@ properties{
   y = 0,
   width = 1120,
   height = 1120,
-  world = "outside_north",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_north",
   tileset = "3",
   music = "same",
 }
@@ -1261,6 +1261,33 @@ tile{
   pattern = "233",
 }
 
+tile{
+  layer = 0,
+  x = 952,
+  y = 816,
+  width = 16,
+  height = 16,
+  pattern = "1452",
+}
+
+tile{
+  layer = 0,
+  x = 840,
+  y = 376,
+  width = 16,
+  height = 16,
+  pattern = "1451",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 512,
+  width = 16,
+  height = 16,
+  pattern = "1452",
+}
+
 teletransporter{
   name = "to_N2",
   layer = 0,
@@ -1328,7 +1355,7 @@ enemy{
   y = 925,
   direction = 0,
   breed = "snap_dragon",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -1338,7 +1365,7 @@ enemy{
   y = 965,
   direction = 0,
   breed = "snap_dragon",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -1348,7 +1375,7 @@ enemy{
   y = 1053,
   direction = 0,
   breed = "snap_dragon",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -1358,7 +1385,7 @@ enemy{
   y = 413,
   direction = 0,
   breed = "snap_dragon",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -1368,7 +1395,7 @@ enemy{
   y = 285,
   direction = 0,
   breed = "snap_dragon",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -1378,7 +1405,7 @@ enemy{
   y = 149,
   direction = 3,
   breed = "hinox",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -1388,7 +1415,7 @@ enemy{
   y = 453,
   direction = 3,
   breed = "hinox",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -1398,7 +1425,7 @@ enemy{
   y = 389,
   direction = 3,
   breed = "hinox",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -1408,6 +1435,6 @@ enemy{
   y = 797,
   direction = 0,
   breed = "snap_dragon",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 

@@ -3,9 +3,9 @@ properties{
   y = 2242,
   width = 1120,
   height = 1120,
-  world = "outside_subrosia",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_subrosia",
   tileset = "12",
   music = "subrosia",
 }
@@ -4854,6 +4854,26 @@ destructible{
   destruction_sound = "bush",
   weight = -1,
   can_be_cut = true,
+}
+
+enemy{
+  name = "tentacle_1",
+  layer = 0,
+  x = 648,
+  y = 237,
+  direction = 0,
+  breed = "tentacle",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "tentacle_2",
+  layer = 0,
+  x = 248,
+  y = 333,
+  direction = 0,
+  breed = "tentacle",
+  treasure_name = "random_enemy",
 }
 
 tile{

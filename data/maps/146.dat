@@ -3,9 +3,9 @@ properties{
   y = 0,
   width = 1120,
   height = 1120,
-  world = "outside_north",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_north",
   tileset = "3",
   music = "same",
 }
@@ -3416,7 +3416,7 @@ enemy{
   y = 965,
   direction = 0,
   breed = "snap_dragon",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -3426,7 +3426,7 @@ enemy{
   y = 525,
   direction = 0,
   breed = "snap_dragon",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -3436,7 +3436,7 @@ enemy{
   y = 253,
   direction = 0,
   breed = "snap_dragon",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -3446,7 +3446,7 @@ enemy{
   y = 789,
   direction = 0,
   breed = "snap_dragon",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -3456,7 +3456,7 @@ enemy{
   y = 613,
   direction = 0,
   breed = "snap_dragon",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -3466,6 +3466,6 @@ enemy{
   y = 293,
   direction = 0,
   breed = "snap_dragon",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 

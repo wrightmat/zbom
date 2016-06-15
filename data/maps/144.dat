@@ -3,9 +3,9 @@ properties{
   y = 4484,
   width = 1120,
   height = 1120,
-  world = "outside_north",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_north",
   tileset = "2",
   music = "north",
 }
@@ -3031,7 +3031,7 @@ enemy{
   y = 517,
   direction = 0,
   breed = "crab",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -3041,7 +3041,7 @@ enemy{
   y = 541,
   direction = 0,
   breed = "crab",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -3051,7 +3051,7 @@ enemy{
   y = 685,
   direction = 0,
   breed = "crab",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -3061,7 +3061,7 @@ enemy{
   y = 861,
   direction = 0,
   breed = "crab",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -3071,7 +3071,7 @@ enemy{
   y = 1053,
   direction = 0,
   breed = "crab",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -3081,7 +3081,7 @@ enemy{
   y = 1045,
   direction = 0,
   breed = "crab",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -3091,7 +3091,7 @@ enemy{
   y = 821,
   direction = 0,
   breed = "crab",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -3101,7 +3101,7 @@ enemy{
   y = 1013,
   direction = 0,
   breed = "crab",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 destructible{

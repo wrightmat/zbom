@@ -3,9 +3,9 @@ properties{
   y = 2242,
   width = 1120,
   height = 1120,
-  world = "outside_north",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_north",
   tileset = "2",
   music = "same",
 }
@@ -2743,7 +2743,7 @@ enemy{
   y = 837,
   direction = 0,
   breed = "peahat",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -2753,7 +2753,7 @@ enemy{
   y = 237,
   direction = 0,
   breed = "peahat",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 custom_entity{

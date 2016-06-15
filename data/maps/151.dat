@@ -3,9 +3,9 @@ properties{
   y = 0,
   width = 1120,
   height = 1120,
-  world = "outside_subrosia",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_subrosia",
   tileset = "12",
   music = "subrosia",
 }
@@ -3178,7 +3178,7 @@ enemy{
   y = 525,
   direction = 0,
   breed = "tentacle",
-  treasure_name = "random_subrosia",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -3188,7 +3188,7 @@ enemy{
   y = 789,
   direction = 0,
   breed = "tentacle",
-  treasure_name = "random_subrosia",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -3198,7 +3198,7 @@ enemy{
   y = 837,
   direction = 0,
   breed = "tentacle",
-  treasure_name = "random_subrosia",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -3208,7 +3208,7 @@ enemy{
   y = 469,
   direction = 0,
   breed = "tentacle",
-  treasure_name = "random_subrosia",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -3218,7 +3218,7 @@ enemy{
   y = 277,
   direction = 0,
   breed = "tentacle",
-  treasure_name = "random_subrosia",
+  treasure_name = "random_enemy",
 }
 
 tile{

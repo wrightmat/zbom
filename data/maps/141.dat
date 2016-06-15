@@ -3,9 +3,9 @@ properties{
   y = 1121,
   width = 1120,
   height = 1120,
-  world = "outside_north",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_north",
   tileset = "2",
   music = "north",
 }
@@ -1585,6 +1585,114 @@ tile{
   pattern = "626",
 }
 
+tile{
+  layer = 0,
+  x = 112,
+  y = 368,
+  width = 8,
+  height = 8,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 376,
+  width = 8,
+  height = 8,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 240,
+  width = 8,
+  height = 8,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 40,
+  width = 8,
+  height = 8,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 88,
+  width = 8,
+  height = 8,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 696,
+  y = 304,
+  width = 8,
+  height = 8,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 832,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 1048,
+  y = 40,
+  width = 8,
+  height = 8,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 1032,
+  y = 304,
+  width = 8,
+  height = 8,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 872,
+  y = 432,
+  width = 8,
+  height = 8,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 1104,
+  width = 48,
+  height = 40,
+  pattern = "522",
+}
+
 teletransporter{
   name = "to_N3",
   layer = 0,
@@ -1652,7 +1760,7 @@ enemy{
   y = 461,
   direction = 0,
   breed = "snap_dragon",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -1662,17 +1770,17 @@ enemy{
   y = 413,
   direction = 0,
   breed = "snap_dragon",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
   name = "snapdragon_3",
   layer = 0,
-  x = 968,
+  x = 976,
   y = 205,
   direction = 0,
   breed = "snap_dragon",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -1682,7 +1790,36 @@ enemy{
   y = 141,
   direction = 0,
   breed = "snap_dragon",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "chuchu_4",
+  layer = 0,
+  x = 744,
+  y = 813,
+  direction = 0,
+  breed = "chuchu_yellow",
   treasure_name = "random_north",
+}
+
+enemy{
+  name = "chuchu_5",
+  layer = 0,
+  x = 256,
+  y = 997,
+  direction = 0,
+  breed = "chuchu_yellow",
+  treasure_name = "random_north",
+}
+
+wall{
+  layer = 0,
+  x = 224,
+  y = 1120,
+  width = 48,
+  height = 8,
+  stops_hero = true,
 }
 
 tile{
@@ -2133,5 +2270,41 @@ tile{
   width = 8,
   height = 40,
   pattern = "519",
+}
+
+tile{
+  layer = 2,
+  x = 224,
+  y = 1104,
+  width = 48,
+  height = 16,
+  pattern = "521",
+}
+
+tile{
+  layer = 2,
+  x = 896,
+  y = 1088,
+  width = 48,
+  height = 16,
+  pattern = "521",
+}
+
+tile{
+  layer = 2,
+  x = 888,
+  y = 1096,
+  width = 8,
+  height = 40,
+  pattern = "519",
+}
+
+tile{
+  layer = 2,
+  x = 944,
+  y = 1096,
+  width = 8,
+  height = 40,
+  pattern = "520",
 }
 

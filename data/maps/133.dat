@@ -3,9 +3,9 @@ properties{
   y = 4484,
   width = 1120,
   height = 1120,
-  world = "outside_north",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_north",
   tileset = "2",
   music = "town_kasuto_old",
 }
@@ -1452,8 +1452,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 704,
-  y = 936,
+  x = 960,
+  y = 944,
   width = 16,
   height = 16,
   pattern = "22",

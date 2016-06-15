@@ -3,9 +3,9 @@ properties{
   y = 3363,
   width = 1120,
   height = 1120,
-  world = "outside_north",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_north",
   tileset = "2",
   music = "north",
 }
@@ -5480,7 +5480,7 @@ enemy{
   y = 1053,
   direction = 0,
   breed = "peahat",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5490,7 +5490,7 @@ enemy{
   y = 141,
   direction = 0,
   breed = "peahat",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5500,7 +5500,7 @@ enemy{
   y = 117,
   direction = 0,
   breed = "peahat",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 tile{
