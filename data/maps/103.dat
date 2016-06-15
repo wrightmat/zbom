@@ -3,9 +3,9 @@ properties{
   y = 3363,
   width = 1120,
   height = 1120,
-  world = "outside_north",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_north",
   tileset = "2",
   music = "town_saria",
 }
@@ -3344,51 +3344,6 @@ tile{
   layer = 0,
   x = 864,
   y = 280,
-  width = 8,
-  height = 16,
-  pattern = "627",
-}
-
-tile{
-  layer = 0,
-  x = 872,
-  y = 176,
-  width = 48,
-  height = 16,
-  pattern = "628",
-}
-
-tile{
-  layer = 0,
-  x = 880,
-  y = 192,
-  width = 32,
-  height = 8,
-  pattern = "629",
-}
-
-tile{
-  layer = 0,
-  x = 872,
-  y = 136,
-  width = 48,
-  height = 40,
-  pattern = "522",
-}
-
-tile{
-  layer = 0,
-  x = 864,
-  y = 168,
-  width = 8,
-  height = 16,
-  pattern = "626",
-}
-
-tile{
-  layer = 0,
-  x = 920,
-  y = 168,
   width = 8,
   height = 16,
   pattern = "627",
@@ -9168,6 +9123,16 @@ custom_entity{
   model = "quest_plants",
 }
 
+custom_entity{
+  name = "apple_tree",
+  layer = 0,
+  x = 896,
+  y = 197,
+  direction = 0,
+  sprite = "entities/tree_apple",
+  model = "tree_apple",
+}
+
 tile{
   layer = 1,
   x = 680,
@@ -10954,33 +10919,6 @@ tile{
   layer = 2,
   x = 808,
   y = 240,
-  width = 8,
-  height = 40,
-  pattern = "519",
-}
-
-tile{
-  layer = 2,
-  x = 872,
-  y = 120,
-  width = 48,
-  height = 16,
-  pattern = "521",
-}
-
-tile{
-  layer = 2,
-  x = 920,
-  y = 128,
-  width = 8,
-  height = 40,
-  pattern = "520",
-}
-
-tile{
-  layer = 2,
-  x = 864,
-  y = 128,
   width = 8,
   height = 40,
   pattern = "519",

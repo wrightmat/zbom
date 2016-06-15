@@ -4458,38 +4458,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 32,
-  y = 40,
-  width = 48,
-  height = 16,
-  pattern = "628",
-}
-
-tile{
-  layer = 0,
-  x = 24,
-  y = 32,
-  width = 8,
-  height = 16,
-  pattern = "626",
-}
-
-tile{
-  layer = 0,
   x = 80,
   y = 32,
   width = 8,
   height = 16,
   pattern = "627",
-}
-
-tile{
-  layer = 0,
-  x = 40,
-  y = 56,
-  width = 32,
-  height = 8,
-  pattern = "629",
 }
 
 tile{
@@ -5030,15 +5003,6 @@ tile{
   width = 8,
   height = 16,
   pattern = "626",
-}
-
-tile{
-  layer = 0,
-  x = 32,
-  y = 0,
-  width = 48,
-  height = 40,
-  pattern = "522",
 }
 
 tile{
@@ -8412,6 +8376,16 @@ wall{
   stops_projectiles = true,
 }
 
+custom_entity{
+  name = "apple_tree",
+  layer = 0,
+  x = 48,
+  y = 69,
+  direction = 0,
+  sprite = "entities/tree_apple",
+  model = "tree_apple",
+}
+
 tile{
   layer = 1,
   x = 80,
@@ -10624,33 +10598,6 @@ tile{
   width = 8,
   height = 24,
   pattern = "1497",
-}
-
-tile{
-  layer = 2,
-  x = 32,
-  y = -16,
-  width = 48,
-  height = 16,
-  pattern = "521",
-}
-
-tile{
-  layer = 2,
-  x = 24,
-  y = -8,
-  width = 8,
-  height = 40,
-  pattern = "519",
-}
-
-tile{
-  layer = 2,
-  x = 80,
-  y = -8,
-  width = 8,
-  height = 40,
-  pattern = "520",
 }
 
 tile{

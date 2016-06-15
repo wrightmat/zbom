@@ -3352,6 +3352,16 @@ dynamic_tile{
   enabled_at_start = false,
 }
 
+custom_entity{
+  name = "apple_tree",
+  layer = 0,
+  x = 616,
+  y = 461,
+  direction = 0,
+  sprite = "entities/tree_apple",
+  model = "tree_apple",
+}
+
 tile{
   layer = 1,
   x = 168,

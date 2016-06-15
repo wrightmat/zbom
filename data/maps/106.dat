@@ -3,9 +3,9 @@ properties{
   y = 2242,
   width = 1120,
   height = 1120,
-  world = "outside_north",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_north",
   tileset = "2",
   music = "town_rauru",
 }
@@ -2136,42 +2136,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 552,
-  y = 752,
-  width = 48,
-  height = 16,
-  pattern = "628",
-}
-
-tile{
-  layer = 0,
-  x = 544,
-  y = 744,
-  width = 8,
-  height = 16,
-  pattern = "626",
-}
-
-tile{
-  layer = 0,
-  x = 600,
-  y = 744,
-  width = 8,
-  height = 16,
-  pattern = "627",
-}
-
-tile{
-  layer = 0,
-  x = 560,
-  y = 768,
-  width = 32,
-  height = 8,
-  pattern = "629",
-}
-
-tile{
-  layer = 0,
   x = 488,
   y = 568,
   width = 48,
@@ -3335,15 +3299,6 @@ tile{
   layer = 0,
   x = 488,
   y = 752,
-  width = 48,
-  height = 40,
-  pattern = "522",
-}
-
-tile{
-  layer = 0,
-  x = 552,
-  y = 712,
   width = 48,
   height = 40,
   pattern = "522",
@@ -4581,6 +4536,16 @@ npc{
   sprite = "npc/hylian_19",
 }
 
+custom_entity{
+  name = "apple_tree",
+  layer = 0,
+  x = 576,
+  y = 773,
+  direction = 0,
+  sprite = "entities/tree_apple",
+  model = "tree_apple",
+}
+
 tile{
   layer = 1,
   x = 776,
@@ -5161,33 +5126,6 @@ tile{
   layer = 2,
   x = 768,
   y = 856,
-  width = 8,
-  height = 40,
-  pattern = "520",
-}
-
-tile{
-  layer = 2,
-  x = 552,
-  y = 696,
-  width = 48,
-  height = 16,
-  pattern = "521",
-}
-
-tile{
-  layer = 2,
-  x = 544,
-  y = 704,
-  width = 8,
-  height = 40,
-  pattern = "519",
-}
-
-tile{
-  layer = 2,
-  x = 600,
-  y = 704,
   width = 8,
   height = 40,
   pattern = "520",

@@ -3,9 +3,9 @@ properties{
   y = 2242,
   width = 1120,
   height = 1120,
-  world = "outside_north",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_north",
   tileset = "2",
   music = "town_mido",
 }
@@ -125,42 +125,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "270",
-}
-
-tile{
-  layer = 0,
-  x = 680,
-  y = 424,
-  width = 48,
-  height = 16,
-  pattern = "628",
-}
-
-tile{
-  layer = 0,
-  x = 672,
-  y = 416,
-  width = 8,
-  height = 16,
-  pattern = "626",
-}
-
-tile{
-  layer = 0,
-  x = 728,
-  y = 416,
-  width = 8,
-  height = 16,
-  pattern = "627",
-}
-
-tile{
-  layer = 0,
-  x = 688,
-  y = 440,
-  width = 32,
-  height = 8,
-  pattern = "629",
 }
 
 tile{
@@ -2676,15 +2640,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 680,
-  y = 384,
-  width = 48,
-  height = 40,
-  pattern = "522",
-}
-
-tile{
-  layer = 0,
   x = 40,
   y = 112,
   width = 48,
@@ -3851,6 +3806,16 @@ destructible{
   can_be_cut = true,
 }
 
+custom_entity{
+  name = "apple_tree",
+  layer = 0,
+  x = 704,
+  y = 445,
+  direction = 0,
+  sprite = "entities/tree_apple",
+  model = "tree_apple",
+}
+
 tile{
   layer = 1,
   x = 880,
@@ -4029,33 +3994,6 @@ tile{
   width = 48,
   height = 16,
   pattern = "696",
-}
-
-tile{
-  layer = 2,
-  x = 680,
-  y = 368,
-  width = 48,
-  height = 16,
-  pattern = "521",
-}
-
-tile{
-  layer = 2,
-  x = 672,
-  y = 376,
-  width = 8,
-  height = 40,
-  pattern = "519",
-}
-
-tile{
-  layer = 2,
-  x = 728,
-  y = 376,
-  width = 8,
-  height = 40,
-  pattern = "520",
 }
 
 tile{

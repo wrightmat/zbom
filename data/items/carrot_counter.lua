@@ -5,7 +5,7 @@ function item:on_created()
   self:set_savegame_variable("i1853")
   self:set_assignable(true)
   self:set_amount_savegame_variable("i1854")
-  self:set_max_amount(10)
+  self:set_max_amount(20)
 end
 
 function item:on_using()

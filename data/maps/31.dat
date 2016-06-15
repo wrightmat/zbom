@@ -3,9 +3,9 @@ properties{
   y = 11210,
   width = 1120,
   height = 1120,
-  world = "outside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_world",
   tileset = "2",
   music = "field",
 }
@@ -923,51 +923,6 @@ tile{
   layer = 0,
   x = 624,
   y = 968,
-  width = 8,
-  height = 16,
-  pattern = "627",
-}
-
-tile{
-  layer = 0,
-  x = 640,
-  y = 984,
-  width = 48,
-  height = 40,
-  pattern = "522",
-}
-
-tile{
-  layer = 0,
-  x = 640,
-  y = 1024,
-  width = 48,
-  height = 16,
-  pattern = "628",
-}
-
-tile{
-  layer = 0,
-  x = 648,
-  y = 1040,
-  width = 32,
-  height = 8,
-  pattern = "629",
-}
-
-tile{
-  layer = 0,
-  x = 632,
-  y = 1016,
-  width = 8,
-  height = 16,
-  pattern = "626",
-}
-
-tile{
-  layer = 0,
-  x = 688,
-  y = 1016,
   width = 8,
   height = 16,
   pattern = "627",
@@ -5448,6 +5403,16 @@ teletransporter{
   destination = "_side",
 }
 
+custom_entity{
+  name = "apple_tree",
+  layer = 0,
+  x = 664,
+  y = 1045,
+  direction = 0,
+  sprite = "entities/tree_apple",
+  model = "tree_apple",
+}
+
 tile{
   layer = 1,
   x = 688,
@@ -6251,33 +6216,6 @@ tile{
   layer = 2,
   x = 624,
   y = 928,
-  width = 8,
-  height = 40,
-  pattern = "520",
-}
-
-tile{
-  layer = 2,
-  x = 640,
-  y = 968,
-  width = 48,
-  height = 16,
-  pattern = "521",
-}
-
-tile{
-  layer = 2,
-  x = 632,
-  y = 976,
-  width = 8,
-  height = 40,
-  pattern = "519",
-}
-
-tile{
-  layer = 2,
-  x = 688,
-  y = 976,
   width = 8,
   height = 40,
   pattern = "520",

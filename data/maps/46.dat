@@ -3189,42 +3189,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 328,
-  y = 216,
-  width = 48,
-  height = 16,
-  pattern = "628",
-}
-
-tile{
-  layer = 0,
-  x = 320,
-  y = 208,
-  width = 8,
-  height = 16,
-  pattern = "626",
-}
-
-tile{
-  layer = 0,
-  x = 376,
-  y = 208,
-  width = 8,
-  height = 16,
-  pattern = "627",
-}
-
-tile{
-  layer = 0,
-  x = 336,
-  y = 232,
-  width = 32,
-  height = 8,
-  pattern = "629",
-}
-
-tile{
-  layer = 0,
   x = 704,
   y = 448,
   width = 48,
@@ -7563,15 +7527,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 328,
-  y = 176,
-  width = 48,
-  height = 40,
-  pattern = "522",
-}
-
-tile{
-  layer = 0,
   x = 248,
   y = 80,
   width = 48,
@@ -8238,6 +8193,16 @@ npc{
   sprite = "entities/sign",
 }
 
+custom_entity{
+  name = "apple_tree",
+  layer = 0,
+  x = 352,
+  y = 229,
+  direction = 0,
+  sprite = "entities/tree_apple",
+  model = "tree_apple",
+}
+
 tile{
   layer = 1,
   x = 408,
@@ -8602,33 +8567,6 @@ tile{
   layer = 2,
   x = 504,
   y = 88,
-  width = 8,
-  height = 40,
-  pattern = "520",
-}
-
-tile{
-  layer = 2,
-  x = 328,
-  y = 160,
-  width = 48,
-  height = 16,
-  pattern = "521",
-}
-
-tile{
-  layer = 2,
-  x = 320,
-  y = 168,
-  width = 8,
-  height = 40,
-  pattern = "519",
-}
-
-tile{
-  layer = 2,
-  x = 376,
-  y = 168,
   width = 8,
   height = 40,
   pattern = "520",

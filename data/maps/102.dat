@@ -3441,42 +3441,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 384,
-  y = 960,
-  width = 48,
-  height = 16,
-  pattern = "628",
-}
-
-tile{
-  layer = 0,
-  x = 376,
-  y = 952,
-  width = 8,
-  height = 16,
-  pattern = "626",
-}
-
-tile{
-  layer = 0,
-  x = 432,
-  y = 952,
-  width = 8,
-  height = 16,
-  pattern = "627",
-}
-
-tile{
-  layer = 0,
-  x = 392,
-  y = 976,
-  width = 32,
-  height = 8,
-  pattern = "629",
-}
-
-tile{
-  layer = 0,
   x = 264,
   y = 896,
   width = 48,
@@ -5907,15 +5871,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 384,
-  y = 920,
-  width = 48,
-  height = 40,
-  pattern = "522",
-}
-
-tile{
-  layer = 0,
   x = 512,
   y = 912,
   width = 48,
@@ -7041,6 +6996,16 @@ npc{
   sprite = "npc/hylian_17",
 }
 
+custom_entity{
+  name = "apple_tree",
+  layer = 0,
+  x = 408,
+  y = 981,
+  direction = 0,
+  sprite = "entities/tree_apple",
+  model = "tree_apple",
+}
+
 tile{
   layer = 1,
   x = 440,
@@ -7171,33 +7136,6 @@ tile{
   layer = 2,
   x = 512,
   y = 1032,
-  width = 8,
-  height = 40,
-  pattern = "520",
-}
-
-tile{
-  layer = 2,
-  x = 384,
-  y = 904,
-  width = 48,
-  height = 16,
-  pattern = "521",
-}
-
-tile{
-  layer = 2,
-  x = 376,
-  y = 912,
-  width = 8,
-  height = 40,
-  pattern = "519",
-}
-
-tile{
-  layer = 2,
-  x = 432,
-  y = 912,
   width = 8,
   height = 40,
   pattern = "520",

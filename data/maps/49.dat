@@ -3,9 +3,9 @@ properties{
   y = 6726,
   width = 1120,
   height = 1120,
-  world = "outside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_world",
   tileset = "2",
   music = "field",
 }
@@ -3009,42 +3009,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 416,
-  y = 792,
-  width = 48,
-  height = 16,
-  pattern = "628",
-}
-
-tile{
-  layer = 0,
-  x = 408,
-  y = 784,
-  width = 8,
-  height = 16,
-  pattern = "626",
-}
-
-tile{
-  layer = 0,
-  x = 464,
-  y = 784,
-  width = 8,
-  height = 16,
-  pattern = "627",
-}
-
-tile{
-  layer = 0,
-  x = 424,
-  y = 808,
-  width = 32,
-  height = 8,
-  pattern = "629",
-}
-
-tile{
-  layer = 0,
   x = 200,
   y = 944,
   width = 48,
@@ -4872,15 +4836,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 416,
-  y = 752,
-  width = 48,
-  height = 40,
-  pattern = "522",
-}
-
-tile{
-  layer = 0,
   x = 560,
   y = 632,
   width = 48,
@@ -5033,93 +4988,93 @@ tile{
 }
 
 teletransporter{
+  name = "to_G7",
   layer = 0,
   x = 1120,
   y = 0,
   width = 16,
   height = 688,
-  name = "to_G7",
   transition = "scrolling",
   destination_map = "47",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_G7_2",
   layer = 0,
   x = 1120,
   y = 752,
   width = 16,
   height = 368,
-  name = "to_G7_2",
   transition = "scrolling",
   destination_map = "47",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_F8",
   layer = 0,
   x = 32,
   y = 1120,
   width = 896,
   height = 16,
-  name = "to_F8",
   transition = "scrolling",
   destination_map = "45",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_E7",
   layer = 0,
   x = -16,
   y = 0,
   width = 16,
   height = 1120,
-  name = "to_E7",
   transition = "scrolling",
   destination_map = "50",
   destination = "_side",
 }
 
 teletransporter{
+  name = "to_F6",
   layer = 0,
   x = 0,
   y = -16,
   width = 784,
   height = 16,
-  name = "to_F6",
   transition = "scrolling",
   destination_map = "64",
   destination = "_side",
 }
 
 enemy{
+  name = "chuchu",
   layer = 0,
   x = 272,
   y = 573,
-  name = "chuchu",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random",
 }
 
 enemy{
+  name = "chuchu_2",
   layer = 0,
   x = 912,
   y = 1013,
-  name = "chuchu_2",
   direction = 3,
   breed = "chuchu_green",
   treasure_name = "random",
 }
 
 dynamic_tile{
+  name = "tile",
   layer = 0,
   x = 920,
   y = 480,
+  pattern = "522",
   width = 48,
   height = 40,
-  name = "tile",
-  pattern = "522",
   enabled_at_start = true,
 }
 
@@ -5133,15 +5088,25 @@ wall{
 }
 
 teletransporter{
+  name = "to_F6_2",
   layer = 0,
   x = 872,
   y = -16,
   width = 112,
   height = 16,
-  name = "to_F6_2",
   transition = "scrolling",
   destination_map = "64",
   destination = "_side",
+}
+
+custom_entity{
+  name = "apple_tree",
+  layer = 0,
+  x = 440,
+  y = 813,
+  direction = 0,
+  sprite = "entities/tree_apple",
+  model = "tree_apple",
 }
 
 tile{
@@ -6327,33 +6292,6 @@ tile{
   layer = 2,
   x = 144,
   y = 768,
-  width = 8,
-  height = 40,
-  pattern = "520",
-}
-
-tile{
-  layer = 2,
-  x = 416,
-  y = 736,
-  width = 48,
-  height = 16,
-  pattern = "521",
-}
-
-tile{
-  layer = 2,
-  x = 408,
-  y = 744,
-  width = 8,
-  height = 40,
-  pattern = "519",
-}
-
-tile{
-  layer = 2,
-  x = 464,
-  y = 744,
   width = 8,
   height = 40,
   pattern = "520",
