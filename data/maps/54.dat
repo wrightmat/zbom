@@ -3,9 +3,9 @@ properties{
   y = 4484,
   width = 1120,
   height = 1120,
-  world = "outside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_world",
   tileset = "3",
   music = "same",
 }
@@ -3319,6 +3319,16 @@ wall{
   width = 16,
   height = 536,
   stops_enemies = true,
+}
+
+enemy{
+  name = "chuchu_1",
+  layer = 0,
+  x = 104,
+  y = 1029,
+  direction = 3,
+  breed = "chuchu_white",
+  treasure_name = "random",
 }
 
 tile{

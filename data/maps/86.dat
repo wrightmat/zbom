@@ -3,9 +3,9 @@ properties{
   y = 1121,
   width = 1120,
   height = 1120,
-  world = "outside_north",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_north",
   tileset = "3",
   music = "same",
 }
@@ -2594,8 +2594,8 @@ enemy{
 enemy{
   name = "pengator_8",
   layer = 0,
-  x = 216,
-  y = 877,
+  x = 160,
+  y = 901,
   direction = 3,
   breed = "pengator",
   treasure_name = "random_north",
@@ -2840,6 +2840,66 @@ custom_entity{
   direction = 0,
   sprite = "entities/soil_snow",
   model = "soil",
+}
+
+enemy{
+  name = "chuchu_1",
+  layer = 0,
+  x = 304,
+  y = 269,
+  direction = 3,
+  breed = "chuchu_white",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "chuchu_2",
+  layer = 0,
+  x = 712,
+  y = 277,
+  direction = 3,
+  breed = "chuchu_white",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "chuchu_3",
+  layer = 0,
+  x = 1064,
+  y = 581,
+  direction = 3,
+  breed = "chuchu_white",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "chuchu_4",
+  layer = 0,
+  x = 280,
+  y = 837,
+  direction = 3,
+  breed = "chuchu_white",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "chuchu_5",
+  layer = 0,
+  x = 488,
+  y = 1085,
+  direction = 3,
+  breed = "chuchu_white",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "chuchu_6",
+  layer = 0,
+  x = 424,
+  y = 573,
+  direction = 3,
+  breed = "chuchu_white",
+  treasure_name = "random_north",
 }
 
 tile{

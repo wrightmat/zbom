@@ -3,9 +3,9 @@ properties{
   y = 0,
   width = 1120,
   height = 1120,
-  world = "outside_north",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_north",
   tileset = "3",
   music = "same",
 }
@@ -3377,12 +3377,12 @@ enemy{
 }
 
 enemy{
-  name = "pengator_6",
+  name = "chuchu_1",
   layer = 0,
   x = 160,
   y = 789,
   direction = 3,
-  breed = "pengator",
+  breed = "chuchu_white",
   treasure_name = "random_north",
 }
 
@@ -3720,6 +3720,36 @@ custom_entity{
   direction = 0,
   sprite = "entities/quest_plants",
   model = "quest_plants",
+}
+
+enemy{
+  name = "chuchu_2",
+  layer = 0,
+  x = 144,
+  y = 533,
+  direction = 3,
+  breed = "chuchu_white",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "chuchu_3",
+  layer = 0,
+  x = 168,
+  y = 245,
+  direction = 3,
+  breed = "chuchu_white",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "chuchu_4",
+  layer = 0,
+  x = 360,
+  y = 1053,
+  direction = 3,
+  breed = "chuchu_white",
+  treasure_name = "random_north",
 }
 
 tile{

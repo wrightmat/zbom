@@ -5500,32 +5500,32 @@ teletransporter{
 }
 
 enemy{
-  name = "hinox_1",
+  name = "chuchu_2",
   layer = 0,
   x = 336,
   y = 157,
   direction = 0,
-  breed = "hinox",
+  breed = "chuchu_white",
   treasure_name = "random",
 }
 
 enemy{
-  name = "hinox_2",
+  name = "chuchu_1",
   layer = 0,
   x = 608,
   y = 85,
-  direction = 0,
-  breed = "hinox",
+  direction = 3,
+  breed = "chuchu_white",
   treasure_name = "random",
 }
 
 enemy{
-  name = "hinox_3",
+  name = "chuchu_3",
   layer = 0,
   x = 760,
   y = 373,
   direction = 0,
-  breed = "hinox",
+  breed = "chuchu_white",
   treasure_name = "random",
 }
 
