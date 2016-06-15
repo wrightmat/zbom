@@ -3,9 +3,9 @@ properties{
   y = 5605,
   width = 1120,
   height = 1120,
-  world = "outside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_world",
   tileset = "3",
   music = "death_mountain",
 }
@@ -4921,7 +4921,7 @@ enemy{
   y = 77,
   direction = 3,
   breed = "tektite_red",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -4931,7 +4931,7 @@ enemy{
   y = 61,
   direction = 3,
   breed = "tektite_red",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -4941,7 +4941,7 @@ enemy{
   y = 61,
   direction = 3,
   breed = "tektite_red",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -4951,7 +4951,7 @@ enemy{
   y = 285,
   direction = 3,
   breed = "tektite_red",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -4961,7 +4961,7 @@ enemy{
   y = 349,
   direction = 3,
   breed = "tektite_red",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -4971,7 +4971,7 @@ enemy{
   y = 501,
   direction = 3,
   breed = "tektite_red",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -4981,7 +4981,7 @@ enemy{
   y = 141,
   direction = 3,
   breed = "knight_red",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -4991,7 +4991,7 @@ enemy{
   y = 37,
   direction = 3,
   breed = "knight_red",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 destructible{

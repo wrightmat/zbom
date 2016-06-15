@@ -3,9 +3,9 @@ properties{
   y = 7847,
   width = 1120,
   height = 1120,
-  world = "outside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_world",
   tileset = "3",
   music = "same",
 }
@@ -6801,7 +6801,37 @@ enemy{
   y = 493,
   direction = 0,
   breed = "leever_purple",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "chuchu_1",
+  layer = 0,
+  x = 880,
+  y = 525,
+  direction = 0,
+  breed = "chuchu_green",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "chuchu_2",
+  layer = 0,
+  x = 968,
+  y = 285,
+  direction = 0,
+  breed = "chuchu_green",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "chuchu_3",
+  layer = 0,
+  x = 944,
+  y = 949,
+  direction = 0,
+  breed = "chuchu_green",
+  treasure_name = "random_enemy",
 }
 
 tile{

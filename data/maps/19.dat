@@ -3,9 +3,9 @@ properties{
   y = 13452,
   width = 1120,
   height = 1120,
-  world = "outside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_world",
   tileset = "2",
   music = "faron_woods",
 }
@@ -5108,7 +5108,7 @@ enemy{
   y = 541,
   direction = 3,
   breed = "knight_green",
-  treasure_name = "random_woods",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5118,7 +5118,7 @@ enemy{
   y = 397,
   direction = 3,
   breed = "knight_green",
-  treasure_name = "random_woods",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5128,7 +5128,7 @@ enemy{
   y = 165,
   direction = 3,
   breed = "knight_green",
-  treasure_name = "random_woods",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5138,7 +5138,7 @@ enemy{
   y = 197,
   direction = 3,
   breed = "knight_green",
-  treasure_name = "random_woods",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5148,7 +5148,7 @@ enemy{
   y = 749,
   direction = 3,
   breed = "knight_green",
-  treasure_name = "random_woods",
+  treasure_name = "random_enemy",
 }
 
 teletransporter{

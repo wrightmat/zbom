@@ -3,9 +3,9 @@ properties{
   y = 5605,
   width = 1120,
   height = 1120,
-  world = "outside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_world",
   tileset = "3",
   music = "same",
 }
@@ -4378,7 +4378,7 @@ enemy{
   y = 101,
   direction = 3,
   breed = "knight_red",
-  treasure_name = "random_mountain",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -4388,7 +4388,7 @@ enemy{
   y = 45,
   direction = 3,
   breed = "knight_red",
-  treasure_name = "random_mountain",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -4398,7 +4398,7 @@ enemy{
   y = 389,
   direction = 3,
   breed = "tektite_red",
-  treasure_name = "random_mountain",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -4408,7 +4408,7 @@ enemy{
   y = 821,
   direction = 3,
   breed = "tektite_red",
-  treasure_name = "random_mountain",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -4418,7 +4418,7 @@ enemy{
   y = 621,
   direction = 3,
   breed = "tektite_red",
-  treasure_name = "random_mountain",
+  treasure_name = "random_enemy",
 }
 
 teletransporter{
@@ -4469,7 +4469,7 @@ enemy{
   y = 373,
   direction = 3,
   breed = "knight_red",
-  treasure_name = "random_mountain",
+  treasure_name = "random_enemy",
 }
 
 custom_entity{

@@ -3,9 +3,9 @@ properties{
   y = 3363,
   width = 1120,
   height = 1120,
-  world = "outside_north",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_north",
   tileset = "3",
   music = "same",
 }
@@ -3002,7 +3002,7 @@ enemy{
   y = 109,
   direction = 3,
   breed = "zola",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -3012,7 +3012,7 @@ enemy{
   y = 405,
   direction = 3,
   breed = "zola",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -3022,7 +3022,7 @@ enemy{
   y = 445,
   direction = 3,
   breed = "zola",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -3032,7 +3032,7 @@ enemy{
   y = 669,
   direction = 3,
   breed = "zola",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -3042,7 +3042,7 @@ enemy{
   y = 885,
   direction = 3,
   breed = "zola",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -3052,7 +3052,7 @@ enemy{
   y = 901,
   direction = 3,
   breed = "zola",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -3062,7 +3062,7 @@ enemy{
   y = 117,
   direction = 3,
   breed = "zola",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -3082,7 +3082,7 @@ enemy{
   y = 221,
   direction = 3,
   breed = "octolux",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -3102,7 +3102,7 @@ enemy{
   y = 861,
   direction = 3,
   breed = "octolux",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 destructible{

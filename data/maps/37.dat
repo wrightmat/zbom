@@ -3,9 +3,9 @@ properties{
   y = 10089,
   width = 1120,
   height = 1120,
-  world = "outside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_world",
   tileset = "2",
   music = "lost_woods",
 }
@@ -8573,7 +8573,7 @@ enemy{
   y = 405,
   direction = 0,
   breed = "lizalfos",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -8583,7 +8583,7 @@ enemy{
   y = 893,
   direction = 0,
   breed = "lizalfos",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 custom_entity{

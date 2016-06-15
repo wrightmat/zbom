@@ -3,9 +3,9 @@ properties{
   y = 4484,
   width = 1120,
   height = 1120,
-  world = "outside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_world",
   tileset = "3",
   music = "death_mountain",
 }
@@ -2212,7 +2212,7 @@ enemy{
   y = 461,
   direction = 3,
   breed = "tektite_red",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -2222,7 +2222,7 @@ enemy{
   y = 733,
   direction = 3,
   breed = "tektite_red",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -2232,7 +2232,7 @@ enemy{
   y = 1037,
   direction = 3,
   breed = "tektite_red",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 teletransporter{
@@ -2278,7 +2278,7 @@ enemy{
   y = 229,
   direction = 0,
   breed = "lynel",
-  treasure_name = "random_mountain",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -2288,7 +2288,7 @@ enemy{
   y = 541,
   direction = 0,
   breed = "lynel",
-  treasure_name = "random_mountain",
+  treasure_name = "random_enemy",
 }
 
 tile{

@@ -3,9 +3,9 @@ properties{
   y = 2242,
   width = 1120,
   height = 1120,
-  world = "outside_north",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_north",
   tileset = "2",
   music = "same",
 }
@@ -5919,7 +5919,7 @@ enemy{
   y = 453,
   direction = 3,
   breed = "knight_green",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5929,7 +5929,7 @@ enemy{
   y = 445,
   direction = 3,
   breed = "knight_green",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5939,7 +5939,7 @@ enemy{
   y = 933,
   direction = 3,
   breed = "knight_green",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5949,7 +5949,7 @@ enemy{
   y = 701,
   direction = 3,
   breed = "knight_green",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5959,7 +5959,7 @@ enemy{
   y = 1021,
   direction = 3,
   breed = "knight_green",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5969,7 +5969,7 @@ enemy{
   y = 197,
   direction = 3,
   breed = "knight_green",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5979,7 +5979,7 @@ enemy{
   y = 885,
   direction = 3,
   breed = "knight_green",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5989,7 +5989,7 @@ enemy{
   y = 477,
   direction = 3,
   breed = "knight_green",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5999,7 +5999,7 @@ enemy{
   y = 645,
   direction = 3,
   breed = "lizalfos",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 destructible{

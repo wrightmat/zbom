@@ -3,9 +3,9 @@ properties{
   y = 6726,
   width = 1120,
   height = 1120,
-  world = "outside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_world",
   tileset = "3",
   music = "gerudo",
 }
@@ -10649,7 +10649,7 @@ enemy{
   y = 429,
   direction = 0,
   breed = "leever_purple",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -10659,7 +10659,7 @@ enemy{
   y = 469,
   direction = 0,
   breed = "leever_purple",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -10669,7 +10669,7 @@ enemy{
   y = 701,
   direction = 0,
   breed = "leever_purple",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -10679,7 +10679,7 @@ enemy{
   y = 757,
   direction = 0,
   breed = "leever_purple",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -10689,7 +10689,7 @@ enemy{
   y = 949,
   direction = 0,
   breed = "leever_green",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -10699,7 +10699,7 @@ enemy{
   y = 1013,
   direction = 0,
   breed = "leever_green",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 teletransporter{

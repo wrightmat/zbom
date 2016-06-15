@@ -3,9 +3,9 @@ properties{
   y = 12331,
   width = 1120,
   height = 1120,
-  world = "outside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_world",
   tileset = "2",
   music = "faron_woods",
 }
@@ -3518,7 +3518,7 @@ enemy{
   y = 885,
   direction = 3,
   breed = "knight_green",
-  treasure_name = "random_woods",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -3528,7 +3528,7 @@ enemy{
   y = 621,
   direction = 3,
   breed = "knight_green",
-  treasure_name = "random_woods",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -3538,7 +3538,7 @@ enemy{
   y = 261,
   direction = 3,
   breed = "knight_green",
-  treasure_name = "random_woods",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -3548,7 +3548,7 @@ enemy{
   y = 269,
   direction = 3,
   breed = "knight_green",
-  treasure_name = "random_woods",
+  treasure_name = "random_enemy",
 }
 
 destructible{

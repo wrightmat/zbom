@@ -3,9 +3,9 @@ properties{
   y = 12331,
   width = 1120,
   height = 1120,
-  world = "outside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_world",
   tileset = "2",
   music = "beach",
 }
@@ -1431,7 +1431,7 @@ enemy{
   y = 949,
   direction = 3,
   breed = "crab",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -1441,7 +1441,7 @@ enemy{
   y = 709,
   direction = 3,
   breed = "crab",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -1451,7 +1451,7 @@ enemy{
   y = 261,
   direction = 3,
   breed = "crab",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -1461,7 +1461,7 @@ enemy{
   y = 533,
   direction = 3,
   breed = "crab",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -1471,7 +1471,7 @@ enemy{
   y = 901,
   direction = 3,
   breed = "crab",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 custom_entity{

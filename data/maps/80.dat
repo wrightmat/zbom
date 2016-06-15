@@ -3,9 +3,9 @@ properties{
   y = 11210,
   width = 1120,
   height = 1120,
-  world = "outside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_world",
   tileset = "2",
   music = "same",
 }
@@ -1847,7 +1847,7 @@ enemy{
   y = 413,
   direction = 3,
   breed = "crab",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 teletransporter{

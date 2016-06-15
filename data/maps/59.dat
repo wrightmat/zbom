@@ -3,9 +3,9 @@ properties{
   y = 4484,
   width = 1120,
   height = 1120,
-  world = "outside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_world",
   tileset = "3",
   music = "death_mountain",
 }
@@ -1618,7 +1618,7 @@ enemy{
   y = 461,
   direction = 3,
   breed = "tektite_red",
-  treasure_name = "random_mountain",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -1628,7 +1628,7 @@ enemy{
   y = 877,
   direction = 3,
   breed = "tektite_red",
-  treasure_name = "random_mountain",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -1715,7 +1715,7 @@ enemy{
   y = 685,
   direction = 0,
   breed = "lynel",
-  treasure_name = "random_mountain",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -1725,7 +1725,7 @@ enemy{
   y = 197,
   direction = 0,
   breed = "lynel",
-  treasure_name = "random_mountain",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -1735,7 +1735,7 @@ enemy{
   y = 509,
   direction = 0,
   breed = "lynel",
-  treasure_name = "random_mountain",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -1745,7 +1745,7 @@ enemy{
   y = 373,
   direction = 0,
   breed = "lynel",
-  treasure_name = "random_mountain",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -1755,7 +1755,7 @@ enemy{
   y = 685,
   direction = 0,
   breed = "lynel",
-  treasure_name = "random_mountain",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -1765,7 +1765,7 @@ enemy{
   y = 477,
   direction = 3,
   breed = "tektite_red",
-  treasure_name = "random_mountain",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -1775,7 +1775,7 @@ enemy{
   y = 965,
   direction = 3,
   breed = "tektite_red",
-  treasure_name = "random_mountain",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -1785,7 +1785,7 @@ enemy{
   y = 205,
   direction = 3,
   breed = "tektite_red",
-  treasure_name = "random_mountain",
+  treasure_name = "random_enemy",
 }
 
 tile{

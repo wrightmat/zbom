@@ -3,9 +3,9 @@ properties{
   y = 2242,
   width = 1120,
   height = 1120,
-  world = "outside_north",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_north",
   tileset = "3",
   music = "same",
 }
@@ -2693,7 +2693,7 @@ enemy{
   y = 285,
   direction = 3,
   breed = "zola",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -2703,7 +2703,7 @@ enemy{
   y = 493,
   direction = 3,
   breed = "zola",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -2713,7 +2713,7 @@ enemy{
   y = 589,
   direction = 3,
   breed = "zola",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -2723,7 +2723,7 @@ enemy{
   y = 685,
   direction = 3,
   breed = "zola",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -2733,7 +2733,7 @@ enemy{
   y = 901,
   direction = 3,
   breed = "zola",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -2743,7 +2743,7 @@ enemy{
   y = 1021,
   direction = 3,
   breed = "zola",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -2753,7 +2753,7 @@ enemy{
   y = 1045,
   direction = 3,
   breed = "zola",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -2763,7 +2763,7 @@ enemy{
   y = 357,
   direction = 3,
   breed = "zola",
-  treasure_name = "random_north",
+  treasure_name = "random_enemy",
 }
 
 tile{

@@ -3,9 +3,9 @@ properties{
   y = 10089,
   width = 1120,
   height = 1120,
-  world = "outside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_world",
   tileset = "3",
   music = "gerudo",
 }
@@ -7238,7 +7238,7 @@ enemy{
   y = 685,
   direction = 0,
   breed = "leever_green",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -7248,7 +7248,7 @@ enemy{
   y = 229,
   direction = 0,
   breed = "leever_green",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 tile{

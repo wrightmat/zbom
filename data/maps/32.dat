@@ -3,9 +3,9 @@ properties{
   y = 11210,
   width = 1120,
   height = 1120,
-  world = "outside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_world",
   tileset = "2",
   music = "field",
 }
@@ -4452,7 +4452,7 @@ enemy{
   y = 533,
   direction = 3,
   breed = "soldier_green",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -4462,7 +4462,7 @@ enemy{
   y = 373,
   direction = 3,
   breed = "soldier_green",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -4472,7 +4472,7 @@ enemy{
   y = 125,
   direction = 3,
   breed = "soldier_green",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 teletransporter{

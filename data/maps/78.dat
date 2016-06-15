@@ -3,9 +3,9 @@ properties{
   y = 10089,
   width = 1120,
   height = 1120,
-  world = "outside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_world",
   tileset = "2",
   music = "same",
 }
@@ -9030,6 +9030,36 @@ teletransporter{
   transition = "scrolling",
   destination_map = "34",
   destination = "_side",
+}
+
+enemy{
+  name = "leever_6",
+  layer = 0,
+  x = 272,
+  y = 573,
+  direction = 0,
+  breed = "leever_green",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "leever_7",
+  layer = 0,
+  x = 112,
+  y = 277,
+  direction = 0,
+  breed = "leever_green",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "leever_8",
+  layer = 0,
+  x = 368,
+  y = 885,
+  direction = 0,
+  breed = "leever_green",
+  treasure_name = "random_enemy",
 }
 
 tile{

@@ -3,9 +3,9 @@ properties{
   y = 10089,
   width = 1120,
   height = 1120,
-  world = "outside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_world",
   tileset = "2",
   music = "field",
 }
@@ -5452,7 +5452,7 @@ enemy{
   y = 117,
   direction = 0,
   breed = "octorok_red",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5462,7 +5462,7 @@ enemy{
   y = 221,
   direction = 2,
   breed = "octorok_red",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5472,7 +5472,7 @@ enemy{
   y = 309,
   direction = 0,
   breed = "octorok_red",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5482,7 +5482,7 @@ enemy{
   y = 381,
   direction = 2,
   breed = "octorok_red",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 teletransporter{

@@ -3,9 +3,9 @@ properties{
   y = 5605,
   width = 1120,
   height = 1120,
-  world = "outside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_world",
   tileset = "3",
   music = "death_mountain",
 }
@@ -4881,7 +4881,7 @@ enemy{
   y = 717,
   direction = 0,
   breed = "lynel",
-  treasure_name = "random_mountain",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -4891,7 +4891,7 @@ enemy{
   y = 749,
   direction = 0,
   breed = "lynel",
-  treasure_name = "random_mountain",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -4901,7 +4901,7 @@ enemy{
   y = 85,
   direction = 0,
   breed = "lynel",
-  treasure_name = "random_mountain",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -4911,7 +4911,7 @@ enemy{
   y = 53,
   direction = 0,
   breed = "lynel",
-  treasure_name = "random_mountain",
+  treasure_name = "random_enemy",
 }
 
 tile{

@@ -3,9 +3,9 @@ properties{
   y = 7847,
   width = 1120,
   height = 1120,
-  world = "outside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_world",
   tileset = "2",
   music = "field",
 }
@@ -4130,7 +4130,7 @@ enemy{
   y = 317,
   direction = 3,
   breed = "knight_red",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -4140,7 +4140,7 @@ enemy{
   y = 877,
   direction = 3,
   breed = "knight_red",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
