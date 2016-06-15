@@ -489,6 +489,13 @@ animation{
   },
 }
 animation{
+  name = "random_enemy",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 1, frame_height = 1, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
   name = "random_mountain",
   src_image = "entities/items.png",
   directions = {

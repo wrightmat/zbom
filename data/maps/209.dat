@@ -3,10 +3,10 @@ properties{
   y = 0,
   width = 1024,
   height = 1760,
-  world = "dungeon_6",
-  floor = -2,
   min_layer = 0,
   max_layer = 2,
+  world = "dungeon_6",
+  floor = -2,
   tileset = "9",
   music = "temple_snow",
 }
@@ -6179,7 +6179,7 @@ enemy{
   y = 557,
   direction = 3,
   breed = "hardhat_beetle_blue",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -6189,7 +6189,7 @@ enemy{
   y = 637,
   direction = 3,
   breed = "hardhat_beetle_blue",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 wall{
@@ -6271,7 +6271,7 @@ enemy{
   y = 933,
   direction = 3,
   breed = "hardhat_beetle_blue",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -6281,7 +6281,7 @@ enemy{
   y = 1021,
   direction = 3,
   breed = "hardhat_beetle_blue",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -6291,7 +6291,7 @@ enemy{
   y = 605,
   direction = 3,
   breed = "hardhat_beetle_red",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 switch{
@@ -6533,7 +6533,7 @@ enemy{
   y = 781,
   direction = 3,
   breed = "hardhat_beetle_red",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -6543,7 +6543,7 @@ enemy{
   y = 869,
   direction = 3,
   breed = "hardhat_beetle_red",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -6553,7 +6553,7 @@ enemy{
   y = 973,
   direction = 3,
   breed = "hardhat_beetle_red",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 wall{
@@ -6658,7 +6658,7 @@ enemy{
   y = 525,
   direction = 3,
   breed = "hardhat_beetle_blue",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -6668,7 +6668,7 @@ enemy{
   y = 669,
   direction = 3,
   breed = "hardhat_beetle_blue",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 destructible{
@@ -7301,7 +7301,7 @@ enemy{
   y = 141,
   direction = 3,
   breed = "keese_ice",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -7311,7 +7311,7 @@ enemy{
   y = 293,
   direction = 3,
   breed = "keese_ice",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -7321,7 +7321,7 @@ enemy{
   y = 301,
   direction = 3,
   breed = "keese_ice",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -7331,7 +7331,7 @@ enemy{
   y = 381,
   direction = 3,
   breed = "keese_ice",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{

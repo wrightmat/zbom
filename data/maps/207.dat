@@ -3,10 +3,10 @@ properties{
   y = 0,
   width = 2032,
   height = 1600,
-  world = "dungeon_5",
-  floor = -1,
   min_layer = 0,
   max_layer = 2,
+  world = "dungeon_5",
+  floor = -1,
   tileset = "8",
   music = "temple_lake",
 }
@@ -18367,6 +18367,7 @@ enemy{
   y = 653,
   direction = 3,
   breed = "tektite_blue",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -18376,6 +18377,7 @@ enemy{
   y = 637,
   direction = 3,
   breed = "tektite_blue",
+  treasure_name = "random_enemy",
 }
 
 door{
@@ -18451,6 +18453,7 @@ enemy{
   y = 165,
   direction = 3,
   breed = "bari_blue",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -18460,6 +18463,7 @@ enemy{
   y = 133,
   direction = 3,
   breed = "bari_red",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -18469,6 +18473,7 @@ enemy{
   y = 117,
   direction = 3,
   breed = "bari_blue",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -18478,6 +18483,7 @@ enemy{
   y = 269,
   direction = 3,
   breed = "bari_red",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -18487,6 +18493,7 @@ enemy{
   y = 269,
   direction = 3,
   breed = "bari_red",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -18496,6 +18503,7 @@ enemy{
   y = 325,
   direction = 3,
   breed = "bari_blue",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -18505,6 +18513,7 @@ enemy{
   y = 269,
   direction = 3,
   breed = "bari_blue",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -18514,6 +18523,7 @@ enemy{
   y = 165,
   direction = 3,
   breed = "bari_blue",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -18523,6 +18533,7 @@ enemy{
   y = 269,
   direction = 3,
   breed = "bari_red",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -18532,6 +18543,7 @@ enemy{
   y = 597,
   direction = 3,
   breed = "chuchu_blue",
+  treasure_name = "random",
 }
 
 enemy{
@@ -18541,6 +18553,7 @@ enemy{
   y = 677,
   direction = 3,
   breed = "chuchu_blue",
+  treasure_name = "random",
 }
 
 enemy{
@@ -18550,6 +18563,7 @@ enemy{
   y = 565,
   direction = 3,
   breed = "chuchu_blue",
+  treasure_name = "random",
 }
 
 sensor{
@@ -18586,7 +18600,7 @@ enemy{
   y = 453,
   direction = 3,
   breed = "aquadracini",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -18596,7 +18610,7 @@ enemy{
   y = 389,
   direction = 3,
   breed = "aquadracini",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -18606,7 +18620,7 @@ enemy{
   y = 509,
   direction = 3,
   breed = "aquadracini",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -18616,7 +18630,7 @@ enemy{
   y = 373,
   direction = 3,
   breed = "aquadracini",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -18626,7 +18640,7 @@ enemy{
   y = 597,
   direction = 3,
   breed = "aquadracini",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -18636,7 +18650,7 @@ enemy{
   y = 373,
   direction = 3,
   breed = "aquadracini",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 door{
@@ -19715,7 +19729,7 @@ enemy{
   y = 1301,
   direction = 0,
   breed = "leever_purple",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -19725,7 +19739,7 @@ enemy{
   y = 1397,
   direction = 0,
   breed = "leever_purple",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -19735,7 +19749,7 @@ enemy{
   y = 1349,
   direction = 0,
   breed = "leever_purple",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 sensor{

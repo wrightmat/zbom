@@ -3,10 +3,10 @@ properties{
   y = 0,
   width = 912,
   height = 800,
-  world = "dungeon_7",
-  floor = 6,
   min_layer = 0,
   max_layer = 2,
+  world = "dungeon_7",
+  floor = 6,
   tileset = "10",
   music = "temple_wind",
 }
@@ -4691,6 +4691,7 @@ enemy{
   y = 477,
   direction = 0,
   breed = "chuchu_blue",
+  treasure_name = "random",
 }
 
 enemy{
@@ -4708,6 +4709,7 @@ enemy{
   y = 269,
   direction = 0,
   breed = "keese_ice",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -4717,6 +4719,7 @@ enemy{
   y = 157,
   direction = 0,
   breed = "keese_ice",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -4726,6 +4729,7 @@ enemy{
   y = 149,
   direction = 0,
   breed = "keese_ice",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -4735,6 +4739,7 @@ enemy{
   y = 285,
   direction = 0,
   breed = "keese_ice",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -4743,6 +4748,7 @@ enemy{
   y = 333,
   direction = 0,
   breed = "lizalfos",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -4751,6 +4757,7 @@ enemy{
   y = 333,
   direction = 2,
   breed = "lizalfos",
+  treasure_name = "random_enemy",
 }
 
 custom_entity{
@@ -4790,6 +4797,7 @@ enemy{
   y = 165,
   direction = 0,
   breed = "hardhat_beetle_blue",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -4799,6 +4807,7 @@ enemy{
   y = 301,
   direction = 0,
   breed = "hardhat_beetle_blue",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -4808,6 +4817,7 @@ enemy{
   y = 101,
   direction = 0,
   breed = "hardhat_beetle_blue",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -4817,6 +4827,7 @@ enemy{
   y = 557,
   direction = 0,
   breed = "chuchu_blue",
+  treasure_name = "random",
 }
 
 enemy{
@@ -4826,6 +4837,7 @@ enemy{
   y = 621,
   direction = 0,
   breed = "chuchu_blue",
+  treasure_name = "random",
 }
 
 enemy{
@@ -4835,6 +4847,7 @@ enemy{
   y = 693,
   direction = 0,
   breed = "chuchu_blue",
+  treasure_name = "random",
 }
 
 custom_entity{
@@ -5285,6 +5298,7 @@ enemy{
   y = 285,
   direction = 0,
   breed = "hardhat_beetle_blue",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5294,6 +5308,7 @@ enemy{
   y = 173,
   direction = 0,
   breed = "hardhat_beetle_blue",
+  treasure_name = "random_enemy",
 }
 
 npc{

@@ -69,7 +69,7 @@ function room1_dest:on_activated()
       for i=1,10 do
 	ex = random_8(96,256)
 	ey = random_8(96,240)
-	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="keese",name="enemy" })
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="keese",name="enemy", treasure_name="random_enemy" })
       end
     elseif game:get_value("i1609") == 6 then
       -- Room 6: Red Chuchus
@@ -83,21 +83,21 @@ function room1_dest:on_activated()
       for i=1,2 do
 	ex = random_8(96,256)
 	ey = random_8(96,240)
-	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="peahat",name="enemy" })
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="peahat",name="enemy", treasure_name="random_enemy" })
       end
     elseif game:get_value("i1609") == 16 then
       -- Room 16: Moths
       for i=1,14 do
 	ex = random_8(96,256)
 	ey = random_8(96,240)
-	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="moth",name="enemy" })
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="moth",name="enemy", treasure_name="random_enemy" })
       end
     elseif game:get_value("i1609") == 21 then
       -- Room 21: Ice Keese
       for i=1,10 do
 	ex = random_8(96,256)
 	ey = random_8(96,240)
-	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="keese_ice",name="enemy" })
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="keese_ice",name="enemy", treasure_name="random_enemy" })
       end
     elseif game:get_value("i1609") == 26 then
       -- Room 26: Yellow Chus
@@ -161,60 +161,60 @@ function room2_dest:on_activated()
       for i=1,5 do
 	ex = random_8(472,680)
 	ey = random_8(96,240)
-	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="keese",name="enemy" })
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="keese",name="enemy", treasure_name="random_enemy" })
       end
       for i=1,5 do
 	ex = random_8(472,680)
 	ey = random_8(96,240)
-	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="rat",name="enemy" })
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="rat",name="enemy", treasure_name="random_enemy" })
       end
     elseif game:get_value("i1609") == 7 then
       -- Room 7: keese, tentacles
       for i=1,4 do
 	ex = random_8(472,680)
 	ey = random_8(96,240)
-	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="keese",name="enemy" })
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="keese",name="enemy", treasure_name="random_enemy" })
       end
       for i=1,4 do
 	ex = random_8(472,680)
 	ey = random_8(96,240)
-	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="tentacle",name="enemy" })
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="tentacle",name="enemy", treasure_name="random_enemy" })
       end
     elseif game:get_value("i1609") == 12 then
       -- Room 12: Tektites
       for i=1,4 do
 	ex = random_8(472,680)
 	ey = random_8(96,240)
-	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="tektite_red",name="enemy" })
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="tektite_red",name="enemy", treasure_name="random_enemy" })
       end
       for i=1,4 do
 	ex = random_8(472,680)
 	ey = random_8(96,240)
-	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="tektite_blue",name="enemy" })
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="tektite_blue",name="enemy", treasure_name="random_enemy" })
       end
     elseif game:get_value("i1609") == 17 then
       -- Room 17: Helmasaurs and rats
       for i=1,4 do
 	ex = random_8(472,680)
 	ey = random_8(96,240)
-	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="helmasaur_red",name="enemy" })
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="helmasaur_red",name="enemy", treasure_name="random_enemy" })
       end
       for i=1,4 do
 	ex = random_8(472,680)
 	ey = random_8(96,240)
-	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="rat",name="enemy" })
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="rat",name="enemy", treasure_name="random_enemy" })
       end
     elseif game:get_value("i1609") == 22 then
       -- Room 22: Keese, Rats and Poes
       for i=1,6 do
 	ex = random_8(472,680)
 	ey = random_8(96,240)
-	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="keese",name="enemy" })
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="keese",name="enemy", treasure_name="random_enemy" })
       end
       for i=1,4 do
 	ex = random_8(472,680)
 	ey = random_8(96,240)
-	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="rat",name="enemy" })
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="rat",name="enemy", treasure_name="random_enemy" })
       end
       for i=1,2 do
 	ex = random_8(472,680)
@@ -299,14 +299,14 @@ function room3_dest:on_activated()
       for i=1,5 do
 	ex = random_8(72,288)
 	ey = random_8(464,600)
-	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="soldier_green",name="enemy" })
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="soldier_green",name="enemy", treasure_name="random_enemy" })
       end
     elseif game:get_value("i1609") == 8 then
       -- Room 8: fire keese
       for i=1,8 do
 	ex = random_8(72,288)
 	ey = random_8(464,600)
-	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="keese_fire",name="enemy" })
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="keese_fire",name="enemy", treasure_name="random_enemy" })
       end
     elseif game:get_value("i1609") == 13 then
       -- Room 13: Green ChuChus
@@ -320,9 +320,9 @@ function room3_dest:on_activated()
       for i=1,4 do
 	ex = random_8(72,288)
 	ey = random_8(464,600)
-	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="moth",name="enemy" })
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="moth",name="enemy", treasure_name="random_enemy" })
       end
-      map:create_enemy({x=152,y=528,layer=0,direction=0,breed="peahat",name="enemy" })
+      map:create_enemy({x=152,y=528,layer=0,direction=0,breed="peahat",name="enemy", treasure_name="random_enemy" })
     elseif game:get_value("i1609") == 23 then
       -- Room 23: Armos
       map:create_enemy({x=128,y=504,layer=0,direction=0,breed="armos",name="enemy", treasure_name="arrow" })
@@ -402,7 +402,7 @@ function room4_dest:on_activated()
       for i=1,6 do
 	ex = random_8(472,680)
 	ey = random_8(472,600)
-	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="knight_green",name="enemy" })
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="knight_green",name="enemy", treasure_name="random_enemy" })
       end
     elseif game:get_value("i1609") == 9 then
       -- Room 9: poe, fire keese
@@ -414,14 +414,14 @@ function room4_dest:on_activated()
       for i=1,4 do
 	ex = random_8(472,680)
 	ey = random_8(472,600)
-	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="keese_fire",name="enemy" })
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="keese_fire",name="enemy", treasure_name="random_enemy" })
       end
     elseif game:get_value("i1609") == 14 then
       -- Room 14: Dodongos
       for i=1,3 do
 	ex = random_8(472,680)
 	ey = random_8(472,600)
-	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="dodongo",name="enemy" })
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="dodongo",name="enemy", treasure_name="random_enemy" })
       end
     elseif game:get_value("i1609") == 19 then
       -- Room 19: Chu Horde
@@ -445,7 +445,7 @@ function room4_dest:on_activated()
       for i=1,5 do
 	ex = random_8(472,680)
 	ey = random_8(472,600)
-	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="redead",name="enemy" })
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="redead",name="enemy", treasure_name="random_enemy" })
       end
     elseif game:get_value("i1609") == 29 then
       -- Room 29: Wizzrobs

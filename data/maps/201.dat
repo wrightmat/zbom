@@ -3,10 +3,10 @@ properties{
   y = 0,
   width = 2256,
   height = 1072,
-  world = "dungeon_1",
-  floor = 0,
   min_layer = 0,
   max_layer = 2,
+  world = "dungeon_1",
+  floor = 0,
   tileset = "4",
   music = "sewers",
 }
@@ -5282,7 +5282,7 @@ enemy{
   y = 597,
   direction = 3,
   breed = "helmasaur_red",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5292,7 +5292,7 @@ enemy{
   y = 557,
   direction = 3,
   breed = "helmasaur_red",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5302,7 +5302,7 @@ enemy{
   y = 701,
   direction = 3,
   breed = "helmasaur_red",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 door{
@@ -6233,6 +6233,7 @@ enemy{
   y = 733,
   direction = 3,
   breed = "keese",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -6242,6 +6243,7 @@ enemy{
   y = 645,
   direction = 3,
   breed = "keese",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -6251,6 +6253,7 @@ enemy{
   y = 741,
   direction = 3,
   breed = "keese",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -6260,6 +6263,7 @@ enemy{
   y = 597,
   direction = 3,
   breed = "keese",
+  treasure_name = "random_enemy",
 }
 
 wall{

@@ -3,10 +3,10 @@ properties{
   y = 0,
   width = 1024,
   height = 1760,
-  world = "dungeon_6",
-  floor = -1,
   min_layer = 0,
   max_layer = 2,
+  world = "dungeon_6",
+  floor = -1,
   tileset = "9",
   music = "temple_snow",
 }
@@ -5768,6 +5768,7 @@ enemy{
   y = 1557,
   direction = 3,
   breed = "keese_ice",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5777,6 +5778,7 @@ enemy{
   y = 1653,
   direction = 3,
   breed = "keese_ice",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5786,6 +5788,7 @@ enemy{
   y = 1501,
   direction = 3,
   breed = "keese_ice",
+  treasure_name = "random_enemy",
 }
 
 wall{
@@ -6130,7 +6133,7 @@ enemy{
   y = 1181,
   direction = 3,
   breed = "pengator",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -6140,7 +6143,7 @@ enemy{
   y = 1365,
   direction = 3,
   breed = "pengator",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -6150,7 +6153,7 @@ enemy{
   y = 685,
   direction = 3,
   breed = "pengator",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -6160,7 +6163,7 @@ enemy{
   y = 597,
   direction = 3,
   breed = "pengator",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{

@@ -4729,6 +4729,7 @@ enemy{
   y = 493,
   direction = 3,
   breed = "hardhat_beetle_red",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -4738,6 +4739,7 @@ enemy{
   y = 493,
   direction = 3,
   breed = "hardhat_beetle_red",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -4747,6 +4749,7 @@ enemy{
   y = 541,
   direction = 3,
   breed = "hardhat_beetle_red",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -4756,6 +4759,7 @@ enemy{
   y = 581,
   direction = 3,
   breed = "hardhat_beetle_red",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -4765,6 +4769,7 @@ enemy{
   y = 549,
   direction = 3,
   breed = "hardhat_beetle_red",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -4774,6 +4779,7 @@ enemy{
   y = 205,
   direction = 3,
   breed = "octorok_red",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -4783,6 +4789,7 @@ enemy{
   y = 309,
   direction = 3,
   breed = "octorok_red",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -4792,6 +4799,7 @@ enemy{
   y = 125,
   direction = 3,
   breed = "octorok_red",
+  treasure_name = "random_enemy",
 }
 
 wall{
@@ -5089,6 +5097,7 @@ enemy{
   y = 301,
   direction = 3,
   breed = "deadrock",
+  treasure_name = "random",
 }
 
 enemy{
@@ -5098,15 +5107,17 @@ enemy{
   y = 269,
   direction = 3,
   breed = "deadrock",
+  treasure_name = "random",
 }
 
 enemy{
-  name = "deadrock_3",
+  name = "deadrock_3r",
   layer = 0,
   x = 376,
   y = 301,
   direction = 3,
   breed = "deadrock",
+  treasure_name = "random",
 }
 
 crystal_block{
@@ -5179,6 +5190,7 @@ enemy{
   y = 661,
   direction = 3,
   breed = "deadrock",
+  treasure_name = "random",
 }
 
 enemy{
@@ -5188,6 +5200,7 @@ enemy{
   y = 581,
   direction = 3,
   breed = "deadrock",
+  treasure_name = "random",
 }
 
 enemy{
@@ -5197,6 +5210,7 @@ enemy{
   y = 509,
   direction = 3,
   breed = "deadrock",
+  treasure_name = "random",
 }
 
 npc{
@@ -5452,7 +5466,7 @@ enemy{
   y = 581,
   direction = 3,
   breed = "hinox",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 teletransporter{
@@ -5531,6 +5545,7 @@ enemy{
   y = 109,
   direction = 3,
   breed = "keese",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5540,6 +5555,7 @@ enemy{
   y = 149,
   direction = 3,
   breed = "keese",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5549,6 +5565,7 @@ enemy{
   y = 261,
   direction = 3,
   breed = "keese",
+  treasure_name = "random_enemy",
 }
 
 tile{

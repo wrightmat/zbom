@@ -3,10 +3,10 @@ properties{
   y = 0,
   width = 2032,
   height = 1760,
-  world = "dungeon_3",
-  floor = 0,
   min_layer = 0,
   max_layer = 2,
+  world = "dungeon_3",
+  floor = 0,
   tileset = "6",
   music = "temple_pyramid",
 }
@@ -14995,6 +14995,7 @@ enemy{
   y = 1301,
   direction = 2,
   breed = "rat",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -15003,6 +15004,7 @@ enemy{
   y = 1349,
   direction = 0,
   breed = "rat",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -15011,6 +15013,7 @@ enemy{
   y = 1261,
   direction = 3,
   breed = "rat",
+  treasure_name = "random_enemy",
 }
 
 pickable{
@@ -16002,6 +16005,7 @@ enemy{
   y = 517,
   direction = 3,
   breed = "keese",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -16011,6 +16015,7 @@ enemy{
   y = 437,
   direction = 3,
   breed = "keese",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -16020,6 +16025,7 @@ enemy{
   y = 453,
   direction = 3,
   breed = "keese",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -16029,6 +16035,7 @@ enemy{
   y = 413,
   direction = 3,
   breed = "keese",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -16038,6 +16045,7 @@ enemy{
   y = 501,
   direction = 3,
   breed = "keese",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -16047,6 +16055,7 @@ enemy{
   y = 501,
   direction = 3,
   breed = "keese",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -16056,6 +16065,7 @@ enemy{
   y = 405,
   direction = 3,
   breed = "keese",
+  treasure_name = "random_enemy",
 }
 
 wall{
@@ -16146,6 +16156,7 @@ enemy{
   y = 85,
   direction = 3,
   breed = "keese",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -16155,6 +16166,7 @@ enemy{
   y = 245,
   direction = 3,
   breed = "keese",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -16164,6 +16176,7 @@ enemy{
   y = 93,
   direction = 3,
   breed = "keese",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -16173,6 +16186,7 @@ enemy{
   y = 237,
   direction = 3,
   breed = "keese",
+  treasure_name = "random_enemy",
 }
 
 wall{
@@ -16218,6 +16232,7 @@ enemy{
   y = 941,
   direction = 3,
   breed = "keese",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -16227,6 +16242,7 @@ enemy{
   y = 1077,
   direction = 3,
   breed = "keese",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -16236,6 +16252,7 @@ enemy{
   y = 933,
   direction = 3,
   breed = "keese",
+  treasure_name = "random_enemy",
 }
 
 wall{
