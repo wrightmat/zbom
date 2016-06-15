@@ -2,7 +2,6 @@ local submenu = require("scripts/menus/pause_submenu")
 local quest_status_submenu = submenu:new()
 
 function quest_status_submenu:on_started()
-
   submenu.on_started(self)
   self.quest_items_surface = sol.surface.create(320, 240)
   self.cursor_sprite = sol.sprite.create("menus/pause_cursor")
@@ -15,31 +14,6 @@ function quest_status_submenu:on_started()
 
   -- Draw the items on a surface.
   self.quest_items_surface:clear()
-
-  -- Tunic.
-  local tunic = self.game:get_item("tunic"):get_variant()
-  item_sprite:set_animation("tunic")
-  item_sprite:set_direction(tunic - 1)
-  item_sprite:draw(self.quest_items_surface, 185, 177)
-  self.caption_text_keys[5] = "quest_status.caption.tunic_" .. tunic
-
-  -- Sword.
-  local sword = self.game:get_item("sword"):get_variant()
-  if sword > 0 then
-    item_sprite:set_animation("sword")
-    item_sprite:set_direction(sword - 1)
-    item_sprite:draw(self.quest_items_surface, 219, 177)
-    self.caption_text_keys[6] = "quest_status.caption.sword_" .. sword
-  end
-
-  -- Shield.
-  local shield = self.game:get_item("shield"):get_variant()
-  if shield > 0 then
-    item_sprite:set_animation("shield")
-    item_sprite:set_direction(shield - 1)
-    item_sprite:draw(self.quest_items_surface, 253, 177)
-    self.caption_text_keys[7] = "quest_status.caption.shield_" .. shield
-  end
 
   -- Wallet.
   local rupee_bag = self.game:get_item("rupee_bag"):get_variant()
@@ -87,6 +61,49 @@ function quest_status_submenu:on_started()
   pieces_of_heart_img:draw_region(x, 0, 51, 50, self.quest_items_surface, 101, 81)
   self.caption_text_keys[4] = "quest_status.caption.pieces_of_heart"
 
+  -- Bracelet/Glove.
+  local glove = self.game:get_item("glove"):get_variant()
+  if glove > 0 then
+    item_sprite:set_animation("glove")
+    item_sprite:set_direction(glove - 1)
+    item_sprite:draw(self.quest_items_surface, 116, 177)
+    self.caption_text_keys[5] = "quest_status.caption.glove_" .. glove
+  end
+
+  -- Flippers.
+  local flippers = self.game:get_item("flippers"):get_variant()
+  if flippers > 0 then
+    item_sprite:set_animation("flippers")
+    item_sprite:set_direction(flippers - 1)
+    item_sprite:draw(self.quest_items_surface, 150, 177)
+    self.caption_text_keys[6] = "quest_status.caption.flippers_" .. flippers
+  end
+
+  -- Tunic.
+  local tunic = self.game:get_item("tunic"):get_variant()
+  item_sprite:set_animation("tunic")
+  item_sprite:set_direction(tunic - 1)
+  item_sprite:draw(self.quest_items_surface, 185, 177)
+  self.caption_text_keys[7] = "quest_status.caption.tunic_" .. tunic
+
+  -- Sword.
+  local sword = self.game:get_item("sword"):get_variant()
+  if sword > 0 then
+    item_sprite:set_animation("sword")
+    item_sprite:set_direction(sword - 1)
+    item_sprite:draw(self.quest_items_surface, 219, 177)
+    self.caption_text_keys[8] = "quest_status.caption.sword_" .. sword
+  end
+
+  -- Shield.
+  local shield = self.game:get_item("shield"):get_variant()
+  if shield > 0 then
+    item_sprite:set_animation("shield")
+    item_sprite:set_direction(shield - 1)
+    item_sprite:draw(self.quest_items_surface, 253, 177)
+    self.caption_text_keys[9] = "quest_status.caption.shield_" .. shield
+  end
+
   -- Dungeons finished
   local dungeons_img = sol.surface.create("menus/quest_status_dungeons.png")
   local dst_positions = {
@@ -111,7 +128,6 @@ function quest_status_submenu:on_started()
 end
 
 function quest_status_submenu:set_cursor_position(position)
-
   if position ~= self.cursor_position then
     self.cursor_position = position
     if position <= 3 then
@@ -120,7 +136,7 @@ function quest_status_submenu:set_cursor_position(position)
       self.cursor_sprite_x = 126
       self.cursor_sprite_y = 107
     else
-      self.cursor_sprite_x = 15 + 34 * position
+      self.cursor_sprite_x = -53 + 34 * position
     end
 
     if position == 0 then
@@ -140,11 +156,9 @@ function quest_status_submenu:set_cursor_position(position)
 end
 
 function quest_status_submenu:on_command_pressed(command)
-
   local handled = submenu.on_command_pressed(self, command)
 
   if not handled then
-
     if command == "left" then
       if self.cursor_position <= 3 then
         self:previous_submenu()
@@ -161,7 +175,7 @@ function quest_status_submenu:on_command_pressed(command)
       handled = true
 
     elseif command == "right" then
-      if self.cursor_position == 4 or self.cursor_position == 7 then
+      if self.cursor_position == 4 or self.cursor_position == 9 then
         self:next_submenu()
       else
         sol.audio.play_sound("cursor")
@@ -177,12 +191,12 @@ function quest_status_submenu:on_command_pressed(command)
 
     elseif command == "down" then
       sol.audio.play_sound("cursor")
-      self:set_cursor_position((self.cursor_position + 1) % 8)
+      self:set_cursor_position((self.cursor_position + 1) % 10)
       handled = true
 
     elseif command == "up" then
       sol.audio.play_sound("cursor")
-      self:set_cursor_position((self.cursor_position + 7) % 8)
+      self:set_cursor_position((self.cursor_position + 9) % 10)
       handled = true
     end
 
@@ -192,7 +206,6 @@ function quest_status_submenu:on_command_pressed(command)
 end
 
 function quest_status_submenu:on_draw(dst_surface)
-
   local width, height = dst_surface:get_size()
   local x = width / 2 - 160
   local y = height / 2 - 120
@@ -204,4 +217,3 @@ function quest_status_submenu:on_draw(dst_surface)
 end
 
 return quest_status_submenu
-
