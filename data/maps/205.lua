@@ -256,4 +256,5 @@ function chest_book:on_opened(item, variant, savegame_variable)
   map:get_hero():start_treasure("book_mudora", book_variant)
   game:set_dungeon_finished(4)
   game:set_value("i1029", 6)
+  game:set_value("b1117", true) -- This value varies depending on the dungeon (chest save value)
 end
