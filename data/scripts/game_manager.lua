@@ -25,6 +25,13 @@ function game:on_started()
   self:initialize_dialog_box()
   self.hud = hud_manager:create(game)
   camera = camera_manager:create(game)
+
+  -- Measure the time played.
+  chron_timer = sol.timer.start(1000, function()
+    game:set_value("time_played", game:get_value("time_played") + 1)
+    return true  -- Repeat the timer.
+  end)
+  chron_timer:set_suspended_with_map(false)
 end
 
 function game:on_finished()

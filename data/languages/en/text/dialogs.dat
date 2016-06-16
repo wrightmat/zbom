@@ -712,8 +712,19 @@ blocks on a whim!
 }
 
 dialog{
+  id = "_item_description.carrot.1",
+  icon = "18",
+  skip = "current",
+  text = [[
+Deep orange carrots can be found in
+the ground throughout Hyrule. Eat one
+to revitalize yourself!
+]]
+}
+
+dialog{
   id = "_item_description.carrot_counter.1",
-  icon = "17",
+  icon = "18",
   skip = "current",
   text = [[
 Deep orange carrots can be found in
@@ -812,13 +823,24 @@ give off light in dark places.
 }
 
 dialog{
-  id = "_item_description.meat_counter.1",
-  icon = "17",
+  id = "_item_description.meat.1",
+  icon = "19",
   skip = "current",
   text = [[
-Chunks of meat may be left by enemies
-when you kill them. It may not look
-very appetizing, but it's nutritious!
+Hunks of meat may be left when you
+kill enemies. It may not look very
+appetizing, but it's nutritious!
+]]
+}
+
+dialog{
+  id = "_item_description.meat_counter.1",
+  icon = "19",
+  skip = "current",
+  text = [[
+Hunks of meat may be left when you
+kill enemies. It may not look very
+appetizing, but it's nutritious!
 ]]
 }
 
@@ -850,6 +872,17 @@ dialog{
 Rumors say this item was dropped by the
 goddess in a long-forgotten era. It's a
 legendary treasure few will ever behold!
+]]
+}
+
+dialog{
+  id = "_item_description.pumpkin.1",
+  icon = "17",
+  skip = "current",
+  text = [[
+Bright orange pumpkins grow only in the
+south of Hyrule. Eat one to revitalize
+yourself, or sell them to someone else!
 ]]
 }
 
@@ -1810,7 +1843,7 @@ on a whim.
 
 dialog{
   id = "_treasure.carrot.1",
-  icon = "16",
+  icon = "18",
   skip = "current",
   text = [[
 You got a  $r Carrot$w!$0
@@ -1823,7 +1856,7 @@ dialog{
   icon = "71",
   skip = "current",
   text = [[
-You found a  $r Compass$w! It
+You found a  $r Compass$w!  It
 indicates your position on a Map,
 but only works in this dungeon.
 This one has a special feature -
@@ -1858,7 +1891,7 @@ light as air!
 
 dialog{
   id = "_treasure.flippers.1",
-  icon = "18",
+  icon = "50",
   skip = "current",
   text = [[
 You got the $r Flippers$w!$0
@@ -2002,15 +2035,15 @@ dialog{
   icon = "70",
   skip = "current",
   text = [[
-You found a $r Dungeon Map$w!
+You found a $r Dungeon Map$w !
 Use it to navigate difficult areas
-and explore places you haven't yet!
+and explore new places!
 ]]
 }
 
 dialog{
   id = "_treasure.meat.1",
-  icon = "16",
+  icon = "19",
   skip = "current",
   text = [[
 You got some  $r Meat$w!$0
@@ -3397,7 +3430,7 @@ Oh, I knew you would understand!
 You've always gotten me, haven't you?
 I know what you'd like! The odd
 structure just north of here! I'd check
-it out myself, but it's dark and you
+it out myself, but it's dark and I don't
 have a lantern...
 ]]
 }
@@ -3709,16 +3742,16 @@ You got lost in my woods, huh?
 Well, we can't let that happen again!
 If you ever get turned around, here's
 what you do... Head straight north
-for $b Hyrule Castle Town$w. Northeast
-leads to the $b old Ruins$w. South goes
+for $bHyrule Castle Town$w .  Northeast
+leads to the $b old Ruins$w.  South goes
 back to $b Ordon$w, and west of there is
-the $b Western Faron Woods$w. You're in
-the $b Northern Faron Woods$w now. How
+the $b Western Faron Woods $w .  You're in
+the $b Northern Faron Woods $w  now. How
 can you tell? Well look at the trees,
 my boy! These pointy trees only grow
 in the Faron region, the rest of
 Hyrule has nice rounded trees. You'll
-know you've reached $b Hyrule Field$w when
+know you've reached  $b  Hyrule Field$w when
 the trees change shape!
 ]]
 }
@@ -4383,12 +4416,12 @@ dialog{
   id = "gaira.0.ordon",
   skip = "current",
   text = [[
-So you noticed my trees, huh?
+So you noticed my trees, huh?$0
 I'm working as the groundskeeper here,
 so I planted saplings that I got from
 friends up north and next thing you know,
-I got these beauts!
-One of a kind, these are...
+I got these beauts! Some of them even
+grow apples! One of a kind, these are...
 ]]
 }
 
@@ -6529,7 +6562,7 @@ dialog{
   skip = "current",
   text = [[
 That's a sample of our famous
-$rMagic Potion$w.
+$rMagic Potion$w .
 Your meter is filled!
 ]]
 }
@@ -7633,7 +7666,7 @@ For now, your people must remain ignorant
 of true events. Their innocence will be
 their only shelter in these dangerous
 times, as you and I will not allow this
-evil to penetrate our home! $0 Wait...$0
+evil to infiltrate our home! $0 Wait...$0
 To assist you I shall travel with you
 in your lantern. When you require
 assistance I'll be there. For now,
@@ -7677,12 +7710,13 @@ your quest far sooner than we would like.
 The nearest likely source of darkness
 would be in the deep forest, where open
 trees lead into the deep, dark earth.
-The place was once called  $b  Sacred Grove$w,
+The place was once called $b   Sacred Grove$w,
 in$bFaron Woods$w  . You must venture there,
 find the evil that lies in wait and
 vanquish it! Your village home is safe
 for now, but will remain so only as long
-as you fight!$0 Onward hero!
+as you fight!$0
+Onward hero!
 ]]
 }
 
@@ -7905,7 +7939,7 @@ dialog{
   id = "pim.0.house",
   skip = "current",
   text = [[
-Hi, my name is  $gPim$w.
+Hi, my name is $g  Pim$w.
 I'm sure you've seen the big pumpkin
 patch by your house. Well, that's mine!
 I grow pumpkins for most of the town
@@ -7931,7 +7965,7 @@ dialog{
 Did you know that eating pumpkins
 or apples can perk you right up?
 You see, that   $bblue bar$wup there is
-your stamina- or the amount of energy
+your stamina - or the amount of energy
 you have to do things. Always keep
 an apple or pumpkin on hand, and
 you'll be prepared if your energy

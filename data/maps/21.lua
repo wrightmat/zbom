@@ -27,7 +27,7 @@ end
 function map:on_started(destination)
   if destination == from_temple then
     sol.audio.play_music("faron_woods")
-    if game:get_value("b1061") and game:get_value("i1068") < 9 then
+    if game:get_dungeon_finished(2) and game:get_value("i1068") < 9 then
       -- Temple is complete- have monkey steal book page and jump away.
       npc_monkey:set_position(648, 752, 2)
       sol.audio.play_sound("monkey")

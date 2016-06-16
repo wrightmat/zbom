@@ -1032,6 +1032,7 @@ function savegame_menu:set_initial_values(savegame)
   savegame:get_item("tunic"):set_variant(1)
   savegame:set_ability("tunic", 1)
   savegame:get_item("rupee_bag"):set_variant(1)
+  savegame:set_value("time_played", 0)
 end
 
 function savegame_menu:calculate_percent_complete(savegame)
@@ -1082,13 +1083,13 @@ function savegame_menu:calculate_percent_complete(savegame)
     if savegame:get_value("i1607") >= 5 then percent_complete = percent_complete + 2 end  -- Great Fairy Subrosian Ore
     if savegame:get_value("i1608") >= 5 then percent_complete = percent_complete + 2 end  -- Great Fairy Magic Crystal
     if savegame:get_value("i1609") >= 50 then percent_complete = percent_complete + 2 end  -- Cave of Ordeals
-    if (savegame:get_value("b1810") and 1 or 0) then percent_complete = percent_complete + 2 end  -- Bottle 1 (Rudy)
-    if (savegame:get_value("b1811") and 1 or 0) then percent_complete = percent_complete + 2 end  -- Bottle 2 (Relic Collector)
-    if (savegame:get_value("b1812") and 1 or 0) then percent_complete = percent_complete + 2 end  -- Bottle 3 (Kakariko Thief)
-    if (savegame:get_value("b1813") and 1 or 0) then percent_complete = percent_complete + 2 end  -- Bottle 4
-    if (savegame:get_value("b1838") and 1 or 0) then percent_complete = percent_complete + 2 end  -- Shovel
-    if (savegame:get_value("b1839") and 1 or 0) then percent_complete = percent_complete + 2 end  -- Hammer
-    if (savegame:get_value("b1699") and 1 or 0) then percent_complete = percent_complete + 2 end  -- Main Quest
+    if savegame:get_value("b1810") then percent_complete = percent_complete + 2 end  -- Bottle 1 (Rudy)
+    if savegame:get_value("b1811") then percent_complete = percent_complete + 2 end  -- Bottle 2 (Relic Collector)
+    if savegame:get_value("b1812") then percent_complete = percent_complete + 2 end  -- Bottle 3 (Kakariko Thief)
+    if savegame:get_value("b1813") then percent_complete = percent_complete + 2 end  -- Bottle 4
+    if savegame:get_value("b1838") then percent_complete = percent_complete + 2 end  -- Shovel
+    if savegame:get_value("b1839") then percent_complete = percent_complete + 2 end  -- Hammer
+    if savegame:get_value("b1699") then percent_complete = percent_complete + 2 end  -- Main Quest
 
     -- Last 10% - Character reputations? Random treasure chests?
 
