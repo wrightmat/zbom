@@ -1693,6 +1693,141 @@ tile{
   pattern = "522",
 }
 
+tile{
+  layer = 0,
+  x = 400,
+  y = 456,
+  width = 16,
+  height = 16,
+  pattern = "1576",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 456,
+  width = 16,
+  height = 16,
+  pattern = "1577",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "953",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 432,
+  width = 16,
+  height = 64,
+  pattern = "954",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 488,
+  width = 16,
+  height = 16,
+  pattern = "953",
+}
+
+tile{
+  layer = 0,
+  x = 880,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "1576",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "1577",
+}
+
+tile{
+  layer = 0,
+  x = 920,
+  y = 264,
+  width = 16,
+  height = 16,
+  pattern = "953",
+}
+
+tile{
+  layer = 0,
+  x = 920,
+  y = 280,
+  width = 16,
+  height = 64,
+  pattern = "954",
+}
+
+tile{
+  layer = 0,
+  x = 920,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "953",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "1576",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "1577",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "953",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 88,
+  width = 16,
+  height = 64,
+  pattern = "954",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "953",
+}
+
 teletransporter{
   name = "to_N3",
   layer = 0,
@@ -1776,8 +1911,8 @@ enemy{
 enemy{
   name = "snapdragon_3",
   layer = 0,
-  x = 976,
-  y = 205,
+  x = 688,
+  y = 581,
   direction = 0,
   breed = "snap_dragon",
   treasure_name = "random_enemy",
@@ -1820,6 +1955,146 @@ wall{
   width = 48,
   height = 8,
   stops_hero = true,
+}
+
+enemy{
+  name = "snapdragon_5",
+  layer = 0,
+  x = 464,
+  y = 317,
+  direction = 0,
+  breed = "snap_dragon",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "snapdragon_6",
+  layer = 0,
+  x = 640,
+  y = 237,
+  direction = 0,
+  breed = "snap_dragon",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "snapdragon_7",
+  layer = 0,
+  x = 760,
+  y = 93,
+  direction = 0,
+  breed = "snap_dragon",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "snapdragon_8",
+  layer = 0,
+  x = 808,
+  y = 389,
+  direction = 0,
+  breed = "snap_dragon",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "snapdragon_9",
+  layer = 0,
+  x = 888,
+  y = 181,
+  direction = 0,
+  breed = "snap_dragon",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "snapdragon_10",
+  layer = 0,
+  x = 824,
+  y = 541,
+  direction = 0,
+  breed = "snap_dragon",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "snapdragon_11",
+  layer = 0,
+  x = 576,
+  y = 525,
+  direction = 0,
+  breed = "snap_dragon",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "snapdragon_12",
+  layer = 0,
+  x = 272,
+  y = 597,
+  direction = 0,
+  breed = "snap_dragon",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "snapdragon_13",
+  layer = 0,
+  x = 344,
+  y = 341,
+  direction = 0,
+  breed = "snap_dragon",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "snapdragon_14",
+  layer = 0,
+  x = 208,
+  y = 181,
+  direction = 0,
+  breed = "snap_dragon",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "snapdragon_15",
+  layer = 0,
+  x = 464,
+  y = 61,
+  direction = 0,
+  breed = "snap_dragon",
+  treasure_name = "random_enemy",
+}
+
+wall{
+  layer = 0,
+  x = 144,
+  y = 0,
+  width = 8,
+  height = 752,
+  stops_npcs = true,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 936,
+  y = 0,
+  width = 8,
+  height = 608,
+  stops_npcs = true,
+  stops_enemies = true,
+}
+
+chest{
+  name = "chest_crystal",
+  layer = 0,
+  x = 384,
+  y = 469,
+  treasure_name = "crystal",
+  treasure_savegame_variable = "snapdragon_camp_crystal",
+  sprite = "entities/chest",
 }
 
 tile{
@@ -2306,5 +2581,32 @@ tile{
   width = 8,
   height = 40,
   pattern = "520",
+}
+
+tile{
+  layer = 2,
+  x = 400,
+  y = 440,
+  width = 32,
+  height = 16,
+  pattern = "1575",
+}
+
+tile{
+  layer = 2,
+  x = 880,
+  y = 288,
+  width = 32,
+  height = 16,
+  pattern = "1575",
+}
+
+tile{
+  layer = 2,
+  x = 488,
+  y = 96,
+  width = 32,
+  height = 16,
+  pattern = "1575",
 }
 

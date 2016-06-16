@@ -525,8 +525,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 336,
-  y = 600,
+  x = 328,
+  y = 616,
   width = 8,
   height = 8,
   pattern = "63",
@@ -1288,6 +1288,60 @@ tile{
   pattern = "1452",
 }
 
+tile{
+  layer = 0,
+  x = 552,
+  y = 264,
+  width = 16,
+  height = 16,
+  pattern = "1576",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 264,
+  width = 16,
+  height = 16,
+  pattern = "1577",
+}
+
+tile{
+  layer = 0,
+  x = 776,
+  y = 496,
+  width = 16,
+  height = 16,
+  pattern = "1576",
+}
+
+tile{
+  layer = 0,
+  x = 792,
+  y = 496,
+  width = 16,
+  height = 16,
+  pattern = "1577",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 576,
+  width = 16,
+  height = 16,
+  pattern = "1576",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 576,
+  width = 16,
+  height = 16,
+  pattern = "1577",
+}
+
 teletransporter{
   name = "to_N2",
   layer = 0,
@@ -1379,30 +1433,10 @@ enemy{
 }
 
 enemy{
-  name = "snapdragon_4",
-  layer = 0,
-  x = 256,
-  y = 413,
-  direction = 0,
-  breed = "snap_dragon",
-  treasure_name = "random_enemy",
-}
-
-enemy{
-  name = "snapdragon_5",
-  layer = 0,
-  x = 784,
-  y = 285,
-  direction = 0,
-  breed = "snap_dragon",
-  treasure_name = "random_enemy",
-}
-
-enemy{
   name = "hinox_1",
   layer = 0,
-  x = 504,
-  y = 149,
+  x = 576,
+  y = 181,
   direction = 3,
   breed = "hinox",
   treasure_name = "random_enemy",
@@ -1421,8 +1455,8 @@ enemy{
 enemy{
   name = "hinox_3",
   layer = 0,
-  x = 944,
-  y = 389,
+  x = 680,
+  y = 349,
   direction = 3,
   breed = "hinox",
   treasure_name = "random_enemy",
@@ -1436,5 +1470,142 @@ enemy{
   direction = 0,
   breed = "snap_dragon",
   treasure_name = "random_enemy",
+}
+
+chest{
+  name = "chest_crystal",
+  layer = 0,
+  x = 344,
+  y = 589,
+  treasure_name = "crystal",
+  treasure_savegame_variable = "hinox_camp_crystal",
+  sprite = "entities/chest",
+}
+
+enemy{
+  name = "hinox_4",
+  layer = 0,
+  x = 376,
+  y = 245,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "hinox_5",
+  layer = 0,
+  x = 344,
+  y = 421,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "hinox_6",
+  layer = 0,
+  x = 440,
+  y = 517,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "hinox_7",
+  layer = 0,
+  x = 704,
+  y = 213,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "hinox_8",
+  layer = 0,
+  x = 824,
+  y = 285,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "hinox_9",
+  layer = 0,
+  x = 688,
+  y = 517,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random_enemy",
+}
+
+wall{
+  layer = 0,
+  x = 248,
+  y = 136,
+  width = 8,
+  height = 424,
+  stops_npcs = true,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 288,
+  y = 136,
+  width = 640,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 920,
+  y = 192,
+  width = 8,
+  height = 408,
+  stops_npcs = true,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 280,
+  y = 600,
+  width = 648,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+}
+
+tile{
+  layer = 2,
+  x = 552,
+  y = 248,
+  width = 32,
+  height = 16,
+  pattern = "1575",
+}
+
+tile{
+  layer = 2,
+  x = 776,
+  y = 480,
+  width = 32,
+  height = 16,
+  pattern = "1575",
+}
+
+tile{
+  layer = 2,
+  x = 296,
+  y = 560,
+  width = 32,
+  height = 16,
+  pattern = "1575",
 }
 

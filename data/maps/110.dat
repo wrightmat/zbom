@@ -1783,6 +1783,78 @@ tile{
   pattern = "522",
 }
 
+tile{
+  layer = 0,
+  x = 776,
+  y = 440,
+  width = 16,
+  height = 16,
+  pattern = "1576",
+}
+
+tile{
+  layer = 0,
+  x = 792,
+  y = 440,
+  width = 16,
+  height = 16,
+  pattern = "1577",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 728,
+  width = 16,
+  height = 16,
+  pattern = "1576",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 728,
+  width = 16,
+  height = 16,
+  pattern = "1577",
+}
+
+tile{
+  layer = 0,
+  x = 664,
+  y = 936,
+  width = 16,
+  height = 16,
+  pattern = "1576",
+}
+
+tile{
+  layer = 0,
+  x = 680,
+  y = 936,
+  width = 16,
+  height = 16,
+  pattern = "1577",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 480,
+  width = 16,
+  height = 16,
+  pattern = "1576",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 480,
+  width = 16,
+  height = 16,
+  pattern = "1577",
+}
+
 teletransporter{
   name = "to_H3",
   layer = 0,
@@ -1844,30 +1916,10 @@ teletransporter{
 }
 
 enemy{
-  name = "chuchu_1",
-  layer = 0,
-  x = 752,
-  y = 517,
-  direction = 0,
-  breed = "chuchu_yellow",
-  treasure_name = "random_north",
-}
-
-enemy{
-  name = "chuchu_2",
-  layer = 0,
-  x = 232,
-  y = 917,
-  direction = 0,
-  breed = "chuchu_yellow",
-  treasure_name = "random_north",
-}
-
-enemy{
   name = "knight_1",
   layer = 0,
-  x = 200,
-  y = 477,
+  x = 280,
+  y = 405,
   direction = 0,
   breed = "knight_red",
   treasure_name = "random_enemy",
@@ -1876,8 +1928,8 @@ enemy{
 enemy{
   name = "knight_2",
   layer = 0,
-  x = 944,
-  y = 805,
+  x = 640,
+  y = 797,
   direction = 0,
   breed = "knight_red",
   treasure_name = "random_enemy",
@@ -1886,8 +1938,8 @@ enemy{
 enemy{
   name = "knight_3",
   layer = 0,
-  x = 984,
-  y = 269,
+  x = 696,
+  y = 509,
   direction = 0,
   breed = "knight_red",
   treasure_name = "random_enemy",
@@ -2254,6 +2306,106 @@ destructible{
   destruction_sound = "bush",
   weight = -1,
   can_be_cut = true,
+}
+
+enemy{
+  name = "knight_4",
+  layer = 0,
+  x = 344,
+  y = 685,
+  direction = 0,
+  breed = "knight_red",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "knight_5",
+  layer = 0,
+  x = 512,
+  y = 501,
+  direction = 0,
+  breed = "knight_red",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "knight_6",
+  layer = 0,
+  x = 664,
+  y = 645,
+  direction = 0,
+  breed = "knight_red",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "knight_7",
+  layer = 0,
+  x = 240,
+  y = 909,
+  direction = 0,
+  breed = "knight_red",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "knight_8",
+  layer = 0,
+  x = 464,
+  y = 357,
+  direction = 0,
+  breed = "knight_red",
+  treasure_name = "random_enemy",
+}
+
+wall{
+  layer = 0,
+  x = 176,
+  y = 288,
+  width = 8,
+  height = 712,
+  stops_npcs = true,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 176,
+  y = 1000,
+  width = 712,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 880,
+  y = 216,
+  width = 8,
+  height = 784,
+  stops_npcs = true,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 752,
+  y = 200,
+  width = 96,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+}
+
+chest{
+  name = "chest_crystal",
+  layer = 0,
+  x = 392,
+  y = 493,
+  treasure_name = "crystal",
+  treasure_savegame_variable = "knight_camp_crystal",
+  sprite = "entities/chest",
 }
 
 tile{
@@ -2740,5 +2892,41 @@ tile{
   width = 8,
   height = 40,
   pattern = "520",
+}
+
+tile{
+  layer = 2,
+  x = 776,
+  y = 424,
+  width = 32,
+  height = 16,
+  pattern = "1575",
+}
+
+tile{
+  layer = 2,
+  x = 528,
+  y = 712,
+  width = 32,
+  height = 16,
+  pattern = "1575",
+}
+
+tile{
+  layer = 2,
+  x = 664,
+  y = 920,
+  width = 32,
+  height = 16,
+  pattern = "1575",
+}
+
+tile{
+  layer = 2,
+  x = 344,
+  y = 464,
+  width = 32,
+  height = 16,
+  pattern = "1575",
 }
 

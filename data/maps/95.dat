@@ -2935,6 +2935,231 @@ tile{
   pattern = "1498",
 }
 
+tile{
+  layer = 0,
+  x = 96,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "1576",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "1577",
+}
+
+tile{
+  layer = 0,
+  x = 376,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "1576",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "1577",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 344,
+  width = 32,
+  height = 24,
+  pattern = "1795",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 296,
+  width = 32,
+  height = 24,
+  pattern = "1795",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 264,
+  width = 32,
+  height = 24,
+  pattern = "1795",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 232,
+  width = 32,
+  height = 24,
+  pattern = "1795",
+}
+
+tile{
+  layer = 0,
+  x = 584,
+  y = 208,
+  width = 32,
+  height = 24,
+  pattern = "1795",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 176,
+  width = 32,
+  height = 24,
+  pattern = "1795",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 184,
+  width = 32,
+  height = 24,
+  pattern = "1795",
+}
+
+tile{
+  layer = 0,
+  x = 680,
+  y = 160,
+  width = 32,
+  height = 24,
+  pattern = "1795",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 328,
+  width = 16,
+  height = 16,
+  pattern = "1793",
+}
+
+tile{
+  layer = 0,
+  x = 728,
+  y = 104,
+  width = 32,
+  height = 24,
+  pattern = "1795",
+}
+
+tile{
+  layer = 0,
+  x = 768,
+  y = 40,
+  width = 32,
+  height = 24,
+  pattern = "1795",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "1794",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "1794",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 424,
+  width = 16,
+  height = 16,
+  pattern = "1792",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 480,
+  width = 32,
+  height = 24,
+  pattern = "1795",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 536,
+  width = 32,
+  height = 24,
+  pattern = "1795",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 696,
+  width = 32,
+  height = 24,
+  pattern = "1795",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 704,
+  width = 32,
+  height = 24,
+  pattern = "1795",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 872,
+  width = 32,
+  height = 24,
+  pattern = "1795",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 376,
+  width = 16,
+  height = 16,
+  pattern = "1576",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 376,
+  width = 16,
+  height = 16,
+  pattern = "1577",
+}
+
 teletransporter{
   name = "to_D4",
   layer = 0,
@@ -3019,7 +3244,7 @@ enemy{
   name = "zola_3",
   layer = 0,
   x = 320,
-  y = 445,
+  y = 373,
   direction = 3,
   breed = "zola",
   treasure_name = "random_enemy",
@@ -3028,8 +3253,8 @@ enemy{
 enemy{
   name = "zola_4",
   layer = 0,
-  x = 240,
-  y = 669,
+  x = 216,
+  y = 525,
   direction = 3,
   breed = "zola",
   treasure_name = "random_enemy",
@@ -3038,8 +3263,8 @@ enemy{
 enemy{
   name = "zola_5",
   layer = 0,
-  x = 480,
-  y = 885,
+  x = 392,
+  y = 533,
   direction = 3,
   breed = "zola",
   treasure_name = "random_enemy",
@@ -3048,8 +3273,8 @@ enemy{
 enemy{
   name = "zola_6",
   layer = 0,
-  x = 112,
-  y = 901,
+  x = 152,
+  y = 437,
   direction = 3,
   breed = "zola",
   treasure_name = "random_enemy",
@@ -3058,8 +3283,8 @@ enemy{
 enemy{
   name = "zola_7",
   layer = 0,
-  x = 584,
-  y = 117,
+  x = 464,
+  y = 197,
   direction = 3,
   breed = "zola",
   treasure_name = "random_enemy",
@@ -3245,6 +3470,65 @@ custom_entity{
   direction = 0,
   sprite = "entities/quest_plants",
   model = "quest_plants",
+}
+
+enemy{
+  name = "zola_8",
+  layer = 0,
+  x = 296,
+  y = 461,
+  direction = 3,
+  breed = "zola",
+  treasure_name = "random_enemy",
+}
+
+chest{
+  name = "chest_crystal",
+  layer = 0,
+  x = 232,
+  y = 389,
+  treasure_name = "crystal",
+  treasure_savegame_variable = "swamp_camp_crystal",
+  sprite = "entities/chest",
+}
+
+wall{
+  layer = 0,
+  x = 560,
+  y = 0,
+  width = 8,
+  height = 696,
+  stops_npcs = true,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 8,
+  y = 696,
+  width = 560,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+}
+
+enemy{
+  name = "zola_9",
+  layer = 0,
+  x = 320,
+  y = 581,
+  direction = 3,
+  breed = "zola",
+  treasure_name = "random_enemy",
+}
+
+tile{
+  layer = 1,
+  x = 512,
+  y = 360,
+  width = 32,
+  height = 24,
+  pattern = "1795",
 }
 
 tile{
@@ -3749,5 +4033,32 @@ tile{
   width = 8,
   height = 24,
   pattern = "1494",
+}
+
+tile{
+  layer = 2,
+  x = 96,
+  y = 192,
+  width = 32,
+  height = 16,
+  pattern = "1575",
+}
+
+tile{
+  layer = 2,
+  x = 376,
+  y = 288,
+  width = 32,
+  height = 16,
+  pattern = "1575",
+}
+
+tile{
+  layer = 2,
+  x = 184,
+  y = 360,
+  width = 32,
+  height = 16,
+  pattern = "1575",
 }
 

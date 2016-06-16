@@ -1772,37 +1772,67 @@ enemy{
   y = 213,
   direction = 3,
   breed = "zola",
-  treasure_name = "crystal",
+  treasure_name = "random_enemy",
 }
 
 enemy{
   name = "zola_2",
   layer = 0,
-  x = 568,
-  y = 133,
+  x = 504,
+  y = 237,
   direction = 3,
   breed = "zola",
-  treasure_name = "crystal",
+  treasure_name = "random_enemy",
 }
 
 enemy{
   name = "zola_3",
   layer = 0,
-  x = 328,
-  y = 85,
+  x = 552,
+  y = 173,
   direction = 3,
   breed = "zola",
-  treasure_name = "crystal",
+  treasure_name = "random_enemy",
 }
 
 enemy{
   name = "zola_4",
   layer = 0,
-  x = 568,
-  y = 237,
+  x = 488,
+  y = 93,
   direction = 3,
   breed = "zola",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "zola_5",
+  layer = 0,
+  x = 392,
+  y = 141,
+  direction = 3,
+  breed = "zola",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "zola_6",
+  layer = 0,
+  x = 632,
+  y = 157,
+  direction = 3,
+  breed = "zola",
+  treasure_name = "random_enemy",
+}
+
+chest{
+  name = "chest_crystal",
+  layer = 0,
+  x = 640,
+  y = 125,
   treasure_name = "crystal",
+  treasure_savegame_variable = "zola_camp_crystal",
+  sprite = "entities/chest",
 }
 
 tile{
