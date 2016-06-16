@@ -3856,6 +3856,18 @@ have room for your pity party!
 }
 
 dialog{
+  id = "deku.0.grove_temple",
+  text = [[
+Feeling the heft of your wallet
+already? Well then buy something from
+me! $0I've also heard rumors of a game
+in Hyrule Castle Town that rewards a
+bigger wallet. Sounds like you may
+want to check that out.
+]]
+}
+
+dialog{
   id = "deku.0.lost_woods",
   skip = "current",
   text = [[
