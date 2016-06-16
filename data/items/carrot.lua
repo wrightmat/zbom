@@ -6,7 +6,7 @@ function item:on_created()
   self:set_can_disappear(false)
 end
 
--- Obtaining an apple
+-- Obtaining a carrot.
 function item:on_obtaining(variant, savegame_variable)
   local carrot_counter = self:get_game():get_item("carrot_counter")
   if carrot_counter:get_variant() == 0 then

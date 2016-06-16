@@ -17,9 +17,9 @@ function item:on_using()
   else
     sol.audio.play_sound("chewing")
     self:remove_amount(1)
-    game:add_life(8)
+    game:add_life(12) -- 3 hearts
     game:set_value("i1026", game:get_value("i1026")+1)
-    local amount = game:get_value("i1026")*20
+    local amount = 300-game:get_value("i1026")*30
     game:add_stamina(amount)
   end
   self:set_finished()

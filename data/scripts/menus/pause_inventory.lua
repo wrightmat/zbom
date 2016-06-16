@@ -10,7 +10,7 @@ local item_names = {
   "boots",
   "bottle_1",
 
-  "pumpkin_counter",
+  "carrot_counter",
   "hookshot",
   "cane",
   "feather",
@@ -18,7 +18,7 @@ local item_names = {
   "hammer",
   "bottle_2",
 
-  "carrot_counter",
+  "pumpkin_counter",
   "stick_counter",
   "jade_counter",
   "book_mudora",

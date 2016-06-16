@@ -1,4 +1,5 @@
 local item = ...
+local game = item:get_game()
 
 function item:on_created()
   self:set_savegame_variable("i1844")
@@ -8,17 +9,18 @@ function item:on_created()
 end
 
 function item:on_using()
-  if self:get_game():get_value("i1026")==nil then self:get_game():set_value("i1026", 0) end
+  if game:get_value("i1026") == nil then game:set_value("i1026", 0) end
+  if game:get_value("i1026") <= 0 then game:set_value("i1026", 0) end
 
-  if self:get_amount() == 0 or self:get_game():get_max_stamina() == 0 then
+  if self:get_amount() == 0 or game:get_max_stamina() == 0 then
     sol.audio.play_sound("wrong")
   else
     sol.audio.play_sound("chewing")
     self:remove_amount(1)
-    self:get_game():add_life(12)
-    self:get_game():set_value("i1026", self:get_game():get_value("i1026")+1)
-    local amount = 500-(self:get_game():get_value("i1026")*50)
-    self:get_game():add_stamina(amount)
+    game:add_life(20) -- 5 hearts
+    game:set_value("i1026", game:get_value("i1026")+1)
+    local amount = 500-(game:get_value("i1026")*50)
+    game:add_stamina(amount)
   end
   self:set_finished()
 end
