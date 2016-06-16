@@ -40,9 +40,9 @@ local score_x = 0
 local score_y = 0
 
 function map:on_started(destination)
-  chest_1.on_empty = open_chest
-  chest_2.on_empty = open_chest
-  chest_3.on_empty = open_chest
+  chest_1.on_opened = open_chest
+  chest_2.on_opened = open_chest
+  chest_3.on_opened = open_chest
   for npc, v in pairs(slots_slots) do
     v.sprite = npc:get_sprite()
     v.sprite:set_frame(v.initial_frame)

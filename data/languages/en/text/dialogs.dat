@@ -717,8 +717,8 @@ dialog{
   skip = "current",
   text = [[
 Deep orange carrots can be found in
-the ground throughout Hyrule. Eat one
-to revitalize yourself!
+the ground throughout Hyrule. Eat
+one to revitalize yourself!
 ]]
 }
 
@@ -728,8 +728,8 @@ dialog{
   skip = "current",
   text = [[
 Deep orange carrots can be found in
-the ground throughout Hyrule. Eat one
-to revitalize yourself!
+the ground throughout Hyrule. Eat
+one to revitalize yourself!
 ]]
 }
 
@@ -880,9 +880,9 @@ dialog{
   icon = "17",
   skip = "current",
   text = [[
-Bright orange pumpkins grow only in the
-south of Hyrule. Eat one to revitalize
-yourself, or sell them to someone else!
+Bright orange pumpkins grow only
+in the south of Hyrule. Eat one
+to revitalize yourself!
 ]]
 }
 
@@ -891,9 +891,9 @@ dialog{
   icon = "17",
   skip = "current",
   text = [[
-Bright orange pumpkins grow only in the
-south of Hyrule. Eat one to revitalize
-yourself, or sell them to someone else!
+Bright orange pumpkins grow only
+in the south of Hyrule. Eat one
+to revitalize yourself!
 ]]
 }
 
@@ -3979,7 +3979,7 @@ got that neat sword was actually part of
 the huge sewer system running under our
 feet! Anyway, you should be able to
 find another sewer access just east
-of $bHyrule Castle Town$w  .
+of $bHyrule Castle Town$w   .
 ]]
 }
 
@@ -4010,7 +4010,7 @@ dialog{
   skip = "current",
   text = [[
 You can find valuable stuff like
-$rMystic Jade$w  and$rDeku Sticks$w  scattered
+$rMystic Jade$w  and$rDeku Sticks$w   scattered
 around the forest sometimes.
 ]]
 }
@@ -7491,7 +7491,7 @@ dialog{
   id = "monkey.1.game_right",
   text = [[
 Aww! You found me! I guess you can have
-this $cdingy paper$w back -
+this $cdingy paper$w  back -
 we won't need it where we're going!
 ]]
 }
@@ -8873,8 +8873,9 @@ dialog{
   text = [[
 That's exactly what I need!
 Thank you so much.
+
 I'll get that poured into my basin and
-I'll be ready to work on whatever you need!
+be ready to work on whatever you need!
 ]]
 }
 
@@ -8890,12 +8891,35 @@ Just to chat
 }
 
 dialog{
-  id = "rudy.4.cave_chat",
+  id = "rudy.4.cave_chat_1",
   skip = "current",
   text = [[
 Hmm... never been too good with
 small talk. $0
 Seen any good  $r metal ore$w recently?
+]]
+}
+
+dialog{
+  id = "rudy.4.cave_chat_2",
+  skip = "current",
+  text = [[
+I once heard that there's a vast realm
+under all of Hyrule. Seems too good
+to be true to me!$0
+Although...$0 if a place like that
+did exist, it would be rife with ore!
+]]
+}
+
+dialog{
+  id = "rudy.4.cave_chat_3",
+  skip = "current",
+  text = [[
+The adventurer that told me about
+the underground realm said the name
+started with "Sub" or something.
+I don't remember...
 ]]
 }
 

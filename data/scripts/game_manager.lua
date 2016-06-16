@@ -39,6 +39,14 @@ function game:on_finished()
   self.hud:quit()
   self:quit_dialog_box()
   camera = nil
+  -- Print amount of time played
+  local time = game:get_value("time_played")
+  local hours = math.floor(time / 3600)
+  local minutes = math.floor((time % 3600) / 60)
+  local seconds = math.floor(minutes % 60)
+  print(hours)
+  print(minutes)
+  print(seconds)
 end
 
 -- This event is called when a new map has just become active.
