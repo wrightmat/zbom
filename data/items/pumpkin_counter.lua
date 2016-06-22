@@ -20,6 +20,7 @@ function item:on_using()
     game:add_life(20) -- 5 hearts
     game:set_value("i1026", game:get_value("i1026")+1)
     local amount = 500-(game:get_value("i1026")*50)
+    if amount <= 50 then game:start_dialog("_exhausted_sleep") end
     game:add_stamina(amount)
   end
   self:set_finished()

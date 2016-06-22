@@ -29,7 +29,7 @@ function map:on_started(destination)
       game:set_value("b2022", true)
       game:set_value("b2020", false) -- take Odd Mushroom...
       game:set_value("i2021", 0) -- and get rid of potion counter.
-      quest_trading_potion:remove()
+      if quest_trading_potion ~= nil then quest_trading_potion:remove() end
     end)
   elseif destination == main_entrance_shop and game:get_value("i2015") >= 10 and game:get_value("i2015") <= 19 then
     game:start_dialog("shopkeep.potion", function()

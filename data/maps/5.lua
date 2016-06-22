@@ -121,18 +121,19 @@ function npc_galen:on_interaction()
 end
 
 function npc_osgor:on_interaction()
-  game:set_dialog_style("default")
   game:start_dialog("osgor.0.house")
 end
 
 function npc_gor_larin:on_interaction()
-  game:set_dialog_style("default")
-    sol.audio.play_sound("goron_happy")
-  game:start_dialog("larin.1.house")
+  sol.audio.play_sound("goron_happy")
+  if game:get_value("b1117") then
+    game:start_dialog("larin.2.house")
+  else
+    game:start_dialog("larin.1.house")
+  end
 end
 
 function npc_goron_smith:on_interaction()
-  game:set_dialog_style("default")
   if not game:has_item("bomb_bag") then
     sol.audio.play_sound("goron_question")
     game:start_dialog("goron_smith.0.shop", function(answer)
@@ -164,7 +165,6 @@ function npc_goron_smith:on_interaction()
 end
 
 function npc_goron_trading:on_interaction()
-  game:set_dialog_style("default")
   if game:get_value("b2028") then
     sol.audio.play_sound("goron_question")
     game:start_dialog("goron.0.trading", function(answer)
@@ -209,7 +209,6 @@ function inn_bed:on_activated()
 end
 
 function innkeeper_sensor:on_interaction()
-  game:set_dialog_style("default")
   sol.audio.play_sound("goron_question")
   game:start_dialog("goron.0.inn", function(answer)
     if answer == 1 then
@@ -236,12 +235,10 @@ function innkeeper_sensor:on_interaction()
   end)
 end
 function npc_goron_innkeep:on_interaction()
-  game:set_dialog_style("default")
   innkeeper_sensor:on_interaction()
 end
 
 function npc_shopkeeper:on_interaction()
-  game:set_dialog_style("default")
   if math.random(4) == 1 then
     -- Randomly mention the bigger wallet
     game:start_dialog("shopkeep.1")

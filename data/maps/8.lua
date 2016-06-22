@@ -36,7 +36,7 @@ function map:on_started(destination)
     end
   end
   -- Mr. Write will be enabled after you've collected all the books. Will reward you with treasures (magic crystal mostly).
-  if not game:get_value("i1615") >= 13 then
+  if game:get_value("i1615") < 13 then
     npc_mr_write:set_enabled(false)
   end
 end

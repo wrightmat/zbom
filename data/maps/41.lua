@@ -5,6 +5,8 @@ local game = map:get_game()
 -- Outside World E9 (Lon Lon Ranch) --
 --------------------------------------
 
+if game:get_value("i1929")==nil then game:set_value("i1929", 0) end --Marryn
+
 function map:on_started(destination)
   npc_marryn:get_sprite():set_animation("singing")
   local entrance_names = { "ranch" }
@@ -29,7 +31,8 @@ end
 function npc_marryn:on_interaction()
   local first_volume = 100
   local second_volume = 1
-  game:start_dialog("marryn.0.ranch", function()
+  if game:get_value("i1929") > 1 then game:set_value("i1929, 1) end
+  game:start_dialog("marryn."..game:get_value("i1929")..".ranch", function()
     sol.timer.start(map, 50, function()
       sol.audio.set_music_volume(first_volume)
       first_volume = first_volume - 1  -- Fade music out by decreasing volume slowly (this is for the ranch).
@@ -53,6 +56,7 @@ function npc_marryn:on_interaction()
       second_volume = second_volume + 1  -- Fade music in by increasing volume slowly (this is for the ballad).
       if second_volume >= 100 then return false else return true end
     end)
+    game:set_value("i1929", game:get_value("i1929")+1)
   end)
 end
 

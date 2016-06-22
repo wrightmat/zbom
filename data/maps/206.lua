@@ -23,11 +23,15 @@ function map:on_started(destination)
     water_room1_2:set_enabled(false)
     to_outside:set_destination_name("from_lair_finished")
     grate:set_enabled(false)
+    to_basement:set_enabled(true)
   else
     npc_zora:set_enabled(false)
   end
   if not game:get_value("b1126") then chest_compass:set_enabled(false) end
-  if game:get_value("b1112") then grate:set_enabled(false) end
+  if game:get_value("b1112") then
+    grate:set_enabled(false)
+    to_basement:set_enabled(true)
+  end
 end
 
 function sensor_miniboss:on_activated()

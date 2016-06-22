@@ -327,8 +327,8 @@ local function initialize_game()
 
   function game_metatable:remove_stamina(value)
     stamina = self:get_value("i1024") - value
+    if stamina < 0 then stamina = 0 end
     if value >= 0 then
-      if stamina < 0 then stamina = 0 end
       return self:set_value("i1024", stamina)
     end
   end

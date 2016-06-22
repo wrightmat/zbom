@@ -25,10 +25,10 @@ animation{
   name = "hurt",
   src_image = "enemies/aquadraco.png",
   directions = {
-    { x = 120, y = 0, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 37 },
-    { x = 120, y = 0, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 37 },
-    { x = 120, y = 0, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 37 },
-    { x = 120, y = 0, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 37 },
+    { x = 80, y = 0, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 37, num_frames = 2 },
+    { x = 80, y = 0, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 37, num_frames = 2 },
+    { x = 80, y = 0, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 37, num_frames = 2 },
+    { x = 80, y = 0, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 37, num_frames = 2 },
   },
 }
 animation{

@@ -17750,6 +17750,46 @@ tile{
   pattern = "53",
 }
 
+wall{
+  layer = 0,
+  x = 400,
+  y = 1088,
+  width = 32,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+sensor{
+  name = "dungeon_room_7c_",
+  layer = 0,
+  x = 1696,
+  y = 1157,
+  width = 16,
+  height = 48,
+}
+
+sensor{
+  name = "dungeon_room_7b_",
+  layer = 0,
+  x = 1472,
+  y = 1093,
+  width = 16,
+  height = 48,
+}
+
+sensor{
+  name = "dungeon_room_7a_",
+  layer = 0,
+  x = 1560,
+  y = 1029,
+  width = 64,
+  height = 16,
+}
+
 chest{
   name = "chest_key_3",
   layer = 0,
@@ -19921,15 +19961,6 @@ sensor{
   y = 837,
   width = 16,
   height = 48,
-}
-
-sensor{
-  name = "dungeon_room_7_",
-  layer = 0,
-  x = 1560,
-  y = 1037,
-  width = 64,
-  height = 16,
 }
 
 sensor{

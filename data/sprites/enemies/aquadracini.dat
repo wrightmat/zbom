@@ -10,7 +10,16 @@ animation{
     { x = 192, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
   },
 }
-
+animation{
+  name = "hurt",
+  src_image = "enemies/aquadraco.png",
+  directions = {
+    { x = 304, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 272, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 288, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 256, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
 animation{
   name = "immobilized",
   src_image = "enemies/aquadraco.png",
@@ -21,7 +30,6 @@ animation{
     { x = 192, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
-
 animation{
   name = "shaking",
   src_image = "enemies/aquadraco.png",
@@ -32,16 +40,5 @@ animation{
     { x = 224, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
     { x = 192, y = 56, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
     { x = 192, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
-  },
-}
-
-animation{
-  name = "hurt",
-  src_image = "enemies/aquadraco.png",
-  directions = {
-    { x = 224, y = 56, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 224, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 192, y = 56, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 192, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }

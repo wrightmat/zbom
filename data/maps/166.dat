@@ -3,9 +3,9 @@ properties{
   y = 0,
   width = 352,
   height = 368,
-  world = "inside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "inside_world",
   tileset = "1",
   music = "fairy",
 }
@@ -1185,7 +1185,7 @@ teletransporter{
 wall{
   layer = 0,
   x = 104,
-  y = 136,
+  y = 152,
   width = 144,
   height = 8,
   stops_hero = true,

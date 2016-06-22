@@ -135,6 +135,16 @@ you sleep or eat something!
 }
 
 dialog{
+  id = "_exhausted_sleep",
+  icon = "98",
+  text = [[
+Food is having less and less of an
+effect on your exhaustion. Try sleeping
+for a night and see if that helps.
+]]
+}
+
+dialog{
   id = "_goron_statue",
   skip = "current",
   text = [[
@@ -2067,7 +2077,18 @@ dialog{
   icon = "30",
   skip = "current",
   text = [[
-You found $r Subrosian Ore$w! It's
+You found $r Subrosian Ore$w! It's a
+strong metallic compound from
+the deepest depths of the earth!
+]]
+}
+
+dialog{
+  id = "_treasure.ore.2",
+  icon = "30",
+  skip = "current",
+  text = [[
+You found $r Subrosian Ore$w! It's a
 strong metallic compound from
 the deepest depths of the earth!
 ]]
@@ -2546,7 +2567,7 @@ dialog{
   icon = "70",
   skip = "current",
   text = [[
-You got an $r expanded World Map$w!$0
+You got an $r expanded World Map$w  !$0
 Now you can explore the Subrosian
 underworld without fear!
 ]]
@@ -3216,7 +3237,7 @@ I'm sorry, but there's no one in
 the office currently. I can make an
 appointment for you if you'd like,
 or you can try to talk to the Elders
-in person at their $b Castle chambers$w.
+in person at their  $b Castle chambers$w.
 ]]
 }
 
@@ -3831,10 +3852,10 @@ dialog{
   skip = "current",
   text = [[
 You're a little stumped, huh?
-Don't know where to go next?
+Don't know where to go next?$0
 Well I'll tell you an interesting
 story - I once heard that there was
-treasure BENEATH   $bLake Hylia$w!$0
+treasure BENEATH   $b Lake Hylia$w!$0
 Can you imagine that? Treasure under
 a lake? Sounds like something you
 would love to check out, right?
@@ -4461,8 +4482,8 @@ dialog{
   skip = "current",
   text = [[
 Poisoned trees you say? Well, I can't
-allow that to happen so near to me and not
-take a look, now can I? Show me where they
+allow that to happen so nearby and not
+take a look, can I? Show me where they
 are, and I'll fix them right up for sure!
 ]]
 }
@@ -4864,8 +4885,9 @@ dialog{
 If you head north of the castle, you'll
 hit the bustling city of  $b Kakariko$w. If
 you continue north and west past that,
-you'll find my home of  $b Snowpeak$w. Surely
-not bustling, but a nice home anyhow.
+you'll find my home of  $b  Snowpeak$w.
+Surely not bustling, but a nice home
+anyhow.
 ]]
 }
 
@@ -5191,7 +5213,7 @@ to? Surely you've seen the poisoned state
 my great woods are in? Well, it's
 because I've been cursed!$0
 If you can find a large amount of
-treasure known as  $r Mystic Jade$w, the
+treasure known as  $r  Mystic Jade$w, the
 curse should be able to be lifted.
 Please help me, hero!
 ]]
@@ -5206,7 +5228,7 @@ Wait... you don't know what I'm referring
 to? Surely you've seen the troubled state
 my lake is in!
 If you can find a large amount of
-treasure known as  $r Goddess Plume$w, the
+treasure known as  $r  Goddess Plume$w, the
 trouble should be able to be lifted.
 Please help me, hero!
 ]]
@@ -5221,7 +5243,7 @@ Wait... you don't know what I'm referring
 to? Surely you've seen the evil that
 tramples my mountain!
 If you can find a large amount of
-treasure known as  $r Goron Amber$w, the
+treasure known as  $r  Goron Amber$w, the
 evil should be able to be lifted.
 Please help me, hero!
 ]]
@@ -5236,7 +5258,7 @@ Wait... you don't know what I'm referring
 to? Surely you've seen the confused state
 my lands are in!
 If you can find a large amount of
-treasure known as  $r Magic Crystal$w, the
+treasure known as  $r  Magic Crystal$w, the
 confusion should be able to be lifted.
 Please help me, hero!
 ]]
@@ -5251,7 +5273,7 @@ Wait... you don't know what I'm referring
 to? Surely you've seen the desolate state
 my lands are in!
 If you can find a large amount of
-treasure known as  $r Alchemy Stone$w, the
+treasure known as  $r  Alchemy Stone$w, the
 desolation should be able to be lifted.
 Please help me, hero!
 ]]
@@ -5266,7 +5288,7 @@ Wait... you don't know what I'm referring
 to? Surely you've seen the troubled state 
 my lands are in!
 If you can find a large amount of
-treasure known as  $r Subrosian Ore$w, the
+treasure known as  $r  Subrosian Ore$w, the
 trouble should be able to be lifted.
 Please help me, hero!
 ]]
@@ -6230,7 +6252,7 @@ many pieces. Then before the     $m dark
 ones$w could react, he scattered the
 pieces throughout the land. While
 Kasuto was engrossed in his task, the
-$mmagic clan$w cast several spells and
+$mmagic clan$w  cast several spells and
 killed the old man.
 Now it's rumored that the    $m tribe$wis
 secretly seeking out those pieces of
@@ -6473,8 +6495,8 @@ dialog{
   id = "juba.1.lakebed",
   skip = "current",
   text = [[
-The great $b Lakebed Temple$w can be entered
-by $g Zora$w only. It helps that there are
+The great $b Lakebed Temple$w  can be entered
+by $gZora$w only. It helps that there are
 only two ways there - with our great
 relic, the $r Zora Flippers$w, and by draining
 the entirety of  $b Lake Hylia$w. And who
@@ -6780,7 +6802,7 @@ dialog{
   id = "larin.1.house",
   skip = "current",
   text = [[
-After the disapperance of $g Elder
+After the disapperance of    $g Elder
 Zelda$w, the Council decided it would
 be best to disband for now. So I get
 to spend some quality time with my
@@ -6795,6 +6817,16 @@ dialog{
 Brother! You've saved my entire people
 and the leader of our council! We can't
 possibly thank you enough!
+]]
+}
+
+dialog{
+  id = "larin.2.house",
+  text = [[
+Not sure where to go next? Some of my
+council Brothers remained in Hyrule
+Castle Town and may be able to assist
+you from the council office.
 ]]
 }
 
@@ -7372,6 +7404,16 @@ me sing for a while.
 }
 
 dialog{
+  id = "marryn.1.ranch",
+  text = [[
+Sometimes when I'm not singing, I can
+hear songs emanating from a cave just
+south of here. I don't know who's
+singing, but I know it's beautiful!
+]]
+}
+
+dialog{
   id = "mayor.0.kasuto",
   skip = "current",
   text = [[
@@ -7785,8 +7827,8 @@ dialog{
 $v! $0. $0. $0.
 The waters have been cleansed, but now
 Hyrule's soul of cold requires your help.
-$bSnowpeak$w  and the $g Anouki people$w lie on the
-far end of the world, in the north-west
+$bSnowpeak$w   and the $g Anouki people$w lie on
+the far end of the world, in the north-west
 edge. They may be able to lead you to
 your next prize.$0
 ]]
@@ -9244,7 +9286,7 @@ almost uncountable rupees!
 
 dialog{
   id = "shop.world_map",
-  icon = "50",
+  icon = "70",
   skip = "current",
   text = [[
 A map of the Subrosian
@@ -10497,7 +10539,7 @@ dialog{
   id = "ulo.2.council_zelda",
   skip = "current",
   text = [[
-What has happened to   $g  Elder Zelda$w?
+What has happened to  $g   Elder Zelda$w?
 $v, you must track her down and
 return her to the council!
 ]]
