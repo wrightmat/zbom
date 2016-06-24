@@ -7,7 +7,7 @@ function item:on_created()
 end
 
 function item:on_using()
-  local magic_needed = 7
+  local magic_needed = 6
   local game = self:get_game()
   local map = self:get_map()
   if game:get_magic() >= magic_needed then

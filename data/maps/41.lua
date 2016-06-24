@@ -31,29 +31,29 @@ end
 function npc_marryn:on_interaction()
   local first_volume = 100
   local second_volume = 1
-  if game:get_value("i1929") > 1 then game:set_value("i1929, 1) end
+  if game:get_value("i1929") > 1 then game:set_value("i1929", 0) end
   game:start_dialog("marryn."..game:get_value("i1929")..".ranch", function()
-    sol.timer.start(map, 50, function()
+    sol.timer.start(map, 20, function()
       sol.audio.set_music_volume(first_volume)
-      first_volume = first_volume - 1  -- Fade music out by decreasing volume slowly (this is for the ranch).
-      if first_volume == 1 then return false else return true end
+      first_volume = first_volume - 2  -- Fade music out by decreasing volume slowly (this is for the ranch).
+      if first_volume <= 1 then return false else return true end
     end)
     sol.audio.play_music("ballad", function()
-      sol.timer.start(map, 50, function()
+      sol.timer.start(map, 20, function()
         sol.audio.set_music_volume(first_volume)
-        first_volume = first_volume - 1  -- Fade music out by decreasing volume slowly (this is for the ballad).
-        if first_volume == 1 then return false else return true end
+        first_volume = first_volume - 2  -- Fade music out by decreasing volume slowly (this is for the ballad).
+        if first_volume <= 1 then return false else return true end
       end)
       sol.audio.play_music("ranch")
-      sol.timer.start(map, 50, function()
+      sol.timer.start(map, 20, function()
         sol.audio.set_music_volume(second_volume)
-        second_volume = second_volume + 1  -- Fade music in by increasing volume slowly (this is for the ranch).
+        second_volume = second_volume + 2  -- Fade music in by increasing volume slowly (this is for the ranch).
         if second_volume >= 100 then return false else return true end
       end)
     end)
-    sol.timer.start(map, 50, function()
+    sol.timer.start(map, 20, function()
       sol.audio.set_music_volume(second_volume)
-      second_volume = second_volume + 1  -- Fade music in by increasing volume slowly (this is for the ballad).
+      second_volume = second_volume + 2  -- Fade music in by increasing volume slowly (this is for the ballad).
       if second_volume >= 100 then return false else return true end
     end)
     game:set_value("i1929", game:get_value("i1929")+1)

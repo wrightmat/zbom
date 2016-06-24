@@ -61,10 +61,10 @@ function entity:on_created()
       self:remove()
     elseif other:get_type() == "fire" then
       sol.audio.play_sound("ice_melt")
-      self:remove()
+      self:remove_explode()
     elseif other:get_type() == "explosion" then
       sol.audio.play_sound("ice_melt")
-      self:remove()
+      self:remove_explode()
     else
       block_on_switch = false
     end
@@ -79,7 +79,7 @@ function entity:on_position_changed(x, y, layer)
     if e:get_type() == "dynamic_tile" then
       if self:overlaps(e) then --if block overlaps dynamic tile
         if map:get_ground(e:get_position()) == "lava" then
-          self:remove()
+          self:remove_explode()
 	  if map:get_hero():get_direction() == 0 then
             lava_crust = map:create_custom_entity({ x=x+8, y=y-16, layer=layer, width=32, height=32, direction=0 })
 	  elseif map:get_hero():get_direction() == 1 then
@@ -124,6 +124,7 @@ function entity:on_position_changed(x, y, layer)
   end
 end
 
-function entity:on_removed()
+function entity:remove_explode()
   self:get_sprite():set_animation("destroy")
+  sol.timer.start(self, 2000, function() self:remove() end)
 end

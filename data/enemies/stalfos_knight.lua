@@ -94,6 +94,7 @@ function enemy:unhide()
 end
 
 function enemy:go_hero()
+  vulnerable = false
   self:get_sprite():set_animation("walking")
   local m = sol.movement.create("target")
   m:set_speed(32)
@@ -113,17 +114,18 @@ function enemy:on_custom_attack_received(attack, sprite)
       sol.audio.play_sound("enemy_awake")
       self:get_sprite():set_animation("immobilized")
       self:set_attack_consequence("explosion", 1)
-      attack_timer = sol.timer.start(self, 10000, function()
+      attack_timer = sol.timer.start(self, 15000, function()
         vulnerable = false
         sol.audio.play_sound("hero_pushes")
         self:set_attack_consequence("explosion", "ignored")
         self:set_attack_consequence("sword", "custom")
-        self:get_sprite():set_animation("shaking")
+        self:get_sprite():set_animation("hurt")
+        sol.timer.start(self, 1000, function() self:get_sprite():set_animation("shaking") end)
         hit_counter = 0
       end)
     end
   end
-
+  
   function sprite:on_animation_finished(animation)
     if animation == "shaking" then
       vulnerable = false

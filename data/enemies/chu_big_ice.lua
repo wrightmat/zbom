@@ -126,7 +126,7 @@ function enemy:check_hero()
 
     if near_hero then
       if math.random(2) == 1 then
-	self:create_enemy{ name = "miniboss_chuchu", breed = "chuchu_blue", x = -16, y = -16 }
+	self:create_enemy{ name = "miniboss_chuchu", breed = "chuchu_white", x = -16, y = -16 }
       else
         self:go_hero()
       end

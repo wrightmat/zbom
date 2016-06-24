@@ -5178,8 +5178,8 @@ enemy{
   x = 488,
   y = 1333,
   direction = 3,
-  breed = "chuchu_blue",
-  treasure_name = "random",
+  breed = "chuchu_white",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5188,8 +5188,8 @@ enemy{
   x = 592,
   y = 1365,
   direction = 3,
-  breed = "chuchu_blue",
-  treasure_name = "random",
+  breed = "chuchu_white",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5198,8 +5198,8 @@ enemy{
   x = 672,
   y = 1325,
   direction = 3,
-  breed = "chuchu_blue",
-  treasure_name = "random",
+  breed = "chuchu_white",
+  treasure_name = "random_enemy",
 }
 
 destination{
@@ -5580,7 +5580,7 @@ enemy{
   y = 1269,
   direction = 3,
   breed = "skeletor",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5590,7 +5590,7 @@ enemy{
   y = 1429,
   direction = 3,
   breed = "skeletor",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5600,7 +5600,7 @@ enemy{
   y = 1157,
   direction = 3,
   breed = "skeletor",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5619,7 +5619,7 @@ enemy{
   y = 573,
   direction = 3,
   breed = "skeletor",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5629,7 +5629,7 @@ enemy{
   y = 677,
   direction = 3,
   breed = "skeletor",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5639,7 +5639,7 @@ enemy{
   y = 581,
   direction = 3,
   breed = "skeletor",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5649,7 +5649,7 @@ enemy{
   y = 565,
   direction = 3,
   breed = "skeletor",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5659,7 +5659,7 @@ enemy{
   y = 677,
   direction = 3,
   breed = "skeletor",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5668,8 +5668,8 @@ enemy{
   x = 512,
   y = 685,
   direction = 3,
-  breed = "chuchu_blue",
-  treasure_name = "random",
+  breed = "chuchu_white",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5678,8 +5678,8 @@ enemy{
   x = 560,
   y = 573,
   direction = 3,
-  breed = "chuchu_blue",
-  treasure_name = "random",
+  breed = "chuchu_white",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5688,8 +5688,8 @@ enemy{
   x = 616,
   y = 677,
   direction = 3,
-  breed = "chuchu_blue",
-  treasure_name = "random",
+  breed = "chuchu_white",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5698,8 +5698,8 @@ enemy{
   x = 784,
   y = 381,
   direction = 3,
-  breed = "chuchu_blue",
-  treasure_name = "random",
+  breed = "chuchu_white",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5708,8 +5708,8 @@ enemy{
   x = 928,
   y = 277,
   direction = 3,
-  breed = "chuchu_blue",
-  treasure_name = "random",
+  breed = "chuchu_white",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5719,7 +5719,7 @@ enemy{
   y = 373,
   direction = 3,
   breed = "skeletor",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5729,7 +5729,7 @@ enemy{
   y = 277,
   direction = 3,
   breed = "skeletor",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -6277,7 +6277,7 @@ destructible{
   layer = 0,
   x = 112,
   y = 1557,
-  treasure_name = "apple",
+  treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
 }
@@ -6286,7 +6286,7 @@ destructible{
   layer = 0,
   x = 128,
   y = 1557,
-  treasure_name = "heart",
+  treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
 }

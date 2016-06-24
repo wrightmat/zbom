@@ -1333,7 +1333,7 @@ dialog{
   icon = "54",
   skip = "current",
   text = [[
-You received a  $r Bomb Bag$w!$0
+You received a  $r Bomb Bag$w !$0
 It can hold 10 Bombs.
 ]]
 }
@@ -1343,7 +1343,7 @@ dialog{
   icon = "55",
   skip = "current",
   text = [[
-You got a $r Large Bomb Bag$w!$0
+You got a $r Large Bomb Bag$w  !$0
 It holds 30 Bombs.
 ]]
 }
@@ -1353,7 +1353,7 @@ dialog{
   icon = "56",
   skip = "current",
   text = [[
-You got a $r Huge Bomb Bag$w!$0
+You got a $r Huge Bomb Bag$w  !$0
 It holds 60 Bombs!
 ]]
 }
@@ -2287,7 +2287,7 @@ dialog{
   icon = "64",
   skip = "current",
   text = [[
-You received a strong  $r Hylian
+You received a strong   $r Hylian
 Shield$w!$0 It's made of nearly
 impenetrable Hylian metal.
 ]]
@@ -2649,7 +2649,7 @@ dialog{
   id = "anouki_3.0.snowpeak",
   skip = "current",
   text = [[
-Cave? Yeah, $b Snowpeak Caverns$w!
+Cave? Yeah,  $b Snowpeak Caverns$w  !
 It's the best.$0 Nothing but cold and
 dark as far as the eye can see.
 ]]
@@ -2901,8 +2901,8 @@ Thank you so much for your kindness!
 You have made me very happy. So happy in
 fact that I will give you my most prized
 posession. This Moon Tear is incredibly
-rare and only known to astronomers like me.
-Please cherish it as I have.
+rare and only known to astronomers like
+me. $0Please cherish it as I have.
 ]]
 }
 
@@ -7408,7 +7408,7 @@ dialog{
   text = [[
 Sometimes when I'm not singing, I can
 hear songs emanating from a cave just
-south of here. I don't know who's
+south-west of here. I don't know who's
 singing, but I know it's beautiful!
 ]]
 }
@@ -7840,7 +7840,7 @@ dialog{
   text = [[
 $v! $0. $0. $0.
 Did you find the rope city on your way
-to $bSnowpeak$w ? In the northern center of
+to $bSnowpeak$w  ? In the northern center of
 Hyrule lies $bSepten Heights$w , a relatively
 new addition to our landscape. A great
 tower has been built by the people there,
@@ -8663,7 +8663,7 @@ in a snowy peak and one in some ruins.
 dialog{
   id = "rito_5.1.septen",
   text = [[
-Doens't our Tower of Winds just
+Doesn't our Tower of Winds just
 look amazing?
 ]]
 }

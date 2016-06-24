@@ -13,6 +13,60 @@ properties{
 
 tile{
   layer = 0,
+  x = 760,
+  y = 1320,
+  width = 208,
+  height = 320,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
+  x = 760,
+  y = 1328,
+  width = 8,
+  height = 304,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 1288,
+  width = 16,
+  height = 352,
+  pattern = "524",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 1368,
+  width = 240,
+  height = 48,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 1368,
+  width = 224,
+  height = 8,
+  pattern = "65",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 1408,
+  width = 224,
+  height = 8,
+  pattern = "66",
+}
+
+tile{
+  layer = 0,
   x = 264,
   y = 56,
   width = 48,
@@ -329,15 +383,6 @@ tile{
 tile{
   layer = 0,
   x = 328,
-  y = 1288,
-  width = 16,
-  height = 352,
-  pattern = "524",
-}
-
-tile{
-  layer = 0,
-  x = 328,
   y = 1416,
   width = 8,
   height = 224,
@@ -360,15 +405,6 @@ tile{
   width = 8,
   height = 48,
   pattern = "21",
-}
-
-tile{
-  layer = 0,
-  x = 760,
-  y = 1320,
-  width = 208,
-  height = 320,
-  pattern = "22",
 }
 
 tile{
@@ -495,15 +531,6 @@ tile{
   width = 320,
   height = 16,
   pattern = "594",
-}
-
-tile{
-  layer = 0,
-  x = 104,
-  y = 1368,
-  width = 240,
-  height = 48,
-  pattern = "22",
 }
 
 tile{
@@ -5522,16 +5549,7 @@ tile{
 tile{
   layer = 0,
   x = 240,
-  y = 1368,
-  width = 16,
-  height = 16,
-  pattern = "604",
-}
-
-tile{
-  layer = 0,
-  x = 240,
-  y = 1400,
+  y = 1384,
   width = 16,
   height = 16,
   pattern = "604",
@@ -5593,15 +5611,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 104,
-  y = 1368,
-  width = 224,
-  height = 8,
-  pattern = "65",
-}
-
-tile{
-  layer = 0,
   x = 96,
   y = 1368,
   width = 8,
@@ -5616,15 +5625,6 @@ tile{
   width = 8,
   height = 288,
   pattern = "64",
-}
-
-tile{
-  layer = 0,
-  x = 104,
-  y = 1408,
-  width = 224,
-  height = 8,
-  pattern = "66",
 }
 
 tile{
@@ -5688,15 +5688,6 @@ tile{
   width = 192,
   height = 8,
   pattern = "66",
-}
-
-tile{
-  layer = 0,
-  x = 760,
-  y = 1328,
-  width = 8,
-  height = 304,
-  pattern = "63",
 }
 
 tile{
@@ -7856,16 +7847,7 @@ custom_entity{
   name = "hook_4",
   layer = 0,
   x = 240,
-  y = 1381,
-  direction = 0,
-  model = "hook",
-}
-
-custom_entity{
-  name = "hook_5",
-  layer = 0,
-  x = 256,
-  y = 1413,
+  y = 1397,
   direction = 0,
   model = "hook",
 }
@@ -7880,19 +7862,10 @@ sensor{
 }
 
 custom_entity{
-  name = "hook_6",
-  layer = 0,
-  x = 240,
-  y = 1413,
-  direction = 0,
-  model = "hook",
-}
-
-custom_entity{
   name = "hook_7",
   layer = 0,
   x = 256,
-  y = 1381,
+  y = 1397,
   direction = 0,
   model = "hook",
 }
@@ -8422,16 +8395,7 @@ tile{
 tile{
   layer = 2,
   x = 240,
-  y = 1360,
-  width = 16,
-  height = 8,
-  pattern = "605",
-}
-
-tile{
-  layer = 2,
-  x = 240,
-  y = 1392,
+  y = 1376,
   width = 16,
   height = 8,
   pattern = "605",

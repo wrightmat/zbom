@@ -5,7 +5,7 @@ local enemy = ...
 
 function enemy:on_created()
   self:set_life(3); self:set_damage(3)
-  self:create_sprite("enemies/chuchu_white)
+  self:create_sprite("enemies/chuchu_white")
   self:set_size(16, 16); self:set_origin(8, 13)
   self:set_attack_hookshot("immobilized")
 end
@@ -36,14 +36,6 @@ function enemy:reappear()
   end
 end
 
-function enemy:on_hurt_by_sword(hero, enemy_sprite)
-  if not hero:is_invincible() then
-    -- Hero is frozen.
-    hero:start_hurt(1)
-    hero:start_frozen(2000)
-    hero:set_invincible(true, 3000)
-  end
-end
 function enemy:on_attacking_hero(hero)
   if not hero:is_invincible() then
     -- Hero is frozen.
