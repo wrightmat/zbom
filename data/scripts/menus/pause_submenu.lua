@@ -10,7 +10,6 @@ function submenu:new(game)
 end
 
 function submenu:on_started()
-
   self.background_surfaces = sol.surface.create("pause_submenus.png", true)
   self.background_surfaces:set_opacity(216)
   self.save_dialog_sprite = sol.sprite.create("menus/pause_save_dialog")
@@ -73,7 +72,6 @@ end
 -- If the text you want to display has two lines, use the '$' character to separate them.
 -- A value of nil removes the previous caption if any.
 function submenu:set_caption(text_key)
-
   if text_key == nil then
     self.caption_text_1:set_text(nil)
     self.caption_text_2:set_text(nil)
@@ -94,7 +92,6 @@ end
 
 -- Draw the caption text previously set.
 function submenu:draw_caption(dst_surface)
-
   local width, height = dst_surface:get_size()
 
   if self.caption_text_2:get_text():len() == 0 then
@@ -106,7 +103,6 @@ function submenu:draw_caption(dst_surface)
 end
 
 function submenu:next_submenu()
-
   sol.audio.play_sound("pause_closed")
   sol.menu.stop(self)
   local submenus = self.game.pause_submenus
@@ -117,7 +113,6 @@ function submenu:next_submenu()
 end
 
 function submenu:previous_submenu()
-
   sol.audio.play_sound("pause_closed")
   sol.menu.stop(self)
   local submenus = self.game.pause_submenus
@@ -128,7 +123,6 @@ function submenu:previous_submenu()
 end
 
 function submenu:on_command_pressed(command)
-
   local handled = false
 
   if self.game:is_dialog_enabled() then
@@ -199,7 +193,6 @@ function submenu:on_command_pressed(command)
 end
 
 function submenu:draw_background(dst_surface)
-
   local submenu_index = self.game:get_value("pause_last_submenu")
   local width, height = dst_surface:get_size()
   self.background_surfaces:draw_region(
@@ -208,7 +201,6 @@ function submenu:draw_background(dst_surface)
 end
 
 function submenu:draw_save_dialog_if_any(dst_surface)
-
   if self.save_dialog_state > 0 then
     local width, height = dst_surface:get_size()
     local x = width / 2

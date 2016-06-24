@@ -270,9 +270,9 @@ local function initialize_maps()
   end
 
   function map_metatable:on_update()
-    -- If hero doesn't have red tunic, slowly remove stamina in Subrosia.
+    -- If hero doesn't have red tunic on, slowly remove stamina in hot areas (Subrosia).
     if self:get_game():get_map():get_world() == "outside_subrosia" and
-    self:get_game():get_item("tunic"):get_variant() < 2 then
+    self:get_game():get_value("tunic_equipped") ~= 2 then
       if not heat_timer then
         heat_timer = sol.timer.start(self:get_game():get_map(), 5000, function()
           self:get_game():remove_stamina(5)
@@ -286,9 +286,9 @@ local function initialize_maps()
       end
     end
 
-    -- If hero doesn't have blue tunic, slowly remove stamina while swimming.
+    -- If hero doesn't have blue tunic on, slowly remove stamina while swimming.
     if self:get_game():get_hero():get_state() == "swimming" and
-    self:get_game():get_item("tunic"):get_variant() < 3 then
+    self:get_game():get_value("tunic_equipped") ~= 3 then
       if not swim_timer then
         swim_timer = sol.timer.start(self:get_game():get_map(), 5000, function()
           self:get_game():remove_stamina(5)

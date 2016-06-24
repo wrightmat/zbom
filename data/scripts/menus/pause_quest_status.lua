@@ -4,10 +4,13 @@ local quest_status_submenu = submenu:new()
 function quest_status_submenu:on_started()
   submenu.on_started(self)
   self.quest_items_surface = sol.surface.create(320, 240)
+  self.quest_dialog_surface = sol.surface.create(160, 48)
   self.cursor_sprite = sol.sprite.create("menus/pause_cursor")
+  self.quest_dialog_sprite = sol.sprite.create("menus/quest_dialog")
   self.cursor_sprite_x = 0
   self.cursor_sprite_y = 0
   self.cursor_position = nil
+  self.quest_dialog_state = 0
   self.caption_text_keys = {}
 
   local item_sprite = sol.sprite.create("entities/items")
@@ -80,11 +83,12 @@ function quest_status_submenu:on_started()
   end
 
   -- Tunic.
-  local tunic = self.game:get_item("tunic"):get_variant()
+  self.tunic = self.game:get_item("tunic"):get_variant()
+  self.tunic_equipped = self.game:get_value("tunic_equipped")
   item_sprite:set_animation("tunic")
-  item_sprite:set_direction(tunic - 1)
+  item_sprite:set_direction(self.tunic_equipped - 1)
   item_sprite:draw(self.quest_items_surface, 185, 177)
-  self.caption_text_keys[7] = "quest_status.caption.tunic_" .. tunic
+  self.caption_text_keys[7] = "quest_status.caption.tunic_" .. self.tunic_equipped
 
   -- Sword.
   local sword = self.game:get_item("sword"):get_variant()
@@ -158,7 +162,33 @@ end
 function quest_status_submenu:on_command_pressed(command)
   local handled = submenu.on_command_pressed(self, command)
 
-  if not handled then
+  if self.quest_dialog_state == 1 then
+    if command == "left" or command == "down" then
+      self.quest_dialog_choice = self.quest_dialog_choice - 1
+      if self.quest_dialog_choice < 0 then self.quest_dialog_choice = self.tunic - 1 end
+      self.quest_dialog_sprite:set_direction(self.quest_dialog_choice)
+      self:set_caption("quest_status.caption.tunic_" .. self.quest_dialog_choice + 1)
+    elseif command == "right" or command == "up" then
+      self.quest_dialog_choice = self.quest_dialog_choice + 1
+      if self.quest_dialog_choice >= self.tunic then self.quest_dialog_choice = 0 end
+      self.quest_dialog_sprite:set_direction(self.quest_dialog_choice)
+      self:set_caption("quest_status.caption.tunic_" .. self.quest_dialog_choice + 1)
+    elseif command == "action" or command == "attack" then
+      self.game:set_value("tunic_equipped", self.quest_dialog_choice + 1)
+      self.tunic_equipped = self.quest_dialog_choice + 1
+      sol.audio.play_sound("throw")
+      self.quest_dialog_state = 0
+      -- Redraw the new tunic in the menu
+      self.quest_dialog_surface:clear()
+      local item_sprite = sol.sprite.create("entities/items")
+      item_sprite:set_animation("tunic")
+      item_sprite:set_direction(self.quest_dialog_choice)
+      item_sprite:draw(self.quest_items_surface, 185, 177)
+      self.caption_text_keys[7] = "quest_status.caption.tunic_" .. self.tunic_equipped
+      self.game:get_hero():set_tunic_sprite_id("hero/tunic" .. self.tunic_equipped)
+    end
+
+  elseif not handled then
     if command == "left" then
       if self.cursor_position <= 3 then
         self:previous_submenu()
@@ -198,6 +228,17 @@ function quest_status_submenu:on_command_pressed(command)
       sol.audio.play_sound("cursor")
       self:set_cursor_position((self.cursor_position + 9) % 10)
       handled = true
+
+    elseif command == "action" then
+      if self.cursor_position == 7 then
+        -- Cursor is over the Tunic
+        sol.audio.play_sound("message_end")
+        self.quest_dialog_choice = (self.tunic_equipped - 1) or 0
+        self.quest_dialog_sprite:set_direction(self.quest_dialog_choice)
+        self.game:set_custom_command_effect("action", "validate")
+        self.quest_dialog_state = 1
+        handled = true
+      end
     end
 
   end
@@ -213,6 +254,16 @@ function quest_status_submenu:on_draw(dst_surface)
   self:draw_caption(dst_surface)
   self.quest_items_surface:draw(dst_surface, x, y)
   self.cursor_sprite:draw(dst_surface, x + self.cursor_sprite_x, y + self.cursor_sprite_y)
+  if self.quest_dialog_state == 1 then
+    self.quest_dialog_sprite:draw(self.quest_dialog_surface, 0, 0)
+    local item_sprite = sol.sprite.create("entities/items")
+    item_sprite:set_animation("tunic")
+    for i = 0, self.tunic - 1 do
+      item_sprite:set_direction(i)
+      item_sprite:draw(self.quest_dialog_surface, 23+(i*38), 30)
+    end
+    self.quest_dialog_surface:draw(dst_surface, x + 105, y + 145)
+  end
   self:draw_save_dialog_if_any(dst_surface)
 end
 

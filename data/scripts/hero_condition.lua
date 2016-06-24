@@ -157,8 +157,8 @@ function condition_manager:initialize(game)
       return
     end
 
-    local shield_level = game:get_ability('shield')
-    local tunic_level = game:get_ability('tunic')
+    local shield_level = game:get_ability("shield")
+    local tunic_level = game:get_value("tunic_equipped")
 
     local protection_divider = tunic_level * math.ceil(shield_level / 2)
     if protection_divider == 0 then
@@ -290,7 +290,8 @@ function condition_manager:initialize(game)
   function hero:start_cursed(delay)
     if hero:is_condition_active('cursed') and condition_manager.timers['cursed'] ~= nil then
       condition_manager.timers['cursed']:stop()
-    else
+    elseif game:get_value("tunic_equipped") ~= 4 then
+      -- Cursing doesn't work if hero has the purple tunic on.
       hero:set_condition('cursed', true)
       if game:get_ability("sword") > 0 then sword_level = game:get_ability("sword") end
       game:set_ability("sword", 0)

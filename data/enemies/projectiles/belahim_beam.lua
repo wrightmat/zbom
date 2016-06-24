@@ -30,3 +30,12 @@ function enemy:on_restarted()
   m:set_angle(angle)
   m:start(self)
 end
+
+function enemy:on_attacking_hero(hero)
+  -- Purple tunic makes hero nearly immune to dark magic.
+  if self:get_game():get_value("tunic_equipped") ~= 4 then then
+    hero:start_hurt(8)
+  else
+    hero:start_hurt(2)
+  end
+end

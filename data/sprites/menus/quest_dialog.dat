@@ -1,0 +1,10 @@
+animation{
+  name = "tunic",
+  src_image = "menus/quest_dialog.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 160, frame_height = 48, origin_x = 0, origin_y = 0 },
+    { x = 0, y = 48, frame_width = 160, frame_height = 48, origin_x = 0, origin_y = 0 },
+    { x = 0, y = 96, frame_width = 160, frame_height = 48, origin_x = 0, origin_y = 0 },
+    { x = 0, y = 144, frame_width = 160, frame_height = 48, origin_x = 0, origin_y = 0 },
+  },
+}

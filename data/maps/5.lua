@@ -69,7 +69,7 @@ function map:on_started(destination)
     self:create_shop_treasure({
 	name = "shop_item_2",
 	layer = 0,
-	x = 496,
+	x = 576,
 	y = 392,
 	price = 999,
 	dialog = "shop.tunic_2",
