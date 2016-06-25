@@ -28,7 +28,7 @@ end
 
 function subrosian_soaking:on_interaction()
   game:start_dialog("subrosian_soaking.0.subrosia", function()
-    if game:get_item("tunic"):get_variant() == 1 then
+    if game:get_value("tunic_equipped") ~= 2 then
       game:start_dialog("subrosian_soaking.0.tunic")
     end
   end)

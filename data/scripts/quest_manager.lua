@@ -276,6 +276,7 @@ local function initialize_maps()
       if not heat_timer then
         heat_timer = sol.timer.start(self:get_game():get_map(), 5000, function()
           self:get_game():remove_stamina(5)
+print("In heat without red tunic equipped, stamina taken")
           return true
         end)
       end
@@ -292,6 +293,7 @@ local function initialize_maps()
       if not swim_timer then
         swim_timer = sol.timer.start(self:get_game():get_map(), 5000, function()
           self:get_game():remove_stamina(5)
+print("In water without blue tunic equipped, stamina taken")
           return true
         end)
       end

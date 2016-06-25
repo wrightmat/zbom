@@ -2553,6 +2553,18 @@ as cut the damage you take!
 }
 
 dialog{
+  id = "_treasure.tunic.4",
+  icon = "62",
+  skip = "current",
+  text = [[
+You got the  $r Purple Tunic$w!$0
+This will protect you from the dark
+magic that has infiltrated the world,
+as well as cut the damage you take!
+]]
+}
+
+dialog{
   id = "_treasure.world_map.1",
   icon = "70",
   skip = "current",
@@ -8586,7 +8598,7 @@ across the bridge here? It's said that
 she uses her crystal ball to see the
 future, but that even she can't see the
 location of the thing she wants the most-
-a $rMoon's Tear$w.
+a $rMoon's Tear$w .
 ]]
 }
 
@@ -10058,8 +10070,8 @@ dialog{
   id = "subrosian_soaking.0.tunic",
   skip = "current",
   text = [[
-You won't do so well in those green
-clothes though... If you get some clothes
+You won't do so well in those clothes
+though... If you get some clothes
 the color of this lava, you won't be
 bothered by the heat at all!
 ]]

@@ -525,13 +525,13 @@ function room5_exit:on_activated()
 end
 
 function treasure_dest:on_activated()
-  -- give red tunic, blue tunic, or shovel (all can be bought also)
+  -- Give Red Tunic, Blue Tunic, or Purple Tunic (basically upgrade the best one the player has)
   if game:get_item("tunic"):get_variant() == 1 then
     map:create_chest({layer=0,x=1208,y=501,sprite="entities/chest_big", treasure_name="tunic", treasure_variant=2})
   elseif game:get_item("tunic"):get_variant() == 2 then
     map:create_chest({layer=0,x=1208,y=501,sprite="entities/chest_big",treasure_name="tunic", treasure_variant=3})
   elseif game:get_item("tunic"):get_variant() == 3 then
-    map:create_chest({layer=0,x=1208,y=501,sprite="entities/chest_big",treasure_name="shovel"})
+    map:create_chest({layer=0,x=1208,y=501,sprite="entities/chest_big",treasure_name="tunic", treasure_variant=4})
   end
 end
 

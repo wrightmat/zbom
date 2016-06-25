@@ -96,10 +96,10 @@ animation{
   name = "electrocuted",
   src_image = "hero/miscellaneous.png",
   directions = {
-    { x = 0, y = 104, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
-    { x = 24, y = 104, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
-    { x = 48, y = 104, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
-    { x = 72, y = 104, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 96, y = 128, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 120, y = 128, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 144, y = 128, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 168, y = 128, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
   },
 }
 animation{
@@ -138,10 +138,10 @@ animation{
   src_image = "hero/hammer.tunic.png",
   frame_delay = 50,
   directions = {
-    { x = 0, y = 320, frame_width = 64, frame_height = 40, origin_x = 32, origin_y = 29, num_frames = 7 },
-    { x = 0, y = 360, frame_width = 64, frame_height = 40, origin_x = 32, origin_y = 29, num_frames = 7 },
-    { x = 0, y = 400, frame_width = 64, frame_height = 40, origin_x = 32, origin_y = 29, num_frames = 7 },
-    { x = 0, y = 440, frame_width = 64, frame_height = 40, origin_x = 32, origin_y = 29, num_frames = 7 },
+    { x = 0, y = 384, frame_width = 64, frame_height = 48, origin_x = 32, origin_y = 40, num_frames = 7 },
+    { x = 0, y = 432, frame_width = 64, frame_height = 48, origin_x = 32, origin_y = 40, num_frames = 7 },
+    { x = 0, y = 480, frame_width = 64, frame_height = 48, origin_x = 32, origin_y = 40, num_frames = 7 },
+    { x = 0, y = 528, frame_width = 64, frame_height = 48, origin_x = 32, origin_y = 40, num_frames = 7 },
   },
 }
 animation{
