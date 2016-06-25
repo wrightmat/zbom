@@ -180,6 +180,7 @@ function quest_status_submenu:on_command_pressed(command)
       self.quest_dialog_state = 0
       -- Redraw the new tunic in the menu
       self.quest_dialog_surface:clear()
+      self.game:set_custom_command_effect("action", nil)
       local item_sprite = sol.sprite.create("entities/items")
       item_sprite:set_animation("tunic")
       item_sprite:set_direction(self.quest_dialog_choice)
