@@ -4493,6 +4493,15 @@ tile{
   pattern = "525",
 }
 
+tile{
+  layer = 0,
+  x = 96,
+  y = 472,
+  width = 32,
+  height = 32,
+  pattern = "525",
+}
+
 sensor{
   name = "dungeon_room_4b_",
   layer = 0,
@@ -5254,6 +5263,42 @@ destructible{
   y = 709,
   treasure_name = "magic_flask",
   treasure_variant = 2,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 120,
+  y = 501,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 104,
+  y = 501,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 104,
+  y = 485,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 120,
+  y = 485,
+  treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
 }

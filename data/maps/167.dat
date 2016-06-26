@@ -1171,24 +1171,6 @@ destination{
   direction = 1,
 }
 
-wall{
-  layer = 0,
-  x = 104,
-  y = 152,
-  width = 144,
-  height = 8,
-  stops_hero = true,
-}
-
-sensor{
-  name = "sensor_fairy_speak",
-  layer = 0,
-  x = 144,
-  y = 181,
-  width = 80,
-  height = 16,
-}
-
 teletransporter{
   name = "to_outside",
   layer = 0,
@@ -1198,6 +1180,57 @@ teletransporter{
   height = 16,
   destination_map = "157",
   destination = "from_fairy",
+}
+
+wall{
+  layer = 0,
+  x = 144,
+  y = 168,
+  width = 8,
+  height = 16,
+  stops_hero = true,
+}
+
+wall{
+  layer = 0,
+  x = 200,
+  y = 168,
+  width = 8,
+  height = 16,
+  stops_hero = true,
+}
+
+wall{
+  layer = 0,
+  x = 144,
+  y = 160,
+  width = 64,
+  height = 8,
+  stops_hero = true,
+}
+
+sensor{
+  name = "sensor_fairy_speak",
+  layer = 0,
+  x = 160,
+  y = 181,
+  width = 48,
+  height = 16,
+}
+
+pickable{
+  layer = 0,
+  x = 144,
+  y = 189,
+  treasure_name = "ore",
+}
+
+pickable{
+  layer = 0,
+  x = 208,
+  y = 189,
+  treasure_name = "ore",
+  treasure_variant = 2,
 }
 
 tile{

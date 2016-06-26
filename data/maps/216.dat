@@ -4690,7 +4690,7 @@ enemy{
   x = 568,
   y = 477,
   direction = 0,
-  breed = "chuchu_blue",
+  breed = "chuchu_white",
   treasure_name = "random",
 }
 
@@ -4826,7 +4826,7 @@ enemy{
   x = 776,
   y = 557,
   direction = 0,
-  breed = "chuchu_blue",
+  breed = "chuchu_white",
   treasure_name = "random",
 }
 
@@ -4836,7 +4836,7 @@ enemy{
   x = 576,
   y = 621,
   direction = 0,
-  breed = "chuchu_blue",
+  breed = "chuchu_white",
   treasure_name = "random",
 }
 
@@ -4846,7 +4846,7 @@ enemy{
   x = 760,
   y = 693,
   direction = 0,
-  breed = "chuchu_blue",
+  breed = "chuchu_white",
   treasure_name = "random",
 }
 
@@ -4926,7 +4926,7 @@ sensor{
   x = 152,
   y = 485,
   width = 32,
-  height = 256,
+  height = 208,
 }
 
 door{
@@ -4944,7 +4944,7 @@ sensor{
   x = 312,
   y = 485,
   width = 32,
-  height = 256,
+  height = 208,
 }
 
 enemy{
@@ -5354,6 +5354,54 @@ custom_entity{
   y = 205,
   direction = 0,
   model = "hook",
+}
+
+dynamic_tile{
+  name = "eye_statue_1",
+  layer = 0,
+  x = 144,
+  y = 440,
+  pattern = "204",
+  width = 32,
+  height = 32,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "eye_statue_2",
+  layer = 0,
+  x = 304,
+  y = 440,
+  pattern = "204",
+  width = 32,
+  height = 32,
+  enabled_at_start = true,
+}
+
+door{
+  name = "door_key3_1",
+  layer = 0,
+  x = 664,
+  y = 368,
+  direction = 3,
+  sprite = "entities/door_small_key",
+  savegame_variable = "b1176",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_7_small_keys",
+  opening_condition_consumed = true,
+  cannot_open_dialog = "_small_key_required",
+}
+
+door{
+  name = "door_key3_2",
+  layer = 0,
+  x = 664,
+  y = 416,
+  direction = 1,
+  sprite = "entities/door_small_key",
+  savegame_variable = "b1176",
+  opening_condition = "dungeon_7_small_keys",
+  opening_condition_consumed = true,
 }
 
 tile{

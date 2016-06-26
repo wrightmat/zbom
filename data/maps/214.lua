@@ -8,6 +8,7 @@ local game = map:get_game()
 function map:on_started(destination)
   if not game:get_value("b1173") then chest_key_2:set_enabled(false) end
   warp_chuchu:set_enabled(false)
+  warp_item:set_enabled(false)
 end
 
 function warp:on_activated()
@@ -48,7 +49,6 @@ end
 
 function map:on_obtained_treasure(treasure_name, treasure_variant, treasure_savegame_variable)
   if treasure_name == "shield" then
-    hole_item:set_enabled(false)
-    fall_below_2:set_enabled(false)
+    warp_item:set_enabled(true)
   end
 end

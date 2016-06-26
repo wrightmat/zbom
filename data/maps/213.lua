@@ -43,16 +43,20 @@ end
 for enemy in map:get_entities("gibdos") do
   enemy.on_dead = function()
     if not map:has_entities("gibdos") and not map:has_entities("giga") then
-      chest_key_1:set_enabled(true)
-      sol.audio.play_sound("chest_appears")
+      map:move_camera(552, 125, 250, function()
+        chest_key_1:set_enabled(true)
+        sol.audio.play_sound("chest_appears")
+      end, 500, 500)
     end
   end
 end
 for enemy in map:get_entities("giga") do
   enemy.on_dead = function()
     if not map:has_entities("gibdos") and not map:has_entities("giga") then
-      chest_key_1:set_enabled(true)
-      sol.audio.play_sound("chest_appears")
+      map:move_camera(552, 125, 250, function()
+        chest_key_1:set_enabled(true)
+        sol.audio.play_sound("chest_appears")
+      end, 500, 500)
     end
   end
 end

@@ -4673,6 +4673,51 @@ tile{
   pattern = "482",
 }
 
+tile{
+  layer = 0,
+  x = 720,
+  y = 144,
+  width = 16,
+  height = 32,
+  pattern = "525",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 96,
+  width = 16,
+  height = 32,
+  pattern = "525",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 256,
+  width = 16,
+  height = 32,
+  pattern = "525",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 648,
+  width = 16,
+  height = 32,
+  pattern = "525",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 504,
+  width = 16,
+  height = 32,
+  pattern = "525",
+}
+
 sensor{
   name = "dungeon_room_4b_",
   layer = 0,
@@ -5097,7 +5142,7 @@ enemy{
   y = 301,
   direction = 3,
   breed = "deadrock",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5107,7 +5152,7 @@ enemy{
   y = 269,
   direction = 3,
   breed = "deadrock",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 enemy{
@@ -5117,7 +5162,7 @@ enemy{
   y = 301,
   direction = 3,
   breed = "deadrock",
-  treasure_name = "random",
+  treasure_name = "random_enemy",
 }
 
 crystal_block{
@@ -5520,6 +5565,96 @@ custom_entity{
   model = "generic_flying_pickable",
 }
 
+destructible{
+  layer = 0,
+  x = 728,
+  y = 157,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 728,
+  y = 173,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 584,
+  y = 109,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 584,
+  y = 125,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 632,
+  y = 269,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 632,
+  y = 285,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 504,
+  y = 517,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 504,
+  y = 533,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 504,
+  y = 661,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 504,
+  y = 677,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
 tile{
   layer = 1,
   x = 32,
@@ -5566,6 +5701,54 @@ enemy{
   direction = 3,
   breed = "keese",
   treasure_name = "random_enemy",
+}
+
+wall{
+  layer = 1,
+  x = 464,
+  y = 32,
+  width = 424,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 464,
+  y = 384,
+  width = 424,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 464,
+  y = 40,
+  width = 8,
+  height = 344,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 872,
+  y = 40,
+  width = 8,
+  height = 344,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{

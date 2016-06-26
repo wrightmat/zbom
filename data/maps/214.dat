@@ -6424,7 +6424,7 @@ destination{
   layer = 0,
   x = 352,
   y = 405,
-  direction = 3,
+  direction = 2,
   sprite = "entities/destination",
 }
 
@@ -6451,7 +6451,7 @@ destination{
   layer = 0,
   x = 560,
   y = 405,
-  direction = 3,
+  direction = 0,
   sprite = "entities/destination",
 }
 
@@ -6884,6 +6884,19 @@ destructible{
   treasure_variant = 3,
   sprite = "entities/pot",
   destruction_sound = "stone",
+}
+
+teletransporter{
+  name = "warp_item",
+  layer = 0,
+  x = 568,
+  y = 392,
+  width = 16,
+  height = 16,
+  destination_map = "214",
+  destination = "destination_2",
+  sprite = "entities/teletransporter",
+  sound = "warp",
 }
 
 tile{
