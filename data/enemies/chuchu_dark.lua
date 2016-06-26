@@ -4,7 +4,7 @@ local enemy = ...
 -- The dark variety will curse the hero if touched.
 
 function enemy:on_created()
-  self:set_life(5); self:set_damage(6)
+  self:set_life(6); self:set_damage(12)
   self:create_sprite("enemies/chuchu_dark")
   self:set_size(16, 16); self:set_origin(8, 13)
   self:set_attack_hookshot("immobilized")
