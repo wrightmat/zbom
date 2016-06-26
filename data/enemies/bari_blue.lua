@@ -5,7 +5,7 @@ local enemy = ...
 local shocking = false
 
 function enemy:on_created()
-  self:set_life(2); self:set_damage(2)
+  self:set_life(3); self:set_damage(6)
   self:create_sprite("enemies/bari_blue")
   self:set_size(16, 16); self:set_origin(8, 13)
   self:set_attack_hookshot("immobilized")

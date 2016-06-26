@@ -6,7 +6,7 @@ local hero = map:get_hero()
 -- Octorok: Simple enemy who wanders and shoots rocks.
 
 function enemy:on_created()
-  self:set_life(3); self:set_damage(4)
+  self:set_life(4); self:set_damage(6)
   self:create_sprite("enemies/octorok_blue")
   self:set_size(16, 16); self:set_origin(8, 13)
   self:set_hurt_style("monster")

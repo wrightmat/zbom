@@ -3,7 +3,7 @@ local enemy = ...
 -- Tektite: a swimming enemy which moves toward the hero.
 
 function enemy:on_created()
-  self:set_life(1); self:set_damage(2)
+  self:set_life(4); self:set_damage(6)
   self:create_sprite("enemies/tektite_water")
   self:set_size(16, 16); self:set_origin(8, 13)
   self:set_hurt_style("monster")

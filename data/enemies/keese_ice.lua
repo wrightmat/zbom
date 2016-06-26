@@ -5,7 +5,7 @@ local timer
 -- Ice Keese (bat): Basic flying enemy, but also frozen!
 
 function enemy:on_created()
-  self:set_life(2); self:set_damage(2)
+  self:set_life(3); self:set_damage(6)
   local sprite = self:create_sprite("enemies/keese_ice")
   self:set_size(16, 16); self:set_origin(8, 13)
   self:set_hurt_style("monster")

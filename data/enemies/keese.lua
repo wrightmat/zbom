@@ -5,7 +5,7 @@ local timer
 -- Keese (bat): Basic flying enemy.
 
 function enemy:on_created()
-  self:set_life(1); self:set_damage(1)
+  self:set_life(1); self:set_damage(2)
   local sprite = self:create_sprite("enemies/keese")
   self:set_size(16, 16); self:set_origin(8, 13)
   self:set_hurt_style("monster")
