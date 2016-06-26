@@ -1093,11 +1093,11 @@ function savegame_menu:calculate_percent_complete(savegame)
     if savegame:get_value("b1699") then percent_complete = percent_complete + 2 end  -- Main Quest
 
     -- Last 10% is misc.
-    percent complete = percent complete + (savegame:get_value("i1822") - 1) * 2  -- Tunics (up to 6 points possible for 3 additional tunics)
-    if savegame:get_value("i1615") >= 13 then percent complete = percent complete + 1 end  -- Books fetch quest
-    if savegame:get_value("i1631") >= 16 then percent complete = percent complete + 1 end  -- Plants fetch quest
-    if savegame:get_value("i1823") >= 3 then percent complete = percent complete + 1 end  -- Fully upgraded world map
-    if savegame:get_value("i1841") >= 4 then percent complete = percent complete + 1 end  -- Master Ore obtained
+    percent_complete = percent_complete + (savegame:get_value("i1822") - 1) * 2  -- Tunics (up to 6 points possible for 3 additional tunics)
+    if savegame:get_value("i1615") >= 13 then percent_complete = percent_complete + 1 end  -- Books fetch quest
+    if savegame:get_value("i1631") >= 16 then percent_complete = percent_complete + 1 end  -- Plants fetch quest
+    if savegame:get_value("i1823") >= 3 then percent_complete = percent_complete + 1 end  -- Fully upgraded world map
+    if savegame:get_value("i1841") >= 4 then percent_complete = percent_complete + 1 end  -- Master Ore obtained
 
   savegame:set_value("percent_complete", percent_complete)
   return percent_complete
