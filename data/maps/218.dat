@@ -7382,6 +7382,46 @@ teletransporter{
 }
 
 enemy{
+  name = "chuchu_1",
+  layer = 0,
+  x = 528,
+  y = 645,
+  direction = 0,
+  breed = "chuchu_dark",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "chuchu_2",
+  layer = 0,
+  x = 528,
+  y = 757,
+  direction = 0,
+  breed = "chuchu_dark",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "chuchu_3",
+  layer = 0,
+  x = 464,
+  y = 189,
+  direction = 0,
+  breed = "chuchu_dark",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "chuchu_4",
+  layer = 0,
+  x = 592,
+  y = 189,
+  direction = 0,
+  breed = "chuchu_dark",
+  treasure_name = "random_enemy",
+}
+
+enemy{
   name = "keese_room2_2",
   layer = 1,
   x = 104,

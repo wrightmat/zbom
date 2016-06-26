@@ -4876,6 +4876,16 @@ enemy{
   treasure_name = "random_enemy",
 }
 
+enemy{
+  name = "chuchu_1",
+  layer = 0,
+  x = 360,
+  y = 869,
+  direction = 0,
+  breed = "chuchu_dark",
+  treasure_name = "random_enemy",
+}
+
 tile{
   layer = 2,
   x = -56,

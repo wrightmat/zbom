@@ -3,10 +3,10 @@ properties{
   y = 0,
   width = 912,
   height = 800,
-  world = "dungeon_7",
-  floor = 7,
   min_layer = 0,
   max_layer = 2,
+  world = "dungeon_7",
+  floor = 7,
   tileset = "10",
   music = "temple_wind",
 }
@@ -4371,6 +4371,36 @@ sensor{
   y = 357,
   width = 64,
   height = 16,
+}
+
+enemy{
+  name = "chuchu_1",
+  layer = 0,
+  x = 168,
+  y = 525,
+  direction = 0,
+  breed = "chuchu_dark",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "chuchu_2",
+  layer = 0,
+  x = 368,
+  y = 589,
+  direction = 0,
+  breed = "chuchu_dark",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "chuchu_3",
+  layer = 0,
+  x = 312,
+  y = 717,
+  direction = 0,
+  breed = "chuchu_dark",
+  treasure_name = "random_enemy",
 }
 
 tile{

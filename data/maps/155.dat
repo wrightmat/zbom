@@ -3,9 +3,9 @@ properties{
   y = 0,
   width = 1120,
   height = 1120,
-  world = "outside_subrosia",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_subrosia",
   tileset = "12",
   music = "subrosia",
 }
@@ -3676,6 +3676,26 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/subrosian_green",
+}
+
+enemy{
+  name = "chuchu_1",
+  layer = 0,
+  x = 880,
+  y = 341,
+  direction = 0,
+  breed = "chuchu_dark",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "chuchu_2",
+  layer = 0,
+  x = 344,
+  y = 525,
+  direction = 0,
+  breed = "chuchu_dark",
+  treasure_name = "random_enemy",
 }
 
 tile{

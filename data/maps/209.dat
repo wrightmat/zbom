@@ -7915,6 +7915,16 @@ custom_entity{
   model = "hook",
 }
 
+enemy{
+  name = "chuchu_1",
+  layer = 0,
+  x = 80,
+  y = 1621,
+  direction = 0,
+  breed = "chuchu_dark",
+  treasure_name = "random_enemy",
+}
+
 tile{
   layer = 1,
   x = 536,

@@ -3898,6 +3898,16 @@ custom_entity{
   model = "quest_plants",
 }
 
+enemy{
+  name = "chuchu_1",
+  layer = 0,
+  x = 1048,
+  y = 645,
+  direction = 0,
+  breed = "chuchu_dark",
+  treasure_name = "random_enemy",
+}
+
 tile{
   layer = 2,
   x = 128,

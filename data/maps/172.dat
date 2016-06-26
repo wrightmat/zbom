@@ -6285,6 +6285,26 @@ custom_entity{
   model = "generic_flying_pickable",
 }
 
+enemy{
+  name = "chuchu_1",
+  layer = 0,
+  x = 304,
+  y = 613,
+  direction = 0,
+  breed = "chuchu_dark",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "chuchu_2",
+  layer = 0,
+  x = 464,
+  y = 173,
+  direction = 0,
+  breed = "chuchu_dark",
+  treasure_name = "random_enemy",
+}
+
 tile{
   layer = 2,
   x = 664,

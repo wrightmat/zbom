@@ -2955,6 +2955,16 @@ destructible{
   can_be_cut = true,
 }
 
+enemy{
+  name = "chuchu_1",
+  layer = 0,
+  x = 896,
+  y = 693,
+  direction = 0,
+  breed = "chuchu_dark",
+  treasure_name = "random_enemy",
+}
+
 tile{
   layer = 1,
   x = 280,
