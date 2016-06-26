@@ -1033,6 +1033,7 @@ function savegame_menu:set_initial_values(savegame)
   savegame:set_ability("tunic", 1)
   savegame:get_item("rupee_bag"):set_variant(1)
   savegame:set_value("time_played", 0)
+  savegame:set_value("times_died", 0)
 end
 
 function savegame_menu:calculate_percent_complete(savegame)
@@ -1055,7 +1056,7 @@ function savegame_menu:calculate_percent_complete(savegame)
     (savegame:get_value("b1728") and 1 or 0) + (savegame:get_value("b1729") and 1 or 0) + 
     (savegame:get_value("b1730") and 1 or 0) + (savegame:get_value("b1731") and 1 or 0) + 
     (savegame:get_value("b1732") and 1 or 0) +
-    (savegame:get_value("i1830") - 1) + --  Heart Pieces above. Trading here.
+    (savegame:get_value("i1840") - 1 ) + --  Heart Pieces above here. Trading here.
 
     (savegame:get_value("b1500") and 1 or 0) + (savegame:get_value("b1501") and 1 or 0) +
     (savegame:get_value("b1502") and 1 or 0) + (savegame:get_value("b1503") and 1 or 0) +
@@ -1064,7 +1065,7 @@ function savegame_menu:calculate_percent_complete(savegame)
     (savegame:get_value("b1508") and 1 or 0) + (savegame:get_value("b1509") and 1 or 0) +
     (savegame:get_value("b1510") and 1 or 0) + (savegame:get_value("b1511") and 1 or 0) +
     (savegame:get_value("b1512") and 1 or 0) + (savegame:get_value("b1513") and 1 or 0) +
-    (savegame:get_value("b1514") and 1 or 0) + (savegame:get_value("b1515") and 1 or 0) -- Warp points
+    (savegame:get_value("b1514") and 1 or 0) + (savegame:get_value("b1515") and 1 or 0) -- Warp points above here.
 
     if savegame:get_value("i1602")==nil then savegame:set_value("i1602", 0) end
     if savegame:get_value("i1603")==nil then savegame:set_value("i1603", 0) end
@@ -1073,7 +1074,7 @@ function savegame_menu:calculate_percent_complete(savegame)
     if savegame:get_value("i1606")==nil then savegame:set_value("i1606", 0) end
     if savegame:get_value("i1607")==nil then savegame:set_value("i1607", 0) end
     if savegame:get_value("i1608")==nil then savegame:set_value("i1608", 0) end
-    if savegame:get_value("i1609")==nil then savegame:set_value("i1609", 0) end
+    if savegame:get_value("i1609")==nil then savegame:set_value("i1609", 0) end -- Sidequests below here.
 
     if savegame:get_value("i1602") >= 6 then percent_complete = percent_complete + 2 end  -- Gaira/Deacon
     if savegame:get_value("i1603") >= 5 then percent_complete = percent_complete + 2 end  -- Great Fairy Mystic Jade
@@ -1091,10 +1092,15 @@ function savegame_menu:calculate_percent_complete(savegame)
     if savegame:get_value("b1839") then percent_complete = percent_complete + 2 end  -- Hammer
     if savegame:get_value("b1699") then percent_complete = percent_complete + 2 end  -- Main Quest
 
-    -- Last 10% - Character reputations? Random treasure chests?
+    -- Last 10% is misc.
+    percent complete = percent complete + (savegame:get_value("i1822") - 1) * 2  -- Tunics (up to 6 points possible for 3 additional tunics)
+    if savegame:get_value("i1615") >= 13 then percent complete = percent complete + 1 end  -- Books fetch quest
+    if savegame:get_value("i1631") >= 16 then percent complete = percent complete + 1 end  -- Plants fetch quest
+    if savegame:get_value("i1823") >= 3 then percent complete = percent complete + 1 end  -- Fully upgraded world map
+    if savegame:get_value("i1841") >= 4 then percent complete = percent complete + 1 end  -- Master Ore obtained
 
+  savegame:set_value("percent_complete", percent_complete)
   return percent_complete
-
 end
 
 return savegame_menu

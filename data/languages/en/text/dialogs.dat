@@ -97,6 +97,29 @@ Quit (Don't Save)
 }
 
 dialog{
+  id = "_credits.complete",
+  text = [[
+Your completion percentage is
+$v.
+]]
+}
+
+dialog{
+  id = "_credits.died",
+  text = [[
+You have died $v times.
+]]
+}
+
+dialog{
+  id = "_credits.time",
+  text = [[
+Your total play time has been
+$v.
+]]
+}
+
+dialog{
   id = "_crystal_switch",
   skip = "current",
   text = [[

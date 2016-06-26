@@ -27,6 +27,8 @@ function game:on_game_over_started()
   -- Attach the game-over menu to the map so that the map's fade-out
   -- effect applies to it when restarting the game.
   if game:get_hero():is_condition_active('cursed') then game:get_hero():stop_cursed() end -- Otherwise sword is permanently disabled!
+  if game:get_value("times_died") == nil then game:get_value("times_died") = 0 end
+  game:set_value("times_died", game:get_value("times_died") + 1)
   sol.menu.start(game:get_map(), game_over_menu)
 end
 

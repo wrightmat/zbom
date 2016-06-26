@@ -62,6 +62,10 @@ function credits_menu:on_started()
 
   function end_credits()
     -- Credits over. Now what?
+    game:start_dialog("_credits.complete", game.savegame_menu:calculate_percent_complete(game))
+    game:start_dialog("_credits.time", game:get_value("time_played"))
+    game:start_dialog("_credits.died", game:get_value("times_died"))
+
     game:start_dialog("_credits", function(answer)
       if answer == 1 then
         -- Save and continue.
