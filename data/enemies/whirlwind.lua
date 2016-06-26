@@ -4,7 +4,7 @@ local game = enemy:get_game()
 -- A whirlwind created by another enemy.
 
 function enemy:on_created()
-  self:set_life(1); self:set_damage(4)
+  self:set_life(1); self:set_damage(8)
   self:create_sprite("enemies/whirlwind")
   self:set_size(48, 64); self:set_origin(24, 31)
   self:set_invincible()

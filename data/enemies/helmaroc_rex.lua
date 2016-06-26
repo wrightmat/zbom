@@ -8,7 +8,7 @@ local initial_life = 24
 -- Hero must hit the bird on the claw section with his sword.
 
 function enemy:on_created()
-  self:set_life(initial_life); self:set_damage(2)
+  self:set_life(initial_life); self:set_damage(16)
   main_sprite = self:create_sprite("enemies/helmaroc_rex")
   claw_sprite = self:create_sprite("enemies/helmaroc_rex")
   claw_sprite:set_animation("claw")

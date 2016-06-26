@@ -19,7 +19,7 @@ function entity:on_created()
     if other:get_type() == "hero" and not pushing then
       pushing = true
       local m = sol.movement.create("path")
-      m:set_ignore_obstacles(true)
+      --m:set_ignore_obstacles(true)
       m:set_snap_to_grid(true)
 
       local sx, sy, sl = self:get_position()
@@ -125,6 +125,6 @@ function entity:on_position_changed(x, y, layer)
 end
 
 function entity:remove_explode()
-  self:get_sprite():set_animation("destroy")
-  sol.timer.start(self, 2000, function() self:remove() end)
+  if self:get_sprite() == "entities/ice_block" then self:get_sprite():set_animation("destroy") end
+  self:remove()
 end
