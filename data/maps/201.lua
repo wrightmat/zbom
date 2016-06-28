@@ -6,14 +6,14 @@ local game = map:get_game()
 ------------------------------
 
 function map:on_started(destination)
+  game:set_value("b1034", false)
+  game:set_value("b1046", false)
   if miniboss_knight ~= nil then miniboss_knight:set_enabled(false) end
   if boss_carock ~= nil then boss_carock:set_enabled(false) end
-  if game:get_value("b1049") then
-    map:open_doors("door_room1")
-  end
+  if game:get_value("b1049") then map:open_doors("door_room1") end
   if not game:get_value("b1035") then boss_heart:set_enabled(false) end
   if game:get_value("b1050") then map:open_doors("door_miniboss") end
-  if game:get_value("b1046") then map:open_doors("door_boss") end
+  --if game:get_value("b1046") then map:open_doors("door_boss") end
   if game:get_value("b1787") then chest_treasure:set_enabled(false) end
 end
 
@@ -43,14 +43,6 @@ function sensor_miniboss:on_activated()
   end
 end
 
-function sensor_boss:on_activated()
-  if boss_carock ~= nil and not game:get_value("b1046") then
-    map:close_doors("door_boss")
-    boss_carock:set_enabled(true)
-    sol.audio.play_music("boss")
-  end
-end
-
 if miniboss_knight ~= nil then
  function miniboss_knight:on_dead()
   map:open_doors("door_key3")
@@ -59,8 +51,16 @@ if miniboss_knight ~= nil then
  end
 end
 
+function sensor_boss:on_activated()
+  if boss_carock ~= nil then
+    map:close_doors("door_boss")
+    boss_carock:set_enabled(true)
+    sol.audio.play_music("boss")
+  end
+end
+
 if boss_carock ~= nil then
- function boss_carock:on_dead()
+ function boss_carock:on_removed()
   game:set_value("b1046", true)
   map:open_doors("door_boss")
   if boss_heart ~= nil then boss_heart:set_enabled(true) end
@@ -72,6 +72,6 @@ function chest_book:on_opened(item, variant, savegame_variable)
   -- Dynamically determine book variant to give, since dungeons can be done in any order.
   local book_variant = game:get_item("book_mudora"):get_variant() + 1
   map:get_hero():start_treasure("book_mudora", book_variant)
-  game:set_dungeon_finished(2)
+  game:set_dungeon_finished(1)
   game:set_value("b1033", true) -- This value varies depending on the dungeon (chest save value)
 end

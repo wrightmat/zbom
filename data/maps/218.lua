@@ -6,20 +6,18 @@ local game = map:get_game()
 ---------------------------------------------
 
 function map:on_started(destination)
+  if not game:get_value("b1190") then boss_zirna:set_enabled(false) end
+  if not game:get_value("b1191") then
+    boss_belahim:set_enabled(false)
+    dark_mirror:set_enabled(false)
+  else bed_zelda:remove() end
   if not game:get_value("b1180") then chest_compass:set_enabled(false) end
   if not game:get_value("b1185") then chest_key_1:set_enabled(false) end
   if not game:get_value("b1183") then
     miniboss_shadow_link:set_enabled(false)
     chest_item:set_enabled(false)
     miniboss_warp:set_enabled(false)
-  else
-    miniboss_warp:set_enabled(true)
-  end
-  if not game:get_value("b1190") then boss_zirna:set_enabled(false) end
-  if not game:get_value("b1191") then
-    boss_belahim:set_enabled(false)
-    dark_mirror:set_enabled(false)
-  else bed_zelda:remove() end
+  else miniboss_warp:set_enabled(true) end
   if not game:get_value("b1190") and not game:get_value("b1191") then
     boss_heart:set_enabled(false)
   end

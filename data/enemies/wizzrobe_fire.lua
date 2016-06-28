@@ -6,7 +6,7 @@ local ex, ey, el
 -- Wizzrobe: Fire magic enemy which shoots beams at the hero.
 
 function enemy:on_created()
-  self:set_life(3); self:set_damage(4)
+  self:set_life(6); self:set_damage(8)
   self:create_sprite("enemies/wizzrobe_fire")
   self:set_size(16, 24); self:set_origin(8, 17)
   self:get_sprite():set_animation("immobilized")

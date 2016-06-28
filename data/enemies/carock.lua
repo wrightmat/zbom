@@ -1,16 +1,20 @@
 local enemy = ...
+local game = enemy:get_game()
+
 local nb_sons_created = 0
 local initial_life = 8
 local finished = false
 local fireball_proba = 33  -- Percent.
 local vulnerable = false
+local last_position
 local timers = {}
 -- Possible positions where he appears.
 local positions = {
   {x = 1944, y = 544, direction4 = 3},
-  {x = 2032, y = 696, direction4 = 3},
-  {x = 2144, y = 632, direction4 = 1},
-  {x = 2032, y = 512, direction4 = 1}
+  {x = 2032, y = 696, direction4 = 1},
+  {x = 2144, y = 632, direction4 = 2},
+  {x = 2032, y = 512, direction4 = 3},
+  {x = 1944, y = 712, direction4 = 0}
 }
 
 -- Carock (Dark Tribe member, boss of Sewers)
@@ -27,7 +31,11 @@ function enemy:on_created()
 end
 
 function enemy:on_enabled()
-  self:get_game():start_dialog("carock.0.ruins")
+  if not game:get_value("b1240") then  -- Dialog not heard before.
+    self:get_game():start_dialog("carock.0.ruins")
+  else
+    self:get_game():start_dialog("carock.1.ruins")
+  end
 end
 
 function enemy:on_restarted()
@@ -52,23 +60,23 @@ end
 
 function enemy:unhide()
   local position = (positions[math.random(#positions)])
+  if position == last_position then position = (positions[math.random(#positions)]) end
   self:set_position(position.x, position.y)
   local sprite = self:get_sprite()
   sprite:set_direction(position.direction4)
   sprite:fade_in()
   timers[#timers + 1] = sol.timer.start(self, 1000, function() self:fire_step_1() end)
+  last_position = position
 end
 
 function enemy:fire_step_1()
-  local sprite = self:get_sprite()
-  sprite:set_animation("arms_up")
+  self:get_sprite():set_animation("arms_up")
   timers[#timers + 1] = sol.timer.start(self, 1000, function() self:fire_step_2() end)
 end
 
 function enemy:fire_step_2()
-  local sprite = self:get_sprite()
   if math.random(100) <= fireball_proba then
-    sprite:set_animation("arms_out")
+    self:get_sprite():set_animation("arms_out")
   else
 
   end
@@ -94,20 +102,19 @@ function enemy:fire_step_3()
     self:create_enemy({x = 0, y = 21, breed = "fireball_triple", name = "carock_fireball_" .. nb_sons_created})
   end
 
-  throw_fire()
+  if throw_fire() ~= nil then throw_fire() end
   if self:get_life() <= initial_life / 2 then
     timers[#timers + 1] = sol.timer.start(self, 200, function()
-      if self:throw_fire() ~= nil then self:throw_fire() end
+      if throw_fire() ~= nil then throw_fire() end
     end)
     timers[#timers + 1] = sol.timer.start(self, 400, function()
-      if self:throw_fire() ~= nil then self:throw_fire() end
+      if throw_fire() ~= nil then throw_fire() end
     end)
   end
 end
 
 function enemy:receive_bounced_fireball(fireball)
-  if fireball:get_name():find("^carock_fireball")
-      and vulnerable then
+  if fireball:get_name():find("^carock_fireball") and vulnerable then
     -- Receive a fireball shot back by the hero: get hurt.
     for _, t in ipairs(timers) do t:stop() end
     fireball:remove()
@@ -127,9 +134,12 @@ function enemy:on_hurt(attack)
 end
 
 function enemy:end_dialog()
-  local sprite = self:get_sprite()
-  sprite:set_ignore_suspend(true)
-  self:get_game():start_dialog("carock.0.ruins_defeat", function()
-    sprite:fade_out(30, function() self:remove() end)
-  end)
+  if not game:get_value("b1240") then -- This dialog hasn't been heard before.
+    local sprite = self:get_sprite()
+    sprite:set_ignore_suspend(true)
+    self:get_game():start_dialog("carock.0.ruins_defeat", function()
+      sprite:fade_out(30, function() self:remove() end)
+      game:set_value("b1240", true)
+    end)
+  end
 end

@@ -1,5 +1,4 @@
 local enemy = ...
-local type
 
 -- A magic beam thrown by another enemy (Belahim).
 
@@ -33,7 +32,7 @@ end
 
 function enemy:on_attacking_hero(hero)
   -- Purple tunic makes hero nearly immune to dark magic.
-  if self:get_game():get_value("tunic_equipped") ~= 4 then then
+  if self:get_game():get_value("tunic_equipped") ~= 4 then
     hero:start_hurt(8)
   else
     hero:start_hurt(2)
