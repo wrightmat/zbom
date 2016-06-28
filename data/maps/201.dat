@@ -5377,7 +5377,7 @@ door{
   x = 1240,
   y = 416,
   direction = 2,
-  sprite = "entities/door_small_key",
+  sprite = "entities/door_shutter",
   savegame_variable = "b1039",
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_1_small_keys",

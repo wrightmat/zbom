@@ -4,7 +4,7 @@ local behavior = require("enemies/generic/toward_hero")
 -- Red Helmasaur.
 
 local properties = {
-  sprite = "enemies/helmasaur_red",
+  sprite = "enemies/helmasaur_purple",
   life = 10,
   damage = 16,
   normal_speed = 32,

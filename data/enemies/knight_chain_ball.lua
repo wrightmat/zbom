@@ -4,7 +4,7 @@ local chain = nil
 -- Knight with a chain and ball.
 
 function enemy:on_created()
-  self:set_life(10); self:set_damage(3)
+  self:set_life(20); self:set_damage(6)
   self:create_sprite("enemies/knight_green")
   self:set_size(48, 48); self:set_origin(24, 29)
   self:set_pushed_back_when_hurt(false)
@@ -23,8 +23,8 @@ function enemy:on_enabled()
     chain = self:create_enemy{
       name = chain_name,
       breed = "chain_and_ball",
-      x = -16,
-      y = -33,
+      x = -8,
+      y = -16,
     }
     chain:set_center_enemy(self)
     chain:set_enabled(true)

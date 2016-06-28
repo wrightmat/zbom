@@ -60,7 +60,7 @@ if miniboss_knight ~= nil then
 end
 
 if boss_carock ~= nil then
- function boss_carock:on_removed()
+ function boss_carock:on_dead()
   game:set_value("b1046", true)
   map:open_doors("door_boss")
   if boss_heart ~= nil then boss_heart:set_enabled(true) end
