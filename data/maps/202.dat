@@ -7855,6 +7855,66 @@ wall{
   stops_enemies = true,
 }
 
+enemy{
+  name = "helmasaur_1",
+  layer = 0,
+  x = 208,
+  y = 133,
+  direction = 3,
+  breed = "helmasaur_green",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "helmasaur_2",
+  layer = 0,
+  x = 528,
+  y = 133,
+  direction = 3,
+  breed = "helmasaur_green",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "helmasaur_3",
+  layer = 0,
+  x = 1392,
+  y = 85,
+  direction = 3,
+  breed = "helmasaur_green",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "helmasaur_4",
+  layer = 0,
+  x = 1776,
+  y = 85,
+  direction = 3,
+  breed = "helmasaur_green",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "helmasaur_5",
+  layer = 0,
+  x = 1664,
+  y = 501,
+  direction = 3,
+  breed = "helmasaur_green",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "helmasaur_6",
+  layer = 0,
+  x = 1728,
+  y = 501,
+  direction = 3,
+  breed = "helmasaur_green",
+  treasure_name = "random_enemy",
+}
+
 tile{
   layer = 1,
   x = 848,

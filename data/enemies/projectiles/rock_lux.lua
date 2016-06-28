@@ -3,7 +3,7 @@ local enemy = ...
 -- Rock made of light shot by another enemy (Octolux)
 
 function enemy:on_created()
-  self:set_life(1); self:set_damage(4)
+  self:set_life(1); self:set_damage(8)
   self:create_sprite("enemies/rock_lux")
   self:set_size(8, 8); self:set_origin(4, 4)
   self:set_invincible()

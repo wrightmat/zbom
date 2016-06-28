@@ -20193,6 +20193,36 @@ sensor{
   height = 48,
 }
 
+enemy{
+  name = "helmasaur_1",
+  layer = 0,
+  x = 1832,
+  y = 1173,
+  direction = 3,
+  breed = "helmasaur_blue",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "helmasaur_2",
+  layer = 0,
+  x = 912,
+  y = 1325,
+  direction = 3,
+  breed = "helmasaur_blue",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "helmasaur_3",
+  layer = 0,
+  x = 1136,
+  y = 853,
+  direction = 3,
+  breed = "helmasaur_blue",
+  treasure_name = "random_enemy",
+}
+
 tile{
   layer = 1,
   x = 1904,

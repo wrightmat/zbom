@@ -3,7 +3,7 @@ local enemy = ...
 -- Rock shot by another enemy (Octorok)
 
 function enemy:on_created()
-  self:set_life(1); self:set_damage(2)
+  self:set_life(1); self:set_damage(4)
   self:create_sprite("enemies/rock_small")
   self:set_size(8, 8); self:set_origin(4, 4)
   self:set_invincible()

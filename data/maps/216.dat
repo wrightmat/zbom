@@ -5404,6 +5404,16 @@ door{
   opening_condition_consumed = true,
 }
 
+enemy{
+  name = "helmasaur_1",
+  layer = 0,
+  x = 752,
+  y = 469,
+  direction = 3,
+  breed = "helmasaur_blue",
+  treasure_name = "random_enemy",
+}
+
 tile{
   layer = 1,
   x = 224,

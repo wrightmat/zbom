@@ -2510,7 +2510,7 @@ dialog{
   skip = "current",
   text = [[
 You traded a $r Crystal Ball$w
-for a $r hunk of meat$w!$0
+for a $r hunk of meat$w  !$0
 Impa thinks it's tasty, but
 I wouldn't try it.
 ]]
@@ -6232,8 +6232,8 @@ dialog{
   text = [[
 How do you get to the bottom of a lake,
 you ask? If you don't have the right
-equipment to swim, then why don't you just
-get rid of all that water?
+equipment to swim, then why don't you
+just get rid of all that water?
 ]]
 }
 
@@ -6244,10 +6244,10 @@ dialog{
 You want me to give you all of the
 answers? All I know is that there used to
 be a pump system in the sewers which run
-beneath Hyrule. But there are many accesses
-to that sewer, and I don't know which will
-lead you to the pump. I would search
-somewhere near the lake.$0
+beneath Hyrule. But there are many
+accesses to that sewer, and I don't know
+which will lead you to the pump. I would
+search somewhere near the lake.$0
 If only I had the  $r Crystal Ball$w I've
 always wanted, I would be able to see so
 much more!
@@ -6256,6 +6256,20 @@ much more!
 
 dialog{
   id = "impa.6.house",
+  text = [[
+Have you full explored the ruins that
+run under Hyrule? What do I mean by
+fully? I'm referring to all of the
+entrances, of course! There is at least
+one east of here in the mountain, one
+south of Hyrule Castle Town, and one in
+the woods north of your home. There may
+even be others that I don't know about!
+]]
+}
+
+dialog{
+  id = "impa.7.house",
   text = [[
 I see... A dark twisted wood. A forest
 which has always been twisted, but the

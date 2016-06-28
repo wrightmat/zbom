@@ -14004,6 +14004,16 @@ shop_treasure{
   dialog = "_item_description.stick_counter.1",
 }
 
+enemy{
+  name = "room9_helmasaur",
+  layer = 0,
+  x = 1392,
+  y = 1301,
+  direction = 3,
+  breed = "helmasaur_green",
+  treasure_name = "random_enemy",
+}
+
 tile{
   layer = 2,
   x = 600,

@@ -35,6 +35,7 @@ function map:on_started(destination)
           torch_1:get_sprite():set_animation("unlit")
           game:set_value("i1910", 7)
         end)
+      end
     end)
   end
 

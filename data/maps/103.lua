@@ -7,7 +7,7 @@ local game = map:get_game()
 
 function map:on_started(destination)
   -- Able to get on bridge to get Crystal Ball or after Bagu gives permission
-  if game:get_value("b2024") or game:get_value("b1611") then
+  if game:get_value("b2024") or game:get_value("b2025") or game:get_value("b1611") then
     npc_river_man:set_position(880,749)
   else
   -- Otherwise River Man blocks it!

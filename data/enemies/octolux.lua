@@ -6,7 +6,7 @@ local hero = map:get_hero()
 -- Octolux: More powerful enemy who wanders and shoots rocks.
 
 function enemy:on_created()
-  self:set_life(4); self:set_damage(6)
+  self:set_life(6); self:set_damage(12)
   self:create_sprite("enemies/octolux")
   self:set_size(16, 16); self:set_origin(8, 13)
   self:set_hurt_style("monster")
