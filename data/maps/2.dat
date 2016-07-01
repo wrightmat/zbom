@@ -6339,7 +6339,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1656,
+  x = 1664,
   y = 1432,
   width = 24,
   height = 40,
@@ -9510,7 +9510,7 @@ dynamic_tile{
 }
 
 npc{
-  name = "bed_2",
+  name = "house_bed",
   layer = 0,
   x = 1616,
   y = 1461,
@@ -9525,14 +9525,14 @@ sensor{
   x = 1640,
   y = 1461,
   width = 16,
-  height = 32,
+  height = 48,
 }
 
 destination{
-  name = "house_bed",
+  name = "house_bed_dest",
   layer = 0,
-  x = 1640,
-  y = 1485,
+  x = 1632,
+  y = 1477,
   direction = 0,
 }
 
@@ -9909,6 +9909,53 @@ custom_entity{
   direction = 0,
   sprite = "entities/quest_books",
   model = "quest_books",
+}
+
+npc{
+  name = "relic_bed",
+  layer = 0,
+  x = 1272,
+  y = 69,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/bed",
+}
+
+sensor{
+  name = "sensor_sleep_relic",
+  layer = 0,
+  x = 1296,
+  y = 69,
+  width = 16,
+  height = 48,
+}
+
+destination{
+  name = "relic_bed_dest",
+  layer = 0,
+  x = 1288,
+  y = 85,
+  direction = 0,
+}
+
+npc{
+  name = "snores_house",
+  layer = 0,
+  x = 1608,
+  y = 1461,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/bed_snores",
+}
+
+npc{
+  name = "snores_relic",
+  layer = 0,
+  x = 1264,
+  y = 69,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/bed_snores",
 }
 
 tile{

@@ -2413,7 +2413,7 @@ dialog{
   skip = "current",
   text = [[
 You traded the  $r Goron Vase$w
-for a $r Zora Scale$w!$0
+for a $r Zora Scale$w !$0
 Another race-specific thing, I
 wonder what you'll do with it?
 ]]
@@ -2425,7 +2425,7 @@ dialog{
   skip = "current",
   text = [[
 You traded the  $r Zora Scale$w for a
-$rFrozen Fish$w!$0  Finally something
+$rFrozen Fish$w !$0  Finally something
 with some mass appeal!
 ]]
 }
@@ -2447,7 +2447,7 @@ dialog{
   skip = "current",
   text = [[
 You traded the $r Culinary Arts of
-Hyrule book$w for a $r Rito Feather$w!$0
+Hyrule book$w for a $r Rito Feather$w !$0
 Finally a truly useful item! Maybe this
 trading stuff is done?
 ]]
@@ -2522,7 +2522,7 @@ dialog{
   skip = "current",
   text = [[
 You traded the  $r Tasty Meat$w
-for $r Dog Food$w!$0
+for $r Dog Food$w !$0
 Not exactly a fair trade, 
 but you felt bad for the
 hungry Moblin.
@@ -2535,7 +2535,7 @@ dialog{
   skip = "current",
   text = [[
 You traded the  $r Dog Food$w 
-for some yummy   $r Bananas$w!$0
+for some yummy   $r Bananas$w !$0
 Now we're getting somewhere!
 ]]
 }
@@ -2546,7 +2546,7 @@ dialog{
   skip = "current",
   text = [[
 You traded $r Bananas$w for a 
-$rGoron Vase$w!$0  It's quite
+$rGoron Vase$w !$0  It's quite
 beautiful but you're not sure who
 would want one besides a  $g Goron$w.
 ]]
@@ -2577,7 +2577,7 @@ as cut the damage you take!
 
 dialog{
   id = "_treasure.tunic.4",
-  icon = "62",
+  icon = "69",
   skip = "current",
   text = [[
 You got the  $r Purple Tunic$w!$0
@@ -4276,8 +4276,8 @@ dialog{
   id = "exit.cave_ordeals",
   skip = "current",
   text = [[
-Step on the warp tile in front of
-you to exit the perils of the cave -
+Step on the warp tile in front of you
+to exit the $v perils of the cave -
 if you return, you must begin again.
 ]]
 }
@@ -6601,7 +6601,7 @@ cleared our great temple of evil.$0
 But wait, you won't get far without a
 way to swim in the deep water. Take
 these, they are my people's sacred
-treasure - known as $r  Zora's Flippers$w.
+treasure - known as  $r  Zora's Flippers$w.
 ]]
 }
 

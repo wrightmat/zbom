@@ -67,6 +67,7 @@ function sensor_boss:on_activated()
     map:close_doors("boss_door")
     if map:get_entity("wallmaster") then wallmaster:remove() end -- Don't want hero taken during boss fight.
     if map:get_entity("wallmaster_2") then wallmaster_2:remove() end
+    game:set_value("final_boss_active", true)
   end
 end
 if boss_zirna ~= nil then
