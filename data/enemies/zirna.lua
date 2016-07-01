@@ -92,7 +92,7 @@ function enemy:on_restarted()
     last_action = rand
     if rand == 1 or rand == 2 then self:create_son()
     elseif (rand == 3 and map:get_id() == "218") then self:teleport("self")
-    elseif (rand == 4 and map:get_id() == "218") then self:teleport("hero")
+    elseif (rand == 4 and map:get_id() == "218" and self:get_game():get_value("final_boss_active")) then self:teleport("hero")
     else self:go_hero() end
   end
 end

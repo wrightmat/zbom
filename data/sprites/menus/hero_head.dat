@@ -4,27 +4,33 @@ animation{
   frame_delay = 300,
   frame_to_loop_on = 0,
   directions = {
-    { x = 0, y = 0, frame_width = 16, frame_height = 13, num_frames = 2 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 13, origin_x = 0, origin_y = 0, num_frames = 2 },
   },
 }
-
 animation{
   name = "tunic2",
   src_image = "menus/hero_head.png",
   frame_delay = 300,
   frame_to_loop_on = 0,
   directions = {
-    { x = 0, y = 13, frame_width = 16, frame_height = 13, num_frames = 2 },
+    { x = 0, y = 13, frame_width = 16, frame_height = 13, origin_x = 0, origin_y = 0, num_frames = 2 },
   },
 }
-
 animation{
   name = "tunic3",
   src_image = "menus/hero_head.png",
   frame_delay = 300,
   frame_to_loop_on = 0,
   directions = {
-    { x = 0, y = 26, frame_width = 16, frame_height = 13, num_frames = 2 },
+    { x = 0, y = 26, frame_width = 16, frame_height = 13, origin_x = 0, origin_y = 0, num_frames = 2 },
   },
 }
-
+animation{
+  name = "tunic4",
+  src_image = "menus/hero_head.png",
+  frame_delay = 300,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 39, frame_width = 16, frame_height = 13, origin_x = 0, origin_y = 0, num_frames = 2 },
+  },
+}

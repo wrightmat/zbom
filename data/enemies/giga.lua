@@ -1,7 +1,7 @@
 local enemy = ...
 local behavior = require("enemies/generic/toward_hero")
 
--- Giga: undead Goron.
+-- Giga: an undead Goron-like enemy.
 
 local properties = {
   sprite = "enemies/giga",

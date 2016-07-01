@@ -2278,6 +2278,15 @@ tile{
   pattern = "752",
 }
 
+tile{
+  layer = 0,
+  x = 1176,
+  y = 192,
+  width = 64,
+  height = 16,
+  pattern = "752",
+}
+
 wall{
   layer = 0,
   x = 1192,
@@ -2299,7 +2308,6 @@ destructible{
   sprite = "entities/pot",
   destruction_sound = "stone",
   weight = 1,
-  can_regenerate = true,
 }
 
 destructible{
@@ -2310,7 +2318,6 @@ destructible{
   sprite = "entities/pot",
   destruction_sound = "stone",
   weight = 1,
-  can_regenerate = true,
 }
 
 teletransporter{
@@ -2457,7 +2464,7 @@ sensor{
   name = "sensor_exit",
   layer = 0,
   x = 1200,
-  y = 101,
+  y = 109,
   width = 32,
   height = 16,
 }
@@ -2479,7 +2486,6 @@ destructible{
   sprite = "entities/pot",
   destruction_sound = "stone",
   weight = 1,
-  can_regenerate = true,
 }
 
 destination{
@@ -2579,7 +2585,6 @@ destructible{
   treasure_variant = 2,
   sprite = "entities/pot",
   destruction_sound = "stone",
-  can_regenerate = true,
   damage_on_enemies = 0,
 }
 
@@ -2592,7 +2597,6 @@ destructible{
   treasure_variant = 2,
   sprite = "entities/pot",
   destruction_sound = "stone",
-  can_regenerate = true,
   damage_on_enemies = 0,
 }
 
@@ -2605,7 +2609,6 @@ destructible{
   treasure_variant = 2,
   sprite = "entities/pot",
   destruction_sound = "stone",
-  can_regenerate = true,
   damage_on_enemies = 0,
 }
 
@@ -2617,7 +2620,6 @@ destructible{
   treasure_name = "fairy",
   sprite = "entities/pot",
   destruction_sound = "stone",
-  can_regenerate = true,
   damage_on_enemies = 0,
 }
 
@@ -2630,7 +2632,6 @@ destructible{
   sprite = "entities/pot",
   destruction_sound = "stone",
   weight = 1,
-  can_regenerate = true,
 }
 
 destructible{
@@ -2642,7 +2643,6 @@ destructible{
   sprite = "entities/pot",
   destruction_sound = "stone",
   weight = 1,
-  can_regenerate = true,
 }
 
 destructible{
@@ -2654,7 +2654,6 @@ destructible{
   sprite = "entities/pot",
   destruction_sound = "stone",
   weight = 1,
-  can_regenerate = true,
 }
 
 destructible{
@@ -2666,7 +2665,6 @@ destructible{
   sprite = "entities/pot",
   destruction_sound = "stone",
   weight = 1,
-  can_regenerate = true,
 }
 
 destructible{
@@ -2678,7 +2676,6 @@ destructible{
   sprite = "entities/pot",
   destruction_sound = "stone",
   weight = 1,
-  can_regenerate = true,
 }
 
 destructible{
@@ -2690,7 +2687,6 @@ destructible{
   sprite = "entities/pot",
   destruction_sound = "stone",
   weight = 1,
-  can_regenerate = true,
 }
 
 destructible{
@@ -2702,7 +2698,6 @@ destructible{
   sprite = "entities/pot",
   destruction_sound = "stone",
   weight = 1,
-  can_regenerate = true,
 }
 
 destructible{
@@ -2713,7 +2708,6 @@ destructible{
   sprite = "entities/pot",
   destruction_sound = "stone",
   weight = 1,
-  can_regenerate = true,
 }
 
 destructible{
@@ -2725,7 +2719,6 @@ destructible{
   sprite = "entities/pot",
   destruction_sound = "stone",
   weight = 1,
-  can_regenerate = true,
 }
 
 npc{
@@ -2736,6 +2729,53 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/quest_bubble",
+}
+
+destructible{
+  name = "room5_pot_5",
+  layer = 0,
+  x = 1200,
+  y = 205,
+  treasure_name = "arrow",
+  treasure_variant = 2,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  damage_on_enemies = 0,
+}
+
+destructible{
+  name = "room5_pot_6",
+  layer = 0,
+  x = 1216,
+  y = 205,
+  treasure_name = "magic_flask",
+  treasure_variant = 2,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  damage_on_enemies = 0,
+}
+
+destructible{
+  name = "room5_pot_7",
+  layer = 0,
+  x = 1184,
+  y = 205,
+  treasure_name = "bomb",
+  treasure_variant = 2,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  damage_on_enemies = 0,
+}
+
+destructible{
+  name = "room5_pot_8",
+  layer = 0,
+  x = 1232,
+  y = 205,
+  treasure_name = "fairy",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  damage_on_enemies = 0,
 }
 
 wall{

@@ -134,7 +134,7 @@ function room1_dest:on_activated()
 	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="bari_blue",name="enemy" })
       end
     elseif game:get_value("i1609") == 46 then
-      -- Room 46: Redeads and skeletors
+      -- Room 46: Undead Hoarde
       for i=1,4 do
 	ex = random_8(96,256)
 	ey = random_8(96,240)
@@ -144,6 +144,11 @@ function room1_dest:on_activated()
 	ex = random_8(96,256)
 	ey = random_8(96,240)
 	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="skeletor",name="enemy" })
+      end
+      for i=1,2 do
+	ex = random_8(96,256)
+	ey = random_8(96,240)
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="giga",name="enemy" })
       end
     end
 end
@@ -248,8 +253,8 @@ function room2_dest:on_activated()
 	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="keese_ice",name="enemy" })
       end
       for i=1,2 do
-	ex = random_8(72,288)
-	ey = random_8(464,600)
+	ex = random_8(472,680)
+	ey = random_8(96,240)
 	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="wizzrobe_ice",name="enemy" })
       end
     elseif game:get_value("i1609") == 42 then
@@ -272,16 +277,21 @@ function room2_dest:on_activated()
       ey = random_8(96,240)
       map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="poe",name="enemy" })
     elseif game:get_value("i1609") == 47 then
-      -- Room 47: Gigas and rats
-      for i=1,4 do
+      -- Room 47: Rats, et al.
+      for i=1,3 do
 	ex = random_8(472,680)
 	ey = random_8(96,240)
-	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="giga",name="enemy" })
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="helmasaur_purple",name="enemy" })
       end
-      for i=1,4 do
+      for i=1,6 do
 	ex = random_8(472,680)
 	ey = random_8(96,240)
 	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="rat",name="enemy" })
+      end
+      for i=1,3 do
+	ex = random_8(472,680)
+	ey = random_8(96,240)
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="chuchu_dark",name="enemy" })
       end
     end
 end
@@ -367,7 +377,7 @@ function room3_dest:on_activated()
       for i=1,8 do
 	ex = random_8(72,288)
 	ey = random_8(464,600)
-	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="hardhat_red",name="enemy" })
+	map:create_enemy({x=ex,y=ey,layer=0,direction=0,breed="hardhat_beetle_red",name="enemy" })
       end
     elseif game:get_value("i1609") == 48 then
       -- Room 48: Leevers and Lynels
@@ -517,7 +527,7 @@ end
 
 function room5_dest:on_activated()
   game:set_value("i1609", game:get_value("i1609")+1)
-  if game:get_value("i1609") == 50 then hero:transport(169, "treasure_dest") end
+  if game:get_value("i1609") >= 50 then hero:transport(169, "treasure_dest") end
 end
 
 function room5_exit:on_activated()
@@ -561,6 +571,6 @@ end
 function sensor_exit:on_activated()
   game:set_dialog_style("default")
   if game:get_hero():get_direction() == 1 then
-    game:start_dialog("exit.cave_ordeals")
+    game:start_dialog("exit.cave_ordeals", game:get_value("i1609"))
   end
 end
