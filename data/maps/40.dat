@@ -9325,54 +9325,10 @@ destination{
 }
 
 dynamic_tile{
-  name = "night_window",
-  layer = 0,
-  x = 144,
-  y = 416,
-  pattern = "2173",
-  width = 24,
-  height = 16,
-  enabled_at_start = false,
-}
-
-dynamic_tile{
   name = "night_window_2",
   layer = 0,
   x = 344,
   y = 632,
-  pattern = "2173",
-  width = 24,
-  height = 16,
-  enabled_at_start = false,
-}
-
-dynamic_tile{
-  name = "night_window_4",
-  layer = 0,
-  x = 128,
-  y = 888,
-  pattern = "2173",
-  width = 24,
-  height = 16,
-  enabled_at_start = false,
-}
-
-dynamic_tile{
-  name = "night_window_5",
-  layer = 0,
-  x = 688,
-  y = 744,
-  pattern = "2173",
-  width = 24,
-  height = 16,
-  enabled_at_start = false,
-}
-
-dynamic_tile{
-  name = "night_window_6",
-  layer = 0,
-  x = 968,
-  y = 528,
   pattern = "2173",
   width = 24,
   height = 16,
@@ -9611,6 +9567,50 @@ custom_entity{
   direction = 0,
   sprite = "entities/tree_apple",
   model = "tree_apple",
+}
+
+dynamic_tile{
+  name = "door_1",
+  layer = 0,
+  x = 176,
+  y = 416,
+  pattern = "1120",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "door_2",
+  layer = 0,
+  x = 160,
+  y = 888,
+  pattern = "1120",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "door_3",
+  layer = 0,
+  x = 720,
+  y = 744,
+  pattern = "1120",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "door_4",
+  layer = 0,
+  x = 1000,
+  y = 528,
+  pattern = "1120",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
 }
 
 tile{

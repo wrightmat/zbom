@@ -30,7 +30,10 @@ function map:on_started(destination)
     end
     butterfly_1:remove()
     butterfly_2:remove()
-
+    door_1:set_enabled(true)
+    door_2:set_enabled(true)
+    door_3:set_enabled(true)
+    door_4:set_enabled(true)
   else
     moth_1:remove()
     moth_2:remove()
