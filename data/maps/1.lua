@@ -79,11 +79,13 @@ function map:on_started(destination)
 
   if destination == from_intro then
     bed:get_sprite():set_animation("hero_sleeping")
+    bed:get_sprite():set_direction(0)
     hero:freeze()
     hero:set_visible(false)
     sol.timer.start(1000, function()
       snores:remove()
       bed:get_sprite():set_animation("hero_waking")
+      bed:get_sprite():set_direction(0)
       sleep_timer = sol.timer.start(1000, function()
         sensor_sleep:set_enabled(false)
         hero:set_visible(true)
