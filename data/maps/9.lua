@@ -116,7 +116,6 @@ function npc_rudy:on_interaction()
 end
 
 function sensor_leaving:on_activated()
-  game:set_dialog_style("default")
   if game:get_ability("sword") == 0 then
     game:start_dialog("rudy.5.sword_leaving", function()
       hero:start_treasure("sword", 2)

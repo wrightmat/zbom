@@ -272,23 +272,23 @@ function sensor_sleep:on_activated()
         if game:get_value("i1026") < 1 then game:set_max_stamina(game:get_max_stamina()-20) end
         if game:get_value("i1026") > 3 then game:set_max_stamina(game:get_max_stamina()+20) end
         game:set_value("i1026", 0)
-        game:switch_time_of_day()
-        if game:get_time_of_day() == "day" then
-          for entity in map:get_entities("night_") do
-            entity:set_enabled(false)
-          end
-          night_overlay = nil
-        else
-          for entity in map:get_entities("night_") do
-            entity:set_enabled(true)
-          end
-        end
       end
     end)
   end
 end
 
 function house_bed:on_activated()
+  game:switch_time_of_day()
+  if game:get_time_of_day() == "day" then
+    for entity in map:get_entities("night_") do
+      entity:set_enabled(false)
+    end
+    night_overlay = nil
+  else
+    for entity in map:get_entities("night_") do
+      entity:set_enabled(true)
+    end
+  end
   snores:set_enabled(true)
   bed:set_enabled(true)
   bed:get_sprite():set_animation("hero_sleeping")
@@ -320,23 +320,23 @@ function sensor_sleep_impa:on_activated()
         if game:get_value("i1026") < 1 then game:set_max_stamina(game:get_max_stamina()-20) end
         if game:get_value("i1026") > 3 then game:set_max_stamina(game:get_max_stamina()+20) end
         game:set_value("i1026", 0)
-        game:switch_time_of_day()
-        if game:get_time_of_day() == "day" then
-          for entity in map:get_entities("night_") do
-            entity:set_enabled(false)
-          end
-          night_overlay = nil
-        else
-          for entity in map:get_entities("night_") do
-            entity:set_enabled(true)
-          end
-        end
       end
     end)
   end
 end
 
 function impa_bed_dest:on_activated()
+  game:switch_time_of_day()
+  if game:get_time_of_day() == "day" then
+    for entity in map:get_entities("night_") do
+      entity:set_enabled(false)
+    end
+    night_overlay = nil
+  else
+    for entity in map:get_entities("night_") do
+      entity:set_enabled(true)
+    end
+  end
   impa_snores:set_enabled(true)
   impa_bed:set_enabled(true)
   impa_bed:get_sprite():set_animation("hero_sleeping")

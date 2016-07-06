@@ -81,7 +81,6 @@ function map:on_started(destination)
 end
 
 function npc_dargor:on_interaction()
-  game:set_dialog_style("default")
   if game:get_value("i1914") == 1 then
     sol.audio.play_sound("goron_happy")
     game:start_dialog("dargor.1.house", function()
@@ -105,7 +104,6 @@ function npc_dargor:on_interaction()
 end
 
 function npc_galen:on_interaction()
-  game:set_dialog_style("default")
   if game:get_value("i1029") == 1 then
     sol.audio.play_sound("goron_sad")
     game:start_dialog("galen.1.house", function()
@@ -190,6 +188,17 @@ function npc_goron_trading:on_interaction()
 end
 
 function inn_bed:on_activated()
+  game:switch_time_of_day()
+  if game:get_time_of_day() == "day" then
+    for entity in map:get_entities("night_") do
+      entity:set_enabled(false)
+    end
+    night_overlay = nil
+  else
+    for entity in map:get_entities("night_") do
+      entity:set_enabled(true)
+    end
+  end
   snores:set_enabled(true)
   bed:set_enabled(true)
   bed:get_sprite():set_animation("hero_sleeping")
@@ -222,17 +231,6 @@ function innkeeper_sensor:on_interaction()
       if game:get_value("i1026") > 5 then game:set_max_stamina(game:get_max_stamina()+20) end
       game:set_stamina(game:get_max_stamina())
       game:set_value("i1026", 0)
-      game:switch_time_of_day()
-      if game:get_time_of_day() == "day" then
-        for entity in map:get_entities("night_") do
-          entity:set_enabled(false)
-        end
-        night_overlay = nil
-      else
-        for entity in map:get_entities("night_") do
-          entity:set_enabled(true)
-        end
-      end
     end
   end)
 end
