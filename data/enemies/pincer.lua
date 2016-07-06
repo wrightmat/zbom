@@ -8,11 +8,10 @@ local body_sprite = nil
 
 function enemy:on_created()
   self:set_life(5); self:set_damage(4)
-  self:create_sprite("enemies/pincer")
+  local sprite = self:create_sprite("enemies/pincer")
   self:set_size(16, 16); self:set_origin(8, 13)
-  self:get_sprite():set_animation("shaking")
   self:set_obstacle_behavior("flying") -- allows to traverse holes
-
+  sprite:set_animation("shaking")
   body_sprite = sol.sprite.create("enemies/pincer")
   body_sprite:set_animation("body")
 end
