@@ -4826,39 +4826,6 @@ sensor{
 }
 
 dynamic_tile{
-  name = "night_entrance_6",
-  layer = 0,
-  x = 904,
-  y = 176,
-  pattern = "2172",
-  width = 16,
-  height = 16,
-  enabled_at_start = false,
-}
-
-dynamic_tile{
-  name = "night_entrance_5",
-  layer = 0,
-  x = 432,
-  y = 240,
-  pattern = "2172",
-  width = 16,
-  height = 16,
-  enabled_at_start = false,
-}
-
-dynamic_tile{
-  name = "night_entrance_4",
-  layer = 0,
-  x = 400,
-  y = 504,
-  pattern = "2172",
-  width = 16,
-  height = 16,
-  enabled_at_start = false,
-}
-
-dynamic_tile{
   name = "night_entrance_3",
   layer = 0,
   x = 160,
@@ -4881,7 +4848,7 @@ dynamic_tile{
 }
 
 dynamic_tile{
-  name = "night_entrance",
+  name = "night_shop_door",
   layer = 0,
   x = 160,
   y = 144,

@@ -7283,7 +7283,7 @@ sensor{
 }
 
 dynamic_tile{
-  name = "night_entrance",
+  name = "night_ranch_door",
   layer = 0,
   x = 368,
   y = 480,
@@ -8264,6 +8264,8 @@ custom_entity{
   layer = 0,
   x = 248,
   y = 333,
+  width = 16,
+  height = 16,
   direction = 0,
   sprite = "entities/quest_plants",
   model = "quest_plants",
@@ -8274,6 +8276,8 @@ custom_entity{
   layer = 0,
   x = 256,
   y = 581,
+  width = 16,
+  height = 16,
   direction = 0,
   sprite = "entities/tree_apple",
   model = "tree_apple",

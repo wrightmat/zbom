@@ -8759,29 +8759,7 @@ tile{
 }
 
 dynamic_tile{
-  name = "night_entrance_6",
-  layer = 0,
-  x = 720,
-  y = 744,
-  pattern = "2172",
-  width = 16,
-  height = 16,
-  enabled_at_start = false,
-}
-
-dynamic_tile{
-  name = "night_entrance_5",
-  layer = 0,
-  x = 1000,
-  y = 528,
-  pattern = "2172",
-  width = 16,
-  height = 16,
-  enabled_at_start = false,
-}
-
-dynamic_tile{
-  name = "night_entrance_4",
+  name = "night_collector_door",
   layer = 0,
   x = 936,
   y = 248,
@@ -8792,32 +8770,10 @@ dynamic_tile{
 }
 
 dynamic_tile{
-  name = "night_entrance_3",
-  layer = 0,
-  x = 176,
-  y = 416,
-  pattern = "2172",
-  width = 16,
-  height = 16,
-  enabled_at_start = false,
-}
-
-dynamic_tile{
-  name = "night_entrance_2",
+  name = "night_office_door",
   layer = 0,
   x = 384,
   y = 632,
-  pattern = "2172",
-  width = 16,
-  height = 16,
-  enabled_at_start = false,
-}
-
-dynamic_tile{
-  name = "night_entrance",
-  layer = 0,
-  x = 160,
-  y = 888,
   pattern = "2172",
   width = 16,
   height = 16,
@@ -9420,6 +9376,8 @@ custom_entity{
   layer = 0,
   x = 572,
   y = 525,
+  width = 16,
+  height = 16,
   direction = 3,
   sprite = "npc/ordon_pim",
   model = "npc_pim",
@@ -9564,6 +9522,8 @@ custom_entity{
   layer = 0,
   x = 288,
   y = 341,
+  width = 16,
+  height = 16,
   direction = 0,
   sprite = "entities/tree_apple",
   model = "tree_apple",
@@ -10032,6 +9992,8 @@ custom_entity{
   layer = 1,
   x = 392,
   y = 477,
+  width = 16,
+  height = 16,
   direction = 3,
   sprite = "npc/butterfly_purple",
   model = "butterfly",
@@ -10042,6 +10004,8 @@ custom_entity{
   layer = 1,
   x = 768,
   y = 341,
+  width = 16,
+  height = 16,
   direction = 3,
   sprite = "npc/butterfly_red",
   model = "butterfly",
