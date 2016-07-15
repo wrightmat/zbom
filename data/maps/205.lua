@@ -166,8 +166,10 @@ end
 for enemy in map:get_entities("tektite_key4") do
   enemy.on_dead = function()
     if not map:has_entities("tektite_key4") and not game:get_value("b1103") then
-      chest_key_4:set_enabled(true)
-      sol.audio.play_sound("chest_appears")
+      map:move_camera(200, 285, 250, function()
+        chest_key_4:set_enabled(true)
+        sol.audio.play_sound("chest_appears")
+      end, 250, 250)
     end
   end
 end
@@ -205,8 +207,10 @@ end
 for enemy in map:get_entities("dodongo") do
   enemy.on_dead = function()
     if not map:has_entities("dodongo_alchemy") and not game:get_value("b1111") then
-      chest_alchemy:set_enabled(true)
-      sol.audio.play_sound("chest_appears")
+      map:move_camera(1456, 589, 250, function()
+        chest_alchemy:set_enabled(true)
+        sol.audio.play_sound("chest_appears")
+      end, 250, 250)
     end
   end
 end
