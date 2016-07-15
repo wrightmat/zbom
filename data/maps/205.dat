@@ -12591,6 +12591,8 @@ custom_entity{
   layer = 0,
   x = 296,
   y = 1596,
+  width = 16,
+  height = 16,
   direction = 3,
   sprite = "entities/statue_goron",
   model = "statue_goron",
@@ -12601,6 +12603,8 @@ custom_entity{
   layer = 0,
   x = 1128,
   y = 1372,
+  width = 16,
+  height = 16,
   direction = 3,
   sprite = "entities/statue_goron",
   model = "statue_goron",
@@ -12700,6 +12704,8 @@ custom_entity{
   layer = 0,
   x = 232,
   y = 716,
+  width = 16,
+  height = 16,
   direction = 3,
   sprite = "entities/statue_goron",
   model = "statue_goron",
@@ -12710,6 +12716,8 @@ custom_entity{
   layer = 0,
   x = 504,
   y = 716,
+  width = 16,
+  height = 16,
   direction = 3,
   sprite = "entities/statue_goron",
   model = "statue_goron",
@@ -12720,6 +12728,8 @@ custom_entity{
   layer = 0,
   x = 920,
   y = 964,
+  width = 16,
+  height = 16,
   direction = 3,
   sprite = "entities/statue_goron",
   model = "statue_goron",
@@ -12730,6 +12740,8 @@ custom_entity{
   layer = 0,
   x = 920,
   y = 1068,
+  width = 16,
+  height = 16,
   direction = 3,
   sprite = "entities/statue_goron",
   model = "statue_goron",
@@ -12740,6 +12752,8 @@ custom_entity{
   layer = 0,
   x = 728,
   y = 748,
+  width = 16,
+  height = 16,
   direction = 3,
   sprite = "entities/statue_goron",
   model = "statue_goron",
@@ -12750,6 +12764,8 @@ custom_entity{
   layer = 0,
   x = 584,
   y = 476,
+  width = 16,
+  height = 16,
   direction = 3,
   sprite = "entities/statue_goron",
   model = "statue_goron",
@@ -12760,6 +12776,8 @@ custom_entity{
   layer = 0,
   x = 1464,
   y = 492,
+  width = 16,
+  height = 16,
   direction = 3,
   sprite = "entities/statue_goron",
   model = "statue_goron",
@@ -12770,6 +12788,8 @@ custom_entity{
   layer = 0,
   x = 336,
   y = 340,
+  width = 16,
+  height = 16,
   direction = 3,
   sprite = "entities/statue_goron",
   model = "statue_goron",
@@ -13919,82 +13939,10 @@ destructible{
 
 wall{
   layer = 0,
-  x = 504,
-  y = 1248,
-  width = 8,
-  height = 176,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 224,
-  y = 1416,
-  width = 280,
-  height = 8,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 224,
-  y = 1248,
-  width = 192,
-  height = 8,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 496,
-  y = 1024,
-  width = 144,
-  height = 8,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 488,
-  y = 928,
-  width = 8,
-  height = 104,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 320,
-  y = 928,
-  width = 168,
-  height = 8,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
   x = 400,
   y = 1096,
   width = 240,
   height = 8,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 656,
-  y = 664,
-  width = 144,
-  height = 8,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 792,
-  y = 672,
-  width = 8,
-  height = 152,
   stops_enemies = true,
 }
 
@@ -14168,6 +14116,118 @@ enemy{
   direction = 3,
   breed = "keese_fire",
   treasure_name = "random_mountain",
+}
+
+wall{
+  layer = 1,
+  x = 504,
+  y = 1248,
+  width = 8,
+  height = 176,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 224,
+  y = 1416,
+  width = 280,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 224,
+  y = 1248,
+  width = 192,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 864,
+  y = 1248,
+  width = 8,
+  height = 416,
+  stops_npcs = true,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 872,
+  y = 1248,
+  width = 336,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1208,
+  y = 1248,
+  width = 8,
+  height = 416,
+  stops_npcs = true,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 872,
+  y = 1656,
+  width = 336,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 320,
+  y = 928,
+  width = 168,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 488,
+  y = 928,
+  width = 8,
+  height = 104,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 496,
+  y = 1024,
+  width = 144,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 792,
+  y = 672,
+  width = 8,
+  height = 152,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 656,
+  y = 664,
+  width = 144,
+  height = 8,
+  stops_enemies = true,
 }
 
 tile{
@@ -15474,45 +15534,5 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/goron_ghost",
-}
-
-wall{
-  layer = 2,
-  x = 864,
-  y = 1248,
-  width = 8,
-  height = 416,
-  stops_npcs = true,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 2,
-  x = 1208,
-  y = 1248,
-  width = 8,
-  height = 416,
-  stops_npcs = true,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 2,
-  x = 872,
-  y = 1248,
-  width = 336,
-  height = 8,
-  stops_npcs = true,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 2,
-  x = 872,
-  y = 1656,
-  width = 336,
-  height = 8,
-  stops_npcs = true,
-  stops_enemies = true,
 }
 
