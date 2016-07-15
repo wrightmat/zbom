@@ -6817,65 +6817,10 @@ dynamic_tile{
 }
 
 dynamic_tile{
-  name = "night_entrance_6",
-  layer = 0,
-  x = 944,
-  y = 248,
-  pattern = "1778",
-  width = 16,
-  height = 16,
-  enabled_at_start = false,
-}
-
-dynamic_tile{
   name = "night_entrance_5",
   layer = 0,
   x = 864,
   y = 488,
-  pattern = "1778",
-  width = 16,
-  height = 16,
-  enabled_at_start = false,
-}
-
-dynamic_tile{
-  name = "night_entrance_4",
-  layer = 0,
-  x = 912,
-  y = 704,
-  pattern = "1778",
-  width = 16,
-  height = 16,
-  enabled_at_start = false,
-}
-
-dynamic_tile{
-  name = "night_entrance_3",
-  layer = 0,
-  x = 784,
-  y = 952,
-  pattern = "1778",
-  width = 16,
-  height = 16,
-  enabled_at_start = false,
-}
-
-dynamic_tile{
-  name = "night_entrance_2",
-  layer = 0,
-  x = 496,
-  y = 992,
-  pattern = "1778",
-  width = 16,
-  height = 16,
-  enabled_at_start = false,
-}
-
-dynamic_tile{
-  name = "night_entrance",
-  layer = 0,
-  x = 232,
-  y = 912,
   pattern = "1778",
   width = 16,
   height = 16,
@@ -7582,6 +7527,8 @@ custom_entity{
   layer = 0,
   x = 792,
   y = 133,
+  width = 16,
+  height = 16,
   direction = 0,
   model = "ocarina_patch",
 }
