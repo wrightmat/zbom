@@ -20,33 +20,38 @@ for enemy in map:get_entities("pincer") do
 end
 
 function npc_zora_1:on_interaction()
-  game:set_dialog_style("default")
   sol.audio.play_sound("zora")
   if game:get_item("tunic"):get_variant() < 3 then
     game:start_dialog("zora.0.tunic")
   else
-    game:start_dialog("zora.0.domain")
+    local rand = math.random(4)
+    if rand == last_rand then rand = math.random(4) end
+    game:start_dialog("zora.0.domain_"..rand)
+    local last_rand = rand
   end
 end
 
 function npc_zora_2:on_interaction()
-  game:set_dialog_style("default")
   sol.audio.play_sound("zora")
   if game:get_item("tunic"):get_variant() < 3 then
     game:start_dialog("zora.0.tunic")
   else
-    game:start_dialog("zora.0.domain")
+    local rand = math.random(4)
+    if rand == last_rand then rand = math.random(4) end
+    game:start_dialog("zora.0.domain_"..rand)
+    local last_rand = rand
   end
 end
 
 function npc_zora_3:on_interaction()
-  game:set_dialog_style("default")
   sol.audio.play_sound("zora")
-  game:start_dialog("zora.0.domain")
+  local rand = math.random(4)
+  if rand == last_rand then rand = math.random(4) end
+  game:start_dialog("zora.0.domain_"..rand)
+  local last_rand = rand
 end
 
 function npc_zora_trading:on_interaction()
-  game:set_dialog_style("default")
   sol.audio.play_sound("zora")
   if game:get_value("b2029") then
     game:start_dialog("zora.0.trading", function(answer)

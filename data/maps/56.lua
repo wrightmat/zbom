@@ -67,8 +67,13 @@ function npc_rito_3:on_interaction()
 end
 
 function npc_rito_carpenter:on_interaction()
-  if game:is_dungeon_finished(7) then
+  if game:is_dungeon_finished(7) and game:get_value("i1926") >= 3 then
     game:start_dialog("rito_carpenter.2.septen")
+    sol.timer.start(game, 360000, function()
+      -- After a real-time hour, the carpenter will return to the bridge
+      -- (or speaking to the architect again with force it).
+      game:set_value("i1926", 3)
+    end)
   elseif game:get_value("i1926") >= 1 then
     game:start_dialog("rito_carpenter.1.septen")
     game:set_value("i1927", 2)

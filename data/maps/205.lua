@@ -2,34 +2,31 @@ local map = ...
 local game = map:get_game()
 local warned = false
 
+local shadow = sol.surface.create(1696, 1760)
+local lights = sol.surface.create(1696, 1760)
+shadow:set_blend_mode("color_modulate")
+lights:set_blend_mode("additive_blending")
+
 --------------------------------------
 -- Dungeon 4: Mountaintop Mausoleum --
 --------------------------------------
 
 if game:get_value("i1029") == nil then game:set_value("i1029", 0) end
-local dark_overlay = nil
-local lantern_overlay = nil
-
-if game:has_item("lamp") then
-  if lantern_overlay == nil and game:get_magic() > 0 then
-    lantern_overlay = sol.surface.create("entities/dark.png")
-  else
-    dark_overlay = sol.surface.create(640,480)
-    dark_overlay:set_opacity(0.9 * 255)
-    dark_overlay:fill_color{0, 0, 0}
-  end
-else
-  game:start_dialog("_cannot_see_need_lamp")
-  dark_overlay = sol.surface.create(640,480)
-  dark_overlay:set_opacity(0.9 * 255)
-  dark_overlay:fill_color{0, 0, 0}
-end
-if game:get_value("b1117") then
-  if lantern_overlay then lantern_overlay:clear() end
-  if dark_overlay then dark_overlay:clear() end
-end
 
 function map:on_started(destination)
+  -- Only need to build the shadow surface once, but need to update the
+  -- statues periodically (not every draw cycle!) in case one is destroyed
+  glow_timer = sol.timer.start(map, 400, function()
+    lights:clear()
+    for e in map:get_entities("statue_") do
+      local xx,yy = e:get_position()
+      local sp = sol.sprite.create("entities/torch_light")
+      sp:set_blend_mode("alpha_blending")
+      sp:draw(lights, xx-32, yy-40)
+    end
+    return true
+  end)
+  
   if game:get_value("i1029") <= 4 then
     npc_goron_ghost:remove()
   elseif game:get_value("i1029") == 5 then
@@ -133,8 +130,6 @@ if boss_vire_sorceror ~= nil then
   sol.audio.play_music("temple_mausoleum")
   sol.timer.start(2000, function()
     game:start_dialog("_mausoleum_outro", function()
-      lantern_overlay:fade_out(50)
-      lantern_overlay:clear()
       map:set_entities_enabled("dodongo", true)
     end)
   end)
@@ -146,25 +141,6 @@ function door_key2_1:on_opened()
 end
 function door_key1_1:on_opened()
   map:set_doors_open("door_shutter_key2")
-end
-
-function map:on_update()
-  if game:get_magic() <= 0 and not game:get_value("b1117") then
-    if lantern_overlay then
-      lantern_overlay:clear()
-      lantern_overlay = nil
-      if dark_overlay == nil then
-        dark_overlay = sol.surface.create(640,480)
-        dark_overlay:set_opacity(0.9 * 255)
-        dark_overlay:fill_color{0, 0, 0}
-      end
-    elseif not warned then
-      game:start_dialog("_cannot_see_need_magic")
-      warned = true
-    end
-  else
-    if game:has_item("lamp") and lantern_overlay == nil then lantern_overlay = sol.surface.create("entities/dark.png") end
-  end
 end
 
 for enemy in map:get_entities("tektite_key3") do
@@ -224,29 +200,24 @@ for enemy in map:get_entities("dodongo") do
 end
 
 function map:on_draw(dst_surface)
-  local screen_width, screen_height = dst_surface:get_size()
-  local camera_x, camera_y = map:get_camera():get_position()
-
-  -- Draw the lantern light that follows the hero.
-  if lantern_overlay then
-    local hero = map:get_entity("hero")
-    local hero_x, hero_y = hero:get_center_position()
-    local x = 320 - hero_x + camera_x
-    local y = 240 - hero_y + camera_y
-    lantern_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
-  elseif dark_overlay then
-    dark_overlay:draw(dst_surface, x, y)
-  end
-end
-
-function map:on_finished()
-  if lantern_overlay then
-    lantern_overlay:fade_out()
-    lantern_overlay = nil
-  end
-  if dark_overlay then
-    dark_overlay:fade_out()
-    dark_overlay = nil
+  if not game:get_value("b1117") then -- If dungeon hasn't been defeated then the lights are out!
+    local x,y = map:get_camera():get_position()
+    local w,h = map:get_camera():get_size()
+    shadow:clear()
+    shadow:fill_color({032,064,128,255})
+    
+    if game:has_item("lamp") and game:get_magic() > 0 then
+      local xx,yy = map:get_entity("hero"):get_position()
+      local sp = sol.sprite.create("entities/torch_light_hero")
+      sp:set_blend_mode("alpha_blending")
+      sp:draw(lights, xx-64, yy-64)
+    else
+      game:start_dialog("_cannot_see_need_magic")
+      warned = true
+    end
+    
+    lights:draw_region(x,y,w,h,shadow,x,y)
+    shadow:draw_region(x,y,w,h,dst_surface)
   end
 end
 
