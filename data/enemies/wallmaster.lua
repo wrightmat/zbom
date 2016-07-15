@@ -58,6 +58,8 @@ function enemy:on_restarted()
     shadow = map:create_custom_entity({
       x = hero_x,
       y = hero_y,
+      width = 32,
+      height = 8,
       layer = hero_layer,
       direction = 0,
     })

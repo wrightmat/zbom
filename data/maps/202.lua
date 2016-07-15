@@ -1,5 +1,11 @@
 local map = ...
 local game = map:get_game()
+local warned = false
+
+local shadow = sol.surface.create(2256, 1072)
+local lights = sol.surface.create(2256, 1072)
+shadow:set_blend_mode("color_modulate")
+lights:set_blend_mode("additive_blending")
 
 --------------------------------
 -- Dungeon 1: Hyrulean Sewers --
@@ -8,23 +14,28 @@ local game = map:get_game()
 if game:get_value("i1027") == nil then game:set_value("i1027", 0) end
 if game:get_value("i1030") == nil then game:set_value("i1030", 0) end
 if game:get_value("i1032") == nil then game:set_value("i1032", 0) end
-local lantern_overlay = nil
-
-if game:has_item("lamp") then
-  lantern_overlay = sol.surface.create("entities/dark.png")
-else
-  game:start_dialog("_cannot_see_need_lamp")
-  lantern_overlay = sol.surface.create(640,480)
-  lantern_overlay:set_opacity(0.98 * 255)
-  lantern_overlay:fill_color{0, 0, 0}
-end
 
 function map:on_started(destination)
+  -- Only need to build the shadow surface once, but need to update the
+  -- glowing things periodically (not every draw cycle!) in case of update,
+  glow_timer = sol.timer.start(map, 400, function()
+    lights:clear()
+    for e in map:get_entities("torch_") do
+      if e:get_sprite():get_animation() == "lit" then
+        local xx,yy = e:get_position()
+        local sp = sol.sprite.create("entities/torch_light")
+        sp:set_blend_mode("alpha_blending")
+        sp:draw(lights, xx-32, yy-40)
+      end
+    end
+    return true
+  end)
+  
   if not game:get_value("b1036") then boss_heart:set_enabled(false) end
   if not game:get_value("b1043") then chest_big_key:set_enabled(false) end
   if not game:get_value("b1047") then boss_big_poe:set_enabled(false) end
   if not game:get_value("b1786") then chest_alchemy_stone:set_enabled(false) end
-
+  
   if game:get_value("i1027") <= 4 then
     tentacle_sword_1:set_enabled(false)
     tentacle_sword_2:set_enabled(false)
@@ -121,19 +132,21 @@ function map:on_obtained_treasure(item, variant, savegame_variable)
 end
 
 function map:on_draw(dst_surface)
-  if lantern_overlay ~= nil then
-    local screen_width, screen_height = dst_surface:get_size()
-    local hero_x, hero_y = map:get_entity("hero"):get_center_position()
-    local camera_x, camera_y = map:get_camera():get_position()
-    local x = 320 - hero_x + camera_x
-    local y = 240 - hero_y + camera_y
-    lantern_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
+  local x,y = map:get_camera():get_position()
+  local w,h = map:get_camera():get_size()
+  shadow:clear()
+  shadow:fill_color({032,064,128,255})
+    
+  if game:has_item("lamp") and game:get_magic() > 0 then
+    local xx,yy = map:get_entity("hero"):get_position()
+    local sp = sol.sprite.create("entities/torch_light_hero")
+    sp:set_blend_mode("alpha_blending")
+    sp:draw(lights, xx-64, yy-64)
+  else
+    game:start_dialog("_cannot_see_need_magic")
+    warned = true
   end
-end
-
-function map:on_finished()
-  if lantern_overlay then
-    lantern_overlay:fade_out()
-    lantern_overlay = nil
-  end
+  
+  lights:draw_region(x,y,w,h,shadow,x,y)
+  shadow:draw_region(x,y,w,h,dst_surface)
 end
