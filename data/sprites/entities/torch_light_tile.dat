@@ -1,0 +1,9 @@
+animation{
+  name = "lit",
+  src_image = "entities/torch_light_tile.png",
+  frame_delay = 250,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0, num_frames = 4 },
+  },
+}

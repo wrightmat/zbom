@@ -229,7 +229,7 @@ local function initialize_maps()
           game:remove_magic(1)
           magic_counter = 0
         end
-        magic_counter = magic_counter + 1
+        if not game:is_suspended() then magic_counter = magic_counter + 1 end
         draw_counter = 0
       end
       draw_counter = draw_counter + 1
