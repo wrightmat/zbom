@@ -189,7 +189,9 @@ local function initialize_maps()
   local lights = sol.surface.create(1120, 1120)
   shadow:set_blend_mode("color_modulate")
   lights:set_blend_mode("additive_blending")
-  local heat_timer, swim_timer
+  local heat_timer, swim_timer, draw_counter, magic_counter
+  draw_counter = 0
+  magic_counter = 0
   
   function map_metatable:on_draw(dst_surface)
     local game = self:get_game()
@@ -200,25 +202,38 @@ local function initialize_maps()
 	(self:get_world() == "dungeon_2" and self:get_id() == "22" and self:get_game():get_time_of_day() == "night") then
       local x,y = game:get_map():get_camera():get_position()
       local w,h = game:get_map():get_camera():get_size()
-      shadow:clear()
-      shadow:fill_color({032,064,128,255})
       
-      lights:clear()
-      for e in game:get_map():get_entities("torch_") do
-        local xx,yy = e:get_position()
-        local sp = sol.sprite.create("entities/torch_light")
-        sp:set_blend_mode("alpha_blending")
-        sp:draw(lights, xx-32, yy-32)
-      end
-      for e in game:get_map():get_entities("night_") do
-        if e:is_enabled() then
-          local xx,yy = e:get_position()
-          local sp = sol.sprite.create("entities/torch_light")
-          sp:set_blend_mode("alpha_blending")
-          sp:draw(lights, xx-24, yy-24)
+      if draw_counter >= 15 then
+        shadow:clear()
+        shadow:fill_color({032,064,128,255})
+      
+        lights:clear()
+        for e in game:get_map():get_entities("torch_") do
+          if e:get_sprite():get_animation() == "lit" then
+            local xx,yy = e:get_position()
+            local sp = sol.sprite.create("entities/torch_light")
+            sp:set_blend_mode("alpha_blending")
+            sp:draw(lights, xx-32, yy-32)
+         end
         end
+        for e in game:get_map():get_entities("night_") do
+          if e:is_enabled() then
+            local xx,yy = e:get_position()
+            local sp = sol.sprite.create("entities/torch_light")
+            sp:set_blend_mode("alpha_blending")
+            sp:draw(lights, xx-24, yy-24)
+          end
+        end
+        -- Slowly drain magic when using lantern.
+        if magic_counter >= 50 then
+          game:remove_magic(1)
+          magic_counter = 0
+        end
+        magic_counter = magic_counter + 1
+        draw_counter = 0
       end
-      
+      draw_counter = draw_counter + 1
+
       if game:has_item("lamp") and game:get_magic() > 0 then
         local xx, yy = game:get_map():get_entity("hero"):get_position()
         local sp = sol.sprite.create("entities/torch_light_hero")

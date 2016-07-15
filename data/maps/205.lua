@@ -1,6 +1,7 @@
 local map = ...
 local game = map:get_game()
 local warned = false
+game:set_value("b1117", false)
 
 local shadow = sol.surface.create(1696, 1760)
 local lights = sol.surface.create(1696, 1760)
@@ -14,9 +15,12 @@ lights:set_blend_mode("additive_blending")
 if game:get_value("i1029") == nil then game:set_value("i1029", 0) end
 
 function map:on_started(destination)
+  local magic_counter = 0
   -- Only need to build the shadow surface once, but need to update the
   -- statues periodically (not every draw cycle!) in case one is destroyed
-  glow_timer = sol.timer.start(map, 400, function()
+  glow_timer = sol.timer.start(map, 250, function()
+    shadow:clear()
+    shadow:fill_color({032,064,128,128})
     lights:clear()
     for e in map:get_entities("statue_") do
       local xx,yy = e:get_position()
@@ -24,6 +28,12 @@ function map:on_started(destination)
       sp:set_blend_mode("alpha_blending")
       sp:draw(lights, xx-32, yy-40)
     end
+    -- Lantern more quickly drains magic here so you're forced to find ways to refill magic.
+    if magic_counter >= 20 then
+      game:remove_magic(1)
+      magic_counter = 0
+    end
+    magic_counter = magic_counter + 1
     return true
   end)
   
@@ -61,14 +71,6 @@ function map:on_started(destination)
   if not game:get_value("b1117") then chest_book:set_enabled(false) end
   if not game:get_value("b1118") then boss_heart:set_enabled(false) end
   if not game:get_value("b1119") then chest_rupees:set_enabled(false) end
-
-  -- Lantern slowly drains magic here so you're forced to find ways to refill magic.
-  magic_deplete = sol.timer.start(map, 5000, function()
-    if not game:get_value("b1117") then
-      game:remove_magic(1)
-      return true
-    end
-  end)
 end
 
 function npc_dampeh:on_interaction()
@@ -203,8 +205,6 @@ function map:on_draw(dst_surface)
   if not game:get_value("b1117") then -- If dungeon hasn't been defeated then the lights are out!
     local x,y = map:get_camera():get_position()
     local w,h = map:get_camera():get_size()
-    shadow:clear()
-    shadow:fill_color({032,064,128,255})
     
     if game:has_item("lamp") and game:get_magic() > 0 then
       local xx,yy = map:get_entity("hero"):get_position()

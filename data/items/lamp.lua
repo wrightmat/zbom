@@ -90,7 +90,7 @@ function item:on_npc_collision_fire(npc)
     if torch_sprite:get_animation() == "unlit" then
       -- Temporarily light the torch up.
       torch_sprite:set_animation("lit")
-      sol.timer.start(10000, function()
+      sol.timer.start(20000, function()
         self:unlight_oldest_torch()
       end)
       table.insert(self.temporary_lit_torches, npc)

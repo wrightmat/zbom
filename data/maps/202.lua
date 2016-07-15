@@ -16,9 +16,12 @@ if game:get_value("i1030") == nil then game:set_value("i1030", 0) end
 if game:get_value("i1032") == nil then game:set_value("i1032", 0) end
 
 function map:on_started(destination)
+  local magic_counter = 0
   -- Only need to build the shadow surface once, but need to update the
   -- glowing things periodically (not every draw cycle!) in case of update,
-  glow_timer = sol.timer.start(map, 400, function()
+  glow_timer = sol.timer.start(map, 250, function()
+    shadow:clear()
+    shadow:fill_color({032,064,128,128})
     lights:clear()
     for e in map:get_entities("torch_") do
       if e:get_sprite():get_animation() == "lit" then
@@ -28,6 +31,13 @@ function map:on_started(destination)
         sp:draw(lights, xx-32, yy-40)
       end
     end
+    -- Slowly drain magic when using lantern.
+    if magic_counter >= 50 then
+      game:remove_magic(1)
+      magic_counter = 0
+    end
+    magic_counter = magic_counter + 1
+
     return true
   end)
   
@@ -134,8 +144,6 @@ end
 function map:on_draw(dst_surface)
   local x,y = map:get_camera():get_position()
   local w,h = map:get_camera():get_size()
-  shadow:clear()
-  shadow:fill_color({032,064,128,255})
     
   if game:has_item("lamp") and game:get_magic() > 0 then
     local xx,yy = map:get_entity("hero"):get_position()
