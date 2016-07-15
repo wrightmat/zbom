@@ -31,6 +31,14 @@ function map:on_started(destination)
         sp:draw(lights, xx-32, yy-40)
       end
     end
+    for e in map:get_entities("switch_") do
+      if e:get_distance(game:get_hero()) <= 300 then
+        local xx,yy = e:get_position()
+        local sp = sol.sprite.create("entities/torch_light_tile")
+        sp:set_blend_mode("alpha_blending")
+        sp:draw(lights, xx-8, yy-8)
+      end
+    end
     -- Slowly drain magic when using lantern.
     if magic_counter >= 50 then
       game:remove_magic(1)
