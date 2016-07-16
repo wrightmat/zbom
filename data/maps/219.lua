@@ -6,94 +6,174 @@ local arrow_puzzle_correct = false
 local room9_1, room9_2, room9_3 = false
 local room17_1, room17_2, room17_3 = false
 
+local shadow = sol.surface.create(1792, 1472)
+local lights = sol.surface.create(1792, 1472)
+shadow:set_blend_mode("color_modulate")
+lights:set_blend_mode("additive_blending")
+
 ----------------------------------------------
 -- Dungeon 8: Interloper Sanctum (Basement) --
 ----------------------------------------------
 
-local function update_rooms()
-  -- No need to update on every game cycle, so we call this every second or so to speed things up.
-  if game:get_value("dungeon_8_explored_1b_1") then room_overlay_1:get_sprite():set_direction(3) else room_overlay_1:get_sprite():set_direction(1) end
-  if game:get_value("dungeon_8_explored_1b_2") then
-    room_overlay_2:get_sprite():set_direction(3)
-    room2_gate_e1:set_enabled(false)
-    room2_gate_e2:set_enabled(false)
-    room1_gate_w1:set_enabled(false)
-    room1_gate_w2:set_enabled(false)
-  else
-    room_overlay_2:get_sprite():set_direction(1)
-  end
-  if game:get_value("dungeon_8_explored_1b_3") then room_overlay_3:get_sprite():set_direction(3) else room_overlay_3:get_sprite():set_direction(1) end
-  if game:get_value("dungeon_8_explored_1b_4") then room_overlay_4:get_sprite():set_direction(3) else room_overlay_4:get_sprite():set_direction(1) end
-  if game:get_value("dungeon_8_explored_1b_5") then room_overlay_5:get_sprite():set_direction(3) else room_overlay_5:get_sprite():set_direction(1) end
-  if game:get_value("dungeon_8_explored_1b_6") then
-    room_overlay_6:get_sprite():set_direction(3)
-    room6_gate_s1:set_enabled(false)
-    room6_gate_s2:set_enabled(false)
-    room1_gate_n1:set_enabled(false)
-    room1_gate_n2:set_enabled(false)
-  else
-    room_overlay_6:get_sprite():set_direction(1)
-  end
-  if game:get_value("dungeon_8_explored_1b_7") then room_overlay_7:get_sprite():set_direction(3) else room_overlay_7:get_sprite():set_direction(1) end
-  if game:get_value("dungeon_8_explored_1b_8") then room_overlay_8:get_sprite():set_direction(3) else room_overlay_8:get_sprite():set_direction(1) end
-  if game:get_value("dungeon_8_explored_1b_9") then
-    room_overlay_9:get_sprite():set_direction(3)
-    room9_gate_e1:set_enabled(false)
-    room9_gate_e2:set_enabled(false)
-    room8_gate_w1:set_enabled(false)
-    room8_gate_w2:set_enabled(false)
-  else
-    room_overlay_9:get_sprite():set_direction(1)
-  end
-  if game:get_value("dungeon_8_explored_1b_10") then room_overlay_10:get_sprite():set_direction(3) else room_overlay_10:get_sprite():set_direction(1) end
-  if game:get_value("dungeon_8_explored_1b_11") then room_overlay_11:get_sprite():set_direction(3) else room_overlay_11:get_sprite():set_direction(1) end
-  if game:get_value("dungeon_8_explored_1b_12") then room_overlay_12:get_sprite():set_direction(3) else room_overlay_12:get_sprite():set_direction(1) end
-  if game:get_value("dungeon_8_explored_1b_13") then room_overlay_13:get_sprite():set_direction(3) else room_overlay_13:get_sprite():set_direction(1) end
-  if game:get_value("dungeon_8_explored_1b_14") then room_overlay_14:get_sprite():set_direction(3) else room_overlay_14:get_sprite():set_direction(1) end
-  if game:get_value("dungeon_8_explored_1b_15") then room_overlay_15:get_sprite():set_direction(3) else room_overlay_15:get_sprite():set_direction(1) end
-  if game:get_value("dungeon_8_explored_1b_16") then room_overlay_16:get_sprite():set_direction(3) else room_overlay_16:get_sprite():set_direction(1) end
-  if game:get_value("dungeon_8_explored_1b_17") then room_overlay_17:get_sprite():set_direction(3) else room_overlay_17:get_sprite():set_direction(1) end
-  if game:get_value("dungeon_8_explored_1b_18") then room_overlay_18:get_sprite():set_direction(3) else room_overlay_18:get_sprite():set_direction(1) end
-  if game:get_value("dungeon_8_explored_1b_19") then room_overlay_19:get_sprite():set_direction(3) else room_overlay_19:get_sprite():set_direction(1) end
-  if game:get_value("dungeon_8_explored_1b_20") then room_overlay_20:get_sprite():set_direction(3) else room_overlay_20:get_sprite():set_direction(1) end
-  if game:get_value("dungeon_8_explored_1b_21") then room_overlay_21:get_sprite():set_direction(3) else room_overlay_21:get_sprite():set_direction(1) end
-  if game:get_value("dungeon_8_explored_1b_22") then room_overlay_22:get_sprite():set_direction(3) else room_overlay_22:get_sprite():set_direction(1) end
-  if game:get_value("dungeon_8_explored_1b_23") then room_overlay_23:get_sprite():set_direction(3) else room_overlay_23:get_sprite():set_direction(1) end
-  if game:get_value("dungeon_8_explored_1b_24") then
-    room_overlay_24:get_sprite():set_direction(3)
-    room1_gate_e1:set_enabled(false)
-    room1_gate_e2:set_enabled(false)
-    room24_gate_w1:set_enabled(false)
-    room24_gate_w2:set_enabled(false)
-  else
-    room_overlay_24:get_sprite():set_direction(1)
-  end
-  if game:get_value("dungeon_8_explored_1b_25") then room_overlay_25:get_sprite():set_direction(3) else room_overlay_25:get_sprite():set_direction(1) end
-
-  if math.random(20) == 1 then  -- 1 in 20 chance of "switching off" a room each cycle.
-    room = math.random(24)
-    if game:get_value("dungeon_8_explored_1b_"..room) then
-      game:set_value("dungeon_8_explored_1b_"..room, false)
-      sol.audio.play_sound("poe_soul")
-    end
-  end
-
-  -- For Room 21.
-  if room21_crystal:is_in_same_region(map:get_hero()) then
-    map:create_enemy({ x = 1160, y = 941, layer = 0, direction = 0, breed = "boulder" })
-    map:create_enemy({ x = 1304, y = 941, layer = 0, direction = 0, breed = "boulder" })
-  end
-end
-
 function map:on_started(destination)
-  room_overlay_1:set_blending_mode("color_modulate") -- testing blending modes for this area, but may not need it.
   -- The only way to get out of this area of the game is to die.
   game:set_starting_location("218", "from_outside")
+
+  glow_timer = sol.timer.start(map, 250, function()
+    shadow:clear()
+    shadow:fill_color({032,064,128,128})
+    lights:clear()
+    if game:get_value("dungeon_8_explored_1b_1") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("alpha_blending")
+      sp:draw(lights, 736, 1149)
+    end
+    if game:get_value("dungeon_8_explored_1b_2") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("alpha_blending")
+      sp:draw(lights, 400, 1149)
+      room2_gate_e1:set_enabled(false)
+      room2_gate_e2:set_enabled(false)
+      room1_gate_w1:set_enabled(false)
+      room1_gate_w2:set_enabled(false)
+    end
+    if game:get_value("dungeon_8_explored_1b_3") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("alpha_blending")
+      sp:draw(lights, 64, 1149)
+    end
+    if game:get_value("dungeon_8_explored_1b_4") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("alpha_blending")
+      sp:draw(lights, 64, 877)
+    end
+    if game:get_value("dungeon_8_explored_1b_5") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("alpha_blending")
+      sp:draw(lights, 400, 877)
+    end
+    if game:get_value("dungeon_8_explored_1b_6") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("alpha_blending")
+      sp:draw(lights, 736, 877)
+      room6_gate_s1:set_enabled(false)
+      room6_gate_s2:set_enabled(false)
+      room1_gate_n1:set_enabled(false)
+      room1_gate_n2:set_enabled(false)
+    end
+    if game:get_value("dungeon_8_explored_1b_7") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("alpha_blending")
+      sp:draw(lights, 736, 605)
+    end
+    if game:get_value("dungeon_8_explored_1b_8") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("alpha_blending")
+      sp:draw(lights, 400, 605)
+    end
+    if game:get_value("dungeon_8_explored_1b_9") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("alpha_blending")
+      sp:draw(lights, 64, 605)
+      room9_gate_e1:set_enabled(false)
+      room9_gate_e2:set_enabled(false)
+      room8_gate_w1:set_enabled(false)
+      room8_gate_w2:set_enabled(false)
+    end
+    if game:get_value("dungeon_8_explored_1b_10") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("alpha_blending")
+      sp:draw(lights, 64, 333)
+    end
+    if game:get_value("dungeon_8_explored_1b_11") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("alpha_blending")
+      sp:draw(lights, 64, 61)
+    end
+    if game:get_value("dungeon_8_explored_1b_12") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("alpha_blending")
+      sp:draw(lights, 400, 61)
+    end
+    if game:get_value("dungeon_8_explored_1b_13") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("alpha_blending")
+      sp:draw(lights, 400, 333)
+    end
+    if game:get_value("dungeon_8_explored_1b_14") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("alpha_blending")
+      sp:draw(lights, 736, 333)
+    end
+    if game:get_value("dungeon_8_explored_1b_15") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("alpha_blending")
+      sp:draw(lights, 1072, 333)
+    end
+    if game:get_value("dungeon_8_explored_1b_16") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("alpha_blending")
+      sp:draw(lights, 1072, 61)
+    end
+    if game:get_value("dungeon_8_explored_1b_17") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("alpha_blending")
+      sp:draw(lights, 1408, 61)
+    end
+    if game:get_value("dungeon_8_explored_1b_18") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("alpha_blending")
+      sp:draw(lights, 1408, 333)
+    end
+    if game:get_value("dungeon_8_explored_1b_19") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("alpha_blending")
+      sp:draw(lights, 1408, 605)
+    end
+    if game:get_value("dungeon_8_explored_1b_20") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("alpha_blending")
+      sp:draw(lights, 1072, 605)
+    end
+    if game:get_value("dungeon_8_explored_1b_21") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("alpha_blending")
+      sp:draw(lights, 1072, 877)
+    end
+    if game:get_value("dungeon_8_explored_1b_22") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("alpha_blending")
+      sp:draw(lights, 1408, 877)
+    end
+    if game:get_value("dungeon_8_explored_1b_23") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("alpha_blending")
+      sp:draw(lights, 1408, 1149)
+    end
+    if game:get_value("dungeon_8_explored_1b_24") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("alpha_blending")
+      sp:draw(lights, 1072, 1149)
+      room1_gate_e1:set_enabled(false)
+      room1_gate_e2:set_enabled(false)
+      room24_gate_w1:set_enabled(false)
+      room24_gate_w2:set_enabled(false)
+    end
+    if game:get_value("dungeon_8_explored_1b_25") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("alpha_blending")
+      sp:draw(lights, 736, 61)
+    end
+    return true
+  end)
 
   if destination == from_above and not game:get_value("dungeon_8_explored_1b_complete") then
     sol.timer.start(self, 1000, function()
       map:get_camera():start_tracking(shadow_link)
       sol.audio.play_sound("poe_soul")
+      local sp = sol.sprite.create("entities/torch_light")
+      sp:set_blend_mode("alpha_blending")
+      sp:draw(lights, 960, 1421)
       game:start_dialog("shadow_link.sanctum_basement", game:get_player_name(), function()
         game:get_hero():start_treasure("map", 1, "b1181") -- Give map so explored and non-explored rooms show correctly.
         shadow_link:get_sprite():fade_out(50, function()
@@ -105,11 +185,8 @@ function map:on_started(destination)
       end)
     end)
   end
+
   game:set_value("dungeon_8_explored_1b_25", true)
-  local update_timer = sol.timer.start(self, 1000, function()
-    update_rooms()
-    return true
-  end)
 end
 
 local function reset_arrow_puzzle()
@@ -404,6 +481,19 @@ function map:on_update()
     game:set_value("dungeon_8_explored_1b_11", true)
   end
 
+  if room21_crystal:is_in_same_region(map:get_hero()) then
+    map:create_enemy({ x = 1160, y = 941, layer = 0, direction = 0, breed = "boulder" })
+    map:create_enemy({ x = 1304, y = 941, layer = 0, direction = 0, breed = "boulder" })
+  end
+
+  if math.random(100) == 1 and not game:is_suspended() then  -- 1 in 100 chance of "switching off" a room each cycle.
+    room = math.random(24)
+    if game:get_value("dungeon_8_explored_1b_"..room) then
+      game:set_value("dungeon_8_explored_1b_"..room, false)
+      sol.audio.play_sound("poe_soul")
+    end
+  end
+
   -- Win Conditions (12 total).
   if game:get_value("dungeon_8_explored_1b_3") and game:get_value("dungeon_8_explored_1b_4") and game:get_value("dungeon_8_explored_1b_9") and game:get_value("dungeon_8_explored_1b_10") and game:get_value("dungeon_8_explored_1b_11") then game_won() end  -- 1st Column
   if game:get_value("dungeon_8_explored_1b_2") and game:get_value("dungeon_8_explored_1b_5") and game:get_value("dungeon_8_explored_1b_8") and game:get_value("dungeon_8_explored_1b_12") and game:get_value("dungeon_8_explored_1b_13") then game_won() end  -- 2nd Column
@@ -417,4 +507,19 @@ function map:on_update()
   if game:get_value("dungeon_8_explored_1b_1") and game:get_value("dungeon_8_explored_1b_2") and game:get_value("dungeon_8_explored_1b_3") and game:get_value("dungeon_8_explored_1b_23") and game:get_value("dungeon_8_explored_1b_24") then game_won() end  -- 5th Row
   if game:get_value("dungeon_8_explored_1b_11") and game:get_value("dungeon_8_explored_1b_13") and game:get_value("dungeon_8_explored_1b_7") and game:get_value("dungeon_8_explored_1b_21") and game:get_value("dungeon_8_explored_1b_23") then game_won() end  -- 1st Diagonal
   if game:get_value("dungeon_8_explored_1b_17") and game:get_value("dungeon_8_explored_1b_15") and game:get_value("dungeon_8_explored_1b_7") and game:get_value("dungeon_8_explored_1b_5") and game:get_value("dungeon_8_explored_1b_3") then game_won() end  -- 2nd Diagonal
+end
+
+function map:on_draw(dst_surface)
+  local x,y = map:get_camera():get_position()
+  local w,h = map:get_camera():get_size()
+    
+  if game:has_item("lamp") and game:get_magic() > 0 then
+    local xx,yy = map:get_entity("hero"):get_position()
+    local sp = sol.sprite.create("entities/torch_light_hero")
+    sp:set_blend_mode("alpha_blending")
+    sp:draw(lights, xx-64, yy-64)
+  end
+    
+  lights:draw_region(x,y,w,h,shadow,x,y)
+  shadow:draw_region(x,y,w,h,dst_surface)
 end
