@@ -3781,6 +3781,276 @@ tile{
   pattern = "426",
 }
 
+tile{
+  layer = 0,
+  x = 1008,
+  y = 48,
+  width = 24,
+  height = 24,
+  pattern = "45",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 72,
+  width = 24,
+  height = 80,
+  pattern = "51",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 152,
+  width = 24,
+  height = 24,
+  pattern = "47",
+}
+
+tile{
+  layer = 0,
+  x = 1032,
+  y = 48,
+  width = 80,
+  height = 24,
+  pattern = "49",
+}
+
+tile{
+  layer = 0,
+  x = 1112,
+  y = 48,
+  width = 24,
+  height = 24,
+  pattern = "46",
+}
+
+tile{
+  layer = 0,
+  x = 1112,
+  y = 72,
+  width = 24,
+  height = 80,
+  pattern = "50",
+}
+
+tile{
+  layer = 0,
+  x = 1112,
+  y = 152,
+  width = 24,
+  height = 24,
+  pattern = "48",
+}
+
+tile{
+  layer = 0,
+  x = 1032,
+  y = 152,
+  width = 32,
+  height = 24,
+  pattern = "52",
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 152,
+  width = 32,
+  height = 24,
+  pattern = "52",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 152,
+  width = 8,
+  height = 16,
+  pattern = "74",
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 152,
+  width = 8,
+  height = 16,
+  pattern = "75",
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 152,
+  width = 16,
+  height = 16,
+  pattern = "89",
+}
+
+tile{
+  layer = 0,
+  x = 1032,
+  y = 72,
+  width = 8,
+  height = 8,
+  pattern = "465",
+}
+
+tile{
+  layer = 0,
+  x = 1032,
+  y = 144,
+  width = 8,
+  height = 8,
+  pattern = "462",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
+  y = 72,
+  width = 8,
+  height = 8,
+  pattern = "464",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
+  y = 144,
+  width = 8,
+  height = 8,
+  pattern = "463",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 72,
+  width = 64,
+  height = 8,
+  pattern = "457",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 144,
+  width = 64,
+  height = 8,
+  pattern = "456",
+}
+
+tile{
+  layer = 0,
+  x = 1032,
+  y = 80,
+  width = 8,
+  height = 64,
+  pattern = "442",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
+  y = 80,
+  width = 8,
+  height = 64,
+  pattern = "443",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 80,
+  width = 32,
+  height = 32,
+  pattern = "440",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
+  y = 80,
+  width = 32,
+  height = 32,
+  pattern = "441",
+}
+
+tile{
+  layer = 0,
+  x = 1032,
+  y = 48,
+  width = 32,
+  height = 32,
+  pattern = "438",
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 48,
+  width = 32,
+  height = 32,
+  pattern = "438",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 120,
+  width = 32,
+  height = 32,
+  pattern = "440",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
+  y = 120,
+  width = 32,
+  height = 32,
+  pattern = "441",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 176,
+  width = 8,
+  height = 8,
+  pattern = "71",
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 184,
+  width = 16,
+  height = 8,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 176,
+  width = 8,
+  height = 8,
+  pattern = "71",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 80,
+  width = 64,
+  height = 64,
+  pattern = "484",
+}
+
 dynamic_tile{
   name = "night_window_29",
   layer = 0,
@@ -4001,7 +4271,7 @@ npc{
   y = 117,
   direction = 3,
   subtype = 1,
-  sprite = "npc/tokay",
+  sprite = "npc/tokay_red",
 }
 
 shop_treasure{
@@ -4079,7 +4349,7 @@ shop_treasure{
 }
 
 npc{
-  name = "npc_tokay_amber",
+  name = "npc_tokay_chef",
   layer = 0,
   x = 408,
   y = 429,
@@ -4091,8 +4361,8 @@ npc{
 shop_treasure{
   name = "goron_amber",
   layer = 0,
-  x = 416,
-  y = 408,
+  x = 1072,
+  y = 96,
   treasure_name = "amber",
   price = 180,
   font = "la",
@@ -4509,6 +4779,101 @@ npc{
   sprite = "npc/gerudo_pirate",
 }
 
+destination{
+  name = "enter_house_5",
+  layer = 0,
+  x = 1072,
+  y = 165,
+  direction = 1,
+}
+
+teletransporter{
+  name = "to_outside_5",
+  layer = 0,
+  x = 1064,
+  y = 168,
+  width = 16,
+  height = 16,
+  destination_map = "24",
+  destination = "from_house_5",
+}
+
+dynamic_tile{
+  name = "night_window_31",
+  layer = 0,
+  x = 1008,
+  y = 80,
+  pattern = "708",
+  width = 32,
+  height = 32,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_window_32",
+  layer = 0,
+  x = 1008,
+  y = 120,
+  pattern = "708",
+  width = 32,
+  height = 32,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_window_33",
+  layer = 0,
+  x = 1104,
+  y = 80,
+  pattern = "709",
+  width = 32,
+  height = 32,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_window_34",
+  layer = 0,
+  x = 1104,
+  y = 120,
+  pattern = "709",
+  width = 32,
+  height = 32,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_window_35",
+  layer = 0,
+  x = 1032,
+  y = 48,
+  pattern = "706",
+  width = 32,
+  height = 32,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_window_36",
+  layer = 0,
+  x = 1080,
+  y = 48,
+  pattern = "706",
+  width = 32,
+  height = 32,
+  enabled_at_start = false,
+}
+
+npc{
+  name = "npc_tokay_amber",
+  layer = 0,
+  x = 1056,
+  y = 117,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/tokay_red",
+}
+
 tile{
   layer = 1,
   x = 1136,
@@ -4643,15 +5008,6 @@ tile{
   width = 32,
   height = 8,
   pattern = "153",
-}
-
-tile{
-  layer = 2,
-  x = 1136,
-  y = 0,
-  width = 112,
-  height = 656,
-  pattern = "480",
 }
 
 tile{
@@ -4836,15 +5192,6 @@ tile{
 
 tile{
   layer = 2,
-  x = 944,
-  y = 48,
-  width = 192,
-  height = 128,
-  pattern = "480",
-}
-
-tile{
-  layer = 2,
   x = 1072,
   y = 480,
   width = 64,
@@ -4883,7 +5230,7 @@ tile{
   layer = 2,
   x = 816,
   y = 48,
-  width = 128,
+  width = 192,
   height = 128,
   pattern = "480",
 }
@@ -4984,6 +5331,24 @@ tile{
   y = 656,
   width = 80,
   height = 208,
+  pattern = "480",
+}
+
+tile{
+  layer = 2,
+  x = 1056,
+  y = 168,
+  width = 32,
+  height = 8,
+  pattern = "153",
+}
+
+tile{
+  layer = 2,
+  x = 1136,
+  y = 0,
+  width = 112,
+  height = 656,
   pattern = "480",
 }
 

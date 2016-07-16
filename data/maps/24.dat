@@ -1875,7 +1875,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 144,
+  x = 152,
   y = 488,
   width = 16,
   height = 16,
@@ -1902,8 +1902,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 56,
-  y = 552,
+  x = 184,
+  y = 392,
   width = 16,
   height = 16,
   pattern = "964",
@@ -3142,6 +3142,87 @@ tile{
   pattern = "39",
 }
 
+tile{
+  layer = 0,
+  x = 56,
+  y = 520,
+  width = 40,
+  height = 56,
+  pattern = "1911",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 520,
+  width = 16,
+  height = 16,
+  pattern = "1921",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 520,
+  width = 40,
+  height = 56,
+  pattern = "1912",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 552,
+  width = 16,
+  height = 24,
+  pattern = "1914",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 576,
+  width = 8,
+  height = 8,
+  pattern = "1917",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 576,
+  width = 24,
+  height = 16,
+  pattern = "1916",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 576,
+  width = 32,
+  height = 32,
+  pattern = "1915",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 576,
+  width = 24,
+  height = 16,
+  pattern = "1918",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 576,
+  width = 8,
+  height = 8,
+  pattern = "1919",
+}
+
 teletransporter{
   name = "to_D12",
   layer = 0,
@@ -3217,8 +3298,8 @@ teletransporter{
 enemy{
   name = "crab_1",
   layer = 0,
-  x = 72,
-  y = 485,
+  x = 40,
+  y = 261,
   direction = 3,
   breed = "crab",
   treasure_name = "random_enemy",
@@ -3227,8 +3308,8 @@ enemy{
 enemy{
   name = "crab_2",
   layer = 0,
-  x = 120,
-  y = 221,
+  x = 152,
+  y = 45,
   direction = 3,
   breed = "crab",
   treasure_name = "random_enemy",
@@ -3779,6 +3860,85 @@ enemy{
   direction = 3,
   breed = "crab",
   treasure_name = "random_enemy",
+}
+
+dynamic_tile{
+  name = "night_entrance",
+  layer = 0,
+  x = 96,
+  y = 552,
+  pattern = "338",
+  width = 16,
+  height = 24,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_windows",
+  layer = 0,
+  x = 56,
+  y = 520,
+  pattern = "340",
+  width = 40,
+  height = 56,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_windows_2",
+  layer = 0,
+  x = 112,
+  y = 520,
+  pattern = "339",
+  width = 40,
+  height = 56,
+  enabled_at_start = false,
+}
+
+destination{
+  name = "from_house_5",
+  layer = 0,
+  x = 104,
+  y = 581,
+  direction = 3,
+}
+
+teletransporter{
+  name = "to_house_5",
+  layer = 0,
+  x = 96,
+  y = 544,
+  width = 16,
+  height = 16,
+  destination_map = "6",
+  destination = "enter_house_5",
+}
+
+tile{
+  layer = 1,
+  x = 72,
+  y = 480,
+  width = 64,
+  height = 16,
+  pattern = "1923",
+}
+
+tile{
+  layer = 1,
+  x = 56,
+  y = 496,
+  width = 96,
+  height = 24,
+  pattern = "1922",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 536,
+  width = 16,
+  height = 16,
+  pattern = "1920",
 }
 
 tile{

@@ -3,9 +3,9 @@ properties{
   y = 14573,
   width = 1120,
   height = 1120,
-  world = "dungeon_2",
   min_layer = 0,
   max_layer = 2,
+  world = "dungeon_2",
   tileset = "2",
   music = "same",
 }
@@ -6290,6 +6290,39 @@ tile{
   width = 16,
   height = 16,
   pattern = "1950",
+}
+
+dynamic_tile{
+  name = "night_windows_7",
+  layer = 0,
+  x = 336,
+  y = 160,
+  pattern = "339",
+  width = 40,
+  height = 56,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_windows_8",
+  layer = 0,
+  x = 280,
+  y = 160,
+  pattern = "340",
+  width = 40,
+  height = 56,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_entrance_4",
+  layer = 0,
+  x = 320,
+  y = 192,
+  pattern = "338",
+  width = 16,
+  height = 24,
+  enabled_at_start = false,
 }
 
 teletransporter{

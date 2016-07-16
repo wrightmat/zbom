@@ -17,8 +17,8 @@ function map:on_started(destination)
       if boss_gohma ~= nil then boss_gohma:set_enabled(false) end
     else
       if boss_gohma ~= nil then
-	sol.audio.play_music("boss")
-	boss_gohma:set_enabled(true)
+        sol.audio.play_music("boss")
+        boss_gohma:set_enabled(true)
       end
     end
   end
@@ -34,6 +34,17 @@ function map:on_started(destination)
 
   if destination == from_house_chef then
     sol.audio.play_music("beach")
+  end
+
+  if game:get_time_of_day() == "night" then
+    npc_tokay_chef:remove()
+  end
+
+  -- Activate any night-specific dynamic tiles.
+  if game:get_time_of_day() == "night" then
+    for entity in game:get_map():get_entities("night_") do
+      entity:set_enabled(true)
+    end
   end
 end
 

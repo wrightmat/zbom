@@ -13,7 +13,7 @@ local function random_walk(npc)
 end
 
 function map:on_started(destination)
-  if game:get_value("i1068") < 7 then
+  if game:get_value("i1068") < 7 or game:get_time_of_day() == "night" then
     npc_tokay_1:remove()
     npc_tokay_2:remove()
     npc_tokay_3:remove()
@@ -23,6 +23,13 @@ function map:on_started(destination)
     random_walk(npc_tokay_2)
     random_walk(npc_tokay_3)
     random_walk(npc_tokay_4)
+  end
+
+  -- Activate any night-specific dynamic tiles.
+  if game:get_time_of_day() == "night" then
+    for entity in game:get_map():get_entities("night_") do
+      entity:set_enabled(true)
+    end
   end
 end
 

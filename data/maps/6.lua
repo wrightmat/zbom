@@ -10,6 +10,15 @@ function map:on_started(destination)
     npc_gerudo_leader:remove()
     npc_gerudo_pirate_1:remove()
     npc_gerudo_pirate_2:remove()
+    npc_tokay_chef:remove()
+    npc_tokay_alchemy:remove()
+    alchemy_stone:remove()
+    npc_tokay_crystal:remove()
+    magic_crystal:remove()
+    npc_tokay_plume:remove()
+    goddess_plume:remove()
+    npc_tokay_amber:remove()
+    goron_amber:remove()
   end
   if not game:get_value("b2023") then quest_trading_tear:remove() end
   if destination == enter_astronomer then
@@ -94,6 +103,10 @@ function npc_tokay_plume:on_interaction()
       hero:start_treasure("plume")
     end
   end)
+end
+
+function npc_tokay_chef:on_interaction()
+  game:start_dialog("chef.0.house")
 end
 
 function npc_gerudo_pirate_1:on_interaction()

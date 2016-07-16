@@ -3149,6 +3149,15 @@ with bananas!
 }
 
 dialog{
+  id = "chef.0.house",
+  text = [[
+Sometimes I cook right into the night.
+When you're passionate about something,
+sometimes it's hard to stop!
+]]
+}
+
+dialog{
   id = "chef.0.trading",
   question = "1",
   skip = "current",
