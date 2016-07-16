@@ -37,6 +37,7 @@ function hud_manager:create(game)
   local stamina_bar_builder = require("scripts/hud/stamina_bar")
   local attack_icon_builder = require("scripts/hud/attack_icon")
   local action_icon_builder = require("scripts/hud/action_icon")
+  local clock_builder = require("scripts/hud/clock")
   local hero_condition_builder = require("scripts/hud/hero_condition")
 
   local hearts = hearts_builder:new(game)
@@ -90,6 +91,10 @@ function hud_manager:create(game)
   local action_icon = action_icon_builder:new(game)
   action_icon:set_dst_position(26, 51)
   hud.elements[#hud.elements + 1] = action_icon
+
+  local clock = clock_builder:new(game)
+  clock:set_dst_position(0, -50)
+  hud.elements[#hud.elements + 1] = clock
 
   -- Destroys the HUD.
   function hud:quit()

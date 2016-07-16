@@ -10169,6 +10169,16 @@ The clock's tickin'!
 }
 
 dialog{
+  id = "tern.1.house",
+  text = [[
+I don't like leaving my goats out all
+night because they spook easily.$0
+Heck, that's the same reason I come
+in at night!
+]]
+}
+
+dialog{
   id = "tern.1.ranch",
   skip = "current",
   text = [[

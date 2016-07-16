@@ -1,12 +1,11 @@
 animation{
-  name = "ground",
+  name = "lit",
   src_image = "entities/fireworks.png",
   frame_delay = 150,
   directions = {
     { x = 0, y = 0, frame_width = 32, frame_height = 64, origin_x = 16, origin_y = 61, num_frames = 24 },
   },
 }
-
 animation{
   name = "stopped",
   src_image = "entities/fireworks.png",

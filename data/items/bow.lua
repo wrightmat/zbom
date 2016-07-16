@@ -33,6 +33,8 @@ function item:on_using()
       local arrow = map:create_custom_entity({
         x = x,
         y = y,
+        width = 16,
+        height = 16,
         layer = layer,
         direction = hero:get_direction(),
         model = "arrow",

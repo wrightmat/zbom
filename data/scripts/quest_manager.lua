@@ -189,27 +189,68 @@ local function initialize_maps()
   local lights = sol.surface.create(1120, 1120)
   shadow:set_blend_mode("color_modulate")
   lights:set_blend_mode("additive_blending")
-  local heat_timer, swim_timer, draw_counter, magic_counter
+  local heat_timer, swim_timer, draw_counter, magic_counter, time_counter, opacity
   draw_counter = 0
   magic_counter = 0
+  opacity = 255
+  local t = {}
   
   function map_metatable:on_draw(dst_surface)
     local game = self:get_game()
-    -- Put the night overlay on any outdoor map if it's night time.
-    if (self:get_game():is_in_outside_world() and self:get_game():get_time_of_day() == "night") or
-	(self:get_world() == "dungeon_2" and self:get_id() == "20" and self:get_game():get_time_of_day() == "night") or
-	(self:get_world() == "dungeon_2" and self:get_id() == "21" and self:get_game():get_time_of_day() == "night") or
-	(self:get_world() == "dungeon_2" and self:get_id() == "22" and self:get_game():get_time_of_day() == "night") then
+    local hour_of_day = (time_counter / 3000)
+    -- Put the night (or sunrise or sunset) overlay on any outdoor map if it's night time.
+    if hour_of_day >= 19 or hour_of_day <= 7.4 and
+    (game:is_in_outside_world() or (self:get_world() == "dungeon_2" and self:get_id() == "20") or
+	  (self:get_world() == "dungeon_2" and self:get_id() == "21") or (self:get_world() == "dungeon_2" and self:get_id() == "22")) then
       local x,y = game:get_map():get_camera():get_position()
       local w,h = game:get_map():get_camera():get_size()
       
       if draw_counter >= 15 then
         shadow:clear()
-        shadow:fill_color({032,064,128,255})
-      
+        if hour_of_day >= 19 and hour_of_day <= 20 then
+          local shadow = sol.surface.create(1120, 1120)
+          shadow:set_blend_mode("color_modulate")
+          -- Sunset
+          t[1] = 255; t[2] = 255; t[3] = 255
+          if t[1] >= 182 then t[1] = t[1] - 1 end -- Red: Goal is 182 (from 255)
+          if t[2] >= 126 then t[2] = t[2] - 2 end -- Green: Goal is 126 (from 255)
+          if t[3] >= 91 then t[3] = t[3] - 3 end  -- Blue: Goal is 91 (from 255)
+          shadow:fill_color(t)
+        elseif hour_of_day >= 6 and hour_of_day <= 7 then
+          -- Sunrise
+          t[1] = (182*(hour_of_day-6))+18 -- Red: Goal is 182 (from 32)
+          t[2] = (62*(hour_of_day-6))+66 -- Green: Goal is 126 (from 64)
+          t[3] = (37*(1-(hour_of_day-6)))+87 -- Blue: Goal is 91 (from 128)
+          shadow:fill_color(t)
+        elseif hour_of_day > 7 and hour_of_day <= 7.4 then
+          if t[1] <= 253 then
+            t[1] = t[1] + 2 -- Red: Goal is 255 (fade to white, which is the same as fading out in this blend mode)
+          else
+            game:set_value("time_of_day", "day")
+            game:set_value("hour_of_day", 7.5)
+          end
+          if t[2] <= 252 then
+            t[2] = t[2] + 3 -- Green: Goal is 255
+          else
+            game:set_value("time_of_day", "day")
+            game:set_value("hour_of_day", 7.5)
+          end
+          if t[3] <= 251 then
+            t[3] = t[3] + 4 -- Blue: Goal is 255
+          else
+            game:set_value("time_of_day", "day")
+            game:set_value("hour_of_day", 7.5)
+          end
+          shadow:fill_color(t)
+        else
+          -- Night
+          shadow:fill_color({32,64,128,255})
+          game:set_value("time_of_day", "night")
+        end
+        
         lights:clear()
         for e in game:get_map():get_entities("torch_") do
-          if e:get_sprite():get_animation() == "lit" then
+          if e:get_sprite():get_animation() == "lit" and e:get_distance(game:get_hero()) <= 250 then
             local xx,yy = e:get_position()
             local sp = sol.sprite.create("entities/torch_light")
             sp:set_blend_mode("alpha_blending")
@@ -217,11 +258,35 @@ local function initialize_maps()
          end
         end
         for e in game:get_map():get_entities("night_") do
-          if e:is_enabled() then
+          if e:is_enabled() and e:get_distance(game:get_hero()) <= 250 then
             local xx,yy = e:get_position()
             local sp = sol.sprite.create("entities/torch_light")
             sp:set_blend_mode("alpha_blending")
             sp:draw(lights, xx-24, yy-24)
+          end
+        end
+        for e in game:get_map():get_entities("lava_") do
+          if e:is_enabled() and e:get_distance(game:get_hero()) <= 250 then
+            local xx,yy = e:get_position()
+            local sp = sol.sprite.create("entities/torch_light_tile")
+            sp:set_blend_mode("alpha_blending")
+            sp:draw(lights, xx-8, yy-8)
+          end
+        end
+        for e in game:get_map():get_entities("warp_") do
+          if e:is_enabled() and e:get_distance(game:get_hero()) <= 200 then
+            local xx,yy = e:get_position()
+            local sp = sol.sprite.create("entities/torch_light_tile")
+            sp:set_blend_mode("alpha_blending")
+            sp:draw(lights, xx-8, yy-8)
+          end
+        end
+        for e in game:get_map():get_entities("poe") do
+          if e:is_enabled() and e:get_distance(game:get_hero()) <= 200 then
+            local xx,yy = e:get_position()
+            local sp = sol.sprite.create("entities/torch_light")
+            sp:set_blend_mode("alpha_blending")
+            sp:draw(lights, xx-32, yy-32)
           end
         end
         -- Slowly drain magic when using lantern.
@@ -248,7 +313,7 @@ local function initialize_maps()
 
   function map_metatable:on_started(destination)
     local game = self:get_game()
-
+    
     function random_8(lower, upper)
       math.randomseed(os.time() - os.clock() * 1000)
       return math.random(math.ceil(lower/8), math.floor(upper/8))*8
@@ -285,15 +350,15 @@ local function initialize_maps()
       if poe_random <= 0.5 then
 	local ex = random_8(1,1120)
 	local ey = random_8(1,1120)
-	self:create_enemy({ breed="poe", x=ex, y=ey, layer=2, direction=1 })
+	self:create_enemy({ name = "poe", breed="poe", x=ex, y=ey, layer=2, direction=1 })
       elseif keese_random <= 0.2 then
 	local ex = random_8(1,1120)
 	local ey = random_8(1,1120)
-	self:create_enemy({ breed="poe", x=ex, y=ey, layer=2, direction=1 })
+	self:create_enemy({ name = "poe", breed="poe", x=ex, y=ey, layer=2, direction=1 })
 	sol.timer.start(self, 1100, function()
 	  local ex = random_8(1,1120)
 	  local ey = random_8(1,1120)
-	  self:create_enemy({ breed="poe", x=ex, y=ey, layer=2, direction=1 })
+	  self:create_enemy({ name = "poe", breed="poe", x=ex, y=ey, layer=2, direction=1 })
 	end)
       end
       local redead_random = math.random()
@@ -316,7 +381,6 @@ local function initialize_maps()
       if not heat_timer then
         heat_timer = sol.timer.start(self:get_game():get_map(), 5000, function()
           self:get_game():remove_stamina(5)
-print("In heat without red tunic equipped, stamina taken")
           return true
         end)
       end
@@ -333,7 +397,6 @@ print("In heat without red tunic equipped, stamina taken")
       if not swim_timer then
         swim_timer = sol.timer.start(self:get_game():get_map(), 5000, function()
           self:get_game():remove_stamina(5)
-print("In water without blue tunic equipped, stamina taken")
           return true
         end)
       end
@@ -343,6 +406,27 @@ print("In water without blue tunic equipped, stamina taken")
         swim_timer = nil
       end
     end
+
+    if time_counter == nil then
+      if self:get_game():get_value("hour_of_day") > 0 then
+        time_counter = self:get_game():get_value("hour_of_day") * 3000
+      else
+        time_counter = 0
+      end
+    end
+
+    -- Update the time of day.
+    -- One minute (60 seconds) is two hours in-game. Update every 0.1 minute.
+    local hour_of_day = self:get_game():get_value("hour_of_day")
+    if hour_of_day == nil then hour_of_day = 0 end
+    hour_of_day = (time_counter / 3000)
+
+    if hour_of_day >= 23 then
+      hour_of_day = 0
+      time_counter = 0
+    end
+    self:get_game():set_value("hour_of_day", hour_of_day)
+    if not self:get_game():is_suspended() then time_counter = time_counter + 1 end
   end
 end
 
