@@ -16,7 +16,11 @@ local function random_walk(npc)
 end
 
 function map:on_started(destination)
-  random_walk(npc_anouki_3)
+  if game:get_time_of_day() == "night" then
+    npc_anouki_3:remove()
+  else
+    random_walk(npc_anouki_3)
+  end
 
   if game:get_value("b1150") and game:get_value("i1910") < 6 then
     torch_1:get_sprite():set_animation("lit")
@@ -34,6 +38,13 @@ function map:on_started(destination)
         game:set_value("i1910", 6)
       end)
     end)
+  end
+
+  -- Activate any night-specific dynamic tiles.
+  if game:get_time_of_day() == "night" then
+    for entity in game:get_map():get_entities("night_") do
+      entity:set_enabled(true)
+    end
   end
 end
 

@@ -5437,6 +5437,28 @@ tile{
   pattern = "2165",
 }
 
+dynamic_tile{
+  name = "night_entrance_2",
+  layer = 0,
+  x = 160,
+  y = 88,
+  pattern = "337",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_entrance",
+  layer = 0,
+  x = 336,
+  y = 984,
+  pattern = "337",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
 teletransporter{
   name = "to_C5",
   layer = 0,

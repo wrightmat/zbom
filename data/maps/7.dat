@@ -12,7 +12,7 @@ properties{
 
 tile{
   layer = 0,
-  x = 24,
+  x = 16,
   y = 72,
   width = 240,
   height = 144,
@@ -2566,6 +2566,36 @@ custom_entity{
   direction = 0,
   sprite = "entities/quest_books",
   model = "quest_books",
+}
+
+npc{
+  name = "npc_anouki_3",
+  layer = 0,
+  x = 200,
+  y = 533,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/snowpeak_anouki",
+}
+
+npc{
+  name = "npc_anouki_1",
+  layer = 0,
+  x = 880,
+  y = 157,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/snowpeak_anouki",
+}
+
+npc{
+  name = "npc_anouki_2",
+  layer = 0,
+  x = 120,
+  y = 149,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/snowpeak_anouki",
 }
 
 tile{

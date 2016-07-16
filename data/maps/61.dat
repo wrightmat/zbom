@@ -2998,6 +2998,39 @@ tile{
   pattern = "1692",
 }
 
+dynamic_tile{
+  name = "night_entrance_3",
+  layer = 0,
+  x = 232,
+  y = 760,
+  pattern = "337",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_entrance_2",
+  layer = 0,
+  x = 816,
+  y = 368,
+  pattern = "337",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_entrance",
+  layer = 0,
+  x = 304,
+  y = 216,
+  pattern = "337",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
 teletransporter{
   name = "to_D6",
   layer = 0,

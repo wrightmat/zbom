@@ -12,4 +12,11 @@ function map:on_started(destination)
       bush:set_can_be_cut(true)
     end
   end
+
+  -- Activate any night-specific dynamic tiles.
+  if game:get_time_of_day() == "night" then
+    for entity in game:get_map():get_entities("night_") do
+      entity:set_enabled(true)
+    end
+  end
 end
