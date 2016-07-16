@@ -13,9 +13,15 @@ local function random_walk(npc)
 end
 
 function map:on_started(destination)
-  random_walk(npc_goron_5)
-  random_walk(npc_goron_6)
-  random_walk(npc_goron_7)
+  if game:get_time_of_day() == "day" then
+    random_walk(npc_goron_5)
+    random_walk(npc_goron_6)
+    random_walk(npc_goron_7)
+  else
+    npc_goron_5:remove()
+    npc_goron_6:remove()
+    npc_goron_7:remove()
+  end
 
   -- Opening doors
   local entrance_names = { "house_3", "house_4", "house_leader" }

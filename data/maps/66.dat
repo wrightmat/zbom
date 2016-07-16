@@ -1675,6 +1675,50 @@ tile{
   pattern = "1128",
 }
 
+dynamic_tile{
+  name = "night_entrance_4",
+  layer = 0,
+  x = 152,
+  y = 856,
+  pattern = "241",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_entrance_3",
+  layer = 0,
+  x = 704,
+  y = 1024,
+  pattern = "241",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_entrance_2",
+  layer = 0,
+  x = 920,
+  y = 608,
+  pattern = "241",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_entrance",
+  layer = 0,
+  x = 408,
+  y = 424,
+  pattern = "241",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
 sensor{
   name = "house_1_door_sensor",
   layer = 0,

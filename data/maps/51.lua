@@ -15,21 +15,28 @@ local function random_walk(npc)
 end
 
 local function fireworks_shower_start()
-  fireworks_shower:get_sprite():set_animation("ground")
+  torch_fireworks_shower:get_sprite():set_animation("lit")
   sol.timer.start(4000, function()
-    fireworks_shower:get_sprite():set_animation("stopped")
+    torch_fireworks_shower:get_sprite():set_animation("stopped")
     sol.timer.start(math.random(10)*1000, fireworks_shower_start)
   end)
 end
 
 function map:on_started(destination)
-  fireworks_shower:get_sprite():set_animation("stopped")
+  torch_fireworks_shower:get_sprite():set_animation("stopped")
   local fire_show = math.random(10)*500
   sol.timer.start(fire_show, fireworks_shower_start)
   if game:get_time_of_day() == "day" then
     npc_rowin:remove()
     npc_moriss:remove()
     npc_etnaya:remove()
+  end
+
+  -- Activate any night-specific dynamic tiles.
+  if game:get_time_of_day() == "night" then
+    for entity in game:get_map():get_entities("night_") do
+      entity:set_enabled(true)
+    end
   end
 
   -- Opening doors
@@ -39,18 +46,11 @@ function map:on_started(destination)
     local tile = map:get_entity(entrance_name .. "_door")
     sensor.on_activated_repeat = function()
       if hero:get_direction() == 1 and tile:is_enabled() and game:get_time_of_day() == "day" then
-	tile:set_enabled(false)
-	sol.audio.play_sound("door_open")
+        tile:set_enabled(false)
+        sol.audio.play_sound("door_open")
       end
     end
   end
-
-    -- Activate any night-specific dynamic tiles.
-    if game:get_time_of_day() == "night" then
-      for entity in game:get_map():get_entities("night_") do
-        entity:set_enabled(true)
-      end
-    end
 end
 
 function npc_warun:on_interaction()

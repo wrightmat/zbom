@@ -40,6 +40,13 @@ function map:on_started(destination)
   if not game:get_value("b1612") or game:get_value("b1812") then
     thief:remove()  -- If not ready for the thief game, or already have the bottle.
   end
+
+  -- Activate any night-specific dynamic tiles.
+  if game:get_time_of_day() == "night" then
+    for entity in game:get_map():get_entities("night_") do
+      entity:set_enabled(true)
+    end
+  end
 end
 
 function sensor_enter_kakariko:on_activated()

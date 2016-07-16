@@ -32,15 +32,18 @@ function map:on_started(destination)
     end
   end
 
-    -- Activate any night-specific dynamic tiles.
-    if game:get_time_of_day() == "night" then
-      for entity in game:get_map():get_entities("night_") do
-        entity:set_enabled(true)
-      end
+  -- Activate any night-specific dynamic tiles.
+  if game:get_time_of_day() == "night" then
+    for entity in game:get_map():get_entities("night_") do
+      entity:set_enabled(true)
     end
+  end
 
   -- Shop is closed at night after Strap's bottle is stolen.
-  if game:get_value("b1812") and game:get_time_of_day() == "night" then shop_door:set_enabled(true) end
+  if game:get_value("b1812") and game:get_time_of_day() == "night" then
+    shop_door:set_enabled(true)
+    night_shop_door:set_enabled(false)
+  end
 end
 
 function npc_ildus:on_interaction()
