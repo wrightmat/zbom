@@ -17,8 +17,12 @@ local function random_walk(npc)
 end
 
 function map:on_started(destination)
-  random_walk(npc_rito_1)
-  random_walk(npc_rito_3)
+  if game:get_time_of_day() == "night" then
+    npc_rito_3:remove()
+  else
+    random_walk(npc_rito_1)
+    random_walk(npc_rito_3)
+  end
   if game:is_dungeon_finished(7) then
     bridge_1:set_enabled(true)
     bridge_2:set_enabled(true)
@@ -28,12 +32,12 @@ function map:on_started(destination)
     npc_rito_carpenter:remove()
   end
 
-    -- Activate any night-specific dynamic tiles.
-    if game:get_time_of_day() == "night" then
-      for entity in game:get_map():get_entities("night_") do
-        entity:set_enabled(true)
-      end
+  -- Activate any night-specific dynamic tiles.
+  if game:get_time_of_day() == "night" then
+    for entity in game:get_map():get_entities("night_") do
+      entity:set_enabled(true)
     end
+  end
 end
 
 function npc_rito_1:on_interaction()

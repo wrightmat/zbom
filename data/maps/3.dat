@@ -3848,6 +3848,16 @@ custom_entity{
   model = "quest_books",
 }
 
+npc{
+  name = "npc_rito_3",
+  layer = 0,
+  x = 928,
+  y = 909,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/rito",
+}
+
 tile{
   layer = 1,
   x = 88,

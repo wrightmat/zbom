@@ -2360,6 +2360,17 @@ tile{
 }
 
 dynamic_tile{
+  name = "night_entrance_2",
+  layer = 0,
+  x = 376,
+  y = 728,
+  pattern = "2172",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
   name = "night_entrance_7",
   layer = 0,
   x = 1000,
@@ -2397,17 +2408,6 @@ dynamic_tile{
   layer = 0,
   x = 648,
   y = 752,
-  pattern = "2172",
-  width = 16,
-  height = 16,
-  enabled_at_start = false,
-}
-
-dynamic_tile{
-  name = "night_entrance_2",
-  layer = 0,
-  x = 376,
-  y = 728,
   pattern = "2172",
   width = 16,
   height = 16,

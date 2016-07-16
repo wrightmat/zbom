@@ -13,6 +13,9 @@ local function random_walk(npc)
 end
 
 function map:on_started()
+  if game:get_time_of_day() == "day" then
+    npc_rito_3:remove()
+  end
   if not game:get_value("b2032") then quest_trading_feather:remove() end
   random_walk(npc_rito_4)
   shop_world_map_2:get_sprite():set_animation("world_map")
@@ -49,6 +52,14 @@ function map:on_started()
   end
 end
 
+function npc_rito_3:on_interaction()
+  if game:get_value("b1150") then
+    game:start_dialog("rito_3.1.septen")
+  else
+    game:start_dialog("rito_3.0.septen")
+  end
+end
+
 function npc_rito_4:on_interaction()
   game:set_dialog_style("default")
   if game:is_dungeon_finished(7) then
@@ -75,7 +86,7 @@ function npc_rito_trading:on_interaction()
         -- give him the cookbook, get the feather
         game:start_dialog("rito.0.trading_yes", function()
           hero:start_treasure("feather")
-	game:get_item("trading"):set_variant(13)
+          game:get_item("trading"):set_variant(13)
           game:set_value("b2033", true)
           game:set_value("b2032", false)
           quest_trading_feather:remove()
@@ -105,14 +116,13 @@ if shop_world_map_2 ~= nil then
           if game:get_value("i1836") >= 30 then
             hero:start_treasure("world_map", 2)
             game:set_value("i1836",game:get_value("i1836")-30)
-	  shop_world_map_2:set_enabled(false)
+            shop_world_map_2:set_enabled(false)
           else
             game:start_dialog("_shop.not_enough_money")
           end
         end
       end)
     end)
-
   end
 end
 
