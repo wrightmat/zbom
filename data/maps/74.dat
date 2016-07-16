@@ -7930,6 +7930,17 @@ tile{
   pattern = "217",
 }
 
+dynamic_tile{
+  name = "night_entrance",
+  layer = 0,
+  x = 104,
+  y = 136,
+  pattern = "242",
+  width = 16,
+  height = 24,
+  enabled_at_start = false,
+}
+
 teletransporter{
   name = "to_B8",
   layer = 0,

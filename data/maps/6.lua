@@ -6,6 +6,11 @@ local game = map:get_game()
 ----------------------------------------------------------------------
 
 function map:on_started(destination)
+  if game:get_time_of_day() == "day" then
+    npc_gerudo_leader:remove()
+    npc_gerudo_pirate_1:remove()
+    npc_gerudo_pirate_2:remove()
+  end
   if not game:get_value("b2023") then quest_trading_tear:remove() end
   if destination == enter_astronomer then
     sol.audio.play_music("house_zuna")
@@ -89,4 +94,19 @@ function npc_tokay_plume:on_interaction()
       hero:start_treasure("plume")
     end
   end)
+end
+
+function npc_gerudo_pirate_1:on_interaction()
+  game:set_dialog_style("default")
+  game:start_dialog("gerudo.3.desert")
+end
+
+function npc_gerudo_pirate_2:on_interaction()
+  game:set_dialog_style("default")
+  game:start_dialog("gerudo.3.desert")
+end
+
+function npc_gerudo_leader:on_interaction()
+  game:set_dialog_style("default")
+  game:start_dialog("hesla.6.desert")
 end

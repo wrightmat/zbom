@@ -4479,6 +4479,36 @@ custom_entity{
   model = "quest_books",
 }
 
+npc{
+  name = "npc_gerudo_leader",
+  layer = 0,
+  x = 1104,
+  y = 741,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/gerudo_hesla",
+}
+
+npc{
+  name = "npc_gerudo_pirate_1",
+  layer = 0,
+  x = 440,
+  y = 733,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/gerudo_pirate",
+}
+
+npc{
+  name = "npc_gerudo_pirate_2",
+  layer = 0,
+  x = 768,
+  y = 741,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/gerudo_pirate",
+}
+
 tile{
   layer = 1,
   x = 1136,
