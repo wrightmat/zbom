@@ -2936,24 +2936,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 24,
-  y = 112,
-  width = 40,
-  height = 48,
-  pattern = "234",
-}
-
-tile{
-  layer = 1,
-  x = 176,
-  y = 112,
-  width = 40,
-  height = 48,
-  pattern = "234",
-}
-
-tile{
-  layer = 1,
   x = 136,
   y = 336,
   width = 40,
@@ -3013,6 +2995,123 @@ tile{
   width = 40,
   height = 48,
   pattern = "234",
+}
+
+tile{
+  layer = 1,
+  x = 176,
+  y = 112,
+  width = 40,
+  height = 48,
+  pattern = "234",
+}
+
+tile{
+  layer = 1,
+  x = 24,
+  y = 112,
+  width = 40,
+  height = 48,
+  pattern = "234",
+}
+
+dynamic_tile{
+  name = "night_light_1",
+  layer = 1,
+  x = 176,
+  y = 112,
+  pattern = "234",
+  width = 40,
+  height = 48,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_light_2",
+  layer = 1,
+  x = 24,
+  y = 112,
+  pattern = "234",
+  width = 40,
+  height = 48,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_light_3",
+  layer = 1,
+  x = 136,
+  y = 336,
+  pattern = "234",
+  width = 40,
+  height = 48,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_light_4",
+  layer = 1,
+  x = 216,
+  y = 608,
+  pattern = "234",
+  width = 40,
+  height = 48,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_light_5",
+  layer = 1,
+  x = 88,
+  y = 864,
+  pattern = "234",
+  width = 40,
+  height = 48,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_light_6",
+  layer = 1,
+  x = 568,
+  y = 928,
+  pattern = "234",
+  width = 40,
+  height = 48,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_light_7",
+  layer = 1,
+  x = 1016,
+  y = 800,
+  pattern = "234",
+  width = 40,
+  height = 48,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_light_8",
+  layer = 1,
+  x = 760,
+  y = 592,
+  pattern = "234",
+  width = 40,
+  height = 48,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_light_9",
+  layer = 1,
+  x = 592,
+  y = 296,
+  pattern = "234",
+  width = 40,
+  height = 48,
+  enabled_at_start = false,
 }
 
 tile{

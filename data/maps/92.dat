@@ -4750,6 +4750,72 @@ tile{
   pattern = "234",
 }
 
+dynamic_tile{
+  name = "night_light_1",
+  layer = 1,
+  x = 40,
+  y = 744,
+  pattern = "234",
+  width = 40,
+  height = 48,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_light_2",
+  layer = 1,
+  x = 256,
+  y = 504,
+  pattern = "234",
+  width = 40,
+  height = 48,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_light_3",
+  layer = 1,
+  x = 376,
+  y = 504,
+  pattern = "234",
+  width = 40,
+  height = 48,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_light_4",
+  layer = 1,
+  x = 552,
+  y = 584,
+  pattern = "234",
+  width = 40,
+  height = 48,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_light_5",
+  layer = 1,
+  x = 752,
+  y = 280,
+  pattern = "234",
+  width = 40,
+  height = 48,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_light_6",
+  layer = 1,
+  x = 952,
+  y = 48,
+  pattern = "234",
+  width = 40,
+  height = 48,
+  enabled_at_start = false,
+}
+
 tile{
   layer = 2,
   x = 360,
