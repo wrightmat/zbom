@@ -13246,6 +13246,17 @@ custom_entity{
   model = "tree_apple",
 }
 
+dynamic_tile{
+  name = "night_window",
+  layer = 0,
+  x = 184,
+  y = 880,
+  pattern = "237",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
 tile{
   layer = 1,
   x = 208,

@@ -35,11 +35,15 @@ local function are_all_torches_on()
 end
 
 function map:on_started(destination)
-  random_walk(goat_1)
-  random_walk(goat_2)
-  random_walk(goat_3)
-  random_walk(goat_4)
-  random_walk(goat_5)
+  if game:get_time_of_day() == "day" then
+    random_walk(goat_1)
+    random_walk(goat_2)
+    random_walk(goat_3)
+    random_walk(goat_4)
+    random_walk(goat_5)
+  else
+    goat_1:remove(); goat_2:remove(); goat_3:remove(); goat_4:remove(); goat_5:remove()
+  end
   -- If the festival isn't over, make sure banners, booths and NPCs are outside.
   if game:get_value("i1027") < 5 then
     banner_1:set_enabled(true)
@@ -50,7 +54,11 @@ function map:on_started(destination)
     booth_1:set_enabled(true)
     npc_gaira:remove()
   else
-    random_walk(npc_tern)
+    if game:get_time_of_day() == "day" then
+      random_walk(npc_tern)
+    else
+      npc_tern:remove()
+    end
     torch_2:remove(); wall_2:remove()
     torch_3:remove(); wall_3:remove()
   end
@@ -144,7 +152,7 @@ if game:get_time_of_day() ~= "night" then
 
     -- Show remaining timer time on screen.
     if game.race_timer ~= nil then
-      local timer_icon = sol.surface.create("hud/timer.png")
+      local timer_icon = sol.sprite.create("hud/timer")
       local timer_time = math.floor(game.race_timer:get_remaining_time() / 1000)
       local timer_text = sol.text_surface.create{
         font = "white_digits",

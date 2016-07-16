@@ -3,9 +3,9 @@ properties{
   y = 13452,
   width = 1120,
   height = 1120,
-  world = "outside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_world",
   tileset = "2",
   music = "same",
 }
@@ -5203,6 +5203,17 @@ tile{
   pattern = "180",
 }
 
+dynamic_tile{
+  name = "night_entrance",
+  layer = 0,
+  x = 112,
+  y = 656,
+  pattern = "2172",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
 sensor{
   name = "sensor_music",
   layer = 0,
@@ -6019,6 +6030,17 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/mailbox",
+}
+
+dynamic_tile{
+  name = "night_window",
+  layer = 0,
+  x = 80,
+  y = 656,
+  pattern = "2173",
+  width = 24,
+  height = 16,
+  enabled_at_start = false,
 }
 
 tile{

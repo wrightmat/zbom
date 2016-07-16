@@ -1,7 +1,6 @@
 local map = ...
 local game = map:get_game()
 local warned = false
-game:set_value("b1117", false)
 
 local shadow = sol.surface.create(1696, 1760)
 local lights = sol.surface.create(1696, 1760)

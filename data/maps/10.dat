@@ -3,9 +3,9 @@ properties{
   y = 15694,
   width = 1120,
   height = 1120,
-  world = "outside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_world",
   tileset = "2",
   music = "town_ordon",
 }
@@ -8466,7 +8466,7 @@ dynamic_tile{
 }
 
 dynamic_tile{
-  name = "night_entrance_4",
+  name = "night_julita_door",
   layer = 0,
   x = 424,
   y = 248,
@@ -8477,7 +8477,7 @@ dynamic_tile{
 }
 
 dynamic_tile{
-  name = "night_entrance_3",
+  name = "night_pim_door",
   layer = 0,
   x = 800,
   y = 424,
@@ -8488,7 +8488,7 @@ dynamic_tile{
 }
 
 dynamic_tile{
-  name = "night_entrance_2",
+  name = "night_ulo_door",
   layer = 0,
   x = 504,
   y = 792,

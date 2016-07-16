@@ -86,7 +86,8 @@ local function update_rooms()
 end
 
 function map:on_started(destination)
-  -- The only way to get out of the game is to die.
+  room_overlay_1:set_blending_mode("color_modulate") -- testing blending modes for this area, but may not need it.
+  -- The only way to get out of this area of the game is to die.
   game:set_starting_location("218", "from_outside")
 
   if destination == from_above and not game:get_value("dungeon_8_explored_1b_complete") then

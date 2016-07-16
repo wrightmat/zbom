@@ -19,6 +19,7 @@ if game:get_value("i2015")==nil then game:set_value("i2015", 0) end
 if game:get_value("i2021")==nil then game:set_value("i2021", 0) end
 
 function map:on_started(destination)
+  if game:get_time_of_day() == "day" then npc_tern:remove() end
   if game:get_item("trading"):get_variant() >= 6 then table_crystal_ball:set_enabled(true) end
   if not game:get_value("b2020") or game:get_value("i2021") >= 1 then quest_trading_potion:remove() end
   if not game:get_value("b2025") then quest_trading_meat:remove() end
@@ -93,6 +94,7 @@ function map:on_started(destination)
         bed:get_sprite():set_animation("empty_open")
         sol.audio.play_sound("hero_lands")
         map:get_game().hud:set_enabled(true)
+        game:set_value("hour_of_day", 8) -- Hero awakes at 8am
       end)
       sleep_timer:set_with_sound(false)
     end)
@@ -359,7 +361,6 @@ function impa_bed_dest:on_activated()
 end
 
 function shelf_1:on_interaction()
-  game:set_dialog_style("default")
   game:start_dialog("pim.1.house")
 end
 
@@ -371,4 +372,8 @@ function npc_shopkeeper:on_interaction()
   else
     game:start_dialog("shopkeep.0")
   end
+end
+
+function npc_tern:on_interaction()
+  game:start_dialog("tern.1.house")
 end

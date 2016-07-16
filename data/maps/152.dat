@@ -3,9 +3,9 @@ properties{
   y = 1121,
   width = 1120,
   height = 1120,
-  world = "outside_subrosia",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_subrosia",
   tileset = "12",
   music = "subrosia",
 }
@@ -35,24 +35,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "1694",
-}
-
-tile{
-  layer = 0,
-  x = 352,
-  y = 256,
-  width = 128,
-  height = 112,
-  pattern = "1996",
-}
-
-tile{
-  layer = 0,
-  x = 408,
-  y = 256,
-  width = 8,
-  height = 32,
-  pattern = "2058",
 }
 
 tile{
@@ -616,123 +598,6 @@ tile{
 tile{
   layer = 0,
   x = 352,
-  y = 344,
-  width = 16,
-  height = 16,
-  pattern = "762",
-}
-
-tile{
-  layer = 0,
-  x = 352,
-  y = 272,
-  width = 8,
-  height = 72,
-  pattern = "765",
-}
-
-tile{
-  layer = 0,
-  x = 352,
-  y = 256,
-  width = 16,
-  height = 16,
-  pattern = "759",
-}
-
-tile{
-  layer = 0,
-  x = 464,
-  y = 256,
-  width = 16,
-  height = 16,
-  pattern = "760",
-}
-
-tile{
-  layer = 0,
-  x = 472,
-  y = 272,
-  width = 8,
-  height = 72,
-  pattern = "766",
-}
-
-tile{
-  layer = 0,
-  x = 368,
-  y = 352,
-  width = 96,
-  height = 8,
-  pattern = "764",
-}
-
-tile{
-  layer = 0,
-  x = 464,
-  y = 344,
-  width = 16,
-  height = 16,
-  pattern = "761",
-}
-
-tile{
-  layer = 0,
-  x = 416,
-  y = 256,
-  width = 16,
-  height = 16,
-  pattern = "2054",
-}
-
-tile{
-  layer = 0,
-  x = 432,
-  y = 256,
-  width = 16,
-  height = 16,
-  pattern = "2055",
-}
-
-tile{
-  layer = 0,
-  x = 416,
-  y = 272,
-  width = 16,
-  height = 16,
-  pattern = "2057",
-}
-
-tile{
-  layer = 0,
-  x = 432,
-  y = 272,
-  width = 8,
-  height = 16,
-  pattern = "2059",
-}
-
-tile{
-  layer = 0,
-  x = 408,
-  y = 288,
-  width = 40,
-  height = 8,
-  pattern = "2060",
-}
-
-tile{
-  layer = 0,
-  x = 368,
-  y = 256,
-  width = 96,
-  height = 8,
-  pattern = "763",
-}
-
-tile{
-  layer = 0,
-  x = 352,
   y = 360,
   width = 128,
   height = 8,
@@ -818,15 +683,6 @@ tile{
   width = 16,
   height = 32,
   pattern = "1128",
-}
-
-tile{
-  layer = 0,
-  x = 440,
-  y = 336,
-  width = 16,
-  height = 16,
-  pattern = "17",
 }
 
 tile{
@@ -2053,14 +1909,135 @@ tile{
   pattern = "1128",
 }
 
-npc{
-  name = "subrosian_soaking",
+dynamic_tile{
+  name = "lava_6",
+  layer = 0,
+  x = 416,
+  y = 256,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_5",
+  layer = 0,
+  x = 432,
+  y = 256,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_4",
+  layer = 0,
+  x = 400,
+  y = 256,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_3",
+  layer = 0,
+  x = 384,
+  y = 256,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_2",
+  layer = 0,
+  x = 368,
+  y = 256,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_7",
   layer = 0,
   x = 448,
-  y = 341,
-  direction = -1,
-  subtype = 0,
-  sprite = "npc/subrosian_green",
+  y = 256,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 368,
+  y = 256,
+  pattern = "763",
+  width = 96,
+  height = 8,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_47",
+  layer = 0,
+  x = 448,
+  y = 336,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_22",
+  layer = 0,
+  x = 432,
+  y = 288,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_20",
+  layer = 0,
+  x = 400,
+  y = 288,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_21",
+  layer = 0,
+  x = 416,
+  y = 288,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_14",
+  layer = 0,
+  x = 432,
+  y = 272,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
 }
 
 enemy{
@@ -3124,6 +3101,563 @@ custom_entity{
   direction = 0,
   sprite = "entities/soil",
   model = "soil",
+}
+
+dynamic_tile{
+  name = "lava_1",
+  layer = 0,
+  x = 352,
+  y = 256,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_8",
+  layer = 0,
+  x = 464,
+  y = 256,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_9",
+  layer = 0,
+  x = 352,
+  y = 272,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_10",
+  layer = 0,
+  x = 368,
+  y = 272,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_11",
+  layer = 0,
+  x = 384,
+  y = 272,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_12",
+  layer = 0,
+  x = 400,
+  y = 272,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_13",
+  layer = 0,
+  x = 416,
+  y = 272,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 432,
+  y = 256,
+  pattern = "2055",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 416,
+  y = 256,
+  pattern = "2054",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 408,
+  y = 256,
+  pattern = "2058",
+  width = 8,
+  height = 32,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 416,
+  y = 272,
+  pattern = "2057",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 432,
+  y = 272,
+  pattern = "2059",
+  width = 8,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 408,
+  y = 288,
+  pattern = "2060",
+  width = 40,
+  height = 8,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_15",
+  layer = 0,
+  x = 448,
+  y = 272,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_16",
+  layer = 0,
+  x = 464,
+  y = 272,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_17",
+  layer = 0,
+  x = 352,
+  y = 288,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_18",
+  layer = 0,
+  x = 368,
+  y = 288,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_19",
+  layer = 0,
+  x = 384,
+  y = 288,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_23",
+  layer = 0,
+  x = 448,
+  y = 288,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_24",
+  layer = 0,
+  x = 464,
+  y = 288,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_25",
+  layer = 0,
+  x = 352,
+  y = 304,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_26",
+  layer = 0,
+  x = 368,
+  y = 304,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_27",
+  layer = 0,
+  x = 384,
+  y = 304,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_28",
+  layer = 0,
+  x = 400,
+  y = 304,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_29",
+  layer = 0,
+  x = 416,
+  y = 304,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_30",
+  layer = 0,
+  x = 432,
+  y = 304,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_31",
+  layer = 0,
+  x = 448,
+  y = 304,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_32",
+  layer = 0,
+  x = 464,
+  y = 304,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_33",
+  layer = 0,
+  x = 352,
+  y = 320,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_34",
+  layer = 0,
+  x = 368,
+  y = 320,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_35",
+  layer = 0,
+  x = 384,
+  y = 320,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_36",
+  layer = 0,
+  x = 400,
+  y = 320,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_37",
+  layer = 0,
+  x = 416,
+  y = 320,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_38",
+  layer = 0,
+  x = 432,
+  y = 320,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_39",
+  layer = 0,
+  x = 448,
+  y = 320,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_40",
+  layer = 0,
+  x = 464,
+  y = 320,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_41",
+  layer = 0,
+  x = 352,
+  y = 336,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_42",
+  layer = 0,
+  x = 368,
+  y = 336,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_43",
+  layer = 0,
+  x = 384,
+  y = 336,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_44",
+  layer = 0,
+  x = 400,
+  y = 336,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_45",
+  layer = 0,
+  x = 416,
+  y = 336,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_46",
+  layer = 0,
+  x = 432,
+  y = 336,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 440,
+  y = 336,
+  pattern = "17",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+npc{
+  name = "subrosian_soaking",
+  layer = 0,
+  x = 448,
+  y = 341,
+  direction = -1,
+  subtype = 0,
+  sprite = "npc/subrosian_green",
+}
+
+dynamic_tile{
+  name = "lava_48",
+  layer = 0,
+  x = 464,
+  y = 336,
+  pattern = "1996",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 352,
+  y = 256,
+  pattern = "759",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 352,
+  y = 272,
+  pattern = "765",
+  width = 8,
+  height = 72,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 352,
+  y = 344,
+  pattern = "762",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 368,
+  y = 352,
+  pattern = "764",
+  width = 96,
+  height = 8,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 464,
+  y = 344,
+  pattern = "761",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 472,
+  y = 272,
+  pattern = "766",
+  width = 8,
+  height = 72,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 464,
+  y = 256,
+  pattern = "760",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
 }
 
 tile{

@@ -6296,6 +6296,16 @@ custom_entity{
   model = "quest_books",
 }
 
+npc{
+  name = "npc_tern",
+  layer = 0,
+  x = 264,
+  y = 869,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/ordon_tern",
+}
+
 tile{
   layer = 1,
   x = 264,
