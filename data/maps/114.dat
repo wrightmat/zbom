@@ -3818,6 +3818,138 @@ custom_entity{
   model = "tree_apple",
 }
 
+dynamic_tile{
+  name = "night_window_1",
+  layer = 0,
+  x = 536,
+  y = 496,
+  pattern = "237",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_window_2",
+  layer = 0,
+  x = 568,
+  y = 496,
+  pattern = "237",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_window_3",
+  layer = 0,
+  x = 992,
+  y = 696,
+  pattern = "237",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_window_4",
+  layer = 0,
+  x = 1024,
+  y = 696,
+  pattern = "237",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_window_5",
+  layer = 0,
+  x = 848,
+  y = 1024,
+  pattern = "237",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_window_6",
+  layer = 0,
+  x = 880,
+  y = 1024,
+  pattern = "237",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_window_7",
+  layer = 0,
+  x = 880,
+  y = 304,
+  pattern = "237",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_window_8",
+  layer = 0,
+  x = 912,
+  y = 304,
+  pattern = "237",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_entrance_1",
+  layer = 0,
+  x = 552,
+  y = 496,
+  pattern = "343",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_entrance_2",
+  layer = 0,
+  x = 896,
+  y = 304,
+  pattern = "343",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_entrance_3",
+  layer = 0,
+  x = 1008,
+  y = 696,
+  pattern = "343",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_entrance_4",
+  layer = 0,
+  x = 864,
+  y = 1024,
+  pattern = "343",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
 tile{
   layer = 1,
   x = 880,
