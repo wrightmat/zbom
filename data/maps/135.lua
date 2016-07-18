@@ -20,6 +20,13 @@ function map:on_started()
     sensor_band_2:remove()
     sensor_band_3:remove()
   end
+
+  -- Activate any night-specific dynamic tiles.
+  if game:get_time_of_day() == "night" then
+    for entity in game:get_map():get_entities("night_") do
+      entity:set_enabled(true)
+    end
+  end
 end
 
 function sensor_band_start:on_activated()
