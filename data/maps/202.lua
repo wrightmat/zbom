@@ -4,8 +4,8 @@ local warned = false
 
 local shadow = sol.surface.create(2256, 1072)
 local lights = sol.surface.create(2256, 1072)
-shadow:set_blend_mode("color_modulate")
-lights:set_blend_mode("additive_blending")
+shadow:set_blend_mode("multiply")
+lights:set_blend_mode("add")
 
 --------------------------------
 -- Dungeon 1: Hyrulean Sewers --
@@ -27,7 +27,7 @@ function map:on_started(destination)
       if e:get_sprite():get_animation() == "lit" then
         local xx,yy = e:get_position()
         local sp = sol.sprite.create("entities/torch_light")
-        sp:set_blend_mode("alpha_blending")
+        sp:set_blend_mode("blend")
         sp:draw(lights, xx-32, yy-40)
       end
     end
@@ -35,7 +35,7 @@ function map:on_started(destination)
       if e:get_distance(game:get_hero()) <= 300 then
         local xx,yy = e:get_position()
         local sp = sol.sprite.create("entities/torch_light_tile")
-        sp:set_blend_mode("alpha_blending")
+        sp:set_blend_mode("blend")
         sp:draw(lights, xx-8, yy-8)
       end
     end
@@ -156,7 +156,7 @@ function map:on_draw(dst_surface)
   if game:has_item("lamp") and game:get_magic() > 0 then
     local xx,yy = map:get_entity("hero"):get_position()
     local sp = sol.sprite.create("entities/torch_light_hero")
-    sp:set_blend_mode("alpha_blending")
+    sp:set_blend_mode("blend")
     sp:draw(lights, xx-64, yy-64)
   else
     game:start_dialog("_cannot_see_need_magic")

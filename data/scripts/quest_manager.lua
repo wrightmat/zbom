@@ -187,8 +187,8 @@ local function initialize_maps()
   local map_metatable = sol.main.get_metatable("map")
   local shadow = sol.surface.create(1120, 1120)
   local lights = sol.surface.create(1120, 1120)
-  shadow:set_blend_mode("color_modulate")
-  lights:set_blend_mode("additive_blending")
+  shadow:set_blend_mode("multiply")
+  lights:set_blend_mode("add")
   local heat_timer, swim_timer, draw_counter, magic_counter, time_counter, opacity
   draw_counter = 0
   magic_counter = 0
@@ -208,8 +208,6 @@ local function initialize_maps()
       if draw_counter >= 15 then
         shadow:clear()
         if hour_of_day >= 19 and hour_of_day <= 20 then
-          local shadow = sol.surface.create(1120, 1120)
-          shadow:set_blend_mode("color_modulate")
           -- Sunset
           t[1] = 255; t[2] = 255; t[3] = 255
           if t[1] >= 182 then t[1] = t[1] - 1 end -- Red: Goal is 182 (from 255)
@@ -253,7 +251,7 @@ local function initialize_maps()
           if e:get_sprite():get_animation() == "lit" and e:get_distance(game:get_hero()) <= 250 then
             local xx,yy = e:get_position()
             local sp = sol.sprite.create("entities/torch_light")
-            sp:set_blend_mode("alpha_blending")
+            sp:set_blend_mode("blend")
             sp:draw(lights, xx-32, yy-32)
          end
         end
@@ -261,7 +259,7 @@ local function initialize_maps()
           if e:is_enabled() and e:get_distance(game:get_hero()) <= 250 then
             local xx,yy = e:get_position()
             local sp = sol.sprite.create("entities/torch_light")
-            sp:set_blend_mode("alpha_blending")
+            sp:set_blend_mode("blend")
             sp:draw(lights, xx-24, yy-24)
           end
         end
@@ -269,7 +267,7 @@ local function initialize_maps()
           if e:is_enabled() and e:get_distance(game:get_hero()) <= 250 then
             local xx,yy = e:get_position()
             local sp = sol.sprite.create("entities/torch_light_tile")
-            sp:set_blend_mode("alpha_blending")
+            sp:set_blend_mode("blend")
             sp:draw(lights, xx-8, yy-8)
           end
         end
@@ -277,7 +275,7 @@ local function initialize_maps()
           if e:is_enabled() and e:get_distance(game:get_hero()) <= 200 then
             local xx,yy = e:get_position()
             local sp = sol.sprite.create("entities/torch_light_tile")
-            sp:set_blend_mode("alpha_blending")
+            sp:set_blend_mode("blend")
             sp:draw(lights, xx-8, yy-8)
           end
         end
@@ -285,7 +283,7 @@ local function initialize_maps()
           if e:is_enabled() and e:get_distance(game:get_hero()) <= 200 then
             local xx,yy = e:get_position()
             local sp = sol.sprite.create("entities/torch_light")
-            sp:set_blend_mode("alpha_blending")
+            sp:set_blend_mode("blend")
             sp:draw(lights, xx-32, yy-32)
           end
         end
@@ -302,7 +300,7 @@ local function initialize_maps()
       if game:has_item("lamp") and game:get_magic() > 0 then
         local xx, yy = game:get_map():get_entity("hero"):get_position()
         local sp = sol.sprite.create("entities/torch_light_hero")
-        sp:set_blend_mode("alpha_blending")
+        sp:set_blend_mode("blend")
         sp:draw(lights, xx-64, yy-68)
       end
       
