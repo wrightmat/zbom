@@ -62,7 +62,7 @@ function save_between_maps:get_entity_info(entity)
     local animation_set = sprite:get_animation_set()
     local model = entity:get_model()
     local direction = sprite:get_direction()
-    entity_properties.properties = {x = x, y = y, layer = layer, name = name, sprite = animation_set, model = model, 
+    entity_properties.properties = {x = x, y = y, width = 16, height = 16, layer = layer, name = name, sprite = animation_set, model = model, 
         direction = direction, entity_type = "custom_entity"}
   end
   if entity_properties then

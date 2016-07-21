@@ -139,7 +139,7 @@ function entity:throw()
   -- Set position on hero position and the sprite above of the entity.
   local hx,hy,hz = hero:get_position(); self:set_position(hx,hy,hz); sprite:set_xy(0,-22)
   -- Create a custom_entity for shadow (this one is drawn below).
-  self.shadow = map:create_custom_entity({direction=0,layer=hz,x=hx,y=hy})    
+  self.shadow = map:create_custom_entity({direction=0,layer=hz,x=hx,y=hy,width=16,height=16})    
   self.shadow:create_sprite("entities/ground_effects") -- Create sprite of the shadow.
   self.shadow:get_sprite():set_animation("shadow_small")
   self.shadow:bring_to_back()
@@ -223,7 +223,7 @@ function entity:check_on_ground()
     -- Create falling animation centered correctly on the 8x8 grid.
     x = math.floor(x/8)*8 + 4; if map:get_ground(x, y, layer) ~= "hole" then x = x + 4 end
     y = math.floor(y/8)*8 + 4; if map:get_ground(x, y, layer) ~= "hole" then y = y + 4 end
-    local fall_on_hole = map:create_custom_entity({x = x, y = y, layer = layer, direction = 0})
+    local fall_on_hole = map:create_custom_entity({x = x, y = y, width=16, height=16, layer = layer, direction = 0})
     local sprite = fall_on_hole:create_sprite("entities/ground_effects")
     sprite:set_animation("hole_fall")
     self.shadow:remove(); self:remove()
@@ -231,7 +231,7 @@ function entity:check_on_ground()
     --sol.audio.play_sound("falling_on_hole")
   elseif ground == "deep_water" then
     -- Sink in water.
-    local water_splash = map:create_custom_entity({x = x, y = y, layer = layer, direction = 0})    
+    local water_splash = map:create_custom_entity({x = x, y = y, width=16, height=16, layer = layer, direction = 0})    
     local sprite = water_splash:create_sprite("entities/ground_effects")
     sprite:set_animation("water_splash")
     self.shadow:remove(); self:remove()
@@ -239,7 +239,7 @@ function entity:check_on_ground()
     --sol.audio.play_sound("splash")
   elseif ground == "lava" then
     -- Sink in lava.
-    local lava_splash = map:create_custom_entity({x = x, y = y, layer = layer, direction = 0})    
+    local lava_splash = map:create_custom_entity({x = x, y = y, width=16, height=16, layer = layer, direction = 0})    
     local sprite = lava_splash:create_sprite("entities/ground_effects")
     sprite:set_animation("lava_splash")
     self.shadow:remove(); self:remove()

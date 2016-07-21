@@ -23,6 +23,8 @@ function item:on_using()
 	name = "ice_block",
 	x = x,
 	y = y,
+	width = 16,
+	height = 16,
 	layer = layer,
 	direction = map:get_hero():get_direction(),
 	model = "ice_block"
