@@ -61,7 +61,7 @@ function hud_manager:create(game)
   hud.elements[#hud.elements + 1] = rupees
 
   local pickables = pickables_builder:new(game)
-  pickables:set_dst_position(-255, -30)
+  pickables:set_dst_position(-275, -30)
   hud.elements[#hud.elements + 1] = pickables
 
   local small_keys = small_keys_builder:new(game)
