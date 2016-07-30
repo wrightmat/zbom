@@ -1,4 +1,4 @@
--- The money counter shown in the game screen.
+-- The time counter shown in the game screen.
 
 local clock = {}
 

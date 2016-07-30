@@ -8,7 +8,12 @@ local game = map:get_game()
 if game:get_value("i1906")==nil then game:set_value("i1906", 0) end --Tern
 if game:get_value("i1911")==nil then game:set_value("i1911", 0) end --Gaira
 if game:get_value("i1027")==nil then game:set_value("i1027", 0) end
-local torch_overlay = nil
+local ordona_speaking = false
+local shadow = sol.surface.create(1120, 1120)
+local lights = sol.surface.create(1120, 1120)
+shadow:fill_color({32,64,128,255})
+shadow:set_blend_mode("multiply")
+lights:set_blend_mode("add")
 
 local function random_walk(npc)
   local m = sol.movement.create("random_path")
@@ -138,33 +143,35 @@ function map:on_update()
   end
 end
 
-if game:get_time_of_day() ~= "night" then
-  function map:on_draw(dst_surface)
-    -- Show torch overlay for Ordona dialog.
-    if torch_overlay ~= nil then
-      local screen_width, screen_height = dst_surface:get_size()
-      local cx, cy = map:get_camera():get_position()
-      local tx, ty = torch_1:get_center_position()
-      local x = 320 - tx + cx
-      local y = 240 - ty + cy
-      torch_overlay:draw_region(x, y, screen_width, screen_height, dst_surface)
-    end
+function map:on_draw(dst_surface)
+  -- Show torch overlay for Ordona dialog
+  if game:get_time_of_day() ~= "night" and ordona_speaking then
+    local x,y = game:get_map():get_camera():get_position()
+    local w,h = game:get_map():get_camera():get_size()
+    local xx, yy = map:get_entity("torch_1"):get_position()
+    local sp = sol.sprite.create("entities/torch_light")
+    sp:set_blend_mode("blend")
+    sp:draw(lights, xx-32, yy-32)
+    lights:draw_region(x,y,w,h,shadow,x,y)
+    shadow:draw_region(x,y,w,h,dst_surface)
+  end
 
-    -- Show remaining timer time on screen.
-    if game.race_timer ~= nil then
-      local timer_icon = sol.sprite.create("hud/timer")
-      local timer_time = math.floor(game.race_timer:get_remaining_time() / 1000)
-      local timer_text = sol.text_surface.create{
-        font = "white_digits",
-        horizontal_alignment = "left",
-        vertical_alignment = "top",
-      }
-      timer_icon:draw(dst_surface, 5, 55)
-      timer_text:set_text(timer_time)
-      timer_text:draw(dst_surface, 22, 58)
-    end
+  -- Show remaining timer time on screen
+  if game.race_timer ~= nil then
+    local timer_icon = sol.sprite.create("hud/clock")
+    local timer_time = math.floor(game.race_timer:get_remaining_time() / 1000)
+    local timer_text = sol.text_surface.create{
+      font = "white_digits",
+      horizontal_alignment = "left",
+      vertical_alignment = "top",
+    }
+    timer_icon:set_animation("timer")
+    timer_icon:draw(dst_surface, 5, 55)
+    timer_text:set_text(timer_time)
+    timer_text:draw(dst_surface, 22, 58)
   end
 end
+
 
 function sensor_festival_dialog:on_activated()
   game:set_dialog_style("default")
@@ -245,13 +252,11 @@ function sensor_ordona_speak:on_activated()
     sol.timer.start(1000, function() torch_1:get_sprite():set_animation("lit") end)
     sol.timer.start(2000, function()
       hero:freeze()
-      torch_overlay = sol.surface.create("entities/dark.png")
-      torch_overlay:fade_in(50)
       hero:set_direction(0)
+      ordona_speaking = true
       game:start_dialog("ordona.8.village", game:get_player_name(), function()
-        torch_overlay:fade_out(50)
         sol.timer.start(2000, function()
-          torch_overlay = nil
+          ordona_speaking = false
           torch_1:get_sprite():set_animation("unlit")
         end)
         hero:unfreeze()
@@ -264,14 +269,12 @@ function sensor_ordona_speak:on_activated()
     sol.timer.start(1000, function() torch_1:get_sprite():set_animation("lit") end)
     sol.timer.start(2000, function()
       hero:freeze()
-      torch_overlay = sol.surface.create("entities/dark.png")
-      torch_overlay:fade_in(50)
-      game:set_value("i1027", 5)
       hero:set_direction(0)
+      ordona_speaking = true
+      game:set_value("i1027", 5)
       game:start_dialog("ordona.1.village", game:get_player_name(), function()
-        torch_overlay:fade_out(50)
         sol.timer.start(2000, function()
-          torch_overlay = nil
+          ordona_speaking = false
           torch_1:get_sprite():set_animation("unlit")
         end)
         hero:unfreeze()

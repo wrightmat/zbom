@@ -1035,6 +1035,7 @@ function savegame_menu:set_initial_values(savegame)
   savegame:get_item("rupee_bag"):set_variant(1)
   savegame:set_value("time_played", 0)
   savegame:set_value("times_died", 0)
+  savegame:set_value("hour_of_day", 7)
 end
 
 function savegame_menu:calculate_percent_complete(savegame)
