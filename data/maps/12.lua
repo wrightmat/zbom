@@ -135,35 +135,37 @@ function torch_5:on_interaction_item(lamp)
   torch_5:get_sprite():set_animation("lit")
 end
 
-function map:on_update()
-  if are_all_torches_on() then end_race_won() end
+if game:get_time_of_day() ~= "night" then
+  function map:on_draw(dst_surface)
+    if ordona_speaking then
+      -- Show torch overlay for Ordona dialog
+      local x,y = game:get_map():get_camera():get_position()
+      local w,h = game:get_map():get_camera():get_size()
+      local xx, yy = map:get_entity("torch_5"):get_position()
+      local sp = sol.sprite.create("entities/torch_light")
+      sp:set_blend_mode("blend")
+      sp:draw(lights, xx-32, yy-32)
+      lights:draw_region(x,y,w,h,shadow,x,y)
+      shadow:draw_region(x,y,w,h,dst_surface)
+    end
+
+    -- Show remaining timer time on screen
+    if game.race_timer ~= nil then
+      local timer_icon = sol.sprite.create("hud/clock")
+      local timer_time = math.floor(game.race_timer:get_remaining_time() / 1000)
+      local timer_text = sol.text_surface.create{
+        font = "white_digits",
+        horizontal_alignment = "left",
+        vertical_alignment = "top",
+      }
+      timer_icon:set_animation("timer")
+      timer_icon:draw(dst_surface, 5, 55)
+      timer_text:set_text(timer_time)
+      timer_text:draw(dst_surface, 22, 58)
+    end
+  end
 end
 
-function map:on_draw(dst_surface)
-  -- Show torch overlay for Ordona dialog
-  if game:get_time_of_day() ~= "night" and ordona_speaking then
-    local x,y = game:get_map():get_camera():get_position()
-    local w,h = game:get_map():get_camera():get_size()
-    local xx, yy = map:get_entity("torch_5"):get_position()
-    local sp = sol.sprite.create("entities/torch_light")
-    sp:set_blend_mode("blend")
-    sp:draw(lights, xx-32, yy-32)
-    lights:draw_region(x,y,w,h,shadow,x,y)
-    shadow:draw_region(x,y,w,h,dst_surface)
-  end
-
-  -- Show remaining timer time on screen
-  if game.race_timer ~= nil then
-    local timer_icon = sol.sprite.create("hud/clock")
-    local timer_time = math.floor(game.race_timer:get_remaining_time() / 1000)
-    local timer_text = sol.text_surface.create{
-      font = "white_digits",
-      horizontal_alignment = "left",
-      vertical_alignment = "top",
-    }
-    timer_icon:set_animation("timer")
-    timer_icon:draw(dst_surface, 5, 55)
-    timer_text:set_text(timer_time)
-    timer_text:draw(dst_surface, 22, 58)
-  end
+function map:on_update()
+  if are_all_torches_on() then end_race_won() end
 end

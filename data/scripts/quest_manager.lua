@@ -199,7 +199,7 @@ local function initialize_maps()
     local game = self:get_game()
     local hour_of_day = (time_counter / 3000)
     -- Put the night (or sunrise or sunset) overlay on any outdoor map if it's night time.
-    if (hour_of_day >= 19 or hour_of_day <= 7.4) and
+    if (hour_of_day >= 19.6 or hour_of_day <= 7.4) and
     (game:is_in_outside_world() or (self:get_world() == "dungeon_2" and self:get_id() == "20") or
 	  (self:get_world() == "dungeon_2" and self:get_id() == "21") or (self:get_world() == "dungeon_2" and self:get_id() == "22")) then
       local x,y = game:get_map():get_camera():get_position()
@@ -207,12 +207,33 @@ local function initialize_maps()
       
       if draw_counter >= 15 then
         shadow:clear()
-        if hour_of_day >= 19 and hour_of_day <= 20 then
-          -- Sunset
+        if hour_of_day >= 19.6 and hour_of_day < 20 then
           t[1] = 255; t[2] = 255; t[3] = 255
-          if t[1] >= 182 then t[1] = t[1] - 1 end -- Red: Goal is 182 (from 255)
-          if t[2] >= 126 then t[2] = t[2] - 2 end -- Green: Goal is 126 (from 255)
-          if t[3] >= 91 then t[3] = t[3] - 3 end  -- Blue: Goal is 91 (from 255)
+          -- Dusk
+          if t[1] >= 2 then
+            t[1] = t[1] - 2 -- Red: Goal is 0 (fade to black, which is the same as fading in for this blend mode)
+          else
+            game:set_value("time_of_day", "night")
+            game:set_value("hour_of_day", 20)
+          end
+          if t[2] >= 3 then
+            t[2] = t[2] - 3 -- Green: Goal is 0
+          else
+            game:set_value("time_of_day", "night")
+            game:set_value("hour_of_day", 20)
+          end
+          if t[3] >= 4 then
+            t[3] = t[3] - 4 -- Blue: Goal is 0
+          else
+            game:set_value("time_of_day", "night")
+            game:set_value("hour_of_day", 20)
+          end
+          shadow:fill_color(t)
+        elseif hour_of_day >= 20 and hour_of_day <= 21 then
+          -- Sunset
+          if t[1] >= 32 then t[1] = t[1] - 3 end -- Red: Goal is 32 (from 255)
+          if t[2] >= 64 then t[2] = t[2] - 2 end -- Green: Goal is 64 (from 255)
+          if t[3] >= 128 then t[3] = t[3] - 1 end  -- Blue: Goal is 128 (from 255)
           shadow:fill_color(t)
         elseif hour_of_day >= 6 and hour_of_day <= 7 then
           -- Sunrise
@@ -221,8 +242,9 @@ local function initialize_maps()
           t[3] = (37*(1-(hour_of_day-6)))+87 -- Blue: Goal is 91 (from 128)
           shadow:fill_color(t)
         elseif hour_of_day > 7 and hour_of_day <= 7.4 then
+          -- Dawn
           if t[1] <= 253 then
-            t[1] = t[1] + 2 -- Red: Goal is 255 (fade to white, which is the same as fading out in this blend mode)
+            t[1] = t[1] + 2 -- Red: Goal is 255 (fade to white, which is the same as fading out for this blend mode)
           else
             game:set_value("time_of_day", "day")
             game:set_value("hour_of_day", 7.5)
