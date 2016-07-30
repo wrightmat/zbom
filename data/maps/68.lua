@@ -53,9 +53,9 @@ function npc_dampeh:on_interaction()
   game:start_dialog("dampeh.2.mausoleum")
 end
 
-function map:on_draw(dst_surface)
-  -- Show torch overlay for Ordona dialog
-  if game:get_time_of_day() ~= "night" and ordona_speaking then
+if game:get_time_of_day() ~= "night" and ordona_speaking then
+  function map:on_draw(dst_surface)
+    -- Show torch overlay for Ordona dialog
     local x,y = game:get_map():get_camera():get_position()
     local w,h = game:get_map():get_camera():get_size()
     local xx, yy = map:get_entity("torch_5"):get_position()
