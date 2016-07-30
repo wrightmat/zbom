@@ -1,5 +1,6 @@
 local entity = ...
 local game = entity:get_game()
+local map = game:get_map()
 
 -- Julita is the mothers of Christa who runs the potion
 -- shop. She's also a mother-like figure to our hero.
@@ -33,7 +34,7 @@ function entity:on_created()
   self:set_drawn_in_y_order(true)
   self:set_can_traverse("hero", false)
   self:set_traversable_by("hero", false)
-  if game:get_map():get_id() == "1" then
+  if map:get_id() == "1" then
     if game:get_value("i1032") >= 3 then
       -- Julita and Crista switch places at this time:
       -- Julita running the shop, Crista at home. 
@@ -46,12 +47,14 @@ function entity:on_created()
 end
 
 function entity:on_interaction()
-  game:set_dialog_style("default")
-  if game:get_map():get_id() == "10" then
+  -- First, make the NPC face the hero when interacting
+  self:get_sprite():set_direction(self:get_direction4_to(game:get_hero()))
+
+  if map:get_id() == "10" then
     if game:get_value("i1027") >= 4 then
       game:start_dialog("julita.1", game:get_player_name(), function()
         game:set_value("i1903", 2)
-        game:get_map():get_entity("quest_julita"):remove()
+        if map:get_entity("quest_julita") ~= nil then map:get_entity("quest_julita"):remove() end
         if not game:has_item("shield") then game:start_dialog("julita.1.shield") end
       end)
     elseif game:get_value("i1027") < 5 then

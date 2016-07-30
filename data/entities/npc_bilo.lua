@@ -37,7 +37,9 @@ function entity:on_created()
 end
 
 function entity:on_interaction()
-  game:set_dialog_style("default")
+  -- First, make the NPC face the hero when interacting
+  self:get_sprite():set_direction(self:get_direction4_to(game:get_hero()))
+
   if map:get_id() == "32" then
     game:start_dialog("bilo.0.field")
   else

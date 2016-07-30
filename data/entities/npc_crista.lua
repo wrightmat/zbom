@@ -50,7 +50,9 @@ function entity:on_created()
 end
 
 function entity:on_interaction()
-  game:set_dialog_style("default")
+  -- First, make the NPC face the hero when interacting
+  self:get_sprite():set_direction(self:get_direction4_to(game:get_hero()))
+
   if game:get_map():get_id() == "28" then
     -- Faron Woods access to sewer, to get sword.
     if game:get_value("i1901") >= 1 then

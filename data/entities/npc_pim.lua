@@ -39,7 +39,9 @@ function entity:on_created()
 end
 
 function entity:on_interaction()
-  game:set_dialog_style("default")
+  -- First, make the NPC face the hero when interacting
+  self:get_sprite():set_direction(self:get_direction4_to(game:get_hero()))
+
   if game:get_value("i1024") <= 80 and game:get_map():get_id() == "1" and not warned then
     game:start_dialog("pim.0.stamina")
     warned = true
