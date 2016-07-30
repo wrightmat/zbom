@@ -36,7 +36,7 @@ function map:on_started(destination)
     sol.audio.play_music("beach")
   end
 
-  if game:get_time_of_day() == "night" then
+  if game:get_time_of_day() == "night" and npc_tokay_chef ~= nil then
     npc_tokay_chef:remove()
   end
 

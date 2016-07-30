@@ -199,7 +199,7 @@ local function initialize_maps()
     local game = self:get_game()
     local hour_of_day = (time_counter / 3000)
     -- Put the night (or sunrise or sunset) overlay on any outdoor map if it's night time.
-    if hour_of_day >= 19 or hour_of_day <= 7.4 and
+    if (hour_of_day >= 19 or hour_of_day <= 7.4) and
     (game:is_in_outside_world() or (self:get_world() == "dungeon_2" and self:get_id() == "20") or
 	  (self:get_world() == "dungeon_2" and self:get_id() == "21") or (self:get_world() == "dungeon_2" and self:get_id() == "22")) then
       local x,y = game:get_map():get_camera():get_position()

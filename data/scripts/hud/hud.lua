@@ -93,7 +93,7 @@ function hud_manager:create(game)
   hud.elements[#hud.elements + 1] = action_icon
 
   local clock = clock_builder:new(game)
-  clock:set_dst_position(0, -50)
+  clock:set_dst_position(-32, -32)
   hud.elements[#hud.elements + 1] = clock
 
   -- Destroys the HUD.

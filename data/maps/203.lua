@@ -25,12 +25,6 @@ function map:on_started(destination)
   map:set_doors_open("door_miniboss")
   if game:get_value("b1067") then map:set_doors_open("room15_shutter") end
   if not game:get_value("b1057") then miniboss_mothulita:set_enabled(false) end
-  -- if hero has bow, then close the arrow switch-activated doors
-  if game:get_value("b2003") then
-    --map:set_doors_open("room6_shutter_2", false)
-  else
-    map:set_doors_open("room6_shutter")
-  end
   -- Don't allow to get the page again (which is possible since it's taken away by the monkey).
   -- Going back and getting it again forces the player to go back to the Pyramid to retrieve parts as well.
   if game:get_value("i1807") >= 1 then

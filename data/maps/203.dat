@@ -9713,6 +9713,15 @@ tile{
   pattern = "593",
 }
 
+sensor{
+  name = "sensor_close_room18",
+  layer = 0,
+  x = 1176,
+  y = 1301,
+  width = 16,
+  height = 48,
+}
+
 destructible{
   layer = 0,
   x = 1448,
@@ -13070,15 +13079,6 @@ destination{
   x = 1888,
   y = 1589,
   direction = -1,
-}
-
-sensor{
-  name = "sensor_close_room18",
-  layer = 0,
-  x = 1184,
-  y = 1309,
-  width = 16,
-  height = 32,
 }
 
 teletransporter{
