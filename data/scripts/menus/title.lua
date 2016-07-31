@@ -21,11 +21,28 @@ function title_screen:phase_zs_presents()
   local zs_presents_img = sol.surface.create("title_screen_initialization.png", true)
 
   local width, height = zs_presents_img:get_size()
-  local x, y = 160 - width / 2, 120 - height / 2
+  local x, y = 160 - width / 2, 80 - height / 2
   zs_presents_img:draw(self.surface, x, y)
   sol.audio.play_sound("intro")
 
-  sol.timer.start(self, 2000, function()
+  sol.timer.start(self, 1000, function()
+    sol.timer.start(self, 700, function()
+      self:phase_zh_production()
+    end)
+  end)
+end
+
+function title_screen:phase_zh_production()
+  -- "A ZeldaHistorian Production" displayed for two seconds.
+  self.phase = "zh_production"
+  local zh_production_img = sol.surface.create("title_screen_initialization_2.png", true)
+
+  local width, height = zh_production_img:get_size()
+  local x, y = 160 - width / 2, 160 - height / 2
+  zh_production_img:draw(self.surface, x, y)
+  sol.audio.play_sound("intro")
+
+  sol.timer.start(self, 1000, function()
     self.surface:fade_out(10)
     sol.timer.start(self, 700, function()
       self:phase_title()

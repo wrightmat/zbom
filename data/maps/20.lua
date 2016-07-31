@@ -43,6 +43,19 @@ function map:on_started(destination)
     npc_monkey_1:remove()
     npc_monkey_2:remove()
   end
+
+  sol.timer.start(map, 1000, function()
+    if game:get_value("i1068") < 6 then
+      -- if the dekus/tokay are fighting then keep them staring each other down!
+      npc_deku_1:get_sprite():set_direction(2)
+      npc_deku_2:get_sprite():set_direction(2)
+      npc_deku_3:get_sprite():set_direction(2)
+      npc_tokay_1:get_sprite():set_direction(0)
+      npc_tokay_2:get_sprite():set_direction(0)
+      npc_tokay_3:get_sprite():set_direction(0)
+      return true
+    end
+  end)
 end
 
 function sensor_deku_tokay:on_activated()
@@ -210,16 +223,4 @@ function npc_tokay_3:on_interaction()
   game:set_dialog_style("default")
   sol.audio.play_sound("tokay")
   game:start_dialog("tokay3.1.faron")
-end
-
-function map:on_update()
-  if game:get_value("i1068") < 6 then
-    -- if the dekus/tokay are fighting then keep them staring each other down!
-    npc_deku_1:get_sprite():set_direction(2)
-    npc_deku_2:get_sprite():set_direction(2)
-    npc_deku_3:get_sprite():set_direction(2)
-    npc_tokay_1:get_sprite():set_direction(0)
-    npc_tokay_2:get_sprite():set_direction(0)
-    npc_tokay_3:get_sprite():set_direction(0)
-  end
 end
