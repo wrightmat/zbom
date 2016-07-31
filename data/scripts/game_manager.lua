@@ -106,13 +106,15 @@ function game:set_time_of_day(tod)
 end
 function game:switch_time_of_day()
   -- Function called when sleeping.
-  -- Sleeping during day takes player to 1900 (7pm) and sleeping at night takes us to 0700 (7am).
+  -- Sleeping during day takes player to 2100 (9pm) and sleeping at night takes us to 0800 (8am).
   if game:get_value("time_of_day") == "day" then
     game:set_value("time_of_day", "night")
-    game:set_value("hour_of_day", 20)
+    game:set_value("hour_of_day", 21)
+    time_counter = 21 * 3000
   else
     game:set_value("time_of_day", "day")
-    game:set_value("hour_of_day", 7)
+    game:set_value("hour_of_day", 8)
+    time_counter = 8 * 3000
   end
   return true
 end

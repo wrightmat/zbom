@@ -189,50 +189,53 @@ local function initialize_maps()
   local lights = sol.surface.create(1120, 1120)
   shadow:set_blend_mode("multiply")
   lights:set_blend_mode("add")
-  local heat_timer, swim_timer, draw_counter, magic_counter, time_counter, opacity
-  local hour_of_day, camera_x, camera_y, camera_h, camera_w
-  hour_of_day = 0
-  time_counter = 0
+  local heat_timer, swim_timer, draw_counter, magic_counter, opacity
+  local camera_x, camera_y, camera_h, camera_w
   draw_counter = 0
   magic_counter = 0
   opacity = 255
   local t = {}
 
-function map_metatable:on_draw(dst_surface)
+  function map_metatable:on_draw(dst_surface)
     local game = self:get_game()
+    local hour_of_day = (time_counter / 3000)
     -- Put the night (or sunrise or sunset) overlay on any outdoor map if it's night time.
     if (hour_of_day >= 19.6 or hour_of_day <= 7.4) and
-    (game:is_in_outside_world() or (self:get_world() == "dungeon_2" and self:get_id() == "20") or
-          (self:get_world() == "dungeon_2" and self:get_id() == "21") or (self:get_world() == "dungeon_2" and self:get_id() == "22")) then
-      
+       (game:is_in_outside_world() or (self:get_id() == "20" or self:get_id() == "21" or self:get_id() == "22")) then
       if draw_counter >= 15 then
         if hour_of_day >= 19.6 and hour_of_day < 20 then
           t[1] = 255; t[2] = 255; t[3] = 255
           -- Dusk
           if t[1] >= 2 then
             t[1] = t[1] - 2 -- Red: Goal is 0 (fade to black, which is the same as fading in for this blend mode)
-          else
-            game:set_value("time_of_day", "night")
-            game:set_value("hour_of_day", 20)
-          end
+          else time_counter = 20 * 3000 end
           if t[2] >= 3 then
             t[2] = t[2] - 3 -- Green: Goal is 0
-          else
-            game:set_value("time_of_day", "night")
-            game:set_value("hour_of_day", 20)
-          end
+          else time_counter = 20 * 3000 end
           if t[3] >= 4 then
             t[3] = t[3] - 4 -- Blue: Goal is 0
+          else time_counter = 20 * 3000 end
+          shadow:fill_color(t)
+        elseif hour_of_day >= 20 and hour_of_day < 21 then
+          -- Sunset
+          if t[1] >= 32 then
+            t[1] = t[1] - 3 -- Red: Goal is 32 (from 255)
           else
             game:set_value("time_of_day", "night")
-            game:set_value("hour_of_day", 20)
+            time_counter = 21 * 3000
           end
-          shadow:fill_color(t)
-        elseif hour_of_day >= 20 and hour_of_day <= 21 then
-          -- Sunset
-          if t[1] >= 32 then t[1] = t[1] - 3 end -- Red: Goal is 32 (from 255)
-          if t[2] >= 64 then t[2] = t[2] - 2 end -- Green: Goal is 64 (from 255)
-          if t[3] >= 128 then t[3] = t[3] - 1 end  -- Blue: Goal is 128 (from 255)
+          if t[2] >= 64 then
+            t[2] = t[2] - 2 -- Green: Goal is 64 (from 255)
+          else
+            game:set_value("time_of_day", "night")
+            time_counter = 21 * 3000
+          end
+          if t[3] >= 128 then
+            t[3] = t[3] - 1  -- Blue: Goal is 128 (from 255)
+          else
+            game:set_value("time_of_day", "night")
+            time_counter = 21 * 3000
+          end
           shadow:fill_color(t)
         elseif hour_of_day >= 6 and hour_of_day <= 7 then
           -- Sunrise
@@ -246,19 +249,19 @@ function map_metatable:on_draw(dst_surface)
             t[1] = t[1] + 2 -- Red: Goal is 255 (fade to white, which is the same as fading out for this blend mode)
           else
             game:set_value("time_of_day", "day")
-            game:set_value("hour_of_day", 7.5)
+            time_counter = 7.5 * 3000
           end
           if t[2] <= 252 then
             t[2] = t[2] + 3 -- Green: Goal is 255
           else
             game:set_value("time_of_day", "day")
-            game:set_value("hour_of_day", 7.5)
+            time_counter = 7.5 * 3000
           end
           if t[3] <= 251 then
             t[3] = t[3] + 4 -- Blue: Goal is 255
           else
             game:set_value("time_of_day", "day")
-            game:set_value("hour_of_day", 7.5)
+            time_counter = 7.5 * 3000
           end
           shadow:fill_color(t)
         else
@@ -297,7 +300,7 @@ function map_metatable:on_draw(dst_surface)
             local xx,yy = e:get_position()
             local sp = sol.sprite.create("entities/torch_light_tile")
             sp:set_blend_mode("blend")
-            sp:draw(lights, xx-16, yy-12)
+            sp:draw(lights, xx-16, yy-20)
           end
         end
         for e in game:get_map():get_entities("poe") do
@@ -386,10 +389,9 @@ function map_metatable:on_draw(dst_surface)
   
   function map_metatable:on_update()
     local game = self:get_game()
-    hour_of_day = (time_counter / 3000)
     camera_x,camera_y = game:get_map():get_camera():get_position()
     camera_w,camera_h = game:get_map():get_camera():get_size()    
-
+    
     -- Slowly drain magic when using lantern.
     if magic_counter >= 1000 and game:get_time_of_day() == "night" and game:is_in_outside_world() then
       game:remove_magic(1)
@@ -397,7 +399,7 @@ function map_metatable:on_draw(dst_surface)
     end
     if not game:is_suspended() then magic_counter = magic_counter + 1 end
     draw_counter = draw_counter + 1
-
+    
     -- If hero doesn't have red tunic on, slowly remove stamina in hot areas (Subrosia).
     if game:get_map():get_world() == "outside_subrosia" and
     game:get_value("tunic_equipped") ~= 2 then
@@ -413,7 +415,7 @@ function map_metatable:on_draw(dst_surface)
         heat_timer = nil
       end
     end
-
+    
     -- If hero doesn't have blue tunic on, slowly remove stamina while swimming.
     if game:get_hero():get_state() == "swimming" and
     game:get_value("tunic_equipped") ~= 3 then
@@ -429,21 +431,14 @@ function map_metatable:on_draw(dst_surface)
         swim_timer = nil
       end
     end
-
-    if time_counter == nil then
-      if game:get_value("hour_of_day") > 0 then
-        time_counter = game:get_value("hour_of_day") * 3000
-      else
-        time_counter = 0
-      end
-    end
-
+    
     -- Update the time of day.
     -- One minute (60 seconds) is two hours in-game. Update every 0.1 minute.
+    if time_counter == nil then time_counter = game:get_value("hour_of_day") * 3000 end
     local hour_of_day = game:get_value("hour_of_day")
     if hour_of_day == nil then hour_of_day = 0 end
     hour_of_day = (time_counter / 3000)
-
+    
     if hour_of_day >= 23 then
       hour_of_day = 0
       time_counter = 0
