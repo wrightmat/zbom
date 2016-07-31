@@ -109,7 +109,6 @@ function map:on_started(destination)
 end
 
 function npc_gerudo_pirate_1:on_interaction()
-  game:set_dialog_style("default")
   if game:get_value("i1068") < 5 then
     game:start_dialog("gerudo.0.beach")
   elseif game:get_value("i1068") >= 6 then
@@ -120,7 +119,6 @@ function npc_gerudo_pirate_1:on_interaction()
 end
 
 function npc_gerudo_pirate_2:on_interaction()
-  game:set_dialog_style("default")
   if game:get_value("i1068") < 5 then
     game:start_dialog("gerudo.0.beach")
   elseif game:get_value("i1068") >= 6 then
@@ -131,7 +129,6 @@ function npc_gerudo_pirate_2:on_interaction()
 end
 
 function npc_gerudo_leader:on_interaction()
-  game:set_dialog_style("default")
   if game:get_value("i1917") >= 1 then
     if game:get_value("i1068") == 1 then
       game:start_dialog("hesla.1.beach")
@@ -175,16 +172,26 @@ function npc_gerudo_leader:on_interaction()
 end
 
 function npc_monkey:on_interaction()
-  game:set_dialog_style("default")
   sol.audio.play_sound("monkey")
-  game:start_dialog("monkey1.0.grove", function()
-    sol.audio.play_sound("monkey")
-    sol.timer.start(300, function()
-      hero:freeze()
-      monkey_jump(2)
-      hero:unfreeze()
+  if game:get_time_of_day() == "night" then
+    game:start_dialog("monkey1.0.grove_night", function()
+      sol.audio.play_sound("monkey")
+      sol.timer.start(300, function()
+        hero:freeze()
+        monkey_jump(2)
+        hero:unfreeze()
+      end)
     end)
-  end)
+  else
+    game:start_dialog("monkey1.0.grove", function()
+      sol.audio.play_sound("monkey")
+      sol.timer.start(300, function()
+        hero:freeze()
+        monkey_jump(2)
+        hero:unfreeze()
+      end)
+    end)
+  end
 end
 
 function sensor_water_bottle:on_activated()

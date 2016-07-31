@@ -190,24 +190,22 @@ local function initialize_maps()
   shadow:set_blend_mode("multiply")
   lights:set_blend_mode("add")
   local heat_timer, swim_timer, draw_counter, magic_counter, time_counter, opacity
+  local hour_of_day, camera_x, camera_y, camera_h, camera_w
+  hour_of_day = 0
+  time_counter = 0
   draw_counter = 0
   magic_counter = 0
   opacity = 255
   local t = {}
-  
-  function map_metatable:on_draw(dst_surface)
+
+function map_metatable:on_draw(dst_surface)
     local game = self:get_game()
-    local hour_of_day = (time_counter / 3000)
     -- Put the night (or sunrise or sunset) overlay on any outdoor map if it's night time.
     if (hour_of_day >= 19.6 or hour_of_day <= 7.4) and
     (game:is_in_outside_world() or (self:get_world() == "dungeon_2" and self:get_id() == "20") or
-	  (self:get_world() == "dungeon_2" and self:get_id() == "21") or (self:get_world() == "dungeon_2" and self:get_id() == "22")) then
+          (self:get_world() == "dungeon_2" and self:get_id() == "21") or (self:get_world() == "dungeon_2" and self:get_id() == "22")) then
       
       if draw_counter >= 15 then
-        local x,y = game:get_map():get_camera():get_position()
-        local w,h = game:get_map():get_camera():get_size()
-
-        shadow:clear()
         if hour_of_day >= 19.6 and hour_of_day < 20 then
           t[1] = 255; t[2] = 255; t[3] = 255
           -- Dusk
@@ -299,7 +297,7 @@ local function initialize_maps()
             local xx,yy = e:get_position()
             local sp = sol.sprite.create("entities/torch_light_tile")
             sp:set_blend_mode("blend")
-            sp:draw(lights, xx-16, yy-16)
+            sp:draw(lights, xx-16, yy-12)
           end
         end
         for e in game:get_map():get_entities("poe") do
@@ -310,28 +308,19 @@ local function initialize_maps()
             sp:draw(lights, xx-32, yy-32)
           end
         end
-        -- Slowly drain magic when using lantern.
-        if magic_counter >= 50 then
-          game:remove_magic(1)
-          magic_counter = 0
+        if game:has_item("lamp") and game:get_magic() > 0 and game:get_time_of_day() == "night" then
+          local xx, yy = game:get_map():get_entity("hero"):get_position()
+          local sp = sol.sprite.create("entities/torch_light_hero")
+          sp:set_blend_mode("blend")
+          sp:draw(lights, xx-64, yy-68)
         end
-        if not game:is_suspended() then magic_counter = magic_counter + 1 end
         draw_counter = 0
       end
-      draw_counter = draw_counter + 1
-
-      if game:has_item("lamp") and game:get_magic() > 0 then
-        local xx, yy = game:get_map():get_entity("hero"):get_position()
-        local sp = sol.sprite.create("entities/torch_light_hero")
-        sp:set_blend_mode("blend")
-        sp:draw(lights, xx-64, yy-68)
-      end
-
-      lights:draw_region(x,y,w,h,shadow,x,y)
-      shadow:draw_region(x,y,w,h,dst_surface)
+      lights:draw_region(camera_x,camera_y,camera_w,camera_h,shadow,camera_x,camera_y)
+      shadow:draw_region(camera_x,camera_y,camera_w,camera_h,dst_surface)
     end
   end
-
+  
   function map_metatable:on_started(destination)
     local game = self:get_game()
     
@@ -339,69 +328,82 @@ local function initialize_maps()
       math.randomseed(os.time() - os.clock() * 1000)
       return math.random(math.ceil(lower/8), math.floor(upper/8))*8
     end
-
+    
     -- Night time is more dangerous - add various enemies.
     if game:get_map():get_world() == "outside_world" and game:get_time_of_day() == "night" then
       local keese_random = math.random()
       if keese_random < 0.7 then
-	local ex = random_8(1,1120)
-	local ey = random_8(1,1120)
-	self:create_enemy({ breed="keese", x=ex, y=ey, layer=2, direction=1 })
-	sol.timer.start(self, 1100, function()
-	  local ex = random_8(1,1120)
-	  local ey = random_8(1,1120)
-	  self:create_enemy({ breed="keese", x=ex, y=ey, layer=2, direction=1 })
-	end)
+        local ex = random_8(1,1120)
+        local ey = random_8(1,1120)
+        self:create_enemy({ breed="keese", x=ex, y=ey, layer=2, direction=1 })
+        sol.timer.start(self, 1100, function()
+          local ex = random_8(1,1120)
+          local ey = random_8(1,1120)
+          self:create_enemy({ breed="keese", x=ex, y=ey, layer=2, direction=1 })
+        end)
       elseif keese_random >= 0.7 then
-	local ex = random_8(1,1120)
-	local ey = random_8(1,1120)
-	self:create_enemy({ breed="keese", x=ex, y=ey, layer=2, direction=1 })
-	sol.timer.start(self, 1100, function()
-	  local ex = random_8(1,1120)
-	  local ey = random_8(1,1120)
-	  self:create_enemy({ breed="keese", x=ex, y=ey, layer=2, direction=1 })
-	end)
-	sol.timer.start(self, 1100, function()
-	  local ex = random_8(1,1120)
-	  local ey = random_8(1,1120)
-	  self:create_enemy({ breed="keese", x=ex, y=ey, layer=2, direction=1 })
-	end)
+        local ex = random_8(1,1120)
+        local ey = random_8(1,1120)
+        self:create_enemy({ breed="keese", x=ex, y=ey, layer=2, direction=1 })
+        sol.timer.start(self, 1100, function()
+          local ex = random_8(1,1120)
+          local ey = random_8(1,1120)
+          self:create_enemy({ breed="keese", x=ex, y=ey, layer=2, direction=1 })
+        end)
+        sol.timer.start(self, 1100, function()
+          local ex = random_8(1,1120)
+          local ey = random_8(1,1120)
+          self:create_enemy({ breed="keese", x=ex, y=ey, layer=2, direction=1 })
+        end)
       end
       local poe_random = math.random()
       if poe_random <= 0.5 then
-	local ex = random_8(1,1120)
-	local ey = random_8(1,1120)
-	self:create_enemy({ name = "poe", breed="poe", x=ex, y=ey, layer=2, direction=1 })
+        local ex = random_8(1,1120)
+        local ey = random_8(1,1120)
+        self:create_enemy({ name = "poe", breed="poe", x=ex, y=ey, layer=2, direction=1 })
       elseif keese_random <= 0.2 then
-	local ex = random_8(1,1120)
-	local ey = random_8(1,1120)
-	self:create_enemy({ name = "poe", breed="poe", x=ex, y=ey, layer=2, direction=1 })
-	sol.timer.start(self, 1100, function()
-	  local ex = random_8(1,1120)
-	  local ey = random_8(1,1120)
-	  self:create_enemy({ name = "poe", breed="poe", x=ex, y=ey, layer=2, direction=1 })
-	end)
+        local ex = random_8(1,1120)
+        local ey = random_8(1,1120)
+        self:create_enemy({ name = "poe", breed="poe", x=ex, y=ey, layer=2, direction=1 })
+        sol.timer.start(self, 1100, function()
+          local ex = random_8(1,1120)
+          local ey = random_8(1,1120)
+          self:create_enemy({ name = "poe", breed="poe", x=ex, y=ey, layer=2, direction=1 })
+        end)
       end
       local redead_random = math.random()
       if poe_random <= 0.1 then
-	local ex = random_8(1,1120)
-	local ey = random_8(1,1120)
-	self:create_enemy({ breed="redead", x=ex, y=ey, layer=0, direction=1 })
+        local ex = random_8(1,1120)
+        local ey = random_8(1,1120)
+        self:create_enemy({ breed="redead", x=ex, y=ey, layer=0, direction=1 })
       end
     end
   end
-
+  
   function map_metatable:on_finished()
     self:get_game().save_between_maps:save_map(self)
   end
-
+  
   function map_metatable:on_update()
+    local game = self:get_game()
+    hour_of_day = (time_counter / 3000)
+    camera_x,camera_y = game:get_map():get_camera():get_position()
+    camera_w,camera_h = game:get_map():get_camera():get_size()    
+
+    -- Slowly drain magic when using lantern.
+    if magic_counter >= 1000 and game:get_time_of_day() == "night" and game:is_in_outside_world() then
+      game:remove_magic(1)
+      magic_counter = 0
+    end
+    if not game:is_suspended() then magic_counter = magic_counter + 1 end
+    draw_counter = draw_counter + 1
+
     -- If hero doesn't have red tunic on, slowly remove stamina in hot areas (Subrosia).
-    if self:get_game():get_map():get_world() == "outside_subrosia" and
-    self:get_game():get_value("tunic_equipped") ~= 2 then
+    if game:get_map():get_world() == "outside_subrosia" and
+    game:get_value("tunic_equipped") ~= 2 then
       if not heat_timer then
-        heat_timer = sol.timer.start(self:get_game():get_map(), 5000, function()
-          self:get_game():remove_stamina(5)
+        heat_timer = sol.timer.start(game:get_map(), 5000, function()
+          game:remove_stamina(5)
           return true
         end)
       end
@@ -413,11 +415,11 @@ local function initialize_maps()
     end
 
     -- If hero doesn't have blue tunic on, slowly remove stamina while swimming.
-    if self:get_game():get_hero():get_state() == "swimming" and
-    self:get_game():get_value("tunic_equipped") ~= 3 then
+    if game:get_hero():get_state() == "swimming" and
+    game:get_value("tunic_equipped") ~= 3 then
       if not swim_timer then
-        swim_timer = sol.timer.start(self:get_game():get_map(), 5000, function()
-          self:get_game():remove_stamina(5)
+        swim_timer = sol.timer.start(game:get_map(), 5000, function()
+          game:remove_stamina(5)
           return true
         end)
       end
@@ -429,8 +431,8 @@ local function initialize_maps()
     end
 
     if time_counter == nil then
-      if self:get_game():get_value("hour_of_day") > 0 then
-        time_counter = self:get_game():get_value("hour_of_day") * 3000
+      if game:get_value("hour_of_day") > 0 then
+        time_counter = game:get_value("hour_of_day") * 3000
       else
         time_counter = 0
       end
@@ -438,7 +440,7 @@ local function initialize_maps()
 
     -- Update the time of day.
     -- One minute (60 seconds) is two hours in-game. Update every 0.1 minute.
-    local hour_of_day = self:get_game():get_value("hour_of_day")
+    local hour_of_day = game:get_value("hour_of_day")
     if hour_of_day == nil then hour_of_day = 0 end
     hour_of_day = (time_counter / 3000)
 
@@ -446,8 +448,8 @@ local function initialize_maps()
       hour_of_day = 0
       time_counter = 0
     end
-    self:get_game():set_value("hour_of_day", hour_of_day)
-    if not self:get_game():is_suspended() then time_counter = time_counter + 1 end
+    game:set_value("hour_of_day", hour_of_day)
+    if not game:is_suspended() then time_counter = time_counter + 1 end
   end
 end
 

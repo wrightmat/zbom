@@ -7655,6 +7655,13 @@ There's nothing to see up here...
 }
 
 dialog{
+  id = "monkey1.0.grove_night",
+  text = [[
+Ah!$0 You scared me!
+]]
+}
+
+dialog{
   id = "monkey1.1.grove",
   skip = "current",
   text = [[
