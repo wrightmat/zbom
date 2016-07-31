@@ -3,9 +3,9 @@ properties{
   y = 15694,
   width = 1120,
   height = 1120,
-  world = "dungeon_2",
   min_layer = 0,
   max_layer = 2,
+  world = "dungeon_2",
   tileset = "2",
   music = "same",
 }
@@ -9607,6 +9607,7 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/torch_wood",
+  behavior = "item#lamp",
 }
 
 sensor{

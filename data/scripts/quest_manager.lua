@@ -202,10 +202,11 @@ local function initialize_maps()
     if (hour_of_day >= 19.6 or hour_of_day <= 7.4) and
     (game:is_in_outside_world() or (self:get_world() == "dungeon_2" and self:get_id() == "20") or
 	  (self:get_world() == "dungeon_2" and self:get_id() == "21") or (self:get_world() == "dungeon_2" and self:get_id() == "22")) then
-      local x,y = game:get_map():get_camera():get_position()
-      local w,h = game:get_map():get_camera():get_size()
       
       if draw_counter >= 15 then
+        local x,y = game:get_map():get_camera():get_position()
+        local w,h = game:get_map():get_camera():get_size()
+
         shadow:clear()
         if hour_of_day >= 19.6 and hour_of_day < 20 then
           t[1] = 255; t[2] = 255; t[3] = 255
@@ -298,7 +299,7 @@ local function initialize_maps()
             local xx,yy = e:get_position()
             local sp = sol.sprite.create("entities/torch_light_tile")
             sp:set_blend_mode("blend")
-            sp:draw(lights, xx-8, yy-8)
+            sp:draw(lights, xx-16, yy-16)
           end
         end
         for e in game:get_map():get_entities("poe") do
@@ -325,7 +326,7 @@ local function initialize_maps()
         sp:set_blend_mode("blend")
         sp:draw(lights, xx-64, yy-68)
       end
-      
+
       lights:draw_region(x,y,w,h,shadow,x,y)
       shadow:draw_region(x,y,w,h,dst_surface)
     end
