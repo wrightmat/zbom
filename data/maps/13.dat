@@ -3,9 +3,9 @@ properties{
   y = 14573,
   width = 1120,
   height = 1120,
-  world = "outside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_world",
   tileset = "2",
   music = "same",
 }
@@ -4830,6 +4830,15 @@ custom_entity{
 
 tile{
   layer = 2,
+  x = 328,
+  y = 232,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
   x = 104,
   y = -16,
   width = 8,
@@ -5384,5 +5393,185 @@ tile{
   width = 8,
   height = 24,
   pattern = "1497",
+}
+
+tile{
+  layer = 2,
+  x = 176,
+  y = 40,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 112,
+  y = -8,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 344,
+  y = 56,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 248,
+  y = 128,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 416,
+  y = 136,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 280,
+  y = 256,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 384,
+  y = 256,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 280,
+  y = 352,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 488,
+  y = 392,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 432,
+  y = 432,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 504,
+  y = 504,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 336,
+  y = 496,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 248,
+  y = 560,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 480,
+  y = 632,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 352,
+  y = 656,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 256,
+  y = 752,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 536,
+  y = 720,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 328,
+  y = 872,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 416,
+  y = 912,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 520,
+  y = 880,
+  width = 48,
+  height = 24,
+  pattern = "1499",
 }
 
