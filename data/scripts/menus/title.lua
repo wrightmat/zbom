@@ -25,7 +25,7 @@ function title_screen:phase_zs_presents()
   zs_presents_img:draw(self.surface, x, y)
   sol.audio.play_sound("intro")
 
-  sol.timer.start(self, 1000, function()
+  sol.timer.start(self, 500, function()
     sol.timer.start(self, 700, function()
       self:phase_zh_production()
     end)
