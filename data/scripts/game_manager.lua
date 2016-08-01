@@ -27,6 +27,7 @@ function game:on_started()
   camera = camera_manager:create(game)
 
   -- Measure the time played.
+  if game:get_value("time_played") == nil then game:set_value("time_played", 0) end
   chron_timer = sol.timer.start(1000, function()
     game:set_value("time_played", game:get_value("time_played") + 1)
     return true  -- Repeat the timer.
@@ -44,9 +45,7 @@ function game:on_finished()
   local hours = math.floor(time / 3600)
   local minutes = math.floor((time % 3600) / 60)
   local seconds = time - (hours * 3600) - (minutes * 60)
-  print(hours)
-  print(minutes)
-  print(seconds)
+  print(hours .. ":" .. minutes .. ":" .. seconds)
 end
 
 -- This event is called when a new map has just become active.

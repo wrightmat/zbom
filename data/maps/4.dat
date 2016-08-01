@@ -12,6 +12,24 @@ properties{
 
 tile{
   layer = 0,
+  x = 1408,
+  y = 1168,
+  width = 224,
+  height = 144,
+  pattern = "484",
+}
+
+tile{
+  layer = 0,
+  x = 1456,
+  y = 1248,
+  width = 16,
+  height = 16,
+  pattern = "619",
+}
+
+tile{
+  layer = 0,
   x = 168,
   y = 888,
   width = 16,
@@ -5601,15 +5619,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1408,
-  y = 1168,
-  width = 224,
-  height = 144,
-  pattern = "484",
-}
-
-tile{
-  layer = 0,
   x = 1376,
   y = 1248,
   width = 32,
@@ -7015,15 +7024,6 @@ tile{
 tile{
   layer = 0,
   x = 1456,
-  y = 1248,
-  width = 16,
-  height = 16,
-  pattern = "619",
-}
-
-tile{
-  layer = 0,
-  x = 1456,
   y = 1192,
   width = 16,
   height = 16,
@@ -7275,20 +7275,29 @@ tile{
 
 tile{
   layer = 0,
-  x = 1120,
+  x = 72,
+  y = 416,
+  width = 48,
+  height = 40,
+  pattern = "489",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
   y = 1232,
-  width = 32,
+  width = 24,
   height = 24,
   pattern = "479",
 }
 
 tile{
   layer = 0,
-  x = 72,
-  y = 416,
-  width = 48,
-  height = 40,
-  pattern = "489",
+  x = 1128,
+  y = 1240,
+  width = 24,
+  height = 24,
+  pattern = "479",
 }
 
 destination{
@@ -8343,20 +8352,29 @@ tile{
 
 tile{
   layer = 1,
-  x = 1120,
+  x = 72,
+  y = 400,
+  width = 48,
+  height = 16,
+  pattern = "490",
+}
+
+tile{
+  layer = 1,
+  x = 1104,
   y = 1216,
-  width = 32,
+  width = 24,
   height = 16,
   pattern = "486",
 }
 
 tile{
   layer = 1,
-  x = 72,
-  y = 400,
-  width = 48,
+  x = 1128,
+  y = 1224,
+  width = 24,
   height = 16,
-  pattern = "490",
+  pattern = "486",
 }
 
 npc{

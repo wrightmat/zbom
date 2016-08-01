@@ -84,6 +84,7 @@ function quest_status_submenu:on_started()
 
   -- Tunic.
   self.tunic = self.game:get_item("tunic"):get_variant()
+  if self.game:get_value("tunic_equipped") == nil then self.game:set_value("tunic_equipped", self.game:get_item("tunic"):get_variant()) end
   self.tunic_equipped = self.game:get_value("tunic_equipped")
   item_sprite:set_animation("tunic")
   item_sprite:set_direction(self.tunic_equipped - 1)

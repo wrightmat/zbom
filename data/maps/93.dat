@@ -1893,87 +1893,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 32,
-  y = 160,
-  width = 24,
-  height = 16,
-  pattern = "235",
-}
-
-tile{
-  layer = 0,
-  x = 184,
-  y = 160,
-  width = 24,
-  height = 16,
-  pattern = "235",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 384,
-  width = 24,
-  height = 16,
-  pattern = "235",
-}
-
-tile{
-  layer = 0,
-  x = 600,
-  y = 344,
-  width = 24,
-  height = 16,
-  pattern = "235",
-}
-
-tile{
-  layer = 0,
-  x = 224,
-  y = 656,
-  width = 24,
-  height = 16,
-  pattern = "235",
-}
-
-tile{
-  layer = 0,
-  x = 576,
-  y = 976,
-  width = 24,
-  height = 16,
-  pattern = "235",
-}
-
-tile{
-  layer = 0,
-  x = 768,
-  y = 640,
-  width = 24,
-  height = 16,
-  pattern = "235",
-}
-
-tile{
-  layer = 0,
-  x = 96,
-  y = 912,
-  width = 24,
-  height = 16,
-  pattern = "235",
-}
-
-tile{
-  layer = 0,
-  x = 1024,
-  y = 848,
-  width = 24,
-  height = 16,
-  pattern = "235",
-}
-
-tile{
-  layer = 0,
   x = 928,
   y = 1024,
   width = 192,
@@ -2285,6 +2204,87 @@ tile{
   width = 16,
   height = 16,
   pattern = "1724",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "235",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "235",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "235",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 656,
+  width = 16,
+  height = 16,
+  pattern = "235",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 912,
+  width = 16,
+  height = 16,
+  pattern = "235",
+}
+
+tile{
+  layer = 0,
+  x = 584,
+  y = 976,
+  width = 16,
+  height = 16,
+  pattern = "235",
+}
+
+tile{
+  layer = 0,
+  x = 776,
+  y = 640,
+  width = 16,
+  height = 16,
+  pattern = "235",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 344,
+  width = 16,
+  height = 16,
+  pattern = "235",
+}
+
+tile{
+  layer = 0,
+  x = 1032,
+  y = 848,
+  width = 16,
+  height = 16,
+  pattern = "235",
 }
 
 teletransporter{
@@ -2936,81 +2936,81 @@ tile{
 
 tile{
   layer = 1,
-  x = 136,
-  y = 336,
-  width = 40,
-  height = 48,
-  pattern = "234",
-}
-
-tile{
-  layer = 1,
-  x = 592,
-  y = 296,
-  width = 40,
-  height = 48,
-  pattern = "234",
-}
-
-tile{
-  layer = 1,
-  x = 216,
-  y = 608,
-  width = 40,
-  height = 48,
-  pattern = "234",
-}
-
-tile{
-  layer = 1,
-  x = 568,
-  y = 928,
-  width = 40,
-  height = 48,
-  pattern = "234",
-}
-
-tile{
-  layer = 1,
-  x = 760,
-  y = 592,
-  width = 40,
-  height = 48,
-  pattern = "234",
-}
-
-tile{
-  layer = 1,
-  x = 88,
-  y = 864,
-  width = 40,
-  height = 48,
-  pattern = "234",
-}
-
-tile{
-  layer = 1,
-  x = 1016,
-  y = 800,
-  width = 40,
-  height = 48,
-  pattern = "234",
-}
-
-tile{
-  layer = 1,
   x = 176,
   y = 112,
-  width = 40,
+  width = 32,
   height = 48,
   pattern = "234",
 }
 
 tile{
   layer = 1,
-  x = 24,
+  x = 32,
   y = 112,
-  width = 40,
+  width = 32,
+  height = 48,
+  pattern = "234",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 336,
+  width = 32,
+  height = 48,
+  pattern = "234",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 608,
+  width = 32,
+  height = 48,
+  pattern = "234",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 864,
+  width = 32,
+  height = 48,
+  pattern = "234",
+}
+
+tile{
+  layer = 1,
+  x = 576,
+  y = 928,
+  width = 32,
+  height = 48,
+  pattern = "234",
+}
+
+tile{
+  layer = 1,
+  x = 768,
+  y = 592,
+  width = 32,
+  height = 48,
+  pattern = "234",
+}
+
+tile{
+  layer = 1,
+  x = 600,
+  y = 296,
+  width = 32,
+  height = 48,
+  pattern = "234",
+}
+
+tile{
+  layer = 1,
+  x = 1024,
+  y = 800,
+  width = 32,
   height = 48,
   pattern = "234",
 }
@@ -3018,99 +3018,297 @@ tile{
 dynamic_tile{
   name = "night_light_1",
   layer = 1,
+  x = 184,
+  y = 112,
+  pattern = "247",
+  width = 16,
+  height = 32,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_light_10",
+  layer = 1,
   x = 176,
   y = 112,
-  pattern = "234",
-  width = 40,
-  height = 48,
+  pattern = "248",
+  width = 8,
+  height = 24,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_light_11",
+  layer = 1,
+  x = 200,
+  y = 112,
+  pattern = "249",
+  width = 8,
+  height = 24,
   enabled_at_start = false,
 }
 
 dynamic_tile{
   name = "night_light_2",
   layer = 1,
-  x = 24,
+  x = 40,
   y = 112,
-  pattern = "234",
-  width = 40,
-  height = 48,
+  pattern = "247",
+  width = 16,
+  height = 32,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_light_12",
+  layer = 1,
+  x = 32,
+  y = 112,
+  pattern = "248",
+  width = 8,
+  height = 24,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_light_13",
+  layer = 1,
+  x = 56,
+  y = 112,
+  pattern = "249",
+  width = 8,
+  height = 24,
   enabled_at_start = false,
 }
 
 dynamic_tile{
   name = "night_light_3",
   layer = 1,
-  x = 136,
+  x = 152,
   y = 336,
-  pattern = "234",
-  width = 40,
-  height = 48,
+  pattern = "247",
+  width = 16,
+  height = 32,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_light_14",
+  layer = 1,
+  x = 144,
+  y = 336,
+  pattern = "248",
+  width = 8,
+  height = 24,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_light_15",
+  layer = 1,
+  x = 168,
+  y = 336,
+  pattern = "249",
+  width = 8,
+  height = 24,
   enabled_at_start = false,
 }
 
 dynamic_tile{
   name = "night_light_4",
   layer = 1,
-  x = 216,
+  x = 232,
   y = 608,
-  pattern = "234",
-  width = 40,
-  height = 48,
+  pattern = "247",
+  width = 16,
+  height = 32,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_light_16",
+  layer = 1,
+  x = 224,
+  y = 608,
+  pattern = "248",
+  width = 8,
+  height = 24,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_light_17",
+  layer = 1,
+  x = 248,
+  y = 608,
+  pattern = "249",
+  width = 8,
+  height = 24,
   enabled_at_start = false,
 }
 
 dynamic_tile{
   name = "night_light_5",
   layer = 1,
-  x = 88,
+  x = 104,
   y = 864,
-  pattern = "234",
-  width = 40,
-  height = 48,
+  pattern = "247",
+  width = 16,
+  height = 32,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_light_18",
+  layer = 1,
+  x = 96,
+  y = 864,
+  pattern = "248",
+  width = 8,
+  height = 24,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_light_19",
+  layer = 1,
+  x = 120,
+  y = 864,
+  pattern = "249",
+  width = 8,
+  height = 24,
   enabled_at_start = false,
 }
 
 dynamic_tile{
   name = "night_light_6",
   layer = 1,
-  x = 568,
+  x = 584,
   y = 928,
-  pattern = "234",
-  width = 40,
-  height = 48,
+  pattern = "247",
+  width = 16,
+  height = 32,
   enabled_at_start = false,
 }
 
 dynamic_tile{
-  name = "night_light_7",
+  name = "night_light_20",
   layer = 1,
-  x = 1016,
-  y = 800,
-  pattern = "234",
-  width = 40,
-  height = 48,
+  x = 576,
+  y = 928,
+  pattern = "248",
+  width = 8,
+  height = 24,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_light_21",
+  layer = 1,
+  x = 600,
+  y = 928,
+  pattern = "249",
+  width = 8,
+  height = 24,
   enabled_at_start = false,
 }
 
 dynamic_tile{
   name = "night_light_8",
   layer = 1,
-  x = 760,
+  x = 776,
   y = 592,
-  pattern = "234",
-  width = 40,
-  height = 48,
+  pattern = "247",
+  width = 16,
+  height = 32,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_light_22",
+  layer = 1,
+  x = 768,
+  y = 592,
+  pattern = "248",
+  width = 8,
+  height = 24,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_light_23",
+  layer = 1,
+  x = 792,
+  y = 592,
+  pattern = "249",
+  width = 8,
+  height = 24,
   enabled_at_start = false,
 }
 
 dynamic_tile{
   name = "night_light_9",
   layer = 1,
-  x = 592,
+  x = 608,
   y = 296,
-  pattern = "234",
-  width = 40,
-  height = 48,
+  pattern = "247",
+  width = 16,
+  height = 32,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_light_24",
+  layer = 1,
+  x = 600,
+  y = 296,
+  pattern = "248",
+  width = 8,
+  height = 24,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_light_25",
+  layer = 1,
+  x = 624,
+  y = 296,
+  pattern = "249",
+  width = 8,
+  height = 24,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_light_7",
+  layer = 1,
+  x = 1032,
+  y = 800,
+  pattern = "247",
+  width = 16,
+  height = 32,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_light_26",
+  layer = 1,
+  x = 1024,
+  y = 800,
+  pattern = "248",
+  width = 8,
+  height = 24,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_light_27",
+  layer = 1,
+  x = 1048,
+  y = 800,
+  pattern = "249",
+  width = 8,
+  height = 24,
   enabled_at_start = false,
 }
 

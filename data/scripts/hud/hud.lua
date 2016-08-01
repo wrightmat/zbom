@@ -61,7 +61,7 @@ function hud_manager:create(game)
   hud.elements[#hud.elements + 1] = rupees
 
   local pickables = pickables_builder:new(game)
-  pickables:set_dst_position(-275, -30)
+  pickables:set_dst_position(-270, -28)
   hud.elements[#hud.elements + 1] = pickables
 
   local small_keys = small_keys_builder:new(game)
@@ -93,7 +93,7 @@ function hud_manager:create(game)
   hud.elements[#hud.elements + 1] = action_icon
 
   local clock = clock_builder:new(game)
-  clock:set_dst_position(-24, -24)
+  clock:set_dst_position(-26, -26)
   hud.elements[#hud.elements + 1] = clock
 
   -- Destroys the HUD.

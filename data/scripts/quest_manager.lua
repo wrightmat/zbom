@@ -200,7 +200,7 @@ local function initialize_maps()
     local game = self:get_game()
     local hour_of_day = (time_counter / 3000)
     -- Put the night (or sunrise or sunset) overlay on any outdoor map if it's night time.
-    if (hour_of_day >= 19.6 or hour_of_day <= 7.4) and
+    if (hour_of_day >= 19.6 or hour_of_day <= 7.6) and
        (game:is_in_outside_world() or (self:get_id() == "20" or self:get_id() == "21" or self:get_id() == "22")) then
       if draw_counter >= 15 then
         if hour_of_day >= 19.6 and hour_of_day < 20 then
@@ -243,25 +243,25 @@ local function initialize_maps()
           t[2] = (62*(hour_of_day-6))+66 -- Green: Goal is 126 (from 64)
           t[3] = (37*(1-(hour_of_day-6)))+87 -- Blue: Goal is 91 (from 128)
           shadow:fill_color(t)
-        elseif hour_of_day > 7 and hour_of_day <= 7.4 then
+        elseif hour_of_day > 7 and hour_of_day <= 7.6 then
           -- Dawn
           if t[1] <= 253 then
-            t[1] = t[1] + 2 -- Red: Goal is 255 (fade to white, which is the same as fading out for this blend mode)
+            t[1] = t[1] + 3 -- Red: Goal is 255 (fade to white, which is the same as fading out for this blend mode)
           else
             game:set_value("time_of_day", "day")
-            time_counter = 7.5 * 3000
+            time_counter = 7.7 * 3000
           end
           if t[2] <= 252 then
-            t[2] = t[2] + 3 -- Green: Goal is 255
+            t[2] = t[2] + 4 -- Green: Goal is 255
           else
             game:set_value("time_of_day", "day")
-            time_counter = 7.5 * 3000
+            time_counter = 7.7 * 3000
           end
           if t[3] <= 251 then
-            t[3] = t[3] + 4 -- Blue: Goal is 255
+            t[3] = t[3] + 5 -- Blue: Goal is 255
           else
             game:set_value("time_of_day", "day")
-            time_counter = 7.5 * 3000
+            time_counter = 7.7 * 3000
           end
           shadow:fill_color(t)
         else
@@ -434,6 +434,7 @@ local function initialize_maps()
     
     -- Update the time of day.
     -- One minute (60 seconds) is two hours in-game. Update every 0.1 minute.
+    if game:get_value("hour_of_day") == nil then game:set_value("hour_of_day", 12) end
     if time_counter == nil then time_counter = game:get_value("hour_of_day") * 3000 end
     local hour_of_day = game:get_value("hour_of_day")
     if hour_of_day == nil then hour_of_day = 0 end
@@ -442,6 +443,17 @@ local function initialize_maps()
     if hour_of_day >= 23 then
       hour_of_day = 0
       time_counter = 0
+    end
+    if hour_of_day > 21 then
+      game:set_time_of_day("night")
+      for entity in game:get_map():get_entities("night_") do
+        entity:set_enabled(true)
+      end
+    elseif hour_of_day > 7 and hour_of_day < 21 then
+      game:set_time_of_day("day")
+      for entity in game:get_map():get_entities("night_") do
+        entity:set_enabled(false)
+      end
     end
     game:set_value("hour_of_day", hour_of_day)
     if not game:is_suspended() then time_counter = time_counter + 1 end

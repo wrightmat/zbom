@@ -5690,6 +5690,105 @@ tile{
 }
 
 dynamic_tile{
+  name = "night_doorway_16",
+  layer = 0,
+  x = 1080,
+  y = 1224,
+  pattern = "680",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_doorway_15",
+  layer = 0,
+  x = 856,
+  y = 1224,
+  pattern = "680",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_doorway_14",
+  layer = 0,
+  x = 872,
+  y = 920,
+  pattern = "680",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_doorway_13",
+  layer = 0,
+  x = 904,
+  y = 616,
+  pattern = "680",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_doorway_12",
+  layer = 0,
+  x = 544,
+  y = 616,
+  pattern = "680",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_doorway_11",
+  layer = 0,
+  x = 144,
+  y = 616,
+  pattern = "680",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_doorway_10",
+  layer = 0,
+  x = 520,
+  y = 920,
+  pattern = "680",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_doorway_9",
+  layer = 0,
+  x = 120,
+  y = 920,
+  pattern = "680",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "night_doorway_8",
+  layer = 0,
+  x = 392,
+  y = 1224,
+  pattern = "680",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
   name = "blacksmith_water",
   layer = 0,
   x = 192,
@@ -6659,6 +6758,17 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/bed",
+}
+
+dynamic_tile{
+  name = "night_doorway_1",
+  layer = 0,
+  x = 168,
+  y = 1080,
+  pattern = "679",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
 }
 
 tile{

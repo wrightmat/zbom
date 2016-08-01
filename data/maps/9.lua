@@ -24,6 +24,13 @@ function map:on_started(destination)
     if blocker ~= nil then blocker:set_enabled(false) end
     if npc_moblin ~= nil then npc_moblin:remove() end
   end
+
+  -- Activate any night-specific dynamic tiles.
+  if game:get_time_of_day() == "night" then
+    for entity in game:get_map():get_entities("night_") do
+      entity:set_enabled(true)
+    end
+  end
 end
 
 function npc_rudy:on_interaction()
@@ -38,21 +45,21 @@ function npc_rudy:on_interaction()
       game:start_dialog("rudy.5.sword", function(answer)
         if answer == 1 then
           game:start_dialog("rudy.5.sword_1", function()
-	  game:set_value("i1902", 5)
-	  game:set_ability("sword", 0)
+            game:set_value("i1902", 5)
+            game:set_ability("sword", 0)
             local m = sol.movement.create("target")
             m:set_target(232, 168)
             m:set_speed(32)
-	    m:start(npc_rudy, function()
+            m:start(npc_rudy, function()
                 local m = sol.movement.create("target")
                 m:set_target(232, 168)
                 m:set_speed(32)
                 m:set_target(136, 120)
-	      m:start(npc_rudy, function()
-	        m:stop()
-	        npc_rudy:get_sprite():set_direction(3)
-	        npc_rudy:get_sprite():set_animation("stopped")
-	      end)
+                m:start(npc_rudy, function()
+                  m:stop()
+                  npc_rudy:get_sprite():set_direction(3)
+                  npc_rudy:get_sprite():set_animation("stopped")
+                end)
             end)
           end)
         else

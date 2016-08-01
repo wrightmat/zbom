@@ -86,7 +86,7 @@ function rupees:rebuild_surface()
     self.digits_text:set_font("white_digits")
   end
   self.digits_text:set_text(self.money_displayed)
-  self.digits_text:draw(self.surface, 16, 5)
+  self.digits_text:draw(self.surface, 12, 6)
 end
 
 function rupees:set_dst_position(x, y)

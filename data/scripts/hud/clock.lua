@@ -23,6 +23,7 @@ end
 
 function clock:check()
   local need_rebuild = false
+  if self.game:get_value("hour_of_day") == nil then self.game:set_value("hour_of_day", 12) end
   local hour = tonumber(string.format("%." .. (idp or 0) .. "f", self.game:get_value("hour_of_day")))
   
   -- Current hour.
