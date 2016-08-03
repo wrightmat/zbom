@@ -1,5 +1,4 @@
 local game = ...
-
 local credits_menu = {}  -- The credits menu.
 
 local credits_background = sol.surface.create("menus/credits_background.png")
@@ -11,10 +10,7 @@ end
 
 function credits_menu:on_started()
   local map = game:get_map()
-  local hero = game:get_hero()
-
-  sol.audio.play_music("credits", false)
-
+  
   self.heading = sol.text_surface.create{
     font = "lttp",
     font_size = "20",
@@ -27,11 +23,7 @@ function credits_menu:on_started()
     horizontal_alignment = "center",
     vertical_alignment = "top"
   }
-
-  map:get_game().hud:set_enabled(false)
-  hero:set_position(-100, -100)
-  hero:freeze()
-
+  
   function show_group(index)
     local i = 0
     self.group = sol.surface.create(320,240)
@@ -50,51 +42,59 @@ function credits_menu:on_started()
         if th > text_height then text_height = th end
       end
     end
-
+    
     self.group:fade_in(50, function()
-      sol.timer.start(map, 15000, function()
+      sol.timer.start(game, 15000, function()
         self.group:fade_out(50, function()
           return true
         end)
       end)
     end)
   end
-
+  
   function end_credits()
     -- Credits over. Now what?
-    game:start_dialog("_credits.complete", game.savegame_menu:calculate_percent_complete(game))
-    game:start_dialog("_credits.time", game:get_value("time_played"))
-    game:start_dialog("_credits.died", game:get_value("times_died"))
-
-    game:start_dialog("_credits", function(answer)
-      if answer == 1 then
-        -- Save and continue.
-        game:save()
-        game:start()
-      else
-        -- Quit (don't save).
-        sol.main.reset()
-      end
+    local time = game:get_value("time_played")
+    local hours = math.floor(time / 3600)
+    local minutes = math.floor((time % 3600) / 60)
+    local seconds = time - (hours * 3600) - (minutes * 60)
+    local time_played = hours .. ":" .. minutes .. ":" .. seconds
+    game:start_dialog("_credits.complete", game:calculate_percent_complete(), function()
+      game:start_dialog("_credits.time", time_played, function()
+        game:start_dialog("_credits.died", game:get_value("times_died"), function()
+          game:start_dialog("_credits", function(answer)
+            if answer == 1 then
+              -- Save and continue.
+              game:save()
+              game:start()
+            else
+              -- Quit (don't save).
+              sol.main.reset()
+            end
+          end)
+        end)
+      end)
     end)
   end
-
-  sol.timer.start(map, 100, function()
+  
+  sol.audio.play_music("credits", false)
+  sol.timer.start(self, 100, function()
     show_group(1)
-    sol.timer.start(map, 10000, function()
+    sol.timer.start(self, 10000, function()
       show_group(2)
-      sol.timer.start(map, 10000, function()
+      sol.timer.start(self, 10000, function()
         show_group(3)
-        sol.timer.start(map, 10000, function()
+        sol.timer.start(self, 10000, function()
           show_group(4)
-          sol.timer.start(map, 10000, function()
+          sol.timer.start(self, 10000, function()
             show_group(5)
-            sol.timer.start(map, 10000, function()
+            sol.timer.start(self, 10000, function()
               show_group(6)
-              sol.timer.start(map, 10000, function()
+              sol.timer.start(self, 10000, function()
                 show_group(7)
-                sol.timer.start(map, 10000, function()
+                sol.timer.start(self, 10000, function()
                   show_group(8)
-                  sol.timer.start(map, 6000, function() end_credits() end)
+                  sol.timer.start(self, 6000, function() end_credits() end)
                 end)
               end)
             end)
@@ -116,5 +116,11 @@ function credits_menu:on_draw(dst_surface)
 
   if self.group ~= nil then
     self.group:draw(dst_surface, (camera_width/2)-150, (camera_height/2)-80)
+  end
+end
+
+function credits_menu:on_key_pressed(key, modifiers)
+  if key == "escape" then
+    end_credits()
   end
 end

@@ -46,6 +46,12 @@ function map:on_started(destination)
     return true
   end)
   game:set_value("dungeon_8_explored_1b_25", true)
+  if game:get_value("dungeon_8_explored_1b_complete") then
+    shadow_link:remove()
+    exit_stairs_1:set_enabled(true)
+    exit_stairs_2:set_enabled(true)
+    exit_stairs_3:set_enabled(true)
+  end
   switch_complete_1:set_enabled(false)
   switch_complete_4:set_enabled(false)
   switch_complete_6:set_enabled(false)

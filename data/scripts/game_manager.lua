@@ -118,6 +118,73 @@ function game:switch_time_of_day()
   return true
 end
 
+function game:calculate_percent_complete()
+  -- 100 total values = 100 percent.
+  -- 32 values for heart pieces, 12 for trading sequence, 16 for warp points, 30 for misc. sidequests/items, 10 for ???
+  local percent_complete = (game:get_value("b1701") and 1 or 0) +
+    (game:get_value("b1702") and 1 or 0) + (game:get_value("b1703") and 1 or 0) + 
+    (game:get_value("b1704") and 1 or 0) + (game:get_value("b1705") and 1 or 0) + 
+    (game:get_value("b1706") and 1 or 0) + (game:get_value("b1707") and 1 or 0) + 
+    (game:get_value("b1708") and 1 or 0) + (game:get_value("b1709") and 1 or 0) + 
+    (game:get_value("b1710") and 1 or 0) + (game:get_value("b1711") and 1 or 0) + 
+    (game:get_value("b1712") and 1 or 0) + (game:get_value("b1713") and 1 or 0) + 
+    (game:get_value("b1714") and 1 or 0) + (game:get_value("b1715") and 1 or 0) + 
+    (game:get_value("b1716") and 1 or 0) + (game:get_value("b1717") and 1 or 0) + 
+    (game:get_value("b1718") and 1 or 0) + (game:get_value("b1719") and 1 or 0) + 
+    (game:get_value("b1720") and 1 or 0) + (game:get_value("b1721") and 1 or 0) + 
+    (game:get_value("b1722") and 1 or 0) + (game:get_value("b1723") and 1 or 0) + 
+    (game:get_value("b1724") and 1 or 0) + (game:get_value("b1725") and 1 or 0) + 
+    (game:get_value("b1726") and 1 or 0) + (game:get_value("b1727") and 1 or 0) + 
+    (game:get_value("b1728") and 1 or 0) + (game:get_value("b1729") and 1 or 0) + 
+    (game:get_value("b1730") and 1 or 0) + (game:get_value("b1731") and 1 or 0) + 
+    (game:get_value("b1732") and 1 or 0) +
+    (game:get_value("i1840") - 1 ) + --  Heart Pieces above here. Trading here.
+
+    (game:get_value("b1500") and 1 or 0) + (game:get_value("b1501") and 1 or 0) +
+    (game:get_value("b1502") and 1 or 0) + (game:get_value("b1503") and 1 or 0) +
+    (game:get_value("b1504") and 1 or 0) + (game:get_value("b1505") and 1 or 0) +
+    (game:get_value("b1506") and 1 or 0) + (game:get_value("b1507") and 1 or 0) +
+    (game:get_value("b1508") and 1 or 0) + (game:get_value("b1509") and 1 or 0) +
+    (game:get_value("b1510") and 1 or 0) + (game:get_value("b1511") and 1 or 0) +
+    (game:get_value("b1512") and 1 or 0) + (game:get_value("b1513") and 1 or 0) +
+    (game:get_value("b1514") and 1 or 0) + (game:get_value("b1515") and 1 or 0) -- Warp points above here.
+
+    if game:get_value("i1602")==nil then game:set_value("i1602", 0) end
+    if game:get_value("i1603")==nil then game:set_value("i1603", 0) end
+    if game:get_value("i1604")==nil then ame:set_value("i1604", 0) end
+    if game:get_value("i1605")==nil then game:set_value("i1605", 0) end
+    if game:get_value("i1606")==nil then game:set_value("i1606", 0) end
+    if game:get_value("i1607")==nil then game:set_value("i1607", 0) end
+    if game:get_value("i1608")==nil then game:set_value("i1608", 0) end
+    if game:get_value("i1609")==nil then game:set_value("i1609", 0) end -- Sidequests below here.
+
+    if game:get_value("i1602") >= 6 then percent_complete = percent_complete + 2 end  -- Gaira/Deacon
+    if game:get_value("i1603") >= 5 then percent_complete = percent_complete + 2 end  -- Great Fairy Mystic Jade
+    if game:get_value("i1604") >= 5 then percent_complete = percent_complete + 2 end  -- Great Fairy Goron Amber
+    if game:get_value("i1605") >= 5 then percent_complete = percent_complete + 2 end  -- Great Fairy Alchemy Stone
+    if game:get_value("i1606") >= 5 then percent_complete = percent_complete + 2 end  -- Great Fairy Goddess Plume
+    if game:get_value("i1607") >= 5 then percent_complete = percent_complete + 2 end  -- Great Fairy Subrosian Ore
+    if game:get_value("i1608") >= 5 then percent_complete = percent_complete + 2 end  -- Great Fairy Magic Crystal
+    if game:get_value("i1609") >= 50 then percent_complete = percent_complete + 2 end  -- Cave of Ordeals
+    if game:get_value("b1810") then percent_complete = percent_complete + 2 end  -- Bottle 1 (Rudy)
+    if game:get_value("b1811") then percent_complete = percent_complete + 2 end  -- Bottle 2 (Relic Collector)
+    if game:get_value("b1812") then percent_complete = percent_complete + 2 end  -- Bottle 3 (Kakariko Thief)
+    if game:get_value("b1813") then percent_complete = percent_complete + 2 end  -- Bottle 4
+    if game:get_value("b1838") then percent_complete = percent_complete + 2 end  -- Shovel
+    if game:get_value("b1839") then percent_complete = percent_complete + 2 end  -- Hammer
+    if game:get_value("b1699") then percent_complete = percent_complete + 2 end  -- Main Quest
+
+    -- Last 10% is misc.
+    percent_complete = percent_complete + (game:get_value("i1822") - 1) * 2  -- Tunics (up to 6 points possible for 3 additional tunics)
+    if game:get_value("i1615") >= 13 then percent_complete = percent_complete + 1 end  -- Books fetch quest
+    if game:get_value("i1631") >= 16 then percent_complete = percent_complete + 1 end  -- Plants fetch quest
+    if game:get_value("i1823") >= 3 then percent_complete = percent_complete + 1 end  -- Fully upgraded world map
+    if game:get_value("i1841") >= 4 then percent_complete = percent_complete + 1 end  -- Master Ore obtained
+
+  game:set_value("percent_complete", percent_complete)
+  return percent_complete
+end
+
 -- Run the game.
 sol.main.game = game
 game:start()
