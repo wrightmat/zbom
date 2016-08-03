@@ -10993,24 +10993,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 792,
-  y = 64,
-  width = 32,
-  height = 32,
-  pattern = "558",
-}
-
-tile{
-  layer = 0,
-  x = 968,
-  y = 64,
-  width = 32,
-  height = 32,
-  pattern = "558",
-}
-
-tile{
-  layer = 0,
   x = 1104,
   y = 96,
   width = 256,
@@ -12289,24 +12271,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 800,
-  y = 1376,
-  width = 32,
-  height = 32,
-  pattern = "52",
-}
-
-tile{
-  layer = 0,
-  x = 976,
-  y = 1376,
-  width = 32,
-  height = 32,
-  pattern = "52",
-}
-
-tile{
-  layer = 0,
   x = 696,
   y = 1344,
   width = 24,
@@ -13522,24 +13486,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 136,
-  y = 336,
-  width = 32,
-  height = 32,
-  pattern = "558",
-}
-
-tile{
-  layer = 0,
-  x = 288,
-  y = 336,
-  width = 32,
-  height = 32,
-  pattern = "558",
-}
-
-tile{
-  layer = 0,
   x = 472,
   y = 400,
   width = 24,
@@ -13725,168 +13671,6 @@ tile{
   width = 208,
   height = 48,
   pattern = "246",
-}
-
-tile{
-  layer = 0,
-  x = 1120,
-  y = 112,
-  width = 96,
-  height = 80,
-  pattern = "134",
-}
-
-tile{
-  layer = 0,
-  x = 1128,
-  y = 112,
-  width = 80,
-  height = 8,
-  pattern = "112",
-}
-
-tile{
-  layer = 0,
-  x = 1120,
-  y = 112,
-  width = 8,
-  height = 8,
-  pattern = "108",
-}
-
-tile{
-  layer = 0,
-  x = 1120,
-  y = 120,
-  width = 8,
-  height = 64,
-  pattern = "114",
-}
-
-tile{
-  layer = 0,
-  x = 1120,
-  y = 184,
-  width = 8,
-  height = 8,
-  pattern = "110",
-}
-
-tile{
-  layer = 0,
-  x = 1128,
-  y = 184,
-  width = 80,
-  height = 8,
-  pattern = "113",
-}
-
-tile{
-  layer = 0,
-  x = 1208,
-  y = 184,
-  width = 8,
-  height = 8,
-  pattern = "111",
-}
-
-tile{
-  layer = 0,
-  x = 1208,
-  y = 112,
-  width = 8,
-  height = 8,
-  pattern = "109",
-}
-
-tile{
-  layer = 0,
-  x = 1208,
-  y = 120,
-  width = 8,
-  height = 64,
-  pattern = "115",
-}
-
-tile{
-  layer = 0,
-  x = 1248,
-  y = 192,
-  width = 96,
-  height = 80,
-  pattern = "134",
-}
-
-tile{
-  layer = 0,
-  x = 1256,
-  y = 192,
-  width = 80,
-  height = 8,
-  pattern = "112",
-}
-
-tile{
-  layer = 0,
-  x = 1248,
-  y = 192,
-  width = 8,
-  height = 8,
-  pattern = "108",
-}
-
-tile{
-  layer = 0,
-  x = 1248,
-  y = 200,
-  width = 8,
-  height = 64,
-  pattern = "114",
-}
-
-tile{
-  layer = 0,
-  x = 1248,
-  y = 264,
-  width = 8,
-  height = 8,
-  pattern = "110",
-}
-
-tile{
-  layer = 0,
-  x = 1256,
-  y = 264,
-  width = 80,
-  height = 8,
-  pattern = "113",
-}
-
-tile{
-  layer = 0,
-  x = 1336,
-  y = 264,
-  width = 8,
-  height = 8,
-  pattern = "111",
-}
-
-tile{
-  layer = 0,
-  x = 1336,
-  y = 192,
-  width = 8,
-  height = 8,
-  pattern = "109",
-}
-
-tile{
-  layer = 0,
-  x = 1336,
-  y = 200,
-  width = 8,
-  height = 64,
-  pattern = "115",
 }
 
 tile{
@@ -14337,6 +14121,765 @@ tile{
   width = 8,
   height = 192,
   pattern = "63",
+}
+
+switch{
+  name = "switch_complete_12",
+  layer = 0,
+  x = 552,
+  y = 184,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+switch{
+  name = "switch_complete_4",
+  layer = 0,
+  x = 216,
+  y = 1000,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+switch{
+  name = "switch_complete_7",
+  layer = 0,
+  x = 888,
+  y = 728,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+switch{
+  name = "switch_complete_14",
+  layer = 0,
+  x = 888,
+  y = 456,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+switch{
+  name = "switch_complete_20",
+  layer = 0,
+  x = 1224,
+  y = 728,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+switch{
+  name = "switch_complete_6",
+  layer = 0,
+  x = 888,
+  y = 1000,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+switch{
+  name = "switch_complete_24",
+  layer = 0,
+  x = 1224,
+  y = 1272,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+dynamic_tile{
+  name = "lava_55",
+  layer = 0,
+  x = 1328,
+  y = 256,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_56",
+  layer = 0,
+  x = 1312,
+  y = 256,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_57",
+  layer = 0,
+  x = 1296,
+  y = 256,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_58",
+  layer = 0,
+  x = 1280,
+  y = 256,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_59",
+  layer = 0,
+  x = 1264,
+  y = 256,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_60",
+  layer = 0,
+  x = 1248,
+  y = 256,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_49",
+  layer = 0,
+  x = 1328,
+  y = 240,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_50",
+  layer = 0,
+  x = 1312,
+  y = 240,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_51",
+  layer = 0,
+  x = 1296,
+  y = 240,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_52",
+  layer = 0,
+  x = 1280,
+  y = 240,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_53",
+  layer = 0,
+  x = 1264,
+  y = 240,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_54",
+  layer = 0,
+  x = 1248,
+  y = 240,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_43",
+  layer = 0,
+  x = 1328,
+  y = 224,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_44",
+  layer = 0,
+  x = 1312,
+  y = 224,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_45",
+  layer = 0,
+  x = 1296,
+  y = 224,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_46",
+  layer = 0,
+  x = 1280,
+  y = 224,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_47",
+  layer = 0,
+  x = 1264,
+  y = 224,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_48",
+  layer = 0,
+  x = 1248,
+  y = 224,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_37",
+  layer = 0,
+  x = 1328,
+  y = 208,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_38",
+  layer = 0,
+  x = 1312,
+  y = 208,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_39",
+  layer = 0,
+  x = 1296,
+  y = 208,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_40",
+  layer = 0,
+  x = 1280,
+  y = 208,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_41",
+  layer = 0,
+  x = 1264,
+  y = 208,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_42",
+  layer = 0,
+  x = 1248,
+  y = 208,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_31",
+  layer = 0,
+  x = 1328,
+  y = 192,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_32",
+  layer = 0,
+  x = 1312,
+  y = 192,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_33",
+  layer = 0,
+  x = 1296,
+  y = 192,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_34",
+  layer = 0,
+  x = 1280,
+  y = 192,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_35",
+  layer = 0,
+  x = 1264,
+  y = 192,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_36",
+  layer = 0,
+  x = 1248,
+  y = 192,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_25",
+  layer = 0,
+  x = 1200,
+  y = 176,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_26",
+  layer = 0,
+  x = 1184,
+  y = 176,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_27",
+  layer = 0,
+  x = 1168,
+  y = 176,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_28",
+  layer = 0,
+  x = 1152,
+  y = 176,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_29",
+  layer = 0,
+  x = 1136,
+  y = 176,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_30",
+  layer = 0,
+  x = 1120,
+  y = 176,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_19",
+  layer = 0,
+  x = 1200,
+  y = 160,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_20",
+  layer = 0,
+  x = 1184,
+  y = 160,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_21",
+  layer = 0,
+  x = 1168,
+  y = 160,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_22",
+  layer = 0,
+  x = 1152,
+  y = 160,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_23",
+  layer = 0,
+  x = 1136,
+  y = 160,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_24",
+  layer = 0,
+  x = 1120,
+  y = 160,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_13",
+  layer = 0,
+  x = 1200,
+  y = 144,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_14",
+  layer = 0,
+  x = 1184,
+  y = 144,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_15",
+  layer = 0,
+  x = 1168,
+  y = 144,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_16",
+  layer = 0,
+  x = 1152,
+  y = 144,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_17",
+  layer = 0,
+  x = 1136,
+  y = 144,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_18",
+  layer = 0,
+  x = 1120,
+  y = 144,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_7",
+  layer = 0,
+  x = 1200,
+  y = 128,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_8",
+  layer = 0,
+  x = 1184,
+  y = 128,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_9",
+  layer = 0,
+  x = 1168,
+  y = 128,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_10",
+  layer = 0,
+  x = 1152,
+  y = 128,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_11",
+  layer = 0,
+  x = 1136,
+  y = 128,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_12",
+  layer = 0,
+  x = 1120,
+  y = 128,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_6",
+  layer = 0,
+  x = 1200,
+  y = 112,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_5",
+  layer = 0,
+  x = 1184,
+  y = 112,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_4",
+  layer = 0,
+  x = 1168,
+  y = 112,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_3",
+  layer = 0,
+  x = 1152,
+  y = 112,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_2",
+  layer = 0,
+  x = 1136,
+  y = 112,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "lava_1",
+  layer = 0,
+  x = 1120,
+  y = 112,
+  pattern = "134",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "eye_4",
+  layer = 0,
+  x = 288,
+  y = 336,
+  pattern = "558",
+  width = 32,
+  height = 32,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "eye_3",
+  layer = 0,
+  x = 136,
+  y = 336,
+  pattern = "558",
+  width = 32,
+  height = 32,
+  enabled_at_start = true,
 }
 
 switch{
@@ -18021,7 +18564,7 @@ crystal_block{
 }
 
 switch{
-  name = "room5_switch",
+  name = "switch_complete_5",
   layer = 0,
   x = 552,
   y = 1000,
@@ -18064,7 +18607,7 @@ dynamic_tile{
 }
 
 custom_entity{
-  name = "room_11_statue_1",
+  name = "statue_room_11_1",
   layer = 0,
   x = 136,
   y = 149,
@@ -18076,7 +18619,7 @@ custom_entity{
 }
 
 custom_entity{
-  name = "room_11_statue_2",
+  name = "statue_room_11_2",
   layer = 0,
   x = 224,
   y = 149,
@@ -18088,7 +18631,7 @@ custom_entity{
 }
 
 custom_entity{
-  name = "room_11_statue_3",
+  name = "statue_room_11_3",
   layer = 0,
   x = 312,
   y = 149,
@@ -18100,7 +18643,7 @@ custom_entity{
 }
 
 custom_entity{
-  name = "room_11_statue_4",
+  name = "statue_room_11_4",
   layer = 0,
   x = 136,
   y = 253,
@@ -18112,7 +18655,7 @@ custom_entity{
 }
 
 custom_entity{
-  name = "room_11_statue_5",
+  name = "statue_room_11_5",
   layer = 0,
   x = 224,
   y = 253,
@@ -18124,7 +18667,7 @@ custom_entity{
 }
 
 custom_entity{
-  name = "room_11_statue_6",
+  name = "statue_room_11_6",
   layer = 0,
   x = 312,
   y = 253,
@@ -18267,7 +18810,7 @@ switch{
   name = "room10_arrow_1",
   layer = 0,
   x = 144,
-  y = 352,
+  y = 360,
   subtype = "arrow_target",
   sprite = "entities/switch_eye_invisible",
   sound = "arrow_hit",
@@ -18279,82 +18822,12 @@ switch{
   name = "room10_arrow_2",
   layer = 0,
   x = 296,
-  y = 352,
+  y = 360,
   subtype = "arrow_target",
   sprite = "entities/switch_eye_invisible",
   sound = "arrow_hit",
   needs_block = false,
   inactivate_when_leaving = false,
-}
-
-enemy{
-  name = "room10_keese_1",
-  layer = 0,
-  x = 144,
-  y = 445,
-  direction = 0,
-  breed = "keese",
-  treasure_name = "random_enemy",
-}
-
-enemy{
-  name = "room10_keese_2",
-  layer = 0,
-  x = 160,
-  y = 517,
-  direction = 0,
-  breed = "keese",
-  treasure_name = "random_enemy",
-}
-
-enemy{
-  name = "room10_keese_3",
-  layer = 0,
-  x = 232,
-  y = 421,
-  direction = 0,
-  breed = "keese",
-  treasure_name = "random_enemy",
-}
-
-enemy{
-  name = "room10_keese_4",
-  layer = 0,
-  x = 248,
-  y = 461,
-  direction = 0,
-  breed = "keese",
-  treasure_name = "random_enemy",
-}
-
-enemy{
-  name = "room10_keese_5",
-  layer = 0,
-  x = 296,
-  y = 509,
-  direction = 0,
-  breed = "keese",
-  treasure_name = "random_enemy",
-}
-
-enemy{
-  name = "room10_keese_6",
-  layer = 0,
-  x = 304,
-  y = 413,
-  direction = 0,
-  breed = "keese",
-  treasure_name = "random_enemy",
-}
-
-enemy{
-  name = "room10_keese_7",
-  layer = 0,
-  x = 224,
-  y = 517,
-  direction = 0,
-  breed = "keese_dark",
-  treasure_name = "random",
 }
 
 enemy{
@@ -19331,7 +19804,7 @@ custom_entity{
 }
 
 switch{
-  name = "room22_switch",
+  name = "switch_complete_22",
   layer = 0,
   x = 1560,
   y = 1008,
@@ -20434,7 +20907,7 @@ crystal_block{
 }
 
 switch{
-  name = "room21_switch",
+  name = "switch_complete_21",
   layer = 0,
   x = 1224,
   y = 1048,
@@ -21357,6 +21830,297 @@ block{
   maximum_moves = 2,
 }
 
+enemy{
+  name = "room_4_moth_21",
+  layer = 0,
+  x = 232,
+  y = 933,
+  direction = 3,
+  breed = "moth",
+  treasure_name = "random_enemy",
+}
+
+dynamic_tile{
+  name = "eye_1",
+  layer = 0,
+  x = 792,
+  y = 64,
+  pattern = "558",
+  width = 32,
+  height = 32,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "eye_2",
+  layer = 0,
+  x = 968,
+  y = 64,
+  pattern = "558",
+  width = 32,
+  height = 32,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1120,
+  y = 112,
+  pattern = "108",
+  width = 8,
+  height = 8,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1128,
+  y = 112,
+  pattern = "112",
+  width = 80,
+  height = 8,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1208,
+  y = 112,
+  pattern = "109",
+  width = 8,
+  height = 8,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1120,
+  y = 120,
+  pattern = "114",
+  width = 8,
+  height = 64,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1120,
+  y = 184,
+  pattern = "110",
+  width = 8,
+  height = 8,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1128,
+  y = 184,
+  pattern = "113",
+  width = 80,
+  height = 8,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1208,
+  y = 184,
+  pattern = "111",
+  width = 8,
+  height = 8,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1208,
+  y = 120,
+  pattern = "115",
+  width = 8,
+  height = 64,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1248,
+  y = 192,
+  pattern = "108",
+  width = 8,
+  height = 8,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1256,
+  y = 192,
+  pattern = "112",
+  width = 80,
+  height = 8,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1336,
+  y = 192,
+  pattern = "109",
+  width = 8,
+  height = 8,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1336,
+  y = 200,
+  pattern = "115",
+  width = 8,
+  height = 64,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1336,
+  y = 264,
+  pattern = "111",
+  width = 8,
+  height = 8,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1256,
+  y = 264,
+  pattern = "113",
+  width = 80,
+  height = 8,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1248,
+  y = 264,
+  pattern = "110",
+  width = 8,
+  height = 8,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 1248,
+  y = 200,
+  pattern = "114",
+  width = 8,
+  height = 64,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "eye_5",
+  layer = 0,
+  x = 800,
+  y = 1376,
+  pattern = "52",
+  width = 32,
+  height = 32,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  name = "eye_6",
+  layer = 0,
+  x = 976,
+  y = 1376,
+  pattern = "52",
+  width = 32,
+  height = 32,
+  enabled_at_start = true,
+}
+
+switch{
+  name = "switch_complete_1",
+  layer = 0,
+  x = 888,
+  y = 1272,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+switch{
+  name = "switch_complete_15",
+  layer = 0,
+  x = 1224,
+  y = 456,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+switch{
+  name = "switch_complete_18",
+  layer = 0,
+  x = 1560,
+  y = 456,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+switch{
+  name = "switch_complete_8",
+  layer = 0,
+  x = 552,
+  y = 728,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+switch{
+  name = "switch_complete_13",
+  layer = 0,
+  x = 552,
+  y = 456,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+switch{
+  name = "switch_complete_16",
+  layer = 0,
+  x = 1224,
+  y = 184,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+switch{
+  name = "switch_complete_23",
+  layer = 0,
+  x = 1560,
+  y = 1296,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
 tile{
   layer = 1,
   x = 1456,
@@ -21463,6 +22227,172 @@ tile{
   width = 16,
   height = 16,
   pattern = "338",
+}
+
+enemy{
+  name = "room10_keese_1",
+  layer = 1,
+  x = 144,
+  y = 445,
+  direction = 0,
+  breed = "keese",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "room10_keese_2",
+  layer = 1,
+  x = 160,
+  y = 517,
+  direction = 0,
+  breed = "keese",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "room10_keese_7",
+  layer = 1,
+  x = 224,
+  y = 517,
+  direction = 0,
+  breed = "keese_dark",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "room10_keese_5",
+  layer = 1,
+  x = 296,
+  y = 509,
+  direction = 0,
+  breed = "keese",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "room10_keese_4",
+  layer = 1,
+  x = 248,
+  y = 461,
+  direction = 0,
+  breed = "keese",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "room10_keese_3",
+  layer = 1,
+  x = 232,
+  y = 421,
+  direction = 0,
+  breed = "keese",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "room10_keese_6",
+  layer = 1,
+  x = 304,
+  y = 413,
+  direction = 0,
+  breed = "keese",
+  treasure_name = "random_enemy",
+}
+
+wall{
+  layer = 1,
+  x = 64,
+  y = 336,
+  width = 8,
+  height = 256,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 376,
+  y = 336,
+  width = 8,
+  height = 256,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 72,
+  y = 336,
+  width = 304,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 72,
+  y = 584,
+  width = 304,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 64,
+  y = 880,
+  width = 8,
+  height = 256,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 376,
+  y = 880,
+  width = 8,
+  height = 256,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 72,
+  y = 880,
+  width = 304,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 72,
+  y = 1128,
+  width = 304,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{
@@ -22980,7 +23910,7 @@ tile{
 separator{
   layer = 2,
   x = 720,
-  y = -8,
+  y = 0,
   width = 16,
   height = 1472,
 }
@@ -23269,7 +24199,7 @@ enemy{
   name = "shadow_link",
   layer = 2,
   x = 992,
-  y = 1453,
+  y = 1421,
   direction = 3,
   breed = "shadow_link",
 }

@@ -206,6 +206,14 @@ function map:on_draw(dst_surface)
         sp:draw(lights, xx-8, yy-8)
       end
     end
+    for e in map:get_entities("torch_") do
+      if e:get_sprite():get_animation() == "lit" and e:get_distance(game:get_hero()) <= 300 then
+        local xx,yy = e:get_position()
+        local sp = sol.sprite.create("entities/torch_light")
+        sp:set_blend_mode("blend")
+        sp:draw(lights, xx-32, yy-40)
+      end
+    end
     
     -- Lantern more quickly drains magic here so you're forced to find ways to refill magic.
     if magic_counter >= 20 then

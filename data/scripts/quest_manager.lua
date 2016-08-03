@@ -272,7 +272,7 @@ local function initialize_maps()
         
         lights:clear()
         for e in game:get_map():get_entities("torch_") do
-          if e:get_sprite():get_animation() == "lit" and e:get_distance(game:get_hero()) <= 250 then
+          if e:get_sprite():get_animation() == "lit" and e:get_distance(game:get_hero()) <= 300 then
             local xx,yy = e:get_position()
             local sp = sol.sprite.create("entities/torch_light")
             sp:set_blend_mode("blend")
@@ -280,7 +280,7 @@ local function initialize_maps()
          end
         end
         for e in game:get_map():get_entities("night_") do
-          if e:is_enabled() and e:get_distance(game:get_hero()) <= 250 then
+          if e:is_enabled() and e:get_distance(game:get_hero()) <= 300 then
             local xx,yy = e:get_position()
             local sp = sol.sprite.create("entities/torch_light")
             sp:set_blend_mode("blend")
@@ -288,7 +288,7 @@ local function initialize_maps()
           end
         end
         for e in game:get_map():get_entities("lava_") do
-          if e:is_enabled() and e:get_distance(game:get_hero()) <= 250 then
+          if e:is_enabled() and e:get_distance(game:get_hero()) <= 300 then
             local xx,yy = e:get_position()
             local sp = sol.sprite.create("entities/torch_light_tile")
             sp:set_blend_mode("blend")
@@ -296,7 +296,7 @@ local function initialize_maps()
           end
         end
         for e in game:get_map():get_entities("warp_") do
-          if e:is_enabled() and e:get_distance(game:get_hero()) <= 200 then
+          if e:is_enabled() and e:get_distance(game:get_hero()) <= 300 then
             local xx,yy = e:get_position()
             local sp = sol.sprite.create("entities/torch_light_tile")
             sp:set_blend_mode("blend")
@@ -304,7 +304,7 @@ local function initialize_maps()
           end
         end
         for e in game:get_map():get_entities("poe") do
-          if e:is_enabled() and e:get_distance(game:get_hero()) <= 200 then
+          if e:is_enabled() and e:get_distance(game:get_hero()) <= 300 then
             local xx,yy = e:get_position()
             local sp = sol.sprite.create("entities/torch_light")
             sp:set_blend_mode("blend")
