@@ -77,6 +77,7 @@ end
 function sensor_miniboss:on_activated()
   if miniboss_shadow_link ~= nil then
     map:close_doors("boss_door")
+    map:remove_entities("wallmaster") -- Don't want hero taken during boss fight.
     miniboss_shadow_link:set_enabled(true)
     sol.audio.play_music("boss")
   end
@@ -94,13 +95,11 @@ if miniboss_shadow_link ~= nil then
 end
 
 function sensor_boss:on_activated()
-  finish_game()
   if boss_zirna ~= nil and game:get_value("dungeon_8_explored_1b_complete") then
     boss_zirna:set_enabled(true)
     sol.audio.play_music("boss")
     map:close_doors("boss_door")
-    if map:get_entity("wallmaster") then wallmaster:remove() end -- Don't want hero taken during boss fight.
-    if map:get_entity("wallmaster_2") then wallmaster_2:remove() end
+    map:remove_entities("wallmaster") -- Don't want hero taken during boss fight.
     game:set_value("final_boss_active", true)
   end
 end

@@ -7428,7 +7428,7 @@ teletransporter{
   x = 1120,
   y = 0,
   width = 16,
-  height = 928,
+  height = 608,
   transition = "scrolling",
   destination_map = "107",
   destination = "_side",
@@ -8791,15 +8791,6 @@ destructible{
   can_be_cut = true,
 }
 
-wall{
-  layer = 0,
-  x = 1112,
-  y = 608,
-  width = 8,
-  height = 56,
-  stops_hero = true,
-}
-
 destructible{
   layer = 0,
   x = 200,
@@ -9136,6 +9127,18 @@ custom_entity{
   direction = 0,
   sprite = "entities/tree_apple",
   model = "tree_apple",
+}
+
+teletransporter{
+  name = "to_F4_2",
+  layer = 0,
+  x = 1120,
+  y = 664,
+  width = 16,
+  height = 256,
+  transition = "scrolling",
+  destination_map = "107",
+  destination = "_side",
 }
 
 tile{

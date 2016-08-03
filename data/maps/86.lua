@@ -26,10 +26,12 @@ for enemy in map:get_entities("pengator") do
   end
 end
 
-function map:on_draw(dst_surface)
-  if game.deception_fog_overlay ~= nil then game.deception_fog_overlay:draw(dst_surface) end
-end
-
 function npc_earmuffs:on_interaction()
   game:start_dialog("hylian_earmuffs.0.calatia")
+end
+
+if game:get_time_of_day() ~= "night" then
+  function map:on_draw(dst_surface)
+    if game.deception_fog_overlay ~= nil then game.deception_fog_overlay:draw(dst_surface) end
+  end
 end

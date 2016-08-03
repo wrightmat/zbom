@@ -5932,6 +5932,69 @@ tile{
   pattern = "138",
 }
 
+tile{
+  layer = 0,
+  x = 880,
+  y = 872,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 648,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 888,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 552,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 456,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 8,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
 dynamic_tile{
   name = "ladder2_3",
   layer = 0,
@@ -7006,6 +7069,69 @@ custom_entity{
   direction = 0,
   sprite = "entities/tree_apple",
   model = "tree_apple",
+}
+
+destructible{
+  layer = 0,
+  x = 888,
+  y = 885,
+  treasure_name = "random_north",
+  sprite = "entities/stone_small_black",
+  weight = 2,
+}
+
+destructible{
+  layer = 0,
+  x = 1016,
+  y = 661,
+  treasure_name = "random_north",
+  sprite = "entities/stone_small_black",
+  weight = 2,
+}
+
+destructible{
+  layer = 0,
+  x = 576,
+  y = 901,
+  treasure_name = "random_north",
+  sprite = "entities/stone_small_black",
+  weight = 2,
+}
+
+destructible{
+  layer = 0,
+  x = 760,
+  y = 469,
+  treasure_name = "random_north",
+  sprite = "entities/stone_small_black",
+  weight = 2,
+}
+
+destructible{
+  layer = 0,
+  x = 760,
+  y = 565,
+  treasure_name = "random_north",
+  sprite = "entities/stone_small_black",
+  weight = 2,
+}
+
+destructible{
+  layer = 0,
+  x = 184,
+  y = 397,
+  treasure_name = "random_north",
+  sprite = "entities/stone_small_black",
+  weight = 2,
+}
+
+destructible{
+  layer = 0,
+  x = 160,
+  y = 21,
+  treasure_name = "random_north",
+  sprite = "entities/stone_small_black",
+  weight = 2,
 }
 
 tile{

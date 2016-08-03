@@ -42,7 +42,7 @@ local speed = 240   -- Speed in pixels per second.
 local catchable_entity_types = { "pickable" }
 -- What types of entities the hookshot can attach to.
 -- Additionally, all entities that have a method "is_hookshot_hook(true)"
-local hook_entity_types = {}
+local hook_entity_types = { "destructible" }
 
 function item:on_created()
   self:set_savegame_variable("i1819")

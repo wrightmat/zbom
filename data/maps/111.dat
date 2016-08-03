@@ -2465,7 +2465,7 @@ teletransporter{
 }
 
 npc{
-  name = "flame_1",
+  name = "torch_1",
   layer = 0,
   x = 328,
   y = 781,
@@ -2475,7 +2475,7 @@ npc{
 }
 
 npc{
-  name = "flame_2",
+  name = "torch_2",
   layer = 0,
   x = 328,
   y = 861,
@@ -2485,7 +2485,7 @@ npc{
 }
 
 npc{
-  name = "flame_3",
+  name = "torch_3",
   layer = 0,
   x = 424,
   y = 781,
@@ -2495,7 +2495,7 @@ npc{
 }
 
 npc{
-  name = "flame_4",
+  name = "torch_4",
   layer = 0,
   x = 424,
   y = 861,
@@ -2505,7 +2505,7 @@ npc{
 }
 
 npc{
-  name = "flame_5",
+  name = "torch_5",
   layer = 0,
   x = 512,
   y = 781,
@@ -2515,7 +2515,7 @@ npc{
 }
 
 npc{
-  name = "flame_6",
+  name = "torch_6",
   layer = 0,
   x = 512,
   y = 861,
@@ -2525,7 +2525,7 @@ npc{
 }
 
 npc{
-  name = "flame_7",
+  name = "torch_7",
   layer = 0,
   x = 600,
   y = 781,
@@ -2535,7 +2535,7 @@ npc{
 }
 
 npc{
-  name = "flame_8",
+  name = "torch_8",
   layer = 0,
   x = 600,
   y = 861,
@@ -2545,7 +2545,7 @@ npc{
 }
 
 npc{
-  name = "flame_9",
+  name = "torch_9",
   layer = 0,
   x = 680,
   y = 781,
@@ -2555,7 +2555,7 @@ npc{
 }
 
 npc{
-  name = "flame_10",
+  name = "torch_10",
   layer = 0,
   x = 680,
   y = 861,
@@ -2575,7 +2575,7 @@ npc{
 }
 
 npc{
-  name = "flame_king_1",
+  name = "torch_king_1",
   layer = 0,
   x = 640,
   y = 485,
@@ -2585,7 +2585,7 @@ npc{
 }
 
 npc{
-  name = "flame_king_2",
+  name = "torch_king_2",
   layer = 0,
   x = 656,
   y = 485,
@@ -2595,7 +2595,7 @@ npc{
 }
 
 npc{
-  name = "flame_king_3",
+  name = "torch_king_3",
   layer = 0,
   x = 672,
   y = 485,
@@ -2605,7 +2605,7 @@ npc{
 }
 
 npc{
-  name = "flame_king_4",
+  name = "torch_king_4",
   layer = 0,
   x = 688,
   y = 485,
@@ -2615,7 +2615,7 @@ npc{
 }
 
 npc{
-  name = "flame_king_5",
+  name = "torch_king_5",
   layer = 0,
   x = 704,
   y = 485,
@@ -2625,7 +2625,7 @@ npc{
 }
 
 npc{
-  name = "flame_king_6",
+  name = "torch_king_6",
   layer = 0,
   x = 864,
   y = 485,
@@ -2635,7 +2635,7 @@ npc{
 }
 
 npc{
-  name = "flame_king_7",
+  name = "torch_king_7",
   layer = 0,
   x = 848,
   y = 485,
@@ -2645,7 +2645,7 @@ npc{
 }
 
 npc{
-  name = "flame_king_8",
+  name = "torch_king_8",
   layer = 0,
   x = 832,
   y = 485,
@@ -2655,7 +2655,7 @@ npc{
 }
 
 npc{
-  name = "flame_king_9",
+  name = "torch_king_9",
   layer = 0,
   x = 816,
   y = 485,
@@ -2665,7 +2665,7 @@ npc{
 }
 
 npc{
-  name = "flame_king_10",
+  name = "torch_king_10",
   layer = 0,
   x = 800,
   y = 485,
@@ -2886,6 +2886,7 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/torch_candle",
+  behavior = "item#lamp",
 }
 
 npc{
@@ -2896,6 +2897,7 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/torch_candle",
+  behavior = "item#lamp",
 }
 
 tile{

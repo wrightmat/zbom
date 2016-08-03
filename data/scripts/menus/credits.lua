@@ -10,6 +10,7 @@ end
 
 function credits_menu:on_started()
   local map = game:get_map()
+  game:get_hero():freeze()
   
   self.heading = sol.text_surface.create{
     font = "lttp",
@@ -58,7 +59,7 @@ function credits_menu:on_started()
     local hours = math.floor(time / 3600)
     local minutes = math.floor((time % 3600) / 60)
     local seconds = time - (hours * 3600) - (minutes * 60)
-    local time_played = hours .. ":" .. minutes .. ":" .. seconds
+    local time_played = hours .. " : " .. minutes .. " : " .. seconds
     game:start_dialog("_credits.complete", game:calculate_percent_complete(), function()
       game:start_dialog("_credits.time", time_played, function()
         game:start_dialog("_credits.died", game:get_value("times_died"), function()
