@@ -9250,7 +9250,7 @@ which to hold various things.
 
 dialog{
   id = "shop.heart",
-  icon = "77",
+  icon = "85",
   skip = "current",
   text = [[
 A single heart to restore some
@@ -9266,6 +9266,16 @@ dialog{
 A durable shield made of
 nearly impenetrable
 Hylian metal.
+]]
+}
+
+dialog{
+  id = "shop.magic",
+  icon = "86",
+  skip = "current",
+  text = [[
+A jar of potion to restore
+some of your magic.
 ]]
 }
 

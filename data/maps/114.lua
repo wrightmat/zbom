@@ -1,4 +1,9 @@
 local map = ...
+local game = map:get_game()
+
+----------------------------
+-- Outside H3 (Mido Town) --
+----------------------------
 
 function map:on_started(destination)
   -- Activate any night-specific dynamic tiles.

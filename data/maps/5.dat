@@ -3254,13 +3254,14 @@ shop_treasure{
 }
 
 shop_treasure{
-  name = "shop_heart",
+  name = "shop_magic",
   layer = 0,
   x = 616,
   y = 392,
-  treasure_name = "heart",
-  price = 10,
-  dialog = "shop.heart",
+  treasure_name = "magic_flask",
+  treasure_variant = 2,
+  price = 20,
+  dialog = "shop.magic",
 }
 
 npc{

@@ -1,5 +1,7 @@
 local map = ...
 local game = map:get_game()
+local magic_counter = 0
+local draw_counter = 0
 
 local arrow_puzzle_nb_correct = 0
 local arrow_puzzle_correct = false
@@ -20,7 +22,6 @@ function map:on_started(destination)
   game:set_starting_location("218", "from_outside")
 
   glow_timer = sol.timer.start(map, 250, function()
-    shadow:clear()
     shadow:fill_color({032,064,128,128})
     lights:clear()
     if game:get_value("dungeon_8_explored_1b_1") then
@@ -512,14 +513,160 @@ end
 function map:on_draw(dst_surface)
   local x,y = map:get_camera():get_position()
   local w,h = map:get_camera():get_size()
-    
-  if game:has_item("lamp") and game:get_magic() > 0 then
-    local xx,yy = map:get_entity("hero"):get_position()
-    local sp = sol.sprite.create("entities/torch_light_hero")
-    sp:set_blend_mode("blend")
-    sp:draw(lights, xx-64, yy-64)
+  if draw_counter >= 15 then
+    lights:clear()
+    shadow:fill_color({032,064,128,128})
+    if game:get_value("dungeon_8_explored_1b_1") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("blend")
+      sp:draw(lights, 736, 1149)
+    end
+    if game:get_value("dungeon_8_explored_1b_2") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("blend")
+      sp:draw(lights, 400, 1149)
+      room2_gate_e1:set_enabled(false)
+      room2_gate_e2:set_enabled(false)
+      room1_gate_w1:set_enabled(false)
+      room1_gate_w2:set_enabled(false)
+    end
+    if game:get_value("dungeon_8_explored_1b_3") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("blend")
+      sp:draw(lights, 64, 1149)
+    end
+    if game:get_value("dungeon_8_explored_1b_4") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("blend")
+      sp:draw(lights, 64, 877)
+    end
+    if game:get_value("dungeon_8_explored_1b_5") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("blend")
+      sp:draw(lights, 400, 877)
+    end
+    if game:get_value("dungeon_8_explored_1b_6") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("blend")
+      sp:draw(lights, 736, 877)
+      room6_gate_s1:set_enabled(false)
+      room6_gate_s2:set_enabled(false)
+      room1_gate_n1:set_enabled(false)
+      room1_gate_n2:set_enabled(false)
+    end
+    if game:get_value("dungeon_8_explored_1b_7") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("blend")
+      sp:draw(lights, 736, 605)
+    end
+    if game:get_value("dungeon_8_explored_1b_8") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("blend")
+      sp:draw(lights, 400, 605)
+    end
+    if game:get_value("dungeon_8_explored_1b_9") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("blend")
+      sp:draw(lights, 64, 605)
+      room9_gate_e1:set_enabled(false)
+      room9_gate_e2:set_enabled(false)
+      room8_gate_w1:set_enabled(false)
+      room8_gate_w2:set_enabled(false)
+    end
+    if game:get_value("dungeon_8_explored_1b_10") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("blend")
+      sp:draw(lights, 64, 333)
+    end
+    if game:get_value("dungeon_8_explored_1b_11") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("blend")
+      sp:draw(lights, 64, 61)
+    end
+    if game:get_value("dungeon_8_explored_1b_12") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("blend")
+      sp:draw(lights, 400, 61)
+    end
+    if game:get_value("dungeon_8_explored_1b_13") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("blend")
+      sp:draw(lights, 400, 333)
+    end
+    if game:get_value("dungeon_8_explored_1b_14") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("blend")
+      sp:draw(lights, 736, 333)
+    end
+    if game:get_value("dungeon_8_explored_1b_15") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("blend")
+      sp:draw(lights, 1072, 333)
+    end
+    if game:get_value("dungeon_8_explored_1b_16") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("blend")
+      sp:draw(lights, 1072, 61)
+    end
+    if game:get_value("dungeon_8_explored_1b_17") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("blend")
+      sp:draw(lights, 1408, 61)
+    end
+    if game:get_value("dungeon_8_explored_1b_18") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("blend")
+      sp:draw(lights, 1408, 333)
+    end
+    if game:get_value("dungeon_8_explored_1b_19") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("blend")
+      sp:draw(lights, 1408, 605)
+    end
+    if game:get_value("dungeon_8_explored_1b_20") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("blend")
+      sp:draw(lights, 1072, 605)
+    end
+    if game:get_value("dungeon_8_explored_1b_21") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("blend")
+      sp:draw(lights, 1072, 877)
+    end
+    if game:get_value("dungeon_8_explored_1b_22") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("blend")
+      sp:draw(lights, 1408, 877)
+    end
+    if game:get_value("dungeon_8_explored_1b_23") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("blend")
+      sp:draw(lights, 1408, 1149)
+    end
+    if game:get_value("dungeon_8_explored_1b_24") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("blend")
+      sp:draw(lights, 1072, 1149)
+      room1_gate_e1:set_enabled(false)
+      room1_gate_e2:set_enabled(false)
+      room24_gate_w1:set_enabled(false)
+      room24_gate_w2:set_enabled(false)
+    end
+    if game:get_value("dungeon_8_explored_1b_25") then
+      local sp = sol.sprite.create("entities/torch_light_room")
+      sp:set_blend_mode("blend")
+      sp:draw(lights, 736, 61)
+    end
+
+    if game:has_item("lamp") and game:get_magic() > 0 then
+      local xx,yy = map:get_entity("hero"):get_position()
+      local sp = sol.sprite.create("entities/torch_light_hero")
+      sp:set_blend_mode("blend")
+      sp:draw(lights, xx-64, yy-64)
+    end
+    draw_counter = 0
   end
-    
   lights:draw_region(x,y,w,h,shadow,x,y)
   shadow:draw_region(x,y,w,h,dst_surface)
+  draw_counter = draw_counter + 1
 end

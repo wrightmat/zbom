@@ -109,6 +109,8 @@ function to_C4:on_activated()
   end)
 end
 
-function map:on_draw(dst_surface)
-  if game.deception_fog_overlay ~= nil then game.deception_fog_overlay:draw(dst_surface) end
+if game:get_time_of_day() ~= "night" then
+  function map:on_draw(dst_surface)
+    if game.deception_fog_overlay ~= nil then game.deception_fog_overlay:draw(dst_surface) end
+  end
 end

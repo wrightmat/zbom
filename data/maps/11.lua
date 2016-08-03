@@ -111,6 +111,32 @@ function map:on_started(destination)
   end
   if game:get_value("i1911") ~= 2 then quest_gaira:remove() end -- Poisoned trees Deacon side quest.
 
+  local on_update_timer = sol.timer.start(map, 100, function()
+    -- We do this in place of on_update so we don't break the night overlay.
+    if game:get_value("i1028") == 2 and are_all_torches_on() then
+      sol.audio.play_sound("chest_appears")
+      game:set_value("i1028", 3)
+    end
+    if game:get_value("i1027") < 3 then
+      map:set_entities_enabled("banner_race", true)
+      if game:get_value("i1028") > 1 and game:get_value("i1028") < 4 then
+        map:set_entities_enabled("sensor_race", true)
+        to_F15:set_enabled(false)
+        to_F13:set_enabled(false)
+        to_E14_2:set_enabled(false)
+        to_ranch:set_enabled(false)
+      end
+    else
+      map:set_entities_enabled("banner_race", false)
+      map:set_entities_enabled("sensor_race", false)
+      to_F15:set_enabled(true)
+      to_F13:set_enabled(true)
+      to_E14_2:set_enabled(true)
+      to_ranch:set_enabled(true)
+    end
+    return true
+  end)
+
   -- Activate any night-specific dynamic tiles.
   if game:get_time_of_day() == "night" then
     for entity in game:get_map():get_entities("night_") do
@@ -358,29 +384,5 @@ if game:get_time_of_day() ~= "night" then
       timer_text:set_text(timer_time)
       timer_text:draw(dst_surface, 22, 58)
     end
-  end
-end
-
-function map:on_update()
-  if game:get_value("i1028") == 2 and are_all_torches_on() then
-    sol.audio.play_sound("chest_appears")
-    game:set_value("i1028", 3)
-  end
-  if game:get_value("i1027") < 3 then
-    map:set_entities_enabled("banner_race", true)
-    if game:get_value("i1028") > 1 and game:get_value("i1028") < 4 then
-      map:set_entities_enabled("sensor_race", true)
-      to_F15:set_enabled(false)
-      to_F13:set_enabled(false)
-      to_E14_2:set_enabled(false)
-      to_ranch:set_enabled(false)
-    end
-  else
-    map:set_entities_enabled("banner_race", false)
-    map:set_entities_enabled("sensor_race", false)
-    to_F15:set_enabled(true)
-    to_F13:set_enabled(true)
-    to_E14_2:set_enabled(true)
-    to_ranch:set_enabled(true)
   end
 end

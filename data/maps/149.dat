@@ -3,9 +3,9 @@ properties{
   y = 3363,
   width = 1120,
   height = 1120,
-  world = "outside_north",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_north",
   tileset = "2",
   music = "town_kasuto",
 }
@@ -5447,7 +5447,7 @@ tile{
 }
 
 dynamic_tile{
-  name = "night_entrance",
+  name = "night_house1_door",
   layer = 0,
   x = 400,
   y = 608,

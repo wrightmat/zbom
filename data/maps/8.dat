@@ -75,38 +75,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 1896,
+  x = 1928,
   y = 480,
   width = 224,
   height = 176,
   pattern = "483",
-}
-
-tile{
-  layer = 0,
-  x = 1944,
-  y = 520,
-  width = 16,
-  height = 8,
-  pattern = "594",
-}
-
-tile{
-  layer = 0,
-  x = 1928,
-  y = 520,
-  width = 16,
-  height = 8,
-  pattern = "595",
-}
-
-tile{
-  layer = 0,
-  x = 1960,
-  y = 520,
-  width = 16,
-  height = 8,
-  pattern = "595",
 }
 
 tile{
@@ -116,6 +89,15 @@ tile{
   width = 16,
   height = 8,
   pattern = "594",
+}
+
+tile{
+  layer = 0,
+  x = 1960,
+  y = 520,
+  width = 16,
+  height = 8,
+  pattern = "595",
 }
 
 tile{
@@ -174,7 +156,25 @@ tile{
 
 tile{
   layer = 0,
-  x = 1920,
+  x = 2088,
+  y = 520,
+  width = 16,
+  height = 8,
+  pattern = "595",
+}
+
+tile{
+  layer = 0,
+  x = 2104,
+  y = 520,
+  width = 16,
+  height = 8,
+  pattern = "594",
+}
+
+tile{
+  layer = 0,
+  x = 1952,
   y = 520,
   width = 8,
   height = 8,
@@ -4827,8 +4827,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 1640,
-  y = 520,
+  x = 1656,
+  y = 480,
   width = 24,
   height = 24,
   pattern = "572",
@@ -4854,10 +4854,10 @@ tile{
 
 tile{
   layer = 0,
-  x = 1656,
-  y = 592,
+  x = 1640,
+  y = 608,
   width = 16,
-  height = 32,
+  height = 16,
   pattern = "485",
 }
 
@@ -5376,7 +5376,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1896,
+  x = 1928,
   y = 472,
   width = 224,
   height = 8,
@@ -5385,7 +5385,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 2016,
+  x = 2048,
   y = 664,
   width = 112,
   height = 24,
@@ -5394,7 +5394,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1864,
+  x = 1896,
   y = 448,
   width = 24,
   height = 24,
@@ -5403,7 +5403,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 2128,
+  x = 2160,
   y = 448,
   width = 24,
   height = 24,
@@ -5412,7 +5412,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 2128,
+  x = 2160,
   y = 664,
   width = 24,
   height = 24,
@@ -5421,7 +5421,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1864,
+  x = 1896,
   y = 664,
   width = 24,
   height = 24,
@@ -5430,7 +5430,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1864,
+  x = 1896,
   y = 472,
   width = 24,
   height = 192,
@@ -5439,7 +5439,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1888,
+  x = 1920,
   y = 664,
   width = 112,
   height = 24,
@@ -5448,7 +5448,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 2128,
+  x = 2160,
   y = 472,
   width = 24,
   height = 192,
@@ -5457,7 +5457,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1888,
+  x = 1920,
   y = 448,
   width = 240,
   height = 24,
@@ -5466,7 +5466,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 2000,
+  x = 2032,
   y = 664,
   width = 16,
   height = 16,
@@ -5475,7 +5475,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 2016,
+  x = 2048,
   y = 664,
   width = 8,
   height = 16,
@@ -5484,7 +5484,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1992,
+  x = 2024,
   y = 664,
   width = 8,
   height = 16,
@@ -5502,7 +5502,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 2016,
+  x = 2048,
   y = 688,
   width = 8,
   height = 16,
@@ -5511,7 +5511,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1992,
+  x = 2024,
   y = 688,
   width = 8,
   height = 16,
@@ -5520,7 +5520,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1888,
+  x = 1920,
   y = 472,
   width = 8,
   height = 8,
@@ -5529,7 +5529,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1888,
+  x = 1920,
   y = 656,
   width = 8,
   height = 8,
@@ -5538,7 +5538,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 2120,
+  x = 2152,
   y = 472,
   width = 8,
   height = 8,
@@ -5547,7 +5547,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 2120,
+  x = 2152,
   y = 656,
   width = 8,
   height = 8,
@@ -5556,7 +5556,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1896,
+  x = 1928,
   y = 656,
   width = 224,
   height = 8,
@@ -5565,7 +5565,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1888,
+  x = 1920,
   y = 480,
   width = 8,
   height = 176,
@@ -5574,7 +5574,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 2120,
+  x = 2152,
   y = 480,
   width = 8,
   height = 176,
@@ -5583,7 +5583,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1864,
+  x = 1896,
   y = 520,
   width = 32,
   height = 32,
@@ -5592,7 +5592,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 2120,
+  x = 2152,
   y = 520,
   width = 32,
   height = 32,
@@ -5601,7 +5601,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1992,
+  x = 2024,
   y = 640,
   width = 32,
   height = 16,
@@ -5610,7 +5610,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 2120,
+  x = 2152,
   y = 600,
   width = 32,
   height = 32,
@@ -5619,7 +5619,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1864,
+  x = 1896,
   y = 600,
   width = 32,
   height = 32,
@@ -5628,7 +5628,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1912,
+  x = 1944,
   y = 480,
   width = 8,
   height = 48,
@@ -5637,7 +5637,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1920,
+  x = 1952,
   y = 528,
   width = 72,
   height = 8,
@@ -5646,7 +5646,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1912,
+  x = 1944,
   y = 528,
   width = 8,
   height = 8,
@@ -5655,7 +5655,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 2032,
+  x = 2064,
   y = 528,
   width = 72,
   height = 8,
@@ -5664,7 +5664,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 2024,
+  x = 2056,
   y = 528,
   width = 8,
   height = 8,
@@ -5673,7 +5673,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 2096,
+  x = 2128,
   y = 480,
   width = 8,
   height = 48,
@@ -5682,7 +5682,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1920,
+  x = 1952,
   y = 480,
   width = 8,
   height = 8,
@@ -5691,7 +5691,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1920,
+  x = 1952,
   y = 488,
   width = 8,
   height = 16,
@@ -5700,7 +5700,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1920,
+  x = 1952,
   y = 504,
   width = 8,
   height = 16,
@@ -5709,24 +5709,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1928,
-  y = 480,
-  width = 16,
-  height = 8,
-  pattern = "588",
-}
-
-tile{
-  layer = 0,
-  x = 1944,
-  y = 480,
-  width = 16,
-  height = 8,
-  pattern = "589",
-}
-
-tile{
-  layer = 0,
   x = 1960,
   y = 480,
   width = 16,
@@ -5800,6 +5782,24 @@ tile{
 tile{
   layer = 0,
   x = 2088,
+  y = 480,
+  width = 16,
+  height = 8,
+  pattern = "588",
+}
+
+tile{
+  layer = 0,
+  x = 2104,
+  y = 480,
+  width = 16,
+  height = 8,
+  pattern = "589",
+}
+
+tile{
+  layer = 0,
+  x = 2120,
   y = 480,
   width = 8,
   height = 8,
@@ -5808,7 +5808,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 2088,
+  x = 2120,
   y = 488,
   width = 8,
   height = 16,
@@ -5817,7 +5817,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 2088,
+  x = 2120,
   y = 504,
   width = 8,
   height = 16,
@@ -5826,24 +5826,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1928,
-  y = 488,
-  width = 16,
-  height = 16,
-  pattern = "599",
-}
-
-tile{
-  layer = 0,
-  x = 1944,
-  y = 488,
-  width = 16,
-  height = 16,
-  pattern = "601",
-}
-
-tile{
-  layer = 0,
   x = 1960,
   y = 488,
   width = 16,
@@ -5916,8 +5898,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 1928,
-  y = 504,
+  x = 2088,
+  y = 488,
   width = 16,
   height = 16,
   pattern = "599",
@@ -5925,8 +5907,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 1944,
-  y = 504,
+  x = 2104,
+  y = 488,
   width = 16,
   height = 16,
   pattern = "601",
@@ -6007,6 +5989,24 @@ tile{
 tile{
   layer = 0,
   x = 2088,
+  y = 504,
+  width = 16,
+  height = 16,
+  pattern = "599",
+}
+
+tile{
+  layer = 0,
+  x = 2104,
+  y = 504,
+  width = 16,
+  height = 16,
+  pattern = "601",
+}
+
+tile{
+  layer = 0,
+  x = 2120,
   y = 520,
   width = 8,
   height = 8,
@@ -6015,7 +6015,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1920,
+  x = 1952,
   y = 560,
   width = 64,
   height = 24,
@@ -6024,7 +6024,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1920,
+  x = 1952,
   y = 608,
   width = 64,
   height = 24,
@@ -6033,7 +6033,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 2032,
+  x = 2064,
   y = 560,
   width = 64,
   height = 24,
@@ -6042,7 +6042,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 2032,
+  x = 2064,
   y = 608,
   width = 64,
   height = 24,
@@ -10704,7 +10704,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1968,
+  x = 2000,
   y = 472,
   width = 80,
   height = 24,
@@ -11078,6 +11078,33 @@ tile{
   width = 16,
   height = 16,
   pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 1656,
+  y = 584,
+  width = 16,
+  height = 16,
+  pattern = "485",
+}
+
+tile{
+  layer = 0,
+  x = 1656,
+  y = 608,
+  width = 24,
+  height = 24,
+  pattern = "479",
+}
+
+tile{
+  layer = 0,
+  x = 1784,
+  y = 808,
+  width = 32,
+  height = 16,
+  pattern = "369",
 }
 
 dynamic_tile{
@@ -11524,7 +11551,7 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "143",
-  destination = "from_inside_house1",
+  destination = "from_inside_house_2",
 }
 
 dynamic_tile{
@@ -12081,7 +12108,7 @@ destructible{
 destructible{
   layer = 0,
   x = 1664,
-  y = 605,
+  y = 597,
   treasure_name = "random_north",
   sprite = "entities/pot",
   destruction_sound = "stone",
@@ -12089,7 +12116,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 1664,
+  x = 1648,
   y = 621,
   treasure_name = "random_north",
   sprite = "entities/pot",
@@ -12157,8 +12184,8 @@ custom_entity{
 custom_entity{
   name = "book_rauru",
   layer = 0,
-  x = 1648,
-  y = 541,
+  x = 1672,
+  y = 501,
   width = 16,
   height = 16,
   direction = 0,
@@ -12183,8 +12210,8 @@ teletransporter{
   y = 1008,
   width = 16,
   height = 16,
-  destination_map = "106",
-  destination = "from_house_3",
+  destination_map = "143",
+  destination = "from_inside_house4",
 }
 
 dynamic_tile{
@@ -12220,7 +12247,7 @@ destination{
 dynamic_tile{
   name = "night_window_21",
   layer = 0,
-  x = 2120,
+  x = 2152,
   y = 520,
   pattern = "709",
   width = 32,
@@ -12231,7 +12258,7 @@ dynamic_tile{
 dynamic_tile{
   name = "night_window_31",
   layer = 0,
-  x = 1864,
+  x = 1896,
   y = 520,
   pattern = "708",
   width = 32,
@@ -12242,7 +12269,7 @@ dynamic_tile{
 teletransporter{
   name = "to_outside_rauru_sanctuary",
   layer = 0,
-  x = 2000,
+  x = 2032,
   y = 688,
   width = 16,
   height = 16,
@@ -12253,7 +12280,7 @@ teletransporter{
 destination{
   name = "enter_rauru_sanctuary",
   layer = 0,
-  x = 2008,
+  x = 2040,
   y = 677,
   direction = 1,
 }
@@ -12261,7 +12288,7 @@ destination{
 dynamic_tile{
   name = "night_window_32",
   layer = 0,
-  x = 1864,
+  x = 1896,
   y = 600,
   pattern = "708",
   width = 32,
@@ -12272,7 +12299,7 @@ dynamic_tile{
 dynamic_tile{
   name = "night_window_22",
   layer = 0,
-  x = 2120,
+  x = 2152,
   y = 600,
   pattern = "709",
   width = 32,
@@ -12283,7 +12310,7 @@ dynamic_tile{
 npc{
   name = "npc_priest",
   layer = 0,
-  x = 2008,
+  x = 2040,
   y = 533,
   direction = 3,
   subtype = 1,
@@ -12546,7 +12573,7 @@ npc{
 npc{
   name = "npc_hylian_4",
   layer = 0,
-  x = 1968,
+  x = 2000,
   y = 613,
   direction = 1,
   subtype = 1,
@@ -12556,7 +12583,7 @@ npc{
 npc{
   name = "npc_hylian_5",
   layer = 0,
-  x = 2064,
+  x = 2096,
   y = 565,
   direction = 1,
   subtype = 1,
@@ -12630,6 +12657,16 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/hylian_25",
+}
+
+npc{
+  name = "npc_mayor",
+  layer = 0,
+  x = 1184,
+  y = 125,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/hylian_7",
 }
 
 tile{
@@ -12756,6 +12793,15 @@ tile{
   width = 16,
   height = 24,
   pattern = "567",
+}
+
+tile{
+  layer = 1,
+  x = 1656,
+  y = 592,
+  width = 24,
+  height = 16,
+  pattern = "486",
 }
 
 npc{
@@ -13157,8 +13203,8 @@ tile{
 
 tile{
   layer = 2,
-  x = 1640,
-  y = 512,
+  x = 1656,
+  y = 472,
   width = 24,
   height = 8,
   pattern = "573",
@@ -13168,7 +13214,7 @@ tile{
   layer = 2,
   x = 1480,
   y = 656,
-  width = 384,
+  width = 416,
   height = 144,
   pattern = "677",
 }
@@ -13177,7 +13223,7 @@ tile{
   layer = 2,
   x = 1704,
   y = 448,
-  width = 160,
+  width = 192,
   height = 208,
   pattern = "677",
 }
@@ -13202,7 +13248,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 1992,
+  x = 2024,
   y = 680,
   width = 32,
   height = 8,
@@ -13211,18 +13257,18 @@ tile{
 
 tile{
   layer = 2,
-  x = 2152,
+  x = 2184,
   y = 448,
-  width = 248,
+  width = 216,
   height = 240,
   pattern = "677",
 }
 
 tile{
   layer = 2,
-  x = 1864,
+  x = 1896,
   y = 688,
-  width = 1208,
+  width = 1176,
   height = 112,
   pattern = "677",
 }
@@ -13463,7 +13509,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 1968,
+  x = 2000,
   y = 440,
   width = 80,
   height = 32,
@@ -13510,7 +13556,7 @@ separator{
   layer = 2,
   x = 0,
   y = 368,
-  width = 2240,
+  width = 2272,
   height = 16,
 }
 
@@ -13588,7 +13634,7 @@ separator{
 
 separator{
   layer = 2,
-  x = 1784,
+  x = 1800,
   y = 384,
   width = 16,
   height = 336,
@@ -13660,7 +13706,7 @@ separator{
 
 separator{
   layer = 2,
-  x = 2224,
+  x = 2256,
   y = 384,
   width = 16,
   height = 336,

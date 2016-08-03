@@ -43,7 +43,7 @@ end
 
 function map:on_started(destination)
   local hero_x, hero_y = map:get_hero():get_position()
-  if hero_y < 1104 then  -- If coming from the south end of the map, fog is already present.
+  if hero_y < 1104 and game:get_time_of_day() ~= "night" then  -- If coming from the south end of the map, fog is already present.
     if game.deception_fog_overlay and poe_guided then
       sol.timer.start(game, 10, function()
         opacity = opacity + 1
@@ -106,44 +106,54 @@ end
 -- Starting the opacity higher compensates for the screen transition and makes the effect look right.
 function to_A3:on_activated()
   if poe_guided then opacity = 188 else opacity = 236 end
-  sol.timer.start(game, 10, function()
-    opacity = opacity - 1
-    game.deception_fog_overlay:set_opacity(opacity)
-    if opacity > 0 then return true
-    else game.deception_fog_overlay = nil end
-  end)
+  if game:get_time_of_day() ~= "night" then
+    sol.timer.start(game, 10, function()
+      opacity = opacity - 1
+      game.deception_fog_overlay:set_opacity(opacity)
+      if opacity > 0 then return true
+      else game.deception_fog_overlay = nil end
+    end)
+  end
 end
 
 function to_A3_2:on_activated()
   if poe_guided then opacity = 188 else opacity = 236 end
-  sol.timer.start(game, 10, function()
-    opacity = opacity - 1
-    game.deception_fog_overlay:set_opacity(opacity)
-    if opacity > 0 then return true
-    else game.deception_fog_overlay = nil end
-  end)
+  if game:get_time_of_day() ~= "night" then
+    sol.timer.start(game, 10, function()
+      opacity = opacity - 1
+      game.deception_fog_overlay:set_opacity(opacity)
+      if opacity > 0 then return true
+      else game.deception_fog_overlay = nil end
+    end)
+  end
 end
 
 function to_B2:on_activated()
   if poe_guided then opacity = 188 else opacity = 236 end
-  sol.timer.start(game, 10, function()
-    opacity = opacity - 1
-    game.deception_fog_overlay:set_opacity(opacity)
-    if opacity > 0 then return true
-    else game.deception_fog_overlay = nil end
-  end)
+  if game:get_time_of_day() ~= "night" then
+    sol.timer.start(game, 10, function()
+      opacity = opacity - 1
+      game.deception_fog_overlay:set_opacity(opacity)
+      if opacity > 0 then return true
+      else game.deception_fog_overlay = nil end
+    end)
+  end
 end
 
 function to_C3:on_activated()
   if poe_guided then opacity = 188 else opacity = 236 end
-  sol.timer.start(game, 10, function()
-    opacity = opacity - 1
-    game.deception_fog_overlay:set_opacity(opacity)
-    if opacity > 0 then return true
-    else game.deception_fog_overlay = nil end
-  end)
+  if game:get_time_of_day() ~= "night" then
+    sol.timer.start(game, 10, function()
+      opacity = opacity - 1
+      game.deception_fog_overlay:set_opacity(opacity)
+      if opacity > 0 then return true
+      else game.deception_fog_overlay = nil end
+    end)
+  end
 end
 
-function map:on_draw(dst_surface)
-  if game.deception_fog_overlay ~= nil then game.deception_fog_overlay:draw(dst_surface) end
+if game:get_time_of_day() ~= "night" then
+  function map:on_draw(dst_surface)
+    if game.deception_fog_overlay ~= nil then game.deception_fog_overlay:draw(dst_surface) end
+  end
 end

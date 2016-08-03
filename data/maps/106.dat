@@ -3781,6 +3781,17 @@ tile{
   pattern = "522",
 }
 
+dynamic_tile{
+  name = "night_sanctuary_door",
+  layer = 0,
+  x = 816,
+  y = 568,
+  pattern = "2172",
+  width = 32,
+  height = 16,
+  enabled_at_start = false,
+}
+
 sensor{
   name = "sanctuary_door_sensor",
   layer = 0,
@@ -3904,7 +3915,7 @@ teletransporter{
 }
 
 dynamic_tile{
-  name = "night_entrance_1",
+  name = "night_house_1_door",
   layer = 0,
   x = 296,
   y = 416,
@@ -3967,7 +3978,7 @@ sensor{
 }
 
 dynamic_tile{
-  name = "night_entrance_2",
+  name = "night_house_2_door",
   layer = 0,
   x = 392,
   y = 888,
@@ -4030,7 +4041,7 @@ sensor{
 }
 
 dynamic_tile{
-  name = "night_entrance_4",
+  name = "night_house_3_door",
   layer = 0,
   x = 872,
   y = 960,

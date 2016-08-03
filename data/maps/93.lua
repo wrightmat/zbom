@@ -7,6 +7,13 @@ local game = map:get_game()
 
 function map:on_started(destination)
   if not game:get_value("b2030") then quest_trading_fish:remove() end
+
+  -- Activate any night-specific dynamic tiles.
+  if game:get_time_of_day() == "night" then
+    for entity in game:get_map():get_entities("night_") do
+      entity:set_enabled(true)
+    end
+  end
 end
 
 function npc_zora_trading:on_interaction()

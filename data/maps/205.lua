@@ -1,6 +1,8 @@
 local map = ...
 local game = map:get_game()
 local warned = false
+local magic_counter = 0
+local draw_counter = 0
 
 local shadow = sol.surface.create(1696, 1760)
 local lights = sol.surface.create(1696, 1760)
@@ -13,39 +15,7 @@ lights:set_blend_mode("add")
 
 if game:get_value("i1029") == nil then game:set_value("i1029", 0) end
 
-function map:on_started(destination)
-  local magic_counter = 0
-  -- Only need to build the shadow surface once, but need to update the
-  -- statues periodically (not every draw cycle!) in case one is destroyed
-  glow_timer = sol.timer.start(map, 250, function()
-    shadow:clear()
-    shadow:fill_color({032,064,128,128})
-    lights:clear()
-    for e in map:get_entities("statue_") do
-      if e:get_distance(game:get_hero()) <= 300 then
-        local xx,yy = e:get_position()
-        local sp = sol.sprite.create("entities/torch_light")
-        sp:set_blend_mode("blend")
-        sp:draw(lights, xx-32, yy-40)
-      end
-    end
-    for e in map:get_entities("lava_") do
-      if e:get_distance(game:get_hero()) <= 300 then
-        local xx,yy = e:get_position()
-        local sp = sol.sprite.create("entities/torch_light_tile")
-        sp:set_blend_mode("blend")
-        sp:draw(lights, xx-8, yy-8)
-      end
-    end
-    -- Lantern more quickly drains magic here so you're forced to find ways to refill magic.
-    if magic_counter >= 20 then
-      game:remove_magic(1)
-      magic_counter = 0
-    end
-    magic_counter = magic_counter + 1
-    return true
-  end)
-  
+function map:on_started(destination) 
   if game:get_value("i1029") <= 4 then
     npc_goron_ghost:remove()
   elseif game:get_value("i1029") == 5 then
@@ -215,23 +185,50 @@ for enemy in map:get_entities("dodongo") do
 end
 
 function map:on_draw(dst_surface)
-  if not game:get_value("b1117") then -- If dungeon hasn't been defeated then the lights are out!
-    local x,y = map:get_camera():get_position()
-    local w,h = map:get_camera():get_size()
+  local x,y = map:get_camera():get_position()
+  local w,h = map:get_camera():get_size()
+  if not game:get_value("b1117") and draw_counter >= 15 then -- If dungeon hasn't been defeated then the lights are out! 
+    lights:clear()
+    shadow:fill_color({032,064,128,128})
+    for e in map:get_entities("statue_") do
+      if e:get_distance(game:get_hero()) <= 300 then
+        local xx,yy = e:get_position()
+        local sp = sol.sprite.create("entities/torch_light")
+        sp:set_blend_mode("blend")
+        sp:draw(lights, xx-32, yy-40)
+      end
+    end
+    for e in map:get_entities("lava_") do
+      if e:get_distance(game:get_hero()) <= 300 then
+        local xx,yy = e:get_position()
+        local sp = sol.sprite.create("entities/torch_light_tile")
+        sp:set_blend_mode("blend")
+        sp:draw(lights, xx-8, yy-8)
+      end
+    end
     
+    -- Lantern more quickly drains magic here so you're forced to find ways to refill magic.
+    if magic_counter >= 20 then
+      game:remove_magic(1)
+      magic_counter = 0
+    end
+    magic_counter = magic_counter + 1
+
     if game:has_item("lamp") and game:get_magic() > 0 then
       local xx,yy = map:get_entity("hero"):get_position()
       local sp = sol.sprite.create("entities/torch_light_hero")
       sp:set_blend_mode("blend")
       sp:draw(lights, xx-64, yy-64)
-    else
+      warned = false
+    elseif not warned then
       game:start_dialog("_cannot_see_need_magic")
       warned = true
     end
-    
-    lights:draw_region(x,y,w,h,shadow,x,y)
-    shadow:draw_region(x,y,w,h,dst_surface)
+    draw_counter = 0
   end
+  lights:draw_region(x,y,w,h,shadow,x,y)
+  shadow:draw_region(x,y,w,h,dst_surface)
+  draw_counter = draw_counter + 1
 end
 
 function chest_book:on_opened(item, variant, savegame_variable)

@@ -4807,6 +4807,17 @@ tile{
   pattern = "1792",
 }
 
+dynamic_tile{
+  name = "night_house4_door",
+  layer = 0,
+  x = 880,
+  y = 168,
+  pattern = "2172",
+  width = 16,
+  height = 16,
+  enabled_at_start = false,
+}
+
 teletransporter{
   name = "to_inside_house4",
   layer = 0,
@@ -4819,7 +4830,7 @@ teletransporter{
 }
 
 dynamic_tile{
-  name = "night_entrance",
+  name = "night_house2_door",
   layer = 0,
   x = 752,
   y = 840,
@@ -4889,7 +4900,7 @@ teletransporter{
 }
 
 dynamic_tile{
-  name = "house1_door",
+  name = "house2_door",
   layer = 0,
   x = 752,
   y = 840,
@@ -4911,7 +4922,7 @@ dynamic_tile{
 }
 
 dynamic_tile{
-  name = "door_3",
+  name = "house4_door",
   layer = 0,
   x = 880,
   y = 168,

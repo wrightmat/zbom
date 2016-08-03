@@ -34,6 +34,8 @@ function map:on_started(destination)
     for entity in game:get_map():get_entities("night_") do
       entity:set_enabled(true)
     end
+  else
+    npc_mayor:remove()
   end
   -- Mr. Write will be enabled after you've collected all the books. Will reward you with treasures (magic crystal mostly).
   if game:get_value("i1615") < 13 then
@@ -389,5 +391,17 @@ function npc_sanday:on_interaction()
   else
     game:start_dialog("sanday.0.house")
     game:set_value("sanday_spoken", true)
+  end
+end
+
+function npc_mayor:on_interaction()
+  if game:get_max_life() >= 40 and game:get_item("world_map"):get_variant() < 3 then
+    game:start_dialog("mayor.1.kasuto", function()
+      hero:start_treasure("world_map", 3)
+    end)
+  elseif game:get_max_life() < 40 then
+    game:start_dialog("mayor.0.kasuto")
+  else
+    game:start_dialog("mayor.2.kasuto")
   end
 end
