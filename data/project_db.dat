@@ -223,6 +223,7 @@ sprite{ id = "enemies/beamos_laser", description = "Beamos Laser" }
 sprite{ id = "enemies/beamos_particle", description = "Beamos Particle" }
 sprite{ id = "enemies/belahim", description = "Belahim (Boss)" }
 sprite{ id = "enemies/belahim_beam", description = "Belahim Beam" }
+sprite{ id = "enemies/belahim_shadow", description = "Belahim (Boss, Shadow form)" }
 sprite{ id = "enemies/boulder", description = "Boulder" }
 sprite{ id = "enemies/bubble_blue", description = "Blue Bubble" }
 sprite{ id = "enemies/bubble_green", description = "Green Bubble" }
@@ -871,6 +872,7 @@ enemy{ id = "bari_mini", description = "bari_mini" }
 enemy{ id = "bari_red", description = "Bari, Red" }
 enemy{ id = "beamos", description = "Beamos" }
 enemy{ id = "belahim", description = "Belahim (Boss)" }
+enemy{ id = "belahim_shadow", description = "Belahim (Boss, Shadow form)" }
 enemy{ id = "boulder", description = "Boulder" }
 enemy{ id = "bubble_blue", description = "Bubble, Blue (Water)" }
 enemy{ id = "bubble_green", description = "Bubble, Green (Poison)" }
