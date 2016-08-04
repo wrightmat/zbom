@@ -95,6 +95,13 @@ if miniboss_shadow_link ~= nil then
 end
 
 function sensor_boss:on_activated()
+  if boss_belahim ~= nil and game:get_value("b1190") then
+    boss_belahim:set_enabled(true)
+    sol.audio.play_music("boss")
+    map:close_doors("boss_door")
+    map:remove_entities("wallmaster") -- Don't want hero taken during boss fight.
+    game:set_value("final_boss_active", true)
+  end
   if boss_zirna ~= nil and game:get_value("dungeon_8_explored_1b_complete") then
     boss_zirna:set_enabled(true)
     sol.audio.play_music("boss")
