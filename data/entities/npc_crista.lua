@@ -1,6 +1,7 @@
 local entity = ...
 local game = entity:get_game()
 local map = entity:get_game():get_map()
+local last_speak = 0
 
 -- Crista is a major NPC who lives in Ordon and makes/sells
 -- potions. Childhood friend and potential love interest of our hero.
@@ -90,15 +91,17 @@ function entity:on_interaction()
           game:start_dialog("crista.0.potion_work_yes", function()
             game:set_value("i2021", 1) -- Start potion counter.
             map:get_entity("quest_trading_potion"):remove()
-	  end)
+          end)
         else
           game:start_dialog("crista.0.potion_work_no")
         end
       end)
     end
-  elseif game:get_value("i1631") >= 7 then
+  elseif game:get_value("i1631") >= 7 and last_speak ~= 1 then
+    last_speak = 1
     game:start_dialog("crista.5.shop_progress")  -- Progress on plants fetch quest.
   elseif game:get_value("i1847") >= 25 and game:get_value("i2015") < 10 then  -- Has enough deku sticks for blue potion (and hasn't been made before).
+    last_speak = 2
     if game:get_value("i2015") >= 1 then
       game:start_dialog("crista.0.potion_work", function()
         if game:get_value("i2015") < 10 then game:set_value("i2015", game:get_value("i2015")+1) end
@@ -108,13 +111,14 @@ function entity:on_interaction()
         if answer == 1 then
           game:start_dialog("crista.0.potion_work_yes", function()
             game:set_value("i2015", 1) -- Start potion counter.
-	  end)
+          end)
         else
           game:start_dialog("crista.0.potion_work_no")
         end
       end)
     end
   elseif game:get_value("i1847") >= 10 and game:get_value("i2014") < 10 then  -- Has enough deku sticks for green potion (and hasn't been made before).
+    last_speak = 2
     if game:get_value("i2014") >= 1 then
       game:start_dialog("crista.0.potion_work", function()
         if game:get_value("i2014") < 10 then game:set_value("i2014", game:get_value("i2014")+1) end
@@ -124,13 +128,14 @@ function entity:on_interaction()
         if answer == 1 then
           game:start_dialog("crista.0.potion_work_yes", function()
             game:set_value("i2014", 1) -- Start potion counter.
-	  end)
+          end)
         else
           game:start_dialog("crista.0.potion_work_no")
         end
       end)
     end
   else
+    last_speak = 3
     local rand = math.random(6)
     if rand == 1 and game:get_item("trading"):get_variant() < 1 then
       -- Randomly mention the mushroom on occasion (if not already obtained) or deku sticks.
