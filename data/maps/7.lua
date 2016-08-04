@@ -1,5 +1,6 @@
 local map = ...
 local game = map:get_game()
+local anouki_talk = 0
 
 ---------------------
 -- Inside Snowpeak --

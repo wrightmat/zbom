@@ -2437,7 +2437,7 @@ npc{
   name = "npc_rito_1",
   layer = 0,
   x = 656,
-  y = 789,
+  y = 797,
   direction = 3,
   subtype = 1,
   sprite = "npc/rito",
@@ -5391,6 +5391,45 @@ dynamic_tile{
   width = 8,
   height = 64,
   enabled_at_start = false,
+}
+
+wall{
+  layer = 1,
+  x = 80,
+  y = 816,
+  width = 32,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 80,
+  y = 824,
+  width = 8,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 104,
+  y = 824,
+  width = 8,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{
