@@ -30,6 +30,9 @@ function map:on_started(destination)
     for entity in game:get_map():get_entities("night_") do
       entity:set_enabled(true)
     end
+    for entity in game:get_map():get_entities("windows_") do
+      entity:set_enabled(true)
+    end
   end
 end
 

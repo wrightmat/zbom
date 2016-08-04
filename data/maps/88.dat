@@ -975,15 +975,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 48,
-  y = 1056,
-  width = 16,
-  height = 16,
-  pattern = "1",
-}
-
-tile{
-  layer = 0,
   x = 272,
   y = 960,
   width = 16,
@@ -2880,6 +2871,17 @@ enemy{
   direction = 3,
   breed = "chuchu_white",
   treasure_name = "random_north",
+}
+
+custom_entity{
+  layer = 0,
+  x = 56,
+  y = 1069,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/soil_snow",
+  model = "soil",
 }
 
 tile{

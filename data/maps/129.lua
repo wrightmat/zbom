@@ -1,4 +1,5 @@
 local map = ...
+local game = map:get_game()
 
 --------------------------------------------
 -- Outside World L1 (Darunia Town/Market) --
@@ -20,5 +21,13 @@ function map:on_started()
     for entity in game:get_map():get_entities("night_") do
       entity:set_enabled(true)
     end
+    -- Market is closed at night.
+    goron_2:remove()
+    goron_3:remove()
+    market_plume:remove()
+    if market_bottle ~= nil then market_bottle:remove() end
+    market_stick:remove()
+    market_bombs:remove()
+    market_pumpkin:remove()
   end
 end

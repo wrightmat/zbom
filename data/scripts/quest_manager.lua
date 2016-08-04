@@ -78,7 +78,7 @@ local function initialize_enemies()
     -- Here, self is the enemy.
     local game = self:get_game()
     local sword = game:get_ability("sword")
-    local damage_factors = { 1, 2, 4, 8 }  -- Damage factor of each sword.
+    local damage_factors = { 1, 2, 5 }  -- Damage factor of each sword.
     local damage_factor = damage_factors[sword]
     if hero:get_state() == "sword spin attack" then
       game:remove_stamina(1)

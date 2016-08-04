@@ -22,7 +22,7 @@ local probabilities = {
   [{ "jade", 1}]        = 3,       -- Mystic Jade (rare drop item).
   [{ "stick", 1}]       = 3,      -- Deku Stick (rare drop item).
   [{ "amber", 1}]       = 3,      -- Goron Amber (rare drop item).
-  [{ "plume", 1 }]      = 3,    -- Goddess Plume (exceptionally rare drop item).
+  [{ "plume", 1 }]      = 4,    -- Goddess Plume (very rare drop item).
   [{ "crystal", 1 }]    = 5,    -- Magic Crystal (fairly rare drop item, only found in North Hyrule).
 }
 
