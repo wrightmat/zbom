@@ -138,10 +138,10 @@ animation{
   src_image = "hero/hammer.tunic.png",
   frame_delay = 50,
   directions = {
-    { x = 0, y = 0, frame_width = 64, frame_height = 48, origin_x = 32, origin_y = 40, num_frames = 7 },
+    { x = 0, y = 0, frame_width = 64, frame_height = 48, origin_x = 32, origin_y = 32, num_frames = 7 },
     { x = 0, y = 48, frame_width = 64, frame_height = 48, origin_x = 32, origin_y = 40, num_frames = 7 },
-    { x = 0, y = 96, frame_width = 64, frame_height = 48, origin_x = 32, origin_y = 40, num_frames = 7 },
-    { x = 0, y = 144, frame_width = 64, frame_height = 48, origin_x = 32, origin_y = 40, num_frames = 7 },
+    { x = 0, y = 96, frame_width = 64, frame_height = 48, origin_x = 32, origin_y = 32, num_frames = 7 },
+    { x = 0, y = 144, frame_width = 64, frame_height = 48, origin_x = 32, origin_y = 24, num_frames = 7 },
   },
 }
 animation{
