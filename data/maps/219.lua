@@ -30,7 +30,9 @@ function map:on_started(destination)
       map:get_camera():start_tracking(shadow_link)
       sol.audio.play_sound("poe_soul")
       game:start_dialog("shadow_link.sanctum_basement", game:get_player_name(), function()
-        game:get_hero():start_treasure("map", 1, "b1181") -- Give map so explored and non-explored rooms show correctly.
+        if not game:get_value("b1181") then
+          game:get_hero():start_treasure("map", 1, "b1181") -- Give map so explored and non-explored rooms show correctly.
+        end
         shadow_link:get_sprite():fade_out(50, function()
           map:get_camera():start_tracking(map:get_hero())
           enter_stairs_1:set_enabled(false)
