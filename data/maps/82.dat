@@ -2611,9 +2611,9 @@ dynamic_tile{
 teletransporter{
   name = "to_C14",
   layer = 0,
-  x = 0,
+  x = 128,
   y = 1120,
-  width = 1120,
+  width = 992,
   height = 16,
   transition = "scrolling",
   destination_map = "22",
@@ -2777,6 +2777,18 @@ custom_entity{
   height = 16,
   direction = 0,
   model = "ocarina_patch",
+}
+
+teletransporter{
+  name = "to_C14_2",
+  layer = 0,
+  x = 0,
+  y = 1120,
+  width = 80,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "22",
+  destination = "_side",
 }
 
 tile{

@@ -3,9 +3,9 @@ properties{
   y = 10089,
   width = 1120,
   height = 1120,
-  world = "outside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_world",
   tileset = "3",
   music = "gerudo",
 }
@@ -11451,36 +11451,36 @@ enemy{
 sensor{
   name = "sensor_lanmola_1",
   layer = 0,
-  x = 424,
-  y = 477,
-  width = 288,
+  x = 376,
+  y = 429,
+  width = 384,
   height = 16,
 }
 
 sensor{
   name = "sensor_lanmola_2",
   layer = 0,
-  x = 424,
-  y = 493,
+  x = 376,
+  y = 445,
   width = 16,
-  height = 256,
+  height = 352,
 }
 
 sensor{
   name = "sensor_lanmola_3",
   layer = 0,
-  x = 696,
-  y = 493,
+  x = 744,
+  y = 445,
   width = 16,
-  height = 256,
+  height = 352,
 }
 
 sensor{
   name = "sensor_lanmola_4",
   layer = 0,
-  x = 424,
-  y = 749,
-  width = 288,
+  x = 376,
+  y = 797,
+  width = 384,
   height = 16,
 }
 
@@ -11524,7 +11524,7 @@ enemy{
   name = "miniboss_lanmola",
   layer = 0,
   x = 568,
-  y = 597,
+  y = 605,
   direction = 0,
   breed = "lanmola",
   treasure_name = "heart_piece",

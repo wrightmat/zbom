@@ -11,7 +11,7 @@ end
 
 function sensor_lanmola_1:on_activated()
   -- This boss only activated if Pyramid is completed.
-  if minboss_lanmola and game:is_dungeon_finished(3) then
+  if miniboss_lanmola and game:is_dungeon_finished(3) then
     miniboss_lanmola:set_enabled(true)
     sol.audio.play_music("miniboss")
   end
