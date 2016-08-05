@@ -9223,7 +9223,7 @@ teletransporter{
   layer = 0,
   x = 888,
   y = 1120,
-  width = 48,
+  width = 32,
   height = 16,
   transition = "scrolling",
   destination_map = "14",
@@ -9271,6 +9271,15 @@ teletransporter{
   transition = "scrolling",
   destination_map = "23",
   destination = "_side",
+}
+
+tile{
+  layer = 2,
+  x = 792,
+  y = 968,
+  width = 48,
+  height = 24,
+  pattern = "1499",
 }
 
 tile{
@@ -11888,6 +11897,15 @@ tile{
   x = 880,
   y = 688,
   width = 96,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 736,
+  y = 872,
+  width = 48,
   height = 24,
   pattern = "1499",
 }

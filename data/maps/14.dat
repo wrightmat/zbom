@@ -8251,9 +8251,9 @@ destructible{
 teletransporter{
   name = "to_E14_2",
   layer = 0,
-  x = 888,
+  x = 904,
   y = -16,
-  width = 48,
+  width = 32,
   height = 16,
   transition = "scrolling",
   destination_map = "15",
@@ -8335,6 +8335,33 @@ dynamic_tile{
   width = 16,
   height = 16,
   enabled_at_start = false,
+}
+
+tile{
+  layer = 2,
+  x = 928,
+  y = 0,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 808,
+  y = 160,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 664,
+  y = 160,
+  width = 48,
+  height = 24,
+  pattern = "1499",
 }
 
 tile{
@@ -11410,6 +11437,33 @@ tile{
   layer = 2,
   x = 384,
   y = 896,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 864,
+  y = 32,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 936,
+  y = 24,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 1048,
+  y = 32,
   width = 48,
   height = 24,
   pattern = "1499",
