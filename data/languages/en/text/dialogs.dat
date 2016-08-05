@@ -9038,7 +9038,7 @@ dialog{
   text = [[
 Hmm... never been too good with
 small talk. $0
-Seen any good  $r metal ore$w recently?
+Seen any good  $r metal ore$wrecently?
 ]]
 }
 
@@ -9072,6 +9072,23 @@ dialog{
 Just so you know, I could probably
 improve your sword if you were able
 to find me the right materials.
+]]
+}
+
+dialog{
+  id = "rudy.4.cave_work_2",
+  text = [[
+Sorry, I think I've done all the
+work I can for you right now!
+]]
+}
+
+dialog{
+  id = "rudy.4.cave_work_3",
+  text = [[
+Sorry, I think I've done all the work
+I can for you right now.$0 That's a
+great sword you have though!
 ]]
 }
 

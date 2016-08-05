@@ -41,6 +41,7 @@ function game:on_finished()
   self:quit_dialog_box()
   camera = nil
   -- Print amount of time played
+  game:calculate_percent_complete()
   local time = game:get_value("time_played")
   local hours = math.floor(time / 3600)
   local minutes = math.floor((time % 3600) / 60)

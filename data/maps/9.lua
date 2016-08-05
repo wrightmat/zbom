@@ -105,7 +105,11 @@ function npc_rudy:on_interaction()
       -- quest complete
       game:start_dialog("rudy.4.cave", function(answer)
         if answer == 1 then -- Work.
-          game:start_dialog("rudy.4.cave_work")
+          if game:get_value("i1841") == 3 then
+            game:start_dialog("rudy.4.cave_work_3")
+          elseif game:get_value("i1841") == 2 then
+            game:start_dialog("rudy.4.cave_work_2")
+          else game:start_dialog("rudy.4.cave_work") end
         else -- Chat.
           local rand = math.random(3)
           if rand == last_rand then rand = math.random(3) end
