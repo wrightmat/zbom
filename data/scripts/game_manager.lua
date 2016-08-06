@@ -33,6 +33,7 @@ function game:on_started()
     return true  -- Repeat the timer.
   end)
   chron_timer:set_suspended_with_map(false)
+  game:calculate_percent_complete()
 end
 
 function game:on_finished()
@@ -41,7 +42,6 @@ function game:on_finished()
   self:quit_dialog_box()
   camera = nil
   -- Print amount of time played
-  game:calculate_percent_complete()
   local time = game:get_value("time_played")
   local hours = math.floor(time / 3600)
   local minutes = math.floor((time % 3600) / 60)
@@ -121,7 +121,7 @@ end
 
 function game:calculate_percent_complete()
   -- 100 total values = 100 percent.
-  -- 32 values for heart pieces, 12 for trading sequence, 16 for warp points, 30 for misc. sidequests/items, 10 for ???
+  -- 32 values for heart pieces, 12 for trading sequence, 16 for warp points, 30 for misc. sidequests/items, 10 for misc.
   local percent_complete = (game:get_value("b1701") and 1 or 0) +
     (game:get_value("b1702") and 1 or 0) + (game:get_value("b1703") and 1 or 0) + 
     (game:get_value("b1704") and 1 or 0) + (game:get_value("b1705") and 1 or 0) + 
@@ -148,7 +148,7 @@ function game:calculate_percent_complete()
     (game:get_value("b1508") and 1 or 0) + (game:get_value("b1509") and 1 or 0) +
     (game:get_value("b1510") and 1 or 0) + (game:get_value("b1511") and 1 or 0) +
     (game:get_value("b1512") and 1 or 0) + (game:get_value("b1513") and 1 or 0) +
-    (game:get_value("b1514") and 1 or 0) + (game:get_value("b1515") and 1 or 0) -- Warp points above here.
+    (game:get_value("b1514") and 1 or 0) + (game:get_value("b1515") and 1 or 0) -- Warp points here.
 
     if game:get_value("i1602")==nil then game:set_value("i1602", 0) end
     if game:get_value("i1603")==nil then game:set_value("i1603", 0) end
@@ -159,26 +159,26 @@ function game:calculate_percent_complete()
     if game:get_value("i1608")==nil then game:set_value("i1608", 0) end
     if game:get_value("i1609")==nil then game:set_value("i1609", 0) end -- Sidequests below here.
 
-    if game:get_value("i1602") >= 6 then percent_complete = percent_complete + 2 end  -- Gaira/Deacon
+    if game:get_value("i1602") >= 6 then percent_complete = percent_complete + 1 end  -- Gaira/Deacon
     if game:get_value("i1603") >= 5 then percent_complete = percent_complete + 2 end  -- Great Fairy Mystic Jade
     if game:get_value("i1604") >= 5 then percent_complete = percent_complete + 2 end  -- Great Fairy Goron Amber
     if game:get_value("i1605") >= 5 then percent_complete = percent_complete + 2 end  -- Great Fairy Alchemy Stone
     if game:get_value("i1606") >= 5 then percent_complete = percent_complete + 2 end  -- Great Fairy Goddess Plume
     if game:get_value("i1607") >= 5 then percent_complete = percent_complete + 2 end  -- Great Fairy Subrosian Ore
     if game:get_value("i1608") >= 5 then percent_complete = percent_complete + 2 end  -- Great Fairy Magic Crystal
-    if game:get_value("i1609") >= 50 then percent_complete = percent_complete + 2 end  -- Cave of Ordeals
-    if game:get_value("b1810") then percent_complete = percent_complete + 2 end  -- Bottle 1 (Rudy)
-    if game:get_value("b1811") then percent_complete = percent_complete + 2 end  -- Bottle 2 (Relic Collector)
-    if game:get_value("b1812") then percent_complete = percent_complete + 2 end  -- Bottle 3 (Kakariko Thief)
-    if game:get_value("b1813") then percent_complete = percent_complete + 2 end  -- Bottle 4
-    if game:get_value("b1838") then percent_complete = percent_complete + 2 end  -- Shovel
-    if game:get_value("b1839") then percent_complete = percent_complete + 2 end  -- Hammer
+    if game:get_value("i1609") >= 50 then percent_complete = percent_complete + 1 end  -- Cave of Ordeals
+    if game:get_value("i1810") ~= nil then percent_complete = percent_complete + 2 end  -- Bottle 1 (Rudy)
+    if game:get_value("i1811") ~= nil then percent_complete = percent_complete + 2 end  -- Bottle 2 (Relic Collector)
+    if game:get_value("i1812") ~= nil then percent_complete = percent_complete + 2 end  -- Bottle 3 (Kakariko Thief)
+    if game:get_value("i1813") ~= nil then percent_complete = percent_complete + 2 end  -- Bottle 4 (Goron Market)
+    if game:get_value("i1838") ~= nil then percent_complete = percent_complete + 2 end  -- Shovel
+    if game:get_value("i1839") ~= nil then percent_complete = percent_complete + 2 end  -- Hammer
     if game:get_value("b1699") then percent_complete = percent_complete + 2 end  -- Main Quest
 
     -- Last 10% is misc.
     percent_complete = percent_complete + (game:get_value("i1822") - 1) * 2  -- Tunics (up to 6 points possible for 3 additional tunics)
-    if game:get_value("i1615") >= 13 then percent_complete = percent_complete + 1 end  -- Books fetch quest
-    if game:get_value("i1631") >= 16 then percent_complete = percent_complete + 1 end  -- Plants fetch quest
+    if game:get_value("i1615") >= 13 then percent_complete = percent_complete + 2 end  -- Books fetch quest
+    if game:get_value("i1631") >= 16 then percent_complete = percent_complete + 2 end  -- Plants fetch quest
     if game:get_value("i1823") >= 3 then percent_complete = percent_complete + 1 end  -- Fully upgraded world map
     if game:get_value("i1841") >= 4 then percent_complete = percent_complete + 1 end  -- Master Ore obtained
 

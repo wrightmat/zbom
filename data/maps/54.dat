@@ -3106,6 +3106,51 @@ tile{
   pattern = "910",
 }
 
+tile{
+  layer = 0,
+  x = 504,
+  y = 1048,
+  width = 16,
+  height = 16,
+  pattern = "272",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 1032,
+  width = 16,
+  height = 16,
+  pattern = "272",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 1064,
+  width = 16,
+  height = 16,
+  pattern = "272",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 1080,
+  width = 16,
+  height = 16,
+  pattern = "272",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 1112,
+  width = 16,
+  height = 16,
+  pattern = "272",
+}
+
 teletransporter{
   name = "to_E5",
   layer = 0,
@@ -3123,7 +3168,7 @@ teletransporter{
   layer = 0,
   x = 0,
   y = 1120,
-  width = 1120,
+  width = 480,
   height = 16,
   transition = "scrolling",
   destination_map = "62",
@@ -3329,6 +3374,18 @@ enemy{
   direction = 3,
   breed = "chuchu_white",
   treasure_name = "random",
+}
+
+teletransporter{
+  name = "to_D6_2",
+  layer = 0,
+  x = 600,
+  y = 1120,
+  width = 528,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "62",
+  destination = "_side",
 }
 
 tile{

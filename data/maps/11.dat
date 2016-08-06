@@ -13060,16 +13060,6 @@ destination{
   direction = 3,
 }
 
-npc{
-  name = "npc_gaira",
-  layer = 0,
-  x = 528,
-  y = 421,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/hylian_gaira",
-}
-
 dynamic_tile{
   name = "banner_race_3",
   layer = 0,
@@ -13291,6 +13281,18 @@ dynamic_tile{
   width = 16,
   height = 16,
   enabled_at_start = false,
+}
+
+custom_entity{
+  name = "npc_gaira",
+  layer = 0,
+  x = 528,
+  y = 421,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/hylian_gaira",
+  model = "npc_gaira",
 }
 
 tile{

@@ -7816,16 +7816,6 @@ npc{
   sprite = "entities/sign",
 }
 
-npc{
-  name = "npc_gaira",
-  layer = 0,
-  x = 152,
-  y = 645,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/hylian_gaira",
-}
-
 teletransporter{
   name = "to_fairy",
   layer = 0,
@@ -7858,6 +7848,153 @@ destructible{
   destruction_sound = "bush",
   weight = 1,
   can_be_cut = true,
+}
+
+custom_entity{
+  name = "npc_gaira",
+  layer = 0,
+  x = 160,
+  y = 645,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/hylian_gaira",
+  model = "npc_gaira",
+}
+
+tile{
+  layer = 2,
+  x = 48,
+  y = 456,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 104,
+  y = 488,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 144,
+  y = 512,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 240,
+  y = 552,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 256,
+  y = 664,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 144,
+  y = 848,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 232,
+  y = 880,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 344,
+  y = 864,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 224,
+  y = 768,
+  width = 96,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 416,
+  y = 800,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 432,
+  y = 752,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 256,
+  y = 912,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 416,
+  y = 600,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 456,
+  y = 424,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 264,
+  y = 368,
+  width = 48,
+  height = 24,
+  pattern = "1499",
 }
 
 tile{

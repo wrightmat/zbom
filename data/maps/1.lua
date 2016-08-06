@@ -177,7 +177,6 @@ function map:on_started(destination)
 end
 
 function npc_ulo:on_interaction()
-  game:set_dialog_style("default")
   if game:get_value("b1117") and game:get_value("i1030") < 2 then
     game:start_dialog("ulo.5.ordon", game:get_player_name())
   elseif game:get_value("i1029") >= 6 then
@@ -187,41 +186,7 @@ function npc_ulo:on_interaction()
   end
 end
 
-function npc_deacon:on_interaction()
-  game:set_dialog_style("default")
-  if game:get_value("i1602") == 3 then
-    game:start_dialog("deacon.3.house", function()
-      game:set_value("i1602", 4)
-    end)
-  elseif game:get_value("i1602") == 6 then
-    game:start_dialog("deacon.5.faron", game:get_player_name())
-  else
-    if game:get_value("i1913") >= 3 and not game:get_value("b1134") then
-      game:start_dialog("deacon.6.house", function()
-	game:set_value("i1030", 1)
-      end)
-    else
-      game:start_dialog("deacon.0.faron")
-      game:set_value("i1913", game:get_value("i1913")+1)
-    end
-  end
-end
-
-function npc_gaira:on_interaction()
-  game:set_dialog_style("default")
-  if not game:get_value("b1722") then
-    game:start_dialog("gaira.5.faron", game:get_player_name(), function()
-      hero:start_treasure("heart_piece", 1, "b1722")
-    end)
-  elseif game:get_value("i1030") < 2 then
-    game:start_dialog("gaira.6.house")
-  else
-    game:start_dialog("gaira.5.forest")
-  end
-end
-
 function npc_impa:on_interaction()
-  game:set_dialog_style("default")
   if game:get_value("b2025") then
     game:start_dialog("impa.0.trading", function(answer)
       if answer == 1 then
@@ -365,7 +330,6 @@ function shelf_1:on_interaction()
 end
 
 function npc_shopkeeper:on_interaction()
-  game:set_dialog_style("default")
   if math.random(4) == 1 and game:get_item("rupee_bag"):get_variant() < 2 then
     -- Randomly mention the bigger wallet.
     game:start_dialog("shopkeep.1")

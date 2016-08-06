@@ -5966,26 +5966,6 @@ destructible{
   can_be_cut = true,
 }
 
-npc{
-  name = "npc_deacon",
-  layer = 0,
-  x = 392,
-  y = 853,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/hylian_deacon",
-}
-
-npc{
-  name = "npc_gaira",
-  layer = 0,
-  x = 16,
-  y = 781,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/hylian_gaira",
-}
-
 wall{
   layer = 0,
   x = 96,
@@ -6041,6 +6021,30 @@ dynamic_tile{
   width = 24,
   height = 16,
   enabled_at_start = false,
+}
+
+custom_entity{
+  name = "npc_gaira",
+  layer = 0,
+  x = 16,
+  y = 781,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/hylian_gaira",
+  model = "npc_gaira",
+}
+
+custom_entity{
+  name = "npc_deacon",
+  layer = 0,
+  x = 392,
+  y = 853,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/hylian_deacon",
+  model = "npc_deacon",
 }
 
 tile{

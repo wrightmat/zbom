@@ -109,7 +109,9 @@ function map:on_started(destination)
     torch_2:get_sprite():set_animation("lit")
     torch_3:get_sprite():set_animation("lit")
   end
-  if game:get_value("i1911") ~= 2 then quest_gaira:remove() end -- Poisoned trees Deacon side quest.
+  -- Poisoned trees Deacon-Gaira side quest.
+  if game:get_value("i1911") ~= 2 then quest_gaira:remove() end
+  if game:get_value("i1602") > 2 then npc_gaira:remove() end
 
   local on_update_timer = sol.timer.start(map, 100, function()
     -- We do this in place of on_update so we don't break the night overlay.
@@ -294,24 +296,6 @@ function npc_tristan:on_interaction()
       else
         game:start_dialog("tristan.0.festival_no")
       end
-    end)
-  end
-end
-
-function npc_gaira:on_interaction()
-  game:set_dialog_style("default")
-  if game:get_value("i1911") == 1 then
-    game:start_dialog("gaira.1.ordon", function()
-      game:set_value("i1911", game:get_value("i1911")+1)
-    end)
-  elseif game:get_value("i1911") == 2 then
-    game:start_dialog("gaira.2.ordon", function()
-      game:set_value("i1911", game:get_value("i1911")+1)
-      game:set_value("i1602", 1)
-    end)
-  else
-    game:start_dialog("gaira.0.ordon", function()
-      game:set_value("i1911", game:get_value("i1911")+1)
     end)
   end
 end

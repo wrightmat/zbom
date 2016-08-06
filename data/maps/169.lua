@@ -527,7 +527,7 @@ end
 
 function room5_dest:on_activated()
   game:set_value("i1609", game:get_value("i1609")+1)
-  if game:get_value("i1609") >= 50 then hero:transport(169, "treasure_dest") end
+  if game:get_value("i1609") >= 50 then hero:teleport(169, "treasure_dest") end
 end
 
 function room5_exit:on_activated()

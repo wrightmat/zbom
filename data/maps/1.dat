@@ -5945,26 +5945,6 @@ npc{
   sprite = "npc/ordon_ulo",
 }
 
-npc{
-  name = "npc_deacon",
-  layer = 0,
-  x = 632,
-  y = 877,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/hylian_deacon",
-}
-
-npc{
-  name = "npc_gaira",
-  layer = 0,
-  x = 704,
-  y = 845,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/hylian_gaira",
-}
-
 dynamic_tile{
   name = "night_window",
   layer = 0,
@@ -6304,6 +6284,30 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/ordon_tern",
+}
+
+custom_entity{
+  name = "npc_gaira",
+  layer = 0,
+  x = 704,
+  y = 845,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/hylian_gaira",
+  model = "npc_gaira",
+}
+
+custom_entity{
+  name = "npc_deacon",
+  layer = 0,
+  x = 624,
+  y = 877,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/hylian_deacon",
+  model = "npc_deacon",
 }
 
 tile{
