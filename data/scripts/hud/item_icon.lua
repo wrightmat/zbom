@@ -32,7 +32,6 @@ function item_icon:initialize(game, slot)
 end
 
 function item_icon:check()
-
   local need_rebuild = false
 
   -- Item assigned.
@@ -88,7 +87,6 @@ function item_icon:check()
 end
 
 function item_icon:rebuild_surface()
-
   self.surface:clear()
 
   -- Background image.
@@ -115,8 +113,14 @@ function item_icon:set_dst_position(x, y)
   self.dst_y = y
 end
 
-function item_icon:on_draw(dst_surface)
+function item_icon:on_mouse_pressed(button, x, y)
+  if (x > self.dst_x) and (x < self.dst_x + 24) and (y > self.dst_y) and (y < self.dst_y + 24) then
+    local command = "item_" .. self.slot
+    self.game:simulate_command_pressed(command)
+  end
+end
 
+function item_icon:on_draw(dst_surface)
   if not self.game:is_dialog_enabled() then
     local x, y = self.dst_x, self.dst_y
     local width, height = dst_surface:get_size()

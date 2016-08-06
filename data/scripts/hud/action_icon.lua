@@ -31,7 +31,6 @@ function action_icon_builder:new(game)
   end
 
   function action_icon:compute_icon_region_y()
-
     local y
     if action_icon.effect_displayed ~= nil then
       -- Create an icon with the name of the current effect.
@@ -107,6 +106,14 @@ function action_icon_builder:new(game)
   function action_icon:set_dst_position(x, y)
     action_icon.dst_x = x
     action_icon.dst_y = y
+  end
+
+  function action_icon:on_mouse_pressed(button, x, y)
+    if (x > action_icon.dst_x + 24) and (x < action_icon.dst_x + 48) and (y > action_icon.dst_y) and (y < action_icon.dst_y + 24) then
+      if action_icon.effect_displayed ~= nil then
+        game:simulate_command_pressed("action")
+      end
+    end
   end
 
   function action_icon:on_draw(dst_surface)

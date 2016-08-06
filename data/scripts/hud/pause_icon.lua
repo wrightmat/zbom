@@ -69,8 +69,13 @@ function pause_icon:set_dst_position(x, y)
   self.dst_y = y
 end
 
-function pause_icon:on_draw(dst_surface)
+function pause_icon:on_mouse_pressed(button, x, y)
+  if (x > self.dst_x + 24) and (x < self.dst_x + 48) and (y > self.dst_y) and (y < self.dst_y + 24) then
+    self.game:simulate_command_pressed("pause")
+  end
+end
 
+function pause_icon:on_draw(dst_surface)
   if not self.game:is_dialog_enabled() then
     local x, y = self.dst_x, self.dst_y
     local width, height = dst_surface:get_size()

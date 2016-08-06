@@ -113,6 +113,17 @@ function attack_icon_builder:new(game)
     attack_icon.dst_y = y
   end
 
+  function attack_icon:on_mouse_pressed(button, x, y)
+    if (x > attack_icon.dst_x + 24) and (x < attack_icon.dst_x + 48) and (y > attack_icon.dst_y) and (y < attack_icon.dst_y + 24) then
+      game:simulate_command_pressed("attack")
+    end
+  end
+  function attack_icon:on_mouse_released(button, x, y)
+    if (x > attack_icon.dst_x + 24) and (x < attack_icon.dst_x + 48) and (y > attack_icon.dst_y) and (y < attack_icon.dst_y + 24) then
+      game:simulate_command_released("attack")
+    end
+  end
+
   function attack_icon:on_draw(dst_surface)
     local x, y = attack_icon.dst_x, attack_icon.dst_y
     local width, height = dst_surface:get_size()
