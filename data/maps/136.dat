@@ -2768,6 +2768,28 @@ custom_entity{
   model = "quest_plants",
 }
 
+npc{
+  name = "torch_2",
+  layer = 0,
+  x = 96,
+  y = 229,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/torch_metal",
+  behavior = "item#lamp",
+}
+
+npc{
+  name = "torch_3",
+  layer = 0,
+  x = 416,
+  y = 229,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/torch_metal",
+  behavior = "item#lamp",
+}
+
 tile{
   layer = 2,
   x = 680,

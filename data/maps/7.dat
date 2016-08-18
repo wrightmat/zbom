@@ -2598,6 +2598,17 @@ npc{
   sprite = "npc/snowpeak_anouki",
 }
 
+npc{
+  name = "torch_1",
+  layer = 0,
+  x = 128,
+  y = 517,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/torch_lantern",
+  behavior = "item#lamp",
+}
+
 tile{
   layer = 1,
   x = 40,

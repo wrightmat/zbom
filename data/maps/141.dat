@@ -2097,6 +2097,17 @@ chest{
   sprite = "entities/chest",
 }
 
+npc{
+  name = "torch_2",
+  layer = 0,
+  x = 80,
+  y = 685,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/torch_metal",
+  behavior = "item#lamp",
+}
+
 tile{
   layer = 2,
   x = 160,

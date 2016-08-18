@@ -6771,6 +6771,17 @@ dynamic_tile{
   enabled_at_start = false,
 }
 
+npc{
+  name = "torch_1",
+  layer = 0,
+  x = 168,
+  y = 1421,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/torch_lantern",
+  behavior = "item#lamp",
+}
+
 tile{
   layer = 1,
   x = 192,

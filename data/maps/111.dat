@@ -1876,7 +1876,7 @@ tile{
 tile{
   layer = 0,
   x = 944,
-  y = 184,
+  y = 192,
   width = 16,
   height = 16,
   pattern = "1794",
@@ -2231,15 +2231,6 @@ tile{
   width = 64,
   height = 32,
   pattern = "1802",
-}
-
-tile{
-  layer = 0,
-  x = 248,
-  y = 104,
-  width = 16,
-  height = 16,
-  pattern = "1450",
 }
 
 tile{
@@ -2677,11 +2668,11 @@ npc{
 npc{
   name = "sign",
   layer = 0,
-  x = 256,
+  x = 312,
   y = 117,
   direction = 3,
   subtype = 1,
-  sprite = "entities/sign",
+  sprite = "entities/sign_stone",
   behavior = "dialog#sign.kings_tomb",
 }
 
@@ -2898,6 +2889,17 @@ npc{
   subtype = 0,
   sprite = "entities/torch_candle",
   behavior = "item#lamp",
+}
+
+npc{
+  name = "sign_2",
+  layer = 0,
+  x = 936,
+  y = 125,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/sign_stone",
+  behavior = "dialog#sign.kings_tomb",
 }
 
 tile{

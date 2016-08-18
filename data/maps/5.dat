@@ -3345,6 +3345,17 @@ custom_entity{
   model = "npc_generic",
 }
 
+npc{
+  name = "torch_1",
+  layer = 0,
+  x = 912,
+  y = 445,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/torch_lantern",
+  behavior = "item#lamp",
+}
+
 tile{
   layer = 1,
   x = 72,

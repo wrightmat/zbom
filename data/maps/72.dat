@@ -10079,6 +10079,39 @@ custom_entity{
   model = "ocarina_patch",
 }
 
+npc{
+  name = "torch_2",
+  layer = 0,
+  x = 72,
+  y = 213,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/torch_metal",
+  behavior = "item#lamp",
+}
+
+npc{
+  name = "torch_3",
+  layer = 0,
+  x = 120,
+  y = 421,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/torch_metal",
+  behavior = "item#lamp",
+}
+
+npc{
+  name = "torch_4",
+  layer = 0,
+  x = 32,
+  y = 1021,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/torch_metal",
+  behavior = "item#lamp",
+}
+
 tile{
   layer = 2,
   x = 96,
