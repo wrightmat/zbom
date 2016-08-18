@@ -3869,6 +3869,26 @@ custom_entity{
   model = "tree_apple",
 }
 
+npc{
+  name = "npc_squirrel_1",
+  layer = 0,
+  x = 552,
+  y = 349,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/squirrel",
+}
+
+npc{
+  name = "npc_squirrel_2",
+  layer = 0,
+  x = 912,
+  y = 741,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/squirrel",
+}
+
 tile{
   layer = 1,
   x = 408,
