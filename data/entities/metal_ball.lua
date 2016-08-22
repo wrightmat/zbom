@@ -7,4 +7,8 @@ function entity:on_custom_created()
   self.can_push_buttons = true
   self.moved_on_platform = false
   self.hurt_damage = 2
+  self.num_bounces = 2
+  self.bounce_distances = {60, 8}
+  self.bounce_durations = {300, 100}
+  self.bounce_heights = {"same", 3}
 end
