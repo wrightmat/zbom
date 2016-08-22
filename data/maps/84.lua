@@ -1,13 +1,12 @@
 local map = ...
 local game = map:get_game()
-local woods_overlay = nil
 
 --------------------------------------------------------------
 -- Outside World (Lost Woods - Interloper Sanctum Entrance) --
 --------------------------------------------------------------
 
-woods_overlay = sol.surface.create("effects/woods.png")
-woods_overlay:set_opacity(255)
+screen_overlay = sol.surface.create("effects/woods.png")
+screen_overlay:set_opacity(255)
 
 local function send_hero(from_sensor, to_sensor)
   local hero_x, hero_y = hero:get_position()
@@ -64,14 +63,8 @@ function npc_deku_1:on_interaction()
   end
 end
 
-function map:on_draw(dst_surface)
-  if woods_overlay ~= nil then
-    woods_overlay:draw(dst_surface)
-  end
-end
-
 function map:on_finished()
-  if woods_overlay then woods_overlay = nil end
+  if screen_overlay then screen_overlay = nil end
 end
 
 function signpost_credits:on_interaction()

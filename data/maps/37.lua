@@ -25,11 +25,12 @@ function trading()
 end
 
 function npc_deku_1:on_interaction()
-  game:set_dialog_style("default")
   if game:get_value("b2022") then
     trading()
   else
-    if game:get_value("i1807") == 7 then
+    if game:get_value("b1699") then
+      game:start_dialog("deku.4.lost_woods")
+    elseif game:get_value("i1807") == 7 then
       game:start_dialog("deku.2.lost_woods")
     else
       game:start_dialog("deku.0.lost_woods")

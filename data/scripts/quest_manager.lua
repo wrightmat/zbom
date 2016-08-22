@@ -191,6 +191,7 @@ local function initialize_maps()
   lights:set_blend_mode("add")
   local heat_timer, swim_timer, draw_counter, magic_counter, opacity
   local camera_x, camera_y, camera_h, camera_w
+  screen_overlay = nil
   draw_counter = 0
   magic_counter = 0
   opacity = 255
@@ -322,6 +323,7 @@ local function initialize_maps()
       lights:draw_region(camera_x,camera_y,camera_w,camera_h,shadow,camera_x,camera_y)
       shadow:draw_region(camera_x,camera_y,camera_w,camera_h,dst_surface)
     end
+    if screen_overlay ~= nil then screen_overlay:draw(dst_surface) end
   end
   
   function map_metatable:on_started(destination)

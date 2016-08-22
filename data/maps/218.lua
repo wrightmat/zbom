@@ -15,7 +15,7 @@ function map:on_started(destination)
   if not game:get_value("b1185") then chest_key_1:set_enabled(false) end
   if not game:get_value("b1183") then
     miniboss_shadow_link:set_enabled(false)
-    chest_item:set_enabled(false)
+    chest_item:set_enabled(false); chest_item_block:set_enabled(false)
     miniboss_warp:set_enabled(false)
   else miniboss_warp:set_enabled(true) end
   if not game:get_value("b1190") and not game:get_value("b1191") then
@@ -88,7 +88,7 @@ if miniboss_shadow_link ~= nil then
     map:open_doors("boss_door") -- Door out of boss chamber.
     map:open_doors("room11_shutter") -- door down to basement
     sol.audio.play_sound("boss_killed")
-    chest_item:set_enabled(true)
+    chest_item:set_enabled(true); chest_item_block:set_enabled(true)
     sol.audio.play_sound("chest_appears")
     sol.audio.play_music("temple_sanctum")
   end

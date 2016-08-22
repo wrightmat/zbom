@@ -1131,8 +1131,8 @@ tile_pattern{
 
 tile_pattern{
   id = "200",
-  ground = "wall",
-  default_layer = 0,
+  ground = "traversable",
+  default_layer = 1,
   x = { 16, 32, 48, 32 },
   y = { 368, 368, 368, 368 },
   width = 16,
