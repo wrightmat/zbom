@@ -60,9 +60,13 @@ function action_icon_builder:new(game)
 
   function action_icon:check()
     local need_rebuild = false
-
+    local interaction_entity = game:get_hero():get_facing_entity()
+    local interaction_effect = interaction_entity and interaction_entity.action_effect
+    
     if not action_icon.flipping then
-      local effect = game:get_command_effect("action") or game:get_custom_command_effect("action")
+      local effect = game:get_command_effect("action") 
+        or game:get_custom_command_effect("action")
+        or interaction_effect -- Show custom interaction effect.
       if effect ~= action_icon.effect_displayed then
         if action_icon.effect_displayed ~= nil then
           if effect ~= nil then

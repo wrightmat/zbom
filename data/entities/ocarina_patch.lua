@@ -1,9 +1,8 @@
 local entity = ...
 local game = entity:get_game()
 local map = entity:get_map()
-entity.action_effect = "look"
 local matched = false
-local paired = fales
+local paired = false
 
 -- Ocarina patch: a special map entity that allows the hero
 -- to warp to a paired point if he has the Ocarina of Wind.
@@ -13,7 +12,7 @@ function entity:on_created()
   self:set_size(16, 16)
   self:set_origin(8, 13)
   self:set_traversable_by(true)
-  game:set_interaction_enabled(entity, true)
+  self.action_effect = "look"
   -- If other point is discovered, visually display on the tile.
   for k, v in pairs(warp_points) do
     if game:get_value(v[1]) then paired = true end
@@ -27,8 +26,7 @@ function entity:on_created()
   end
 end
 
-function entity:on_custom_interaction()
-  game:set_dialog_style("default")
+function entity:on_interaction()
   -- If this point not previously discovered then add it.
   if not game:get_value(entity:get_name()) then
     game:start_dialog("warp.new_point", function()
