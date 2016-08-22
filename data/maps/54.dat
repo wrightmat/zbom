@@ -3151,6 +3151,51 @@ tile{
   pattern = "272",
 }
 
+tile{
+  layer = 0,
+  x = 520,
+  y = 736,
+  width = 32,
+  height = 24,
+  pattern = "243",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 728,
+  width = 32,
+  height = 24,
+  pattern = "245",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 288,
+  width = 32,
+  height = 24,
+  pattern = "245",
+}
+
+tile{
+  layer = 0,
+  x = 984,
+  y = 600,
+  width = 32,
+  height = 24,
+  pattern = "243",
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 312,
+  width = 32,
+  height = 24,
+  pattern = "245",
+}
+
 teletransporter{
   name = "to_E5",
   layer = 0,
@@ -3350,18 +3395,18 @@ destructible{
 
 wall{
   layer = 0,
-  x = 488,
+  x = 472,
   y = 208,
-  width = 16,
-  height = 744,
+  width = 8,
+  height = 232,
   stops_enemies = true,
 }
 
 wall{
   layer = 0,
-  x = 1072,
+  x = 1080,
   y = 328,
-  width = 16,
+  width = 8,
   height = 536,
   stops_enemies = true,
 }
@@ -3386,6 +3431,51 @@ teletransporter{
   transition = "scrolling",
   destination_map = "62",
   destination = "_side",
+}
+
+tile{
+  layer = 1,
+  x = 496,
+  y = 280,
+  width = 32,
+  height = 8,
+  pattern = "246",
+}
+
+tile{
+  layer = 1,
+  x = 520,
+  y = 728,
+  width = 32,
+  height = 8,
+  pattern = "244",
+}
+
+tile{
+  layer = 1,
+  x = 568,
+  y = 720,
+  width = 32,
+  height = 8,
+  pattern = "246",
+}
+
+tile{
+  layer = 1,
+  x = 984,
+  y = 592,
+  width = 32,
+  height = 8,
+  pattern = "244",
+}
+
+tile{
+  layer = 1,
+  x = 472,
+  y = 304,
+  width = 32,
+  height = 8,
+  pattern = "246",
 }
 
 tile{

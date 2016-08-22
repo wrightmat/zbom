@@ -2701,6 +2701,24 @@ tile{
   pattern = "272",
 }
 
+tile{
+  layer = 0,
+  x = 112,
+  y = 448,
+  width = 32,
+  height = 24,
+  pattern = "245",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 880,
+  width = 32,
+  height = 24,
+  pattern = "245",
+}
+
 teletransporter{
   name = "to_A1",
   layer = 0,
@@ -2882,6 +2900,24 @@ custom_entity{
   direction = 0,
   sprite = "entities/soil_snow",
   model = "soil",
+}
+
+tile{
+  layer = 1,
+  x = 112,
+  y = 440,
+  width = 32,
+  height = 8,
+  pattern = "246",
+}
+
+tile{
+  layer = 1,
+  x = 560,
+  y = 872,
+  width = 32,
+  height = 8,
+  pattern = "246",
 }
 
 tile{

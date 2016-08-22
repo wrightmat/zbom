@@ -2989,6 +2989,24 @@ tile{
   pattern = "1724",
 }
 
+tile{
+  layer = 0,
+  x = 216,
+  y = 680,
+  width = 32,
+  height = 24,
+  pattern = "245",
+}
+
+tile{
+  layer = 0,
+  x = 664,
+  y = 80,
+  width = 32,
+  height = 24,
+  pattern = "245",
+}
+
 teletransporter{
   name = "to_A2",
   layer = 0,
@@ -3277,6 +3295,24 @@ enemy{
   direction = 3,
   breed = "chuchu_white",
   treasure_name = "random_north",
+}
+
+tile{
+  layer = 1,
+  x = 216,
+  y = 672,
+  width = 32,
+  height = 8,
+  pattern = "246",
+}
+
+tile{
+  layer = 1,
+  x = 664,
+  y = 72,
+  width = 32,
+  height = 8,
+  pattern = "246",
 }
 
 tile{

@@ -10576,6 +10576,33 @@ tile{
   pattern = "218",
 }
 
+tile{
+  layer = 0,
+  x = 96,
+  y = 640,
+  width = 32,
+  height = 24,
+  pattern = "245",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 656,
+  width = 32,
+  height = 24,
+  pattern = "245",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 664,
+  width = 32,
+  height = 24,
+  pattern = "245",
+}
+
 dynamic_tile{
   name = "night_entrance",
   layer = 0,
@@ -10750,6 +10777,33 @@ tile{
   width = 16,
   height = 16,
   pattern = "953",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 632,
+  width = 32,
+  height = 8,
+  pattern = "246",
+}
+
+tile{
+  layer = 1,
+  x = 72,
+  y = 648,
+  width = 32,
+  height = 8,
+  pattern = "246",
+}
+
+tile{
+  layer = 1,
+  x = 112,
+  y = 656,
+  width = 32,
+  height = 8,
+  pattern = "246",
 }
 
 tile{

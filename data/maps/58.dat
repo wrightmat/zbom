@@ -1702,6 +1702,60 @@ tile{
   pattern = "1719",
 }
 
+tile{
+  layer = 0,
+  x = 264,
+  y = 376,
+  width = 32,
+  height = 24,
+  pattern = "243",
+}
+
+tile{
+  layer = 0,
+  x = 216,
+  y = 384,
+  width = 32,
+  height = 24,
+  pattern = "245",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 704,
+  width = 32,
+  height = 24,
+  pattern = "245",
+}
+
+tile{
+  layer = 0,
+  x = 696,
+  y = 304,
+  width = 32,
+  height = 24,
+  pattern = "243",
+}
+
+tile{
+  layer = 0,
+  x = 712,
+  y = 280,
+  width = 32,
+  height = 24,
+  pattern = "243",
+}
+
+tile{
+  layer = 0,
+  x = 712,
+  y = 352,
+  width = 32,
+  height = 24,
+  pattern = "243",
+}
+
 teletransporter{
   name = "to_G5",
   layer = 0,
@@ -2972,6 +3026,60 @@ dynamic_tile{
   width = 16,
   height = 16,
   enabled_at_start = true,
+}
+
+tile{
+  layer = 1,
+  x = 264,
+  y = 368,
+  width = 32,
+  height = 8,
+  pattern = "244",
+}
+
+tile{
+  layer = 1,
+  x = 216,
+  y = 376,
+  width = 32,
+  height = 8,
+  pattern = "246",
+}
+
+tile{
+  layer = 1,
+  x = 320,
+  y = 696,
+  width = 32,
+  height = 8,
+  pattern = "246",
+}
+
+tile{
+  layer = 1,
+  x = 696,
+  y = 296,
+  width = 32,
+  height = 8,
+  pattern = "244",
+}
+
+tile{
+  layer = 1,
+  x = 712,
+  y = 272,
+  width = 32,
+  height = 8,
+  pattern = "244",
+}
+
+tile{
+  layer = 1,
+  x = 712,
+  y = 344,
+  width = 32,
+  height = 8,
+  pattern = "244",
 }
 
 tile{

@@ -9530,6 +9530,46 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "346",
+  ground = "wall",
+  default_layer = 0,
+  x = 304,
+  y = 696,
+  width = 32,
+  height = 24,
+}
+
+tile_pattern{
+  id = "347",
+  ground = "traversable",
+  default_layer = 1,
+  x = 304,
+  y = 688,
+  width = 32,
+  height = 8,
+}
+
+tile_pattern{
+  id = "348",
+  ground = "wall",
+  default_layer = 0,
+  x = 336,
+  y = 696,
+  width = 32,
+  height = 24,
+}
+
+tile_pattern{
+  id = "349",
+  ground = "traversable",
+  default_layer = 1,
+  x = 336,
+  y = 688,
+  width = 32,
+  height = 8,
+}
+
+tile_pattern{
   id = "35",
   ground = "traversable",
   default_layer = 0,
