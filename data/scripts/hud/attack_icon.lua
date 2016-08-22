@@ -47,7 +47,7 @@ function attack_icon_builder:new(game)
           ["return"] = 2,
           ["validate"] = 3,
           ["skip"] = 4,
-          ["custom_carry"] = 5,
+          ["custom_carry"] = 8,
         }
         if effects_indexes[attack_icon.effect_displayed] ~= nil then
           attack_icon.icon_region_y = 24 * effects_indexes[attack_icon.effect_displayed]
@@ -60,7 +60,7 @@ function attack_icon_builder:new(game)
     local need_rebuild = false
 
     if not attack_icon.flipping then
-      local effect = game:get_command_effect("attack") or game:get_custom_command_effect("attack")
+      local effect = game:get_custom_command_effect("attack") or game:get_command_effect("attack")
       local sword = game:get_ability("sword")
       local showing_dialog = game:is_dialog_enabled()
       if effect ~= attack_icon.effect_displayed
@@ -98,7 +98,7 @@ function attack_icon_builder:new(game)
 
   function attack_icon:rebuild_surface()
     attack_icon.surface:clear()
-
+    
     if attack_icon.icon_region_y ~= nil then
       -- Draw the static image of the icon.
       attack_icon.icons_img:draw_region(0, attack_icon.icon_region_y, 72, 24, attack_icon.surface)
@@ -107,12 +107,12 @@ function attack_icon_builder:new(game)
       attack_icon.icon_flip_sprite:draw(attack_icon.surface, 24, 0)
     end
   end
-
+  
   function attack_icon:set_dst_position(x, y)
     attack_icon.dst_x = x
     attack_icon.dst_y = y
   end
-
+  
   function attack_icon:on_mouse_pressed(button, x, y)
     if (x > attack_icon.dst_x + 24) and (x < attack_icon.dst_x + 48) and (y > attack_icon.dst_y) and (y < attack_icon.dst_y + 24) then
       game:simulate_command_pressed("attack")
@@ -123,7 +123,7 @@ function attack_icon_builder:new(game)
       game:simulate_command_released("attack")
     end
   end
-
+  
   function attack_icon:on_draw(dst_surface)
     local x, y = attack_icon.dst_x, attack_icon.dst_y
     local width, height = dst_surface:get_size()
@@ -133,12 +133,12 @@ function attack_icon_builder:new(game)
     if y < 0 then
       y = height + y
     end
-
+    
     attack_icon.surface:draw(dst_surface, x, y)
   end
-
+  
   attack_icon:initialize()
-
+  
   return attack_icon
 end
 

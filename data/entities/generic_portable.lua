@@ -144,14 +144,12 @@ function entity:set_carried(hero_entity)
   local x,y,z = hero_entity:get_position(); self:set_position(x,y+2,z)
   self:on_position_changed() -- Notify the entity (to move secondary sprites, etc).
   -- Update custom command effects.
-  game:set_custom_command_effect("action", "custom_carry")
   game:set_custom_command_effect("attack", "custom_carry")
 end
 
 
 -- Function to throw the entity.
 function entity:throw(optional_args)
-  game:set_custom_command_effect("action", nil)
   game:set_custom_command_effect("attack", nil)
   -- Initialize optional arguments and properties for the three bounces.
   local args = optional_args or {}
