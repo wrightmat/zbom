@@ -3333,7 +3333,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1064,
+  x = 1048,
   y = 776,
   width = 32,
   height = 32,
@@ -4683,7 +4683,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1056,
+  x = 1040,
   y = 800,
   width = 8,
   height = 8,
@@ -4692,7 +4692,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1096,
+  x = 1112,
   y = 800,
   width = 8,
   height = 8,
@@ -4701,9 +4701,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 1056,
+  x = 1040,
   y = 808,
-  width = 48,
+  width = 80,
   height = 8,
   pattern = "171",
 }
@@ -5219,6 +5219,15 @@ tile{
   width = 40,
   height = 16,
   pattern = "426",
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 776,
+  width = 32,
+  height = 32,
+  pattern = "491",
 }
 
 npc{
