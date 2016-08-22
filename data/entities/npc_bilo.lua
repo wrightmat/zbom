@@ -30,6 +30,7 @@ local function follow_hero()
 end
 
 function entity:on_created()
+  self.action_effect = "speak"
   self:set_drawn_in_y_order(true)
   self:set_can_traverse("hero", false)
   self:set_traversable_by("hero", false)
@@ -58,25 +59,4 @@ end
 function entity:on_movement_changed(movement)
   local direction = movement:get_direction4()
   entity:get_sprite():set_direction(direction)
-end
-
--- Change HUD action to "Speak" when facing the NPC.
-entity:add_collision_test("facing", function(entity, other)
-  if other:get_type() == "hero" then 
-    hero_facing = true
-    if hero_facing then
-      game:set_custom_command_effect("action", "speak")
-      action_command = true
-    else
-      game:set_custom_command_effect("action", nil)
-    end
-  end
-end)
-
-function entity:on_update()
-  if action_command and not hero_facing then
-    game:set_custom_command_effect("action", nil)
-    action_command = false
-  end
-  hero_facing = false
 end

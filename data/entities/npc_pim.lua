@@ -30,6 +30,7 @@ local function follow_hero()
 end
 
 function entity:on_created()
+  self.action_effect = "speak"
   self:set_drawn_in_y_order(true)
   self:set_can_traverse("hero", false)
   self:set_traversable_by("hero", false)
@@ -51,7 +52,7 @@ function entity:on_interaction()
       game:set_value("i1925", game:get_value("i1925")+1)
     elseif game:get_value("i1925") >=4 then
       if game:get_map():get_id() == "1" or game:get_value("i1845") > 1 then
-	-- In his house, don't sell pumpkins
+        -- In his house, don't sell pumpkins
         game:start_dialog("pim.2.house")
       else
 	game:start_dialog("pim.2.pumpkin", function(answer)
@@ -61,13 +62,13 @@ function entity:on_interaction()
 	  else
 	    game:start_dialog("pim.2.no_pumpkin", function(answer)
 	      if answer == 1 then
-		-- Provide directions depending on current map
-		if game:get_map():get_id() == "23" then game:start_dialog("pim.directions.23") end
-		if game:get_map():get_id() == "26" then game:start_dialog("pim.directions.26") end
-		if game:get_map():get_id() == "40" then game:start_dialog("pim.directions.40") end
-		if game:get_map():get_id() == "80" then game:start_dialog("pim.directions.80") end
+          -- Provide directions depending on current map
+          if game:get_map():get_id() == "23" then game:start_dialog("pim.directions.23") end
+          if game:get_map():get_id() == "26" then game:start_dialog("pim.directions.26") end
+          if game:get_map():get_id() == "40" then game:start_dialog("pim.directions.40") end
+          if game:get_map():get_id() == "80" then game:start_dialog("pim.directions.80") end
 	      else
-		game:start_dialog("pim.2.no_directions")
+          game:start_dialog("pim.2.no_directions")
 	      end
 	    end)
 	  end
@@ -85,25 +86,4 @@ end
 function entity:on_movement_changed(movement)
   local direction = movement:get_direction4()
   entity:get_sprite():set_direction(direction)
-end
-
--- Change HUD action to "Speak" when facing the NPC.
-entity:add_collision_test("facing", function(entity, other)
-  if other:get_type() == "hero" then 
-    hero_facing = true
-    if hero_facing then
-      game:set_custom_command_effect("action", "speak")
-      action_command = true
-    else
-      game:set_custom_command_effect("action", nil)
-    end
-  end
-end)
-
-function entity:on_update()
-  if action_command and not hero_facing then
-    game:set_custom_command_effect("action", nil)
-    action_command = false
-  end
-  hero_facing = false
 end
