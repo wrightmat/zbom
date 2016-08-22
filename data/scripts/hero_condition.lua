@@ -34,15 +34,12 @@ function condition_manager:initialize(game)
 
   function game:on_command_pressed(command)
 
-    if command == "action" then
-      local action_effect = game:get_custom_command_effect("action")
-      -- Custom action effects. THIS IS NEEDED FOR THE GENERIC_PORTABLE.LUA SCRIPT!!!!
-      if action_effect and game:get_interaction_entity() then
-        game:get_hero().custom_interaction:on_custom_interaction(); return true
-      end
-    elseif command == "attack" then
-      if game:get_hero().custom_carry then
-        game:get_hero().custom_carry:throw(); return true
+    if command == "attack" then
+      local attack_effect = game:get_custom_command_effect("attack")
+      local hero = game:get_hero()
+      if attack_effect == "custom_carry" then
+        if hero:get_animation() ~= "lifting" then hero:start_throw() end 
+        return true
       end
     end
 
