@@ -156,20 +156,124 @@ end
 
 local function initialize_hero()
   -- Modify metatable of hero to make carried entities follow him with hero:on_position_changed().
-  local hero_metatable = sol.main.get_metatable("hero")
-  function hero_metatable:on_position_changed()
-    if self.custom_carry then
-      sol.timer.start(self, 10, function()
-        if self:get_animation() == "stopped" or self:get_animation() == "stopped_with_shield" then self:set_animation("carrying_stopped") end
-      end)
-      self:set_animation("carrying_walking")
-      local x, y, layer = self:get_position()
-      self.custom_carry:set_position(x, y+2, layer)
+  local hero_meta = sol.main.get_metatable("hero")
+  -- Define a function to change to carrying state. (The same functions are defined for npc_heroes.)
+  function hero_meta:set_carrying(boolean)
+    if boolean then
+      self:set_fixed_animations("carrying_stopped", "carrying_walking")
+      self:set_animation("carrying_stopped")
+    else
+      self:set_fixed_animations(nil, nil)
+      if self:is_walking() then self:set_animation("walking")
+      else self:set_animation("stopped") end
     end
   end
-
-  function hero_metatable:set_carrying(boolean)
-    if boolean then self:set_animation("carrying_stopped") end
+  -- Make carried entities follow the hero when the position changes.
+  function hero_meta:on_position_changed()
+    if self.custom_carry then -- There is a carried item.
+      local x, y, layer = self:get_position()
+      if self.custom_carry.set_position then
+        self.custom_carry:set_position(x, y+2, layer)
+      end
+    end
+  end  
+  -- Throw the carried entities when hurt.    
+  function hero_meta:on_taking_damage(damage)
+    self:get_game():remove_life(damage) -- Remove life.
+    if self.custom_carry then
+      self:start_throw() -- Throw carried entity.
+    end
+  end  
+  -- Throw generic portable entities.
+  -- Display the throwing animation of the hero and throw the portable entity.
+  function hero_meta:start_throw()
+    -- State changes and properties. Get direction to throw.
+    local game = self:get_game()
+    local animation = self:get_animation()
+    local direction = self:get_direction()
+    if animation == "carrying_stopped" or animation == "hurt" then direction = nil end
+    local portable = self.custom_carry
+    if not portable then return end
+    self.custom_carry = nil
+    -- Change animation of hero to stop carrying.
+    self:set_carrying(false)
+    local carrier = self
+    -- Throw the portable entity.
+    local args = {falling_direction = direction, carrier = carrier}
+    portable:throw(args)
+  end
+  -- Function to know if the hero is walking.
+  function hero_meta:is_walking()
+    local m = self:get_movement()
+    return m and m.get_speed and m:get_speed() > 0
+  end
+  -- Function to set a fixed direction for the hero (or nil to disable it).
+  function hero_meta:set_fixed_direction(direction)
+    self.fixed_direction = direction
+    if direction then self:get_sprite("tunic"):set_direction(direction) end
+  end
+  -- Function to get a fixed direction for the hero.
+  function hero_meta:get_fixed_direction()
+    return self.fixed_direction
+  end
+  -- Function to set fixed stopped/walking animations for the hero (or nil to disable it).
+  function hero_meta:set_fixed_animations(stopped_animation, walking_animation)
+    self.fixed_stopped_animation = stopped_animation
+    self.fixed_walking_animation = walking_animation
+    -- Initialize fixed animations if necessary.
+    if self:get_state() == "free" then
+      if self:is_walking() then self:set_animation(walking_animation or "walking")
+      else self:set_animation(stopped_animation or "stopped") end
+    end
+  end
+  -- Function to get fixed stopped/walking animations for the hero.
+  function hero_meta:get_fixed_animations()
+    return self.fixed_stopped_animation, self.fixed_walking_animation
+  end
+  -- Functions to enable/disable pushing ability for the hero.
+  -- TODO: change this if necessary for a built-in function when it is done.
+  local pushing_animation
+  function hero_meta:get_pushing_animation() return pushing_animation end
+  function hero_meta:set_pushing_animation(animation) pushing_animation = animation end
+  -- Initialize events to fix direction and animation for the tunic sprite of the hero.
+  -- To do it, we redefine the on_created and set_tunic_sprite_id events using the hero metatable.
+  local function initialize_fixing_functions(hero)
+    -- Define events for the tunic sprite.
+    local sprite = hero:get_sprite("tunic")
+    function sprite:on_animation_changed(animation)
+      local fixed_stopped_animation = hero.fixed_stopped_animation
+      local fixed_walking_animation = hero.fixed_walking_animation
+      local tunic_animation = sprite:get_animation()
+      if (tunic_animation == "stopped" or tunic_animation == "stopped_with_shield") and fixed_stopped_animation ~= nil then 
+        if fixed_stopped_animation ~= tunic_animation then
+          sprite:set_animation(fixed_stopped_animation)
+        end
+      elseif (tunic_animation == "walking" or tunic_animation == "walking_with_shield") and fixed_walking_animation ~= nil then 
+        if fixed_walking_animation ~= tunic_animation then
+          sprite:set_animation(fixed_walking_animation)
+        end
+      elseif tunic_animation == "pushing" then
+        local pushing_animation = hero:get_pushing_animation()
+        if pushing_animation then hero:set_animation(pushing_animation) end
+      end
+    end
+    function sprite:on_direction_changed(animation, direction)
+      local fixed_direction = hero.fixed_direction
+      local tunic_direction = sprite:get_direction()
+      if fixed_direction ~= nil and fixed_direction ~= tunic_direction then
+        sprite:set_direction(fixed_direction)
+      end
+    end
+  end
+  -- Initialize fixing functions when the hero is created.
+  function hero_meta:on_created()
+    initialize_fixing_functions(self)
+  end
+  -- Initialize fixing functions for the new sprite when the sprite is replaced for a new one.
+  local old_set_tunic = hero_meta.set_tunic_sprite_id -- Redefine this function.
+  function hero_meta:set_tunic_sprite_id(sprite_id)
+    old_set_tunic(self, sprite_id)
+    initialize_fixing_functions(self)
   end
 end
 

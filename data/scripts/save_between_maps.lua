@@ -1,4 +1,3 @@
---WARNING: custom_interactions.lua required!!!
 
 --[[ 
 Script to save position/state of custom entity when left behind in some map.
@@ -86,14 +85,11 @@ end
 -- Start the map with the saved information. This includes entities being carried by the hero.
 function save_between_maps:load_map(map)
   local game = map:get_game(); local hero = map:get_hero()
-  -- Restart interaction state.
-  game:clear_interaction()
   -- Create carried entity for the current hero, if any.
   local info = self.custom_carry
   if info then
     local portable = save_between_maps:create_entity(map, info)
     hero.custom_carry = portable
-    game:set_interaction_enabled(portable, false)
     self.custom_carry = nil
   end
   -- Create independent entities left on this map.

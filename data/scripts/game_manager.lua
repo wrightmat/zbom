@@ -11,8 +11,6 @@ sol.main.load_file("scripts/menus/dialog_box")(game)
 sol.main.load_file("scripts/hud/hud")(game)
 sol.main.load_file("scripts/dungeons")(game)
 sol.main.load_file("scripts/equipment")(game)
-sol.main.load_file("scripts/custom_interactions.lua")(game)
-sol.main.load_file("scripts/collision_test_manager.lua")(game)
 local hud_manager = require("scripts/hud/hud")
 local camera_manager = require("scripts/camera_manager")
 local condition_manager = require("scripts/hero_condition")
@@ -54,7 +52,6 @@ function game:on_map_changed(map)
   -- Notify the hud.
   self.hud:on_map_changed(map)
 
-  game:set_custom_command_effect("action", nil) -- Reset. To avoid problems with custom_interactions.lua.
   game.save_between_maps:load_map(map) -- Create saved and carried entities.
 end
 
@@ -152,7 +149,7 @@ function game:calculate_percent_complete()
 
     if game:get_value("i1602")==nil then game:set_value("i1602", 0) end
     if game:get_value("i1603")==nil then game:set_value("i1603", 0) end
-    if game:get_value("i1604")==nil then ame:set_value("i1604", 0) end
+    if game:get_value("i1604")==nil then game:set_value("i1604", 0) end
     if game:get_value("i1605")==nil then game:set_value("i1605", 0) end
     if game:get_value("i1606")==nil then game:set_value("i1606", 0) end
     if game:get_value("i1607")==nil then game:set_value("i1607", 0) end
