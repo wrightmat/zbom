@@ -114,9 +114,12 @@ function item_icon:set_dst_position(x, y)
 end
 
 function item_icon:on_mouse_pressed(button, x, y)
-  if (x > self.dst_x) and (x < self.dst_x + 24) and (y > self.dst_y) and (y < self.dst_y + 24) then
-    local command = "item_" .. self.slot
-    self.game:simulate_command_pressed(command)
+  if self.game:get_value("control_scheme") == "touch_1" or self.game:get_value("control_scheme") == "touch_2" then
+  -- Enable mouse (and thereby touch as well) control when that scheme is enabled.
+    if (x > self.dst_x) and (x < self.dst_x + 24) and (y > self.dst_y) and (y < self.dst_y + 24) then
+      local command = "item_" .. self.slot
+      self.game:simulate_command_pressed(command)
+    end
   end
 end
 

@@ -70,8 +70,11 @@ function pause_icon:set_dst_position(x, y)
 end
 
 function pause_icon:on_mouse_pressed(button, x, y)
-  if (x > self.dst_x + 24) and (x < self.dst_x + 48) and (y > self.dst_y) and (y < self.dst_y + 24) then
-    self.game:simulate_command_pressed("pause")
+  if self.game:get_value("control_scheme") == "touch_1" or self.game:get_value("control_scheme") == "touch_2" then
+  -- Enable mouse (and thereby touch as well) control when that scheme is enabled.
+    if (x > self.dst_x + 24) and (x < self.dst_x + 48) and (y > self.dst_y) and (y < self.dst_y + 24) then
+      self.game:simulate_command_pressed("pause")
+    end
   end
 end
 

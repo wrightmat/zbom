@@ -114,13 +114,19 @@ function attack_icon_builder:new(game)
   end
   
   function attack_icon:on_mouse_pressed(button, x, y)
-    if (x > attack_icon.dst_x + 24) and (x < attack_icon.dst_x + 48) and (y > attack_icon.dst_y) and (y < attack_icon.dst_y + 24) then
-      game:simulate_command_pressed("attack")
+    if game:get_value("control_scheme") == "touch_1" or game:get_value("control_scheme") == "touch_2" then
+      -- Enable mouse (and thereby touch as well) control when that scheme is enabled.
+      if (x > attack_icon.dst_x + 24) and (x < attack_icon.dst_x + 48) and (y > attack_icon.dst_y) and (y < attack_icon.dst_y + 24) then
+        game:simulate_command_pressed("attack")
+      end
     end
   end
   function attack_icon:on_mouse_released(button, x, y)
-    if (x > attack_icon.dst_x + 24) and (x < attack_icon.dst_x + 48) and (y > attack_icon.dst_y) and (y < attack_icon.dst_y + 24) then
-      game:simulate_command_released("attack")
+    if game:get_value("control_scheme") == "touch_1" or game:get_value("control_scheme") == "touch_2" then
+      -- Enable mouse (and thereby touch as well) control when that scheme is enabled.
+      if (x > attack_icon.dst_x + 24) and (x < attack_icon.dst_x + 48) and (y > attack_icon.dst_y) and (y < attack_icon.dst_y + 24) then
+        game:simulate_command_released("attack")
+      end
     end
   end
   

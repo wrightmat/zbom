@@ -32,7 +32,8 @@ function mouse_movement_builder:new(game)
   end
   
   function mouse_movement:on_update()
-    if left_button_pressed then
+    if left_button_pressed and game:get_value("control_scheme") == "touch_2" then
+      -- Only enable mouse/touch movement if "iOS" scheme is enabled - Android will use a D-Pad overlay (more precise).
       local mouse_position = {sol.input.get_mouse_position()}
       local hero_position = {game:get_hero():get_solid_ground_position()}
       

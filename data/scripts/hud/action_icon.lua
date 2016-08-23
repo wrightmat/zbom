@@ -113,9 +113,12 @@ function action_icon_builder:new(game)
   end
 
   function action_icon:on_mouse_pressed(button, x, y)
-    if (x > action_icon.dst_x + 24) and (x < action_icon.dst_x + 48) and (y > action_icon.dst_y) and (y < action_icon.dst_y + 24) then
-      if action_icon.effect_displayed ~= nil then
-        game:simulate_command_pressed("action")
+    if game:get_value("control_scheme") == "touch_1" or game:get_value("control_scheme") == "touch_2" then
+      -- Enable mouse (and thereby touch as well) control when that scheme is enabled.
+      if (x > action_icon.dst_x + 24) and (x < action_icon.dst_x + 48) and (y > action_icon.dst_y) and (y < action_icon.dst_y + 24) then
+        if action_icon.effect_displayed ~= nil then
+          game:simulate_command_pressed("action")
+        end
       end
     end
   end
