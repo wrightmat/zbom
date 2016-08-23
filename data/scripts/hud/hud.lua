@@ -39,6 +39,7 @@ function hud_manager:create(game)
   local action_icon_builder = require("scripts/hud/action_icon")
   local clock_builder = require("scripts/hud/clock")
   local hero_condition_builder = require("scripts/hud/hero_condition")
+  local mouse_movement_builder = require("scripts/hud/mouse_movement")
 
   local hearts = hearts_builder:new(game)
   hearts:set_dst_position(-104, 6)
@@ -95,6 +96,9 @@ function hud_manager:create(game)
   local clock = clock_builder:new(game)
   clock:set_dst_position(-26, -26)
   hud.elements[#hud.elements + 1] = clock
+
+  local mouse_movement = mouse_movement_builder:new(game)
+  hud.elements[#hud.elements + 1] = mouse_movement
 
   -- Destroys the HUD.
   function hud:quit()
