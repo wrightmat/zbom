@@ -79,3 +79,27 @@ function map:on_started(destination)
     npc_goron_ghost:remove()
   end
 end
+
+function npc_goron_5:on_interaction()
+  if game:get_value("b1699") then
+    game:start_dialog("goron5.0.goron_city_mine")
+  else
+    game:start_dialog("goron5.0.goron_city")
+  end
+end
+
+function npc_goron_6:on_interaction()
+  if game:get_value("b1699") then
+    game:start_dialog("goron6.0.goron_city_mine")
+  else
+    game:start_dialog("goron6.0.goron_city")
+  end
+end
+
+function npc_goron_7:on_interaction()
+  if game:get_value("b1699") then
+    game:start_dialog("goron7.0.goron_city_mine")
+  else
+    game:start_dialog("goron7.0.goron_city")
+  end
+end

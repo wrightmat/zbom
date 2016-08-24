@@ -34,6 +34,10 @@ function map:on_started(destination)
     if game:get_value("i1029") == 3 then npc_galen:remove() end
   end
 
+  if game:get_value("b1699") then
+    npc_dargor:remove()
+  end
+
   if game:get_value("i1029") == 2 and destination == from_outside_house_sick then
     sol.timer.start(1000, function()
       hero:freeze()
@@ -104,7 +108,9 @@ function npc_dargor:on_interaction()
 end
 
 function npc_galen:on_interaction()
-  if game:get_value("i1029") == 1 then
+  if game:get_value("b1699") then
+    game:start_dialog("galen.3.house")
+  elseif game:get_value("i1029") == 1 then
     sol.audio.play_sound("goron_sad")
     game:start_dialog("galen.1.house", function()
       game:set_value("i1916", game:get_value("i1916")+1)
@@ -124,7 +130,9 @@ end
 
 function npc_gor_larin:on_interaction()
   sol.audio.play_sound("goron_happy")
-  if game:get_value("b1117") then
+  if game:get_value("b1699") then
+    game:start_dialog("larin.3.house")
+  elseif game:get_value("b1117") then
     game:start_dialog("larin.2.house")
   else
     game:start_dialog("larin.1.house")

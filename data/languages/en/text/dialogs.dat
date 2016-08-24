@@ -3804,6 +3804,16 @@ I need time...$0
 }
 
 dialog{
+  id = "dargor.5.mine",
+  text = [[
+I've decided it's time for me to return
+to work. Hopefully doing some good for
+my brothers will help take my mind off
+of everything that has happened.
+]]
+}
+
+dialog{
   id = "deacon.0.faron",
   skip = "current",
   text = [[
@@ -4690,6 +4700,16 @@ than anyone...
 }
 
 dialog{
+  id = "galen.3.house",
+  text = [[
+It's been pretty quiet around here
+recently - I'm just waiting for the
+influx of injured brothers from the
+mines!
+]]
+}
+
+dialog{
   id = "garroth.0.pub",
   skip = "current",
   text = [[
@@ -5093,12 +5113,28 @@ staying away from the mine!
 }
 
 dialog{
+  id = "goron1.0.goron_city_mine",
+  text = [[
+Now that everyone's getting better,
+folks are starting to go back to the
+mine - it's a very exciting time!
+]]
+}
+
+dialog{
   id = "goron2.0.goron_city",
   skip = "current",
   text = [[
 The mine? Oh, we call it the
 Mausoleum now. So many people died in
 there that most of us won't go back.
+]]
+}
+
+dialog{
+  id = "goron2.0.goron_city_mine",
+  text = [[
+Ours mines are coming back! Happy day!
 ]]
 }
 
@@ -5134,6 +5170,15 @@ to help.
 }
 
 dialog{
+  id = "goron5.0.goron_city_mine",
+  text = [[
+In no time we'll be back to our old
+proud and honorable selves. Thanks so
+much for your help!
+]]
+}
+
+dialog{
   id = "goron6.0.goron_city",
   skip = "current",
   text = [[
@@ -5141,6 +5186,18 @@ Who are you? An outsider here in the
 shape we're in?     $0 (cough) $0
 Uh oh. Guess I'll go stand in line
 at the doctor's house...
+]]
+}
+
+dialog{
+  id = "goron6.0.goron_city_mine",
+  text = [[
+The doctor doesn't have nearly as much
+to do these days. I guess soon enough
+he'll be patching up the brothers who
+are going back to the mines - they
+always manage to hurt themselves
+somehow!
 ]]
 }
 
@@ -5157,12 +5214,30 @@ like you.
 }
 
 dialog{
+  id = "goron7.0.goron_city_mine",
+  text = [[
+Welcome to Goron City! Don't forget
+to check out our world famous mines!
+]]
+}
+
+dialog{
   id = "goron8.0.goron_city",
   skip = "current",
   text = [[
 The Mausoleum is up ahead. I wouldn't
 go in there if I were you. If you get
 sick, don't say I didn't warn you!
+]]
+}
+
+dialog{
+  id = "goron8.0.goron_city_mine",
+  text = [[
+The mines are up ahead. Be careful, it
+can be dangerous in there with all of
+those Goron brothers throwing hammers
+around!
 ]]
 }
 
@@ -6901,6 +6976,17 @@ Not sure where to go next? Some of my
 council Brothers remained in Hyrule
 Castle Town and may be able to assist
 you from the council office.
+]]
+}
+
+dialog{
+  id = "larin.3.house",
+  text = [[
+My people and I can't thank you enough
+for your help. If you ever need anything
+you can count on us. In fact, visiting
+our mines could help you in your
+adventure - it's full of rare objects.
 ]]
 }
 

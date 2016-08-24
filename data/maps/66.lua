@@ -17,11 +17,10 @@ function map:on_started(destination)
   random_walk(npc_goron_2)
   random_walk(npc_goron_3)
   random_walk(npc_goron_4)
-  game:set_dialog_style("default")
 
   if game:get_value("i1029") == 5 then
-    -- set position to hero and then follow
-    -- (on intermediate layer so he doesn't collide)
+    -- Set position to hero and then follow
+    -- (on intermediate layer so he doesn't collide).
     hx, hy, hl = map:get_entity("hero"):get_position()
     if map:get_entity("hero"):get_direction() == 0 or map:get_entity("hero"):get_direction() == 3 then
       npc_goron_ghost:set_position(hx+16, hy+16, 1)
@@ -41,5 +40,21 @@ function map:on_started(destination)
     for entity in game:get_map():get_entities("night_") do
       entity:set_enabled(true)
     end
+  end
+end
+
+function npc_goron_1:on_interaction()
+  if game:get_value("b1699") then
+    game:start_dialog("goron1.0.goron_city_mine")
+  else
+    game:start_dialog("goron1.0.goron_city")
+  end
+end
+
+function npc_goron_2:on_interaction()
+  if game:get_value("b1699") then
+    game:start_dialog("goron2.0.goron_city_mine")
+  else
+    game:start_dialog("goron2.0.goron_city")
   end
 end

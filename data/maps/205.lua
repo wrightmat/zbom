@@ -15,7 +15,7 @@ lights:set_blend_mode("add")
 
 if game:get_value("i1029") == nil then game:set_value("i1029", 0) end
 
-function map:on_started(destination) 
+function map:on_started(destination)
   if game:get_value("i1029") <= 4 then
     npc_goron_ghost:remove()
   elseif game:get_value("i1029") == 5 then
@@ -50,6 +50,17 @@ function map:on_started(destination)
   if not game:get_value("b1117") then chest_book:set_enabled(false) end
   if not game:get_value("b1118") then boss_heart:set_enabled(false) end
   if not game:get_value("b1119") then chest_rupees:set_enabled(false) end
+  if game:get_value("b1699") then
+    -- End of game: mine is reopened!
+    for enemy in map:get_entities_by_type("enemy") do
+      enemy:remove()
+    end
+    map:set_entities_enabled("statue", false)
+    map:set_entities_enabled("chest", false)
+  else
+    npc_dargor:remove()
+    map:set_entities_enabled("mine", false)
+  end
 end
 
 function npc_dampeh:on_interaction()
@@ -187,7 +198,9 @@ end
 function map:on_draw(dst_surface)
   local x,y = map:get_camera():get_position()
   local w,h = map:get_camera():get_size()
-  if not game:get_value("b1117") and draw_counter >= 15 then -- If dungeon hasn't been defeated then the lights are out! 
+  if not game:get_value("b1117") then
+  -- If dungeon hasn't been defeated then the lights are out! 
+  if draw_counter >= 10 then
     lights:clear()
     shadow:fill_color({032,064,128,128})
     for e in map:get_entities("statue_") do
@@ -234,9 +247,10 @@ function map:on_draw(dst_surface)
     end
     draw_counter = 0
   end
+  draw_counter = draw_counter + 1
   lights:draw_region(x,y,w,h,shadow,x,y)
   shadow:draw_region(x,y,w,h,dst_surface)
-  draw_counter = draw_counter + 1
+  end
 end
 
 function chest_book:on_opened(item, variant, savegame_variable)
@@ -246,4 +260,8 @@ function chest_book:on_opened(item, variant, savegame_variable)
   game:set_dungeon_finished(4)
   game:set_value("i1029", 6)
   game:set_value("b1117", true) -- This value varies depending on the dungeon (chest save value)
+end
+
+function npc_dargor:on_interaction()
+  game:start_dialog("dargor.5.mine")
 end
