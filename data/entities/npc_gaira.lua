@@ -67,7 +67,7 @@ function entity:on_interaction()
       game:start_dialog("gaira.1.ordon", function()
         game:set_value("i1911", game:get_value("i1911")+1)
       end)
-    elseif game:get_value("i1911") == 2 then
+    elseif game:get_value("i1911") == 2 and (not game:get_value("b1699") and game:get_value("i1603") >= 5) then
       game:start_dialog("gaira.2.ordon", function()
         game:set_value("i1911", game:get_value("i1911")+1)
         game:set_value("i1602", 1)
