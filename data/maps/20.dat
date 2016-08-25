@@ -8112,6 +8112,15 @@ destination{
 
 tile{
   layer = 2,
+  x = 1024,
+  y = 896,
+  width = 48,
+  height = 24,
+  pattern = "1499",
+}
+
+tile{
+  layer = 2,
   x = 576,
   y = 96,
   width = 48,
@@ -10445,7 +10454,7 @@ tile{
   layer = 2,
   x = 752,
   y = 928,
-  width = 48,
+  width = 288,
   height = 24,
   pattern = "1499",
 }
