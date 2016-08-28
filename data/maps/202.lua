@@ -121,7 +121,7 @@ end
 function map:on_draw(dst_surface)
   local x,y = map:get_camera():get_position()
   local w,h = map:get_camera():get_size()
-  if draw_counter >= 15 then
+  if draw_counter >= 10 then
     lights:clear()
     shadow:fill_color({032,064,128,128})
     for e in map:get_entities("torch_") do

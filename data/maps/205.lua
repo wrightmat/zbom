@@ -247,9 +247,9 @@ function map:on_draw(dst_surface)
     end
     draw_counter = 0
   end
-  draw_counter = draw_counter + 1
   lights:draw_region(x,y,w,h,shadow,x,y)
   shadow:draw_region(x,y,w,h,dst_surface)
+  draw_counter = draw_counter + 1
   end
 end
 

@@ -117,6 +117,17 @@ function game:switch_time_of_day()
 end
 
 function game:calculate_percent_complete()
+  if game:get_value("i1602")==nil then game:set_value("i1602", 0) end
+  if game:get_value("i1603")==nil then game:set_value("i1603", 0) end
+  if game:get_value("i1604")==nil then game:set_value("i1604", 0) end
+  if game:get_value("i1605")==nil then game:set_value("i1605", 0) end
+  if game:get_value("i1606")==nil then game:set_value("i1606", 0) end
+  if game:get_value("i1607")==nil then game:set_value("i1607", 0) end
+  if game:get_value("i1608")==nil then game:set_value("i1608", 0) end
+  if game:get_value("i1609")==nil then game:set_value("i1609", 0) end
+  if game:get_value("i1823")==nil then game:set_value("i1823", 0) end
+  if game:get_value("i1840")==nil then game:set_value("i1840", 0) end
+
   -- 100 total values = 100 percent.
   -- 32 values for heart pieces, 12 for trading sequence, 16 for warp points, 30 for misc. sidequests/items, 10 for misc.
   local percent_complete = (game:get_value("b1701") and 1 or 0) +
@@ -145,16 +156,7 @@ function game:calculate_percent_complete()
     (game:get_value("b1508") and 1 or 0) + (game:get_value("b1509") and 1 or 0) +
     (game:get_value("b1510") and 1 or 0) + (game:get_value("b1511") and 1 or 0) +
     (game:get_value("b1512") and 1 or 0) + (game:get_value("b1513") and 1 or 0) +
-    (game:get_value("b1514") and 1 or 0) + (game:get_value("b1515") and 1 or 0) -- Warp points here.
-
-    if game:get_value("i1602")==nil then game:set_value("i1602", 0) end
-    if game:get_value("i1603")==nil then game:set_value("i1603", 0) end
-    if game:get_value("i1604")==nil then game:set_value("i1604", 0) end
-    if game:get_value("i1605")==nil then game:set_value("i1605", 0) end
-    if game:get_value("i1606")==nil then game:set_value("i1606", 0) end
-    if game:get_value("i1607")==nil then game:set_value("i1607", 0) end
-    if game:get_value("i1608")==nil then game:set_value("i1608", 0) end
-    if game:get_value("i1609")==nil then game:set_value("i1609", 0) end -- Sidequests below here.
+    (game:get_value("b1514") and 1 or 0) + (game:get_value("b1515") and 1 or 0) -- Warp points above here. Sidequests below here.
 
     if game:get_value("i1602") >= 6 then percent_complete = percent_complete + 1 end  -- Gaira/Deacon
     if game:get_value("i1603") >= 5 then percent_complete = percent_complete + 2 end  -- Great Fairy Mystic Jade
