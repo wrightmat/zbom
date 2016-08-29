@@ -127,6 +127,7 @@ function game:calculate_percent_complete()
   if game:get_value("i1609")==nil then game:set_value("i1609", 0) end
   if game:get_value("i1823")==nil then game:set_value("i1823", 0) end
   if game:get_value("i1840")==nil then game:set_value("i1840", 0) end
+  if game:get_value("i1841")==nil then game:set_value("i1841", 0) end
 
   -- 100 total values = 100 percent.
   -- 32 values for heart pieces, 12 for trading sequence, 16 for warp points, 30 for misc. sidequests/items, 10 for misc.

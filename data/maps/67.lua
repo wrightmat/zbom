@@ -36,6 +36,9 @@ function map:on_started(destination)
     end
   end
 
+  if game:get_value("i1029") ~= 3 then
+    npc_galen:remove()
+  end
   if game:get_value("i1029") == 3 then
     -- Wait until Link gets outside to declare the child dead.
     -- that way when he goes back in the child will be gone from
@@ -102,4 +105,8 @@ function npc_goron_7:on_interaction()
   else
     game:start_dialog("goron7.0.goron_city")
   end
+end
+
+function npc_galen:on_interaction()
+  game:start_dialog("galen.2.outside")
 end
