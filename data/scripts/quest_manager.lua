@@ -304,8 +304,33 @@ local function initialize_maps()
   function map_metatable:on_draw(dst_surface)
     local game = self:get_game()
     local hour_of_day = (time_counter / 3000)
+    -- If in Subrosia, there's a special overlay (slightly darker)
+    if game:get_map():get_world() == "outside_subrosia" then
+      if draw_counter >= 25 then
+        shadow:fill_color({192,192,255,255})
+        lights:clear()
+        for e in game:get_map():get_entities("lava_") do
+          if e:is_enabled() and e:get_distance(game:get_hero()) <= 300 then
+            local xx,yy = e:get_position()
+            local sp = sol.sprite.create("entities/torch_light_tile")
+            sp:set_blend_mode("blend")
+            sp:draw(lights, xx-8, yy-4)
+          end
+        end
+        for e in game:get_map():get_entities("warp_") do
+          if e:is_enabled() and e:get_distance(game:get_hero()) <= 300 then
+            local xx,yy = e:get_position()
+            local sp = sol.sprite.create("entities/torch_light_tile")
+            sp:set_blend_mode("blend")
+            sp:draw(lights, xx-8, yy-8)
+          end
+        end
+        draw_counter = 0
+      end
+      lights:draw_region(camera_x,camera_y,camera_w,camera_h,shadow,camera_x,camera_y)
+      shadow:draw_region(camera_x,camera_y,camera_w,camera_h,dst_surface)
     -- Put the night (or sunrise or sunset) overlay on any outdoor map if it's night time.
-    if (hour_of_day >= 19.6 or hour_of_day <= 7.6) and
+    elseif (hour_of_day >= 19.6 or hour_of_day <= 7.6) and
        (game:is_in_outside_world() or (self:get_id() == "20" or self:get_id() == "21" or self:get_id() == "22")) then
       if draw_counter >= 15 then
         if hour_of_day >= 19.6 and hour_of_day < 20 then
@@ -405,7 +430,7 @@ local function initialize_maps()
             local xx,yy = e:get_position()
             local sp = sol.sprite.create("entities/torch_light_tile")
             sp:set_blend_mode("blend")
-            sp:draw(lights, xx-16, yy-20)
+            sp:draw(lights, xx-8, yy-8)
           end
         end
         for e in game:get_map():get_entities("poe") do

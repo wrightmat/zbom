@@ -43,7 +43,11 @@ end
 soil:add_collision_test(test_collision_with_hero_shovel, function(soil, entity)
   -- Remove the soil pile and leave several treasures.
   local sx, sy, sl = soil:get_position()
-  map:create_pickable({ layer = sl, x = sx, y = sy, treasure_name = "random" })
+  if map:get_world() == "outside_subrosia" then
+    map:create_pickable({ layer = sl, x = sx, y = sy, treasure_name = "random_subrosia" })
+  else
+    map:create_pickable({ layer = sl, x = sx, y = sy, treasure_name = "random" })
+  end
   sol.timer.start(soil, 100, function() -- Delay causes multiple treasures to be created.
     soil:remove()
   end)
