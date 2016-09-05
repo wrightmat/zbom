@@ -430,7 +430,7 @@ local function initialize_maps()
     if screen_overlay ~= nil then screen_overlay:draw(dst_surface) end
 
     -- As of Solarus 1.5, the function map:move_camera is deprecated, so we use a custom version instead.
-    function map_meta:move_camera(x, y, speed, callback, delay_before, delay_after)
+    function map_metatable:move_camera(x, y, speed, callback, delay_before, delay_after)
       local camera = self:get_camera()
       local game = self:get_game()
       local hero = self:get_hero()
