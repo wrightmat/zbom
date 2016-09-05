@@ -566,7 +566,9 @@ local function initialize_maps()
     
     -- Slowly drain magic when using lantern.
     if magic_counter >= 1000 and game:get_time_of_day() == "night" and game:is_in_outside_world() then
-      game:remove_magic(1)
+      if game:get_map():get_world() ~= "outside_subrosia" then
+        game:remove_magic(1)
+      end
       magic_counter = 0
     end
     if not game:is_suspended() then magic_counter = magic_counter + 1 end
