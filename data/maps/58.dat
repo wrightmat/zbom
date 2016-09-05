@@ -12,6 +12,42 @@ properties{
 
 tile{
   layer = 0,
+  x = 40,
+  y = 912,
+  width = 16,
+  height = 16,
+  pattern = "269",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 920,
+  width = 8,
+  height = 8,
+  pattern = "7",
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 120,
+  width = 16,
+  height = 16,
+  pattern = "270",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "7",
+}
+
+tile{
+  layer = 0,
   x = 96,
   y = 768,
   width = 16,
@@ -93,29 +129,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 472,
-  y = 120,
-  width = 16,
-  height = 16,
-  pattern = "270",
-}
-
-tile{
-  layer = 0,
   x = 0,
   y = 672,
   width = 48,
   height = 208,
   pattern = "275",
-}
-
-tile{
-  layer = 0,
-  x = 40,
-  y = 912,
-  width = 16,
-  height = 16,
-  pattern = "269",
 }
 
 tile{
