@@ -13,24 +13,6 @@ properties{
 tile{
   layer = 0,
   x = 0,
-  y = 728,
-  width = 328,
-  height = 32,
-  pattern = "1691",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 664,
-  width = 392,
-  height = 64,
-  pattern = "1691",
-}
-
-tile{
-  layer = 0,
-  x = 0,
   y = 0,
   width = 1120,
   height = 664,
@@ -44,6 +26,51 @@ tile{
   width = 16,
   height = 16,
   pattern = "609",
+}
+
+tile{
+  layer = 0,
+  x = 784,
+  y = 608,
+  width = 8,
+  height = 8,
+  pattern = "1691",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 656,
+  width = 16,
+  height = 16,
+  pattern = "609",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 656,
+  width = 8,
+  height = 8,
+  pattern = "1691",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 728,
+  width = 328,
+  height = 32,
+  pattern = "1691",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 664,
+  width = 392,
+  height = 64,
+  pattern = "1691",
 }
 
 tile{
@@ -212,15 +239,6 @@ tile{
   layer = 0,
   x = 760,
   y = 624,
-  width = 16,
-  height = 16,
-  pattern = "609",
-}
-
-tile{
-  layer = 0,
-  x = 392,
-  y = 656,
   width = 16,
   height = 16,
   pattern = "609",
@@ -2072,7 +2090,7 @@ wall{
   x = 144,
   y = 0,
   width = 8,
-  height = 752,
+  height = 760,
   stops_npcs = true,
   stops_enemies = true,
 }
@@ -2082,7 +2100,7 @@ wall{
   x = 936,
   y = 0,
   width = 8,
-  height = 608,
+  height = 616,
   stops_npcs = true,
   stops_enemies = true,
 }

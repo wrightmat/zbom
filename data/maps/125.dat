@@ -3457,6 +3457,46 @@ teletransporter{
   destination = "_side",
 }
 
+enemy{
+  name = "hinox_5",
+  layer = 0,
+  x = 968,
+  y = 173,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "hinox_6",
+  layer = 0,
+  x = 296,
+  y = 69,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "hinox_7",
+  layer = 0,
+  x = 912,
+  y = 1069,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "hinox_8",
+  layer = 0,
+  x = 880,
+  y = 637,
+  direction = 3,
+  breed = "hinox",
+  treasure_name = "random_enemy",
+}
+
 tile{
   layer = 2,
   x = 288,
