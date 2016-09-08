@@ -74,10 +74,12 @@ function warp_menu:on_started()
     if game:get_value(v[1]) then table.insert(matched, v[1]) end
   end
 
-  -- Ensure the hero can't move.
-  hero_x, hero_y = game:get_map():get_hero():get_position()
-  game:get_map():get_hero():set_position(-100, -100)
-  --game:get_map():get_hero():freeze()
+  -- Ensure the hero can't move and the HUD is correct.
+  game:get_map():get_hero():freeze()
+  game.hud.elements[10].surface:set_opacity(128) --item_icon_1
+  game.hud.elements[11].surface:set_opacity(128) --item_icon_2
+  game.hud.elements[12].surface:set_opacity(128) --attack_icon
+  game.hud.elements[9]:on_menu_opened() -- pause_icon
 
   -- Lower the volume (so ocarina sound can be heard when point selected).
   initial_volume = sol.audio.get_music_volume()
@@ -88,7 +90,7 @@ function warp_menu:on_command_pressed(command)
   if command == "left" or command == "up" or command == "right" or command == "down" then
     self:next_warp_point()
     handled = true
-  elseif command == "action" or command == "attack" then
+  elseif command == "action" then
     for k, v in pairs(warp_points) do
       if v[1] == index and game:get_value(v[1]) then
         game:start_dialog("warp.to_"..v[2], function(answer)
@@ -104,7 +106,6 @@ function warp_menu:on_command_pressed(command)
     end
   elseif command == "pause" then
     sol.menu.stop(warp_menu)
-    game:get_map():get_hero():set_position(hero_x, hero_y)
   end
 
   return true
@@ -134,7 +135,6 @@ function warp_menu:next_warp_point()
       if game:get_value(v[1]) then table.insert(matched, v[1]) end
     end
   end
-
 end
 
 function warp_menu:set_cursor_position(x, y)
@@ -148,6 +148,7 @@ function warp_menu:set_cursor_position(x, y)
   for k, v in pairs(warp_points) do
     if v[3] == self.cursor_x and v[4] == self.cursor_y and game:get_value(v[1]) then
       self.caption_text_2:set_text(v[5])
+      game:set_custom_command_effect("action", "validate")
     end
   end
 end
@@ -182,4 +183,10 @@ end
 function warp_menu:on_finished()
   sol.timer.start(game, 1500, function() sol.audio.set_music_volume(initial_volume) end)
   game:get_map():get_hero():unfreeze()
+  game:set_custom_command_effect("pause", nil)
+  game:set_custom_command_effect("action", nil)
+  game.hud.elements[10].surface:set_opacity(255) --item_icon_1
+  game.hud.elements[11].surface:set_opacity(255) --item_icon_2
+  game.hud.elements[12].surface:set_opacity(255) --attack_icon
+  game.hud.elements[9]:on_menu_closed() -- pause_icon
 end
