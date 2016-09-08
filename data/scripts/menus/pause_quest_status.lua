@@ -156,7 +156,7 @@ function quest_status_submenu:set_cursor_position(position)
       self.cursor_sprite_y = 172
     end
     if position == 7 then
-      self.game:set_custom_command_effect("action", "info")
+      self.game:set_custom_command_effect("action", "change")
     else
       self.game:set_custom_command_effect("action", nil)
     end
