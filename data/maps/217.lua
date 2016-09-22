@@ -6,7 +6,11 @@ local game = map:get_game()
 ---------------------------------------------
 
 function map:on_started(destination)
-  if not game:get_value("b1168") then boss_helmaroc:set_enabled(false) end
+  if not game:get_value("b1168") then
+    boss_helmaroc:set_enabled(false)
+  else
+    map:open_doors("door_boss")
+  end
   if not game:get_value("b1169") then boss_heart:set_enabled(false) end
 end
 

@@ -96,7 +96,6 @@ function warp_menu:on_command_pressed(command)
         game:start_dialog("warp.to_"..v[2], function(answer)
           if answer == 1 then
             sol.menu.stop(warp_menu)
-            game:get_map():get_hero():set_position(hero_x, hero_y)
             game:get_map():get_hero():set_animation("ocarina")
             sol.audio.play_sound("ocarina_wind")
             game:get_map():get_entity("hero"):teleport(v[2], "ocarina_warp", "fade")
