@@ -597,7 +597,7 @@ local function initialize_maps()
     end
     
     -- Update the time of day.
-    -- One minute (60 seconds) is two hours in-game. Update every 0.1 minute.
+    -- One minute (60 seconds) is one hour in-game. Update every 0.1 minute.
     if game:get_value("hour_of_day") == nil then game:set_value("hour_of_day", 12) end
     if time_counter == nil then time_counter = game:get_value("hour_of_day") * 6000 end
     local hour_of_day = game:get_value("hour_of_day")
