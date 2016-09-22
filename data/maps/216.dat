@@ -5410,18 +5410,6 @@ door{
   cannot_open_dialog = "_small_key_required",
 }
 
-door{
-  name = "door_key3_2",
-  layer = 0,
-  x = 664,
-  y = 416,
-  direction = 1,
-  sprite = "entities/door_small_key",
-  savegame_variable = "b1176",
-  opening_condition = "dungeon_7_small_keys",
-  opening_condition_consumed = true,
-}
-
 enemy{
   name = "helmasaur_1",
   layer = 0,
@@ -5430,6 +5418,20 @@ enemy{
   direction = 3,
   breed = "helmasaur_blue",
   treasure_name = "random_enemy",
+}
+
+door{
+  name = "door_key3_2",
+  layer = 0,
+  x = 664,
+  y = 416,
+  direction = 1,
+  sprite = "entities/door_small_key",
+  savegame_variable = "b1176",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_7_small_keys",
+  opening_condition_consumed = true,
+  cannot_open_dialog = "_small_key_required",
 }
 
 tile{

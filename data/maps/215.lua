@@ -24,6 +24,7 @@ function map:on_started(destination)
     switch_2:set_activated(true)
   end
   if not game:get_value("b1161") then chest_map:set_enabled(false) end
+  if game:get_value("b1166") then chest_map:set_enabled(true) end
 end
 
 function switch_1:on_activated()
