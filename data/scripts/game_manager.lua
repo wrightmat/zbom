@@ -106,11 +106,11 @@ function game:switch_time_of_day()
   if game:get_value("time_of_day") == "day" then
     game:set_value("time_of_day", "night")
     game:set_value("hour_of_day", 21)
-    time_counter = 21 * 3000
+    time_counter = 21 * 6000
   else
     game:set_value("time_of_day", "day")
     game:set_value("hour_of_day", 8)
-    time_counter = 8 * 3000
+    time_counter = 8 * 6000
   end
   return true
 end

@@ -289,21 +289,29 @@ end
 
 local function initialize_maps()
   local map_metatable = sol.main.get_metatable("map")
-  local shadow = sol.surface.create(1120, 1120)
-  local lights = sol.surface.create(1120, 1120)
+  local shadow = sol.surface.create(320, 240)
+  local lights = sol.surface.create(320, 240)
   shadow:set_blend_mode("multiply")
   lights:set_blend_mode("add")
   local heat_timer, swim_timer, draw_counter, magic_counter, opacity
-  local camera_x, camera_y, camera_h, camera_w
   screen_overlay = nil
   draw_counter = 0
   magic_counter = 0
   opacity = 255
   local t = {}
+  local light_sprites = {
+    torch = sol.sprite.create("entities/torch_light"),
+    torch_tile = sol.sprite.create("entities/torch_light_tile"),
+    torch_hero = sol.sprite.create("entities/torch_light_hero")
+  }
+  light_sprites.torch:set_blend_mode("blend")
+  light_sprites.torch_tile:set_blend_mode("blend")
+  light_sprites.torch_hero:set_blend_mode("blend")
 
   function map_metatable:on_draw(dst_surface)
     local game = self:get_game()
-    local hour_of_day = (time_counter / 3000)
+    local camera_x,camera_y = game:get_map():get_camera():get_position() 
+    local hour_of_day = (time_counter / 6000)
     -- If in Subrosia, there's a special overlay (slightly darker)
     if game:get_map():get_world() == "outside_subrosia" then
       if draw_counter >= 25 then
@@ -312,23 +320,19 @@ local function initialize_maps()
         for e in game:get_map():get_entities("lava_") do
           if e:is_enabled() and e:get_distance(game:get_hero()) <= 300 then
             local xx,yy = e:get_position()
-            local sp = sol.sprite.create("entities/torch_light_tile")
-            sp:set_blend_mode("blend")
-            sp:draw(lights, xx-8, yy-4)
+            light_sprites.torch_tile:draw(lights, xx-camera_x-8, yy-camera_y-4)
           end
         end
         for e in game:get_map():get_entities("warp_") do
           if e:is_enabled() and e:get_distance(game:get_hero()) <= 300 then
             local xx,yy = e:get_position()
-            local sp = sol.sprite.create("entities/torch_light_tile")
-            sp:set_blend_mode("blend")
-            sp:draw(lights, xx-8, yy-8)
+            light_sprites.torch_tile:draw(lights, xx-camera_x-8, yy-camera_y-8)
           end
         end
         draw_counter = 0
       end
-      lights:draw_region(camera_x,camera_y,camera_w,camera_h,shadow,camera_x,camera_y)
-      shadow:draw_region(camera_x,camera_y,camera_w,camera_h,dst_surface)
+      lights:draw(shadow)
+      shadow:draw(dst_surface)
     -- Put the night (or sunrise or sunset) overlay on any outdoor map if it's night time.
     elseif (hour_of_day >= 19.6 or hour_of_day <= 7.6) and
        (game:is_in_outside_world() or (self:get_id() == "20" or self:get_id() == "21" or self:get_id() == "22")) then
@@ -338,13 +342,13 @@ local function initialize_maps()
           -- Dusk
           if t[1] >= 2 then
             t[1] = t[1] - 2 -- Red: Goal is 0 (fade to black, which is the same as fading in for this blend mode)
-          else time_counter = 20 * 3000 end
+          else time_counter = 20 * 6000 end
           if t[2] >= 3 then
             t[2] = t[2] - 3 -- Green: Goal is 0
-          else time_counter = 20 * 3000 end
+          else time_counter = 20 * 6000 end
           if t[3] >= 4 then
             t[3] = t[3] - 4 -- Blue: Goal is 0
-          else time_counter = 20 * 3000 end
+          else time_counter = 20 * 6000 end
           shadow:fill_color(t)
         elseif hour_of_day >= 20 and hour_of_day < 21 then
           -- Sunset
@@ -352,19 +356,19 @@ local function initialize_maps()
             t[1] = t[1] - 3 -- Red: Goal is 32 (from 255)
           else
             game:set_value("time_of_day", "night")
-            time_counter = 21 * 3000
+            time_counter = 21 * 6000
           end
           if t[2] >= 64 then
             t[2] = t[2] - 2 -- Green: Goal is 64 (from 255)
           else
             game:set_value("time_of_day", "night")
-            time_counter = 21 * 3000
+            time_counter = 21 * 6000
           end
           if t[3] >= 128 then
             t[3] = t[3] - 1  -- Blue: Goal is 128 (from 255)
           else
             game:set_value("time_of_day", "night")
-            time_counter = 21 * 3000
+            time_counter = 21 * 6000
           end
           shadow:fill_color(t)
         elseif hour_of_day >= 6 and hour_of_day <= 7 then
@@ -379,19 +383,19 @@ local function initialize_maps()
             t[1] = t[1] + 3 -- Red: Goal is 255 (fade to white, which is the same as fading out for this blend mode)
           else
             game:set_value("time_of_day", "day")
-            time_counter = 7.7 * 3000
+            time_counter = 7.7 * 6000
           end
           if t[2] <= 252 then
             t[2] = t[2] + 4 -- Green: Goal is 255
           else
             game:set_value("time_of_day", "day")
-            time_counter = 7.7 * 3000
+            time_counter = 7.7 * 6000
           end
           if t[3] <= 251 then
             t[3] = t[3] + 5 -- Blue: Goal is 255
           else
             game:set_value("time_of_day", "day")
-            time_counter = 7.7 * 3000
+            time_counter = 7.7 * 6000
           end
           shadow:fill_color(t)
         else
@@ -404,53 +408,41 @@ local function initialize_maps()
         for e in game:get_map():get_entities("torch_") do
           if e:is_enabled() and e:get_sprite():get_animation() == "lit" and e:get_distance(game:get_hero()) <= 300 then
             local xx,yy = e:get_position()
-            local sp = sol.sprite.create("entities/torch_light")
-            sp:set_blend_mode("blend")
-            sp:draw(lights, xx-32, yy-32)
+            light_sprites.torch:draw(lights, xx-camera_x-32, yy-camera_y-32)
          end
         end
         for e in game:get_map():get_entities("night_") do
           if e:is_enabled() and e:get_distance(game:get_hero()) <= 300 then
             local xx,yy = e:get_position()
-            local sp = sol.sprite.create("entities/torch_light")
-            sp:set_blend_mode("blend")
-            sp:draw(lights, xx-24, yy-24)
+            light_sprites.torch:draw(lights, xx-camera_x-24, yy-camera_y-24)
           end
         end
         for e in game:get_map():get_entities("lava_") do
           if e:is_enabled() and e:get_distance(game:get_hero()) <= 300 then
             local xx,yy = e:get_position()
-            local sp = sol.sprite.create("entities/torch_light_tile")
-            sp:set_blend_mode("blend")
-            sp:draw(lights, xx-8, yy-8)
+            light_sprites.torch_tile:draw(lights, xx-camera_x-8, yy-camera_y-8)
           end
         end
         for e in game:get_map():get_entities("warp_") do
           if e:is_enabled() and e:get_distance(game:get_hero()) <= 300 then
             local xx,yy = e:get_position()
-            local sp = sol.sprite.create("entities/torch_light_tile")
-            sp:set_blend_mode("blend")
-            sp:draw(lights, xx-8, yy-8)
+            light_sprites.torch_tile:draw(lights, xx-camera_x-8, yy-camera_y-8)
           end
         end
         for e in game:get_map():get_entities("poe") do
           if e:is_enabled() and e:get_distance(game:get_hero()) <= 300 then
             local xx,yy = e:get_position()
-            local sp = sol.sprite.create("entities/torch_light")
-            sp:set_blend_mode("blend")
-            sp:draw(lights, xx-32, yy-32)
+            light_sprites.torch:draw(lights, xx-camera_x-32, yy-camera_y-32)
           end
         end
         if game:has_item("lamp") and game:get_magic() > 0 and game:get_time_of_day() == "night" then
           local xx, yy = game:get_map():get_entity("hero"):get_position()
-          local sp = sol.sprite.create("entities/torch_light_hero")
-          sp:set_blend_mode("blend")
-          sp:draw(lights, xx-64, yy-68)
+          light_sprites.torch_hero:draw(lights, xx-camera_x-64, yy-camera_y-68)
         end
         draw_counter = 0
       end
-      lights:draw_region(camera_x,camera_y,camera_w,camera_h,shadow,camera_x,camera_y)
-      shadow:draw_region(camera_x,camera_y,camera_w,camera_h,dst_surface)
+      lights:draw(shadow)
+      shadow:draw(dst_surface)
     end
     if screen_overlay ~= nil then screen_overlay:draw(dst_surface) end
 
@@ -561,8 +553,6 @@ local function initialize_maps()
   
   function map_metatable:on_update()
     local game = self:get_game()
-    camera_x,camera_y = game:get_map():get_camera():get_position()
-    camera_w,camera_h = game:get_map():get_camera():get_size()    
     
     -- Slowly drain magic when using lantern.
     if magic_counter >= 1000 and game:get_time_of_day() == "night" and game:is_in_outside_world() then
@@ -609,10 +599,10 @@ local function initialize_maps()
     -- Update the time of day.
     -- One minute (60 seconds) is two hours in-game. Update every 0.1 minute.
     if game:get_value("hour_of_day") == nil then game:set_value("hour_of_day", 12) end
-    if time_counter == nil then time_counter = game:get_value("hour_of_day") * 3000 end
+    if time_counter == nil then time_counter = game:get_value("hour_of_day") * 6000 end
     local hour_of_day = game:get_value("hour_of_day")
     if hour_of_day == nil then hour_of_day = 0 end
-    hour_of_day = (time_counter / 3000)
+    hour_of_day = (time_counter / 6000)
     
     if hour_of_day >= 23 then
       hour_of_day = 0
