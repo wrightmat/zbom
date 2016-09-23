@@ -160,7 +160,6 @@ function tone_manager:check()
   sol.timer.start(self, game.time_flow, function()
     self:check()
   end)
-print(game:get_value("hour_of_day") .. ":" .. minute)
 end
 
 function tone_manager:get_new_tone(hour, minute)
@@ -208,7 +207,7 @@ function tone_manager:get_new_tone(hour, minute)
 	elseif hour == 3 and minute >= 30 then
 	  self:set_new_tone(80, 80, 230)
   else
-    self:set_new_tone(80, 80, 230)
+    self:set_new_tone(40, 60, 180)
 	end
 	
 	if game.raining then
@@ -244,7 +243,6 @@ function tone_manager:on_draw(dst_surface)
     self.shadow:fill_color{mr, mg, mb, ma}
   elseif self.time_system and mr == nil then
     -- We are outside
-    --print("outside tone: " .. cr .. ", " .. cg .. ", " .. cb)
     self.shadow:fill_color{cr, cg, cb, 255}
   elseif not self.time_system and mr == nil then
     -- The map has undefined tone.
@@ -274,7 +272,7 @@ function tone_manager:on_draw(dst_surface)
         self.effects.torch:draw(self.light, xx - cam_x - 24, yy - cam_y - 24)
 		  end
     end
-  end  
+  end
   
   for e in map:get_entities("lava_") do
     if e:is_enabled() and e:get_distance(hero) <= 300 then
@@ -282,7 +280,7 @@ function tone_manager:on_draw(dst_surface)
 	    self.effects.torch_tile:draw(self.light, xx - cam_x - 8, yy - cam_y - 8)
     end
   end
-
+  
   for e in map:get_entities("warp_") do
     if e:is_enabled() and e:get_distance(hero) <= 300 then
       local xx,yy = e:get_position()
@@ -290,9 +288,24 @@ function tone_manager:on_draw(dst_surface)
     end
   end
   
-  if game:has_item("lamp") and game:get_magic() > 0 and game:get_time_of_day() == "night" then
-    --self.effects.torch_lantern:set_direction(hero:get_direction())
-    self.effects.torch_hero:draw(self.light, x - cam_x - 64, y - cam_y - 68)
+  for e in map:get_entities("switch_") do
+    if e:get_distance(hero) <= 300 then
+      local xx,yy = e:get_position()
+	    self.effects.torch_tile:draw(self.light, xx - cam_x - 8, yy - cam_y - 8)
+    end
+  end
+
+  for e in map:get_entities("poe_") do
+    if e:is_enabled() and e:get_distance(hero) <= 300 then
+      local xx,yy = e:get_position()
+	    self.effects.torch:draw(self.light, xx - cam_x - 32, yy - cam_y - 32)
+    end
+  end
+  
+  if game:has_item("lamp") and game:get_magic() > 0 then
+    if game:get_time_of_day() == "night" or self.map:get_id() == "202" then
+      self.effects.torch_hero:draw(self.light, x - cam_x - 64, y - cam_y - 68)
+    end
 	end
   
   self.light:draw(self.shadow)
