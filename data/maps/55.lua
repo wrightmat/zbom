@@ -23,7 +23,9 @@ function map:on_started(destination)
         end)
       else
         game:start_dialog("ordona.7.septen", game:get_player_name(), function()
-          sol.timer.start(500, function() game:set_map_tone(255,255,255,255) end)
+          sol.timer.start(500, function()
+            if game:get_time_of_day() ~= "night" then game:set_map_tone(255,255,255,255) end
+          end)
           hero:unfreeze()
           game:set_map_tone(32,64,128,255)
           game:add_max_stamina(100)
