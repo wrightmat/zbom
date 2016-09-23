@@ -289,14 +289,15 @@ end
 
 local function initialize_maps()
   local map_metatable = sol.main.get_metatable("map")
+  local heat_timer, swim_timer, draw_counter, magic_counter, opacity
+  screen_overlay = nil
+  magic_counter = 0
+--[=====[ 
   local shadow = sol.surface.create(320, 240)
   local lights = sol.surface.create(320, 240)
   shadow:set_blend_mode("multiply")
   lights:set_blend_mode("add")
-  local heat_timer, swim_timer, draw_counter, magic_counter, opacity
-  screen_overlay = nil
   draw_counter = 0
-  magic_counter = 0
   opacity = 255
   local t = {}
   local light_sprites = {
@@ -445,47 +446,45 @@ local function initialize_maps()
       shadow:draw(dst_surface)
     end
     if screen_overlay ~= nil then screen_overlay:draw(dst_surface) end
+--]=====]
 
-    -- As of Solarus 1.5, the function map:move_camera is deprecated, so we use a custom version instead.
-    function map_metatable:move_camera(x, y, speed, callback, delay_before, delay_after)
-      local camera = self:get_camera()
-      local game = self:get_game()
-      local hero = self:get_hero()
+  -- As of Solarus 1.5, the function map:move_camera is deprecated, so we use a custom version instead.
+  function map_metatable:move_camera(x, y, speed, callback, delay_before, delay_after)
+    local camera = self:get_camera()
+    local game = self:get_game()
+    local hero = self:get_hero()
       
-      delay_before = delay_before or 1000
-      delay_after = delay_after or 1000
+    delay_before = delay_before or 1000
+    delay_after = delay_after or 1000
       
-      local back_x, back_y = camera:get_position_to_track(hero)
-      game:set_suspended(true)
-      camera:start_manual()
+    local back_x, back_y = camera:get_position_to_track(hero)
+    game:set_suspended(true)
+    camera:start_manual()
 
-      local movement = sol.movement.create("target")
-      movement:set_target(camera:get_position_to_track(x, y))
-      movement:set_ignore_obstacles(true)
-      movement:set_speed(speed)
-      movement:start(camera, function()
-        local timer_1 = sol.timer.start(self, delay_before, function()
-          if callback ~= nil then
-            callback()
-          end
-          local timer_2 = sol.timer.start(self, delay_after, function()
-            local movement = sol.movement.create("target")
-            movement:set_target(back_x, back_y)
-            movement:set_ignore_obstacles(true)
-            movement:set_speed(speed)
-            movement:start(camera, function()
-              game:set_suspended(false)
-              camera:start_tracking(hero)
-              if self.on_camera_back ~= nil then
-                self:on_camera_back()
-              end
-            end)
+    local movement = sol.movement.create("target")
+    movement:set_target(camera:get_position_to_track(x, y))
+    movement:set_ignore_obstacles(true)
+    movement:set_speed(speed)
+    movement:start(camera, function()
+      local timer_1 = sol.timer.start(self, delay_before, function()
+        if callback ~= nil then callback() end
+        local timer_2 = sol.timer.start(self, delay_after, function()
+          local movement = sol.movement.create("target")
+          movement:set_target(back_x, back_y)
+          movement:set_ignore_obstacles(true)
+          movement:set_speed(speed)
+          movement:start(camera, function()
+            game:set_suspended(false)
+            camera:start_tracking(hero)
+            if self.on_camera_back ~= nil then
+              self:on_camera_back()
+            end
           end)
-          timer_2:set_suspended_with_map(false)
         end)
-        timer_1:set_suspended_with_map(false)
+        timer_2:set_suspended_with_map(false)
       end)
-    end
+      timer_1:set_suspended_with_map(false)
+    end)
   end
   
   function map_metatable:on_started(destination)
@@ -562,7 +561,6 @@ local function initialize_maps()
       magic_counter = 0
     end
     if not game:is_suspended() then magic_counter = magic_counter + 1 end
-    draw_counter = draw_counter + 1
     
     -- If hero doesn't have red tunic on, slowly remove stamina in hot areas (Subrosia).
     if game:get_map():get_world() == "outside_subrosia" and
@@ -598,29 +596,29 @@ local function initialize_maps()
     
     -- Update the time of day.
     -- One minute (60 seconds) is one hour in-game. Update every 0.1 minute.
-    if game:get_value("hour_of_day") == nil then game:set_value("hour_of_day", 12) end
-    if time_counter == nil then time_counter = game:get_value("hour_of_day") * 6000 end
-    local hour_of_day = game:get_value("hour_of_day")
-    if hour_of_day == nil then hour_of_day = 0 end
-    hour_of_day = (time_counter / 6000)
+    --if game:get_value("hour_of_day") == nil then game:set_value("hour_of_day", 12) end
+    --if time_counter == nil then time_counter = game:get_value("hour_of_day") * 6000 end
+    --local hour_of_day = game:get_value("hour_of_day")
+    --if hour_of_day == nil then hour_of_day = 0 end
+    --hour_of_day = (time_counter / 6000)
     
-    if hour_of_day >= 23 then
-      hour_of_day = 0
-      time_counter = 0
-    end
-    if hour_of_day > 21 then
-      game:set_time_of_day("night")
-      for entity in game:get_map():get_entities("night_") do
-        entity:set_enabled(true)
-      end
-    elseif hour_of_day > 7 and hour_of_day < 21 then
-      game:set_time_of_day("day")
-      for entity in game:get_map():get_entities("night_") do
-        entity:set_enabled(false)
-      end
-    end
-    game:set_value("hour_of_day", hour_of_day)
-    if not game:is_suspended() then time_counter = time_counter + 1 end
+    --if hour_of_day >= 23 then
+    --  hour_of_day = 0
+    --  time_counter = 0
+    --end
+    --if hour_of_day > 21 then
+    --  game:set_time_of_day("night")
+    --  for entity in game:get_map():get_entities("night_") do
+    --    entity:set_enabled(true)
+    --  end
+    --elseif hour_of_day > 7 and hour_of_day < 21 then
+    --  game:set_time_of_day("day")
+    --  for entity in game:get_map():get_entities("night_") do
+    --    entity:set_enabled(false)
+    --  end
+    --end
+    --game:set_value("hour_of_day", hour_of_day)
+    --if not game:is_suspended() then time_counter = time_counter + 1 end
   end
 end
 

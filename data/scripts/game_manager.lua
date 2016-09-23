@@ -8,6 +8,7 @@ sol.main.load_file("scripts/menus/pause")(game)
 sol.main.load_file("scripts/menus/credits")(game)
 sol.main.load_file("scripts/menus/game_over")(game)
 sol.main.load_file("scripts/menus/dialog_box")(game)
+sol.main.load_file("scripts/tone_manager")(game)
 sol.main.load_file("scripts/dungeons")(game)
 sol.main.load_file("scripts/equipment")(game)
 local hud_manager = require("scripts/hud/hud")
@@ -15,6 +16,7 @@ local camera_manager = require("scripts/camera_manager")
 local condition_manager = require("scripts/hero_condition")
 game.save_between_maps = require("scripts/save_between_maps")
 game.independent_entities = {}
+game.time_flow = 1000
 
 function game:on_started()
   -- Set up the dialog box, HUD, hero conditions and effects.
@@ -49,8 +51,9 @@ end
 -- This event is called when a new map has just become active.
 function game:on_map_changed(map)
   -- Notify the hud.
+  self:start_tone_system()
   self.hud:on_map_changed(map)
-
+  
   game.save_between_maps:load_map(map) -- Create saved and carried entities.
 end
 
@@ -87,32 +90,6 @@ end
 -- Returns whether the current map is in a dungeon.
 function game:is_in_dungeon()
   return self:get_dungeon() ~= nil
-end
-
--- Returns/sets the current time of day
-function game:get_time_of_day()
-  if game:get_value("time_of_day") == nil then game:set_value("time_of_day", "day") end
-  return game:get_value("time_of_day")
-end
-function game:set_time_of_day(tod)
-  if tod == "day" or tod == "night" then
-    game:set_value("time_of_day", tod)
-  end
-  return true
-end
-function game:switch_time_of_day()
-  -- Function called when sleeping.
-  -- Sleeping during day takes player to 2100 (9pm) and sleeping at night takes us to 0800 (8am).
-  if game:get_value("time_of_day") == "day" then
-    game:set_value("time_of_day", "night")
-    game:set_value("hour_of_day", 21)
-    time_counter = 21 * 6000
-  else
-    game:set_value("time_of_day", "day")
-    game:set_value("hour_of_day", 8)
-    time_counter = 8 * 6000
-  end
-  return true
 end
 
 function game:calculate_percent_complete()
