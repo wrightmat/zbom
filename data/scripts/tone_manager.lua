@@ -239,7 +239,7 @@ function tone_manager:on_draw(dst_surface)
   -- Fill the Tone Surface
   if mr ~= nil then
     -- We are in a map where tone are defined
-    --print("map defined tone: " .. mr .. ", " .. mg .. ", " .. mb .. ", " .. ma)
+    print("map defined tone: " .. mr .. ", " .. mg .. ", " .. mb .. ", " .. ma)
 	  self.shadow:clear() 
     self.shadow:fill_color{mr, mg, mb, ma}
   elseif self.time_system and mr == nil then
