@@ -6,7 +6,7 @@ local quest_manager = {}
 -- Initialize the behavior of destructible entities.
 local function initialize_destructibles()
   local destructible_meta = sol.main.get_metatable("destructible")
-
+  
   function destructible_meta:on_looked()
     -- Here, self is the destructible object.
     local game = self:get_game()
@@ -24,7 +24,7 @@ local function initialize_destructibles()
       game:start_dialog("_cannot_lift_still_too_heavy");
     end
   end
-
+  
   -- Make certain entities automatic hooks for the hookshot.
   function destructible_meta:is_hookshot_hook()
     if self:get_destruction_sound() ~= nil then
@@ -36,7 +36,7 @@ end
 -- Initialize sensor behavior specific to this quest.
 local function initialize_sensors()
   local sensor_meta = sol.main.get_metatable("sensor")
-
+  
   function sensor_meta:on_activated()
     local game = self:get_game()
     local hero = self:get_map():get_hero()
@@ -290,163 +290,7 @@ end
 local function initialize_maps()
   local map_metatable = sol.main.get_metatable("map")
   local heat_timer, swim_timer, draw_counter, magic_counter, opacity
-  screen_overlay = nil
   magic_counter = 0
---[=====[ 
-  local shadow = sol.surface.create(320, 240)
-  local lights = sol.surface.create(320, 240)
-  shadow:set_blend_mode("multiply")
-  lights:set_blend_mode("add")
-  draw_counter = 0
-  opacity = 255
-  local t = {}
-  local light_sprites = {
-    torch = sol.sprite.create("entities/torch_light"),
-    torch_tile = sol.sprite.create("entities/torch_light_tile"),
-    torch_hero = sol.sprite.create("entities/torch_light_hero")
-  }
-  light_sprites.torch:set_blend_mode("blend")
-  light_sprites.torch_tile:set_blend_mode("blend")
-  light_sprites.torch_hero:set_blend_mode("blend")
-
-  function map_metatable:on_draw(dst_surface)
-    local game = self:get_game()
-    local camera_x,camera_y = game:get_map():get_camera():get_position() 
-    local hour_of_day = (time_counter / 6000)
-    -- If in Subrosia, there's a special overlay (slightly darker)
-    if game:get_map():get_world() == "outside_subrosia" then
-      if draw_counter >= 25 then
-        shadow:fill_color({192,192,255,255})
-        lights:clear()
-        for e in game:get_map():get_entities("lava_") do
-          if e:is_enabled() and e:get_distance(game:get_hero()) <= 300 then
-            local xx,yy = e:get_position()
-            light_sprites.torch_tile:draw(lights, xx-camera_x-8, yy-camera_y-4)
-          end
-        end
-        for e in game:get_map():get_entities("warp_") do
-          if e:is_enabled() and e:get_distance(game:get_hero()) <= 300 then
-            local xx,yy = e:get_position()
-            light_sprites.torch_tile:draw(lights, xx-camera_x-8, yy-camera_y-8)
-          end
-        end
-        draw_counter = 0
-      end
-      lights:draw(shadow)
-      shadow:draw(dst_surface)
-    -- Put the night (or sunrise or sunset) overlay on any outdoor map if it's night time.
-    elseif (hour_of_day >= 19.6 or hour_of_day <= 7.6) and
-       (game:is_in_outside_world() or (self:get_id() == "20" or self:get_id() == "21" or self:get_id() == "22")) then
-      if draw_counter >= 15 then
-        if hour_of_day >= 19.6 and hour_of_day < 20 then
-          t[1] = 255; t[2] = 255; t[3] = 255
-          -- Dusk
-          if t[1] >= 2 then
-            t[1] = t[1] - 2 -- Red: Goal is 0 (fade to black, which is the same as fading in for this blend mode)
-          else time_counter = 20 * 6000 end
-          if t[2] >= 3 then
-            t[2] = t[2] - 3 -- Green: Goal is 0
-          else time_counter = 20 * 6000 end
-          if t[3] >= 4 then
-            t[3] = t[3] - 4 -- Blue: Goal is 0
-          else time_counter = 20 * 6000 end
-          shadow:fill_color(t)
-        elseif hour_of_day >= 20 and hour_of_day < 21 then
-          -- Sunset
-          if t[1] >= 32 then
-            t[1] = t[1] - 3 -- Red: Goal is 32 (from 255)
-          else
-            game:set_value("time_of_day", "night")
-            time_counter = 21 * 6000
-          end
-          if t[2] >= 64 then
-            t[2] = t[2] - 2 -- Green: Goal is 64 (from 255)
-          else
-            game:set_value("time_of_day", "night")
-            time_counter = 21 * 6000
-          end
-          if t[3] >= 128 then
-            t[3] = t[3] - 1  -- Blue: Goal is 128 (from 255)
-          else
-            game:set_value("time_of_day", "night")
-            time_counter = 21 * 6000
-          end
-          shadow:fill_color(t)
-        elseif hour_of_day >= 6 and hour_of_day <= 7 then
-          -- Sunrise
-          t[1] = (182*(hour_of_day-6))+18 -- Red: Goal is 182 (from 32)
-          t[2] = (62*(hour_of_day-6))+66 -- Green: Goal is 126 (from 64)
-          t[3] = (37*(1-(hour_of_day-6)))+87 -- Blue: Goal is 91 (from 128)
-          shadow:fill_color(t)
-        elseif hour_of_day > 7 and hour_of_day <= 7.6 then
-          -- Dawn
-          if t[1] <= 253 then
-            t[1] = t[1] + 3 -- Red: Goal is 255 (fade to white, which is the same as fading out for this blend mode)
-          else
-            game:set_value("time_of_day", "day")
-            time_counter = 7.7 * 6000
-          end
-          if t[2] <= 252 then
-            t[2] = t[2] + 4 -- Green: Goal is 255
-          else
-            game:set_value("time_of_day", "day")
-            time_counter = 7.7 * 6000
-          end
-          if t[3] <= 251 then
-            t[3] = t[3] + 5 -- Blue: Goal is 255
-          else
-            game:set_value("time_of_day", "day")
-            time_counter = 7.7 * 6000
-          end
-          shadow:fill_color(t)
-        else
-          -- Night
-          shadow:fill_color({32,64,128,255})
-          game:set_value("time_of_day", "night")
-        end
-        
-        lights:clear()
-        for e in game:get_map():get_entities("torch_") do
-          if e:is_enabled() and e:get_sprite():get_animation() == "lit" and e:get_distance(game:get_hero()) <= 300 then
-            local xx,yy = e:get_position()
-            light_sprites.torch:draw(lights, xx-camera_x-32, yy-camera_y-32)
-         end
-        end
-        for e in game:get_map():get_entities("night_") do
-          if e:is_enabled() and e:get_distance(game:get_hero()) <= 300 then
-            local xx,yy = e:get_position()
-            light_sprites.torch:draw(lights, xx-camera_x-24, yy-camera_y-24)
-          end
-        end
-        for e in game:get_map():get_entities("lava_") do
-          if e:is_enabled() and e:get_distance(game:get_hero()) <= 300 then
-            local xx,yy = e:get_position()
-            light_sprites.torch_tile:draw(lights, xx-camera_x-8, yy-camera_y-8)
-          end
-        end
-        for e in game:get_map():get_entities("warp_") do
-          if e:is_enabled() and e:get_distance(game:get_hero()) <= 300 then
-            local xx,yy = e:get_position()
-            light_sprites.torch_tile:draw(lights, xx-camera_x-8, yy-camera_y-8)
-          end
-        end
-        for e in game:get_map():get_entities("poe") do
-          if e:is_enabled() and e:get_distance(game:get_hero()) <= 300 then
-            local xx,yy = e:get_position()
-            light_sprites.torch:draw(lights, xx-camera_x-32, yy-camera_y-32)
-          end
-        end
-        if game:has_item("lamp") and game:get_magic() > 0 and game:get_time_of_day() == "night" then
-          local xx, yy = game:get_map():get_entity("hero"):get_position()
-          light_sprites.torch_hero:draw(lights, xx-camera_x-64, yy-camera_y-68)
-        end
-        draw_counter = 0
-      end
-      lights:draw(shadow)
-      shadow:draw(dst_surface)
-    end
-    if screen_overlay ~= nil then screen_overlay:draw(dst_surface) end
---]=====]
 
   -- As of Solarus 1.5, the function map:move_camera is deprecated, so we use a custom version instead.
   function map_metatable:move_camera(x, y, speed, callback, delay_before, delay_after)
@@ -593,48 +437,22 @@ local function initialize_maps()
         swim_timer = nil
       end
     end
-    
-    -- Update the time of day.
-    -- One minute (60 seconds) is one hour in-game. Update every 0.1 minute.
-    --if game:get_value("hour_of_day") == nil then game:set_value("hour_of_day", 12) end
-    --if time_counter == nil then time_counter = game:get_value("hour_of_day") * 6000 end
-    --local hour_of_day = game:get_value("hour_of_day")
-    --if hour_of_day == nil then hour_of_day = 0 end
-    --hour_of_day = (time_counter / 6000)
-    
-    --if hour_of_day >= 23 then
-    --  hour_of_day = 0
-    --  time_counter = 0
-    --end
-    --if hour_of_day > 21 then
-    --  game:set_time_of_day("night")
-    --  for entity in game:get_map():get_entities("night_") do
-    --    entity:set_enabled(true)
-    --  end
-    --elseif hour_of_day > 7 and hour_of_day < 21 then
-    --  game:set_time_of_day("day")
-    --  for entity in game:get_map():get_entities("night_") do
-    --    entity:set_enabled(false)
-    --  end
-    --end
-    --game:set_value("hour_of_day", hour_of_day)
-    --if not game:is_suspended() then time_counter = time_counter + 1 end
   end
 end
 
 local function initialize_game()
   local game_metatable = sol.main.get_metatable("game")
-
+  
   -- Stamina functions mirror magic and life functions.
   function game_metatable:get_stamina()
     return self:get_value("i1024")
   end
-
+  
   function game_metatable:set_stamina(value)
     if value > self:get_max_stamina() then value = self:get_max_stamina() end
     return self:set_value("i1024", value)
   end
-
+  
   function game_metatable:add_stamina(value)
     stamina = self:get_value("i1024") + value
     if value >= 0 then
@@ -642,7 +460,7 @@ local function initialize_game()
       return self:set_value("i1024", stamina)
     end
   end
-
+  
   function game_metatable:remove_stamina(value)
     stamina = self:get_value("i1024") - value
     if stamina < 0 then stamina = 0 end
@@ -650,24 +468,24 @@ local function initialize_game()
       return self:set_value("i1024", stamina)
     end
   end
-
+  
   function game_metatable:get_max_stamina()
     return self:get_value("i1025")
   end
-
+  
   function game_metatable:set_max_stamina(value)
     if value >= 20 then -- Stamina can't be too low or hero can't do anything!
       return self:set_value("i1025", value)
     end
   end
-
+  
   function game_metatable:add_max_stamina(value)
     stamina = self:get_value("i1025")
     if value > 0 then
       return self:set_value("i1025", stamina+value)
     end
   end
-
+  
   function game_metatable:get_random_map_position()
     function random_8(lower, upper)
       math.randomseed(os.time())

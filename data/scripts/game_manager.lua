@@ -16,7 +16,7 @@ local camera_manager = require("scripts/camera_manager")
 local condition_manager = require("scripts/hero_condition")
 game.save_between_maps = require("scripts/save_between_maps")
 game.independent_entities = {}
-game.time_flow = 1000
+game.time_flow = 1000 -- One second is one minute in-game (so one hour in-game is one hour).
 
 function game:on_started()
   -- Set up the dialog box, HUD, hero conditions and effects.

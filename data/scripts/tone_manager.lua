@@ -223,6 +223,7 @@ function tone_manager:on_finished()
 end
 
 function tone_manager:on_draw(dst_surface)
+  local map = game:get_map()
   local hero = game:get_hero()
   local cam_x, cam_y = game:get_map():get_camera():get_position()
   local x, y = hero:get_position()
@@ -238,7 +239,6 @@ function tone_manager:on_draw(dst_surface)
   -- Fill the Tone Surface
   if mr ~= nil then
     -- We are in a map where tone are defined
-    print("map defined tone: " .. mr .. ", " .. mg .. ", " .. mb .. ", " .. ma)
 	  self.shadow:clear() 
     self.shadow:fill_color{mr, mg, mb, ma}
   elseif self.time_system and mr == nil then
@@ -253,8 +253,6 @@ function tone_manager:on_draw(dst_surface)
   self.light:clear()
   
   -- Next, this section is about entities.
-  local map = game:get_map()
-  
   for e in map:get_entities("torch_") do
     if e:is_enabled() and e:get_sprite():get_animation() == "lit" and e:get_distance(hero) <= 300 then
       local xx,yy = e:get_position()
@@ -310,6 +308,7 @@ function tone_manager:on_draw(dst_surface)
   
   self.light:draw(self.shadow)
   self.shadow:draw(dst_surface)
+  if screen_overlay ~= nil then screen_overlay:draw(dst_surface) end
 end
 
 return tone_manager
