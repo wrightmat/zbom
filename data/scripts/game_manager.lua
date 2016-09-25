@@ -8,9 +8,9 @@ sol.main.load_file("scripts/menus/pause")(game)
 sol.main.load_file("scripts/menus/credits")(game)
 sol.main.load_file("scripts/menus/game_over")(game)
 sol.main.load_file("scripts/menus/dialog_box")(game)
-sol.main.load_file("scripts/tone_manager")(game)
 sol.main.load_file("scripts/dungeons")(game)
 sol.main.load_file("scripts/equipment")(game)
+local tone_manager = require("scripts/tone_manager")
 local hud_manager = require("scripts/hud/hud")
 local camera_manager = require("scripts/camera_manager")
 local condition_manager = require("scripts/hero_condition")
@@ -24,7 +24,8 @@ function game:on_started()
   self:initialize_dialog_box()
   self.hud = hud_manager:create(game)
   camera = camera_manager:create(game)
-
+  tone = tone_manager:create(game)
+  
   -- Measure the time played.
   if game:get_value("time_played") == nil then game:set_value("time_played", 0) end
   chron_timer = sol.timer.start(1000, function()
@@ -51,8 +52,8 @@ end
 -- This event is called when a new map has just become active.
 function game:on_map_changed(map)
   -- Notify the hud.
-  self:start_tone_system()
   self.hud:on_map_changed(map)
+  tone:on_map_changed()
   
   game.save_between_maps:load_map(map) -- Create saved and carried entities.
 end
@@ -82,9 +83,13 @@ end
 
 -- Returns whether the current map is in the outside world.
 function game:is_in_outside_world()
-  return self:get_map():get_world() == "outside_world" or
+  if self:get_map() ~= nil then
+    return self:get_map():get_world() == "outside_world" or
          self:get_map():get_world() == "outside_north" or
          self:get_map():get_world() == "outside_subrosia"
+  else
+    return false
+  end
 end
 
 -- Returns whether the current map is in a dungeon.

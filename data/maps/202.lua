@@ -2,7 +2,6 @@ local map = ...
 local game = map:get_game()
 local warned = false
 local magic_counter = 0
-local draw_counter = 0
 
 --------------------------------
 -- Dungeon 1: Hyrulean Sewers --
@@ -13,7 +12,6 @@ if game:get_value("i1030") == nil then game:set_value("i1030", 0) end
 if game:get_value("i1032") == nil then game:set_value("i1032", 0) end
 
 function map:on_started(destination) 
-  game:set_map_tone(32,64,128,255)
   if not game:get_value("b1036") then boss_heart:set_enabled(false) end
   if not game:get_value("b1043") then chest_big_key:set_enabled(false) end
   if not game:get_value("b1047") then boss_big_poe:set_enabled(false) end
@@ -43,6 +41,7 @@ function map:on_started(destination)
     map:open_doors("door_2")
     map:open_doors("door_3")
   end
+  game:set_map_tone(32,64,128,255)
 end
 
 function switch_sword:on_activated()
