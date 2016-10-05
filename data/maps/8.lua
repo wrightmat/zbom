@@ -64,6 +64,7 @@ function npc_isan:on_interaction()
       game:start_dialog("isan.2.library.2_done", function()
         game:set_value("b1614", false)
         map:get_hero():start_treasure("rupees", 5)
+        if quest_book ~= nil then quest_book:remove() end
       end)
     else
       game:start_dialog("isan.2.library.2_count", game:get_value("i1615"))
