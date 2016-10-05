@@ -1202,7 +1202,7 @@ teletransporter{
 
 wall{
   layer = 0,
-  x = 144,
+  x = 136,
   y = 168,
   width = 8,
   height = 16,
@@ -1211,7 +1211,7 @@ wall{
 
 wall{
   layer = 0,
-  x = 200,
+  x = 208,
   y = 168,
   width = 8,
   height = 16,
@@ -1220,9 +1220,9 @@ wall{
 
 wall{
   layer = 0,
-  x = 144,
+  x = 136,
   y = 160,
-  width = 64,
+  width = 80,
   height = 8,
   stops_hero = true,
 }
@@ -1230,9 +1230,9 @@ wall{
 sensor{
   name = "sensor_fairy_speak",
   layer = 0,
-  x = 160,
+  x = 152,
   y = 181,
-  width = 48,
+  width = 64,
   height = 16,
 }
 
@@ -1241,6 +1241,7 @@ pickable{
   x = 144,
   y = 189,
   treasure_name = "amber",
+  treasure_savegame_variable = "fairy_amber_1",
 }
 
 pickable{
@@ -1248,6 +1249,7 @@ pickable{
   x = 208,
   y = 189,
   treasure_name = "amber",
+  treasure_savegame_variable = "fairy_amber_2",
 }
 
 tile{

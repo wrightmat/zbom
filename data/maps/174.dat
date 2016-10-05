@@ -8856,7 +8856,7 @@ enemy{
 
 wall{
   layer = 0,
-  x = 1232,
+  x = 1224,
   y = 1336,
   width = 8,
   height = 16,
@@ -8865,7 +8865,7 @@ wall{
 
 wall{
   layer = 0,
-  x = 1288,
+  x = 1296,
   y = 1336,
   width = 8,
   height = 16,
@@ -8874,9 +8874,9 @@ wall{
 
 wall{
   layer = 0,
-  x = 1232,
+  x = 1224,
   y = 1328,
-  width = 64,
+  width = 80,
   height = 8,
   stops_hero = true,
 }
@@ -8884,9 +8884,9 @@ wall{
 sensor{
   name = "sensor_fairy_speak",
   layer = 0,
-  x = 1248,
+  x = 1240,
   y = 1349,
-  width = 48,
+  width = 64,
   height = 16,
 }
 
@@ -8895,6 +8895,7 @@ pickable{
   x = 1232,
   y = 1357,
   treasure_name = "crystal",
+  treasure_savegame_variable = "fairy_crystal_1",
 }
 
 pickable{
@@ -8902,6 +8903,7 @@ pickable{
   x = 1296,
   y = 1357,
   treasure_name = "crystal",
+  treasure_savegame_variable = "fairy_crystal_2",
 }
 
 enemy{
