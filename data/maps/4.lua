@@ -227,24 +227,26 @@ function npc_garroth_sensor:on_interaction()
       game:start_dialog("garroth.0.pub")
     end
   else
-    if game:get_value("i1830") >= 75 then
+    if game:get_value("i1830") >= 75 and game:get_value("i1918") == 8 then
       game:start_dialog("garroth.8.alchemy", game:get_value("i1830"), function()
-	hero:start_treasure("heart_piece", 1, "b1726")
+        hero:start_treasure("heart_piece", 1, "b1726")
+        game:set_value("i1918", 9)
       end)
-    elseif game:get_value("i1830") >= 50 then
+    elseif game:get_value("i1830") >= 50 and game:get_value("i1918") == 7 then
       game:start_dialog("garroth.7.alchemy", game:get_value("i1830"), function()
-	hero:start_treasure("rupees", 5)
+        hero:start_treasure("rupees", 5)
+        game:set_value("i1918", 8)
       end)
-    elseif game:get_value("i1830") >= 25 then
+    elseif game:get_value("i1830") >= 25 and game:get_value("i1918") == 6 then
       game:start_dialog("garroth.6.alchemy", game:get_value("i1830"), function()
-	hero:start_treasure("rupees", 4)
+        hero:start_treasure("rupees", 4)
+        game:set_value("i1918", 7)
       end)
     else
       game:start_dialog("garroth.5.pub")
     end
   end
 end
-
 
 function npc_turt:on_interaction()
   game:start_dialog("turt.0.behind_counter")
