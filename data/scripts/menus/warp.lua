@@ -29,10 +29,12 @@ warp_points = {         -- Intentionally Global!
 
 function game:on_warp_started(point)
   initial_point = point
-  if not sol.menu.is_started(warp_menu) then sol.menu.start(game:get_map(), warp_menu) end
+  if not sol.menu.is_started(warp_menu) then sol.menu.start(game, warp_menu) end
 end
 
 function warp_menu:on_started()
+  game.hud:set_enabled(false)
+  game.hud:set_enabled(true)  -- Refresh the HUD so it stays on top of the menu.
   self.hero_head_sprite = sol.sprite.create("menus/hero_head")
   self.hero_head_sprite:set_animation("tunic" .. game:get_item("tunic"):get_variant())
   self.background_surfaces = sol.surface.create("pause_submenus.png", true)
