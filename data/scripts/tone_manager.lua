@@ -41,6 +41,11 @@ function tone_manager:create(game)
       game:set_value("cg", cg)
       game:set_value("cb", cb)
     end
+    if mr ~= nil then
+      game:set_value("mr", mr)
+      game:set_value("mg", mg)
+      game:set_value("mb", mb)
+    end
     game:set_value("tr", tr)
     game:set_value("tg", tg)
     game:set_value("tb", tb)
@@ -97,8 +102,12 @@ function tone_manager:create(game)
   
   function game:set_map_tone(r,g,b,a)
     mr, mg, mb, ma = r, g, b, a
+    game:set_value("mr", mr)
+    game:set_value("mg", mg)
+    game:set_value("mb", mb)
+    game:set_value("ma", ma)
   end
-
+  
   function game:get_map_tone()
     return mr, mg, mb, ma
   end
@@ -122,6 +131,11 @@ function tone_manager:create(game)
       
       cr, cg, cb = game:get_value("cr"), game:get_value("cg"), game:get_value("cb")
       tr, tg, tb = game:get_value("tr"), game:get_value("tg"), game:get_value("tb")
+
+      -- Make map tone stick for this map and only this one.
+      mr, mg, mb, ma = game:get_value("mr"), game:get_value("mg"), game:get_value("mb"), game:get_value("ma")
+      game:set_value("mr", nil); game:set_value("mg", nil); game:set_value("mb", nil); game:set_value("ma", nil)
+
       if cr == nil then game:set_value("cr", 255); cr = 255 end
       if cg == nil then game:set_value("cg", 255); cg = 255 end
       if cb == nil then game:set_value("cb", 255); cb = 255 end
@@ -135,13 +149,18 @@ function tone_manager:create(game)
   end
   
   function tone_menu:set_new_tone(r, g, b)
-    tr = r   
+    tr = r
     tg = g
-    tb = b   
+    tb = b
+    game:set_value("tr", r)
+    game:set_value("tg", g)
+    game:set_value("tb", b)
+    game:set_value("cr", r)
+    game:set_value("cg", g)
+    game:set_value("cb", b)
   end
   
-  -- Checks if the tone need to be updated
-  -- and updates it if necessary.
+  -- Checks if the tone need to be updated and updates it if necessary.
   function tone_menu:check()
     local need_rebuild = false
     
@@ -239,9 +258,9 @@ function tone_manager:create(game)
       end
     	
       -- Fill the Tone Surface
-      if mr ~= nil then
+      if game:get_map_tone() ~= nil then
         -- We are in a map where tone are defined
-    	  shadow:clear() 
+    	  shadow:clear()
         shadow:fill_color{mr, mg, mb, ma}
       elseif time_system and mr == nil then
         -- We are outside
