@@ -41,7 +41,7 @@ function map:on_started(destination)
     map:open_doors("door_2")
     map:open_doors("door_3")
   end
-  game:set_map_tone(32,64,128,255)
+  game:set_map_tone(32,64,128,128)
 end
 
 function switch_sword:on_activated()

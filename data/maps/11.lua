@@ -220,10 +220,13 @@ function sensor_ordona_speak:on_activated()
     sol.timer.start(2000, function()
       hero:freeze()
       hero:set_direction(0)
-      game:set_map_tone(32,64,128,255)
+      if game:get_time_of_day() ~= "night" then
+        local previous_tone = game:get_map_tone()
+        game:set_map_tone(32,64,128,255)
+      end
       game:start_dialog("ordona.8.village", game:get_player_name(), function()
         sol.timer.start(500, function()
-          if game:get_time_of_day() ~= "night" then game:set_map_tone(255,255,255,255) end
+          if game:get_time_of_day() ~= "night" then game:set_map_tone(previous_tone) end
         end)
         hero:unfreeze()
         game:set_stamina(game:get_max_stamina())
@@ -237,10 +240,15 @@ function sensor_ordona_speak:on_activated()
     sol.timer.start(2000, function()
       hero:freeze()
       hero:set_direction(0)
-      game:set_map_tone(32,64,128,255)
+      if game:get_time_of_day() ~= "night" then
+        local previous_tone = game:get_map_tone()
+        game:set_map_tone(32,64,128,255)
+      end
       game:set_value("i1027", 5)
       game:start_dialog("ordona.1.village", game:get_player_name(), function()
-        sol.timer.start(500, function() game:set_map_tone(255,255,255,255) end)
+        sol.timer.start(500, function()
+          if game:get_time_of_day() ~= "night" then game:set_map_tone(previous_tone) end
+        end)
         hero:unfreeze()
         game:add_max_stamina(100)
         game:set_stamina(game:get_max_stamina())

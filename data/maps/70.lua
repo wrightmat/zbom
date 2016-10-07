@@ -15,10 +15,13 @@ function map:on_started(destination)
       sol.timer.start(1000, function()
         hero:freeze()
         hero:set_direction(2)
-        game:set_map_tone(32,64,128,255)
+        if game:get_time_of_day() ~= "night" then
+          local previous_tone = game:get_map_tone()
+          game:set_map_tone(32,64,128,255)
+        end
         game:start_dialog("ordona.1.pyramid", game:get_player_name(), function()
           sol.timer.start(500, function()
-            if game:get_time_of_day() ~= "night" then game:set_map_tone(255,255,255,255) end
+            if game:get_time_of_day() ~= "night" then game:set_map_tone(previous_tone) end
           end)
           hero:unfreeze()
           game:set_stamina(game:get_max_stamina())

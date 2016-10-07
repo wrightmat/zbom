@@ -43,8 +43,11 @@ local function end_race_won()
         m:set_target(t)
         m:start(map:get_camera())
         map:get_camera():start_tracking(t)
-        -- Create the dark overlay and cut out the torch light (most of this is done in on_draw)
-        game:set_map_tone(32,64,128,255)
+        -- Darken the screen when Ordona speaks.
+        if game:get_time_of_day() ~= "night" then
+          local previous_tone = game:get_map_tone()
+          game:set_map_tone(32,64,128,255)
+        end
         game:start_dialog("ordona.0.festival", game:get_player_name(), function()
           sol.timer.start(500, function()
             -- Move camera back to hero and track him.
@@ -54,7 +57,7 @@ local function end_race_won()
             map:get_camera():start_tracking(map:get_hero())
             torch_5:get_sprite():set_animation("unlit")
             sol.timer.start(500, function()
-              if game:get_time_of_day() ~= "night" then game:set_map_tone(255,255,255,255) end
+              if game:get_time_of_day() ~= "night" then game:set_map_tone(previous_tone) end
             end)
           end)
           hero:unfreeze()

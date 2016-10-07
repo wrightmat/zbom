@@ -11,10 +11,15 @@ function map:on_started(destination)
     torch_1:get_sprite():set_animation("lit")
     sol.timer.start(1000, function()
       hero:freeze()
-      game:set_map_tone(32,64,128,255)
+      if game:get_time_of_day() ~= "night" then
+        local previous_tone = game:get_map_tone()
+        game:set_map_tone(32,64,128,255)
+      end
       if not game:get_value("b1033") then  -- If player has not done Ruins, suggest that before Lost Woods.
         game:start_dialog("ordona.7.septen_2", game:get_player_name(), function()
-          sol.timer.start(500, function() game:set_map_tone(255,255,255,255) end)
+          sol.timer.start(500, function()
+            if game:get_time_of_day() ~= "night" then game:set_map_tone(previous_tone) end
+          end)
           hero:unfreeze()
           game:add_max_stamina(100)
           game:set_stamina(game:get_max_stamina())
@@ -24,10 +29,9 @@ function map:on_started(destination)
       else
         game:start_dialog("ordona.7.septen", game:get_player_name(), function()
           sol.timer.start(500, function()
-            if game:get_time_of_day() ~= "night" then game:set_map_tone(255,255,255,255) end
+            if game:get_time_of_day() ~= "night" then game:set_map_tone(previous_tone) end
           end)
           hero:unfreeze()
-          game:set_map_tone(32,64,128,255)
           game:add_max_stamina(100)
           game:set_stamina(game:get_max_stamina())
           torch_1:get_sprite():set_animation("unlit")
