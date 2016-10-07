@@ -33,6 +33,19 @@ local function initialize_destructibles()
   end
 end
 
+local function initialize_teletransporters()
+  local teletransporter_meta = sol.main.get_metatable("teletransporter")
+
+  function teletransporter_meta:on_activated()
+    if self:get_transition() == "scrolling" then
+      teletransporter_scrolling = true
+      sol.timer.start(self:get_game(), 500, function()
+        teletransporter_scrolling = false
+      end)
+    end
+  end
+end
+
 -- Initialize sensor behavior specific to this quest.
 local function initialize_sensors()
   local sensor_meta = sol.main.get_metatable("sensor")
@@ -280,6 +293,7 @@ end
 
 -- Initialize map entity related behaviors.
 local function initialize_entities()
+  initialize_teletransporters()
   initialize_destructibles()
   initialize_enemies()
   initialize_sensors()

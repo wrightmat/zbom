@@ -98,6 +98,10 @@ function tone_manager:create(game)
   function game:set_map_tone(r,g,b,a)
     mr, mg, mb, ma = r, g, b, a
   end
+
+  function game:get_map_tone()
+    return mr, mg, mb, ma
+  end
   
   local item = game:get_item("lamp")
   function item:set_light_animation(anim)
@@ -250,53 +254,56 @@ function tone_manager:create(game)
       -- Rebuild the light surface
       light:clear()
       
-      -- Next, this section is about entities.
-      for e in map:get_entities("torch_") do
-        if e:is_enabled() and e:get_sprite():get_animation() == "lit" and e:get_distance(hero) <= 300 then
-          local xx,yy = e:get_position()
-          effects.torch:draw(light, xx - cam_x - 32, yy - cam_y - 32)
+      -- Don't draw lights when the map is scrolling, or they scroll also.
+      if teletransporter_scrolling ~= true then
+        -- Next, this section is about entities.
+        for e in map:get_entities("torch_") do
+          if e:is_enabled() and e:get_sprite():get_animation() == "lit" and e:get_distance(hero) <= 300 then
+            local xx,yy = e:get_position()
+            effects.torch:draw(light, xx - cam_x - 32, yy - cam_y - 32)
+          end
         end
+        for e in map:get_entities("night_") do
+          if e:is_enabled() and e:get_distance(hero) <= 300 then
+            if e.is_street_light then
+      		    local xe, ye = e:get_position()
+      		    effects.torch:draw(light, xe - cam_x - 24, ye - cam_y - 24)
+      		  else
+      		    local xx,yy = e:get_position()
+              effects.torch:draw(light, xx - cam_x - 24, yy - cam_y - 24)
+      		  end
+          end
+        end
+        for e in map:get_entities("lava_") do
+          if e:is_enabled() and e:get_distance(hero) <= 300 then
+            local xx,yy = e:get_position()
+      	    effects.torch_tile:draw(light, xx - cam_x - 8, yy - cam_y - 8)
+          end
+        end
+        for e in map:get_entities("warp_") do
+          if e:is_enabled() and e:get_distance(hero) <= 300 then
+            local xx,yy = e:get_position()
+      	    effects.torch_tile:draw(light, xx - cam_x - 8, yy - cam_y - 8)
+          end
+        end
+        for e in map:get_entities("switch_") do
+          if e:get_distance(hero) <= 300 then
+            local xx,yy = e:get_position()
+      	    effects.torch_tile:draw(light, xx - cam_x - 8, yy - cam_y - 8)
+          end
+        end
+        for e in map:get_entities("poe_") do
+          if e:is_enabled() and e:get_distance(hero) <= 300 then
+            local xx,yy = e:get_position()
+      	    effects.torch:draw(light, xx - cam_x - 32, yy - cam_y - 32)
+          end
+        end
+        if game:has_item("lamp") and game:get_magic() > 0 then
+          if game:get_time_of_day() == "night" or map:get_id() == "202" then
+            effects.torch_hero:draw(light, x - cam_x - 64, y - cam_y - 68)
+          end
+      	end
       end
-      for e in map:get_entities("night_") do
-        if e:is_enabled() and e:get_distance(hero) <= 300 then
-          if e.is_street_light then
-    		    local xe, ye = e:get_position()
-    		    effects.torch:draw(light, xe - cam_x - 24, ye - cam_y - 24)
-    		  else
-    		    local xx,yy = e:get_position()
-            effects.torch:draw(light, xx - cam_x - 24, yy - cam_y - 24)
-    		  end
-        end
-      end
-      for e in map:get_entities("lava_") do
-        if e:is_enabled() and e:get_distance(hero) <= 300 then
-          local xx,yy = e:get_position()
-    	    effects.torch_tile:draw(light, xx - cam_x - 8, yy - cam_y - 8)
-        end
-      end
-      for e in map:get_entities("warp_") do
-        if e:is_enabled() and e:get_distance(hero) <= 300 then
-          local xx,yy = e:get_position()
-    	    effects.torch_tile:draw(light, xx - cam_x - 8, yy - cam_y - 8)
-        end
-      end
-      for e in map:get_entities("switch_") do
-        if e:get_distance(hero) <= 300 then
-          local xx,yy = e:get_position()
-    	    effects.torch_tile:draw(light, xx - cam_x - 8, yy - cam_y - 8)
-        end
-      end
-      for e in map:get_entities("poe_") do
-        if e:is_enabled() and e:get_distance(hero) <= 300 then
-          local xx,yy = e:get_position()
-    	    effects.torch:draw(light, xx - cam_x - 32, yy - cam_y - 32)
-        end
-      end
-      if game:has_item("lamp") and game:get_magic() > 0 then
-        if game:get_time_of_day() == "night" or map:get_id() == "202" then
-          effects.torch_hero:draw(light, x - cam_x - 64, y - cam_y - 68)
-        end
-    	end
       
       light:draw(shadow)
       shadow:draw(dst_surface)
