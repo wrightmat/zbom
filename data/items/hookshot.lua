@@ -302,7 +302,7 @@ function item:on_using()
       -- the hero sprite and can be drawn above it sometimes.
       local skip = direction == 1 and link_x == hero_x and i == 0
       if not skip then
-        map:draw_sprite(link_sprite, link_x, link_y)
+        map:draw_visual(link_sprite, link_x, link_y)
       end
     end
   end

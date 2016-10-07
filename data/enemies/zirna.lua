@@ -113,7 +113,7 @@ end
 function enemy:on_post_draw()
   if vulnerable then
     local x, y, layer = self:get_position()
-    self:get_map():draw_sprite(dark_magic_sprite, x, y)
+    self:get_map():draw_visual(dark_magic_sprite, x, y)
   end
 end
 

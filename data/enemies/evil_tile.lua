@@ -66,6 +66,6 @@ function enemy:on_pre_draw()
     local x, y = self:get_position()
     if state == "attacking" then y = y + 16
     else y = initial_y or y end
-    self:get_map():draw_sprite(shadow_sprite, x, y)
+    self:get_map():draw_visual(shadow_sprite, x, y)
   end
 end

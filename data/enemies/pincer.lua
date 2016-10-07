@@ -73,7 +73,7 @@ function enemy:on_pre_draw()
     for i = 1, nb_body do
       local x = ex + (ex2 - ex) * i / nb_body
       local y = ey + (ey2 - ey) * i / nb_body
-      self:get_map():draw_sprite(body_sprite, x, y)
+      self:get_map():draw_visual(body_sprite, x, y)
     end
   end
 end
