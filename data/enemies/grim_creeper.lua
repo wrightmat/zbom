@@ -35,12 +35,14 @@ function enemy:throw_keese(breed)
   else
     son_breed = "keese_" .. breed
   end
-  self:create_enemy{
-    name = son_name,
-    breed = son_breed,
-    x = 0,
-    y = -40,
-  }
+  if nb_son_created <= 30 then
+    self:create_enemy{
+      name = son_name,
+      breed = son_breed,
+      x = 0,
+      y = -40,
+    }
+  end
   if breed == "fire" then sol.audio.play_sound("lamp") end
   if breed == "ice" then sol.audio.play_sound("ice_shatter") end
   if breed == "elec" then sol.audio.play_sound("spark") end
