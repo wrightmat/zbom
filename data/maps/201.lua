@@ -67,6 +67,16 @@ if boss_carock ~= nil then
  end
 end
 
+function chest_big:on_opened(item, variant, savegame_variable)
+  -- If hero already has the basic boomerang (from Great Fairy),
+  -- give the upgraded version instead.
+  if game:get_value("i1808") >= 1 then
+    map:get_hero():start_treasure("boomerang", 2)
+  else
+    map:get_hero():start_treasure("boomerang", 1)
+  end
+end
+
 function chest_book:on_opened(item, variant, savegame_variable)
   -- Dynamically determine book variant to give, since dungeons can be done in any order.
   local book_variant = game:get_item("book_mudora"):get_variant() + 1

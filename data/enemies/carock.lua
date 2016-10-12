@@ -134,12 +134,14 @@ function enemy:on_hurt(attack)
 end
 
 function enemy:end_dialog()
+  local sprite = self:get_sprite()
   if not game:get_value("b1240") then -- This dialog hasn't been heard before.
-    local sprite = self:get_sprite()
     sprite:set_ignore_suspend(true)
     self:get_game():start_dialog("carock.0.ruins_defeat", function()
       sprite:fade_out(30, function() self:remove() end)
       game:set_value("b1240", true)
     end)
+  else
+    sprite:fade_out(30, function() self:remove() end)
   end
 end

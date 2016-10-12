@@ -99,7 +99,7 @@ local function room_complete(room, complete)
   if complete then
     sol.audio.play_sound("lamp")
     game:set_value("dungeon_8_explored_1b_"..room, true)
-  else
+  elseif switch ~= nil then
     if map:get_entity(switch):exists() then
       map:get_entity(switch):set_enabled(true)
       map:get_entity(switch):set_activated(false)
@@ -403,7 +403,8 @@ function map:on_update()
     game:set_value("dungeon_8_explored_1b_11", true)
   end
 
-  if math.random(500) == 1 and not game:is_suspended() then  -- 1 in 200 chance of "switching off" a room each cycle.
+  if math.random(500) == 1 and not game:is_suspended() and not game:get_value("dungeon_8_explored_1b_complete") then
+    -- 1 in 500 chance of "switching off" a room each cycle (as long as the game isn't over).
     room = math.random(24)
     if game:get_value("dungeon_8_explored_1b_"..room) then
       game:set_value("dungeon_8_explored_1b_"..room, false)
