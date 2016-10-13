@@ -56,7 +56,7 @@ function tone_manager:create(game)
     game:set_value("hour_of_day", hour)
     minute = 0
     
-    if (hour >= 6 and hour < 20) then
+    if (hour >= 7 and hour < 17) then
       game:set_value("time_of_day", "day")
     elseif hour >= 20 or hour < 5 then
       game:set_value("time_of_day", "night")
@@ -91,12 +91,14 @@ function tone_manager:create(game)
     -- Function called when sleeping.
     -- Sleeping during day takes player to 2000 (8pm) and sleeping at night takes us to 0800 (8am).
     if game:get_value("time_of_day") == "day" then
+      game:set_value("time_of_day", "night")
       game:set_time(20)
       minute = 0
       for entity in game:get_map():get_entities("night_") do
         entity:set_enabled(true)
       end
     else
+      game:set_value("time_of_day", "day")
       game:set_time(8)
       minute = 0
       for entity in game:get_map():get_entities("night_") do
@@ -172,11 +174,6 @@ function tone_manager:create(game)
       self:get_new_tone()
       need_rebuild = false
     end 
-    
-    -- Schedule the next check.
-    sol.timer.start(self, game.time_flow, function()
-      self:check()
-    end)
   end
   
   function tone_menu:get_new_tone(hour, minute)
@@ -188,11 +185,11 @@ function tone_manager:create(game)
   	elseif hour == 4 and minute >= 30 then
        self:set_new_tone(140, 125, 170)
   	elseif hour == 5 and minute < 30 then
-  	  game:set_value("time_of_day", "dawn")
       self:set_new_tone(155, 130, 140)
   	elseif hour == 5 and minute >= 30 then
       self:set_new_tone(170, 130, 100)
   	elseif hour == 6 and minute < 30 then
+  	  game:set_value("time_of_day", "dawn")
       self:set_new_tone(210, 180, 150)
   	elseif hour == 6 and minute >= 30 then
       self:set_new_tone(240, 240, 230)
@@ -248,7 +245,6 @@ function tone_manager:create(game)
   
   function tone_menu:on_draw(dst_surface)
     if game:get_map() ~= nil then
-print(game:get_time_of_day() .. ", " .. game:get_value("hour_of_day") .. ":" .. minute)
       local map = game:get_map()
       local hero = game:get_hero()
       local cam_x, cam_y = game:get_map():get_camera():get_position()
@@ -339,6 +335,12 @@ print(game:get_time_of_day() .. ", " .. game:get_value("hour_of_day") .. ":" .. 
   end
   
   sol.menu.start(game, tone_menu, false)
+
+    -- Schedule the next check.
+    sol.timer.start(game, game.time_flow, function()
+      tone_menu:check()
+      return true
+    end)
   
   return tone_menu
 end
