@@ -56,9 +56,9 @@ function tone_manager:create(game)
     game:set_value("hour_of_day", hour)
     minute = 0
     
-    if (hour >= 8 and hour < 20) then
+    if (hour >= 6 and hour < 20) then
       game:set_value("time_of_day", "day")
-    elseif hour > 20 or hour < 7 then
+    elseif hour >= 20 or hour < 5 then
       game:set_value("time_of_day", "night")
     end
     
@@ -89,13 +89,19 @@ function tone_manager:create(game)
   
   function game:switch_time_of_day()
     -- Function called when sleeping.
-    -- Sleeping during day takes player to 2100 (9pm) and sleeping at night takes us to 0800 (8am).
+    -- Sleeping during day takes player to 2000 (8pm) and sleeping at night takes us to 0800 (8am).
     if game:get_value("time_of_day") == "day" then
-      game:set_time(21)
+      game:set_time(20)
       minute = 0
+      for entity in game:get_map():get_entities("night_") do
+        entity:set_enabled(true)
+      end
     else
       game:set_time(8)
       minute = 0
+      for entity in game:get_map():get_entities("night_") do
+        entity:set_enabled(false)
+      end
     end
     return true
   end
@@ -110,15 +116,6 @@ function tone_manager:create(game)
   
   function game:get_map_tone()
     return mr, mg, mb, ma
-  end
-  
-  local item = game:get_item("lamp")
-  function item:set_light_animation(anim)
-    tone_manager.lantern_effect:set_animation(anim)
-  end
-  
-  function item:set_surface_opacity(opacity)
-    tone_manager.shadow:set_opacity(opacity)
   end
   
   function tone_menu:on_map_changed()
@@ -200,9 +197,13 @@ function tone_manager:create(game)
   	elseif hour == 6 and minute >= 30 then
       self:set_new_tone(240, 240, 230)
   	elseif hour == 7 and minute < 30 then
-      self:set_new_tone(255, 255, 255) 
+      self:set_new_tone(255, 255, 255)
+      game:set_value("time_of_day","day")
+      for entity in game:get_map():get_entities("night_") do
+        entity:set_enabled(false)
+      end
   	elseif hour > 7 and hour <= 9 then
-  	  self:set_new_tone(255, 255, 255) 
+  	  self:set_new_tone(255, 255, 255)
   	elseif hour > 9 and hour < 16 then
   	  self:set_new_tone(255, 255, 225)
   	elseif hour == 16 and minute < 30 then
@@ -222,6 +223,9 @@ function tone_manager:create(game)
   	elseif hour == 19 and minute < 30 then
       game:set_value("time_of_day","night")
   	  self:set_new_tone(110, 105, 190)	 
+      for entity in game:get_map():get_entities("night_") do
+        entity:set_enabled(true)
+      end
   	elseif hour == 19 and minute >= 30 then
   	  self:set_new_tone(90, 90, 225)
   	elseif hour == 3 and minute >= 30 then
@@ -244,6 +248,7 @@ function tone_manager:create(game)
   
   function tone_menu:on_draw(dst_surface)
     if game:get_map() ~= nil then
+print(game:get_time_of_day() .. ", " .. game:get_value("hour_of_day") .. ":" .. minute)
       local map = game:get_map()
       local hero = game:get_hero()
       local cam_x, cam_y = game:get_map():get_camera():get_position()
@@ -324,10 +329,12 @@ function tone_manager:create(game)
       	end
       end
       
+      if screen_overlay ~= nil then
+        screen_overlay:draw(dst_surface)
+      end
+      
       light:draw(shadow)
       shadow:draw(dst_surface)
-      
-      if screen_overlay ~= nil then screen_overlay:draw(dst_surface) end
     end
   end
   
