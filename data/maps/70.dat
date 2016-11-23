@@ -10603,6 +10603,15 @@ tile{
   pattern = "245",
 }
 
+tile{
+  layer = 0,
+  x = 1080,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "953",
+}
+
 dynamic_tile{
   name = "night_entrance",
   layer = 0,
@@ -10770,13 +10779,17 @@ npc{
   behavior = "item#lamp",
 }
 
-tile{
-  layer = 1,
-  x = 1096,
-  y = 336,
+wall{
+  layer = 0,
+  x = 32,
+  y = 928,
   width = 16,
   height = 16,
-  pattern = "953",
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{

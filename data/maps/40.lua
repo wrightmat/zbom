@@ -35,7 +35,7 @@ function map:on_started(destination)
           sol.audio.play_sound("door_open")
         elseif entrance_name == "collector" then
           tile:set_enabled(false)
-          tile_glow:set_enabled(true)
+          if game:get_time_of_day() == "night" then tile_glow:set_enabled(true) end
           sol.audio.play_sound("door_open")
         end
       end
