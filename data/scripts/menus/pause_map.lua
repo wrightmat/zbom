@@ -6,40 +6,38 @@ local outside_world_minimap_size = {}
 local map_shown = false
 
 function map_submenu:on_started()
-
   submenu.on_started(self)
-
-  -- Common to dungeons and outside dungeons.
+  
+  -- Common to dungeons and outside areas.
   self.hero_head_sprite = sol.sprite.create("menus/hero_head")
   self.hero_head_sprite:set_animation("tunic" .. self.game:get_item("tunic"):get_variant())
   self.up_arrow_sprite = sol.sprite.create("menus/arrow")
   self.up_arrow_sprite:set_direction(1)
   self.down_arrow_sprite = sol.sprite.create("menus/arrow")
   self.down_arrow_sprite:set_direction(3)
-
+  
   self.dungeon = self.game:get_dungeon()
   if self.dungeon == nil then
     -- Not in a dungeon: show a world map.
     self:set_caption("map.caption.world_map")
-
+    
     local hero_absolute_x, hero_absolute_y = self.game:get_map():get_location()
     if self.game:is_in_outside_world() then
       local hero_map_x, hero_map_y = self.game:get_map():get_entity("hero"):get_position()
       hero_absolute_x = hero_absolute_x + hero_map_x
       hero_absolute_y = hero_absolute_y + hero_map_y
     end
-
     self.world_minimap_movement = nil
     self.world_minimap_visible_xy = {x = 0, y = 0}
     if self.game:get_item("world_map"):get_variant() > 0 and (self.game:get_map():get_world() == "outside_world"  or self.game:get_map():get_id() == "20" or self.game:get_map():get_id() == "21" or self.game:get_map():get_id() == "22") then
       map_shown = true      -- If in South Hyrule with World Map, then show the map.
-      self.outside_world_size = { width = 7700, height = 13452 }
+      self.outside_world_size = { width = 10008, height = 16814 }
       self.outside_world_minimap_size = { width = 225, height = 266 }
       self.world_minimap_img = sol.surface.create("menus/outside_world_map.png")
-      local hero_minimap_x = math.floor(hero_absolute_x * self.outside_world_minimap_size.width / self.outside_world_size.width) - 40
-      local hero_minimap_y = math.floor(hero_absolute_y * self.outside_world_minimap_size.height / self.outside_world_size.height) - 80
-      self.hero_x = hero_minimap_x + 40
-      self.hero_y = hero_minimap_y + 53
+      local hero_minimap_x = math.floor(hero_absolute_x * self.outside_world_minimap_size.width / self.outside_world_size.width)
+      local hero_minimap_y = math.floor(hero_absolute_y * self.outside_world_minimap_size.height / self.outside_world_size.height)
+      self.hero_x = hero_minimap_x + (hero_absolute_x / 300) + 8
+      self.hero_y = hero_minimap_y + (hero_absolute_y / 250) - 20
       self.world_minimap_visible_xy.y = math.min(self.outside_world_minimap_size.height - 133, math.max(0, hero_minimap_y - 65))
     elseif self.game:get_item("world_map"):get_variant() > 1 and self.game:get_map():get_world() == "outside_subrosia" then
       map_shown = true      -- If in Subrosia with upgraded World Map, then show the map.
@@ -67,14 +65,13 @@ function map_submenu:on_started()
       self.world_minimap_img = sol.surface.create("menus/outside_world_clouds.png")
       self.world_minimap_visible_xy.y = 0
     end
-
   else
     -- In a dungeon.
     self.dungeon_index = self.game:get_dungeon_index()
-
+    
     -- Caption text.
     self:set_caption("map.caption.dungeon_name_" .. self.dungeon_index)
-
+    
     -- Item icons.
     self.dungeon_map_background_img = sol.surface.create("menus/dungeon_map_background.png")
     self.dungeon_map_icons_img = sol.surface.create("menus/dungeon_map_icons.png")
@@ -84,7 +81,7 @@ function map_submenu:on_started()
       vertical_alignment = "top",
       text = self.game:get_num_small_keys()
     }
-
+    
     -- Floors.
     self.dungeon_floors_img = sol.surface.create("floors.png", true)
     self.hero_floor = self.game:get_map():get_floor()
@@ -107,7 +104,7 @@ function map_submenu:on_started()
         self.highest_floor_displayed = self.hero_floor + 3
       end
     end
-
+    
     -- Minimap.
     self.dungeon_map_img = sol.surface.create(123, 119)
     self.dungeon_map_spr = sol.sprite.create("menus/dungeon_maps/map" .. self.dungeon_index)
@@ -118,11 +115,11 @@ end
 
 function map_submenu:on_command_pressed(command)
   local handled = submenu.on_command_pressed(self, command)
-
+  
   if handled then
     return handled
   end
-
+  
   if command == "left" then
     self:previous_submenu()
     handled = true
@@ -135,36 +132,36 @@ function map_submenu:on_command_pressed(command)
       if map_shown then
         if (command == "up" and self.world_minimap_visible_xy.y > 0) or
             (command == "down" and self.world_minimap_visible_xy.y < self.outside_world_minimap_size.height - 134) then
-            local angle
-            if command == "up" then
-              angle = math.pi / 2
-            else
-              angle = 3 * math.pi / 2
-            end
-
+          local angle
+          if command == "up" then
+            angle = math.pi / 2
+          else
+            angle = 3 * math.pi / 2
+          end
+          
           if self.world_minimap_movement ~= nil then
             self.world_minimap_movement:stop()
           end
-
+          
           local movement = sol.movement.create("straight")
           movement:set_speed(96)
           movement:set_angle(angle)
           local submenu = self
-
+          
           function movement:on_position_changed()
             if not submenu.game:is_command_pressed("up")
                 and not submenu.game:is_command_pressed("down") then
               self:stop()
               submenu.world_minimap_movement = nil
             end
-
+            
             if (command == "up" and submenu.world_minimap_visible_xy.y <= 0) or
                 (command == "down" and submenu.world_minimap_visible_xy.y >= submenu.outside_world_minimap_size.height - 134) then
               self:stop()
               submenu.world_minimap_movement = nil
             end
           end
-
+          
           movement:start(self.world_minimap_visible_xy)
           self.world_minimap_movement = movement
         end
@@ -199,7 +196,7 @@ end
 function map_submenu:on_draw(dst_surface)
   self:draw_background(dst_surface)
   self:draw_caption(dst_surface)
-
+  
   if not self.game:is_in_dungeon() then
     self:draw_world_map(dst_surface)
   else
@@ -211,20 +208,20 @@ end
 function map_submenu:draw_world_map(dst_surface)
   -- Draw the minimap.
   self.world_minimap_img:draw_region(self.world_minimap_visible_xy.x, self.world_minimap_visible_xy.y, 255, 133, dst_surface, 48, 59)
-
+  
   if map_shown then
     -- Draw the hero's position.
     local hero_visible_y = self.hero_y - self.world_minimap_visible_xy.y
     if hero_visible_y >= 51 and hero_visible_y <= 133 + 51 then
       self.hero_head_sprite:draw(dst_surface, self.hero_x, hero_visible_y)
     end
-
+    
     -- Draw the arrows.
     if self.world_minimap_visible_xy.y > 0 then
       self.up_arrow_sprite:draw(dst_surface, 96, 55)
       self.up_arrow_sprite:draw(dst_surface, 211, 55)
     end
-
+    
     if self.world_minimap_visible_xy.y < self.outside_world_minimap_size.height - 134 then
       self.down_arrow_sprite:draw(dst_surface, 96, 188)
       self.down_arrow_sprite:draw(dst_surface, 211, 188)
