@@ -69,17 +69,17 @@ function map:on_started(destination)
   end
 
   -- Replace shop items if they're bought
-  if game:get_value("i1806") >= 1 then -- Bomb bag
+  if game:get_value("b2017") then -- Bomb bag
     self:create_shop_treasure({
-	name = "shop_item_2",
-	layer = 0,
-	x = 576,
-	y = 392,
-	price = 999,
-	dialog = "shop.tunic_2",
-	treasure_name = "tunic",
-	treasure_variant = 2,
-	treasure_savegame_variable = "b2016"
+      name = "shop_item_2",
+      layer = 0,
+      x = 576,
+      y = 392,
+      price = 999,
+      dialog = "shop.tunic_2",
+      treasure_name = "tunic",
+      treasure_variant = 2,
+      treasure_savegame_variable = "b2016"
     })
   end
 end
