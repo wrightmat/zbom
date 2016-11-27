@@ -303,7 +303,7 @@ function tone_manager:create(game)
         for e in map:get_entities("warp_") do
           if e:is_enabled() and e:get_distance(hero) <= 300 then
             local xx,yy = e:get_position()
-      	    effects.torch_tile:draw(light, xx - cam_x - 16, yy - cam_y - 16)
+      	    effects.torch_tile:draw(light, xx - cam_x - 8, yy - cam_y - 8)
           end
         end
         for e in map:get_entities("b15") do -- Prefix used by Ocarina warp tiles.

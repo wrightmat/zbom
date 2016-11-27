@@ -36,7 +36,7 @@ function map_submenu:on_started()
       self.world_minimap_img = sol.surface.create("menus/outside_world_map.png")
       local hero_minimap_x = math.floor(hero_absolute_x * self.outside_world_minimap_size.width / self.outside_world_size.width)
       local hero_minimap_y = math.floor(hero_absolute_y * self.outside_world_minimap_size.height / self.outside_world_size.height)
-      self.hero_x = hero_minimap_x + (hero_absolute_x / 300) + 8
+      self.hero_x = hero_minimap_x + (hero_absolute_x / 350) + 10
       self.hero_y = hero_minimap_y + (hero_absolute_y / 250) - 20
       self.world_minimap_visible_xy.y = math.min(self.outside_world_minimap_size.height - 133, math.max(0, hero_minimap_y - 65))
     elseif self.game:get_item("world_map"):get_variant() > 1 and self.game:get_map():get_world() == "outside_subrosia" then
@@ -46,9 +46,11 @@ function map_submenu:on_started()
       self.world_minimap_img = sol.surface.create("menus/outside_world_map_2.png")
       local hero_minimap_x = math.floor(hero_absolute_x * self.outside_world_minimap_size.width / self.outside_world_size.width) + 10
       local hero_minimap_y = math.floor(hero_absolute_y * self.outside_world_minimap_size.height / self.outside_world_size.height) - 5
-      self.hero_x = hero_minimap_x + (hero_absolute_x / 300) + 8
-      self.hero_y = hero_minimap_y + (hero_absolute_y / 250) - 20
+      self.hero_x = hero_minimap_x + 24
+      self.hero_y = hero_minimap_y + 54
       self.world_minimap_visible_xy.y = math.min(self.outside_world_minimap_size.height - 133, math.max(0, hero_minimap_y - 65))
+print(self.hero_x .. ", " .. self.hero_y)
+print(hero_minimap_x .. ", " .. hero_minimap_y)
     elseif self.game:get_item("world_map"):get_variant() > 2 and self.game:get_map():get_world() == "outside_north" then
       map_shown = true      -- If in North Hyrule with upgraded World Map, then show the map.
       self.outside_world_size = { width = 16814, height = 6725 }
