@@ -56,8 +56,8 @@ function map_submenu:on_started()
       self.world_minimap_img = sol.surface.create("menus/outside_world_map_3.png")
       local hero_minimap_x = math.floor(hero_absolute_x * self.outside_world_minimap_size.width / self.outside_world_size.width)
       local hero_minimap_y = math.floor(hero_absolute_y * self.outside_world_minimap_size.height / self.outside_world_size.height)
-      self.hero_x = hero_minimap_x + (hero_absolute_x / 300) + 8
-      self.hero_y = hero_minimap_y + (hero_absolute_y / 250) - 20
+      self.hero_x = hero_minimap_x + (hero_absolute_x / 800) + 14
+      self.hero_y = hero_minimap_y + (hero_absolute_y / 150) + 14
       self.world_minimap_visible_xy.y = math.min(self.outside_world_minimap_size.height - 133, math.max(0, hero_minimap_y - 65))
     else
       -- if World Map not in inventory, show clouds in map screen

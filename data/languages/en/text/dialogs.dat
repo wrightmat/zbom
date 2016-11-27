@@ -79,6 +79,7 @@ a thing!$0 Find more magic!
 dialog{
   id = "_confusion",
   icon = "99",
+  skip = "current",
   text = [[
 You're confused!
 You won't know which direction
@@ -131,6 +132,7 @@ Try to hit it with something...
 dialog{
   id = "_cursed",
   icon = "96",
+  skip = "current",
   text = [[
 You've been cursed!
 You won't be able to draw your
@@ -150,6 +152,7 @@ Tough luck...
 dialog{
   id = "_exhausted",
   icon = "98",
+  skip = "current",
   text = [[
 You're exhausted!$0 You won't be
 able to continue much farther until
@@ -160,6 +163,7 @@ you sleep or eat something!
 dialog{
   id = "_exhausted_sleep",
   icon = "98",
+  skip = "current",
   text = [[
 Food is having less and less of an
 effect on your exhaustion. Try
@@ -1095,6 +1099,7 @@ cave, hero...
 dialog{
   id = "_poison",
   icon = "97",
+  skip = "current",
   text = [[
 You've been poisoned!
 You'll slowly lose life for a period
@@ -2736,6 +2741,7 @@ aren't normally ice.
 
 dialog{
   id = "anouki_5.1.snowpeak",
+  skip = "current",
   text = [[
 I'll bet you noticed that everything's
 frozen here, but did you know that you
@@ -3068,6 +3074,7 @@ my life! Now run off and have fun!
 
 dialog{
   id = "bilo.0.field",
+  skip = "current",
   text = [[
 I'm on my way to Hyrule Castle Town,
 hoping that there's some place I can
@@ -3151,6 +3158,7 @@ with bananas!
 
 dialog{
   id = "chef.0.house",
+  skip = "current",
   text = [[
 Sometimes I cook right into the night.
 When you're passionate about something,
@@ -3805,6 +3813,7 @@ I need time...$0
 
 dialog{
   id = "dargor.5.mine",
+  skip = "current",
   text = [[
 I've decided it's time for me to return
 to work. Hopefully doing some good for
@@ -4872,6 +4881,7 @@ Let the pilaging commence!
 
 dialog{
   id = "gerudo_1.0.nabooru",
+  skip = "current",
   text = [[
 The Gerudo honor the desert. We are
 trustworthy and pure of heart. Those
@@ -4882,6 +4892,7 @@ entire race a bad name!
 
 dialog{
   id = "gerudo_2.0.nabooru",
+  skip = "current",
   text = [[
 Gruce and the Gerutones have been
 rocking together up here for years!
@@ -4931,10 +4942,11 @@ Can't say I even know what that is!
 
 dialog{
   id = "gin.2.council",
+  skip = "current",
   text = [[
 Zelda told me all about this Book you
-mentioned when she got back. Sounds like
-you had quite the adventure!
+mentioned when she got back. Sounds
+like you had quite the adventure!
 ]]
 }
 
@@ -4973,6 +4985,7 @@ anyhow.
 
 dialog{
   id = "gonpho.1.council",
+  skip = "current",
   text = [[
 We knew you'd come through and find
 Zelda! Great work, hero!
@@ -5551,6 +5564,7 @@ for your efforts...
 
 dialog{
   id = "great_fairy.6",
+  skip = "current",
   text = [[
 Thank you for all of your help.
 You truly are the hero I'd been
@@ -5568,7 +5582,7 @@ Are you ready to rock?!?
 
 dialog{
   id = "gruce.0.nabooru",
-  question = "true",
+  question = "1",
   skip = "current",
   text = [[
 Hey kid. Want to hear us play?
@@ -5953,6 +5967,7 @@ them all!
 
 dialog{
   id = "hylian_1.0.kasuto",
+  skip = "current",
   text = [[
 See that woman over there? We just got
 divorced, and now we're both stuck
@@ -5964,6 +5979,7 @@ reminder of everything I did wrong...
 
 dialog{
   id = "hylian_1.0.rauru",
+  skip = "current",
   text = [[
 Of course I always have an umbrella! You
 must be new here to know how often it
@@ -5992,6 +6008,7 @@ is pretty close to the south!
 
 dialog{
   id = "hylian_2.0.kasuto",
+  skip = "current",
   text = [[
 See that man over there? It's awkward
 now because we just got divorced. Why
@@ -6005,6 +6022,7 @@ there, I'm gone!
 
 dialog{
   id = "hylian_2.0.rauru",
+  skip = "current",
   text = [[
 Have you heard of the   $b  Forest of Deception$w
 that's north-west of the Castle? I would
@@ -6050,6 +6068,7 @@ this stuff.
 
 dialog{
   id = "hylian_3.0.kasuto",
+  skip = "current",
   text = [[
 We've settling in quite nicely here!
 I miss my old house, but this area
@@ -6060,6 +6079,7 @@ and it gives us a chance to start fresh.
 
 dialog{
   id = "hylian_3.0.rauru",
+  skip = "current",
   text = [[
 There's another country whose border
 is not too far from here, but the Queen
@@ -6071,6 +6091,7 @@ say it's beautiful.
 
 dialog{
   id = "hylian_4.0.kasuto",
+  skip = "current",
   text = [[
 It was difficult, moving these old
 bones so far, but I made it! Now I can
@@ -6080,6 +6101,7 @@ live out my days in a peaceful setting.
 
 dialog{
   id = "hylian_4.0.rauru",
+  skip = "current",
   text = [[
 Our faith is fairly new, but we're very
 devout. In fact, we built this
@@ -6091,6 +6113,7 @@ should speak with him.
 
 dialog{
   id = "hylian_5.0.kasuto",
+  skip = "current",
   text = [[
 $0
 This will not do at all. Not at all.
@@ -6109,6 +6132,7 @@ it my home.
 
 dialog{
   id = "hylian_5.0.rauru",
+  skip = "current",
   text = [[
 Have you heard about the Goddess? She
 was the woman who was entrused with
@@ -6123,6 +6147,7 @@ learn from her teachings even now.
 
 dialog{
   id = "hylian_6.0.rauru",
+  skip = "current",
   text = [[
 Rauru may be newly established, but
 we've got a lot to show for ourselves
@@ -6134,6 +6159,7 @@ in the Hyli Province.
 
 dialog{
   id = "hylian_earmuffs.0.calatia",
+  skip = "current",
   text = [[
 It's cold up here! When it gets this
 cold, snow stays accumulated on the
@@ -6363,6 +6389,7 @@ much more!
 
 dialog{
   id = "impa.6.house",
+  skip = "current",
   text = [[
 Have you full explored the ruins that
 run under Hyrule? What do I mean by
@@ -6377,6 +6404,7 @@ even be others that I don't know about!
 
 dialog{
   id = "impa.7.house",
+  skip = "current",
   text = [[
 I see... A dark twisted wood. A forest
 which has always been twisted, but the
@@ -6502,6 +6530,7 @@ eye open for odd looking books!
 
 dialog{
   id = "isan.2.library.2_count",
+  skip = "current",
   text = [[
 You've found $v books already -
 keep up your search!
@@ -6510,9 +6539,10 @@ keep up your search!
 
 dialog{
   id = "isan.2.library.2_done",
+  skip = "current",
   text = [[
-I think you've all the books that
-could be helpful to you! You've
+I think you've found all the books
+that could be helpful to you! You've
 earned a gift for all of your
 careful research.
 ]]
@@ -6704,6 +6734,7 @@ treasure - known as  $r  Zora's Flippers$w.
 
 dialog{
   id = "juba.3.council",
+  skip = "current",
   text = [[
 Good to see that Zelda is back.
 I actually did miss her a litte. And she's
@@ -6821,6 +6852,7 @@ next, I bet he'd have some ideas.
 
 dialog{
   id = "kokiri_1.0.plants",
+  skip = "current",
   text = [[
 Wow, you've found all of the plants
 that are scattered around Hyrule!
@@ -6832,6 +6864,7 @@ like to give you some treasure...
 
 dialog{
   id = "kokiri_1.0.saria",
+  skip = "current",
   text = [[
 Welcome to Saria!
 I live here because I love plants
@@ -6841,6 +6874,7 @@ so much!
 
 dialog{
   id = "kokiri_2.0.saria",
+  skip = "current",
   text = [[
 I love our beautiful woods home!
 
@@ -6856,6 +6890,7 @@ can be used to create powerful potions!
 
 dialog{
   id = "kokiri_2.0.saria_count",
+  skip = "current",
   text = [[
 If you collect all the rare plant
 species, a potion maker will be able
@@ -6903,6 +6938,7 @@ people - we call it $b Septen Heights$w.
 
 dialog{
   id = "koshi.1.council",
+  skip = "current",
   text = [[
 Thank you for reuniting our council!
 Now back to the important work of
@@ -6971,6 +7007,7 @@ were better...
 
 dialog{
   id = "larin.2.council",
+  skip = "current",
   text = [[
 Brother! You've saved my entire people
 and the leader of our council! We can't
@@ -6980,6 +7017,7 @@ possibly thank you enough!
 
 dialog{
   id = "larin.2.house",
+  skip = "current",
   text = [[
 Not sure where to go next? Some of my
 council Brothers remained in Hyrule
@@ -6990,6 +7028,7 @@ you from the council office.
 
 dialog{
   id = "larin.3.house",
+  skip = "current",
   text = [[
 My people and I can't thank you enough
 for your help. If you ever need anything
@@ -7596,6 +7635,7 @@ me sing for a while.
 
 dialog{
   id = "marryn.1.ranch",
+  skip = "current",
   text = [[
 Sometimes when I'm not singing, I can
 hear songs emanating from a cave just
@@ -7705,6 +7745,7 @@ Not interested
 
 dialog{
   id = "monkey.1.faron_no",
+  skip = "current",
   text = [[
 You don't want your paper back?
 I'll warn you, you won't get very far in
@@ -7715,6 +7756,7 @@ anymore unless you play my game though.
 
 dialog{
   id = "monkey.1.faron_yes",
+  skip = "current",
   text = [[
 Alright...$0 Ready?!
 ]]
@@ -7722,6 +7764,7 @@ Alright...$0 Ready?!
 
 dialog{
   id = "monkey.1.game_right",
+  skip = "current",
   text = [[
 Aww! You found me! I guess you can have
 this $cdingy paper$w  back -
@@ -7731,6 +7774,7 @@ we won't need it where we're going!
 
 dialog{
   id = "monkey.1.game_wrong",
+  skip = "current",
   text = [[
 Nope! Try again!
 ]]
@@ -7872,6 +7916,7 @@ I know what you're talking about.
 
 dialog{
   id = "oracle_2.0.island_palace",
+  skip = "current",
   text = [[
 Hello my dear. If you're looking for an
 autograph, I'm not interested. What?$0
@@ -7883,6 +7928,7 @@ Wind and Water?
 
 dialog{
   id = "oracle_3.0.north_castle",
+  skip = "current",
   text = [[
 Hey dude! Do you miss our music as
 much as I do? You don't know who I am?
@@ -8556,6 +8602,7 @@ potions.
 
 dialog{
   id = "poe.0.forest_deception",
+  skip = "current",
   text = [[
 This forest can be quite deceiving,
 but if you stick with me you probably
@@ -8772,6 +8819,7 @@ a lot here yet, but we're growing fast!
 
 dialog{
   id = "rito_1.1.zora",
+  skip = "current",
   text = [[
 The Zora? They sure are isolated and
 angry! I wonder why? With us being
@@ -8880,6 +8928,7 @@ in a snowy peak and one in some ruins.
 
 dialog{
   id = "rito_5.1.septen",
+  skip = "current",
   text = [[
 Doesn't our Tower of Winds just
 look amazing?
@@ -9196,6 +9245,7 @@ to find me the right materials.
 
 dialog{
   id = "rudy.4.cave_work_2",
+  skip = "current",
   text = [[
 Sorry, I think I've done all the
 work I can for you right now!
@@ -9204,6 +9254,7 @@ work I can for you right now!
 
 dialog{
   id = "rudy.4.cave_work_3",
+  skip = "current",
   text = [[
 Sorry, I think I've done all the work
 I can for you right now.$0 That's a
@@ -9275,6 +9326,7 @@ can, please come see me!
 
 dialog{
   id = "sanday.0.house",
+  skip = "current",
   text = [[
 Hello, stranger. My name is Sanday
 and I'm the only remaining member
@@ -9286,6 +9338,7 @@ I suppose I'm used to it.
 
 dialog{
   id = "sanday.1.house",
+  skip = "current",
   text = [[
 Wait... what?! You say you've met
 another of my kind? There's a desert
@@ -10332,6 +10385,7 @@ The clock's tickin'!
 
 dialog{
   id = "tern.1.house",
+  skip = "current",
   text = [[
 I don't like leaving my goats out all
 night because they spook easily.$0
@@ -10845,6 +10899,7 @@ sure it hasn't been used in a long time.
 
 dialog{
   id = "ulo.6.council",
+  skip = "current",
   text = [[
 Great work saving Zelda! I knew you
 would be the one to defeat the Darkness.
@@ -11170,6 +11225,7 @@ Ball$w. Please find a good home for it.
 
 dialog{
   id = "witch.1.house",
+  skip = "current",
   text = [[
 Now that I have my   $r  Moon Tear $w
 maybe I'll look to the stars for more
@@ -11462,6 +11518,7 @@ it'll thaw and be really gross.
 
 dialog{
   id = "zora_1.0.ruto",
+  skip = "current",
   text = [[
 We just want to be left alone to live
 as we choose. If more people would
@@ -11474,6 +11531,7 @@ home get it, or we'd have a problem!
 
 dialog{
   id = "zora_2.0.ruto",
+  skip = "current",
   text = [[
 I just had my floors re-done.
 What do you think? $0 Too much?
@@ -11482,6 +11540,7 @@ What do you think? $0 Too much?
 
 dialog{
   id = "zora_3.0.ruto",
+  skip = "current",
   text = [[
 The Zora are a proud race, and the
 most important one in Hyrule! The
@@ -11559,6 +11618,7 @@ then who am I to stand in the way.
 
 dialog{
   id = "zora_guard.0.great_hall",
+  skip = "current",
   text = [[
 Welcome to the Great Hall of the Zora
 people. Currently you are a guest, but
@@ -11568,6 +11628,7 @@ touch anything and we'll kick you out.
 
 dialog{
   id = "zora_king.0.flippers",
+  skip = "current",
   text = [[
 Hero! How did you travel all this way
 without the assitance of our great
@@ -11579,6 +11640,7 @@ treasure - our flippers.
 
 dialog{
   id = "zora_king.0.great_hall",
+  skip = "current",
   text = [[
 I am the King of the Zora people,
 Ralis II, and this is my chamber.
