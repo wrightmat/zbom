@@ -43,40 +43,41 @@ function condition_manager:initialize(game)
       end
     end
 
-    -- It takes stamina to use an attack, action or item - but only if it's actually equipped
+    -- It takes stamina to use an attack, action or item - but only if it's actually equipped (and not an action like "check")
     if (command == "item_1" or command == "item_2" or command == "attack" or command == "action") and game:get_command_effect(command) ~= nil then
       if (command == "item_1" and game:get_item_assigned(1) == nil) or (command == "item_2" and game:get_item_assigned(2) == nil) then return false end
+      if (command == "action" and (game:get_command_effect("action") == "look" or game:get_command_effect("action") == "info")) then return false end
       if game:get_max_stamina() > 0 then
         if game:get_stamina() == 0 then
-	if not hero:is_condition_active('exhausted') then -- when stamina out, set exhaustion
-           hero:set_condition('exhausted', true)
-	  if not game:get_value("exhausted_once") then
-             game:start_dialog("_exhausted")
-             game:set_value("exhausted_once", true)
-           end
-	else
-	  if math.random(4) == 1 then  -- when stamina out, buttons don't always work
-	    sol.audio.play_sound("wrong")
-	    return true
-	  else
-	    return false
-	  end
-	end
+          if not hero:is_condition_active('exhausted') then -- when stamina out, set exhaustion
+            hero:set_condition('exhausted', true)
+            if not game:get_value("exhausted_once") then
+              game:start_dialog("_exhausted")
+              game:set_value("exhausted_once", true)
+            end
+          else
+            if math.random(4) == 1 then  -- when stamina out, buttons don't always work
+              sol.audio.play_sound("wrong")
+              return true
+            else
+              return false
+            end
+          end
         elseif game:get_stamina() < (game:get_max_stamina()/6) then -- if stamina too low, play heavy breathing
-	game:remove_stamina(1)
-	hero:set_condition('exhausted', false)
-	if not breathing_timer then
-	  breathing_timer = sol.timer.start(8000, function()
-	    sol.audio.play_sound("breathing")
-	    return true
-	  end)
-	end
-	return false
+          game:remove_stamina(1)
+          hero:set_condition('exhausted', false)
+          if not breathing_timer then
+            breathing_timer = sol.timer.start(8000, function()
+              sol.audio.play_sound("breathing")
+              return true
+            end)
+          end
+          return false
         else
-	game:remove_stamina(1)
-	hero:set_condition('exhausted', false)
-	if breathing_timer ~= nil then breathing_timer:stop() end
-	return false
+          game:remove_stamina(1)
+          hero:set_condition('exhausted', false)
+          if breathing_timer ~= nil then breathing_timer:stop() end
+          return false
         end --game:get_stamina() == 0
       end --game:get_max_stamina() > 0
     end

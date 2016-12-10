@@ -41,6 +41,8 @@ function game:on_finished()
   self.hud:quit()
   self:quit_dialog_box()
   camera = nil
+  -- Ensure the hero always has a sword when they start a new game (possible to lost it permanantly if cursed).
+  if game:get_ability("sword") == 0 then game:set_ability("sword", game:get_value("i1821")) end
   -- Print amount of time played
   local time = game:get_value("time_played")
   local hours = math.floor(time / 3600)
