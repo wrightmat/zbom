@@ -36,6 +36,12 @@ function map:on_started(destination)
     mystic_jade:remove()
     goron_amber:remove()
   end
+  -- Remove Gerudo from houses if they aren't back to the desert yet.
+  if game:get_value("i1068") <= 6 then
+    npc_gerudo_leader:remove()
+    npc_gerudo_pirate_1:remove()
+    npc_gerudo_pirate_2:remove()
+  end
 end
 
 function npc_astronomer:on_interaction()
