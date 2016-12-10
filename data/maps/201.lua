@@ -14,6 +14,7 @@ function map:on_started(destination)
   if not game:get_value("b1035") then boss_heart:set_enabled(false) end
   if game:get_value("b1050") then map:open_doors("door_miniboss") end
   if game:get_value("b1787") then chest_treasure:set_enabled(false) end
+  if game:get_value("b1195") or game:get_value("i1808") > 0 then chest_big:set_open(true) end
 end
 
 function map:on_update()
