@@ -40,7 +40,7 @@ for enemy in map:get_entities("chuchu") do
         m:set_speed(32)
         npc_crista:get_sprite():set_animation("walking")
         m:start(npc_crista, function()
-	  npc_crista:remove()
+          npc_crista:remove()
         end)
       end)
     end

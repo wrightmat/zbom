@@ -123,7 +123,6 @@ function map:on_started(destination)
     blacksmith_table:set_enabled(true)
     blacksmith_furnace:set_enabled(true)
     random_walk(npc_ulo)
-    --random_walk(npc_bilo) -- TODO: add back once he has all of his directions/animations
   else  -- If festival is over, then don't have NPCs walking around outside.
     npc_rudy:remove()
     npc_julita:remove()

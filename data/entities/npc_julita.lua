@@ -52,6 +52,8 @@ function entity:on_interaction()
   self:get_sprite():set_direction(self:get_direction4_to(game:get_hero()))
 
   if map:get_id() == "10" then
+    if game:get_value("i1027") >= 5 then
+      game:start_dialog("julita.2.thanks")
     if game:get_value("i1027") >= 4 then
       game:start_dialog("julita.1", game:get_player_name(), function()
         game:set_value("i1903", 2)
@@ -75,12 +77,10 @@ function entity:on_interaction()
     else
       game:start_dialog("julita.0")
     end
+  elseif game:get_value("i1029") >= 6 then
+    game:start_dialog("julita.4.house")
   else
-    if game:get_value("i1029") >= 6 then
-      game:start_dialog("julita.4.house")
-    else
-      game:start_dialog("julita.3.house")
-    end
+    game:start_dialog("julita.3.house")
   end
 end
 
