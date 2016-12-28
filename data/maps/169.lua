@@ -531,7 +531,7 @@ function room5_dest:on_activated()
 end
 
 function room5_exit:on_activated()
-  if game:get_value("i1609") < 50 then game:set_value("i1609",0) end
+  if game:get_value("i1609") < 50 then game:set_value("i1609", 0) end
 end
 
 function treasure_dest:on_activated()
@@ -546,7 +546,6 @@ function treasure_dest:on_activated()
 end
 
 function npc_moblin:on_interaction()
-  game:set_dialog_style("default")
   if game:get_value("b2026") then
     game:start_dialog("moblin.0.trading", function(answer)
       if answer == 1 then
@@ -569,7 +568,6 @@ function npc_moblin:on_interaction()
 end
 
 function sensor_exit:on_activated()
-  game:set_dialog_style("default")
   if game:get_hero():get_direction() == 1 then
     game:start_dialog("exit.cave_ordeals", game:get_value("i1609"))
   end

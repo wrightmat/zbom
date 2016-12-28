@@ -2386,8 +2386,8 @@ destination{
 destination{
   name = "room5_dest",
   layer = 0,
-  x = 1272,
-  y = 125,
+  x = 1264,
+  y = 133,
   direction = 3,
   sprite = "entities/destination",
 }
@@ -2395,8 +2395,8 @@ destination{
 teletransporter{
   name = "room5_tran",
   layer = 0,
-  x = 1136,
-  y = 112,
+  x = 1144,
+  y = 120,
   width = 16,
   height = 16,
   destination_map = "169",
@@ -2408,8 +2408,8 @@ teletransporter{
 destination{
   name = "treasure_dest",
   layer = 0,
-  x = 1272,
-  y = 445,
+  x = 1264,
+  y = 453,
   direction = 3,
   sprite = "entities/destination",
 }
@@ -2417,8 +2417,8 @@ destination{
 teletransporter{
   name = "treasure_tran",
   layer = 0,
-  x = 1136,
-  y = 432,
+  x = 1144,
+  y = 440,
   width = 16,
   height = 16,
   destination_map = "64",
@@ -2491,8 +2491,8 @@ destructible{
 destination{
   name = "room2_dest",
   layer = 0,
-  x = 680,
-  y = 77,
+  x = 672,
+  y = 85,
   direction = 3,
   sprite = "entities/destination",
 }
@@ -2500,8 +2500,8 @@ destination{
 destination{
   name = "room4_dest",
   layer = 0,
-  x = 680,
-  y = 445,
+  x = 672,
+  y = 453,
   direction = 3,
   sprite = "entities/destination",
 }
@@ -2509,8 +2509,8 @@ destination{
 destination{
   name = "room1_dest",
   layer = 0,
-  x = 280,
-  y = 77,
+  x = 272,
+  y = 85,
   direction = 3,
   sprite = "entities/destination",
 }
@@ -2518,8 +2518,8 @@ destination{
 destination{
   name = "room3_dest",
   layer = 0,
-  x = 280,
-  y = 445,
+  x = 272,
+  y = 453,
   direction = 3,
   sprite = "entities/destination",
 }
@@ -2527,8 +2527,8 @@ destination{
 teletransporter{
   name = "room1_tran",
   layer = 0,
-  x = 64,
-  y = 64,
+  x = 72,
+  y = 72,
   width = 16,
   height = 16,
   destination_map = "169",
@@ -2540,8 +2540,8 @@ teletransporter{
 teletransporter{
   name = "room2_tran",
   layer = 0,
-  x = 464,
-  y = 64,
+  x = 472,
+  y = 72,
   width = 16,
   height = 16,
   destination_map = "169",
@@ -2553,8 +2553,8 @@ teletransporter{
 teletransporter{
   name = "room3_tran",
   layer = 0,
-  x = 64,
-  y = 432,
+  x = 72,
+  y = 440,
   width = 16,
   height = 16,
   destination_map = "169",
@@ -2566,8 +2566,8 @@ teletransporter{
 teletransporter{
   name = "room4_tran",
   layer = 0,
-  x = 464,
-  y = 432,
+  x = 472,
+  y = 440,
   width = 16,
   height = 16,
   destination_map = "169",
