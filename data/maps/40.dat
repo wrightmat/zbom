@@ -8796,17 +8796,6 @@ dynamic_tile{
   enabled_at_start = false,
 }
 
-dynamic_tile{
-  name = "night_office_door",
-  layer = 0,
-  x = 384,
-  y = 632,
-  pattern = "2172",
-  width = 16,
-  height = 16,
-  enabled_at_start = false,
-}
-
 sensor{
   name = "office_door_sensor",
   layer = 0,

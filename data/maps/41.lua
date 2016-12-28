@@ -15,6 +15,8 @@ function map:on_started(destination)
     for entity in game:get_map():get_entities("night_") do
       entity:set_enabled(true)
     end
+    npc_marryn:remove()
+    sensor_singing:remove()
   end
   -- Opening doors
   local entrance_names = { "ranch" }
