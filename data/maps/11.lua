@@ -344,14 +344,13 @@ end
 function map:on_draw(dst_surface)
   -- Show remaining timer time on screen
   if game.race_timer ~= nil then
-    local timer_icon = sol.sprite.create("hud/clock")
+    local timer_icon = sol.sprite.create("hud/timer")
     local timer_time = math.floor(game.race_timer:get_remaining_time() / 1000)
     local timer_text = sol.text_surface.create{
       font = "white_digits",
       horizontal_alignment = "left",
       vertical_alignment = "top",
     }
-    timer_icon:set_animation("timer")
     timer_icon:draw(dst_surface, 5, 55)
     timer_text:set_text(timer_time)
     timer_text:draw(dst_surface, 22, 58)
