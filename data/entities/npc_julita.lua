@@ -50,17 +50,17 @@ end
 function entity:on_interaction()
   -- First, make the NPC face the hero when interacting
   self:get_sprite():set_direction(self:get_direction4_to(game:get_hero()))
-
+  
   if map:get_id() == "10" then
     if game:get_value("i1027") >= 5 then
       game:start_dialog("julita.2.thanks")
-    if game:get_value("i1027") >= 4 then
+    elseif game:get_value("i1027") >= 4 then
       game:start_dialog("julita.1", game:get_player_name(), function()
         game:set_value("i1903", 2)
         if map:get_entity("quest_julita") ~= nil then map:get_entity("quest_julita"):remove() end
         if not game:has_item("shield") then game:start_dialog("julita.1.shield") end
       end)
-    elseif game:get_value("i1027") < 5 then
+    elseif game:get_value("i1027") < 4 then
       game:start_dialog("julita.0.festival", function(answer)
         if answer == 1 then
           if game:get_magic() then

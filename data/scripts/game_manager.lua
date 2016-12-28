@@ -99,6 +99,11 @@ function game:is_in_dungeon()
   return self:get_dungeon() ~= nil
 end
 
+local function apply_game_fixes(game)
+  -- Issue with savegame variable of wrong type, introduced in 1.1 and fixed in 1.2
+  if game:get_value("i1808") == true or game:get_value("i1808") == false then game:set_value("i1808", 1) end
+end
+
 function game:calculate_percent_complete()
   if game:get_value("i1602")==nil then game:set_value("i1602", 0) end
   if game:get_value("i1603")==nil then game:set_value("i1603", 0) end
@@ -109,6 +114,8 @@ function game:calculate_percent_complete()
   if game:get_value("i1608")==nil then game:set_value("i1608", 0) end
   if game:get_value("i1609")==nil then game:set_value("i1609", 0) end
   if game:get_value("i1615")==nil then game:set_value("i1615", 0) end
+  if game:get_value("i1631")==nil then game:set_value("i1631", 0) end
+  if game:get_value("i1822")==nil then game:set_value("i1822", 0) end
   if game:get_value("i1823")==nil then game:set_value("i1823", 0) end
   if game:get_value("i1840")==nil then game:set_value("i1840", 0) end
   if game:get_value("i1841")==nil then game:set_value("i1841", 0) end
@@ -172,4 +179,5 @@ end
 
 -- Run the game.
 sol.main.game = game
+apply_game_fixes(game)
 game:start()
