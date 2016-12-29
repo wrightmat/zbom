@@ -220,7 +220,7 @@ tile{
 tile{
   layer = 0,
   x = 912,
-  y = 336,
+  y = 328,
   width = 16,
   height = 16,
   pattern = "825",
@@ -228,8 +228,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 968,
-  y = 416,
+  x = 976,
+  y = 408,
   width = 16,
   height = 16,
   pattern = "825",
@@ -4387,7 +4387,7 @@ tile{
 tile{
   layer = 0,
   x = 864,
-  y = 328,
+  y = 320,
   width = 48,
   height = 16,
   pattern = "825",
@@ -6290,6 +6290,15 @@ tile{
   width = 16,
   height = 16,
   pattern = "1950",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 864,
+  width = 16,
+  height = 16,
+  pattern = "825",
 }
 
 dynamic_tile{
