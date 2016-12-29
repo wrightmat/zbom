@@ -51,11 +51,7 @@ function tone_manager:create(game)
     game:set_value("tb", tb)
   end
   
-  function game:set_time(hour)
-    if hour == 24 then hour = 0 end
-    game:set_value("hour_of_day", hour)
-    minute = 0
-    
+  function game:set_time(hour)  
     if (hour >= 7 and hour < 17) then
       game:set_value("time_of_day", "day")
     elseif hour >= 20 or hour < 5 then
@@ -164,7 +160,10 @@ function tone_manager:create(game)
     local need_rebuild = false
     
     if not game:is_suspended() then minute = minute + 1 end
-    if minute >= 60 then game:set_time(game:get_value("hour_of_day") + 1) end
+    if minute >= 60 then 
+      game:set_value("hour_of_day", (game:get_value("hour_of_day") + 1) % 24) 
+      minute = 0 
+    end
     
     if minute == 0 or minute == 30 then
       need_rebuild = true
@@ -235,7 +234,7 @@ function tone_manager:create(game)
   	  self:set_new_tone(150, 150, 255)
   	end
     
-    self.d = 30 or 1800
+    d = 1800
   end
   
   function tone_menu:on_finished()

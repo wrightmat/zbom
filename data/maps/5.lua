@@ -6,7 +6,6 @@ local game = map:get_game()
 ------------------------
 
 if game:get_value("i1029") == nil then game:set_value("i1029", 0) end --quest variable
-if game:get_value("i1806") == nil then game:set_value("i1806", 0) end
 if game:get_value("i1914") == nil then game:set_value("i1914", 0) end --Dargor rep
 if game:get_value("i1916") == nil then game:set_value("i1916", 0) end --Galen rep
 
