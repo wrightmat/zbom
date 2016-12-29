@@ -15998,6 +15998,24 @@ destructible{
   weight = 1,
 }
 
+sensor{
+  name = "dungeon_room_25a_",
+  layer = 0,
+  x = 752,
+  y = 1581,
+  width = 16,
+  height = 64,
+}
+
+sensor{
+  name = "dungeon_room_25b_",
+  layer = 0,
+  x = 720,
+  y = 1509,
+  width = 48,
+  height = 16,
+}
+
 enemy{
   name = "keese_room21_3",
   layer = 1,
