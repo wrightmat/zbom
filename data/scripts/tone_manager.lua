@@ -341,11 +341,11 @@ function tone_manager:create(game)
   
   sol.menu.start(game, tone_menu, false)
 
-    -- Schedule the next check.
-    sol.timer.start(game, game.time_flow, function()
-      tone_menu:check()
-      return true
-    end)
+  -- Schedule the next check.
+  sol.timer.start(game, game.time_flow, function()
+    tone_menu:check()
+    return true
+  end)
   
   return tone_menu
 end

@@ -10438,8 +10438,7 @@ dialog{
   text = [[
 Wait! Where are you going? Aren't you
 going to help us get our beach back?
-Please get whatever the pirates need
-from the desert! Please?
+Please speak to the pirates! Please?
 ]]
 }
 
@@ -10452,6 +10451,17 @@ forest here and and you're saying you
 can't even share part of it? We were
 forced out of our homes! All we're
 looking for is a little help.
+]]
+}
+
+dialog{
+  id = "tokay.1.desert",
+  skip = "current",
+  text = [[
+Wait! Where are you going? Aren't you
+going to help us get our beach back?
+Please get whatever the pirates need
+from the desert! Please?
 ]]
 }
 
