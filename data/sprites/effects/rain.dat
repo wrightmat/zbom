@@ -1,0 +1,9 @@
+animation{
+  name = "rain",
+  src_image = "effects/rain.png",
+  frame_delay = 130,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 256, frame_height = 223, origin_x = 0, origin_y = 0, num_frames = 4 },
+  },
+}
