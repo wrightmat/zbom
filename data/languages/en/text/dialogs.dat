@@ -4337,6 +4337,7 @@ You don't have any empty Bottles!
 
 dialog{
   id = "found_piece_of_heart.first",
+  icon = "75",
   skip = "current",
   text = [[
 Find three more to make a new
@@ -4346,6 +4347,7 @@ Heart Container.
 
 dialog{
   id = "found_piece_of_heart.fourth",
+  icon = "78",
   skip = "current",
   text = [[
 You found four Pieces of Heart
@@ -4355,6 +4357,7 @@ to make a new Heart Container!
 
 dialog{
   id = "found_piece_of_heart.second",
+  icon = "76",
   skip = "current",
   text = [[
 Just two more to make a new
@@ -4364,6 +4367,7 @@ Heart Container!
 
 dialog{
   id = "found_piece_of_heart.third",
+  icon = "77",
   skip = "current",
   text = [[
 Only one more to make a new

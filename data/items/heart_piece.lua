@@ -16,7 +16,6 @@ function item:on_obtained(variant)
   local game = self:get_game()
   local nb_pieces_of_heart = game:get_value("i1700") or 0
   game:start_dialog(message_id[nb_pieces_of_heart + 1], function()
-
     game:set_value("i1700", (nb_pieces_of_heart + 1) % 4)
     if nb_pieces_of_heart == 3 then
       game:add_max_life(4)
