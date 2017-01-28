@@ -34,7 +34,6 @@ local behavior = {}
 -- All its values are optional except the sprite.
 
 function behavior:create(enemy, properties)
-
   local going_hero = false
   local awaken = false
 
@@ -77,7 +76,6 @@ function behavior:create(enemy, properties)
   end
 
   function enemy:on_created()
-
     self:set_life(properties.life)
     self:set_damage(properties.damage)
     self:set_hurt_style(properties.hurt_style)
@@ -98,7 +96,6 @@ function behavior:create(enemy, properties)
   end
 
   function enemy:on_movement_changed(movement)
-
     local direction4 = movement:get_direction4()
     local sprite = self:get_sprite()
     sprite:set_direction(direction4)
@@ -112,7 +109,6 @@ function behavior:create(enemy, properties)
   end
 
   function enemy:on_restarted()
-
     if not awaken then
       local sprite = self:get_sprite()
       sprite:set_animation(properties.asleep_animation)
@@ -123,7 +119,6 @@ function behavior:create(enemy, properties)
   end
 
   function enemy:check_hero()
-
     local hero = self:get_map():get_entity("hero")
     local near_hero = self:get_distance(hero) < properties.waking_distance and self:is_in_same_region(hero)
 
@@ -142,14 +137,12 @@ function behavior:create(enemy, properties)
   end
 
   function enemy:finish_waking_up()
-
     self:get_sprite():set_animation(properties.normal_animation)
     awaken = true
     self:go_hero()
   end
 
   function enemy:wake_up()
-
     self:stop_movement()
     if properties.awakening_sound == nil then
       self:finish_waking_up()
@@ -163,7 +156,6 @@ function behavior:create(enemy, properties)
   end
 
   function enemy:go_random()
-
     local m = sol.movement.create("random")
     m:set_speed(properties.normal_speed)
     m:set_ignore_obstacles(properties.ignore_obstacles)
@@ -172,7 +164,6 @@ function behavior:create(enemy, properties)
   end
 
   function enemy:go_hero()
-
     local m = sol.movement.create("target")
     m:set_speed(properties.faster_speed)
     m:set_ignore_obstacles(properties.ignore_obstacles)

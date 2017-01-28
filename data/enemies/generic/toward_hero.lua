@@ -31,7 +31,6 @@ local behavior = {}
 -- All its values are optional except the sprite.
 
 function behavior:create(enemy, properties)
-
   local going_hero = false
 
   -- Set default properties.
@@ -73,7 +72,6 @@ function behavior:create(enemy, properties)
   end
 
   function enemy:on_created()
-
     self:set_life(properties.life)
     self:set_damage(properties.damage)
     self:create_sprite(properties.sprite)
@@ -86,14 +84,12 @@ function behavior:create(enemy, properties)
   end
 
   function enemy:on_movement_changed(movement)
-
     local direction4 = movement:get_direction4()
     local sprite = self:get_sprite()
     sprite:set_direction(direction4)
   end
 
   function enemy:on_obstacle_reached(movement)
-
     if not going_hero then
       self:go_random()
       self:check_hero()
@@ -106,7 +102,6 @@ function behavior:create(enemy, properties)
   end
 
   function enemy:check_hero()
-
     local hero = self:get_map():get_entity("hero")
     local _, _, layer = self:get_position()
     local _, _, hero_layer = hero:get_position()

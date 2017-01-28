@@ -27,12 +27,11 @@ local behavior = {}
 -- and sword_sprite.
 
 function behavior:create(enemy, properties)
-
   local going_hero = false
   local being_pushed = false
   local main_sprite = nil
   local sword_sprite = nil
-
+  
   -- Set default values.
   if properties.life == nil then
     properties.life = 2
@@ -52,9 +51,8 @@ function behavior:create(enemy, properties)
   if properties.hurt_style == nil then
     properties.hurt_style = "normal"
   end
-
+  
   function enemy:on_created()
-
     enemy:set_life(properties.life)
     enemy:set_damage(properties.damage)
     enemy:set_hurt_style(properties.hurt_style)
@@ -66,9 +64,8 @@ function behavior:create(enemy, properties)
     enemy:set_invincible_sprite(sword_sprite)
     enemy:set_attack_consequence_sprite(sword_sprite, "sword", "custom")
   end
-
+  
   function enemy:on_restarted()
-
     if not being_pushed then
       if going_hero then
         enemy:go_hero()
@@ -78,9 +75,8 @@ function behavior:create(enemy, properties)
       end
     end
   end
-
+  
   function enemy:check_hero()
-
     local map = enemy:get_map()
     local hero = map:get_hero()
     local _, _, layer = enemy:get_position()
@@ -100,32 +96,28 @@ function behavior:create(enemy, properties)
     sol.timer.stop_all(self)
     sol.timer.start(self, 1000, function() enemy:check_hero() end)
   end
-
+  
   function enemy:on_movement_changed(movement)
-
     if not being_pushed then
       local direction4 = movement:get_direction4()
       main_sprite:set_direction(direction4)
       sword_sprite:set_direction(direction4)
     end
   end
-
+  
   function enemy:on_movement_finished(movement)
-
     if being_pushed then
       enemy:go_hero()
     end
   end
-
+  
   function enemy:on_obstacle_reached(movement)
-
     if being_pushed then
       enemy:go_hero()
     end
   end
-
+  
   function enemy:on_custom_attack_received(attack, sprite)
-
     if attack == "sword" and sprite == sword_sprite then
       sol.audio.play_sound("sword_tapping")
       being_pushed = true
@@ -141,7 +133,7 @@ function behavior:create(enemy, properties)
       movement:start(enemy)
     end
   end
-
+  
   function enemy:go_random()
     local movement = sol.movement.create("random_path")
     movement:set_speed(properties.normal_speed)
@@ -149,11 +141,11 @@ function behavior:create(enemy, properties)
     being_pushed = false
     going_hero = false
   end
-
+  
   function enemy:go_hero()
     local movement = sol.movement.create("target")
     movement:set_speed(properties.faster_speed)
-    movement:start(self)
+    movement:start(enemy)
     being_pushed = false
     going_hero = true
   end

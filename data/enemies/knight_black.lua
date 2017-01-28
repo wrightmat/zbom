@@ -1,11 +1,15 @@
 local enemy = ...
+local behavior = require("enemies/generic/leader")
 
--- Black knight soldier (Leader).
+-- Black knight soldier.
 
-sol.main.load_file("enemies/generic/leader")(enemy)
-enemy:set_properties({
+local properties = {
   main_sprite = "enemies/knight_black",
-  life = 8,
+  life = 10,
   damage = 8,
-  play_hero_seen_sound = true
-})
+  normal_speed = 48,
+  faster_speed = 64,
+  play_hero_seen_sound = true,
+}
+
+behavior:create(enemy, properties)
