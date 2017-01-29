@@ -12,6 +12,51 @@ properties{
 
 tile{
   layer = 0,
+  x = 616,
+  y = 112,
+  width = 80,
+  height = 8,
+  pattern = "460",
+}
+
+tile{
+  layer = 0,
+  x = 696,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "271",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 104,
+  width = 8,
+  height = 8,
+  pattern = "7",
+}
+
+tile{
+  layer = 0,
+  x = 600,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "272",
+}
+
+tile{
+  layer = 0,
+  x = 600,
+  y = 104,
+  width = 8,
+  height = 8,
+  pattern = "7",
+}
+
+tile{
+  layer = 0,
   x = 280,
   y = 752,
   width = 16,
@@ -1335,18 +1380,18 @@ tile{
 
 tile{
   layer = 0,
-  x = 544,
+  x = 704,
   y = 112,
-  width = 368,
+  width = 208,
   height = 8,
   pattern = "265",
 }
 
 tile{
   layer = 0,
-  x = 544,
+  x = 704,
   y = 104,
-  width = 368,
+  width = 208,
   height = 8,
   pattern = "259",
 }
@@ -4600,6 +4645,24 @@ tile{
   pattern = "314",
 }
 
+tile{
+  layer = 0,
+  x = 544,
+  y = 104,
+  width = 64,
+  height = 8,
+  pattern = "259",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 112,
+  width = 64,
+  height = 8,
+  pattern = "265",
+}
+
 teletransporter{
   name = "to_F7",
   layer = 0,
@@ -4766,8 +4829,8 @@ teletransporter{
   y = 232,
   width = 16,
   height = 16,
-  destination_map = "64",
-  destination = "from_cave_2",
+  destination_map = "9",
+  destination = "from_outside_cave_2",
 }
 
 teletransporter{
@@ -4777,8 +4840,8 @@ teletransporter{
   y = 104,
   width = 16,
   height = 16,
-  destination_map = "64",
-  destination = "from_cave_1",
+  destination_map = "9",
+  destination = "from_outside_cave_1",
 }
 
 enemy{
@@ -4966,6 +5029,16 @@ enemy{
   direction = 0,
   breed = "lynel",
   treasure_name = "random_enemy",
+}
+
+jumper{
+  layer = 0,
+  x = 616,
+  y = 112,
+  width = 80,
+  height = 8,
+  direction = 6,
+  jump_length = 112,
 }
 
 tile{
