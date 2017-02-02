@@ -5,9 +5,16 @@ local game = map:get_game()
 -- Outside World G5 (Zora's Domain) --
 --------------------------------------
 
-function map:on_started()
+function map:on_started(destination)
   if not game:get_value("b2029") then quest_trading_scale:remove() end
   if not game:get_value("b1721") then chest_heart_piece_2:set_enabled(false) end
+  -- Save default solid ground to prevent perma-death if hero hits mines
+  -- before landing on solid ground somewhere on this map.
+  if destination == to_H5_water or destination == to_F5_2 then
+    game:get_hero():save_solid_ground(712,168,0)
+  else
+    game:get_hero():save_solid_ground(472,1000,0)
+  end
 end
 
 for enemy in map:get_entities("pincer") do
@@ -71,4 +78,20 @@ function npc_zora_trading:on_interaction()
   else
     game:start_dialog("zora.0.domain")
   end
+end
+
+function reset_ground_1:on_activated()
+  game:get_hero():reset_solid_ground()
+end
+
+function reset_ground_2:on_activated()
+  game:get_hero():reset_solid_ground()
+end
+
+function reset_ground_3:on_activated()
+  game:get_hero():reset_solid_ground()
+end
+
+function reset_ground_4:on_activated()
+  game:get_hero():reset_solid_ground()
 end
