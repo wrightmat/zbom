@@ -19,5 +19,6 @@ function enemy:on_restarted()
 end
 
 function enemy:on_attacking_hero(hero, enemy_sprite)
+  hero:set_invincible(true, 100)
   hero:start_frozen(1500)
 end
