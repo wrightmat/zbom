@@ -4959,7 +4959,7 @@ teletransporter{
   x = 1120,
   y = 288,
   width = 16,
-  height = 832,
+  height = 592,
   transition = "scrolling",
   destination_map = "54",
   destination = "_side",
@@ -5538,6 +5538,18 @@ wall{
   stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
+}
+
+teletransporter{
+  name = "to_D5_2",
+  layer = 0,
+  x = 1120,
+  y = 944,
+  width = 16,
+  height = 176,
+  transition = "scrolling",
+  destination_map = "54",
+  destination = "_side",
 }
 
 tile{

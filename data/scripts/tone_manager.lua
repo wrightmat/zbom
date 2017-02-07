@@ -119,6 +119,7 @@ function tone_manager:create(game)
   function tone_menu:on_map_changed()
     if game:get_map() ~= nil then
       local map = game:get_map()
+      game:on_tone_system_saving()
       
       local previous_time_system = time_system
       time_system = game:is_in_outside_world() or (map:get_id() == "20" or map:get_id() == "21" or map:get_id() == "22")
