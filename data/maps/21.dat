@@ -9381,36 +9381,6 @@ wall{
   stops_blocks = true,
 }
 
-npc{
-  name = "npc_gerudo_pirate_1",
-  layer = 0,
-  x = 224,
-  y = 125,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/gerudo_pirate",
-}
-
-npc{
-  name = "npc_gerudo_leader",
-  layer = 0,
-  x = 432,
-  y = 93,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/gerudo_hesla",
-}
-
-npc{
-  name = "npc_gerudo_pirate_2",
-  layer = 0,
-  x = 88,
-  y = 125,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/gerudo_pirate",
-}
-
 teletransporter{
   name = "to_C14",
   layer = 0,
@@ -9626,6 +9596,42 @@ sensor{
   y = 237,
   width = 160,
   height = 16,
+}
+
+custom_entity{
+  name = "npc_hesla",
+  layer = 0,
+  x = 432,
+  y = 93,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/gerudo_hesla",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_araeki",
+  layer = 0,
+  x = 216,
+  y = 125,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/gerudo_pirate",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_ibari",
+  layer = 0,
+  x = 96,
+  y = 125,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/gerudo_pirate",
+  model = "npc_generic",
 }
 
 tile{

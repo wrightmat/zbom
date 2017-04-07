@@ -26,7 +26,7 @@ for enemy in map:get_entities("pincer") do
   end
 end
 
-function npc_zora_1:on_interaction()
+function npc_mijas:on_interaction()
   sol.audio.play_sound("zora")
   if game:get_item("tunic"):get_variant() < 3 then
     game:start_dialog("zora.0.tunic")
@@ -38,7 +38,7 @@ function npc_zora_1:on_interaction()
   end
 end
 
-function npc_zora_2:on_interaction()
+function npc_zorir:on_interaction()
   sol.audio.play_sound("zora")
   if game:get_item("tunic"):get_variant() < 3 then
     game:start_dialog("zora.0.tunic")
@@ -50,7 +50,7 @@ function npc_zora_2:on_interaction()
   end
 end
 
-function npc_zora_3:on_interaction()
+function npc_peja:on_interaction()
   sol.audio.play_sound("zora")
   local rand = math.random(4)
   if rand == last_rand then rand = math.random(4) end
@@ -58,12 +58,12 @@ function npc_zora_3:on_interaction()
   local last_rand = rand
 end
 
-function npc_zora_trading:on_interaction()
+function npc_arin:on_interaction()
   sol.audio.play_sound("zora")
   if game:get_value("b2029") then
     game:start_dialog("zora.0.trading", function(answer)
       if answer == 1 then
-        -- give him the vase, get the zora scale
+        -- Give him the vase, get the zora scale
         game:start_dialog("zora.0.trading_yes", function()
           hero:start_treasure("trading", 10)
           game:set_value("b2030", true)
@@ -71,7 +71,7 @@ function npc_zora_trading:on_interaction()
           quest_trading_scale:remove()
         end)
       else
-        -- don't give him the vase
+        -- Don't give him the vase
         game:start_dialog("zora.0.trading_no")
       end
     end)
@@ -83,15 +83,12 @@ end
 function reset_ground_1:on_activated()
   game:get_hero():reset_solid_ground()
 end
-
 function reset_ground_2:on_activated()
   game:get_hero():reset_solid_ground()
 end
-
 function reset_ground_3:on_activated()
   game:get_hero():reset_solid_ground()
 end
-
 function reset_ground_4:on_activated()
   game:get_hero():reset_solid_ground()
 end

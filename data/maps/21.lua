@@ -89,7 +89,7 @@ function map:on_started(destination)
     npc_monkey:remove()
   elseif game:get_value("i1068") > 2 and game:get_value("i1068") < 6 then
     npc_monkey:remove()
-    npc_gerudo_leader:set_position(416, 69)
+    npc_hesla:set_position(416, 69)
   elseif game:get_value("i1068") == 6 then
     gerudo_ship:get_sprite():set_animation("ship")
     map:set_entities_enabled("ship_block", true)
@@ -102,13 +102,13 @@ function map:on_started(destination)
   if game:get_value("i1068") == 5 then
     if not ship_timer then game:set_value("i1068", 6) end
   elseif game:get_value("i1068") >= 7 then
-    npc_gerudo_leader:remove()
-    npc_gerudo_pirate_1:remove()
-    npc_gerudo_pirate_2:remove()
+    npc_hesla:remove()
+    npc_araeki:remove()
+    npc_ibari:remove()
   end
 end
 
-function npc_gerudo_pirate_1:on_interaction()
+function npc_araeki:on_interaction()
   if game:get_value("i1068") < 5 then
     game:start_dialog("gerudo.0.beach")
   elseif game:get_value("i1068") >= 6 then
@@ -118,7 +118,7 @@ function npc_gerudo_pirate_1:on_interaction()
   end
 end
 
-function npc_gerudo_pirate_2:on_interaction()
+function npc_ibari:on_interaction()
   if game:get_value("i1068") < 5 then
     game:start_dialog("gerudo.0.beach")
   elseif game:get_value("i1068") >= 6 then
@@ -128,7 +128,7 @@ function npc_gerudo_pirate_2:on_interaction()
   end
 end
 
-function npc_gerudo_leader:on_interaction()
+function npc_hesla:on_interaction()
   if game:get_value("i1917") >= 1 then
     if game:get_value("i1068") == 1 then
       game:start_dialog("hesla.1.beach")
@@ -138,12 +138,12 @@ function npc_gerudo_leader:on_interaction()
         game:set_value("i1068", 3)
         -- Move Hesla out of the way so we can get to the beach.
         local m = sol.movement.create("target")
-        npc_gerudo_leader:get_sprite():set_animation("walking")
+        npc_hesla:get_sprite():set_animation("walking")
         m:set_speed(24)
         m:set_target(416, 64)
-        m:start(npc_gerudo_leader, function()
-          npc_gerudo_leader:get_sprite():set_direction(0)
-          npc_gerudo_leader:get_sprite():set_animation("stopped")
+        m:start(npc_hesla, function()
+          npc_hesla:get_sprite():set_direction(0)
+          npc_hesla:get_sprite():set_animation("stopped")
         end)
       end)
     elseif game:get_value("i1068") == 3 then

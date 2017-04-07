@@ -7,9 +7,9 @@ local game = map:get_game()
 
 function map:on_started(destination)
   if game:get_time_of_day() == "day" then
-    npc_gerudo_leader:remove()
-    npc_gerudo_pirate_1:remove()
-    npc_gerudo_pirate_2:remove()
+    npc_hesla:remove()
+    npc_araeki:remove()
+    npc_ibari:remove()
     npc_tokay_chef:remove()
     npc_tokay_alchemy:remove()
     alchemy_stone:remove()
@@ -38,9 +38,9 @@ function map:on_started(destination)
   end
   -- Remove Gerudo from houses if they aren't back to the desert yet.
   if game:get_value("i1068") <= 6 then
-    npc_gerudo_leader:remove()
-    npc_gerudo_pirate_1:remove()
-    npc_gerudo_pirate_2:remove()
+    npc_helsa:remove()
+    npc_araeki:remove()
+    npc_ibari:remove()
   end
 end
 
@@ -115,17 +115,14 @@ function npc_tokay_chef:on_interaction()
   game:start_dialog("chef.0.house")
 end
 
-function npc_gerudo_pirate_1:on_interaction()
-  game:set_dialog_style("default")
+function npc_araeki:on_interaction()
   game:start_dialog("gerudo.3.desert")
 end
 
-function npc_gerudo_pirate_2:on_interaction()
-  game:set_dialog_style("default")
+function npc_ibari:on_interaction()
   game:start_dialog("gerudo.3.desert")
 end
 
-function npc_gerudo_leader:on_interaction()
-  game:set_dialog_style("default")
+function npc_hesla:on_interaction()
   game:start_dialog("hesla.6.desert")
 end

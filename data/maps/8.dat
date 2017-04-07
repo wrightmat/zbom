@@ -11437,16 +11437,6 @@ dynamic_tile{
 }
 
 npc{
-  name = "npc_saria_witch",
-  layer = 0,
-  x = 504,
-  y = 509,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/kokiri_1",
-}
-
-npc{
   name = "npc_kokiri_1",
   layer = 0,
   x = 152,
@@ -12257,36 +12247,6 @@ dynamic_tile{
   enabled_at_start = false,
 }
 
-npc{
-  name = "npc_gruce",
-  layer = 0,
-  x = 1752,
-  y = 1245,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/gerudo_male",
-}
-
-npc{
-  name = "npc_gerudo_1",
-  layer = 0,
-  x = 1440,
-  y = 1245,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/gerudo_merchant",
-}
-
-npc{
-  name = "npc_gerudo_2",
-  layer = 0,
-  x = 2120,
-  y = 1245,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/gerudo_merchant",
-}
-
 destination{
   name = "enter_nabooru_1",
   layer = 0,
@@ -12421,77 +12381,7 @@ teletransporter{
 }
 
 npc{
-  name = "npc_zora_1",
-  layer = 0,
-  x = 2168,
-  y = 925,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/zora_juba",
-}
-
-npc{
-  name = "npc_zora_2",
-  layer = 0,
-  x = 2552,
-  y = 909,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/zora_juba",
-}
-
-npc{
-  name = "npc_zora_3",
-  layer = 0,
-  x = 2984,
-  y = 925,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/zora_juba",
-}
-
-npc{
-  name = "npc_zora_guard_1",
-  layer = 0,
-  x = 2616,
-  y = 557,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/zora_soldier",
-}
-
-npc{
-  name = "npc_zora_guard_2",
-  layer = 0,
-  x = 2792,
-  y = 557,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/zora_soldier",
-}
-
-npc{
-  name = "npc_zora_guard_3",
-  layer = 0,
-  x = 2640,
-  y = 245,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/zora_soldier",
-}
-
-npc{
-  name = "npc_zora_guard_4",
-  layer = 0,
-  x = 2760,
-  y = 245,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/zora_soldier",
-}
-
-npc{
-  name = "npc_zora_king",
+  name = "npc_ralis",
   layer = 0,
   x = 2704,
   y = 101,
@@ -12672,6 +12562,138 @@ custom_entity{
   height = 16,
   direction = 3,
   sprite = "npc/zuna",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_sisil",
+  layer = 0,
+  x = 1440,
+  y = 1245,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/gerudo_merchant",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_gruce",
+  layer = 0,
+  x = 1752,
+  y = 1245,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/gerudo_male",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_mubeis",
+  layer = 0,
+  x = 2120,
+  y = 1245,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/gerudo_merchant",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_ejon",
+  layer = 0,
+  x = 2168,
+  y = 925,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/zora_juba",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_lula",
+  layer = 0,
+  x = 2552,
+  y = 909,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/zora_juba",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_nura",
+  layer = 0,
+  x = 2984,
+  y = 925,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/zora_juba",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "np1_zora_Guard",
+  layer = 0,
+  x = 2616,
+  y = 557,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/zora_soldier",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "np2_zora_Guard",
+  layer = 0,
+  x = 2792,
+  y = 557,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/zora_soldier",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "np3_zora_Guard",
+  layer = 0,
+  x = 2640,
+  y = 245,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/zora_soldier",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "np4_zora_Guard",
+  layer = 0,
+  x = 2768,
+  y = 245,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/zora_soldier",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_witch",
+  layer = 0,
+  x = 504,
+  y = 509,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/kokiri_1",
   model = "npc_generic",
 }
 

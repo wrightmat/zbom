@@ -21,14 +21,14 @@ function map:on_started(destination)
     table_witch:set_enabled(true) -- Crystal ball is gone.
   end
   if game:get_value("i1068") == "9" then game:set_value("i1068", "10") end
-
+  
   spoils_jade:get_sprite():set_animation("jade")
   spoils_stick:get_sprite():set_animation("stick")
   spoils_amber:get_sprite():set_animation("amber")
   spoils_alchemy:get_sprite():set_animation("alchemy")
   spoils_plume:get_sprite():set_animation("plume")
   spoils_ore:get_sprite():set_animation("ore")
-
+  
   -- Activate any night-specific dynamic tiles.
   if game:get_time_of_day() == "night" then
     for entity in game:get_map():get_entities("night_") do
@@ -89,7 +89,7 @@ function npc_isan:on_interaction()
   end
 end
 
-function npc_saria_witch:on_interaction()
+function npc_witch:on_interaction()
   if game:get_value("i1840") >= 5 then
     game:start_dialog("witch.1.house")
   elseif game:get_value("b2024") then
@@ -324,40 +324,40 @@ function npc_kasuto_4:on_interaction()
   game:start_dialog("hylian_4.0.kasuto")
 end
 
-function npc_gerudo_1:on_interaction()
+function npc_sisil:on_interaction()
   game:start_dialog("gerudo_1.0.nabooru")
 end
-function npc_gerudo_2:on_interaction()
+function npc_mubeis:on_interaction()
   game:start_dialog("gerudo_2.0.nabooru")
 end
 function npc_gruce:on_interaction()
   game:start_dialog("gruce.0.nabooru", function() game:get_value("i1230", 1) end)
 end
 
-function npc_zora_guard_1:on_interaction()
+function np1_zora_Guard:on_interaction()
   game:start_dialog("zora_guard.0.great_hall")
 end
-function npc_zora_guard_2:on_interaction()
+function np2_zora_Guard:on_interaction()
   game:start_dialog("zora_guard.0.great_hall")
 end
-function npc_zora_guard_3:on_interaction()
+function np3_zora_Guard:on_interaction()
   game:start_dialog("zora_guard.0.great_hall")
 end
-function npc_zora_guard_4:on_interaction()
+function np4_zora_Guard:on_interaction()
   game:start_dialog("zora_guard.0.great_hall")
 end
 
-function npc_zora_1:on_interaction()
+function npc_ejon:on_interaction()
   game:start_dialog("zora_1.0.ruto")
 end
-function npc_zora_2:on_interaction()
+function npc_lula:on_interaction()
   game:start_dialog("zora_2.0.ruto")
 end
-function npc_zora_3:on_interaction()
+function npc_nura:on_interaction()
   game:start_dialog("zora_3.0.ruto")
 end
 
-function npc_zora_king:on_interaction()
+function npc_ralis:on_interaction()
   -- If player still doesn't have flippers, give them.
   if zora_king_spoken and not game:get_value("b1816") then
     game:start_dialog("zora_king.0.flippers", function()
@@ -377,7 +377,7 @@ function npc_priest:on_interaction()
   end
 end
 
-function npc_mr_write:on_interaction()
+function npc_mr_Write:on_interaction()
   -- Mr. Write is enabled only when the books are found, so no need to do the check here.
   game:start_dialog("mr_write.0.house", function()
     map:get_hero():start_treasure("crystal") -- Give a total of 5 Magic Crystals.

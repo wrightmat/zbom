@@ -7,8 +7,7 @@ local game = map:get_game()
 
 if game:get_value("i1923")==nil then game:set_value("i1923", 0) end
 
-function zora_gatekeeper:on_interaction()
-  game:set_dialog_style("default")
+function npc_gatekeeper:on_interaction()
   sol.audio.play_sound("zora")
   if game:get_value("i1923") <= 4 then
     game:start_dialog("zora_gatekeeper."..game:get_value("i1923")..".domain")

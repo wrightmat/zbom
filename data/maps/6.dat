@@ -4739,36 +4739,6 @@ custom_entity{
   model = "quest_books",
 }
 
-npc{
-  name = "npc_gerudo_leader",
-  layer = 0,
-  x = 1104,
-  y = 741,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/gerudo_hesla",
-}
-
-npc{
-  name = "npc_gerudo_pirate_1",
-  layer = 0,
-  x = 440,
-  y = 733,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/gerudo_pirate",
-}
-
-npc{
-  name = "npc_gerudo_pirate_2",
-  layer = 0,
-  x = 768,
-  y = 741,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/gerudo_pirate",
-}
-
 destination{
   name = "enter_house_5",
   layer = 0,
@@ -4873,6 +4843,42 @@ custom_entity{
   height = 16,
   direction = 3,
   sprite = "npc/zuna",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_hesla",
+  layer = 0,
+  x = 1104,
+  y = 741,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/gerudo_hesla",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_ibari",
+  layer = 0,
+  x = 768,
+  y = 741,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/gerudo_pirate",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_araeki",
+  layer = 0,
+  x = 440,
+  y = 733,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/gerudo_pirate",
   model = "npc_generic",
 }
 

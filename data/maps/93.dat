@@ -2647,16 +2647,6 @@ jumper{
   jump_length = 72,
 }
 
-npc{
-  name = "npc_zora_trading",
-  layer = 0,
-  x = 376,
-  y = 509,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/zora_juba",
-}
-
 destination{
   name = "ocarina_warp",
   layer = 0,
@@ -2788,6 +2778,18 @@ wall{
   stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
+}
+
+custom_entity{
+  name = "npc_vojas",
+  layer = 0,
+  x = 376,
+  y = 509,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/zora_juba",
+  model = "npc_generic",
 }
 
 tile{

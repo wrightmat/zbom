@@ -9553,16 +9553,6 @@ destructible{
   damage_on_enemies = 2,
 }
 
-npc{
-  name = "zora_gatekeeper",
-  layer = 0,
-  x = 400,
-  y = 125,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/zora_soldier",
-}
-
 teletransporter{
   name = "to_F6",
   layer = 0,
@@ -9719,6 +9709,18 @@ jumper{
   height = 8,
   direction = 6,
   jump_length = 64,
+}
+
+custom_entity{
+  name = "npc_gatekeeper",
+  layer = 0,
+  x = 400,
+  y = 125,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/zora_soldier",
+  model = "npc_generic",
 }
 
 tile{

@@ -16,10 +16,10 @@ function map:on_started(destination)
   end
 end
 
-function npc_zora_trading:on_interaction()
+function npc_vojas:on_interaction()
   if game:get_value("b2030") then
     game:start_dialog("zora.1.trading", function()
-        -- give him the scale, get the frozen fish (no choice this time)
+        -- Give him the scale, get the frozen fish (no choice this time)
         game:start_dialog("zora.1.trading_yes", function()
           hero:start_treasure("trading", 11)
           game:set_value("b2031", true)
