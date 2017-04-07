@@ -72,7 +72,8 @@ end
 function entity:on_post_draw()
   -- Draw the NPC's name above the entity.
   local name = string.sub(entity:get_name(), 5):gsub("^%l", string.upper)
-  local name_surface = sol.text_surface.create({ font = 'courier', font_size = 8, text = name })
+  local font = sol.language.get_dialog_font()
+  local name_surface = sol.text_surface.create({ font = font, font_size = 8, text = name })
   local x, y, l = entity:get_position()
   local w, h = entity:get_sprite():get_size()
   if self:get_distance(hero) < 100 then

@@ -39,12 +39,16 @@ function entity:on_created()
   sol.timer.start(self, 1000, function()
     -- If too close to the hero, become traversable so as not to trap hero in a corner.
     -- TODO in the future? Check to see if the movement type is "target" because it's only needed when the NPC is following and this does odd things on "random_path" movements.
-    -- if self:get_movement():get_type() == "target" then
-    local _, _, layer = self:get_position()
-    local _, _, hero_layer = map:get_hero():get_position()
-    local near_hero = layer == hero_layer and self:get_distance(hero) < 17
-    if near_hero then self:set_traversable_by("hero", true) end
-
+    if self:get_movement() ~= nil then
+      local _, _, layer = self:get_position()
+      local _, _, hero_layer = map:get_hero():get_position()
+      local near_hero = layer == hero_layer and self:get_distance(hero) < 17
+      if near_hero then
+        self:set_traversable_by("hero", true)
+      else
+        self:set_traversable_by("hero", false)
+      end
+    end
     return true
   end)
 end
@@ -56,7 +60,7 @@ end
 
 function entity:on_post_draw()
   -- Draw the NPC's name above the entity.
-  local name = string.sub(entity:get_name(), 5):gsub("^%l", string.upper)
+  local name = string.sub(entity:get_name(), 5):gsub("^%l", string.upper):gsub("_", " ")
   local font = sol.language.get_dialog_font()
   local name_surface = sol.text_surface.create({ font = font, font_size = 8, text = name })
   local x, y, l = entity:get_position()

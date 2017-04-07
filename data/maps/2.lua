@@ -55,17 +55,17 @@ function map:on_started(destination)
   npc_zirna:set_enabled(false)
   if game:get_value("i1032") >= 3 and not game:get_value("b1699") then
     -- Council disbands after Zelda kidnapped.
-    elder_ulo:remove()
-    elder_juba:remove()
-    elder_gin:remove()
-    elder_larin:remove()
-    elder_gonpho:remove()
-    elder_koshi:remove()
-    elder_zelda:remove()
+    npc_elder_Ulo:remove()
+    npc_elder_Juba:remove()
+    npc_elder_Gin:remove()
+    npc_elder_Larin:remove()
+    npc_elder_Gonpho:remove()
+    npc_elder_Koshi:remove()
+    npc_elder_Zelda:remove()
   else
-    elder_juba_office:remove()
-    elder_gonpho_office:remove()
-    elder_koshi_office:remove()
+    np2_elder_Juba:remove()
+    np2_elder_Gonpho:remove()
+    np2_elder_Koshi:remove()
   end
 
   -- Replace shop items if they're bought.
@@ -93,7 +93,7 @@ function map:on_started(destination)
   snores_relic:set_enabled(false)
 end
 
-function elder_ulo:on_interaction()
+function npc_elder_Ulo:on_interaction()
   if game:get_value("b1699") then
     game:start_dialog("ulo.6.council")
   elseif game:get_value("i1032") > 2 then
@@ -105,7 +105,7 @@ function elder_ulo:on_interaction()
   end
 end
 
-function elder_juba:on_interaction()
+function npc_elder_Juba:on_interaction()
   if game:get_value("b1699") then
     game:start_dialog("juba.3.council")
   elseif game:get_value("i1032") > 2 then
@@ -114,7 +114,7 @@ function elder_juba:on_interaction()
     game:start_dialog("juba.0.council")
   end
 end
-function elder_juba_office:on_interaction()
+function np2_elder_Juba:on_interaction()
   -- Have spoken to the gatekeeper, have beaten Lakebed and don't already have the flippers.
   if game:get_value("i1923") >= 1 and game:get_value("b1134") and not game:get_value("b1816") then
     game:start_dialog("juba.2.office", function()
@@ -131,7 +131,7 @@ function elder_juba_office:on_interaction()
   end
 end
 
-function elder_gin:on_interaction()
+function npc_elder_Gin:on_interaction()
   if game:get_value("b1699") then
     game:start_dialog("gin.2.council")
   elseif game:get_value("i1032") > 2 then
@@ -143,7 +143,7 @@ function elder_gin:on_interaction()
   end
 end
 
-function elder_zelda:on_interaction()
+function npc_elder_Zelda:on_interaction()
   if game:get_value("b1699") then
     game:start_dialog("zelda.2.council", game:get_player_name())
   else
@@ -159,7 +159,7 @@ function elder_zelda:on_interaction()
   end
 end
 
-function elder_larin:on_interaction()
+function npc_elder_Larin:on_interaction()
   if game:get_value("b1699") then
     game:start_dialog("larin.2.council")
   elseif game:get_value("i1032") > 2 then
@@ -169,7 +169,7 @@ function elder_larin:on_interaction()
   end
 end
 
-function elder_gonpho:on_interaction()
+function npc_elder_Gonpho:on_interaction()
   if game:get_value("b1699") then
     game:start_dialog("gonpho.1.council")
   elseif game:get_value("i1032") > 2 then
@@ -178,11 +178,11 @@ function elder_gonpho:on_interaction()
     game:start_dialog("gonpho.0.council")
   end
 end
-function elder_gonpho_office:on_interaction()
+function np2_elder_Gonpho:on_interaction()
   game:start_dialog("gonpho.0.office")
 end
 
-function elder_koshi:on_interaction()
+function npc_elder_Koshi:on_interaction()
   if game:get_value("b1699") then
     game:start_dialog("koshi.1.council")
   elseif game:get_value("i1032") > 2 then
@@ -191,7 +191,7 @@ function elder_koshi:on_interaction()
     game:start_dialog("koshi.0.council")
   end
 end
-function elder_koshi_office:on_interaction()
+function np2_elder_Koshi:on_interaction()
   game:start_dialog("koshi.0.office")
 end
 
@@ -323,10 +323,10 @@ function sensor_zirna_cutscene:on_activated()
                 npc_zirna:get_sprite():set_animation("casting")
                 game:set_dialog_position("bottom")
                 game:start_dialog("zirna.0.council_2", function()
-                  zex, zey, zel = elder_zelda:get_position()
+                  zex, zey, zel = npc_elder_Zelda:get_position()
                   dark_appears:set_enabled(true)
                   dark_appears:set_position(zex, zey)
-                  elder_zelda:remove()
+                  npc_elder_Zelda:remove()
                   sol.timer.start(1000, function()
 		                dark_appears:set_position(992, 127)
 		                dark_appears:set_enabled(true)
@@ -752,4 +752,26 @@ end
 
 function sensor_door_throne:on_activated()
   map:open_doors("door_throne")
+end
+
+function np1_guard:on_interaction()
+  game:start_dialog("guard.0.throne")
+end
+function np2_guard:on_interaction()
+  game:start_dialog("guard.0.throne")
+end
+function np3_guard:on_interaction()
+  game:start_dialog("guard.0.castle")
+end
+function np4_guard:on_interaction()
+  game:start_dialog("guard.0.castle")
+end
+function np5_guard:on_interaction()
+  game:start_dialog("guard.0.council")
+end
+function np6_guard:on_interaction()
+  game:start_dialog("guard.0.council")
+end
+function np7_guard:on_interaction()
+  game:start_dialog("guard.0.attic")
 end

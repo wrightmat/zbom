@@ -5304,28 +5304,6 @@ jumper{
   jump_length = 40,
 }
 
-npc{
-  name = "npc_guard_1",
-  layer = 0,
-  x = 408,
-  y = 981,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/guard",
-  behavior = "dialog#guard.0.outside",
-}
-
-npc{
-  name = "npc_guard_2",
-  layer = 0,
-  x = 824,
-  y = 973,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/guard",
-  behavior = "dialog#guard.0.outside",
-}
-
 wall{
   layer = 0,
   x = 384,
@@ -5350,6 +5328,30 @@ wall{
   stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
+}
+
+custom_entity{
+  name = "np1_guard",
+  layer = 0,
+  x = 408,
+  y = 981,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/guard",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "np2_guard",
+  layer = 0,
+  x = 824,
+  y = 973,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/guard",
+  model = "npc_generic",
 }
 
 tile{

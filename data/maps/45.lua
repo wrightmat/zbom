@@ -46,6 +46,13 @@ function map:on_started(destination)
     end)
   end
 
-  random_walk(npc_guard_1)
-  random_walk(npc_guard_2)
+  random_walk(np1_guard)
+  random_walk(np1_guard)
+end
+
+function np1_guard:on_interaction()
+  game:start_dialog("guard.0.outside")
+end
+function np2_guard:on_interaction()
+  game:start_dialog("guard.0.outside")
 end

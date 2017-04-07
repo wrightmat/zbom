@@ -5460,16 +5460,6 @@ teletransporter{
   destination = "enter_house_4",
 }
 
-npc{
-  name = "npc_ildus",
-  layer = 0,
-  x = 264,
-  y = 301,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/hylian_ildus",
-}
-
 enemy{
   name = "chuchu_green",
   layer = 0,
@@ -5675,6 +5665,18 @@ dynamic_tile{
   width = 16,
   height = 16,
   enabled_at_start = false,
+}
+
+custom_entity{
+  name = "npc_ildus",
+  layer = 0,
+  x = 272,
+  y = 301,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/hylian_ildus",
+  model = "npc_generic",
 }
 
 tile{

@@ -45,7 +45,7 @@ function map:on_started(destination)
       bottle:remove() --bottle is missing at night, hence the quest
       sensor_bottle:remove()
       wall_bottle:remove()
-      npc_strap_pub:remove()
+      np2_strap:remove() -- Strap's NPC at the pub
     end
 
     -- Activate any night-specific dynamic tiles
@@ -53,8 +53,8 @@ function map:on_started(destination)
       entity:set_enabled(true)
     end
   else
-    quest_bottle:remove() --quest only available at night
-    npc_strap_pub:remove()
+    quest_bottle:remove() -- Quest only available at night
+    np2_strap:remove() -- Strap's NPC at the pub
     if game:get_value("b1812") then
       bottle:remove()
       sensor_bottle:remove()
@@ -145,7 +145,7 @@ function npc_strap:on_interaction()
     end
   end
 end
-function npc_strap_pub:on_interaction()
+function np2_strap:on_interaction()
   game:start_dialog("strap.0.pub")
 end
 
@@ -234,12 +234,12 @@ function npc_garroth_sensor:on_interaction()
       end)
     elseif game:get_value("i1830") >= 50 and game:get_value("i1918") == 7 then
       game:start_dialog("garroth.7.alchemy", game:get_value("i1830"), function()
-        hero:start_treasure("rupees", 5)
+        hero:start_treasure("rupee", 5)
         game:set_value("i1918", 8)
       end)
     elseif game:get_value("i1830") >= 25 and game:get_value("i1918") == 6 then
       game:start_dialog("garroth.6.alchemy", game:get_value("i1830"), function()
-        hero:start_treasure("rupees", 4)
+        hero:start_treasure("rupee", 4)
         game:set_value("i1918", 7)
       end)
     else

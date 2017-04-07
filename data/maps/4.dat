@@ -7342,16 +7342,6 @@ shop_treasure{
   dialog = "shop.bomb_bag_1",
 }
 
-npc{
-  name = "npc_strap",
-  layer = 0,
-  x = 176,
-  y = 85,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/hylian_strap",
-}
-
 shop_treasure{
   name = "shop_potion_red",
   layer = 0,
@@ -7419,16 +7409,6 @@ teletransporter{
   destination = "from_house_2",
 }
 
-npc{
-  name = "npc_warbos",
-  layer = 0,
-  x = 168,
-  y = 477,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/hylian_warbos_warun",
-}
-
 shop_treasure{
   name = "item_bomb_bag",
   layer = 0,
@@ -7489,16 +7469,6 @@ teletransporter{
   height = 16,
   destination_map = "51",
   destination = "from_gallery_front",
-}
-
-npc{
-  name = "npc_etnaya",
-  layer = 0,
-  x = 232,
-  y = 893,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/hylian_etnaya",
 }
 
 teletransporter{
@@ -7689,56 +7659,6 @@ teletransporter{
   height = 16,
   destination_map = "51",
   destination = "from_house_10_back",
-}
-
-npc{
-  name = "npc_garroth",
-  layer = 0,
-  x = 528,
-  y = 453,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/hylian_garroth",
-}
-
-npc{
-  name = "npc_gartan",
-  layer = 0,
-  x = 736,
-  y = 453,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/hylian_gartan",
-}
-
-npc{
-  name = "npc_moriss",
-  layer = 0,
-  x = 664,
-  y = 541,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/hylian_moriss",
-}
-
-npc{
-  name = "npc_rowin",
-  layer = 0,
-  x = 504,
-  y = 549,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/hylian_rowin",
-}
-
-npc{
-  name = "npc_turt",
-  layer = 0,
-  x = 1152,
-  y = 837,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/hylian_turt",
 }
 
 npc{
@@ -8310,16 +8230,6 @@ door{
   opening_method = "explosion",
 }
 
-npc{
-  name = "npc_strap_pub",
-  layer = 0,
-  x = 568,
-  y = 549,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/hylian_strap",
-}
-
 custom_entity{
   name = "book_kakariko",
   layer = 0,
@@ -8330,6 +8240,114 @@ custom_entity{
   direction = 0,
   sprite = "entities/quest_books",
   model = "quest_books",
+}
+
+custom_entity{
+  name = "npc_strap",
+  layer = 0,
+  x = 176,
+  y = 93,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/hylian_strap",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_warbos",
+  layer = 0,
+  x = 176,
+  y = 477,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/hylian_warbos_warun",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_etnaya",
+  layer = 0,
+  x = 232,
+  y = 893,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/hylian_etnaya",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_rowin",
+  layer = 0,
+  x = 504,
+  y = 549,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/hylian_rowin",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "np2_strap",
+  layer = 0,
+  x = 568,
+  y = 549,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/hylian_strap",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_moriss",
+  layer = 0,
+  x = 664,
+  y = 541,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/hylian_moriss",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_gartan",
+  layer = 0,
+  x = 736,
+  y = 453,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/hylian_gartan",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_garroth",
+  layer = 0,
+  x = 528,
+  y = 453,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/hylian_garroth",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_turt",
+  layer = 0,
+  x = 1152,
+  y = 837,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/hylian_turt",
+  model = "npc_generic",
 }
 
 tile{

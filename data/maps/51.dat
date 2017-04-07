@@ -7085,16 +7085,6 @@ teletransporter{
   destination = "enter_gallery",
 }
 
-npc{
-  name = "npc_warun",
-  layer = 0,
-  x = 208,
-  y = 493,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/hylian_warbos_warun",
-}
-
 destructible{
   layer = 0,
   x = 152,
@@ -7460,36 +7450,6 @@ dynamic_tile{
   enabled_at_start = false,
 }
 
-npc{
-  name = "npc_rowin",
-  layer = 0,
-  x = 344,
-  y = 293,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/hylian_rowin",
-}
-
-npc{
-  name = "npc_moriss",
-  layer = 0,
-  x = 680,
-  y = 293,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/hylian_moriss",
-}
-
-npc{
-  name = "npc_etnaya",
-  layer = 0,
-  x = 512,
-  y = 333,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/hylian_etnaya",
-}
-
 sensor{
   name = "sensor_show",
   layer = 0,
@@ -7594,6 +7554,54 @@ custom_entity{
   height = 16,
   direction = 0,
   model = "ocarina_patch",
+}
+
+custom_entity{
+  name = "npc_rowin",
+  layer = 0,
+  x = 344,
+  y = 293,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/hylian_rowin",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_moriss",
+  layer = 0,
+  x = 680,
+  y = 293,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/hylian_moriss",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_etnaya",
+  layer = 0,
+  x = 512,
+  y = 333,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/hylian_etnaya",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_warun",
+  layer = 0,
+  x = 208,
+  y = 493,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/hylian_warbos_warun",
+  model = "npc_generic",
 }
 
 tile{

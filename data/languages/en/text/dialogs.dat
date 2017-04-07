@@ -4810,9 +4810,10 @@ dialog{
   skip = "current",
   text = [[
 Wow, you have $v Alchemy Stones already?
-That's more than I've collected in my whole
-time here! In honor of your achievement,
-I'd like to give you something!
+That's more than I've collected in my
+whole time here! In honor of your
+achievement, I'd like to give you
+something!
 ]]
 }
 
@@ -4821,9 +4822,10 @@ dialog{
   skip = "current",
   text = [[
 Wow, you have $v Alchemy Stones already?
-That's more than I could imagine collecting
-in my lifetime! In honor of the achievement,
-I'd like to give you something!
+That's more than I could imagine
+collecting in my lifetime! In honor of
+the achievement, I'd like to give you
+something!
 ]]
 }
 
@@ -4948,7 +4950,7 @@ dialog{
   id = "gin.2.council",
   skip = "current",
   text = [[
-Zelda told me all about this Book you
+$gZelda$w told me all about this$cBook$w you
 mentioned when she got back. Sounds
 like you had quite the adventure!
 ]]
@@ -4992,7 +4994,7 @@ dialog{
   skip = "current",
   text = [[
 We knew you'd come through and find
-Zelda! Great work, hero!
+$gZelda$w! Great work, hero!
 ]]
 }
 
@@ -5616,7 +5618,7 @@ dialog{
   id = "guard.0.attic",
   skip = "current",
   text = [[
-You probably shouldn't be up here. If this
+You probably shouldn't be up here. If it
 wasn't my last week on the job, I'd kick
 you out. Just don't do anything stupid.
 ]]
@@ -5626,9 +5628,9 @@ dialog{
   id = "guard.0.castle",
   skip = "current",
   text = [[
-Welcome to Hyrule Castle. The Hylian Guard
-will be keeping an eye on you while you're
-visiting. Don't do anything stupid.
+Welcome to$bHyrule Castle$w. The Hylian
+Guard will be keeping an eye on you while
+you visit. Don't do anything stupid.
 ]]
 }
 
@@ -5636,8 +5638,8 @@ dialog{
   id = "guard.0.council",
   skip = "current",
   text = [[
-Ahead is the$bCouncil Chambers$w. All of the
-Elders gather here to discuss policy.
+Ahead is the$bCouncil Chambers$w. All of
+the Elders gather here to discuss policy.
 Try not to bother them.
 ]]
 }
@@ -5646,10 +5648,10 @@ dialog{
   id = "guard.0.outside",
   skip = "current",
   text = [[
-The great$bHyrule Castle$wis open to visitors
-throughout the daylight hours. If you
-behave yourself, you can look at anything
-you'd like while inside.
+The great$bHyrule Castle$wis open to
+visitors throughout the daylight hours.
+If you behave yourself, you can look
+at anything you'd like while inside.
 ]]
 }
 
@@ -5657,9 +5659,10 @@ dialog{
   id = "guard.0.throne",
   skip = "current",
   text = [[
-Through that door is the$bThrone Room$w, but
-it's no longer open to the public. The
-$bCouncil Chambers$w is more interesting now.
+Through that door is the$bThrone Room$w,
+but it's no longer open to the public.
+The $bCouncil Chambers$w is more
+interesting now.
 ]]
 }
 
@@ -6187,7 +6190,7 @@ dialog{
   id = "ildus.1.outside",
   skip = "current",
   text = [[
-$bSewers$w underneath Hyrule?
+$bSewers$wunderneath Hyrule?
 That's cool!$0
 So maybe that's what those stone grates
 I see all over the place connect to. When
@@ -6738,9 +6741,9 @@ dialog{
   id = "juba.3.council",
   skip = "current",
   text = [[
-Good to see that Zelda is back.
-I actually did miss her a litte. And she's
-a little quieter since she got back.
+Good to see that $gZelda$w is back.
+I actually did miss her a litte. And she
+is a little quieter since she got back.
 ]]
 }
 
@@ -10914,8 +10917,8 @@ dialog{
   id = "ulo.6.council",
   skip = "current",
   text = [[
-Great work saving Zelda! I knew you
-would be the one to defeat the Darkness.
+Great work saving$gZelda$w! I knew you
+would be the one to defeat the$mDarkness$w.
 We Ordons have always had a way with
 the$yLight!$w
 ]]
@@ -11329,7 +11332,7 @@ dialog{
   text = [[
 $v, I can't thank you enough for saving
 me from those vile people! Mark my words,
-as long as I live, the$mDark Tribe will
+as long as I live, the$mDark Tribe$w will
 never threaten Hyrule again.
 ]]
 }

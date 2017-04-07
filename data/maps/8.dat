@@ -11360,16 +11360,6 @@ npc{
 }
 
 npc{
-  name = "npc_isan",
-  layer = 0,
-  x = 408,
-  y = 157,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/hylian_isan",
-}
-
-npc{
   name = "shelf_18",
   layer = 0,
   x = 184,
@@ -11844,46 +11834,6 @@ destination{
   direction = 3,
 }
 
-npc{
-  name = "npc_guard_1",
-  layer = 0,
-  x = 392,
-  y = 893,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/guard",
-}
-
-npc{
-  name = "npc_guard_2",
-  layer = 0,
-  x = 776,
-  y = 893,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/guard",
-}
-
-npc{
-  name = "npc_guard_3",
-  layer = 0,
-  x = 504,
-  y = 1037,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/guard",
-}
-
-npc{
-  name = "npc_guard_4",
-  layer = 0,
-  x = 664,
-  y = 1037,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/guard",
-}
-
 destination{
   name = "enter_rauru_1",
   layer = 0,
@@ -12308,16 +12258,6 @@ dynamic_tile{
 }
 
 npc{
-  name = "npc_priest",
-  layer = 0,
-  x = 2040,
-  y = 533,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/hylian_14",
-}
-
-npc{
   name = "npc_gruce",
   layer = 0,
   x = 1752,
@@ -12630,26 +12570,6 @@ teletransporter{
 }
 
 npc{
-  name = "npc_sanday",
-  layer = 0,
-  x = 2472,
-  y = 1245,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/zuna",
-}
-
-npc{
-  name = "npc_mr_write",
-  layer = 0,
-  x = 1464,
-  y = 917,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/hylian_25",
-}
-
-npc{
   name = "npc_mayor",
   layer = 0,
   x = 1184,
@@ -12657,6 +12577,102 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/hylian_7",
+}
+
+custom_entity{
+  name = "npc_isan",
+  layer = 0,
+  x = 408,
+  y = 157,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/hylian_isan",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "np1_guard",
+  layer = 0,
+  x = 392,
+  y = 893,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/guard",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "np2_guard",
+  layer = 0,
+  x = 776,
+  y = 893,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/guard",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "np3_guard",
+  layer = 0,
+  x = 504,
+  y = 1037,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/guard",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "np4_guard",
+  layer = 0,
+  x = 664,
+  y = 1037,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/guard",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_mr_Write",
+  layer = 0,
+  x = 1464,
+  y = 917,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/hylian_25",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_priest",
+  layer = 0,
+  x = 2040,
+  y = 533,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/hylian_14",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_sanday",
+  layer = 0,
+  x = 2472,
+  y = 1245,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/zuna",
+  model = "npc_generic",
 }
 
 tile{

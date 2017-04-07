@@ -12,6 +12,24 @@ properties{
 
 tile{
   layer = 0,
+  x = 1360,
+  y = 768,
+  width = 160,
+  height = 144,
+  pattern = "482",
+}
+
+tile{
+  layer = 0,
+  x = 1520,
+  y = 768,
+  width = 8,
+  height = 144,
+  pattern = "443",
+}
+
+tile{
+  layer = 0,
   x = 1600,
   y = 1448,
   width = 160,
@@ -579,15 +597,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1520,
-  y = 768,
-  width = 8,
-  height = 144,
-  pattern = "443",
-}
-
-tile{
-  layer = 0,
   x = 1792,
   y = 912,
   width = 160,
@@ -620,15 +629,6 @@ tile{
   width = 8,
   height = 8,
   pattern = "462",
-}
-
-tile{
-  layer = 0,
-  x = 1360,
-  y = 768,
-  width = 160,
-  height = 144,
-  pattern = "482",
 }
 
 tile{
@@ -8625,9 +8625,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 1480,
+  x = 1488,
   y = 880,
-  width = 32,
+  width = 24,
   height = 24,
   pattern = "479",
 }
@@ -9037,76 +9037,6 @@ teletransporter{
 }
 
 npc{
-  name = "elder_ulo",
-  layer = 0,
-  x = 728,
-  y = 165,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/ordon_ulo",
-}
-
-npc{
-  name = "elder_larin",
-  layer = 0,
-  x = 864,
-  y = 157,
-  direction = 0,
-  subtype = 1,
-  sprite = "npc/goron_larin",
-}
-
-npc{
-  name = "elder_juba",
-  layer = 0,
-  x = 768,
-  y = 165,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/zora_juba",
-}
-
-npc{
-  name = "elder_zelda",
-  layer = 0,
-  x = 992,
-  y = 165,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/hylian_zelda",
-}
-
-npc{
-  name = "elder_gin",
-  layer = 0,
-  x = 816,
-  y = 165,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/tokay_gin",
-}
-
-npc{
-  name = "elder_gonpho",
-  layer = 0,
-  x = 912,
-  y = 165,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/snowpeak_anouki",
-}
-
-npc{
-  name = "elder_koshi",
-  layer = 0,
-  x = 952,
-  y = 165,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/rito",
-}
-
-npc{
   name = "slot_machine_left",
   layer = 0,
   x = 1456,
@@ -9358,36 +9288,6 @@ chest{
   sprite = "entities/chest",
 }
 
-npc{
-  name = "elder_juba_office",
-  layer = 0,
-  x = 1840,
-  y = 1189,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/zora_juba",
-}
-
-npc{
-  name = "elder_gonpho_office",
-  layer = 0,
-  x = 1760,
-  y = 1149,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/snowpeak_anouki",
-}
-
-npc{
-  name = "elder_koshi_office",
-  layer = 0,
-  x = 1912,
-  y = 1157,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/rito_koshi",
-}
-
 dynamic_tile{
   name = "night_window",
   layer = 0,
@@ -9534,16 +9434,6 @@ destination{
   x = 1632,
   y = 1477,
   direction = 0,
-}
-
-npc{
-  name = "npc_attendant",
-  layer = 0,
-  x = 1896,
-  y = 1237,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/hylian_5",
 }
 
 enemy{
@@ -9752,83 +9642,6 @@ chest{
   sprite = "entities/chest",
 }
 
-npc{
-  name = "npc_guard_1",
-  layer = 0,
-  x = 232,
-  y = 733,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/guard",
-  behavior = "dialog#guard.0.throne",
-}
-
-npc{
-  name = "npc_guard_2",
-  layer = 0,
-  x = 352,
-  y = 733,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/guard",
-  behavior = "dialog#guard.0.throne",
-}
-
-npc{
-  name = "npc_guard_3",
-  layer = 0,
-  x = 504,
-  y = 861,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/guard",
-  behavior = "dialog#guard.0.castle",
-}
-
-npc{
-  name = "npc_guard_4",
-  layer = 0,
-  x = 664,
-  y = 861,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/guard",
-  behavior = "dialog#guard.0.castle",
-}
-
-npc{
-  name = "npc_guard_5",
-  layer = 0,
-  x = 752,
-  y = 661,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/guard",
-  behavior = "dialog#guard.0.council",
-}
-
-npc{
-  name = "npc_guard_6",
-  layer = 0,
-  x = 1008,
-  y = 661,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/guard",
-  behavior = "dialog#guard.0.council",
-}
-
-npc{
-  name = "npc_guard_7",
-  layer = 0,
-  x = 112,
-  y = 1181,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/guard",
-  behavior = "dialog#guard.0.attic",
-}
-
 enemy{
   name = "npc_zirna",
   layer = 0,
@@ -9960,6 +9773,222 @@ npc{
   sprite = "entities/bed_snores",
 }
 
+custom_entity{
+  name = "npc_elder_Ulo",
+  layer = 0,
+  x = 736,
+  y = 149,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/ordon_ulo",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_elder_Juba",
+  layer = 0,
+  x = 776,
+  y = 165,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/zora_juba",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_elder_Gin",
+  layer = 0,
+  x = 816,
+  y = 149,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/tokay_gin",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_elder_Larin",
+  layer = 0,
+  x = 864,
+  y = 157,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/goron_larin",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_elder_Gonpho",
+  layer = 0,
+  x = 912,
+  y = 149,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/snowpeak_anouki",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_elder_Koshi",
+  layer = 0,
+  x = 952,
+  y = 165,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/rito_koshi",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_elder_Zelda",
+  layer = 0,
+  x = 992,
+  y = 149,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/hylian_zelda",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "np2_elder_Gonpho",
+  layer = 0,
+  x = 1760,
+  y = 1149,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/snowpeak_anouki",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "np2_elder_Juba",
+  layer = 0,
+  x = 1840,
+  y = 1189,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/zora_juba",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "np2_elder_Koshi",
+  layer = 0,
+  x = 1912,
+  y = 1157,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/rito_koshi",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_attendant",
+  layer = 0,
+  x = 1896,
+  y = 1237,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/hylian_5",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "np1_guard",
+  layer = 0,
+  x = 232,
+  y = 733,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/guard",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "np2_guard",
+  layer = 0,
+  x = 352,
+  y = 733,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/guard",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "np3_guard",
+  layer = 0,
+  x = 504,
+  y = 861,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/guard",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "np4_guard",
+  layer = 0,
+  x = 664,
+  y = 861,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/guard",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "np5_guard",
+  layer = 0,
+  x = 752,
+  y = 661,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/guard",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "np6_guard",
+  layer = 0,
+  x = 1008,
+  y = 661,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/guard",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "np7_guard",
+  layer = 0,
+  x = 112,
+  y = 1181,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/guard",
+  model = "npc_generic",
+}
+
 tile{
   layer = 1,
   x = 848,
@@ -9980,9 +10009,9 @@ tile{
 
 tile{
   layer = 1,
-  x = 1480,
+  x = 1488,
   y = 864,
-  width = 32,
+  width = 24,
   height = 16,
   pattern = "486",
 }
