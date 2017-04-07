@@ -5318,16 +5318,6 @@ destructible{
   damage_on_enemies = 2,
 }
 
-npc{
-  name = "npc_impa",
-  layer = 0,
-  x = 856,
-  y = 149,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/hylian_impa",
-}
-
 teletransporter{
   name = "to_outside_impa",
   layer = 0,
@@ -5944,16 +5934,6 @@ dynamic_tile{
   enabled_at_start = true,
 }
 
-npc{
-  name = "npc_ulo",
-  layer = 0,
-  x = 712,
-  y = 565,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/ordon_ulo",
-}
-
 dynamic_tile{
   name = "night_window",
   layer = 0,
@@ -6223,18 +6203,6 @@ npc{
   behavior = "dialog#impa.0.shelf_2",
 }
 
-custom_entity{
-  name = "npc_bilo",
-  layer = 0,
-  x = 600,
-  y = 477,
-  width = 16,
-  height = 16,
-  direction = 3,
-  sprite = "npc/ordon_bilo",
-  model = "npc_bilo",
-}
-
 dynamic_tile{
   name = "night_window_17",
   layer = 0,
@@ -6285,16 +6253,6 @@ custom_entity{
   model = "quest_books",
 }
 
-npc{
-  name = "npc_tern",
-  layer = 0,
-  x = 264,
-  y = 869,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/ordon_tern",
-}
-
 custom_entity{
   name = "npc_gaira",
   layer = 0,
@@ -6317,6 +6275,54 @@ custom_entity{
   direction = 3,
   sprite = "npc/hylian_deacon",
   model = "npc_deacon",
+}
+
+custom_entity{
+  name = "npc_tern",
+  layer = 0,
+  x = 264,
+  y = 869,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/ordon_tern",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_ulo",
+  layer = 0,
+  x = 712,
+  y = 565,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/ordon_ulo",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_bilo",
+  layer = 0,
+  x = 600,
+  y = 477,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/ordon_bilo",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_impa",
+  layer = 0,
+  x = 856,
+  y = 149,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/hylian_impa",
+  model = "npc_generic",
 }
 
 tile{

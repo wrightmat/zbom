@@ -12564,16 +12564,6 @@ dynamic_tile{
   enabled_at_start = false,
 }
 
-npc{
-  name = "npc_tristan",
-  layer = 0,
-  x = 696,
-  y = 973,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/ordon_tristan",
-}
-
 sensor{
   name = "sensor_festival_dialog",
   layer = 0,
@@ -12722,16 +12712,6 @@ destructible{
   destruction_sound = "bush",
   weight = 1,
   can_be_cut = true,
-}
-
-npc{
-  name = "npc_tern",
-  layer = 0,
-  x = 320,
-  y = 941,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/ordon_tern",
 }
 
 destructible{
@@ -13293,6 +13273,30 @@ custom_entity{
   direction = 3,
   sprite = "npc/hylian_gaira",
   model = "npc_gaira",
+}
+
+custom_entity{
+  name = "npc_tern",
+  layer = 0,
+  x = 320,
+  y = 941,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/ordon_tern",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_tristan",
+  layer = 0,
+  x = 696,
+  y = 973,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/ordon_tristan",
+  model = "npc_generic",
 }
 
 tile{

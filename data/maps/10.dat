@@ -8855,16 +8855,6 @@ sensor{
   height = 16,
 }
 
-npc{
-  name = "npc_rudy",
-  layer = 0,
-  x = 304,
-  y = 693,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/ordon_rudy",
-}
-
 teletransporter{
   name = "to_J5",
   layer = 0,
@@ -9888,16 +9878,6 @@ teletransporter{
   destination = "enter_pim",
 }
 
-npc{
-  name = "npc_ulo",
-  layer = 0,
-  x = 600,
-  y = 709,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/ordon_ulo",
-}
-
 destination{
   name = "from_house_julita",
   layer = 0,
@@ -10565,6 +10545,30 @@ custom_entity{
   height = 16,
   direction = 3,
   sprite = "npc/ordon_francis",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_rudy",
+  layer = 0,
+  x = 304,
+  y = 693,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/ordon_rudy",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_ulo",
+  layer = 0,
+  x = 600,
+  y = 709,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/ordon_ulo",
   model = "npc_generic",
 }
 

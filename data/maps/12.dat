@@ -6825,16 +6825,6 @@ dynamic_tile{
 }
 
 npc{
-  name = "npc_tristan",
-  layer = 0,
-  x = 784,
-  y = 525,
-  direction = 2,
-  subtype = 1,
-  sprite = "npc/ordon_tristan",
-}
-
-npc{
   name = "torch_1",
   layer = 0,
   x = 248,
@@ -7019,6 +7009,18 @@ custom_entity{
   direction = 0,
   sprite = "entities/quest_plants",
   model = "quest_plants",
+}
+
+custom_entity{
+  name = "npc_tristan",
+  layer = 0,
+  x = 784,
+  y = 525,
+  width = 16,
+  height = 16,
+  direction = 2,
+  sprite = "npc/ordon_tristan",
+  model = "npc_generic",
 }
 
 tile{

@@ -160,7 +160,9 @@ function map:on_started(destination)
 end
 
 function npc_rudy:on_interaction()
-  game:set_dialog_style("default")
+  -- First, make the NPC face the hero when interacting
+  self:get_sprite():set_direction(self:get_direction4_to(game:get_hero()))
+
   if game:get_value("i1027") >= 3 then
     if not game:has_item("shield") then
       game:start_dialog("rudy.0.festival_reward", function()
@@ -181,7 +183,9 @@ function npc_rudy:on_interaction()
 end
 
 function npc_quint:on_interaction()
-  game:set_dialog_style("default")
+  -- First, make the NPC face the hero when interacting
+  self:get_sprite():set_direction(self:get_direction4_to(game:get_hero()))
+
   if game:get_value("i1907") >= 1 then
     if game:get_value("i1027") >= 6 then
       repeat -- Make sure the same quote is not picked again.
@@ -194,7 +198,9 @@ function npc_quint:on_interaction()
 end
 
 function npc_francis:on_interaction()
-  game:set_dialog_style("default")
+  -- First, make the NPC face the hero when interacting
+  self:get_sprite():set_direction(self:get_direction4_to(game:get_hero()))
+
   if game:get_value("i1908") >= 1 then
     if game:get_value("i1027") >= 6 then
       repeat -- Make sure the same quote is not picked again.
@@ -207,7 +213,9 @@ function npc_francis:on_interaction()
 end
 
 function npc_jarred:on_interaction()
-  game:set_dialog_style("default")
+  -- First, make the NPC face the hero when interacting
+  self:get_sprite():set_direction(self:get_direction4_to(game:get_hero()))
+
   if game:get_value("i1909") >= 1 then
     if game:get_value("i1027") >= 6 then
       repeat -- Make sure the same quote is not picked again.
@@ -220,7 +228,9 @@ function npc_jarred:on_interaction()
 end
 
 function npc_ulo:on_interaction()
-  game:set_dialog_style("default")
+  -- First, make the NPC face the hero when interacting
+  self:get_sprite():set_direction(self:get_direction4_to(game:get_hero()))
+
   if game:get_value("i1904") >= 1 then
     if game:has_item("lamp") then
       game:start_dialog("ulo.1.festival")

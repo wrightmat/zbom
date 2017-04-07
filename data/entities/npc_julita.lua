@@ -2,7 +2,7 @@ local entity = ...
 local game = entity:get_game()
 local map = game:get_map()
 
--- Julita is the mothers of Christa who runs the potion
+-- Julita is the mothers of Crista who runs the potion
 -- shop. She's also a mother-like figure to our hero.
 
 if game:get_value("i1027")==nil then game:set_value("i1027", 0) end
@@ -87,4 +87,15 @@ end
 function entity:on_movement_changed(movement)
   local direction = movement:get_direction4()
   entity:get_sprite():set_direction(direction)
+end
+
+function entity:on_post_draw()
+  -- Draw the NPC's name above the entity.
+  local name = string.sub(entity:get_name(), 5):gsub("^%l", string.upper)
+  local name_surface = sol.text_surface.create({ font = 'bom', font_size = 11, text = name })
+  local x, y, l = entity:get_position()
+  local w, h = entity:get_sprite():get_size()
+  if self:get_distance(map:get_hero()) < 100 then
+    entity:get_map():draw_visual(name_surface, x-(w/2), y-(h-4))
+  end
 end
