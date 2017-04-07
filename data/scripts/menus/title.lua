@@ -159,7 +159,7 @@ function title_screen:draw_phase_title()
     self.star_img:draw(self.surface)
   end
   if self.show_press_space then
-    self.press_space_img:draw(self.surface, 200, 195)
+    self.press_space_img:draw(self.surface, 220, 195)
   end
 end
 

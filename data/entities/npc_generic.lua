@@ -1,12 +1,14 @@
 local entity = ...
 local game = entity:get_game()
 local map = entity:get_game():get_map()
+local hero = game:get_map():get_entity("hero")
 
 -- Generic NPC script which prevents the hero from being stuck
 -- behind non-traversable moving characters (primarily for intro).
 
 local function random_walk()
   local m = sol.movement.create("random_path")
+  m:set_ignore_obstacles(false)
   m:set_speed(32)
   m:start(entity)
   entity:get_sprite():set_animation("walking")
@@ -40,7 +42,7 @@ function entity:on_created()
     -- if self:get_movement():get_type() == "target" then
     local _, _, layer = self:get_position()
     local _, _, hero_layer = map:get_hero():get_position()
-    local near_hero = layer == hero_layer and self:get_distance(map:get_hero()) < 17
+    local near_hero = layer == hero_layer and self:get_distance(hero) < 17
     if near_hero then self:set_traversable_by("hero", true) end
 
     return true
@@ -55,10 +57,11 @@ end
 function entity:on_post_draw()
   -- Draw the NPC's name above the entity.
   local name = string.sub(entity:get_name(), 5):gsub("^%l", string.upper)
-  local name_surface = sol.text_surface.create({ font = 'bom', font_size = 11, text = name })
+  local font = sol.language.get_dialog_font()
+  local name_surface = sol.text_surface.create({ font = font, font_size = 8, text = name })
   local x, y, l = entity:get_position()
   local w, h = entity:get_sprite():get_size()
-  if self:get_distance(map:get_hero()) < 100 then
+  if self:get_distance(hero) < 100 then
     entity:get_map():draw_visual(name_surface, x-(w/2), y-(h-4))
   end
 end

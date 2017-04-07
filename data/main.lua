@@ -247,8 +247,8 @@ function sol.language.get_dialog_font(language)
     --font = "zqy-microhei"
     --size = 12
   else
-    font = "lttp"
-    size = 14
+    font = "november"
+    size = 10
   end
   return font, size
 end

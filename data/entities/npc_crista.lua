@@ -1,6 +1,7 @@
 local entity = ...
 local game = entity:get_game()
 local map = entity:get_game():get_map()
+local hero = game:get_map():get_entity("hero")
 local last_speak = 0
 
 -- Crista is a major NPC who lives in Ordon and makes/sells
@@ -53,7 +54,7 @@ end
 
 function entity:on_interaction()
   -- First, make the NPC face the hero when interacting
-  self:get_sprite():set_direction(self:get_direction4_to(game:get_hero()))
+  self:get_sprite():set_direction(self:get_direction4_to(hero))
 
   if game:get_map():get_id() == "28" then
     -- Faron Woods access to sewer, to get sword.
@@ -163,4 +164,15 @@ end
 function entity:on_movement_changed(movement)
   local direction = movement:get_direction4()
   entity:get_sprite():set_direction(direction)
+end
+
+function entity:on_post_draw()
+  -- Draw the NPC's name above the entity.
+  local name = string.sub(entity:get_name(), 5):gsub("^%l", string.upper)
+  local name_surface = sol.text_surface.create({ font = 'courier', font_size = 8, text = name })
+  local x, y, l = entity:get_position()
+  local w, h = entity:get_sprite():get_size()
+  if self:get_distance(hero) < 100 then
+    entity:get_map():draw_visual(name_surface, x-(w/2), y-(h-4))
+  end
 end

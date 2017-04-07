@@ -1,6 +1,7 @@
 local entity = ...
 local game = entity:get_game()
 local map = entity:get_game():get_map()
+local hero = game:get_map():get_entity("hero")
 
 if game:get_value("i1027")==nil then game:set_value("i1027", 0) end
 if game:get_value("i1032")==nil then game:set_value("i1032", 0) end
@@ -39,7 +40,7 @@ end
 
 function entity:on_interaction()
   -- First, make the NPC face the hero when interacting
-  self:get_sprite():set_direction(self:get_direction4_to(game:get_hero()))
+  self:get_sprite():set_direction(self:get_direction4_to(hero))
 
   if map:get_id() == "32" then
     game:start_dialog("bilo.0.field")
@@ -64,10 +65,10 @@ end
 function entity:on_post_draw()
   -- Draw the NPC's name above the entity.
   local name = string.sub(entity:get_name(), 5):gsub("^%l", string.upper)
-  local name_surface = sol.text_surface.create({ font = 'bom', font_size = 11, text = name })
+  local name_surface = sol.text_surface.create({ font = 'courier', font_size = 8, text = name })
   local x, y, l = entity:get_position()
   local w, h = entity:get_sprite():get_size()
-  if self:get_distance(map:get_hero()) < 100 then
+  if self:get_distance(hero) < 100 then
     entity:get_map():draw_visual(name_surface, x-(w/2), y-(h-4))
   end
 end
