@@ -5,7 +5,7 @@ $bBlue: Places
 $rRed: Items
 $gGreen: People
 $cCyan: Book of Mudora
-$mMagenta: Dark Tribe
+$mMagenta: Dark Tribe/Darkness
 $wYellow: Ordona/Light
 ]]
 }
@@ -1172,7 +1172,7 @@ dialog{
   skip = "current",
   text = [[
 It looks like this door is locked -
-better find a $r key$w!
+better find a$rkey$w!
 ]]
 }
 
@@ -1200,7 +1200,7 @@ dialog{
   id = "_treasure.airship_part.1",
   skip = "current",
   text = [[
-You found a chunk of  $r  Magnetite$w!$0
+You found a chunk of$rMagnetite$w!$0
 It's a sturdy construction material
 with a variey of uses.
 ]]
@@ -1210,7 +1210,7 @@ dialog{
   id = "_treasure.airship_part.2",
   skip = "current",
   text = [[
-You found a  $r Propeller$w!$0
+You found a$rPropeller$w!$0
 What could the Gerudo need with this?
 ]]
 }
@@ -1219,7 +1219,7 @@ dialog{
   id = "_treasure.airship_part.3",
   skip = "current",
   text = [[
-You found  $r Din's Pearl$w!$0
+You found$rDin's Pearl$w!$0
 The magic from this artifact should
 speed the Gerudo's repairs considerably!
 Get back as soon as you can.
@@ -1231,7 +1231,7 @@ dialog{
   icon = "29",
   skip = "current",
   text = [[
-You got some  $r Master Ore$w!$0
+You got some$rMaster Ore$w!$0
 The blacksmith can use it to
 improve your sword!
 ]]
@@ -1242,7 +1242,7 @@ dialog{
   icon = "25",
   skip = "current",
   text = [[
-You got an $r Alchemy Stone$w!
+You got an$rAlchemy Stone$w!
 This artifact is said to bring
 riches to its owner.
 ]]
@@ -1253,7 +1253,7 @@ dialog{
   icon = "22",
   skip = "current",
   text = [[
-You got $r Goron Amber$w!
+You got$rGoron Amber$w!
 This tasty Goron treat is valuable
 because it contains a bug!
 ]]
@@ -1264,7 +1264,7 @@ dialog{
   icon = "16",
   skip = "current",
   text = [[
-You got an  $r Apple$w!$0
+You got an$rApple$w!$0
 Eat it to regain some stamina!
 ]]
 }
@@ -1274,7 +1274,7 @@ dialog{
   icon = "16",
   skip = "current",
   text = [[
-You got some  $r Apples$w!$0
+You got some$rApples$w!$0
 Eat them to regain some stamina!
 ]]
 }
@@ -1284,7 +1284,7 @@ dialog{
   icon = "83",
   skip = "current",
   text = [[
-You got some $r Arrows$w!$0
+You got some$rArrows$w!$0
 Use them in your bow to hit things
 at a distance.
 ]]
@@ -1295,7 +1295,7 @@ dialog{
   icon = "83",
   skip = "current",
   text = [[
-You got some $r Arrows$w!$0
+You got some$rArrows$w!$0
 Use them in your bow to hit things
 at a distance.
 ]]
@@ -1306,7 +1306,7 @@ dialog{
   icon = "83",
   skip = "current",
   text = [[
-You got some $r Arrows$w!$0
+You got some$rArrows$w!$0
 Use them in your bow to hit things
 at a distance.
 ]]
@@ -1317,7 +1317,7 @@ dialog{
   icon = "73",
   skip = "current",
   text = [[
-You found a $r  Big Key$w!$0
+You found a$rBig Key$w!$0
 Now just find a big keyhole to
 put it in!
 ]]
@@ -1328,7 +1328,7 @@ dialog{
   icon = "1",
   skip = "current",
   text = [[
-You got a $r Bomb$w!$0
+You got a$rBomb$w!$0
 Use it to blow something up!$0
 Ka$0 BOOM!
 ]]
@@ -1339,7 +1339,7 @@ dialog{
   icon = "1",
   skip = "current",
   text = [[
-You got a pack of $r Bombs$w!$0
+You got a pack of$rBombs$w!$0
 Use them to blow something up!$0
 Ka $0 BOOM!
 ]]
@@ -1350,7 +1350,7 @@ dialog{
   icon = "1",
   skip = "current",
   text = [[
-You got a pack of $r Bombs$w!$0
+You got a pack of$rBombs$w!$0
 Use them to blow something up!$0
 Ka $0 BOOM!
 ]]
@@ -1361,7 +1361,7 @@ dialog{
   icon = "54",
   skip = "current",
   text = [[
-You received a  $r Bomb Bag$w !$0
+You received a$rBomb Bag$w!$0
 It can hold 10 Bombs.
 ]]
 }
@@ -1371,7 +1371,7 @@ dialog{
   icon = "55",
   skip = "current",
   text = [[
-You got a $r Large Bomb Bag$w  !$0
+You got a$rLarge Bomb Bag$w!$0
 It holds 30 Bombs.
 ]]
 }
@@ -1381,7 +1381,7 @@ dialog{
   icon = "56",
   skip = "current",
   text = [[
-You got a $r Huge Bomb Bag$w  !$0
+You got a$rHuge Bomb Bag$w!$0
 It holds 60 Bombs!
 ]]
 }
@@ -1391,7 +1391,7 @@ dialog{
   icon = "20",
   skip = "current",
   text = [[
-You got a page to a  $c  book$w!
+You got a page to a$cbook$w!
 This seems like an awfully
 paltry prize after braving
 this whole dungeon. Maybe
@@ -1404,7 +1404,7 @@ dialog{
   icon = "20",
   skip = "current",
   text = [[
-You got your  $c book$w page!
+You got your$cbook$w page!
 Don't let a monkey steal it
 again!
 ]]
@@ -1466,7 +1466,7 @@ dialog{
   icon = "20",
   skip = "current",
   text = [[
-The $c Book of Mudora$w  has been
+The$cBook of Mudora$w has been
 enchanted! Finally the book
 is back to its full power!
 ]]
@@ -1477,7 +1477,7 @@ dialog{
   icon = "4",
   skip = "current",
   text = [[
-You got a $r Boomerang$w!$0
+You got a$rBoomerang$w!$0
 Use it to immobilize enemies
 and reach distant objects.
 ]]
@@ -1488,7 +1488,7 @@ dialog{
   icon = "37",
   skip = "current",
   text = [[
-You got a $r Magical Boomerang$w !$0
+You got a$rMagical Boomerang$w!$0
 It can immobilize enemies and reach
 objects at even futher distances!
 ]]
@@ -1499,7 +1499,7 @@ dialog{
   icon = "28",
   skip = "current",
   text = [[
-You found the  $r Pegasus Boots$w!
+You found the$rPegasus Boots$w!
 Slip them on and dash about!
 ]]
 }
@@ -1509,7 +1509,7 @@ dialog{
   icon = "74",
   skip = "current",
   text = [[
-You found the $r Boss Key$w!$0
+You found the$rBoss Key$w!$0
 Now you can open the door to
 the boss's lair!
 ]]
@@ -1848,7 +1848,7 @@ dialog{
   icon = "2",
   skip = "current",
   text = [[
-You found the $r  Hero's Bow$w!$0
+You found the$rHero's Bow$w!$0
 This is said to have been
 wielded by a legendary hero
 long ago.
@@ -1860,7 +1860,7 @@ dialog{
   icon = "2",
   skip = "current",
   text = [[
-You found the $r  Light Bow$w!$0
+You found the$rLight Bow$w!$0
 This is a powerful weapon which
 allows you to shoot pure arrows
 of light!
@@ -1873,7 +1873,7 @@ dialog{
   next = "_warning_magic",
   skip = "current",
   text = [[
-You found the $r Cane of Ice$w!$0
+You found the$rCane of Ice$w!$0
 Use it to create blocks
 on a whim.
 ]]
@@ -1884,7 +1884,7 @@ dialog{
   icon = "18",
   skip = "current",
   text = [[
-You got a  $r Carrot$w!$0
+You got a$rCarrot$w!$0
 Eat it to regain some stamina!
 ]]
 }
@@ -1894,7 +1894,7 @@ dialog{
   icon = "71",
   skip = "current",
   text = [[
-You found a  $r Compass$w!  It
+You found a$rCompass$w! It
 indicates your position on a Map,
 but only works in this dungeon.
 This one has a special feature -
@@ -1908,7 +1908,7 @@ dialog{
   icon = "23",
   skip = "current",
   text = [[
-You got a $r Magic Crystal$w!$0
+You got a$rMagic Crystal$w!$0
 No one knows how this solid
 chunk of pure, crystallized
 magic came to be...
@@ -1920,7 +1920,7 @@ dialog{
   icon = "0",
   skip = "current",
   text = [[
-You got a $r Rito Feather$w!$0
+You got a$rRito Feather$w!$0
 Use it to jump across
 obstacles safely. You'll be
 light as air!
@@ -1932,7 +1932,7 @@ dialog{
   icon = "50",
   skip = "current",
   text = [[
-You got the $r Flippers$w!$0
+You got the$rFlippers$w!$0
 Now you'll be able to swim
 like a pro!
 ]]
@@ -1943,7 +1943,7 @@ dialog{
   icon = "32",
   skip = "current",
   text = [[
-You found the  $r Iron Bracelet$w!$0
+You found the$rIron Bracelet$w!$0
 Its power allows you to lift
 heavy things!
 ]]
@@ -1954,7 +1954,7 @@ dialog{
   icon = "33",
   skip = "current",
   text = [[
-You got the  $r Gold Bracelet$w!$0
+You got the$rGold Bracelet$w!$0
 Its magic allows you to lift
 just about anything!
 ]]
@@ -1965,7 +1965,7 @@ dialog{
   icon = "27",
   skip = "current",
   text = [[
-You got the $r Goron Hammer!$w
+You got the$rGoron Hammer!$w
 This powerful weapon can pound
 stakes into the ground.
 ]]
@@ -1976,7 +1976,7 @@ dialog{
   icon = "84",
   skip = "current",
   text = [[
-You found a $r Heart$w!$0
+You found a$rHeart$w!$0
 Some life has been
 replenished.
 ]]
@@ -1987,7 +1987,7 @@ dialog{
   icon = "80",
   skip = "current",
   text = [[
-You found a $r Heart Container$w!$0
+You found a$rHeart Container$w!$0
 Your life has been increased
 by one. Congratulations!
 ]]
@@ -1998,7 +1998,7 @@ dialog{
   icon = "79",
   skip = "current",
   text = [[
-You found a $r Piece of Heart$w!
+You found a$rPiece of Heart$w!
 ]]
 }
 
@@ -2007,7 +2007,7 @@ dialog{
   icon = "6",
   skip = "current",
   text = [[
-You found a $r Hookshot$w!$0
+You found a$rHookshot$w!$0
 Immobilize enemies and travel
 across distances previously
 unreachable!
@@ -2019,7 +2019,7 @@ dialog{
   icon = "21",
   skip = "current",
   text = [[
-You got some  $r Mystic Jade$w!
+You got some$rMystic Jade$w!
 It's such a beautiful color!
 ]]
 }
@@ -2030,7 +2030,7 @@ dialog{
   next = "_warning_magic",
   skip = "current",
   text = [[
-You found a $r Lantern$w!$0
+You found a$rLantern$w!$0
 Light the way and travel in
 safety!
 ]]
@@ -2073,7 +2073,7 @@ dialog{
   icon = "70",
   skip = "current",
   text = [[
-You found a $r Dungeon Map$w !
+You found a$rDungeon Map$w!
 Use it to navigate difficult areas
 and explore new places!
 ]]
@@ -2084,7 +2084,7 @@ dialog{
   icon = "19",
   skip = "current",
   text = [[
-You got some  $r Meat$w!$0
+You got some$rMeat$w!$0
 Eat it to regain some stamina!
 ]]
 }
@@ -2094,7 +2094,7 @@ dialog{
   icon = "34",
   skip = "current",
   text = [[
-You got the $r Ocarina of Wind$w!$0
+You got the$rOcarina of Wind$w!$0
 Use this magical instrument
 to get where you need to go!
 ]]
@@ -2105,7 +2105,7 @@ dialog{
   icon = "30",
   skip = "current",
   text = [[
-You found $r Subrosian Ore$w! It's a
+You found$rSubrosian Ore$w! It's a
 strong metallic compound from
 the deepest depths of the earth!
 ]]
@@ -2116,7 +2116,7 @@ dialog{
   icon = "30",
   skip = "current",
   text = [[
-You found $r Subrosian Ore$w! It's a
+You found$rSubrosian Ore$w! It's a
 strong metallic compound from
 the deepest depths of the earth!
 ]]
@@ -2127,7 +2127,7 @@ dialog{
   icon = "24",
   skip = "current",
   text = [[
-You found a $r Goddess Plume$w!
+You found a$rGoddess Plume$w!
 This is a legendary treasure
 few will ever behold!
 ]]
@@ -2138,7 +2138,7 @@ dialog{
   icon = "9",
   skip = "current",
   text = [[
-You got some  $r Heart Potion$w!$0
+You got some$rHeart Potion$w!$0
 Use it to restore your life.
 ]]
 }
@@ -2148,7 +2148,7 @@ dialog{
   icon = "10",
   skip = "current",
   text = [[
-You got some  $r Magic Potion$w!$0
+You got some$rMagic Potion$w!$0
 Use it to refill your
 magic meter.
 ]]
@@ -2159,7 +2159,7 @@ dialog{
   icon = "11",
   skip = "current",
   text = [[
-You got  $r Stamina Potion$w!$0
+You got$rStamina Potion$w!$0
 It restores your stamina!
 ]]
 }
@@ -2169,7 +2169,7 @@ dialog{
   icon = "12",
   skip = "current",
   text = [[
-You got $r Revitalizing Potion$w!$0
+You got$rRevitalizing Potion$w!$0
 It restores life, magic
 and stamina!
 ]]
@@ -2180,7 +2180,7 @@ dialog{
   icon = "17",
   skip = "current",
   text = [[
-You got a $r Pumpkin$w!
+You got a$rPumpkin$w!
 It looks quite nutritious.
 ]]
 }
@@ -2190,7 +2190,7 @@ dialog{
   icon = "57",
   skip = "current",
   text = [[
-You received a  $r Small Quiver$W!$0
+You received a$rSmall Quiver$W!$0
 It holds your arrows, but only
 10 at once.
 ]]
@@ -2201,7 +2201,7 @@ dialog{
   icon = "58",
   skip = "current",
   text = [[
-You received a  $r Large Quiver$w!$0
+You received a$rLarge Quiver$w!$0
 It can hold 30 arrows at a time!
 ]]
 }
@@ -2211,8 +2211,8 @@ dialog{
   icon = "59",
   skip = "current",
   text = [[
-You received a  $r Huge Quiver$w!$0
-It can hold 60 arrows!
+You received a$rHuge Quiver$w!$0
+It can hold up to 60 arrows!
 ]]
 }
 
@@ -2221,7 +2221,7 @@ dialog{
   icon = "90",
   skip = "current",
   text = [[
-You found a  $g Green Rupee$w!$0
+You found a$gGreen Rupee$w!$0
 That's worth 1 Rupee, so you'd
 better get lots!
 ]]
@@ -2232,7 +2232,7 @@ dialog{
   icon = "91",
   skip = "current",
   text = [[
-You found a  $b Blue Rupee$w!$0
+You found a$bBlue Rupee$w!$0
 That's worth 5 Rupees.
 ]]
 }
@@ -2242,7 +2242,7 @@ dialog{
   icon = "92",
   skip = "current",
   text = [[
-You found a  $r Red Rupee$w!$0
+You found a$rRed Rupee$w!$0
 That's worth 20 Rupees!
 ]]
 }
@@ -2252,7 +2252,7 @@ dialog{
   icon = "93",
   skip = "current",
   text = [[
-You found a  $p Purple Rupee$w!$0
+You found a$pPurple Rupee$w!$0
 This one's worth 50 Rupees!
 ]]
 }
@@ -2262,7 +2262,7 @@ dialog{
   icon = "94",
   skip = "current",
   text = [[
-You found a  $s Silver Rupee$w!$0
+You found a$sSilver Rupee$w!$0
 It's worth 100 Rupees!
 Lucky!
 ]]
@@ -2273,7 +2273,7 @@ dialog{
   icon = "95",
   skip = "current",
   text = [[
-You found a  $y Gold Rupee$w!$0
+You found a$yGold Rupee$w!$0
 It's worth 200 Rupees!
 Amazing!
 ]]
@@ -2284,7 +2284,7 @@ dialog{
   icon = "52",
   skip = "current",
   text = [[
-You got the $r Large Rupee Bag$w !$0
+You got the$rLarge Rupee Bag$w!$0
 It holds 1000 rupees!
 ]]
 }
@@ -2294,7 +2294,7 @@ dialog{
   icon = "53",
   skip = "current",
   text = [[
-You got the $r Huge Rupee Bag$w !$0
+You got the$rHuge Rupee Bag$w!$0
 It holds a whopping 5000 rupees!
 ]]
 }
@@ -2304,8 +2304,8 @@ dialog{
   icon = "63",
   skip = "current",
   text = [[
-You were awarded a trusty   $r  wooden
-shield of Ordon origins $w . Be careful,
+You were awarded a trusty$rwooden
+shield of Ordon origins$w. Be careful,
 it's only made of wood.
 ]]
 }
@@ -2315,7 +2315,7 @@ dialog{
   icon = "64",
   skip = "current",
   text = [[
-You received a strong   $r Hylian
+You received a strong$rHylian
 Shield$w!$0 It's made of nearly
 impenetrable Hylian metal.
 ]]
@@ -2326,7 +2326,7 @@ dialog{
   icon = "65",
   skip = "current",
   text = [[
-You found the magical  $r  Light
+You found the magical$rLight
 Shield$w!$0 Made of polished metal
 and infused with purity of light,
 this shield will protect its wielder
@@ -2338,7 +2338,7 @@ dialog{
   id = "_treasure.shovel.1",
   skip = "current",
   text = [[
-You got a sturdy  $r Shovel$w! Use
+You got a sturdy$rShovel$w! Use
 it to dig up any buried treasue
 you can find!
 ]]
@@ -2349,7 +2349,7 @@ dialog{
   icon = "72",
   skip = "current",
   text = [[
-You found a  $r Small Key$w!$0
+You found a$rSmall Key$w!$0
 Use it to open doors, but only
 in this area.
 ]]
@@ -2360,7 +2360,7 @@ dialog{
   icon = "26",
   skip = "current",
   text = [[
-You found a $r Deku stick$w!
+You found a$rDeku stick$w!
 Maybe someone will be able
 to make something of it...
 ]]
@@ -2371,7 +2371,7 @@ dialog{
   icon = "66",
   skip = "current",
   text = [[
-You found a sturdy $r   Ordon Sword$w!$0
+You found a sturdy$rOrdon Sword$w!$0
 It is a lightweight but durable
 blade which has been passed down
 by the Ordon people for many
@@ -2384,7 +2384,7 @@ dialog{
   icon = "67",
   skip = "current",
   text = [[
-You received the $r  Forged Blade$w!$0
+You received the$rForged Blade$w!$0
 Its edge is a force to be
 reckoned with!
 ]]
@@ -2395,7 +2395,7 @@ dialog{
   icon = "68",
   skip = "current",
   text = [[
-You received the $r  Light Sword$w!$0
+You received the$rLight Sword$w!$0
 Its shining edge can destroy
 most anything!
 ]]
@@ -2406,7 +2406,7 @@ dialog{
   icon = "40",
   skip = "current",
   text = [[
-You found an  $r Odd Mushroom$w!
+You found an$rOdd Mushroom$w!
 The scent is quite...
 interesting.
 ]]
@@ -2417,8 +2417,8 @@ dialog{
   icon = "49",
   skip = "current",
   text = [[
-You traded the  $r Goron Vase$w
-for a $r Zora Scale$w !$0
+You traded the$rGoron Vase$w
+for a$rZora Scale$w!$0
 Another race-specific thing, I
 wonder what you'll do with it?
 ]]
@@ -2429,8 +2429,8 @@ dialog{
   icon = "39",
   skip = "current",
   text = [[
-You traded the  $r Zora Scale$w for a
-$rFrozen Fish$w !$0  Finally something
+You traded the$rZora Scale$w for a
+$rFrozen Fish$w!$0  Finally something
 with some mass appeal!
 ]]
 }
@@ -2440,8 +2440,8 @@ dialog{
   icon = "38",
   skip = "current",
   text = [[
-You traded the  $r Frozen Fish$w for the
-$rCulinary Arts of Hyrule book$w !$0
+You traded the$rFrozen Fish$w for the
+$rCulinary Arts of Hyrule book$w!$0
 Neat!
 ]]
 }
@@ -2451,8 +2451,8 @@ dialog{
   icon = "0",
   skip = "current",
   text = [[
-You traded the $r Culinary Arts of
-Hyrule book$w for a $r Rito Feather$w !$0
+You traded the$rCulinary Arts of
+Hyrule book$w for a$rRito Feather$w!$0
 Finally a truly useful item! Maybe this
 trading stuff is done?
 ]]
@@ -2463,8 +2463,8 @@ dialog{
   icon = "41",
   skip = "current",
   text = [[
-Your $r Odd Mushroom$w  was made
-into some $r Odd Potion$w!
+Your $rOdd Mushroom$w was made
+into some$rOdd Potion$w!
 Whatever you do with it, 
 don't try to drink it!
 ]]
@@ -2475,9 +2475,9 @@ dialog{
   icon = "42",
   skip = "current",
   text = [[
-You traded the   $rOdd Potion$w for
-a $rDeku Mask$w  !$0
-Not sure what the    $gDeku$w wanted
+You traded the$rOdd Potion$w for
+a$rDeku Mask$w!$0
+Not sure what the$gDeku$w wanted
 with that potion, but I'll bet
 this is considered trading up!
 ]]
@@ -2488,8 +2488,8 @@ dialog{
   icon = "43",
   skip = "current",
   text = [[
-You traded the  $r Deku Mask$w for
-a $rMoon Tear$w !$0
+You traded the$rDeku Mask$w for
+a$rMoon Tear$w!$0
 
 It's weird that the guy wanted
 the mask so badly, but who cares
@@ -2502,8 +2502,8 @@ dialog{
   icon = "44",
   skip = "current",
   text = [[
-You traded the  $r Moon Tear$w
-for a $r Crystal Ball$w!$0
+You traded the$rMoon Tear$w
+for a$rCrystal Ball$w!$0
 You swapped one shiny thing
 for another!
 ]]
@@ -2514,8 +2514,8 @@ dialog{
   icon = "45",
   skip = "current",
   text = [[
-You traded a $r Crystal Ball$w
-for a $r hunk of meat$w  !$0
+You traded a$rCrystal Ball$w
+for a$rhunk of meat$w!$0
 Impa thinks it's tasty, but
 I wouldn't try it.
 ]]
@@ -2526,8 +2526,8 @@ dialog{
   icon = "46",
   skip = "current",
   text = [[
-You traded the  $r Tasty Meat$w
-for $r Dog Food$w !$0
+You traded the$rTasty Meat$w
+for$rDog Food$w!$0
 Not exactly a fair trade, 
 but you felt bad for the
 hungry Moblin.
@@ -2539,8 +2539,8 @@ dialog{
   icon = "47",
   skip = "current",
   text = [[
-You traded the  $r Dog Food$w 
-for some yummy   $r Bananas$w !$0
+You traded the$rDog Food$w 
+for some yummy$rBananas$w!$0
 Now we're getting somewhere!
 ]]
 }
@@ -2550,10 +2550,10 @@ dialog{
   icon = "48",
   skip = "current",
   text = [[
-You traded $r Bananas$w for a 
-$rGoron Vase$w  !$0  It's quite
+You traded$rBananas$w for a 
+$rGoron Vase$w!$0 It's quite
 beautiful but you're not sure who
-would want one besides a  $g   Goron$w.
+would want one besides a$gGoron$w.
 ]]
 }
 
@@ -2562,7 +2562,7 @@ dialog{
   icon = "61",
   skip = "current",
   text = [[
-You found the  $r Red Tunic$w!$0
+You found the$rRed Tunic$w!$0
 This will prevent heat exhaustion
 as well as cut the damage you take!
 ]]
@@ -2573,7 +2573,7 @@ dialog{
   icon = "62",
   skip = "current",
   text = [[
-You found the  $r Blue Tunic$w!$0
+You found the$rBlue Tunic$w!$0
 This will prevent you from getting
 too tired while swimming, as well
 as cut the damage you take!
@@ -2585,7 +2585,7 @@ dialog{
   icon = "69",
   skip = "current",
   text = [[
-You got the  $r Purple Tunic$w!$0
+You got the$rPurple Tunic$w!$0
 This will protect you from the dark
 magic that has infiltrated the world,
 as well as cut the damage you take!
@@ -2597,7 +2597,7 @@ dialog{
   icon = "70",
   skip = "current",
   text = [[
-You got a $r World Map$w!$0
+You got a$rWorld Map$w!$0
 Now you may not get lost!
 ]]
 }
@@ -2607,7 +2607,7 @@ dialog{
   icon = "70",
   skip = "current",
   text = [[
-You got an $r expanded World Map$w  !$0
+You got an$rexpanded World Map$w!$0
 Now you can explore the Subrosian
 underworld without fear!
 ]]
@@ -2618,7 +2618,7 @@ dialog{
   icon = "70",
   skip = "current",
   text = [[
-You got a $r complete World Map$w  !$0
+You got a$rcomplete World Map$w!$0
 Now you can explore the entirety
 of Hyrule without hesitation!
 ]]
@@ -2628,7 +2628,7 @@ dialog{
   id = "_warning_magic",
   skip = "current",
   text = [[
-Watch your  $g Magic Meter$w!
+Watch your$gMagic Meter$w!
 ]]
 }
 
@@ -2690,7 +2690,7 @@ dialog{
   id = "anouki_3.0.snowpeak",
   skip = "current",
   text = [[
-Cave? Yeah,  $b Snowpeak Caverns$w  !
+Cave? Yeah, $bSnowpeak Caverns$w!
 It's the best.$0 Nothing but cold and
 dark as far as the eye can see.
 ]]
@@ -2703,7 +2703,7 @@ dialog{
 I'm not sure you're ready for the
 cave though. It's dangerous in there,
 so maybe you should explore somewhere
-safer first. Have you been to the $b other
+safer first. Have you been to the $bother
 side of the mountain that's not covered 
 in snow?$w
 ]]
@@ -2919,7 +2919,7 @@ that I'm also a Deku enthusiast!
 Being in the desert can feel lifeless
 at times, and the woodsiness
 of the Deku make me feel more alive!
-Wait- is that a mask of a Deku you have?
+Wait- is that a$rmask of a Deku$wyou have?
 Please give it to me - then I can have
 the Deku with me always!
 Give it up?
@@ -2985,11 +2985,11 @@ dialog{
   skip = "current",
   text = [[
 Ever since this world was created from
-nothing by the so-called Golden Goddesses,
+nothing by the so-called$yOld Gods$w,
 there have been those who are attracted
 to the beautiful things which are visible
 in the light, and there are those who are
-enthraled by the darkness which is less
+enthraled by the$mdarkness$wwhich is less
 visible.
 ]]
 }
@@ -3048,7 +3048,7 @@ dialog{
   id = "belahim.0.speech_5",
   skip = "current",
   text = [[
-For you see, though darkness and light
+For you see, though$mdarkness$wand$ylight$w
 cannot exist without the other, one can
 always be in control - and this world
 has been bathed in light for long enough!
@@ -3091,7 +3091,7 @@ Since Mayor Ulo went back to Council,
 he said I could stay at his place!
 How lucky is that?
 Not sure where to go now? Maybe you
-should stop by $b Hyrule Castle Town$w and
+should stop by$bHyrule Castle Town$wand
 ask the mayor - it's straight north
 of here, through the woods.
 Can't miss it!
@@ -3115,7 +3115,7 @@ dialog{
   text = [[
 Silly human. You think you're strong
 enough to face the entirety of the
-great $mDark Tribe$w? We shall show you
+great$mDark Tribe$w? We shall show you
 how far our power reaches!
 ]]
 }
@@ -3125,7 +3125,7 @@ dialog{
   skip = "current",
   text = [[
 You may have defeated me, but you're too
-late to stop what  $m my people$whave already
+late to stop what$mmy people$whave already
 set into motion!
 ]]
 }
@@ -3152,7 +3152,7 @@ We Tokay are always interested in
 trying new and exciting foods.
 If you find something I might like
 to try, then I'd gladly repay you
-with bananas!
+with$rbananas$w!
 ]]
 }
 
@@ -3175,7 +3175,7 @@ Hmmm... what is that intriguing
 smell? I've never smelled anything
 like that before.$0 Is it edible?$0
 You say it might be? Well, if you'd
-like to trade me for some bananas,
+like to trade me for some$rbananas$w,
 I'll happily give it a try!
 Trade?
 Yes
@@ -3200,10 +3200,10 @@ dialog{
 *munch* *munch*$0
 Delicious! I must say, this might be
 my new favorite food!$0
-What do you call it?$0 Dog Food?$0
+What do you call it?$0$rDog Food$w?$0
 What an odd name. I will have to find
 some more of this dog food...
-Anyway, here are the bananas I promised!
+Anyway, here are the$rbananas$wI promised!
 ]]
 }
 
@@ -3302,7 +3302,7 @@ I'm sorry, but there's no one in
 the office currently. I can make an
 appointment for you if you'd like,
 or you can try to talk to the Elders
-in person at their  $b Castle chambers$w.
+in person at their$bCastle chambers$w.
 ]]
 }
 
@@ -3310,7 +3310,7 @@ dialog{
   id = "council_attendant.1",
   skip = "current",
   text = [[
-A $mSanctum $w? I can't say I know what
+A$mSanctum$w? I can't say I know what
 that is...$0 I do know that there
 are temples spread all over
 Hyrule though...
@@ -3321,9 +3321,9 @@ dialog{
   id = "council_attendant.2",
   skip = "current",
   text = [[
-Have you tried the  $b Abandoned Pyramid$w
+Have you tried the$bAbandoned Pyramid$w
 that sits at the north end of the
-Desert of the $g Gerudo$w?
+Desert of the$gGerudo$w?
 ]]
 }
 
@@ -3331,8 +3331,8 @@ dialog{
   id = "council_attendant.3",
   skip = "current",
   text = [[
-Have you tried the  $b Mausoleum$w that
-the $g Gorons$w have created as a memorial
+Have you tried the$bMausoleum$w that
+the$gGorons$w have created as a memorial
 on the east end of their mountain?
 ]]
 }
@@ -3341,9 +3341,9 @@ dialog{
   id = "council_attendant.4",
   skip = "current",
   text = [[
-Have you tried the  $b Lakebed Temple$w
-that the $g Zora$w use to pray at the
-bottom of $b Lake Hylia$w?
+Have you tried the$bLakebed Temple$w
+that the$gZora$w use to pray at the
+bottom of$bLake Hylia$w?
 ]]
 }
 
@@ -3351,7 +3351,7 @@ dialog{
   id = "council_attendant.5",
   skip = "current",
   text = [[
-Have you tried the $b  Caverns$w that are
+Have you tried the$bCaverns$w that are
 nestled in the snowy peaks that the
 $gAnouki$w call home?
 ]]
@@ -3361,8 +3361,8 @@ dialog{
   id = "council_attendant.6",
   skip = "current",
   text = [[
-Have you tried the new    $b Tower$wthat
-the $g Rito$w have built in order to pray
+Have you tried the new$bTower$wthat
+the$gRito$w have built in order to pray
 to the gods of the wind?
 ]]
 }
@@ -3371,8 +3371,8 @@ dialog{
   id = "council_attendant.7",
   skip = "current",
   text = [[
-Have you tried the  $b old ruins in the
-east$w or the $b vast network of sewers$w
+Have you tried the$bold ruins in the
+east$wor the$b vast network of sewers$w
 that run beneath our feet?
 ]]
 }
@@ -3445,8 +3445,8 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-Wow, You have enough deku sticks
-for me to make a Green Potion!
+Wow, You have enough$rDeku sticks$w
+for me to make a$rGreen Potion$w!
 
 Would you like me to?
 Sure!
@@ -3459,8 +3459,8 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-Wow, You have enough deku sticks
-for me to make a Blue Potion!
+Wow, You have enough$rdeku sticks$w
+for me to make a$rBlue Potion$w!
 
 Would you like me to?
 Sure!
@@ -3473,10 +3473,10 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-Wow! I smell a very rare mushroom
+Wow! I smell a$rvery rare mushroom$w
 nearby! Do you have one?
 If you give it to me then I'll be
-able to make an interesting potion.
+able to make an$rinteresting potion$w.
 
 
 What do you say?
@@ -3514,10 +3514,10 @@ dialog{
   text = [[
 Oh, I knew you would understand!
 You've always gotten me, haven't you?
-I know what you'd like! The odd
-structure just north of here! I'd check
+I know what you'd like! The$bodd
+structure just north of here$w! I'd check
 it out myself, but it's dark and I don't
-have a lantern...
+have a$rlantern$w...
 ]]
 }
 
@@ -3528,7 +3528,7 @@ dialog{
 Obviously you haven't explored enough
 of these woods! You should really look
 around more... Yeah!
-Like that odd structure just up ahead!
+Like that$bodd structure just up ahead$w!
 ]]
 }
 
@@ -3547,8 +3547,8 @@ dialog{
 Hey, $v! I almost forgot to mention...
 I haven't been able to leave the shop
 very much, so if you could bring me
-some $rdeku sticks$w, I know I'd be able
-to make a new potion or two. 10 sticks
+some $rDeku sticks$w, I know I'd be able
+to make a$rnew potion or two$w. 10 sticks
 should get me started, but 25 or so
 should make something really great!
 ]]
@@ -3559,7 +3559,7 @@ dialog{
   skip = "current",
   text = [[
 Hey, $v! I've been meaning to tell
-you... I heard about a $r  strange mushroom$w
+you... I heard about a$rstrange mushroom$w
 growing in the woods to the west. If you
 were to find it, I bet I could make
 something really interesting out of it!
@@ -3626,12 +3626,12 @@ dialog{
   text = [[
 Hi again, $v! You see that I
 sell potions here? Well, it's important
-that you keep a bottle around so you can
-carry potion for when you might need it.
-Don't have a bottle? I'd go ask Rudy the
-blacksmith if he knows where to get one.
-He lives in a cave just west of town in
-the Faron Woods.
+that you keep a$rbottle$waround so you can
+carry$rpotion$wfor when you might need it.
+Don't have a bottle? I'd go ask$gRudy the
+blacksmith$gif he knows where to get one.
+He lives in a$bcave just west of town in
+the Faron Woods$b.
 ]]
 }
 
@@ -3655,7 +3655,7 @@ dialog{
   id = "crista.4.shop",
   skip = "current",
   text = [[
-I was chatting with the lumberjack
+I was chatting with the$glumberjack$w
 who lives just outside of town (he's
 also a lover of plants) and he
 wouldn't stop rambling on about
@@ -3704,7 +3704,7 @@ die after coming here. Please, do
 yourself a favor and just leave.$0
 And it do quickly, because something
 about this place will drain your
-magic, and your lantern will be
+magic, and your$rlantern$w will be
 useless in no time.
 ]]
 }
@@ -3777,7 +3777,7 @@ spared, but then a few weeks after
 everyone else, my beautiful boy
 started getting sick! I felt so
 helpless...$0 Unfortunately, the
-city only has one doctor and he's
+city only has one$gdoctor$wand he's
 been so busy with everyone else that
 he hasn't even made it here yet.
 Please stranger, would you find him
@@ -3839,16 +3839,16 @@ You got lost in my woods, huh?
 Well, we can't let that happen again!
 If you ever get turned around, here's
 what you do... Head straight north
-for $bHyrule Castle Town$w .  Northeast
-leads to the $b old Ruins$w.  South goes
-back to $b Ordon$w, and west of there is
-the $b Western Faron Woods $w .  You're in
-the $b Northern Faron Woods $w  now. How
+for$bHyrule Castle Town$w. Northeast
+leads to the$bold Ruins$w. South goes
+back to$bOrdon$w, and west of there is
+the$bWestern Faron Woods$w. You're in
+the$bNorthern Faron Woods$w now. How
 can you tell? Well look at the trees,
 my boy! These pointy trees only grow
 in the Faron region, the rest of
 Hyrule has nice rounded trees. You'll
-know you've reached  $b  Hyrule Field$w when
+know you've reached$bHyrule Field$w when
 the trees change shape!
 ]]
 }
@@ -3931,7 +3931,7 @@ You're a little stumped, huh?
 Don't know where to go next?$0
 Well I'll tell you an interesting
 story - I once heard that there was
-treasure BENEATH   $b Lake Hylia$w!$0
+treasure BENEATH$bLake Hylia$w!$0
 Can you imagine that? Treasure under
 a lake? Sounds like something you
 would love to check out, right?
@@ -3979,7 +3979,7 @@ dialog{
   skip = "current",
   text = [[
 What's that enticing smell? Is that
-a potion? I must have it!
+a$rpotion$w? I must have it!
 
 Will you give it to me?
 Yes
@@ -3992,7 +3992,7 @@ dialog{
   skip = "current",
   text = [[
 Yay! Thanks mister! In exchange,
-I'll give you this cool mask. It's so
+I'll give you this$rcool mask$w. It's so
 cool because it looks just like me!
 ]]
 }
@@ -4004,8 +4004,8 @@ dialog{
 Hey kid, I wouldn't wander too far -
 it's dangerous in these woods! At least
 try to find another weapon first, maybe
-something with some range. There's a stump
-with a door south-west of here, I'll bet
+something with some range. There's a$bstump
+with a door south-west of here$w, I'll bet
 it would have some interesting stuff if
 you checked it out.
 ]]
@@ -4016,7 +4016,7 @@ dialog{
   skip = "current",
   text = [[
 Hey kid, you might as well get out of here.
-Without the $c  power of the sage Mudora$w  ,
+Without the$cpower of the sage Mudora$w,
 you have no chance of finding your way in
 these woods - they're all twisted around
 from the evil that's here now.
@@ -4037,7 +4037,7 @@ dialog{
   skip = "current",
   text = [[
 At least you have the power of the
-complete  $cbook$w, but this place is
+complete$cbook$w, but this place is
 still dangerous. The building at the
 heart of the woods is the worst - it has
 evil just streaming from it. Be sure you
@@ -4050,10 +4050,10 @@ dialog{
   id = "deku.2.lost_woods_first",
   text = [[
 Hey kid, you might as well get out of here.
-Without the $c  power of the sage Mudora$w  ,
+Without the$cpower of the sage Mudora$w,
 you have no chance of finding your way in
 these woods- they're all twisted around...
-Wait. Is that the $c Book of Mudora$w?!
+Wait. Is that the$cBook of Mudora$w?!
 And it's fully enchanted! If you were
 able to put that together, maybe you
 will be able to face the evil here.
@@ -4064,19 +4064,19 @@ dialog{
   id = "deku.3.faron",
   skip = "current",
   text = [[
-Hey $gBoy in Green!$w Since you helped
+Hey$gBoy in Green!$w Since you helped
 us out, we'll give you a little tip...
-That page the  $g monkeys$w just gave you
+That page the$gmonkeys$w just gave you
 looks familiar- we know about a really
 $bold library$w you should check out.
-It's all the way in $b North Hyrule$w
+It's all the way in$bNorth Hyrule$w
 though, so the trick to get there is to
-use the $b sewers$w. That place where you
+use the$bsewers$w. That place where you
 got that neat sword was actually part of
 the huge sewer system running under our
 feet! Anyway, you should be able to
 find another sewer access just east
-of $bHyrule Castle Town$w   .
+of$bHyrule Castle Town$w.
 ]]
 }
 
@@ -4107,7 +4107,7 @@ dialog{
   skip = "current",
   text = [[
 You can find valuable stuff like
-$rMystic Jade$w  and$rDeku Sticks$w   scattered
+$rMystic Jade$w and$rDeku Sticks$w scattered
 around the forest sometimes.
 ]]
 }
@@ -4116,7 +4116,7 @@ dialog{
   id = "deku.4.faron.3",
   skip = "current",
   text = [[
-Find enough $r Mystic Jade$w and the Great
+Find enough$rMystic Jade$w and the Great
 Fairy of the Forest will give you
 something great!
 ]]
@@ -4126,8 +4126,8 @@ dialog{
   id = "deku.4.faron.4",
   skip = "current",
   text = [[
-Find enough $r Deku Sticks$w and they can
-be used to make great potions!
+Find enough$rDeku Sticks$w and they can
+be used to make great$rpotions$w!
 ]]
 }
 
@@ -4136,7 +4136,7 @@ dialog{
   skip = "current",
   text = [[
 We're nicer than our relatives over at
-the $bLost Woods$w of the east. I think
+the$bLost Woods$w of the east. I think
 they're just confused by that forest
 and it makes them angry. I have heard
 them say that they like odd smelling
@@ -4150,7 +4150,7 @@ dialog{
   id = "deku.4.lost_woods",
   skip = "current",
   text = [[
-The $m masters$w are gone?$0
+The$mmasters$w are gone?$0
 What will we do? We Deku need a
 strong leader, or we're lost!
 ]]
@@ -4169,7 +4169,7 @@ dialog{
   id = "deku2.1.faron",
   skip = "current",
   text = [[
-We $gDeku$w are a proud and protective
+We$gDeku$w are a proud and protective
 people. This will be a standoff...
 ]]
 }
@@ -4180,7 +4180,7 @@ dialog{
   text = [[
 I don't think we're unreasonable. We were
 here first and we need our space. These
-$gSLIMY SNAKES$w$0   can go back to the water!
+$gSLIMY SNAKES$w$0 can go back to the water!
 ]]
 }
 
@@ -4268,8 +4268,8 @@ dialog{
   id = "etnaya.0",
   skip = "current",
   text = [[
-Welcome to the  $b Kakariko $wGallery
-and Ampitheater!
+Welcome to the$bKakariko Gallery
+and Ampitheater$w!
 This city has long been seen as the
 cultural hub of all Hyrule, and this
 gallery is the heart of the city.
@@ -4293,7 +4293,7 @@ dialog{
   skip = "current",
   text = [[
 Welcome one and all to this year's
-stage show at  $b Kakariko Ampitheater$w!
+stage show at$bKakariko Ampitheater$w!
 I'm proud to introduce our star,
 the one and only Rowin!
 
@@ -4475,7 +4475,7 @@ dialog{
   id = "francis.1.ordon",
   skip = "current",
   text = [[
-See that $b blue bar$w up there?
+See that$bblue bar$w up there?
 That's called your "Stamina Bar".
 It decreases any time you do something
 that takes energy, like use an item or
@@ -4495,7 +4495,7 @@ dialog{
   id = "francis.2.hint_1",
   skip = "current",
   text = [[
-Have ya ever talked to that gardener lady
+Have ya ever talked to that$ggardener lady$w
 on the edge of the village near the big
 lake? She always seems so lonely. Maybe
 you could do something to cheer her up.
@@ -4507,7 +4507,7 @@ dialog{
   id = "francis.2.hint_2",
   skip = "current",
   text = [[
-Ya ever seen those shiny green jewel
+Ya ever seen those$rshiny green jewel$w
 things that are scattered around the
 forest? I've heard grown ups talk about
 how they're valuable. I don't know how,
@@ -4534,7 +4534,7 @@ I'm working as the groundskeeper here,
 so I planted saplings that I got from
 friends up north and next thing you know,
 I got these beauts! Some of them even
-grow apples! One of a kind, these are...
+grow$rapples$w! One of a kind, these are...
 ]]
 }
 
@@ -4573,7 +4573,7 @@ dialog{
   skip = "current",
   text = [[
 These are in bad shape... You say a
-lumberjack told you about them?
+$glumberjack$wtold you about them?
 Well, I'll bet he had something to
 do with this in the first place!
 Running around, chopping down these
@@ -4708,7 +4708,7 @@ the once great Goron people.
 Unfortunately it came quickly and
 we haven't had the opportunity to
 investigate the disease- only to
-bury the dead. Dampeh, our gravekeeper
+bury the dead.$gDampeh, our gravekeeper$w
 knows more about the deadly condition
 than anyone...
 ]]
@@ -4730,7 +4730,7 @@ dialog{
   skip = "current",
   text = [[
 Why hello young patron! Welcome to my
-little pub, the Alchemist's Alehouse.$0
+little pub, the$bAlchemist's Alehouse$w.$0
 Why did I name it that, you ask?
 Well...$0 I'd rather not discuss that with
 someone I just met.
@@ -4755,7 +4755,7 @@ dialog{
 What's that?$0 Still pondering the name of
 my little pub? Persistant little guy, huh?$0
 Fine...$0 Truth is that I heard about these
-gems called 'Alchemy Stones' which are
+gems called$r'Alchemy Stones'$w which are
 supposed to be hidden all over this area.
 I set up shop so I could hunt for them and
 rake in the dough! Now I've got this place
@@ -4770,7 +4770,7 @@ dialog{
   text = [[
 Alright, since you've been so friendly,
 I'll let you in on a little secret.
-I didn't start collecting Alchemy Stones
+I didn't start collecting$rAlchemy Stones$w
 for the money... I started collecting them
 for their power! Alchemy is the ultimate
 transformation... anything into pure gold!
@@ -4800,8 +4800,8 @@ dialog{
   text = [[
 Of course, I'm still just in the
 dabbling stages. If you learn anything
-useful, or find any of those Alchemy
-Stones, but sure to let me know, friend!
+useful, or find any of those$rAlchemy
+Stones$w, but sure to let me know, friend!
 ]]
 }
 
@@ -4898,7 +4898,7 @@ dialog{
   id = "gerudo_2.0.nabooru",
   skip = "current",
   text = [[
-Gruce and the Gerutones have been
+$gGruce and the Gerutones$w have been
 rocking together up here for years!
 If you haven't heard of us, you
 must have been living under a rock -
@@ -4910,7 +4910,7 @@ dialog{
   id = "gin.0.council",
   skip = "current",
   text = [[
-Hello young man! My name is Tokage Gin
+Hello young man! My name is$gTokage Gin$w
 and I'm the Elder of the Tokay tribe.$0
 ]]
 }
@@ -4939,7 +4939,7 @@ dialog{
   id = "gin.1.council",
   skip = "current",
   text = [[
-Huh?$0 A $c Book?$w$0
+Huh?$0 A$cBook?$w$0
 Can't say I even know what that is!
 ]]
 }
@@ -4969,7 +4969,7 @@ dialog{
   skip = "current",
   text = [[
 I can't lie, the council won't be able
-to find $gZelda$wwithout you. We gotta ask
+to find$gZelda$w without you. We gotta ask
 for your help!
 ]]
 }
@@ -4979,9 +4979,9 @@ dialog{
   skip = "current",
   text = [[
 If you head north of the castle, you'll
-hit the bustling city of  $b Kakariko$w. If
+hit the bustling city of$bKakariko$w. If
 you continue north and west past that,
-you'll find my home of  $b  Snowpeak$w.
+you'll find my home of$bSnowpeak$w.
 Surely not bustling, but a nice home
 anyhow.
 ]]
@@ -5000,12 +5000,12 @@ dialog{
   id = "goron.0.death_mountain",
   skip = "current",
   text = [[
-What's that?  $b Goron City$w? THIS is not
-the great $b Goron City$w! I guess that
+What's that? $bGoron City$w? THIS is not
+the great$bGoron City$w! I guess that
 cave does look a little like one of our
 houses, but that one has a powerful fairy
 inside! What does she do, you ask? How
-should I know, I'm just a  $g Goron$w.
+should I know, I'm just a$gGoron$w.
 Check it out for yourself!
 ]]
 }
@@ -5028,7 +5028,7 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-Welcome to the Goron City Inn!
+Welcome to the$bGoron City Inn$w!
 We offer all the comforts of home
 while you're away.
 It's only 20 rupees to stay. Want to?
@@ -5071,7 +5071,7 @@ good! You've opened my eyes to the
 world of food outside of rocks! I
 wonder what else there is out there
 to try?$0 I'm going to give you one
-of our Goron Vases. It's a sign that
+of our$rGoron Vases$w. It's a sign that
 you're a true Brother to the Gorons!
 ]]
 }
@@ -5147,7 +5147,7 @@ dialog{
   skip = "current",
   text = [[
 The mine? Oh, we call it the
-Mausoleum now. So many people died in
+$bMausoleum$w now. So many people died in
 there that most of us won't go back.
 ]]
 }
@@ -5183,7 +5183,7 @@ dialog{
   id = "goron5.0.goron_city",
   skip = "current",
   text = [[
-We Gorons were once a proud and
+We$gGorons$wwere once a proud and
 honorable people. Now everyone's
 so down due to this horrible illness.
 I wish someone could do anything
@@ -5216,7 +5216,7 @@ dialog{
   id = "goron6.0.goron_city_mine",
   skip = "current",
   text = [[
-The doctor doesn't have nearly as much
+The$gdoctor$wdoesn't have nearly as much
 to do these days. I guess soon enough
 he'll be patching up the brothers who
 are going back to the mines - they
@@ -5229,7 +5229,7 @@ dialog{
   id = "goron7.0.goron_city",
   skip = "current",
   text = [[
-Welcome to Goron City. Don't breathe
+Welcome to$bGoron City$w. Don't breathe
 if you don't want to get sick.
 What's that? Cynical? I don't know
 that word, but I don't think I
@@ -5241,8 +5241,8 @@ dialog{
   id = "goron7.0.goron_city_mine",
   skip = "current",
   text = [[
-Welcome to Goron City! Don't forget
-to check out our world famous mines!
+Welcome to$bGoron City$w! Don't forget
+to check out our world famous $bmines$w!
 ]]
 }
 
@@ -5272,11 +5272,11 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-You don't have any wonderful bombs in
+You don't have any wonderful$rbombs$win
 your inventory! You have no idea how very
 useful they are until you can carry them
 with you all the time. How about I sell
-you a bomb bag for the one-time low price
+you a$rbomb bag$wfor the one-time low price
 of 300 rupees?
 Buy?
 Yes
@@ -5288,11 +5288,11 @@ dialog{
   id = "goron_smith.1.shop",
   skip = "current",
   text = [[
-Aren't bombs great?! Try blowing up
+Aren't$rbombs$wgreat?! Try blowing up
 anything you see that looks even slightly
 fragile. At least that's the advice I
 used to follow until I got in trouble...
-Now I can't leave Goron City.
+Now I can't leave$bGoron City$w.
 ]]
 }
 
@@ -5301,7 +5301,7 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-You look low on bombs! Would you like
+You look low on$rbombs$w! Would you like
 to buy some more? I'll sell you some
 how for low, low price of 50 rupees.
 Buy?
@@ -5374,7 +5374,7 @@ to? Surely you've seen the poisoned state
 my great woods are in? Well, it's
 because I've been cursed!$0
 If you can find a large amount of
-treasure known as  $r  Mystic Jade$w, the
+treasure known as$rMystic Jade$w, the
 curse should be able to be lifted.
 Please help me, hero!
 ]]
@@ -5389,7 +5389,7 @@ Wait... you don't know what I'm referring
 to? Surely you've seen the troubled state
 my lake is in!
 If you can find a large amount of
-treasure known as  $r  Goddess Plume$w, the
+treasure known as$rGoddess Plume$w, the
 trouble should be able to be lifted.
 Please help me, hero!
 ]]
@@ -5404,7 +5404,7 @@ Wait... you don't know what I'm referring
 to? Surely you've seen the evil that
 tramples my mountain!
 If you can find a large amount of
-treasure known as  $r  Goron Amber$w, the
+treasure known as$rGoron Amber$w, the
 evil should be able to be lifted.
 Please help me, hero!
 ]]
@@ -5419,7 +5419,7 @@ Wait... you don't know what I'm referring
 to? Surely you've seen the confused state
 my lands are in!
 If you can find a large amount of
-treasure known as  $r  Magic Crystal$w, the
+treasure known as$rMagic Crystal$w, the
 confusion should be able to be lifted.
 Please help me, hero!
 ]]
@@ -5434,7 +5434,7 @@ Wait... you don't know what I'm referring
 to? Surely you've seen the desolate state
 my lands are in!
 If you can find a large amount of
-treasure known as  $r  Alchemy Stone$w, the
+treasure known as$rAlchemy Stone$w, the
 desolation should be able to be lifted.
 Please help me, hero!
 ]]
@@ -5449,7 +5449,7 @@ Wait... you don't know what I'm referring
 to? Surely you've seen the troubled state 
 my lands are in!
 If you can find a large amount of
-treasure known as  $r  Subrosian Ore$w, the
+treasure known as$rSubrosian Ore$w, the
 trouble should be able to be lifted.
 Please help me, hero!
 ]]
@@ -5498,7 +5498,7 @@ dialog{
   id = "great_fairy.5.faron",
   skip = "current",
   text = [[
-You've collected all the  $r Mystic Jade$w
+You've collected all the$rMystic Jade$w
 I need, great work! I can now
 restore my beautiful forest to its
 former state. Allow me to reward
@@ -5510,7 +5510,7 @@ dialog{
   id = "great_fairy.5.lake",
   skip = "current",
   text = [[
-You've collected all the  $r Goddess Plume$w
+You've collected all the$rGoddess Plume$w
 I need, great work! I can now
 restore my calm land to its former
 state. Allow me to reward you
@@ -5522,7 +5522,7 @@ dialog{
   id = "great_fairy.5.mountain",
   skip = "current",
   text = [[
-You've collected all the  $r Goron Amber$w
+You've collected all the$rGoron Amber$w
 I need, great work! I can now
 restore my beautiful mountain to its
 former state. Allow me to reward
@@ -5534,7 +5534,7 @@ dialog{
   id = "great_fairy.5.north",
   skip = "current",
   text = [[
-You've collected all the  $r Magic Crystal$w
+You've collected all the$rMagic Crystal$w
 I need, great work! I can now
 restore my calm land to its former
 state. Allow me to reward you
@@ -5546,7 +5546,7 @@ dialog{
   id = "great_fairy.5.snowpeak",
   skip = "current",
   text = [[
-You've collected all the  $r Alchemy Stone$w
+You've collected all the$rAlchemy Stone$w
 I need, great work! I can now
 restore my beautiful land to its
 former state. Allow me to reward you
@@ -5558,7 +5558,7 @@ dialog{
   id = "great_fairy.5.subrosia",
   skip = "current",
   text = [[
-You've collected all the  $r Subrosian
+You've collected all the$rSubrosian
 Ore$w I need, great work! I can now
 restore my tranquil land to its
 former state. Allow me to reward you
@@ -5636,7 +5636,7 @@ dialog{
   id = "guard.0.council",
   skip = "current",
   text = [[
-Ahead is the Council Chambers. All of the
+Ahead is the$bCouncil Chambers$w. All of the
 Elders gather here to discuss policy.
 Try not to bother them.
 ]]
@@ -5646,7 +5646,7 @@ dialog{
   id = "guard.0.outside",
   skip = "current",
   text = [[
-The great Hyrule Castle is open to visitors
+The great$bHyrule Castle$wis open to visitors
 throughout the daylight hours. If you
 behave yourself, you can look at anything
 you'd like while inside.
@@ -5657,9 +5657,9 @@ dialog{
   id = "guard.0.throne",
   skip = "current",
   text = [[
-Through that door is the Throne Room, but
+Through that door is the$bThrone Room$w, but
 it's no longer open to the public. The
-Council Chambers is more interesting now.
+$bCouncil Chambers$w is more interesting now.
 ]]
 }
 
@@ -5668,7 +5668,7 @@ dialog{
   skip = "current",
   text = [[
 Halt!$0 This beach belongs to the
-$gGerudo Pirates$w !  Our beautiful ship
+$gGerudo Pirates$w! Our beautiful ship
 ran aground on this beach, so we've
 staked our claim! After all, those silly
 lizards were no match for our spears!
@@ -5680,7 +5680,7 @@ dialog{
   skip = "current",
   text = [[
 What's that? Those... what do you
-call them... $g Tokay$w? They want 'their'
+call them...$gTokay$w? They want 'their'
 beach back? Until we can take our ship
 with us, we're not going anywhere!
 ]]
@@ -5691,7 +5691,7 @@ dialog{
   skip = "current",
   text = [[
 Tell you what... if you are so
-concerned about these   $g  Tokay$w, then
+concerned about these$gTokay$w, then
 you can help us repair our ship! We
 know of a place here in the desert
 which should contain the parts we'll
@@ -5712,7 +5712,7 @@ dialog{
   skip = "current",
   text = [[
 Huh? Why don't we just go there
-ourselves? Well, the  $b pyramid$w is
+ourselves? Well, the$bpyramid$w is
 sealed with a special magic which only
 allows a chosen few past. I can see the
 mark on your hand which signifies you're
@@ -5857,9 +5857,9 @@ dialog{
   text = [[
 If you get stuck, keep in mind that there
 are multiple routes to the sewers below:
-one in a forest, one near some ruins, one
-near a lake, and one on the tip of a
-mountain.
+one in a $gforest$w, one near some$yruins$w, one
+near a $blake$w, and one on the tip of a
+$rmountain$w.
 ]]
 }
 
@@ -5999,13 +5999,13 @@ dialog{
   id = "hylian_2.0.kakariko",
   skip = "current",
   text = [[
-I love living in $b Kakariko$w because it's
+I love living in$bKakariko$w because it's
 so centrally located! Sometimes I want
 to wander in the desert for a bit, and
 it's just over the bridge. Or the pretty
 mountains are up north, even with snowy
-ones way up there! Then the $g    Zoras$w and
-$gGorons$w are to the east and  $b Castle Town$w
+ones way up there! Then the$gZoras$w and
+$gGorons$w are to the east and$bCastle Town$w
 is pretty close to the south!
 ]]
 }
@@ -6028,13 +6028,13 @@ dialog{
   id = "hylian_2.0.rauru",
   skip = "current",
   text = [[
-Have you heard of the   $b  Forest of Deception$w
+Have you heard of the$bForest of Deception$w
 that's north-west of the Castle? I would
 not recommend going there unless you
 have a powerful spirit captured.
 These spirits serve as guides in scary,
 foggy places like that. The best place to
-capture a spirit is the  $b King's Tomb$w
+capture a spirit is the$bKing's Tomb$w
 graveyard east of here.
 ]]
 }
@@ -6045,7 +6045,7 @@ dialog{
   text = [[
 There's this weird astronomer guy who is
 obsessed with these creatures known as
-$gDekus$w . I hear him talk about them
+$gDekus$w. I hear him talk about them
 all of the time. He wants to look just
 like them!
 ]]
@@ -6056,7 +6056,7 @@ dialog{
   skip = "current",
   text = [[
 The quickest way to move around is to
-get yourself an   $rOcarina$w.
+get yourself an$rOcarina$w.
 Have you seen the ocarina-shaped dirt
 patches? If you approach one of these,
 you'll be able to instantly warp to an
@@ -6119,10 +6119,8 @@ dialog{
   id = "hylian_5.0.kasuto",
   skip = "current",
   text = [[
-$0
-This will not do at all. Not at all.
-$0
-I was rich in our old town! The only
+$0This will not do at all. Not at all.
+$0I was rich in our old town! The only
 house that still stands was mine. I
 didn't spare a rupee to ensure that I
 could live there forever, and then
@@ -6138,10 +6136,10 @@ dialog{
   id = "hylian_5.0.rauru",
   skip = "current",
   text = [[
-Have you heard about the Goddess? She
+Have you heard about the $yGoddess$w? She
 was the woman who was entrused with
-with the Golden Power when the Old
-Goddesses left. She helped shape the
+with the$oGolden Power$w when the $yOld
+Gods$w left. She helped shape the
 land into the Hyrule we know, and
 protected her people when they were
 attacked. There's a lot we can still
@@ -6153,7 +6151,7 @@ dialog{
   id = "hylian_6.0.rauru",
   skip = "current",
   text = [[
-Rauru may be newly established, but
+$gRauru$w may be newly established, but
 we've got a lot to show for ourselves
 already! Please stick around as long
 as you'd like, we welcome all visitors
@@ -6180,7 +6178,7 @@ dialog{
   skip = "current",
   text = [[
 Why am I walking around?
-It's so nice outside! $0
+It's so nice outside!$0
 Why are you walking around?
 ]]
 }
@@ -6189,8 +6187,8 @@ dialog{
   id = "ildus.1.outside",
   skip = "current",
   text = [[
-Sewers underneath Hyrule?
-That's cool! $0
+$bSewers$w underneath Hyrule?
+That's cool!$0
 So maybe that's what those stone grates
 I see all over the place connect to. When
 you see one of those, you should look
@@ -6203,7 +6201,7 @@ dialog{
   skip = "current",
   text = [[
 Greetings, young hero.
-My name is  $gImpa$w, the last resident of
+My name is$gImpa$w, the last resident of
 this village and the last of my kind.
 I know much about this land.$0
 What's that? You're unsure of where to
@@ -6217,13 +6215,13 @@ dialog{
   id = "impa.0.house_2",
   skip = "current",
   text = [[
-Far from here is an   $b Ancient Library$w.
+Far from here is an$bAncient Library$w.
 You will be unable to get there as you're
-equipped. If you can find a   $r special
-instrument$w , you may be able to access the
+equipped. If you can find a$rspecial
+instrument$w, you may be able to access the
 secret path through the Hyrulian Sewers.
-Find the $g Relic Collector$w near
-$bHyrule Castle$w , he knows of these things.
+Find the$gRelic Collector$w near
+$bHyrule Castle$w, he knows of these things.
 ]]
 }
 
@@ -6252,7 +6250,7 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-Wait... do you have a  $r Crystal Ball$w?
+Wait... do you have a$rCrystal Ball$w?
 How did you come into possesion of that?
 Those are so rare and I've been wanting
 one for so long!
@@ -6279,12 +6277,12 @@ dialog{
   skip = "current",
   text = [[
 Thank you very much!
-I can't believe I finally have a crystal
-ball! Now I can help people by telling
+I can't believe I finally have a$rcrystal
+ball$w! Now I can help people by telling
 them about their future. I can't wait to
 get started!$0
 Oh yes, something for you... I have this
-meat that I made for my dinner, but you
+$rmeat$w that I made for my dinner, but you
 can have it. It's quite tasty!
 ]]
 }
@@ -6423,30 +6421,30 @@ dialog{
   id = "isan.0.library",
   skip = "current",
   text = [[
-I am the Page of the great  $g   Kasuto$w.
+I am the Page of the great$gKasuto$w.
 I was his final student...$0
 What happened to him, you ask? I'm not
 sure how well I can recall, it all
 happened so fast.$0
-Suddenly a group of   $m dark wizards$w
+Suddenly a group of$mdark wizards$w
 appeared and grabbed an ancient book
-from a shelf, one called the   $c Book of
-Mudora$w . They started chanting
+from a shelf, one called the$cBook of
+Mudora$w. They started chanting
 together in the old tongue, but
 before they could finish whatever
 incantation they were conjuring,
 $gKasuto$w arrived in the doorway, raised
 his hands, and with powerful magic of
-his own, shattered the   $c book$w into
-many pieces. Then before the     $m dark
+his own, shattered the$cbook$w into
+many pieces. Then before the$mdark
 ones$w could react, he scattered the
 pieces throughout the land. While
 Kasuto was engrossed in his task, the
 $mmagic clan$w  cast several spells and
 killed the old man.
-Now it's rumored that the    $m tribe$wis
+Now it's rumored that the$mtribe$wis
 secretly seeking out those pieces of
-the $c book$w, so that they can complete
+the$cbook$w, so that they can complete
 whatever dark task that was
 interrupted.
 ]]
@@ -6457,10 +6455,10 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-Is that a fish that I smell? It won't
+Is that a $rfish$w that I smell? It won't
 be fresh for much longer, so how about
 giving it to me? I've been reading this
-amazing cookbook, and would really like
+amazing$rcookbook$w, and would really like
 to try out my skills.
 
 How about it?
@@ -6474,7 +6472,7 @@ dialog{
   skip = "current",
   text = [[
 Seems like a bad idea to carry around
-a quickly thawing fish, but to each
+a$rquickly thawing fish$w, but to each
 their own!
 ]]
 }
@@ -6486,7 +6484,7 @@ dialog{
 Thank you!
 Now that I have the chance to actually
 cook, I think I've gotten all of the use
-I can out of the cookbook. How about
+I can out of the$rcookbook$w. How about
 you take it!
 ]]
 }
@@ -6496,9 +6494,9 @@ dialog{
   skip = "current",
   text = [[
 I see that you already carry pieces of
-that exact  $c book$w! Whoever guided you
+that exact$cbook$w! Whoever guided you
 to those is quite wise indeed. But be
-warned that the   $m dark wizards$w will
+warned that the$mdark wizards$w will
 not rest until they have all the pieces.
 You must seek them out first and put an
 end to their fiendish plot.
@@ -6513,7 +6511,7 @@ Use whatever information you can glean
 from these books to help guide you.
 Return to your region of Hyrule via the
 sewers or the ocarina warp back to
-$bImpa's village$w .
+$bImpa's village$w.
 ]]
 }
 
@@ -6557,7 +6555,7 @@ dialog{
   skip = "current",
   text = [[
 If you happen upon any food items, I've
-been reading a cookbook recently and
+been reading a$rcookbook$wrecently and
 would really like to try something out!
 ]]
 }
@@ -6583,17 +6581,17 @@ stuff? I'll help!
 The circles in the corner are layed
 out kinda like your keyboard!
 (whatever that is).
-The $g green circle$w always controls
+The$ggreen circle$w always controls
 your sword, unless the game is
 paused because then the $g green circle$w
 lets you save your adventure!
-The $o orange circle$w pauses everything
+The$oorange circle$w pauses everything
 and lets you rummage through your
-stuff. The $b blue circle$w changes
+stuff. The$bblue circle$w changes
 depending on what's going on!
 (I've never understood that, but my
 brother gets it).
-The $s grey circles$w let you assign
+The$sgrey circles$w let you assign
 cool items so you can use them
 whenever you want! Don't forget that
 you can customize the keys in the
@@ -6660,8 +6658,8 @@ dialog{
 What's that young boy?$0 If you'd
 like to speak with me, then you need
 to make an appointment with one 
-of my staffers at the council 
-office in town.
+of my staffers at the$bcouncil 
+office in town$w.
 ]]
 }
 
@@ -6669,7 +6667,7 @@ dialog{
   id = "juba.0.council_zelda",
   skip = "current",
   text = [[
-That Zelda was always talking anyway.
+That$gZelda$wwas always talking anyway.
 I like it better now. Quieter.
 ]]
 }
@@ -6687,11 +6685,11 @@ dialog{
   id = "juba.1.lakebed",
   skip = "current",
   text = [[
-The great $b Lakebed Temple$w  can be entered
-by $gZora$w only. It helps that there are
+The great$bLakebed Temple$w  can be entered
+by$gZora$w only. It helps that there are
 only two ways there - with our great
 relic, the $r Zora Flippers$w, and by draining
-the entirety of  $b Lake Hylia$w. And who
+the entirety of$bLake Hylia$w. And who
 could possibly do that (besides we Zora).
 After all, no non-Zora still alive
 remembers the details of the undergroud
@@ -6706,7 +6704,7 @@ dialog{
   id = "juba.1.office",
   skip = "current",
   text = [[
-With the disappearance of   $g  Zelda$w, the
+With the disappearance of$gZelda$w, the
 council has disbanded. But some of us
 actually care about our work, so we've
 set up here in the   $bCouncil office$w.
@@ -6750,7 +6748,7 @@ dialog{
   id = "julita.0",
   skip = "current",
   text = [[
-Hi there! I'm Julita, and I run the
+Hi there! I'm$gJulita$w, and I run the
 potion shop.
 ]]
 }
@@ -6780,7 +6778,7 @@ dialog{
   skip = "current",
   text = [[
 Ok, but stop by if you want to try
-our famous $r Magic Potion$w.
+our famous$rMagic Potion$w.
 ]]
 }
 
@@ -6801,11 +6799,11 @@ dialog{
 $v! There you are!
 I was hoping you could do me a small
 favor...
-My daughter  $g Crista$wwent into the
+My daughter$gCrista$w went into the
 northern woods to pick flowers and herbs
 for potions, but she's been gone an
 awfully long time! Would you mind going
-into the woods to look for her? A   $r   shield$w
+into the woods to look for her? A$rshield$w
 should be enough to protect you and that
 $rlantern$w will light the way should it get
 too dark. I really appreciate you putting
@@ -6818,7 +6816,7 @@ dialog{
   skip = "current",
   text = [[
 What? You say you don't have a
-$rshield$w? Well go talk to $g Rudy$w and
+$rshield$w? Well go talk to$gRudy$w and
 claim your prize!
 ]]
 }
@@ -6836,7 +6834,7 @@ dialog{
   id = "julita.3.house",
   skip = "current",
   text = [[
-Hey! $g Crista's$w at the shop if you'd
+Hey! $gCrista's$w at the shop if you'd
 like to say hello! I'm so happy to
 have her back - thank you!
 ]]
@@ -6846,7 +6844,7 @@ dialog{
   id = "julita.4.house",
   skip = "current",
   text = [[
-Ever chatted with that  $g  lumberjack$w
+Ever chatted with that$glumberjack$w
 fellow who lives just north of here?
 I swear he knows everything about
 those woods and probably other places
@@ -6871,7 +6869,7 @@ dialog{
   id = "kokiri_1.0.saria",
   skip = "current",
   text = [[
-Welcome to Saria!
+Welcome to$bSaria$w!
 I live here because I love plants
 so much!
 ]]
@@ -6884,7 +6882,7 @@ dialog{
 I love our beautiful woods home!
 
 
-The rest of Hyrule is pretty also -
+The rest of$bHyrule$wis pretty also -
 have you explored it thoroughly?
 
 Most people don't know that rare flowers
@@ -6909,8 +6907,8 @@ dialog{
   skip = "current",
   text = [[
 I'm the most recent addition to the
-Council, representing the Rito people.
-My name is   $gKoshi$w, and it's a pleasure
+Council, representing the$gRito$w people.
+My name is$gKoshi$w, and it's a pleasure
 to meet you.
 ]]
 }
@@ -6931,13 +6929,13 @@ dialog{
   id = "koshi.0.office",
   skip = "current",
   text = [[
-The major Hylian cities are   $b Castle
-Town$w ,$bKakariko$w  , and $bOrdon$w  - but
+The major Hylian cities are$bCastle
+Town$w,$bKakariko$w, and$bOrdon$w- but
 $bOrdon$w is mostly Humans and not Hylians.
 There are plenty of other cities for other
 races too, so be sure to visit them all!
 We're even setting up a new city for my
-people - we call it $b Septen Heights$w.
+people - we call it$bSepten Heights$w.
 ]]
 }
 
@@ -6947,7 +6945,7 @@ dialog{
   text = [[
 Thank you for reuniting our council!
 Now back to the important work of
-leading Hyrule.
+leading$bHyrule$w.
 ]]
 }
 
@@ -6977,9 +6975,9 @@ dialog{
   text = [[
 Hello Brother!
 Yes, all good people are brother
-to us $g Gorons$w! If you don't believe
+to us$gGorons$w! If you don't believe
 me, you could always visit my people
-at our home in the northern mountains.
+at our$bhome in the northern mountains$w.
 Please, go with my blessing!
 ]]
 }
@@ -7001,7 +6999,7 @@ dialog{
   id = "larin.1.house",
   skip = "current",
   text = [[
-After the disapperance of    $g Elder
+After the disapperance of$gElder
 Zelda$w, the Council decided it would
 be best to disband for now. So I get
 to spend some quality time with my
@@ -7025,8 +7023,8 @@ dialog{
   skip = "current",
   text = [[
 Not sure where to go next? Some of my
-council Brothers remained in Hyrule
-Castle Town and may be able to assist
+council Brothers remained in$bHyrule
+Castle Town$w and may be able to assist
 you from the council office.
 ]]
 }
@@ -7077,7 +7075,7 @@ dialog{
   id = "library_shelf.10",
   skip = "current",
   text = [[
-The $g Goron people$w are often seen as
+The$gGoron people$w are often seen as
 the friendliest of all races in Hyrule.
 They generally embrace outsiders and
 have opened their city to all.
@@ -7085,7 +7083,7 @@ Unfortunately, a recent plague has wiped
 out a large portion of the Goron
 population and they are still fighting
 for their survival. Due to this, the
-once famous $b Goron Mines$w have been
+once famous$bGoron Mines$w have been
 repurposed in order to house their dead.
 ]]
 }
@@ -7094,7 +7092,7 @@ dialog{
   id = "library_shelf.11",
   skip = "current",
   text = [[
-The sewer system of Hyrule is
+The$bsewer system of Hyrule$wis
 extensive and little explored. Some
 say that you can get to anywhere in
 the country from these sewers, but
@@ -7109,7 +7107,7 @@ drain almost the entirety of Lake
 Hylia, but no one still living has
 seen this done. There is a known
 access to the underground sewers from
-the $b old Eastern Ruins$w , and multiple
+the$bold Eastern Ruins$w, and multiple
 other accesses have been rumored.
 ]]
 }
@@ -7118,7 +7116,7 @@ dialog{
   id = "library_shelf.12",
   skip = "current",
   text = [[
-The $g Zora people$w were once a friendly
+The$gZora people$w were once a friendly
 race, but rising tension in Hyrule have
 caused them to shut themselves off from
 the rest of the country. Their Domain is
@@ -7126,7 +7124,7 @@ now protected by one of their soldiers
 at all times, and few outsiders are ever
 let in. Even the $g Zora Elder, Jabun$w,
 has distanced himself from the rest of
-the council.$0 The $b Lakebed Temple$w at
+the council.$0 The$bLakebed Temple$w at
 which the Zora pray at the bottom of
 $bLake Hylia$w has been sealed off from
 all, including the Zora themselves, and
@@ -7134,7 +7132,7 @@ is rumored to be crawling with monsters.
 The Zora still do hold one token of
 esteem, which would allow a single
 outsider into their midst - the famed
-$rZora flippers$w . It's unknown what would
+$rZora flippers$w. It's unknown what would
 cause the Zora to give up this relic,
 but braving said Lakebed Lair would be
 a good bet...
@@ -7145,12 +7143,12 @@ dialog{
   id = "library_shelf.13",
   skip = "current",
   text = [[
-The $g Anouki race$w are generally a
+The$gAnouki race$w are generally a
 friendly people, but they tend to be
 isolated simply due to their
 geographic location. Few people
 wander up to the icy mountains they
-call home, and so $b Snowpeak$w is all
+call home, and so$bSnowpeak$w is all
 but desolate. There is said to be a
 large network of caverns in the area,
 though. It's likely that if they
@@ -7165,7 +7163,7 @@ dialog{
   id = "library_shelf.14",
   skip = "current",
   text = [[
-The $gRito$w people are a new transplant
+The$gRito$w people are a new transplant
 to Hyrule, but no one (including the
 Rito themselves) are sure how they got
 here. They settled in right away though,
@@ -7217,7 +7215,7 @@ dialog{
   id = "library_shelf.16",
   skip = "current",
   text = [[
-The $m Dark Tribe$w have a long and sordid
+The$mDark Tribe$w have a long and sordid
 history, which originated with the group
 known as the Interlopers.$0
 Little is known about the origins of this
@@ -7233,7 +7231,7 @@ the Interlopers were banished to the Realm
 of Twilight, a few dark sorcerers escaped
 persecution. These individuals continued
 their work in dark magic and soon became
-a powerful $m Dark Tribe$w. This Tribe learned
+a powerful$mDark Tribe$w. This Tribe learned
 from their ancestors mistakes though, and
 laid low until the time came...
 ]]
@@ -7243,7 +7241,7 @@ dialog{
   id = "library_shelf.17",
   skip = "current",
   text = [[
-The $y weapons of Light$w were created long
+The$yweapons of Light$w were created long
 ago in the fallout of the Interloper War.
 The sages and other learned men of magic
 at the time knew that powerful weapons
@@ -7263,18 +7261,18 @@ dialog{
   id = "library_shelf.18",
   skip = "current",
   text = [[
-The $m Dark Tribe$w believe that the
+The$mDark Tribe$w believe that the
 creation of Hyrule was an act of aggression
 against the primordial darkness (or chaos)
 that was already present, and they seek
 to return the world to darkness. This
 initial evil was collected into the center
 of the world, and when it burst forth, it
-became known as Demise. The $m Dark Tribe$w
+became known as $mDemise$w. The$mDark Tribe$w
 serve Demise, or his current reincarnation
 if there is one, and seek to spread evil
 and chaos across Hyrule. The magical
-properties of the Book of Mudora would
+properties of the$cBook of Mudora$w would
 have served their purposes well, if they
 hadn't been stopped by the Hero of Light.
 ]]
@@ -7284,7 +7282,7 @@ dialog{
   id = "library_shelf.2",
   skip = "current",
   text = [[
-The $bwestern Faron Woods $w  are one of
+The$bwestern Faron Woods$w are one of
 the largest forested areas in the
 land, and are rumored to have a
 complex system of underground tunnels.
@@ -7298,7 +7296,7 @@ dialog{
   id = "library_shelf.3",
   skip = "current",
   text = [[
-The $g Monkeys $w of the forest are a
+The$gMonkeys$w of the forest are a
 group well known for their mischevious
 nature. They often tease or heckle
 people who wander into their area of
@@ -7314,7 +7312,7 @@ dialog{
   id = "library_shelf.4",
   skip = "current",
   text = [[
-The $g Deku Scrubs$w are a territorial
+The$gDeku Scrubs$w are a territorial
 race of bush-like forest dwellers
 who are sometimes known as
 businesspeople. They tend to
@@ -7333,7 +7331,7 @@ dialog{
   id = "library_shelf.5",
   skip = "current",
   text = [[
-The $g Tokay$w are a recent transplant
+The$gTokay$w are a recent transplant
 to the area, arriving from an unknown
 area and settling on the beach.
 They are generally a friendly and
@@ -7350,9 +7348,9 @@ dialog{
   text = [[
 $gGerudo$w are a notorious pirate race
 who dwell in the desert. They are
-best known as the tribe of the    $g King
-of Evil, Ganondorf$w .  Since the events
-of the Imprisoning War, the Gerudo
+best known as the tribe of the$gKing
+of Evil, Ganondorf$w. Since the events
+of the Imprisoning War, the$gGerudo$w
 have been shunned from society,
 relegated to the desert, forcing them
 to steal what they need to survive.
@@ -7383,7 +7381,7 @@ dialog{
   id = "library_shelf.8",
   skip = "current",
   text = [[
-The $g Hylian people$w are the primary
+The$gHylian people$w are the primary
 residents of Hyrule. They are generally
 proficient in magic and have pointed
 ears which allow them to hear the will
@@ -7394,7 +7392,7 @@ have gathered a ruling Council of Elders
 instead. While the Royal Family still
 exists as a figurehead and for ceremonial
 reasons, they hold no real power. The
-capital city of $b Hyrule Castle Town$w  is
+capital city of$bHyrule Castle Town$w is
 a bustling political hub and home to
 some Hylians, many shops, and quite a
 few secrets.
@@ -7405,7 +7403,7 @@ dialog{
   id = "library_shelf.9",
   skip = "current",
   text = [[
-The thriving city of $b  Kakariko$wis
+The thriving city of$bKakariko$wis
 home to a large group of Hylians and
 Humans. It is seen as the cultural hub
 of Hyrule and contains an inn, a bar,
@@ -7420,7 +7418,7 @@ most reputable.
 dialog{
   id = "library_shelf.book_anouki",
   text = [[
-It is said that the Anouki people
+It is said that the$gAnouki people$w
 never lie, but since no Anouki has
 ever confirmed or denied this, we can't
 be sure. It is known that they have a
@@ -7433,7 +7431,7 @@ extremely cold regions of Hyrule.
 dialog{
   id = "library_shelf.book_deku",
   text = [[
-The Deku tribe are most sensitive than
+The$gDeku tribe$ware most sensitive than
 most races to the balance of light and
 dark. When this balance is disturbed,
 Dekus tend to be drawn to the area of
@@ -7445,7 +7443,7 @@ to themselves.
 dialog{
   id = "library_shelf.book_gerudo",
   text = [[
-The lesser known Gerudo tribe in the
+The lesser known$gGerudo tribe$win the
 northern reaches of Hyrule are quite
 a bit more civilized than their
 southern pirating kin. The Nabooru
@@ -7457,7 +7455,7 @@ off from the Sky Pirates many years ago.
 dialog{
   id = "library_shelf.book_goron",
   text = [[
-The Goron tribe run a famous open-air
+The$gGoron tribe$wrun a famous open-air
 market outside of their town of Darunia
 in the north of Hyrule. Rare artifacts
 can be purchased here, some of which can
@@ -7469,14 +7467,14 @@ are unique to this location.
 dialog{
   id = "library_shelf.book_hylian",
   text = [[
-The Hylian people are said to be closest
+The$gHylian people$ware said to be closest
 to the gods, even developing long pointed
 ears in order to hear their will better.
 While the Hylians of the south have
 developed into a democratic oligarchy
 with minimal religious concerns, the
 Hylians of the north have reverted to
-a worship of the goddess Hylia and have
+a worship of the$ygoddess Hylia$wand have
 become quite the zealots.
 ]]
 }
@@ -7484,7 +7482,7 @@ become quite the zealots.
 dialog{
   id = "library_shelf.book_kakariko",
   text = [[
-The Kakariko people are well-read and
+The$gKakariko people$ware well-read and
 cultured individuals who have set up
 a large city in the northern area of
 the Hyrule mainland. Stage plays, operas
@@ -7498,10 +7496,10 @@ world famous bomb shop.
 dialog{
   id = "library_shelf.book_kasuto",
   text = [[
-The people of Kasuto have recently
+The$gpeople of Kasuto$whave recently
 re-settled into a new town directly
 east of their old town, due to an attack
-by the Dark Tribe. The old city remains
+by the$mDark Tribe$w. The old city remains
 in ruins, but the new city is already
 starting to thrive.
 ]]
@@ -7510,10 +7508,10 @@ starting to thrive.
 dialog{
   id = "library_shelf.book_ordon",
   text = [[
-The Ordon people are an agrarian race
+The$gOrdon people$ware an agrarian race
 who reside in the south of Hyrule. They
 are famous for their goats, pumpkins
-and potions. The Ordon Village is
+and potions. The$bOrdon Village$wis
 fairly isolated, and the people don't
 often leave there.
 ]]
@@ -7522,9 +7520,9 @@ often leave there.
 dialog{
   id = "library_shelf.book_rauru",
   text = [[
-The people of Rauru are a devout
+The$gpeople of Rauru$ware a devout
 religious people who have recently
-re-discovered the Goddess Hylia and
+re-discovered the$yGoddess Hylia$wand
 the faith associated with her. The
 main architectural feature in their
 town is their newly-built sanctuary.
@@ -7534,7 +7532,7 @@ town is their newly-built sanctuary.
 dialog{
   id = "library_shelf.book_rito",
   text = [[
-The Rito tribe are a mysterious race
+The$gRito tribe$ware a mysterious race
 to the other people in Hyrule. Although
 no one knows the exact reason, seemingly
 including the members of the Rito Tribe
@@ -7546,7 +7544,7 @@ a long-standing rivalry.
 dialog{
   id = "library_shelf.book_tokay",
   text = [[
-The Tokay clan have recently settled on
+The$gTokay clan$whave recently settled on
 the western beach of Hyrule. They are
 avid traders and a hospitable to
 travelers.
@@ -7556,7 +7554,7 @@ travelers.
 dialog{
   id = "library_shelf.book_zola",
   text = [[
-The Zola gang are asserting themselves
+The$gZola gang$ware asserting themselves
 more and more in the northern reaches
 of Hyrule. Once thought to only occupy
 a small section of the northern ocean
@@ -7570,11 +7568,11 @@ with the Zora people at Ruto Town.
 dialog{
   id = "library_shelf.book_zora",
   text = [[
-The Zora tribe appear to hold up at
+The$gZora tribe$wappear to hold up at
 Zora's Domain, near Death Mountain in
 the northern reaches of the main Hylian
 continent, but in actuality most of them
-live in Ruto Town in the far northern
+live in$bRuto Town$win the far northern
 reaches of the world. Their isolationist
 attitude has led them to establish the
 dummy outpost at Zora's Domain so
@@ -7631,8 +7629,8 @@ dialog{
   id = "marryn.0.ranch",
   skip = "current",
   text = [[
-Welcome to Lon Lon Ranch!$0
-My name is Marryn and I run this ranch.
+Welcome to$bLon Lon Ranch$w!$0
+My name is$gMarryn$wand I run this ranch.
 Stick around if you want to listen to
 me sing for a while.
 ]]
@@ -7658,7 +7656,7 @@ wandering around this part of the world.
 This place is dangerous and vast!$0
 Tell you what, if you come back when you
 have two rows of hearts, I'll give you
-a $r map to this area$w, and you can explore.
+a$rmap to this area$w, and you can explore.
 Until then, how about heading back home
 before you get hurt!
 ]]
@@ -7670,7 +7668,7 @@ dialog{
   text = [[
 Wow, you have a lot of hearts! I think
 now I trust you to explore my part of
-the world. This  $r map$w should ensure you
+the world. This$rmap$w should ensure you
 don't get lost too easily.
 ]]
 }
@@ -7679,11 +7677,11 @@ dialog{
   id = "mayor.2.kasuto",
   skip = "current",
   text = [[
-You're at the edge of  $b New Kasuto Town$w
+You're at the edge of$bNew Kasuto Town$w
 here. When the library was attacked, the
 citizens got scared and almost everyone
-picked up and moved here. The Old Kasuto
-Town has become essentially a ghost
+picked up and moved here. The$bOld Kasuto
+Town$whas become essentially a ghost
 town overnight.
 ]]
 }
@@ -7704,7 +7702,7 @@ dialog{
   skip = "current",
   text = [[
 (sniff) $0(sniff)$0
-Me smell tasty meat?$0
+Me smell$rtasty meat$w?$0
 Me so hungry...
 You give tasty meat?
 Yes
@@ -7727,7 +7725,7 @@ dialog{
   text = [[
 (munch) *munch*$0 Yum!
 Moblin so happy. Moblin give you this
-can of dog food. Moblin only possession.
+can of$rdog food$w. Moblin only possession.
 ]]
 }
 
@@ -7752,7 +7750,7 @@ dialog{
   id = "monkey.1.faron_no",
   skip = "current",
   text = [[
-You don't want your paper back?
+You don't want your$cpaper$w back?
 I'll warn you, you won't get very far in
 your quest without it! I won't tell you
 anymore unless you play my game though.
@@ -7772,7 +7770,7 @@ dialog{
   skip = "current",
   text = [[
 Aww! You found me! I guess you can have
-this $cdingy paper$w  back -
+this$cdingy paper$w back -
 we won't need it where we're going!
 ]]
 }
@@ -7832,11 +7830,11 @@ dialog{
   id = "monkey1.1.grove",
   skip = "current",
   text = [[
-Hey!$0 That's a neat  $c  piece of paper$wyou
+Hey!$0 That's a neat$cpiece of paper$wyou
 have there. It looks important! I like
 important things, so I'm takin' it!$0
 ...$0And don't go trying to find me,
-$gBoy in Green$w  !
+$gBoy in Green$w!
 ]]
 }
 
@@ -7853,7 +7851,7 @@ dialog{
   id = "moriss.0.pub",
   skip = "current",
   text = [[
-Hi there! My name's  $g Moriss$w and I'm an
+Hi there! My name's$gMoriss$w and I'm an
 actor with the local troupe. I normally
 spend time over at the ampitheater, but
 I like to slip in here sometimes and
@@ -7866,8 +7864,8 @@ dialog{
   id = "moriss.0.show",
   skip = "current",
   text = [[
-Hi there! My name's   $g Moriss$w and I'm the
-co-star of this show.  $g Rowin$w over there is
+Hi there! My name's$gMoriss$w and I'm the
+co-star of this show.$gRowin$w over there is
 the real star, you should go talk to him.
 ]]
 }
@@ -7876,7 +7874,7 @@ dialog{
   id = "moriss.1.pub",
   skip = "current",
   text = [[
-Oh, so you've met my friend   $g Rowin$w over
+Oh, so you've met my friend$gRowin$w over
 there, have you?$0 He's not really so
 bad once you get to know him, he's just
 a bit of a downer sometimes.
@@ -7926,8 +7924,8 @@ dialog{
 Hello my dear. If you're looking for an
 autograph, I'm not interested. What?$0
 You don't know who I am?
-Who hasn't heard of the band Earth,
-Wind and Water?
+Who hasn't heard of the band$gEarth,
+Wind and Water$w?
 ]]
 }
 
@@ -7951,13 +7949,13 @@ dialog{
 $0$v!
 $0 . $0 . $0 .
 Yes, you've done well. Now allow me to
-explain myself. I am  $y Ordona, Spirit
-of the Light.$w$0
+explain myself. I am$yOrdona, Spirit
+of the Light$w.$0
 I've been watching over this village for
 many centuries, keeping peace and
 prosperity here in exchange for the
 loyalty these people provide. Many years
-ago, however, a darkness fell over the
+ago, however, a$mdarkness$wfell over the
 land that I was unable to prevent, and
 now, I sense a darkness even stronger
 than that. I am here to warn you,
@@ -8013,8 +8011,8 @@ your quest far sooner than we would like.
 The nearest likely source of darkness
 would be in the deep forest, where open
 trees lead into the deep, dark earth.
-The place was once called $b   Sacred Grove$w,
-in$bFaron Woods$w  . You must venture there,
+The place was once called$bSacred Grove$w,
+in$bFaron Woods$w. You must venture there,
 find the evil that lies in wait and
 vanquish it! Your village home is safe
 for now, but will remain so only as long
@@ -8029,10 +8027,10 @@ dialog{
   text = [[
 $v! $0. $0. $0.
 There's only one group in Hyrule that
-may know more about this    $m  Dark Tribe$w
+may know more about this$mDark Tribe$w
 which we've just discovered. The wisest
 of all Hyrule sit on the Council of
-Elders in $bCastle Town$w . If you venture to
+Elders in$bCastle Town$w. If you venture to
 the center of the land, you will find
 the castle and your questions may
 be answered...
@@ -8048,7 +8046,7 @@ Have you exhausted your options already?$0
 You have extensively searched the south
 and west of Hyrule, so I would recommend
 traveling north or east. Perhaps the
-friendly $g Gorons$w will have advice?
+friendly$gGorons$w will have advice?
 ]]
 }
 
@@ -8059,13 +8057,13 @@ dialog{
 $v! $0. $0. $0.
 Now that you've seen Hyrule's heart of
 heat, you should cool down in the calm
-waters of $b Lake Hylia$w. In the depths lie
+waters of$bLake Hylia$w. In the depths lie
 a great evil which must be cleansed.
 You first must find a route under the
 waters.$0 You should also know that
 directly north of here, amidst pools of
 lava, lies a portal to the underground
-realm of $b Subrosia$w.
+realm of$bSubrosia$w.
 ]]
 }
 
@@ -8076,10 +8074,10 @@ dialog{
 $v! $0. $0. $0.
 The waters have been cleansed, but now
 Hyrule's soul of cold requires your help.
-$bSnowpeak$w   and the $g Anouki people$w lie on
+$bSnowpeak$w and the$gAnouki people$w lie on
 the far end of the world, in the north-west
 edge. They may be able to lead you to
-your next prize.$0
+your next prize.
 ]]
 }
 
@@ -8089,8 +8087,8 @@ dialog{
   text = [[
 $v! $0. $0. $0.
 Did you find the rope city on your way
-to $bSnowpeak$w  ? In the northern center of
-Hyrule lies $bSepten Heights$w , a relatively
+to$bSnowpeak$w? In the northern center of
+Hyrule lies$bSepten Heights$w, a relatively
 new addition to our landscape. A great
 tower has been built by the people there,
 and it seems likely that the prize you
@@ -8104,16 +8102,16 @@ dialog{
   text = [[
 $v! $0. $0. $0.
 You have done well to put back
-together the  $c Book of Mudora$w!
+together the$cBook of Mudora$w!
 It is now enchanted and complete, so it
 is finally time for you to seek out the
-$mdark tribe$w . I'm afraid I can no longer
-see your way, as the    $m darkness$wwill
-conceal it.  I can sense a large
-concentration of  $m dark magic$w in the
+$mdark tribe$w. I'm afraid I can no longer
+see your way, as the$mdarkness$w will
+conceal it. I can sense a large
+concentration of$mdark magic$w in the
 eastern woods - what was once referred
-to as the $r Lost Woods$w and most recently
-as the Forest of Light.
+to as the$bLost Woods$w and most recently
+as the$bForest of Light$w.
 ]]
 }
 
@@ -8123,14 +8121,14 @@ dialog{
   text = [[
 $v! $0. $0. $0.
 You have done well to put back
-together the  $c Book of Mudora$w!
+together the$cBook of Mudora$w!
 It is now enchanted and complete, so it
 is finally time for you to seek out the
 $mdark tribe$w . I'm afraid I can no longer
-see your way, as the    $m darkness$wwill
+see your way, as the$mdarkness$w will
 conceal it.  I can sense a bit of
 $mdark magic$w remaining in the ruins
-east of Hyrule Castle Town. Seek out
+east of$bHyrule Castle Town$w. Seek out
 this remaining evil first, and then
 proceed to the dark woods that are
 further east still.
@@ -8144,13 +8142,13 @@ dialog{
 $v! $0. $0. $0.
 You have done well to defeat the darkness
 that overtook this place. With the power
-of the $m Tribe$w now diminised, my   $y  light$w
+of the$mTribe$w now diminised, my$ylight$w
 was able to break through!
 I must tell you of a powerful artifact
-that we can use to banish the    $m  Dark Tribe$w
+that we can use to banish the$mDark Tribe$w
 once again. The Mirror of Darkness can be
 called forth by using the power of the
-complete $c Book of Mudora$w.
+complete$cBook of Mudora$w.
 ]]
 }
 
@@ -8166,11 +8164,11 @@ Generations ago, the Mirror of Twilight
 was destroyed by the Twilight Princess
 after defeating the Usurper and Demon
 Kings, but few knew of the Mirror of
-Darkness's existance. The Dark Tribe
+Darkness's existance. The$mDark Tribe$w
 discovered this relic and used it to return
 to the world of light. As you know, they
 weren't able to get their hands on the
-complete $c Book of Mudora$w as they'd planned,
+complete$cBook of Mudora$w as they'd planned,
 but they were still able to throw the land
 into chaos. Now that they're defeated,
 the Dark Mirror can be used to banish them
@@ -8183,7 +8181,7 @@ dialog{
   id = "ordona.8.village",
   text = [[
 $v! $0. $0. $0.
-I sense that the darkness has almost
+I sense that the$mdarkness$whas almost
 fully lifted. It would appear that
 your job has come to an end, hero.
 It has been my pleasure to assist you
@@ -8201,10 +8199,10 @@ dialog{
   id = "ordona.8.zelda",
   skip = "current",
   text = [[
-Indeed, with the Dark Tribe entirely gone,
+Indeed, with the$mDark Tribe$wentirely gone,
 Zelda has returned to where she was taken
 -$bHyrule Castle$w .
-With the $c Book of Mudora$w returned to
+With the$cBook of Mudora$w returned to
 its former state, the land of Hyrule
 should soon return to its former glory as
 well. Even so, continuing to explore the
@@ -8239,7 +8237,7 @@ dialog{
   text = [[
 Hey $v,
 Now that I'm dead, maybe we should
-go check out that big $b mausoleum$w
+go check out that big$bmausoleum$w
 thing they'd never let me in before!
 ]]
 }
@@ -8262,7 +8260,7 @@ dialog{
   id = "pim.0.house",
   skip = "current",
   text = [[
-Hi, my name is $g  Pim$w.
+Hi, my name is$gPim$w.
 I'm sure you've seen the big pumpkin
 patch by your house. Well, that's mine!
 I grow pumpkins for most of the town
@@ -8287,7 +8285,7 @@ dialog{
   text = [[
 Did you know that eating pumpkins
 or apples can perk you right up?
-You see, that   $bblue bar$wup there is
+You see, that$bblue bar$w up there is
 your stamina - or the amount of energy
 you have to do things. Always keep
 an apple or pumpkin on hand, and
@@ -8306,7 +8304,7 @@ all of the way up and may even increase
 it if you've been out adventuring for
 a long time and eating a lot on the way!
 Be careful though, sleeping too much
-can actually decrease your    $bstamina$w-
+can actually decrease your$bstamina$w-
 you don't want to be lazy!
 ]]
 }
@@ -8341,11 +8339,11 @@ dialog{
   skip = "current",
   text = [[
 Hey there! You look like you could use
-one of my prize-winning Pumpkins!
+one of my prize-winning$rPumpkins$w!
 Don't forget - if you ever get tired, all
 you have to do is eat one of these.
 What do you say, how about giving me
-100 rupees for a juicy pumpkin?
+100 rupees for a$rjuicy pumpkin$w?
 Buy?
 Sure
 Nope
@@ -8367,13 +8365,13 @@ dialog{
   text = [[
 Yeah, these are pretty big woods!
 South of that ridge and then east is
-the $bBlacksmith's place$w . Further east
-will lead you back to  $b Ordon Village$w.$0
-South of here is the  $bSacred Grove$w,
+the$bBlacksmith's place$w. Further east
+will lead you back to$bOrdon Village$w.$0
+South of here is the$bSacred Grove$w,
 with access to an underground area beneath
 a tree to the west. The beach and desert
 are north of the Grove.$0 You can't get
-to $bHyrule Field$w directly from here
+to$bHyrule Field$w directly from here
 because of the divide just to the north.$0
 Be careful if you go directly west too -
 I think I saw a scary monster over there!
@@ -8387,22 +8385,22 @@ dialog{
 This whole field is tricky to navigate
 because it's so big! The trick is to
 watch your surroundings carefully...$0
-South of here is the $b Northern Faron
-Woods$w and then $b Ordon Village$w.
+South of here is the$bNorthern Faron
+Woods$w and then$bOrdon Village$w.
 The pointy-looking trees only grow in
 the south, so you'll know you've reached
-$b Hyrule Field$w, which is north of
+$bHyrule Field$w, which is north of
 here, once the trees change shape to the
 funny rounded ones.$0
-If you want to get to $b Lake Hylia$w
+If you want to get to$bLake Hylia$w
 in the west, just follow the grey statues
 with the faces on them. If you'd prefer
-the $b Ruins in the east$w, follow the
+the$bRuins in the east$w, follow the
 brown statues with the faces on them.$0
 Why are there so many face statues?$0
-Finally, the great $b Hyrule Castle Town$w
-is north of $b Hyrule Field$w, and
-$b Kakariko City$w is north past that.$0
+Finally, the great$bHyrule Castle Town$w
+is north of$bHyrule Field$w, and
+$bKakariko City$w is north past that.$0
 Got it?
 ]]
 }
@@ -8411,21 +8409,21 @@ dialog{
   id = "pim.directions.40",
   skip = "current",
   text = [[
-Good, you found your way to    $bCastle
+Good, you found your way to$bCastle
 Town$w! This is almost in the center of
-Hyrule. $b Kakariko$w, $bDeath Mountain$w
-and $bSnowpeak$w are to the north.
-$b Lon Lon Ranch$w is directly to the
-west, with $b Lake Hylia$w beyond that and
+Hyrule. $bKakariko$w, $bDeath Mountain$w
+and$bSnowpeak$w are to the north.
+$bLon Lon Ranch$w is directly to the
+west, with$bLake Hylia$w beyond that and
 the desert on the other side.$0
-The now abandoned  $b Hidden Village$w is
+The now abandoned$bHidden Village$w is
 directly to the east, through the trees.
-Then is $b Zora's Domain$w and the rest
-of $bDeath Mountain$w including $bGoron
+Then is$bZora's Domain$w and the rest
+of$bDeath Mountain$w including $bGoron
 City.$w$0 Oh! I almost forgot the coolest
 thing! You know about warp points?$0
 Well, somewhere in town is an instrument
-known as the  $r Ocarina of Wind$w which
+known as the$rOcarina of Wind$w which
 will allow you to instantly transport to
 different places. In fact, the structure
 with the cardinal directions up there
@@ -8440,7 +8438,7 @@ dialog{
   text = [[
 The beach looks pretty empty without
 those cool lizard people around -
-"Tokay" I think is what they're called?
+$g"Tokay"$w I think is what they're called?
 And those crabs are sure mean! Anyway,
 you're at the end of the beach and the
 desert is just ahead. At the far north
@@ -8448,11 +8446,11 @@ end is a really old pyramid thing.
 I've seen a few Gerudo tents on the
 west end of the desert, and if you go
 far enough east you'll hit the waters
-of $b Lake Hylia$w. If you could swim, you
+of$bLake Hylia$w. If you could swim, you
 could probably get there from the beach
 too.$0 If you cross the bridge at the
 end of the desert you'll end up at the
-$b City of Kakariko$w. I'd recommend chatting
+$bCity of Kakariko$w. I'd recommend chatting
 with the guy in the house near there too.
 ]]
 }
@@ -8629,10 +8627,10 @@ dialog{
   next = "priest.0.explain_2",
   skip = "current",
   text = [[
-Allow me to explain. Hylia was the
+Allow me to explain.$yHylia$wwas the
 white goddess who was left with the
-Great Power by the Golden Goddesses.
-When the original demon attacked,
+$oGreat Power$wby the$yGolden Goddesses$w.
+When the$moriginal demon$wattacked,
 she was forced to give up her divinity
 in order to fight him, and was killed
 in the process.
@@ -8645,7 +8643,7 @@ dialog{
   text = [[
 Why do we still worship her after all
 this time? Well, there was a long
-period where Her Grace was forgotten.
+period where$yHer Grace$wwas forgotten.
 But recently, some ancient writings
 and a small statue were unearthed near
 here. Those who discovered these
@@ -8658,9 +8656,9 @@ dialog{
   id = "priest.0.sanctuary",
   skip = "current",
   text = [[
-Welcome, traveler, to the Sanctuary
-of Hylia.$0 What?$0 You don't know of
-the Goddess Hylia?
+Welcome, traveler, to the$bSanctuary
+of Hylia$w.$0 What?$0 You don't know of
+the$yGoddess Hylia$w?
 ]]
 }
 
@@ -8669,8 +8667,8 @@ dialog{
   skip = "none",
   text = [[
 Halt! Who comes there?$0
-Wait.$0 I see the $o distinguishing mark
-you bear $w.$0 You will be permitted to
+Wait.$0 I see the$odistinguishing mark
+you bear$w.$0 You will be permitted to
 step foot on this hallowed ground. But
 be warned, leave anything amiss and you
 will be severely punished!
@@ -8700,7 +8698,7 @@ dialog{
   id = "quint.1.ordon",
   skip = "current",
   text = [[
-When the $b blue icon$w appears, it
+When the$bblue icon$w appears, it
 shows what you can do by pressing the
 $bAction Key$w! (whatever that is)
 Depending on what you're looking at,
@@ -8748,7 +8746,7 @@ dialog{
 Don't know if you knew, but a lot of the
 stuff you have can be made more powerful.
 Rudy is always talking about how he can
-forge new swords from metallic ore, kinda
+forge new swords from$rmetallic ore$w, kinda
 like the stuff our shrouded visitors
 mentioned. I've also heard stories about
 magical flying ladies who have magic to
@@ -8762,8 +8760,8 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-Is that the world famous  $r  Culinary
-Arts of Hyrule$w  in your things?
+Is that the world famous$rCulinary
+Arts of Hyrule$w in your things?
 I've been looking for that book since I
 got here! It's very difficult to find
 good cookbooks around here for some
@@ -8804,7 +8802,7 @@ I can't wait to get started!$0
 Unfortunately I don't have anything to
 offer you in return...$0 Let me think...$0
 All I have to give you is one of my own
-feathers. It sounds weird, but  $r  Rito
+feathers. It sounds weird, but$rRito
 feathers$w actually have magical properties,
 and should let non-Ritos like you float
 in the air for short periods of time.
@@ -8817,7 +8815,7 @@ dialog{
   skip = "current",
   text = [[
 Hello sir, and welcome to the newly
-established $b Septen Heights$w! There's not
+established$bSepten Heights$w! There's not
 a lot here yet, but we're growing fast!
 ]]
 }
@@ -8840,7 +8838,7 @@ dialog{
   id = "rito_2.0.septen",
   skip = "current",
   text = [[
-We $g Rito$w are a mysterious people - even
+We$gRito$w are a mysterious people - even
 we don't fully know how we got here!
 Hyrule is a magical place, let's just
 leave it at that.
@@ -8857,7 +8855,7 @@ across the bridge here? It's said that
 she uses her crystal ball to see the
 future, but that even she can't see the
 location of the thing she wants the most-
-a $rMoon's Tear$w .
+a$rMoon's Tear$w.
 ]]
 }
 
@@ -8865,7 +8863,7 @@ dialog{
   id = "rito_3.0.septen",
   skip = "current",
   text = [[
-The $b Tower of Winds$w is being constructed
+The$bTower of Winds$w is being constructed
 just west of here. It will be a temple
 for our people to pray to the gods of
 the wind. If you could get rid of the
@@ -8879,9 +8877,9 @@ dialog{
   id = "rito_3.1.septen",
   skip = "current",
   text = [[
-Our wonderful $b Tower of Winds$w is finally
+Our wonderful$bTower of Winds$w is finally
 complete! But it's just our luck, we saw
-a $m large bird$w fly up there and take roost
+a$mlarge bird$w fly up there and take roost
 at the top of the Tower! We can't
 possibly go pray there now, it's much
 too dangerous.$0
@@ -8897,8 +8895,8 @@ There's another entire continent across
 the bridge that fell down! Can you
 believe it? You won't be able to get
 there right now, but if you could you'd
-be able to visit  $bRauru, Darunia, Nabooru,
-Ruto,$w or any of the other towns there!
+be able to visit$bRauru$w,$bDarunia$w,$bNabooru$w,
+$bRuto,$w or any of the other towns there!
 ]]
 }
 
@@ -8909,7 +8907,7 @@ dialog{
 How'd you get the bridge back up?
 Doesn't matter...$0 My favorite place to
 visit in the Northern Province is
-$bThree Eye Rock$w .  It's a very relaxing
+$bThree Eye Rock$w. It's a very relaxing
 beach on the southern tip of the
 continent. In fact, the Ocarina patch in
 our own little town will get you there!
@@ -8920,7 +8918,7 @@ dialog{
   id = "rito_5.0.septen",
   skip = "current",
   text = [[
-If you're here to see the   $b Tower of
+If you're here to see the$bTower of
 Winds$w, you'll have to come back later -
 it's still under construction.$0
 In the mean time, have you seen the
@@ -8935,7 +8933,7 @@ dialog{
   id = "rito_5.1.septen",
   skip = "current",
   text = [[
-Doesn't our Tower of Winds just
+Doesn't our$bTower of Winds$wjust
 look amazing?
 ]]
 }
@@ -9009,7 +9007,7 @@ dialog{
   id = "river_man.0.crystal_ball",
   skip = "current",
   text = [[
-If you're visiting the  $g witch in
+If you're visiting the$gwitch in
 Saria$w, cross this bridge here. But
 don't stay too long - only townsfolk
 are allowed past!
@@ -9020,7 +9018,7 @@ dialog{
   id = "river_man.1.bridge",
   skip = "current",
   text = [[
-That note from  $g Bagu$w says I need
+That note from$gBagu$w says I need
 to let you in. Enjoy your time
 in Saria.
 ]]
@@ -9060,7 +9058,7 @@ dialog{
   skip = "current",
   text = [[
 Hey kid, you're all right.
-What's your name? $v?
+What's your name?$0 $v? $0
 Well tell you what, $v.
 You come back here any time and
 Moriss or myself will help you out
@@ -9082,7 +9080,7 @@ dialog{
   skip = "current",
   text = [[
 Hello there! I don't believe we've met.
-My name is $g Rudy$W, I'm the village
+My name is$gRudy$w, I'm the village
 blacksmith. If you need anything fixed up,
 be sure to find me!
 ]]
@@ -9102,7 +9100,7 @@ dialog{
   id = "rudy.0.festival_reward",
   skip = "current",
   text = [[
-So you won  $g Tristan's$wrace, huh?
+So you won$gTristan's$wrace, huh?
 Well, then I suppose this is yours.
 ]]
 }
@@ -9209,8 +9207,8 @@ dialog{
   skip = "current",
   text = [[
 Hmm... never been too good with
-small talk. $0
-Seen any good  $r metal ore$wrecently?
+small talk.$0
+Seen any good$rmetal ore$wrecently?
 ]]
 }
 
@@ -9223,7 +9221,7 @@ under all of Hyrule. Seems too good
 to be true to me!$0
 Although...$0 if a place like that
 did exist, it would be rife with ore!
-Maybe even the rumored  $r Master Ore $w ...
+Maybe even the rumored$rMaster Ore$w...
 ]]
 }
 
@@ -9333,9 +9331,9 @@ dialog{
   id = "sanday.0.house",
   skip = "current",
   text = [[
-Hello, stranger. My name is Sanday
+Hello, stranger. My name is$gSanday$w
 and I'm the only remaining member
-of my people, the Zuna Tribe.
+of my people, the$gZuna Tribe$w.
 It may seem like a lonely life, but
 I suppose I'm used to it.
 ]]
@@ -9369,7 +9367,7 @@ at this game!$0
 I will give you a little hint- your map
 will show which rooms are lit and which
 ones aren't.
-Oh, and your lantern is no good here.
+Oh, and your$rlantern$wis no good here.
 Have fun!
 ]]
 }
@@ -9612,7 +9610,7 @@ dialog{
   skip = "current",
   text = [[
 Don't have enough cash, eh?
-I heard there's a man in  $b Castle
+I heard there's a man in$bCastle
 Town$w who's running a game where the
 grand prize is a bigger wallet!
 ]]
@@ -10220,7 +10218,7 @@ prized possession was stolen from me!$0
 I ran after him for a while, but he
 ran into the graveyard and I was too
 afraid.$0 Will you please go after him
-and get my  $r bottle$w back?
+and get my$rbottle$w back?
 ]]
 }
 
@@ -10241,7 +10239,7 @@ dialog{
   text = [[
 If you've ever wanted to lift those
 REALLY heavy dark stones, be sure to
-visit the Great Fairy in our land.
+visit the$gGreat Fairy$win our land.
 ]]
 }
 
@@ -10261,7 +10259,7 @@ dialog{
   id = "subrosian_blue.0.subrosia",
   skip = "current",
   text = [[
-Welcome to $b Subrosia$w! You might call
+Welcome to$bSubrosia$w! You might call
 this the "underworld" of your world -
 what do you call it?$0
 Hyrule?$0 What a silly name.
@@ -10272,7 +10270,7 @@ dialog{
   id = "subrosian_orange.0.subrosia",
   skip = "current",
   text = [[
-Welcome to $b Subrosia$w! This lovely
+Welcome to$bSubrosia$w! This lovely
 place has all the lava you can soak
 in and ore galore! Do a little
 exploring, maybe you'll come across
@@ -10289,7 +10287,7 @@ You're wondering why these trees are
 in such a uniform shape? This is a
 sacred place, concentrated with great
 magic if you know how to harness it.
-You might call me a  $g Shaman$w, and
+You might call me a$gShaman$w, and
 that's why I'm here.
 ]]
 }
@@ -10363,8 +10361,8 @@ dialog{
   skip = "current",
   text = [[
 You won't do so well in those clothes
-though... If you get some clothes
-the color of this lava, you won't be
+though... If you get some$rclothes
+the color of this lava$w, you won't be
 bothered by the heat at all!
 ]]
 }
@@ -10373,7 +10371,7 @@ dialog{
   id = "tern.0.festival",
   skip = "current",
   text = [[
-This here's the $b Ordon Ranch$w. If
+This here's the$bOrdon Ranch$w. If
 you come back in a bit, I might
 have some milkin' contests goin'!
 ]]
@@ -10412,7 +10410,7 @@ dialog{
   id = "thief.0.bottle",
   skip = "current",
   text = [[
-You want this bottle back? Well
+You want this$rbottle$w back? Well
 you're going to have to take it from
 me, and I'm pretty good at hiding!
 ]]
@@ -10450,7 +10448,7 @@ dialog{
   id = "tokay.0.faron",
   skip = "current",
   text = [[
-Hey $gbush folk$w! You have an entire
+Hey$gbush folk$w! You have an entire
 forest here and and you're saying you
 can't even share part of it? We were
 forced out of our homes! All we're
@@ -10474,7 +10472,7 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-You'd like one of these  $r shiny stones$w
+You'd like one of these$rshiny stones$w
 I found? Okay, I'll trade you for
 some rupees.
 Trade?
@@ -10488,7 +10486,7 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-You'd like one of these  $r neat feathers$w
+You'd like one of these$rneat feathers$w
 I found? Okay, I'll trade you for
 some rupees.
 Trade?
@@ -10502,7 +10500,7 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-You'd like one of these  $r cool things$w
+You'd like one of these$rcool things$w
 I found? Okay, I'll trade you for 
 some rupees.
 Trade?
@@ -10516,7 +10514,7 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-You'd like one of these  $rshiny crystals$w
+You'd like one of these$rshiny crystals$w
 I found? Okay, I'll trade you for
 some rupees.
 Trade?
@@ -10530,7 +10528,7 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-You'd like one of these  $r pretty rocks$w
+You'd like one of these$rpretty rocks$w
 I found? Okay, I'll trade you for
 some rupees.
 Trade?
@@ -10564,7 +10562,7 @@ dialog{
 I tell ya, what we'd really like is to
 have our beach back, but those women
 with the spears are much scarier than
-these$g  OVERGROWN SHRUBS$w $0,    so we
+these$gOVERGROWN SHRUBS$0,$w so we
 have no choice but to stay here.
 ]]
 }
@@ -10583,7 +10581,7 @@ dialog{
   id = "tokay_2.0.beach",
   skip = "current",
   text = [[
-We $g Tokay$w like shiny things and
+We$gTokay$w like shiny things and
 trading. If you visit some of my friends
 in their huts, you'll be able to trade
 some of your shiny rupees for something
@@ -10595,7 +10593,7 @@ dialog{
   id = "tokay_4.0.beach",
   skip = "current",
   text = [[
-$gTokage Gin$w ? No, that's not me- he's
+$gTokage Gin$w? No, that's not me- he's
 probably still at the castle somewhere.
 I see why you'd be confused, but we
 Tokay really only come in a few colors.
@@ -10635,7 +10633,7 @@ dialog{
   skip = "current",
   text = [[
 How do you expect to light any
-torches without a  $r lantern$w?
+torches without a$rlantern$w?
 ]]
 }
 
@@ -10644,8 +10642,8 @@ dialog{
   skip = "current",
   text = [[
 What? You're wondering how to get
-your hands on a   $r lantern$w? Maybe
-check with $g Ulo$w, he's the mayor and
+your hands on a$rlantern$w? Maybe
+check with$gUlo$w, he's the mayor and
 knows everything about everything!
 ]]
 }
@@ -10698,7 +10696,7 @@ to make it to the finish line of the
 course after lighting each torch. If you
 make it in time, you'll win a prize!
 Remember, this is not just a race...
-it's a tribute to $y Ordona,$w signifying
+it's a tribute to$yOrdona$w, signifying
 our appreciation for all the light she
 bestows upon us and our lives. Now, if
 there are no questions... step up to
@@ -10710,8 +10708,8 @@ dialog{
   id = "tristan.0.festival_shield",
   skip = "current",
   text = [[
-You better take care of that  $r   shield$w,
-too. It's a fine creation, $g  Rudy$w
+You better take care of that$rshield$w,
+too. It's a fine creation,$gRudy$w
 really outdid himself with the prizes
 for my little game here. I have no
 doubt you'll know what to do with it,
@@ -10739,7 +10737,7 @@ dialog{
   skip = "current",
   text = [[
 Congrats $v!
-Why don't you go tell  $g  Rudy$wthat you
+Why don't you go tell$gRudy$wthat you
 won the race? He has something special
 just for the winner!
 ]]
@@ -10749,9 +10747,9 @@ dialog{
   id = "tristan.1.faron",
   skip = "current",
   text = [[
-The $b Faron Woods$w can be a scary place,
-but with your $r sword, shield and
-lantern$w you should be more than
+The$bFaron Woods$w can be a scary place,
+but with your$rsword$w, $rshield$w and
+$rlantern$w you should be more than
 prepared. I believe in you!
 ]]
 }
@@ -10762,7 +10760,7 @@ dialog{
   text = [[
 What're you doing back here? Aren't
 you supposed to be out adventurin'?
-What about the $b desert$w?
+What about the$bdesert$w?
 ]]
 }
 
@@ -10771,8 +10769,8 @@ dialog{
   skip = "current",
   text = [[
 Gotten a little confused, have you?
-$bHyrule Castle Town$w   is the center of
-Hyrule. $0I'll bet that if you make
+$bHyrule Castle Town$w is the center of
+Hyrule.$0 I'll bet that if you make
 it there, someone would be able to
 help you out. If all else fails,
 ask our mayor!
@@ -10793,7 +10791,7 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-Welcome to the Inn at Kakariko!
+Welcome to the$bInn at Kakariko$w!
 We offer the creature comforts while
 away from home. It's only 20 rupees
 to stay. Like to stay?
@@ -10810,7 +10808,7 @@ $v! How are you enjoying the festival?
 I love this time of year so much that I
 just had to take a break from the Council
 to come spend time with my villagers!$0
-So $v, did you know this is a   $y  festival
+So $v, did you know this is a$yfestival
 of Light?
 ]]
 }
@@ -10830,7 +10828,7 @@ dialog{
   id = "ulo.1.festival_lamp",
   skip = "current",
   text = [[
-But wait, you don't have a   $r lantern$w!
+But wait, you don't have a$rlantern$w!
 You can't truly enjoy the festival
 without one. Mine is in my house among
 my chests, I want you to  go get it.
@@ -10850,12 +10848,12 @@ brings you to the castle, I wonder?$0
 dialog{
   id = "ulo.2.council_book",
   text = [[
-What's that?$0  $c Book of Mudora$w?$0
+What's that?$0$cBook of Mudora$w?$0
 I've heard legends which speak of the
 book, but I know none of the details.
 The book was said to be written by a man
 very close to an ancient Royal Family, so
-maybe you should ask   $g Princess Zelda$w
+maybe you should ask$gPrincess Zelda$w
 what she knows.
 ]]
 }
@@ -10864,7 +10862,7 @@ dialog{
   id = "ulo.2.council_zelda",
   skip = "current",
   text = [[
-What has happened to  $g   Elder Zelda$w?
+What has happened to$gElder Zelda$w?
 $v, you must track her down and
 return her to the council!
 ]]
@@ -10874,11 +10872,11 @@ dialog{
   id = "ulo.3.ordon",
   skip = "current",
   text = [[
-Since our beloved $g Zelda$w is gone,
+Since our beloved$gZelda$w is gone,
 the council has temporarily disbanded.
 We'll continue any necessary work from
 our respective villages or the Council
-office in $b Castle Town.$w$0
+office in$bCastle Town.$w$0
 I must say, it's good to be home!
 ]]
 }
@@ -10888,7 +10886,7 @@ dialog{
   skip = "current",
   text = [[
 Don't know where to go next? You should
-chat with $g Deacon, the lumberjack$w
+chat with$gDeacon, the lumberjack$w
 who lives just north of town. He knows
 these parts like the back of his hand,
 and if anything's amiss, he'd know!
@@ -10907,7 +10905,7 @@ In fact, it can even be used to
 manipulate the flow of water in certain
 places! I seem to recall there being
 a certain switch which can even change
-the water level of  $b Lake Hylia$w, but I'm
+the water level of$bLake Hylia$w, but I'm
 sure it hasn't been used in a long time.
 ]]
 }
@@ -10919,7 +10917,7 @@ dialog{
 Great work saving Zelda! I knew you
 would be the one to defeat the Darkness.
 We Ordons have always had a way with
-the $y Light!$w
+the$yLight!$w
 ]]
 }
 
@@ -11205,12 +11203,12 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-Hold on here. Is that a  $r Moon's Tear$w
+Hold on here. Is that a$rMoon's Tear$w
 you have in your possession?
 Please give it to me!$0
 Please?$0
 I will give you my most prized
-possession, my   $r Crystal Ball$w.
+possession, my$rCrystal Ball$w.
 Give it to her?
 Yes
 No
@@ -11233,7 +11231,7 @@ dialog{
   text = [[
 Thank you so much for your kindness!
 You have made me very happy! As
-promised, here's my beloved    $r  Crystal
+promised, here's my beloved$rCrystal
 Ball$w. Please find a good home for it.
 ]]
 }
@@ -11242,7 +11240,7 @@ dialog{
   id = "witch.1.house",
   skip = "current",
   text = [[
-Now that I have my   $r  Moon Tear $w
+Now that I have my$rMoon Tear$w
 maybe I'll look to the stars for more
 power.
 People will remember the name Astra
@@ -11267,7 +11265,7 @@ dialog{
   text = [[
 You say you don't know anyone named
 $gIsan$w? You should travel to the
-$bAncient Library$w  via the old sewers
+$bAncient Library$w via the old sewers
 east of here and speak with him -
 he's the wisest man in all of Hyrule
 and can help you in your quest.
@@ -11281,11 +11279,11 @@ dialog{
 You'll need something to lift the stone
 that's fallen in front of the entrance
 though. I've heard of a number of
-magical artifacts in a large  $b pyramid$w
+magical artifacts in a large$bpyramid$w
 in the desert - maybe something there
 can help you. Get there through
-$bFaron Woods$w and the  $b Beach$w or
-via $b Kakariko City$w to the north.
+$bFaron Woods$w and the$bBeach$w or
+via$bKakariko City$w to the north.
 ]]
 }
 
@@ -11294,7 +11292,7 @@ dialog{
   skip = "current",
   text = [[
 I will never assist you in your dark
-quest! Leave this place,  $m enchantress$w!
+quest! Leave this place, $menchantress$w!
 ]]
 }
 
@@ -11304,23 +11302,23 @@ dialog{
   text = [[
 He also told me about your quest.$0
 To be honest I was unaware of the
-theft of the  $c Book$w until  $g Isan$w
+theft of the$cBook$w until$gIsan$w
 informed me. You see, given my
 family's history with that book,
 I should have sensed that something
-was amiss. I expect that  $m powerful
+was amiss. I expect that$mpowerful
 magic$w is behind all of this.$0
-What?$0 You want to know how the  $c  Book$w
+What?$0 You want to know how the$cBook$w
 is connected to my family? Why, we wrote
-it many, many generations ago! The  $c Book$w
+it many, many generations ago! The$cBook$w
 was originally tasked as a living
 history of the land, and was enchanted
 in order to...$0 Wait$0.$0.$0.
 I can feel a powerful force headed this
-way... An $m evil power$w I believe will be
+way... An$mevil power$w I believe will be
 here momentarily.$0 I also believe that
 if they find you here with the pieces
-of that $c Book$wyou possess, it is unlikely
+of that$cBook$wyou possess, it is unlikely
 that you'll escape alive. Get away from
 the castle as fast as you can!
 ]]
@@ -11331,7 +11329,7 @@ dialog{
   text = [[
 $v, I can't thank you enough for saving
 me from those vile people! Mark my words,
-as long as I live, the  $m Dark Tribe will
+as long as I live, the$mDark Tribe will
 never threaten Hyrule again.
 ]]
 }
@@ -11340,12 +11338,12 @@ dialog{
   id = "zirna.0.council",
   skip = "current",
   text = [[
-$gPrincess Zelda$w  !$0 If it isn't the leader
+$gPrincess Zelda$w!$0 If it isn't the leader
 of both the old Royal Family and the
 Council of Elders!$0
 The woman who has all the answers...$0
 As you likely know, I'm here for a
-particular $c tome$w. A very important
+particular$ctome$w. A very important
 $cBook$w, of which we believe you know
 where to find the pieces.
 ]]
@@ -11357,10 +11355,10 @@ dialog{
   text = [[
 Don't try to be brave, young
 Princess... If you don't tell us the
-location of the   $cBook$w, then we'll just
+location of the$cBook$w, then we'll just
 have to obtain the information we
 require from your encyclopedic mind...
-Come Princess, off to the   $m  Sanctum$w
+Come Princess, off to the$mSanctum$w
 with you!
 ]]
 }
@@ -11369,7 +11367,7 @@ dialog{
   id = "zora.0.domain_1",
   skip = "current",
   text = [[
-This is $b Zora's Domain$w. Normally I
+This is$bZora's Domain$w. Normally I
 would say that a non-Zora is not
 welcome here, but clearly you've been
 allowed to use our flippers. I guess
@@ -11417,7 +11415,7 @@ dialog{
   id = "zora.0.lakebed",
   skip = "current",
   text = [[
-This is the $b Lakebed Temple$w, of the
+This is the$bLakebed Temple$w, of the
 $g Zora$w people. Humans don't belong here.
 What's that you say about clearing
 it of evil?
@@ -11431,7 +11429,7 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-Is that a rare $r Goron vase$w?$0
+Is that a rare$rGoron vase$w?$0
 Non-Gorons are never allowed to own
 those, but I've wanted one for so
 long! Will you please give it to me?
@@ -11458,7 +11456,7 @@ this proudly in my house! Where are
 our houses, you ask? Well that's none
 of your concern.
 If you stop thinking about it, I'll
-give you one of my  $r  scales$w...
+give you one of my$rscales$w...
 ]]
 }
 
@@ -11468,7 +11466,7 @@ dialog{
   text = [[
 You won't do so well with that tunic
 and all this swimming though. If you get
-a tunic as blue as the water, you'll have
+a$rtunic as blue as the water$w, you'll have
 no problem with getting tired while
 swimming!
 ]]
@@ -11539,7 +11537,7 @@ We just want to be left alone to live
 as we choose. If more people would
 understand that, we wouldn't have
 such a bad reputation! At least the
-Zola who live way too close to our
+$gZola$w who live way too close to our
 home get it, or we'd have a problem!
 ]]
 }
@@ -11580,7 +11578,7 @@ dialog{
   id = "zora_gatekeeper.1.domain",
   skip = "current",
   text = [[
-We $gZora$w are proud people and will
+We$gZora$w are proud people and will
 not allow our land to be encroached
 upon. You need to leave.
 ]]
@@ -11590,7 +11588,7 @@ dialog{
   id = "zora_gatekeeper.2.domain",
   skip = "current",
   text = [[
-Without our most $r  sacred treasure$w,
+Without our most$rsacred treasure$w,
 no one will be able to enter our
 Domain anyway. And we intend to
 keep it that way.
@@ -11601,9 +11599,9 @@ dialog{
   id = "zora_gatekeeper.3.domain",
   skip = "current",
   text = [[
-What is our $r sacred treasure$w and
+What is our$rsacred treasure$w and
 where can you find it?$0
-Why in $g Jabun's$w name would I tell you
+Why in$gJabun's$w name would I tell you
 that if I don't want anyone to come
 in here?
 ]]
@@ -11622,7 +11620,7 @@ dialog{
   id = "zora_gatekeeper.5.domain",
   skip = "current",
   text = [[
-You've spoken with  $g  Juba$w?$0
+You've spoken with$gJuba$w?$0
 I'm not sure what difference that
 makes.$0 He says to let you through?!
 That's crazy! That's uncalled for!$0
@@ -11635,8 +11633,8 @@ dialog{
   id = "zora_guard.0.great_hall",
   skip = "current",
   text = [[
-Welcome to the Great Hall of the Zora
-people. Currently you are a guest, but
+Welcome to the$bGreat Hall of the Zora
+people$w. Currently you are a guest, but
 touch anything and we'll kick you out.
 ]]
 }
@@ -11649,7 +11647,7 @@ Hero! How did you travel all this way
 without the assitance of our great
 waterways? For your bravery, I shall
 reward you with the Zora's greatest
-treasure - our flippers.
+treasure - our$rflippers$w.
 ]]
 }
 
@@ -11657,8 +11655,8 @@ dialog{
   id = "zora_king.0.great_hall",
   skip = "current",
   text = [[
-I am the King of the Zora people,
-Ralis II, and this is my chamber.
+I am the$gKing of the Zora people,
+Ralis II$w, and this is my chamber.
 What brings you to our honored home?
 ]]
 }
