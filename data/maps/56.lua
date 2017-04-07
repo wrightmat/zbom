@@ -18,10 +18,10 @@ end
 
 function map:on_started(destination)
   if game:get_time_of_day() == "night" then
-    npc_rito_3:remove()
+    npc_quinn:remove()
   else
-    random_walk(npc_rito_1)
-    random_walk(npc_rito_3)
+    random_walk(npc_rhett)
+    random_walk(npc_quinn)
   end
   if game:is_dungeon_finished(7) then
     bridge_1:set_enabled(true)
@@ -29,7 +29,7 @@ function map:on_started(destination)
     bridge_3:set_enabled(true)
     bridge_4:set_enabled(true)
   elseif game:get_value("i1926") >= 2 and game:get_value("i1927") >= 2 then
-    npc_rito_carpenter:remove()
+    npc_horwin:remove()
   end
 
   -- Activate any night-specific dynamic tiles.
@@ -40,7 +40,7 @@ function map:on_started(destination)
   end
 end
 
-function npc_rito_1:on_interaction()
+function npc_rhett:on_interaction()
   if math.random(2) == 1 then
     game:start_dialog("rito_1.0.septen")
   else
@@ -48,7 +48,7 @@ function npc_rito_1:on_interaction()
   end
 end
 
-function npc_rito_2:on_interaction()
+function npc_zomali:on_interaction()
   if game:get_value("i1928") >= 1 then
     if game:get_value("i1840") < 5 then
       game:start_dialog("rito_2.1.septen")
@@ -62,7 +62,7 @@ function npc_rito_2:on_interaction()
   end
 end
 
-function npc_rito_3:on_interaction()
+function npc_quinn:on_interaction()
   if game:get_value("b1150") then
     game:start_dialog("rito_3.1.septen")
   else
@@ -70,7 +70,7 @@ function npc_rito_3:on_interaction()
   end
 end
 
-function npc_rito_carpenter:on_interaction()
+function npc_horwin:on_interaction()
   if game:is_dungeon_finished(7) and game:get_value("i1926") >= 3 then
     game:start_dialog("rito_carpenter.2.septen")
     sol.timer.start(game, 360000, function()

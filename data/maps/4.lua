@@ -68,7 +68,7 @@ function map:on_started(destination)
   end
 
   if (game:get_value("i1926") < 2 and game:get_value("i1927") < 2) or game:is_dungeon_finished(7) then
-    npc_rito_carpenter:remove()
+    npc_horwin:remove()
   end
 
   -- Replace shop items if they're bought
@@ -209,7 +209,7 @@ function npc_architect:on_interaction()
   end
 end
 
-function npc_rito_carpenter:on_interaction()
+function npc_horwin:on_interaction()
   game:start_dialog("rito_carpenter.2.kakariko")
 end
 

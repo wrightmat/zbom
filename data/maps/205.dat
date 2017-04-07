@@ -11666,16 +11666,6 @@ sensor{
   height = 48,
 }
 
-npc{
-  name = "npc_dampeh",
-  layer = 0,
-  x = 216,
-  y = 1533,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/goron_dampeh",
-}
-
 chest{
   name = "chest_item",
   layer = 0,
@@ -16899,16 +16889,6 @@ dynamic_tile{
   enabled_at_start = true,
 }
 
-npc{
-  name = "npc_dargor",
-  layer = 0,
-  x = 248,
-  y = 1581,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/goron_dargor",
-}
-
 dynamic_tile{
   name = "mine_track_1",
   layer = 0,
@@ -18026,6 +18006,30 @@ custom_entity{
   direction = 0,
   sprite = "entities/soil",
   model = "soil",
+}
+
+custom_entity{
+  name = "npc_dampeh",
+  layer = 0,
+  x = 216,
+  y = 1533,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/goron_dampeh",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_dargor",
+  layer = 0,
+  x = 240,
+  y = 1581,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/goron_dargor",
+  model = "npc_generic",
 }
 
 enemy{

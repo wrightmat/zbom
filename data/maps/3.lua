@@ -14,15 +14,15 @@ end
 
 function map:on_started()
   if game:get_time_of_day() == "day" then
-    npc_rito_3:remove()
+    npc_quinn:remove()
   end
+  random_walk(npc_vogoli)
   if not game:get_value("b2032") then quest_trading_feather:remove() end
-  random_walk(npc_rito_4)
   shop_world_map_2:get_sprite():set_animation("world_map")
   shop_world_map_2:get_sprite():set_direction(1)
   shop_poe_soul:get_sprite():set_animation("poe_soul")
   shop_poe_soul:get_sprite():set_direction(0)
-
+  
   -- Replace shop items if they're bought
   if game:get_item("world_map"):get_variant() > 1 then --world map
     shop_world_map_2:remove()
@@ -37,8 +37,8 @@ function map:on_started()
 	treasure_variant = 1
     })
   end
-
-  if game:get_value("b2019") then --giant wallet
+  
+  if game:get_value("b2019") then -- Giant wallet
     self:create_shop_treasure({
 	name = "shop_treasure_2",
 	layer = 0,
@@ -52,7 +52,7 @@ function map:on_started()
   end
 end
 
-function npc_rito_3:on_interaction()
+function npc_quinn:on_interaction()
   if game:get_value("b1150") then
     game:start_dialog("rito_3.1.septen")
   else
@@ -60,7 +60,7 @@ function npc_rito_3:on_interaction()
   end
 end
 
-function npc_rito_4:on_interaction()
+function npc_vogoli:on_interaction()
   game:set_dialog_style("default")
   if game:is_dungeon_finished(7) then
     game:start_dialog("rito_4.1.septen")
@@ -69,7 +69,7 @@ function npc_rito_4:on_interaction()
   end
 end
 
-function npc_rito_5:on_interaction()
+function npc_negili:on_interaction()
   game:set_dialog_style("default")
   if not game:get_value("b1150") then
     game:start_dialog("rito_5.0.septen")
@@ -78,12 +78,11 @@ function npc_rito_5:on_interaction()
   end
 end
 
-function npc_rito_trading:on_interaction()
-  game:set_dialog_style("default")
+function npc_podoli:on_interaction()
   if game:get_value("b2032") then
     game:start_dialog("rito.0.trading", function(answer)
       if answer == 1 then
-        -- give him the cookbook, get the feather
+        -- Give him the cookbook, get the feather
         game:start_dialog("rito.0.trading_yes", function()
           hero:start_treasure("feather")
           game:get_item("trading"):set_variant(13)
@@ -92,7 +91,7 @@ function npc_rito_trading:on_interaction()
           quest_trading_feather:remove()
         end)
       else
-        -- don't give him the cookbook
+        -- Don't give him the cookbook
         game:start_dialog("rito.0.trading_no")
       end
     end)
@@ -101,14 +100,12 @@ function npc_rito_trading:on_interaction()
   end
 end
 
-function npc_shopkeeper:on_interaction()
-  game:set_dialog_style("default")
+function npc_revin:on_interaction()
   game:start_dialog("shopkeep.0")
 end
 
 if shop_world_map_2 ~= nil then
   function shop_world_map_2:on_interaction()
-    game:set_dialog_style("default")
     -- Custom shop script to subtract ore instead of rupees
     game:start_dialog("shop.world_map", function()
       game:start_dialog("_shop.question_ore", 30, function(answer)
@@ -127,7 +124,6 @@ if shop_world_map_2 ~= nil then
 end
 
 function shop_poe_soul:on_interaction()
-  game:set_dialog_style("default")
   -- Custom shop script to subtract ore instead of rupees
   game:start_dialog("shop.poe_soul", function()
     game:start_dialog("_shop.question_ore", 80, function(answer)
@@ -144,11 +140,9 @@ function shop_poe_soul:on_interaction()
 end
 
 function npc_subrosian_1:on_interaction()
-  game:set_dialog_style("default")
   game:start_dialog("subrosian_1.0.house")
 end
 
 function npc_subrosian_2:on_interaction()
-  game:set_dialog_style("default")
   game:start_dialog("subrosian_2.0.house")
 end

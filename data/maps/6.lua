@@ -44,7 +44,7 @@ function map:on_started(destination)
   end
 end
 
-function npc_astronomer:on_interaction()
+function npc_mosq:on_interaction()
   game:set_value("astronomer_spoken", true)
   if game:get_value("b2023") then
    game:start_dialog("astronomer.0.trading", function(answer)

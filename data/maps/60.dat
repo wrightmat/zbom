@@ -2374,16 +2374,6 @@ sensor{
   height = 16,
 }
 
-npc{
-  name = "npc_anouki_1",
-  layer = 0,
-  x = 664,
-  y = 389,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/snowpeak_anouki",
-}
-
 destination{
   name = "ocarina_warp",
   layer = 0,
@@ -2734,6 +2724,18 @@ destructible{
   sprite = "entities/bush_snow",
   destruction_sound = "bush",
   weight = 2,
+}
+
+custom_entity{
+  name = "npc_poko",
+  layer = 0,
+  x = 680,
+  y = 389,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/snowpeak_anouki",
+  model = "npc_generic",
 }
 
 tile{

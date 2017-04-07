@@ -13,9 +13,9 @@ local function random_walk(npc)
 end
 
 function map:on_started(destination)
-  random_walk(npc_anouki_4)
+  random_walk(npc_yepa)
 end
 
-function npc_anouki_4:on_interaction()
+function npc_yepa:on_interaction()
   game:start_dialog("anouki_4.0.snowpeak")
 end

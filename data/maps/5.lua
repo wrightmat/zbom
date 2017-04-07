@@ -11,18 +11,18 @@ if game:get_value("i1916") == nil then game:set_value("i1916", 0) end --Galen re
 
 function map:on_started(destination)
   if not game:get_value("b2028") then quest_trading_vase:remove() end
-  if game:get_value("i1032") < 4 then npc_gor_larin:remove() end -- Elder only comes back to village after Zelda is kidnapped.
-
+  if game:get_value("i1032") < 4 then npc_gor_Larin:remove() end -- Elder only comes back to village after Zelda is kidnapped.
+  
   if game:get_time_of_day() == "night" then
     -- Activate any night-specific dynamic tiles
     for entity in map:get_entities("night_") do
       entity:set_enabled(true)
     end
   end
-
+  
   snores:set_enabled(false)
   npc_galen_2:get_sprite():set_direction(1) -- Up
-
+  
   if game:get_value("i1029") < 2 then
     npc_galen_2:remove()
   elseif game:get_value("i1029") == 2 then
@@ -32,36 +32,36 @@ function map:on_started(destination)
     npc_galen_2:remove()
     if game:get_value("i1029") == 3 then npc_galen:remove() end
   end
-
+  
   if game:get_value("b1699") then
     npc_dargor:remove()
   end
-
+  
   if game:get_value("i1029") == 2 and destination == from_outside_house_sick then
     sol.timer.start(1000, function()
       hero:freeze()
       game:start_dialog("dargor.3.house", game:get_player_name(), function()
         npc_galen_2:get_sprite():set_animation("walking")
-	local m = sol.movement.create("target")
+        local m = sol.movement.create("target")
         m:set_target(112, 384)
-	m:set_speed(32)
-	m:start(npc_galen_2, function()
-	  npc_galen_2:get_sprite():set_animation("stopped")
-	  npc_galen_2:get_sprite():set_direction(2) -- Left / West
+        m:set_speed(32)
+        m:start(npc_galen_2, function()
+          npc_galen_2:get_sprite():set_animation("stopped")
+          npc_galen_2:get_sprite():set_direction(2) -- Left / West
           sol.timer.start(2000, function()
-	    npc_galen_2:get_sprite():set_direction(0) -- Right / East
-	    game:start_dialog("galen.2.house", game:get_player_name(), function()
-	      npc_galen_2:get_sprite():set_animation("walking")
-	      local m2 = sol.movement.create("target")
+            npc_galen_2:get_sprite():set_direction(0) -- Right / East
+            game:start_dialog("galen.2.house", game:get_player_name(), function()
+              npc_galen_2:get_sprite():set_animation("walking")
+              local m2 = sol.movement.create("target")
               m2:set_target(160, 461)
-	      m:set_speed(16)
+              m:set_speed(16)
               m2:start(npc_galen_2, function()
-	        npc_galen_2:remove()
-	        hero:unfreeze()
-	        game:set_value("i1029", 3)
-	      end)
+                npc_galen_2:remove()
+                hero:unfreeze()
+                game:set_value("i1029", 3)
+              end)
             end)
-	  end)
+          end)
         end)
       end)
     end)
@@ -127,7 +127,7 @@ function npc_osgor:on_interaction()
   game:start_dialog("osgor.0.house")
 end
 
-function npc_gor_larin:on_interaction()
+function npc_gor_Larin:on_interaction()
   sol.audio.play_sound("goron_happy")
   if game:get_value("b1699") then
     game:start_dialog("larin.3.house")
@@ -138,16 +138,16 @@ function npc_gor_larin:on_interaction()
   end
 end
 
-function npc_goron_smith:on_interaction()
+function npc_bomro:on_interaction()
   if not game:has_item("bomb_bag") then
     sol.audio.play_sound("goron_question")
     game:start_dialog("goron_smith.0.shop", function(answer)
       if answer == 1 then -- Yes
         if game:get_money() >= 300 then
-	hero:start_treasure("bomb_bag")
-	game:remove_money(300)
+          hero:start_treasure("bomb_bag")
+          game:remove_money(300)
         else
-	game:start_dialog("shopkeep.1")
+          game:start_dialog("shopkeep.1")
         end
       end
     end)
@@ -156,10 +156,10 @@ function npc_goron_smith:on_interaction()
     game:start_dialog("goron_smith.1.shop_sell", function(answer)
       if answer == 1 then -- Yes
         if game:get_money() >= 50 then
-	hero:start_treasure("bomb", 3)
-	game:remove_money(50)
+          hero:start_treasure("bomb", 3)
+          game:remove_money(50)
         else
-	game:start_dialog("shopkeep.1")
+          game:start_dialog("shopkeep.1")
         end
       end
     end)
@@ -169,7 +169,7 @@ function npc_goron_smith:on_interaction()
   end
 end
 
-function npc_goron_trading:on_interaction()
+function npc_mikato:on_interaction()
   if game:get_value("b2028") then
     sol.audio.play_sound("goron_question")
     game:start_dialog("goron.0.trading", function(answer)
@@ -241,11 +241,11 @@ function innkeeper_sensor:on_interaction()
     end
   end)
 end
-function npc_goron_innkeep:on_interaction()
+function npc_nakno:on_interaction()
   innkeeper_sensor:on_interaction()
 end
 
-function npc_shopkeeper:on_interaction()
+function npc_tokbomo:on_interaction()
   if math.random(4) == 1 then
     -- Randomly mention the bigger wallet
     game:start_dialog("shopkeep.1")

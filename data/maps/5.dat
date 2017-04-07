@@ -3039,16 +3039,6 @@ dynamic_tile{
   enabled_at_start = false,
 }
 
-npc{
-  name = "npc_osgor",
-  layer = 0,
-  x = 88,
-  y = 373,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/goron_osgor",
-}
-
 destination{
   name = "from_outside_bombshop",
   layer = 0,
@@ -3182,56 +3172,6 @@ teletransporter{
   destination = "from_house_leader",
 }
 
-npc{
-  name = "npc_dargor",
-  layer = 0,
-  x = 200,
-  y = 397,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/goron_dargor",
-}
-
-npc{
-  name = "npc_galen",
-  layer = 0,
-  x = 560,
-  y = 133,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/goron_galen",
-}
-
-npc{
-  name = "npc_goron_smith",
-  layer = 0,
-  x = 224,
-  y = 125,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/goron",
-}
-
-npc{
-  name = "npc_gor_larin",
-  layer = 0,
-  x = 192,
-  y = 669,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/goron_larin",
-}
-
-npc{
-  name = "npc_shopkeeper",
-  layer = 0,
-  x = 584,
-  y = 373,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/goron",
-}
-
 shop_treasure{
   name = "shop_amber",
   layer = 0,
@@ -3262,26 +3202,6 @@ shop_treasure{
   treasure_variant = 2,
   price = 20,
   dialog = "shop.magic",
-}
-
-npc{
-  name = "npc_goron_trading",
-  layer = 0,
-  x = 960,
-  y = 413,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/goron",
-}
-
-npc{
-  name = "npc_goron_innkeep",
-  layer = 0,
-  x = 1048,
-  y = 93,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/goron",
 }
 
 npc{
@@ -3354,6 +3274,102 @@ npc{
   subtype = 0,
   sprite = "entities/torch_lantern",
   behavior = "item#lamp",
+}
+
+custom_entity{
+  name = "npc_galen",
+  layer = 0,
+  x = 568,
+  y = 133,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/goron_galen",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_bomro",
+  layer = 0,
+  x = 224,
+  y = 125,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/goron",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_nakno",
+  layer = 0,
+  x = 1048,
+  y = 93,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/goron",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_tokbomo",
+  layer = 0,
+  x = 592,
+  y = 373,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/goron",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_mikato",
+  layer = 0,
+  x = 960,
+  y = 413,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/goron",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_gor_Larin",
+  layer = 0,
+  x = 200,
+  y = 669,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/goron_larin",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_dargor",
+  layer = 0,
+  x = 208,
+  y = 397,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/goron_dargor",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_osgor",
+  layer = 0,
+  x = 88,
+  y = 373,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/goron",
+  model = "npc_generic",
 }
 
 tile{

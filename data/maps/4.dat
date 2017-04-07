@@ -8042,26 +8042,6 @@ dynamic_tile{
 }
 
 npc{
-  name = "npc_architect",
-  layer = 0,
-  x = 1048,
-  y = 125,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/hylian_1",
-}
-
-npc{
-  name = "npc_rito_carpenter",
-  layer = 0,
-  x = 1080,
-  y = 133,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/rito",
-}
-
-npc{
   name = "npc_kakariko_1",
   layer = 0,
   x = 616,
@@ -8403,6 +8383,30 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/quest_bubble",
+}
+
+custom_entity{
+  name = "npc_horwin",
+  layer = 1,
+  x = 1080,
+  y = 133,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/rito",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_architect",
+  layer = 1,
+  x = 1048,
+  y = 125,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/hylian_1",
+  model = "npc_generic",
 }
 
 tile{

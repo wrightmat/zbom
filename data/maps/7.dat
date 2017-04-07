@@ -472,7 +472,7 @@ tile{
 tile{
   layer = 0,
   x = 376,
-  y = 72,
+  y = 64,
   width = 240,
   height = 144,
   pattern = "676",
@@ -2503,16 +2503,6 @@ teletransporter{
   destination = "from_house_3",
 }
 
-npc{
-  name = "npc_anouki_5",
-  layer = 0,
-  x = 560,
-  y = 149,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/snowpeak_anouki",
-}
-
 teletransporter{
   name = "to_outside_house_4",
   layer = 0,
@@ -2569,36 +2559,6 @@ custom_entity{
 }
 
 npc{
-  name = "npc_anouki_3",
-  layer = 0,
-  x = 200,
-  y = 533,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/snowpeak_anouki",
-}
-
-npc{
-  name = "npc_anouki_1",
-  layer = 0,
-  x = 880,
-  y = 157,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/snowpeak_anouki",
-}
-
-npc{
-  name = "npc_anouki_2",
-  layer = 0,
-  x = 120,
-  y = 149,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/snowpeak_anouki",
-}
-
-npc{
   name = "torch_1",
   layer = 0,
   x = 128,
@@ -2607,6 +2567,54 @@ npc{
   subtype = 0,
   sprite = "entities/torch_lantern",
   behavior = "item#lamp",
+}
+
+custom_entity{
+  name = "npc_poko",
+  layer = 0,
+  x = 880,
+  y = 157,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/snowpeak_anouki",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_inuk",
+  layer = 0,
+  x = 200,
+  y = 533,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/snowpeak_anouki",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_leto",
+  layer = 0,
+  x = 112,
+  y = 149,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/snowpeak_anouki",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_vofu",
+  layer = 0,
+  x = 560,
+  y = 149,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/snowpeak_anouki",
+  model = "npc_generic",
 }
 
 tile{

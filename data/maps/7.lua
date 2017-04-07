@@ -8,20 +8,18 @@ local anouki_talk = 0
 
 function map:on_started()
   if game:get_time_of_day() == "day" then
-    npc_anouki_1:remove()
-    npc_anouki_2:remove()
-    npc_anouki_3:remove()
+    npc_poko:remove()
+    npc_leto:remove()
+    npc_inuk:remove()
   end
 end
 
-function npc_anouki_1:on_interaction()
-  game:set_dialog_style("default")
+function npc_poko:on_interaction()
   game:start_dialog("anouki_1."..anouki_talk..".snowpeak")
   if anouki_talk == 0 then anouki_talk = 1 else anouki_talk = 0 end
 end
 
-function npc_anouki_2:on_interaction()
-  game:set_dialog_style("default")
+function npc_leto:on_interaction()
   if game:get_value("b1150") then
     game:start_dialog("anouki_2.2.snowpeak")
   else
@@ -30,8 +28,7 @@ function npc_anouki_2:on_interaction()
   end
 end
 
-function npc_anouki_3:on_interaction()
-  game:set_dialog_style("default")
+function npc_inuk:on_interaction()
   if not game:get_value("b1117") then
     -- If at least Mausoleum not completed, suggest going there instead.
     game:start_dialog("anouki_3.0.snowpeak", function()
@@ -43,8 +40,7 @@ function npc_anouki_3:on_interaction()
   end
 end
 
-function npc_anouki_5:on_interaction()
-  game:set_dialog_style("default")
+function npc_vofu:on_interaction()
   local rand = math.random(2)
   if rand == 1 then
     game:start_dialog("anouki_5.0.snowpeak")

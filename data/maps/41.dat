@@ -8216,16 +8216,6 @@ teletransporter{
 }
 
 npc{
-  name = "npc_marryn",
-  layer = 0,
-  x = 632,
-  y = 445,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/hylian_marryn",
-}
-
-npc{
   name = "mailbox",
   layer = 0,
   x = 416,
@@ -8303,6 +8293,18 @@ destructible{
   destruction_sound = "bush",
   weight = 1,
   can_be_cut = true,
+}
+
+custom_entity{
+  name = "npc_marryn",
+  layer = 0,
+  x = 632,
+  y = 445,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/hylian_marryn",
+  model = "npc_generic",
 }
 
 tile{

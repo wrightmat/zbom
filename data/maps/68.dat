@@ -1445,16 +1445,6 @@ teletransporter{
   destination = "from_outside",
 }
 
-npc{
-  name = "npc_dampeh",
-  layer = 0,
-  x = 488,
-  y = 445,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/goron_dampeh",
-}
-
 wall{
   layer = 0,
   x = 472,
@@ -1510,6 +1500,18 @@ teletransporter{
   transition = "scrolling",
   destination_map = "69",
   destination = "_side",
+}
+
+custom_entity{
+  name = "npc_dampeh",
+  layer = 0,
+  x = 488,
+  y = 445,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/goron_dampeh",
+  model = "npc_generic",
 }
 
 npc{

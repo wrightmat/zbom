@@ -14,13 +14,13 @@ end
 
 function map:on_started(destination)
   if game:get_time_of_day() == "day" then
-    random_walk(npc_goron_5)
-    random_walk(npc_goron_6)
-    random_walk(npc_goron_7)
+    random_walk(npc_dagrazo)
+    random_walk(npc_rokdo)
+    random_walk(npc_dudoggo)
   else
-    npc_goron_5:remove()
-    npc_goron_6:remove()
-    npc_goron_7:remove()
+    npc_dagrazo:remove()
+    npc_rokdo:remove()
+    npc_dudoggo:remove()
   end
 
   -- Opening doors
@@ -30,8 +30,8 @@ function map:on_started(destination)
     local tile = map:get_entity(entrance_name .. "_door")
     sensor.on_activated_repeat = function()
       if hero:get_direction() == 1 and tile:is_enabled() and game:get_time_of_day() == "day" then
-	tile:set_enabled(false)
-	sol.audio.play_sound("door_open")
+        tile:set_enabled(false)
+        sol.audio.play_sound("door_open")
       end
     end
   end
@@ -59,8 +59,8 @@ function map:on_started(destination)
       -- hero's on a map that has the ghost present).
       dialog_timer = sol.timer.start(game, 60000, function()
         if npc_goron_ghost ~= nil then
-	sol.audio.play_sound("ghost")
-	game:start_dialog("osgor.1.ghost", game:get_player_name())
+          sol.audio.play_sound("ghost")
+          game:start_dialog("osgor.1.ghost", game:get_player_name())
           return true
         end
       end)
@@ -83,7 +83,7 @@ function map:on_started(destination)
   end
 end
 
-function npc_goron_5:on_interaction()
+function npc_dagrazo:on_interaction()
   if game:get_value("b1699") then
     game:start_dialog("goron5.0.goron_city_mine")
   else
@@ -91,7 +91,7 @@ function npc_goron_5:on_interaction()
   end
 end
 
-function npc_goron_6:on_interaction()
+function npc_rokdo:on_interaction()
   if game:get_value("b1699") then
     game:start_dialog("goron6.0.goron_city_mine")
   else
@@ -99,7 +99,7 @@ function npc_goron_6:on_interaction()
   end
 end
 
-function npc_goron_7:on_interaction()
+function npc_dudoggo:on_interaction()
   if game:get_value("b1699") then
     game:start_dialog("goron7.0.goron_city_mine")
   else

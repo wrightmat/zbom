@@ -15,9 +15,9 @@ end
 
 function map:on_started(destination)
   if game:get_time_of_day() == "night" then
-    npc_anouki_1:remove()
+    npc_poko:remove()
   else
-    random_walk(npc_anouki_1)
+    random_walk(npc_poko)
   end
 
   -- Bushes are frozen and can only by cut with a more powerful sword.
@@ -35,8 +35,7 @@ function map:on_started(destination)
   end
 end
 
-function npc_anouki_1:on_interaction()
-  game:set_dialog_style("default")
+function npc_poko:on_interaction()
   game:start_dialog("anouki_1."..anouki_talk..".snowpeak")
   if anouki_talk == 0 then anouki_talk = 1 else anouki_talk = 0 end
 end

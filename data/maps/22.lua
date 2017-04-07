@@ -23,7 +23,7 @@ function map:on_started(destination)
     end
   end
   if game:get_value("i1068") < 6 then
-    npc_tokay_chef:remove()
+    npc_tokay_Chef:remove()
     to_C15:remove()
   elseif game:get_value("i1068") == 6 then
     to_C15:remove()
@@ -36,8 +36,8 @@ function map:on_started(destination)
     sol.audio.play_music("beach")
   end
 
-  if game:get_time_of_day() == "night" and npc_tokay_chef ~= nil then
-    npc_tokay_chef:remove()
+  if game:get_time_of_day() == "night" and npc_tokay_Chef ~= nil then
+    npc_tokay_Chef:remove()
   end
 
   -- Activate any night-specific dynamic tiles.
@@ -51,7 +51,7 @@ function map:on_started(destination)
   end
 end
 
-function npc_tokay_chef:on_interaction()
+function npc_tokay_Chef:on_interaction()
   if game:get_value("b2027") then
     game:start_dialog("chef.0.trading", function(answer)
       if answer == 1 then

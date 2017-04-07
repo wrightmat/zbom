@@ -5027,16 +5027,6 @@ destination{
   direction = 3,
 }
 
-npc{
-  name = "npc_anouki_3",
-  layer = 0,
-  x = 768,
-  y = 1045,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/snowpeak_anouki",
-}
-
 teletransporter{
   name = "to_D5_water",
   layer = 0,
@@ -5550,6 +5540,18 @@ teletransporter{
   transition = "scrolling",
   destination_map = "54",
   destination = "_side",
+}
+
+custom_entity{
+  name = "npc_inuk",
+  layer = 0,
+  x = 784,
+  y = 1045,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/snowpeak_anouki",
+  model = "npc_generic",
 }
 
 tile{

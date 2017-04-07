@@ -13,11 +13,11 @@ local function random_walk(npc)
 end
 
 function map:on_started(destination)
-  random_walk(npc_goron_1)
-  random_walk(npc_goron_2)
-  random_walk(npc_goron_3)
-  random_walk(npc_goron_4)
-
+  random_walk(npc_botoglo)
+  random_walk(npc_golo)
+  random_walk(npc_rogulo)
+  random_walk(npc_dotombo)
+  
   if game:get_value("i1029") == 5 then
     -- Set position to hero and then follow
     -- (on intermediate layer so he doesn't collide).
@@ -43,7 +43,7 @@ function map:on_started(destination)
   end
 end
 
-function npc_goron_1:on_interaction()
+function npc_botoglo:on_interaction()
   if game:get_value("b1699") then
     game:start_dialog("goron1.0.goron_city_mine")
   else
@@ -51,10 +51,18 @@ function npc_goron_1:on_interaction()
   end
 end
 
-function npc_goron_2:on_interaction()
+function npc_golo:on_interaction()
   if game:get_value("b1699") then
     game:start_dialog("goron2.0.goron_city_mine")
   else
     game:start_dialog("goron2.0.goron_city")
   end
+end
+
+function npc_rogulo:on_interaction()
+  game:start_dialog("goron3.0.goron_city")
+end
+
+function npc_dotombo:on_interaction()
+  game:start_dialog("goron4.0.goron_city")
 end

@@ -4187,16 +4187,6 @@ teletransporter{
   destination = "from_inside",
 }
 
-npc{
-  name = "npc_astronomer",
-  layer = 0,
-  x = 760,
-  y = 429,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/zuna",
-}
-
 destination{
   name = "enter_desert_3",
   layer = 0,
@@ -4872,6 +4862,18 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/tokay_red",
+}
+
+custom_entity{
+  name = "npc_mosq",
+  layer = 0,
+  x = 760,
+  y = 429,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/zuna",
+  model = "npc_generic",
 }
 
 tile{

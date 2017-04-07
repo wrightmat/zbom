@@ -6818,16 +6818,6 @@ wall{
   stops_blocks = true,
 }
 
-npc{
-  name = "npc_tokay_chef",
-  layer = 0,
-  x = 328,
-  y = 237,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/tokay_orange",
-}
-
 teletransporter{
   name = "to_D14_water",
   layer = 0,
@@ -6970,6 +6960,18 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/quest_bubble",
+}
+
+custom_entity{
+  name = "npc_tokay_Chef",
+  layer = 0,
+  x = 328,
+  y = 237,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/tokay_orange",
+  model = "npc_generic",
 }
 
 tile{

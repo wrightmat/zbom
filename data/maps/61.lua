@@ -15,9 +15,9 @@ end
 
 function map:on_started(destination)
   if game:get_time_of_day() == "night" then
-    npc_anouki_2:remove()
+    npc_leto:remove()
   else
-    random_walk(npc_anouki_2)
+    random_walk(npc_leto)
   end
 
   -- Activate any night-specific dynamic tiles.
@@ -28,8 +28,7 @@ function map:on_started(destination)
   end
 end
 
-function npc_anouki_2:on_interaction()
-  game:set_dialog_style("default")
+function npc_leto:on_interaction()
   if game:get_value("b1150") then
     game:start_dialog("anouki_2.2.snowpeak")
   else

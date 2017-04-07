@@ -16,9 +16,9 @@ end
 
 function map:on_started(destination)
   if game:get_time_of_day() == "night" then
-    npc_anouki_3:remove()
+    npc_inuk:remove()
   else
-    random_walk(npc_anouki_3)
+    random_walk(npc_inuk)
   end
 
   if game:get_value("b1150") and game:get_value("i1910") < 6 then
@@ -50,7 +50,7 @@ function map:on_started(destination)
   end
 end
 
-function npc_anouki_3:on_interaction()
+function npc_inuk:on_interaction()
   if not game:get_value("b1117") then
     -- If at least Mausoleum not completed, suggest going there instead.
     game:start_dialog("anouki_3.0.snowpeak", function()

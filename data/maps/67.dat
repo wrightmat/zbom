@@ -2596,36 +2596,6 @@ teletransporter{
   destination = "_side",
 }
 
-npc{
-  name = "npc_goron_7",
-  layer = 0,
-  x = 560,
-  y = 605,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/goron",
-}
-
-npc{
-  name = "npc_goron_6",
-  layer = 0,
-  x = 888,
-  y = 565,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/goron",
-}
-
-npc{
-  name = "npc_goron_5",
-  layer = 0,
-  x = 504,
-  y = 181,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/goron",
-}
-
 enemy{
   name = "geyser_1",
   layer = 0,
@@ -2931,14 +2901,52 @@ npc{
   sprite = "entities/mailbox",
 }
 
-npc{
+custom_entity{
+  name = "npc_dagrazo",
+  layer = 0,
+  x = 504,
+  y = 181,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/goron",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_rokdo",
+  layer = 0,
+  x = 888,
+  y = 565,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/goron",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_dudoggo",
+  layer = 0,
+  x = 560,
+  y = 605,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/goron",
+  model = "npc_generic",
+}
+
+custom_entity{
   name = "npc_galen",
   layer = 0,
-  x = 936,
+  x = 928,
   y = 749,
+  width = 16,
+  height = 16,
   direction = 3,
-  subtype = 1,
   sprite = "npc/goron_galen",
+  model = "npc_generic",
 }
 
 npc{

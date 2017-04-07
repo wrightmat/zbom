@@ -1785,48 +1785,6 @@ teletransporter{
   destination = "_side",
 }
 
-npc{
-  name = "npc_goron_1",
-  layer = 0,
-  x = 536,
-  y = 669,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/goron",
-}
-
-npc{
-  name = "npc_goron_2",
-  layer = 0,
-  x = 912,
-  y = 845,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/goron",
-}
-
-npc{
-  name = "npc_goron_3",
-  layer = 0,
-  x = 672,
-  y = 301,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/goron",
-  behavior = "dialog#goron3.0.goron_city",
-}
-
-npc{
-  name = "npc_goron_4",
-  layer = 0,
-  x = 240,
-  y = 245,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/goron",
-  behavior = "dialog#goron4.0.goron_city",
-}
-
 enemy{
   name = "geyser_1",
   layer = 0,
@@ -2125,6 +2083,54 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",
+}
+
+custom_entity{
+  name = "npc_botoglo",
+  layer = 0,
+  x = 536,
+  y = 669,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/goron",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_golo",
+  layer = 0,
+  x = 912,
+  y = 845,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/goron",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_rogulo",
+  layer = 0,
+  x = 672,
+  y = 301,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/goron",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_dotombo",
+  layer = 0,
+  x = 240,
+  y = 245,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/goron",
+  model = "npc_generic",
 }
 
 npc{

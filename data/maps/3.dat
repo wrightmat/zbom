@@ -3702,36 +3702,6 @@ teletransporter{
 }
 
 npc{
-  name = "npc_rito_4",
-  layer = 0,
-  x = 552,
-  y = 901,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/rito",
-}
-
-npc{
-  name = "npc_rito_5",
-  layer = 0,
-  x = 936,
-  y = 525,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/rito",
-}
-
-npc{
-  name = "npc_rito_trading",
-  layer = 0,
-  x = 536,
-  y = 509,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/rito",
-}
-
-npc{
   name = "npc_shopkeeper",
   layer = 0,
   x = 168,
@@ -3805,17 +3775,6 @@ shop_treasure{
   dialog = "shop.wallet",
 }
 
-npc{
-  name = "npc_rito_shopkeep",
-  layer = 0,
-  x = 120,
-  y = 877,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/rito",
-  behavior = "dialog#shopkeep.0",
-}
-
 chest{
   name = "chest_heart_piece",
   layer = 0,
@@ -3848,14 +3807,64 @@ custom_entity{
   model = "quest_books",
 }
 
-npc{
-  name = "npc_rito_3",
+custom_entity{
+  name = "npc_quinn",
   layer = 0,
   x = 928,
   y = 909,
+  width = 16,
+  height = 16,
   direction = 3,
-  subtype = 1,
   sprite = "npc/rito",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_vogoli",
+  layer = 0,
+  x = 552,
+  y = 901,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/rito",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_negili",
+  layer = 0,
+  x = 936,
+  y = 525,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/rito",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_podoli",
+  layer = 0,
+  x = 536,
+  y = 509,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/rito",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_revin",
+  layer = 0,
+  x = 120,
+  y = 877,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/rito",
+  model = "npc_generic",
 }
 
 tile{
