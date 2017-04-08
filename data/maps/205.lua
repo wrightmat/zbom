@@ -63,7 +63,7 @@ function map:on_started(destination)
   end
 end
 
-function npc_dampeh:on_interaction()
+npc_dampeh:register_event("on_interaction", function()
   if game:get_value("i1029") == 5 then
     game:start_dialog("dampeh.1.mausoleum", function()
       game:set_value("i1029", 6)
@@ -81,7 +81,11 @@ function npc_dampeh:on_interaction()
   else
     game:start_dialog("dampeh.0.mausoleum")
   end
-end
+end)
+
+npc_dargor:register_event("on_interaction", function()
+  game:start_dialog("dargor.5.mine")
+end)
 
 function sensor_miniboss:on_activated()
   if miniboss_arrghus ~= nil then
@@ -260,8 +264,4 @@ function chest_book:on_opened(item, variant, savegame_variable)
   game:set_dungeon_finished(4)
   game:set_value("i1029", 6)
   game:set_value("b1117", true) -- This value varies depending on the dungeon (chest save value)
-end
-
-function npc_dargor:on_interaction()
-  game:start_dialog("dargor.5.mine")
 end

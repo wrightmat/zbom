@@ -31,7 +31,6 @@ function map:on_started(destination)
       -- Temple is complete- have monkey steal book page and jump away.
       npc_monkey:set_position(648, 752, 2)
       sol.audio.play_sound("monkey")
-      game:set_dialog_style("default")
       sol.timer.start(1000, function()
         sol.audio.play_sound("monkey")
         game:start_dialog("monkey1.1.grove", function()
@@ -70,8 +69,8 @@ function map:on_started(destination)
                   m4:set_speed(48)
                   m4:set_ignore_obstacles(true)
                   m4:start(npc_monkey)
-	      end)--m3
-	    end)--m2
+                end)--m3
+              end)--m2
             end)--m
           end)--timer
         end)--dialog
@@ -79,7 +78,7 @@ function map:on_started(destination)
         game:set_value("i1068", 2)
         sol.timer.start(4000, function() npc_monkey:remove() end)
       end)--timer
-    end--if
+    end
   end
   if game:get_item("airship_part"):get_variant() == 3 or (game:get_value("b1087") and game:get_value("b1088") and game:get_value("b1089") and game:get_value("i1068") == 3) then
     -- If player has all three airship parts, proceed with Gerudo storyline.
@@ -108,7 +107,7 @@ function map:on_started(destination)
   end
 end
 
-function npc_araeki:on_interaction()
+npc_araeki:register_event("on_interaction", function()
   if game:get_value("i1068") < 5 then
     game:start_dialog("gerudo.0.beach")
   elseif game:get_value("i1068") >= 6 then
@@ -116,9 +115,9 @@ function npc_araeki:on_interaction()
   else
     game:start_dialog("gerudo.1.beach")
   end
-end
+end)
 
-function npc_ibari:on_interaction()
+npc_ibari:register_event("on_interaction", function()
   if game:get_value("i1068") < 5 then
     game:start_dialog("gerudo.0.beach")
   elseif game:get_value("i1068") >= 6 then
@@ -126,9 +125,9 @@ function npc_ibari:on_interaction()
   else
     game:start_dialog("gerudo.1.beach")
   end
-end
+end)
 
-function npc_hesla:on_interaction()
+npc_hesla:register_event("on_interaction", function()
   if game:get_value("i1917") >= 1 then
     if game:get_value("i1068") == 1 then
       game:start_dialog("hesla.1.beach")
@@ -169,7 +168,7 @@ function npc_hesla:on_interaction()
       game:set_value("i1917", 1)
     end)
   end
-end
+end)
 
 function npc_monkey:on_interaction()
   sol.audio.play_sound("monkey")

@@ -176,7 +176,7 @@ function map:on_started(destination)
   end
 end
 
-function npc_ulo:on_interaction()
+npc_ulo:register_event("on_interaction", function()
   if game:get_value("b1117") and game:get_value("i1030") < 2 then
     game:start_dialog("ulo.5.ordon", game:get_player_name())
   elseif game:get_value("i1029") >= 6 then
@@ -184,9 +184,9 @@ function npc_ulo:on_interaction()
   else
     game:start_dialog("ulo.3.ordon")
   end
-end
+end)
 
-function npc_impa:on_interaction()
+npc_impa:register_event("on_interaction", function()
   if game:get_value("b2025") then
     game:start_dialog("impa.0.trading", function(answer)
       if answer == 1 then
@@ -227,7 +227,7 @@ function npc_impa:on_interaction()
       end
     end)
   end
-end
+end)
 
 function sensor_sleep:on_activated()
   if game:get_value("i1027") >= 6 then
@@ -338,6 +338,6 @@ function npc_shopkeeper:on_interaction()
   end
 end
 
-function npc_tern:on_interaction()
+npc_tern:register_event("on_interaction", function()
   game:start_dialog("tern.1.house")
-end
+end)

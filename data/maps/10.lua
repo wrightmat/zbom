@@ -57,44 +57,44 @@ function map:on_started(destination)
           m:set_direction8(6) -- Face down to indicate speaking.
           m:set_distance(8)
           m:start(npc_quint)
-	  sol.timer.start(400, function()
-            game:set_dialog_position("top")
+          sol.timer.start(400, function()
+            game:set_dialog_position("top"); game:set_dialog_name("Quint")
             game:start_dialog("quint.0.festival", function()
               sol.audio.play_sound("jump")
               m:set_direction8(6) -- Face down to indicate speaking.
               m:set_distance(8)
               m:start(npc_francis)
-	      sol.timer.start(400, function()
-                game:set_dialog_position("bottom")
+              sol.timer.start(400, function()
+                game:set_dialog_position("bottom"); game:set_dialog_name("Francis")
                 game:start_dialog("francis.0.festival", function()
                   m:set_direction8(4) -- Face hero.
                   m:set_distance(8)
                   m:start(npc_quint)
-	          sol.timer.start(400, function()
-                     game:set_dialog_position("top")
-                     game:start_dialog("quint.0.festival_2", game:get_player_name(), function()
-                       m:set_direction8(4) -- Face hero.
-                       m:set_distance(8)
-                       m:start(npc_francis)
-	              sol.timer.start(400, function()
-                         game:set_dialog_position("bottom")
-                         game:start_dialog("francis.0.festival_2", function()
-			  game:set_value("i1027", 2)
-			  hero:unfreeze()
-			  follow_hero(npc_jarred)
-			  follow_hero(npc_quint)
-			  follow_hero(npc_francis)
-			  game:set_value("i1907", game:get_value("i1907")+1)
-			  game:set_value("i1908", game:get_value("i1908")+1)
-			  game:set_value("i1909", game:get_value("i1909")+1)
-			end)
-		      end)
-		    end)
+                  sol.timer.start(400, function()
+                    game:set_dialog_position("top"); game:set_dialog_name("Quint")
+                    game:start_dialog("quint.0.festival_2", game:get_player_name(), function()
+                      m:set_direction8(4) -- Face hero.
+                      m:set_distance(8)
+                      m:start(npc_francis)
+                        sol.timer.start(400, function()
+                        game:set_dialog_position("bottom"); game:set_dialog_name("Francis")
+                        game:start_dialog("francis.0.festival_2", function()
+                          game:set_value("i1027", 2)
+                          hero:unfreeze()
+                          follow_hero(npc_jarred)
+                          follow_hero(npc_quint)
+                          follow_hero(npc_francis)
+                          game:set_value("i1907", game:get_value("i1907")+1)
+                          game:set_value("i1908", game:get_value("i1908")+1)
+                          game:set_value("i1909", game:get_value("i1909")+1)
+                        end)
+                      end)
+                    end)
                   end)
                 end)
               end)
             end)
-	  end)
+          end)
         end)
       end)
    end)
@@ -159,10 +159,7 @@ function map:on_started(destination)
   end
 end
 
-function npc_rudy:on_interaction()
-  -- First, make the NPC face the hero when interacting
-  self:get_sprite():set_direction(self:get_direction4_to(game:get_hero()))
-
+npc_rudy:register_event("on_interaction", function()
   if game:get_value("i1027") >= 3 then
     if not game:has_item("shield") then
       game:start_dialog("rudy.0.festival_reward", function()
@@ -180,12 +177,9 @@ function npc_rudy:on_interaction()
     game:start_dialog("rudy.0.festival")
     if game:get_value("i1902") == 0 then game:set_value("i1902", 1) end
   end
-end
+end)
 
-function npc_quint:on_interaction()
-  -- First, make the NPC face the hero when interacting
-  self:get_sprite():set_direction(self:get_direction4_to(game:get_hero()))
-
+npc_quint:register_event("on_interaction", function()
   if game:get_value("i1907") >= 1 then
     if game:get_value("i1027") >= 6 then
       repeat -- Make sure the same quote is not picked again.
@@ -195,12 +189,9 @@ function npc_quint:on_interaction()
       last_message = index
     elseif game:get_value("i1028") > 1 then game:start_dialog("quint.1.ordon") end
   end
-end
+end)
 
-function npc_francis:on_interaction()
-  -- First, make the NPC face the hero when interacting
-  self:get_sprite():set_direction(self:get_direction4_to(game:get_hero()))
-
+npc_francis:register_event("on_interaction", function()
   if game:get_value("i1908") >= 1 then
     if game:get_value("i1027") >= 6 then
       repeat -- Make sure the same quote is not picked again.
@@ -210,12 +201,9 @@ function npc_francis:on_interaction()
       last_message = index
     elseif game:get_value("i1028") > 1 then game:start_dialog("francis.1.ordon") end
   end
-end
+end)
 
-function npc_jarred:on_interaction()
-  -- First, make the NPC face the hero when interacting
-  self:get_sprite():set_direction(self:get_direction4_to(game:get_hero()))
-
+npc_jarred:register_event("on_interaction", function()
   if game:get_value("i1909") >= 1 then
     if game:get_value("i1027") >= 6 then
       repeat -- Make sure the same quote is not picked again.
@@ -225,12 +213,9 @@ function npc_jarred:on_interaction()
       last_message = index
     elseif game:get_value("i1028") > 1 then game:start_dialog("jarred.1.ordon", function() game:add_money(10) end) end
   end
-end
+end)
 
-function npc_ulo:on_interaction()
-  -- First, make the NPC face the hero when interacting
-  self:get_sprite():set_direction(self:get_direction4_to(game:get_hero()))
-
+npc_ulo:register_event("on_interaction", function()
   if game:get_value("i1904") >= 1 then
     if game:has_item("lamp") then
       game:start_dialog("ulo.1.festival")
@@ -241,4 +226,4 @@ function npc_ulo:on_interaction()
     game:set_value("i1904", game:get_value("i1904")+1)
     game:start_dialog("ulo.0.festival", game:get_player_name())
   end
-end
+end)

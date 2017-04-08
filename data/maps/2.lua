@@ -93,7 +93,7 @@ function map:on_started(destination)
   snores_relic:set_enabled(false)
 end
 
-function npc_elder_Ulo:on_interaction()
+npc_elder_Ulo:register_event("on_interaction", function()
   if game:get_value("b1699") then
     game:start_dialog("ulo.6.council")
   elseif game:get_value("i1032") > 2 then
@@ -103,9 +103,9 @@ function npc_elder_Ulo:on_interaction()
       if game:get_value("i1032") >= 1 then game:start_dialog("ulo.2.council_book") end
     end)
   end
-end
+end)
 
-function npc_elder_Juba:on_interaction()
+npc_elder_Juba:register_event("on_interaction", function()
   if game:get_value("b1699") then
     game:start_dialog("juba.3.council")
   elseif game:get_value("i1032") > 2 then
@@ -113,8 +113,8 @@ function npc_elder_Juba:on_interaction()
   else
     game:start_dialog("juba.0.council")
   end
-end
-function np2_elder_Juba:on_interaction()
+end)
+np2_elder_Juba:register_event("on_interaction", function()
   -- Have spoken to the gatekeeper, have beaten Lakebed and don't already have the flippers.
   if game:get_value("i1923") >= 1 and game:get_value("b1134") and not game:get_value("b1816") then
     game:start_dialog("juba.2.office", function()
@@ -129,9 +129,9 @@ function np2_elder_Juba:on_interaction()
     end
     if game:get_value("i1924") == 0 then game:set_value("i1924", 1) end
   end
-end
+end)
 
-function npc_elder_Gin:on_interaction()
+npc_elder_Gin:register_event("on_interaction", function()
   if game:get_value("b1699") then
     game:start_dialog("gin.2.council")
   elseif game:get_value("i1032") > 2 then
@@ -141,9 +141,9 @@ function npc_elder_Gin:on_interaction()
       if game:get_value("i1068") >= 1 then game:start_dialog("gin.0.council_gerudo") end
     end)
   end
-end
+end)
 
-function npc_elder_Zelda:on_interaction()
+npc_elder_Zelda:register_event("on_interaction", function()
   if game:get_value("b1699") then
     game:start_dialog("zelda.2.council", game:get_player_name())
   else
@@ -157,9 +157,9 @@ function npc_elder_Zelda:on_interaction()
       end
     end)
   end
-end
+end)
 
-function npc_elder_Larin:on_interaction()
+npc_elder_Larin:register_event("on_interaction", function()
   if game:get_value("b1699") then
     game:start_dialog("larin.2.council")
   elseif game:get_value("i1032") > 2 then
@@ -167,9 +167,9 @@ function npc_elder_Larin:on_interaction()
   else
     game:start_dialog("larin.0.council")
   end
-end
+end)
 
-function npc_elder_Gonpho:on_interaction()
+npc_elder_Gonpho:register_event("on_interaction", function()
   if game:get_value("b1699") then
     game:start_dialog("gonpho.1.council")
   elseif game:get_value("i1032") > 2 then
@@ -177,12 +177,12 @@ function npc_elder_Gonpho:on_interaction()
   else
     game:start_dialog("gonpho.0.council")
   end
-end
-function np2_elder_Gonpho:on_interaction()
+end)
+np2_elder_Gonpho:register_event("on_interaction", function()
   game:start_dialog("gonpho.0.office")
-end
+end)
 
-function npc_elder_Koshi:on_interaction()
+npc_elder_Koshi:register_event("on_interaction", function()
   if game:get_value("b1699") then
     game:start_dialog("koshi.1.council")
   elseif game:get_value("i1032") > 2 then
@@ -190,10 +190,10 @@ function npc_elder_Koshi:on_interaction()
   else
     game:start_dialog("koshi.0.council")
   end
-end
-function np2_elder_Koshi:on_interaction()
+end)
+np2_elder_Koshi:register_event("on_interaction", function()
   game:start_dialog("koshi.0.office")
-end
+end)
 
 function sensor_sleep:on_activated()
   game:start_dialog("_sleep_bed", function(answer)
@@ -737,36 +737,36 @@ function npc_attendant_dialog()
   elseif game:get_value("b1061") then game:start_dialog("council_attendant.2")
   elseif game:get_value("b1033") then game:start_dialog("council_attendant.8") end
 end
-function npc_attendant:on_interaction()
+npc_attendant:register_event("on_interaction", function()
   if game:get_value("i1032") >= 3 then
     game:start_dialog("council_attendant.1", npc_attendant_dialog)
   else
     game:start_dialog("council_attendant.0")
   end
-end
+end)
+
+np1_guard:register_event("on_interaction", function()
+  game:start_dialog("guard.0.throne")
+end)
+np2_guard:register_event("on_interaction", function()
+  game:start_dialog("guard.0.throne")
+end)
+np3_guard:register_event("on_interaction", function()
+  game:start_dialog("guard.0.castle")
+end)
+np4_guard:register_event("on_interaction", function()
+  game:start_dialog("guard.0.castle")
+end)
+np5_guard:register_event("on_interaction", function()
+  game:start_dialog("guard.0.council")
+end)
+np6_guard:register_event("on_interaction", function()
+  game:start_dialog("guard.0.council")
+end)
+np7_guard:register_event("on_interaction", function()
+  game:start_dialog("guard.0.attic")
+end)
 
 function sensor_door_throne:on_activated()
   map:open_doors("door_throne")
-end
-
-function np1_guard:on_interaction()
-  game:start_dialog("guard.0.throne")
-end
-function np2_guard:on_interaction()
-  game:start_dialog("guard.0.throne")
-end
-function np3_guard:on_interaction()
-  game:start_dialog("guard.0.castle")
-end
-function np4_guard:on_interaction()
-  game:start_dialog("guard.0.castle")
-end
-function np5_guard:on_interaction()
-  game:start_dialog("guard.0.council")
-end
-function np6_guard:on_interaction()
-  game:start_dialog("guard.0.council")
-end
-function np7_guard:on_interaction()
-  game:start_dialog("guard.0.attic")
 end

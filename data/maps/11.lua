@@ -151,27 +151,27 @@ function sensor_festival_dialog:on_activated()
       m:set_distance(8)
       m:start(npc_francis)
       sol.timer.start(400, function()
-        game:set_dialog_position("top")
+        game:set_dialog_position("top"); game:set_dialog_name("Francis")
         game:start_dialog("francis.1.festival", function()
           npc_tristan:get_sprite():set_animation("pose2")
-          game:set_dialog_position("bottom")
+          game:set_dialog_position("bottom"); game:set_dialog_name("Tristan")
           game:start_dialog("tristan.0.festival_response", game:get_player_name(), function()
-            game:set_dialog_position("top")
+            game:set_dialog_position("top"); game:set_dialog_name("Francis")
             game:start_dialog("francis.1.festival_race", function(answer)
               if answer == 1 then
-	       game:set_value("i1028", 1)
+                game:set_value("i1028", 1)
                 if game:has_item("lamp") then
-                  game:set_dialog_position("bottom")
+                  game:set_dialog_position("bottom"); game:set_dialog_name("Tristan")
                   game:start_dialog("tristan.0.festival_rules", function()
                     random_walk(npc_jarred)
-		  random_walk(npc_francis)
+                    random_walk(npc_francis)
                   end)
                 else
-                  game:set_dialog_position("bottom")
+                  game:set_dialog_position("bottom"); game:set_dialog_name("Tristan")
                   game:start_dialog("tristan.0.festival_lamp")
                 end
               else
-                game:set_dialog_position("bottom")
+                game:set_dialog_position("bottom"); game:set_dialog_name("Tristan")
                 game:start_dialog("tristan.0.festival_no")
               end
             end)
@@ -180,6 +180,7 @@ function sensor_festival_dialog:on_activated()
       end)
     end)
   elseif game:get_value("i1028") > 1 and game:get_value("i1028") <= 3 then
+    game:set_dialog_position("bottom"); game:set_dialog_name("Tristan")
     game:start_dialog("tristan.0.festival_underway")
   end
 end
@@ -208,6 +209,7 @@ end
 function sensor_race:on_activated()
   if game:get_value("i1028") > 1 and game:get_value("i1028") <= 3 then
     if hero:get_direction() == 1 then
+      game:set_dialog_position("bottom"); game:set_dialog_name("Tristan")
       game:start_dialog("tristan.0.festival_underway")
     end
   end
@@ -224,6 +226,7 @@ function sensor_ordona_speak:on_activated()
         local previous_tone = game:get_map_tone()
         game:set_map_tone(32,64,128,255)
       end
+      game:set_dialog_name("Ordona")
       game:start_dialog("ordona.8.village", game:get_player_name(), function()
         sol.timer.start(500, function()
           if game:get_time_of_day() ~= "night" then game:set_map_tone(previous_tone) end
@@ -245,6 +248,7 @@ function sensor_ordona_speak:on_activated()
         game:set_map_tone(32,64,128,255)
       end
       game:set_value("i1027", 5)
+      game:set_dialog_name("Ordona")
       game:start_dialog("ordona.1.village", game:get_player_name(), function()
         sol.timer.start(500, function()
           if game:get_time_of_day() ~= "night" then game:set_map_tone(previous_tone) end
@@ -259,7 +263,7 @@ function sensor_ordona_speak:on_activated()
   end
 end
 
-function npc_tern:on_interaction()
+npc_tern:register_event("on_interaction", function()
   if game:get_value("i1027") <= 5 then
     if game:get_value("i1028") > 1 and game:get_value("i1028") <= 3 then
       game:start_dialog("tern.0.festival_race")
@@ -267,9 +271,9 @@ function npc_tern:on_interaction()
       game:start_dialog("tern.0.festival")
     end
   else game:start_dialog("tern.1.ranch") end
-end
+end)
 
-function npc_tristan:on_interaction()
+npc_tristan:register_event("on_interaction", function()
   if game:get_value("i1028") == 1 then
     if game:has_item("lamp") then
       game:start_dialog("tristan.0.festival_rules")
@@ -299,7 +303,7 @@ function npc_tristan:on_interaction()
       end
     end)
   end
-end
+end)
 
 function torch_1:on_interaction()
   if torch_1:get_sprite():get_animation() == "unlit" then map:get_game():start_dialog("torch.need_lamp") end
