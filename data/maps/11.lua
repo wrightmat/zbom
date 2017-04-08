@@ -144,6 +144,7 @@ end
 function sensor_festival_dialog:on_activated()
   if game:get_value("i1027") < 3 and game:get_value("i1028") == 0 and hero:get_direction() == 1 then
     npc_tristan:get_sprite():set_animation("pose1")
+    game:set_dialog_name("Tristan")
     game:start_dialog("tristan.0.festival", game:get_player_name(), function()
       local m = sol.movement.create("jump")
       sol.audio.play_sound("jump")

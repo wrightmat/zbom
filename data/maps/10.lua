@@ -52,6 +52,7 @@ function map:on_started(destination)
       m:set_speed(32)
       m:start(npc_jarred)
       sol.timer.start(400, function()
+        game:set_dialog_name("Jarred")
         game:start_dialog("jarred.0.festival", game:get_player_name(), function()
           sol.audio.play_sound("jump")
           m:set_direction8(6) -- Face down to indicate speaking.
