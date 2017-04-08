@@ -2,6 +2,8 @@ local entity = ...
 local game = entity:get_game()
 local map = entity:get_game():get_map()
 local hero = entity:get_game():get_hero()
+local name = string.sub(entity:get_name(), 5):gsub("^%l", string.upper)
+local font, font_size = sol.language.get_dialog_font()
 
 if game:get_value("i1602")==nil then game:set_value("i1602", 0) end
 if game:get_value("i1911")==nil then game:set_value("i1911", 0) end
@@ -37,9 +39,10 @@ function entity:on_created()
 end
 
 function entity:on_interaction()
-  -- First, make the NPC face the hero when interacting
+  -- First, make the NPC face the hero when interacting and put name above the dialog box.
   self:get_sprite():set_direction(self:get_direction4_to(hero))
-
+  game:set_dialog_name(name)
+  
   if map:get_id() == "17" then
     -- Outside of Deacon's house.
     if game:get_value("i1602") == 3 then
@@ -87,8 +90,6 @@ end
 
 function entity:on_post_draw()
   -- Draw the NPC's name above the entity.
-  local name = string.sub(entity:get_name(), 5):gsub("^%l", string.upper)
-  local font = sol.language.get_dialog_font()
   local name_surface = sol.text_surface.create({ font = font, font_size = 8, text = name })
   local x, y, l = entity:get_position()
   local w, h = entity:get_sprite():get_size()

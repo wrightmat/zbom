@@ -349,7 +349,6 @@ end
 
 
 function chests_man:on_interaction()
-  game:set_dialog_style("default")
   -- Chest game dialog.
   if playing_chests then
     -- The player is already playing: tell him to choose a chest.
@@ -358,7 +357,7 @@ function chests_man:on_interaction()
     -- See if the player can still play.
     if unauthorized then
       -- The player already won the wallet, so discourage play.
-      game:start_dialog("chest_game.not_allowed", chests_question_dialog_finished)
+      game:start_dialog("chest_game.not_allowed", nil, "test", chests_question_dialog_finished)
     else
       if not already_played_game_1 then
         -- First time: long dialog with the game rules.
@@ -372,7 +371,6 @@ function chests_man:on_interaction()
 end
 
 function slots_man:on_interaction()
-  game:set_dialog_style("default")
   -- slots game dialog
   if playing_slots then
     -- The player is already playing: tell him to stop the reels.
@@ -722,7 +720,6 @@ function shop_item_3:on_buying()
 end
 
 function npc_shopkeeper:on_interaction()
-  game:set_dialog_style("default")
   if math.random(4) == 1 and game:get_item("rupee_bag"):get_variant() < 2 then
     -- Randomly mention the bigger wallet.
     game:start_dialog("shopkeep.1")
@@ -732,7 +729,6 @@ function npc_shopkeeper:on_interaction()
 end
 
 function npc_attendant_dialog()
-  game:set_dialog_style("default")
   if game:get_value("b1170") then game:start_dialog("council_attendant.7")
   elseif game:get_value("b1150") then game:start_dialog("council_attendant.6")
   elseif game:get_value("b1134") then game:start_dialog("council_attendant.5")
@@ -742,7 +738,6 @@ function npc_attendant_dialog()
   elseif game:get_value("b1033") then game:start_dialog("council_attendant.8") end
 end
 function npc_attendant:on_interaction()
-  game:set_dialog_style("default")
   if game:get_value("i1032") >= 3 then
     game:start_dialog("council_attendant.1", npc_attendant_dialog)
   else

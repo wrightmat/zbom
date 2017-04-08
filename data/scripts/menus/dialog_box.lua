@@ -5,6 +5,7 @@ local dialog_box = {
   dialog = nil,                -- Dialog being displayed or nil.
   first = true,                -- Whether this is the first dialog of a sequence.
   style = nil,                 -- "default", "wood", "stone" or "empty".
+  name = nil,                  -- Name to display above the dialog box (for example, of an NPC)
   vertical_position = "auto",  -- "auto", "top" or "bottom".
   skip_mode = nil,             -- "none", "current", "all" or "unchanged".
   icon_index = nil,            -- Index of the 16x16 icon in hud/dialog_icons.png or nil.
@@ -49,7 +50,7 @@ local box_height = 60
 -- Initializes the dialog box system.
 function game:initialize_dialog_box()
   game.dialog_box = dialog_box
-
+  
   -- Initialize dialog box data.
   dialog_box.line_surfaces.default = {}
   dialog_box.current_line_surface = dialog_box.line_surfaces.default
@@ -120,6 +121,10 @@ function game:set_dialog_style(style)
     dialog_box.box_img = sol.surface.create("hud/dialog_box.png")
     dialog_box.end_lines_sprite:set_animation("default")
   end
+end
+
+function game:set_dialog_name(name)
+  dialog_box.name = name
 end
 
 -- Sets the vertical position of the dialog box for subsequent dialogs.
@@ -201,14 +206,14 @@ function dialog_box:on_finished()
   -- Remove overriden command effects.
   game:set_custom_command_effect("action", nil)
   game:set_custom_command_effect("attack", nil)
-
-  -- Restore default style.
+  
+  -- Restore default style and name.
   game:set_dialog_style("default")
+  game:set_dialog_name(nil)
 end
 
 -- A dialog starts (not necessarily the first one of its sequence).
 function dialog_box:show_dialog()
-
   -- Initialize this dialog.
   local dialog = self.dialog
 
@@ -276,7 +281,6 @@ end
 -- Shows the next dialog of the sequence.
 -- Closes the dialog box if there is no next dialog.
 function dialog_box:show_next_dialog()
-
   local next_dialog_id
   if self.selected_answer ~= 2 then
     -- No question or first answer
@@ -311,12 +315,12 @@ end
 -- Shows the next dialog (if any) if there are no remaining lines.
 function dialog_box:show_more_lines()
   self.gradual = true
-    
+  
   if not self:has_more_lines() then
     self:show_next_dialog()
     return
   end
-
+  
   -- Hide the action icon and change the sword icon.
   game:set_custom_command_effect("action", nil)
   if self.skip_mode ~= "none" then
@@ -325,7 +329,7 @@ function dialog_box:show_more_lines()
   else
     game:set_custom_command_effect("attack", nil)
   end
-
+  
   -- Prepare the 3 lines.
   for i = 1, nb_visible_lines do
     for _, line_surface in pairs(self.line_surfaces) do line_surface[i]:set_text("") end
@@ -474,7 +478,6 @@ end
 -- If the 3 lines were already finished, the next group of 3 lines starts
 -- (if any).
 function dialog_box:show_all_now()
-
   if self:is_full() then
     self:show_more_lines()
   else
@@ -500,7 +503,6 @@ end
 
 function dialog_box:on_command_pressed(command)
   if command == "action" then
-
     -- Display more lines.
     if self:is_full() then
       self:show_more_lines()
@@ -509,7 +511,6 @@ function dialog_box:on_command_pressed(command)
     end
 
   elseif command == "attack" then
-
     -- Attempt to skip the dialog.
     if self.skip_mode == "all" then
       self.skipped = true
@@ -519,9 +520,7 @@ function dialog_box:on_command_pressed(command)
     elseif self.skip_mode == "current" then
       self:show_all_now()
     end
-
   elseif command == "up" or command == "down" then
-
     if self.selected_answer ~= nil
         and not self:has_more_lines()
         and self:is_full() then
@@ -538,9 +537,9 @@ end
 
 function dialog_box:on_draw(dst_surface)
   local x, y = self.box_dst_position.x, self.box_dst_position.y
-
+  
   self.dialog_surface:clear()
-
+  
   if self.style == "empty" then
     -- Draw a dark rectangle.
     dst_surface:fill_color({0, 0, 0}, x, y, 220, 60)
@@ -548,7 +547,16 @@ function dialog_box:on_draw(dst_surface)
     -- Draw the dialog box.
     self.box_img:draw_region(0, 0, box_width, box_height, self.dialog_surface, x, y)
   end
-
+  
+  -- Draw the name (if applicable).
+  if dialog_box.name ~= nil then
+    local font, font_size = sol.language.get_dialog_font()
+    local name_surface = sol.text_surface.create({ font = font, font_size = font_size, text = dialog_box.name, color = {0,0,0} })
+    name_surface:draw(self.dialog_surface, x + 10, y - 5)
+    local name_surface = sol.text_surface.create({ font = font, font_size = font_size, text = dialog_box.name, color = {255,255,255} })
+    name_surface:draw(self.dialog_surface, x + 11, y - 4)
+  end
+  
   -- Draw the text.
   local text_x = x + (self.icon_index == nil and 12 or 48) --16 or 48
   local text_y = y - 1

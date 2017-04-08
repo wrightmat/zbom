@@ -2,6 +2,8 @@ local entity = ...
 local game = entity:get_game()
 local map = entity:get_game():get_map()
 local hero = game:get_map():get_entity("hero")
+local name = string.sub(entity:get_name(), 5):gsub("^%l", string.upper):gsub("_", " ")
+local font, font_size = sol.language.get_dialog_font()
 
 -- Generic NPC script which prevents the hero from being stuck
 -- behind non-traversable moving characters (primarily for intro).
@@ -35,10 +37,9 @@ function entity:on_created()
   -- Don't allow NPC to traverse other NPCs when moving.
   self:set_traversable_by("npc", false)
   self:set_traversable_by("custom_entity", false)
-
+  
   sol.timer.start(self, 1000, function()
-    -- If too close to the hero, become traversable so as not to trap hero in a corner.
-    -- TODO in the future? Check to see if the movement type is "target" because it's only needed when the NPC is following and this does odd things on "random_path" movements.
+    -- If too close to the hero (and moving), become traversable so as not to trap hero in a corner.
     if self:get_movement() ~= nil then
       local _, _, layer = self:get_position()
       local _, _, hero_layer = map:get_hero():get_position()
@@ -58,10 +59,15 @@ function entity:on_movement_changed(movement)
   entity:get_sprite():set_direction(direction)
 end
 
+function entity:on_interaction()
+  self:get_sprite():set_direction(self:get_direction4_to(hero))
+  -- This doesn't run (because a map function also exists), which I believe is an engine bug.
+  -- Leaving it here so the NPC name will display when the bug is fixed.
+  game:set_dialog_name(name)
+end
+
 function entity:on_post_draw()
   -- Draw the NPC's name above the entity.
-  local name = string.sub(entity:get_name(), 5):gsub("^%l", string.upper):gsub("_", " ")
-  local font = sol.language.get_dialog_font()
   local name_surface = sol.text_surface.create({ font = font, font_size = 8, text = name })
   local x, y, l = entity:get_position()
   local w, h = entity:get_sprite():get_size()
