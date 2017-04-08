@@ -357,7 +357,7 @@ function chests_man:on_interaction()
     -- See if the player can still play.
     if unauthorized then
       -- The player already won the wallet, so discourage play.
-      game:start_dialog("chest_game.not_allowed", nil, "test", chests_question_dialog_finished)
+      game:start_dialog("chest_game.not_allowed", chests_question_dialog_finished)
     else
       if not already_played_game_1 then
         -- First time: long dialog with the game rules.
