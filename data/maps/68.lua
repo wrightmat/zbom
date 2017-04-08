@@ -46,7 +46,7 @@ function map:on_started(destination)
   if dialog_timer ~= nil then dialog_timer = nil end -- Shut the ghost up :)
 end
 
-function npc_dampeh:on_interaction()
+npc_dampeh:register_event("on_interaction", function()
   game:set_dialog_style("default")
   game:start_dialog("dampeh.2.mausoleum")
-end
+end)

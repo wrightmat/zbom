@@ -16,7 +16,7 @@ function map:on_started(destination)
   end
 end
 
-function npc_vojas:on_interaction()
+npc_vojas:register_event("on_interaction", function()
   if game:get_value("b2030") then
     game:start_dialog("zora.1.trading", function()
         -- Give him the scale, get the frozen fish (no choice this time)
@@ -30,4 +30,4 @@ function npc_vojas:on_interaction()
   else
     game:start_dialog("zora.1.ruto")
   end
-end
+end)

@@ -35,10 +35,10 @@ function map:on_started(destination)
   end
 end
 
-function npc_poko:on_interaction()
+npc_poko:register_event("on_interaction", function()
   game:start_dialog("anouki_1."..anouki_talk..".snowpeak")
   if anouki_talk == 0 then anouki_talk = 1 else anouki_talk = 0 end
-end
+end)
 
 function sensor_snow_drift_1:on_activated()
   x, y, l = map:get_hero():get_position()

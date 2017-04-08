@@ -26,7 +26,7 @@ for enemy in map:get_entities("pincer") do
   end
 end
 
-function npc_mijas:on_interaction()
+npc_mijas:register_event("on_interaction", function()
   sol.audio.play_sound("zora")
   if game:get_item("tunic"):get_variant() < 3 then
     game:start_dialog("zora.0.tunic")
@@ -36,9 +36,9 @@ function npc_mijas:on_interaction()
     game:start_dialog("zora.0.domain_"..rand)
     local last_rand = rand
   end
-end
+end)
 
-function npc_zorir:on_interaction()
+npc_zorir:register_event("on_interaction", function()
   sol.audio.play_sound("zora")
   if game:get_item("tunic"):get_variant() < 3 then
     game:start_dialog("zora.0.tunic")
@@ -48,17 +48,17 @@ function npc_zorir:on_interaction()
     game:start_dialog("zora.0.domain_"..rand)
     local last_rand = rand
   end
-end
+end)
 
-function npc_peja:on_interaction()
+npc_peja:register_event("on_interaction", function()
   sol.audio.play_sound("zora")
   local rand = math.random(4)
   if rand == last_rand then rand = math.random(4) end
   game:start_dialog("zora.0.domain_"..rand)
   local last_rand = rand
-end
+end)
 
-function npc_arin:on_interaction()
+npc_arin:register_event("on_interaction", function()
   sol.audio.play_sound("zora")
   if game:get_value("b2029") then
     game:start_dialog("zora.0.trading", function(answer)
@@ -78,7 +78,7 @@ function npc_arin:on_interaction()
   else
     game:start_dialog("zora.0.domain")
   end
-end
+end)
 
 function reset_ground_1:on_activated()
   game:get_hero():reset_solid_ground()

@@ -33,14 +33,14 @@ function map:on_started(destination)
   end
 end
 
-function npc_araeki:on_interaction()
+npc_araeki:register_event("on_interaction", function()
   game:start_dialog("gerudo.3.desert")
-end
+end)
 
-function npc_ibari:on_interaction()
+npc_ibari:register_event("on_interaction", function()
   game:start_dialog("gerudo.3.desert")
-end
+end)
 
-function npc_hesla:on_interaction()
+npc_hesla:register_event("on_interaction", function()
   game:start_dialog("hesla.6.desert")
-end
+end)

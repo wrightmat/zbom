@@ -6326,16 +6326,6 @@ destination{
   direction = 1,
 }
 
-npc{
-  name = "npc_rudy",
-  layer = 0,
-  x = 272,
-  y = 109,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/ordon_rudy",
-}
-
 destructible{
   layer = 0,
   x = 96,
@@ -7432,6 +7422,18 @@ destination{
   x = 176,
   y = 1733,
   direction = 3,
+}
+
+custom_entity{
+  name = "npc_rudy",
+  layer = 0,
+  x = 272,
+  y = 117,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/ordon_rudy",
+  model = "npc_generic",
 }
 
 tile{

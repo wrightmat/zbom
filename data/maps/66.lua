@@ -43,26 +43,26 @@ function map:on_started(destination)
   end
 end
 
-function npc_botoglo:on_interaction()
+npc_botoglo:register_event("on_interaction", function()
   if game:get_value("b1699") then
     game:start_dialog("goron1.0.goron_city_mine")
   else
     game:start_dialog("goron1.0.goron_city")
   end
-end
+end)
 
-function npc_golo:on_interaction()
+npc_golo:register_event("on_interaction", function()
   if game:get_value("b1699") then
     game:start_dialog("goron2.0.goron_city_mine")
   else
     game:start_dialog("goron2.0.goron_city")
   end
-end
+end)
 
-function npc_rogulo:on_interaction()
+npc_rogulo:register_event("on_interaction", function()
   game:start_dialog("goron3.0.goron_city")
-end
+end)
 
-function npc_dotombo:on_interaction()
+npc_dotombo:register_event("on_interaction", function()
   game:start_dialog("goron4.0.goron_city")
-end
+end)

@@ -43,7 +43,7 @@ function map:on_started(destination)
   end
 end
 
-function npc_isan:on_interaction()
+npc_isan:register_event("on_interaction", function()
   if game:get_value("b2031") then
     game:start_dialog("isan.0.trading", function(answer)
       if answer == 1 then
@@ -87,9 +87,9 @@ function npc_isan:on_interaction()
       game:set_value("i1912", game:get_value("i1912")+1)
     end)
   end
-end
+end)
 
-function npc_witch:on_interaction()
+npc_witch:register_event("on_interaction", function()
   if game:get_value("i1840") >= 5 then
     game:start_dialog("witch.1.house")
   elseif game:get_value("b2024") then
@@ -111,7 +111,7 @@ function npc_witch:on_interaction()
   else
     game:start_dialog("witch.0.house")
   end
-end
+end)
 
 function shelf_1:on_interaction()
   game:start_dialog("library_shelf.1")
@@ -324,40 +324,40 @@ function npc_kasuto_4:on_interaction()
   game:start_dialog("hylian_4.0.kasuto")
 end
 
-function npc_sisil:on_interaction()
+npc_sisil:register_event("on_interaction", function()
   game:start_dialog("gerudo_1.0.nabooru")
-end
-function npc_mubeis:on_interaction()
+end)
+npc_mubeis:register_event("on_interaction", function()
   game:start_dialog("gerudo_2.0.nabooru")
-end
-function npc_gruce:on_interaction()
+end)
+npc_gruce:register_event("on_interaction", function()
   game:start_dialog("gruce.0.nabooru", function() game:get_value("i1230", 1) end)
-end
+end)
 
-function np1_zora_Guard:on_interaction()
+np1_zora_Guard:register_event("on_interaction", function()
   game:start_dialog("zora_guard.0.great_hall")
-end
-function np2_zora_Guard:on_interaction()
+end)
+np2_zora_Guard:register_event("on_interaction", function()
   game:start_dialog("zora_guard.0.great_hall")
-end
-function np3_zora_Guard:on_interaction()
+end)
+np3_zora_Guard:register_event("on_interaction", function()
   game:start_dialog("zora_guard.0.great_hall")
-end
-function np4_zora_Guard:on_interaction()
+end)
+np4_zora_Guard:register_event("on_interaction", function()
   game:start_dialog("zora_guard.0.great_hall")
-end
+end)
 
-function npc_ejon:on_interaction()
+npc_ejon:register_event("on_interaction", function()
   game:start_dialog("zora_1.0.ruto")
-end
-function npc_lula:on_interaction()
+end)
+npc_lula:register_event("on_interaction", function()
   game:start_dialog("zora_2.0.ruto")
-end
-function npc_nura:on_interaction()
+end)
+npc_nura:register_event("on_interaction", function()
   game:start_dialog("zora_3.0.ruto")
-end
+end)
 
-function npc_ralis:on_interaction()
+npc_ralis:register_event("on_interaction", function()
   -- If player still doesn't have flippers, give them.
   if zora_king_spoken and not game:get_value("b1816") then
     game:start_dialog("zora_king.0.flippers", function()
@@ -367,25 +367,25 @@ function npc_ralis:on_interaction()
   game:start_dialog("zora_king.0.great_hall", function()
     zora_king_spoken = true
   end)
-end
+end)
 
-function npc_priest:on_interaction()
+npc_priest:register_event("on_interaction", function()
   if priest_spoken then
     game:start_dialog("priest.0.explain")
   else
     game:start_dialog("priest.0.sanctuary", function() priest_spoken = true end)
   end
-end
+end)
 
-function npc_mr_Write:on_interaction()
+npc_mr_Write:register_event("on_interaction", function()
   -- Mr. Write is enabled only when the books are found, so no need to do the check here.
   game:start_dialog("mr_write.0.house", function()
     map:get_hero():start_treasure("crystal") -- Give a total of 5 Magic Crystals.
     game:set_value("i1834", game:get_value("i1834"+4))
   end)
-end
+end)
 
-function npc_sanday:on_interaction()
+npc_sanday:register_event("on_interaction", function()
   -- If hero has spoken with Mosq (astronomer) the dialog changes.
   if game:get_value("astronomer_spoken") and game:get_value("sanday_spoken") then
     game:start_dialog("sanday.1.house")
@@ -393,9 +393,9 @@ function npc_sanday:on_interaction()
     game:start_dialog("sanday.0.house")
     game:set_value("sanday_spoken", true)
   end
-end
+end)
 
-function npc_mayor:on_interaction()
+npc_mayor:register_event("on_interaction", function()
   if game:get_max_life() >= 40 and game:get_item("world_map"):get_variant() < 3 then
     game:start_dialog("mayor.1.kasuto", function()
       hero:start_treasure("world_map", 3)
@@ -405,4 +405,4 @@ function npc_mayor:on_interaction()
   else
     game:start_dialog("mayor.2.kasuto")
   end
-end
+end)

@@ -28,11 +28,11 @@ function map:on_started(destination)
   end
 end
 
-function npc_leto:on_interaction()
+npc_leto:register_event("on_interaction", function()
   if game:get_value("b1150") then
     game:start_dialog("anouki_2.2.snowpeak")
   else
     game:start_dialog("anouki_2."..anouki_talk..".snowpeak")
     if anouki_talk == 0 then anouki_talk = 1 else anouki_talk = 0 end
   end
-end
+end)

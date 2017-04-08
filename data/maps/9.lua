@@ -33,8 +33,7 @@ function map:on_started(destination)
   end
 end
 
-function npc_rudy:on_interaction()
-  game:set_dialog_style("default")
+npc_rudy:register_event("on_interaction", function()
   if game:get_value("i1902") == 0 then   -- General dialogs for low Rep.
     game:start_dialog("rudy.0", rudy_reputation)
   elseif game:get_value("i1841") == 4 then
@@ -124,7 +123,7 @@ function npc_rudy:on_interaction()
       game:set_value("i1601", 1)
     end
   end
-end
+end)
 
 function sensor_leaving:on_activated()
   if game:get_ability("sword") == 0 then

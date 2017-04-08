@@ -44,7 +44,7 @@ function map:on_started(destination)
   end
 end
 
-function npc_mosq:on_interaction()
+npc_mosq:register_event("on_interaction", function()
   game:set_value("astronomer_spoken", true)
   if game:get_value("b2023") then
    game:start_dialog("astronomer.0.trading", function(answer)
@@ -64,6 +64,22 @@ function npc_mosq:on_interaction()
   else
    game:start_dialog("astronomer.0.house")
   end
+end)
+
+npc_araeki:register_event("on_interaction", function()
+  game:start_dialog("gerudo.3.desert")
+end)
+
+npc_ibari:register_event("on_interaction", function()
+  game:start_dialog("gerudo.3.desert")
+end)
+
+npc_hesla:register_event("on_interaction", function()
+  game:start_dialog("hesla.6.desert")
+end)
+
+function npc_tokay_chef:on_interaction()
+  game:start_dialog("chef.0.house")
 end
 
 function npc_tokay_jade:on_interaction()
@@ -109,20 +125,4 @@ function npc_tokay_plume:on_interaction()
       hero:start_treasure("plume")
     end
   end)
-end
-
-function npc_tokay_chef:on_interaction()
-  game:start_dialog("chef.0.house")
-end
-
-function npc_araeki:on_interaction()
-  game:start_dialog("gerudo.3.desert")
-end
-
-function npc_ibari:on_interaction()
-  game:start_dialog("gerudo.3.desert")
-end
-
-function npc_hesla:on_interaction()
-  game:start_dialog("hesla.6.desert")
 end

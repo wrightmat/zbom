@@ -83,30 +83,30 @@ function map:on_started(destination)
   end
 end
 
-function npc_dagrazo:on_interaction()
+npc_dagrazo:register_event("on_interaction", function()
   if game:get_value("b1699") then
     game:start_dialog("goron5.0.goron_city_mine")
   else
     game:start_dialog("goron5.0.goron_city")
   end
-end
+end)
 
-function npc_rokdo:on_interaction()
+npc_rokdo:register_event("on_interaction", function()
   if game:get_value("b1699") then
     game:start_dialog("goron6.0.goron_city_mine")
   else
     game:start_dialog("goron6.0.goron_city")
   end
-end
+end)
 
-function npc_dudoggo:on_interaction()
+npc_dudoggo:register_event("on_interaction", function()
   if game:get_value("b1699") then
     game:start_dialog("goron7.0.goron_city_mine")
   else
     game:start_dialog("goron7.0.goron_city")
   end
-end
+end)
 
-function npc_galen:on_interaction()
+npc_galen:register_event("on_interaction", function()
   game:start_dialog("galen.2.outside")
-end
+end)
