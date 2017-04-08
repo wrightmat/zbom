@@ -59,12 +59,12 @@ function entity:on_movement_changed(movement)
   entity:get_sprite():set_direction(direction)
 end
 
-function entity:on_interaction()
-  self:get_sprite():set_direction(self:get_direction4_to(hero))
+entity:register_event("on_interaction", function()
+  entity:get_sprite():set_direction(entity:get_direction4_to(hero))
   -- This doesn't run (because a map function also exists), which I believe is an engine bug.
   -- Leaving it here so the NPC name will display when the bug is fixed.
   game:set_dialog_name(name)
-end
+end)
 
 function entity:on_post_draw()
   -- Draw the NPC's name above the entity.
