@@ -46,13 +46,13 @@ function map:on_started(destination)
   end
 end
 
-function npc_ildus:on_interaction()
+npc_ildus:register_event("on_interaction", function()
   if game:get_value("b1117") then
     game:start_dialog("ildus.1.outside")
   else
     game:start_dialog("ildus.0.outside")
   end
-end
+end)
 
 function sensor_music:on_activated()
   if hero:get_direction() == 3 then sol.audio.play_music("town_kakariko") end

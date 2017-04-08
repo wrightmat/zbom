@@ -50,9 +50,9 @@ function map:on_started(destination)
   random_walk(np1_guard)
 end
 
-function np1_guard:on_interaction()
+np1_guard:register_event("on_interaction", function()
   game:start_dialog("guard.0.outside")
-end
-function np2_guard:on_interaction()
+end)
+np2_guard:register_event("on_interaction", function()
   game:start_dialog("guard.0.outside")
-end
+end)

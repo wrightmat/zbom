@@ -83,7 +83,7 @@ function map:on_started(destination)
   end
 end
 
-function npc_dargor:on_interaction()
+npc_dargor:register_event("on_interaction", function()
   if game:get_value("i1914") == 1 then
     sol.audio.play_sound("goron_happy")
     game:start_dialog("dargor.1.house", function()
@@ -104,9 +104,9 @@ function npc_dargor:on_interaction()
       game:set_value("i1914", game:get_value("i1914")+1)
     end)
   end
-end
+end)
 
-function npc_galen:on_interaction()
+npc_galen:register_event("on_interaction", function()
   if game:get_value("b1699") then
     game:start_dialog("galen.3.house")
   elseif game:get_value("i1029") == 1 then
@@ -121,13 +121,13 @@ function npc_galen:on_interaction()
       game:set_value("i1916", game:get_value("i1916")+1)
     end)
   end
-end
+end)
 
-function npc_osgor:on_interaction()
+npc_osgor:register_event("on_interaction", function()
   game:start_dialog("osgor.0.house")
-end
+end)
 
-function npc_gor_Larin:on_interaction()
+npc_gor_Larin:register_event("on_interaction", function()
   sol.audio.play_sound("goron_happy")
   if game:get_value("b1699") then
     game:start_dialog("larin.3.house")
@@ -136,9 +136,9 @@ function npc_gor_Larin:on_interaction()
   else
     game:start_dialog("larin.1.house")
   end
-end
+end)
 
-function npc_bomro:on_interaction()
+npc_bomro:register_event("on_interaction", function()
   if not game:has_item("bomb_bag") then
     sol.audio.play_sound("goron_question")
     game:start_dialog("goron_smith.0.shop", function(answer)
@@ -167,9 +167,9 @@ function npc_bomro:on_interaction()
     sol.audio.play_sound("goron_happy")
     game:start_dialog("goron_smith.1.shop")
   end
-end
+end)
 
-function npc_mikato:on_interaction()
+npc_mikato:register_event("on_interaction", function()
   if game:get_value("b2028") then
     sol.audio.play_sound("goron_question")
     game:start_dialog("goron.0.trading", function(answer)
@@ -192,7 +192,7 @@ function npc_mikato:on_interaction()
     sol.audio.play_sound("goron_sad")
     game:start_dialog("goron.0.house")
   end
-end
+end)
 
 function inn_bed:on_activated()
   game:switch_time_of_day()
@@ -241,15 +241,15 @@ function innkeeper_sensor:on_interaction()
     end
   end)
 end
-function npc_nakno:on_interaction()
+npc_nakno:register_event("on_interaction", function()
   innkeeper_sensor:on_interaction()
-end
+end)
 
-function npc_tokbomo:on_interaction()
+npc_tokbomo:register_event("on_interaction", function()
   if math.random(4) == 1 then
     -- Randomly mention the bigger wallet
     game:start_dialog("shopkeep.1")
   else
     game:start_dialog("shopkeep.0")
   end
-end
+end)

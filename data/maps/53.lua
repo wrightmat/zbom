@@ -50,7 +50,7 @@ function map:on_started(destination)
   end
 end
 
-function npc_inuk:on_interaction()
+npc_inuk:register_event("on_interaction", function()
   if not game:get_value("b1117") then
     -- If at least Mausoleum not completed, suggest going there instead.
     game:start_dialog("anouki_3.0.snowpeak", function()
@@ -60,4 +60,4 @@ function npc_inuk:on_interaction()
     game:start_dialog("anouki_3."..anouki_talk..".snowpeak")
     if anouki_talk == 0 then anouki_talk = 1 else anouki_talk = 0 end
   end
-end
+end)

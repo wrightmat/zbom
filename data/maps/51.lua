@@ -53,18 +53,15 @@ function map:on_started(destination)
   end
 end
 
-function npc_warun:on_interaction()
-  game:set_dialog_style("default")
+npc_warun:register_event("on_interaction", function()
   game:start_dialog("warun.0")
-end
+end)
 
-function npc_moriss:on_interaction()
-  game:set_dialog_style("default")
+npc_moriss:register_event("on_interaction", function()
   game:start_dialog("moriss.0.show")
-end
+end)
 
-function npc_rowin:on_interaction()
-  game:set_dialog_style("default")
+npc_rowin:register_event("on_interaction", function()
   if game:get_value("i1920") == 1 then
     game:start_dialog("rowin.1.show", function()
       game:set_value("i1920", game:get_value("i1920")+1)
@@ -74,10 +71,11 @@ function npc_rowin:on_interaction()
   else
     game:start_dialog("rowin.0.show")
   end
-end
+end)
 
 function sensor_show:on_activated()
   if game:get_time_of_day() == "night" and game:get_value("i1920") < 3 then
+    game:set_dialog_name("Etnaya")
     game:start_dialog("etnaya.1.show", function()
       sensor_show:set_enabled(false)
     end)

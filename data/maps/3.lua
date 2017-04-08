@@ -52,33 +52,33 @@ function map:on_started()
   end
 end
 
-function npc_quinn:on_interaction()
+npc_quinn:register_event("on_interaction", function()
   if game:get_value("b1150") then
     game:start_dialog("rito_3.1.septen")
   else
     game:start_dialog("rito_3.0.septen")
   end
-end
+end)
 
-function npc_vogoli:on_interaction()
+npc_vogoli:register_event("on_interaction", function()
   game:set_dialog_style("default")
   if game:is_dungeon_finished(7) then
     game:start_dialog("rito_4.1.septen")
   else
     game:start_dialog("rito_4.0.septen")
   end
-end
+end)
 
-function npc_negili:on_interaction()
+npc_negili:register_event("on_interaction", function()
   game:set_dialog_style("default")
   if not game:get_value("b1150") then
     game:start_dialog("rito_5.0.septen")
   else
     game:start_dialog("rito_5.1.septen")
   end
-end
+end)
 
-function npc_podoli:on_interaction()
+npc_podoli:register_event("on_interaction", function()
   if game:get_value("b2032") then
     game:start_dialog("rito.0.trading", function(answer)
       if answer == 1 then
@@ -98,11 +98,11 @@ function npc_podoli:on_interaction()
   else
     game:start_dialog("rito.0.trading_hint")
   end
-end
+end)
 
-function npc_revin:on_interaction()
+npc_revin:register_event("on_interaction", function()
   game:start_dialog("shopkeep.0")
-end
+end)
 
 if shop_world_map_2 ~= nil then
   function shop_world_map_2:on_interaction()

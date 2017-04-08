@@ -130,7 +130,7 @@ function inn_bed:on_activated()
   end)
 end
 
-function npc_strap:on_interaction()
+npc_strap:register_event("on_interaction", function()
   if game:get_time_of_day() == "night" and not game:get_value("b1812") then
     game:start_dialog("strap.0.night", function()
       quest_bottle:remove()
@@ -144,21 +144,21 @@ function npc_strap:on_interaction()
       game:start_dialog("shopkeep.0")
     end
   end
-end
-function np2_strap:on_interaction()
+end)
+np2_strap:register_event("on_interaction", function()
   game:start_dialog("strap.0.pub")
-end
+end)
 
-function npc_warbos:on_interaction()
+npc_warbos:register_event("on_interaction", function()
   if math.random(4) == 1 and game:get_item("rupee_bag"):get_variant() < 2 then
     -- Randomly mention the bigger wallet
     game:start_dialog("shopkeep.1")
   else
     game:start_dialog("shopkeep.0")
   end
-end
+end)
 
-function npc_etnaya:on_interaction()
+npc_etnaya:register_event("on_interaction", function()
   local rand = math.random(4)
   if rand == 1 then
     -- Randomly mention the show
@@ -166,13 +166,13 @@ function npc_etnaya:on_interaction()
   else
     game:start_dialog("etnaya.0")
   end
-end
+end)
 
-function npc_gartan:on_interaction()
+npc_gartan:register_event("on_interaction", function()
   game:start_dialog("gartan.0.pub")
-end
+end)
 
-function npc_moriss:on_interaction()
+npc_moriss:register_event("on_interaction", function()
   if game:get_value("i1920") > 0 then
     game:start_dialog("moriss.1.pub", game:get_player_name())
   else
@@ -180,9 +180,9 @@ function npc_moriss:on_interaction()
       game:set_value("i1919", 1)
     end)
   end
-end
+end)
 
-function npc_rowin:on_interaction()
+npc_rowin:register_event("on_interaction", function()
   if game:get_value("i1920") >= 2 then
     game:start_dialog("rowin.2.pub")
   else
@@ -190,9 +190,9 @@ function npc_rowin:on_interaction()
       game:set_value("i1920", 1)
     end)
   end
-end
+end)
 
-function npc_architect:on_interaction()
+npc_architect:register_event("on_interaction", function()
   if game:get_value("i1927") >= 1 then
     if game:get_value("i1926") >= 2 then
       game:start_dialog("architect.3.house")
@@ -207,11 +207,11 @@ function npc_architect:on_interaction()
   else
     game:start_dialog("architect.0.house")
   end
-end
+end)
 
-function npc_horwin:on_interaction()
+npc_horwin:register_event("on_interaction", function()
   game:start_dialog("rito_carpenter.2.kakariko")
-end
+end)
 
 function npc_garroth_sensor:on_interaction()
   if game:get_value("i1918") <= 5 then
@@ -248,9 +248,9 @@ function npc_garroth_sensor:on_interaction()
   end
 end
 
-function npc_turt:on_interaction()
+npc_turt:register_event("on_interaction", function()
   game:start_dialog("turt.0.behind_counter")
-end
+end)
 
 function npc_turt_sensor:on_interaction()
   game:start_dialog("turt.0.inn", function(answer)
