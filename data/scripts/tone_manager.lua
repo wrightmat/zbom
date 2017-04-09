@@ -50,58 +50,10 @@ function tone_manager:create(game)
     game:set_value("tg", tg)
     game:set_value("tb", tb)
   end
-  
-  function game:set_time(hour)  
-    if (hour >= 7 and hour < 17) then
-      game:set_value("time_of_day", "day")
-    elseif hour >= 20 or hour < 5 then
-      game:set_value("time_of_day", "night")
-    end
     
-    tone_menu:get_new_tone()
-    
-    d = 1
-    cr = tr
-    cg = tg
-    cb = tb
-    
-  	self:restart_tone_system()	
-  end
-  
-  function game:get_time()
-    return game:get_value("hour_of_day")
-  end
-  
   function game:set_time_flow(int)
     time_flow = int
     self:restart_tone_system()
-  end
-  
-  -- Returns/sets the current time of day
-  function game:get_time_of_day()
-    if game:get_value("time_of_day") == nil then game:set_value("time_of_day", "day") end
-    return game:get_value("time_of_day")
-  end
-  
-  function game:switch_time_of_day()
-    -- Function called when sleeping.
-    -- Sleeping during day takes player to 2000 (8pm) and sleeping at night takes us to 0800 (8am).
-    if game:get_value("time_of_day") == "day" then
-      game:set_value("time_of_day", "night")
-      game:set_time(20)
-      minute = 0
-      for entity in game:get_map():get_entities("night_") do
-        entity:set_enabled(true)
-      end
-    else
-      game:set_value("time_of_day", "day")
-      game:set_time(8)
-      minute = 0
-      for entity in game:get_map():get_entities("night_") do
-        entity:set_enabled(false)
-      end
-    end
-    return true
   end
   
   function game:set_map_tone(r,g,b,a)

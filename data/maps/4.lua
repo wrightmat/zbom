@@ -100,16 +100,6 @@ end
 
 function inn_bed:on_activated()
   game:switch_time_of_day()
-  if game:get_time_of_day() == "day" then
-    for entity in map:get_entities("night_") do
-      entity:set_enabled(false)
-    end
-    night_overlay = nil
-  else
-    for entity in map:get_entities("night_") do
-      entity:set_enabled(true)
-    end
-  end
   snores:set_enabled(true)
   bed:set_enabled(true)
   bed:get_sprite():set_animation("hero_sleeping")
@@ -253,6 +243,7 @@ npc_turt:register_event("on_interaction", function()
 end)
 
 function npc_turt_sensor:on_interaction()
+  game:set_dialog_name("Turt")
   game:start_dialog("turt.0.inn", function(answer)
     if answer == 1 then
       game:remove_money(20)

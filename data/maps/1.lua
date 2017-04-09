@@ -246,16 +246,6 @@ end
 
 function house_bed:on_activated()
   game:switch_time_of_day()
-  if game:get_time_of_day() == "day" then
-    for entity in map:get_entities("night_") do
-      entity:set_enabled(false)
-    end
-    night_overlay = nil
-  else
-    for entity in map:get_entities("night_") do
-      entity:set_enabled(true)
-    end
-  end
   snores:set_enabled(true)
   bed:set_enabled(true)
   bed:get_sprite():set_animation("hero_sleeping")

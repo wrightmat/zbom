@@ -101,6 +101,52 @@ function game:is_in_dungeon()
   return self:get_dungeon() ~= nil
 end
 
+function game:set_time(hour)  
+  if (hour >= 7 and hour < 17) then
+    game:set_value("time_of_day", "day")
+  elseif hour >= 20 or hour < 5 then
+    game:set_value("time_of_day", "night")
+  end
+  game:set_value("hour_of_day", hour)
+  
+  d = 1
+  cr = tr
+  cg = tg
+  cb = tb
+  game:restart_tone_system()	
+end
+
+function game:get_time()
+  return game:get_value("hour_of_day")
+end
+
+-- Returns the current time of day
+function game:get_time_of_day()
+  if game:get_value("time_of_day") == nil then game:set_value("time_of_day", "day") end
+  return game:get_value("time_of_day")
+end
+  
+function game:switch_time_of_day()
+  -- Function called when sleeping.
+  -- Sleeping during day takes player to 2000 (8pm) and sleeping at night takes us to 0800 (8am).
+  if game:get_time_of_day() == "day" then
+    game:set_value("time_of_day", "night")
+    game:set_time(20)
+    minute = 0
+    for entity in game:get_map():get_entities("night_") do
+      entity:set_enabled(true)
+    end
+  else
+    game:set_value("time_of_day", "day")
+    game:set_time(8)
+    minute = 0
+    for entity in game:get_map():get_entities("night_") do
+      entity:set_enabled(false)
+    end
+  end
+  return true
+end
+
 local function apply_game_fixes(game)
   -- Issue with savegame variable of wrong type, introduced in 1.1 and fixed in 1.2
   if game:get_value("i1808") == true or game:get_value("i1808") == false then game:set_value("i1808", 1) end
