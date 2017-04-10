@@ -2,7 +2,6 @@ local submenu = require("scripts/menus/pause_submenu")
 local options_submenu = submenu:new()
 
 function options_submenu:on_started()
-  
   submenu.on_started(self)
   
   local font, font_size = sol.language.get_menu_font()
@@ -65,7 +64,6 @@ function options_submenu:on_started()
   self.joypad_texts = {}
   self.command_names = { "action", "attack", "item_1", "item_2", "pause", "left", "right", "up", "down" }
   for i = 1, #self.command_names do
-
     self.command_texts[i] = sol.text_surface.create{
       horizontal_alignment = "left",
       vertical_alignment = "top",
@@ -73,14 +71,12 @@ function options_submenu:on_started()
       font_size = font_size,
       text_key = "options.command." .. self.command_names[i],
     }
-
     self.keyboard_texts[i] = sol.text_surface.create{
       horizontal_alignment = "left",
       vertical_alignment = "top",
       font = font,
       font_size = font_size,
     }
-
     self.joypad_texts[i] = sol.text_surface.create{
       horizontal_alignment = "left",
       vertical_alignment = "top",
