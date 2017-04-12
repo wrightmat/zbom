@@ -6595,6 +6595,7 @@ destructible{
 }
 
 stream{
+  name = "stream_1",
   layer = 0,
   x = 768,
   y = 901,
@@ -6831,6 +6832,7 @@ teletransporter{
 }
 
 stream{
+  name = "stream_2",
   layer = 0,
   x = 784,
   y = 909,
@@ -7080,6 +7082,24 @@ tile{
   width = 16,
   height = 16,
   pattern = "1926",
+}
+
+tile{
+  layer = 1,
+  x = 696,
+  y = 912,
+  width = 32,
+  height = 8,
+  pattern = "1603",
+}
+
+tile{
+  layer = 1,
+  x = 984,
+  y = 760,
+  width = 32,
+  height = 8,
+  pattern = "1603",
 }
 
 npc{

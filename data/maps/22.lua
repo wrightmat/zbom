@@ -21,6 +21,9 @@ function map:on_started(destination)
         boss_gohma:set_enabled(true)
       end
     end
+  else
+    stream_1:remove()
+    stream_2:remove()
   end
   if game:get_value("i1068") < 6 then
     npc_tokay_Chef:remove()
@@ -81,6 +84,8 @@ if boss_gohma ~= nil then
     to_book_chamber:set_enabled(true)
     to_temple_boss:set_enabled(false)
     to_temple_jade:set_enabled(false)
+    stream_1:remove()
+    stream_2:remove()
     sol.audio.play_sound("secret")
   end)
   game:set_value("b1058", true)

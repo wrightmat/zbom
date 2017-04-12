@@ -242,7 +242,7 @@ function quest_status_submenu:set_cursor_position(position)
     else
       self.cursor_sprite_y = 172
     end
-    if position == 8 then
+    if position == 8 or position = 0 then
       self.game:set_custom_command_effect("action", "change")
     else
       self.game:set_custom_command_effect("action", nil)
@@ -339,6 +339,7 @@ function quest_status_submenu:on_command_pressed(command)
         self.quest_dialog_state = 1
         handled = true
       elseif self.cursor_position == 0 then
+        -- Cursor is over Quests Details
         if self.quest_cursor_position > self.quests_main_num then
           if sol.language.get_dialog("_quests." .. self.quests_side_list[self.quest_cursor_position - self.quests_main_num] .. "." .. self.game:get_value(self.quests_side_list[self.quest_cursor_position - self.quests_main_num])) ~= nil then
             sol.audio.play_sound("message_end")
