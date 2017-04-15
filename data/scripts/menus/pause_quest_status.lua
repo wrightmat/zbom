@@ -242,7 +242,7 @@ function quest_status_submenu:set_cursor_position(position)
     else
       self.cursor_sprite_y = 172
     end
-    if position == 8 or position = 0 then
+    if position == 8 or position == 0 then
       self.game:set_custom_command_effect("action", "change")
     else
       self.game:set_custom_command_effect("action", nil)
