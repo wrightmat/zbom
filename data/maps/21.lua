@@ -34,8 +34,7 @@ function map:on_started(destination)
       sol.timer.start(1000, function()
         sol.audio.play_sound("monkey")
         game:start_dialog("monkey1.1.grove", function()
-          game:get_item("book_mudora"):set_variant(0) -- Take away book page.
-          game:set_value("b1061", false)
+          game:get_item("book_mudora"):set_variant(game:get_item("book_mudora"):get_variant() - 1) -- Take away book page.
           sol.timer.start(300, function()
             sol.audio.play_sound("monkey")
             monkey_sprite:set_animation("jumping")

@@ -10,8 +10,8 @@ local game_lost = false
 
 function game_won()
   game:start_dialog("monkey.1.game_right", function()
-    game:get_hero():start_treasure("book_mudora", 2) -- Give back Book piece.
-    game:set_value("b1061", true)
+    local book_variant = game:get_item("book_mudora"):get_variant() + 1
+    map:get_hero():start_treasure("book_mudora", book_variant) -- Give back Book piece.
     game:set_value("i1068", 9) -- Game won.
     sol.audio.play_music("faron_woods") -- Map music is "same as before", so we have to set it.
     sol.timer.start(map, 1000, function() map:get_hero():teleport("20", "from_game") end)
