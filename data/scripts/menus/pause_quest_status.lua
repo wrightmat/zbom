@@ -26,7 +26,7 @@ function quest_status_submenu:on_started()
   self.quests_highest_visible = 0
   self.quests_visible_y = 0
   self.quests_main_list = { "i1027", "i1029", "i1030", "i1032", "i1068", "i1807" }
-  self.quests_side_list = { "i1601", "i1602", "i1603", "i1604", "i1605", "i1606", "i1607", "i1608", "i1615", "i1631" }
+  self.quests_side_list = { "i1601", "i1602", "i1603", "i1604", "i1605", "i1606", "i1607", "i1608", "i1615", "i1631", "i1840" }
   for i = 1, #self.quests_main_list do
     self.quests_texts[i] = sol.text_surface.create{
       horizontal_alignment = "left",
