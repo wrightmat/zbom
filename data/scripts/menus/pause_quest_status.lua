@@ -26,13 +26,13 @@ function quest_status_submenu:on_started()
   self.quests_visible_y = 0
   self.quests_main_list = { "i1027", "i1029", "i1030", "i1032", "i1068", "i1807" }
   self.quests_side_list = { "i1601", "i1602", "i1603", "i1604", "i1605", "i1606", "i1607", "i1608", "i1615", "i1631", "i1840" }
+
+  -- If quest has been initialized, add to the quest list first.
   for i = 1, #self.quests_main_list do
-    -- If quest has been initialized, add to the quest list.
-    if self.game:get_value(self.quests_main_list[i]) ~= nil and self.game:get_value(self.quests_main_list[i]) > 0 then
-      self.quests_num = self.quests_num + 1
-      -- If quest is complete, show it and count it, but it should be greyed out.
-      if sol.language.get_dialog("_quests." .. self.quests_main_list[i] .. "." .. self.game:get_value(self.quests_main_list[i])) ~= nil then
-        self.quests_texts[i] = sol.text_surface.create{
+    if self.game:get_value(self.quests_main_list[i]) ~= nil and self.game:get_value(self.quests_main_list[i]) > 0 then -- If quest is initialized...
+      if sol.language.get_dialog("_quests." .. self.quests_main_list[i] .. "." .. self.game:get_value(self.quests_main_list[i])) ~= nil then -- and not completed...
+        self.quests_num = self.quests_num + 1
+        self.quests_texts[self.quests_num] = sol.text_surface.create{
           horizontal_alignment = "left",
           vertical_alignment = "top",
           font = font,
@@ -40,37 +40,54 @@ function quest_status_submenu:on_started()
           color = {0,0,0},
           text_key = "quests.title." .. self.quests_main_list[i]
         }
-      else
-        self.quests_texts[i] = sol.text_surface.create{
+        self.quests_saves[self.quests_num] = self.quests_main_list[i]
+        self.quests_icons[self.quests_num] = sol.sprite.create("menus/quest_icons")
+        self.quests_icons[self.quests_num]:set_direction(1)
+      end
+    end
+  end
+  for j = 1, #self.quests_side_list do
+    if self.game:get_value(self.quests_side_list[j]) ~= nil and self.game:get_value(self.quests_side_list[j]) > 0 then -- If quest is initialized...
+      if sol.language.get_dialog("_quests." .. self.quests_side_list[j] .. "." .. self.game:get_value(self.quests_side_list[j])) ~= nil then -- and not complete...
+        self.quests_num = self.quests_num + 1
+        self.quests_texts[self.quests_num] = sol.text_surface.create{
           horizontal_alignment = "left",
           vertical_alignment = "top",
           font = font,
           font_size = 7,
-          color = {220,220,220},
-          text_key = "quests.title." .. self.quests_main_list[i]
+          color = {0,0,0},
+          text_key = "quests.title." .. self.quests_side_list[j]
         }
+        self.quests_saves[self.quests_num] = self.quests_side_list[j]
+        self.quests_icons[self.quests_num] = sol.sprite.create("menus/quest_icons")
+        self.quests_icons[self.quests_num]:set_direction(0)
       end
-      self.quests_saves[self.quests_num] = self.quests_main_list[i]
-      self.quests_icons[self.quests_num] = sol.sprite.create("menus/quest_icons")
-      self.quests_icons[self.quests_num]:set_direction(1)
     end
   end
 
-  for j = 1, #self.quests_side_list do
-    -- If quest has been initialized, add to the quest list.
-    if self.game:get_value(self.quests_side_list[j]) ~= nil and self.game:get_value(self.quests_side_list[j]) > 0 then
-      self.quests_num = self.quests_num + 1
-      -- If quest is complete, show it and count it, but it should be greyed out.
-      if sol.language.get_dialog("_quests." .. self.quests_side_list[j] .. "." .. self.game:get_value(self.quests_side_list[j])) ~= nil then
+  -- If quest is complete, show it and count it, but it should be greyed out (and displayed last).
+  for i = 1, #self.quests_main_list do
+    if self.game:get_value(self.quests_main_list[i]) ~= nil and self.game:get_value(self.quests_main_list[i]) > 0 then
+      if sol.language.get_dialog("_quests." .. self.quests_main_list[i] .. "." .. self.game:get_value(self.quests_main_list[i])) == nil then
+        self.quests_num = self.quests_num + 1
         self.quests_texts[self.quests_num] = sol.text_surface.create{
           horizontal_alignment = "left",
           vertical_alignment = "top",
           font = font,
           font_size = 7,
-          color = {0,0,0},
-          text_key = "quests.title." .. self.quests_side_list[j]
+          color = {220,220,220},
+          text_key = "quests.title." .. self.quests_main_list[i]
         }
-      else
+        self.quests_saves[self.quests_num] = self.quests_main_list[i]
+        self.quests_icons[self.quests_num] = sol.sprite.create("menus/quest_icons")
+        self.quests_icons[self.quests_num]:set_direction(1)
+      end
+    end
+  end
+  for j = 1, #self.quests_side_list do
+    if self.game:get_value(self.quests_side_list[j]) ~= nil and self.game:get_value(self.quests_side_list[j]) > 0 then
+    if sol.language.get_dialog("_quests." .. self.quests_side_list[j] .. "." .. self.game:get_value(self.quests_side_list[j])) == nil then
+      self.quests_num = self.quests_num + 1
         self.quests_texts[self.quests_num] = sol.text_surface.create{
           horizontal_alignment = "left",
           vertical_alignment = "top",
@@ -79,10 +96,10 @@ function quest_status_submenu:on_started()
           color = {220,220,220},
           text_key = "quests.title." .. self.quests_side_list[j]
         }
+        self.quests_saves[self.quests_num] = self.quests_side_list[j]
+        self.quests_icons[self.quests_num] = sol.sprite.create("menus/quest_icons")
+        self.quests_icons[self.quests_num]:set_direction(0)
       end
-      self.quests_saves[self.quests_num] = self.quests_side_list[j]
-      self.quests_icons[self.quests_num] = sol.sprite.create("menus/quest_icons")
-      self.quests_icons[self.quests_num]:set_direction(0)
     end
   end
   
