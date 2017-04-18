@@ -18,67 +18,71 @@ function quest_status_submenu:on_started()
   self.quest_dialog_state = 0
   self.caption_text_keys = {}
   
-  self.quests_main_num = 0
   self.quests_num = 0
   self.quests_texts = {}
   self.quests_icons = {}
-  self.quests_stats = {}
+  self.quests_saves = {}
   self.quests_highest_visible = 0
   self.quests_visible_y = 0
   self.quests_main_list = { "i1027", "i1029", "i1030", "i1032", "i1068", "i1807" }
   self.quests_side_list = { "i1601", "i1602", "i1603", "i1604", "i1605", "i1606", "i1607", "i1608", "i1615", "i1631", "i1840" }
   for i = 1, #self.quests_main_list do
-    self.quests_texts[i] = sol.text_surface.create{
-      horizontal_alignment = "left",
-      vertical_alignment = "top",
-      font = font,
-      font_size = 7,
-      text_key = "quests.title." .. self.quests_main_list[i],
-    }
-    self.quests_icons[i] = sol.sprite.create("menus/quest_icons")
-    self.quests_icons[i]:set_direction(1)
-    self.quests_main_num = i
-    if self.game:get_value(self.quests_main_list[i]) ~= nil then
+    -- If quest has been initialized, add to the quest list.
+    if self.game:get_value(self.quests_main_list[i]) ~= nil and self.game:get_value(self.quests_main_list[i]) > 0 then
+      self.quests_num = self.quests_num + 1
+      -- If quest is complete, show it and count it, but it should be greyed out.
       if sol.language.get_dialog("_quests." .. self.quests_main_list[i] .. "." .. self.game:get_value(self.quests_main_list[i])) ~= nil then
-        self.quests_texts[i]:set_color({0,0,0})
+        self.quests_texts[i] = sol.text_surface.create{
+          horizontal_alignment = "left",
+          vertical_alignment = "top",
+          font = font,
+          font_size = 7,
+          color = {0,0,0},
+          text_key = "quests.title." .. self.quests_main_list[i]
+        }
       else
-        self.quests_texts[i]:set_color({220,220,220})
-        self.quests_stats[i] = 1 -- Quest completed
+        self.quests_texts[i] = sol.text_surface.create{
+          horizontal_alignment = "left",
+          vertical_alignment = "top",
+          font = font,
+          font_size = 7,
+          color = {220,220,220},
+          text_key = "quests.title." .. self.quests_main_list[i]
+        }
       end
-      if self.game:get_value(self.quests_main_list[i]) == 0 then
-        self.quests_stats[i] = -1 -- Quest not initialized
-      else
-        self.quests_stats[i] = 0 -- Quest started
-      end
-    else
-      self.quests_stats[i] = -1 -- Quest not initialized
+      self.quests_saves[self.quests_num] = self.quests_main_list[i]
+      self.quests_icons[self.quests_num] = sol.sprite.create("menus/quest_icons")
+      self.quests_icons[self.quests_num]:set_direction(1)
     end
   end
+
   for j = 1, #self.quests_side_list do
-    self.quests_texts[self.quests_main_num + j] = sol.text_surface.create{
-      horizontal_alignment = "left",
-      vertical_alignment = "top",
-      font = font,
-      font_size = 7,
-      text_key = "quests.title." .. self.quests_side_list[j],
-    }
-    self.quests_icons[self.quests_main_num + j] = sol.sprite.create("menus/quest_icons")
-    self.quests_icons[self.quests_main_num + j]:set_direction(0)
-    self.quests_num = self.quests_main_num + j
-    if self.game:get_value(self.quests_side_list[j]) ~= nil then
+    -- If quest has been initialized, add to the quest list.
+    if self.game:get_value(self.quests_side_list[j]) ~= nil and self.game:get_value(self.quests_side_list[j]) > 0 then
+      self.quests_num = self.quests_num + 1
+      -- If quest is complete, show it and count it, but it should be greyed out.
       if sol.language.get_dialog("_quests." .. self.quests_side_list[j] .. "." .. self.game:get_value(self.quests_side_list[j])) ~= nil then
-        self.quests_texts[self.quests_main_num + j]:set_color({0,0,0})
+        self.quests_texts[self.quests_num] = sol.text_surface.create{
+          horizontal_alignment = "left",
+          vertical_alignment = "top",
+          font = font,
+          font_size = 7,
+          color = {0,0,0},
+          text_key = "quests.title." .. self.quests_side_list[j]
+        }
       else
-        self.quests_texts[self.quests_main_num + j]:set_color({220,220,220})
-        self.quests_stats[self.quests_main_num + j] = 1 -- Quest completed
+        self.quests_texts[self.quests_num] = sol.text_surface.create{
+          horizontal_alignment = "left",
+          vertical_alignment = "top",
+          font = font,
+          font_size = 7,
+          color = {220,220,220},
+          text_key = "quests.title." .. self.quests_side_list[j]
+        }
       end
-      if self.game:get_value(self.quests_side_list[j]) == 0 then
-        self.quests_stats[self.quests_main_num + j] = -1 -- Quest not initialized
-      else
-        self.quests_stats[self.quests_main_num + j] = 0 -- Quest started
-      end
-    else
-      self.quests_stats[self.quests_main_num + j] = -1 -- Quest not initialized
+      self.quests_saves[self.quests_num] = self.quests_side_list[j]
+      self.quests_icons[self.quests_num] = sol.sprite.create("menus/quest_icons")
+      self.quests_icons[self.quests_num]:set_direction(0)
     end
   end
   
@@ -86,11 +90,9 @@ function quest_status_submenu:on_started()
   self.quests_surface:set_xy(87, 81)
   
   for i = 1, #self.quests_texts do
-    if self.quests_stats[i] >= 0 then
-      local y = 13 * i - 5
-      self.quests_icons[i]:draw(self.quests_surface, 10, y)
-      self.quests_texts[i]:draw(self.quests_surface, 6, y - 6)
-    end
+    local y = 13 * i - 5
+    self.quests_icons[i]:draw(self.quests_surface, 10, y)
+    self.quests_texts[i]:draw(self.quests_surface, 6, y - 6)
   end
   
   self.up_arrow_sprite = sol.sprite.create("menus/arrow")
@@ -242,8 +244,10 @@ function quest_status_submenu:set_cursor_position(position)
     else
       self.cursor_sprite_y = 172
     end
-    if position == 8 or position == 0 then
+    if position == 8 then
       self.game:set_custom_command_effect("action", "change")
+    elseif position == 0 then
+      self.game:set_custom_command_effect("action", "info")
     else
       self.game:set_custom_command_effect("action", nil)
     end
@@ -340,20 +344,11 @@ function quest_status_submenu:on_command_pressed(command)
         handled = true
       elseif self.cursor_position == 0 then
         -- Cursor is over Quests Details
-        if self.quest_cursor_position > self.quests_main_num then
-          if sol.language.get_dialog("_quests." .. self.quests_side_list[self.quest_cursor_position - self.quests_main_num] .. "." .. self.game:get_value(self.quests_side_list[self.quest_cursor_position - self.quests_main_num])) ~= nil then
-            sol.audio.play_sound("message_end")
-            self.game:start_dialog("_quests." .. self.quests_side_list[self.quest_cursor_position - self.quests_main_num] .. "." .. self.game:get_value(self.quests_side_list[self.quest_cursor_position - self.quests_main_num]))
-          else
-            sol.audio.play_sound("wrong")
-          end
+        if sol.language.get_dialog("_quests." .. self.quests_saves[self.quest_cursor_position] .. "." .. self.game:get_value(self.quests_saves[self.quest_cursor_position])) ~= nil then
+          sol.audio.play_sound("message_end")
+          self.game:start_dialog("_quests." .. self.quests_saves[self.quest_cursor_position] .. "." .. self.game:get_value(self.quests_saves[self.quest_cursor_position]))
         else
-          if sol.language.get_dialog("_quests." .. self.quests_main_list[self.quest_cursor_position] .. "." .. self.game:get_value(self.quests_main_list[self.quest_cursor_position])) ~= nil then
-            sol.audio.play_sound("message_end")
-            self.game:start_dialog("_quests." .. self.quests_main_list[self.quest_cursor_position] .. "." .. self.game:get_value(self.quests_main_list[self.quest_cursor_position]))
-          else
-            sol.audio.play_sound("wrong")
-          end
+          sol.audio.play_sound("wrong")
         end
       end
     end
