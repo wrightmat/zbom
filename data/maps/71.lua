@@ -37,7 +37,7 @@ function map:on_started(destination)
     end
   end
 
-  if not game:get_value("b1612") or game:get_value("b1812") then
+  if game:get_value("i1612") == nil or game:get_value("i1612") > 1 then
     thief:remove()  -- If not ready for the thief game, or already have the bottle.
   end
 
@@ -75,7 +75,7 @@ function thief_caught()
   m:set_speed(184)
   m:start(thief, function()
     thief:remove()
-    game:set_value("b1612", false)
+    game:set_value("i1612", 2)
   end)
 end
 
@@ -104,7 +104,7 @@ function thief:on_interaction()
   end
 
   thief_timer = sol.timer.start(map, 1000, function()
-    if game:get_value("b1612") then
+    if game:get_value("i1612") == 1 then
       if map:get_hero():get_distance(thief) <= 50 and not caught then
         thief:on_interaction()
         caught = true

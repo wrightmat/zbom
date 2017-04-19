@@ -124,7 +124,7 @@ npc_strap:register_event("on_interaction", function()
   if game:get_time_of_day() == "night" and not game:get_value("b1812") then
     game:start_dialog("strap.0.night", function()
       quest_bottle:remove()
-      game:set_value("b1612", true)
+      game:set_value("i1612", 1)
     end)
   else
     if math.random(4) == 1 and game:get_item("rupee_bag"):get_variant() < 2 then
