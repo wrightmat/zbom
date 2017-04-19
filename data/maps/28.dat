@@ -5010,7 +5010,7 @@ tile{
   x = 552,
   y = 352,
   width = 16,
-  height = 64,
+  height = 48,
   pattern = "524",
 }
 
@@ -6400,6 +6400,15 @@ tile{
   pattern = "155",
 }
 
+tile{
+  layer = 0,
+  x = 552,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "1128",
+}
+
 wall{
   layer = 0,
   x = 808,
@@ -7081,17 +7090,6 @@ destructible{
 destructible{
   layer = 0,
   x = 560,
-  y = 413,
-  treasure_name = "random_woods",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = 1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 560,
   y = 397,
   treasure_name = "random_woods",
   sprite = "entities/bush",
@@ -7446,6 +7444,16 @@ teletransporter{
   transition = "scrolling",
   destination_map = "33",
   destination = "_side",
+}
+
+destructible{
+  layer = 0,
+  x = 560,
+  y = 413,
+  treasure_name = "magic_flask",
+  treasure_variant = 2,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
 }
 
 tile{

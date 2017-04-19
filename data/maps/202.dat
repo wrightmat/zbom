@@ -6230,6 +6230,15 @@ tile{
   pattern = "565",
 }
 
+tile{
+  layer = 0,
+  x = 1960,
+  y = 968,
+  width = 16,
+  height = 16,
+  pattern = "525",
+}
+
 sensor{
   name = "dungeon_room_8_",
   layer = 0,
@@ -7957,6 +7966,15 @@ enemy{
   direction = 3,
   breed = "helmasaur_green",
   treasure_name = "random_enemy",
+}
+
+destructible{
+  layer = 0,
+  x = 1968,
+  y = 981,
+  treasure_name = "magic_flask",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
 }
 
 tile{
