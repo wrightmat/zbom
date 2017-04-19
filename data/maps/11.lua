@@ -41,7 +41,7 @@ function map:on_started(destination)
     random_walk(goat_4)
     random_walk(goat_5)
   else
-    goat_1:remove(); goat_2:remove(); goat_3:remove(); goat_4:remove(); goat_5:remove()
+    goat_1:remove(); goat_2:remove(); goat_3:remove(); goat_4:remove(); goat_5:remove(); npc_tern:remove()
   end
   -- If the festival isn't over, make sure banners, booths and NPCs are outside.
   if game:get_value("i1027") < 5 then
@@ -55,8 +55,6 @@ function map:on_started(destination)
   else
     if game:get_time_of_day() == "day" then
       random_walk(npc_tern)
-    else
-      npc_tern:remove()
     end
     torch_2:remove(); wall_2:remove()
     torch_3:remove(); wall_3:remove()
