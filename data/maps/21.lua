@@ -27,7 +27,7 @@ end
 function map:on_started(destination)
   if destination == from_temple then
     sol.audio.play_music("faron_woods")
-    if game:get_value("b1061") and game:get_value("i1068") < 9 then
+    if game:get_value("b1061") and game:get_value("i1068") < 9 and not game:get_value("b1650") then
       -- Temple is complete- have monkey steal book page and jump away.
       npc_monkey:set_position(648, 752, 2)
       sol.audio.play_sound("monkey")
@@ -74,7 +74,8 @@ function map:on_started(destination)
           end)--timer
         end)--dialog
         hero:unfreeze()
-        game:set_value("i1068", 2)
+        game:set_value("b1650", true)
+        if game:get_value("i1068") < 2 then game:set_value("i1068", 2) end
         sol.timer.start(4000, function() npc_monkey:remove() end)
       end)--timer
     end

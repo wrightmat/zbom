@@ -10,7 +10,7 @@ function map:on_started(destination)
     npc_hesla:remove()
     npc_araeki:remove()
     npc_ibari:remove()
-    npc_tokay_chef:remove()
+    npc_tokay_Chef:remove()
     npc_tokay_alchemy:remove()
     alchemy_stone:remove()
     npc_tokay_crystal:remove()
@@ -25,12 +25,12 @@ function map:on_started(destination)
     sol.audio.play_music("house_zuna")
   end
   if game:get_value("i1068") < 7 then
-    npc_tokay_alchemy:remove()
-    npc_tokay_crystal:remove()
-    npc_tokay_plume:remove()
-    npc_tokay_jade:remove()
-    npc_tokay_amber:remove()
-    npc_tokay_Chef:remove()
+    if npc_tokay_alchemy ~= nil then npc_tokay_alchemy:remove() end
+    if npc_tokay_crystal ~= nil then npc_tokay_crystal:remove() end
+    if npc_tokay_plume ~= nil then npc_tokay_plume:remove() end
+    if npc_tokay_jade ~= nil then npc_tokay_jade:remove() end
+    if npc_tokay_amber ~= nil then npc_tokay_amber:remove() end
+    if npc_tokay_Chef ~= nil then npc_tokay_Chef:remove() end
     alchemy_stone:remove()
     magic_crystal:remove()
     goddess_plume:remove()
@@ -39,9 +39,9 @@ function map:on_started(destination)
   end
   -- Remove Gerudo from houses if they aren't back to the desert yet.
   if game:get_value("i1068") <= 6 then
-    npc_helsa:remove()
-    npc_araeki:remove()
-    npc_ibari:remove()
+    if npc_helsa ~= nil then npc_helsa:remove() end
+    if npc_araeki ~= nil then npc_araeki:remove() end
+    if npc_ibari ~= nil then npc_ibari:remove() end
   end
 end
 
