@@ -75,6 +75,7 @@ function tone_manager:create(game)
       
       local previous_time_system = time_system
       time_system = game:is_in_outside_world() or (map:get_id() == "20" or map:get_id() == "21" or map:get_id() == "22")
+print("Tone overlay: " .. time_system)
       if time_system ~= previous_time_system then mr = nil end
       
       cr, cg, cb = game:get_value("cr"), game:get_value("cg"), game:get_value("cb")

@@ -32,7 +32,7 @@ function map:on_started(destination)
       npc_monkey:set_position(648, 752, 2)
       sol.audio.play_sound("monkey")
       sol.timer.start(1000, function()
-        sol.audio.play_sound("monkey")
+        sol.audio.play_sound("monkey"); game:set_dialog_name("Monkey")
         game:start_dialog("monkey1.1.grove", function()
           game:get_item("book_mudora"):set_variant(game:get_item("book_mudora"):get_variant() - 1) -- Take away book page.
           sol.timer.start(300, function()
@@ -170,7 +170,7 @@ npc_hesla:register_event("on_interaction", function()
 end)
 
 function npc_monkey:on_interaction()
-  sol.audio.play_sound("monkey")
+  sol.audio.play_sound("monkey"); game:set_dialog_name("Monkey")
   if game:get_time_of_day() == "night" then
     game:start_dialog("monkey1.0.grove_night", function()
       sol.audio.play_sound("monkey")

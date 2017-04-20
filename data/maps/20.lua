@@ -62,26 +62,27 @@ function sensor_deku_tokay:on_activated()
   if game:get_value("i1068") < 1 and hero:get_direction() == 2 then -- Only walking left.
     game:set_value("i1068", 1)
     sol.audio.play_sound("tokay")
-    game:set_dialog_position("top")
+    game:set_dialog_position("top"); game:set_dialog_name("Tokay")
     game:start_dialog("tokay.0.faron", function()
       sol.audio.play_sound("deku")
-      game:set_dialog_position("bottom")
+      game:set_dialog_position("bottom"); game:set_dialog_name("Deku")
       game:start_dialog("deku.0.faron")
     end)
   elseif game:get_value("i1068") >= 1 and game:get_value("i1068") < 3 and game:get_value("b1061") then
-    game:set_dialog_position("top")
+    game:set_dialog_position("top"); game:set_dialog_name("Tokay")
     game:start_dialog("tokay.0.desert")
   elseif game:get_value("i1068") >= 3 and game:get_value("i1068") <= 4 and hero:get_direction() == 0 then -- Only walking right.
-    game:set_dialog_position("top")
+    game:set_dialog_position("top"); game:set_dialog_name("Tokay")
     game:start_dialog("tokay.1.desert")
   elseif game:get_value("i1068") == 7 or game:get_value("i1068") == 8 then
     -- Mini-game to retrieve book piece.
-    sol.audio.play_sound("monkey")
+    sol.audio.play_sound("monkey"); game:set_dialog_name("Monkey")
     game:start_dialog("monkey.1.faron", function(answer)
       if answer == 1 then
         game:set_value("i1068", 8)
         game:get_hero():teleport("171")
       else
+        game:set_dialog_name("Monkey")
         game:start_dialog("monkey.1.faron_no")
       end
     end)
@@ -91,20 +92,21 @@ end
 function npc_monkey_1:on_interaction()
   if game:get_value("i1068") == 7 or game:get_value("i1068") == 8 then
     -- Mini-game to retrieve book piece.
-    sol.audio.play_sound("monkey")
+    sol.audio.play_sound("monkey"); game:set_dialog_name("Monkey")
     game:start_dialog("monkey.1.faron", function(answer)
       if answer == 1 then
         game:set_value("i1068", 8)
         game:get_hero():teleport("171")
       else
+        game:set_dialog_name("Monkey")
         game:start_dialog("monkey.1.faron_no")
       end
     end)
   elseif game:get_value("i1068") == 9 then
-    sol.audio.play_sound("monkey")
+    sol.audio.play_sound("monkey"); game:set_dialog_name("Monkey")
     game:start_dialog("monkey.3.faron")
   else
-    sol.audio.play_sound("monkey")
+    sol.audio.play_sound("monkey"); game:set_dialog_name("Monkey")
     game:start_dialog("monkey1.0.faron")
   end
 end
@@ -112,40 +114,42 @@ end
 function npc_monkey_2:on_interaction()
   if game:get_value("i1068") == 7 or game:get_value("i1068") == 8 then
     -- Mini-game to retrieve book piece.
-    sol.audio.play_sound("monkey")
+    sol.audio.play_sound("monkey"); game:set_dialog_name("Monkey")
     game:start_dialog("monkey.1.faron", function(answer)
       if answer == 1 then
         game:set_value("i1068", 8)
         game:get_hero():teleport("171")
       else
+        sol.audio.play_sound("monkey"); game:set_dialog_name("Monkey")
         game:start_dialog("monkey.1.faron_no")
       end
     end)
   elseif game:get_value("i1068") == 9 then
-    sol.audio.play_sound("monkey")
+    sol.audio.play_sound("monkey"); game:set_dialog_name("Monkey")
     game:start_dialog("monkey.3.faron")
   else
-    sol.audio.play_sound("monkey")
+    sol.audio.play_sound("monkey"); game:set_dialog_name("Monkey")
     game:start_dialog("monkey2.0.faron")
   end
 end
 
 function npc_deku_1:on_interaction()
   if game:get_value("i1068") > 6 and game:get_value("i1068") < 9 then
-    sol.audio.play_sound("deku")
+    sol.audio.play_sound("deku"); game:set_dialog_name("Deku")
     game:start_dialog("deku.2.faron")
   elseif game:get_value("i1068") == 9 then
-    sol.audio.play_sound("deku")
+    sol.audio.play_sound("deku"); game:set_dialog_name("Deku")
     game:start_dialog("deku.3.faron")
   else
     if game:get_value("i1032") > 2 then
       repeat -- Make sure the same quote is not picked again.
         index = math.random(5)
       until index ~= last_message
+      sol.audio.play_sound("deku"); game:set_dialog_name("Deku")
       game:start_dialog("deku.4.faron."..index)
       last_message = index
     else
-      sol.audio.play_sound("deku")
+      sol.audio.play_sound("deku"); game:set_dialog_name("Deku")
       game:start_dialog("deku1.1.faron")
     end
   end
@@ -153,20 +157,21 @@ end
 
 function npc_deku_2:on_interaction()
   if game:get_value("i1068") > 6 and game:get_value("i1068") < 9 then
-    sol.audio.play_sound("deku")
+    sol.audio.play_sound("deku"); game:set_dialog_name("Deku")
     game:start_dialog("deku.2.faron")
   elseif game:get_value("i1068") == 9 then
-    sol.audio.play_sound("deku")
+    sol.audio.play_sound("deku"); game:set_dialog_name("Deku")
     game:start_dialog("deku.3.faron")
   else
     if game:get_value("i1032") > 2 then
       repeat -- Make sure the same quote is not picked again.
         index = math.random(5)
       until index ~= last_message
+      sol.audio.play_sound("deku"); game:set_dialog_name("Deku")
       game:start_dialog("deku.4.faron."..index)
       last_message = index
     else
-      sol.audio.play_sound("deku")
+      sol.audio.play_sound("deku"); game:set_dialog_name("Deku")
       game:start_dialog("deku2.1.faron")
     end
   end
@@ -174,20 +179,21 @@ end
 
 function npc_deku_3:on_interaction()
   if game:get_value("i1068") > 6 and game:get_value("i1068") < 9 then
-    sol.audio.play_sound("deku")
+    sol.audio.play_sound("deku"); game:set_dialog_name("Deku")
     game:start_dialog("deku.2.faron")
   elseif game:get_value("i1068") == 9 then
-    sol.audio.play_sound("deku")
+    sol.audio.play_sound("deku"); game:set_dialog_name("Deku")
     game:start_dialog("deku.3.faron")
   else
     if game:get_value("i1032") > 2 then
       repeat -- Make sure the same quote is not picked again.
         index = math.random(5)
       until index ~= last_message
+      sol.audio.play_sound("deku"); game:set_dialog_name("Deku")
       game:start_dialog("deku.4.faron."..index)
       last_message = index
     else
-      sol.audio.play_sound("deku")
+      sol.audio.play_sound("deku"); game:set_dialog_name("Deku")
       game:start_dialog("deku3.1.faron")
     end
   end
@@ -195,25 +201,25 @@ end
 
 function npc_deku_warning:on_interaction()
   if not game:has_item("bow") then
-    sol.audio.play_sound("deku")
+    sol.audio.play_sound("deku"); game:set_dialog_name("Deku")
     game:start_dialog("deku.0.warning")
   else
-    sol.audio.play_sound("deku")
+    sol.audio.play_sound("deku"); game:set_dialog_name("Deku")
     game:start_dialog("deku.4.faron.2")
   end
 end
 
 function npc_tokay_1:on_interaction()
-  sol.audio.play_sound("tokay")
+  sol.audio.play_sound("tokay"); game:set_dialog_name("Tokay")
   game:start_dialog("tokay1.1.faron")
 end
 
 function npc_tokay_2:on_interaction()
-  sol.audio.play_sound("tokay")
+  sol.audio.play_sound("tokay"); game:set_dialog_name("Tokay")
   game:start_dialog("tokay2.1.faron")
 end
 
 function npc_tokay_3:on_interaction()
-  sol.audio.play_sound("tokay")
+  sol.audio.play_sound("tokay"); game:set_dialog_name("Tokay")
   game:start_dialog("tokay3.1.faron")
 end
