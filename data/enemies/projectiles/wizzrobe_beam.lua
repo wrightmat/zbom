@@ -44,6 +44,6 @@ end
 function enemy:on_attacking_hero(hero)
   if type == "ice" and self:get_game():get_item("shield"):get_variant() < 3 then
     hero:start_frozen(2000)
-    hero:set_invincible()
+    hero:set_invincible(true, 3000)
   end
 end

@@ -177,8 +177,8 @@ dialog{
   text = [[
 Brother! my spirit seems to have been
 trapped in this weird statue! Maybe
-something with some explosive power could
-blow me out of this thing...
+something with some explosive power
+could blow me out of this thing...
 ]]
 }
 
@@ -187,7 +187,8 @@ dialog{
   skip = "current",
   text = [[
 Thank you Brother...$0
-Take this magic as a gift from my spirit...
+Take this magic as a gift from
+my spirit...
 ]]
 }
 
@@ -1191,7 +1192,11 @@ dialog{
   id = "_quests.i1029.4",
   text = [[
 Goron Sickness:
-Leave Dargor to mourn for now.
+Leave Dargor to mourn for now.$0
+
+The Gorons are known for their bombs,
+why not check out their shop in
+the mean time?
 ]]
 }
 
@@ -6734,14 +6739,14 @@ dialog{
   text = [[
 Did you know there are creatures called
 $gGreat Fairies$w hiding throughout Hyrule?
-They have incredible magic and can even do
-things like increase your equipment!
-There should be one in the forest, one on
-the mountain, one on the frozen tundra,
-one near the lake, one in the depths of
-the earth, and one in the northern reaches
-of the land. It would do you good to find
-them all!
+They have incredible magic and can even
+do things like increase your equipment!
+There should be one in the forest, one
+on the mountain, one on the frozen
+tundra, one near the lake, one in the
+depths of the earth, and one in the
+northern reaches of the land. It would
+do you good to find them all!
 ]]
 }
 
@@ -6761,12 +6766,13 @@ dialog{
   id = "hylian_1.0.rauru",
   skip = "current",
   text = [[
-Of course I always have an umbrella! You
-must be new here to know how often it
-rains in this area. My theory is that the
-fog from the Forest of Deception in the
-north-west causes the weird weather
-patterns throughout this area of Hyrule.
+Of course I always have an umbrella!
+You must be new here to know how often
+it rains in this area. My theory is
+that the fog from the Forest of
+Deception in the north-west causes the
+weird weather patterns throughout this
+area of Hyrule.
 Do you think that's true?
 ]]
 }
