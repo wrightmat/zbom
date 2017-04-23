@@ -5410,6 +5410,46 @@ tile{
   pattern = "522",
 }
 
+tile{
+  layer = 0,
+  x = 680,
+  y = 912,
+  width = 8,
+  height = 16,
+  pattern = "1109",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 912,
+  width = 64,
+  height = 16,
+  pattern = "1106",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 928,
+  width = 64,
+  height = 16,
+  pattern = "1107",
+}
+
+wall{
+  layer = 0,
+  x = 680,
+  y = 912,
+  width = 8,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
 teletransporter{
   name = "to_F5_water",
   layer = 0,
@@ -5420,15 +5460,6 @@ teletransporter{
   transition = "scrolling",
   destination_map = "56",
   destination = "_side",
-}
-
-sensor{
-  name = "sensor_change_layer",
-  layer = 0,
-  x = 624,
-  y = 909,
-  width = 64,
-  height = 16,
 }
 
 teletransporter{
@@ -5544,19 +5575,6 @@ wall{
   stops_projectiles = true,
 }
 
-wall{
-  layer = 0,
-  x = 680,
-  y = 912,
-  width = 8,
-  height = 16,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
 npc{
   name = "sign.witch",
   layer = 0,
@@ -5619,21 +5637,30 @@ custom_entity{
   model = "quest_plants",
 }
 
+sensor{
+  name = "layer_up_sensor_2",
+  layer = 0,
+  x = 624,
+  y = 933,
+  width = 64,
+  height = 16,
+}
+
 tile{
   layer = 1,
   x = 608,
-  y = 928,
+  y = 912,
   width = 8,
-  height = 192,
-  pattern = "1104",
+  height = 16,
+  pattern = "1103",
 }
 
 tile{
   layer = 1,
   x = 616,
-  y = 928,
+  y = 944,
   width = 64,
-  height = 192,
+  height = 176,
   pattern = "1107",
 }
 
@@ -5651,26 +5678,17 @@ tile{
   x = 616,
   y = 912,
   width = 64,
-  height = 16,
-  pattern = "1106",
+  height = 32,
+  pattern = "250",
 }
 
 tile{
   layer = 1,
   x = 608,
-  y = 912,
+  y = 928,
   width = 8,
-  height = 16,
-  pattern = "1103",
-}
-
-tile{
-  layer = 1,
-  x = 680,
-  y = 912,
-  width = 8,
-  height = 16,
-  pattern = "1109",
+  height = 192,
+  pattern = "1104",
 }
 
 teletransporter{
@@ -5683,6 +5701,15 @@ teletransporter{
   transition = "scrolling",
   destination_map = "56",
   destination = "_side",
+}
+
+sensor{
+  name = "layer_down_sensor_2",
+  layer = 1,
+  x = 624,
+  y = 925,
+  width = 64,
+  height = 16,
 }
 
 tile{
