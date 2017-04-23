@@ -17750,6 +17750,51 @@ tile{
   pattern = "53",
 }
 
+tile{
+  layer = 0,
+  x = 1672,
+  y = 1200,
+  width = 16,
+  height = 16,
+  pattern = "51",
+}
+
+tile{
+  layer = 0,
+  x = 1512,
+  y = 1072,
+  width = 144,
+  height = 160,
+  pattern = "701",
+}
+
+tile{
+  layer = 0,
+  x = 1568,
+  y = 1184,
+  width = 32,
+  height = 32,
+  pattern = "623",
+}
+
+tile{
+  layer = 0,
+  x = 1576,
+  y = 1200,
+  width = 16,
+  height = 16,
+  pattern = "51",
+}
+
+tile{
+  layer = 0,
+  x = 1480,
+  y = 1184,
+  width = 16,
+  height = 16,
+  pattern = "51",
+}
+
 wall{
   layer = 0,
   x = 400,
@@ -19419,17 +19464,6 @@ dynamic_tile{
   enabled_at_start = true,
 }
 
-dynamic_tile{
-  name = "water_1",
-  layer = 0,
-  x = 1512,
-  y = 1072,
-  pattern = "701",
-  width = 144,
-  height = 160,
-  enabled_at_start = true,
-}
-
 stream{
   name = "stream_water_5",
   layer = 0,
@@ -19467,24 +19501,6 @@ destructible{
   layer = 0,
   x = 1680,
   y = 1229,
-  treasure_name = "random",
-  sprite = "entities/pot",
-  destruction_sound = "stone",
-}
-
-destructible{
-  layer = 0,
-  x = 1488,
-  y = 1197,
-  treasure_name = "random",
-  sprite = "entities/pot",
-  destruction_sound = "stone",
-}
-
-destructible{
-  layer = 0,
-  x = 1680,
-  y = 1213,
   treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
@@ -19582,26 +19598,6 @@ stream{
   sprite = "entities/stream_water",
   speed = 96,
   allow_movement = false,
-}
-
-dynamic_tile{
-  name = "tile",
-  layer = 0,
-  x = 1568,
-  y = 1184,
-  pattern = "623",
-  width = 32,
-  height = 32,
-  enabled_at_start = true,
-}
-
-destructible{
-  layer = 0,
-  x = 1576,
-  y = 1213,
-  treasure_name = "random",
-  sprite = "entities/pot",
-  destruction_sound = "stone",
 }
 
 destructible{
@@ -20239,6 +20235,39 @@ enemy{
   treasure_name = "random_enemy",
 }
 
+custom_entity{
+  name = "hook_7",
+  layer = 0,
+  x = 1680,
+  y = 1213,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_8",
+  layer = 0,
+  x = 1584,
+  y = 1213,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_9",
+  layer = 0,
+  x = 1488,
+  y = 1197,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "hook",
+}
+
 tile{
   layer = 1,
   x = 1904,
@@ -20426,6 +20455,33 @@ tile{
   width = 16,
   height = 16,
   pattern = "54",
+}
+
+tile{
+  layer = 1,
+  x = 1672,
+  y = 1184,
+  width = 16,
+  height = 16,
+  pattern = "52",
+}
+
+tile{
+  layer = 1,
+  x = 1576,
+  y = 1184,
+  width = 16,
+  height = 16,
+  pattern = "52",
+}
+
+tile{
+  layer = 1,
+  x = 1480,
+  y = 1168,
+  width = 16,
+  height = 16,
+  pattern = "52",
 }
 
 dynamic_tile{
