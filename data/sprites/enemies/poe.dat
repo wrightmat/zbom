@@ -13,11 +13,13 @@ animation{
 animation{
   name = "hurt",
   src_image = "enemies/poe.png",
+  frame_delay = 50,
+  frame_to_loop_on = 0,
   directions = {
-    { x = 48, y = 104, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
-    { x = 48, y = 104, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
-    { x = 48, y = 80, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
-    { x = 48, y = 80, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 48, y = 104, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 3 },
+    { x = 48, y = 104, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 3 },
+    { x = 48, y = 80, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 3 },
+    { x = 48, y = 80, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 3 },
   },
 }
 animation{
