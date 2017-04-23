@@ -6886,6 +6886,24 @@ tile{
   pattern = "910",
 }
 
+tile{
+  layer = 0,
+  x = 816,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 760,
+  y = 552,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
 sensor{
   name = "sensor_b2",
   layer = 0,
@@ -7042,38 +7060,18 @@ teletransporter{
 enemy{
   name = "lizalfos_1",
   layer = 0,
-  x = 792,
-  y = 629,
+  x = 664,
+  y = 477,
   direction = 0,
   breed = "lizalfos",
   treasure_name = "random_enemy",
-}
-
-wall{
-  name = "obstacle_temple",
-  layer = 0,
-  x = 752,
-  y = 512,
-  width = 16,
-  height = 240,
-  stops_enemies = true,
 }
 
 enemy{
   name = "lizalfos_2",
   layer = 0,
-  x = 784,
-  y = 709,
-  direction = 0,
-  breed = "lizalfos",
-  treasure_name = "random_enemy",
-}
-
-enemy{
-  name = "lizalfos_3",
-  layer = 0,
-  x = 816,
-  y = 661,
+  x = 696,
+  y = 453,
   direction = 0,
   breed = "lizalfos",
   treasure_name = "random_enemy",

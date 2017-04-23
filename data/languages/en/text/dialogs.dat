@@ -6423,6 +6423,16 @@ Try not to bother them.
 }
 
 dialog{
+  id = "guard.0.north_castle",
+  skip = "current",
+  text = [[
+This is$bNorth Castle$w.
+While it may not be as well known as
+$bHyrule Castle$wyet, it's ours!
+]]
+}
+
+dialog{
   id = "guard.0.outside",
   skip = "current",
   text = [[
@@ -8905,16 +8915,38 @@ dialog{
 $v! $0. $0. $0.
 You have done well to put back
 together the$cBook of Mudora$w!
-It is now enchanted and complete, so it
-is finally time for you to seek out the
-$mdark tribe$w . I'm afraid I can no longer
+It is now complete, so it is
+finally time for you to seek out the
+$mdark tribe$w. I'm afraid I can no longer
 see your way, as the$mdarkness$w will
-conceal it.  I can sense a bit of
+conceal it. I can sense a bit of
 $mdark magic$w remaining in the ruins
 east of$bHyrule Castle Town$w. Seek out
 this remaining evil first, and then
 proceed to the dark woods that are
 further east still.
+]]
+}
+
+dialog{
+  id = "ordona.7.septen_3",
+  skip = "current",
+  text = [[
+$v! $0. $0. $0.
+You have done well with your progress
+on the$cBook of Mudora$w!
+It is now closer to complete, but you
+must continue your search.
+I can sense a bit of $mdark magic$w
+remaining, but it's difficult to
+pinpoint. Make sure you've cleansed
+all the areas of Hyrule from evil:
+the Sacred Grove, the Abandoned
+Pyramid, the Mountaintop Mausoleum,
+the Lakebed Lair, and Snowpeak Caverns.
+Seek out any remaining evil first, and
+then proceed to the dark woods that
+are further east still.
 ]]
 }
 
