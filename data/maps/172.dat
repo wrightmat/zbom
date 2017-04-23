@@ -6323,6 +6323,51 @@ enemy{
   treasure_name = "random_enemy",
 }
 
+wall{
+  layer = 0,
+  x = 336,
+  y = 616,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 424,
+  y = 616,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 456,
+  y = 296,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 928,
+  y = 328,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 664,
+  y = 672,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+}
+
 tile{
   layer = 2,
   x = 664,
