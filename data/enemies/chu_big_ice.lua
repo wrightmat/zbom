@@ -10,7 +10,7 @@ local going_hero = false
 local freeze_timer = nil
 
 function enemy:on_created()
-  self:set_life(8); self:set_damage(4)
+  self:set_life(14); self:set_damage(6)
   self:create_sprite("enemies/chu_big_ice")
   self:set_size(48, 48); self:set_origin(24, 43)
   self:set_hurt_style("boss")

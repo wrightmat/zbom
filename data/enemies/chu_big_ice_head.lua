@@ -7,7 +7,7 @@ local initial_xy = {}
 
 function enemy:on_created()
   base = self:get_map():get_entity("miniboss_chu")
-  self:set_life(1); self:set_damage(1)
+  self:set_life(1); self:set_damage(6)
   self:set_size(48, 48); self:set_origin(24, 43)
   self:set_invincible()
   self:set_can_hurt_hero_running(true)

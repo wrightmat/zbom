@@ -2,13 +2,13 @@ local enemy = ...
 local main_sprite = nil
 local claw_sprite = nil
 local nb_sons_created = 0
-local initial_life = 24
+local initial_life = 20
 
 -- Helmaroc Rex: giant bird, boss of Wind Tower.
 -- Hero must hit the bird on the claw section with his sword.
 
 function enemy:on_created()
-  self:set_life(initial_life); self:set_damage(16)
+  self:set_life(initial_life); self:set_damage(10)
   main_sprite = self:create_sprite("enemies/helmaroc_rex")
   claw_sprite = self:create_sprite("enemies/helmaroc_rex")
   claw_sprite:set_animation("claw")

@@ -25,24 +25,24 @@ end
 -- Four heads are created right after the body - these are attacked first.
 function enemy:create_head(color)
   if color == "blue" then
-    -- blue on right
+    -- Blue on right: 3 life
     head = self:create_enemy({name="manhandla_head_blue", breed="manhandla_head", x=12, y=6})
     head.color = "blue"
     head:add_life(2)
     head:get_sprite():set_direction(0)
   elseif color == "purple" then
-    -- purple on top
+    -- Purple on top: 4 life
     head = self:create_enemy({name="manhandla_head_purple", breed="manhandla_head", x=6, y=-24}) -- y=-12
     head.color = "purple"
     head:add_life(3)
     head:get_sprite():set_direction(1)
   elseif color == "green" then
-    -- green goes on left
+    -- Green goes on left: 1 life
     head = self:create_enemy({name="manhandla_head_green", breed="manhandla_head", x=-12, y=6})
     head.color = "green"
     head:get_sprite():set_direction(2)
   elseif color == "red" then
-    -- red on bottom
+    -- Red on bottom: 2 life
     head = self:create_enemy({name="manhandla_head_red", breed="manhandla_head", x=6, y=12})
     head.color = "red"
     head:add_life(1)
@@ -53,7 +53,7 @@ function enemy:create_head(color)
 end
 
 function enemy:on_enabled()
-  -- create one of the heads every second in order from easiest to hardest
+  -- Create one of the heads every second in order from easiest to hardest.
   sol.timer.start(self, 1000, function()
     self:create_head("green")
     sol.timer.start(self, 1000, function()
@@ -76,12 +76,12 @@ end
 function enemy:on_update()
   heads_present = self:get_map():get_entities_count("manhandla_head")
   if heads_present > 0 then
-    -- if there are heads (and how many)
+    -- If there are heads (and how many)
     self:set_attack_consequence("sword", "protected")
     self:set_attack_arrow("protected")
     body_speed = 80
   else
-    -- if only the body is left (only a few more hits until dead!)
+    -- If only the body is left (only a few more hits until dead!)
     self:set_attack_consequence("sword", 1)
     self:set_attack_arrow(1)
     body_speed = 96

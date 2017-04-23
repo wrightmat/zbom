@@ -14,7 +14,7 @@ belahim_second_stage = false
 --       (Light sword does three times as much damage, must hit him 12 times with Forged Sword)
 
 function enemy:on_created()
-  self:set_life(initial_life); self:set_damage(12)
+  self:set_life(initial_life); self:set_damage(16)
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
   self:set_size(64, 64); self:set_origin(32, 56)
   self:set_invincible()

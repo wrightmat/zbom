@@ -3,7 +3,7 @@ local enemy = ...
 -- Stalfos head: a enemy that flies around randomly and freezes the hero if it touches him.
 
 function enemy:on_created()
-  self:set_life(1); self:set_damage(2)
+  self:set_life(1); self:set_damage(4)
   self:create_sprite("enemies/stalfos_head")
   self:set_size(16, 16); self:set_origin(8, 13)
   self:set_attack_consequence("hookshot", "immobilized")

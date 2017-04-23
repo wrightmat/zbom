@@ -15,7 +15,7 @@ local positions = {
 -- Stalfos: An undead soldier boss.
 
 function enemy:on_created()
-  self:set_life(8); self:set_damage(4)
+  self:set_life(16); self:set_damage(6)
   self:create_sprite("enemies/stalfos_knight")
   self:set_size(32, 40); self:set_origin(16, 36)
   self:set_hurt_style("boss")

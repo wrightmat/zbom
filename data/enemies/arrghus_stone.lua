@@ -4,7 +4,7 @@ local map = enemy:get_map()
 -- Stone Arrghus: Miniboss who creates small rocks and has to be hit in the eye to be hurt.
 
 function enemy:on_created()
-  self:set_life(8); self:set_damage(4)
+  self:set_life(10); self:set_damage(4)
   local sprite = self:create_sprite("enemies/arrghus_stone")
   self:set_size(80, 80); self:set_origin(40, 72)
   self:set_hurt_style("boss")

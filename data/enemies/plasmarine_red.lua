@@ -32,8 +32,8 @@ function enemy:on_collision_enemy(other_enemy, other_sprite, my_sprite)
   if other_enemy:get_breed() == "projectiles/plasmarine_ball" then
     if other_sprite:get_direction() == 0 or other_sprite:get_direction() == 1 then
       sol.timer.start(self, 100, function()
-	self:hurt(1)
-	enemy:remove_life(1)
+        self:hurt(1)
+        enemy:remove_life(1)
       end)
     end
   end

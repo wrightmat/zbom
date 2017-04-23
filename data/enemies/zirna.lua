@@ -18,7 +18,7 @@ local positions = {
 --    Only vulnerable to light arrows when she's using dark magic - otherwise sword is minimally effective.
 
 function enemy:on_created()
-  self:set_life(80); self:set_damage(8)
+  self:set_life(80); self:set_damage(12)
   local sprite = self:create_sprite("enemies/zirna")
   self:set_size(24, 40); self:set_origin(12, 37)
   self:set_invincible()

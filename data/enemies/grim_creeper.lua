@@ -8,7 +8,7 @@ local nb_sons_to_create = 0
 -- Grim Creeper: Miniboss who controls flocks of Keese.
 
 function enemy:on_created()
-  self:set_life(6); self:set_damage(3)
+  self:set_life(12); self:set_damage(6)
   self:create_sprite("enemies/grim_creeper")
   self:set_size(16, 24); self:set_origin(8, 17)
   self:set_invincible(true)
