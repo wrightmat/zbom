@@ -145,6 +145,14 @@ function behavior:create(enemy, properties)
     m:start(self)
     self:get_sprite():set_animation("walking")
   end
+
+  -- Prevent enemies from "piling up" as much, which makes it easy to kill multiple in one hit.
+  function enemy:on_collision_enemy(other_enemy, other_sprite, my_sprite)
+    if enemy:is_traversable() then
+      enemy:set_traversable(false)
+      sol.timer.start(200, function() enemy:set_traversable(true) end)
+    end
+  end
 end
 
 return behavior
