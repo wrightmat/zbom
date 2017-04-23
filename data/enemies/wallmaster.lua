@@ -18,6 +18,7 @@ function enemy:on_created()
   sprite:set_animation("sleeping")
   self:set_pushed_back_when_hurt(false)
   self:set_attack_arrow(5)
+  self:set_attack_consequence("boomerang", "protected")
 end
 
 function enemy:on_restarted()
