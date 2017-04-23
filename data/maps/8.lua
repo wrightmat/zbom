@@ -406,3 +406,16 @@ npc_mayor:register_event("on_interaction", function()
     game:start_dialog("mayor.2.kasuto")
   end
 end)
+
+np1_guard:register_event("on_interaction", function()
+  game:start_dialog("guard.0.north_castle")
+end
+np2_guard:register_event("on_interaction", function()
+  game:start_dialog("guard.0.north_castle")
+end
+np3_guard:register_event("on_interaction", function()
+  game:start_dialog("guard.0.north_castle")
+end
+np4_guard:register_event("on_interaction", function()
+  game:start_dialog("guard.0.north_castle")
+end
