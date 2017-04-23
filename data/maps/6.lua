@@ -31,11 +31,11 @@ function map:on_started(destination)
     if npc_tokay_jade ~= nil then npc_tokay_jade:remove() end
     if npc_tokay_amber ~= nil then npc_tokay_amber:remove() end
     if npc_tokay_Chef ~= nil then npc_tokay_Chef:remove() end
-    alchemy_stone:remove()
-    magic_crystal:remove()
-    goddess_plume:remove()
-    mystic_jade:remove()
-    goron_amber:remove()
+    if alchemy_stone ~= nil then alchemy_stone:remove() end
+    if magic_crystal ~= nil then magic_crystal:remove() end
+    if goddess_plume ~= nil then goddess_plume:remove() end
+    if mystic_jade ~= nil then mystic_jade:remove() end
+    if goron_amber ~= nil then goron_amber:remove() end
   end
   -- Remove Gerudo from houses if they aren't back to the desert yet.
   if game:get_value("i1068") <= 6 then
@@ -79,9 +79,9 @@ npc_hesla:register_event("on_interaction", function()
   game:start_dialog("hesla.6.desert")
 end)
 
-function npc_tokay_chef:on_interaction()
+npc_tokay_Chef:register_event("on_interaction", function()
   game:start_dialog("chef.0.house")
-end
+end)
 
 function npc_tokay_jade:on_interaction()
   game:start_dialog("tokay.mystic_jade", function(answer)
