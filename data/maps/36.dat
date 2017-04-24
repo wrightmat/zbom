@@ -5425,31 +5425,11 @@ teletransporter{
   destination = "_side",
 }
 
-wall{
-  name = "custom_obstacle",
-  layer = 0,
-  x = 344,
-  y = 40,
-  width = 16,
-  height = 288,
-  stops_enemies = true,
-}
-
-wall{
-  name = "custom_obstacle_2",
-  layer = 0,
-  x = 984,
-  y = 40,
-  width = 16,
-  height = 240,
-  stops_enemies = true,
-}
-
 enemy{
   name = "enemy",
   layer = 0,
-  x = 552,
-  y = 117,
+  x = 632,
+  y = 133,
   direction = 0,
   breed = "octorok_red",
   treasure_name = "random_enemy",
@@ -5458,8 +5438,8 @@ enemy{
 enemy{
   name = "enemy_2",
   layer = 0,
-  x = 752,
-  y = 221,
+  x = 704,
+  y = 205,
   direction = 2,
   breed = "octorok_red",
   treasure_name = "random_enemy",
@@ -5468,8 +5448,8 @@ enemy{
 enemy{
   name = "enemy_3",
   layer = 0,
-  x = 552,
-  y = 309,
+  x = 608,
+  y = 301,
   direction = 0,
   breed = "octorok_red",
   treasure_name = "random_enemy",
@@ -5478,7 +5458,7 @@ enemy{
 enemy{
   name = "enemy_4",
   layer = 0,
-  x = 760,
+  x = 712,
   y = 381,
   direction = 2,
   breed = "octorok_red",
@@ -5507,26 +5487,6 @@ teletransporter{
   transition = "scrolling",
   destination_map = "37",
   destination = "_side",
-}
-
-wall{
-  name = "custom_obstacle_3",
-  layer = 0,
-  x = 952,
-  y = 280,
-  width = 16,
-  height = 264,
-  stops_enemies = true,
-}
-
-wall{
-  name = "custom_obstacle_4",
-  layer = 0,
-  x = 416,
-  y = 368,
-  width = 16,
-  height = 192,
-  stops_enemies = true,
 }
 
 tile{

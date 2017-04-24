@@ -3160,6 +3160,87 @@ tile{
   pattern = "1577",
 }
 
+tile{
+  layer = 0,
+  x = 528,
+  y = 440,
+  width = 16,
+  height = 16,
+  pattern = "1792",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 456,
+  width = 16,
+  height = 16,
+  pattern = "1792",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 504,
+  width = 16,
+  height = 16,
+  pattern = "1792",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 520,
+  width = 16,
+  height = 16,
+  pattern = "1792",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 560,
+  width = 16,
+  height = 16,
+  pattern = "1792",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 632,
+  width = 16,
+  height = 16,
+  pattern = "1792",
+}
+
+tile{
+  layer = 0,
+  x = 216,
+  y = 640,
+  width = 16,
+  height = 16,
+  pattern = "1792",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 680,
+  width = 16,
+  height = 16,
+  pattern = "1792",
+}
+
+tile{
+  layer = 0,
+  x = 760,
+  y = 24,
+  width = 16,
+  height = 16,
+  pattern = "1792",
+}
+
 teletransporter{
   name = "to_D4",
   layer = 0,
@@ -3492,26 +3573,6 @@ chest{
   treasure_name = "crystal",
   treasure_savegame_variable = "swamp_camp_crystal",
   sprite = "entities/chest",
-}
-
-wall{
-  layer = 0,
-  x = 560,
-  y = 0,
-  width = 8,
-  height = 696,
-  stops_npcs = true,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 8,
-  y = 696,
-  width = 560,
-  height = 8,
-  stops_npcs = true,
-  stops_enemies = true,
 }
 
 enemy{

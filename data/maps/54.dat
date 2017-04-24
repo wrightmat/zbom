@@ -3353,8 +3353,8 @@ teletransporter{
 enemy{
   name = "lynel_1",
   layer = 0,
-  x = 832,
-  y = 469,
+  x = 664,
+  y = 669,
   direction = 0,
   breed = "lynel",
   treasure_name = "amber",
@@ -3373,8 +3373,8 @@ enemy{
 enemy{
   name = "lynel_3",
   layer = 0,
-  x = 984,
-  y = 501,
+  x = 704,
+  y = 605,
   direction = 0,
   breed = "lynel",
   treasure_name = "amber",
@@ -3383,8 +3383,8 @@ enemy{
 enemy{
   name = "lynel_4",
   layer = 0,
-  x = 912,
-  y = 741,
+  x = 728,
+  y = 677,
   direction = 0,
   breed = "lynel",
   treasure_name = "amber",
@@ -3393,8 +3393,8 @@ enemy{
 enemy{
   name = "lynel_5",
   layer = 0,
-  x = 696,
-  y = 749,
+  x = 704,
+  y = 741,
   direction = 0,
   breed = "lynel",
   treasure_name = "amber",
@@ -3403,8 +3403,8 @@ enemy{
 enemy{
   name = "lynel_6",
   layer = 0,
-  x = 640,
-  y = 453,
+  x = 768,
+  y = 709,
   direction = 0,
   breed = "lynel",
   treasure_name = "amber",
@@ -3436,24 +3436,6 @@ destructible{
   treasure_name = "random_mountain",
   sprite = "entities/pot",
   destruction_sound = "stone",
-}
-
-wall{
-  layer = 0,
-  x = 472,
-  y = 208,
-  width = 8,
-  height = 232,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 1080,
-  y = 328,
-  width = 8,
-  height = 536,
-  stops_enemies = true,
 }
 
 enemy{
