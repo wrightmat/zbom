@@ -104,6 +104,22 @@ npc_revin:register_event("on_interaction", function()
   game:start_dialog("shopkeep.0")
 end)
 
+np1_subrosian:register_event("on_interaction", function()
+  if math.random(5) < 3 then
+    game:start_dialog("subrosian_1.0.house_1")
+  else
+    game:start_dialog("subrosian_1.0.house_2")
+  end
+end)
+
+np2_subrosian:register_event("on_interaction", function()
+  if game:get_value("i1806") == nil or game:get_value("i1806") == 0 then
+    game:start_dialog("subrosian_2.0.house_2")
+  else
+    game:start_dialog("subrosian_2.0.house_1")
+  end
+end)
+
 if shop_world_map_2 ~= nil then
   function shop_world_map_2:on_interaction()
     -- Custom shop script to subtract ore instead of rupees
@@ -137,12 +153,4 @@ function shop_poe_soul:on_interaction()
       end
     end)
   end)
-end
-
-function npc_subrosian_1:on_interaction()
-  game:start_dialog("subrosian_1.0.house")
-end
-
-function npc_subrosian_2:on_interaction()
-  game:start_dialog("subrosian_2.0.house")
 end

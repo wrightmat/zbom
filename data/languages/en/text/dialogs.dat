@@ -11049,7 +11049,7 @@ Everyone's a critic...
 }
 
 dialog{
-  id = "subrosian_1.0.house",
+  id = "subrosian_1.0.house_1",
   skip = "current",
   text = [[
 If you've ever wanted to lift those
@@ -11059,14 +11059,38 @@ visit the$gGreat Fairy$win our land.
 }
 
 dialog{
-  id = "subrosian_2.0.house",
+  id = "subrosian_1.0.house_2",
+  skip = "current",
+  text = [[
+Beachside living is just so nice!
+I can go outside any time and just
+stare at the lava waves lapping
+against the shore. I kinda wish that
+island didn't obstruct my view though.
+]]
+}
+
+dialog{
+  id = "subrosian_2.0.house_1",
   skip = "current",
   text = [[
 There is more than one access to our
-underground home. The one you likely found
-first is in your area of Hyrule, but
-there's also a portal in (or to) the
-northern reaches of the land.
+underground home. The one you likely
+found first is in your area of Hyrule,
+but there's also a portal in (or to)
+the northern reaches of the land.
+]]
+}
+
+dialog{
+  id = "subrosian_2.0.house_2",
+  skip = "current",
+  text = [[
+What? You don't have any bombs with
+you? That's crazy! You should visit
+the Goron city that's not far from
+here in the land above. They have some
+great stuff there.
 ]]
 }
 

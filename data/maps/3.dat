@@ -3712,26 +3712,6 @@ npc{
 }
 
 npc{
-  name = "npc_subrosian_1",
-  layer = 0,
-  x = 544,
-  y = 141,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/subrosian_orange",
-}
-
-npc{
-  name = "npc_subrosian_2",
-  layer = 0,
-  x = 976,
-  y = 189,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/subrosian_green",
-}
-
-npc{
   name = "shop_world_map_2",
   layer = 0,
   x = 144,
@@ -3864,6 +3844,30 @@ custom_entity{
   height = 16,
   direction = 3,
   sprite = "npc/rito",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "np1_subrosian",
+  layer = 0,
+  x = 544,
+  y = 141,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/subrosian_orange",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "np2_subrosian",
+  layer = 0,
+  x = 968,
+  y = 189,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/subrosian_green",
   model = "npc_generic",
 }
 
