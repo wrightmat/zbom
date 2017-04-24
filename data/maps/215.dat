@@ -6225,12 +6225,12 @@ enemy{
 }
 
 enemy{
-  name = "bubble_2",
+  name = "bubble",
   layer = 0,
   x = 704,
-  y = 197,
+  y = 189,
   direction = 0,
-  breed = "bubble_red",
+  breed = "bubble_yellow",
 }
 
 switch{
@@ -6614,8 +6614,8 @@ destination{
   name = "miniboss_warp_dest",
   layer = 0,
   x = 208,
-  y = 741,
-  direction = 3,
+  y = 709,
+  direction = 1,
 }
 
 teletransporter{
