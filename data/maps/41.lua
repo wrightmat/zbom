@@ -41,6 +41,7 @@ function npc_marryn:on_interaction()
   local first_volume = 100
   local second_volume = 1
   if game:get_value("i1929") > 1 then game:set_value("i1929", 0) end
+  game:set_dialog_name("Marryn")
   game:start_dialog("marryn."..game:get_value("i1929")..".ranch", function()
     sol.timer.start(map, 20, function()
       sol.audio.set_music_volume(first_volume)
