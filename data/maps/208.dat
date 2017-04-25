@@ -5060,6 +5060,87 @@ tile{
   pattern = "601",
 }
 
+tile{
+  layer = 0,
+  x = 472,
+  y = 520,
+  width = 16,
+  height = 16,
+  pattern = "592",
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 536,
+  width = 16,
+  height = 32,
+  pattern = "593",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 520,
+  width = 160,
+  height = 16,
+  pattern = "594",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 520,
+  width = 16,
+  height = 16,
+  pattern = "596",
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 568,
+  width = 16,
+  height = 16,
+  pattern = "598",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 568,
+  width = 160,
+  height = 16,
+  pattern = "599",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 568,
+  width = 16,
+  height = 16,
+  pattern = "600",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 536,
+  width = 16,
+  height = 32,
+  pattern = "597",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 536,
+  width = 160,
+  height = 32,
+  pattern = "595",
+}
+
 switch{
   name = "switch_ice_block",
   layer = 0,
@@ -5659,8 +5740,8 @@ enemy{
 enemy{
   name = "room10_skeletor_2",
   layer = 0,
-  x = 904,
-  y = 677,
+  x = 848,
+  y = 701,
   direction = 3,
   breed = "skeletor",
   treasure_name = "random_enemy",
@@ -5679,8 +5760,8 @@ enemy{
 enemy{
   name = "room9_chuchu_blue_2",
   layer = 0,
-  x = 560,
-  y = 573,
+  x = 568,
+  y = 629,
   direction = 3,
   breed = "chuchu_white",
   treasure_name = "random_enemy",
@@ -6153,8 +6234,8 @@ enemy{
 enemy{
   name = "room10_pengator_1",
   layer = 0,
-  x = 808,
-  y = 685,
+  x = 952,
+  y = 597,
   direction = 3,
   breed = "pengator",
   treasure_name = "random_enemy",
@@ -6163,7 +6244,7 @@ enemy{
 enemy{
   name = "room10_pengator_2",
   layer = 0,
-  x = 864,
+  x = 920,
   y = 597,
   direction = 3,
   breed = "pengator",
@@ -6389,6 +6470,216 @@ custom_entity{
   direction = 0,
   sprite = "entities/items",
   model = "generic_flying_pickable",
+}
+
+block{
+  layer = 0,
+  x = 496,
+  y = 557,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+  maximum_moves = 2,
+}
+
+switch{
+  name = "switch_ice_block_2",
+  layer = 0,
+  x = 632,
+  y = 544,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  sound = "switch",
+  needs_block = true,
+  inactivate_when_leaving = true,
+}
+
+door{
+  name = "door_shutter9_1",
+  layer = 0,
+  x = 440,
+  y = 608,
+  direction = 2,
+  sprite = "entities/door_shutter",
+}
+
+door{
+  name = "door_shutter9_2",
+  layer = 0,
+  x = 680,
+  y = 608,
+  direction = 0,
+  sprite = "entities/door_shutter",
+}
+
+sensor{
+  name = "room9_door",
+  layer = 0,
+  x = 480,
+  y = 589,
+  width = 16,
+  height = 80,
+}
+
+sensor{
+  name = "room9_door_2",
+  layer = 0,
+  x = 424,
+  y = 589,
+  width = 16,
+  height = 80,
+}
+
+enemy{
+  name = "room9_chuchu_blue_4",
+  layer = 0,
+  x = 568,
+  y = 701,
+  direction = 3,
+  breed = "chuchu_white",
+  treasure_name = "random_enemy",
+}
+
+custom_entity{
+  layer = 0,
+  x = 944,
+  y = 549,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block",
+  model = "ice_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = 960,
+  y = 549,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block",
+  model = "ice_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = 896,
+  y = 589,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block",
+  model = "ice_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = 896,
+  y = 605,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block",
+  model = "ice_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = 896,
+  y = 621,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block",
+  model = "ice_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = 896,
+  y = 573,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block",
+  model = "ice_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = 896,
+  y = 637,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block",
+  model = "ice_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = 912,
+  y = 637,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block",
+  model = "ice_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = 928,
+  y = 637,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block",
+  model = "ice_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = 944,
+  y = 637,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block",
+  model = "ice_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = 960,
+  y = 637,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block",
+  model = "ice_block",
+}
+
+enemy{
+  name = "room10_pengator_3",
+  layer = 0,
+  x = 936,
+  y = 613,
+  direction = 3,
+  breed = "pengator",
+  treasure_name = "random_enemy",
+}
+
+chest{
+  name = "chest_rupees",
+  layer = 0,
+  x = 944,
+  y = 565,
+  treasure_name = "rupee",
+  treasure_variant = 3,
+  treasure_savegame_variable = "b1159",
+  sprite = "entities/chest",
 }
 
 wall{
