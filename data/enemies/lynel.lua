@@ -40,7 +40,7 @@ local function shoot_fire()
   sol.timer.start(enemy, 500, function()
     sol.audio.play_sound("lamp")
     local flame = enemy:create_enemy({
-      breed = "projectiles/lynel_fire",
+      breed = "projectiles/fire_shot",
       x = dxy[direction + 1][1],
       y = dxy[direction + 1][2],
     })

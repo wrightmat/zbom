@@ -248,6 +248,7 @@ sprite{ id = "enemies/deadrock", description = "Deadrock" }
 sprite{ id = "enemies/dodongo", description = "Dodongo" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy Killed" }
 sprite{ id = "enemies/evil_tile", description = "Evil Tile" }
+sprite{ id = "enemies/fire_shot", description = "Fire Shot (Lynel, Lizalfos)" }
 sprite{ id = "enemies/fireball_animated", description = "Fireball, animated" }
 sprite{ id = "enemies/fireball_simple", description = "Fireball, simple" }
 sprite{ id = "enemies/fireball_small", description = "Fireball, Small" }
@@ -286,9 +287,12 @@ sprite{ id = "enemies/lanmola_tail", description = "Lanmola (tail)" }
 sprite{ id = "enemies/leever_green", description = "Leever, green" }
 sprite{ id = "enemies/leever_purple", description = "Leever, purple" }
 sprite{ id = "enemies/lizalfos", description = "Lizalfos" }
-sprite{ id = "enemies/lizalfos_sword", description = "Lizalfos (sword)" }
+sprite{ id = "enemies/lizalfos_blue", description = "Lizalfos, Blue" }
+sprite{ id = "enemies/lizalfos_red", description = "Lizalfos, Red (Fire shot)" }
+sprite{ id = "enemies/lizalfos_spear", description = "Lizalfos (Spear)" }
+sprite{ id = "enemies/lizalfos_sword", description = "Lizalfos (Sword)" }
+sprite{ id = "enemies/lizalfos_yellow", description = "Lizalfos, Yellow (Electric)" }
 sprite{ id = "enemies/lynel", description = "Lynel" }
-sprite{ id = "enemies/lynel_fire", description = "Lynel (fire shot)" }
 sprite{ id = "enemies/manhandla", description = "Manhandla" }
 sprite{ id = "enemies/manhandla_head", description = "Manhandla (Head)" }
 sprite{ id = "enemies/moblin", description = "Moblin" }
@@ -930,6 +934,9 @@ enemy{ id = "lanmola", description = "Lanmola (Miniboss)" }
 enemy{ id = "leever_green", description = "Leever, Green" }
 enemy{ id = "leever_purple", description = "Leever, Purple" }
 enemy{ id = "lizalfos", description = "Lizalfos" }
+enemy{ id = "lizalfos_blue", description = "Lizalfos, Blue" }
+enemy{ id = "lizalfos_red", description = "Lizalfos, Red" }
+enemy{ id = "lizalfos_yellow", description = "Lizalfos, Yellow" }
 enemy{ id = "lynel", description = "Lynel" }
 enemy{ id = "manhandla", description = "Manhandla (Boss)" }
 enemy{ id = "moblin", description = "Moblin" }
@@ -951,7 +958,7 @@ enemy{ id = "poe_big", description = "Big Poe (Boss)" }
 enemy{ id = "projectiles/baba_seed", description = "Baba Seed" }
 enemy{ id = "projectiles/beam_particle", description = "Beam Particle" }
 enemy{ id = "projectiles/belahim_beam", description = "Belahim Beam" }
-enemy{ id = "projectiles/lynel_fire", description = "Lynel Fireball" }
+enemy{ id = "projectiles/fire_shot", description = "Fire Shot (Lynel, Lizalfos)" }
 enemy{ id = "projectiles/plasmarine_ball", description = "Plasmarine Electicity Ball" }
 enemy{ id = "projectiles/rock_lux", description = "Octolux Ball" }
 enemy{ id = "projectiles/rock_small", description = "Octoroc Rock" }
