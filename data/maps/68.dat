@@ -1515,6 +1515,16 @@ custom_entity{
 }
 
 npc{
+  name = "sign.mountain_mausoleum",
+  layer = 0,
+  x = 256,
+  y = 429,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/sign",
+}
+
+npc{
   name = "npc_goron_ghost",
   layer = 1,
   x = 384,
