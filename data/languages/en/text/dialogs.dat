@@ -8526,11 +8526,11 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-Hmmm... we're bored now that all the fun
-fighting is over.$0 How about one last game?
-If you can guess which tree I'm hiding in
-with three or less tries, I'll give you
-the paper back.
+Hmmm... we're bored now that all the
+fun fighting is over.$0 How about one
+last game? If you can guess which tree
+I'm hiding in with three or less tries,
+I'll give you the paper back.
 
 How's that sound?
 Okay
@@ -8543,9 +8543,10 @@ dialog{
   skip = "current",
   text = [[
 You don't want your$cpaper$w back?
-I'll warn you, you won't get very far in
-your quest without it! I won't tell you
-anymore unless you play my game though.
+I'll warn you, you won't get very far
+in your quest without it! I won't tell
+you any more unless you play my game
+though...
 ]]
 }
 
@@ -8561,8 +8562,8 @@ dialog{
   id = "monkey.1.game_right",
   skip = "current",
   text = [[
-Aww! You found me! I guess you can have
-this$cdingy paper$w back -
+Aww! You found me! I guess you can
+have this$cdingy paper$wback -
 we won't need it where we're going!
 ]]
 }
