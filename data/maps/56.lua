@@ -5,8 +5,7 @@ local game = map:get_game()
 -- Outside World F5 (Septen Heights) --
 ---------------------------------------
 
-if game:get_value("i1926")==nil then game:set_value("i1926", 0) end
-if game:get_value("i1927")==nil then game:set_value("i1927", 0) end
+if game:get_value("i1651")==nil then game:set_value("i1651", 0) end
 if game:get_value("i1928")==nil then game:set_value("i1928", 0) end
 
 local function random_walk(npc)
@@ -19,6 +18,11 @@ end
 function map:on_started(destination)
   if game:get_time_of_day() == "night" then
     npc_quinn:remove()
+
+    -- Activate any night-specific dynamic tiles.
+    for entity in game:get_map():get_entities("night_") do
+      entity:set_enabled(true)
+    end
   else
     random_walk(npc_rhett)
     random_walk(npc_quinn)
@@ -28,15 +32,8 @@ function map:on_started(destination)
     bridge_2:set_enabled(true)
     bridge_3:set_enabled(true)
     bridge_4:set_enabled(true)
-  elseif game:get_value("i1926") >= 2 and game:get_value("i1927") >= 2 then
+  elseif game:get_value("1651") == 4 then
     npc_horwin:remove()
-  end
-
-  -- Activate any night-specific dynamic tiles.
-  if game:get_time_of_day() == "night" then
-    for entity in game:get_map():get_entities("night_") do
-      entity:set_enabled(true)
-    end
   end
 end
 
@@ -71,19 +68,13 @@ npc_quinn:register_event("on_interaction", function()
 end)
 
 npc_horwin:register_event("on_interaction", function()
-  if game:is_dungeon_finished(7) and game:get_value("i1926") >= 3 then
+  if game:is_dungeon_finished(7) and game:get_value("i1651") == 5 then
     game:start_dialog("rito_carpenter.2.septen")
-    sol.timer.start(game, 360000, function()
-      -- After a real-time hour, the carpenter will return to the bridge
-      -- (or speaking to the architect again with force it).
-      game:set_value("i1926", 3)
-    end)
-  elseif game:get_value("i1926") >= 1 then
+  elseif game:get_value("i1651") == 1 then
     game:start_dialog("rito_carpenter.1.septen")
-    game:set_value("i1927", 2)
+    game:set_value("i1651", 2)
   else
     game:start_dialog("rito_carpenter.0.septen")
-    game:set_value("i1927", 1)
   end
 end)
 

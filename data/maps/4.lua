@@ -6,13 +6,12 @@ local game = map:get_game()
 ---------------------------
 
 if game:get_value("i1026")==nil then game:set_value("i1026", 0) end
+if game:get_value("i1651")==nil then game:set_value("i1651", 0) end
 if game:get_value("i1806")==nil then game:set_value("i1806", 0) end
 if game:get_value("i1830")==nil then game:set_value("i1830", 0) end
 if game:get_value("i1918")==nil then game:set_value("i1918", 0) end
 if game:get_value("i1919")==nil then game:set_value("i1919", 0) end
 if game:get_value("i1920")==nil then game:set_value("i1920", 0) end
-if game:get_value("i1926")==nil then game:set_value("i1926", 0) end
-if game:get_value("i1927")==nil then game:set_value("i1927", 0) end
 
 local function random_walk(npc)
   local m = sol.movement.create("random_path")
@@ -27,14 +26,12 @@ function map:on_started(destination)
     if item_bomb_2 ~= nil then item_bomb_2:remove() end
     if item_bomb_3 ~= nil then item_bomb_3:remove() end
   end
-
-  random_walk(npc_etnaya)
-
+  
   if game:get_time_of_day() == "night" then
     npc_rowin:remove()
     npc_moriss:remove()
     npc_etnaya:remove()
-
+    
     if game:get_value("b1812") then
       quest_bottle:remove() --if bottle already obtained, remove the quest and bottle
       bottle:remove()
@@ -47,7 +44,7 @@ function map:on_started(destination)
       wall_bottle:remove()
       np2_strap:remove() -- Strap's NPC at the pub
     end
-
+    
     -- Activate any night-specific dynamic tiles
     for entity in map:get_entities("night_") do
       entity:set_enabled(true)
@@ -60,17 +57,18 @@ function map:on_started(destination)
       sensor_bottle:remove()
       wall_bottle:remove()
     end
+    random_walk(npc_etnaya)
   end
-
+  
   if destination ~= inn_bed then
     snores:set_enabled(false)
     bed:set_enabled(false)
   end
-
-  if (game:get_value("i1926") < 2 and game:get_value("i1927") < 2) or game:is_dungeon_finished(7) then
+  
+  if game:get_value("i1651") ~= 4 then
     npc_horwin:remove()
   end
-
+  
   -- Replace shop items if they're bought
   if game:get_value("i1820") >= 2 then --shield
     self:create_shop_treasure({
@@ -183,24 +181,33 @@ npc_rowin:register_event("on_interaction", function()
 end)
 
 npc_architect:register_event("on_interaction", function()
-  if game:get_value("i1927") >= 1 then
-    if game:get_value("i1926") >= 2 then
-      game:start_dialog("architect.3.house")
-      game:set_value("i1926", 3)
-    elseif game:get_value("i1926") == 1 and game:get_value("i1927") == 2 then
-      game:start_dialog("architect.2.house")
-      game:set_value("i1926", 2)
-    else
-      game:start_dialog("architect.1.house")
-      game:set_value("i1926", 1)
-    end
+  if game:get_value("i1651") == 4 then
+    game:start_dialog("architect.3.house")
+    sol.timer.start(game, 360000, function()
+      -- After a real-time hour, the carpenter will return to the bridge.
+      game:set_value("i1651", 5)
+    end)
+  elseif game:get_value("i1651") == 3 then
+    game:start_dialog("architect.2.house")
+  elseif game:get_value("i1651") == 2 then
+    game:start_dialog("architect.1.house")
+    game:set_value("i1651", 3)
+    sol.timer.start(game, 360000, function()
+      -- After a real-time hour, the carpenter will come to the city.
+      game:set_value("i1651", 4)
+    end)
   else
     game:start_dialog("architect.0.house")
+    game:set_value("i1651", 1)
   end
 end)
 
 npc_horwin:register_event("on_interaction", function()
   game:start_dialog("rito_carpenter.2.kakariko")
+  sol.timer.start(game, 360000, function()
+    -- After a real-time hour, the carpenter will return to the bridge
+    game:set_value("i1651", 5)
+  end)
 end)
 
 function npc_garroth_sensor:on_interaction()
