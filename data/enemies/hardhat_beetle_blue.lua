@@ -12,3 +12,5 @@ local properties = {
   push_hero_on_sword = true
 }
 behavior:create(enemy, properties)
+
+enemy:set_attack_consequence("fire", 1)
