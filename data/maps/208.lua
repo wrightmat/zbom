@@ -43,10 +43,12 @@ for enemy in map:get_entities("room5_enemy") do
   end
 end
 
-function room_9_door:on_activated()
-  map:close_doors("door_shutter9")
+function room9_door:on_activated()
+  if not switch_ice_block_2:is_activated() then
+    map:close_doors("door_shutter9")
+  end
 end
-function room_9_door_2:on_activated()
+function room9_door_2:on_activated()
   map:open_doors("door_shutter9")
 end
 

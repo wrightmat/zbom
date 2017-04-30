@@ -12,6 +12,8 @@ function entity:on_created()
   self:snap_to_grid()
   self:set_modified_ground("ice")
   self:set_traversable_by("hero", false)
+  self:set_traversable_by("enemy", false)
+  self:set_traversable_by("npc", false)
   self:set_traversable_by("custom_entity", true) -- To allow pushing block into pit.
   self:create_sprite("entities/ice_block")
 

@@ -6458,7 +6458,7 @@ switch{
 dynamic_tile{
   name = "hole_boss_1",
   layer = 0,
-  x = 480,
+  x = 496,
   y = 264,
   pattern = "524",
   width = 32,
@@ -7311,7 +7311,8 @@ destructible{
   layer = 0,
   x = 776,
   y = 77,
-  treasure_name = "random",
+  treasure_name = "bomb",
+  treasure_variant = 3,
   sprite = "entities/pot",
   destruction_sound = "stone",
 }
@@ -7338,7 +7339,8 @@ destructible{
   layer = 0,
   x = 504,
   y = 429,
-  treasure_name = "random",
+  treasure_name = "magic_flask",
+  treasure_variant = 2,
   sprite = "entities/pot",
   destruction_sound = "stone",
 }
@@ -7995,6 +7997,14 @@ enemy{
   direction = 0,
   breed = "chuchu_dark",
   treasure_name = "random_enemy",
+}
+
+destination{
+  name = "dest",
+  layer = 0,
+  x = 560,
+  y = 293,
+  direction = 1,
 }
 
 tile{
