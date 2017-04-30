@@ -6773,17 +6773,6 @@ destructible{
   destruction_sound = "stone",
 }
 
-teletransporter{
-  layer = 0,
-  x = 232,
-  y = 1536,
-  width = 16,
-  height = 16,
-  destination_map = "209",
-  destination = "dest",
-  sprite = "entities/teletransporter",
-}
-
 wall{
   layer = 1,
   x = 512,

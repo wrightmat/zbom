@@ -4,6 +4,7 @@ local vulnerable = false
 local hidden = false
 local hide_timer = nil
 local hit_counter = 0
+
 -- Possible positions where he lands.
 local positions = {
   {x = 224, y = 288, direction4 = 3},
@@ -15,7 +16,7 @@ local positions = {
 -- Stalfos: An undead soldier boss.
 
 function enemy:on_created()
-  self:set_life(16); self:set_damage(6)
+  self:set_life(10); self:set_damage(6)
   self:create_sprite("enemies/stalfos_knight")
   self:set_size(32, 40); self:set_origin(16, 36)
   self:set_hurt_style("boss")
@@ -48,19 +49,16 @@ function enemy:on_obstacle_reached(movement)
 end
 
 function enemy:on_hurt()
+  vulnerable = false; hidden = false
   self:get_sprite():set_animation("hurt")
-  vulnerable = false
   hit_counter = 0
-  enemy:restart()
 end
 
 function enemy:on_update()
   if vulnerable then
-    self:get_sprite():set_animation("immobilized")
     self:set_attack_consequence("explosion", 1)
     self:set_attack_consequence("sword", "ignored")
   else
-    self:get_sprite():set_animation("walking")
     self:set_attack_consequence("explosion", "ignored")
     self:set_attack_consequence("sword", "custom")
   end
@@ -68,8 +66,7 @@ end
 
 function enemy:hide()
   sol.timer.start(self:get_map(), 5000, function() self:unhide() end)
-  vulnerable = false
-  hidden = true
+  vulnerable = false; hidden = true
   self:get_sprite():set_animation("head")
   sol.audio.play_sound("stalfos_laugh")
   self:create_enemy({ breed = "stalfos_head", treasure_name = "bomb" })
@@ -85,7 +82,7 @@ function enemy:hide()
 end
 
 function enemy:unhide()
-  hidden = false
+  vulnerable = false; hidden = false
   local position = (positions[math.random(#positions)])
   sol.audio.play_sound("stalfos_laugh")
   self:set_position(position.x, position.y)
@@ -94,8 +91,7 @@ function enemy:unhide()
 end
 
 function enemy:go_hero()
-  vulnerable = false
-  self:get_sprite():set_animation("walking")
+  vulnerable = false; hidden = false
   local m = sol.movement.create("target")
   m:set_speed(32)
   m:start(self)
@@ -105,6 +101,7 @@ end
 function enemy:on_custom_attack_received(attack, sprite)
   if hide_timer ~= nil then hide_timer:stop() end
   if attack == "sword" then
+    self:get_sprite():set_animation("hit")
     hit_counter = hit_counter + 1
     sol.audio.play_sound("enemy_hurt")
     if hit_counter == 3 then
@@ -119,7 +116,6 @@ function enemy:on_custom_attack_received(attack, sprite)
         sol.audio.play_sound("hero_pushes")
         self:set_attack_consequence("explosion", "ignored")
         self:set_attack_consequence("sword", "custom")
-        self:get_sprite():set_animation("hurt")
         sol.timer.start(self, 1000, function() self:get_sprite():set_animation("shaking") end)
         hit_counter = 0
       end)

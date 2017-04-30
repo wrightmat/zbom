@@ -6458,7 +6458,7 @@ switch{
 dynamic_tile{
   name = "hole_boss_1",
   layer = 0,
-  x = 496,
+  x = 480,
   y = 264,
   pattern = "524",
   width = 32,
@@ -7997,14 +7997,6 @@ enemy{
   direction = 0,
   breed = "chuchu_dark",
   treasure_name = "random_enemy",
-}
-
-destination{
-  name = "dest",
-  layer = 0,
-  x = 560,
-  y = 293,
-  direction = 1,
 }
 
 tile{
