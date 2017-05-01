@@ -12,6 +12,10 @@ function map:on_started(destination)
   -- before landing on solid ground somewhere on this map.
   if destination == to_H5_water or destination == to_F5_2 then
     game:get_hero():save_solid_ground(712,168,0)
+  elseif destination == to_F5 then
+    game:get_hero():save_solid_ground(8,320,0)
+  elseif destination == to_H5_2
+    game:get_hero():save_solid_ground(1112,208,0)
   else
     game:get_hero():save_solid_ground(472,1000,0)
   end
