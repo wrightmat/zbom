@@ -38,6 +38,7 @@ end
 function enemy:on_update()
   if self.rock then
     self:set_invincible(true)
+    self:set_attack_consequence("explosion", 3)
     if self:get_sprite():get_animation() ~= "immobilized" then self:get_sprite():set_animation("immobilized") end
   else
     self:set_attack_consequence("sword", 1)
