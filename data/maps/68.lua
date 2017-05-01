@@ -47,6 +47,5 @@ function map:on_started(destination)
 end
 
 npc_dampeh:register_event("on_interaction", function()
-  game:set_dialog_style("default")
   game:start_dialog("dampeh.2.mausoleum")
 end)

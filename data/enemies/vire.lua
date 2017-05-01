@@ -1,5 +1,4 @@
 local enemy = ...
-local going_hero = false
 
 -- Vire: Flying enemy which also creates and controls Keese.
 
@@ -23,7 +22,7 @@ end
 
 function enemy:on_hurt()
   if self:get_map():get_entities_count("keese_fire") < 3 then
-    sol.timer.start(self, 2000, function() self:create_enemy({ name = "keese_fire_", breed = "keese_fire", treasure_name = "random" }) end)
+    sol.timer.start(self, 2000, function() self:create_enemy({ name = "keese_fire_", layer = 1, breed = "keese_fire", treasure_name = "random" }) end)
   end
 end
 
@@ -33,42 +32,43 @@ function enemy:check_hero()
   local _, _, layer = self:get_position()
   local _, _, hero_layer = hero:get_position()
   local near_hero = layer == hero_layer and self:get_distance(hero) < 100
-
-  if near_hero and not going_hero then
+  local rand = math.random(3)
+  
+  if rand == 0 then
     self:go_circle()
-  elseif not near_hero and going_hero then
-    self:go_random()
+  elseif rand == 1 then
+    self:go_hero()
   else
     if self:get_map():get_entities_count("keese_fire") < 3 then
-      sol.timer.start(self, 2000, function () self:create_enemy({ name = "keese_fire_", breed = "keese_fire", treasure_name = "random" }) end)
+      sol.timer.start(self, 2000, function () self:create_enemy({ name = "keese_fire_", layer = 1, breed = "keese_fire", treasure_name = "random" }) end)
     end
   end
   sol.timer.start(self:get_map(), 5000, function() self:check_hero() end)
 end
 
-function enemy:go_random()
+function enemy:go_hero()
   if sprite == "enemies/vire" then self:get_sprite():set_animation("walking") end
-  local m = sol.movement.create("circle")
-  m:set_radius(32)
-  m:set_radius_speed(32)
+  local angle = self:get_angle(self:get_map():get_entity("hero"))
+  local m = sol.movement.create("straight")
+  m:set_speed(192)
+  m:set_angle(angle)
+  m:set_max_distance(320)
   m:start(self)
-  going_hero = false
 end
 
 function enemy:go_circle()
   if sprite == "enemies/vire" then self:get_sprite():set_animation("walking") end
   local hero = self:get_map():get_entity("hero")
   local m = sol.movement.create("circle")
-  m:set_center(hero, 0, -20)
+  m:set_center(hero, 0, -18)
   m:set_radius(32)
   m:set_initial_angle(math.pi / 2)
-  m:set_angle_speed(24)
+  m:set_angle_speed(48)
   m:start(self)
-  going_hero = true
 end
 
 function enemy:on_dying()
   -- Split the vire into two keese
-  self:create_enemy({ breed = "keese", treasure_name = "heart" })
-  self:create_enemy({ breed = "keese", treasure_name = "random" })
+  self:create_enemy({ breed = "keese", layer = 1, treasure_name = "heart" })
+  self:create_enemy({ breed = "keese", layer = 1, treasure_name = "random" })
 end

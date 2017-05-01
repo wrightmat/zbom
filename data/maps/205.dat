@@ -13698,60 +13698,6 @@ destructible{
   can_be_cut = true,
 }
 
-wall{
-  layer = 0,
-  x = 400,
-  y = 1096,
-  width = 240,
-  height = 8,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 1024,
-  y = 488,
-  width = 8,
-  height = 144,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 1032,
-  y = 488,
-  width = 328,
-  height = 8,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 1128,
-  y = 216,
-  width = 8,
-  height = 224,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 880,
-  y = 216,
-  width = 248,
-  height = 8,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 1136,
-  y = 208,
-  width = 112,
-  height = 8,
-  stops_enemies = true,
-}
-
 dynamic_tile{
   name = "lava_1",
   layer = 0,
@@ -18280,6 +18226,388 @@ dynamic_tile{
   width = 32,
   height = 8,
   enabled_at_start = true,
+}
+
+wall{
+  layer = 1,
+  x = 560,
+  y = 1472,
+  width = 240,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 448,
+  y = 1608,
+  width = 352,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 792,
+  y = 1480,
+  width = 8,
+  height = 128,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 560,
+  y = 1480,
+  width = 8,
+  height = 40,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 448,
+  y = 1520,
+  width = 120,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 448,
+  y = 1528,
+  width = 8,
+  height = 80,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 320,
+  y = 936,
+  width = 8,
+  height = 72,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 328,
+  y = 1000,
+  width = 72,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 400,
+  y = 1000,
+  width = 8,
+  height = 96,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 632,
+  y = 1032,
+  width = 8,
+  height = 64,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1040,
+  y = 944,
+  width = 400,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1040,
+  y = 1048,
+  width = 400,
+  height = 8,
+  stops_npcs = true,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1040,
+  y = 952,
+  width = 8,
+  height = 96,
+  stops_npcs = true,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1432,
+  y = 952,
+  width = 8,
+  height = 96,
+  stops_npcs = true,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 656,
+  y = 672,
+  width = 8,
+  height = 152,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 664,
+  y = 816,
+  width = 128,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 960,
+  y = 80,
+  width = 8,
+  height = 80,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 960,
+  y = 72,
+  width = 288,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1240,
+  y = 80,
+  width = 8,
+  height = 128,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 960,
+  y = 160,
+  width = 184,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1136,
+  y = 168,
+  width = 8,
+  height = 40,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1136,
+  y = 208,
+  width = 112,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1128,
+  y = 216,
+  width = 8,
+  height = 224,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 752,
+  y = 432,
+  width = 376,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 128,
+  y = 216,
+  width = 1000,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 440,
+  y = 336,
+  width = 320,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 752,
+  y = 344,
+  width = 8,
+  height = 88,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 128,
+  y = 224,
+  width = 8,
+  height = 216,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 136,
+  y = 432,
+  width = 312,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 440,
+  y = 344,
+  width = 8,
+  height = 88,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1032,
+  y = 488,
+  width = 328,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1024,
+  y = 488,
+  width = 8,
+  height = 144,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1032,
+  y = 624,
+  width = 184,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1208,
+  y = 560,
+  width = 8,
+  height = 64,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1216,
+  y = 560,
+  width = 144,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 1352,
+  y = 496,
+  width = 8,
+  height = 64,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 400,
+  y = 1096,
+  width = 240,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 224,
+  y = 1256,
+  width = 8,
+  height = 160,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 416,
+  y = 1120,
+  width = 8,
+  height = 136,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 472,
+  y = 1120,
+  width = 8,
+  height = 136,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 480,
+  y = 1248,
+  width = 24,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 1,
+  x = 424,
+  y = 1120,
+  width = 48,
+  height = 8,
+  stops_enemies = true,
 }
 
 tile{

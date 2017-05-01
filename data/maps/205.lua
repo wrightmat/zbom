@@ -233,7 +233,7 @@ function map:on_draw(dst_surface)
     end
     
     -- Lantern more quickly drains magic here so you're forced to find ways to refill magic.
-    if magic_counter >= 20 then
+    if magic_counter >= 20 and not game:is_paused() then
       game:remove_magic(1)
       magic_counter = 0
     end

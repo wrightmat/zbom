@@ -32,7 +32,7 @@ function map:on_started(destination)
     bridge_2:set_enabled(true)
     bridge_3:set_enabled(true)
     bridge_4:set_enabled(true)
-  elseif game:get_value("1651") == 4 then
+  elseif game:get_value("i1651") == 4 then
     npc_horwin:remove()
   end
 end

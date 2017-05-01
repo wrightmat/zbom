@@ -42,7 +42,7 @@ function enemy:on_restarted()
   vulnerable = false
   for _, t in ipairs(timers) do t:stop() end
   local sprite = self:get_sprite()
-
+  
   if math.random(4) == 1 then
     sprite:fade_out()
     timers[#timers + 1] = sol.timer.start(self:get_map(), 700, function() self:hide() end)

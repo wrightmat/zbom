@@ -21,15 +21,15 @@ function map:on_started(destination)
   end
   
   snores:set_enabled(false)
-  npc_galen_2:get_sprite():set_direction(1) -- Up
+  np2_galen:get_sprite():set_direction(1) -- Up
   
   if game:get_value("i1029") < 2 then
-    npc_galen_2:remove()
+    np2_galen:remove()
   elseif game:get_value("i1029") == 2 then
     npc_galen:remove()
   elseif game:get_value("i1029") >= 3 then
     npc_osgor:remove()
-    npc_galen_2:remove()
+    np2_galen:remove()
     if game:get_value("i1029") == 3 then npc_galen:remove() end
   end
   
@@ -41,22 +41,22 @@ function map:on_started(destination)
     sol.timer.start(1000, function()
       hero:freeze()
       game:start_dialog("dargor.3.house", game:get_player_name(), function()
-        npc_galen_2:get_sprite():set_animation("walking")
+        np2_galen:get_sprite():set_animation("walking")
         local m = sol.movement.create("target")
         m:set_target(112, 384)
         m:set_speed(32)
-        m:start(npc_galen_2, function()
-          npc_galen_2:get_sprite():set_animation("stopped")
-          npc_galen_2:get_sprite():set_direction(2) -- Left / West
+        m:start(np2_galen, function()
+          np2_galen:get_sprite():set_animation("stopped")
+          np2_galen:get_sprite():set_direction(2) -- Left / West
           sol.timer.start(2000, function()
-            npc_galen_2:get_sprite():set_direction(0) -- Right / East
+            np2_galen:get_sprite():set_direction(0) -- Right / East
             game:start_dialog("galen.2.house", game:get_player_name(), function()
-              npc_galen_2:get_sprite():set_animation("walking")
+              np2_galen:get_sprite():set_animation("walking")
               local m2 = sol.movement.create("target")
               m2:set_target(160, 461)
               m:set_speed(16)
-              m2:start(npc_galen_2, function()
-                npc_galen_2:remove()
+              m2:start(np2_galen, function()
+                np2_galen:remove()
                 hero:unfreeze()
                 game:set_value("i1029", 3)
               end)
@@ -218,6 +218,7 @@ end
 
 function innkeeper_sensor:on_interaction()
   sol.audio.play_sound("goron_question")
+  game:set_dialog_name("Nakno")
   game:start_dialog("goron.0.inn", function(answer)
     if answer == 1 then
       game:remove_money(20)
