@@ -11270,6 +11270,27 @@ great stuff there.
 }
 
 dialog{
+  id = "subrosian_2.1.poes",
+  next = "subrosian_2.1.poes_2",
+  skip = "current",
+  text = [[
+Do I sense the aura of a poe nearby?
+If you carry$rPoe Souls$wwith you, I'd
+be interested in buying them.
+]]
+}
+
+dialog{
+  id = "subrosian_2.1.poes_2",
+  question = "1",
+  text = [[
+What do you say? Sell one for 20 ore chunks?
+Yes
+No
+]]
+}
+
+dialog{
   id = "subrosian_blue.0.subrosia",
   skip = "current",
   text = [[

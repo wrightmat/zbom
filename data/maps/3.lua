@@ -113,7 +113,18 @@ npc_rozalin:register_event("on_interaction", function()
 end)
 
 npc_subro:register_event("on_interaction", function()
-  if game:get_value("i1806") == nil or game:get_value("i1806") == 0 then
+  if game:get_item("bottle_1"):get_variant() == 8 or game:get_item("bottle_2"):get_variant() == 8 or game:get_item("bottle_3"):get_variant() == 8 or game:get_item("bottle_4"):get_variant() == 8 then
+    -- If hero has a Poe Soul.
+    game:start_dialog("subrosian_2.1.poes", function(answer)
+      if answer == 1 then
+        if game:get_item("bottle_1"):get_variant() == 8 then game:get_item("bottle_1"):set_variant(0)
+        elseif game:get_item("bottle_2"):get_variant() == 8 then game:get_item("bottle_2"):set_variant(0)
+        elseif game:get_item("bottle_3"):get_variant() == 8 then game:get_item("bottle_3"):set_variant(0)
+        elseif game:get_item("bottle_4"):get_variant() == 8 then game:get_item("bottle_4"):set_variant(0) end
+        game:add_money(20)
+      end
+    end)
+  elseif game:get_value("i1806") == nil or game:get_value("i1806") == 0 then
     game:start_dialog("subrosian_2.0.house_2")
   else
     game:start_dialog("subrosian_2.0.house_1")
