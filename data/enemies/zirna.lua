@@ -2,6 +2,7 @@ local enemy = ...
 local map = enemy:get_map()
 local vulnerable = false
 local last_action = 0
+local enemies_region = 0
 local dark_magic_sprite = sol.sprite.create("entities/dark_appears")
 local positions = {
   {x = 800, y = 997},
@@ -31,25 +32,31 @@ end
 
 function enemy:create_son()
   vulnerable = true
-  local rand = math.random(5)
-  if rand == 1 then
-    sol.timer.start(self, 2000, function()
-      self:create_enemy({ breed = "redead", treasure_name = "random" })
-    end)
-  elseif rand == 2 then
-    sol.timer.start(self, 2000, function()
-      self:create_enemy({ breed = "hinox", treasure_name = "random" })
-    end)
-  elseif rand == 3 then
-    sol.timer.start(self, 2000, function()
-      self:create_enemy({ breed = "keese_dark", treasure_name = "random" })
-    end)
-  elseif rand == 4 then
-    sol.timer.start(self, 2000, function()
-      self:create_enemy({ breed = "poe", treasure_name = "random" })
-    end)
+  for entity in map:get_entities_in_rectangle(760, 936, 1000, 1352) do
+    if entity:get_type() == "enemy" then enemies_region = enemies_region + 1 end
   end
-  sol.timer.start(self, 3500, function() self:restart() end)
+print(enemies_region)
+  if enemies_region < 4 then
+    local rand = math.random(5)
+    if rand == 1 then
+      sol.timer.start(self, 2000, function()
+        self:create_enemy({ breed = "redead", treasure_name = "random" })
+      end)
+    elseif rand == 2 then
+      sol.timer.start(self, 2000, function()
+        self:create_enemy({ breed = "hinox", treasure_name = "random" })
+      end)
+    elseif rand == 3 then
+      sol.timer.start(self, 2000, function()
+        self:create_enemy({ breed = "keese_dark", treasure_name = "random" })
+      end)
+    elseif rand == 4 then
+      sol.timer.start(self, 2000, function()
+        self:create_enemy({ breed = "poe", treasure_name = "random" })
+      end)
+    end
+    sol.timer.start(self, 3500, function() self:restart() end)
+  end
 end
 
 function enemy:teleport(object)
