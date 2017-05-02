@@ -104,7 +104,7 @@ npc_revin:register_event("on_interaction", function()
   game:start_dialog("shopkeep.0")
 end)
 
-np1_subrosian:register_event("on_interaction", function()
+npc_rozalin:register_event("on_interaction", function()
   if math.random(5) < 3 then
     game:start_dialog("subrosian_1.0.house_1")
   else
@@ -112,7 +112,7 @@ np1_subrosian:register_event("on_interaction", function()
   end
 end)
 
-np2_subrosian:register_event("on_interaction", function()
+npc_subro:register_event("on_interaction", function()
   if game:get_value("i1806") == nil or game:get_value("i1806") == 0 then
     game:start_dialog("subrosian_2.0.house_2")
   else

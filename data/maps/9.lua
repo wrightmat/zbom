@@ -101,7 +101,7 @@ npc_rudy:register_event("on_interaction", function()
         end)
       end
     elseif game:get_value("i1601") == 2 then
-      -- quest complete
+      -- Quest complete.
       game:start_dialog("rudy.4.cave", function(answer)
         if answer == 1 then -- Work.
           if game:get_value("i1841") == 3 then
@@ -114,6 +114,7 @@ npc_rudy:register_event("on_interaction", function()
           if rand == last_rand then rand = math.random(3) end
           game:start_dialog("rudy.4.cave_chat_"..rand)
           local last_rand = rand
+          game:set_value("i1652", 1) -- Start the Master Ore quest in the tracker.
         end
       end)
     elseif game:get_value("i1902") >= 6 then
@@ -131,6 +132,7 @@ function sensor_leaving:on_activated()
       hero:start_treasure("sword", 2)
       game:set_value("i1841", 5) -- Remove Master Ore.
       game:set_value("i1902", 6)
+      game:set_value("i1652", 5)
     end)
   elseif not game:has_item("bottle_1") and game:get_value("i1902") >= 1 and game:get_hero():get_direction() == 3 then
     game:start_dialog("rudy.2.cave_bottle", function()

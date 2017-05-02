@@ -2049,26 +2049,6 @@ enemy{
   breed = "geyser",
 }
 
-npc{
-  name = "subrosian_blue",
-  layer = 0,
-  x = 296,
-  y = 485,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/subrosian_blue",
-}
-
-npc{
-  name = "subrosian_orange",
-  layer = 0,
-  x = 800,
-  y = 637,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/subrosian_orange",
-}
-
 destination{
   name = "from_house_1",
   layer = 0,
@@ -3569,16 +3549,6 @@ dynamic_tile{
   enabled_at_start = true,
 }
 
-npc{
-  name = "subrosian_soaking",
-  layer = 0,
-  x = 448,
-  y = 341,
-  direction = -1,
-  subtype = 0,
-  sprite = "npc/subrosian_green",
-}
-
 dynamic_tile{
   name = "lava_48",
   layer = 0,
@@ -3658,6 +3628,42 @@ dynamic_tile{
   width = 16,
   height = 16,
   enabled_at_start = true,
+}
+
+custom_entity{
+  name = "npc_salai",
+  layer = 0,
+  x = 448,
+  y = 341,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/subrosian_green",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_ral",
+  layer = 0,
+  x = 296,
+  y = 485,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/subrosian_blue",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_himi",
+  layer = 0,
+  x = 792,
+  y = 637,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/subrosian_orange",
+  model = "npc_generic",
 }
 
 tile{

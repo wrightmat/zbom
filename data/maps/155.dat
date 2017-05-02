@@ -3668,16 +3668,6 @@ destructible{
   can_be_cut = true,
 }
 
-npc{
-  name = "subrosian_shaman",
-  layer = 0,
-  x = 640,
-  y = 661,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/subrosian_green",
-}
-
 enemy{
   name = "chuchu_1",
   layer = 0,
@@ -3696,6 +3686,18 @@ enemy{
   direction = 0,
   breed = "chuchu_dark",
   treasure_name = "random_enemy",
+}
+
+custom_entity{
+  name = "npc_shaman",
+  layer = 0,
+  x = 648,
+  y = 661,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/subrosian_green",
+  model = "npc_generic",
 }
 
 tile{

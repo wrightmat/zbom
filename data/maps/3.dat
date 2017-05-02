@@ -3702,16 +3702,6 @@ teletransporter{
 }
 
 npc{
-  name = "npc_shopkeeper",
-  layer = 0,
-  x = 168,
-  y = 141,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/subrosian_blue",
-}
-
-npc{
   name = "shop_world_map_2",
   layer = 0,
   x = 144,
@@ -3848,7 +3838,7 @@ custom_entity{
 }
 
 custom_entity{
-  name = "np1_subrosian",
+  name = "npc_rozalin",
   layer = 0,
   x = 544,
   y = 141,
@@ -3860,7 +3850,7 @@ custom_entity{
 }
 
 custom_entity{
-  name = "np2_subrosian",
+  name = "npc_subro",
   layer = 0,
   x = 968,
   y = 189,
@@ -3868,6 +3858,18 @@ custom_entity{
   height = 16,
   direction = 3,
   sprite = "npc/subrosian_green",
+  model = "npc_generic",
+}
+
+custom_entity{
+  name = "npc_sicretu",
+  layer = 0,
+  x = 168,
+  y = 141,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/subrosian_blue",
   model = "npc_generic",
 }
 

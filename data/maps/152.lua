@@ -13,23 +13,23 @@ local function random_walk(npc)
 end
 
 function map:on_started(destination)
-  subrosian_soaking:get_sprite():set_animation("soaking")
-  random_walk(subrosian_blue)
-  random_walk(subrosian_orange)
+  npc_salai:get_sprite():set_animation("soaking")
+  random_walk(npc_ral)
+  random_walk(npc_himi)
 end
 
-function subrosian_blue:on_interaction()
+npc_ral:register_event("on_interaction", function()
   game:start_dialog("subrosian_blue.0.subrosia")
-end
+end)
 
-function subrosian_orange:on_interaction()
+npc_himi:register_event("on_interaction", function()
   game:start_dialog("subrosian_orange.0.subrosia")
-end
+end)
 
-function subrosian_soaking:on_interaction()
+npc_salai:register_event("on_interaction", function()
   game:start_dialog("subrosian_soaking.0.subrosia", function()
     if game:get_value("tunic_equipped") ~= 2 then
       game:start_dialog("subrosian_soaking.0.tunic")
     end
   end)
-end
+end)
