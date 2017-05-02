@@ -18,9 +18,12 @@ function enemy:go_random()
 end
 
 function enemy:on_hurt(attack)
-  self.rock = true
   self:get_movement():stop()
-  self:get_sprite():set_animation("immobilized")
+  if self:get_sprite():get_animation() == "immobilized" then
+    self:get_sprite():set_animation("immobilized_hurt")
+  else
+    self:get_sprite():set_animation("immobilized")
+  end
   sol.timer.start(self, 10000, function()
     self:get_sprite():set_animation("shaking")
     sol.timer.start(self:get_map(), 1000, function()
@@ -28,6 +31,7 @@ function enemy:on_hurt(attack)
       self:go_random()
     end)
   end)
+  self.rock = true
 end
 
 function enemy:on_movement_changed(movement)
@@ -39,7 +43,8 @@ function enemy:on_update()
   if self.rock then
     self:set_invincible(true)
     self:set_attack_consequence("explosion", 3)
-    if self:get_sprite():get_animation() ~= "immobilized" then self:get_sprite():set_animation("immobilized") end
+    if self:get_sprite() == "enemies/deadrock" and self:get_sprite():get_animation() ~= "immobilized" then
+      self:get_sprite():set_animation("immobilized") end
   else
     self:set_attack_consequence("sword", 1)
   end

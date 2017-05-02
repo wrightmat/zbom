@@ -1810,6 +1810,44 @@ him some time to learn!
 }
 
 dialog{
+  id = "_quests.i1652.1",
+  text = [[
+Master Ore:
+Somewhere under Hyrule is a vast land
+that may contain the rumored$rMaster Ore$w.
+If you find it, bring it back to$gRudy$w.
+]]
+}
+
+dialog{
+  id = "_quests.i1652.2",
+  text = [[
+Master Ore:
+Retrieve 50$rSubrosian Ore$wfor the
+$gShaman$w and hopefully you'll get
+what you want.
+]]
+}
+
+dialog{
+  id = "_quests.i1652.3",
+  text = [[
+Master Ore:
+You've found the$rMaster Ore$w! Bring it
+to$gRudy$wto see what he can do with it.
+]]
+}
+
+dialog{
+  id = "_quests.i1652.4",
+  text = [[
+Master Ore:
+You've found the$rMaster Ore$w! Bring it
+to$gRudy$wto see what he can do with it.
+]]
+}
+
+dialog{
   id = "_quests.i1807.1",
   text = [[
 Book of Mudora:
@@ -10946,6 +10984,26 @@ dialog{
 }
 
 dialog{
+  id = "sign.sA1_directions",
+  skip = "current",
+  text = [[
+South: Subrosian Shop
+East: Shaman's Circle
+SouthEast: Cave of Interest
+]]
+}
+
+dialog{
+  id = "sign.sA3_directions",
+  skip = "current",
+  text = [[
+South: Molten Beach
+East: Cave of Interest
+North: Shaman's Circle
+]]
+}
+
+dialog{
   id = "sign.tower",
   skip = "current",
   text = [[
@@ -11252,10 +11310,11 @@ dialog{
   id = "subrosian_shaman.1.subrosia",
   skip = "current",
   text = [[
-What can this magic do? Well, almost
-anything you could want! I've been
-studying here for many seasons, and
-I've almost found all of its secrets.
+What can a$gShaman$w's magic do? Well,
+almost anything you could want! I've
+been studying here for many seasons,
+and I've almost found all of its
+secrets.
 ]]
 }
 
