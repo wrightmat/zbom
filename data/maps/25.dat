@@ -4565,28 +4565,10 @@ wall{
 
 wall{
   layer = 0,
-  x = 16,
+  x = 0,
   y = 840,
   width = 424,
   height = 16,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 16,
-  y = 8,
-  width = 480,
-  height = 16,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 16,
-  y = 24,
-  width = 16,
-  height = 816,
   stops_enemies = true,
 }
 

@@ -1245,8 +1245,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 280,
-  y = 488,
+  x = 248,
+  y = 512,
   width = 32,
   height = 32,
   pattern = "528",
@@ -2226,8 +2226,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 336,
-  y = 456,
+  x = 296,
+  y = 464,
   width = 64,
   height = 24,
   pattern = "2018",
@@ -2235,8 +2235,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 344,
-  y = 480,
+  x = 304,
+  y = 488,
   width = 48,
   height = 32,
   pattern = "2021",
@@ -2244,8 +2244,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 336,
-  y = 480,
+  x = 296,
+  y = 488,
   width = 8,
   height = 24,
   pattern = "2019",
@@ -2253,8 +2253,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 392,
-  y = 480,
+  x = 352,
+  y = 488,
   width = 8,
   height = 24,
   pattern = "2020",
@@ -2262,8 +2262,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 352,
-  y = 512,
+  x = 312,
+  y = 520,
   width = 32,
   height = 8,
   pattern = "2022",
@@ -3953,14 +3953,77 @@ enemy{
 }
 
 enemy{
-  name = "miniboss_smog",
+  name = "smog",
   layer = 0,
-  x = 544,
-  y = 493,
+  x = 536,
+  y = 501,
   direction = 0,
   breed = "smog",
-  savegame_variable = "b1245",
   treasure_name = "crystal",
+  treasure_savegame_variable = "b1245",
+}
+
+sensor{
+  name = "sensor_smog_1",
+  layer = 0,
+  x = 376,
+  y = 389,
+  width = 304,
+  height = 16,
+}
+
+sensor{
+  name = "sensor_smog_2",
+  layer = 0,
+  x = 376,
+  y = 597,
+  width = 304,
+  height = 16,
+}
+
+sensor{
+  name = "sensor_smog_3",
+  layer = 0,
+  x = 672,
+  y = 405,
+  width = 16,
+  height = 192,
+}
+
+sensor{
+  name = "sensor_smog_4",
+  layer = 0,
+  x = 368,
+  y = 405,
+  width = 16,
+  height = 192,
+}
+
+wall{
+  layer = 0,
+  x = 232,
+  y = 96,
+  width = 744,
+  height = 16,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 200,
+  y = 832,
+  width = 592,
+  height = 16,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 184,
+  y = 136,
+  width = 16,
+  height = 712,
+  stops_enemies = true,
 }
 
 tile{
@@ -4343,8 +4406,8 @@ tile{
 
 tile{
   layer = 2,
-  x = 336,
-  y = 440,
+  x = 296,
+  y = 448,
   width = 64,
   height = 16,
   pattern = "2017",

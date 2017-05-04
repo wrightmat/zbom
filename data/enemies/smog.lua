@@ -6,7 +6,7 @@ local timer
 -- which throws balls of lava.
 
 function enemy:on_created()
-  self:set_life(10); self:set_damage(4)
+  self:set_life(12); self:set_damage(4)
   self:create_sprite("enemies/smog")
   self:set_size(32, 32); self:set_origin(16, 29)
   self:set_hurt_style("boss")
@@ -75,9 +75,10 @@ function enemy:go_hero()
 end
 
 function enemy:on_dying()
+  local x, y, l = self:get_position()
   sol.timer.start(self:get_map(), 1000, function()
-    self:create_enemy({ breed = "smog_small" })
-    self:create_enemy({ breed = "smog_small" })
-    self:create_enemy({ breed = "smog_small" })
+    self:create_enemy({ breed = "smog_small", x = x + 32, y = y })
+    self:create_enemy({ breed = "smog_small", x = x - 32, y = y })
+    self:create_enemy({ breed = "smog_small", x = x, y = y + 32 })
   end)
 end
