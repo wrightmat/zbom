@@ -5111,23 +5111,13 @@ teletransporter{
 }
 
 enemy{
-  name = "geldman_1",
+  name = "lynel_silver",
   layer = 0,
-  x = 168,
-  y = 397,
-  direction = 0,
-  breed = "geldman",
-  treasure_name = "random_north",
-}
-
-enemy{
-  name = "geldman_2",
-  layer = 0,
-  x = 312,
-  y = 661,
-  direction = 0,
-  breed = "geldman",
-  treasure_name = "random_north",
+  x = 392,
+  y = 501,
+  direction = 3,
+  breed = "lynel_silver",
+  treasure_name = "crystal",
 }
 
 destructible{

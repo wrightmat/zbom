@@ -3956,39 +3956,13 @@ teletransporter{
 }
 
 enemy{
-  name = "chuchu_1",
+  name = "lynel_silver",
   layer = 0,
-  x = 536,
+  x = 560,
   y = 813,
-  direction = 0,
-  breed = "chuchu_yellow",
-}
-
-enemy{
-  name = "chuchu_2",
-  layer = 0,
-  x = 384,
-  y = 957,
-  direction = 0,
-  breed = "chuchu_yellow",
-}
-
-enemy{
-  name = "chuchu_3",
-  layer = 0,
-  x = 144,
-  y = 789,
-  direction = 0,
-  breed = "chuchu_yellow",
-}
-
-enemy{
-  name = "chuchu_4",
-  layer = 0,
-  x = 744,
-  y = 925,
-  direction = 0,
-  breed = "chuchu_yellow",
+  direction = 3,
+  breed = "lynel_silver",
+  treasure_name = "crystal",
 }
 
 destructible{

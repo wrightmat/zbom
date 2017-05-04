@@ -8936,6 +8936,26 @@ npc{
   sprite = "entities/mailbox",
 }
 
+enemy{
+  name = "geldman_3",
+  layer = 0,
+  x = 800,
+  y = 805,
+  direction = 0,
+  breed = "geldman",
+  treasure_name = "random_north",
+}
+
+enemy{
+  name = "geldman_4",
+  layer = 0,
+  x = 352,
+  y = 813,
+  direction = 0,
+  breed = "geldman",
+  treasure_name = "random_north",
+}
+
 tile{
   layer = 2,
   x = 696,

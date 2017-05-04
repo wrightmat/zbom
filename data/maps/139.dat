@@ -4203,6 +4203,16 @@ teletransporter{
   destination = "from_M6",
 }
 
+enemy{
+  name = "lynel_silver",
+  layer = 0,
+  x = 632,
+  y = 525,
+  direction = 3,
+  breed = "lynel_silver",
+  treasure_name = "crystal",
+}
+
 tile{
   layer = 2,
   x = 560,

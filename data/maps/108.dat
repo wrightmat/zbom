@@ -3,9 +3,9 @@ properties{
   y = 0,
   width = 1120,
   height = 1120,
-  world = "outside_north",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_north",
   tileset = "2",
   music = "same",
 }
@@ -474,7 +474,7 @@ tile{
   x = 896,
   y = 816,
   width = 8,
-  height = 304,
+  height = 96,
   pattern = "130",
 }
 
@@ -483,7 +483,7 @@ tile{
   x = 904,
   y = 816,
   width = 8,
-  height = 304,
+  height = 96,
   pattern = "617",
 }
 
@@ -1567,6 +1567,60 @@ tile{
   pattern = "1012",
 }
 
+tile{
+  layer = 0,
+  x = 904,
+  y = 992,
+  width = 8,
+  height = 128,
+  pattern = "617",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 992,
+  width = 8,
+  height = 128,
+  pattern = "130",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 984,
+  width = 16,
+  height = 16,
+  pattern = "590",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 904,
+  width = 16,
+  height = 16,
+  pattern = "587",
+}
+
+tile{
+  layer = 0,
+  x = 888,
+  y = 920,
+  width = 8,
+  height = 64,
+  pattern = "130",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 920,
+  width = 8,
+  height = 64,
+  pattern = "573",
+}
+
 teletransporter{
   name = "to_H1",
   layer = 0,
@@ -1663,6 +1717,16 @@ enemy{
   direction = 0,
   breed = "tektite_water",
   treasure_name = "random_north",
+}
+
+jumper{
+  layer = 0,
+  x = 888,
+  y = 920,
+  width = 8,
+  height = 64,
+  direction = 4,
+  jump_length = 64,
 }
 
 tile{

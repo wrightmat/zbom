@@ -3432,8 +3432,8 @@ enemy{
 enemy{
   name = "snapdragon_3",
   layer = 0,
-  x = 384,
-  y = 253,
+  x = 624,
+  y = 909,
   direction = 0,
   breed = "snap_dragon",
   treasure_name = "random_enemy",
@@ -3442,8 +3442,8 @@ enemy{
 enemy{
   name = "snapdragon_4",
   layer = 0,
-  x = 600,
-  y = 789,
+  x = 448,
+  y = 1061,
   direction = 0,
   breed = "snap_dragon",
   treasure_name = "random_enemy",
@@ -3460,12 +3460,12 @@ enemy{
 }
 
 enemy{
-  name = "snapdragon_6",
+  name = "lynel_silver",
   layer = 0,
-  x = 136,
-  y = 293,
-  direction = 0,
-  breed = "snap_dragon",
-  treasure_name = "random_enemy",
+  x = 312,
+  y = 245,
+  direction = 3,
+  breed = "lynel_silver",
+  treasure_name = "crystal",
 }
 
