@@ -1823,9 +1823,8 @@ dialog{
   id = "_quests.i1652.2",
   text = [[
 Master Ore:
-Retrieve 50$rSubrosian Ore$wfor the
-$gShaman$w and hopefully you'll get
-what you want.
+The$gShaman$wof$bSubrosia$wmay be able to
+help you in your quest for$rMaster Ore.$w
 ]]
 }
 
@@ -1833,8 +1832,9 @@ dialog{
   id = "_quests.i1652.3",
   text = [[
 Master Ore:
-You've found the$rMaster Ore$w! Bring it
-to$gRudy$wto see what he can do with it.
+Retrieve 50$rSubrosian Ore$wfor the
+$gShaman$w and hopefully you'll get
+what you want.
 ]]
 }
 
@@ -11355,6 +11355,14 @@ your heart most desires.
 }
 
 dialog{
+  id = "subrosian_shaman.3.searching",
+  text = [[
+You don't have all of the ore I need yet.
+Continue your search.
+]]
+}
+
+dialog{
   id = "subrosian_shaman.3.subrosia",
   skip = "current",
   text = [[
@@ -11379,6 +11387,14 @@ Of course it is! Take that marvelous
 ore and do something useful with it.
 And by you, I mean a qualified
 blacksmith - which you are not.
+]]
+}
+
+dialog{
+  id = "subrosian_shaman.5.subrosia",
+  text = [[
+Still hanging around, huh? I've shown you
+eveything I know, sorry.
 ]]
 }
 

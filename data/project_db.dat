@@ -284,6 +284,7 @@ sprite{ id = "enemies/knight_red_sword", description = "Knight, red (sword)" }
 sprite{ id = "enemies/lanmola", description = "Lanmola (head)" }
 sprite{ id = "enemies/lanmola_body", description = "Lanmola (body)" }
 sprite{ id = "enemies/lanmola_tail", description = "Lanmola (tail)" }
+sprite{ id = "enemies/lava_shot", description = "Lava shot" }
 sprite{ id = "enemies/leever_green", description = "Leever, green" }
 sprite{ id = "enemies/leever_purple", description = "Leever, purple" }
 sprite{ id = "enemies/lizalfos", description = "Lizalfos" }
@@ -321,6 +322,8 @@ sprite{ id = "enemies/rope", description = "Rope (snake)" }
 sprite{ id = "enemies/shadow_link", description = "Shadow Link" }
 sprite{ id = "enemies/shadow_link_sword", description = "Shadow Link (sword)" }
 sprite{ id = "enemies/skeletor", description = "Skeletor" }
+sprite{ id = "enemies/smog", description = "Smog (miniboss)" }
+sprite{ id = "enemies/smog_small", description = "Smog, small version" }
 sprite{ id = "enemies/snap_dragon", description = "Snap dragon" }
 sprite{ id = "enemies/soldier_cannon", description = "Soldier, Cannon" }
 sprite{ id = "enemies/soldier_green", description = "Soldier, green" }
@@ -959,6 +962,7 @@ enemy{ id = "projectiles/baba_seed", description = "Baba Seed" }
 enemy{ id = "projectiles/beam_particle", description = "Beam Particle" }
 enemy{ id = "projectiles/belahim_beam", description = "Belahim Beam" }
 enemy{ id = "projectiles/fire_shot", description = "Fire Shot (Lynel, Lizalfos)" }
+enemy{ id = "projectiles/lava_shot", description = "Lava Shot (Smog)" }
 enemy{ id = "projectiles/plasmarine_ball", description = "Plasmarine Electicity Ball" }
 enemy{ id = "projectiles/rock_lux", description = "Octolux Ball" }
 enemy{ id = "projectiles/rock_small", description = "Octoroc Rock" }
@@ -969,6 +973,8 @@ enemy{ id = "ropa", description = "Ropa" }
 enemy{ id = "rope", description = "Rope" }
 enemy{ id = "shadow_link", description = "Shadow Link (Miniboss)" }
 enemy{ id = "skeletor", description = "Skeletor" }
+enemy{ id = "smog", description = "Smog (miniboss, overworld)" }
+enemy{ id = "smog_small", description = "Smog, small version" }
 enemy{ id = "snap_dragon", description = "Snap Dragon" }
 enemy{ id = "soldier_green", description = "Soldier, Green" }
 enemy{ id = "stal", description = "Stal" }

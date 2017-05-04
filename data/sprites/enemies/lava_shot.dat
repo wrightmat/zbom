@@ -1,0 +1,11 @@
+animation{
+  name = "walking",
+  src_image = "enemies/smog.png",
+  frame_delay = 150,
+  directions = {
+    { x = 0, y = 112, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 5 },
+    { x = 0, y = 112, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 5 },
+    { x = 0, y = 112, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 5 },
+    { x = 0, y = 112, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 5 },
+  },
+}
