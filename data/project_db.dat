@@ -294,6 +294,8 @@ sprite{ id = "enemies/lizalfos_spear", description = "Lizalfos (Spear)" }
 sprite{ id = "enemies/lizalfos_sword", description = "Lizalfos (Sword)" }
 sprite{ id = "enemies/lizalfos_yellow", description = "Lizalfos, Yellow (Electric)" }
 sprite{ id = "enemies/lynel", description = "Lynel" }
+sprite{ id = "enemies/lynel_blue", description = "Lynel, blue" }
+sprite{ id = "enemies/lynel_silver", description = "Lynel, silver (miniboss)" }
 sprite{ id = "enemies/manhandla", description = "Manhandla" }
 sprite{ id = "enemies/manhandla_head", description = "Manhandla (Head)" }
 sprite{ id = "enemies/moblin", description = "Moblin" }
@@ -941,6 +943,8 @@ enemy{ id = "lizalfos_blue", description = "Lizalfos, Blue" }
 enemy{ id = "lizalfos_red", description = "Lizalfos, Red" }
 enemy{ id = "lizalfos_yellow", description = "Lizalfos, Yellow" }
 enemy{ id = "lynel", description = "Lynel" }
+enemy{ id = "lynel_blue", description = "Lynel, blue" }
+enemy{ id = "lynel_silver", description = "Lynel, silver (miniboss)" }
 enemy{ id = "manhandla", description = "Manhandla (Boss)" }
 enemy{ id = "moblin", description = "Moblin" }
 enemy{ id = "moth", description = "Moth" }
