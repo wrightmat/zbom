@@ -5,7 +5,7 @@ local enemy = ...
 local can_shoot = true
 
 function enemy:on_created()
-  self:set_life(32); self:set_damage(18)
+  self:set_life(20); self:set_damage(16)
   self:create_sprite("enemies/lynel_silver")
   self:set_size(32, 32); self:set_origin(16, 27)
   self:set_pushed_back_when_hurt(false)
@@ -19,7 +19,7 @@ local function go_hero()
   sprite:set_animation("walking")
   local movement = sol.movement.create("target")
   local rand = math.random(5)
-  if rand < 4 then movement:set_speed(40) else movement:set_speed(128) end
+  if rand < 4 then movement:set_speed(40) else movement:set_speed(96) end
   movement:start(enemy)
 end
 
