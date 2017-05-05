@@ -10936,6 +10936,16 @@ ghost sightings.
 }
 
 dialog{
+  id = "sign.mt_magma",
+  skip = "current",
+  text = [[
+            Mt. Magma
+        Warning: Extreme Heat!
+
+]]
+}
+
+dialog{
   id = "sign.ordon_pumpkins",
   skip = "current",
   text = [[
