@@ -76,15 +76,16 @@ function tone_manager:create(game)
       local previous_time_system = time_system
       time_system = game:is_in_outside_world() or (map:get_id() == "20" or map:get_id() == "21" or map:get_id() == "22")
 print(time_system)
-      if time_system ~= previous_time_system then mr = nil end
-      
-      cr, cg, cb = game:get_value("cr"), game:get_value("cg"), game:get_value("cb")
-      tr, tg, tb = game:get_value("tr"), game:get_value("tg"), game:get_value("tb")
-
+      if time_system ~= previous_time_system then
       -- Make map tone stick for this map and only this one.
       mr, mg, mb, ma = game:get_value("mr"), game:get_value("mg"), game:get_value("mb"), game:get_value("ma")
       game:set_value("mr", nil); game:set_value("mg", nil); game:set_value("mb", nil); game:set_value("ma", nil)
-
+        --mr = nil
+      end
+      
+      cr, cg, cb = game:get_value("cr"), game:get_value("cg"), game:get_value("cb")
+      tr, tg, tb = game:get_value("tr"), game:get_value("tg"), game:get_value("tb")
+      
       if cr == nil then game:set_value("cr", 255); cr = 255 end
       if cg == nil then game:set_value("cg", 255); cg = 255 end
       if cb == nil then game:set_value("cb", 255); cb = 255 end
