@@ -41,31 +41,14 @@ function tone_manager:create(game)
       game:set_value("cg", cg)
       game:set_value("cb", cb)
     end
-    if mr ~= nil then
-      game:set_value("mr", mr)
-      game:set_value("mg", mg)
-      game:set_value("mb", mb)
-    end
     game:set_value("tr", tr)
     game:set_value("tg", tg)
     game:set_value("tb", tb)
   end
-    
+  
   function game:set_time_flow(int)
     time_flow = int
     self:restart_tone_system()
-  end
-  
-  function game:set_map_tone(r,g,b,a)
-    mr, mg, mb, ma = r, g, b, a
-    game:set_value("mr", mr)
-    game:set_value("mg", mg)
-    game:set_value("mb", mb)
-    game:set_value("ma", ma)
-  end
-  
-  function game:get_map_tone()
-    return mr, mg, mb, ma
   end
   
   function tone_menu:on_map_changed()
@@ -73,16 +56,7 @@ function tone_manager:create(game)
       local map = game:get_map()
       game:on_tone_system_saving()
       
-      local previous_time_system = time_system
-      time_system = game:is_in_outside_world() or (map:get_id() == "20" or map:get_id() == "21" or map:get_id() == "22")
-print(time_system)
-      if time_system ~= previous_time_system then
-      -- Make map tone stick for this map and only this one.
-      mr, mg, mb, ma = game:get_value("mr"), game:get_value("mg"), game:get_value("mb"), game:get_value("ma")
-      game:set_value("mr", nil); game:set_value("mg", nil); game:set_value("mb", nil); game:set_value("ma", nil)
-        --mr = nil
-      end
-      
+      mr, mg, mb, ma = nil, nil, nil, nil
       cr, cg, cb = game:get_value("cr"), game:get_value("cg"), game:get_value("cb")
       tr, tg, tb = game:get_value("tr"), game:get_value("tg"), game:get_value("tb")
       
@@ -96,6 +70,13 @@ print(time_system)
       self:get_new_tone()
       self:check()
     end
+  end
+
+  function game:set_map_tone(r,g,b,a)
+    mr, mg, mb, ma = r, g, b, a
+  end
+  function game:get_map_tone()
+    return mr, mg, mb, ma
   end
   
   function tone_menu:set_new_tone(r, g, b)
@@ -144,7 +125,7 @@ print(time_system)
       self:set_new_tone(170, 130, 100)
   	elseif hour == 6 and minute < 30 then
   	  game:set_value("time_of_day", "dawn")
-      self:set_new_tone(210, 180, 150)
+      self:set_new_tone(210, 180, 180)
   	elseif hour == 6 and minute >= 30 then
       self:set_new_tone(240, 240, 230)
   	elseif hour == 7 and minute < 30 then
@@ -173,12 +154,12 @@ print(time_system)
   	  self:set_new_tone(150, 110, 100)
   	elseif hour == 19 and minute < 30 then
       game:set_value("time_of_day","night")
-  	  self:set_new_tone(110, 105, 190)	 
+  	  self:set_new_tone(120, 105, 160)	 
       for entity in game:get_map():get_entities("night_") do
         entity:set_enabled(true)
       end
   	elseif hour == 19 and minute >= 30 then
-  	  self:set_new_tone(90, 90, 225)
+  	  self:set_new_tone(90, 90, 190)
   	elseif hour == 3 and minute >= 30 then
   	  self:set_new_tone(80, 80, 230)
     else
@@ -211,17 +192,19 @@ print(time_system)
         cb = cb ~= tb and (cb * (d - 1) + tb) / d or tb
         d = d - 1
       end
-    	
+      
+      if map:get_id() == "202" then
+        mr, mg, mb, ma = 32, 64, 128, 128
+      end
+      
       -- Fill the Tone Surface
-      if game:get_map_tone() ~= nil then
-        -- We are in a map where tone are defined
-    	  shadow:clear()
+      if mr ~= nil then
+        -- We are in a map where tone is defined
         shadow:fill_color{mr, mg, mb, ma}
-      elseif time_system and mr == nil then
-        -- We are outside
+      elseif game:is_in_outside_world() then
+        shadow:clear()
         shadow:fill_color{cr, cg, cb, 255}
-      elseif not time_system and mr == nil then
-        -- The map has undefined tone.
+      else
         shadow:fill_color{255, 255, 255, 255}
       end
       
