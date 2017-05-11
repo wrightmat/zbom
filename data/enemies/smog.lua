@@ -59,6 +59,9 @@ function enemy:check_hero()
 end
 
 function enemy:go_random()
+  if map:get_entities_count("smog") < 6 then
+    self:create_enemy({ breed = "smog_small", name = "smog" })
+  end
   self:get_sprite():set_animation("walking")
   local m = sol.movement.create("random_path")
   m:set_speed(40)
@@ -72,13 +75,4 @@ function enemy:go_hero()
   m:set_speed(56)
   m:start(self)
   going_hero = true
-end
-
-function enemy:on_dying()
-  local x, y, l = self:get_position()
-  sol.timer.start(self:get_map(), 1000, function()
-    self:create_enemy({ breed = "smog_small", x = x + 32, y = y })
-    self:create_enemy({ breed = "smog_small", x = x - 32, y = y })
-    self:create_enemy({ breed = "smog_small", x = x, y = y + 32 })
-  end)
 end

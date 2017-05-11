@@ -5,10 +5,9 @@ local timer
 -- Smog, small: Ghost-like creatures which a large Smog are composed of.
 
 function enemy:on_created()
-  self:set_life(10); self:set_damage(4)
+  self:set_life(4); self:set_damage(4)
   self:create_sprite("enemies/smog_small")
   self:set_size(32, 32); self:set_origin(16, 29)
-  self:set_hurt_style("boss")
   self:set_pushed_back_when_hurt(false)
   self:set_push_hero_on_sword(false)
   self:set_obstacle_behavior("flying")
