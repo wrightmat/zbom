@@ -47,7 +47,7 @@ function entity:on_interaction()
   if game:get_value("b1117") and not game:get_value("b1134") then
     -- Finished Mausoleum but not Lakebed, so direct to Lake Hylia.
     game:start_dialog("deacon.6.house")
-
+    game:set_value("i1030", 1)
   elseif game:get_value("i1602") == 6 then
     game:start_dialog("deacon.5.faron", game:get_player_name())
   elseif game:get_value("i1602") == 3 then
@@ -56,15 +56,15 @@ function entity:on_interaction()
     game:start_dialog("deacon.2.faron", function() game:set_value("i1602", 2) end)
   else
     if game:get_value("i1913") >= 3 and not game:get_value("b1134") then
-      game:start_dialog("deacon.6.house", function() game:set_value("i1030", 1) end)
+      game:start_dialog("deacon.6.house")
+      game:set_value("i1030", 1)
     elseif game:get_value("i1913") == 1 then
       game:start_dialog("deacon.1.faron")
-      game:set_value("i1913", game:get_value("i1913")+1)
     else
       game:start_dialog("deacon.0.faron")
-      game:set_value("i1913", game:get_value("i1913")+1)
     end
   end
+  game:set_value("i1913", game:get_value("i1913")+1)
 end
 
 function entity:on_movement_changed(movement)
@@ -73,11 +73,13 @@ function entity:on_movement_changed(movement)
 end
 
 function entity:on_post_draw()
-  -- Draw the NPC's name above the entity.
-  local name_surface = sol.text_surface.create({ font = font, font_size = 8, text = name })
-  local x, y, l = entity:get_position()
-  local w, h = entity:get_sprite():get_size()
-  if self:get_distance(hero) < 100 then
-    entity:get_map():draw_visual(name_surface, x-(w/2), y-(h-4))
+  if game:get_value("i1913") > 0 then
+    -- Draw the NPC's name above the entity.
+    local name_surface = sol.text_surface.create({ font = font, font_size = 8, text = name })
+    local x, y, l = entity:get_position()
+    local w, h = entity:get_sprite():get_size()
+    if self:get_distance(hero) < 100 then
+      entity:get_map():draw_visual(name_surface, x-(w/2), y-(h-4))
+    end
   end
 end

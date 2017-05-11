@@ -1213,9 +1213,9 @@ dialog{
   id = "_quests.i1030.1",
   text = [[
 Drain Lake Hylia:
-Deacon spoke of a way to drain the
-entirety of Lake Hylia. Look for the
-switch house near Hyrule Castle.
+A few people have spoken of a way to
+drain the entirety of Lake Hylia. Look
+for the switch house near Hyrule Castle.
 ]]
 }
 
@@ -7620,10 +7620,10 @@ dialog{
   id = "juba.1.lakebed",
   skip = "current",
   text = [[
-The great$bLakebed Temple$w  can be entered
+The great$bLakebed Temple$w can be entered
 by$gZora$w only. It helps that there are
 only two ways there - with our great
-relic, the $r Zora Flippers$w, and by draining
+relic, the$rZora Flippers$w, or by draining
 the entirety of$bLake Hylia$w. And who
 could possibly do that (besides we Zora).
 After all, no non-Zora still alive
@@ -7642,7 +7642,7 @@ dialog{
 With the disappearance of$gZelda$w, the
 council has disbanded. But some of us
 actually care about our work, so we've
-set up here in the   $bCouncil office$w.
+set up here in the$bCouncil office$w.
 ]]
 }
 
@@ -7650,7 +7650,7 @@ dialog{
   id = "juba.2.office",
   skip = "current",
   text = [[
-There's a $g Zora soldier$w guarding the
+There's a$gZora soldier$w guarding the
 entrance to our Domain? Yes, I fear my
 kind have grown even more isolated since
 I've left. We've long been a solitary
@@ -7665,7 +7665,7 @@ cleared our great temple of evil.$0
 But wait, you won't get far without a
 way to swim in the deep water. Take
 these, they are my people's sacred
-treasure - known as  $r  Zora's Flippers$w.
+treasure - known as$rZora's Flippers$w.
 ]]
 }
 
@@ -7673,7 +7673,7 @@ dialog{
   id = "juba.3.council",
   skip = "current",
   text = [[
-Good to see that $gZelda$w is back.
+Good to see that$gZelda$w is back.
 I actually did miss her a litte. And she
 is a little quieter since she got back.
 ]]
@@ -7990,7 +7990,7 @@ dialog{
   id = "library_shelf.1",
   skip = "current",
   text = [[
-The $g Ordon people$w are a peaceful
+The$gOrdon people$w are a peaceful
 agrarian tribe who settled the south
 peninsula of the Hyrule mainland.
 After splitting off from the Hylian
@@ -7998,7 +7998,7 @@ people in order to find their own
 way, it was said that they lost the
 Goddesses' favor and within a
 generation their ears were mutated
-into a rounded form. The   $g Ordon people$w
+into a rounded form. The$gOrdon people$w
 are known throughout the land for
 their farming and ranching prowess
 and their prize-winning produce,
@@ -8057,7 +8057,7 @@ caused them to shut themselves off from
 the rest of the country. Their Domain is
 now protected by one of their soldiers
 at all times, and few outsiders are ever
-let in. Even the $g Zora Elder, Jabun$w,
+let in. Even the$gZora Elder, Jabun$w,
 has distanced himself from the rest of
 the council.$0 The$bLakebed Temple$w at
 which the Zora pray at the bottom of
@@ -9854,8 +9854,8 @@ There's another entire continent across
 the bridge that fell down! Can you
 believe it? You won't be able to get
 there right now, but if you could you'd
-be able to visit$bRauru$w,$bDarunia$w,$bNabooru$w,
-$bRuto,$w or any of the other towns there!
+get to visit$bRauru$w,$bDarunia$w,$bNabooru$w,
+$bRuto,$wor any of the other towns there!
 ]]
 }
 
@@ -11294,7 +11294,17 @@ dialog{
   id = "subrosian_2.1.poes_2",
   question = "1",
   text = [[
-What do you say? Sell one for 20 ore chunks?
+Whadya say? Sell one for 20 ore chunks?
+Yes
+No
+]]
+}
+
+dialog{
+  id = "subrosian_2.1.poes_3",
+  question = "1",
+  text = [[
+No? How about for 200 of those rupees?
 Yes
 No
 ]]
@@ -12327,7 +12337,7 @@ dialog{
   text = [[
 You say you don't know anyone named
 $gIsan$w? You should travel to the
-$bAncient Library$w via the old sewers
+$bAncient Library$wvia the old sewers
 east of here and speak with him -
 he's the wisest man in all of Hyrule
 and can help you in your quest.
@@ -12344,8 +12354,8 @@ though. I've heard of a number of
 magical artifacts in a large$bpyramid$w
 in the desert - maybe something there
 can help you. Get there through
-$bFaron Woods$w and the$bBeach$w or
-via$bKakariko City$w to the north.
+$bFaron Woods$wand the$bBeach$wor
+via$bKakariko City$wto the north.
 ]]
 }
 
@@ -12354,7 +12364,7 @@ dialog{
   skip = "current",
   text = [[
 I will never assist you in your dark
-quest! Leave this place, $menchantress$w!
+quest! Leave this place,$menchantress$w!
 ]]
 }
 
@@ -12364,7 +12374,7 @@ dialog{
   text = [[
 He also told me about your quest.$0
 To be honest I was unaware of the
-theft of the$cBook$w until$gIsan$w
+theft of the$cBook$wuntil$gIsan$w
 informed me. You see, given my
 family's history with that book,
 I should have sensed that something
@@ -12377,7 +12387,7 @@ was originally tasked as a living
 history of the land, and was enchanted
 in order to...$0 Wait$0.$0.$0.
 I can feel a powerful force headed this
-way... An$mevil power$w I believe will be
+way... An$mevil power$wI believe will be
 here momentarily.$0 I also believe that
 if they find you here with the pieces
 of that$cBook$wyou possess, it is unlikely
