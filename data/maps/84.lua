@@ -37,10 +37,10 @@ function map:on_started()
     sensor_c1:set_enabled(false)
     tree_temple:set_enabled(false)
     obstacle_temple:set_enabled(false)
-    
     if not game:get_value("b1179") then
       game:start_dialog("deku.2.lost_woods_first", function() game:set_value("b1179", true) end)
     end
+    game:set_value("i1032", 4) -- Ancient Library sidequest.
   end
   if game:get_value("b1191") then
     signpost_credits:set_enabled(true)

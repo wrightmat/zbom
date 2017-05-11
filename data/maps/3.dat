@@ -3592,24 +3592,6 @@ tile{
   pattern = "214",
 }
 
-tile{
-  layer = 0,
-  x = 888,
-  y = 96,
-  width = 24,
-  height = 24,
-  pattern = "564",
-}
-
-tile{
-  layer = 0,
-  x = 864,
-  y = 96,
-  width = 32,
-  height = 24,
-  pattern = "565",
-}
-
 destination{
   name = "from_subrosia_1",
   layer = 0,
@@ -3988,6 +3970,24 @@ tile{
   width = 16,
   height = 8,
   pattern = "672",
+}
+
+tile{
+  layer = 1,
+  x = 864,
+  y = 96,
+  width = 32,
+  height = 24,
+  pattern = "565",
+}
+
+tile{
+  layer = 1,
+  x = 888,
+  y = 96,
+  width = 24,
+  height = 24,
+  pattern = "564",
 }
 
 tile{

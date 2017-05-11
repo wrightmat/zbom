@@ -183,17 +183,21 @@ end)
 npc_architect:register_event("on_interaction", function()
   if game:get_value("i1651") == 4 then
     game:start_dialog("architect.3.house")
-    sol.timer.start(game, 360000, function()
-      -- After a real-time hour, the carpenter will return to the bridge.
+    sol.timer.start(game, 180000, function()
+      -- After a real-time half hour, the carpenter will return to the bridge.
       game:set_value("i1651", 5)
     end)
   elseif game:get_value("i1651") == 3 then
     game:start_dialog("architect.2.house")
+    sol.timer.start(game, 180000, function()
+      -- After a real-time half hour, the carpenter will come to the city.
+      game:set_value("i1651", 4)
+    end)
   elseif game:get_value("i1651") == 2 then
     game:start_dialog("architect.1.house")
     game:set_value("i1651", 3)
-    sol.timer.start(game, 360000, function()
-      -- After a real-time hour, the carpenter will come to the city.
+    sol.timer.start(game, 180000, function()
+      -- After a real-time half hour, the carpenter will come to the city.
       game:set_value("i1651", 4)
     end)
   else

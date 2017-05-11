@@ -824,18 +824,18 @@ tile{
 tile{
   layer = 0,
   x = 2104,
-  y = 0,
+  y = 8,
   width = 8,
-  height = 32,
+  height = 24,
   pattern = "106",
 }
 
 tile{
   layer = 0,
   x = 2144,
-  y = 0,
+  y = 8,
   width = 8,
-  height = 32,
+  height = 24,
   pattern = "106",
 }
 
@@ -3670,14 +3670,14 @@ tile{
   x = 312,
   y = 272,
   width = 8,
-  height = 24,
+  height = 32,
   pattern = "106",
 }
 
 tile{
   layer = 0,
   x = 320,
-  y = 296,
+  y = 304,
   width = 32,
   height = 8,
   pattern = "105",
@@ -3688,7 +3688,7 @@ tile{
   x = 352,
   y = 272,
   width = 8,
-  height = 24,
+  height = 32,
   pattern = "106",
 }
 
@@ -6239,6 +6239,15 @@ tile{
   pattern = "525",
 }
 
+tile{
+  layer = 0,
+  x = 2112,
+  y = 0,
+  width = 32,
+  height = 8,
+  pattern = "105",
+}
+
 sensor{
   name = "dungeon_room_8_",
   layer = 0,
@@ -6449,16 +6458,6 @@ switch{
   inactivate_when_leaving = false,
 }
 
-enemy{
-  name = "tentacle_orig_1",
-  layer = 0,
-  x = 2120,
-  y = 21,
-  direction = 3,
-  breed = "tentacle",
-  treasure_name = "random_enemy",
-}
-
 door{
   name = "door_2",
   layer = 0,
@@ -6475,46 +6474,6 @@ door{
   y = 248,
   direction = 3,
   sprite = "entities/door_shutter",
-}
-
-enemy{
-  name = "tentacle_orig_2",
-  layer = 0,
-  x = 2128,
-  y = 29,
-  direction = 3,
-  breed = "tentacle",
-  treasure_name = "random_enemy",
-}
-
-enemy{
-  name = "tentacle_orig_3",
-  layer = 0,
-  x = 2136,
-  y = 37,
-  direction = 3,
-  breed = "tentacle",
-  treasure_name = "random_enemy",
-}
-
-enemy{
-  name = "tentacle_orig_4",
-  layer = 0,
-  x = 2120,
-  y = 45,
-  direction = 3,
-  breed = "tentacle",
-  treasure_name = "random_enemy",
-}
-
-enemy{
-  name = "tentacle_orig_5",
-  layer = 0,
-  x = 2136,
-  y = 53,
-  direction = 3,
-  breed = "tentacle",
-  treasure_name = "random_enemy",
 }
 
 switch{
@@ -6599,46 +6558,6 @@ door{
   opening_condition = "dungeon_1_small_keys",
   opening_condition_consumed = true,
   cannot_open_dialog = "_small_key_required",
-}
-
-enemy{
-  name = "tentacle_orig_6",
-  layer = 0,
-  x = 328,
-  y = 269,
-  direction = 3,
-  breed = "tentacle",
-  treasure_name = "random_enemy",
-}
-
-enemy{
-  name = "tentacle_orig_7",
-  layer = 0,
-  x = 344,
-  y = 269,
-  direction = 3,
-  breed = "tentacle",
-  treasure_name = "random_enemy",
-}
-
-enemy{
-  name = "tentacle_orig_8",
-  layer = 0,
-  x = 336,
-  y = 285,
-  direction = 3,
-  breed = "tentacle",
-  treasure_name = "random_enemy",
-}
-
-enemy{
-  name = "tentacle_orig_9",
-  layer = 0,
-  x = 336,
-  y = 253,
-  direction = 3,
-  breed = "tentacle",
-  treasure_name = "random_enemy",
 }
 
 chest{
@@ -6830,6 +6749,7 @@ enemy{
   y = 820,
   direction = 3,
   breed = "wallmaster",
+  treasure_name = "random",
 }
 
 enemy{
@@ -7494,55 +7414,6 @@ custom_entity{
 }
 
 enemy{
-  name = "tentacle_key_1",
-  layer = 0,
-  x = 320,
-  y = 677,
-  direction = 3,
-  breed = "tentacle",
-}
-
-enemy{
-  name = "tentacle_key_2",
-  layer = 0,
-  x = 328,
-  y = 669,
-  direction = 3,
-  breed = "tentacle",
-  treasure_name = "random_enemy",
-}
-
-enemy{
-  name = "tentacle_key_3",
-  layer = 0,
-  x = 312,
-  y = 669,
-  direction = 3,
-  breed = "tentacle",
-  treasure_name = "random_enemy",
-}
-
-enemy{
-  name = "tentacle_key_4",
-  layer = 0,
-  x = 312,
-  y = 685,
-  direction = 3,
-  breed = "tentacle",
-  treasure_name = "random_enemy",
-}
-
-enemy{
-  name = "tentacle_key_5",
-  layer = 0,
-  x = 328,
-  y = 685,
-  direction = 3,
-  breed = "tentacle",
-  treasure_name = "random_enemy",
-}
-
-enemy{
   name = "armos_key_1",
   layer = 0,
   x = 248,
@@ -7613,56 +7484,6 @@ teletransporter{
   height = 16,
   destination_map = "48",
   destination = "from_sewer",
-}
-
-enemy{
-  name = "tentacle_path_1",
-  layer = 0,
-  x = 2000,
-  y = 213,
-  direction = 3,
-  breed = "tentacle",
-  treasure_name = "random_enemy",
-}
-
-enemy{
-  name = "tentacle_path_2",
-  layer = 0,
-  x = 1536,
-  y = 221,
-  direction = 3,
-  breed = "tentacle",
-  treasure_name = "random_enemy",
-}
-
-enemy{
-  name = "tentacle_path_3",
-  layer = 0,
-  x = 1216,
-  y = 221,
-  direction = 3,
-  breed = "tentacle",
-  treasure_name = "random_enemy",
-}
-
-enemy{
-  name = "tentacle_path_4",
-  layer = 0,
-  x = 1392,
-  y = 149,
-  direction = 3,
-  breed = "tentacle",
-  treasure_name = "random_enemy",
-}
-
-enemy{
-  name = "tentacle_path_5",
-  layer = 0,
-  x = 1800,
-  y = 141,
-  direction = 3,
-  breed = "tentacle",
-  treasure_name = "random_enemy",
 }
 
 door{
@@ -7977,6 +7798,116 @@ destructible{
   destruction_sound = "stone",
 }
 
+enemy{
+  name = "tentacle_chest_1",
+  layer = 0,
+  x = 232,
+  y = 213,
+  direction = 3,
+  breed = "tentacle",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "tentacle_chest_2",
+  layer = 0,
+  x = 336,
+  y = 269,
+  direction = 3,
+  breed = "tentacle",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "tentacle_chest_3",
+  layer = 0,
+  x = 592,
+  y = 205,
+  direction = 3,
+  breed = "tentacle",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "tentacle_chest_4",
+  layer = 0,
+  x = 472,
+  y = 205,
+  direction = 3,
+  breed = "tentacle",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "tentacle_chest_5",
+  layer = 0,
+  x = 336,
+  y = 149,
+  direction = 3,
+  breed = "tentacle",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "lizalfos",
+  layer = 0,
+  x = 1568,
+  y = 221,
+  direction = 3,
+  breed = "lizalfos_blue",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "helmasaur_key_1",
+  layer = 0,
+  x = 312,
+  y = 661,
+  direction = 3,
+  breed = "helmasaur_green",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "helmasaur_key_2",
+  layer = 0,
+  x = 328,
+  y = 677,
+  direction = 3,
+  breed = "helmasaur_green",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "helmasaur_key_3",
+  layer = 0,
+  x = 312,
+  y = 693,
+  direction = 3,
+  breed = "helmasaur_green",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "helmasaur_key_4",
+  layer = 0,
+  x = 328,
+  y = 709,
+  direction = 3,
+  breed = "helmasaur_green",
+  treasure_name = "random_enemy",
+}
+
+enemy{
+  name = "lizalfos_2",
+  layer = 0,
+  x = 2080,
+  y = 157,
+  direction = 3,
+  breed = "lizalfos_blue",
+  treasure_name = "random_enemy",
+}
+
 tile{
   layer = 1,
   x = 848,
@@ -8050,6 +7981,7 @@ enemy{
   y = 629,
   direction = 3,
   breed = "keese",
+  treasure_name = "random",
 }
 
 enemy{
@@ -8059,6 +7991,7 @@ enemy{
   y = 725,
   direction = 3,
   breed = "keese",
+  treasure_name = "random",
 }
 
 enemy{
@@ -8068,6 +8001,7 @@ enemy{
   y = 669,
   direction = 3,
   breed = "keese",
+  treasure_name = "random",
 }
 
 wall{

@@ -24,7 +24,6 @@ local function random_walk(npc)
 end
 
 function map:on_started(destination)
-  game:set_dialog_style("default")
   if game:get_value("i1602") <= 2 or game:get_value("i1602") > 4 then
     npc_gaira:remove()
   end
@@ -61,7 +60,7 @@ function map:on_started(destination)
   elseif game:get_value("i1602") == 6 or game:get_time_of_day() == "night" then
     npc_deacon:remove()
   end
-
+  
   -- Activate any night-specific dynamic tiles.
   if game:get_time_of_day() == "night" then
     for entity in game:get_map():get_entities("night_") do

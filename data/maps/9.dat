@@ -8578,6 +8578,24 @@ tile{
   pattern = "641",
 }
 
+tile{
+  layer = 0,
+  x = 1472,
+  y = 1728,
+  width = 16,
+  height = 16,
+  pattern = "635",
+}
+
+tile{
+  layer = 0,
+  x = 936,
+  y = 1736,
+  width = 16,
+  height = 16,
+  pattern = "635",
+}
+
 dynamic_tile{
   name = "night_doorway_16",
   layer = 0,
@@ -9979,17 +9997,6 @@ destructible{
 
 chest{
   name = "chest_mtmagma",
-  layer = 0,
-  x = 1480,
-  y = 1741,
-  treasure_name = "rupee",
-  treasure_variant = 5,
-  treasure_savegame_variable = "b1788",
-  sprite = "entities/chest",
-}
-
-chest{
-  name = "chest_mtmagma_2",
   layer = 0,
   x = 944,
   y = 1749,

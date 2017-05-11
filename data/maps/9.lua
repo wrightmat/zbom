@@ -24,6 +24,11 @@ function map:on_started(destination)
     if blocker ~= nil then blocker:set_enabled(false) end
     if npc_moblin ~= nil then npc_moblin:remove() end
   end
+  if game:get_value("i1822") > 1 then
+    map:create_chest({ x = 1480, y = 1741, layer = 0, treasure_name = "rupee", treasure_variant = 5, sprite = "entities/chest" })
+  else
+    map:create_chest({ x = 1480, y = 1741, layer = 0, treasure_name = "tunic", treasure_variant = 2, sprite = "entities/chest" })
+  end
 
   -- Activate any night-specific dynamic tiles.
   if game:get_time_of_day() == "night" then

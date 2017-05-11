@@ -41,7 +41,6 @@ function map:on_started(destination)
     map:open_doors("door_2")
     map:open_doors("door_3")
   end
-  game:set_map_tone(32,64,128,128)
 end
 
 function switch_sword:on_activated()
@@ -100,7 +99,7 @@ end
 
 for enemy in map:get_entities("tentacle") do
   enemy.on_dead = function()
-    if not map:has_entities("tentacle_orig") and not game:get_value("b1786") then
+    if not map:has_entities("tentacle_chest") and not game:get_value("b1786") then
       chest_alchemy_stone:set_enabled(true)
       sol.audio.play_sound("chest_appears")
     end

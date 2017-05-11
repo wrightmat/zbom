@@ -20,7 +20,7 @@ function map:on_started(destination)
   if game:get_value("i1840") >= 5 then
     table_witch:set_enabled(true) -- Crystal ball is gone.
   end
-  if game:get_value("i1068") == "9" then game:set_value("i1068", "10") end
+  if game:get_value("i1068") == 9 then game:set_value("i1068", 10) end
   
   spoils_jade:get_sprite():set_animation("jade")
   spoils_stick:get_sprite():set_animation("stick")
@@ -52,7 +52,7 @@ npc_isan:register_event("on_interaction", function()
           hero:start_treasure("trading", 12)
           game:set_value("b2032", true)
           game:set_value("b2031", false)
-          quest_book:remove()
+          if quest_book ~= nil then quest_book:remove() end
         end)
       else
         -- Don't give him the fish.
@@ -75,7 +75,10 @@ npc_isan:register_event("on_interaction", function()
     until index ~= last_message
     game:start_dialog("isan.2.library."..index)
     -- Initiate the book fetch quest after it's been referenced.
-    if index == 2 then game:set_value("b1614", true) end
+    if index == 2 then
+      game:set_value("b1614", true)
+      if quest_book ~= nil then quest_book:remove() end
+    end
     last_message = index
   elseif game:get_value("i1912") == 1 then
     game:start_dialog("isan.1.library", function()
@@ -409,13 +412,13 @@ end)
 
 np1_guard:register_event("on_interaction", function()
   game:start_dialog("guard.0.north_castle")
-end
+end)
 np2_guard:register_event("on_interaction", function()
   game:start_dialog("guard.0.north_castle")
-end
+end)
 np3_guard:register_event("on_interaction", function()
   game:start_dialog("guard.0.north_castle")
-end
+end)
 np4_guard:register_event("on_interaction", function()
   game:start_dialog("guard.0.north_castle")
-end
+end)

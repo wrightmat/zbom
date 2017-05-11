@@ -24,7 +24,7 @@ function map:on_started()
   shop_poe_soul:get_sprite():set_direction(0)
   
   -- Replace shop items if they're bought
-  if game:get_item("world_map"):get_variant() > 1 then --world map
+  if game:get_item("world_map"):get_variant() > 1 then -- World map
     shop_world_map_2:remove()
     self:create_shop_treasure({
 	name = "shop_shovel",
@@ -114,14 +114,24 @@ end)
 
 npc_subro:register_event("on_interaction", function()
   if game:get_item("bottle_1"):get_variant() == 8 or game:get_item("bottle_2"):get_variant() == 8 or game:get_item("bottle_3"):get_variant() == 8 or game:get_item("bottle_4"):get_variant() == 8 then
-    -- If hero has a Poe Soul.
+    -- If hero has a Poe Soul, sell for 20 ore chunks or 200 rupees.
     game:start_dialog("subrosian_2.1.poes", function(answer)
       if answer == 1 then
-        if game:get_item("bottle_1"):get_variant() == 8 then game:get_item("bottle_1"):set_variant(0)
-        elseif game:get_item("bottle_2"):get_variant() == 8 then game:get_item("bottle_2"):set_variant(0)
-        elseif game:get_item("bottle_3"):get_variant() == 8 then game:get_item("bottle_3"):set_variant(0)
-        elseif game:get_item("bottle_4"):get_variant() == 8 then game:get_item("bottle_4"):set_variant(0) end
-        game:add_money(20)
+        if game:get_item("bottle_1"):get_variant() == 8 then game:get_item("bottle_1"):set_variant(1)
+        elseif game:get_item("bottle_2"):get_variant() == 8 then game:get_item("bottle_2"):set_variant(1)
+        elseif game:get_item("bottle_3"):get_variant() == 8 then game:get_item("bottle_3"):set_variant(1)
+        elseif game:get_item("bottle_4"):get_variant() == 8 then game:get_item("bottle_4"):set_variant(1) end
+        game:set_value("i1836", game:get_value("i1836")+20)
+      else
+        game:start_dialog("subrosian_2.1.poes_3", function(answer)
+          if answer == 1 then
+            if game:get_item("bottle_1"):get_variant() == 8 then game:get_item("bottle_1"):set_variant(1)
+            elseif game:get_item("bottle_2"):get_variant() == 8 then game:get_item("bottle_2"):set_variant(1)
+            elseif game:get_item("bottle_3"):get_variant() == 8 then game:get_item("bottle_3"):set_variant(1)
+            elseif game:get_item("bottle_4"):get_variant() == 8 then game:get_item("bottle_4"):set_variant(1) end
+            game:add_money(200)
+          end
+        end)
       end
     end)
   elseif game:get_value("i1806") == nil or game:get_value("i1806") == 0 then
