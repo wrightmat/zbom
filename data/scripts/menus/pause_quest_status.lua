@@ -261,7 +261,7 @@ function quest_status_submenu:set_cursor_position(position)
     else
       self.cursor_sprite_y = 172
     end
-    if position == 8 then
+    if position == 8 and self.tunic > 1 then
       self.game:set_custom_command_effect("action", "change")
     elseif position == 0 then
       self.game:set_custom_command_effect("action", "info")
@@ -311,7 +311,7 @@ function quest_status_submenu:on_command_pressed(command)
       local item_sprite = sol.sprite.create("entities/items")
       item_sprite:set_animation("tunic")
       item_sprite:set_direction(self.quest_dialog_choice)
-      item_sprite:draw(self.quest_items_surface, 185, 177)
+      item_sprite:draw(self.quest_items_surface, 196, 177)
       self.caption_text_keys[7] = "quest_status.caption.tunic_" .. self.tunic_equipped
       self.game:get_hero():set_tunic_sprite_id("hero/tunic" .. self.tunic_equipped)
     end
@@ -351,7 +351,7 @@ function quest_status_submenu:on_command_pressed(command)
       self:set_cursor_position(0)
       handled = true
     elseif command == "action" then
-      if self.cursor_position == 7 then
+      if self.cursor_position == 8 and self.tunic > 1 then
         -- Cursor is over the Tunic
         sol.audio.play_sound("message_end")
         self.quest_dialog_choice = (self.tunic_equipped - 1) or 0
