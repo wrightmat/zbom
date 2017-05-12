@@ -8,6 +8,7 @@ local door_timer = nil
 
 function map:on_started(destination)
   map:set_doors_open("door_statues")
+  if not game:get_value("b1754") then chest_rupees:set_enabled(false) end
 end
 
 function switch_door:on_activated()
@@ -29,5 +30,14 @@ function sensor_door_open:on_activated()
     eye_statue_2:set_enabled(false)
     eye_statue_1:set_enabled(true)
     map:open_doors("door_statues")
+  end
+end
+
+for enemy in map:get_entities("keese") do
+  enemy.on_dead = function()
+    if not map:has_entities("keese") then
+      chest_rupees:set_enabled(true)
+      sol.audio.play_sound("chest_appears")
+    end
   end
 end

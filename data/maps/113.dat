@@ -7296,7 +7296,7 @@ destination{
   name = "from_desert_entrance",
   layer = 0,
   x = 152,
-  y = 181,
+  y = 189,
   direction = 3,
 }
 
@@ -7315,8 +7315,8 @@ teletransporter{
   y = 152,
   width = 16,
   height = 16,
-  destination_map = "113",
-  destination = "from_desert_cave",
+  destination_map = "9",
+  destination = "from_H2_2",
 }
 
 teletransporter{
@@ -7326,8 +7326,8 @@ teletransporter{
   y = 416,
   width = 16,
   height = 16,
-  destination_map = "113",
-  destination = "from_desert_entrance",
+  destination_map = "9",
+  destination = "from_H2_1",
 }
 
 enemy{

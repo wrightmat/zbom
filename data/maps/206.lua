@@ -1,5 +1,6 @@
 local map = ...
 local game = map:get_game()
+local hero = map:get_hero()
 
 ---------------------------------------
 -- Dungeon 5: Lakebed Lair (Floor 1) --
@@ -108,19 +109,19 @@ for enemy in map:get_entities("chuchu") do
 end
 
 function set_intermediate_layer:on_activated()
-  local x, y, l = map:get_entity("hero"):get_position()
-  map:get_entity("hero"):set_position(x, y, 1)
+  local x, y, l = hero:get_position()
+  hero:set_position(x, y, 1)
 end
 function set_intermediate_layer_2:on_activated()
-  local x, y, l = map:get_entity("hero"):get_position()
-  map:get_entity("hero"):set_position(x, y, 1)
+  local x, y, l = hero:get_position()
+  hero:set_position(x, y, 1)
 end
 
 function npc_zora:on_interaction()
   if not game:get_value("b1124") then
     game:start_dialog("zora.1.lakebed", function(answer)
       if answer == 1 then
-	hero:start_treasure("small_key")
+        hero:start_treasure("small_key")
         game:set_value("b1124", true)
       end
     end)
@@ -130,17 +131,17 @@ function npc_zora:on_interaction()
 end
 
 function sensor_reset_ground_1:on_activated()
-  hero:reset_solid_ground()
+  hero:save_solid_ground(hero:get_position())
 end
 function sensor_reset_ground_2:on_activated()
-  hero:reset_solid_ground()
+  hero:save_solid_ground(hero:get_position())
 end
 function sensor_reset_ground_3:on_activated()
-  hero:reset_solid_ground()
+  hero:save_solid_ground(hero:get_position())
 end
 function sensor_reset_ground_4:on_activated()
-  hero:reset_solid_ground()
+  hero:save_solid_ground(hero:get_position())
 end
 function sensor_reset_ground_5:on_activated()
-  hero:reset_solid_ground()
+  hero:save_solid_ground(hero:get_position())
 end

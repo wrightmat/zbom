@@ -4601,6 +4601,15 @@ tile{
   pattern = "117",
 }
 
+tile{
+  layer = 0,
+  x = 672,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "46",
+}
+
 switch{
   name = "switch_door",
   layer = 0,
@@ -5432,6 +5441,17 @@ door{
   opening_condition = "dungeon_7_small_keys",
   opening_condition_consumed = true,
   cannot_open_dialog = "_small_key_required",
+}
+
+chest{
+  name = "chest_rupees",
+  layer = 0,
+  x = 680,
+  y = 93,
+  treasure_name = "rupee",
+  treasure_variant = 4,
+  treasure_savegame_variable = "b1754",
+  sprite = "entities/chest",
 }
 
 tile{

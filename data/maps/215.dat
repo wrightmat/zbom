@@ -6289,7 +6289,7 @@ enemy{
   x = 152,
   y = 205,
   direction = 3,
-  breed = "wizzrobe",
+  breed = "wizzrobe_fire",
   treasure_name = "random",
 }
 
@@ -6297,9 +6297,9 @@ enemy{
   name = "wizzrobe_2",
   layer = 0,
   x = 216,
-  y = 109,
+  y = 101,
   direction = 3,
-  breed = "wizzrobe",
+  breed = "wizzrobe_elec",
   treasure_name = "random",
 }
 

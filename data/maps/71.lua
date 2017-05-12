@@ -7,6 +7,7 @@ local game = map:get_game()
 
 local catch = 0
 local caught = false
+local last_position
 
 -- Possible positions where the thief runs to.
 local positions = {
@@ -36,11 +37,9 @@ function map:on_started(destination)
       end
     end
   end
-
   if game:get_value("i1612") == nil or game:get_value("i1612") > 1 then
     thief:remove()  -- If not ready for the thief game, or already have the bottle.
   end
-
   -- Activate any night-specific dynamic tiles.
   if game:get_time_of_day() == "night" then
     for entity in game:get_map():get_entities("night_") do
@@ -80,15 +79,17 @@ function thief_caught()
 end
 
 function thief:on_interaction()
-  game:set_dialog_style("default")
   local position = (positions[math.random(#positions)])
+  if position == last_position then
+    local position = (positions[math.random(#positions)])
+  end
+  last_position = position
   local m = sol.movement.create("target")
-  m:set_smooth(true)
   m:set_target(position.x, position.y)
-  m:set_speed(184)
+  m:set_smooth(true); m:set_speed(184)
   sol.audio.play_sound("hero_seen")
   m:start(thief)
-
+  
   if catch == 0 then
     catch = catch + 1
     game:start_dialog("thief.0.bottle", function()

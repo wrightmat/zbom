@@ -121,7 +121,7 @@ end
 npc_strap:register_event("on_interaction", function()
   if game:get_time_of_day() == "night" and not game:get_value("b1812") then
     game:start_dialog("strap.0.night", function()
-      quest_bottle:remove()
+      if quest_bottle ~= nil then quest_bottle:remove() end
       game:set_value("i1612", 1)
     end)
   else
@@ -215,6 +215,7 @@ npc_horwin:register_event("on_interaction", function()
 end)
 
 function npc_garroth_sensor:on_interaction()
+  game:set_dialog_name("Garroth")
   if game:get_value("i1918") <= 5 then
     if (game:get_value("i1918") >= 0 and game:get_value("i1918") <= 1 and game:get_time_of_day() == "day") or game:get_value("i1918") >= 3 then
       game:start_dialog("garroth."..game:get_value("i1918")..".pub", function()
