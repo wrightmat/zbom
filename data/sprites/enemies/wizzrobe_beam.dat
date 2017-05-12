@@ -9,6 +9,16 @@ animation{
   },
 }
 animation{
+  name = "electric",
+  src_image = "enemies/wizzrobe.png",
+  directions = {
+    { x = 64, y = 168, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
+    { x = 64, y = 200, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
+    { x = 80, y = 168, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
+    { x = 64, y = 184, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
+  },
+}
+animation{
   name = "fire",
   src_image = "enemies/wizzrobe.png",
   directions = {

@@ -14,6 +14,7 @@ function enemy:on_created(properties)
   if self:get_name() ~= nil then
     if self:get_name() == "fire" or self:get_name():match("^fire_(%d+)") then type = "fire" end
     if self:get_name() == "ice" or self:get_name():match("^ice_(%d+)") then type = "ice" end
+    if self:get_name() == "elec" or self:get_name():match("^ice_(%d+)") then type = "elec" end
   end
 end
 
@@ -26,6 +27,8 @@ function enemy:on_restarted()
     self:get_sprite():set_animation("fire")
   elseif type == "ice" then
     self:get_sprite():set_animation("ice")
+  elseif type == "elec" then
+    self:get_sprite():set_animation("electric")
   else
     self:get_sprite():set_animation("magic")
   end
@@ -44,6 +47,9 @@ end
 function enemy:on_attacking_hero(hero)
   if type == "ice" and self:get_game():get_item("shield"):get_variant() < 3 then
     hero:start_frozen(2000)
+    hero:set_invincible(true, 3000)
+  elseif type == "elec" and self:get_game():get_item("shield"):get_variant() < 3 then
+    hero:start_electrocution(2000)
     hero:set_invincible(true, 3000)
   end
 end
