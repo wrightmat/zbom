@@ -18,7 +18,6 @@ end
 function map:on_started(destination)
   if game:get_time_of_day() == "night" then
     npc_quinn:remove()
-
     -- Activate any night-specific dynamic tiles.
     for entity in game:get_map():get_entities("night_") do
       entity:set_enabled(true)
@@ -32,6 +31,7 @@ function map:on_started(destination)
     bridge_2:set_enabled(true)
     bridge_3:set_enabled(true)
     bridge_4:set_enabled(true)
+    if game:get_value("i1651") < 5 then game:set_value("i1651", 5) end
   elseif game:get_value("i1651") == 4 then
     npc_horwin:remove()
   end
