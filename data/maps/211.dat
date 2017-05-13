@@ -1131,7 +1131,7 @@ tile{
   layer = 0,
   x = 120,
   y = 432,
-  width = 256,
+  width = 240,
   height = 8,
   pattern = "65",
 }
@@ -5157,7 +5157,7 @@ custom_entity{
   height = 16,
   direction = 3,
   sprite = "entities/ice_block",
-  model = "ice_block",
+  model = "ice_block_solid",
 }
 
 custom_entity{
@@ -5169,79 +5169,79 @@ custom_entity{
   height = 16,
   direction = 3,
   sprite = "entities/ice_block",
-  model = "ice_block",
+  model = "ice_block_solid",
 }
 
 custom_entity{
   name = "ice_block_3",
   layer = 0,
   x = 600,
-  y = 349,
+  y = 357,
   width = 16,
   height = 16,
   direction = 3,
   sprite = "entities/ice_block",
-  model = "ice_block",
+  model = "ice_block_solid",
 }
 
 custom_entity{
   name = "ice_block_4",
   layer = 0,
   x = 744,
-  y = 349,
+  y = 357,
   width = 16,
   height = 16,
   direction = 3,
   sprite = "entities/ice_block",
-  model = "ice_block",
+  model = "ice_block_solid",
 }
 
 custom_entity{
   name = "ice_block_5",
   layer = 0,
   x = 584,
-  y = 349,
+  y = 357,
   width = 16,
   height = 16,
   direction = 3,
   sprite = "entities/ice_block",
-  model = "ice_block",
+  model = "ice_block_solid",
 }
 
 custom_entity{
   name = "ice_block_6",
   layer = 0,
   x = 616,
-  y = 349,
+  y = 357,
   width = 16,
   height = 16,
   direction = 3,
   sprite = "entities/ice_block",
-  model = "ice_block",
+  model = "ice_block_solid",
 }
 
 custom_entity{
   name = "ice_block_7",
   layer = 0,
   x = 728,
-  y = 349,
+  y = 357,
   width = 16,
   height = 16,
   direction = 3,
   sprite = "entities/ice_block",
-  model = "ice_block",
+  model = "ice_block_solid",
 }
 
 custom_entity{
   name = "ice_block_8",
   layer = 0,
   x = 760,
-  y = 349,
+  y = 357,
   width = 16,
   height = 16,
   direction = 3,
   sprite = "entities/ice_block",
-  model = "ice_block",
+  model = "ice_block_solid",
 }
 
 custom_entity{
@@ -5253,7 +5253,7 @@ custom_entity{
   height = 16,
   direction = 3,
   sprite = "entities/ice_block",
-  model = "ice_block",
+  model = "ice_block_solid",
 }
 
 custom_entity{
@@ -5265,7 +5265,7 @@ custom_entity{
   height = 16,
   direction = 3,
   sprite = "entities/ice_block",
-  model = "ice_block",
+  model = "ice_block_solid",
 }
 
 custom_entity{
@@ -5277,7 +5277,7 @@ custom_entity{
   height = 16,
   direction = 3,
   sprite = "entities/ice_block",
-  model = "ice_block",
+  model = "ice_block_solid",
 }
 
 custom_entity{
@@ -5289,7 +5289,7 @@ custom_entity{
   height = 16,
   direction = 3,
   sprite = "entities/ice_block",
-  model = "ice_block",
+  model = "ice_block_solid",
 }
 
 wall{
