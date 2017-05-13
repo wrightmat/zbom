@@ -8,7 +8,7 @@ local nb_sons_to_create = 0
 -- Grim Creeper: Miniboss who controls flocks of Keese.
 
 function enemy:on_created()
-  self:set_life(12); self:set_damage(6)
+  self:set_life(10); self:set_damage(6)
   self:create_sprite("enemies/grim_creeper")
   self:set_size(16, 24); self:set_origin(8, 17)
   self:set_invincible(true)
@@ -35,24 +35,29 @@ function enemy:throw_keese(breed)
   else
     son_breed = "keese_" .. breed
   end
-  if nb_son_created <= 30 then
+  if nb_sons_created <= 80 then
     self:create_enemy{
       name = son_name,
       breed = son_breed,
       x = 0,
       y = -40,
     }
+    if breed == "fire" then sol.audio.play_sound("lamp") end
+    if breed == "ice" then sol.audio.play_sound("ice_shatter") end
+    if breed == "elec" then sol.audio.play_sound("spark") end
+    if breed == "dark" then sol.audio.play_sound("poe_soul") end
   end
-  if breed == "fire" then sol.audio.play_sound("lamp") end
-  if breed == "ice" then sol.audio.play_sound("ice_shatter") end
-  if breed == "elec" then sol.audio.play_sound("spark") end
-  if breed == "dark" then sol.audio.play_sound("poe_soul") end
 
   -- See what to do next.
   nb_sons_to_create = nb_sons_to_create - 1
   if nb_sons_to_create > 0 then
-    -- Throw another son in 0.5 seconds.
-    sol.timer.start(self, 500, function() self:throw_keese(breed) end)
+    if nb_sons_created <= 30 then
+      -- Throw another son in 1 second.
+      sol.timer.start(self, 1000, function() self:throw_keese(breed) end)
+    else
+       -- Throw another son in 5 seconds.
+      sol.timer.start(self, 5000, function() self:throw_keese(breed) end)
+    end
   else
     -- Finish the son phase.
     local sprite = self:get_sprite()
