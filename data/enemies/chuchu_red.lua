@@ -36,11 +36,3 @@ function enemy:reappear()
     enemy:restart()
   end
 end
-
--- Prevent enemies from "piling up" as much, which makes it easy to kill multiple in one hit.
-function enemy:on_collision_enemy(other_enemy, other_sprite, my_sprite)
-  if enemy:is_traversable() then
-    enemy:set_traversable(false)
-    sol.timer.start(200, function() enemy:set_traversable(true) end)
-  end
-end
