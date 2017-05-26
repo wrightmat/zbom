@@ -10,6 +10,7 @@ function map:on_started(destination)
   if not game:get_value("b1191") then
     boss_belahim:set_enabled(false)
     dark_mirror:set_enabled(false)
+    dark_mirror_out:set_enabled(false)
   else bed_zelda:remove() end
   if not game:get_value("b1180") then chest_compass:set_enabled(false) end
   if not game:get_value("b1185") then chest_key_1:set_enabled(false) end
@@ -18,41 +19,50 @@ function map:on_started(destination)
     chest_item:set_enabled(false); chest_item_block:set_enabled(false)
     miniboss_warp:set_enabled(false)
   else miniboss_warp:set_enabled(true) end
-  if not game:get_value("b1190") and not game:get_value("b1191") then
+  if not game:get_value("b1190") or not game:get_value("b1191") then
     boss_heart:set_enabled(false)
+  end
+  -- If the ending was interrupted but both bosses were defeated, finish the game.
+  if game:get_value("b1190") and game:get_value("b1191") then
+    game:set_dungeon_finished(8)
+    game:set_value("b1699", true)
+    game:set_value("i1807", 8)
   end
 end
 
 local function finish_game()
   game:set_dungeon_finished(8)
   game:set_value("b1699", true)  -- Main quest completed - Dark Tribe defeated.
-    game:start_dialog("ordona.8.boss_dead", game:get_player_name(), function()
-      local m = sol.movement.create("target")
-      m:set_target(880, 1200)
-      game:get_hero():freeze()
-      game:get_hero():set_animation("walking")
-      m:start(game:get_hero(), function()
-        game:get_hero():set_animation("book_mudora")
-        sol.timer.start(game:get_map(), 1000, function()
-          dark_mirror:set_enabled()
-          dark_mirror:get_sprite():fade_in(100, function()
-            game:start_dialog("ordona.8.mirror", game:get_player_name(), function()
-              m:set_target(880, 1032)
-              game:get_hero():set_direction(1) -- Walking upward.
-              game:get_hero():set_animation("walking")
-              m:start(map:get_hero())
-              sol.timer.start(game:get_map(), 1800, function()
-                game:get_hero():set_animation("stopped")
-                if bed_zelda ~= nil then bed_zelda:remove() end
-                game:start_dialog("ordona.8.zelda", function()
-                  game:get_hero():teleport("84", "from_sanctum")  -- Teleport hero outside of Sanctum and roll the credits.
-                  sol.timer.start(game, 500, function() game:on_credits_started() end)
-                end)
+  game:set_value("i1807", 8) -- Remove the "Book of Mudora" quest too.
+  
+  game:start_dialog("ordona.8.boss_dead", game:get_player_name(), function()
+    local m = sol.movement.create("target")
+    m:set_target(880, 1200)
+    game:get_hero():freeze()
+    game:get_hero():set_animation("walking")
+    m:start(game:get_hero(), function()
+      game:get_hero():set_animation("book_mudora")
+      sol.timer.start(game:get_map(), 1000, function()
+        dark_mirror:set_enabled()
+        dark_mirror_out:set_enabled()
+        dark_mirror:get_sprite():fade_in(100, function()
+          game:start_dialog("ordona.8.mirror", game:get_player_name(), function()
+            m:set_target(880, 1032)
+            game:get_hero():set_direction(1) -- Walking upward.
+            game:get_hero():set_animation("walking")
+            m:start(map:get_hero())
+            sol.timer.start(game:get_map(), 1800, function()
+              game:get_hero():set_animation("stopped")
+              if bed_zelda ~= nil then bed_zelda:remove() end
+              game:start_dialog("ordona.8.zelda", function()
+                game:get_hero():teleport("84", "from_sanctum")  -- Teleport hero outside of Sanctum and roll the credits.
+                sol.timer.start(game, 500, function() game:on_credits_started() end)
               end)
             end)
           end)
         end)
       end)
+    end)
   end)
 end
 
@@ -125,8 +135,8 @@ if boss_belahim ~= nil then
     sol.audio.play_sound("boss_killed")
     boss_heart:set_enabled(true)
     sol.audio.play_music("temple_sanctum")
-    sol.timer.start(self, 2000, function()
-      if game:get_value("b1192") then
+    sol.timer.start(self:get_map(), 2000, function()
+      if game:get_value("b1192") and not game:get_value("b1699") then
         finish_game() -- If heart piece is obtained, then do the final dialog!
       end
       return true

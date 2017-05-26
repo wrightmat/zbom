@@ -153,7 +153,9 @@ local function apply_game_fixes(game)
   -- For savegames before 1.3, change this variable to an integer (for new quest system).
   if game:get_value("b1612") then game:set_value("i1612", 1) end
   -- For savegames before 1.3, change this variable (for new quest system).
-  if game:get_value("i1926") >= 3 then game:set_value("i1651", 5) end
+  if game:get_value("i1926") ~= nil then
+    if game:get_value("i1926") >= 3 then game:set_value("i1651", 5) end
+  end
 end
 
 function game:calculate_percent_complete()

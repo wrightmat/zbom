@@ -7332,6 +7332,19 @@ pickable{
   treasure_savegame_variable = "b1192",
 }
 
+teletransporter{
+  name = "dark_mirror_out",
+  layer = 0,
+  x = 872,
+  y = 1072,
+  width = 16,
+  height = 16,
+  destination_map = "84",
+  destination = "from_sanctum",
+  sprite = "entities/warp_appears",
+  sound = "warp",
+}
+
 tile{
   layer = 1,
   x = 456,

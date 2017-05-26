@@ -22121,6 +22121,42 @@ switch{
   inactivate_when_leaving = false,
 }
 
+sensor{
+  name = "sensor_save_ground_1",
+  layer = 0,
+  x = 1352,
+  y = 445,
+  width = 16,
+  height = 64,
+}
+
+sensor{
+  name = "sensor_save_ground_2",
+  layer = 0,
+  x = 1112,
+  y = 445,
+  width = 16,
+  height = 64,
+}
+
+sensor{
+  name = "sensor_save_ground_3",
+  layer = 0,
+  x = 1208,
+  y = 557,
+  width = 64,
+  height = 16,
+}
+
+sensor{
+  name = "sensor_save_ground_4",
+  layer = 0,
+  x = 1208,
+  y = 381,
+  width = 64,
+  height = 16,
+}
+
 tile{
   layer = 1,
   x = 1456,

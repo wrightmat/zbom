@@ -2984,6 +2984,16 @@ jumper{
   jump_length = 72,
 }
 
+enemy{
+  name = "lizalfos",
+  layer = 0,
+  x = 416,
+  y = 269,
+  direction = 3,
+  breed = "lizalfos_yellow",
+  treasure_name = "random_enemy",
+}
+
 tile{
   layer = 2,
   x = 888,

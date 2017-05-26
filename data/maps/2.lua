@@ -71,15 +71,16 @@ function map:on_started(destination)
   -- Replace shop items if they're bought.
   if game:get_value("i1820") >= 2 then -- Shield.
     self:create_shop_treasure({
-	name = "shop_item_4",
-	layer = 0,
-	x = 1392,
-	y = 472,
-	price = 40,
-	dialog = "_item_description.bow.2",
-	treasure_name = "arrow",
-	treasure_variant = 3
+      name = "shop_item_4",
+      layer = 0,
+      x = 1392,
+      y = 472,
+      price = 40,
+      dialog = "_item_description.bow.2",
+      treasure_name = "arrow",
+      treasure_variant = 3
     })
+    if game:get_value("i1820") == 3 then shop_item_1:remove() end
   end
 
   -- Activate any night-specific dynamic tiles.
@@ -510,7 +511,6 @@ function arrow_question_dialog_finished(answer)
           playing_arrows = true
         end)
       end
-
       local time = math.random(6)*8
       if time < 15 then time = 15 end
       sol.timer.start(map, time, function()
@@ -521,7 +521,6 @@ function arrow_question_dialog_finished(answer)
           -- remove switch when at left end of room
           if sx <= 1792 then switch:remove() end
         end
-
         if playing_arrows == true and not map:has_entities("arrow_game_switch") then
           playing_arrows = false
           if arrow_score > 200 then
@@ -613,7 +612,6 @@ function map:on_update()
       end
     end
   end
-
   if playing_arrows then
     for switch in map:get_entities("arrow_game_switch") do
       switch.on_activated = function()
@@ -624,14 +622,12 @@ function map:on_update()
       end
     end
   end
-
   function map:on_draw(dst_surface)
     if score_text ~= nil then
       score_text:draw(dst_surface, score_x, score_y)
       sol.timer.start(map, 1000, function() score_text = nil end)
     end
   end
-
 end
 
 -- This function gives the reward to the player in the slot machine game.
@@ -729,7 +725,11 @@ function npc_attendant_dialog()
   elseif game:get_value("b1033") then game:start_dialog("council_attendant.8") end
 end
 npc_attendant:register_event("on_interaction", function()
-  if game:get_value("i1032") >= 3 then
+  if not game:has_item("world_map") then
+    game:start_dialog("council_attendant.map", function()
+      game:get_hero():start_treasure("world_map")
+    end)
+  elseif game:get_value("i1032") >= 3 then
     game:start_dialog("council_attendant.1", npc_attendant_dialog)
   else
     game:start_dialog("council_attendant.0")

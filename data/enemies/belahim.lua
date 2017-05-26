@@ -54,7 +54,7 @@ function enemy:go_shadow()
     self:set_visible(false)
     nb_sons = self:get_map():get_entities_count("shadow")
     if nb_sons <= 3 then
-      shadow = self:create_enemy({ name="shadow", x=8, y=8, breed="belahim_shadow", treasure="arrow" })
+      shadow = self:create_enemy({ name="shadow", x=8, y=8, breed="belahim_shadow", treasure_name="arrow", treasure_variant=2 })
     end
     state = "shadow"
   end)

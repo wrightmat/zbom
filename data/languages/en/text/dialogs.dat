@@ -350,6 +350,15 @@ $cBook of Mudora$w.
 }
 
 dialog{
+  id = "_item_description.book_mudora.8",
+  skip = "current",
+  text = [[
+The legendary and enchanted
+$cBook of Mudora$w.
+]]
+}
+
+dialog{
   id = "_item_description.boomerang.1",
   icon = "4",
   skip = "current",
@@ -1897,6 +1906,15 @@ dialog{
   id = "_quests.i1807.6",
   text = [[
 Book of Mudora:
+The book is nearly complete and you
+can feel its power growing.
+]]
+}
+
+dialog{
+  id = "_quests.i1807.7",
+  text = [[
+Book of Mudora:
 The complete book of Mudora has a faint
 glow that represents its power.
 ]]
@@ -2089,8 +2107,8 @@ dialog{
   icon = "72",
   skip = "current",
   text = [[
-It looks like this door is locked -
-better find a$rkey$w!
+It looks like this door is locked
+- better find a$rkey$w!
 ]]
 }
 
@@ -3349,8 +3367,8 @@ dialog{
   icon = "39",
   skip = "current",
   text = [[
-You traded the$rZora Scale$w for a
-$rFrozen Fish$w!$0  Finally something
+You traded the$rZora Scale$wfor a
+$rFrozen Fish$w!$0 Finally something
 with some mass appeal!
 ]]
 }
@@ -3360,7 +3378,7 @@ dialog{
   icon = "38",
   skip = "current",
   text = [[
-You traded the$rFrozen Fish$w for the
+You traded the$rFrozen Fish$wfor the
 $rCulinary Arts of Hyrule book$w!$0
 Neat!
 ]]
@@ -3372,7 +3390,7 @@ dialog{
   skip = "current",
   text = [[
 You traded the$rCulinary Arts of
-Hyrule book$w for a$rRito Feather$w!$0
+Hyrule book$wfor a$rRito Feather$w!$0
 Finally a truly useful item! Maybe this
 trading stuff is done?
 ]]
@@ -3395,9 +3413,9 @@ dialog{
   icon = "42",
   skip = "current",
   text = [[
-You traded the$rOdd Potion$w for
+You traded the$rOdd Potion$wfor
 a$rDeku Mask$w!$0
-Not sure what the$gDeku$w wanted
+Not sure what the$gDeku$wwanted
 with that potion, but I'll bet
 this is considered trading up!
 ]]
@@ -3408,7 +3426,7 @@ dialog{
   icon = "43",
   skip = "current",
   text = [[
-You traded the$rDeku Mask$w for
+You traded the$rDeku Mask$wfor
 a$rMoon Tear$w!$0
 
 It's weird that the guy wanted
@@ -3470,7 +3488,7 @@ dialog{
   icon = "48",
   skip = "current",
   text = [[
-You traded$rBananas$w for a 
+You traded$rBananas$wfor a 
 $rGoron Vase$w!$0 It's quite
 beautiful but you're not sure who
 would want one besides a$gGoron$w.
@@ -3905,7 +3923,7 @@ dialog{
   skip = "current",
   text = [[
 Ever since this world was created from
-nothing by the so-called$yOld Gods$w,
+nothing by the so-called $yOld Gods$w,
 there have been those who are attracted
 to the beautiful things which are visible
 in the light, and there are those who are
@@ -3934,17 +3952,18 @@ dialog{
   skip = "current",
   text = [[
 My people were drawn to the story of
-parallel creation. The opposite force that
-was brought into being in response to
-Din's formation of the land, Farore's
+parallel creation. The opposite force
+that was brought into being in response
+to Din's formation of the land, Farore's
 spawning of life and Nayru's creation of
 law and order. Legend tells of the
-imprisoning of the Primodial Chaos in Din's
-earth in the beginning, and the frequent
-repeated attempts to trap it again since.
-All of this repeated bloodshed is required
-by Nayru's "Law" and her pathetic notion
-of "Fate" or "Destiny". 
+imprisoning of the Primodial Chaos in
+Din's earth in the beginning, and the
+frequent repeated attempts to trap it
+again since. All of this repeated
+bloodshed is required by Nayru's "Law"
+and her pathetic notion of "Fate" or
+"Destiny". 
 ]]
 }
 
@@ -3958,9 +3977,9 @@ who shield the Chaos, the Demise, from
 destruction. The tribe which has always
 existed, since the dawn of creation, in
 order to further the interests of darkness
-in this magical land - all as the Goddesses
-themselves so desired, in the glorious
-name of balance.
+in this magical land - all as the
+Goddesses themselves so desired, in the
+glorious name of balance.
 ]]
 }
 
@@ -4302,6 +4321,16 @@ dialog{
   skip = "current",
   text = [[
 I'm afraid I've run out of ideas...
+]]
+}
+
+dialog{
+  id = "council_attendant.map",
+  skip = "current",
+  text = [[
+Wait, you don't even have a map?
+You'll need one if you hope to find
+anything. Here, take this one...
 ]]
 }
 
@@ -4969,7 +4998,7 @@ prepared!
 dialog{
   id = "deku.2.lost_woods_first",
   text = [[
-Hey kid, you might as well get out of here.
+Hey kid, might as well get outta here.
 Without the$cpower of the sage Mudora$w,
 you have no chance of finding your way in
 these woods- they're all twisted around...
@@ -5027,7 +5056,7 @@ dialog{
   skip = "current",
   text = [[
 You can find valuable stuff like
-$rMystic Jade$w and$rDeku Sticks$w scattered
+$rMystic Jade$wand$rDeku Sticks$wscattered
 around the forest sometimes.
 ]]
 }
@@ -5036,7 +5065,7 @@ dialog{
   id = "deku.4.faron.3",
   skip = "current",
   text = [[
-Find enough$rMystic Jade$w and the Great
+Find enough$rMystic Jade$wand the Great
 Fairy of the Forest will give you
 something great!
 ]]
@@ -5046,7 +5075,7 @@ dialog{
   id = "deku.4.faron.4",
   skip = "current",
   text = [[
-Find enough$rDeku Sticks$w and they can
+Find enough$rDeku Sticks$wand they can
 be used to make great$rpotions$w!
 ]]
 }
@@ -5056,7 +5085,7 @@ dialog{
   skip = "current",
   text = [[
 We're nicer than our relatives over at
-the$bLost Woods$w of the east. I think
+the$bLost Woods$wof the east. I think
 they're just confused by that forest
 and it makes them angry. I have heard
 them say that they like odd smelling
@@ -5070,7 +5099,7 @@ dialog{
   id = "deku.4.lost_woods",
   skip = "current",
   text = [[
-The$mmasters$w are gone?$0
+The$mmasters$ware gone?$0
 What will we do? We Deku need a
 strong leader, or we're lost!
 ]]

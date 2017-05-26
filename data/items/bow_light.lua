@@ -10,6 +10,7 @@ end
 function item:on_using()
   -- Call the normal bow code.
   game:get_item("bow"):on_using()
+print("using light bow")
 end
 
 function item:on_amount_changed(amount)
@@ -26,7 +27,7 @@ function item:on_obtaining(variant, savegame_variable)
     game:set_item_assigned(2, item)
   end
   game:get_item("arrow_light"):set_obtainable(true)
-  game:get_item("bow"):on_obtaining(variant, savegame_variable)
+  if self:get_amount() == 0 then self:set_variant(1) else self:set_variant(2) end
 end
 
 function item:get_force()

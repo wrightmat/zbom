@@ -44,6 +44,7 @@ function inventory_submenu:on_started()
   self.captions = {}
 
   for k = 1, #item_names do
+    if item_names[k] == "bow" and self.game:has_item("bow_light") then item_names[k] = "bow_light" end
     -- Get the item, its possession state and amount.
     local item = self.game:get_item(item_names[k])
     local variant = item:get_variant()

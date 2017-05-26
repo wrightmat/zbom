@@ -32,10 +32,12 @@ end
 
 function enemy:create_son()
   vulnerable = true
+  local enemies_region = 0
+  
   for entity in map:get_entities_in_rectangle(760, 936, 1000, 1352) do
     if entity:get_type() == "enemy" then enemies_region = enemies_region + 1 end
   end
-print(enemies_region)
+  
   if enemies_region < 4 then
     local rand = math.random(5)
     if rand == 1 then

@@ -3,7 +3,7 @@ local game = item:get_game()
 
 -- The bow has two variants: without arrows or with arrows.
 -- This is necessary to allow it to have different icons in both cases.
--- Therefore, the bow of light is implement as another item (bow_light),
+-- Therefore, the bow of light is implemented as another item (bow_light),
 -- and calls code from this bow.
 -- It could be simpler if it was possible to change the icon of items dynamically.
 
