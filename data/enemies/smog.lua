@@ -59,7 +59,7 @@ function enemy:check_hero()
 end
 
 function enemy:go_random()
-  if map:get_entities_count("smog") < 6 then
+  if self:get_map():get_entities_count("smog") < 6 then
     self:create_enemy({ breed = "smog_small", name = "smog" })
   end
   self:get_sprite():set_animation("walking")

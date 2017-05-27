@@ -334,7 +334,14 @@ npc_mubeis:register_event("on_interaction", function()
   game:start_dialog("gerudo_2.0.nabooru")
 end)
 npc_gruce:register_event("on_interaction", function()
-  game:start_dialog("gruce.0.nabooru", function() game:get_value("i1230", 1) end)
+  game:start_dialog("gruce.0.nabooru", function(answer)
+    if answer == 1 then
+      game:set_value("i1230", 1)
+      game:start_dialog("gruce.0.nabooru_yes")
+    else
+      game:start_dialog("gruce.0.nabooru_no")
+    end
+  end)
 end)
 
 np1_zora_Guard:register_event("on_interaction", function()

@@ -32,22 +32,20 @@ end
 function sensor_band_start:on_activated()
   game:start_dialog("gruce.0.band")
   band_playing = true
-
   sol.audio.play_music("gerutones", function()
     npc_gruce:get_sprite():set_animation("guitar")
     sol.audio.play_music("north")
   end)
-  sol.timer.start(self, 1500, function() npc_gruce:get_sprite():set_animation("strum") end)
-  sol.timer.start(self, 1650, function() npc_gruce:get_sprite():set_animation("strumming") end)
+  sol.timer.start(self, 1500, function() npc_band_gruce:get_sprite():set_animation("strum") end)
+  sol.timer.start(self, 1650, function() npc_band_gruce:get_sprite():set_animation("strumming") end)
   sol.timer.start(self, 9800, function() npc_band_guitar:get_sprite():set_animation("strumming") end)
 end
 
 function sensor_band_1:on_activated()
   local first_volume = 100
   local second_volume = 1
-
   if band_playing then
-    npc_gruce:get_sprite():set_animation("guitar")
+    npc_band_gruce:get_sprite():set_animation("guitar")
     sol.timer.start(map, 50, function()
       band_playing = false
       sol.audio.set_music_volume(first_volume)
