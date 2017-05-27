@@ -43,9 +43,6 @@ function behavior:create(enemy, properties)
       return m
     end
   end
-  if properties.treasure_variant == nil then
-    properties.treasure_variant = 0
-  end
   
   function enemy:on_created()
     self:set_life(properties.life)
@@ -107,14 +104,6 @@ function behavior:create(enemy, properties)
     local sprite = self:get_sprite()
     sprite:set_direction(direction4)
   end
-  
-  --function enemy:on_dead()
-  --  local rand = math.random(10)
-  --  local x, y, l = self:get_position()
-  --  if rand > 7 and properties.treasure_variant > 0 then   -- 30% chance of getting a special treasure.
-  --    self:get_map():create_pickable( { x = x, y = y, layer = l, treasure_name = "monster_jelly", treasure_variant = properties.treasure_variant } )
-  --  end
-  --end
 end
 
 return behavior

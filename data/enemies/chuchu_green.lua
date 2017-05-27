@@ -1,17 +1,14 @@
 local enemy = ...
+local behavior = require("enemies/generic/chuchu")
 
 -- Green ChuChu: a basic overworld enemy that follows the hero.
 -- The green variety is the first discovered and easiest in this game.
 
-function enemy:on_created()
-  self:set_life(1); self:set_damage(2)
-  self:create_sprite("enemies/chuchu_green")
-  self:set_size(16, 16); self:set_origin(8, 13)
-  self:set_attack_hookshot("immobilized")
-end
-
-function enemy:on_restarted()
-  local m = sol.movement.create("path_finding")
-  m:set_speed(32)
-  m:start(self)
-end
+local properties = {
+  sprite = "enemies/chuchu_green",
+  life = 1,
+  damage = 2,
+  normal_speed = 32,
+  faster_speed = 40
+}
+behavior:create(enemy, properties)

@@ -66,7 +66,7 @@ function enemy:go_hero()
   self:set_can_hurt_hero_running(true)
   self:get_sprite():set_animation("walking")
   local m = sol.movement.create("target")
-  m:set_speed(32)
+  m:set_speed(32 + math.random(10))
   m:start(self)
   going_hero = true
 end

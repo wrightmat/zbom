@@ -1,5 +1,5 @@
 local enemy = ...
-local behavior = require("enemies/generic/soldier")
+local behavior = require("enemies/generic/lizalfos")
 
 -- Lizalfos.
 
