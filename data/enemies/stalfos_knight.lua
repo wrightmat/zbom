@@ -12,6 +12,15 @@ local positions = {
   {x = 360, y = 304, direction4 = 3},
   {x = 336, y = 184, direction4 = 3}
 }
+if map:get_id() == "170" then
+  -- Positions are different if this is the boss run.
+  positions = {
+    {x = 224, y = 238, direction4 = 3},
+    {x = 232, y = 142, direction4 = 3},
+    {x = 360, y = 254, direction4 = 3},
+    {x = 336, y = 134, direction4 = 3}
+  }
+end
 
 -- Stalfos: An undead soldier boss.
 
