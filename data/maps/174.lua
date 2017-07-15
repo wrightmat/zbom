@@ -42,7 +42,10 @@ function sensor_fairy_speak:on_activated()
   elseif game:get_value("i1608") == 5 then
     game:start_dialog("great_fairy.5.north", function()
       game:set_value("i1608", 6)
-      hero:start_treasure("sword", 3)
+      -- Upgrade the sword by one step.
+      -- To get the light sword we need the blacksmith's quest
+      -- and the fairy's quest but the order is not important.
+      hero:start_treasure("sword", game:get_value("i1821") == 1 and 2 or 3)
     end)
   elseif game:get_value("i1608") == 6 then
     game:start_dialog("great_fairy.6")
