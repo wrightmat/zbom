@@ -102,7 +102,7 @@ function entity:on_interaction()
         end
       end)
     end
-  elseif game:get_value("i1631") >= 7 and last_speak ~= 1 then
+  elseif game:get_value("i1631") >= 7 and game:get_value("i2014") >= 10 and game:get_value("i2015") >= 10 and last_speak ~= 1 then
     last_speak = 1
     game:start_dialog("crista.5.shop_progress")  -- Progress on plants fetch quest.
   elseif game:get_value("i1847") >= 25 and game:get_value("i2015") < 10 then  -- Has enough deku sticks for blue potion (and hasn't been made before).
