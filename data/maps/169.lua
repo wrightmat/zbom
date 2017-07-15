@@ -521,7 +521,7 @@ function room4_dest:on_activated()
 
       -- go to treasure room finally!
       game:set_value("i1609", 50) 
-      room4_tran:set_destination("treasure_dest")
+      room4_tran:set_destination_name("treasure_dest")
     end
 end
 
@@ -542,7 +542,13 @@ function treasure_dest:on_activated()
     map:create_chest({layer=0,x=1208,y=501,sprite="entities/chest_big",treasure_name="tunic", treasure_variant=3})
   elseif game:get_item("tunic"):get_variant() == 3 then
     map:create_chest({layer=0,x=1208,y=501,sprite="entities/chest_big",treasure_name="tunic", treasure_variant=4})
+  else
+    -- No more tunics available, chest is empty.
+    chest = map:create_chest({layer=0,x=1208,y=501,sprite="entities/chest_big"})
+    chest:set_open(true)
   end
+  -- Reset the count of perils so we can play the cave again.
+  game:set_value("i1609", 0)
 end
 
 function npc_moblin:on_interaction()
