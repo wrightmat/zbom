@@ -25,6 +25,17 @@ function game:on_started()
   self.hud = hud_manager:create(game)
   camera = camera_manager:create(game)
   tone = tone_manager:create(game)
+
+  -- Load the sprite of the tunic last equipped.
+  -- Note that we don't access the tunic entity itself:
+  -- This game has its own tunic ability management
+  -- based on the variable "tunic_equipped", the ability
+  -- built into the engine doesn't support choosing
+  -- between different tunics and is thus just used
+  -- to provide the different sprites.
+  local equipped = game:get_value("tunic_equipped")
+  local hero = game:get_hero()
+  hero:set_tunic_sprite_id("hero/tunic" .. equipped)
   
   -- Measure the time played.
   if game:get_value("time_played") == nil then game:set_value("time_played", 0) end
