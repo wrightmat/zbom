@@ -70,7 +70,7 @@ function map:on_update()
 end
 
 function sensor_tileset:on_activated()
-  if game:get_value("i1613") == 1 then
+  --[[if game:get_value("i1613") == 1 then
     map:set_tileset("4")
   elseif game:get_value("i1613") == 2 then
     map:set_tileset("5")
@@ -86,7 +86,7 @@ function sensor_tileset:on_activated()
     map:set_tileset("10")
   elseif game:get_value("i1613") == 8 then
     map:set_tileset("11")
-  end
+  end--]]
 end
 
 function sensor_room:on_activated()
