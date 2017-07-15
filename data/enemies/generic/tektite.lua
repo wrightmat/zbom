@@ -118,7 +118,7 @@ function behavior:create(enemy, properties)
     math.randomseed(os.time()) -- Initialize random seed.
     local d = 2 * math.random() - 1 -- Random real number in [-1,1].
     angle = angle + d * math.pi / 2 -- Alter jumping angle, randomly. /4
-    m:set_speed(properties.jumping_speed)
+    m:set_speed(properties.jump_speed)
     m:set_angle(angle)
     m:start(self)
     -- Finish the jump.
