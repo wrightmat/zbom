@@ -2289,8 +2289,8 @@ tile{
 
 wall{
   layer = 0,
-  x = 256,
-  y = 432,
+  x = 248,
+  y = 440,
   width = 32,
   height = 32,
   stops_enemies = true,
@@ -2298,8 +2298,8 @@ wall{
 
 wall{
   layer = 0,
-  x = 64,
-  y = 432,
+  x = 72,
+  y = 440,
   width = 32,
   height = 32,
   stops_enemies = true,
@@ -2307,8 +2307,8 @@ wall{
 
 wall{
   layer = 0,
-  x = 656,
-  y = 432,
+  x = 648,
+  y = 440,
   width = 32,
   height = 32,
   stops_enemies = true,
@@ -2316,8 +2316,8 @@ wall{
 
 wall{
   layer = 0,
-  x = 464,
-  y = 432,
+  x = 472,
+  y = 440,
   width = 32,
   height = 32,
   stops_enemies = true,
@@ -2325,8 +2325,8 @@ wall{
 
 wall{
   layer = 0,
-  x = 464,
-  y = 64,
+  x = 472,
+  y = 72,
   width = 32,
   height = 32,
   stops_enemies = true,
@@ -2334,8 +2334,8 @@ wall{
 
 wall{
   layer = 0,
-  x = 656,
-  y = 64,
+  x = 648,
+  y = 72,
   width = 32,
   height = 32,
   stops_enemies = true,
@@ -2343,8 +2343,8 @@ wall{
 
 wall{
   layer = 0,
-  x = 256,
-  y = 64,
+  x = 248,
+  y = 72,
   width = 32,
   height = 32,
   stops_enemies = true,
@@ -2352,8 +2352,8 @@ wall{
 
 wall{
   layer = 0,
-  x = 64,
-  y = 64,
+  x = 72,
+  y = 72,
   width = 32,
   height = 32,
   stops_enemies = true,
@@ -2563,8 +2563,8 @@ destructible{
 destination{
   name = "room2_dest",
   layer = 0,
-  x = 672,
-  y = 85,
+  x = 664,
+  y = 93,
   direction = 3,
   sprite = "entities/destination",
 }
@@ -2572,8 +2572,8 @@ destination{
 destination{
   name = "room4_dest",
   layer = 0,
-  x = 672,
-  y = 453,
+  x = 664,
+  y = 461,
   direction = 3,
   sprite = "entities/destination",
 }
@@ -2581,8 +2581,8 @@ destination{
 destination{
   name = "room1_dest",
   layer = 0,
-  x = 272,
-  y = 85,
+  x = 264,
+  y = 93,
   direction = 3,
   sprite = "entities/destination",
 }
@@ -2590,8 +2590,8 @@ destination{
 destination{
   name = "room3_dest",
   layer = 0,
-  x = 272,
-  y = 453,
+  x = 264,
+  y = 461,
   direction = 3,
   sprite = "entities/destination",
 }
@@ -2599,8 +2599,8 @@ destination{
 teletransporter{
   name = "room1_tran",
   layer = 0,
-  x = 72,
-  y = 72,
+  x = 80,
+  y = 80,
   width = 16,
   height = 16,
   destination_map = "169",
@@ -2612,8 +2612,8 @@ teletransporter{
 teletransporter{
   name = "room2_tran",
   layer = 0,
-  x = 472,
-  y = 72,
+  x = 480,
+  y = 80,
   width = 16,
   height = 16,
   destination_map = "169",
@@ -2625,8 +2625,8 @@ teletransporter{
 teletransporter{
   name = "room3_tran",
   layer = 0,
-  x = 72,
-  y = 440,
+  x = 80,
+  y = 448,
   width = 16,
   height = 16,
   destination_map = "169",
@@ -2638,8 +2638,8 @@ teletransporter{
 teletransporter{
   name = "room4_tran",
   layer = 0,
-  x = 472,
-  y = 440,
+  x = 480,
+  y = 448,
   width = 16,
   height = 16,
   destination_map = "169",
