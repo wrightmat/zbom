@@ -14,7 +14,7 @@ local positions = {
 }
 if map:get_id() == "170" then
   -- Positions are different if this is the boss run.
-  local positions = {
+  positions = {
     {x = 440, y = 148, direction4 = 3},
     {x = 321, y = 244, direction4 = 3},
     {x = 216, y = 180, direction4 = 3},

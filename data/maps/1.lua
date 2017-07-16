@@ -18,6 +18,15 @@ if game:get_value("i2014")==nil then game:set_value("i2014", 0) end
 if game:get_value("i2015")==nil then game:set_value("i2015", 0) end
 if game:get_value("i2021")==nil then game:set_value("i2021", 0) end
 
+local function replace_shop_treasure(treasure,properties)
+  -- ATTENTION: We can't reassign the entity inside the function
+  -- so we have to use the return value.
+  local tx,ty,tl = treasure:get_position()
+  treasure:remove()
+  properties.x,properties.y,properties.layer = tx,ty,tl
+  return map:create_shop_treasure(properties)
+end
+
 function map:on_started(destination)
   if game:get_time_of_day() == "day" then npc_tern:remove() end
   if game:get_item("trading"):get_variant() >= 6 then table_crystal_ball:set_enabled(true) end
@@ -33,48 +42,40 @@ function map:on_started(destination)
       if quest_trading_potion ~= nil then quest_trading_potion:remove() end
     end)
   elseif destination == main_entrance_shop and game:get_value("i2015") >= 10 and game:get_value("i2015") <= 19 then
-    game:start_dialog("shopkeep.potion", function()
-      game:set_value("i1847", game:get_value("i1847")-25)
-      game:set_value("i2015", 20) -- Allow potion to be bought.
-    end)
+    -- We don't use a dialog callback function here because we have to
+    -- wait for the dialog to finish before modifying the variables.
+    game:start_dialog("shopkeep.potion")
+    game:set_value("i1847", game:get_value("i1847")-25)
+    game:set_value("i2015", 20) -- Allow potion to be bought.
   elseif destination == main_entrance_shop and game:get_value("i2014") >= 10 and game:get_value("i2014") <= 19 then
-    game:start_dialog("shopkeep.potion", function()
-      game:set_value("i1847", game:get_value("i1847")-10)
-      game:set_value("i2014", 20) -- Allow potion to be bought.
-    end)
+    -- We don't use a dialog callback function here because we have to
+    -- wait for the dialog to finish before modifying the variables.
+    game:start_dialog("shopkeep.potion")
+    game:set_value("i1847", game:get_value("i1847")-10)
+    game:set_value("i2014", 20) -- Allow potion to be bought.
   end
 
   -- Increment potion counters.
-  if game:get_value("i1631") == 13 then
-    -- If all herbs are found in fetch quest, the final potion becomes available.
-    local tx,ty,tl = shop_potion_2:get_position()
-    shop_potion_2:remove()  -- Revitalizing Potion replaces Green Potion.
-    map:create_shop_treasure({x=tx,y=ty,layer=tl,name="shop_potion",treasure_name="potion",treasure_variant=4,dialog="shop.potion_revitalizing",price=200})
-  end
   if game:get_value("i2014") >= 10 then
-    local tx,ty,tl = shop_potion_2:get_position()
-    shop_potion_2:remove()  -- Green Potion takes second spot, which is empty (placeholder to make positioning easier).
-    if game:get_value("i2014") == 20 then
-      map:create_shop_treasure({x=tx,y=ty,layer=tl,name="shop_potion",treasure_name="potion",treasure_variant=2,dialog="shop.potion_green",price=0})
-    else
-      map:create_shop_treasure({x=tx,y=ty,layer=tl,name="shop_potion",treasure_name="potion",treasure_variant=2,dialog="shop.potion_green",price=100})
-    end
+    -- Green Potion takes second spot, which is empty (placeholder to make positioning easier).
+    -- The first one is for free.
+    local p = game:get_value("i2014") == 20 and 0 or 100
+    shop_potion_2=replace_shop_treasure(shop_potion_2,{name="shop_potion",treasure_name="potion",treasure_variant=2,dialog="shop.potion_green",price=p})
   elseif game:get_value("i2014") >= 1 then
     game:set_value("i2014", game:get_value("i2014")+1)  -- Green Potion.
-    shop_potion_2:remove()
-  else
-    shop_potion_2:remove()
   end
   if game:get_value("i2015") >= 10 then
-    local tx,ty,tl = shop_potion_1:get_position()
-    shop_potion_1:remove()  -- Blue Potion replaces Red Potion.
-    if game:get_value("i2015") == 20 then
-      map:create_shop_treasure({x=tx,y=ty,layer=tl,name="shop_potion",treasure_name="potion",treasure_variant=3,dialog="shop.potion_blue",price=0})
-    else
-      map:create_shop_treasure({x=tx,y=ty,layer=tl,name="shop_potion",treasure_name="potion",treasure_variant=3,dialog="shop.potion_blue",price=150})
-    end
+    -- Blue Potion replaces Red Potion.
+    -- The first one is for free.
+    local p = game:get_value("i2015") == 20 and 0 or 150
+    shop_potion_1=replace_shop_treasure(shop_potion_1,{name="shop_potion",treasure_name="potion",treasure_variant=3,dialog="shop.potion_blue",price=p})
   elseif game:get_value("i2015") >= 1 then
     game:set_value("i2015", game:get_value("i2015")+1)  -- Blue Potion.
+  end
+  if game:get_value("i1631") == 16 then
+    -- If all herbs are found in fetch quest, the final potion becomes available.
+    -- Revitalizing Potion replaces Green Potion.
+    shop_potion_2=replace_shop_treasure(shop_potion_2,{name="shop_potion",treasure_name="potion",treasure_variant=4,dialog="shop.potion_revitalizing",price=200})
   end
   if game:get_value("i2021") >= 1 then game:set_value("i2021", game:get_value("i2021")+1) end  -- Odd (trading)
 
@@ -124,31 +125,25 @@ function map:on_started(destination)
   end
 
   -- Replace shop items as the game progresses.
-  if game:get_value("i2015") >= 10 then -- Apples replaced by red potion if it's no longer available on potion side.
-    shop_ordon_apple:remove()
-    self:create_shop_treasure({
-	name = "shop_potion",
-	layer = 0,
-	x = 144,
-	y = 504,
-	price = 60,
-	dialog = "shop.potion_red",
-	treasure_name = "potion",
-	treasure_variant = 1
+  if game:get_value("i2015") >= 10 then
+    -- Apples replaced by red potion if it's no longer available on potion side.
+    shop_ordon_apple = replace_shop_treasure(shop_ordon_apple,{
+	    name = "shop_potion",
+	    price = 60,
+	    dialog = "shop.potion_red",
+	    treasure_name = "potion",
+	    treasure_variant = 1
     })
   end
 
-  if game:get_value("i1820") >= 2 then  -- Shield. Don't allow lesser version to be bought after Hylian or Light.
-    shop_ordon_shield:remove()
-    self:create_shop_treasure({
-	name = "shop_arrow",
-	layer = 0,
-	x = 96,
-	y = 504,
-	price = 40,
-	dialog = "shop.arrow",
-	treasure_name = "arrow",
-	treasure_variant = 3
+  if game:get_value("i1820") >= 2 then
+    -- Shield. Don't allow lesser version to be bought after Hylian or Light.
+    shop_ordon_shield = replace_shop_treasure(shop_ordon_shield,{
+	    name = "shop_arrow",
+	    price = 40,
+	    dialog = "shop.arrow",
+	    treasure_name = "arrow",
+	    treasure_variant = 3
     })
   end
 
@@ -170,8 +165,18 @@ function map:on_started(destination)
       end
     end
     treasure.on_bought = function()
-      if treasure:get_game():get_value("i2014") == 20 then treasure:get_game():set_value("i2014", 30) end
-      if treasure:get_game():get_value("i2015") == 20 then treasure:get_game():set_value("i2015", 30) end
+      if treasure:get_game():get_value("i2014") == 20 then
+        treasure:get_game():set_value("i2014", 30)
+        -- This item is not free anymore so set the price.
+        -- Unfortunately the only way to do that is recreating the item...
+        shop_potion_2=replace_shop_treasure(shop_potion_2,{name="shop_potion",treasure_name="potion",treasure_variant=2,dialog="shop.potion_green",price=200})
+      end
+      if treasure:get_game():get_value("i2015") == 20 then
+        treasure:get_game():set_value("i2015", 30)
+        -- This item is not free anymore so set the price.
+        -- Unfortunately the only way to do that is recreating the item...
+        shop_potion_1=replace_shop_treasure(shop_potion_1,{name="shop_potion",treasure_name="potion",treasure_variant=3,dialog="shop.potion_blue",price=150})
+      end
     end
   end
 end

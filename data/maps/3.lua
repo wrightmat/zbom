@@ -166,8 +166,23 @@ function shop_poe_soul:on_interaction()
     game:start_dialog("_shop.question_ore", 80, function(answer)
       if answer == 1 then
         if game:get_value("i1836") >= 80 then
-          hero:start_treasure("poe_soul")
-          game:set_value("i1836",game:get_value("i1836")-80)
+          -- We need an empty bottle, otherwise we have to cancel the transaction.
+          -- Note that we also check for an empty bottle in item:on_obtaining() .
+          -- This is intentional since there are multiple ways to obtain a poe soul
+          -- but when on_obtaining() runs the money is already spent so we must not
+          -- call hero:start_treasure() at all.
+          local first_empty_bottle = game:get_first_empty_bottle()
+          if not game:has_bottle() or first_empty_bottle == nil then
+            -- The player has no bottle.
+	          self:get_game():start_dialog("found_fairy.no_empty_bottle")
+            sol.audio.play_sound("wrong")
+          else
+            -- ATTENTION: The treasure dialog "_treasure.poe_soul.1"
+            -- must not be provided or it would try to create a dialog
+            -- on top of the shop dialog and thus cause a fatal error. 
+            hero:start_treasure("poe_soul")
+            game:set_value("i1836",game:get_value("i1836")-80)
+          end
         else
           game:start_dialog("_shop.not_enough_money")
         end

@@ -1,4 +1,5 @@
 local item = ...
+local game = item:get_game() 
 
 -- This script defines the behavior of pickable poe souls present on the map.
 
@@ -42,27 +43,20 @@ end
 
 -- Obtaining a poe soul.
 function item:on_obtaining(variant, savegame_variable)
-  local first_empty_bottle = self:get_game():get_first_empty_bottle()
-  if not self:get_game():has_bottle() or first_empty_bottle == nil then
-    -- The player has no bottle: do nothing.
+  local first_empty_bottle = game:get_first_empty_bottle()
+  if not game:has_bottle() or first_empty_bottle == nil then
+    -- The player has no bottle.
+    game:start_dialog("found_fairy.no_empty_bottle")
+    sol.audio.play_sound("wrong")
   else
     -- The player has a bottle: start the dialog.
-    self:get_game():start_dialog("found_soul", function(answer)
+    game:start_dialog("found_soul", function(answer)
       if answer == "skipped" or answer == 2 then
-	  -- Let go.
+        -- Let go.
       else
-	-- Keep the spirit in a bottle.
-	if first_empty_bottle == nil then
-	  -- No empty bottle.
-	  self:get_game():start_dialog("found_fairy.no_empty_bottle", function()
-		-- Let go.
-	  end)
-	  sol.audio.play_sound("wrong")
-	else
-	  -- Okay, empty bottle.
-	  first_empty_bottle:set_variant(8)
-	  sol.audio.play_sound("danger")
-	end
+        -- Keep the spirit in a bottle.
+        first_empty_bottle:set_variant(8)
+        sol.audio.play_sound("danger")
       end
     end)
   end

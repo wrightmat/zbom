@@ -134,7 +134,10 @@ end)
 function sensor_leaving:on_activated()
   if game:get_ability("sword") == 0 then
     game:start_dialog("rudy.5.sword_leaving", function()
-      hero:start_treasure("sword", 2)
+      -- Upgrade the sword by one step.
+      -- To get the light sword we need the blacksmith's quest
+      -- and the fairy's quest but the order is not important.
+      hero:start_treasure("sword", game:get_value("i1821") == 1 and 2 or 3)
       game:set_value("i1841", 5) -- Remove Master Ore.
       game:set_value("i1902", 6)
       game:set_value("i1652", 5)
