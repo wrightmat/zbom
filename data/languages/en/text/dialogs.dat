@@ -922,6 +922,14 @@ legendary treasure few will ever behold!
 }
 
 dialog{
+  id = "_item_description.poe_soul.1",
+  text = [[
+Some say poe souls have
+useful knowledge...
+]]
+}
+
+dialog{
   id = "_item_description.pumpkin.1",
   icon = "17",
   skip = "current",
@@ -3068,6 +3076,15 @@ dialog{
 You found a$rGoddess Plume$w!
 This is a legendary treasure
 few will ever behold!
+]]
+}
+
+dialog{
+  id = "_treasure.poe_soul.1",
+  skip = "current",
+  text = [[
+You got a Poe Soul! Some say they
+have useful knowledge...
 ]]
 }
 

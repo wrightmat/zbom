@@ -80,7 +80,7 @@ npc_arin:register_event("on_interaction", function()
       end
     end)
   else
-    game:start_dialog("zora.0.domain")
+    game:start_dialog("zora.0.domain_3")
   end
 end)
 
