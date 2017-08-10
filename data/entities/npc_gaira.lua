@@ -8,8 +8,9 @@ local font, font_size = sol.language.get_dialog_font()
 if game:get_value("i1602")==nil then game:set_value("i1602", 0) end
 if game:get_value("i1911")==nil then game:set_value("i1911", 0) end
 
--- Bilo is a minor NPC who lives in Ordon.
--- He can be found traveling around, looking for a more permanent home.
+-- Gaira is a minor NPC who lives in Ordon.
+-- She can be found in the north area of town, as a groundskeeper.
+-- Speaking to her can trigger the "Lumberjack Love" sidequest.
 
 local function random_walk()
   local m = sol.movement.create("random_path")
@@ -55,6 +56,7 @@ function entity:on_interaction()
     else
       game:start_dialog("gaira.2.faron")
     end
+  -- Inside Deacon's house.
   elseif map:get_id() == "1" then
     if not game:get_value("b1722") then
       game:start_dialog("gaira.5.faron", game:get_player_name(), function()
@@ -65,6 +67,7 @@ function entity:on_interaction()
     else
       game:start_dialog("gaira.5.forest")
     end
+  -- Ordon Village
   else
     if game:get_value("i1911") == 1 then
       game:start_dialog("gaira.1.ordon", function()
