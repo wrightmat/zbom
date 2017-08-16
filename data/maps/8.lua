@@ -304,7 +304,7 @@ function npc_kokiri_2:on_interaction()
     end)
   else
     game:start_dialog("kokiri_2.0.saria_count", game:get_value("i1631"))
-    quest_plants:remove()
+    if quest_plants ~= nil then quest_plants:remove() end
   end
 end
 
