@@ -55,7 +55,6 @@ function enemy:on_restarted()
     for entity in map:get_entities_in_rectangle(1272, 16, 408, 288) do
       if entity:get_type() == "enemy" then enemies_region = enemies_region + 1 end
     end
-print(enemies_region)
     if enemies_region < 2 then
       sol.timer.start(map, 5000, function()
         self:create_enemy({ x = ex + 20, y = ey + 20, name = "vire", breed = "vire", treasure_name = "amber" })

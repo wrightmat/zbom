@@ -248,8 +248,8 @@ function sol.language.get_dialog_font(language)
     --font = "zqy-microhei"
     --size = 12
   else
-    font = "november"
-    size = 10
+    font = "AndaleMono"
+    size = 9
   end
   return font, size
 end
@@ -264,8 +264,8 @@ function sol.language.get_menu_font(language)
     --font = "wqy-microhei"
     --size = 12
   else
-    font = "minecraftia"
-    size = 8
+    font = "AndaleMono"
+    size = 11
   end
   return font, size
 end
@@ -280,7 +280,7 @@ function sol.language.get_book_font(language)
     --font = "wqy-microhei"
     --size = 12
   else
-    font = "bom"
+    font = "Book"
     size = 14
   end
   return font, size

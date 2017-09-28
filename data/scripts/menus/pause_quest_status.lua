@@ -36,7 +36,7 @@ function quest_status_submenu:on_started()
           horizontal_alignment = "left",
           vertical_alignment = "top",
           font = font,
-          font_size = 7,
+          font_size = 9,
           color = {0,0,0},
           text_key = "quests.title." .. self.quests_main_list[i]
         }
@@ -54,7 +54,7 @@ function quest_status_submenu:on_started()
           horizontal_alignment = "left",
           vertical_alignment = "top",
           font = font,
-          font_size = 7,
+          font_size = 9,
           color = {0,0,0},
           text_key = "quests.title." .. self.quests_side_list[j]
         }
@@ -74,7 +74,7 @@ function quest_status_submenu:on_started()
           horizontal_alignment = "left",
           vertical_alignment = "top",
           font = font,
-          font_size = 7,
+          font_size = 9,
           color = {220,220,220},
           text_key = "quests.title." .. self.quests_main_list[i]
         }
@@ -92,7 +92,7 @@ function quest_status_submenu:on_started()
           horizontal_alignment = "left",
           vertical_alignment = "top",
           font = font,
-          font_size = 7,
+          font_size = 9,
           color = {220,220,220},
           text_key = "quests.title." .. self.quests_side_list[j]
         }

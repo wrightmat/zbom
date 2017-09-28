@@ -68,7 +68,7 @@ function title_screen:phase_title()
     time_of_day = "night"
   end
 
-  -- create all images
+  -- Create all images.
   self.background_img = sol.surface.create("menus/title_" .. time_of_day .. "_background.png")
   self.clouds_img = sol.surface.create("menus/title_" .. time_of_day .. "_clouds.png")
   self.logo_img = sol.surface.create("menus/title_logo.png")
@@ -83,7 +83,7 @@ function title_screen:phase_title()
 
   self.press_space_img = sol.text_surface.create{
     font = sol.language.get_dialog_font(),
-    font_size = 16,
+    font_size = 14,
     color = {255, 255, 255},
     text_key = "title_screen.press_space",
     horizontal_alignment = "center"
