@@ -141,6 +141,10 @@ npc_subro:register_event("on_interaction", function()
   end
 end)
 
+npc_sicretu:register_event("on_interaction", function()
+  game:start_dialog("subrosian.shop")
+end)
+
 if shop_world_map_2 ~= nil then
   function shop_world_map_2:on_interaction()
     -- Custom shop script to subtract ore instead of rupees

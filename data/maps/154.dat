@@ -1515,24 +1515,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 632,
-  y = 480,
-  width = 8,
-  height = 32,
-  pattern = "2064",
-}
-
-tile{
-  layer = 0,
-  x = 656,
-  y = 480,
-  width = 8,
-  height = 32,
-  pattern = "2066",
-}
-
-tile{
-  layer = 0,
   x = 616,
   y = 488,
   width = 16,
@@ -2764,6 +2746,33 @@ tile{
   pattern = "546",
 }
 
+tile{
+  layer = 0,
+  x = 632,
+  y = 488,
+  width = 8,
+  height = 16,
+  pattern = "92",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 488,
+  width = 8,
+  height = 16,
+  pattern = "93",
+}
+
+tile{
+  layer = 0,
+  x = 632,
+  y = 504,
+  width = 32,
+  height = 8,
+  pattern = "94",
+}
+
 teletransporter{
   name = "to_A3",
   layer = 0,
@@ -2801,7 +2810,7 @@ destination{
   name = "from_house_2",
   layer = 0,
   x = 648,
-  y = 509,
+  y = 517,
   direction = 3,
 }
 
@@ -3430,15 +3439,6 @@ chest{
 
 tile{
   layer = 1,
-  x = 640,
-  y = 480,
-  width = 16,
-  height = 8,
-  pattern = "2065",
-}
-
-tile{
-  layer = 1,
   x = 600,
   y = 440,
   width = 96,
@@ -3453,6 +3453,15 @@ tile{
   width = 96,
   height = 24,
   pattern = "2072",
+}
+
+tile{
+  layer = 1,
+  x = 632,
+  y = 480,
+  width = 32,
+  height = 8,
+  pattern = "88",
 }
 
 tile{

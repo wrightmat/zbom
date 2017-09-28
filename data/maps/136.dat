@@ -2800,6 +2800,32 @@ enemy{
   treasure_name = "crystal",
 }
 
+wall{
+  layer = 0,
+  x = 88,
+  y = 200,
+  width = 16,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 408,
+  y = 200,
+  width = 16,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
 tile{
   layer = 2,
   x = 680,
