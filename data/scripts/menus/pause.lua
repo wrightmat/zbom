@@ -4,6 +4,7 @@ local inventory_builder = require("scripts/menus/pause_inventory")
 local map_builder = require("scripts/menus/pause_map")
 local quest_status_builder = require("scripts/menus/pause_quest_status")
 local options_builder = require("scripts/menus/pause_options")
+local joy_avoid_repeat = {-2, -2}
 
 function game:start_pause_menu()
   self.pause_submenus = {
@@ -32,4 +33,12 @@ function game:stop_pause_menu()
   self.pause_submenus = {}
   self:set_custom_command_effect("action", nil)
   self:set_custom_command_effect("attack", nil)
+end
+
+function game:on_joypad_axis_moved(axis, state)
+    
+  local handled = joy_avoid_repeat[axis % 2] == state
+  joy_avoid_repeat[axis % 2] = state
+        
+  return handled
 end
