@@ -11,6 +11,7 @@ function enemy:on_created()
   self:set_size(64, 32); self:set_origin(32, 29)
   self:set_hurt_style("boss")
   self:set_attack_consequence("sword", "protected")
+  self:set_attack_consequence("fire", "protected")
   sprite:set_animation("walking")
 end
 

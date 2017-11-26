@@ -11,6 +11,7 @@ function enemy:on_created()
   self:set_attack_hookshot("immobilized")
   self:set_attack_consequence("boomerang", "ignored")
   self:set_attack_consequence("sword", "protected")
+  self:set_attack_consequence("fire", "protected")
   self:set_attack_consequence("explosion", "ignored")
   self:set_attack_consequence("thrown_item", "ignored")
 end

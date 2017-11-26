@@ -43,7 +43,7 @@ function enemy:check_hero()
       sol.timer.start(self, 2000, function () self:create_enemy({ name = "keese_fire_", layer = 1, breed = "keese_fire", treasure_name = "random" }) end)
     end
   end
-  sol.timer.start(self:get_map(), 5000, function() self:check_hero() end)
+  sol.timer.start(self, 5000, function() self:check_hero() end)
 end
 
 function enemy:go_hero()

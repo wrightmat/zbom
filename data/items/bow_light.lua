@@ -10,7 +10,6 @@ end
 function item:on_using()
   -- Call the normal bow code.
   game:get_item("bow"):on_using()
-print("using light bow")
 end
 
 function item:on_amount_changed(amount)
