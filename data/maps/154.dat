@@ -2703,8 +2703,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 96,
-  y = 1016,
+  x = 88,
+  y = 1024,
   width = 32,
   height = 32,
   pattern = "527",
@@ -2712,8 +2712,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 144,
-  y = 1016,
+  x = 152,
+  y = 1024,
   width = 32,
   height = 32,
   pattern = "527",
@@ -3428,13 +3428,13 @@ enemy{
   treasure_name = "random_enemy",
 }
 
-chest{
-  name = "chest_treasure",
+pickable{
+  name = "treasure_poe",
   layer = 0,
   x = 136,
-  y = 1053,
+  y = 1061,
   treasure_name = "poe_soul",
-  sprite = "entities/chest",
+  treasure_savegame_variable = "b1790",
 }
 
 tile{

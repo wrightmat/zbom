@@ -46,8 +46,11 @@ function item:on_obtaining(variant, savegame_variable)
   local first_empty_bottle = game:get_first_empty_bottle()
   if not game:has_bottle() or first_empty_bottle == nil then
     -- The player has no bottle.
-    game:start_dialog("found_fairy.no_empty_bottle")
+    game:start_dialog("found_soul.no_empty_bottle")
     sol.audio.play_sound("wrong")
+    if savegame_value ~= nil then
+      game:set_value(savegame_variable, false) -- Don't save, not actually obtained.
+    end
   else
     -- The player has a bottle: start the dialog.
     game:start_dialog("found_soul", function(answer)

@@ -2452,7 +2452,7 @@ Slip them on and dash about!
 
 dialog{
   id = "_treasure.boss_key.1",
-  icon = "74",
+  icon = "73",
   skip = "current",
   text = [[
 You found the$rBoss Key$w!$0
@@ -2803,7 +2803,7 @@ long ago.
 
 dialog{
   id = "_treasure.bow_light.1",
-  icon = "2",
+  icon = "3",
   skip = "current",
   text = [[
 You found the$rLight Bow$w!$0
@@ -3059,7 +3059,7 @@ the deepest depths of the earth!
 
 dialog{
   id = "_treasure.ore.2",
-  icon = "30",
+  icon = "31",
   skip = "current",
   text = [[
 You found$rSubrosian Ore$w! It's a
@@ -3081,6 +3081,7 @@ few will ever behold!
 
 dialog{
   id = "_treasure.poe_soul.1",
+  icon = "82",
   skip = "current",
   text = [[
 You got a Poe Soul! Some say they
@@ -3291,6 +3292,7 @@ wielder from most anything!
 
 dialog{
   id = "_treasure.shovel.1",
+  icon = "74",
   skip = "current",
   text = [[
 You got a sturdy$rShovel$w! Use
@@ -5297,7 +5299,8 @@ dialog{
   icon = "81",
   skip = "current",
   text = [[
-You don't have any empty Bottles!
+You don't have any empty
+Bottles!
 ]]
 }
 
@@ -5362,6 +5365,16 @@ It looks mysterious.
 What now?
 Keep in bottle
 Let go
+]]
+}
+
+dialog{
+  id = "found_soul.no_empty_bottle",
+  icon = "82",
+  skip = "current",
+  text = [[
+You don't have any empty
+Bottles!
 ]]
 }
 

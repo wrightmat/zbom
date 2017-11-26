@@ -11,7 +11,3 @@ local function random_walk(npc)
   m:start(npc)
   npc:get_sprite():set_animation("walking")
 end
-
-function map:on_started(destination)
-
-end
