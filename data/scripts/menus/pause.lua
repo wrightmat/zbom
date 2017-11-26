@@ -36,9 +36,8 @@ function game:stop_pause_menu()
 end
 
 function game:on_joypad_axis_moved(axis, state)
-    
   local handled = joy_avoid_repeat[axis % 2] == state
   joy_avoid_repeat[axis % 2] = state
-        
+  
   return handled
 end

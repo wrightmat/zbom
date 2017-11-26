@@ -6,6 +6,7 @@ local initial_volume
 local index
 local hero_x, hero_y
 local matched = {}
+local joy_avoid_repeat = {-2, -2}
 
 -- Warp point name, Companion point, Warp to map, Coordinate x on minimap, Coordinate y on minimap, Name of warp.
 warp_points = {         -- Intentionally Global!
@@ -190,4 +191,11 @@ function warp_menu:on_finished()
   game.hud.elements[11].surface:set_opacity(255) --item_icon_2
   game.hud.elements[12].surface:set_opacity(255) --attack_icon
   game.hud.elements[9]:on_menu_closed() -- pause_icon
+end
+
+function game:on_joypad_axis_moved(axis, state)
+  local handled = joy_avoid_repeat[axis % 2] == state
+  joy_avoid_repeat[axis % 2] = state
+  
+  return handled
 end
