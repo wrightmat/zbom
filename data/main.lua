@@ -1,5 +1,6 @@
 -- Main script of the quest.
 
+require("scripts/weather/weather_manager")
 local console = require("scripts/console")
 local quest_manager = require("scripts/quest_manager")
 require("scripts/multi_events")

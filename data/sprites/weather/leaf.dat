@@ -1,0 +1,27 @@
+animation{
+  name = "leaf",
+  src_image = "weather/leaf.png",
+  frame_delay = 800,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 8, frame_height = 8, origin_x = 0, origin_y = 0, num_frames = 4, num_columns = 1 },
+    { x = 8, y = 0, frame_width = 8, frame_height = 8, origin_x = 0, origin_y = 0, num_frames = 4, num_columns = 1 },
+    { x = 16, y = 0, frame_width = 8, frame_height = 8, origin_x = 0, origin_y = 0, num_frames = 4, num_columns = 1 },
+    { x = 24, y = 0, frame_width = 8, frame_height = 8, origin_x = 0, origin_y = 0, num_frames = 4, num_columns = 1 },
+    { x = 32, y = 0, frame_width = 8, frame_height = 8, origin_x = 0, origin_y = 0, num_frames = 4, num_columns = 1 },
+    { x = 40, y = 0, frame_width = 8, frame_height = 8, origin_x = 0, origin_y = 0, num_frames = 4, num_columns = 1 },
+  },
+}
+animation{
+  name = "leaf_splash",
+  src_image = "weather/leaf.png",
+  frame_delay = 40,
+  directions = {
+    { x = 0, y = 8, frame_width = 8, frame_height = 8, origin_x = 0, origin_y = 0 },
+    { x = 8, y = 8, frame_width = 8, frame_height = 8, origin_x = 0, origin_y = 0 },
+    { x = 16, y = 8, frame_width = 8, frame_height = 8, origin_x = 0, origin_y = 0 },
+    { x = 24, y = 8, frame_width = 8, frame_height = 8, origin_x = 0, origin_y = 0 },
+    { x = 32, y = 8, frame_width = 8, frame_height = 8, origin_x = 0, origin_y = 0 },
+    { x = 40, y = 8, frame_width = 8, frame_height = 8, origin_x = 0, origin_y = 0 },
+  },
+}
