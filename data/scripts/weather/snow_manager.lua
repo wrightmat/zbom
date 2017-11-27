@@ -16,8 +16,6 @@ The functions here defined are:
 snow modes: "snow", "snowstorm", nil (no snow).
 --]]
 
--- This script requires the multi_event script and the teleporters meta:
-require("scripts/multi_events")
 local snow_manager = {}
 
 local game_meta = sol.main.get_metatable("game")
@@ -75,7 +73,6 @@ end)
 
 -- Create snow and dark surfaces.
 function snow_manager:on_created()
-print("Snow manager created")
   -- Create surfaces.
   local w, h = sol.video.get_quest_size()
   snow_surface = sol.surface.create(w, h)

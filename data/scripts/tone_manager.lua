@@ -51,9 +51,9 @@ function tone_manager:create(game)
     self:restart_tone_system()
   end
   
-  function tone_menu:on_map_changed()
+  function tone_menu:on_map_changed(map)
     if game:get_map() ~= nil then
-      local map = game:get_map()
+      --local map = game:get_map()
       game:on_tone_system_saving()
       
       mr, mg, mb, ma = nil, nil, nil, nil

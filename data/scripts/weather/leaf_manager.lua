@@ -16,8 +16,6 @@ The functions here defined are:
 fall modes: "leaf", "leaf_storm", nil (no leaves).
 --]]
 
--- This script requires the multi_event script and the teleporters meta:
-require("scripts/multi_events")
 local leaf_manager = {}
 
 local game_meta = sol.main.get_metatable("game")
@@ -218,7 +216,7 @@ function leaf_manager:stop_timers(timers_list)
 end
 
 -- Start a fall mode in the current map.
-function leaf_manager:start_fall_mode(fall_mode)
+function leaf_manager:start_leaf_mode(fall_mode)
   -- Update fall modes.
   previous_fall_mode = current_fall_mode
   current_fall_mode = fall_mode
@@ -350,7 +348,7 @@ function leaf_manager:initialize_scrolling_feature()
   local tele_meta = sol.main.get_metatable("teletransporter")
   tele_meta:register_event("on_activated", function(tele)
     local dir = tele:get_scrolling_direction()
-    if dir then fall_manager:start_scrolling(dir) end
+    if dir then leaf_manager:start_scrolling(dir) end
   end)
 end
 

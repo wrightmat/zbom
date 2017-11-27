@@ -16,8 +16,6 @@ The functions here defined are:
 hail modes: "hail", "hailstorm", nil (no hail).
 --]]
 
--- This script requires the multi_event script and the teleporters meta:
-require("scripts/multi_events")
 local hail_manager = {}
 
 local game_meta = sol.main.get_metatable("game")

@@ -18,14 +18,15 @@ game.save_between_maps = require("scripts/save_between_maps")
 game.independent_entities = {}
 game.time_flow = 1000 -- One second is one minute in-game (so one hour in-game is one hour).
 
-function game:on_started()
+game:register_event("on_started", function(game)
+--function game:on_started()
   -- Set up the dialog box, HUD, hero conditions and effects.
-  condition_manager:initialize(self)
-  self:initialize_dialog_box()
-  self.hud = hud_manager:create(game)
+  condition_manager:initialize(game)
+  game:initialize_dialog_box()
+  game.hud = hud_manager:create(game)
   camera = camera_manager:create(game)
   tone = tone_manager:create(game)
-
+  
   -- Load the sprite of the tunic last equipped.
   -- Note that we don't access the tunic entity itself:
   -- This game has its own tunic ability management
@@ -45,7 +46,7 @@ function game:on_started()
   end)
   chron_timer:set_suspended_with_map(false)
   game:calculate_percent_complete()
-end
+end)
 
 function game:on_finished()
   -- Clean what was created by on_started().
@@ -65,13 +66,12 @@ function game:on_finished()
 end
 
 -- This event is called when a new map has just become active.
-function game:on_map_changed(map)
+game:register_event("on_map_changed", function(game)
   -- Notify the hud.
-  self.hud:on_map_changed(map)
-  tone:on_map_changed()
-  
-  game.save_between_maps:load_map(map) -- Create saved and carried entities.
-end
+  game.hud:on_map_changed(game:get_map())
+  tone:on_map_changed(game:get_map())
+  game.save_between_maps:load_map(game:get_map()) -- Create saved and carried entities.
+end)
 
 function game:on_paused()
   self.hud:on_paused()

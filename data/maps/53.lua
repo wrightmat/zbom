@@ -15,7 +15,7 @@ local function random_walk(npc)
 end
 
 function map:on_started(destination)
-  --game:set_snow_mode("snow")
+  game:set_world_snow_mode("outside_world", "snow")
   
   if game:get_time_of_day() == "night" then
     npc_inuk:remove()

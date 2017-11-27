@@ -6,6 +6,8 @@ local game = map:get_game()
 -------------------------------------------------------------------------
 
 function map:on_started()
+  game:set_world_snow_mode("outside_world", nil)
+  
   if not game:get_value("b1720") then chest_heart_piece:set_enabled(false) end
 end
 

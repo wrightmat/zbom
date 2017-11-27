@@ -16,8 +16,6 @@ The functions here defined are:
 Rain modes: "rain", "storm", nil (no rain).
 --]]
 
--- This script requires the multi_event script and the teleporters meta:
-require("scripts/multi_events")
 local rain_manager = {}
 
 local game_meta = sol.main.get_metatable("game")
