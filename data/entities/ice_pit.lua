@@ -11,8 +11,11 @@ function entity:on_created()
   self:set_traversable_by("custom_entity", true)
 
   self:add_collision_test("overlapping", function(self, other)
-    if other:get_name() == "ice_block" then
-      self:set_filled(other)
+    if other:get_type() == "custom_entity" and other:get_model() == "ice_block" then
+      -- Don't fill the pit again if it's already filled (so we can push ice blocks over filled pits)
+      if self:get_sprite():get_animation() == "pit" then
+        self:set_filled(other)
+      end
     elseif other:get_type() == "hero" then
       hero_on_pit = true
     else

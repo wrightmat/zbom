@@ -61,8 +61,7 @@ end
 
 entity:register_event("on_interaction", function()
   entity:get_sprite():set_direction(entity:get_direction4_to(hero))
-  -- This doesn't run (because a map function also exists), which I believe is an engine bug.
-  -- Leaving it here so the NPC name will display when the bug is fixed.
+  -- Place the NPC's name above the dialog box.
   game:set_dialog_name(name)
 end)
 

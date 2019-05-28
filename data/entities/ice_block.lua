@@ -82,15 +82,15 @@ function entity:on_position_changed(x, y, layer)
       if self:overlaps(e) then --if block overlaps dynamic tile
         if map:get_ground(e:get_position()) == "lava" then
           self:remove_explode()
-	  if map:get_hero():get_direction() == 0 then
+          if map:get_hero():get_direction() == 0 then
             lava_crust = map:create_custom_entity({ x=x+8, y=y-16, layer=layer, width=32, height=32, direction=0 })
-	  elseif map:get_hero():get_direction() == 1 then
+          elseif map:get_hero():get_direction() == 1 then
             lava_crust = map:create_custom_entity({ x=x-16, y=y-48, layer=layer, width=32, height=32, direction=0 })
-	  elseif map:get_hero():get_direction() == 2 then
+          elseif map:get_hero():get_direction() == 2 then
             lava_crust = map:create_custom_entity({ x=x-40, y=y-16, layer=layer, width=32, height=32, direction=0 })
-	  elseif map:get_hero():get_direction() == 3 then
+          elseif map:get_hero():get_direction() == 3 then
             lava_crust = map:create_custom_entity({ x=x-16, y=y, layer=layer, width=32, height=32, direction=0 })
-	  end
+          end
           lava_crust = map:create_custom_entity({ x = x, y = y, layer = layer, width = 32, height = 32, direction = 0 })
           lava_crust:snap_to_grid()
           sol.audio.play_sound("freeze")
@@ -99,25 +99,25 @@ function entity:on_position_changed(x, y, layer)
           lava_crust:set_traversable_by("hero", true)
           lava_crust:set_traversable_by("enemy", true)
           lava_crust:set_traversable_by("block", true)
-	  sol.timer.start(map, 15000, function() lava_crust:remove() end)
+          sol.timer.start(map, 15000, function() lava_crust:remove() end)
         elseif map:get_ground(e:get_position()) == "deep_water" then
           self:remove()
-	  if map:get_hero():get_direction() == 0 then
+          if map:get_hero():get_direction() == 0 then
             ice_patch = map:create_custom_entity({ x=x+8, y=y-16, layer=layer, width=32, height=32, direction=0 })
-	  elseif map:get_hero():get_direction() == 1 then
+          elseif map:get_hero():get_direction() == 1 then
             ice_patch = map:create_custom_entity({ x=x-16, y=y-48, layer=layer, width=32, height=32, direction=0 })
-	  elseif map:get_hero():get_direction() == 2 then
+          elseif map:get_hero():get_direction() == 2 then
             ice_patch = map:create_custom_entity({ x=x-40, y=y-16, layer=layer, width=32, height=32, direction=0 })
-	  elseif map:get_hero():get_direction() == 3 then
+          elseif map:get_hero():get_direction() == 3 then
             ice_patch = map:create_custom_entity({ x=x-16, y=y, layer=layer, width=32, height=32, direction=0 })
-	  end
+          end
           sol.audio.play_sound("freeze")
           ice_patch:create_sprite("entities/ice")
           ice_patch:set_modified_ground("ice")
           ice_patch:set_traversable_by("hero", true)
           ice_patch:set_traversable_by("enemy", true)
           ice_patch:set_traversable_by("block", true)
-	  sol.timer.start(map, 15000, function() ice_patch:remove() end)
+          sol.timer.start(map, 15000, function() ice_patch:remove() end)
         end
       end
     elseif e:get_type() == "wall" or e:get_type() == "hole" then
@@ -127,6 +127,5 @@ function entity:on_position_changed(x, y, layer)
 end
 
 function entity:remove_explode()
-  if self:get_sprite() == "entities/ice_block" then self:get_sprite():set_animation("destroy") end
-  self:remove()
+  self:get_sprite():set_animation("destroy", function() self:remove() end)
 end
