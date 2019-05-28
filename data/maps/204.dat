@@ -12859,7 +12859,6 @@ block{
   sprite = "entities/statue",
   pushable = true,
   pullable = true,
-  maximum_moves = 2,
 }
 
 block{
@@ -12869,7 +12868,6 @@ block{
   sprite = "entities/statue",
   pushable = true,
   pullable = true,
-  maximum_moves = 2,
 }
 
 enemy{
@@ -13838,7 +13836,6 @@ block{
   sprite = "entities/statue",
   pushable = true,
   pullable = false,
-  maximum_moves = 2,
 }
 
 block{
@@ -13848,7 +13845,6 @@ block{
   sprite = "entities/statue",
   pushable = true,
   pullable = false,
-  maximum_moves = 2,
 }
 
 block{
@@ -13858,7 +13854,6 @@ block{
   sprite = "entities/statue",
   pushable = true,
   pullable = false,
-  maximum_moves = 2,
 }
 
 block{
@@ -13868,7 +13863,6 @@ block{
   sprite = "entities/statue",
   pushable = true,
   pullable = false,
-  maximum_moves = 2,
 }
 
 block{
@@ -13878,7 +13872,6 @@ block{
   sprite = "entities/statue",
   pushable = true,
   pullable = false,
-  maximum_moves = 2,
 }
 
 enemy{
@@ -13928,7 +13921,7 @@ block{
   sprite = "entities/statue",
   pushable = false,
   pullable = false,
-  maximum_moves = 1,
+  max_moves = 1,
 }
 
 door{
@@ -15743,7 +15736,6 @@ block{
   sprite = "entities/block_special",
   pushable = true,
   pullable = true,
-  maximum_moves = 2,
 }
 
 wall{

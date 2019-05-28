@@ -5951,15 +5951,32 @@ tile{
   pattern = "66",
 }
 
+tile{
+  layer = 0,
+  x = 88,
+  y = 1368,
+  width = 16,
+  height = 16,
+  pattern = "604",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 1400,
+  width = 16,
+  height = 16,
+  pattern = "604",
+}
+
 dynamic_tile{
   name = "hole_puzzle_1",
   layer = 0,
   x = 152,
   y = 1368,
-  pattern = "524",
   width = 64,
   height = 48,
-  enabled_at_start = true,
+  pattern = "524",
 }
 
 door{
@@ -6039,10 +6056,9 @@ dynamic_tile{
   layer = 0,
   x = 448,
   y = 1416,
-  pattern = "524",
   width = 48,
   height = 48,
-  enabled_at_start = true,
+  pattern = "524",
 }
 
 chest{
@@ -6392,10 +6408,9 @@ dynamic_tile{
   layer = 0,
   x = 608,
   y = 1352,
-  pattern = "524",
   width = 32,
   height = 112,
-  enabled_at_start = true,
+  pattern = "524",
 }
 
 dynamic_tile{
@@ -6403,10 +6418,9 @@ dynamic_tile{
   layer = 0,
   x = 376,
   y = 1536,
-  pattern = "524",
   width = 48,
   height = 48,
-  enabled_at_start = true,
+  pattern = "524",
 }
 
 dynamic_tile{
@@ -6414,10 +6428,9 @@ dynamic_tile{
   layer = 0,
   x = 544,
   y = 1416,
-  pattern = "524",
   width = 48,
   height = 48,
-  enabled_at_start = true,
+  pattern = "524",
 }
 
 dynamic_tile{
@@ -6425,10 +6438,9 @@ dynamic_tile{
   layer = 0,
   x = 640,
   y = 1560,
-  pattern = "524",
   width = 48,
   height = 48,
-  enabled_at_start = true,
+  pattern = "524",
 }
 
 switch{
@@ -6460,10 +6472,9 @@ dynamic_tile{
   layer = 0,
   x = 480,
   y = 264,
-  pattern = "524",
   width = 32,
   height = 112,
-  enabled_at_start = true,
+  pattern = "524",
 }
 
 dynamic_tile{
@@ -6471,10 +6482,9 @@ dynamic_tile{
   layer = 0,
   x = 584,
   y = 344,
-  pattern = "524",
   width = 64,
   height = 64,
-  enabled_at_start = true,
+  pattern = "524",
 }
 
 dynamic_tile{
@@ -6482,10 +6492,9 @@ dynamic_tile{
   layer = 0,
   x = 696,
   y = 280,
-  pattern = "524",
   width = 96,
   height = 32,
-  enabled_at_start = true,
+  pattern = "524",
 }
 
 dynamic_tile{
@@ -6493,10 +6502,9 @@ dynamic_tile{
   layer = 0,
   x = 880,
   y = 240,
-  pattern = "524",
   width = 32,
   height = 112,
-  enabled_at_start = true,
+  pattern = "524",
 }
 
 dynamic_tile{
@@ -6504,10 +6512,9 @@ dynamic_tile{
   layer = 0,
   x = 800,
   y = 104,
-  pattern = "524",
   width = 64,
   height = 64,
-  enabled_at_start = true,
+  pattern = "524",
 }
 
 dynamic_tile{
@@ -6515,10 +6522,9 @@ dynamic_tile{
   layer = 0,
   x = 768,
   y = 864,
-  pattern = "524",
   width = 64,
   height = 64,
-  enabled_at_start = true,
+  pattern = "524",
 }
 
 enemy{
@@ -6659,8 +6665,8 @@ enemy{
 enemy{
   name = "room5_hardhat_2",
   layer = 0,
-  x = 328,
-  y = 669,
+  x = 352,
+  y = 621,
   direction = 3,
   breed = "hardhat_beetle_blue",
   treasure_name = "random_enemy",
@@ -6668,7 +6674,7 @@ enemy{
 
 destructible{
   layer = 0,
-  x = 96,
+  x = 112,
   y = 1381,
   treasure_name = "magic_flask",
   treasure_variant = 2,
@@ -7005,10 +7011,10 @@ dynamic_tile{
   layer = 0,
   x = 776,
   y = 1496,
-  pattern = "557",
+  enabled_at_start = false,
   width = 16,
   height = 48,
-  enabled_at_start = false,
+  pattern = "557",
 }
 
 dynamic_tile{
@@ -7016,10 +7022,10 @@ dynamic_tile{
   layer = 0,
   x = 824,
   y = 1384,
-  pattern = "557",
+  enabled_at_start = false,
   width = 16,
   height = 32,
-  enabled_at_start = false,
+  pattern = "557",
 }
 
 dynamic_tile{
@@ -7027,10 +7033,10 @@ dynamic_tile{
   layer = 0,
   x = 824,
   y = 1464,
-  pattern = "557",
+  enabled_at_start = false,
   width = 16,
   height = 32,
-  enabled_at_start = false,
+  pattern = "557",
 }
 
 dynamic_tile{
@@ -7038,10 +7044,10 @@ dynamic_tile{
   layer = 0,
   x = 872,
   y = 1464,
-  pattern = "557",
+  enabled_at_start = false,
   width = 16,
   height = 32,
-  enabled_at_start = false,
+  pattern = "557",
 }
 
 dynamic_tile{
@@ -7049,10 +7055,10 @@ dynamic_tile{
   layer = 0,
   x = 888,
   y = 1416,
-  pattern = "557",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "557",
 }
 
 dynamic_tile{
@@ -7060,10 +7066,10 @@ dynamic_tile{
   layer = 0,
   x = 928,
   y = 1464,
-  pattern = "557",
+  enabled_at_start = false,
   width = 16,
   height = 32,
-  enabled_at_start = false,
+  pattern = "557",
 }
 
 dynamic_tile{
@@ -7071,10 +7077,10 @@ dynamic_tile{
   layer = 0,
   x = 888,
   y = 1544,
-  pattern = "557",
+  enabled_at_start = false,
   width = 16,
   height = 48,
-  enabled_at_start = false,
+  pattern = "557",
 }
 
 switch{
@@ -7097,7 +7103,6 @@ block{
   sprite = "entities/block",
   pushable = true,
   pullable = true,
-  maximum_moves = 2,
 }
 
 switch{
@@ -7132,7 +7137,6 @@ block{
   sprite = "entities/block",
   pushable = true,
   pullable = true,
-  maximum_moves = 2,
 }
 
 switch{
@@ -7282,10 +7286,10 @@ dynamic_tile{
   layer = 0,
   x = 936,
   y = 1560,
-  pattern = "557",
+  enabled_at_start = false,
   width = 16,
   height = 48,
-  enabled_at_start = false,
+  pattern = "557",
 }
 
 pickable{
@@ -7301,10 +7305,9 @@ dynamic_tile{
   layer = 0,
   x = 464,
   y = 1520,
-  pattern = "524",
   width = 112,
   height = 32,
-  enabled_at_start = true,
+  pattern = "524",
 }
 
 destructible{
@@ -7349,7 +7352,7 @@ enemy{
   name = "keese_ice_2",
   layer = 0,
   x = 832,
-  y = 141,
+  y = 125,
   direction = 3,
   breed = "keese_ice",
   treasure_name = "random_enemy",
@@ -7870,7 +7873,7 @@ custom_entity{
   name = "hook_1",
   layer = 0,
   x = 496,
-  y = 1573,
+  y = 1581,
   width = 16,
   height = 16,
   direction = 0,
@@ -7881,7 +7884,7 @@ custom_entity{
   name = "hook_2",
   layer = 0,
   x = 544,
-  y = 1573,
+  y = 1581,
   width = 16,
   height = 16,
   direction = 0,
@@ -7892,7 +7895,7 @@ custom_entity{
   name = "hook_3",
   layer = 0,
   x = 520,
-  y = 1597,
+  y = 1605,
   width = 16,
   height = 16,
   direction = 0,
@@ -7901,7 +7904,7 @@ custom_entity{
 
 destructible{
   layer = 0,
-  x = 96,
+  x = 112,
   y = 1413,
   treasure_name = "magic_flask",
   treasure_variant = 2,
@@ -7912,7 +7915,7 @@ destructible{
 custom_entity{
   name = "hook_4",
   layer = 0,
-  x = 240,
+  x = 248,
   y = 1397,
   width = 16,
   height = 16,
@@ -7927,17 +7930,6 @@ sensor{
   y = 589,
   width = 16,
   height = 64,
-}
-
-custom_entity{
-  name = "hook_7",
-  layer = 0,
-  x = 256,
-  y = 1397,
-  width = 16,
-  height = 16,
-  direction = 0,
-  model = "hook",
 }
 
 sensor{
@@ -7993,10 +7985,407 @@ enemy{
   name = "chuchu_1",
   layer = 0,
   x = 80,
-  y = 1621,
+  y = 1613,
   direction = 0,
   breed = "chuchu_dark",
   treasure_name = "random_enemy",
+}
+
+custom_entity{
+  name = "hook_10",
+  layer = 0,
+  x = 848,
+  y = 589,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_5",
+  layer = 0,
+  x = 96,
+  y = 1381,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_6",
+  layer = 0,
+  x = 96,
+  y = 1413,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  layer = 0,
+  x = 856,
+  y = 1029,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block_static",
+  model = "ice_block_solid",
+}
+
+custom_entity{
+  layer = 0,
+  x = 856,
+  y = 1045,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block_static",
+  model = "ice_block_solid",
+}
+
+custom_entity{
+  layer = 0,
+  x = 856,
+  y = 1061,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block_static",
+  model = "ice_block_solid",
+}
+
+custom_entity{
+  layer = 0,
+  x = 616,
+  y = 1149,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block",
+  model = "ice_block_solid",
+}
+
+custom_entity{
+  layer = 0,
+  x = 616,
+  y = 1165,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block",
+  model = "ice_block_solid",
+}
+
+custom_entity{
+  layer = 0,
+  x = 72,
+  y = 117,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block_static",
+  model = "ice_block_solid",
+}
+
+custom_entity{
+  layer = 0,
+  x = 600,
+  y = 525,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block_static",
+  model = "ice_block_solid",
+}
+
+custom_entity{
+  layer = 0,
+  x = 600,
+  y = 541,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block_static",
+  model = "ice_block_solid",
+}
+
+custom_entity{
+  layer = 0,
+  x = 616,
+  y = 525,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block_static",
+  model = "ice_block_solid",
+}
+
+custom_entity{
+  layer = 0,
+  x = 368,
+  y = 1333,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block_static",
+  model = "ice_block_solid",
+}
+
+custom_entity{
+  layer = 0,
+  x = 384,
+  y = 1349,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block",
+  model = "ice_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = 72,
+  y = 1645,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block",
+  model = "ice_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = 88,
+  y = 1645,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block",
+  model = "ice_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = 240,
+  y = 629,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block",
+  model = "ice_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = 88,
+  y = 117,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block_static",
+  model = "ice_block_solid",
+}
+
+custom_entity{
+  layer = 0,
+  x = 224,
+  y = 629,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block_static",
+  model = "ice_block_solid",
+}
+
+custom_entity{
+  layer = 0,
+  x = 208,
+  y = 629,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block",
+  model = "ice_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = 184,
+  y = 141,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block",
+  model = "ice_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = 184,
+  y = 349,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block",
+  model = "ice_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = 392,
+  y = 141,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block",
+  model = "ice_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = 208,
+  y = 661,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block",
+  model = "ice_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = 224,
+  y = 661,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block",
+  model = "ice_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = 240,
+  y = 661,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block",
+  model = "ice_block",
+}
+
+switch{
+  name = "switch_star_boss_2",
+  layer = 0,
+  x = 824,
+  y = 128,
+  subtype = "walkable",
+  sprite = "entities/switch_star",
+  sound = "switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+custom_entity{
+  layer = 0,
+  x = -96,
+  y = 901,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block",
+  model = "ice_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = -80,
+  y = 901,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block",
+  model = "ice_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = -64,
+  y = 901,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block",
+  model = "ice_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = 336,
+  y = 661,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block",
+  model = "ice_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = 352,
+  y = 661,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block",
+  model = "ice_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = 368,
+  y = 661,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block",
+  model = "ice_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = 368,
+  y = 693,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block",
+  model = "ice_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = 352,
+  y = 693,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block_static",
+  model = "ice_block_solid",
+}
+
+custom_entity{
+  layer = 0,
+  x = 336,
+  y = 693,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ice_block",
+  model = "ice_block",
 }
 
 tile{
@@ -8498,6 +8887,24 @@ tile{
   layer = 2,
   x = 848,
   y = 328,
+  width = 16,
+  height = 8,
+  pattern = "605",
+}
+
+tile{
+  layer = 2,
+  x = 88,
+  y = 1360,
+  width = 16,
+  height = 8,
+  pattern = "605",
+}
+
+tile{
+  layer = 2,
+  x = 88,
+  y = 1392,
   width = 16,
   height = 8,
   pattern = "605",

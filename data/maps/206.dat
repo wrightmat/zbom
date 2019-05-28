@@ -8702,10 +8702,9 @@ dynamic_tile{
   layer = 0,
   x = 1456,
   y = 624,
-  pattern = "623",
   width = 32,
   height = 32,
-  enabled_at_start = true,
+  pattern = "623",
 }
 
 door{
@@ -9288,7 +9287,7 @@ destructible{
   layer = 0,
   x = 680,
   y = 733,
-  treasure_name = "random",
+  treasure_name = "heart",
   sprite = "entities/pot",
   destruction_sound = "stone",
 }
@@ -9412,10 +9411,9 @@ dynamic_tile{
   layer = 0,
   x = 224,
   y = 568,
-  pattern = "518",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "518",
 }
 
 block{
@@ -9426,7 +9424,6 @@ block{
   sprite = "entities/block",
   pushable = true,
   pullable = true,
-  maximum_moves = 2,
 }
 
 block{
@@ -9437,7 +9434,6 @@ block{
   sprite = "entities/block",
   pushable = true,
   pullable = true,
-  maximum_moves = 2,
 }
 
 door{
@@ -9519,10 +9515,9 @@ dynamic_tile{
   layer = 0,
   x = 1168,
   y = 1136,
-  pattern = "701",
   width = 128,
   height = 128,
-  enabled_at_start = true,
+  pattern = "701",
 }
 
 destructible{
@@ -9652,10 +9647,9 @@ dynamic_tile{
   layer = 0,
   x = 456,
   y = 1096,
-  pattern = "701",
   width = 240,
   height = 160,
-  enabled_at_start = true,
+  pattern = "701",
 }
 
 dynamic_tile{
@@ -9663,10 +9657,9 @@ dynamic_tile{
   layer = 0,
   x = 648,
   y = 1032,
-  pattern = "701",
   width = 48,
   height = 64,
-  enabled_at_start = true,
+  pattern = "701",
 }
 
 npc{
@@ -10082,6 +10075,15 @@ sensor{
   y = 613,
   width = 16,
   height = 32,
+}
+
+tile{
+  layer = 1,
+  x = 800,
+  y = 1040,
+  width = 48,
+  height = 96,
+  pattern = "22",
 }
 
 tile{
@@ -10631,15 +10633,6 @@ tile{
   width = 8,
   height = 8,
   pattern = "13",
-}
-
-tile{
-  layer = 1,
-  x = 800,
-  y = 1040,
-  width = 48,
-  height = 96,
-  pattern = "22",
 }
 
 tile{

@@ -17796,9 +17796,11 @@ tile{
 }
 
 wall{
+  name = "chest_blocker",
   layer = 0,
   x = 400,
   y = 1088,
+  enabled_at_start = false,
   width = 32,
   height = 8,
   stops_hero = true,
@@ -17980,10 +17982,9 @@ dynamic_tile{
   layer = 0,
   x = 1320,
   y = 400,
-  pattern = "682",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "682",
 }
 
 door{
@@ -19447,10 +19448,9 @@ dynamic_tile{
   layer = 0,
   x = 1336,
   y = 448,
-  pattern = "682",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "682",
 }
 
 dynamic_tile{
@@ -19458,10 +19458,9 @@ dynamic_tile{
   layer = 0,
   x = 1304,
   y = 408,
-  pattern = "701",
   width = 64,
   height = 48,
-  enabled_at_start = true,
+  pattern = "701",
 }
 
 stream{
@@ -19523,7 +19522,6 @@ block{
   sprite = "entities/statue",
   pushable = true,
   pullable = true,
-  maximum_moves = 2,
 }
 
 switch{
@@ -20034,10 +20032,9 @@ dynamic_tile{
   layer = 0,
   x = 1152,
   y = 1288,
-  pattern = "51",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "51",
 }
 
 custom_entity{
@@ -20268,6 +20265,127 @@ custom_entity{
   model = "hook",
 }
 
+custom_entity{
+  name = "hook_10",
+  layer = 0,
+  x = 872,
+  y = 573,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_11",
+  layer = 0,
+  x = 936,
+  y = 573,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_12",
+  layer = 0,
+  x = 1584,
+  y = 853,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_13",
+  layer = 0,
+  x = 1424,
+  y = 261,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_14",
+  layer = 0,
+  x = 1400,
+  y = 157,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_15",
+  layer = 0,
+  x = 1448,
+  y = 157,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_16",
+  layer = 0,
+  x = 1584,
+  y = 125,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_17",
+  layer = 0,
+  x = 1672,
+  y = 157,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_18",
+  layer = 0,
+  x = 1720,
+  y = 157,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_19",
+  layer = 0,
+  x = 1656,
+  y = 261,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_20",
+  layer = 0,
+  x = 1704,
+  y = 261,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "hook",
+}
+
 tile{
   layer = 1,
   x = 1904,
@@ -20489,10 +20607,9 @@ dynamic_tile{
   layer = 1,
   x = 1152,
   y = 1272,
-  pattern = "52",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "52",
 }
 
 tile{

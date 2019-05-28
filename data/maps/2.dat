@@ -8637,10 +8637,9 @@ dynamic_tile{
   layer = 0,
   x = 72,
   y = 656,
-  pattern = "288",
   width = 8,
   height = 288,
-  enabled_at_start = true,
+  pattern = "288",
 }
 
 destination{
@@ -9237,7 +9236,6 @@ block{
   sprite = "entities/statue_castle",
   pushable = true,
   pullable = false,
-  maximum_moves = 2,
 }
 
 teletransporter{
@@ -9293,10 +9291,10 @@ dynamic_tile{
   layer = 0,
   x = 1568,
   y = 1512,
-  pattern = "708",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "708",
 }
 
 dynamic_tile{
@@ -9304,10 +9302,10 @@ dynamic_tile{
   layer = 0,
   x = 1696,
   y = 1192,
-  pattern = "708",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "708",
 }
 
 dynamic_tile{
@@ -9315,10 +9313,10 @@ dynamic_tile{
   layer = 0,
   x = 1760,
   y = 840,
-  pattern = "708",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "708",
 }
 
 dynamic_tile{
@@ -9326,10 +9324,10 @@ dynamic_tile{
   layer = 0,
   x = 1232,
   y = 96,
-  pattern = "708",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "708",
 }
 
 dynamic_tile{
@@ -9337,10 +9335,10 @@ dynamic_tile{
   layer = 0,
   x = 1328,
   y = 440,
-  pattern = "708",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "708",
 }
 
 dynamic_tile{
@@ -9348,10 +9346,10 @@ dynamic_tile{
   layer = 0,
   x = 1328,
   y = 832,
-  pattern = "708",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "708",
 }
 
 dynamic_tile{
@@ -9359,10 +9357,10 @@ dynamic_tile{
   layer = 0,
   x = 1952,
   y = 1560,
-  pattern = "709",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "709",
 }
 
 dynamic_tile{
@@ -9370,10 +9368,10 @@ dynamic_tile{
   layer = 0,
   x = 1680,
   y = 120,
-  pattern = "709",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "709",
 }
 
 dynamic_tile{
@@ -9381,10 +9379,10 @@ dynamic_tile{
   layer = 0,
   x = 1520,
   y = 504,
-  pattern = "709",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "709",
 }
 
 dynamic_tile{
@@ -9392,10 +9390,10 @@ dynamic_tile{
   layer = 0,
   x = 1520,
   y = 840,
-  pattern = "709",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "709",
 }
 
 dynamic_tile{
@@ -9403,10 +9401,10 @@ dynamic_tile{
   layer = 0,
   x = 1856,
   y = 384,
-  pattern = "706",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "706",
 }
 
 npc{
@@ -9987,6 +9985,15 @@ custom_entity{
   direction = 3,
   sprite = "npc/guard",
   model = "npc_generic",
+}
+
+npc{
+  name = "bookshelf",
+  layer = 0,
+  x = 1344,
+  y = 69,
+  direction = 3,
+  subtype = 0,
 }
 
 tile{

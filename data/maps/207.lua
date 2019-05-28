@@ -59,7 +59,7 @@ if boss_plasmarine_blue ~= nil and boss_plasmarine_red ~= nil then
       map:open_doors("door_boss")
       sol.audio.play_sound("boss_killed")
       if boss_heart ~= nil then boss_heart:set_enabled(true) end
-      chest_book:set_enabled(true)
+      chest_book:set_enabled(true); chest_blocker:set_enabled(true)
       sol.audio.play_sound("chest_appears")
       sol.audio.play_music("temple_lake")
       to_outside:set_enabled(true)

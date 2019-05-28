@@ -80,7 +80,7 @@ function map:on_started(destination)
       treasure_name = "arrow",
       treasure_variant = 3
     })
-    if game:get_value("i1820") == 3 then shop_item_1:remove() end
+    if game:get_value("i1820") == 3 and shop_item_1 ~= nil then shop_item_1:remove() end
   end
 
   -- Activate any night-specific dynamic tiles.
@@ -760,4 +760,8 @@ end)
 
 function sensor_door_throne:on_activated()
   map:open_doors("door_throne")
+end
+
+function bookshelf:on_interaction()
+  game:start_dialog("relic_collector.bookshelf")
 end

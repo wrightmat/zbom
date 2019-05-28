@@ -6248,6 +6248,96 @@ tile{
   pattern = "105",
 }
 
+tile{
+  layer = 0,
+  x = 208,
+  y = 976,
+  width = 16,
+  height = 32,
+  pattern = "525",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 992,
+  width = 16,
+  height = 16,
+  pattern = "525",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 976,
+  width = 16,
+  height = 32,
+  pattern = "525",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 992,
+  width = 16,
+  height = 16,
+  pattern = "525",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "525",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "525",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "525",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "525",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 64,
+  width = 32,
+  height = 32,
+  pattern = "525",
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 136,
+  width = 48,
+  height = 16,
+  pattern = "525",
+}
+
 sensor{
   name = "dungeon_room_8_",
   layer = 0,
@@ -6519,7 +6609,6 @@ block{
   sprite = "entities/block",
   pushable = true,
   pullable = false,
-  maximum_moves = 2,
 }
 
 block{
@@ -6529,7 +6618,7 @@ block{
   sprite = "entities/block",
   pushable = false,
   pullable = false,
-  maximum_moves = 1,
+  max_moves = 1,
 }
 
 door{
@@ -6694,10 +6783,9 @@ dynamic_tile{
   layer = 0,
   x = 936,
   y = 392,
-  pattern = "577",
   width = 304,
   height = 144,
-  enabled_at_start = true,
+  pattern = "577",
 }
 
 chest{
@@ -7906,6 +7994,161 @@ enemy{
   direction = 3,
   breed = "lizalfos_blue",
   treasure_name = "random_enemy",
+}
+
+destructible{
+  layer = 0,
+  x = 216,
+  y = 1005,
+  treasure_name = "arrow",
+  treasure_variant = 2,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 232,
+  y = 1005,
+  treasure_name = "magic_flask",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 216,
+  y = 989,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 424,
+  y = 1005,
+  treasure_name = "arrow",
+  treasure_variant = 2,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 424,
+  y = 989,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 408,
+  y = 1005,
+  treasure_name = "magic_flask",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 216,
+  y = 717,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 424,
+  y = 717,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 72,
+  y = 413,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 216,
+  y = 413,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 72,
+  y = 77,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 88,
+  y = 77,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 88,
+  y = 93,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 72,
+  y = 93,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 760,
+  y = 149,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 776,
+  y = 149,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 792,
+  y = 149,
+  treasure_name = "random",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
 }
 
 tile{

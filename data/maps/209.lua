@@ -6,6 +6,8 @@ local game = map:get_game()
 -------------------------------------------
 
 function map:on_started(destination)
+  local _, _, layer = hero:get_position()
+  hero:save_solid_ground(176, 992, layer) -- If faling from above, can end up in an infinate loop of death!
   if not game:get_value("b1147") then boss_stalfos:set_enabled(false) end
   if not game:get_value("b1149") then boss_heart:set_enabled(false) end
   if not game:get_value("b1153") then chest_key_2:set_enabled(false) end
@@ -74,6 +76,36 @@ function switch_star_2:on_activated()
 end
 
 function switch_star_boss:on_activated()
+  switch_star_boss_2:set_activated(false)
+  local positions_1 = {
+    {x = 480, y = 264},
+    {x = 584, y = 344},
+    {x = 696, y = 280},
+    {x = 880, y = 240},
+    {x = 800, y = 104},
+    {x = 768, y = 864}
+  }
+  local positions_2 = {
+    {x = 512, y = 288},
+    {x = 704, y = 256},
+    {x = 768, y = 168},
+    {x = 912, y = 64},
+    {x = 816, y = 368},
+    {x = 880, y = 864}
+  }
+  local c = map:get_entities_count("hole_boss")
+  for i=1,c do
+    local ex, ey, el = map:get_entity("hole_boss_"..c):get_position()
+    if (ex == positions_2[c].x) and (ey == positions_2[c].y) then
+      map:get_entity("hole_boss_"..i):set_position(positions_1[i].x, positions_1[i].y)
+    else
+      map:get_entity("hole_boss_"..i):set_position(positions_2[i].x, positions_2[i].y)
+    end
+  end
+end
+
+function switch_star_boss_2:on_activated()
+  switch_star_boss:set_activated(false)
   local positions_1 = {
     {x = 480, y = 264},
     {x = 584, y = 344},
