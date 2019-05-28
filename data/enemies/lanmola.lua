@@ -53,7 +53,7 @@ function enemy:create_body()
     }
     body.head = self
     body_segment = body_segment + 1
-    sol.timer.start(self, 300, function() self:create_body() end)
+    sol.timer.start(self:get_game(), 350, function() self:create_body() end)
   elseif body_segment == 6 then
     self:create_tail()
   end
@@ -62,7 +62,7 @@ end
 function enemy:create_head()
   self:get_sprite():set_animation("rocks")
   self:set_attack_consequence("sword", "protected")
-  sol.timer.start(self, 1500, function()
+  sol.timer.start(self:get_game(), 1500, function()
     self:get_sprite():set_animation("walking")
     head_present = true
     self:create_body()

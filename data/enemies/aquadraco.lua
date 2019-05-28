@@ -30,16 +30,14 @@ function enemy:on_movement_changed(movement)
 end
 
 function enemy:on_obstacle_reached(movement)
-  if not firing then
-    self:fly()
-  end
+  if not firing then self:fly() end
 end
 
 function enemy:on_restarted()
-  self:fly()
+  sol.timer.start(self:get_map(), 2000, function() self:fly() end)
 end
 function enemy:on_hurt()
-  self:fly()
+  sol.timer.start(self:get_map(), 2000, function() self:fly() end)
 end
 
 function enemy:fly()

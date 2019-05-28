@@ -62,8 +62,10 @@ function enemy:go_circle()
   local m = sol.movement.create("circle")
   m:set_center(hero, 0, -18)
   m:set_radius(32)
-  m:set_initial_angle(math.pi / 2)
-  m:set_angle_speed(48)
+  --m:set_initial_angle(math.pi / 2)
+  --m:set_angle_speed(48)
+  m:set_angle_from_center(math.pi / 2)
+  m:set_angular_speed(0.85)
   m:start(self)
 end
 

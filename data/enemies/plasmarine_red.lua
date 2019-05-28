@@ -66,7 +66,9 @@ function enemy:shoot_ball()
 end
 
 function enemy:create_bari()
-  enemy:get_sprite():set_animation("shaking")
-  enemy:create_enemy({ breed = "bari_red" })
-  sol.timer.start(enemy, 1000, function() enemy:restart() end)
+  if enemy:get_map():get_entities_count("plasmarine_bari_") <= 12 then
+    enemy:get_sprite():set_animation("shaking")
+    enemy:create_enemy({ name = "plasmarine_bari_", breed = "bari_red" })
+    sol.timer.start(enemy, 1000, function() enemy:restart() end)
+  end
 end

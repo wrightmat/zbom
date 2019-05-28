@@ -54,13 +54,13 @@ end
 
 function enemy:on_enabled()
   -- Create one of the heads every second in order from easiest to hardest.
-  sol.timer.start(self, 1000, function()
+  sol.timer.start(self:get_game(), 1000, function()
     self:create_head("green")
-    sol.timer.start(self, 1000, function()
+    sol.timer.start(self:get_game(), 1000, function()
       self:create_head("red")
-      sol.timer.start(self, 1000, function()
+      sol.timer.start(self:get_game(), 1000, function()
         self:create_head("blue")
-        sol.timer.start(self, 1000, function()
+        sol.timer.start(self:get_game(), 1000, function()
           self:create_head("purple")
         end)
       end)
