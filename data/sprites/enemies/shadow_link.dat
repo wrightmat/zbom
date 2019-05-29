@@ -21,10 +21,10 @@ animation{
   name = "hurt",
   src_image = "enemies/shadow_link.png",
   directions = {
+    { x = 192, y = 136, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
     { x = 216, y = 136, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
     { x = 240, y = 136, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
     { x = 264, y = 136, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
-    { x = 288, y = 136, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
   },
 }
 animation{
