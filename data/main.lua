@@ -2,6 +2,7 @@
 
 local console = require("scripts/console")
 local quest_manager = require("scripts/quest_manager")
+local shader_manager = require("scripts/shader_manager")
 require("scripts/multi_events")
 require("scripts/weather/weather_manager")
 
@@ -12,7 +13,6 @@ end
 
 -- Event called when the program starts.
 function sol.main:on_started()
-
   -- Make quest-specific initializations.
   quest_manager:initialize_quest()
 
@@ -138,12 +138,12 @@ function sol.main:debug_on_key_pressed(key, modifiers)
     elseif key == "g" and hero ~= nil then
       local x, y, layer = hero:get_position()
       if layer ~= 0 then
-	hero:set_position(x, y, layer - 1)
+        hero:set_position(x, y, layer - 1)
       end
     elseif key == "t" and hero ~= nil then
       local x, y, layer = hero:get_position()
       if layer ~= 2 then
-	hero:set_position(x, y, layer + 1)
+        hero:set_position(x, y, layer + 1)
       end
     elseif key == "r" then
       if hero:get_walking_speed() == 300 then
@@ -219,8 +219,7 @@ function sol.main:on_key_pressed(key, modifiers)
   -- Normal features.
   if not handled then
     if key == "f5" then
-      -- F5: change the video mode.
-      sol.video.switch_mode()
+      shader_manager:switch_shader()
     elseif key == "return" and (modifiers.alt or modifiers.control) then
       -- Alt + Return or Ctrl + Return: switch fullscreen.
       sol.video.set_fullscreen(not sol.video.is_fullscreen())

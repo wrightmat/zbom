@@ -397,6 +397,7 @@ sprite{ id = "entities/hint_stone", description = "Hint stone" }
 sprite{ id = "entities/hookshot", description = "Hookshot" }
 sprite{ id = "entities/ice", description = "Ice" }
 sprite{ id = "entities/ice_block", description = "Ice Block" }
+sprite{ id = "entities/ice_block_static", description = "Ice Block (static)" }
 sprite{ id = "entities/ice_pit", description = "Ice Pit (Cane)" }
 sprite{ id = "entities/items", description = "(Items)" }
 sprite{ id = "entities/lava", description = "Lava" }
@@ -999,7 +1000,7 @@ enemy{ id = "soldier_green", description = "Soldier, Green" }
 enemy{ id = "stal", description = "Stal" }
 enemy{ id = "stalfos_knight", description = "Stalfos Knight (Boss)" }
 enemy{ id = "swamp_flower_big", description = "Swamp Flower, Big" }
-enemy{ id = "swamp_flower_small", description = "Swamp, Flower, Small" }
+enemy{ id = "swamp_flower_small", description = "Swamp Flower, Small" }
 enemy{ id = "tektite_blue", description = "Tektite, Blue" }
 enemy{ id = "tektite_green", description = "Tektite, Green" }
 enemy{ id = "tektite_red", description = "Tektite, Red" }
@@ -1023,7 +1024,7 @@ entity{ id = "generic_portable", description = "Generic Portable" }
 entity{ id = "hammer_stake", description = "Hammer Stake" }
 entity{ id = "hook", description = "Hookshot Hook" }
 entity{ id = "ice_block", description = "Ice Block" }
-entity{ id = "ice_block_solid", description = "Ice Block (solid, immobile)" }
+entity{ id = "ice_block_solid", description = "Ice Block (static)" }
 entity{ id = "ice_pit", description = "Ice Pit" }
 entity{ id = "metal_ball", description = "Metal Ball" }
 entity{ id = "npc_bilo", description = "NPC: Bilo (Ordon)" }
@@ -1055,4 +1056,15 @@ font{ id = "green_digits", description = "green_digits" }
 font{ id = "small_green_digits", description = "small_green_digits" }
 font{ id = "small_white_digits", description = "small_white_digits" }
 font{ id = "white_digits", description = "white_digits" }
+
+shader{ id = "6xbrz", description = "6xbrz" }
+shader{ id = "edge-detection", description = "edge-detection" }
+shader{ id = "grayscale", description = "grayscale" }
+shader{ id = "heavybloom", description = "heavybloom" }
+shader{ id = "hq2x", description = "hq2x" }
+shader{ id = "hq4x", description = "hq4x" }
+shader{ id = "ntsc2pal", description = "ntsc2pal" }
+shader{ id = "pal2ntsc", description = "pal2ntsc" }
+shader{ id = "sepia", description = "sepia" }
+shader{ id = "toon", description = "toon" }
 

@@ -19,7 +19,6 @@ game.independent_entities = {}
 game.time_flow = 1000 -- One second is one minute in-game (so one hour in-game is one hour).
 
 game:register_event("on_started", function(game)
---function game:on_started()
   -- Set up the dialog box, HUD, hero conditions and effects.
   condition_manager:initialize(game)
   game:initialize_dialog_box()
@@ -37,6 +36,12 @@ game:register_event("on_started", function(game)
   local equipped = game:get_value("tunic_equipped")
   local hero = game:get_hero()
   hero:set_tunic_sprite_id("hero/tunic" .. equipped)
+
+  -- Set any previously set shader
+  if game:get_value("video_shader") ~= nil then
+    local shader = sol.shader.create(game:get_value("video_shader"))
+    sol.video.set_shader(shader)
+  end
   
   -- Measure the time played.
   if game:get_value("time_played") == nil then game:set_value("time_played", 0) end

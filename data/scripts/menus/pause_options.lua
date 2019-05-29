@@ -1,5 +1,6 @@
 local submenu = require("scripts/menus/pause_submenu")
 local options_submenu = submenu:new()
+local shader_manager = require("scripts/shader_manager")
 
 function options_submenu:on_started()
   submenu.on_started(self)
@@ -8,6 +9,12 @@ function options_submenu:on_started()
   local width, height = sol.video.get_quest_size()
   local center_x, center_y = width / 2, height / 2
   local video_mode_text = true
+
+  if self.game:get_value("video_shader") ~= nil then
+    shader_name = self.game:get_value("video_shader")
+  elseif sol.video.get_shader() ~= nil and sol.video.get_shader():get_id() ~= nil then
+    shader_name = sol.video.get_shader():get_id()
+  else local shader_name = "" end
   
   self.video_mode_label_text = sol.text_surface.create{
     horizontal_alignment = "left",
@@ -17,13 +24,13 @@ function options_submenu:on_started()
     text_key = "selection_menu.options.video_mode",
   }
   self.video_mode_label_text:set_xy(center_x - 50, center_y - 58)
-  
+
   self.video_mode_text = sol.text_surface.create{
     horizontal_alignment = "right",
     vertical_alignment = "top",
     font = font,
     font_size = font_size,
-    text = sol.video.get_mode(),
+    text_key = "options.video_mode.windowed",
   }
   self.video_mode_text:set_xy(center_x + 104, center_y - 58)
   
@@ -63,6 +70,7 @@ function options_submenu:on_started()
   self.keyboard_texts = {}
   self.joypad_texts = {}
   self.command_names = { "action", "attack", "item_1", "item_2", "pause", "left", "right", "up", "down" }
+  
   for i = 1, #self.command_names do
     self.command_texts[i] = sol.text_surface.create{
       horizontal_alignment = "left",
@@ -86,7 +94,6 @@ function options_submenu:on_started()
   end
   
   self:load_command_texts()
-  
   self.up_arrow_sprite = sol.sprite.create("menus/arrow")
   self.up_arrow_sprite:set_direction(1)
   self.up_arrow_sprite:set_xy(center_x - 64, center_y - 24)
@@ -134,9 +141,18 @@ function options_submenu:set_cursor_position(position)
       self.cursor_sprite.y = height / 2 - 59
       self.cursor_sprite:set_animation("big")
       self.video_mode_label_text:set_text_key("selection_menu.options.video_mode")
-      self.video_mode_text:set_text(sol.video.get_mode())
+      self.video_mode_text:set_text_key("options.video_mode.windowed")
       video_mode_text = true
-    elseif position == 2 then  -- Control Scheme.
+    elseif position == 2 then  -- Shader.
+      self:set_caption("options.caption.press_action_change_shader")
+      self.cursor_sprite.x = width / 2 - 58
+      self.cursor_sprite.y = height / 2 - 59
+      self.cursor_sprite:set_animation("big")
+      self.video_mode_label_text:set_text_key("selection_menu.options.video_shader")
+print(shader_name)
+      self.video_mode_text:set_text(shader_name)
+      video_mode_text = true
+    elseif position == 3 then  -- Control Scheme.
       local control_scheme = self.game:get_value("control_scheme") or "keyboard"
       self:set_caption("options.caption.press_action_change_controls")
       self.cursor_sprite.x = width / 2 - 58
@@ -210,15 +226,15 @@ function options_submenu:on_command_pressed(command)
 
   if not handled then
     if command == "left" then
-      if self.cursor_position == 2 then
+      if self.cursor_position > 1 then
         sol.audio.play_sound("cursor")
-        self:set_cursor_position(1)
+        self:set_cursor_position(self.cursor_position - 1)
       else self:previous_submenu() end
       handled = true
     elseif command == "right" then
-      if self.cursor_position == 1 then
+      if self.cursor_position < 3 then
         sol.audio.play_sound("cursor")
-        self:set_cursor_position(2)
+        self:set_cursor_position(self.cursor_position + 1)
       else self:next_submenu() end
       handled = true
     elseif command == "up" then
@@ -237,9 +253,27 @@ function options_submenu:on_command_pressed(command)
       sol.audio.play_sound("danger")
       if self.cursor_position == 1 then
         -- Change the video mode.
-        sol.video.switch_mode()
-        self.video_mode_text:set_text(sol.video.get_mode())
+        if self.video_mode_text:get_text() == sol.language.get_string("options.video_mode.windowed") then
+          sol.video.set_fullscreen(true)
+          self.video_mode_text:set_text_key("options.video_mode.fullscreen")
+        elseif self.video_mode_text:get_text() == sol.language.get_string("options.video_mode.fullscreen") then
+          sol.video.set_fullscreen(false)
+          sol.video.set_window_size(640, 480)
+          self.video_mode_text:set_text_key("options.video_mode.windowed")
+        end
       elseif self.cursor_position == 2 then
+        -- Change the video shader.
+        shader_manager:switch_shader()
+        if sol.video.get_shader() ~= nil and sol.video.get_shader():get_id() ~= nil then
+          shader_name = sol.video.get_shader():get_id()
+          self.game:set_value("video_shader", shader_name)
+          self.video_mode_text:set_text(shader_name)
+        else
+          self.game:set_value("video_shader", nil)
+          self.video_mode_text:set_text(" ")
+        end
+        
+      elseif self.cursor_position == 3 then
         -- Change the control scheme.
         local control_scheme = self.game:get_value("control_scheme") or "keyboard"
         if control_scheme == "touch_1" then control_scheme = "touch_2"
