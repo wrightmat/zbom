@@ -6,7 +6,7 @@ This quest is a free, open-source game that works with Solarus,
 an open-source Zelda-like 2D game engine.
 To play this game, you need Solarus. The compiled engine is included for Windows.
 
-The game is currently in Version 1.2 (6-Feb-17, Solarus v1.5.1)
+The game is currently in Version 1.4 (30-Mar-19, Solarus v1.6)
 
 To run:
   Windows: execute "solarus.exe"
