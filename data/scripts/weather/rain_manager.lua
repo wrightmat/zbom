@@ -82,7 +82,7 @@ function rain_manager:on_created()
   dark_surface = sol.surface.create(w, h)
   flash_surface = sol.surface.create(w, h)
   dark_surface:set_blend_mode("multiply")
-  flash_surface:fill_color({250, 250, 250})
+  flash_surface:fill_color({250, 250, 250, 220})
   flash_surface:set_blend_mode("add")
   -- Initialize main variables.
   current_rain_mode, previous_rain_mode, previous_world = nil, nil, nil
@@ -219,7 +219,7 @@ function rain_manager:start_rain_mode(rain_mode)
   self:update_darkness()
   -- Nothing more to do if there is no rain.
   if rain_mode == nil then return end
-  --Initialize drop parameters (used by "rain_manager.create_drop").
+  -- Initialize drop parameters (used by "rain_manager.create_drop").
   local game = current_game
   local current_drop_delay
   if rain_mode == "rain" then current_drop_delay = rain_drop_delay
@@ -297,7 +297,7 @@ function rain_manager:start_lightnings()
   if timers["lightning_creation_timer"] ~= nil then return end
   local game = current_game
   local function create_next_lightning()
-    flash_surface:set_opacity(255)
+    flash_surface:set_opacity(max_lightning_opacity)
     local lightning_delay = math.random(min_lightning_delay, max_lightning_delay)
     timers["lightning_creation_timer"] = sol.timer.start(game, lightning_delay, function()
       -- Create lightning flash.

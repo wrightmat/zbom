@@ -13,16 +13,15 @@ function floor_view:new(game)
 end
 
 function floor_view:initialize(game)
-
   self.game = game
   self.visible = false
-  self.surface = sol.surface.create(32, 85)
+  self.surface = sol.surface.create(200, 400)
   self.floors_img = sol.surface.create("floors.png", true)  -- Language-specific image
+  self.dungeon_name = sol.text_surface.create({ font = "white_digits", font_size = 12 })
   self.floor = nil
 end
 
 function floor_view:on_map_changed(map)
-
   local need_rebuild = false
   local floor = map:get_floor()
   if floor == self.floor
@@ -47,11 +46,11 @@ function floor_view:on_map_changed(map)
 end
 
 function floor_view:rebuild_surface()
-
   self.surface:clear()
 
   local highest_floor_displayed
   local dungeon = self.game:get_dungeon()
+  local name_height = 20
 
   if dungeon ~= nil and self.floor ~= nil then
     -- We are in a dungeon: show the neighbor floors before the current one.
@@ -72,10 +71,16 @@ function floor_view:rebuild_surface()
 
     local src_y = (15 - highest_floor_displayed) * 12
     local src_height = nb_floors_displayed * 12 + 1
-
+    name_height = src_height + 20
+    
     self.floors_img:draw_region(32, src_y, 32, src_height, self.surface)
   else
     highest_floor_displayed = self.floor
+  end
+
+  if dungeon ~= nil then
+    self.dungeon_name:set_text_key(dungeon.name)
+    self.dungeon_name:draw(self.surface, 0, name_height)
   end
 
   -- Show the current floor then.
@@ -100,7 +105,6 @@ function floor_view:set_dst_position(x, y)
 end
 
 function floor_view:on_draw(dst_surface)
-
   if self.visible then
     local x, y = self.dst_x, self.dst_y
     local width, height = dst_surface:get_size()

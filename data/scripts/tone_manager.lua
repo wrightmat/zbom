@@ -53,7 +53,6 @@ function tone_manager:create(game)
   
   function tone_menu:on_map_changed(map)
     if game:get_map() ~= nil then
-      --local map = game:get_map()
       game:on_tone_system_saving()
       
       mr, mg, mb, ma = nil, nil, nil, nil
@@ -201,7 +200,8 @@ function tone_manager:create(game)
       if mr ~= nil then
         -- We are in a map where tone is defined
         shadow:fill_color{mr, mg, mb, ma}
-      elseif game:is_in_outside_world() then
+      elseif game:is_in_outside_world() or (game:get_map():get_world() == "dungeon_2" and game:get_map():get_id() ~= "203") then
+        -- Normal outside maps. Special case for Sacred Grove, where part of the dungeon is outside.
         shadow:clear()
         shadow:fill_color{cr, cg, cb, 255}
       else

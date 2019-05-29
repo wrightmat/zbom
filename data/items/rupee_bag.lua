@@ -11,6 +11,5 @@ function item:on_variant_changed(variant)
   if max_money == nil then
     error("Invalid variant '" .. variant .. "' for item 'rupee_bag'")
   end
-
   self:get_game():set_max_money(max_money)
 end

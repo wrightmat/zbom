@@ -51,7 +51,6 @@ function pickables:initialize(game)
 end
 
 function pickables:check()
-
   local need_rebuild = false
   if not self.game:get_value("i1849") then jade = 0 else jade = self.game:get_value("i1849") end
   if not self.game:get_value("i1847") then stick = 0 else stick = self.game:get_value("i1847") end
@@ -158,13 +157,12 @@ function pickables:check()
   end
 
   -- Schedule the next check.
-  sol.timer.start(self, 50, function()
+  sol.timer.start(self.game, 50, function()
     self:check()
   end)
 end
 
 function pickables:rebuild_surface()
-
   self.surface:clear()
 
   -- Background
@@ -246,7 +244,6 @@ function pickables:set_dst_position(x, y)
 end
 
 function pickables:on_draw(dst_surface)
-
   if visible then
     local x, y = self.dst_x, self.dst_y
     local width, height = dst_surface:get_size()
@@ -259,9 +256,7 @@ function pickables:on_draw(dst_surface)
 
     self.surface:set_opacity(168)
     self.surface:draw(dst_surface, x, y)
-
   end
-
 end
 
 return pickables

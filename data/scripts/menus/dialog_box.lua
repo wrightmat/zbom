@@ -195,7 +195,7 @@ function dialog_box:on_started()
   end
 
   self.box_dst_position = { x = x, y = y }
-  self.question_dst_position = { x = x + 18, y = y + 27 }
+  self.question_dst_position = { x = x + 15, y = y + 24 }
   self.icon_dst_position = { x = x + 18, y = y + 22 }
 
   self:show_dialog()
