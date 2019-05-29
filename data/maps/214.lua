@@ -6,6 +6,7 @@ local game = map:get_game()
 ---------------------------------------------
 
 function map:on_started(destination)
+  game:set_world_rain_mode("dungeon_7", "rain")
   if not game:get_value("b1173") then chest_key_2:set_enabled(false) end
   warp_chuchu:set_enabled(false)
   warp_item:set_enabled(false)

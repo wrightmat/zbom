@@ -5952,10 +5952,9 @@ dynamic_tile{
   layer = 0,
   x = 848,
   y = 704,
-  pattern = "221",
   width = 32,
   height = 16,
-  enabled_at_start = true,
+  pattern = "221",
 }
 
 dynamic_tile{
@@ -5963,10 +5962,9 @@ dynamic_tile{
   layer = 0,
   x = 848,
   y = 688,
-  pattern = "222",
   width = 32,
   height = 16,
-  enabled_at_start = true,
+  pattern = "222",
 }
 
 wall{
@@ -6701,10 +6699,9 @@ dynamic_tile{
   layer = 0,
   x = 512,
   y = 1248,
-  pattern = "222",
   width = 32,
   height = 16,
-  enabled_at_start = true,
+  pattern = "222",
 }
 
 dynamic_tile{
@@ -6712,10 +6709,9 @@ dynamic_tile{
   layer = 0,
   x = 512,
   y = 1264,
-  pattern = "221",
   width = 32,
   height = 16,
-  enabled_at_start = true,
+  pattern = "221",
 }
 
 dynamic_tile{
@@ -6723,10 +6719,9 @@ dynamic_tile{
   layer = 0,
   x = 512,
   y = 152,
-  pattern = "222",
   width = 32,
   height = 16,
-  enabled_at_start = true,
+  pattern = "222",
 }
 
 dynamic_tile{
@@ -6734,10 +6729,9 @@ dynamic_tile{
   layer = 0,
   x = 512,
   y = 168,
-  pattern = "221",
   width = 32,
   height = 16,
-  enabled_at_start = true,
+  pattern = "221",
 }
 
 dynamic_tile{
@@ -6745,10 +6739,9 @@ dynamic_tile{
   layer = 0,
   x = 176,
   y = 688,
-  pattern = "222",
   width = 32,
   height = 16,
-  enabled_at_start = true,
+  pattern = "222",
 }
 
 dynamic_tile{
@@ -6756,10 +6749,9 @@ dynamic_tile{
   layer = 0,
   x = 176,
   y = 704,
-  pattern = "221",
   width = 32,
   height = 16,
-  enabled_at_start = true,
+  pattern = "221",
 }
 
 sensor{
@@ -7133,10 +7125,9 @@ dynamic_tile{
   layer = 0,
   x = 848,
   y = 912,
-  pattern = "196",
   width = 64,
   height = 40,
-  enabled_at_start = true,
+  pattern = "196",
 }
 
 sensor{
@@ -7343,6 +7334,46 @@ teletransporter{
   destination = "from_sanctum",
   sprite = "entities/warp_appears",
   sound = "warp",
+}
+
+destructible{
+  layer = 0,
+  x = 824,
+  y = 949,
+  treasure_name = "arrow",
+  treasure_variant = 3,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 936,
+  y = 949,
+  treasure_name = "arrow",
+  treasure_variant = 3,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 768,
+  y = 1349,
+  treasure_name = "arrow",
+  treasure_variant = 3,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 992,
+  y = 1349,
+  treasure_name = "arrow",
+  treasure_variant = 3,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
 }
 
 tile{

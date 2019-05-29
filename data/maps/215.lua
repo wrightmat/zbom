@@ -6,6 +6,7 @@ local game = map:get_game()
 ---------------------------------------------
 
 function map:on_started(destination)
+  game:set_world_rain_mode("dungeon_7", "storm")
   if not game:get_value("b1166") then
     miniboss_grim_creeper:set_enabled(false)
     miniboss_warp:set_enabled(false)

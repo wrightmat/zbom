@@ -6,6 +6,7 @@ local game = map:get_game()
 ---------------------------------------------
 
 function map:on_started(destination)
+  game:set_world_rain_mode("dungeon_7", nil)
   flying_heart:get_sprite():set_animation("heart")
   flying_apple:get_sprite():set_animation("apple")
 

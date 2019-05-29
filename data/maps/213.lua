@@ -6,6 +6,7 @@ local game = map:get_game()
 ---------------------------------------------
 
 function map:on_started(destination)
+  game:set_world_rain_mode("dungeon_7", "rain")
   if not game:get_value("b1160") then chest_compass:set_enabled(false) end
   if not game:get_value("b1171") then chest_key_1:set_enabled(false) end
   if game:get_value("b1164") then

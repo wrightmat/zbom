@@ -6,6 +6,7 @@ local game = map:get_game()
 ---------------------------------------------
 
 function map:on_started(destination)
+  game:set_world_rain_mode("dungeon_7", "storm")
   if not game:get_value("b1168") then
     boss_helmaroc:set_enabled(false)
   else

@@ -5156,7 +5156,7 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 3,
-  sprite = "entities/ice_block",
+  sprite = "entities/ice_block_static",
   model = "ice_block_solid",
 }
 
@@ -5168,7 +5168,7 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 3,
-  sprite = "entities/ice_block",
+  sprite = "entities/ice_block_static",
   model = "ice_block_solid",
 }
 
@@ -5180,7 +5180,7 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 3,
-  sprite = "entities/ice_block",
+  sprite = "entities/ice_block_static",
   model = "ice_block_solid",
 }
 
@@ -5192,7 +5192,7 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 3,
-  sprite = "entities/ice_block",
+  sprite = "entities/ice_block_static",
   model = "ice_block_solid",
 }
 
@@ -5204,7 +5204,7 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 3,
-  sprite = "entities/ice_block",
+  sprite = "entities/ice_block_static",
   model = "ice_block_solid",
 }
 
@@ -5216,7 +5216,7 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 3,
-  sprite = "entities/ice_block",
+  sprite = "entities/ice_block_static",
   model = "ice_block_solid",
 }
 
@@ -5228,7 +5228,7 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 3,
-  sprite = "entities/ice_block",
+  sprite = "entities/ice_block_static",
   model = "ice_block_solid",
 }
 
@@ -5240,7 +5240,7 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 3,
-  sprite = "entities/ice_block",
+  sprite = "entities/ice_block_static",
   model = "ice_block_solid",
 }
 
@@ -5252,7 +5252,7 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 3,
-  sprite = "entities/ice_block",
+  sprite = "entities/ice_block_static",
   model = "ice_block_solid",
 }
 
@@ -5264,7 +5264,7 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 3,
-  sprite = "entities/ice_block",
+  sprite = "entities/ice_block_static",
   model = "ice_block_solid",
 }
 
@@ -5276,7 +5276,7 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 3,
-  sprite = "entities/ice_block",
+  sprite = "entities/ice_block_static",
   model = "ice_block_solid",
 }
 
@@ -5288,7 +5288,7 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 3,
-  sprite = "entities/ice_block",
+  sprite = "entities/ice_block_static",
   model = "ice_block_solid",
 }
 
@@ -5893,9 +5893,8 @@ dynamic_tile{
   layer = 2,
   x = 0,
   y = 768,
-  pattern = "137",
   width = 912,
   height = 32,
-  enabled_at_start = true,
+  pattern = "137",
 }
 

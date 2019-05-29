@@ -4788,7 +4788,6 @@ block{
   sprite = "entities/block",
   pushable = true,
   pullable = true,
-  maximum_moves = 2,
 }
 
 block{
@@ -4798,7 +4797,6 @@ block{
   sprite = "entities/block",
   pushable = true,
   pullable = true,
-  maximum_moves = 2,
 }
 
 enemy{
@@ -5388,10 +5386,9 @@ dynamic_tile{
   layer = 0,
   x = 144,
   y = 440,
-  pattern = "204",
   width = 32,
   height = 32,
-  enabled_at_start = true,
+  pattern = "204",
 }
 
 dynamic_tile{
@@ -5399,10 +5396,9 @@ dynamic_tile{
   layer = 0,
   x = 304,
   y = 440,
-  pattern = "204",
   width = 32,
   height = 32,
-  enabled_at_start = true,
+  pattern = "204",
 }
 
 door{
@@ -5452,6 +5448,102 @@ chest{
   treasure_variant = 4,
   treasure_savegame_variable = "b1754",
   sprite = "entities/chest",
+}
+
+custom_entity{
+  name = "ice_block_9",
+  layer = 0,
+  x = 616,
+  y = 725,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/ice_block",
+  model = "ice_block",
+}
+
+custom_entity{
+  name = "ice_block_10",
+  layer = 0,
+  x = 600,
+  y = 725,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/ice_block_static",
+  model = "ice_block_solid",
+}
+
+custom_entity{
+  name = "ice_block_11",
+  layer = 0,
+  x = 584,
+  y = 725,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/ice_block_static",
+  model = "ice_block_solid",
+}
+
+custom_entity{
+  name = "ice_block_12",
+  layer = 0,
+  x = 568,
+  y = 725,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/ice_block",
+  model = "ice_block",
+}
+
+custom_entity{
+  name = "ice_block_13",
+  layer = 0,
+  x = 776,
+  y = 725,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/ice_block",
+  model = "ice_block",
+}
+
+custom_entity{
+  name = "ice_block_14",
+  layer = 0,
+  x = 760,
+  y = 725,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/ice_block_static",
+  model = "ice_block_solid",
+}
+
+custom_entity{
+  name = "ice_block_15",
+  layer = 0,
+  x = 744,
+  y = 725,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/ice_block_static",
+  model = "ice_block_solid",
+}
+
+custom_entity{
+  name = "ice_block_16",
+  layer = 0,
+  x = 728,
+  y = 725,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/ice_block",
+  model = "ice_block",
 }
 
 tile{

@@ -21,6 +21,51 @@ tile{
 
 tile{
   layer = 0,
+  x = 160,
+  y = 824,
+  width = 16,
+  height = 16,
+  pattern = "275",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 840,
+  width = 176,
+  height = 8,
+  pattern = "275",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 680,
+  width = 16,
+  height = 16,
+  pattern = "275",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 464,
+  height = 432,
+  pattern = "1765",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 416,
+  width = 8,
+  height = 8,
+  pattern = "275",
+}
+
+tile{
+  layer = 0,
   x = 360,
   y = 848,
   width = 32,
@@ -48,20 +93,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 168,
+  x = 176,
   y = 696,
-  width = 240,
+  width = 232,
   height = 152,
   pattern = "275",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 0,
-  width = 464,
-  height = 432,
-  pattern = "1765",
 }
 
 tile{
@@ -75,9 +111,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 240,
+  x = 232,
   y = 0,
-  width = 200,
+  width = 208,
   height = 424,
   pattern = "275",
 }
@@ -1947,123 +1983,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 160,
-  y = 848,
-  width = 16,
-  height = 16,
-  pattern = "1952",
-}
-
-tile{
-  layer = 0,
-  x = 176,
-  y = 832,
-  width = 16,
-  height = 16,
-  pattern = "1952",
-}
-
-tile{
-  layer = 0,
-  x = 192,
-  y = 816,
-  width = 16,
-  height = 16,
-  pattern = "1952",
-}
-
-tile{
-  layer = 0,
-  x = 208,
-  y = 688,
-  width = 16,
-  height = 16,
-  pattern = "1952",
-}
-
-tile{
-  layer = 0,
-  x = 224,
-  y = 672,
-  width = 16,
-  height = 16,
-  pattern = "1952",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 816,
-  width = 160,
-  height = 16,
-  pattern = "1939",
-}
-
-tile{
-  layer = 0,
-  x = 160,
-  y = 704,
-  width = 16,
-  height = 112,
-  pattern = "1945",
-}
-
-tile{
-  layer = 0,
-  x = 160,
-  y = 688,
-  width = 16,
-  height = 16,
-  pattern = "1938",
-}
-
-tile{
-  layer = 0,
-  x = 176,
-  y = 672,
-  width = 16,
-  height = 16,
-  pattern = "1938",
-}
-
-tile{
-  layer = 0,
-  x = 192,
-  y = 432,
-  width = 16,
-  height = 240,
-  pattern = "1945",
-}
-
-tile{
-  layer = 0,
-  x = 192,
-  y = 416,
-  width = 16,
-  height = 16,
-  pattern = "1938",
-}
-
-tile{
-  layer = 0,
-  x = 240,
-  y = 416,
-  width = 16,
-  height = 16,
-  pattern = "1952",
-}
-
-tile{
-  layer = 0,
-  x = 208,
-  y = 0,
-  width = 16,
-  height = 416,
-  pattern = "1945",
-}
-
-tile{
-  layer = 0,
   x = 672,
   y = 320,
   width = 48,
@@ -3223,6 +3142,60 @@ tile{
   pattern = "1919",
 }
 
+tile{
+  layer = 0,
+  x = 160,
+  y = 848,
+  width = 16,
+  height = 16,
+  pattern = "999_2",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 832,
+  width = 16,
+  height = 16,
+  pattern = "999_2",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 816,
+  width = 16,
+  height = 16,
+  pattern = "999_2",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 688,
+  width = 16,
+  height = 16,
+  pattern = "999_2",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "999_2",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "999_2",
+}
+
 teletransporter{
   name = "to_D12",
   layer = 0,
@@ -3867,10 +3840,10 @@ dynamic_tile{
   layer = 0,
   x = 96,
   y = 552,
-  pattern = "338",
+  enabled_at_start = false,
   width = 16,
   height = 24,
-  enabled_at_start = false,
+  pattern = "338",
 }
 
 dynamic_tile{
@@ -3878,10 +3851,10 @@ dynamic_tile{
   layer = 0,
   x = 56,
   y = 520,
-  pattern = "340",
+  enabled_at_start = false,
   width = 40,
   height = 56,
-  enabled_at_start = false,
+  pattern = "340",
 }
 
 dynamic_tile{
@@ -3889,10 +3862,10 @@ dynamic_tile{
   layer = 0,
   x = 112,
   y = 520,
-  pattern = "339",
+  enabled_at_start = false,
   width = 40,
   height = 56,
-  enabled_at_start = false,
+  pattern = "339",
 }
 
 destination{

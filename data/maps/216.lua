@@ -7,6 +7,7 @@ local door_timer = nil
 ---------------------------------------------
 
 function map:on_started(destination)
+  game:set_world_rain_mode("dungeon_7", "rain")
   map:set_doors_open("door_statues")
   if not game:get_value("b1754") then chest_rupees:set_enabled(false) end
 end
