@@ -3585,6 +3585,18 @@ enemy{
   treasure_name = "random_enemy",
 }
 
+teletransporter{
+  name = "to_B4_3",
+  layer = 0,
+  x = -16,
+  y = 112,
+  width = 16,
+  height = 304,
+  transition = "scrolling",
+  destination_map = "91",
+  destination = "_side",
+}
+
 tile{
   layer = 1,
   x = 512,

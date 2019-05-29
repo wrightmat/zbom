@@ -127,3 +127,7 @@ function npc_tokay_plume:on_interaction()
     end
   end)
 end
+
+function bookshelf:on_interaction()
+  game:start_dialog("tokay.bookshelf")
+end

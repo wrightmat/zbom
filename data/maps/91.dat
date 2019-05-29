@@ -7498,6 +7498,15 @@ tile{
   pattern = "523",
 }
 
+tile{
+  layer = 0,
+  x = 1048,
+  y = 256,
+  width = 32,
+  height = 32,
+  pattern = "630",
+}
+
 teletransporter{
   name = "to_B3",
   layer = 0,
@@ -8104,6 +8113,18 @@ sensor{
   y = 813,
   width = 96,
   height = 16,
+}
+
+teletransporter{
+  name = "to_C4_2",
+  layer = 0,
+  x = 1120,
+  y = 112,
+  width = 16,
+  height = 304,
+  transition = "scrolling",
+  destination_map = "95",
+  destination = "_side",
 }
 
 npc{
@@ -11822,14 +11843,5 @@ tile{
   width = 8,
   height = 24,
   pattern = "1494",
-}
-
-tile{
-  layer = 2,
-  x = 1048,
-  y = 256,
-  width = 32,
-  height = 32,
-  pattern = "630",
 }
 

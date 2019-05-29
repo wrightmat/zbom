@@ -3936,7 +3936,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 464,
+  x = 480,
   y = 672,
   width = 144,
   height = 16,
@@ -3954,7 +3954,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 456,
+  x = 472,
   y = 664,
   width = 8,
   height = 16,
@@ -3963,7 +3963,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 472,
+  x = 488,
   y = 688,
   width = 32,
   height = 8,
@@ -3972,7 +3972,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 520,
+  x = 536,
   y = 688,
   width = 32,
   height = 8,
@@ -3981,7 +3981,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 568,
+  x = 584,
   y = 688,
   width = 32,
   height = 8,
@@ -3990,7 +3990,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 608,
+  x = 624,
   y = 664,
   width = 8,
   height = 16,
@@ -8274,7 +8274,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 464,
+  x = 480,
   y = 632,
   width = 144,
   height = 40,
@@ -8790,10 +8790,10 @@ dynamic_tile{
   layer = 0,
   x = 936,
   y = 248,
-  pattern = "2172",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "2172",
 }
 
 sensor{
@@ -9262,10 +9262,9 @@ dynamic_tile{
   layer = 0,
   x = 384,
   y = 632,
-  pattern = "1120",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1120",
 }
 
 dynamic_tile{
@@ -9273,10 +9272,9 @@ dynamic_tile{
   layer = 0,
   x = 936,
   y = 248,
-  pattern = "1120",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1120",
 }
 
 sensor{
@@ -9301,10 +9299,10 @@ dynamic_tile{
   layer = 0,
   x = 344,
   y = 632,
-  pattern = "2173",
+  enabled_at_start = false,
   width = 24,
   height = 16,
-  enabled_at_start = false,
+  pattern = "2173",
 }
 
 dynamic_tile{
@@ -9312,10 +9310,10 @@ dynamic_tile{
   layer = 0,
   x = 904,
   y = 248,
-  pattern = "2173",
+  enabled_at_start = false,
   width = 24,
   height = 16,
-  enabled_at_start = false,
+  pattern = "2173",
 }
 
 wall{
@@ -9550,10 +9548,10 @@ dynamic_tile{
   layer = 0,
   x = 176,
   y = 416,
-  pattern = "1120",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "1120",
 }
 
 dynamic_tile{
@@ -9561,10 +9559,10 @@ dynamic_tile{
   layer = 0,
   x = 160,
   y = 888,
-  pattern = "1120",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "1120",
 }
 
 dynamic_tile{
@@ -9572,10 +9570,10 @@ dynamic_tile{
   layer = 0,
   x = 720,
   y = 744,
-  pattern = "1120",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "1120",
 }
 
 dynamic_tile{
@@ -9583,10 +9581,10 @@ dynamic_tile{
   layer = 0,
   x = 1000,
   y = 528,
-  pattern = "1120",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "1120",
 }
 
 npc{
@@ -10876,7 +10874,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 464,
+  x = 480,
   y = 616,
   width = 144,
   height = 16,
@@ -10894,7 +10892,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 456,
+  x = 472,
   y = 624,
   width = 8,
   height = 40,
@@ -10903,7 +10901,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 608,
+  x = 624,
   y = 624,
   width = 8,
   height = 40,
@@ -12091,7 +12089,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 464,
+  x = 480,
   y = 632,
   width = 144,
   height = 40,

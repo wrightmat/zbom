@@ -41,15 +41,15 @@ function map:on_started(destination)
   end
   if game:get_value("i1029") == 3 then
     -- Wait until Link gets outside to declare the child dead.
-    -- that way when he goes back in the child will be gone from
+    -- That way when he goes back in the child will be gone from
     -- the bed and when he goes outside again the ghost will be there.
     npc_goron_ghost:remove()
     game:set_value("i1029", 4)
   elseif game:get_value("i1029") == 4 then
-    sol.audio.play_sound("ghost")
+    sol.audio.play_sound("ghost"); game:set_dialog_name("Ghost of Osgor")
     game:start_dialog("osgor.0.ghost", game:get_player_name(), function()
       game:set_value("i1029", 5)
-      -- start following hero
+      -- Start following hero.
       sol.audio.play_sound("ghost")
       local m = sol.movement.create("target")
       m:set_speed(32)
@@ -59,7 +59,7 @@ function map:on_started(destination)
       -- hero's on a map that has the ghost present).
       dialog_timer = sol.timer.start(game, 60000, function()
         if npc_goron_ghost ~= nil then
-          sol.audio.play_sound("ghost")
+          sol.audio.play_sound("ghost"); game:set_dialog_name("Ghost of Osgor")
           game:start_dialog("osgor.1.ghost", game:get_player_name())
           return true
         end

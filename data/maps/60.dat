@@ -2738,6 +2738,15 @@ custom_entity{
   model = "npc_generic",
 }
 
+wall{
+  layer = 0,
+  x = 0,
+  y = 632,
+  width = 48,
+  height = 8,
+  stops_enemies = true,
+}
+
 tile{
   layer = 1,
   x = 0,

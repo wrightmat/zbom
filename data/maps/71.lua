@@ -33,7 +33,7 @@ function map:on_started(destination)
     local sensor = map:get_entity(entrance_name .. "_door_sensor")
     sensor.on_activated_repeat = function()
       if hero:get_direction() == 3 then
-	sol.audio.play_music("gerudo")
+        sol.audio.play_music("gerudo")
       end
     end
   end

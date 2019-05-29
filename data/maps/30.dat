@@ -13,6 +13,24 @@ properties{
 tile{
   layer = 0,
   x = 0,
+  y = 928,
+  width = 704,
+  height = 192,
+  pattern = "1765",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 1000,
+  width = 8,
+  height = 120,
+  pattern = "275",
+}
+
+tile{
+  layer = 0,
+  x = 0,
   y = 32,
   width = 512,
   height = 112,
@@ -44,24 +62,6 @@ tile{
   width = 32,
   height = 32,
   pattern = "212",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 928,
-  width = 704,
-  height = 192,
-  pattern = "1765",
-}
-
-tile{
-  layer = 0,
-  x = 496,
-  y = 984,
-  width = 16,
-  height = 144,
-  pattern = "1945",
 }
 
 tile{
@@ -3059,6 +3059,15 @@ tile{
   width = 32,
   height = 32,
   pattern = "212",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 48,
+  width = 496,
+  height = 8,
+  pattern = "1361",
 }
 
 teletransporter{

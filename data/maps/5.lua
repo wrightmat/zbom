@@ -40,6 +40,7 @@ function map:on_started(destination)
   if game:get_value("i1029") == 2 and destination == from_outside_house_sick then
     sol.timer.start(1000, function()
       hero:freeze()
+      game:set_dialog_name("Dargor"); game:set_dialog_position("top")
       game:start_dialog("dargor.3.house", game:get_player_name(), function()
         np2_galen:get_sprite():set_animation("walking")
         local m = sol.movement.create("target")
@@ -50,11 +51,12 @@ function map:on_started(destination)
           np2_galen:get_sprite():set_direction(2) -- Left / West
           sol.timer.start(2000, function()
             np2_galen:get_sprite():set_direction(0) -- Right / East
+            game:set_dialog_name("Galen"); game:set_dialog_position("bottom")
             game:start_dialog("galen.2.house", game:get_player_name(), function()
               np2_galen:get_sprite():set_animation("walking")
               local m2 = sol.movement.create("target")
               m2:set_target(160, 461)
-              m:set_speed(16)
+              m2:set_speed(48)
               m2:start(np2_galen, function()
                 np2_galen:remove()
                 hero:unfreeze()
@@ -145,6 +147,7 @@ npc_bomro:register_event("on_interaction", function()
       if answer == 1 then -- Yes
         if game:get_money() >= 300 then
           hero:start_treasure("bomb_bag")
+          game:set_value("b2017", true)
           game:remove_money(300)
         else
           game:start_dialog("shopkeep.1")

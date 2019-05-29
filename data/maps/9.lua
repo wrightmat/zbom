@@ -44,6 +44,7 @@ npc_rudy:register_event("on_interaction", function()
   elseif game:get_value("i1841") == 4 then
     if game:get_value("i1902") >= 5 then
       game:start_dialog("rudy.5.sword_working")
+      npc_rudy:get_sprite():set_direction(3)
     else
       -- Has Master Ore - offer to upgrade sword
       game:start_dialog("rudy.5.sword", function(answer)
