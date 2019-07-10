@@ -5149,6 +5149,15 @@ tile{
   pattern = "153",
 }
 
+tile{
+  layer = 0,
+  x = 1024,
+  y = 424,
+  width = 16,
+  height = 16,
+  pattern = "1450",
+}
+
 teletransporter{
   name = "to_J2",
   layer = 0,
@@ -5300,6 +5309,18 @@ teletransporter{
   height = 16,
   destination_map = "172",
   destination = "from_outside",
+}
+
+custom_entity{
+  name = "flag_2",
+  layer = 0,
+  x = 1032,
+  y = 429,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/flag_goron",
+  model = "flag",
 }
 
 tile{

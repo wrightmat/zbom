@@ -6,6 +6,7 @@ local game = map:get_game()
 ---------------------------------------------------------------------------
 
 local band_playing = game:get_value("b1231")
+if game:get_value("i1230") == nil then game:set_value("i1230", 0) end
 
 function map:on_started()
   if game:get_value("i1230") >= 1 then

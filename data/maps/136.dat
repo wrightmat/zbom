@@ -2584,6 +2584,24 @@ tile{
   pattern = "527",
 }
 
+tile{
+  layer = 0,
+  x = 72,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "1450",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "1450",
+}
+
 teletransporter{
   name = "to_M2",
   layer = 0,
@@ -2824,6 +2842,30 @@ wall{
   stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
+}
+
+custom_entity{
+  name = "flag_4",
+  layer = 0,
+  x = 80,
+  y = 61,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/flag_gerudo",
+  model = "flag",
+}
+
+custom_entity{
+  name = "flag_5",
+  layer = 0,
+  x = 424,
+  y = 61,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/flag_gerudo",
+  model = "flag",
 }
 
 tile{

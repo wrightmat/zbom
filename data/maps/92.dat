@@ -3064,7 +3064,7 @@ tile{
 tile{
   layer = 0,
   x = 464,
-  y = 552,
+  y = 568,
   width = 48,
   height = 16,
   pattern = "1587",
@@ -3073,7 +3073,7 @@ tile{
 tile{
   layer = 0,
   x = 480,
-  y = 568,
+  y = 584,
   width = 16,
   height = 8,
   pattern = "1588",
@@ -3082,7 +3082,7 @@ tile{
 tile{
   layer = 0,
   x = 456,
-  y = 544,
+  y = 560,
   width = 8,
   height = 16,
   pattern = "1586",
@@ -3091,7 +3091,7 @@ tile{
 tile{
   layer = 0,
   x = 512,
-  y = 544,
+  y = 560,
   width = 8,
   height = 16,
   pattern = "1589",
@@ -3100,7 +3100,7 @@ tile{
 tile{
   layer = 0,
   x = 464,
-  y = 512,
+  y = 528,
   width = 48,
   height = 40,
   pattern = "522",
@@ -4501,6 +4501,51 @@ tile{
   pattern = "235",
 }
 
+tile{
+  layer = 0,
+  x = 200,
+  y = 920,
+  width = 16,
+  height = 16,
+  pattern = "1450",
+}
+
+tile{
+  layer = 0,
+  x = 712,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "1450",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 480,
+  width = 16,
+  height = 16,
+  pattern = "1450",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 480,
+  width = 16,
+  height = 16,
+  pattern = "1450",
+}
+
+tile{
+  layer = 0,
+  x = 920,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "1450",
+}
+
 teletransporter{
   name = "to_B1",
   layer = 0,
@@ -4595,6 +4640,66 @@ teletransporter{
   height = 16,
   destination_map = "8",
   destination = "enter_ruto_3",
+}
+
+custom_entity{
+  name = "flag_1",
+  layer = 0,
+  x = 208,
+  y = 925,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/flag_zora",
+  model = "flag",
+}
+
+custom_entity{
+  name = "flag_2",
+  layer = 0,
+  x = 720,
+  y = 469,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/flag_zora",
+  model = "flag",
+}
+
+custom_entity{
+  name = "flag_3",
+  layer = 0,
+  x = 200,
+  y = 485,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/flag_zora",
+  model = "flag",
+}
+
+custom_entity{
+  name = "flag_4",
+  layer = 0,
+  x = 472,
+  y = 485,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/flag_zora",
+  model = "flag",
+}
+
+custom_entity{
+  name = "flag_5",
+  layer = 0,
+  x = 928,
+  y = 133,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/flag_zora",
+  model = "flag",
 }
 
 tile{
@@ -4755,10 +4860,10 @@ dynamic_tile{
   layer = 1,
   x = 56,
   y = 744,
-  pattern = "247",
+  enabled_at_start = false,
   width = 16,
   height = 32,
-  enabled_at_start = false,
+  pattern = "247",
 }
 
 dynamic_tile{
@@ -4766,10 +4871,10 @@ dynamic_tile{
   layer = 1,
   x = 48,
   y = 744,
-  pattern = "248",
+  enabled_at_start = false,
   width = 8,
   height = 24,
-  enabled_at_start = false,
+  pattern = "248",
 }
 
 dynamic_tile{
@@ -4777,10 +4882,10 @@ dynamic_tile{
   layer = 1,
   x = 72,
   y = 744,
-  pattern = "249",
+  enabled_at_start = false,
   width = 8,
   height = 24,
-  enabled_at_start = false,
+  pattern = "249",
 }
 
 dynamic_tile{
@@ -4788,10 +4893,10 @@ dynamic_tile{
   layer = 1,
   x = 568,
   y = 584,
-  pattern = "247",
+  enabled_at_start = false,
   width = 16,
   height = 32,
-  enabled_at_start = false,
+  pattern = "247",
 }
 
 dynamic_tile{
@@ -4799,10 +4904,10 @@ dynamic_tile{
   layer = 1,
   x = 560,
   y = 584,
-  pattern = "248",
+  enabled_at_start = false,
   width = 8,
   height = 24,
-  enabled_at_start = false,
+  pattern = "248",
 }
 
 dynamic_tile{
@@ -4810,10 +4915,10 @@ dynamic_tile{
   layer = 1,
   x = 584,
   y = 584,
-  pattern = "249",
+  enabled_at_start = false,
   width = 8,
   height = 24,
-  enabled_at_start = false,
+  pattern = "249",
 }
 
 dynamic_tile{
@@ -4821,10 +4926,10 @@ dynamic_tile{
   layer = 1,
   x = 392,
   y = 504,
-  pattern = "247",
+  enabled_at_start = false,
   width = 16,
   height = 32,
-  enabled_at_start = false,
+  pattern = "247",
 }
 
 dynamic_tile{
@@ -4832,10 +4937,10 @@ dynamic_tile{
   layer = 1,
   x = 384,
   y = 504,
-  pattern = "248",
+  enabled_at_start = false,
   width = 8,
   height = 24,
-  enabled_at_start = false,
+  pattern = "248",
 }
 
 dynamic_tile{
@@ -4843,10 +4948,10 @@ dynamic_tile{
   layer = 1,
   x = 408,
   y = 504,
-  pattern = "249",
+  enabled_at_start = false,
   width = 8,
   height = 24,
-  enabled_at_start = false,
+  pattern = "249",
 }
 
 dynamic_tile{
@@ -4854,10 +4959,10 @@ dynamic_tile{
   layer = 1,
   x = 272,
   y = 504,
-  pattern = "247",
+  enabled_at_start = false,
   width = 16,
   height = 32,
-  enabled_at_start = false,
+  pattern = "247",
 }
 
 dynamic_tile{
@@ -4865,10 +4970,10 @@ dynamic_tile{
   layer = 1,
   x = 264,
   y = 504,
-  pattern = "248",
+  enabled_at_start = false,
   width = 8,
   height = 24,
-  enabled_at_start = false,
+  pattern = "248",
 }
 
 dynamic_tile{
@@ -4876,10 +4981,10 @@ dynamic_tile{
   layer = 1,
   x = 288,
   y = 504,
-  pattern = "249",
+  enabled_at_start = false,
   width = 8,
   height = 24,
-  enabled_at_start = false,
+  pattern = "249",
 }
 
 dynamic_tile{
@@ -4887,10 +4992,10 @@ dynamic_tile{
   layer = 1,
   x = 768,
   y = 280,
-  pattern = "247",
+  enabled_at_start = false,
   width = 16,
   height = 32,
-  enabled_at_start = false,
+  pattern = "247",
 }
 
 dynamic_tile{
@@ -4898,10 +5003,10 @@ dynamic_tile{
   layer = 1,
   x = 760,
   y = 280,
-  pattern = "248",
+  enabled_at_start = false,
   width = 8,
   height = 24,
-  enabled_at_start = false,
+  pattern = "248",
 }
 
 dynamic_tile{
@@ -4909,10 +5014,10 @@ dynamic_tile{
   layer = 1,
   x = 784,
   y = 280,
-  pattern = "249",
+  enabled_at_start = false,
   width = 8,
   height = 24,
-  enabled_at_start = false,
+  pattern = "249",
 }
 
 dynamic_tile{
@@ -4920,10 +5025,10 @@ dynamic_tile{
   layer = 1,
   x = 968,
   y = 48,
-  pattern = "247",
+  enabled_at_start = false,
   width = 16,
   height = 32,
-  enabled_at_start = false,
+  pattern = "247",
 }
 
 dynamic_tile{
@@ -4931,10 +5036,10 @@ dynamic_tile{
   layer = 1,
   x = 960,
   y = 48,
-  pattern = "248",
+  enabled_at_start = false,
   width = 8,
   height = 24,
-  enabled_at_start = false,
+  pattern = "248",
 }
 
 dynamic_tile{
@@ -4942,10 +5047,10 @@ dynamic_tile{
   layer = 1,
   x = 984,
   y = 48,
-  pattern = "249",
+  enabled_at_start = false,
   width = 8,
   height = 24,
-  enabled_at_start = false,
+  pattern = "249",
 }
 
 tile{
@@ -5059,7 +5164,7 @@ tile{
 tile{
   layer = 2,
   x = 512,
-  y = 504,
+  y = 520,
   width = 8,
   height = 40,
   pattern = "520",
@@ -5068,7 +5173,7 @@ tile{
 tile{
   layer = 2,
   x = 456,
-  y = 504,
+  y = 520,
   width = 8,
   height = 40,
   pattern = "519",
@@ -5077,7 +5182,7 @@ tile{
 tile{
   layer = 2,
   x = 464,
-  y = 496,
+  y = 512,
   width = 48,
   height = 16,
   pattern = "521",
@@ -5914,7 +6019,7 @@ tile{
 tile{
   layer = 2,
   x = 464,
-  y = 512,
+  y = 528,
   width = 48,
   height = 40,
   pattern = "522",

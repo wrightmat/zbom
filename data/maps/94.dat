@@ -2638,6 +2638,15 @@ tile{
   pattern = "10",
 }
 
+tile{
+  layer = 0,
+  x = 328,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "1450",
+}
+
 teletransporter{
   name = "to_B3",
   layer = 0,
@@ -2764,6 +2773,18 @@ enemy{
   direction = 3,
   breed = "zola",
   treasure_name = "random_enemy",
+}
+
+custom_entity{
+  name = "flag_2",
+  layer = 0,
+  x = 336,
+  y = 69,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/flag_zora",
+  model = "flag",
 }
 
 tile{

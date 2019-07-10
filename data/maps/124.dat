@@ -1405,15 +1405,51 @@ tile{
   pattern = "1656",
 }
 
+tile{
+  layer = 0,
+  x = 104,
+  y = 832,
+  width = 16,
+  height = 16,
+  pattern = "1450",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 960,
+  width = 16,
+  height = 16,
+  pattern = "1450",
+}
+
+tile{
+  layer = 0,
+  x = 1000,
+  y = 280,
+  width = 16,
+  height = 16,
+  pattern = "1450",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "1450",
+}
+
 dynamic_tile{
   name = "night_entrance_2",
   layer = 0,
   x = 912,
   y = 536,
-  pattern = "241",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "241",
 }
 
 dynamic_tile{
@@ -1421,10 +1457,10 @@ dynamic_tile{
   layer = 0,
   x = 224,
   y = 520,
-  pattern = "241",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "241",
 }
 
 teletransporter{
@@ -1826,6 +1862,54 @@ teletransporter{
   height = 16,
   destination_map = "9",
   destination = "enter_darunia_3",
+}
+
+custom_entity{
+  name = "flag_2",
+  layer = 0,
+  x = 112,
+  y = 837,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/flag_goron",
+  model = "flag",
+}
+
+custom_entity{
+  name = "flag_3",
+  layer = 0,
+  x = 1048,
+  y = 965,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/flag_goron",
+  model = "flag",
+}
+
+custom_entity{
+  name = "flag_4",
+  layer = 0,
+  x = 1008,
+  y = 285,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/flag_goron",
+  model = "flag",
+}
+
+custom_entity{
+  name = "flag_5",
+  layer = 0,
+  x = 128,
+  y = 421,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/flag_goron",
+  model = "flag",
 }
 
 npc{

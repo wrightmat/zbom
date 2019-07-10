@@ -2206,6 +2206,24 @@ tile{
   pattern = "1700",
 }
 
+tile{
+  layer = 0,
+  x = 88,
+  y = 536,
+  width = 16,
+  height = 16,
+  pattern = "1450",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "1450",
+}
+
 teletransporter{
   name = "to_N3",
   layer = 0,
@@ -2464,6 +2482,30 @@ npc{
   subtype = 0,
   sprite = "entities/torch_metal",
   behavior = "item#lamp",
+}
+
+custom_entity{
+  name = "flag_4",
+  layer = 0,
+  x = 96,
+  y = 541,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/flag_gerudo",
+  model = "flag",
+}
+
+custom_entity{
+  name = "flag_5",
+  layer = 0,
+  x = 104,
+  y = 85,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/flag_gerudo",
+  model = "flag",
 }
 
 tile{

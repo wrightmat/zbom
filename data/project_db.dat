@@ -187,7 +187,7 @@ map{ id = "93", description = "Outside C2 (Ruto Town)" }
 map{ id = "94", description = "Outside C3 (Calatia Outskirts/Ruto Town)" }
 map{ id = "95", description = "Outside C4 (Calatia Outskirts)" }
 map{ id = "96", description = "Outside D1 (Zola Settlement/Northern Waters)" }
-map{ id = "97", description = "Outside D2 (Ruto Town/Ruto Peaks)" }
+map{ id = "97", description = "Outside D2 (Ruto Peaks)" }
 map{ id = "98", description = "Outside D3 (Midoro Palace)" }
 map{ id = "99", description = "Outside D4 (Moruge Swamp)" }
 
@@ -390,6 +390,9 @@ sprite{ id = "entities/fire_burst", description = "Fire (burst)" }
 sprite{ id = "entities/fire_small", description = "Fire (small)" }
 sprite{ id = "entities/fireworks_shell", description = "Fireworks (aerial shell)" }
 sprite{ id = "entities/fireworks_shower", description = "Fireworks (ground shower)" }
+sprite{ id = "entities/flag_gerudo", description = "Gerudo Flag" }
+sprite{ id = "entities/flag_goron", description = "Goron Flag" }
+sprite{ id = "entities/flag_zora", description = "Zora Flag" }
 sprite{ id = "entities/grass", description = "Grass" }
 sprite{ id = "entities/ground_effects", description = "Ground Effects" }
 sprite{ id = "entities/hammer_stake", description = "Hammer Stake" }
@@ -1019,6 +1022,7 @@ enemy{ id = "zola", description = "Zola" }
 
 entity{ id = "arrow", description = "Arrow" }
 entity{ id = "butterfly", description = "Butterfly" }
+entity{ id = "flag", description = "Flag" }
 entity{ id = "generic_flying_pickable", description = "Generic Flying Pickable" }
 entity{ id = "generic_portable", description = "Generic Portable" }
 entity{ id = "hammer_stake", description = "Hammer Stake" }

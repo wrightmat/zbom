@@ -4231,6 +4231,24 @@ tile{
   pattern = "327",
 }
 
+tile{
+  layer = 0,
+  x = 48,
+  y = 928,
+  width = 16,
+  height = 16,
+  pattern = "1450",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "1450",
+}
+
 teletransporter{
   name = "to_D3",
   layer = 0,
@@ -4277,5 +4295,29 @@ teletransporter{
   transition = "scrolling",
   destination_map = "96",
   destination = "_side",
+}
+
+custom_entity{
+  name = "flag_2",
+  layer = 0,
+  x = 56,
+  y = 933,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/flag_zora",
+  model = "flag",
+}
+
+custom_entity{
+  name = "flag_3",
+  layer = 0,
+  x = 56,
+  y = 469,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/flag_zora",
+  model = "flag",
 }
 

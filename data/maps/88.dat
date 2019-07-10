@@ -2719,6 +2719,69 @@ tile{
   pattern = "245",
 }
 
+tile{
+  layer = 0,
+  x = 1024,
+  y = 328,
+  width = 16,
+  height = 16,
+  pattern = "1450",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 848,
+  width = 16,
+  height = 16,
+  pattern = "1450",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 584,
+  width = 16,
+  height = 8,
+  pattern = "36",
+}
+
+tile{
+  layer = 0,
+  x = 984,
+  y = 1056,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 240,
+  width = 16,
+  height = 8,
+  pattern = "36",
+}
+
+tile{
+  layer = 0,
+  x = 1016,
+  y = 88,
+  width = 8,
+  height = 8,
+  pattern = "546",
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 736,
+  width = 8,
+  height = 8,
+  pattern = "545",
+}
+
 teletransporter{
   name = "to_A1",
   layer = 0,
@@ -2900,6 +2963,30 @@ custom_entity{
   direction = 0,
   sprite = "entities/soil_snow",
   model = "soil",
+}
+
+custom_entity{
+  name = "flag_1",
+  layer = 0,
+  x = 1032,
+  y = 333,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/flag_zora",
+  model = "flag",
+}
+
+custom_entity{
+  name = "flag_2",
+  layer = 0,
+  x = 1016,
+  y = 853,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/flag_zora",
+  model = "flag",
 }
 
 tile{
