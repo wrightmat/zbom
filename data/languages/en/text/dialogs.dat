@@ -2150,6 +2150,36 @@ to$gRudy$wto see what he can do with it.
 }
 
 dialog{
+  id = "_quests.i1653.1",
+  text = [[
+Big Dreams:
+Garroth, the bartender in Kakariko, has
+asked you to help him gather Alchemy
+Stones for... a project.
+]],
+}
+
+dialog{
+  id = "_quests.i1653.2",
+  text = [[
+Big Dreams:
+Garroth still needs more Alchemy
+Stones. Return when you have at least
+as many as you gave him last time.
+]],
+}
+
+dialog{
+  id = "_quests.i1653.3",
+  text = [[
+Big Dreams:
+Keep looking for Garroth's Alchemy
+Stones. Hopefully he has something
+good to give in return!
+]],
+}
+
+dialog{
   id = "_quests.i1807.1",
   text = [[
 Book of Mudora:
@@ -3375,16 +3405,6 @@ dialog{
 You found a$rGoddess Plume$w!
 This is a legendary treasure
 few will ever behold!
-]],
-}
-
-dialog{
-  id = "_treasure.poe_soul.1",
-  icon = "82",
-  skip = "current",
-  text = [[
-You got a Poe Soul! Some say they
-have useful knowledge...
 ]],
 }
 
