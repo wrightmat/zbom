@@ -1308,15 +1308,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 232,
-  y = 40,
-  width = 48,
-  height = 16,
-  pattern = "559",
-}
-
-tile{
-  layer = 0,
   x = 56,
   y = 256,
   width = 8,
@@ -2352,15 +2343,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 416,
-  y = 88,
-  width = 16,
-  height = 16,
-  pattern = "141",
-}
-
-tile{
-  layer = 0,
   x = 768,
   y = 240,
   width = 32,
@@ -2604,7 +2586,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1280,
+  x = 1304,
   y = 448,
   width = 64,
   height = 32,
@@ -2613,16 +2595,16 @@ tile{
 
 tile{
   layer = 0,
-  x = 1136,
+  x = 1104,
   y = 472,
-  width = 176,
+  width = 240,
   height = 144,
   pattern = "483",
 }
 
 tile{
   layer = 0,
-  x = 1112,
+  x = 1080,
   y = 464,
   width = 40,
   height = 8,
@@ -2631,7 +2613,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1112,
+  x = 1080,
   y = 456,
   width = 48,
   height = 8,
@@ -2640,44 +2622,44 @@ tile{
 
 tile{
   layer = 0,
-  x = 1112,
+  x = 1080,
   y = 448,
-  width = 168,
+  width = 224,
   height = 8,
   pattern = "677",
 }
 
 tile{
   layer = 0,
-  x = 1144,
+  x = 1112,
   y = 448,
-  width = 160,
+  width = 224,
   height = 32,
   pattern = "151",
 }
 
 tile{
   layer = 0,
-  x = 1112,
+  x = 1080,
   y = 624,
-  width = 232,
+  width = 248,
   height = 16,
   pattern = "677",
 }
 
 tile{
   layer = 0,
-  x = 1320,
+  x = 1344,
   y = 480,
   width = 24,
-  height = 112,
+  height = 128,
   pattern = "677",
 }
 
 tile{
   layer = 0,
-  x = 1304,
-  y = 592,
+  x = 1328,
+  y = 608,
   width = 40,
   height = 32,
   pattern = "677",
@@ -2685,7 +2667,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1112,
+  x = 1080,
   y = 608,
   width = 40,
   height = 16,
@@ -2694,7 +2676,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1112,
+  x = 1080,
   y = 480,
   width = 16,
   height = 128,
@@ -2703,7 +2685,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1112,
+  x = 1080,
   y = 472,
   width = 32,
   height = 8,
@@ -2748,7 +2730,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1208,
+  x = 1200,
   y = 472,
   width = 32,
   height = 40,
@@ -2759,16 +2741,16 @@ tile{
   layer = 0,
   x = 1240,
   y = 608,
-  width = 64,
+  width = 96,
   height = 32,
   pattern = "150",
 }
 
 tile{
   layer = 0,
-  x = 1144,
+  x = 1112,
   y = 608,
-  width = 64,
+  width = 96,
   height = 32,
   pattern = "150",
 }
@@ -2793,7 +2775,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1112,
+  x = 1080,
   y = 608,
   width = 32,
   height = 32,
@@ -2802,7 +2784,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1112,
+  x = 1080,
   y = 480,
   width = 32,
   height = 128,
@@ -2811,7 +2793,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1112,
+  x = 1080,
   y = 448,
   width = 32,
   height = 32,
@@ -2820,7 +2802,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1304,
+  x = 1336,
   y = 448,
   width = 32,
   height = 32,
@@ -2829,7 +2811,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1304,
+  x = 1336,
   y = 608,
   width = 32,
   height = 32,
@@ -2856,44 +2838,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 1144,
-  y = 464,
-  width = 16,
-  height = 32,
-  pattern = "42",
-}
-
-tile{
-  layer = 0,
-  x = 1160,
-  y = 464,
-  width = 16,
-  height = 32,
-  pattern = "44",
-}
-
-tile{
-  layer = 0,
-  x = 1176,
-  y = 464,
-  width = 16,
-  height = 32,
-  pattern = "43",
-}
-
-tile{
-  layer = 0,
   x = 1240,
-  y = 480,
-  width = 16,
-  height = 16,
-  pattern = "12",
-}
-
-tile{
-  layer = 0,
-  x = 1272,
-  y = 528,
+  y = 456,
   width = 24,
   height = 40,
   pattern = "412",
@@ -2901,29 +2847,20 @@ tile{
 
 tile{
   layer = 0,
-  x = 1272,
-  y = 480,
-  width = 32,
-  height = 16,
-  pattern = "485",
-}
-
-tile{
-  layer = 0,
-  x = 1144,
+  x = 1192,
   y = 592,
-  width = 32,
+  width = 16,
   height = 16,
   pattern = "485",
 }
 
 tile{
   layer = 0,
-  x = 1176,
-  y = 536,
-  width = 24,
-  height = 24,
-  pattern = "572",
+  x = 1184,
+  y = 480,
+  width = 16,
+  height = 32,
+  pattern = "485",
 }
 
 tile{
@@ -10686,15 +10623,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 296,
-  y = 40,
-  width = 40,
-  height = 16,
-  pattern = "426",
-}
-
-tile{
-  layer = 0,
   x = 2000,
   y = 472,
   width = 80,
@@ -11107,15 +11035,220 @@ tile{
   pattern = "491",
 }
 
+tile{
+  layer = 0,
+  x = 1120,
+  y = 480,
+  width = 16,
+  height = 16,
+  pattern = "497",
+}
+
+tile{
+  layer = 0,
+  x = 1120,
+  y = 512,
+  width = 16,
+  height = 16,
+  pattern = "497",
+}
+
+tile{
+  layer = 0,
+  x = 1120,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "497",
+}
+
+tile{
+  layer = 0,
+  x = 1120,
+  y = 576,
+  width = 16,
+  height = 16,
+  pattern = "497",
+}
+
+tile{
+  layer = 0,
+  x = 1152,
+  y = 480,
+  width = 16,
+  height = 16,
+  pattern = "497",
+}
+
+tile{
+  layer = 0,
+  x = 1152,
+  y = 512,
+  width = 16,
+  height = 16,
+  pattern = "497",
+}
+
+tile{
+  layer = 0,
+  x = 1152,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "497",
+}
+
+tile{
+  layer = 0,
+  x = 1152,
+  y = 576,
+  width = 16,
+  height = 16,
+  pattern = "497",
+}
+
+tile{
+  layer = 0,
+  x = 1280,
+  y = 480,
+  width = 16,
+  height = 16,
+  pattern = "497",
+}
+
+tile{
+  layer = 0,
+  x = 1280,
+  y = 512,
+  width = 16,
+  height = 16,
+  pattern = "497",
+}
+
+tile{
+  layer = 0,
+  x = 1280,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "497",
+}
+
+tile{
+  layer = 0,
+  x = 1280,
+  y = 576,
+  width = 16,
+  height = 16,
+  pattern = "497",
+}
+
+tile{
+  layer = 0,
+  x = 1312,
+  y = 480,
+  width = 16,
+  height = 16,
+  pattern = "497",
+}
+
+tile{
+  layer = 0,
+  x = 1312,
+  y = 512,
+  width = 16,
+  height = 16,
+  pattern = "497",
+}
+
+tile{
+  layer = 0,
+  x = 1312,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "497",
+}
+
+tile{
+  layer = 0,
+  x = 1312,
+  y = 576,
+  width = 16,
+  height = 16,
+  pattern = "497",
+}
+
+tile{
+  layer = 0,
+  x = 1240,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "485",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 40,
+  width = 48,
+  height = 32,
+  pattern = "498",
+}
+
+custom_entity{
+  name = "plant_baba",
+  layer = 0,
+  x = 1128,
+  y = 485,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/quest_plants",
+}
+
+custom_entity{
+  name = "plant_corydalis",
+  layer = 0,
+  x = 1128,
+  y = 517,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/quest_plants",
+}
+
+custom_entity{
+  name = "plant_deku",
+  layer = 0,
+  x = 1128,
+  y = 549,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/quest_plants",
+}
+
+custom_entity{
+  name = "plant_exotic",
+  layer = 0,
+  x = 1128,
+  y = 581,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/quest_plants",
+}
+
 dynamic_tile{
   name = "door",
   layer = 0,
   x = 408,
   y = 264,
-  pattern = "347",
   width = 32,
   height = 24,
-  enabled_at_start = true,
+  pattern = "347",
 }
 
 destination{
@@ -11430,10 +11563,10 @@ dynamic_tile{
   layer = 0,
   x = 472,
   y = 520,
-  pattern = "757",
+  enabled_at_start = false,
   width = 64,
   height = 24,
-  enabled_at_start = false,
+  pattern = "757",
 }
 
 npc{
@@ -11470,10 +11603,10 @@ dynamic_tile{
   layer = 0,
   x = 864,
   y = 168,
-  pattern = "709",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "709",
 }
 
 dynamic_tile{
@@ -11481,10 +11614,10 @@ dynamic_tile{
   layer = 0,
   x = 672,
   y = 168,
-  pattern = "708",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "708",
 }
 
 destructible{
@@ -11539,10 +11672,10 @@ dynamic_tile{
   layer = 0,
   x = 1248,
   y = 168,
-  pattern = "709",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "709",
 }
 
 dynamic_tile{
@@ -11550,10 +11683,10 @@ dynamic_tile{
   layer = 0,
   x = 1056,
   y = 168,
-  pattern = "708",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "708",
 }
 
 destructible{
@@ -11655,25 +11788,7 @@ destination{
 
 destructible{
   layer = 0,
-  x = 1296,
-  y = 493,
-  treasure_name = "random_north",
-  sprite = "entities/pot",
-  destruction_sound = "stone",
-}
-
-destructible{
-  layer = 0,
-  x = 1280,
-  y = 493,
-  treasure_name = "random_north",
-  sprite = "entities/pot",
-  destruction_sound = "stone",
-}
-
-destructible{
-  layer = 0,
-  x = 1152,
+  x = 1248,
   y = 605,
   treasure_name = "random_north",
   sprite = "entities/pot",
@@ -11682,8 +11797,26 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 1168,
+  x = 1200,
   y = 605,
+  treasure_name = "random_north",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 1192,
+  y = 493,
+  treasure_name = "random_north",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 1192,
+  y = 509,
   treasure_name = "random_north",
   sprite = "entities/pot",
   destruction_sound = "stone",
@@ -11704,10 +11837,10 @@ dynamic_tile{
   layer = 0,
   x = 32,
   y = 112,
-  pattern = "708",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "708",
 }
 
 dynamic_tile{
@@ -11715,10 +11848,10 @@ dynamic_tile{
   layer = 0,
   x = 32,
   y = 176,
-  pattern = "708",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "708",
 }
 
 dynamic_tile{
@@ -11726,10 +11859,10 @@ dynamic_tile{
   layer = 0,
   x = 480,
   y = 96,
-  pattern = "709",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "709",
 }
 
 dynamic_tile{
@@ -11737,10 +11870,10 @@ dynamic_tile{
   layer = 0,
   x = 480,
   y = 160,
-  pattern = "709",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "709",
 }
 
 dynamic_tile{
@@ -11748,10 +11881,10 @@ dynamic_tile{
   layer = 0,
   x = 88,
   y = 256,
-  pattern = "707",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "707",
 }
 
 dynamic_tile{
@@ -11759,10 +11892,10 @@ dynamic_tile{
   layer = 0,
   x = 240,
   y = 256,
-  pattern = "707",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "707",
 }
 
 dynamic_tile{
@@ -11770,10 +11903,10 @@ dynamic_tile{
   layer = 0,
   x = 328,
   y = 256,
-  pattern = "707",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "707",
 }
 
 npc{
@@ -11848,10 +11981,10 @@ dynamic_tile{
   layer = 0,
   x = 1632,
   y = 168,
-  pattern = "709",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "709",
 }
 
 dynamic_tile{
@@ -11859,10 +11992,10 @@ dynamic_tile{
   layer = 0,
   x = 1440,
   y = 168,
-  pattern = "708",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "708",
 }
 
 dynamic_tile{
@@ -11870,10 +12003,10 @@ dynamic_tile{
   layer = 0,
   x = 2016,
   y = 168,
-  pattern = "709",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "709",
 }
 
 dynamic_tile{
@@ -11881,10 +12014,10 @@ dynamic_tile{
   layer = 0,
   x = 1824,
   y = 168,
-  pattern = "708",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "708",
 }
 
 teletransporter{
@@ -11914,10 +12047,10 @@ dynamic_tile{
   layer = 0,
   x = 1504,
   y = 888,
-  pattern = "709",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "709",
 }
 
 dynamic_tile{
@@ -11925,10 +12058,10 @@ dynamic_tile{
   layer = 0,
   x = 1312,
   y = 888,
-  pattern = "708",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "708",
 }
 
 dynamic_tile{
@@ -11936,10 +12069,10 @@ dynamic_tile{
   layer = 0,
   x = 1672,
   y = 536,
-  pattern = "709",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "709",
 }
 
 dynamic_tile{
@@ -11947,10 +12080,10 @@ dynamic_tile{
   layer = 0,
   x = 1480,
   y = 536,
-  pattern = "708",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "708",
 }
 
 teletransporter{
@@ -12098,7 +12231,7 @@ npc{
 }
 
 custom_entity{
-  name = "book_deku",
+  name = "book_kokiri",
   layer = 0,
   x = 824,
   y = 581,
@@ -12159,10 +12292,10 @@ dynamic_tile{
   layer = 0,
   x = 1888,
   y = 888,
-  pattern = "709",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "709",
 }
 
 dynamic_tile{
@@ -12170,10 +12303,10 @@ dynamic_tile{
   layer = 0,
   x = 1696,
   y = 888,
-  pattern = "708",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "708",
 }
 
 destination{
@@ -12189,10 +12322,10 @@ dynamic_tile{
   layer = 0,
   x = 2152,
   y = 520,
-  pattern = "709",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "709",
 }
 
 dynamic_tile{
@@ -12200,10 +12333,10 @@ dynamic_tile{
   layer = 0,
   x = 1896,
   y = 520,
-  pattern = "708",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "708",
 }
 
 teletransporter{
@@ -12230,10 +12363,10 @@ dynamic_tile{
   layer = 0,
   x = 1896,
   y = 600,
-  pattern = "708",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "708",
 }
 
 dynamic_tile{
@@ -12241,10 +12374,10 @@ dynamic_tile{
   layer = 0,
   x = 2152,
   y = 600,
-  pattern = "709",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "709",
 }
 
 destination{
@@ -12697,6 +12830,455 @@ custom_entity{
   model = "npc_generic",
 }
 
+custom_entity{
+  name = "plant_flame",
+  layer = 0,
+  x = 1160,
+  y = 485,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/quest_plants",
+}
+
+custom_entity{
+  name = "plant_frost",
+  layer = 0,
+  x = 1160,
+  y = 517,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/quest_plants",
+}
+
+custom_entity{
+  name = "plant_gnarled",
+  layer = 0,
+  x = 1160,
+  y = 549,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/quest_plants",
+}
+
+custom_entity{
+  name = "plant_goponga",
+  layer = 0,
+  x = 1160,
+  y = 581,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/quest_plants",
+}
+
+custom_entity{
+  name = "plant_hibiscus",
+  layer = 0,
+  x = 1288,
+  y = 485,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/quest_plants",
+}
+
+custom_entity{
+  name = "plant_lavender",
+  layer = 0,
+  x = 1288,
+  y = 517,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/quest_plants",
+}
+
+custom_entity{
+  name = "plant_milkweed",
+  layer = 0,
+  x = 1288,
+  y = 549,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/quest_plants",
+}
+
+custom_entity{
+  name = "plant_mystical",
+  layer = 0,
+  x = 1288,
+  y = 581,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/quest_plants",
+}
+
+custom_entity{
+  name = "plant_pikit",
+  layer = 0,
+  x = 1320,
+  y = 485,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/quest_plants",
+}
+
+custom_entity{
+  name = "plant_sea",
+  layer = 0,
+  x = 1320,
+  y = 517,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/quest_plants",
+}
+
+custom_entity{
+  name = "plant_simple",
+  layer = 0,
+  x = 1320,
+  y = 549,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/quest_plants",
+}
+
+custom_entity{
+  name = "plant_town",
+  layer = 0,
+  x = 1320,
+  y = 581,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/quest_plants",
+}
+
+npc{
+  name = "pot_plant_corydalis",
+  layer = 0,
+  x = 1128,
+  y = 525,
+  direction = 3,
+  subtype = 0,
+}
+
+npc{
+  name = "pot_plant_deku",
+  layer = 0,
+  x = 1128,
+  y = 557,
+  direction = 3,
+  subtype = 0,
+}
+
+npc{
+  name = "pot_plant_exotic",
+  layer = 0,
+  x = 1128,
+  y = 589,
+  direction = 3,
+  subtype = 0,
+}
+
+npc{
+  name = "pot_plant_flame",
+  layer = 0,
+  x = 1160,
+  y = 493,
+  direction = 3,
+  subtype = 0,
+}
+
+npc{
+  name = "pot_plant_frost",
+  layer = 0,
+  x = 1160,
+  y = 525,
+  direction = 3,
+  subtype = 0,
+}
+
+npc{
+  name = "pot_plant_gnarled",
+  layer = 0,
+  x = 1160,
+  y = 557,
+  direction = 3,
+  subtype = 0,
+}
+
+npc{
+  name = "pot_plant_goponga",
+  layer = 0,
+  x = 1160,
+  y = 589,
+  direction = 3,
+  subtype = 0,
+}
+
+npc{
+  name = "pot_plant_hibiscus",
+  layer = 0,
+  x = 1288,
+  y = 493,
+  direction = 3,
+  subtype = 0,
+}
+
+npc{
+  name = "pot_plant_lavender",
+  layer = 0,
+  x = 1288,
+  y = 525,
+  direction = 3,
+  subtype = 0,
+}
+
+npc{
+  name = "pot_plant_milkweed",
+  layer = 0,
+  x = 1288,
+  y = 557,
+  direction = 3,
+  subtype = 0,
+}
+
+npc{
+  name = "pot_plant_mystical",
+  layer = 0,
+  x = 1288,
+  y = 589,
+  direction = 3,
+  subtype = 0,
+}
+
+npc{
+  name = "pot_plant_pikit",
+  layer = 0,
+  x = 1320,
+  y = 493,
+  direction = 3,
+  subtype = 0,
+}
+
+npc{
+  name = "pot_plant_sea",
+  layer = 0,
+  x = 1320,
+  y = 525,
+  direction = 3,
+  subtype = 0,
+}
+
+npc{
+  name = "pot_plant_simple",
+  layer = 0,
+  x = 1320,
+  y = 557,
+  direction = 3,
+  subtype = 0,
+}
+
+npc{
+  name = "pot_plant_town",
+  layer = 0,
+  x = 1320,
+  y = 589,
+  direction = 3,
+  subtype = 0,
+}
+
+npc{
+  name = "pot_plant_baba",
+  layer = 0,
+  x = 1128,
+  y = 493,
+  direction = 3,
+  subtype = 0,
+}
+
+custom_entity{
+  name = "bookshelf_ordon",
+  layer = 0,
+  x = 226,
+  y = 61,
+  width = 8,
+  height = 8,
+  direction = 0,
+  sprite = "entities/quest_bookshelf",
+}
+
+custom_entity{
+  name = "bookshelf_kokiri",
+  layer = 0,
+  x = 231,
+  y = 61,
+  width = 8,
+  height = 8,
+  direction = 0,
+  sprite = "entities/quest_bookshelf",
+}
+
+custom_entity{
+  name = "bookshelf_tokay",
+  layer = 0,
+  x = 236,
+  y = 61,
+  width = 8,
+  height = 8,
+  direction = 0,
+  sprite = "entities/quest_bookshelf",
+}
+
+custom_entity{
+  name = "bookshelf_gerudo",
+  layer = 0,
+  x = 241,
+  y = 61,
+  width = 8,
+  height = 8,
+  direction = 0,
+  sprite = "entities/quest_bookshelf",
+}
+
+custom_entity{
+  name = "bookshelf_hylian",
+  layer = 0,
+  x = 246,
+  y = 61,
+  width = 8,
+  height = 8,
+  direction = 0,
+  sprite = "entities/quest_bookshelf",
+}
+
+custom_entity{
+  name = "bookshelf_goron",
+  layer = 0,
+  x = 221,
+  y = 71,
+  width = 8,
+  height = 8,
+  direction = 0,
+  sprite = "entities/quest_bookshelf",
+}
+
+custom_entity{
+  name = "bookshelf_kakariko",
+  layer = 0,
+  x = 251,
+  y = 61,
+  width = 8,
+  height = 8,
+  direction = 0,
+  sprite = "entities/quest_bookshelf",
+}
+
+custom_entity{
+  name = "bookshelf_zora",
+  layer = 0,
+  x = 226,
+  y = 71,
+  width = 8,
+  height = 8,
+  direction = 0,
+  sprite = "entities/quest_bookshelf",
+}
+
+custom_entity{
+  name = "bookshelf_anouki",
+  layer = 0,
+  x = 231,
+  y = 71,
+  width = 8,
+  height = 8,
+  direction = 0,
+  sprite = "entities/quest_bookshelf",
+}
+
+custom_entity{
+  name = "bookshelf_rito",
+  layer = 0,
+  x = 236,
+  y = 71,
+  width = 8,
+  height = 8,
+  direction = 0,
+  sprite = "entities/quest_bookshelf",
+}
+
+custom_entity{
+  name = "bookshelf_zola",
+  layer = 0,
+  x = 251,
+  y = 71,
+  width = 8,
+  height = 8,
+  direction = 0,
+  sprite = "entities/quest_bookshelf",
+}
+
+custom_entity{
+  name = "bookshelf_rauru",
+  layer = 0,
+  x = 241,
+  y = 71,
+  width = 8,
+  height = 8,
+  direction = 0,
+  sprite = "entities/quest_bookshelf",
+}
+
+custom_entity{
+  name = "bookshelf_kasuto",
+  layer = 0,
+  x = 246,
+  y = 71,
+  width = 8,
+  height = 8,
+  direction = 0,
+  sprite = "entities/quest_bookshelf",
+}
+
+npc{
+  name = "shelf_quest",
+  layer = 0,
+  x = 232,
+  y = 69,
+  direction = 3,
+  subtype = 0,
+}
+
+custom_entity{
+  name = "book_zora",
+  layer = 0,
+  x = 3000,
+  y = 877,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/quest_books",
+  model = "quest_books",
+}
+
+tile{
+  layer = 1,
+  x = 288,
+  y = 40,
+  width = 40,
+  height = 16,
+  pattern = "426",
+}
+
 tile{
   layer = 1,
   x = 176,
@@ -12735,7 +13317,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 1304,
+  x = 1336,
   y = 480,
   width = 32,
   height = 128,
@@ -12789,7 +13371,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 304,
+  x = 296,
   y = 32,
   width = 8,
   height = 24,
@@ -12798,7 +13380,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 312,
+  x = 304,
   y = 32,
   width = 8,
   height = 24,
@@ -12807,20 +13389,11 @@ tile{
 
 tile{
   layer = 1,
-  x = 320,
+  x = 312,
   y = 32,
   width = 8,
   height = 24,
   pattern = "561",
-}
-
-tile{
-  layer = 1,
-  x = 248,
-  y = 32,
-  width = 16,
-  height = 24,
-  pattern = "567",
 }
 
 tile{
@@ -12840,6 +13413,15 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "entities/quest_bubble",
+}
+
+tile{
+  layer = 2,
+  x = 984,
+  y = 448,
+  width = 96,
+  height = 192,
+  pattern = "677",
 }
 
 tile{
@@ -12988,15 +13570,6 @@ tile{
 
 tile{
   layer = 2,
-  x = 984,
-  y = 448,
-  width = 128,
-  height = 192,
-  pattern = "677",
-}
-
-tile{
-  layer = 2,
   x = 1152,
   y = 280,
   width = 32,
@@ -13038,15 +13611,6 @@ tile{
   width = 48,
   height = 16,
   pattern = "751",
-}
-
-tile{
-  layer = 2,
-  x = 1176,
-  y = 528,
-  width = 24,
-  height = 8,
-  pattern = "573",
 }
 
 tile{
@@ -13168,9 +13732,9 @@ tile{
 
 tile{
   layer = 2,
-  x = 1344,
+  x = 1368,
   y = 448,
-  width = 136,
+  width = 112,
   height = 192,
   pattern = "677",
 }
