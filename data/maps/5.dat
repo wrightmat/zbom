@@ -2967,10 +2967,10 @@ dynamic_tile{
   layer = 0,
   x = 184,
   y = 776,
-  pattern = "680",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "680",
 }
 
 dynamic_tile{
@@ -2978,10 +2978,10 @@ dynamic_tile{
   layer = 0,
   x = 152,
   y = 472,
-  pattern = "680",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "680",
 }
 
 dynamic_tile{
@@ -2989,10 +2989,10 @@ dynamic_tile{
   layer = 0,
   x = 152,
   y = 200,
-  pattern = "680",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "680",
 }
 
 dynamic_tile{
@@ -3000,10 +3000,10 @@ dynamic_tile{
   layer = 0,
   x = 568,
   y = 472,
-  pattern = "680",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "680",
 }
 
 dynamic_tile{
@@ -3011,10 +3011,10 @@ dynamic_tile{
   layer = 0,
   x = 568,
   y = 200,
-  pattern = "680",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "680",
 }
 
 dynamic_tile{
@@ -3022,10 +3022,10 @@ dynamic_tile{
   layer = 0,
   x = 984,
   y = 472,
-  pattern = "680",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "680",
 }
 
 dynamic_tile{
@@ -3033,10 +3033,10 @@ dynamic_tile{
   layer = 0,
   x = 984,
   y = 200,
-  pattern = "680",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "680",
 }
 
 destination{
@@ -3216,7 +3216,7 @@ npc{
 destination{
   name = "inn_bed",
   layer = 0,
-  x = 1008,
+  x = 1000,
   y = 149,
   direction = 3,
 }
