@@ -1173,10 +1173,12 @@ tile_pattern{
   id = "204",
   ground = "traversable",
   default_layer = 1,
-  x = { 0, 16, 32, 16 },
-  y = { 240, 240, 240, 240 },
+  x = { 0, 16, 32 },
+  y = { 240, 240, 240 },
   width = 16,
   height = 16,
+  frame_delay = 250,
+  mirror_loop = true,
 }
 
 tile_pattern{
@@ -4370,6 +4372,26 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "493",
+  ground = "wall",
+  default_layer = 0,
+  x = 224,
+  y = 408,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "494",
+  ground = "traversable",
+  default_layer = 1,
+  x = 224,
+  y = 400,
+  width = 16,
+  height = 8,
+}
+
+tile_pattern{
   id = "495",
   ground = "traversable",
   default_layer = 0,
@@ -4387,6 +4409,26 @@ tile_pattern{
   y = 368,
   width = 8,
   height = 16,
+}
+
+tile_pattern{
+  id = "497",
+  ground = "wall",
+  default_layer = 0,
+  x = 224,
+  y = 424,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "498",
+  ground = "wall",
+  default_layer = 0,
+  x = 544,
+  y = 264,
+  width = 48,
+  height = 32,
 }
 
 tile_pattern{
@@ -5363,10 +5405,12 @@ tile_pattern{
   id = "617",
   ground = "prickles",
   default_layer = 0,
-  x = { 328, 328, 328, 328 },
-  y = { 312, 328, 344, 328 },
+  x = { 328, 328, 328 },
+  y = { 312, 328, 344 },
   width = 16,
   height = 16,
+  frame_delay = 250,
+  mirror_loop = true,
 }
 
 tile_pattern{

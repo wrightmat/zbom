@@ -15,7 +15,7 @@ function entity:on_created()
     entity:remove()
   end
   if entity:get_name() == "book_anouki" and game:get_value("b1616") then entity:remove() end
-    if entity:get_name() == "book_deku" and game:get_value("b1617") then entity:remove() end
+    if entity:get_name() == "book_kokiri" and game:get_value("b1617") then entity:remove() end
     if entity:get_name() == "book_gerudo" and game:get_value("b1618") then entity:remove() end
     if entity:get_name() == "book_goron" and game:get_value("b1619") then entity:remove() end
     if entity:get_name() == "book_hylian" and game:get_value("b1620") then entity:remove() end
@@ -47,7 +47,7 @@ function entity:on_interaction()
   game:start_dialog("library_shelf."..entity:get_name(), function()
     game:set_value("i1615", game:get_value("i1615")+1)
     if entity:get_name() == "book_anouki" then game:set_value("b1616", true) end
-    if entity:get_name() == "book_deku" then game:set_value("b1617", true) end
+    if entity:get_name() == "book_kokiri" then game:set_value("b1617", true) end
     if entity:get_name() == "book_gerudo" then game:set_value("b1618", true) end
     if entity:get_name() == "book_goron" then game:set_value("b1619", true) end
     if entity:get_name() == "book_hylian" then game:set_value("b1620", true) end
