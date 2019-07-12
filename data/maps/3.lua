@@ -178,7 +178,7 @@ function shop_poe_soul:on_interaction()
           local first_empty_bottle = game:get_first_empty_bottle()
           if not game:has_bottle() or first_empty_bottle == nil then
             -- The player has no bottle.
-	          self:get_game():start_dialog("found_fairy.no_empty_bottle")
+	          game:start_dialog("found_fairy.no_empty_bottle")
             sol.audio.play_sound("wrong")
           else
             -- ATTENTION: The treasure dialog "_treasure.poe_soul.1"
