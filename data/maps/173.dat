@@ -4834,6 +4834,28 @@ tile{
   pattern = "88",
 }
 
+tile{
+  layer = 0,
+  x = 136,
+  y = 704,
+  width = 8,
+  height = 8,
+  pattern = "100",
+}
+
+wall{
+  layer = 0,
+  x = 600,
+  y = 400,
+  width = 120,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
 switch{
   name = "switch_2",
   layer = 0,
@@ -4922,10 +4944,10 @@ dynamic_tile{
   layer = 0,
   x = 96,
   y = 864,
-  pattern = "208",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "208",
 }
 
 dynamic_tile{
@@ -4933,10 +4955,10 @@ dynamic_tile{
   layer = 0,
   x = 112,
   y = 864,
-  pattern = "210",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "210",
 }
 
 dynamic_tile{
@@ -4944,10 +4966,9 @@ dynamic_tile{
   layer = 0,
   x = 80,
   y = 680,
-  pattern = "134",
   width = 64,
   height = 192,
-  enabled_at_start = true,
+  pattern = "134",
 }
 
 jumper{
@@ -5027,10 +5048,9 @@ dynamic_tile{
   layer = 0,
   x = 144,
   y = 680,
-  pattern = "42",
   width = 16,
   height = 32,
-  enabled_at_start = true,
+  pattern = "42",
 }
 
 enemy{
@@ -5526,6 +5546,32 @@ enemy{
   direction = 0,
   breed = "chuchu_dark",
   treasure_name = "random_enemy",
+}
+
+wall{
+  layer = 0,
+  x = 632,
+  y = 408,
+  width = 16,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 680,
+  y = 408,
+  width = 16,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{
