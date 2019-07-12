@@ -2266,8 +2266,8 @@ enemy{
 enemy{
   name = "chuchu_5",
   layer = 0,
-  x = 720,
-  y = 885,
+  x = 696,
+  y = 829,
   direction = 0,
   breed = "chuchu_yellow",
 }
@@ -2275,8 +2275,8 @@ enemy{
 enemy{
   name = "chuchu_6",
   layer = 0,
-  x = 880,
-  y = 1045,
+  x = 1040,
+  y = 917,
   direction = 0,
   breed = "chuchu_yellow",
 }
@@ -2647,6 +2647,25 @@ custom_entity{
   direction = 0,
   sprite = "entities/tree_apple",
   model = "tree_apple",
+}
+
+destination{
+  name = "ocarina_warp",
+  layer = 0,
+  x = 760,
+  y = 1029,
+  direction = 3,
+}
+
+custom_entity{
+  name = "b1519",
+  layer = 0,
+  x = 760,
+  y = 1013,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "ocarina_patch",
 }
 
 tile{

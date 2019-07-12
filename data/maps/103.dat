@@ -1956,51 +1956,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 168,
-  y = 216,
-  width = 48,
-  height = 16,
-  pattern = "628",
-}
-
-tile{
-  layer = 0,
-  x = 176,
-  y = 232,
-  width = 32,
-  height = 8,
-  pattern = "629",
-}
-
-tile{
-  layer = 0,
-  x = 168,
-  y = 176,
-  width = 48,
-  height = 40,
-  pattern = "522",
-}
-
-tile{
-  layer = 0,
-  x = 160,
-  y = 208,
-  width = 8,
-  height = 16,
-  pattern = "626",
-}
-
-tile{
-  layer = 0,
-  x = 216,
-  y = 208,
-  width = 8,
-  height = 16,
-  pattern = "627",
-}
-
-tile{
-  layer = 0,
   x = 176,
   y = 336,
   width = 48,
@@ -4081,7 +4036,7 @@ tile{
 tile{
   layer = 0,
   x = 96,
-  y = 128,
+  y = 144,
   width = 48,
   height = 48,
   pattern = "524",
@@ -7485,17 +7440,6 @@ teletransporter{
 destructible{
   layer = 0,
   x = 104,
-  y = 141,
-  treasure_name = "random_north",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 104,
   y = 157,
   treasure_name = "random_north",
   sprite = "entities/bush",
@@ -7517,6 +7461,28 @@ destructible{
 
 destructible{
   layer = 0,
+  x = 104,
+  y = 189,
+  treasure_name = "random_north",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 120,
+  y = 189,
+  treasure_name = "random_north",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
   x = 120,
   y = 173,
   treasure_name = "random_north",
@@ -7539,28 +7505,6 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 120,
-  y = 141,
-  treasure_name = "random_north",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 136,
-  y = 141,
-  treasure_name = "random_north",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
   x = 136,
   y = 157,
   treasure_name = "random_north",
@@ -7574,6 +7518,17 @@ destructible{
   layer = 0,
   x = 136,
   y = 173,
+  treasure_name = "random_north",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 136,
+  y = 189,
   treasure_name = "random_north",
   sprite = "entities/bush",
   destruction_sound = "bush",
@@ -9141,6 +9096,25 @@ teletransporter{
   destination = "_side",
 }
 
+destination{
+  name = "ocarina_warp",
+  layer = 0,
+  x = 752,
+  y = 461,
+  direction = 3,
+}
+
+custom_entity{
+  name = "b1518",
+  layer = 0,
+  x = 752,
+  y = 445,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "ocarina_patch",
+}
+
 tile{
   layer = 1,
   x = 680,
@@ -9298,15 +9272,6 @@ tile{
   layer = 2,
   x = 136,
   y = 392,
-  width = 48,
-  height = 40,
-  pattern = "522",
-}
-
-tile{
-  layer = 2,
-  x = 168,
-  y = 184,
   width = 48,
   height = 40,
   pattern = "522",
@@ -10171,33 +10136,6 @@ tile{
   layer = 2,
   x = 208,
   y = 120,
-  width = 8,
-  height = 40,
-  pattern = "519",
-}
-
-tile{
-  layer = 2,
-  x = 168,
-  y = 160,
-  width = 48,
-  height = 16,
-  pattern = "521",
-}
-
-tile{
-  layer = 2,
-  x = 216,
-  y = 168,
-  width = 8,
-  height = 40,
-  pattern = "520",
-}
-
-tile{
-  layer = 2,
-  x = 160,
-  y = 168,
   width = 8,
   height = 40,
   pattern = "519",

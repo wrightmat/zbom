@@ -12,6 +12,24 @@ properties{
 
 tile{
   layer = 0,
+  x = 0,
+  y = 16,
+  width = 528,
+  height = 16,
+  pattern = "192",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 16,
+  width = 208,
+  height = 16,
+  pattern = "192",
+}
+
+tile{
+  layer = 0,
   x = 264,
   y = 72,
   width = 16,
@@ -159,7 +177,7 @@ tile{
   x = 0,
   y = 0,
   width = 752,
-  height = 32,
+  height = 16,
   pattern = "192",
 }
 
@@ -167,7 +185,7 @@ tile{
   layer = 0,
   x = 0,
   y = 32,
-  width = 752,
+  width = 528,
   height = 16,
   pattern = "177",
 }
@@ -1729,6 +1747,62 @@ tile{
   pattern = "1626",
 }
 
+tile{
+  layer = 0,
+  x = 544,
+  y = 32,
+  width = 208,
+  height = 16,
+  pattern = "177",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 16,
+  width = 32,
+  height = 8,
+  pattern = "489",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 24,
+  width = 8,
+  height = 24,
+  pattern = "488",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 24,
+  width = 16,
+  height = 24,
+  pattern = "67",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 24,
+  width = 8,
+  height = 24,
+  pattern = "487",
+}
+
+teletransporter{
+  name = "to_inside_cave",
+  layer = 0,
+  x = 528,
+  y = 16,
+  width = 16,
+  height = 16,
+  destination_map = "9",
+  destination = "from_D1",
+}
+
 teletransporter{
   name = "to_C1",
   layer = 0,
@@ -1833,6 +1907,14 @@ chest{
   treasure_name = "crystal",
   treasure_savegame_variable = "zola_camp_crystal",
   sprite = "entities/chest",
+}
+
+destination{
+  name = "from_inside",
+  layer = 0,
+  x = 536,
+  y = 53,
+  direction = 3,
 }
 
 tile{

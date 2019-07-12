@@ -25,7 +25,11 @@ warp_points = {         -- Intentionally Global!
   b1512 = { "b1513", "57", 184, 150, "Zora's Domain" },
   b1513 = { "b1512", "93", 34, 40, "Ruto Town" },
   b1514 = { "b1515", "34", 120, 258, "Lake Hylia" },
-  b1515 = { "b1514", "13", 210, 365, "Floria Peninsula" }
+  b1515 = { "b1514", "13", 210, 365, "Floria Peninsula" },
+  b1516 = { "b1517", "135", 194, 26, "Nabooru Town" },
+  b1517 = { "b1516", "114", 100, 100, "Mido Town" },
+  b1518 = { "b1519", "118", 126, 60, "Island Palace" },
+  b1519 = { "b1518", "103", 6, 100, "Saria Town" }
 }
 
 function game:on_warp_started(point)

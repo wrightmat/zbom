@@ -3349,6 +3349,25 @@ custom_entity{
   model = "flag",
 }
 
+destination{
+  name = "ocarina_warp",
+  layer = 0,
+  x = 968,
+  y = 93,
+  direction = 3,
+}
+
+custom_entity{
+  name = "b1517",
+  layer = 0,
+  x = 968,
+  y = 77,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "ocarina_patch",
+}
+
 tile{
   layer = 2,
   x = 968,

@@ -10,6 +10,7 @@ local boss_visible = false
 if game:get_value("i1613") == nil then game:set_value("i1613", 1) end
 
 function map:on_started(destination)
+print(game:get_value("i1613"))
   map:set_tileset("13")
   warp:set_enabled(false)
   flying_heart:get_sprite():set_animation("heart")
