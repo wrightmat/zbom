@@ -72,10 +72,10 @@ function map:on_started(destination)
   elseif game:get_value("i2015") >= 1 then
     game:set_value("i2015", game:get_value("i2015")+1)  -- Blue Potion.
   end
-  if game:get_value("i1631") == 16 then
+  if game:get_value("i1631") >= 16 then
     -- If all herbs are found in fetch quest, the final potion becomes available.
     -- Revitalizing Potion replaces Green Potion.
-    shop_potion_2=replace_shop_treasure(shop_potion_2,{name="shop_potion",treasure_name="potion",treasure_variant=4,dialog="shop.potion_revitalizing",price=200})
+    shop_potion_2 = replace_shop_treasure(shop_potion_2,{name="shop_potion",treasure_name="potion",treasure_variant=4,dialog="shop.potion_revitalizing",price=200})
   end
   if game:get_value("i2021") >= 1 then game:set_value("i2021", game:get_value("i2021")+1) end  -- Odd (trading)
 

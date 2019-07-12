@@ -41,7 +41,57 @@ function map:on_started(destination)
   if game:get_value("i1615") < 13 then
     npc_mr_Write:set_enabled(false)
   end
+  -- All the plant fetch quest helpers
+  if game:get_value("b1632") then plant_baba:get_sprite():set_animation("plant_baba") else plant_baba:remove() end
+  if game:get_value("b1633") then plant_corydalis:get_sprite():set_animation("plant_corydalis") else plant_corydalis:remove() end
+  if game:get_value("b1634") then plant_deku:get_sprite():set_animation("plant_deku") else plant_deku:remove() end
+  if game:get_value("b1635") then plant_exotic:get_sprite():set_animation("plant_exotic") else plant_exotic:remove() end
+  if game:get_value("b1636") then plant_flame:get_sprite():set_animation("plant_flame") else plant_flame:remove() end
+  if game:get_value("b1637") then plant_frost:get_sprite():set_animation("plant_frost") else plant_frost:remove() end
+  if game:get_value("b1638") then plant_gnarled:get_sprite():set_animation("plant_gnarled") else plant_gnarled:remove() end
+  if game:get_value("b1639") then plant_goponga:get_sprite():set_animation("plant_goponga") else plant_goponga:remove() end
+  if game:get_value("b1640") then plant_hibiscus:get_sprite():set_animation("plant_hibiscus") else plant_hibiscus:remove() end
+  if game:get_value("b1641") then plant_lavender:get_sprite():set_animation("plant_lavender") else plant_lavender:remove() end
+  if game:get_value("b1642") then plant_milkweed:get_sprite():set_animation("plant_milkweed") else plant_milkweed:remove() end
+  if game:get_value("b1643") then plant_mystical:get_sprite():set_animation("plant_mystical") else plant_mystical:remove() end
+  if game:get_value("b1644") then plant_pikit:get_sprite():set_animation("plant_pikit") else plant_pikit:remove() end
+  if game:get_value("b1645") then plant_sea:get_sprite():set_animation("plant_sea") else plant_sea:remove() end
+  if game:get_value("b1646") then plant_simple:get_sprite():set_animation("plant_simple") else plant_simple:remove() end
+  if game:get_value("b1647") then plant_town:get_sprite():set_animation("plant_town") else plant_town:remove() end
+  for entity in game:get_map():get_entities("plant_") do entity:set_drawn_in_y_order(true) end
+  -- All the book fetch quest helpers
+  if game:get_value("b1623") then bookshelf_ordon:get_sprite():set_animation("book_ordon") else bookshelf_ordon:remove() end
+  if game:get_value("b1617") then bookshelf_kokiri:get_sprite():set_animation("book_kokiri") else bookshelf_kokiri:remove() end
+  if game:get_value("b1626") then bookshelf_tokay:get_sprite():set_animation("book_tokay") else bookshelf_tokay:remove() end
+  if game:get_value("b1618") then bookshelf_gerudo:get_sprite():set_animation("book_gerudo") else bookshelf_gerudo:remove() end
+  if game:get_value("b1620") then bookshelf_hylian:get_sprite():set_animation("book_hylian") else bookshelf_hylian:remove() end
+  if game:get_value("b1621") then bookshelf_kakariko:get_sprite():set_animation("book_kakariko") else bookshelf_kakariko:remove() end
+  if game:get_value("b1619") then bookshelf_goron:get_sprite():set_animation("book_goron") else bookshelf_goron:remove() end
+  if game:get_value("b1628") then bookshelf_zora:get_sprite():set_animation("book_zora") else bookshelf_zora:remove() end
+  if game:get_value("b1616") then bookshelf_anouki:get_sprite():set_animation("book_anouki") else bookshelf_anouki:remove() end
+  if game:get_value("b1625") then bookshelf_rito:get_sprite():set_animation("book_rito") else bookshelf_rito:remove() end
+  if game:get_value("b1624") then bookshelf_rauru:get_sprite():set_animation("book_rauru") else bookshelf_rauru:remove() end
+  if game:get_value("b1622") then bookshelf_kasuto:get_sprite():set_animation("book_kasuto") else bookshelf_kasuto:remove() end
+  if game:get_value("b1627") then bookshelf_zola:get_sprite():set_animation("book_zola") else bookshelf_zola:remove() end
 end
+
+function shelf_quest:on_interaction() game:start_dialog("library_shelf.quest") end
+function pot_plant_baba:on_interaction() game:start_dialog("plants.plaque", function() game:start_dialog("plants.plant_baba") end) end
+function pot_plant_corydalis:on_interaction() game:start_dialog("plants.plaque", function() game:start_dialog("plants.plant_corydalis") end) end
+function pot_plant_deku:on_interaction() game:start_dialog("plants.plaque", function() game:start_dialog("plants.plant_deku") end) end
+function pot_plant_exotic:on_interaction() game:start_dialog("plants.plaque", function() game:start_dialog("plants.plant_exotic") end) end
+function pot_plant_flame:on_interaction() game:start_dialog("plants.plaque", function() game:start_dialog("plants.plant_flame") end) end
+function pot_plant_frost:on_interaction() game:start_dialog("plants.plaque", function() game:start_dialog("plants.plant_frost") end) end
+function pot_plant_gnarled:on_interaction() game:start_dialog("plants.plaque", function() game:start_dialog("plants.plant_gnarled") end) end
+function pot_plant_goponga:on_interaction() game:start_dialog("plants.plaque", function() game:start_dialog("plants.plant_goponga") end) end
+function pot_plant_hibiscus:on_interaction() game:start_dialog("plants.plaque", function() game:start_dialog("plants.plant_hibiscus") end) end
+function pot_plant_lavender:on_interaction() game:start_dialog("plants.plaque", function() game:start_dialog("plants.plant_lavender") end) end
+function pot_plant_milkweed:on_interaction() game:start_dialog("plants.plaque", function() game:start_dialog("plants.plant_milkweed") end) end
+function pot_plant_mystical:on_interaction() game:start_dialog("plants.plaque", function() game:start_dialog("plants.plant_mystical") end) end
+function pot_plant_pikit:on_interaction() game:start_dialog("plants.plaque", function() game:start_dialog("plants.plant_pikit") end) end
+function pot_plant_sea:on_interaction() game:start_dialog("plants.plaque", function() game:start_dialog("plants.plant_sea") end) end
+function pot_plant_simple:on_interaction() game:start_dialog("plants.plaque", function() game:start_dialog("plants.plant_simple") end) end
+function pot_plant_town:on_interaction() game:start_dialog("plants.plaque", function() game:start_dialog("plants.plant_town") end) end
 
 npc_isan:register_event("on_interaction", function()
   if game:get_value("b2031") then
@@ -59,8 +109,8 @@ npc_isan:register_event("on_interaction", function()
         game:start_dialog("isan.0.trading_no")
       end
     end)
-  elseif game:get_value("i1615") > 1 and game:get_value("b1614") then
-    if game:get_value("i1615") == 12 then
+  elseif game:get_value("i1615") >= 1 and game:get_value("b1614") then
+    if game:get_value("i1615") >= 13 then
       game:start_dialog("isan.2.library.2_done", function()
         game:set_value("b1614", false)
         map:get_hero():start_treasure("rupees", 5)
@@ -77,6 +127,7 @@ npc_isan:register_event("on_interaction", function()
     -- Initiate the book fetch quest after it's been referenced.
     if index == 2 then
       game:set_value("b1614", true)
+      game:set_value("i1615", 0)
       if quest_book ~= nil then quest_book:remove() end
     end
     last_message = index
@@ -288,23 +339,30 @@ function spoils_ore:on_interaction()
 end
 
 function npc_kokiri_1:on_interaction()
-  if game:get_value("i1631") >= 16 then
+  if game:get_value("i1631") >= 16 and not game:get_value("b1648") then
     game:start_dialog("kokiri_1.0.plants", function()
       map:get_hero():start_treasure("crystal") -- Give a total of 5 Magic Crystals.
-      game:set_value("i1834", game:get_value("i1834"+4))
+      game:set_value("i1834", game:get_value("i1834" + 5))
+      game:set_value("b1648", true)
     end)
   else
     game:start_dialog("kokiri_1.0.saria")
   end
 end
 function npc_kokiri_2:on_interaction()
-  if not game:get_value("b1630") then
-    game:start_dialog("kokiri_2.0.saria", function()
-      game:set_value("b1630", true)
-    end)
-  else
-    game:start_dialog("kokiri_2.0.saria_count", game:get_value("i1631"))
-    if quest_plants ~= nil then quest_plants:remove() end
+  if game:get_value("i1631") >= 1 and game:get_value("b1630") then
+    if game:get_value("i1631") >= 16 then
+      game:start_dialog("kokiri_2.0.saria_done", function()
+        game:set_value("b1630", false)
+        map:get_hero():start_treasure("rupees", 5)
+        if quest_plants ~= nil then quest_plants:remove() end
+      end)
+    else
+      game:start_dialog("kokiri_2.0.saria_count", game:get_value("i1631"))
+    end
+  elseif game:get_value("i1631") == 0 then
+    -- Give the plants fetch quest
+    game:start_dialog("kokiri_2.0.saria", function() game:set_value("b1630", true) end)
   end
 end
 
