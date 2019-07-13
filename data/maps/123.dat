@@ -5419,6 +5419,24 @@ tile{
   pattern = "572",
 }
 
+tile{
+  layer = 0,
+  x = 624,
+  y = 832,
+  width = 32,
+  height = 32,
+  pattern = "364",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 312,
+  width = 32,
+  height = 32,
+  pattern = "364",
+}
+
 teletransporter{
   name = "to_K4",
   layer = 0,
@@ -5788,6 +5806,26 @@ jumper{
   height = 64,
   direction = 4,
   jump_length = 72,
+}
+
+npc{
+  name = "sign.J4_water_1",
+  layer = 0,
+  x = 640,
+  y = 845,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/sign",
+}
+
+npc{
+  name = "sign.J4_water_2",
+  layer = 0,
+  x = 704,
+  y = 325,
+  direction = 3,
+  subtype = 0,
+  sprite = "entities/sign",
 }
 
 tile{

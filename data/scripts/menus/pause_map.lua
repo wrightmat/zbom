@@ -18,18 +18,19 @@ function map_submenu:on_started()
   
   self.dungeon = self.game:get_dungeon()
   if self.dungeon == nil then
+    local map = self.game:get_map()
     -- Not in a dungeon: show a world map.
     self:set_caption("map.caption.world_map")
     
     local hero_absolute_x, hero_absolute_y = self.game:get_map():get_location()
-    if self.game:is_in_outside_world() or (self.game:get_map():get_id() == "20" or self.game:get_map():get_id() == "21" or self.game:get_map():get_id() == "22") then
-      local hero_map_x, hero_map_y = self.game:get_map():get_entity("hero"):get_position()
+    if self.game:is_in_outside_world() or (map:get_id() == "20" or map:get_id() == "21" or map:get_id() == "22") then
+      local hero_map_x, hero_map_y = map:get_entity("hero"):get_position()
       hero_absolute_x = hero_absolute_x + hero_map_x
       hero_absolute_y = hero_absolute_y + hero_map_y
     end
     self.world_minimap_movement = nil
     self.world_minimap_visible_xy = {x = 0, y = 0}
-    if self.game:get_item("world_map"):get_variant() > 0 and (self.game:get_map():get_world() == "outside_world"  or self.game:get_map():get_id() == "20" or self.game:get_map():get_id() == "21" or self.game:get_map():get_id() == "22") then
+    if self.game:get_item("world_map"):get_variant() > 0 and (map:get_world() == "outside_world"  or map:get_id() == "20" or map:get_id() == "21" or map:get_id() == "22") then
       map_shown = true      -- If in South Hyrule with World Map, then show the map.
       self.outside_world_size = { width = 10008, height = 16814 }
       self.outside_world_minimap_size = { width = 225, height = 266 }
@@ -39,7 +40,7 @@ function map_submenu:on_started()
       self.hero_x = hero_minimap_x + (hero_absolute_x / 350) + 10
       self.hero_y = hero_minimap_y + (hero_absolute_y / 250) - 20
       self.world_minimap_visible_xy.y = math.min(self.outside_world_minimap_size.height - 133, math.max(0, hero_minimap_y - 65))
-    elseif self.game:get_item("world_map"):get_variant() > 1 and self.game:get_map():get_world() == "outside_subrosia" then
+    elseif self.game:get_item("world_map"):get_variant() > 1 and map:get_world() == "outside_subrosia" then
       map_shown = true      -- If in Subrosia with upgraded World Map, then show the map.
       self.outside_world_size = { width = 3362, height = 4483 }
       self.outside_world_minimap_size = { width = 225, height = 133 }
@@ -49,15 +50,15 @@ function map_submenu:on_started()
       self.hero_x = hero_minimap_x + 24
       self.hero_y = hero_minimap_y + 54
       self.world_minimap_visible_xy.y = math.min(self.outside_world_minimap_size.height - 133, math.max(0, hero_minimap_y - 65))
-    elseif self.game:get_item("world_map"):get_variant() > 2 and self.game:get_map():get_world() == "outside_north" then
+    elseif self.game:get_item("world_map"):get_variant() > 2 and map:get_world() == "outside_north" then
       map_shown = true      -- If in North Hyrule with upgraded World Map, then show the map.
       self.outside_world_size = { width = 16814, height = 6725 }
       self.outside_world_minimap_size = { width = 225, height = 133 }
       self.world_minimap_img = sol.surface.create("menus/outside_world_map_3.png")
       local hero_minimap_x = math.floor(hero_absolute_x * self.outside_world_minimap_size.width / self.outside_world_size.width)
       local hero_minimap_y = math.floor(hero_absolute_y * self.outside_world_minimap_size.height / self.outside_world_size.height)
-      self.hero_x = hero_minimap_x + (hero_absolute_x / 800) + 14
-      self.hero_y = hero_minimap_y + (hero_absolute_y / 150) + 14
+      self.hero_x = hero_minimap_x + 32
+      self.hero_y = hero_minimap_y + 64
       self.world_minimap_visible_xy.y = math.min(self.outside_world_minimap_size.height - 133, math.max(0, hero_minimap_y - 65))
     else
       -- if World Map not in inventory, show clouds in map screen
