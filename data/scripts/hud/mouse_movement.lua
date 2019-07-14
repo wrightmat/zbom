@@ -1,5 +1,4 @@
--- Control the hero with the mouse.
-
+-- Control the hero with the mouse/touch.
 local mouse_movement_builder = {}
 
 function mouse_movement_builder:new(game)
@@ -10,10 +9,10 @@ function mouse_movement_builder:new(game)
     
     -- Movement of the hero.
     directions = {
-  	  {"right", false},
-  	  {"up", false},
-  	  {"left", false},
-  	  {"down", false}
+  	  right = false,
+  	  up = false,
+  	  left = false,
+  	  down = false
     }
     
     deadzone_ray = 10 -- Should be set to the max number of pixel that the hero can move in one frame.
@@ -33,43 +32,43 @@ function mouse_movement_builder:new(game)
   
   function mouse_movement:on_update()
     if left_button_pressed and game:get_value("control_scheme") == "touch_2" then
-      -- Only enable mouse/touch movement if "iOS" scheme is enabled - Android will use a D-Pad overlay (more precise).
-      local mouse_position = {sol.input.get_mouse_position()}
-      local hero_position = {game:get_hero():get_solid_ground_position()}
-      
+      -- Only enable mouse/touch movement if "Full Touch" scheme is enabled.
+      local camera = game:get_map():get_camera()
+      local hero_x, hero_y = game:get_map():get_hero():get_position()
+      local camera_x, camera_y = camera:get_position()
+      local mouse_x, mouse_y = sol.input.get_mouse_position()
+      mouse_x = mouse_x + camera_x
+      mouse_y = mouse_y + camera_y
       -- Compare the position of the hero and the mouse 
       -- and simulate the appropriate command for each directions.
-      self:update_direction(1, mouse_position[1] > hero_position[1] + deadzone_ray)
-      self:update_direction(2, mouse_position[2] < hero_position[2] - deadzone_ray)
-      self:update_direction(3, mouse_position[1] < hero_position[1] - deadzone_ray)
-      self:update_direction(4, mouse_position[2] > hero_position[2] + deadzone_ray)
+      self:update_direction("right", mouse_x > hero_x + deadzone_ray)
+      self:update_direction("up", mouse_y < hero_y - deadzone_ray)
+      self:update_direction("left", mouse_x < hero_x - deadzone_ray)
+      self:update_direction("down", mouse_y > hero_y + deadzone_ray)
     else
-      for i=1, 4, 1 do 
-        self:release_direction(i)
+      for direction, _ in pairs(directions) do
+        self:release_direction(direction)
       end
     end
   end
   
-  function mouse_movement:update_direction(direction_id, condition)
+  function mouse_movement:update_direction(direction, condition)
     if condition then
-      if not directions[direction_id][2] then
-        directions[direction_id][2] = true
-        game:simulate_command_pressed(directions[direction_id][1])
+      if not directions[direction] then
+        directions[direction] = true
+        game:simulate_command_pressed(direction)
       end
-    else
-      self:release_direction(direction_id)
-    end
+    else self:release_direction(direction) end
   end
   
-  function mouse_movement:release_direction(direction_id)
-    if directions[direction_id][2] then
-      directions[direction_id][2] = false
-      game:simulate_command_released(directions[direction_id][1])
+  function mouse_movement:release_direction(direction)
+    if directions[direction] then
+      directions[direction] = false
+      game:simulate_command_released(direction)
     end
   end
   
   mouse_movement:initialize()
-  
   return mouse_movement
 end
 

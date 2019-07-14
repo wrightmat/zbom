@@ -6145,10 +6145,9 @@ dynamic_tile{
   layer = 0,
   x = 128,
   y = 680,
-  pattern = "605",
   width = 224,
   height = 16,
-  enabled_at_start = true,
+  pattern = "605",
 }
 
 dynamic_tile{
@@ -6156,10 +6155,9 @@ dynamic_tile{
   layer = 0,
   x = 488,
   y = 360,
-  pattern = "95",
   width = 32,
   height = 96,
-  enabled_at_start = true,
+  pattern = "95",
 }
 
 sensor{
@@ -6203,10 +6201,9 @@ dynamic_tile{
   layer = 0,
   x = 736,
   y = 192,
-  pattern = "524",
   width = 112,
   height = 48,
-  enabled_at_start = true,
+  pattern = "524",
 }
 
 dynamic_tile{
@@ -6214,10 +6211,9 @@ dynamic_tile{
   layer = 0,
   x = 560,
   y = 160,
-  pattern = "524",
   width = 288,
   height = 32,
-  enabled_at_start = true,
+  pattern = "524",
 }
 
 dynamic_tile{
@@ -6225,10 +6221,9 @@ dynamic_tile{
   layer = 0,
   x = 560,
   y = 192,
-  pattern = "524",
   width = 112,
   height = 48,
-  enabled_at_start = true,
+  pattern = "524",
 }
 
 dynamic_tile{
@@ -6236,10 +6231,9 @@ dynamic_tile{
   layer = 0,
   x = 560,
   y = 240,
-  pattern = "524",
   width = 288,
   height = 32,
-  enabled_at_start = true,
+  pattern = "524",
 }
 
 wall{
@@ -6547,7 +6541,7 @@ switch{
 }
 
 block{
-  name = "block",
+  name = "block_1",
   layer = 0,
   x = 216,
   y = 613,
@@ -6637,10 +6631,9 @@ dynamic_tile{
   layer = 0,
   x = 64,
   y = 648,
-  pattern = "605",
   width = 208,
   height = 16,
-  enabled_at_start = true,
+  pattern = "605",
 }
 
 teletransporter{
@@ -6696,10 +6689,9 @@ dynamic_tile{
   layer = 0,
   x = 560,
   y = 264,
-  pattern = "143",
   width = 8,
   height = 8,
-  enabled_at_start = true,
+  pattern = "143",
 }
 
 dynamic_tile{
@@ -6707,10 +6699,9 @@ dynamic_tile{
   layer = 0,
   x = 840,
   y = 264,
-  pattern = "142",
   width = 8,
   height = 8,
-  enabled_at_start = true,
+  pattern = "142",
 }
 
 wall{

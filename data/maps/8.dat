@@ -30,15 +30,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 256,
-  y = 448,
-  width = 136,
-  height = 192,
-  pattern = "677",
-}
-
-tile{
-  layer = 0,
   x = 2496,
   y = 832,
   width = 160,
@@ -348,7 +339,7 @@ tile{
   x = 240,
   y = 480,
   width = 24,
-  height = 112,
+  height = 144,
   pattern = "677",
 }
 
@@ -5421,7 +5412,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 2000,
+  x = 2032,
   y = 704,
   width = 16,
   height = 8,
@@ -11197,6 +11188,42 @@ tile{
   pattern = "498",
 }
 
+tile{
+  layer = 0,
+  x = 232,
+  y = 480,
+  width = 32,
+  height = 128,
+  pattern = "166",
+}
+
+tile{
+  layer = 0,
+  x = 584,
+  y = 480,
+  width = 32,
+  height = 128,
+  pattern = "166",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 480,
+  width = 32,
+  height = 128,
+  pattern = "166",
+}
+
+tile{
+  layer = 0,
+  x = 1336,
+  y = 480,
+  width = 32,
+  height = 128,
+  pattern = "166",
+}
+
 custom_entity{
   name = "plant_baba",
   layer = 0,
@@ -13290,42 +13317,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 232,
-  y = 480,
-  width = 32,
-  height = 128,
-  pattern = "166",
-}
-
-tile{
-  layer = 1,
-  x = 584,
-  y = 480,
-  width = 32,
-  height = 128,
-  pattern = "166",
-}
-
-tile{
-  layer = 1,
-  x = 944,
-  y = 480,
-  width = 32,
-  height = 128,
-  pattern = "166",
-}
-
-tile{
-  layer = 1,
-  x = 1336,
-  y = 480,
-  width = 32,
-  height = 128,
-  pattern = "166",
-}
-
-tile{
-  layer = 1,
   x = 136,
   y = 624,
   width = 32,
@@ -14141,6 +14132,15 @@ tile{
   y = 1152,
   width = 544,
   height = 256,
+  pattern = "677",
+}
+
+tile{
+  layer = 2,
+  x = 264,
+  y = 448,
+  width = 128,
+  height = 192,
   pattern = "677",
 }
 

@@ -4731,20 +4731,18 @@ dynamic_tile{
   layer = 0,
   x = 280,
   y = 600,
-  pattern = "603",
   width = 48,
   height = 64,
-  enabled_at_start = true,
+  pattern = "603",
 }
 
 dynamic_tile{
   layer = 0,
   x = 152,
   y = 600,
-  pattern = "605",
   width = 48,
   height = 64,
-  enabled_at_start = true,
+  pattern = "605",
 }
 
 teletransporter{
@@ -5657,6 +5655,16 @@ destructible{
   treasure_name = "random",
   sprite = "entities/pot",
   destruction_sound = "stone",
+}
+
+block{
+  name = "block_test",
+  layer = 0,
+  x = 240,
+  y = 629,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
 }
 
 tile{

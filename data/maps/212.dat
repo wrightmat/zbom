@@ -4549,10 +4549,9 @@ dynamic_tile{
   layer = 0,
   x = 320,
   y = 224,
-  pattern = "605",
   width = 48,
   height = 144,
-  enabled_at_start = true,
+  pattern = "605",
 }
 
 dynamic_tile{
@@ -4560,10 +4559,9 @@ dynamic_tile{
   layer = 0,
   x = 112,
   y = 360,
-  pattern = "66",
   width = 256,
   height = 8,
-  enabled_at_start = true,
+  pattern = "66",
 }
 
 dynamic_tile{
@@ -4571,10 +4569,9 @@ dynamic_tile{
   layer = 0,
   x = 608,
   y = 552,
-  pattern = "605",
   width = 32,
   height = 160,
-  enabled_at_start = true,
+  pattern = "605",
 }
 
 dynamic_tile{
@@ -4582,10 +4579,9 @@ dynamic_tile{
   layer = 0,
   x = 320,
   y = 600,
-  pattern = "605",
   width = 32,
   height = 128,
-  enabled_at_start = true,
+  pattern = "605",
 }
 
 dynamic_tile{
@@ -4593,10 +4589,9 @@ dynamic_tile{
   layer = 0,
   x = 320,
   y = 440,
-  pattern = "605",
   width = 48,
   height = 96,
-  enabled_at_start = true,
+  pattern = "605",
 }
 
 enemy{
@@ -4879,10 +4874,9 @@ dynamic_tile{
   layer = 0,
   x = 576,
   y = 520,
-  pattern = "104",
   width = 8,
   height = 8,
-  enabled_at_start = true,
+  pattern = "104",
 }
 
 dynamic_tile{
@@ -4890,10 +4884,9 @@ dynamic_tile{
   layer = 0,
   x = 584,
   y = 520,
-  pattern = "105",
   width = 256,
   height = 8,
-  enabled_at_start = true,
+  pattern = "105",
 }
 
 dynamic_tile{
@@ -4901,10 +4894,9 @@ dynamic_tile{
   layer = 0,
   x = 840,
   y = 520,
-  pattern = "104",
   width = 8,
   height = 8,
-  enabled_at_start = true,
+  pattern = "104",
 }
 
 switch{
@@ -4956,10 +4948,9 @@ dynamic_tile{
   layer = 0,
   x = 64,
   y = 536,
-  pattern = "605",
   width = 64,
   height = 32,
-  enabled_at_start = true,
+  pattern = "605",
 }
 
 dynamic_tile{
@@ -4967,10 +4958,9 @@ dynamic_tile{
   layer = 0,
   x = 64,
   y = 648,
-  pattern = "605",
   width = 176,
   height = 32,
-  enabled_at_start = true,
+  pattern = "605",
 }
 
 dynamic_tile{
@@ -4978,10 +4968,9 @@ dynamic_tile{
   layer = 0,
   x = 160,
   y = 440,
-  pattern = "605",
   width = 32,
   height = 96,
-  enabled_at_start = true,
+  pattern = "605",
 }
 
 dynamic_tile{
@@ -4989,10 +4978,9 @@ dynamic_tile{
   layer = 0,
   x = 368,
   y = 456,
-  pattern = "605",
   width = 16,
   height = 80,
-  enabled_at_start = true,
+  pattern = "605",
 }
 
 dynamic_tile{
@@ -5000,10 +4988,9 @@ dynamic_tile{
   layer = 0,
   x = 384,
   y = 472,
-  pattern = "605",
   width = 16,
   height = 64,
-  enabled_at_start = true,
+  pattern = "605",
 }
 
 dynamic_tile{
@@ -5011,10 +4998,9 @@ dynamic_tile{
   layer = 0,
   x = 400,
   y = 488,
-  pattern = "605",
   width = 16,
   height = 48,
-  enabled_at_start = true,
+  pattern = "605",
 }
 
 dynamic_tile{
@@ -5022,10 +5008,9 @@ dynamic_tile{
   layer = 0,
   x = 64,
   y = 176,
-  pattern = "605",
   width = 304,
   height = 48,
-  enabled_at_start = true,
+  pattern = "605",
 }
 
 dynamic_tile{
@@ -5033,10 +5018,9 @@ dynamic_tile{
   layer = 0,
   x = 576,
   y = 440,
-  pattern = "605",
   width = 32,
   height = 80,
-  enabled_at_start = true,
+  pattern = "605",
 }
 
 dynamic_tile{
@@ -5044,10 +5028,9 @@ dynamic_tile{
   layer = 0,
   x = 496,
   y = 504,
-  pattern = "605",
   width = 80,
   height = 16,
-  enabled_at_start = true,
+  pattern = "605",
 }
 
 dynamic_tile{
@@ -5055,10 +5038,9 @@ dynamic_tile{
   layer = 0,
   x = 544,
   y = 536,
-  pattern = "605",
   width = 32,
   height = 160,
-  enabled_at_start = true,
+  pattern = "605",
 }
 
 dynamic_tile{
@@ -5066,10 +5048,9 @@ dynamic_tile{
   layer = 0,
   x = 496,
   y = 664,
-  pattern = "605",
   width = 48,
   height = 32,
-  enabled_at_start = true,
+  pattern = "605",
 }
 
 dynamic_tile{
@@ -5077,10 +5058,9 @@ dynamic_tile{
   layer = 0,
   x = 640,
   y = 552,
-  pattern = "605",
   width = 208,
   height = 128,
-  enabled_at_start = true,
+  pattern = "605",
 }
 
 dynamic_tile{
@@ -5088,13 +5068,13 @@ dynamic_tile{
   layer = 0,
   x = 608,
   y = 488,
-  pattern = "605",
   width = 240,
   height = 32,
-  enabled_at_start = true,
+  pattern = "605",
 }
 
 block{
+  name = "block_1",
   layer = 0,
   x = 536,
   y = 485,
@@ -5104,6 +5084,7 @@ block{
 }
 
 block{
+  name = "block_2",
   layer = 0,
   x = 568,
   y = 709,
