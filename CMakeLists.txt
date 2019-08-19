@@ -64,6 +64,24 @@ install(PROGRAMS ${CMAKE_CURRENT_BINARY_DIR}/${quest_name}
   DESTINATION bin
 )
 
+# FreeDesktop compatible icons
+if(UNIX AND NOT APPLE)
+  install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/logos/icon_16.png
+    DESTINATION ${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/16x16/apps RENAME zbom.png)
+  install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/logos/icon_24.png
+    DESTINATION ${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/24x24/apps RENAME zbom.png)
+  install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/logos/icon_32.png
+    DESTINATION ${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/32x32/apps RENAME zbom.png)
+  install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/logos/icon_48.png
+    DESTINATION ${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/48x48/apps RENAME zbom.png)
+  install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/logos/icon_64.png
+    DESTINATION ${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/64x64/apps RENAME zbom.png)
+  install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/logos/icon_128.png
+    DESTINATION ${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/128x128/apps RENAME zbom.png)
+  install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/logos/logo@2x.png
+    DESTINATION ${CMAKE_INSTALL_PREFIX}/share/pixmaps RENAME zbom.png)
+endif(UNIX AND NOT APPLE)
+
 # FreeDesktop compatible start menu launcher
 if(UNIX AND NOT APPLE)
   install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/zbom.desktop
