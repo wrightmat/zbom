@@ -63,3 +63,9 @@ install(FILES ${CMAKE_CURRENT_BINARY_DIR}/data.solarus
 install(PROGRAMS ${CMAKE_CURRENT_BINARY_DIR}/${quest_name}
   DESTINATION bin
 )
+
+# FreeDesktop compatible start menu launcher
+if(UNIX AND NOT APPLE)
+  install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/zbom.desktop
+    DESTINATION ${CMAKE_INSTALL_PREFIX}/share/applications)
+endif(UNIX AND NOT APPLE)
