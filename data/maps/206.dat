@@ -9610,16 +9610,6 @@ destructible{
   destruction_sound = "stone",
 }
 
-chest{
-  name = "chest_crystal",
-  layer = 0,
-  x = 208,
-  y = 909,
-  treasure_name = "crystal",
-  treasure_savegame_variable = "b1784",
-  sprite = "entities/chest",
-}
-
 wall{
   layer = 0,
   x = 648,
@@ -10075,6 +10065,16 @@ sensor{
   y = 613,
   width = 16,
   height = 32,
+}
+
+chest{
+  name = "chest_crystal",
+  layer = 0,
+  x = 208,
+  y = 909,
+  treasure_name = "crystal",
+  treasure_savegame_variable = "b1784",
+  sprite = "entities/chest",
 }
 
 tile{

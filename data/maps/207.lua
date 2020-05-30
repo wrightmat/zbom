@@ -5,7 +5,7 @@ local game = map:get_game()
 -- Dungeon 5: Lakebed Lair (Basement) --
 ----------------------------------------
 
-function map:on_started(destination)
+map:register_event("on_started", function(self, destination)
   if not game:get_value("b1125") then chest_key_5:set_enabled(false) end
   map:set_doors_open("door_boss") -- shutter door
   map:set_doors_open("shutter_2")
@@ -15,7 +15,7 @@ function map:on_started(destination)
     boss_plasmarine_red:set_enabled(false)
     to_outside:set_enabled(false)
   end
-  if not game:get_value("b1124") then chest_key_4:set_enabled(false) end
+  if not game:get_value("b1791") then chest_crystal:set_enabled(false) end
   if not game:get_value("b1127") then chest_map:set_enabled(false) end
   if not game:get_value("b1134") then chest_book:set_enabled(false) end
   if not game:get_value("b1133") then boss_heart:set_enabled(false) end
@@ -29,7 +29,7 @@ function map:on_started(destination)
   pillar_1:set_enabled(false)
   pillar_2:set_enabled(false)
   hook_1:set_enabled(false)
-end
+end)
 
 function door_bomb_1:on_opened()
   sol.audio.play_sound("water_drain")
@@ -156,7 +156,7 @@ end
 for enemy in map:get_entities("leever") do
   enemy.on_dead = function()
     if not map:has_entities("leever_room12") then
-      chest_key_4:set_enabled(true)
+      chest_crystal:set_enabled(true)
       sol.audio.play_sound("chest_appears")
     end
   end

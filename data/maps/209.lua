@@ -5,14 +5,16 @@ local game = map:get_game()
 -- Dungeon 5: Snowpeak Caverns (Floor 2) --
 -------------------------------------------
 
-function map:on_started(destination)
+map:register_event("on_started", function(self, destination)
   local _, _, layer = hero:get_position()
-  hero:save_solid_ground(176, 992, layer) -- If faling from above, can end up in an infinate loop of death!
-  if not game:get_value("b1147") then boss_stalfos:set_enabled(false) end
+  hero:save_solid_ground(176, 992, layer) -- If falling from above, can end up in an infinate loop of death!
+  if not game:get_value("b1147") then
+    boss_stalfos:set_enabled(false)
+  else map:open_doors("door_boss") end
   if not game:get_value("b1149") then boss_heart:set_enabled(false) end
   if not game:get_value("b1153") then chest_key_2:set_enabled(false) end
   if not game:get_value("b1155") then chest_key_3:set_enabled(false) end
-end
+end)
 
 function switch_star_1:on_activated()
   switch_star_2:set_activated(false)
@@ -105,6 +107,7 @@ function switch_star_boss:on_activated()
 end
 
 function switch_star_boss_2:on_activated()
+  hero:save_solid_ground(848, 405, 1)
   switch_star_boss:set_activated(false)
   local positions_1 = {
     {x = 480, y = 264},

@@ -6,14 +6,12 @@ local hero = map:get_hero()
 -- Dungeon 5: Lakebed Lair (Floor 1) --
 ---------------------------------------
 
-function map:on_started(destination)
+map:register_event("on_started", function(self, destination)
   to_basement:set_enabled(false)
   if not game:get_value("b1129") then chest_big_key:set_enabled(false) end
   if game:get_value("b1128") then
     map:open_doors("door_miniboss")
-  else
-    miniboss_aquadraco:set_enabled(false)
-  end
+  else miniboss_aquadraco:set_enabled(false) end
   if game:get_value("b1140") then
     water_chest:set_enabled(false)
     sensor_room_flooded:set_enabled(false)
@@ -25,15 +23,13 @@ function map:on_started(destination)
     to_outside:set_destination_name("from_lair_finished")
     grate:set_enabled(false)
     to_basement:set_enabled(true)
-  else
-    npc_zora:set_enabled(false)
-  end
+  else npc_zora:set_enabled(false) end
   if not game:get_value("b1126") then chest_compass:set_enabled(false) end
   if game:get_value("b1112") then
     grate:set_enabled(false)
     to_basement:set_enabled(true)
   end
-end
+end)
 
 function sensor_miniboss:on_activated()
   if miniboss_aquadraco ~= nil then

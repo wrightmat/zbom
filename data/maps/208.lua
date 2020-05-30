@@ -5,14 +5,14 @@ local game = map:get_game()
 -- Dungeon 5: Snowpeak Caverns (Floor 1) --
 -------------------------------------------
 
-function map:on_started(destination)
+map:register_event("on_started", function(self, destination)
   flying_heart:get_sprite():set_animation("heart")
   flying_apple:get_sprite():set_animation("apple")
   map:set_doors_open("door_miniboss")
   if miniboss_chu ~= nil then miniboss_chu:set_enabled(false) end
   if not game:get_value("b1144") then chest_big_key:set_enabled(false) end
   if not game:get_value("b1151") then chest_key_1:set_enabled(false) end
-end
+end)
 
 function sensor_miniboss:on_activated()
   if miniboss_chu ~= nil then
