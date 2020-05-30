@@ -357,7 +357,7 @@ local function initialize_maps()
     end)
   end
   
-  function map_metatable:on_started(destination)
+  map_metatable:register_event("on_started", function(self, destination)
     local game = self:get_game()
     
     function random_8(lower, upper)
@@ -414,13 +414,37 @@ local function initialize_maps()
         self:create_enemy({ breed="redead", x=ex, y=ey, layer=0, direction=1 })
       end
     end
-  end
+
+    local map = self
+    local hero = self:get_hero()
+    local ground = hero:get_ground_below()
+    if ground == "lava" then
+      hx, hy, hl = hero:get_position()
+      if map:get_ground(hx + 16, hy, hl) ~= "lava" and not hero:test_obstacles(16, 0) then
+        hero:save_solid_ground(hx + 16, hy, hl)
+      elseif map:get_ground(hx, hy + 16, hl) ~= "lava" and not hero:test_obstacles(0, 16) then
+        hero:save_solid_ground(hx, hy + 16, hl)
+      elseif map:get_ground(hx, hy - 16, hl) ~= "lava" and not hero:test_obstacles(0, -16) then
+        hero:save_solid_ground(hx, hy - 16, hl)
+      elseif map:get_ground(hx - 16, hy, hl) ~= "lava" and not hero:test_obstacles(-16, 0) then
+        hero:save_solid_ground(hx - 16, hy, hl)
+      elseif map:get_ground(hx + 32, hy, hl) ~= "lava" and not hero:test_obstacles(32, 0) then
+        hero:save_solid_ground(hx + 32, hy, hl)
+      elseif map:get_ground(hx, hy + 32, hl) ~= "lava" and not hero:test_obstacles(0, 32) then
+        hero:save_solid_ground(hx, hy + 32, hl)
+      elseif map:get_ground(hx, hy - 32, hl) ~= "lava" and not hero:test_obstacles(0, -32) then
+        hero:save_solid_ground(hx, hy - 32, hl)
+      elseif map:get_ground(hx - 32, hy, hl) ~= "lava" and not hero:test_obstacles(-32, 0) then
+        hero:save_solid_ground(hx - 32, hy, hl)
+      end
+    end
+  end)
   
-  function map_metatable:on_finished()
+  map_metatable:register_event("on_finished", function(self, destination)
     self:get_game().save_between_maps:save_map(self)
-  end
+  end)
   
-  function map_metatable:on_update()
+  map_metatable:register_event("on_update", function(self, destination)
     local game = self:get_game()
     
     -- Slowly drain magic when using lantern.
@@ -463,7 +487,8 @@ local function initialize_maps()
         swim_timer = nil
       end
     end
-  end
+  end)
+
 end
 
 local function initialize_game()
