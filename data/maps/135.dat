@@ -2758,28 +2758,6 @@ teletransporter{
   destination = "_side",
 }
 
-npc{
-  name = "stake_1",
-  layer = 0,
-  x = 120,
-  y = 493,
-  direction = 3,
-  subtype = 0,
-  sprite = "entities/hammer_stake",
-  behavior = "item#hammer",
-}
-
-npc{
-  name = "stake_2",
-  layer = 0,
-  x = 112,
-  y = 517,
-  direction = 3,
-  subtype = 0,
-  sprite = "entities/hammer_stake",
-  behavior = "item#hammer",
-}
-
 destructible{
   layer = 0,
   x = 816,
@@ -3366,6 +3344,30 @@ custom_entity{
   height = 16,
   direction = 0,
   model = "ocarina_patch",
+}
+
+custom_entity{
+  name = "stake_1",
+  layer = 0,
+  x = 120,
+  y = 493,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/hammer_stake",
+  model = "hammer_stake",
+}
+
+custom_entity{
+  name = "stake_2",
+  layer = 0,
+  x = 112,
+  y = 517,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/hammer_stake",
+  model = "hammer_stake",
 }
 
 tile{

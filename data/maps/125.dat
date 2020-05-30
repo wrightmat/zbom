@@ -12,6 +12,60 @@ properties{
 
 tile{
   layer = 0,
+  x = 920,
+  y = 752,
+  width = 16,
+  height = 16,
+  pattern = "271",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 752,
+  width = 8,
+  height = 8,
+  pattern = "7",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 760,
+  width = 16,
+  height = 16,
+  pattern = "271",
+}
+
+tile{
+  layer = 0,
+  x = 792,
+  y = 752,
+  width = 16,
+  height = 16,
+  pattern = "272",
+}
+
+tile{
+  layer = 0,
+  x = 792,
+  y = 752,
+  width = 8,
+  height = 8,
+  pattern = "7",
+}
+
+tile{
+  layer = 0,
+  x = 800,
+  y = 760,
+  width = 16,
+  height = 16,
+  pattern = "272",
+}
+
+tile{
+  layer = 0,
   x = 968,
   y = 496,
   width = 16,
@@ -797,7 +851,7 @@ tile{
   layer = 0,
   x = 688,
   y = 752,
-  width = 352,
+  width = 112,
   height = 8,
   pattern = "259",
 }
@@ -806,7 +860,7 @@ tile{
   layer = 0,
   x = 688,
   y = 760,
-  width = 352,
+  width = 112,
   height = 8,
   pattern = "265",
 }
@@ -2478,7 +2532,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 912,
+  x = 928,
   y = 824,
   width = 16,
   height = 16,
@@ -2528,6 +2582,33 @@ tile{
   width = 16,
   height = 16,
   pattern = "269",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 752,
+  width = 112,
+  height = 8,
+  pattern = "259",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 760,
+  width = 112,
+  height = 8,
+  pattern = "265",
+}
+
+tile{
+  layer = 0,
+  x = 808,
+  y = 760,
+  width = 112,
+  height = 8,
+  pattern = "464",
 }
 
 teletransporter{
@@ -3164,7 +3245,7 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 920,
+  x = 936,
   y = 837,
   width = 16,
   height = 16,
@@ -3495,6 +3576,16 @@ enemy{
   direction = 3,
   breed = "hinox",
   treasure_name = "random_enemy",
+}
+
+jumper{
+  layer = 0,
+  x = 808,
+  y = 760,
+  width = 112,
+  height = 8,
+  direction = 6,
+  jump_length = 64,
 }
 
 tile{
