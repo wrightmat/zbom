@@ -537,14 +537,14 @@ end
 function treasure_dest:on_activated()
   -- Give Red Tunic, Blue Tunic, or Purple Tunic (basically upgrade the best one the player has)
   if game:get_item("tunic"):get_variant() == 1 then
-    map:create_chest({layer=0,x=1208,y=501,sprite="entities/chest_big", treasure_name="tunic", treasure_variant=2})
+    map:create_chest({layer=0,x=1304,y=501,sprite="entities/chest_big", treasure_name="tunic", treasure_variant=2})
   elseif game:get_item("tunic"):get_variant() == 2 then
-    map:create_chest({layer=0,x=1208,y=501,sprite="entities/chest_big",treasure_name="tunic", treasure_variant=3})
+    map:create_chest({layer=0,x=1304,y=501,sprite="entities/chest_big",treasure_name="tunic", treasure_variant=3})
   elseif game:get_item("tunic"):get_variant() == 3 then
-    map:create_chest({layer=0,x=1208,y=501,sprite="entities/chest_big",treasure_name="tunic", treasure_variant=4})
+    map:create_chest({layer=0,x=1304,y=501,sprite="entities/chest_big",treasure_name="tunic", treasure_variant=4})
   else
     -- No more tunics available, chest is empty.
-    chest = map:create_chest({layer=0,x=1208,y=501,sprite="entities/chest_big"})
+    chest = map:create_chest({layer=0,x=1304,y=501,sprite="entities/chest_big"})
     chest:set_open(true)
   end
   -- Reset the count of perils so we can play the cave again.
