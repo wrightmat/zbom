@@ -5,7 +5,7 @@ local game = map:get_game()
 -- Dungeon 7: Tower of the Winds (Floor 1) --
 ---------------------------------------------
 
-function map:on_started(destination)
+map:register_event("on_started", function(self, destination)
   game:set_world_rain_mode("dungeon_7", nil)
   flying_heart:get_sprite():set_animation("heart")
   flying_apple:get_sprite():set_animation("apple")
@@ -15,13 +15,7 @@ function map:on_started(destination)
   end
 
   sol.timer.start(map, 600, function()
-    map:create_enemy({
-	x = 72,
-	y = 229,
-	layer = 0,
-	direction = 0,
-	breed = "boulder"
-    })
+    map:create_enemy({ x = 72, y = 229, layer = 0, direction = 0, breed = "boulder" })
     return true
   end)
-end
+end)

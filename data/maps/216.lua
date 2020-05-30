@@ -6,11 +6,11 @@ local door_timer = nil
 -- Dungeon 7: Tower of the Winds (Floor 7) --
 ---------------------------------------------
 
-function map:on_started(destination)
+map:register_event("on_started", function(self, destination)
   game:set_world_rain_mode("dungeon_7", "rain")
   map:set_doors_open("door_statues")
   if not game:get_value("b1754") then chest_rupees:set_enabled(false) end
-end
+end)
 
 function switch_door:on_activated()
   map:move_camera(232, 368, 250, function()

@@ -5,7 +5,7 @@ local game = map:get_game()
 -- Dungeon 7: Tower of the Winds (Floor 6) --
 ---------------------------------------------
 
-function map:on_started(destination)
+map:register_event("on_started", function(self, destination)
   game:set_world_rain_mode("dungeon_7", "storm")
   if not game:get_value("b1166") then
     miniboss_grim_creeper:set_enabled(false)
@@ -26,7 +26,7 @@ function map:on_started(destination)
   end
   if not game:get_value("b1161") then chest_map:set_enabled(false) end
   if game:get_value("b1166") then chest_map:set_enabled(true) end
-end
+end)
 
 function switch_1:on_activated()
   map:move_camera(448, 325, 250, function()

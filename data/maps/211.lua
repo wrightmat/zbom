@@ -5,13 +5,13 @@ local game = map:get_game()
 -- Dungeon 7: Tower of the Winds (Floor 2) --
 ---------------------------------------------
 
-function map:on_started(destination)
+map:register_event("on_started", function(self, destination)
   if game:get_value("b1163") then
     map:open_doors("door_shutter")
     map:open_doors("door_puzzle")
     map:remove_entities("keese")
   end
-end
+end)
 
 for enemy in map:get_entities("keese") do
   enemy.on_dead = function()
