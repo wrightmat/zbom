@@ -5,14 +5,14 @@ local game = map:get_game()
 -- Midoro Palace - Mini Dungeon (Shovel) --
 -------------------------------------------
 
-function map:on_started(destination)
+map:register_event("on_started", function(self, destination)
   map:get_entity("torch_1"):get_sprite():set_animation("lit")
   map:get_entity("torch_2"):get_sprite():set_animation("lit")
   map:get_entity("torch_3"):get_sprite():set_animation("lit")
   map:get_entity("torch_4"):get_sprite():set_animation("lit")
   flying_heart:get_sprite():set_animation("heart")
   flying_heart_2:get_sprite():set_animation("heart")
-end
+end)
 
 function flying_heart:on_obtained()
   self:get_game():add_life(4); self:get_game():add_stamina(8)
@@ -57,9 +57,4 @@ for enemy in map:get_entities("flower") do
       map:create_pickable({ x = 664, y = 741, layer = 0, treasure = "rupee", treasure_variant = 4 })
     end
   end
-end
-
-function sensor_temp:on_activated()
-  map:open_doors("door_shutter")
-  game:set_value("b1222", true)
 end
