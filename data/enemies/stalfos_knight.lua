@@ -12,7 +12,7 @@ local positions = {
   {x = 360, y = 304, direction4 = 3},
   {x = 336, y = 184, direction4 = 3}
 }
-if map:get_id() == "170" then
+if map:get_id() == "170" or map:get_id() == "test" then
   -- Positions are different if this is the boss run.
   positions = {
     {x = 224, y = 238, direction4 = 3},
@@ -25,7 +25,7 @@ end
 -- Stalfos: An undead soldier boss.
 
 function enemy:on_created()
-  self:set_life(10); self:set_damage(6)
+  self:set_life(8); self:set_damage(6)
   self:create_sprite("enemies/stalfos_knight")
   self:set_size(32, 40); self:set_origin(16, 36)
   self:set_hurt_style("boss")
@@ -65,6 +65,7 @@ end
 
 function enemy:on_update()
   if vulnerable then
+    self:get_sprite():set_animation("immobilized")
     self:set_attack_consequence("explosion", 1)
     self:set_attack_consequence("sword", "ignored")
   else
@@ -74,20 +75,22 @@ function enemy:on_update()
 end
 
 function enemy:hide()
-  sol.timer.start(self:get_map(), 5000, function() self:unhide() end)
-  vulnerable = false; hidden = true
-  self:get_sprite():set_animation("head")
-  sol.audio.play_sound("stalfos_laugh")
-  self:create_enemy({ breed = "stalfos_head", treasure_name = "bomb" })
-  sol.timer.start(self, 1000, function()
-    local m = sol.movement.create("jump")
-    m:set_direction8(2)
-    m:set_distance(256)
-    m:set_speed(80)
-    m:start(self)
-    sol.audio.play_sound("jump")
-    sol.timer.start(self, 2000, function() self:set_position(-100, -100) end)
-  end)
+  if not vulnerable then
+    sol.timer.start(self:get_map(), 5000, function() self:unhide() end)
+    vulnerable = false; hidden = true
+    self:get_sprite():set_animation("head")
+    sol.audio.play_sound("stalfos_laugh")
+    self:create_enemy({ breed = "stalfos_head", treasure_name = "bomb" })
+    sol.timer.start(self, 1000, function()
+      local m = sol.movement.create("jump")
+      m:set_direction8(2)
+      m:set_distance(256)
+      m:set_speed(80)
+      m:start(self)
+      sol.audio.play_sound("jump")
+      sol.timer.start(self, 2000, function() self:set_position(-100, -100) end)
+    end)
+  end
 end
 
 function enemy:unhide()
@@ -120,7 +123,7 @@ function enemy:on_custom_attack_received(attack, sprite)
       sol.audio.play_sound("enemy_awake")
       self:get_sprite():set_animation("immobilized")
       self:set_attack_consequence("explosion", 1)
-      attack_timer = sol.timer.start(self, 15000, function()
+      attack_timer = sol.timer.start(self:get_map(), 15000, function()
         vulnerable = false
         sol.audio.play_sound("hero_pushes")
         self:set_attack_consequence("explosion", "ignored")
@@ -134,8 +137,8 @@ function enemy:on_custom_attack_received(attack, sprite)
   function sprite:on_animation_finished(animation)
     if animation == "shaking" then
       vulnerable = false
-      self:get_sprite():set_animation("walking")
-      self:restart()
+      if sprite then sprite:set_animation("walking") end
+      enemy:restart()
     end
   end
 end

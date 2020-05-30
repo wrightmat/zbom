@@ -116,7 +116,7 @@ function enemy:go_attack()
   end
 
   function sword_sprite:on_animation_finished(animation)
-    sol.timer.start(self:get_game(), 1000, function() enemy:check_hero() end)
+    sol.timer.start(enemy:get_game(), 1000, function() enemy:check_hero() end)
   end
 end
 

@@ -31,24 +31,26 @@ function enemy:on_restarted()
 end
 
 function enemy:prepare_wind()
-  local prefix = self:get_name() .. "_son_"
-  local life_lost = initial_life - self:get_life()
-  local nb_to_create = 3 + life_lost
+  if self then
+    local prefix = self:get_name() .. "_son_"
+    local life_lost = initial_life - self:get_life()
+    local nb_to_create = 3 + life_lost
 
-  function repeat_throw_wind()
-    nb_sons_created = nb_sons_created + 1
-    local son_name = prefix .. nb_sons_created
-    self:create_enemy{ name = son_name, breed = "whirlwind", x = 0, y = -16, layer = 0, treasure_name = "arrow" }
-    nb_to_create = nb_to_create - 1
-    if nb_to_create > 0 then
-      sol.timer.start(self, 200, repeat_throw_wind)
+    function repeat_throw_wind()
+      nb_sons_created = nb_sons_created + 1
+      local son_name = prefix .. nb_sons_created
+      self:create_enemy{ name = son_name, breed = "whirlwind", x = 0, y = -16, layer = 0, treasure_name = "arrow" }
+      nb_to_create = nb_to_create - 1
+      if nb_to_create > 0 then
+        sol.timer.start(self, 200, repeat_throw_wind)
+      end
     end
-  end
-  repeat_throw_wind()
+    repeat_throw_wind()
 
-  sol.timer.start(self, math.random(4000, 6000), function()
-    self:prepare_wind()
-  end)
+    sol.timer.start(self, math.random(4000, 6000), function()
+      self:prepare_wind()
+    end)
+  end
 end
 
 function enemy:on_hurt(attack, life_lost)

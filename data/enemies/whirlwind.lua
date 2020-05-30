@@ -33,7 +33,7 @@ function enemy:on_restarted()
 end
 
 function enemy:on_movement_finished(movement)
-  sol.timer.start(self, 20000, function() 
+  sol.timer.start(self, 10000, function() 
     self:remove()
   end)
 end
