@@ -60,22 +60,24 @@ function map:on_started(destination)
     -- Green Potion takes second spot, which is empty (placeholder to make positioning easier).
     -- The first one is for free.
     local p = game:get_value("i2014") == 20 and 0 or 100
-    shop_potion_2=replace_shop_treasure(shop_potion_2,{name="shop_potion",treasure_name="potion",treasure_variant=2,dialog="shop.potion_green",price=p})
+    shop_potion_2 = replace_shop_treasure(shop_potion_2, { name="shop_potion", treasure_name="potion", treasure_variant=2, dialog="shop.potion_green", price=p })
   elseif game:get_value("i2014") >= 1 then
     game:set_value("i2014", game:get_value("i2014")+1)  -- Green Potion.
+  else
+    shop_potion_2:remove() -- Before the potion quest starts, just remove this item so that it doesn't show up weird.
   end
   if game:get_value("i2015") >= 10 then
     -- Blue Potion replaces Red Potion.
     -- The first one is for free.
     local p = game:get_value("i2015") == 20 and 0 or 150
-    shop_potion_1=replace_shop_treasure(shop_potion_1,{name="shop_potion",treasure_name="potion",treasure_variant=3,dialog="shop.potion_blue",price=p})
+    shop_potion_1 = replace_shop_treasure(shop_potion_1, { name="shop_potion", treasure_name="potion", treasure_variant=3, dialog="shop.potion_blue", price=p })
   elseif game:get_value("i2015") >= 1 then
     game:set_value("i2015", game:get_value("i2015")+1)  -- Blue Potion.
   end
   if game:get_value("i1631") >= 16 then
     -- If all herbs are found in fetch quest, the final potion becomes available.
     -- Revitalizing Potion replaces Green Potion.
-    shop_potion_2 = replace_shop_treasure(shop_potion_2,{name="shop_potion",treasure_name="potion",treasure_variant=4,dialog="shop.potion_revitalizing",price=200})
+    shop_potion_2 = replace_shop_treasure(shop_potion_2, { name="shop_potion", treasure_name="potion", treasure_variant=4, dialog="shop.potion_revitalizing", price=200 })
   end
   if game:get_value("i2021") >= 1 then game:set_value("i2021", game:get_value("i2021")+1) end  -- Odd (trading)
 
@@ -127,24 +129,12 @@ function map:on_started(destination)
   -- Replace shop items as the game progresses.
   if game:get_value("i2015") >= 10 then
     -- Apples replaced by red potion if it's no longer available on potion side.
-    shop_ordon_apple = replace_shop_treasure(shop_ordon_apple,{
-	    name = "shop_potion",
-	    price = 60,
-	    dialog = "shop.potion_red",
-	    treasure_name = "potion",
-	    treasure_variant = 1
-    })
+    shop_ordon_apple = replace_shop_treasure(shop_ordon_apple, { name = "shop_potion", price = 60, dialog = "shop.potion_red", treasure_name = "potion", treasure_variant = 1 })
   end
 
   if game:get_value("i1820") >= 2 then
     -- Shield. Don't allow lesser version to be bought after Hylian or Light.
-    shop_ordon_shield = replace_shop_treasure(shop_ordon_shield,{
-	    name = "shop_arrow",
-	    price = 40,
-	    dialog = "shop.arrow",
-	    treasure_name = "arrow",
-	    treasure_variant = 3
-    })
+    shop_ordon_shield = replace_shop_treasure(shop_ordon_shield, { name = "shop_arrow", price = 40, dialog = "shop.arrow", treasure_name = "arrow", treasure_variant = 3 })
   end
 
   -- Activate any night-specific dynamic tiles.
@@ -169,13 +159,13 @@ function map:on_started(destination)
         treasure:get_game():set_value("i2014", 30)
         -- This item is not free anymore so set the price.
         -- Unfortunately the only way to do that is recreating the item...
-        shop_potion_2=replace_shop_treasure(shop_potion_2,{name="shop_potion",treasure_name="potion",treasure_variant=2,dialog="shop.potion_green",price=200})
+        shop_potion_2 = replace_shop_treasure(shop_potion_2, { name="shop_potion", treasure_name="potion", treasure_variant=2, dialog="shop.potion_green", price=200 })
       end
       if treasure:get_game():get_value("i2015") == 20 then
         treasure:get_game():set_value("i2015", 30)
         -- This item is not free anymore so set the price.
         -- Unfortunately the only way to do that is recreating the item...
-        shop_potion_1=replace_shop_treasure(shop_potion_1,{name="shop_potion",treasure_name="potion",treasure_variant=3,dialog="shop.potion_blue",price=150})
+        shop_potion_1 = replace_shop_treasure(shop_potion_1, { name="shop_potion", treasure_name="potion", treasure_variant=3, dialog="shop.potion_blue", price=150 })
       end
     end
   end
