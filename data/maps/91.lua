@@ -26,11 +26,11 @@ if game.deception_fog_overlay == nil then
    game:get_item("bottle_2"):get_variant() == 8 or -- then it's easier to see.
    game:get_item("bottle_3"):get_variant() == 8 or
    game:get_item("bottle_4"):get_variant() == 8 then
-    game.deception_fog_overlay = sol.surface.create("effects/fog.png")
+    game.deception_fog_overlay = sol.surface.load("sprites/effects/fog.png")
     game.deception_fog_overlay:set_opacity(168)
     poe_guided = true
   else
-    game.deception_fog_overlay = sol.surface.create("effects/fog.png")
+    game.deception_fog_overlay = sol.surface.load("sprites/effects/fog.png")
     game.deception_fog_overlay:set_opacity(216)
     poe_guided = false
     poe_guide:remove()

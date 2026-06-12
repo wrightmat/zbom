@@ -42,7 +42,7 @@ function warp_menu:on_started()
   game.hud:set_enabled(true)  -- Refresh the HUD so it stays on top of the menu.
   self.hero_head_sprite = sol.sprite.create("menus/hero_head")
   self.hero_head_sprite:set_animation("tunic" .. game:get_item("tunic"):get_variant())
-  self.background_surfaces = sol.surface.create("pause_submenus.png", true)
+  self.background_surfaces = sol.surface.load("languages/" .. sol.language.get_language() .. "/images/pause_submenus.png")
   self.background_surfaces:set_opacity(192)
   self.cursor_sprite = sol.sprite.create("menus/pause_cursor")
   local menu_font, menu_font_size = sol.language.get_menu_font()
@@ -62,7 +62,7 @@ function warp_menu:on_started()
   -- Show a world map.
   self.caption_text_1:set_text(sol.language.get_string("map.caption.warp"))
   self.outside_world_minimap_size = { width = 225, height = 399 }
-  self.world_minimap_img = sol.surface.create("menus/warp_map.png")
+  self.world_minimap_img = sol.surface.load("sprites/menus/warp_map.png")
   self.world_minimap_movement = nil
   self.world_minimap_visible_xy = {x = 0, y = 0 }
 

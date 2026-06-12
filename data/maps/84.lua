@@ -5,7 +5,7 @@ local game = map:get_game()
 -- Outside World (Lost Woods - Interloper Sanctum Entrance) --
 --------------------------------------------------------------
 
-screen_overlay = sol.surface.create("effects/woods.png")
+screen_overlay = sol.surface.load("sprites/effects/woods.png")
 screen_overlay:set_opacity(255)
 
 local function send_hero(from_sensor, to_sensor)

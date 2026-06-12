@@ -218,7 +218,7 @@ function quest_status_submenu:on_started()
   end
   
   -- Dungeons finished
-  local dungeons_img = sol.surface.create("menus/quest_status_dungeons.png")
+  local dungeons_img = sol.surface.load("sprites/menus/quest_status_dungeons.png")
   local dst_positions = {
     { 225,  69 },
     { 243,  74 },

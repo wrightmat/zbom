@@ -7,7 +7,7 @@ function action_icon_builder:new(game)
 
   function action_icon:initialize()
     action_icon.surface = sol.surface.create(72, 24)
-    action_icon.icons_img = sol.surface.create("action_icon.png", true)
+    action_icon.icons_img = sol.surface.load("languages/" .. sol.language.get_language() .. "/images/action_icon.png")
     action_icon.icon_region_y = nil
     action_icon.icon_flip_sprite = sol.sprite.create("hud/action_icon_flip")
     action_icon.is_flipping = false

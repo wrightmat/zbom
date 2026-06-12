@@ -15,7 +15,7 @@ end
 function magic_bar:initialize(game)
   self.game = game
   self.surface = sol.surface.create(88, 8)
-  self.magic_bar_img = sol.surface.create("hud/magic_bar.png")
+  self.magic_bar_img = sol.surface.load("sprites/hud/magic_bar.png")
   self.container_sprite = sol.sprite.create("hud/magic_bar")
   self.magic_displayed = game:get_magic()
   self.max_magic_displayed = 0

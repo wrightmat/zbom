@@ -14,7 +14,7 @@ end
 function hero_condition:initialize(game)
   self.game = game
   self.surface = sol.surface.create(24, 24)
-  self.condition_icons_img = sol.surface.create("hud/condition_icon.png")
+  self.condition_icons_img = sol.surface.load("sprites/hud/condition_icon.png")
 
   self:rebuild_surface()
 end
