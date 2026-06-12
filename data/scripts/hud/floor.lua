@@ -16,7 +16,7 @@ function floor_view:initialize(game)
   self.game = game
   self.visible = false
   self.surface = sol.surface.create(200, 400)
-  self.floors_img = sol.surface.create("floors.png", true)  -- Language-specific image
+  self.floors_img = sol.surface.load("languages/" .. sol.language.get_language() .. "/images/floors.png", true)  -- Language-specific image
   self.dungeon_name = sol.text_surface.create({ font = "white_digits", font_size = 12 })
   self.floor = nil
 end

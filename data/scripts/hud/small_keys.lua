@@ -2,7 +2,7 @@
 -- Done in ALBW style, a key icon is shown for each key obtained (no counter or icon)
 
 local small_keys = {}
-local icon_img = sol.surface.create("hud/small_key.png")
+local icon_img = sol.surface.load("sprites/hud/small_key.png")
 
 function small_keys:new(game)
   local object = {}

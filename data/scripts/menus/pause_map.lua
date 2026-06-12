@@ -34,7 +34,7 @@ function map_submenu:on_started()
       map_shown = true      -- If in South Hyrule with World Map, then show the map.
       self.outside_world_size = { width = 10008, height = 16814 }
       self.outside_world_minimap_size = { width = 225, height = 266 }
-      self.world_minimap_img = sol.surface.create("menus/outside_world_map.png")
+      self.world_minimap_img = sol.surface.load("sprites/menus/outside_world_map.png")
       local hero_minimap_x = math.floor(hero_absolute_x * self.outside_world_minimap_size.width / self.outside_world_size.width)
       local hero_minimap_y = math.floor(hero_absolute_y * self.outside_world_minimap_size.height / self.outside_world_size.height)
       self.hero_x = hero_minimap_x + (hero_absolute_x / 350) + 10
@@ -44,7 +44,7 @@ function map_submenu:on_started()
       map_shown = true      -- If in Subrosia with upgraded World Map, then show the map.
       self.outside_world_size = { width = 3362, height = 4483 }
       self.outside_world_minimap_size = { width = 225, height = 133 }
-      self.world_minimap_img = sol.surface.create("menus/outside_world_map_2.png")
+      self.world_minimap_img = sol.surface.load("sprites/menus/outside_world_map_2.png")
       local hero_minimap_x = math.floor(hero_absolute_x * self.outside_world_minimap_size.width / self.outside_world_size.width) + 10
       local hero_minimap_y = math.floor(hero_absolute_y * self.outside_world_minimap_size.height / self.outside_world_size.height) - 5
       self.hero_x = hero_minimap_x + 24
@@ -54,7 +54,7 @@ function map_submenu:on_started()
       map_shown = true      -- If in North Hyrule with upgraded World Map, then show the map.
       self.outside_world_size = { width = 16814, height = 6725 }
       self.outside_world_minimap_size = { width = 225, height = 133 }
-      self.world_minimap_img = sol.surface.create("menus/outside_world_map_3.png")
+      self.world_minimap_img = sol.surface.load("sprites/menus/outside_world_map_3.png")
       local hero_minimap_x = math.floor(hero_absolute_x * self.outside_world_minimap_size.width / self.outside_world_size.width)
       local hero_minimap_y = math.floor(hero_absolute_y * self.outside_world_minimap_size.height / self.outside_world_size.height)
       self.hero_x = hero_minimap_x + 32
@@ -63,7 +63,7 @@ function map_submenu:on_started()
     else
       -- if World Map not in inventory, show clouds in map screen
       map_shown = false
-      self.world_minimap_img = sol.surface.create("menus/outside_world_clouds.png")
+      self.world_minimap_img = sol.surface.load("sprites/menus/outside_world_clouds.png")
       self.world_minimap_visible_xy.y = 0
     end
   else
@@ -74,8 +74,8 @@ function map_submenu:on_started()
     self:set_caption("map.caption.dungeon_name_" .. self.dungeon_index)
     
     -- Item icons.
-    self.dungeon_map_background_img = sol.surface.create("menus/dungeon_map_background.png")
-    self.dungeon_map_icons_img = sol.surface.create("menus/dungeon_map_icons.png")
+    self.dungeon_map_background_img = sol.surface.load("sprites/menus/dungeon_map_background.png")
+    self.dungeon_map_icons_img = sol.surface.load("sprites/menus/dungeon_map_icons.png")
     self.small_keys_text = sol.text_surface.create{
       font = "white_digits",
       horizontal_alignment = "right",
@@ -84,7 +84,7 @@ function map_submenu:on_started()
     }
     
     -- Floors.
-    self.dungeon_floors_img = sol.surface.create("floors.png", true)
+    self.dungeon_floors_img = sol.surface.load("languages/" .. sol.language.get_language() .. "/images/floors.png")
     self.hero_floor = self.game:get_map():get_floor()
     self.nb_floors = self.dungeon.highest_floor - self.dungeon.lowest_floor + 1
     self.nb_floors_displayed = math.min(7, self.nb_floors)

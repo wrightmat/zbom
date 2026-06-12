@@ -8,10 +8,10 @@ function savegame_menu:on_started()
   -- Create all graphic objects.
   self.surface = sol.surface.create(320, 240)
   self.background_color = { 104, 144, 240 }
-  self.background_img = sol.surface.create("menus/selection_menu_background.png")
-  self.cloud_img = sol.surface.create("menus/selection_menu_cloud.png")
-  self.save_container_img = sol.surface.create("menus/selection_menu_save_container.png")
-  self.option_container_img = sol.surface.create("menus/selection_menu_option_container.png")
+  self.background_img = sol.surface.load("sprites/menus/selection_menu_background.png")
+  self.cloud_img = sol.surface.load("sprites/menus/selection_menu_cloud.png")
+  self.save_container_img = sol.surface.load("sprites/menus/selection_menu_save_container.png")
+  self.option_container_img = sol.surface.load("sprites/menus/selection_menu_option_container.png")
   local menu_font, menu_font_size = sol.language.get_menu_font()
   self.option1_text = sol.text_surface.create{
     font = menu_font,
@@ -248,7 +248,7 @@ function savegame_menu:read_savegames()
     local slot = {}
     slot.file_name = "save" .. i .. ".dat"
     slot.savegame = sol.game.load(slot.file_name)
-    slot.number_img = sol.surface.create("menus/selection_menu_save" .. i .. ".png")
+    slot.number_img = sol.surface.load("sprites/menus/selection_menu_save" .. i .. ".png")
 
     slot.player_name_text = sol.text_surface.create{
       font = font,
@@ -866,7 +866,7 @@ function savegame_menu:init_phase_choose_name()
     font_size = font_size,
   }
   self.letter_cursor = { x = 0, y = 0 }
-  self.letters_img = sol.surface.create("menus/selection_menu_letters.png")
+  self.letters_img = sol.surface.load("sprites/menus/selection_menu_letters.png")
   self.name_arrow_sprite = sol.sprite.create("menus/arrow")
   self.name_arrow_sprite:set_direction(0)
   self.can_add_letter_player_name = true

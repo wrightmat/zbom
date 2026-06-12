@@ -7,7 +7,7 @@ function pause_icon_builder:new(game)
   
   function pause_icon:initialize(game)
     pause_icon.surface = sol.surface.create(72, 24)
-    pause_icon.icons_img = sol.surface.create("pause_icon.png", true)
+    pause_icon.icons_img = sol.surface.load("languages/" .. sol.language.get_language() .. "/images/pause_icon.png")
     pause_icon.icon_region_y = nil
     pause_icon.is_game_paused = false
     pause_icon.icon_flip_sprite = sol.sprite.create("hud/pause_icon_flip")

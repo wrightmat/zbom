@@ -20,7 +20,7 @@ function rupees:initialize(game)
     horizontal_alignment = "left",
   }
   self.digits_text:set_text(game:get_money())
-  self.rupee_icons_img = sol.surface.create("hud/rupee_icon.png")
+  self.rupee_icons_img = sol.surface.load("sprites/hud/rupee_icon.png")
   self.rupee_bag_displayed = self.game:get_item("rupee_bag"):get_variant()
   self.money_displayed = self.game:get_money()
 

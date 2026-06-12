@@ -17,7 +17,7 @@ end
 function pickables:initialize(game)
   self.game = game
   self.surface = sol.surface.create(250, 25)
-  self.background_img = sol.surface.create("hud/pickables.png")
+  self.background_img = sol.surface.load("sprites/hud/pickables.png")
   self.jade_text = sol.text_surface.create{ font = "white_digits", horizontal_alignment = "right" }
   if not game:get_value("i1849") then self.jade_displayed = 0 else self.jade_displayed = game:get_value("i1849") end
   self.jade_text:set_text(self.jade_displayed)

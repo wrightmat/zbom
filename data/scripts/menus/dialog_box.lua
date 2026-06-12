@@ -69,7 +69,7 @@ function game:initialize_dialog_box()
   end
   
   dialog_box.dialog_surface = sol.surface.create(sol.video.get_quest_size())
-  dialog_box.icons_img = sol.surface.create("hud/dialog_icons.png")
+  dialog_box.icons_img = sol.surface.load("sprites/hud/dialog_icons.png")
   dialog_box.end_lines_sprite = sol.sprite.create("hud/dialog_box_message_end")
   game:set_dialog_style("default")
 end
@@ -112,13 +112,13 @@ end
 function game:set_dialog_style(style)
   dialog_box.style = style
   if style == "wood" then
-    dialog_box.box_img = sol.surface.create("hud/dialog_box_wood.png")
+    dialog_box.box_img = sol.surface.load("sprites/hud/dialog_box_wood.png")
     dialog_box.end_lines_sprite:set_animation("wood")
   elseif style == "stone" then
-    dialog_box.box_img = sol.surface.create("hud/dialog_box_stone.png")
+    dialog_box.box_img = sol.surface.load("sprites/hud/dialog_box_stone.png")
     dialog_box.end_lines_sprite:set_animation("stone")
   else
-    dialog_box.box_img = sol.surface.create("hud/dialog_box.png")
+    dialog_box.box_img = sol.surface.load("sprites/hud/dialog_box.png")
     dialog_box.end_lines_sprite:set_animation("default")
   end
 end

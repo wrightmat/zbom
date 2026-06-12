@@ -10,15 +10,12 @@ function title_screen:on_started()
   sol.timer.start(self, 300, function()
     self:phase_zs_presents()
   end)
-
-  -- Use these 0.3 seconds to preload all sound effects.
-  sol.audio.preload_sounds()
 end
 
 function title_screen:phase_zs_presents()
   -- "Zelda Solarus presents" displayed for two seconds.
   self.phase = "zs_presents"
-  local zs_presents_img = sol.surface.create("title_screen_initialization.png", true)
+  local zs_presents_img = sol.surface.load("languages/" .. sol.language.get_language() .. "/images/title_screen_initialization.png")
 
   local width, height = zs_presents_img:get_size()
   local x, y = 160 - width / 2, 80 - height / 2
@@ -35,7 +32,7 @@ end
 function title_screen:phase_zh_production()
   -- "A ZeldaHistorian Production" displayed for two seconds.
   self.phase = "zh_production"
-  local zh_production_img = sol.surface.create("title_screen_initialization_2.png", true)
+  local zh_production_img = sol.surface.load("languages/" .. sol.language.get_language() .. "/images/title_screen_initialization_2.png")
 
   local width, height = zh_production_img:get_size()
   local x, y = 160 - width / 2, 160 - height / 2
@@ -69,17 +66,17 @@ function title_screen:phase_title()
   end
 
   -- Create all images.
-  self.background_img = sol.surface.create("menus/title_" .. time_of_day .. "_background.png")
-  self.clouds_img = sol.surface.create("menus/title_" .. time_of_day .. "_clouds.png")
-  self.logo_img = sol.surface.create("menus/title_logo.png")
+  self.background_img = sol.surface.load("sprites/menus/title_" .. time_of_day .. "_background.png")
+  self.clouds_img = sol.surface.load("sprites/menus/title_" .. time_of_day .. "_clouds.png")
+  self.logo_img = sol.surface.load("sprites/menus/title_logo.png")
 
-  self.website_img = sol.text_surface.create{
-    font = sol.language.get_book_font(),
-    font_size = 16,
-    color = {240, 200, 56},
-    text_key = "title_screen.website",
-    horizontal_alignment = "center"
-  }
+  --self.website_img = sol.text_surface.create{
+  --  font = sol.language.get_book_font(),
+  --  font_size = 16,
+  --  color = {240, 200, 56},
+  --  text_key = "title_screen.website",
+  --  horizontal_alignment = "center"
+ -- }
 
   self.press_space_img = sol.text_surface.create{
     font = sol.language.get_dialog_font(),
@@ -149,7 +146,7 @@ function title_screen:draw_phase_title()
   self.clouds_img:draw(self.surface, x, y)
 
   -- Website name and logo.
-  self.website_img:draw(self.surface, 160, 220)
+  --self.website_img:draw(self.surface, 160, 220)
   self.logo_img:draw(self.surface)
 
   if self.dx_img then

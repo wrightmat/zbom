@@ -15,8 +15,8 @@ end
 function stamina_bar:initialize(game)
   self.game = game
   self.surface = sol.surface.create(88, 8)
-  self.stamina_bar_img = sol.surface.create("hud/magic_bar.png")
-  self.container_img = sol.surface.create("hud/magic_bar.png")
+  self.stamina_bar_img = sol.surface.load("sprites/hud/magic_bar.png")
+  self.container_img = sol.surface.load("sprites/hud/magic_bar.png")
   self.stamina_displayed = game:get_stamina()
   self.max_stamina_displayed = 0
 

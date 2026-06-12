@@ -10,7 +10,7 @@ function submenu:new(game)
 end
 
 function submenu:on_started()
-  self.background_surfaces = sol.surface.create("pause_submenus.png", true)
+  self.background_surfaces = sol.surface.load("languages/" .. sol.language.get_language() .. "/images/pause_submenus.png")
   self.background_surfaces:set_opacity(216)
   self.save_dialog_sprite = sol.sprite.create("menus/pause_save_dialog")
   self.save_dialog_state = 0

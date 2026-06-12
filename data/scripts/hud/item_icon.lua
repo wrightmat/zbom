@@ -16,7 +16,7 @@ function item_icon:initialize(game, slot)
   self.game = game
   self.slot = slot
   self.surface = sol.surface.create(32, 28)
-  self.background_img = sol.surface.create("hud/item_icon_" .. slot .. ".png")
+  self.background_img = sol.surface.load("sprites/hud/item_icon_" .. slot .. ".png")
   self.item_sprite = sol.sprite.create("entities/items")
   self.item_displayed = nil
   self.item_variant_displayed = 0

@@ -7,7 +7,7 @@ function attack_icon_builder:new(game)
 
   function attack_icon:initialize()
     attack_icon.surface = sol.surface.create(72, 24)
-    attack_icon.icons_img = sol.surface.create("sword_icon.png", true)
+    attack_icon.icons_img = sol.surface.load("languages/" .. sol.language.get_language() .. "/images/sword_icon.png", true)
     attack_icon.icon_region_y = nil
     attack_icon.icon_flip_sprite = sol.sprite.create("hud/sword_icon_flip")
     attack_icon.is_flipping = false
