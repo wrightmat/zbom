@@ -13,13 +13,13 @@ function credits_menu:on_started()
   game:get_hero():freeze()
   
   self.heading = sol.text_surface.create{
-    font = "lttp",
+    font = "Book",
     font_size = "20",
     horizontal_alignment = "center",
     vertical_alignment = "top"
   }
   self.line = sol.text_surface.create{
-    font = "lttp",
+    font = "Book",
     font_size = "14",
     horizontal_alignment = "center",
     vertical_alignment = "top"
