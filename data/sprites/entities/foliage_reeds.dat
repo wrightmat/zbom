@@ -1,0 +1,17 @@
+animation{
+  name = "stopped",
+  src_image = "entities/foliage.png",
+  frame_delay = 260,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 96, y = 64, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 27, num_frames = 4 },
+  },
+}
+animation{
+  name = "shaking",
+  src_image = "entities/foliage.png",
+  frame_delay = 160,
+  directions = {
+    { x = 96, y = 96, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 27, num_frames = 4 },
+  },
+}

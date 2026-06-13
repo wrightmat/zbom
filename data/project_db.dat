@@ -393,6 +393,18 @@ sprite{ id = "entities/fireworks_shower", description = "Fireworks (ground showe
 sprite{ id = "entities/flag_gerudo", description = "Gerudo Flag" }
 sprite{ id = "entities/flag_goron", description = "Goron Flag" }
 sprite{ id = "entities/flag_zora", description = "Zora Flag" }
+sprite{ id = "entities/foliage_broadleaf_brown", description = "Foliage - Broadleaf Brown" }
+sprite{ id = "entities/foliage_broadleaf_green", description = "Foliage - Broadleaf Green" }
+sprite{ id = "entities/foliage_cattails", description = "Foliage - Cattails" }
+sprite{ id = "entities/foliage_cattails_grasses", description = "Foliage - Cattails Grasses" }
+sprite{ id = "entities/foliage_grass_brown", description = "Foliage - Grass Brown" }
+sprite{ id = "entities/foliage_grass_green", description = "Foliage - Grass Green" }
+sprite{ id = "entities/foliage_grass_rusty", description = "Foliage - Grass Rusty" }
+sprite{ id = "entities/foliage_grass_wetland", description = "Foliage -Grass Wetland" }
+sprite{ id = "entities/foliage_milkweed_brown", description = "Foliage - Milkweed Brown" }
+sprite{ id = "entities/foliage_milkweed_yellow", description = "Foliage - Milkweed Yellow" }
+sprite{ id = "entities/foliage_reeds", description = "Foliage - Reeds" }
+sprite{ id = "entities/foliage_sprig", description = "Foliage - Sprig" }
 sprite{ id = "entities/grass", description = "Grass" }
 sprite{ id = "entities/ground_effects", description = "Ground Effects" }
 sprite{ id = "entities/hammer_stake", description = "Hammer Stake" }
@@ -1025,6 +1037,7 @@ enemy{ id = "zola", description = "Zola" }
 entity{ id = "arrow", description = "Arrow" }
 entity{ id = "butterfly", description = "Butterfly" }
 entity{ id = "flag", description = "Flag" }
+entity{ id = "foliage", description = "Foliage" }
 entity{ id = "generic_flying_pickable", description = "Generic Flying Pickable" }
 entity{ id = "generic_portable", description = "Generic Portable" }
 entity{ id = "hammer_stake", description = "Hammer Stake" }
