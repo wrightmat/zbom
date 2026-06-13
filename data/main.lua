@@ -249,7 +249,7 @@ function sol.language.get_dialog_font(language)
     --size = 12
   else
     font = "enter_command"
-    size = 16
+    size = 14.5
   end
   return font, size
 end
@@ -265,7 +265,7 @@ function sol.language.get_menu_font(language)
     --size = 12
   else
     font = "enter_command"
-    size = 16
+    size = 15
   end
   return font, size
 end
@@ -281,7 +281,7 @@ function sol.language.get_book_font(language)
     --size = 12
   else
     font = "Cairopixel"
-    size = 16
+    size = 15
   end
   return font, size
 end

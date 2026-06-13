@@ -35,9 +35,7 @@ function quest_status_submenu:on_started()
         self.quests_texts[self.quests_num] = sol.text_surface.create{
           horizontal_alignment = "left",
           vertical_alignment = "top",
-          font = font,
-          font_size = 9,
-          color = {0,0,0},
+          font = font,  font_size = 14, color = {0,0,0},
           text_key = "quests.title." .. self.quests_main_list[i]
         }
         self.quests_saves[self.quests_num] = self.quests_main_list[i]
@@ -53,9 +51,7 @@ function quest_status_submenu:on_started()
         self.quests_texts[self.quests_num] = sol.text_surface.create{
           horizontal_alignment = "left",
           vertical_alignment = "top",
-          font = font,
-          font_size = 9,
-          color = {0,0,0},
+          font = font, font_size = 14, color = {0,0,0},
           text_key = "quests.title." .. self.quests_side_list[j]
         }
         self.quests_saves[self.quests_num] = self.quests_side_list[j]
@@ -73,9 +69,7 @@ function quest_status_submenu:on_started()
         self.quests_texts[self.quests_num] = sol.text_surface.create{
           horizontal_alignment = "left",
           vertical_alignment = "top",
-          font = font,
-          font_size = 9,
-          color = {220,220,220},
+          font = font, font_size = 14, color = {220,220,220},
           text_key = "quests.title." .. self.quests_main_list[i]
         }
         self.quests_saves[self.quests_num] = self.quests_main_list[i]
@@ -91,9 +85,7 @@ function quest_status_submenu:on_started()
         self.quests_texts[self.quests_num] = sol.text_surface.create{
           horizontal_alignment = "left",
           vertical_alignment = "top",
-          font = font,
-          font_size = 9,
-          color = {220,220,220},
+          font = font, font_size = 14, color = {220,220,220},
           text_key = "quests.title." .. self.quests_side_list[j]
         }
         self.quests_saves[self.quests_num] = self.quests_side_list[j]
@@ -104,7 +96,7 @@ function quest_status_submenu:on_started()
   end
   
   self.quests_surface = sol.surface.create(102, (#self.quests_texts * 13) + 2)
-  self.quests_surface:set_xy(87, 81)
+  self.quests_surface:set_xy(135, 81)
   
   for i = 1, #self.quests_texts do
     local y = 13 * i - 5

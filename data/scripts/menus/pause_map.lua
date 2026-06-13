@@ -232,7 +232,7 @@ end
 
 function map_submenu:draw_dungeon_map(dst_surface)
   -- Background.
-  self.dungeon_map_background_img:draw(dst_surface, 48, 59)
+  self.dungeon_map_background_img:draw(dst_surface, 96, 59)
 
   -- Items.
   self:draw_dungeon_items(dst_surface)
@@ -245,7 +245,7 @@ function map_submenu:draw_dungeon_map(dst_surface)
       and self.selected_floor == self.hero_floor then
     self.hero_point_sprite:draw(self.dungeon_map_img, self.hero_x, self.hero_y)
   end
-  self.dungeon_map_img:draw(dst_surface, 143, 66)
+  self.dungeon_map_img:draw(dst_surface, 191, 66)
 end
 
 function map_submenu:draw_dungeon_items(dst_surface)
@@ -280,27 +280,25 @@ function map_submenu:draw_dungeon_floors(dst_surface)
   local src_y = (15 - self.highest_floor_displayed) * 12
   local src_width = 32
   local src_height = self.nb_floors_displayed * 12 + 1
-  local dst_x = 79
+  local dst_x = 127 --79
   local dst_y = 70 + (8 - self.nb_floors_displayed) * 6
   local old_dst_y = dst_y
 
-  self.dungeon_floors_img:draw_region(src_x, src_y, src_width, src_height,
-      dst_surface, dst_x, dst_y)
+  self.dungeon_floors_img:draw_region(src_x, src_y, src_width, src_height, dst_surface, dst_x, dst_y)
 
   -- Draw the current floor with other colors.
   src_x = 64
   src_y = (15 - self.selected_floor) * 12
   src_height = 13
   dst_y = old_dst_y + (self.highest_floor_displayed - self.selected_floor) * 12
-  self.dungeon_floors_img:draw_region(src_x, src_y, src_width, src_height,
-      dst_surface, dst_x, dst_y)
+  self.dungeon_floors_img:draw_region(src_x, src_y, src_width, src_height, dst_surface, dst_x, dst_y)
  
   -- Draw the hero's icon if any.
   local lowest_floor_displayed = self.highest_floor_displayed - self.nb_floors_displayed + 1
   if self.hero_floor ~= nil
       and self.hero_floor >= lowest_floor_displayed
       and self.hero_floor <= self.highest_floor_displayed then
-    dst_x = 61
+    dst_x = 109 --61
     dst_y = old_dst_y + (self.highest_floor_displayed - self.hero_floor) * 12
     self.hero_head_sprite:draw(dst_surface, dst_x, dst_y)
   end
@@ -310,7 +308,6 @@ function map_submenu:draw_dungeon_floors(dst_surface)
       and self.boss_floor ~= nil
       and self.boss_floor >= lowest_floor_displayed
       and self.boss_floor <= highest_floor_displayed then
-
     dst_y = old_dst_y + (self.highest_floor_displayed - self.boss_floor) * 12 + 3
     self.dungeon_map_icons_img:draw_region(78, 0, 8, 8, dst_surface, 113, dst_y)
   end

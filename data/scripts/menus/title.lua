@@ -6,7 +6,7 @@ function title_screen:on_started()
   -- Black screen during 0.3 seconds.
   self.phase = "black"
 
-  self.surface = sol.surface.create(320, 240)
+  self.surface = sol.surface.create(416, 240)
   sol.timer.start(self, 300, function()
     self:phase_zs_presents()
   end)
@@ -18,7 +18,7 @@ function title_screen:phase_zs_presents()
   local zs_presents_img = sol.surface.load("languages/" .. sol.language.get_language() .. "/images/title_screen_initialization.png")
 
   local width, height = zs_presents_img:get_size()
-  local x, y = 160 - width / 2, 80 - height / 2
+  local x, y = 208 - width / 2, 80 - height / 2
   zs_presents_img:draw(self.surface, x, y)
   sol.audio.play_sound("intro")
 
@@ -35,7 +35,7 @@ function title_screen:phase_zh_production()
   local zh_production_img = sol.surface.load("languages/" .. sol.language.get_language() .. "/images/title_screen_initialization_2.png")
 
   local width, height = zh_production_img:get_size()
-  local x, y = 160 - width / 2, 160 - height / 2
+  local x, y = 208 - width / 2, 160 - height / 2
   zh_production_img:draw(self.surface, x, y)
   sol.audio.play_sound("intro")
 
@@ -70,18 +70,17 @@ function title_screen:phase_title()
   self.clouds_img = sol.surface.load("sprites/menus/title_" .. time_of_day .. "_clouds.png")
   self.logo_img = sol.surface.load("sprites/menus/title_logo.png")
 
-  --self.website_img = sol.text_surface.create{
-  --  font = sol.language.get_book_font(),
-  --  font_size = 16,
-  --  color = {240, 200, 56},
-  --  text_key = "title_screen.website",
-  --  horizontal_alignment = "center"
- -- }
-
   self.press_space_img = sol.text_surface.create{
     font = sol.language.get_dialog_font(),
-    font_size = 14,
+    font_size = 24,
     color = {255, 255, 255},
+    text_key = "title_screen.press_space",
+    horizontal_alignment = "center"
+  }
+  self.press_space_img_bg = sol.text_surface.create{
+    font = sol.language.get_dialog_font(),
+    font_size = 24,
+    color = {0, 0, 0},
     text_key = "title_screen.press_space",
     horizontal_alignment = "center"
   }
@@ -94,9 +93,8 @@ function title_screen:phase_title()
   sol.timer.start(self, 6500, switch_press_space)
 
   -- Make the clouds move.
-  self.clouds_xy = {x = 320, y = 240}
+  self.clouds_xy = {x = 416, y = 240}
   function move_clouds()
-
     self.clouds_xy.x = self.clouds_xy.x + 1
     self.clouds_xy.y = self.clouds_xy.y - 1
     if self.clouds_xy.x >= 535 then
@@ -125,7 +123,7 @@ function title_screen:on_draw(dst_surface)
 
   -- Final blit (dst_surface may be larger).
   local width, height = dst_surface:get_size()
-  self.surface:draw(dst_surface, width / 2 - 160, height / 2 - 120)
+  self.surface:draw(dst_surface, width / 2 - 208, height / 2 - 120)
 end
 
 function title_screen:draw_phase_title()
@@ -145,8 +143,7 @@ function title_screen:draw_phase_title()
   y = self.clouds_xy.y - 299
   self.clouds_img:draw(self.surface, x, y)
 
-  -- Website name and logo.
-  --self.website_img:draw(self.surface, 160, 220)
+  -- Logo
   self.logo_img:draw(self.surface)
 
   if self.dx_img then
@@ -156,7 +153,8 @@ function title_screen:draw_phase_title()
     self.star_img:draw(self.surface)
   end
   if self.show_press_space then
-    self.press_space_img:draw(self.surface, 220, 195)
+    self.press_space_img_bg:draw(self.surface, 261, 196)
+    self.press_space_img:draw(self.surface, 260, 195)
   end
 end
 

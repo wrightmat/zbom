@@ -23,11 +23,11 @@ function tone_manager:create(game)
 	effects.torch_hero:set_blend_mode("blend")
   
   -- Shadow surface -> Draw tones
-  shadow = sol.surface.create(320, 240)
+  shadow = sol.surface.create(416, 240)
   shadow:set_blend_mode("multiply")
 	
 	-- Light surface -> Draw light effects
-	light = sol.surface.create(320, 240)
+	light = sol.surface.create(416, 240)
   light:set_blend_mode("add")
   
   function game:restart_tone_system()
