@@ -250,10 +250,7 @@ function savegame_menu:read_savegames()
     slot.savegame = sol.game.load(slot.file_name)
     slot.number_img = sol.surface.load("sprites/menus/selection_menu_save" .. i .. ".png")
 
-    slot.player_name_text = sol.text_surface.create{
-      font = font,
-      font_size = 10,
-    }
+    slot.player_name_text = sol.text_surface.create{ font = font, font_size = font_size }
     if sol.game.exists(slot.file_name) then
       slot.player_name_text:set_text(slot.savegame:get_value("player_name"))
 
@@ -595,12 +592,12 @@ function savegame_menu:init_phase_options()
     },
     {
       name = "music_volume",
-      values = { 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100},
+      values = { 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 },
       initial_value = math.floor((sol.audio.get_music_volume() + 5) / 10) * 10
     },
     {
       name = "sound_volume",
-      values = { 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100},
+      values = { 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 },
       initial_value = math.floor((sol.audio.get_sound_volume() + 5) / 10) * 10
     }
   }
@@ -659,21 +656,21 @@ function savegame_menu:key_pressed_phase_options(key)
       -- Set an option.
       local option = self.options[self.options_cursor_position]
       if not self.modifying_option then
-	sol.audio.play_sound("ok")
-	self.left_arrow_sprite:set_frame(0)
-	self.right_arrow_sprite:set_frame(0)
-	option.label_text:set_color{255, 255, 255}
-	option.value_text:set_color{255, 255, 0}
-	self.title_text:set_text_key("selection_menu.phase.options.changing")
-	self.modifying_option = true
+        sol.audio.play_sound("ok")
+        self.left_arrow_sprite:set_frame(0)
+        self.right_arrow_sprite:set_frame(0)
+        option.label_text:set_color{255, 255, 255}
+        option.value_text:set_color{255, 255, 0}
+        self.title_text:set_text_key("selection_menu.phase.options.changing")
+        self.modifying_option = true
       else
-	sol.audio.play_sound("danger")
-	option.label_text:set_color{255, 255, 0}
-	option.value_text:set_color{255, 255, 255}
-	self.left_arrow_sprite:set_frame(0)
-	self.right_arrow_sprite:set_frame(0)
-	self.title_text:set_text_key("selection_menu.phase.options")
-	self.modifying_option = false
+        sol.audio.play_sound("danger")
+        option.label_text:set_color{255, 255, 0}
+        option.value_text:set_color{255, 255, 255}
+        self.left_arrow_sprite:set_frame(0)
+        self.right_arrow_sprite:set_frame(0)
+        self.title_text:set_text_key("selection_menu.phase.options")
+        self.modifying_option = false
       end
     end
   else
@@ -691,7 +688,6 @@ function savegame_menu:direction_pressed_phase_options(direction8)
   local handled = false
   if not self.modifying_option then
     -- Just moving the options cursor (not modifying any option).
-
     if direction8 == 2 then  -- Up.
       sol.audio.play_sound("cursor")
       self.left_arrow_sprite:set_frame(0)
@@ -701,7 +697,6 @@ function savegame_menu:direction_pressed_phase_options(direction8)
       end
       self:set_options_cursor_position(position)
       handled = true
-
     elseif direction8 == 6 then  -- Down.
       sol.audio.play_sound("cursor")
       self.left_arrow_sprite:set_frame(0)
@@ -712,10 +707,8 @@ function savegame_menu:direction_pressed_phase_options(direction8)
       self:set_options_cursor_position(position)
       handled = true
     end
-
   else
     -- An option is currently being modified.
-
     if direction8 == 0 then  -- Right.
       local option = self.options[self.options_cursor_position]
       local index = (option.current_index % #option.values) + 1
@@ -724,7 +717,6 @@ function savegame_menu:direction_pressed_phase_options(direction8)
       self.left_arrow_sprite:set_frame(0)
       self.right_arrow_sprite:set_frame(0)
       handled = true
-
     elseif direction8 == 4 then  -- Left.
       local option = self.options[self.options_cursor_position]
       local index = (option.current_index + #option.values - 2) % #option.values + 1
@@ -733,7 +725,6 @@ function savegame_menu:direction_pressed_phase_options(direction8)
       self.left_arrow_sprite:set_frame(0)
       self.right_arrow_sprite:set_frame(0)
       handled = true
-
     end
   end
   return handled
@@ -799,8 +790,8 @@ function savegame_menu:set_option_value(option, index)
     if option.name == "language" then
       option.value_text:set_text(sol.language.get_language_name(value))
       if value ~= sol.language.get_language() then
-	sol.language.set_language(value)
-	self:reload_options_strings()
+        sol.language.set_language(value)
+        self:reload_options_strings()
       end
 
     elseif option.name == "video_mode" then
@@ -861,10 +852,7 @@ function savegame_menu:init_phase_choose_name()
   self.cursor_sprite:set_animation("letters")
   self.player_name = ""
   local font, font_size = sol.language.get_menu_font()
-  self.player_name_text = sol.text_surface.create{
-    font = font,
-    font_size = font_size,
-  }
+  self.player_name_text = sol.text_surface.create{ font = font, font_size = font_size }
   self.letter_cursor = { x = 0, y = 0 }
   self.letters_img = sol.surface.load("sprites/menus/selection_menu_letters.png")
   self.name_arrow_sprite = sol.sprite.create("menus/arrow")
@@ -935,9 +923,7 @@ end
 function savegame_menu:draw_phase_choose_name()
 
   -- Letter cursor.
-  self.cursor_sprite:draw(self.surface,
-      51 + 16 * self.letter_cursor.x,
-      93 + 18 * self.letter_cursor.y)
+  self.cursor_sprite:draw(self.surface, 51 + 16 * self.letter_cursor.x, 93 + 18 * self.letter_cursor.y)
 
   -- Name and letters.
   self.name_arrow_sprite:draw(self.surface, 57, 76)

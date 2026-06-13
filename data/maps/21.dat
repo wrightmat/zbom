@@ -8560,6 +8560,17 @@ tile{
   pattern = "367",
 }
 
+custom_entity{
+  layer = 0,
+  x = 520,
+  y = 725,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_milkweed_yellow",
+  model = "foliage",
+}
+
 teletransporter{
   name = "to_D15",
   layer = 0,
@@ -9696,7 +9707,7 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 522,
+  x = 538,
   y = 745,
   width = 16,
   height = 16,
@@ -9834,6 +9845,50 @@ custom_entity{
   height = 16,
   direction = 0,
   sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 568,
+  y = 709,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_milkweed_yellow",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 664,
+  y = 709,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_milkweed_yellow",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 936,
+  y = 693,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_milkweed_yellow",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1056,
+  y = 813,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_milkweed_yellow",
   model = "foliage",
 }
 

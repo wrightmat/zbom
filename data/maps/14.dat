@@ -8462,6 +8462,28 @@ custom_entity{
   model = "foliage",
 }
 
+custom_entity{
+  layer = 0,
+  x = 344,
+  y = 741,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_milkweed_yellow",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 16,
+  y = 813,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_milkweed_yellow",
+  model = "foliage",
+}
+
 tile{
   layer = 2,
   x = 32,

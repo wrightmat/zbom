@@ -248,8 +248,8 @@ function sol.language.get_dialog_font(language)
     --font = "zqy-microhei"
     --size = 12
   else
-    font = "AndaleMono"
-    size = 9
+    font = "enter_command"
+    size = 16
   end
   return font, size
 end
@@ -264,8 +264,8 @@ function sol.language.get_menu_font(language)
     --font = "wqy-microhei"
     --size = 12
   else
-    font = "AndaleMono"
-    size = 11
+    font = "enter_command"
+    size = 16
   end
   return font, size
 end
@@ -280,8 +280,8 @@ function sol.language.get_book_font(language)
     --font = "wqy-microhei"
     --size = 12
   else
-    font = "Book"
-    size = 14
+    font = "Cairopixel"
+    size = 16
   end
   return font, size
 end
