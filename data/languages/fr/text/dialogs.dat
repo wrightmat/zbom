@@ -11321,6 +11321,14 @@ Non
 }
 
 dialog{
+  id = "sign.danger_monster_large",
+  text = [[
+Danger ! Un grand monstre a 
+été aperçu à proximité !
+]],
+}
+
+dialog{
   id = "sign.deep_water",
   skip = "current",
   text = [[

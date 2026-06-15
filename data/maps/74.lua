@@ -6,11 +6,6 @@ local game = map:get_game()
 ------------------------------------------------------------------
 
 function map:on_started(destination)
-  if game:get_time_of_day() == "night" then
-    npc_hesla:remove()
-    npc_araeki:remove()
-    npc_ibari:remove()
-  end
   if game:get_value("i1068") <= 6 then
     gerudo_ship:remove()
     map:set_entities_enabled("block", false)
@@ -20,6 +15,11 @@ function map:on_started(destination)
   elseif game:get_value("i1068") > 6 then
     gerudo_ship:get_sprite():set_animation("airship")
     map:set_entities_enabled("block", true)
+    if game:get_time_of_day() == "night" then
+      npc_hesla:remove()
+      npc_araeki:remove()
+      npc_ibari:remove()
+    end
   end
   
   -- Activate any night-specific dynamic tiles.

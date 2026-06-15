@@ -37,7 +37,7 @@ function map_submenu:on_started()
       self.world_minimap_img = sol.surface.load("sprites/menus/outside_world_map.png")
       local hero_minimap_x = math.floor(hero_absolute_x * self.outside_world_minimap_size.width / self.outside_world_size.width)
       local hero_minimap_y = math.floor(hero_absolute_y * self.outside_world_minimap_size.height / self.outside_world_size.height)
-      self.hero_x = hero_minimap_x + (hero_absolute_x / 350) + 10
+      self.hero_x = hero_minimap_x + (hero_absolute_x / 350) + 58
       self.hero_y = hero_minimap_y + (hero_absolute_y / 250) - 20
       self.world_minimap_visible_xy.y = math.min(self.outside_world_minimap_size.height - 133, math.max(0, hero_minimap_y - 65))
     elseif self.game:get_item("world_map"):get_variant() > 1 and map:get_world() == "outside_subrosia" then
@@ -208,7 +208,7 @@ end
 
 function map_submenu:draw_world_map(dst_surface)
   -- Draw the minimap.
-  self.world_minimap_img:draw_region(self.world_minimap_visible_xy.x, self.world_minimap_visible_xy.y, 255, 133, dst_surface, 48, 59)
+  self.world_minimap_img:draw_region(self.world_minimap_visible_xy.x, self.world_minimap_visible_xy.y, 255, 133, dst_surface, 96, 59)
   
   if map_shown then
     -- Draw the hero's position.
@@ -219,13 +219,13 @@ function map_submenu:draw_world_map(dst_surface)
     
     -- Draw the arrows.
     if self.world_minimap_visible_xy.y > 0 then
-      self.up_arrow_sprite:draw(dst_surface, 96, 55)
-      self.up_arrow_sprite:draw(dst_surface, 211, 55)
+      self.up_arrow_sprite:draw(dst_surface, 144, 55)
+      self.up_arrow_sprite:draw(dst_surface, 259, 55)
     end
     
     if self.world_minimap_visible_xy.y < self.outside_world_minimap_size.height - 134 then
-      self.down_arrow_sprite:draw(dst_surface, 96, 188)
-      self.down_arrow_sprite:draw(dst_surface, 211, 188)
+      self.down_arrow_sprite:draw(dst_surface, 144, 188)
+      self.down_arrow_sprite:draw(dst_surface, 259, 188)
     end
   end
 end

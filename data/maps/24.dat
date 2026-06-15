@@ -3196,6 +3196,15 @@ tile{
   pattern = "999_2",
 }
 
+tile{
+  layer = 0,
+  x = 0,
+  y = 616,
+  width = 32,
+  height = 16,
+  pattern = "368",
+}
+
 teletransporter{
   name = "to_D12",
   layer = 0,
@@ -3885,6 +3894,468 @@ teletransporter{
   height = 16,
   destination_map = "6",
   destination = "enter_house_5",
+}
+
+custom_entity{
+  layer = 0,
+  x = 88,
+  y = 605,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_reeds",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 72,
+  y = 597,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_reeds",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 120,
+  y = 605,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_reeds",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 136,
+  y = 597,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_reeds",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 112,
+  y = 733,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_green",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 104,
+  y = 741,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_green",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 120,
+  y = 749,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_green",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 136,
+  y = 725,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_green",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 168,
+  y = 749,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_green",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 160,
+  y = 757,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_green",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 152,
+  y = 813,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_green",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 88,
+  y = 821,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_green",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 80,
+  y = 813,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_green",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 96,
+  y = 813,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_green",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 48,
+  y = 821,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_green",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 16,
+  y = 821,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_green",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 24,
+  y = 829,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_green",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 192,
+  y = 661,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_green",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 200,
+  y = 597,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_green",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 192,
+  y = 605,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_green",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 192,
+  y = 573,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_green",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 200,
+  y = 525,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_green",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 168,
+  y = 397,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_brown",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 160,
+  y = 405,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_brown",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 136,
+  y = 397,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_brown",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 112,
+  y = 381,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_brown",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 104,
+  y = 389,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_brown",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 96,
+  y = 165,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_green",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 88,
+  y = 173,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_green",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 104,
+  y = 173,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_green",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 96,
+  y = 181,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_green",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 48,
+  y = 165,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_green",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 120,
+  y = 157,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_green",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 40,
+  y = 173,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_green",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 152,
+  y = 133,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_green",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 216,
+  y = 149,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_green",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 208,
+  y = 157,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_green",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 208,
+  y = 229,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_green",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 216,
+  y = 237,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_green",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 216,
+  y = 341,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_green",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 200,
+  y = 453,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_green",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 192,
+  y = 461,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_grass_green",
+  model = "foliage",
 }
 
 tile{

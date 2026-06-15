@@ -170,19 +170,19 @@ function warp_menu:on_draw(dst_surface)
   self.caption_text_2:draw(dst_surface, width / 2, height / 2 + 95)
 
   -- Draw the minimap.
-  self.world_minimap_img:draw_region(self.world_minimap_visible_xy.x, self.world_minimap_visible_xy.y, 255, 133, dst_surface, 48, 59)
+  self.world_minimap_img:draw_region(self.world_minimap_visible_xy.x, self.world_minimap_visible_xy.y, 255, 133, dst_surface, 96, 59)
 
   -- Draw the warp points.
   for k, v in pairs(warp_points) do
     if game:get_value(v[1]) then -- Only those that have been discovered are shown.
       local point_visible_y = v[4] - self.world_minimap_visible_xy.y
-      if point_visible_y >= 10 and point_visible_y <= 133 then self.hero_head_sprite:draw(dst_surface, v[3] + 40, point_visible_y + 51) end
+      if point_visible_y >= 10 and point_visible_y <= 133 then self.hero_head_sprite:draw(dst_surface, v[3] + 88, point_visible_y + 51) end
     end
   end
 
   -- Draw the cursor.
   if self.cursor_y >= (10 + self.world_minimap_visible_xy.y) and self.cursor_y <= (133 + self.world_minimap_visible_xy.y) then
-    self.cursor_sprite:draw(dst_surface, self.cursor_x + 48, self.cursor_y + 55 - self.world_minimap_visible_xy.y)
+    self.cursor_sprite:draw(dst_surface, self.cursor_x + 96, self.cursor_y + 55 - self.world_minimap_visible_xy.y)
   end
 end
 

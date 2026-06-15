@@ -256,8 +256,7 @@ function dialog_box:show_dialog()
   self:show_more_lines()
 end
 
--- Returns whether there are more lines remaining to display after the current
--- 3 lines.
+-- Returns whether there are more lines remaining to display after the current 3 lines.
 function dialog_box:has_more_lines()
   return self.next_line ~= nil
 end
@@ -272,8 +271,7 @@ function dialog_box:check_full()
   end
 end
 
--- Returns whether all 3 current lines of the dialog box are entirely
--- displayed.
+-- Returns whether all 3 current lines of the dialog box are entirely displayed.
 function dialog_box:is_full()
   return self.full
 end
@@ -447,8 +445,7 @@ function dialog_box:add_character()
     -- If this is a multibyte character, also add the next byte.
     local byte = current_char:byte()
     if byte >= 192 and byte < 224 then
-      -- The first byte is 110xxxxx: the character is stored with
-      -- two bytes (utf-8).
+      -- The first byte is 110xxxxx: the character is stored with two bytes (utf-8).
       current_char = line:sub(self.char_index, self.char_index)
       self.char_index = self.char_index + 1
       text_surface:set_text(text_surface:get_text() .. current_char)
@@ -475,8 +472,7 @@ function dialog_box:add_character()
 end
 
 -- Stops displaying gradually the current 3 lines, shows them immediately.
--- If the 3 lines were already finished, the next group of 3 lines starts
--- (if any).
+-- If the 3 lines were already finished, the next group of 3 lines starts (if any).
 function dialog_box:show_all_now()
   if self:is_full() then
     self:show_more_lines()

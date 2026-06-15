@@ -23,7 +23,7 @@ function map:on_started(destination)
   if not game:get_value("b1087") then chest_room9_part:set_enabled(false) end
   if not game:get_value("b1088") then chest_room19_part:set_enabled(false) end
   if not game:get_value("b1089") then chest_room22_part:set_enabled(false) end
-  if game:get_value("b1090") then map:set_doors_open("door_shortcut") end
+  if game:get_value("b1090") or game:get_value("b1078") then map:set_doors_open("door_shortcut") end
   map:set_doors_open("door_miniboss_enter")
 end
 

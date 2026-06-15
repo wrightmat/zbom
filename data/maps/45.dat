@@ -3675,15 +3675,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 536,
-  y = 1104,
-  width = 32,
-  height = 16,
-  pattern = "723",
-}
-
-tile{
-  layer = 0,
   x = 184,
   y = 992,
   width = 16,
@@ -3756,8 +3747,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 352,
-  y = 960,
+  x = 336,
+  y = 992,
   width = 8,
   height = 8,
   pattern = "41",
@@ -4285,6 +4276,105 @@ tile{
   pattern = "179",
 }
 
+tile{
+  layer = 0,
+  x = 568,
+  y = 1040,
+  width = 16,
+  height = 80,
+  pattern = "445",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 1040,
+  width = 16,
+  height = 80,
+  pattern = "490",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 1024,
+  width = 16,
+  height = 16,
+  pattern = "485",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 1024,
+  width = 16,
+  height = 16,
+  pattern = "449",
+}
+
+tile{
+  layer = 0,
+  x = 552,
+  y = 1024,
+  width = 16,
+  height = 16,
+  pattern = "446",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 1024,
+  width = 16,
+  height = 16,
+  pattern = "486",
+}
+
+tile{
+  layer = 0,
+  x = 552,
+  y = 896,
+  width = 16,
+  height = 128,
+  pattern = "445",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 896,
+  width = 16,
+  height = 128,
+  pattern = "490",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 880,
+  width = 16,
+  height = 16,
+  pattern = "485",
+}
+
+tile{
+  layer = 0,
+  x = 552,
+  y = 880,
+  width = 16,
+  height = 16,
+  pattern = "449",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 1040,
+  width = 32,
+  height = 80,
+  pattern = "433",
+}
+
 npc{
   name = "torch_fire_1",
   layer = 0,
@@ -4545,10 +4635,9 @@ dynamic_tile{
   layer = 0,
   x = 536,
   y = 848,
-  pattern = "1885",
   width = 32,
   height = 32,
-  enabled_at_start = true,
+  pattern = "1885",
 }
 
 destructible{
@@ -4798,10 +4887,9 @@ dynamic_tile{
   layer = 0,
   x = 776,
   y = 288,
-  pattern = "1289",
   width = 16,
   height = 112,
-  enabled_at_start = true,
+  pattern = "1289",
 }
 
 destructible{
@@ -5333,8 +5421,8 @@ wall{
 custom_entity{
   name = "np1_guard",
   layer = 0,
-  x = 408,
-  y = 981,
+  x = 376,
+  y = 973,
   width = 16,
   height = 16,
   direction = 3,
@@ -5345,7 +5433,7 @@ custom_entity{
 custom_entity{
   name = "np2_guard",
   layer = 0,
-  x = 824,
+  x = 728,
   y = 973,
   width = 16,
   height = 16,

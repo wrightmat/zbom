@@ -44,6 +44,11 @@ function sensor_open_room6:on_activated()
   sensor_close_room6:set_enabled(true)
 end
 function sensor_close_room6:on_activated()
+  torch_room6_1:get_sprite():set_animation("unlit")
+  torch_room6_2:get_sprite():set_animation("unlit")
+  torch_room6_3:get_sprite():set_animation("unlit")
+  torch_room6_4:get_sprite():set_animation("unlit")
+  torch_room6_5:get_sprite():set_animation("unlit")
   map:close_doors("room6_shutter")
 end
 
