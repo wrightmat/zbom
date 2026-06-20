@@ -3,7 +3,7 @@ local game = entity:get_game()
 local map = entity:get_game():get_map()
 local hero = game:get_map():get_entity("hero")
 local name = string.sub(entity:get_name(), 5):gsub("^%l", string.upper)
-local font, font_size = sol.language.get_dialog_font()
+local font, font_size = sol.language.get_npc_font()
 
 if game:get_value("i1027")==nil then game:set_value("i1027", 0) end
 if game:get_value("i1032")==nil then game:set_value("i1032", 0) end
@@ -67,7 +67,7 @@ end
 
 function entity:on_post_draw()
   -- Draw the NPC's name above the entity.
-  local name_surface = sol.text_surface.create({ font = font, font_size = 8, text = name })
+  local name_surface = sol.text_surface.create({ font = font, font_size = font_size, text = name })
   local x, y, l = entity:get_position()
   local w, h = entity:get_sprite():get_size()
   if self:get_distance(hero) < 100 then

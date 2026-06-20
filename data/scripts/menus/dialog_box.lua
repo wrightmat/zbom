@@ -16,8 +16,8 @@ local dialog_box = {
   -- Displaying text gradually.
   next_line = nil,             -- Next line to display or nil.
   line_it = nil,               -- Iterator over of all lines of the dialog.
-  lines = {},                  -- Array of the text of the 3 visible lines.
-  line_surfaces = {},          -- Array of the 3 text surfaces.
+  lines = {},                  -- Array of the text of the 3 visible lines (raw, with $-tags already consumed as they are shown).
+  line_runs = {},              -- Array (one per visible line) of arrays of runs: { color_name = ..., surface = <text_surface> }, in left-to-right order. A new run starts whenever the color changes; runs are positioned at draw time by measuring the width of all previous runs on the same line, so colors never need to predict each other's pixel widths via space-padding.
   text_properties = {},        -- Array of properties to create the text surfaces.
   line_index = nil,            -- Line currently being shown.
   char_index = nil,            -- Next character to show in the current line.
@@ -44,16 +44,25 @@ local char_delays = {
   fast = 20  -- Default.
 }
 local letter_sound_delay = 100
-local box_width = 220
+local box_width = 260
 local box_height = 60
+local colors = {
+  default = {255,255,255},
+  red     = {255,102,102},
+  green   = {102,255,102},
+  blue    = {122,122,255},
+  yellow  = {255,255,0},
+  cyan    = {0,255,255},
+  magenta = {255,102,255},
+  orange  = {255,165,0},
+  purple  = {181,102,181},
+  silver  = {192,192,192},
+}
 
 -- Initializes the dialog box system.
 function game:initialize_dialog_box()
   game.dialog_box = dialog_box
-  
-  -- Initialize dialog box data.
-  dialog_box.line_surfaces.default = {}
-  dialog_box.current_line_surface = dialog_box.line_surfaces.default
+
   -- Text properties used to initialize surfaces.
   local font, font_size = sol.language.get_dialog_font()
   dialog_box.text_properties = { 
@@ -63,11 +72,17 @@ function game:initialize_dialog_box()
     font_size = font_size,
     rendering_mode = "solid"
   }
+  dialog_box.font = font
+  dialog_box.font_size = font_size
+
   for i = 1, nb_visible_lines do
     dialog_box.lines[i] = ""
-    dialog_box.line_surfaces.default[i] = sol.text_surface.create(dialog_box.text_properties)
+    -- Each line starts with a single empty run in the default color.
+    dialog_box.line_runs[i] = {
+      { color_name = "default", surface = sol.text_surface.create(dialog_box.text_properties) }
+    }
   end
-  
+
   dialog_box.dialog_surface = sol.surface.create(sol.video.get_quest_size())
   dialog_box.icons_img = sol.surface.load("sprites/hud/dialog_icons.png")
   dialog_box.end_lines_sprite = sol.sprite.create("hud/dialog_box_message_end")
@@ -88,7 +103,6 @@ end
 function game:on_dialog_started(dialog, info)
   dialog_box.dialog = dialog
   dialog_box.info = info
-  dialog_box:set_color({255,255,255}) -- Reset color text to white.
   sol.menu.start(game, dialog_box)
 end
 
@@ -97,11 +111,6 @@ function game:on_dialog_finished(dialog)
   sol.menu.stop(dialog_box)
   dialog_box.dialog = nil
   dialog_box.info = nil
-  -- Delete the new surfaces and restore the default one.
-  for k, _ in pairs(dialog_box.line_surfaces) do
-    if k ~= "default" then dialog_box.line_surfaces[k] = nil end
-  end
-  dialog_box.current_line_surface = dialog_box.line_surfaces.default
 end
 
 -- Sets the style of the dialog box for subsequent dialogs. Style must be one of:
@@ -187,7 +196,7 @@ function dialog_box:on_started()
   end
 
   -- Set the coordinates of graphic objects.
-  local x = camera_width / 2 - 110
+  local x = camera_width / 2 - 150
   local y = top and 32 or (camera_height - 96)
 
   if self.style == "empty" then
@@ -330,8 +339,11 @@ function dialog_box:show_more_lines()
   
   -- Prepare the 3 lines.
   for i = 1, nb_visible_lines do
-    for _, line_surface in pairs(self.line_surfaces) do line_surface[i]:set_text("") end
-	if self:has_more_lines() then
+    -- Reset this line to a single empty run in the default color.
+    self.line_runs[i] = {
+      { color_name = "default", surface = sol.text_surface.create(self.text_properties) }
+    }
+	  if self:has_more_lines() then
       self.lines[i] = self.next_line
       self.next_line = self.line_it()
     else
@@ -357,7 +369,8 @@ function dialog_box:add_character()
   end
   self.char_index = self.char_index + 1
   local additional_delay = 0
-  local text_surface = self.current_line_surface[self.line_index]
+  local runs = self.line_runs[self.line_index]
+  local current_run = runs[#runs]
 
   -- Special characters:
   -- - $1, $2 and $3: slow, medium and fast
@@ -392,55 +405,45 @@ function dialog_box:add_character()
       self.char_delay = char_delays["fast"]
 	
     elseif current_char == "r" then
-      self:create_surface("red")
-      self:set_color({255,102,102})
+      self:start_run("red")
 
     elseif current_char == "g" then
-      self:create_surface("green")
-      self:set_color({102,255,102})
+      self:start_run("green")
 
     elseif current_char == "b" then
-      self:create_surface("blue")
-      self:set_color({122,122,255})
+      self:start_run("blue")
 
     elseif current_char == "y" then
-      self:create_surface("yellow")
-      self:set_color({255,255,0})
+      self:start_run("yellow")
 
     elseif current_char == "c" then
-      self:create_surface("cyan")
-      self:set_color({0,255,255})
+      self:start_run("cyan")
 
     elseif current_char == "m" then
-      self:create_surface("magenta")
-      self:set_color({255,102,255})
+      self:start_run("magenta")
 
     elseif current_char == "o" then
-      self:create_surface("orange")
-      self:set_color({255,165,0})
+      self:start_run("orange")
 
     elseif current_char == "p" then
-      self:create_surface("purple")
-      self:set_color({181,102,181})
+      self:start_run("purple")
 
     elseif current_char == "s" then
-      self:create_surface("silver")
-      self:set_color({192,192,192})
+      self:start_run("silver")
 
     elseif current_char == "w" then
-      self:create_surface("default")
-      self:set_color({255,255,255})
+      self:start_run("default")
 	 
     else
       -- Not a special char, actually.
-      text_surface:set_text(text_surface:get_text() .. "$")
+      current_run.surface:set_text(current_run.surface:get_text() .. "$")
       special = false
     end
   end
 
   if not special then
     -- Normal character to be displayed.
-    text_surface:set_text(text_surface:get_text() .. current_char)
+    current_run.surface:set_text(current_run.surface:get_text() .. current_char)
 
     -- If this is a multibyte character, also add the next byte.
     local byte = current_char:byte()
@@ -448,7 +451,7 @@ function dialog_box:add_character()
       -- The first byte is 110xxxxx: the character is stored with two bytes (utf-8).
       current_char = line:sub(self.char_index, self.char_index)
       self.char_index = self.char_index + 1
-      text_surface:set_text(text_surface:get_text() .. current_char)
+      current_run.surface:set_text(current_run.surface:get_text() .. current_char)
     end
 
     if current_char == " " then
@@ -538,7 +541,7 @@ function dialog_box:on_draw(dst_surface)
   
   if self.style == "empty" then
     -- Draw a dark rectangle.
-    dst_surface:fill_color({0, 0, 0}, x, y, 220, 60)
+    dst_surface:fill_color({0, 0, 0}, x, y, 260, 60)
   else
     -- Draw the dialog box.
     self.box_img:draw_region(0, 0, box_width, box_height, self.dialog_surface, x, y)
@@ -564,8 +567,15 @@ function dialog_box:on_draw(dst_surface)
       -- The last two lines are the answer to a question.
       text_x = text_x + 24
     end
-	for _, surface in pairs(self.line_surfaces) do
-      surface[i]:draw(self.dialog_surface, text_x, text_y)
+    -- Draw each run of this line left to right, advancing by each run's
+    -- own measured width. This is what guarantees correct alignment: a
+    -- run's position depends only on the real pixel width of the runs
+    -- before it, never on an assumed space-width or character count.
+    local run_x = text_x
+    for _, run in ipairs(self.line_runs[i]) do
+      run.surface:draw(self.dialog_surface, run_x, text_y)
+      local width = run.surface:get_size()
+      run_x = run_x + width
     end
   end
 
@@ -590,33 +600,30 @@ function dialog_box:on_draw(dst_surface)
 
   -- Draw the end message arrow.
   if self:is_full() then
-    self.end_lines_sprite:draw(self.dialog_surface, x + 103, y + 56)
+    self.end_lines_sprite:draw(self.dialog_surface, x + 123, y + 56)
   end
 
   -- Final blit.
   self.dialog_surface:draw(dst_surface)
 end
 
-function dialog_box:create_surface(name)
-  -- Create the new surface if it does not exist.
-  if not self.line_surfaces[name] then
-    self.line_surfaces[name] = {}
-    for i = 1, nb_visible_lines do
-      self.line_surfaces[name][i] = sol.text_surface.create(dialog_box.text_properties)
-    end
+-- Starts a new run of the given color on the current line. If the current
+-- (last) run on this line is already this color, this is a no-op: we just
+-- keep appending to it. Otherwise a brand new text surface is created for
+-- the run and appended to the line's run list. Each run only ever holds
+-- text that is actually that color -- there is no padding, and therefore
+-- nothing whose width needs to match another surface's width. Runs are
+-- positioned purely by their order and the measured width of the runs
+-- before them (see on_draw), so kerning/hinting differences between
+-- separate text surfaces of the same font can never cause misalignment.
+function dialog_box:start_run(name)
+  local runs = self.line_runs[self.line_index]
+  local current_run = runs[#runs]
+  if current_run.color_name == name then
+    -- Same color as before (e.g. redundant tag); nothing to do.
+    return
   end
-  -- Fill with spaces in the current line of the new surface until the current position. 
-  local current_line = self.current_line_surface[self.line_index]
-  local new_line = self.line_surfaces[name][self.line_index]
-  local nb_spaces = #current_line:get_text() - #new_line:get_text() + 1
-  if nb_spaces > 0 then
-    for i = 1, nb_spaces do new_line:set_text(new_line:get_text() .. " ") end
-  end
-  -- Change the current surface to the new surface.
-  self.current_line_surface = self.line_surfaces[name]
-end
-
-function dialog_box:set_color(color)
-  -- Change color.
-  for i = 1, nb_visible_lines do self.current_line_surface[i]:set_color(color) end
+  local surface = sol.text_surface.create(self.text_properties)
+  surface:set_color(colors[name])
+  runs[#runs + 1] = { color_name = name, surface = surface }
 end

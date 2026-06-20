@@ -249,7 +249,7 @@ function sol.language.get_dialog_font(language)
     --size = 12
   else
     font = "enter_command"
-    size = 14.5
+    size = 15
   end
   return font, size
 end
@@ -282,6 +282,22 @@ function sol.language.get_book_font(language)
   else
     font = "Cairopixel"
     size = 15
+  end
+  return font, size
+end
+
+-- Returns the font and size to be used to display text above NPC's heads (names)
+-- depending on the specified language (the current one by default).
+function sol.language.get_npc_font(language)
+  language = language or sol.language.get_language()
+  local font, size
+  if language == "zh_TW" or language == "zh_CN" then
+    -- Chinese font.
+    --font = "wqy-microhei"
+    --size = 12
+  else
+    font = "enter_command"
+    size = 13
   end
   return font, size
 end

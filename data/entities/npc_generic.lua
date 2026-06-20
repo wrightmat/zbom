@@ -3,7 +3,7 @@ local game = entity:get_game()
 local map = entity:get_game():get_map()
 local hero = game:get_map():get_entity("hero")
 local name = string.sub(entity:get_name(), 5):gsub("^%l", string.upper):gsub("_", " ")
-local font, font_size = sol.language.get_dialog_font()
+local font, font_size = sol.language.get_npc_font()
 
 -- Generic NPC script which prevents the hero from being stuck
 -- behind non-traversable moving characters (primarily for intro).
@@ -67,7 +67,7 @@ end)
 
 function entity:on_post_draw()
   -- Draw the NPC's name above the entity.
-  local name_surface = sol.text_surface.create({ font = font, font_size = 8, text = name })
+  local name_surface = sol.text_surface.create({ font = font, font_size = font_size, text = name })
   local x, y, l = entity:get_position()
   local w, h = entity:get_sprite():get_size()
   if self:get_distance(hero) < 100 then
