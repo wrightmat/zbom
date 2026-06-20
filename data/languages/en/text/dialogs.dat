@@ -2445,7 +2445,7 @@ dialog{
   skip = "current",
   text = [[
 It looks like this door is locked
-- better find a $r key $w!
+- better find a $rkey$w!
 ]],
 }
 
@@ -3904,7 +3904,7 @@ dialog{
   id = "_warning_magic",
   skip = "current",
   text = [[
-Watch your $g Magic Meter $w!
+Watch your $gMagic Meter$w!
 ]],
 }
 
@@ -6287,7 +6287,7 @@ dialog{
   skip = "current",
   text = [[
 I can't lie, the council won't be able
-to find $g Zelda $w without you. We gotta ask
+to find $gZelda$w without you. We gotta ask
 for your help!
 ]],
 }
@@ -6310,7 +6310,7 @@ dialog{
   skip = "current",
   text = [[
 We knew you'd come through and find
-$gZelda $w! Great work, hero!
+$gZelda$w! Great work, hero!
 ]],
 }
 
@@ -6318,12 +6318,12 @@ dialog{
   id = "goron.0.death_mountain",
   skip = "current",
   text = [[
-What's that? $b Goron City $w? THIS is not
-the great $b Goron City $w! I guess that
+What's that? $bGoron City$w? THIS is not
+the great $bGoron City$w! I guess that
 cave does look a little like one of our
 houses, but that one has a powerful fairy
 inside! What does she do, you ask? How
-should I know, I'm just a $g Goron $w.
+should I know, I'm just a $gGoron$w.
 Check it out for yourself!
 ]],
 }
@@ -6346,7 +6346,7 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-Welcome to the $b Goron City Inn$w!
+Welcome to the $bGoron City Inn$w!
 We offer all the comforts of home
 while you're away.
 It's only 20 rupees to stay. Want to?
@@ -6389,7 +6389,7 @@ good! You've opened my eyes to the
 world of food outside of rocks! I
 wonder what else there is out there
 to try?$0 I'm going to give you one
-of our$rGoron Vases$w. It's a sign that
+of our $rGoron Vases$w. It's a sign that
 you're a true Brother to the Gorons!
 ]],
 }
@@ -6465,7 +6465,7 @@ dialog{
   skip = "current",
   text = [[
 The mine? Oh, we call it the
-$bMausoleum $w now. So many people died in
+$bMausoleum$w now. So many people died in
 there that most of us won't go back.
 ]],
 }
@@ -6501,7 +6501,7 @@ dialog{
   id = "goron5.0.goron_city",
   skip = "current",
   text = [[
-We$gGorons$wwere once a proud and
+We $gGorons$w were once a proud and
 honorable people. Now everyone's
 so down due to this horrible illness.
 I wish someone could do anything
@@ -6534,7 +6534,7 @@ dialog{
   id = "goron6.0.goron_city_mine",
   skip = "current",
   text = [[
-The $g doctor $w doesn't have nearly as much
+The $gdoctor$w doesn't have nearly as much
 to do these days. I guess soon enough
 he'll be patching up the brothers who
 are going back to the mines - they
@@ -6547,7 +6547,7 @@ dialog{
   id = "goron7.0.goron_city",
   skip = "current",
   text = [[
-Welcome to $b Goron City $w. Don't breathe
+Welcome to $bGoron City$w. Don't breathe
 if you don't want to get sick.
 What's that? Cynical? I don't know
 that word, but I don't think I
@@ -6559,7 +6559,7 @@ dialog{
   id = "goron7.0.goron_city_mine",
   skip = "current",
   text = [[
-Welcome to $b Goron City $w! Don't forget
+Welcome to $bGoron City$w! Don't forget
 to check out our world famous $bmines$w!
 ]],
 }
@@ -6590,11 +6590,11 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-You don't have any wonderful$rbombs$win
+You don't have any wonderful $rbombs$w in
 your inventory! You have no idea how very
 useful they are until you can carry them
 with you all the time. How about I sell
-you a $r bomb bag $w for the one-time low price
+you a $rbomb bag$w for the one-time low price
 of 300 rupees?
 Buy?
 Yes
@@ -6606,11 +6606,11 @@ dialog{
   id = "goron_smith.1.shop",
   skip = "current",
   text = [[
-Aren't$rbombs$wgreat?! Try blowing up
+Aren't $rbombs$w great?! Try blowing up
 anything you see that looks even slightly
 fragile. At least that's the advice I
 used to follow until I got in trouble...
-Now I can't leave $b Goron City $w.
+Now I can't leave $bGoron City$w.
 ]],
 }
 
@@ -6619,7 +6619,7 @@ dialog{
   question = "1",
   skip = "current",
   text = [[
-You look low on$rbombs$w! Would you like
+You look low on $rbombs$w! Would you like
 to buy some more? I'll sell you some
 how for low, low price of 50 rupees.
 Buy?

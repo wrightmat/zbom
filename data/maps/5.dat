@@ -3179,6 +3179,7 @@ shop_treasure{
   y = 392,
   treasure_name = "amber",
   price = 150,
+  font = "white_digits",
   dialog = "_treasure.amber.1",
 }
 
@@ -3190,6 +3191,7 @@ shop_treasure{
   treasure_name = "bomb_bag",
   treasure_savegame_variable = "b2017",
   price = 400,
+  font = "white_digits",
   dialog = "shop.bomb_bag_1",
 }
 
@@ -3201,6 +3203,7 @@ shop_treasure{
   treasure_name = "magic_flask",
   treasure_variant = 2,
   price = 20,
+  font = "white_digits",
   dialog = "shop.magic",
 }
 
@@ -3370,6 +3373,22 @@ custom_entity{
   direction = 3,
   sprite = "npc/goron",
   model = "npc_generic",
+}
+
+destination{
+  name = "dest_galen",
+  layer = 0,
+  x = 144,
+  y = 389,
+  direction = -1,
+}
+
+destination{
+  name = "dest_link",
+  layer = 0,
+  x = 224,
+  y = 445,
+  direction = -1,
 }
 
 tile{

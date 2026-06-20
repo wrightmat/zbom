@@ -18,6 +18,7 @@ local dialog_box = {
   line_it = nil,               -- Iterator over of all lines of the dialog.
   lines = {},                  -- Array of the text of the 3 visible lines (raw, with $-tags already consumed as they are shown).
   line_runs = {},              -- Array (one per visible line) of arrays of runs: { color_name = ..., surface = <text_surface> }, in left-to-right order. A new run starts whenever the color changes; runs are positioned at draw time by measuring the width of all previous runs on the same line, so colors never need to predict each other's pixel widths via space-padding.
+  current_color = "default",   -- Name of the color currently in effect. Persists across line breaks within a dialog: a color started on one line stays active on the next line until an explicit $w (or another color tag) appears, even if the wrap happened with no tag at the break.
   text_properties = {},        -- Array of properties to create the text surfaces.
   line_index = nil,            -- Line currently being shown.
   char_index = nil,            -- Next character to show in the current line.
@@ -77,10 +78,10 @@ function game:initialize_dialog_box()
 
   for i = 1, nb_visible_lines do
     dialog_box.lines[i] = ""
-    -- Each line starts with a single empty run in the default color.
-    dialog_box.line_runs[i] = {
-      { color_name = "default", surface = sol.text_surface.create(dialog_box.text_properties) }
-    }
+    -- Each line starts with a single empty run in the currently active color.
+    local surface = sol.text_surface.create(dialog_box.text_properties)
+    surface:set_color(colors[dialog_box.current_color])
+    dialog_box.line_runs[i] = { { color_name = dialog_box.current_color, surface = surface } }
   end
 
   dialog_box.dialog_surface = sol.surface.create(sol.video.get_quest_size())
@@ -225,6 +226,7 @@ end
 function dialog_box:show_dialog()
   -- Initialize this dialog.
   local dialog = self.dialog
+  self.current_color = "default"  -- Each dialog starts fresh in white, even when chained from a previous one.
 
   local text = dialog.text
   if dialog_box.info ~= nil then
@@ -339,10 +341,15 @@ function dialog_box:show_more_lines()
   
   -- Prepare the 3 lines.
   for i = 1, nb_visible_lines do
-    -- Reset this line to a single empty run in the default color.
-    self.line_runs[i] = {
-      { color_name = "default", surface = sol.text_surface.create(self.text_properties) }
-    }
+    -- Reset this line. Line 1 continues in whatever color was active at the
+    -- end of the previous group (color persists across line/group breaks
+    -- until an explicit $w or color tag changes it). Lines 2 and 3 haven't
+    -- been typed into yet at this point; their first run gets corrected to
+    -- the then-current color in add_character() once typing reaches them.
+    local seed_color = (i == 1) and self.current_color or "default"
+    local surface = sol.text_surface.create(self.text_properties)
+    surface:set_color(colors[seed_color])
+    self.line_runs[i] = { { color_name = seed_color, surface = surface } }
 	  if self:has_more_lines() then
       self.lines[i] = self.next_line
       self.next_line = self.line_it()
@@ -370,6 +377,20 @@ function dialog_box:add_character()
   self.char_index = self.char_index + 1
   local additional_delay = 0
   local runs = self.line_runs[self.line_index]
+
+  if self.char_index == 2 and runs[1].color_name ~= self.current_color
+      and runs[1].surface:get_text() == "" then
+    -- We are typing the very first character of this line, and its seed run
+    -- was given a placeholder color back when show_more_lines() reset all 3
+    -- lines at once (lines 2 and 3 aren't known to still be untouched at
+    -- that point, so they default to "default"). Now that typing has
+    -- actually reached this line, correct the seed run to whatever color is
+    -- really in effect, so a color started on a previous line keeps
+    -- applying across the break instead of resetting to white.
+    runs[1].color_name = self.current_color
+    runs[1].surface:set_color(colors[self.current_color])
+  end
+
   local current_run = runs[#runs]
 
   -- Special characters:
@@ -617,6 +638,7 @@ end
 -- before them (see on_draw), so kerning/hinting differences between
 -- separate text surfaces of the same font can never cause misalignment.
 function dialog_box:start_run(name)
+  self.current_color = name
   local runs = self.line_runs[self.line_index]
   local current_run = runs[#runs]
   if current_run.color_name == name then
