@@ -18,7 +18,7 @@ function map:on_started(destination)
     sol.timer.start(2000, function()
       hero:freeze()
       ordona_speaking = true
-      game:start_dialog("ordona.2.library", game:get_player_name(), function()
+      game:set_dialog_name("Ordona"); game:start_dialog("ordona.2.library", game:get_player_name(), function()
         sol.timer.start(500, function() ordona_speaking = false end)
         hero:unfreeze()
         game:add_max_stamina(100)

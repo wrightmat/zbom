@@ -3108,6 +3108,17 @@ custom_entity{
   model = "npc_generic",
 }
 
+custom_entity{
+  layer = 0,
+  x = 1080,
+  y = 437,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_milkweed_yellow",
+  model = "foliage",
+}
+
 npc{
   name = "npc_goron_ghost",
   layer = 1,

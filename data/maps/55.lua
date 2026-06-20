@@ -17,7 +17,7 @@ function map:on_started(destination)
       end
       if not game:get_value("b1033") then
         -- If player has not done Ruins, suggest that before Lost Woods.
-        game:start_dialog("ordona.7.septen_2", game:get_player_name(), function()
+        game:set_dialog_name("Ordona"); game:start_dialog("ordona.7.septen_2", game:get_player_name(), function()
           sol.timer.start(500, function()
             if game:get_time_of_day() ~= "night" then game:set_map_tone(previous_tone) end
           end)
@@ -29,7 +29,7 @@ function map:on_started(destination)
         end)
       elseif game:get_item("book_mudora"):get_variant() < 7 then
         -- If player hasn't gotten the other pages, suggest that before Lost Woods.
-        game:start_dialog("ordona.7.septen_3", game:get_player_name(), function()
+        game:set_dialog_name("Ordona"); game:start_dialog("ordona.7.septen_3", game:get_player_name(), function()
           sol.timer.start(500, function()
             if game:get_time_of_day() ~= "night" then game:set_map_tone(previous_tone) end
           end)
@@ -40,7 +40,7 @@ function map:on_started(destination)
           game:set_value("i1910", 7)
         end)
       else
-        game:start_dialog("ordona.7.septen", game:get_player_name(), function()
+        game:set_dialog_name("Ordona"); game:start_dialog("ordona.7.septen", game:get_player_name(), function()
           sol.timer.start(500, function()
             if game:get_time_of_day() ~= "night" then game:set_map_tone(previous_tone) end
           end)

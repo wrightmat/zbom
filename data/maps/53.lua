@@ -31,7 +31,7 @@ function map:on_started(destination)
         local previous_tone = game:get_map_tone()
         game:set_map_tone(32,64,128,255)
       end
-      game:start_dialog("ordona.6.snowpeak", game:get_player_name(), function()
+      game:set_dialog_name("Ordona"); game:start_dialog("ordona.6.snowpeak", game:get_player_name(), function()
         sol.timer.start(500, function()
           if game:get_time_of_day() ~= "night" then game:set_map_tone(previous_tone) end
         end)
