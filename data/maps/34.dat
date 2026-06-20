@@ -4482,6 +4482,61 @@ npc{
   sprite = "entities/sign",
 }
 
+custom_entity{
+  layer = 0,
+  x = 552,
+  y = 125,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/stone_ocean_1",
+  model = "stone_ocean",
+}
+
+custom_entity{
+  layer = 0,
+  x = 376,
+  y = 221,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/stone_ocean_1",
+  model = "stone_ocean",
+}
+
+custom_entity{
+  layer = 0,
+  x = 704,
+  y = 229,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/stone_ocean_1",
+  model = "stone_ocean",
+}
+
+custom_entity{
+  layer = 0,
+  x = 976,
+  y = 533,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/stone_ocean_1",
+  model = "stone_ocean",
+}
+
+custom_entity{
+  layer = 0,
+  x = 888,
+  y = 917,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/stone_ocean_1",
+  model = "stone_ocean",
+}
+
 tile{
   layer = 1,
   x = 992,

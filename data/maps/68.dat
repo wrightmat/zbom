@@ -822,8 +822,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 128,
-  y = 440,
+  x = 144,
+  y = 400,
   width = 8,
   height = 8,
   pattern = "62",
@@ -930,8 +930,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 280,
-  y = 488,
+  x = 256,
+  y = 496,
   width = 16,
   height = 16,
   pattern = "1738",
@@ -1281,8 +1281,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 56,
-  y = 488,
+  x = 72,
+  y = 504,
   width = 16,
   height = 16,
   pattern = "949",
@@ -1331,6 +1331,233 @@ tile{
   width = 16,
   height = 24,
   pattern = "714",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 464,
+  width = 432,
+  height = 8,
+  pattern = "208",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 424,
+  width = 16,
+  height = 40,
+  pattern = "208",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 416,
+  group = 1,
+  width = 16,
+  height = 8,
+  pattern = "209",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 424,
+  group = 1,
+  width = 8,
+  height = 32,
+  pattern = "204",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 424,
+  group = 1,
+  width = 8,
+  height = 48,
+  pattern = "211",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 456,
+  group = 1,
+  width = 408,
+  height = 8,
+  pattern = "209",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 464,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "204",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 472,
+  group = 1,
+  width = 432,
+  height = 8,
+  pattern = "206",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 416,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "203",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 416,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "210",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 456,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "203",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 456,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "202",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 472,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "205",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 472,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "207",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 1072,
+  width = 8,
+  height = 48,
+  pattern = "208",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 1064,
+  group = 2,
+  width = 8,
+  height = 8,
+  pattern = "209",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 1072,
+  group = 2,
+  width = 8,
+  height = 48,
+  pattern = "204",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 1072,
+  group = 2,
+  width = 8,
+  height = 48,
+  pattern = "211",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 1120,
+  group = 2,
+  width = 8,
+  height = 8,
+  pattern = "206",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 1064,
+  group = 2,
+  width = 8,
+  height = 8,
+  pattern = "203",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 1064,
+  group = 2,
+  width = 8,
+  height = 8,
+  pattern = "210",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 1120,
+  group = 2,
+  width = 8,
+  height = 8,
+  pattern = "205",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 1120,
+  group = 2,
+  width = 8,
+  height = 8,
+  pattern = "207",
 }
 
 wall{
@@ -1517,8 +1744,8 @@ custom_entity{
 npc{
   name = "sign.mountain_mausoleum",
   layer = 0,
-  x = 256,
-  y = 429,
+  x = 296,
+  y = 437,
   direction = 3,
   subtype = 0,
   sprite = "entities/sign",

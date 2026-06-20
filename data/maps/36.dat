@@ -5061,8 +5061,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 1040,
-  y = 1032,
+  x = 1048,
+  y = 1008,
   width = 16,
   height = 8,
   pattern = "1693",
@@ -5365,6 +5365,24 @@ tile{
   pattern = "522",
 }
 
+tile{
+  layer = 0,
+  x = 976,
+  y = 280,
+  width = 24,
+  height = 24,
+  pattern = "526",
+}
+
+tile{
+  layer = 0,
+  x = 952,
+  y = 768,
+  width = 24,
+  height = 24,
+  pattern = "526",
+}
+
 teletransporter{
   name = "to_G11",
   layer = 0,
@@ -5487,6 +5505,323 @@ teletransporter{
   transition = "scrolling",
   destination_map = "37",
   destination = "_side",
+}
+
+custom_entity{
+  layer = 0,
+  x = 976,
+  y = 309,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 992,
+  y = 309,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 984,
+  y = 317,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 968,
+  y = 293,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1016,
+  y = 237,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1048,
+  y = 413,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1080,
+  y = 589,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 968,
+  y = 797,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 952,
+  y = 797,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 944,
+  y = 781,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 976,
+  y = 805,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 888,
+  y = 765,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 904,
+  y = 869,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 896,
+  y = 877,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 912,
+  y = 893,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1008,
+  y = 589,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1032,
+  y = 621,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1040,
+  y = 629,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1024,
+  y = 645,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1080,
+  y = 733,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1000,
+  y = 1013,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 856,
+  y = 965,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 704,
+  y = 861,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 696,
+  y = 869,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 648,
+  y = 845,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 904,
+  y = 1077,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 904,
+  y = 1061,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 896,
+  y = 1069,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+tile{
+  layer = 1,
+  x = 952,
+  y = 696,
+  width = 24,
+  height = 72,
+  pattern = "529",
 }
 
 tile{
@@ -8079,5 +8414,14 @@ tile{
   width = 48,
   height = 24,
   pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 976,
+  y = 208,
+  width = 24,
+  height = 72,
+  pattern = "529",
 }
 

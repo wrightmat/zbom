@@ -3,9 +3,9 @@ properties{
   y = 7847,
   width = 1120,
   height = 1120,
-  world = "outside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_world",
   tileset = "3",
   music = "death_mountain",
 }
@@ -2209,7 +2209,7 @@ tile{
 tile{
   layer = 0,
   x = 456,
-  y = 744,
+  y = 736,
   width = 8,
   height = 8,
   pattern = "720",
@@ -2393,6 +2393,233 @@ tile{
   width = 16,
   height = 16,
   pattern = "1808",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 72,
+  width = 408,
+  height = 8,
+  pattern = "208",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 0,
+  width = 8,
+  height = 760,
+  pattern = "208",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 760,
+  width = 64,
+  height = 8,
+  pattern = "208",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = -8,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "209",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 0,
+  group = 1,
+  width = 8,
+  height = 64,
+  pattern = "204",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 0,
+  group = 1,
+  width = 8,
+  height = 752,
+  pattern = "211",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 64,
+  group = 1,
+  width = 400,
+  height = 8,
+  pattern = "209",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 72,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "204",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 80,
+  group = 1,
+  width = 400,
+  height = 8,
+  pattern = "206",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 88,
+  group = 1,
+  width = 8,
+  height = 680,
+  pattern = "204",
+}
+
+tile{
+  layer = 0,
+  x = 424,
+  y = 752,
+  group = 1,
+  width = 48,
+  height = 8,
+  pattern = "209",
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 760,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "211",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 768,
+  group = 1,
+  width = 64,
+  height = 8,
+  pattern = "206",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = -8,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "203",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = -8,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "210",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 64,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "203",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 64,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "202",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 80,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "205",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 80,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "176",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 752,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "252",
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 752,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "210",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 768,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "205",
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 768,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "207",
 }
 
 teletransporter{

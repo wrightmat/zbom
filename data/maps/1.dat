@@ -5415,6 +5415,7 @@ shop_treasure{
   y = 504,
   treasure_name = "shield",
   price = 100,
+  font = "white_digits",
   dialog = "shop.ordon_shield",
 }
 
@@ -5425,6 +5426,7 @@ shop_treasure{
   y = 480,
   treasure_name = "potion",
   price = 50,
+  font = "white_digits",
   dialog = "shop.potion_red",
 }
 
@@ -5435,6 +5437,7 @@ shop_treasure{
   y = 480,
   treasure_name = "",
   price = 0,
+  font = "white_digits",
   dialog = "",
 }
 
@@ -5445,6 +5448,7 @@ shop_treasure{
   y = 504,
   treasure_name = "apple",
   price = 25,
+  font = "white_digits",
   dialog = "_item_description.apple.1",
 }
 

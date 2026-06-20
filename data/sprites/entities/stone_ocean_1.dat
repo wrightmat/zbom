@@ -1,0 +1,16 @@
+animation{
+  name = "on_ground",
+  src_image = "entities/stone_ocean.png",
+  frame_delay = 200,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 27, num_frames = 6 },
+  },
+}
+animation{
+  name = "stopped",
+  src_image = "entities/stone_ocean.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 27 },
+  },
+}

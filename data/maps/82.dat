@@ -2665,6 +2665,24 @@ tile{
   pattern = "964",
 }
 
+tile{
+  layer = 0,
+  x = 1016,
+  y = 48,
+  width = 32,
+  height = 24,
+  pattern = "513",
+}
+
+tile{
+  layer = 0,
+  x = 936,
+  y = 584,
+  width = 32,
+  height = 24,
+  pattern = "513",
+}
+
 dynamic_tile{
   name = "windows_7",
   layer = 0,
@@ -4282,6 +4300,24 @@ tile{
   width = 64,
   height = 16,
   pattern = "1923",
+}
+
+tile{
+  layer = 1,
+  x = 1016,
+  y = 24,
+  width = 32,
+  height = 24,
+  pattern = "514",
+}
+
+tile{
+  layer = 1,
+  x = 936,
+  y = 560,
+  width = 32,
+  height = 24,
+  pattern = "514",
 }
 
 tile{

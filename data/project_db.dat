@@ -404,6 +404,7 @@ sprite{ id = "entities/foliage_grass_wetland", description = "Foliage -Grass Wet
 sprite{ id = "entities/foliage_milkweed_brown", description = "Foliage - Milkweed Brown" }
 sprite{ id = "entities/foliage_milkweed_yellow", description = "Foliage - Milkweed Yellow" }
 sprite{ id = "entities/foliage_reeds", description = "Foliage - Reeds" }
+sprite{ id = "entities/foliage_reeds_swamp", description = "Foliage - Reeds (Swamp)" }
 sprite{ id = "entities/foliage_sprig", description = "Foliage - Sprig" }
 sprite{ id = "entities/grass", description = "Grass" }
 sprite{ id = "entities/ground_effects", description = "Ground Effects" }
@@ -442,6 +443,9 @@ sprite{ id = "entities/star", description = "Star" }
 sprite{ id = "entities/statue", description = "Statue" }
 sprite{ id = "entities/statue_castle", description = "Castle Statue (Armament)" }
 sprite{ id = "entities/statue_goron", description = "Goron Statue (Mausoleum)" }
+sprite{ id = "entities/stone_ocean_1", description = "Stone, ocean 1" }
+sprite{ id = "entities/stone_ocean_2", description = "Stone, ocean 2" }
+sprite{ id = "entities/stone_ocean_3", description = "Stone, ocean 3" }
 sprite{ id = "entities/stone_pile", description = "Stone pile" }
 sprite{ id = "entities/stone_small_black", description = "Stone, small black" }
 sprite{ id = "entities/stone_small_white", description = "Stone, small white" }
@@ -1060,6 +1064,7 @@ entity{ id = "quest_plants", description = "Quest Entities: Plants" }
 entity{ id = "quicksand", description = "Quicksand (Lakebed)" }
 entity{ id = "soil", description = "Soft soil (Shovel)" }
 entity{ id = "statue_goron", description = "Goron Statue (Mausoleum)" }
+entity{ id = "stone_ocean", description = "Ocean Stone" }
 entity{ id = "stone_pile", description = "Stone pile" }
 entity{ id = "switch_rust", description = "Switch, Rusted" }
 entity{ id = "tree_apple", description = "Apple Tree" }
@@ -1069,7 +1074,6 @@ language{ id = "es", description = "Español" }
 language{ id = "fr", description = "Français" }
 
 font{ id = "Cairopixel", description = "Cairopixel" }
-font{ id = "CutePixel", description = "CutePixel" }
 font{ id = "blue_digits", description = "blue_digits" }
 font{ id = "enter_command", description = "enter_command" }
 font{ id = "green_digits", description = "green_digits" }

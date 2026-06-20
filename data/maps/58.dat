@@ -1380,7 +1380,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 416,
+  x = 408,
   y = 1056,
   width = 8,
   height = 8,
@@ -1774,6 +1774,95 @@ tile{
   pattern = "243",
 }
 
+tile{
+  layer = 0,
+  x = 440,
+  y = 1048,
+  width = 8,
+  height = 80,
+  pattern = "208",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 1040,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "209",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 1048,
+  group = 1,
+  width = 8,
+  height = 80,
+  pattern = "204",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 1048,
+  group = 1,
+  width = 8,
+  height = 80,
+  pattern = "211",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 1128,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "206",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 1040,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "203",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 1040,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "210",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 1128,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "205",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 1128,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "207",
+}
+
 teletransporter{
   name = "to_G5",
   layer = 0,
@@ -1963,10 +2052,9 @@ dynamic_tile{
   layer = 0,
   x = 1008,
   y = 176,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -1974,10 +2062,9 @@ dynamic_tile{
   layer = 0,
   x = 1024,
   y = 176,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -1985,10 +2072,9 @@ dynamic_tile{
   layer = 0,
   x = 1040,
   y = 176,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -1996,10 +2082,9 @@ dynamic_tile{
   layer = 0,
   x = 1056,
   y = 176,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2007,10 +2092,9 @@ dynamic_tile{
   layer = 0,
   x = 1056,
   y = 192,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2018,10 +2102,9 @@ dynamic_tile{
   layer = 0,
   x = 1040,
   y = 192,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2029,10 +2112,9 @@ dynamic_tile{
   layer = 0,
   x = 1024,
   y = 192,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2040,10 +2122,9 @@ dynamic_tile{
   layer = 0,
   x = 1008,
   y = 192,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2051,10 +2132,9 @@ dynamic_tile{
   layer = 0,
   x = 1008,
   y = 208,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2062,10 +2142,9 @@ dynamic_tile{
   layer = 0,
   x = 1024,
   y = 208,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2073,10 +2152,9 @@ dynamic_tile{
   layer = 0,
   x = 1040,
   y = 208,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2084,150 +2162,135 @@ dynamic_tile{
   layer = 0,
   x = 1056,
   y = 208,
+  width = 16,
+  height = 16,
   pattern = "1683",
-  width = 16,
-  height = 16,
-  enabled_at_start = true,
 }
 
 dynamic_tile{
   layer = 0,
   x = 1064,
   y = 216,
+  width = 16,
+  height = 16,
   pattern = "1693",
-  width = 16,
-  height = 16,
-  enabled_at_start = true,
 }
 
 dynamic_tile{
   layer = 0,
   x = 1048,
   y = 216,
+  width = 16,
+  height = 16,
   pattern = "1692",
-  width = 16,
-  height = 16,
-  enabled_at_start = true,
 }
 
 dynamic_tile{
   layer = 0,
   x = 1032,
   y = 216,
-  pattern = "1691",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1691",
 }
 
 dynamic_tile{
   layer = 0,
   x = 1016,
   y = 216,
-  pattern = "1690",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1690",
 }
 
 dynamic_tile{
   layer = 0,
   x = 1000,
   y = 216,
-  pattern = "1687",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1687",
 }
 
 dynamic_tile{
   layer = 0,
   x = 1000,
   y = 200,
-  pattern = "1689",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1689",
 }
 
 dynamic_tile{
   layer = 0,
   x = 1000,
   y = 184,
-  pattern = "1686",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1686",
 }
 
 dynamic_tile{
   layer = 0,
   x = 1000,
   y = 168,
-  pattern = "1685",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1685",
 }
 
 dynamic_tile{
   layer = 0,
   x = 1016,
   y = 168,
-  pattern = "1688",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1688",
 }
 
 dynamic_tile{
   layer = 0,
   x = 1032,
   y = 168,
-  pattern = "1697",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1697",
 }
 
 dynamic_tile{
   layer = 0,
   x = 1048,
   y = 168,
-  pattern = "1696",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1696",
 }
 
 dynamic_tile{
   layer = 0,
   x = 1064,
   y = 168,
-  pattern = "1695",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1695",
 }
 
 dynamic_tile{
   layer = 0,
   x = 1064,
   y = 184,
-  pattern = "1694",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1694",
 }
 
 dynamic_tile{
   layer = 0,
   x = 1064,
   y = 200,
-  pattern = "1698",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1698",
 }
 
 dynamic_tile{
@@ -2235,10 +2298,9 @@ dynamic_tile{
   layer = 0,
   x = 640,
   y = 184,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2246,10 +2308,9 @@ dynamic_tile{
   layer = 0,
   x = 656,
   y = 184,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2257,10 +2318,9 @@ dynamic_tile{
   layer = 0,
   x = 672,
   y = 184,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2268,10 +2328,9 @@ dynamic_tile{
   layer = 0,
   x = 688,
   y = 184,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2279,10 +2338,9 @@ dynamic_tile{
   layer = 0,
   x = 688,
   y = 200,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2290,10 +2348,9 @@ dynamic_tile{
   layer = 0,
   x = 672,
   y = 200,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2301,10 +2358,9 @@ dynamic_tile{
   layer = 0,
   x = 656,
   y = 200,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2312,10 +2368,9 @@ dynamic_tile{
   layer = 0,
   x = 640,
   y = 200,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2323,10 +2378,9 @@ dynamic_tile{
   layer = 0,
   x = 640,
   y = 216,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2334,10 +2388,9 @@ dynamic_tile{
   layer = 0,
   x = 656,
   y = 216,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2345,10 +2398,9 @@ dynamic_tile{
   layer = 0,
   x = 672,
   y = 216,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2356,150 +2408,135 @@ dynamic_tile{
   layer = 0,
   x = 688,
   y = 216,
+  width = 16,
+  height = 16,
   pattern = "1683",
-  width = 16,
-  height = 16,
-  enabled_at_start = true,
 }
 
 dynamic_tile{
   layer = 0,
   x = 696,
   y = 224,
+  width = 16,
+  height = 16,
   pattern = "1693",
-  width = 16,
-  height = 16,
-  enabled_at_start = true,
 }
 
 dynamic_tile{
   layer = 0,
   x = 680,
   y = 224,
+  width = 16,
+  height = 16,
   pattern = "1692",
-  width = 16,
-  height = 16,
-  enabled_at_start = true,
 }
 
 dynamic_tile{
   layer = 0,
   x = 664,
   y = 224,
-  pattern = "1691",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1691",
 }
 
 dynamic_tile{
   layer = 0,
   x = 648,
   y = 224,
-  pattern = "1690",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1690",
 }
 
 dynamic_tile{
   layer = 0,
   x = 632,
   y = 224,
-  pattern = "1687",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1687",
 }
 
 dynamic_tile{
   layer = 0,
   x = 632,
   y = 208,
-  pattern = "1689",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1689",
 }
 
 dynamic_tile{
   layer = 0,
   x = 632,
   y = 192,
-  pattern = "1686",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1686",
 }
 
 dynamic_tile{
   layer = 0,
   x = 632,
   y = 176,
-  pattern = "1685",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1685",
 }
 
 dynamic_tile{
   layer = 0,
   x = 648,
   y = 176,
-  pattern = "1688",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1688",
 }
 
 dynamic_tile{
   layer = 0,
   x = 664,
   y = 176,
-  pattern = "1697",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1697",
 }
 
 dynamic_tile{
   layer = 0,
   x = 680,
   y = 176,
-  pattern = "1696",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1696",
 }
 
 dynamic_tile{
   layer = 0,
   x = 696,
   y = 176,
-  pattern = "1695",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1695",
 }
 
 dynamic_tile{
   layer = 0,
   x = 696,
   y = 192,
-  pattern = "1694",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1694",
 }
 
 dynamic_tile{
   layer = 0,
   x = 696,
   y = 208,
-  pattern = "1698",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1698",
 }
 
 dynamic_tile{
@@ -2507,10 +2544,9 @@ dynamic_tile{
   layer = 0,
   x = 832,
   y = 368,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2518,10 +2554,9 @@ dynamic_tile{
   layer = 0,
   x = 848,
   y = 368,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2529,10 +2564,9 @@ dynamic_tile{
   layer = 0,
   x = 864,
   y = 368,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2540,10 +2574,9 @@ dynamic_tile{
   layer = 0,
   x = 880,
   y = 368,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2551,10 +2584,9 @@ dynamic_tile{
   layer = 0,
   x = 880,
   y = 384,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2562,10 +2594,9 @@ dynamic_tile{
   layer = 0,
   x = 864,
   y = 384,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2573,10 +2604,9 @@ dynamic_tile{
   layer = 0,
   x = 848,
   y = 384,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2584,10 +2614,9 @@ dynamic_tile{
   layer = 0,
   x = 832,
   y = 384,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2595,10 +2624,9 @@ dynamic_tile{
   layer = 0,
   x = 832,
   y = 400,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2606,10 +2634,9 @@ dynamic_tile{
   layer = 0,
   x = 848,
   y = 400,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2617,10 +2644,9 @@ dynamic_tile{
   layer = 0,
   x = 864,
   y = 400,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2628,150 +2654,135 @@ dynamic_tile{
   layer = 0,
   x = 880,
   y = 400,
+  width = 16,
+  height = 16,
   pattern = "1683",
-  width = 16,
-  height = 16,
-  enabled_at_start = true,
 }
 
 dynamic_tile{
   layer = 0,
   x = 888,
   y = 408,
+  width = 16,
+  height = 16,
   pattern = "1693",
-  width = 16,
-  height = 16,
-  enabled_at_start = true,
 }
 
 dynamic_tile{
   layer = 0,
   x = 872,
   y = 408,
+  width = 16,
+  height = 16,
   pattern = "1692",
-  width = 16,
-  height = 16,
-  enabled_at_start = true,
 }
 
 dynamic_tile{
   layer = 0,
   x = 856,
   y = 408,
-  pattern = "1691",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1691",
 }
 
 dynamic_tile{
   layer = 0,
   x = 840,
   y = 408,
-  pattern = "1690",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1690",
 }
 
 dynamic_tile{
   layer = 0,
   x = 824,
   y = 408,
-  pattern = "1687",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1687",
 }
 
 dynamic_tile{
   layer = 0,
   x = 824,
   y = 392,
-  pattern = "1689",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1689",
 }
 
 dynamic_tile{
   layer = 0,
   x = 824,
   y = 376,
-  pattern = "1686",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1686",
 }
 
 dynamic_tile{
   layer = 0,
   x = 824,
   y = 360,
-  pattern = "1685",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1685",
 }
 
 dynamic_tile{
   layer = 0,
   x = 840,
   y = 360,
-  pattern = "1688",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1688",
 }
 
 dynamic_tile{
   layer = 0,
   x = 856,
   y = 360,
-  pattern = "1697",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1697",
 }
 
 dynamic_tile{
   layer = 0,
   x = 872,
   y = 360,
-  pattern = "1696",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1696",
 }
 
 dynamic_tile{
   layer = 0,
   x = 888,
   y = 360,
-  pattern = "1695",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1695",
 }
 
 dynamic_tile{
   layer = 0,
   x = 888,
   y = 376,
-  pattern = "1694",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1694",
 }
 
 dynamic_tile{
   layer = 0,
   x = 888,
   y = 392,
-  pattern = "1698",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1698",
 }
 
 dynamic_tile{
@@ -2779,10 +2790,9 @@ dynamic_tile{
   layer = 0,
   x = 904,
   y = 728,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2790,10 +2800,9 @@ dynamic_tile{
   layer = 0,
   x = 920,
   y = 728,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2801,10 +2810,9 @@ dynamic_tile{
   layer = 0,
   x = 936,
   y = 728,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2812,10 +2820,9 @@ dynamic_tile{
   layer = 0,
   x = 952,
   y = 728,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2823,10 +2830,9 @@ dynamic_tile{
   layer = 0,
   x = 952,
   y = 744,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2834,10 +2840,9 @@ dynamic_tile{
   layer = 0,
   x = 936,
   y = 744,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2845,10 +2850,9 @@ dynamic_tile{
   layer = 0,
   x = 920,
   y = 744,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2856,10 +2860,9 @@ dynamic_tile{
   layer = 0,
   x = 904,
   y = 744,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2867,10 +2870,9 @@ dynamic_tile{
   layer = 0,
   x = 904,
   y = 760,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2878,10 +2880,9 @@ dynamic_tile{
   layer = 0,
   x = 920,
   y = 760,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2889,10 +2890,9 @@ dynamic_tile{
   layer = 0,
   x = 936,
   y = 760,
-  pattern = "1683",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1683",
 }
 
 dynamic_tile{
@@ -2900,150 +2900,135 @@ dynamic_tile{
   layer = 0,
   x = 952,
   y = 760,
+  width = 16,
+  height = 16,
   pattern = "1683",
-  width = 16,
-  height = 16,
-  enabled_at_start = true,
 }
 
 dynamic_tile{
   layer = 0,
   x = 960,
   y = 768,
+  width = 16,
+  height = 16,
   pattern = "1693",
-  width = 16,
-  height = 16,
-  enabled_at_start = true,
 }
 
 dynamic_tile{
   layer = 0,
   x = 944,
   y = 768,
+  width = 16,
+  height = 16,
   pattern = "1692",
-  width = 16,
-  height = 16,
-  enabled_at_start = true,
 }
 
 dynamic_tile{
   layer = 0,
   x = 928,
   y = 768,
-  pattern = "1691",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1691",
 }
 
 dynamic_tile{
   layer = 0,
   x = 912,
   y = 768,
-  pattern = "1690",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1690",
 }
 
 dynamic_tile{
   layer = 0,
   x = 896,
   y = 768,
-  pattern = "1687",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1687",
 }
 
 dynamic_tile{
   layer = 0,
   x = 896,
   y = 752,
-  pattern = "1689",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1689",
 }
 
 dynamic_tile{
   layer = 0,
   x = 896,
   y = 736,
-  pattern = "1686",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1686",
 }
 
 dynamic_tile{
   layer = 0,
   x = 896,
   y = 720,
-  pattern = "1685",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1685",
 }
 
 dynamic_tile{
   layer = 0,
   x = 912,
   y = 720,
-  pattern = "1688",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1688",
 }
 
 dynamic_tile{
   layer = 0,
   x = 928,
   y = 720,
-  pattern = "1697",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1697",
 }
 
 dynamic_tile{
   layer = 0,
   x = 944,
   y = 720,
-  pattern = "1696",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1696",
 }
 
 dynamic_tile{
   layer = 0,
   x = 960,
   y = 720,
-  pattern = "1695",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1695",
 }
 
 dynamic_tile{
   layer = 0,
   x = 960,
   y = 736,
-  pattern = "1694",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1694",
 }
 
 dynamic_tile{
   layer = 0,
   x = 960,
   y = 752,
-  pattern = "1698",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1698",
 }
 
 tile{

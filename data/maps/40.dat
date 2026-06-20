@@ -10162,6 +10162,33 @@ tile{
   pattern = "767",
 }
 
+tile{
+  layer = 0,
+  x = 904,
+  y = 536,
+  width = 16,
+  height = 16,
+  pattern = "498",
+}
+
+tile{
+  layer = 0,
+  x = 664,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "498",
+}
+
+tile{
+  layer = 0,
+  x = 424,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "498",
+}
+
 dynamic_tile{
   name = "night_collector_door",
   layer = 0,
@@ -12395,6 +12422,33 @@ tile{
   pattern = "495",
 }
 
+tile{
+  layer = 1,
+  x = 904,
+  y = 504,
+  width = 24,
+  height = 32,
+  pattern = "495",
+}
+
+tile{
+  layer = 1,
+  x = 664,
+  y = 240,
+  width = 24,
+  height = 32,
+  pattern = "495",
+}
+
+tile{
+  layer = 1,
+  x = 424,
+  y = 240,
+  width = 24,
+  height = 32,
+  pattern = "495",
+}
+
 custom_entity{
   name = "butterfly_1",
   layer = 1,
@@ -12497,6 +12551,39 @@ dynamic_tile{
   layer = 1,
   x = 872,
   y = 216,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "496",
+}
+
+dynamic_tile{
+  name = "night_lamppost_7",
+  layer = 1,
+  x = 672,
+  y = 248,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "496",
+}
+
+dynamic_tile{
+  name = "night_lamppost_8",
+  layer = 1,
+  x = 432,
+  y = 248,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "496",
+}
+
+dynamic_tile{
+  name = "night_lamppost_9",
+  layer = 1,
+  x = 912,
+  y = 512,
   enabled_at_start = false,
   width = 16,
   height = 16,
