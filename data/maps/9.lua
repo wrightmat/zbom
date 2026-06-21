@@ -1,6 +1,7 @@
 local map = ...
 local game = map:get_game()
 
+
 -----------------------------------------------
 -- Inside various caves - Blacksmith, etc.   --
 -----------------------------------------------
@@ -8,6 +9,9 @@ local game = map:get_game()
 if game:get_value("i1601")==nil then game:set_value("i1601", 0) end
 if game:get_value("i1840")==nil then game:set_value("i1840", 0) end
 if game:get_value("i1902")==nil then game:set_value("i1902", 0) end
+
+local camera_surface = map:get_camera():get_surface()
+
 
 function rudy_reputation()
   game:set_value("i1902", game:get_value("i1902")+1)
@@ -30,12 +34,28 @@ function map:on_started(destination)
     map:create_chest({ x = 1480, y = 1741, layer = 0, treasure_name = "tunic", treasure_variant = 2, sprite = "entities/chest" })
   end
 
+  if destination:get_name() == "enter_subrosia" then
+    local shader = sol.shader.create("heatwave")
+    camera_surface:set_shader(shader)
+    sol.timer.start(map, 1000, function()
+      -- If no red tunic, then take away life every second
+      if game:get_value("i1822") < 2 then
+        hero:remove_life(1)
+        return true  -- Repeat the timer.
+      end
+    end)
+  end
+
   -- Activate any night-specific dynamic tiles.
   if game:get_time_of_day() == "night" then
     for entity in game:get_map():get_entities("night_") do
       entity:set_enabled(true)
     end
   end
+end
+
+function map:on_finished()
+  camera_surface:set_shader(nil)
 end
 
 npc_rudy:register_event("on_interaction", function()

@@ -3709,6 +3709,171 @@ tile{
   pattern = "367",
 }
 
+tile{
+  layer = 0,
+  x = 648,
+  y = 0,
+  width = 16,
+  height = 96,
+  pattern = "366",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "373",
+}
+
+tile{
+  layer = 0,
+  x = 584,
+  y = 96,
+  width = 64,
+  height = 16,
+  pattern = "368",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "369",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 112,
+  width = 16,
+  height = 352,
+  pattern = "366",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "373",
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 464,
+  width = 96,
+  height = 16,
+  pattern = "368",
+}
+
+tile{
+  layer = 0,
+  x = 456,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "367",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "372",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 432,
+  width = 16,
+  height = 32,
+  pattern = "366",
+}
+
+tile{
+  layer = 0,
+  x = 768,
+  y = 480,
+  width = 32,
+  height = 48,
+  pattern = "809",
+}
+
+custom_entity{
+  layer = 0,
+  x = 632,
+  y = 53,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_milkweed_yellow",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 600,
+  y = 141,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_milkweed_yellow",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 528,
+  y = 453,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_milkweed_yellow",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 488,
+  y = 429,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_milkweed_yellow",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 424,
+  y = 429,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_milkweed_yellow",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 392,
+  y = 453,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_milkweed_yellow",
+  model = "foliage",
+}
+
 destination{
   name = "from_lair",
   layer = 0,
@@ -5490,6 +5655,39 @@ custom_entity{
   layer = 0,
   x = 840,
   y = 445,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_milkweed_yellow",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 784,
+  y = 533,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_milkweed_yellow",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 768,
+  y = 525,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_milkweed_yellow",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 808,
+  y = 501,
   width = 16,
   height = 16,
   direction = 0,

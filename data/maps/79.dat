@@ -3,9 +3,9 @@ properties{
   y = 11210,
   width = 1120,
   height = 1120,
-  world = "outside_world",
   min_layer = 0,
   max_layer = 2,
+  world = "outside_world",
   tileset = "2",
   music = "same",
 }
@@ -3731,5 +3731,115 @@ chest{
   treasure_name = "crystal",
   treasure_savegame_variable = "b1752",
   sprite = "entities/chest",
+}
+
+custom_entity{
+  layer = 0,
+  x = 848,
+  y = 885,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/stone_ocean_1",
+  model = "stone_ocean",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1040,
+  y = 1109,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/stone_ocean_1",
+  model = "stone_ocean",
+}
+
+custom_entity{
+  layer = 0,
+  x = 368,
+  y = 1069,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/stone_ocean_1",
+  model = "stone_ocean",
+}
+
+custom_entity{
+  layer = 0,
+  x = 760,
+  y = 853,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/stone_ocean_1",
+  model = "stone_ocean",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1000,
+  y = 869,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/stone_ocean_1",
+  model = "stone_ocean",
+}
+
+custom_entity{
+  layer = 0,
+  x = 768,
+  y = 1125,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/stone_ocean_1",
+  model = "stone_ocean",
+}
+
+custom_entity{
+  layer = 0,
+  x = 736,
+  y = 1133,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/stone_ocean_1",
+  model = "stone_ocean",
+}
+
+custom_entity{
+  layer = 0,
+  x = 696,
+  y = 1125,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/stone_ocean_1",
+  model = "stone_ocean",
+}
+
+custom_entity{
+  layer = 0,
+  x = 408,
+  y = 989,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/stone_ocean_1",
+  model = "stone_ocean",
+}
+
+custom_entity{
+  layer = 0,
+  x = 440,
+  y = 1133,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/stone_ocean_1",
+  model = "stone_ocean",
 }
 

@@ -45,7 +45,7 @@ function map_submenu:on_started()
       self.outside_world_size = { width = 3362, height = 4483 }
       self.outside_world_minimap_size = { width = 225, height = 133 }
       self.world_minimap_img = sol.surface.load("sprites/menus/outside_world_map_2.png")
-      local hero_minimap_x = math.floor(hero_absolute_x * self.outside_world_minimap_size.width / self.outside_world_size.width) + 10
+      local hero_minimap_x = math.floor(hero_absolute_x * self.outside_world_minimap_size.width / self.outside_world_size.width) + 58
       local hero_minimap_y = math.floor(hero_absolute_y * self.outside_world_minimap_size.height / self.outside_world_size.height) - 5
       self.hero_x = hero_minimap_x + 24
       self.hero_y = hero_minimap_y + 54

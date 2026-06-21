@@ -930,8 +930,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 296,
-  y = 912,
+  x = 232,
+  y = 840,
   width = 16,
   height = 16,
   pattern = "963",
@@ -1916,6 +1916,15 @@ tile{
   width = 32,
   height = 32,
   pattern = "212",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 928,
+  width = 40,
+  height = 32,
+  pattern = "200",
 }
 
 teletransporter{
@@ -3078,6 +3087,28 @@ custom_entity{
   direction = 0,
   sprite = "entities/foliage_grass_green",
   model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 40,
+  y = 853,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/stone_ocean_1",
+  model = "stone_ocean",
+}
+
+custom_entity{
+  layer = 0,
+  x = 144,
+  y = 1061,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/stone_ocean_1",
+  model = "stone_ocean",
 }
 
 tile{

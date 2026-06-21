@@ -6985,6 +6985,95 @@ tile{
   pattern = "1128",
 }
 
+tile{
+  layer = 0,
+  x = 1080,
+  y = 208,
+  width = 40,
+  height = 8,
+  pattern = "226",
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 200,
+  group = 1,
+  width = 40,
+  height = 8,
+  pattern = "217",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 208,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "225",
+}
+
+tile{
+  layer = 0,
+  x = 1120,
+  y = 208,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "229",
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 216,
+  group = 1,
+  width = 40,
+  height = 8,
+  pattern = "231",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 200,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "216",
+}
+
+tile{
+  layer = 0,
+  x = 1120,
+  y = 200,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "218",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 216,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "232",
+}
+
+tile{
+  layer = 0,
+  x = 1120,
+  y = 216,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "230",
+}
+
 teletransporter{
   name = "to_G6",
   layer = 0,
