@@ -5815,15 +5815,167 @@ tile{
   pattern = "524",
 }
 
+tile{
+  layer = 0,
+  x = 40,
+  y = 792,
+  width = 8,
+  height = 8,
+  pattern = "40",
+}
+
+tile{
+  layer = 0,
+  x = 8,
+  y = 800,
+  width = 8,
+  height = 8,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 680,
+  width = 8,
+  height = 8,
+  pattern = "38",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 792,
+  width = 16,
+  height = 8,
+  pattern = "1693",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 744,
+  width = 8,
+  height = 8,
+  pattern = "38",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 544,
+  width = 8,
+  height = 8,
+  pattern = "39",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 424,
+  width = 8,
+  height = 8,
+  pattern = "40",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 288,
+  width = 16,
+  height = 8,
+  pattern = "1693",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 192,
+  width = 8,
+  height = 8,
+  pattern = "40",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 256,
+  width = 8,
+  height = 8,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 72,
+  width = 8,
+  height = 8,
+  pattern = "38",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 40,
+  width = 8,
+  height = 8,
+  pattern = "39",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 72,
+  width = 16,
+  height = 8,
+  pattern = "1693",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 616,
+  width = 8,
+  height = 8,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 704,
+  width = 8,
+  height = 8,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 712,
+  width = 8,
+  height = 8,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 760,
+  width = 8,
+  height = 8,
+  pattern = "62",
+}
+
 dynamic_tile{
   name = "trees_12",
   layer = 0,
   x = 336,
   y = 536,
-  pattern = "1121",
   width = 32,
   height = 8,
-  enabled_at_start = true,
+  pattern = "1121",
 }
 
 dynamic_tile{
@@ -5831,10 +5983,9 @@ dynamic_tile{
   layer = 0,
   x = 336,
   y = 504,
-  pattern = "509",
   width = 48,
   height = 16,
-  enabled_at_start = true,
+  pattern = "509",
 }
 
 dynamic_tile{
@@ -5842,10 +5993,9 @@ dynamic_tile{
   layer = 0,
   x = 328,
   y = 496,
-  pattern = "1122",
   width = 8,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1122",
 }
 
 dynamic_tile{
@@ -5853,10 +6003,9 @@ dynamic_tile{
   layer = 0,
   x = 96,
   y = 256,
-  pattern = "518",
   width = 48,
   height = 40,
-  enabled_at_start = true,
+  pattern = "518",
 }
 
 teletransporter{
@@ -5865,7 +6014,7 @@ teletransporter{
   x = 1120,
   y = 920,
   width = 16,
-  height = 208,
+  height = 200,
   transition = "scrolling",
   destination_map = "17",
   destination = "_side",
@@ -7578,10 +7727,9 @@ dynamic_tile{
   layer = 0,
   x = 96,
   y = 296,
-  pattern = "509",
   width = 48,
   height = 16,
-  enabled_at_start = true,
+  pattern = "509",
 }
 
 dynamic_tile{
@@ -7589,10 +7737,9 @@ dynamic_tile{
   layer = 0,
   x = 104,
   y = 312,
-  pattern = "1121",
   width = 32,
   height = 8,
-  enabled_at_start = true,
+  pattern = "1121",
 }
 
 dynamic_tile{
@@ -7600,10 +7747,9 @@ dynamic_tile{
   layer = 0,
   x = 88,
   y = 288,
-  pattern = "1122",
   width = 8,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1122",
 }
 
 dynamic_tile{
@@ -7611,10 +7757,9 @@ dynamic_tile{
   layer = 0,
   x = 144,
   y = 288,
-  pattern = "1123",
   width = 8,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1123",
 }
 
 dynamic_tile{
@@ -7622,10 +7767,9 @@ dynamic_tile{
   layer = 0,
   x = 336,
   y = 464,
-  pattern = "518",
   width = 48,
   height = 40,
-  enabled_at_start = true,
+  pattern = "518",
 }
 
 dynamic_tile{
@@ -7633,10 +7777,9 @@ dynamic_tile{
   layer = 0,
   x = 864,
   y = 704,
-  pattern = "528",
   width = 32,
   height = 32,
-  enabled_at_start = true,
+  pattern = "528",
 }
 
 dynamic_tile{
@@ -7644,10 +7787,9 @@ dynamic_tile{
   layer = 0,
   x = 656,
   y = 848,
-  pattern = "528",
   width = 32,
   height = 32,
-  enabled_at_start = true,
+  pattern = "528",
 }
 
 dynamic_tile{
@@ -7655,10 +7797,9 @@ dynamic_tile{
   layer = 0,
   x = 328,
   y = 784,
-  pattern = "528",
   width = 32,
   height = 32,
-  enabled_at_start = true,
+  pattern = "528",
 }
 
 dynamic_tile{
@@ -7666,10 +7807,9 @@ dynamic_tile{
   layer = 0,
   x = 192,
   y = 752,
-  pattern = "528",
   width = 32,
   height = 32,
-  enabled_at_start = true,
+  pattern = "528",
 }
 
 dynamic_tile{
@@ -7677,10 +7817,9 @@ dynamic_tile{
   layer = 0,
   x = 792,
   y = 568,
-  pattern = "518",
   width = 48,
   height = 40,
-  enabled_at_start = true,
+  pattern = "518",
 }
 
 dynamic_tile{
@@ -7688,10 +7827,9 @@ dynamic_tile{
   layer = 0,
   x = 792,
   y = 608,
-  pattern = "509",
   width = 48,
   height = 16,
-  enabled_at_start = true,
+  pattern = "509",
 }
 
 dynamic_tile{
@@ -7699,10 +7837,9 @@ dynamic_tile{
   layer = 0,
   x = 800,
   y = 624,
-  pattern = "1121",
   width = 32,
   height = 8,
-  enabled_at_start = true,
+  pattern = "1121",
 }
 
 dynamic_tile{
@@ -7710,10 +7847,9 @@ dynamic_tile{
   layer = 0,
   x = 784,
   y = 600,
-  pattern = "1122",
   width = 8,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1122",
 }
 
 dynamic_tile{
@@ -7721,10 +7857,9 @@ dynamic_tile{
   layer = 0,
   x = 840,
   y = 600,
-  pattern = "1123",
   width = 8,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1123",
 }
 
 dynamic_tile{
@@ -7732,10 +7867,9 @@ dynamic_tile{
   layer = 0,
   x = 552,
   y = 680,
-  pattern = "518",
   width = 48,
   height = 40,
-  enabled_at_start = true,
+  pattern = "518",
 }
 
 dynamic_tile{
@@ -7743,10 +7877,9 @@ dynamic_tile{
   layer = 0,
   x = 552,
   y = 720,
-  pattern = "509",
   width = 48,
   height = 16,
-  enabled_at_start = true,
+  pattern = "509",
 }
 
 dynamic_tile{
@@ -7754,10 +7887,9 @@ dynamic_tile{
   layer = 0,
   x = 560,
   y = 736,
-  pattern = "1121",
   width = 32,
   height = 8,
-  enabled_at_start = true,
+  pattern = "1121",
 }
 
 dynamic_tile{
@@ -7765,10 +7897,9 @@ dynamic_tile{
   layer = 0,
   x = 544,
   y = 712,
-  pattern = "1122",
   width = 8,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1122",
 }
 
 dynamic_tile{
@@ -7776,10 +7907,9 @@ dynamic_tile{
   layer = 0,
   x = 600,
   y = 712,
-  pattern = "1123",
   width = 8,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1123",
 }
 
 dynamic_tile{
@@ -7787,10 +7917,9 @@ dynamic_tile{
   layer = 0,
   x = 584,
   y = 912,
-  pattern = "518",
   width = 48,
   height = 40,
-  enabled_at_start = true,
+  pattern = "518",
 }
 
 dynamic_tile{
@@ -7798,10 +7927,9 @@ dynamic_tile{
   layer = 0,
   x = 584,
   y = 952,
-  pattern = "509",
   width = 48,
   height = 16,
-  enabled_at_start = true,
+  pattern = "509",
 }
 
 dynamic_tile{
@@ -7809,10 +7937,9 @@ dynamic_tile{
   layer = 0,
   x = 592,
   y = 968,
-  pattern = "1121",
   width = 32,
   height = 8,
-  enabled_at_start = true,
+  pattern = "1121",
 }
 
 dynamic_tile{
@@ -7820,10 +7947,9 @@ dynamic_tile{
   layer = 0,
   x = 576,
   y = 944,
-  pattern = "1122",
   width = 8,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1122",
 }
 
 dynamic_tile{
@@ -7831,10 +7957,9 @@ dynamic_tile{
   layer = 0,
   x = 632,
   y = 944,
-  pattern = "1123",
   width = 8,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1123",
 }
 
 dynamic_tile{
@@ -7842,10 +7967,9 @@ dynamic_tile{
   layer = 0,
   x = 16,
   y = 712,
-  pattern = "518",
   width = 48,
   height = 40,
-  enabled_at_start = true,
+  pattern = "518",
 }
 
 dynamic_tile{
@@ -7853,10 +7977,9 @@ dynamic_tile{
   layer = 0,
   x = 16,
   y = 752,
-  pattern = "509",
   width = 48,
   height = 16,
-  enabled_at_start = true,
+  pattern = "509",
 }
 
 dynamic_tile{
@@ -7864,10 +7987,9 @@ dynamic_tile{
   layer = 0,
   x = 24,
   y = 768,
-  pattern = "1121",
   width = 32,
   height = 8,
-  enabled_at_start = true,
+  pattern = "1121",
 }
 
 dynamic_tile{
@@ -7875,10 +7997,9 @@ dynamic_tile{
   layer = 0,
   x = 8,
   y = 744,
-  pattern = "1122",
   width = 8,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1122",
 }
 
 dynamic_tile{
@@ -7886,10 +8007,9 @@ dynamic_tile{
   layer = 0,
   x = 64,
   y = 744,
-  pattern = "1123",
   width = 8,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1123",
 }
 
 dynamic_tile{
@@ -7897,10 +8017,9 @@ dynamic_tile{
   layer = 0,
   x = 112,
   y = 712,
-  pattern = "518",
   width = 48,
   height = 40,
-  enabled_at_start = true,
+  pattern = "518",
 }
 
 dynamic_tile{
@@ -7908,10 +8027,9 @@ dynamic_tile{
   layer = 0,
   x = 112,
   y = 752,
-  pattern = "509",
   width = 48,
   height = 16,
-  enabled_at_start = true,
+  pattern = "509",
 }
 
 dynamic_tile{
@@ -7919,10 +8037,9 @@ dynamic_tile{
   layer = 0,
   x = 120,
   y = 768,
-  pattern = "1121",
   width = 32,
   height = 8,
-  enabled_at_start = true,
+  pattern = "1121",
 }
 
 dynamic_tile{
@@ -7930,10 +8047,9 @@ dynamic_tile{
   layer = 0,
   x = 104,
   y = 744,
-  pattern = "1122",
   width = 8,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1122",
 }
 
 dynamic_tile{
@@ -7941,10 +8057,9 @@ dynamic_tile{
   layer = 0,
   x = 160,
   y = 744,
-  pattern = "1123",
   width = 8,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1123",
 }
 
 dynamic_tile{
@@ -7952,10 +8067,570 @@ dynamic_tile{
   layer = 0,
   x = 376,
   y = 600,
-  pattern = "528",
   width = 32,
   height = 32,
-  enabled_at_start = true,
+  pattern = "528",
+}
+
+custom_entity{
+  layer = 0,
+  x = 928,
+  y = 949,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1024,
+  y = 885,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1016,
+  y = 869,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 968,
+  y = 821,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1088,
+  y = 925,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1048,
+  y = 973,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1096,
+  y = 1045,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 800,
+  y = 941,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 792,
+  y = 949,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 856,
+  y = 813,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 912,
+  y = 813,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 728,
+  y = 1037,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 736,
+  y = 1029,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 472,
+  y = 925,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 464,
+  y = 933,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 464,
+  y = 949,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 576,
+  y = 917,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_reeds_swamp",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 224,
+  y = 565,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 216,
+  y = 573,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 232,
+  y = 589,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 176,
+  y = 589,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 168,
+  y = 597,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 136,
+  y = 573,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 120,
+  y = 541,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 312,
+  y = 477,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 320,
+  y = 477,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 440,
+  y = 509,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 376,
+  y = 581,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 304,
+  y = 565,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 32,
+  y = 453,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 240,
+  y = 685,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 128,
+  y = 781,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_reeds_swamp",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 48,
+  y = 789,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_reeds_swamp",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 80,
+  y = 837,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_reeds_swamp",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 24,
+  y = 789,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_reeds_swamp",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 32,
+  y = 797,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_reeds_swamp",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 672,
+  y = 629,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 872,
+  y = 517,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 864,
+  y = 525,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 872,
+  y = 533,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1024,
+  y = 533,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1032,
+  y = 597,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1024,
+  y = 605,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1056,
+  y = 613,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 968,
+  y = 733,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1024,
+  y = 781,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1032,
+  y = 789,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1064,
+  y = 781,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 784,
+  y = 621,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_reeds_swamp",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 872,
+  y = 741,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_reeds_swamp",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 920,
+  y = 981,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
 }
 
 tile{
@@ -11662,10 +12337,9 @@ dynamic_tile{
   layer = 2,
   x = 736,
   y = 352,
-  pattern = "528",
   width = 32,
   height = 32,
-  enabled_at_start = true,
+  pattern = "528",
 }
 
 dynamic_tile{
@@ -11673,10 +12347,9 @@ dynamic_tile{
   layer = 2,
   x = 336,
   y = 464,
-  pattern = "518",
   width = 48,
   height = 40,
-  enabled_at_start = true,
+  pattern = "518",
 }
 
 dynamic_tile{
@@ -11684,10 +12357,9 @@ dynamic_tile{
   layer = 2,
   x = 96,
   y = 256,
-  pattern = "518",
   width = 48,
   height = 40,
-  enabled_at_start = true,
+  pattern = "518",
 }
 
 dynamic_tile{
@@ -11695,10 +12367,9 @@ dynamic_tile{
   layer = 2,
   x = 88,
   y = 248,
-  pattern = "515",
   width = 8,
   height = 40,
-  enabled_at_start = true,
+  pattern = "515",
 }
 
 dynamic_tile{
@@ -11706,10 +12377,9 @@ dynamic_tile{
   layer = 2,
   x = 96,
   y = 240,
-  pattern = "517",
   width = 48,
   height = 16,
-  enabled_at_start = true,
+  pattern = "517",
 }
 
 dynamic_tile{
@@ -11717,10 +12387,9 @@ dynamic_tile{
   layer = 2,
   x = 144,
   y = 248,
-  pattern = "516",
   width = 8,
   height = 40,
-  enabled_at_start = true,
+  pattern = "516",
 }
 
 dynamic_tile{
@@ -11728,10 +12397,9 @@ dynamic_tile{
   layer = 2,
   x = 328,
   y = 456,
-  pattern = "515",
   width = 8,
   height = 40,
-  enabled_at_start = true,
+  pattern = "515",
 }
 
 dynamic_tile{
@@ -11739,10 +12407,9 @@ dynamic_tile{
   layer = 2,
   x = 336,
   y = 448,
-  pattern = "517",
   width = 48,
   height = 16,
-  enabled_at_start = true,
+  pattern = "517",
 }
 
 dynamic_tile{
@@ -11750,10 +12417,9 @@ dynamic_tile{
   layer = 2,
   x = 384,
   y = 456,
-  pattern = "516",
   width = 8,
   height = 40,
-  enabled_at_start = true,
+  pattern = "516",
 }
 
 dynamic_tile{
@@ -11761,10 +12427,9 @@ dynamic_tile{
   layer = 2,
   x = 384,
   y = 496,
-  pattern = "1123",
   width = 8,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1123",
 }
 
 dynamic_tile{
@@ -11772,10 +12437,9 @@ dynamic_tile{
   layer = 2,
   x = 792,
   y = 568,
-  pattern = "518",
   width = 48,
   height = 40,
-  enabled_at_start = true,
+  pattern = "518",
 }
 
 dynamic_tile{
@@ -11783,10 +12447,9 @@ dynamic_tile{
   layer = 2,
   x = 784,
   y = 560,
-  pattern = "515",
   width = 8,
   height = 40,
-  enabled_at_start = true,
+  pattern = "515",
 }
 
 dynamic_tile{
@@ -11794,10 +12457,9 @@ dynamic_tile{
   layer = 2,
   x = 792,
   y = 552,
-  pattern = "517",
   width = 48,
   height = 16,
-  enabled_at_start = true,
+  pattern = "517",
 }
 
 dynamic_tile{
@@ -11805,10 +12467,9 @@ dynamic_tile{
   layer = 2,
   x = 840,
   y = 560,
-  pattern = "516",
   width = 8,
   height = 40,
-  enabled_at_start = true,
+  pattern = "516",
 }
 
 dynamic_tile{
@@ -11816,10 +12477,9 @@ dynamic_tile{
   layer = 2,
   x = 552,
   y = 680,
-  pattern = "518",
   width = 48,
   height = 40,
-  enabled_at_start = true,
+  pattern = "518",
 }
 
 dynamic_tile{
@@ -11827,10 +12487,9 @@ dynamic_tile{
   layer = 2,
   x = 544,
   y = 672,
-  pattern = "515",
   width = 8,
   height = 40,
-  enabled_at_start = true,
+  pattern = "515",
 }
 
 dynamic_tile{
@@ -11838,10 +12497,9 @@ dynamic_tile{
   layer = 2,
   x = 552,
   y = 664,
-  pattern = "517",
   width = 48,
   height = 16,
-  enabled_at_start = true,
+  pattern = "517",
 }
 
 dynamic_tile{
@@ -11849,10 +12507,9 @@ dynamic_tile{
   layer = 2,
   x = 600,
   y = 672,
-  pattern = "516",
   width = 8,
   height = 40,
-  enabled_at_start = true,
+  pattern = "516",
 }
 
 dynamic_tile{
@@ -11860,10 +12517,9 @@ dynamic_tile{
   layer = 2,
   x = 584,
   y = 912,
-  pattern = "518",
   width = 48,
   height = 40,
-  enabled_at_start = true,
+  pattern = "518",
 }
 
 dynamic_tile{
@@ -11871,10 +12527,9 @@ dynamic_tile{
   layer = 2,
   x = 576,
   y = 904,
-  pattern = "515",
   width = 8,
   height = 40,
-  enabled_at_start = true,
+  pattern = "515",
 }
 
 dynamic_tile{
@@ -11882,10 +12537,9 @@ dynamic_tile{
   layer = 2,
   x = 584,
   y = 896,
-  pattern = "517",
   width = 48,
   height = 16,
-  enabled_at_start = true,
+  pattern = "517",
 }
 
 dynamic_tile{
@@ -11893,10 +12547,9 @@ dynamic_tile{
   layer = 2,
   x = 632,
   y = 904,
-  pattern = "516",
   width = 8,
   height = 40,
-  enabled_at_start = true,
+  pattern = "516",
 }
 
 dynamic_tile{
@@ -11904,10 +12557,9 @@ dynamic_tile{
   layer = 2,
   x = 16,
   y = 712,
-  pattern = "518",
   width = 48,
   height = 40,
-  enabled_at_start = true,
+  pattern = "518",
 }
 
 dynamic_tile{
@@ -11915,10 +12567,9 @@ dynamic_tile{
   layer = 2,
   x = 8,
   y = 704,
-  pattern = "515",
   width = 8,
   height = 40,
-  enabled_at_start = true,
+  pattern = "515",
 }
 
 dynamic_tile{
@@ -11926,10 +12577,9 @@ dynamic_tile{
   layer = 2,
   x = 16,
   y = 696,
-  pattern = "517",
   width = 48,
   height = 16,
-  enabled_at_start = true,
+  pattern = "517",
 }
 
 dynamic_tile{
@@ -11937,10 +12587,9 @@ dynamic_tile{
   layer = 2,
   x = 64,
   y = 704,
-  pattern = "516",
   width = 8,
   height = 40,
-  enabled_at_start = true,
+  pattern = "516",
 }
 
 dynamic_tile{
@@ -11948,10 +12597,9 @@ dynamic_tile{
   layer = 2,
   x = 112,
   y = 712,
-  pattern = "518",
   width = 48,
   height = 40,
-  enabled_at_start = true,
+  pattern = "518",
 }
 
 dynamic_tile{
@@ -11959,10 +12607,9 @@ dynamic_tile{
   layer = 2,
   x = 104,
   y = 704,
-  pattern = "515",
   width = 8,
   height = 40,
-  enabled_at_start = true,
+  pattern = "515",
 }
 
 dynamic_tile{
@@ -11970,10 +12617,9 @@ dynamic_tile{
   layer = 2,
   x = 112,
   y = 696,
-  pattern = "517",
   width = 48,
   height = 16,
-  enabled_at_start = true,
+  pattern = "517",
 }
 
 dynamic_tile{
@@ -11981,9 +12627,8 @@ dynamic_tile{
   layer = 2,
   x = 160,
   y = 704,
-  pattern = "516",
   width = 8,
   height = 40,
-  enabled_at_start = true,
+  pattern = "516",
 }
 

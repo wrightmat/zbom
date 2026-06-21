@@ -215,13 +215,13 @@ function tone_manager:create(game)
       if teletransporter_scrolling ~= true then
         -- Next, this section is about entities.
         for e in map:get_entities("torch_") do
-          if e:is_enabled() and e:get_sprite():get_animation() == "lit" and e:get_distance(hero) <= 300 then
+          if e:is_enabled() and e:get_sprite():get_animation() == "lit" and e:get_distance(hero) <= 500 then
             local xx,yy = e:get_position()
             effects.torch:draw(light, xx - cam_x - 32, yy - cam_y - 32)
           end
         end
         for e in map:get_entities("night_") do
-          if e:is_enabled() and e:get_distance(hero) <= 300 then
+          if e:is_enabled() and e:get_distance(hero) <= 500 then
             if e.is_street_light then
       		    local xe, ye = e:get_position()
       		    effects.torch:draw(light, xe - cam_x - 24, ye - cam_y - 24)
@@ -232,31 +232,31 @@ function tone_manager:create(game)
           end
         end
         for e in map:get_entities("lava_") do
-          if e:is_enabled() and e:get_distance(hero) <= 300 then
+          if e:is_enabled() and e:get_distance(hero) <= 500 then
             local xx,yy = e:get_position()
       	    effects.torch_tile:draw(light, xx - cam_x - 8, yy - cam_y - 8)
           end
         end
         for e in map:get_entities("warp_") do
-          if e:is_enabled() and e:get_distance(hero) <= 300 then
+          if e:is_enabled() and e:get_distance(hero) <= 500 then
             local xx,yy = e:get_position()
       	    effects.torch_tile:draw(light, xx - cam_x - 8, yy - cam_y - 8)
           end
         end
         for e in map:get_entities("b15") do -- Prefix used by Ocarina warp tiles.
-          if e:is_enabled() and e:get_distance(hero) <= 300 then
+          if e:is_enabled() and e:get_distance(hero) <= 500 then
             local xx,yy = e:get_position()
       	    effects.torch:draw(light, xx - cam_x - 32, yy - cam_y - 32)
           end
         end
         for e in map:get_entities("switch_") do
-          if e:get_distance(hero) <= 300 then
+          if e:get_distance(hero) <= 500 then
             local xx,yy = e:get_position()
       	    effects.torch_tile:draw(light, xx - cam_x - 8, yy - cam_y - 8)
           end
         end
         for e in map:get_entities("poe_") do
-          if e:is_enabled() and e:get_distance(hero) <= 300 then
+          if e:is_enabled() and e:get_distance(hero) <= 500 then
             local xx,yy = e:get_position()
       	    effects.torch:draw(light, xx - cam_x - 32, yy - cam_y - 32)
           end

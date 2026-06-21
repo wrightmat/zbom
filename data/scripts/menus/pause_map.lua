@@ -251,27 +251,27 @@ end
 function map_submenu:draw_dungeon_items(dst_surface)
   -- Map.
   if self.game:has_dungeon_map() then
-    self.dungeon_map_icons_img:draw_region(0, 0, 17, 17, dst_surface, 50, 168)
+    self.dungeon_map_icons_img:draw_region(0, 0, 17, 17, dst_surface, 98, 168)
   end
 
   -- Compass.
   if self.game:has_dungeon_compass() then
-    self.dungeon_map_icons_img:draw_region(17, 0, 17, 17, dst_surface, 69, 168)
+    self.dungeon_map_icons_img:draw_region(17, 0, 17, 17, dst_surface, 117, 168)
   end
 
   -- Big key.
   if self.game:has_dungeon_big_key() then
-    self.dungeon_map_icons_img:draw_region(34, 0, 17, 17, dst_surface, 88, 168)
+    self.dungeon_map_icons_img:draw_region(34, 0, 17, 17, dst_surface, 136, 168)
   end
 
   -- Boss key.
   if self.game:has_dungeon_boss_key() then
-    self.dungeon_map_icons_img:draw_region(51, 0, 17, 17, dst_surface, 107, 168)
+    self.dungeon_map_icons_img:draw_region(51, 0, 17, 17, dst_surface, 155, 168)
   end
 
   -- Small keys.
-  self.dungeon_map_icons_img:draw_region(68, 0, 9, 17, dst_surface, 126, 168)
-  self.small_keys_text:draw(dst_surface, 140, 180)
+  self.dungeon_map_icons_img:draw_region(68, 0, 9, 17, dst_surface, 174, 168)
+  self.small_keys_text:draw(dst_surface, 188, 180)
 end
 
 function map_submenu:draw_dungeon_floors(dst_surface)
