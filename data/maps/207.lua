@@ -14,6 +14,11 @@ map:register_event("on_started", function(self, destination)
     boss_plasmarine_blue:set_enabled(false)
     boss_plasmarine_red:set_enabled(false)
     to_outside:set_enabled(false)
+  else
+    boss_plasmarine_blue:remove()
+    boss_plasmarine_red:remove()
+    chest_book:set_enabled(true)
+    to_outside:set_enabled(true)
   end
   if not game:get_value("b1791") then chest_crystal:set_enabled(false) end
   if not game:get_value("b1127") then chest_map:set_enabled(false) end
@@ -121,14 +126,20 @@ function switch_water_chest:on_activated()
 end
 
 function switch_stone:on_activated()
-  pillar_1:set_enabled(true)
-  pillar_2:set_enabled(true)
-  hook_1:set_enabled(true)
+  local cx, cy = hook_1:get_position()
+  map:move_camera(cx, cy, 250, function()
+    pillar_1:set_enabled(true)
+    pillar_2:set_enabled(true)
+    hook_1:set_enabled(true)
+  end, 500, 500)
 end
 function switch_stone:on_inactivated()
-  pillar_1:set_enabled(false)
-  pillar_2:set_enabled(false)
-  hook_1:set_enabled(false)
+  local cx, cy = hook_1:get_position()
+  map:move_camera(cx, cy, 250, function()
+    pillar_1:set_enabled(false)
+    pillar_2:set_enabled(false)
+    hook_1:set_enabled(false)
+  end, 500, 500)
 end
 
 function switch_arrow_map:on_activated()
@@ -173,6 +184,18 @@ function sensor_reset_ground_3:on_activated()
 end
 function sensor_reset_ground_4:on_activated()
   hero:reset_solid_ground()
+end
+
+function door_key3_1:on_opened()
+  -- Special case for this poorly designed dungeon.
+  -- The first obtained key is meant to be used on the door nearby, but there's
+  -- nothing stopping the player from coming down here and using it on this
+  -- door - which soft-locks the dungeon. So just swap another key chest into here.
+  if not game:get_value("b1136") then
+    local cx, cy, cl = chest_goddess_plume:get_position()
+    chest_goddess_plume:set_position(chest_key_3:get_position())
+    chest_key_3:set_position(cx, cy, cl)
+  end
 end
 
 function chest_book:on_opened(item, variant, savegame_variable)

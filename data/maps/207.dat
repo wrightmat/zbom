@@ -17761,20 +17761,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 1568,
+  x = 1552,
   y = 1184,
   width = 32,
   height = 32,
   pattern = "623",
-}
-
-tile{
-  layer = 0,
-  x = 1576,
-  y = 1200,
-  width = 16,
-  height = 16,
-  pattern = "51",
 }
 
 tile{
@@ -18047,6 +18038,33 @@ tile{
   pattern = "646",
 }
 
+tile{
+  layer = 0,
+  x = 1216,
+  y = 136,
+  width = 8,
+  height = 16,
+  pattern = "97",
+}
+
+tile{
+  layer = 0,
+  x = 1584,
+  y = 1184,
+  width = 32,
+  height = 32,
+  pattern = "623",
+}
+
+tile{
+  layer = 0,
+  x = 1576,
+  y = 1200,
+  width = 16,
+  height = 16,
+  pattern = "51",
+}
+
 wall{
   name = "chest_blocker",
   layer = 0,
@@ -18188,7 +18206,6 @@ enemy{
   y = 1204,
   direction = 3,
   breed = "plasmarine_blue",
-  savegame_variable = "b1131",
   treasure_name = "plume",
 }
 
@@ -18199,7 +18216,6 @@ enemy{
   y = 1196,
   direction = 3,
   breed = "plasmarine_red",
-  savegame_variable = "b1131",
   treasure_name = "plume",
 }
 
@@ -19059,7 +19075,7 @@ chest{
 pickable{
   name = "boss_heart",
   layer = 0,
-  x = 416,
+  x = 296,
   y = 1165,
   treasure_name = "heart_container",
   treasure_savegame_variable = "b1133",
@@ -20875,8 +20891,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 1576,
-  y = 1184,
+  x = 1480,
+  y = 1168,
   width = 16,
   height = 16,
   pattern = "52",
@@ -20884,8 +20900,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 1480,
-  y = 1168,
+  x = 1576,
+  y = 1184,
   width = 16,
   height = 16,
   pattern = "52",
