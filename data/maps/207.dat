@@ -20691,6 +20691,39 @@ wall{
   stops_enemies = true,
 }
 
+custom_entity{
+  layer = 0,
+  x = 392,
+  y = 1045,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_milkweed_yellow",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 416,
+  y = 1053,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_milkweed_yellow",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 448,
+  y = 1045,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_milkweed_yellow",
+  model = "foliage",
+}
+
 tile{
   layer = 1,
   x = 1904,

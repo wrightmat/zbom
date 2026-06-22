@@ -72,26 +72,28 @@ function map:on_started(destination)
   -- Replace shop items if they're bought
   if game:get_value("i1820") >= 2 then --shield
     self:create_shop_treasure({
-	name = "shop_item_4",
-	layer = 0,
-	x = 112,
-	y = 112,
-	price = 40,
-	dialog = "_item_description.bow.2",
-	treasure_name = "arrow",
-	treasure_variant = 3
+    	name = "shop_item_4",
+    	layer = 0,
+    	x = 112,
+    	y = 112,
+    	price = 40,
+    	dialog = "_item_description.bow.2",
+    	treasure_name = "arrow",
+    	treasure_variant = 3,
+      font = "white_digits"
     })
   end
   if game:get_value("b2017") then --bomb_bag
     self:create_shop_treasure({
-	name = "shop_item_5",
-	layer = 0,
-	x = 160,
-	y = 112,
-	price = 40,
-	dialog = "_item_description.bomb_counter.1",
-	treasure_name = "bomb",
-	treasure_variant = 3
+    	name = "shop_item_5",
+    	layer = 0,
+    	x = 160,
+    	y = 112,
+    	price = 40,
+    	dialog = "_item_description.bomb_counter.1",
+    	treasure_name = "bomb",
+    	treasure_variant = 3,
+      font = "white_digits"
     })
   end
 end

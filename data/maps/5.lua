@@ -88,7 +88,8 @@ function map:on_started(destination)
       dialog = "shop.tunic_2",
       treasure_name = "tunic",
       treasure_variant = 2,
-      treasure_savegame_variable = "b2016"
+      treasure_savegame_variable = "b2016",
+      font = "white_digits"
     })
   end
 end

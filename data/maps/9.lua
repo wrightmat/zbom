@@ -70,8 +70,10 @@ npc_rudy:register_event("on_interaction", function()
       game:start_dialog("rudy.5.sword", function(answer)
         if answer == 1 then
           game:start_dialog("rudy.5.sword_1", function()
+            game:set_value("i1841", 5) -- Remove Master Ore.
             game:set_value("i1902", 5)
             game:set_ability("sword", 0)
+            npc_rudy:get_sprite():set_animation("walking")
             local m = sol.movement.create("target")
             m:set_target(232, 168)
             m:set_speed(32)
@@ -159,7 +161,6 @@ function sensor_leaving:on_activated()
       -- To get the light sword we need the blacksmith's quest
       -- and the fairy's quest but the order is not important.
       hero:start_treasure("sword", game:get_value("i1821") == 1 and 2 or 3)
-      game:set_value("i1841", 5) -- Remove Master Ore.
       game:set_value("i1902", 6)
       game:set_value("i1652", 5)
     end)

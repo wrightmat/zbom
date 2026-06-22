@@ -1272,8 +1272,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 472,
-  y = 104,
+  x = 440,
+  y = 120,
   width = 48,
   height = 32,
   pattern = "2021",
@@ -1281,8 +1281,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 464,
-  y = 80,
+  x = 432,
+  y = 96,
   width = 64,
   height = 24,
   pattern = "2018",
@@ -1290,8 +1290,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 464,
-  y = 104,
+  x = 432,
+  y = 120,
   width = 8,
   height = 24,
   pattern = "2019",
@@ -1299,8 +1299,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 520,
-  y = 104,
+  x = 488,
+  y = 120,
   width = 8,
   height = 24,
   pattern = "2020",
@@ -1308,8 +1308,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 480,
-  y = 136,
+  x = 448,
+  y = 152,
   width = 32,
   height = 8,
   pattern = "2022",
@@ -2136,8 +2136,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 472,
-  y = 192,
+  x = 424,
+  y = 184,
   width = 64,
   height = 32,
   pattern = "524",
@@ -2280,8 +2280,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 576,
-  y = 40,
+  x = 600,
+  y = 64,
   width = 16,
   height = 16,
   pattern = "524",
@@ -2298,8 +2298,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 560,
-  y = 120,
+  x = 600,
+  y = 80,
   width = 16,
   height = 16,
   pattern = "524",
@@ -2845,6 +2845,390 @@ tile{
   pattern = "87",
 }
 
+tile{
+  layer = 0,
+  x = 512,
+  y = 0,
+  width = 8,
+  height = 40,
+  pattern = "96_2",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 40,
+  width = 8,
+  height = 16,
+  pattern = "96_2",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "96_2",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 64,
+  width = 8,
+  height = 8,
+  pattern = "96_2",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 72,
+  width = 8,
+  height = 160,
+  pattern = "96_2",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 232,
+  width = 8,
+  height = 8,
+  pattern = "96_2",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = -8,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "96",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 0,
+  group = 1,
+  width = 8,
+  height = 40,
+  pattern = "95_2",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 0,
+  group = 1,
+  width = 8,
+  height = 32,
+  pattern = "97_2",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 40,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "97_2",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 48,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "95_2",
+}
+
+tile{
+  layer = 0,
+  x = 552,
+  y = 72,
+  group = 1,
+  width = 8,
+  height = 160,
+  pattern = "97_2",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 80,
+  group = 1,
+  width = 8,
+  height = 144,
+  pattern = "95_2",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 232,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "95_2",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 240,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "96_3",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = -8,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "95",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = -8,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "97",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 32,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "98",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 32,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "97",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 40,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "95_3",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 40,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "95_4",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 48,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "98",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 48,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "97",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 56,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "95_3",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 56,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "95_4",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 56,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "98",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 56,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "97",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 64,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "95_3",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 64,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "95_4",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 64,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "98",
+}
+
+tile{
+  layer = 0,
+  x = 552,
+  y = 64,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "97",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 72,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "95_3",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 72,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "95_4",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 224,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "95",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 224,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "96_4",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 232,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "97_4",
+}
+
+tile{
+  layer = 0,
+  x = 552,
+  y = 232,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "97_3",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 240,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "95_3",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 240,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "97_3",
+}
+
 teletransporter{
   name = "to_A2",
   layer = 0,
@@ -3346,8 +3730,52 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 480,
-  y = 221,
+  x = 432,
+  y = 213,
+  treasure_name = "random_subrosia",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 432,
+  y = 197,
+  treasure_name = "random_subrosia",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 448,
+  y = 197,
+  treasure_name = "random_subrosia",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 448,
+  y = 213,
+  treasure_name = "random_subrosia",
+  sprite = "entities/bush",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 464,
+  y = 213,
   treasure_name = "random_subrosia",
   sprite = "entities/bush",
   destruction_sound = "bush",
@@ -3358,7 +3786,7 @@ destructible{
 destructible{
   layer = 0,
   x = 480,
-  y = 205,
+  y = 213,
   treasure_name = "random_subrosia",
   sprite = "entities/bush",
   destruction_sound = "bush",
@@ -3368,8 +3796,8 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 496,
-  y = 205,
+  x = 480,
+  y = 197,
   treasure_name = "random_subrosia",
   sprite = "entities/bush",
   destruction_sound = "bush",
@@ -3379,52 +3807,8 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 496,
-  y = 221,
-  treasure_name = "random_subrosia",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 512,
-  y = 221,
-  treasure_name = "random_subrosia",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 528,
-  y = 221,
-  treasure_name = "random_subrosia",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 528,
-  y = 205,
-  treasure_name = "random_subrosia",
-  sprite = "entities/bush",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 512,
-  y = 205,
+  x = 464,
+  y = 197,
   treasure_name = "random_subrosia",
   sprite = "entities/bush",
   destruction_sound = "bush",
@@ -3478,8 +3862,8 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 568,
-  y = 133,
+  x = 608,
+  y = 93,
   treasure_name = "random_subrosia",
   sprite = "entities/bush",
   destruction_sound = "bush",
@@ -3489,8 +3873,8 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 584,
-  y = 53,
+  x = 608,
+  y = 77,
   treasure_name = "random_subrosia",
   sprite = "entities/bush",
   destruction_sound = "bush",
@@ -4970,8 +5354,8 @@ tile{
 
 tile{
   layer = 2,
-  x = 464,
-  y = 64,
+  x = 432,
+  y = 80,
   width = 64,
   height = 16,
   pattern = "2017",

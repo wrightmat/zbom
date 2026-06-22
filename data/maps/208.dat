@@ -5222,6 +5222,195 @@ tile{
   pattern = "604",
 }
 
+tile{
+  layer = 0,
+  x = 880,
+  y = 1456,
+  width = 32,
+  height = 16,
+  pattern = "134",
+}
+
+tile{
+  layer = 0,
+  x = 784,
+  y = 1464,
+  width = 32,
+  height = 16,
+  pattern = "134",
+}
+
+tile{
+  layer = 0,
+  x = 920,
+  y = 1184,
+  width = 32,
+  height = 16,
+  pattern = "134",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 1200,
+  width = 32,
+  height = 16,
+  pattern = "134",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 976,
+  width = 32,
+  height = 16,
+  pattern = "134",
+}
+
+tile{
+  layer = 0,
+  x = 552,
+  y = 1144,
+  width = 32,
+  height = 16,
+  pattern = "134",
+}
+
+tile{
+  layer = 0,
+  x = 552,
+  y = 656,
+  width = 32,
+  height = 16,
+  pattern = "134",
+}
+
+tile{
+  layer = 0,
+  x = 920,
+  y = 688,
+  width = 32,
+  height = 16,
+  pattern = "134",
+}
+
+tile{
+  layer = 0,
+  x = 904,
+  y = 696,
+  width = 32,
+  height = 16,
+  pattern = "134",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 152,
+  width = 32,
+  height = 16,
+  pattern = "134",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 72,
+  width = 32,
+  height = 16,
+  pattern = "134",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 72,
+  width = 32,
+  height = 16,
+  pattern = "134",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 1472,
+  width = 32,
+  height = 16,
+  pattern = "134",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 1480,
+  width = 32,
+  height = 16,
+  pattern = "134",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 1632,
+  width = 32,
+  height = 16,
+  pattern = "134",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 1648,
+  width = 32,
+  height = 16,
+  pattern = "134",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 1640,
+  width = 32,
+  height = 16,
+  pattern = "134",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 1656,
+  width = 32,
+  height = 16,
+  pattern = "134",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 1624,
+  width = 32,
+  height = 16,
+  pattern = "134",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 1440,
+  width = 16,
+  height = 24,
+  pattern = "46",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 1440,
+  width = 16,
+  height = 24,
+  pattern = "46",
+}
+
 switch{
   name = "switch_ice_block_2",
   layer = 0,
@@ -5843,7 +6032,7 @@ enemy{
   name = "room9_chuchu_blue_1",
   layer = 0,
   x = 512,
-  y = 685,
+  y = 677,
   direction = 3,
   breed = "chuchu_white",
   treasure_name = "random_enemy",
@@ -5853,7 +6042,7 @@ enemy{
   name = "room9_chuchu_blue_2",
   layer = 0,
   x = 568,
-  y = 629,
+  y = 621,
   direction = 3,
   breed = "chuchu_white",
   treasure_name = "random_enemy",
@@ -6961,6 +7150,377 @@ custom_entity{
   model = "ice_block_solid",
 }
 
+custom_entity{
+  name = "hook_14",
+  layer = 0,
+  x = 232,
+  y = 85,
+  width = 32,
+  height = 16,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_15",
+  layer = 0,
+  x = 312,
+  y = 85,
+  width = 32,
+  height = 16,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_16",
+  layer = 0,
+  x = 400,
+  y = 165,
+  width = 32,
+  height = 16,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_17",
+  layer = 0,
+  x = 912,
+  y = 709,
+  width = 32,
+  height = 16,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_18",
+  layer = 0,
+  x = 944,
+  y = 701,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_19",
+  layer = 0,
+  x = 560,
+  y = 669,
+  width = 32,
+  height = 16,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_20",
+  layer = 0,
+  x = 584,
+  y = 989,
+  width = 32,
+  height = 16,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_21",
+  layer = 0,
+  x = 560,
+  y = 1157,
+  width = 32,
+  height = 16,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_22",
+  layer = 0,
+  x = 936,
+  y = 1213,
+  width = 32,
+  height = 16,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_23",
+  layer = 0,
+  x = 928,
+  y = 1197,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_24",
+  layer = 0,
+  x = 888,
+  y = 1469,
+  width = 32,
+  height = 16,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_25",
+  layer = 0,
+  x = 792,
+  y = 1477,
+  width = 32,
+  height = 16,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_26",
+  layer = 0,
+  x = 168,
+  y = 1485,
+  width = 32,
+  height = 16,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_27",
+  layer = 0,
+  x = 288,
+  y = 1493,
+  width = 32,
+  height = 16,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_28",
+  layer = 0,
+  x = 104,
+  y = 1661,
+  width = 32,
+  height = 16,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_29",
+  layer = 0,
+  x = 136,
+  y = 1645,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_30",
+  layer = 0,
+  x = 344,
+  y = 1669,
+  width = 32,
+  height = 16,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_31",
+  layer = 0,
+  x = 376,
+  y = 1653,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "hook",
+}
+
+custom_entity{
+  name = "hook_32",
+  layer = 0,
+  x = 336,
+  y = 1637,
+  width = 32,
+  height = 16,
+  direction = 0,
+  model = "hook",
+}
+
+tile{
+  layer = 1,
+  x = 784,
+  y = 1440,
+  width = 32,
+  height = 24,
+  pattern = "152",
+}
+
+tile{
+  layer = 1,
+  x = 920,
+  y = 1160,
+  width = 32,
+  height = 24,
+  pattern = "152",
+}
+
+tile{
+  layer = 1,
+  x = 928,
+  y = 1176,
+  width = 32,
+  height = 24,
+  pattern = "152",
+}
+
+tile{
+  layer = 1,
+  x = 576,
+  y = 952,
+  width = 32,
+  height = 24,
+  pattern = "152",
+}
+
+tile{
+  layer = 1,
+  x = 552,
+  y = 1120,
+  width = 32,
+  height = 24,
+  pattern = "152",
+}
+
+tile{
+  layer = 1,
+  x = 552,
+  y = 632,
+  width = 32,
+  height = 24,
+  pattern = "152",
+}
+
+tile{
+  layer = 1,
+  x = 920,
+  y = 664,
+  width = 32,
+  height = 24,
+  pattern = "152",
+}
+
+tile{
+  layer = 1,
+  x = 904,
+  y = 672,
+  width = 32,
+  height = 24,
+  pattern = "152",
+}
+
+tile{
+  layer = 1,
+  x = 392,
+  y = 128,
+  width = 32,
+  height = 24,
+  pattern = "152",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 48,
+  width = 32,
+  height = 24,
+  pattern = "152",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 48,
+  width = 32,
+  height = 24,
+  pattern = "152",
+}
+
+tile{
+  layer = 1,
+  x = 160,
+  y = 1448,
+  width = 32,
+  height = 24,
+  pattern = "152",
+}
+
+tile{
+  layer = 1,
+  x = 280,
+  y = 1456,
+  width = 32,
+  height = 24,
+  pattern = "152",
+}
+
+tile{
+  layer = 1,
+  x = 112,
+  y = 1608,
+  width = 32,
+  height = 24,
+  pattern = "152",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 1624,
+  width = 32,
+  height = 24,
+  pattern = "152",
+}
+
+tile{
+  layer = 1,
+  x = 352,
+  y = 1616,
+  width = 32,
+  height = 24,
+  pattern = "152",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = 1632,
+  width = 32,
+  height = 24,
+  pattern = "152",
+}
+
+tile{
+  layer = 1,
+  x = 328,
+  y = 1600,
+  width = 32,
+  height = 24,
+  pattern = "152",
+}
+
 wall{
   layer = 1,
   x = 512,
@@ -7490,5 +8050,14 @@ tile{
   width = 16,
   height = 8,
   pattern = "605",
+}
+
+tile{
+  layer = 2,
+  x = 880,
+  y = 1432,
+  width = 32,
+  height = 24,
+  pattern = "152",
 }
 

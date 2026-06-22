@@ -4396,6 +4396,72 @@ enemy{
   treasure_name = "random_enemy",
 }
 
+custom_entity{
+  layer = 0,
+  x = 632,
+  y = 629,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_milkweed_yellow",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 744,
+  y = 629,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_milkweed_yellow",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 760,
+  y = 613,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_milkweed_yellow",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 760,
+  y = 445,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_milkweed_yellow",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 560,
+  y = 453,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_milkweed_yellow",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 568,
+  y = 741,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_milkweed_yellow",
+  model = "foliage",
+}
+
 tile{
   layer = 2,
   x = 224,

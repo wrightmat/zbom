@@ -6131,6 +6131,15 @@ tile{
   pattern = "117",
 }
 
+wall{
+  layer = 0,
+  x = 192,
+  y = 600,
+  width = 16,
+  height = 16,
+  stops_blocks = true,
+}
+
 sensor{
   name = "dungeon_room_9b_",
   layer = 0,

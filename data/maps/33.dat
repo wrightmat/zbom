@@ -2118,8 +2118,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 344,
-  y = 656,
+  x = 312,
+  y = 664,
   width = 48,
   height = 16,
   pattern = "505",
@@ -2217,7 +2217,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 336,
+  x = 304,
   y = 360,
   width = 48,
   height = 16,
@@ -2721,7 +2721,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 344,
+  x = 312,
   y = 376,
   width = 32,
   height = 8,
@@ -2775,8 +2775,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 352,
-  y = 672,
+  x = 320,
+  y = 680,
   width = 32,
   height = 8,
   pattern = "523",
@@ -4341,7 +4341,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 336,
+  x = 304,
   y = 336,
   width = 48,
   height = 24,
@@ -4350,7 +4350,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 384,
+  x = 352,
   y = 352,
   width = 8,
   height = 16,
@@ -4359,7 +4359,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 328,
+  x = 296,
   y = 352,
   width = 8,
   height = 16,
@@ -4368,8 +4368,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 344,
-  y = 632,
+  x = 312,
+  y = 640,
   width = 48,
   height = 24,
   pattern = "1499",
@@ -4386,8 +4386,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 392,
-  y = 648,
+  x = 360,
+  y = 656,
   width = 8,
   height = 16,
   pattern = "1500",
@@ -4395,8 +4395,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 336,
-  y = 648,
+  x = 304,
+  y = 656,
   width = 8,
   height = 16,
   pattern = "1498",
@@ -5970,8 +5970,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 312,
-  y = 664,
+  x = 296,
+  y = 680,
   width = 16,
   height = 8,
   pattern = "1693",
@@ -6006,8 +6006,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 304,
-  y = 320,
+  x = 288,
+  y = 304,
   width = 8,
   height = 8,
   pattern = "41",
@@ -6616,6 +6616,150 @@ tile{
   pattern = "1450",
 }
 
+tile{
+  layer = 0,
+  x = 104,
+  y = 1104,
+  width = 16,
+  height = 16,
+  pattern = "365",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 1088,
+  width = 16,
+  height = 16,
+  pattern = "369",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 1088,
+  width = 32,
+  height = 16,
+  pattern = "368",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 1088,
+  width = 16,
+  height = 16,
+  pattern = "367",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 288,
+  width = 16,
+  height = 24,
+  pattern = "402",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 288,
+  width = 16,
+  height = 24,
+  pattern = "403",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 288,
+  width = 32,
+  height = 24,
+  pattern = "404",
+}
+
+tile{
+  layer = 0,
+  x = 376,
+  y = 280,
+  width = 8,
+  height = 8,
+  pattern = "417",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 488,
+  width = 8,
+  height = 8,
+  pattern = "414",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 752,
+  width = 8,
+  height = 8,
+  pattern = "417",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 584,
+  width = 8,
+  height = 8,
+  pattern = "415",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 944,
+  width = 8,
+  height = 8,
+  pattern = "414",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 984,
+  width = 8,
+  height = 8,
+  pattern = "418",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 976,
+  width = 8,
+  height = 8,
+  pattern = "415",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 1032,
+  width = 8,
+  height = 8,
+  pattern = "417",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 1080,
+  width = 8,
+  height = 8,
+  pattern = "418",
+}
+
 teletransporter{
   name = "to_F11",
   layer = 0,
@@ -7007,6 +7151,369 @@ npc{
   sprite = "entities/sign",
 }
 
+custom_entity{
+  layer = 0,
+  x = 224,
+  y = 1037,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 392,
+  y = 1045,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 448,
+  y = 941,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 376,
+  y = 885,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 384,
+  y = 893,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 400,
+  y = 877,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 464,
+  y = 845,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 192,
+  y = 925,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 184,
+  y = 933,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 200,
+  y = 949,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 216,
+  y = 917,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 240,
+  y = 581,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 232,
+  y = 589,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 240,
+  y = 605,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 176,
+  y = 637,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 152,
+  y = 549,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 376,
+  y = 565,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 568,
+  y = 613,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 584,
+  y = 613,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 592,
+  y = 621,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 288,
+  y = 365,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 280,
+  y = 373,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 280,
+  y = 341,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 256,
+  y = 333,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 112,
+  y = 333,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 152,
+  y = 397,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 88,
+  y = 461,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 104,
+  y = 437,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 112,
+  y = 445,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 192,
+  y = 501,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 440,
+  y = 453,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 432,
+  y = 461,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 448,
+  y = 477,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
 tile{
   layer = 2,
   x = 1080,
@@ -7189,7 +7696,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 336,
+  x = 304,
   y = 336,
   width = 48,
   height = 24,
@@ -8332,7 +8839,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 336,
+  x = 304,
   y = 304,
   width = 48,
   height = 32,
@@ -8341,7 +8848,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 384,
+  x = 352,
   y = 328,
   width = 8,
   height = 24,
@@ -8350,7 +8857,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 328,
+  x = 296,
   y = 328,
   width = 8,
   height = 24,
@@ -8359,8 +8866,8 @@ tile{
 
 tile{
   layer = 2,
-  x = 344,
-  y = 600,
+  x = 312,
+  y = 608,
   width = 48,
   height = 32,
   pattern = "1495",
@@ -8377,8 +8884,8 @@ tile{
 
 tile{
   layer = 2,
-  x = 392,
-  y = 624,
+  x = 360,
+  y = 632,
   width = 8,
   height = 24,
   pattern = "1497",
@@ -8386,8 +8893,8 @@ tile{
 
 tile{
   layer = 2,
-  x = 336,
-  y = 624,
+  x = 304,
+  y = 632,
   width = 8,
   height = 24,
   pattern = "1494",
@@ -9223,8 +9730,8 @@ tile{
 
 tile{
   layer = 2,
-  x = 344,
-  y = 632,
+  x = 312,
+  y = 640,
   width = 48,
   height = 24,
   pattern = "1499",
@@ -9399,5 +9906,14 @@ tile{
   width = 48,
   height = 24,
   pattern = "1499",
+}
+
+tile{
+  layer = 2,
+  x = 472,
+  y = 528,
+  width = 8,
+  height = 8,
+  pattern = "415",
 }
 

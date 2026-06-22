@@ -13,7 +13,7 @@ function enemy:on_created()
   self:set_size(16, 24); self:set_origin(8, 17)
   self:set_invincible(true)
   self:set_attack_consequence("explosion", 1)
-  self:set_pushed_back_when_hurt(false)
+  --self:set_pushed_back_when_hurt(false)
   self:release_wave()
 end
 
@@ -71,19 +71,19 @@ function enemy:release_wave()
   if self:get_sprite() == "enemies/grim_creeper" then self:get_sprite():set_animation("shaking") end
   -- Throw more keese as life is taken away.
   if phase == 0 then
-    nb_sons_to_create = 7 + (8-self:get_life())
+    nb_sons_to_create = 6 + (6-self:get_life())
     breed = "regular"
   elseif phase == 1 then
-    nb_sons_to_create = 7 + (8-self:get_life())
+    nb_sons_to_create = 5 + (6-self:get_life())
     breed = "fire"
   elseif phase == 2 then
-    nb_sons_to_create = 6 + (8-self:get_life())
+    nb_sons_to_create = 4 + (6-self:get_life())
     breed = "ice"
   elseif phase == 3 then
-    nb_sons_to_create = 5 + (8-self:get_life())
+    nb_sons_to_create = 3 + (6-self:get_life())
     breed = "elec"
   elseif phase == 4 then
-    nb_sons_to_create = 4 + (8-self:get_life())
+    nb_sons_to_create = 2 + (6-self:get_life())
     breed = "dark"
   end
   sol.timer.start(self, 1500, function() self:throw_keese(breed) end)
@@ -95,7 +95,12 @@ end
 
 function enemy:on_hurt()
   -- Wait one second to change phase so hurt animation isn't changed right away.
-  sol.timer.start(self:get_map(), 1000, function() self:change_phase() end)
+  local m = sol.movement.create("target")
+  m:set_target(miniboss_warp_dest:get_position())
+  m:set_speed(32)
+  m:start(self, function()
+    self:change_phase()
+  end)
 end
 
 function enemy:on_restarted()

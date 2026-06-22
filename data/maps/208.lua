@@ -53,7 +53,10 @@ function room9_door_2:on_activated()
 end
 
 function switch_ice_block:on_activated()
-  map:open_doors("door_shutter1")
+  local cx, cy = door_shutter1_1:get_position()
+  map:move_camera(cx, cy, 250, function()
+    map:open_doors("door_shutter1")
+  end, 500, 500)
 end
 
 function switch_ice_block_2:on_activated()

@@ -8,6 +8,9 @@ local game = map:get_game()
 map:register_event("on_started", function(self, destination)
   game:set_world_rain_mode("dungeon_7", nil)
   if not game:get_value("b1162") then chest_big_key:set_enabled(false) end
+  if destination:get_name() == "from_floor_4" then
+    map:set_entities_enabled("barrier", false)
+  end
 end)
 
 function switch_puzzle_1:on_activated()

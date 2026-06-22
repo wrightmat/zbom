@@ -12,18 +12,11 @@ function entity:on_created()
   self:set_traversable_by("enemy", false)
   self:set_traversable_by("npc", false)
   self:create_sprite("entities/ice_block_static")
-  
+
   self:add_collision_test("overlapping", function(self, other)
-    if other:get_type() == "fire" then
+    if other:get_type() == "fire" or other:get_type() == "explosion" then
       sol.audio.play_sound("ice_melt")
-      self:remove_explode()
-    elseif other:get_type() == "explosion" then
-      sol.audio.play_sound("ice_melt")
-      self:remove_explode()
+      self:get_sprite():set_animation("destroy", function() self:remove() end)
     end
   end)
-end
-
-function entity:remove_explode()
-  self:get_sprite():set_animation("destroy", function() self:remove() end)
 end

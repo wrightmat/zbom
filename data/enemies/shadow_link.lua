@@ -14,7 +14,9 @@ local damage = 8
 function enemy:on_created()
   self:set_life(40); self:set_damage(damage)
   main_sprite = self:create_sprite("enemies/shadow_link")
-  sword_sprite = self:create_sprite("enemies/shadow_link_sword")
+  if map:get_id() == "218" or map:get_id() == "170" then
+    sword_sprite = self:create_sprite("enemies/shadow_link_sword")
+  end
   self:set_size(32, 40); self:set_origin(16, 36)
   self:set_hurt_style("boss")
   self:set_attack_arrow("protected")

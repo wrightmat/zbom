@@ -234,3 +234,7 @@ function chest_book:on_opened(item, variant, savegame_variable)
   game:set_dungeon_finished(6)
   game:set_value("b1150", true) -- This value varies depending on the dungeon (chest save value)
 end
+
+function save_solid_ground_1:on_activated()
+  hero:save_solid_ground(solid_ground_1:get_position())
+end

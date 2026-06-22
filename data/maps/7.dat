@@ -2617,6 +2617,46 @@ custom_entity{
   model = "npc_generic",
 }
 
+pickable{
+  layer = 0,
+  x = 1104,
+  y = 509,
+  treasure_name = "rupee",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 1144,
+  y = 509,
+  treasure_name = "rupee",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 1048,
+  y = 581,
+  treasure_name = "rupee",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 1008,
+  y = 581,
+  treasure_name = "rupee",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 1040,
+  y = 485,
+  treasure_name = "rupee",
+  treasure_variant = 2,
+}
+
 tile{
   layer = 1,
   x = 88,

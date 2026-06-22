@@ -4610,6 +4610,33 @@ tile{
   pattern = "46",
 }
 
+tile{
+  layer = 0,
+  x = 400,
+  y = 520,
+  width = 16,
+  height = 32,
+  pattern = "607",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 632,
+  width = 16,
+  height = 32,
+  pattern = "607",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 568,
+  width = 16,
+  height = 48,
+  pattern = "607",
+}
+
 switch{
   name = "switch_door",
   layer = 0,
@@ -5546,6 +5573,73 @@ custom_entity{
   direction = 3,
   sprite = "entities/ice_block",
   model = "ice_block",
+}
+
+destructible{
+  layer = 0,
+  x = 408,
+  y = 533,
+  treasure_name = "heart",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 408,
+  y = 549,
+  treasure_name = "arrow",
+  treasure_variant = 3,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 408,
+  y = 661,
+  treasure_name = "heart",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 408,
+  y = 645,
+  treasure_name = "heart",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 408,
+  y = 581,
+  treasure_name = "random",
+  treasure_variant = 3,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 408,
+  y = 597,
+  treasure_name = "random",
+  treasure_variant = 3,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+}
+
+destructible{
+  layer = 0,
+  x = 408,
+  y = 613,
+  treasure_name = "random",
+  treasure_variant = 3,
+  sprite = "entities/pot",
+  destruction_sound = "stone",
 }
 
 tile{

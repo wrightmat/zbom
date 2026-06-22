@@ -20,3 +20,7 @@ function map:on_started(destination)
     end
   end
 end
+
+function ice_set_solid_ground:on_activated()
+  hero:save_solid_ground(solid_ground_ice:get_position())
+end

@@ -27,27 +27,29 @@ function map:on_started()
   if game:get_item("world_map"):get_variant() > 1 then -- World map
     shop_world_map_2:remove()
     self:create_shop_treasure({
-	name = "shop_shovel",
-	layer = 0,
-	x = 128,
-	y = 144,
-	price = 5000,
-	dialog = "_item_description.shovel.1",
-	treasure_name = "shovel",
-	treasure_variant = 1
+    	name = "shop_shovel",
+    	layer = 0,
+    	x = 160,
+    	y = 157,
+    	price = 5000,
+    	dialog = "_item_description.shovel.1",
+    	treasure_name = "shovel",
+    	treasure_variant = 1,
+      font = "white_digits"
     })
   end
   
   if game:get_value("b2019") then -- Giant wallet
     self:create_shop_treasure({
-	name = "shop_treasure_2",
-	layer = 0,
-	x = 176,
-	y = 880,
-	price = 20,
-	dialog = "_item_description.apple.1",
-	treasure_name = "apple",
-	treasure_variant = 1
+    	name = "shop_treasure_2",
+    	layer = 0,
+    	x = 176,
+    	y = 880,
+    	price = 20,
+    	dialog = "_item_description.apple.1",
+    	treasure_name = "apple",
+    	treasure_variant = 1,
+      font = "white_digits"
     })
   end
 end

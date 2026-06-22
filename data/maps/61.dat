@@ -2235,16 +2235,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 440,
-  y = 144,
-  width = 48,
-  height = 32,
-  pattern = "2148",
-}
-
-tile{
-  layer = 0,
-  x = 440,
+  x = 464,
   y = 176,
   width = 48,
   height = 16,
@@ -2253,7 +2244,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 432,
+  x = 456,
   y = 168,
   width = 8,
   height = 16,
@@ -2262,7 +2253,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 488,
+  x = 512,
   y = 168,
   width = 8,
   height = 16,
@@ -2271,7 +2262,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 448,
+  x = 472,
   y = 192,
   width = 32,
   height = 8,
@@ -2998,15 +2989,222 @@ tile{
   pattern = "1692",
 }
 
+tile{
+  layer = 0,
+  x = 408,
+  y = 0,
+  width = 8,
+  height = 112,
+  pattern = "139_2",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 112,
+  width = 8,
+  height = 8,
+  pattern = "139_2",
+}
+
+tile{
+  layer = 0,
+  x = 424,
+  y = 120,
+  width = 8,
+  height = 32,
+  pattern = "139_2",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = -8,
+  group = 2,
+  width = 8,
+  height = 8,
+  pattern = "1679_2",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 0,
+  group = 2,
+  width = 8,
+  height = 112,
+  pattern = "1681_2",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 0,
+  group = 2,
+  width = 8,
+  height = 104,
+  pattern = "1685_2",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 120,
+  group = 2,
+  width = 8,
+  height = 32,
+  pattern = "1685_2",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 128,
+  group = 2,
+  width = 8,
+  height = 24,
+  pattern = "1681_2",
+}
+
+tile{
+  layer = 0,
+  x = 424,
+  y = 152,
+  group = 2,
+  width = 8,
+  height = 8,
+  pattern = "1683_2",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = -8,
+  group = 2,
+  width = 8,
+  height = 8,
+  pattern = "1678_2",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = -8,
+  group = 2,
+  width = 8,
+  height = 8,
+  pattern = "1680_2",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 104,
+  group = 2,
+  width = 8,
+  height = 8,
+  pattern = "533",
+}
+
+tile{
+  layer = 0,
+  x = 424,
+  y = 104,
+  group = 2,
+  width = 8,
+  height = 8,
+  pattern = "1680_2",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 112,
+  group = 2,
+  width = 8,
+  height = 8,
+  pattern = "1682_2",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 112,
+  group = 2,
+  width = 8,
+  height = 8,
+  pattern = "535",
+}
+
+tile{
+  layer = 0,
+  x = 424,
+  y = 112,
+  group = 2,
+  width = 8,
+  height = 8,
+  pattern = "533",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 112,
+  group = 2,
+  width = 8,
+  height = 8,
+  pattern = "1680_2",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 120,
+  group = 2,
+  width = 8,
+  height = 8,
+  pattern = "1682_2",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 120,
+  group = 2,
+  width = 8,
+  height = 8,
+  pattern = "535",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 152,
+  group = 2,
+  width = 8,
+  height = 8,
+  pattern = "1682_2",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 152,
+  group = 2,
+  width = 8,
+  height = 8,
+  pattern = "1684_2",
+}
+
 dynamic_tile{
   name = "night_entrance_3",
   layer = 0,
   x = 232,
   y = 760,
-  pattern = "337",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "337",
 }
 
 dynamic_tile{
@@ -3014,10 +3212,10 @@ dynamic_tile{
   layer = 0,
   x = 816,
   y = 368,
-  pattern = "337",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "337",
 }
 
 dynamic_tile{
@@ -3025,10 +3223,10 @@ dynamic_tile{
   layer = 0,
   x = 304,
   y = 216,
-  pattern = "337",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "337",
 }
 
 teletransporter{
@@ -3072,10 +3270,9 @@ dynamic_tile{
   layer = 0,
   x = 360,
   y = 192,
-  pattern = "2136",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "2136",
 }
 
 destination{
@@ -4257,7 +4454,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 440,
+  x = 464,
   y = 120,
   width = 48,
   height = 24,
@@ -4266,7 +4463,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 432,
+  x = 456,
   y = 144,
   width = 8,
   height = 24,
@@ -4275,7 +4472,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 488,
+  x = 512,
   y = 144,
   width = 8,
   height = 24,
@@ -4500,7 +4697,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 440,
+  x = 464,
   y = 144,
   width = 48,
   height = 32,
@@ -4662,7 +4859,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 440,
+  x = 464,
   y = 144,
   width = 48,
   height = 32,

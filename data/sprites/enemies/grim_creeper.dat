@@ -4,10 +4,10 @@ animation{
   frame_delay = 150,
   frame_to_loop_on = 0,
   directions = {
-    { x = 32, y = 24, frame_width = 16, frame_height = 24, origin_x = 16, origin_y = 29, num_frames = 2 },
-    { x = 0, y = 24, frame_width = 16, frame_height = 24, origin_x = 16, origin_y = 29, num_frames = 2 },
-    { x = 32, y = 0, frame_width = 16, frame_height = 24, origin_x = 16, origin_y = 29, num_frames = 2 },
-    { x = 0, y = 0, frame_width = 16, frame_height = 24, origin_x = 16, origin_y = 29, num_frames = 2 },
+    { x = 32, y = 24, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 2 },
+    { x = 0, y = 24, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 2 },
+    { x = 32, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 2 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 2 },
   },
 }
 animation{
@@ -16,20 +16,20 @@ animation{
   frame_delay = 50,
   frame_to_loop_on = 0,
   directions = {
-    { x = 48, y = 72, frame_width = 16, frame_height = 24, origin_x = 16, origin_y = 29, num_frames = 3 },
-    { x = 48, y = 48, frame_width = 16, frame_height = 24, origin_x = 16, origin_y = 29, num_frames = 3 },
-    { x = 0, y = 72, frame_width = 16, frame_height = 24, origin_x = 16, origin_y = 29, num_frames = 3 },
-    { x = 0, y = 48, frame_width = 16, frame_height = 24, origin_x = 16, origin_y = 29, num_frames = 3 },
+    { x = 48, y = 72, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 3 },
+    { x = 48, y = 48, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 3 },
+    { x = 0, y = 72, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 3 },
+    { x = 0, y = 48, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 3 },
   },
 }
 animation{
   name = "immobilized",
   src_image = "enemies/grim_creeper.png",
   directions = {
-    { x = 32, y = 24, frame_width = 16, frame_height = 24, origin_x = 16, origin_y = 29 },
-    { x = 0, y = 24, frame_width = 16, frame_height = 24, origin_x = 16, origin_y = 29 },
-    { x = 32, y = 0, frame_width = 16, frame_height = 24, origin_x = 16, origin_y = 29 },
-    { x = 0, y = 0, frame_width = 16, frame_height = 24, origin_x = 16, origin_y = 29 },
+    { x = 32, y = 24, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21 },
+    { x = 0, y = 24, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21 },
+    { x = 32, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21 },
   },
 }
 animation{
@@ -38,9 +38,9 @@ animation{
   frame_delay = 200,
   frame_to_loop_on = 0,
   directions = {
-    { x = 64, y = 0, frame_width = 16, frame_height = 24, origin_x = 16, origin_y = 29, num_frames = 2 },
-    { x = 64, y = 0, frame_width = 16, frame_height = 24, origin_x = 16, origin_y = 29, num_frames = 2 },
-    { x = 64, y = 0, frame_width = 16, frame_height = 24, origin_x = 16, origin_y = 29, num_frames = 2 },
-    { x = 64, y = 0, frame_width = 16, frame_height = 24, origin_x = 16, origin_y = 29, num_frames = 2 },
+    { x = 64, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 2 },
+    { x = 64, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 2 },
+    { x = 64, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 2 },
+    { x = 64, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 2 },
   },
 }

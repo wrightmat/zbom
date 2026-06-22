@@ -45,9 +45,6 @@ function map:on_started(destination)
       end)
     end)
   end
-
-  random_walk(np1_guard)
-  random_walk(np1_guard)
 end
 
 np1_guard:register_event("on_interaction", function()

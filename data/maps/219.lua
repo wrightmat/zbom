@@ -9,8 +9,8 @@ local arrow_puzzle_correct = false
 local room9_1, room9_2, room9_3 = false
 local room17_1, room17_2, room17_3 = false
 
-local shadow = sol.surface.create(1792, 1472)
-local lights = sol.surface.create(1792, 1472)
+local shadow = sol.surface.create(2080, 1600)
+local lights = sol.surface.create(2080, 1600)
 shadow:set_blend_mode("multiply")
 lights:set_blend_mode("add")
 local effects = {
@@ -39,7 +39,7 @@ function map:on_started(destination)
     sol.timer.start(self, 2000, function()
       map:get_camera():start_tracking(shadow_link)
       sol.audio.play_sound("poe_soul")
-      game:start_dialog("shadow_link.sanctum_basement", game:get_player_name(), function()
+      game:set_dialog_name("Shadow Link"); game:start_dialog("shadow_link.sanctum_basement", game:get_player_name(), function()
         if not game:get_value("b1181") then
           game:get_hero():start_treasure("map", 1, "b1181") -- Give map so explored and non-explored rooms show correctly.
         end
@@ -444,116 +444,116 @@ function map:on_draw(dst_surface)
   lights:clear()
   
   if game:get_value("dungeon_8_explored_1b_1") and game:get_hero():get_distance(896,1269) <= 500 then
-    effects.torch_room:draw(lights, 736, 1149)
+    effects.torch_room:draw(lights, 888, 1325)  --736, 1149
   end
   if game:get_value("dungeon_8_explored_1b_2") and game:get_hero():get_distance(560,1269) <= 500 then
-    effects.torch_room:draw(lights, 400, 1149)
+    effects.torch_room:draw(lights, 472, 1325)  --400, 1149
     room2_gate_e1:set_enabled(false)
     room2_gate_e2:set_enabled(false)
     room1_gate_w1:set_enabled(false)
     room1_gate_w2:set_enabled(false)
   end
-  if game:get_value("dungeon_8_explored_1b_3") and game:get_hero():get_distance(224,1269) <= 500 then
-    effects.torch_room:draw(lights, 64, 1149)
+  if game:get_value("dungeon_8_explored_1b_3") and game:get_hero():get_distance(56, 1325) <= 600 then
+    effects.torch_room:draw(lights, 56, 1325)  --64, 1149
   end
-  if game:get_value("dungeon_8_explored_1b_4") and game:get_hero():get_distance(224,997) <= 500 then
-    effects.torch_room:draw(lights, 64, 877)
+  if game:get_value("dungeon_8_explored_1b_4") and game:get_hero():get_distance(56, 1005) <= 600 then
+    effects.torch_room:draw(lights, 56, 1005)  --64, 877
   end
-  if game:get_value("dungeon_8_explored_1b_5") and game:get_hero():get_distance(560,997) <= 500 then
-    effects.torch_room:draw(lights, 400, 877)
+  if game:get_value("dungeon_8_explored_1b_5") and game:get_hero():get_distance(472, 1005) <= 600 then
+    effects.torch_room:draw(lights, 472, 1005)  --400, 877
   end
-  if game:get_value("dungeon_8_explored_1b_6") and game:get_hero():get_distance(896,997) <= 500 then
-    effects.torch_room:draw(lights, 736, 877)
+  if game:get_value("dungeon_8_explored_1b_6") and game:get_hero():get_distance(888, 1005) <= 600 then
+    effects.torch_room:draw(lights, 888, 1005)  --736, 877
     room6_gate_s1:set_enabled(false)
     room6_gate_s2:set_enabled(false)
     room1_gate_n1:set_enabled(false)
     room1_gate_n2:set_enabled(false)
   end
-  if game:get_value("dungeon_8_explored_1b_7") and game:get_hero():get_distance(896,725) <= 500 then
-    effects.torch_room:draw(lights, 736, 605)
+  if game:get_value("dungeon_8_explored_1b_7") and game:get_hero():get_distance(888, 685) <= 600 then
+    effects.torch_room:draw(lights, 888, 685)  --736, 605
   end
-  if game:get_value("dungeon_8_explored_1b_8") and game:get_hero():get_distance(560,725) <= 500 then
-    effects.torch_room:draw(lights, 400, 605)
+  if game:get_value("dungeon_8_explored_1b_8") and game:get_hero():get_distance(472, 685) <= 600 then
+    effects.torch_room:draw(lights, 472, 685)  --400, 605
   end
-  if game:get_value("dungeon_8_explored_1b_9") and game:get_hero():get_distance(224,725) <= 500 then
-    effects.torch_room:draw(lights, 64, 605)
+  if game:get_value("dungeon_8_explored_1b_9") and game:get_hero():get_distance(56, 685) <= 600 then
+    effects.torch_room:draw(lights, 56, 685)  --64, 605
     room9_gate_e1:set_enabled(false)
     room9_gate_e2:set_enabled(false)
     room8_gate_w1:set_enabled(false)
     room8_gate_w2:set_enabled(false)
   end
-  if game:get_value("dungeon_8_explored_1b_10") and game:get_hero():get_distance(224,453) <= 500 then
-    effects.torch_room:draw(lights, 64, 333)
+  if game:get_value("dungeon_8_explored_1b_10") and game:get_hero():get_distance(56, 365) <= 600 then
+    effects.torch_room:draw(lights, 56, 365)  -- 64, 333
   end
-  if game:get_value("dungeon_8_explored_1b_11") and game:get_hero():get_distance(224,181) <= 500 then
-    effects.torch_room:draw(lights, 64, 61)
+  if game:get_value("dungeon_8_explored_1b_11") and game:get_hero():get_distance(56, 45) <= 600 then
+    effects.torch_room:draw(lights, 56, 45)   -- 64, 61
   end
-  if game:get_value("dungeon_8_explored_1b_12") and game:get_hero():get_distance(560,181) <= 500 then
-    effects.torch_room:draw(lights, 400, 61)
+  if game:get_value("dungeon_8_explored_1b_12") and game:get_hero():get_distance(472, 45) <= 600 then
+    effects.torch_room:draw(lights, 472, 45)  -- 400, 61
   end
-  if game:get_value("dungeon_8_explored_1b_13") and game:get_hero():get_distance(560,453) <= 500 then
-    effects.torch_room:draw(lights, 400, 333)
+  if game:get_value("dungeon_8_explored_1b_13") and game:get_hero():get_distance(472, 365) <= 600 then
+    effects.torch_room:draw(lights, 472, 365) -- 400, 333
   end
-  if game:get_value("dungeon_8_explored_1b_14") and game:get_hero():get_distance(896,453) <= 500 then
-    effects.torch_room:draw(lights, 736, 333)
+  if game:get_value("dungeon_8_explored_1b_14") and game:get_hero():get_distance(888, 365) <= 600 then
+    effects.torch_room:draw(lights, 888, 365) -- 736, 333
   end
-  if game:get_value("dungeon_8_explored_1b_15") and game:get_hero():get_distance(1232,453) <= 500 then
-    effects.torch_room:draw(lights, 1072, 333)
+  if game:get_value("dungeon_8_explored_1b_15") and game:get_hero():get_distance(1304, 365) <= 600 then
+    effects.torch_room:draw(lights, 1304, 365) -- 1072, 333
   end
-  if game:get_value("dungeon_8_explored_1b_16") and game:get_hero():get_distance(1232,181) <= 500 then
-    effects.torch_room:draw(lights, 1072, 61)
+  if game:get_value("dungeon_8_explored_1b_16") and game:get_hero():get_distance(1304, 45) <= 600 then
+    effects.torch_room:draw(lights, 1304, 45)  -- 1072, 61
   end
-  if game:get_value("dungeon_8_explored_1b_17") and game:get_hero():get_distance(1568,181) <= 500 then
-    effects.torch_room:draw(lights, 1408, 61)
+  if game:get_value("dungeon_8_explored_1b_17") and game:get_hero():get_distance(1720, 45) <= 600 then
+    effects.torch_room:draw(lights, 1720, 45) -- 1408, 61
   end
-  if game:get_value("dungeon_8_explored_1b_18") and game:get_hero():get_distance(1568,453) <= 500 then
-    effects.torch_room:draw(lights, 1408, 333)
+  if game:get_value("dungeon_8_explored_1b_18") and game:get_hero():get_distance(1702, 365) <= 600 then
+    effects.torch_room:draw(lights, 1702, 365) -- 1408, 333
   end
-  if game:get_value("dungeon_8_explored_1b_19") and game:get_hero():get_distance(1568,725) <= 500 then
-    effects.torch_room:draw(lights, 1408, 605)
+  if game:get_value("dungeon_8_explored_1b_19") and game:get_hero():get_distance(1720, 685) <= 600 then
+    effects.torch_room:draw(lights, 1720, 685) -- 1408, 605
   end
-  if game:get_value("dungeon_8_explored_1b_20") and game:get_hero():get_distance(1232,725) <= 500 then
-    effects.torch_room:draw(lights, 1072, 605)
+  if game:get_value("dungeon_8_explored_1b_20") and game:get_hero():get_distance(1304, 685) <= 600 then
+    effects.torch_room:draw(lights, 1304, 685) -- 1072, 605
   end
-  if game:get_value("dungeon_8_explored_1b_21") and game:get_hero():get_distance(1232,997) <= 500 then
-    effects.torch_room:draw(lights, 1072, 877)
+  if game:get_value("dungeon_8_explored_1b_21") and game:get_hero():get_distance(1304, 1005) <= 600 then
+    effects.torch_room:draw(lights, 1304, 1005) -- 1072, 877
   end
-  if game:get_value("dungeon_8_explored_1b_22") and game:get_hero():get_distance(1568,997) <= 500 then
-    effects.torch_room:draw(lights, 1408, 877)
+  if game:get_value("dungeon_8_explored_1b_22") and game:get_hero():get_distance(1720, 1005) <= 600 then
+    effects.torch_room:draw(lights, 1720, 1005) -- 1408, 877
   end
-  if game:get_value("dungeon_8_explored_1b_23") and game:get_hero():get_distance(1568,1269) <= 500 then
-    effects.torch_room:draw(lights, 1408, 1149)
+  if game:get_value("dungeon_8_explored_1b_23") and game:get_hero():get_distance(1720, 1325) <= 600 then
+    effects.torch_room:draw(lights, 1720, 1325) -- 1408, 1149
   end
-  if game:get_value("dungeon_8_explored_1b_24") and game:get_hero():get_distance(1232,1269) <= 500 then
-    effects.torch_room:draw(lights, 1072, 1149)
+  if game:get_value("dungeon_8_explored_1b_24") and game:get_hero():get_distance(1304, 1325) <= 600 then
+    effects.torch_room:draw(lights, 1304, 1325) -- 1072, 1149
     room1_gate_e1:set_enabled(false)
     room1_gate_e2:set_enabled(false)
     room24_gate_w1:set_enabled(false)
     room24_gate_w2:set_enabled(false)
   end
-  if game:get_value("dungeon_8_explored_1b_25") and game:get_hero():get_distance(896,191) <= 500 then
-    effects.torch_room:draw(lights, 736, 61)
+  if game:get_value("dungeon_8_explored_1b_25") and game:get_hero():get_distance(888, 45) <= 600 then
+    effects.torch_room:draw(lights, 888, 45)  -- 736, 61
   end
   for e in map:get_entities("torch_") do
-    if e:get_sprite():get_animation() == "lit" and e:get_distance(game:get_hero()) <= 300 then
+    if e:get_sprite():get_animation() == "lit" and e:get_distance(game:get_hero()) <= 400 then
       local xx,yy = e:get_position()
       effects.torch:draw(lights, xx-32, yy-40)
     end
   end
   for e in map:get_entities("eye_") do
-    if e:get_distance(game:get_hero()) <= 300 then
+    if e:get_distance(game:get_hero()) <= 400 then
       local xx,yy = e:get_position()
       effects.torch:draw(lights, xx-16, yy-16)
     end
   end
   for e in map:get_entities("statue_") do
-    if e:get_distance(game:get_hero()) <= 300 then
+    if e:get_distance(game:get_hero()) <= 400 then
       local xx,yy = e:get_position()
       effects.torch:draw(lights, xx-32, yy-40)
     end
   end
   for e in map:get_entities("lava_") do
-    if e:get_distance(game:get_hero()) <= 300 then
+    if e:get_distance(game:get_hero()) <= 400 then
       local xx,yy = e:get_position()
       effects.torch_tile:draw(lights, xx-8, yy-8)
     end

@@ -18,12 +18,13 @@ if game:get_value("i2014")==nil then game:set_value("i2014", 0) end
 if game:get_value("i2015")==nil then game:set_value("i2015", 0) end
 if game:get_value("i2021")==nil then game:set_value("i2021", 0) end
 
-local function replace_shop_treasure(treasure,properties)
+local function replace_shop_treasure(treasure, properties)
   -- ATTENTION: We can't reassign the entity inside the function
   -- so we have to use the return value.
   local tx,ty,tl = treasure:get_position()
   treasure:remove()
-  properties.x,properties.y,properties.layer = tx,ty,tl
+  properties.x, properties.y, properties.layer = tx, ty, tl
+  properties.font = "white_digits"
   return map:create_shop_treasure(properties)
 end
 

@@ -5420,6 +5420,16 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "95",
+  ground = "traversable",
+  default_layer = 0,
+  x = 280,
+  y = 296,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
   id = "950",
   ground = "wall",
   default_layer = 0,
@@ -5447,6 +5457,126 @@ tile_pattern{
   y = 240,
   width = 24,
   height = 16,
+}
+
+tile_pattern{
+  id = "95_2",
+  ground = "traversable",
+  default_layer = 0,
+  x = 280,
+  y = 304,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "95_3",
+  ground = "traversable",
+  default_layer = 0,
+  x = 280,
+  y = 312,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "95_4",
+  ground = "traversable",
+  default_layer = 0,
+  x = 280,
+  y = 288,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "96",
+  ground = "traversable",
+  default_layer = 0,
+  x = 288,
+  y = 296,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "96_2",
+  ground = "traversable",
+  default_layer = 0,
+  x = 288,
+  y = 304,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "96_3",
+  ground = "traversable",
+  default_layer = 0,
+  x = 288,
+  y = 312,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "96_4",
+  ground = "traversable",
+  default_layer = 0,
+  x = 288,
+  y = 288,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "97",
+  ground = "traversable",
+  default_layer = 0,
+  x = 296,
+  y = 296,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "97_2",
+  ground = "traversable",
+  default_layer = 0,
+  x = 296,
+  y = 304,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "97_3",
+  ground = "traversable",
+  default_layer = 0,
+  x = 296,
+  y = 312,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "97_4",
+  ground = "traversable",
+  default_layer = 0,
+  x = 296,
+  y = 288,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "98",
+  ground = "traversable",
+  default_layer = 0,
+  x = 272,
+  y = 288,
+  width = 8,
+  height = 8,
 }
 
 tile_pattern{
@@ -5527,5 +5657,21 @@ tile_pattern{
   y = 296,
   width = 16,
   height = 16,
+}
+
+border_set{
+  id = "path",
+  pattern_0 = "97_2",
+  pattern_1 = "96",
+  pattern_2 = "95_2",
+  pattern_3 = "96_3",
+  pattern_4 = "97",
+  pattern_5 = "95",
+  pattern_6 = "95_3",
+  pattern_7 = "97_3",
+  pattern_8 = "98",
+  pattern_9 = "96_4",
+  pattern_10 = "95_4",
+  pattern_11 = "97_4",
 }
 

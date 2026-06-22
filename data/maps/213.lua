@@ -26,15 +26,15 @@ end
 
 for enemy in map:get_entities("geldman") do
   enemy.on_dead = function()
-    if not map:has_entities("geldman") and not map:has_entities("armos") and not game:get_value("b1171") then
+    if not map:has_entities("geldman") and not map:has_entities("armos_room2") then
       chest_compass:set_enabled(true)
       sol.audio.play_sound("chest_appears")
     end
   end
 end
-for enemy in map:get_entities("armos") do
+for enemy in map:get_entities("armos_room2") do
   enemy.on_dead = function()
-    if not map:has_entities("geldman") and not map:has_entities("armos") and not game:get_value("b1171") then
+    if not map:has_entities("geldman") and not map:has_entities("armos_room2") then
       chest_compass:set_enabled(true)
       sol.audio.play_sound("chest_appears")
     end
