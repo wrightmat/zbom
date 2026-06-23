@@ -37,6 +37,10 @@ function map:on_started(destination)
 
   if destination == from_house_chef then
     sol.audio.play_music("beach")
+    if npc_tokay_Chef ~= nil then
+      -- Prevent the player from being stuck behind the Tokay
+      map:get_hero():set_position(328, 261)
+    end
   end
 
   if game:get_time_of_day() == "night" and npc_tokay_Chef ~= nil then
