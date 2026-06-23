@@ -1335,9 +1335,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 344,
+  x = 400,
   y = 96,
-  width = 80,
+  width = 24,
   height = 8,
   pattern = "55",
 }
@@ -5435,6 +5435,69 @@ tile{
   width = 64,
   height = 16,
   pattern = "1107",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 96,
+  width = 24,
+  height = 8,
+  pattern = "55",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 16,
+  width = 32,
+  height = 80,
+  pattern = "7",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 16,
+  width = 8,
+  height = 80,
+  pattern = "57",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 16,
+  width = 8,
+  height = 80,
+  pattern = "58",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 8,
+  width = 8,
+  height = 8,
+  pattern = "54",
+}
+
+tile{
+  layer = 0,
+  x = 376,
+  y = 8,
+  width = 16,
+  height = 8,
+  pattern = "55",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 8,
+  width = 8,
+  height = 8,
+  pattern = "56",
 }
 
 wall{

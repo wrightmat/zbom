@@ -350,7 +350,7 @@ function npc_kokiri_1:on_interaction()
   end
 end
 function npc_kokiri_2:on_interaction()
-  if game:get_value("i1631") >= 1 and game:get_value("b1630") then
+  if game:get_value("b1630") then
     if game:get_value("i1631") >= 16 then
       game:start_dialog("kokiri_2.0.saria_done", function()
         game:set_value("b1630", false)
@@ -362,7 +362,10 @@ function npc_kokiri_2:on_interaction()
     end
   elseif game:get_value("i1631") == 0 then
     -- Give the plants fetch quest
-    game:start_dialog("kokiri_2.0.saria", function() game:set_value("b1630", true) end)
+    game:start_dialog("kokiri_2.0.saria", function()
+      game:set_value("b1630", true)
+      if quest_plants ~= nil then quest_plants:remove() end
+    end)
   end
 end
 

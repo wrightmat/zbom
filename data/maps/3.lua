@@ -43,7 +43,7 @@ function map:on_started()
     self:create_shop_treasure({
     	name = "shop_treasure_2",
     	layer = 0,
-    	x = 176,
+    	x = 208,
     	y = 880,
     	price = 20,
     	dialog = "_item_description.apple.1",
