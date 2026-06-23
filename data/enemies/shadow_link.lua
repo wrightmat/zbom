@@ -16,6 +16,8 @@ function enemy:on_created()
   main_sprite = self:create_sprite("enemies/shadow_link")
   if map:get_id() == "218" or map:get_id() == "170" then
     sword_sprite = self:create_sprite("enemies/shadow_link_sword")
+    self:set_invincible_sprite(sword_sprite)
+    self:set_attack_consequence_sprite(sword_sprite, "sword", "custom")
   end
   self:set_size(32, 40); self:set_origin(16, 36)
   self:set_hurt_style("boss")
@@ -25,8 +27,6 @@ function enemy:on_created()
   self:set_attack_consequence("explosion", "ignored")
   self:set_pushed_back_when_hurt(false)
   self:set_push_hero_on_sword(false)
-  self:set_invincible_sprite(sword_sprite)
-  self:set_attack_consequence_sprite(sword_sprite, "sword", "custom")
 end
 
 function enemy:on_restarted()
@@ -56,7 +56,10 @@ function enemy:check_hero()
     enemy:go_random()
   end
   sol.timer.stop_all(self)
-  sol.timer.start(self, 1000, function() enemy:check_hero() end)
+
+  sol.timer.start(self, 1000, function()
+    if enemy ~= nil then enemy:check_hero() end
+  end)
 end
 
 function enemy:on_movement_changed(movement)

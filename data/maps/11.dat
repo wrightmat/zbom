@@ -30,9 +30,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 848,
+  x = 816,
   y = 296,
-  width = 32,
+  width = 64,
   height = 16,
   pattern = "45",
 }
@@ -2264,7 +2264,7 @@ tile{
   layer = 0,
   x = 416,
   y = 296,
-  width = 384,
+  width = 344,
   height = 16,
   pattern = "45",
 }
@@ -10227,16 +10227,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 760,
-  y = 296,
-  width = 8,
-  height = 16,
-  pattern = "152",
-}
-
-tile{
-  layer = 0,
-  x = 768,
+  x = 824,
   y = 296,
   width = 8,
   height = 16,
@@ -10245,7 +10236,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 776,
+  x = 832,
   y = 296,
   width = 8,
   height = 16,
@@ -10254,7 +10245,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 784,
+  x = 840,
   y = 296,
   width = 8,
   height = 16,
@@ -10263,7 +10254,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 792,
+  x = 848,
   y = 296,
   width = 8,
   height = 16,
@@ -10925,10 +10916,10 @@ dynamic_tile{
   layer = 0,
   x = 240,
   y = 888,
-  pattern = "2172",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "2172",
 }
 
 sensor{
@@ -10971,7 +10962,7 @@ wall{
 wall{
   name = "wall_1",
   layer = 0,
-  x = 840,
+  x = 808,
   y = 288,
   width = 16,
   height = 8,
@@ -12558,10 +12549,10 @@ dynamic_tile{
   layer = 0,
   x = 304,
   y = 944,
-  pattern = "1624",
+  enabled_at_start = false,
   width = 32,
   height = 24,
-  enabled_at_start = false,
+  pattern = "1624",
 }
 
 sensor{
@@ -12675,10 +12666,10 @@ dynamic_tile{
   layer = 0,
   x = 728,
   y = 24,
-  pattern = "1619",
+  enabled_at_start = false,
   width = 72,
   height = 24,
-  enabled_at_start = false,
+  pattern = "1619",
 }
 
 destructible{
@@ -13003,10 +12994,10 @@ dynamic_tile{
   layer = 0,
   x = 680,
   y = 520,
-  pattern = "1619",
+  enabled_at_start = false,
   width = 120,
   height = 24,
-  enabled_at_start = false,
+  pattern = "1619",
 }
 
 wall{
@@ -13025,7 +13016,7 @@ wall{
 npc{
   name = "torch_1",
   layer = 0,
-  x = 848,
+  x = 816,
   y = 309,
   direction = 3,
   subtype = 0,
@@ -13045,10 +13036,10 @@ dynamic_tile{
   layer = 0,
   x = 184,
   y = 832,
-  pattern = "1619",
+  enabled_at_start = false,
   width = 24,
   height = 24,
-  enabled_at_start = false,
+  pattern = "1619",
 }
 
 destructible{
@@ -13067,10 +13058,9 @@ dynamic_tile{
   layer = 0,
   x = 960,
   y = 920,
-  pattern = "1499",
   width = 48,
   height = 24,
-  enabled_at_start = true,
+  pattern = "1499",
 }
 
 wall{
@@ -13257,10 +13247,10 @@ dynamic_tile{
   layer = 0,
   x = 184,
   y = 880,
-  pattern = "237",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "237",
 }
 
 custom_entity{
@@ -15942,10 +15932,10 @@ dynamic_tile{
   layer = 2,
   x = 752,
   y = 240,
-  pattern = "1618",
+  enabled_at_start = false,
   width = 160,
   height = 24,
-  enabled_at_start = false,
+  pattern = "1618",
 }
 
 dynamic_tile{
@@ -15953,10 +15943,10 @@ dynamic_tile{
   layer = 2,
   x = 104,
   y = 640,
-  pattern = "1618",
+  enabled_at_start = false,
   width = 416,
   height = 24,
-  enabled_at_start = false,
+  pattern = "1618",
 }
 
 dynamic_tile{
@@ -15964,10 +15954,10 @@ dynamic_tile{
   layer = 2,
   x = 568,
   y = 656,
-  pattern = "1618",
+  enabled_at_start = false,
   width = 416,
   height = 24,
-  enabled_at_start = false,
+  pattern = "1618",
 }
 
 dynamic_tile{
@@ -15975,10 +15965,10 @@ dynamic_tile{
   layer = 2,
   x = 736,
   y = 880,
-  pattern = "1618",
+  enabled_at_start = false,
   width = 160,
   height = 24,
-  enabled_at_start = false,
+  pattern = "1618",
 }
 
 dynamic_tile{
@@ -15986,9 +15976,9 @@ dynamic_tile{
   layer = 2,
   x = 648,
   y = 1048,
-  pattern = "1618",
+  enabled_at_start = false,
   width = 96,
   height = 24,
-  enabled_at_start = false,
+  pattern = "1618",
 }
 

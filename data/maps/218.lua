@@ -97,14 +97,16 @@ function sensor_miniboss:on_activated()
   end
 end
 
-function miniboss_shadow_link:on_dead()
-  game:set_value("b1131", true)
-  map:open_doors("boss_door") -- Door out of boss chamber
-  map:open_doors("room11_shutter") -- Door down to basement
-  sol.audio.play_sound("boss_killed")
-  chest_item:set_enabled(true); chest_item_block:set_enabled(true)
-  sol.audio.play_sound("chest_appears")
-  sol.audio.play_music("temple_sanctum")
+if miniboss_shadow_link ~= nil then
+  function miniboss_shadow_link:on_dead()
+    game:set_value("b1131", true)
+    map:open_doors("boss_door") -- Door out of boss chamber
+    map:open_doors("room11_shutter") -- Door down to basement
+    sol.audio.play_sound("boss_killed")
+    chest_item:set_enabled(true); chest_item_block:set_enabled(true)
+    sol.audio.play_sound("chest_appears")
+    sol.audio.play_music("temple_sanctum")
+  end
 end
 
 function sensor_boss:on_activated()

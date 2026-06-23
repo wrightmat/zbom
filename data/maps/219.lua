@@ -1,5 +1,7 @@
 local map = ...
 local game = map:get_game()
+
+local shadow_link_focus = false
 local magic_counter = 0
 local draw_counter = 0
 local vars = {}
@@ -33,10 +35,8 @@ function map:on_started(destination)
   game:set_starting_location("218", "from_outside")
 
   if destination == from_above and not game:get_value("dungeon_8_explored_1b_complete") then
-    local sp = sol.sprite.create("entities/torch_light")
-    sp:set_blend_mode("blend")
-    sp:draw(lights, 960, 1421)
-    sol.timer.start(self, 2000, function()
+    shadow_link_focus = true
+    sol.timer.start(self, 1000, function()
       map:get_camera():start_tracking(shadow_link)
       sol.audio.play_sound("poe_soul")
       game:set_dialog_name("Shadow Link"); game:start_dialog("shadow_link.sanctum_basement", game:get_player_name(), function()
@@ -44,6 +44,7 @@ function map:on_started(destination)
           game:get_hero():start_treasure("map", 1, "b1181") -- Give map so explored and non-explored rooms show correctly.
         end
         shadow_link:get_sprite():fade_out(50, function()
+          shadow_link_focus = false
           map:get_camera():start_tracking(map:get_hero())
           enter_stairs_1:set_enabled(false)
           enter_stairs_2:set_enabled(false)
@@ -437,10 +438,10 @@ function map:on_update()
 end
 
 function map:on_draw(dst_surface)
-  local x,y = map:get_camera():get_position()
-  local w,h = map:get_camera():get_size()
+  local x, y = map:get_camera():get_position()
+  local w, h = map:get_camera():get_size()
   
-  shadow:fill_color({032,064,128,128})
+  shadow:fill_color({ 032, 064, 128, 128 })
   lights:clear()
   
   if game:get_value("dungeon_8_explored_1b_1") and game:get_hero():get_distance(896,1269) <= 500 then
@@ -536,29 +537,36 @@ function map:on_draw(dst_surface)
   end
   for e in map:get_entities("torch_") do
     if e:get_sprite():get_animation() == "lit" and e:get_distance(game:get_hero()) <= 400 then
-      local xx,yy = e:get_position()
-      effects.torch:draw(lights, xx-32, yy-40)
+      local xx, yy = e:get_position()
+      effects.torch:draw(lights, xx - 32, yy - 40)
     end
   end
   for e in map:get_entities("eye_") do
     if e:get_distance(game:get_hero()) <= 400 then
-      local xx,yy = e:get_position()
-      effects.torch:draw(lights, xx-16, yy-16)
+      local xx, yy = e:get_position()
+      effects.torch:draw(lights, xx - 16, yy - 16)
     end
   end
   for e in map:get_entities("statue_") do
     if e:get_distance(game:get_hero()) <= 400 then
-      local xx,yy = e:get_position()
-      effects.torch:draw(lights, xx-32, yy-40)
+      local xx, yy = e:get_position()
+      effects.torch:draw(lights, xx - 32, yy - 40)
     end
   end
   for e in map:get_entities("lava_") do
     if e:get_distance(game:get_hero()) <= 400 then
-      local xx,yy = e:get_position()
-      effects.torch_tile:draw(lights, xx-8, yy-8)
+      local xx, yy = e:get_position()
+      effects.torch_tile:draw(lights, xx - 8, yy - 8)
     end
   end
+
+  if shadow_link_focus then
+    local xx, yy = shadow_link:get_position()
+    local hx, hy = game:get_hero():get_position()
+    effects.torch_tile:draw(lights, xx - 16, yy - 24)
+    effects.torch_tile:draw(lights, hx - 16, hy - 24)
+  end
   
-  lights:draw_region(x,y,w,h,shadow,x,y)
-  shadow:draw_region(x,y,w,h,dst_surface)
+  lights:draw_region(x, y, w, h, shadow, x, y)
+  shadow:draw_region(x, y, w, h, dst_surface)
 end

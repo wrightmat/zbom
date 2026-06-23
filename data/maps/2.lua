@@ -78,7 +78,8 @@ function map:on_started(destination)
       price = 40,
       dialog = "_item_description.bow.2",
       treasure_name = "arrow",
-      treasure_variant = 3
+      treasure_variant = 3,
+      font = "white_digits"
     })
     if game:get_value("i1820") == 3 and shop_item_1 ~= nil then shop_item_1:remove() end
   end
