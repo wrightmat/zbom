@@ -50,14 +50,15 @@ function entity:on_interaction()
       game:start_dialog("gaira.4.faron")
     end
   elseif map:get_id() == "16" then
+    -- Poisioned Faron Woods
     if game:get_value("i1602") >= 2 then
       game:start_dialog("gaira.3.faron", function() game:set_value("i1602", 3) end)
       follow_hero(npc_gaira)
     else
       game:start_dialog("gaira.2.faron")
     end
-  -- Inside Deacon's house.
   elseif map:get_id() == "1" then
+    -- Inside Deacon's house
     if not game:get_value("b1722") then
       game:start_dialog("gaira.5.faron", game:get_player_name(), function()
         hero:start_treasure("heart_piece", 1, "b1722")
@@ -67,20 +68,21 @@ function entity:on_interaction()
     else
       game:start_dialog("gaira.5.forest")
     end
-  -- Ordon Village
   else
+    -- Ordon Village
     if game:get_value("i1911") == 1 then
       game:start_dialog("gaira.1.ordon", function()
         game:set_value("i1911", 2)
       end)
-    elseif game:get_value("i1911") >= 2 and ( not game:get_value("b1699") and game:get_value("i1603") >= 5 ) then
+    elseif game:get_value("i1911") >= 2 and game:get_value("i1603") >= 1 then
+      -- Trigger the "Lumberjack Love" quest after intial introduction and when the player has met the Great Fairy of Courage.
       game:start_dialog("gaira.2.ordon", function()
         game:set_value("i1911", 3)
         game:set_value("i1602", 1)
       end)
     else
       game:start_dialog("gaira.0.ordon", function()
-        game:set_value("i1911", game:get_value("i1911")+1)
+        game:set_value("i1911", game:get_value("i1911"), 1)
       end)
     end
   end
