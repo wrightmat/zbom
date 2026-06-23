@@ -46,10 +46,12 @@ function entity:on_created()
     if game:get_value("i1027") == 4 then self:remove() end
     if game:get_value("i1032") >= 3 then
       -- Julita and Crista switch places at this time: Crista at home, Julita running the shop.
-      self:set_position(1128, 557)
+      self:set_position(1084, 533)
+      if quest_trading_potion ~= nil then quest_trading_potion:set_position(1080, 509) end
     else
       -- Normally Crista is at the shop and Julita is at home.
-      self:set_position(256, 469)
+      self:set_position(252, 469)
+      if quest_trading_potion ~= nil then quest_trading_potion:set_position(248, 445) end
     end
   end
 end

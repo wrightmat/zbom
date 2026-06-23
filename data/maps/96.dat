@@ -1792,6 +1792,95 @@ tile{
   pattern = "487",
 }
 
+tile{
+  layer = 0,
+  x = 0,
+  y = 56,
+  width = 512,
+  height = 8,
+  pattern = "208",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 48,
+  group = 1,
+  width = 512,
+  height = 8,
+  pattern = "209",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 56,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "204",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 56,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "211",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 64,
+  group = 1,
+  width = 512,
+  height = 8,
+  pattern = "206",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 48,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "203",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 48,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "210",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 64,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "205",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 64,
+  group = 1,
+  width = 8,
+  height = 8,
+  pattern = "207",
+}
+
 teletransporter{
   name = "to_inside_cave",
   layer = 0,

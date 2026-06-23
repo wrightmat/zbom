@@ -6801,6 +6801,39 @@ custom_entity{
   model = "tree_apple",
 }
 
+custom_entity{
+  layer = 0,
+  x = 472,
+  y = 709,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/stone_ocean_1",
+  model = "stone_ocean",
+}
+
+custom_entity{
+  layer = 0,
+  x = 408,
+  y = 341,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/stone_ocean_1",
+  model = "stone_ocean",
+}
+
+custom_entity{
+  layer = 0,
+  x = 608,
+  y = 1101,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/stone_ocean_1",
+  model = "stone_ocean",
+}
+
 tile{
   layer = 2,
   x = 592,
