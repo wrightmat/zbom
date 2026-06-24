@@ -3,9 +3,9 @@ local warp_menu = {}  -- The warp menu.
 local initial_point
 local initial_y = 10
 local initial_volume 
-local index
 local hero_x, hero_y
-local matched = {}
+local matched = {}          -- Array of discovered warp point entries, sorted geographically (by y, then x).
+local current_match_index = 1  -- Index into matched: which discovered point is currently selected.
 local joy_avoid_repeat = {-2, -2}
 
 -- Warp point name, Companion point, Warp to map, Coordinate x on minimap, Coordinate y on minimap, Name of warp.
@@ -31,6 +31,25 @@ warp_points = {         -- Intentionally Global!
   b1518 = { "b1519", "118", 130, 80, "Island Palace" },
   b1519 = { "b1518", "103", 48, 90, "Saria Town" }
 }
+
+-- Rebuilds "matched" from scratch: every warp point whose companion has
+-- been discovered, sorted geographically (top to bottom, then left to
+-- right) so that pressing the same direction repeatedly moves the
+-- selection across the map in a consistent, predictable order both ways.
+local function rebuild_matched()
+  matched = {}
+  for key, v in pairs(warp_points) do
+    if game:get_value(v[1]) then
+      table.insert(matched, v)
+    end
+  end
+  table.sort(matched, function(a, b)
+    if a[4] ~= b[4] then
+      return a[4] < b[4]  -- Primarily by y (minimap row).
+    end
+    return a[3] < b[3]    -- Then by x, for points on the same row.
+  end)
+end
 
 function game:on_warp_started(point)
   initial_point = point
@@ -66,20 +85,22 @@ function warp_menu:on_started()
   self.world_minimap_movement = nil
   self.world_minimap_visible_xy = {x = 0, y = 0 }
 
-  -- Initialize the cursor and scroll map to initial point.
-  for k, v in pairs(warp_points) do
-    if k == initial_point then
-      index = v[1]
-      self:set_cursor_position(v[3], v[4])
-      if v[4] >= 133 then initial_y = v[4] - 133 + 10 end
-      self.world_minimap_visible_xy = {x = 0, y = initial_y }
+  -- Build the list of discovered warp points, once, in a stable
+  -- geographic order.
+  rebuild_matched()
+
+  -- Start the selection on the warp point for the map the hero is
+  -- currently standing on (this menu can only be opened from a map that
+  -- is itself one of the warp destinations).
+  local current_map_id = game:get_map():get_id()
+  current_match_index = 1
+  for i, v in ipairs(matched) do
+    if v[2] == current_map_id then
+      current_match_index = i
+      break
     end
   end
-
-  -- Build new table just for matched points.
-  for k, v in pairs(warp_points) do
-    if game:get_value(v[1]) then table.insert(matched, v[1]) end
-  end
+  self:select_current_match()
 
   -- Ensure the hero can't move and the HUD is correct.
   game:get_map():get_hero():freeze()
@@ -94,21 +115,23 @@ function warp_menu:on_started()
 end
 
 function warp_menu:on_command_pressed(command)
-  if command == "left" or command == "up" or command == "right" or command == "down" then
+  if command == "left" or command == "up" then
+    self:previous_warp_point()
+    handled = true
+  elseif command == "right" or command == "down" then
     self:next_warp_point()
     handled = true
   elseif command == "action" then
-    for k, v in pairs(warp_points) do
-      if v[1] == index and game:get_value(v[1]) then
-        game:start_dialog("warp.to_"..v[2], function(answer)
-          if answer == 1 then
-            sol.menu.stop(warp_menu)
-            game:get_map():get_hero():set_animation("ocarina")
-            sol.audio.play_sound("ocarina_wind")
-            game:get_map():get_entity("hero"):teleport(v[2], "ocarina_warp", "fade")
-          end
-        end)
-      end
+    local v = matched[current_match_index]
+    if v ~= nil and game:get_value(v[1]) then
+      game:start_dialog("warp.to_"..v[2], function(answer)
+        if answer == 1 then
+          sol.menu.stop(warp_menu)
+          game:get_map():get_hero():set_animation("ocarina")
+          sol.audio.play_sound("ocarina_wind")
+          game:get_map():get_entity("hero"):teleport(v[2], "ocarina_warp", "fade")
+        end
+      end)
     end
   elseif command == "pause" then
     sol.menu.stop(warp_menu)
@@ -117,30 +140,42 @@ function warp_menu:on_command_pressed(command)
   return true
 end
 
+-- Moves the selection to the next discovered warp point, geographically
+-- (wrapping back to the first point after the last one).
 function warp_menu:next_warp_point()
-  local matched_index = 1
-
-  -- Move cursor and scroll map to new warp point.
-  for k, v in ipairs(matched) do
-    if k == matched_index then
-      index = v
-      for k, v in pairs(warp_points) do
-        if v[1] == index then
-          self:set_cursor_position(v[3], v[4])
-          if v[4] >= 133 then initial_y = v[4] - 133 + 10 else initial_y = 0 end
-          self.world_minimap_visible_xy = {x = 0, y = initial_y }
-        end
-      end
-      table.remove(matched, matched_index)
-    end
+  if #matched == 0 then
+    return
   end
-
-  if table.getn(matched) == 0 then
-    -- Re-build table for matched points when it's been looped through.
-    for k, v in pairs(warp_points) do
-      if game:get_value(v[1]) then table.insert(matched, v[1]) end
-    end
+  current_match_index = current_match_index + 1
+  if current_match_index > #matched then
+    current_match_index = 1
   end
+  self:select_current_match()
+end
+
+-- Moves the selection to the previous discovered warp point, geographically
+-- (wrapping around to the last point from the first one).
+function warp_menu:previous_warp_point()
+  if #matched == 0 then
+    return
+  end
+  current_match_index = current_match_index - 1
+  if current_match_index < 1 then
+    current_match_index = #matched
+  end
+  self:select_current_match()
+end
+
+-- Updates the cursor and minimap scroll to match whatever warp point
+-- current_match_index now points to.
+function warp_menu:select_current_match()
+  local v = matched[current_match_index]
+  if v == nil then
+    return
+  end
+  self:set_cursor_position(v[3], v[4])
+  if v[4] >= 133 then initial_y = v[4] - 133 + 10 else initial_y = 0 end
+  self.world_minimap_visible_xy = {x = 0, y = initial_y }
 end
 
 function warp_menu:set_cursor_position(x, y)
