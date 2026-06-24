@@ -525,7 +525,9 @@ local function initialize_game()
   end
   
   function game_metatable:set_max_stamina(value)
-    if value >= 20 then -- Stamina can't be too low or hero can't do anything!
+    -- Stamina can't be too low or hero can't do anything!
+    -- And we add a max so the bar doesn't get too long.
+    if value >= 20 and value < 2016 then
       return self:set_value("i1025", value)
     end
   end

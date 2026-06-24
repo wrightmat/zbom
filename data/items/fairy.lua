@@ -45,7 +45,7 @@ function item:on_obtaining(variant, savegame_variable)
   if not game:has_bottle() or first_empty_bottle == nil then
     -- The player has no bottle: just restore 7 hearts.
     game:add_life(7 * 4)
-    game:add_stamina(50)
+    game:add_stamina(100)
   else
     -- The player has a bottle: start the dialog.
     game:start_dialog("found_fairy", function(answer)
@@ -57,7 +57,7 @@ function item:on_obtaining(variant, savegame_variable)
         else  
           -- Restore 7 hearts.
           game:add_life(7 * 4)
-          game:add_stamina(20)
+          game:add_stamina(40)
         end
       else
 	-- Keep the fairy in a bottle.
@@ -65,7 +65,7 @@ function item:on_obtaining(variant, savegame_variable)
 	  -- No empty bottle.
 	  game:start_dialog("found_fairy.no_empty_bottle", function()
 	    game:add_life(7 * 4)
-    	    game:add_stamina(20)
+    	    game:add_stamina(40)
 	  end)
 	  sol.audio.play_sound("wrong")
 	else

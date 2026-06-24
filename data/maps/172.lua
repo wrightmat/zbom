@@ -12,7 +12,7 @@ function map:on_started(destination)
 end
 
 function flying_heart:on_obtained()
-  self:get_game():add_life(4); self:get_game():add_stamina(8)
+  self:get_game():add_life(4); self:get_game():add_stamina(16)
 end
 
 function switch_rust_1:on_activated()

@@ -204,8 +204,8 @@ function sensor_sleep:on_activated()
       hero:teleport("2", "house_bed_dest", "fade")
       game:set_life(game:get_max_life())
       game:set_stamina(game:get_max_stamina())
-      if game:get_value("i1026") < 1 then game:set_max_stamina(game:get_max_stamina()-20) end
-      if game:get_value("i1026") > 3 then game:set_max_stamina(game:get_max_stamina()+20) end
+      if game:get_value("i1026") < 1 then game:set_max_stamina(game:get_max_stamina() - 40) end
+      if game:get_value("i1026") > 3 then game:set_max_stamina(game:get_max_stamina() + 40) end
       game:set_value("i1026", 0)
     end
   end)
@@ -240,8 +240,8 @@ function sensor_sleep_relic:on_activated()
       hero:teleport("2", "relic_bed_dest", "fade")
       game:set_life(game:get_max_life())
       game:set_stamina(game:get_max_stamina())
-      if game:get_value("i1026") < 1 then game:set_max_stamina(game:get_max_stamina()-20) end
-      if game:get_value("i1026") > 3 then game:set_max_stamina(game:get_max_stamina()+20) end
+      if game:get_value("i1026") < 1 then game:set_max_stamina(game:get_max_stamina() - 40) end
+      if game:get_value("i1026") > 3 then game:set_max_stamina(game:get_max_stamina() + 40) end
       game:set_value("i1026", 0)
     end
   end)

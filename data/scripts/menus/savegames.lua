@@ -1012,7 +1012,7 @@ function savegame_menu:set_initial_values(savegame)
   -- Initially give 3 hearts, the first tunic and the first wallet.
   savegame:set_max_life(12)
   savegame:set_life(savegame:get_max_life())
-  savegame:set_max_stamina(200)
+  savegame:set_max_stamina(400)
   savegame:set_stamina(savegame:get_max_stamina())
   savegame:get_item("tunic"):set_variant(1)
   savegame:set_ability("tunic", 1)

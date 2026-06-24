@@ -267,8 +267,8 @@ function npc_turt_sensor:on_interaction()
       hero:teleport("4", "inn_bed", "fade")
       game:set_life(game:get_max_life())
       game:set_stamina(game:get_max_stamina())
-      if game:get_value("i1026") < 2 then game:set_max_stamina(game:get_max_stamina()-20) end
-      if game:get_value("i1026") > 5 then game:set_max_stamina(game:get_max_stamina()+20) end
+      if game:get_value("i1026") < 2 then game:set_max_stamina(game:get_max_stamina() - 40) end
+      if game:get_value("i1026") > 5 then game:set_max_stamina(game:get_max_stamina() + 40) end
       game:set_value("i1026", 0)
     end
   end)

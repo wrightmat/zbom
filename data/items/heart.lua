@@ -8,7 +8,7 @@ end
 
 function item:on_obtaining(variant, savegame_variable)
   self:get_game():add_life(4)
-  self:get_game():add_stamina(8)
+  self:get_game():add_stamina(16)
 end
 
 function item:on_pickable_created(pickable)

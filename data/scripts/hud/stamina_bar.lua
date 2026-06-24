@@ -52,9 +52,9 @@ function stamina_bar:check()
     if increment ~= 0 then
       self.stamina_displayed = self.stamina_displayed + increment
 
-      if (stamina - self.stamina_displayed) % 10 == 1 then
-	--sol.audio.play_sound("magic_bar")
-      end
+      --if (stamina - self.stamina_displayed) % 10 == 1 then
+        --sol.audio.play_sound("magic_bar")
+      --end
     end
   end
 
@@ -72,12 +72,16 @@ end
 function stamina_bar:rebuild_surface()
   self.surface:clear()
 
+  local max_bar_width = 84  -- 88px surface minus 2px for each end-cap.
+  local max_stamina_width = math.min(max_bar_width, self.max_stamina_displayed / 24)
+  local stamina_width = math.min(max_bar_width, self.stamina_displayed / 24)
+
   -- Max stamina.
-  self.container_img:draw_region(46, 8, 2 + self.max_stamina_displayed/12, 8, self.surface)
-  self.container_img:draw_region(132, 8, 2, 8, self.surface, self.max_stamina_displayed/12 + 2, 0)
+  self.container_img:draw_region(46, 8, 2 + max_stamina_width, 8, self.surface)
+  self.container_img:draw_region(132, 8, 2, 8, self.surface, max_stamina_width + 2, 0)
 
   -- Current stamina (divided so it takes up less space).
-  self.stamina_bar_img:draw_region(46, 32, 2 + self.stamina_displayed/12, 8, self.surface)
+  self.stamina_bar_img:draw_region(46, 32, 2 + stamina_width, 8, self.surface)
 end
 
 function stamina_bar:set_dst_position(x, y)

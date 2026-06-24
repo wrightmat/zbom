@@ -26,7 +26,7 @@ function map:on_started(destination)
             if game:get_time_of_day() ~= "night" then game:set_map_tone(previous_tone) end
           end)
           hero:unfreeze()
-          game:add_max_stamina(100)
+          game:add_max_stamina(200)
           game:set_stamina(game:get_max_stamina())
           torch_1:get_sprite():set_animation("unlit")
           game:set_value("i1910", 5)

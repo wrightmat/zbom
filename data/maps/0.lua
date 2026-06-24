@@ -7,8 +7,8 @@ function map:on_started(destination)
   map:get_hero():set_position(-100, -100)
 
   -- Set initial and max stamina.
-  game:set_value("i1025", 200)
-  game:set_value("i1024", 200)
+  game:set_value("i1025", 400)
+  game:set_value("i1024", 400)
 
   -- Dream sequence depicting the Dark Mirror
   belahim:set_enabled(false)

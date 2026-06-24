@@ -16,10 +16,10 @@ map:register_event("on_started", function(self, destination)
 end)
 
 function flying_heart:on_obtained()
-  self:get_game():add_life(4); self:get_game():add_stamina(8)
+  self:get_game():add_life(4); self:get_game():add_stamina(16)
 end
 function flying_heart_2:on_obtained()
-  self:get_game():add_life(4); self:get_game():add_stamina(8)
+  self:get_game():add_life(4); self:get_game():add_stamina(16)
 end
 
 function sensor_boss:on_activated()
