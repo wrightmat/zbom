@@ -8329,10 +8329,30 @@ town overnight.
 }
 
 dialog{
+  id = "mido_soldier.0.1",
+  text = [[
+Circule, ciudadano. Aquí no hay nada
+que ver.
+]],
+}
+
+dialog{
+  id = "mido_soldier.0.2",
+  text = [[
+Ve a cualquier parte menos aquí. Dirígete al oeste
+hacia $bNorth Castle$w, cruza el agua
+hacia el este hasta $bIsland Palace$w y
+atraviesa más agua para llegar al otro continente,
+donde encontrarás ciudades más interesantes. He oído 
+decir que hay un mapa por allí en algún sitio.
+]],
+}
+
+dialog{
   id = "moblin.0.cave_ordeals",
   skip = "current",
   text = [[
-Me hear protecting this dangerous cave.
+Me here protecting this dangerous cave.
 You no go inside. Way dark, scary and
 full of monsters!
 ]],

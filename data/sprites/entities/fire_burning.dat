@@ -1,0 +1,12 @@
+animation{
+  name = "fire_burns",
+  src_image = "entities/fire.png",
+  frame_delay = 70,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 40, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 27, num_frames = 12 },
+    { x = 0, y = 40, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 27, num_frames = 12 },
+    { x = 0, y = 40, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 27, num_frames = 12 },
+    { x = 0, y = 40, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 27, num_frames = 12 },
+  },
+}

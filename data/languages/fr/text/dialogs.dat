@@ -9023,6 +9023,27 @@ lendemain.
 }
 
 dialog{
+  id = "mido_soldier.0.1",
+  text = [[
+Circulez, citoyen. Il n'y a rien
+à voir ici.
+]],
+}
+
+dialog{
+  id = "mido_soldier.0.2",
+  text = [[
+Allez n'importe où sauf ici. Vers l'ouest,
+jusqu'au $bChâteau du Nord$w ; traversez les eaux
+vers l'est jusqu'au $bPalais de l'Île$w, puis
+traversez à nouveau l'étendue d'eau pour rejoindre 
+l'autre continent et découvrir des villes plus 
+intéressantes. Il paraît qu'il y a une carte quelque 
+part là-bas.
+]],
+}
+
+dialog{
   id = "moblin.0.cave_ordeals",
   skip = "current",
   text = [[

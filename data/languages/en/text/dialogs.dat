@@ -7307,7 +7307,7 @@ dialog{
   text = [[
 See that woman over there? We just got
 divorced, and now we're both stuck
-here becauce of the attack and the move.
+here because of the attack and the move.
 It's painful, because she's a constant
 reminder of everything I did wrong...
 ]],
@@ -9051,10 +9051,30 @@ town overnight.
 }
 
 dialog{
+  id = "mido_soldier.0.1",
+  text = [[
+Move along, citizen. Nothing to
+see here.
+]],
+}
+
+dialog{
+  id = "mido_soldier.0.2",
+  text = [[
+Go anywhere but here. West from here
+to $bNorth Castle$w, across the water
+to the east to $bIsland Palace$w, and
+across more water to the other continent
+for more interesting cities. I hear there's
+a map over there somewhere.
+]],
+}
+
+dialog{
   id = "moblin.0.cave_ordeals",
   skip = "current",
   text = [[
-Me hear protecting this dangerous cave.
+Me here protecting this dangerous cave.
 You no go inside. Way dark, scary and
 full of monsters!
 ]],

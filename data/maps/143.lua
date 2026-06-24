@@ -32,6 +32,7 @@ function map:on_started()
 end
 
 function npc_mayor:on_interaction()
+  game:set_dialog_name("Mayor")
   if game:get_max_life() >= 40 and game:get_item("world_map"):get_variant() < 3 then
     game:start_dialog("mayor.1.kasuto", function()
       hero:start_treasure("world_map", 3)

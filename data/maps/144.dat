@@ -1875,7 +1875,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 560,
+  x = 512,
   y = 168,
   width = 48,
   height = 40,
@@ -1884,7 +1884,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 560,
+  x = 512,
   y = 208,
   width = 48,
   height = 16,
@@ -1893,7 +1893,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 568,
+  x = 520,
   y = 224,
   width = 32,
   height = 8,
@@ -1902,7 +1902,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 552,
+  x = 504,
   y = 200,
   width = 8,
   height = 16,
@@ -1911,7 +1911,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 608,
+  x = 560,
   y = 200,
   width = 8,
   height = 16,
@@ -2829,7 +2829,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 624,
+  x = 464,
   y = 176,
   width = 32,
   height = 32,
@@ -2960,6 +2960,249 @@ tile{
   width = 16,
   height = 16,
   pattern = "999_2",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 0,
+  width = 16,
+  height = 160,
+  pattern = "366",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "365",
+}
+
+tile{
+  layer = 0,
+  x = 920,
+  y = 808,
+  width = 32,
+  height = 24,
+  pattern = "513",
+}
+
+tile{
+  layer = 0,
+  x = 864,
+  y = 640,
+  width = 32,
+  height = 24,
+  pattern = "513",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 896,
+  width = 16,
+  height = 16,
+  pattern = "963",
+}
+
+tile{
+  layer = 0,
+  x = 920,
+  y = 600,
+  width = 16,
+  height = 16,
+  pattern = "962",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 1064,
+  width = 16,
+  height = 16,
+  pattern = "963",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 784,
+  width = 16,
+  height = 16,
+  pattern = "963",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 560,
+  width = 16,
+  height = 16,
+  pattern = "964",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "964",
+}
+
+tile{
+  layer = 0,
+  x = 768,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "964",
+}
+
+tile{
+  layer = 0,
+  x = 712,
+  y = 472,
+  width = 16,
+  height = 16,
+  pattern = "964",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 760,
+  width = 16,
+  height = 16,
+  pattern = "964",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 744,
+  width = 16,
+  height = 16,
+  pattern = "964",
+}
+
+tile{
+  layer = 0,
+  x = 216,
+  y = 896,
+  width = 16,
+  height = 16,
+  pattern = "964",
+}
+
+tile{
+  layer = 0,
+  x = 808,
+  y = 1016,
+  width = 16,
+  height = 16,
+  pattern = "964",
+}
+
+tile{
+  layer = 0,
+  x = 864,
+  y = 880,
+  width = 16,
+  height = 16,
+  pattern = "965",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 680,
+  width = 16,
+  height = 16,
+  pattern = "965",
+}
+
+tile{
+  layer = 0,
+  x = 880,
+  y = 456,
+  width = 16,
+  height = 16,
+  pattern = "965",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 480,
+  width = 16,
+  height = 16,
+  pattern = "162",
+}
+
+tile{
+  layer = 0,
+  x = 936,
+  y = 552,
+  width = 16,
+  height = 16,
+  pattern = "156",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 560,
+  width = 16,
+  height = 16,
+  pattern = "155",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 768,
+  width = 16,
+  height = 16,
+  pattern = "155",
+}
+
+tile{
+  layer = 0,
+  x = 1032,
+  y = 776,
+  width = 16,
+  height = 16,
+  pattern = "156",
+}
+
+tile{
+  layer = 0,
+  x = 664,
+  y = 896,
+  width = 16,
+  height = 16,
+  pattern = "962",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 880,
+  width = 16,
+  height = 16,
+  pattern = "962",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 920,
+  width = 16,
+  height = 16,
+  pattern = "962",
 }
 
 teletransporter{
@@ -3124,7 +3367,7 @@ enemy{
 
 destructible{
   layer = 0,
-  x = 632,
+  x = 472,
   y = 205,
   treasure_name = "random_north",
   sprite = "entities/bush",
@@ -3135,7 +3378,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 632,
+  x = 472,
   y = 189,
   treasure_name = "random_north",
   sprite = "entities/bush",
@@ -3146,7 +3389,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 648,
+  x = 488,
   y = 189,
   treasure_name = "random_north",
   sprite = "entities/bush",
@@ -3157,7 +3400,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 648,
+  x = 488,
   y = 205,
   treasure_name = "random_north",
   sprite = "entities/bush",
@@ -3240,6 +3483,222 @@ enemy{
   direction = 0,
   breed = "chuchu_yellow",
   treasure_name = "random_north",
+}
+
+custom_entity{
+  layer = 0,
+  x = 504,
+  y = 221,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 440,
+  y = 173,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 432,
+  y = 181,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 872,
+  y = 141,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 904,
+  y = 93,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 832,
+  y = 77,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 744,
+  y = 93,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 736,
+  y = 101,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 656,
+  y = 189,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 648,
+  y = 197,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 328,
+  y = 117,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 248,
+  y = 189,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 232,
+  y = 205,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 160,
+  y = 245,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 648,
+  y = 909,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 656,
+  y = 901,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 664,
+  y = 917,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 656,
+  y = 925,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/foliage_sprig",
+  model = "foliage",
+}
+
+tile{
+  layer = 1,
+  x = 920,
+  y = 784,
+  width = 32,
+  height = 24,
+  pattern = "514",
+}
+
+tile{
+  layer = 1,
+  x = 864,
+  y = 616,
+  width = 32,
+  height = 24,
+  pattern = "514",
 }
 
 tile{
@@ -3568,7 +4027,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 560,
+  x = 512,
   y = 152,
   width = 48,
   height = 16,
@@ -3577,7 +4036,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 552,
+  x = 504,
   y = 160,
   width = 8,
   height = 40,
@@ -3586,7 +4045,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 608,
+  x = 560,
   y = 160,
   width = 8,
   height = 40,

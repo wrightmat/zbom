@@ -94,6 +94,7 @@ function pot_plant_simple:on_interaction() game:start_dialog("plants.plaque", fu
 function pot_plant_town:on_interaction() game:start_dialog("plants.plaque", function() game:start_dialog("plants.plant_town") end) end
 
 npc_isan:register_event("on_interaction", function()
+  game:set_dialog_name("Isan")
   if game:get_value("b2031") then
     game:start_dialog("isan.0.trading", function(answer)
       if answer == 1 then
@@ -144,6 +145,7 @@ npc_isan:register_event("on_interaction", function()
 end)
 
 npc_witch:register_event("on_interaction", function()
+  game:set_dialog_name("Witch")
   if game:get_value("i1840") >= 5 then
     game:start_dialog("witch.1.house")
   elseif game:get_value("b2024") then
@@ -449,6 +451,7 @@ npc_priest:register_event("on_interaction", function()
 end)
 
 npc_mr_Write:register_event("on_interaction", function()
+  game:set_dialog_name("Mr. Write")
   -- Mr. Write is enabled only when the books are found, so no need to do the check here.
   game:start_dialog("mr_write.0.house", function()
     map:get_hero():start_treasure("crystal") -- Give a total of 5 Magic Crystals.
@@ -467,6 +470,7 @@ npc_sanday:register_event("on_interaction", function()
 end)
 
 npc_mayor:register_event("on_interaction", function()
+  game:set_dialog_name("Mayor")
   if game:get_max_life() >= 40 and game:get_item("world_map"):get_variant() < 3 then
     game:start_dialog("mayor.1.kasuto", function()
       hero:start_treasure("world_map", 3)
