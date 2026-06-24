@@ -3,11 +3,32 @@ local map_submenu = submenu:new()
 
 local outside_world_size = {}
 local outside_world_minimap_size = {}
+local visible_window_height = 133
 local map_shown = false
 
 function map_submenu:on_started()
   submenu.on_started(self)
   
+  -- North Hyrule vertical mapping has two segments, because the artwork
+  -- deliberately compresses the area south of the bridge (where N5/N6/etc.
+  -- live) to give more visual room to the more interesting terrain north of
+  -- it. A single linear scale can't match an image that's stretched
+  -- unevenly, so we scale each segment separately using known anchor points:
+  --   shared y=0    (north edge)    -> minimap pixel 0
+  --   shared y=4483 (bridge)        -> minimap pixel 112
+  --   shared y=6725 (south edge)    -> minimap pixel 133
+  local function north_world_y_to_minimap_y(world_y)
+    local bridge_world_y = 4483
+    local bridge_pixel_y = 112
+    if world_y <= bridge_world_y then
+      return math.floor(world_y * bridge_pixel_y / bridge_world_y)
+    else
+      local remaining_world = 6725 - bridge_world_y
+      local remaining_pixels = 133 - bridge_pixel_y
+      return math.floor(bridge_pixel_y + (world_y - bridge_world_y) * remaining_pixels / remaining_world)
+    end
+  end
+
   -- Common to dungeons and outside areas.
   self.hero_head_sprite = sol.sprite.create("menus/hero_head")
   self.hero_head_sprite:set_animation("tunic" .. self.game:get_item("tunic"):get_variant())
@@ -23,47 +44,67 @@ function map_submenu:on_started()
     self:set_caption("map.caption.world_map")
     
     local hero_absolute_x, hero_absolute_y = self.game:get_map():get_location()
-    if self.game:is_in_outside_world() or (map:get_id() == "20" or map:get_id() == "21" or map:get_id() == "22") then
+    if self.game:is_in_outside_world() or ( map:get_id() == "20" or map:get_id() == "21" or map:get_id() == "22" ) then
       local hero_map_x, hero_map_y = map:get_entity("hero"):get_position()
       hero_absolute_x = hero_absolute_x + hero_map_x
       hero_absolute_y = hero_absolute_y + hero_map_y
     end
     self.world_minimap_movement = nil
-    self.world_minimap_visible_xy = {x = 0, y = 0}
-    if self.game:get_item("world_map"):get_variant() > 0 and (map:get_world() == "outside_world"  or map:get_id() == "20" or map:get_id() == "21" or map:get_id() == "22") then
+    self.world_minimap_visible_xy = { x = 0, y = 0 }
+
+    -- Figure out which world map (if any) applies here, based on which
+    -- world we're in and which World Map upgrade the player owns.
+    local world_map_variant = self.game:get_item("world_map"):get_variant()
+
+    if world_map_variant > 0 and ( map:get_world() == "outside_world"  or map:get_id() == "20" or map:get_id() == "21" or map:get_id() == "22" ) then
       map_shown = true      -- If in South Hyrule with World Map, then show the map.
-      self.outside_world_size = { width = 10008, height = 16814 }
+      self.outside_world_size = { width = 10008, height = 16814 - 4484 }    -- Subtract out the height of North Hyrule in the shared coordinate system
       self.outside_world_minimap_size = { width = 225, height = 266 }
+      self.outside_world_origin = { x = 0, y = 4484 }
       self.world_minimap_img = sol.surface.load("sprites/menus/outside_world_map.png")
-      local hero_minimap_x = math.floor(hero_absolute_x * self.outside_world_minimap_size.width / self.outside_world_size.width)
-      local hero_minimap_y = math.floor(hero_absolute_y * self.outside_world_minimap_size.height / self.outside_world_size.height)
-      self.hero_x = hero_minimap_x + (hero_absolute_x / 350) + 58
-      self.hero_y = hero_minimap_y + (hero_absolute_y / 250) - 20
-      self.world_minimap_visible_xy.y = math.min(self.outside_world_minimap_size.height - 133, math.max(0, hero_minimap_y - 65))
-    elseif self.game:get_item("world_map"):get_variant() > 1 and map:get_world() == "outside_subrosia" then
+
+    elseif world_map_variant > 1 and map:get_world() == "outside_subrosia" then
       map_shown = true      -- If in Subrosia with upgraded World Map, then show the map.
       self.outside_world_size = { width = 3362, height = 4483 }
       self.outside_world_minimap_size = { width = 225, height = 133 }
+      self.outside_world_origin = { x = 0, y = 0 }
       self.world_minimap_img = sol.surface.load("sprites/menus/outside_world_map_2.png")
-      local hero_minimap_x = math.floor(hero_absolute_x * self.outside_world_minimap_size.width / self.outside_world_size.width) + 58
-      local hero_minimap_y = math.floor(hero_absolute_y * self.outside_world_minimap_size.height / self.outside_world_size.height) - 5
-      self.hero_x = hero_minimap_x + 24
-      self.hero_y = hero_minimap_y + 54
-      self.world_minimap_visible_xy.y = math.min(self.outside_world_minimap_size.height - 133, math.max(0, hero_minimap_y - 65))
-    elseif self.game:get_item("world_map"):get_variant() > 2 and map:get_world() == "outside_north" then
+
+    elseif world_map_variant > 2 and map:get_world() == "outside_north" then
       map_shown = true      -- If in North Hyrule with upgraded World Map, then show the map.
       self.outside_world_size = { width = 16814, height = 6725 }
       self.outside_world_minimap_size = { width = 225, height = 133 }
+      self.outside_world_origin = { x = 0, y = 0 }
       self.world_minimap_img = sol.surface.load("sprites/menus/outside_world_map_3.png")
-      local hero_minimap_x = math.floor(hero_absolute_x * self.outside_world_minimap_size.width / self.outside_world_size.width)
-      local hero_minimap_y = math.floor(hero_absolute_y * self.outside_world_minimap_size.height / self.outside_world_size.height)
-      self.hero_x = hero_minimap_x + 32
-      self.hero_y = hero_minimap_y + 64
-      self.world_minimap_visible_xy.y = math.min(self.outside_world_minimap_size.height - 133, math.max(0, hero_minimap_y - 65))
+
     else
       -- if World Map not in inventory, show clouds in map screen
       map_shown = false
       self.world_minimap_img = sol.surface.load("sprites/menus/outside_world_clouds.png")
+    end
+
+    if map_shown then
+      local hero_minimap_y
+      local minimap_screen_x = 96
+      local minimap_screen_y = 59
+      local world_x = hero_absolute_x - self.outside_world_origin.x
+      local world_y = hero_absolute_y - self.outside_world_origin.y
+      local hero_minimap_x = math.floor(world_x * self.outside_world_minimap_size.width / self.outside_world_size.width)
+      if map:get_world() == "outside_north" then
+        hero_minimap_y = north_world_y_to_minimap_y(hero_absolute_y)
+      else
+        hero_minimap_y = math.floor(world_y * self.outside_world_minimap_size.height / self.outside_world_size.height)
+      end
+
+      self.hero_x = hero_minimap_x + minimap_screen_x
+      self.hero_y = hero_minimap_y + minimap_screen_y
+      -- Clamp the visible scroll window so it never shows past the top/bottom edge of
+      -- this world's minimap image, while otherwise keeping the hero centered vertically
+      self.world_minimap_visible_xy.y = math.min(
+        self.outside_world_minimap_size.height - visible_window_height,
+        math.max(0, hero_minimap_y - math.floor(visible_window_height / 2))
+      )
+    else
       self.world_minimap_visible_xy.y = 0
     end
   else
@@ -132,7 +173,7 @@ function map_submenu:on_command_pressed(command)
       -- Move the outside world minimap.
       if map_shown then
         if (command == "up" and self.world_minimap_visible_xy.y > 0) or
-            (command == "down" and self.world_minimap_visible_xy.y < self.outside_world_minimap_size.height - 134) then
+            (command == "down" and self.world_minimap_visible_xy.y < self.outside_world_minimap_size.height - visible_window_height - 1) then
           local angle
           if command == "up" then
             angle = math.pi / 2
@@ -157,7 +198,7 @@ function map_submenu:on_command_pressed(command)
             end
             
             if (command == "up" and submenu.world_minimap_visible_xy.y <= 0) or
-                (command == "down" and submenu.world_minimap_visible_xy.y >= submenu.outside_world_minimap_size.height - 134) then
+                (command == "down" and submenu.world_minimap_visible_xy.y >= submenu.outside_world_minimap_size.height - visible_window_height - 1) then
               self:stop()
               submenu.world_minimap_movement = nil
             end
@@ -208,14 +249,14 @@ end
 
 function map_submenu:draw_world_map(dst_surface)
   -- Draw the minimap.
-  self.world_minimap_img:draw_region(self.world_minimap_visible_xy.x, self.world_minimap_visible_xy.y, 255, 133, dst_surface, 96, 59)
+  self.world_minimap_img:draw_region(self.world_minimap_visible_xy.x, self.world_minimap_visible_xy.y, 255, visible_window_height, dst_surface, 96, 59)
   
   if map_shown then
     -- Draw the hero's position.
     local hero_visible_y = self.hero_y - self.world_minimap_visible_xy.y
-    if hero_visible_y >= 51 and hero_visible_y <= 133 + 51 then
+    --if hero_visible_y >= 51 and hero_visible_y <= visible_window_height + 51 then
       self.hero_head_sprite:draw(dst_surface, self.hero_x, hero_visible_y)
-    end
+    --end
     
     -- Draw the arrows.
     if self.world_minimap_visible_xy.y > 0 then
@@ -223,7 +264,7 @@ function map_submenu:draw_world_map(dst_surface)
       self.up_arrow_sprite:draw(dst_surface, 259, 55)
     end
     
-    if self.world_minimap_visible_xy.y < self.outside_world_minimap_size.height - 134 then
+    if self.world_minimap_visible_xy.y < self.outside_world_minimap_size.height - visible_window_height - 1 then
       self.down_arrow_sprite:draw(dst_surface, 144, 188)
       self.down_arrow_sprite:draw(dst_surface, 259, 188)
     end
@@ -280,7 +321,7 @@ function map_submenu:draw_dungeon_floors(dst_surface)
   local src_y = (15 - self.highest_floor_displayed) * 12
   local src_width = 32
   local src_height = self.nb_floors_displayed * 12 + 1
-  local dst_x = 127 --79
+  local dst_x = 127
   local dst_y = 70 + (8 - self.nb_floors_displayed) * 6
   local old_dst_y = dst_y
 
@@ -298,7 +339,7 @@ function map_submenu:draw_dungeon_floors(dst_surface)
   if self.hero_floor ~= nil
       and self.hero_floor >= lowest_floor_displayed
       and self.hero_floor <= self.highest_floor_displayed then
-    dst_x = 109 --61
+    dst_x = 109
     dst_y = old_dst_y + (self.highest_floor_displayed - self.hero_floor) * 12
     self.hero_head_sprite:draw(dst_surface, dst_x, dst_y)
   end
@@ -400,7 +441,6 @@ function map_submenu:load_dungeon_map_image()
       self:load_chests()
     end
     for _, chest in ipairs(self.dungeon.chests) do
-
       if chest.floor == self.selected_floor
           and chest.savegame_variable ~= nil
           and not self.game:get_value(chest.savegame_variable) then
