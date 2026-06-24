@@ -112,7 +112,7 @@ function hud_manager:create(game)
   -- of HUD elements depending on various factors.
   local function check_hud()
     local map = game:get_map()
-    if map ~= nil then
+    if map ~= nil and hud:is_enabled() then
       -- If the hero is below the top-left icons, make them semi-transparent.
       local hero = map:get_entity("hero")
       local hero_x, hero_y = hero:get_position()

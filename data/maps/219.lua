@@ -36,9 +36,12 @@ function map:on_started(destination)
 
   if destination == from_above and not game:get_value("dungeon_8_explored_1b_complete") then
     shadow_link_focus = true
-    sol.timer.start(self, 1000, function()
+    sol.timer.start(self, 100, function()
       map:get_camera():start_tracking(shadow_link)
       sol.audio.play_sound("poe_soul")
+      enter_stairs_1:set_enabled(false)
+      enter_stairs_2:set_enabled(false)
+      enter_stairs_3:set_enabled(false)
       game:set_dialog_name("Shadow Link"); game:start_dialog("shadow_link.sanctum_basement", game:get_player_name(), function()
         if not game:get_value("b1181") then
           game:get_hero():start_treasure("map", 1, "b1181") -- Give map so explored and non-explored rooms show correctly.
@@ -46,9 +49,6 @@ function map:on_started(destination)
         shadow_link:get_sprite():fade_out(50, function()
           shadow_link_focus = false
           map:get_camera():start_tracking(map:get_hero())
-          enter_stairs_1:set_enabled(false)
-          enter_stairs_2:set_enabled(false)
-          enter_stairs_3:set_enabled(false)
         end)
       end)
     end)

@@ -9,18 +9,18 @@ function game:on_credits_started()
 end
 
 function credits_menu:on_started()
-  local map = game:get_map()
-  game:get_hero():freeze()
+  game.hud:set_enabled(false)
+  game:get_hero():remove()
   
   self.heading = sol.text_surface.create{
-    font = "Cairopixel",
+    font = "enter_command",
     font_size = "20",
     horizontal_alignment = "center",
     vertical_alignment = "top"
   }
   self.line = sol.text_surface.create{
-    font = "Cairopixel",
-    font_size = "14",
+    font = "enter_command",
+    font_size = "16",
     horizontal_alignment = "center",
     vertical_alignment = "top"
   }
@@ -37,7 +37,7 @@ function credits_menu:on_started()
         text_width, text_height = self.heading:get_size()
       else
         self.line:set_text(text_lines)
-        self.line:draw(self.group, 150, 0+(i*15))
+        self.line:draw(self.group, 150, 0 + ( i * 15 ))
         tw, th = self.line:get_size()
         if tw > text_width then text_width = tw end
         if th > text_height then text_height = th end
@@ -46,9 +46,7 @@ function credits_menu:on_started()
     
     self.group:fade_in(50, function()
       sol.timer.start(game, 15000, function()
-        self.group:fade_out(50, function()
-          return true
-        end)
+        self.group:fade_out(50, function() return true  end)
       end)
     end)
   end
@@ -111,12 +109,13 @@ function credits_menu:on_finished()
 end
 
 function credits_menu:on_draw(dst_surface)
-  local camera_x, camera_y = game:get_map():get_camera():get_position()
-  local camera_width, camera_height = game:get_map():get_camera():get_size()
+  local map = game:get_map()
+  local camera_x, camera_y = map:get_camera():get_position()
+  local camera_width, camera_height = map:get_camera():get_size()
   credits_background:draw(dst_surface)
 
   if self.group ~= nil then
-    self.group:draw(dst_surface, (camera_width/2)-150, (camera_height/2)-80)
+    self.group:draw(dst_surface, (camera_width / 2) - 150, (camera_height / 2) - 80)
   end
 end
 

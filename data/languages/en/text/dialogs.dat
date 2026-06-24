@@ -4295,14 +4295,14 @@ dialog{
 My people were drawn to the story of
 parallel creation. The opposite force
 that was brought into being in response
-to Din's formation of the land, Farore's
-spawning of life, and Nayru's creation of
+to $rDin's$w formation of the land, $gFarore's$w
+spawning of life, and $bNayru's$w creation of
 law and order. Legend tells of the
-imprisoning of the Primodial Chaos in
-Din's earth in the beginning, and the
+imprisoning of the $mPrimodial Chaos$w in
+$rDin's$w earth in the beginning, and the
 frequent repeated attempts to trap it
 again since. All of this repeated
-bloodshed is required by Nayru's "Law"
+bloodshed is required by $bNayru's$w "Law"
 and her pathetic notion of "Fate" or
 "Destiny". 
 ]],
@@ -4314,12 +4314,12 @@ dialog{
   skip = "current",
   text = [[
 And finally, the last piece is the people
-who shield the Chaos, the Demise, from
+who shield the $mChaos$w, the $mDemise$w, from
 destruction. The tribe which has always
 existed, since the dawn of creation, in
 order to further the interests of darkness
 in this magical land - all as the
-Goddesses themselves so desired, in the
+$yGoddesses$w themselves so desired, in the
 glorious name of balance.
 ]],
 }
@@ -10814,7 +10814,7 @@ you'll win!$0
 It won't be as easy as it sounds though.
 Each room is different, and I'm very good
 at this game!$0
-I will give you a little hint- your map
+I will give you a little hint - your map
 will show which rooms are lit and which
 ones aren't.
 Oh, and your $rlantern$w is no good here.
@@ -12972,6 +12972,7 @@ the castle as fast as you can!
 
 dialog{
   id = "zelda.2.council",
+  skip = "current",
   text = [[
 $v, I can't thank you enough for saving
 me from those vile people! Mark my words,

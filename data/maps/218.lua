@@ -39,6 +39,7 @@ local function finish_game()
   game:set_value("b1699", true)  -- Main quest completed - Dark Tribe defeated.
   game:set_value("i1807", 8) -- Remove the "Book of Mudora" quest too.
   
+  game:set_dialog_name("Ordona")
   game:start_dialog("ordona.8.boss_dead", game:get_player_name(), function()
     local m = sol.movement.create("target")
     m:set_target(880, 1200)
@@ -50,6 +51,7 @@ local function finish_game()
         dark_mirror:set_enabled()
         dark_mirror_out:set_enabled()
         dark_mirror:get_sprite():fade_in(100, function()
+          game:set_dialog_name("Ordona")
           game:start_dialog("ordona.8.mirror", game:get_player_name(), function()
             m:set_target(880, 1032)
             game:get_hero():set_direction(1) -- Walking upward.
@@ -58,8 +60,9 @@ local function finish_game()
             sol.timer.start(game:get_map(), 1800, function()
               game:get_hero():set_animation("stopped")
               if bed_zelda ~= nil then bed_zelda:remove() end
+              game:set_dialog_name("Ordona")
               game:start_dialog("ordona.8.zelda", function()
-                game:get_hero():teleport("84", "from_sanctum")  -- Teleport hero outside of Sanctum and roll the credits.
+                game:get_hero():teleport("45", "from_castle_1")  -- Teleport hero and roll the credits!
                 sol.timer.start(game, 500, function() game:on_credits_started() end)
               end)
             end)
@@ -128,6 +131,7 @@ end
 if boss_zirna ~= nil then
   function boss_zirna:on_dead()
     sol.timer.start(self:get_map(), 5000, function()
+      game:set_dialog_name("Belahim (Dark Tribe)")
       game:start_dialog("belahim.0.speech_1", function()
         boss_belahim:set_enabled(true)
       end)

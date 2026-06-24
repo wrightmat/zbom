@@ -43,6 +43,8 @@ function map:on_started()
   end
   if game:get_value("b1699") then
     signpost_credits:set_enabled(true)
+    lizalfos_1:remove()
+    lizalfos_2:remove()
   else
     signpost_credits:set_enabled(false)
   end

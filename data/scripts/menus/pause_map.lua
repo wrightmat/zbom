@@ -322,7 +322,7 @@ function map_submenu:draw_dungeon_floors(dst_surface)
   local src_width = 32
   local src_height = self.nb_floors_displayed * 12 + 1
   local dst_x = 127
-  local dst_y = 70 + (8 - self.nb_floors_displayed) * 6
+  local dst_y = 76 + (8 - self.nb_floors_displayed) * 6
   local old_dst_y = dst_y
 
   self.dungeon_floors_img:draw_region(src_x, src_y, src_width, src_height, dst_surface, dst_x, dst_y)
@@ -339,7 +339,7 @@ function map_submenu:draw_dungeon_floors(dst_surface)
   if self.hero_floor ~= nil
       and self.hero_floor >= lowest_floor_displayed
       and self.hero_floor <= self.highest_floor_displayed then
-    dst_x = 109
+    dst_x = 124
     dst_y = old_dst_y + (self.highest_floor_displayed - self.hero_floor) * 12
     self.hero_head_sprite:draw(dst_surface, dst_x, dst_y)
   end
