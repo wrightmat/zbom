@@ -7,7 +7,7 @@ This quest is a free, open-source game that works with Solarus,
 an open-source Zelda-like 2D game engine.
 To play this game, you need Solarus. The compiled engine is included for Windows.
 
-The game is currently in Version 1.4 (30-Mar-19, Solarus v1.6)
+The game is currently in Version 1.5 (24-Jun-26, Solarus v2.0.4)
 
 ## How to run
 
@@ -28,6 +28,6 @@ Control key allows you to pan the camera slightly.
 
 ## More information
 
-See our website http://sites.google.com/site/zeldabom for more information.
+See our website https://wrightmatta.wixsite.com/zeldabom for more information.
 
 Enjoy!
